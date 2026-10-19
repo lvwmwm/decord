@@ -1,11 +1,11 @@
-// Module ID: 14399
-// Function ID: 14400
+// Module ID: 15165
+// Function ID: 15166
 // Name: StylesheetUtils
-// Dependencies: [2031, 2]
+// Dependencies: [2034, 2]
 // Exports: getClass
 
-// Module 14399 (StylesheetUtils)
-import StringUtils from "StringUtils" /* 2031 */;
+// Module 15165 (StylesheetUtils)
+import StringUtils from "StringUtils" /* 2034 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/StylesheetUtils.tsx");

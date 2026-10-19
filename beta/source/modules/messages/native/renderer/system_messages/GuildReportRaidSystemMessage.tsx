@@ -1,20 +1,20 @@
-// Module ID: 8064
-// Function ID: 8065
+// Module ID: 8338
+// Function ID: 8339
 // Name: GuildReportRaidSystemMessage
-// Dependencies: [2065, 2087, 7967, 7974, 8057, 7976, 8058, 7978, 1126, 1418, 1415, 2]
+// Dependencies: [2068, 2090, 8239, 8246, 8331, 8248, 8332, 8250, 1128, 1420, 1417, 2]
 // Exports: createGuildReportRaidSystemMessage
 
-// Module 8064 (GuildReportRaidSystemMessage)
-import intl3 from "intl" /* 1126 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1418 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 7967 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7974 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7976 */;
-import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 8057 */;
-import getTagPropertiesDefault from "getTagProperties" /* 8058 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildStore from "GuildStore" /* 2087 */;
+// Module 8338 (GuildReportRaidSystemMessage)
+import intl3 from "intl" /* 1128 */;
+import AvatarUtils from "AvatarUtils" /* 1417 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1420 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8239 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8246 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8248 */;
+import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 8331 */;
+import getTagPropertiesDefault from "getTagProperties" /* 8332 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildStore from "GuildStore" /* 2090 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildReportRaidSystemMessage.tsx");
@@ -52,9 +52,9 @@ export const createGuildReportRaidSystemMessage = function createGuildReportRaid
   }
   const obj4 = { content: intl.formatToParts(intl3.t["MTmH+u"], obj3), username: intl2.string(intl3.t.hG1StD), usernameColor: automodUsernameColor, avatarURL: ensureAvatarSource(makeSource(tmp8Result4.getAutomodAvatarURL())).uri };
   const tmp11 = getTagPropertiesDefault({ message, channel, isSystemDM: true, colors: tmp3 });
-  const merged = Object.assign(tmp(7978)(roleStyle));
-  intl = tmp8(1126).intl;
-  intl2 = tmp8(1126).intl;
+  const merged = Object.assign(tmp(8250)(roleStyle));
+  intl = tmp8(1128).intl;
+  intl2 = tmp8(1128).intl;
   if (automodUsernameColor == null) {
     automodUsernameColor = null;
   }

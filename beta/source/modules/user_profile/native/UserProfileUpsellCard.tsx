@@ -1,18 +1,18 @@
-// Module ID: 14884
-// Function ID: 14885
+// Module ID: 15645
+// Function ID: 15646
 // Name: UserProfileUpsellCard
-// Dependencies: [19, 17, 6905, 7152, 21, 5092, 587, 558, 576, 9031, 5088, 5391, 1105, 1200, 2]
+// Dependencies: [19, 17, 7181, 7423, 21, 5191, 587, 558, 576, 9327, 5187, 5491, 1107, 1202, 2]
 
-// Module 14884 (UserProfileUpsellCard)
+// Module 15645 (UserProfileUpsellCard)
 import nativeDefault from "native" /* 587 */;
-import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import Constants from "Constants" /* 6905 */;
-import ColorConstants from "ColorConstants" /* 7152 */;
+import ConstantsIOS from "ConstantsIOS" /* 1107 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import Constants from "Constants" /* 7181 */;
+import ColorConstants from "ColorConstants" /* 7423 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -95,8 +95,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
                   }
                 }
               }
-              const obj2 = { style: tmp13, disabled, onPress, text: ctaText, color: tmp(1200).ButtonColors.GREEN, renderIcon: tmp15, renderLinearGradient: tmp16 };
-              const ShinyButton = tmp(1200).ShinyButton;
+              const obj2 = { style: tmp13, disabled, onPress, text: ctaText, color: tmp(1202).ButtonColors.GREEN, renderIcon: tmp15, renderLinearGradient: tmp16 };
+              const ShinyButton = tmp(1202).ShinyButton;
               cResult[19] = ctaText;
               cResult[20] = disabled;
               cResult[21] = onPress;
@@ -131,10 +131,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
           }
           const obj3 = { style: tmp4.titleContainer, children: items1 };
           const obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-          const NitroWheelIcon = tmp(9031).NitroWheelIcon;
+          const NitroWheelIcon = tmp(9327).NitroWheelIcon;
           items1 = [closure_6(NitroWheelIcon, obj4), ];
           const obj5 = { variant: "heading-sm/bold", children: headerText };
-          items1[1] = closure_6(tmp(5088).Text, obj5);
+          items1[1] = closure_6(tmp(5187).Text, obj5);
           tmp9 = closure_7(closure_3, obj3);
         }
         cResult[9] = headerText;
@@ -190,7 +190,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   if (null != headerText) {
     const obj3 = { style: tmp.titleContainer, children: items3 };
     const obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-    const NitroWheelIcon = tmp3(9031).NitroWheelIcon;
+    const NitroWheelIcon = tmp3(9327).NitroWheelIcon;
     items3 = [closure_6(NitroWheelIcon, obj4), ];
     const obj5 = { variant: "heading-sm/bold", children: headerText };
     items3[1] = closure_6(require("Text/Text").Text, obj5);
@@ -209,7 +209,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     renderLinearGradient: fn
   };
   items5 = [tmp.upsellButton, ctaStyle];
-  const ShinyButton = tmp3(1200).ShinyButton;
+  const ShinyButton = tmp3(1202).ShinyButton;
   fn = undefined;
   if (showLinearGradient) {
     fn = () => {

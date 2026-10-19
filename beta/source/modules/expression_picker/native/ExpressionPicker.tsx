@@ -1,20 +1,20 @@
-// Module ID: 9726
-// Function ID: 9727
+// Module ID: 10029
+// Function ID: 10030
 // Name: ExpressionPicker
-// Dependencies: [19, 17, 1241, 1085, 1393, 21, 5092, 587, 558, 576, 9727, 9428, 1501, 1629, 8525, 5107, 9454, 9728, 5362, 8774, 9729, 9730, 9753, 2]
+// Dependencies: [19, 17, 1243, 1087, 1395, 21, 5191, 587, 558, 576, 10030, 9732, 1503, 1631, 8805, 5206, 9758, 10031, 5462, 9051, 10032, 10033, 10056, 2]
 
-// Module 9726 (ExpressionPicker)
+// Module 10029 (ExpressionPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import EmojiConstants from "EmojiConstants" /* 1393 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 9428 */;
-import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 9454 */;
+import Constants from "Constants" /* 1087 */;
+import EmojiConstants from "EmojiConstants" /* 1395 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5206 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 9732 */;
+import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 9758 */;
 import react from "react" /* 19 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -78,7 +78,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (cResult[1] === visibleTabs) {
       tmp6 = cResult[2];
     }
-    const tmp8 = expressionPickerViewType(9727)(tmp6);
+    const tmp8 = expressionPickerViewType(10030)(tmp6);
     ({ expressionPickerSelectedIndex, expressionPickerViewType } = tmp8);
     const prop = tmp8.expressionPickerTabStrings;
     if (cResult[3] !== channel) {
@@ -357,7 +357,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
       }
-      const tmp28 = expressionPickerViewType(9728)(tmp26);
+      const tmp28 = expressionPickerViewType(10031)(tmp26);
       const tmpResult2 = require("useIsScreenReaderEnabled");
       const isScreenReaderEnabled = tmpResult2.useIsScreenReaderEnabled();
       if (cResult[20] === tmp28) {
@@ -805,7 +805,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   }
                 }
                 let obj4 = { bottomSheetIndex, bottomSheetRef, channel, onPressEmoji, onBackspace, inPortalKeyboard, suggestedEmojis };
-                tmp46 = closure_9(expressionPickerViewType(9729), obj4);
+                tmp46 = closure_9(expressionPickerViewType(10032), obj4);
               } else {
                 class Z {
                   constructor() {

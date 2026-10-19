@@ -1,10 +1,10 @@
 // Module ID: 9661
 // Function ID: 9662
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 9661 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/stream_feedback/light-theme-desaturated", width: 64, height: 64, scales: [2, 3], hash: "69e9e79e44fff2fca6c7a210e9bf5b9f", name: "feedback-modal-neutral-desaturated", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "dc76a43601a93031b91e3ad463d63b85", name: "ThumbsDownIcon", type: "png" });

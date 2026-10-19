@@ -1,12 +1,12 @@
-// Module ID: 6799
-// Function ID: 6800
+// Module ID: 7076
+// Function ID: 7077
 // Name: useFlattenedChannels
-// Dependencies: [2065, 12, 1388, 558, 576, 504, 2]
+// Dependencies: [2068, 12, 1388, 558, 576, 504, 2]
 
-// Module 6799 (useFlattenedChannels)
+// Module 7076 (useFlattenedChannels)
 import _modDef12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ChannelStore_mod from "ChannelStore" /* 2065 */;
+import ChannelStore_mod from "ChannelStore" /* 2068 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

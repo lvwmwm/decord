@@ -1,15 +1,15 @@
-// Module ID: 17910
-// Function ID: 17911
+// Module ID: 18303
+// Function ID: 18304
 // Name: useConsoleConnectingInfo
-// Dependencies: [5111, 5112, 558, 576, 11027, 573, 17911, 13032, 17912, 17913, 2]
+// Dependencies: [5210, 5211, 558, 576, 11417, 573, 18304, 13960, 18305, 18306, 2]
 
-// Module 17910 (useConsoleConnectingInfo)
-import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 11027 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 13032 */;
-import useShouldDisplayCancelConsoleTransferDefault from "useShouldDisplayCancelConsoleTransfer" /* 17911 */;
-import getConsoleColorDefault from "getConsoleColor" /* 17913 */;
-import GameConsoleStore from "GameConsoleStore" /* 5111 */;
-import SessionsStore from "SessionsStore" /* 5112 */;
+// Module 18303 (useConsoleConnectingInfo)
+import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 11417 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 13960 */;
+import useShouldDisplayCancelConsoleTransferDefault from "useShouldDisplayCancelConsoleTransfer" /* 18304 */;
+import getConsoleColorDefault from "getConsoleColor" /* 18306 */;
+import GameConsoleStore from "GameConsoleStore" /* 5210 */;
+import SessionsStore from "SessionsStore" /* 5211 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -212,7 +212,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConsole
   if (stateFromStores != null) {
     channelId2 = stateFromStores.channelId;
   }
-  tmp5Result = tmp5(17912);
+  tmp5Result = tmp5(18305);
   return obj3;
 });
 const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useConsoleConnectingInfo.tsx");

@@ -1,25 +1,27 @@
-// Module ID: 15439
-// Function ID: 15440
+// Module ID: 16199
+// Function ID: 16200
 // Name: useVideoQuestClickCtaAndMaybeCloseModal
-// Dependencies: [19, 558, 576, 9197, 1384, 9188, 9199, 7411, 2]
+// Dependencies: [19, 1087, 558, 576, 9504, 5168, 9495, 9506, 7681, 2]
 
-// Module 15439 (useVideoQuestClickCtaAndMaybeCloseModal)
-import URLUtilsDefault from "URLUtils" /* 1384 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9188 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9199 */;
+// Module 16199 (useVideoQuestClickCtaAndMaybeCloseModal)
+import Constants from "Constants" /* 1087 */;
+import parseURLDefault from "parseURL" /* 5168 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7681 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9495 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9506 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoQuestClickCtaAndMaybeCloseModal(quest) {
+const LinkingTypes = Constants.LinkingTypes;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoQuestClickCtaAndMaybeCloseModal(quest) {
   let sourceQuestContent;
-  let obj = quest(sourceQuestContent[2]);
+  let obj = quest(sourceQuestContent[3]);
   const cResult = obj.c(5);
   quest = quest.quest;
   const onClose = quest.onClose;
   sourceQuestContent = quest.sourceQuestContent;
-  let obj2 = quest(sourceQuestContent[3]);
+  let obj2 = quest(sourceQuestContent[4]);
   const getQuestImpressionId = obj2.useGetQuestImpressionId();
   if (cResult[0] === getQuestImpressionId) {
     if (cResult[1] === onClose) {
@@ -32,12 +34,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoQu
       }
     }
   }
-  const fn = function s(content) {
-    const isDiscordUrl = URLUtilsDefault.isDiscordUrl;
-    URLUtilsDefault;
+  const fn = function o(content) {
+    const tmp2 = parseURLDefault;
     const obj = QuestCopyUtils;
     const tmp4 = quest;
-    if (isDiscordUrl(obj.getCtaLink(quest.config), true)) {
+    if (tmp2(obj.getCtaLink(quest.config)).payload.type !== LinkingTypes.NONE) {
       onClose();
     }
     const tmp3Result = QuestPlatformUtils;
@@ -54,15 +55,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoQu
   quest = quest.quest;
   const onClose = quest.onClose;
   const sourceQuestContent = quest.sourceQuestContent;
-  let obj = quest(sourceQuestContent[3]);
+  let obj = quest(sourceQuestContent[4]);
   const getQuestImpressionId = obj.useGetQuestImpressionId();
   const items = [quest, getQuestImpressionId, sourceQuestContent, onClose];
   return getQuestImpressionId.useCallback((content) => {
-    const isDiscordUrl = URLUtilsDefault.isDiscordUrl;
-    URLUtilsDefault;
+    const tmp2 = parseURLDefault;
     const obj = QuestCopyUtils;
     const tmp4 = quest;
-    if (isDiscordUrl(obj.getCtaLink(quest.config), true)) {
+    if (tmp2(obj.getCtaLink(quest.config)).payload.type !== LinkingTypes.NONE) {
       onClose();
     }
     const tmp3Result = QuestPlatformUtils;

@@ -1,17 +1,17 @@
-// Module ID: 8513
-// Function ID: 8514
+// Module ID: 8791
+// Function ID: 8792
 // Name: GuildScheduledEventManager
-// Dependencies: [5, 4939, 6054, 8514, 6808, 2]
+// Dependencies: [5, 5034, 6332, 8792, 7085, 8798, 8799, 2]
 
-// Module 8513 (GuildScheduledEventManager)
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8514 */;
+// Module 8791 (GuildScheduledEventManager)
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8792 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6332 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
 import size from "module_2" /* 2 */;
 
-let _self, c1, c7, c9;
+let _self, c0, c1, c3, c7, c8;
 
 function getGuildEventsForCurrentUser() {
   return obj(...arguments);
@@ -64,7 +64,7 @@ let obj = function _getGuildEventsForCurrentUser() {
           }
         } else if (1 === c5) {
           c4 = 0;
-          closure_130_6.delete(closure_0);
+          closure_130_7.delete(closure_0);
         } else if (arg0 === 1) {
           c6 = 3;
           throw value;
@@ -74,7 +74,7 @@ let obj = function _getGuildEventsForCurrentUser() {
           obj = { value, done: true };
           return obj;
         } else {
-          closure_130_7.add(closure_0);
+          closure_130_8.add(closure_0);
           c4 = 0;
         }
         c6 = 3;
@@ -93,10 +93,11 @@ let obj = function _getGuildEventsForCurrentUser() {
   return obj(...arguments);
 };
 let _asyncToGenerator = _asyncToGenerator_mod;
-let closure_5 = {};
-const set = new Set();
+let closure_6 = {};
+let set = new Set();
 const set1 = new Set();
-let c8 = 1800000;
+let c9 = 1800000;
+const map = new Map();
 class GuildScheduledEventManager extends AutomaticLifecycleManager {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
@@ -120,92 +121,361 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
     return applyArgumentsResult;
   }
   getGuildEventUserCounts(guild_id, id, items1) {
-    let closure_1 = id;
-    _asyncToGenerator = items1;
+    return this.fetchGuildEventUserCounts(guild_id, id, items1, false);
+  }
+  getGuildEventUserCountsForEmbed(guild_id, id, items1) {
+    if (null == GuildScheduledEventStore.getGuildScheduledEvent(id)) {
+      return Promise.resolve();
+    } else {
+      let tmp2;
+      const _HermesInternal = HermesInternal;
+      const combined = "" + guild_id + "-" + id;
+      let value2 = map.get(combined);
+      if (null == value2) {
+        const _Date2 = Date;
+        const _Set = Set;
+        const self = this;
+        const self2 = this;
+        obj = { startedAt: Date.now(), ids: set };
+        tmp2 = obj;
+        set = new Set();
+      } else {
+        const _Date = Date;
+        const tmp = c9;
+        tmp2 = value2;
+      }
+      value2 = tmp2;
+      const found = items1.filter((item) => {
+        const ids = value2.ids;
+        let hasItem = ids.has(item);
+        if (!hasItem) {
+          let flag = tmp.ids.size < 8;
+          if (flag) {
+            const ids2 = tmp.ids;
+            ids2.add(item);
+            flag = true;
+          }
+          hasItem = flag;
+        }
+        return hasItem;
+      });
+      map.delete(combined);
+      const result = obj3.set(combined, tmp2);
+      if (map.size > 1024) {
+        const iter = map.keys();
+        const value = iter.next().value;
+        while (null != value) {
+          let deleteResult1 = obj2.delete(value);
+          if (obj2.size <= 1024) {
+            break;
+          }
+        }
+      }
+      if (items1.length > 0) {
+        let resolved;
+        if (0 === found.length) {
+          resolved = Promise.resolve();
+        }
+        return resolved;
+      }
+      const self3 = this;
+      let flag = true;
+      const self4 = this;
+      resolved = this.fetchGuildEventUserCounts(guild_id, id, found, true);
+    }
+  }
+  fetchGuildEventUserCounts(arg0, arg1, arg2, arg3) {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    let closure_2 = arg2;
+    _asyncToGenerator = arg3;
     return (async (arg0, value) => {
-      let closure_2;
+      let tmp;
+      let tmp18;
+      let tmp19;
+      let tmp2;
       let tmp3;
-      let v3;
-      if (guild_id === 2) {
-        guild_id = 3;
-        const str = "Generator functions may not be called on executing generators";
+      let tmp4;
+      let v1;
+      if (c4 === 2) {
+        let num9 = 3;
+        let num10 = 3;
+        c4 = 3;
+        let str = "Generator functions may not be called on executing generators";
         throw new TypeError("Generator functions may not be called on executing generators");
       } else {
+        let tmp20 = value;
+        let tmp21 = arg0;
+        let tmp22 = tmp2;
+        let num11 = 3;
+        let num12 = 1;
+        let tmp23 = globalThis;
         const str2 = "-";
         const str3 = "";
-        if (tmp2 === 3) {
+        if (tmp3 === 3) {
           if (arg0 === 1) {
             throw value;
           } else if (arg0 === 2) {
-            const obj3 = { value, done: true };
+            let obj3 = { value, done: true };
             return obj3;
           } else {
             return { value: "IconComponent", done: null };
           }
         } else {
-          let c3;
+          let c2;
           try {
-            guild_id = 2;
-            if (0 === c1) {
+            let neededIds;
+            let combined;
+            let num = 2;
+            c4 = 2;
+            if (0 === c3) {
               if (arg0 === 1) {
-                guild_id = 3;
+                let num7 = 3;
+                c4 = 3;
                 throw value;
               } else if (arg0 === 2) {
-                guild_id = 3;
-                const obj4 = { value, done: true };
+                let num6 = 3;
+                c4 = 3;
+                let obj4 = { value, done: true };
                 return obj4;
               } else {
-                const found = tmp10.filter((item) => {
-                  let tmp3 = null == closure_2_5["" + v3 + "-" + closure_1_1 + "-" + item];
-                  if (!tmp3) {
-                    const _Date = Date;
-                    const _HermesInternal = HermesInternal;
-                    const timestamp = Date.now();
-                    tmp3 = timestamp - closure_2_5["" + tmp + "-" + tmp2 + "-" + item] > closure_2_8;
-                  }
-                  return tmp3;
-                });
-                const _Date2 = Date;
-                const _HermesInternal2 = HermesInternal;
-                let timestamp = Date.now();
+                neededIds = function neededIds() {
+                  return closure_2_2.filter((item) => {
+                    let tmp2 = null == closure_3_6["" + closure_1_0 + "-" + item];
+                    const tmp = closure_1_0;
+                    if (!tmp2) {
+                      const _Date = Date;
+                      const _HermesInternal = HermesInternal;
+                      const timestamp = Date.now();
+                      tmp2 = timestamp - closure_3_6["" + tmp + "-" + item] >= closure_3_9;
+                    }
+                    return tmp2;
+                  });
+                };
+                let tmp32 = tmp19;
+                let tmp33 = tmp;
                 let _HermesInternal = HermesInternal;
-                let _Date = Date;
-                let combined = "" + tmp20 + "-" + tmp21;
-                closure_1_5[combined] = Date.now();
-                const item = found.forEach((item) => {
-                  const combined = "" + v3 + "-" + closure_1_1 + "-" + item;
-                  const timestamp = Date.now();
-                  closure_2_5[combined] = timestamp;
-                  return timestamp;
-                });
-                c3 = 1;
-                const obj2 = guild_id(c1[3]);
-                c1 = 2;
-                guild_id = 1;
-                const obj5 = { value: obj2.fetchGuildEventUserCounts(closure_0, closure_1, found), done: false };
+                combined = "" + tmp19 + "-" + tmp;
+                c2 = 1;
+                let tmp35 = closure_1_6;
+                if (null != closure_1_6[combined]) {
+                  let _Date = Date;
+                  let tmp9 = closure_1_6;
+                  let tmp10 = closure_1_9;
+                  if (Date.now() - closure_1_6[combined] < closure_1_9) {
+                    if (neededIds().length <= 0) {
+                      c2 = 0;
+                    }
+                  }
+                }
+                let tmp11 = tmp19;
+                let tmp12 = tmp;
+                let tmp13 = tmp19;
+                let tmp14 = c2;
+                let obj2 = tmp19(c2[5]);
+                let tmp15 = closure_129_0;
+                let tmp17 = c3;
+                c3 = 2;
+                let num5 = 1;
+                c4 = 1;
+                let obj5 = {
+                  value: obj2.guardGuildEventUserCountFetch(closure_129_0, closure_129_1, c3(async (arg0, value) => {
+                              let tmp19;
+                              let tmp7;
+                              if (c0 === 2) {
+                                c0 = 3;
+                                let str = "Generator functions may not be called on executing generators";
+                                throw new TypeError("Generator functions may not be called on executing generators");
+                              } else {
+                                let tmp8 = value;
+                                let tmp9 = arg0;
+                                const tmp10 = tmp;
+                                if (tmp2 === 3) {
+                                  if (arg0 === 1) {
+                                    throw value;
+                                  } else if (arg0 === 2) {
+                                    let obj3 = { value, done: true };
+                                    return obj3;
+                                  } else {
+                                    return { value: "IconComponent", done: null };
+                                  }
+                                } else {
+                                  try {
+                                    let num = 2;
+                                    c0 = 2;
+                                    const tmp3 = c1;
+                                    let num2 = 0;
+                                    if (0 === c1) {
+                                      let num7 = 1;
+                                      if (arg0 === 1) {
+                                        c0 = 3;
+                                        throw value;
+                                      } else if (arg0 === 2) {
+                                        c0 = 3;
+                                        let obj4 = { value, done: true };
+                                        return obj4;
+                                      } else {
+                                        obj = function _fetch() {
+                                          obj = v1(function*(arg0, value) {
+                                            if (c7 === 2) {
+                                              c7 = 3;
+                                              throw new TypeError("Generator functions may not be called on executing generators");
+                                            } else if (tmp3 === 3) {
+                                              if (arg0 === 1) {
+                                                throw value;
+                                              } else if (arg0 === 2) {
+                                                const obj3 = { value, done: true };
+                                                return obj3;
+                                              } else {
+                                                return { value: "IconComponent", done: null };
+                                              }
+                                            } else {
+                                              while (true) {
+                                                c7 = 2;
+                                                let tmp4 = c6;
+                                                if (0 === c6) {
+                                                  if (arg0 === 1) {
+                                                    c7 = 3;
+                                                    throw value;
+                                                  } else if (arg0 === 2) {
+                                                    c7 = 3;
+                                                    let obj4 = { value, done: true };
+                                                    return obj4;
+                                                  } else {
+                                                    closure_3 = tmp;
+                                                    closure_2 = tmp4;
+                                                    c0 = undefined;
+                                                    let tmp36 = closure_2_3;
+                                                    if (tmp36) {
+                                                      if (null == guildScheduledEvent.getGuildScheduledEvent(closure_2_1)) {
+                                                        let _Error = Error;
+                                                        let self = this;
+                                                        let self2 = this;
+                                                        let str = "guild event not found";
+                                                        let error = new Error("guild event not found");
+                                                        throw error;
+                                                      }
+                                                    }
+                                                    let obj2 = obj(closure_3_2[3]);
+                                                    c6 = 1;
+                                                    c7 = 1;
+                                                    let obj5 = { value: obj2.fetchGuildEventUserCounts(closure_2_0, closure_2_1, closure_2_0), done: false };
+                                                    return obj5;
+                                                  }
+                                                } else if (1 === tmp4) {
+                                                  if (arg0 === 1) {
+                                                    c7 = 3;
+                                                    throw value;
+                                                  } else if (arg0 === 2) {
+                                                    c7 = 3;
+                                                    obj = { value, done: true };
+                                                    return obj;
+                                                  } else {
+                                                    let _Date2 = Date;
+                                                    closure_3_6[closure_0] = Date.now();
+                                                    closure_1 = closure_131_0;
+                                                    closure_0 = closure_131_0[Symbol.iterator]();
+                                                    while (closure_0 !== undefined) {
+                                                      c0 = tmp10;
+                                                      let _HermesInternal = HermesInternal;
+                                                      let _Date = Date;
+                                                      let combined = "" + closure_0 + "-" + c0;
+                                                      closure_3_6[combined] = Date.now();
+                                                      let c5 = 0;
+                                                      continue;
+                                                    }
+                                                    c7 = 3;
+                                                    return { value: "IconComponent", done: null };
+                                                  }
+                                                } else {
+                                                  c5 = 0;
+                                                  closure_0.return();
+                                                  throw closure_1_4;
+                                                }
+                                              }
+                                            }
+                                          });
+                                          return obj(...arguments);
+                                        };
+                                        let tmp4 = tmp;
+                                        closure_0 = tmp();
+                                        let tmp5 = tmp19;
+                                        let tmp6 = closure_2_2;
+                                        let obj2 = tmp19(closure_2_2[6]);
+                                        c1 = 1;
+                                        c0 = 1;
+                                        let obj5 = {
+                                          value: obj2.scheduleGuildEventEmbedFetch(function fetch() {
+                                                      return obj(...arguments);
+                                                    }),
+                                          done: false
+                                        };
+                                        return obj5;
+                                      }
+                                    } else {
+                                      let num3 = 1;
+                                      if (arg0 === 1) {
+                                        let num6 = 3;
+                                        c0 = 3;
+                                        throw value;
+                                      } else if (arg0 === 2) {
+                                        let num5 = 3;
+                                        c0 = 3;
+                                        obj = { value, done: true };
+                                        return obj;
+                                      } else {
+                                        let num4 = 3;
+                                        c0 = 3;
+                                        return { value: "IconComponent", done: null };
+                                      }
+                                    }
+                                  } catch (tmp7) {
+                                    c0 = 3;
+                                    throw tmp7;
+                                  }
+                                }
+                              }
+                            })),
+                  done: false
+                };
                 return obj5;
               }
-            } else if (1 === tmp3) {
-              c3 = 0;
+            } else if (1 === tmp4) {
+              c2 = 0;
             } else if (arg0 === 1) {
-              guild_id = 3;
+              let num3 = 3;
+              c4 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c3 = 0;
-              guild_id = 3;
+              c2 = 0;
+              let num2 = 3;
+              c4 = 3;
               obj = { value, done: true };
               return obj;
             } else {
-              c3 = 0;
+              let tmp5 = tmp19;
+              let tmp6 = tmp;
+              let tmp7 = closure_1_6;
+              let tmp8 = combined;
+              if (null != closure_1_6[combined]) {
+                let tmp25 = tmp19;
+                let _Date2 = Date;
+                if (Date.now() - closure_1_6[combined] < closure_1_9) {
+                  let tmp31 = neededIds;
+                }
+              }
             }
-            guild_id = 3;
+            let num4 = 3;
+            c4 = 3;
             return { value: "IconComponent", done: null };
-          } catch (tmp10) {
-            if (0 === c3) {
-              guild_id = 3;
-              throw tmp10;
+          } catch (tmp18) {
+            tmp19 = c2;
+            if (0 === c2) {
+              let num8 = 3;
+              c4 = 3;
+              throw tmp18;
             } else {
-              c1 = 1;
+              c3 = 1;
             }
           }
         }
@@ -223,6 +493,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
     let self = this;
     return (async function(arg0, value) {
       let closure_0;
+      let guildScheduledEventsForGuild2;
       if (c7 === 2) {
         c7 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -238,7 +509,6 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
       } else {
         while (true) {
           let lastSelectedGuildId;
-          let guildScheduledEventsForGuild;
           c7 = 2;
           let tmp4 = c6;
           if (0 === c6) {
@@ -250,30 +520,34 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
               let obj3 = { value, done: true };
               return obj3;
             } else {
+              let closure_3 = tmp;
               let closure_2 = tmp4;
               lastSelectedGuildId = undefined;
               guildScheduledEventsForGuild = undefined;
-              let clearResult = c6.clear();
-              let clearResult1 = c7.clear();
-              let c5 = {};
+              let clearResult = c7.clear();
+              let clearResult1 = set1.clear();
+              c6 = {};
+              let clearResult2 = map.clear();
+              let obj7 = _self(closure_2[5]);
+              let result = obj7.forgetTransientGuildEventFetchFailures();
               lastSelectedGuildId = lastSelectedGuildId.getLastSelectedGuildId();
               if (null != lastSelectedGuildId) {
-                guildScheduledEventsForGuild = guildScheduledEventsForGuild2.getGuildScheduledEventsForGuild(lastSelectedGuildId);
+                guildScheduledEventsForGuild = guildScheduledEventsForGuild.getGuildScheduledEventsForGuild(lastSelectedGuildId);
                 _self = guildScheduledEventsForGuild[Symbol.iterator]();
               }
               c7 = 3;
               return { value: "IconComponent", done: null };
             }
           } else if (1 === tmp4) {
-            c5 = 0;
+            guildScheduledEventsForGuild = 0;
             _self.return();
-            throw guildScheduledEventsForGuild2;
+            throw lastSelectedGuildId;
           } else if (2 === tmp4) {
             if (arg0 === 1) {
               c7 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c5 = 0;
+              guildScheduledEventsForGuild = 0;
               _self.return();
               c7 = 3;
               let obj4 = { value, done: true };
@@ -292,16 +566,15 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
             c7 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c5 = 0;
+            guildScheduledEventsForGuild = 0;
             _self.return();
             c7 = 3;
             obj = { value, done: true };
             return obj;
           } else {
-            c5 = 0;
+            guildScheduledEventsForGuild = 0;
           }
           if (_self !== undefined) {
-            c5 = 1;
             guildScheduledEventsForGuild = tmp14;
             c6 = 2;
             c7 = 1;
@@ -316,13 +589,13 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
     guildId = guildId.guildId;
     set.delete(guildId);
     set1.delete(guildId);
-    delete closure_5[guildId];
+    delete closure_6[guildId];
   }
   handleGuildDelete(guild) {
     const id = guild.guild.id;
     set.delete(id);
     set1.delete(id);
-    delete closure_5[id];
+    delete closure_6[id];
   }
   handleInviteResolveSuccess(invite) {
     invite = invite.invite;
@@ -342,7 +615,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
     let self = this;
     return (async function(arg0, value) {
       let closure_0;
-      const f154280 = (arg0) => setTimeout(arg0, 200 * Math.random() + 50);
+      const f156134 = (arg0) => setTimeout(arg0, 200 * Math.random() + 50);
       if (c9 === 2) {
         c9 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -368,8 +641,8 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
               let obj3 = { value, done: true };
               return obj3;
             } else {
-              closure_5 = tmp;
-              let guildScheduledEventsForGuild = tmp4;
+              let guildScheduledEventsForGuild = tmp;
+              let closure_4 = tmp4;
               guildId = undefined;
               if (null != guildId) {
                 guildScheduledEventsForGuild = guildScheduledEventsForGuild.getGuildScheduledEventsForGuild(guildId);
@@ -381,16 +654,16 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
           } else if (1 === tmp4) {
             let c6 = 0;
             guildId.return();
-            throw set1;
+            throw set;
           } else {
             let closure_3;
             if (2 === tmp4) {
-              closure_3 = set1;
+              closure_3 = set;
               c6 = 1;
               let _Promise3 = Promise;
               let self5 = this;
               let self6 = this;
-              let promise = new Promise(f154280);
+              let promise = new Promise(f156134);
               c8 = 3;
               c9 = 1;
               let obj4 = { value: promise, done: false };
@@ -417,7 +690,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                 let _Promise2 = Promise;
                 let self3 = this;
                 let self4 = this;
-                let promise3 = new Promise(f154280);
+                let promise3 = new Promise(f156134);
                 c8 = 5;
                 c9 = 1;
                 let obj6 = { value: promise3, done: false };
@@ -427,7 +700,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
                 let _Promise = Promise;
                 self = this;
                 let self2 = this;
-                let promise4 = new Promise(f154280);
+                let promise4 = new Promise(f156134);
                 c8 = 6;
                 c9 = 1;
                 let obj7 = { value: promise4, done: false };
@@ -478,6 +751,7 @@ class GuildScheduledEventManager extends AutomaticLifecycleManager {
 }
 const prototype = GuildScheduledEventManager.prototype;
 const guildScheduledEventManager = new GuildScheduledEventManager();
-const result = size.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventManager.tsx");
+let result = size.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventManager.tsx");
 
 export default guildScheduledEventManager;
+export const MAX_EMBED_COUNT_RECURRENCES = 8;

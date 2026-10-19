@@ -1,14 +1,14 @@
-// Module ID: 12706
-// Function ID: 12707
+// Module ID: 13644
+// Function ID: 13645
 // Name: ChannelSortingUtils
-// Dependencies: [2069, 1085, 12132, 6802, 2]
+// Dependencies: [2072, 1087, 13082, 7079, 2]
 // Exports: areTypesInSameSection, getChannelPlacementUpdates, getDropData, getSectionSiblings
 
-// Module 12706 (ChannelSortingUtils)
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6802 */;
-import DragAndDropUtilsDefault from "DragAndDropUtils" /* 12132 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import Constants from "Constants" /* 1085 */;
+// Module 13644 (ChannelSortingUtils)
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7079 */;
+import DragAndDropUtilsDefault from "DragAndDropUtils" /* 13082 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

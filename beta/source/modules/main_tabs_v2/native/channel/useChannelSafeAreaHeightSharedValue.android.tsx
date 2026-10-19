@@ -1,10 +1,10 @@
-// Module ID: 10371
-// Function ID: 10372
+// Module ID: 10695
+// Function ID: 10696
 // Name: useChannelSafeAreaHeightSharedValue
-// Dependencies: [558, 10372, 10375, 4987, 10376, 4850, 4818, 587, 1629, 2]
+// Dependencies: [558, 10696, 10698, 5083, 10699, 4945, 4913, 587, 1631, 2]
 
-// Module 10371 (useChannelSafeAreaHeightSharedValue)
-import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+// Module 10695 (useChannelSafeAreaHeightSharedValue)
+import KeyboardTypes from "KeyboardTypes" /* 1631 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

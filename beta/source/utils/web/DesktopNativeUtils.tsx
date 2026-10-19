@@ -1,17 +1,17 @@
-// Module ID: 6140
-// Function ID: 6141
+// Module ID: 6419
+// Function ID: 6420
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1085, 38, 5027, 1382, 510, 6141, 6142, 4, 6143, 6144, 1384, 1295, 5118, 2]
+// Dependencies: [32, 5, 1087, 38, 5123, 1384, 510, 6420, 6421, 4, 6422, 6423, 1386, 1297, 5217, 2]
 
-// Module 6140 (DesktopNativeUtils)
+// Module 6419 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
-import Constants from "Constants" /* 1085 */;
-import flow_Client from "flow/Client" /* 5027 */;
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5118 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 6141 */;
-import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6142 */;
-import IPCEvents from "IPCEvents" /* 6143 */;
+import Constants from "Constants" /* 1087 */;
+import flow_Client from "flow/Client" /* 5123 */;
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5217 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 6420 */;
+import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6421 */;
+import IPCEvents from "IPCEvents" /* 6422 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require, c10, c9, closeResult, importDefault;
 
 let tmp2;
-const FileExtensionUtils = tmp2(6144);
+const FileExtensionUtils = tmp2(6423);
 function sanitizeFilename(str) {
   try {
     const _decodeURIComponent = decodeURIComponent;
@@ -384,6 +384,69 @@ let obj2 = {
   setFocused(arg0) {
     const discordUtils = this.getDiscordUtils();
     discordUtils.inputSetFocused(arg0);
+  },
+  isWaylandGlobalShortcutsAvailable() {
+    let isPlatformEmbedded = require("PlatformUtils").isPlatformEmbedded;
+    if (isPlatformEmbedded) {
+      const self = this;
+      const discordUtils = this.getDiscordUtils();
+      const isWaylandGlobalShortcutsAvailable = discordUtils.isWaylandGlobalShortcutsAvailable;
+      let flag;
+      if (isWaylandGlobalShortcutsAvailable != null) {
+        flag = isWaylandGlobalShortcutsAvailable();
+      }
+      if (flag == null) {
+        flag = false;
+      }
+      isPlatformEmbedded = flag;
+    }
+    return isPlatformEmbedded;
+  },
+  setWaylandPortalShortcutsCallback(arg0) {
+    if (require("PlatformUtils").isPlatformEmbedded) {
+      const self = this;
+      const discordUtils = this.getDiscordUtils();
+      if (discordUtils.setWaylandPortalShortcutsCallback != null) {
+        const result = setWaylandPortalShortcutsCallback(arg0);
+      }
+    }
+  },
+  reofferWaylandPortalShortcut(arg0) {
+    if (require("PlatformUtils").isPlatformEmbedded) {
+      const self = this;
+      const discordUtils = this.getDiscordUtils();
+      const reofferWaylandPortalShortcut = discordUtils.reofferWaylandPortalShortcut;
+      if (reofferWaylandPortalShortcut != null) {
+        const result = reofferWaylandPortalShortcut(arg0);
+      }
+    }
+  },
+  canOpenWaylandPortalShortcutSettings() {
+    let isPlatformEmbedded = require("PlatformUtils").isPlatformEmbedded;
+    if (isPlatformEmbedded) {
+      const self = this;
+      const discordUtils = this.getDiscordUtils();
+      const canOpenWaylandPortalShortcutSettings = discordUtils.canOpenWaylandPortalShortcutSettings;
+      let flag;
+      if (canOpenWaylandPortalShortcutSettings != null) {
+        flag = canOpenWaylandPortalShortcutSettings();
+      }
+      if (flag == null) {
+        flag = false;
+      }
+      isPlatformEmbedded = flag;
+    }
+    return isPlatformEmbedded;
+  },
+  openWaylandPortalShortcutSettings() {
+    if (require("PlatformUtils").isPlatformEmbedded) {
+      const self = this;
+      const discordUtils = this.getDiscordUtils();
+      const openWaylandPortalShortcutSettings = discordUtils.openWaylandPortalShortcutSettings;
+      if (openWaylandPortalShortcutSettings != null) {
+        const result = openWaylandPortalShortcutSettings();
+      }
+    }
   },
   setObservedGamesCallback(mapped, normalizeCallback, arg2, arg3) {
     let sum;
@@ -974,7 +1037,7 @@ let obj2 = {
     if (null != uri) {
       const tmp = require;
       if (require("PlatformUtils").isPlatformEmbedded) {
-        const tmpResult = tmp(6144);
+        const tmpResult = tmp(6423);
         const decideFileExtensionResult = tmpResult.decideFileExtension(uri, contentType);
         const hasItem = null == decideFileExtensionResult || set2.has(decideFileExtensionResult);
         return hasItem;
@@ -2769,6 +2832,61 @@ let obj2 = {
       let result;
       if (dotaGsi != null) {
         result = dotaGsi.debugLogDotaGsiPayload(arg0);
+      }
+      if (result == null) {
+        result = Promise.resolve();
+      }
+      resolved = result;
+    } else {
+      resolved = Promise.resolve();
+    }
+    return resolved;
+  },
+  readRocketLeagueStatsApiConfig() {
+    let resolved;
+    obj = { installed: false, config: {} };
+    obj2 = require("PlatformUtils");
+    if (obj2.isWindows()) {
+      const rocketLeagueStatsApi = DiscordNative.rocketLeagueStatsApi;
+      let rocketLeagueStatsApiConfig;
+      if (rocketLeagueStatsApi != null) {
+        rocketLeagueStatsApiConfig = rocketLeagueStatsApi.readRocketLeagueStatsApiConfig();
+      }
+      if (rocketLeagueStatsApiConfig == null) {
+        rocketLeagueStatsApiConfig = Promise.resolve(obj);
+      }
+      resolved = rocketLeagueStatsApiConfig;
+    } else {
+      resolved = Promise.resolve(obj);
+    }
+    return resolved;
+  },
+  writeRocketLeagueStatsApiConfig(arg0) {
+    let resolved;
+    obj = require("PlatformUtils");
+    if (obj.isWindows()) {
+      const rocketLeagueStatsApi = DiscordNative.rocketLeagueStatsApi;
+      let result;
+      if (rocketLeagueStatsApi != null) {
+        result = rocketLeagueStatsApi.writeRocketLeagueStatsApiConfig(arg0);
+      }
+      if (result == null) {
+        result = Promise.resolve(false);
+      }
+      resolved = result;
+    } else {
+      resolved = Promise.resolve(false);
+    }
+    return resolved;
+  },
+  debugLogRocketLeagueStatsApiMessage(arg0) {
+    let resolved;
+    obj = require("PlatformUtils");
+    if (obj.isWindows()) {
+      const rocketLeagueStatsApi = DiscordNative.rocketLeagueStatsApi;
+      let result;
+      if (rocketLeagueStatsApi != null) {
+        result = rocketLeagueStatsApi.debugLogRocketLeagueStatsApiMessage(arg0);
       }
       if (result == null) {
         result = Promise.resolve();

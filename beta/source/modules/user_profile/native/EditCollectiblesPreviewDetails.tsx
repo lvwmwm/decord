@@ -1,22 +1,22 @@
-// Module ID: 13483
-// Function ID: 13484
+// Module ID: 14262
+// Function ID: 14263
 // Name: EditCollectiblesPreviewDetails
-// Dependencies: [19, 17, 2129, 21, 5092, 558, 576, 504, 4769, 7271, 4793, 5088, 1126, 8293, 2]
+// Dependencies: [19, 17, 2132, 21, 5191, 558, 576, 504, 4864, 7542, 4888, 5187, 1128, 8571, 2]
 
-// Module 13483 (EditCollectiblesPreviewDetails)
+// Module 14262 (EditCollectiblesPreviewDetails)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import intl6 from "intl" /* 1126 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
-import DateUtils from "DateUtils" /* 4793 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7271 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8293 */;
+import intl6 from "intl" /* 1128 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4864 */;
+import DateUtils from "DateUtils" /* 4888 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7542 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8571 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2129 */;
+import LocaleStore from "LocaleStore" /* 2132 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -99,12 +99,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
         let tmp18 = null != diffAsUnitsResult;
         if (tmp18) {
           const obj2 = { variant: "text-sm/medium", color: "text-default", children: format(Io7ozn, obj4) };
-          const Text = tmp(5088).Text;
-          const intl = tmp(1126).intl;
+          const Text = tmp(5187).Text;
+          const intl = tmp(1128).intl;
           format = intl.format;
           obj4 = { days: str.toString() };
           str = diffAsUnitsResult.days;
-          Io7ozn = tmp(1126).t.Io7ozn;
+          Io7ozn = tmp(1128).t.Io7ozn;
           tmp18 = hasOwnProperty(Text, obj2);
         }
         cResult[2] = purchase;
@@ -163,12 +163,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
         let tmp31 = null != expiresAt2;
         if (tmp31) {
           const obj7 = { variant: "text-sm/medium", color: "text-default", children: format3(eZSTa5, obj8) };
-          const Text2 = tmp(5088).Text;
-          const intl3 = tmp(1126).intl;
+          const Text2 = tmp(5187).Text;
+          const intl3 = tmp(1128).intl;
           format3 = intl3.format;
           obj8 = { date: expiresAt.toLocaleDateString(stateFromStores, { minute: "numeric", hour: "numeric", day: "numeric", month: "long", year: "numeric" }) };
           expiresAt = purchase.expiresAt;
-          eZSTa5 = tmp(1126).t.eZSTa5;
+          eZSTa5 = tmp(1128).t.eZSTa5;
           tmp31 = hasOwnProperty(Text2, obj7);
         }
         cResult[9] = stateFromStores;
@@ -176,10 +176,10 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
         cResult[11] = tmp31;
         tmp29 = tmp31;
       }
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const format2 = intl2.format;
       let toLocaleDateStringResult;
-      const gW9R4B = tmp(1126).t.gW9R4B;
+      const gW9R4B = tmp(1128).t.gW9R4B;
       if (purchase != null) {
         const purchasedAt = purchase.purchasedAt;
         toLocaleDateStringResult = purchasedAt.toLocaleDateString(stateFromStores, { month: "long", year: "numeric" });
@@ -203,8 +203,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
       const _Symbol2 = Symbol;
       if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
         const obj10 = { variant: "text-sm/medium", color: "text-default", children: intl5.string(intl6.t.hmyYK8) };
-        const Text4 = tmp(5088).Text;
-        intl5 = tmp(1126).intl;
+        const Text4 = tmp(5187).Text;
+        intl5 = tmp(1128).intl;
         const tmp48 = hasOwnProperty(Text4, obj10);
         cResult[16] = tmp48;
         tmp46 = tmp48;
@@ -241,8 +241,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
     const _Symbol = Symbol;
     if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
       const obj13 = { variant: "text-sm/medium", color: "text-default", children: intl4.string(intl6.t.fEGjVQ) };
-      const Text3 = tmp(5088).Text;
-      intl4 = tmp(1126).intl;
+      const Text3 = tmp(5187).Text;
+      intl4 = tmp(1128).intl;
       const tmp39 = hasOwnProperty(Text3, obj13);
       cResult[21] = tmp39;
       tmp37 = tmp39;
@@ -309,20 +309,20 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
       const tmp15 = metroRequire;
       if (tmp16) {
         const obj4 = { variant: "text-sm/medium", color: "text-default", children: format(Io7ozn, obj5) };
-        const Text = tmp(5088).Text;
-        const intl = tmp(1126).intl;
+        const Text = tmp(5187).Text;
+        const intl = tmp(1128).intl;
         format = intl.format;
         obj5 = { days: str.toString() };
         str = diffAsUnitsResult.days;
-        Io7ozn = tmp(1126).t.Io7ozn;
+        Io7ozn = tmp(1128).t.Io7ozn;
         tmp16 = hasOwnProperty(Text, obj4);
       }
       const items1 = [tmp16, , ];
-      const Text2 = tmp(5088).Text;
-      const intl2 = tmp(1126).intl;
+      const Text2 = tmp(5187).Text;
+      const intl2 = tmp(1128).intl;
       const format2 = intl2.format;
       let toLocaleDateStringResult;
-      const gW9R4B = tmp(1126).t.gW9R4B;
+      const gW9R4B = tmp(1128).t.gW9R4B;
       if (purchase != null) {
         const purchasedAt = purchase.purchasedAt;
         toLocaleDateStringResult = purchasedAt.toLocaleDateString(stateFromStores, { month: "long", year: "numeric" });
@@ -337,12 +337,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
       let tmp18Result = null != expiresAt2;
       if (tmp18Result) {
         const obj8 = { variant: "text-sm/medium", color: "text-default", children: format3(eZSTa5, obj9) };
-        const Text3 = tmp(5088).Text;
-        const intl3 = tmp(1126).intl;
+        const Text3 = tmp(5187).Text;
+        const intl3 = tmp(1128).intl;
         format3 = intl3.format;
         obj9 = { date: expiresAt.toLocaleDateString(stateFromStores, { minute: "numeric", hour: "numeric", day: "numeric", month: "long", year: "numeric" }) };
         expiresAt = purchase.expiresAt;
-        eZSTa5 = tmp(1126).t.eZSTa5;
+        eZSTa5 = tmp(1128).t.eZSTa5;
         tmp18Result = tmp18(Text3, obj8);
       }
       const obj10 = { children: items1 };
@@ -354,13 +354,13 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
     let tmp25Result;
     if (canUseCollectiblesResult) {
       const obj11 = { variant: "text-sm/medium", color: "text-default", children: intl5.string(intl6.t.hmyYK8) };
-      const Text6 = tmp(5088).Text;
-      intl5 = tmp(1126).intl;
+      const Text6 = tmp(5187).Text;
+      intl5 = tmp(1128).intl;
       tmp25Result = hasOwnProperty(Text6, obj11);
     } else {
       const tmp4Result = PremiumUtilsDefault;
       const isPremiumResult = tmp4Result.isPremium(user);
-      const Text5 = tmp(5088).Text;
+      const Text5 = tmp(5187).Text;
       const obj12 = { variant: "text-sm/medium", color: "text-default", children: null };
       if (isPremiumResult) {
         obj12.children = nitroUpgradeCTA;
@@ -373,8 +373,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCol
     tmp23 = tmp25Result;
   } else {
     const obj13 = { variant: "text-sm/medium", color: "text-default", children: intl4.string(intl6.t.fEGjVQ) };
-    const Text4 = tmp(5088).Text;
-    intl4 = tmp(1126).intl;
+    const Text4 = tmp(5187).Text;
+    intl4 = tmp(1128).intl;
     tmp23 = hasOwnProperty(Text4, obj13);
   }
   return tmp23;

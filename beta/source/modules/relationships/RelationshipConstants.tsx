@@ -1,9 +1,9 @@
-// Module ID: 7019
-// Function ID: 7020
+// Module ID: 7294
+// Function ID: 7295
 // Name: RelationshipConstants
 // Dependencies: [2]
 
-// Module 7019 (RelationshipConstants)
+// Module 7294 (RelationshipConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/relationships/RelationshipConstants.tsx");

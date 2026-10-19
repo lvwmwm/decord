@@ -1,10 +1,10 @@
-// Module ID: 12324
-// Function ID: 12325
+// Module ID: 13272
+// Function ID: 13273
 // Name: getBoostLifecyclePhase
 // Dependencies: [11, 2]
 // Exports: getBoostLifecycleInfo, getBoostLifecycleTimestamp
 
-// Module 12324 (getBoostLifecyclePhase)
+// Module 13272 (getBoostLifecyclePhase)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 

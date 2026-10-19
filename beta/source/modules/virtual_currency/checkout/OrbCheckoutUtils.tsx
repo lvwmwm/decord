@@ -1,16 +1,16 @@
-// Module ID: 6943
-// Function ID: 6944
+// Module ID: 7219
+// Function ID: 7220
 // Name: OrbCheckoutUtils
-// Dependencies: [1085, 1087, 6944, 1126, 6945, 4791, 2]
+// Dependencies: [1087, 1089, 7220, 1128, 7221, 4886, 2]
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 6943 (OrbCheckoutUtils)
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import intl10 from "intl" /* 1126 */;
-import BillingError from "BillingError" /* 4791 */;
-import OrderConstants from "OrderConstants" /* 6944 */;
-import OrderActionCreators from "OrderActionCreators" /* 6945 */;
-import Constants from "Constants" /* 1085 */;
+// Module 7219 (OrbCheckoutUtils)
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
+import intl10 from "intl" /* 1128 */;
+import BillingError from "BillingError" /* 4886 */;
+import OrderConstants from "OrderConstants" /* 7220 */;
+import OrderActionCreators from "OrderActionCreators" /* 7221 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -58,11 +58,11 @@ export const getOrbCheckoutDisclaimerMessage = function getOrbCheckoutDisclaimer
   const intl3 = intl10.intl;
   let stringResult = intl3.string(intl10.t["Sxed/G"]);
   if (skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
-    const intl5 = tmp(1126).intl;
-    stringResult = intl5.string(tmp(1126).t.APcKRo);
+    const intl5 = tmp(1128).intl;
+    stringResult = intl5.string(tmp(1128).t.APcKRo);
   } else if (skuId === tmp6.FRACTIONAL_PREMIUM) {
-    const intl4 = tmp(1126).intl;
-    stringResult = intl4.string(tmp(1126).t.FhJ74j);
+    const intl4 = tmp(1128).intl;
+    stringResult = intl4.string(tmp(1128).t.FhJ74j);
   }
   const items = [formatResult, " ", stringResult];
   return items;
@@ -75,37 +75,37 @@ export const resolveOrbCheckoutErrorMessage = function resolveOrbCheckoutErrorMe
       if (null != arg1) {
         let stringResult;
         if (ConstraintReasonCode.INSUFFICIENT_ORB_BALANCE === arg1) {
-          const intl9 = tmp2(1126).intl;
-          stringResult = intl9.string(tmp2(1126).t.keFvXM);
+          const intl9 = tmp2(1128).intl;
+          stringResult = intl9.string(tmp2(1128).t.keFvXM);
         } else if (ConstraintReasonCode.SKU_ALREADY_OWNED === arg1) {
-          const intl8 = tmp2(1126).intl;
-          stringResult = intl8.string(tmp2(1126).t.m371Mx);
+          const intl8 = tmp2(1128).intl;
+          stringResult = intl8.string(tmp2(1128).t.m371Mx);
         } else if (ConstraintReasonCode.BUNDLE_PARTIALLY_OWNED === arg1) {
-          const intl7 = tmp2(1126).intl;
-          stringResult = intl7.string(tmp2(1126).t.v9oC0p);
+          const intl7 = tmp2(1128).intl;
+          stringResult = intl7.string(tmp2(1128).t.v9oC0p);
         } else {
-          const intl6 = tmp2(1126).intl;
-          stringResult = intl6.string(tmp2(1126).t.fqJZ11);
+          const intl6 = tmp2(1128).intl;
+          stringResult = intl6.string(tmp2(1128).t.fqJZ11);
         }
         stringResult1 = stringResult;
       }
       tmp = stringResult1;
     }
     if (code instanceof OrderActionCreators.OrderProcessingPendingError) {
-      const intl5 = tmp2(1126).intl;
-      stringResult1 = intl5.string(tmp2(1126).t["2BmwgV"]);
+      const intl5 = tmp2(1128).intl;
+      stringResult1 = intl5.string(tmp2(1128).t["2BmwgV"]);
     } else if (code.code === BillingError.ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
-      const intl4 = tmp2(1126).intl;
-      stringResult1 = intl4.string(tmp2(1126).t.keFvXM);
+      const intl4 = tmp2(1128).intl;
+      stringResult1 = intl4.string(tmp2(1128).t.keFvXM);
     } else if (code.code === BillingError.ErrorCodes.ALREADY_PURCHASED) {
-      const intl3 = tmp2(1126).intl;
-      stringResult1 = intl3.string(tmp2(1126).t.m371Mx);
+      const intl3 = tmp2(1128).intl;
+      stringResult1 = intl3.string(tmp2(1128).t.m371Mx);
     } else if (code.code === BillingError.ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
-      const intl2 = tmp2(1126).intl;
-      stringResult1 = intl2.string(tmp2(1126).t.ZHgEG7);
+      const intl2 = tmp2(1128).intl;
+      stringResult1 = intl2.string(tmp2(1128).t.ZHgEG7);
     } else {
-      const intl = tmp2(1126).intl;
-      stringResult1 = intl.string(tmp2(1126).t.fqJZ11);
+      const intl = tmp2(1128).intl;
+      stringResult1 = intl.string(tmp2(1128).t.fqJZ11);
     }
   }
   return tmp;

@@ -1,11 +1,11 @@
-// Module ID: 16369
-// Function ID: 16370
+// Module ID: 17058
+// Function ID: 17059
 // Name: RiveAppStatePlaybackExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1455, 558, 576, 2]
 
-// Module 16369 (RiveAppStatePlaybackExperiment)
+// Module 17058 (RiveAppStatePlaybackExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

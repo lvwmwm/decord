@@ -1,20 +1,20 @@
-// Module ID: 13903
-// Function ID: 13904
+// Module ID: 14683
+// Function ID: 14684
 // Name: GuildBoostingMarketingFaq
-// Dependencies: [32, 19, 17, 1085, 21, 5092, 7117, 587, 1126, 2128, 558, 576, 5088, 6185, 1200, 13904, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 5191, 7388, 587, 1128, 2131, 558, 576, 5187, 6462, 1202, 14684, 2]
 
-// Module 13903 (GuildBoostingMarketingFaq)
+// Module 14683 (GuildBoostingMarketingFaq)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7117 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13904 */;
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7388 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14684 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -157,8 +157,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
   [first, dependencyMap] = react.useState(null);
   ({ wrapper, content, heading } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(tmp(1126).t.HPJ6Nj);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(tmp(1128).t.HPJ6Nj);
     cResult[0] = stringResult;
     first1 = stringResult;
   } else {
@@ -166,7 +166,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
   }
   if (cResult[1] !== tmp4.heading) {
     let obj2 = { style: heading, variant: "heading-xxl/bold", children: first1 };
-    const tmp11 = closure_7(tmp(5088).Heading, obj2);
+    const tmp11 = closure_7(tmp(5187).Heading, obj2);
     cResult[1] = tmp4.heading;
     cResult[2] = tmp11;
     tmp9 = tmp11;

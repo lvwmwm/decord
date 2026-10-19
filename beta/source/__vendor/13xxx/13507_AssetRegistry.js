@@ -1,10 +1,10 @@
 // Module ID: 13507
 // Function ID: 13508
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 13507 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/seasonal", width: 144, height: 150, scales: [1], hash: "2428d071b75d8fac57234ccab81c5c37", name: "cake_idle", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 24, height: 24, scales: [2, 3], hash: "9f983315273ecf4164927351f28f2400", name: "ic_premium_overview_24px", type: "png" });

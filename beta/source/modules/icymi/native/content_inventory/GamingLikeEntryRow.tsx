@@ -1,22 +1,22 @@
-// Module ID: 16967
-// Function ID: 16968
+// Module ID: 17647
+// Function ID: 17648
 // Name: GamingLikeEntryRow
-// Dependencies: [19, 17, 1390, 21, 13138, 8267, 13143, 16918, 587, 504, 5628, 8849, 6858, 8265, 8875, 8874, 8263, 16968, 2000, 8467, 5934, 16970, 1126, 16972, 5088, 4962, 6059, 11, 683, 6185, 6157, 16973, 2]
+// Dependencies: [19, 17, 1392, 21, 14063, 8544, 14068, 17598, 587, 504, 5884, 9126, 7134, 8542, 9151, 9150, 8540, 17648, 2002, 8745, 12690, 17650, 1128, 17652, 5187, 5057, 6337, 11, 683, 6462, 5128, 17653, 2]
 // Exports: default
 
-// Module 16967 (GamingLikeEntryRow)
+// Module 17647 (GamingLikeEntryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8263 */;
-import utils from "utils" /* 8267 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8467 */;
-import BadgesAll from "Badges" /* 13138 */;
-import TrendingType from "TrendingType" /* 13143 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8540 */;
+import utils from "utils" /* 8544 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8745 */;
+import BadgesAll from "Badges" /* 14063 */;
+import TrendingType from "TrendingType" /* 14068 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16918 */;
+import createICYMIStyles from "createICYMIStyles" /* 17598 */;
 import size_mod from "module_2" /* 2 */;
 
 let Badge, GameShareModal;
@@ -165,7 +165,7 @@ export default function GamingLikeEntryRow(content) {
   }, items2);
   const items3 = [content];
   const callback1 = react.useCallback(() => {
-    const promise = asyncRequire(16968, dependencyMap.paths);
+    const promise = asyncRequire(17648, dependencyMap.paths);
     promise.then((GameShareModal) => {
       GameShareModal = GameShareModal.GameShareModal;
       if (null != GameShareModal) {
@@ -174,9 +174,8 @@ export default function GamingLikeEntryRow(content) {
         const obj3 = { itemId: content.id, itemType: "hotwheels_gaming_activity", actionParameters: { actionGestureType: "press", actionTargetElement: "forward_button", actionIntentType: "share", actionDestinationType: null } };
         const obj2 = author_id(openReplyActionSheet[19]);
         obj2.feedItemActioned(obj3);
-        const obj4 = author_id(openReplyActionSheet[20]);
-        const obj5 = { content };
-        obj4.pushLazy(() => Promise.resolve(GameShareModal), obj5, "GameShareModal", { presentation: "modal" });
+        const obj4 = { content };
+        author_id(openReplyActionSheet[20])(() => Promise.resolve(GameShareModal), obj4, "GameShareModal");
       }
     });
   }, items3);
@@ -204,8 +203,8 @@ export default function GamingLikeEntryRow(content) {
         const Text = tmp2(tmp3[24]).Text;
         tmp19 = closure_8;
         if (null != displayNameStylesFont) {
-          let obj5 = { fontFamily: displayNameStylesFont };
-          tmp20 = obj5;
+          tmp20 = { fontFamily: displayNameStylesFont };
+          const obj5 = { fontFamily: displayNameStylesFont };
         }
         obj6 = { children: items5 };
         const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp20, children: tmp5Result6.getName(stateFromStores) };

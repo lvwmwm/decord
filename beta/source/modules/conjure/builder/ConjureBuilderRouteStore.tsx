@@ -1,12 +1,12 @@
-// Module ID: 6922
-// Function ID: 6923
+// Module ID: 7198
+// Function ID: 7199
 // Name: ConjureBuilderRouteStore
-// Dependencies: [2072, 504, 584, 2]
+// Dependencies: [2075, 504, 584, 2]
 
-// Module 6922 (ConjureBuilderRouteStore)
+// Module 7198 (ConjureBuilderRouteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelConstants from "ChannelConstants" /* 2072 */;
+import ChannelConstants from "ChannelConstants" /* 2075 */;
 import size from "module_2" /* 2 */;
 
 let _null, closure_3;
@@ -48,7 +48,7 @@ class ConjureBuilderRouteStore extends PersistedStore {
 }
 const prototype = ConjureBuilderRouteStore.prototype;
 ConjureBuilderRouteStore.displayName = "ConjureBuilderRouteStore";
-ConjureBuilderRouteStore.persistKey = "VibegrationsBuilderRoute";
+ConjureBuilderRouteStore.persistKey = "ConjureBuilderRoute";
 let obj2 = {
   CHANNEL_SELECT: function handleChannelSelect(channelId) {
     let guildId;

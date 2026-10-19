@@ -1,11 +1,11 @@
-// Module ID: 14948
-// Function ID: 14949
+// Module ID: 15702
+// Function ID: 15703
 // Name: MobileNitroPreviewDirectCheckoutExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1455, 558, 576, 2]
 
-// Module 14948 (MobileNitroPreviewDirectCheckoutExperiment)
+// Module 15702 (MobileNitroPreviewDirectCheckoutExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

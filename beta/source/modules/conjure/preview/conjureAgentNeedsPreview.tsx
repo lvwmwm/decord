@@ -1,12 +1,12 @@
-// Module ID: 17126
-// Function ID: 17127
+// Module ID: 11710
+// Function ID: 11711
 // Name: conjureAgentNeedsPreview
-// Dependencies: [13003, 11429, 558, 576, 504, 2]
+// Dependencies: [10979, 11037, 558, 576, 504, 2]
 // Exports: conjureAgentNeedsPreview
 
-// Module 17126 (conjureAgentNeedsPreview)
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11429 */;
-import ConjureChatStore from "ConjureChatStore" /* 13003 */;
+// Module 11710 (conjureAgentNeedsPreview)
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11037 */;
+import ConjureChatStore from "ConjureChatStore" /* 10979 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -64,11 +64,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
 });
 const result = size.fileFinishedImporting("modules/conjure/preview/conjureAgentNeedsPreview.tsx");
 
-export const conjureAgentNeedsPreview = function conjureAgentNeedsPreview(openResult) {
-  let isThinkingResult = ConjureChatStore.isThinking(openResult);
+export const conjureAgentNeedsPreview = function conjureAgentNeedsPreview(projectId) {
+  let isThinkingResult = ConjureChatStore.isThinking(projectId);
   if (!isThinkingResult) {
     const obj = conjurePreviewControlLease;
-    isThinkingResult = obj.isConjureControlActive(openResult);
+    isThinkingResult = obj.isConjureControlActive(projectId);
   }
   return isThinkingResult;
 };

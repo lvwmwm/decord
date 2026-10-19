@@ -1,24 +1,24 @@
-// Module ID: 16088
-// Function ID: 16089
+// Module ID: 16787
+// Function ID: 16788
 // Name: DevToolsAgeVerificationScreen
-// Dependencies: [5, 19, 17, 21, 5092, 587, 7506, 7493, 4809, 5918, 558, 576, 1631, 6180, 6640, 6189, 6265, 2]
+// Dependencies: [5, 19, 17, 21, 5191, 587, 7777, 7764, 4904, 6174, 558, 576, 1633, 6457, 6917, 6466, 6542, 2]
 
-// Module 16088 (DevToolsAgeVerificationScreen)
+// Module 16787 (DevToolsAgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
-import TableRow3 from "TableRow" /* 6180 */;
-import TableRowArrow from "TableRowArrow" /* 6189 */;
-import TableRowGroup2 from "TableRowGroup" /* 6265 */;
-import KeyIcon from "KeyIcon" /* 6640 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7493 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7506 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6174 */;
+import TableRow3 from "TableRow" /* 6457 */;
+import TableRowArrow from "TableRowArrow" /* 6466 */;
+import TableRowGroup2 from "TableRowGroup" /* 6542 */;
+import KeyIcon from "KeyIcon" /* 6917 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7764 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7777 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -149,7 +149,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAg
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { label: "Launch Age Verification Test Tool", onPress: showAgeVerificationTestModal, icon: hasOwnProperty(KeyIcon.KeyIcon, {}), trailing: hasOwnProperty(TableRowArrow.TableRowArrow, {}) };
-      const TableRow = tmp(6180).TableRow;
+      const TableRow = tmp(6457).TableRow;
       const tmp12 = hasOwnProperty(TableRow, obj3);
       cResult[5] = tmp12;
       tmp9 = tmp12;
@@ -160,7 +160,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAg
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { title: "Quick Actions", hasIcons: true, children: items };
       items = [tmp9, ];
-      const TableRowGroup = tmp(6265).TableRowGroup;
+      const TableRowGroup = tmp(6542).TableRowGroup;
       const obj5 = {
         label: "Launch Age Verification Modal",
         onPress() {
@@ -171,7 +171,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsAg
         icon: hasOwnProperty(KeyIcon.KeyIcon, {}),
         trailing: hasOwnProperty(TableRowArrow.TableRowArrow, {})
       };
-      const TableRow2 = tmp(6180).TableRow;
+      const TableRow2 = tmp(6457).TableRow;
       items[1] = hasOwnProperty(TableRow2, obj5);
       const tmp16 = metroRequire(TableRowGroup, obj4);
       cResult[6] = tmp16;

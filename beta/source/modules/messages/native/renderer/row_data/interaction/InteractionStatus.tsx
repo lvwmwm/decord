@@ -1,12 +1,12 @@
-// Module ID: 13487
-// Function ID: 13488
+// Module ID: 14266
+// Function ID: 14267
 // Name: InteractionStatus
-// Dependencies: [8249, 1126, 2]
+// Dependencies: [8526, 1128, 2]
 // Exports: createInteractionStatus
 
-// Module 13487 (InteractionStatus)
-import intl5 from "intl" /* 1126 */;
-import InteractionUtils from "InteractionUtils" /* 8249 */;
+// Module 14266 (InteractionStatus)
+import intl5 from "intl" /* 1128 */;
+import InteractionUtils from "InteractionUtils" /* 8526 */;
 import size from "module_2" /* 2 */;
 
 const constants = { LOADING: 0, [0]: "LOADING", FAILED: 1, [1]: "FAILED", EPHEMERAL_SUCCESS: 999, [999]: "EPHEMERAL_SUCCESS" };
@@ -20,21 +20,21 @@ export const createInteractionStatus = function createInteractionStatus(message,
   const interactionStatusViewState = obj.getInteractionStatusViewState(message, interaction);
   if (InteractionUtils.InteractionStatusViewState.SENDING === interactionStatusViewState) {
     const obj2 = { text: intl4.string(intl5.t.RiLfBY), state: constants.LOADING };
-    intl4 = tmp(1126).intl;
+    intl4 = tmp(1128).intl;
     return obj2;
   } else if (InteractionUtils.InteractionStatusViewState.CREATED === interactionStatusViewState) {
     const obj3 = { text: intl3.formatToPlainString(intl5.t["7ePV4t"], obj4), state: constants.LOADING };
-    intl3 = tmp(1126).intl;
+    intl3 = tmp(1128).intl;
     return obj3;
   } else if (InteractionUtils.InteractionStatusViewState.TIMED_OUT === interactionStatusViewState) {
     const obj5 = { text: intl2.string(intl5.t.h8hzPd), state: constants.FAILED };
-    intl2 = tmp(1126).intl;
+    intl2 = tmp(1128).intl;
     return obj5;
   } else if (InteractionUtils.InteractionStatusViewState.FAILED === interactionStatusViewState) {
     let interactionError = message.interactionError;
     if (interactionError == null) {
-      const intl = tmp(1126).intl;
-      interactionError = intl.string(tmp(1126).t.VCsUJu);
+      const intl = tmp(1128).intl;
+      interactionError = intl.string(tmp(1128).t.VCsUJu);
     }
     return { text: interactionError, state: constants.FAILED };
   } else if (InteractionUtils.InteractionStatusViewState.EPHEMERAL_SUCCESS === interactionStatusViewState) {

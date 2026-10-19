@@ -1,10 +1,10 @@
 // Module ID: 11135
 // Function ID: 11136
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 11135 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 12, height: 12, scales: [2, 3], hash: "b28329d7d2ebd0b330f6112973e5d746", name: "ic_sparkle", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "ea3c9abdbf7b4bdacb76018f8790d9b4", name: "ic_caret_24px", type: "png" });

@@ -1,16 +1,28 @@
-// Module ID: 4977
-// Function ID: 4978
+// Module ID: 5073
+// Function ID: 5074
 // Name: RootNavigationRef
-// Dependencies: [1504, 2]
-// Exports: getRootNavigationRef
+// Dependencies: [1506, 2]
+// Exports: getRootNavigationRef, runWhenRootNavigationReady
 
-// Module 4977 (RootNavigationRef)
-import Link from "Link" /* 1504 */;
+// Module 5073 (RootNavigationRef)
+import Link from "Link" /* 1506 */;
 import size from "module_2" /* 2 */;
 
-let closure_0 = Link.createNavigationContainerRef();
+let ready = Link.createNavigationContainerRef();
 const result = size.fileFinishedImporting("modules/main_tabs_v2/RootNavigationRef.native.tsx");
 
 export function getRootNavigationRef() {
-  return closure_0;
+  return ready;
 }
+export const runWhenRootNavigationReady = function runWhenRootNavigationReady(fn) {
+  ready = fn;
+  const obj = ready;
+  if (ready.isReady()) {
+    fn();
+  } else {
+    let closure_1 = obj.addListener("ready", () => {
+      closure_1();
+      closure_0();
+    });
+  }
+};

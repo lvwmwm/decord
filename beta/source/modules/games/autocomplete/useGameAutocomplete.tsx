@@ -1,22 +1,23 @@
-// Module ID: 8702
-// Function ID: 8703
+// Module ID: 8978
+// Function ID: 8979
 // Name: useGameAutocomplete
-// Dependencies: [32, 19, 8231, 1085, 504, 8232, 8703, 558, 576, 8704, 2]
+// Dependencies: [32, 19, 8508, 1087, 504, 8509, 8979, 558, 576, 8980, 2]
 
-// Module 8702 (useGameAutocomplete)
+// Module 8978 (useGameAutocomplete)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8232 */;
-import GameAutocompleteActionCreators from "GameAutocompleteActionCreators" /* 8703 */;
-import GameSearchSession from "GameSearchSession" /* 8704 */;
+import Constants from "Constants" /* 1087 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8509 */;
+import GameAutocompleteActionCreators from "GameAutocompleteActionCreators" /* 8979 */;
+import GameSearchSession from "GameSearchSession" /* 8980 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8231 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8508 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let results;
 
 let _slicedToArray = _slicedToArray_mod;
 const QueryIds = Constants.QueryIds;
@@ -27,7 +28,7 @@ let obj = {
     return GAME_AUTOCOMPLETE(obj.normalizeGameAutocompleteQuery(name), arg1);
   },
   get(arg0, arg1) {
-    let results = GameAutocompleteStore.getResults(arg0, arg1);
+    results = GameAutocompleteStore.getResults(arg0, arg1);
     if (results == null) {
       results = null;
     }
@@ -194,7 +195,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDebounced
       let tmp15 = null != tmp12;
       if (tmp15) {
         let results1;
-        const results = tmp12.results;
+        results = tmp12.results;
         if (tmp10 != null) {
           results1 = tmp10.results;
         }
@@ -451,7 +452,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDebounced
     let tmp9 = null != tmp8;
     if (tmp9) {
       let results1;
-      const results = tmp8.results;
+      results = tmp8.results;
       if (tmp6 != null) {
         results1 = tmp6.results;
       }

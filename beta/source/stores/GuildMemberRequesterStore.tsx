@@ -1,17 +1,20 @@
-// Module ID: 5951
-// Function ID: 5952
+// Module ID: 6207
+// Function ID: 6208
 // Name: GuildMemberRequesterStore
-// Dependencies: [2065, 2125, 5952, 584, 504, 2]
+// Dependencies: [2068, 2128, 2119, 6208, 584, 4833, 1103, 504, 2]
 
-// Module 5951 (GuildMemberRequesterStore)
+// Module 6207 (GuildMemberRequesterStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildMemberRequesterDefault from "GuildMemberRequester" /* 5952 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import MessageTypes from "MessageTypes" /* 1103 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4833 */;
+import GuildMemberRequesterDefault from "GuildMemberRequester" /* 6208 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import size from "module_2" /* 2 */;
 
-const f36707 = (arg0, userIds) => {
+const f37237 = (arg0, userIds) => {
   let items;
   const obj2 = { type: "GUILD_MEMBERS_REQUEST", guildIds: items, userIds };
   items = [arg0];
@@ -21,24 +24,46 @@ const f36707 = (arg0, userIds) => {
 function handleConnectionReset() {
   navigation.reset();
 }
+function requestMember(arg0, arg1) {
+  navigation.request(arg0, arg1);
+  return false;
+}
+function requestLeaderboardMembers(guildId, message) {
+  const guild_space_data = message.guild_space_data;
+  let leaderboard;
+  const getGuildSpaceLeaderboardUserIds = GuildLeaderboardTypes.getGuildSpaceLeaderboardUserIds;
+  GuildLeaderboardTypes;
+  if (guild_space_data != null) {
+    leaderboard = guild_space_data.leaderboard;
+  }
+  const guildSpaceLeaderboardUserIds = getGuildSpaceLeaderboardUserIds(leaderboard);
+  const tmp4 = guildSpaceLeaderboardUserIds[Symbol.iterator]();
+  while (tmp4 !== undefined) {
+    let tmp7 = requestMember(guildId, tmp5);
+    continue;
+  }
+}
 function handleLoadMessages(messages) {
   messages = messages.messages;
   const channel = ChannelStore.getChannel(messages.channelId);
   let flag = null != channel && null != channel.guild_id;
   if (flag) {
     const guild_id = channel.guild_id;
-    const item = messages.forEach((item) => {
+    const item = messages.forEach((type) => {
       let author;
       let mentions;
-      ({ author, mentions } = item);
+      ({ author, mentions } = type);
       if (null != author) {
         navigation.request(guild_id, author.id);
       }
       if (mentions != null) {
-        item = mentions.forEach((id) => {
+        const item = mentions.forEach((id) => {
           navigation.request(guild_id, id.id);
           return false;
         });
+      }
+      if (type.type === MessageTypes.MessageTypes.GUILD_SPACE_MESSAGE) {
+        requestLeaderboardMembers(guild_id, type);
       }
     });
     flag = false;
@@ -62,32 +87,35 @@ function handleLoadSearchResults(arg0) {
         });
       });
     });
-    const item1 = items.forEach((item) => {
+    const item1 = items.forEach((type) => {
       let author;
       let mentions;
-      ({ author, mentions } = item);
+      ({ author, mentions } = type);
       if (null != author) {
         navigation.request(guild_id, author.id);
       }
       if (mentions != null) {
-        item = mentions.forEach((id) => {
+        const item = mentions.forEach((id) => {
           navigation.request(guild_id, id.id);
           return false;
         });
+      }
+      if (type.type === MessageTypes.MessageTypes.GUILD_SPACE_MESSAGE) {
+        requestLeaderboardMembers(guild_id, type);
       }
     });
     return false;
   }
 }
-const React3 = new GuildMemberRequesterDefault(GuildMemberStore.isMember, f36707);
-new GuildMemberRequesterDefault(GuildMemberStore.isMember, f36707);
+const metroRequire = new GuildMemberRequesterDefault(GuildMemberStore.isMember, f37237);
+new GuildMemberRequesterDefault(GuildMemberStore.isMember, f37237);
 const Store = get_initializedDefault.Store;
 class GuildMemberRequesterStore extends Store {
   initialize() {
-    this.waitFor(ChannelStore, GuildMemberStore);
+    this.waitFor(ChannelStore, GuildMemberStore, SelectedChannelStore);
   }
-  requestMember(guild_id, id) {
-    navigation.request(guild_id, id);
+  requestMember(arg0, arg1) {
+    navigation.request(arg0, arg1);
   }
   getDebugState(arg0) {
     return navigation.getDebugState(arg0);
@@ -124,18 +152,21 @@ let obj = {
   SMART_SEARCH_FETCH_SUCCESS: function handleSmartSearchFetchSuccess(messages) {
     messages = messages.messages;
     const guildId = messages.smartSearchQuery.guildId;
-    const item = messages.forEach((item) => {
+    const item = messages.forEach((type) => {
       let author;
       let mentions;
-      ({ author, mentions } = item);
+      ({ author, mentions } = type);
       if (null != author) {
         navigation.request(guild_id, author.id);
       }
       if (mentions != null) {
-        item = mentions.forEach((id) => {
+        const item = mentions.forEach((id) => {
           navigation.request(guild_id, id.id);
           return false;
         });
+      }
+      if (type.type === MessageTypes.MessageTypes.GUILD_SPACE_MESSAGE) {
+        requestLeaderboardMembers(guild_id, type);
       }
     });
     return false;
@@ -152,23 +183,50 @@ let obj = {
     if (flag) {
       const guild_id = channel.guild_id;
       const mapped = pins.map((message) => message.message);
-      const item = mapped.forEach((item) => {
+      const item = mapped.forEach((type) => {
         let author;
         let mentions;
-        ({ author, mentions } = item);
+        ({ author, mentions } = type);
         if (null != author) {
           navigation.request(guild_id, author.id);
         }
         if (mentions != null) {
-          item = mentions.forEach((id) => {
+          const item = mentions.forEach((id) => {
             navigation.request(guild_id, id.id);
             return false;
           });
+        }
+        if (type.type === MessageTypes.MessageTypes.GUILD_SPACE_MESSAGE) {
+          requestLeaderboardMembers(guild_id, type);
         }
       });
       flag = false;
     }
     return flag;
+  },
+  MESSAGE_CREATE: function handleMessageCreate(arg0) {
+    let channelId;
+    let guildId;
+    let message;
+    ({ guildId, channelId, message } = arg0);
+    if (channelId !== SelectedChannelStore.getCurrentlySelectedChannelId()) {
+      return false;
+    } else {
+      if (guildId == null) {
+        const channel = ChannelStore.getChannel(channelId);
+        let guild_id;
+        if (channel != null) {
+          guild_id = channel.guild_id;
+        }
+        guildId = guild_id;
+      }
+      if (null != guildId) {
+        if (message.type === MessageTypes.MessageTypes.GUILD_SPACE_MESSAGE) {
+          requestLeaderboardMembers(guildId, message);
+        }
+      }
+      return false;
+    }
   },
   CONVERSATION_MESSAGES_FETCH_SUCCESS: function handleConversationMessagesFetchSuccess(messages) {
     messages = messages.messages;
@@ -178,18 +236,21 @@ let obj = {
     if (flag) {
       const guild_id = channel.guild_id;
       const combined = messages.concat(messageReferences);
-      const item = combined.forEach((item) => {
+      const item = combined.forEach((type) => {
         let author;
         let mentions;
-        ({ author, mentions } = item);
+        ({ author, mentions } = type);
         if (null != author) {
           navigation.request(guild_id, author.id);
         }
         if (mentions != null) {
-          item = mentions.forEach((id) => {
+          const item = mentions.forEach((id) => {
             navigation.request(guild_id, id.id);
             return false;
           });
+        }
+        if (type.type === MessageTypes.MessageTypes.GUILD_SPACE_MESSAGE) {
+          requestLeaderboardMembers(guild_id, type);
         }
       });
       flag = false;
@@ -210,18 +271,21 @@ let obj = {
         });
         const guild_id = channel.guild_id;
         const flatResult = mapped.flat();
-        let item = flatResult.forEach((item) => {
+        let item = flatResult.forEach((type) => {
           let author;
           let mentions;
-          ({ author, mentions } = item);
+          ({ author, mentions } = type);
           if (null != author) {
             navigation.request(guild_id, author.id);
           }
           if (mentions != null) {
-            item = mentions.forEach((id) => {
+            const item = mentions.forEach((id) => {
               navigation.request(guild_id, id.id);
               return false;
             });
+          }
+          if (type.type === MessageTypes.MessageTypes.GUILD_SPACE_MESSAGE) {
+            requestLeaderboardMembers(guild_id, type);
           }
         });
         return false;

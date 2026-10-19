@@ -1,22 +1,24 @@
 // Module ID: 6694
 // Function ID: 6695
-// Dependencies: [19, 21, 6695, 6335]
-// Exports: PanGestureHandler
+// Dependencies: [6680, 6695, 6671]
+// Exports: useTapGesture
 
 // Module 6694
-import Fragment from "Fragment" /* 21 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
-import react2 from "react" /* 6695 */;
-import react from "react" /* 19 */;
+import ComposedGestureName from "ComposedGestureName" /* 6671 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6680 */;
+import _mod6695 from "module_6695" /* 6695 */;
 
-const jsx = Fragment.jsx;
+const items = [["maxDistance", "maxDist"], ["maxDuration", "maxDurationMs"], ["maxDelay", "maxDelayMs"]];
+const map = new Map(items);
+let closure_3 = {};
 
-export const PanGestureHandler = function PanGestureHandler(arg0) {
-  const ref = react.useRef(null);
-  const Provider = react2.GestureHandlerRefContext.Provider;
-  LegacyBaseButton.PanGestureHandler;
-  const merged = Object.assign(arg0);
-  return <Provider value={ref}>{null}</Provider>;
+export const useTapGesture = function useTapGesture(cResult) {
+  let tmp = cResult;
+  if (cResult === undefined) {
+    tmp = closure_3;
+  }
+  const obj = maybeExtractNativeEvent;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map);
+  const obj2 = _mod6695;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Tap, clonedAndRemappedConfig);
 };
-export const GestureHandlerRootView = LegacyBaseButton.GestureHandlerRootView;
-export const GestureState = LegacyBaseButton.State;

@@ -1,18 +1,18 @@
-// Module ID: 17101
-// Function ID: 17102
+// Module ID: 11666
+// Function ID: 11667
 // Name: conjureGuildPickerSources
-// Dependencies: [19, 2125, 2119, 1390, 558, 576, 504, 1388, 4962, 6097, 6098, 2]
+// Dependencies: [19, 2128, 2122, 1392, 558, 576, 504, 1388, 5057, 6376, 6377, 2]
 // Exports: conjureMemberUsername
 
-// Module 17101 (conjureGuildPickerSources)
+// Module 11666 (conjureGuildPickerSources)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import UserUtils from "UserUtils" /* 4962 */;
-import GuildUtilsDefault from "GuildUtils" /* 6097 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
+import UserUtils from "UserUtils" /* 5057 */;
+import GuildUtilsDefault from "GuildUtils" /* 6376 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6377 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import GuildRoleStore from "GuildRoleStore" /* 2119 */;
-import UserStore from "UserStore" /* 1390 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildRoleStore from "GuildRoleStore" /* 2122 */;
+import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -299,22 +299,13 @@ const result = size.fileFinishedImporting("modules/conjure/guild_pickers/conjure
 
 export const useConjureGuildRoles = tmp2;
 export const useConjureGuildMemberUsers = tmp3;
-export const conjureMemberUsername = function conjureMemberUsername(hasUniqueUsername, stateFromStores1) {
-  let str = "always";
+export const conjureMemberUsername = function conjureMemberUsername(id, stateFromStores1) {
+  let identifiable = "always";
   const getUserTag = UserUtils.getUserTag;
   UserUtils;
   if (stateFromStores1) {
-    str = "never";
+    identifiable = "never";
   }
-  let str2 = "";
-  const userTag = getUserTag(hasUniqueUsername, { mode: "username", identifiable: str });
-  if (!stateFromStores1) {
-    str2 = "";
-    if (!hasUniqueUsername.hasUniqueUsername()) {
-      const _HermesInternal = HermesInternal;
-      str2 = "#" + hasUniqueUsername.discriminator;
-    }
-  }
-  return "" + userTag + str2;
+  return getUserTag(id, { identifiable });
 };
 export const useConjureMemberRequests = tmp4;

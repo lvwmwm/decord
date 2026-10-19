@@ -1,18 +1,18 @@
-// Module ID: 17112
-// Function ID: 17113
+// Module ID: 11691
+// Function ID: 11692
 // Name: ConjureFirstPublishSheet
-// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 17091, 17094, 5056, 17113, 1126, 3849, 6839, 17095, 5088, 5379, 6899, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5191, 587, 558, 576, 11652, 11655, 5155, 11692, 1128, 3883, 7117, 11656, 5187, 5479, 7175, 2]
 // Exports: showConjureFirstPublishSheet
 
-// Module 17112 (ConjureFirstPublishSheet)
+// Module 11691 (ConjureFirstPublishSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5155 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   let tmp12;
   let trimmed;
   let obj = trimmed(name[8]);
-  const cResult = obj.c(53);
+  const cResult = obj.c(51);
   projectId = projectId.projectId;
   name = projectId.name;
   let description = projectId.description;
@@ -347,14 +347,12 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   intl = projectId(tmp3[13]).intl;
   intl2 = projectId(tmp3[13]).intl;
   obj5 = { style: tmp.content, children: items1 };
-  let tmp23 = first1;
   const ConjureAppIdentitySection = projectId(tmp3[16]).ConjureAppIdentitySection;
   if (first1 == null) {
-    tmp23 = iconURL;
+    first1 = iconURL;
   }
   let obj6 = {
-    iconURL: tmp23,
-    canRemove: null != first1,
+    iconURL: first1,
     onIconChange(arg0) {
       closure_6(arg0);
       _undefined(null);
@@ -364,12 +362,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
     onNameChange: tmp5,
     description,
     onDescriptionChange: tmp8,
-    previewName: trimmed,
     disabled: first2
   };
-  if ("" === trimmed) {
-    trimmed = name;
-  }
   items1 = [tmp19(ConjureAppIdentitySection, obj6), , ];
   let tmp19Result = null;
   if (null != tmp12) {

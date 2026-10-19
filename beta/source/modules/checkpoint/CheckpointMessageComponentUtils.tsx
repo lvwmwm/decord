@@ -1,25 +1,29 @@
-// Module ID: 5459
-// Function ID: 5460
+// Module ID: 5559
+// Function ID: 5560
 // Name: checkpoint/CheckpointMessageComponentUtils
-// Dependencies: [5437, 11, 5460, 5461, 5462, 5626, 1126, 5447, 3118, 4764, 1898, 1998, 3086, 2]
-// Exports: getCheckpointDataFromMessage, getCheckpointLabel, transformCheckpoint2026CardComponent, transformCheckpoint2026CardToRowGeneratedComponent
+// Dependencies: [5537, 11, 5560, 5561, 5562, 5882, 5547, 1128, 3141, 4859, 3109, 1900, 2000, 2]
+// Exports: getCharacterLayerUrls, getCheckpointDataFromMessage, getCheckpointLabel, transformCheckpoint2026CardComponent, transformCheckpoint2026CardToRowGeneratedComponent
 
-// Module 5459 (checkpoint/CheckpointMessageComponentUtils)
+// Module 5559 (checkpoint/CheckpointMessageComponentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import intl8 from "intl" /* 1126 */;
-import Server from "Server" /* 1998 */;
-import _modDef3086 from "module_3086" /* 3086 */;
-import CheckpointExperiment from "CheckpointExperiment" /* 5460 */;
-import CheckpointTrait from "CheckpointTrait" /* 5461 */;
-import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 5462 */;
-import CheckpointConstants from "CheckpointConstants" /* 5437 */;
+import intl20 from "intl" /* 1128 */;
+import Server from "Server" /* 2000 */;
+import _modDef3109 from "module_3109" /* 3109 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 5560 */;
+import CheckpointTrait from "CheckpointTrait" /* 5561 */;
+import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 5562 */;
+import CheckpointConstants from "CheckpointConstants" /* 5537 */;
 import size from "module_2" /* 2 */;
 
-let importDefault;
+const require = globalThis.__r;
+let _require, importDefault;
 
 let c3;
 let closure_4;
-({ NATIVE_CHARACTER_LAYER_SIZE: c3, CheckpointVersions: closure_4 } = CheckpointConstants);
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+({ CHECKPOINT_2026_POWER_BAR_MAX_FILLED_UNITS: c3, CHECKPOINT_2026_POWER_BAR_MIN_FILLED_UNITS: closure_4, CHECKPOINT_2026_POWER_BAR_UNITS: hasOwnProperty, NATIVE_CHARACTER_LAYER_SIZE: metroRequire, CheckpointVersions: metroImportDefault } = CheckpointConstants);
 let obj = {};
 obj[CheckpointTrait.CheckpointTrait.BASE] = CheckpointCharacterAssets.CHARACTER_BASE_TRAIT_ASSETS;
 obj[CheckpointTrait.CheckpointTrait.SHOES] = CheckpointCharacterAssets.CHARACTER_SHOES_TRAIT_ASSETS;
@@ -37,8 +41,8 @@ export const transformCheckpoint2026CardComponent = function transformCheckpoint
   let tmp6;
   let tmp7;
   let tmp2 = null;
-  obj = CheckpointExperiment;
-  if (obj.getIsCheckpointEnabled("transformCheckpoint2026CardComponent")) {
+  obj = CheckpointExperiments;
+  if (obj.getIsCheckpointCardEnabled("transformCheckpoint2026CardComponent")) {
     let tmp4;
     if (null != checkpoint_data.character) {
       const obj2 = { version: checkpoint_data.version, character: tmp5, stats: tmp6 };
@@ -84,23 +88,74 @@ export const transformCheckpoint2026CardComponent = function transformCheckpoint
   }
   return tmp2;
 };
-export const transformCheckpoint2026CardToRowGeneratedComponent = function transformCheckpoint2026CardToRowGeneratedComponent(checkpointData, message) {
+export const getCharacterLayerUrls = function getCharacterLayerUrls(wearable, arg1) {
+  let items;
+  _require = wearable;
+  let closure_1 = arg1;
+  const CHECKPOINT_WEARABLE_LAYER_BACKGROUND = require("CheckpointTraitConfig").CHECKPOINT_WEARABLE_LAYER_BACKGROUND;
+  const hasItem = CHECKPOINT_WEARABLE_LAYER_BACKGROUND.has(wearable.wearable);
+  const tmp2 = require("CheckpointTraitConfig");
+  items = [];
+  const arr = hasItem ? tmp2.CHECKPOINT_LAYER_BACKGROUND_WEARABLE_ORDERING : tmp2.CHECKPOINT_LAYER_DEFAULT_ORDERING;
+  const item = arr.forEach((item) => {
+    let layer;
+    if (obj[item][character[item]] != null) {
+      layer = tmp.layer;
+    }
+    const tmp3 = null != layer && "" !== layer;
+    if (tmp3) {
+      const _HermesInternal = HermesInternal;
+      items.push("" + layer + "?height=" + importDefault + "&width=" + importDefault);
+    }
+  });
+  return items;
+};
+export const transformCheckpoint2026CardToRowGeneratedComponent = function transformCheckpoint2026CardToRowGeneratedComponent(checkpointData) {
   let character;
   let closure_1;
-  let formatToPlainStringResult;
-  let formatToPlainStringResult1;
+  let formatToPlainString;
+  let intl10;
+  let intl14;
+  let intl15;
+  let intl17;
+  let intl18;
+  let intl19;
+  let intl4;
+  let intl6;
+  let intl9;
   let items;
-  let obj5;
-  let result;
-  let tmp18;
+  let lw35aH;
+  let message;
+  let numberFormat;
+  let obj10;
+  let obj12;
+  let obj13;
+  let obj14;
+  let obj16;
+  let obj17;
+  let obj19;
+  let obj20;
+  let obj22;
+  let obj23;
+  let obj25;
+  let obj26;
+  let obj28;
+  let obj29;
+  let obj6;
+  let obj7;
+  let obj9;
+  let primaryBackgroundColor;
+  let secondaryBackgroundColor;
+  let tertiaryBackgroundColor;
+  let tmp10Result2;
+  let tmp26;
   let tmp3;
   let tmp4;
   let tmp9;
-  let toLocaleStringResult;
-  let toLocaleStringResult1;
-  let voiceDurationString;
+  checkpointData = checkpointData.checkpointData;
   const tmp = importDefault;
-  obj = { version: checkpointData.version, authorId: message.author.id, character: tmp4, stats: tmp9 };
+  ({ message, primaryBackgroundColor, secondaryBackgroundColor, tertiaryBackgroundColor } = checkpointData);
+  obj = { version: checkpointData.version, authorId: message.author.id, primaryBackgroundColor, secondaryBackgroundColor, tertiaryBackgroundColor, character: tmp4, stats: tmp9, clickable: tmp26 };
   tmp4 = undefined;
   if (null != checkpointData.character) {
     character = checkpointData.character;
@@ -127,68 +182,128 @@ export const transformCheckpoint2026CardToRowGeneratedComponent = function trans
   }
   tmp9 = undefined;
   if (null != checkpointData.stats) {
+    let voiceDurationString;
+    let toLocaleStringResult;
+    let toLocaleStringResult1;
+    let formatToPlainStringResult;
     const stats = checkpointData.stats;
     const _Intl = Intl;
     const self = this;
     const self2 = this;
-    const numberFormat = new Intl.NumberFormat(character(tmp2[6]).intl.currentLocale, { notation: "compact", compactDisplay: "short" });
+    const obj4 = { powerLevel: numberFormat.format(stats.powerLevel), powerLevelUnits: Math.min(Math.max(Math.round(stats.powerLevelPercentile / 100 * closure_5), closure_4), closure_3), voice: obj6, messages: obj9, topGuildDaysInteracted: obj12, topGuildName: obj16, reactions: obj19, topEmojiName: obj22, daysPlayed: obj25, topGameName: obj28, topEmoji: null, topGuild: null, topGame: null };
+    numberFormat = new Intl.NumberFormat(character(tmp2[7]).intl.currentLocale, { notation: "compact", compactDisplay: "short" });
     const _Math = Math;
+    const _Math2 = Math;
+    const _Math3 = Math;
+    const _Math4 = Math;
     const rounded = Math.round(stats.totalVoiceMinutes);
-    const obj3 = { powerLevel: numberFormat.format(stats.powerLevel), powerLevelUnits: obj5.getCheckpointPowerBarUnits(stats.powerLevelPercentile), messagesString: toLocaleStringResult, voiceString: voiceDurationString, reactionString: toLocaleStringResult1, daysPlayedString: formatToPlainStringResult, topGuildDaysInteractedString: formatToPlainStringResult1, topEmoji: tmp18, topGuild: null, topGame: null };
-    obj5 = character(items[7]);
-    if (stats.numMessagesSent > 0) {
-      const numMessagesSent = stats.numMessagesSent;
-      toLocaleStringResult = numMessagesSent.toLocaleString(tmp10(tmp2[6]).intl.currentLocale);
-    } else {
-      const intl = tmp10(tmp2[6]).intl;
-      const obj6 = { count: stats.numMessagesSent };
-      toLocaleStringResult = intl.formatToPlainString(tmp(tmp2[8]).foKBCN, obj6);
-    }
     if (rounded > 0) {
-      const tmp10Result = character(items[7]);
+      const tmp10Result = character(items[6]);
       voiceDurationString = tmp10Result.getVoiceDurationString(rounded);
     } else {
-      const intl2 = tmp10(tmp2[6]).intl;
-      const obj7 = { minutes: rounded };
-      voiceDurationString = intl2.formatToPlainString(tmp10(tmp2[6]).t.iXLF9W, obj7);
+      const intl = tmp10(tmp2[7]).intl;
+      const obj5 = { minutes: rounded };
+      voiceDurationString = intl.formatToPlainString(tmp10(tmp2[7]).t.iXLF9W, obj5);
+    }
+    obj6 = { text: voiceDurationString, accessibilityLabel: formatToPlainString(lw35aH, obj7) };
+    const intl2 = tmp10(tmp2[7]).intl;
+    formatToPlainString = intl2.formatToPlainString;
+    obj7 = { duration: tmp10Result2.getAccessibleVoiceDurationString(rounded) };
+    lw35aH = tmp(tmp2[8]).lw35aH;
+    tmp10Result2 = character(items[6]);
+    if (stats.numMessagesSent > 0) {
+      const numMessagesSent = stats.numMessagesSent;
+      toLocaleStringResult = numMessagesSent.toLocaleString(tmp10(tmp2[7]).intl.currentLocale);
+    } else {
+      const intl3 = tmp10(tmp2[7]).intl;
+      const obj8 = { count: stats.numMessagesSent };
+      toLocaleStringResult = intl3.formatToPlainString(tmp(tmp2[8]).foKBCN, obj8);
+    }
+    obj9 = { text: toLocaleStringResult, accessibilityLabel: intl4.formatToPlainString(tmp(items[8]).IdRUAC, obj10) };
+    intl4 = tmp10(tmp2[7]).intl;
+    obj10 = { count: stats.numMessagesSent };
+    if (null == stats.topGuild) {
+      const intl5 = tmp10(tmp2[7]).intl;
+      const stringResult = intl5.string(tmp(items[8]).GultYJ);
+      obj12 = { text: stringResult, accessibilityLabel: stringResult };
+      const obj11 = { text: stringResult, accessibilityLabel: stringResult };
+    } else {
+      obj12 = { text: intl18.formatToPlainString(character(items[7]).t.GBLpQ8, obj13), accessibilityLabel: intl19.formatToPlainString(tmp(items[8]).MpSH8v, obj14) };
+      intl18 = tmp10(tmp2[7]).intl;
+      obj13 = { days: stats.topGuildNumDaysInteracted };
+      intl19 = tmp10(tmp2[7]).intl;
+      obj14 = { days: stats.topGuildNumDaysInteracted };
+    }
+    if (null == stats.topGuild) {
+      const intl7 = tmp10(tmp2[7]).intl;
+      const stringResult1 = intl7.string(character(items[7]).t["52UOf9"]);
+      obj16 = { text: stringResult1, accessibilityLabel: stringResult1 };
+      const obj15 = { text: stringResult1, accessibilityLabel: stringResult1 };
+    } else {
+      obj16 = { text: stats.topGuild.guildName, accessibilityLabel: intl6.formatToPlainString(tmp(items[8])["9UTJ+t"], obj17) };
+      intl6 = tmp10(tmp2[7]).intl;
+      obj17 = { guildName: stats.topGuild.guildName };
     }
     if (stats.numEmojisSent > 0) {
       const numEmojisSent = stats.numEmojisSent;
-      toLocaleStringResult1 = numEmojisSent.toLocaleString(tmp10(tmp2[6]).intl.currentLocale);
+      toLocaleStringResult1 = numEmojisSent.toLocaleString(tmp10(tmp2[7]).intl.currentLocale);
     } else {
-      const intl3 = tmp10(tmp2[6]).intl;
-      const obj8 = { count: stats.numEmojisSent };
-      toLocaleStringResult1 = intl3.formatToPlainString(tmp(tmp2[8]).RHYx1k, obj8);
+      const intl8 = tmp10(tmp2[7]).intl;
+      const obj18 = { count: stats.numEmojisSent };
+      toLocaleStringResult1 = intl8.formatToPlainString(tmp(tmp2[8]).RHYx1k, obj18);
     }
-    if (stats.totalDaysPlayed > 0) {
-      const intl5 = tmp10(tmp2[6]).intl;
-      const obj9 = { days: stats.totalDaysPlayed };
-      formatToPlainStringResult = intl5.formatToPlainString(tmp10(tmp2[6]).t.GBLpQ8, obj9);
+    obj19 = { text: toLocaleStringResult1, accessibilityLabel: intl9.formatToPlainString(tmp(items[8])["36qpUG"], obj20) };
+    intl9 = tmp10(tmp2[7]).intl;
+    obj20 = { count: stats.numEmojisSent };
+    if (null == stats.topEmoji) {
+      const intl11 = tmp10(tmp2[7]).intl;
+      const stringResult2 = intl11.string(character(items[7]).t.lxsmBd);
+      obj22 = { text: stringResult2, accessibilityLabel: stringResult2 };
+      const obj21 = { text: stringResult2, accessibilityLabel: stringResult2 };
     } else {
-      const intl4 = tmp10(tmp2[6]).intl;
-      formatToPlainStringResult = intl4.string(tmp(tmp2[8]).mg1NPe);
-    }
-    if (null != stats.topGuild) {
-      const intl7 = tmp10(tmp2[6]).intl;
-      const obj10 = { days: stats.topGuildNumDaysInteracted };
-      formatToPlainStringResult1 = intl7.formatToPlainString(tmp10(tmp2[6]).t.GBLpQ8, obj10);
-    } else {
-      const intl6 = tmp10(tmp2[6]).intl;
-      formatToPlainStringResult1 = intl6.string(tmp(tmp2[8]).GultYJ);
-    }
-    tmp18 = undefined;
-    if (null != stats.topEmoji) {
-      const obj11 = { emojiSurrogateName: result };
-      const merged = Object.assign(stats.topEmoji);
-      result = undefined;
+      let result;
       if (null == stats.topEmoji.emojiId) {
         const tmpResult = tmp(items[9]);
         result = tmpResult.convertSurrogateToName(stats.topEmoji.emojiName);
+      } else {
+        let _HermesInternal = HermesInternal;
+        result = ":" + stats.topEmoji.emojiName + ":";
       }
-      tmp18 = obj11;
+      obj22 = { text: result, accessibilityLabel: intl10.formatToPlainString(tmp(items[8]).CcBo8C, obj23) };
+      intl10 = tmp10(tmp2[7]).intl;
+      obj23 = { emojiName: stats.topEmoji.emojiName };
     }
-    ({ topGuild: obj4.topGuild, topGame: obj4.topGame } = stats);
-    tmp9 = obj3;
+    if (stats.totalDaysPlayed > 0) {
+      const intl13 = tmp10(tmp2[7]).intl;
+      const obj24 = { days: stats.totalDaysPlayed };
+      formatToPlainStringResult = intl13.formatToPlainString(tmp10(tmp2[7]).t.GBLpQ8, obj24);
+    } else {
+      const intl12 = tmp10(tmp2[7]).intl;
+      formatToPlainStringResult = intl12.string(tmp(tmp2[8]).mg1NPe);
+    }
+    obj25 = { text: formatToPlainStringResult, accessibilityLabel: intl14.formatToPlainString(tmp(items[8]).LYcKX7, obj26) };
+    intl14 = tmp10(tmp2[7]).intl;
+    obj26 = { days: stats.totalDaysPlayed };
+    if (null == stats.topGame) {
+      const intl16 = tmp10(tmp2[7]).intl;
+      const stringResult3 = intl16.string(character(items[7]).t["5eYZiW"]);
+      obj28 = { text: stringResult3, accessibilityLabel: stringResult3 };
+      const obj27 = { text: stringResult3, accessibilityLabel: stringResult3 };
+    } else {
+      obj28 = { text: stats.topGame.applicationName, accessibilityLabel: intl15.formatToPlainString(tmp(items[8]).kLqpNC, obj29) };
+      intl15 = tmp10(tmp2[7]).intl;
+      obj29 = { gameName: stats.topGame.applicationName };
+    }
+    ({ topEmoji: obj3.topEmoji, topGuild: obj3.topGuild, topGame: obj3.topGame } = stats);
+    tmp9 = obj4;
+  }
+  tmp26 = undefined;
+  const obj31 = character(items[2]);
+  const tmp25 = character;
+  if (obj31.getIsCheckpointEnabled("getCheckpointClickable")) {
+    const obj30 = { ariaDescription: intl17.string(tmp(items[10]).r8GEbK) };
+    intl17 = tmp25(tmp2[7]).intl;
+    tmp26 = obj30;
   }
   return obj;
 };
@@ -204,9 +319,9 @@ export const getCheckpointDataFromMessage = function getCheckpointDataFromMessag
   return checkpointData;
 };
 export const getCheckpointLabel = function getCheckpointLabel(checkpointDataFromMessage) {
-  if (V2025.V2025 === checkpointDataFromMessage.version) {
-    const intl = intl8.intl;
-    return intl.string(_modDef3086.goiR2u);
+  if (metroImportDefault.V2025 === checkpointDataFromMessage.version) {
+    const intl = intl20.intl;
+    return intl.string(_modDef3109.goiR2u);
   } else {
     const V2026 = tmp.V2026;
     return null;

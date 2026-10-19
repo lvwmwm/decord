@@ -1,22 +1,22 @@
-// Module ID: 8083
-// Function ID: 8084
+// Module ID: 8357
+// Function ID: 8358
 // Name: PremiumSubscriptionOfferUtil
-// Dependencies: [32, 19, 4775, 1392, 558, 7165, 8084, 8085, 576, 504, 4702, 8086, 8087, 1998, 8090, 2]
+// Dependencies: [32, 19, 4870, 1394, 558, 7436, 8358, 8359, 576, 504, 4797, 8360, 8361, 2000, 8364, 2]
 // Exports: renewalInvoiceChurnDiscountInfo, useIsNUXEligible
 
-// Module 8083 (PremiumSubscriptionOfferUtil)
+// Module 8357 (PremiumSubscriptionOfferUtil)
 import react2 from "react" /* 576 */;
-import Server from "Server" /* 1998 */;
-import _modDef4702 from "module_4702" /* 4702 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7165 */;
-import PremiumSubscriptionTrialUtil from "PremiumSubscriptionTrialUtil" /* 8084 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8085 */;
-import useDiscountOfferDefault from "useDiscountOffer" /* 8086 */;
-import ReverseTrialUtils from "ReverseTrialUtils" /* 8090 */;
+import Server from "Server" /* 2000 */;
+import _modDef4797 from "module_4797" /* 4797 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7436 */;
+import PremiumSubscriptionTrialUtil from "PremiumSubscriptionTrialUtil" /* 8358 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8359 */;
+import useDiscountOfferDefault from "useDiscountOffer" /* 8360 */;
+import ReverseTrialUtils from "ReverseTrialUtils" /* 8364 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 4775 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
+import SubscriptionStore from "SubscriptionStore" /* 4870 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let metroRequire;
 let tmp;
 let unpackModuleId;
 const get_initialized = tmp(504);
-const UserOfferActionCreators = tmp(8087);
+const UserOfferActionCreators = tmp(8361);
 function getDiscountInfo(active_discount_id) {
   if (authStore !== active_discount_id) {
     if (authStore2 !== active_discount_id) {
@@ -160,9 +160,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let tmp10 = null != prop;
     if (tmp10) {
       const _Date = Date;
-      const tmp12 = _modDef4702;
+      const tmp12 = _modDef4797;
       const tmp12Result = tmp12(Date.now());
-      tmp10 = tmp12Result <= _modDef4702(prop);
+      tmp10 = tmp12Result <= _modDef4797(prop);
     }
     cResult[2] = prop;
     cResult[3] = tmp10;
@@ -186,9 +186,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp4 = null != prop;
   if (tmp4) {
     const _Date = Date;
-    const tmp6 = _modDef4702;
+    const tmp6 = _modDef4797;
     const tmp6Result = tmp6(Date.now());
-    tmp4 = tmp6Result <= _modDef4702(prop);
+    tmp4 = tmp6Result <= _modDef4797(prop);
   }
   return tmp4;
 });

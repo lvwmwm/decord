@@ -1,40 +1,37 @@
-// Module ID: 17286
-// Function ID: 17287
+// Module ID: 12265
+// Function ID: 12266
 // Name: conjurePlanFormat
-// Dependencies: [2]
-// Exports: conjurePlanCommandPrefix, formatConjurePlanRequirementName
+// Dependencies: [2000, 2]
+// Exports: conjurePlanCommandPrefix, formatConjurePlanRequirementLabel
 
-// Module 17286 (conjurePlanFormat)
+// Module 12265 (conjurePlanFormat)
+import Server from "Server" /* 2000 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanFormat.tsx");
 
-export const formatConjurePlanRequirementName = function formatConjurePlanRequirementName(str) {
+export const formatConjurePlanRequirementLabel = function formatConjurePlanRequirementLabel(str) {
   const parts = str.split("_");
-  const mapped = parts.map((arr) => {
-    let sum = arr;
-    if (0 !== arr.length) {
-      const first = arr[0];
-      const str = arr.slice(1);
-      sum = first + str.toLowerCase();
-    }
-    return sum;
-  });
-  return mapped.join(" ");
+  str = parts.join(" ");
+  const formatted = str.toLowerCase();
+  let sum = formatted;
+  if (0 !== formatted.length) {
+    const str2 = formatted[0];
+    const formatted1 = str2.toUpperCase();
+    sum = formatted1 + formatted.slice(1);
+  }
+  return sum;
 };
-export const conjurePlanCommandPrefix = function conjurePlanCommandPrefix(kind) {
+export const conjurePlanCommandPrefix = function conjurePlanCommandPrefix(type) {
   let str = "\u21EA /";
-  if ("launch" !== kind.kind) {
-    str = "\u21EA /";
-    if (4 !== kind.type) {
-      let str2;
-      if (2 === kind.type) {
-        str2 = "";
-      } else {
-        str2 = "/";
-      }
-      str = str2;
+  if (type.type !== Server.ApplicationCommandType.PRIMARY_ENTRY_POINT) {
+    let str2;
+    if (type.type === Server.ApplicationCommandType.USER) {
+      str2 = "";
+    } else {
+      str2 = "/";
     }
+    str = str2;
   }
   return str;
 };

@@ -1,21 +1,21 @@
-// Module ID: 10699
-// Function ID: 10700
+// Module ID: 11119
+// Function ID: 11120
 // Name: ChannelsAndRolesModal
-// Dependencies: [32, 19, 17, 2087, 6790, 21, 5092, 587, 558, 576, 573, 7045, 1126, 8525, 8774, 10700, 10706, 9632, 2]
+// Dependencies: [32, 19, 17, 2090, 7067, 21, 5191, 587, 558, 576, 573, 7321, 1128, 8805, 9051, 11120, 11126, 9933, 2]
 
-// Module 10699 (ChannelsAndRolesModal)
+// Module 11119 (ChannelsAndRolesModal)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6790 */;
-import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7045 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9632 */;
+import intl3 from "intl" /* 1128 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7067 */;
+import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7321 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9933 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2087 */;
+import GuildStore from "GuildStore" /* 2090 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -241,13 +241,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelsAndR
   }
   const tmpResult = guildId(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const tmp9 = defaultTab(7045)(stateFromStores);
+  const tmp9 = defaultTab(7321)(stateFromStores);
   const tmp8 = defaultTab;
   if (cResult[3] !== tmp9) {
     let stringResult;
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const string = intl.string;
-    const t = tmp(1126).t;
+    const t = tmp(1128).t;
     if (tmp9) {
       stringResult = string(t.h9mGOP);
     } else {
@@ -272,7 +272,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelsAndR
       return tmp13;
     }
     const obj2 = { screenKey: "channelAndRolesModal", title: tmp10, render: tmp12 };
-    const tmp15 = closure_8(tmp8(9632), obj2);
+    const tmp15 = closure_8(tmp8(9933), obj2);
     cResult[8] = tmp10;
     cResult[9] = tmp12;
     cResult[10] = tmp15;

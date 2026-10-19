@@ -1,20 +1,20 @@
-// Module ID: 11021
-// Function ID: 11022
+// Module ID: 11411
+// Function ID: 11412
 // Name: StageViewWithPrompts
-// Dependencies: [19, 17, 21, 11022, 5092, 587, 558, 576, 1631, 11023, 11042, 5088, 2]
+// Dependencies: [19, 17, 21, 11412, 5191, 587, 558, 576, 1633, 11413, 11428, 5187, 2]
 
-// Module 11021 (StageViewWithPrompts)
+// Module 11411 (StageViewWithPrompts)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import StageChannelHeightHooks from "StageChannelHeightHooks" /* 11022 */;
-import FocusedControls from "FocusedControls" /* 11023 */;
-import MicrophoneSpotIllustration from "MicrophoneSpotIllustration" /* 11042 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import StageChannelHeightHooks from "StageChannelHeightHooks" /* 11412 */;
+import FocusedControls from "FocusedControls" /* 11413 */;
+import MicrophoneSpotIllustration from "MicrophoneSpotIllustration" /* 11428 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

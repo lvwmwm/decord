@@ -1,29 +1,29 @@
-// Module ID: 18252
-// Function ID: 18253
+// Module ID: 18645
+// Function ID: 18646
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 2065, 1390, 14033, 1085, 21, 5092, 587, 5088, 5409, 1126, 558, 576, 504, 1388, 1200, 11382, 10281, 6868, 5046, 1265, 5056, 18253, 7015, 6899, 6157, 10402, 6265, 6180, 5379, 2]
+// Dependencies: [19, 17, 2068, 1392, 14814, 1087, 21, 5191, 587, 5187, 5509, 1128, 558, 576, 504, 1388, 1202, 11671, 10592, 7144, 5145, 1267, 5155, 18646, 7290, 7175, 5128, 10725, 6542, 6457, 5479, 2]
 
-// Module 18252 (BlockedUserInGdmActionSheet)
+// Module 18645 (BlockedUserInGdmActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl7 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
-import TableRow2 from "TableRow" /* 6180 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 6868 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 18253 */;
+import Constants from "Constants" /* 1087 */;
+import intl7 from "intl" /* 1128 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5145 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5509 */;
+import TableRow2 from "TableRow" /* 6457 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7144 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 18646 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import UserStore from "UserStore" /* 1390 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 14033 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import UserStore from "UserStore" /* 1392 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 14814 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -276,11 +276,11 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
       }
     }
     if (null != tmp13) {
-      const obj2 = { user: tmp8[0], guildId, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
-      const Avatar = tmp(1200).Avatar;
+      const obj2 = { user: tmp8[0], guildId, size: userIds(1202).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
+      const Avatar = tmp(1202).Avatar;
       tmp19 = closure_10(Avatar, obj2);
     } else {
-      tmp19 = closure_10(tmp(11382).UserIcon, {});
+      tmp19 = closure_10(tmp(11671).UserIcon, {});
     }
     cResult[8] = guildId;
     cResult[9] = tmp13;
@@ -290,8 +290,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
   } else {
     let tmp10;
     if (cResult[12] !== tmp8) {
-      const obj3 = { users: tmp8, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32 };
-      const FacepileGroupDMAvatar = tmp(10281).FacepileGroupDMAvatar;
+      const obj3 = { users: tmp8, size: userIds(1202).AvatarSizes.REFRESH_MEDIUM_32 };
+      const FacepileGroupDMAvatar = tmp(10592).FacepileGroupDMAvatar;
       const tmp12 = closure_10(FacepileGroupDMAvatar, obj3);
       cResult[12] = tmp8;
       cResult[13] = tmp12;
@@ -317,16 +317,16 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
   if (1 === userIds.length) {
     let tmp8;
     if (null != obj2.getUser(userIds[0])) {
-      const obj3 = { user: found[0], guildId, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
-      const Avatar = tmp(1200).Avatar;
+      const obj3 = { user: found[0], guildId, size: userIds(1202).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
+      const Avatar = tmp(1202).Avatar;
       tmp8 = closure_10(Avatar, obj3);
     } else {
-      tmp8 = closure_10(tmp(11382).UserIcon, {});
+      tmp8 = closure_10(tmp(11671).UserIcon, {});
     }
     tmp5 = tmp8;
   } else {
-    const obj4 = { users: found, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32 };
-    const FacepileGroupDMAvatar = tmp(10281).FacepileGroupDMAvatar;
+    const obj4 = { users: found, size: userIds(1202).AvatarSizes.REFRESH_MEDIUM_32 };
+    const FacepileGroupDMAvatar = tmp(10592).FacepileGroupDMAvatar;
     tmp5 = closure_10(FacepileGroupDMAvatar, obj4);
   }
   return tmp5;
@@ -348,7 +348,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocke
       let tmp28;
       const _Symbol3 = Symbol;
       if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl5 = tmp(1126).intl;
+        const intl5 = tmp(1128).intl;
         const stringResult = intl5.string(intl7.t.xbRNI3);
         cResult[0] = stringResult;
         first = stringResult;
@@ -359,7 +359,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocke
       if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
         const obj2 = { children: items };
         items = [first, "\n", ];
-        const intl6 = tmp(1126).intl;
+        const intl6 = tmp(1128).intl;
         items[2] = intl6.string(intl7.t["Bp2/ni"]);
         const tmp31 = authStore2(unpackModuleId, obj2);
         cResult[1] = tmp31;
@@ -376,7 +376,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocke
     let tmp19;
     let tmp21;
     if (cResult[2] !== numOfBlockedUsers) {
-      const intl3 = tmp(1126).intl;
+      const intl3 = tmp(1128).intl;
       const obj3 = { n: numOfBlockedUsers };
       const formatResult = intl3.format(intl7.t.iKtixW, obj3);
       cResult[2] = numOfBlockedUsers;
@@ -387,7 +387,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocke
     }
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1126).intl;
+      const intl4 = tmp(1128).intl;
       const stringResult1 = intl4.string(intl7.t.SN1hrl);
       cResult[4] = stringResult1;
       tmp19 = stringResult1;
@@ -412,7 +412,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocke
       let tmp10;
       let tmp12;
       if (cResult[7] !== numOfIgnoredUsers) {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const obj5 = { n: numOfIgnoredUsers };
         const formatResult1 = intl.format(intl7.t["6IRwua"], obj5);
         cResult[7] = numOfIgnoredUsers;
@@ -423,7 +423,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocke
       }
       const _Symbol = Symbol;
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1126).intl;
+        const intl2 = tmp(1128).intl;
         const stringResult2 = intl2.string(intl7.t["6AKLRt"]);
         cResult[9] = stringResult2;
         tmp10 = stringResult2;

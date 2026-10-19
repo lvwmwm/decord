@@ -1,22 +1,22 @@
-// Module ID: 10924
-// Function ID: 10925
+// Module ID: 11318
+// Function ID: 11319
 // Name: handlePressJoinActivity
-// Dependencies: [5, 2022, 2065, 2087, 4750, 1390, 5113, 2064, 10921, 10878, 5299, 1126, 6853, 5924, 10847, 10823, 2]
+// Dependencies: [5, 2024, 2068, 2090, 4845, 1392, 5212, 2067, 11315, 11273, 5399, 1128, 6357, 6180, 11247, 11223, 2]
 // Exports: maybeJoinEmbeddedActivity
 
-// Module 10924 (handlePressJoinActivity)
-import intl11 from "intl" /* 1126 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
-import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 10878 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 10921 */;
+// Module 11318 (handlePressJoinActivity)
+import intl11 from "intl" /* 1128 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
+import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 11273 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11315 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2022 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import UserStore from "UserStore" /* 1390 */;
-import VoiceStateStore from "VoiceStateStore" /* 5113 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import ApplicationRecord from "ApplicationRecord" /* 2024 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import UserStore from "UserStore" /* 1392 */;
+import VoiceStateStore from "VoiceStateStore" /* 5212 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
 import size from "module_2" /* 2 */;
 
 let application, currentUser;
@@ -46,36 +46,36 @@ function handlePressJoinActivity(arg0) {
     const obj2 = { title: intl9.string(intl11.t.PtobXW), body: intl10.string(intl11.t.UXoQTp), hideActionSheet: false };
     const show5 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl9 = tmp(1126).intl;
-    intl10 = tmp(1126).intl;
+    intl9 = tmp(1128).intl;
+    intl10 = tmp(1128).intl;
     show5(obj2);
   } else if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.ACTIVITY_NOT_SUPPORTED_ON_OS === embeddedActivityJoinability) {
     const obj3 = { title: intl7.string(intl11.t.PtobXW), body: intl8.string(intl11.t.uGDCcw), hideActionSheet: false };
     const show4 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl7 = tmp(1126).intl;
-    intl8 = tmp(1126).intl;
+    intl7 = tmp(1128).intl;
+    intl8 = tmp(1128).intl;
     show4(obj3);
   } else if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.ACTIVITY_AGE_GATED === embeddedActivityJoinability) {
     const obj4 = { title: intl5.string(intl11.t.PtobXW), body: intl6.string(intl11.t["4WuFRE"]), hideActionSheet: false };
     const show3 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl5 = tmp(1126).intl;
-    intl6 = tmp(1126).intl;
+    intl5 = tmp(1128).intl;
+    intl6 = tmp(1128).intl;
     show3(obj4);
   } else if (getEmbeddedActivityJoinability.EmbeddedActivityJoinability.CHANNEL_CONTENT_GATED === embeddedActivityJoinability) {
     const obj5 = { title: intl3.string(intl11.t.PtobXW), body: intl4.string(intl11.t.pKLV22), hideActionSheet: false };
     const show2 = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl3 = tmp(1126).intl;
-    intl4 = tmp(1126).intl;
+    intl3 = tmp(1128).intl;
+    intl4 = tmp(1128).intl;
     show2(obj5);
   } else {
     obj = { title: intl.string(intl11.t.PtobXW), body: intl2.string(intl11.t.FUCQco), hideActionSheet: false };
     const show = AlertActionCreatorsDefault.show;
     AlertActionCreatorsDefault;
-    intl = tmp(1126).intl;
-    intl2 = tmp(1126).intl;
+    intl = tmp(1128).intl;
+    intl2 = tmp(1128).intl;
     show(obj);
   }
 }
@@ -220,7 +220,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
         });
         return obj(...arguments);
       };
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;

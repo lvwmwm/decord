@@ -1,20 +1,20 @@
-// Module ID: 5436
-// Function ID: 5437
+// Module ID: 5536
+// Function ID: 5537
 // Name: InteractionComponentUtils
-// Dependencies: [5437, 3, 1415, 1126, 5439, 5442, 5443, 1998, 5444, 1279, 1388, 5445, 1103, 5446, 5459, 2]
+// Dependencies: [5537, 3, 1417, 1128, 5539, 5542, 5543, 2000, 5544, 1281, 1388, 5545, 5546, 5559, 2]
 // Exports: canSelectBeEmpty, deserializeComponentUploadId, getAllTextDisplayContent, getFileUploadComponentSubtitle, getFirstInteractionComponentMedia, getLayoutComponentErrorText, getParents, getSelectPlaceholder, makeComponentUploadId, transformComponents
 
-// Module 5436 (InteractionComponentUtils)
+// Module 5536 (InteractionComponentUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import intl7 from "intl" /* 1126 */;
-import v1 from "v1" /* 1279 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import Server from "Server" /* 1998 */;
-import CheckpointConstants from "CheckpointConstants" /* 5437 */;
-import interactionCallbackErrorReason from "interactionCallbackErrorReason" /* 5439 */;
-import InteractionTypes from "InteractionTypes" /* 5442 */;
-import interactions_InteractionTypes from "interactions/InteractionTypes" /* 5443 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 5445 */;
+import intl7 from "intl" /* 1128 */;
+import v1 from "v1" /* 1281 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import Server from "Server" /* 2000 */;
+import CheckpointConstants from "CheckpointConstants" /* 5537 */;
+import interactionCallbackErrorReason from "interactionCallbackErrorReason" /* 5539 */;
+import InteractionTypes from "InteractionTypes" /* 5542 */;
+import interactions_InteractionTypes from "interactions/InteractionTypes" /* 5543 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5545 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,35 +30,35 @@ function flattenComponents(components) {
   return map;
 }
 function flattenComponent(map, accessory) {
-  const f92115 = (id) => {
+  const f93365 = (id) => {
     const result = closure_0.set(id.id, id);
     const type = id.type;
     if (closure_2_0(closure_2_2[7]).ComponentType.ACTION_ROW === type) {
       const components = id.components;
-      const item = components.forEach(f92115);
+      const item = components.forEach(f93365);
     } else if (closure_2_0(closure_2_2[7]).ComponentType.SECTION === type) {
       const components1 = id.components;
-      const item1 = components1.forEach(f92116);
+      const item1 = components1.forEach(f93366);
       const accessory = id.accessory;
       const result1 = obj.set(accessory.id, accessory);
       const type2 = accessory.type;
       if (closure_2_0(closure_2_2[7]).ComponentType.ACTION_ROW === type2) {
         const components2 = accessory.components;
-        const item2 = components2.forEach(f92115);
+        const item2 = components2.forEach(f93365);
       } else if (closure_2_0(closure_2_2[7]).ComponentType.SECTION === type2) {
         const components3 = accessory.components;
-        const item3 = components3.forEach(f92116);
+        const item3 = components3.forEach(f93366);
         closure_2_7(closure_0, accessory.accessory);
       } else if (closure_2_0(closure_2_2[7]).ComponentType.CONTAINER === type2) {
         const components4 = accessory.components;
-        const item4 = components4.forEach(f92117);
+        const item4 = components4.forEach(f93367);
       }
     } else if (closure_2_0(closure_2_2[7]).ComponentType.CONTAINER === type) {
       const components5 = id.components;
-      const item5 = components5.forEach(f92117);
+      const item5 = components5.forEach(f93367);
     }
   };
-  const f92116 = (id) => {
+  const f93366 = (id) => {
     let closure_0 = obj;
     let result = obj.set(id.id, id);
     let type = id.type;
@@ -66,32 +66,32 @@ function flattenComponent(map, accessory) {
     let tmp3 = closure_2_2;
     if (closure_2_0(closure_2_2[7]).ComponentType.ACTION_ROW === type) {
       let components = id.components;
-      let item = components.forEach(f92115);
+      let item = components.forEach(f93365);
     } else if (tmp2(tmp3[7]).ComponentType.SECTION === type) {
       let components1 = id.components;
-      let item1 = components1.forEach(f92116);
+      let item1 = components1.forEach(f93366);
       let accessory = id.accessory;
       let result1 = obj.set(accessory.id, accessory);
       let type2 = accessory.type;
       if (tmp2(tmp3[7]).ComponentType.ACTION_ROW === type2) {
         let components2 = accessory.components;
-        let item2 = components2.forEach(f92115);
+        let item2 = components2.forEach(f93365);
       } else if (tmp2(tmp3[7]).ComponentType.SECTION === type2) {
         let components3 = accessory.components;
-        let item3 = components3.forEach(f92116);
+        let item3 = components3.forEach(f93366);
         let tmp8 = closure_2_7;
         let num = 0;
         let tmp9 = closure_2_7(obj, accessory.accessory);
       } else if (tmp2(tmp3[7]).ComponentType.CONTAINER === type2) {
         let components4 = accessory.components;
-        let item4 = components4.forEach(f92117);
+        let item4 = components4.forEach(f93367);
       }
     } else if (tmp2(tmp3[7]).ComponentType.CONTAINER === type) {
       let components5 = id.components;
-      let item5 = components5.forEach(f92117);
+      let item5 = components5.forEach(f93367);
     }
   };
-  const f92117 = (id) => {
+  const f93367 = (id) => {
     obj = closure_1_0;
     let closure_0 = closure_1_0;
     let result = closure_1_0.set(id.id, id);
@@ -100,29 +100,29 @@ function flattenComponent(map, accessory) {
     let tmp3 = closure_2_2;
     if (obj(closure_2_2[7]).ComponentType.ACTION_ROW === type) {
       let components = id.components;
-      let item = components.forEach(f92115);
+      let item = components.forEach(f93365);
     } else if (tmp2(tmp3[7]).ComponentType.SECTION === type) {
       let components1 = id.components;
-      let item1 = components1.forEach(f92116);
+      let item1 = components1.forEach(f93366);
       let accessory = id.accessory;
       let result1 = obj.set(accessory.id, accessory);
       let type2 = accessory.type;
       if (tmp2(tmp3[7]).ComponentType.ACTION_ROW === type2) {
         let components2 = accessory.components;
-        let item2 = components2.forEach(f92115);
+        let item2 = components2.forEach(f93365);
       } else if (tmp2(tmp3[7]).ComponentType.SECTION === type2) {
         let components3 = accessory.components;
-        let item3 = components3.forEach(f92116);
+        let item3 = components3.forEach(f93366);
         let tmp8 = closure_2_7;
         let num = 0;
         let tmp9 = closure_2_7(obj, accessory.accessory);
       } else if (tmp2(tmp3[7]).ComponentType.CONTAINER === type2) {
         let components4 = accessory.components;
-        let item4 = components4.forEach(f92117);
+        let item4 = components4.forEach(f93367);
       }
     } else if (tmp2(tmp3[7]).ComponentType.CONTAINER === type) {
       let components5 = id.components;
-      let item5 = components5.forEach(f92117);
+      let item5 = components5.forEach(f93367);
     }
   };
   _require = map;
@@ -130,14 +130,14 @@ function flattenComponent(map, accessory) {
   const type = accessory.type;
   if (require("Server").ComponentType.ACTION_ROW === type) {
     const components = accessory.components;
-    const item = components.forEach(f92115);
+    const item = components.forEach(f93365);
   } else if (require("Server").ComponentType.SECTION === type) {
     const components1 = accessory.components;
-    const item1 = components1.forEach(f92116);
+    const item1 = components1.forEach(f93366);
     flattenComponent(map, accessory.accessory);
   } else if (require("Server").ComponentType.CONTAINER === type) {
     const components2 = accessory.components;
-    const item2 = components2.forEach(f92117);
+    const item2 = components2.forEach(f93367);
   }
 }
 function findChildComponent(type, componentId) {
@@ -226,15 +226,14 @@ function getComponentChildren(nextResult) {
     return [];
   }
 }
-function transformComponent(accessory, items) {
+function transformComponent(type, join) {
   let SMALL;
   let animated;
   let c1;
   let emojiURL;
-  let flag3;
+  let flag2;
   let found;
   let found2;
-  let int2hslResult;
   let items1;
   let options;
   let required;
@@ -247,6 +246,7 @@ function transformComponent(accessory, items) {
   let required8;
   let required9;
   let tmp2Result;
+  let tmp2Result27;
   let tmp2Result28;
   let tmp2Result29;
   let tmp2Result30;
@@ -264,63 +264,62 @@ function transformComponent(accessory, items) {
   let tmp2Result42;
   let tmp2Result43;
   let tmp2Result44;
+  let tmp2Result45;
   let tmp2Result46;
   let tmp2Result47;
-  let tmp2Result48;
   let tmp2Result49;
+  let tmp2Result50;
   let tmp2Result51;
   let tmp2Result52;
-  let tmp2Result53;
-  let tmp2Result54;
-  _require = items;
-  const type = accessory.type;
+  _require = join;
+  type = type.type;
   let tmp2 = _require;
   let tmp3 = dependencyMap;
   let flag = true;
   if (require("Server").ComponentType.ACTION_ROW !== type) {
     flag = true;
-    if (tmp2(1998).ComponentType.BUTTON !== type) {
+    if (tmp2(2000).ComponentType.BUTTON !== type) {
       flag = true;
-      if (tmp2(1998).ComponentType.STRING_SELECT !== type) {
+      if (tmp2(2000).ComponentType.STRING_SELECT !== type) {
         flag = true;
-        if (tmp2(1998).ComponentType.TEXT_INPUT !== type) {
+        if (tmp2(2000).ComponentType.TEXT_INPUT !== type) {
           flag = true;
-          if (tmp2(1998).ComponentType.USER_SELECT !== type) {
+          if (tmp2(2000).ComponentType.USER_SELECT !== type) {
             flag = true;
-            if (tmp2(1998).ComponentType.ROLE_SELECT !== type) {
+            if (tmp2(2000).ComponentType.ROLE_SELECT !== type) {
               flag = true;
-              if (tmp2(1998).ComponentType.MENTIONABLE_SELECT !== type) {
+              if (tmp2(2000).ComponentType.MENTIONABLE_SELECT !== type) {
                 flag = true;
-                if (tmp2(1998).ComponentType.CHANNEL_SELECT !== type) {
+                if (tmp2(2000).ComponentType.CHANNEL_SELECT !== type) {
                   flag = true;
-                  if (tmp2(1998).ComponentType.SECTION !== type) {
+                  if (tmp2(2000).ComponentType.SECTION !== type) {
                     flag = true;
-                    if (tmp2(1998).ComponentType.TEXT_DISPLAY !== type) {
+                    if (tmp2(2000).ComponentType.TEXT_DISPLAY !== type) {
                       flag = true;
-                      if (tmp2(1998).ComponentType.THUMBNAIL !== type) {
+                      if (tmp2(2000).ComponentType.THUMBNAIL !== type) {
                         flag = true;
-                        if (tmp2(1998).ComponentType.MEDIA_GALLERY !== type) {
+                        if (tmp2(2000).ComponentType.MEDIA_GALLERY !== type) {
                           flag = true;
-                          if (tmp2(1998).ComponentType.FILE !== type) {
+                          if (tmp2(2000).ComponentType.FILE !== type) {
                             flag = true;
-                            if (tmp2(1998).ComponentType.SEPARATOR !== type) {
+                            if (tmp2(2000).ComponentType.SEPARATOR !== type) {
                               flag = true;
-                              if (tmp2(1998).ComponentType.CONTAINER !== type) {
+                              if (tmp2(2000).ComponentType.CONTAINER !== type) {
                                 flag = true;
-                                if (tmp2(1998).ComponentType.LABEL !== type) {
+                                if (tmp2(2000).ComponentType.LABEL !== type) {
                                   flag = true;
-                                  if (tmp2(1998).ComponentType.FILE_UPLOAD !== type) {
+                                  if (tmp2(2000).ComponentType.FILE_UPLOAD !== type) {
                                     flag = true;
-                                    if (tmp2(1998).ComponentType.CHECKPOINT_CARD !== type) {
+                                    if (tmp2(2000).ComponentType.CHECKPOINT_CARD !== type) {
                                       flag = true;
-                                      if (tmp2(1998).ComponentType.RADIO_GROUP !== type) {
+                                      if (tmp2(2000).ComponentType.RADIO_GROUP !== type) {
                                         flag = true;
-                                        if (tmp2(1998).ComponentType.CHECKBOX_GROUP !== type) {
+                                        if (tmp2(2000).ComponentType.CHECKBOX_GROUP !== type) {
                                           flag = true;
-                                          if (tmp2(1998).ComponentType.CHECKBOX !== type) {
+                                          if (tmp2(2000).ComponentType.CHECKBOX !== type) {
                                             flag = true;
-                                            if (tmp2(1998).ComponentType.CONTENT_INVENTORY_ENTRY !== type) {
-                                              const UNKNOWN = tmp2(1998).ComponentType.UNKNOWN;
+                                            if (tmp2(2000).ComponentType.CONTENT_INVENTORY_ENTRY !== type) {
+                                              const UNKNOWN = tmp2(2000).ComponentType.UNKNOWN;
                                               flag = false;
                                             }
                                           }
@@ -346,12 +345,12 @@ function transformComponent(accessory, items) {
   }
   if (flag) {
     importDefault = true;
-    const type2 = accessory.type;
-    if (tmp2(1998).ComponentType.ACTION_ROW === type2) {
-      const components = accessory.components;
+    const type2 = type.type;
+    if (tmp2(2000).ComponentType.ACTION_ROW === type2) {
+      const components = type.components;
       const mapped = components.map((item, index) => {
-        items = [];
-        items[HermesBuiltin.arraySpread(items, closure_0, 0)] = index;
+        const items = [];
+        items[HermesBuiltin.arraySpread(items, join, 0)] = index;
         const tmp2 = transformComponent(item, items);
         let tmp3 = null;
         if (null != tmp2) {
@@ -359,21 +358,21 @@ function transformComponent(accessory, items) {
         }
         return tmp3;
       });
-      let obj2 = { type: tmp2(1998).ComponentType.ACTION_ROW, id: tmp2Result.asComponentId(items.join(",")), components: found };
+      let obj2 = { type: tmp2(2000).ComponentType.ACTION_ROW, id: tmp2Result.asComponentId(join.join(",")), components: found };
       found = mapped.filter(tmp2(1388).isNotNullish);
-      tmp2Result = tmp2(5445);
+      tmp2Result = tmp2(5545);
       return obj2;
-    } else if (tmp2(1998).ComponentType.BUTTON === type2) {
-      let tmp41;
-      if (null != accessory.emoji) {
-        let emoji = accessory.emoji;
+    } else if (tmp2(2000).ComponentType.BUTTON === type2) {
+      let tmp39;
+      if (null != type.emoji) {
+        let emoji = type.emoji;
         if (typeof getEmoji === "function") {
           const obj4 = { id: null, name: null, animated: null, src: emojiURL };
-          ({ id: obj47.id, name: obj47.name, animated: obj47.animated } = emoji);
+          ({ id: obj46.id, name: obj46.name, animated: obj46.animated } = emoji);
           emojiURL = undefined;
           if (null != emoji.id) {
             let obj6 = { id: null, animated, size: 48 };
-            ({ id: obj48.id, animated } = emoji);
+            ({ id: obj47.id, animated } = emoji);
             let getEmojiURL = AvatarUtilsDefault.getEmojiURL;
             AvatarUtilsDefault;
             if (!animated) {
@@ -381,19 +380,19 @@ function transformComponent(accessory, items) {
             }
             emojiURL = getEmojiURL(obj6);
           }
-          tmp41 = obj4;
+          tmp39 = obj4;
         } else {
           throw new TypeError("Trying to call a non-function");
         }
       }
-      const obj7 = { type: tmp2(1998).ComponentType.BUTTON, id: tmp2Result28.asComponentId(items.join(",")), customId: null, style: null, disabled: null, url: null, label: null, emoji: tmp41, skuId: accessory.sku_id };
-      ({ custom_id: obj49.customId, style: obj49.style, disabled: obj49.disabled, url: obj49.url, label: obj49.label } = accessory);
-      tmp2Result28 = tmp2(5445);
+      const obj7 = { type: tmp2(2000).ComponentType.BUTTON, id: tmp2Result27.asComponentId(join.join(",")), customId: null, style: null, disabled: null, url: null, label: null, emoji: tmp39, skuId: type.sku_id };
+      ({ custom_id: obj48.customId, style: obj48.style, disabled: obj48.disabled, url: obj48.url, label: obj48.label } = type);
+      tmp2Result27 = tmp2(5545);
       return obj7;
-    } else if (tmp2(1998).ComponentType.STRING_SELECT === type2) {
+    } else if (tmp2(2000).ComponentType.STRING_SELECT === type2) {
       const obj8 = {
-        type: tmp2(1998).ComponentType.STRING_SELECT,
-        id: tmp2Result29.asComponentId(items.join(",")),
+        type: tmp2(2000).ComponentType.STRING_SELECT,
+        id: tmp2Result28.asComponentId(join.join(",")),
         customId: null,
         disabled: null,
         required: required9,
@@ -432,64 +431,64 @@ function transformComponent(accessory, items) {
         minValues: null,
         maxValues: null
       };
-      ({ custom_id: obj45.customId, disabled: obj45.disabled, required: required9 } = accessory);
-      tmp2Result29 = tmp2(5445);
+      ({ custom_id: obj44.customId, disabled: obj44.disabled, required: required9 } = type);
+      tmp2Result28 = tmp2(5545);
       if (required9 == null) {
         required9 = false;
       }
-      options = accessory.options;
-      ({ placeholder: obj45.placeholder, min_values: obj45.minValues, max_values: obj45.maxValues } = accessory);
+      options = type.options;
+      ({ placeholder: obj44.placeholder, min_values: obj44.minValues, max_values: obj44.maxValues } = type);
       return obj8;
-    } else if (tmp2(1998).ComponentType.TEXT_INPUT === type2) {
-      const obj9 = { type: accessory.type, id: tmp2Result30.asComponentId(items.join(",")), style: null, customId: null, label: null, value: null, placeholder: null, disabled: null, required: required8, minLength: null, maxLength: null };
-      ({ style: obj43.style, custom_id: obj43.customId, label: obj43.label, value: obj43.value, placeholder: obj43.placeholder, disabled: obj43.disabled, required: required8 } = accessory);
-      tmp2Result30 = tmp2(5445);
+    } else if (tmp2(2000).ComponentType.TEXT_INPUT === type2) {
+      const obj9 = { type: type.type, id: tmp2Result29.asComponentId(join.join(",")), style: null, customId: null, label: null, value: null, placeholder: null, disabled: null, required: required8, minLength: null, maxLength: null };
+      ({ style: obj42.style, custom_id: obj42.customId, label: obj42.label, value: obj42.value, placeholder: obj42.placeholder, disabled: obj42.disabled, required: required8 } = type);
+      tmp2Result29 = tmp2(5545);
       if (required8 == null) {
         required8 = false;
       }
-      ({ min_length: obj43.minLength, max_length: obj43.maxLength } = accessory);
+      ({ min_length: obj42.minLength, max_length: obj42.maxLength } = type);
       return obj9;
-    } else if (tmp2(1998).ComponentType.USER_SELECT === type2) {
-      const obj10 = { type: tmp2(1998).ComponentType.USER_SELECT, id: tmp2Result31.asComponentId(items.join(",")), customId: null, disabled: null, required: required7, placeholder: null, minValues: null, maxValues: null, defaultValues: null };
-      ({ custom_id: obj41.customId, disabled: obj41.disabled, required: required7 } = accessory);
-      tmp2Result31 = tmp2(5445);
+    } else if (tmp2(2000).ComponentType.USER_SELECT === type2) {
+      const obj10 = { type: tmp2(2000).ComponentType.USER_SELECT, id: tmp2Result30.asComponentId(join.join(",")), customId: null, disabled: null, required: required7, placeholder: null, minValues: null, maxValues: null, defaultValues: null };
+      ({ custom_id: obj40.customId, disabled: obj40.disabled, required: required7 } = type);
+      tmp2Result30 = tmp2(5545);
       if (required7 == null) {
         required7 = false;
       }
-      ({ placeholder: obj41.placeholder, min_values: obj41.minValues, max_values: obj41.maxValues, default_values: obj41.defaultValues } = accessory);
+      ({ placeholder: obj40.placeholder, min_values: obj40.minValues, max_values: obj40.maxValues, default_values: obj40.defaultValues } = type);
       return obj10;
-    } else if (tmp2(1998).ComponentType.ROLE_SELECT === type2) {
-      const obj11 = { type: tmp2(1998).ComponentType.ROLE_SELECT, id: tmp2Result32.asComponentId(items.join(",")), customId: null, disabled: null, required: required6, placeholder: null, minValues: null, maxValues: null, defaultValues: null };
-      ({ custom_id: obj39.customId, disabled: obj39.disabled, required: required6 } = accessory);
-      tmp2Result32 = tmp2(5445);
+    } else if (tmp2(2000).ComponentType.ROLE_SELECT === type2) {
+      const obj11 = { type: tmp2(2000).ComponentType.ROLE_SELECT, id: tmp2Result31.asComponentId(join.join(",")), customId: null, disabled: null, required: required6, placeholder: null, minValues: null, maxValues: null, defaultValues: null };
+      ({ custom_id: obj38.customId, disabled: obj38.disabled, required: required6 } = type);
+      tmp2Result31 = tmp2(5545);
       if (required6 == null) {
         required6 = false;
       }
-      ({ placeholder: obj39.placeholder, min_values: obj39.minValues, max_values: obj39.maxValues, default_values: obj39.defaultValues } = accessory);
+      ({ placeholder: obj38.placeholder, min_values: obj38.minValues, max_values: obj38.maxValues, default_values: obj38.defaultValues } = type);
       return obj11;
-    } else if (tmp2(1998).ComponentType.MENTIONABLE_SELECT === type2) {
-      const obj13 = { type: tmp2(1998).ComponentType.MENTIONABLE_SELECT, id: tmp2Result33.asComponentId(items.join(",")), customId: null, disabled: null, required: required5, placeholder: null, minValues: null, maxValues: null, defaultValues: null };
-      ({ custom_id: obj37.customId, disabled: obj37.disabled, required: required5 } = accessory);
-      tmp2Result33 = tmp2(5445);
+    } else if (tmp2(2000).ComponentType.MENTIONABLE_SELECT === type2) {
+      const obj13 = { type: tmp2(2000).ComponentType.MENTIONABLE_SELECT, id: tmp2Result32.asComponentId(join.join(",")), customId: null, disabled: null, required: required5, placeholder: null, minValues: null, maxValues: null, defaultValues: null };
+      ({ custom_id: obj36.customId, disabled: obj36.disabled, required: required5 } = type);
+      tmp2Result32 = tmp2(5545);
       if (required5 == null) {
         required5 = false;
       }
-      ({ placeholder: obj37.placeholder, min_values: obj37.minValues, max_values: obj37.maxValues, default_values: obj37.defaultValues } = accessory);
+      ({ placeholder: obj36.placeholder, min_values: obj36.minValues, max_values: obj36.maxValues, default_values: obj36.defaultValues } = type);
       return obj13;
-    } else if (tmp2(1998).ComponentType.CHANNEL_SELECT === type2) {
-      const obj15 = { type: tmp2(1998).ComponentType.CHANNEL_SELECT, id: tmp2Result34.asComponentId(items.join(",")), customId: null, disabled: null, required: required4, placeholder: null, minValues: null, maxValues: null, channelTypes: null, defaultValues: null };
-      ({ custom_id: obj35.customId, disabled: obj35.disabled, required: required4 } = accessory);
-      tmp2Result34 = tmp2(5445);
+    } else if (tmp2(2000).ComponentType.CHANNEL_SELECT === type2) {
+      const obj15 = { type: tmp2(2000).ComponentType.CHANNEL_SELECT, id: tmp2Result33.asComponentId(join.join(",")), customId: null, disabled: null, required: required4, placeholder: null, minValues: null, maxValues: null, channelTypes: null, defaultValues: null };
+      ({ custom_id: obj34.customId, disabled: obj34.disabled, required: required4 } = type);
+      tmp2Result33 = tmp2(5545);
       if (required4 == null) {
         required4 = false;
       }
-      ({ placeholder: obj35.placeholder, min_values: obj35.minValues, max_values: obj35.maxValues, channel_types: obj35.channelTypes, default_values: obj35.defaultValues } = accessory);
+      ({ placeholder: obj34.placeholder, min_values: obj34.minValues, max_values: obj34.maxValues, channel_types: obj34.channelTypes, default_values: obj34.defaultValues } = type);
       return obj15;
-    } else if (tmp2(1998).ComponentType.SECTION === type2) {
-      const components1 = accessory.components;
+    } else if (tmp2(2000).ComponentType.SECTION === type2) {
+      const components1 = type.components;
       const mapped1 = components1.map((item, index) => {
-        items = [];
-        items[HermesBuiltin.arraySpread(items, closure_0, 0)] = index;
+        const items = [];
+        items[HermesBuiltin.arraySpread(items, join, 0)] = index;
         const tmp2 = transformComponent(item, items);
         let tmp3 = null;
         if (null != tmp2) {
@@ -498,79 +497,79 @@ function transformComponent(accessory, items) {
         return tmp3;
       });
       const found1 = mapped1.filter(tmp2(1388).isNotNullish);
-      items = [];
-      items[HermesBuiltin.arraySpread(items, items, 0)] = found1.length;
-      const tmp30 = transformComponent(accessory.accessory, items);
-      let tmp32 = null;
-      if (null != tmp30) {
-        tmp32 = tmp30;
+      let items = [];
+      items[HermesBuiltin.arraySpread(items, join, 0)] = found1.length;
+      const tmp28 = transformComponent(type.accessory, items);
+      let tmp30 = null;
+      if (null != tmp28) {
+        tmp30 = tmp28;
       }
-      let tmp33 = null;
+      let tmp31 = null;
       if (0 !== found1.length) {
-        tmp33 = null;
-        if (null != tmp32) {
-          const obj16 = { type: tmp2(1998).ComponentType.SECTION, id: tmp2Result35.asComponentId(items.join(",")), components: found1, accessory: tmp32 };
-          tmp33 = obj16;
-          tmp2Result35 = tmp2(5445);
+        tmp31 = null;
+        if (null != tmp30) {
+          const obj17 = { type: tmp2(2000).ComponentType.SECTION, id: tmp2Result34.asComponentId(join.join(",")), components: found1, accessory: tmp30 };
+          tmp31 = obj17;
+          tmp2Result34 = tmp2(5545);
         }
       }
-      return tmp33;
-    } else if (tmp2(1998).ComponentType.TEXT_DISPLAY === type2) {
-      const obj17 = { type: tmp2(1998).ComponentType.TEXT_DISPLAY, id: tmp2Result36.asComponentId(items.join(",")), content: accessory.content };
-      tmp2Result36 = tmp2(5445);
-      return obj17;
-    } else if (tmp2(1998).ComponentType.THUMBNAIL === type2) {
-      const obj18 = { type: tmp2(1998).ComponentType.THUMBNAIL, id: tmp2Result37.asComponentId(items.join(",")), media: tmp2Result38.toUnfurledMediaItem(accessory.media), description: null, spoiler: null };
-      tmp2Result37 = tmp2(5445);
-      ({ description: obj28.description, spoiler: obj28.spoiler } = accessory);
-      tmp2Result38 = tmp2(5444);
+      return tmp31;
+    } else if (tmp2(2000).ComponentType.TEXT_DISPLAY === type2) {
+      const obj18 = { type: tmp2(2000).ComponentType.TEXT_DISPLAY, id: tmp2Result35.asComponentId(join.join(",")), content: type.content };
+      tmp2Result35 = tmp2(5545);
       return obj18;
-    } else if (tmp2(1998).ComponentType.MEDIA_GALLERY === type2) {
-      const obj19 = {
-        type: tmp2(1998).ComponentType.MEDIA_GALLERY,
-        id: tmp2Result39.asComponentId(items.join(",")),
+    } else if (tmp2(2000).ComponentType.THUMBNAIL === type2) {
+      const obj19 = { type: tmp2(2000).ComponentType.THUMBNAIL, id: tmp2Result36.asComponentId(join.join(",")), media: tmp2Result37.toUnfurledMediaItem(type.media), description: null, spoiler: null };
+      tmp2Result36 = tmp2(5545);
+      ({ description: obj27.description, spoiler: obj27.spoiler } = type);
+      tmp2Result37 = tmp2(5544);
+      return obj19;
+    } else if (tmp2(2000).ComponentType.MEDIA_GALLERY === type2) {
+      const obj20 = {
+        type: tmp2(2000).ComponentType.MEDIA_GALLERY,
+        id: tmp2Result38.asComponentId(join.join(",")),
         items: items1.map((media) => {
               let obj2;
               const obj = { media: obj2.toUnfurledMediaItem(media.media), description: null, spoiler: null };
               ({ description: obj.description, spoiler: obj.spoiler } = media);
-              obj2 = items(dependencyMap[8]);
+              obj2 = join(dependencyMap[8]);
               return obj;
             })
       };
-      items1 = accessory.items;
-      tmp2Result39 = tmp2(5445);
-      return obj19;
-    } else if (tmp2(1998).ComponentType.FILE === type2) {
-      const obj20 = { type: tmp2(1998).ComponentType.FILE, id: tmp2Result40.asComponentId(items.join(",")), file: tmp2Result41.toUnfurledMediaItem(accessory.file), name: null, size: null, spoiler: null };
-      tmp2Result40 = tmp2(5445);
-      ({ name: obj23.name, size: obj23.size, spoiler: obj23.spoiler } = accessory);
-      tmp2Result41 = tmp2(5444);
+      items1 = type.items;
+      tmp2Result38 = tmp2(5545);
       return obj20;
-    } else if (tmp2(1998).ComponentType.SEPARATOR === type2) {
-      const obj21 = { type: tmp2(1998).ComponentType.SEPARATOR, id: tmp2Result42.asComponentId(items.join(",")), divider: flag3, spacing: SMALL };
-      flag3 = accessory.divider;
-      tmp2Result42 = tmp2(5445);
-      if (flag3 == null) {
-        flag3 = true;
-      }
-      SMALL = accessory.spacing;
-      if (SMALL == null) {
-        SMALL = tmp2(1998).SeparatorSpacingSize.SMALL;
-      }
+    } else if (tmp2(2000).ComponentType.FILE === type2) {
+      const obj21 = { type: tmp2(2000).ComponentType.FILE, id: tmp2Result39.asComponentId(join.join(",")), file: tmp2Result40.toUnfurledMediaItem(type.file), name: null, size: null, spoiler: null };
+      tmp2Result39 = tmp2(5545);
+      ({ name: obj22.name, size: obj22.size, spoiler: obj22.spoiler } = type);
+      tmp2Result40 = tmp2(5544);
       return obj21;
-    } else if (tmp2(1998).ComponentType.CONTENT_INVENTORY_ENTRY === type2) {
-      let tmp25 = null;
-      if (null != accessory.content_inventory_entry) {
-        const obj22 = { type: tmp2(1998).ComponentType.CONTENT_INVENTORY_ENTRY, id: tmp2Result43.asComponentId(items.join(",")), contentInventoryEntry: accessory.content_inventory_entry };
-        tmp25 = obj22;
-        tmp2Result43 = tmp2(5445);
+    } else if (tmp2(2000).ComponentType.SEPARATOR === type2) {
+      const obj23 = { type: tmp2(2000).ComponentType.SEPARATOR, id: tmp2Result41.asComponentId(join.join(",")), divider: flag2, spacing: SMALL };
+      flag2 = type.divider;
+      tmp2Result41 = tmp2(5545);
+      if (flag2 == null) {
+        flag2 = true;
       }
-      return tmp25;
-    } else if (tmp2(1998).ComponentType.CONTAINER === type2) {
-      const components2 = accessory.components;
+      SMALL = type.spacing;
+      if (SMALL == null) {
+        SMALL = tmp2(2000).SeparatorSpacingSize.SMALL;
+      }
+      return obj23;
+    } else if (tmp2(2000).ComponentType.CONTENT_INVENTORY_ENTRY === type2) {
+      let tmp23 = null;
+      if (null != type.content_inventory_entry) {
+        const obj24 = { type: tmp2(2000).ComponentType.CONTENT_INVENTORY_ENTRY, id: tmp2Result42.asComponentId(join.join(",")), contentInventoryEntry: type.content_inventory_entry };
+        tmp23 = obj24;
+        tmp2Result42 = tmp2(5545);
+      }
+      return tmp23;
+    } else if (tmp2(2000).ComponentType.CONTAINER === type2) {
+      const components2 = type.components;
       const mapped2 = components2.map((item, index) => {
-        items = [];
-        items[HermesBuiltin.arraySpread(items, closure_0, 0)] = index;
+        const items = [];
+        items[HermesBuiltin.arraySpread(items, join, 0)] = index;
         const tmp2 = transformComponent(item, items);
         let tmp3 = null;
         if (null != tmp2) {
@@ -578,87 +577,83 @@ function transformComponent(accessory, items) {
         }
         return tmp3;
       });
-      const obj24 = { type: tmp2(1998).ComponentType.CONTAINER, id: tmp2Result44.asComponentId(items.join(",")), accentColor: int2hslResult, spoiler: accessory.spoiler, components: found2 };
+      const obj25 = { type: tmp2(2000).ComponentType.CONTAINER, id: tmp2Result43.asComponentId(join.join(",")), accentColor: null, spoiler: null, components: found2 };
       found2 = mapped2.filter(tmp2(1388).isNotNullish);
-      int2hslResult = undefined;
-      tmp2Result44 = tmp2(5445);
-      if (null != accessory.accent_color) {
-        const tmp2Result45 = tmp2(1103);
-        int2hslResult = tmp2Result45.int2hsl(accessory.accent_color, false);
-      }
-      return obj24;
-    } else if (tmp2(1998).ComponentType.LABEL === type2) {
+      ({ accent_color: obj16.accentColor, spoiler: obj16.spoiler } = type);
+      tmp2Result43 = tmp2(5545);
+      return obj25;
+    } else if (tmp2(2000).ComponentType.LABEL === type2) {
       const items2 = [];
-      items2[HermesBuiltin.arraySpread(items2, items, 0)] = 0;
-      const tmp18 = transformComponent(accessory.component, items2);
+      items2[HermesBuiltin.arraySpread(items2, join, 0)] = 0;
+      const tmp18 = transformComponent(type.component, items2);
       let tmp20 = null;
       if (null != tmp18) {
         tmp20 = tmp18;
       }
       let tmp21 = null;
       if (null != tmp20) {
-        const obj25 = { type: tmp2(1998).ComponentType.LABEL, id: tmp2Result46.asComponentId(items.join(",")), label: null, description: null, component: tmp20 };
-        ({ label: obj14.label, description: obj14.description } = accessory);
-        tmp21 = obj25;
-        tmp2Result46 = tmp2(5445);
+        const obj26 = { type: tmp2(2000).ComponentType.LABEL, id: tmp2Result44.asComponentId(join.join(",")), label: null, description: null, component: tmp20 };
+        ({ label: obj14.label, description: obj14.description } = type);
+        tmp21 = obj26;
+        tmp2Result44 = tmp2(5545);
       }
       return tmp21;
-    } else if (tmp2(1998).ComponentType.FILE_UPLOAD === type2) {
-      const obj26 = { type: accessory.type, id: tmp2Result47.asComponentId(items.join(",")), customId: null, disabled: null, required: required3, minValues: null, maxValues: null, fileTypes: null };
-      ({ custom_id: obj12.customId, disabled: obj12.disabled, required: required3 } = accessory);
-      tmp2Result47 = tmp2(5445);
+    } else if (tmp2(2000).ComponentType.FILE_UPLOAD === type2) {
+      const obj28 = { type: type.type, id: tmp2Result45.asComponentId(join.join(",")), customId: null, disabled: null, required: required3, minValues: null, maxValues: null, fileTypes: null };
+      ({ custom_id: obj12.customId, disabled: obj12.disabled, required: required3 } = type);
+      tmp2Result45 = tmp2(5545);
       if (required3 == null) {
         required3 = false;
       }
-      ({ min_values: obj12.minValues, max_values: obj12.maxValues, file_types: obj12.fileTypes } = accessory);
-      return obj26;
-    } else if (tmp2(1998).ComponentType.CHECKPOINT_CARD === type2) {
+      ({ min_values: obj12.minValues, max_values: obj12.maxValues, file_types: obj12.fileTypes } = type);
+      return obj28;
+    } else if (tmp2(2000).ComponentType.CHECKPOINT_CARD === type2) {
       let tmp12;
-      const checkpoint_data = accessory.checkpoint_data;
+      const checkpoint_data = type.checkpoint_data;
       const version = checkpoint_data.version;
       if (CheckpointVersions.V2025 === version) {
-        const obj27 = { type: accessory.type, id: tmp2Result48.asComponentId(items.join(",")), checkpointData: tmp2Result49.transformCheckpoint2025CardComponent(checkpoint_data) };
-        tmp2Result48 = tmp2(5445);
-        tmp12 = obj27;
-        tmp2Result49 = tmp2(5446);
+        const obj29 = { type: type.type, id: tmp2Result46.asComponentId(join.join(",")), checkpointData: tmp2Result47.transformCheckpoint2025CardComponent(checkpoint_data) };
+        tmp2Result46 = tmp2(5545);
+        tmp12 = obj29;
+        tmp2Result47 = tmp2(5546);
       } else {
         tmp12 = null;
         if (tmp10.V2026 === version) {
-          const tmp2Result50 = tmp2(5459);
-          const result = tmp2Result50.transformCheckpoint2026CardComponent(checkpoint_data);
+          const tmp2Result48 = tmp2(5559);
+          const result = tmp2Result48.transformCheckpoint2026CardComponent(checkpoint_data);
           let tmp13 = null;
           if (null != result) {
-            const obj29 = { type: accessory.type, id: tmp2Result51.asComponentId(items.join(",")), checkpointData: result };
-            tmp13 = obj29;
-            tmp2Result51 = tmp2(5445);
+            const obj30 = { type: type.type, id: tmp2Result49.asComponentId(join.join(",")), checkpointData: result };
+            tmp13 = obj30;
+            tmp2Result49 = tmp2(5545);
           }
           tmp12 = tmp13;
         }
       }
       return tmp12;
-    } else if (tmp2(1998).ComponentType.RADIO_GROUP === type2) {
-      const obj30 = { type: accessory.type, id: tmp2Result52.asComponentId(items.join(",")), customId: null, options: null, required: required2 };
-      ({ custom_id: obj5.customId, options: obj5.options, required: required2 } = accessory);
-      tmp2Result52 = tmp2(5445);
+    } else if (tmp2(2000).ComponentType.RADIO_GROUP === type2) {
+      const obj31 = { type: type.type, id: tmp2Result50.asComponentId(join.join(",")), customId: null, options: null, required: required2 };
+      ({ custom_id: obj5.customId, options: obj5.options, required: required2 } = type);
+      tmp2Result50 = tmp2(5545);
       if (required2 == null) {
         required2 = false;
       }
-      return obj30;
-    } else if (tmp2(1998).ComponentType.CHECKBOX_GROUP === type2) {
-      const obj31 = { type: accessory.type, id: tmp2Result53.asComponentId(items.join(",")), customId: null, options: null, minValues: null, maxValues: null, required };
-      ({ custom_id: obj3.customId, options: obj3.options, min_values: obj3.minValues, max_values: obj3.maxValues, required } = accessory);
-      tmp2Result53 = tmp2(5445);
+      return obj31;
+    } else if (tmp2(2000).ComponentType.CHECKBOX_GROUP === type2) {
+      const obj32 = { type: type.type, id: tmp2Result51.asComponentId(join.join(",")), customId: null, options: null, minValues: null, maxValues: null, required };
+      ({ custom_id: obj3.customId, options: obj3.options, min_values: obj3.minValues, max_values: obj3.maxValues, required } = type);
+      tmp2Result51 = tmp2(5545);
       if (required == null) {
         required = false;
       }
-      return obj31;
-    } else if (tmp2(1998).ComponentType.CHECKBOX === type2) {
-      let obj = { type: accessory.type, id: tmp2Result54.asComponentId(items.join(",")), customId: null, default: null };
-      ({ custom_id: obj.customId, default: obj.default } = accessory);
-      tmp2Result54 = tmp2(5445);
+      return obj32;
+    } else if (tmp2(2000).ComponentType.CHECKBOX === type2) {
+      let obj = { type: type.type, id: tmp2Result52.asComponentId(join.join(",")), customId: null, default: null };
+      ({ custom_id: obj.customId, default: obj.default } = type);
+      tmp2Result52 = tmp2(5545);
       return obj;
     } else {
-      logger.warn("transformComponent: Unknown component type", accessory.type);
+      logger.warn("transformComponent: Unknown component type", type.type);
       return null;
     }
   } else {
@@ -706,16 +701,16 @@ export const getLayoutComponentErrorText = function getLayoutComponentErrorText(
         errorCode = interaction.errorCode;
       }
       if (429 === errorCode) {
-        const intl2 = tmp2(1126).intl;
-        stringResult = intl2.string(tmp2(1126).t.fitPBS);
+        const intl2 = tmp2(1128).intl;
+        stringResult = intl2.string(tmp2(1128).t.fitPBS);
       } else {
         let reasonCode;
         if (interaction != null) {
           reasonCode = interaction.reasonCode;
         }
         if (null == reasonCode) {
-          const intl = tmp2(1126).intl;
-          stringResult = intl.string(tmp2(1126).t.VCsUJu);
+          const intl = tmp2(1128).intl;
+          stringResult = intl.string(tmp2(1128).t.VCsUJu);
         } else {
           const tmp2Result = interactionCallbackErrorReason;
           stringResult = tmp2Result.interactionCallbackErrorReason(interaction.reasonCode, interaction.data.applicationId);
@@ -771,7 +766,7 @@ export const getFirstInteractionComponentMedia = function getFirstInteractionCom
       if (null == first) {
         continue;
       } else {
-        let tmp4Result = tmp4(5444);
+        let tmp4Result = tmp4(5544);
         let unfurledMediaItemType = tmp4Result.getUnfurledMediaItemType(tmp14.media);
         if ("INVALID" !== unfurledMediaItemType) {
           let obj2 = { type: tmp17, alt: tmp14.description };
@@ -780,8 +775,8 @@ export const getFirstInteractionComponentMedia = function getFirstInteractionCom
           return obj2;
         }
       }
-    } else if (tmp3.type === tmp4(1998).ComponentType.THUMBNAIL) {
-      let tmp4Result2 = tmp4(5444);
+    } else if (tmp3.type === tmp4(2000).ComponentType.THUMBNAIL) {
+      let tmp4Result2 = tmp4(5544);
       let unfurledMediaItemType1 = tmp4Result2.getUnfurledMediaItemType(tmp3.media);
       if ("INVALID" !== unfurledMediaItemType1) {
         let obj3 = { type: tmp25, alt: tmp3.description };

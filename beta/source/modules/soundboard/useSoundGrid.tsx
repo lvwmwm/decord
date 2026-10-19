@@ -1,30 +1,30 @@
-// Module ID: 17825
-// Function ID: 17826
+// Module ID: 18211
+// Function ID: 18212
 // Name: useSoundGrid
-// Dependencies: [32, 19, 2065, 2087, 4750, 2116, 1390, 5428, 5430, 1392, 7049, 8020, 17826, 558, 576, 504, 4769, 5431, 17827, 8568, 17828, 17829, 5396, 2]
+// Dependencies: [32, 19, 2068, 2090, 4845, 2119, 1392, 5528, 5530, 1394, 7325, 8294, 18212, 558, 576, 504, 4864, 5531, 18213, 8848, 18214, 5496, 2]
 
-// Module 17825 (useSoundGrid)
+// Module 18211 (useSoundGrid)
 import react2 from "react" /* 576 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import SoundboardTypes from "SoundboardTypes" /* 7049 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8020 */;
-import useManageResourcePermissions from "useManageResourcePermissions" /* 8568 */;
-import useSoundOrganizer from "useSoundOrganizer" /* 17826 */;
-import TopSoundboardSoundsActionCreators from "TopSoundboardSoundsActionCreators" /* 17829 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import SoundboardTypes from "SoundboardTypes" /* 7325 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8294 */;
+import useManageResourcePermissions from "useManageResourcePermissions" /* 8848 */;
+import useSoundOrganizer from "useSoundOrganizer" /* 18212 */;
+import TopSoundboardSoundsActionCreators from "TopSoundboardSoundsActionCreators" /* 18214 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildStore_mod from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import UserStore from "UserStore" /* 1390 */;
-import SoundboardStore from "SoundboardStore" /* 5428 */;
-import SoundboardConstants from "SoundboardConstants" /* 5430 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildStore_mod from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import UserStore from "UserStore" /* 1392 */;
+import SoundboardStore from "SoundboardStore" /* 5528 */;
+import SoundboardConstants from "SoundboardConstants" /* 5530 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_7, importDefault, lockedCustomSoundCount;
+let _require, closure_5, importDefault, lockedCustomSoundCount;
 
 let closure_12;
 let unpackModuleId;
@@ -82,13 +82,13 @@ function _addSectionForPotentialSoundIds(sectionType) {
     sections.push(obj2);
   }
 }
-function addTopSoundsSection(items, stateFromStores3, arg2) {
+function addTopSoundsSection(items, id, arg2) {
   let allSounds;
   let obj3;
   let topSoundIds;
   ({ allSounds, topSoundIds } = arg2);
   const obj = {};
-  let items1 = allSounds.get(stateFromStores3.id);
+  let items1 = allSounds.get(id.id);
   if (items1 == null) {
     items1 = [];
   }
@@ -107,7 +107,7 @@ function addTopSoundsSection(items, stateFromStores3, arg2) {
   if (0 !== items.length) {
     const push = items.push;
     const obj2 = { key: SoundboardTypes.SoundboardSoundGridSectionType.TOP_SOUNDS, categoryInfo: obj3, items: createSoundItems(items) };
-    obj3 = { type: SoundboardTypes.SoundboardSoundGridSectionType.TOP_SOUNDS, guild: stateFromStores3 };
+    obj3 = { type: SoundboardTypes.SoundboardSoundGridSectionType.TOP_SOUNDS, guild: id };
     push(obj2);
   }
 }
@@ -186,31 +186,31 @@ const PremiumTypes = PremiumConstants.PremiumTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid(guild_id, arg1, arg2) {
   let currentUser;
-  let obj6;
+  let obj5;
   let sortedGuildIdsForSoundboard;
   let stateFromStores1;
   let substr;
   let tmp11;
-  let tmp15;
   let tmp16;
-  let tmp19;
-  let tmp22;
-  let tmp24;
-  let tmp26;
-  let tmp28;
-  let tmp31;
-  let tmp35;
-  let tmp38;
+  let tmp17;
+  let tmp20;
+  let tmp23;
+  let tmp25;
+  let tmp27;
+  let tmp29;
+  let tmp32;
+  let tmp36;
+  let tmp39;
   let tmp4;
-  let tmp40;
   let tmp41;
-  let tmp43;
+  let tmp42;
+  let tmp44;
   let tmp7;
   let tmp8;
   _require = guild_id;
-  let tmp = _require;
+  const tmp = _require;
   let obj = require("react");
-  const cResult = obj.c(64);
+  const cResult = obj.c(63);
   if (cResult[0] !== arg1) {
     let obj2 = arg1;
     if (undefined === arg1) {
@@ -225,12 +225,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
   const filterOutEmptyCurrentGuild = tmp4.filterOutEmptyCurrentGuild;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [UserStore];
-    const fn = function b() {
-      return currentUser.getCurrentUser();
-    };
+    class G {
+      constructor() {
+        return currentUser.getCurrentUser();
+      }
+    }
     cResult[2] = items;
-    cResult[3] = fn;
-    tmp8 = fn;
+    cResult[3] = G;
+    tmp8 = G;
     tmp7 = items;
   } else {
     tmp7 = cResult[2];
@@ -239,11 +241,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
   const tmpResult = tmp(sortedGuildIdsForSoundboard[15]);
   const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
   if (cResult[4] !== stateFromStores) {
-    const obj4 = require("PremiumUtils");
-    const isPremiumResult = obj4.isPremium(stateFromStores, PremiumTypes.TIER_2);
+    require("PremiumUtils");
+    class G {
+      constructor() {
+        return currentUser.getCurrentUser();
+      }
+    }
     cResult[4] = stateFromStores;
-    cResult[5] = isPremiumResult;
-    tmp11 = isPremiumResult;
+    cResult[5] = tmp15;
+    tmp11 = tmp15;
   } else {
     tmp11 = cResult[5];
   }
@@ -257,16 +263,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
     }
     cResult[6] = items1;
     cResult[7] = A;
-    tmp16 = A;
-    tmp15 = items1;
+    tmp17 = A;
+    tmp16 = items1;
   } else {
-    tmp15 = cResult[6];
-    tmp16 = cResult[7];
+    tmp16 = cResult[6];
+    tmp17 = cResult[7];
   }
   const tmpResult9 = tmp(sortedGuildIdsForSoundboard[15]);
-  const tmp18 = stateFromStores1(tmpResult9.useStateFromStoresArray(tmp15, tmp16), 4);
-  [obj6, tmp19] = tmp18;
-  importDefault = tmp19;
+  const tmp19 = stateFromStores1(tmpResult9.useStateFromStoresArray(tmp16, tmp17), 4);
+  [obj5, tmp20] = tmp19;
+  importDefault = tmp20;
   const tmpResult10 = tmp(sortedGuildIdsForSoundboard[12]);
   const soundOrganizer = tmpResult10.useSoundOrganizer();
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
@@ -279,10 +285,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
       }
     }
   } else {
-    tmp22 = cResult[8];
+    tmp23 = cResult[8];
   }
   const SoundboardFavoritesExperiment = tmp(tmp2[17]).SoundboardFavoritesExperiment;
-  const sortOrder = SoundboardFavoritesExperiment.useConfig(tmp22).sortOrder;
+  const sortOrder = SoundboardFavoritesExperiment.useConfig(tmp23).sortOrder;
   const tmpResult11 = tmp(sortedGuildIdsForSoundboard[18]);
   sortedGuildIdsForSoundboard = tmpResult11.useSortedGuildIdsForSoundboard(guild_id, false);
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
@@ -294,12 +300,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
       }
     }
     cResult[9] = items2;
-    tmp24 = items2;
+    tmp25 = items2;
   } else {
-    tmp24 = cResult[9];
+    tmp25 = cResult[9];
   }
   if (cResult[10] !== sortedGuildIdsForSoundboard) {
-    const fn2 = function z() {
+    const fn = function z() {
       const items = [];
       const item = sortedGuildIdsForSoundboard.forEach((item) => {
         guild = guild.getGuild(item);
@@ -316,16 +322,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
         return items;
       }
     }
-    cResult[11] = fn2;
-    tmp26 = fn2;
+    cResult[11] = fn;
+    tmp27 = fn;
   } else {
-    tmp26 = cResult[11];
+    tmp27 = cResult[11];
   }
   const tmpResult12 = tmp(sortedGuildIdsForSoundboard[15]);
-  const stateFromStoresArray = tmpResult12.useStateFromStoresArray(tmp24, tmp26);
+  const stateFromStoresArray = tmpResult12.useStateFromStoresArray(tmp25, tmp27);
   if (cResult[12] !== stateFromStores) {
-    const obj11 = require("PremiumUtils");
-    let result = obj11.canUseSoundboardEverywhere(stateFromStores);
+    const obj10 = require("PremiumUtils");
+    let result = obj10.canUseSoundboardEverywhere(stateFromStores);
     class A {
       constructor() {
         const items = [SoundboardStore.getSounds(), SoundboardStore.getFavorites(), SoundboardStore.getFrequentlyUsedSoundIds(), SoundboardStore.isFetching()];
@@ -334,9 +340,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
     }
     cResult[12] = stateFromStores;
     cResult[13] = result;
-    tmp28 = result;
+    tmp29 = result;
   } else {
-    tmp28 = cResult[13];
+    tmp29 = cResult[13];
   }
   if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
     const items3 = [GuildStore];
@@ -347,16 +353,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
       }
     }
     cResult[14] = items3;
-    tmp31 = items3;
+    tmp32 = items3;
   } else {
-    tmp31 = cResult[14];
+    tmp32 = cResult[14];
   }
   guild_id = undefined;
-  const tmp33 = cResult[15];
+  const tmp34 = cResult[15];
   if (guild_id != null) {
     guild_id = guild_id.guild_id;
   }
-  if (tmp33 !== guild_id) {
+  if (tmp34 !== guild_id) {
     let guild_id1;
     if (guild_id != null) {
       guild_id1 = guild_id.guild_id;
@@ -379,12 +385,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
     }
     cResult[15] = guild_id1;
     cResult[16] = J;
-    tmp35 = J;
+    tmp36 = J;
   } else {
-    tmp35 = cResult[16];
+    tmp36 = cResult[16];
   }
   const tmpResult13 = tmp(sortedGuildIdsForSoundboard[15]);
-  stateFromStores1 = tmpResult13.useStateFromStores(tmp31, tmp35);
+  stateFromStores1 = tmpResult13.useStateFromStores(tmp32, tmp36);
   if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
     const items4 = [];
     class J {
@@ -404,9 +410,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
       }
     }
     cResult[17] = items4;
-    tmp38 = items4;
+    tmp39 = items4;
   } else {
-    tmp38 = cResult[17];
+    tmp39 = cResult[17];
   }
   if (cResult[18] !== stateFromStores1) {
     class W {
@@ -435,8 +441,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
     cResult[18] = stateFromStores1;
     cResult[19] = W;
     cResult[20] = items5;
-    tmp41 = items5;
-    tmp40 = W;
+    tmp42 = items5;
+    tmp41 = W;
   } else {
     class W {
       constructor() {
@@ -444,15 +450,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
         return obj.getManageResourcePermissions(stateFromStores1).canCreateExpressions;
       }
     }
-    tmp41 = cResult[20];
+    tmp42 = cResult[20];
   }
   const tmpResult14 = tmp(sortedGuildIdsForSoundboard[15]);
-  const stateFromStores2 = tmpResult14.useStateFromStores(tmp38, tmp40, tmp41);
-  if (cResult[21] === tmp19) {
-    let tmp53;
-    let tmp58;
-    let tmp61;
-    let tmp65;
+  const stateFromStores2 = tmpResult14.useStateFromStores(tmp39, tmp41, tmp42);
+  if (cResult[21] === tmp20) {
+    let tmp52;
+    let tmp57;
+    let tmp60;
+    let tmp64;
     class W {
       constructor() {
         const obj = useManageResourcePermissions;
@@ -477,43 +483,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
       }
     }
     const tmpResult15 = tmp(sortedGuildIdsForSoundboard[15]);
-    const stateFromStores3 = tmpResult15.useStateFromStores(tmp46, tmp47);
-    const _Symbol2 = Symbol;
-    if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
-      class W {
-        constructor() {
-          const obj = useManageResourcePermissions;
-          return obj.getManageResourcePermissions(stateFromStores1).canCreateExpressions;
-        }
-      }
-      const config = obj15.getConfig({ location: "useSoundGrid" });
-      class J {
-        constructor() {
-          guild_id = undefined;
-          const getGuild = GuildStore.getGuild;
-          if (guild_id != null) {
-            guild_id = guild_id.guild_id;
-          }
-          return getGuild(guild_id);
-        }
-      }
-      class A {
-        constructor() {
-          const items = [SoundboardStore.getSounds(), SoundboardStore.getFavorites(), SoundboardStore.getFrequentlyUsedSoundIds(), SoundboardStore.isFetching()];
-          return items;
-        }
-      }
-    } else {
-      class W {
-        constructor() {
-          const obj = useManageResourcePermissions;
-          return obj.getManageResourcePermissions(stateFromStores1).canCreateExpressions;
-        }
-      }
-    }
-    const enabled = tmp49.enabled;
-    const topSoundsFirst = tmp49.topSoundsFirst;
-    const tmp51 = cResult[29];
+    const stateFromStores3 = tmpResult15.useStateFromStores(tmp47, tmp48);
+    const tmp50 = cResult[28];
     if (stateFromStores3 != null) {
       class W {
         constructor() {
@@ -522,7 +493,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
         }
       }
     }
-    if (tmp51 !== undefined) {
+    if (tmp50 !== undefined) {
       class W {
         constructor() {
           const obj = useManageResourcePermissions;
@@ -553,9 +524,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
           return items;
         }
       }
+      cResult[28] = tmp53;
       cResult[29] = tmp54;
-      cResult[30] = tmp55;
-      tmp53 = tmp55;
+      tmp52 = tmp54;
     } else {
       class W {
         constructor() {
@@ -564,9 +535,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
         }
       }
     }
-    require("useMountEffect")(tmp53);
-    const _Symbol3 = Symbol;
-    if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
+    require("useMountEffect")(tmp52);
+    const _Symbol2 = Symbol;
+    if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
       class W {
         constructor() {
           const obj = useManageResourcePermissions;
@@ -590,8 +561,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
           return items;
         }
       }
-      cResult[31] = items6;
-      tmp58 = items6;
+      cResult[30] = items6;
+      tmp57 = items6;
     } else {
       class W {
         constructor() {
@@ -600,7 +571,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
         }
       }
     }
-    const tmp59 = cResult[32];
+    const tmp58 = cResult[31];
     if (stateFromStores3 != null) {
       class W {
         constructor() {
@@ -609,7 +580,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
         }
       }
     }
-    if (tmp59 !== undefined) {
+    if (tmp58 !== undefined) {
       class W {
         constructor() {
           const obj = useManageResourcePermissions;
@@ -640,9 +611,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
           return items;
         }
       }
+      cResult[31] = tmp61;
       cResult[32] = tmp62;
-      cResult[33] = tmp63;
-      tmp61 = tmp63;
+      tmp60 = tmp62;
     } else {
       class W {
         constructor() {
@@ -652,8 +623,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
       }
     }
     const tmpResult16 = tmp(sortedGuildIdsForSoundboard[15]);
-    const stateFromStoresArray1 = tmpResult16.useStateFromStoresArray(tmp58, tmp61);
-    if (cResult[34] !== stateFromStoresArray1) {
+    const stateFromStoresArray1 = tmpResult16.useStateFromStoresArray(tmp57, tmp60);
+    if (cResult[33] !== stateFromStoresArray1) {
       class W {
         constructor() {
           const obj = useManageResourcePermissions;
@@ -676,9 +647,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
           return items;
         }
       }
-      cResult[34] = stateFromStoresArray1;
-      cResult[35] = tmp66;
-      tmp65 = tmp66;
+      cResult[33] = stateFromStoresArray1;
+      cResult[34] = tmp65;
+      tmp64 = tmp65;
     } else {
       class W {
         constructor() {
@@ -687,7 +658,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
         }
       }
     }
-    if (cResult[36] === obj6) {
+    if (cResult[35] === obj5) {
       class W {
         constructor() {
           const obj = useManageResourcePermissions;
@@ -695,8 +666,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
         }
       }
     }
+    let channel = 0;
     GuildStore = 0;
-    lockedCustomSoundCount = 0;
     const items7 = [];
     if (undefined !== arg2 && arg2) {
       class W {
@@ -705,7 +676,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
           return obj.getManageResourcePermissions(stateFromStores1).canCreateExpressions;
         }
       }
-      const value = obj6.get(closure_11);
+      const value = obj5.get(closure_11);
       class J {
         constructor() {
           guild_id = undefined;
@@ -723,10 +694,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
         }
       }
       const push3 = items7.push;
-      tmp93[0] = tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS;
-      tmp93[1] = { type: tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS };
+      tmp88[0] = tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS;
+      tmp88[1] = { type: tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS };
       const arr13 = value;
-      const obj5 = { type: tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS };
+      const obj4 = { type: tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS };
       if (null != tmp(sortedGuildIdsForSoundboard[12]).sortSoundsOldestToNewestCreationDate) {
         class W {
           constructor() {
@@ -735,12 +706,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
           }
         }
       }
-      tmp93[2] = arr13.map((sound, index) => {
+      tmp88[2] = arr13.map((sound, index) => {
         const obj = { type: closure_1_0(length[10]).SoundboardSoundItemType.SOUND, sound, index };
         return obj;
       });
-      push3(tmp93);
-      const value4 = obj6.get(tmp91);
+      push3(tmp88);
+      const value4 = obj5.get(tmp86);
       if (value4 == null) {
         class W {
           constructor() {
@@ -755,32 +726,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
           const obj = useManageResourcePermissions;
           return obj.getManageResourcePermissions(stateFromStores1).canCreateExpressions;
         }
-      }
-      if (tmp68) {
-        class W {
-          constructor() {
-            const obj = useManageResourcePermissions;
-            return obj.getManageResourcePermissions(stateFromStores1).canCreateExpressions;
-          }
-        }
-        const obj8 = { allSounds: null, topSoundIds: null };
-        class J {
-          constructor() {
-            guild_id = undefined;
-            const getGuild = GuildStore.getGuild;
-            if (guild_id != null) {
-              guild_id = guild_id.guild_id;
-            }
-            return getGuild(guild_id);
-          }
-        }
-        class A {
-          constructor() {
-            const items = [SoundboardStore.getSounds(), SoundboardStore.getFavorites(), SoundboardStore.getFrequentlyUsedSoundIds(), SoundboardStore.isFetching()];
-            return items;
-          }
-        }
-        addTopSoundsSection(items7, stateFromStores3, obj8);
       }
       class J {
         constructor() {
@@ -799,50 +744,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
         }
       }
       const _Array = Array;
-      const obj9 = { sections: items7, guildIds: sortedGuildIdsForSoundboard, allSounds: obj6, potentialSoundIdsForSection: Array.from(tmp19), sectionType: tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.FAVORITES, sortSoundsFn: tmp70 };
-      _addSectionForPotentialSoundIds(obj9);
-      if (enabled) {
-        class W {
-          constructor() {
-            const obj = useManageResourcePermissions;
-            return obj.getManageResourcePermissions(stateFromStores1).canCreateExpressions;
-          }
-        }
-      }
-      if (enabled) {
-        class W {
-          constructor() {
-            const obj = useManageResourcePermissions;
-            return obj.getManageResourcePermissions(stateFromStores1).canCreateExpressions;
-          }
-        }
-      }
-      if (enabled) {
-        class W {
-          constructor() {
-            const obj = useManageResourcePermissions;
-            return obj.getManageResourcePermissions(stateFromStores1).canCreateExpressions;
-          }
-        }
-        const obj10 = { allSounds: null, topSoundIds: null };
-        class J {
-          constructor() {
-            guild_id = undefined;
-            const getGuild = GuildStore.getGuild;
-            if (guild_id != null) {
-              guild_id = guild_id.guild_id;
-            }
-            return getGuild(guild_id);
-          }
-        }
-        class A {
-          constructor() {
-            const items = [SoundboardStore.getSounds(), SoundboardStore.getFavorites(), SoundboardStore.getFrequentlyUsedSoundIds(), SoundboardStore.isFetching()];
-            return items;
-          }
-        }
-        addTopSoundsSection(items7, stateFromStores3, obj10);
-      }
+      const obj7 = { sections: items7, guildIds: sortedGuildIdsForSoundboard, allSounds: obj5, potentialSoundIdsForSection: Array.from(tmp20), sectionType: tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.FAVORITES, sortSoundsFn: tmp67 };
+      _addSectionForPotentialSoundIds(obj7);
       if (undefined !== stateFromStores1) {
         class W {
           constructor() {
@@ -850,7 +753,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
             return obj.getManageResourcePermissions(stateFromStores1).canCreateExpressions;
           }
         }
-        const obj12 = { currentGuildHasAddPermissions: null, allSounds: null, filterOutEmptyCurrentGuild: undefined !== filterOutEmptyCurrentGuild && filterOutEmptyCurrentGuild, sortSoundsFn: soundOrganizer };
+        const obj8 = { currentGuildHasAddPermissions: null, allSounds: null, filterOutEmptyCurrentGuild: undefined !== filterOutEmptyCurrentGuild && filterOutEmptyCurrentGuild, sortSoundsFn: soundOrganizer };
         class J {
           constructor() {
             guild_id = undefined;
@@ -867,16 +770,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
             return items;
           }
         }
-        addCurrentGuildSection(items7, stateFromStores1, obj12);
+        addCurrentGuildSection(items7, stateFromStores1, obj8);
       }
-      if (!tmp28) {
+      if (!tmp29) {
         class W {
           constructor() {
             const obj = useManageResourcePermissions;
             return obj.getManageResourcePermissions(stateFromStores1).canCreateExpressions;
           }
         }
-        const value5 = obj6.get(closure_11);
+        const value5 = obj5.get(closure_11);
         class J {
           constructor() {
             guild_id = undefined;
@@ -894,10 +797,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
           }
         }
         const push = items7.push;
-        tmp76[0] = tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS;
-        tmp76[1] = { type: tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS };
+        tmp71[0] = tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS;
+        tmp71[1] = { type: tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS };
         const arr11 = value5;
-        const obj13 = { type: tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS };
+        const obj9 = { type: tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS };
         if (null != tmp(sortedGuildIdsForSoundboard[12]).sortSoundsOldestToNewestCreationDate) {
           class W {
             constructor() {
@@ -906,14 +809,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
             }
           }
         }
-        tmp76[2] = arr11.map((sound, index) => {
+        tmp71[2] = arr11.map((sound, index) => {
           const obj = { type: closure_1_0(length[10]).SoundboardSoundItemType.SOUND, sound, index };
           return obj;
         });
-        push(tmp76);
+        push(tmp71);
       }
-      const obj14 = { sections: items7, guilds: stateFromStoresArray, currentGuildId: undefined, allSounds: obj6, hasNitro: tmp11, sortSoundsFn: soundOrganizer };
-      const tmp78 = addGuildsSections;
+      const obj11 = { sections: items7, guilds: stateFromStoresArray, currentGuildId: undefined, allSounds: obj5, hasNitro: tmp11, sortSoundsFn: soundOrganizer };
+      const tmp73 = addGuildsSections;
       if (stateFromStores1 != null) {
         class W {
           constructor() {
@@ -922,15 +825,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
           }
         }
       }
-      tmp78(obj14);
-      if (tmp28) {
+      tmp73(obj11);
+      if (tmp29) {
         class W {
           constructor() {
             const obj = useManageResourcePermissions;
             return obj.getManageResourcePermissions(stateFromStores1).canCreateExpressions;
           }
         }
-        const value6 = obj6.get(closure_11);
+        const value6 = obj5.get(closure_11);
         class J {
           constructor() {
             guild_id = undefined;
@@ -948,10 +851,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
           }
         }
         const push2 = items7.push;
-        tmp82[0] = tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS;
-        tmp82[1] = { type: tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS };
+        tmp77[0] = tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS;
+        tmp77[1] = { type: tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS };
         const arr12 = value6;
-        const obj16 = { type: tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS };
+        const obj12 = { type: tmp(sortedGuildIdsForSoundboard[10]).SoundboardSoundGridSectionType.DEFAULTS };
         if (null != tmp(sortedGuildIdsForSoundboard[12]).sortSoundsOldestToNewestCreationDate) {
           class W {
             constructor() {
@@ -960,22 +863,22 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
             }
           }
         }
-        tmp82[2] = arr12.map((sound, index) => {
+        tmp77[2] = arr12.map((sound, index) => {
           const obj = { type: closure_1_0(length[10]).SoundboardSoundItemType.SOUND, sound, index };
           return obj;
         });
-        push2(tmp82);
+        push2(tmp77);
       }
       let item = items7.forEach((categoryInfo) => {
         if (categoryInfo.categoryInfo.type === SoundboardTypes.SoundboardSoundGridSectionType.GUILD) {
           if (categoryInfo.categoryInfo.isNitroLocked) {
-            closure_7 = closure_7 + categoryInfo.items.length;
-          } else {
             closure_6 = closure_6 + categoryInfo.items.length;
+          } else {
+            closure_5 = closure_5 + categoryInfo.items.length;
           }
         }
       });
-      if (cResult[53] !== obj6) {
+      if (cResult[52] !== obj5) {
         class W {
           constructor() {
             const obj = useManageResourcePermissions;
@@ -998,8 +901,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
             return items;
           }
         }
-        cResult[53] = obj6;
-        cResult[54] = tmp86;
+        cResult[52] = obj5;
+        cResult[53] = tmp81;
       } else {
         class W {
           constructor() {
@@ -1008,7 +911,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
           }
         }
       }
-      if (cResult[55] === tmp19.size) {
+      if (cResult[54] === tmp20.size) {
         class W {
           constructor() {
             const obj = useManageResourcePermissions;
@@ -1016,31 +919,31 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
           }
         }
       }
-      const obj17 = { favoriteSoundCount: tmp19.size, unlockedCustomSoundCount: GuildStore, lockedCustomSoundCount };
-      cResult[55] = tmp19.size;
+      const obj13 = { favoriteSoundCount: tmp20.size, unlockedCustomSoundCount: channel, lockedCustomSoundCount: GuildStore };
+      cResult[54] = tmp20.size;
+      cResult[55] = channel;
       cResult[56] = GuildStore;
-      cResult[57] = lockedCustomSoundCount;
-      cResult[58] = obj17;
+      cResult[57] = obj13;
     }
-    cResult[36] = obj6;
-    cResult[37] = tmp28;
-    cResult[38] = stateFromStores1;
-    cResult[39] = stateFromStores2;
-    cResult[40] = undefined !== arg2 && arg2;
-    cResult[41] = tmp19;
-    cResult[42] = undefined !== filterOutEmptyCurrentGuild && filterOutEmptyCurrentGuild;
-    cResult[43] = substr;
-    cResult[44] = sortedGuildIdsForSoundboard;
-    cResult[45] = stateFromStoresArray;
-    cResult[46] = tmp11;
-    cResult[47] = tmp18[3];
-    cResult[48] = sortOrder;
-    cResult[49] = soundOrganizer;
-    cResult[50] = tmp65;
-    cResult[51] = stateFromStores3;
-    cResult[52] = tmp90;
+    cResult[35] = obj5;
+    cResult[36] = tmp29;
+    cResult[37] = stateFromStores1;
+    cResult[38] = stateFromStores2;
+    cResult[39] = undefined !== arg2 && arg2;
+    cResult[40] = tmp20;
+    cResult[41] = undefined !== filterOutEmptyCurrentGuild && filterOutEmptyCurrentGuild;
+    cResult[42] = substr;
+    cResult[43] = sortedGuildIdsForSoundboard;
+    cResult[44] = stateFromStoresArray;
+    cResult[45] = tmp11;
+    cResult[46] = tmp19[3];
+    cResult[47] = sortOrder;
+    cResult[48] = soundOrganizer;
+    cResult[49] = tmp64;
+    cResult[50] = stateFromStores3;
+    cResult[51] = tmp85;
   }
-  if (cResult[24] !== tmp19) {
+  if (cResult[24] !== tmp20) {
     class W {
       constructor() {
         const obj = useManageResourcePermissions;
@@ -1063,8 +966,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
         return items;
       }
     }
-    cResult[25] = tmp44;
-    tmp43 = tmp44;
+    cResult[25] = tmp45;
+    tmp44 = tmp45;
   } else {
     class W {
       constructor() {
@@ -1073,10 +976,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
       }
     }
   }
-  const found = arr3.filter(tmp43);
+  const found = arr3.filter(tmp44);
   substr = found.slice(0, 3);
-  cResult[21] = tmp19;
-  cResult[22] = tmp18[2];
+  cResult[21] = tmp20;
+  cResult[22] = tmp19[2];
   cResult[23] = substr;
 }) : (function useSoundGrid(unlockedCustomSoundCount) {
   let allSounds;
@@ -1177,21 +1080,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
     }
     return guild;
   });
-  const TopSoundboardSoundsMobileExperiment = require("TopSoundboardSoundsExperiment").TopSoundboardSoundsMobileExperiment;
-  const config = TopSoundboardSoundsMobileExperiment.getConfig({ location: "useSoundGrid" });
-  const enabled = config.enabled;
-  const topSoundsFirst = config.topSoundsFirst;
-  flag(flag2[22])(() => {
-    const tmp = enabled;
-    if (tmp) {
-      let id;
-      const maybeFetchTopSoundboardSoundsByGuild = TopSoundboardSoundsActionCreators.maybeFetchTopSoundboardSoundsByGuild;
-      TopSoundboardSoundsActionCreators;
-      if (stateFromStores3 != null) {
-        id = stateFromStores3.id;
-      }
-      const result = maybeFetchTopSoundboardSoundsByGuild(id);
+  let tmp16 = flag(flag2[21])(() => {
+    let id;
+    const maybeFetchTopSoundboardSoundsByGuild = TopSoundboardSoundsActionCreators.maybeFetchTopSoundboardSoundsByGuild;
+    TopSoundboardSoundsActionCreators;
+    if (stateFromStores3 != null) {
+      id = stateFromStores3.id;
     }
+    const result = maybeFetchTopSoundboardSoundsByGuild(id);
   });
   let obj12 = require("get initialized");
   const items8 = [sortedGuildIdsForSoundboard];
@@ -1205,13 +1101,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
   });
   const items9 = [stateFromStoresArray1];
   const memo1 = allSounds.useMemo(() => stateFromStoresArray1.slice(0, 3), items9);
-  const items10 = [sortedGuildIdsForSoundboard, allSounds, tmp5, false, stateFromStores1, stateFromStores2, flag, result, stateFromStoresArray, flag2, tmp7, isPremiumResult, soundOrganizer, memo, stateFromStores3, memo1, enabled, topSoundsFirst, sortOrder];
+  const items10 = [sortedGuildIdsForSoundboard, allSounds, tmp5, false, stateFromStores1, stateFromStores2, flag, result, stateFromStoresArray, flag2, tmp7, isPremiumResult, soundOrganizer, memo, stateFromStores3, memo1, sortOrder];
   return allSounds.useMemo(() => {
     let arr2;
     let id;
-    let obj10;
-    let obj13;
+    let obj12;
     let obj4;
+    let obj9;
     let result;
     let result1;
     let result2;
@@ -1222,8 +1118,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
     const tmp = flag2;
     if (tmp) {
       let value = allSounds.get(unpackModuleId);
-      const obj14 = allSounds;
-      const tmp55 = unpackModuleId;
+      const obj13 = allSounds;
+      const tmp42 = unpackModuleId;
       if (value == null) {
         value = authStore2;
       }
@@ -1244,43 +1140,31 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
       }
       push3(obj2);
       const obj5 = { categories: items, availableSounds: value4, isFetching, soundCounts: { favoriteSoundCount: 0, unlockedCustomSoundCount: 0, lockedCustomSoundCount: 0 } };
-      value4 = obj14.get(tmp55);
+      value4 = obj13.get(tmp42);
       if (value4 == null) {
         value4 = authStore2;
       }
       return obj5;
     } else {
       let sortSoundsOldestToNewestCreationDate;
-      let tmp14;
-      let tmp2 = enabled;
-      const tmp3 = enabled && null != stateFromStores3 && topSoundsFirst;
-      if (tmp3) {
+      let tmp9;
+      if (null != stateFromStores3) {
         const obj = { allSounds, topSoundIds: memo1 };
-        addTopSoundsSection(items, stateFromStores3, obj);
+        addTopSoundsSection(items, tmp2, obj);
       }
       if ("favorite-date" === sortOrder) {
         sortSoundsOldestToNewestCreationDate = useSoundOrganizer.sortSoundsOldestToNewestFavoriteDate;
-        tmp14 = require;
+        tmp9 = require;
       } else {
+        tmp9 = require;
         sortSoundsOldestToNewestCreationDate = useSoundOrganizer.sortSoundsOldestToNewestCreationDate;
-        tmp14 = require;
       }
       const _Array = Array;
-      const obj6 = { sections: items, guildIds: sortedGuildIdsForSoundboard, allSounds, potentialSoundIdsForSection: Array.from(channel), sectionType: tmp14(7049).SoundboardSoundGridSectionType.FAVORITES, sortSoundsFn: sortSoundsOldestToNewestCreationDate };
+      const obj6 = { sections: items, guildIds: sortedGuildIdsForSoundboard, allSounds, potentialSoundIdsForSection: Array.from(channel), sectionType: tmp9(7325).SoundboardSoundGridSectionType.FAVORITES, sortSoundsFn: sortSoundsOldestToNewestCreationDate };
       _addSectionForPotentialSoundIds(obj6);
-      if (tmp2) {
-        tmp2 = null != stateFromStores3;
-      }
-      if (tmp2) {
-        tmp2 = !topSoundsFirst;
-      }
-      if (tmp2) {
-        const obj7 = { allSounds, topSoundIds: memo1 };
-        addTopSoundsSection(items, stateFromStores3, obj7);
-      }
       if (undefined !== stateFromStores1) {
-        const obj8 = { currentGuildHasAddPermissions: stateFromStores2, allSounds, filterOutEmptyCurrentGuild: flag, sortSoundsFn: soundOrganizer };
-        addCurrentGuildSection(items, stateFromStores1, obj8);
+        const obj7 = { currentGuildHasAddPermissions: stateFromStores2, allSounds, filterOutEmptyCurrentGuild: flag, sortSoundsFn: soundOrganizer };
+        addCurrentGuildSection(items, stateFromStores1, obj7);
       }
       if (!c12) {
         let value5 = obj3.get(unpackModuleId);
@@ -1288,50 +1172,50 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
           value5 = authStore2;
         }
         const push = items.push;
-        const obj9 = {
-          key: tmp14(7049).SoundboardSoundGridSectionType.DEFAULTS,
-          categoryInfo: obj10,
+        const obj8 = {
+          key: tmp9(7325).SoundboardSoundGridSectionType.DEFAULTS,
+          categoryInfo: obj9,
           items: result1.map((sound, index) => {
                 const obj = { type: closure_1_0(length[10]).SoundboardSoundItemType.SOUND, sound, index };
                 return obj;
               })
         };
-        obj10 = { type: tmp14(7049).SoundboardSoundGridSectionType.DEFAULTS };
-        const sortSoundsOldestToNewestCreationDate2 = tmp14(17826).sortSoundsOldestToNewestCreationDate;
+        obj9 = { type: tmp9(7325).SoundboardSoundGridSectionType.DEFAULTS };
+        const sortSoundsOldestToNewestCreationDate2 = tmp9(18212).sortSoundsOldestToNewestCreationDate;
         result1 = value5;
         if (null != sortSoundsOldestToNewestCreationDate2) {
           result1 = sortSoundsOldestToNewestCreationDate2(value5);
         }
-        push(obj9);
+        push(obj8);
       }
-      const obj11 = { sections: items, guilds: stateFromStoresArray, currentGuildId: id, allSounds, hasNitro, sortSoundsFn: soundOrganizer };
+      const obj10 = { sections: items, guilds: stateFromStoresArray, currentGuildId: id, allSounds, hasNitro, sortSoundsFn: soundOrganizer };
       id = undefined;
-      const tmp41 = addGuildsSections;
+      const tmp29 = addGuildsSections;
       if (stateFromStores1 != null) {
-        id = tmp30.id;
+        id = tmp18.id;
       }
-      tmp41(obj11);
+      tmp29(obj10);
       if (c12) {
         let value6 = obj3.get(unpackModuleId);
         if (value6 == null) {
           value6 = authStore2;
         }
         const push2 = items.push;
-        const obj12 = {
-          key: tmp14(7049).SoundboardSoundGridSectionType.DEFAULTS,
-          categoryInfo: obj13,
+        const obj11 = {
+          key: tmp9(7325).SoundboardSoundGridSectionType.DEFAULTS,
+          categoryInfo: obj12,
           items: result2.map((sound, index) => {
                 const obj = { type: closure_1_0(length[10]).SoundboardSoundItemType.SOUND, sound, index };
                 return obj;
               })
         };
-        obj13 = { type: tmp14(7049).SoundboardSoundGridSectionType.DEFAULTS };
-        const sortSoundsOldestToNewestCreationDate3 = tmp14(17826).sortSoundsOldestToNewestCreationDate;
+        obj12 = { type: tmp9(7325).SoundboardSoundGridSectionType.DEFAULTS };
+        const sortSoundsOldestToNewestCreationDate3 = tmp9(18212).sortSoundsOldestToNewestCreationDate;
         result2 = value6;
         if (null != sortSoundsOldestToNewestCreationDate3) {
           result2 = sortSoundsOldestToNewestCreationDate3(value6);
         }
-        push2(obj12);
+        push2(obj11);
       }
       const item = items.forEach((categoryInfo) => {
         if (categoryInfo.categoryInfo.type === unlockedCustomSoundCount(flag2[10]).SoundboardSoundGridSectionType.GUILD) {
@@ -1343,9 +1227,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundGrid
         }
       });
       const _Array2 = Array;
-      const obj15 = { categories: items, availableSounds: arr2.flat(), isFetching, soundCounts: obj16 };
+      const obj14 = { categories: items, availableSounds: arr2.flat(), isFetching, soundCounts: obj15 };
       arr2 = Array.from(allSounds.values());
-      return obj15;
+      return obj14;
     }
   }, items10);
 });

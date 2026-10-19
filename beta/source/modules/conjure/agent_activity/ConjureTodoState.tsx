@@ -1,17 +1,17 @@
-// Module ID: 17179
-// Function ID: 17180
+// Module ID: 12130
+// Function ID: 12131
 // Name: ConjureTodoState
-// Dependencies: [13004, 17180, 2]
-// Exports: checklistExpanded, checklistLive, messageChecklist, supersededChecklists, todoLabel, todoMark, toggleChecklist, unfinishedTodoCount
+// Dependencies: [10980, 12131, 2]
+// Exports: checklistLive, messageChecklist, supersededChecklists, todoLabel, todoMark, todoProgress, unfinishedTodoCount
 
-// Module 17179 (ConjureTodoState)
-import conjureChatTurns from "conjureChatTurns" /* 13004 */;
-import ConjureTimelineTree from "ConjureTimelineTree" /* 17180 */;
+// Module 12130 (ConjureTodoState)
+import conjureChatTurns from "conjureChatTurns" /* 10980 */;
+import ConjureTimelineTree from "ConjureTimelineTree" /* 12131 */;
 import size from "module_2" /* 2 */;
 
-let map, set;
+let set;
 
-let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTodoState.tsx");
+const result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTodoState.tsx");
 
 export function todoMark(status, flag2) {
   let str;
@@ -42,6 +42,10 @@ export const checklistLive = function checklistLive(memo) {
     tmp2 = true !== memo.stopRequested;
   }
   return tmp2;
+};
+export const todoProgress = function todoProgress(todos) {
+  const obj = { completed: todos.filter((status) => "completed" === status.status).length, total: todos.length };
+  return obj;
 };
 export const unfinishedTodoCount = function unfinishedTodoCount(arr) {
   return arr.filter((status) => "completed" !== status.status).length;
@@ -105,21 +109,4 @@ export const supersededChecklists = function supersededChecklists(memo) {
     } while (0 <= diff);
   }
   return set;
-};
-export const checklistExpanded = function checklistExpanded(c14, render_id, arg2) {
-  let value = c14.get(render_id);
-  if (value == null) {
-    value = !arg2;
-  }
-  return value;
-};
-export const toggleChecklist = function toggleChecklist(get, arg1, arg2) {
-  map = new Map(get);
-  set = map.set;
-  let value = get.get(arg1);
-  if (value == null) {
-    value = !arg2;
-  }
-  const result = set(arg1, !value);
-  return map;
 };

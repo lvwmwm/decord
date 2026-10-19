@@ -1,19 +1,19 @@
-// Module ID: 4938
-// Function ID: 4939
+// Module ID: 5033
+// Function ID: 5034
 // Name: DismissibleContentUnsafeUtils
-// Dependencies: [5, 1244, 4939, 1102, 4960, 2056, 2050, 11, 2048, 558, 576, 504, 2046, 2]
+// Dependencies: [5, 1246, 5034, 1104, 5055, 2059, 2053, 11, 2051, 558, 576, 504, 2049, 2]
 // Exports: UNSAFE_markDismissibleContentAsDismissed, UNSAFE_markSingleUseGuildDismissibleContentAsDismissed, UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed, UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed
 
-// Module 4938 (DismissibleContentUnsafeUtils)
+// Module 5033 (DismissibleContentUnsafeUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2048 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2050 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 2056 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4960 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2051 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2053 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 2059 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5055 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -154,7 +154,7 @@ let obj = function _UNSAFE_markDismissibleContentAsDismissed() {
     if (closure_1 === undefined) {
       obj6 = {};
     }
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -197,7 +197,7 @@ obj = function _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
             }
             c5 = 1;
             c6 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {

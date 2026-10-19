@@ -1,11 +1,11 @@
-// Module ID: 8639
-// Function ID: 8640
+// Module ID: 8916
+// Function ID: 8917
 // Name: getDefaultGuildSettingsSection
-// Dependencies: [1085, 2]
+// Dependencies: [1087, 2]
 // Exports: getDefaultGuildSettingsSection
 
-// Module 8639 (getDefaultGuildSettingsSection)
-import Constants from "Constants" /* 1085 */;
+// Module 8916 (getDefaultGuildSettingsSection)
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const GuildSettingsSections = Constants.GuildSettingsSections;

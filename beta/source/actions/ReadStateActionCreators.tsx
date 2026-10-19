@@ -1,18 +1,18 @@
-// Module ID: 6800
-// Function ID: 6801
+// Module ID: 7077
+// Function ID: 7078
 // Name: ReadStateActionCreators
-// Dependencies: [6034, 2069, 2065, 6801, 1390, 1085, 584, 11, 2]
+// Dependencies: [6290, 2072, 2068, 7078, 1392, 1087, 584, 11, 2]
 // Exports: ackChannel, ackGuildFeature, ackUserFeature, bulkAck, clearOldestUnreadMessageId, disableAutomaticAck, enableAutomaticAck, localAck, registerVisibleInlineChannel, unregisterVisibleInlineChannel
 
-// Module 6800 (ReadStateActionCreators)
+// Module 7077 (ReadStateActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6034 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 6801 */;
-import UserStore from "UserStore" /* 1390 */;
+import Constants from "Constants" /* 1087 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6290 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7078 */;
+import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 function ack(channelId, location, arg2, arg3, messageId) {

@@ -1,34 +1,42 @@
-// Module ID: 11609
-// Function ID: 11610
+// Module ID: 12739
+// Function ID: 12740
 // Name: onTapCheckpointCard
-// Dependencies: [2065, 1085, 1265, 5107, 2]
+// Dependencies: [2068, 1087, 5560, 1267, 5206, 12740, 2]
 // Exports: onTapCheckpointCard
 
-// Module 11609 (onTapCheckpointCard)
-import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
+// Module 12739 (onTapCheckpointCard)
+import Constants from "Constants" /* 1087 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 5560 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/checkpoint/native/onTapCheckpointCard.tsx");
 
-export const onTapCheckpointCard = function onTapCheckpointCard(authorId) {
-  authorId = authorId.authorId;
-  const channel = ChannelStore.getChannel(authorId.message.channel_id);
-  const track = AnalyticsUtilsDefault.track;
-  const CHECKPOINT_CARD_CLICKED = AnalyticEvents.CHECKPOINT_CARD_CLICKED;
-  const obj = { other_user_id: authorId };
-  AnalyticsUtilsDefault;
-  const obj2 = AppAnalyticsUtils;
-  const merged = Object.assign(obj2.collectChannelAnalyticsMetadata(channel));
-  let guild_id;
-  const collectGuildAnalyticsMetadata = AppAnalyticsUtils.collectGuildAnalyticsMetadata;
-  AppAnalyticsUtils;
-  if (channel != null) {
-    guild_id = channel.guild_id;
+export const onTapCheckpointCard = function onTapCheckpointCard(arg0) {
+  let authorId;
+  let message;
+  ({ message, authorId } = arg0);
+  const obj = CheckpointExperiments;
+  if (obj.getIsCheckpointEnabled("onTapCheckpointCard")) {
+    const channel = ChannelStore.getChannel(message.channel_id);
+    const obj2 = { other_user_id: authorId };
+    const track = AnalyticsUtilsDefault.track;
+    const CHECKPOINT_CARD_CLICKED = AnalyticEvents.CHECKPOINT_CARD_CLICKED;
+    AnalyticsUtilsDefault;
+    const tmpResult = AppAnalyticsUtils;
+    const merged = Object.assign(tmpResult.collectChannelAnalyticsMetadata(channel));
+    let guild_id;
+    const collectGuildAnalyticsMetadata = AppAnalyticsUtils.collectGuildAnalyticsMetadata;
+    AppAnalyticsUtils;
+    const tmp5 = importDefault;
+    if (channel != null) {
+      guild_id = channel.guild_id;
+    }
+    const merged1 = Object.assign(collectGuildAnalyticsMetadata(guild_id));
+    track(CHECKPOINT_CARD_CLICKED, obj2);
+    tmp5(12740)("message_component");
   }
-  const merged1 = Object.assign(collectGuildAnalyticsMetadata(guild_id));
-  track(CHECKPOINT_CARD_CLICKED, obj);
 };

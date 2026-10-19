@@ -1,9 +1,9 @@
-// Module ID: 11633
-// Function ID: 11634
+// Module ID: 12822
+// Function ID: 12823
 // Name: StartupProfiler
 // Dependencies: [19, 21, 558, 576, 10, 2]
 
-// Module 11633 (StartupProfiler)
+// Module 12822 (StartupProfiler)
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { App: "App", AppContainer: "AppContainer", MainNavigator: "MainNavigator", StackNavigator: "StackNavigator", MainTabs: "MainTabs", MainDrawers: "MainDrawers", PrivateChannels: "PrivateChannels", Members: "Members", LeftPanel: "LeftPanel", Guilds: "Guilds", Channels: "Channels", RightPanel: "RightPanel", CenterPanel: "CenterPanel", Channel: "Channel", ChatView: "ChatView", Messages: "Messages" };
-let obj2 = {};
+const obj2 = {};
 function setLevels(obj, arg1) {
   for (const key10006 in obj) {
     obj2[key10006] = arg1;
@@ -22,6 +22,7 @@ function setLevels(obj, arg1) {
 }
 const obj3 = { [obj.App]: { [obj.AppContainer]: { [obj.MainNavigator]: { [obj.StackNavigator]: { [obj.MainTabs]: { [obj.MainDrawers]: { [obj.LeftPanel]: { [obj.Guilds]: {}, [obj.Channels]: {} }, [obj.RightPanel]: { [obj.Members]: {} }, [obj.CenterPanel]: { [obj.Channel]: { [obj.ChatView]: { [obj.Messages]: {} } } } } } } } } } };
 for (const key10073 in obj3) {
+  let tmp6 = key10073;
   obj2[key10073] = "";
   let tmp7 = obj3[key10073];
   let keys = Object.keys();
@@ -40,49 +41,69 @@ for (const key10073 in obj3) {
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartupProfiler(arg0) {
   let children;
   let profile;
-  let tmp3;
-  let obj = profile(576);
+  let tmp4;
+  const obj = profile(576);
   const cResult = obj.c(6);
   ({ children, profile } = arg0);
-  obj2 = AppStartPerformanceDefault;
-  obj2.mark("\u{1F3A8}", "" + obj2[profile] + profile + " render");
+  let tmp2 = AppStartPerformanceDefault;
+  let str = obj2[profile];
+  let mark = tmp2.mark;
+  if (str == null) {
+    str = "";
+  }
+  mark("\u{1F3A8}", "" + str + profile + " render");
   if (cResult[0] !== profile) {
     const fn = function o(arg0, arg1, arg2) {
-      const obj = AppStartPerformanceDefault;
-      obj.mark("\u{1F3A8}", "" + obj2[profile] + profile + " " + arg1, arg2);
+      let str = obj2[profile];
+      const mark = AppStartPerformanceDefault.mark;
+      AppStartPerformanceDefault;
+      const tmp2 = profile;
+      if (str == null) {
+        str = "";
+      }
+      mark("\u{1F3A8}", "" + str + tmp2 + " " + arg1, arg2);
     };
     cResult[0] = profile;
     cResult[1] = fn;
-    tmp3 = fn;
+    tmp4 = fn;
   } else {
-    tmp3 = cResult[1];
+    tmp4 = cResult[1];
   }
   if (cResult[2] === children) {
     if (cResult[3] === profile) {
-      let tmp4;
-      if (cResult[4] === tmp3) {
-        tmp4 = cResult[5];
+      let tmp5;
+      if (cResult[4] === tmp4) {
+        tmp5 = cResult[5];
       }
-      return tmp4;
+      return tmp5;
     }
   }
-  const tmp5 = <react.Profiler id={profile} onRender={tmp3}>{children}</react.Profiler>;
+  const tmp6 = <react.Profiler id={profile} onRender={tmp4}>{children}</react.Profiler>;
   cResult[2] = children;
   cResult[3] = profile;
-  cResult[4] = tmp3;
-  cResult[5] = tmp5;
-  tmp4 = tmp5;
+  cResult[4] = tmp4;
+  cResult[5] = tmp6;
+  tmp5 = tmp6;
 }) : (function StartupProfiler(profile) {
-  function onRender(arg0, arg1, arg2) {
-    const obj = AppStartPerformanceDefault;
-    obj.mark("\u{1F3A8}", "" + obj2[profile] + profile + " " + arg1, arg2);
-  }
   profile = profile.profile;
   const children = profile.children;
-  let obj = AppStartPerformanceDefault;
-  obj.mark("\u{1F3A8}", "" + obj2[profile] + profile + " render");
-  obj2 = { id: profile, onRender, children };
-  return <react.Profiler id={profile} onRender={onRender}>{children}</react.Profiler>;
+  const tmp = AppStartPerformanceDefault;
+  let str = obj2[profile];
+  let mark = tmp.mark;
+  if (str == null) {
+    str = "";
+  }
+  mark("\u{1F3A8}", "" + str + profile + " render");
+  return <react.Profiler id={profile} onRender={function onRender(arg0, arg1, arg2) {
+    let str = obj2[profile];
+    const mark = AppStartPerformanceDefault.mark;
+    AppStartPerformanceDefault;
+    const tmp2 = profile;
+    if (str == null) {
+      str = "";
+    }
+    mark("\u{1F3A8}", "" + str + tmp2 + " " + arg1, arg2);
+  }}>{children}</react.Profiler>;
 });
 const result = size.fileFinishedImporting("modules/app_startup/StartupProfiler.tsx");
 

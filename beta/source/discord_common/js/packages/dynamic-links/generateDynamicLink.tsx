@@ -1,13 +1,13 @@
-// Module ID: 13040
-// Function ID: 13041
+// Module ID: 13968
+// Function ID: 13969
 // Name: generateDynamicLink
-// Dependencies: [109, 32, 1364, 1279, 13041, 2]
+// Dependencies: [109, 32, 1367, 1281, 13969, 2]
 // Exports: default, generateAttemptId, parseDynamicLink
 
-// Module 13040 (generateDynamicLink)
-import v1 from "v1" /* 1279 */;
-import _modDef1364 from "module_1364" /* 1364 */;
-import getDescriptionDefault from "getDescription" /* 13041 */;
+// Module 13968 (generateDynamicLink)
+import v1 from "v1" /* 1281 */;
+import _modDef1367 from "module_1367" /* 1367 */;
+import getDescriptionDefault from "getDescription" /* 13969 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ export default function generateDynamicLink(arg0, arg1) {
   const encodeURIComponentResult1 = encodeURIComponent("discord://app/open#" + str.toString());
   const encodeURIComponentResult2 = encodeURIComponent(getDescriptionDefault());
   const regExp = new RegExp("(" + items.join("|") + ")", "ig");
-  const tmp9 = _modDef1364;
+  const tmp9 = _modDef1367;
   let match;
   if (tmp9 != null) {
     if (tmp9.ua != null) {
@@ -47,13 +47,13 @@ export default function generateDynamicLink(arg0, arg1) {
     }
   }
   const tmp12 = null != match;
-  const tmp5Result = _modDef1364;
+  const tmp5Result = _modDef1367;
   let name;
   if (tmp5Result != null) {
     name = tmp5Result.name;
   }
   const tmp15 = "Safari" === name && !tmp12;
-  const tmp5Result2 = _modDef1364;
+  const tmp5Result2 = _modDef1367;
   let family;
   if (tmp5Result2 != null) {
     const os = tmp5Result2.os;

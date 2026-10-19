@@ -1,122 +1,124 @@
 // Module ID: 1731
 // Function ID: 1732
-// Dependencies: [1667, 1696, 1732, 1733, 1734]
-// Exports: withDecay
+// Dependencies: [1698, 1662]
+// Exports: withClamp
 
 // Module 1731
-import ReanimatedError from "ReanimatedError" /* 1667 */;
-import rubberBandDecay from "rubberBandDecay" /* 1733 */;
-import rigidDecay from "rigidDecay" /* 1734 */;
+import react_native from "react-native" /* 1662 */;
+import _mod1698 from "module_1698" /* 1698 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-function validateConfig(clamp) {
-  if (clamp.clamp) {
-    const _Array = Array;
-    if (Array.isArray(clamp.clamp)) {
-      if (2 !== clamp.clamp.length) {
-        const _HermesInternal3 = HermesInternal;
-        const self7 = this;
-        const self8 = this;
-        const reanimatedError = new ReanimatedError.ReanimatedError("`clamp array` must contain 2 items but is given " + clamp.clamp.length + ".");
-        throw reanimatedError;
-      }
-    } else {
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const reanimatedError1 = new ReanimatedError.ReanimatedError("`config.clamp` must be an array but is " + typeof clamp.clamp + ".");
-      throw reanimatedError1;
+const __initData = { code: "function pnpm_clampTs2(){const{_animationToClamp,config,recognizePrefixSuffix,logger,getReduceMotionForAnimation}=this.__closure;const animationToClamp=typeof _animationToClamp==='function'?_animationToClamp():_animationToClamp;const strippedMin=config.min===undefined?undefined:recognizePrefixSuffix(config.min).strippedValue;const strippedMax=config.max===undefined?undefined:recognizePrefixSuffix(config.max).strippedValue;function clampOnFrame(animation,now){const finished=animationToClamp.onFrame(animationToClamp,now);if(animationToClamp.current===undefined){logger.warn(\"Error inside 'withClamp' animation, the inner animation has invalid current value\");return true;}else{const{prefix:prefix,strippedValue:strippedValue,suffix:suffix}=recognizePrefixSuffix(animationToClamp.current);let newValue;if(strippedMax!==undefined&&strippedMax<strippedValue){newValue=strippedMax;}else if(strippedMin!==undefined&&strippedMin>strippedValue){newValue=strippedMin;}else{newValue=strippedValue;}animation.current=typeof animationToClamp.current==='number'?newValue:\"\"+(prefix===undefined?'':prefix)+newValue+(suffix===undefined?'':suffix);}return finished;}function onStart(animation,value,now,previousAnimation){animation.current=value;animation.previousAnimation=animationToClamp;const animationBeforeClamped=previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.previousAnimation;if(config.max!==undefined&&config.min!==undefined&&config.max<config.min){logger.warn('Wrong config was provided to withClamp. Min value is bigger than max');}animationToClamp.onStart(animationToClamp,(animationBeforeClamped===null||animationBeforeClamped===void 0?void 0:animationBeforeClamped.current)||value,now,animationBeforeClamped);}const callback=function(finished){if(animationToClamp.callback){animationToClamp.callback(finished);}};return{isHigherOrder:true,onFrame:clampOnFrame,onStart:onStart,current:animationToClamp.current,callback:callback,previousAnimation:null,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};}" };
+let fn = function n(config, _animationToClamp) {
+  _require = config;
+  dependencyMap = _animationToClamp;
+  let obj = require("module_1698");
+  const fn = function u() {
+    let obj4;
+    let strippedValue;
+    let tmpResult = strippedValue;
+    if (typeof strippedValue === "function") {
+      tmpResult = tmp();
     }
-  }
-  if (clamp.velocityFactor <= 0) {
-    const _HermesInternal2 = HermesInternal;
-    const self5 = this;
-    const self6 = this;
-    const reanimatedError2 = new ReanimatedError.ReanimatedError("`config.velocityFactor` must be greater then 0 but is " + clamp.velocityFactor + ".");
-    throw reanimatedError2;
-  } else if (clamp.rubberBandEffect) {
-    if (!clamp.clamp) {
-      const self3 = this;
-      const self4 = this;
-      const reanimatedError3 = new ReanimatedError.ReanimatedError("You need to set `clamp` property when using `rubberBandEffect`.");
-      throw reanimatedError3;
+    config = tmpResult;
+    let range = config;
+    strippedValue = undefined;
+    if (undefined !== config.min) {
+      let tmp4 = config;
+      let tmp5 = _animationToClamp;
+      let obj = config(_animationToClamp[0]);
+      strippedValue = obj.recognizePrefixSuffix(range.min).strippedValue;
     }
-  }
-}
-validateConfig.__closure = {};
-validateConfig.__workletHash = 14532293098342;
-validateConfig.__initData = { code: "function validateConfig_Pnpm_decayTs1(config){if(config.clamp){if(!Array.isArray(config.clamp)){throw new ReanimatedError(\"`config.clamp` must be an array but is \"+typeof config.clamp+\".\");}if(config.clamp.length!==2){throw new ReanimatedError(\"`clamp array` must contain 2 items but is given \"+config.clamp.length+\".\");}}if(config.velocityFactor<=0){throw new ReanimatedError(\"`config.velocityFactor` must be greater then 0 but is \"+config.velocityFactor+\".\");}if(config.rubberBandEffect&&!config.clamp){throw new ReanimatedError('You need to set `clamp` property when using `rubberBandEffect`.');}}" };
-const __initData = { code: "function pnpm_decayTs3(){const{userConfig,isValidRubberBandConfig,rubberBandDecay,rigidDecay,validateConfig,callback,getReduceMotionForAnimation}=this.__closure;var _config$velocity;const config={deceleration:0.998,velocityFactor:1,velocity:0,rubberBandFactor:0.6};if(userConfig){Object.keys(userConfig).forEach(function(key){return config[key]=userConfig[key];});}const decay=isValidRubberBandConfig(config)?function(animation,now){return rubberBandDecay(animation,now,config);}:function(animation,now){return rigidDecay(animation,now,config);};function onStart(animation,value,now){const initialVelocity=config.velocity;animation.current=value;animation.lastTimestamp=now;animation.startTimestamp=now;animation.initialVelocity=initialVelocity;animation.velocity=initialVelocity;validateConfig(config);if(animation.reduceMotion&&config.clamp){if(value<config.clamp[0]){animation.current=config.clamp[0];}else if(value>config.clamp[1]){animation.current=config.clamp[1];}}}return{onFrame:decay,onStart:onStart,callback:callback,velocity:(_config$velocity=config.velocity)!==null&&_config$velocity!==void 0?_config$velocity:0,initialVelocity:0,current:undefined,lastTimestamp:0,startTimestamp:0,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};}" };
-let fn = function n(userConfig, callback) {
-  _require = userConfig;
-  dependencyMap = callback;
-  let obj = require("module_1696");
-  const fn = function c() {
-    let num;
-    let tmp4Result;
-    let obj = { deceleration: 0.998, velocityFactor: 1, velocity: 0, rubberBandFactor: 0.6 };
-    if (obj) {
-      const _Object = Object;
-      const keys = Object.keys(tmp);
-      const item = keys.forEach((item) => {
-        obj[item] = userConfig[item];
-        return userConfig[item];
-      });
+    let strippedValue1;
+    if (undefined !== range.max) {
+      const obj2 = config(_animationToClamp[0]);
+      strippedValue1 = obj2.recognizePrefixSuffix(range.max).strippedValue;
     }
-    const obj2 = userConfig(callback[2]);
     const obj3 = {
-      onFrame: obj2.isValidRubberBandConfig(obj) ? ((current, lastTimestamp) => {
-        obj = rubberBandDecay;
-        return obj.rubberBandDecay(current, lastTimestamp, obj);
-      }) : ((initialVelocity, lastTimestamp) => {
-        obj = rigidDecay;
-        return obj.rigidDecay(initialVelocity, lastTimestamp, obj);
-      }),
-      onStart(reduceMotion, current, lastTimestamp) {
-        const velocity = obj.velocity;
-        reduceMotion.current = current;
-        reduceMotion.lastTimestamp = lastTimestamp;
-        reduceMotion.startTimestamp = lastTimestamp;
-        reduceMotion.initialVelocity = velocity;
-        reduceMotion.velocity = velocity;
-        validateConfig(obj);
-        const tmp3 = reduceMotion.reduceMotion && obj.clamp;
-        if (tmp3) {
-          if (current < obj.clamp[0]) {
-            reduceMotion.current = obj.clamp[0];
-          } else if (current > obj.clamp[1]) {
-            reduceMotion.current = obj.clamp[1];
+      isHigherOrder: true,
+      onFrame: function clampOnFrame(arg0, arg1) {
+        let prefix;
+        let suffix;
+        if (undefined === previousAnimation.current) {
+          const logger = react_native.logger;
+          logger.warn("Error inside 'withClamp' animation, the inner animation has invalid current value");
+          return true;
+        } else {
+          const obj = _mod1698;
+          const result = obj.recognizePrefixSuffix(tmp.current);
+          ({ prefix, strippedValue, suffix } = result);
+          let tmp5 = strippedValue1;
+          if (undefined === strippedValue1) {
+            let tmp4 = strippedValue;
+            if (undefined !== strippedValue) {
+              tmp4 = strippedValue;
+              if (strippedValue > strippedValue) {
+                tmp4 = tmp3;
+              }
+            }
+            tmp5 = tmp4;
           }
+          let combined = tmp5;
+          if (typeof previousAnimation.current !== "number") {
+            let str = "";
+            if (undefined !== prefix) {
+              str = prefix;
+            }
+            let str2 = "";
+            if (undefined !== suffix) {
+              str2 = suffix;
+            }
+            const _HermesInternal = HermesInternal;
+            combined = "" + str + tmp5 + str2;
+          }
+          arg0.current = combined;
+          return tmp2;
         }
       },
-      callback,
-      velocity: num,
-      initialVelocity: 0,
-      current: "enabled",
-      lastTimestamp: null,
-      startTimestamp: "-1",
-      reduceMotion: tmp4Result.getReduceMotionForAnimation(obj.reduceMotion)
+      onStart(arg0, current, arg2, previousAnimation) {
+        arg0.current = current;
+        arg0.previousAnimation = previousAnimation;
+        previousAnimation = undefined;
+        if (previousAnimation != null) {
+          previousAnimation = previousAnimation.previousAnimation;
+        }
+        const range = previousAnimation;
+        const tmp3 = undefined !== previousAnimation.max && undefined !== range.min && range.max < range.min;
+        if (tmp3) {
+          const logger = react_native.logger;
+          logger.warn("Wrong config was provided to withClamp. Min value is bigger than max");
+        }
+        current = undefined;
+        const onStart = tmp.onStart;
+        if (previousAnimation != null) {
+          current = previousAnimation.current;
+        }
+        onStart(previousAnimation, current, arg2, previousAnimation);
+      },
+      current: tmpResult.current,
+      callback(arg0) {
+        const obj = previousAnimation;
+        if (previousAnimation.callback) {
+          obj.callback(arg0);
+        }
+      },
+      previousAnimation: null,
+      reduceMotion: obj4.getReduceMotionForAnimation(range.reduceMotion)
     };
-    num = obj.velocity;
-    const tmp4 = userConfig;
-    const tmp5 = callback;
-    if (num == null) {
-      num = 0;
-    }
-    tmp4Result = tmp4(tmp5[1]);
+    obj4 = config(_animationToClamp[0]);
     return obj3;
   };
-  let obj2 = { userConfig, isValidRubberBandConfig: require("VELOCITY_EPS").isValidRubberBandConfig, rubberBandDecay: require("rubberBandDecay").rubberBandDecay, rigidDecay: require("rigidDecay").rigidDecay, validateConfig, callback, getReduceMotionForAnimation: require("module_1696").getReduceMotionForAnimation };
+  let obj2 = { _animationToClamp, config, recognizePrefixSuffix: require("module_1698").recognizePrefixSuffix, logger: require("react-native").logger, getReduceMotionForAnimation: require("module_1698").getReduceMotionForAnimation };
   fn.__closure = obj2;
-  fn.__workletHash = 17099614658252;
+  fn.__workletHash = 9293031098818;
   fn.__initData = __initData;
-  return obj.defineAnimation(0, fn);
+  return obj.defineAnimation(_animationToClamp, fn);
 };
-let obj = { defineAnimation: require("module_1696").defineAnimation, isValidRubberBandConfig: require("VELOCITY_EPS").isValidRubberBandConfig, rubberBandDecay: require("rubberBandDecay").rubberBandDecay, rigidDecay: require("rigidDecay").rigidDecay, validateConfig, getReduceMotionForAnimation: require("module_1696").getReduceMotionForAnimation };
+let obj = { defineAnimation: require("module_1698").defineAnimation, recognizePrefixSuffix: require("module_1698").recognizePrefixSuffix, logger: require("react-native").logger, getReduceMotionForAnimation: require("module_1698").getReduceMotionForAnimation };
 fn.__closure = obj;
-fn.__workletHash = 3913201228611;
-fn.__initData = { code: "function pnpm_decayTs2(userConfig,callback){const{defineAnimation,isValidRubberBandConfig,rubberBandDecay,rigidDecay,validateConfig,getReduceMotionForAnimation}=this.__closure;return defineAnimation(0,function(){'worklet';var _config$velocity;const config={deceleration:0.998,velocityFactor:1,velocity:0,rubberBandFactor:0.6};if(userConfig){Object.keys(userConfig).forEach(function(key){return config[key]=userConfig[key];});}const decay=isValidRubberBandConfig(config)?function(animation,now){return rubberBandDecay(animation,now,config);}:function(animation,now){return rigidDecay(animation,now,config);};function onStart(animation,value,now){const initialVelocity=config.velocity;animation.current=value;animation.lastTimestamp=now;animation.startTimestamp=now;animation.initialVelocity=initialVelocity;animation.velocity=initialVelocity;validateConfig(config);if(animation.reduceMotion&&config.clamp){if(value<config.clamp[0]){animation.current=config.clamp[0];}else if(value>config.clamp[1]){animation.current=config.clamp[1];}}}return{onFrame:decay,onStart:onStart,callback:callback,velocity:(_config$velocity=config.velocity)!==null&&_config$velocity!==void 0?_config$velocity:0,initialVelocity:0,current:undefined,lastTimestamp:0,startTimestamp:0,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};});}" };
+fn.__workletHash = 2452826107198;
+fn.__initData = { code: "function pnpm_clampTs1(config,_animationToClamp){const{defineAnimation,recognizePrefixSuffix,logger,getReduceMotionForAnimation}=this.__closure;return defineAnimation(_animationToClamp,function(){'worklet';const animationToClamp=typeof _animationToClamp==='function'?_animationToClamp():_animationToClamp;const strippedMin=config.min===undefined?undefined:recognizePrefixSuffix(config.min).strippedValue;const strippedMax=config.max===undefined?undefined:recognizePrefixSuffix(config.max).strippedValue;function clampOnFrame(animation,now){const finished=animationToClamp.onFrame(animationToClamp,now);if(animationToClamp.current===undefined){logger.warn(\"Error inside 'withClamp' animation, the inner animation has invalid current value\");return true;}else{const{prefix:prefix,strippedValue:strippedValue,suffix:suffix}=recognizePrefixSuffix(animationToClamp.current);let newValue;if(strippedMax!==undefined&&strippedMax<strippedValue){newValue=strippedMax;}else if(strippedMin!==undefined&&strippedMin>strippedValue){newValue=strippedMin;}else{newValue=strippedValue;}animation.current=typeof animationToClamp.current==='number'?newValue:\"\"+(prefix===undefined?'':prefix)+newValue+(suffix===undefined?'':suffix);}return finished;}function onStart(animation,value,now,previousAnimation){animation.current=value;animation.previousAnimation=animationToClamp;const animationBeforeClamped=previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.previousAnimation;if(config.max!==undefined&&config.min!==undefined&&config.max<config.min){logger.warn('Wrong config was provided to withClamp. Min value is bigger than max');}animationToClamp.onStart(animationToClamp,(animationBeforeClamped===null||animationBeforeClamped===void 0?void 0:animationBeforeClamped.current)||value,now,animationBeforeClamped);}const callback=function(finished){if(animationToClamp.callback){animationToClamp.callback(finished);}};return{isHigherOrder:true,onFrame:clampOnFrame,onStart:onStart,current:animationToClamp.current,callback:callback,previousAnimation:null,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};});}" };
 
-export const withDecay = fn;
+export const withClamp = fn;

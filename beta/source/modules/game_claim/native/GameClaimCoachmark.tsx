@@ -1,23 +1,23 @@
-// Module ID: 16631
-// Function ID: 16632
+// Module ID: 17318
+// Function ID: 17319
 // Name: GameClaimCoachmark
-// Dependencies: [5, 19, 17, 1085, 2062, 21, 587, 16632, 10516, 5384, 5092, 558, 576, 16633, 1126, 13261, 6208, 6185, 5088, 7701, 5379, 7034, 7038, 6182, 2]
+// Dependencies: [5, 19, 17, 1087, 2065, 21, 587, 17319, 10839, 5484, 5191, 558, 576, 17320, 1128, 14153, 6485, 6462, 5187, 7972, 5479, 7309, 7313, 6459, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 16631 (GameClaimCoachmark)
+// Module 17318 (GameClaimCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import ButtonConstants from "ButtonConstants" /* 5384 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10516 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 13261 */;
-import GameClaimCardStack from "GameClaimCardStack" /* 16632 */;
-import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 16633 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
+import ButtonConstants from "ButtonConstants" /* 5484 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10839 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14153 */;
+import GameClaimCardStack from "GameClaimCardStack" /* 17319 */;
+import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 17320 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -34,14 +34,14 @@ let obj4;
 let size;
 let tmp2;
 let tmp8;
-const intl5 = tmp2(1126);
-const Text_Text = tmp2(5088);
-const components_Button_Button = tmp2(5379);
-const Card_Card = tmp2(6182);
-const Pressables = tmp2(6185);
-const XSmallIcon = tmp2(6208);
-const LinkExternalSmallIcon = tmp2(7701);
-const GameClaimCardStackDefault = tmp8(16632);
+const intl5 = tmp2(1128);
+const Text_Text = tmp2(5187);
+const components_Button_Button = tmp2(5479);
+const Card_Card = tmp2(6459);
+const Pressables = tmp2(6462);
+const XSmallIcon = tmp2(6485);
+const LinkExternalSmallIcon = tmp2(7972);
+const GameClaimCardStackDefault = tmp8(17319);
 const View = react_native.View;
 ({ GuildFeatures: hasOwnProperty, RelativeMarketingURLs: metroRequire } = Constants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -70,14 +70,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const cResult = obj.c(36);
   ({ guild, markAsDismissed } = arg0);
   const tmp4 = closure_13();
-  let obj2 = markAsDismissed(16633);
+  let obj2 = markAsDismissed(17320);
   let first = obj2.useUnclaimedGameIdsForGuild(guild.id)[0];
   if (first == null) {
     first = null;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(markAsDismissed(1126).t.VQq92a);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(markAsDismissed(1128).t.VQq92a);
     cResult[0] = stringResult;
     first1 = stringResult;
   } else {
@@ -96,9 +96,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       const features = guild.features;
       const tmp11 = constants;
       const hasItem = features.has(constants.VERIFIED);
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const string = intl2.string;
-      const t = tmp(1126).t;
+      const t = tmp(1128).t;
       if (hasItem) {
         stringResult1 = string(t.uUARXe);
       } else {
@@ -123,7 +123,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp17 = closure_8(markAsDismissed(6208).XSmallIcon, { size: "sm", color: "text-default" });
+      const tmp17 = closure_8(markAsDismissed(6485).XSmallIcon, { size: "sm", color: "text-default" });
       cResult[5] = tmp17;
       tmp15 = tmp17;
     } else {
@@ -147,9 +147,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       }
       const centeredText = tmp4.centeredText;
       if (cResult[11] !== gameName) {
-        const intl3 = tmp(1126).intl;
+        const intl3 = tmp(1128).intl;
         let obj4 = { gameName };
-        const formatResult = intl3.format(markAsDismissed(1126).t.Q11WTQ, obj4);
+        const formatResult = intl3.format(markAsDismissed(1128).t.Q11WTQ, obj4);
         cResult[11] = gameName;
         cResult[12] = formatResult;
         tmp24 = formatResult;
@@ -177,9 +177,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             const _Symbol2 = Symbol;
             const cta = tmp4.cta;
             if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl4 = tmp(1126).intl;
-              const stringResult2 = intl4.string(markAsDismissed(1126).t["2u6ZlY"]);
-              const tmp37 = closure_8(markAsDismissed(7701).LinkExternalSmallIcon, { size: "xs", color: "white" });
+              const intl4 = tmp(1128).intl;
+              const stringResult2 = intl4.string(markAsDismissed(1128).t["2u6ZlY"]);
+              const tmp37 = closure_8(markAsDismissed(7972).LinkExternalSmallIcon, { size: "xs", color: "white" });
               cResult[22] = stringResult2;
               cResult[23] = tmp37;
               tmp34 = tmp37;
@@ -247,7 +247,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                               }
                             })
               };
-              const Button = tmp(5379).Button;
+              const Button = tmp(5479).Button;
               const tmp41 = closure_8(Button, obj5);
               cResult[24] = markAsDismissed;
               cResult[25] = tmp41;
@@ -277,7 +277,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               }
               const obj6 = { variant: "secondary", style: card, children: items };
               items = [tmp18, tmp21, tmp26, tmp30, tmp42];
-              const tmp48 = closure_9(markAsDismissed(6182).Card, obj6);
+              const tmp48 = closure_9(markAsDismissed(6459).Card, obj6);
               cResult[29] = tmp4.card;
               cResult[30] = tmp26;
               cResult[31] = tmp30;
@@ -295,7 +295,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             tmp42 = tmp45;
           }
           const obj8 = { variant: "text-sm/normal", color: "text-overlay-light", style: tmp29, children: tmp10 };
-          const tmp32 = closure_8(markAsDismissed(5088).Text, obj8);
+          const tmp32 = closure_8(markAsDismissed(5187).Text, obj8);
           cResult[19] = tmp10;
           cResult[20] = tmp29;
           cResult[21] = tmp32;
@@ -309,14 +309,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         tmp29 = items1;
       }
       const obj9 = { variant: "text-md/medium", color: "text-overlay-light", style: centeredText, children: tmp24 };
-      const tmp28 = closure_8(markAsDismissed(5088).Text, obj9);
+      const tmp28 = closure_8(markAsDismissed(5187).Text, obj9);
       cResult[13] = tmp4.centeredText;
       cResult[14] = tmp24;
       cResult[15] = tmp28;
       tmp26 = tmp28;
     }
     const obj10 = { accessibilityRole: "button", onPress: tmp14, style: tmp4.closeButton, children: tmp15 };
-    const tmp20 = closure_8(markAsDismissed(6185).PressableOpacity, obj10);
+    const tmp20 = closure_8(markAsDismissed(6462).PressableOpacity, obj10);
     cResult[6] = tmp4.closeButton;
     cResult[7] = tmp14;
     cResult[8] = tmp20;

@@ -1,11 +1,11 @@
-// Module ID: 8374
-// Function ID: 8375
+// Module ID: 8652
+// Function ID: 8653
 // Name: VideoBackgroundProfileFetchExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1455, 558, 576, 2]
 
-// Module 8374 (VideoBackgroundProfileFetchExperiment)
+// Module 8652 (VideoBackgroundProfileFetchExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

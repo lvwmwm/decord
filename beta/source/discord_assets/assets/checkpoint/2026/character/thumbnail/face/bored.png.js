@@ -1,0 +1,11 @@
+// Module ID: 5770
+// Function ID: 5771
+// Dependencies: [2]
+
+// Module 5770
+import size from "module_2" /* 2 */;
+
+const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/face/bored.png.js");
+
+export default "https://cdn.discordapp.com/assets/content/9b2515211d96d1196770490153d27ae0db8d404a8458294f5ebeba9eb33058cc.png";
+export const metadata = { fileBytes: 12623 };

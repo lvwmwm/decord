@@ -1,19 +1,19 @@
-// Module ID: 18482
-// Function ID: 18483
+// Module ID: 18878
+// Function ID: 18879
 // Name: FinishingTouchesScreen
-// Dependencies: [32, 19, 17, 8634, 2119, 8060, 1085, 21, 558, 576, 4818, 587, 504, 4755, 8633, 1097, 18424, 18471, 18470, 1126, 5088, 6157, 6896, 18480, 6265, 5377, 2128, 18468, 2]
+// Dependencies: [32, 19, 17, 8911, 2122, 8334, 1087, 21, 558, 576, 4913, 587, 504, 4850, 8910, 1099, 18820, 18867, 18866, 1128, 5187, 5128, 7172, 18876, 6542, 5477, 2131, 18864, 2]
 
-// Module 18482 (FinishingTouchesScreen)
+// Module 18878 (FinishingTouchesScreen)
 import react_native from "react-native" /* 17 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8633 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8910 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
-import GuildRoleStore from "GuildRoleStore" /* 2119 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8060 */;
-import Constants from "Constants" /* 1085 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8911 */;
+import GuildRoleStore from "GuildRoleStore" /* 2122 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8334 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -56,7 +56,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
   const cResult = obj.c(59);
   let obj2 = react;
   const ref = react.useRef(null);
-  let obj3 = guild(4818);
+  let obj3 = guild(4913);
   const token = obj3.useToken(defaultMessageNotifications(587).modules.mobile.TABLE_ROW_PADDING);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [GuildSettingsStore];
@@ -159,13 +159,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
     } else {
       tmp28 = cResult[7];
     }
-    const tmp29 = defaultMessageNotifications(18471)();
-    const tmpResult2 = tmp(18470);
+    const tmp29 = defaultMessageNotifications(18867)();
+    const tmpResult2 = tmp(18866);
     const enableCommunitySharedStyles = tmpResult2.useEnableCommunitySharedStyles();
     const _Symbol2 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
-      const stringResult = intl.string(tmp(1126).t.XGl4ba);
+      const intl = tmp(1128).intl;
+      const stringResult = intl.string(tmp(1128).t.XGl4ba);
       cResult[8] = stringResult;
       tmp32 = stringResult;
     } else {
@@ -174,9 +174,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
     const _Symbol3 = Symbol;
     const content = enableCommunitySharedStyles.content;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      let obj4 = { ref, accessibilityRole: "header", variant: "text-md/semibold", color: "text-subtle", children: intl2.formatToPlainString(tmp(1126).t.tInpJj, { number: 3, total: 3 }) };
-      const Text = tmp(5088).Text;
-      intl2 = tmp(1126).intl;
+      let obj4 = { ref, accessibilityRole: "header", variant: "text-md/semibold", color: "text-subtle", children: intl2.formatToPlainString(tmp(1128).t.tInpJj, { number: 3, total: 3 }) };
+      const Text = tmp(5187).Text;
+      intl2 = tmp(1128).intl;
       const tmp36 = closure_15(Text, obj4);
       cResult[9] = tmp36;
       tmp34 = tmp36;
@@ -185,7 +185,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
     }
     if (cResult[10] !== tmp29.finishingTouches) {
       const obj5 = { resizeMode: "contain", source: tmp29.finishingTouches };
-      const tmp39 = closure_15(defaultMessageNotifications(6157), obj5);
+      const tmp39 = closure_15(defaultMessageNotifications(5128), obj5);
       cResult[10] = tmp29.finishingTouches;
       cResult[11] = tmp39;
       tmp37 = tmp39;
@@ -195,8 +195,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
     const _Symbol4 = Symbol;
     const header = enableCommunitySharedStyles.header;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1126).intl;
-      const stringResult1 = intl3.string(tmp(1126).t["Pj/s/a"]);
+      const intl3 = tmp(1128).intl;
+      const stringResult1 = intl3.string(tmp(1128).t["Pj/s/a"]);
       cResult[12] = stringResult1;
       tmp40 = stringResult1;
     } else {
@@ -204,7 +204,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
     }
     if (cResult[13] !== enableCommunitySharedStyles.header) {
       const obj6 = { style: header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp40 };
-      const tmp44 = closure_15(tmp(5088).Heading, obj6);
+      const tmp44 = closure_15(tmp(5187).Heading, obj6);
       cResult[13] = enableCommunitySharedStyles.header;
       cResult[14] = tmp44;
       tmp42 = tmp44;
@@ -214,8 +214,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
     const _Symbol5 = Symbol;
     const description = enableCommunitySharedStyles.description;
     if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1126).intl;
-      const stringResult2 = intl4.string(tmp(1126).t["IL7/no"]);
+      const intl4 = tmp(1128).intl;
+      const stringResult2 = intl4.string(tmp(1128).t["IL7/no"]);
       cResult[15] = stringResult2;
       tmp45 = stringResult2;
     } else {
@@ -223,7 +223,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
     }
     if (cResult[16] !== enableCommunitySharedStyles.description) {
       const obj7 = { style: description, variant: "text-md/medium", color: "text-subtle", children: tmp45 };
-      const tmp49 = closure_15(tmp(5088).Text, obj7);
+      const tmp49 = closure_15(tmp(5187).Text, obj7);
       cResult[16] = enableCommunitySharedStyles.description;
       cResult[17] = tmp49;
       tmp47 = tmp49;
@@ -249,13 +249,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
           }
           const _Symbol6 = Symbol;
           if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl5 = tmp(1126).intl;
+            const intl5 = tmp(1128).intl;
             const obj9 = {
               infoHook() {
                           return null;
                         }
             };
-            const formatResult = intl5.format(tmp(1126).t.K8Eg4P, obj9);
+            const formatResult = intl5.format(tmp(1128).t.K8Eg4P, obj9);
             cResult[25] = formatResult;
             tmp55 = formatResult;
           } else {
@@ -279,13 +279,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
                 }
                 const _Symbol7 = Symbol;
                 if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
-                  const intl6 = tmp(1126).intl;
+                  const intl6 = tmp(1128).intl;
                   const obj10 = {
                     infoHook() {
                                       return null;
                                     }
                   };
-                  const formatResult1 = intl6.format(tmp(1126).t.v8qCoG, obj10);
+                  const formatResult1 = intl6.format(tmp(1128).t.v8qCoG, obj10);
                   cResult[33] = formatResult1;
                   tmp66 = formatResult1;
                 } else {
@@ -311,8 +311,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
                       }
                       const _Symbol8 = Symbol;
                       if (cResult[43] === Symbol.for("react.memo_cache_sentinel")) {
-                        const intl7 = tmp(1126).intl;
-                        const stringResult3 = intl7.string(tmp(1126).t["k+b2Cf"]);
+                        const intl7 = tmp(1128).intl;
+                        const stringResult3 = intl7.string(tmp(1128).t["k+b2Cf"]);
                         cResult[43] = stringResult3;
                         tmp77 = stringResult3;
                       } else {
@@ -320,16 +320,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
                       }
                       const _Symbol9 = Symbol;
                       if (cResult[44] === Symbol.for("react.memo_cache_sentinel")) {
-                        const intl8 = tmp(1126).intl;
-                        const stringResult4 = intl8.string(tmp(1126).t["9AG3wI"]);
+                        const intl8 = tmp(1128).intl;
+                        const stringResult4 = intl8.string(tmp(1128).t["9AG3wI"]);
                         cResult[44] = stringResult4;
                         tmp79 = stringResult4;
                       } else {
                         tmp79 = cResult[44];
                       }
                       if (cResult[45] !== tmp15) {
-                        const obj11 = { title: tmp77, hasIcons: false, children: closure_15(tmp(6896).TableSwitchRow, obj12) };
-                        const TableRowGroup = tmp(6265).TableRowGroup;
+                        const obj11 = { title: tmp77, hasIcons: false, children: closure_15(tmp(7172).TableSwitchRow, obj12) };
+                        const TableRowGroup = tmp(6542).TableRowGroup;
                         obj12 = { label: tmp79, value: tmp15, onValueChange: tmp16 };
                         const tmp83 = closure_15(TableRowGroup, obj11);
                         cResult[45] = tmp15;
@@ -349,12 +349,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
                           const _Symbol10 = Symbol;
                           const formHint = enableCommunitySharedStyles.formHint;
                           if (cResult[51] === Symbol.for("react.memo_cache_sentinel")) {
-                            const intl9 = tmp(1126).intl;
+                            const intl9 = tmp(1128).intl;
                             const format = intl9.format;
                             const obj13 = { communityGuidelines: tmp5Result.getArticleURL(constants.PUBLIC_GUILD_GUILDLINES), typesOfGuilds: tmp5Result2.getArticleURL(constants.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES) };
-                            const prop3 = tmp(1126).t["BwbW/Q"];
-                            tmp5Result = defaultMessageNotifications(2128);
-                            tmp5Result2 = defaultMessageNotifications(2128);
+                            const prop3 = tmp(1128).t["BwbW/Q"];
+                            tmp5Result = defaultMessageNotifications(2131);
+                            tmp5Result2 = defaultMessageNotifications(2131);
                             const formatResult2 = format(prop3, obj13);
                             cResult[51] = formatResult2;
                             tmp87 = formatResult2;
@@ -363,7 +363,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
                           }
                           if (cResult[52] !== enableCommunitySharedStyles.formHint) {
                             const obj14 = { style: formHint, variant: "text-xs/medium", color: "text-subtle", children: tmp87 };
-                            const tmp93 = closure_15(tmp(5088).Text, obj14);
+                            const tmp93 = closure_15(tmp(5187).Text, obj14);
                             cResult[52] = enableCommunitySharedStyles.formHint;
                             cResult[53] = tmp93;
                             tmp91 = tmp93;
@@ -381,8 +381,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
                               }
                             }
                           }
-                          const obj15 = { headerRef: ref, currentStep: tmp(18468).EnableCommunityModalSteps.STEP_3, onSuccess: tmp28, disableNextStep: !tmp15, buttonText: tmp32, children: items1 };
-                          const EnableCommunityModalScreen = tmp(18468).EnableCommunityModalScreen;
+                          const obj15 = { headerRef: ref, currentStep: tmp(18864).EnableCommunityModalSteps.STEP_3, onSuccess: tmp28, disableNextStep: !tmp15, buttonText: tmp32, children: items1 };
+                          const EnableCommunityModalScreen = tmp(18864).EnableCommunityModalScreen;
                           items1 = [tmp50, tmp84, tmp91];
                           const tmp96 = closure_16(EnableCommunityModalScreen, obj15);
                           cResult[54] = tmp50;
@@ -395,7 +395,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
                       }
                       const obj16 = { spacing: 24, style: tmp54, children: items2 };
                       items2 = [tmp74, tmp81];
-                      const tmp86 = closure_16(tmp(5377).Stack, obj16);
+                      const tmp86 = closure_16(tmp(5477).Stack, obj16);
                       cResult[47] = tmp54;
                       cResult[48] = tmp74;
                       cResult[49] = tmp81;
@@ -404,28 +404,28 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
                     }
                     const obj17 = { hasIcons: false, children: items3 };
                     items3 = [tmp63, tmp71];
-                    const tmp76 = closure_16(tmp(6265).TableRowGroup, obj17);
+                    const tmp76 = closure_16(tmp(6542).TableRowGroup, obj17);
                     cResult[40] = tmp63;
                     cResult[41] = tmp71;
                     cResult[42] = tmp76;
                     tmp74 = tmp76;
                   }
                   const obj18 = { formSwitchDisabled: first1, children: tmp68 };
-                  const tmp73 = closure_15(defaultMessageNotifications(18480), obj18);
+                  const tmp73 = closure_15(defaultMessageNotifications(18876), obj18);
                   cResult[37] = first1;
                   cResult[38] = tmp68;
                   cResult[39] = tmp73;
                   tmp71 = tmp73;
                 }
                 const obj19 = { label: tmp66, value: tmp21, disabled: first1, onValueChange: tmp22 };
-                const tmp70 = closure_15(tmp(6896).TableSwitchRow, obj19);
+                const tmp70 = closure_15(tmp(7172).TableSwitchRow, obj19);
                 cResult[34] = first1;
                 cResult[35] = tmp21;
                 cResult[36] = tmp70;
                 tmp68 = tmp70;
               }
               const obj20 = { formSwitchDisabled: defaultMessageNotifications === ONLY_MENTIONS, children: tmp60 };
-              const tmp65 = closure_15(defaultMessageNotifications(18480), obj20);
+              const tmp65 = closure_15(defaultMessageNotifications(18876), obj20);
               cResult[30] = defaultMessageNotifications === ONLY_MENTIONS;
               cResult[31] = tmp60;
               cResult[32] = tmp65;
@@ -433,7 +433,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
             }
           }
           const obj21 = { label: tmp55, value: prop2 === constants2.ONLY_MENTIONS, disabled: defaultMessageNotifications === ONLY_MENTIONS, onValueChange: tmp26 };
-          const tmp62 = closure_15(tmp(6896).TableSwitchRow, obj21);
+          const tmp62 = closure_15(tmp(7172).TableSwitchRow, obj21);
           cResult[26] = defaultMessageNotifications === ONLY_MENTIONS;
           cResult[27] = tmp26;
           cResult[28] = prop2 === constants2.ONLY_MENTIONS;
@@ -542,13 +542,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
   let tmp14;
   let tmp4Result5;
   let tmp4Result6;
-  const f135142 = (item) => {
+  const f136859 = (item) => {
     const obj = PermissionUtilsAll;
     return obj.canEveryone(item, guild);
   };
   let obj = react;
   const ref = react.useRef(null);
-  let obj2 = guild(4818);
+  let obj2 = guild(4913);
   const tmp4 = defaultMessageNotifications;
   const token = obj2.useToken(defaultMessageNotifications(587).modules.mobile.TABLE_ROW_PADDING);
   let obj3 = guild(504);
@@ -562,8 +562,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
   defaultMessageNotifications = _slicedToArray(useState(prop), 1)[0];
   const ONLY_MENTIONS = constants2.ONLY_MENTIONS;
   [first1, tmp11] = obj.useState(false);
-  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_10.some(f135142)), 2);
-  const tmp12 = _slicedToArray(obj.useState(!closure_10.some(f135142)), 2);
+  [tmp13, tmp14] = _slicedToArray(obj.useState(!closure_10.some(f136859)), 2);
+  const tmp12 = _slicedToArray(obj.useState(!closure_10.some(f136859)), 2);
   const first2 = _slicedToArray(obj.useState(tmp13), 1)[0];
   let prop1;
   const tmp8 = constants2;
@@ -632,36 +632,36 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
       }
     }
   }, []);
-  const tmp20 = tmp4(18471)();
-  const tmp2Result = guild(18470);
+  const tmp20 = tmp4(18867)();
+  const tmp2Result = guild(18866);
   const enableCommunitySharedStyles = tmp2Result.useEnableCommunitySharedStyles();
-  let obj4 = { headerRef: ref, currentStep: tmp2(18468).EnableCommunityModalSteps.STEP_3, onSuccess: callback1, disableNextStep: !first1, buttonText: intl.string(tmp2(1126).t.XGl4ba), children: items3 };
-  const EnableCommunityModalScreen = tmp2(18468).EnableCommunityModalScreen;
-  intl = tmp2(1126).intl;
+  let obj4 = { headerRef: ref, currentStep: tmp2(18864).EnableCommunityModalSteps.STEP_3, onSuccess: callback1, disableNextStep: !first1, buttonText: intl.string(tmp2(1128).t.XGl4ba), children: items3 };
+  const EnableCommunityModalScreen = tmp2(18864).EnableCommunityModalScreen;
+  intl = tmp2(1128).intl;
   const obj5 = { style: enableCommunitySharedStyles.content, children: items2 };
-  const obj6 = { ref, accessibilityRole: "header", variant: "text-md/semibold", color: "text-subtle", children: intl2.formatToPlainString(guild(1126).t.tInpJj, { number: 3, total: 3 }) };
-  const Text = tmp2(5088).Text;
-  intl2 = tmp2(1126).intl;
+  const obj6 = { ref, accessibilityRole: "header", variant: "text-md/semibold", color: "text-subtle", children: intl2.formatToPlainString(guild(1128).t.tInpJj, { number: 3, total: 3 }) };
+  const Text = tmp2(5187).Text;
+  intl2 = tmp2(1128).intl;
   items2 = [closure_15(Text, obj6), , , ];
   const obj7 = { resizeMode: "contain", source: tmp20.finishingTouches };
-  items2[1] = closure_15(tmp4(6157), obj7);
-  const obj8 = { style: enableCommunitySharedStyles.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl3.string(guild(1126).t["Pj/s/a"]) };
-  const Heading = tmp2(5088).Heading;
-  intl3 = tmp2(1126).intl;
+  items2[1] = closure_15(tmp4(5128), obj7);
+  const obj8 = { style: enableCommunitySharedStyles.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl3.string(guild(1128).t["Pj/s/a"]) };
+  const Heading = tmp2(5187).Heading;
+  intl3 = tmp2(1128).intl;
   items2[2] = closure_15(Heading, obj8);
-  const obj9 = { style: enableCommunitySharedStyles.description, variant: "text-md/medium", color: "text-subtle", children: intl4.string(guild(1126).t["IL7/no"]) };
-  const Text2 = tmp2(5088).Text;
-  intl4 = tmp2(1126).intl;
+  const obj9 = { style: enableCommunitySharedStyles.description, variant: "text-md/medium", color: "text-subtle", children: intl4.string(guild(1128).t["IL7/no"]) };
+  const Text2 = tmp2(5187).Text;
+  intl4 = tmp2(1128).intl;
   items2[3] = closure_15(Text2, obj9);
   items3 = [closure_16(View, obj5), , ];
   const obj10 = { spacing: 24, style: { paddingHorizontal: token }, children: items5 };
-  const Stack = tmp2(5377).Stack;
-  const TableRowGroup = tmp2(6265).TableRowGroup;
+  const Stack = tmp2(5477).Stack;
+  const TableRowGroup = tmp2(6542).TableRowGroup;
   const obj11 = { formSwitchDisabled: defaultMessageNotifications === ONLY_MENTIONS, children: closure_15(TableSwitchRow, obj12) };
-  obj12 = { label: intl5.format(guild(1126).t.K8Eg4P, obj13), value: prop2 === tmp8.ONLY_MENTIONS, disabled: defaultMessageNotifications === ONLY_MENTIONS, onValueChange: callback };
-  const tmp4Result = tmp4(18480);
-  TableSwitchRow = tmp2(6896).TableSwitchRow;
-  intl5 = tmp2(1126).intl;
+  obj12 = { label: intl5.format(guild(1128).t.K8Eg4P, obj13), value: prop2 === tmp8.ONLY_MENTIONS, disabled: defaultMessageNotifications === ONLY_MENTIONS, onValueChange: callback };
+  const tmp4Result = tmp4(18876);
+  TableSwitchRow = tmp2(7172).TableSwitchRow;
+  intl5 = tmp2(1128).intl;
   prop2 = undefined;
   obj13 = {
     infoHook() {
@@ -674,10 +674,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
   const obj14 = { hasIcons: false, children: items4 };
   items4 = [closure_15(tmp4Result, obj11), ];
   const obj15 = { formSwitchDisabled: first2, children: closure_15(TableSwitchRow2, obj16) };
-  obj16 = { label: intl6.format(guild(1126).t.v8qCoG, obj17), value: tmp13, disabled: first2, onValueChange: tmp14 };
-  const tmp4Result4 = tmp4(18480);
-  TableSwitchRow2 = tmp2(6896).TableSwitchRow;
-  intl6 = tmp2(1126).intl;
+  obj16 = { label: intl6.format(guild(1128).t.v8qCoG, obj17), value: tmp13, disabled: first2, onValueChange: tmp14 };
+  const tmp4Result4 = tmp4(18876);
+  TableSwitchRow2 = tmp2(7172).TableSwitchRow;
+  intl6 = tmp2(1128).intl;
   obj17 = {
     infoHook() {
       return null;
@@ -685,22 +685,22 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinishingT
   };
   items4[1] = closure_15(tmp4Result4, obj15);
   items5 = [closure_16(TableRowGroup, obj14), ];
-  const obj18 = { title: intl7.string(guild(1126).t["k+b2Cf"]), hasIcons: false, children: closure_15(TableSwitchRow3, obj19) };
-  const TableRowGroup2 = tmp2(6265).TableRowGroup;
-  intl7 = tmp2(1126).intl;
-  obj19 = { label: intl8.string(guild(1126).t["9AG3wI"]), value: first1, onValueChange: tmp11 };
-  TableSwitchRow3 = tmp2(6896).TableSwitchRow;
-  intl8 = tmp2(1126).intl;
+  const obj18 = { title: intl7.string(guild(1128).t["k+b2Cf"]), hasIcons: false, children: closure_15(TableSwitchRow3, obj19) };
+  const TableRowGroup2 = tmp2(6542).TableRowGroup;
+  intl7 = tmp2(1128).intl;
+  obj19 = { label: intl8.string(guild(1128).t["9AG3wI"]), value: first1, onValueChange: tmp11 };
+  TableSwitchRow3 = tmp2(7172).TableSwitchRow;
+  intl8 = tmp2(1128).intl;
   items5[1] = closure_15(TableRowGroup2, obj18);
   items3[1] = closure_16(Stack, obj10);
   const obj20 = { style: enableCommunitySharedStyles.formHint, variant: "text-xs/medium", color: "text-subtle", children: format(prop3, obj21) };
-  const Text3 = tmp2(5088).Text;
-  const intl9 = tmp2(1126).intl;
+  const Text3 = tmp2(5187).Text;
+  const intl9 = tmp2(1128).intl;
   format = intl9.format;
   obj21 = { communityGuidelines: tmp4Result5.getArticleURL(constants.PUBLIC_GUILD_GUILDLINES), typesOfGuilds: tmp4Result6.getArticleURL(constants.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES) };
-  prop3 = tmp2(1126).t["BwbW/Q"];
-  tmp4Result5 = tmp4(2128);
-  tmp4Result6 = tmp4(2128);
+  prop3 = tmp2(1128).t["BwbW/Q"];
+  tmp4Result5 = tmp4(2131);
+  tmp4Result6 = tmp4(2131);
   items3[2] = closure_15(Text3, obj20);
   return closure_16(EnableCommunityModalScreen, obj4);
 });

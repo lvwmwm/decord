@@ -1,19 +1,19 @@
-// Module ID: 14860
-// Function ID: 14861
+// Module ID: 15623
+// Function ID: 15624
 // Name: EditButton
-// Dependencies: [19, 17, 21, 558, 576, 7569, 7980, 2]
+// Dependencies: [19, 17, 21, 558, 576, 7840, 8252, 2]
 
-// Module 14860 (EditButton)
+// Module 15623 (EditButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7980 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8252 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const IconButton2 = tmp(7569);
+const IconButton2 = tmp(7840);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditButton(arg0) {

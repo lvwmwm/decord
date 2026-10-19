@@ -1,14 +1,14 @@
-// Module ID: 12176
-// Function ID: 12177
+// Module ID: 13126
+// Function ID: 13127
 // Name: ChatInputGuardQuarantineDM
-// Dependencies: [19, 12177, 21, 558, 576, 12173, 12178, 1126, 2]
+// Dependencies: [19, 13127, 21, 558, 576, 13123, 13128, 1128, 2]
 
-// Module 12176 (ChatInputGuardQuarantineDM)
+// Module 13126 (ChatInputGuardQuarantineDM)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12173 */;
-import QuarantineConstants from "QuarantineConstants" /* 12177 */;
+import intl3 from "intl" /* 1128 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13123 */;
+import QuarantineConstants from "QuarantineConstants" /* 13127 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -21,8 +21,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     ChatInputGuardDefault;
-    const intl = tmp(1126).intl;
-    const intl2 = tmp(1126).intl;
+    const intl = tmp(1128).intl;
+    const intl2 = tmp(1128).intl;
     const obj3 = { appealLink: QUARANTINE_APPEAL_LINK };
     const tmp9 = <tmp7 type="simple-action" icon={null} message={intl.string(intl3.t.EouHwv)} subtext={intl2.format(intl3.t.PThBel, obj3)} />;
     cResult[0] = tmp9;

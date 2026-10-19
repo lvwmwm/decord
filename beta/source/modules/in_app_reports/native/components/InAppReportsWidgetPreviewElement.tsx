@@ -1,21 +1,21 @@
-// Module ID: 13563
-// Function ID: 13564
+// Module ID: 14343
+// Function ID: 14344
 // Name: InAppReportsWidgetPreviewElement
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6663, 8363, 7322, 13378, 7318, 13255, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 6940, 8641, 7592, 14158, 7588, 14148, 1128, 5187, 2]
 
-// Module 13563 (InAppReportsWidgetPreviewElement)
+// Module 14343 (InAppReportsWidgetPreviewElement)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6663 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7318 */;
-import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7322 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8363 */;
+import intl3 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6940 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7588 */;
+import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7592 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8641 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp6;
-const UserProfilePersonalWidgetCardDefault = tmp6(13378);
+const UserProfilePersonalWidgetCardDefault = tmp6(14158);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, title: { lineHeight: 16, marginBottom: 8 }, card: obj2 };
@@ -62,10 +62,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WidgetPrevie
             if (cResult[8] !== typeConsolidationEyebrow.style) {
               let stringResult;
               if (null != typeConsolidationEyebrow.style) {
-                const intl2 = tmp(1126).intl;
-                stringResult = intl2.string(tmp(1126).t.SpsnDY);
+                const intl2 = tmp(1128).intl;
+                stringResult = intl2.string(tmp(1128).t.SpsnDY);
               } else {
-                const intl = tmp(1126).intl;
+                const intl = tmp(1128).intl;
                 const str = intl.string(intl3.t.SpsnDY);
                 stringResult = str.toUpperCase();
               }
@@ -135,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WidgetPrevie
       if (widget.games.length > 0) {
         const obj6 = { userId, widget, disableInteraction: true, cardStyle: items3 };
         items3 = [tmp7.card, tmp4.card];
-        tmp9 = React3(tmp(13255).WidgetSection, obj6);
+        tmp9 = React3(tmp(14148).WidgetSection, obj6);
       }
     }
   }
@@ -170,7 +170,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WidgetPrevie
       if (widget.games.length > 0) {
         const obj3 = { userId, widget, disableInteraction: true, cardStyle: items1 };
         items1 = [tmp6.card, tmp.card];
-        tmp7 = React3(tmp2(13255).WidgetSection, obj3);
+        tmp7 = React3(tmp2(14148).WidgetSection, obj3);
       }
     }
   }
@@ -178,7 +178,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WidgetPrevie
   if (null !== tmp7) {
     let title;
     const obj4 = { style: tmp.container, children: items3 };
-    const Text = tmp2(5088).Text;
+    const Text = tmp2(5187).Text;
     const tmp12 = hasOwnProperty;
     const tmp13 = View;
     const tmp14 = React3;
@@ -190,10 +190,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WidgetPrevie
     }
     const obj5 = { style: title, accessibilityRole: "header", variant: typeConsolidationEyebrow.variant, children: stringResult };
     if (null != typeConsolidationEyebrow.style) {
-      const intl2 = tmp2(1126).intl;
-      stringResult = intl2.string(tmp2(1126).t.SpsnDY);
+      const intl2 = tmp2(1128).intl;
+      stringResult = intl2.string(tmp2(1128).t.SpsnDY);
     } else {
-      const intl = tmp2(1126).intl;
+      const intl = tmp2(1128).intl;
       const str = intl.string(intl3.t.SpsnDY);
       stringResult = str.toUpperCase();
     }

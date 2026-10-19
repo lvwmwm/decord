@@ -1,28 +1,28 @@
-// Module ID: 11925
-// Function ID: 11926
+// Module ID: 12083
+// Function ID: 12084
 // Name: PollAnswerInput
-// Dependencies: [19, 17, 2065, 7239, 7966, 1393, 21, 5092, 587, 558, 576, 11926, 1126, 7893, 1200, 6185, 9422, 9258, 5056, 11927, 2000, 8957, 8575, 5050, 11930, 2]
+// Dependencies: [19, 17, 2068, 7510, 8238, 1395, 21, 5191, 587, 558, 576, 12084, 1128, 8165, 1202, 6462, 9726, 9564, 5155, 12085, 2002, 9253, 8855, 5149, 12088, 2]
 // Exports: default
 
-// Module 11925 (PollAnswerInput)
+// Module 12083 (PollAnswerInput)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1126 */;
-import EmojiConstants from "EmojiConstants" /* 1393 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import Pressables from "Pressables" /* 6185 */;
-import DraftStore from "DraftStore" /* 7239 */;
-import PollsUtils from "PollsUtils" /* 7893 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9258 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9422 */;
-import useRenderPollAnswerImageDefault from "useRenderPollAnswerImage" /* 11926 */;
+import intl5 from "intl" /* 1128 */;
+import EmojiConstants from "EmojiConstants" /* 1395 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import Pressables from "Pressables" /* 6462 */;
+import DraftStore from "DraftStore" /* 7510 */;
+import PollsUtils from "PollsUtils" /* 8165 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9564 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9726 */;
+import useRenderPollAnswerImageDefault from "useRenderPollAnswerImage" /* 12084 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import PollsConstants from "PollsConstants" /* 7966 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import PollsConstants from "PollsConstants" /* 8238 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageI
     if (null == upload) {
       let tmp11;
       if (cResult[6] !== answerIndex) {
-        const intl3 = tmp(1126).intl;
+        const intl3 = tmp(1128).intl;
         const obj2 = { answerNumber: answerIndex + 1 };
         const formatToPlainStringResult = intl3.formatToPlainString(intl5.t.ieNrxk, obj2);
         cResult[6] = answerIndex;
@@ -105,10 +105,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageI
         }
         tmp7 = tmp9;
       }
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const formatToPlainString = intl2.formatToPlainString;
       const obj3 = { imageName: tmpResult.filterOutUUID(str), answerNumber: answerIndex + 1 };
-      const vcC7Qn = tmp(1126).t.vcC7Qn;
+      const vcC7Qn = tmp(1128).t.vcC7Qn;
       tmpResult = PollsUtils;
       const formatToPlainStringResult1 = formatToPlainString(vcC7Qn, obj3);
       cResult[3] = answerIndex;
@@ -122,7 +122,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageI
         tmp7 = cResult[2];
       }
     }
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const obj4 = { imageName: image.emoji.name, answerNumber: answerIndex + 1 };
     const formatToPlainStringResult2 = intl.formatToPlainString(intl5.t.vcC7Qn, obj4);
     cResult[0] = answerIndex;
@@ -192,7 +192,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageI
       tmp21Result = tmp21(metroRequire, obj6);
     } else {
       const obj7 = { source: iconSrc };
-      tmp21Result = tmp21(tmp(1200).Icon, obj7);
+      tmp21Result = tmp21(tmp(1202).Icon, obj7);
     }
     cResult[13] = tmp14;
     cResult[14] = iconSrc;
@@ -369,7 +369,7 @@ export default function PollAnswerInput(answer) {
     openImageInputActionSheet() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channelId, index, answer, onSaveAltText: handleSaveAltText, onRemoveAnswerImage, openExpressionPicker };
-      obj.openLazy(asyncRequire(11927, dependencyMap.paths), authStore, obj2);
+      obj.openLazy(asyncRequire(12085, dependencyMap.paths), authStore, obj2);
     },
     iconSrc: index(channelId[21]),
     containerStyle: tmp.defaultImageContainer,

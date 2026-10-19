@@ -1,12 +1,13 @@
-// Module ID: 16002
-// Function ID: 16003
+// Module ID: 12745
+// Function ID: 12746
 // Name: CheckpointStatsUtils
-// Dependencies: [1404, 2079, 2]
+// Dependencies: [1406, 2082, 11, 2]
 // Exports: statsFromServer
 
-// Module 16002 (CheckpointStatsUtils)
-import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
-import UserRecord from "UserRecord" /* 1404 */;
+// Module 12745 (CheckpointStatsUtils)
+import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2082 */;
+import UserRecord from "UserRecord" /* 1406 */;
 import size from "module_2" /* 2 */;
 
 let game;
@@ -58,12 +59,14 @@ export const statsFromServer = function statsFromServer(stats) {
       let banner_hash;
       let cover_image_hash;
       let icon_hash;
+      let obj2;
       game = game.game;
-      const game2 = { id: game.id, name: game.name, iconHash: icon_hash, bannerHash: banner_hash, coverImageHash: cover_image_hash };
-      icon_hash = game.icon_hash;
+      const game2 = { id: obj2.cast(game.id), name: null, iconHash: icon_hash, bannerHash: banner_hash, coverImageHash: cover_image_hash };
       const numSessions = game.num_sessions;
+      ({ name: obj.name, icon_hash } = game);
       banner_hash = game.banner_hash;
       cover_image_hash = game.cover_image_hash;
+      obj2 = SnowflakeUtilsDefault;
       return { game: game2, numSessions };
     }),
     totalDaysPlayed: games.total_days_played,

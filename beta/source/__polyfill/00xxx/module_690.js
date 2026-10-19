@@ -1,10 +1,10 @@
 // Module ID: 690
 // Function ID: 691
-// Dependencies: [691, 693, 873]
+// Dependencies: [691, 693, 874]
 // Exports: fetchSourceContext, parseErrorStack, symbolicateStackTrace
 
 // Module 690
-import ReactNativeLibraries from "ReactNativeLibraries" /* 873 */;
+import ReactNativeLibraries from "ReactNativeLibraries" /* 874 */;
 
 let c0, stack;
 

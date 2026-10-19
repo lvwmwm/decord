@@ -1,73 +1,73 @@
-// Module ID: 10484
-// Function ID: 10485
+// Module ID: 10807
+// Function ID: 10808
 // Name: Messages
-// Dependencies: [32, 109, 19, 5081, 2064, 8271, 5440, 10485, 7193, 6036, 9605, 5987, 5016, 6991, 10486, 6854, 7969, 7748, 6054, 7175, 8246, 7879, 10488, 7880, 6797, 10489, 10490, 7170, 10491, 7363, 7308, 9611, 4752, 7006, 2129, 1205, 502, 2065, 7364, 10492, 2125, 2087, 5891, 5073, 5432, 4750, 5108, 5110, 6035, 5112, 7882, 1390, 5113, 6088, 10648, 5116, 1085, 1392, 21, 558, 576, 12, 504, 568, 6853, 1388, 2041, 10659, 10666, 10670, 10673, 9166, 7167, 4769, 7994, 5957, 10385, 10386, 9378, 7990, 7137, 10677, 4987, 9613, 9331, 9350, 10678, 9601, 8394, 5909, 9602, 8245, 10679, 10682, 8264, 7418, 10684, 10227, 10687, 11633, 2]
+// Dependencies: [32, 109, 19, 5181, 2067, 8548, 5540, 10808, 7464, 6292, 9906, 6243, 5112, 7267, 10809, 6358, 8241, 8019, 6332, 7446, 8523, 8151, 10811, 8152, 7074, 10812, 10813, 7441, 10814, 7633, 7579, 9912, 4847, 7282, 2132, 1207, 502, 2068, 7634, 10815, 2128, 2090, 6147, 5173, 5532, 4845, 5207, 5209, 6291, 5211, 8154, 1392, 5212, 6310, 10973, 5215, 1087, 1394, 21, 558, 576, 12, 504, 568, 6357, 1388, 2044, 11079, 11086, 11090, 11093, 9473, 7438, 4864, 8266, 6213, 10708, 10709, 9682, 8262, 7408, 11097, 5083, 9914, 9635, 9654, 11098, 9902, 8672, 6165, 9903, 8522, 11099, 11102, 8541, 7688, 11103, 10529, 11106, 12822, 2]
 
-// Module 10484 (Messages)
+// Module 10807 (Messages)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqual from "shallowEqual" /* 568 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6853 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9378 */;
-import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 10678 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6357 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9682 */;
+import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 11098 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8271 */;
-import ApplicationStore from "ApplicationStore" /* 5440 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 10485 */;
-import CacheStore from "CacheStore" /* 7193 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 9605 */;
-import EmojiStore from "EmojiStore" /* 5987 */;
-import ExperimentStore from "ExperimentStore" /* 5016 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 6991 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 10486 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6854 */;
-import BasicGuildStore from "BasicGuildStore" /* 7969 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7748 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7175 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8246 */;
-import InteractionStore from "InteractionStore" /* 7879 */;
-import MediaPostEmbedStore from "MediaPostEmbedStore" /* 10488 */;
-import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 7880 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6797 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 10489 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 10490 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7170 */;
-import PushFeedbackStore from "PushFeedbackStore" /* 10491 */;
-import PendingReplyStore from "PendingReplyStore" /* 7363 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7308 */;
-import SummaryStore from "SummaryStore" /* 9611 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4752 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7006 */;
-import LocaleStore from "LocaleStore" /* 2129 */;
-import ThemeStore from "ThemeStore" /* 1205 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8548 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10808 */;
+import CacheStore from "CacheStore" /* 7464 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 9906 */;
+import EmojiStore from "EmojiStore" /* 6243 */;
+import ExperimentStore from "ExperimentStore" /* 5112 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 7267 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 10809 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6358 */;
+import BasicGuildStore from "BasicGuildStore" /* 8241 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8019 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6332 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7446 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8523 */;
+import InteractionStore from "InteractionStore" /* 8151 */;
+import MediaPostEmbedStore from "MediaPostEmbedStore" /* 10811 */;
+import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 8152 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7074 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 10812 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 10813 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7441 */;
+import PushFeedbackStore from "PushFeedbackStore" /* 10814 */;
+import PendingReplyStore from "PendingReplyStore" /* 7633 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7579 */;
+import SummaryStore from "SummaryStore" /* 9912 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7282 */;
+import LocaleStore from "LocaleStore" /* 2132 */;
+import ThemeStore from "ThemeStore" /* 1207 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import EditMessageStore from "EditMessageStore" /* 7364 */;
-import GiftCodeStore from "GiftCodeStore" /* 10492 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5891 */;
-import InviteStore from "InviteStore" /* 5073 */;
-import MessageStore from "MessageStore" /* 5432 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import PresenceStore from "PresenceStore" /* 5108 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
-import ReadStateStore from "ReadStateStore" /* 6035 */;
-import SessionsStore from "SessionsStore" /* 5112 */;
-import UploadStore from "UploadStore" /* 7882 */;
-import UserStore from "UserStore" /* 1390 */;
-import VoiceStateStore from "VoiceStateStore" /* 5113 */;
-import SKUStore from "SKUStore" /* 6088 */;
-import ActivityLauncherStore from "ActivityLauncherStore" /* 10648 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5116 */;
-import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import EditMessageStore from "EditMessageStore" /* 7634 */;
+import GiftCodeStore from "GiftCodeStore" /* 10815 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6147 */;
+import InviteStore from "InviteStore" /* 5173 */;
+import MessageStore from "MessageStore" /* 5532 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import PresenceStore from "PresenceStore" /* 5207 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
+import ReadStateStore from "ReadStateStore" /* 6291 */;
+import SessionsStore from "SessionsStore" /* 5211 */;
+import UploadStore from "UploadStore" /* 8154 */;
+import UserStore from "UserStore" /* 1392 */;
+import VoiceStateStore from "VoiceStateStore" /* 5212 */;
+import SKUStore from "SKUStore" /* 6310 */;
+import ActivityLauncherStore from "ActivityLauncherStore" /* 10973 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5215 */;
+import Constants from "Constants" /* 1087 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -801,7 +801,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -841,7 +841,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -876,7 +876,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -903,7 +903,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
         embeddedActivitiesByChannel = closure_8.getEmbeddedActivitiesByChannel();
         item = embeddedActivitiesByChannel.forEach((arr, index) => {
           let closure_0 = index;
-          let item = arr.forEach(() => { /* body not rendered: F154756 */ });
+          let item = arr.forEach(() => { /* body not rendered: F156931 */ });
         });
         return Array.from(set);
       }
@@ -925,7 +925,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -961,7 +961,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -988,7 +988,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
         embeddedActivitiesByChannel = closure_8.getEmbeddedActivitiesByChannel();
         item = embeddedActivitiesByChannel.forEach((arr, index) => {
           let closure_0 = index;
-          let item = arr.forEach(() => { /* body not rendered: F154756 */ });
+          let item = arr.forEach(() => { /* body not rendered: F156931 */ });
         });
         return Array.from(set);
       }
@@ -1010,7 +1010,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1046,7 +1046,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1073,7 +1073,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
         embeddedActivitiesByChannel = closure_8.getEmbeddedActivitiesByChannel();
         item = embeddedActivitiesByChannel.forEach((arr, index) => {
           let closure_0 = index;
-          let item = arr.forEach(() => { /* body not rendered: F154756 */ });
+          let item = arr.forEach(() => { /* body not rendered: F156931 */ });
         });
         return Array.from(set);
       }
@@ -1095,7 +1095,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1131,7 +1131,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1176,7 +1176,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1213,7 +1213,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1258,7 +1258,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1295,7 +1295,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1340,7 +1340,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1379,7 +1379,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1417,7 +1417,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1453,7 +1453,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1485,7 +1485,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
             const value = iter.next().value;
             let findActivityResult;
             if (null != value) {
-              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
             }
             let details;
             if (findActivityResult != null) {
@@ -1523,7 +1523,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
             const value = iter.next().value;
             let findActivityResult;
             if (null != value) {
-              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
             }
             let details;
             if (findActivityResult != null) {
@@ -1561,7 +1561,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
             const value = iter.next().value;
             let findActivityResult;
             if (null != value) {
-              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
             }
             let details;
             if (findActivityResult != null) {
@@ -1599,7 +1599,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
             const value = iter.next().value;
             let findActivityResult;
             if (null != value) {
-              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+              findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
             }
             let details;
             if (findActivityResult != null) {
@@ -1637,7 +1637,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1671,7 +1671,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1711,7 +1711,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1744,7 +1744,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1784,7 +1784,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1821,7 +1821,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1863,7 +1863,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1899,7 +1899,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1939,7 +1939,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -1972,7 +1972,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -2015,7 +2015,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -2051,7 +2051,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -2091,7 +2091,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -2124,7 +2124,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -2167,7 +2167,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -2203,7 +2203,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -2243,7 +2243,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
           const value = iter.next().value;
           let findActivityResult;
           if (null != value) {
-            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F154755 */ });
+            findActivityResult = closure_2_51.findActivity(value, () => { /* body not rendered: F156930 */ });
           }
           let details;
           if (findActivityResult != null) {
@@ -2556,7 +2556,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
   let unloadedContentEntryMessageIds;
   let useReducedMotion;
   let version;
-  const f105290 = () => {
+  const f106715 = () => {
     const items = [LocalInteractionComponentStateStore.getInteractionComponentStates(), LocalInteractionComponentStateStore.getInteractionComponentStateVersion()];
     return items;
   };
@@ -2847,8 +2847,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesConn
   const stateFromStoresObject3 = tmp2Result112.useStateFromStoresObject(items46, () => messageInteractionStates.getMessageInteractionStates());
   const items47 = [LocalInteractionComponentStateStore];
   const tmp2Result113 = tmp2(tmp3[62]);
-  [tmp67, tmp68] = stateFromStores1(tmp2Result113.useStateFromStores(items47, f105290, [], tmp2(tmp3[75]).isVersionEqual), 2);
-  stateFromStores1(tmp2Result113.useStateFromStores(items47, f105290, [], tmp2(tmp3[75]).isVersionEqual), 2);
+  [tmp67, tmp68] = stateFromStores1(tmp2Result113.useStateFromStores(items47, f106715, [], tmp2(tmp3[75]).isVersionEqual), 2);
+  stateFromStores1(tmp2Result113.useStateFromStores(items47, f106715, [], tmp2(tmp3[75]).isVersionEqual), 2);
   const items48 = [ExperimentStore];
   const tmp2Result114 = tmp2(tmp3[62]);
   let stateFromStores22 = tmp2Result114.useStateFromStores(items48, () => hasLoadedExperiments.hasLoadedExperiments);

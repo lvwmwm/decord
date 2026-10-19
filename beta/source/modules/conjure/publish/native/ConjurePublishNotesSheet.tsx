@@ -1,117 +1,99 @@
-// Module ID: 17120
-// Function ID: 17121
+// Module ID: 12198
+// Function ID: 12199
 // Name: ConjurePublishNotesSheet
-// Dependencies: [5, 32, 19, 17, 4748, 2087, 4760, 1390, 5085, 21, 5092, 587, 6665, 504, 6946, 9255, 17121, 5056, 12186, 1126, 3849, 7365, 7174, 6899, 6839, 5088, 6774, 5421, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 4843, 2090, 4855, 1392, 5185, 21, 5191, 587, 6942, 504, 7222, 9561, 12199, 11065, 5155, 11667, 1128, 3883, 7635, 7445, 7175, 7117, 7051, 5187, 5521, 5479, 2]
 // Exports: default
 
-// Module 17120 (ConjurePublishNotesSheet)
+// Module 12198 (ConjurePublishNotesSheet)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl14 from "intl" /* 1126 */;
-import _modDef3849 from "module_3849" /* 3849 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4748 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
-import MessageConstants from "MessageConstants" /* 5085 */;
-import ConjureUtils from "ConjureUtils" /* 6946 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12186 */;
-import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 17121 */;
+import intl10 from "intl" /* 1128 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4843 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5155 */;
+import MessageConstants from "MessageConstants" /* 5185 */;
+import ConjureUtils from "ConjureUtils" /* 7222 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11667 */;
+import ConjurePatchNotesChannel from "ConjurePatchNotesChannel" /* 12199 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
-import UserStore from "UserStore" /* 1390 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import size from "module_2" /* 2 */;
 
 const GuildChannelStore = GuildChannelStore2;
 let c3, c4, channel;
 
 let closure_14;
-let closure_15;
-let metroImportDefault;
-let metroRequire;
-({ ActivityIndicator: metroRequire, View: metroImportDefault } = react_native);
-let closure_9 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;
+let map1;
+const View = react_native.View;
+let closure_8 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;
 const MessageSendLocation = MessageConstants.MessageSendLocation;
-({ jsx: closure_14, jsxs: closure_15 } = Fragment);
+({ jsx: map1, jsxs: closure_14 } = Fragment);
 const ConjurePublishNotesSheet_str = "ConjurePublishNotesSheet";
-let closure_17 = createStyles.createStyles((paddingBottom) => {
-  const obj = { container: { gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom }, section: { gap: nativeDefault.space.PX_8 }, notesSection: { gap: nativeDefault.space.PX_4 }, statusRow: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 }, actions: { flexDirection: "row", gap: nativeDefault.space.PX_8 } };
+let closure_16 = createStyles.createStyles((paddingBottom) => {
+  const obj = { container: { gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom }, notesSection: { gap: nativeDefault.space.PX_4 }, actions: { flexDirection: "row", gap: nativeDefault.space.PX_8 } };
   ({ gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom });
-  ({ gap: nativeDefault.space.PX_8 });
   ({ gap: nativeDefault.space.PX_4 });
-  ({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 });
   ({ flexDirection: "row", gap: nativeDefault.space.PX_8 });
   return obj;
 });
 let result = size.fileFinishedImporting("modules/conjure/publish/native/ConjurePublishNotesSheet.tsx");
 
-export default function ConjurePublishNotesSheet(guildId) {
+export default function ConjurePublishNotesSheet(projectId) {
   let BottomSheetTitleHeader;
-  let N5NqKB;
   let _undefined;
   let _undefined2;
   let _undefined22;
   let c11;
-  let c13;
   let c14;
   let c15;
-  let c7;
-  let c8;
+  let c9;
   let fn;
   let intl;
-  let intl13;
   let intl2;
-  let intl4;
-  let intl5;
-  let intl6;
+  let intl8;
+  let intl9;
   let items10;
-  let items11;
-  let items12;
   let items8;
   let items9;
-  let obj12;
-  let obj14;
   let obj6;
   let obj7;
-  let projectName;
-  let publish;
   let str;
   let string;
   let stringResult;
   let stringResult1;
-  let stringResult2;
-  let tmp10;
-  let tmp12;
+  let tmp15;
   let tmp19;
   let tmp21;
-  let tmp23;
-  let tmp34Result;
   let tmpResult;
-  guildId = guildId.guildId;
-  const applicationId = guildId.applicationId;
-  ({ projectName, publish } = guildId);
-  const initialDraft = guildId.initialDraft;
-  c7 = undefined;
-  c8 = undefined;
+  projectId = projectId.projectId;
+  const guildId = projectId.guildId;
+  let applicationId = projectId.applicationId;
+  const publishedRevision = projectId.publishedRevision;
+  let first;
+  c9 = undefined;
   c11 = undefined;
-  c13 = undefined;
   c14 = undefined;
   c15 = undefined;
-  let ref;
+  closure_16 = undefined;
   let trimmed;
   let c20;
   let callback2;
-  let tmp = applicationId;
-  let tmp2 = publish;
-  const tmp3 = ref(applicationId(publish[12])({ includeKeyboardHeight: true }).insets.bottom);
-  const tmp4 = guildId;
-  let obj = guildId(publish[13]);
-  const items = [c8];
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    const arr = GuildChannelStore.getChannels(guildId)[closure_9];
+  let tmp = guildId;
+  let tmp2 = applicationId;
+  const projectName = projectId.projectName;
+  const tmp3 = closure_16(guildId(applicationId[12])({ includeKeyboardHeight: true }).insets.bottom);
+  const tmp4 = projectId;
+  let obj = projectId(applicationId[13]);
+  const items = [first];
+  const items1 = [guildId];
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
+    const arr = GuildChannelStore.getChannels(guildId)[closure_8];
     found = arr.filter((channel) => {
       channel = channel.channel;
       const isGuildVocalResult = channel.isGuildVocal();
@@ -119,109 +101,86 @@ export default function ConjurePublishNotesSheet(guildId) {
       return tmp2;
     });
     return found.map((channel) => channel.channel);
-  });
-  let obj2 = guildId(publish[13]);
-  const items1 = [c8];
-  const items2 = [guildId, applicationId];
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
+  }, items1);
+  let obj2 = projectId(applicationId[13]);
+  const items2 = [first];
+  const items3 = [guildId, applicationId];
+  const stateFromStores = obj2.useStateFromStores(items2, () => {
     const obj = ConjureUtils;
     return obj.findConjureChannelId(guildId, applicationId);
-  }, items2);
-  const tmp6 = applicationId(publish[15])();
-  let obj3 = guildId(publish[16]);
-  const diff = tmp6 - obj3.formatPlaySuffix(guildId(publish[16]).PLAY_LINE_CHANNEL_PLACEHOLDER).length;
-  let obj4 = stateFromStores1;
-  ref = stateFromStores1.useRef(diff);
+  }, items3);
+  const tmp6 = guildId(applicationId[15])();
+  let obj3 = projectId(applicationId[16]);
+  const diff = tmp6 - obj3.formatPlaySuffix(projectId(applicationId[16]).PLAY_LINE_CHANNEL_PLACEHOLDER).length;
+  let obj4 = stateFromStores;
+  let ref = stateFromStores.useRef(diff);
   ref.current = diff;
-  [tmp10, c7] = stateFromStores(stateFromStores1.useState("publishing"), 2);
-  const tmp9 = stateFromStores(stateFromStores1.useState("publishing"), 2);
-  [tmp12, c8] = stateFromStores(stateFromStores1.useState(null), 2);
-  const tmp11 = stateFromStores(stateFromStores1.useState(null), 2);
-  const tmp13 = stateFromStores(stateFromStores1.useState(() => {
+  const tmp9 = stateFromStoresArray(stateFromStores.useState(() => {
     const obj = ConjurePatchNotesChannel;
     const result = obj.lastPatchNotesChannel(applicationId);
     let tmp2 = null;
     if (null != result) {
       tmp2 = null;
-      if (stateFromStores.some((id) => id.id === result)) {
+      if (stateFromStoresArray.some((id) => id.id === result)) {
         tmp2 = result;
       }
     }
     return tmp2;
   }), 2);
-  const first = tmp13[0];
-  let closure_10 = tmp13[1];
-  [str, c11] = stateFromStores(stateFromStores1.useState(""), 2);
-  const tmp15 = stateFromStores(stateFromStores1.useState(""), 2);
-  const tmp16 = stateFromStores(stateFromStores1.useState(true), 2);
-  let closure_12 = tmp16[1];
-  const first1 = tmp16[0];
-  [tmp19, c13] = stateFromStores(stateFromStores1.useState(false), 2);
-  const tmp18 = stateFromStores(stateFromStores1.useState(false), 2);
-  [tmp21, c14] = stateFromStores(stateFromStores1.useState(false), 2);
-  const tmp20 = stateFromStores(stateFromStores1.useState(false), 2);
-  [tmp23, c15] = stateFromStores(stateFromStores1.useState(false), 2);
-  const tmp22 = stateFromStores(stateFromStores1.useState(false), 2);
-  let closure_16 = stateFromStores1.useRef(false);
-  ref = stateFromStores1.useRef(null != first);
-  const items3 = [publish];
-  const effect = stateFromStores1.useEffect(() => {
-    let c0 = false;
-    publish.then(() => {
-      const tmp = c0;
-      if (!tmp) {
-        c7("succeeded");
-      }
-    }, (message) => {
-      const tmp = c0;
-      if (!tmp) {
-        c7("failed");
-        const _Error = Error;
-        message = null;
-        const tmp5 = c8;
-        if (message instanceof Error) {
-          message = message.message;
-        }
-        tmp5(message);
-      }
-    });
-    return () => {
-      c0 = true;
-    };
-  }, items3);
-  const items4 = [stateFromStores1];
-  const effect1 = stateFromStores1.useEffect(() => {
-    let current = null == stateFromStores1;
-    const tmp = stateFromStores1;
+  first = tmp9[0];
+  closure_8 = tmp9[1];
+  [str, c9] = stateFromStoresArray(stateFromStores.useState(""), 2);
+  const tmp11 = stateFromStoresArray(stateFromStores.useState(""), 2);
+  const tmp12 = stateFromStoresArray(stateFromStores.useState(true), 2);
+  let closure_10 = tmp12[1];
+  const first1 = tmp12[0];
+  [tmp15, c11] = stateFromStoresArray(stateFromStores.useState(false), 2);
+  const tmp14 = stateFromStoresArray(stateFromStores.useState(false), 2);
+  const tmp16 = stateFromStoresArray(stateFromStores.useState(undefined), 2);
+  const first2 = tmp16[0];
+  let closure_13 = tmp16[1];
+  [tmp19, c14] = stateFromStoresArray(stateFromStores.useState(false), 2);
+  const tmp18 = stateFromStoresArray(stateFromStores.useState(false), 2);
+  [tmp21, c15] = stateFromStoresArray(stateFromStores.useState(false), 2);
+  const tmp20 = stateFromStoresArray(stateFromStores.useState(false), 2);
+  closure_16 = stateFromStores.useRef(false);
+  ref = stateFromStores.useRef(null != first);
+  const items4 = [stateFromStores];
+  const effect = stateFromStores.useEffect(() => {
+    let current = null == stateFromStores;
+    const tmp = stateFromStores;
     if (!current) {
       current = ref.current;
     }
     if (!current) {
-      closure_10(tmp);
+      closure_8(tmp);
     }
   }, items4);
-  const items5 = [initialDraft];
-  const effect2 = stateFromStores1.useEffect(() => {
+  const items5 = [projectId];
+  const effect1 = stateFromStores.useEffect(() => {
     let c0 = false;
-    initialDraft.then((ok) => {
+    const obj = projectId(applicationId[17]);
+    const draftPatchNotesResult = obj.draftPatchNotes(c0);
+    draftPatchNotesResult.then((source_sha) => {
       const tmp = c0;
       if (!tmp) {
-        closure_12(false);
-        if (true !== ok.ok) {
-          c13(true);
+        closure_10(false);
+        closure_13(source_sha.source_sha);
+        if (true !== source_sha.ok) {
+          c11(true);
         } else {
-          const current = null == ok.notes || "" === ok.notes || ref.current;
+          const current = null == source_sha.notes || "" === source_sha.notes || ref.current;
           if (!current) {
-            const notes = ok.notes;
-            c11(notes.slice(0, ref.current));
+            const notes = source_sha.notes;
+            c9(notes.slice(0, ref.current));
           }
         }
       }
     }, () => {
       const tmp = c0;
       if (!tmp) {
-        closure_12(false);
-        c13(true);
+        closure_10(false);
+        c11(true);
       }
     });
     return () => {
@@ -229,27 +188,26 @@ export default function ConjurePublishNotesSheet(guildId) {
     };
   }, items5);
   let found = null;
-  const callback = stateFromStores1.useCallback((arg0) => {
+  const callback = stateFromStores.useCallback((arg0) => {
     closure_16.current = true;
     _undefined22(false);
     _undefined(arg0);
   }, []);
   if (null != first) {
-    found = stateFromStores.find((id) => id.id === first);
+    found = stateFromStoresArray.find((id) => id.id === first);
   }
   if (found == null) {
     found = null;
   }
   trimmed = str.trim();
   let formatPlaySuffixResult = null;
-  if (null != stateFromStores1) {
-    const tmp30 = globalThis;
+  if (null != stateFromStores) {
     let _HermesInternal = HermesInternal;
     const tmp4Result = tmp4(tmp2[16]);
-    formatPlaySuffixResult = tmp4Result.formatPlaySuffix("<#" + stateFromStores1 + ">");
+    formatPlaySuffixResult = tmp4Result.formatPlaySuffix("<#" + stateFromStores + ">");
   }
   c20 = formatPlaySuffixResult;
-  const items6 = [stateFromStores, guildId, found];
+  const items6 = [stateFromStoresArray, guildId, found];
   const callback1 = obj4.useCallback(() => {
     let intl;
     let obj2;
@@ -257,28 +215,28 @@ export default function ConjurePublishNotesSheet(guildId) {
     let tmp2;
     const tmp = ActionSheetActionCreators;
     const showActionSheet = tmp.showActionSheet;
-    const obj = { content: syncedClientThemes(tmp2, obj2), key: "ConjurePatchNotesChannelSheet", stackingBehavior: "stack" };
+    const obj = { content: map1(tmp2, obj2), key: "ConjurePatchNotesChannelSheet", stackingBehavior: "stack" };
     obj2 = {
       header: obj3,
       guild: GuildStore.getGuild(guildId),
-      channels: stateFromStores,
+      channels: stateFromStoresArray,
       selectedChannel: found,
       onSelect(id) {
         ref.current = true;
-        closure_1_10(id.id);
+        closure_1_8(id.id);
       }
     };
-    obj3 = { title: intl.string(_modDef3849.Gd63Fl) };
+    obj3 = { title: intl.string(_modDef3883.Gd63Fl) };
     tmp2 = ChannelPickerActionSheetDefault;
-    intl = intl14.intl;
+    intl = intl10.intl;
     showActionSheet(obj);
   }, items6);
   callback2 = obj4.useCallback(() => {
-    const obj = applicationId(publish[17]);
-    obj.hideActionSheet(closure_16);
+    const obj = guildId(applicationId[18]);
+    obj.hideActionSheet(c15);
   }, []);
-  const items7 = [found, trimmed, formatPlaySuffixResult, applicationId, callback2];
-  const callback3 = obj4.useCallback(initialDraft(function*(arg0, value) {
+  const items7 = [found, trimmed, formatPlaySuffixResult, applicationId, projectId, publishedRevision, guildId, first2, callback2];
+  const callback3 = obj4.useCallback(publishedRevision(function*(arg0, value) {
     let c2;
     let closure_0;
     let closure_1;
@@ -296,6 +254,7 @@ export default function ConjurePublishNotesSheet(guildId) {
       }
     } else {
       try {
+        let id;
         c4 = 2;
         if (0 === c3) {
           if (arg0 === 1) {
@@ -306,48 +265,49 @@ export default function ConjurePublishNotesSheet(guildId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            guildId = undefined;
+            projectId = undefined;
+            id = undefined;
             if (null != found) {
               if ("" !== trimmed) {
                 _undefined2(true);
                 _undefined22(false);
-                publish = 1;
-                let combined = tmp21;
-                const parse = tmp(publish[21]).parse;
-                const tmp26 = tmp;
-                const tmp28 = tmp(publish[21]);
-                const tmp29 = found;
+                applicationId = 1;
+                let combined = tmp30;
+                const parse = tmp(applicationId[22]).parse;
+                const tmp35 = tmp;
+                const tmp37 = tmp(applicationId[22]);
+                const tmp38 = found;
                 if (null != c20) {
                   const _HermesInternal = HermesInternal;
-                  combined = "" + tmp21 + tmp30;
+                  combined = "" + tmp30 + tmp39;
                 }
-                const parsed = parse(tmp29, combined);
-                const tmp26Result = tmp26(publish[22]);
+                const parsed = parse(tmp38, combined);
+                const tmp35Result = tmp35(applicationId[23]);
                 const obj4 = { location: constants.CONJURE_PATCH_NOTES };
                 c3 = 2;
                 c4 = 1;
-                const obj5 = { value: tmp26Result.sendMessage(found.id, parsed, false, obj4), done: false };
+                const obj5 = { value: tmp35Result.sendMessage(found.id, parsed, false, obj4), done: false };
                 return obj5;
               }
             }
           }
         } else if (1 === c3) {
-          publish = 0;
+          applicationId = 0;
           closure_129_15(true);
           closure_129_14(false);
         } else if (arg0 === 1) {
           c4 = 3;
           throw value;
         } else if (arg0 === 2) {
-          publish = 0;
+          applicationId = 0;
           c4 = 3;
           const obj6 = { value, done: true };
           return obj6;
         } else {
-          guildId = value;
+          projectId = value;
           let ok;
-          if (guildId != null) {
-            ok = guildId.ok;
+          if (projectId != null) {
+            ok = projectId.ok;
           }
           if (false === ok) {
             const _Error = Error;
@@ -356,126 +316,97 @@ export default function ConjurePublishNotesSheet(guildId) {
             const error = new Error("send failed");
             throw error;
           } else {
-            const obj = guildId(publish[16]);
-            const result = obj.rememberPatchNotesChannel(closure_129_1, closure_129_18.id);
+            const obj9 = projectId(applicationId[16]);
+            const result = obj9.rememberPatchNotesChannel(closure_129_2, closure_129_18.id);
+            id = undefined;
+            if (projectId != null) {
+              const body = projectId.body;
+              if (body != null) {
+                id = body.id;
+              }
+            }
+            if (null != id) {
+              const obj7 = { publishedRevision: closure_129_3, guildId: closure_129_1, channelId: closure_129_18.id, messageId: id };
+              const obj = projectId(applicationId[17]);
+              obj.recordPatchNotesSent(closure_129_0, obj7, closure_129_12);
+            }
             closure_129_21();
-            publish = 0;
+            applicationId = 0;
           }
         }
         c4 = 3;
         return { value: "IconComponent", done: null };
-      } catch (tmp38) {
-        if (0 === publish) {
+      } catch (tmp47) {
+        if (0 === applicationId) {
           c4 = 3;
-          throw tmp38;
+          throw tmp47;
         } else {
           c3 = 1;
         }
       }
     }
   }), items7);
-  let obj5 = { startExpanded: true, header: c14(BottomSheetTitleHeader, obj6), children: tmp35(tmp36, obj7) };
-  const ActionSheet = tmp4(tmp2[23]).ActionSheet;
-  obj6 = { title: intl.formatToPlainString(tmp(tmp2[20]).NEPcoi, { projectName }) };
-  BottomSheetTitleHeader = tmp4(tmp2[24]).BottomSheetTitleHeader;
-  intl = tmp4(tmp2[19]).intl;
-  obj7 = { style: tmp3.container, children: items10 };
-  const obj8 = { style: tmp3.section, children: items8 };
-  const obj9 = { variant: "heading-md/semibold", color: "text-default", children: intl2.string(tmp(tmp2[20]).xnpBTy) };
-  const Text = tmp4(tmp2[25]).Text;
-  intl2 = tmp4(tmp2[19]).intl;
-  items8 = [c14(Text, obj9), ];
-  if ("publishing" === tmp10) {
-    const tmp38 = ref;
-    const obj10 = { style: tmp3.statusRow, children: items9 };
-    items9 = [tmp34(ref, { size: "small" }), ];
-    const obj11 = { variant: "text-md/medium", color: "text-subtle", children: intl5.formatToPlainString(tmp(tmp2[20])["3F4azs"], obj12) };
-    const Text2 = tmp4(tmp2[25]).Text;
-    intl5 = tmp4(tmp2[19]).intl;
-    obj12 = { projectName };
-    items9[1] = c14(Text2, obj11);
-    tmp34Result = tmp35(tmp36, obj10);
-  } else {
-    let obj15;
-    const Text4 = tmp4(tmp2[25]).Text;
-    if ("succeeded" === tmp10) {
-      const obj13 = { variant: "text-md/medium", color: "text-feedback-positive", children: intl4.formatToPlainString(tmp(tmp2[20]).Enj2YA, obj14) };
-      intl4 = tmp4(tmp2[19]).intl;
-      obj15 = obj13;
-      obj14 = { projectName };
-    } else {
-      if (stringResult == null) {
-        const intl3 = tmp4(tmp2[19]).intl;
-        stringResult = intl3.string(tmp(tmp2[20]).gMWZeG);
-      }
-      obj15 = { variant: "text-md/medium", color: "text-feedback-critical", children: stringResult };
-    }
-    tmp34Result = tmp34(Text4, obj15);
-  }
-  items8[1] = tmp34Result;
-  items10 = [tmp35(tmp36, obj8), , ];
-  let tmp35Result2 = null;
-  if (stateFromStores.length > 0) {
+  let obj5 = { startExpanded: true, header: closure_13(BottomSheetTitleHeader, obj6), children: tmp32(tmp33, obj7) };
+  const ActionSheet = tmp4(tmp2[24]).ActionSheet;
+  obj6 = { title: intl.formatToPlainString(tmp(tmp2[21]).lsYQII, { projectName }) };
+  BottomSheetTitleHeader = tmp4(tmp2[25]).BottomSheetTitleHeader;
+  intl = tmp4(tmp2[20]).intl;
+  obj7 = { style: tmp3.container, children: items9 };
+  let tmp32Result = null;
+  if (stateFromStoresArray.length > 0) {
     let combined;
-    const obj16 = { style: tmp3.notesSection, children: items11 };
-    const obj17 = { label: intl6.string(tmp(tmp2[20]).r4du8k), placeholder: string(first1 ? tmpResult.aYQksU : tmpResult["3hV1Gc"]), description: stringResult1, errorMessage: stringResult2, maxLength: diff, value: str, onChange: callback, disabled: tmp21 };
+    const obj8 = { style: tmp3.notesSection, children: items8 };
+    let obj9 = { label: intl2.string(tmp(tmp2[21]).r4du8k), placeholder: string(first1 ? tmpResult.aYQksU : tmpResult["3hV1Gc"]), description: stringResult, errorMessage: stringResult1, maxLength: diff, value: str, onChange: callback, disabled: tmp19 };
     const TextArea = tmp4(tmp2[26]).TextArea;
-    intl6 = tmp4(tmp2[19]).intl;
-    const intl7 = tmp4(tmp2[19]).intl;
-    string = intl7.string;
-    tmpResult = tmp(tmp2[20]);
+    intl2 = tmp4(tmp2[20]).intl;
+    const intl3 = tmp4(tmp2[20]).intl;
+    string = intl3.string;
+    tmpResult = tmp(tmp2[21]);
+    stringResult = undefined;
+    if (tmp15) {
+      const intl4 = tmp4(tmp2[20]).intl;
+      stringResult = intl4.string(tmp(tmp2[21])["Em8bo+"]);
+    }
     stringResult1 = undefined;
-    if (tmp19) {
-      const intl8 = tmp4(tmp2[19]).intl;
-      stringResult1 = intl8.string(tmp(tmp2[20])["Em8bo+"]);
+    if (tmp21) {
+      const intl5 = tmp4(tmp2[20]).intl;
+      stringResult1 = intl5.string(tmp(tmp2[21])["6oEjjD"]);
     }
-    stringResult2 = undefined;
-    if (tmp23) {
-      const intl9 = tmp4(tmp2[19]).intl;
-      stringResult2 = intl9.string(tmp(tmp2[20])["6oEjjD"]);
-    }
-    items11 = [tmp34(TextArea, obj17), ];
-    const Text3 = tmp4(tmp2[25]).Text;
-    const intl10 = tmp4(tmp2[19]).intl;
-    const format = intl10.format;
-    const prop = tmp(tmp2[20])["1lVhj/"];
+    items8 = [tmp31(TextArea, obj9), ];
+    const Text = tmp4(tmp2[27]).Text;
+    const intl6 = tmp4(tmp2[20]).intl;
+    const format = intl6.format;
+    const prop = tmp(tmp2[21])["1lVhj/"];
     if (null != found) {
       const _HermesInternal2 = HermesInternal;
-      const tmp4Result2 = tmp4(tmp2[27]);
-      combined = "#" + tmp4Result2.computeChannelName(found, closure_12, c11);
+      const tmp4Result2 = tmp4(tmp2[28]);
+      combined = "#" + tmp4Result2.computeChannelName(found, c11, closure_10);
     } else {
-      const intl11 = tmp4(tmp2[19]).intl;
-      combined = intl11.string(tmp(tmp2[20])["7CvxMC"]);
+      const intl7 = tmp4(tmp2[20]).intl;
+      combined = intl7.string(tmp(tmp2[21])["7CvxMC"]);
     }
-    const obj18 = { channel: combined, onPick: fn };
+    const obj10 = { channel: combined, onPick: fn };
     fn = callback1;
-    if (tmp21) {
+    if (tmp19) {
       fn = () => {
 
       };
     }
-    const obj19 = { variant: "text-md/medium", color: "text-subtle", children: format(prop, obj18) };
-    items11[1] = c14(Text3, obj19);
-    tmp35Result2 = tmp35(tmp36, obj16);
+    const obj11 = { variant: "text-md/medium", color: "text-subtle", children: format(prop, obj10) };
+    items8[1] = closure_13(Text, obj11);
+    tmp32Result = tmp32(tmp33, obj8);
   }
-  items10[1] = tmp35Result2;
-  const obj20 = { style: tmp3.actions, children: items12 };
-  const Button = tmp4(tmp2[28]).Button;
-  const intl12 = tmp4(tmp2[19]).intl;
-  const string2 = intl12.string;
-  if ("failed" === tmp10) {
-    N5NqKB = tmp4(tmp2[19]).t.cpT0Cq;
-  } else {
-    N5NqKB = tmp(tmp2[20]).N5NqKB;
-  }
-  items12 = [, ];
-  const obj21 = { variant: "tertiary", grow: true, text: string2(N5NqKB), onPress: callback2 };
-  items12[0] = c14(Button, obj21);
-  const obj22 = { variant: "primary", grow: true, text: intl13.string(tmp(tmp2[20])["69aIG4"]), loading: tmp21, disabled: "succeeded" !== tmp10 || "" === trimmed || trimmed.length > diff || null == found || tmp21, onPress: callback3 };
-  const Button2 = tmp4(tmp2[28]).Button;
-  intl13 = tmp4(tmp2[19]).intl;
-  items12[1] = c14(Button2, obj22);
-  items10[2] = c15(c7, obj20);
-  return c14(ActionSheet, obj5);
+  items9 = [tmp32Result, ];
+  const obj12 = { style: tmp3.actions, children: items10 };
+  const obj13 = { variant: "tertiary", grow: true, text: intl8.string(tmp4(tmp2[20]).t["ETE/oC"]), onPress: callback2 };
+  const Button = tmp4(tmp2[29]).Button;
+  intl8 = tmp4(tmp2[20]).intl;
+  items10 = [tmp31(Button, obj13), ];
+  const obj14 = { variant: "primary", grow: true, text: intl9.string(tmp(tmp2[21])["69aIG4"]), loading: tmp19, disabled: "" === trimmed || trimmed.length > diff || null == found || tmp19, onPress: callback3 };
+  const Button2 = tmp4(tmp2[29]).Button;
+  intl9 = tmp4(tmp2[20]).intl;
+  items10[1] = closure_13(Button2, obj14);
+  items9[1] = c14(ref, obj12);
+  return closure_13(ActionSheet, obj5);
 };
 export const CONJURE_PUBLISH_NOTES_SHEET_KEY = "ConjurePublishNotesSheet";

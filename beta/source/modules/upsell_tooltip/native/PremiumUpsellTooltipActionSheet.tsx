@@ -1,19 +1,19 @@
-// Module ID: 9421
-// Function ID: 9422
+// Module ID: 9725
+// Function ID: 9726
 // Name: PremiumUpsellTooltipActionSheet
-// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 4938, 5056, 6157, 1200, 5088, 5379, 6840, 2]
+// Dependencies: [19, 17, 2065, 21, 5191, 587, 558, 576, 5033, 5155, 5128, 1202, 5187, 5479, 7118, 2]
 
-// Module 9421 (PremiumUpsellTooltipActionSheet)
+// Module 9725 (PremiumUpsellTooltipActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7118 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,9 +27,9 @@ let obj4;
 let size;
 let size1;
 let tmp3;
-const native = tmp3(1200);
-const Text_Text = tmp3(5088);
-const components_Button_Button = tmp3(5379);
+const native = tmp3(1202);
+const Text_Text = tmp3(5187);
+const components_Button_Button = tmp3(5479);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);

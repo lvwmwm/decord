@@ -1,13 +1,13 @@
-// Module ID: 10532
-// Function ID: 10533
+// Module ID: 10857
+// Function ID: 10858
 // Name: UserProfileGradientContainer
-// Dependencies: [19, 21, 558, 576, 8361, 5391, 2]
+// Dependencies: [19, 21, 558, 576, 8639, 5491, 2]
 
-// Module 10532 (UserProfileGradientContainer)
+// Module 10857 (UserProfileGradientContainer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import useUserProfileGradientColors from "useUserProfileGradientColors" /* 8361 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import useUserProfileGradientColors from "useUserProfileGradientColors" /* 8639 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

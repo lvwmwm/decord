@@ -1,21 +1,21 @@
-// Module ID: 14784
-// Function ID: 14785
+// Module ID: 15549
+// Function ID: 15550
 // Name: AuthCommandsFactory
-// Dependencies: [32, 5, 5440, 2022, 1390, 5639, 1085, 10948, 1102, 510, 10937, 2029, 9230, 10871, 9229, 9224, 9232, 4755, 1097, 1295, 584, 14741, 8453, 1491, 2]
+// Dependencies: [32, 5, 5540, 2024, 1392, 5895, 1087, 11338, 1104, 510, 9169, 2032, 9536, 11266, 9535, 9531, 9538, 4850, 1099, 1297, 584, 15503, 8731, 1493, 2]
 // Exports: default
 
-// Module 14784 (AuthCommandsFactory)
+// Module 15549 (AuthCommandsFactory)
 import Storage3 from "Storage" /* 510 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import RPCErrorDefault from "RPCError" /* 10937 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import RPCErrorDefault from "RPCError" /* 9169 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5440 */;
-import ApplicationRecord from "ApplicationRecord" /* 2022 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants_mod from "Constants" /* 5639 */;
-import Constants_mod2 from "Constants" /* 1085 */;
-import LeakyBucket_mod from "LeakyBucket" /* 10948 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
+import ApplicationRecord from "ApplicationRecord" /* 2024 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants_mod from "Constants" /* 5895 */;
+import Constants_mod2 from "Constants" /* 1087 */;
+import LeakyBucket_mod from "LeakyBucket" /* 11338 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -134,7 +134,7 @@ let obj = function _authorizeWithPrompt() {
               map = undefined;
               _prompt = 1;
               disableGuildSelect = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else {
             let createFromServer;
@@ -609,7 +609,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
   let obj2 = require("CONTEXT_MENU_ICON_NAMES");
   let obj3 = {
     handler(socket) {
-      const f155853 = function(result) {
+      const f157890 = function(result) {
         let access_token;
         let expires_in;
         let scope;
@@ -715,7 +715,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
                   let obj3 = { client_id: tmp, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
                   let tmp8 = signal;
                   const promise = authorizeWithPrompt(obj3, closure_0, closure_1);
-                  return promise.then(f155853);
+                  return promise.then(f157890);
                 } else {
                   let str = "Trying to call a non-function";
                   throw new TypeError("Trying to call a non-function");
@@ -724,7 +724,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
             } else {
               let obj3 = { client_id: id, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
               let promise = authorizeWithPrompt(obj3, socket, signal);
-              catchPromise = promise.then(f155853);
+              catchPromise = promise.then(f157890);
             }
             return catchPromise;
           }
@@ -746,118 +746,128 @@ export default function createAuthCommandHandlers(arg0, arg1) {
     }
   };
   obj[AUTHENTICATE] = obj2.createRPCCommand(constants.AUTHENTICATE, obj3);
-  obj[constants.AUTHORIZE] = {
+  const AUTHORIZE = constants.AUTHORIZE;
+  let obj4 = require("CONTEXT_MENU_ICON_NAMES");
+  let obj5 = {
     handler(socket) {
       socket = socket.socket;
       const args = socket.args;
       let hasItem;
       const client_id = args.client_id;
-      if (client_id) {
-        if (null != socket.authorization.accessToken) {
-          let obj2 = { errorCode: constants.INVALID_COMMAND };
-          const self9 = this;
-          const self10 = this;
-          const tmp38 = new RPCErrorDefault(obj2, "Already authenticated");
-          throw tmp38;
-        } else if (socket.authorization.authing) {
-          const obj3 = { errorCode: constants.INVALID_COMMAND };
-          let self7 = this;
-          let str5 = "Already authing";
-          let self8 = this;
-          const tmp32 = new RPCErrorDefault(obj3, "Already authing");
-          throw tmp32;
-        } else {
-          socket.authorization.authing = true;
-          if ("token" === args.response_type) {
-            socket.authorization.authing = false;
-            let obj4 = { errorCode: constants.INVALID_COMMAND };
+      if (null != client_id) {
+        if ("" !== client_id) {
+          if (null != socket.authorization.accessToken) {
+            let tmp26 = importDefault;
+            let obj2 = { errorCode: constants.INVALID_COMMAND };
+            let self7 = this;
+            let str5 = "Already authenticated";
+            let self8 = this;
+            const tmp30 = new RPCErrorDefault(obj2, "Already authenticated");
+            throw tmp30;
+          } else if (socket.authorization.authing) {
+            const obj3 = { errorCode: constants.INVALID_COMMAND };
             let self5 = this;
             let self6 = this;
-            let tmp26 = new RPCErrorDefault(obj4, "Authorization response_type \"token\" is not supported");
-            throw tmp26;
+            const tmp24 = new RPCErrorDefault(obj3, "Already authing");
+            throw tmp24;
           } else {
-            const scopes = socket.authorization.scopes;
-            hasItem = scopes.has(unpackModuleId);
-            if (!hasItem) {
-              if (socket.application.id !== client_id) {
-                socket.authorization.authing = false;
-                let tmp10 = dependencyMap;
-                let obj5 = { errorCode: constants.INVALID_CLIENTID };
-                let self3 = this;
-                let self4 = this;
-                const tmp13 = new RPCErrorDefault(obj5, "Application does not match the connection's");
-                throw tmp13;
-              }
-            }
-            const tmp15 = args.scopes || args.scope;
-            delete args["scopes"];
-            const obj6 = { scope: tmp15, signal: tmp, isSocketRpcPrivateScope: hasItem };
-            const merged = Object.assign(args);
-            const promise = authorizeWithPrompt(obj6, closure_0, closure_1);
-            const nextPromise = promise.then(function(location) {
+            socket.authorization.authing = true;
+            if ("token" === args.response_type) {
               socket.authorization.authing = false;
-              if (null == location) {
-                const self5 = this;
-                const self6 = this;
-                const obj2 = { errorCode: constants.UNKNOWN_ERROR };
-                const tmp19 = new closure_2_1(closure_2_3[10])(obj2, "Unknown error occurred");
-                throw tmp19;
-              } else {
-                const _URL = URL;
-                const self7 = this;
-                const self8 = this;
-                const uRL = new URL(location);
-                const searchParams3 = uRL.searchParams;
-                const value = searchParams3.get("code");
-                const tmp26 = hasItem;
-                if (tmp26) {
-                  return { code: value, location };
-                } else {
-                  const searchParams = uRL.searchParams;
-                  const value2 = searchParams.get("error");
-                  if (null != value2) {
-                    if ("" !== value2) {
-                      const searchParams2 = uRL.searchParams;
-                      let str5 = searchParams2.get("error_description");
-                      if (str5 == null) {
-                        str5 = "unknown error";
-                      }
-                      const _HermesInternal = HermesInternal;
-                      const self3 = this;
-                      const self4 = this;
-                      const obj4 = { errorCode: constants.OAUTH2_ERROR };
-                      const tmp10 = closure_2_1(closure_2_3[10]);
-                      const tmp102 = new tmp10(obj4, "OAuth2 Error: " + value2 + ": " + str5);
-                      throw tmp102;
-                    }
-                  }
-                  if (null == value) {
-                    const self = this;
-                    const self2 = this;
-                    const obj5 = { errorCode: constants.OAUTH2_ERROR };
-                    const tmp6 = new closure_2_1(closure_2_3[10])(obj5, "OAuth2 Error: Unable to find auth code");
-                    throw tmp6;
-                  } else {
-                    return { code: value };
-                  }
+              let obj4 = { errorCode: constants.INVALID_COMMAND };
+              let self3 = this;
+              let self4 = this;
+              const tmp18 = new RPCErrorDefault(obj4, "Authorization response_type \"token\" is not supported");
+              let tmp19 = tmp18;
+              throw tmp18;
+            } else {
+              const scopes = socket.authorization.scopes;
+              hasItem = scopes.has(unpackModuleId);
+              if (!hasItem) {
+                if (socket.application.id !== client_id) {
+                  socket.authorization.authing = false;
+                  obj = { errorCode: constants.INVALID_CLIENTID };
+                  let self = this;
+                  let self2 = this;
+                  let tmp6 = new RPCErrorDefault(obj, "Application does not match the connection's");
+                  throw tmp6;
                 }
               }
-            });
-            return nextPromise.catch((error) => {
-              socket.authorization.authing = false;
-              throw error;
-            });
+              if (null != args.scopes) {
+                let scope;
+                if ("" !== args.scopes) {
+                  scope = args.scopes;
+                }
+                delete args["scopes"];
+                let obj5 = { scope, signal: tmp, isSocketRpcPrivateScope: hasItem };
+                let tmp10 = args;
+                const merged = Object.assign(args);
+                const promise = authorizeWithPrompt(obj5, closure_0, closure_1);
+                const nextPromise = promise.then(function(location) {
+                  socket.authorization.authing = false;
+                  if (null == location) {
+                    const self5 = this;
+                    const self6 = this;
+                    const obj2 = { errorCode: constants.UNKNOWN_ERROR };
+                    const tmp19 = new closure_2_1(closure_2_3[10])(obj2, "Unknown error occurred");
+                    throw tmp19;
+                  } else {
+                    const _URL = URL;
+                    const self7 = this;
+                    const self8 = this;
+                    const uRL = new URL(location);
+                    const searchParams3 = uRL.searchParams;
+                    const value = searchParams3.get("code");
+                    const tmp26 = hasItem;
+                    if (tmp26) {
+                      return { code: value, location };
+                    } else {
+                      const searchParams = uRL.searchParams;
+                      const value2 = searchParams.get("error");
+                      if (null != value2) {
+                        if ("" !== value2) {
+                          const searchParams2 = uRL.searchParams;
+                          let str5 = searchParams2.get("error_description");
+                          if (str5 == null) {
+                            str5 = "unknown error";
+                          }
+                          const _HermesInternal = HermesInternal;
+                          const self3 = this;
+                          const self4 = this;
+                          const obj4 = { errorCode: constants.OAUTH2_ERROR };
+                          const tmp10 = closure_2_1(closure_2_3[10]);
+                          const tmp102 = new tmp10(obj4, "OAuth2 Error: " + value2 + ": " + str5);
+                          throw tmp102;
+                        }
+                      }
+                      if (null == value) {
+                        const self = this;
+                        const self2 = this;
+                        const obj5 = { errorCode: constants.OAUTH2_ERROR };
+                        const tmp6 = new closure_2_1(closure_2_3[10])(obj5, "OAuth2 Error: Unable to find auth code");
+                        throw tmp6;
+                      } else {
+                        return { code: value };
+                      }
+                    }
+                  }
+                });
+                return nextPromise.catch((error) => {
+                  socket.authorization.authing = false;
+                  throw error;
+                });
+              }
+              scope = args.scope;
+            }
           }
         }
-      } else {
-        obj = { errorCode: constants.INVALID_CLIENTID };
-        let self = this;
-        let self2 = this;
-        let tmp6 = new RPCErrorDefault(obj, "No client id provided");
-        throw tmp6;
       }
+      const obj6 = { errorCode: constants.INVALID_CLIENTID };
+      const tmp32 = new RPCErrorDefault(obj6, "No client id provided");
+      throw tmp32;
     }
   };
+  obj[AUTHORIZE] = obj4.createRPCCommand(constants.AUTHORIZE, obj5);
   return obj;
 };
 export const AUTHORIZE_PROMPT_THROTTLERS = obj;

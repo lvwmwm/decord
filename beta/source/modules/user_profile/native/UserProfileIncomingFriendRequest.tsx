@@ -1,16 +1,16 @@
-// Module ID: 13419
-// Function ID: 13420
+// Module ID: 14198
+// Function ID: 14199
 // Name: UserProfileIncomingFriendRequest
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8363, 8310, 6852, 13420, 5409, 6858, 5088, 1126, 1200, 1415, 13421, 5379, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 8641, 8588, 7130, 14199, 5509, 7134, 5187, 1128, 1202, 1417, 14200, 5479, 2]
 
-// Module 13419 (UserProfileIncomingFriendRequest)
+// Module 14198 (UserProfileIncomingFriendRequest)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import native from "native" /* 1202 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

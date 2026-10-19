@@ -1,19 +1,19 @@
-// Module ID: 17482
-// Function ID: 17483
+// Module ID: 17864
+// Function ID: 17865
 // Name: ThreadListEmpty
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1200, 11938, 1126, 5088, 5379, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1202, 12899, 1128, 5187, 5479, 2]
 
-// Module 17482 (ThreadListEmpty)
+// Module 17864 (ThreadListEmpty)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11938 */;
+import intl4 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12899 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const container = tmp4.container;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM };
-    const Icon = tmp(1200).Icon;
+    const Icon = tmp(1202).Icon;
     const tmp8 = React3(Icon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -61,7 +61,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   const title = tmp4.title;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t.HgTQ8p);
     cResult[3] = stringResult;
     tmp13 = stringResult;
@@ -79,7 +79,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   const subtext = tmp4.subtext;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl4.t.jmq9GC);
     cResult[6] = stringResult1;
     tmp18 = stringResult1;
@@ -99,8 +99,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     let tmp25 = null != onCreateThreadPress;
     if (tmp25) {
       const obj6 = { onPress: onCreateThreadPress, text: intl3.string(intl4.t.rBIGBL) };
-      const Button = tmp(5379).Button;
-      intl3 = tmp(1126).intl;
+      const Button = tmp(5479).Button;
+      intl3 = tmp(1128).intl;
       tmp25 = React3(Button, obj6);
     }
     cResult[9] = onCreateThreadPress;
@@ -160,8 +160,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const tmp4 = React3;
   if (tmp4Result) {
     const obj6 = { onPress: onCreateThreadPress, text: intl3.string(intl4.t.rBIGBL) };
-    const Button = tmp5(5379).Button;
-    intl3 = tmp5(1126).intl;
+    const Button = tmp5(5479).Button;
+    intl3 = tmp5(1128).intl;
     tmp4Result = tmp4(Button, obj6);
   }
   items[3] = tmp4Result;

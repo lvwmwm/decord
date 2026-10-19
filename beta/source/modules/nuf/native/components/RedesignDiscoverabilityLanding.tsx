@@ -1,22 +1,22 @@
-// Module ID: 18209
-// Function ID: 18210
+// Module ID: 18601
+// Function ID: 18602
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1631, 6259, 1126, 5088, 18210, 12409, 5379, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1633, 6536, 1128, 5187, 18602, 13350, 5479, 2]
 
-// Module 18209 (RedesignDiscoverabilityLanding)
+// Module 18601 (RedesignDiscoverabilityLanding)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl6 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import NavigatorConstants from "NavigatorConstants" /* 6259 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12409 */;
-import LanternSpotIllustration from "LanternSpotIllustration" /* 18210 */;
+import intl6 from "intl" /* 1128 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import NavigatorConstants from "NavigatorConstants" /* 6536 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13350 */;
+import LanternSpotIllustration from "LanternSpotIllustration" /* 18602 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignDi
   }
   const title = tmp4.title;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl6.t.n8nw6j);
     cResult[4] = stringResult;
     tmp12 = stringResult;
@@ -100,7 +100,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignDi
   }
   const subtitle = tmp4.subtitle;
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl6.t.KMW0kP);
     cResult[7] = stringResult1;
     tmp17 = stringResult1;
@@ -134,7 +134,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignDi
   }
   const info = tmp4.info;
   if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     const stringResult2 = intl3.string(intl6.t.ci12MJ);
     cResult[13] = stringResult2;
     tmp29 = stringResult2;
@@ -142,7 +142,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignDi
     tmp29 = cResult[13];
   }
   if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1126).intl;
+    const intl4 = tmp(1128).intl;
     const obj7 = {
       learnMoreHook: function LearnMore(children, arg1) {
           const obj = { onPress: ContactSyncUtils.handleOpenLearnMoreLink, variant: "text-sm/medium", color: "text-link", children };
@@ -176,7 +176,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignDi
     tmp36 = cResult[18];
   }
   if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl5 = tmp(1126).intl;
+    const intl5 = tmp(1128).intl;
     const stringResult3 = intl5.string(intl6.t.gHPk3I);
     cResult[19] = stringResult3;
     tmp40 = stringResult3;

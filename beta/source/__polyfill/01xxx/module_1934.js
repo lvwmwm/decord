@@ -4,59 +4,55 @@
 
 // Module 1934
 const obj = {
-  locale: "ru",
+  locale: "pt",
   pluralRuleFunction(arg0, arg1) {
-    let arr;
-    let str6;
-    let tmp2;
-    const str = String(arg0);
-    const parts = str.split(".");
-    [arr, tmp2] = parts;
-    const substr = arr.slice(-1);
-    const substr1 = arr.slice(-2);
-    let str2 = "other";
+    String(arg0);
+    let str = "other";
     if (!arg1) {
-      let str3;
-      let str5;
-      if (!tmp2) {
-        if (1 == substr) {
-          str3 = "one";
-        }
-        str2 = str3;
-      }
-      if (!tmp2) {
-        if (substr >= 2) {
-          if (substr <= 4) {
-            str5 = "few";
-            if (substr1 >= 12) {
-              str5 = "few";
+      let str2 = "other";
+      if (tmp2) {
+        str2 = "other";
+        if (arg0 >= 0) {
+          str2 = "other";
+          if (arg0 <= 2) {
+            str2 = "other";
+            if (2 != arg0) {
+              str2 = "one";
             }
           }
-          str3 = str5;
         }
       }
-      if (tmp2) {
-        if (!tmp2) {
-          if (substr >= 5) {
-            str5 = str6;
-          }
-        }
-        str6 = "other";
-        if (!tmp2) {
-          str6 = "other";
-          if (substr1 >= 11) {
-            str6 = "other";
-          }
+      str = str2;
+    }
+    return str;
+  }
+};
+globalThis.IntlMessageFormat.__addLocaleData(obj);
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "pt-AO", parentLocale: "pt-PT" });
+const obj2 = {
+  locale: "pt-PT",
+  parentLocale: "pt",
+  pluralRuleFunction(arg0, arg1) {
+    let str2 = "other";
+    const str = String(arg0);
+    const tmp = str.split(".")[1];
+    if (!arg1) {
+      let str3 = "other";
+      if (1 == arg0) {
+        str3 = "other";
+        if (!tmp) {
+          str3 = "one";
         }
       }
-      str6 = "many";
+      str2 = str3;
     }
     return str2;
   }
 };
-globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "ru-BY", parentLocale: "ru" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "ru-KG", parentLocale: "ru" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "ru-KZ", parentLocale: "ru" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "ru-MD", parentLocale: "ru" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "ru-UA", parentLocale: "ru" });
+globalThis.IntlMessageFormat.__addLocaleData(obj2);
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "pt-CV", parentLocale: "pt-PT" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "pt-GW", parentLocale: "pt-PT" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "pt-MO", parentLocale: "pt-PT" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "pt-MZ", parentLocale: "pt-PT" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "pt-ST", parentLocale: "pt-PT" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "pt-TL", parentLocale: "pt-PT" });

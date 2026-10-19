@@ -1,8 +1,8 @@
-// Module ID: 13206
-// Function ID: 13207
+// Module ID: 14131
+// Function ID: 14132
 // Dependencies: [2]
 
-// Module 13206
+// Module 14131
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/StreamingTier10LargeBadge-3x.png.js");

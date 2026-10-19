@@ -1,10 +1,10 @@
-// Module ID: 16673
-// Function ID: 16674
+// Module ID: 17359
+// Function ID: 17360
 // Name: showChannelItemEmbeddedActivities
 // Dependencies: [2]
 // Exports: showChannelItemEmbeddedActivities
 
-// Module 16673 (showChannelItemEmbeddedActivities)
+// Module 17359 (showChannelItemEmbeddedActivities)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_sidebar/showChannelItemEmbeddedActivities.tsx");

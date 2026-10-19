@@ -1,14 +1,14 @@
-// Module ID: 10495
-// Function ID: 10496
+// Module ID: 10818
+// Function ID: 10819
 // Name: actions/GiftCodeActionCreators
-// Dependencies: [5, 1085, 7137, 10496, 584, 1295, 1265, 5635, 5934, 10501, 2000, 2]
+// Dependencies: [5, 1087, 7408, 10819, 584, 1297, 1267, 5891, 6190, 10824, 2002, 2]
 // Exports: openGiftCodeRedeemModal, redeemGiftCode
 
-// Module 10495 (actions/GiftCodeActionCreators)
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+// Module 10818 (actions/GiftCodeActionCreators)
+import asyncRequire from "asyncRequire" /* 2002 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let channel_id, closure_1, closure_2, closure_3, code, entitlement, id;
@@ -73,7 +73,7 @@ let value = function _redeemGiftCode() {
               billingError = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -175,7 +175,7 @@ let value = function _redeemGiftCode() {
 function openGiftCodeRedeemModal(c0, fromServer) {
   const obj = ModalActionCreatorsDefault;
   const obj2 = { code: c0, giftCodeDebugOverride: fromServer };
-  obj.pushLazy(asyncRequire(10501, dependencyMap.paths), obj2, "GIFT_CODE_REDEEM_MODAL_KEY");
+  obj.pushLazy(asyncRequire(10824, dependencyMap.paths), obj2, "GIFT_CODE_REDEEM_MODAL_KEY");
 }
 ({ Endpoints: closure_4, AnalyticEvents: hasOwnProperty } = Constants);
 let closure_6 = Object.freeze({});

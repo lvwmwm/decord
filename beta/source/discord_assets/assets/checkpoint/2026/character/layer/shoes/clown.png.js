@@ -1,8 +1,8 @@
-// Module ID: 5491
-// Function ID: 5492
+// Module ID: 5617
+// Function ID: 5618
 // Dependencies: [2]
 
-// Module 5491
+// Module 5617
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/shoes/clown.png.js");

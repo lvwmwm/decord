@@ -1,14 +1,14 @@
-// Module ID: 11725
-// Function ID: 11726
+// Module ID: 11860
+// Function ID: 11861
 // Name: AppLauncherOnboardingStore
-// Dependencies: [1390, 11, 11723, 7242, 504, 584, 2]
+// Dependencies: [1392, 11, 11858, 7513, 504, 584, 2]
 
-// Module 11725 (AppLauncherOnboardingStore)
+// Module 11860 (AppLauncherOnboardingStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7242 */;
-import UserStore from "UserStore" /* 1390 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7513 */;
+import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 const Store = get_initializedDefault.Store;

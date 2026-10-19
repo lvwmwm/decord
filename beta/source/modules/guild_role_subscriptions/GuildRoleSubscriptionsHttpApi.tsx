@@ -1,13 +1,13 @@
-// Module ID: 6959
-// Function ID: 6960
+// Module ID: 7233
+// Function ID: 7234
 // Name: GuildRoleSubscriptionsHttpApi
-// Dependencies: [5, 1085, 1096, 1295, 5635, 2]
+// Dependencies: [5, 1087, 1098, 1297, 5891, 2]
 // Exports: archiveGuildRoleSubscriptionListing, createGuildRoleSubscriptionGroupListing, createGuildRoleSubscriptionListing, deleteGuildRoleSubscriptionGroupListing, deleteGuildRoleSubscriptionListing, fetchHighlightedCreatorGuildDetails, getGuildMonetizationRestrictions, getGuildRoleSubscriptionGroupForSubscriptionPlan, getGuildRoleSubscriptionGroupListing, getGuildRoleSubscriptionGroupListingsForGuild, getGuildRoleSubscriptionTrialEligibility, getGuildRoleSubscriptionTrials, getGuildRoleSubscriptionsSettings, getPriceTiers, updateGuildRoleSubscriptionGroupListing, updateGuildRoleSubscriptionListing, updateGuildRoleSubscriptionsSettings, updateGuildRoleSubscriptionsTrial
 
-// Module 6959 (GuildRoleSubscriptionsHttpApi)
-import Constants from "Constants" /* 1085 */;
-import Constants2 from "Constants" /* 1096 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
+// Module 7233 (GuildRoleSubscriptionsHttpApi)
+import Constants from "Constants" /* 1087 */;
+import Constants2 from "Constants" /* 1098 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -279,7 +279,7 @@ obj = function _createGuildRoleSubscriptionListing() {
               closure_3 = Object.assign(priceTier, Object.assign({ priceTier: 0 }));
               c7 = 1;
               c8 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -377,7 +377,7 @@ obj = function _updateGuildRoleSubscriptionListing() {
               closure_4 = Object.assign(priceTier, Object.assign({ priceTier: 0 }));
               c8 = 1;
               c9 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {
@@ -476,7 +476,7 @@ obj = function _getGuildRoleSubscriptionGroupListingsForGuild() {
             obj6 = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c6) {
           if (arg0 === 1) {
@@ -739,7 +739,7 @@ obj = function _getGuildRoleSubscriptionGroupListing() {
             }
             c7 = 1;
             c8 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {
@@ -1291,7 +1291,7 @@ obj = function _getGuildMonetizationRestrictions() {
             signal = obj4.signal;
             c6 = 1;
             c7 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c6) {
           if (arg0 === 1) {
@@ -1380,7 +1380,7 @@ obj = function _fetchHighlightedCreatorGuildDetails() {
             closure_0 = undefined;
             c5 = 1;
             const HTTP = HTTPUtils.HTTP;
-            const obj4 = { url: Endpoints.GUILD_DISCOVERY_SLUG(closure_0), rejectWithError: obj7.rejectWithMigratedError() };
+            const obj4 = { url: Endpoints.GUILD_WEB_PAGE(closure_0), rejectWithError: obj7.rejectWithMigratedError() };
             const get = HTTP.get;
             obj7 = HTTPUtils;
             c6 = 2;
@@ -1388,39 +1388,42 @@ obj = function _fetchHighlightedCreatorGuildDetails() {
             const obj5 = { value: get(obj4), done: false };
             return obj5;
           }
-        } else if (1 === c6) {
-          c5 = 0;
-          value = closure_4;
-          const self = this;
-          const self2 = this;
-          const aPIError = new closure_131_0(closure_131_1[4]).APIError(value);
-          throw aPIError;
-        } else if (arg0 === 1) {
-          c7 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 0;
-          c7 = 3;
-          const obj6 = { value, done: true };
-          return obj6;
         } else {
-          closure_0 = value;
-          const body = closure_0.body;
-          value = body;
-          if (body == null) {
-            const _JSON = JSON;
-            value = JSON.parse(closure_0.text);
+          let data;
+          if (1 === c6) {
+            c5 = 0;
+            data = closure_4;
+            const self = this;
+            const self2 = this;
+            const aPIError = new closure_131_0(closure_131_1[4]).APIError(data);
+            throw aPIError;
+          } else if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 0;
+            c7 = 3;
+            const obj6 = { value, done: true };
+            return obj6;
+          } else {
+            closure_0 = value;
+            const body = closure_0.body;
+            data = body;
+            if (body == null) {
+              const _JSON = JSON;
+              data = JSON.parse(closure_0.text);
+            }
+            c5 = 0;
+            c7 = 3;
+            obj = { value: data.data, done: true };
+            return obj;
           }
-          c5 = 0;
-          c7 = 3;
-          obj = { value, done: true };
-          return obj;
         }
-      } catch (tmp18) {
-        closure_4 = tmp18;
+      } catch (tmp19) {
+        closure_4 = tmp19;
         if (0 === c5) {
           c7 = 3;
-          throw tmp18;
+          throw tmp19;
         } else {
           c6 = 1;
         }

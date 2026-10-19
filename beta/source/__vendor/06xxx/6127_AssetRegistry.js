@@ -1,0 +1,10 @@
+// Module ID: 6127
+// Function ID: 6128
+// Name: AssetRegistry
+// Dependencies: [1134]
+
+// Module 6127 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1134 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "16b0b46c160f5dbee25bcf55b1de2e19", name: "img_account_sync_mastodon_white", type: "svg" });

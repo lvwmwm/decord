@@ -1,10 +1,10 @@
 // Module ID: 10758
 // Function ID: 10759
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 10758 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/shared_components/user_list/images", width: 24, height: 24, scales: [2, 3, 4], hash: "a7182f0f94a36e3c4d169065a673c788", name: "icon-new-group", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "88df5c832b935fed96e52c66883efce1", name: "CircleXIcon", type: "png" });

@@ -1,30 +1,30 @@
-// Module ID: 10034
-// Function ID: 10035
+// Module ID: 10337
+// Function ID: 10338
 // Name: MediaKeyboardItem
-// Dependencies: [19, 17, 7903, 10035, 21, 4850, 5092, 587, 4967, 558, 576, 1200, 9766, 5088, 7762, 504, 10036, 1126, 7782, 7764, 10037, 10038, 5093, 1497, 10039, 8210, 10024, 2]
+// Dependencies: [19, 17, 8175, 10338, 21, 4945, 5191, 587, 5063, 558, 576, 1202, 10069, 5187, 8033, 504, 10339, 1128, 8054, 8035, 10340, 10341, 5192, 1499, 10342, 8487, 10327, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10034 (MediaKeyboardItem)
+// Module 10337 (MediaKeyboardItem)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4850 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import timing from "timing" /* 5093 */;
-import ImageIcon from "ImageIcon" /* 8210 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9766 */;
-import AttachmentIcon from "AttachmentIcon" /* 10024 */;
-import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10036 */;
-import CameraIcon from "CameraIcon" /* 10039 */;
+import intl3 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4945 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import timing from "timing" /* 5192 */;
+import ImageIcon from "ImageIcon" /* 8487 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10069 */;
+import AttachmentIcon from "AttachmentIcon" /* 10327 */;
+import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10339 */;
+import CameraIcon from "CameraIcon" /* 10342 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7903 */;
-import DeviceConstants from "DeviceConstants" /* 10035 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8175 */;
+import DeviceConstants from "DeviceConstants" /* 10338 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
-import ColorUtils_mod from "ColorUtils" /* 4967 */;
+import createStyles_mod from "createStyles" /* 5191 */;
+import ColorUtils_mod from "ColorUtils" /* 5063 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -199,7 +199,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewCap
     }
     if (cResult[3] !== tmp4.icon) {
       const obj2 = { source: AssetRegistryDefault, style: tmp4.icon };
-      const Icon = tmp(1200).Icon;
+      const Icon = tmp(1202).Icon;
       const tmp9 = React4(Icon, obj2);
       cResult[3] = tmp4.icon;
       cResult[4] = tmp9;
@@ -842,66 +842,66 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaK
       }
     }
     if (isIncluded.VIDEO !== type) {
-      let tmp12;
+      let tmp13;
       if (constants.VIDEO !== type) {
         if (isIncluded.PHOTO === type) {
-          tmp12 = null;
+          tmp13 = null;
           const tmp2Result = tmp2(tmp3[19]);
           if ("image/gif" === tmp2Result.getType(image.uri)) {
             let obj2 = { style: tmp.mediaKeyboardItemLabelContainer, label: "GIF" };
-            tmp12 = closure_9(tmp2(tmp3[20]).Caption, obj2);
+            tmp13 = closure_9(tmp2(tmp3[20]).Caption, obj2);
           }
         } else {
-          tmp12 = null;
+          tmp13 = null;
         }
       }
-      let tmp16 = !tmp5;
-      if (tmp16) {
-        tmp16 = uploadCount >= uploadLimit && disableWhenReachedLimit || disabled;
+      let tmp17 = !tmp5;
+      if (tmp17) {
+        tmp17 = uploadCount >= uploadLimit && disableWhenReachedLimit || disabled;
       }
       const obj3 = { style: tmp.checkIconContainer, children: closure_9(Icon, obj4) };
       obj4 = { source: item(tmp3[21]), disableColor: false, color: tmp.checkIcon.color, style: tmp.checkIcon };
       Icon = tmp2(tmp3[11]).Icon;
-      const obj5 = { accessibilityRole: "button", accessibilityLabel: stringResult, accessibilityState: obj6, onPress: tmp7, onLongPress: tmp8, disabled: tmp16, style: items3, children: items5 };
+      const obj5 = { accessibilityRole: "button", accessibilityLabel: stringResult, accessibilityState: obj6, onPress: tmp7, onLongPress: tmp8, disabled: tmp17, style: items3, children: items5 };
       items3 = [tmp.imageContainer, , ];
       let imageDisabled;
       obj6 = { selected: null != stateFromStoresObject.upload };
-      const tmp21 = closure_9(onLongPressItem, obj3);
-      const tmp19 = onLongPressItem;
-      const tmp23 = closure_13(index, numItemsPerRow, totalNumItems);
-      const tmp24 = closure_10;
-      const tmp25 = includedUploadIds;
-      if (tmp16) {
+      const tmp22 = closure_9(onLongPressItem, obj3);
+      const tmp20 = onLongPressItem;
+      const tmp24 = closure_13(index, numItemsPerRow, totalNumItems);
+      const tmp25 = closure_10;
+      const tmp26 = includedUploadIds;
+      if (tmp17) {
         imageDisabled = tmp.imageDisabled;
       }
       items3[1] = imageDisabled;
-      items3[2] = tmp23;
+      items3[2] = tmp24;
       const obj7 = { resizeMode: "cover", resizeMethod: "resize", style: items4, source: size2, localImageSource: size3 };
       items4 = [tmp.image, ];
       const size1 = { height: size, width: size };
       items4[1] = size1;
       size2 = { uri: image.uri, width: size, height: size, cache: "force-cache" };
       size3 = { uri: image.uri, width: size, height: size };
-      items5 = [closure_9(tmp2(tmp3[11]).ThumbnailImage, obj7), tmp12, , ];
-      let tmp18Result = null;
+      items5 = [closure_9(tmp2(tmp3[11]).ThumbnailImage, obj7), tmp13, , ];
+      let tmp19Result = null;
       if (null != stateFromStoresObject.upload) {
         const obj8 = { style: items6 };
         items6 = [tmp.selectedOverlay, ];
         const size4 = { height: size, width: size };
         items6[1] = size4;
-        tmp18Result = tmp18(tmp19, obj8);
+        tmp19Result = tmp19(tmp20, obj8);
       }
-      items5[2] = tmp18Result;
-      let tmp28 = null;
+      items5[2] = tmp19Result;
+      let tmp29 = null;
       if (null != stateFromStoresObject.upload) {
-        tmp28 = tmp21;
+        tmp29 = tmp22;
       }
-      items5[3] = tmp28;
-      return tmp24(tmp25, obj5);
+      items5[3] = tmp29;
+      return tmp25(tmp26, obj5);
     }
     const obj9 = { label: tmp2Result2.getTimeFormat(image.playableDuration) };
     tmp2Result2 = tmp2(tmp3[18]);
-    tmp12 = closure_9(closure_14, obj9);
+    tmp13 = closure_9(closure_14, obj9);
   }
   const intl2 = tmp2(tmp3[17]).intl;
   stringResult = intl2.string(tmp2(tmp3[17]).t.SkfkEJ);

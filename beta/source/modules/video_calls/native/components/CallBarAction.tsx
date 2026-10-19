@@ -1,20 +1,20 @@
-// Module ID: 10842
-// Function ID: 10843
+// Module ID: 11242
+// Function ID: 11243
 // Name: CallBarAction
-// Dependencies: [109, 19, 17, 10355, 21, 4967, 587, 5092, 558, 576, 10843, 10844, 6157, 6185, 5088, 2]
+// Dependencies: [109, 19, 17, 10662, 21, 5063, 587, 5191, 558, 576, 11243, 11244, 5128, 6462, 5187, 2]
 
-// Module 10842 (CallBarAction)
+// Module 11242 (CallBarAction)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Pressables from "Pressables" /* 6185 */;
-import ChannelCallStore from "ChannelCallStore" /* 10355 */;
-import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 10844 */;
+import Pressables from "Pressables" /* 6462 */;
+import ChannelCallStore from "ChannelCallStore" /* 10662 */;
+import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 11244 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ColorUtils from "ColorUtils" /* 4967 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import ColorUtils from "ColorUtils" /* 5063 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj3;
 let rect;
 let tmp;
 let unpackModuleId;
-const Text_Text = tmp(5088);
+const Text_Text = tmp(5187);
 let closure_3 = ["isActive", "disableTint", "showBadge", "isSmallSize", "backgroundColor", "tintColor"];
 let closure_4 = ["isSmallSize"];
 let closure_5 = ["notifications", "isMentioned"];
@@ -192,7 +192,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionButton
                                                 }
                                               }
                                               const obj3 = { accessibilityLabel, accessibilityRole: "button", accessibilityState, onPress: tmp15, disabled: false, style: tmp16, children: tmp41 };
-                                              const tmp47 = closure_10(onPress(6185).PressableOpacity, obj3);
+                                              const tmp47 = closure_10(onPress(6462).PressableOpacity, obj3);
                                               cResult[46] = accessibilityLabel;
                                               cResult[47] = accessibilityState;
                                               cResult[48] = tmp41;
@@ -223,9 +223,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionButton
                                 const obj5 = { style: items1 };
                                 items1 = [tmp7.badge, ];
                                 const size1 = { width: result1, height: result1, borderRadius: tmp11.badgeRadius, top: tmpResult.getBadgeTop(tmp11.badgeRadius, tmp11.buttonRadius, cutoutPositionInDegrees), left: tmpResult2.getBadgeLeft(tmp11.badgeRadius, tmp11.buttonRadius, cutoutPositionInDegrees) };
-                                tmpResult = onPress(10844);
+                                tmpResult = onPress(11244);
                                 items1[1] = size1;
-                                tmpResult2 = onPress(10844);
+                                tmpResult2 = onPress(11244);
                                 tmp37 = closure_10(View, obj5);
                               }
                               cResult[34] = tmp11.badgeRadius;
@@ -254,7 +254,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionButton
                       cloneElementResult = closure_10(IconComponent, obj8);
                     } else {
                       const obj9 = { source, style: imageStyle };
-                      cloneElementResult = closure_10(tmp8(6157), obj9);
+                      cloneElementResult = closure_10(tmp8(5128), obj9);
                     }
                     cResult[25] = IconComponent;
                     cResult[26] = imageStyle;
@@ -384,7 +384,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionButton
     cloneElementResult = tmp10(IconComponent, obj6);
   } else {
     const obj7 = { source, style: imageStyle };
-    cloneElementResult = tmp10(tmp2(6157), obj7);
+    cloneElementResult = tmp10(tmp2(5128), obj7);
   }
   items1[1] = closure_10(View, obj4);
   let tmp10Result = null;

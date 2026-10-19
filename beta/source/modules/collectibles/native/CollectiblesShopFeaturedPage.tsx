@@ -1,19 +1,19 @@
-// Module ID: 16219
-// Function ID: 16220
+// Module ID: 16910
+// Function ID: 16911
 // Name: CollectiblesShopFeaturedPage
-// Dependencies: [19, 17, 1087, 21, 5092, 558, 576, 1200, 8354, 1126, 16220, 2]
+// Dependencies: [19, 17, 1089, 21, 5191, 558, 576, 1202, 8632, 1128, 16911, 2]
 
-// Module 16219 (CollectiblesShopFeaturedPage)
+// Module 16910 (CollectiblesShopFeaturedPage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import generated_NoResults from "generated/NoResults" /* 8354 */;
-import ShopBlockItemDefault from "ShopBlockItem" /* 16220 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
+import intl2 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import generated_NoResults from "generated/NoResults" /* 8632 */;
+import ShopBlockItemDefault from "ShopBlockItem" /* 16911 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,8 +54,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((shopBlock) => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const EmptyState = tmp(1200).EmptyState;
-    const intl = tmp(1126).intl;
+    const EmptyState = tmp(1202).EmptyState;
+    const intl = tmp(1128).intl;
     const tmp13 = <EmptyState style={first} Illustration={generated_NoResults.NoResults} body={intl.string(intl2.t.eAn6z2)} />;
     cResult[1] = tmp13;
     tmp11 = tmp13;

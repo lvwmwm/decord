@@ -1,23 +1,23 @@
-// Module ID: 15571
-// Function ID: 15572
+// Module ID: 16331
+// Function ID: 16332
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [19, 17, 15572, 1085, 21, 4850, 1200, 5092, 587, 558, 576, 5362, 12, 5057, 1254, 1126, 15573, 5093, 5096, 9500, 5088, 1628, 10117, 15576, 2]
+// Dependencies: [19, 17, 16332, 1087, 21, 4945, 1202, 5191, 587, 558, 576, 5462, 12, 5156, 1256, 1128, 16333, 5192, 5195, 9803, 5187, 1630, 10419, 16336, 2]
 
-// Module 15571 (SettingsAppearanceThemeCarousel)
+// Module 16331 (SettingsAppearanceThemeCarousel)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1254 */;
-import HapticUtils from "HapticUtils" /* 5057 */;
-import timing from "timing" /* 5093 */;
+import Constants from "Constants" /* 1087 */;
+import intl4 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1256 */;
+import HapticUtils from "HapticUtils" /* 5156 */;
+import timing from "timing" /* 5192 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15572 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16332 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj6;
 let obj7;
 let size;
 let tmp;
-const timingPresets = tmp(5096);
+const timingPresets = tmp(5195);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
 const ThemeTypes = Constants.ThemeTypes;
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);

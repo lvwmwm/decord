@@ -1,23 +1,23 @@
-// Module ID: 8697
-// Function ID: 8698
+// Module ID: 7247
+// Function ID: 7248
 // Name: ThreadMemberListStore
-// Dependencies: [32, 2065, 2125, 6980, 5108, 5759, 1390, 1085, 12, 11, 4755, 4962, 1388, 504, 584, 2]
+// Dependencies: [32, 2068, 2128, 7248, 5207, 6015, 1392, 1087, 12, 11, 4850, 5057, 1388, 504, 584, 2]
 
-// Module 8697 (ThreadMemberListStore)
+// Module 7247 (ThreadMemberListStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
-import UserUtilsDefault from "UserUtils" /* 4962 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
+import UserUtilsDefault from "UserUtils" /* 5057 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 6980 */;
-import PresenceStore from "PresenceStore" /* 5108 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7248 */;
+import PresenceStore from "PresenceStore" /* 5207 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6015 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let closure_13, set, subscribedThreadIds;
@@ -386,6 +386,14 @@ class ThreadMemberListStore extends Store {
       sections = tmp.sections;
     }
     return sections;
+  }
+  isMember(arg0, arg1) {
+    let hasItem = null;
+    if (null != closure_13[arg0]) {
+      const allUserIds = tmp.allUserIds;
+      hasItem = allUserIds.has(arg1);
+    }
+    return hasItem;
   }
   canUserViewChannel(arg0, arg1, arg2) {
     if (null == closure_13[arg0]) {

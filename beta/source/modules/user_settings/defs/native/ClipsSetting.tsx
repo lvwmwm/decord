@@ -1,13 +1,13 @@
-// Module ID: 15259
-// Function ID: 15260
+// Module ID: 16019
+// Function ID: 16020
 // Name: ClipsSetting
-// Dependencies: [1085, 10664, 1126, 15260, 15262, 2]
+// Dependencies: [1087, 11084, 1128, 16020, 16022, 2]
 
-// Module 15259 (ClipsSetting)
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import ClipsIcon from "ClipsIcon" /* 15260 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
+// Module 16019 (ClipsSetting)
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import ClipsIcon from "ClipsIcon" /* 16020 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

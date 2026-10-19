@@ -1,19 +1,19 @@
-// Module ID: 18390
-// Function ID: 18391
+// Module ID: 18786
+// Function ID: 18787
 // Name: GuildSettingsServerTagBadgeGrid
-// Dependencies: [19, 17, 7883, 21, 587, 5092, 558, 576, 18391, 12222, 5088, 1126, 18392, 18393, 14148, 6906, 5377, 2]
+// Dependencies: [19, 17, 8155, 21, 587, 5191, 558, 576, 18787, 13170, 5187, 1128, 18788, 18789, 14930, 7182, 5477, 2]
 
-// Module 18390 (GuildSettingsServerTagBadgeGrid)
+// Module 18786 (GuildSettingsServerTagBadgeGrid)
 import nativeDefault from "native" /* 587 */;
-import GuildTagConstants from "GuildTagConstants" /* 7883 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12222 */;
-import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 18391 */;
-import GuildSettingsServerTagPickerCellDefault from "GuildSettingsServerTagPickerCell" /* 18392 */;
-import getGuildTagBadgeLabelDefault from "getGuildTagBadgeLabel" /* 18393 */;
+import GuildTagConstants from "GuildTagConstants" /* 8155 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13170 */;
+import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 18787 */;
+import GuildSettingsServerTagPickerCellDefault from "GuildSettingsServerTagPickerCell" /* 18788 */;
+import getGuildTagBadgeLabelDefault from "getGuildTagBadgeLabel" /* 18789 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -222,10 +222,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
     openGuildPowerupsModalDefault(obj);
   }, items);
   let obj = { spacing: nativeDefault.space.PX_8, children: items1 };
-  const Stack = guildId(5377).Stack;
-  const obj2 = { variant: "text-md/medium", color: "text-subtle", accessibilityRole: "header", children: intl.string(guildId(1126).t.wRnfnY) };
-  const Text = guildId(5088).Text;
-  intl = guildId(1126).intl;
+  const Stack = guildId(5477).Stack;
+  const obj2 = { variant: "text-md/medium", color: "text-subtle", accessibilityRole: "header", children: intl.string(guildId(1128).t.wRnfnY) };
+  const Text = guildId(5187).Text;
+  intl = guildId(1128).intl;
   items1 = [closure_7(Text, obj2), , ];
   const obj3 = {
     accessibilityRole: "radiogroup",
@@ -249,8 +249,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
   let tmp6Result = lockedBadges.length > 0;
   const tmp9 = closure_5;
   if (tmp6Result) {
-    const obj4 = { accessibilityRole: "button", accessibilityLabel: intl2.string(guildId(1126).t.U5p3GZ), onPress: callback, style: tmp.upsellCard, children: items2 };
-    intl2 = tmp7(1126).intl;
+    const obj4 = { accessibilityRole: "button", accessibilityLabel: intl2.string(guildId(1128).t.U5p3GZ), onPress: callback, style: tmp.upsellCard, children: items2 };
+    intl2 = tmp7(1128).intl;
     const obj5 = {
       style: tmp.upsellPreview,
       children: substr.map((badge) => {
@@ -260,12 +260,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
     };
     substr = lockedBadges.slice(0, 10);
     items2 = [closure_7(tmp9, obj5), , ];
-    const obj6 = { variant: "text-md/medium", color: "text-subtle", style: tmp.upsellText, children: intl3.string(guildId(1126).t.U5p3GZ) };
-    const Text2 = tmp7(5088).Text;
-    intl3 = tmp7(1126).intl;
+    const obj6 = { variant: "text-md/medium", color: "text-subtle", style: tmp.upsellText, children: intl3.string(guildId(1128).t.U5p3GZ) };
+    const Text2 = tmp7(5187).Text;
+    intl3 = tmp7(1128).intl;
     items2[1] = closure_7(Text2, obj6);
     const obj7 = { size: "md", color: nativeDefault.colors.ICON_SUBTLE };
-    const ChevronSmallRightIcon = tmp7(6906).ChevronSmallRightIcon;
+    const ChevronSmallRightIcon = tmp7(7182).ChevronSmallRightIcon;
     items2[2] = closure_7(ChevronSmallRightIcon, obj7);
     tmp6Result = tmp6(closure_4, obj4);
   }

@@ -1,20 +1,20 @@
-// Module ID: 17360
-// Function ID: 17361
+// Module ID: 17741
+// Function ID: 17742
 // Name: ConjureChannelChatToasts
-// Dependencies: [19, 17, 21, 5092, 587, 1126, 558, 576, 4962, 1200, 5088, 6182, 17361, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 1128, 558, 576, 5057, 1202, 5187, 6459, 17742, 2]
 
-// Module 17360 (ConjureChannelChatToasts)
+// Module 17741 (ConjureChannelChatToasts)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
-import UserUtils from "UserUtils" /* 4962 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import Card_Card from "Card/Card" /* 6182 */;
-import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 17361 */;
+import native from "native" /* 1202 */;
+import UserUtils from "UserUtils" /* 5057 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import Card_Card from "Card/Card" /* 6459 */;
+import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 17742 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,11 +51,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatToa
     if ("" === trimmed) {
       let stringResult;
       if (message.stickerItems.length > 0) {
-        const intl2 = tmp(1126).intl;
-        stringResult = intl2.string(tmp(1126).t.kHdYCW);
+        const intl2 = tmp(1128).intl;
+        stringResult = intl2.string(tmp(1128).t.kHdYCW);
       } else {
-        const intl = tmp(1126).intl;
-        stringResult = intl.string(tmp(1126).t["6hGo0c"]);
+        const intl = tmp(1128).intl;
+        stringResult = intl.string(tmp(1128).t["6hGo0c"]);
       }
       trimmed = stringResult;
     }
@@ -75,7 +75,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatToa
     }
     if (cResult[5] !== message.author) {
       const obj3 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "r" };
-      const Avatar = tmp(1200).Avatar;
+      const Avatar = tmp(1202).Avatar;
       const tmp12 = hasOwnProperty(Avatar, obj3);
       cResult[5] = message.author;
       cResult[6] = tmp12;
@@ -173,11 +173,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatToa
   if ("" === trimmed) {
     let stringResult;
     if (message.stickerItems.length > 0) {
-      const intl2 = tmp2(1126).intl;
-      stringResult = intl2.string(tmp2(1126).t.kHdYCW);
+      const intl2 = tmp2(1128).intl;
+      stringResult = intl2.string(tmp2(1128).t.kHdYCW);
     } else {
-      const intl = tmp2(1126).intl;
-      stringResult = intl.string(tmp2(1126).t["6hGo0c"]);
+      const intl = tmp2(1128).intl;
+      stringResult = intl.string(tmp2(1128).t["6hGo0c"]);
     }
     trimmed = stringResult;
   }
@@ -185,9 +185,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatToa
   const obj2 = { style: tmp.opaque, children: metroRequire(Card, obj3) };
   const callback = react.useCallback(() => onOpenChat(message), items);
   obj3 = { variant: "primary", shadow: "high", border: "subtle", style: tmp.card, onPress: callback, children: items1 };
-  Card = tmp2(6182).Card;
+  Card = tmp2(6459).Card;
   const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "r" };
-  const Avatar = tmp2(1200).Avatar;
+  const Avatar = tmp2(1202).Avatar;
   items1 = [hasOwnProperty(Avatar, obj4), ];
   const obj5 = { style: tmp.body, children: items2 };
   items2 = [hasOwnProperty(Text_Text.Text, { variant: "text-xs/semibold", color: "text-default", lineClamp: 1, children: name }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: trimmed })];

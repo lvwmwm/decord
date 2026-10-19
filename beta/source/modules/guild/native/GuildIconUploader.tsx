@@ -1,22 +1,22 @@
-// Module ID: 11355
-// Function ID: 11356
+// Module ID: 12531
+// Function ID: 12532
 // Name: GuildIconUploader
-// Dependencies: [19, 17, 1205, 21, 5092, 587, 4827, 6157, 4969, 11356, 11357, 5088, 1126, 11358, 11359, 6185, 2]
+// Dependencies: [19, 17, 1207, 21, 5191, 587, 4922, 5128, 5065, 12532, 12533, 5187, 1128, 12534, 12535, 6462, 2]
 
-// Module 11355 (GuildIconUploader)
+// Module 12531 (GuildIconUploader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import native from "native" /* 4827 */;
-import shared from "shared" /* 4969 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import Pressables from "Pressables" /* 6185 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11358 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11359 */;
+import intl3 from "intl" /* 1128 */;
+import native from "native" /* 4922 */;
+import shared from "shared" /* 5065 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Pressables from "Pressables" /* 6462 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12534 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12535 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1205 */;
+import ThemeStore from "ThemeStore" /* 1207 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -61,15 +61,15 @@ class GuildIconUploader extends PureComponent {
       const tmp7 = metroRequire;
       const tmp8 = View;
       if (obj6.isThemeDark(ThemeStore.theme)) {
-        tmp10Result = tmp10(11356);
+        tmp10Result = tmp10(12532);
       } else {
-        tmp10Result = tmp10(11357);
+        tmp10Result = tmp10(12533);
       }
       const obj = { source: tmp10Result };
       items2 = [hasOwnProperty(tmp12, obj), ];
       const obj5 = { style: tmp.emptyGuildIconText, variant: "text-xs/bold", color: "text-default", children: str.toUpperCase() };
-      const Text = tmp13(5088).Text;
-      const intl = tmp13(1126).intl;
+      const Text = tmp13(5187).Text;
+      const intl = tmp13(1128).intl;
       str = intl.string(intl3.t["3UB9ad"]);
       items2[1] = hasOwnProperty(Text, obj5);
       tmp7Result = tmp7(tmp8, obj4);
@@ -120,11 +120,11 @@ class GuildIconUploader extends PureComponent {
     ({ style, onPress, icon } = this.props);
     const PressableOpacity = Pressables.PressableOpacity;
     if (null != icon) {
-      const intl2 = tmp3(1126).intl;
-      stringResult = intl2.string(tmp3(1126).t.VATxfe);
+      const intl2 = tmp3(1128).intl;
+      stringResult = intl2.string(tmp3(1128).t.VATxfe);
     } else {
-      const intl = tmp3(1126).intl;
-      stringResult = intl.string(tmp3(1126).t["MsUY/S"]);
+      const intl = tmp3(1128).intl;
+      stringResult = intl.string(tmp3(1128).t["MsUY/S"]);
     }
     const obj = { accessibilityRole: "button", accessibilityLabel: stringResult, onPress, children: metroRequire(View, obj2) };
     obj2 = { style: items, children: items1 };

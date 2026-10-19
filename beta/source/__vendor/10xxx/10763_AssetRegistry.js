@@ -1,10 +1,10 @@
 // Module ID: 10763
 // Function ID: 10764
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 10763 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 275, height: 150, scales: [1, 2, 3], hash: "bbcef4a2b8c5f48f13fd62c2f6250775", name: "img_group_dm_illustration", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d36bc1b1c0c4b7686eb847b7455190cc", name: "EducationIcon", type: "png" });

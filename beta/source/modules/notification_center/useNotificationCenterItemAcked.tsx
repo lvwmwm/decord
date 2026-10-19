@@ -1,10 +1,10 @@
-// Module ID: 16883
-// Function ID: 16884
+// Module ID: 17563
+// Function ID: 17564
 // Name: useNotificationCenterItemAcked
-// Dependencies: [16876, 558, 576, 504, 6059, 2]
+// Dependencies: [17556, 558, 576, 504, 6337, 2]
 
-// Module 16883 (useNotificationCenterItemAcked)
-import NotificationCenterStore from "NotificationCenterStore" /* 16876 */;
+// Module 17563 (useNotificationCenterItemAcked)
+import NotificationCenterStore from "NotificationCenterStore" /* 17556 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotific
   const tmp = _require;
   if (tmp4) {
     if (!stateFromStores) {
-      const tmpResult = tmp(6059);
+      const tmpResult = tmp(6337);
       stateFromStores = tmpResult.isRemoteAcked(forceUnacked, setting);
     }
     tmp4 = stateFromStores;

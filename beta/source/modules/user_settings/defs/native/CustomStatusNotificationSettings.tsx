@@ -1,19 +1,19 @@
-// Module ID: 15794
-// Function ID: 15795
+// Module ID: 16552
+// Function ID: 16553
 // Name: CustomStatusNotificationSettings
-// Dependencies: [7988, 1085, 4763, 2041, 1209, 1265, 558, 10664, 1126, 2]
+// Dependencies: [8260, 1087, 4858, 2044, 1211, 1267, 558, 11084, 1128, 2]
 // Exports: onChange
 
-// Module 15794 (CustomStatusNotificationSettings)
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import NotificationConstants from "NotificationConstants" /* 4763 */;
-import SettingsConstants from "SettingsConstants" /* 7988 */;
+// Module 16552 (CustomStatusNotificationSettings)
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import NotificationConstants from "NotificationConstants" /* 4858 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 function onChange(custom_status_push_notifications) {

@@ -1,23 +1,23 @@
-// Module ID: 11681
-// Function ID: 11682
+// Module ID: 12865
+// Function ID: 12866
 // Name: ForumPostPinIcon
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1200, 11682, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1202, 12866, 2]
 
-// Module 11681 (ForumPostPinIcon)
+// Module 12865 (ForumPostPinIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11682 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12866 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
 let size1;
 let tmp;
-const native = tmp(1200);
+const native = tmp(1202);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;

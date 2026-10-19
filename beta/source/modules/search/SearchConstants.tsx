@@ -1,11 +1,11 @@
-// Module ID: 9308
-// Function ID: 9309
+// Module ID: 9614
+// Function ID: 9615
 // Name: SearchConstants
-// Dependencies: [1085, 9309, 2]
+// Dependencies: [1087, 9615, 2]
 
-// Module 9308 (SearchConstants)
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9309 */;
-import Constants from "Constants" /* 1085 */;
+// Module 9614 (SearchConstants)
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9615 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let MessageEmbedTypes;

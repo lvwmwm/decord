@@ -1,18 +1,18 @@
-// Module ID: 7144
-// Function ID: 7145
+// Module ID: 7415
+// Function ID: 7416
 // Name: NativeCheckoutStore
-// Dependencies: [5, 32, 19, 7145, 5071, 7148, 558, 4733, 1267, 7149, 12, 6945, 4784, 7150, 2]
+// Dependencies: [5, 32, 19, 7416, 5171, 7419, 558, 4828, 1269, 7420, 12, 7221, 4879, 7421, 2]
 // Exports: createNativeStore, useNativeCheckoutStoreOrNull
 
-// Module 7144 (NativeCheckoutStore)
-import _mod1267 from "module_1267" /* 1267 */;
-import _slicedToArray2 from "_slicedToArray" /* 4733 */;
-import PaymentConstants from "PaymentConstants" /* 5071 */;
-import ContextUtilsDefault from "ContextUtils" /* 7148 */;
+// Module 7415 (NativeCheckoutStore)
+import _mod1269 from "module_1269" /* 1269 */;
+import _slicedToArray2 from "_slicedToArray" /* 4828 */;
+import PaymentConstants from "PaymentConstants" /* 5171 */;
+import ContextUtilsDefault from "ContextUtils" /* 7419 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import OrderRecord from "OrderRecord" /* 7145 */;
+import OrderRecord from "OrderRecord" /* 7416 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,14 +28,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeC
     shallow = _slicedToArray2.shallow;
   }
   const tmp3 = closure_7();
-  const obj = _mod1267;
+  const obj = _mod1269;
   return obj.useStoreWithEqualityFn(tmp3, cResult, shallow);
 }) : (function useNativeCheckoutStore(cResult, shallow) {
   if (shallow === undefined) {
     shallow = _slicedToArray2.shallow;
   }
   const tmp3 = closure_7();
-  const obj = _mod1267;
+  const obj = _mod1269;
   return obj.useStoreWithEqualityFn(tmp3, cResult, shallow);
 });
 let result = size.fileFinishedImporting("modules/checkout/native/NativeCheckoutStore.tsx");
@@ -49,14 +49,14 @@ export const useNativeCheckoutStoreOrNull = function useNativeCheckoutStoreOrNul
   context = react.useContext(context);
   let storeWithEqualityFn = null;
   if ("unset_context" !== context) {
-    const obj = _mod1267;
+    const obj = _mod1269;
     storeWithEqualityFn = obj.useStoreWithEqualityFn(context, cResult, shallow);
   }
   return storeWithEqualityFn;
 };
 export const createNativeStore = function createNativeStore(arg0) {
   ({ order: require, checkoutInitParameters: importDefault, contextMetadata: dependencyMap, analyticsFields: _asyncToGenerator, paymentGateway: react, orderRequired: OrderRecord, onOrderRetryCancellation: OrderStatus, initialSubscriptionFacet: closure_7 } = arg0);
-  let obj = _mod1267;
+  let obj = _mod1269;
   return obj.createWithEqualityFn((arg0, arg1) => {
     let tmp;
     let closure_0 = arg0;

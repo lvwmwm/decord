@@ -1,21 +1,21 @@
-// Module ID: 9029
-// Function ID: 9030
+// Module ID: 9325
+// Function ID: 9326
 // Name: CollectiblesBadges
-// Dependencies: [19, 17, 1392, 21, 5092, 587, 558, 576, 1126, 5088, 9030, 8218, 9031, 2]
+// Dependencies: [19, 17, 1394, 21, 5191, 587, 558, 576, 1128, 5187, 9326, 8495, 9327, 2]
 
-// Module 9029 (CollectiblesBadges)
+// Module 9325 (CollectiblesBadges)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import LockIcon3 from "LockIcon" /* 8218 */;
-import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9030 */;
-import NitroWheelIcon3 from "NitroWheelIcon" /* 9031 */;
+import intl2 from "intl" /* 1128 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import LockIcon3 from "LockIcon" /* 8495 */;
+import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9326 */;
+import NitroWheelIcon3 from "NitroWheelIcon" /* 9327 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let createStyles = createStyles_mod;
 let obj = { badgeTextUppercase: { textTransform: "uppercase" }, badgeSurfaceDarkMode: obj2, badgeSurfaceLightMode: obj3, newIconBadge: obj4, limitedTimeBadge: obj5, lockIconBadge: obj6, newLockIconBadge: { backgroundColor: nativeDefault.unsafe_rawColors.PREMIUM_TIER_2_PINK_FOR_GRADIENTS_2, flexDirection: "row", paddingHorizontal: 5, paddingVertical: 3, borderRadius: nativeDefault.radii.round, alignItems: "center", gap: 2 }, badgePill: { paddingHorizontal: nativeDefault.space.PX_4, paddingVertical: 1.5, borderRadius: nativeDefault.radii.round, flexShrink: 1 }, iconTextBadge: { flexDirection: "row", alignItems: "center", gap: 4, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: 2, borderRadius: nativeDefault.radii.round } };
 obj2 = { backgroundColor: nativeDefault.colors.WHITE };
 createStyles = createStyles.createStyles;
-obj3 = { backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND };
+obj3 = { backgroundColor: nativeDefault.colors.BADGE_PRIMARY_BACKGROUND };
 obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.round, paddingHorizontal: 6, paddingVertical: 2 };
 obj5 = { backgroundColor: nativeDefault.colors.WHITE, borderRadius: nativeDefault.radii.md, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4 };
 obj6 = { backgroundColor: nativeDefault.colors.ICON_OVERLAY_DARK, padding: 5, borderRadius: nativeDefault.radii.round };
@@ -57,7 +57,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBadge(sty
     const _Symbol = Symbol;
     const badgeTextUppercase = tmp4.badgeTextUppercase;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl2.t.y2b7CA);
       cResult[3] = stringResult;
       tmp7 = stringResult;
@@ -139,18 +139,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function LockBadge(ar
     items = [tmp5.newLockIconBadge, style];
     const obj3 = { size: "xxs", color: nativeDefault.colors.WHITE };
     const tmp13 = PremiumFeaturesBackgroundDefault;
-    const LockIcon2 = tmp(8218).LockIcon;
+    const LockIcon2 = tmp(8495).LockIcon;
     items1 = [hasOwnProperty(LockIcon2, obj3), ];
     const obj4 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp5.badgeTextUppercase, children: intl.string(intl2.t.y2b7CA) };
-    const Text = tmp(5088).Text;
-    intl = tmp(1126).intl;
+    const Text = tmp(5187).Text;
+    intl = tmp(1128).intl;
     items1[1] = hasOwnProperty(Text, obj4);
     tmp10 = metroRequire(tmp13, obj2);
   } else {
     const obj5 = { style: items2, children: hasOwnProperty(LockIcon, obj6) };
     items2 = [tmp5.lockIconBadge, style];
     obj6 = { size: "sm", color: nativeDefault.colors.WHITE };
-    LockIcon = tmp(8218).LockIcon;
+    LockIcon = tmp(8495).LockIcon;
     tmp10 = hasOwnProperty(View, obj5);
   }
   cResult[0] = undefined !== isNew && isNew;
@@ -228,18 +228,18 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumBadge
     items = [tmp5.newLockIconBadge, style];
     const obj3 = { size: "xxs", color: nativeDefault.colors.WHITE };
     const tmp13 = PremiumFeaturesBackgroundDefault;
-    const NitroWheelIcon2 = tmp(9031).NitroWheelIcon;
+    const NitroWheelIcon2 = tmp(9327).NitroWheelIcon;
     items1 = [hasOwnProperty(NitroWheelIcon2, obj3), ];
     const obj4 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp5.badgeTextUppercase, children: intl.string(intl2.t.y2b7CA) };
-    const Text = tmp(5088).Text;
-    intl = tmp(1126).intl;
+    const Text = tmp(5187).Text;
+    intl = tmp(1128).intl;
     items1[1] = hasOwnProperty(Text, obj4);
     tmp10 = metroRequire(tmp13, obj2);
   } else {
     const obj5 = { style: items2, children: hasOwnProperty(NitroWheelIcon, obj6) };
     items2 = [tmp5.lockIconBadge, style];
     obj6 = { size: "sm", color: nativeDefault.colors.WHITE };
-    NitroWheelIcon = tmp(9031).NitroWheelIcon;
+    NitroWheelIcon = tmp(9327).NitroWheelIcon;
     tmp10 = hasOwnProperty(View, obj5);
   }
   cResult[0] = undefined !== isNew && isNew;
@@ -300,7 +300,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function LimitedTimeB
     const _Symbol = Symbol;
     const badgeTextUppercase = tmp4.badgeTextUppercase;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl2.t["h/uBCR"]);
       cResult[3] = stringResult;
       tmp7 = stringResult;

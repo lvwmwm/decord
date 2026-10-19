@@ -1,19 +1,19 @@
-// Module ID: 12022
-// Function ID: 12023
+// Module ID: 12972
+// Function ID: 12973
 // Name: GuildDirectoryAddAlert
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 6159, 5088, 5398, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1128, 6436, 5187, 5498, 2]
 
-// Module 12022 (GuildDirectoryAddAlert)
+// Module 12972 (GuildDirectoryAddAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import AlertDefault from "Alert" /* 5398 */;
-import GuildIcon from "GuildIcon" /* 6159 */;
+import intl4 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import AlertDefault from "Alert" /* 5498 */;
+import GuildIcon from "GuildIcon" /* 6436 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
   ({ onClose, guild, directoryGuildName } = arg0);
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t["X0WK+6"]);
     cResult[0] = stringResult;
     first = stringResult;
@@ -56,7 +56,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
     const _Symbol = Symbol;
     const title = tmp4.title;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const stringResult1 = intl2.string(intl4.t.CueiPY);
       cResult[4] = stringResult1;
       tmp11 = stringResult1;
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
     }
     const description = tmp4.description;
     if (cResult[7] !== directoryGuildName) {
-      const intl3 = tmp(1126).intl;
+      const intl3 = tmp(1128).intl;
       const obj3 = { guildName: directoryGuildName };
       const formatResult = intl3.format(intl4.t.R7Pqn5, obj3);
       cResult[7] = directoryGuildName;

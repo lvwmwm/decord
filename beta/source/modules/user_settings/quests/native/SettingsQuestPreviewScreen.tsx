@@ -1,22 +1,22 @@
-// Module ID: 15453
-// Function ID: 15454
+// Module ID: 16213
+// Function ID: 16214
 // Name: SettingsQuestPreviewScreen
-// Dependencies: [32, 19, 17, 7386, 1205, 21, 587, 5092, 558, 576, 1504, 504, 15454, 15456, 1126, 8525, 9167, 584, 15457, 8774, 10602, 15463, 2]
+// Dependencies: [32, 19, 17, 7656, 1207, 21, 587, 5191, 558, 576, 1506, 504, 16214, 16216, 1128, 8805, 9474, 584, 16217, 9051, 10927, 16223, 2]
 
-// Module 15453 (SettingsQuestPreviewScreen)
+// Module 16213 (SettingsQuestPreviewScreen)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1126 */;
-import QuestActionCreators from "QuestActionCreators" /* 9167 */;
-import QuestCardPreview from "QuestCardPreview" /* 15454 */;
-import QuestEmbedPreview from "QuestEmbedPreview" /* 15456 */;
+import intl5 from "intl" /* 1128 */;
+import QuestActionCreators from "QuestActionCreators" /* 9474 */;
+import QuestCardPreview from "QuestCardPreview" /* 16214 */;
+import QuestEmbedPreview from "QuestEmbedPreview" /* 16216 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestStore from "QuestStore" /* 7386 */;
-import ThemeStore from "ThemeStore" /* 1205 */;
+import QuestStore from "QuestStore" /* 7656 */;
+import ThemeStore from "ThemeStore" /* 1207 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsQu
   let tmp2 = dependencyMap;
   let obj = params(576);
   const cResult = obj.c(88);
-  const obj2 = params(1504);
+  const obj2 = params(1506);
   params = obj2.useRoute().params;
   closure_13();
   let questId;
@@ -367,13 +367,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsQu
     }
     const items1 = [obj, , , ];
     const obj3 = { id: "bar", label: intl2.string(intl5.t.uL4oBf), page: callback2() };
-    intl2 = tmp(1126).intl;
+    intl2 = tmp(1128).intl;
     items1[1] = obj3;
     const obj4 = { id: "card", label: intl3.string(intl5.t.MAvIf1), page: callback() };
-    intl3 = tmp(1126).intl;
+    intl3 = tmp(1128).intl;
     items1[2] = obj4;
     const obj5 = { id: "embed", label: intl4.string(intl5.t.AswoU2), page: callback1() };
-    intl4 = tmp(1126).intl;
+    intl4 = tmp(1128).intl;
     items1[3] = obj5;
     return items1;
   }, items5);

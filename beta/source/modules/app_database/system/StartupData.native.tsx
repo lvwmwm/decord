@@ -1,11 +1,11 @@
-// Module ID: 2109
-// Function ID: 2110
+// Module ID: 2112
+// Function ID: 2113
 // Name: react-native
-// Dependencies: [2110, 2]
+// Dependencies: [2113, 2]
 // Exports: getUserId, setUserId
 
-// Module 2109 (react-native)
-import react_nativeDefault from "react-native" /* 2110 */;
+// Module 2112 (react-native)
+import react_nativeDefault from "react-native" /* 2113 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_database/system/StartupData.native.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 12675
-// Function ID: 12676
+// Module ID: 13611
+// Function ID: 13612
 // Name: ForLaterCardStatusHeader
-// Dependencies: [17, 21, 5092, 587, 558, 576, 5088, 2]
+// Dependencies: [17, 21, 5191, 587, 558, 576, 5187, 2]
 
-// Module 12675 (ForLaterCardStatusHeader)
+// Module 13611 (ForLaterCardStatusHeader)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let hasOwnProperty;
 let obj2;
 let obj3;
 let tmp;
-const Text_Text = tmp(5088);
+const Text_Text = tmp(5187);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;

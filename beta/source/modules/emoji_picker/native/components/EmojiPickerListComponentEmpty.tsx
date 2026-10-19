@@ -1,19 +1,19 @@
-// Module ID: 9519
-// Function ID: 9520
+// Module ID: 9821
+// Function ID: 9822
 // Name: EmojiPickerListComponentEmpty
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 9520, 9524, 6307, 1126, 1200, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 9822, 9826, 6584, 1128, 1202, 2]
 
-// Module 9519 (EmojiPickerListComponentEmpty)
+// Module 9821 (EmojiPickerListComponentEmpty)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import SearchEmpty from "SearchEmpty" /* 9520 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9524 */;
+import intl2 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import SearchEmpty from "SearchEmpty" /* 9822 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9826 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,13 +47,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const tmpResult2 = useModalDismissGuardRefreshControl;
     const modalDismissGuardRefreshControl = tmpResult2.useModalDismissGuardRefreshControl();
     if (inActionSheet) {
-      BottomSheetScrollView = tmp(6307).BottomSheetScrollView;
+      BottomSheetScrollView = tmp(6584).BottomSheetScrollView;
     } else {
       BottomSheetScrollView = ScrollView;
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl2.t.IxxiKF);
       cResult[3] = stringResult;
       tmp10 = stringResult;
@@ -116,7 +116,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj2 = useModalDismissGuardRefreshControl;
   const modalDismissGuardRefreshControl = obj2.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp3(6307).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp3(6584).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
@@ -125,8 +125,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp8 = modalDismissGuardRefreshControl;
   }
   ({ source: searchEmptySource, body: intl.string(intl2.t.IxxiKF), bodyStyle: null, containerStyle: null, imageStyle: null });
-  const RefreshEmptyState = tmp3(1200).RefreshEmptyState;
-  intl = tmp3(1126).intl;
+  const RefreshEmptyState = tmp3(1202).RefreshEmptyState;
+  intl = tmp3(1128).intl;
   ({ emptyStateBody: obj4.bodyStyle, emptyStateContainer: obj4.containerStyle, emptyStateImage: obj4.imageStyle } = tmp);
   return <BottomSheetScrollView contentContainerStyle={memo} keyboardShouldPersistTaps="always" refreshControl={tmp8}>{null}</BottomSheetScrollView>;
 }));

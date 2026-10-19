@@ -1,27 +1,27 @@
-// Module ID: 13002
-// Function ID: 13003
+// Module ID: 12297
+// Function ID: 12298
 // Name: useConjureProjects
-// Dependencies: [32, 19, 5440, 7316, 4748, 2087, 4750, 4939, 13003, 10653, 1126, 3849, 558, 576, 6948, 12347, 11411, 1453, 504, 6946, 2]
+// Dependencies: [32, 19, 5540, 7586, 4843, 2090, 4845, 5034, 10979, 6293, 1128, 3883, 558, 576, 6356, 11594, 11006, 1455, 504, 7222, 2]
 // Exports: describeConjureProjectRow
 
-// Module 13002 (useConjureProjects)
+// Module 12297 (useConjureProjects)
 import react2 from "react" /* 576 */;
-import intl6 from "intl" /* 1126 */;
-import _modDef3849 from "module_3849" /* 3849 */;
-import ConjureUtils from "ConjureUtils" /* 6946 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6948 */;
-import conjureAppInServer from "conjureAppInServer" /* 11411 */;
-import ConjureActivity from "ConjureActivity" /* 12347 */;
+import intl6 from "intl" /* 1128 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6356 */;
+import ConjureUtils from "ConjureUtils" /* 7222 */;
+import conjureAppInServer from "conjureAppInServer" /* 11006 */;
+import ConjureActivity from "ConjureActivity" /* 11594 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5440 */;
-import UserProfileStore from "UserProfileStore" /* 7316 */;
-import GuildChannelStore from "GuildChannelStore" /* 4748 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
-import ConjureChatStore from "ConjureChatStore" /* 13003 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10653 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
+import UserProfileStore from "UserProfileStore" /* 7586 */;
+import GuildChannelStore from "GuildChannelStore" /* 4843 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
+import ConjureChatStore from "ConjureChatStore" /* 10979 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ function conjureEntriesEqual(nextExpiry, nextExpiry2) {
   let everyResult = nextExpiry.nextExpiry === nextExpiry2.nextExpiry && nextExpiry.entries.length === nextExpiry2.entries.length;
   if (everyResult) {
     const entries = nextExpiry.entries;
-    everyResult = entries.every((projectId, index) => null != nextExpiry2.entries[index] && projectId.projectId === nextExpiry2.entries[index].projectId && projectId.activity === nextExpiry2.entries[index].activity && projectId.name === nextExpiry2.entries[index].name && projectId.project.updated_at === nextExpiry2.entries[index].project.updated_at && projectId.guildId === nextExpiry2.entries[index].guildId && projectId.guildName === nextExpiry2.entries[index].guildName && projectId.notInServer === nextExpiry2.entries[index].notInServer && projectId.guild === nextExpiry2.entries[index].guild);
+    everyResult = entries.every((projectId, index) => null != nextExpiry2.entries[index] && projectId.projectId === nextExpiry2.entries[index].projectId && projectId.activity === nextExpiry2.entries[index].activity && projectId.name === nextExpiry2.entries[index].name && projectId.project.updated_at === nextExpiry2.entries[index].project.updated_at && projectId.guildId === nextExpiry2.entries[index].guildId && projectId.guildName === nextExpiry2.entries[index].guildName && projectId.notInServer === nextExpiry2.entries[index].notInServer && projectId.owned === nextExpiry2.entries[index].owned && projectId.guild === nextExpiry2.entries[index].guild);
   }
   return everyResult;
 }
@@ -44,23 +44,23 @@ function conjureGuildsEqual(arr, arg1) {
 function collectEntries(_location) {
   let obj3;
   _require = _location;
-  function add(item10061) {
+  function add(item10063, owned) {
     let name;
     let tmpResult3;
     const obj = set;
-    if (!set.has(item10061.id)) {
+    if (!set.has(item10063.id)) {
       const obj2 = ConjureActivity;
-      const result = obj2.conjureProjectGuildId(item10061);
+      const result = obj2.conjureProjectGuildId(item10063);
       if (null == result) {
-        obj.add(item10061.id);
-        const isThinkingResult = ConjureChatStore.isThinking(item10061.id);
-        let num = ConjureChatStore.getFinishedAt(item10061.id);
+        obj.add(item10063.id);
+        const isThinkingResult = ConjureChatStore.isThinking(item10063.id);
+        let num = ConjureChatStore.getFinishedAt(item10063.id);
         const obj4 = { thinking: isThinkingResult, finishedAt: num, now };
         const tmpResult = ConjureActivity;
         const conjureActivityResult = tmpResult.conjureActivity(obj4);
         if ("done" === conjureActivityResult) {
           if (null != num) {
-            const sum = num + tmp(12347).CONJURE_DONE_WINDOW_MS;
+            const sum = num + tmp(11594).CONJURE_DONE_WINDOW_MS;
             bound = sum;
             if (null != bound) {
               const _Math = Math;
@@ -75,8 +75,8 @@ function collectEntries(_location) {
         if (guild == null) {
           guild = null;
         }
-        ({ id: obj8.projectId, name: obj8.name } = item10061);
-        const obj5 = { project: item10061, projectId: null, name: null, guildId: result, guild, guildName: name, notInServer: "not_in_server" === tmpResult3.readConjureAppServerPresence(item10061), activity: conjureActivityResult, sortTime: num };
+        ({ id: obj8.projectId, name: obj8.name } = item10063);
+        const obj5 = { project: item10063, projectId: null, name: null, guildId: result, guild, guildName: name, notInServer: "not_in_server" === tmpResult3.readConjureAppServerPresence(item10063), owned, activity: conjureActivityResult, sortTime: num };
         name = undefined;
         const push = items.push;
         if (guild != null) {
@@ -88,9 +88,9 @@ function collectEntries(_location) {
         tmpResult3 = conjureAppInServer;
         if (null == num) {
           num = 0;
-          if (null != item10061.updated_at) {
+          if (null != item10063.updated_at) {
             const _Date = Date;
-            const parsed = Date.parse(item10061.updated_at);
+            const parsed = Date.parse(item10063.updated_at);
             const _Number = Number;
             let num2 = 0;
             if (!Number.isNaN(parsed)) {
@@ -134,18 +134,20 @@ function collectEntries(_location) {
   const ownedProjects = ConjureProjectStore.getOwnedProjects();
   const iter = ownedProjects[Symbol.iterator]();
   while (iter !== undefined) {
-    let addResult = add(iter.next());
+    let addResult = add(iter.next(), true);
     continue;
   }
   const values = Object.values(GuildStore.getGuilds());
-  for (const item10042 of values) {
-    let tmp6 = item10042;
+  const iter2 = values[Symbol.iterator]();
+  const nextResult = iter2.next();
+  while (iter2 !== undefined) {
+    let tmp7 = nextResult;
     let obj = ConjureProjectStore;
-    if (ConjureProjectStore.hasFetchedGuildProjects(item10042.id)) {
-      if (isEnabled(tmp6.id)) {
-        let sharedProjects = obj.getSharedProjects(tmp6.id);
-        for (const item10061 of sharedProjects) {
-          let addResult1 = add(item10061);
+    if (ConjureProjectStore.hasFetchedGuildProjects(nextResult.id)) {
+      if (isEnabled(tmp7.id)) {
+        let sharedProjects = obj.getSharedProjects(tmp7.id);
+        for (const item10063 of sharedProjects) {
+          let addResult1 = add(item10063, false);
           continue;
         }
       }
@@ -432,19 +434,19 @@ export const describeConjureProjectRow = function describeConjureProjectRow(entr
   let obj4;
   let obj6;
   if (entry.notInServer) {
-    const obj3 = { serverName: intl4.string(_modDef3849["08PzLy"]), label: intl5.formatToPlainString(_modDef3849.pyh2pa, obj4) };
+    const obj3 = { serverName: intl4.string(_modDef3883["08PzLy"]), label: intl5.formatToPlainString(_modDef3883.pyh2pa, obj4) };
     intl4 = intl6.intl;
     intl5 = intl6.intl;
     obj = obj3;
     obj4 = { name: entry.name };
   } else if (null == entry.guildName) {
-    const obj5 = { serverName: intl2.string(_modDef3849["3QFps8"]), label: intl3.formatToPlainString(_modDef3849["2sBOnp"], obj6) };
+    const obj5 = { serverName: intl2.string(_modDef3883["3QFps8"]), label: intl3.formatToPlainString(_modDef3883["2sBOnp"], obj6) };
     intl2 = intl6.intl;
     intl3 = intl6.intl;
     obj = obj5;
     obj6 = { name: entry.name };
   } else {
-    obj = { serverName: entry.guildName, label: intl.formatToPlainString(_modDef3849["hd+GF1"], obj11) };
+    obj = { serverName: entry.guildName, label: intl.formatToPlainString(_modDef3883["hd+GF1"], obj11) };
     intl = intl6.intl;
     obj11 = { name: null, server: null };
     ({ name: obj2.name, guildName: obj2.server } = entry);

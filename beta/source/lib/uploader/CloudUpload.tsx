@@ -1,24 +1,24 @@
-// Module ID: 7752
-// Function ID: 7753
+// Module ID: 8023
+// Function ID: 8024
 // Name: CloudUpload
-// Dependencies: [109, 5, 32, 5091, 1207, 5282, 1085, 3, 1295, 7753, 7754, 7762, 1102, 569, 6672, 12, 1481, 7764, 7783, 6673, 7784, 7785, 7789, 1255, 7763, 7755, 7790, 7791, 2000, 7876, 1265, 2]
+// Dependencies: [109, 5, 32, 5190, 1209, 5382, 1087, 3, 1297, 8024, 8025, 8033, 1104, 569, 6949, 12, 1483, 8035, 8055, 6950, 8056, 8057, 8061, 1257, 8034, 8026, 8062, 8063, 2002, 8148, 1267, 2]
 
-// Module 7752 (CloudUpload)
+// Module 8023 (CloudUpload)
 import LoggerDefault from "Logger" /* 3 */;
 import BackoffDefault from "Backoff" /* 569 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import InlineUploaderDefault from "InlineUploader" /* 6672 */;
-import UploadPlatform from "UploadPlatform" /* 7754 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import InlineUploaderDefault from "InlineUploader" /* 6949 */;
+import UploadPlatform from "UploadPlatform" /* 8025 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DevSettingsStore from "DevSettingsStore" /* 5091 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
-import NetworkStore from "NetworkStore" /* 5282 */;
-import Constants from "Constants" /* 1085 */;
-import Upload from "Upload" /* 7753 */;
+import DevSettingsStore from "DevSettingsStore" /* 5190 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
+import NetworkStore from "NetworkStore" /* 5382 */;
+import Constants from "Constants" /* 1087 */;
+import Upload from "Upload" /* 8024 */;
 import size_mod from "module_2" /* 2 */;
 
 let c0, c5, c8, closure_6, createAttachmentURL;
@@ -233,13 +233,13 @@ class CloudUpload extends Upload {
         if (typeof obj.origin === "string") {
           origin = obj.origin;
         } else {
-          origin = tmp11(7753).UploadOrigin[obj.origin];
+          origin = tmp11(8024).UploadOrigin[obj.origin];
         }
         uploadAnalytics.origin = origin;
       }
       const self3 = this;
       const self4 = this;
-      const defaultHttpClient = new tmp11(7762).DefaultHttpClient();
+      const defaultHttpClient = new tmp11(8033).DefaultHttpClient();
       obj._uploadHttpClient = defaultHttpClient;
       obj._libdiscoreEnabled = false;
       return obj;

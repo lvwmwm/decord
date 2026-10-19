@@ -1,21 +1,21 @@
-// Module ID: 15626
-// Function ID: 15627
+// Module ID: 16386
+// Function ID: 16387
 // Name: AccessibilitySetting
-// Dependencies: [32, 19, 1085, 2062, 21, 2049, 558, 576, 7100, 1200, 1126, 10664, 15627, 15629, 2]
+// Dependencies: [32, 19, 1087, 2065, 21, 2052, 558, 576, 7376, 1202, 1128, 11084, 16387, 16389, 2]
 
-// Module 15626 (AccessibilitySetting)
+// Module 16386 (AccessibilitySetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import dismissible_content from "dismissible_content" /* 2049 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7100 */;
-import AccessibilityIcon from "AccessibilityIcon" /* 15627 */;
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import dismissible_content from "dismissible_content" /* 2052 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7376 */;
+import AccessibilityIcon from "AccessibilityIcon" /* 16387 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,8 +51,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrailing(
   if (cResult[2] !== tmp5) {
     let tmp10 = null;
     if (tmp5) {
-      const TextBadge = tmp(1200).TextBadge;
-      const intl = tmp(1126).intl;
+      const TextBadge = tmp(1202).TextBadge;
+      const intl = tmp(1128).intl;
       tmp10 = <TextBadge text={intl.string(intl2.t.y2b7CA)} />;
     }
     cResult[2] = tmp5;
@@ -75,8 +75,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrailing(
     }
     tmp5 = null;
     if (hasItem) {
-      const TextBadge = tmp(1200).TextBadge;
-      const intl = tmp(1126).intl;
+      const TextBadge = tmp(1202).TextBadge;
+      const intl = tmp(1128).intl;
       tmp5 = <TextBadge text={intl.string(intl2.t.y2b7CA)} />;
     }
   }
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreNavi
   let tmp4;
   let obj = first(576);
   const cResult = obj.c(3);
-  const obj2 = first(7100);
+  const obj2 = first(7376);
   [first, tmp4] = obj2.useSelectedDismissibleContent(items);
   dependencyMap = tmp4;
   if (cResult[0] === tmp4) {
@@ -121,7 +121,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreNavi
 }) : (function usePreNavigationAction() {
   let closure_1;
   let first;
-  let obj = first(7100);
+  let obj = first(7376);
   const tmp = _slicedToArray(obj.useSelectedDismissibleContent(items), 2);
   first = tmp[0];
   dependencyMap = tmp3;

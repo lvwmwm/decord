@@ -1,13 +1,13 @@
-// Module ID: 1128
-// Function ID: 1129
+// Module ID: 1130
+// Function ID: 1131
 // Name: intl/util
-// Dependencies: [19, 1129, 1165, 1187, 1188, 558, 576, 2]
+// Dependencies: [19, 1131, 1167, 1189, 1190, 558, 576, 2]
 // Exports: getAvailableLocales, getLanguages, getNormalizedLocale, parseRuntimeIcuAsIntlMessage
 
-// Module 1128 (intl/util)
+// Module 1130 (intl/util)
 import react2 from "react" /* 576 */;
-import _mod1165 from "module_1165" /* 1165 */;
-import _Parser from "_Parser" /* 1188 */;
+import _mod1167 from "module_1167" /* 1167 */;
+import _Parser from "_Parser" /* 1190 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -52,20 +52,20 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncMessa
   const syncExternalStore = react.useSyncExternalStore((arg0) => closure_0.onChange(arg0), () => closure_0.isLocaleLoaded(currentLocale.currentLocale));
 });
 function getLanguages() {
-  return require("module_1187");
+  return require("module_1189");
 }
 const result = size.fileFinishedImporting("intl/util.tsx");
 
 export const getAvailableLocales = function getAvailableLocales() {
   let closure_0;
-  _require = require("module_1129").default;
-  const arr = require("module_1187");
+  _require = require("module_1131").default;
+  const arr = require("module_1189");
   const found = arr.filter((enabled) => enabled.enabled);
   const mapped = found.map((code) => {
     let obj2;
     code = code.code;
     const obj = { value: code, name: code.name, localizedName: closure_0[obj2.runtimeHashMessageKey(obj2, code)] };
-    obj2 = _mod1165;
+    obj2 = _mod1167;
     return obj;
   });
   return mapped.sort((name, name2) => {
@@ -86,7 +86,7 @@ export const getAvailableLocales = function getAvailableLocales() {
 };
 export { getLanguages };
 export const getNormalizedLocale = function getNormalizedLocale(Language, arg1) {
-  const arr = require("module_1187");
+  const arr = require("module_1189");
   const found = arr.filter((enabled) => enabled.enabled);
   const mapped = found.map((code) => code.code);
   if (mapped.includes(Language)) {
@@ -123,10 +123,10 @@ export const getNormalizedLocale = function getNormalizedLocale(Language, arg1) 
     }
   }
 };
-export const parseRuntimeIcuAsIntlMessage = function parseRuntimeIcuAsIntlMessage(arg0, defaultLocale) {
+export const parseRuntimeIcuAsIntlMessage = function parseRuntimeIcuAsIntlMessage(acknowledgedBadgeLabel, currentLocale) {
   const obj = _Parser;
-  const parsed = obj.parse(arg0, { ignoreTag: true });
-  const internalIntlMessage = new _mod1165.InternalIntlMessage(parsed, defaultLocale);
+  const parsed = obj.parse(acknowledgedBadgeLabel, { ignoreTag: true });
+  const internalIntlMessage = new _mod1167.InternalIntlMessage(parsed, currentLocale);
   return internalIntlMessage;
 };
 export const useSyncMessages = tmp2;

@@ -1,18 +1,18 @@
-// Module ID: 10935
-// Function ID: 10936
+// Module ID: 11328
+// Function ID: 11329
 // Name: PostMessageTransport
-// Dependencies: [5, 32, 2064, 5639, 1085, 1102, 10936, 580, 1121, 1265, 4739, 10937, 10939, 2000, 10940, 10941, 10943, 2]
+// Dependencies: [5, 32, 2067, 5895, 1087, 1104, 11329, 580, 1123, 1267, 4834, 9169, 9165, 2002, 11330, 11331, 11333, 2]
 
-// Module 10935 (PostMessageTransport)
+// Module 11328 (PostMessageTransport)
 import _mod580 from "module_580" /* 580 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import Constants2 from "Constants" /* 5639 */;
-import RPCOpcodesDefault from "RPCOpcodes" /* 10936 */;
-import RPCErrorDefault from "RPCError" /* 10937 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import Constants2 from "Constants" /* 5895 */;
+import RPCErrorDefault from "RPCError" /* 9169 */;
+import RPCOpcodesDefault from "RPCOpcodes" /* 11329 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import Constants from "Constants" /* 1085 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

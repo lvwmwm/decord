@@ -1,11 +1,11 @@
-// Module ID: 9328
-// Function ID: 9329
+// Module ID: 9632
+// Function ID: 9633
 // Name: useIsWindowSmall
-// Dependencies: [4980, 558, 2]
+// Dependencies: [5076, 558, 2]
 // Exports: default, useIsWindowSmall
 
-// Module 9328 (useIsWindowSmall)
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4980 */;
+// Module 9632 (useIsWindowSmall)
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5076 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

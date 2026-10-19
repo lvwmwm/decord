@@ -1,14 +1,14 @@
-// Module ID: 5926
-// Function ID: 5927
+// Module ID: 6182
+// Function ID: 6183
 // Name: getTinyBroncoWarningDescriptions
-// Dependencies: [5927, 1126, 5928, 3152, 2]
+// Dependencies: [6183, 1128, 6184, 3175, 2]
 // Exports: getTinyBroncoServerDescriptions, getTinyBroncoWarningDescriptions
 
-// Module 5926 (getTinyBroncoWarningDescriptions)
-import intl6 from "intl" /* 1126 */;
-import _modDef3152 from "module_3152" /* 3152 */;
-import TinyBroncoExperiment from "TinyBroncoExperiment" /* 5928 */;
-import TinyBroncoConstants from "TinyBroncoConstants" /* 5927 */;
+// Module 6182 (getTinyBroncoWarningDescriptions)
+import intl6 from "intl" /* 1128 */;
+import _modDef3175 from "module_3175" /* 3175 */;
+import TinyBroncoExperiment from "TinyBroncoExperiment" /* 6184 */;
+import TinyBroncoConstants from "TinyBroncoConstants" /* 6183 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -33,23 +33,23 @@ export const getTinyBroncoWarningDescriptions = function getTinyBroncoWarningDes
   if (obj.isTinyBroncoEnabled(tmp)) {
     let tmp7;
     const obj2 = { adult: null, teen: null, unverified: null };
-    const intl = tmp2(1126).intl;
+    const intl = tmp2(1128).intl;
     if (arg0) {
       obj2.adult = intl.string(intl6.t.fp3xf5);
-      const intl4 = tmp2(1126).intl;
+      const intl4 = tmp2(1128).intl;
       obj2.teen = intl4.string(intl6.t.dqC1w2);
-      const intl5 = tmp2(1126).intl;
+      const intl5 = tmp2(1128).intl;
       obj2.unverified = intl5.string(intl6.t.qiLic6);
       tmp7 = obj2;
     } else {
       const obj3 = { guildName };
-      obj2.adult = intl.formatToPlainString(_modDef3152.iK0n30, obj3);
-      const intl2 = tmp2(1126).intl;
+      obj2.adult = intl.formatToPlainString(_modDef3175.iK0n30, obj3);
+      const intl2 = tmp2(1128).intl;
       const obj4 = { guildName };
-      obj2.teen = intl2.formatToPlainString(_modDef3152.ezJA0R, obj4);
-      const intl3 = tmp2(1126).intl;
+      obj2.teen = intl2.formatToPlainString(_modDef3175.ezJA0R, obj4);
+      const intl3 = tmp2(1128).intl;
       const obj5 = { guildName };
-      obj2.unverified = intl3.formatToPlainString(_modDef3152.h4HbnI, obj5);
+      obj2.unverified = intl3.formatToPlainString(_modDef3175.h4HbnI, obj5);
       tmp7 = obj2;
     }
     tmp4 = tmp7;

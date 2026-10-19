@@ -1,23 +1,23 @@
-// Module ID: 17308
-// Function ID: 17309
+// Module ID: 12291
+// Function ID: 12292
 // Name: clarification/ConjureImageOptions
-// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 17280, 8204, 1126, 3849, 5088, 6157, 4832, 6178, 6266, 17305, 6182, 7569, 5049, 17309, 17065, 8382, 17310, 5379, 17096, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5191, 587, 558, 576, 12189, 8481, 1128, 3883, 5187, 5128, 4927, 6455, 6543, 12287, 6459, 7840, 5148, 12292, 11612, 8660, 12294, 5479, 11657, 2]
 
-// Module 17308 (clarification/ConjureImageOptions)
+// Module 12291 (clarification/ConjureImageOptions)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3849 from "module_3849" /* 3849 */;
-import react_native from "react-native" /* 4832 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import openMediaModal from "openMediaModal" /* 8382 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 17280 */;
-import ConjureImageOptions2 from "ConjureImageOptions" /* 17305 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import react_native from "react-native" /* 4927 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import openMediaModal from "openMediaModal" /* 8660 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12189 */;
+import ConjureImageOptions2 from "ConjureImageOptions" /* 12287 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,9 +40,9 @@ let obj7;
 let obj8;
 let obj9;
 let tmp;
-const intl5 = tmp(1126);
-const Text_Text = tmp(5088);
-const ImageWarningIcon2 = tmp(8204);
+const intl5 = tmp(1128);
+const Text_Text = tmp(5187);
+const ImageWarningIcon2 = tmp(8481);
 let react = react_mod;
 ({ ScrollView: metroRequire, View: metroImportDefault } = react_native2);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -110,7 +110,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
       const brokenText = tmp4.brokenText;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = intl5.intl;
-        const stringResult = intl.string(_modDef3849.lhgD88);
+        const stringResult = intl.string(_modDef3883.lhgD88);
         cResult[4] = stringResult;
         tmp21 = stringResult;
       } else {
@@ -242,11 +242,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
   if (gone) {
     const obj3 = { style: tmp.broken, children: items1 };
     const obj4 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
-    const ImageWarningIcon = tmp2(8204).ImageWarningIcon;
+    const ImageWarningIcon = tmp2(8481).ImageWarningIcon;
     items1 = [metroImportAll(ImageWarningIcon, obj4), ];
-    const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.brokenText, children: intl.string(_modDef3849.lhgD88) };
-    const Text = tmp2(5088).Text;
-    intl = tmp2(1126).intl;
+    const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.brokenText, children: intl.string(_modDef3883.lhgD88) };
+    const Text = tmp2(5187).Text;
+    intl = tmp2(1128).intl;
     items1[1] = metroImportAll(Text, obj5);
     obj2.children = React4(metroImportDefault, obj3);
     tmp10 = obj2;
@@ -320,8 +320,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
       }
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1126).intl;
-        const stringResult = intl.string(_modDef3849["4/eeDD"]);
+        const intl = tmp(1128).intl;
+        const stringResult = intl.string(_modDef3883["4/eeDD"]);
         cResult[6] = stringResult;
         tmp11 = stringResult;
       } else {
@@ -343,11 +343,11 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
                 let tmp27;
                 ({ accessibilityRole, accessibilityState } = radioA11yNative);
                 if (cResult[18] !== option.label) {
-                  const intl2 = tmp(1126).intl;
+                  const intl2 = tmp(1128).intl;
                   const obj2 = { answer: option.label };
                   cResult[18] = option.label;
-                  cResult[19] = intl2.formatToPlainString(_modDef3849.AQbxhf, obj2);
-                  const formatToPlainStringResult = intl2.formatToPlainString(_modDef3849.AQbxhf, obj2);
+                  cResult[19] = intl2.formatToPlainString(_modDef3883.AQbxhf, obj2);
+                  const formatToPlainStringResult = intl2.formatToPlainString(_modDef3883.AQbxhf, obj2);
                 }
                 if (cResult[20] === onRemove) {
                   if (cResult[23] === onRemove) {
@@ -491,7 +491,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
                       return onFrameHeight(onView.nativeEvent.layout.height);
                     }
                   }
-                  const intl3 = tmp(1126).intl;
+                  const intl3 = tmp(1128).intl;
                   class N {
                     constructor(arg0) {
                       nativeEvent = onView.nativeEvent;
@@ -509,7 +509,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
                       return;
                     }
                   }
-                  tmp30[1] = intl3.string(_modDef3849.HQEXJM);
+                  tmp30[1] = intl3.string(_modDef3883.HQEXJM);
                   const items = [tmp30];
                   tmp27 = items;
                 } else {
@@ -658,8 +658,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
   if (multi) {
     radioA11yNative = checkboxA11yNative;
   }
-  const intl = tmp2(1126).intl;
-  const stringResult = intl.string(_modDef3849["4/eeDD"]);
+  const intl = tmp2(1128).intl;
+  const stringResult = intl.string(_modDef3883["4/eeDD"]);
   if (null != galleryWidth) {
     rowTile = { width: galleryWidth };
     const obj3 = { width: galleryWidth };
@@ -678,7 +678,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
     onPress: fn,
     accessibilityRole: null,
     accessibilityState: null,
-    accessibilityLabel: intl2.formatToPlainString(_modDef3849.AQbxhf, obj7),
+    accessibilityLabel: intl2.formatToPlainString(_modDef3883.AQbxhf, obj7),
     accessibilityActions: tmp11,
     onAccessibilityAction(nativeEvent) {
       nativeEvent = nativeEvent.nativeEvent;
@@ -694,16 +694,16 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
     children: items4
   };
   fn = undefined;
-  const Card = tmp2(6182).Card;
+  const Card = tmp2(6459).Card;
   if (!disabled) {
     fn = () => closure_1_2(option);
   }
   ({ accessibilityRole: obj5.accessibilityRole, accessibilityState: obj5.accessibilityState } = radioA11yNative);
-  intl2 = tmp2(1126).intl;
+  intl2 = tmp2(1128).intl;
   obj7 = { answer: option.label };
   if (null != onRemove) {
-    const obj8 = { name: "remove", label: intl3.string(_modDef3849.HQEXJM) };
-    intl3 = tmp2(1126).intl;
+    const obj8 = { name: "remove", label: intl3.string(_modDef3883.HQEXJM) };
+    intl3 = tmp2(1128).intl;
     const items1 = [obj8];
     tmp11 = items1;
   } else if (null != option.image) {
@@ -731,10 +731,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
     const obj13 = { style: tmp.indicator, children: tmp12Result };
     if (multi) {
       const obj14 = { checked: selected };
-      tmp12Result = tmp12(tmp2(6178).FormCheckbox, obj14);
+      tmp12Result = tmp12(tmp2(6455).FormCheckbox, obj14);
     } else {
       const obj15 = { selected };
-      tmp12Result = tmp12(tmp2(6266).FormRadio, obj15);
+      tmp12Result = tmp12(tmp2(6543).FormRadio, obj15);
     }
     tmp12Result3 = tmp12(tmp9, obj13);
   } else {
@@ -743,7 +743,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
   items3[1] = tmp12Result3;
   items4 = [React4(metroImportDefault, obj10), ];
   const obj16 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 1, style: tmp.caption, children: tmp2Result.imageOptionCaption(option) };
-  const Text = tmp2(5088).Text;
+  const Text = tmp2(5187).Text;
   tmp2Result = ConjureImageOptions2;
   items4[1] = tmp12(Text, obj16);
   items5 = [React4(Card, obj6), ];
@@ -756,17 +756,17 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
       items6 = [tmp.view, ];
       items6[1] = { top: frameHeight - nativeDefault.space.PX_32 };
       const obj18 = { top: frameHeight - nativeDefault.space.PX_32 };
-      IconButton = tmp2(7569).IconButton;
+      IconButton = tmp2(7840).IconButton;
       if (null != onRemove) {
-        MaximizeIcon = tmp2(5049).TrashIcon;
+        MaximizeIcon = tmp2(5148).TrashIcon;
       } else {
-        MaximizeIcon = tmp2(17309).MaximizeIcon;
+        MaximizeIcon = tmp2(12292).MaximizeIcon;
       }
-      obj19 = { icon: tmp12(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef3849.JGjZMs, obj20) };
+      obj19 = { icon: tmp12(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef3883.JGjZMs, obj20) };
       if (null == onRemove) {
         onRemove = () => closure_1_3(option);
       }
-      intl4 = tmp2(1126).intl;
+      intl4 = tmp2(1128).intl;
       obj20 = { answer: option.label };
       tmp12Result4 = tmp12(tmp9, obj17);
     }
@@ -1120,7 +1120,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
             return size;
           });
           let obj = openMediaModal;
-          const obj2 = { initialSources: mapped, initialIndex: findIndexResult, analyticsSource: "VibegrationsClarificationImageOptions", shareable: false, disableDownload: true, disableMediaOverlayButton: true, disableMediaOverlayFooter: true };
+          const obj2 = { initialSources: mapped, initialIndex: findIndexResult, analyticsSource: "ConjureClarificationImageOptions", shareable: false, disableDownload: true, disableMediaOverlayButton: true, disableMediaOverlayFooter: true };
           obj.openMediaModal(obj2);
         }, () => {
 
@@ -1246,7 +1246,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIma
           return size;
         });
         let obj = openMediaModal;
-        const obj2 = { initialSources: mapped, initialIndex: findIndexResult, analyticsSource: "VibegrationsClarificationImageOptions", shareable: false, disableDownload: true, disableMediaOverlayButton: true, disableMediaOverlayFooter: true };
+        const obj2 = { initialSources: mapped, initialIndex: findIndexResult, analyticsSource: "ConjureClarificationImageOptions", shareable: false, disableDownload: true, disableMediaOverlayButton: true, disableMediaOverlayFooter: true };
         obj.openMediaModal(obj2);
       }, () => {
 

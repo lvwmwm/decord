@@ -1,17 +1,17 @@
-// Module ID: 10158
-// Function ID: 10159
+// Module ID: 10460
+// Function ID: 10461
 // Name: SocialLayerStorefrontActionCreators
-// Dependencies: [5, 8986, 6933, 1085, 1102, 584, 6931, 9060, 1295, 2031, 569, 2]
+// Dependencies: [5, 9282, 7209, 1087, 1104, 584, 7207, 9356, 1297, 2034, 569, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 10158 (SocialLayerStorefrontActionCreators)
+// Module 10460 (SocialLayerStorefrontActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
-import DurationsDefault from "Durations" /* 1102 */;
+import Constants from "Constants" /* 1087 */;
+import DurationsDefault from "Durations" /* 1104 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8986 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6933 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9282 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7209 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -181,7 +181,7 @@ let obj = function _fetchSocialLayerStorefront2() {
       if (closure_2 === undefined) {
         obj6 = {};
       }
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -284,7 +284,7 @@ obj = function _fetchSocialLayerStorefrontSkuWithUrl2() {
       if (closure_2 === undefined) {
         obj7 = {};
       }
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;

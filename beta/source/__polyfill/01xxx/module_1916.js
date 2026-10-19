@@ -4,28 +4,17 @@
 
 // Module 1916
 const obj = {
-  locale: "da",
+  locale: "bg",
   pluralRuleFunction(arg0, arg1) {
-    let str3;
-    const str = String(arg0);
-    const parts = str.split(".");
-    const first = parts[0];
-    const tmp4 = arg1;
-    if (tmp4) {
-      str3 = "other";
-    } else {
-      str3 = "one";
-      if (1 != arg0) {
-        if (!tmp3) {
-          str3 = "one";
-          if (0 != first) {
-            str3 = "one";
-          }
-        }
+    let str = "other";
+    let str2 = "other";
+    if (!arg1) {
+      if (1 == arg0) {
+        str = "one";
       }
+      str2 = str;
     }
-    return str3;
+    return str2;
   }
 };
 globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "da-GL", parentLocale: "da" });

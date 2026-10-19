@@ -1,24 +1,24 @@
-// Module ID: 12068
-// Function ID: 12069
+// Module ID: 13018
+// Function ID: 13019
 // Name: NewMessageUserList
-// Dependencies: [32, 19, 17, 2065, 4760, 1390, 10218, 21, 5092, 587, 6095, 4962, 5421, 558, 576, 12, 10220, 1126, 5088, 10222, 10224, 11580, 12069, 2]
+// Dependencies: [32, 19, 17, 2068, 4855, 1392, 10520, 21, 5191, 587, 6374, 5057, 5521, 558, 576, 12, 10522, 1128, 5187, 10524, 10526, 12712, 13019, 2]
 
-// Module 12068 (NewMessageUserList)
+// Module 13018 (NewMessageUserList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import UserUtilsDefault from "UserUtils" /* 4962 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import useChannelName from "useChannelName" /* 5421 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6095 */;
-import UserRowConstants from "UserRowConstants" /* 10218 */;
+import intl3 from "intl" /* 1128 */;
+import UserUtilsDefault from "UserUtils" /* 5057 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import useChannelName from "useChannelName" /* 5521 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6374 */;
+import UserRowConstants from "UserRowConstants" /* 10520 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore_mod from "ChannelStore" /* 2065 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
-import UserStore from "UserStore" /* 1390 */;
+import ChannelStore_mod from "ChannelStore" /* 2068 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,14 +43,14 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         obj.return();
         return 1;
       } else {
-        let tmp19Result = tmp19(4962);
+        let tmp19Result = tmp19(5057);
         let globalName = tmp19Result.getGlobalName(tmp4);
         let toLocaleLowerCaseResult1;
         if (globalName != null) {
           toLocaleLowerCaseResult1 = globalName.toLocaleLowerCase();
         }
         if (null != toLocaleLowerCaseResult1) {
-          if (tmp19(6095)(trimmed1, tmp7)) {
+          if (tmp19(6374)(trimmed1, tmp7)) {
             obj.return();
             return 1;
           }
@@ -61,7 +61,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
           toLocaleLowerCaseResult2 = nickname.toLocaleLowerCase();
         }
         if (null != toLocaleLowerCaseResult2) {
-          if (tmp19(6095)(trimmed1, tmp12)) {
+          if (tmp19(6374)(trimmed1, tmp12)) {
             obj.return();
             return 1;
           }

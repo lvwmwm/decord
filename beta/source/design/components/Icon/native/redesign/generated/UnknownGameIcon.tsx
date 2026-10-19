@@ -1,14 +1,14 @@
-// Module ID: 7684
-// Function ID: 7685
+// Module ID: 7955
+// Function ID: 7956
 // Name: UnknownGameIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 7685, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 7956, 4912, 2]
 
-// Module 7684 (UnknownGameIcon)
+// Module 7955 (UnknownGameIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 7685 */;
+import BaseIconImage2 from "BaseIconImage" /* 4912 */;
+import AssetRegistry from "AssetRegistry" /* 7956 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnknownGam
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4817).BaseIconImage;
+  const BaseIconImage = tmp(4912).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

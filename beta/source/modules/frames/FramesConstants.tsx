@@ -1,13 +1,13 @@
-// Module ID: 10803
-// Function ID: 10804
+// Module ID: 6296
+// Function ID: 6297
 // Name: FramesConstants
-// Dependencies: [1085, 8606, 38, 2]
-// Exports: asLaunched, getFrameHostWindowKey, getFrameIntentForSurface, getFrameSurfaceForChannel, getPipOrientationLockStateForFrame, isLaunched, makeFrameId
+// Dependencies: [1087, 6297, 38, 2]
+// Exports: asLaunched, getFrameHostWindowKey, getFrameIntentForSurface, getFrameLaunchChannelId, getFrameSurfaceForChannel, getPipOrientationLockStateForFrame, isLaunched, makeFrameId
 
-// Module 10803 (FramesConstants)
+// Module 6296 (FramesConstants)
 import _modDef38 from "module_38" /* 38 */;
-import Constants from "Constants" /* 1085 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8606 */;
+import Constants from "Constants" /* 1087 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 6297 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;
@@ -88,6 +88,17 @@ export const getFrameHostWindowKey = function getFrameHostWindowKey(state) {
     hostWindowKey = state.hostWindowKey;
   }
   return hostWindowKey;
+};
+export const getFrameLaunchChannelId = function getFrameLaunchChannelId(surface) {
+  let type;
+  if (surface != null) {
+    type = surface.surface.type;
+  }
+  let channelId;
+  if (type === EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN) {
+    channelId = surface.surface.channelId;
+  }
+  return channelId;
 };
 export const asLaunched = function asLaunched(mainFrame) {
   let state;

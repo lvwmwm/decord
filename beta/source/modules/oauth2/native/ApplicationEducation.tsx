@@ -1,23 +1,23 @@
-// Module ID: 12900
-// Function ID: 12901
+// Module ID: 13831
+// Function ID: 13832
 // Name: ApplicationEducation
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 9227, 8453, 1126, 4815, 12901, 9207, 7092, 5088, 12903, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 9534, 8731, 1128, 4910, 13832, 9514, 7368, 5187, 13834, 2]
 
-// Module 12900 (ApplicationEducation)
+// Module 13831 (ApplicationEducation)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import FriendsIcon from "FriendsIcon" /* 4815 */;
-import SettingsIcon from "SettingsIcon" /* 7092 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8453 */;
-import GameControllerIcon from "GameControllerIcon" /* 9207 */;
-import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 9227 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 12901 */;
-import AuthorizeFormSeparator from "AuthorizeFormSeparator" /* 12903 */;
+import Constants from "Constants" /* 1087 */;
+import FriendsIcon from "FriendsIcon" /* 4910 */;
+import SettingsIcon from "SettingsIcon" /* 7368 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8731 */;
+import GameControllerIcon from "GameControllerIcon" /* 9514 */;
+import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 9534 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 13832 */;
+import AuthorizeFormSeparator from "AuthorizeFormSeparator" /* 13834 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let metroImportDefault;
 let metroRequire;
 let size;
 let tmp;
-const Text_Text = tmp(5088);
+const Text_Text = tmp(5187);
 const View = react_native.View;
 const MAX_FRIENDS = Constants.MAX_FRIENDS;
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
@@ -63,9 +63,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
       }
       if (cResult[3] !== tmp5) {
         let formatToPlainString2Result;
-        const intl6 = tmp(1126).intl;
+        const intl6 = tmp(1128).intl;
         const formatToPlainString2 = intl6.formatToPlainString;
-        const t4 = tmp(1126).t;
+        const t4 = tmp(1128).t;
         if (tmp5) {
           const obj2 = { maxFriends: MAX_FRIENDS };
           formatToPlainString2Result = formatToPlainString2(t4.z9peav, obj2);
@@ -89,9 +89,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
       }
       if (cResult[7] !== tmp5) {
         let string3Result;
-        const intl7 = tmp(1126).intl;
+        const intl7 = tmp(1128).intl;
         const string3 = intl7.string;
-        const t5 = tmp(1126).t;
+        const t5 = tmp(1128).t;
         if (tmp5) {
           string3Result = string3(t5.daY6xj);
         } else {
@@ -113,9 +113,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
       }
       if (cResult[11] !== tmp5) {
         let string4Result;
-        const intl8 = tmp(1126).intl;
+        const intl8 = tmp(1128).intl;
         const string4 = intl8.string;
-        const t6 = tmp(1126).t;
+        const t6 = tmp(1128).t;
         if (tmp5) {
           string4Result = string4(t6["/bdaNN"]);
         } else {
@@ -137,9 +137,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
       }
       if (cResult[15] !== tmp5) {
         let string5Result;
-        const intl9 = tmp(1126).intl;
+        const intl9 = tmp(1128).intl;
         const string5 = intl9.string;
-        const t7 = tmp(1126).t;
+        const t7 = tmp(1128).t;
         if (tmp5) {
           string5Result = string5(t7.mSqazC);
         } else {
@@ -162,12 +162,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
       items.push(tmp26, tmp29, tmp32, tmp35);
       arr2 = tmp20;
     }
-    const intl5 = tmp(1126).intl;
+    const intl5 = tmp(1128).intl;
     if (tmp5) {
       const obj8 = { applicationName: application.name };
-      formatToPlainStringResult = intl5.formatToPlainString(tmp(1126).t["3Mau0y"], obj8);
+      formatToPlainStringResult = intl5.formatToPlainString(tmp(1128).t["3Mau0y"], obj8);
     } else {
-      formatToPlainStringResult = intl5.string(tmp(1126).t.ex4sMU);
+      formatToPlainStringResult = intl5.string(tmp(1128).t.ex4sMU);
     }
     cResult[0] = application;
     cResult[1] = tmp5;
@@ -188,9 +188,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
       }
       if (cResult[22] !== tmp5) {
         let formatToPlainStringResult1;
-        const intl2 = tmp(1126).intl;
+        const intl2 = tmp(1128).intl;
         const formatToPlainString = intl2.formatToPlainString;
-        const t = tmp(1126).t;
+        const t = tmp(1128).t;
         if (tmp5) {
           const obj9 = { maxFriends: MAX_FRIENDS };
           formatToPlainStringResult1 = formatToPlainString(t.z9peav, obj9);
@@ -214,9 +214,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
       }
       if (cResult[26] !== tmp5) {
         let stringResult;
-        const intl3 = tmp(1126).intl;
+        const intl3 = tmp(1128).intl;
         const string = intl3.string;
-        const t2 = tmp(1126).t;
+        const t2 = tmp(1128).t;
         if (tmp5) {
           stringResult = string(t2["/bdaNN"]);
         } else {
@@ -238,9 +238,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
       }
       if (cResult[30] !== tmp5) {
         let string2Result;
-        const intl4 = tmp(1126).intl;
+        const intl4 = tmp(1128).intl;
         const string2 = intl4.string;
-        const t3 = tmp(1126).t;
+        const t3 = tmp(1128).t;
         if (tmp5) {
           string2Result = string2(t3.mSqazC);
         } else {
@@ -263,12 +263,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
       items.push(tmp12, tmp15, tmp18);
       arr2 = tmp6;
     }
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     if (tmp5) {
       const obj14 = { applicationName: application.name };
-      formatToPlainStringResult2 = intl.formatToPlainString(tmp(1126).t["3Mau0y"], obj14);
+      formatToPlainStringResult2 = intl.formatToPlainString(tmp(1128).t["3Mau0y"], obj14);
     } else {
-      formatToPlainStringResult2 = intl.string(tmp(1126).t.ex4sMU);
+      formatToPlainStringResult2 = intl.string(tmp(1128).t.ex4sMU);
     }
     cResult[19] = application;
     cResult[20] = tmp5;
@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
         tmp44 = null;
         if (arr2.length > 0) {
           const obj15 = { variant: "text-sm/normal", color: "text-default", children: arr2 };
-          tmp44 = hasOwnProperty(tmp(5088).Text, obj15);
+          tmp44 = hasOwnProperty(tmp(5187).Text, obj15);
         }
       }
       cResult[34] = arr2;
@@ -356,18 +356,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
   const tmp3 = useIsSocialLayerParentApplicationDefault(application);
   if (accountScopes.includes(OAuth2Scopes.OAuth2Scopes.SDK_SOCIAL_LAYER)) {
     let formatToPlainStringResult;
-    const intl5 = tmp4(1126).intl;
+    const intl5 = tmp4(1128).intl;
     if (tmp3) {
       const obj2 = { applicationName: application.name };
-      formatToPlainStringResult = intl5.formatToPlainString(tmp4(1126).t["3Mau0y"], obj2);
+      formatToPlainStringResult = intl5.formatToPlainString(tmp4(1128).t["3Mau0y"], obj2);
     } else {
-      formatToPlainStringResult = intl5.string(tmp4(1126).t.ex4sMU);
+      formatToPlainStringResult = intl5.string(tmp4(1128).t.ex4sMU);
     }
     const push2 = items.push;
     const obj3 = { iconComponent: FriendsIcon.FriendsIcon, text: formatToPlainString2Result };
-    const intl6 = tmp4(1126).intl;
+    const intl6 = tmp4(1128).intl;
     const formatToPlainString2 = intl6.formatToPlainString;
-    const t4 = tmp4(1126).t;
+    const t4 = tmp4(1128).t;
     if (tmp3) {
       const obj4 = { maxFriends: MAX_FRIENDS };
       formatToPlainString2Result = formatToPlainString2(t4.z9peav, obj4);
@@ -376,27 +376,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
       formatToPlainString2Result = formatToPlainString2(t4.WNKzo9, obj5);
     }
     const obj6 = { iconComponent: ChatSmileIcon.ChatSmileIcon, text: string3Result };
-    const intl7 = tmp4(1126).intl;
+    const intl7 = tmp4(1128).intl;
     const string3 = intl7.string;
-    const t5 = tmp4(1126).t;
+    const t5 = tmp4(1128).t;
     if (tmp3) {
       string3Result = string3(t5.daY6xj);
     } else {
       string3Result = string3(t5.j7peBh);
     }
     const obj7 = { iconComponent: GameControllerIcon.GameControllerIcon, text: string4Result };
-    const intl8 = tmp4(1126).intl;
+    const intl8 = tmp4(1128).intl;
     const string4 = intl8.string;
-    const t6 = tmp4(1126).t;
+    const t6 = tmp4(1128).t;
     if (tmp3) {
       string4Result = string4(t6["/bdaNN"]);
     } else {
       string4Result = string4(t6["feD3+i"]);
     }
     const obj8 = { iconComponent: SettingsIcon.SettingsIcon, text: string5Result };
-    const intl9 = tmp4(1126).intl;
+    const intl9 = tmp4(1128).intl;
     const string5 = intl9.string;
-    const t7 = tmp4(1126).t;
+    const t7 = tmp4(1128).t;
     if (tmp3) {
       string5Result = string5(t7.mSqazC);
     } else {
@@ -406,18 +406,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
     arr2 = formatToPlainStringResult;
   } else if (accountScopes.includes(OAuth2Scopes.OAuth2Scopes.SDK_SOCIAL_LAYER_PRESENCE)) {
     let formatToPlainStringResult1;
-    const intl = tmp4(1126).intl;
+    const intl = tmp4(1128).intl;
     if (tmp3) {
       let obj = { applicationName: application.name };
-      formatToPlainStringResult1 = intl.formatToPlainString(tmp4(1126).t["3Mau0y"], obj);
+      formatToPlainStringResult1 = intl.formatToPlainString(tmp4(1128).t["3Mau0y"], obj);
     } else {
-      formatToPlainStringResult1 = intl.string(tmp4(1126).t.ex4sMU);
+      formatToPlainStringResult1 = intl.string(tmp4(1128).t.ex4sMU);
     }
     const push = items.push;
     const obj9 = { iconComponent: FriendsIcon.FriendsIcon, text: formatToPlainStringResult2 };
-    const intl2 = tmp4(1126).intl;
+    const intl2 = tmp4(1128).intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const t = tmp4(1126).t;
+    const t = tmp4(1128).t;
     if (tmp3) {
       const obj10 = { maxFriends: MAX_FRIENDS };
       formatToPlainStringResult2 = formatToPlainString(t.z9peav, obj10);
@@ -426,18 +426,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
       formatToPlainStringResult2 = formatToPlainString(t.WNKzo9, obj11);
     }
     const obj12 = { iconComponent: GameControllerIcon.GameControllerIcon, text: stringResult };
-    const intl3 = tmp4(1126).intl;
+    const intl3 = tmp4(1128).intl;
     const string = intl3.string;
-    const t2 = tmp4(1126).t;
+    const t2 = tmp4(1128).t;
     if (tmp3) {
       stringResult = string(t2["/bdaNN"]);
     } else {
       stringResult = string(t2["feD3+i"]);
     }
     const obj13 = { iconComponent: SettingsIcon.SettingsIcon, text: string2Result };
-    const intl4 = tmp4(1126).intl;
+    const intl4 = tmp4(1128).intl;
     const string2 = intl4.string;
-    const t3 = tmp4(1126).t;
+    const t3 = tmp4(1128).t;
     if (tmp3) {
       string2Result = string2(t3.mSqazC);
     } else {
@@ -456,7 +456,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
       tmp26 = null;
       if (arr2.length > 0) {
         const obj15 = { variant: "text-sm/normal", color: "text-default", children: arr2 };
-        tmp26 = hasOwnProperty(tmp4(5088).Text, obj15);
+        tmp26 = hasOwnProperty(tmp4(5187).Text, obj15);
       }
     }
     const obj16 = { children: items2 };

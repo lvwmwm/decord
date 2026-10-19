@@ -1,10 +1,10 @@
 // Module ID: 2567
 // Function ID: 2568
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 2567 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_settings/server_monetization/guild_theme/web", scales: [1], hash: "568a306e5dbbd7f0a78da5ed8e4b8801", name: "GuildSettingsGuildTheme.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL2d1aWxkX3RoZW1lL3dlYg==", scales: [1], hash: "7241bfd34e291ac0e81ab8e597006e4c", name: "fr.messages.7241bfd34e291ac0e81ab8e597006e4c.compiled.messages", type: "jsona" });

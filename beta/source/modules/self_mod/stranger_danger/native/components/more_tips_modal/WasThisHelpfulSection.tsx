@@ -1,21 +1,21 @@
-// Module ID: 10409
-// Function ID: 10410
+// Module ID: 10732
+// Function ID: 10733
 // Name: WasThisHelpfulSection
-// Dependencies: [19, 17, 10286, 10383, 21, 5092, 587, 558, 576, 573, 10397, 4809, 1126, 10410, 10396, 5088, 1200, 10412, 10413, 2]
+// Dependencies: [19, 17, 10597, 10706, 21, 5191, 587, 558, 576, 573, 10720, 4904, 1128, 10733, 10719, 5187, 1202, 10735, 10736, 2]
 
-// Module 10409 (WasThisHelpfulSection)
+// Module 10732 (WasThisHelpfulSection)
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
-import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10286 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10396 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10397 */;
-import ShieldIcon from "ShieldIcon" /* 10410 */;
+import intl4 from "intl" /* 1128 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4904 */;
+import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10597 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10719 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 10720 */;
+import ShieldIcon from "ShieldIcon" /* 10733 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 10383 */;
+import Constants from "Constants" /* 10706 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -189,7 +189,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function WasThisHelpf
                 const obj2 = { text: intl.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
                 const open = ToastActionCreatorsDefault.open;
                 ToastActionCreatorsDefault;
-                intl = tmp(1126).intl;
+                intl = tmp(1128).intl;
                 open(tmp6, obj2);
                 const obj3 = { channelId, warningId, senderId, warningType: type, cta };
                 type = undefined;
@@ -220,7 +220,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function WasThisHelpf
               const obj2 = { text: intl.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
               const open = ToastActionCreatorsDefault.open;
               ToastActionCreatorsDefault;
-              intl = tmp(1126).intl;
+              intl = tmp(1128).intl;
               open(tmp6, obj2);
               const obj3 = { channelId, warningId, senderId, warningType: type, cta };
               type = undefined;
@@ -255,7 +255,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function WasThisHelpf
         const obj2 = { text: intl.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
         const open = ToastActionCreatorsDefault.open;
         ToastActionCreatorsDefault;
-        intl = tmp(1126).intl;
+        intl = tmp(1128).intl;
         open(tmp6, obj2);
         const obj3 = { channelId, warningId, senderId, warningType: type, cta };
         type = undefined;
@@ -325,7 +325,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function WasThisHelpf
     const obj2 = { text: intl.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
-    intl = tmp(1126).intl;
+    intl = tmp(1128).intl;
     open(tmp6, obj2);
     const obj3 = { channelId, warningId, senderId, warningType: type, cta };
     type = undefined;

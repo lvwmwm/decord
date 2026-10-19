@@ -1,19 +1,22 @@
-// Module ID: 16055
-// Function ID: 16056
+// Module ID: 12799
+// Function ID: 12800
 // Name: useCheckpointPreloader
-// Dependencies: [32, 19, 16005, 4913, 4915, 16020, 16041, 16029, 16013, 16011, 558, 576, 16056, 1295, 2]
+// Dependencies: [32, 19, 12742, 5004, 5008, 5010, 12760, 12785, 12773, 12769, 12780, 12753, 12751, 558, 576, 12800, 1297, 2]
 
-// Module 16055 (useCheckpointPreloader)
+// Module 12799 (useCheckpointPreloader)
 import react2 from "react" /* 19 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import _modDef4913 from "module_4913" /* 4913 */;
-import _modDef4915 from "module_4915" /* 4915 */;
-import CheckpointStore from "CheckpointStore" /* 16005 */;
-import _modDef16011 from "module_16011" /* 16011 */;
-import _modDef16013 from "module_16013" /* 16013 */;
-import _modDef16020 from "module_16020" /* 16020 */;
-import _modDef16029 from "module_16029" /* 16029 */;
-import _modDef16041 from "module_16041" /* 16041 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import _modDef5004 from "module_5004" /* 5004 */;
+import _modDef5008 from "module_5008" /* 5008 */;
+import _modDef5010 from "module_5010" /* 5010 */;
+import CheckpointStore from "CheckpointStore" /* 12742 */;
+import _modDef12751 from "module_12751" /* 12751 */;
+import _modDef12753 from "module_12753" /* 12753 */;
+import _modDef12760 from "module_12760" /* 12760 */;
+import _modDef12769 from "module_12769" /* 12769 */;
+import _modDef12773 from "module_12773" /* 12773 */;
+import _modDef12780 from "module_12780" /* 12780 */;
+import _modDef12785 from "module_12785" /* 12785 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +27,7 @@ let _require, dependencyMap;
 
 const useEffect = react2.useEffect;
 const CheckpointFetchStates = CheckpointStore.CheckpointFetchStates;
-let items = [_modDef4913, _modDef4915, _modDef16020, _modDef16041, _modDef16029, _modDef16013, _modDef16011];
+let items = [_modDef5004, _modDef5008, _modDef5010, _modDef12760, _modDef12785, _modDef12773, _modDef12769, _modDef12780, _modDef12753, _modDef12751];
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckpointPreloader() {
   let closure_0;
   let closure_1;
@@ -54,7 +57,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckpoin
       }
       const item = items.forEach((url) => {
         const HTTP = HTTPUtils.HTTP;
-        const obj = { url, rejectWithError: true };
+        const obj = { url, binary: true, rejectWithError: true };
         const value = HTTP.get(obj);
         return value.then(handleSettled, handleSettled);
       });
@@ -110,7 +113,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckpoin
     }
     const item = items.forEach((url) => {
       const HTTP = HTTPUtils.HTTP;
-      const obj = { url, rejectWithError: true };
+      const obj = { url, binary: true, rejectWithError: true };
       const value = HTTP.get(obj);
       return value.then(handleSettled, handleSettled);
     });

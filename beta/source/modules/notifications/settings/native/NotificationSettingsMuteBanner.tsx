@@ -1,19 +1,19 @@
-// Module ID: 12603
-// Function ID: 12604
+// Module ID: 13544
+// Function ID: 13545
 // Name: NotificationSettingsMuteBanner
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1126, 5379, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5187, 1128, 5479, 2]
 // Exports: getMuteBannerSubtitleFromConfig
 
-// Module 12603 (NotificationSettingsMuteBanner)
+// Module 13544 (NotificationSettingsMuteBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
+import intl3 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
       }
       const _Symbol2 = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const stringResult = intl.string(intl3.t.YqAjXy);
         cResult[11] = stringResult;
         tmp18 = stringResult;

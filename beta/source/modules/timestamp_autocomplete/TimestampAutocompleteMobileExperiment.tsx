@@ -1,10 +1,10 @@
-// Module ID: 7044
-// Function ID: 7045
+// Module ID: 7320
+// Function ID: 7321
 // Name: TimestampAutocompleteMobileExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1455, 2]
 
-// Module 7044 (TimestampAutocompleteMobileExperiment)
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 7320 (TimestampAutocompleteMobileExperiment)
+import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-08-timestamp-autocomplete-mobile", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

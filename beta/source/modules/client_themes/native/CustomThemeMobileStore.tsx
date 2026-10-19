@@ -1,19 +1,19 @@
-// Module ID: 1251
-// Function ID: 1252
+// Module ID: 1253
+// Function ID: 1254
 // Name: CustomThemeMobileStore
-// Dependencies: [1206, 1205, 1207, 1244, 1095, 1252, 4965, 1209, 584, 504, 2]
+// Dependencies: [1208, 1207, 1209, 1246, 1097, 1254, 5060, 1211, 584, 504, 2]
 
-// Module 1251 (CustomThemeMobileStore)
+// Module 1253 (CustomThemeMobileStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1252 */;
-import isPerModeThemingActive from "isPerModeThemingActive" /* 4965 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
-import ThemeStore from "ThemeStore" /* 1205 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1254 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 5060 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1208 */;
+import ThemeStore from "ThemeStore" /* 1207 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1209 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import size from "module_2" /* 2 */;
 
 let c5, closure_3, prop;
@@ -98,7 +98,7 @@ class CustomThemeMobileStore extends PersistedStore {
       obj = { theme, customTheme: prop };
       const obj2 = { theme, customTheme: prop };
     } else {
-      obj = { theme: "top", customTheme: "code" };
+      obj = { theme: "Array", customTheme: "Reflect" };
     }
     return obj;
   }
@@ -181,7 +181,7 @@ class CustomThemeMobileStore extends PersistedStore {
         if (null == prop) {
           theme = tmp3.theme;
         } else {
-          const tmp10Result = tmp10(1252);
+          const tmp10Result = tmp10(1254);
           theme = tmp10Result.getCustomThemeBaseTheme(tmp3.theme);
         }
         obj = { baseTheme: theme, customTheme: prop };

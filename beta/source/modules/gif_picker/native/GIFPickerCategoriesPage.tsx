@@ -1,19 +1,19 @@
-// Module ID: 9749
-// Function ID: 9750
+// Module ID: 10052
+// Function ID: 10053
 // Name: GIFPickerCategoriesPage
-// Dependencies: [19, 17, 9731, 21, 5092, 9735, 587, 558, 576, 9728, 504, 9732, 9750, 9525, 6751, 6668, 1126, 6744, 2]
+// Dependencies: [19, 17, 10034, 21, 5191, 10038, 587, 558, 576, 10031, 504, 10035, 10053, 9827, 7028, 6945, 1128, 7021, 2]
 
-// Module 9749 (GIFPickerCategoriesPage)
+// Module 10052 (GIFPickerCategoriesPage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6751 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 9732 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 9735 */;
-import GIFPickerCategoryViewDefault from "GIFPickerCategoryView" /* 9750 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7028 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10035 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10038 */;
+import GIFPickerCategoryViewDefault from "GIFPickerCategoryView" /* 10053 */;
 import react from "react" /* 19 */;
-import GIFPickerViewStore from "GIFPickerViewStore" /* 9731 */;
-import createStyles from "createStyles" /* 5092 */;
+import GIFPickerViewStore from "GIFPickerViewStore" /* 10034 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,9 +45,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   columns = columns.columns;
   ({ favoritesCategory, inActionSheet, onSelectCategory } = columns);
   if (columns > 2) {
-    GIF_PICKER_ITEM_ESIMTATED_HEIGHT = tmp(9735).GIF_PICKER_ITEM_ESIMTATED_HEIGHT;
+    GIF_PICKER_ITEM_ESIMTATED_HEIGHT = tmp(10038).GIF_PICKER_ITEM_ESIMTATED_HEIGHT;
   } else {
-    GIF_PICKER_ITEM_ESIMTATED_HEIGHT = tmp(9735).GIF_PICKER_ITEM_ESIMTATED_HEIGHT / 2;
+    GIF_PICKER_ITEM_ESIMTATED_HEIGHT = tmp(10038).GIF_PICKER_ITEM_ESIMTATED_HEIGHT / 2;
   }
   let tmp4 = closure_7(GIF_PICKER_ITEM_ESIMTATED_HEIGHT);
   dependencyMap = tmp4;
@@ -59,7 +59,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     first = cResult[0];
   }
-  const safeAreaBottomKeyboardAware = onSelectCategory(9728)(first).safeAreaBottomKeyboardAware;
+  const safeAreaBottomKeyboardAware = onSelectCategory(10031)(first).safeAreaBottomKeyboardAware;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     let tmp8 = GIFPickerViewStore;
     let items = [GIFPickerViewStore];
@@ -174,7 +174,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 if (cResult[21] === tmp4.placeholder) {
                   tmp24 = cResult[22];
                 }
-                const tmp10Result = tmp10(9525);
+                const tmp10Result = tmp10(9827);
                 const isPortalKeyboardInModal = tmp10Result.useIsPortalKeyboardInModal();
                 class S {
                   constructor() {
@@ -199,8 +199,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                       }
                       const _Symbol2 = Symbol;
                       if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
-                        const intl = tmp10(1126).intl;
-                        const stringResult = intl.string(tmp10(1126).t.ffgJrs);
+                        const intl = tmp10(1128).intl;
+                        const stringResult = intl.string(tmp10(1128).t.ffgJrs);
                         class S {
                           constructor() {
                             const obj = { trendingCategories: trendingCategories.getTrendingCategories() };
@@ -252,7 +252,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                           return <View style={item.item} collapsable={false}>{items}</View>;
                         }
                       }
-                      const tmp34 = jsx(onSelectCategory(6744), { estimatedListSize: tmp29, inActionSheet, preventNativeModalDismiss: isPortalKeyboardInModal, insetEnd: safeAreaBottomKeyboardAware, itemSize: GIF_PICKER_ITEM_ESIMTATED_HEIGHT, sections: tmp19, placeholderConfig: tmp27, renderItem: tmp24, accessibilityLabel: tmp30 });
+                      const tmp34 = jsx(onSelectCategory(7021), { estimatedListSize: tmp29, inActionSheet, preventNativeModalDismiss: isPortalKeyboardInModal, insetEnd: safeAreaBottomKeyboardAware, itemSize: GIF_PICKER_ITEM_ESIMTATED_HEIGHT, sections: tmp19, placeholderConfig: tmp27, renderItem: tmp24, accessibilityLabel: tmp30 });
                       cResult[30] = GIF_PICKER_ITEM_ESIMTATED_HEIGHT;
                       cResult[31] = inActionSheet;
                       cResult[32] = isPortalKeyboardInModal;
@@ -266,7 +266,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   }
                 }
                 const obj4 = { sectionItem: obj5 };
-                obj5 = { type: tmp10(6751).FastestListPropsPlaceholderType.SHAPE, shape: "rect", shapeCount: null, spaceGap: tmp10(9735).GIF_PICKER_GUTTER_SPACING, borderRadius: tmp4.placeholder.borderRadius, colorHex: tmp4.placeholder.backgroundColor, height: tmp26, verticalAlignment: "top" };
+                obj5 = { type: tmp10(7028).FastestListPropsPlaceholderType.SHAPE, shape: "rect", shapeCount: null, spaceGap: tmp10(10038).GIF_PICKER_GUTTER_SPACING, borderRadius: tmp4.placeholder.borderRadius, colorHex: tmp4.placeholder.backgroundColor, height: tmp26, verticalAlignment: "top" };
                 class K {
                   constructor(arg0, arg1) {
                     const items = [];
@@ -352,7 +352,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
     let num3 = 0;
-    if (0 < Math.max(arr2.length, tmp(9735).DEFAULT_CATEGORY_ROWS)) {
+    if (0 < Math.max(arr2.length, tmp(10038).DEFAULT_CATEGORY_ROWS)) {
       do {
         let arr = items3.push(arr2.slice(num3, num3 + columns));
         num3 = num3 + columns;
@@ -360,7 +360,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         let tmp13 = columns;
         tmp = columns;
         tmp2 = dependencyMap;
-        bound = Math.max(arr2.length, columns(9735).DEFAULT_CATEGORY_ROWS);
+        bound = Math.max(arr2.length, columns(10038).DEFAULT_CATEGORY_ROWS);
       } while (num3 < bound);
     }
     cResult[6] = arr2;

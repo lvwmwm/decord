@@ -1,28 +1,28 @@
-// Module ID: 9531
-// Function ID: 9532
+// Module ID: 9833
+// Function ID: 9834
 // Name: PremiumFeatureUpsell
-// Dependencies: [109, 19, 17, 5110, 1392, 1085, 7152, 21, 9276, 4769, 1126, 5092, 587, 558, 576, 9457, 9265, 9277, 9532, 1265, 9273, 9515, 1200, 9533, 9534, 5088, 9031, 5391, 1105, 5378, 5382, 6852, 9535, 8390, 4850, 9444, 2]
+// Dependencies: [109, 19, 17, 5209, 1394, 1087, 7423, 21, 9582, 4864, 1128, 5191, 587, 558, 576, 9583, 9571, 9834, 1267, 9579, 9818, 1202, 9835, 9836, 5187, 9327, 5491, 1107, 5478, 5482, 7130, 9837, 8668, 4945, 9748, 2]
 
-// Module 9531 (PremiumFeatureUpsell)
+// Module 9833 (PremiumFeatureUpsell)
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import intl7 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import PremiumUtils from "PremiumUtils" /* 4769 */;
-import spring from "spring" /* 5378 */;
-import springPresets from "springPresets" /* 5382 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import ColorConstants from "ColorConstants" /* 7152 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9273 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9276 */;
+import Constants from "Constants" /* 1087 */;
+import ConstantsIOS from "ConstantsIOS" /* 1107 */;
+import intl7 from "intl" /* 1128 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import PremiumUtils from "PremiumUtils" /* 4864 */;
+import spring from "spring" /* 5478 */;
+import springPresets from "springPresets" /* 5482 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import ColorConstants from "ColorConstants" /* 7423 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9579 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9582 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -41,30 +41,30 @@ function getPremiumUpsellLabel(TIER_0, featureName, fn) {
   const obj = PremiumUtils;
   const premiumTypeDisplayName = obj.getPremiumTypeDisplayName(TIER_0);
   if (EntitlementFeatureNames.EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE === featureName) {
-    const intl6 = tmp(1126).intl;
+    const intl6 = tmp(1128).intl;
     const obj2 = { nitroTierName: premiumTypeDisplayName, onClick: fn };
     return intl6.format(intl7.t["tw/SSq"], obj2);
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.EMOJIS_EVERYWHERE === featureName) {
-    const intl5 = tmp(1126).intl;
+    const intl5 = tmp(1128).intl;
     const obj3 = { nitroTierName: premiumTypeDisplayName, onClick: fn };
     return intl5.format(intl7.t.gMVjeS, obj3);
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.STICKERS_EVERYWHERE === featureName) {
-    const intl4 = tmp(1126).intl;
+    const intl4 = tmp(1128).intl;
     const obj4 = { nitroTierName: premiumTypeDisplayName, onClick: fn };
     return intl4.format(intl7.t.eontIh, obj4);
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE === featureName) {
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     const format = intl3.format;
     const obj5 = { maxFileSize: tmpResult.getMaxFileSizeForPremiumType(TIER_0), nitroTierName: premiumTypeDisplayName, onClick: fn };
-    const zzyLEK = tmp(1126).t.zzyLEK;
+    const zzyLEK = tmp(1128).t.zzyLEK;
     tmpResult = PremiumUtils;
     return format(zzyLEK, obj5);
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.STREAM_HIGH_QUALITY === featureName) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const obj6 = { nitroTierName: premiumTypeDisplayName, onClick: fn };
     return intl2.format(intl7.t.lyxfbj, obj6);
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.APP_ICONS === featureName) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const obj7 = { onClick: fn };
     return intl.format(intl7.t.x2dQxN, obj7);
   }
@@ -126,15 +126,15 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
   const tmp7 = closure_17(useTier0UpsellContent);
   closure_3 = tmp7;
   if (cResult[2] !== featureName) {
-    const tmpResult6 = tmp(tmp2[17]);
-    let mobileEmojiPickerUpsellRestyleEnabledForFeature = tmpResult6.getMobileEmojiPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumFeatureUpsell");
-    if (!mobileEmojiPickerUpsellRestyleEnabledForFeature) {
-      const tmpResult7 = tmp(tmp2[18]);
-      mobileEmojiPickerUpsellRestyleEnabledForFeature = tmpResult7.getMobileStickerPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumFeatureUpsell");
+    const tmpResult6 = tmp(tmp2[15]);
+    let result = tmpResult6.isEmojiPickerUpsellFeature(featureName);
+    if (!result) {
+      const tmpResult7 = tmp(tmp2[17]);
+      result = tmpResult7.getMobileStickerPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumFeatureUpsell");
     }
     cResult[2] = featureName;
-    cResult[3] = mobileEmojiPickerUpsellRestyleEnabledForFeature;
-    tmp8 = mobileEmojiPickerUpsellRestyleEnabledForFeature;
+    cResult[3] = result;
+    tmp8 = result;
   } else {
     tmp8 = cResult[3];
   }
@@ -161,7 +161,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
         } else {
           tmp15 = cResult[12];
         }
-        const tmp18 = analyticsLocation(tmp2[21])(useTier0UpsellContent, onViewAllPerks, tmp15);
+        const tmp18 = analyticsLocation(tmp2[20])(useTier0UpsellContent, onViewAllPerks, tmp15);
         const loading = tmp18.loading;
         const onPress = tmp18.onPress;
         const tmp17 = analyticsLocation;
@@ -266,8 +266,8 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
                                     return syncedClientThemes(tmp2, obj);
                                   }
                                 }
-                                const obj3 = { disabled: loading, shrink: true, style: tmp7.button, size: tmp(tmp2[22]).ButtonSizes.XSMALL, onPress, text: tmp29, color: tmp(tmp2[22]).ButtonColors.GREEN, renderIcon: tmp31, renderLinearGradient: tmp32 };
-                                const ShinyButton = tmp(tmp2[22]).ShinyButton;
+                                const obj3 = { disabled: loading, shrink: true, style: tmp7.button, size: tmp(tmp2[21]).ButtonSizes.XSMALL, onPress, text: tmp29, color: tmp(tmp2[21]).ButtonColors.GREEN, renderIcon: tmp31, renderLinearGradient: tmp32 };
+                                const ShinyButton = tmp(tmp2[21]).ShinyButton;
                                 const tmp34 = closure_14(ShinyButton, obj3);
                                 cResult[39] = loading;
                                 cResult[40] = onPress;
@@ -298,13 +298,13 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
                         let tmpResult;
                         if (closure_4) {
                           const obj2 = { size: "xxs", color: nativeDefault.colors.WHITE, style: items };
-                          const NitroWheelIcon = tmp2(9031).NitroWheelIcon;
+                          const NitroWheelIcon = tmp2(9327).NitroWheelIcon;
                           items = [closure_3.nitroWheelIcon, loading && closure_3.nitroWheelDisabled];
                           tmpResult = tmp(NitroWheelIcon, obj2);
                         } else {
                           const items1 = [closure_3.nitroWheelButton, ];
                           let nitroWheelDisabled = loading;
-                          const NitroWheel = tmp2(1200).NitroWheel;
+                          const NitroWheel = tmp2(1202).NitroWheel;
                           if (loading) {
                             nitroWheelDisabled = closure_3.nitroWheelDisabled;
                           }
@@ -333,7 +333,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
                   tmp26 = tmp28;
                 }
                 const obj5 = { style: tmp7.text, variant: "text-sm/medium", children: tmp13 };
-                const tmp25 = closure_14(tmp(tmp2[25]).Text, obj5);
+                const tmp25 = closure_14(tmp(tmp2[24]).Text, obj5);
                 cResult[21] = tmp13;
                 cResult[22] = tmp7.text;
                 cResult[23] = tmp25;
@@ -341,7 +341,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
               }
             }
             if (tmp22Result) {
-              const obj6 = { source: tmp17(useTier0UpsellContent ? tmp2[23] : tmp2[24]), style: tmp7.nitroWheel, disableColor: true };
+              const obj6 = { source: tmp17(useTier0UpsellContent ? tmp2[22] : tmp2[23]), style: tmp7.nitroWheel, disableColor: true };
               const tmp22 = closure_14;
               class D {
                 constructor() {
@@ -374,7 +374,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
     cResult[10] = tmp14;
     tmp13 = tmp14;
   }
-  const fn = function f() {
+  const fn = function b() {
     let tmp3 = featureName === EntitlementFeatureNames.EntitlementFeatureNames.STICKERS_EVERYWHERE;
     const tmp = featureName;
     if (tmp3) {
@@ -403,6 +403,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
     showShadow = true;
   }
   let useTier0UpsellContent;
+  let c4;
   let loading;
   let tmp = featureName;
   let tmp2 = useTier0UpsellContent;
@@ -415,12 +416,13 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
   const onViewAllPerks = premiumUpsellConfig.onViewAllPerks;
   const tmp5 = closure_17(useTier0UpsellContent);
   closure_3 = tmp5;
-  let obj2 = featureName(useTier0UpsellContent[17]);
-  let mobileEmojiPickerUpsellRestyleEnabledForFeature = obj2.getMobileEmojiPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumFeatureUpsell");
-  if (!mobileEmojiPickerUpsellRestyleEnabledForFeature) {
-    let tmpResult = tmp(tmp2[18]);
-    mobileEmojiPickerUpsellRestyleEnabledForFeature = tmpResult.getMobileStickerPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumFeatureUpsell");
+  let obj2 = featureName(useTier0UpsellContent[15]);
+  let result = obj2.isEmojiPickerUpsellFeature(featureName);
+  if (!result) {
+    let tmpResult = tmp(tmp2[17]);
+    result = tmpResult.getMobileStickerPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumFeatureUpsell");
   }
+  c4 = result;
   const tmp8 = getPremiumUpsellLabel(useTier0UpsellContent ? closure_10.TIER_0 : closure_10.TIER_2, featureName, () => {
     let tmp3 = featureName === EntitlementFeatureNames.EntitlementFeatureNames.STICKERS_EVERYWHERE;
     const tmp = featureName;
@@ -447,37 +449,37 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
   const obj3 = { style: items, children: items2 };
   items[1] = showShadow;
   items[2] = style;
-  let tmp15Result = !mobileEmojiPickerUpsellRestyleEnabledForFeature;
+  let tmp15Result = !result;
   const obj4 = { style: tmp5.labelContainer, children: items1 };
   if (tmp15Result) {
-    const obj5 = { source: tmp9(useTier0UpsellContent ? tmp2[23] : tmp2[24]), style: tmp5.nitroWheel, disableColor: true };
-    const Icon = tmp(tmp2[22]).Icon;
+    const obj5 = { source: tmp9(useTier0UpsellContent ? tmp2[22] : tmp2[23]), style: tmp5.nitroWheel, disableColor: true };
+    const Icon = tmp(tmp2[21]).Icon;
     tmp15Result = closure_14(Icon, obj5);
   }
   items1 = [tmp15Result, ];
   const obj6 = { style: tmp5.text, variant: "text-sm/medium", children: tmp8 };
-  items1[1] = closure_14(tmp(tmp2[25]).Text, obj6);
+  items1[1] = closure_14(tmp(tmp2[24]).Text, obj6);
   items2 = [closure_15(closure_7, obj4), ];
   const obj7 = {
     disabled: loading,
     shrink: true,
     style: tmp5.button,
-    size: tmp(tmp2[22]).ButtonSizes.XSMALL,
+    size: tmp(tmp2[21]).ButtonSizes.XSMALL,
     onPress,
     text: stringResult,
-    color: tmp(tmp2[22]).ButtonColors.GREEN,
+    color: tmp(tmp2[21]).ButtonColors.GREEN,
     renderIcon() {
       let items;
       let tmpResult;
-      if (mobileEmojiPickerUpsellRestyleEnabledForFeature) {
+      if (c4) {
         const obj2 = { size: "xxs", color: nativeDefault.colors.WHITE, style: items };
-        const NitroWheelIcon = tmp2(9031).NitroWheelIcon;
+        const NitroWheelIcon = tmp2(9327).NitroWheelIcon;
         items = [closure_3.nitroWheelIcon, loading && closure_3.nitroWheelDisabled];
         tmpResult = tmp(NitroWheelIcon, obj2);
       } else {
         const items1 = [closure_3.nitroWheelButton, ];
         let nitroWheelDisabled = loading;
-        const NitroWheel = tmp2(1200).NitroWheel;
+        const NitroWheel = tmp2(1202).NitroWheel;
         if (loading) {
           nitroWheelDisabled = closure_3.nitroWheelDisabled;
         }
@@ -493,7 +495,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
       return syncedClientThemes(tmp2, obj);
     }
   };
-  const ShinyButton = tmp(tmp2[22]).ShinyButton;
+  const ShinyButton = tmp(tmp2[21]).ShinyButton;
   const intl = tmp(tmp2[10]).intl;
   const string = intl.string;
   const t = tmp(tmp2[10]).t;
@@ -550,29 +552,29 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
     tmp5 = cResult[2];
   }
   const ref = react.useRef(false);
-  analyticsLocations = ref(tmp2[31])().analyticsLocations;
-  const tmpResult = tmp(tmp2[32]);
+  analyticsLocations = ref(tmp2[30])().analyticsLocations;
+  const tmpResult = tmp(tmp2[31]);
   _location = tmpResult.useAnalyticsContext().location;
-  const tmp10 = ref(tmp2[33])(tmp5);
+  const tmp10 = ref(tmp2[32])(tmp5);
   _objectWithoutProperties = tmp10;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
+    class I {
       constructor(arg0, arg1) {
         obj = { style: arg1, children: null };
         obj1 = {};
-        View = closure_1(analyticsLocations[34]).View;
+        View = closure_1(analyticsLocations[33]).View;
         merged = Object.assign(shouldShow);
         obj.children = closure_1_14(closure_1_18, obj1);
         return closure_1_14(View, obj);
       }
     }
-    cResult[3] = R;
+    cResult[3] = I;
   } else {
-    class R {
+    class I {
       constructor(arg0, arg1) {
         obj = { style: arg1, children: null };
         obj1 = {};
-        View = closure_1(analyticsLocations[34]).View;
+        View = closure_1(analyticsLocations[33]).View;
         merged = Object.assign(shouldShow);
         obj.children = closure_1_14(closure_1_18, obj1);
         return closure_1_14(View, obj);
@@ -580,11 +582,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
     }
   }
   if (cResult[4] === analyticsLocations) {
-    class R {
+    class I {
       constructor(arg0, arg1) {
         obj = { style: arg1, children: null };
         obj1 = {};
-        View = closure_1(analyticsLocations[34]).View;
+        View = closure_1(analyticsLocations[33]).View;
         merged = Object.assign(shouldShow);
         obj.children = closure_1_14(closure_1_18, obj1);
         return closure_1_14(View, obj);
@@ -602,7 +604,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
       if (tmp2) {
         tmp3 = closure_1;
         tmp4 = closure_2;
-        tmp5 = closure_1(closure_2[19]);
+        tmp5 = closure_1(closure_2[18]);
         tmp6 = AnalyticEvents;
         tmp7 = closure_0;
         featureName = closure_0.featureName;
@@ -663,17 +665,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
   let merged = Object.assign(shouldShow, Object.assign({ shouldShow: 0 }));
   let analyticsLocations;
   const ref = react.useRef(false);
-  analyticsLocations = ref(analyticsLocations[31])().analyticsLocations;
-  let obj = merged(analyticsLocations[32]);
+  analyticsLocations = ref(analyticsLocations[30])().analyticsLocations;
+  let obj = merged(analyticsLocations[31]);
   const _location = obj.useAnalyticsContext().location;
-  const tmp3 = ref(analyticsLocations[33])(shouldShow);
+  const tmp3 = ref(analyticsLocations[32])(shouldShow);
   let closure_4 = tmp3;
   const items = [ref, _location, analyticsLocations, tmp3, merged.featureName];
   const callback = react.useCallback((arg0, style) => {
     let obj2;
     const obj = { style, children: closure_1_14(closure_1_18, obj2) };
     obj2 = {};
-    const View = ref(analyticsLocations[34]).View;
+    const View = ref(analyticsLocations[33]).View;
     merged = Object.assign(arg0);
     return closure_1_14(View, obj);
   }, []);
@@ -717,7 +719,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
   }, items);
   let tmp8;
   const tmp6 = closure_14;
-  const tmp7 = ref(analyticsLocations[35]);
+  const tmp7 = ref(analyticsLocations[34]);
   if (tmp3) {
     tmp8 = merged;
   }
@@ -725,6 +727,6 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
   return tmp6(tmp7, obj2);
 });
 let size = size_mod;
-const result = size.fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumFeatureUpsell.tsx");
+let result = size.fileFinishedImporting("modules/premium/roadblocks/native/views/PremiumFeatureUpsell.tsx");
 
 export default tmp5;

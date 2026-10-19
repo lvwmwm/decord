@@ -1,11 +1,11 @@
-// Module ID: 10167
-// Function ID: 10168
+// Module ID: 10469
+// Function ID: 10470
 // Name: OrderUtils
-// Dependencies: [5, 5071, 7149, 2]
+// Dependencies: [5, 5171, 7420, 2]
 // Exports: discardDraftOrder
 
-// Module 10167 (OrderUtils)
-import PaymentConstants from "PaymentConstants" /* 5071 */;
+// Module 10469 (OrderUtils)
+import PaymentConstants from "PaymentConstants" /* 5171 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ let obj = function _discardDraftOrder() {
     }
     await "IconComponent";
     ({ checkoutSucceeded: c0, order: c1 } = closure_0);
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };

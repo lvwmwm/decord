@@ -1,27 +1,27 @@
-// Module ID: 7179
-// Function ID: 7180
+// Module ID: 7450
+// Function ID: 7451
 // Name: SessionHeartbeatScheduler
-// Dependencies: [5, 5757, 502, 5888, 5110, 1085, 1102, 3, 7180, 7181, 7182, 1255, 7183, 7186, 1265, 7187, 510, 7189, 1363, 584, 504, 1279, 2]
+// Dependencies: [5, 6013, 502, 6144, 5209, 1087, 1104, 3, 7451, 7452, 7453, 1257, 7454, 7457, 1267, 7458, 510, 7460, 1366, 584, 504, 1281, 2]
 // Exports: getActiveSessionUnsafe, initSessionHeartbeatScheduler
 
-// Module 7179 (SessionHeartbeatScheduler)
+// Module 7450 (SessionHeartbeatScheduler)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import SentryUtilsDefault from "SentryUtils" /* 1255 */;
-import MonotonicClock from "MonotonicClock" /* 7182 */;
-import Clickstream from "Clickstream" /* 7183 */;
-import SkippedClientHeartbeatUtil from "SkippedClientHeartbeatUtil" /* 7187 */;
-import SessionUtils from "SessionUtils" /* 7189 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import SentryUtilsDefault from "SentryUtils" /* 1257 */;
+import MonotonicClock from "MonotonicClock" /* 7453 */;
+import Clickstream from "Clickstream" /* 7454 */;
+import SkippedClientHeartbeatUtil from "SkippedClientHeartbeatUtil" /* 7458 */;
+import SessionUtils from "SessionUtils" /* 7460 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import IdleStore from "IdleStore" /* 5888 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
-import Constants from "Constants" /* 1085 */;
-import react_native from "react-native" /* 7180 */;
-import SessionRouteUtils from "SessionRouteUtils" /* 7181 */;
+import IdleStore from "IdleStore" /* 6144 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
+import Constants from "Constants" /* 1087 */;
+import react_native from "react-native" /* 7451 */;
+import SessionRouteUtils from "SessionRouteUtils" /* 7452 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -145,7 +145,7 @@ function isActive() {
   return items.length > 0;
 }
 function scheduleHeartbeatTracking() {
-  const f140562 = () => {
+  const f142290 = () => {
     trackHeartbeat();
     obj = {
       type: "interval",
@@ -181,8 +181,8 @@ function scheduleHeartbeatTracking() {
       SentryUtilsDefault;
       addBreadcrumb(obj3);
       const _setTimeout = setTimeout;
-      user = { type: "timeout", id: setTimeout(f140562, num) };
-      const obj4 = { type: "timeout", id: setTimeout(f140562, num) };
+      user = { type: "timeout", id: setTimeout(f142290, num) };
+      const obj4 = { type: "timeout", id: setTimeout(f142290, num) };
     }
   } else {
     let flag = false;
@@ -236,7 +236,7 @@ function validateClientSession(version) {
     const tmp2 = require;
     if (version.version !== SessionUtils.CLIENT_SESSION_STORAGE_VERSION) {
       const _HermesInternal = HermesInternal;
-      logger.warn("Throwing away client session with invalid version: " + version.version + ", expected " + tmp2(7189).CLIENT_SESSION_STORAGE_VERSION);
+      logger.warn("Throwing away client session with invalid version: " + version.version + ", expected " + tmp2(7460).CLIENT_SESSION_STORAGE_VERSION);
       tmp4 = null;
     }
     tmp = tmp4;
@@ -335,7 +335,7 @@ function handleAuthenticationChange() {
       const obj2 = { category: user, message: "Stopping Analytics Heartbeat" };
       obj = SentryUtilsDefault;
       obj.addBreadcrumb(obj2);
-      const tmp15Result = tmp15(7183);
+      const tmp15Result = tmp15(7454);
       tmp15Result.drainClickstream();
     }
     c19 = 0;
@@ -445,7 +445,7 @@ obj = function _getSession() {
             uuid1 = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else {
           if (1 === tmp4) {

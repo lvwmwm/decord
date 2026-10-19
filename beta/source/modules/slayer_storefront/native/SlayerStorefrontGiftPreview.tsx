@@ -1,19 +1,19 @@
-// Module ID: 10510
-// Function ID: 10511
+// Module ID: 10833
+// Function ID: 10834
 // Name: SlayerStorefrontGiftPreview
-// Dependencies: [19, 17, 21, 5092, 558, 576, 9024, 1126, 5088, 3719, 10511, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 9320, 1128, 5187, 3753, 10834, 2]
 
-// Module 10510 (SlayerStorefrontGiftPreview)
+// Module 10833 (SlayerStorefrontGiftPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1126 */;
-import _modDef3719 from "module_3719" /* 3719 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9024 */;
-import InfoBox from "InfoBox" /* 10511 */;
+import intl4 from "intl" /* 1128 */;
+import _modDef3753 from "module_3753" /* 3753 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9320 */;
+import InfoBox from "InfoBox" /* 10834 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -119,11 +119,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStoref
         tmp17 = tmp19;
       }
     }
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj6 = { sender, skuName: sku.name, applicationName: name1 };
     name1 = undefined;
-    const v2tBYtA = tmp(1126).t["2tBYtA"];
+    const v2tBYtA = tmp(1128).t["2tBYtA"];
     if (application != null) {
       name1 = application.name;
     }
@@ -205,10 +205,10 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Warning
         name = application.name;
       }
       if (first !== name) {
-        const intl3 = tmp(1126).intl;
+        const intl3 = tmp(1128).intl;
         const formatToPlainString2 = intl3.formatToPlainString;
         let name1;
-        const BMMo2K = _modDef3719.BMMo2K;
+        const BMMo2K = _modDef3753.BMMo2K;
         if (application != null) {
           name1 = application.name;
         }
@@ -264,11 +264,11 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Warning
         cResult[14] = tmp25;
         tmp21 = tmp25;
       }
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const formatToPlainString = intl2.formatToPlainString;
       const obj5 = { skuName: sku.name, applicationName: name4 };
       name4 = undefined;
-      const prop = tmp(1126).t["EgCl+Q"];
+      const prop = tmp(1128).t["EgCl+Q"];
       if (application != null) {
         name4 = application.name;
       }
@@ -285,7 +285,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Warning
       let tmp6;
       const _Symbol = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const formatResult = intl.format(intl4.t["3T0cpx"], {});
         cResult[5] = formatResult;
         tmp6 = formatResult;
@@ -327,7 +327,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Warning
     if (mobileAccountLinkingDisabled) {
       const formatToPlainString2 = intl.formatToPlainString;
       let name;
-      const BMMo2K = tmp4(3719).BMMo2K;
+      const BMMo2K = tmp4(3753).BMMo2K;
       if (application != null) {
         name = application.name;
       }
@@ -338,7 +338,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Warning
       const formatToPlainString = intl.formatToPlainString;
       const obj3 = { skuName: sku.name, applicationName: name1 };
       name1 = undefined;
-      const prop = tmp7(1126).t["EgCl+Q"];
+      const prop = tmp7(1128).t["EgCl+Q"];
       if (application != null) {
         name1 = application.name;
       }

@@ -1,14 +1,14 @@
-// Module ID: 11960
-// Function ID: 11961
+// Module ID: 12917
+// Function ID: 12918
 // Name: useVoiceMessageTooltip
-// Dependencies: [19, 1499, 11636, 558, 576, 1126, 6305, 9439, 2]
+// Dependencies: [19, 1501, 12825, 558, 576, 1128, 6582, 9743, 2]
 
-// Module 11960 (useVoiceMessageTooltip)
-import intl2 from "intl" /* 1126 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6305 */;
+// Module 12917 (useVoiceMessageTooltip)
+import intl2 from "intl" /* 1128 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6582 */;
 import react from "react" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1499 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11636 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1501 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 12825 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,8 +44,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceMe
   const tmp6 = closure_6(first);
   _require = tmp6;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(tmp(1126).t["hP6+07"]);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(tmp(1128).t["hP6+07"]);
     cResult[1] = stringResult;
     tmp7 = stringResult;
   } else {
@@ -92,7 +92,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceMe
     tmp11 = cResult[6];
   }
   const effect = obj2.useEffect(tmp10, tmp11);
-  const tmpResult = tmp(9439);
+  const tmpResult = tmp(9743);
   const tooltip = tmpResult.useTooltip(ref, tmp9);
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { tooltipTargetRef: ref, showVoiceMessagesTooltip };

@@ -1,13 +1,13 @@
-// Module ID: 15604
-// Function ID: 15605
+// Module ID: 16364
+// Function ID: 16365
 // Name: useSyncedModeThemeName
-// Dependencies: [1205, 1253, 558, 576, 1252, 1126, 2798, 504, 2]
+// Dependencies: [1207, 1255, 558, 576, 1254, 1128, 2821, 504, 2]
 
-// Module 15604 (useSyncedModeThemeName)
-import ClientThemesUtils from "ClientThemesUtils" /* 1252 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1253 */;
-import _modDef2798 from "module_2798" /* 2798 */;
-import ThemeStore from "ThemeStore" /* 1205 */;
+// Module 16364 (useSyncedModeThemeName)
+import ClientThemesUtils from "ClientThemesUtils" /* 1254 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1255 */;
+import _modDef2821 from "module_2821" /* 2821 */;
+import ThemeStore from "ThemeStore" /* 1207 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp2;
-const intl2 = tmp2(1126);
+const intl2 = tmp2(1128);
 let closure_4 = ClientThemesConstants.BACKGROUND_GRADIENT_PRESETS_MAP;
 tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncedModeThemeName(arg0) {
   let closure_0;
@@ -45,7 +45,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncedModeThe
       }
       if (null != prop) {
         const intl = intl2.intl;
-        stringResult = intl.string(_modDef2798.yl1iMm);
+        stringResult = intl.string(_modDef2821.yl1iMm);
       } else {
         let prop1;
         if (syncedClientTheme != null) {
@@ -92,7 +92,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncedModeThe
     }
     if (null != prop) {
       const intl = intl2.intl;
-      stringResult = intl.string(_modDef2798.yl1iMm);
+      stringResult = intl.string(_modDef2821.yl1iMm);
     } else {
       let prop1;
       if (syncedClientTheme != null) {

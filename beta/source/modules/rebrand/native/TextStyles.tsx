@@ -1,11 +1,11 @@
-// Module ID: 5906
-// Function ID: 5907
+// Module ID: 6162
+// Function ID: 6163
 // Name: TextStyles
-// Dependencies: [1085, 2]
+// Dependencies: [1087, 2]
 // Exports: default
 
-// Module 5906 (TextStyles)
-import Constants from "Constants" /* 1085 */;
+// Module 6162 (TextStyles)
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const Fonts = Constants.Fonts;

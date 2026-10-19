@@ -1,18 +1,18 @@
-// Module ID: 17279
-// Function ID: 17280
+// Module ID: 12259
+// Function ID: 12260
 // Name: ConjureNativeStepImages
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 17280, 6157, 17065, 8382, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 12189, 5128, 11612, 8660, 2]
 
-// Module 17279 (ConjureNativeStepImages)
+// Module 12259 (ConjureNativeStepImages)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import openMediaModal from "openMediaModal" /* 8382 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 17280 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import openMediaModal from "openMediaModal" /* 8660 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12189 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -216,7 +216,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
         return size;
       });
       const obj = openMediaModal;
-      const obj2 = { initialSources: mapped, initialIndex: Math.max(0, closure_1), analyticsSource: "VibegrationsChat", shareable: false, disableDownload: true, disableMediaOverlayButton: true, disableMediaOverlayFooter: true };
+      const obj2 = { initialSources: mapped, initialIndex: Math.max(0, closure_1), analyticsSource: "ConjureChat", shareable: false, disableDownload: true, disableMediaOverlayButton: true, disableMediaOverlayFooter: true };
       obj.openMediaModal(obj2);
     }, () => {
 
@@ -245,7 +245,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
         return size;
       });
       const obj = openMediaModal;
-      const obj2 = { initialSources: mapped, initialIndex: Math.max(0, closure_1), analyticsSource: "VibegrationsChat", shareable: false, disableDownload: true, disableMediaOverlayButton: true, disableMediaOverlayFooter: true };
+      const obj2 = { initialSources: mapped, initialIndex: Math.max(0, closure_1), analyticsSource: "ConjureChat", shareable: false, disableDownload: true, disableMediaOverlayButton: true, disableMediaOverlayFooter: true };
       obj.openMediaModal(obj2);
     }, () => {
 

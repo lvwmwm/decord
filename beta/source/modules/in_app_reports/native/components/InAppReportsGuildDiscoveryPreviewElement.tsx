@@ -1,23 +1,23 @@
-// Module ID: 13567
-// Function ID: 13568
+// Module ID: 14347
+// Function ID: 14348
 // Name: InAppReportsGuildDiscoveryPreviewElement
-// Dependencies: [19, 17, 5081, 21, 5092, 587, 558, 576, 6663, 504, 4967, 1126, 5088, 2079, 6159, 2]
+// Dependencies: [19, 17, 5181, 21, 5191, 587, 558, 576, 6940, 504, 5063, 1128, 5187, 2082, 6436, 2]
 
-// Module 13567 (InAppReportsGuildDiscoveryPreviewElement)
+// Module 14347 (InAppReportsGuildDiscoveryPreviewElement)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
-import ColorUtils from "ColorUtils" /* 4967 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import GuildIconDefault from "GuildIcon" /* 6159 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6663 */;
+import intl2 from "intl" /* 1128 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2082 */;
+import ColorUtils from "ColorUtils" /* 5063 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import GuildIconDefault from "GuildIcon" /* 6436 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6940 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -82,7 +82,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDiscove
     const _Symbol = Symbol;
     const variant = typeConsolidationEyebrow.variant;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl2.t.nTe4HC);
       cResult[7] = stringResult;
       tmp14 = stringResult;

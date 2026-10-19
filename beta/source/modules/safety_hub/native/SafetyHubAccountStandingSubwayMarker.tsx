@@ -1,16 +1,16 @@
-// Module ID: 15029
-// Function ID: 15030
+// Module ID: 15791
+// Function ID: 15792
 // Name: SafetyHubAccountStandingSubwayMarker
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1126, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5187, 1128, 2]
 
-// Module 15029 (SafetyHubAccountStandingSubwayMarker)
+// Module 15791 (SafetyHubAccountStandingSubwayMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
+import intl2 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5187 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -126,7 +126,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubAcc
                         }
                         if (cResult[24] === isSelected) {
                           if (cResult[25] === style) {
-                            const intl = tmp(1126).intl;
+                            const intl = tmp(1128).intl;
                             let obj3 = { hook: null };
                             class I {
                               constructor(arg0, arg1) {

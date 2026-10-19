@@ -1,22 +1,22 @@
-// Module ID: 6687
-// Function ID: 6688
+// Module ID: 6964
+// Function ID: 6965
 // Name: ChangeEmailComplete
-// Dependencies: [19, 17, 6200, 21, 5092, 587, 6198, 558, 576, 6157, 6282, 1126, 5088, 5379, 2]
+// Dependencies: [19, 17, 6477, 21, 5191, 587, 6475, 558, 576, 5128, 6559, 1128, 5187, 5479, 2]
 
-// Module 6687 (ChangeEmailComplete)
+// Module 6964 (ChangeEmailComplete)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6198 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6200 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6282 */;
+import intl5 from "intl" /* 1128 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6475 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6477 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6559 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
   }
   ({ bodyInner, title } = tmp4);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl5.t["8O+nF7"]);
     cResult[2] = stringResult;
     tmp10 = stringResult;
@@ -86,7 +86,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
   }
   const body = tmp4.body;
   if (cResult[5] !== email) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const obj4 = { email };
     const formatResult = intl2.format(intl5.t.Zvx0O3, obj4);
     cResult[5] = email;
@@ -112,7 +112,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
         const _Symbol = Symbol;
         const tooltip = tmp4.tooltip;
         if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(1126).intl;
+          const intl3 = tmp(1128).intl;
           const stringResult1 = intl3.string(intl5.t.yb7itQ);
           cResult[14] = stringResult1;
           tmp23 = stringResult1;
@@ -131,8 +131,8 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmai
         const _Symbol2 = Symbol;
         if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
           const obj6 = { text: intl4.string(intl5.t.BddRzS), onPress: handlePress, grow: true };
-          const Button = tmp(5379).Button;
-          intl4 = tmp(1126).intl;
+          const Button = tmp(5479).Button;
+          intl4 = tmp(1128).intl;
           const tmp31 = metroRequire(Button, obj6);
           cResult[17] = tmp31;
           tmp28 = tmp31;

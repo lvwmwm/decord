@@ -1,14 +1,14 @@
-// Module ID: 16130
-// Function ID: 16131
+// Module ID: 12378
+// Function ID: 12379
 // Name: ArrowSmallDownIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16131, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 12379, 4912, 2]
 
-// Module 16130 (ArrowSmallDownIcon)
+// Module 12378 (ArrowSmallDownIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 16131 */;
+import BaseIconImage2 from "BaseIconImage" /* 4912 */;
+import AssetRegistry from "AssetRegistry" /* 12379 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ArrowSmall
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4817).BaseIconImage;
+  const BaseIconImage = tmp(4912).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

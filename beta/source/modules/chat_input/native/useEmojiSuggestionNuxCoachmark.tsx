@@ -1,22 +1,22 @@
-// Module ID: 12148
-// Function ID: 12149
+// Module ID: 13097
+// Function ID: 13098
 // Name: useEmojiSuggestionNuxCoachmark
-// Dependencies: [32, 19, 2062, 21, 558, 576, 1645, 6668, 4987, 1631, 4818, 587, 1382, 1629, 2049, 7100, 11639, 1126, 1200, 9438, 2]
+// Dependencies: [32, 19, 2065, 21, 558, 576, 1647, 6945, 5083, 1633, 4913, 587, 1384, 1631, 2052, 7376, 12827, 1128, 13098, 9742, 2]
 
-// Module 12148 (useEmojiSuggestionNuxCoachmark)
+// Module 13097 (useEmojiSuggestionNuxCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import KeyboardTypes from "KeyboardTypes" /* 1629 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1645 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import useToken from "useToken" /* 4818 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 4987 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 6668 */;
-import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 11639 */;
+import intl4 from "intl" /* 1128 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import KeyboardTypes from "KeyboardTypes" /* 1631 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1647 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
+import useToken from "useToken" /* 4913 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 5083 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 6945 */;
+import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 12827 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
   if (cResult[0] !== tmp7) {
     let items1;
     if (tmp7) {
-      const items = [tmp2(2049).DismissibleContent.MOBILE_EMOJI_SUGGESTIONS_NUX_COACHMARK];
+      const items = [tmp2(2052).DismissibleContent.MOBILE_EMOJI_SUGGESTIONS_NUX_COACHMARK];
       items1 = items;
     } else {
       items1 = [];
@@ -148,9 +148,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
     let tmp27;
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp2(1126).intl;
+      const intl = tmp2(1128).intl;
       const stringResult = intl.string(require("intl").t.l8nVB9);
-      const intl2 = tmp2(1126).intl;
+      const intl2 = tmp2(1128).intl;
       const stringResult1 = intl2.string(require("intl").t.ujfS5V);
       cResult[8] = stringResult;
       cResult[9] = stringResult1;
@@ -165,7 +165,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
       class K {
         constructor() {
-          return jsx(closure_0(dependencyMap[18]).BetaTag, {});
+          return jsx(closure_0(dependencyMap[18]).Badge, { type: "beta", variant: "primary" });
         }
       }
       cResult[10] = K;
@@ -173,7 +173,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
     } else {
       class K {
         constructor() {
-          return jsx(closure_0(dependencyMap[18]).BetaTag, {});
+          return jsx(closure_0(dependencyMap[18]).Badge, { type: "beta", variant: "primary" });
         }
       }
     }
@@ -233,30 +233,20 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
     }
     const obj3 = { title: tmp20, description: tmp21, visible: tmp13, position: "top", offsetY: sum, renderImgComponent: tmp25, onDismiss: tmp26, buttonLabel: tmp27, buttonVariant: "primary", onButtonPress: tmp29 };
     cResult[16] = tmp29;
-    class T {
-      constructor(arg0) {
-        const tmp = closure_1;
-        if (tmp) {
-          closure_0(arg0);
-        }
-      }
-    }
     cResult[17] = sum;
     cResult[18] = tmp26;
     cResult[19] = tmp13;
     cResult[20] = obj3;
   }
-  class T {
-    constructor(arg0) {
-      const tmp = closure_1;
-      if (tmp) {
-        closure_0(arg0);
-      }
+  const fn2 = function p(arg0) {
+    const tmp = closure_1;
+    if (tmp) {
+      closure_0(arg0);
     }
-  }
+  };
   cResult[5] = tmp5Result[1];
   cResult[6] = tmp13;
-  cResult[7] = T;
+  cResult[7] = fn2;
 }) : (function useEmojiSuggestionNuxCoachmark(arg0, arg1) {
   let closure_0;
   let closure_2;
@@ -316,7 +306,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
       position: "top",
       offsetY: 4 + closure_2,
       renderImgComponent() {
-        return closure_1_6(closure_1_0(closure_1_2[18]).BetaTag, {});
+        return closure_1_6(closure_1_0(closure_1_2[18]).Badge, { type: "beta", variant: "primary" });
       },
       onDismiss() {
         return closure_1_0(constants.USER_DISMISS);

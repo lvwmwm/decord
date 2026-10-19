@@ -1,12 +1,12 @@
-// Module ID: 8635
-// Function ID: 8636
+// Module ID: 8912
+// Function ID: 8913
 // Name: GlobalDiscoveryServersConstants
-// Dependencies: [1102, 1126, 2]
+// Dependencies: [1104, 1128, 2]
 // Exports: getLanguageOptions
 
-// Module 8635 (GlobalDiscoveryServersConstants)
-import DurationsDefault from "Durations" /* 1102 */;
-import intl2 from "intl" /* 1126 */;
+// Module 8912 (GlobalDiscoveryServersConstants)
+import DurationsDefault from "Durations" /* 1104 */;
+import intl2 from "intl" /* 1128 */;
 import size from "module_2" /* 2 */;
 
 let obj = { FEATURED: "featured", GAMING: "gaming", MUSIC: "music", ENTERTAINMENT: "entertainment", TECH: "tech", EDUCATION: "education", HUBS: "hubs" };

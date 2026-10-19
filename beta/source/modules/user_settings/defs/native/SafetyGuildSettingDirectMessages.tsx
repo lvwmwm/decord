@@ -1,23 +1,23 @@
-// Module ID: 16293
-// Function ID: 16294
+// Module ID: 16984
+// Function ID: 16985
 // Name: SafetyGuildSettingDirectMessages
-// Dependencies: [2087, 16285, 7988, 10665, 558, 15101, 576, 16288, 2041, 5299, 1126, 5398, 6684, 16294, 10664, 2]
+// Dependencies: [2090, 16976, 8260, 11085, 558, 15863, 576, 16979, 2044, 5399, 1128, 5498, 6961, 16985, 11084, 2]
 
-// Module 16293 (SafetyGuildSettingDirectMessages)
+// Module 16984 (SafetyGuildSettingDirectMessages)
 import react from "react" /* 576 */;
-import intl5 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
-import AlertDefault from "Alert" /* 5398 */;
-import SettingsConstants from "SettingsConstants" /* 7988 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 10665 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15101 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 16288 */;
-import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 16294 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16285 */;
+import intl5 from "intl" /* 1128 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
+import AlertDefault from "Alert" /* 5498 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11085 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15863 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 16979 */;
+import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 16985 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16976 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -86,9 +86,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDescripti
     let tmp7;
     if (cResult[0] !== allowFriendsFromMutualGuildsOnly) {
       let string2Result;
-      const intl2 = tmp(1126).intl;
+      const intl2 = tmp(1128).intl;
       const string2 = intl2.string;
-      const t2 = tmp(1126).t;
+      const t2 = tmp(1128).t;
       if (allowFriendsFromMutualGuildsOnly) {
         string2Result = string2(t2.XXGmuB);
       } else {
@@ -103,9 +103,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDescripti
     tmp5 = tmp7;
   } else if (cResult[2] !== allowFriendsFromMutualGuildsOnly) {
     let stringResult;
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const string = intl.string;
-    const t = tmp(1126).t;
+    const t = tmp(1128).t;
     if (allowFriendsFromMutualGuildsOnly) {
       stringResult = string(t.F9WY3f);
     } else {
@@ -125,9 +125,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDescripti
   const allowFriendsFromMutualGuildsOnly = obj.useAllowFriendsFromMutualGuildsOnly();
   if (selectedGuildId === closure_6) {
     let string2Result;
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const string2 = intl2.string;
-    const t2 = tmp(1126).t;
+    const t2 = tmp(1128).t;
     if (allowFriendsFromMutualGuildsOnly) {
       string2Result = string2(t2.XXGmuB);
     } else {
@@ -135,9 +135,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDescripti
     }
     stringResult = string2Result;
   } else {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const string = intl.string;
-    const t = tmp(1126).t;
+    const t = tmp(1128).t;
     if (allowFriendsFromMutualGuildsOnly) {
       stringResult = string(t.F9WY3f);
     } else {
@@ -155,9 +155,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTitle()
   const allowFriendsFromMutualGuildsOnly = obj2.useAllowFriendsFromMutualGuildsOnly();
   if (cResult[0] !== allowFriendsFromMutualGuildsOnly) {
     let stringResult;
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const string = intl.string;
-    const t = tmp(1126).t;
+    const t = tmp(1128).t;
     if (allowFriendsFromMutualGuildsOnly) {
       stringResult = string(t.PMsfcH);
     } else {
@@ -239,7 +239,7 @@ let obj = {
       } else {
         sanitizedRestrictedGuilds.add(tmp);
       }
-      let RestrictedGuildIds = tmp2(2041).RestrictedGuildIds;
+      let RestrictedGuildIds = tmp2(2044).RestrictedGuildIds;
       const _Array = Array;
       RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
     }

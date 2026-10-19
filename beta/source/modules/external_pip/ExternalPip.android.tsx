@@ -1,9 +1,9 @@
-// Module ID: 5221
-// Function ID: 5222
+// Module ID: 5320
+// Function ID: 5321
 // Name: ExternalPip
 // Dependencies: [17, 2]
 
-// Module 5221 (ExternalPip)
+// Module 5320 (ExternalPip)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
@@ -53,6 +53,9 @@ class ExternalPip {
   setEnabled(_enabled) {
     this._enabled = _enabled;
     ExternalPip2.setEnabled(this._enabled);
+  }
+  setAutoEnterEnabled(arg0) {
+    ExternalPip2.setAutoEnterEnabled(arg0);
   }
   setActive(arg0) {
     return ExternalPip2.setActive(arg0);

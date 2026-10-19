@@ -1,19 +1,19 @@
-// Module ID: 8087
-// Function ID: 8088
+// Module ID: 8361
+// Function ID: 8362
 // Name: UserOfferActionCreators
-// Dependencies: [5, 8088, 7172, 7168, 1392, 1085, 1382, 584, 1265, 1295, 8089, 1255, 4938, 2049, 2046, 2]
+// Dependencies: [5, 8362, 7443, 7439, 1394, 1087, 1384, 584, 1267, 1297, 8363, 1257, 5033, 2052, 2049, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 8087 (UserOfferActionCreators)
+// Module 8361 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8088 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7172 */;
-import UserOfferStore from "UserOfferStore" /* 7168 */;
-import Constants from "Constants" /* 1085 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8362 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7443 */;
+import UserOfferStore from "UserOfferStore" /* 7439 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -90,7 +90,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "top", paymentGatewayOverride: "code" };
+                obj6 = { offerId: "Array", paymentGatewayOverride: "Reflect" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;
@@ -103,7 +103,7 @@ let obj = function _fetchUserOffer() {
               error = undefined;
               c12 = 1;
               c13 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c12) {
             if (arg0 === 1) {
@@ -422,7 +422,7 @@ export const triggerUserOffer = function triggerUserOffer(triggerType, trigger_l
     }
     const _JSON = JSON;
     const obj5 = { payment_gateway: GOOGLE, trigger_type: triggerType, trigger_location_stack, trigger_metadata: JSON.stringify(tmp6), trigger_uptime_app: obj.getUptimeForTrigger() };
-    const HTTP = tmp7(1295).HTTP;
+    const HTTP = tmp7(1297).HTTP;
     const request = { url: constants.USER_OFFER_TRIGGER, body: obj5, rejectWithError: true };
     const postResult = HTTP.post(request);
     postResult.then((body) => {

@@ -1,10 +1,10 @@
 // Module ID: 2948
 // Function ID: 2949
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 2948 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9ub3RpZmljYXRpb25zX2luYm94", scales: [1], hash: "a7eee83f62dde88b7afc702ed5739d86", name: "ro.messages.a7eee83f62dde88b7afc702ed5739d86.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/notifications", scales: [1], hash: "0048348a6c7e0009789fbf925b49e62d", name: "NotificationSettings.compiled.messages", type: "jsona" });

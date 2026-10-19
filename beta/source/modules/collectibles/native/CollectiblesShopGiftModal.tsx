@@ -1,27 +1,27 @@
-// Module ID: 12710
-// Function ID: 12711
+// Module ID: 13652
+// Function ID: 13653
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 7259, 1085, 1096, 21, 558, 576, 9393, 1382, 4782, 12711, 12709, 12712, 12715, 10184, 10177, 10164, 10097, 8317, 8304, 504, 6879, 6852, 2031, 7258, 1126, 10180, 2]
+// Dependencies: [19, 7530, 1087, 1098, 21, 558, 576, 9697, 1384, 4877, 13653, 13651, 13654, 13657, 10486, 10479, 10466, 10400, 8595, 8582, 504, 7155, 7130, 2034, 7529, 1128, 10482, 2]
 
-// Module 12710 (CollectiblesShopGiftModal)
+// Module 13652 (CollectiblesShopGiftModal)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1085 */;
-import Constants2 from "Constants" /* 1096 */;
-import StringUtils from "StringUtils" /* 2031 */;
-import BadgeId from "BadgeId" /* 8304 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8317 */;
-import openGiftModal from "openGiftModal" /* 12709 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 12712 */;
-import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 12715 */;
+import Constants from "Constants" /* 1087 */;
+import Constants2 from "Constants" /* 1098 */;
+import StringUtils from "StringUtils" /* 2034 */;
+import BadgeId from "BadgeId" /* 8582 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8595 */;
+import openGiftModal from "openGiftModal" /* 13651 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 13654 */;
+import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 13657 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7259 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let _Promise, dependencyMap, flag, resolved;
 
 let tmp;
-const CollectiblesActionCreators = tmp(7258);
+const CollectiblesActionCreators = tmp(7529);
 const application_id = Constants.COLLECTIBLES_APPLICATION_ID;
 const PaymentGateways = Constants2.PaymentGateways;
 const jsx = Fragment.jsx;
@@ -232,7 +232,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
   } else {
     first = cResult[0];
   }
-  const GiftingBadgeExperiment = tmp2(10097).GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = tmp2(10400).GiftingBadgeExperiment;
   const enabled = GiftingBadgeExperiment.useConfig(first).enabled;
   if (cResult[1] !== enabled) {
     class O {
@@ -349,7 +349,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
       }
     }
     const arraySpreadResult = HermesBuiltin.arraySpread(tmp15, analyticsLocations, 0);
-    tmp15[arraySpreadResult] = enabled(6879).COLLECTIBLES_MOBILE_GIFT_MODAL;
+    tmp15[arraySpreadResult] = enabled(7155).COLLECTIBLES_MOBILE_GIFT_MODAL;
     cResult[8] = analyticsLocations;
     cResult[9] = tmp15;
     tmp14 = tmp15;
@@ -367,7 +367,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
       }
     }
   }
-  const analyticsLocations2 = enabled(6852)(tmp14).analyticsLocations;
+  const analyticsLocations2 = enabled(7130)(tmp14).analyticsLocations;
   const tmp20 = enabled;
   if (stateFromStores != null) {
     class O {
@@ -518,7 +518,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
             return resolved;
           }
         }
-        const stringResult = obj5.string(skuId(1126).t["JCFN/y"]);
+        const stringResult = obj5.string(skuId(1128).t["JCFN/y"]);
         cResult[12] = stringResult;
         tmp24 = stringResult;
       } else {
@@ -562,7 +562,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
             return resolved;
           }
         }
-        const tmp27 = jsx(tmp20(10180), { onDismiss: onGiftModalDismiss, title: tmp24 });
+        const tmp27 = jsx(tmp20(10482), { onDismiss: onGiftModalDismiss, title: tmp24 });
         cResult[13] = onGiftModalDismiss;
         cResult[14] = tmp27;
         tmp26 = tmp27;

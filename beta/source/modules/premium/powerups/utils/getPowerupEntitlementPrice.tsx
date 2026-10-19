@@ -1,10 +1,10 @@
-// Module ID: 8027
-// Function ID: 8028
+// Module ID: 8301
+// Function ID: 8302
 // Name: getPowerupEntitlementPrice
 // Dependencies: [2]
 // Exports: default
 
-// Module 8027 (getPowerupEntitlementPrice)
+// Module 8301 (getPowerupEntitlementPrice)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/utils/getPowerupEntitlementPrice.tsx");

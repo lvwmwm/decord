@@ -1,9 +1,9 @@
-// Module ID: 1948
-// Function ID: 1949
+// Module ID: 1950
+// Function ID: 1951
 // Name: Constants
 // Dependencies: [2]
 
-// Module 1948 (Constants)
+// Module 1950 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/i18n/Constants.tsx");

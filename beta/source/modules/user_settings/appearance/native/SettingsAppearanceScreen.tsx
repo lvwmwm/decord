@@ -1,26 +1,26 @@
-// Module ID: 15562
-// Function ID: 15563
+// Module ID: 16322
+// Function ID: 16323
 // Name: SettingsAppearanceScreen
-// Dependencies: [19, 4937, 1206, 1205, 15563, 7988, 1085, 21, 558, 576, 1503, 1382, 9293, 1126, 10517, 1272, 3442, 2128, 15564, 5396, 573, 10664, 14970, 2]
+// Dependencies: [19, 5032, 1208, 1207, 16323, 8260, 1087, 21, 558, 576, 1505, 1384, 9599, 1128, 10840, 1274, 3465, 2131, 16324, 5496, 573, 11084, 15732, 2]
 
-// Module 15562 (SettingsAppearanceScreen)
+// Module 16322 (SettingsAppearanceScreen)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import intl6 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import _modDef3442 from "module_3442" /* 3442 */;
-import useMountEffectDefault from "useMountEffect" /* 5396 */;
-import SettingsConstants from "SettingsConstants" /* 7988 */;
-import HeaderShared from "HeaderShared" /* 9293 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
+import Constants from "Constants" /* 1087 */;
+import intl6 from "intl" /* 1128 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import _modDef3465 from "module_3465" /* 3465 */;
+import useMountEffectDefault from "useMountEffect" /* 5496 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import HeaderShared from "HeaderShared" /* 9599 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
-import ThemeStore from "ThemeStore" /* 1205 */;
-import FontScaleStore from "FontScaleStore" /* 15563 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5032 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1208 */;
+import ThemeStore from "ThemeStore" /* 1207 */;
+import FontScaleStore from "FontScaleStore" /* 16323 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let _require, gradientPreset;
 let metroImportAll;
 let metroImportDefault;
 let tmp5;
-const SettingLayoutDefault = tmp5(14970);
+const SettingLayoutDefault = tmp5(15732);
 function getAppearanceSettings() {
   let GR2KOG;
   let format;
@@ -73,7 +73,7 @@ function getAppearanceSettings() {
   const intl3 = intl6.intl;
   format = intl3.format;
   obj7 = { helpCenterLink: obj8.getArticleURL(HelpdeskArticles.FAVORITES_GUILD) };
-  GR2KOG = _modDef3442.GR2KOG;
+  GR2KOG = _modDef3465.GR2KOG;
   items1[5] = obj6;
   obj8 = HelpdeskUtilsDefault;
   const obj9 = { label: intl4.string(intl6.t.lEde7i), settings: items7 };
@@ -158,7 +158,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFon
       };
       getRenderHeaderTextButton = HeaderShared.getRenderHeaderTextButton;
       HeaderShared;
-      intl = tmp(1126).intl;
+      intl = tmp(1128).intl;
       setOptions(obj2);
     }
   };
@@ -200,7 +200,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFon
       };
       getRenderHeaderTextButton = HeaderShared.getRenderHeaderTextButton;
       HeaderShared;
-      intl = tmp(1126).intl;
+      intl = tmp(1128).intl;
       setOptions(obj2);
     }
   }, items);
@@ -264,7 +264,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   closure_12();
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getAppearanceSettings() };
-    const createList = tmp(10664).createList;
+    const createList = tmp(11084).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[3] = list;

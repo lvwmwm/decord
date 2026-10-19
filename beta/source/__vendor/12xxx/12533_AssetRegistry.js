@@ -1,10 +1,10 @@
 // Module ID: 12533
 // Function ID: 12534
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 12533 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/directory_channels/native/images", width: 32, height: 32, scales: [2, 3], hash: "cf9fbd33b5f8251873e494b446828ceb", name: "invite", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [1, 2, 3], hash: "5870bc3ada01ff369d707eaeba6296c2", name: "camera_upload_light", type: "png" });

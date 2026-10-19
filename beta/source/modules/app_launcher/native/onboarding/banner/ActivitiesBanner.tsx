@@ -1,15 +1,15 @@
-// Module ID: 11729
-// Function ID: 11730
+// Module ID: 11864
+// Function ID: 11865
 // Name: ActivitiesBanner
-// Dependencies: [32, 19, 21, 558, 576, 11717, 11730, 1126, 11741, 2]
+// Dependencies: [32, 19, 21, 558, 576, 11852, 11865, 1128, 11879, 2]
 
-// Module 11729 (ActivitiesBanner)
+// Module 11864 (ActivitiesBanner)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import useActivityApplications from "useActivityApplications" /* 11717 */;
-import ApplicationsImageDefault from "ApplicationsImage" /* 11730 */;
-import BannerBaseDefault from "BannerBase" /* 11741 */;
+import intl2 from "intl" /* 1128 */;
+import useActivityApplications from "useActivityApplications" /* 11852 */;
+import ApplicationsImageDefault from "ApplicationsImage" /* 11865 */;
+import BannerBaseDefault from "BannerBase" /* 11879 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -45,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activities
       if (null != tmp7) {
         let tmp12;
         if (cResult[5] !== tmp6.name) {
-          const intl = tmp(1126).intl;
+          const intl = tmp(1128).intl;
           const obj3 = { activityName: tmp6.name };
           const formatToPlainStringResult = intl.formatToPlainString(intl2.t.zHMWuV, obj3);
           cResult[5] = tmp6.name;
@@ -92,7 +92,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activities
     if (null != tmp5) {
       const obj3 = { image: tmp8, text: intl.formatToPlainString(intl2.t.zHMWuV, obj4) };
       const tmp7Result = BannerBaseDefault;
-      intl = tmp(1126).intl;
+      intl = tmp(1128).intl;
       obj4 = { activityName: tmp4.name };
       tmp6Result = tmp6(tmp7Result, obj3);
     }

@@ -1,12 +1,12 @@
-// Module ID: 10644
-// Function ID: 10645
+// Module ID: 10969
+// Function ID: 10970
 // Name: GuildIdentityActionCreators
-// Dependencies: [5, 1085, 584, 1295, 6672, 6676, 2]
+// Dependencies: [5, 1087, 584, 1297, 6949, 6953, 2]
 // Exports: clearErrors, initGuildIdentitySettings, resetAllPending, resetPendingMemberChanges, resetPendingProfileChanges, saveGuildIdentityChanges, setCurrentGuild
 
-// Module 10644 (GuildIdentityActionCreators)
+// Module 10969 (GuildIdentityActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ let obj = function _saveGuildIdentityChanges() {
               body = undefined;
               c7 = 1;
               vad_colors = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

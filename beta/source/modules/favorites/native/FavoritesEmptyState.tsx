@@ -1,84 +1,169 @@
-// Module ID: 17506
-// Function ID: 17507
+// Module ID: 17888
+// Function ID: 17889
 // Name: FavoritesEmptyState
-// Dependencies: [19, 17, 21, 5092, 587, 10314, 12697, 5056, 10318, 2000, 10317, 10320, 5377, 5088, 1126, 3442, 5379, 10606, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 13635, 10630, 1128, 3465, 5187, 5477, 5479, 10931, 2]
 
-// Module 17506 (FavoritesEmptyState)
+// Module 17888 (FavoritesEmptyState)
 import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1126 */;
-import _modDef3442 from "module_3442" /* 3442 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import Stack_Stack from "Stack/Stack" /* 5377 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import FavoritesHooks from "FavoritesHooks" /* 10314 */;
-import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 10320 */;
+import intl4 from "intl" /* 1128 */;
+import _modDef3465 from "module_3465" /* 3465 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import Stack_Stack from "Stack/Stack" /* 5477 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 10630 */;
+import PlusMediumIcon from "PlusMediumIcon" /* 10931 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13635 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-const require = globalThis.__r;
 
 let hasOwnProperty;
 let metroRequire;
 let obj2;
-let tmp2;
-const PlusMediumIcon = tmp2(10606);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { container: obj2, text: { textAlign: "center" } };
 obj2 = { flex: 1, alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_48 };
 let closure_7 = createStyles.createStyles(obj);
-const result = size.fileFinishedImporting("modules/favorites/native/FavoritesEmptyState.tsx");
-
-export default function FavoritesEmptyState() {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesEmptyState() {
+  let first;
+  let intl3;
+  let items;
+  let items1;
+  let tmp12;
+  let tmp15;
+  let tmp18;
+  let tmp6;
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(15);
+  const tmp4 = closure_7();
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function t() {
+      openFavoritesGuildAddChannelModalDefault({ source: "favorites_empty_state" });
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  const container = tmp4.container;
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp8 = hasOwnProperty(FavoritesSpotIllustration.FavoritesSpotIllustration, { width: 192, height: 108 });
+    cResult[1] = tmp8;
+    tmp6 = tmp8;
+  } else {
+    tmp6 = cResult[1];
+  }
+  const text = tmp4.text;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(_modDef3465["wh+Rz1"]);
+    cResult[2] = stringResult;
+    tmp9 = stringResult;
+  } else {
+    tmp9 = cResult[2];
+  }
+  if (cResult[3] !== tmp4.text) {
+    const obj2 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: text, children: tmp9 };
+    const tmp14 = hasOwnProperty(Text_Text.Heading, obj2);
+    cResult[3] = tmp4.text;
+    cResult[4] = tmp14;
+    tmp12 = tmp14;
+  } else {
+    tmp12 = cResult[4];
+  }
+  const text2 = tmp4.text;
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl2 = tmp(1128).intl;
+    const stringResult1 = intl2.string(_modDef3465["+SuGKb"]);
+    cResult[5] = stringResult1;
+    tmp15 = stringResult1;
+  } else {
+    tmp15 = cResult[5];
+  }
+  if (cResult[6] !== tmp4.text) {
+    const obj3 = { variant: "text-md/medium", color: "text-default", style: text2, children: tmp15 };
+    const tmp20 = hasOwnProperty(Text_Text.Text, obj3);
+    cResult[6] = tmp4.text;
+    cResult[7] = tmp20;
+    tmp18 = tmp20;
+  } else {
+    tmp18 = cResult[7];
+  }
+  if (cResult[8] === tmp12) {
+    let tmp21;
+    let tmp23;
+    if (cResult[9] === tmp18) {
+      tmp21 = cResult[10];
+    }
+    const _Symbol = Symbol;
+    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj4 = { variant: "primary", text: intl3.string(_modDef3465["6kk0gM"]), icon: hasOwnProperty(PlusMediumIcon.PlusMediumIcon, {}), onPress: first };
+      const Button = tmp(5479).Button;
+      intl3 = tmp(1128).intl;
+      const tmp26 = hasOwnProperty(Button, obj4);
+      cResult[11] = tmp26;
+      tmp23 = tmp26;
+    } else {
+      tmp23 = cResult[11];
+    }
+    if (cResult[12] === tmp4.container) {
+      let tmp27;
+      if (cResult[13] === tmp21) {
+        tmp27 = cResult[14];
+      }
+      return tmp27;
+    }
+    const obj5 = { style: container, children: items };
+    items = [tmp6, tmp21, tmp23];
+    const tmp30 = metroRequire(View, obj5);
+    cResult[12] = tmp4.container;
+    cResult[13] = tmp21;
+    cResult[14] = tmp30;
+    tmp27 = tmp30;
+  }
+  const obj6 = { spacing: nativeDefault.space.PX_8, align: "center", children: items1 };
+  const Stack = tmp(5477).Stack;
+  items1 = [tmp12, tmp18];
+  const tmp22 = metroRequire(Stack, obj6);
+  cResult[8] = tmp12;
+  cResult[9] = tmp18;
+  cResult[10] = tmp22;
+  tmp21 = tmp22;
+}) : (function FavoritesEmptyState() {
   let intl;
   let intl2;
   let intl3;
-  let intl4;
   let items;
   let items1;
-  let obj7;
-  let paths;
   const tmp = closure_7();
-  let tmp2 = require;
-  const obj = FavoritesHooks;
-  const hasAccess = obj.useFavoritesAccess("favorites_empty_state").hasAccess;
+  const obj = { style: tmp.container, children: items };
   const callback = react.useCallback(() => {
-    require("openFavoritesGuildAddChannelModal")({ source: "favorites_empty_state" });
-  }, []);
-  const obj2 = { style: tmp.container, children: items };
-  const callback1 = react.useCallback(() => {
-    const openLazy = require("ActionSheetActionCreators").openLazy;
-    require("ActionSheetActionCreators");
-    const tmp2 = require("asyncRequire")(paths[8], paths.paths);
-    openLazy(tmp2, require("openFavoritesGuildLimitUpsell").FAVORITES_UPSELL_SHEET_KEY, { source: "favorites_empty_sidebar" });
+    openFavoritesGuildAddChannelModalDefault({ source: "favorites_empty_state" });
   }, []);
   items = [hasOwnProperty(FavoritesSpotIllustration.FavoritesSpotIllustration, { width: 192, height: 108 }), , ];
-  const obj3 = { spacing: nativeDefault.space.PX_8, align: "center", children: items1 };
+  const obj2 = { spacing: nativeDefault.space.PX_8, align: "center", children: items1 };
   const Stack = Stack_Stack.Stack;
-  const obj4 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(_modDef3442["wh+Rz1"]) };
+  const obj3 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(_modDef3465["wh+Rz1"]) };
   const Heading = Text_Text.Heading;
-  intl = intl5.intl;
-  items1 = [hasOwnProperty(Heading, obj4), ];
-  const obj5 = { variant: "text-md/medium", color: "text-default", style: tmp.text, children: intl2.string(_modDef3442["+SuGKb"]) };
+  intl = intl4.intl;
+  items1 = [hasOwnProperty(Heading, obj3), ];
+  const obj4 = { variant: "text-md/medium", color: "text-default", style: tmp.text, children: intl2.string(_modDef3465["+SuGKb"]) };
   const Text = Text_Text.Text;
-  intl2 = intl5.intl;
-  items1[1] = hasOwnProperty(Text, obj5);
-  items[1] = metroRequire(Stack, obj3);
+  intl2 = intl4.intl;
+  items1[1] = hasOwnProperty(Text, obj4);
+  items[1] = metroRequire(Stack, obj2);
+  const obj5 = { variant: "primary", text: intl3.string(_modDef3465["6kk0gM"]), icon: hasOwnProperty(PlusMediumIcon.PlusMediumIcon, {}), onPress: callback };
   const Button = components_Button_Button.Button;
-  const tmp6 = metroRequire;
-  const tmp7 = View;
-  if (hasAccess) {
-    const obj6 = { variant: "primary", text: intl4.string(_modDef3442["6kk0gM"]), icon: hasOwnProperty(PlusMediumIcon.PlusMediumIcon, {}), onPress: callback };
-    intl4 = intl5.intl;
-    obj7 = obj6;
-  } else {
-    obj7 = { variant: "primary", text: intl3.string(_modDef3442.yYVbdv), onPress: callback1 };
-    intl3 = intl5.intl;
-  }
-  items[2] = hasOwnProperty(Button, obj7);
-  return tmp6(tmp7, obj2);
-};
+  intl3 = intl4.intl;
+  items[2] = hasOwnProperty(Button, obj5);
+  return metroRequire(View, obj);
+});
+const result = size.fileFinishedImporting("modules/favorites/native/FavoritesEmptyState.tsx");
+
+export default tmp3;

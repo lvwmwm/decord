@@ -1,14 +1,14 @@
-// Module ID: 14820
-// Function ID: 14821
+// Module ID: 15583
+// Function ID: 15584
 // Name: CollectiblesMarketingManager
-// Dependencies: [5091, 2002, 584, 14821, 7258, 7306, 2]
+// Dependencies: [5190, 2004, 584, 15584, 7529, 7577, 2]
 
-// Module 14820 (CollectiblesMarketingManager)
+// Module 15583 (CollectiblesMarketingManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7258 */;
-import CollectiblesMarketingCacheExperiment from "CollectiblesMarketingCacheExperiment" /* 14821 */;
-import DevSettingsStore from "DevSettingsStore" /* 5091 */;
-import LifecycleManager from "LifecycleManager" /* 2002 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7529 */;
+import CollectiblesMarketingCacheExperiment from "CollectiblesMarketingCacheExperiment" /* 15584 */;
+import DevSettingsStore from "DevSettingsStore" /* 5190 */;
+import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
 
 class CollectiblesMarketingManager extends LifecycleManager {

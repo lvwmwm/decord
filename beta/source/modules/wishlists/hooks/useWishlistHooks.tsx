@@ -1,21 +1,21 @@
-// Module ID: 8975
-// Function ID: 8976
+// Module ID: 9271
+// Function ID: 9272
 // Name: useWishlistHooks
-// Dependencies: [32, 19, 7316, 502, 1390, 8976, 8977, 558, 576, 8982, 504, 8983, 12, 8984, 8307, 8990, 8995, 2]
+// Dependencies: [32, 19, 7586, 502, 1392, 9272, 9273, 558, 576, 9278, 504, 9279, 12, 9280, 8585, 9286, 9291, 2]
 
-// Module 8975 (useWishlistHooks)
+// Module 9271 (useWishlistHooks)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 19 */;
 import react3 from "react" /* 576 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
-import WishlistRecord from "WishlistRecord" /* 8977 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 8983 */;
-import useDisplayProfileSocialLayerStorefrontApplicationIdsDefault from "useDisplayProfileSocialLayerStorefrontApplicationIds" /* 8990 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8585 */;
+import WishlistRecord from "WishlistRecord" /* 9273 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9279 */;
+import useDisplayProfileSocialLayerStorefrontApplicationIdsDefault from "useDisplayProfileSocialLayerStorefrontApplicationIds" /* 9286 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserProfileStore from "UserProfileStore" /* 7316 */;
+import UserProfileStore from "UserProfileStore" /* 7586 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1390 */;
-import WishlistStore from "WishlistStore" /* 8976 */;
+import UserStore from "UserStore" /* 1392 */;
+import WishlistStore from "WishlistStore" /* 9272 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -824,7 +824,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldSho
       tmp17 = cResult[11];
     }
     const wishlist = closure_12(tmp17).wishlist;
-    tmp(8995);
+    tmp(9291);
     let flag2 = false;
     if (true === isGift) {
       flag2 = false;

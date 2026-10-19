@@ -1,12 +1,12 @@
-// Module ID: 13227
-// Function ID: 13228
+// Module ID: 10986
+// Function ID: 10987
 // Name: ConjureBrowserSessionsStore
 // Dependencies: [504, 584, 2]
 
-// Module 13227 (ConjureBrowserSessionsStore)
+// Module 10986 (ConjureBrowserSessionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import size_mod from "module_2" /* 2 */;
+import size from "module_2" /* 2 */;
 
 let set;
 
@@ -84,7 +84,6 @@ let obj = {
   }
 };
 const conjureBrowserSessionsStore = new ConjureBrowserSessionsStore(DispatcherDefault, obj);
-let size = size_mod;
 let result = size.fileFinishedImporting("modules/conjure/browser_streams/ConjureBrowserSessionsStore.tsx");
 
 export default conjureBrowserSessionsStore;

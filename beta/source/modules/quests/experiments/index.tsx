@@ -1,14 +1,14 @@
-// Module ID: 9157
-// Function ID: 9158
+// Module ID: 9464
+// Function ID: 9465
 // Name: apexExperiment
-// Dependencies: [1453, 558, 576, 9158, 9159, 9160, 2]
+// Dependencies: [1455, 558, 576, 9465, 9466, 9467, 2]
 
-// Module 9157 (apexExperiment)
+// Module 9464 (apexExperiment)
 import react from "react" /* 576 */;
-import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 9158 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9159 */;
-import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 9160 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
+import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 9465 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9466 */;
+import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 9467 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,6 +19,7 @@ let obj21;
 let obj23;
 let obj26;
 let obj28;
+let obj30;
 let obj4;
 let obj6;
 let obj8;
@@ -122,6 +123,11 @@ const obj27 = { name: "2026-09-mobile-quest-reward-button-to-secondary-button", 
 obj28 = { 1: null };
 obj28[1] = { enabled: true };
 const apexExperiment13 = ApexExperiment.createApexExperiment(obj27);
+ApexExperiment = ApexExperiment_mod;
+const obj29 = { name: "2026-10-clickable-hero-banner", kind: "user", defaultConfig: { enabled: false }, variations: obj30 };
+obj30 = { 1: null };
+obj30[1] = { enabled: true };
+const apexExperiment14 = ApexExperiment.createApexExperiment(obj29);
 const result = size.fileFinishedImporting("modules/quests/experiments/index.tsx");
 
 export const VideoEndCardV2Experiment = apexExperiment;
@@ -142,3 +148,4 @@ export const QuestMobileBarSecondaryCtaExperiment = apexExperiment11;
 export const QuestOrbTierVariant = obj24;
 export const QuestOrbTierExperiment = apexExperiment12;
 export const MobileQuestRewardButtonToSecondaryButtonExperiment = apexExperiment13;
+export const ClickableHeroBannerExperiment = apexExperiment14;

@@ -1,16 +1,13 @@
-// Module ID: 12099
-// Function ID: 12100
+// Module ID: 13049
+// Function ID: 13050
 // Name: GameSearchRowExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1455, 2]
 
-// Module 12099 (GameSearchRowExperiment)
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 13049 (GameSearchRowExperiment)
+import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 
-let obj2;
-const obj = { name: "2026-09-game-search-row", kind: "user", defaultConfig: { extraChromeEnabled: false }, variations: obj2 };
-obj2 = { 1: null };
-obj2[1] = { extraChromeEnabled: true };
+const obj = { name: "2026-09-game-search-row", kind: "user", defaultConfig: { extraChromeEnabled: false }, variations: { 0: { extraChromeEnabled: false }, 1: { extraChromeEnabled: true } } };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/games/GameSearchRowExperiment.tsx");
 

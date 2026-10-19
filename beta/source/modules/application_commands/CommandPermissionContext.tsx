@@ -1,24 +1,24 @@
-// Module ID: 9248
-// Function ID: 9249
+// Module ID: 9554
+// Function ID: 9555
 // Name: CommandPermissionContext
-// Dependencies: [19, 2118, 2069, 2083, 502, 2065, 2125, 2087, 4750, 1390, 1085, 6917, 558, 576, 504, 1097, 1998, 2]
+// Dependencies: [19, 2121, 2072, 2086, 502, 2068, 2128, 2090, 4845, 1392, 1087, 7193, 558, 576, 504, 1099, 2000, 2]
 // Exports: buildPermissionContext, computeCommandContextType, getContextGuildId, usePermissionContext
 
-// Module 9248 (CommandPermissionContext)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import Server from "Server" /* 1998 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import GuildRecord from "GuildRecord" /* 2083 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 6917 */;
+// Module 9554 (CommandPermissionContext)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
+import Server from "Server" /* 2000 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import GuildRecord from "GuildRecord" /* 2086 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7193 */;
 import react_mod from "react" /* 19 */;
-import ImpersonateStore from "ImpersonateStore" /* 2118 */;
+import ImpersonateStore from "ImpersonateStore" /* 2121 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

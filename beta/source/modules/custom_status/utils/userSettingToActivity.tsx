@@ -1,14 +1,14 @@
-// Module ID: 10514
-// Function ID: 10515
+// Module ID: 10837
+// Function ID: 10838
 // Name: userSettingToActivity
-// Dependencies: [19, 5987, 1085, 4764, 558, 576, 2041, 504, 2]
+// Dependencies: [19, 6243, 1087, 4859, 558, 576, 2044, 504, 2]
 // Exports: getActivityFromCustomStatus
 
-// Module 10514 (userSettingToActivity)
+// Module 10837 (userSettingToActivity)
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1085 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
-import EmojiStore from "EmojiStore" /* 5987 */;
+import Constants from "Constants" /* 1087 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4859 */;
+import EmojiStore from "EmojiStore" /* 6243 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomSta
   const tmp = emojiId;
   const obj = emojiId(576);
   const cResult = obj.c(7);
-  const CustomStatusSetting = emojiId(2041).CustomStatusSetting;
+  const CustomStatusSetting = emojiId(2044).CustomStatusSetting;
   const setting = CustomStatusSetting.useSetting();
   emojiId = undefined;
   if (setting != null) {

@@ -1,28 +1,28 @@
-// Module ID: 15133
-// Function ID: 15134
+// Module ID: 15895
+// Function ID: 15896
 // Name: IOSConversationSuggestionsSetting
-// Dependencies: [19, 17, 7988, 1267, 1272, 558, 576, 4733, 1382, 3, 10664, 1126, 2]
+// Dependencies: [19, 17, 8260, 1269, 1274, 558, 576, 4828, 1384, 3, 11084, 1128, 2]
 
-// Module 15133 (IOSConversationSuggestionsSetting)
+// Module 15895 (IOSConversationSuggestionsSetting)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import SettingsConstants from "SettingsConstants" /* 7988 */;
+import intl2 from "intl" /* 1128 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
 import react from "react" /* 19 */;
-import module_1267 from "module_1267" /* 1267 */;
+import module_1269 from "module_1269" /* 1269 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 let conversationSuggestionsEnabled;
 
 let tmp;
-const _slicedToArray = tmp(4733);
+const _slicedToArray = tmp(4828);
 const NativeModules = react_native.NativeModules;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let closure_4 = module_1267.createWithEqualityFn(() => ({ isEnabled: true }));
+let closure_4 = module_1269.createWithEqualityFn(() => ({ isEnabled: true }));
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConversationSuggestionsEnabled() {
   let first;

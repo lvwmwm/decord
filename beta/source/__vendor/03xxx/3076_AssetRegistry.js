@@ -1,10 +1,10 @@
 // Module ID: 3076
 // Function ID: 3077
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 3076 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9yZXF1ZXN0X3RvX3N0cmVhbQ==", scales: [1], hash: "0e6115de9c324e213cb09d2c5158b303", name: "ro.messages.0e6115de9c324e213cb09d2c5158b303.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_server", scales: [1], hash: "b965678ebf8b66d4d84833f3d0cfaba0", name: "GameServer.compiled.messages", type: "jsona" });

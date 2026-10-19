@@ -1,21 +1,21 @@
-// Module ID: 6620
-// Function ID: 6621
+// Module ID: 6897
+// Function ID: 6898
 // Name: FreeFormTextInput
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 1200, 6621, 6185, 38, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1128, 1202, 6898, 6462, 38, 2]
 // Exports: default
 
-// Module 6620 (FreeFormTextInput)
+// Module 6897 (FreeFormTextInput)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import Pressables from "Pressables" /* 6185 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6621 */;
+import intl2 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import Pressables from "Pressables" /* 6462 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6898 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearB
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t.VkKicb);
     cResult[1] = stringResult;
     tmp6 = stringResult;
@@ -72,7 +72,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearB
   }
   if (cResult[3] !== tmp4.closeIcon) {
     const obj3 = { source: AssetRegistryDefault, style: tmp4.closeIcon, size: native.Icon.Sizes.MEDIUM };
-    const Icon = tmp(1200).Icon;
+    const Icon = tmp(1202).Icon;
     const tmp12 = metroImportDefault(Icon, obj3);
     cResult[3] = tmp4.closeIcon;
     cResult[4] = tmp12;
@@ -232,7 +232,7 @@ export default (editable) => {
   }
   items1 = [result, , , ];
   let str3 = "auto";
-  const TextInput = tmp7(1200).TextInput;
+  const TextInput = tmp7(1202).TextInput;
   if (null != onPress) {
     str3 = "none";
   }

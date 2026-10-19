@@ -1,15 +1,15 @@
-// Module ID: 16017
-// Function ID: 16018
+// Module ID: 12757
+// Function ID: 12758
 // Name: useCheckpointCustomization
-// Dependencies: [19, 1390, 16005, 558, 576, 504, 1989, 5461, 16015, 5438, 5463, 5565, 2]
+// Dependencies: [19, 1392, 12742, 558, 576, 504, 1991, 5561, 12755, 5538, 5563, 5764, 2]
 
-// Module 16017 (useCheckpointCustomization)
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5438 */;
-import CheckpointTrait from "CheckpointTrait" /* 5461 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 16015 */;
+// Module 12757 (useCheckpointCustomization)
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5538 */;
+import CheckpointTrait from "CheckpointTrait" /* 5561 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 12755 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
-import CheckpointStore from "CheckpointStore" /* 16005 */;
+import UserStore from "UserStore" /* 1392 */;
+import CheckpointStore from "CheckpointStore" /* 12742 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -221,30 +221,30 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckpoin
       let num5;
       let ICY = selectedCharacterTraits[CheckpointTrait.CheckpointTrait.BASE];
       if (ICY == null) {
-        ICY = tmp2(5463).CheckpointCharacterBase.ICY;
+        ICY = tmp2(5563).CheckpointCharacterBase.ICY;
       }
       const obj = { base: ICY, shoes: num, outfit: num2, face: CHILL, hat: num3, wearable: num4, aura: num5 };
-      num = tmp[tmp2(undefined, 5461).CheckpointTrait.SHOES];
+      num = tmp[tmp2(undefined, 5561).CheckpointTrait.SHOES];
       if (num == null) {
         num = 0;
       }
-      num2 = tmp[tmp2(undefined, 5461).CheckpointTrait.OUTFIT];
+      num2 = tmp[tmp2(undefined, 5561).CheckpointTrait.OUTFIT];
       if (num2 == null) {
         num2 = 0;
       }
-      CHILL = tmp[tmp2(undefined, 5461).CheckpointTrait.FACE];
+      CHILL = tmp[tmp2(undefined, 5561).CheckpointTrait.FACE];
       if (CHILL == null) {
-        CHILL = tmp2(5565).CheckpointCharacterFace.CHILL;
+        CHILL = tmp2(5764).CheckpointCharacterFace.CHILL;
       }
-      num3 = tmp[tmp2(undefined, 5461).CheckpointTrait.HAT];
+      num3 = tmp[tmp2(undefined, 5561).CheckpointTrait.HAT];
       if (num3 == null) {
         num3 = 0;
       }
-      num4 = tmp[tmp2(undefined, 5461).CheckpointTrait.WEARABLE];
+      num4 = tmp[tmp2(undefined, 5561).CheckpointTrait.WEARABLE];
       if (num4 == null) {
         num4 = 0;
       }
-      num5 = tmp[tmp2(undefined, 5461).CheckpointTrait.AURA];
+      num5 = tmp[tmp2(undefined, 5561).CheckpointTrait.AURA];
       if (num5 == null) {
         num5 = 0;
       }

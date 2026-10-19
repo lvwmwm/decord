@@ -1,11 +1,11 @@
-// Module ID: 13048
-// Function ID: 13049
+// Module ID: 13976
+// Function ID: 13977
 // Name: useVirtualCurrencyMobileEnabled
-// Dependencies: [1628, 2]
+// Dependencies: [1630, 2]
 // Exports: isVirtualCurrencyEnabled, useVirtualCurrencyMobileEnabled
 
-// Module 13048 (useVirtualCurrencyMobileEnabled)
-import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
+// Module 13976 (useVirtualCurrencyMobileEnabled)
+import MetaQuestUtils from "MetaQuestUtils" /* 1630 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/virtual_currency/hooks/native/useVirtualCurrencyMobileEnabled.tsx");

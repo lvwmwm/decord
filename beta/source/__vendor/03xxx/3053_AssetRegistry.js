@@ -1,10 +1,10 @@
 // Module ID: 3053
 // Function ID: 3054
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 3053 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_server", scales: [1], hash: "b965678ebf8b66d4d84833f3d0cfaba0", name: "GameServer.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nYW1lX3NlcnZlcg==", scales: [1], hash: "e260c1fe7fed6fe134d3d4005a01033c", name: "es-ES.messages.e260c1fe7fed6fe134d3d4005a01033c.compiled.messages", type: "jsona" });

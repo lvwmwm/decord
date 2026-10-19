@@ -1,10 +1,10 @@
 // Module ID: 9783
 // Function ID: 9784
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 9783 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/perks", width: 20, height: 20, scales: [2, 3], hash: "e5fa0ec60fd37b3053a6ee815d7ed0e6", name: "img_nitro_misc_perks_20px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/Y2KIcon", width: 60, height: 60, scales: [2, 3], hash: "0e26d39cd35df5b70db021fff662c44e", name: "Y2KIcon", type: "png" });

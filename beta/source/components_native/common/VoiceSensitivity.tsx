@@ -1,25 +1,25 @@
-// Module ID: 11081
-// Function ID: 11082
+// Module ID: 11467
+// Function ID: 11468
 // Name: VoiceSensitivity
-// Dependencies: [5, 32, 19, 17, 2012, 5947, 1999, 1085, 7478, 21, 5092, 587, 4967, 558, 576, 1497, 504, 7495, 5137, 4828, 1126, 1200, 8575, 1382, 8400, 2]
+// Dependencies: [5, 32, 19, 17, 2014, 6203, 2001, 1087, 7749, 21, 5191, 587, 5063, 558, 576, 1499, 504, 7766, 5236, 4923, 1128, 1202, 8855, 1384, 8678, 2]
 
-// Module 11081 (VoiceSensitivity)
+// Module 11467 (VoiceSensitivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl5 from "intl" /* 1126 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5137 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7478 */;
+import Constants from "Constants" /* 1087 */;
+import intl5 from "intl" /* 1128 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4923 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5236 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7749 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MediaEngineStore_mod from "MediaEngineStore" /* 2012 */;
-import SpeakingStore from "SpeakingStore" /* 5947 */;
-import AppStateStore from "AppStateStore" /* 1999 */;
+import MediaEngineStore_mod from "MediaEngineStore" /* 2014 */;
+import SpeakingStore from "SpeakingStore" /* 6203 */;
+import AppStateStore from "AppStateStore" /* 2001 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
-import ColorUtils_mod from "ColorUtils" /* 4967 */;
+import createStyles_mod from "createStyles" /* 5191 */;
+import ColorUtils_mod from "ColorUtils" /* 5063 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

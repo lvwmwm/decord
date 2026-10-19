@@ -1,16 +1,16 @@
-// Module ID: 10235
-// Function ID: 10236
+// Module ID: 10537
+// Function ID: 10538
 // Name: AcceptRequestConfirmationModal
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 5299, 5088, 5398, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1128, 5399, 5187, 5498, 2]
 
-// Module 10235 (AcceptRequestConfirmationModal)
+// Module 10537 (AcceptRequestConfirmationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
-import AlertDefault from "Alert" /* 5398 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
+import AlertDefault from "Alert" /* 5498 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,10 +40,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptReques
   ({ onCancel, onConfirm } = arg0);
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(onConfirm(1126).t.MMlhsr);
-    const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(onConfirm(1126).t["ETE/oC"]);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(onConfirm(1128).t.MMlhsr);
+    const intl2 = tmp(1128).intl;
+    const stringResult1 = intl2.string(onConfirm(1128).t["ETE/oC"]);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
     tmp5 = stringResult;
@@ -65,8 +65,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptReques
   }
   ({ bodyText, text } = tmp4);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1126).intl;
-    const stringResult2 = intl3.string(onConfirm(1126).t.eJzSDT);
+    const intl3 = tmp(1128).intl;
+    const stringResult2 = intl3.string(onConfirm(1128).t.eJzSDT);
     cResult[4] = stringResult2;
     tmp10 = stringResult2;
   } else {
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptReques
   }
   if (cResult[5] !== tmp4.text) {
     const obj2 = { variant: "heading-lg/bold", color: "text-strong", style: text, children: tmp10 };
-    const tmp14 = closure_4(onConfirm(5088).Text, obj2);
+    const tmp14 = closure_4(onConfirm(5187).Text, obj2);
     cResult[5] = tmp4.text;
     cResult[6] = tmp14;
     tmp12 = tmp14;
@@ -83,8 +83,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptReques
   }
   const text2 = tmp4.text;
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1126).intl;
-    const stringResult3 = intl4.string(onConfirm(1126).t.GB4jUw);
+    const intl4 = tmp(1128).intl;
+    const stringResult3 = intl4.string(onConfirm(1128).t.GB4jUw);
     cResult[7] = stringResult3;
     tmp15 = stringResult3;
   } else {
@@ -92,7 +92,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptReques
   }
   if (cResult[8] !== tmp4.text) {
     const obj3 = { variant: "text-md/medium", color: "text-subtle", style: text2, children: tmp15 };
-    const tmp19 = closure_4(onConfirm(5088).Text, obj3);
+    const tmp19 = closure_4(onConfirm(5187).Text, obj3);
     cResult[8] = tmp4.text;
     cResult[9] = tmp19;
     tmp17 = tmp19;
@@ -142,8 +142,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptReques
   const onCancel = onConfirm.onCancel;
   const tmp = closure_6();
   let obj = {
-    confirmText: intl.string(onConfirm(1126).t.MMlhsr),
-    cancelText: intl2.string(onConfirm(1126).t["ETE/oC"]),
+    confirmText: intl.string(onConfirm(1128).t.MMlhsr),
+    cancelText: intl2.string(onConfirm(1128).t["ETE/oC"]),
     onConfirm() {
       onConfirm();
       const obj = AlertActionCreatorsDefault;
@@ -153,16 +153,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptReques
     children: closure_5(View, obj2)
   };
   const tmp2 = AlertDefault;
-  intl = onConfirm(1126).intl;
-  intl2 = onConfirm(1126).intl;
+  intl = onConfirm(1128).intl;
+  intl2 = onConfirm(1128).intl;
   obj2 = { style: tmp.bodyText, children: items };
-  const obj3 = { variant: "heading-lg/bold", color: "text-strong", style: tmp.text, children: intl3.string(onConfirm(1126).t.eJzSDT) };
-  const Text = onConfirm(5088).Text;
-  intl3 = onConfirm(1126).intl;
+  const obj3 = { variant: "heading-lg/bold", color: "text-strong", style: tmp.text, children: intl3.string(onConfirm(1128).t.eJzSDT) };
+  const Text = onConfirm(5187).Text;
+  intl3 = onConfirm(1128).intl;
   items = [closure_4(Text, obj3), ];
-  const obj4 = { variant: "text-md/medium", color: "text-subtle", style: tmp.text, children: intl4.string(onConfirm(1126).t.GB4jUw) };
-  const Text2 = onConfirm(5088).Text;
-  intl4 = onConfirm(1126).intl;
+  const obj4 = { variant: "text-md/medium", color: "text-subtle", style: tmp.text, children: intl4.string(onConfirm(1128).t.GB4jUw) };
+  const Text2 = onConfirm(5187).Text;
+  intl4 = onConfirm(1128).intl;
   items[1] = closure_4(Text2, obj4);
   return closure_4(tmp2, obj);
 });

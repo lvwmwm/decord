@@ -1,12 +1,12 @@
-// Module ID: 16416
-// Function ID: 16417
+// Module ID: 17105
+// Function ID: 17106
 // Name: usePromoEmailOptInLabel
-// Dependencies: [558, 576, 16417, 1126, 2]
+// Dependencies: [558, 576, 17106, 1128, 2]
 
-// Module 16416 (usePromoEmailOptInLabel)
+// Module 17105 (usePromoEmailOptInLabel)
 import react from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import RegistrationEmailOptInCopyExperimentDefault from "RegistrationEmailOptInCopyExperiment" /* 16417 */;
+import intl2 from "intl" /* 1128 */;
+import RegistrationEmailOptInCopyExperimentDefault from "RegistrationEmailOptInCopyExperiment" /* 17106 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,11 +31,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePromoEmai
     }
     return tmp5;
   }
-  const intl = tmp(1126).intl;
+  const intl = tmp(1128).intl;
   let LSoXK5 = arg0;
   const string = intl.string;
   if (trackingCopy) {
-    LSoXK5 = tmp(1126).t.LSoXK5;
+    LSoXK5 = tmp(1128).t.LSoXK5;
   }
   const stringResult = string(LSoXK5);
   cResult[2] = arg0;

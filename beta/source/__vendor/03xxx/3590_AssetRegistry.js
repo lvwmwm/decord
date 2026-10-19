@@ -1,10 +1,10 @@
 // Module ID: 3590
 // Function ID: 3591
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 3590 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/rust_3pp", scales: [1], hash: "354571feac5b6fb5fc9502ef0519a4c8", name: "Rust3PP.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3lvdXR1YmVfM3Bw", scales: [1], hash: "4727a6ad3c1e07e860fc77eb9378412f", name: "zh-CN.messages.4727a6ad3c1e07e860fc77eb9378412f.compiled.messages", type: "jsona" });

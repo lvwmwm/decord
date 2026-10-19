@@ -1,22 +1,22 @@
-// Module ID: 13050
-// Function ID: 13051
+// Module ID: 13978
+// Function ID: 13979
 // Name: BlockedDomainActionSheet
-// Dependencies: [19, 21, 5092, 587, 558, 576, 6269, 1126, 5088, 5377, 13051, 5379, 5056, 6840, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 6546, 1128, 5187, 5477, 13979, 5479, 5155, 7118, 2]
 
-// Module 13050 (BlockedDomainActionSheet)
+// Module 13978 (BlockedDomainActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import Stack_Stack from "Stack/Stack" /* 5377 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 6269 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
-import URLCallout from "URLCallout" /* 13051 */;
+import intl4 from "intl" /* 1128 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import Stack_Stack from "Stack/Stack" /* 5477 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 6546 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7118 */;
+import URLCallout from "URLCallout" /* 13979 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedDomai
   }
   const title = tmp4.title;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t["2B3wj8"]);
     cResult[1] = stringResult;
     tmp8 = stringResult;
@@ -71,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedDomai
   }
   const warningMessage = tmp4.warningMessage;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const formatResult = intl2.format(intl4.t.jnHyYU, {});
     cResult[4] = formatResult;
     tmp13 = formatResult;
@@ -113,8 +113,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedDomai
               return obj.hideActionSheet();
             }
       };
-      const Button = tmp(5379).Button;
-      intl3 = tmp(1126).intl;
+      const Button = tmp(5479).Button;
+      intl3 = tmp(1128).intl;
       const tmp25 = _false(Button, obj5);
       cResult[12] = tmp25;
       tmp23 = tmp25;
@@ -131,7 +131,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedDomai
       }
     }
     const obj6 = { startExpanded: true, children: React3(Stack_Stack.Stack, obj7) };
-    BottomSheet = tmp(6840).BottomSheet;
+    BottomSheet = tmp(7118).BottomSheet;
     obj7 = { spacing: 16, justify: "center", align: "center", style: container, children: items };
     items = [tmp18, tmp20, tmp23];
     const tmp29 = _false(BottomSheet, obj6);

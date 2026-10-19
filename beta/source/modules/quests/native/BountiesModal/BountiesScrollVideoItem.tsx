@@ -1,21 +1,21 @@
-// Module ID: 15299
-// Function ID: 15300
+// Module ID: 16059
+// Function ID: 16060
 // Name: BountiesScrollVideoItem
-// Dependencies: [5, 32, 19, 17, 9058, 7385, 5972, 21, 558, 576, 15300, 504, 15301, 12978, 15306, 15307, 15308, 15304, 12988, 5979, 5977, 15311, 15316, 2]
+// Dependencies: [5, 32, 19, 17, 9354, 7655, 6228, 21, 558, 576, 16060, 504, 16061, 13909, 16066, 16067, 16068, 16064, 13919, 6235, 6233, 16071, 16076, 2]
 
-// Module 15299 (BountiesScrollVideoItem)
+// Module 16059 (BountiesScrollVideoItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import QuestConstants from "QuestConstants" /* 5972 */;
-import QuestContent from "QuestContent" /* 5977 */;
-import AdCreativeType from "AdCreativeType" /* 5979 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12988 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15300 */;
+import QuestConstants from "QuestConstants" /* 6228 */;
+import QuestContent from "QuestContent" /* 6233 */;
+import AdCreativeType from "AdCreativeType" /* 6235 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 13919 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16060 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VirtualCurrencyStore_mod from "VirtualCurrencyStore" /* 9058 */;
-import BountyStore from "BountyStore" /* 7385 */;
+import VirtualCurrencyStore_mod from "VirtualCurrencyStore" /* 9354 */;
+import BountyStore from "BountyStore" /* 7655 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -433,7 +433,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   let tmp21;
   let tmp7;
   let tmp8;
-  const f120382 = () => {
+  const f123919 = () => {
     let currentBalance = null;
     if (isActive) {
       currentBalance = VirtualCurrencyStore.getCurrentBalance();
@@ -492,9 +492,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bounti
   const handlePlayerStateChange = isEndCardVisible({ isActive, playerRef: ref }).handlePlayerStateChange;
   [tmp17, tmp18] = isActive(obj.useState(isActive), 2);
   isActive(obj.useState(isActive), 2);
-  [tmp20, tmp21] = isActive(obj.useState(f120382), 2);
+  [tmp20, tmp21] = isActive(obj.useState(f123919), 2);
   VirtualCurrencyStore = tmp21;
-  isActive(obj.useState(f120382), 2);
+  isActive(obj.useState(f123919), 2);
   const first = tmp5(obj.useState(0), 2)[0];
   isActive(obj.useState(0), 2);
   const tmp12 = flushProgress;
@@ -796,15 +796,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesScro
   }
   const obj = {
     adContentId: bounty.id,
-    adCreativeType: bounty(5979).AdCreativeType.BOUNTY,
-    questContent: bounty(5977).QuestContent.VIDEO_MODAL_MOBILE,
+    adCreativeType: bounty(6235).AdCreativeType.BOUNTY,
+    questContent: bounty(6233).QuestContent.VIDEO_MODAL_MOBILE,
     sourceQuestContent,
     overrideVisibility: isActive,
     children() {
       return <closure_12 bounty={bounty} sourceQuestContent={sourceQuestContent} width={dependencyMap} height={_asyncToGenerator} index={_slicedToArray} isActive={isActive} isRecapPageRevealed={flag} isRecapPageOnTop={flag2} isScrollingInBoundsSharedValue={BountyStore} shouldLoadHls={shouldLoadHls} softDownloadCapsEnabled={flag3} isScrollIndicatorEnabled={flag4} />;
     }
   };
-  const BillableAdPlacementImpressionTrackerNative = bounty(12988).BillableAdPlacementImpressionTrackerNative;
+  const BillableAdPlacementImpressionTrackerNative = bounty(13919).BillableAdPlacementImpressionTrackerNative;
   return flag3(BillableAdPlacementImpressionTrackerNative, obj);
 });
 let size = size_mod;

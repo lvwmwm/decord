@@ -1,16 +1,16 @@
-// Module ID: 8836
-// Function ID: 8837
+// Module ID: 9113
+// Function ID: 9114
 // Name: SecureFramesExistingVerificationsHelpMessage
-// Dependencies: [17, 21, 5092, 558, 576, 8837, 1126, 7563, 2]
+// Dependencies: [17, 21, 5191, 558, 576, 9114, 1128, 7834, 2]
 
-// Module 8836 (SecureFramesExistingVerificationsHelpMessage)
+// Module 9113 (SecureFramesExistingVerificationsHelpMessage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import InlineNotice2 from "InlineNotice" /* 7563 */;
-import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 8837 */;
-import createStyles from "createStyles" /* 5092 */;
+import intl2 from "intl" /* 1128 */;
+import InlineNotice2 from "InlineNotice" /* 7834 */;
+import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 9114 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFram
           tmp8 = cResult[5];
         }
         if (cResult[6] !== secureFramesUserVerifiedKeysCount) {
-          const intl = tmp(1126).intl;
+          const intl = tmp(1128).intl;
           const obj2 = { count: secureFramesUserVerifiedKeysCount };
           const formatResult = intl.format(intl2.t.uZDkz0, obj2);
           cResult[6] = secureFramesUserVerifiedKeysCount;
@@ -52,7 +52,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFram
           tmp9 = cResult[7];
         }
         if (cResult[8] !== tmp9) {
-          const tmp13 = jsx(InlineNotice2.InlineNotice, { type: "info", message: tmp9, role: "static" });
+          const tmp13 = jsx(InlineNotice2.InlineNotice, { type: "info", message: tmp9, role: "none" });
           cResult[8] = tmp9;
           cResult[9] = tmp13;
           tmp11 = tmp13;
@@ -98,9 +98,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFram
   let tmp5 = null;
   if (0 !== secureFramesUserVerifiedKeysCount) {
     const items = [tmp.container, style];
-    ({ type: "info", message: intl.format(intl2.t.uZDkz0, obj4), role: "static" });
-    const InlineNotice = tmp2(7563).InlineNotice;
-    intl = tmp2(1126).intl;
+    ({ type: "info", message: intl.format(intl2.t.uZDkz0, obj4), role: "none" });
+    const InlineNotice = tmp2(7834).InlineNotice;
+    intl = tmp2(1128).intl;
     tmp5 = <View style={items}>{null}</View>;
     obj4 = { count: secureFramesUserVerifiedKeysCount };
   }

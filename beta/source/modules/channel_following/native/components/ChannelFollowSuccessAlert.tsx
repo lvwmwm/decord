@@ -1,23 +1,23 @@
-// Module ID: 12189
-// Function ID: 12190
+// Module ID: 13137
+// Function ID: 13138
 // Name: ChannelFollowSuccessAlert
-// Dependencies: [19, 21, 12190, 12191, 12192, 12193, 12194, 12195, 1126, 5092, 558, 576, 5031, 4969, 12, 10061, 6157, 5088, 5398, 2]
+// Dependencies: [19, 21, 13138, 13139, 13140, 13141, 13142, 13143, 1128, 5191, 558, 576, 5127, 5065, 12, 10364, 5128, 5187, 5498, 2]
 
-// Module 12189 (ChannelFollowSuccessAlert)
+// Module 13137 (ChannelFollowSuccessAlert)
 import _modDef12 from "module_12" /* 12 */;
-import intl3 from "intl" /* 1126 */;
-import useThemeDefault from "useTheme" /* 5031 */;
-import AlertDefault from "Alert" /* 5398 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import AssetRegistry from "AssetRegistry" /* 12190 */;
-import AssetRegistry2 from "AssetRegistry" /* 12191 */;
-import AssetRegistry3 from "AssetRegistry" /* 12192 */;
-import AssetRegistry4 from "AssetRegistry" /* 12193 */;
-import AssetRegistry5 from "AssetRegistry" /* 12194 */;
-import AssetRegistry6 from "AssetRegistry" /* 12195 */;
+import intl3 from "intl" /* 1128 */;
+import useThemeDefault from "useTheme" /* 5127 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import AlertDefault from "Alert" /* 5498 */;
+import AssetRegistry from "AssetRegistry" /* 13138 */;
+import AssetRegistry2 from "AssetRegistry" /* 13139 */;
+import AssetRegistry3 from "AssetRegistry" /* 13140 */;
+import AssetRegistry4 from "AssetRegistry" /* 13141 */;
+import AssetRegistry5 from "AssetRegistry" /* 13142 */;
+import AssetRegistry6 from "AssetRegistry" /* 13143 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelFollo
     tmp8 = cResult[1];
     tmp9 = cResult[2];
   }
-  const tmpResult = require("module_10061");
+  const tmpResult = require("module_10364");
   const stableMemo = tmpResult.useStableMemo(tmp8, tmp9);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function y() {
@@ -117,10 +117,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelFollo
     tmp11 = cResult[3];
     tmp12 = cResult[4];
   }
-  const tmpResult2 = require("module_10061");
+  const tmpResult2 = require("module_10364");
   const stableMemo1 = tmpResult2.useStableMemo(tmp11, tmp12);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(require("intl").t["+IrDzN"]);
     cResult[5] = stringResult;
     tmp14 = stringResult;
@@ -152,7 +152,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelFollo
       const _Symbol = Symbol;
       const text = tmp4.text;
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1126).intl;
+        const intl2 = tmp(1128).intl;
         const stringResult1 = intl2.string(require("intl").t["2QbSea"]);
         cResult[14] = stringResult1;
         tmp23 = stringResult1;
@@ -214,12 +214,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelFollo
   const tmp6 = obj.isThemeDark(tmp4) ? items1 : items;
   _require = tmp6;
   items = [tmp6];
-  const tmp5Result = require("module_10061");
+  const tmp5Result = require("module_10364");
   const stableMemo = tmp5Result.useStableMemo(() => {
     const obj = _modDef12;
     return obj.sample(closure_0);
   }, items);
-  const tmp5Result2 = require("module_10061");
+  const tmp5Result2 = require("module_10364");
   const stableMemo1 = tmp5Result2.useStableMemo(() => {
     const obj = _modDef12;
     return obj.sample(items2);
@@ -227,16 +227,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelFollo
   const obj2 = { confirmText: intl.string(require("intl").t["+IrDzN"]), children: items1 };
   const tmp2Result = AlertDefault;
   const merged = Object.assign(arg0);
-  intl = tmp5(1126).intl;
+  intl = tmp5(1128).intl;
   items1 = [, , ];
   const obj3 = { source: stableMemo, style: tmp.image };
   items1[0] = closure_3(FastImageDefault, obj3);
   const obj4 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stableMemo1() };
-  const Text = tmp5(5088).Text;
+  const Text = tmp5(5187).Text;
   items1[1] = closure_3(Text, obj4);
   const obj5 = { style: tmp.text, variant: "text-md/medium", color: "text-muted", children: intl2.string(require("intl").t["2QbSea"]) };
-  const Text2 = tmp5(5088).Text;
-  intl2 = tmp5(1126).intl;
+  const Text2 = tmp5(5187).Text;
+  intl2 = tmp5(1128).intl;
   items1[2] = closure_3(Text2, obj5);
   return closure_4(tmp2Result, obj2);
 });

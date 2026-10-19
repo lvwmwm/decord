@@ -1,10 +1,10 @@
 // Module ID: 14244
 // Function ID: 14245
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 14244 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "e6321d3eee6babc8e6acf553c6eec250", name: "ServerTab", type: "lottie" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/quests/images", width: 435, height: 218, scales: [1], hash: "92f827adadc1f86811fd4e36c86fdf27", name: "nitro_modal_header_background", type: "png" });

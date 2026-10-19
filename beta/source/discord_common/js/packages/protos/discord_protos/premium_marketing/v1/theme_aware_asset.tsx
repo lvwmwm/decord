@@ -1,29 +1,29 @@
-// Module ID: 9132
-// Function ID: 9133
+// Module ID: 9436
+// Function ID: 9437
 // Name: theme_aware_asset
-// Dependencies: [32, 1210, 2]
+// Dependencies: [32, 1212, 2]
 
-// Module 9132 (theme_aware_asset)
-import _mod1210 from "module_1210" /* 1210 */;
+// Module 9436 (theme_aware_asset)
+import _mod1212 from "module_1212" /* 1212 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const MessageType = _mod1210.MessageType;
+const MessageType = _mod1212.MessageType;
 class ThemeAwareAsset$Type extends MessageType {
   constructor() {
     const items = [{ no: 1, name: "light_url", kind: "scalar", T: 9 }, { no: 2, name: "dark_url", kind: "scalar", T: 9 }, { no: 3, name: "light_static_url", kind: "scalar", T: 9 }, { no: 4, name: "dark_static_url", kind: "scalar", T: 9 }];
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.ThemeAwareAsset", items, new.target);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { lightUrl: "", darkUrl: "", lightStaticUrl: "", darkStaticUrl: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
-      const tmpResult = _mod1210;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+    _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
+    if (undefined !== partialSettings) {
+      const tmpResult = _mod1212;
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -65,7 +65,7 @@ class ThemeAwareAsset$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1210.UnknownFieldHandler.onRead;
+                onRead = _mod1212.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -77,25 +77,25 @@ class ThemeAwareAsset$Type extends MessageType {
   }
   internalBinaryWrite(lightUrl, tag, writeUnknownFields) {
     if ("" !== lightUrl.lightUrl) {
-      const tagResult = tag.tag(1, _mod1210.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1212.WireType.LengthDelimited);
       tagResult.string(lightUrl.lightUrl);
     }
     if ("" !== lightUrl.darkUrl) {
-      const tagResult1 = tag.tag(2, _mod1210.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1212.WireType.LengthDelimited);
       tagResult1.string(lightUrl.darkUrl);
     }
     if ("" !== lightUrl.lightStaticUrl) {
-      const tagResult2 = tag.tag(3, _mod1210.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1212.WireType.LengthDelimited);
       tagResult2.string(lightUrl.lightStaticUrl);
     }
     if ("" !== lightUrl.darkStaticUrl) {
-      const tagResult3 = tag.tag(4, _mod1210.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1212.WireType.LengthDelimited);
       tagResult3.string(lightUrl.darkStaticUrl);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1210.UnknownFieldHandler.onWrite;
+        onWrite = _mod1212.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, lightUrl, tag);

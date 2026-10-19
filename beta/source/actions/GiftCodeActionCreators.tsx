@@ -1,21 +1,21 @@
-// Module ID: 10493
-// Function ID: 10494
+// Module ID: 10816
+// Function ID: 10817
 // Name: GiftCodeActionCreators
-// Dependencies: [5, 5440, 7259, 7267, 1085, 1392, 584, 5633, 6853, 7258, 5635, 4792, 1255, 1295, 10494, 10495, 2]
+// Dependencies: [5, 5540, 7530, 7538, 1087, 1394, 584, 5889, 6357, 7529, 5891, 4887, 1257, 1297, 10817, 10818, 2]
 // Exports: deliverGiftCodes, reportUnexpectedGiftCodeError, resolveGiftCode
 
-// Module 10493 (GiftCodeActionCreators)
-import SentryUtilsDefault from "SentryUtils" /* 1255 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4792 */;
-import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7267 */;
-import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 10494 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 10495 */;
+// Module 10816 (GiftCodeActionCreators)
+import SentryUtilsDefault from "SentryUtils" /* 1257 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4887 */;
+import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7538 */;
+import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 10817 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 10818 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5440 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7259 */;
-import Constants from "Constants" /* 1085 */;
+import ApplicationStore from "ApplicationStore" /* 5540 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let giftCode;
@@ -78,7 +78,7 @@ let obj = function _resolveGiftCode() {
               product = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

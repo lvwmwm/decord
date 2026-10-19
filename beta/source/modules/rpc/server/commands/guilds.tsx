@@ -1,54 +1,30 @@
-// Module ID: 14745
-// Function ID: 14746
+// Module ID: 15510
+// Function ID: 15511
 // Name: guilds
-// Dependencies: [2083, 2087, 5639, 1085, 8453, 10940, 14737, 10937, 2]
+// Dependencies: [2086, 2090, 5895, 1087, 15503, 8731, 9172, 9169, 2]
 
-// Module 14745 (guilds)
-import GuildRecord from "GuildRecord" /* 2083 */;
-import Constants2 from "Constants" /* 5639 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8453 */;
-import RPCErrorDefault from "RPCError" /* 10937 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10940 */;
-import botScopedAccess from "botScopedAccess" /* 14737 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import Constants from "Constants" /* 1085 */;
+// Module 15510 (guilds)
+import GuildRecord from "GuildRecord" /* 2086 */;
+import Constants2 from "Constants" /* 5895 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8731 */;
+import RPCErrorDefault from "RPCError" /* 9169 */;
+import botScopedAccess from "botScopedAccess" /* 9172 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import Constants from "Constants" /* 1087 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15503 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;
 let hasOwnProperty;
 let obj3;
-function handler() {
-  let guildsArray;
-  let obj = {
-    guilds: guildsArray.map((id) => {
-      let tmp;
-      const obj = { id: id.id, name: id.name, icon_url: tmp };
-      tmp = getGuildIconURL(id, 128);
-      if (tmp == null) {
-        tmp = null;
-      }
-      return obj;
-    })
-  };
-  guildsArray = GuildStore.getGuildsArray();
-  return obj;
-}
 const getGuildIconURL = GuildRecord.getGuildIconURL;
 const RPC_SCOPE_CONFIG = Constants2.RPC_SCOPE_CONFIG;
 ({ RPCCommands, RPCErrors: hasOwnProperty } = Constants);
 let obj = {};
+const GET_GUILD = RPCCommands.GET_GUILD;
+let CONTEXT_MENU_ICON_NAMES = CONTEXT_MENU_ICON_NAMES_mod;
 let obj2 = {
   scope: obj3,
-  validation(string) {
-    let minResult;
-    const obj = createRpcJoiSchemaObjectDefault(string);
-    const requiredResult = obj.required();
-    const keys = requiredResult.keys;
-    const obj2 = { guild_id: string.string(), timeout: minResult.max(60) };
-    const numberResult = string.number();
-    minResult = numberResult.min(0);
-    return keys(obj2);
-  },
   validateAccess(botScopeOnly) {
     if (botScopeOnly.botScopeOnly) {
       const obj = botScopedAccess;
@@ -94,13 +70,34 @@ let obj2 = {
   }
 };
 obj3 = {};
-const GET_GUILD = RPCCommands.GET_GUILD;
+const createRPCCommand = CONTEXT_MENU_ICON_NAMES.createRPCCommand;
+const GET_GUILD2 = RPCCommands.GET_GUILD;
 const ANY = RPC_SCOPE_CONFIG.ANY;
 const items = [OAuth2Scopes.OAuth2Scopes.RPC, OAuth2Scopes.OAuth2Scopes.BOT];
 obj3[ANY] = items;
-obj[GET_GUILD] = obj2;
-obj[RPCCommands.GET_GUILDS] = { scope: OAuth2Scopes.OAuth2Scopes.RPC, handler };
-({ scope: OAuth2Scopes.OAuth2Scopes.RPC, handler });
+obj[GET_GUILD] = createRPCCommand(GET_GUILD2, obj2);
+const GET_GUILDS = RPCCommands.GET_GUILDS;
+CONTEXT_MENU_ICON_NAMES = CONTEXT_MENU_ICON_NAMES_mod;
+const obj4 = {
+  scope: OAuth2Scopes.OAuth2Scopes.RPC,
+  handler() {
+    let guildsArray;
+    let obj = {
+      guilds: guildsArray.map((id) => {
+        let tmp;
+        const obj = { id: id.id, name: id.name, icon_url: tmp };
+        tmp = getGuildIconURL(id, 128);
+        if (tmp == null) {
+          tmp = null;
+        }
+        return obj;
+      })
+    };
+    guildsArray = GuildStore.getGuildsArray();
+    return obj;
+  }
+};
+obj[GET_GUILDS] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.GET_GUILDS, obj4);
 const result = size.fileFinishedImporting("modules/rpc/server/commands/guilds.tsx");
 
 export default obj;

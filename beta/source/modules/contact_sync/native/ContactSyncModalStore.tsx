@@ -1,14 +1,14 @@
-// Module ID: 12406
-// Function ID: 12407
+// Module ID: 13347
+// Function ID: 13348
 // Name: ContactSyncModalStore
-// Dependencies: [5761, 1390, 12407, 1085, 570, 1272, 558, 2]
+// Dependencies: [6017, 1392, 13348, 1087, 570, 1274, 558, 2]
 // Exports: getIsOnboarding, initialize, setAllowEmail, setAllowPhone, setAllowSync, setError, setName, setPermissionState, setPhone, setPhoneToken, setSuggestions
 
-// Module 12406 (ContactSyncModalStore)
-import Constants from "Constants" /* 1085 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12407 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
-import UserStore from "UserStore" /* 1390 */;
+// Module 13347 (ContactSyncModalStore)
+import Constants from "Constants" /* 1087 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13348 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6017 */;
+import UserStore from "UserStore" /* 1392 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

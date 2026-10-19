@@ -1,10 +1,10 @@
-// Module ID: 1278
-// Function ID: 1279
+// Module ID: 1280
+// Function ID: 1281
 // Name: FingerprintUtils
 // Dependencies: [2]
 // Exports: extractId, maybeExtractId
 
-// Module 1278 (FingerprintUtils)
+// Module 1280 (FingerprintUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/fingerprint-utils/FingerprintUtils.tsx");

@@ -37,26 +37,29 @@ const Modules = _mod592._private.Modules;
 const Shadows = _mod593._private.Shadows;
 let closure_6 = Symbol("semanticColor");
 const set = new Set(Object.values(Themes));
+function clamp01(arg0) {
+  return Math.min(1, Math.max(0, arg0));
+}
 let obj = {
   themes: ThemeTypes.ThemeTypes,
   colors: mapValuesDefault(SemanticColors, (arg0, arg1) => ({ [closure_1_6]: arg1 })),
   unsafe_rawColors: RawColors,
   shadows: mapValuesDefault(Shadows, (arg0) => {
     function resolve(isAndroid) {
-      return f83179(closure_0[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
+      return f84317(closure_0[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
     }
     let closure_0 = arg0;
-    const f83175 = (shadowOffset, arg1) => {
+    const f84313 = (shadowOffset, arg1) => {
       shadowOffset = undefined;
       if (!arg1) {
         shadowOffset = shadowOffset.shadowOffset;
       }
       return shadowOffset;
     };
-    const f83176 = (shadowColorAndroid, arg1) => arg1 ? shadowColorAndroid.shadowColorAndroid : shadowColorAndroid.shadowColor;
-    const f83177 = (shadowOpacity) => shadowOpacity.shadowOpacity;
-    const f83178 = (shadowRadius) => shadowRadius.shadowRadius;
-    const f83179 = (elevation) => elevation.elevation;
+    const f84314 = (shadowColorAndroid, arg1) => arg1 ? shadowColorAndroid.shadowColorAndroid : shadowColorAndroid.shadowColor;
+    const f84315 = (shadowOpacity) => shadowOpacity.shadowOpacity;
+    const f84316 = (shadowRadius) => shadowRadius.shadowRadius;
+    const f84317 = (elevation) => elevation.elevation;
     return { shadowOffset: { resolve }, shadowColor: { resolve }, shadowOpacity: { resolve }, shadowRadius: { resolve }, elevation: { resolve } };
   }),
   radii: Radius.Radius,
@@ -135,44 +138,44 @@ let obj = {
       if (isProfileTheme) {
         let hexResult;
         if ("userProfileThemes" in SemanticColors[TEXT_FEEDBACK_CRITICAL[closure_6]]) {
-          theme = undefined;
+          let theme1;
           const userProfileThemes = tmp3.userProfileThemes;
           if (semanticColorContextFromThemeContext != null) {
             const gradient = semanticColorContextFromThemeContext.gradient;
             if (gradient != null) {
-              theme = gradient.theme;
+              theme1 = gradient.theme;
             }
           }
-          let tmp41 = null;
-          if (null != theme) {
-            tmp41 = userProfileThemes[theme];
+          let tmp56 = null;
+          if (null != theme1) {
+            tmp56 = userProfileThemes[theme1];
           }
-          if (null != tmp41) {
-            result = RawColors[tmp41.raw];
-            opacity = tmp41.opacity;
+          if (null != tmp56) {
+            result = RawColors[tmp56.raw];
+            opacity = tmp56.opacity;
           }
         }
-        let num2;
+        let num6;
         if (semanticColorContextFromThemeContext != null) {
-          num2 = semanticColorContextFromThemeContext.contrast;
+          num6 = semanticColorContextFromThemeContext.contrast;
         }
-        if (num2 == null) {
-          num2 = 1;
+        if (num6 == null) {
+          num6 = 1;
         }
-        let num3;
+        let num7;
         if (semanticColorContextFromThemeContext != null) {
-          num3 = semanticColorContextFromThemeContext.saturation;
+          num7 = semanticColorContextFromThemeContext.saturation;
         }
-        if (num3 == null) {
-          num3 = 1;
+        if (num7 == null) {
+          num7 = 1;
         }
-        if (num3 < 1) {
+        if (num7 < 1) {
           const obj6 = transforms;
-          result = obj6.transformColorForReducedSaturation(result, category, num3);
+          result = obj6.transformColorForReducedSaturation(result, category, num7);
         }
-        if (1 !== num2) {
+        if (1 !== num6) {
           const obj7 = transforms;
-          result = obj7.transformColorContrast(result, category, theme, num2);
+          result = obj7.transformColorContrast(result, category, theme, num6);
         }
         if (1 === opacity) {
           hexResult = result;
@@ -221,35 +224,86 @@ let obj = {
         }
         let tmp36;
         if (tmp22 != null) {
-          let theme1;
+          let theme2;
           if (semanticColorContextFromThemeContext != null) {
-            theme1 = semanticColorContextFromThemeContext.gradient.theme;
+            theme2 = semanticColorContextFromThemeContext.gradient.theme;
           }
-          tmp36 = tmp22[theme1];
+          tmp36 = tmp22[theme2];
         }
         if (null != tmp36) {
-          let tmp38;
-          const tmp61 = _modDef683;
-          if (tmp36.color in RawColors) {
-            tmp38 = tmp62[tmp36.color];
-          } else if (semanticColorContextFromThemeContext != null) {
-            tmp38 = semanticColorContextFromThemeContext.gradient.colors[tmp36.color];
+          let tmp47;
+          let num2 = 1;
+          if (!semanticColorContextFromThemeContext.isProfileTheme) {
+            let num = semanticColorContextFromThemeContext.gradient.unsupported_overlayOpacityMultiplier;
+            if (num == null) {
+              num = 1;
+            }
+            num2 = num;
           }
-          const tmp61Result = tmp61(tmp38);
-          let result1 = tmp61Result;
+          const _Number = Number;
+          let num3 = 1;
+          if (Number.isFinite(num2)) {
+            num3 = clamp01(num2);
+          }
+          theme = semanticColorContextFromThemeContext.gradient.theme;
+          const tmp42 = RawColors;
+          const tmp46 = _modDef683;
+          if (tmp36.color in RawColors) {
+            tmp47 = tmp42[tmp36.color];
+          } else if (semanticColorContextFromThemeContext != null) {
+            tmp47 = semanticColorContextFromThemeContext.gradient.colors[tmp36.color];
+          }
+          const tmp46Result = tmp46(tmp47);
+          let result1 = tmp46Result;
           if ("saturation" in tmp36) {
-            result1 = tmp61Result.set("hsl.s", tmp36.saturation);
+            result1 = tmp46Result.set("hsl.s", tmp36.saturation);
           }
           let result2 = result1;
           if ("lightness" in tmp36) {
-            result2 = result1.set("hsl.l", tmp36.lightness);
+            const lightness = tmp36.lightness;
+            let tmp50 = lightness;
+            if (1 !== num3) {
+              tmp50 = lightness;
+              if (!(tmp36.color in RawColors)) {
+                tmp50 = lightness;
+                if (typeof lightness === "number") {
+                  tmp50 = lightness;
+                  if (!("opacity" in tmp36)) {
+                    tmp50 = lightness;
+                    if ("dark" === theme ? lightness < 0.5 : lightness > 0.5) {
+                      const value = result1.get("hsl.l");
+                      tmp50 = clamp01(value + (lightness - value) * num3);
+                    }
+                  }
+                }
+              }
+            }
+            result2 = result1.set("hsl.l", tmp50);
           }
           result = result2.hex();
-          let num = 1;
+          let num5 = 1;
           if ("opacity" in tmp36) {
-            num = tmp36.opacity;
+            num5 = tmp36.opacity;
           }
-          opacity = num;
+          opacity = num5;
+          let tmp53 = 1 !== num3;
+          if (tmp53) {
+            let str9 = "WHITE_500";
+            const color = tmp36.color;
+            if ("dark" === theme) {
+              str9 = "BLACK_500";
+            }
+            tmp53 = color === str9;
+          }
+          if (tmp53) {
+            tmp53 = "opacity" in tmp36;
+          }
+          if (tmp53) {
+            tmp53 = !("lightness" in tmp36);
+          }
+          if (tmp53) {
+            opacity = clamp01(tmp36.opacity * num3);
+          }
         }
       }
     },

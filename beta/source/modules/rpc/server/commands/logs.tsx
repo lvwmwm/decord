@@ -1,33 +1,23 @@
-// Module ID: 14757
-// Function ID: 14758
+// Module ID: 15522
+// Function ID: 15523
 // Name: logs
-// Dependencies: [1085, 3, 10940, 10946, 2]
+// Dependencies: [1087, 3, 15503, 11335, 2]
 
-// Module 14757 (logs)
+// Module 15522 (logs)
 import LoggerDefault from "Logger" /* 3 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10940 */;
-import RPCHelpers from "RPCHelpers" /* 10946 */;
-import Constants from "Constants" /* 1085 */;
+import RPCHelpers from "RPCHelpers" /* 11335 */;
+import Constants from "Constants" /* 1087 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15503 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;
 let RPC_APPLICATION_LOGGING_CATEGORY;
-({ RPC_APPLICATION_LOGGING_CATEGORY, RPCCommands } = Constants);
-let closure_3 = new LoggerDefault(RPC_APPLICATION_LOGGING_CATEGORY);
-let obj = {
-  validation(string) {
-    let maxResult;
-    let maxResult1;
-    const obj = createRpcJoiSchemaObjectDefault(string);
-    const obj2 = { level: maxResult.required(), message: maxResult1.required() };
-    const keys = obj.required().keys;
-    obj.required();
-    const stringResult = string.string();
-    maxResult = stringResult.max(10);
-    const stringResult1 = string.string();
-    maxResult1 = stringResult1.max(1000);
-    return keys(obj2);
-  },
+({ RPCCommands, RPC_APPLICATION_LOGGING_CATEGORY } = Constants);
+let closure_2 = new LoggerDefault(RPC_APPLICATION_LOGGING_CATEGORY);
+let obj = {};
+const CAPTURE_LOG = RPCCommands.CAPTURE_LOG;
+const tmp3 = new LoggerDefault(RPC_APPLICATION_LOGGING_CATEGORY);
+const obj2 = {
   handler(arg0) {
     let args;
     let socket;
@@ -38,19 +28,19 @@ let obj = {
     const result = obj.validatePostMessageTransport(socket.transport);
     const combined = "" + socket.application.id + " - " + message;
     if ("log" === level) {
-      closure_3.log(combined);
+      closure_2.log(combined);
     } else if ("warn" === level) {
-      closure_3.warn(combined);
+      closure_2.warn(combined);
     } else if ("debug" === level) {
-      closure_3.verbose(combined);
+      closure_2.verbose(combined);
     } else if ("info" === level) {
-      closure_3.info(combined);
+      closure_2.info(combined);
     } else if ("error" === level) {
-      closure_3.error(combined);
+      closure_2.error(combined);
     }
   }
 };
-const tmp3 = new LoggerDefault(RPC_APPLICATION_LOGGING_CATEGORY);
+obj[CAPTURE_LOG] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.CAPTURE_LOG, obj2);
 let result = size.fileFinishedImporting("modules/rpc/server/commands/logs.tsx");
 
-export default { [RPCCommands.CAPTURE_LOG]: obj };
+export default obj;

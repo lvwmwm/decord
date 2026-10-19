@@ -1,10 +1,10 @@
 // Module ID: 13846
 // Function ID: 13847
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 13846 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/plan_selection", width: 80, height: 80, scales: [1], hash: "e2676a24ea3247f11452fad9b442341d", name: "img_wumpus_nitro", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/user_settings/connections/native/two_way_link/images", width: 18, height: 18.5, scales: [2, 3], hash: "84a5f82b0047a661ec45232254da9031", name: "app_installed_check", type: "png" });

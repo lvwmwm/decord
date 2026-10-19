@@ -1,28 +1,28 @@
-// Module ID: 17404
-// Function ID: 17405
+// Module ID: 17786
+// Function ID: 17787
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 5081, 5108, 4760, 1085, 21, 5092, 587, 558, 576, 4962, 5088, 10236, 504, 8762, 1200, 8618, 13797, 17390, 2]
+// Dependencies: [5, 32, 19, 17, 5181, 5207, 4855, 1087, 21, 5191, 587, 558, 576, 5057, 5187, 10538, 504, 9039, 1202, 8896, 14577, 17772, 2]
 
-// Module 17404 (DMRow)
+// Module 17786 (DMRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1200 */;
-import UserUtils from "UserUtils" /* 4962 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8618 */;
-import BotTagDefault from "BotTag" /* 8762 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10236 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13797 */;
+import native from "native" /* 1202 */;
+import UserUtils from "UserUtils" /* 5057 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8896 */;
+import BotTagDefault from "BotTag" /* 9039 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10538 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14577 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import PresenceStore from "PresenceStore" /* 5108 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
-import Constants from "Constants" /* 1085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import PresenceStore from "PresenceStore" /* 5207 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -265,7 +265,7 @@ const memoResult = react.memo(function DMRow(user) {
     if (tmp4Result) {
       const obj5 = { style: title.tag, children: map1(Icon, obj6) };
       obj6 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, disableColor: true };
-      Icon = tmp5(1200).Icon;
+      Icon = tmp5(1202).Icon;
       tmp4Result = tmp4(tmp2, obj5);
     }
     items[2] = tmp4Result;
@@ -273,7 +273,7 @@ const memoResult = react.memo(function DMRow(user) {
     if (tmp4Result2) {
       const obj7 = { style: title.tag, children: map1(Icon2, obj8) };
       obj8 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault2, disableColor: true };
-      Icon2 = tmp5(1200).Icon;
+      Icon2 = tmp5(1202).Icon;
       tmp4Result2 = tmp4(tmp2, obj7);
     }
     items[3] = tmp4Result2;

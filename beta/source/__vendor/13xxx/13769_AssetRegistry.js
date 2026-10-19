@@ -1,10 +1,10 @@
 // Module ID: 13769
 // Function ID: 13770
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 13769 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 285, height: 177, scales: [2, 3], hash: "8f1d829bee3b017ccff2f53d55809f29", name: "img_marketing_profiles", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "6adfcc7a553215ee3085ec15a5a3e3a4", name: "ClockXIcon", type: "png" });

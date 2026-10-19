@@ -1,15 +1,15 @@
-// Module ID: 11930
-// Function ID: 11931
+// Module ID: 12088
+// Function ID: 12089
 // Name: PollCreationInputError
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4828, 1200, 5088, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 4923, 1202, 5187, 2]
 
-// Module 11930 (PollCreationInputError)
+// Module 12088 (PollCreationInputError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4923 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollCreati
   const effect = react.useEffect(tmp5, tmp6);
   if (cResult[3] !== tmp4.icon) {
     size = { width: 16, height: 16, style: tmp4.icon };
-    const tmp10 = closure_4(tmp(1200).WarningCircle, size);
+    const tmp10 = closure_4(tmp(1202).WarningCircle, size);
     cResult[3] = tmp4.icon;
     cResult[4] = tmp10;
     tmp8 = tmp10;
@@ -63,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollCreati
   }
   if (cResult[5] !== message) {
     const obj2 = { variant: "text-xs/medium", color: "text-feedback-critical", children: message };
-    const tmp13 = closure_4(tmp(5088).Text, obj2);
+    const tmp13 = closure_4(tmp(5187).Text, obj2);
     cResult[5] = message;
     cResult[6] = tmp13;
     tmp11 = tmp13;
@@ -101,7 +101,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollCreati
   }, items);
   size = { width: 16, height: 16, style: tmp.icon };
   const obj = { style: tmp.container, children: items1 };
-  items1 = [closure_4(message(1200).WarningCircle, size), closure_4(message(5088).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children: message })];
+  items1 = [closure_4(message(1202).WarningCircle, size), closure_4(message(5187).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children: message })];
   return closure_5(View, obj);
 });
 let size = size_mod;

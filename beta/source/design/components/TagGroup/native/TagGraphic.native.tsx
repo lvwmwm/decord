@@ -1,31 +1,30 @@
-// Module ID: 14278
-// Function ID: 14279
+// Module ID: 12109
+// Function ID: 12110
 // Name: TagGraphic
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 14275, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 12106, 5128, 2]
 
-// Module 14278 (TagGraphic)
+// Module 12109 (TagGraphic)
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import TagGroupTypes from "TagGroupTypes" /* 14275 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import TagGroupTypes from "TagGroupTypes" /* 12106 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let c3;
-let closure_4;
-({ Image: c3, View: closure_4 } = react_native);
+const View = react_native.View;
 const jsx = Fragment.jsx;
-let closure_6 = createStyles.createStyles((width, backgroundColor) => {
+let closure_5 = createStyles.createStyles((width, backgroundColor) => {
   let size1;
   const obj = { image: { width, height: width }, avatar: size, roleDot: size1 };
   size = { width, height: width, borderRadius: nativeDefault.radii.round, overflow: "hidden" };
   size1 = { width, height: width, borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.TEXT_STRONG, backgroundColor };
   return obj;
 });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagGraphic(arg0) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagGraphic(arg0) {
   let graphic;
   let tmp5;
   let tmp8;
@@ -47,13 +46,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagGraphic(a
   } else {
     tmp5 = cResult[1];
   }
-  const tmp7 = closure_6(tmp5, color);
+  const tmp7 = closure_5(tmp5, color);
   if ("type" in graphic) {
     const type = graphic.type;
     if ("role" === type) {
       let tmp20;
       if (cResult[2] !== tmp7.roleDot) {
-        const tmp23 = <React3 style={tmp7.roleDot} accessible={false} />;
+        const tmp23 = <View style={tmp7.roleDot} accessible={false} />;
         cResult[2] = tmp7.roleDot;
         cResult[3] = tmp23;
         tmp20 = tmp23;
@@ -69,7 +68,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagGraphic(a
         }
         return tmp16;
       }
-      const tmp19 = <_false source={graphic.source} style={tmp7.avatar} resizeMode="cover" accessible={false} />;
+      const tmp19 = jsx(FastImageDefault, { source: graphic.source, style: tmp7.avatar, resizeMode: "cover", accessible: false });
       cResult[4] = graphic.source;
       cResult[5] = tmp7.avatar;
       cResult[6] = tmp19;
@@ -82,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagGraphic(a
         }
         return tmp12;
       }
-      const tmp15 = <_false source={graphic.source} style={tmp7.image} resizeMode="contain" accessible={false} />;
+      const tmp15 = jsx(FastImageDefault, { source: graphic.source, style: tmp7.image, resizeMode: "contain", accessible: false });
       cResult[7] = graphic.source;
       cResult[8] = tmp7.image;
       cResult[9] = tmp15;
@@ -120,15 +119,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagGraphic(a
     }
   }
   const obj = TagGroupTypes;
-  const tmp4 = closure_6(obj.getTagGraphicDimension(size), color);
+  const tmp4 = closure_5(obj.getTagGraphicDimension(size), color);
   if ("type" in graphic) {
     const type = graphic.type;
     if ("role" === type) {
-      return <React3 style={tmp4.roleDot} accessible={false} />;
+      return <View style={tmp4.roleDot} accessible={false} />;
     } else if ("avatar" === type) {
-      return <_false source={graphic.source} style={tmp4.avatar} resizeMode="cover" accessible={false} />;
+      return jsx(FastImageDefault, { source: graphic.source, style: tmp4.avatar, resizeMode: "cover", accessible: false });
     } else if ("image" === type) {
-      return <_false source={graphic.source} style={tmp4.image} resizeMode="contain" accessible={false} />;
+      return jsx(FastImageDefault, { source: graphic.source, style: tmp4.image, resizeMode: "contain", accessible: false });
     }
   }
   const tmp2Result = TagGroupTypes;
@@ -137,4 +136,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagGraphic(a
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/TagGroup/native/TagGraphic.native.tsx");
 
-export const TagGraphic = tmp4;
+export const TagGraphic = tmp3;

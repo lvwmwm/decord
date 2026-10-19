@@ -1,29 +1,29 @@
-// Module ID: 16782
-// Function ID: 16783
+// Module ID: 17465
+// Function ID: 17466
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 4748, 4760, 5966, 5116, 1085, 21, 5092, 587, 558, 576, 1200, 13157, 1126, 5088, 11176, 6157, 5391, 16781, 504, 14009, 12, 2]
+// Dependencies: [19, 17, 4843, 4855, 6222, 5215, 1087, 21, 5191, 587, 558, 576, 1202, 14082, 1128, 5187, 11562, 5128, 5491, 17464, 504, 14789, 12, 2]
 
-// Module 16782 (HomeDrawerGuildVoiceState)
+// Module 17465 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4748 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11176 */;
-import AvatarPile2 from "AvatarPile" /* 13157 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 14009 */;
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4843 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11562 */;
+import AvatarPile2 from "AvatarPile" /* 14082 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 14789 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5116 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5215 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -119,8 +119,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceU
         }
       }
       const obj3 = { style: tmp5, children: closure_11(AvatarPile, obj4) };
-      obj4 = { size: guildId(1200).AvatarSizes.XSMALL, names: tmp6, totalCount: tmp9, children: tmp10 };
-      AvatarPile = tmp(13157).AvatarPile;
+      obj4 = { size: guildId(1202).AvatarSizes.XSMALL, names: tmp6, totalCount: tmp9, children: tmp10 };
+      AvatarPile = tmp(14082).AvatarPile;
       const tmp16 = closure_11(View, obj3);
       cResult[11] = tmp6;
       cResult[12] = tmp10;
@@ -192,7 +192,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveTa
   const tmp4 = closure_15();
   ({ tag, tagText } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const str = intl.string(intl2.t.dI3q4h);
     const formatted = str.toUpperCase();
     cResult[0] = formatted;

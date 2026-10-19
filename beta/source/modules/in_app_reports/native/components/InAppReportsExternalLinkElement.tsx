@@ -1,30 +1,34 @@
-// Module ID: 13579
-// Function ID: 13580
+// Module ID: 14359
+// Function ID: 14360
 // Name: InAppReportsExternalLinkElement
-// Dependencies: [17, 21, 5092, 558, 576, 6663, 5088, 1126, 4806, 6188, 13580, 8577, 2]
+// Dependencies: [17, 21, 5191, 587, 558, 576, 6940, 5187, 1128, 4901, 6465, 14360, 8857, 2]
 
-// Module 13579 (InAppReportsExternalLinkElement)
+// Module 14359 (InAppReportsExternalLinkElement)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import LinkingDefault from "Linking" /* 4806 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6663 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1128 */;
+import LinkingDefault from "Linking" /* 4901 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6940 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
+let obj2;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let closure_6 = createStyles.createStyles({ linksContainer: { flex: 1, alignSelf: "stretch", paddingHorizontal: 16 }, headerText: { marginBottom: 8 } });
+let obj = { linksContainer: obj2 };
+obj2 = { flex: 1, alignSelf: "stretch", paddingHorizontal: 16, gap: nativeDefault.space.PX_8 };
+let closure_6 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalLinksElement(elements) {
   let items;
   let stringResult;
   let obj = react;
-  const cResult = obj.c(14);
+  const cResult = obj.c(13);
   elements = elements.elements;
   const tmp4 = closure_6();
   const obj2 = useTypeConsolidationTextTransform;
@@ -53,84 +57,75 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalLink
           tmp6 = cResult[1];
         }
         if (cResult[3] === typeConsolidationEyebrow) {
+          let tmp11;
+          let tmp15;
           if (cResult[4] === tmp6) {
-            let tmp11;
-            let tmp15;
-            if (cResult[5] === tmp4.headerText) {
-              tmp11 = cResult[6];
-            }
-            if (cResult[7] !== elements) {
-              let tmp17;
-              const _Symbol2 = Symbol;
-              if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-                const fn2 = function f(data, arg1) {
-                  const obj = { data: data.data };
-                  return closure_1_4(closure_1_7, obj, "external-link-" + arg1);
-                };
-                cResult[9] = fn2;
-                tmp17 = fn2;
-              } else {
-                tmp17 = cResult[9];
-              }
-              const mapped = elements.map(tmp17);
-              cResult[7] = elements;
-              cResult[8] = mapped;
-              tmp15 = mapped;
-            } else {
-              tmp15 = cResult[8];
-            }
-            if (cResult[10] === tmp4.linksContainer) {
-              if (cResult[11] === tmp11) {
-                let tmp19;
-                if (cResult[12] === tmp15) {
-                  tmp19 = cResult[13];
-                }
-                return tmp19;
-              }
-            }
-            const obj3 = { style: tmp10, children: items };
-            items = [tmp11, tmp15];
-            const tmp22 = hasOwnProperty(View, obj3);
-            cResult[10] = tmp4.linksContainer;
-            cResult[11] = tmp11;
-            cResult[12] = tmp15;
-            cResult[13] = tmp22;
-            tmp19 = tmp22;
+            tmp11 = cResult[5];
           }
+          if (cResult[6] !== elements) {
+            let tmp17;
+            const _Symbol2 = Symbol;
+            if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+              const fn2 = function y(data, arg1) {
+                const obj = { data: data.data };
+                return closure_1_4(closure_1_7, obj, "external-link-" + arg1);
+              };
+              cResult[8] = fn2;
+              tmp17 = fn2;
+            } else {
+              tmp17 = cResult[8];
+            }
+            const mapped = elements.map(tmp17);
+            cResult[6] = elements;
+            cResult[7] = mapped;
+            tmp15 = mapped;
+          } else {
+            tmp15 = cResult[7];
+          }
+          if (cResult[9] === tmp4.linksContainer) {
+            if (cResult[10] === tmp11) {
+              let tmp19;
+              if (cResult[11] === tmp15) {
+                tmp19 = cResult[12];
+              }
+              return tmp19;
+            }
+          }
+          const obj4 = { style: tmp10, children: items };
+          items = [tmp11, tmp15];
+          const tmp22 = hasOwnProperty(View, obj4);
+          cResult[9] = tmp4.linksContainer;
+          cResult[10] = tmp11;
+          cResult[11] = tmp15;
+          cResult[12] = tmp22;
+          tmp19 = tmp22;
         }
         let tmp13Result = !tmp6;
         if (tmp13Result) {
-          let headerText;
-          const Text = tmp(5088).Text;
+          const obj6 = { style: null, variant: null, color: "text-default", accessibilityRole: "header", children: stringResult };
+          ({ style: obj3.style, variant: obj3.variant } = typeConsolidationEyebrow);
+          const Text = tmp(5187).Text;
           const tmp13 = React3;
           if (null != typeConsolidationEyebrow.style) {
-            const items1 = [tmp4.headerText, typeConsolidationEyebrow.style];
-            headerText = items1;
+            const intl2 = tmp(1128).intl;
+            stringResult = intl2.string(tmp(1128).t.hvVgAZ);
           } else {
-            headerText = tmp4.headerText;
-          }
-          const obj4 = { style: headerText, variant: typeConsolidationEyebrow.variant, color: "text-default", accessibilityRole: "header", children: stringResult };
-          if (null != typeConsolidationEyebrow.style) {
-            const intl2 = tmp(1126).intl;
-            stringResult = intl2.string(tmp(1126).t.hvVgAZ);
-          } else {
-            const intl = tmp(1126).intl;
+            const intl = tmp(1128).intl;
             const str2 = intl.string(intl3.t.hvVgAZ);
             stringResult = str2.toUpperCase();
           }
-          tmp13Result = tmp13(Text, obj4);
+          tmp13Result = tmp13(Text, obj6);
         }
         cResult[3] = typeConsolidationEyebrow;
         cResult[4] = tmp6;
-        cResult[5] = tmp4.headerText;
-        cResult[6] = tmp13Result;
+        cResult[5] = tmp13Result;
         tmp11 = tmp13Result;
       }
     }
   }
   return null;
 }) : (function ExternalLinksElement(elements) {
-  let items1;
+  let items;
   let stringResult;
   elements = elements.elements;
   const tmp = closure_6();
@@ -141,38 +136,32 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalLink
       if (null != elements.find((data) => data.data.is_localized)) {
         const someResult = elements.some((data) => data.data.is_header_hidden);
         let tmp5Result = !someResult;
-        const obj2 = { style: tmp.linksContainer, children: items1 };
+        const obj3 = { style: tmp.linksContainer, children: items };
         const tmp10 = View;
         const tmp9 = hasOwnProperty;
         if (!someResult) {
-          let headerText;
-          const Text = tmp2(5088).Text;
+          const obj5 = { style: null, variant: null, color: "text-default", accessibilityRole: "header", children: stringResult };
+          ({ style: obj2.style, variant: obj2.variant } = typeConsolidationEyebrow);
+          const Text = tmp2(5187).Text;
           const tmp5 = React3;
           if (null != typeConsolidationEyebrow.style) {
-            const items = [tmp.headerText, typeConsolidationEyebrow.style];
-            headerText = items;
+            const intl2 = tmp2(1128).intl;
+            stringResult = intl2.string(tmp2(1128).t.hvVgAZ);
           } else {
-            headerText = tmp.headerText;
-          }
-          const obj3 = { style: headerText, variant: typeConsolidationEyebrow.variant, color: "text-default", accessibilityRole: "header", children: stringResult };
-          if (null != typeConsolidationEyebrow.style) {
-            const intl2 = tmp2(1126).intl;
-            stringResult = intl2.string(tmp2(1126).t.hvVgAZ);
-          } else {
-            const intl = tmp2(1126).intl;
+            const intl = tmp2(1128).intl;
             const str = intl.string(intl3.t.hvVgAZ);
             stringResult = str.toUpperCase();
           }
-          tmp5Result = tmp5(Text, obj3);
+          tmp5Result = tmp5(Text, obj5);
         }
-        items1 = [
+        items = [
           tmp5Result,
           elements.map((data, index) => {
                   const obj = { data: data.data };
                   return closure_1_4(closure_1_7, obj, "external-link-" + index);
                 })
         ];
-        return tmp9(tmp10, obj2);
+        return tmp9(tmp10, obj3);
       }
     }
   }
@@ -204,8 +193,8 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Externa
     }
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { IconComponent: url(13580).LinkExternalMediumIcon };
-      const TableRowIcon = tmp(6188).TableRowIcon;
+      const obj2 = { IconComponent: url(14360).LinkExternalMediumIcon };
+      const TableRowIcon = tmp(6465).TableRowIcon;
       const tmp9 = closure_4(TableRowIcon, obj2);
       cResult[2] = tmp9;
       tmp7 = tmp9;
@@ -222,7 +211,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Externa
       }
     }
     const obj3 = { label: link_text, subLabel: link_description, trailing: tmp7, onPress: tmp5, arrow: false, accessibilityRole: "link" };
-    const tmp12 = closure_4(url(8577).RowButton, obj3);
+    const tmp12 = closure_4(url(8857).RowButton, obj3);
     cResult[3] = link_description;
     cResult[4] = link_text;
     cResult[5] = tmp5;
@@ -249,9 +238,9 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Externa
       arrow: false,
       accessibilityRole: "link"
     };
-    const RowButton = url(8577).RowButton;
-    obj2 = { IconComponent: url(13580).LinkExternalMediumIcon };
-    TableRowIcon = url(6188).TableRowIcon;
+    const RowButton = url(8857).RowButton;
+    obj2 = { IconComponent: url(14360).LinkExternalMediumIcon };
+    TableRowIcon = url(6465).TableRowIcon;
     tmp3 = closure_4(RowButton, obj);
   }
   return tmp3;

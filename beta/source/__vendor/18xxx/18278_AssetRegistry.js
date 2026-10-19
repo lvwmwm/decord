@@ -1,10 +1,10 @@
 // Module ID: 18278
 // Function ID: 18279
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 18278 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/verification", width: 180, height: 160, scales: [1], hash: "39e83a7f9fd6f4ad0c8041d592ca008c", name: "img_verify_phone_dark_theme", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/voice_panel/native/images", width: 24, height: 24, scales: [2, 3], hash: "66b9e24621d91b1d766a73314d18bc9f", name: "xbox", type: "png" });

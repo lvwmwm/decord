@@ -1,19 +1,19 @@
-// Module ID: 11482
-// Function ID: 11483
+// Module ID: 12628
+// Function ID: 12629
 // Name: AppealIngestionSpeedBump
-// Dependencies: [19, 17, 7532, 7508, 1085, 21, 5092, 558, 576, 504, 11475, 11483, 1126, 11481, 11484, 11500, 11501, 5088, 2]
+// Dependencies: [19, 17, 7803, 7779, 1087, 21, 5191, 558, 576, 504, 12621, 12629, 1128, 12627, 12630, 12646, 12647, 5187, 2]
 
-// Module 11482 (AppealIngestionSpeedBump)
+// Module 12628 (AppealIngestionSpeedBump)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1085 */;
-import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 11484 */;
-import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 11500 */;
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11501 */;
+import Constants from "Constants" /* 1087 */;
+import AppealIngestionActivitySummaryDefault from "AppealIngestionActivitySummary" /* 12630 */;
+import AppealIngestionPolicySummaryDefault from "AppealIngestionPolicySummary" /* 12646 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 12647 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7532 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7508 */;
+import SafetyHubStore from "SafetyHubStore" /* 7803 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7779 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,13 +70,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   }
   const tmpResult = emitAppealIngestionEvent(504);
   let stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const useSafetyHubClassification = emitAppealIngestionEvent(11475).useSafetyHubClassification;
-  emitAppealIngestionEvent(11475);
+  const useSafetyHubClassification = emitAppealIngestionEvent(12621).useSafetyHubClassification;
+  emitAppealIngestionEvent(12621);
   if (stateFromStores == null) {
     stateFromStores = EMPTY_STRING_SNOWFLAKE_ID;
   }
   const safetyHubClassification = useSafetyHubClassification(stateFromStores);
-  const tmpResult4 = emitAppealIngestionEvent(11483);
+  const tmpResult4 = emitAppealIngestionEvent(12629);
   emitAppealIngestionEvent = tmpResult4.useEmitAppealIngestionEvent();
   ({ isDsaEligible, classification } = safetyHubClassification);
   let str;
@@ -113,16 +113,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
     arr2 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
-    const stringResult = intl.string(emitAppealIngestionEvent(1126).t["C5q+pW"]);
+    const intl = tmp(1128).intl;
+    const stringResult = intl.string(emitAppealIngestionEvent(1128).t["C5q+pW"]);
     cResult[4] = stringResult;
     tmp15 = stringResult;
   } else {
     tmp15 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(emitAppealIngestionEvent(1126).t.URt7VI);
+    const intl2 = tmp(1128).intl;
+    const stringResult1 = intl2.string(emitAppealIngestionEvent(1128).t.URt7VI);
     cResult[5] = stringResult1;
     tmp17 = stringResult1;
   } else {
@@ -130,7 +130,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { headerText: tmp15, subHeaderText: tmp17 };
-    const tmp21 = closure_8(emitAppealIngestionEvent(11481).AppealIngestionModalHeader, obj2);
+    const tmp21 = closure_8(emitAppealIngestionEvent(12627).AppealIngestionModalHeader, obj2);
     cResult[6] = tmp21;
     tmp19 = tmp21;
   } else {
@@ -183,9 +183,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
               if (cResult[25] !== isDsaEligible) {
                 let tmp54 = isDsaEligible;
                 if (tmp54) {
-                  const obj5 = { variant: "text-xs/normal", children: intl7.format(emitAppealIngestionEvent(1126).t.WMUgCX, {}) };
-                  const Text = tmp(5088).Text;
-                  intl7 = tmp(1126).intl;
+                  const obj5 = { variant: "text-xs/normal", children: intl7.format(emitAppealIngestionEvent(1128).t.WMUgCX, {}) };
+                  const Text = tmp(5187).Text;
+                  intl7 = tmp(1128).intl;
                   tmp54 = closure_8(Text, obj5);
                 }
                 cResult[25] = isDsaEligible;
@@ -217,7 +217,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
               items1 = [tmp19, ];
               const obj7 = { style: tmp4.container, children: items2 };
               items2 = [tmp22, tmp26, tmp30, tmp36, tmp42, tmp48, tmp53];
-              const AppealIngestionModalScreen = tmp(11481).AppealIngestionModalScreen;
+              const AppealIngestionModalScreen = tmp(12627).AppealIngestionModalScreen;
               items1[1] = closure_9(View, obj7);
               const tmp59 = closure_9(AppealIngestionModalScreen, obj6);
               cResult[27] = tmp4.container;
@@ -235,14 +235,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
           let tmp49 = !isCoppa;
           if (tmp49) {
             const obj8 = {
-              text: intl6.string(emitAppealIngestionEvent(1126).t["Vtyn/7"]),
+              text: intl6.string(emitAppealIngestionEvent(1128).t["Vtyn/7"]),
               url: str,
               onPress() {
                           return emitAppealIngestionEvent(hasOwnProperty.ClickLearnMoreLink);
                         }
             };
             const tmp52 = AppealIngestionExternalLinkDefault;
-            intl6 = tmp(1126).intl;
+            intl6 = tmp(1128).intl;
             tmp49 = closure_8(tmp52, obj8);
           }
           cResult[21] = emitAppealIngestionEvent;
@@ -254,14 +254,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
         let tmp43 = isDeveloperClassification;
         if (tmp43) {
           const obj9 = {
-            text: intl5.string(emitAppealIngestionEvent(1126).t.n9cZTH),
+            text: intl5.string(emitAppealIngestionEvent(1128).t.n9cZTH),
             url: constants.APP_APPEAL_LINK,
             onPress() {
                       return emitAppealIngestionEvent(hasOwnProperty.ClickAppAppealLink);
                     }
           };
           const tmp46 = AppealIngestionExternalLinkDefault;
-          intl5 = tmp(1126).intl;
+          intl5 = tmp(1128).intl;
           tmp43 = closure_8(tmp46, obj9);
         }
         cResult[18] = emitAppealIngestionEvent;
@@ -273,14 +273,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
     let tmp37 = isSpam && !isCoppa;
     if (tmp37) {
       const obj10 = {
-        text: intl4.string(emitAppealIngestionEvent(1126).t.NBsJvm),
+        text: intl4.string(emitAppealIngestionEvent(1128).t.NBsJvm),
         url: constants.SPAM_LINK,
         onPress() {
               return emitAppealIngestionEvent(hasOwnProperty.ClickSpamWebformLink);
             }
       };
       const tmp40 = AppealIngestionExternalLinkDefault;
-      intl4 = tmp(1126).intl;
+      intl4 = tmp(1128).intl;
       tmp37 = closure_8(tmp40, obj10);
     }
     cResult[14] = emitAppealIngestionEvent;
@@ -292,14 +292,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   let tmp31 = isCoppa;
   if (tmp31) {
     const obj11 = {
-      text: intl3.string(emitAppealIngestionEvent(1126).t["gJs+kf"]),
+      text: intl3.string(emitAppealIngestionEvent(1128).t["gJs+kf"]),
       url: constants.AGE_VERIFICATION_LINK,
       onPress() {
           return emitAppealIngestionEvent(hasOwnProperty.ClickAgeVerificationLink);
         }
     };
     const tmp34 = AppealIngestionExternalLinkDefault;
-    intl3 = tmp(1126).intl;
+    intl3 = tmp(1128).intl;
     tmp31 = closure_8(tmp34, obj11);
   }
   cResult[11] = emitAppealIngestionEvent;
@@ -350,11 +350,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
   if (flagged_content == null) {
     flagged_content = [];
   }
-  const intl = tmp2(1126).intl;
+  const intl = tmp2(1128).intl;
   const stringResult = intl.string(require("intl").t["C5q+pW"]);
-  const intl2 = tmp2(1126).intl;
+  const intl2 = tmp2(1128).intl;
   const stringResult1 = intl2.string(require("intl").t.URt7VI);
-  const AppealIngestionModalScreen = tmp2(11481).AppealIngestionModalScreen;
+  const AppealIngestionModalScreen = tmp2(12627).AppealIngestionModalScreen;
   const items1 = [closure_8(require("AppealIngestionModal").AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
   let tmp10Result = flagged_content.length > 0;
   const obj2 = { style: tmp.container, children: items2 };
@@ -376,7 +376,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
         }
     };
     const tmp14Result = AppealIngestionExternalLinkDefault;
-    intl3 = tmp2(1126).intl;
+    intl3 = tmp2(1128).intl;
     tmp10Result3 = tmp10(tmp14Result, obj5);
   }
   items2[2] = tmp10Result3;
@@ -392,7 +392,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
         }
     };
     const tmp14Result4 = AppealIngestionExternalLinkDefault;
-    intl4 = tmp2(1126).intl;
+    intl4 = tmp2(1128).intl;
     isSpam = tmp10(tmp14Result4, obj6);
   }
   items2[3] = isSpam;
@@ -405,7 +405,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
         }
     };
     const tmp14Result5 = AppealIngestionExternalLinkDefault;
-    intl5 = tmp2(1126).intl;
+    intl5 = tmp2(1128).intl;
     isDeveloperClassification = tmp10(tmp14Result5, obj7);
   }
   items2[4] = isDeveloperClassification;
@@ -419,14 +419,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
         }
     };
     const tmp14Result6 = AppealIngestionExternalLinkDefault;
-    intl6 = tmp2(1126).intl;
+    intl6 = tmp2(1128).intl;
     tmp10Result4 = tmp10(tmp14Result6, obj8);
   }
   items2[5] = tmp10Result4;
   if (isDsaEligible) {
     const obj9 = { variant: "text-xs/normal", children: intl7.format(require("intl").t.WMUgCX, {}) };
-    const Text = tmp2(5088).Text;
-    intl7 = tmp2(1126).intl;
+    const Text = tmp2(5187).Text;
+    intl7 = tmp2(1128).intl;
     isDsaEligible = tmp10(Text, obj9);
   }
   const obj10 = { children: items1 };

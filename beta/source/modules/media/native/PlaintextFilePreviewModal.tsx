@@ -1,29 +1,29 @@
-// Module ID: 10742
-// Function ID: 10743
+// Module ID: 11158
+// Function ID: 11159
 // Name: PlaintextFilePreviewModal
-// Dependencies: [109, 32, 19, 17, 1096, 21, 5092, 587, 5934, 10741, 8260, 10743, 4806, 558, 576, 10745, 5088, 1126, 6154, 6823, 6201, 9358, 7089, 9237, 10604, 2]
+// Dependencies: [109, 32, 19, 17, 1098, 21, 5191, 587, 6190, 11157, 8537, 11159, 4901, 558, 576, 11161, 5187, 1128, 6433, 7101, 6478, 9662, 7365, 9543, 10929, 2]
 
-// Module 10742 (PlaintextFilePreviewModal)
+// Module 11158 (PlaintextFilePreviewModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1096 */;
-import intl3 from "intl" /* 1126 */;
-import LinkingDefault from "Linking" /* 4806 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6154 */;
-import NavigatorHeader from "NavigatorHeader" /* 6201 */;
-import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 8260 */;
-import ContextMenu from "ContextMenu" /* 9358 */;
-import openPlaintextFilePreview from "openPlaintextFilePreview" /* 10741 */;
-import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 10743 */;
-import useDownloadedFile from "useDownloadedFile" /* 10745 */;
+import Constants from "Constants" /* 1098 */;
+import intl3 from "intl" /* 1128 */;
+import LinkingDefault from "Linking" /* 4901 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6433 */;
+import NavigatorHeader from "NavigatorHeader" /* 6478 */;
+import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 8537 */;
+import ContextMenu from "ContextMenu" /* 9662 */;
+import openPlaintextFilePreview from "openPlaintextFilePreview" /* 11157 */;
+import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11159 */;
+import useDownloadedFile from "useDownloadedFile" /* 11161 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,8 +68,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Plaint
     let tmp38;
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const Text = tmp(5088).Text;
-      const intl = tmp(1126).intl;
+      const Text = tmp(5187).Text;
+      const intl = tmp(1128).intl;
       const tmp37 = <Text variant="text-md/normal" color="text-muted">{intl.string(intl3.t.fEptJP)}</Text>;
       cResult[0] = tmp37;
       first = tmp37;
@@ -186,8 +186,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Plaint
   const fileContents = downloadedFile.fileContents;
   if (downloadedFile.hadError) {
     ({ variant: "text-md/normal", color: "text-muted", children: intl.string(intl3.t.fEptJP) });
-    const Text = tmp2(5088).Text;
-    intl = tmp2(1126).intl;
+    const Text = tmp2(5187).Text;
+    intl = tmp2(1128).intl;
     return <metroImportAll style={tmp.errorContainer}>{null}</metroImportAll>;
   } else if (null == fileContents) {
     return <metroImportAll style={tmp.loadingContainer}>{jsx(ActivityIndicator_ActivityIndicator.ActivityIndicator, {})}</metroImportAll>;
@@ -394,11 +394,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlaintextFil
     intl = intl3.intl;
     CheckmarkSmallIcon = undefined;
     if (first) {
-      CheckmarkSmallIcon = tmp(6823).CheckmarkSmallIcon;
+      CheckmarkSmallIcon = tmp(7101).CheckmarkSmallIcon;
     }
     items = [obj, ];
     let obj2 = {
-      label: intl2.string(tmp(1126).t["1WjMbC"]),
+      label: intl2.string(tmp(1128).t["1WjMbC"]),
       action() {
         const obj = url(closure_2[10]);
         if (null == obj.isSuspiciousDownload(closure_1_0)) {
@@ -410,7 +410,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlaintextFil
         }
       }
     };
-    intl2 = tmp(1126).intl;
+    intl2 = tmp(1128).intl;
     items[1] = obj2;
     return items;
   }, items);
@@ -447,7 +447,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlaintextFil
     obj3 = NavigatorHeader;
     return obj;
   }, items1);
-  return jsx(url(10604).Modal, { screens: memo1, initialRouteName: constants.PREVIEW });
+  return jsx(url(10929).Modal, { screens: memo1, initialRouteName: constants.PREVIEW });
 });
 const result = size.fileFinishedImporting("modules/media/native/PlaintextFilePreviewModal.tsx");
 

@@ -1,18 +1,18 @@
-// Module ID: 14816
-// Function ID: 14817
+// Module ID: 15579
+// Function ID: 15580
 // Name: VoiceMessagesPlaybackManager
-// Dependencies: [17, 5081, 2116, 14817, 2002, 584, 5303, 1382, 2]
+// Dependencies: [17, 5181, 2119, 15580, 2004, 584, 5403, 1384, 2]
 // Exports: handleVoiceMessageDeleted, pauseCurrentAudioPlayer, playCurrentAudioPlayer
 
-// Module 14816 (VoiceMessagesPlaybackManager)
+// Module 15579 (VoiceMessagesPlaybackManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import react_nativeDefault from "react-native" /* 5303 */;
-import react_nativeDefault2 from "react-native" /* 14817 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import LifecycleManager from "LifecycleManager" /* 2002 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import react_nativeDefault from "react-native" /* 5403 */;
+import react_nativeDefault2 from "react-native" /* 15580 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
 
 const AppState = react_native.AppState;

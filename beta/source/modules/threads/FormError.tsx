@@ -1,12 +1,12 @@
-// Module ID: 17367
-// Function ID: 17368
+// Module ID: 17749
+// Function ID: 17750
 // Name: threads/FormError
-// Dependencies: [1126, 7877, 2]
+// Dependencies: [1128, 8149, 2]
 // Exports: makeApiNameRequiredError, makeAutomodViolationError, makeEmptyMessageError, makeEmptyTitleError, renderError
 
-// Module 17367 (threads/FormError)
-import intl2 from "intl" /* 1126 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 7877 */;
+// Module 17749 (threads/FormError)
+import intl2 from "intl" /* 1128 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 8149 */;
 import size from "module_2" /* 2 */;
 
 const FormSubmitErrorType = { EmptyContent: 0, [0]: "EmptyContent", AutomodViolation: 1, [1]: "AutomodViolation", ApiValidation: 2, [2]: "ApiValidation" };

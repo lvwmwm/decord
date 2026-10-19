@@ -1,12 +1,12 @@
-// Module ID: 13036
-// Function ID: 13037
+// Module ID: 13964
+// Function ID: 13965
 // Name: VoicePanelSpoilerAlert
-// Dependencies: [19, 21, 558, 576, 5305, 6098, 5889, 1126, 5305, 2]
+// Dependencies: [19, 21, 558, 576, 5405, 6377, 6145, 1128, 5405, 2]
 
-// Module 13036 (VoicePanelSpoilerAlert)
-import intl5 from "intl" /* 1126 */;
-import AlertModal2 from "AlertModal" /* 5305 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
+// Module 13964 (VoicePanelSpoilerAlert)
+import intl5 from "intl" /* 1128 */;
+import AlertModal2 from "AlertModal" /* 5405 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6377 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -17,7 +17,7 @@ let dependencyMap;
 let c3;
 let closure_4;
 let tmp;
-const SelectedChannelActionCreatorsDefault = tmp(5889);
+const SelectedChannelActionCreatorsDefault = tmp(6145);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSpoilerAlert(channelId) {
   let dismissModalCallback;

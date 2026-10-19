@@ -1,10 +1,10 @@
 // Module ID: 10046
 // Function ID: 10047
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 10046 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/media_keyboard/native/images", width: 200, height: 80, scales: [2, 3], hash: "e341a934511095337dabafab8c60034b", name: "empty_photos", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "a31dcad33e17aebec69c2bc953578b8c", name: "ChevronLargeLeftIcon", type: "png" });

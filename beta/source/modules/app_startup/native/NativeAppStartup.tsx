@@ -1,36 +1,38 @@
-// Module ID: 18011
-// Function ID: 18012
+// Module ID: 18404
+// Function ID: 18405
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 18012, 18014, 17, 18037, 2130, 2116, 1999, 7178, 18038, 1085, 9, 3, 18721, 7209, 18722, 11345, 504, 1272, 1257, 18724, 2003, 1382, 10, 18725, 14805, 584, 18726, 7192, 1255, 18727, 18728, 11033, 510, 1265, 14452, 2108, 9246, 2141, 1165, 18729, 2000, 8446, 18731, 14649, 7357, 18749, 18750, 18751, 9312, 7205, 7193, 4978, 1205, 5081, 14699, 17738, 17739, 1111, 14449, 7177, 14703, 14717, 6078, 18752, 6335, 7179, 7193, 2]
+// Dependencies: [32, 5, 18405, 18407, 17, 18430, 2133, 2119, 2001, 7449, 18431, 1087, 9, 3, 19117, 1384, 7480, 19118, 10, 19120, 19121, 12521, 504, 1274, 1259, 19122, 2005, 19123, 15568, 584, 19124, 7463, 1257, 19125, 19126, 11028, 510, 1267, 15220, 2111, 9552, 2144, 1167, 19127, 2002, 8724, 19129, 15417, 7627, 19147, 19148, 19149, 9618, 7476, 7464, 5074, 1207, 5181, 15467, 18122, 18123, 1113, 15217, 7448, 15471, 15484, 6362, 19150, 6612, 7450, 7464, 2]
 // Exports: init, initHeadlessTask
 
-// Module 18011 (NativeAppStartup)
+// Module 18404 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
+import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import Storage4 from "Storage" /* 510 */;
-import TokenManagerAll from "TokenManager" /* 1111 */;
-import SentryUtilsDefault from "SentryUtils" /* 1255 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 2108 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2130 */;
-import timeRequireDefault from "timeRequire" /* 7209 */;
-import Future from "Future" /* 9246 */;
-import react_nativeDefault from "react-native" /* 14452 */;
+import TokenManagerAll from "TokenManager" /* 1113 */;
+import SentryUtilsDefault from "SentryUtils" /* 1257 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 2111 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2133 */;
+import Future from "Future" /* 9552 */;
+import react_nativeDefault from "react-native" /* 15220 */;
+import DeepLinkEventMapping from "DeepLinkEventMapping" /* 19120 */;
+import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 19121 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_18012 from "module_18012" /* 18012 */;
-import superagentPatch from "superagentPatch" /* 18014 */;
+import module_18405 from "module_18405" /* 18405 */;
+import superagentPatch from "superagentPatch" /* 18407 */;
 import react_native from "react-native" /* 17 */;
-import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 18037 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import AppStateStore from "AppStateStore" /* 1999 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7178 */;
-import ManagerRegistry from "ManagerRegistry" /* 18038 */;
-import Constants from "Constants" /* 1085 */;
+import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 18430 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import AppStateStore from "AppStateStore" /* 2001 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7449 */;
+import ManagerRegistry from "ManagerRegistry" /* 18431 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let DeepLinkManager, Full, HeadlessRan, InstallReferrer, _require, c2, c5, c6, currentState, importDefault, paths;
+let DeepLinkManager, HeadlessRan, InstallReferrer, _require, c1, c2, c5, c6, currentState, importDefault, paths;
 
 let c10;
 let c9;
@@ -43,6 +45,30 @@ let closure_19;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
+let tmp3;
+const timeRequireDefault = tmp3(7480);
+function handleLinkingEventURL(url, arg1) {
+  let logger;
+  let closure_1 = arg1;
+  url = url.url;
+  promise.then(() => {
+    let deeplink;
+    let isColdStart;
+    logger.log("Handling URL: " + url);
+    obj = AppStartPerformanceDefault;
+    obj.mark("\u2757", "Handle URL " + url);
+    let tmp9 = "appsflyer" !== url.source;
+    const mapDeepLinkEvent = DeepLinkEventMapping.mapDeepLinkEvent;
+    DeepLinkEventMapping;
+    const tmp = url;
+    if (tmp9) {
+      tmp9 = linkFromAppsFlyer(tmp);
+    }
+    ({ deeplink, isColdStart } = mapDeepLinkEvent(url, closure_1, tmp9));
+    mapDeepLinkEvent(url, closure_1, tmp9);
+    timeRequireDefault("handleURL", () => closure_1_0(paths[17])).default(deeplink, isColdStart);
+  });
+}
 function linkFromAppsFlyer(url) {
   try {
     const _URL = URL;
@@ -72,8 +98,8 @@ let obj = function _getInitialURLs() {
         throw value;
       } else if (arg0 === 2) {
         c3 = 3;
-        const obj5 = { value, done: true };
-        return obj5;
+        const obj6 = { value, done: true };
+        return obj6;
       } else {
         closure_1 = value;
         if (null != closure_1) {
@@ -87,19 +113,26 @@ let obj = function _getInitialURLs() {
               } else {
                 AppsFlyer = DeeplinkSource.AppsFlyer;
               }
-              const obj6 = { url: closure_1.url, source: AppsFlyer };
-              value.push(obj6);
+              const obj7 = { url: closure_1.url, source: AppsFlyer };
+              value.push(obj7);
             } else {
-              const obj7 = { url: closure_1.url, source: closure_129_0(closure_129_3[14]).DeeplinkSource.OS };
+              const obj8 = { url: closure_1.url, source: closure_129_0(closure_129_3[14]).DeeplinkSource.OS };
               const push = value.push;
-              push(obj7);
+              push(obj8);
             }
           }
         }
-        c2 = 2;
-        c3 = 1;
-        const obj8 = { value: closure_129_8.getInitialURL(), done: false };
-        return obj8;
+        const obj2 = closure_129_0(closure_129_3[15]);
+        if (obj2.isAndroid()) {
+          c3 = 3;
+          const obj9 = { value, done: true };
+          return obj9;
+        } else {
+          c2 = 2;
+          c3 = 1;
+          const obj10 = { value: closure_129_8.getInitialURL(), done: false };
+          return obj10;
+        }
       }
     } else if (arg0 === 1) {
       c3 = 3;
@@ -111,9 +144,9 @@ let obj = function _getInitialURLs() {
     } else {
       const url = value;
       if (null != url) {
-        const obj9 = { url, source: closure_129_0(closure_129_3[14]).DeeplinkSource.ReactNativeLinking };
+        const obj11 = { url, source: closure_129_0(closure_129_3[14]).DeeplinkSource.ReactNativeLinking };
         const push2 = value.push;
-        push2(obj9);
+        push2(obj11);
       }
     }
     return value;
@@ -123,11 +156,11 @@ let obj = function _getInitialURLs() {
 function sharedInit() {
   let _true;
   let closure_1;
-  const f151473 = () => _true(handleNotification[31]);
+  const f153324 = () => _true(handleNotification[33]);
   function handleNotification(arg0) {
     const tmp = c0;
     if (tmp) {
-      timeRequireDefault("receiveNotification", f151473).default(arg0, false);
+      timeRequireDefault("receiveNotification", f153324).default(arg0, false);
       TTITrackerDefault.extraProperties.tapped_notification = true;
     } else {
       closure_1.push(arg0);
@@ -136,7 +169,7 @@ function sharedInit() {
   function handleLocalNotification(getData) {
     const tmp = c0;
     if (tmp) {
-      const result = timeRequireDefault("LocalPushNotificationActionCreators", () => _true(handleNotification[32])).receiveLocalNotification(getData);
+      const result = timeRequireDefault("LocalPushNotificationActionCreators", () => _true(handleNotification[34])).receiveLocalNotification(getData);
     } else {
       closure_2.push(getData);
     }
@@ -152,98 +185,90 @@ function sharedInit() {
   TelemetryRingLifecycle.initialize();
   let obj2 = require("websocketTelemetryHook");
   const result2 = obj2.installWebsocketTelemetryHook((arg0) => {
-    obj = closure_1(handleNotification[22]);
+    obj = closure_1(handleNotification[26]);
     obj.append(constants.WEBSOCKET_MESSAGE_RECEIVED, arg0);
   });
-  const listener = closure_8.addEventListener("url", (event) => {
-    const url = event.url;
-    obj = url(handleNotification[23]);
-    let isAndroidResult = obj.isAndroid();
-    if (isAndroidResult) {
-      isAndroidResult = url === url;
-    }
-    if (!isAndroidResult) {
-      promise.then(() => {
-        let DeeplinkSource;
-        let tmp5;
-        closure_2_20.log("Handling URL: " + url);
-        obj = closure_1(handleNotification[24]);
-        obj.mark("\u2757", "Handle URL " + url);
-        const obj2 = { url, source: tmp5 ? DeeplinkSource.AppsFlyer : DeeplinkSource.OS };
-        tmp5 = linkFromAppsFlyer(url);
-        DeeplinkSource = url(handleNotification[14]).DeeplinkSource;
-        closure_1(handleNotification[15])("handleURL", () => closure_1_0(paths[16])).default(obj2, false);
-      });
-    }
-  });
+  let obj3 = require("PlatformUtils");
+  if (obj3.isAndroid()) {
+    const self = this;
+    const self2 = this;
+    const obj4 = new closure_7(closure_10.DeepLinkManager);
+    obj4.addListener("nativeDeepLink", (url) => {
+      closure_1_25.processNative(url.url, url.source, url.isDeferred, url.isColdStart);
+    });
+  } else {
+    const listener = closure_8.addEventListener("url", (event) => {
+      closure_1_25.process(event.url);
+    });
+  }
   closure_9.ignoreLogs(["Non-serializable values were found in the navigation state", "Overriding previous layout animation with new one before the first began", "Check the render method of `SceneView`", "Open debugger to view warnings."]);
-  let obj3 = require("BundleUpdater");
-  const initialBundleDownloaded = obj3.getInitialBundleDownloaded();
+  const tmpResult = tmp(tmp2[21]);
+  const initialBundleDownloaded = tmpResult.getInitialBundleDownloaded();
   initialBundleDownloaded.then((versionRequired) => {
     const tmp = null != versionRequired && null != versionRequired.versionRequired;
     if (tmp) {
       const _HermesInternal = HermesInternal;
       closure_1_20.verbose("Get initial downloaded bundle " + versionRequired.versionRequired);
-      obj = closure_1(handleNotification[25]);
+      obj = closure_1(handleNotification[27]);
       obj.prepareUpdate(versionRequired.versionRequired);
     }
   });
-  const obj4 = require("BundleUpdater");
-  const listener1 = obj4.addEventListener("downloaded", (event) => {
+  const tmpResult6 = tmp(tmp2[21]);
+  const listener1 = tmpResult6.addEventListener("downloaded", (event) => {
     const versionRequired = event.versionRequired;
     closure_1_20.verbose("Bundle Event: bundle downloaded for " + versionRequired);
-    obj = closure_1(handleNotification[25]);
+    obj = closure_1(handleNotification[27]);
     obj.prepareUpdate(versionRequired);
   });
-  const obj5 = require("BundleUpdater");
-  const initialOtaUpdateChecked = obj5.getInitialOtaUpdateChecked();
+  const tmpResult7 = tmp(tmp2[21]);
+  const initialOtaUpdateChecked = tmpResult7.getInitialOtaUpdateChecked();
   initialOtaUpdateChecked.then((metrics) => {
     metrics = metrics.metrics;
     closure_1_20.verbose("Initial OTA update check metrics", metrics);
     for (const item10010 of metrics) {
-      obj = closure_1(handleNotification[17]);
+      obj = closure_1(handleNotification[21]);
       let emitOtaMetricResult = obj.emitOtaMetric(item10010);
       continue;
     }
   });
-  const obj6 = require("BundleUpdater");
-  const listener2 = obj6.addEventListener("otaUpdateChecked", (event) => {
+  const tmpResult8 = tmp(tmp2[21]);
+  const listener2 = tmpResult8.addEventListener("otaUpdateChecked", (event) => {
     const metrics = event.metrics;
     closure_1_20.verbose("OTA update check metrics", metrics);
     for (const item10010 of metrics) {
-      obj = closure_1(handleNotification[17]);
+      obj = closure_1(handleNotification[21]);
       let emitOtaMetricResult = obj.emitOtaMetric(item10010);
       continue;
     }
   });
-  const obj7 = new closure_7(require("react-native"));
-  obj7.addListener("appWillEnterForeground", () => {
-    obj = closure_1(handleNotification[27]);
+  const obj9 = new closure_7(tmp(tmp2[28]));
+  obj9.addListener("appWillEnterForeground", () => {
+    obj = closure_1(handleNotification[29]);
     obj.dispatch({ type: "APP_STATE_UPDATE_WILL_BECOME_ACTIVE" });
   });
   if (AppStateStore.getState() !== currentState.currentState) {
-    tmp(tmp2[15])("handleAppStateChange", () => _true(handleNotification[28])).default(obj8.currentState);
+    tmp(tmp2[16])("handleAppStateChange", () => _true(handleNotification[30])).default(obj10.currentState);
   } else {
-    const tmp4Result = tmp4(tmp2[23]);
+    const tmp4Result = tmp4(tmp2[15]);
     if (!tmp4Result.isAndroid()) {
-      const tmp15 = c21;
-      if (!tmp15) {
+      const tmp20 = c21;
+      if (!tmp20) {
         if (currentState.currentState === constants.ACTIVE) {
           c21 = true;
-          tmp(tmp2[15])("trackAppOpened", () => _true(handleNotification[29])).trackAppOpened("launcher");
+          tmp(tmp2[16])("trackAppOpened", () => _true(handleNotification[31])).trackAppOpened("launcher");
         }
       }
     }
   }
-  const listener3 = obj8.addEventListener("change", (event) => {
+  const listener3 = obj10.addEventListener("change", (event) => {
     const appStateChangeStart = closure_1(handleNotification[12]).imports.appStateChangeStart;
     appStateChangeStart.record();
-    obj = closure_1(handleNotification[24]);
+    obj = closure_1(handleNotification[18]);
     obj.resumeTracing();
-    const obj2 = closure_1(handleNotification[30]);
+    const obj2 = closure_1(handleNotification[32]);
     const obj3 = { message: "App state changed to " + event, category: "appState" };
     obj2.addBreadcrumb(obj3);
-    closure_1(handleNotification[15])("handleAppStateChange", () => _true(handleNotification[28])).default(event);
+    closure_1(handleNotification[16])("handleAppStateChange", () => _true(handleNotification[30])).default(event);
     const appStateChangeEnd = closure_1(handleNotification[12]).imports.appStateChangeEnd;
     appStateChangeEnd.record();
   });
@@ -262,22 +287,22 @@ function sharedInit() {
   _require = false;
   importDefault = [];
   let closure_2 = [];
-  const tmpResult = tmp(tmp2[33]);
-  const result3 = tmpResult.addNotificationEventListener("notification", (arg0) => {
+  const tmpResult9 = tmp(tmp2[35]);
+  const result3 = tmpResult9.addNotificationEventListener("notification", (arg0) => {
     const state = AppStateStore.getState();
     closure_20.log("Push notification received, the app state is " + state);
     if (state !== constants.ACTIVE) {
       const tmp4 = c0;
       if (tmp4) {
-        timeRequireDefault("receiveNotification", f151473).default(arg0, false);
+        timeRequireDefault("receiveNotification", f153324).default(arg0, false);
         TTITrackerDefault.extraProperties.tapped_notification = true;
       } else {
         closure_1.push(arg0);
       }
     }
   });
-  const tmpResult2 = tmp(tmp2[33]);
-  const result4 = tmpResult2.addNotificationEventListener("localNotification", handleLocalNotification);
+  const tmpResult10 = tmp(tmp2[35]);
+  const result4 = tmpResult10.addNotificationEventListener("localNotification", handleLocalNotification);
   return {
     onStorageInitialize() {
       let c0 = true;
@@ -353,7 +378,7 @@ obj = function _trackFirstLaunched() {
         } else {
           obj5.referrer = value;
           track(APP_FIRST_LAUNCHED, obj5);
-          const Storage = closure_130_0(closure_130_3[34]).Storage;
+          const Storage = closure_130_0(closure_130_3[36]).Storage;
           const result = Storage.set(closure_130_15.APP_FIRST_LAUNCHED, false);
         }
         c6 = 3;
@@ -427,7 +452,7 @@ obj = function _loadStorage() {
             loadStorage.recordEnd();
             const parseStorage = closure_129_1(closure_129_3[12]).parseStorage;
             parseStorage.measureAsync(async () => {
-              const Storage = closure_0(c3[34]).Storage;
+              const Storage = closure_0(c3[36]).Storage;
               return Storage.parse(closure_1_0);
             });
             c3 = 0;
@@ -500,7 +525,7 @@ obj = function _initializeIntl() {
               tmp = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -513,7 +538,7 @@ obj = function _initializeIntl() {
               c3 = 2;
               c4 = 1;
               const obj7 = { value: obj8.preloadAllIntlMessageFiles(), done: false };
-              obj8 = closure_130_0(closure_130_3[39]);
+              obj8 = closure_130_0(closure_130_3[41]);
               return obj7;
             }
           } else if (2 === c3) {
@@ -527,7 +552,7 @@ obj = function _initializeIntl() {
               c3 = 3;
               c4 = 1;
               const obj10 = { value: obj5.waitForAllDefaultIntlMessagesLoaded(), done: false };
-              obj5 = closure_130_0(closure_130_3[40]);
+              obj5 = closure_130_0(closure_130_3[42]);
               return obj10;
             }
           } else if (3 === c3) {
@@ -540,12 +565,12 @@ obj = function _initializeIntl() {
             } else {
               const tmp33 = log;
               if (tmp33) {
-                const obj2 = closure_130_1(closure_130_3[24]);
+                const obj2 = closure_130_1(closure_130_3[18]);
                 obj2.markAndLog(closure_130_20, "\u{1F30E}", "i18n loaded");
               }
               c3 = 4;
               c4 = 1;
-              const obj12 = { value: closure_130_0(closure_130_3[42])(closure_130_3[41], closure_130_3.paths), done: false };
+              const obj12 = { value: closure_130_0(closure_130_3[44])(closure_130_3[43], closure_130_3.paths), done: false };
               return obj12;
             }
           } else if (arg0 === 1) {
@@ -573,6 +598,81 @@ obj = function _initializeIntl() {
   return obj(...arguments);
 };
 obj = function _init() {
+  let Full;
+  obj = _asyncToGenerator(async (arg0, value) => {
+    function initializeApp() {
+      return closure_1_39(...arguments);
+    }
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      let c3;
+      try {
+        c4 = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let closure_0 = tmp;
+            if (None !== Full.Full) {
+              c3 = 1;
+              c1 = 2;
+              c4 = 1;
+              const obj5 = { value: initializeApp(), done: false };
+              return obj5;
+            } else {
+              const obj2 = SentryUtilsDefault;
+              obj2.addBreadcrumb({ message: "Init called when already initialized" });
+            }
+          }
+        } else if (1 === tmp4) {
+          c3 = 0;
+          closure_128_25.finishInitialUrls();
+          throw closure_2;
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 0;
+          closure_128_25.finishInitialUrls();
+          c4 = 3;
+          obj = { value, done: true };
+          return obj;
+        } else {
+          c3 = 0;
+          closure_128_25.finishInitialUrls();
+        }
+        c4 = 3;
+        return { value: "IconComponent", done: null };
+      } catch (tmp19) {
+        closure_2 = tmp19;
+        if (0 === c3) {
+          c4 = 3;
+          throw tmp19;
+        } else {
+          c1 = 1;
+        }
+      }
+    }
+  });
+  return obj(...arguments);
+};
+obj = function _initializeApp() {
   obj = _asyncToGenerator(async function(arg0, value) {
     function trackFirstLaunched() {
       return closure_1_27(...arguments);
@@ -591,8 +691,6 @@ obj = function _init() {
       }
     } else {
       try {
-        let closure_0;
-        let onStorageInitialize;
         let closure_2;
         let closure_4;
         let closure_5;
@@ -608,6 +706,8 @@ obj = function _init() {
         let closure_17;
         let totalMentionCount;
         let closure_19;
+        let closure_0;
+        let onStorageInitialize;
         c3 = 2;
         if (0 === c2) {
           if (arg0 === 1) {
@@ -619,8 +719,6 @@ obj = function _init() {
             return obj3;
           } else {
             let closure_1 = tmp2;
-            closure_0 = undefined;
-            onStorageInitialize = undefined;
             closure_2 = undefined;
             paths = undefined;
             closure_4 = undefined;
@@ -639,41 +737,36 @@ obj = function _init() {
             closure_17 = undefined;
             totalMentionCount = undefined;
             closure_19 = undefined;
-            if (Full !== Full.Full) {
-              closure_0 = tmp168;
-              Full = tmp229.Full;
-              onStorageInitialize = undefined;
-              if (Full !== Full.HeadlessRan) {
-                onStorageInitialize = sharedInit().onStorageInitialize;
-              }
-              const obj14 = require("PlatformUtils");
-              const isAndroidResult = obj14.isAndroid();
-              const obj15 = require("DeviceOrientation");
-              if (isAndroidResult) {
-                obj15.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
-              } else {
-                let result = obj15.lockOrientationForiOS();
-              }
-              require("TTITracker").didBackgroundApp = currentState.currentState === constants.BACKGROUND;
-              const loadStorageStart = require("TTITracker").imports.loadStorageStart;
-              loadStorageStart.record();
-              const all2 = Promise.all;
-              const items = [getInitialURLs(), , , , ];
-              const obj16 = require("PushNotification");
-              const initialNotification = obj16.getInitialNotification();
-              items[1] = initialNotification.catch(() => null);
-              items[2] = loadStorage();
-              items[3] = loadKvStorage();
-              const promise3 = require("asyncRequire")(paths[44], paths.paths);
-              items[4] = promise3.then((result) => result.default());
-              c2 = 1;
-              c3 = 1;
-              const obj8 = { value: all2(items), done: false };
-              return obj8;
-            } else {
-              const obj13 = require("SentryUtils");
-              obj13.addBreadcrumb({ message: "Init called when already initialized" });
+            closure_0 = tmp227;
+            Full = closure_2_33.Full;
+            onStorageInitialize = undefined;
+            if (Full !== closure_2_33.HeadlessRan) {
+              onStorageInitialize = sharedInit().onStorageInitialize;
             }
+            const obj13 = require("PlatformUtils");
+            const isAndroidResult = obj13.isAndroid();
+            const obj14 = require("DeviceOrientation");
+            if (isAndroidResult) {
+              obj14.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
+            } else {
+              let result = obj14.lockOrientationForiOS();
+            }
+            require("TTITracker").didBackgroundApp = currentState.currentState === constants.BACKGROUND;
+            const loadStorageStart = require("TTITracker").imports.loadStorageStart;
+            loadStorageStart.record();
+            const all2 = Promise.all;
+            const items = [getInitialURLs(), , , , ];
+            const obj15 = require("PushNotification");
+            const initialNotification = obj15.getInitialNotification();
+            items[1] = initialNotification.catch(() => null);
+            items[2] = loadStorage();
+            items[3] = loadKvStorage();
+            const promise3 = require("asyncRequire")(paths[46], paths.paths);
+            items[4] = promise3.then((result) => result.default());
+            c2 = 1;
+            c3 = 1;
+            const obj8 = { value: all2(items), done: false };
+            return obj8;
           }
         } else {
           if (1 === c2) {
@@ -691,10 +784,10 @@ obj = function _init() {
               closure_5 = paths[1];
               const loadStorageEnd = closure_129_1(closure_129_3[12]).imports.loadStorageEnd;
               loadStorageEnd.record();
-              const obj20 = closure_129_0(closure_129_3[23]);
-              if (obj20.isAndroid()) {
-                if (closure_129_0(closure_129_3[45]).isTTITest) {
-                  currentState = closure_129_0(closure_129_3[46]).default;
+              const obj19 = closure_129_0(closure_129_3[15]);
+              if (obj19.isAndroid()) {
+                if (closure_129_0(closure_129_3[47]).isTTITest) {
+                  currentState = closure_129_0(closure_129_3[48]).default;
                   c2 = 2;
                   c3 = 1;
                   const obj11 = { value: currentState.yieldConfig(), done: false };
@@ -716,8 +809,8 @@ obj = function _init() {
             throw value;
           } else if (arg0 === 2) {
             c3 = 3;
-            const obj17 = { value, done: true };
-            return obj17;
+            const obj16 = { value, done: true };
+            return obj16;
           } else {
             closure_14 = value;
             closure_15 = closure_129_4(closure_14, 5);
@@ -730,16 +823,18 @@ obj = function _init() {
             closure_16.registerListener();
             const server = closure_17.loadServer();
             totalMentionCount.addChangeListener(() => {
-              obj = closure_1(paths[33]);
+              obj = closure_1(paths[35]);
               const result = obj.setApplicationIconBadgeNumber(totalMentionCount.getTotalMentionCount());
             });
-            const tmp216 = closure_0;
-            if (!tmp216) {
+            const tmp213 = closure_0;
+            if (!tmp213) {
               closure_19.init();
             }
-            closure_129_0(closure_129_3[66]);
-            obj = closure_129_0(closure_129_3[67]);
+            closure_129_0(closure_129_3[68]);
+            obj = closure_129_0(closure_129_3[69]);
             const sessionHeartbeatScheduler = obj.initSessionHeartbeatScheduler();
+            c3 = 3;
+            return { value: "IconComponent", done: null };
           }
           const tmp20 = closure_0;
           if (tmp20) {
@@ -747,7 +842,7 @@ obj = function _init() {
           } else {
             resolved = closure_129_35({ log: true });
           }
-          const obj4 = closure_129_1(closure_129_3[24]);
+          const obj4 = closure_129_1(closure_129_3[18]);
           obj4.markAndLog(closure_129_20, "\u{1F3C3}", "The initial promise has resolved");
           const tmp33 = null != closure_4 && closure_4.length > 0;
           if (tmp33) {
@@ -756,56 +851,56 @@ obj = function _init() {
           if (null != closure_5) {
             closure_129_20.log("initialNotification", closure_5);
           }
-          const Storage = closure_129_0(closure_129_3[34]).Storage;
+          const Storage = closure_129_0(closure_129_3[36]).Storage;
           if (null == Storage.get(closure_129_16)) {
-            const Storage2 = closure_129_0(closure_129_3[34]).Storage;
+            const Storage2 = closure_129_0(closure_129_3[36]).Storage;
             const _Date = Date;
             const result2 = Storage2.set(closure_129_16, Date.now());
           }
           trackFirstLaunched();
           const tmp60 = closure_0;
           if (!tmp60) {
-            closure_129_40();
+            closure_129_41();
             if (onStorageInitialize != null) {
               onStorageInitialize();
             }
           }
-          closure_129_1(closure_129_3[15])("DispatcherBridge", () => {
-            closure_1_0(paths[47]);
+          closure_129_1(closure_129_3[16])("DispatcherBridge", () => {
+            closure_1_0(paths[49]);
           });
           const tmp71 = closure_0;
           if (tmp71) {
-            const obj6 = closure_129_1(closure_129_3[24]);
+            const obj6 = closure_129_1(closure_129_3[18]);
             obj6.markAndLog(closure_129_20, "\u{1F3C3}", "Flux already initialized.");
           } else {
-            const obj5 = closure_129_1(closure_129_3[24]);
+            const obj5 = closure_129_1(closure_129_3[18]);
             obj5.time("\u{1F3C3}", "Flux.initialize()", () => {
-              obj = closure_1_1(paths[18]);
+              obj = closure_1_1(paths[22]);
               obj.initialize();
               closure_1_20.verbose("Flux has initialized");
             });
           }
-          closure_129_1(closure_129_3[48])();
-          const obj7 = closure_129_0(closure_129_3[49]);
+          closure_129_1(closure_129_3[50])();
+          const obj7 = closure_129_0(closure_129_3[51]);
           const result3 = obj7.setupLibdiscoreTimersMonitor();
-          const item = closure_4.forEach((url) => {
-            url = url.url;
-            closure_1_1(paths[15])("handleURL", () => closure_1_0(paths[16])).default(url, true);
+          const item = closure_4.forEach((item) => {
+            closure_1_1(paths[16])("handleURL", () => closure_1_0(paths[17])).default(item, true);
           });
+          closure_129_25.finishInitialUrls();
           closure_8 = false;
           if (null != closure_5) {
-            closure_9 = closure_129_1(closure_129_3[15])("receiveNotification", () => closure_1_0(paths[31])).default;
+            closure_9 = closure_129_1(closure_129_3[16])("receiveNotification", () => closure_1_0(paths[33])).default;
             closure_129_1(closure_129_3[12]).extraProperties.tapped_notification = true;
             closure_8 = closure_9(closure_5, true);
           }
-          const tmp102 = closure_8;
-          if (!tmp102) {
+          const tmp104 = closure_8;
+          if (!tmp104) {
             channelId = closure_129_12.getChannelId();
             if (null != channelId) {
-              const obj18 = { channelId, isPreload: true, skipLocalFetch: true, fetchKey: closure_129_0(closure_129_3[51]).INITIAL_MESSAGE_FETCH_KEY };
-              const fetchMessages = closure_129_1(closure_129_3[50]).fetchMessages;
-              const tmp110 = closure_129_1(closure_129_3[50]);
-              const messages = fetchMessages(obj18);
+              const obj17 = { channelId, isPreload: true, skipLocalFetch: true, fetchKey: closure_129_0(closure_129_3[53]).INITIAL_MESSAGE_FETCH_KEY };
+              const fetchMessages = closure_129_1(closure_129_3[52]).fetchMessages;
+              const tmp112 = closure_129_1(closure_129_3[52]);
+              const messages = fetchMessages(obj17);
             }
           }
           const loadMiniCacheStart = closure_129_1(closure_129_3[12]).imports.loadMiniCacheStart;
@@ -814,29 +909,29 @@ obj = function _init() {
           const self2 = this;
           promise = new Promise((arg0) => {
             closure_0 = arg0;
-            promise = closure_0(paths[42])(paths[52], paths.paths);
+            promise = closure_0(paths[44])(paths[54], paths.paths);
             promise.then((result) => {
               let _default = result.default;
-              obj = closure_2_0(paths[53]);
+              obj = closure_2_0(paths[55]);
               return _default.loadCacheAsync(closure_2_4(obj.computeInitialNavigationState(), 1)[0], async () => {
-                const _default = closure_0(paths[54]).default;
-                const _default2 = closure_0(paths[55]).default;
-                obj = closure_0(paths[56]);
+                const _default = closure_0(paths[56]).default;
+                const _default2 = closure_0(paths[57]).default;
+                obj = closure_0(paths[58]);
                 obj.updateSaturation(_default2.saturation);
-                const obj2 = closure_0(paths[57]);
+                const obj2 = closure_0(paths[59]);
                 obj2.updateVisualRefresh(true);
-                const obj3 = closure_0(paths[58]);
+                const obj3 = closure_0(paths[60]);
                 obj3.updateTheme(_default.theme);
                 closure_1_0();
               });
             });
           });
           promise2 = null;
-          const obj9 = closure_129_2(closure_129_3[59]);
+          const obj9 = closure_129_2(closure_129_3[61]);
           if (null != obj9.getToken()) {
             promise2 = Promise.resolve();
           } else {
-            closure_13 = closure_129_0(closure_129_3[60]);
+            closure_13 = closure_129_0(closure_129_3[62]);
             const result4 = closure_13.beginLoadedExperimentsTimeout();
             promise2 = closure_13.getPromise();
           }
@@ -845,17 +940,15 @@ obj = function _init() {
           const nextPromise = allPromises.then(() => {
             closure_1_32.resolve();
           });
-          const items2 = [closure_129_0(closure_129_3[42])(closure_129_3[61], closure_129_3.paths), closure_129_0(closure_129_3[42])(closure_129_3[62], closure_129_3.paths), closure_129_0(closure_129_3[42])(closure_129_3[63], closure_129_3.paths), closure_129_0(closure_129_3[42])(closure_129_3[64], closure_129_3.paths), closure_129_0(closure_129_3[42])(closure_129_3[65], closure_129_3.paths), resolved];
+          const items2 = [closure_129_0(closure_129_3[44])(closure_129_3[63], closure_129_3.paths), closure_129_0(closure_129_3[44])(closure_129_3[64], closure_129_3.paths), closure_129_0(closure_129_3[44])(closure_129_3[65], closure_129_3.paths), closure_129_0(closure_129_3[44])(closure_129_3[66], closure_129_3.paths), closure_129_0(closure_129_3[44])(closure_129_3[67], closure_129_3.paths), resolved];
           c2 = 3;
           c3 = 1;
-          const obj19 = { value: all(items2), done: false };
-          return obj19;
+          const obj18 = { value: all(items2), done: false };
+          return obj18;
         }
+      } catch (tmp191) {
         c3 = 3;
-        return { value: "IconComponent", done: null };
-      } catch (tmp194) {
-        c3 = 3;
-        throw tmp194;
+        throw tmp191;
       }
     }
   });
@@ -911,13 +1004,13 @@ obj = function _initHeadlessTask() {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            closure_129_40();
+            closure_129_41();
             onStorageInitialize();
-            closure_129_0(closure_129_3[68]);
-            closure_129_0(closure_129_3[47]);
-            const obj8 = closure_129_1(closure_129_3[18]);
+            closure_129_0(closure_129_3[70]);
+            closure_129_0(closure_129_3[49]);
+            const obj8 = closure_129_1(closure_129_3[22]);
             obj8.initialize();
-            promise = closure_129_0(closure_129_3[42])(closure_129_3[52], closure_129_3.paths);
+            promise = closure_129_0(closure_129_3[44])(closure_129_3[54], closure_129_3.paths);
             promise.then((result) => {
               const _default = result.default;
               const cacheAsync = _default.loadCacheAsync({ page: "other" }, async () => {
@@ -925,7 +1018,7 @@ obj = function _initHeadlessTask() {
               });
             });
             const all2 = Promise.all;
-            const items1 = [closure_129_0(closure_129_3[42])(closure_129_3[65], closure_129_3.paths)];
+            const items1 = [closure_129_0(closure_129_3[44])(closure_129_3[67], closure_129_3.paths)];
             c2 = 2;
             c3 = 1;
             const obj5 = { value: all2(items1), done: false };
@@ -942,7 +1035,7 @@ obj = function _initHeadlessTask() {
           closure_1 = value;
           const first = closure_129_4(closure_1, 1)[0];
           first.init();
-          closure_129_1(closure_129_3[48])();
+          closure_129_1(closure_129_3[50])();
         }
         c3 = 3;
         return { value: "IconComponent", done: null };
@@ -979,7 +1072,7 @@ function initializeTokenStorage() {
   const Storage3 = tmp(510).Storage;
   const obj5 = { storageHasToken: null != Storage3.get(closure_17), tokenManagerHasToken: tmp12 };
   obj.verbose("Token manager has initialized", obj5);
-  closure_1_31();
+  __initData();
 }
 ({ AppState: metroRequire, NativeEventEmitter: metroImportDefault, Linking: metroImportAll, LogBox: c9, NativeModules: c10 } = react_native);
 let closure_11 = IntlLoaderStore.subscribeToIntlLoadingSuccess;
@@ -988,8 +1081,9 @@ const loadImports = TTITrackerDefault.loadImports;
 loadImports.recordEnd();
 let closure_20 = new LoggerDefault("index.native.tsx");
 let c21 = false;
-let c25 = null;
 const tmp10 = new LoggerDefault("index.native.tsx");
+let closure_25 = new DeepLinkProcessorDefault(handleLinkingEventURL);
+const tmp11 = new DeepLinkProcessorDefault(handleLinkingEventURL);
 const future = new Future.Future();
 obj = { None: 0, [0]: "None", HeadlessRan: 1, [1]: "HeadlessRan", Full: 2, [2]: "Full" };
 const None = obj.None;

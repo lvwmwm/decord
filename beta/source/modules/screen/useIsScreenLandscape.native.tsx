@@ -1,14 +1,14 @@
-// Module ID: 8322
-// Function ID: 8323
+// Module ID: 8600
+// Function ID: 8601
 // Name: useIsScreenLandscape
-// Dependencies: [19, 1498, 558, 576, 1500, 2]
+// Dependencies: [19, 1500, 558, 576, 1502, 2]
 // Exports: getIsScreenLandscape
 
-// Module 8322 (useIsScreenLandscape)
+// Module 8600 (useIsScreenLandscape)
 import react2 from "react" /* 576 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1500 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1502 */;
 import react from "react" /* 19 */;
-import DimensionsStore from "DimensionsStore" /* 1498 */;
+import DimensionsStore from "DimensionsStore" /* 1500 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

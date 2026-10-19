@@ -1,10 +1,10 @@
 // Module ID: 13482
 // Function ID: 13483
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 13482 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/collectibles/native/images", width: 20.5, height: 20, scales: [2, 3], hash: "1852cc5a5de0318feebc04948ebfbffa", name: "img_collectibles_shop", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/forums/native/images", width: 120, height: 80, scales: [2, 3], hash: "80a29bcae35fa62f1f957cb01201db17", name: "img_forum_empty_state_light", type: "png" });

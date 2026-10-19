@@ -1,13 +1,13 @@
-// Module ID: 11004
-// Function ID: 11005
+// Module ID: 11394
+// Function ID: 11395
 // Name: StageChannelParticipantUtils
-// Dependencies: [1102, 4962, 1126, 2]
+// Dependencies: [1104, 5057, 1128, 2]
 // Exports: participantMemberInfo
 
-// Module 11004 (StageChannelParticipantUtils)
-import DurationsDefault from "Durations" /* 1102 */;
-import intl6 from "intl" /* 1126 */;
-import UserUtils from "UserUtils" /* 4962 */;
+// Module 11394 (StageChannelParticipantUtils)
+import DurationsDefault from "Durations" /* 1104 */;
+import intl6 from "intl" /* 1128 */;
+import UserUtils from "UserUtils" /* 5057 */;
 import size from "module_2" /* 2 */;
 
 const DAY = DurationsDefault.Millis.DAY;
@@ -16,7 +16,7 @@ const result = size.fileFinishedImporting("modules/stage_channels/StageChannelPa
 export const participantMemberInfo = function participantMemberInfo(participant) {
   const obj = UserUtils;
   if (obj.isNewUser(participant.user)) {
-    const intl5 = tmp(1126).intl;
+    const intl5 = tmp(1128).intl;
     return intl5.string(intl6.t.VaCdhQ);
   } else {
     let stringResult;
@@ -26,8 +26,8 @@ export const participantMemberInfo = function participantMemberInfo(participant)
       joinedAt = member.joinedAt;
     }
     if (null == joinedAt) {
-      const intl4 = tmp(1126).intl;
-      stringResult = intl4.string(tmp(1126).t.CQmzib);
+      const intl4 = tmp(1128).intl;
+      stringResult = intl4.string(tmp(1128).t.CQmzib);
     } else {
       if (null != participant.member) {
         if (participant.member.roles.length > 0) {
@@ -37,8 +37,8 @@ export const participantMemberInfo = function participantMemberInfo(participant)
             name = role.name;
           }
           if (name == null) {
-            const intl3 = tmp(1126).intl;
-            name = intl3.string(tmp(1126).t["97/NdO"]);
+            const intl3 = tmp(1128).intl;
+            name = intl3.string(tmp(1128).t["97/NdO"]);
           }
           stringResult = name;
         }
@@ -50,11 +50,11 @@ export const participantMemberInfo = function participantMemberInfo(participant)
       const date = new Date();
       const time = date.getTime();
       if (time - Date.parse(joinedAt) < DAY) {
-        const intl2 = tmp(1126).intl;
-        stringResult = intl2.string(tmp(1126).t.IKE48n);
+        const intl2 = tmp(1128).intl;
+        stringResult = intl2.string(tmp(1128).t.IKE48n);
       } else {
-        const intl = tmp(1126).intl;
-        stringResult = intl.string(tmp(1126).t.u0gUWt);
+        const intl = tmp(1128).intl;
+        stringResult = intl.string(tmp(1128).t.u0gUWt);
       }
     }
     return stringResult;

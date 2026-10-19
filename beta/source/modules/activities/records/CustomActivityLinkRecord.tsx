@@ -1,11 +1,11 @@
-// Module ID: 13045
-// Function ID: 13046
+// Module ID: 13973
+// Function ID: 13974
 // Name: CustomActivityLinkRecord
-// Dependencies: [13046, 8270, 2]
+// Dependencies: [13974, 8547, 2]
 
-// Module 13045 (CustomActivityLinkRecord)
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8270 */;
-import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 13046 */;
+// Module 13973 (CustomActivityLinkRecord)
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8547 */;
+import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 13974 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/activities/records/CustomActivityLinkRecord.tsx");

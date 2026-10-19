@@ -1,13 +1,13 @@
-// Module ID: 8848
-// Function ID: 8849
+// Module ID: 9125
+// Function ID: 9126
 // Name: useIsEmptyRTCConnection
-// Dependencies: [502, 5110, 7424, 558, 576, 504, 2]
+// Dependencies: [502, 5209, 7694, 558, 576, 504, 2]
 
-// Module 8848 (useIsEmptyRTCConnection)
+// Module 9125 (useIsEmptyRTCConnection)
 import react from "react" /* 576 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7424 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7694 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 15725
-// Function ID: 15726
+// Module ID: 16483
+// Function ID: 16484
 // Name: UserSettingsLocale
-// Dependencies: [5, 19, 17, 2130, 2129, 21, 5092, 587, 5260, 558, 576, 504, 1126, 6262, 6157, 15726, 6814, 6263, 2]
+// Dependencies: [5, 19, 17, 2133, 2132, 21, 5191, 587, 5360, 558, 576, 504, 1128, 6539, 5128, 16484, 7092, 6540, 2]
 
-// Module 15725 (UserSettingsLocale)
+// Module 16483 (UserSettingsLocale)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2130 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import TableRadioRow2 from "TableRadioRow" /* 6262 */;
-import flags from "flags" /* 15726 */;
+import intl2 from "intl" /* 1128 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2133 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import TableRadioRow2 from "TableRadioRow" /* 6539 */;
+import flags from "flags" /* 16484 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2129 */;
-import createStyles from "createStyles" /* 5092 */;
+import LocaleStore from "LocaleStore" /* 2132 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -114,7 +114,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   const content = tmp4.content;
   if (cResult[2] !== tmp4.flagImage) {
-    const tmpResult2 = tmp(1126);
+    const tmpResult2 = tmp(1128);
     const availableLocales = tmpResult2.getAvailableLocales();
     const mapped = availableLocales.map((localizedName) => {
       let name;
@@ -151,7 +151,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     cResult[9] = tmp16;
     tmp13 = tmp16;
   }
-  const SafeAreaPaddingView = tmp(6814).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp(7092).SafeAreaPaddingView;
   const tmp12 = <SafeAreaPaddingView bottom>{null}</SafeAreaPaddingView>;
   cResult[4] = stateFromStores;
   cResult[5] = tmp9;

@@ -1,14 +1,14 @@
-// Module ID: 11988
-// Function ID: 11989
+// Module ID: 12938
+// Function ID: 12939
 // Name: MemberActionUtils
-// Dependencies: [2125, 6926, 7911, 4736, 558, 576, 6927, 573, 1403, 2]
+// Dependencies: [2128, 7202, 8183, 4831, 558, 576, 7203, 573, 1405, 2]
 
-// Module 11988 (MemberActionUtils)
-import GuildMemberConstants from "GuildMemberConstants" /* 4736 */;
-import useIsNewMemberDefault from "useIsNewMember" /* 6927 */;
-import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6926 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 7911 */;
+// Module 12938 (MemberActionUtils)
+import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
+import useIsNewMemberDefault from "useIsNewMember" /* 7203 */;
+import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7202 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8183 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

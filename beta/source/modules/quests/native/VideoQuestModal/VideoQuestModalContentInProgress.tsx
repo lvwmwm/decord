@@ -1,39 +1,39 @@
-// Module ID: 15414
-// Function ID: 15415
+// Module ID: 16174
+// Function ID: 16175
 // Name: VideoQuestModalContentInProgress
-// Dependencies: [109, 32, 19, 17, 5972, 1096, 21, 683, 587, 15415, 5092, 558, 576, 1382, 9180, 4850, 5093, 1631, 15417, 15432, 4827, 6762, 15433, 15411, 15434, 5377, 6185, 5088, 15435, 6157, 5379, 9188, 7569, 1126, 8724, 10294, 6814, 9166, 12971, 15376, 8390, 5391, 15437, 10293, 15322, 15320, 13057, 9237, 15410, 5056, 15438, 2000, 9197, 7406, 9169, 9170, 9173, 5979, 7411, 5975, 7402, 8477, 15439, 9163, 15440, 5980, 2]
+// Dependencies: [109, 32, 19, 17, 6228, 1098, 21, 683, 587, 16175, 5191, 558, 576, 1384, 9487, 4945, 5192, 1633, 16177, 16192, 4922, 7039, 16193, 16171, 16194, 5477, 6462, 5187, 16195, 5128, 5479, 9495, 7840, 1128, 9001, 10605, 7092, 9473, 13902, 16138, 8668, 5491, 16197, 10604, 16084, 16080, 16082, 13985, 9543, 16170, 5155, 16198, 2002, 9504, 7676, 9476, 9477, 9480, 6235, 7681, 6231, 7672, 8755, 16199, 9470, 16200, 6236, 2]
 
-// Module 15414 (VideoQuestModalContentInProgress)
+// Module 16174 (VideoQuestModalContentInProgress)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1096 */;
-import intl5 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import timing from "timing" /* 5093 */;
-import QuestTypes from "QuestTypes" /* 5975 */;
-import AdCreativeType from "AdCreativeType" /* 5979 */;
-import AnalyticsActions from "AnalyticsActions" /* 7402 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8390 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 8477 */;
-import QuestUtils from "QuestUtils" /* 9163 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9166 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9169 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9170 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9173 */;
-import AssetUtils from "AssetUtils" /* 9180 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9188 */;
-import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 9237 */;
+import Constants from "Constants" /* 1098 */;
+import intl5 from "intl" /* 1128 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import timing from "timing" /* 5192 */;
+import QuestTypes from "QuestTypes" /* 6231 */;
+import AdCreativeType from "AdCreativeType" /* 6235 */;
+import AnalyticsActions from "AnalyticsActions" /* 7672 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7681 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8668 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 8755 */;
+import QuestUtils from "QuestUtils" /* 9470 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9473 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9476 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9477 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9480 */;
+import AssetUtils from "AssetUtils" /* 9487 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9495 */;
+import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 9543 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestConstants from "QuestConstants" /* 5972 */;
+import QuestConstants from "QuestConstants" /* 6228 */;
 import Fragment from "Fragment" /* 21 */;
 import module_683_mod from "module_683" /* 683 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,11 +46,11 @@ let metroImportAll;
 let obj2;
 let tmp;
 let unpackModuleId;
-const native = tmp(4827);
-const Pressables = tmp(6185);
-const VideoQuestUtils = tmp(12971);
-const QuestDockGestureContext = tmp(15376);
-const VideoQuestPlayer2 = tmp(15417);
+const native = tmp(4922);
+const Pressables = tmp(6462);
+const VideoQuestUtils = tmp(13902);
+const QuestDockGestureContext = tmp(16138);
+const VideoQuestPlayer2 = tmp(16177);
 let closure_3 = ["ref"];
 let closure_4 = ["ref"];
 let _objectWithoutProperties = _objectWithoutProperties_mod;
@@ -84,14 +84,14 @@ const contentInsets = { bottom: 158, top: 64, left: 16, right: 16 };
 const contentInsets2 = { bottom: 16, left: 16, right: 16 };
 let createStyles = createStyles_mod;
 let closure_24 = createStyles.createStyles((arg0) => {
-  let obj14;
-  let obj15;
+  let obj12;
+  let obj13;
   let obj3;
   let obj8;
   let rect;
   let rect1;
   let str;
-  const obj = { wrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, flex: 1 }, wrapperPortrait: obj3, videoLandscape: { width: "100%", position: "relative" }, videoLandscape9by16: { aspectRatio: 1.7777777777777777, flexShrink: 0 }, landscapeContentScroll: { flex: 1 }, landscapeContentScrollContent: { flexGrow: 1 }, videoLandscapeFullscreen: { flexGrow: 1, flexShrink: 1 }, videoWrapper: { borderRadius: nativeDefault.radii.lg, flexGrow: 0, flexShrink: 0, overflow: "hidden" }, videoWrapperLandscape: { flexGrow: 1, borderTopLeftRadius: nativeDefault.radii.none, borderTopRightRadius: nativeDefault.radii.none }, videoWrapperFullscreen: { borderRadius: nativeDefault.radii.none }, videoContentWrapper: { flexDirection: "column", pointerEvents: "box-none", flexGrow: 1, flexShrink: 0, justifyContent: "space-between", padding: nativeDefault.space.PX_16 }, videoContentWrapperLandscape: { padding: 0 }, videoContentWrapperPortrait: obj8, rewardContainer: { justifyContent: "center", flexGrow: 1, flexShrink: 0 }, rewardContentCentered: rect, modalBackground: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, questDetailsLandscape: { borderTopWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_24 }, questDetailsPrimary: { flexGrow: 0, flexShrink: 1 }, questDetailsSecondary: { flexGrow: 0, flexShrink: 0 }, footer: { paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_8 }, icon: { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE }, iconDisabled: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT }, closeButtonLandscape: rect1, gradientTop: obj14, gradientBottom: obj15, textShadow: { margin: -15, padding: 15, textShadowColor: nativeDefault.colors.BLACK, textShadowOffset: { width: 0, height: 0 }, textShadowRadius: 15 }, viewRewardBtn: { marginRight: "auto" }, playerThumbnail: size, cloudsBackground: { zIndex: -1 }, questDetailsSubheader: { opacity: 0.6 } };
+  const obj = { wrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, flex: 1 }, wrapperPortrait: obj3, videoLandscape: { width: "100%", position: "relative" }, videoLandscape9by16: { aspectRatio: 1.7777777777777777, flexShrink: 0 }, landscapeContentScroll: { flex: 1 }, landscapeContentScrollContent: { flexGrow: 1 }, videoLandscapeFullscreen: { flexGrow: 1, flexShrink: 1 }, videoWrapper: { borderRadius: nativeDefault.radii.lg, flexGrow: 0, flexShrink: 0, overflow: "hidden" }, videoWrapperLandscape: { flexGrow: 1, borderTopLeftRadius: nativeDefault.radii.none, borderTopRightRadius: nativeDefault.radii.none }, videoWrapperFullscreen: { borderRadius: nativeDefault.radii.none }, videoContentWrapper: { flexDirection: "column", pointerEvents: "box-none", flexGrow: 1, flexShrink: 0, justifyContent: "space-between", padding: nativeDefault.space.PX_16 }, videoContentWrapperLandscape: { padding: 0 }, videoContentWrapperPortrait: obj8, rewardContainer: { justifyContent: "center", flexGrow: 1, flexShrink: 0 }, rewardContentCentered: rect, modalBackground: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, questDetailsLandscape: { borderTopWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_24 }, questDetailsPrimary: { flexGrow: 0, flexShrink: 1 }, questDetailsSecondary: { flexGrow: 0, flexShrink: 0 }, footer: { paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_8 }, closeButtonLandscape: rect1, gradientTop: obj12, gradientBottom: obj13, textShadow: { margin: -15, padding: 15, textShadowColor: nativeDefault.colors.BLACK, textShadowOffset: { width: 0, height: 0 }, textShadowRadius: 15 }, viewRewardBtn: { marginRight: "auto" }, playerThumbnail: size, cloudsBackground: { zIndex: -1 }, questDetailsSubheader: { opacity: 0.6 } };
   ({ backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, flex: 1 });
   obj3 = { borderTopLeftRadius: nativeDefault.radii.lg, borderTopRightRadius: nativeDefault.radii.lg, justifyContent: str };
   str = "center";
@@ -109,12 +109,10 @@ let closure_24 = createStyles.createStyles((arg0) => {
   ({ backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST });
   ({ borderTopWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_24 });
   ({ paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_8 });
-  ({ color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE });
-  ({ color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT });
   rect1 = { position: "absolute", top: tmp(587).space.PX_16, left: tmp(587).space.PX_16 };
-  obj14 = { bottom: undefined, height: 70 };
+  obj12 = { bottom: undefined, height: 70 };
   const merged1 = Object.assign(React4.absoluteFillObject);
-  obj15 = { top: undefined, height: 150 };
+  obj13 = { top: undefined, height: 150 };
   const merged2 = Object.assign(React4.absoluteFillObject);
   ({ margin: -15, padding: 15, textShadowColor: nativeDefault.colors.BLACK, textShadowOffset: { width: 0, height: 0 }, textShadowRadius: 15 });
   size = { borderRadius: tmp(587).radii.lg, height: 96, width: "100%" };
@@ -161,7 +159,7 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
   ({ onNavigateToPostWatchVideo, onEnd, setIsFullscreen } = arg0);
   ({ externallyPaused, sourceQuestContent, hasCaptionAsset, hasTranscriptAsset, isShareable } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(1382);
+    const tmpResult = tmp(1384);
     const isAndroidResult = tmpResult.isAndroid();
     cResult[0] = isAndroidResult;
     first = isAndroidResult;
@@ -170,8 +168,8 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
   }
   const tmp6 = closure_24(first);
   if (cResult[1] !== quest) {
-    const tmpResult7 = tmp(9180);
-    const questAsset = tmpResult7.getQuestAsset(quest, tmp(9180).QuestAssetType.HERO);
+    const tmpResult7 = tmp(9487);
+    const questAsset = tmpResult7.getQuestAsset(quest, tmp(9487).QuestAssetType.HERO);
     cResult[1] = quest;
     cResult[2] = questAsset;
   }
@@ -220,7 +218,7 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
         closure_3(nativeDefault.space.PX_24 + nativeEvent.nativeEvent.layout.height);
       }
     }
-    const md = tmp(15415).QUEST_PROGRESS_DIAMETER_BY_SIZE.md;
+    const md = tmp(16175).QUEST_PROGRESS_DIAMETER_BY_SIZE.md;
     if (tmp14 == null) {
       class J {
         constructor(nativeEvent) {
@@ -230,7 +228,7 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     }
     const sum = md + tmp14;
     const sum1 = sum + 2 * setIsFullscreen(587).space.PX_16;
-    const tmpResult8 = tmp(4850);
+    const tmpResult8 = tmp(4945);
     const sharedValue = tmpResult8.useSharedValue(0);
     const tmp18 = setIsFullscreen;
     if (cResult[8] !== sharedValue) {
@@ -261,9 +259,9 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
       const obj2 = { duration };
       return withDelay(c16, obj.withTiming(sharedValue.get(), obj2));
     }
-    let obj2 = { withDelay: tmp(4850).withDelay, LOGO_REWARD_TRANSITION_DELAY_MS, withTiming: tmp(5093).withTiming, isComponentMounted: sharedValue, LOGO_REWARD_TRANSITION_DURATION_MS };
-    const useDerivedValue = tmp(4850).useDerivedValue;
-    tmp(4850);
+    let obj2 = { withDelay: tmp(4945).withDelay, LOGO_REWARD_TRANSITION_DELAY_MS, withTiming: tmp(5192).withTiming, isComponentMounted: sharedValue, LOGO_REWARD_TRANSITION_DURATION_MS };
+    const useDerivedValue = tmp(4945).useDerivedValue;
+    tmp(4945);
     he.__closure = obj2;
     he.__workletHash = 12561024953493;
     he.__initData = __initData;
@@ -276,7 +274,7 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     ge.__closure = obj3;
     ge.__workletHash = 17463485679217;
     ge.__initData = __initData2;
-    const tmpResult10 = tmp(4850);
+    const tmpResult10 = tmp(4945);
     const animatedStyle = tmpResult10.useAnimatedStyle(ge);
     function _e() {
       const obj = { opacity: 1 - derivedValue.get() };
@@ -286,7 +284,7 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     _e.__closure = obj5;
     _e.__workletHash = 9103187579788;
     _e.__initData = __initData3;
-    const tmpResult11 = tmp(4850);
+    const tmpResult11 = tmp(4945);
     const animatedStyle1 = tmpResult11.useAnimatedStyle(_e);
     function ye() {
       let pointerEvents = "none";
@@ -299,9 +297,9 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
     ye.__closure = obj6;
     ye.__workletHash = 6340268991801;
     ye.__initData = __initData4;
-    const tmpResult12 = tmp(4850);
+    const tmpResult12 = tmp(4945);
     const animatedProps = tmpResult12.useAnimatedProps(ye);
-    tmp18(1631)();
+    tmp18(1633)();
     if (cResult[11] === isFullscreen) {
       class J {
         constructor(nativeEvent) {
@@ -351,7 +349,7 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
           closure_3(nativeDefault.space.PX_24 + nativeEvent.nativeEvent.layout.height);
         }
       }
-      if (diff < tmp(15415).QUEST_PROGRESS_DIAMETER_BY_SIZE.lg + tmp14) {
+      if (diff < tmp(16175).QUEST_PROGRESS_DIAMETER_BY_SIZE.lg + tmp14) {
         class J {
           constructor(nativeEvent) {
             closure_3(nativeDefault.space.PX_24 + nativeEvent.nativeEvent.layout.height);
@@ -488,24 +486,24 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
   ae.__initData = __initData5;
   ({ withDelay: tmp(tmp2[15]).withDelay, LOGO_REWARD_TRANSITION_DELAY_MS, withTiming: tmp(tmp2[16]).withTiming, isComponentMounted: sharedValue, LOGO_REWARD_TRANSITION_DURATION_MS });
   derivedValue = tmpResult9.useDerivedValue(ae);
-  function oe() {
+  function se() {
     const obj = { opacity: derivedValue.get() };
     return obj;
   }
-  oe.__closure = { animation: derivedValue };
-  oe.__workletHash = 785279125621;
-  oe.__initData = __initData6;
+  se.__closure = { animation: derivedValue };
+  se.__workletHash = 785279125621;
+  se.__initData = __initData6;
   const tmpResult10 = tmp(tmp2[15]);
-  const animatedStyle = tmpResult10.useAnimatedStyle(oe);
-  function se() {
+  const animatedStyle = tmpResult10.useAnimatedStyle(se);
+  function oe() {
     const obj = { opacity: 1 - derivedValue.get() };
     return obj;
   }
-  se.__closure = { animation: derivedValue };
-  se.__workletHash = 8189208088968;
-  se.__initData = __initData7;
+  oe.__closure = { animation: derivedValue };
+  oe.__workletHash = 8189208088968;
+  oe.__initData = __initData7;
   const tmpResult11 = tmp(tmp2[15]);
-  const animatedStyle1 = tmpResult11.useAnimatedStyle(se);
+  const animatedStyle1 = tmpResult11.useAnimatedStyle(oe);
   function ie() {
     let pointerEvents = "none";
     if (derivedValue.get() > 0.3) {
@@ -679,7 +677,7 @@ let closure_34 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   let tmp16;
   let tmp = require;
   let obj = react2;
-  const cResult = obj.c(107);
+  const cResult = obj.c(104);
   ({ quest, captionsEnabled, handleClose, handleAdvertiserDetailsPress, handlePrimaryCtaPress, handleRewardDetailsPress, handleShareQuest, handleOpenTranscript, handleToggleCaptions, isFullscreen, onNavigateToPostWatchVideo, onEnd, externallyPaused, sourceQuestContent, hasCaptionAsset, hasTranscriptAsset, isShareable, contentWidth } = arg0);
   let obj2 = hooks_QuestHooks;
   const questTaskDetails = obj2.useQuestTaskDetails(quest);
@@ -710,7 +708,7 @@ let closure_34 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
         }
       }
     }
-    const rect = tmp9(1631)();
+    const rect = tmp9(1633)();
     [tmp16, require] = react.useState(64);
     const _Symbol2 = Symbol;
     _slicedToArray(react.useState(64), 2);
@@ -800,6 +798,7 @@ let closure_34 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   let Button2;
   let ClosedCaptionsOutlineIcon;
   let ShareIcon;
+  let TranscriptOutlineIcon;
   let captionsEnabled;
   let closure_5;
   let contentWidth;
@@ -834,7 +833,8 @@ let closure_34 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   let obj21;
   let obj23;
   let obj25;
-  let obj27;
+  let obj26;
+  let obj28;
   let obj3;
   let obj6;
   let onEnd;
@@ -937,36 +937,36 @@ let closure_34 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   }
   items12 = [tmp18Result, , , , ];
   if (hasTranscriptAsset) {
-    const obj22 = { accessibilityLabel: intl2.string(contentWidth(memo[33]).t.KCzjTi), onPress: handleOpenTranscript, children: closure_14(contentWidth(memo[44]).TranscriptOutlineIcon, obj23) };
+    const obj22 = { accessibilityLabel: intl2.string(contentWidth(memo[33]).t.KCzjTi), onPress: handleOpenTranscript, children: closure_14(TranscriptOutlineIcon, obj23) };
     intl2 = tmp(tmp2[33]).intl;
-    obj23 = { color: tmp15.iconDisabled.color };
+    obj23 = { color: height(memo[8]).colors.TEXT_DEFAULT };
+    TranscriptOutlineIcon = tmp(tmp2[44]).TranscriptOutlineIcon;
     hasTranscriptAsset = tmp18(closure_36, obj22);
   }
   items12[1] = hasTranscriptAsset;
   if (hasCaptionAsset) {
-    let color;
-    const obj24 = { accessibilityLabel: intl3.string(contentWidth(memo[33]).t.bDSZO1), onPress: handleToggleCaptions, children: closure_14(ClosedCaptionsOutlineIcon, obj25) };
+    const obj24 = { accessibilityLabel: intl3.string(contentWidth(memo[33]).t.bDSZO1), accessibilityRole: "togglebutton", accessibilityState: obj25, onPress: handleToggleCaptions, children: closure_14(ClosedCaptionsOutlineIcon, obj26) };
     intl3 = tmp(tmp2[33]).intl;
-    ClosedCaptionsOutlineIcon = tmp(tmp2[45]).ClosedCaptionsOutlineIcon;
+    obj25 = { checked: captionsEnabled };
     const tmp22 = closure_36;
     if (captionsEnabled) {
-      color = tmp15.icon.color;
+      ClosedCaptionsOutlineIcon = tmp(tmp2[45]).ClosedCaptionsIcon;
     } else {
-      color = tmp15.iconDisabled.color;
+      ClosedCaptionsOutlineIcon = tmp(tmp2[46]).ClosedCaptionsOutlineIcon;
     }
-    obj25 = { color };
+    obj26 = { color: height(memo[8]).colors.TEXT_DEFAULT };
     hasCaptionAsset = tmp18(tmp22, obj24);
   }
   items12[2] = hasCaptionAsset;
   if (isShareable) {
-    const obj26 = { accessibilityLabel: intl4.string(contentWidth(memo[33]).t.Ej3B3Y), onPress: handleShareQuest, children: closure_14(ShareIcon, obj27) };
+    const obj27 = { accessibilityLabel: intl4.string(contentWidth(memo[33]).t.Ej3B3Y), onPress: handleShareQuest, children: closure_14(ShareIcon, obj28) };
     intl4 = tmp(tmp2[33]).intl;
-    obj27 = { color: height(memo[8]).colors.TEXT_DEFAULT };
-    ShareIcon = tmp(tmp2[46]).ShareIcon;
-    isShareable = tmp18(closure_36, obj26);
+    obj28 = { color: height(memo[8]).colors.TEXT_DEFAULT };
+    ShareIcon = tmp(tmp2[47]).ShareIcon;
+    isShareable = tmp18(closure_36, obj27);
   }
   items12[3] = isShareable;
-  const obj28 = {
+  const obj29 = {
     quest,
     location: constants.VIDEO_MODAL_MOBILE,
     sourceQuestContent,
@@ -980,11 +980,11 @@ let closure_34 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
       intl = contentWidth(memo[33]).intl;
       const merged1 = Object.assign(merged);
       obj2 = { color: height(memo[8]).colors.TEXT_DEFAULT };
-      MoreHorizontalIcon = contentWidth(memo[47]).MoreHorizontalIcon;
+      MoreHorizontalIcon = contentWidth(memo[48]).MoreHorizontalIcon;
       return closure_1_14(closure_1_36, obj);
     }
   };
-  items12[4] = closure_14(height(memo[28]), obj28);
+  items12[4] = closure_14(height(memo[28]), obj29);
   items11[1] = closure_15(Stack3, obj19);
   return closure_15(SafeAreaPaddingView, obj2);
 }));
@@ -1051,7 +1051,7 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
   ({ contentWidth, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen } = arg0);
   let tmp = sourceQuestContent;
   let tmp2 = dependencyMap;
-  let obj = sourceQuestContent(15410);
+  let obj = sourceQuestContent(16170);
   const quest = obj.useVideoQuestModalContext().quest;
   items = [quest];
   items1 = [quest];
@@ -1071,14 +1071,14 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { quest };
-    const tmp2 = asyncRequire(15438, dependencyMap.paths);
+    const tmp2 = asyncRequire(16198, dependencyMap.paths);
     openLazy(tmp2, "transcript-" + quest.id, obj);
   }, items2);
-  let obj2 = sourceQuestContent(9197);
+  let obj2 = sourceQuestContent(9504);
   const getQuestImpressionId = obj2.useGetQuestImpressionId();
   [tmp11, closure_4] = videoQuestClickCtaAndMaybeCloseModal(react.useState(false), 2);
   const tmp10 = videoQuestClickCtaAndMaybeCloseModal(react.useState(false), 2);
-  let obj3 = sourceQuestContent(7406);
+  let obj3 = sourceQuestContent(7676);
   const isShareableQuestResult = obj3.isShareableQuest(quest.config);
   _objectWithoutProperties = isShareableQuestResult;
   const items3 = [isShareableQuestResult, quest.id, getQuestImpressionId, sourceQuestContent];
@@ -1115,7 +1115,7 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
       showShareActionSheet(obj4, "Video Quest Modal - " + tmp5.id);
     }
   }, items3);
-  let obj4 = sourceQuestContent(15439);
+  let obj4 = sourceQuestContent(16199);
   videoQuestClickCtaAndMaybeCloseModal = obj4.useVideoQuestClickCtaAndMaybeCloseModal({ quest, onClose, sourceQuestContent });
   const items4 = [videoQuestClickCtaAndMaybeCloseModal];
   const items5 = [videoQuestClickCtaAndMaybeCloseModal];
@@ -1127,12 +1127,12 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
     const obj2 = { questId: quest.id };
     const result = obj.openRewardDetailsBottomSheet(obj2);
   }, items6);
-  const obj5 = sourceQuestContent(15440);
+  const obj5 = sourceQuestContent(16200);
   const videoExternallyPaused = obj5.useVideoExternallyPaused(quest.id, tmp11);
-  const tmp19 = quest.config.taskConfigV2.tasks[sourceQuestContent(undefined, 5980).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
+  const tmp19 = quest.config.taskConfigV2.tasks[sourceQuestContent(undefined, 6236).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
   let tmp20 = null == tmp19;
   if (!tmp20) {
-    const tmpResult = tmp(12971);
+    const tmpResult = tmp(13902);
     tmp20 = "portrait" === tmpResult.getVideoOrientation(tmp19);
   }
   const obj6 = { quest, captionsEnabled: tmp6, contentWidth, handleClose: onClose, handleAdvertiserDetailsPress: callback3, handlePrimaryCtaPress: callback4, handleRewardDetailsPress: callback5, handleShareQuest: callback2, handleOpenTranscript: callback1, handleToggleCaptions: callback, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen, externallyPaused: videoExternallyPaused, sourceQuestContent, hasCaptionAsset: null != memo, hasTranscriptAsset: null != memo1, isShareable: isShareableQuestResult };

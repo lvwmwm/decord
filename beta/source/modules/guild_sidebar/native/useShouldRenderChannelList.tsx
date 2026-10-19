@@ -1,19 +1,21 @@
-// Module ID: 16714
-// Function ID: 16715
+// Module ID: 17389
+// Function ID: 17390
 // Name: useShouldRenderChannelList
-// Dependencies: [32, 19, 7193, 5757, 1085, 558, 576, 4976, 4977, 1121, 2]
+// Dependencies: [32, 19, 7464, 6013, 1087, 558, 576, 5072, 5073, 1123, 2]
 
-// Module 16714 (useShouldRenderChannelList)
-import Constants from "Constants" /* 1085 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
-import RootNavigationRef from "RootNavigationRef" /* 4977 */;
+// Module 17389 (useShouldRenderChannelList)
+import Constants from "Constants" /* 1087 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
+import RootNavigationRef from "RootNavigationRef" /* 5073 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CacheStore from "CacheStore" /* 7193 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
+import CacheStore from "CacheStore" /* 7464 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
+
+let addListenerResult, flag, flag2, str, str2, tmp10, tmp11, tmp12, tmp13, tmp6, tmp8;
 
 const ComponentActions = Constants.ComponentActions;
 let c7 = false;
@@ -24,85 +26,102 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
   let tmp5;
   let obj = first(576);
   const cResult = obj.c(3);
+  let obj2 = react;
   [first, dependencyMap] = react.useState(c7);
-  const obj2 = react;
   if (cResult[0] !== first) {
-    const fn = function u() {
-      let allowRender;
-      const tmp = allowRender;
-      if (!tmp) {
-        allowRender = function allowRender() {
-          c7 = true;
-          handleGatewayChange(true);
-        };
-        function handleGatewayChange() {
-          if (GatewayConnectionStore.isConnected()) {
-            if (typeof allowRender === "function") {
-              c7 = true;
-              handleGatewayChange(true);
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          }
-        }
-        function handleCacheChange() {
-          if ("cache-loaded" === CacheStore.getLazyCacheStatus()) {
-            if (typeof allowRender === "function") {
-              c7 = true;
-              handleGatewayChange(true);
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          }
-        }
-        function handleNavigationChange() {
-          const coerceGuildsRoute = NavigationRouteUtils.coerceGuildsRoute;
-          NavigationRouteUtils;
-          const obj = RootNavigationRef;
-          const rootNavigationRef = obj.getRootNavigationRef();
-          let currentRoute;
+    class R {
+      constructor() {
+        tmp = allowRender;
+        if (tmp) {
+          return;
+        } else {
+          allowRender = function allowRender() { /* body not rendered: F150841 */ };
+          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F150842 */ };
+          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F150843 */ };
+          checkNavigationState = function checkNavigationState() { /* body not rendered: F150844 */ };
+          obj = closure_1_5;
+          result = closure_1_5.addReactChangeListener(checkGatewayConnection);
+          obj2 = closure_1_4;
+          result1 = closure_1_4.addReactChangeListener(checkCacheLoadStatus);
+          tmp4 = closure_0;
+          tmp5 = closure_1;
+          ComponentDispatch = closure_0(closure_1[9]).ComponentDispatch;
+          tmp6 = closure_1_6;
+          subscription = ComponentDispatch.subscribe(closure_1_6.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
+          obj3 = closure_0(closure_1[8]);
+          rootNavigationRef = obj3.getRootNavigationRef();
+          tmp8 = null;
           if (rootNavigationRef != null) {
-            currentRoute = rootNavigationRef.getCurrentRoute();
+            str = "state";
+            addListenerResult = rootNavigationRef.addListener("state", checkNavigationState);
           }
-          if (null != coerceGuildsRoute(currentRoute)) {
-            if (typeof allowRender === "function") {
-              c7 = true;
-              handleGatewayChange(true);
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
+          if (obj.isConnected()) {
+            flag = true;
+            c7 = true;
+            tmp10 = checkGatewayConnection;
+            tmp11 = checkGatewayConnection(true);
           }
+          str2 = "cache-loaded";
+          if ("cache-loaded" === obj2.getLazyCacheStatus()) {
+            flag2 = true;
+            c7 = true;
+            tmp12 = checkGatewayConnection;
+            tmp13 = checkGatewayConnection(true);
+          }
+          return () => { /* body not rendered: F150845 */ };
         }
-        let result = GatewayConnectionStore.addReactChangeListener(handleGatewayChange);
-        let result1 = CacheStore.addReactChangeListener(handleCacheChange);
-        let ComponentDispatch = first(handleGatewayChange[9]).ComponentDispatch;
-        const subscription = ComponentDispatch.subscribe(constants.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
-        let obj = first(handleGatewayChange[8]);
-        let rootNavigationRef = obj.getRootNavigationRef();
-        if (rootNavigationRef != null) {
-          rootNavigationRef.addListener("state", handleNavigationChange);
-        }
-        return () => {
-          const result = GatewayConnectionStore.removeReactChangeListener(handleGatewayChange);
-          const result1 = CacheStore.addReactChangeListener(handleCacheChange);
-          const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
-          ComponentDispatch.unsubscribe(ComponentActions.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
-          const obj = RootNavigationRef;
-          const rootNavigationRef = obj.getRootNavigationRef();
-          if (rootNavigationRef != null) {
-            rootNavigationRef.removeListener("state", handleNavigationChange);
-          }
-        };
       }
-    };
+    }
     const items = [first];
     cResult[0] = first;
-    cResult[1] = fn;
+    cResult[1] = R;
     cResult[2] = items;
     tmp5 = items;
-    tmp4 = fn;
+    tmp4 = R;
   } else {
-    tmp4 = cResult[1];
+    class R {
+      constructor() {
+        tmp = allowRender;
+        if (tmp) {
+          return;
+        } else {
+          allowRender = function allowRender() { /* body not rendered: F150841 */ };
+          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F150842 */ };
+          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F150843 */ };
+          checkNavigationState = function checkNavigationState() { /* body not rendered: F150844 */ };
+          obj = closure_1_5;
+          result = closure_1_5.addReactChangeListener(checkGatewayConnection);
+          obj2 = closure_1_4;
+          result1 = closure_1_4.addReactChangeListener(checkCacheLoadStatus);
+          tmp4 = closure_0;
+          tmp5 = closure_1;
+          ComponentDispatch = closure_0(closure_1[9]).ComponentDispatch;
+          tmp6 = closure_1_6;
+          subscription = ComponentDispatch.subscribe(closure_1_6.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
+          obj3 = closure_0(closure_1[8]);
+          rootNavigationRef = obj3.getRootNavigationRef();
+          tmp8 = null;
+          if (rootNavigationRef != null) {
+            str = "state";
+            addListenerResult = rootNavigationRef.addListener("state", checkNavigationState);
+          }
+          if (obj.isConnected()) {
+            flag = true;
+            c7 = true;
+            tmp10 = checkGatewayConnection;
+            tmp11 = checkGatewayConnection(true);
+          }
+          str2 = "cache-loaded";
+          if ("cache-loaded" === obj2.getLazyCacheStatus()) {
+            flag2 = true;
+            c7 = true;
+            tmp12 = checkGatewayConnection;
+            tmp13 = checkGatewayConnection(true);
+          }
+          return () => { /* body not rendered: F150845 */ };
+        }
+      }
+    }
     tmp5 = cResult[2];
   }
   const effect = obj2.useEffect(tmp4, tmp5);
@@ -115,24 +134,24 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
   const effect = react.useEffect(() => {
     function allowRender() {
       c7 = true;
-      handleGatewayChange(true);
+      checkGatewayConnection(true);
     }
-    function handleGatewayChange() {
+    function checkGatewayConnection() {
       if (GatewayConnectionStore.isConnected()) {
         c7 = true;
-        handleGatewayChange(true);
+        checkGatewayConnection(true);
       }
     }
-    function handleCacheChange() {
+    function checkCacheLoadStatus() {
       if ("cache-loaded" === CacheStore.getLazyCacheStatus()) {
         c7 = true;
-        handleGatewayChange(true);
+        checkGatewayConnection(true);
       }
     }
-    function handleNavigationChange() {
-      const coerceGuildsRoute = first(handleGatewayChange[7]).coerceGuildsRoute;
-      first(handleGatewayChange[7]);
-      const obj = first(handleGatewayChange[8]);
+    function checkNavigationState() {
+      const coerceGuildsRoute = first(checkGatewayConnection[7]).coerceGuildsRoute;
+      first(checkGatewayConnection[7]);
+      const obj = first(checkGatewayConnection[8]);
       const rootNavigationRef = obj.getRootNavigationRef();
       let currentRoute;
       if (rootNavigationRef != null) {
@@ -140,29 +159,39 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
       }
       if (null != coerceGuildsRoute(currentRoute)) {
         c7 = true;
-        handleGatewayChange(true);
+        checkGatewayConnection(true);
       }
     }
     const tmp = allowRender;
     if (!tmp) {
-      let result = GatewayConnectionStore.addReactChangeListener(handleGatewayChange);
-      let result1 = CacheStore.addReactChangeListener(handleCacheChange);
-      let ComponentDispatch = first(handleGatewayChange[9]).ComponentDispatch;
+      let obj = GatewayConnectionStore;
+      let result = GatewayConnectionStore.addReactChangeListener(checkGatewayConnection);
+      let result1 = CacheStore.addReactChangeListener(checkCacheLoadStatus);
+      let ComponentDispatch = first(checkGatewayConnection[9]).ComponentDispatch;
       const subscription = ComponentDispatch.subscribe(constants.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
-      let obj = first(handleGatewayChange[8]);
-      let rootNavigationRef = obj.getRootNavigationRef();
+      const obj3 = first(checkGatewayConnection[8]);
+      let rootNavigationRef = obj3.getRootNavigationRef();
+      const obj2 = CacheStore;
       if (rootNavigationRef != null) {
-        rootNavigationRef.addListener("state", handleNavigationChange);
+        rootNavigationRef.addListener("state", checkNavigationState);
+      }
+      if (obj.isConnected()) {
+        c7 = true;
+        checkGatewayConnection(true);
+      }
+      if ("cache-loaded" === obj2.getLazyCacheStatus()) {
+        c7 = true;
+        checkGatewayConnection(true);
       }
       return () => {
-        const result = GatewayConnectionStore.removeReactChangeListener(handleGatewayChange);
-        const result1 = CacheStore.addReactChangeListener(handleCacheChange);
+        const result = GatewayConnectionStore.removeReactChangeListener(checkGatewayConnection);
+        const result1 = CacheStore.removeReactChangeListener(checkCacheLoadStatus);
         const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
         ComponentDispatch.unsubscribe(ComponentActions.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
         const obj = RootNavigationRef;
         const rootNavigationRef = obj.getRootNavigationRef();
         if (rootNavigationRef != null) {
-          rootNavigationRef.removeListener("state", handleNavigationChange);
+          rootNavigationRef.removeListener("state", checkNavigationState);
         }
       };
     }

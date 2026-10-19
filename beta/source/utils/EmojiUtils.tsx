@@ -1,23 +1,23 @@
-// Module ID: 4768
-// Function ID: 4769
+// Module ID: 4863
+// Function ID: 4864
 // Name: EmojiUtils
-// Dependencies: [5, 2069, 4750, 1390, 1085, 1393, 4767, 4769, 5992, 4742, 7920, 1494, 1415, 2]
+// Dependencies: [5, 2072, 4845, 1392, 1087, 1395, 4862, 4864, 6248, 4837, 8192, 1496, 1417, 2]
 // Exports: countEmoji, getAllEmojiNamesString, getEmojiColors, getEmojiUrl
 
-// Module 4768 (EmojiUtils)
-import Constants from "Constants" /* 1085 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import ImageUtils from "ImageUtils" /* 1494 */;
-import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4742 */;
-import EmojiTypes from "EmojiTypes" /* 4767 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
-import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5992 */;
-import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 7920 */;
+// Module 4863 (EmojiUtils)
+import Constants from "Constants" /* 1087 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import ImageUtils from "ImageUtils" /* 1496 */;
+import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4837 */;
+import EmojiTypes from "EmojiTypes" /* 4862 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4864 */;
+import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 6248 */;
+import EmojiUtilsPlatformedDefault from "EmojiUtilsPlatformed" /* 8192 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import UserStore from "UserStore" /* 1390 */;
-import EmojiConstants from "EmojiConstants" /* 1393 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import UserStore from "UserStore" /* 1392 */;
+import EmojiConstants from "EmojiConstants" /* 1395 */;
 import size from "module_2" /* 2 */;
 
 let animated, c1, c2, closure_1, closure_2, closure_3, closure_5, closure_6, customExternal, dependencyMap, importDefault, managed, managedExternal;

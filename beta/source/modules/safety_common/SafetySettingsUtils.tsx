@@ -1,12 +1,12 @@
-// Module ID: 14969
-// Function ID: 14970
+// Module ID: 15731
+// Function ID: 15732
 // Name: SafetySettingsUtils
-// Dependencies: [1085, 1265, 2]
+// Dependencies: [1087, 1267, 2]
 // Exports: trackSafetySettingsNoticeAnalytics
 
-// Module 14969 (SafetySettingsUtils)
-import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+// Module 15731 (SafetySettingsUtils)
+import Constants from "Constants" /* 1087 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

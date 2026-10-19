@@ -1,14 +1,14 @@
-// Module ID: 11651
-// Function ID: 11652
+// Module ID: 12839
+// Function ID: 12840
 // Name: CustomTypingIndicatorDynamicAsset
-// Dependencies: [19, 17, 21, 5092, 558, 576, 6157, 1126, 11645, 5088, 5377, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 5128, 1128, 12833, 5187, 5477, 2]
 
-// Module 11651 (CustomTypingIndicatorDynamicAsset)
+// Module 12839 (CustomTypingIndicatorDynamicAsset)
 import react_native from "react-native" /* 17 */;
-import FastImageDefault from "FastImage" /* 6157 */;
+import FastImageDefault from "FastImage" /* 5128 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -109,7 +109,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTyping
           cResult[19] = tmp19;
           tmp17 = tmp19;
         }
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const format = intl.format;
         const obj4 = { name };
         const tmpResult = require("CustomTypingIndicatorUtils");

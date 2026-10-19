@@ -1,34 +1,34 @@
-// Module ID: 13604
-// Function ID: 13605
+// Module ID: 14384
+// Function ID: 14385
 // Name: VoiceMemberList
-// Dependencies: [32, 109, 5, 19, 17, 2064, 1404, 5897, 4750, 1390, 5116, 1085, 1204, 6841, 1096, 21, 5092, 558, 576, 13600, 11018, 504, 13605, 1126, 10333, 8575, 10749, 8678, 5088, 9535, 6852, 1894, 5889, 10823, 7477, 13606, 13607, 1497, 13614, 4976, 12, 5056, 8299, 13615, 6761, 4827, 2]
+// Dependencies: [32, 109, 5, 19, 17, 2067, 1406, 6153, 4845, 1392, 5215, 1087, 1206, 7119, 1098, 21, 5191, 558, 576, 14380, 11408, 504, 14385, 1128, 10640, 8855, 11165, 8955, 5187, 9837, 7130, 1896, 6145, 11223, 7748, 14386, 14387, 1499, 14394, 5072, 12, 5155, 8577, 14395, 7038, 4922, 2]
 
-// Module 13604 (VoiceMemberList)
+// Module 14384 (VoiceMemberList)
 import react2 from "react" /* 576 */;
-import Constants2 from "Constants" /* 1096 */;
-import FormConstants from "FormConstants" /* 1204 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 10749 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11018 */;
-import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 13600 */;
-import VoiceMemberUser from "VoiceMemberUser" /* 13607 */;
+import Constants2 from "Constants" /* 1098 */;
+import FormConstants from "FormConstants" /* 1206 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 7119 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8955 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11165 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11408 */;
+import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 14380 */;
+import VoiceMemberUser from "VoiceMemberUser" /* 14387 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import UserRecord from "UserRecord" /* 1404 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import UserStore from "UserStore" /* 1390 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5116 */;
-import Constants from "Constants" /* 1085 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import UserRecord from "UserRecord" /* 1406 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import UserStore from "UserStore" /* 1392 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5215 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,9 +46,9 @@ let closure_24;
 let closure_25;
 let tmp;
 let tmp4;
-const Text_Text = tmp(5088);
-const Form = tmp(8575);
-const AssetRegistryDefault = tmp4(10333);
+const Text_Text = tmp(5187);
+const Form = tmp(8855);
+const AssetRegistryDefault = tmp4(10640);
 function renderSectionHeader(section) {
   const title = section.section.title;
   let tmp = null;
@@ -147,12 +147,12 @@ let closure_28 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
       }
       const _Symbol2 = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        let obj2 = { accessibilityLabel: intl.string(tmp(1126).t["6Qgrev"]), accessibilityHidden: true, source: AssetRegistryDefault, size: tmp(13605).CircularIconButton.Sizes.MEDIUM_32 };
-        const CircularIconButton = tmp(13605).CircularIconButton;
-        intl = tmp(1126).intl;
+        let obj2 = { accessibilityLabel: intl.string(tmp(1128).t["6Qgrev"]), accessibilityHidden: true, source: AssetRegistryDefault, size: tmp(14385).CircularIconButton.Sizes.MEDIUM_32 };
+        const CircularIconButton = tmp(14385).CircularIconButton;
+        intl = tmp(1128).intl;
         const tmp20 = closure_23(CircularIconButton, obj2);
-        const intl2 = tmp(1126).intl;
-        const stringResult = intl2.string(tmp(1126).t["6Qgrev"]);
+        const intl2 = tmp(1128).intl;
+        const stringResult = intl2.string(tmp(1128).t["6Qgrev"]);
         cResult[5] = tmp20;
         cResult[6] = stringResult;
         tmp18 = stringResult;
@@ -178,7 +178,7 @@ let closure_28 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
                   }
                 }
         };
-        items2[1] = closure_23(tmp(8575).FormRow, obj4);
+        items2[1] = closure_23(tmp(8855).FormRow, obj4);
         const tmp26 = closure_24(Fragment, obj3);
         cResult[7] = channel;
         cResult[8] = tmp26;
@@ -210,7 +210,7 @@ let closure_28 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
       items = [closure_23(closure_29, {}), ];
       let obj2 = {
         leading: closure_23(CircularIconButton, obj3),
-        label: intl2.string(tmp4(1126).t["6Qgrev"]),
+        label: intl2.string(tmp4(1128).t["6Qgrev"]),
         onPress() {
               if (channel.isPrivate()) {
                 openGroupDMAddMembersDefault(channel.id, constants.CHANNEL_CALL);
@@ -221,11 +221,11 @@ let closure_28 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
               }
             }
       };
-      const FormRow = tmp4(8575).FormRow;
-      obj3 = { accessibilityLabel: intl.string(channel(1126).t["6Qgrev"]), accessibilityHidden: true, source: AssetRegistryDefault, size: channel(13605).CircularIconButton.Sizes.MEDIUM_32 };
-      CircularIconButton = tmp4(13605).CircularIconButton;
-      intl = tmp4(1126).intl;
-      intl2 = tmp4(1126).intl;
+      const FormRow = tmp4(8855).FormRow;
+      obj3 = { accessibilityLabel: intl.string(channel(1128).t["6Qgrev"]), accessibilityHidden: true, source: AssetRegistryDefault, size: channel(14385).CircularIconButton.Sizes.MEDIUM_32 };
+      CircularIconButton = tmp4(14385).CircularIconButton;
+      intl = tmp4(1128).intl;
+      intl2 = tmp4(1128).intl;
       items[1] = closure_23(FormRow, obj2);
       tmp7 = closure_24(Fragment, obj);
     }
@@ -314,10 +314,10 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceS
   let obj = isActionSheet(576);
   const cResult = obj.c(13);
   ({ item, channelId, onPressUser, isActionSheet } = arg0);
-  const obj2 = isActionSheet(9535);
+  const obj2 = isActionSheet(9837);
   const analyticsContext = obj2.useAnalyticsContext();
   const tmp4 = analyticsContext;
-  let analyticsLocations = analyticsContext(6852)().analyticsLocations;
+  let analyticsLocations = analyticsContext(7130)().analyticsLocations;
   const tmp5 = undefined !== item.url && undefined !== item.applicationId;
   if (tmp5) {
     if (cResult[0] === analyticsContext) {
@@ -338,7 +338,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceS
           }
         }
         let obj3 = { embeddedActivity: item, channelId, onItemPress: tmp13, isActionSheet };
-        const tmp17 = closure_23(tmp4(13606), obj3);
+        const tmp17 = closure_23(tmp4(14386), obj3);
         cResult[4] = channelId;
         cResult[5] = isActionSheet;
         cResult[6] = tmp13;
@@ -431,7 +431,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceS
       }
     }
     let obj4 = { onPress: onPressUser, isActionSheet };
-    const tmp4Result = tmp4(13607);
+    const tmp4Result = tmp4(14387);
     const merged = Object.assign(item);
     let tmp12 = closure_23(tmp4Result, obj4);
     cResult[9] = isActionSheet;
@@ -847,7 +847,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberL
   let ownerId;
   let reduced;
   let tmp25Result2;
-  const f116378 = (user) => stateFromStoresArray.includes(user.user.id);
+  const f119981 = (user) => stateFromStoresArray.includes(user.user.id);
   channel = channel.channel;
   let flag = channel.isActionSheet;
   if (flag === undefined) {
@@ -921,8 +921,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberL
           str = "";
         }
         const tmp3Result = flag(tmp4[40]);
-        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f116378), 2);
-        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f116378), 2);
+        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f119981), 2);
+        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f119981), 2);
         if (arr10.length > 0) {
           const push = items5.push;
           const obj5 = { type: constants4.SPECTATING, title: intl.formatToPlainString(channel(tmp4[23]).t.Fb0eT9, obj6), data: arr10 };
@@ -1011,7 +1011,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberL
                       let result;
                       const tmp = undefined !== items5[arg0].data[arg1].url && undefined !== items5[arg0].data[arg1].applicationId;
                       if (tmp) {
-                        const tmp9Result = tmp9(13606);
+                        const tmp9Result = tmp9(14386);
                         result = tmp9Result.calculateActivityRowHeight(tmp8);
                       } else {
                         const voiceState = tmp7.voiceState;

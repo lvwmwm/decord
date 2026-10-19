@@ -1,10 +1,10 @@
-// Module ID: 17099
-// Function ID: 17100
+// Module ID: 11664
+// Function ID: 11665
 // Name: conjureSettingValues
 // Dependencies: [2]
-// Exports: conjureSettingBaseline, conjureSettingSubmitValue, conjureSettingValuesEqual
+// Exports: conjureSecretsSubmission, conjureSettingBaseline, conjureSettingSubmitValue, conjureSettingValuesEqual
 
-// Module 17099 (conjureSettingValues)
+// Module 11664 (conjureSettingValues)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/settings/conjureSettingValues.tsx");
@@ -64,4 +64,41 @@ export const conjureSettingBaseline = function conjureSettingBaseline(found, mem
     tmp = "checkbox" !== found.type && null;
   }
   return tmp;
+};
+export const conjureSecretsSubmission = function conjureSecretsSubmission(memo, secrets) {
+  if (0 === Object.keys(secrets).length) {
+    return {};
+  } else {
+    let obj4;
+    const obj2 = {};
+    const _Object2 = Object;
+    function _loop(item10009) {
+      memo = item10009;
+      const found = memo.find((key) => key.key === closure_0);
+      let hosts;
+      if (found != null) {
+        hosts = found.hosts;
+      }
+      const tmp3 = null != hosts && hosts.length > 0;
+      if (tmp3) {
+        obj2[item10009] = hosts;
+      }
+    }
+    const keys = Object.keys(secrets);
+    for (const item10009 of keys) {
+      let _loopResult = _loop(item10009);
+      continue;
+    }
+    const obj = { secrets };
+    const _Object = Object;
+    if (Object.keys(obj2).length > 0) {
+      obj4 = { hosts: obj2 };
+      const obj3 = { hosts: obj2 };
+    } else {
+      obj4 = {};
+    }
+    let tmp3 = obj;
+    const merged = Object.assign(obj4);
+    return obj;
+  }
 };

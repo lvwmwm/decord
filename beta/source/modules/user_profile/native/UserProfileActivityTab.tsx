@@ -1,18 +1,18 @@
-// Module ID: 13384
-// Function ID: 13385
+// Module ID: 14164
+// Function ID: 14165
 // Name: UserProfileActivityTab
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5088, 1126, 8486, 2128, 13385, 13388, 13122, 13389, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 5187, 1128, 8764, 2131, 14165, 14168, 14049, 14169, 2]
 
-// Module 13384 (UserProfileActivityTab)
+// Module 14164 (UserProfileActivityTab)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import UserProfileRecentActivityCardDefault from "UserProfileRecentActivityCard" /* 13389 */;
+import Constants from "Constants" /* 1087 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import UserProfileRecentActivityCardDefault from "UserProfileRecentActivityCard" /* 14169 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -162,7 +162,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sectio
     let tmp9 = null != introText;
     if (tmp9) {
       const obj3 = { style: tmp4.introText, variant: "text-xs/medium", children: introText };
-      tmp9 = hasOwnProperty(tmp(5088).Text, obj3);
+      tmp9 = hasOwnProperty(tmp(5187).Text, obj3);
     }
     cResult[3] = introText;
     cResult[4] = tmp4.introText;
@@ -208,7 +208,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recent
   const tmp4 = closure_8();
   _require = tmp4;
   if (cResult[0] !== tmp4) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     let obj2 = {
       learnMoreHook(children, arg1) {
           let obj = {
@@ -228,7 +228,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Recent
           return hasOwnProperty(Text_Text.Text, obj, arg1);
         }
     };
-    const formatResult = intl.format(tmp(1126).t["4bk9Ak"], obj2);
+    const formatResult = intl.format(tmp(1128).t["4bk9Ak"], obj2);
     cResult[0] = tmp4;
     cResult[1] = formatResult;
     tmp5 = formatResult;
@@ -287,7 +287,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
       if (cResult[2] === user.id) {
         tmp4 = cResult[3];
       }
-      const tmp6 = cardStyle(13385)(tmp4);
+      const tmp6 = cardStyle(14165)(tmp4);
       ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = tmp6);
       const tmp5 = cardStyle;
       if (!hasCurrentActivity) {
@@ -314,7 +314,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
                 }
               }
             }
-            const tmpResult = user(13388);
+            const tmpResult = user(14168);
             if (isCurrentUser) {
               tmp8Result = tmp8(tmpResult.UserProfileActivityEmptyCurrentUser, {});
             } else {
@@ -368,14 +368,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
               let tmp22Result2 = hasRecentActivity;
               if (tmp22Result2) {
                 const obj4 = {
-                  heading: intl2.string(user(1126).t.jzgEoL),
+                  heading: intl2.string(user(1128).t.jzgEoL),
                   introText: tmp22Result,
                   children: recent.map((entry) => {
                                   const obj = { user, entry, style: cardStyle };
                                   return hasOwnProperty(UserProfileRecentActivityCardDefault, obj, entry.id);
                                 })
                 };
-                intl2 = tmp(1126).intl;
+                intl2 = tmp(1128).intl;
                 tmp22Result = undefined;
                 const tmp23 = closure_10;
                 if (isCurrentUser) {
@@ -396,8 +396,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
       }
       let tmp17 = hasCurrentActivity;
       if (tmp17) {
-        const obj5 = { heading: intl.string(user(1126).t.J6STd9), children: closure_5(tmp5(13122), obj6) };
-        intl = tmp(1126).intl;
+        const obj5 = { heading: intl.string(user(1128).t.J6STd9), children: closure_5(tmp5(14049), obj6) };
+        intl = tmp(1128).intl;
         obj6 = { user, currentUser, guildId, style: cardStyle };
         tmp17 = closure_5(closure_10, obj5);
       }
@@ -432,8 +432,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   ({ currentUser, guildId, cardStyle } = user);
   const channelId = user.channelId;
   let obj = { userId: user.id, currentUserId: currentUser.id, guildId };
-  ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = cardStyle(13385)(obj));
-  cardStyle(13385)(obj);
+  ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = cardStyle(14165)(obj));
+  cardStyle(14165)(obj);
   const tmp = cardStyle;
   if (!hasCurrentActivity) {
     let tmp10Result;
@@ -441,7 +441,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
       if (tmp4) {
         tmp10Result = tmp5(closure_9, {});
       } else {
-        const tmp7 = user(13388);
+        const tmp7 = user(14168);
         if (isCurrentUser) {
           tmp10Result = tmp5(tmp7.UserProfileActivityEmptyCurrentUser, {});
         } else {
@@ -455,22 +455,22 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileA
   const tmp10 = closure_6;
   const tmp11 = closure_7;
   if (hasCurrentActivity) {
-    const obj3 = { heading: intl.string(user(1126).t.J6STd9), children: closure_5(tmp(13122), obj4) };
-    intl = user(1126).intl;
+    const obj3 = { heading: intl.string(user(1128).t.J6STd9), children: closure_5(tmp(14049), obj4) };
+    intl = user(1128).intl;
     obj4 = { user, currentUser, guildId, style: cardStyle };
     hasCurrentActivity = closure_5(closure_10, obj3);
   }
   const items = [hasCurrentActivity, ];
   if (hasRecentActivity) {
     const obj5 = {
-      heading: intl2.string(user(1126).t.jzgEoL),
+      heading: intl2.string(user(1128).t.jzgEoL),
       introText: tmp15Result,
       children: recent.map((entry) => {
           const obj = { user, entry, style: cardStyle };
           return hasOwnProperty(UserProfileRecentActivityCardDefault, obj, entry.id);
         })
     };
-    intl2 = user(1126).intl;
+    intl2 = user(1128).intl;
     tmp15Result = undefined;
     const tmp16 = closure_10;
     if (isCurrentUser) {

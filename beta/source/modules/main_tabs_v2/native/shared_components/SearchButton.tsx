@@ -1,19 +1,19 @@
-// Module ID: 12080
-// Function ID: 12081
+// Module ID: 13030
+// Function ID: 13031
 // Name: SearchButton
-// Dependencies: [109, 19, 17, 21, 5092, 587, 558, 576, 6740, 1126, 5088, 2]
+// Dependencies: [109, 19, 17, 21, 5191, 587, 558, 576, 7017, 1128, 5187, 2]
 
-// Module 12080 (SearchButton)
+// Module 13030 (SearchButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6740 */;
+import intl2 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7017 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchButton
       const _Symbol2 = Symbol;
       const text = tmp9.text;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const stringResult = intl.string(intl2.t["5h0QOP"]);
         cResult[8] = stringResult;
         tmp16 = stringResult;

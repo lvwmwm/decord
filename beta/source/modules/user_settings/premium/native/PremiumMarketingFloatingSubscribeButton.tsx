@@ -1,18 +1,18 @@
-// Module ID: 13791
-// Function ID: 13792
+// Module ID: 14571
+// Function ID: 14572
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [19, 17, 5081, 1085, 21, 5092, 587, 558, 576, 1631, 504, 13789, 6879, 683, 4850, 5093, 5391, 9778, 2]
+// Dependencies: [19, 17, 5181, 1087, 21, 5191, 587, 558, 576, 1633, 504, 14569, 7155, 683, 4945, 5192, 5491, 10081, 2]
 
-// Module 13791 (PremiumMarketingFloatingSubscribeButton)
+// Module 14571 (PremiumMarketingFloatingSubscribeButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import Constants from "Constants" /* 1085 */;
-import timing from "timing" /* 5093 */;
+import Constants from "Constants" /* 1087 */;
+import timing from "timing" /* 5192 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
   ({ style, isVisible } = backgroundColor);
   backgroundColor = backgroundColor.backgroundColor;
   const tmp4 = closure_10();
-  const bottom = stateFromStores(1631)().bottom;
+  const bottom = stateFromStores(1633)().bottom;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [AccessibilityStore];
     const fn = function h() {
@@ -64,9 +64,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
   }
   const tmpResult = tmp(504);
   stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  const tmp5Result = stateFromStores(13789);
-  ({ openPayment, buttonText } = tmp5Result(stateFromStores(6879).PREMIUM_MARKETING_FLOATING_CTA));
-  tmp5Result(stateFromStores(6879).PREMIUM_MARKETING_FLOATING_CTA);
+  const tmp5Result = stateFromStores(14569);
+  ({ openPayment, buttonText } = tmp5Result(stateFromStores(7155).PREMIUM_MARKETING_FLOATING_CTA));
+  tmp5Result(stateFromStores(7155).PREMIUM_MARKETING_FLOATING_CTA);
   if (cResult[2] !== backgroundColor) {
     const obj3 = tmp5(683)(backgroundColor);
     let num3 = 0;
@@ -84,7 +84,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
     if (cResult[5] === tmp12) {
       tmp14 = cResult[6];
     }
-    const tmpResult3 = tmp(4850);
+    const tmpResult3 = tmp(4945);
     class D {
       constructor() {
         let items;
@@ -100,7 +100,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
           num2 = c9;
         }
         const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-        const withTiming2 = tmp(5093).withTiming;
+        const withTiming2 = tmp(5192).withTiming;
         let num3 = 12;
         timing;
         if (obj.get()) {
@@ -115,7 +115,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
         return obj2;
       }
     }
-    let obj2 = { withTiming: tmp(5093).withTiming, isVisible, useReducedMotion: stateFromStores, FADE_DURATION_MS, ENTER_TRANSLATE_PX: 12 };
+    let obj2 = { withTiming: tmp(5192).withTiming, isVisible, useReducedMotion: stateFromStores, FADE_DURATION_MS, ENTER_TRANSLATE_PX: 12 };
     const useAnimatedStyle = tmpResult3.useAnimatedStyle;
     D.__closure = obj2;
     D.__workletHash = 4035217753570;
@@ -138,7 +138,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
     fn2.__closure = obj4;
     fn2.__workletHash = 3205490118921;
     fn2.__initData = __initData2;
-    const tmpResult4 = tmp(4850);
+    const tmpResult4 = tmp(4945);
     const animatedProps = tmpResult4.useAnimatedProps(fn2);
     if (cResult[7] === animatedStyle) {
       let tmp21;
@@ -162,7 +162,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
             num2 = c9;
           }
           const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-          const withTiming2 = tmp(5093).withTiming;
+          const withTiming2 = tmp(5192).withTiming;
           let num3 = 12;
           timing;
           if (obj.get()) {
@@ -194,7 +194,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
               num2 = c9;
             }
             const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-            const withTiming2 = tmp(5093).withTiming;
+            const withTiming2 = tmp(5192).withTiming;
             let num3 = 12;
             timing;
             if (obj.get()) {
@@ -235,7 +235,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
               num2 = c9;
             }
             const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-            const withTiming2 = tmp(5093).withTiming;
+            const withTiming2 = tmp(5192).withTiming;
             let num3 = 12;
             timing;
             if (obj.get()) {
@@ -268,7 +268,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
                 num2 = c9;
               }
               const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-              const withTiming2 = tmp(5093).withTiming;
+              const withTiming2 = tmp(5192).withTiming;
               let num3 = 12;
               timing;
               if (obj.get()) {
@@ -331,7 +331,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
                       num2 = c9;
                     }
                     const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-                    const withTiming2 = tmp(5093).withTiming;
+                    const withTiming2 = tmp(5192).withTiming;
                     let num3 = 12;
                     timing;
                     if (obj.get()) {
@@ -348,7 +348,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
                 }
                 const obj6 = { animatedProps, style: tmp21, children: items2 };
                 items2 = [tmp24, tmp34];
-                const tmp38 = closure_8(stateFromStores(4850).View, obj6);
+                const tmp38 = closure_8(stateFromStores(4945).View, obj6);
                 cResult[26] = animatedProps;
                 cResult[27] = tmp34;
                 cResult[28] = tmp21;
@@ -371,7 +371,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
                     num2 = c9;
                   }
                   const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-                  const withTiming2 = tmp(5093).withTiming;
+                  const withTiming2 = tmp(5192).withTiming;
                   let num3 = 12;
                   timing;
                   if (obj.get()) {
@@ -408,7 +408,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
                   num2 = c9;
                 }
                 const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-                const withTiming2 = tmp(5093).withTiming;
+                const withTiming2 = tmp(5192).withTiming;
                 let num3 = 12;
                 timing;
                 if (obj.get()) {
@@ -424,7 +424,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
               }
             }
             const obj9 = { onPress: openPayment, text: buttonText };
-            const tmp33 = closure_7(stateFromStores(9778), obj9);
+            const tmp33 = closure_7(stateFromStores(10081), obj9);
             cResult[20] = buttonText;
             cResult[21] = openPayment;
             cResult[22] = tmp33;
@@ -440,7 +440,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
       }
       const obj10 = { pointerEvents: "none", style: tmp4.gradient, colors: tmp14, locations: tmp23, start: null, end: null };
       ({ START: obj8.start, END: obj8.end } = VerticalGradient);
-      const tmp27 = closure_7(stateFromStores(5391), obj10);
+      const tmp27 = closure_7(stateFromStores(5491), obj10);
       cResult[11] = tmp14;
       cResult[12] = tmp4.gradient;
       cResult[13] = tmp27;
@@ -502,7 +502,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
         num2 = c9;
       }
       const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-      const withTiming2 = tmp(5093).withTiming;
+      const withTiming2 = tmp(5192).withTiming;
       let num3 = 12;
       timing;
       if (obj.get()) {

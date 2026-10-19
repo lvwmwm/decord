@@ -1,22 +1,22 @@
-// Module ID: 17322
-// Function ID: 17323
+// Module ID: 12315
+// Function ID: 12316
 // Name: ConjureNativeStatusStrip
-// Dependencies: [32, 19, 17, 13234, 14232, 21, 5092, 587, 558, 576, 17193, 14231, 14235, 504, 1126, 5056, 17323, 6185, 3849, 17324, 5088, 5046, 2]
+// Dependencies: [32, 19, 17, 10993, 11730, 21, 5191, 587, 558, 576, 12143, 11729, 12316, 504, 1128, 5155, 12321, 6462, 3883, 12322, 5187, 5145, 2]
 
-// Module 17322 (ConjureNativeStatusStrip)
+// Module 12315 (ConjureNativeStatusStrip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3849 from "module_3849" /* 3849 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
-import AILoaderConstants from "AILoaderConstants" /* 14232 */;
-import ConjureStatusLabels from "ConjureStatusLabels" /* 17193 */;
-import ConjureUsageSheet from "ConjureUsageSheet" /* 17323 */;
-import ConjureNativeTurnTimerDefault from "ConjureNativeTurnTimer" /* 17324 */;
+import _modDef3883 from "module_3883" /* 3883 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5155 */;
+import AILoaderConstants from "AILoaderConstants" /* 11730 */;
+import ConjureStatusLabels from "ConjureStatusLabels" /* 12143 */;
+import ConjureUsageSheet from "ConjureUsageSheet" /* 12321 */;
+import ConjureNativeTurnTimerDefault from "ConjureNativeTurnTimer" /* 12322 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 13234 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10993 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -351,20 +351,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   let onToggleThinking;
   let projectUsage;
   let recalling;
+  let remixStartedAt;
   let saving;
   let stringResult;
   let thinking;
   let thinkingOpen;
   let tmp10;
-  let tmp26Result;
-  let tmp29;
+  let tmp28Result;
+  let tmp31;
   let tmp9;
-  let turnStartedAt;
   let tmp = projectId;
   let obj = projectId(576);
-  const cResult = obj.c(47);
+  const cResult = obj.c(49);
   projectId = projectId.projectId;
-  ({ thinking, turnStartedAt, compacting, saving, recalling, activity, projectUsage, connLabel, connFailed, controlling, thinkingOpen, onToggleThinking } = projectId);
+  ({ thinking, remixStartedAt, compacting, saving, recalling, activity, projectUsage, connLabel, connFailed, controlling, thinkingOpen, onToggleThinking } = projectId);
+  let tmp4 = undefined !== saving;
+  const turnStartedAt = projectId.turnStartedAt;
+  if (tmp4) {
+    tmp4 = saving;
+  }
   closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConjurePublishStatusStore];
@@ -394,211 +399,241 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp9, tmp10);
+  if (remixStartedAt == null) {
+    let tmp13;
+    if (thinking) {
+      tmp13 = turnStartedAt;
+    }
+    remixStartedAt = tmp13;
+  }
   if (cResult[4] === activity) {
-    if (cResult[5] === compacting) {
-      if (cResult[6] === controlling) {
-        if (cResult[7] === stateFromStores) {
-          if (cResult[8] === (undefined !== recalling && recalling)) {
-            let tmp12;
-            let tmp13;
-            if (cResult[9] === (undefined !== saving && saving)) {
-              tmp12 = cResult[10];
-              tmp13 = cResult[11];
-            }
-            const first1 = tmp(17193).RECALLING_LINES[0];
-            if (cResult[12] !== projectUsage) {
-              let runesUsedLabelsResult = null;
-              if (null != projectUsage) {
-                const tmpResult3 = tmp(17193);
-                runesUsedLabelsResult = tmpResult3.runesUsedLabels(projectUsage);
-              }
-              cResult[12] = projectUsage;
-              cResult[13] = runesUsedLabelsResult;
-            }
-            let tmp20 = null != activity && "" !== activity.text;
-            let tmp21 = thinking;
-            if (tmp21) {
-              if (!tmp20) {
-                tmp20 = thinkingOpen;
-              }
-              tmp21 = tmp20;
-            }
-            if (cResult[14] !== projectId) {
-              class G {
-                constructor() {
-                  let obj2;
-                  const tmp = ActionSheetActionCreators;
-                  const showActionSheet = tmp.showActionSheet;
-                  const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
-                  obj2 = { projectId };
-                  showActionSheet(obj);
+    if (cResult[5] === (thinking || null != remixStartedAt || tmp4)) {
+      if (cResult[6] === compacting) {
+        if (cResult[7] === controlling) {
+          if (cResult[8] === stateFromStores) {
+            if (cResult[9] === (undefined !== recalling && recalling)) {
+              if (cResult[10] === null != remixStartedAt) {
+                let tmp15;
+                let tmp16;
+                if (cResult[11] === tmp4) {
+                  tmp15 = cResult[12];
+                  tmp16 = cResult[13];
                 }
-              }
-              cResult[14] = projectId;
-              cResult[15] = G;
-            } else {
-              class G {
-                constructor() {
-                  let obj2;
-                  const tmp = ActionSheetActionCreators;
-                  const showActionSheet = tmp.showActionSheet;
-                  const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
-                  obj2 = { projectId };
-                  showActionSheet(obj);
+                const first1 = tmp(12143).RECALLING_LINES[0];
+                if (cResult[14] !== projectUsage) {
+                  let runesUsedLabelsResult = null;
+                  if (null != projectUsage) {
+                    const tmpResult3 = tmp(12143);
+                    runesUsedLabelsResult = tmpResult3.runesUsedLabels(projectUsage);
+                  }
+                  cResult[14] = projectUsage;
+                  cResult[15] = runesUsedLabelsResult;
                 }
+                let tmp23 = null != activity && "" !== activity.text;
+                if (thinking) {
+                  if (!tmp23) {
+                    tmp23 = thinkingOpen;
+                  }
+                  thinking = tmp23;
+                }
+                if (cResult[16] !== projectId) {
+                  class K {
+                    constructor() {
+                      let obj2;
+                      const tmp = ActionSheetActionCreators;
+                      const showActionSheet = tmp.showActionSheet;
+                      const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
+                      obj2 = { projectId };
+                      showActionSheet(obj);
+                    }
+                  }
+                  cResult[16] = projectId;
+                  cResult[17] = K;
+                } else {
+                  class K {
+                    constructor() {
+                      let obj2;
+                      const tmp = ActionSheetActionCreators;
+                      const showActionSheet = tmp.showActionSheet;
+                      const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
+                      obj2 = { projectId };
+                      showActionSheet(obj);
+                    }
+                  }
+                }
+                if (cResult[18] === (thinking || null != remixStartedAt || tmp4)) {
+                  class K {
+                    constructor() {
+                      let obj2;
+                      const tmp = ActionSheetActionCreators;
+                      const showActionSheet = tmp.showActionSheet;
+                      const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
+                      obj2 = { projectId };
+                      showActionSheet(obj);
+                    }
+                  }
+                }
+                if (!(thinking || null != remixStartedAt || tmp4)) {
+                  class K {
+                    constructor() {
+                      let obj2;
+                      const tmp = ActionSheetActionCreators;
+                      const showActionSheet = tmp.showActionSheet;
+                      const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
+                      obj2 = { projectId };
+                      showActionSheet(obj);
+                    }
+                  }
+                  cResult[18] = thinking || null != remixStartedAt || tmp4;
+                  cResult[19] = thinking;
+                  cResult[20] = tmp16;
+                  cResult[21] = onToggleThinking;
+                  cResult[22] = stateFromStores;
+                  cResult[23] = undefined !== recalling && recalling;
+                  cResult[24] = tmp15 === first1;
+                  cResult[25] = tmp4;
+                  cResult[26] = thinkingOpen;
+                  cResult[27] = tmp28Result;
+                }
+                const PressableOpacity = tmp(6462).PressableOpacity;
+                if (!thinking) {
+                  class K {
+                    constructor() {
+                      let obj2;
+                      const tmp = ActionSheetActionCreators;
+                      const showActionSheet = tmp.showActionSheet;
+                      const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
+                      obj2 = { projectId };
+                      showActionSheet(obj);
+                    }
+                  }
+                }
+                let obj2 = { accessible: tmp29, accessibilityRole: undefined, accessibilityState: tmp31, accessibilityLabel: tmp33, accessibilityHint: stringResult, hitSlop: 8, disabled: !thinking, onPress: onToggleThinking, children: closure_8(closure_11, obj3) };
+                if (thinking) {
+                  class K {
+                    constructor() {
+                      let obj2;
+                      const tmp = ActionSheetActionCreators;
+                      const showActionSheet = tmp.showActionSheet;
+                      const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
+                      obj2 = { projectId };
+                      showActionSheet(obj);
+                    }
+                  }
+                }
+                tmp31 = undefined;
+                if (thinking) {
+                  class K {
+                    constructor() {
+                      let obj2;
+                      const tmp = ActionSheetActionCreators;
+                      const showActionSheet = tmp.showActionSheet;
+                      const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
+                      obj2 = { projectId };
+                      showActionSheet(obj);
+                    }
+                  }
+                  tmp32[0] = thinkingOpen;
+                  tmp31 = tmp32;
+                }
+                if (thinking) {
+                  class K {
+                    constructor() {
+                      let obj2;
+                      const tmp = ActionSheetActionCreators;
+                      const showActionSheet = tmp.showActionSheet;
+                      const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
+                      obj2 = { projectId };
+                      showActionSheet(obj);
+                    }
+                  }
+                } else {
+                  class K {
+                    constructor() {
+                      let obj2;
+                      const tmp = ActionSheetActionCreators;
+                      const showActionSheet = tmp.showActionSheet;
+                      const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
+                      obj2 = { projectId };
+                      showActionSheet(obj);
+                    }
+                  }
+                }
+                stringResult = undefined;
+                if (thinking) {
+                  class K {
+                    constructor() {
+                      let obj2;
+                      const tmp = ActionSheetActionCreators;
+                      const showActionSheet = tmp.showActionSheet;
+                      const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
+                      obj2 = { projectId };
+                      showActionSheet(obj);
+                    }
+                  }
+                  stringResult = obj6.string(_modDef3883["0Kemnh"]);
+                }
+                obj3 = { line: tmp16, rotating: tmp15 === first1, immediate: tmp4 };
+                tmp28Result = closure_8(PressableOpacity, obj2);
               }
             }
-            if (cResult[16] === tmp21) {
-              class G {
-                constructor() {
-                  let obj2;
-                  const tmp = ActionSheetActionCreators;
-                  const showActionSheet = tmp.showActionSheet;
-                  const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
-                  obj2 = { projectId };
-                  showActionSheet(obj);
-                }
-              }
-            }
-            if (!thinking) {
-              class G {
-                constructor() {
-                  let obj2;
-                  const tmp = ActionSheetActionCreators;
-                  const showActionSheet = tmp.showActionSheet;
-                  const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
-                  obj2 = { projectId };
-                  showActionSheet(obj);
-                }
-              }
-              cResult[16] = tmp21;
-              cResult[17] = tmp13;
-              cResult[18] = onToggleThinking;
-              cResult[19] = undefined !== recalling && recalling;
-              cResult[20] = tmp12 === first1;
-              cResult[21] = undefined !== saving && saving;
-              cResult[22] = thinking;
-              cResult[23] = thinkingOpen;
-              cResult[24] = tmp26Result;
-            }
-            const PressableOpacity = tmp(6185).PressableOpacity;
-            if (!tmp21) {
-              class G {
-                constructor() {
-                  let obj2;
-                  const tmp = ActionSheetActionCreators;
-                  const showActionSheet = tmp.showActionSheet;
-                  const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
-                  obj2 = { projectId };
-                  showActionSheet(obj);
-                }
-              }
-            }
-            let obj2 = { accessible: tmp27, accessibilityRole: undefined, accessibilityState: tmp29, accessibilityLabel: tmp31, accessibilityHint: stringResult, hitSlop: 8, disabled: !tmp21, onPress: onToggleThinking, children: closure_8(closure_11, obj3) };
-            if (tmp21) {
-              class G {
-                constructor() {
-                  let obj2;
-                  const tmp = ActionSheetActionCreators;
-                  const showActionSheet = tmp.showActionSheet;
-                  const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
-                  obj2 = { projectId };
-                  showActionSheet(obj);
-                }
-              }
-            }
-            tmp29 = undefined;
-            if (tmp21) {
-              class G {
-                constructor() {
-                  let obj2;
-                  const tmp = ActionSheetActionCreators;
-                  const showActionSheet = tmp.showActionSheet;
-                  const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
-                  obj2 = { projectId };
-                  showActionSheet(obj);
-                }
-              }
-              tmp30[0] = thinkingOpen;
-              tmp29 = tmp30;
-            }
-            if (tmp21) {
-              class G {
-                constructor() {
-                  let obj2;
-                  const tmp = ActionSheetActionCreators;
-                  const showActionSheet = tmp.showActionSheet;
-                  const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
-                  obj2 = { projectId };
-                  showActionSheet(obj);
-                }
-              }
-            } else {
-              class G {
-                constructor() {
-                  let obj2;
-                  const tmp = ActionSheetActionCreators;
-                  const showActionSheet = tmp.showActionSheet;
-                  const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
-                  obj2 = { projectId };
-                  showActionSheet(obj);
-                }
-              }
-            }
-            stringResult = undefined;
-            if (tmp21) {
-              class G {
-                constructor() {
-                  let obj2;
-                  const tmp = ActionSheetActionCreators;
-                  const showActionSheet = tmp.showActionSheet;
-                  const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
-                  obj2 = { projectId };
-                  showActionSheet(obj);
-                }
-              }
-              stringResult = obj6.string(_modDef3849["0Kemnh"]);
-            }
-            obj3 = { line: tmp13, rotating: tmp12 === first1, immediate: undefined !== saving && saving };
-            tmp26Result = closure_8(PressableOpacity, obj2);
           }
         }
       }
     }
   }
-  const tmpResult4 = tmp(17193);
-  const thinkingLabelResult = tmpResult4.thinkingLabel({ activity, compacting, saving: undefined !== saving && saving, recalling: undefined !== recalling && recalling, controlling, publishPending: stateFromStores });
-  const intl = tmp(1126).intl;
+  const obj4 = { activity, compacting, saving: tmp4, remixing: null != remixStartedAt, recalling: undefined !== recalling && recalling, controlling, publishPending: stateFromStores, publishing: stateFromStores };
+  const thinkingLabel = tmp(12143).thinkingLabel;
+  tmp(12143);
+  if (stateFromStores) {
+    class K {
+      constructor() {
+        let obj2;
+        const tmp = ActionSheetActionCreators;
+        const showActionSheet = tmp.showActionSheet;
+        const obj = { content: metroImportAll(ConjureUsageSheetDefault, obj2), key: ConjureUsageSheet.CONJURE_USAGE_SHEET_KEY };
+        obj2 = { projectId };
+        showActionSheet(obj);
+      }
+    }
+  }
+  const thinkingLabelResult = thinkingLabel(obj4);
+  const intl = tmp(1128).intl;
   const stringResult1 = intl.string(thinkingLabelResult);
   cResult[4] = activity;
-  cResult[5] = compacting;
-  cResult[6] = controlling;
-  cResult[7] = stateFromStores;
-  cResult[8] = undefined !== recalling && recalling;
-  cResult[9] = undefined !== saving && saving;
-  cResult[10] = thinkingLabelResult;
-  cResult[11] = stringResult1;
-  tmp13 = stringResult1;
-  tmp12 = thinkingLabelResult;
+  cResult[5] = thinking || null != remixStartedAt || tmp4;
+  cResult[6] = compacting;
+  cResult[7] = controlling;
+  cResult[8] = stateFromStores;
+  cResult[9] = undefined !== recalling && recalling;
+  cResult[10] = null != remixStartedAt;
+  cResult[11] = tmp4;
+  cResult[12] = thinkingLabelResult;
+  cResult[13] = stringResult1;
+  tmp16 = stringResult1;
+  tmp15 = thinkingLabelResult;
 }) : (function ConjureNativeStatusStrip(projectId) {
   let activity;
+  let compacting;
   let connFailed;
   let connLabel;
   let controlling;
   let items4;
   let onToggleThinking;
   let projectUsage;
+  let remixStartedAt;
   let saving;
   let str2;
   let stringResult1;
   let thinking;
   let thinkingOpen;
-  let tmp18;
-  let tmp19;
+  let tmp22;
+  let tmp23;
+  let tmp9;
   let turnStartedAt;
   projectId = projectId.projectId;
-  ({ thinking, turnStartedAt, saving } = projectId);
-  const compacting = projectId.compacting;
+  ({ thinking, remixStartedAt, saving } = projectId);
+  ({ turnStartedAt, compacting } = projectId);
   if (saving === undefined) {
     saving = false;
   }
@@ -620,96 +655,105 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     }
     return true === publishing;
   }, items1);
-  let obj2 = projectId(17193);
-  const thinkingLabelResult = obj2.thinkingLabel({ activity, compacting, saving, recalling: flag, controlling, publishPending: stateFromStores });
-  const intl = projectId(1126).intl;
+  if (remixStartedAt == null) {
+    let tmp6;
+    if (thinking) {
+      tmp6 = turnStartedAt;
+    }
+    remixStartedAt = tmp6;
+  }
+  let obj2 = { activity, compacting, saving, remixing: tmp5, recalling: flag, controlling, publishPending: tmp9, publishing: stateFromStores };
+  tmp9 = stateFromStores;
+  const thinkingLabel = projectId(12143).thinkingLabel;
+  projectId(12143);
+  if (stateFromStores) {
+    tmp9 = tmp7;
+  }
+  const thinkingLabelResult = thinkingLabel(obj2);
+  const intl = tmp2(1128).intl;
   const stringResult = intl.string(thinkingLabelResult);
   let runesUsedLabelsResult = null;
-  const first = projectId(17193).RECALLING_LINES[0];
+  const first = tmp2(12143).RECALLING_LINES[0];
   if (null != projectUsage) {
-    const tmp2Result = projectId(17193);
-    runesUsedLabelsResult = tmp2Result.runesUsedLabels(projectUsage);
+    const tmp2Result2 = projectId(12143);
+    runesUsedLabelsResult = tmp2Result2.runesUsedLabels(projectUsage);
   }
-  let tmp9 = null != activity && "" !== activity.text;
-  let tmp10 = thinking;
-  if (tmp10) {
-    if (!tmp9) {
-      tmp9 = thinkingOpen;
+  let tmp14 = null != activity && "" !== activity.text;
+  if (thinking) {
+    if (!tmp14) {
+      tmp14 = thinkingOpen;
     }
-    tmp10 = tmp9;
+    thinking = tmp14;
   }
   [][0] = projectId;
   const obj3 = { style: tmp.row, children: null };
   const obj4 = { style: tmp.activity, children: null };
   const obj5 = { style: tmp.live, accessibilityRole: "none", accessibilityLiveRegion: "polite", children: null };
-  if (!thinking) {
-    let tmp14Result4;
+  if (!(thinking || null != remixStartedAt || saving)) {
+    let tmp18Result4;
     if (!flag) {
-      tmp14Result4 = null;
+      tmp18Result4 = null;
     }
-    obj5.children = tmp14Result4;
+    obj5.children = tmp18Result4;
     const items2 = [closure_8(View, obj5), ];
-    let tmp14Result = null;
-    if (thinking) {
-      tmp14Result = null;
-      if (null != turnStartedAt) {
-        const obj6 = { startedAt: turnStartedAt, variant: "text-xs/medium" };
-        tmp14Result = tmp14(ConjureNativeTurnTimerDefault, obj6);
-      }
+    let tmp18Result = null;
+    if (null != remixStartedAt) {
+      const obj6 = { startedAt: remixStartedAt, variant: "text-xs/medium" };
+      tmp18Result = tmp18(ConjureNativeTurnTimerDefault, obj6);
     }
-    items2[1] = tmp14Result;
+    items2[1] = tmp18Result;
     obj4.children = items2;
     const items3 = [closure_9(View, obj4), , ];
-    let tmp14Result3 = null;
+    let tmp18Result3 = null;
     if (null != connLabel) {
       let str3 = "text-muted";
-      const Text = tmp2(5088).Text;
+      const Text = tmp2(5187).Text;
       if (connFailed) {
         str3 = "text-feedback-critical";
       }
       const obj7 = { variant: "text-xs/medium", color: str3, children: connLabel };
-      tmp14Result3 = tmp14(Text, obj7);
+      tmp18Result3 = tmp18(Text, obj7);
     }
-    items3[1] = tmp14Result3;
-    let tmp12Result = null;
+    items3[1] = tmp18Result3;
+    let tmp16Result = null;
     if (null != runesUsedLabelsResult) {
-      const obj8 = { accessibilityRole: "button", accessibilityLabel: runesUsedLabelsResult.aria, hitSlop: 8, style: tmp.runes, onPress: tmp11, children: items4 };
-      const PressableOpacity2 = tmp2(6185).PressableOpacity;
+      const obj8 = { accessibilityRole: "button", accessibilityLabel: runesUsedLabelsResult.aria, hitSlop: 8, style: tmp.runes, onPress: tmp15, children: items4 };
+      const PressableOpacity2 = tmp2(6462).PressableOpacity;
       const obj9 = { variant: "text-xs/medium", color: "text-muted", children: runesUsedLabelsResult.text };
-      items4 = [closure_8(projectId(5088).Text, obj9), ];
+      items4 = [closure_8(projectId(5187).Text, obj9), ];
       const obj10 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-      const CircleInformationIcon = tmp2(5046).CircleInformationIcon;
+      const CircleInformationIcon = tmp2(5145).CircleInformationIcon;
       items4[1] = closure_8(CircleInformationIcon, obj10);
-      tmp12Result = tmp12(PressableOpacity2, obj8);
+      tmp16Result = tmp16(PressableOpacity2, obj8);
     }
-    items3[2] = tmp12Result;
+    items3[2] = tmp16Result;
     obj3.children = items3;
     return closure_9(View, obj3);
   }
-  let tmp17 = tmp10;
-  const PressableOpacity = tmp2(6185).PressableOpacity;
-  if (!tmp10) {
-    tmp17 = tmp16;
+  let tmp21 = thinking;
+  const PressableOpacity = tmp2(6462).PressableOpacity;
+  if (!thinking) {
+    tmp21 = tmp20;
   }
-  const obj11 = { accessible: tmp17, accessibilityRole: str2, accessibilityState: tmp18, accessibilityLabel: tmp19, accessibilityHint: stringResult1, hitSlop: 8, disabled: !tmp10, onPress: onToggleThinking, children: closure_8(closure_11, { line: stringResult, rotating: thinkingLabelResult === first, immediate: saving }) };
+  const obj11 = { accessible: tmp21, accessibilityRole: str2, accessibilityState: tmp22, accessibilityLabel: tmp23, accessibilityHint: stringResult1, hitSlop: 8, disabled: !thinking, onPress: onToggleThinking, children: closure_8(closure_11, { line: stringResult, rotating: thinkingLabelResult === first, immediate: saving }) };
   str2 = undefined;
-  if (tmp10) {
+  if (thinking) {
     str2 = "button";
   }
-  tmp18 = undefined;
-  if (tmp10) {
-    tmp18 = { expanded: thinkingOpen };
+  tmp22 = undefined;
+  if (thinking) {
+    tmp22 = { expanded: thinkingOpen };
     const obj12 = { expanded: thinkingOpen };
   }
-  if (tmp10) {
-    tmp19 = stringResult;
+  if (thinking) {
+    tmp23 = stringResult;
   }
   stringResult1 = undefined;
-  if (tmp10) {
-    const intl2 = tmp2(1126).intl;
-    stringResult1 = intl2.string(_modDef3849["0Kemnh"]);
+  if (thinking) {
+    const intl2 = tmp2(1128).intl;
+    stringResult1 = intl2.string(_modDef3883["0Kemnh"]);
   }
-  tmp14Result4 = tmp14(PressableOpacity, obj11);
+  tmp18Result4 = tmp18(PressableOpacity, obj11);
 });
 const result = size.fileFinishedImporting("modules/conjure/agent_activity/native/ConjureNativeStatusStrip.tsx");
 

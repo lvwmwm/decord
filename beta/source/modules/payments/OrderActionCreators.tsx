@@ -1,15 +1,15 @@
-// Module ID: 6945
-// Function ID: 6946
+// Module ID: 7221
+// Function ID: 7222
 // Name: OrderActionCreators
-// Dependencies: [5, 1085, 3, 4791, 1295, 4784, 2]
+// Dependencies: [5, 1087, 3, 4886, 1297, 4879, 2]
 // Exports: fetchOrderEntitlementsWithRetry, getOrder, signOrder
 
-// Module 6945 (OrderActionCreators)
+// Module 7221 (OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
+import Constants from "Constants" /* 1087 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BillingError_mod from "BillingError" /* 4791 */;
+import BillingError_mod from "BillingError" /* 4886 */;
 import size from "module_2" /* 2 */;
 
 let c11, c12;
@@ -69,7 +69,7 @@ let obj = function _signOrder() {
             body = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {

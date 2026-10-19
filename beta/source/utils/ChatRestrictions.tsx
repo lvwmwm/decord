@@ -1,12 +1,12 @@
-// Module ID: 9707
-// Function ID: 9708
+// Module ID: 10010
+// Function ID: 10011
 // Name: ChatRestrictions
-// Dependencies: [1085, 9708, 1126, 2]
+// Dependencies: [1087, 10011, 1128, 2]
 
-// Module 9707 (ChatRestrictions)
-import Constants from "Constants" /* 1085 */;
-import intl3 from "intl" /* 1126 */;
-import MentionGuardUtilsDefault from "MentionGuardUtils" /* 9708 */;
+// Module 10010 (ChatRestrictions)
+import Constants from "Constants" /* 1087 */;
+import intl3 from "intl" /* 1128 */;
+import MentionGuardUtilsDefault from "MentionGuardUtils" /* 10011 */;
 import size from "module_2" /* 2 */;
 
 const TOKEN_REGEX = Constants.TOKEN_REGEX;
@@ -36,17 +36,17 @@ let obj = {
             const powResult = Math.pow(10, Math.floor(Math.log10(everyoneMemberCountResult)));
             let v47E5Rz = intl3.t["47E5Rz"];
             if (getGuildId.isForumPost()) {
-              v47E5Rz = tmp7(1126).t.sYW2cy;
+              v47E5Rz = tmp7(1128).t.sYW2cy;
             } else if (getGuildId.isThread()) {
-              v47E5Rz = tmp7(1126).t["2YaiQ1"];
+              v47E5Rz = tmp7(1128).t["2YaiQ1"];
             }
             const obj = { body: formatToPlainString(v47E5Rz, obj2), footer: intl2.string(intl3.t.mVyrtu) };
-            const intl = tmp7(1126).intl;
+            const intl = tmp7(1128).intl;
             const _Math4 = Math;
             formatToPlainString = intl.formatToPlainString;
             obj2 = { role: extractEveryoneRoleResult, count: result.toLocaleString() };
             result = Math.trunc(everyoneMemberCountResult / powResult) * powResult;
-            intl2 = tmp7(1126).intl;
+            intl2 = tmp7(1128).intl;
             return obj;
           } else {
             return false;
@@ -58,7 +58,7 @@ let obj = {
     }
   },
   analyticsType: "@Everyone Warning",
-  animation: "color"
+  animation: "ix"
 };
 const items = [
   obj,

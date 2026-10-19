@@ -1,20 +1,20 @@
-// Module ID: 13587
-// Function ID: 13588
+// Module ID: 14367
+// Function ID: 14368
 // Name: EndStageActionSheet
-// Dependencies: [19, 17, 5892, 1085, 21, 5092, 587, 558, 576, 5056, 8781, 7483, 1126, 1200, 5088, 5379, 13033, 2]
+// Dependencies: [19, 17, 6148, 1087, 21, 5191, 587, 558, 576, 5155, 9058, 7754, 1128, 1202, 5187, 5479, 13961, 2]
 
-// Module 13587 (EndStageActionSheet)
+// Module 14367 (EndStageActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 5892 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7483 */;
-import CallsUtils from "CallsUtils" /* 8781 */;
-import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 13033 */;
+import Constants from "Constants" /* 1087 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6148 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7754 */;
+import CallsUtils from "CallsUtils" /* 9058 */;
+import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 13961 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,8 +69,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
     const _Symbol = Symbol;
     ({ container, title } = tmp4);
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
-      const stringResult = intl.string(channel(1126).t.pADdJu);
+      const intl = tmp(1128).intl;
+      const stringResult = intl.string(channel(1128).t.pADdJu);
       cResult[5] = stringResult;
       tmp8 = stringResult;
     } else {
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
     }
     if (cResult[6] !== tmp4.title) {
       let obj2 = { style: title, accessibilityRole: "header", children: tmp8 };
-      const tmp12 = closure_5(channel(1200).LegacyText, obj2);
+      const tmp12 = closure_5(channel(1202).LegacyText, obj2);
       cResult[6] = tmp4.title;
       cResult[7] = tmp12;
       tmp10 = tmp12;
@@ -88,8 +88,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
     const _Symbol2 = Symbol;
     const subtitle = tmp4.subtitle;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1126).intl;
-      const stringResult1 = intl2.string(channel(1126).t.mT7jwN);
+      const intl2 = tmp(1128).intl;
+      const stringResult1 = intl2.string(channel(1128).t.mT7jwN);
       cResult[8] = stringResult1;
       tmp13 = stringResult1;
     } else {
@@ -97,7 +97,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
     }
     if (cResult[9] !== tmp4.subtitle) {
       const obj3 = { style: subtitle, variant: "text-md/medium", color: "text-default", children: tmp13 };
-      const tmp17 = closure_5(channel(5088).Text, obj3);
+      const tmp17 = closure_5(channel(5187).Text, obj3);
       cResult[9] = tmp4.subtitle;
       cResult[10] = tmp17;
       tmp15 = tmp17;
@@ -107,8 +107,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
     const _Symbol3 = Symbol;
     const cancelButton = tmp4.cancelButton;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1126).intl;
-      const stringResult2 = intl3.string(channel(1126).t.xTwqz2);
+      const intl3 = tmp(1128).intl;
+      const stringResult2 = intl3.string(channel(1128).t.xTwqz2);
       cResult[11] = stringResult2;
       tmp18 = stringResult2;
     } else {
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
     }
     if (cResult[12] !== tmp5) {
       const obj4 = { variant: "secondary", text: tmp18, onPress: tmp5 };
-      const tmp22 = closure_5(channel(5379).Button, obj4);
+      const tmp22 = closure_5(channel(5479).Button, obj4);
       cResult[12] = tmp5;
       cResult[13] = tmp22;
       tmp20 = tmp22;
@@ -133,8 +133,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
       const _Symbol4 = Symbol;
       const confirmButton = tmp4.confirmButton;
       if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl4 = tmp(1126).intl;
-        const stringResult3 = intl4.string(channel(1126).t.wnWqGg);
+        const intl4 = tmp(1128).intl;
+        const stringResult3 = intl4.string(channel(1128).t.wnWqGg);
         cResult[17] = stringResult3;
         tmp27 = stringResult3;
       } else {
@@ -142,7 +142,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
       }
       if (cResult[18] !== tmp6) {
         const obj5 = { variant: "destructive", text: tmp27, onPress: tmp6 };
-        const tmp31 = closure_5(channel(5379).Button, obj5);
+        const tmp31 = closure_5(channel(5479).Button, obj5);
         cResult[18] = tmp6;
         cResult[19] = tmp31;
         tmp29 = tmp31;
@@ -218,19 +218,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
   const tmp = closure_7();
   let obj = { children: closure_6(View, obj2) };
   obj2 = { style: tmp.container, children: items };
-  let obj3 = { style: tmp.title, accessibilityRole: "header", children: intl.string(channel(1126).t.pADdJu) };
+  let obj3 = { style: tmp.title, accessibilityRole: "header", children: intl.string(channel(1128).t.pADdJu) };
   const tmp2 = ScrollHandlingActionSheetDefault;
-  const LegacyText = channel(1200).LegacyText;
-  intl = channel(1126).intl;
+  const LegacyText = channel(1202).LegacyText;
+  intl = channel(1128).intl;
   items = [closure_5(LegacyText, obj3), , , ];
-  const obj4 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: intl2.string(channel(1126).t.mT7jwN) };
-  const Text = channel(5088).Text;
-  intl2 = channel(1126).intl;
+  const obj4 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: intl2.string(channel(1128).t.mT7jwN) };
+  const Text = channel(5187).Text;
+  intl2 = channel(1128).intl;
   items[1] = closure_5(Text, obj4);
   const obj5 = { style: tmp.cancelButton, children: closure_5(Button, obj6) };
   obj6 = {
     variant: "secondary",
-    text: intl3.string(channel(1126).t.xTwqz2),
+    text: intl3.string(channel(1128).t.xTwqz2),
     onPress: function handleClose() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet(closure_4);
@@ -238,13 +238,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
       obj2.handleDisconnect(channel);
     }
   };
-  Button = channel(5379).Button;
-  intl3 = channel(1126).intl;
+  Button = channel(5479).Button;
+  intl3 = channel(1128).intl;
   items[2] = closure_5(View, obj5);
   const obj7 = { style: tmp.confirmButton, children: closure_5(Button2, obj8) };
   obj8 = {
     variant: "destructive",
-    text: intl4.string(channel(1126).t.wnWqGg),
+    text: intl4.string(channel(1128).t.wnWqGg),
     onPress: function handleConfirmClick() {
       const obj = StageChannelActionCreators;
       obj.endStage(channel);
@@ -254,8 +254,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EndStageActi
       obj3.handleDisconnect(channel);
     }
   };
-  Button2 = channel(5379).Button;
-  intl4 = channel(1126).intl;
+  Button2 = channel(5479).Button;
+  intl4 = channel(1128).intl;
   items[3] = closure_5(View, obj7);
   return closure_5(tmp2, obj);
 });

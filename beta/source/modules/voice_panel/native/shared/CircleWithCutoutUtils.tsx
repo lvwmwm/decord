@@ -1,12 +1,12 @@
-// Module ID: 10844
-// Function ID: 10845
+// Module ID: 11244
+// Function ID: 11245
 // Name: CircleWithCutoutUtils
-// Dependencies: [19, 21, 558, 576, 7572, 2]
+// Dependencies: [19, 21, 558, 576, 7843, 2]
 // Exports: getBadgeLeft, getBadgeTop, getCutoutCenterX, getCutoutCenterY
 
-// Module 10844 (CircleWithCutoutUtils)
+// Module 11244 (CircleWithCutoutUtils)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7572 */;
+import inlineStyles from "inlineStyles" /* 7843 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -99,7 +99,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CircleWithCu
             tmp22 = tmp24;
           }
           const obj3 = { children: React3(inlineStyles.Mask, obj4) };
-          const Defs = tmp(7572).Defs;
+          const Defs = tmp(7843).Defs;
           obj4 = { id: "mask", children: items1 };
           items1 = [tmp12, tmp15];
           const tmp21 = _false(Defs, obj3);

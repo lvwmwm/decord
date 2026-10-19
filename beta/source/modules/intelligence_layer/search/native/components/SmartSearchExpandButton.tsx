@@ -1,34 +1,33 @@
-// Module ID: 17455
-// Function ID: 17456
+// Module ID: 17837
+// Function ID: 17838
 // Name: SmartSearchExpandButton
-// Dependencies: [19, 17, 21, 587, 5092, 558, 576, 17454, 10534, 13870, 1126, 4075, 2]
+// Dependencies: [19, 17, 21, 587, 5191, 558, 576, 17836, 10859, 14650, 5156, 1128, 4127, 2]
 
-// Module 17455 (SmartSearchExpandButton)
-import react2 from "react" /* 576 */;
+// Module 17837 (SmartSearchExpandButton)
 import nativeDefault from "native" /* 587 */;
-import _modDef4075 from "module_4075" /* 4075 */;
-import useSearchHostSurface from "useSearchHostSurface" /* 17454 */;
+import _modDef4127 from "module_4127" /* 4127 */;
+import HapticUtils from "HapticUtils" /* 5156 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3;
 let closure_4;
 let hasOwnProperty;
+let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-({ Pressable: c3, StyleSheet: closure_4, View: hasOwnProperty } = react_native);
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ Pressable: closure_4, StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 const rect = { top: nativeDefault.space.PX_8, bottom: nativeDefault.space.PX_8 };
-let closure_9 = createStyles.createStyles((backgroundColor) => {
+let closure_10 = createStyles.createStyles((backgroundColor) => {
   let obj3;
   const obj = { block: { position: "absolute", left: 0, right: 0, bottom: 0, alignItems: "center" }, pill: { height: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.CONTROL_SECONDARY_BORDER_DEFAULT, backgroundColor, alignItems: "center", justifyContent: "center" }, surface: obj3 };
   obj3 = { borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT };
   ({ height: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.CONTROL_SECONDARY_BORDER_DEFAULT, backgroundColor, alignItems: "center", justifyContent: "center" });
-  const merged = Object.assign(absoluteFillObject.absoluteFillObject);
+  const merged = Object.assign(hasOwnProperty.absoluteFillObject);
   return obj;
 });
 const memo = react.memo;
@@ -39,123 +38,144 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let items;
   let onPress;
   let pill;
-  let tmp13;
+  let tmp10;
+  let tmp14;
   let tmp5;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(15);
+  let tmp6;
+  let obj = onPress(576);
+  const cResult = obj.c(17);
   ({ isCollapsed, onPress } = arg0);
-  const obj2 = useSearchHostSurface;
-  const tmp4 = closure_9(obj2.useSearchHostSurfaceColor());
+  const obj2 = onPress(17836);
+  const tmp4 = closure_10(obj2.useSearchHostSurfaceColor());
   if (isCollapsed) {
-    ChevronSmallUpIcon = tmp(10534).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp(10859).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp(13870).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp(14650).ChevronSmallUpIcon;
   }
-  ({ block, pill } = tmp4);
-  if (cResult[0] !== isCollapsed) {
-    const intl = tmp(1126).intl;
-    const string = intl.string;
-    const tmp7 = _modDef4075;
-    const stringResult = string(isCollapsed ? tmp7.NuTbB9 : tmp7.FKLBbW);
-    cResult[0] = isCollapsed;
-    cResult[1] = stringResult;
-    tmp5 = stringResult;
+  if (cResult[0] !== onPress) {
+    const fn = function l() {
+      const obj = HapticUtils;
+      const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
+      onPress();
+    };
+    cResult[0] = onPress;
+    cResult[1] = fn;
+    tmp5 = fn;
   } else {
     tmp5 = cResult[1];
   }
-  if (cResult[2] !== tmp4.surface) {
+  ({ block, pill } = tmp4);
+  if (cResult[2] !== isCollapsed) {
+    const intl = tmp(1128).intl;
+    const string = intl.string;
+    const tmp8 = _modDef4127;
+    const stringResult = string(isCollapsed ? tmp8.NuTbB9 : tmp8.FKLBbW);
+    cResult[2] = isCollapsed;
+    cResult[3] = stringResult;
+    tmp6 = stringResult;
+  } else {
+    tmp6 = cResult[3];
+  }
+  if (cResult[4] !== tmp4.surface) {
     const obj3 = { style: tmp4.surface, pointerEvents: "none" };
-    const tmp12 = metroRequire(hasOwnProperty, obj3);
-    cResult[2] = tmp4.surface;
-    cResult[3] = tmp12;
-    tmp9 = tmp12;
+    const tmp13 = closure_7(closure_6, obj3);
+    cResult[4] = tmp4.surface;
+    cResult[5] = tmp13;
+    tmp10 = tmp13;
   } else {
-    tmp9 = cResult[3];
+    tmp10 = cResult[5];
   }
-  if (cResult[4] !== ChevronSmallUpIcon) {
+  if (cResult[6] !== ChevronSmallUpIcon) {
     const obj4 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-    const tmp16 = metroRequire(ChevronSmallUpIcon, obj4);
-    cResult[4] = ChevronSmallUpIcon;
-    cResult[5] = tmp16;
-    tmp13 = tmp16;
+    const tmp17 = closure_7(ChevronSmallUpIcon, obj4);
+    cResult[6] = ChevronSmallUpIcon;
+    cResult[7] = tmp17;
+    tmp14 = tmp17;
   } else {
-    tmp13 = cResult[5];
+    tmp14 = cResult[7];
   }
-  if (cResult[6] === onPress) {
-    if (cResult[7] === tmp4.pill) {
-      if (cResult[8] === tmp5) {
-        if (cResult[9] === tmp9) {
-          let tmp17;
-          if (cResult[10] === tmp13) {
-            tmp17 = cResult[11];
+  if (cResult[8] === tmp5) {
+    if (cResult[9] === tmp4.pill) {
+      if (cResult[10] === tmp6) {
+        if (cResult[11] === tmp10) {
+          let tmp18;
+          if (cResult[12] === tmp14) {
+            tmp18 = cResult[13];
           }
-          if (cResult[12] === tmp4.block) {
-            let tmp19;
-            if (cResult[13] === tmp17) {
-              tmp19 = cResult[14];
+          if (cResult[14] === tmp4.block) {
+            let tmp20;
+            if (cResult[15] === tmp18) {
+              tmp20 = cResult[16];
             }
-            return tmp19;
+            return tmp20;
           }
-          const obj5 = { style: block, hitSlop: rect, children: tmp17 };
-          const tmp23 = metroRequire(hasOwnProperty, obj5);
-          cResult[12] = tmp4.block;
-          cResult[13] = tmp17;
-          cResult[14] = tmp23;
-          tmp19 = tmp23;
+          const obj5 = { style: block, hitSlop: rect, children: tmp18 };
+          const tmp24 = closure_7(closure_6, obj5);
+          cResult[14] = tmp4.block;
+          cResult[15] = tmp18;
+          cResult[16] = tmp24;
+          tmp20 = tmp24;
         }
       }
     }
   }
-  const obj6 = { style: pill, hitSlop: rect, accessibilityRole: "button", accessibilityLabel: tmp5, onPress, children: items };
-  items = [tmp9, tmp13];
-  const tmp18 = metroImportDefault(_false, obj6);
-  cResult[6] = onPress;
-  cResult[7] = tmp4.pill;
+  const obj6 = { style: pill, hitSlop: rect, accessibilityRole: "button", accessibilityLabel: tmp6, onPress: tmp5, children: items };
+  items = [tmp10, tmp14];
+  const tmp19 = closure_8(closure_4, obj6);
   cResult[8] = tmp5;
-  cResult[9] = tmp9;
-  cResult[10] = tmp13;
-  cResult[11] = tmp18;
-  tmp17 = tmp18;
-}) : (function SmartSearchExpandButton(isCollapsed) {
+  cResult[9] = tmp4.pill;
+  cResult[10] = tmp6;
+  cResult[11] = tmp10;
+  cResult[12] = tmp14;
+  cResult[13] = tmp19;
+  tmp18 = tmp19;
+}) : (function SmartSearchExpandButton(arg0) {
   let ChevronSmallUpIcon;
   let FKLBbW;
-  let items;
+  let callback;
+  let isCollapsed;
+  let items1;
   let obj3;
+  let onPress;
   let string;
-  let tmp10;
-  let tmp6;
+  let tmp11;
   let tmp7;
-  isCollapsed = isCollapsed.isCollapsed;
-  const onPress = isCollapsed.onPress;
-  const obj = useSearchHostSurface;
-  const tmp3 = closure_9(obj.useSearchHostSurfaceColor());
+  let tmp8;
+  ({ isCollapsed, onPress } = arg0);
+  let obj = onPress(17836);
+  const tmp3 = closure_10(obj.useSearchHostSurfaceColor());
   if (isCollapsed) {
-    ChevronSmallUpIcon = tmp(10534).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp(10859).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp(13870).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp(14650).ChevronSmallUpIcon;
   }
-  const obj2 = { style: tmp3.block, hitSlop: rect, children: tmp6(tmp7, obj3) };
-  obj3 = { style: tmp3.pill, hitSlop: rect, accessibilityRole: "button", accessibilityLabel: string(FKLBbW), onPress, children: items };
-  const intl = tmp(1126).intl;
+  const items = [onPress];
+  const obj2 = { style: tmp3.block, hitSlop: rect, children: tmp7(tmp8, obj3) };
+  obj3 = { style: tmp3.pill, hitSlop: rect, accessibilityRole: "button", accessibilityLabel: string(FKLBbW), onPress: callback, children: items1 };
+  callback = react.useCallback(() => {
+    const obj = HapticUtils;
+    const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
+    onPress();
+  }, items);
+  const intl = tmp(1128).intl;
   string = intl.string;
-  const tmp9 = _modDef4075;
-  tmp6 = metroImportDefault;
-  tmp7 = _false;
+  const tmp10 = _modDef4127;
+  tmp7 = closure_8;
+  tmp8 = closure_4;
   if (isCollapsed) {
-    FKLBbW = tmp9.NuTbB9;
-    tmp10 = tmp8;
+    FKLBbW = tmp10.NuTbB9;
+    tmp11 = tmp9;
   } else {
-    FKLBbW = tmp9.FKLBbW;
-    tmp10 = tmp8;
+    FKLBbW = tmp10.FKLBbW;
+    tmp11 = tmp9;
   }
-  items = [, ];
+  items1 = [, ];
   const obj4 = { style: tmp3.surface, pointerEvents: "none" };
-  items[0] = metroRequire(hasOwnProperty, obj4);
-  const obj5 = { size: "sm", color: tmp10(587).colors.INTERACTIVE_ICON_DEFAULT };
-  items[1] = metroRequire(ChevronSmallUpIcon, obj5);
-  return metroRequire(hasOwnProperty, obj2);
+  items1[0] = closure_7(closure_6, obj4);
+  const obj5 = { size: "sm", color: tmp11(587).colors.INTERACTIVE_ICON_DEFAULT };
+  items1[1] = closure_7(ChevronSmallUpIcon, obj5);
+  return closure_7(closure_6, obj2);
 }));
-const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/components/SmartSearchExpandButton.tsx");
+let result = size.fileFinishedImporting("modules/intelligence_layer/search/native/components/SmartSearchExpandButton.tsx");
 
 export default memoResult;

@@ -1,21 +1,21 @@
-// Module ID: 18560
-// Function ID: 18561
+// Module ID: 18956
+// Function ID: 18957
 // Name: GuildSettingsRoleSubscriptionContainer
-// Dependencies: [19, 17, 2087, 1085, 21, 5092, 558, 576, 504, 18538, 11923, 18511, 1126, 15511, 18552, 2]
+// Dependencies: [19, 17, 2090, 1087, 21, 5191, 558, 576, 504, 18934, 12081, 18907, 1128, 16271, 18948, 2]
 
-// Module 18560 (GuildSettingsRoleSubscriptionContainer)
+// Module 18956 (GuildSettingsRoleSubscriptionContainer)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import ErrorBlockDefault from "ErrorBlock" /* 11923 */;
-import GroupListingsFetchContext from "GroupListingsFetchContext" /* 15511 */;
-import WarningNoticeDefault from "WarningNotice" /* 18511 */;
-import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 18538 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18552 */;
+import Constants from "Constants" /* 1087 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12081 */;
+import GroupListingsFetchContext from "GroupListingsFetchContext" /* 16271 */;
+import WarningNoticeDefault from "WarningNotice" /* 18907 */;
+import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 18934 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18948 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2087 */;
+import GuildStore from "GuildStore" /* 2090 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -112,9 +112,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
     let tmp30;
     const _Symbol3 = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { notice: intl4.string(guildId(1126).t.MyJpJT) };
+      const obj4 = { notice: intl4.string(guildId(1128).t.MyJpJT) };
       const tmp13Result = WarningNoticeDefault;
-      intl4 = tmp(1126).intl;
+      intl4 = tmp(1128).intl;
       const tmp33 = closure_7(tmp13Result, obj4);
       cResult[9] = tmp33;
       tmp30 = tmp33;
@@ -126,8 +126,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
     let tmp25;
     const _Symbol2 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1126).intl;
-      const stringResult = intl3.string(guildId(1126).t["YKw/NQ"]);
+      const intl3 = tmp(1128).intl;
+      const stringResult = intl3.string(guildId(1128).t["YKw/NQ"]);
       cResult[10] = stringResult;
       tmp25 = stringResult;
     } else {
@@ -153,9 +153,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
     let tmp21;
     const _Symbol = Symbol;
     if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj6 = { notice: intl2.string(guildId(1126).t.e2g9sW) };
+      const obj6 = { notice: intl2.string(guildId(1128).t.e2g9sW) };
       const tmp13Result3 = WarningNoticeDefault;
-      intl2 = tmp(1126).intl;
+      intl2 = tmp(1128).intl;
       const tmp24 = closure_7(tmp13Result3, obj6);
       cResult[15] = tmp24;
       tmp21 = tmp24;
@@ -169,9 +169,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
       let tmp16;
       const _Symbol4 = Symbol;
       if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj7 = { notice: intl.string(guildId(1126).t.rxI9sl) };
+        const obj7 = { notice: intl.string(guildId(1128).t.rxI9sl) };
         const tmp13Result4 = WarningNoticeDefault;
-        intl = tmp(1126).intl;
+        intl = tmp(1128).intl;
         const tmp19 = closure_7(tmp13Result4, obj7);
         cResult[16] = tmp19;
         tmp16 = tmp19;
@@ -229,28 +229,28 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
     tmp14 = closure_7(tmp9Result, obj2);
   } else if (null != requestRejectedNoticeText) {
     const obj3 = { notice: requestRejectedNoticeText };
-    tmp14 = closure_7(tmp9(18511), obj3);
+    tmp14 = closure_7(tmp9(18907), obj3);
   } else if (tmp13) {
-    const obj4 = { notice: intl3.string(guildId(1126).t.MyJpJT) };
+    const obj4 = { notice: intl3.string(guildId(1128).t.MyJpJT) };
     const tmp9Result5 = WarningNoticeDefault;
-    intl3 = tmp2(1126).intl;
+    intl3 = tmp2(1128).intl;
     tmp14 = closure_7(tmp9Result5, obj4);
   } else if (null != reapplyNoticeText) {
-    const obj5 = { notice: reapplyNoticeText, ctaLabel: intl2.string(guildId(1126).t["YKw/NQ"]), onClick: tmp12, submitting: tmp11 };
+    const obj5 = { notice: reapplyNoticeText, ctaLabel: intl2.string(guildId(1128).t["YKw/NQ"]), onClick: tmp12, submitting: tmp11 };
     const tmp9Result6 = WarningNoticeDefault;
-    intl2 = tmp2(1126).intl;
+    intl2 = tmp2(1128).intl;
     tmp14 = closure_7(tmp9Result6, obj5);
   } else if (true === hasItem1) {
-    const obj6 = { notice: intl.string(guildId(1126).t.e2g9sW) };
+    const obj6 = { notice: intl.string(guildId(1128).t.e2g9sW) };
     const tmp9Result7 = WarningNoticeDefault;
-    intl = tmp2(1126).intl;
+    intl = tmp2(1128).intl;
     tmp14 = closure_7(tmp9Result7, obj6);
   } else {
     tmp14 = null;
     if (true === hasItem) {
-      const obj7 = { notice: intl4.string(guildId(1126).t.rxI9sl) };
+      const obj7 = { notice: intl4.string(guildId(1128).t.rxI9sl) };
       const tmp9Result8 = WarningNoticeDefault;
-      intl4 = tmp2(1126).intl;
+      intl4 = tmp2(1128).intl;
       tmp14 = closure_7(tmp9Result8, obj7);
     }
   }

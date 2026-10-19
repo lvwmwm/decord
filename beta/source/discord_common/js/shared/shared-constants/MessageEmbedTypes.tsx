@@ -1,9 +1,9 @@
-// Module ID: 1107
-// Function ID: 1108
+// Module ID: 1109
+// Function ID: 1110
 // Name: MessageEmbedTypes
 // Dependencies: [2]
 
-// Module 1107 (MessageEmbedTypes)
+// Module 1109 (MessageEmbedTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/MessageEmbedTypes.tsx");

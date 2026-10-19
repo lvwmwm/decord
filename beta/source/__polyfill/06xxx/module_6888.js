@@ -1,35 +1,52 @@
 // Module ID: 6888
 // Function ID: 6889
-// Dependencies: [19, 6889]
-// Exports: useClipboard
+// Dependencies: [19, 21, 6589, 6612]
 
 // Module 6888
-import _mod6889 from "module_6889" /* 6889 */;
-import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import _mod6589 from "module_6589" /* 6589 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6612 */;
+import react_mod from "react" /* 19 */;
 
-function setString(arg0) {
-  let closure_0 = arg0;
-  const Clipboard = _mod6889.Clipboard;
-  Clipboard.setString(arg0);
-  const item = set.forEach((fn) => fn(closure_0));
-}
-const set = new Set();
+let onFocus;
 
-export const useClipboard = () => {
-  let tmp2;
-  const state = react.useState("");
-  [tmp2, require] = state;
-  const effect = react.useEffect(() => {
-    const Clipboard = _mod6889.Clipboard;
-    const string = Clipboard.getString();
-    string.then(require);
-  }, []);
-  const effect1 = react.useEffect(() => {
-    set.add(require);
-    return () => {
-      set.delete(closure_1_0);
-    };
-  }, []);
-  const items = [tmp2, setString];
-  return items;
-};
+let c2;
+let c3;
+let forwardRef;
+let memo;
+let react = react_mod;
+({ useCallback: c2, useEffect: c3 } = react);
+({ memo, forwardRef } = react);
+react = react_mod;
+const jsx = Fragment.jsx;
+const memoResult = memo(forwardRef((onFocus, ref) => {
+  onFocus = onFocus.onFocus;
+  const onBlur = onFocus.onBlur;
+  const merged = Object.assign(onFocus, Object.assign({ onFocus: 0, onBlur: 0 }));
+  const obj = _mod6589;
+  const shouldHandleKeyboardEvents = obj.useBottomSheetInternal().shouldHandleKeyboardEvents;
+  const items = [onFocus, shouldHandleKeyboardEvents];
+  const items1 = [onBlur, shouldHandleKeyboardEvents];
+  const items2 = [shouldHandleKeyboardEvents];
+  const tmp2 = React2((arg0) => {
+    shouldHandleKeyboardEvents.value = true;
+    if (onFocus) {
+      tmp(arg0);
+    }
+  }, items);
+  const tmp3 = React2((arg0) => {
+    shouldHandleKeyboardEvents.value = false;
+    if (onBlur) {
+      tmp(arg0);
+    }
+  }, items1);
+  _false(() => () => {
+    shouldHandleKeyboardEvents.value = false;
+  }, items2);
+  const TextInput = LegacyBaseButton.TextInput;
+  const merged1 = Object.assign(merged);
+  return <TextInput ref={arg1} onFocus={tmp2} onBlur={tmp3} />;
+}));
+memoResult.displayName = "BottomSheetTextInput";
+
+export default memoResult;

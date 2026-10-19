@@ -1,24 +1,24 @@
-// Module ID: 13527
-// Function ID: 13528
+// Module ID: 14306
+// Function ID: 14307
 // Name: GuildProfileInvite
-// Dependencies: [32, 2129, 9606, 1085, 7419, 7884, 6124, 4969, 587, 2079, 8860, 8858, 1415, 2032, 1898, 1126, 11346, 8866, 7420, 11, 2123, 6884, 1103, 7746, 7886, 2]
+// Dependencies: [32, 2132, 9907, 1087, 7689, 8156, 6403, 5065, 587, 2082, 9136, 9134, 1417, 2035, 1900, 1128, 12522, 9142, 7690, 11, 2126, 7160, 1105, 8017, 8158, 2]
 // Exports: createGuildProfileInvite
 
-// Module 13527 (GuildProfileInvite)
+// Module 14306 (GuildProfileInvite)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import intl10 from "intl" /* 1126 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import GuildRoleUtils from "GuildRoleUtils" /* 2123 */;
-import RoleIconUtils from "RoleIconUtils" /* 6884 */;
-import Constants2 from "Constants" /* 7419 */;
-import react_native from "react-native" /* 7746 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7884 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 9606 */;
+import Constants from "Constants" /* 1087 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
+import intl10 from "intl" /* 1128 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import GuildRoleUtils from "GuildRoleUtils" /* 2126 */;
+import RoleIconUtils from "RoleIconUtils" /* 7160 */;
+import Constants2 from "Constants" /* 7689 */;
+import react_native from "react-native" /* 8017 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8156 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 9907 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LocaleStore from "LocaleStore" /* 2129 */;
+import LocaleStore from "LocaleStore" /* 2132 */;
 import size from "module_2" /* 2 */;
 
 const CodedLinkExtendedType = CodedLinksConstants.CodedLinkExtendedType;
@@ -46,21 +46,21 @@ export const createGuildProfileInvite = function createGuildProfileInvite(invite
   const baseColors = tmp4.baseColors;
   const tmp5 = id;
   const colors = tmp4.colors;
-  let obj = id(6124);
+  let obj = id(6403);
   const guildProfileFromInvite = obj.buildGuildProfileFromInvite(invite);
-  let obj2 = id(4969);
+  let obj2 = id(5065);
   const isThemeDarkResult = obj2.isThemeDark(theme);
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   let fromGuildProfileResult = null;
   const tmp8 = isThemeDarkResult ? unsafe_rawColors.PRIMARY_660 : unsafe_rawColors.PRIMARY_160;
   if (null != guildProfileFromInvite) {
-    const tmp5Result = tmp5(2079);
+    const tmp5Result = tmp5(2082);
     fromGuildProfileResult = tmp5Result.fromGuildProfile(guildProfileFromInvite);
   }
-  const tmp5Result10 = tmp5(8860);
+  const tmp5Result10 = tmp5(9136);
   let profilePrimaryColor = tmp5Result10.getProfilePrimaryColor(guildProfileFromInvite);
-  const getBackgroundForProfile = tmp5(8858).getBackgroundForProfile;
-  tmp5(8858);
+  const getBackgroundForProfile = tmp5(9134).getBackgroundForProfile;
+  tmp5(9134);
   if (profilePrimaryColor == null) {
     profilePrimaryColor = tmp8;
   }
@@ -91,8 +91,8 @@ export const createGuildProfileInvite = function createGuildProfileInvite(invite
     guildIconURL = tmp2Result.getGuildIconURL(obj3);
   } else {
     let str;
-    const getAcronym = tmp5(2032).getAcronym;
-    tmp5(2032);
+    const getAcronym = tmp5(2035).getAcronym;
+    tmp5(2035);
     if (guildProfileFromInvite != null) {
       str = guildProfileFromInvite.name;
     }
@@ -113,9 +113,9 @@ export const createGuildProfileInvite = function createGuildProfileInvite(invite
       customBanner = guildProfileFromInvite.customBanner;
     }
     if (null != customBanner) {
-      let obj4 = { id: null, splash: null, size: 400 * tmp2(1898)() };
+      let obj4 = { id: null, splash: null, size: 400 * tmp2(1900)() };
       ({ id: obj7.id, customBanner: obj7.splash } = guildProfileFromInvite);
-      const getGuildDiscoverySplashURL = tmp2(1415).getGuildDiscoverySplashURL;
+      const getGuildDiscoverySplashURL = tmp2(1417).getGuildDiscoverySplashURL;
       let num = 400;
       AvatarUtilsDefault;
       const guildDiscoverySplashURL = getGuildDiscoverySplashURL(obj4);
@@ -132,46 +132,46 @@ export const createGuildProfileInvite = function createGuildProfileInvite(invite
   if (tmp27) {
     let formatToPlainStringResult;
     if (null != onlineCount) {
-      let intl = tmp5(1126).intl;
+      let intl = tmp5(1128).intl;
       let obj5 = { membersOnline: onlineCount };
-      formatToPlainStringResult = intl.formatToPlainString(tmp5(1126).t["LC+S+m"], obj5);
+      formatToPlainStringResult = intl.formatToPlainString(tmp5(1128).t["LC+S+m"], obj5);
     }
     let formatToPlainStringResult1;
     if (null != memberCount) {
-      const intl2 = tmp5(1126).intl;
+      const intl2 = tmp5(1128).intl;
       const obj8 = { count: memberCount };
-      formatToPlainStringResult1 = intl2.formatToPlainString(tmp5(1126).t.zRl6XR, obj8);
+      formatToPlainStringResult1 = intl2.formatToPlainString(tmp5(1128).t.zRl6XR, obj8);
     }
     tmp29 = formatToPlainStringResult1;
     tmp30 = formatToPlainStringResult;
   }
   let guildProfileCTAType = null;
   if (null != guildProfileFromInvite) {
-    const tmp5Result13 = tmp5(11346);
+    const tmp5Result13 = tmp5(12522);
     guildProfileCTAType = tmp5Result13.getGuildProfileCTAType(guildProfileFromInvite, invite.code);
   }
-  if (tmp5(11346).CTATypes.IS_MEMBER === guildProfileCTAType) {
-    const intl7 = tmp5(1126).intl;
-    stringResult = intl7.string(tmp5(1126).t.IRoQXr);
-  } else if (tmp5(11346).CTATypes.HAS_APPLICATION === guildProfileCTAType) {
-    const intl6 = tmp5(1126).intl;
-    stringResult = intl6.string(tmp5(1126).t["4yfIDk"]);
-  } else if (tmp5(11346).CTATypes.APPLY_TO_JOIN === guildProfileCTAType) {
-    const intl5 = tmp5(1126).intl;
-    stringResult = intl5.string(tmp5(1126).t["7XdMW2"]);
-  } else if (tmp5(11346).CTATypes.ACCEPT_ROLES === guildProfileCTAType) {
-    const intl4 = tmp5(1126).intl;
-    stringResult = intl4.string(tmp5(1126).t.MMlhsr);
+  if (tmp5(12522).CTATypes.IS_MEMBER === guildProfileCTAType) {
+    const intl7 = tmp5(1128).intl;
+    stringResult = intl7.string(tmp5(1128).t.IRoQXr);
+  } else if (tmp5(12522).CTATypes.HAS_APPLICATION === guildProfileCTAType) {
+    const intl6 = tmp5(1128).intl;
+    stringResult = intl6.string(tmp5(1128).t["4yfIDk"]);
+  } else if (tmp5(12522).CTATypes.APPLY_TO_JOIN === guildProfileCTAType) {
+    const intl5 = tmp5(1128).intl;
+    stringResult = intl5.string(tmp5(1128).t["7XdMW2"]);
+  } else if (tmp5(12522).CTATypes.ACCEPT_ROLES === guildProfileCTAType) {
+    const intl4 = tmp5(1128).intl;
+    stringResult = intl4.string(tmp5(1128).t.MMlhsr);
   } else {
-    if (tmp5(11346).CTATypes.LURK_DISCOVERABLE !== guildProfileCTAType) {
-      const JOIN_VIA_INVITE = tmp5(11346).CTATypes.JOIN_VIA_INVITE;
+    if (tmp5(12522).CTATypes.LURK_DISCOVERABLE !== guildProfileCTAType) {
+      const JOIN_VIA_INVITE = tmp5(12522).CTATypes.JOIN_VIA_INVITE;
     }
-    const intl3 = tmp5(1126).intl;
-    stringResult = intl3.string(tmp5(1126).t.XpeFYr);
+    const intl3 = tmp5(1128).intl;
+    stringResult = intl3.string(tmp5(1128).t.XpeFYr);
   }
   let guildBadgeImageSource;
   if (null != fromGuildProfileResult) {
-    const tmp5Result14 = tmp5(8866);
+    const tmp5Result14 = tmp5(9142);
     guildBadgeImageSource = tmp5Result14.getGuildBadgeImageSource(fromGuildProfileResult, theme);
   }
   let found;
@@ -190,13 +190,13 @@ export const createGuildProfileInvite = function createGuildProfileInvite(invite
   }
   let formatToPlainStringResult2;
   if (null != guildProfileFromInvite) {
-    const getEstablishedDate = tmp5(7420).getEstablishedDate;
-    tmp5(7420);
+    const getEstablishedDate = tmp5(7690).getEstablishedDate;
+    tmp5(7690);
     const tmp2Result4 = SnowflakeUtilsDefault;
     const establishedDate = getEstablishedDate(tmp2Result4.extractTimestamp(guildProfileFromInvite.id), LocaleStore.locale);
-    const intl8 = tmp5(1126).intl;
+    const intl8 = tmp5(1128).intl;
     const obj9 = { createdAtDate: establishedDate };
-    formatToPlainStringResult2 = intl8.formatToPlainString(tmp5(1126).t.zb2Q56, obj9);
+    formatToPlainStringResult2 = intl8.formatToPlainString(tmp5(1128).t.zb2Q56, obj9);
   }
   let mapped;
   if (null != invite.roles) {
@@ -205,7 +205,7 @@ export const createGuildProfileInvite = function createGuildProfileInvite(invite
         id = invite.guild.id;
         const items = [];
         HermesBuiltin.arraySpread(items, invite.roles, 0);
-        const sorted = items.sort(tmp5(2123).sortInviteRoles);
+        const sorted = items.sort(tmp5(2126).sortInviteRoles);
         mapped = sorted.map((color) => {
           let intl;
           let obj5;
@@ -231,7 +231,7 @@ export const createGuildProfileInvite = function createGuildProfileInvite(invite
             if (unicodeEmoji != null) {
               surrogates = unicodeEmoji.surrogates;
             }
-            intl = tmp(1126).intl;
+            intl = tmp(1128).intl;
             tmp7 = obj4;
             obj5 = { name: color.name };
           }
@@ -263,8 +263,8 @@ export const createGuildProfileInvite = function createGuildProfileInvite(invite
   if (GUILD == null) {
     GUILD = InviteTypes.GUILD;
   }
-  tmp5Result16 = tmp5(7746);
-  tmp5Result17 = tmp5(7746);
+  tmp5Result16 = tmp5(8017);
+  tmp5Result17 = tmp5(8017);
   if (found == null) {
     found = [];
   }
@@ -281,14 +281,14 @@ export const createGuildProfileInvite = function createGuildProfileInvite(invite
   }
   assetUriForEmbed = undefined;
   if (null != guildBadgeImageSource) {
-    const tmp5Result18 = tmp5(7886);
+    const tmp5Result18 = tmp5(8158);
     assetUriForEmbed = tmp5Result18.getAssetUriForEmbed(guildBadgeImageSource);
   }
   stringResult1 = undefined;
   if (null != mapped) {
     if (mapped.length > 0) {
-      const intl9 = tmp5(1126).intl;
-      stringResult1 = intl9.string(tmp5(1126).t.stcSfI);
+      const intl9 = tmp5(1128).intl;
+      stringResult1 = intl9.string(tmp5(1128).t.stcSfI);
     }
   }
   return obj10;

@@ -1,21 +1,17 @@
-// Module ID: 13949
-// Function ID: 13950
+// Module ID: 14729
+// Function ID: 14730
 // Name: GatewayCompressionHandler
-// Dependencies: [17, 13950, 13952, 3, 1382, 13951, 6911, 2]
+// Dependencies: [14730, 14732, 3, 14731, 7187, 2]
 // Exports: getCompressionHandler
 
-// Module 13949 (GatewayCompressionHandler)
+// Module 14729 (GatewayCompressionHandler)
 import LoggerDefault from "Logger" /* 3 */;
-import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import ProcessArgs2 from "ProcessArgs" /* 6911 */;
-import GatewayZstdUtils from "GatewayZstdUtils" /* 13950 */;
-import _mod13952 from "module_13952" /* 13952 */;
+import ProcessArgs2 from "ProcessArgs" /* 7187 */;
+import react_native from "react-native" /* 14730 */;
+import react_native2 from "react-native" /* 14731 */;
+import _mod14732 from "module_14732" /* 14732 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const react_native2 = tmp(13951);
-const NativeModules = react_native.NativeModules;
 const items = [];
 class BaseGatewayCompressionHandler {
   constructor(_gatewayEncoding) {
@@ -52,7 +48,7 @@ class tmp2 extends BaseGatewayCompressionHandler {
     } else {
       tmp2._decoder = null;
     }
-    obj = GatewayZstdUtils;
+    obj = react_native;
     tmp2._stream = obj.createZstdContextWeb();
     return tmp2;
   }
@@ -107,7 +103,7 @@ class tmp4 extends BaseGatewayCompressionHandler {
     let _inflate;
     let handleFlushEnd;
     const tmp2 = new tmp(arg0, new.target, tmp, this);
-    tmp2._pako = _mod13952;
+    tmp2._pako = _mod14732;
     tmp2._usesZstd = false;
     tmp2._zstdDecoder = null;
     tmp2._zstdStream = null;
@@ -251,7 +247,7 @@ items.push(tmp4);
 class tmp6 extends BaseGatewayCompressionHandler {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
-    applyArgumentsResult._pako = _mod13952;
+    applyArgumentsResult._pako = _mod14732;
     return applyArgumentsResult;
   }
   static canUse() {
@@ -298,46 +294,26 @@ class tmp8 extends BaseGatewayCompressionHandler {
     return tmp2;
   }
   static canUse() {
-    let tmp5;
-    obj = PlatformUtils;
-    if (obj.isAndroid()) {
-      tmp5 = null != react_native2.default;
-    } else {
-      tmp5 = null != NativeModules.DCDCompressionManager;
-    }
-    return tmp5;
+    return null != react_native2.default;
   }
   bindWebSocket(_socketId) {
     const self = this;
     this.close();
     this._socketId = _socketId._socketId;
-    obj = GatewayZstdUtils;
+    obj = react_native;
     const supportsZstdResult = obj.supportsZstd();
-    const obj2 = PlatformUtils;
-    const isAndroidResult = obj2.isAndroid();
+    const _default = react_native2.default;
     if (supportsZstdResult) {
-      if (isAndroidResult) {
-        const _default2 = react_native2.default;
-        if (_default2 != null) {
-          const result = _default2.enableZstdStreamSupport(self._socketId);
-        }
-      } else {
-        const DCDCompressionManager2 = NativeModules.DCDCompressionManager;
-        const result1 = DCDCompressionManager2.enableZstdStreamSupport(self._socketId, 0);
-      }
-    } else if (isAndroidResult) {
-      const _default = react_native2.default;
       if (_default != null) {
-        const result2 = _default.enableZlibStreamSupport(self._socketId);
+        const result = _default.enableZstdStreamSupport(self._socketId);
       }
-    } else {
-      const DCDCompressionManager = NativeModules.DCDCompressionManager;
-      const result3 = DCDCompressionManager.enableZlibStreamSupport(self._socketId);
+    } else if (_default != null) {
+      const result1 = _default.enableZlibStreamSupport(self._socketId);
     }
   }
   getAlgorithm() {
     let str = "zlib-stream";
-    obj = GatewayZstdUtils;
+    obj = react_native;
     if (obj.supportsZstd()) {
       str = "zstd-stream";
     }
@@ -362,22 +338,14 @@ class tmp8 extends BaseGatewayCompressionHandler {
     const _socketId = this._socketId;
     this._socketId = null;
     if (null !== _socketId) {
-      obj = PlatformUtils;
-      const tmp = require;
-      if (obj.isAndroid()) {
-        const _default = tmp(13951).default;
-        if (_default != null) {
-          const result = _default.disableZlibStreamSupport(_socketId);
-        }
-      } else {
-        const DCDCompressionManager = NativeModules.DCDCompressionManager;
-        const result1 = DCDCompressionManager.disableZlibStreamSupport(_socketId);
+      const _default = react_native2.default;
+      if (_default != null) {
+        const result = _default.disableZlibStreamSupport(_socketId);
       }
     }
   }
 }
 const prototype5 = tmp8.prototype;
-let c9 = tmp8;
 items.push(tmp8);
 class NullGatewayCompressionHandler extends BaseGatewayCompressionHandler {
   static canUse() {

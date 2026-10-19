@@ -1,9 +1,9 @@
-// Module ID: 6044
-// Function ID: 6045
+// Module ID: 6321
+// Function ID: 6322
 // Name: AgeRestrictionSource
 // Dependencies: [2]
 
-// Module 6044 (AgeRestrictionSource)
+// Module 6321 (AgeRestrictionSource)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/AgeRestrictionSource.tsx");

@@ -1,23 +1,23 @@
-// Module ID: 11465
-// Function ID: 11466
+// Module ID: 12611
+// Function ID: 12612
 // Name: ExplicitMediaLearnMoreActionSheet
-// Dependencies: [19, 17, 6993, 1085, 21, 5092, 587, 11466, 5909, 8238, 1126, 7094, 5056, 4806, 2128, 7493, 11467, 2000, 6840, 7512, 5088, 5379, 2]
+// Dependencies: [19, 17, 7269, 1087, 21, 5191, 587, 12612, 6165, 8515, 1128, 7370, 5155, 4901, 2131, 7764, 12613, 2002, 7118, 7783, 5187, 5479, 2]
 // Exports: default
 
-// Module 11465 (ExplicitMediaLearnMoreActionSheet)
+// Module 12611 (ExplicitMediaLearnMoreActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl7 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 6993 */;
-import openUserSettings from "openUserSettings" /* 7094 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7493 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8238 */;
+import intl7 from "intl" /* 1128 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7269 */;
+import openUserSettings from "openUserSettings" /* 7370 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7764 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8515 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;

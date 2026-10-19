@@ -1,15 +1,15 @@
-// Module ID: 10232
-// Function ID: 10233
+// Module ID: 10534
+// Function ID: 10535
 // Name: GameRelationshipActionCreators
-// Dependencies: [5, 1085, 5635, 5299, 1126, 1295, 4969, 2]
+// Dependencies: [5, 1087, 5891, 5399, 1128, 1297, 5065, 2]
 
-// Module 10232 (GameRelationshipActionCreators)
-import intl3 from "intl" /* 1126 */;
-import shared from "shared" /* 4969 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5635 */;
+// Module 10534 (GameRelationshipActionCreators)
+import intl3 from "intl" /* 1128 */;
+import shared from "shared" /* 5065 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5891 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -23,8 +23,8 @@ function showRequestFailedAlert(arg0) {
   AlertActionCreatorsDefault;
   intl = intl3.intl;
   if (null == anyErrorMessage) {
-    const intl2 = tmp(1126).intl;
-    anyErrorMessage = intl2.string(tmp(1126).t.fEptJP);
+    const intl2 = tmp(1128).intl;
+    anyErrorMessage = intl2.string(tmp(1128).t.fEptJP);
   }
   show(obj);
 }
@@ -61,7 +61,7 @@ let obj = function _deleteGameRelationship() {
     await "IconComponent";
     let closure_2 = tmp;
     ({ userId: c0, applicationId: c1, onSuccess: c2 } = closure_0);
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };
@@ -87,7 +87,7 @@ obj = function _removeGameFriend() {
       await closure_130_7(obj5);
       await "IconComponent";
       ({ userId: c0, applicationId: c1 } = closure_0);
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -116,7 +116,7 @@ obj = function _cancelGameFriendRequest() {
       await closure_130_7(obj5);
       await "IconComponent";
       ({ userId: c0, applicationId: c1 } = closure_0);
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -136,7 +136,7 @@ obj = {
     }
     ({ userId, applicationId } = arg0);
     const FRIEND = constants.FRIEND;
-    const HTTP = onSuccess(1295).HTTP;
+    const HTTP = onSuccess(1297).HTTP;
     const request = { url: closure_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type: FRIEND }, oldFormErrors: true, rejectWithError: false };
     const putResult = HTTP.put(request);
     const nextPromise = putResult.then(() => {

@@ -1,23 +1,23 @@
-// Module ID: 14038
-// Function ID: 14039
+// Module ID: 14820
+// Function ID: 14821
 // Name: ActivityTrackingStore
-// Dependencies: [2019, 1244, 502, 2037, 7113, 5110, 2116, 1085, 1102, 510, 7115, 10668, 2060, 7430, 504, 584, 2]
+// Dependencies: [2021, 1246, 502, 2040, 6301, 5209, 2119, 1087, 1104, 510, 6309, 11088, 2063, 7700, 504, 584, 2]
 
-// Module 14038 (ActivityTrackingStore)
+// Module 14820 (ActivityTrackingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import GameAnalyticsUtils from "GameAnalyticsUtils" /* 7430 */;
-import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 10668 */;
-import RunningGameStore from "RunningGameStore" /* 2019 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
+import Constants from "Constants" /* 1087 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import GameAnalyticsUtils from "GameAnalyticsUtils" /* 7700 */;
+import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11088 */;
+import RunningGameStore from "RunningGameStore" /* 2021 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DetectableGameStore from "DetectableGameStore" /* 2037 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 7113 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import DetectableGameStore from "DetectableGameStore" /* 2040 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 6301 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -73,7 +73,7 @@ function updateActivity(applicationId) {
     applicationId = applicationId.applicationId;
     const self = this;
     const self2 = this;
-    const interval = new tmp3(2060).Interval();
+    const interval = new tmp3(2063).Interval();
     tmp12[applicationId] = interval;
     interval.start(tmp2, () => {
       updateActivity(applicationId);

@@ -1,61 +1,29 @@
 // Module ID: 1624
 // Function ID: 1625
-// Dependencies: [19, 1603, 1506]
-// Exports: useRoutePath
+// Dependencies: [19, 1508, 1604]
+// Exports: useLinkTo
 
 // Module 1624
-import BaseNavigationContainer from "BaseNavigationContainer" /* 1506 */;
-import react2 from "react" /* 1603 */;
+import BaseNavigationContainer from "BaseNavigationContainer" /* 1508 */;
+import _mod1604 from "module_1604" /* 1604 */;
 import react from "react" /* 19 */;
 
 
-export const useRoutePath = function useRoutePath() {
-  const tmp = react;
-  let tmp3 = dependencyMap;
-  const options = react.useContext(react2.LinkingContext).options;
-  const obj = BaseNavigationContainer;
-  const stateForPath = obj.useStateForPath();
-  if (undefined === stateForPath) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("Couldn't find a state for the route object. Is your component inside a screen in a navigator?");
-    throw error;
-  } else {
-    let getPathFromState;
-    if (options != null) {
-      getPathFromState = options.getPathFromState;
+export const useLinkTo = function useLinkTo() {
+  const context = react.useContext(BaseNavigationContainer.NavigationContainerRefContext);
+  let obj = _mod1604;
+  const buildAction = obj.useBuildAction();
+  const items = [buildAction, context];
+  return react.useCallback(function(arg0) {
+    const obj = context;
+    if (undefined === context) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error("Couldn't find a navigation object. Is your component inside NavigationContainer?");
+      throw error;
+    } else {
+      obj.dispatch(buildAction(arg0));
     }
-    if (getPathFromState == null) {
-      getPathFromState = BaseNavigationContainer.getPathFromState;
-    }
-    let enabled;
-    const useMemo = tmp.useMemo;
-    if (options != null) {
-      enabled = options.enabled;
-    }
-    const items = [enabled, , , ];
-    let config;
-    if (options != null) {
-      config = options.config;
-    }
-    items[1] = config;
-    items[2] = stateForPath;
-    items[3] = getPathFromState;
-    return useMemo(() => {
-      let enabled;
-      if (options != null) {
-        enabled = tmp.enabled;
-      }
-      if (false !== enabled) {
-        let config;
-        const tmp3 = getPathFromState;
-        const tmp4 = stateForPath;
-        if (options != null) {
-          config = tmp.config;
-        }
-        return tmp3(tmp4, config);
-      }
-    }, items);
-  }
+  }, items);
 };

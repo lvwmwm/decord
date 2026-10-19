@@ -1,31 +1,30 @@
-// Module ID: 14755
-// Function ID: 14756
+// Module ID: 15520
+// Function ID: 15521
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 2065, 1390, 2064, 10218, 5085, 21, 5092, 587, 558, 576, 504, 11560, 11822, 14754, 6858, 1388, 14756, 7174, 7365, 4809, 1126, 6886, 4808, 7089, 5038, 1497, 1631, 1382, 9293, 6201, 6210, 10227, 11571, 11595, 2]
+// Dependencies: [5, 32, 19, 17, 2068, 1392, 2067, 10520, 5185, 21, 5191, 587, 558, 576, 504, 12693, 11963, 15519, 7134, 1388, 15521, 7445, 7635, 4904, 1128, 7162, 4903, 7365, 5137, 1499, 1384, 12703, 10529, 12704, 12725, 2]
 
-// Module 14755 (ActivityShareLinkModal)
+// Module 15520 (ActivityShareLinkModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import ToastUtils from "ToastUtils" /* 4808 */;
-import LinkIcon from "LinkIcon" /* 5038 */;
-import MessageConstants from "MessageConstants" /* 5085 */;
-import ClipboardUtils from "ClipboardUtils" /* 6886 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
-import HeaderShared from "HeaderShared" /* 9293 */;
-import UserRowConstants from "UserRowConstants" /* 10218 */;
-import formatResults from "formatResults" /* 11560 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 11822 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 14754 */;
+import intl4 from "intl" /* 1128 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import ToastUtils from "ToastUtils" /* 4903 */;
+import LinkIcon from "LinkIcon" /* 5137 */;
+import MessageConstants from "MessageConstants" /* 5185 */;
+import ClipboardUtils from "ClipboardUtils" /* 7162 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7365 */;
+import UserRowConstants from "UserRowConstants" /* 10520 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 11963 */;
+import formatResults from "formatResults" /* 12693 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 15519 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import UserStore from "UserStore" /* 1390 */;
-import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2064 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import UserStore_mod from "UserStore" /* 1392 */;
+import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2067 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,24 +33,18 @@ let c1, c2, c3, channel, closure_0;
 let closure_12;
 let map1;
 let obj2;
-let obj3;
-let obj4;
-let obj5;
 const View = react_native.View;
+let UserStore = UserStore_mod;
 let EmbeddedActivitiesStore = EmbeddedActivitiesStore_mod;
 let UserRowModes = UserRowConstants.UserRowModes;
 const MessageSendLocation = MessageConstants.MessageSendLocation;
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { headerLeftContainer: obj2, headerRightContainer: obj3, header: obj4, container: obj5 };
-obj2 = { paddingLeft: nativeDefault.space.PX_16 };
-createStyles = createStyles.createStyles;
-obj3 = { paddingRight: nativeDefault.space.PX_16 };
-obj4 = { borderBottomWidth: 0, shadowColor: "transparent", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
-obj5 = { flex: 1, display: "flex", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
-let closure_14 = createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShareLinkModal(applicationId) {
+let obj = { container: obj2 };
+obj2 = { flex: 1, display: "flex", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+let closure_14 = createStyles.createStyles(obj);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShareLinkModal(applicationId) {
   let connectedActivityChannelId;
+  let currentUser;
   let linkId;
   let tmp15;
   let tmp18;
@@ -61,7 +54,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
   let tmp = applicationId;
   const tmp2 = linkId;
   let obj = applicationId(linkId[13]);
-  const cResult = obj.c(74);
+  const cResult = obj.c(64);
   applicationId = applicationId.applicationId;
   const customId = applicationId.customId;
   linkId = applicationId.linkId;
@@ -104,7 +97,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
     tmp15 = cResult[4];
   }
   const tmp12Result = onShare(react.useState(tmp15), 2);
-  const currentUser = tmp12Result[0];
+  UserStore = tmp12Result[0];
   EmbeddedActivitiesStore = tmp12Result[1];
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class K {
@@ -126,13 +119,15 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
         connectedActivityChannelId(arg0);
       }
     }
-    const items2 = [currentUser];
-    const fn2 = function q() {
-      return currentUser.getCurrentUser();
-    };
+    const items2 = [UserStore];
+    class Q {
+      constructor() {
+        return currentUser.getCurrentUser();
+      }
+    }
     cResult[6] = items2;
-    cResult[7] = fn2;
-    tmp19 = fn2;
+    cResult[7] = Q;
+    tmp19 = Q;
     tmp18 = items2;
   } else {
     class K {
@@ -164,7 +159,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
       }
     }
   }
-  const fn3 = function z() {
+  const fn2 = function z() {
     let id;
     const obj = { applicationId, referrerId: id, customId, linkId };
     id = undefined;
@@ -177,15 +172,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
     tmp(getActivityLaunchURL(obj));
   };
   cResult[11] = undefined;
-  cResult[12] = fn3;
+  cResult[12] = fn2;
 }) : (function ActivityShareLinkModal(applicationId) {
   let c6;
   let closure_10;
   let intl;
   let items10;
   let items9;
-  let num;
-  let obj5;
   let stringResult;
   let tmp24;
   let tmp7;
@@ -397,7 +390,6 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
   }, items7);
   let height = customId(linkId[29])({ ignoreKeyboard: true }).height;
   const items8 = [height];
-  const top = customId(linkId[30])().top;
   let obj3 = {
     style: stateFromStores.useMemo(() => {
       height = "100%";
@@ -406,14 +398,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
     }, items8),
     children: items9
   };
-  let obj7 = {
-    headerStyle: tmp.header,
+  let obj4 = {
     title: intl.string(applicationId(linkId[24]).t.r9qKow),
-    headerTitle(children) {
-      const obj = { title: children.children, subtitle: message, variant: "redesign/heading-18/bold" };
-      return authStore2(HeaderShared.GenericHeaderTitle, obj);
-    },
-    headerLeft: obj5.getHeaderCloseButton(callback1),
+    subtitle: message,
     headerRight(arg0) {
       let intl;
       const obj = { onPress, accessibilityLabel: intl.string(intl4.t.Xrt5Po), IconComponent: LinkIcon.LinkIcon };
@@ -422,28 +409,19 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
       intl = intl4.intl;
       return authStore2(HeaderActionButton, obj);
     },
-    headerLeftContainerStyle: null,
-    headerRightContainerStyle: null,
-    headerStatusBarHeight: num + tmp18(tmp3[11]).space.PX_8,
-    headerTitleAlign: "center"
+    onClose: callback1
   };
-  const Header = applicationId(linkId[34]).Header;
+  const tmp23 = customId(linkId[31]);
   intl = applicationId(linkId[24]).intl;
-  obj5 = applicationId(linkId[33]);
-  ({ headerLeftContainer: obj4.headerLeftContainerStyle, headerRightContainer: obj4.headerRightContainerStyle } = tmp);
-  let obj6 = applicationId(linkId[31]);
-  num = 0;
-  if (!obj6.isIOS()) {
-    num = top;
-  }
-  items9 = [tmp23(Header, obj7), ];
-  let obj8 = { style: tmp.container, children: items10 };
-  items10 = [tmp23(tmp18(tmp3[35]), { absolute: true }), , ];
-  const obj9 = { disableGradient: true, disableStickySections: true, initialSelectedDestinations: [], insetEnd: 0, onSelectedDestinationChange: callback, originDestination: memo, rowMode: UserRowModes.TOGGLE };
-  items10[1] = first2(customId(tmp3[36]), obj9);
-  const obj10 = { disabled: tmp7, floatingBackgroundColor: tmp.container.backgroundColor, isVisible: first1.length > 0, loading: tmp7, onPress: tmp24, text: stringResult };
+  items9 = [first2(tmp23, obj4), ];
+  let obj5 = { style: tmp.container, children: items10 };
+  items10 = [first2(customId(linkId[32]), { absolute: true }), , ];
+  let obj6 = { disableGradient: true, disableStickySections: true, initialSelectedDestinations: [], insetEnd: 0, onSelectedDestinationChange: callback, originDestination: memo, rowMode: UserRowModes.TOGGLE };
+  items10[1] = first2(customId(linkId[33]), obj6);
+  let obj7 = { disabled: tmp7, floatingBackgroundColor: tmp.container.backgroundColor, isVisible: length > 0, loading: tmp7, onPress: tmp24, text: stringResult };
   tmp24 = undefined;
-  const ModalFloatingAction = tmp2(tmp3[37]).ModalFloatingAction;
+  const ModalFloatingAction = applicationId(linkId[34]).ModalFloatingAction;
+  const tmp22 = first2;
   if (!tmp7) {
     tmp24 = callback2;
   }
@@ -452,13 +430,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitySh
     stringResult = intl3.string(tmp2(tmp3[24]).t.TXNS7S);
   } else {
     const intl2 = tmp2(tmp3[24]).intl;
-    const obj16 = { count: first1.length };
-    stringResult = intl2.formatToPlainString(tmp2(tmp3[24]).t.jWtYUm, obj16);
+    let obj8 = { count: first1.length };
+    stringResult = intl2.formatToPlainString(tmp2(tmp3[24]).t.jWtYUm, obj8);
   }
-  items10[2] = first2(ModalFloatingAction, obj10);
-  items9[1] = closure_13(c6, obj8);
+  items10[2] = tmp22(ModalFloatingAction, obj7);
+  items9[1] = closure_13(c6, obj5);
   return closure_13(c6, obj3);
 });
 let result = size.fileFinishedImporting("modules/activities/native/ActivityShareLinkModal.tsx");
 
-export default tmp4;
+export default tmp3;

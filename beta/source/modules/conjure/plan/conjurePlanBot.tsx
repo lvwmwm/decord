@@ -1,26 +1,52 @@
-// Module ID: 17292
-// Function ID: 17293
+// Module ID: 12270
+// Function ID: 12271
 // Name: conjurePlanBot
-// Dependencies: [1998, 17287, 6947, 2]
-// Exports: getConjurePlanBotExchanges, getConjurePlanBotInteraction
+// Dependencies: [2000, 12271, 6294, 2]
+// Exports: getConjurePlanBotExchanges, getConjurePlanBotInteraction, getConjurePlanExperienceBotExchanges, getConjurePlanSectionBotExchanges, mergeConjurePlanBotExchanges
 
-// Module 17292 (conjurePlanBot)
-import Server from "Server" /* 1998 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
-import conjurePlanTags from "conjurePlanTags" /* 17287 */;
+// Module 12270 (conjurePlanBot)
+import Server from "Server" /* 2000 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6294 */;
+import conjurePlanTags from "conjurePlanTags" /* 12271 */;
 import size from "module_2" /* 2 */;
 
-function isAppCommand(kind) {
-  let hasItem = "launch" !== kind.kind;
-  if (hasItem) {
-    let CHAT = kind.type;
-    const has = set.has;
-    if (CHAT == null) {
-      CHAT = Server.ApplicationCommandType.CHAT;
+const f112500 = (bot) => {
+  const str = bot.bot;
+  return "" !== str.trim();
+};
+const f112501 = (item) => {
+  let bot;
+  let obj2;
+  let user;
+  ({ user, bot } = item);
+  const trimmed = user.trim();
+  if ("" === trimmed) {
+    obj2 = { kind: "event", user: "", bot };
+    const obj = { kind: "event", user: "", bot };
+  } else {
+    let str2 = "message";
+    if (trimmed.startsWith("/")) {
+      str2 = "command";
     }
-    hasItem = has(CHAT);
+    obj2 = { kind: str2, user: trimmed, bot };
   }
-  return hasItem;
+  return obj2;
+};
+const f112502 = (kind) => {
+  let tmp = "command" === kind.kind;
+  if (!tmp) {
+    tmp = "user_command" === kind.kind || "message_command" === kind.kind;
+    const tmp2 = "user_command" === kind.kind || "message_command" === kind.kind;
+  }
+  return tmp;
+};
+function isAppCommand(type) {
+  let CHAT = type.type;
+  const has = set.has;
+  if (CHAT == null) {
+    CHAT = Server.ApplicationCommandType.CHAT;
+  }
+  return has(CHAT);
 }
 function isContextMenuExchange(kind) {
   return "user_command" === kind.kind || "message_command" === kind.kind;
@@ -74,6 +100,7 @@ let items = [Server.ApplicationCommandType.CHAT, Server.ApplicationCommandType.U
 const set = new Set(items);
 const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanBot.tsx");
 
+export { isAppCommand };
 export const getConjurePlanBotInteraction = function getConjurePlanBotInteraction(bot) {
   let tmp2;
   const obj = conjurePlanTags;
@@ -99,8 +126,51 @@ export const getConjurePlanBotInteraction = function getConjurePlanBotInteractio
   }
   return tmp2;
 };
-export const getConjurePlanBotExchanges = function getConjurePlanBotExchanges(bot, cResult, bot2) {
-  let closure_0 = cResult;
+export const getConjurePlanExperienceBotExchanges = function getConjurePlanExperienceBotExchanges(arr) {
+  const found = arr.filter(f112500);
+  const substr = found.slice(0, 3);
+  return substr.map(f112501);
+};
+export const mergeConjurePlanBotExchanges = function mergeConjurePlanBotExchanges(arr, arg1) {
+  if (0 !== arg1.length) {
+    let items;
+    if (!arr.some(f112502)) {
+      items = [];
+      items[HermesBuiltin.arraySpread(items, arr.slice(0, 2), 0)] = arg1[0];
+    }
+    return items;
+  }
+  items = arr.slice(0, 3);
+};
+export const getConjurePlanSectionBotExchanges = function getConjurePlanSectionBotExchanges(kind, botExchanges, conjurePlanCommandExchanges) {
+  if ("commands" === kind.kind) {
+    return conjurePlanCommandExchanges;
+  } else {
+    let example_exchanges = kind.example_exchanges;
+    if (example_exchanges == null) {
+      example_exchanges = [];
+    }
+    let arr2 = botExchanges;
+    const found = example_exchanges.filter(f112500);
+    const substr = found.slice(0, 3);
+    const mapped = substr.map(f112501);
+    if (mapped.length > 0) {
+      arr2 = mapped;
+    }
+    if (0 !== conjurePlanCommandExchanges.length) {
+      let items;
+      if (!arr2.some(f112502)) {
+        items = [];
+        let tmp2 = items;
+        items[HermesBuiltin.arraySpread(items, arr2.slice(0, 2), 0)] = conjurePlanCommandExchanges[0];
+      }
+      return items;
+    }
+    items = arr2.slice(0, 3);
+  }
+};
+export const getConjurePlanBotExchanges = function getConjurePlanBotExchanges(bot, commands, bot2) {
+  let closure_0 = commands;
   let closure_1 = bot2;
   bot = bot.bot;
   let example_exchanges;
@@ -111,7 +181,7 @@ export const getConjurePlanBotExchanges = function getConjurePlanBotExchanges(bo
     example_exchanges = [];
   }
   let obj = { kind: "event", user: "", bot: bot2.event };
-  if ("events" === cResult) {
+  if ("events" === commands) {
     const substr = example_exchanges.slice(0, 3);
     let mapped = substr.map((bot) => {
       let tmp;
@@ -141,7 +211,7 @@ export const getConjurePlanBotExchanges = function getConjurePlanBotExchanges(bo
         items = [];
       } else {
         let str3 = "message";
-        if ("messages" !== require) {
+        if ("messages" !== commands) {
           str3 = "message";
           const trimStartResult = user.trimStart();
           if (trimStartResult.startsWith("/")) {
@@ -156,13 +226,13 @@ export const getConjurePlanBotExchanges = function getConjurePlanBotExchanges(bo
     let obj3 = { kind: "message", user: null, bot: null };
     ({ message: obj2.user, reply: obj2.bot } = bot2);
     let str2 = "messages";
-    if ("messages" === cResult) {
+    if ("messages" === commands) {
       if (0 === flatMapResult.length) {
         const items1 = [obj3];
         return items1;
       }
     }
-    const commands = bot.commands;
+    commands = bot.commands;
     const found = commands.filter(isAppCommand);
     const mapped1 = found.map((description) => {
       let str2;
@@ -192,7 +262,7 @@ export const getConjurePlanBotExchanges = function getConjurePlanBotExchanges(bo
       }
       return obj;
     });
-    if ("messages" === cResult) {
+    if ("messages" === commands) {
       items2 = [];
     } else {
       items2 = mapped1.filter(isContextMenuExchange);
@@ -205,7 +275,7 @@ export const getConjurePlanBotExchanges = function getConjurePlanBotExchanges(bo
       const str = "both";
       let tmp5 = mapped1;
       let tmp4 = pickSamples;
-      if ("both" === cResult) {
+      if ("both" === commands) {
         const items4 = [];
         items4[HermesBuiltin.arraySpread(items4, mapped1, 0)] = obj3;
         tmp5 = items4;

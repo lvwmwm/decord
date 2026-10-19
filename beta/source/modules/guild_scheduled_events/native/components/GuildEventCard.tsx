@@ -1,20 +1,20 @@
-// Module ID: 8655
-// Function ID: 8656
+// Module ID: 8932
+// Function ID: 8933
 // Name: GuildEventCard
-// Dependencies: [19, 17, 5110, 6054, 2071, 21, 5092, 587, 558, 576, 8526, 5958, 504, 8515, 7492, 8656, 6182, 2]
+// Dependencies: [19, 17, 5209, 6332, 2074, 21, 5191, 587, 558, 576, 8806, 6214, 504, 8793, 7763, 8933, 6459, 2]
 
-// Module 8655 (GuildEventCard)
+// Module 8932 (GuildEventCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
-import ButtonGroup2 from "ButtonGroup" /* 5958 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
-import GuildEventCardComponents from "GuildEventCardComponents" /* 8526 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;
+import ButtonGroup2 from "ButtonGroup" /* 6214 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6332 */;
+import GuildEventCardComponents from "GuildEventCardComponents" /* 8806 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -84,10 +84,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
         cResult[13] = tmp16;
         tmp14 = tmp16;
       }
-      let tmp9 = primaryActionButtonType === tmp(8526).PrimaryActionType.START;
+      let tmp9 = primaryActionButtonType === tmp(8806).PrimaryActionType.START;
       if (tmp9) {
         const obj5 = { event };
-        tmp9 = metroImportDefault(tmp(8526).GuildEventCardRSVPAction, obj5);
+        tmp9 = metroImportDefault(tmp(8806).GuildEventCardRSVPAction, obj5);
       }
       cResult[4] = event;
       cResult[5] = primaryActionButtonType;
@@ -117,7 +117,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
   const tmp5 = metroImportAll;
   if (tmp6Result) {
     const obj3 = { event };
-    tmp6Result = tmp6(tmp2(8526).GuildEventCardRSVPAction, obj3);
+    tmp6Result = tmp6(tmp2(8806).GuildEventCardRSVPAction, obj3);
   }
   items[1] = tmp6Result;
   items[2] = metroImportDefault(GuildEventCardComponents.GuildEventShareAction, { event });
@@ -393,12 +393,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   items2[3] = closure_7(tmp(channel_id[10]).GuildEventSimpleLocation, { event });
   let tmp6Result = null;
   if (!hideControls) {
+    const _HermesInternal = HermesInternal;
     const obj4 = { event, onCloseAction, isConnected: stateFromStores };
-    tmp6Result = tmp6(closure_10, obj4);
+    tmp6Result = tmp6(closure_10, obj4, "controls-" + event.id);
   }
   items2[4] = tmp6Result;
   let tmp6Result2 = null != result;
   if (tmp6Result2) {
+    const _HermesInternal2 = HermesInternal;
     const obj5 = {
       guildId: event.guild_id,
       recurrenceRule: result,
@@ -411,7 +413,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           return tmpResult;
         }
     };
-    tmp6Result2 = tmp6(require("GuildEventRecurrences"), obj5);
+    const tmp17 = require("GuildEventRecurrences");
+    tmp6Result2 = tmp6(tmp17, obj5, "recurrences-" + event.id);
   }
   items2[5] = tmp6Result2;
   return closure_7(Card, obj2);

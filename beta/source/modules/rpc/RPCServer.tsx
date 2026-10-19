@@ -1,21 +1,21 @@
-// Module ID: 14795
-// Function ID: 14796
+// Module ID: 9166
+// Function ID: 9167
 // Name: RPCServer
-// Dependencies: [5, 5639, 1085, 12, 10947, 10937, 14738, 1265, 38, 14737, 11431, 1102, 2]
+// Dependencies: [5, 5895, 1087, 12, 9167, 9169, 9171, 1267, 38, 9172, 9174, 2063, 1104, 2]
 
-// Module 14795 (RPCServer)
+// Module 9166 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import Constants2 from "Constants" /* 5639 */;
-import RPCErrorDefault from "RPCError" /* 10937 */;
-import transformUserDefault from "transformUser" /* 10947 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 11431 */;
-import validateScopeDefault from "validateScope" /* 14738 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import Constants2 from "Constants" /* 5895 */;
+import transformUserDefault from "transformUser" /* 9167 */;
+import RPCErrorDefault from "RPCError" /* 9169 */;
+import validateScopeDefault from "validateScope" /* 9171 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 9174 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
-let c5, command, dependencyMap, importDefault;
+let _self, c5, command, dependencyMap, importDefault;
 
 let c9;
 let hasOwnProperty;
@@ -49,11 +49,11 @@ class RPCServer {
     new Set();
     return merged;
   }
-  registerTransport(item10013) {
+  registerTransport(item10017) {
     const self = this;
-    item10013.on("connect", (arg0) => self.handleConnect(arg0));
-    item10013.on("request", (arg0, arg1) => self.handleRequest(arg0, arg1));
-    item10013.on("disconnect", (arg0, arg1) => self.handleDisconnect(arg0, arg1));
+    item10017.on("connect", (arg0) => self.handleConnect(arg0));
+    item10017.on("request", (arg0, arg1) => self.handleRequest(arg0, arg1));
+    item10017.on("disconnect", (arg0, arg1) => self.handleDisconnect(arg0, arg1));
   }
   handleConnect(v) {
     let obj2;
@@ -82,7 +82,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f118596 = (result) => {
+    const f101260 = (result) => {
       let closure_0 = self(function*(arg0, value) {
         let closure_1;
         closure_0 = arg0;
@@ -202,8 +202,8 @@ class RPCServer {
       const tmp21 = new RPCErrorDefault(obj4, "Payload requires a nonce");
       throw tmp21;
     });
-    const then = promise.then(f118596).then;
-    promise.then(f118596);
+    const then = promise.then(f101260).then;
+    promise.then(f101260);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;
@@ -348,6 +348,47 @@ class RPCServer {
     }
     return tmp;
   }
+  waitForSubscription(arg0, arg1, arg2) {
+    let resolveResult;
+    let self = this;
+    let closure_1 = arg0;
+    let closure_2 = arg1;
+    let closure_0 = arg2;
+    let subscriptions = this.subscriptions;
+    if (subscriptions.some((evt) => {
+      const tmp = evt.evt === closure_1_1 && timeout(evt);
+      return tmp;
+    })) {
+      resolveResult = _Promise.resolve();
+    } else {
+      self = this;
+      const self2 = this;
+      resolveResult = new _Promise((arg0, arg1) => {
+        let closure_3;
+        closure_0 = arg0;
+        closure_1 = arg1;
+        const timeout = new closure_0(closure_2[11]).Timeout();
+        _self = _self.listenIsSubscribed(() => {
+          const subscriptions = self.subscriptions;
+          if (subscriptions.some((evt) => {
+            const tmp = evt.evt === closure_1_1 && timeout(evt);
+            return tmp;
+          })) {
+            let tmp = timeout;
+            timeout.stop();
+            closure_3();
+            closure_0();
+          }
+        });
+        timeout.start(closure_0, () => {
+          closure_3();
+          const error = new Error("No subscription to " + closure_1 + " after " + closure_0 + "ms");
+          closure_1(error);
+        });
+      });
+    }
+    return resolveResult;
+  }
   getSubscription(socket, evt, c3) {
     let closure_0 = socket;
     let closure_1 = evt;
@@ -489,7 +530,7 @@ class RPCServer {
             } else {
               throw new TypeError("Trying to call a non-function");
             }
-          }, closure_3 * socket(timeout[11]).Millis.SECOND);
+          }, closure_3 * socket(timeout[12]).Millis.SECOND);
           let obj = { uniqueId };
           self.addSubscription(socket, RPC_STORE_WAIT, obj, () => {
             const tmp = fn();

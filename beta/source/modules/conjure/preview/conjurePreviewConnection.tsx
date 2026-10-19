@@ -1,24 +1,26 @@
-// Module ID: 13243
-// Function ID: 13244
+// Module ID: 11014
+// Function ID: 11015
 // Name: conjurePreviewConnection
-// Dependencies: [5, 11423, 13244, 11429, 584, 13236, 11413, 13237, 13245, 13246, 13248, 2]
+// Dependencies: [5, 11015, 11017, 11056, 11037, 584, 10996, 10999, 11057, 10998, 11062, 11063, 11064, 2]
 // Exports: getOverlayBackgroundUrl, getPreviewScreenshotUrl, resetOverlayBackground, sendOverlayBackgroundBlur, uploadOverlayBackground
 
-// Module 13243 (conjurePreviewConnection)
+// Module 11014 (conjurePreviewConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11413 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11423 */;
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11429 */;
-import conjureChatConnection from "conjureChatConnection" /* 13236 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 13237 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 13244 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 13245 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 13246 */;
-import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 13248 */;
+import conjureChatConnection from "conjureChatConnection" /* 10996 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10998 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10999 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 11015 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11017 */;
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11037 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 11056 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11057 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 11062 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 11063 */;
+import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 11064 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let body, c2;
+let c2, closure_3;
 
 let obj = function _getPreviewScreenshotUrl() {
   obj = _asyncToGenerator(async function(arg0, value) {
@@ -95,12 +97,12 @@ let obj = function _getPreviewScreenshotUrl() {
   return obj(...arguments);
 };
 obj = function _uploadOverlayBackground() {
-  obj = _asyncToGenerator(async (body, arg1) => {
-    let closure_1 = arg1;
+  obj = _asyncToGenerator(async (arg0, body) => {
+    let closure_0 = arg0;
     let c3 = 0;
     let c4 = 0;
     return (async function(arg0, value) {
-      let obj4;
+      let obj2;
       if (c4 === 2) {
         c4 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -114,9 +116,6 @@ obj = function _uploadOverlayBackground() {
         }
       } else {
         try {
-          let ticket;
-          let baseUrl;
-          let closure_4;
           c4 = 2;
           if (0 === c3) {
             if (arg0 === 1) {
@@ -127,40 +126,13 @@ obj = function _uploadOverlayBackground() {
               return { value, done: true };
             } else {
               closure_2 = tmp;
-              body = closure_1;
-              closure_1 = undefined;
-              ticket = undefined;
-              baseUrl = undefined;
-              closure_4 = undefined;
+              closure_0 = undefined;
+              const request = { method: "PUT", body };
               c3 = 1;
               c4 = 1;
-              const obj5 = { value: obj4.mintWorkerTicket(body), done: false };
-              obj4 = ConjureWorkerTickets;
+              const obj5 = { value: obj2.fetchConjureWorker(closure_0, "/agent/overlay-background", request), done: false };
+              obj2 = conjureWorkerFetch;
               return obj5;
-            }
-          } else if (1 === tmp4) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              closure_1 = value;
-              ticket = closure_1.ticket;
-              baseUrl = closure_1.baseUrl;
-              const _fetch = fetch;
-              const _URLSearchParams = URLSearchParams;
-              const self3 = this;
-              const self4 = this;
-              const obj7 = { ticket };
-              const uRLSearchParams = new URLSearchParams(obj7);
-              const _HermesInternal2 = HermesInternal;
-              const request = { method: "PUT", body };
-              c3 = 2;
-              c4 = 1;
-              const obj8 = { value: fetch("" + baseUrl + "/agent/overlay-background?" + uRLSearchParams, request), done: false };
-              return obj8;
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -169,8 +141,8 @@ obj = function _uploadOverlayBackground() {
             c4 = 3;
             return { value, done: true };
           } else {
-            closure_4 = value;
-            if (closure_4.ok) {
+            closure_0 = value;
+            if (closure_0.ok) {
               c4 = 3;
               return { value: "IconComponent", done: null };
             } else {
@@ -178,7 +150,7 @@ obj = function _uploadOverlayBackground() {
               const _HermesInternal = HermesInternal;
               const self = this;
               const self2 = this;
-              const error = new Error("overlay background upload failed (" + closure_4.status + ")");
+              const error = new Error("overlay background upload failed (" + closure_0.status + ")");
               throw error;
             }
           }
@@ -193,7 +165,7 @@ obj = function _uploadOverlayBackground() {
 };
 obj = function _resetOverlayBackground() {
   obj = _asyncToGenerator(async function(arg0, value) {
-    let obj4;
+    let obj2;
     let closure_0 = arg0;
     if (c3 === 2) {
       c3 = 3;
@@ -202,16 +174,13 @@ obj = function _resetOverlayBackground() {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+        const obj3 = { value, done: true };
+        return obj3;
       } else {
         return { value: "IconComponent", done: null };
       }
     } else {
       try {
-        let ticket;
-        let baseUrl;
-        let closure_3;
         c3 = 2;
         if (0 === c2) {
           if (arg0 === 1) {
@@ -219,43 +188,16 @@ obj = function _resetOverlayBackground() {
             throw value;
           } else if (arg0 === 2) {
             c3 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            const obj4 = { value, done: true };
+            return obj4;
           } else {
             let closure_1 = tmp;
             closure_0 = undefined;
-            ticket = undefined;
-            baseUrl = undefined;
-            closure_3 = undefined;
             c2 = 1;
             c3 = 1;
-            const obj5 = { value: obj4.mintWorkerTicket(closure_0), done: false };
-            obj4 = ConjureWorkerTickets;
+            const obj5 = { value: obj2.fetchConjureWorker(closure_0, "/agent/overlay-background", { method: "DELETE" }), done: false };
+            obj2 = conjureWorkerFetch;
             return obj5;
-          }
-        } else if (1 === tmp4) {
-          if (arg0 === 1) {
-            c3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            const obj6 = { value, done: true };
-            return obj6;
-          } else {
-            closure_0 = value;
-            ticket = closure_0.ticket;
-            baseUrl = closure_0.baseUrl;
-            const _fetch = fetch;
-            const _URLSearchParams = URLSearchParams;
-            const obj7 = { ticket };
-            const self3 = this;
-            const self4 = this;
-            const uRLSearchParams = new URLSearchParams(obj7);
-            const _HermesInternal2 = HermesInternal;
-            c2 = 2;
-            c3 = 1;
-            const obj8 = { value: fetch("" + baseUrl + "/agent/overlay-background?" + uRLSearchParams, { method: "DELETE" }), done: false };
-            return obj8;
           }
         } else if (arg0 === 1) {
           c3 = 3;
@@ -265,8 +207,8 @@ obj = function _resetOverlayBackground() {
           obj = { value, done: true };
           return obj;
         } else {
-          closure_3 = value;
-          if (closure_3.ok) {
+          closure_0 = value;
+          if (closure_0.ok) {
             c3 = 3;
             return { value: "IconComponent", done: null };
           } else {
@@ -274,7 +216,7 @@ obj = function _resetOverlayBackground() {
             const _HermesInternal = HermesInternal;
             const self = this;
             const self2 = this;
-            const error = new Error("overlay background reset failed (" + closure_3.status + ")");
+            const error = new Error("overlay background reset failed (" + closure_0.status + ")");
             throw error;
           }
         }
@@ -425,7 +367,7 @@ obj = function _relayCaptureRequest() {
                 let c1;
                 let v3;
                 closure_2_1.sendCaptureAck(user.id, "accepted");
-                const obj3 = c0(closure_1_2[2]);
+                const obj3 = c0(closure_1_2[3]);
                 await obj3.awaitConjurePreviewClaim(closure_2_0, user.id);
                 return arg1;
               });
@@ -523,7 +465,7 @@ obj = function _relayControlRequest() {
                           let c1;
                           let v3;
                           closure_2_1.sendControlAck(user.id, "accepted");
-                          const obj3 = c0(closure_1_2[2]);
+                          const obj3 = c0(closure_1_2[3]);
                           await obj3.awaitConjurePreviewClaim(closure_2_0, user.id);
                           return null != arg1;
                         })),
@@ -639,11 +581,26 @@ obj = function _getClientCaptureUploadUrl() {
   return obj(...arguments);
 };
 obj = {
-  capture_preview(arg0, projectId) {
+  capture_preview(probe, projectId) {
     function relayCaptureRequest() {
       return obj(...arguments);
     }
-    const promise = relayCaptureRequest(projectId.projectId, projectId.ws, arg0);
+    projectId = projectId.projectId;
+    let tmp = true !== probe.probe;
+    const ws = projectId.ws;
+    if (tmp) {
+      const spec = probe.spec;
+      let mode;
+      if (spec != null) {
+        mode = spec.mode;
+      }
+      tmp = "widget" !== mode;
+    }
+    if (tmp) {
+      obj = ConjurePreviewActionCreators;
+      obj.wakeConjurePreview(projectId);
+    }
+    const promise = relayCaptureRequest(projectId, ws, probe);
     promise.catch(() => {
 
     });
@@ -652,7 +609,11 @@ obj = {
     function relayControlRequest() {
       return obj(...arguments);
     }
-    const promise = relayControlRequest(projectId.projectId, projectId.ws, arg0);
+    projectId = projectId.projectId;
+    const ws = projectId.ws;
+    obj = ConjurePreviewActionCreators;
+    obj.wakeConjurePreview(projectId);
+    const promise = relayControlRequest(projectId, ws, arg0);
     promise.catch(() => {
 
     });
@@ -675,10 +636,12 @@ obj = {
   preview_operation(phase, projectId) {
     projectId = projectId.projectId;
     if ("begin" === phase.phase) {
-      const obj3 = conjurePreviewControlLease;
-      const result = obj3.setConjureControlTuning(projectId, "tuning" === phase.mode);
-      const obj4 = ConjurePlatformUtilsDefault;
-      const result1 = obj4.beginPreviewOperation(projectId);
+      const obj3 = ConjurePreviewActionCreators;
+      obj3.wakeConjurePreview(projectId);
+      const obj4 = conjurePreviewControlLease;
+      const result = obj4.setConjureControlTuning(projectId, "tuning" === phase.mode);
+      const obj5 = ConjurePlatformUtilsDefault;
+      const result1 = obj5.beginPreviewOperation(projectId);
     } else {
       obj = conjurePreviewControlLease;
       const result2 = obj.setConjureControlTuning(projectId, false);
@@ -694,13 +657,30 @@ obj = {
   }
 };
 let obj2 = {
-  preview_ready(turnId, projectId) {
+  preview_ready(integration_installed, projectId) {
     projectId = projectId.projectId;
     obj = conjureChatConnection;
-    obj.appendTurnStep(projectId, turnId);
-    const obj2 = ConjurePublishActionCreators;
-    const result = obj2.refreshPublishedProject(projectId, { isPreview: true });
-    result.catch(() => {
+    obj.appendTurnStep(projectId, integration_installed);
+    let tmp4;
+    if (null != integration_installed.integration_installed) {
+      if (null != integration_installed.bot_permissions_changed) {
+        const obj4 = { integrationInstalled: null, botPermissionsChanged: null };
+        ({ integration_installed: obj2.integrationInstalled, bot_permissions_changed: obj2.botPermissionsChanged } = integration_installed);
+        tmp4 = obj4;
+      }
+    }
+    const tmp5 = null != tmp4 && null != integration_installed.project && null != integration_installed.has_activity;
+    if (tmp5) {
+      const obj6 = {};
+      const applyPublishedPreview = ConjureActionCreators.applyPublishedPreview;
+      ConjureActionCreators;
+      const merged = Object.assign(tmp4);
+      ({ project: obj3.project, has_activity: obj3.hasActivity } = integration_installed);
+      const result = applyPublishedPreview(projectId, obj6);
+    }
+    const tmpResult2 = ConjurePublishActionCreators;
+    const result1 = tmpResult2.refreshPublishedProject(projectId, { isPreview: true, install: tmp4 });
+    result1.catch(() => {
 
     });
   }

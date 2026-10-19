@@ -1,17 +1,17 @@
-// Module ID: 8270
-// Function ID: 8271
+// Module ID: 8547
+// Function ID: 8548
 // Name: ApplicationAssetUtils
-// Dependencies: [32, 5, 8271, 1085, 38, 3, 1295, 584, 1450, 2]
+// Dependencies: [32, 5, 8548, 1087, 38, 3, 1297, 584, 1452, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8270 (ApplicationAssetUtils)
+// Module 8547 (ApplicationAssetUtils)
 import _modDef38 from "module_38" /* 38 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8271 */;
-import Constants from "Constants" /* 1085 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8548 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let c9, hasOwnProperty, length;
@@ -20,7 +20,7 @@ let PlatformTypes;
 let metroRequire;
 let tmp;
 const LoggerDefault = tmp(3);
-const f98044 = (item) => {
+const f99345 = (item) => {
   let startsWithResult;
   if (item != null) {
     startsWithResult = item.startsWith("http:");
@@ -183,7 +183,7 @@ obj = function _resolveExternalAssets() {
 };
 function updateUrlAssetIds(arr, arg1) {
   let num = 0;
-  if (arr.filter(f98044).length > 0) {
+  if (arr.filter(f99345).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;
@@ -342,7 +342,7 @@ obj = function _fetchAssetIds() {
       if (closure_2 === undefined) {
         num13 = 1;
       }
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -522,7 +522,7 @@ export { fetchAssetIds };
 export const getAssetIds = function getAssetIds(id, arr) {
   const items = [];
   let num = 0;
-  if (arr.filter(f98044).length > 0) {
+  if (arr.filter(f99345).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;

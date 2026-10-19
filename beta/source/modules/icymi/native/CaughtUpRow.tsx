@@ -1,19 +1,19 @@
-// Module ID: 16979
-// Function ID: 16980
+// Module ID: 17659
+// Function ID: 17660
 // Name: CaughtUpRow
-// Dependencies: [5, 32, 19, 17, 21, 4850, 5088, 16918, 587, 558, 576, 8467, 16937, 16933, 4977, 5093, 4818, 13141, 1126, 5379, 16957, 683, 5391, 1105, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4945, 5187, 17598, 587, 558, 576, 8745, 17617, 17613, 5073, 5192, 4913, 14066, 1128, 5479, 17637, 683, 5491, 1107, 2]
 
-// Module 16979 (CaughtUpRow)
+// Module 17659 (CaughtUpRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4850 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import timing from "timing" /* 5093 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4945 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import timing from "timing" /* 5192 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16918 */;
+import createICYMIStyles from "createICYMIStyles" /* 17598 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExploreSer
   const cResult = obj.c(56);
   visible = visible.visible;
   const tmp4 = closure_10();
-  let obj2 = visible(4850);
+  let obj2 = visible(4945);
   const sharedValue = obj2.useSharedValue(false);
   if (cResult[0] === visible) {
     let tmp6;
@@ -164,7 +164,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExploreSer
         }
       }
     }
-    const tmpResult = tmp(4850);
+    const tmpResult = tmp(4945);
     class R {
       constructor() {
         let Easing;
@@ -196,13 +196,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExploreSer
         return obj3;
       }
     }
-    let obj3 = { visibleSharedValue: sharedValue, withTiming: tmp(5093).withTiming, Easing: tmp(4850).Easing };
+    let obj3 = { visibleSharedValue: sharedValue, withTiming: tmp(5192).withTiming, Easing: tmp(4945).Easing };
     const useAnimatedStyle = tmpResult.useAnimatedStyle;
     R.__closure = obj3;
     R.__workletHash = 6575188656069;
     R.__initData = __initData;
     const animatedStyle = useAnimatedStyle(R);
-    const tmpResult4 = tmp(4850);
+    const tmpResult4 = tmp(4945);
     class Y {
       constructor() {
         let Easing;
@@ -230,7 +230,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExploreSer
         return obj3;
       }
     }
-    let obj4 = { visibleSharedValue: sharedValue, withDelay: tmp(4850).withDelay, withSequence: tmp(4850).withSequence, withTiming: tmp(5093).withTiming, Easing: tmp(4850).Easing };
+    let obj4 = { visibleSharedValue: sharedValue, withDelay: tmp(4945).withDelay, withSequence: tmp(4945).withSequence, withTiming: tmp(5192).withTiming, Easing: tmp(4945).Easing };
     const useAnimatedStyle2 = tmpResult4.useAnimatedStyle;
     Y.__closure = obj4;
     Y.__workletHash = 469742746264;
@@ -261,14 +261,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExploreSer
       items = [{ translateY: num }];
       return obj3;
     };
-    let obj5 = { visibleSharedValue: sharedValue, withDelay: tmp(4850).withDelay, withSequence: tmp(4850).withSequence, withTiming: tmp(5093).withTiming, Easing: tmp(4850).Easing };
-    const useAnimatedStyle3 = tmp(4850).useAnimatedStyle;
-    tmp(4850);
+    let obj5 = { visibleSharedValue: sharedValue, withDelay: tmp(4945).withDelay, withSequence: tmp(4945).withSequence, withTiming: tmp(5192).withTiming, Easing: tmp(4945).Easing };
+    const useAnimatedStyle3 = tmp(4945).useAnimatedStyle;
+    tmp(4945);
     fn2.__closure = obj5;
     fn2.__workletHash = 14933607481025;
     fn2.__initData = __initData3;
     const animatedStyle3 = useAnimatedStyle3(fn2);
-    const tmpResult6 = tmp(4818);
+    const tmpResult6 = tmp(4913);
     const token = tmpResult6.useToken(sharedValue(587).colors.BACKGROUND_BRAND);
     const tmp26 = sharedValue;
     if (cResult[6] === animatedStyle) {
@@ -301,8 +301,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExploreSer
         }
         let obj6 = { size: "custom", style: tmp4.icon, color: "background-brand" };
         cResult[9] = tmp4.icon;
-        cResult[10] = closure_7(tmp(13141).FlashIcon, obj6);
-        const tmp31 = closure_7(tmp(13141).FlashIcon, obj6);
+        cResult[10] = closure_7(tmp(14066).FlashIcon, obj6);
+        const tmp31 = closure_7(tmp(14066).FlashIcon, obj6);
       } else {
         class A {
           constructor() {
@@ -362,7 +362,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExploreSer
                 }
               }
             }
-            const stringResult = obj9.string(tmp(1126).t.xjxffq);
+            const stringResult = obj9.string(tmp(1128).t.xjxffq);
             cResult[17] = stringResult;
             tmp36 = stringResult;
           } else {
@@ -443,7 +443,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExploreSer
                   }
                 }
               }
-              const stringResult1 = obj11.string(tmp(1126).t.sAApb0);
+              const stringResult1 = obj11.string(tmp(1128).t.sAApb0);
               cResult[23] = stringResult1;
               tmp42 = stringResult1;
             } else {
@@ -561,8 +561,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExploreSer
       const obj12 = { style: tmp29, children: tmp30 };
       cResult[11] = tmp29;
       cResult[12] = tmp30;
-      cResult[13] = closure_7(tmp26(4850).View, obj12);
-      const tmp34 = closure_7(tmp26(4850).View, obj12);
+      cResult[13] = closure_7(tmp26(4945).View, obj12);
+      const tmp34 = closure_7(tmp26(4945).View, obj12);
     }
     const items3 = [tmp4.iconWrapper, animatedStyle];
     cResult[6] = animatedStyle;
@@ -606,7 +606,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExploreSer
   visible = visible.visible;
   dependencyMap = undefined;
   const tmp = closure_10();
-  let obj = visible(4850);
+  let obj = visible(4945);
   let sharedValue = obj.useSharedValue(false);
   let items = [visible, sharedValue];
   const effect = react.useEffect(() => {
@@ -694,7 +694,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExploreSer
       rootNavigationRef.navigate("tabs", { screen: "guilds" });
     }
   }, []);
-  let obj2 = visible(4850);
+  let obj2 = visible(4945);
   class T {
     constructor() {
       let Easing;
@@ -726,12 +726,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExploreSer
       return obj3;
     }
   }
-  let obj3 = { visibleSharedValue: sharedValue, withTiming: visible(5093).withTiming, Easing: visible(4850).Easing };
+  let obj3 = { visibleSharedValue: sharedValue, withTiming: visible(5192).withTiming, Easing: visible(4945).Easing };
   T.__closure = obj3;
   T.__workletHash = 14991314358816;
   T.__initData = __initData4;
   const animatedStyle = obj2.useAnimatedStyle(T);
-  let obj4 = visible(4850);
+  let obj4 = visible(4945);
   const fn = function f() {
     let Easing;
     let Easing2;
@@ -757,12 +757,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExploreSer
     items = [{ translateY: num }];
     return obj3;
   };
-  let obj5 = { visibleSharedValue: sharedValue, withDelay: visible(4850).withDelay, withSequence: visible(4850).withSequence, withTiming: visible(5093).withTiming, Easing: visible(4850).Easing };
+  let obj5 = { visibleSharedValue: sharedValue, withDelay: visible(4945).withDelay, withSequence: visible(4945).withSequence, withTiming: visible(5192).withTiming, Easing: visible(4945).Easing };
   fn.__closure = obj5;
   fn.__workletHash = 3574961372927;
   fn.__initData = __initData5;
   const animatedStyle1 = obj4.useAnimatedStyle(fn);
-  let obj6 = visible(4850);
+  let obj6 = visible(4945);
   class S {
     constructor() {
       let Easing;
@@ -790,43 +790,43 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExploreSer
       return obj3;
     }
   }
-  let obj7 = { visibleSharedValue: sharedValue, withDelay: visible(4850).withDelay, withSequence: visible(4850).withSequence, withTiming: visible(5093).withTiming, Easing: visible(4850).Easing };
+  let obj7 = { visibleSharedValue: sharedValue, withDelay: visible(4945).withDelay, withSequence: visible(4945).withSequence, withTiming: visible(5192).withTiming, Easing: visible(4945).Easing };
   S.__closure = obj7;
   S.__workletHash = 9492925527076;
   S.__initData = __initData6;
   const animatedStyle2 = obj6.useAnimatedStyle(S);
-  let obj8 = visible(4818);
+  let obj8 = visible(4913);
   const token = obj8.useToken(sharedValue(587).colors.BACKGROUND_BRAND);
   const obj10 = { style: tmp.container, children: items5 };
   const obj11 = { style: tmp.textContainer, children: items2 };
   const obj9 = { children: items7 };
-  const obj12 = { style: items1, children: closure_7(visible(13141).FlashIcon, obj13) };
+  const obj12 = { style: items1, children: closure_7(visible(14066).FlashIcon, obj13) };
   items1 = [tmp.iconWrapper, animatedStyle];
-  View = sharedValue(4850).View;
+  View = sharedValue(4945).View;
   obj13 = { size: "custom", style: tmp.icon, color: "background-brand" };
   items2 = [closure_7(View, obj12), , ];
-  const obj14 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: items3, children: intl.string(visible(1126).t.xjxffq) };
+  const obj14 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: items3, children: intl.string(visible(1128).t.xjxffq) };
   items3 = [tmp.headerText, animatedStyle1];
-  intl = visible(1126).intl;
+  intl = visible(1128).intl;
   items2[1] = closure_7(closure_9, obj14);
-  const obj15 = { variant: "text-md/normal", color: "text-default", style: items4, children: intl2.string(visible(1126).t.sAApb0) };
+  const obj15 = { variant: "text-md/normal", color: "text-default", style: items4, children: intl2.string(visible(1128).t.sAApb0) };
   items4 = [tmp.subtitleText, animatedStyle2];
-  intl2 = visible(1126).intl;
+  intl2 = visible(1128).intl;
   items2[2] = closure_7(closure_9, obj15);
   items5 = [closure_8(View, obj11), ];
   const obj16 = { style: tmp.buttonContainer, children: items6 };
-  const obj17 = { size: "md", text: intl3.string(visible(1126).t.lNJYV8), grow: true, variant: "primary", onPress: callback, loading: first };
-  const Button = visible(5379).Button;
-  intl3 = visible(1126).intl;
+  const obj17 = { size: "md", text: intl3.string(visible(1128).t.lNJYV8), grow: true, variant: "primary", onPress: callback, loading: first };
+  const Button = visible(5479).Button;
+  intl3 = visible(1128).intl;
   items6 = [closure_7(Button, obj17), ];
-  const obj18 = { size: "md", text: intl4.string(visible(1126).t.AGrUbj), grow: true, variant: "secondary", onPress: callback1 };
-  const Button2 = visible(5379).Button;
-  intl4 = visible(1126).intl;
+  const obj18 = { size: "md", text: intl4.string(visible(1128).t.AGrUbj), grow: true, variant: "secondary", onPress: callback1 };
+  const Button2 = visible(5479).Button;
+  intl4 = visible(1128).intl;
   items6[1] = closure_7(Button2, obj18);
   items5[1] = closure_8(View, obj16);
-  items7 = [closure_8(View, obj10), closure_7(visible(16957).Separator, {}), ];
-  const obj19 = { style: tmp.gradient, start: visible(1105).VerticalGradient.START, end: visible(1105).VerticalGradient.END, colors: items8, pointerEvents: "none" };
-  const tmp12 = sharedValue(5391);
+  items7 = [closure_8(View, obj10), closure_7(visible(17637).Separator, {}), ];
+  const obj19 = { style: tmp.gradient, start: visible(1107).VerticalGradient.START, end: visible(1107).VerticalGradient.END, colors: items8, pointerEvents: "none" };
+  const tmp12 = sharedValue(5491);
   items8 = [, ];
   const obj20 = sharedValue(683)(token);
   const alphaResult = obj20.alpha(0.2);

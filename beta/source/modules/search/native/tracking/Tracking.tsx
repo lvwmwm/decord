@@ -1,19 +1,19 @@
-// Module ID: 12059
-// Function ID: 12060
+// Module ID: 13009
+// Function ID: 13010
 // Name: search/tracking/Tracking
-// Dependencies: [2065, 12052, 9307, 1085, 12060, 12045, 5107, 1279, 2041, 12062, 2]
+// Dependencies: [2068, 13002, 9613, 1087, 13010, 12995, 5206, 1281, 2044, 13012, 2]
 
-// Module 12059 (search/tracking/Tracking)
-import v1 from "v1" /* 1279 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
-import TrackingConstants from "TrackingConstants" /* 9307 */;
-import SearchUtils from "SearchUtils" /* 12045 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 12060 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 12062 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import SearchQueryStore from "SearchQueryStore" /* 12052 */;
-import Constants from "Constants" /* 1085 */;
+// Module 13009 (search/tracking/Tracking)
+import v1 from "v1" /* 1281 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5206 */;
+import TrackingConstants from "TrackingConstants" /* 9613 */;
+import SearchUtils from "SearchUtils" /* 12995 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13010 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13012 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import SearchQueryStore from "SearchQueryStore" /* 13002 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

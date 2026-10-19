@@ -1,19 +1,19 @@
-// Module ID: 10419
-// Function ID: 10420
+// Module ID: 10742
+// Function ID: 10743
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 4760, 1390, 10286, 21, 558, 576, 504, 4962, 10396, 7018, 1126, 6652, 6650, 9367, 6265, 10420, 2]
+// Dependencies: [32, 19, 4855, 1392, 10597, 21, 558, 576, 504, 5057, 10719, 7293, 1128, 6929, 6927, 9671, 6542, 10743, 2]
 
-// Module 10419 (StrangerDangerMoreTipsModalActionItems)
+// Module 10742 (StrangerDangerMoreTipsModalActionItems)
 import Fragment2 from "Fragment" /* 21 */;
-import intl5 from "intl" /* 1126 */;
-import UserUtilsDefault from "UserUtils" /* 4962 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10286 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10396 */;
+import intl5 from "intl" /* 1128 */;
+import UserUtilsDefault from "UserUtils" /* 5057 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7293 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10597 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10719 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
-import UserStore from "UserStore" /* 1390 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -509,9 +509,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StrangerDang
       stringResult = intl2.string(intl5.t.naWE6W);
     }
     if (first) {
-      let EyeSlashIcon = tmp11(6652).EyeIcon;
+      let EyeSlashIcon = tmp11(6929).EyeIcon;
     } else {
-      EyeSlashIcon = tmp11(6650).EyeSlashIcon;
+      EyeSlashIcon = tmp11(6927).EyeSlashIcon;
     }
     const items = [obj3, ];
     const intl3 = intl5.intl;

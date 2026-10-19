@@ -1,24 +1,24 @@
-// Module ID: 16181
-// Function ID: 16182
+// Module ID: 16874
+// Function ID: 16875
 // Name: UserSettingsDesignSystemPile
-// Dependencies: [32, 19, 17, 21, 5092, 1200, 6159, 558, 576, 5377, 5088, 6182, 13157, 1418, 14297, 12366, 11600, 12367, 9012, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 1202, 6436, 558, 576, 5477, 5187, 6459, 14082, 1420, 15064, 13311, 12730, 12332, 9308, 2]
 
-// Module 16181 (UserSettingsDesignSystemPile)
+// Module 16874 (UserSettingsDesignSystemPile)
 import react2 from "react" /* 576 */;
-import native from "native" /* 1200 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1418 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import Stack_Stack from "Stack/Stack" /* 5377 */;
-import GuildIcon from "GuildIcon" /* 6159 */;
-import Card_Card from "Card/Card" /* 6182 */;
-import ClipView from "ClipView" /* 9012 */;
-import ListUtils from "ListUtils" /* 12367 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 14297 */;
+import native from "native" /* 1202 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1420 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import Stack_Stack from "Stack/Stack" /* 5477 */;
+import GuildIcon from "GuildIcon" /* 6436 */;
+import Card_Card from "Card/Card" /* 6459 */;
+import ClipView from "ClipView" /* 9308 */;
+import ListUtils from "ListUtils" /* 12332 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 15064 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

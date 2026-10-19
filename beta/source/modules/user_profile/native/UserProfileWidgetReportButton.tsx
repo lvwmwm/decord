@@ -1,17 +1,17 @@
-// Module ID: 13268
-// Function ID: 13269
+// Module ID: 14156
+// Function ID: 14157
 // Name: UserProfileWidgetReportButton
-// Dependencies: [109, 19, 17, 21, 558, 576, 1126, 9571, 13269, 9237, 587, 9358, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 1128, 9873, 14157, 9543, 587, 9662, 2]
 
-// Module 13268 (UserProfileWidgetReportButton)
+// Module 14156 (UserProfileWidgetReportButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 9237 */;
-import ContextMenu from "ContextMenu" /* 9358 */;
-import FlagIcon from "FlagIcon" /* 9571 */;
-import showReportModalForUserWidget from "showReportModalForUserWidget" /* 13269 */;
+import intl2 from "intl" /* 1128 */;
+import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 9543 */;
+import ContextMenu from "ContextMenu" /* 9662 */;
+import FlagIcon from "FlagIcon" /* 9873 */;
+import showReportModalForUserWidget from "showReportModalForUserWidget" /* 14157 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -33,8 +33,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   userId = userId.userId;
   const widget = userId.widget;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let intl = tmp(1126).intl;
-    const stringResult = intl.string(userId(1126).t.D4GvHE);
+    let intl = tmp(1128).intl;
+    const stringResult = intl.string(userId(1128).t.D4GvHE);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
       tmp7 = cResult[4];
     }
     if (cResult[5] !== tmp6) {
-      const tmp10 = jsx(userId(9358).ContextMenu, { items: tmp6, children: tmp7 });
+      const tmp10 = jsx(userId(9662).ContextMenu, { items: tmp6, children: tmp7 });
       cResult[5] = tmp6;
       cResult[6] = tmp10;
       tmp8 = tmp10;
@@ -70,12 +70,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     }
     return tmp8;
   }
-  const items = [{ label: first, variant: "destructive", IconComponent: userId(9571).FlagIcon, action }];
+  const items = [{ label: first, variant: "destructive", IconComponent: userId(9873).FlagIcon, action }];
   cResult[1] = userId;
   cResult[2] = widget;
   cResult[3] = items;
   tmp6 = items;
-  ({ label: first, variant: "destructive", IconComponent: userId(9571).FlagIcon, action });
+  ({ label: first, variant: "destructive", IconComponent: userId(9873).FlagIcon, action });
 }) : (function UserProfileWidgetReportButton(arg0) {
   let hitSlop;
   let intl;

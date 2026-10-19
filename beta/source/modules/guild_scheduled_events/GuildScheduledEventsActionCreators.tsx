@@ -1,22 +1,24 @@
-// Module ID: 8514
-// Function ID: 8515
+// Module ID: 8792
+// Function ID: 8793
 // Name: GuildScheduledEventsActionCreators
-// Dependencies: [5, 502, 6054, 2071, 1085, 1295, 5889, 1112, 8515, 5644, 584, 8520, 11, 2]
+// Dependencies: [5, 502, 6332, 2074, 1087, 1297, 6145, 1114, 8793, 5900, 584, 8798, 8799, 8800, 11, 2]
 
-// Module 8514 (GuildScheduledEventsActionCreators)
+// Module 8792 (GuildScheduledEventsActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import router_utils from "router_utils" /* 1112 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8515 */;
+import router_utils from "router_utils" /* 1114 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6145 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8793 */;
+import guildEventEmbedFetchQueue from "guildEventEmbedFetchQueue" /* 8799 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
-import Constants from "Constants" /* 1085 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6332 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
-let c4, c5, rsvp, userId;
+const require = globalThis.__r;
+let _require, c4, c5, guildScheduledEvent, rsvp, userId;
 
 let c10;
 let c9;
@@ -88,25 +90,55 @@ let obj = {
     obj4 = HTTPUtils;
     return post(request);
   },
-  fetchGuildEvent(c0, c1) {
-    let closure_0 = c0;
+  fetchGuildEvent(c0, c1, arg2) {
+    _require = c0;
     let closure_1 = c1;
-    return (async () => {
-      let c3;
-      let closure_0;
-      let closure_1;
-      let obj9;
-      const obj4 = { url: closure_1_10.GUILD_EVENT(tmp4, tmp), rejectWithError: obj9.rejectWithMigratedError() };
-      const httpGetWithCountryCodeQuery = tmp4(c2[9]).httpGetWithCountryCodeQuery;
-      const tmp17 = tmp4(c2[9]);
-      obj9 = tmp4(c2[5]);
-      await httpGetWithCountryCodeQuery(obj4);
-      const body = arg1.body;
-      const obj7 = { type: "FETCH_GUILD_EVENT", guildScheduledEvent: body };
-      const obj = tmp(c2[10]);
-      obj.dispatch(obj7);
-      return body;
-    })();
+    let obj = arg2;
+    if (arg2 === undefined) {
+      obj = {};
+    }
+    function fetch() {
+      return obj(...arguments);
+    }
+    obj = function _fetch() {
+      obj = _asyncToGenerator(async () => {
+        let c3;
+        let closure_0;
+        let closure_1;
+        let obj9;
+        const obj4 = { url: closure_1_10.GUILD_EVENT(closure_2_0, closure_2_1), rejectWithError: obj9.rejectWithMigratedError() };
+        const httpGetWithCountryCodeQuery = tmp4(c2[9]).httpGetWithCountryCodeQuery;
+        const tmp17 = tmp4(c2[9]);
+        obj9 = tmp4(c2[5]);
+        await httpGetWithCountryCodeQuery(obj4);
+        const body = arg1.body;
+        const obj7 = { type: "FETCH_GUILD_EVENT", guildScheduledEvent: body };
+        obj = tmp(c2[10]);
+        obj.dispatch(obj7);
+        return body;
+      });
+      return obj(...arguments);
+    };
+    const obj2 = require("guildEventFetchGuard");
+    return obj2.guardGuildEventFetch(c0, c1, () => {
+      let result;
+      if ("foreground" === obj.priority) {
+        result = fetch();
+      } else {
+        obj = guildEventEmbedFetchQueue;
+        result = obj.scheduleGuildEventFetch(() => {
+          let resolved;
+          guildScheduledEvent = guildScheduledEvent.getGuildScheduledEvent(closure_1_1);
+          if (null != guildScheduledEvent) {
+            resolved = Promise.resolve(guildScheduledEvent);
+          } else {
+            resolved = fetch();
+          }
+          return resolved;
+        });
+      }
+      return result;
+    }, obj);
   },
   fetchGuildEventsForGuild(guild_id) {
     let closure_0 = guild_id;
@@ -126,10 +158,9 @@ let obj = {
       return body;
     })();
   },
-  fetchGuildEventUserCounts(arg0, arg1, found) {
+  fetchGuildEventUserCounts(arg0, arg1, guild_scheduled_event_exception_ids) {
     let closure_0 = arg0;
     let closure_1 = arg1;
-    const guild_scheduled_event_exception_ids = found;
     return (async () => {
       let c3;
       let obj11;
@@ -445,7 +476,7 @@ let obj = {
             } else {
               closure_1 = tmp;
               closure_0 = tmp4;
-              const obj7 = closure_0(closure_2[11]);
+              const obj7 = closure_0(closure_2[13]);
               if (null != obj7.getExistingRsvp(closure_0, closure_1)) {
                 c3 = 1;
                 c4 = 3;
@@ -651,6 +682,6 @@ let obj = {
     }
   }
 };
-const result = size.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventsActionCreators.tsx");
+let result = size.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventsActionCreators.tsx");
 
 export default obj;

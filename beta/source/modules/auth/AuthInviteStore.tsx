@@ -1,12 +1,12 @@
-// Module ID: 5019
-// Function ID: 5020
+// Module ID: 5115
+// Function ID: 5116
 // Name: AuthInviteStore
-// Dependencies: [2079, 504, 584, 2]
+// Dependencies: [2082, 504, 584, 2]
 
-// Module 5019 (AuthInviteStore)
+// Module 5115 (AuthInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2082 */;
 import size from "module_2" /* 2 */;
 
 const React2 = {};

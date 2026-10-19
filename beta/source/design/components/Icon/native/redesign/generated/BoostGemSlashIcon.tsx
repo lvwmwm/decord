@@ -1,83 +1,175 @@
-// Module ID: 12327
-// Function ID: 12328
+// Module ID: 13275
+// Function ID: 13276
 // Name: BoostGemSlashIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 12328, 4817, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 587, 13276, 4912, 13277, 2]
 
-// Module 12327 (BoostGemSlashIcon)
-import Fragment from "Fragment" /* 21 */;
+// Module 13275 (BoostGemSlashIcon)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 12328 */;
+import BaseIconImage3 from "BaseIconImage" /* 4912 */;
+import AssetRegistry from "AssetRegistry" /* 13276 */;
+import AssetRegistry2 from "AssetRegistry" /* 13277 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_3 = ["style", "color"];
-const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostGemSlashIcon(arg0) {
+let metroImportDefault;
+let metroRequire;
+let closure_3 = ["style", "secondaryColor", "color"];
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostGemSlashIcon(arg0) {
   let INTERACTIVE_ICON_DEFAULT;
   let color;
+  let items2;
+  let secondaryColor;
   let style;
-  let tmp10;
-  let tmp4;
+  let tmp12;
   let tmp5;
+  let tmp6;
+  let tmp7;
   const obj = react2;
-  const cResult = obj.c(9);
+  const cResult = obj.c(21);
   if (cResult[0] !== arg0) {
-    ({ style, color } = arg0);
-    const tmp8 = _objectWithoutProperties(arg0, closure_3);
+    ({ style, secondaryColor, color } = arg0);
+    const tmp10 = _objectWithoutProperties(arg0, closure_3);
     cResult[0] = arg0;
-    cResult[1] = tmp8;
+    cResult[1] = tmp10;
     cResult[2] = style;
-    cResult[3] = color;
+    cResult[3] = secondaryColor;
+    cResult[4] = color;
     INTERACTIVE_ICON_DEFAULT = color;
-    tmp5 = style;
-    tmp4 = tmp8;
+    tmp7 = secondaryColor;
+    tmp6 = style;
+    tmp5 = tmp10;
   } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-    INTERACTIVE_ICON_DEFAULT = cResult[3];
+    tmp5 = cResult[1];
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+    INTERACTIVE_ICON_DEFAULT = cResult[4];
+  }
+  let str = "#fff";
+  if (undefined !== tmp7) {
+    str = tmp7;
   }
   if (undefined === INTERACTIVE_ICON_DEFAULT) {
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = AssetRegistry;
-    cResult[4] = tmpResult;
-    tmp10 = tmpResult;
+  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp2Result = AssetRegistry;
+    cResult[5] = tmp2Result;
+    tmp12 = tmp2Result;
   } else {
-    tmp10 = cResult[4];
+    tmp12 = cResult[5];
   }
-  if (cResult[5] === INTERACTIVE_ICON_DEFAULT) {
-    if (cResult[6] === tmp4) {
-      let tmp12;
-      if (cResult[7] === tmp5) {
-        tmp12 = cResult[8];
+  if (cResult[6] === tmp5) {
+    if (cResult[7] === str) {
+      let tmp14;
+      let tmp17;
+      let tmp19;
+      if (cResult[8] === tmp6) {
+        tmp14 = cResult[9];
       }
-      return tmp12;
+      const _Symbol = Symbol;
+      if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmp2Result2 = AssetRegistry2;
+        cResult[10] = tmp2Result2;
+        tmp17 = tmp2Result2;
+      } else {
+        tmp17 = cResult[10];
+      }
+      if (cResult[11] !== tmp6) {
+        let tmp20;
+        const _Symbol2 = Symbol;
+        if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+          const obj2 = { position: "absolute", top: 0 };
+          cResult[13] = obj2;
+          tmp20 = obj2;
+        } else {
+          tmp20 = cResult[13];
+        }
+        const items = [tmp6];
+        const items1 = [];
+        items1[HermesBuiltin.arraySpread(items1, items.flat(), 0)] = tmp20;
+        cResult[11] = tmp6;
+        cResult[12] = items1;
+        tmp19 = items1;
+      } else {
+        tmp19 = cResult[12];
+      }
+      if (cResult[14] === INTERACTIVE_ICON_DEFAULT) {
+        if (cResult[15] === tmp5) {
+          let tmp22;
+          if (cResult[16] === tmp19) {
+            tmp22 = cResult[17];
+          }
+          if (cResult[18] === tmp14) {
+            let tmp28;
+            if (cResult[19] === tmp22) {
+              tmp28 = cResult[20];
+            }
+            return tmp28;
+          }
+          const obj3 = { children: items2 };
+          items2 = [tmp14, tmp22];
+          const tmp31 = metroImportDefault(View, obj3);
+          cResult[18] = tmp14;
+          cResult[19] = tmp22;
+          cResult[20] = tmp31;
+          tmp28 = tmp31;
+        }
+      }
+      const obj4 = { source: tmp17, color: INTERACTIVE_ICON_DEFAULT, style: tmp19 };
+      const BaseIconImage2 = tmp2(4912).BaseIconImage;
+      const merged = Object.assign(tmp5);
+      const tmp27 = metroRequire(BaseIconImage2, obj4);
+      cResult[14] = INTERACTIVE_ICON_DEFAULT;
+      cResult[15] = tmp5;
+      cResult[16] = tmp19;
+      cResult[17] = tmp27;
+      tmp22 = tmp27;
     }
   }
-  const BaseIconImage = tmp(4817).BaseIconImage;
-  const merged = Object.assign(tmp4);
-  const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
-  cResult[5] = INTERACTIVE_ICON_DEFAULT;
-  cResult[6] = tmp4;
-  cResult[7] = tmp5;
-  cResult[8] = tmp14;
-  tmp12 = tmp14;
+  const obj5 = { source: tmp12, color: str, style: tmp6 };
+  const BaseIconImage = tmp2(4912).BaseIconImage;
+  const merged1 = Object.assign(tmp5);
+  const tmp16 = metroRequire(BaseIconImage, obj5);
+  cResult[6] = tmp5;
+  cResult[7] = str;
+  cResult[8] = tmp6;
+  cResult[9] = tmp16;
+  tmp14 = tmp16;
 }) : (function BoostGemSlashIcon(color) {
+  let items;
+  let items2;
+  let secondaryColor;
+  let style;
+  ({ style, secondaryColor } = color);
+  if (secondaryColor === undefined) {
+    secondaryColor = "#fff";
+  }
   let INTERACTIVE_ICON_DEFAULT = color.color;
-  const style = color.style;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
     INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
   }
-  const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
-  const BaseIconImage = BaseIconImage2.BaseIconImage;
+  const merged = Object.assign(color, Object.assign({ style: 0, secondaryColor: 0, color: 0 }));
+  const obj = { children: items };
+  const obj2 = { source: AssetRegistry, color: secondaryColor, style };
+  const BaseIconImage = BaseIconImage3.BaseIconImage;
   const merged1 = Object.assign(merged);
-  return <BaseIconImage source={AssetRegistry} color={INTERACTIVE_ICON_DEFAULT} style={style} />;
+  items = [metroRequire(BaseIconImage, obj2), ];
+  const obj3 = { source: AssetRegistry2, color: INTERACTIVE_ICON_DEFAULT, style: items2 };
+  const BaseIconImage2 = BaseIconImage3.BaseIconImage;
+  const items1 = [style];
+  items2 = [];
+  items2[HermesBuiltin.arraySpread(items2, items1.flat(), 0)] = { position: "absolute", top: 0 };
+  const merged2 = Object.assign(merged);
+  items[1] = metroRequire(BaseIconImage2, obj3);
+  return metroImportDefault(View, obj);
 });
 const result = size.fileFinishedImporting("design/components/Icon/native/redesign/generated/BoostGemSlashIcon.tsx");
 
-export const BoostGemSlashIcon = tmp3;
+export const BoostGemSlashIcon = tmp4;

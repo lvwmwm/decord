@@ -1,18 +1,18 @@
-// Module ID: 14905
-// Function ID: 14906
+// Module ID: 15666
+// Function ID: 15667
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 2087, 7883, 21, 5092, 587, 504, 14906, 14907, 8285, 8284, 1126, 1382, 5088, 14879, 5056, 14909, 2000, 6159, 8854, 2]
+// Dependencies: [19, 2090, 8155, 21, 5191, 587, 504, 15667, 13948, 8563, 8562, 1128, 1384, 5187, 15640, 5155, 15668, 2002, 6436, 9130, 2]
 // Exports: default
 
-// Module 14905 (UserProfilePrimaryGuildEditButton)
+// Module 15666 (UserProfilePrimaryGuildEditButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import GuildTagConstants from "GuildTagConstants" /* 7883 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import GuildTagConstants from "GuildTagConstants" /* 8155 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import createStyles from "createStyles" /* 5092 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import createStyles from "createStyles" /* 5191 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -142,7 +142,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     return <UserProfileEditFormButton label={intl2.string(pendingPrimaryGuildId(handleSelectPrimaryGuild[11]).t["DUD+5n"])} buttonText={name} accessibilityValue={obj5} onPress={function handleOpenSelectPrimaryGuild() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild };
-      obj.openLazy(asyncRequire(14909, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
+      obj.openLazy(asyncRequire(15668, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
     }} leading={tmp23Result} trailing={tmp23Result2} disabled={disabled} />;
   }
   return null;

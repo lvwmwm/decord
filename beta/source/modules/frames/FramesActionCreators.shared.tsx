@@ -1,19 +1,19 @@
-// Module ID: 10807
-// Function ID: 10808
+// Module ID: 11044
+// Function ID: 11045
 // Name: launchFrame
-// Dependencies: [5, 10808, 10803, 6067, 10812, 584, 10814, 10811, 10815, 10821, 10822, 2]
-// Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFramePrefersPictureInPictureOnNavigateAway, updateFramePanelMode
+// Dependencies: [5, 6295, 6296, 6298, 11045, 584, 11047, 6313, 11048, 11054, 11041, 2]
+// Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFrameRunsInBackground, updateFramePanelMode
 
-// Module 10807 (launchFrame)
+// Module 11044 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10811 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10812 */;
-import createProxyTicket from "createProxyTicket" /* 10814 */;
-import leaveFrame from "leaveFrame" /* 10822 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6298 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6313 */;
+import leaveFrame from "leaveFrame" /* 11041 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 11045 */;
+import createProxyTicket from "createProxyTicket" /* 11047 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 10808 */;
-import FramesConstants from "FramesConstants" /* 10803 */;
+import FramesStore from "FramesStore" /* 6295 */;
+import FramesConstants from "FramesConstants" /* 6296 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, dispatchResult1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
@@ -79,7 +79,7 @@ let obj = function _launchFrame() {
               message = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -235,7 +235,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === hasOwnProperty.MAIN) {
-        const tmp4Result = tmp4(10822);
+        const tmp4Result = tmp4(11041);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);
@@ -393,9 +393,9 @@ export { clearMainFrameSlot };
 export { demoteMainFrame };
 export { promoteFrame };
 export { updateFrameLayoutMode };
-export const setFramePrefersPictureInPictureOnNavigateAway = function setFramePrefersPictureInPictureOnNavigateAway(frameId, enabled) {
+export const setFrameRunsInBackground = function setFrameRunsInBackground(frameId, enabled) {
   obj = DispatcherDefault;
-  const obj2 = { type: "FRAME_SET_PREFERS_PICTURE_IN_PICTURE_ON_NAVIGATE_AWAY", frameId, enabled };
+  const obj2 = { type: "FRAME_SET_RUNS_IN_BACKGROUND", frameId, enabled };
   obj.dispatch(obj2);
 };
 export const updateFramePanelMode = function updateFramePanelMode(id, PIP) {

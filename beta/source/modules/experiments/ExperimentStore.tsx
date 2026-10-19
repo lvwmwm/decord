@@ -1,23 +1,23 @@
-// Module ID: 5016
-// Function ID: 5017
+// Module ID: 5112
+// Function ID: 5113
 // Name: ExperimentStore
-// Dependencies: [32, 502, 1084, 5017, 1085, 3, 1379, 1264, 1265, 5018, 510, 12, 584, 2]
+// Dependencies: [32, 502, 1086, 5113, 1087, 3, 1381, 1266, 1267, 5114, 510, 12, 584, 2]
 // Exports: registerExperiment
 
-// Module 5016 (ExperimentStore)
+// Module 5112 (ExperimentStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage5 from "Storage" /* 510 */;
 import Dispatcher from "Dispatcher" /* 584 */;
-import _modDef1264 from "module_1264" /* 1264 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import BuildOverrideUtils from "BuildOverrideUtils" /* 1379 */;
-import GuildFilters from "GuildFilters" /* 5018 */;
+import _modDef1266 from "module_1266" /* 1266 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import BuildOverrideUtils from "BuildOverrideUtils" /* 1381 */;
+import GuildFilters from "GuildFilters" /* 5114 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1084 */;
-import ExperimentConstants from "ExperimentConstants" /* 5017 */;
-import Constants from "Constants" /* 1085 */;
+import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1086 */;
+import ExperimentConstants from "ExperimentConstants" /* 5113 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let closure_22, positions;
@@ -31,7 +31,7 @@ let metroRequire;
 let tmp;
 function getHash(arg0) {
   if (undefined === closure_27[arg0]) {
-    obj = _modDef1264;
+    obj = _modDef1266;
     const v3Result = obj.v3(arg0);
     tmp[arg0] = v3Result;
     return v3Result;
@@ -85,7 +85,7 @@ function getTrackExposureExperimentHash(descriptor) {
     const combined = "" + descriptor.bucket + "|" + descriptor.revision;
     let tmp15 = closure_27[combined];
     if (undefined === tmp15) {
-      const obj2 = _modDef1264;
+      const obj2 = _modDef1266;
       const v3Result = obj2.v3(combined);
       tmp14[combined] = v3Result;
       tmp15 = v3Result;
@@ -96,7 +96,7 @@ function getTrackExposureExperimentHash(descriptor) {
     const combined1 = "" + descriptor.bucket + "|" + descriptor.revision + "|" + descriptor.guildId;
     let tmp8 = closure_27[combined1];
     if (undefined === tmp8) {
-      obj = _modDef1264;
+      obj = _modDef1266;
       const v3Result1 = obj.v3(combined1);
       tmp7[combined1] = v3Result1;
       tmp8 = v3Result1;
@@ -932,7 +932,7 @@ class ExperimentStore extends MobileCacheSnapshotStore {
     }
     let tmp6 = closure_27[id];
     if (undefined === tmp6) {
-      obj = _modDef1264;
+      obj = _modDef1266;
       const v3Result = obj.v3(id);
       tmp5[id] = v3Result;
       tmp6 = v3Result;
@@ -989,7 +989,7 @@ class ExperimentStore extends MobileCacheSnapshotStore {
     let tmp3 = closure_27[name];
     const tmp = loadedUserExperiments;
     if (undefined === tmp3) {
-      obj = _modDef1264;
+      obj = _modDef1266;
       const v3Result = obj.v3(name);
       tmp2[name] = v3Result;
       tmp3 = v3Result;
@@ -1000,7 +1000,7 @@ class ExperimentStore extends MobileCacheSnapshotStore {
     let tmp3 = closure_27[id];
     const tmp = closure_22;
     if (undefined === tmp3) {
-      obj = _modDef1264;
+      obj = _modDef1266;
       const v3Result = obj.v3(id);
       tmp2[id] = v3Result;
       tmp3 = v3Result;
@@ -1056,7 +1056,7 @@ class ExperimentStore extends MobileCacheSnapshotStore {
       let tmp4 = closure_27[combined];
       const tmp = obj2;
       if (undefined === tmp4) {
-        obj = _modDef1264;
+        obj = _modDef1266;
         const v3Result = obj.v3(combined);
         tmp3[combined] = v3Result;
         tmp4 = v3Result;

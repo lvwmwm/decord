@@ -1,11 +1,11 @@
-// Module ID: 10975
-// Function ID: 10976
+// Module ID: 11365
+// Function ID: 11366
 // Name: useCurrentUserStageRoles
-// Dependencies: [502, 5948, 558, 576, 504, 2]
+// Dependencies: [502, 6204, 558, 576, 504, 2]
 
-// Module 10975 (useCurrentUserStageRoles)
+// Module 11365 (useCurrentUserStageRoles)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5948 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6204 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

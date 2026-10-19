@@ -1,12 +1,12 @@
-// Module ID: 17601
-// Function ID: 17602
+// Module ID: 17983
+// Function ID: 17984
 // Name: permissions/PermissionUtils
-// Dependencies: [1096, 1126, 1388, 2]
+// Dependencies: [1098, 1128, 1388, 2]
 // Exports: generateChannelAppsSection, generateChannelEventsSection, generateChannelGeneralSection, generateChannelMembershipSection, generateChannelStageSection, generateChannelStageVoiceSection, generateChannelTextSection, generateChannelVoiceChatSection, generateChannelVoiceSection, generateGuildPermissionSpec, renderDescription
 
-// Module 17601 (permissions/PermissionUtils)
-import Constants from "Constants" /* 1096 */;
-import intl56 from "intl" /* 1126 */;
+// Module 17983 (permissions/PermissionUtils)
+import Constants from "Constants" /* 1098 */;
+import intl56 from "intl" /* 1128 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import size from "module_2" /* 2 */;
 
@@ -395,7 +395,7 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
   let permissions3;
   let permissions4;
   let permissions7;
-  const f130705 = (isExperimental) => !isExperimental.isExperimental;
+  const f132371 = (isExperimental) => !isExperimental.isExperimental;
   const tmp = getGuildPermissionSpec(showCreatorMonetizationAnalyticsPermission);
   const items = [, , , , , , ];
   ({ VIEW_CHANNEL: arr[0], MANAGE_CHANNELS: arr[1], MANAGE_ROLES: arr[2], CREATE_GUILD_EXPRESSIONS: arr[3], MANAGE_GUILD_EXPRESSIONS: arr[4], VIEW_AUDIT_LOG: arr[5], VIEW_GUILD_ANALYTICS: arr[6] } = Permissions);
@@ -404,13 +404,13 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
   }
   items.push(Permissions.MANAGE_WEBHOOKS);
   items.push(Permissions.MANAGE_GUILD);
-  const obj = { title: intl.string(intl56.t["mYck+B"]), permissions: permissions.filter(f130705) };
+  const obj = { title: intl.string(intl56.t["mYck+B"]), permissions: permissions.filter(f132371) };
   intl = intl56.intl;
   permissions = obj.permissions;
   const items1 = [obj, , , , ];
   const items2 = [, , , , , ];
   ({ CREATE_INSTANT_INVITE: arr4[0], CHANGE_NICKNAME: arr4[1], MANAGE_NICKNAMES: arr4[2], KICK_MEMBERS: arr4[3], BAN_MEMBERS: arr4[4], MODERATE_MEMBERS: arr4[5] } = Permissions);
-  const obj2 = { title: intl2.string(intl56.t.Ny49TN), permissions: permissions1.filter(f130705) };
+  const obj2 = { title: intl2.string(intl56.t.Ny49TN), permissions: permissions1.filter(f132371) };
   intl2 = intl56.intl;
   let closure_0 = tmp;
   permissions1 = obj2.permissions;
@@ -421,27 +421,27 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
   if (!showCreatorMonetizationAnalyticsPermission.inSoundmojiExperiment) {
     found = items3.filter((item) => item !== constants.USE_EXTERNAL_SOUNDS);
   }
-  const obj3 = { title: intl3.string(intl56.t.cKobO5), permissions: permissions2.filter(f130705) };
-  intl3 = tmp6(1126).intl;
+  const obj3 = { title: intl3.string(intl56.t.cKobO5), permissions: permissions2.filter(f132371) };
+  intl3 = tmp6(1128).intl;
   permissions2 = obj3.permissions;
   items1[2] = obj3;
   const items4 = [, , , , , , , , , , ];
   ({ CONNECT: arr9[0], SPEAK: arr9[1], STREAM: arr9[2], USE_SOUNDBOARD: arr9[3], USE_EXTERNAL_SOUNDS: arr9[4], USE_VAD: arr9[5], PRIORITY_SPEAKER: arr9[6], MUTE_MEMBERS: arr9[7], DEAFEN_MEMBERS: arr9[8], MOVE_MEMBERS: arr9[9], SET_VOICE_CHANNEL_STATUS: arr9[10] } = Permissions);
-  const obj4 = { title: intl4.string(intl56.t["46Ra1b"]), permissions: permissions3.filter(f130705) };
-  intl4 = tmp6(1126).intl;
+  const obj4 = { title: intl4.string(intl56.t["46Ra1b"]), permissions: permissions3.filter(f132371) };
+  intl4 = tmp6(1128).intl;
   permissions3 = obj4.permissions;
   items1[3] = obj4;
   const items5 = [, , ];
   ({ USE_APPLICATION_COMMANDS: arr11[0], USE_EMBEDDED_ACTIVITIES: arr11[1], USE_EXTERNAL_APPS: arr11[2] } = Permissions);
-  const obj5 = { title: intl5.string(intl56.t["rrh/W6"]), permissions: permissions4.filter(f130705) };
-  intl5 = tmp6(1126).intl;
+  const obj5 = { title: intl5.string(intl56.t["rrh/W6"]), permissions: permissions4.filter(f132371) };
+  intl5 = tmp6(1128).intl;
   closure_0 = tmp;
   permissions4 = obj5.permissions;
   items1[4] = obj5;
   if (showCreatorMonetizationAnalyticsPermission.showStageChannelPermissions) {
     const obj6 = { title: intl6.string(intl56.t.yniauk), permissions: items6.map((item) => closure_0[item.toString(item)]) };
     const push = items1.push;
-    intl6 = tmp6(1126).intl;
+    intl6 = tmp6(1128).intl;
     items6 = [Permissions.REQUEST_TO_SPEAK];
     closure_0 = tmp;
     let flag = showCreatorMonetizationAnalyticsPermission.showExperimental;
@@ -450,13 +450,13 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
     }
     if (!flag) {
       const permissions5 = obj6.permissions;
-      obj6.permissions = permissions5.filter(f130705);
+      obj6.permissions = permissions5.filter(f132371);
     }
     push(obj6);
   }
   const obj7 = { title: intl7.string(intl56.t.b8lplT), permissions: items7.map((item) => closure_0[item.toString(item)]) };
   const push2 = items1.push;
-  intl7 = tmp6(1126).intl;
+  intl7 = tmp6(1128).intl;
   items7 = [, ];
   ({ CREATE_EVENTS: arr15[0], MANAGE_EVENTS: arr15[1] } = Permissions);
   closure_0 = tmp;
@@ -466,12 +466,12 @@ export const generateGuildPermissionSpec = function generateGuildPermissionSpec(
   }
   if (!flag2) {
     const permissions6 = obj7.permissions;
-    obj7.permissions = permissions6.filter(f130705);
+    obj7.permissions = permissions6.filter(f132371);
   }
   push2(obj7);
-  const obj8 = { title: intl8.string(intl56.t["3uI5CX"]), permissions: permissions7.filter(f130705) };
+  const obj8 = { title: intl8.string(intl56.t["3uI5CX"]), permissions: permissions7.filter(f132371) };
   const push3 = items1.push;
-  intl8 = tmp6(1126).intl;
+  intl8 = tmp6(1128).intl;
   const items8 = [Permissions.ADMINISTRATOR];
   closure_0 = tmp;
   permissions7 = obj8.permissions;

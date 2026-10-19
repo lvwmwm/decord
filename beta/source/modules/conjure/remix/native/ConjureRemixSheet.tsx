@@ -1,19 +1,19 @@
-// Module ID: 17076
-// Function ID: 17077
+// Module ID: 11627
+// Function ID: 11628
 // Name: ConjureRemixSheet
-// Dependencies: [5, 32, 19, 17, 2087, 5963, 21, 5092, 587, 558, 576, 6946, 504, 1126, 3849, 6892, 17077, 5056, 6839, 5088, 6265, 6180, 5379, 6899, 2]
+// Dependencies: [5, 32, 19, 17, 2090, 6219, 21, 5191, 587, 558, 576, 7222, 504, 1128, 3883, 7168, 11628, 5155, 7117, 5187, 6542, 6457, 5479, 7175, 2]
 
-// Module 17076 (ConjureRemixSheet)
+// Module 11627 (ConjureRemixSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6892 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7168 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import SortedGuildStore from "SortedGuildStore" /* 5963 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import SortedGuildStore from "SortedGuildStore" /* 6219 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let _asyncToGenerator = _asyncToGenerator_mod;
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: c9, jsxs: c10 } = Fragment);
-const VibegrationsRemixSheet = "VibegrationsRemixSheet";
+const ConjureRemixSheet_str = "ConjureRemixSheet";
 let obj = { content: obj2 };
 obj2 = { gap: nativeDefault.space.PX_16 };
 let closure_12 = createStyles.createStyles(obj);
@@ -56,7 +56,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
   [r10032, View] = tmp9;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [title, stateFromStoresArray];
-    const fn = function f() {
+    const fn = function b() {
       const items = [];
       const flattenedGuildIds = title.getFlattenedGuildIds();
       const tmp2 = flattenedGuildIds[Symbol.iterator]();
@@ -66,7 +66,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
         let result = null != guild;
         if (result) {
           let obj = project(first[11]);
-          result = obj.isConjureGuildEligible(tmp6, "VibegrationsRemixSheet");
+          result = obj.isConjureGuildEligible(tmp6, "ConjureRemixSheet");
         }
         if (result) {
           let arr = items.push(tmp6);
@@ -97,10 +97,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
     }
     title = tmp17;
     if (cResult[6] !== stateFromStoresArray) {
-      class M {
+      class O {
         constructor() {
           obj = closure_0(closure_2[15]);
-          obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F156332 */ } })) };
+          obj1 = { key: "ConjureRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F157117 */ } })) };
           obj4 = { title: closure_8 };
           obj1.header = obj4;
           result = obj.showSimpleActionSheet(obj1);
@@ -108,12 +108,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
         }
       }
       cResult[6] = stateFromStoresArray;
-      cResult[7] = M;
+      cResult[7] = O;
     } else {
-      class M {
+      class O {
         constructor() {
           obj = closure_0(closure_2[15]);
-          obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F156332 */ } })) };
+          obj1 = { key: "ConjureRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F157117 */ } })) };
           obj4 = { title: closure_8 };
           obj1.header = obj4;
           result = obj.showSimpleActionSheet(obj1);
@@ -122,10 +122,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
       }
     }
     if (cResult[8] === first) {
-      class M {
+      class O {
         constructor() {
           obj = closure_0(closure_2[15]);
-          obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F156332 */ } })) };
+          obj1 = { key: "ConjureRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F157117 */ } })) };
           obj4 = { title: closure_8 };
           obj1.header = obj4;
           result = obj.showSimpleActionSheet(obj1);
@@ -184,7 +184,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
             tmp4 = value;
             if (tmp4.ok) {
               const obj = onRemixed(first[17]);
-              obj.hideActionSheet(VibegrationsRemixSheet);
+              obj.hideActionSheet(ConjureRemixSheet_str);
               tmp(tmp4.projectId, c2);
               c3 = 3;
               const obj7 = { value: undefined, done: true };
@@ -213,10 +213,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
   }
   const found = stateFromStoresArray.find((id) => id.id === first);
   if (found != null) {
-    class M {
+    class O {
       constructor() {
         obj = closure_0(closure_2[15]);
-        obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F156332 */ } })) };
+        obj1 = { key: "ConjureRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F157117 */ } })) };
         obj4 = { title: closure_8 };
         obj1.header = obj4;
         result = obj.showSimpleActionSheet(obj1);
@@ -225,10 +225,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
     }
   }
   if (undefined == null) {
-    class M {
+    class O {
       constructor() {
         obj = closure_0(closure_2[15]);
-        obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F156332 */ } })) };
+        obj1 = { key: "ConjureRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F157117 */ } })) };
         obj4 = { title: closure_8 };
         obj1.header = obj4;
         result = obj.showSimpleActionSheet(obj1);
@@ -287,7 +287,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
       let result = null != guild;
       if (result) {
         let obj = project(first[11]);
-        result = obj.isConjureGuildEligible(tmp6, "VibegrationsRemixSheet");
+        result = obj.isConjureGuildEligible(tmp6, "ConjureRemixSheet");
       }
       if (result) {
         let arr = items.push(tmp6);
@@ -313,7 +313,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
     let obj3;
     const obj = Sheet_showSimpleActionSheet;
     const obj2 = {
-      key: "VibegrationsRemixDestination",
+      key: "ConjureRemixDestination",
       stackingBehavior: "stack",
       header: obj3,
       hasIcons: false,
@@ -380,7 +380,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
           tmp = value;
           if (tmp.ok) {
             const obj = tmp4(first[17]);
-            obj.hideActionSheet(VibegrationsRemixSheet);
+            obj.hideActionSheet(ConjureRemixSheet_str);
             closure_129_1(tmp.projectId, closure_129_2);
             c3 = 3;
             const obj7 = { value: undefined, done: true };
@@ -437,4 +437,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
 let result = size.fileFinishedImporting("modules/conjure/remix/native/ConjureRemixSheet.tsx");
 
 export default tmp3;
-export const CONJURE_REMIX_SHEET_KEY = "VibegrationsRemixSheet";
+export const CONJURE_REMIX_SHEET_KEY = "ConjureRemixSheet";

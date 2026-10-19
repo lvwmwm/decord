@@ -1,17 +1,17 @@
-// Module ID: 14943
-// Function ID: 14944
+// Module ID: 15708
+// Function ID: 15709
 // Name: UserProfileEditableTileBase
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 6185, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1128, 6462, 2]
 
-// Module 14943 (UserProfileEditableTileBase)
+// Module 15708 (UserProfileEditableTileBase)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import Pressables from "Pressables" /* 6185 */;
+import intl2 from "intl" /* 1128 */;
+import Pressables from "Pressables" /* 6462 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t["4lAcxv"]);
     cResult[2] = stringResult;
     tmp6 = stringResult;

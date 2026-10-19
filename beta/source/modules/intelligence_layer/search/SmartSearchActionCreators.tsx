@@ -1,17 +1,17 @@
-// Module ID: 12077
-// Function ID: 12078
+// Module ID: 13027
+// Function ID: 13028
 // Name: SmartSearchActionCreators
-// Dependencies: [5, 4760, 12042, 12039, 1085, 12041, 12078, 12079, 12062, 584, 1295, 12043, 5434, 2]
+// Dependencies: [5, 4855, 12992, 12989, 1087, 12991, 13028, 13029, 13012, 584, 1297, 12993, 5534, 2]
 // Exports: fetchAnswer, setResultFeedback
 
-// Module 12077 (SmartSearchActionCreators)
+// Module 13027 (SmartSearchActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
-import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 12042 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 12062 */;
+import Constants from "Constants" /* 1087 */;
+import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 12992 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13012 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 12039 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 12989 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _fetchAnswer() {
@@ -81,7 +81,7 @@ let obj = function _fetchAnswer() {
                 const _performance2 = performance;
                 closure_8 = performance.now();
                 const obj6 = closure_130_1(closure_130_2[8]);
-                parentSuggestedSearch = obj6.getParentSuggestedSearch();
+                parentSuggestedSearch = obj6.getParentSuggestedSearch(queryText);
                 const obj9 = { type: "SMART_SEARCH_FETCH_START", smartSearchQuery };
                 const obj7 = closure_130_1(closure_130_2[9]);
                 obj7.dispatch(obj9);
@@ -137,7 +137,7 @@ let obj = function _fetchAnswer() {
       const obj14 = { type: "SMART_SEARCH_FETCH_SUCCESS", smartSearchQuery, smartSearchStatus, answerText: closure_10.body.answer_text, citations, messages: message_citations.map((message) => message.message) };
       message_citations = closure_10.body.message_citations;
       const dispatch = closure_130_1(closure_130_2[9]).dispatch;
-      const tmp82 = closure_130_1(closure_130_2[9]);
+      const tmp83 = closure_130_1(closure_130_2[9]);
       dispatch(obj14);
       const obj15 = { smartSearchQuery, requestId: closure_10.body.request_id, durationMs: performance.now() - closure_8, responseStatus: closure_10.body.search_status, smartSearchStatus, answerText: closure_10.body.answer_text, citations, parentSuggestedSearch };
       const _performance3 = performance;
@@ -148,7 +148,7 @@ let obj = function _fetchAnswer() {
     await "IconComponent";
     let closure_2 = tmp;
     ({ searchContext: c0, searchQueryString: c1, SearchSessionAnalyticsManager: c2 } = closure_0);
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };

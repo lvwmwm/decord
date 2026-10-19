@@ -1,37 +1,37 @@
-// Module ID: 16152
-// Function ID: 16153
+// Module ID: 16845
+// Function ID: 16846
 // Name: UserSettingsDesignSystemTableRow
-// Dependencies: [32, 19, 17, 4939, 1390, 1085, 21, 558, 576, 6180, 7092, 504, 1631, 5088, 6157, 1415, 6265, 1200, 6896, 6177, 6263, 6262, 6188, 14426, 14423, 14424, 14425, 8577, 5377, 5391, 2]
+// Dependencies: [32, 19, 17, 5034, 1392, 1087, 21, 558, 576, 6457, 7368, 504, 1633, 5187, 5128, 1417, 6542, 1202, 7172, 6454, 6540, 6539, 6465, 15192, 15189, 15190, 15191, 8857, 5477, 5491, 2]
 
-// Module 16152 (UserSettingsDesignSystemTableRow)
+// Module 16845 (UserSettingsDesignSystemTableRow)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 1200 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import Stack_Stack from "Stack/Stack" /* 5377 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import TableCheckboxRow3 from "TableCheckboxRow" /* 6177 */;
-import TableRow16 from "TableRow" /* 6180 */;
-import TableRowIcon5 from "TableRowIcon" /* 6188 */;
-import TableRadioRow5 from "TableRadioRow" /* 6262 */;
-import TableRadioGroup3 from "TableRadioGroup" /* 6263 */;
-import TableRowGroup5 from "TableRowGroup" /* 6265 */;
-import TableSwitchRow3 from "TableSwitchRow" /* 6896 */;
-import SettingsIcon from "SettingsIcon" /* 7092 */;
-import RowButton3 from "RowButton" /* 8577 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14423 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14424 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14425 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 14426 */;
+import native from "native" /* 1202 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import Stack_Stack from "Stack/Stack" /* 5477 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import TableCheckboxRow3 from "TableCheckboxRow" /* 6454 */;
+import TableRow16 from "TableRow" /* 6457 */;
+import TableRowIcon5 from "TableRowIcon" /* 6465 */;
+import TableRadioRow5 from "TableRadioRow" /* 6539 */;
+import TableRadioGroup3 from "TableRadioGroup" /* 6540 */;
+import TableRowGroup5 from "TableRowGroup" /* 6542 */;
+import TableSwitchRow3 from "TableSwitchRow" /* 7172 */;
+import SettingsIcon from "SettingsIcon" /* 7368 */;
+import RowButton3 from "RowButton" /* 8857 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15189 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15190 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15191 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15192 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
-import UserStore from "UserStore" /* 1390 */;
-import Constants from "Constants" /* 1085 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
+import UserStore from "UserStore" /* 1392 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -56,9 +56,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function MyTabl
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { label: "Notifications", onPress, icon: unpackModuleId(Icon, obj3) };
-    const TableRow = tmp(6180).TableRow;
+    const TableRow = tmp(6457).TableRow;
     obj3 = { IconComponent: SettingsIcon.SettingsIcon };
-    Icon = tmp(6180).TableRow.Icon;
+    Icon = tmp(6457).TableRow.Icon;
     const tmp7 = unpackModuleId(TableRow, obj2);
     cResult[0] = tmp7;
     first = tmp7;
@@ -166,7 +166,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
         }
       }
       const obj2 = { IconComponent: SettingsIcon.SettingsIcon };
-      const Icon = tmp(6180).TableRow.Icon;
+      const Icon = tmp(6457).TableRow.Icon;
       const tmp17 = closure_11(Icon, obj2);
       cResult[8] = tmp17;
       tmp16 = tmp17;
@@ -185,7 +185,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
         }
       }
       const obj3 = { onPress, icon: tmp16, label: "Boost your Server", subLabel: "Unlock perks for the entire community", trailing: closure_11(TableRow16.TableRow.Arrow, {}) };
-      const TableRow = tmp(6180).TableRow;
+      const TableRow = tmp(6457).TableRow;
       const tmp21 = closure_11(TableRow, obj3);
       const tmp23 = closure_11(closure_13, {});
       cResult[9] = tmp21;
@@ -208,9 +208,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
         }
       }
       const obj4 = { icon: closure_11(Icon2, obj5), label: "Add a Friend" };
-      const TableRow2 = tmp(6180).TableRow;
+      const TableRow2 = tmp(6457).TableRow;
       obj5 = { IconComponent: SettingsIcon.SettingsIcon };
-      Icon2 = tmp(6180).TableRow.Icon;
+      Icon2 = tmp(6457).TableRow.Icon;
       const tmp25 = closure_11(TableRow2, obj4);
       cResult[11] = tmp25;
       tmp24 = tmp25;
@@ -229,9 +229,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
         }
       }
       const obj6 = { icon: closure_11(Icon3, obj7), label: "A really long label that takes up all of the space and then some", subLabel: "A really long sublabel that takes up all of the space and then some" };
-      const TableRow3 = tmp(6180).TableRow;
+      const TableRow3 = tmp(6457).TableRow;
       obj7 = { IconComponent: SettingsIcon.SettingsIcon };
-      Icon3 = tmp(6180).TableRow.Icon;
+      Icon3 = tmp(6457).TableRow.Icon;
       const tmp27 = closure_11(TableRow3, obj6);
       cResult[12] = tmp27;
       tmp26 = tmp27;
@@ -250,7 +250,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
         }
       }
       const obj8 = { IconComponent: SettingsIcon.SettingsIcon };
-      const Icon4 = tmp(6180).TableRow.Icon;
+      const Icon4 = tmp(6457).TableRow.Icon;
       const tmp29 = closure_11(Icon4, obj8);
       cResult[13] = tmp29;
       tmp28 = tmp29;
@@ -269,7 +269,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
         }
       }
       const obj9 = { icon: tmp28, label: "A really long label, but next to an arrow, that takes up all of the space and then some", subLabel: "A really long sublabel, but next to an arrow, that takes up all of the space and then some", trailing: closure_11(TableRow16.TableRow.Arrow, {}) };
-      const TableRow4 = tmp(6180).TableRow;
+      const TableRow4 = tmp(6457).TableRow;
       const tmp31 = closure_11(TableRow4, obj9);
       cResult[14] = tmp31;
       tmp30 = tmp31;
@@ -288,7 +288,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
         }
       }
       const obj10 = { IconComponent: SettingsIcon.SettingsIcon };
-      const Icon5 = tmp(6180).TableRow.Icon;
+      const Icon5 = tmp(6457).TableRow.Icon;
       const tmp34 = closure_11(Icon5, obj10);
       const tmp35 = closure_11(Text_Text.Text, { variant: "text-md/medium", lineClamp: 1, children: "Custom node for label - A really long label that takes up all of the space and then some" });
       cResult[15] = tmp34;
@@ -350,7 +350,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
       const obj13 = { icon: tmp32, label: tmp33, subLabel: closure_12(closure_5, obj14) };
       obj14 = { style: tmp36, children: items1 };
       items1 = [tmp38, ];
-      const TableRow5 = tmp(6180).TableRow;
+      const TableRow5 = tmp(6457).TableRow;
       const obj15 = { variant: "text-md/medium", lineClamp: 1, color: "text-muted", style: { flexShrink: 1 }, children: "Custom node for subLabel - A really long sublabel that takes up all of the space and then some" };
       items1[1] = closure_11(Text_Text.Text, obj15);
       const tmp44 = closure_11(TableRow5, obj13);
@@ -372,11 +372,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
       }
       const obj16 = { hasIcons: true, children: items2 };
       items2 = [tmp18, tmp19, tmp24, tmp26, tmp30, tmp41, ];
-      const TableRowGroup = tmp(6265).TableRowGroup;
+      const TableRowGroup = tmp(6542).TableRowGroup;
       const obj17 = { icon: closure_11(Icon6, obj18), label: "A disabled row", subLabel: "you cant do anything with this", disabled: true };
-      const TableRow6 = tmp(6180).TableRow;
+      const TableRow6 = tmp(6457).TableRow;
       obj18 = { IconComponent: SettingsIcon.SettingsIcon };
-      Icon6 = tmp(6180).TableRow.Icon;
+      Icon6 = tmp(6457).TableRow.Icon;
       items2[6] = closure_11(TableRow6, obj17);
       cResult[20] = closure_12(TableRowGroup, obj16);
       const tmp47 = closure_12(TableRowGroup, obj16);
@@ -394,7 +394,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
         }
       }
       const obj19 = { user: stateFromStores, guildId: tmp8, status: constants.ONLINE, size: native.AvatarSizes.REFRESH_MEDIUM_32 };
-      const Avatar = tmp(1200).Avatar;
+      const Avatar = tmp(1202).Avatar;
       cResult[21] = stateFromStores;
       cResult[22] = closure_11(Avatar, obj19);
       const tmp50 = closure_11(Avatar, obj19);

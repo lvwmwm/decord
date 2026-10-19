@@ -1,18 +1,18 @@
-// Module ID: 17370
-// Function ID: 17371
+// Module ID: 17752
+// Function ID: 17753
 // Name: NavTTISurfaceProvider
-// Dependencies: [109, 19, 17, 5091, 21, 558, 576, 17002, 17000, 17003, 16994, 11492, 504, 11491, 2]
+// Dependencies: [109, 19, 17, 5190, 21, 558, 576, 17682, 17680, 17683, 17674, 12638, 504, 12637, 2]
 
-// Module 17370 (NavTTISurfaceProvider)
+// Module 17752 (NavTTISurfaceProvider)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 11492 */;
-import useComponentRenderSpan from "useComponentRenderSpan" /* 17000 */;
-import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 17002 */;
-import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 17003 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12638 */;
+import useComponentRenderSpan from "useComponentRenderSpan" /* 17680 */;
+import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 17682 */;
+import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 17683 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5091 */;
+import DevSettingsStore from "DevSettingsStore" /* 5190 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTI
   let tmp3;
   let tmp4;
   let tmp5;
-  let obj = react2;
+  const obj = react2;
   const cResult = obj.c(12);
   if (cResult[0] !== children) {
     ({ measurementProps, onLayout } = children);
@@ -87,8 +87,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTI
         return tmp11;
       }
     }
-    let obj2 = { onLayout: tmp4 };
-    const tmp15 = tmp5;
+    const obj2 = { onLayout: tmp4 };
     const merged = Object.assign(tmp5);
     class I {
       constructor(arg0) {
@@ -130,8 +129,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTI
   ({ measurementProps, children } = onLayout);
   const merged = Object.assign(onLayout, Object.assign({ measurementProps: 0, onLayout: 0, children: 0 }));
   const onLayout2 = measurementProps.onLayout;
-  const items = [onLayout2, onLayout];
-  const obj = { onLayout, children };
+  let items = [onLayout2, onLayout];
+  let obj = { onLayout, children };
   const callback = react.useCallback((arg0) => {
     if (onLayout2 != null) {
       tmp(arg0);
@@ -317,7 +316,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTISurfac
           tmp5 = closure_1;
           fn = obj.subscribe(closure_0, closure_1, definition);
         } else {
-          fn = function() { /* body not rendered: F149488 */ };
+          fn = function() { /* body not rendered: F151341 */ };
         }
         return fn;
       }
@@ -526,7 +525,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTISurfac
                     tmp5 = closure_1;
                     fn = obj.subscribe(closure_0, closure_1, definition);
                   } else {
-                    fn = function() { /* body not rendered: F149488 */ };
+                    fn = function() { /* body not rendered: F151341 */ };
                   }
                   return fn;
                 }
@@ -552,7 +551,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTISurfac
             tmp5 = closure_1;
             fn = obj.subscribe(closure_0, closure_1, definition);
           } else {
-            fn = function() { /* body not rendered: F149488 */ };
+            fn = function() { /* body not rendered: F151341 */ };
           }
           return fn;
         }
@@ -590,7 +589,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavTTISurfac
         tmp5 = closure_1;
         fn = obj.subscribe(closure_0, closure_1, definition);
       } else {
-        fn = function() { /* body not rendered: F149488 */ };
+        fn = function() { /* body not rendered: F151341 */ };
       }
       return fn;
     }

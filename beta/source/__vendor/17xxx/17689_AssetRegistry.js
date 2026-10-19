@@ -1,10 +1,10 @@
 // Module ID: 17689
 // Function ID: 17690
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 17689 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 60, height: 60, scales: [2, 3], hash: "063292ce4c9cf6ef0db464edc768d34e", name: "icon-server-muted", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 84.5, height: 90.5, scales: [2, 3], hash: "89e957c2ca19c43cdc74008a47a75acc", name: "money_birb_placeholder_light", type: "png" });

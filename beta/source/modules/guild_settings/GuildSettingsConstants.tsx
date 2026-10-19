@@ -1,11 +1,11 @@
-// Module ID: 18405
-// Function ID: 18406
+// Module ID: 18801
+// Function ID: 18802
 // Name: GuildSettingsConstants
-// Dependencies: [1126, 2]
+// Dependencies: [1128, 2]
 // Exports: getSettingsErrorMessage
 
-// Module 18405 (GuildSettingsConstants)
-import intl2 from "intl" /* 1126 */;
+// Module 18801 (GuildSettingsConstants)
+import intl2 from "intl" /* 1128 */;
 import size from "module_2" /* 2 */;
 
 const ERROR_KEY_TO_LABEL_FUNC = {

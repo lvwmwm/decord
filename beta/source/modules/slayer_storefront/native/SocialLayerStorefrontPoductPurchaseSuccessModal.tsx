@@ -1,31 +1,31 @@
-// Module ID: 12708
-// Function ID: 12709
+// Module ID: 13650
+// Function ID: 13651
 // Name: SocialLayerStorefrontPoductPurchaseSuccessModal
-// Dependencies: [32, 729, 19, 17, 5081, 6088, 6934, 1085, 21, 5092, 587, 558, 576, 4850, 5378, 5093, 5057, 1497, 504, 8322, 6931, 5088, 1126, 5379, 6157, 5391, 6208, 6210, 9024, 6814, 6858, 6855, 10509, 6879, 1265, 10157, 5396, 3719, 8945, 4962, 2]
+// Dependencies: [32, 729, 19, 17, 5181, 6310, 7210, 1087, 21, 5191, 587, 558, 576, 4945, 5478, 5192, 5156, 1499, 504, 8600, 7207, 5187, 1128, 5479, 5128, 5491, 6485, 6487, 9320, 7092, 7134, 7131, 10832, 7155, 1267, 10459, 5496, 3753, 9240, 5057, 2]
 
-// Module 12708 (SocialLayerStorefrontPoductPurchaseSuccessModal)
+// Module 13650 (SocialLayerStorefrontPoductPurchaseSuccessModal)
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import _modDef3719 from "module_3719" /* 3719 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import UserUtilsDefault from "UserUtils" /* 4962 */;
-import timing from "timing" /* 5093 */;
-import spring from "spring" /* 5378 */;
-import XSmallIcon from "XSmallIcon" /* 6208 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6931 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 6934 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10157 */;
+import intl4 from "intl" /* 1128 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import _modDef3753 from "module_3753" /* 3753 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import UserUtilsDefault from "UserUtils" /* 5057 */;
+import timing from "timing" /* 5192 */;
+import spring from "spring" /* 5478 */;
+import XSmallIcon from "XSmallIcon" /* 6485 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7207 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7210 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10459 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 729 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import SKUStore from "SKUStore" /* 6088 */;
-import Constants from "Constants" /* 1085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import SKUStore from "SKUStore" /* 6310 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -295,7 +295,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Purcha
   ({ sku, title, body, finePrint, ctaLabel, ctaIcon, ctaLoading, onCtaPress, onClose } = arg0);
   const tmp4 = closure_16();
   _require = tmp4;
-  const width = isScreenLandscape(1497)().width;
+  const width = isScreenLandscape(1499)().width;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
     const fn = function p() {
@@ -510,7 +510,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Purcha
   let title;
   let tmp18Result4;
   let useReducedMotion;
-  const f113350 = () => useReducedMotion.useReducedMotion;
+  const f117774 = () => useReducedMotion.useReducedMotion;
   sku = sku.sku;
   ({ finePrint, ctaLabel, onCtaPress, onClose } = sku);
   let width;
@@ -522,8 +522,8 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Purcha
   width = require("useWindowDimensions")().width;
   let obj = sku(width[18]);
   const items = [AccessibilityStore];
-  ({ previewViewStyle, textViewStyle, curtainViewStyle } = closure_26(obj.useStateFromStores(items, f113350)));
-  const tmp5 = closure_26(obj.useStateFromStores(items, f113350));
+  ({ previewViewStyle, textViewStyle, curtainViewStyle } = closure_26(obj.useStateFromStores(items, f117774)));
+  const tmp5 = closure_26(obj.useStateFromStores(items, f117774));
   let obj2 = sku(width[19]);
   const isScreenLandscape = obj2.useIsScreenLandscape();
   let obj3 = react;
@@ -1136,7 +1136,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerS
         formatToPlainString2Result = formatToPlainString(prop, obj3);
       } else {
         let str;
-        const eNNnIG = _modDef3719.eNNnIG;
+        const eNNnIG = _modDef3753.eNNnIG;
         if (getOrFetchApplication != null) {
           str = getOrFetchApplication.name;
         }

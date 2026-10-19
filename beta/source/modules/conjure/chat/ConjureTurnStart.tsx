@@ -1,10 +1,10 @@
-// Module ID: 17190
-// Function ID: 17191
+// Module ID: 12140
+// Function ID: 12141
 // Name: ConjureTurnStart
 // Dependencies: [11, 2]
 // Exports: conjureTurnStartedAt
 
-// Module 17190 (ConjureTurnStart)
+// Module 12140 (ConjureTurnStart)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 16910
-// Function ID: 16911
+// Module ID: 17590
+// Function ID: 17591
 // Name: ForYouEmptyState
-// Dependencies: [19, 17, 21, 5092, 558, 576, 16911, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 17591, 1128, 5187, 2]
 
-// Module 16910 (ForYouEmptyState)
+// Module 17590 (ForYouEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import MailboxSpotIllustration from "MailboxSpotIllustration" /* 16911 */;
+import intl3 from "intl" /* 1128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import MailboxSpotIllustration from "MailboxSpotIllustration" /* 17591 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouEmptyS
       }
       const _Symbol2 = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1126).intl;
+        const intl = tmp(1128).intl;
         const stringResult = intl.string(intl3.t.MwjTvn);
         cResult[11] = stringResult;
         tmp16 = stringResult;
@@ -89,7 +89,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouEmptyS
       const _Symbol3 = Symbol;
       const text = tmp4.text;
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1126).intl;
+        const intl2 = tmp(1128).intl;
         const stringResult1 = intl2.string(intl3.t.AKBgPy);
         cResult[14] = stringResult1;
         tmp21 = stringResult1;

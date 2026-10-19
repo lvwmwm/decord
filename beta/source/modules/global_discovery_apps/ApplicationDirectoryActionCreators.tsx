@@ -1,26 +1,26 @@
-// Module ID: 11750
-// Function ID: 11751
+// Module ID: 11888
+// Function ID: 11889
 // Name: ApplicationDirectoryActionCreators
-// Dependencies: [5, 5091, 2129, 1370, 6854, 11751, 11752, 11747, 11753, 11754, 1085, 584, 569, 1295, 11748, 1382, 11755, 11756, 11757, 2]
+// Dependencies: [5, 5190, 2132, 1372, 6358, 11889, 11890, 11885, 11891, 11892, 1087, 584, 569, 1297, 11886, 1384, 11893, 11894, 11895, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
-// Module 11750 (ApplicationDirectoryActionCreators)
+// Module 11888 (ApplicationDirectoryActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import ApplicationDirectoryApplicationsStore2 from "ApplicationDirectoryApplicationsStore" /* 6854 */;
-import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 11747 */;
-import ApplicationDirectoryCollectionsStore2 from "ApplicationDirectoryCollectionsStore" /* 11752 */;
-import ApplicationDirectorySimilarApplicationsStore2 from "ApplicationDirectorySimilarApplicationsStore" /* 11753 */;
-import MyGuildApplicationsStore2 from "MyGuildApplicationsStore" /* 11754 */;
-import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 11756 */;
-import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 11757 */;
+import Constants from "Constants" /* 1087 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import ApplicationDirectoryApplicationsStore2 from "ApplicationDirectoryApplicationsStore" /* 6358 */;
+import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 11885 */;
+import ApplicationDirectoryCollectionsStore2 from "ApplicationDirectoryCollectionsStore" /* 11890 */;
+import ApplicationDirectorySimilarApplicationsStore2 from "ApplicationDirectorySimilarApplicationsStore" /* 11891 */;
+import MyGuildApplicationsStore2 from "MyGuildApplicationsStore" /* 11892 */;
+import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 11894 */;
+import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 11895 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 5091 */;
-import LocaleStore from "LocaleStore" /* 2129 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1370 */;
-import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 11751 */;
+import DevSettingsStore from "DevSettingsStore" /* 5190 */;
+import LocaleStore from "LocaleStore" /* 2132 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1372 */;
+import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 11889 */;
 import size from "module_2" /* 2 */;
 
 const MyGuildApplicationsStore = MyGuildApplicationsStore2;
@@ -214,7 +214,7 @@ obj = function _getApplication() {
       if (closure_1 === undefined) {
         obj5 = {};
       }
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -361,7 +361,7 @@ obj = function _getSimilarApplications() {
       }
       await "IconComponent";
       ({ applicationId: c0, guildId: c1, options: c2 } = closure_0);
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -468,7 +468,7 @@ obj = function _search() {
       }
       await "IconComponent";
       ({ query: c0, guildId: c1, options: c2, onSuccessCallback: c3 } = closure_0);
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -557,7 +557,7 @@ obj = function _fetchCollections() {
     }
     APPLICATION_DIRECTORY = obj5.surface ?? ApplicationCollectionSurface.ApplicationCollectionSurface.APPLICATION_DIRECTORY;
     ACTIVE = obj5.activeState ?? ApplicationCollectionActiveState.ApplicationCollectionActiveState.ACTIVE;
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };

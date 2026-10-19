@@ -1,21 +1,21 @@
-// Module ID: 9315
-// Function ID: 9316
+// Module ID: 12934
+// Function ID: 12935
 // Name: GuildOnboardingHomeActionCreators
-// Dependencies: [5, 2118, 2065, 6926, 7911, 1085, 584, 1295, 9316, 1265, 5103, 11, 2]
+// Dependencies: [5, 2121, 2068, 7202, 8183, 1087, 584, 1297, 12935, 1267, 5202, 11, 2]
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel
 
-// Module 9315 (GuildOnboardingHomeActionCreators)
+// Module 12934 (GuildOnboardingHomeActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
-import transitionToChannel from "transitionToChannel" /* 5103 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
+import transitionToChannel from "transitionToChannel" /* 5202 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 2118 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6926 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 7911 */;
-import Constants from "Constants" /* 1085 */;
+import ImpersonateStore from "ImpersonateStore" /* 2121 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7202 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8183 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let body, closure_1;
@@ -227,17 +227,17 @@ export const fetchNewMemberActions = function fetchNewMemberActions() {
 export const clearNewMemberActions = function clearNewMemberActions() {
   return obj(...arguments);
 };
-export const selectHomeResourceChannel = function selectHomeResourceChannel(guildId, channelId, arg2) {
+export const selectHomeResourceChannel = function selectHomeResourceChannel(guild_id, channelId) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = true;
   }
   if (null != channelId) {
     const channel = ChannelStore.getChannel(channelId);
-    let isFullServerPreviewResult = null == guildId;
-    const resourceForChannel = GuildOnboardingHomeSettingsStore.getResourceForChannel(guildId, channelId);
+    let isFullServerPreviewResult = null == guild_id;
+    const resourceForChannel = GuildOnboardingHomeSettingsStore.getResourceForChannel(guild_id, channelId);
     if (!isFullServerPreviewResult) {
-      isFullServerPreviewResult = ImpersonateStore.isFullServerPreview(guildId);
+      isFullServerPreviewResult = ImpersonateStore.isFullServerPreview(guild_id);
     }
     if (!isFullServerPreviewResult) {
       isFullServerPreviewResult = null == channel;
@@ -246,7 +246,7 @@ export const selectHomeResourceChannel = function selectHomeResourceChannel(guil
       isFullServerPreviewResult = null == resourceForChannel;
     }
     if (!isFullServerPreviewResult) {
-      const obj2 = { guild_id: guildId, channel_id: channel.id, server_guide_channel_type: "resource", channel_action_type: -1 };
+      const obj2 = { guild_id, channel_id: channel.id, server_guide_channel_type: "resource", channel_action_type: -1 };
       obj = AnalyticsUtilsDefault;
       obj.track(metroImportAll.SERVER_GUIDE_CHANNEL_SELECTED, obj2);
     }
@@ -295,7 +295,7 @@ export const completeNewMemberAction = function completeNewMemberAction(c0, c1) 
           channel_id: null,
           channel_action_type: actionForChannel.actionType,
           has_completed_all: newMemberActions.reduce((acc, channelId) => {
-                  const hasItem = acc && backgroundColor.includes(channelId.channelId);
+                  const hasItem = acc && closure_0.includes(channelId.channelId);
                   return hasItem;
                 }, true)
         };

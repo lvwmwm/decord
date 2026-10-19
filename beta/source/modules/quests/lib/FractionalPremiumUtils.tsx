@@ -1,18 +1,18 @@
-// Module ID: 9187
-// Function ID: 9188
+// Module ID: 9494
+// Function ID: 9495
 // Name: FractionalPremiumUtils
-// Dependencies: [4769, 1126, 7391, 4793, 1102, 2]
+// Dependencies: [4864, 1128, 7661, 4888, 1104, 2]
 // Exports: getDurationStringOfFractionalPremium, getFractionalPremiumQuestRewardName, getFractionalPremiumQuestRewards
 
-// Module 9187 (FractionalPremiumUtils)
-import DurationsDefault from "Durations" /* 1102 */;
-import intl3 from "intl" /* 1126 */;
-import PremiumUtils from "PremiumUtils" /* 4769 */;
-import DateUtils from "DateUtils" /* 4793 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7391 */;
+// Module 9494 (FractionalPremiumUtils)
+import DurationsDefault from "Durations" /* 1104 */;
+import intl3 from "intl" /* 1128 */;
+import PremiumUtils from "PremiumUtils" /* 4864 */;
+import DateUtils from "DateUtils" /* 4888 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7661 */;
 import size from "module_2" /* 2 */;
 
-const f100909 = (type) => type.type === QuestRewardTypes.QuestRewardTypes.FRACTIONAL_PREMIUM;
+const f102306 = (type) => type.type === QuestRewardTypes.QuestRewardTypes.FRACTIONAL_PREMIUM;
 const result = size.fileFinishedImporting("modules/quests/lib/FractionalPremiumUtils.tsx");
 
 export const getDurationStringOfFractionalPremium = function getDurationStringOfFractionalPremium(arr) {
@@ -20,24 +20,24 @@ export const getDurationStringOfFractionalPremium = function getDurationStringOf
   const obj = PremiumUtils;
   const fractionalPremiumUnitsHoursFromSkuIds = obj.getFractionalPremiumUnitsHoursFromSkuIds(arr.map((skuId) => skuId.skuId));
   if (fractionalPremiumUnitsHoursFromSkuIds % 24 === 0) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const obj2 = { days: fractionalPremiumUnitsHoursFromSkuIds / 24 };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp(1126).t.Cz1G97, obj2);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp(1128).t.Cz1G97, obj2);
   } else {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const obj3 = { hours: fractionalPremiumUnitsHoursFromSkuIds };
-    formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t.J9Lu4h, obj3);
+    formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t.J9Lu4h, obj3);
   }
   return formatToPlainStringResult;
 };
 export const getFractionalPremiumQuestRewards = function getFractionalPremiumQuestRewards(rewardsConfig) {
   const rewards = rewardsConfig.rewardsConfig.rewards;
-  return rewards.filter(f100909);
+  return rewards.filter(f102306);
 };
 export const getFractionalPremiumQuestRewardName = function getFractionalPremiumQuestRewardName(rewardsConfig) {
   let obj6;
   const rewards = rewardsConfig.rewardsConfig.rewards;
-  const found = rewards.filter(f100909);
+  const found = rewards.filter(f102306);
   const flatMapResult = found.flatMap((quantity) => {
     const ArrayResult = Array(quantity.quantity);
     return ArrayResult.fill(quantity.skuId);

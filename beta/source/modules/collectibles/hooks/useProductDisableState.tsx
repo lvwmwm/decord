@@ -1,13 +1,13 @@
-// Module ID: 9079
-// Function ID: 9080
+// Module ID: 9373
+// Function ID: 9374
 // Name: useProductDisableState
-// Dependencies: [4775, 558, 576, 504, 1088, 1126, 2]
+// Dependencies: [4870, 558, 576, 504, 1090, 1128, 2]
 
-// Module 9079 (useProductDisableState)
+// Module 9373 (useProductDisableState)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1088 */;
-import SubscriptionStore from "SubscriptionStore" /* 4775 */;
+import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1090 */;
+import SubscriptionStore from "SubscriptionStore" /* 4870 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,14 +38,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProduct
   }
   const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const ALL = tmp(1088).FractionalPremiumSKUsSets.ALL;
+  const ALL = tmp(1090).FractionalPremiumSKUsSets.ALL;
   if (ALL.has(arg0)) {
     let tmp9;
     if (cResult[2] !== stateFromStores) {
       let stringResult = null;
       if (stateFromStores) {
-        const intl = tmp(1126).intl;
-        stringResult = intl.string(tmp(1126).t.NbveHD);
+        const intl = tmp(1128).intl;
+        stringResult = intl.string(tmp(1128).t.NbveHD);
       }
       cResult[2] = stateFromStores;
       cResult[3] = stringResult;
@@ -94,8 +94,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProduct
     const obj2 = { isDisabled: stateFromStores, disabledReason: stringResult };
     stringResult = null;
     if (stateFromStores) {
-      const intl = tmp(1126).intl;
-      stringResult = intl.string(tmp(1126).t.NbveHD);
+      const intl = tmp(1128).intl;
+      stringResult = intl.string(tmp(1128).t.NbveHD);
     }
     obj3 = obj2;
   } else {

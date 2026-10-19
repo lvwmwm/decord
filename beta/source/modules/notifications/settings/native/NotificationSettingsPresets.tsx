@@ -1,21 +1,21 @@
-// Module ID: 12604
-// Function ID: 12605
+// Module ID: 13545
+// Function ID: 13546
 // Name: NotificationSettingsPresets
-// Dependencies: [19, 17, 21, 1126, 7909, 6868, 12605, 10347, 5092, 587, 558, 576, 8525, 5088, 5379, 8774, 12607, 10448, 2]
+// Dependencies: [19, 17, 21, 1128, 8181, 7144, 12163, 10654, 5191, 587, 558, 576, 8805, 5187, 5479, 9051, 13546, 10771, 2]
 
-// Module 12604 (NotificationSettingsPresets)
+// Module 13545 (NotificationSettingsPresets)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 6868 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 7909 */;
-import BellSlashIcon from "BellSlashIcon" /* 10347 */;
-import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10448 */;
-import MagicWandIcon from "MagicWandIcon" /* 12605 */;
-import notificationSettingsGuildFlagUtils from "notificationSettingsGuildFlagUtils" /* 12607 */;
+import intl4 from "intl" /* 1128 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7144 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 8181 */;
+import BellSlashIcon from "BellSlashIcon" /* 10654 */;
+import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10771 */;
+import MagicWandIcon from "MagicWandIcon" /* 12163 */;
+import notificationSettingsGuildFlagUtils from "notificationSettingsGuildFlagUtils" /* 13546 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

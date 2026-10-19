@@ -1,12 +1,12 @@
-// Module ID: 16274
-// Function ID: 16275
+// Module ID: 16965
+// Function ID: 16966
 // Name: PinotSettingsLazy
-// Dependencies: [7988, 10664, 2]
+// Dependencies: [8260, 11084, 2]
 // Exports: usePinotDataPrivacySections
 
-// Module 16274 (PinotSettingsLazy)
-import SettingsConstants from "SettingsConstants" /* 7988 */;
-import SettingBuilders_mod from "SettingBuilders" /* 10664 */;
+// Module 16965 (PinotSettingsLazy)
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const obj = {
@@ -19,7 +19,6 @@ const obj = {
   },
   unsearchable: true
 };
-let SettingBuilders = SettingBuilders_mod;
 const createToggle = SettingBuilders.createToggle;
 const obj2 = {
   useValue() {
@@ -31,19 +30,9 @@ const obj2 = {
 };
 const merged = Object.assign(obj);
 const toggle = createToggle(obj2);
-SettingBuilders = SettingBuilders_mod;
-const createPressable = SettingBuilders.createPressable;
-const obj3 = {
-  onPress() {
-
-  }
-};
-const merged1 = Object.assign(obj);
-const pressable = createPressable(obj3);
 const result = size.fileFinishedImporting("modules/pinot/native/PinotSettingsLazy.tsx");
 
 export const PinotMemberSetting = toggle;
-export const PinotMemberSettingSave = pressable;
 export function usePinotDataPrivacySections() {
   return [];
 }

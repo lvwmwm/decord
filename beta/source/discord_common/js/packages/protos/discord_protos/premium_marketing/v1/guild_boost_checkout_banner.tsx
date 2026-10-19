@@ -1,13 +1,13 @@
-// Module ID: 9146
-// Function ID: 9147
+// Module ID: 9450
+// Function ID: 9451
 // Name: guild_boost_checkout_banner
-// Dependencies: [32, 1210, 9132, 9122, 9123, 2]
+// Dependencies: [32, 1212, 9436, 9426, 9427, 2]
 
-// Module 9146 (guild_boost_checkout_banner)
-import _mod1210 from "module_1210" /* 1210 */;
-import localized_string from "localized_string" /* 9122 */;
-import help_article from "help_article" /* 9123 */;
-import theme_aware_asset from "theme_aware_asset" /* 9132 */;
+// Module 9450 (guild_boost_checkout_banner)
+import _mod1212 from "module_1212" /* 1212 */;
+import localized_string from "localized_string" /* 9426 */;
+import help_article from "help_article" /* 9427 */;
+import theme_aware_asset from "theme_aware_asset" /* 9436 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const T3 = function T() {
 const T4 = function T() {
   return require("help_article").HelpArticle;
 };
-const MessageType = _mod1210.MessageType;
+const MessageType = _mod1212.MessageType;
 class GuildBoostCheckoutBanner$Type extends MessageType {
   constructor() {
     const items = [, , , , , ];
@@ -44,14 +44,14 @@ class GuildBoostCheckoutBanner$Type extends MessageType {
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.GuildBoostCheckoutBanner", items, T);
     return tmp2;
   }
-  create(arr) {
+  create(partialSettings) {
     const obj = { header: "", body: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
-    if (undefined !== arr) {
-      const tmpResult = _mod1210;
-      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+    _Object.defineProperty(obj, _mod1212.MESSAGE_TYPE, obj2);
+    if (undefined !== partialSettings) {
+      const tmpResult = _mod1212;
+      const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
@@ -101,7 +101,7 @@ class GuildBoostCheckoutBanner$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1210.UnknownFieldHandler.onRead;
+                onRead = _mod1212.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -116,7 +116,7 @@ class GuildBoostCheckoutBanner$Type extends MessageType {
       const ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite = ThemeAwareAsset.internalBinaryWrite;
       asset = asset.asset;
-      const tagResult = tag.tag(1, _mod1210.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1212.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(asset, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -124,7 +124,7 @@ class GuildBoostCheckoutBanner$Type extends MessageType {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite2 = LocalizedString.internalBinaryWrite;
       const headerLocalized = asset.headerLocalized;
-      const tagResult1 = tag.tag(2, _mod1210.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1212.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(headerLocalized, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
@@ -132,7 +132,7 @@ class GuildBoostCheckoutBanner$Type extends MessageType {
       const LocalizedString2 = localized_string.LocalizedString;
       internalBinaryWrite3 = LocalizedString2.internalBinaryWrite;
       const bodyLocalized = asset.bodyLocalized;
-      const tagResult2 = tag.tag(3, _mod1210.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1212.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(bodyLocalized, tagResult2.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
@@ -140,22 +140,22 @@ class GuildBoostCheckoutBanner$Type extends MessageType {
       const HelpArticle = help_article.HelpArticle;
       internalBinaryWrite4 = HelpArticle.internalBinaryWrite;
       const helpArticle = asset.helpArticle;
-      const tagResult3 = tag.tag(4, _mod1210.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1212.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(helpArticle, tagResult3.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
     if ("" !== asset.header) {
-      const tagResult4 = tag.tag(5, _mod1210.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(5, _mod1212.WireType.LengthDelimited);
       tagResult4.string(asset.header);
     }
     if ("" !== asset.body) {
-      const tagResult5 = tag.tag(6, _mod1210.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(6, _mod1212.WireType.LengthDelimited);
       tagResult5.string(asset.body);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1210.UnknownFieldHandler.onWrite;
+        onWrite = _mod1212.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, asset, tag);

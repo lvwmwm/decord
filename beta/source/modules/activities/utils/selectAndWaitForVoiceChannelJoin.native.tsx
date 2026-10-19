@@ -1,12 +1,12 @@
-// Module ID: 10879
-// Function ID: 10880
+// Module ID: 11274
+// Function ID: 11275
 // Name: selectAndWaitForVoiceChannelJoin
-// Dependencies: [5, 2116, 5889, 2]
+// Dependencies: [5, 2119, 6145, 2]
 // Exports: default
 
-// Module 10879 (selectAndWaitForVoiceChannelJoin)
+// Module 11274 (selectAndWaitForVoiceChannelJoin)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3;
@@ -54,7 +54,7 @@ let obj = function _selectAndWaitForVoiceChannelJoin() {
             promise = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {

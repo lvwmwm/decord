@@ -1,9 +1,9 @@
-// Module ID: 2059
-// Function ID: 2060
+// Module ID: 2062
+// Function ID: 2063
 // Name: UserRequiredActionStore
 // Dependencies: [504, 584, 2]
 
-// Module 2059 (UserRequiredActionStore)
+// Module 2062 (UserRequiredActionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

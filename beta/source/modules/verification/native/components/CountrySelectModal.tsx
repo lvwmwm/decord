@@ -1,15 +1,15 @@
-// Module ID: 6736
-// Function ID: 6737
+// Module ID: 7013
+// Function ID: 7014
 // Name: CountrySelectModal
-// Dependencies: [19, 21, 1126, 6201, 5934, 6737, 6734, 558, 576, 6726, 6765, 6688, 2]
+// Dependencies: [19, 21, 1128, 6478, 6190, 7014, 7011, 558, 576, 7003, 7042, 6965, 2]
 
-// Module 6736 (CountrySelectModal)
+// Module 7013 (CountrySelectModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import NavigatorHeader from "NavigatorHeader" /* 6201 */;
-import Navigator from "Navigator" /* 6688 */;
+import intl2 from "intl" /* 1128 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
+import NavigatorHeader from "NavigatorHeader" /* 6478 */;
+import Navigator from "Navigator" /* 6965 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CountrySel
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { COUNTRY_SELECT: obj3 };
     obj3 = { title: intl.string(intl2.t.gzXECH), headerLeft: tmpResult.getHeaderCloseButton(ModalActionCreatorsDefault.pop), render };
-    intl = tmp(1126).intl;
+    intl = tmp(1128).intl;
     cResult[0] = obj2;
     first = obj2;
     tmpResult = NavigatorHeader;

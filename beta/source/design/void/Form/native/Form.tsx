@@ -1,29 +1,29 @@
-// Module ID: 6829
-// Function ID: 6830
+// Module ID: 7107
+// Function ID: 7108
 // Name: Form/Form
-// Dependencies: [19, 17, 21, 5092, 558, 576, 6665, 6264, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 6942, 6541, 2]
 
-// Module 6829 (Form/Form)
+// Module 7107 (Form/Form)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6942 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const RedesignCompat = tmp(6264);
+const RedesignCompat = tmp(6541);
 const ScrollView = react_native.ScrollView;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ form: { flex: 1 }, redesign: { paddingTop: 16 } });
-let context = react.createContext({ isForm: false });
+const context = react.createContext({ isForm: false });
+const value = { isForm: true };
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Form(arg0) {
   let alwaysBounceVertical;
   let children;
   let contentContainerStyle;
-  let first;
   let keyboardShouldPersistTaps;
   let onLayout;
   let onScroll;
@@ -31,7 +31,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Form(arg0)
   let scrollsToTop;
   let style;
   const obj = react2;
-  const cResult = obj.c(21);
+  const cResult = obj.c(20);
   ({ style, children, keyboardShouldPersistTaps, alwaysBounceVertical, contentContainerStyle, onScroll, scrollsToTop, onLayout, ref } = arg0);
   let str = "never";
   if (undefined !== keyboardShouldPersistTaps) {
@@ -39,53 +39,46 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Form(arg0)
   }
   const tmp5 = closure_6();
   const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;
-  context = react.useContext(RedesignCompat.RedesignCompatContext);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { isForm: true };
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === style) {
-    if (cResult[2] === tmp5.form) {
+  const tmp6 = react.useContext(RedesignCompat.RedesignCompatContext) && tmp5.redesign;
+  if (cResult[0] === style) {
+    if (cResult[1] === tmp5.form) {
+      let tmp7;
       let tmp9;
-      let tmp11;
-      if (cResult[3] === (context && tmp5.redesign)) {
-        tmp9 = cResult[4];
+      if (cResult[2] === tmp6) {
+        tmp7 = cResult[3];
       }
       const sum = 38 + insets.bottom;
-      if (cResult[5] !== sum) {
-        const obj3 = { paddingBottom: sum };
-        cResult[5] = sum;
-        cResult[6] = obj3;
-        tmp11 = obj3;
+      if (cResult[4] !== sum) {
+        const obj2 = { paddingBottom: sum };
+        cResult[4] = sum;
+        cResult[5] = obj2;
+        tmp9 = obj2;
       } else {
-        tmp11 = cResult[6];
+        tmp9 = cResult[5];
       }
-      if (cResult[7] === contentContainerStyle) {
-        let tmp12;
-        if (cResult[8] === tmp11) {
-          tmp12 = cResult[9];
+      if (cResult[6] === contentContainerStyle) {
+        let tmp10;
+        if (cResult[7] === tmp9) {
+          tmp10 = cResult[8];
         }
         const _Symbol = Symbol;
-        if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj4 = { top: 0 };
-          cResult[10] = obj4;
+        if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+          const obj3 = { top: 0 };
+          cResult[9] = obj3;
         }
-        if (cResult[11] === (undefined === alwaysBounceVertical || alwaysBounceVertical)) {
-          if (cResult[12] === children) {
-            if (cResult[13] === str) {
-              if (cResult[14] === onLayout) {
-                if (cResult[15] === onScroll) {
-                  if (cResult[16] === ref) {
-                    if (cResult[17] === scrollsToTop) {
-                      if (cResult[18] === tmp9) {
-                        let tmp14;
-                        if (cResult[19] === tmp12) {
-                          tmp14 = cResult[20];
+        if (cResult[10] === (undefined === alwaysBounceVertical || alwaysBounceVertical)) {
+          if (cResult[11] === children) {
+            if (cResult[12] === str) {
+              if (cResult[13] === onLayout) {
+                if (cResult[14] === onScroll) {
+                  if (cResult[15] === ref) {
+                    if (cResult[16] === scrollsToTop) {
+                      if (cResult[17] === tmp7) {
+                        let tmp13;
+                        if (cResult[18] === tmp10) {
+                          tmp13 = cResult[19];
                         }
-                        return tmp14;
+                        return tmp13;
                       }
                     }
                   }
@@ -95,32 +88,32 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Form(arg0)
           }
         }
         const Provider = context.Provider;
-        const tmp18 = <Provider value={first}>{null}</Provider>;
-        cResult[11] = undefined === alwaysBounceVertical || alwaysBounceVertical;
-        cResult[12] = children;
-        cResult[13] = str;
-        cResult[14] = onLayout;
-        cResult[15] = onScroll;
-        cResult[16] = ref;
-        cResult[17] = scrollsToTop;
-        cResult[18] = tmp9;
-        cResult[19] = tmp12;
-        cResult[20] = tmp18;
-        tmp14 = tmp18;
+        const tmp18 = <Provider value={value}>{null}</Provider>;
+        cResult[10] = undefined === alwaysBounceVertical || alwaysBounceVertical;
+        cResult[11] = children;
+        cResult[12] = str;
+        cResult[13] = onLayout;
+        cResult[14] = onScroll;
+        cResult[15] = ref;
+        cResult[16] = scrollsToTop;
+        cResult[17] = tmp7;
+        cResult[18] = tmp10;
+        cResult[19] = tmp18;
+        tmp13 = tmp18;
       }
-      const items = [tmp11, contentContainerStyle];
-      cResult[7] = contentContainerStyle;
-      cResult[8] = tmp11;
-      cResult[9] = items;
-      tmp12 = items;
+      const items = [tmp9, contentContainerStyle];
+      cResult[6] = contentContainerStyle;
+      cResult[7] = tmp9;
+      cResult[8] = items;
+      tmp10 = items;
     }
   }
-  const items1 = [tmp5.form, style, context && tmp5.redesign];
-  cResult[1] = style;
-  cResult[2] = tmp5.form;
-  cResult[3] = context && tmp5.redesign;
-  cResult[4] = items1;
-  tmp9 = items1;
+  const items1 = [tmp5.form, style, tmp6];
+  cResult[0] = style;
+  cResult[1] = tmp5.form;
+  cResult[2] = tmp6;
+  cResult[3] = items1;
+  tmp7 = items1;
 }) : (function Form(keyboardShouldPersistTaps) {
   let children;
   let contentContainerStyle;
@@ -152,7 +145,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Form(arg0)
   const obj3 = { paddingBottom: 38 + insets.bottom };
   items1[0] = obj3;
   items1[1] = contentContainerStyle;
-  return <Provider value={{ isForm: true }}>{null}</Provider>;
+  return <Provider value={value}>{null}</Provider>;
 });
 const result = size.fileFinishedImporting("design/void/Form/native/Form.tsx");
 

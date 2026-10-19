@@ -1,16 +1,16 @@
-// Module ID: 8663
-// Function ID: 8664
+// Module ID: 8940
+// Function ID: 8941
 // Name: StartEventUtils
-// Dependencies: [5, 2069, 2065, 2087, 2071, 1085, 8597, 38, 7491, 8514, 2]
+// Dependencies: [5, 2072, 2068, 2090, 2074, 1087, 8876, 38, 7762, 8792, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 8663 (StartEventUtils)
-import Constants from "Constants" /* 1085 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
+// Module 8940 (StartEventUtils)
+import Constants from "Constants" /* 1087 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;
 import size from "module_2" /* 2 */;
 
 let permissionOverwrites;
@@ -61,7 +61,7 @@ let obj = function _createStageChannelForEvent() {
               closure_4 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -267,7 +267,7 @@ obj = function _setEventAsActive() {
       if (closure_1 === undefined) {
         flag = false;
       }
-      return "Set";
+      return "Reflect";
     })();
     iter.next();
     return iter;

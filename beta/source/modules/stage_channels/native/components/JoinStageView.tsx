@@ -1,17 +1,17 @@
-// Module ID: 11046
-// Function ID: 11047
+// Module ID: 11432
+// Function ID: 11433
 // Name: JoinStageView
-// Dependencies: [19, 21, 558, 576, 5956, 5950, 11021, 1126, 7484, 10978, 2]
+// Dependencies: [19, 21, 558, 576, 6212, 6206, 11411, 1128, 7755, 11368, 2]
 
-// Module 11046 (JoinStageView)
+// Module 11432 (JoinStageView)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5950 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5956 */;
-import StageChannelUtils from "StageChannelUtils" /* 7484 */;
-import StageActionBarButtons from "StageActionBarButtons" /* 10978 */;
-import StageViewWithPromptsDefault from "StageViewWithPrompts" /* 11021 */;
+import intl2 from "intl" /* 1128 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6206 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 6212 */;
+import StageChannelUtils from "StageChannelUtils" /* 7755 */;
+import StageActionBarButtons from "StageActionBarButtons" /* 11368 */;
+import StageViewWithPromptsDefault from "StageViewWithPrompts" /* 11411 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -74,7 +74,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinStageV
   const found = stageParticipants.filter(tmp7);
   const tmp9 = StageViewWithPromptsDefault;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t.WZOeQv);
     cResult[6] = stringResult;
     tmp10 = stringResult;

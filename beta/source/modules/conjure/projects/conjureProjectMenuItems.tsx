@@ -1,12 +1,12 @@
-// Module ID: 17170
-// Function ID: 17171
+// Module ID: 12117
+// Function ID: 12118
 // Name: conjureProjectMenuItems
-// Dependencies: [1126, 3849, 2]
+// Dependencies: [1128, 3883, 2]
 // Exports: previewMenuItems
 
-// Module 17170 (conjureProjectMenuItems)
-import intl4 from "intl" /* 1126 */;
-import _modDef3849 from "module_3849" /* 3849 */;
+// Module 12117 (conjureProjectMenuItems)
+import intl4 from "intl" /* 1128 */;
+import _modDef3883 from "module_3883" /* 3883 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/projects/conjureProjectMenuItems.tsx");
@@ -23,7 +23,7 @@ export const previewMenuItems = function previewMenuItems(canRefresh) {
   const items = [];
   if (canRefresh.canRefresh) {
     const push = items.push;
-    const obj = { id: "preview-refresh", label: intl.string(_modDef3849["/nOi5n"]), kind: "refresh", disabled: tmp };
+    const obj = { id: "preview-refresh", label: intl.string(_modDef3883["/nOi5n"]), kind: "refresh", disabled: tmp };
     intl = intl4.intl;
     push(obj);
   }
@@ -34,13 +34,13 @@ export const previewMenuItems = function previewMenuItems(canRefresh) {
     let connection = nextResult.connection;
     let push2 = items.push;
     if ("authorize" === nextResult.offer) {
-      let obj2 = { id: "preview-connect-" + connection.type, label: intl2.formatToPlainString(_modDef3849.DEwmI5, obj3), kind: "connect", connectionType: connection.type, disabled: connectPending.has(connection.type) };
+      let obj2 = { id: "preview-connect-" + connection.type, label: intl2.formatToPlainString(_modDef3883.DEwmI5, obj3), kind: "connect", connectionType: connection.type, disabled: connectPending.has(connection.type) };
       let _HermesInternal = HermesInternal;
       intl2 = intl4.intl;
       obj3 = { label: connection.label };
       obj4 = obj2;
     } else {
-      obj4 = { id: "preview-connect-" + connection.type, label: intl3.formatToPlainString(_modDef3849.GnHcWc, obj5), kind: "connect", connectionType: connection.type, disabled: true };
+      obj4 = { id: "preview-connect-" + connection.type, label: intl3.formatToPlainString(_modDef3883.GnHcWc, obj5), kind: "connect", connectionType: connection.type, disabled: true };
       let _HermesInternal2 = HermesInternal;
       intl3 = intl4.intl;
       obj5 = { label: connection.label };

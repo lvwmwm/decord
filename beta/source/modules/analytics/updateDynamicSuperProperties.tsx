@@ -1,13 +1,13 @@
-// Module ID: 18016
-// Function ID: 18017
+// Module ID: 18409
+// Function ID: 18410
 // Name: updateDynamicSuperProperties
-// Dependencies: [7179, 1273, 6071, 2]
+// Dependencies: [7450, 1275, 6349, 2]
 // Exports: updateDynamicSuperProperties
 
-// Module 18016 (updateDynamicSuperProperties)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6071 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7179 */;
+// Module 18409 (updateDynamicSuperProperties)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6349 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7450 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/analytics/updateDynamicSuperProperties.tsx");

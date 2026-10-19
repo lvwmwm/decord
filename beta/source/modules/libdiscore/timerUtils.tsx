@@ -1,15 +1,15 @@
-// Module ID: 18751
-// Function ID: 18752
+// Module ID: 19149
+// Function ID: 19150
 // Name: timerUtils
-// Dependencies: [1085, 3, 1265, 551, 567, 2]
+// Dependencies: [1087, 3, 1267, 551, 567, 2]
 // Exports: setupLibdiscoreTimersMonitor
 
-// Module 18751 (timerUtils)
+// Module 19149 (timerUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import debounceDefault from "debounce" /* 551 */;
 import timersAll from "timers" /* 567 */;
-import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import Constants from "Constants" /* 1087 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import size from "module_2" /* 2 */;
 
 function onTimersDelayCallback(timerId, expectedDelay, actualDelay, executionTime) {

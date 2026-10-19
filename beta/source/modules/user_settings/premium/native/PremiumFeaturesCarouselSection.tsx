@@ -1,30 +1,30 @@
-// Module ID: 13766
-// Function ID: 13767
+// Module ID: 14546
+// Function ID: 14547
 // Name: PremiumFeaturesCarouselSection
-// Dependencies: [32, 19, 17, 1085, 7152, 1392, 21, 587, 5092, 558, 576, 5391, 1105, 5088, 6157, 1126, 13767, 13768, 13769, 13770, 5362, 1628, 10117, 1200, 6852, 1497, 1265, 2]
+// Dependencies: [32, 19, 17, 1087, 7423, 1394, 21, 587, 5191, 558, 576, 5491, 1107, 5187, 5128, 1128, 14547, 14548, 14549, 14550, 5462, 1630, 10419, 1202, 7130, 1499, 1267, 2]
 
-// Module 13766 (PremiumFeaturesCarouselSection)
+// Module 14546 (PremiumFeaturesCarouselSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import intl5 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5362 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import ColorConstants from "ColorConstants" /* 7152 */;
-import PaginationDefault from "Pagination" /* 10117 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13767 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13768 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13769 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13770 */;
+import Constants from "Constants" /* 1087 */;
+import ConstantsIOS from "ConstantsIOS" /* 1107 */;
+import intl5 from "intl" /* 1128 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5462 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import ColorConstants from "ColorConstants" /* 7423 */;
+import PaginationDefault from "Pagination" /* 10419 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14547 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14548 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14549 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14550 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,9 +40,9 @@ let obj5;
 let obj6;
 let tmp;
 let unpackModuleId;
-const native = tmp(1200);
-const MetaQuestUtils = tmp(1628);
-const Text_Text = tmp(5088);
+const native = tmp(1202);
+const MetaQuestUtils = tmp(1630);
+const Text_Text = tmp(5187);
 let _slicedToArray = _slicedToArray_mod;
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -225,7 +225,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePre
   const cResult = obj.c(15);
   const tmp4 = closure_16();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(require("intl").t["3cyhe3"]);
     cResult[0] = stringResult;
     first = stringResult;
@@ -253,7 +253,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePre
     tmp12 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(require("intl").t["8AhJqy"]);
     cResult[4] = stringResult1;
     tmp14 = stringResult1;
@@ -268,7 +268,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePre
     const self3 = this;
     const self4 = this;
     set1 = new Set(items1);
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     const stringResult2 = intl3.string(require("intl").t["t/Mvdj"]);
     cResult[5] = obj3;
     cResult[6] = stringResult2;
@@ -285,7 +285,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePre
     const self5 = this;
     const self6 = this;
     set2 = new Set(items2);
-    const intl4 = tmp(1126).intl;
+    const intl4 = tmp(1128).intl;
     const stringResult3 = intl4.string(require("intl").t["n+DGY/"]);
     cResult[7] = obj4;
     cResult[8] = stringResult3;
@@ -621,11 +621,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
   const cResult = obj.c(18);
   style = style.style;
   const tmp4 = closure_14();
-  analyticsLocations = first(6852)().analyticsLocations;
+  analyticsLocations = first(7130)().analyticsLocations;
   let obj2 = react;
   [first, dependencyMap] = react.useState(false);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(1497);
+    const tmpResult = tmp(1499);
     const windowDimensions = tmpResult.getWindowDimensions();
     cResult[0] = windowDimensions;
     first1 = windowDimensions;
@@ -660,8 +660,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
       const _Symbol2 = Symbol;
       const headerText = tmp4.headerText;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1126).intl;
-        const stringResult = intl.string(tmp(1126).t.RGadQR);
+        const intl = tmp(1128).intl;
+        const stringResult = intl.string(tmp(1128).t.RGadQR);
         cResult[8] = stringResult;
         tmp15 = stringResult;
       } else {
@@ -669,7 +669,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
       }
       if (cResult[9] !== tmp4.headerText) {
         const obj3 = { style: headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: tmp15 };
-        const tmp19 = closure_10(tmp(5088).Text, obj3);
+        const tmp19 = closure_10(tmp(5187).Text, obj3);
         cResult[9] = tmp4.headerText;
         cResult[10] = tmp19;
         tmp17 = tmp19;
@@ -740,10 +740,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
   _slicedToArray = undefined;
   style = style.style;
   let tmp = closure_14();
-  const analyticsLocations = first(6852)().analyticsLocations;
+  const analyticsLocations = first(7130)().analyticsLocations;
   [first, dependencyMap] = react.useState(false);
   const useState = react.useState;
-  let obj = analyticsLocations(1497);
+  let obj = analyticsLocations(1499);
   [first1, _slicedToArray] = useState(obj.getWindowDimensions().width);
   const items = [analyticsLocations, first];
   let obj2 = {
@@ -763,9 +763,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
       closure_2(true);
     }
   }, items);
-  const obj3 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(analyticsLocations(1126).t.RGadQR) };
-  const Text = analyticsLocations(5088).Text;
-  intl = analyticsLocations(1126).intl;
+  const obj3 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(analyticsLocations(1128).t.RGadQR) };
+  const Text = analyticsLocations(5187).Text;
+  intl = analyticsLocations(1128).intl;
   items2 = [closure_10(Text, obj3), closure_10(closure_20, { width: first1, onEndReached: callback })];
   return closure_11(closure_6, obj2);
 });

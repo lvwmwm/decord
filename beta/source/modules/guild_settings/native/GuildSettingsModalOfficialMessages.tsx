@@ -1,34 +1,34 @@
-// Module ID: 18616
-// Function ID: 18617
+// Module ID: 19012
+// Function ID: 19013
 // Name: GuildSettingsModalOfficialMessages
-// Dependencies: [32, 19, 17, 6176, 5081, 2087, 8634, 5085, 1096, 21, 5092, 587, 1126, 15567, 12689, 15569, 1503, 504, 8633, 6201, 7089, 5056, 16753, 2000, 8525, 4850, 6180, 14852, 1103, 5088, 8774, 558, 576, 4793, 6970, 683, 1200, 15582, 2]
+// Dependencies: [32, 19, 17, 6453, 5181, 2090, 8911, 5185, 1098, 21, 5191, 587, 1128, 16327, 13625, 16329, 1505, 504, 8910, 6478, 7365, 5155, 17438, 2002, 8805, 4945, 6457, 15615, 1105, 5187, 9051, 558, 576, 4888, 7244, 683, 1202, 16342, 2]
 // Exports: default
 
-// Module 18616 (GuildSettingsModalOfficialMessages)
+// Module 19012 (GuildSettingsModalOfficialMessages)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import Constants from "Constants" /* 1096 */;
-import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import DateUtils from "DateUtils" /* 4793 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import TableRowConstants from "TableRowConstants" /* 6176 */;
-import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 6970 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15582 */;
+import Constants from "Constants" /* 1098 */;
+import intl4 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import DateUtils from "DateUtils" /* 4888 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import TableRowConstants from "TableRowConstants" /* 6453 */;
+import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7244 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7365 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16342 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
-import MessageConstants from "MessageConstants" /* 5085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8911 */;
+import MessageConstants from "MessageConstants" /* 5185 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -145,7 +145,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
           const _Symbol = Symbol;
           if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
             const obj3 = { source: AssetRegistryDefault };
-            const Avatar = tmp(1200).Avatar;
+            const Avatar = tmp(1202).Avatar;
             const tmp23 = authStore2(Avatar, obj3);
             cResult[15] = tmp23;
             tmp20 = tmp23;
@@ -156,7 +156,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
           ({ chatContent, chatHeader } = tmp4);
           const textStrong = animatedStyles.textStrong;
           if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl = tmp(1126).intl;
+            const intl = tmp(1128).intl;
             const stringResult = intl.string(intl4.t.cqpybK);
             cResult[16] = stringResult;
             tmp24 = stringResult;
@@ -196,7 +196,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
                 }
                 const _Symbol3 = Symbol;
                 if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
-                  const intl2 = tmp(1126).intl;
+                  const intl2 = tmp(1128).intl;
                   const stringResult1 = intl2.string(intl4.t.Mi9Kbe);
                   cResult[28] = stringResult1;
                   tmp37 = stringResult1;
@@ -339,7 +339,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Messag
   obj4 = { style: items1, children: items2 };
   items1 = [tmp.chatContainerInner, { backgroundColor: alphaResult.hex() }];
   alphaResult.hex();
-  const View = tmp3(4850).View;
+  const View = tmp3(4945).View;
   const obj5 = { source: AssetRegistryDefault };
   const Avatar = native.Avatar;
   items2 = [authStore2(Avatar, obj5), ];
@@ -466,7 +466,7 @@ export default function GuildSettingsModalOfficialMessages(guildId) {
       }
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(16753, dependencyMap.paths);
+    const tmp2 = asyncRequire(17438, dependencyMap.paths);
     intl = intl4.intl;
     openLazy(tmp2, "RoleColorPicker", obj);
   }, items5);

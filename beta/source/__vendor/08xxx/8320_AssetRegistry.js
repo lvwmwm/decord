@@ -1,10 +1,10 @@
 // Module ID: 8320
 // Function ID: 8321
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 8320 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "be0ebbe0444cf9ea073becdc22f65ec9", name: "DenyIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/auto_moderation", width: 16, height: 16, scales: [2, 3], hash: "9fc7a06bd709251a424bf9095d4f7ecf", name: "ic_auto_moderation_shield", type: "png" });

@@ -1,15 +1,15 @@
-// Module ID: 8152
-// Function ID: 8153
+// Module ID: 8429
+// Function ID: 8430
 // Name: transformNativeMarkupMention
-// Dependencies: [8153, 5402, 5400, 5412, 8234, 2]
+// Dependencies: [8430, 5502, 5500, 5512, 8511, 2]
 // Exports: applyChannelMentionIcons, transformNativeMention
 
-// Module 8152 (transformNativeMarkupMention)
-import MarkupTypes from "MarkupTypes" /* 5400 */;
-import MarkupRules from "MarkupRules" /* 5402 */;
-import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5412 */;
-import PlatformMarkupRules from "PlatformMarkupRules" /* 8153 */;
-import StaticMentionRoutes from "StaticMentionRoutes" /* 8234 */;
+// Module 8429 (transformNativeMarkupMention)
+import MarkupTypes from "MarkupTypes" /* 5500 */;
+import MarkupRules from "MarkupRules" /* 5502 */;
+import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5512 */;
+import PlatformMarkupRules from "PlatformMarkupRules" /* 8430 */;
+import StaticMentionRoutes from "StaticMentionRoutes" /* 8511 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupMention.tsx");
@@ -37,10 +37,10 @@ export const transformNativeMention = function transformNativeMention(value, all
     return hydrateUserMention(obj5, allowGameMentions);
   } else if ("everyone" === type) {
     const obj15 = MarkupRules;
-    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "apply", everyoneOrHere: "r" }, allowGameMentions);
+    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "application", everyoneOrHere: -129957886 }, allowGameMentions);
   } else if ("here" === type) {
     const obj14 = MarkupRules;
-    return obj14.hydrateUserMention({ fullMatch: "@here", id: "apply", everyoneOrHere: "r" }, allowGameMentions);
+    return obj14.hydrateUserMention({ fullMatch: "@here", id: "application", everyoneOrHere: 122748930 }, allowGameMentions);
   } else if ("role" === type) {
     const obj13 = MarkupRules;
     const str8 = value.value;

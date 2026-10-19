@@ -1,32 +1,32 @@
-// Module ID: 12632
-// Function ID: 12633
+// Module ID: 13569
+// Function ID: 13570
 // Name: BugReporterModal
-// Dependencies: [5, 32, 19, 17, 1390, 12631, 21, 5092, 587, 683, 1102, 5934, 1503, 504, 1126, 6201, 7754, 7753, 4809, 12633, 569, 12634, 7089, 6262, 6157, 1415, 7765, 1645, 6775, 5377, 5088, 6182, 11869, 6185, 1200, 7724, 5379, 6286, 6265, 6180, 5056, 12644, 2000, 6263, 6774, 1371, 12645, 9770, 558, 576, 6688, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 13568, 21, 5191, 587, 683, 1104, 6190, 1505, 504, 1128, 6478, 8025, 8024, 4904, 13570, 569, 13571, 7365, 6539, 5128, 1417, 1384, 8036, 11599, 1647, 7052, 5477, 5187, 6459, 12010, 6462, 1202, 7995, 5479, 6563, 6542, 6457, 5155, 13580, 2002, 6540, 7051, 1373, 13581, 10073, 558, 576, 6965, 2]
 
-// Module 12632 (BugReporterModal)
+// Module 13569 (BugReporterModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import intl13 from "intl" /* 1126 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import NavigatorHeader from "NavigatorHeader" /* 6201 */;
-import TableRadioRow2 from "TableRadioRow" /* 6262 */;
-import Navigator from "Navigator" /* 6688 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
-import UploadDefault from "Upload" /* 7753 */;
-import UploadPlatform from "UploadPlatform" /* 7754 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import intl13 from "intl" /* 1128 */;
+import AvatarUtils from "AvatarUtils" /* 1417 */;
+import asyncRequire from "asyncRequire" /* 2002 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
+import NavigatorHeader from "NavigatorHeader" /* 6478 */;
+import TableRadioRow2 from "TableRadioRow" /* 6539 */;
+import Navigator from "Navigator" /* 6965 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7365 */;
+import UploadDefault from "Upload" /* 8024 */;
+import UploadPlatform from "UploadPlatform" /* 8025 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1390 */;
-import BugReportStore from "BugReportStore" /* 12631 */;
+import UserStore from "UserStore" /* 1392 */;
+import BugReportStore from "BugReportStore" /* 13568 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import module_683 from "module_683" /* 683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -80,10 +80,134 @@ class BugCreateScreen {
     let first1;
     let num;
     closure_14 = undefined;
-    let obj = function _handleAttachmentSelect() {
+    let obj = function _pickAttachment() {
+      obj = _asyncToGenerator(async (arg0, value) => {
+        let mimeType;
+        let obj10;
+        let obj8;
+        if (c6 === 2) {
+          c6 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj2 = { value, done: true };
+            return obj2;
+          } else {
+            return { value: "IconComponent", done: null };
+          }
+        } else {
+          try {
+            let filename;
+            c6 = 2;
+            if (0 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                const obj3 = { value, done: true };
+                return obj3;
+              } else {
+                let closure_4 = tmp4;
+                let closure_3 = tmp;
+                filename = undefined;
+                first = undefined;
+                size = undefined;
+                first1 = undefined;
+                const obj14 = filename(size[26]);
+                if (obj14.isIOS()) {
+                  c5 = 1;
+                  c6 = 1;
+                  const obj4 = { value: obj10.launchImageLibraryAsync({ mediaType: "mixed", includeBase64: false, selectionLimit: 1 }), done: false };
+                  obj10 = mimeType(size[27]);
+                  return obj4;
+                } else {
+                  c5 = 2;
+                  c6 = 1;
+                  const obj5 = { value: obj8.handleDocumentSelection({ pickMultiple: false }), done: false };
+                  obj8 = filename(size[28]);
+                  return obj5;
+                }
+              }
+            } else if (1 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                const obj6 = { value, done: true };
+                return obj6;
+              } else {
+                filename = value;
+                const assets = filename.assets;
+                first = undefined;
+                if (assets != null) {
+                  first = assets[0];
+                }
+                let tmp28 = null;
+                if (!filename.didCancel) {
+                  tmp28 = null;
+                  if (null != first) {
+                    const obj7 = { uri: first.uri, originalUri: first.uri, platform: filename(size[16]).UploadPlatform.REACT_NATIVE, filename: first.fileName };
+                    const merged = Object.assign(first);
+                    tmp28 = obj7;
+                  }
+                }
+                c6 = 3;
+                const obj9 = { value: tmp28, done: true };
+                return obj9;
+              }
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              const obj11 = { value, done: true };
+              return obj11;
+            } else {
+              size = value;
+              first1 = undefined;
+              if (size != null) {
+                first1 = size[0];
+              }
+              let tmp8 = null;
+              if (null != first1) {
+                obj = { uri: first1.uri, originalUri: first1.uri, platform: filename(size[16]).UploadPlatform.REACT_NATIVE, filename, mimeType, size };
+                const name = first1.name;
+                filename = name;
+                if (name == null) {
+                  const str = first1.uri;
+                  const parts = str.split("/");
+                  filename = parts.at(-1);
+                }
+                const type = first1.type;
+                mimeType = type;
+                if (type == null) {
+                  mimeType = undefined;
+                }
+                size = first1.size ?? undefined;
+                tmp8 = obj;
+              }
+              c6 = 3;
+              const obj12 = { value: tmp8, done: true };
+              return obj12;
+            }
+          } catch (tmp45) {
+            c6 = 3;
+            throw tmp45;
+          }
+        }
+      });
+      return obj(...arguments);
+    };
+    obj = function _handleAttachmentSelect() {
       obj = _asyncToGenerator(async function(arg0, value) {
-        let closure_0;
         let closure_1;
+        function pickAttachment() {
+          return closure_1_25(...arguments);
+        }
         if (c3 === 2) {
           c3 = 3;
           throw new TypeError("Generator functions may not be called on executing generators");
@@ -91,16 +215,15 @@ class BugCreateScreen {
           if (arg0 === 1) {
             throw value;
           } else if (arg0 === 2) {
-            const obj3 = { value, done: true };
-            return obj3;
+            const obj2 = { value, done: true };
+            return obj2;
           } else {
             return { value: "IconComponent", done: null };
           }
         } else {
           try {
-            let tmp;
+            let closure_0;
             let tmp4;
-            let obj6;
             c3 = 2;
             if (0 === c2) {
               if (arg0 === 1) {
@@ -108,18 +231,15 @@ class BugCreateScreen {
                 throw value;
               } else if (arg0 === 2) {
                 c3 = 3;
-                const obj4 = { value, done: true };
-                return obj4;
+                const obj3 = { value, done: true };
+                return obj3;
               } else {
-                tmp = undefined;
+                closure_0 = undefined;
                 tmp4 = undefined;
-                obj6 = undefined;
-                let closure_3;
-                const obj2 = tmp4(c2[26]);
                 c2 = 1;
                 c3 = 1;
-                const obj5 = { value: obj2.launchImageLibraryAsync({ mediaType: "any", includeBase64: false, selectionLimit: 1 }), done: false };
-                return obj5;
+                const obj4 = { value: pickAttachment(), done: false };
+                return obj4;
               }
             } else if (arg0 === 1) {
               c3 = 3;
@@ -129,29 +249,25 @@ class BugCreateScreen {
               obj = { value, done: true };
               return obj;
             } else {
-              tmp = value;
-              if (null != tmp) {
-                tmp4 = tmp.assets[0];
-                closure_129_23.current = closure_129_7.length;
-                obj6 = { uri: tmp4.uri, originalUri: tmp4.uri, platform: tmp(c2[16]).UploadPlatform.REACT_NATIVE, filename: tmp4.fileName };
-                const merged = Object.assign(tmp4);
+              closure_0 = value;
+              if (null != closure_0) {
                 const self = this;
                 const self2 = this;
-                const tmp30 = new tmp4(c2[17])(obj6);
-                closure_3 = tmp30;
+                const tmp10 = new tmp4(c2[17])(closure_0);
+                tmp4 = tmp10;
                 closure_129_23.current = closure_129_7.length;
                 closure_129_8((arg0) => {
                   const items = [];
-                  items[HermesBuiltin.arraySpread(items, arg0, 0)] = closure_1_3;
+                  items[HermesBuiltin.arraySpread(items, arg0, 0)] = closure_1_1;
                   return items;
                 });
               }
               c3 = 3;
               return { value: "IconComponent", done: null };
             }
-          } catch (tmp7) {
+          } catch (tmp16) {
             c3 = 3;
-            throw tmp7;
+            throw tmp16;
           }
         }
       });
@@ -160,7 +276,7 @@ class BugCreateScreen {
     let tmp = closure_14();
     dependencyMap = tmp;
     const tmp2 = first1(num.useState(""), 2);
-    const first = tmp2[0];
+    let first = tmp2[0];
     let tmp4 = tmp2[1];
     let tmp5 = first1(num.useState(""), 2);
     first1 = tmp5[0];
@@ -195,7 +311,7 @@ class BugCreateScreen {
     const first8 = tmp23[0];
     const setFeature = tmp23[1];
     let tmp25 = screenshotUri;
-    obj = screenshotUri(1503);
+    obj = screenshotUri(1505);
     navigation = obj.useNavigation();
     num.useRef(null);
     const ref = num.useRef(0);
@@ -525,12 +641,12 @@ class BugCreateScreen {
           const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
           const tmp = authStore;
           if (first5) {
-            const intl2 = tmp2(1126).intl;
-            stringResult = intl2.string(tmp2(1126).t["tUu8V+"]);
+            const intl2 = tmp2(1128).intl;
+            stringResult = intl2.string(tmp2(1128).t["tUu8V+"]);
           } else {
-            const intl = tmp2(1126).intl;
+            const intl = tmp2(1128).intl;
             const string = intl.string;
-            const t = tmp2(1126).t;
+            const t = tmp2(1128).t;
             if (first4) {
               stringResult = string(t.ZiWcJ0);
             } else {
@@ -625,15 +741,15 @@ class BugCreateScreen {
     }, items5);
     let tmp35 = closure_11;
     let tmp36 = callback;
-    let obj3 = { bottomOffset: screenshotUri(6775).TEXT_AREA_HEIGHT, children: tmp35(Stack, obj4) };
-    const KeyboardAwareScrollView = screenshotUri(1645).KeyboardAwareScrollView;
+    let obj3 = { bottomOffset: screenshotUri(7052).TEXT_AREA_HEIGHT, children: tmp35(Stack, obj4) };
+    const KeyboardAwareScrollView = screenshotUri(1647).KeyboardAwareScrollView;
     obj4 = { spacing: 24, style: tmp.container, children: items8 };
-    Stack = screenshotUri(5377).Stack;
+    Stack = screenshotUri(5477).Stack;
     let obj5 = { spacing: 8, children: items6 };
-    const Stack2 = screenshotUri(5377).Stack;
-    let obj6 = { variant: "text-sm/semibold", color: "text-subtle", children: intl.string(screenshotUri(1126).t.tM969v) };
-    let Text = screenshotUri(5088).Text;
-    intl = screenshotUri(1126).intl;
+    const Stack2 = screenshotUri(5477).Stack;
+    let obj6 = { variant: "text-sm/semibold", color: "text-subtle", children: intl.string(screenshotUri(1128).t.tM969v) };
+    let Text = screenshotUri(5187).Text;
+    intl = screenshotUri(1128).intl;
     items6 = [first4(Text, obj6), ];
     let obj7 = { children: items7 };
     let obj8 = {
@@ -646,7 +762,7 @@ class BugCreateScreen {
         let obj3;
         size = { uri: uri.item.uri, isImage: uri.isImage, isVideo: uri.isVideo, height: 280, width: 134 };
         obj = { style: closure_2.attachmentContainer, children: items };
-        items = [first4(screenshot(closure_2[32]), size), ];
+        items = [first4(screenshot(closure_2[34]), size), ];
         let closure_0 = uri;
         const obj2 = {
           onPress: () => {
@@ -655,57 +771,57 @@ class BugCreateScreen {
           style: closure_2.closeContainer,
           children: first4(Icon, obj3)
         };
-        const PressableOpacity = screenshotUri(closure_2[33]).PressableOpacity;
-        obj3 = { source: screenshot(closure_2[35]), size: screenshotUri(closure_2[34]).Icon.Sizes.REFRESH_SMALL_16, color: screenshot(closure_2[8]).unsafe_rawColors.WHITE };
-        Icon = screenshotUri(closure_2[34]).Icon;
+        const PressableOpacity = screenshotUri(closure_2[35]).PressableOpacity;
+        obj3 = { source: screenshot(closure_2[37]), size: screenshotUri(closure_2[36]).Icon.Sizes.REFRESH_SMALL_16, color: screenshot(closure_2[8]).unsafe_rawColors.WHITE };
+        Icon = screenshotUri(closure_2[36]).Icon;
         items[1] = first4(PressableOpacity, obj2);
         return closure_11(first2, obj, uri.id);
       })
     };
-    const Card = screenshotUri(6182).Card;
+    const Card = screenshotUri(6459).Card;
     items7 = [first4(first3, obj8), ];
     let obj9 = {
-      text: intl2.string(screenshotUri(1126).t.HVxmOD),
+      text: intl2.string(screenshotUri(1128).t.HVxmOD),
       onPress: function handleAttachmentSelect() {
         return obj(...arguments);
       }
     };
-    const Button = screenshotUri(5379).Button;
-    intl2 = screenshotUri(1126).intl;
+    const Button = screenshotUri(5479).Button;
+    intl2 = screenshotUri(1128).intl;
     items7[1] = first4(Button, obj9);
     items6[1] = closure_11(Card, obj7);
     items8 = [closure_11(Stack2, obj5), , , , , , ];
-    let obj10 = { label: intl3.string(screenshotUri(1126).t.OZRgjw), placeholder: intl4.string(screenshotUri(1126).t["6mpW05"]), onChange: tmp4, clearable: true, autoCapitalize: "sentences" };
-    const TextInput = screenshotUri(6286).TextInput;
-    intl3 = screenshotUri(1126).intl;
-    intl4 = screenshotUri(1126).intl;
+    let obj10 = { label: intl3.string(screenshotUri(1128).t.OZRgjw), placeholder: intl4.string(screenshotUri(1128).t["6mpW05"]), onChange: tmp4, clearable: true, autoCapitalize: "sentences" };
+    const TextInput = screenshotUri(6563).TextInput;
+    intl3 = screenshotUri(1128).intl;
+    intl4 = screenshotUri(1128).intl;
     items8[1] = first4(TextInput, obj10);
     if (stateFromStores) {
-      let obj11 = { title: intl5.string(tmp25(1126).t["77VVd8"]), hasIcons: false, children: tmp37(TableRow, obj12) };
-      const TableRowGroup = tmp25(6265).TableRowGroup;
-      intl5 = tmp25(1126).intl;
+      let obj11 = { title: intl5.string(tmp25(1128).t["77VVd8"]), hasIcons: false, children: tmp37(TableRow, obj12) };
+      const TableRowGroup = tmp25(6542).TableRowGroup;
+      intl5 = tmp25(1128).intl;
       obj12 = {
         disabled: null == first7,
         onPress() {
             obj = ActionSheetActionCreatorsDefault;
             const obj2 = { features: null != first7 ? first7.features : [], feature: first8, setFeature };
-            return obj.openLazy(asyncRequire(12644, dependencyMap.paths), "BugReporterFeatureActionSheet", obj2);
+            return obj.openLazy(asyncRequire(13580, dependencyMap.paths), "BugReporterFeatureActionSheet", obj2);
           },
         label: name,
         arrow: true
       };
-      TableRow = tmp25(6180).TableRow;
+      TableRow = tmp25(6457).TableRow;
       if (null != first8) {
         name = first8.name;
       } else {
-        const intl6 = tmp25(1126).intl;
-        name = intl6.string(tmp25(1126).t["77VVd8"]);
+        const intl6 = tmp25(1128).intl;
+        name = intl6.string(tmp25(1128).t["77VVd8"]);
       }
       stateFromStores = tmp37(TableRowGroup, obj11);
     }
     items8[2] = stateFromStores;
     const obj13 = {
-      title: intl7.string(tmp25(1126).t.xMXLda),
+      title: intl7.string(tmp25(1128).t.xMXLda),
       defaultValue: num,
       onChange: tmp9,
       hasIcons: true,
@@ -728,34 +844,34 @@ class BugCreateScreen {
         return authStore(TableRadioRow, obj, value);
       })
     };
-    const TableRadioGroup = tmp25(6263).TableRadioGroup;
-    intl7 = tmp25(1126).intl;
+    const TableRadioGroup = tmp25(6540).TableRadioGroup;
+    intl7 = tmp25(1128).intl;
     if (num == null) {
       num = -1;
     }
-    const tmp25Result = tmp25(12634);
+    const tmp25Result = tmp25(13571);
     priorities = tmp25Result.getPriorities();
     items8[3] = first4(TableRadioGroup, obj13);
-    const obj14 = { label: intl8.string(tmp25(1126).t["1SplH2"]), placeholder: intl9.string(tmp25(1126).t.CQmAZd), onChange: tmp7, autoCorrect: true, autoCapitalize: "sentences" };
-    const TextArea = tmp25(6774).TextArea;
-    intl8 = tmp25(1126).intl;
-    intl9 = tmp25(1126).intl;
+    let obj14 = { label: intl8.string(tmp25(1128).t["1SplH2"]), placeholder: intl9.string(tmp25(1128).t.CQmAZd), onChange: tmp7, autoCorrect: true, autoCapitalize: "sentences" };
+    const TextArea = tmp25(7051).TextArea;
+    intl8 = tmp25(1128).intl;
+    intl9 = tmp25(1128).intl;
     items8[4] = first4(TextArea, obj14);
-    const obj15 = { label: intl10.string(tmp25(1126).t["7p5pqh"]), placeholder: intl11.string(tmp25(1126).t.HewMzo), onChange: tmp12, clearable: true };
-    const TextInput2 = tmp25(6286).TextInput;
-    intl10 = tmp25(1126).intl;
-    intl11 = tmp25(1126).intl;
+    const obj15 = { label: intl10.string(tmp25(1128).t["7p5pqh"]), placeholder: intl11.string(tmp25(1128).t.HewMzo), onChange: tmp12, clearable: true };
+    const TextInput2 = tmp25(6563).TextInput;
+    intl10 = tmp25(1128).intl;
+    intl11 = tmp25(1128).intl;
     items8[5] = first4(TextInput2, obj15);
     const obj16 = { style: tmp.offButton, children: first4(Button2, obj17) };
     obj17 = {
-      text: intl12.string(tmp25(1126).t["636e+U"]),
+      text: intl12.string(tmp25(1128).t["636e+U"]),
       size: "sm",
       variant: "secondary",
       onPress() {
         let intl;
-        obj = screenshotUri(closure_2[45]);
+        obj = screenshotUri(closure_2[47]);
         const result = obj.setDeveloperOptionSettings({ bugReporterEnabled: false });
-        const obj2 = screenshot(closure_2[46]);
+        const obj2 = screenshot(closure_2[48]);
         obj2.terminate(true);
         state.setState({ isReportOpen: false });
         const arr = screenshot(closure_2[11]);
@@ -767,8 +883,8 @@ class BugCreateScreen {
         open("BUG_REPORT_HAS_BEEN_TURNED_OFF_TEXT", obj3);
       }
     };
-    Button2 = tmp25(5379).Button;
-    intl12 = tmp25(1126).intl;
+    Button2 = tmp25(5479).Button;
+    intl12 = tmp25(1128).intl;
     items8[6] = first4(first2, obj16);
     const children = [tmp37(KeyboardAwareScrollView, obj3), ];
     let tmp37Result = null;
@@ -780,9 +896,9 @@ class BugCreateScreen {
         obj = { style: tmp.submittingOverlay, children: items };
         items = [, ];
         const obj2 = { sticker: first5, animated: true, size: 148 };
-        items[0] = first4(screenshot(closure_2[47]), obj2);
+        items[0] = first4(screenshot(closure_2[49]), obj2);
         const obj3 = { style: tmp.submittingText, variant: "heading-md/medium", children: intl.string(screenshotUri(closure_2[14]).t.Uuqbcm) };
-        const Text = screenshotUri(closure_2[30]).Text;
+        const Text = screenshotUri(closure_2[32]).Text;
         intl = screenshotUri(closure_2[14]).intl;
         items[1] = first4(Text, obj3);
         return closure_11(first2, obj);
@@ -834,7 +950,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BugReportMod
   }
   const obj3 = { BUG_REPORT_CREATE: obj4 };
   obj4 = { title: intl.string(intl13.t.mCCdwi), initialParams: { screenshotUri, screenshot }, ignoreKeyboard: true, render };
-  intl = tmp(1126).intl;
+  intl = tmp(1128).intl;
   cResult[0] = screenshot;
   cResult[1] = screenshotUri;
   cResult[2] = obj3;
@@ -852,7 +968,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BugReportMod
     intl = intl13.intl;
     return obj2;
   }, items);
-  return closure_10(screenshotUri(6688).Navigator, { screens, initialRouteName: "BUG_REPORT_CREATE" });
+  return closure_10(screenshotUri(6965).Navigator, { screens, initialRouteName: "BUG_REPORT_CREATE" });
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/bug_reporter/native/components/BugReporterModal.tsx");

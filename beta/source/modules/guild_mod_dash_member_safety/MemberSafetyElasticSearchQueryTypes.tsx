@@ -1,11 +1,11 @@
-// Module ID: 7214
-// Function ID: 7215
+// Module ID: 7485
+// Function ID: 7486
 // Name: MemberSafetyElasticSearchQueryTypes
-// Dependencies: [1102, 2]
+// Dependencies: [1104, 2]
 // Exports: createMemberSearchCursor
 
-// Module 7214 (MemberSafetyElasticSearchQueryTypes)
-import DurationsDefault from "Durations" /* 1102 */;
+// Module 7485 (MemberSafetyElasticSearchQueryTypes)
+import DurationsDefault from "Durations" /* 1104 */;
 import size from "module_2" /* 2 */;
 
 const result = 2 * DurationsDefault.Millis.DAY;

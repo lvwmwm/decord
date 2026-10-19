@@ -1,8 +1,8 @@
-// Module ID: 12458
-// Function ID: 12459
+// Module ID: 13399
+// Function ID: 13400
 // Dependencies: [2]
 
-// Module 12458
+// Module 13399
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BookIllocon-1x.png.js");

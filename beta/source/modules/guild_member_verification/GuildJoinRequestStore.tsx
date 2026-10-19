@@ -1,18 +1,18 @@
-// Module ID: 6118
-// Function ID: 6119
+// Module ID: 6397
+// Function ID: 6398
 // Name: GuildJoinRequestStore
-// Dependencies: [1390, 4940, 4702, 4942, 4745, 4941, 1102, 504, 584, 2]
+// Dependencies: [1392, 5035, 4797, 5037, 4840, 5036, 1104, 504, 584, 2]
 
-// Module 6118 (GuildJoinRequestStore)
+// Module 6397 (GuildJoinRequestStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1102 */;
-import _modDef4702 from "module_4702" /* 4702 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4745 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4940 */;
-import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 4941 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4942 */;
-import UserStore from "UserStore" /* 1390 */;
+import DurationsDefault from "Durations" /* 1104 */;
+import _modDef4797 from "module_4797" /* 4797 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4840 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5035 */;
+import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5036 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5037 */;
+import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 function updateSubmittedGuildJoinRequestTotal(guildId, DELETED, applicationStatus) {
@@ -21,12 +21,12 @@ function updateSubmittedGuildJoinRequestTotal(guildId, DELETED, applicationStatu
       const tmp12 = require;
       if (DELETED === MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED) {
         closure_6[guildId] = closure_6[guildId] + 1;
-        const result = map.set(guildId, _modDef4702());
+        const result = map.set(guildId, _modDef4797());
       }
-      if (applicationStatus === tmp12(4942).GuildJoinRequestApplicationStatuses.SUBMITTED) {
+      if (applicationStatus === tmp12(5037).GuildJoinRequestApplicationStatuses.SUBMITTED) {
         const _Math = Math;
         closure_6[guildId] = Math.max(0, closure_6[guildId] - 1);
-        const result1 = map.set(guildId, _modDef4702());
+        const result1 = map.set(guildId, _modDef4797());
       }
     }
   }
@@ -82,7 +82,7 @@ function handleGuildJoinRequestCreateOrUpdate(guildId) {
         secondaryIndexMap2.delete(tmp.joinRequestId);
         const result1 = secondaryIndexMap1.set(tmp.joinRequestId, tmp);
       }
-      const tmp8Result = tmp8(4941);
+      const tmp8Result = tmp8(5036);
       if (tmp8Result.isActionedApplicationStatus(tmp.applicationStatus)) {
         secondaryIndexMap1.delete(tmp.joinRequestId);
         const result2 = secondaryIndexMap2.set(tmp.joinRequestId, tmp);
@@ -129,7 +129,7 @@ class GuildJoinRequestStoreV2 extends Store {
       if (obj.isActionedApplicationStatus(applicationStatus)) {
         values = secondaryIndexMap2.values(combined);
       } else {
-        const tmp5Result = tmp5(4941);
+        const tmp5Result = tmp5(5036);
         if (tmp5Result.isSubmittedApplicationStatus(applicationStatus)) {
           values = secondaryIndexMap1.values(combined);
         } else {
@@ -153,7 +153,7 @@ class GuildJoinRequestStoreV2 extends Store {
       const value = obj.get(arg0);
       let tmp3 = null != value;
       if (tmp3) {
-        const obj2 = _modDef4702();
+        const obj2 = _modDef4797();
         tmp3 = obj2.diff(value, "seconds") < closure_20;
       }
       return tmp3;
@@ -232,7 +232,7 @@ let obj = {
       let tmp2 = closure_6;
       closure_6[guildId] = total;
       let tmp3 = map;
-      let result = map.set(guildId, _modDef4702());
+      let result = map.set(guildId, _modDef4797());
     }
     const item = requests.forEach((joinRequestId) => {
       closure_1_19[joinRequestId.joinRequestId] = joinRequestId;
@@ -292,7 +292,7 @@ let obj = {
       if (obj.isActionedApplicationStatus(applicationStatus)) {
         secondaryIndexMap2.clear();
       }
-      const tmpResult = tmp(4941);
+      const tmpResult = tmp(5036);
       if (tmpResult.isSubmittedApplicationStatus(applicationStatus)) {
         secondaryIndexMap1.clear();
       }

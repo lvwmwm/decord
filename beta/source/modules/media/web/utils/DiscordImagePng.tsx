@@ -1,10 +1,10 @@
-// Module ID: 7820
-// Function ID: 7821
+// Module ID: 8092
+// Function ID: 8093
 // Name: DiscordImagePng
-// Dependencies: [5, 1996, 7821, 2]
+// Dependencies: [5, 1998, 8093, 2]
 
-// Module 7820 (DiscordImagePng)
-import _modDef1996 from "module_1996" /* 1996 */;
+// Module 8092 (DiscordImagePng)
+import _modDef1998 from "module_1998" /* 1998 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ class DiscordImagePng {
   static create(originalBuffer) {
     let tmp = null;
     try {
-      const decoder = _modDef1996;
+      const decoder = _modDef1998;
       const self = this;
       tmp = new DiscordImagePng(decoder.decode(originalBuffer), originalBuffer);
     } catch (err) {
@@ -34,7 +34,7 @@ class DiscordImagePng {
         return false;
       }
     }
-    const obj = _modDef1996;
+    const obj = _modDef1998;
     const uint8Array = new Uint8Array(obj.toRGBA8(self.img)[0]);
     let num2 = 3;
     if (3 < uint8Array.length) {

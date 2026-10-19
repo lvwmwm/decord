@@ -1,24 +1,24 @@
-// Module ID: 13004
-// Function ID: 13005
+// Module ID: 10980
+// Function ID: 10981
 // Name: conjureChatTurns
-// Dependencies: [13005, 13006, 2]
-// Exports: findTurnSegment, hasOpenTurn, isOutsideTurn, isSegmentOfTurn, isStrandedSegment, replaceAt, resolveTurnIndex, stoppable, turnSettled
+// Dependencies: [10981, 10982, 2]
+// Exports: findTurnSegment, hasOpenTurn, isOutsideTurn, isSegmentOfTurn, isStrandedSegment, openTurnRequesterId, replaceAt, resolveTurnIndex, stoppable, turnSettled
 
-// Module 13004 (conjureChatTurns)
-import conjureStepTimeline from "conjureStepTimeline" /* 13005 */;
-import conjureChatHistory from "conjureChatHistory" /* 13006 */;
+// Module 10980 (conjureChatTurns)
+import conjureStepTimeline from "conjureStepTimeline" /* 10981 */;
+import conjureChatHistory from "conjureChatHistory" /* 10982 */;
 import size from "module_2" /* 2 */;
 
-function findOpenTurn(map) {
+function findOpenTurn(arr) {
   let tmp;
-  if (null == map) {
+  if (null == arr) {
     return null;
   } else {
-    let diff = map.length - 1;
+    let diff = arr.length - 1;
     let flag2 = false;
     if (0 <= diff) {
       while (true) {
-        tmp = map[diff];
+        tmp = arr[diff];
         let tmp4 = flag2;
         if ("assistant" === tmp.role) {
           let tmp5 = "side_reply" === tmp.kind || "publish_notice" === tmp.kind || "project_event" === tmp.kind || "context_boundary" === tmp.kind;
@@ -69,6 +69,26 @@ export const turnSettled = function turnSettled(message) {
   return hasTerminalStepResult;
 };
 export { findOpenTurn };
+export const openTurnRequesterId = function openTurnRequesterId(arr) {
+  const tmp = findOpenTurn(arr);
+  if (null != arr) {
+    if (null != tmp) {
+      let diff = arr.indexOf(tmp) - 1;
+      if (0 <= diff) {
+        while ("user" !== arr[diff].role) {
+          diff = diff - 1;
+        }
+        let user_id = arr[diff].user_id;
+        if (user_id == null) {
+          user_id = null;
+        }
+        return user_id;
+      }
+      return null;
+    }
+  }
+  return null;
+};
 export const hasOpenTurn = function hasOpenTurn(map) {
   return null != findOpenTurn(map);
 };

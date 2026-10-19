@@ -1,8 +1,8 @@
-// Module ID: 5515
-// Function ID: 5516
+// Module ID: 5664
+// Function ID: 5665
 // Dependencies: [2]
 
-// Module 5515
+// Module 5664
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/traveler_chrono.png.js");

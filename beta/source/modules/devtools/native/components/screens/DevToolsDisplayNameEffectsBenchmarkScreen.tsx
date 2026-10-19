@@ -1,25 +1,25 @@
-// Module ID: 16110
-// Function ID: 16111
+// Module ID: 16809
+// Function ID: 16810
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1390, 1408, 21, 1409, 10271, 1126, 10267, 2958, 5092, 587, 558, 576, 5088, 5379, 5377, 10264, 10265, 504, 16111, 12908, 6180, 6265, 5630, 2]
+// Dependencies: [32, 19, 17, 1392, 1410, 21, 1411, 10572, 1128, 10568, 2981, 5191, 587, 558, 576, 5187, 5479, 5477, 10565, 10566, 504, 16810, 13839, 6457, 6542, 5886, 2]
 
-// Module 16110 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 16809 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1408 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1409 */;
-import _modDef2958 from "module_2958" /* 2958 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10264 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10267 */;
-import _mod10271 from "module_10271" /* 10271 */;
+import intl2 from "intl" /* 1128 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1410 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1411 */;
+import _modDef2981 from "module_2981" /* 2981 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10565 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10568 */;
+import _mod10572 from "module_10572" /* 10572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1390 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,15 +32,15 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const Text_Text = tmp(5088);
-const Stack_Stack = tmp(5377);
-const types = tmp(10265);
+const Text_Text = tmp(5187);
+const Stack_Stack = tmp(5477);
+const types = tmp(10566);
 function effectName(arg0) {
   const intl = intl2.intl;
   const string = intl.string;
   let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
   if (OpWJ3f == null) {
-    OpWJ3f = _modDef2958.OpWJ3f;
+    OpWJ3f = _modDef2981.OpWJ3f;
   }
   return string(OpWJ3f);
 }
@@ -49,15 +49,16 @@ const EFFECT_ORDER = DisplayNameStylesConstants.EFFECT_ORDER;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let items = [...EFFECT_ORDER, DisplayNameEffect.DisplayNameEffect.GUMMY];
 let closure_12 = [10, 50, 100, 200];
+let closure_13 = { overrideSettings: true };
 let items1 = [{ key: "short", label: "Short", name: "Pixel7" }, { key: "medium", label: "Medium", name: "NebulaWanderer" }, { key: "long", label: "Long", name: "GalacticOverlord2049" }];
 let createStyles = createStyles_mod;
 let obj = { wrap: obj2, container: obj3, batchRow: { paddingVertical: 2 }, optionButtons: { flexWrap: "wrap" } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { paddingVertical: nativeDefault.space.PX_16 };
-let closure_14 = createStyles(obj);
+let closure_15 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function OptionButtons(onChange) {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function OptionButtons(onChange) {
   let caption;
   let options;
   let require;
@@ -70,7 +71,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Option
   ({ caption, options, value } = onChange);
   require = value;
   onChange = onChange.onChange;
-  const tmp4 = closure_14();
+  const tmp4 = closure_15();
   if (cResult[0] !== caption) {
     const obj2 = { variant: "text-sm/semibold", color: "text-subtle", children: caption };
     const tmp7 = closure_8(Text_Text.Text, obj2);
@@ -152,7 +153,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Option
   let require;
   ({ options, value: require, onChange: importDefault } = caption);
   caption = caption.caption;
-  let tmp = closure_14();
+  let tmp = closure_15();
   let obj = { spacing: 8, children: items };
   const Stack = Stack_Stack.Stack;
   items = [closure_8(Text_Text.Text, { variant: "text-sm/semibold", color: "text-subtle", children: caption }), ];
@@ -184,7 +185,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Option
   return closure_9(Stack, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BenchmarkRow(arg0) {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function BenchmarkRow(arg0) {
   let effect;
   let style;
   let userId;
@@ -247,7 +248,6 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   let closure_3;
   let first;
   let first1;
-  let results;
   let str;
   let tmp19;
   let tmp24;
@@ -258,8 +258,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   let tmp2 = first;
   let obj = require("react");
   const cResult = obj.c(66);
-  _require = str();
-  const tmp4 = str();
+  _require = closure_15();
+  const tmp4 = closure_15();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     items = [addScroll];
     const fn = function s() {
@@ -280,15 +280,23 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   const tmpResult = tmp(tmp2[20]);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function k() {
-      items = [closure_0(first[6]).DisplayNameEffect.GUMMY];
-      set = new Set(items);
-      return set;
-    };
-    cResult[2] = fn2;
-    tmp9 = fn2;
+    class R {
+      constructor() {
+        items = [closure_0(first[6]).DisplayNameEffect.GUMMY];
+        set = new Set(items);
+        return set;
+      }
+    }
+    cResult[2] = R;
+    tmp9 = R;
   } else {
-    tmp9 = cResult[2];
+    class R {
+      constructor() {
+        items = [closure_0(first[6]).DisplayNameEffect.GUMMY];
+        set = new Set(items);
+        return set;
+      }
+    }
   }
   [first, _slicedToArray] = first1.useState(tmp9);
   [first1] = first1.useState(100);
@@ -304,32 +312,32 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   const begin = mountTimer.begin;
   const measure = mountTimer.measure;
   if (cResult[3] !== addScroll) {
-    class T {
+    class N {
       constructor(arg0) {
         addScroll(arg0);
       }
     }
     cResult[3] = addScroll;
-    cResult[4] = T;
+    cResult[4] = N;
   } else {
-    class T {
+    class N {
       constructor(arg0) {
         addScroll(arg0);
       }
     }
   }
   if (cResult[5] !== first2) {
-    class T {
+    class N {
       constructor(arg0) {
         addScroll(arg0);
       }
     }
-    const found = arr3.find((key) => key.key === first2);
+    const found = str.find((key) => key.key === first2);
     cResult[5] = first2;
     cResult[6] = found;
     tmp19 = found;
   } else {
-    class T {
+    class N {
       constructor(arg0) {
         addScroll(arg0);
       }
@@ -337,7 +345,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   }
   let name = tmp19.name;
   if (cResult[7] !== name) {
-    class T {
+    class N {
       constructor(arg0) {
         addScroll(arg0);
       }
@@ -347,7 +355,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
     cResult[8] = splitGraphemesResult;
     arr2 = splitGraphemesResult;
   } else {
-    class T {
+    class N {
       constructor(arg0) {
         addScroll(arg0);
       }
@@ -355,7 +363,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   }
   let length = arr2.length;
   if (cResult[9] !== first) {
-    class T {
+    class N {
       constructor(arg0) {
         addScroll(arg0);
       }
@@ -365,7 +373,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
     cResult[10] = found1;
     arr3 = found1;
   } else {
-    class T {
+    class N {
       constructor(arg0) {
         addScroll(arg0);
       }
@@ -373,7 +381,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   }
   str = "All (rotation)";
   if (arr3.length !== measure.length) {
-    class T {
+    class N {
       constructor(arg0) {
         addScroll(arg0);
       }
@@ -381,7 +389,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
     str = tmp23;
   }
   if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
+    class N {
       constructor(arg0) {
         addScroll(arg0);
       }
@@ -389,7 +397,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
     cResult[13] = tmp25;
     tmp24 = tmp25;
   } else {
-    class T {
+    class N {
       constructor(arg0) {
         addScroll(arg0);
       }
@@ -397,13 +405,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   }
   closure_15 = tmp24;
   if (cResult[14] === begin) {
-    class T {
+    class N {
       constructor(arg0) {
         addScroll(arg0);
       }
     }
   }
-  function re() {
+  function oe() {
     if (0 !== arr3.length) {
       const obj = { effects: tmp, effectLabel: str, rowCount: first1, name, graphemeCount: length };
       begin(obj);
@@ -415,7 +423,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   cResult[17] = name;
   cResult[18] = first1;
   cResult[19] = arr3;
-  cResult[20] = re;
+  cResult[20] = oe;
 }) : (function DevToolsDisplayNameEffectsBenchmarkScreen() {
   let MountMeasure;
   let Stack;
@@ -430,17 +438,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   let items11;
   let items8;
   let items9;
-  let memo3;
   let obj10;
   let obj12;
   let obj16;
   let obj17;
   let obj7;
-  let results;
   let tmp12;
   let tmp23;
   let tmp9;
-  let tmp = memo3();
+  let tmp = closure_15();
   _require = tmp;
   let tmp2 = _require;
   let obj = require("get initialized");
@@ -479,13 +485,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   const memo = first1.useMemo(() => items1.find((key) => key.key === first2).name, items2);
   const items3 = [memo];
   const memo1 = first1.useMemo(() => {
-    const obj = _mod10271;
+    const obj = _mod10572;
     return obj.splitGraphemes(memo).length;
   }, items3);
   const items4 = [first];
   const memo2 = first1.useMemo(() => items.filter((item) => set.has(item)), items4);
   const items5 = [memo2];
-  memo3 = first1.useMemo(() => {
+  const memo3 = first1.useMemo(() => {
     let str = "All (rotation)";
     const arr = memo2;
     if (memo2.length !== items.length) {
@@ -559,7 +565,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   const Stack3 = tmp2(tmp3[17]).Stack;
   items8[1] = run(Stack3, obj8);
   items9 = [run(TableRow, obj6), , ];
-  const obj9 = { label: run(closure_15, obj10) };
+  const obj9 = { label: run(closure_16, obj10) };
   obj10 = {
     caption: "Rows",
     value: first1,
@@ -571,8 +577,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   };
   const TableRow2 = tmp2(tmp3[23]).TableRow;
   items9[1] = run(TableRow2, obj9);
-  const obj11 = { label: run(closure_15, obj12) };
-  obj12 = { caption: "Name length (" + memo1 + " graphemes)", value: first2, onChange: tmp12, options: memo2.map((key) => ({ value: key.key, label: key.label })) };
+  const obj11 = { label: run(closure_16, obj12) };
+  obj12 = { caption: "Name length (" + memo1 + " graphemes)", value: first2, onChange: tmp12, options: memo3.map((key) => ({ value: key.key, label: key.label })) };
   const TableRow3 = tmp2(tmp3[23]).TableRow;
   items9[2] = run(TableRow3, obj11);
   items10 = [begin(TableRowGroup, obj5), , , ];
@@ -590,7 +596,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   if (null != run) {
     tmp21Result = null;
     if (null != stateFromStores) {
-      const obj15 = { value: { overrideSettings: true }, children: run(MountMeasure, obj16, run.batchKey) };
+      const obj15 = { value: memo2, children: run(MountMeasure, obj16, run.batchKey) };
       const Provider = tmp2(tmp3[25]).DisplayNameStylesContext.Provider;
       const _Array = Array;
       obj16 = {
@@ -606,11 +612,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
               const length = String(Math.max(run.params.rowCount - 1, 0)).length;
               const StringResult = String(arg1);
               const padStartResult = StringResult.padStart(length, "0");
-              const obj3 = _mod10271;
+              const obj3 = _mod10572;
               const splitGraphemesResult = obj3.splitGraphemes(name);
               sum = padStartResult;
               const tmp = metroImportAll;
-              const tmp2 = closure_16;
+              const tmp2 = closure_17;
               if (splitGraphemesResult.length > length) {
                 const substr = splitGraphemesResult.slice(0, splitGraphemesResult.length - length);
                 sum = substr.join("") + padStartResult;

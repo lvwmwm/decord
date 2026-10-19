@@ -1,22 +1,22 @@
-// Module ID: 13442
-// Function ID: 13443
+// Module ID: 14221
+// Function ID: 14222
 // Name: FractionalNitroPreview
-// Dependencies: [19, 17, 1085, 1392, 21, 5092, 587, 558, 576, 1126, 7756, 4769, 5391, 13443, 6157, 13444, 6823, 5088, 2]
+// Dependencies: [19, 17, 1087, 1394, 21, 5191, 587, 558, 576, 1128, 8027, 4864, 5491, 14222, 5128, 14223, 7101, 5187, 2]
 
-// Module 13442 (FractionalNitroPreview)
+// Module 14221 (FractionalNitroPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 6823 */;
-import _modDef13443 from "module_13443" /* 13443 */;
-import NitroIconDefault from "NitroIcon" /* 13444 */;
+import Constants from "Constants" /* 1087 */;
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7101 */;
+import _modDef14222 from "module_14222" /* 14222 */;
+import NitroIconDefault from "NitroIcon" /* 14223 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,23 +60,23 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fractional
   const tmp4 = closure_8();
   _require = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     let items = [intl.string(require("intl").t.E1NP2x), , , , ];
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     items[1] = intl2.string(require("intl").t.kpMomJ);
     let obj2 = { legacyCopy: intl3.string(require("intl").t.xT1Vfn), rolloutCopy: formatToPlainString(IDAfOy, obj3) };
     const getNitroFileUploadRolloutCopy = require("NitroFileUploadExperiments").getNitroFileUploadRolloutCopy;
     require("NitroFileUploadExperiments");
-    intl3 = tmp(1126).intl;
-    const intl4 = tmp(1126).intl;
+    intl3 = tmp(1128).intl;
+    const intl4 = tmp(1128).intl;
     formatToPlainString = intl4.formatToPlainString;
     obj3 = { maxFileSize: tmpResult2.getMaxFileSizeForPremiumType(PremiumTypes.TIER_2, { useSpace: false }) };
-    IDAfOy = tmp(1126).t.IDAfOy;
+    IDAfOy = tmp(1128).t.IDAfOy;
     tmpResult2 = require("PremiumUtils");
     items[2] = getNitroFileUploadRolloutCopy(obj2);
-    const intl5 = tmp(1126).intl;
+    const intl5 = tmp(1128).intl;
     items[3] = intl5.string(require("intl").t.myyAEr);
-    const intl6 = tmp(1126).intl;
+    const intl6 = tmp(1128).intl;
     items[4] = intl6.string(require("intl").t.zTk8Ul);
     cResult[0] = items;
     first = items;
@@ -102,7 +102,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fractional
     tmp8 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj6 = { uri: _modDef13443 };
+    const obj6 = { uri: _modDef14222 };
     cResult[4] = obj6;
     tmp13 = obj6;
   } else {
@@ -219,7 +219,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fractional
   const obj5 = { colors: ["#000000", "#36266d"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient };
   items1[0] = closure_6(LinearGradientDefault, obj5);
   const obj6 = { source: obj7, style: tmp.headerImage };
-  obj7 = { uri: _modDef13443 };
+  obj7 = { uri: _modDef14222 };
   const tmp3 = FastImageDefault;
   items1[1] = closure_6(tmp3, obj6);
   const obj8 = { style: tmp.nitroIconContainer, children: closure_6(NitroIconDefault, {}) };

@@ -1,23 +1,23 @@
-// Module ID: 15644
-// Function ID: 15645
+// Module ID: 16404
+// Function ID: 16405
 // Name: DisplayNameStylesEffectPickerSheet
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 8290, 15638, 15639, 5057, 5056, 1126, 2958, 15643, 5379, 5377, 6840, 10267, 10264, 10265, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 8568, 16398, 16399, 5156, 5155, 1128, 2981, 16403, 5479, 5477, 7118, 10568, 10565, 10566, 2]
 
-// Module 15644 (DisplayNameStylesEffectPickerSheet)
+// Module 16404 (DisplayNameStylesEffectPickerSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1126 */;
-import _modDef2958 from "module_2958" /* 2958 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import HapticUtils from "HapticUtils" /* 5057 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10264 */;
-import types from "types" /* 10265 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10267 */;
+import intl3 from "intl" /* 1128 */;
+import _modDef2981 from "module_2981" /* 2981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import HapticUtils from "HapticUtils" /* 5156 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10565 */;
+import types from "types" /* 10566 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10568 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ obj2 = { padding: nativeDefault.space.PX_8, paddingLeft: nativeDefault.space.PX_
 createStyles = createStyles.createStyles;
 size = { width: 109, height: 80, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, justifyContent: "center", alignItems: "center" };
 obj3 = { borderColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND };
-size1 = { position: "absolute", top: nativeDefault.space.PX_8, right: nativeDefault.space.PX_8, width: nativeDefault.space.PX_8, height: nativeDefault.space.PX_8, borderRadius: nativeDefault.space.PX_8 / 2, backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND, shadowColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND, shadowRadius: nativeDefault.space.PX_4, shadowOpacity: 1, elevation: 4 };
+size1 = { position: "absolute", top: nativeDefault.space.PX_8, right: nativeDefault.space.PX_8, width: nativeDefault.space.PX_8, height: nativeDefault.space.PX_8, borderRadius: nativeDefault.space.PX_8 / 2, backgroundColor: nativeDefault.colors.BADGE_PRIMARY_BACKGROUND, shadowColor: nativeDefault.colors.BADGE_PRIMARY_BACKGROUND, shadowRadius: nativeDefault.space.PX_4, shadowOpacity: 1, elevation: 4 };
 let closure_9 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameStylesEffectPickerSheet(userId) {
@@ -337,21 +337,23 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
       }
     }
   }
-  const fn2 = function v() {
-    const obj = HapticUtils;
-    const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-    const tmp3 = closure_6;
-    if (tmp3) {
-      onSelectEffect(first);
+  class T {
+    constructor() {
+      const obj = HapticUtils;
+      const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
+      const tmp3 = closure_6;
+      if (tmp3) {
+        onSelectEffect(first);
+      }
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.hideActionSheet();
     }
-    const obj2 = ActionSheetActionCreatorsDefault;
-    obj2.hideActionSheet();
-  };
+  }
   cResult[1] = first !== selectedEffectId;
   cResult[2] = first;
   cResult[3] = onSelectEffect;
-  cResult[4] = fn2;
-  tmp10 = fn2;
+  cResult[4] = T;
+  tmp10 = T;
 }) : (function DisplayNameStylesEffectPickerSheet(userId) {
   let Button;
   let Stack;
@@ -378,11 +380,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   closure_5 = undefined;
   let tmp = closure_9();
   let tmp3 = dependencyMap;
-  let obj = userId(8290);
+  let obj = userId(8568);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  let obj2 = userId(15638);
+  let obj2 = userId(16398);
   const visibleEffectOrder = obj2.useVisibleEffectOrder();
-  const obj3 = userId(15639);
+  const obj3 = userId(16399);
   const displayNameStylesNewEffects = obj3.useDisplayNameStylesNewEffects(visibleEffectOrder);
   ({ dotEffectIds: c2, dismissEffectDot: c3 } = displayNameStylesNewEffects);
   [first, closure_5] = first.useState(selectedEffectId);
@@ -394,13 +396,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   let tmp9 = null;
   if (null != userId) {
     const obj4 = { ref: bottomSheetRef, header: closure_7(tmp12, obj5), children: closure_7(closure_5, obj7) };
-    BottomSheet = tmp2(6840).BottomSheet;
-    obj5 = { title: intl.string(onSelectEffect(2958).RVtMxT), trailing: closure_7(Button, obj6) };
-    tmp12 = onSelectEffect(15643);
-    intl = tmp2(1126).intl;
-    obj6 = { text: intl2.string(userId(1126).t.XqMe3N), onPress: tmp8, variant: "primary", size: "sm" };
-    Button = tmp2(5379).Button;
-    intl2 = tmp2(1126).intl;
+    BottomSheet = tmp2(7118).BottomSheet;
+    obj5 = { title: intl.string(onSelectEffect(2981).RVtMxT), trailing: closure_7(Button, obj6) };
+    tmp12 = onSelectEffect(16403);
+    intl = tmp2(1128).intl;
+    obj6 = { text: intl2.string(userId(1128).t.XqMe3N), onPress: tmp8, variant: "primary", size: "sm" };
+    Button = tmp2(5479).Button;
+    intl2 = tmp2(1128).intl;
     obj7 = { style: tmp.container, children: closure_7(closure_5, obj8) };
     obj8 = { style: tmp.contentContainer, children: closure_7(Stack, obj9) };
     obj9 = {
@@ -425,7 +427,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
           return closure_7(closure_1_10, obj, effectId);
         })
     };
-    Stack = tmp2(5377).Stack;
+    Stack = tmp2(5477).Stack;
     tmp9 = closure_7(BottomSheet, obj4);
   }
   return tmp9;
@@ -444,11 +446,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Effect
   ({ userId, effectId, selected, showNewDot, onClick } = arg0);
   const tmp4 = closure_9();
   if (cResult[0] !== effectId) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const string = intl.string;
-    let OpWJ3f = tmp(10267).DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
+    let OpWJ3f = tmp(10568).DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
     if (OpWJ3f == null) {
-      OpWJ3f = _modDef2958.OpWJ3f;
+      OpWJ3f = _modDef2981.OpWJ3f;
     }
     const stringResult = string(OpWJ3f);
     cResult[0] = effectId;
@@ -568,7 +570,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Effect
   const string = intl.string;
   let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
   if (OpWJ3f == null) {
-    OpWJ3f = _modDef2958.OpWJ3f;
+    OpWJ3f = _modDef2981.OpWJ3f;
   }
   const stringResult = string(OpWJ3f);
   const items = [tmp.effectCard, ];

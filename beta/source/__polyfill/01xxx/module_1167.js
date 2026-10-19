@@ -1,22 +1,83 @@
 // Module ID: 1167
 // Function ID: 1168
-// Dependencies: []
-// Exports: resolveFormatConfigOptions
+// Dependencies: [1168, 1170, 1171, 1178, 1183, 1185, 1186, 1187, 1188]
 
 // Module 1167
-const obj = { duration: {}, list: {}, relativeTime: {}, number: { integer: { maximumFractionDigits: 0 }, currency: { style: "currency" }, percent: { style: "percent" } }, date: { short: { month: "numeric", day: "numeric", year: "2-digit" }, medium: { month: "short", day: "numeric", year: "numeric" }, long: { month: "long", day: "numeric", year: "numeric" }, full: { weekday: "long", month: "long", day: "numeric", year: "numeric" } }, time: { short: { hour: "numeric", minute: "numeric" }, medium: { hour: "numeric", minute: "numeric", second: "numeric" }, long: { hour: "numeric", minute: "numeric", second: "numeric", timeZoneName: "short" }, full: { hour: "numeric", minute: "numeric", second: "numeric", timeZoneName: "short" } } };
+import astFormatter from "astFormatter" /* 1178 */;
 
-export const resolveFormatConfigOptions = function resolveFormatConfigOptions(list, format) {
-  format = undefined;
-  if (null != format) {
-    format = format.format;
+const require = globalThis.__r;
+let hasOwnProperty;
+
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
+    }
+    let closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_2 = tmp;
+let tmp3 = self && self.__exportStar || ((obj, arg1) => {
+  for (const key10007 in obj) {
+    let callResult = "default" === key10007;
+    if (!callResult) {
+      let _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      callResult = hasOwnProperty.call(arg1, key10007);
+    }
+    if (callResult) {
+      continue;
+    } else {
+      let tmp3 = closure_2(arg1, obj, key10007);
+      continue;
+    }
+    continue;
   }
-  if (typeof format === "string") {
-    const _Object = Object;
-    const _Object2 = Object;
-    return Object.assign(Object.assign({}, list[format.format]), format);
-  } else {
-    return format;
-  }
-};
-export const DEFAULT_FORMAT_CONFIG = obj;
+});
+tmp3(astFormatter, exports);
+
+export const makeDataFormatters = require("DEFAULT_FORMAT_CONFIG").makeDataFormatters;
+export const dataFormatterCache = require("dataFormatterCache").dataFormatterCache;
+export const FormatBuilder = require("FormatBuilder").FormatBuilder;
+export const bindFormatValues = require("FormatBuilder").bindFormatValues;
+export const runtimeHashMessageKey = require("runtimeHashMessageKey").runtimeHashMessageKey;
+export const IntlManager = require("DEFAULT_LOCALE").IntlManager;
+export const DEFAULT_LOCALE = require("DEFAULT_LOCALE").DEFAULT_LOCALE;
+export const InternalIntlMessage = require("InternalIntlMessage").InternalIntlMessage;
+export const createLoader = require("MessageLoader").createLoader;
+export const loadAllMessagesInLocale = require("MessageLoader").loadAllMessagesInLocale;
+export const waitForAllDefaultIntlMessagesLoaded = require("MessageLoader").waitForAllDefaultIntlMessagesLoaded;
+export const MessageLoader = require("MessageLoader").MessageLoader;
+export const chainMessagesObjects = require("chainMessagesObjects").chainMessagesObjects;
+export const makeMessagesProxy = require("chainMessagesObjects").makeMessagesProxy;

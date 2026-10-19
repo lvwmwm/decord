@@ -1,56 +1,16 @@
 // Module ID: 7872
 // Function ID: 7873
-// Dependencies: [7840]
+// Dependencies: [26, 106, 65]
 
 // Module 7872
-import _modDef7840 from "module_7840" /* 7840 */;
+import _mod26 from "module_26" /* 26 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
-let obj = {
-  read(getUint8, sum) {
-    let obj4;
-    let obj5;
-    let str2;
-    let sum5;
-    const obj = _modDef7840;
-    const byteAt = obj.getByteAt(getUint8, sum);
-    let num = 0;
-    if (16 & byteAt) {
-      num = 1;
-    }
-    let str = "No";
-    const obj2 = { value: num, description: str2 };
-    str2 = "No";
-    if (16 & byteAt) {
-      str2 = "Yes";
-    }
-    let num2 = 0;
-    const obj3 = { Alpha: obj2, Animation: obj4, ImageWidth: obj5, ImageHeight: { value: sum5, description: `${tmp13}px` } };
-    if (2 & byteAt) {
-      num2 = 1;
-    }
-    obj4 = { value: num2, description: str };
-    if (2 & byteAt) {
-      str = "Yes";
-    }
-    sum = sum + c2;
-    const tmpResult = _modDef7840;
-    const byteAt1 = tmpResult.getByteAt(getUint8, sum);
-    const tmpResult6 = _modDef7840;
-    const sum1 = byteAt1 + 256 * tmpResult6.getByteAt(getUint8, sum + 1);
-    const tmpResult7 = _modDef7840;
-    const sum2 = sum1 + 65536 * tmpResult7.getByteAt(getUint8, sum + 2) + 1;
-    const sum3 = sum + c3;
-    obj5 = { value: sum2, description: `${tmp9}px` };
-    const tmpResult8 = _modDef7840;
-    const byteAt2 = tmpResult8.getByteAt(getUint8, sum3);
-    const tmpResult9 = _modDef7840;
-    const sum4 = byteAt2 + 256 * tmpResult9.getByteAt(getUint8, sum3 + 1);
-    const tmpResult10 = _modDef7840;
-    sum5 = sum4 + 65536 * tmpResult10.getByteAt(getUint8, sum3 + 2) + 1;
-    return obj3;
-  }
-};
-let c2 = 4;
-let c3 = 7;
+let obj2;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGCircle", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } }, validAttributes: obj2 };
+obj2 = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, cx: true, cy: true, r: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
 
-export default obj;
+export default module_65.get("RNSVGCircle", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

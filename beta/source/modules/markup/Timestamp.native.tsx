@@ -1,15 +1,15 @@
-// Module ID: 11771
-// Function ID: 11772
+// Module ID: 11909
+// Function ID: 11910
 // Name: Timestamp
-// Dependencies: [19, 21, 5092, 587, 558, 576, 11772, 4809, 1200, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 11910, 4904, 1202, 2]
 
-// Module 11771 (Timestamp)
+// Module 11909 (Timestamp)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
-import useFormattedTimestampDefault from "useFormattedTimestamp" /* 11772 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4904 */;
+import useFormattedTimestampDefault from "useFormattedTimestamp" /* 11910 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timestamp(no
       return tmp7;
     }
   }
-  const tmp8 = jsx(tmp(1200).LegacyText, { style: timestamp, onPress: tmp6, children: tmp5 });
+  const tmp8 = jsx(tmp(1202).LegacyText, { style: timestamp, onPress: tmp6, children: tmp5 });
   cResult[2] = tmp5;
   cResult[3] = timestamp;
   cResult[4] = tmp6;
@@ -64,7 +64,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timestamp(no
   let timestamp = closure_4().timestamp;
   const tmp = closure_4();
   const tmp2 = useFormattedTimestampDefault(node);
-  const LegacyText = node(1200).LegacyText;
+  const LegacyText = node(1202).LegacyText;
   const tmp3 = jsx;
   if (timestamp == null) {
     timestamp = style;

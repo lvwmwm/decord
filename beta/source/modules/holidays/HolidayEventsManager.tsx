@@ -1,23 +1,24 @@
-// Module ID: 18124
-// Function ID: 18125
+// Module ID: 18517
+// Function ID: 18518
 // Name: HolidayEventsManager
-// Dependencies: [1259, 10983, 10984, 6808, 18125, 18129, 18130, 18131, 10985, 2]
+// Dependencies: [1261, 11373, 502, 11374, 7085, 18518, 18522, 18523, 18524, 11375, 2]
 
-// Module 18124 (HolidayEventsManager)
-import Constants from "Constants" /* 10984 */;
-import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 18125 */;
-import HolidayEventsUtilsDefault from "HolidayEventsUtils" /* 18129 */;
-import SoundpackActions from "SoundpackActions" /* 18130 */;
-import react_native from "react-native" /* 18131 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1259 */;
-import SoundpackStore from "SoundpackStore" /* 10983 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
+// Module 18517 (HolidayEventsManager)
+import Constants from "Constants" /* 11374 */;
+import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 18518 */;
+import HolidayEventsUtilsDefault from "HolidayEventsUtils" /* 18522 */;
+import SoundpackActions from "SoundpackActions" /* 18523 */;
+import react_native from "react-native" /* 18524 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
+import SoundpackStore from "SoundpackStore" /* 11373 */;
+import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
 import size from "module_2" /* 2 */;
 
 let map;
 
 let tmp;
-const getSoundsForPackDefault = tmp(10985);
+const getSoundsForPackDefault = tmp(11375);
 const Soundpacks = Constants.Soundpacks;
 class HolidayEventsManager extends AutomaticLifecycleManager {
   constructor() {
@@ -27,7 +28,7 @@ class HolidayEventsManager extends AutomaticLifecycleManager {
     applyArgumentsResult.stores = map.set(ApexExperimentStore, () => require.handleExperimentUpdated());
     applyArgumentsResult.actions = { NOTIFICATIONS_SET_DISABLED_SOUNDS: applyArgumentsResult.updateRingtone };
     applyArgumentsResult.handleExperimentUpdated = function handleExperimentUpdated() {
-      const tmp = !HolidayEventsConfigDefault.isDesktopOnly;
+      const tmp = !HolidayEventsConfigDefault.isDesktopOnly && null != AuthenticationStore.getId();
       if (tmp) {
         require.updateSoundpack();
         require.updateRingtone();
@@ -45,23 +46,24 @@ class HolidayEventsManager extends AutomaticLifecycleManager {
     }
     const tmp3Result = HolidayEventsUtilsDefault;
     let isEligibleResult = tmp3Result.isEligible();
+    if (!isEligibleResult) {
+      if (soundpack !== Soundpacks.CLASSIC) {
+        const obj2 = SoundpackActions;
+        obj2.setSoundpack(tmp6.CLASSIC, null);
+      }
+    }
     if (isEligibleResult) {
-      if (isEligibleResult) {
-        isEligibleResult = null != tmp3(18125).soundpack;
-      }
-      if (isEligibleResult) {
-        isEligibleResult = name !== lastSoundpackExperimentId;
-      }
-      if (isEligibleResult) {
-        isEligibleResult = soundpack !== tmp3(18125).soundpack;
-      }
-      if (isEligibleResult) {
-        const obj3 = SoundpackActions;
-        obj3.setSoundpack(HolidayEventsConfigDefault.soundpack, name);
-      }
-    } else {
-      const obj2 = SoundpackActions;
-      obj2.setSoundpack(Soundpacks.CLASSIC, null);
+      isEligibleResult = null != tmp3(18518).soundpack;
+    }
+    if (isEligibleResult) {
+      isEligibleResult = name !== lastSoundpackExperimentId;
+    }
+    if (isEligibleResult) {
+      isEligibleResult = soundpack !== tmp3(18518).soundpack;
+    }
+    if (isEligibleResult) {
+      const obj3 = SoundpackActions;
+      obj3.setSoundpack(HolidayEventsConfigDefault.soundpack, name);
     }
   }
   updateRingtone() {

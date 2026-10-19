@@ -1,27 +1,27 @@
-// Module ID: 18756
-// Function ID: 18757
+// Module ID: 19154
+// Function ID: 19155
 // Name: TTITestAction
-// Dependencies: [5, 18011, 5016, 6133, 502, 2065, 4943, 2087, 1085, 3, 584, 4983, 12641, 16451, 1376, 1381, 1265, 4976, 7174, 11494, 9312, 5103, 5930, 8492, 5104, 11201, 15881, 1210, 2]
+// Dependencies: [5, 18404, 5112, 6412, 502, 2068, 5038, 2090, 1087, 3, 584, 5079, 13577, 18550, 1378, 1383, 1267, 5072, 7445, 12640, 9618, 5202, 6186, 8770, 5203, 11585, 16637, 1212, 2]
 
-// Module 18756 (TTITestAction)
+// Module 19154 (TTITestAction)
 import LoggerDefault from "Logger" /* 3 */;
-import AnalyticsUtils from "AnalyticsUtils" /* 1265 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1376 */;
-import react_native from "react-native" /* 1381 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
-import react_nativeDefault from "react-native" /* 4983 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5930 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6133 */;
-import ComponentProfiler from "ComponentProfiler" /* 12641 */;
-import react_nativeDefault2 from "react-native" /* 16451 */;
-import NativeAppStartup from "NativeAppStartup" /* 18011 */;
+import AnalyticsUtils from "AnalyticsUtils" /* 1267 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1378 */;
+import react_native from "react-native" /* 1383 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
+import react_nativeDefault from "react-native" /* 5079 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6186 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6412 */;
+import ComponentProfiler from "ComponentProfiler" /* 13577 */;
+import NativeAppStartup from "NativeAppStartup" /* 18404 */;
+import react_nativeDefault2 from "react-native" /* 18550 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ExperimentStore from "ExperimentStore" /* 5016 */;
+import ExperimentStore from "ExperimentStore" /* 5112 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4943 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5038 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import Constants from "Constants" /* 1087 */;
 import Dispatcher from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
@@ -433,7 +433,7 @@ obj = function _setupTTITest() {
               error2 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Set", done: true };
+              return { value: "Reflect", done: true };
             }
             break;
           }
@@ -1034,13 +1034,13 @@ obj = function _apiLogin() {
             closure_0 = iter;
             obj = password(closure_2_2[10]);
             closure_1 = iter;
-            const f158526 = () => {
+            const f160414 = () => {
               const error = new Error("Unable to login " + closure_0 + ". Login failed with action '" + obj + "'");
               closure_2_1(error);
             };
             function handler(arg0) {
               obj.unsubscribe(closure_1, handler);
-              return f158526(arg0);
+              return f160414(arg0);
             }
             const subscription = obj.subscribe(iter, handler);
           }
@@ -1072,7 +1072,7 @@ function subscribeOnce(subscribe, arg1, arg2) {
   let closure_2 = arg2;
   function handler(arg0) {
     obj.unsubscribe(closure_1, handler);
-    return f158526(arg0);
+    return f160414(arg0);
   }
   return subscribe.subscribe("LOGIN_SUCCESS", handler);
 }
@@ -1159,39 +1159,32 @@ obj = {
     obj4.logToDevice(json);
   },
   "dump-jank-stats": () => {
-    obj = react_nativeDefault2;
-    let report;
-    if (obj != null) {
-      report = obj.requestReport();
-    }
-    const obj2 = { report };
+    let obj2;
+    obj = { report: obj2.requestReport() };
+    obj2 = react_nativeDefault2;
     const obj3 = { type: "response", status: "success", message: "dump-jank-stats" };
-    const merged = Object.assign(obj2);
+    const merged = Object.assign(obj);
     const json = stringify(obj3);
-    const tmpResult = react_nativeDefault;
-    tmpResult.logToDevice(json);
+    const obj4 = react_nativeDefault;
+    obj4.logToDevice(json);
   },
   "set-jank-multiplier": (multiplier) => {
     obj = react_nativeDefault2;
-    if (obj != null) {
-      const result = obj.setJankHeuristicMultiplier(multiplier.multiplier);
-    }
+    const result = obj.setJankHeuristicMultiplier(multiplier.multiplier);
     const obj2 = { type: "response", status: "success", message: "set-jank-multiplier" };
     const merged = Object.assign(undefined);
     const json = stringify(obj2);
-    const tmpResult = react_nativeDefault;
-    tmpResult.logToDevice(json);
+    const obj3 = react_nativeDefault;
+    obj3.logToDevice(json);
   },
   "start-jank-stats": () => {
     obj = react_nativeDefault2;
-    if (obj != null) {
-      obj.startTracking();
-    }
+    obj.startTracking();
     const obj2 = { type: "response", status: "success", message: "start-jank-stats" };
     const merged = Object.assign(undefined);
     const json = stringify(obj2);
-    const tmpResult = react_nativeDefault;
-    tmpResult.logToDevice(json);
+    const obj3 = react_nativeDefault;
+    obj3.logToDevice(json);
   },
   "flux-dispatch": (action) => {
     obj = Dispatcher;

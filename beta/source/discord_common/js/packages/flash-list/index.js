@@ -1,25 +1,25 @@
-// Module ID: 8620
-// Function ID: 8621
+// Module ID: 7091
+// Function ID: 7092
 // Name: defaultMVCPConfig
-// Dependencies: [109, 19, 17, 21, 1382, 558, 576, 6532, 4850, 6531, 6307, 2]
+// Dependencies: [109, 19, 17, 21, 1384, 558, 576, 6809, 4945, 6808, 6584, 2]
 
-// Module 8620 (defaultMVCPConfig)
+// Module 7091 (defaultMVCPConfig)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import BottomSheetFlashListDefault from "BottomSheetFlashList" /* 6531 */;
-import _mod6532 from "module_6532" /* 6532 */;
+import BottomSheetFlashListDefault from "BottomSheetFlashList" /* 6808 */;
+import _mod6809 from "module_6809" /* 6809 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 4850 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 4945 */;
 import size from "module_2" /* 2 */;
 
 let obj;
 
 let tmp;
-const BottomSheetModal = tmp(6307);
+const BottomSheetModal = tmp(6584);
 let closure_3 = ["ref"];
 let closure_4 = ["ref"];
 let closure_5 = ["preventNativeModalDismiss", "ref"];
@@ -102,7 +102,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
     }
     return tmp9;
   }
-  const FlashList = _mod6532.FlashList;
+  const FlashList = _mod6809.FlashList;
   const merged = Object.assign(tmp4);
   const tmp11 = <FlashList maintainVisibleContentPosition={maintainVisibleContentPosition} ref={tmp5} />;
   cResult[3] = tmp4;
@@ -113,12 +113,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
   let maintainVisibleContentPosition;
   const merged = Object.assign(ref, Object.assign({ ref: 0 }));
   maintainVisibleContentPosition = { maintainVisibleContentPosition, ref };
-  const FlashList = _mod6532.FlashList;
+  const FlashList = _mod6809.FlashList;
   const merged1 = Object.assign(merged);
   return <FlashList maintainVisibleContentPosition={maintainVisibleContentPosition} ref={arg0.ref} />;
 });
 let ReanimatedRexport = ReanimatedRexport_mod;
-let closure_15 = ReanimatedRexport.createAnimatedComponent(_mod6532.FlashList);
+let closure_15 = ReanimatedRexport.createAnimatedComponent(_mod6809.FlashList);
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
   let tmp2;
@@ -182,7 +182,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp9;
   }
-  const FlashList = _mod6532.FlashList;
+  const FlashList = _mod6809.FlashList;
   const merged = Object.assign(tmp4);
   const tmp11 = <FlashList ref={tmp5} maintainVisibleContentPosition={maintainVisibleContentPosition} masonry />;
   cResult[3] = tmp4;
@@ -193,12 +193,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let maintainVisibleContentPosition;
   const merged = Object.assign(ref, Object.assign({ preventNativeModalDismiss: 0, ref: 0 }));
   maintainVisibleContentPosition = { ref, maintainVisibleContentPosition, masonry: true };
-  const FlashList = _mod6532.FlashList;
+  const FlashList = _mod6809.FlashList;
   const merged1 = Object.assign(merged);
   return <FlashList ref={arg0.ref} maintainVisibleContentPosition={maintainVisibleContentPosition} masonry />;
 });
 ReanimatedRexport = ReanimatedRexport_mod;
-let closure_16 = ReanimatedRexport.createAnimatedComponent(_mod6532.FlashList);
+let closure_16 = ReanimatedRexport.createAnimatedComponent(_mod6809.FlashList);
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let preventNativeModalDismiss;
@@ -320,9 +320,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <closure_16 ref={ref} maintainVisibleContentPosition={maintainVisibleContentPosition} masonry renderScrollComponent={BottomSheetModal.BottomSheetScrollView} refreshControl={tmp2} />;
 });
 const result = size.fileFinishedImporting("../discord_common/js/packages/flash-list/index.js");
-for (const key10085 in _mod6532) {
+for (const key10085 in _mod6809) {
   let tmp8 = key10085;
-  exports[key10085] = _mod6532[key10085];
+  exports[key10085] = _mod6809[key10085];
   continue;
 }
 const FlashList_export = tmp2;

@@ -1,12 +1,12 @@
-// Module ID: 8344
-// Function ID: 8345
+// Module ID: 8622
+// Function ID: 8623
 // Name: useProfileFrameLayerAsset
-// Dependencies: [5, 32, 19, 17, 6905, 1987, 558, 576, 1899, 8345, 8346, 2]
+// Dependencies: [5, 32, 19, 17, 7181, 1989, 558, 576, 1901, 8623, 8624, 2]
 // Exports: isProfileFrameLayerShown
 
-// Module 8344 (useProfileFrameLayerAsset)
-import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1987 */;
-import Constants from "Constants" /* 6905 */;
+// Module 8622 (useProfileFrameLayerAsset)
+import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1989 */;
+import Constants from "Constants" /* 7181 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -18,7 +18,7 @@ let _Promise, c4, c5, importDefault, nextPromise, num2;
 
 let metroImportDefault;
 let metroRequire;
-const f98319 = (arg0) => {
+const f99620 = (arg0) => {
   closure_0 = arg0;
   size = size.getSize(closure_0, (arg0, arg1) => {
     if (arg0 > 0) {
@@ -45,7 +45,7 @@ function measureProfileFrameLayer(arg0) {
     if (null == value2) {
       const self = this;
       const self2 = this;
-      const promise = new Promise(f98319);
+      const promise = new Promise(f99620);
       const cleanupPromise = promise.finally(() => set.delete(closure_0));
       const result = obj.set(arg0, cleanupPromise);
       value2 = cleanupPromise;
@@ -255,7 +255,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFr
             if (null == resolved) {
               const self = this;
               const self2 = this;
-              const promise = new Promise(f98319);
+              const promise = new Promise(f99620);
               const cleanupPromise = promise.finally(() => set.delete(closure_0));
               const result = obj.set(tmp, cleanupPromise);
               resolved = cleanupPromise;
@@ -325,7 +325,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFr
             if (null == resolved) {
               const self = this;
               const self2 = this;
-              const promise = new Promise(f98319);
+              const promise = new Promise(f99620);
               const cleanupPromise = promise.finally(() => set.delete(closure_0));
               let result = obj.set(tmp, cleanupPromise);
               resolved = cleanupPromise;

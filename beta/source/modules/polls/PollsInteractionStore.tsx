@@ -1,14 +1,14 @@
-// Module ID: 10490
-// Function ID: 10491
+// Module ID: 10813
+// Function ID: 10814
 // Name: PollsInteractionStore
-// Dependencies: [1267, 1272, 558, 576, 568, 11, 2]
+// Dependencies: [1269, 1274, 558, 576, 568, 11, 2]
 // Exports: clearChannelPollState, clearPollState, getPollState, updatePollState
 
-// Module 10490 (PollsInteractionStore)
+// Module 10813 (PollsInteractionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import react from "react" /* 576 */;
-import module_1267 from "module_1267" /* 1267 */;
+import module_1269 from "module_1269" /* 1269 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require;
 
 let closure_3 = {};
-let closure_4 = module_1267.createWithEqualityFn((arg0) => {
+let closure_4 = module_1269.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
   let obj = {
     pollsByChannelId: {},

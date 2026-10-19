@@ -1,21 +1,21 @@
-// Module ID: 12912
-// Function ID: 12913
+// Module ID: 13843
+// Function ID: 13844
 // Name: Header
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 1415, 1200, 5088, 8762, 1403, 1126, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 1417, 1202, 5187, 9039, 1405, 1128, 2]
 
-// Module 12912 (Header)
+// Module 13843 (Header)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1200 */;
-import FlagUtils from "FlagUtils" /* 1403 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import BotTagDefault from "BotTag" /* 8762 */;
+import Constants from "Constants" /* 1087 */;
+import native from "native" /* 1202 */;
+import FlagUtils from "FlagUtils" /* 1405 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import BotTagDefault from "BotTag" /* 9039 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header(arg0)
     }
     if (cResult[5] !== tmp5) {
       const obj3 = { source: tmp5, size: native.AvatarSizes.XLARGE };
-      const Avatar = tmp(1200).Avatar;
+      const Avatar = tmp(1202).Avatar;
       const tmp13 = hasOwnProperty(Avatar, obj3);
       cResult[5] = tmp5;
       cResult[6] = tmp13;
@@ -107,7 +107,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header(arg0)
           }
           if (cResult[16] !== tmp7) {
             const obj8 = { source: tmp7, size: native.AvatarSizes.XLARGE };
-            const Avatar2 = tmp(1200).Avatar;
+            const Avatar2 = tmp(1202).Avatar;
             const tmp28 = hasOwnProperty(Avatar2, obj8);
             cResult[16] = tmp7;
             cResult[17] = tmp28;
@@ -148,11 +148,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header(arg0)
                       if (cResult[32] !== accountScopes.length) {
                         let stringResult;
                         if (accountScopes.length > 0) {
-                          const intl2 = tmp(1126).intl;
-                          stringResult = intl2.string(tmp(1126).t.jFbDnJ);
+                          const intl2 = tmp(1128).intl;
+                          stringResult = intl2.string(tmp(1128).t.jFbDnJ);
                         } else {
-                          const intl = tmp(1126).intl;
-                          stringResult = intl.string(tmp(1126).t["X+Fdpo"]);
+                          const intl = tmp(1128).intl;
+                          stringResult = intl.string(tmp(1128).t["X+Fdpo"]);
                         }
                         cResult[32] = accountScopes.length;
                         cResult[33] = stringResult;
@@ -304,13 +304,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header(arg0)
   }
   items3[1] = tmp8Result;
   items2[1] = metroRequire(View, obj11);
-  const Text = tmp9(5088).Text;
+  const Text = tmp9(5187).Text;
   if (accountScopes.length > 0) {
-    const intl2 = tmp9(1126).intl;
-    stringResult = intl2.string(tmp9(1126).t.jFbDnJ);
+    const intl2 = tmp9(1128).intl;
+    stringResult = intl2.string(tmp9(1128).t.jFbDnJ);
   } else {
-    const intl = tmp9(1126).intl;
-    stringResult = intl.string(tmp9(1126).t["X+Fdpo"]);
+    const intl = tmp9(1128).intl;
+    stringResult = intl.string(tmp9(1128).t["X+Fdpo"]);
   }
   items2[2] = hasOwnProperty(Text, { variant: "heading-md/normal", color: "text-default", children: stringResult });
   return metroRequire(View, obj3);

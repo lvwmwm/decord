@@ -1,88 +1,113 @@
-// Module ID: 16019
-// Function ID: 16020
+// Module ID: 12759
+// Function ID: 12760
 // Name: CheckpointBackground
-// Dependencies: [5437, 1085, 21, 5092, 558, 576, 5391, 16020, 6157, 2]
+// Dependencies: [19, 5537, 1087, 21, 5191, 558, 576, 5491, 12760, 5128, 2]
 
-// Module 16019 (CheckpointBackground)
-import react from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import CheckpointConstants from "CheckpointConstants" /* 5437 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import _modDef16020 from "module_16020" /* 16020 */;
+// Module 12759 (CheckpointBackground)
+import react2 from "react" /* 576 */;
+import Constants from "Constants" /* 1087 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import CheckpointConstants from "CheckpointConstants" /* 5537 */;
+import _modDef12760 from "module_12760" /* 12760 */;
+import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let hasOwnProperty;
+let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const colors = CheckpointConstants.CHECKPOINT_BACKGROUND_GRADIENT;
+let closure_4 = CheckpointConstants.CHECKPOINT_BACKGROUND_GRADIENT;
 const VerticalGradient = Constants.VerticalGradient;
-({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
-let closure_8 = createStyles.createStyles({ background: { position: "absolute", width: "100%", height: "100%" } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointBackground() {
-  let items;
-  let tmp10;
-  let tmp12;
-  let tmp4;
-  const obj = react;
-  const cResult = obj.c(8);
-  const tmp3 = closure_8();
-  if (cResult[0] !== tmp3.background) {
-    const obj3 = { colors, start: null, end: null, style: tmp3.background };
-    ({ START: obj2.start, END: obj2.end } = VerticalGradient);
-    const tmp9 = hasOwnProperty(LinearGradientDefault, obj3);
-    cResult[0] = tmp3.background;
-    cResult[1] = tmp9;
-    tmp4 = tmp9;
-  } else {
-    tmp4 = cResult[1];
+({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let closure_9 = createStyles.createStyles({ background: { position: "absolute", width: "100%", height: "100%" } });
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointBackground(gradientStartColor) {
+  let items1;
+  let tmp5;
+  const obj = react2;
+  const cResult = obj.c(11);
+  gradientStartColor = gradientStartColor.gradientStartColor;
+  if (undefined === gradientStartColor) {
+    gradientStartColor = closure_4[0];
   }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { uri: _modDef16020 };
-    cResult[2] = obj4;
-    tmp10 = obj4;
+  const tmp4 = closure_9();
+  if (cResult[0] !== gradientStartColor) {
+    const items = [gradientStartColor, closure_4[1]];
+    cResult[0] = gradientStartColor;
+    cResult[1] = items;
+    tmp5 = items;
   } else {
-    tmp10 = cResult[2];
+    tmp5 = cResult[1];
   }
-  if (cResult[3] !== tmp3.background) {
-    const obj5 = { source: tmp10, style: tmp3.background, resizeMode: "cover" };
-    const tmp15 = hasOwnProperty(FastImageDefault, obj5);
-    cResult[3] = tmp3.background;
-    cResult[4] = tmp15;
-    tmp12 = tmp15;
-  } else {
-    tmp12 = cResult[4];
-  }
-  if (cResult[5] === tmp4) {
-    let tmp16;
-    if (cResult[6] === tmp12) {
-      tmp16 = cResult[7];
+  if (cResult[2] === tmp5) {
+    let tmp7;
+    let tmp10;
+    let tmp12;
+    if (cResult[3] === tmp4.background) {
+      tmp7 = cResult[4];
     }
-    return tmp16;
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj2 = { uri: _modDef12760 };
+      cResult[5] = obj2;
+      tmp10 = obj2;
+    } else {
+      tmp10 = cResult[5];
+    }
+    if (cResult[6] !== tmp4.background) {
+      const obj3 = { source: tmp10, style: tmp4.background, resizeMode: "cover" };
+      const tmp15 = metroRequire(FastImageDefault, obj3);
+      cResult[6] = tmp4.background;
+      cResult[7] = tmp15;
+      tmp12 = tmp15;
+    } else {
+      tmp12 = cResult[7];
+    }
+    if (cResult[8] === tmp7) {
+      let tmp16;
+      if (cResult[9] === tmp12) {
+        tmp16 = cResult[10];
+      }
+      return tmp16;
+    }
+    const obj4 = { children: items1 };
+    items1 = [tmp7, tmp12];
+    const tmp19 = metroImportAll(metroImportDefault, obj4);
+    cResult[8] = tmp7;
+    cResult[9] = tmp12;
+    cResult[10] = tmp19;
+    tmp16 = tmp19;
   }
-  const obj9 = { children: items };
-  items = [tmp4, tmp12];
-  const tmp17 = metroImportDefault(metroRequire, obj9);
-  cResult[5] = tmp4;
-  cResult[6] = tmp12;
-  cResult[7] = tmp17;
-  tmp16 = tmp17;
-}) : (function CheckpointBackground() {
-  let items;
+  const obj5 = { colors: tmp5, start: VerticalGradient.START, end: VerticalGradient.END, style: tmp4.background };
+  const tmp8 = metroRequire(LinearGradientDefault, obj5);
+  cResult[2] = tmp5;
+  cResult[3] = tmp4.background;
+  cResult[4] = tmp8;
+  tmp7 = tmp8;
+}) : (function CheckpointBackground(gradientStartColor) {
+  let items1;
   let obj4;
-  const tmp = closure_8();
-  const obj = { children: items };
-  items = [, ];
-  const obj2 = { colors, start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.background };
-  items[0] = hasOwnProperty(LinearGradientDefault, obj2);
-  const obj3 = { source: obj4, style: tmp.background, resizeMode: "cover" };
-  obj4 = { uri: _modDef16020 };
-  const tmp2 = FastImageDefault;
-  items[1] = hasOwnProperty(tmp2, obj3);
-  return metroImportDefault(metroRequire, obj);
+  gradientStartColor = gradientStartColor.gradientStartColor;
+  if (gradientStartColor === undefined) {
+    gradientStartColor = closure_4[0];
+  }
+  const tmp2 = closure_9();
+  let items = [gradientStartColor];
+  const obj = { children: items1 };
+  const memo = react.useMemo(() => {
+    const items = [gradientStartColor, closure_4[1]];
+    return items;
+  }, items);
+  items1 = [, ];
+  const obj2 = { colors: memo, start: VerticalGradient.START, end: VerticalGradient.END, style: tmp2.background };
+  items1[0] = closure_6(LinearGradientDefault, obj2);
+  const obj3 = { source: obj4, style: tmp2.background, resizeMode: "cover" };
+  obj4 = { uri: _modDef12760 };
+  const tmp4 = FastImageDefault;
+  items1[1] = closure_6(tmp4, obj3);
+  return closure_8(closure_7, obj);
 });
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointBackground.tsx");
 

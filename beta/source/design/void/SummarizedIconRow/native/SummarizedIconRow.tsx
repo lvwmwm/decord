@@ -1,15 +1,15 @@
-// Module ID: 14411
-// Function ID: 14412
+// Module ID: 15177
+// Function ID: 15178
 // Name: SummarizedIconRow
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5187, 2]
 
-// Module 14411 (SummarizedIconRow)
+// Module 15177 (SummarizedIconRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const Text_Text = tmp(5088);
+const Text_Text = tmp(5187);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;

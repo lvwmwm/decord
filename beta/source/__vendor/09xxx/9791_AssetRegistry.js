@@ -1,10 +1,10 @@
 // Module ID: 9791
 // Function ID: 9792
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 9791 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stickers/native/images", width: 90, height: 90, scales: [2, 3], hash: "5decb69ef43f8e7b31fcaaf11b388fe1", name: "sticker_search_empty", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/MangaIcon", width: 60, height: 60, scales: [2, 3], hash: "c95dda79dd2256b3ff93ba5baa549fb1", name: "MangaIcon", type: "png" });

@@ -1,11 +1,11 @@
-// Module ID: 16263
-// Function ID: 16264
+// Module ID: 16954
+// Function ID: 16955
 // Name: useSecureFramesVerifiedUsers
-// Dependencies: [8808, 558, 576, 504, 2]
+// Dependencies: [9085, 558, 576, 504, 2]
 
-// Module 16263 (useSecureFramesVerifiedUsers)
+// Module 16954 (useSecureFramesVerifiedUsers)
 import react from "react" /* 576 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 8808 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 9085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

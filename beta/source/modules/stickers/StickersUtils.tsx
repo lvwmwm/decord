@@ -1,18 +1,18 @@
-// Module ID: 5749
-// Function ID: 5750
+// Module ID: 6005
+// Function ID: 6006
 // Name: StickersUtils
-// Dependencies: [1244, 2087, 2044, 1085, 5750, 1415, 1900, 1382, 1450, 2]
+// Dependencies: [1246, 2090, 2047, 1087, 6006, 1417, 1902, 1384, 1452, 2]
 // Exports: createStickerPackCategory, getFavoriteStickerIds, getFilenameForSticker, getMessageStickers, getStickerAssetUrl, getStickerFormatTypeFromFileType, getStickerPackBannerAssetUrl, getStickerPackPreviewSticker, getStickerTagForEmoji, isAvailableGuildSticker, isFavoriteSticker, isGuildSticker, isStandardSticker, isStickerAssetUrl, isStickerPackAnimated, shouldAnimateSticker
 
-// Module 5749 (StickersUtils)
-import Constants from "Constants" /* 1085 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
-import StickersTypes from "StickersTypes" /* 5750 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import StickersConstants from "StickersConstants" /* 2044 */;
+// Module 6005 (StickersUtils)
+import Constants from "Constants" /* 1087 */;
+import PlatformUtils from "PlatformUtils" /* 1384 */;
+import AvatarUtils from "AvatarUtils" /* 1417 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
+import StickersTypes from "StickersTypes" /* 6006 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import StickersConstants from "StickersConstants" /* 2047 */;
 import size_mod from "module_2" /* 2 */;
 
 let ASSET_ENDPOINT;
@@ -20,11 +20,11 @@ let c10;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f92346 = (id) => id.id === cover_sticker_id.cover_sticker_id;
+const f93596 = (id) => id.id === cover_sticker_id.cover_sticker_id;
 function getStickerExtensionFromFormatType(format_type) {
   if (StickersTypes.StickerFormat.PNG === format_type) {
-    const SUPPORTS_WEBP = tmp(1415).SUPPORTS_WEBP;
-    const StickerExtensions = tmp(5750).StickerExtensions;
+    const SUPPORTS_WEBP = tmp(1417).SUPPORTS_WEBP;
+    const StickerExtensions = tmp(6006).StickerExtensions;
     return SUPPORTS_WEBP ? StickerExtensions.WEBP : StickerExtensions.PNG;
   } else if (StickersTypes.StickerFormat.APNG === format_type) {
     return StickersTypes.StickerExtensions.APNG;
@@ -59,7 +59,7 @@ export const getStickerPackPreviewSticker = function getStickerPackPreviewSticke
   let closure_0 = cover_sticker_id;
   if (null != cover_sticker_id.cover_sticker_id) {
     const stickers = cover_sticker_id.stickers;
-    const found = stickers.find(f92346);
+    const found = stickers.find(f93596);
     if (null != found) {
       return found;
     }
@@ -120,13 +120,13 @@ export const getStickerAssetUrl = (format_type) => {
     let PNG = format_type.format_type;
     const tmp = format_type.format_type === StickersTypes.StickerFormat.GIF && flag;
     if (tmp) {
-      PNG = tmp23(5750).StickerFormat.PNG;
+      PNG = tmp23(6006).StickerFormat.PNG;
     }
     const tmp3 = getStickerExtensionFromFormatType(PNG);
     const STICKER_ASSETResult = Endpoints.STICKER_ASSET(format_type.id, tmp3);
     let flag2 = false;
     try {
-      flag2 = tmp23(1900).getForceSdrEmojisStickersConfig({ location: "sticker_url" }).enabled;
+      flag2 = tmp23(1902).getForceSdrEmojisStickersConfig({ location: "sticker_url" }).enabled;
     } catch (err) {
     }
     let str2 = "";
@@ -203,7 +203,7 @@ export const getStickerPackBannerAssetUrl = function getStickerPackBannerAssetUr
     let sum = combined;
     if (null != size) {
       const _HermesInternal3 = HermesInternal;
-      const tmp15Result = tmp15(1450);
+      const tmp15Result = tmp15(1452);
       sum = combined + "?size=" + tmp15Result.getBestMediaProxySize(size);
     }
     return sum;
@@ -228,7 +228,7 @@ export const createStickerPackCategory = function createStickerPackCategory(id) 
     first = id.stickers[0];
   } else {
     const stickers = id.stickers;
-    first = stickers.find(f92346);
+    first = stickers.find(f93596);
   }
   return obj;
 };

@@ -1,13 +1,13 @@
-// Module ID: 12346
-// Function ID: 12347
+// Module ID: 13294
+// Function ID: 13295
 // Name: openConjureProjectInBuilder
-// Dependencies: [12347, 6946, 12348, 2]
+// Dependencies: [11594, 7222, 13295, 2]
 // Exports: default
 
-// Module 12346 (openConjureProjectInBuilder)
-import ConjureUtils from "ConjureUtils" /* 6946 */;
-import ConjureActivity from "ConjureActivity" /* 12347 */;
-import openConjureProject from "openConjureProject" /* 12348 */;
+// Module 13294 (openConjureProjectInBuilder)
+import ConjureUtils from "ConjureUtils" /* 7222 */;
+import ConjureActivity from "ConjureActivity" /* 11594 */;
+import openConjureProject from "openConjureProject" /* 13295 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/projects/openConjureProjectInBuilder.tsx");
@@ -17,7 +17,7 @@ export default function openConjureProjectInBuilder(id) {
   let result = obj.conjureProjectGuildId(id);
   if (result == null) {
     const tmpResult = ConjureUtils;
-    result = tmpResult.resolveConjureWorkspaceGuildId("openVibegrationsProjectInBuilder");
+    result = tmpResult.resolveConjureWorkspaceGuildId("openConjureProjectInBuilder");
   }
   let flag = null != result;
   if (flag) {

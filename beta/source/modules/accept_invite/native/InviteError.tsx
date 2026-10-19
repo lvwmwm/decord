@@ -1,28 +1,28 @@
-// Module ID: 12490
-// Function ID: 12491
+// Module ID: 13431
+// Function ID: 13432
 // Name: InviteError
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 4969, 5031, 12491, 12492, 12493, 1126, 5379, 6157, 5088, 1415, 1200, 12494, 6159, 2128, 2]
+// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 5065, 5127, 13432, 13433, 13434, 1128, 5479, 5128, 5187, 1417, 1202, 13435, 6436, 2131, 2]
 
-// Module 12490 (InviteError)
+// Module 13431 (InviteError)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import shared from "shared" /* 4969 */;
-import useThemeDefault from "useTheme" /* 5031 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import GuildIcon from "GuildIcon" /* 6159 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 12493 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12494 */;
+import intl5 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
+import shared from "shared" /* 5065 */;
+import useThemeDefault from "useTheme" /* 5127 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import GuildIcon from "GuildIcon" /* 6436 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 13434 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13435 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1085 */;
+import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -71,14 +71,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
     tmp5 = cResult[1];
   }
   importDefault = tmp5;
-  const tmpResult = onPressClose(4969);
-  const tmp6Result = importDefault(tmpResult.isThemeDark(useThemeDefault()) ? 12491 : 12492);
+  const tmpResult = onPressClose(5065);
+  const tmp6Result = importDefault(tmpResult.isThemeDark(useThemeDefault()) ? 13432 : 13433);
   let code;
   if (inviteError != null) {
     code = inviteError.code;
   }
   if (cResult[2] !== code) {
-    const tmpResult2 = onPressClose(12493);
+    const tmpResult2 = onPressClose(13434);
     const descriptiveInviteError = tmpResult2.getDescriptiveInviteError(code);
     cResult[2] = code;
     cResult[3] = descriptiveInviteError;
@@ -128,8 +128,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
           title1 = tmp9.title;
         }
         if (title1 == null) {
-          const intl3 = tmp(1126).intl;
-          title1 = intl3.string(tmp(1126).t.u9zxnX);
+          const intl3 = tmp(1128).intl;
+          title1 = intl3.string(tmp(1128).t.u9zxnX);
         }
         let title2;
         if (tmp9 != null) {
@@ -182,14 +182,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
           tmp33 = tmp36;
         }
         const obj3 = { style: tmp4.expiredBody, variant: "text-sm/medium", color: "text-default", children: tmp13 };
-        const tmp30 = closure_7(onPressClose(5088).Text, obj3);
+        const tmp30 = closure_7(onPressClose(5187).Text, obj3);
         cResult[17] = tmp13;
         cResult[18] = tmp4.expiredBody;
         cResult[19] = tmp30;
         tmp28 = tmp30;
       }
       const obj4 = { style: tmp4.expiredTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp22 };
-      const tmp27 = closure_7(onPressClose(5088).Text, obj4);
+      const tmp27 = closure_7(onPressClose(5187).Text, obj4);
       cResult[14] = tmp4.expiredTitle;
       cResult[15] = tmp22;
       cResult[16] = tmp27;
@@ -203,16 +203,16 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
     tmp17 = tmp19;
   }
   if (invite.state === constants3.BANNED) {
-    const intl2 = tmp(1126).intl;
-    stringResult = intl2.string(tmp(1126).t["GzD/aa"]);
+    const intl2 = tmp(1128).intl;
+    stringResult = intl2.string(tmp(1128).t["GzD/aa"]);
   } else {
     stringResult = undefined;
     if (tmp9 != null) {
       stringResult = tmp9.description;
     }
     if (stringResult == null) {
-      let intl = tmp(1126).intl;
-      stringResult = intl.string(tmp(1126).t.FWkU6P);
+      let intl = tmp(1128).intl;
+      stringResult = intl.string(tmp(1128).t.FWkU6P);
     }
   }
   let description1;
@@ -234,7 +234,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
   const tmp = closure_10();
   const obj = shared;
   let code;
-  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 12491 : 12492);
+  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 13432 : 13433);
   const getDescriptiveInviteError = InviteErrorUtils.getDescriptiveInviteError;
   InviteErrorUtils;
   if (inviteError != null) {
@@ -242,16 +242,16 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
   }
   const descriptiveInviteError = getDescriptiveInviteError(code);
   if (invite.state === metroRequire.BANNED) {
-    const intl2 = tmp2(1126).intl;
-    stringResult = intl2.string(tmp2(1126).t["GzD/aa"]);
+    const intl2 = tmp2(1128).intl;
+    stringResult = intl2.string(tmp2(1128).t["GzD/aa"]);
   } else {
     stringResult = undefined;
     if (descriptiveInviteError != null) {
       stringResult = descriptiveInviteError.description;
     }
     if (stringResult == null) {
-      const intl = tmp2(1126).intl;
-      stringResult = intl.string(tmp2(1126).t.FWkU6P);
+      const intl = tmp2(1128).intl;
+      stringResult = intl.string(tmp2(1128).t.FWkU6P);
     }
   }
   const items = [, , , ];
@@ -259,15 +259,15 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
   items[0] = metroImportDefault(FastImageDefault, obj2);
   const obj3 = { style: tmp.expiredTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: title };
   title = undefined;
-  const Text = tmp2(5088).Text;
+  const Text = tmp2(5187).Text;
   const tmp10 = React4;
   const tmp11 = metroImportAll;
   if (descriptiveInviteError != null) {
     title = descriptiveInviteError.title;
   }
   if (title == null) {
-    const intl3 = tmp2(1126).intl;
-    title = intl3.string(tmp2(1126).t.u9zxnX);
+    const intl3 = tmp2(1128).intl;
+    title = intl3.string(tmp2(1128).t.u9zxnX);
   }
   function handlePressClose() {
     closure_1_0();
@@ -277,8 +277,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
   const obj5 = { style: tmp.expiredBody, variant: "text-sm/medium", color: "text-default", children: stringResult };
   items[2] = metroImportDefault(Text_Text.Text, obj5);
   const obj6 = { variant: "primary", size: "lg", text: intl4.string(intl5.t.wcqOoF), onPress: handlePressClose };
-  const Button = tmp2(5379).Button;
-  intl4 = tmp2(1126).intl;
+  const Button = tmp2(5479).Button;
+  intl4 = tmp2(1128).intl;
   items[3] = metroImportDefault(Button, obj6);
   return tmp10(tmp11, obj4);
 });
@@ -332,7 +332,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
       }
       if (cResult[7] !== tmp4.disabledPauseIcon) {
         const obj4 = { style: tmp4.disabledPauseIcon, source: AssetRegistryDefault };
-        const Icon = tmp(1200).Icon;
+        const Icon = tmp(1202).Icon;
         const tmp13 = closure_7(Icon, obj4);
         cResult[7] = tmp4.disabledPauseIcon;
         cResult[8] = tmp13;
@@ -357,8 +357,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
             const _Symbol = Symbol;
             const disabledTitle = tmp4.disabledTitle;
             if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-              let intl = tmp(1126).intl;
-              const stringResult = intl.string(onPressClose(1126).t.jlLX2Z);
+              let intl = tmp(1128).intl;
+              const stringResult = intl.string(onPressClose(1128).t.jlLX2Z);
               cResult[16] = stringResult;
               tmp24 = stringResult;
             } else {
@@ -366,7 +366,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
             }
             if (cResult[17] !== tmp4.disabledTitle) {
               const obj5 = { style: disabledTitle, variant: "heading-xl/semibold", color: "text-feedback-critical", children: tmp24 };
-              const tmp28 = closure_7(onPressClose(5088).Text, obj5);
+              const tmp28 = closure_7(onPressClose(5187).Text, obj5);
               cResult[17] = tmp4.disabledTitle;
               cResult[18] = tmp28;
               tmp26 = tmp28;
@@ -376,10 +376,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
             const _Symbol2 = Symbol;
             const disabledBody = tmp4.disabledBody;
             if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl2 = tmp(1126).intl;
+              const intl2 = tmp(1128).intl;
               const format = intl2.format;
               const obj6 = { articleLink: obj9.getArticleURL(constants2.INVITE_DISABLED) };
-              const RXSeLl = tmp(1126).t.RXSeLl;
+              const RXSeLl = tmp(1128).t.RXSeLl;
               obj9 = HelpdeskUtilsDefault;
               const formatResult = format(RXSeLl, obj6);
               cResult[19] = formatResult;
@@ -423,7 +423,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
               tmp38 = tmp41;
             }
             const obj8 = { style: disabledBody, variant: "text-md/normal", color: "text-default", children: tmp29 };
-            const tmp35 = closure_7(onPressClose(5088).Text, obj8);
+            const tmp35 = closure_7(onPressClose(5187).Text, obj8);
             cResult[20] = tmp4.disabledBody;
             cResult[21] = tmp29;
             cResult[22] = tmp35;
@@ -439,7 +439,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
         cResult[15] = tmp22;
         tmp19 = tmp22;
       }
-      const obj11 = { style: tmp4.guildIcon, icon: tmp6, size: onPressClose(6159).GuildIconSizes.XLARGE };
+      const obj11 = { style: tmp4.guildIcon, icon: tmp6, size: onPressClose(6436).GuildIconSizes.XLARGE };
       const tmp17 = GuildIconDefault;
       const tmp18 = closure_7(tmp17, obj11);
       cResult[9] = tmp6;

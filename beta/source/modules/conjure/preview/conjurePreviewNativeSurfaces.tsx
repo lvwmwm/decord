@@ -1,12 +1,12 @@
-// Module ID: 11430
-// Function ID: 11431
+// Module ID: 11038
+// Function ID: 11039
 // Name: conjurePreviewNativeSurfaces
-// Dependencies: [1085, 11431, 2]
+// Dependencies: [1087, 9174, 2]
 // Exports: beginNativeSurfaceSessionForFrame
 
-// Module 11430 (conjurePreviewNativeSurfaces)
-import Constants from "Constants" /* 1085 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 11431 */;
+// Module 11038 (conjurePreviewNativeSurfaces)
+import Constants from "Constants" /* 1087 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 9174 */;
 import size from "module_2" /* 2 */;
 
 function asString(str) {
@@ -151,8 +151,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "code", answered: -918601248 }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "code", answered: -918601248 })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "ix", answered: "DISMISS_GUILD_PROGRESS" }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "ix", answered: "DISMISS_GUILD_PROGRESS" })
 };
 let closure_5 = {
   drain() {
@@ -186,7 +186,7 @@ export const beginNativeSurfaceSessionForFrame = function beginNativeSurfaceSess
       closure_6.unshift(obj2);
     }
     if (1 === arr.length) {
-      obj = obj2(11431);
+      obj = obj2(9174);
       let result = obj.setRpcCommandInterceptor(answerFor);
     }
     return {

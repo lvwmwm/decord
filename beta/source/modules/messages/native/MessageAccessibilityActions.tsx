@@ -1,15 +1,15 @@
-// Module ID: 7981
-// Function ID: 7982
+// Module ID: 8253
+// Function ID: 8254
 // Name: MessageAccessibilityActions
-// Dependencies: [2041, 7982, 1126, 7985, 7989, 2]
+// Dependencies: [2044, 8254, 1128, 8257, 8261, 2]
 // Exports: createMessageAccessibilityActions, getMessageAccessibilityActionFromLabel
 
-// Module 7981 (MessageAccessibilityActions)
-import intl10 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2041 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7982 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 7985 */;
-import canReplyToMessage from "canReplyToMessage" /* 7989 */;
+// Module 8253 (MessageAccessibilityActions)
+import intl10 from "intl" /* 1128 */;
+import UserSettings from "UserSettings" /* 2044 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8254 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 8257 */;
+import canReplyToMessage from "canReplyToMessage" /* 8261 */;
 import size from "module_2" /* 2 */;
 
 const MessageAccessibilityAction = { VIEW_PROFILE: "view_profile", ADD_REACTION: "add_reaction", ADD_QUICK_REACTION: "add_quick_reaction", REPLY: "reply", MESSAGE_ACTIONS_MENU: "message_actions_menu", EDIT_GDM: "edit_gdm", OPEN_PINS: "open_pins", JUMP_TO_MESSAGE: "jump_to_message" };
@@ -45,13 +45,13 @@ export const getMessageAccessibilityActionFromLabel = function getMessageAccessi
       const tmpResult = DoubleTapToReactUtils;
       const result = tmpResult.disambiguatedEmojiFromSettingsValue(setting);
       if (null != result) {
-        const intl9 = tmp(1126).intl;
+        const intl9 = tmp(1128).intl;
         const obj2 = { emojiName: result.name };
-        formatToPlainStringResult = intl9.formatToPlainString(tmp(1126).t.eQIttH, obj2);
+        formatToPlainStringResult = intl9.formatToPlainString(tmp(1128).t.eQIttH, obj2);
       }
     }
-    const intl8 = tmp(1126).intl;
-    formatToPlainStringResult = intl8.formatToPlainString(tmp(1126).t.eQIttH, { emojiName: "heart" });
+    const intl8 = tmp(1128).intl;
+    formatToPlainStringResult = intl8.formatToPlainString(tmp(1128).t.eQIttH, { emojiName: "heart" });
   }
   if (null != formatToPlainStringResult) {
     obj[formatToPlainStringResult] = tmp3.ADD_QUICK_REACTION;
@@ -73,9 +73,9 @@ export const createMessageAccessibilityActions = function createMessageAccessibi
     if (canAddNewReactionsDefault(channel)) {
       obj = { label: intl.string(intl10.t.lfIHs4), name: obj.ADD_REACTION };
       const push = items.push;
-      intl = tmp10(1126).intl;
+      intl = tmp10(1128).intl;
       push(obj);
-      const DoubleTapReactionEmoji = tmp10(2041).DoubleTapReactionEmoji;
+      const DoubleTapReactionEmoji = tmp10(2044).DoubleTapReactionEmoji;
       const setting = DoubleTapReactionEmoji.getSetting();
       let disableDoubleTap;
       if (setting != null) {
@@ -87,13 +87,13 @@ export const createMessageAccessibilityActions = function createMessageAccessibi
           const tmp10Result = DoubleTapToReactUtils;
           const result = tmp10Result.disambiguatedEmojiFromSettingsValue(setting);
           if (null != result) {
-            const intl3 = tmp10(1126).intl;
+            const intl3 = tmp10(1128).intl;
             const obj3 = { emojiName: result.name };
-            formatToPlainStringResult = intl3.formatToPlainString(tmp10(1126).t.eQIttH, obj3);
+            formatToPlainStringResult = intl3.formatToPlainString(tmp10(1128).t.eQIttH, obj3);
           }
         }
-        const intl2 = tmp10(1126).intl;
-        formatToPlainStringResult = intl2.formatToPlainString(tmp10(1126).t.eQIttH, { emojiName: "heart" });
+        const intl2 = tmp10(1128).intl;
+        formatToPlainStringResult = intl2.formatToPlainString(tmp10(1128).t.eQIttH, { emojiName: "heart" });
       }
       if (null != formatToPlainStringResult) {
         const obj4 = { label: formatToPlainStringResult, name: obj.ADD_QUICK_REACTION };
@@ -104,12 +104,12 @@ export const createMessageAccessibilityActions = function createMessageAccessibi
     if (tmp10Result2.canReplyToMessage(channel, message)) {
       const push2 = items.push;
       const obj5 = { label: intl4.string(intl10.t["5IEsGx"]), name: obj.REPLY };
-      intl4 = tmp10(1126).intl;
+      intl4 = tmp10(1128).intl;
       push2(obj5);
     }
     const push3 = items.push;
     const obj6 = { label: intl5.string(intl10.t.ChPNkN), name: obj.MESSAGE_ACTIONS_MENU };
-    intl5 = tmp10(1126).intl;
+    intl5 = tmp10(1128).intl;
     push3(obj6);
     return items;
   }

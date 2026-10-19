@@ -1,10 +1,10 @@
 // Module ID: 13506
 // Function ID: 13507
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 13506 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/seasonal", width: 144, height: 150, scales: [1], hash: "ccdfa582cc7b9c2866cdcd81d25dbd3c", name: "box_idle", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "76fb8109cdd9e459537ee050fc2f3187", name: "ic_members", type: "png" });

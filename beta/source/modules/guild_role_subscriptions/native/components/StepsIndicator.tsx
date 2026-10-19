@@ -1,18 +1,18 @@
-// Module ID: 18597
-// Function ID: 18598
+// Module ID: 18993
+// Function ID: 18994
 // Name: components/StepsIndicator
-// Dependencies: [19, 17, 5081, 21, 5092, 587, 558, 576, 4850, 5093, 5088, 504, 2]
+// Dependencies: [19, 17, 5181, 21, 5191, 587, 558, 576, 4945, 5192, 5187, 504, 2]
 
-// Module 18597 (components/StepsIndicator)
+// Module 18993 (components/StepsIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import timing from "timing" /* 5093 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import timing from "timing" /* 5192 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

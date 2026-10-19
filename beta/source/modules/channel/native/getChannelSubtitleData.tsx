@@ -1,11 +1,11 @@
-// Module ID: 16670
-// Function ID: 16671
+// Module ID: 17356
+// Function ID: 17357
 // Name: getChannelSubtitleData
-// Dependencies: [1126, 2]
+// Dependencies: [1128, 2]
 // Exports: getChannelSubtitleData
 
-// Module 16670 (getChannelSubtitleData)
-import intl2 from "intl" /* 1126 */;
+// Module 17356 (getChannelSubtitleData)
+import intl2 from "intl" /* 1128 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel/native/getChannelSubtitleData.tsx");

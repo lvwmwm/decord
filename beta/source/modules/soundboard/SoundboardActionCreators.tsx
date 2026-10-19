@@ -1,20 +1,20 @@
-// Module ID: 7048
-// Function ID: 7049
+// Module ID: 7324
+// Function ID: 7325
 // Name: SoundboardActionCreators
-// Dependencies: [5, 5428, 5430, 1085, 1095, 1295, 7049, 584, 7050, 5636, 7051, 1265, 2046, 12, 5299, 1126, 7052, 2]
+// Dependencies: [5, 5528, 5530, 1087, 1097, 1297, 7325, 584, 7326, 5892, 7327, 1267, 2049, 12, 5399, 1128, 7328, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, playSoundLocally, removeFavoriteSound, reorderFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 7048 (SoundboardActionCreators)
+// Module 7324 (SoundboardActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl3 from "intl" /* 1126 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2046 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
-import SoundboardConstants from "SoundboardConstants" /* 5430 */;
+import intl3 from "intl" /* 1128 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2049 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
+import SoundboardConstants from "SoundboardConstants" /* 5530 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SoundboardStore from "SoundboardStore" /* 5428 */;
-import Constants from "Constants" /* 1085 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
+import SoundboardStore from "SoundboardStore" /* 5528 */;
+import Constants from "Constants" /* 1087 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -141,7 +141,7 @@ function _maybeFetchDefaultSounds() {
 }
 function _maybeFetchGuildSoundboardSounds() {
   let SOUNDBOARD_SOUNDS_RECEIVED;
-  obj = SOUNDBOARD_SOUNDS_RECEIVED(7051);
+  obj = SOUNDBOARD_SOUNDS_RECEIVED(7327);
   const guildIdsToFetchSoundsFor = obj.getGuildIdsToFetchSoundsFor();
   if (0 === guildIdsToFetchSoundsFor.length) {
     return Promise.resolve();
@@ -256,7 +256,7 @@ obj = function _uploadSound() {
             body = undefined;
             volume = 1;
             emoji_id = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === volume) {
           if (arg0 === 1) {
@@ -349,7 +349,7 @@ obj = function _updateSound() {
             body = undefined;
             volume = 1;
             emoji_id = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else if (1 === volume) {
           if (arg0 === 1) {

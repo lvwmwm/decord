@@ -1,24 +1,24 @@
-// Module ID: 10324
-// Function ID: 10325
+// Module ID: 10634
+// Function ID: 10635
 // Name: FavoritesGuildAnalytics
-// Dependencies: [4939, 1085, 2090, 1265, 2]
+// Dependencies: [5034, 1087, 2093, 1267, 2]
 // Exports: consumeNextFavoritesGuildViewSource, setNextFavoritesGuildViewSource, trackFavoritesGuildAddToFavorites, trackFavoritesGuildOrderUpdated, trackFavoritesGuildRemoveFromFavorites, trackFavoritesGuildVisibilitySettingToggled
 
-// Module 10324 (FavoritesGuildAnalytics)
-import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import FavoritesUtils from "FavoritesUtils" /* 2090 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
+// Module 10634 (FavoritesGuildAnalytics)
+import Constants from "Constants" /* 1087 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import FavoritesUtils from "FavoritesUtils" /* 2093 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 let manual_browsing = "manual_browsing";
 const result = size.fileFinishedImporting("modules/favorites/analytics/FavoritesGuildAnalytics.tsx");
 
-export const setNextFavoritesGuildViewSource = function setNextFavoritesGuildViewSource(intro_dc) {
+export const setNextFavoritesGuildViewSource = function setNextFavoritesGuildViewSource(upsell_modal) {
   const obj = FavoritesUtils;
   if (!obj.isFavoritesGuildId(SelectedGuildStore.getGuildId())) {
-    manual_browsing = intro_dc;
+    manual_browsing = upsell_modal;
   }
 };
 export function consumeNextFavoritesGuildViewSource() {

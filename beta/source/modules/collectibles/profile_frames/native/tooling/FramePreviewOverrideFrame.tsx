@@ -1,16 +1,16 @@
-// Module ID: 8347
-// Function ID: 8348
+// Module ID: 8625
+// Function ID: 8626
 // Name: FramePreviewOverrideFrame
-// Dependencies: [19, 17, 8343, 6905, 21, 5092, 558, 576, 6157, 2]
+// Dependencies: [19, 17, 8621, 7181, 21, 5191, 558, 576, 5128, 2]
 
-// Module 8347 (FramePreviewOverrideFrame)
+// Module 8625 (FramePreviewOverrideFrame)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import Constants from "Constants" /* 6905 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import Constants from "Constants" /* 7181 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 8343 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 8621 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 8120
-// Function ID: 8121
+// Module ID: 8396
+// Function ID: 8397
 // Name: ChangeLogUtils
-// Dependencies: [1949, 8121, 5411, 8126, 8127, 5079, 2]
+// Dependencies: [1951, 8397, 5511, 8402, 8403, 5179, 2]
 // Exports: renderChangelogMessageMarkup
 
-// Module 8120 (ChangeLogUtils)
-import _modDef1949 from "module_1949" /* 1949 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5079 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5411 */;
-import MarkupListRuleDefault from "MarkupListRule" /* 8126 */;
-import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 8127 */;
+// Module 8396 (ChangeLogUtils)
+import _modDef1951 from "module_1951" /* 1951 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5179 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5511 */;
+import MarkupListRuleDefault from "MarkupListRule" /* 8402 */;
+import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 8403 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,7 +34,7 @@ const parse = (arg0, fn, inline) => {
   if ("=" === arg0[2]) {
     num = 1;
   }
-  obj2 = _modDef1949;
+  obj2 = _modDef1951;
   return obj;
 };
 function defaultRules(dependencyMap) {
@@ -69,12 +69,12 @@ function defaultRules(dependencyMap) {
   if (null != require("utils/ChangeLogUtils").customRules.strong) {
     let strong;
     let obj2 = {};
-    const merged1 = Object.assign(tmp(8121).baseRules.strong);
+    const merged1 = Object.assign(tmp(8397).baseRules.strong);
     if (typeof require("utils/ChangeLogUtils").customRules.strong === "function") {
-      const customRules = tmp(8121).customRules;
+      const customRules = tmp(8397).customRules;
       strong = customRules.strong(dependencyMap);
     } else {
-      strong = tmp(8121).customRules.strong;
+      strong = tmp(8397).customRules.strong;
     }
     const obj3 = { strong: obj2 };
     const merged2 = Object.assign(strong);
@@ -86,28 +86,28 @@ function defaultRules(dependencyMap) {
   obj5 = {};
   const merged4 = Object.assign(image);
   if (typeof require("utils/ChangeLogUtils").customRules.image === "function") {
-    const customRules2 = tmp(8121).customRules;
+    const customRules2 = tmp(8397).customRules;
     image = customRules2.image(dependencyMap);
   } else {
-    image = tmp(8121).customRules.image;
+    image = tmp(8397).customRules.image;
   }
   const merged5 = Object.assign(image);
   obj6 = {};
   const merged6 = Object.assign(link);
   if (typeof require("utils/ChangeLogUtils").customRules.link === "function") {
-    const customRules3 = tmp(8121).customRules;
+    const customRules3 = tmp(8397).customRules;
     link = customRules3.link(dependencyMap);
   } else {
-    link = tmp(8121).customRules.link;
+    link = tmp(8397).customRules.link;
   }
   const merged7 = Object.assign(link);
   obj7 = {};
   const merged8 = Object.assign(list);
   if (typeof require("utils/ChangeLogUtils").customRules.list === "function") {
-    const customRules4 = tmp(8121).customRules;
+    const customRules4 = tmp(8397).customRules;
     list = customRules4.list(dependencyMap);
   } else {
-    list = tmp(8121).customRules.list;
+    list = tmp(8397).customRules.list;
   }
   const merged9 = Object.assign(list);
   obj9 = { parse };
@@ -115,48 +115,48 @@ function defaultRules(dependencyMap) {
   const merged10 = Object.assign(lheading);
   _require = true;
   if (typeof require("utils/ChangeLogUtils").customRules.lheading === "function") {
-    const customRules5 = tmp(8121).customRules;
+    const customRules5 = tmp(8397).customRules;
     lheading = customRules5.lheading(dependencyMap);
   } else {
-    lheading = tmp(8121).customRules.lheading;
+    lheading = tmp(8397).customRules.lheading;
   }
   const merged11 = Object.assign(lheading);
   obj10 = {};
   const merged12 = Object.assign(heading);
   if (typeof require("utils/ChangeLogUtils").customRules.heading === "function") {
-    const customRules6 = tmp(8121).customRules;
+    const customRules6 = tmp(8397).customRules;
     heading = customRules6.heading(dependencyMap);
   } else {
-    heading = tmp(8121).customRules.heading;
+    heading = tmp(8397).customRules.heading;
   }
   const merged13 = Object.assign(heading);
   obj11 = {};
   const merged14 = Object.assign(blockQuote);
   if (typeof require("utils/ChangeLogUtils").customRules.blockQuote === "function") {
-    const customRules7 = tmp(8121).customRules;
+    const customRules7 = tmp(8397).customRules;
     blockQuote = customRules7.blockQuote(dependencyMap);
   } else {
-    blockQuote = tmp(8121).customRules.blockQuote;
+    blockQuote = tmp(8397).customRules.blockQuote;
   }
   const merged15 = Object.assign(blockQuote);
   obj12 = {};
   const merged16 = Object.assign(paragraph);
   if (typeof require("utils/ChangeLogUtils").customRules.paragraph === "function") {
-    const customRules8 = tmp(8121).customRules;
+    const customRules8 = tmp(8397).customRules;
     paragraph = customRules8.paragraph(dependencyMap);
   } else {
-    paragraph = tmp(8121).customRules.paragraph;
+    paragraph = tmp(8397).customRules.paragraph;
   }
   const merged17 = Object.assign(paragraph);
   return obj;
 }
-let lheading = _modDef1949.defaultRules.lheading;
-let heading = _modDef1949.defaultRules.heading;
-let link = _modDef1949.defaultRules.link;
-let image = _modDef1949.defaultRules.image;
-let list = _modDef1949.defaultRules.list;
-let blockQuote = _modDef1949.defaultRules.blockQuote;
-let paragraph = _modDef1949.defaultRules.paragraph;
+let lheading = _modDef1951.defaultRules.lheading;
+let heading = _modDef1951.defaultRules.heading;
+let link = _modDef1951.defaultRules.link;
+let image = _modDef1951.defaultRules.image;
+let list = _modDef1951.defaultRules.list;
+let blockQuote = _modDef1951.defaultRules.blockQuote;
+let paragraph = _modDef1951.defaultRules.paragraph;
 const re10 = /\{(.+?)}/;
 const re11 = /^\$(\w+?)\$/;
 let obj = {
@@ -174,10 +174,10 @@ let obj = {
     _require = false;
     let tmp3 = _require;
     if (typeof require("utils/ChangeLogUtils").customRules.lheading === "function") {
-      const customRules = tmp3(8121).customRules;
+      const customRules = tmp3(8397).customRules;
       lheading = customRules.lheading(dependencyMap);
     } else {
-      lheading = tmp3(8121).customRules.lheading;
+      lheading = tmp3(8397).customRules.lheading;
     }
     const obj3 = { lheading: obj2 };
     const merged2 = Object.assign(lheading);
@@ -190,7 +190,7 @@ let obj = {
     const obj2 = { newline: obj3, text: MarkupTextRuleDefault, list: MarkupListRuleDefault, subtext: MarkupSubtextRuleDefault };
     const merged = Object.assign(defaultRules(dependencyMap));
     obj3 = {};
-    const merged1 = Object.assign(_modDef1949.defaultRules.newline);
+    const merged1 = Object.assign(_modDef1951.defaultRules.newline);
     const merged2 = Object.assign(obj2);
     return obj;
   }

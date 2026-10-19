@@ -1,14 +1,14 @@
-// Module ID: 9107
-// Function ID: 9108
+// Module ID: 9401
+// Function ID: 9402
 // Name: TwitchNeutralIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9108, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9402, 4912, 2]
 
-// Module 9107 (TwitchNeutralIcon)
+// Module 9401 (TwitchNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 9108 */;
+import BaseIconImage2 from "BaseIconImage" /* 4912 */;
+import AssetRegistry from "AssetRegistry" /* 9402 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwitchNeut
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4817).BaseIconImage;
+  const BaseIconImage = tmp(4912).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

@@ -1,19 +1,19 @@
-// Module ID: 15049
-// Function ID: 15050
+// Module ID: 15811
+// Function ID: 15812
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 5939, 1126, 15038, 6631, 6157, 15050, 5088, 1200, 5379, 15039, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5191, 587, 558, 576, 6195, 1128, 15800, 6908, 5128, 15812, 5187, 1202, 5479, 15801, 2]
 
-// Module 15049 (TwoFASetupSuccess)
+// Module 15811 (TwoFASetupSuccess)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 6631 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 6908 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,12 +26,12 @@ let obj3;
 let obj4;
 let size;
 let tmp;
-const intl5 = tmp(1126);
-const native = tmp(1200);
-const Text_Text = tmp(5088);
-const components_Button_Button = tmp(5379);
-const TwoFASetupModal = tmp(15039);
-const AssetRegistry = tmp(15050);
+const intl5 = tmp(1128);
+const native = tmp(1202);
+const Text_Text = tmp(5187);
+const components_Button_Button = tmp(5479);
+const TwoFASetupModal = tmp(15801);
+const AssetRegistry = tmp(15812);
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
@@ -391,7 +391,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetupSu
         }
         await "IconComponent";
         ({ ticket: c0, credential: c1 } = closure_0);
-        return "Set";
+        return "Reflect";
       });
       return obj(...arguments);
     };

@@ -1,13 +1,13 @@
-// Module ID: 8951
-// Function ID: 8952
+// Module ID: 9247
+// Function ID: 9248
 // Name: AnnouncementMessageUtils
-// Dependencies: [4761, 1998, 5444, 5419, 8952, 5434, 8953, 1126, 1384, 2]
+// Dependencies: [4856, 2000, 5544, 5519, 1105, 9248, 5534, 9249, 1128, 1386, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 8951 (AnnouncementMessageUtils)
-import URLUtilsDefault from "URLUtils" /* 1384 */;
-import MessageRecord from "MessageRecord" /* 4761 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 8953 */;
+// Module 9247 (AnnouncementMessageUtils)
+import URLUtilsDefault from "URLUtils" /* 1386 */;
+import MessageRecord from "MessageRecord" /* 4856 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9249 */;
 import size from "module_2" /* 2 */;
 
 let reactions;
@@ -21,7 +21,6 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
   let regex;
   return messages.map((reactions) => {
     let body;
-    let color;
     let embeds;
     let embeds2;
     let embeds3;
@@ -37,9 +36,8 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
     let str10;
     let str11;
     let title;
-    let url;
-    const tmp2 = found5(found6[4]);
-    let obj = found4(found6[5]);
+    const tmp2 = found5(found6[5]);
+    let obj = found4(found6[6]);
     const tmp2Result = tmp2(obj.createMessageRecord(reactions));
     const content = tmp2Result.content;
     if (closure_3(tmp2Result)) {
@@ -172,9 +170,14 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
                 }
                 iconProxyURL1 = iconURL1;
               }
-              ({ url, color } = first2);
-              tmp37 = { authorName: name, authorIconUrl: iconProxyURL, providerName: text, providerIconUrl: iconProxyURL1, url, color };
-              const obj6 = { authorName: name, authorIconUrl: iconProxyURL, providerName: text, providerIconUrl: iconProxyURL1, url, color };
+              const url = first2.url;
+              let int2hslResult;
+              if (null != first2.color) {
+                const tmp3Result7 = found4(found6[4]);
+                int2hslResult = tmp3Result7.int2hsl(first2.color, false);
+              }
+              tmp37 = { authorName: name, authorIconUrl: iconProxyURL, providerName: text, providerIconUrl: iconProxyURL1, url, color: int2hslResult };
+              const obj6 = { authorName: name, authorIconUrl: iconProxyURL, providerName: text, providerIconUrl: iconProxyURL1, url, color: int2hslResult };
             }
             tmp35 = tmp37;
           }
@@ -188,8 +191,8 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
       return obj.isImageContentType(content_type.content_type);
     });
     if (null != found2) {
-      const tmp3Result6 = found4(found6[2]);
-      result = tmp3Result6.messageAttachmentToMediaItem(found2, tmp2Result);
+      const tmp3Result8 = found4(found6[2]);
+      result = tmp3Result8.messageAttachmentToMediaItem(found2, tmp2Result);
     } else {
       const attachments1 = tmp2Result.attachments;
       const found3 = attachments1.find((content_type) => {
@@ -197,8 +200,8 @@ export const toAnnouncementMessages = function toAnnouncementMessages(messages) 
         return obj.isVideoContentType(content_type.content_type);
       });
       if (null != found3) {
-        const tmp3Result7 = found4(found6[2]);
-        result = tmp3Result7.messageAttachmentToMediaItem(found3, tmp2Result);
+        const tmp3Result9 = found4(found6[2]);
+        result = tmp3Result9.messageAttachmentToMediaItem(found3, tmp2Result);
       } else {
         const embeds1 = tmp2Result.embeds;
         found4 = embeds1.find((video) => null != video.video && null != video.thumbnail);
@@ -255,8 +258,8 @@ export const getPollExpiryLabel = function getPollExpiryLabel(poll) {
   const obj = useFormattedExpirationLabel;
   let result = obj.formatExpirationLabel(poll.expiry);
   if (result == null) {
-    const intl = tmp(1126).intl;
-    result = intl.string(tmp(1126).t["e+J3JZ"]);
+    const intl = tmp(1128).intl;
+    result = intl.string(tmp(1128).t["e+J3JZ"]);
   }
   return result;
 };

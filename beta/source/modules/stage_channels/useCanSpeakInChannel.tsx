@@ -1,12 +1,12 @@
-// Module ID: 10850
-// Function ID: 10851
+// Module ID: 11250
+// Function ID: 11251
 // Name: useCanSpeakInChannel
-// Dependencies: [502, 558, 576, 504, 5416, 2]
+// Dependencies: [502, 558, 576, 504, 5516, 2]
 
-// Module 10850 (useCanSpeakInChannel)
+// Module 11250 (useCanSpeakInChannel)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5416 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5516 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

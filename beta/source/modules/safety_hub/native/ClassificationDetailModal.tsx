@@ -1,15 +1,15 @@
-// Module ID: 11473
-// Function ID: 11474
+// Module ID: 12619
+// Function ID: 12620
 // Name: ClassificationDetailModal
-// Dependencies: [19, 21, 5092, 587, 5934, 6201, 11474, 11510, 558, 576, 11511, 11476, 1504, 1126, 6688, 2]
+// Dependencies: [19, 21, 5191, 587, 6190, 6478, 12620, 12656, 558, 576, 12657, 12622, 1506, 1128, 6965, 2]
 
-// Module 11473 (ClassificationDetailModal)
+// Module 12619 (ClassificationDetailModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import NavigatorHeader from "NavigatorHeader" /* 6201 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11476 */;
+import NavigatorHeader from "NavigatorHeader" /* 6478 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12622 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classifica
   const cResult = obj.c(11);
   ({ classificationId, source, shouldRedirectToAccountStanding } = arg0);
   const tmp5 = closure_7();
-  const tmpResult = tmp(11511);
+  const tmpResult = tmp(12657);
   safetyHubInitialized = tmpResult.useSafetyHubInitialized();
   if (cResult[0] !== safetyHubInitialized) {
     const fn = function l() {
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classifica
     tmp8 = cResult[2];
   }
   const effect = react.useEffect(tmp7, tmp8);
-  const tmpResult3 = tmp(1504);
+  const tmpResult3 = tmp(1506);
   const isFocused = tmpResult3.useIsFocused();
   if (cResult[3] === classificationId) {
     if (cResult[4] === (undefined !== shouldRedirectToAccountStanding && shouldRedirectToAccountStanding)) {
@@ -71,15 +71,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classifica
         }
         const _Symbol = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1126).intl;
-          const stringResult = intl.string(tmp(1126).t["13/7kX"]);
+          const intl = tmp(1128).intl;
+          const stringResult = intl.string(tmp(1128).t["13/7kX"]);
           cResult[8] = stringResult;
           tmp13 = stringResult;
         } else {
           tmp13 = cResult[8];
         }
         if (cResult[9] !== tmp11) {
-          const tmp18 = jsx(tmp(6688).Navigator, { screens: tmp11, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: tmp13 });
+          const tmp18 = jsx(tmp(6965).Navigator, { screens: tmp11, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: tmp13 });
           cResult[9] = tmp11;
           cResult[10] = tmp18;
           tmp15 = tmp18;
@@ -131,7 +131,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classifica
   cResult[6] = tmp5;
   cResult[7] = obj3;
   tmp11 = obj3;
-  tmpResult4 = tmp(6201);
+  tmpResult4 = tmp(6478);
 }) : (function ClassificationDetailModal(classificationId) {
   let headerStyle;
   classificationId = classificationId.classificationId;
@@ -142,7 +142,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classifica
   }
   let tmp = closure_7();
   dependencyMap = tmp;
-  let obj = classificationId(11511);
+  let obj = classificationId(12657);
   const safetyHubInitialized = obj.useSafetyHubInitialized();
   const items = [safetyHubInitialized];
   const effect = safetyHubInitialized.useEffect(() => {
@@ -152,7 +152,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classifica
       const safetyHubData = obj.getSafetyHubData();
     }
   }, items);
-  let obj2 = classificationId(1504);
+  let obj2 = classificationId(1506);
   const isFocused = obj2.useIsFocused();
   const items1 = [classificationId, flag, tmp, source];
   const memo = safetyHubInitialized.useMemo(() => {
@@ -197,9 +197,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classifica
     obj3 = NavigatorHeader;
     return obj;
   }, items1);
-  const Navigator = classificationId(6688).Navigator;
-  const intl = classificationId(1126).intl;
-  return <Navigator screens={memo} initialRouteName={constants.CLASSIFICATION_DETAIL} headerBackTitle={intl.string(classificationId(1126).t["13/7kX"])} />;
+  const Navigator = classificationId(6965).Navigator;
+  const intl = classificationId(1128).intl;
+  return <Navigator screens={memo} initialRouteName={constants.CLASSIFICATION_DETAIL} headerBackTitle={intl.string(classificationId(1128).t["13/7kX"])} />;
 });
 const result = size.fileFinishedImporting("modules/safety_hub/native/ClassificationDetailModal.tsx");
 

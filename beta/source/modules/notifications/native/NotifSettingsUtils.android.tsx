@@ -1,12 +1,12 @@
-// Module ID: 14708
-// Function ID: 14709
+// Module ID: 15475
+// Function ID: 15476
 // Name: NotifSettingsUtils
-// Dependencies: [14704, 1126, 14709, 14710, 1255, 2]
+// Dependencies: [15472, 1128, 15476, 15477, 1257, 2]
 
-// Module 14708 (NotifSettingsUtils)
-import intl2 from "intl" /* 1126 */;
-import react_nativeDefault from "react-native" /* 14709 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 14704 */;
+// Module 15475 (NotifSettingsUtils)
+import intl2 from "intl" /* 1128 */;
+import react_nativeDefault from "react-native" /* 15476 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15472 */;
 import size from "module_2" /* 2 */;
 
 let map, map1, notifType;
@@ -15,7 +15,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const SentryUtilsDefault = tmp(1255);
+const SentryUtilsDefault = tmp(1257);
 function inferImportanceFromBehavior(visibility) {
   if (!("ringtone" in visibility)) {
     let HIGH;
@@ -123,7 +123,7 @@ function buildChannelsAndMapping() {
       return map;
     }
   }
-  const obj = map(14710);
+  const obj = map(15477);
   const assignedNotifSettingsAndMappings = obj.getAssignedNotifSettingsAndMappings();
   ({ settings, mappings } = assignedNotifSettingsAndMappings);
   const obj2 = computeInheritedImportances(mappings);
@@ -154,21 +154,6 @@ function buildChannelsAndMapping() {
 ({ NOTIF_CATEGORIES: c3, NOTIF_SETTING_MAPPING: closure_4, NOTIF_SETTINGS: hasOwnProperty } = NotificationSettingsConstants);
 const constants = { NONE: 0, [0]: "NONE", MIN: 1, [1]: "MIN", LOW: 2, [2]: "LOW", DEFAULT: 3, [3]: "DEFAULT", HIGH: 4, [4]: "HIGH" };
 let obj = {
-  clear() {
-    let registerAndroidNotifGroupsAndChannels;
-    let registerAndroidNotifTypeMappings;
-    let obj = react_nativeDefault;
-    if (obj == null) {
-      obj = {};
-    }
-    ({ registerAndroidNotifGroupsAndChannels, registerAndroidNotifTypeMappings } = obj);
-    if (null != registerAndroidNotifGroupsAndChannels) {
-      const result = registerAndroidNotifGroupsAndChannels([], []);
-    }
-    if (null != registerAndroidNotifTypeMappings) {
-      const result1 = registerAndroidNotifTypeMappings([]);
-    }
-  },
   registerDeclarativeNotificationCategories() {
     let arr;
     let channels;

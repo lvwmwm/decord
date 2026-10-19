@@ -1,17 +1,17 @@
-// Module ID: 16564
-// Function ID: 16565
+// Module ID: 17252
+// Function ID: 17253
 // Name: VoiceGuildTag
-// Dependencies: [19, 17, 1390, 7883, 21, 1382, 5092, 587, 558, 576, 504, 8285, 8854, 5088, 2]
+// Dependencies: [19, 17, 1392, 8155, 21, 1384, 5191, 587, 558, 576, 504, 8563, 9130, 5187, 2]
 
-// Module 16564 (VoiceGuildTag)
+// Module 17252 (VoiceGuildTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import GuildTagConstants from "GuildTagConstants" /* 7883 */;
+import GuildTagConstants from "GuildTagConstants" /* 8155 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1390 */;
+import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1382 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -84,8 +84,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
     const _Symbol = Symbol;
     let primaryGuild1;
     const forResult = Symbol.for("react.early_return_sentinel");
-    const getUserPrimaryGuild = userId(8285).getUserPrimaryGuild;
-    userId(8285);
+    const getUserPrimaryGuild = userId(8563).getUserPrimaryGuild;
+    userId(8563);
     if (stateFromStores != null) {
       primaryGuild1 = stateFromStores.primaryGuild;
     }
@@ -96,7 +96,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
     if (null != guildId) {
       tmp20 = null;
       if (null != tag) {
-        const tmpResult4 = userId(8285);
+        const tmpResult4 = userId(8563);
         guildTagBadgeUrl = tmpResult4.getGuildTagBadgeUrl(guildId, tmp19, GuildTagBadgeSize.SIZE_12);
         tmp20 = forResult;
       }
@@ -124,7 +124,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
     if (cResult[8] !== tmp12) {
       const obj2 = { source: obj3, size: GuildTagBadgeSize.SIZE_12 };
       obj3 = { uri: tmp12 };
-      const tmp27 = closure_5(userId(8854).GuildTagBadge, obj2);
+      const tmp27 = closure_5(userId(9130).GuildTagBadge, obj2);
       cResult[8] = tmp12;
       cResult[9] = tmp27;
       tmp24 = tmp27;
@@ -167,7 +167,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
       tmp31 = tmp34;
     }
     const obj6 = { variant: "text-xs/semibold", color: "text-default", style: tmp4.tag, children: tmp14 };
-    const tmp30 = closure_5(userId(5088).Text, obj6);
+    const tmp30 = closure_5(userId(5187).Text, obj6);
     cResult[10] = tmp4.tag;
     cResult[11] = tmp14;
     cResult[12] = tmp30;
@@ -186,8 +186,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
   const obj = userId(504);
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(userId), items1);
   let primaryGuild;
-  const getUserPrimaryGuild = userId(8285).getUserPrimaryGuild;
-  userId(8285);
+  const getUserPrimaryGuild = userId(8563).getUserPrimaryGuild;
+  userId(8563);
   if (stateFromStores != null) {
     primaryGuild = stateFromStores.primaryGuild;
   }
@@ -197,13 +197,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceGuild
     if (null != tag) {
       const obj2 = { style: tmp.gapContainer, children: closure_6(View, obj3) };
       obj3 = { style: tmp.tagContainer, children: items2 };
-      const tmp2Result = userId(8285);
+      const tmp2Result = userId(8563);
       const guildTagBadgeUrl = tmp2Result.getGuildTagBadgeUrl(guildId, tmp8, GuildTagBadgeSize.SIZE_12);
       const obj4 = { source: obj5, size: GuildTagBadgeSize.SIZE_12 };
       obj5 = { uri: guildTagBadgeUrl };
-      items2 = [closure_5(userId(8854).GuildTagBadge, obj4), ];
+      items2 = [closure_5(userId(9130).GuildTagBadge, obj4), ];
       const obj6 = { variant: "text-xs/semibold", color: "text-default", style: tmp.tag, children: tag };
-      items2[1] = closure_5(userId(5088).Text, obj6);
+      items2[1] = closure_5(userId(5187).Text, obj6);
       return closure_5(View, obj2);
     }
   }

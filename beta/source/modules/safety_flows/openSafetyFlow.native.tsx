@@ -1,13 +1,13 @@
-// Module ID: 18688
-// Function ID: 18689
+// Module ID: 19084
+// Function ID: 19085
 // Name: openSafetyFlow
-// Dependencies: [5, 2059, 1085, 18689, 5934, 18690, 18691, 18220, 18692, 2000, 2]
+// Dependencies: [5, 2062, 1087, 19085, 6190, 19086, 19087, 18613, 19088, 2002, 2]
 // Exports: openSafetyFlow
 
-// Module 18688 (openSafetyFlow)
-import Constants from "Constants" /* 1085 */;
+// Module 19084 (openSafetyFlow)
+import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2059 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2062 */;
 import size from "module_2" /* 2 */;
 
 let c6;
@@ -140,7 +140,7 @@ let obj = function _openSafetyFlow() {
       obj5 = {};
     }
     requiredAction = obj5.requiredAction;
-    return "Set";
+    return "Reflect";
   });
   return obj(...arguments);
 };

@@ -1,45 +1,43 @@
-// Module ID: 12510
-// Function ID: 12511
+// Module ID: 13451
+// Function ID: 13452
 // Name: HubEmailConnectionGuildSelect
-// Dependencies: [5, 32, 19, 17, 12487, 21, 5092, 587, 558, 576, 2079, 6159, 8575, 1126, 5088, 1631, 5379, 1200, 1503, 7089, 6740, 12501, 5635, 12496, 2]
+// Dependencies: [5, 32, 19, 17, 13428, 21, 5191, 587, 558, 576, 2082, 6436, 8855, 1128, 5187, 1633, 5479, 1202, 1505, 7365, 7017, 13442, 5891, 13437, 7091, 2]
 // Exports: default
 
-// Module 12510 (HubEmailConnectionGuildSelect)
+// Module 13451 (HubEmailConnectionGuildSelect)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import GuildIconDefault from "GuildIcon" /* 6159 */;
-import Form from "Form" /* 8575 */;
-import HubConstants from "HubConstants" /* 12487 */;
+import intl2 from "intl" /* 1128 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2082 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import GuildIconDefault from "GuildIcon" /* 6436 */;
+import Form from "Form" /* 8855 */;
+import HubConstants from "HubConstants" /* 13428 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2, navigation;
 
-let c10;
 let c9;
-let metroImportDefault;
-let metroRequire;
+let metroImportAll;
 let obj2;
 let obj3;
 let obj4;
 let obj5;
 let tmp6;
-const native = tmp6(1200);
+const native = tmp6(1202);
 let react = react_mod;
-({ View: metroRequire, FlatList: metroImportDefault } = react_native);
+const View = react_native.View;
 const HubEmailConnectionSteps = HubConstants.HubEmailConnectionSteps;
-({ jsx: c9, jsxs: c10 } = Fragment);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { rowContainer: obj2, guildIcon: obj3, separator: { height: 8 }, header: { padding: 16, alignItems: "center", justifyContent: "center" }, title: { marginBottom: 8, textAlign: "center" }, footerSafeAreaContainer: obj4, footerContainer: { paddingHorizontal: 16, height: 110, justifyContent: "center", alignItems: "center" }, error: obj5 };
 obj2 = { marginHorizontal: 16, borderRadius: nativeDefault.radii.sm, padding: 12, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
@@ -47,9 +45,9 @@ createStyles = createStyles.createStyles;
 obj3 = { borderRadius: nativeDefault.radii.sm };
 obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, position: "absolute", bottom: 0, width: "100%" };
 obj5 = { color: nativeDefault.unsafe_rawColors.RED_400, alignSelf: "center", fontSize: 14, marginVertical: 8 };
-let closure_11 = createStyles(obj);
+let closure_10 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConnectionGuildSelectRow(arg0) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConnectionGuildSelectRow(arg0) {
   let guildInfo;
   let loading;
   let signup;
@@ -57,7 +55,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
   const obj = react2;
   const cResult = obj.c(12);
   ({ guildInfo, signup, loading } = arg0);
-  const tmp4 = closure_11();
+  const tmp4 = closure_10();
   const rowContainer = tmp4.rowContainer;
   const name = guildInfo.name;
   const guildIcon = tmp4.guildIcon;
@@ -81,7 +79,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp16 = React4(Form.FormRow.Arrow, {});
+      const tmp16 = metroImportAll(Form.FormRow.Arrow, {});
       cResult[5] = tmp16;
       tmp14 = tmp16;
     } else {
@@ -101,7 +99,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
       }
     }
     const obj3 = { onPress: signup, disabled: loading, DEPRECATED_style: rowContainer, label: name, leading: tmp11, trailing: tmp14 };
-    const tmp19 = React4(Form.FormRow, obj3);
+    const tmp19 = metroImportAll(Form.FormRow, obj3);
     cResult[6] = guildInfo.name;
     cResult[7] = loading;
     cResult[8] = signup;
@@ -110,7 +108,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
     cResult[11] = tmp19;
     tmp17 = tmp19;
   }
-  const tmp12 = React4(GuildIconDefault, { style: guildIcon, guild: tmp5 });
+  const tmp12 = metroImportAll(GuildIconDefault, { style: guildIcon, guild: tmp5 });
   cResult[2] = tmp4.guildIcon;
   cResult[3] = tmp5;
   cResult[4] = tmp12;
@@ -124,8 +122,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
   let tmp2;
   guildInfo = guildInfo.guildInfo;
   ({ signup, loading } = guildInfo);
-  const tmp = closure_11();
-  const obj = { onPress: signup, disabled: loading, DEPRECATED_style: tmp.rowContainer, label: guildInfo.name, leading: React4(tmp2, obj2), trailing: React4(Form.FormRow.Arrow, {}) };
+  const tmp = closure_10();
+  const obj = { onPress: signup, disabled: loading, DEPRECATED_style: tmp.rowContainer, label: guildInfo.name, leading: metroImportAll(tmp2, obj2), trailing: metroImportAll(Form.FormRow.Arrow, {}) };
   const FormRow = Form.FormRow;
   obj2 = { style: tmp.guildIcon, guild: fromGuildBasic(obj3) };
   obj3 = { features: [] };
@@ -133,21 +131,21 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConn
   fromGuildBasic = GuildRecordUtils.fromGuildBasic;
   GuildRecordUtils;
   const merged = Object.assign(guildInfo);
-  return React4(FormRow, obj);
+  return metroImportAll(FormRow, obj);
 });
-let closure_12 = tmp5;
+let closure_11 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConnectionGuildSelectHeader() {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConnectionGuildSelectHeader() {
   let first;
   let header;
   let title;
   let tmp7;
   const obj = react2;
   const cResult = obj.c(6);
-  const tmp4 = closure_11();
+  const tmp4 = closure_10();
   ({ header, title } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t.mOMeiR);
     cResult[0] = stringResult;
     first = stringResult;
@@ -156,7 +154,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEma
   }
   if (cResult[1] !== tmp4.title) {
     const obj2 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: first };
-    const tmp9 = React4(Text_Text.Text, obj2);
+    const tmp9 = metroImportAll(Text_Text.Text, obj2);
     cResult[1] = tmp4.title;
     cResult[2] = tmp9;
     tmp7 = tmp9;
@@ -170,7 +168,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEma
     }
     return tmp10;
   }
-  const tmp11 = React4(metroRequire, { style: header, children: tmp7 });
+  const tmp11 = metroImportAll(View, { style: header, children: tmp7 });
   cResult[3] = tmp4.header;
   cResult[4] = tmp7;
   cResult[5] = tmp11;
@@ -179,15 +177,15 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEma
   let Text;
   let intl;
   let obj2;
-  const tmp = closure_11();
-  const obj = { style: tmp.header, children: React4(Text, obj2) };
+  const tmp = closure_10();
+  const obj = { style: tmp.header, children: metroImportAll(Text, obj2) };
   obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl2.t.mOMeiR) };
   Text = Text_Text.Text;
   intl = intl2.intl;
-  return React4(metroRequire, obj);
+  return metroImportAll(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConnectionGuildSelectFooter(arg0) {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailConnectionGuildSelectFooter(arg0) {
   let anyErrorMessage;
   let errors;
   let items;
@@ -197,7 +195,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEma
   const obj = react2;
   const cResult = obj.c(19);
   ({ errors, loading, onFooterButtonPressed } = arg0);
-  const tmp4 = closure_11();
+  const tmp4 = closure_10();
   const bottom = useSafeAreaInsetsDefault().bottom;
   if (cResult[0] !== bottom) {
     const obj2 = { paddingBottom: bottom };
@@ -216,7 +214,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEma
     const _Symbol = Symbol;
     const footerContainer = tmp4.footerContainer;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1126).intl;
+      const intl = tmp(1128).intl;
       const stringResult = intl.string(intl2.t.G3Zk7V);
       cResult[5] = stringResult;
       tmp8 = stringResult;
@@ -247,7 +245,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEma
               return tmp22;
             }
             const obj3 = { style: tmp6, children: tmp18 };
-            const tmp25 = React4(metroRequire, obj3);
+            const tmp25 = metroImportAll(View, obj3);
             cResult[16] = tmp6;
             cResult[17] = tmp18;
             cResult[18] = tmp25;
@@ -256,7 +254,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEma
         }
         const obj4 = { style: footerContainer, children: items };
         items = [tmp10, tmp13];
-        const tmp21 = authStore(metroRequire, obj4);
+        const tmp21 = React4(View, obj4);
         cResult[12] = tmp4.footerContainer;
         cResult[13] = tmp10;
         cResult[14] = tmp13;
@@ -267,8 +265,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEma
       if (tmp16Result) {
         const obj5 = { style: tmp4.error, children: anyErrorMessage };
         anyErrorMessage = undefined;
-        const LegacyText = tmp(1200).LegacyText;
-        const tmp16 = React4;
+        const LegacyText = tmp(1202).LegacyText;
+        const tmp16 = metroImportAll;
         if (errors != null) {
           anyErrorMessage = errors.getAnyErrorMessage();
         }
@@ -280,7 +278,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEma
       tmp13 = tmp16Result;
     }
     const obj6 = { variant: "secondary", loading, disabled: loading, grow: true, text: tmp8, onPress: onFooterButtonPressed };
-    const tmp12 = React4(components_Button_Button.Button, obj6);
+    const tmp12 = metroImportAll(components_Button_Button.Button, obj6);
     cResult[6] = loading;
     cResult[7] = onFooterButtonPressed;
     cResult[8] = tmp12;
@@ -302,17 +300,17 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEma
   let tmp5;
   ({ errors, loading } = onFooterButtonPressed);
   onFooterButtonPressed = onFooterButtonPressed.onFooterButtonPressed;
-  const tmp = closure_11();
-  const obj = { style: items, children: tmp5(metroRequire, obj3) };
+  const tmp = closure_10();
+  const obj = { style: items, children: tmp5(View, obj3) };
   items = [tmp.footerSafeAreaContainer, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
   obj3 = { style: tmp.footerContainer, children: items1 };
   const obj4 = { variant: "secondary", loading, disabled: loading, grow: true, text: intl.string(intl2.t.G3Zk7V), onPress: onFooterButtonPressed };
   ({ paddingBottom: useSafeAreaInsetsDefault().bottom });
   const Button = components_Button_Button.Button;
   intl = intl2.intl;
-  items1 = [React4(Button, obj4), ];
+  items1 = [metroImportAll(Button, obj4), ];
   let tmp3Result = null != errors;
-  tmp5 = authStore;
+  tmp5 = React4;
   if (tmp3Result) {
     const obj5 = { style: tmp.error, children: anyErrorMessage };
     anyErrorMessage = undefined;
@@ -323,7 +321,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEma
     tmp3Result = tmp3(LegacyText, obj5);
   }
   items1[1] = tmp3Result;
-  return React4(metroRequire, obj);
+  return metroImportAll(View, obj);
 });
 const result = size.fileFinishedImporting("modules/hub/native/components/HubEmailConnectionGuildSelect.tsx");
 
@@ -335,7 +333,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
   let email = onClose.email;
   const guildsInfo = onClose.guildsInfo;
   react = undefined;
-  let closure_3 = closure_11();
+  let closure_3 = closure_10();
   let obj = onClose(guildsInfo[18]);
   navigation = obj.useNavigation();
   const items = [email, guildsInfo, navigation, onClose];
@@ -353,7 +351,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
         };
         const HeaderActionButton = onClose(guildsInfo[19]).HeaderActionButton;
         intl = onClose(guildsInfo[13]).intl;
-        return closure_2_9(HeaderActionButton, obj);
+        return closure_2_8(HeaderActionButton, obj);
       }
     };
     navigation.setOptions(obj);
@@ -371,10 +369,14 @@ export default function HubEmailConnectionGuildSelect(onClose) {
   const first1 = tmp6[0];
   let closure_7 = tmp6[1];
   let obj2 = { children: items2 };
+  const HubEmailConnectionScreen = onClose(guildsInfo[23]).HubEmailConnectionScreen;
   let obj3 = {
     data: guildsInfo,
+    keyExtractor(id) {
+      return id.id;
+    },
     ListHeaderComponent() {
-      return closure_1_9(closure_1_13, {});
+      return closure_1_8(closure_1_12, {});
     },
     renderItem(item) {
       item = item.item;
@@ -411,7 +413,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
                   email = tmp;
                   onClose = tmp4;
                   c5(null);
-                  closure_1_7(true);
+                  constants(true);
                   c3 = 2;
                   c4 = 3;
                   c5 = 1;
@@ -421,7 +423,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
                 }
               } else if (1 === c4) {
                 c3 = 0;
-                closure_1_7(false);
+                constants(false);
                 throw closure_2;
               } else {
                 if (2 === c4) {
@@ -436,7 +438,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
                   throw value;
                 } else if (arg0 === 2) {
                   c3 = 0;
-                  closure_1_7(false);
+                  constants(false);
                   c5 = 3;
                   const obj6 = { value, done: true };
                   return obj6;
@@ -446,7 +448,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
                   c3 = 1;
                 }
                 c3 = 0;
-                closure_1_7(false);
+                constants(false);
                 c5 = 3;
                 return { value: "IconComponent", done: null };
               }
@@ -466,17 +468,16 @@ export default function HubEmailConnectionGuildSelect(onClose) {
         loading: first1
       };
       const id = item.id;
-      return closure_1_9(closure_1_12, obj);
+      return closure_1_8(closure_1_11, obj);
     },
     ItemSeparatorComponent() {
       const obj = { style: closure_3.separator };
-      return React4(metroRequire, obj);
+      return metroImportAll(View, obj);
     },
     contentContainerStyle: obj4
   };
   obj4 = { paddingBottom: 110 + bottom + 8 };
-  const HubEmailConnectionScreen = onClose(guildsInfo[23]).HubEmailConnectionScreen;
-  items2 = [closure_9(closure_7, obj3), closure_9(closure_14, { errors: first, loading: first1, onFooterButtonPressed: callback })];
-  return closure_10(HubEmailConnectionScreen, obj2);
+  items2 = [closure_8(onClose(guildsInfo[24]).FlashList, obj3), closure_8(closure_13, { errors: first, loading: first1, onFooterButtonPressed: callback })];
+  return closure_9(HubEmailConnectionScreen, obj2);
 };
-export const HubEmailConnectionGuildSelectRow = tmp5;
+export const HubEmailConnectionGuildSelectRow = tmp4;

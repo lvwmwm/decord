@@ -1,24 +1,28 @@
-// Module ID: 6157
-// Function ID: 6158
+// Module ID: 5128
+// Function ID: 5129
 // Name: FastImage
-// Dependencies: [109, 19, 17, 21, 558, 576, 1382, 6158, 2]
+// Dependencies: [109, 19, 17, 21, 5129, 558, 576, 1384, 5130, 2]
 
-// Module 6157 (FastImage)
+// Module 5128 (FastImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 6158 */;
+import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 5130 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
+import FastImageApngExperiment_mod from "FastImageApngExperiment" /* 5129 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import size from "module_2" /* 2 */;
+import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
+let tmp;
+const PlatformUtils = tmp(1384);
 let closure_3 = ["accessible", "accessibilityLabel", "autoPlay", "enableAnimation", "fadeDuration", "paused", "placeholder", "resizeMode", "source", "style", "tintColor", "usesSmallCache"];
 ({ Image: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 const jsx = Fragment.jsx;
+let FastImageApngExperiment = FastImageApngExperiment_mod;
+FastImageApngExperiment = FastImageApngExperiment.initializeFastImageApngExperiment();
 const memo = react.memo;
 const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FastImage(arg0) {
   let accessibilityLabel;
@@ -38,10 +42,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp13;
   let tmp14;
   let tmp15;
-  let tmp16;
-  let tmp23;
-  let tmp24;
+  let tmp22;
+  let tmp26;
   let tmp27;
+  let tmp30;
   let tmp4;
   let tmp5;
   let tmp6;
@@ -50,16 +54,16 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp9;
   let usesSmallCache;
   const obj = react2;
-  const cResult = obj.c(47);
+  const cResult = obj.c(56);
   if (cResult[0] !== arg0) {
     ({ accessible, accessibilityLabel, autoPlay, enableAnimation, fadeDuration, paused, placeholder, resizeMode, source, style, tintColor, usesSmallCache } = arg0);
-    const tmp19 = _objectWithoutProperties(arg0, closure_3);
+    const tmp18 = _objectWithoutProperties(arg0, closure_3);
     cResult[0] = arg0;
     cResult[1] = accessibilityLabel;
     cResult[2] = accessible;
     cResult[3] = paused;
     cResult[4] = placeholder;
-    cResult[5] = tmp19;
+    cResult[5] = tmp18;
     cResult[6] = resizeMode;
     cResult[7] = source;
     cResult[8] = style;
@@ -68,15 +72,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     cResult[11] = fadeDuration;
     cResult[12] = usesSmallCache;
     cResult[13] = tintColor;
-    tmp16 = tintColor;
-    tmp15 = usesSmallCache;
-    tmp14 = fadeDuration;
-    tmp13 = enableAnimation;
-    tmp12 = autoPlay;
-    tmp11 = style;
-    tmp10 = source;
-    tmp9 = resizeMode;
-    tmp8 = tmp19;
+    tmp15 = tintColor;
+    tmp14 = usesSmallCache;
+    tmp13 = fadeDuration;
+    tmp12 = enableAnimation;
+    tmp11 = autoPlay;
+    tmp10 = style;
+    tmp9 = source;
+    tmp8 = resizeMode;
+    size = tmp18;
     tmp7 = placeholder;
     tmp6 = paused;
     tmp5 = accessible;
@@ -86,104 +90,128 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     tmp5 = cResult[2];
     tmp6 = cResult[3];
     tmp7 = cResult[4];
-    tmp8 = cResult[5];
-    tmp9 = cResult[6];
-    tmp10 = cResult[7];
-    tmp11 = cResult[8];
-    tmp12 = cResult[9];
-    tmp13 = cResult[10];
-    tmp14 = cResult[11];
-    tmp15 = cResult[12];
-    tmp16 = cResult[13];
+    size = cResult[5];
+    tmp8 = cResult[6];
+    tmp9 = cResult[7];
+    tmp10 = cResult[8];
+    tmp11 = cResult[9];
+    tmp12 = cResult[10];
+    tmp13 = cResult[11];
+    tmp14 = cResult[12];
+    tmp15 = cResult[13];
   }
   let num15 = 200;
-  if (undefined !== tmp14) {
-    num15 = tmp14;
+  if (undefined !== tmp13) {
+    num15 = tmp13;
   }
-  if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { overflow: "hidden" };
-    cResult[14] = obj2;
-    tmp23 = obj2;
-  } else {
-    tmp23 = cResult[14];
-  }
-  if (cResult[15] !== tmp16) {
-    let tmp26;
-    if (null != tmp16) {
-      tmp26 = { tintColor: tmp16 };
-      const obj3 = { tintColor: tmp16 };
-    }
-    cResult[15] = tmp16;
-    cResult[16] = tmp26;
-    tmp24 = tmp26;
-  } else {
-    tmp24 = cResult[16];
-  }
-  if (cResult[17] !== tmp9) {
-    let tmp29;
+  if (cResult[14] !== tmp9) {
+    let tmp24;
     if (null != tmp9) {
-      tmp29 = { resizeMode: tmp9 };
-      const obj4 = { resizeMode: tmp9 };
+      if (typeof tmp9 !== "number") {
+        const _Array = Array;
+        let tmp25 = tmp9;
+        if (!Array.isArray(tmp9)) {
+          const items = [tmp9];
+          tmp25 = items;
+        }
+        tmp24 = tmp25;
+      }
     }
-    cResult[17] = tmp9;
+    cResult[14] = tmp9;
+    cResult[15] = tmp24;
+    tmp22 = tmp24;
+  } else {
+    tmp22 = cResult[15];
+  }
+  if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { overflow: "hidden" };
+    cResult[16] = obj2;
+    tmp26 = obj2;
+  } else {
+    tmp26 = cResult[16];
+  }
+  if (cResult[17] !== tmp15) {
+    let tmp29;
+    if (null != tmp15) {
+      tmp29 = { tintColor: tmp15 };
+      const obj3 = { tintColor: tmp15 };
+    }
+    cResult[17] = tmp15;
     cResult[18] = tmp29;
     tmp27 = tmp29;
   } else {
     tmp27 = cResult[18];
   }
-  if (cResult[19] === tmp11) {
-    if (cResult[20] === tmp24) {
-      let tmp30;
-      if (cResult[21] === tmp27) {
-        tmp30 = cResult[22];
+  if (cResult[19] !== tmp8) {
+    let tmp32;
+    if (null != tmp8) {
+      tmp32 = { resizeMode: tmp8 };
+      const obj4 = { resizeMode: tmp8 };
+    }
+    cResult[19] = tmp8;
+    cResult[20] = tmp32;
+    tmp30 = tmp32;
+  } else {
+    tmp30 = cResult[20];
+  }
+  if (cResult[21] === tmp10) {
+    if (cResult[22] === tmp27) {
+      let tmp33;
+      if (cResult[23] === tmp30) {
+        tmp33 = cResult[24];
       }
       if (tmp5 == null) {
         tmp5 = null != tmp4 || undefined;
       }
-      const tmp33 = null != tmp10 && typeof tmp10 === "object" && "__packager_asset" in tmp10 && true === tmp10.__packager_asset;
-      const _Array = Array;
-      const isArray = Array.isArray(tmp10);
-      metroRequire.flatten(tmp11);
-      const tmpResult = PlatformUtils;
-      if (!tmpResult.isAndroid()) {
-        if (typeof tmp10 !== "number") {
-          if (!tmp33) {
-            let tmp38;
-            const _Array2 = Array;
-            let first = tmp10;
-            if (Array.isArray(tmp10)) {
-              first = tmp10[0];
+      const tmp36 = null != tmp9 && typeof tmp9 === "object" && "__packager_asset" in tmp9 && true === tmp9.__packager_asset;
+      metroRequire.flatten(tmp10);
+      if (typeof tmp9 !== "number") {
+        if (!tmp36) {
+          const tmp39 = null != size.onLoadStart || null != size.onLoad || null != size.onLoadEnd || null != size.onError || null != size.onProgress;
+          if (cResult[35] === size.height) {
+            let tmp40;
+            if (cResult[36] === size.width) {
+              tmp40 = cResult[37];
             }
-            if (cResult[33] !== tmp7) {
-              let assetSource = null;
-              if (null != tmp7) {
-                assetSource = hasOwnProperty.resolveAssetSource(tmp7);
+            if (cResult[38] === tmp33) {
+              let tmp41;
+              let tmp42;
+              if (cResult[39] === tmp40) {
+                tmp41 = cResult[40];
               }
-              let uri;
-              if (assetSource != null) {
-                uri = assetSource.uri;
+              if (cResult[41] !== tmp7) {
+                let assetSource = null;
+                if (null != tmp7) {
+                  assetSource = hasOwnProperty.resolveAssetSource(tmp7);
+                }
+                let uri;
+                if (assetSource != null) {
+                  uri = assetSource.uri;
+                }
+                cResult[41] = tmp7;
+                cResult[42] = uri;
+                tmp42 = uri;
+              } else {
+                tmp42 = cResult[42];
               }
-              cResult[33] = tmp7;
-              cResult[34] = uri;
-              tmp38 = uri;
-            } else {
-              tmp38 = cResult[34];
-            }
-            if (cResult[35] === tmp4) {
-              if (cResult[36] === tmp5) {
-                if (cResult[37] === (undefined === tmp12 || tmp12)) {
-                  if (cResult[38] === (undefined === tmp13 || tmp13)) {
-                    if (cResult[39] === num15) {
-                      if (cResult[40] === tmp6) {
-                        if (cResult[41] === tmp8) {
-                          if (cResult[42] === tmp30) {
-                            if (cResult[43] === tmp38) {
-                              if (cResult[44] === first) {
-                                let tmp42;
-                                if (cResult[45] === (undefined !== tmp15 && tmp15)) {
-                                  tmp42 = cResult[46];
+              if (cResult[43] === tmp4) {
+                if (cResult[44] === tmp5) {
+                  if (cResult[45] === (undefined === tmp11 || tmp11)) {
+                    if (cResult[46] === (undefined === tmp12 || tmp12)) {
+                      if (cResult[47] === num15) {
+                        if (cResult[48] === tmp6) {
+                          if (cResult[49] === size) {
+                            if (cResult[50] === tmp22) {
+                              if (cResult[51] === tmp39) {
+                                if (cResult[52] === tmp41) {
+                                  if (cResult[53] === tmp42) {
+                                    let tmp46;
+                                    if (cResult[54] === (undefined !== tmp14 && tmp14)) {
+                                      tmp46 = cResult[55];
+                                    }
+                                    return tmp46;
+                                  }
                                 }
-                                return tmp42;
                               }
                             }
                           }
@@ -193,51 +221,63 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                   }
                 }
               }
+              FastImageNativeComponentDefault;
+              const merged = Object.assign(size);
+              const tmp53 = <tmp49 accessible={tmp5} accessibilityLabel={tmp4} shouldNotifyLoadEvents={tmp39} source={tmp22} style={tmp41} placeholder={tmp42} autoPlay={undefined === tmp11 || tmp11} enableAnimation={undefined === tmp12 || tmp12} paused={tmp6} fadeDuration={num15} usesSmallCache={undefined !== tmp14 && tmp14} />;
+              cResult[43] = tmp4;
+              cResult[44] = tmp5;
+              cResult[45] = undefined === tmp11 || tmp11;
+              cResult[46] = undefined === tmp12 || tmp12;
+              cResult[47] = num15;
+              cResult[48] = tmp6;
+              cResult[49] = size;
+              cResult[50] = tmp22;
+              cResult[51] = tmp39;
+              cResult[52] = tmp41;
+              cResult[53] = tmp42;
+              cResult[54] = undefined !== tmp14 && tmp14;
+              cResult[55] = tmp53;
+              tmp46 = tmp53;
             }
-            FastImageNativeComponentDefault;
-            const merged = Object.assign(tmp8);
-            const tmp49 = <tmp45 accessible={tmp5} accessibilityLabel={tmp4} source={first} style={tmp30} placeholder={tmp38} autoPlay={undefined === tmp12 || tmp12} enableAnimation={undefined === tmp13 || tmp13} paused={tmp6} fadeDuration={num15} usesSmallCache={undefined !== tmp15 && tmp15} />;
-            cResult[35] = tmp4;
-            cResult[36] = tmp5;
-            cResult[37] = undefined === tmp12 || tmp12;
-            cResult[38] = undefined === tmp13 || tmp13;
-            cResult[39] = num15;
-            cResult[40] = tmp6;
-            cResult[41] = tmp8;
-            cResult[42] = tmp30;
-            cResult[43] = tmp38;
-            cResult[44] = first;
-            cResult[45] = undefined !== tmp15 && tmp15;
-            cResult[46] = tmp49;
-            tmp42 = tmp49;
+            const items1 = [tmp40, tmp33];
+            cResult[38] = tmp33;
+            cResult[39] = tmp40;
+            cResult[40] = items1;
+            tmp41 = items1;
           }
+          const size1 = { width: null, height: null };
+          ({ width: obj5.width, height: obj5.height } = size);
+          cResult[35] = size.height;
+          cResult[36] = size.width;
+          cResult[37] = size1;
+          tmp40 = size1;
         }
       }
-      let tmp50;
-      const tmpResult2 = PlatformUtils;
-      if (tmpResult2.isAndroid()) {
-        tmp50 = tmp7;
+      let tmp54;
+      const tmpResult = PlatformUtils;
+      if (tmpResult.isAndroid()) {
+        tmp54 = tmp7;
       }
-      let num35 = 0;
-      if (typeof tmp10 !== "number") {
-        num35 = 0;
-        if (!tmp33) {
-          num35 = num15;
+      let num44 = 0;
+      if (typeof tmp9 !== "number") {
+        num44 = 0;
+        if (!tmp36) {
+          num44 = num15;
         }
       }
-      if (cResult[23] === tmp4) {
-        if (cResult[24] === tmp5) {
-          if (cResult[25] === tmp8) {
-            if (cResult[26] === tmp9) {
-              if (cResult[27] === tmp10) {
-                if (cResult[28] === tmp30) {
-                  if (cResult[29] === num35) {
-                    if (cResult[30] === tmp50) {
-                      let tmp51;
-                      if (cResult[31] === tmp16) {
-                        tmp51 = cResult[32];
+      if (cResult[25] === tmp4) {
+        if (cResult[26] === tmp5) {
+          if (cResult[27] === size) {
+            if (cResult[28] === tmp8) {
+              if (cResult[29] === tmp9) {
+                if (cResult[30] === tmp33) {
+                  if (cResult[31] === tmp54) {
+                    if (cResult[32] === num44) {
+                      let tmp55;
+                      if (cResult[33] === tmp15) {
+                        tmp55 = cResult[34];
                       }
-                      return tmp51;
+                      return tmp55;
                     }
                   }
                 }
@@ -246,32 +286,32 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           }
         }
       }
-      const merged1 = Object.assign(tmp8);
-      const tmp57 = <hasOwnProperty resizeMode={tmp9} source={tmp10} style={tmp30} tintColor={tmp16} accessible={tmp5} accessibilityLabel={tmp4} defaultSource={tmp50} fadeDuration={num35} />;
-      cResult[23] = tmp4;
-      cResult[24] = tmp5;
-      cResult[25] = tmp8;
-      cResult[26] = tmp9;
-      cResult[27] = tmp10;
-      cResult[28] = tmp30;
-      cResult[29] = num35;
-      cResult[30] = tmp50;
-      cResult[31] = tmp16;
-      cResult[32] = tmp57;
-      tmp51 = tmp57;
+      const merged1 = Object.assign(size);
+      const tmp61 = <hasOwnProperty resizeMode={tmp8} source={tmp9} style={tmp33} tintColor={tmp15} accessible={tmp5} accessibilityLabel={tmp4} defaultSource={tmp54} fadeDuration={num44} />;
+      cResult[25] = tmp4;
+      cResult[26] = tmp5;
+      cResult[27] = size;
+      cResult[28] = tmp8;
+      cResult[29] = tmp9;
+      cResult[30] = tmp33;
+      cResult[31] = tmp54;
+      cResult[32] = num44;
+      cResult[33] = tmp15;
+      cResult[34] = tmp61;
+      tmp55 = tmp61;
     }
   }
-  const items = [tmp23, tmp11, tmp24, tmp27];
-  cResult[19] = tmp11;
-  cResult[20] = tmp24;
-  cResult[21] = tmp27;
-  cResult[22] = items;
-  tmp30 = items;
+  const items2 = [tmp26, tmp10, tmp27, tmp30];
+  cResult[21] = tmp10;
+  cResult[22] = tmp27;
+  cResult[23] = tmp30;
+  cResult[24] = items2;
+  tmp33 = items2;
 }) : (function FastImage(enableAnimation) {
   let accessibilityLabel;
   let accessible;
   let autoPlay;
-  let first;
+  let items2;
   let num2;
   let paused;
   let placeholder;
@@ -279,7 +319,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let source;
   let style;
   let tintColor;
-  let tmp24;
+  let tmp2;
+  let tmp23;
   let uri;
   let usesSmallCache;
   ({ accessible, accessibilityLabel, autoPlay } = enableAnimation);
@@ -299,70 +340,76 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     usesSmallCache = false;
   }
   const merged = Object.assign(enableAnimation, Object.assign({ accessible: 0, accessibilityLabel: 0, autoPlay: 0, enableAnimation: 0, fadeDuration: 0, paused: 0, placeholder: 0, resizeMode: 0, source: 0, style: 0, tintColor: 0, usesSmallCache: 0 }));
-  const items = [{ overflow: "hidden" }, style, , ];
-  let tmp2;
+  if (null != source) {
+    if (typeof source !== "number") {
+      const _Array = Array;
+      let tmp3 = source;
+      if (!Array.isArray(source)) {
+        const items = [source];
+        tmp3 = items;
+      }
+      tmp2 = tmp3;
+    }
+  }
+  const items1 = [{ overflow: "hidden" }, style, , ];
+  let tmp4;
   if (null != tintColor) {
-    tmp2 = { tintColor };
+    tmp4 = { tintColor };
     const obj = { tintColor };
   }
-  items[2] = tmp2;
-  let tmp3;
+  items1[2] = tmp4;
+  let tmp5;
   if (null != resizeMode) {
-    tmp3 = { resizeMode };
+    tmp5 = { resizeMode };
     const obj2 = { resizeMode };
   }
-  items[3] = tmp3;
+  items1[3] = tmp5;
   if (accessible == null) {
     accessible = null != accessibilityLabel || undefined;
   }
-  const tmp5 = null != source && typeof source === "object" && "__packager_asset" in source && true === source.__packager_asset;
-  const isArray = Array.isArray(source);
+  const tmp7 = null != source && typeof source === "object" && "__packager_asset" in source && true === source.__packager_asset;
   metroRequire.flatten(style);
-  const obj3 = PlatformUtils;
-  if (!obj3.isAndroid()) {
-    if (typeof source !== "number") {
-      let tmp21Result;
-      if (!tmp5) {
-        const obj4 = { accessible, accessibilityLabel, source: first, style: items, placeholder: uri, autoPlay, enableAnimation: flag, paused, fadeDuration: num, usesSmallCache };
-        const tmp12 = FastImageNativeComponentDefault;
-        const merged1 = Object.assign(merged);
-        const _Array = Array;
-        first = source;
-        const tmp10 = jsx;
-        if (Array.isArray(source)) {
-          first = source[0];
-        }
-        let assetSource = null;
-        if (null != placeholder) {
-          assetSource = hasOwnProperty.resolveAssetSource(placeholder);
-        }
-        uri = undefined;
-        if (assetSource != null) {
-          uri = assetSource.uri;
-        }
-        tmp21Result = tmp10(tmp12, obj4);
+  if (typeof source !== "number") {
+    let tmp20Result;
+    if (!tmp7) {
+      const obj3 = { accessible, accessibilityLabel, shouldNotifyLoadEvents: null != merged.onLoadStart || null != merged.onLoad || null != merged.onLoadEnd || null != merged.onError || null != merged.onProgress, source: tmp2, style: items2, placeholder: uri, autoPlay, enableAnimation: flag, paused, fadeDuration: num, usesSmallCache };
+      const tmp12 = FastImageNativeComponentDefault;
+      const merged1 = Object.assign(merged);
+      size = { width: null, height: null };
+      ({ width: obj4.width, height: obj4.height } = merged);
+      items2 = [size, items1];
+      let assetSource = null;
+      const tmp9 = jsx;
+      if (null != placeholder) {
+        assetSource = hasOwnProperty.resolveAssetSource(placeholder);
       }
-      return tmp21Result;
+      uri = undefined;
+      if (assetSource != null) {
+        uri = assetSource.uri;
+      }
+      tmp20Result = tmp9(tmp12, obj3);
     }
+    return tmp20Result;
   }
-  const obj5 = { resizeMode, source, style: items, tintColor, accessible, accessibilityLabel, defaultSource: tmp24, fadeDuration: num2 };
+  const obj5 = { resizeMode, source, style: items1, tintColor, accessible, accessibilityLabel, defaultSource: tmp23, fadeDuration: num2 };
   const merged2 = Object.assign(merged);
-  tmp24 = undefined;
-  const tmp21 = jsx;
-  const tmp22 = hasOwnProperty;
-  const tmp8Result = PlatformUtils;
-  if (tmp8Result.isAndroid()) {
-    tmp24 = placeholder;
+  tmp23 = undefined;
+  const obj6 = PlatformUtils;
+  const tmp20 = jsx;
+  const tmp21 = hasOwnProperty;
+  if (obj6.isAndroid()) {
+    tmp23 = placeholder;
   }
   num2 = 0;
   if (typeof source !== "number") {
     num2 = 0;
-    if (!tmp5) {
+    if (!tmp7) {
       num2 = num;
     }
   }
-  tmp21Result = tmp21(tmp22, obj5);
+  tmp20Result = tmp20(tmp21, obj5);
 }));
-const result = size.fileFinishedImporting("components_native/common/FastImage.tsx");
+let size = size_mod;
+const result1 = size.fileFinishedImporting("components_native/common/FastImage.tsx");
 
 export default memoResult;

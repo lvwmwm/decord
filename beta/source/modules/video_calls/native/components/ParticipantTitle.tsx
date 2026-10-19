@@ -1,21 +1,21 @@
-// Module ID: 11182
-// Function ID: 11183
+// Module ID: 11568
+// Function ID: 11569
 // Name: ParticipantTitle
-// Dependencies: [19, 21, 5092, 587, 558, 576, 11163, 1200, 2]
+// Dependencies: [19, 21, 5191, 587, 558, 576, 11549, 1202, 2]
 
-// Module 11182 (ParticipantTitle)
+// Module 11568 (ParticipantTitle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import getParticipantTitleDefault from "getParticipantTitle" /* 11163 */;
+import getParticipantTitleDefault from "getParticipantTitle" /* 11549 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const native = tmp(1200);
+const native = tmp(1202);
 const jsx = Fragment.jsx;
 let obj = { usernameText: obj2 };
 obj2 = { fontSize: 14, color: nativeDefault.colors.WHITE };

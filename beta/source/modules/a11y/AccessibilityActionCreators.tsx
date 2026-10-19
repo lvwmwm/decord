@@ -1,17 +1,17 @@
-// Module ID: 14698
-// Function ID: 14699
+// Module ID: 15466
+// Function ID: 15467
 // Name: AccessibilityActionCreators
-// Dependencies: [5081, 1085, 2044, 1095, 584, 1265, 5260, 2]
+// Dependencies: [5181, 1087, 2047, 1097, 584, 1267, 5360, 2]
 // Exports: disableKeyboardMode, enableKeyboardMode, forcedColorsModalSeen, keyboardNavigationExplainerModalSeen, resetToDefault, setAlwaysShowLinkDecorations, setChatBarSettings, setContrast, setContrastMode, setDisplayNameStylesEnabled, setEnableCustomCursor, setFontSize, setHDRDynamicRange, setLowContrastMode, setMessageGroupSpacing, setMinToastDuration, setOfficialMessageStyle, setPrefersReducedMotion, setRoleStyle, setSaturation, setSwitchIconsEnabled, setSyncForcedColors, setYouBarAnimations, setZoom, systemColorPreferencesChanged, systemPrefersContrastChanged, systemPrefersCrossfadesChanged, systemPrefersReducedMotionChanged, toggleColorblindMode, toggleDesaturateUserColors, toggleSubmitButton, toggleSyncProfileThemeWithUserTheme
 
-// Module 14698 (AccessibilityActionCreators)
+// Module 15466 (AccessibilityActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import StickersConstants from "StickersConstants" /* 2044 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5260 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import Constants from "Constants" /* 1087 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import StickersConstants from "StickersConstants" /* 2047 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5360 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

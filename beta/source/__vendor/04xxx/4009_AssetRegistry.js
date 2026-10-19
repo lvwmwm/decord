@@ -1,10 +1,10 @@
 // Module ID: 4009
 // Function ID: 4010
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 4009 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Jpb3RfY3JlZGl0X2NhbXBhaWdu", scales: [1], hash: "eb9cb5f209f1d705053a42ea3f4cb2e4", name: "vi.messages.eb9cb5f209f1d705053a42ea3f4cb2e4.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "58c80aca724a0b0d7c39f6832808ade3", name: "vi.messages.58c80aca724a0b0d7c39f6832808ade3.compiled.messages", type: "jsona" });

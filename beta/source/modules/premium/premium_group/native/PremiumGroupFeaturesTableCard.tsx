@@ -1,22 +1,22 @@
-// Module ID: 13780
-// Function ID: 13781
+// Module ID: 14560
+// Function ID: 14561
 // Name: PremiumGroupFeaturesTableCard
-// Dependencies: [17, 7152, 21, 5092, 587, 558, 576, 1126, 5088, 13781, 4967, 9411, 5391, 1200, 2]
+// Dependencies: [17, 7423, 21, 5191, 587, 558, 576, 1128, 5187, 14561, 5063, 9715, 5491, 1202, 2]
 
-// Module 13780 (PremiumGroupFeaturesTableCard)
+// Module 14560 (PremiumGroupFeaturesTableCard)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1200 */;
-import ColorUtils from "ColorUtils" /* 4967 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import ColorConstants from "ColorConstants" /* 7152 */;
-import PremiumGroupWordmarkDefault from "PremiumGroupWordmark" /* 9411 */;
-import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 13781 */;
+import intl2 from "intl" /* 1128 */;
+import native from "native" /* 1202 */;
+import ColorUtils from "ColorUtils" /* 5063 */;
+import Text_Text from "Text/Text" /* 5187 */;
+import LinearGradientDefault from "LinearGradient" /* 5491 */;
+import ColorConstants from "ColorConstants" /* 7423 */;
+import PremiumGroupWordmarkDefault from "PremiumGroupWordmark" /* 9715 */;
+import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 14561 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BetaPill() {
   const tmp4 = closure_7();
   ({ betaPill, betaText } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t.oW0eUd);
     cResult[0] = stringResult;
     first = stringResult;
@@ -183,7 +183,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGro
                 return tmp30;
               }
               const obj3 = { borderWidth: 2, direction: native.GradientBorder.Direction.HORIZONTAL, colors: Gradients.PREMIUM_TIER_2, borderRadius: nativeDefault.radii.sm, style, children: tmp27 };
-              const GradientBorder = tmp(1200).GradientBorder;
+              const GradientBorder = tmp(1202).GradientBorder;
               const tmp33 = hasOwnProperty(GradientBorder, obj3);
               cResult[19] = style;
               cResult[20] = tmp27;

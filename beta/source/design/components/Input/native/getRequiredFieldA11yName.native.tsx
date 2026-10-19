@@ -1,11 +1,11 @@
-// Module ID: 6288
-// Function ID: 6289
+// Module ID: 6565
+// Function ID: 6566
 // Name: getRequiredFieldA11yName
-// Dependencies: [1126, 2]
+// Dependencies: [1128, 2]
 // Exports: getRequiredFieldA11yName
 
-// Module 6288 (getRequiredFieldA11yName)
-import intl2 from "intl" /* 1126 */;
+// Module 6565 (getRequiredFieldA11yName)
+import intl2 from "intl" /* 1128 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/Input/native/getRequiredFieldA11yName.native.tsx");

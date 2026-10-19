@@ -1,17 +1,17 @@
-// Module ID: 10090
-// Function ID: 10091
+// Module ID: 10393
+// Function ID: 10394
 // Name: GiftingPromotionUtils
-// Dependencies: [32, 19, 9117, 1392, 558, 576, 504, 10091, 10095, 10096, 4938, 2049, 2]
+// Dependencies: [32, 19, 9421, 1394, 558, 576, 504, 10394, 10398, 10399, 5033, 2052, 2]
 // Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useIsPlanEligibleForGiftingPromotion
 
-// Module 10090 (GiftingPromotionUtils)
-import PremiumConstants from "PremiumConstants" /* 1392 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
-import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10095 */;
-import MarketingComponentType from "MarketingComponentType" /* 10096 */;
+// Module 10393 (GiftingPromotionUtils)
+import PremiumConstants from "PremiumConstants" /* 1394 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
+import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10398 */;
+import MarketingComponentType from "MarketingComponentType" /* 10399 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 9117 */;
+import PromotionsStore from "PromotionsStore" /* 9421 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -318,10 +318,10 @@ export const shouldShowGiftPromotionReminderNotice = function shouldShowGiftProm
       let tmp5 = null != id;
       if (tmp5) {
         const tmpResult = DismissibleContentUnsafeUtils;
-        let isDismissed = tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2049).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
+        let isDismissed = tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2052).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
         if (isDismissed) {
           const tmpResult2 = DismissibleContentUnsafeUtils;
-          isDismissed = !tmpResult2.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2049).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
+          isDismissed = !tmpResult2.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(2052).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
         }
         tmp5 = isDismissed;
       }

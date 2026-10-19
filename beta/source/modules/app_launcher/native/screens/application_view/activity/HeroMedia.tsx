@@ -1,26 +1,26 @@
-// Module ID: 11773
-// Function ID: 11774
+// Module ID: 11912
+// Function ID: 11913
 // Name: HeroMedia
-// Dependencies: [19, 5081, 1502, 21, 5092, 558, 576, 10625, 10964, 504, 6858, 11738, 1126, 8421, 2]
+// Dependencies: [19, 5181, 1504, 21, 5191, 558, 576, 10950, 11354, 504, 7134, 11873, 1128, 8699, 2]
 
-// Module 11773 (HeroMedia)
+// Module 11912 (HeroMedia)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6858 */;
-import common_VideoDefault from "common/Video" /* 8421 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10964 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7134 */;
+import common_VideoDefault from "common/Video" /* 8699 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11354 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import createStyles from "createStyles" /* 5092 */;
+import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
 let tmp2;
-const useDefaultAppLauncherWidth = tmp(10625);
-const getPreviewVideoAssetUrlDefault = tmp2(11738);
+const useDefaultAppLauncherWidth = tmp(10950);
+const getPreviewVideoAssetUrlDefault = tmp2(11873);
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ mediaBackground: { backgroundColor: "black" } });
@@ -168,10 +168,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeroMedia(ar
                 name = getOrFetchApplication.name;
               }
               if (tmp24 !== name) {
-                const intl = tmp(1126).intl;
+                const intl = tmp(1128).intl;
                 const formatToPlainString = intl.formatToPlainString;
                 let str3;
-                const prop1 = tmp(1126).t["Af+EQD"];
+                const prop1 = tmp(1128).t["Af+EQD"];
                 if (getOrFetchApplication != null) {
                   str3 = getOrFetchApplication.name;
                 }
@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeroMedia(ar
       }
       let tmp22 = null;
       if (null != prop2) {
-        tmp22 = tmp10(11738)(applicationId, prop.activity_preview_video_asset_id);
+        tmp22 = tmp10(11873)(applicationId, prop.activity_preview_video_asset_id);
       }
       cResult[10] = applicationId;
       cResult[11] = prop;
@@ -349,10 +349,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeroMedia(ar
         size1.src = obj9;
         ({ height: obj10.height, width: obj10.width } = size);
         size1.poster = tmp4.url;
-        const intl = tmp5(1126).intl;
+        const intl = tmp5(1128).intl;
         const formatToPlainString = intl.formatToPlainString;
         let str3;
-        const prop2 = tmp5(1126).t["Af+EQD"];
+        const prop2 = tmp5(1128).t["Af+EQD"];
         if (getOrFetchApplication != null) {
           str3 = getOrFetchApplication.name;
         }

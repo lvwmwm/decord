@@ -1,11 +1,11 @@
-// Module ID: 17739
-// Function ID: 17740
+// Module ID: 18123
+// Function ID: 18124
 // Name: react-native
-// Dependencies: [14700, 2]
+// Dependencies: [15468, 2]
 // Exports: updateTheme
 
-// Module 17739 (react-native)
-import react_nativeDefault from "react-native" /* 14700 */;
+// Module 18123 (react-native)
+import react_nativeDefault from "react-native" /* 15468 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/themes/native/updateTheme.tsx");

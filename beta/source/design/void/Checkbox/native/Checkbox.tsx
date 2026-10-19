@@ -1,19 +1,18 @@
-// Module ID: 14401
-// Function ID: 14402
+// Module ID: 15167
+// Function ID: 15168
 // Name: Checkbox/Checkbox
-// Dependencies: [19, 17, 21, 558, 576, 14402, 14403, 2]
+// Dependencies: [19, 21, 558, 576, 5128, 15168, 15169, 2]
 
-// Module 14401 (Checkbox/Checkbox)
-import react_native from "react-native" /* 17 */;
+// Module 15167 (Checkbox/Checkbox)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14402 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14403 */;
+import FastImageDefault from "FastImage" /* 5128 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15168 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15169 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const Image = react_native.Image;
 const jsx = Fragment.jsx;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkbox(style) {
   let tmp3;
@@ -23,7 +22,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkbox(sty
   if (style.selected) {
     let tmp8;
     if (cResult[0] !== style) {
-      const tmp12 = <Image style={style} source={AssetRegistryDefault} />;
+      FastImageDefault;
+      const tmp12 = <tmp11 style={style} source={AssetRegistryDefault} />;
       cResult[0] = style;
       cResult[1] = tmp12;
       tmp8 = tmp12;
@@ -32,7 +32,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkbox(sty
     }
     tmp3 = tmp8;
   } else if (cResult[2] !== style) {
-    const tmp7 = <Image style={style} source={AssetRegistryDefault2} />;
+    FastImageDefault;
+    const tmp7 = <tmp6 style={style} source={AssetRegistryDefault2} />;
     cResult[2] = style;
     cResult[3] = tmp7;
     tmp3 = tmp7;
@@ -40,19 +41,22 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkbox(sty
     tmp3 = cResult[3];
   }
   return tmp3;
-}) : (function Checkbox(style) {
+}) : (function Checkbox(arg0) {
+  let selected;
+  let style;
   let tmp5;
-  const obj = { style: style.style, source: null };
+  ({ style, selected } = arg0);
+  const obj = { style, source: null };
   const tmp = jsx;
-  const tmp2 = Image;
-  if (style.selected) {
+  const tmp4 = FastImageDefault;
+  if (selected) {
     obj.source = AssetRegistryDefault;
     tmp5 = obj;
   } else {
     obj.source = AssetRegistryDefault2;
     tmp5 = obj;
   }
-  return tmp(tmp2, tmp5);
+  return tmp(tmp4, tmp5);
 });
 const result = size.fileFinishedImporting("design/void/Checkbox/native/Checkbox.tsx");
 

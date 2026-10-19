@@ -1,16 +1,16 @@
-// Module ID: 14856
-// Function ID: 14857
+// Module ID: 15619
+// Function ID: 15620
 // Name: HuePicker
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 14853, 4850, 6335, 5391, 2]
+// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 15616, 4945, 6612, 5491, 2]
 
-// Module 14856 (HuePicker)
+// Module 15619 (HuePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 14853 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 15616 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let metroRequire;
 let obj2;
 let size;
 let tmp;
-const ReanimatedRexport = tmp(4850);
+const ReanimatedRexport = tmp(4945);
 let View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = [0, 60, 120, 180, 240, 300, 360];
@@ -62,13 +62,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHue
             obj.runOnJS(tmp)();
           }
         };
-        fn3.__closure = { onPanFinalize, runOnJS: tmp(4850).runOnJS };
+        fn3.__closure = { onPanFinalize, runOnJS: tmp(4945).runOnJS };
         fn3.__workletHash = 2479115151384;
         fn3.__initData = __initData3;
         cResult[5] = onPanFinalize;
         cResult[6] = fn3;
         tmp6 = fn3;
-        const obj2 = { onPanFinalize, runOnJS: tmp(4850).runOnJS };
+        const obj2 = { onPanFinalize, runOnJS: tmp(4945).runOnJS };
       } else {
         tmp6 = cResult[6];
       }
@@ -79,7 +79,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHue
           if (cResult[9] === tmp6) {
             tmp8 = cResult[10];
           }
-          let tmpResult = tmp(6335);
+          let tmpResult = tmp(6612);
           const panGesture = tmpResult.usePanGesture(tmp8);
           if (cResult[11] !== panGesture) {
             const obj3 = { gesture: panGesture };
@@ -109,7 +109,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHue
       tmpResult.runOnJS(tmp4)();
     }
   };
-  fn.__closure = { hue, normalizeValue: tmp(14853).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4850).runOnJS };
+  fn.__closure = { hue, normalizeValue: tmp(15616).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4945).runOnJS };
   fn.__workletHash = 353921971989;
   fn.__initData = __initData;
   const fn2 = function s(arg0) {
@@ -121,8 +121,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHue
       tmpResult.runOnJS(tmp4)();
     }
   };
-  ({ hue, normalizeValue: tmp(14853).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4850).runOnJS });
-  fn2.__closure = { hue, normalizeValue: tmp(14853).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4850).runOnJS };
+  ({ hue, normalizeValue: tmp(15616).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4945).runOnJS });
+  fn2.__closure = { hue, normalizeValue: tmp(15616).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4945).runOnJS };
   fn2.__workletHash = 10859524318070;
   fn2.__initData = __initData2;
   cResult[0] = barWidth;
@@ -132,7 +132,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHue
   cResult[4] = fn2;
   tmp5 = fn2;
   tmp4 = fn;
-  ({ hue, normalizeValue: tmp(14853).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4850).runOnJS });
+  ({ hue, normalizeValue: tmp(15616).normalizeValue, barWidth, onPanUpdate, runOnJS: tmp(4945).runOnJS });
 }) : (function useHuePickerGesture(hue, barWidth, onPanUpdate, onPanFinalize) {
   let fn;
   let fn2;

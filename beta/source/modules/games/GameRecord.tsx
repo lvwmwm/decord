@@ -1,15 +1,15 @@
-// Module ID: 2021
-// Function ID: 2022
+// Module ID: 2023
+// Function ID: 2024
 // Name: GameRecord
-// Dependencies: [1405, 2022, 1998, 2030, 1415, 1388, 2]
+// Dependencies: [1407, 2024, 2000, 2033, 1417, 1388, 2]
 
-// Module 2021 (GameRecord)
+// Module 2023 (GameRecord)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import Server from "Server" /* 1998 */;
-import ApplicationRecord2 from "ApplicationRecord" /* 2022 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2030 */;
-import Record from "Record" /* 1405 */;
+import AvatarUtils from "AvatarUtils" /* 1417 */;
+import Server from "Server" /* 2000 */;
+import ApplicationRecord2 from "ApplicationRecord" /* 2024 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2033 */;
+import Record from "Record" /* 1407 */;
 import size_mod from "module_2" /* 2 */;
 
 const ApplicationRecord = ApplicationRecord2;
@@ -23,103 +23,137 @@ class GameRecord extends Record {
     let aliases;
     let game_flags;
     let genres;
+    let obj2;
+    let rating_count;
+    let rating_count2;
     let reviews;
-    let tmp10;
-    let tmp8;
-    const tmp5 = new GameRecord(tmp4, tmp3, tmp2, tmp, new.target, this);
-    ({ id: tmp5.id, name: tmp5.name, description: tmp5.description, aliases } = item10012);
+    let tmp14;
+    let tmp15;
+    let tmp16;
+    const tmp7 = new GameRecord(tmp6, tmp5, tmp4, tmp3, tmp2, tmp);
+    ({ id: tmp7.id, name: tmp7.name, description: tmp7.description, aliases } = item10012);
     if (aliases == null) {
       aliases = [];
     }
-    tmp5.aliases = aliases;
+    tmp7.aliases = aliases;
     let executables = item10012.executables;
     if (executables == null) {
       executables = [];
     }
-    tmp5.executables = executables.map(createExecutable);
+    tmp7.executables = executables.map(createExecutable);
     let flag = item10012.overlay;
     if (flag == null) {
       flag = false;
     }
-    tmp5.overlay = flag;
+    tmp7.overlay = flag;
     let flag2 = item10012.overlay_warn;
     if (flag2 == null) {
       flag2 = false;
     }
-    tmp5.overlayWarn = flag2;
+    tmp7.overlayWarn = flag2;
     let flag3 = item10012.overlay_compatibility_hook;
     if (flag3 == null) {
       flag3 = false;
     }
-    tmp5.overlayCompatibilityHook = flag3;
+    tmp7.overlayCompatibilityHook = flag3;
     let flag4 = item10012.hook;
     if (flag4 == null) {
       flag4 = true;
     }
-    tmp5.hook = flag4;
-    tmp5.supportsOutOfProcessOverlay = ApplicationRecord.supportsOutOfProcessOverlay(item10012.overlay_methods);
+    tmp7.hook = flag4;
+    tmp7.supportsOutOfProcessOverlay = ApplicationRecord.supportsOutOfProcessOverlay(item10012.overlay_methods);
     let third_party_skus = item10012.third_party_skus;
     if (third_party_skus == null) {
       third_party_skus = [];
     }
-    tmp5.thirdPartySkus = third_party_skus;
+    tmp7.thirdPartySkus = third_party_skus;
     let themes = item10012.themes;
     if (themes == null) {
       themes = [];
     }
-    tmp5.themes = themes;
-    ({ linked_applications: tmp5.linkedApplications, genres } = item10012);
+    tmp7.themes = themes;
+    ({ linked_applications: tmp7.linkedApplications, genres } = item10012);
     if (genres == null) {
       genres = [];
     }
-    tmp5.genres = genres;
+    tmp7.genres = genres;
     let platforms = item10012.platforms;
     if (platforms == null) {
       platforms = [];
     }
-    tmp5.platforms = platforms;
+    tmp7.platforms = platforms;
     let prop = item10012.platform_availability;
     if (prop == null) {
       prop = [];
     }
-    tmp5.platformAvailability = prop;
+    tmp7.platformAvailability = prop;
     let websites = item10012.websites;
     if (websites == null) {
       websites = [];
     }
-    tmp5.websites = websites;
-    ({ companies: tmp5.companies, screenshot_hashes: tmp5.screenshotHashes, screenshot_urls: tmp5.screenshotUrls, trailers: tmp5.trailers, l30_rank: tmp5.l30Rank, summary_localized: tmp5.summaryLocalized, media: tmp5.media, first_release_date: tmp5.firstReleaseDate, shop_collection_ids: tmp5.shopCollectionIds, community_guild_ids: tmp5.communityGuildIds, steam_release_status: tmp5.steamReleaseStatus, reviews } = item10012);
+    tmp7.websites = websites;
+    ({ companies: tmp7.companies, screenshot_hashes: tmp7.screenshotHashes, screenshot_urls: tmp7.screenshotUrls, trailers: tmp7.trailers, l30_rank: tmp7.l30Rank, summary_localized: tmp7.summaryLocalized, media: tmp7.media, first_release_date: tmp7.firstReleaseDate, shop_collection_ids: tmp7.shopCollectionIds, community_guild_ids: tmp7.communityGuildIds, steam_release_status: tmp7.steamReleaseStatus, reviews } = item10012);
     let steam;
     if (reviews != null) {
       steam = reviews.steam;
     }
-    if (null != steam) {
-      let tmp9;
-      if (null != reviews.steam) {
-        tmp9 = { rating: reviews.steam.rating, ratingCount: reviews.steam.rating_count, recentRating: reviews.steam.recent_rating, recentRatingCount: reviews.steam.recent_rating_count, localizedRating: reviews.steam.localized_rating, localizedRatingCount: reviews.steam.localized_rating_count };
-        const obj = { rating: reviews.steam.rating, ratingCount: reviews.steam.rating_count, recentRating: reviews.steam.recent_rating, recentRatingCount: reviews.steam.recent_rating_count, localizedRating: reviews.steam.localized_rating, localizedRatingCount: reviews.steam.localized_rating_count };
-      }
-      const obj2 = { steam: tmp9, opencritic: tmp10 };
-      tmp10 = undefined;
-      if (null != reviews.opencritic) {
-        tmp10 = { topCriticRating: reviews.opencritic.top_critic_rating, topCriticRatingCount: reviews.opencritic.top_critic_rating_count, tier: reviews.opencritic.tier };
-        const obj3 = { topCriticRating: reviews.opencritic.top_critic_rating, topCriticRatingCount: reviews.opencritic.top_critic_rating_count, tier: reviews.opencritic.tier };
-      }
-      tmp8 = obj2;
-    } else {
-      let opencritic;
+    if (null == steam) {
+      let app_store1;
       if (reviews != null) {
-        opencritic = reviews.opencritic;
+        app_store1 = reviews.app_store;
+      }
+      if (null == app_store1) {
+        let google_play1;
+        if (reviews != null) {
+          google_play1 = reviews.google_play;
+        }
+        if (null == google_play1) {
+          let opencritic;
+          if (reviews != null) {
+            opencritic = reviews.opencritic;
+          }
+        }
+        tmp7.reviews = obj2;
+        ({ opencritic_url: tmp7.opencriticUrl, game_flags } = item10012);
+        if (game_flags == null) {
+          game_flags = 0;
+        }
+        tmp7.gameFlags = game_flags;
+        tmp7.contentClassification = item10012.content_classification;
+        return tmp7;
       }
     }
-    tmp5.reviews = tmp8;
-    ({ opencritic_url: tmp5.opencriticUrl, game_flags } = item10012);
-    if (game_flags == null) {
-      game_flags = 0;
+    let tmp13;
+    if (null != reviews.steam) {
+      tmp13 = { rating: reviews.steam.rating, ratingCount: reviews.steam.rating_count, recentRating: reviews.steam.recent_rating, recentRatingCount: reviews.steam.recent_rating_count, localizedRating: reviews.steam.localized_rating, localizedRatingCount: reviews.steam.localized_rating_count };
+      const obj = { rating: reviews.steam.rating, ratingCount: reviews.steam.rating_count, recentRating: reviews.steam.recent_rating, recentRatingCount: reviews.steam.recent_rating_count, localizedRating: reviews.steam.localized_rating, localizedRatingCount: reviews.steam.localized_rating_count };
     }
-    tmp5.gameFlags = game_flags;
-    tmp5.contentClassification = item10012.content_classification;
-    return tmp5;
+    const app_store = reviews.app_store;
+    obj2 = { steam: tmp13, appStore: tmp14, googlePlay: tmp15, opencritic: tmp16 };
+    tmp14 = undefined;
+    if (null != app_store) {
+      const obj5 = { rating: null, ratingCount: rating_count };
+      ({ rating: obj3.rating, rating_count } = app_store);
+      if (rating_count == null) {
+        rating_count = app_store.global_rating_count;
+      }
+      tmp14 = obj5;
+    }
+    const google_play = reviews.google_play;
+    tmp15 = undefined;
+    if (null != google_play) {
+      const obj9 = { rating: null, ratingCount: rating_count2 };
+      ({ rating: obj4.rating, rating_count: rating_count2 } = google_play);
+      if (rating_count2 == null) {
+        rating_count2 = google_play.global_rating_count;
+      }
+      tmp15 = obj9;
+    }
+    tmp16 = undefined;
+    if (null != reviews.opencritic) {
+      tmp16 = { topCriticRating: reviews.opencritic.top_critic_rating, topCriticRatingCount: reviews.opencritic.top_critic_rating_count, tier: reviews.opencritic.tier };
+      const obj10 = { topCriticRating: reviews.opencritic.top_critic_rating, topCriticRatingCount: reviews.opencritic.top_critic_rating_count, tier: reviews.opencritic.tier };
+    }
   }
   getOfficialApplicationId() {
     const linkedApplications = this.linkedApplications;

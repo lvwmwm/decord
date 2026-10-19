@@ -1,19 +1,19 @@
-// Module ID: 13187
-// Function ID: 13188
+// Module ID: 14112
+// Function ID: 14113
 // Name: NoteActionCreators
-// Dependencies: [1085, 1295, 2]
+// Dependencies: [1087, 1297, 2]
 
-// Module 13187 (NoteActionCreators)
-import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
+// Module 14112 (NoteActionCreators)
+import Constants from "Constants" /* 1087 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
 let obj = {
-  updateNote(arg0, note) {
+  updateNote(userId, note) {
     let obj;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: Endpoints.NOTE(arg0), body: obj, oldFormErrors: true, rejectWithError: true };
+    const request = { url: Endpoints.NOTE(userId), body: obj, oldFormErrors: true, rejectWithError: true };
     obj = { note };
     return HTTP.put(request);
   }

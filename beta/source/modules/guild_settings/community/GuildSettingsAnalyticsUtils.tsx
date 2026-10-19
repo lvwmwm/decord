@@ -1,18 +1,18 @@
-// Module ID: 18484
-// Function ID: 18485
+// Module ID: 18880
+// Function ID: 18881
 // Name: GuildSettingsAnalyticsUtils
-// Dependencies: [19, 5020, 2087, 18485, 1085, 558, 576, 504, 1126, 18503, 1901, 2]
+// Dependencies: [19, 5116, 2090, 18881, 1087, 558, 576, 504, 1128, 18899, 1903, 2]
 // Exports: getGuildAnalyticsCardProps
 
-// Module 18484 (GuildSettingsAnalyticsUtils)
-import intl3 from "intl" /* 1126 */;
-import NumberUtils from "NumberUtils" /* 1901 */;
-import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 18503 */;
+// Module 18880 (GuildSettingsAnalyticsUtils)
+import intl4 from "intl" /* 1128 */;
+import NumberUtils from "NumberUtils" /* 1903 */;
+import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 18899 */;
 import react from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5020 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 18485 */;
-import Constants from "Constants" /* 1085 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5116 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 18881 */;
+import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,6 +21,30 @@ let _require, dependencyMap;
 
 let metroImportDefault;
 let metroRequire;
+function getNotice(errorCode, arg1) {
+  let intl;
+  let intl2;
+  let intl3;
+  let tmp4;
+  const tmp = arg1;
+  if (tmp) {
+    const obj2 = { type: "info", message: intl3.string(intl4.t["FsgE/B"]), role: "none" };
+    intl3 = intl4.intl;
+    tmp4 = obj2;
+  } else if (errorCode === metroRequire.NOT_ENOUGH_GUILD_MEMBERS) {
+    const obj3 = { type: "info", message: intl2.string(intl4.t["FsgE/B"]), role: "status" };
+    intl2 = intl4.intl;
+    tmp4 = obj3;
+  } else {
+    tmp4 = null;
+    if (null != errorCode) {
+      const obj = { type: "critical", message: intl.string(intl4.t.Iju63e), role: "alert" };
+      intl = intl4.intl;
+      tmp4 = obj;
+    }
+  }
+  return tmp4;
+}
 ({ AbortCodes: metroRequire, GuildFeatures: metroImportDefault } = Constants);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFailsMemberCount(arg0) {
@@ -42,7 +66,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFail
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function u() {
+    const fn = function o() {
       return GuildStore.getGuild(closure_0);
     };
     const items1 = [arg0];
@@ -131,8 +155,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAnal
   let closure_1;
   let errorCode;
   let first;
-  let intl;
-  let intl2;
   let tmp7;
   let tmp8;
   _require = arg0;
@@ -150,7 +172,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAnal
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function u() {
+    const fn = function o() {
       let overviewAnalytics = null;
       if (null != closure_0) {
         overviewAnalytics = GuildSettingsAnalyticsStore.getOverviewAnalytics(tmp);
@@ -174,13 +196,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAnal
   if (cResult[4] === tmp4) {
     let tmp10;
     let tmp11;
-    let tmp14;
     if (cResult[5] === arg0) {
       tmp10 = cResult[6];
       tmp11 = cResult[7];
     }
     const effect = react.useEffect(tmp10, tmp11);
     if (cResult[8] === errorCode) {
+      let tmp14;
       if (cResult[9] === tmp4) {
         tmp14 = cResult[10];
       }
@@ -197,24 +219,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAnal
       cResult[13] = obj2;
       tmp17 = obj2;
     }
-    if (!tmp4) {
-      let tmp16;
-      if (errorCode !== constants.NOT_ENOUGH_GUILD_MEMBERS) {
-        tmp16 = null;
-        if (null != errorCode) {
-          let obj3 = { type: "critical", message: intl.string(tmp(1126).t.Iju63e) };
-          intl = tmp(1126).intl;
-          tmp16 = obj3;
-        }
-      }
-      cResult[8] = errorCode;
-      cResult[9] = tmp4;
-      cResult[10] = tmp16;
-      tmp14 = tmp16;
-    }
-    const obj4 = { type: "info", message: intl2.string(tmp(1126).t["FsgE/B"]) };
-    intl2 = tmp(1126).intl;
-    tmp16 = obj4;
+    const tmp16 = getNotice(errorCode, tmp4);
+    cResult[8] = errorCode;
+    cResult[9] = tmp4;
+    cResult[10] = tmp16;
+    tmp14 = tmp16;
   }
   const fn2 = function y() {
     const tmp2 = null == closure_0 || closure_1;
@@ -235,14 +244,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAnal
   tmp11 = items2;
   tmp10 = fn2;
 }) : (function useGuildAnalyticsOverview(arg0) {
+  let analytics;
   let closure_0;
   let closure_1;
-  let intl;
-  let intl2;
+  let errorCode;
   _require = arg0;
   const tmp = closure_8(arg0);
   dependencyMap = tmp;
-  let tmp2 = _require;
   let obj = require("get initialized");
   const items = [GuildSettingsAnalyticsStore];
   const items1 = [arg0];
@@ -254,9 +262,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAnal
     const obj = { analytics: overviewAnalytics, errorCode: GuildSettingsAnalyticsStore.getError() };
     return obj;
   }, items1);
-  const errorCode = stateFromStoresObject.errorCode;
   const items2 = [arg0, tmp];
-  const analytics = stateFromStoresObject.analytics;
+  ({ analytics, errorCode } = stateFromStoresObject);
   const effect = react.useEffect(() => {
     const tmp2 = null == closure_0 || closure_1;
     if (!tmp2) {
@@ -268,23 +275,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAnal
       const growthActivationRetention = obj3.fetchGrowthActivationRetention(tmp);
     }
   }, items2);
-  let obj2 = { analytics, notice: null };
-  if (!tmp) {
-    let tmp7;
-    if (errorCode !== constants.NOT_ENOUGH_GUILD_MEMBERS) {
-      tmp7 = null;
-      if (null != errorCode) {
-        let obj3 = { type: "critical", message: intl.string(tmp2(1126).t.Iju63e) };
-        intl = tmp2(1126).intl;
-        tmp7 = obj3;
-      }
-    }
-    obj2.notice = tmp7;
-    return obj2;
-  }
-  const obj4 = { type: "info", message: intl2.string(tmp2(1126).t["FsgE/B"]) };
-  intl2 = tmp2(1126).intl;
-  tmp7 = obj4;
+  let obj2 = { analytics, notice: getNotice(errorCode, tmp) };
+  return obj2;
 });
 let result = size.fileFinishedImporting("modules/guild_settings/community/GuildSettingsAnalyticsUtils.tsx");
 
@@ -299,10 +291,10 @@ export const getGuildAnalyticsCardProps = function getGuildAnalyticsCardProps(co
   if (null != communicatorsChange) {
     const _Number = Number;
     if (!Number.isNaN(communicatorsChange)) {
-      const intl = intl3.intl;
+      const intl = intl4.intl;
       const formatToPlainString = intl.formatToPlainString;
       const obj = { percentage: obj2.truncateAndLocalizeNumber(Math.abs(communicatorsChange), stateFromStores) };
-      const nskeMw = intl3.t.nskeMw;
+      const nskeMw = intl4.t.nskeMw;
       const _Math = Math;
       obj2 = NumberUtils;
       formatToPlainStringResult = formatToPlainString(nskeMw, obj);
@@ -323,7 +315,7 @@ export const getGuildAnalyticsCardProps = function getGuildAnalyticsCardProps(co
   }
   formatToPlainStringResult = null;
   if (null != communicators) {
-    const intl2 = intl3.intl;
-    formatToPlainStringResult = intl2.string(intl3.t.xO2msf);
+    const intl2 = intl4.intl;
+    formatToPlainStringResult = intl2.string(intl4.t.xO2msf);
   }
 };

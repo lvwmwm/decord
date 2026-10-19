@@ -1,18 +1,18 @@
-// Module ID: 18568
-// Function ID: 18569
+// Module ID: 18964
+// Function ID: 18965
 // Name: GuildRoleSubscriptionGroupGatingModal
-// Dependencies: [32, 19, 18557, 15503, 21, 558, 576, 1126, 18551, 18559, 2]
+// Dependencies: [32, 19, 18953, 16263, 21, 558, 576, 1128, 18947, 18955, 2]
 
-// Module 18568 (GuildRoleSubscriptionGroupGatingModal)
+// Module 18964 (GuildRoleSubscriptionGroupGatingModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1126 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15503 */;
-import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 18551 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18559 */;
+import intl3 from "intl" /* 1128 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16263 */;
+import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 18947 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18955 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18557 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18953 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,9 +28,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
   [tmp5, tmp6] = RoleTierEditStore.useGroupIsFullGateState();
   _slicedToArray(RoleTierEditStore.useGroupIsFullGateState(), 2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t.N38nNP);
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl3.t.csJWVI);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;

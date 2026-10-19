@@ -1,10 +1,10 @@
 // Module ID: 11535
 // Function ID: 11536
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 11535 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools/images", width: 240, height: 150, scales: [1, 2, 3], hash: "c4741f3af333f4c01fe224682f3a547f", name: "family_center_activity_checklist_image", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_home/native/images", width: 24, height: 24, scales: [2, 3], hash: "993926a8b2d3f46d31ad06ea07adc917", name: "ic_feed_more", type: "png" });

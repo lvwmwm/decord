@@ -1,25 +1,25 @@
-// Module ID: 8466
-// Function ID: 8467
+// Module ID: 8744
+// Function ID: 8745
 // Name: ICYMIUtils
-// Dependencies: [5, 6054, 2069, 2065, 2087, 8463, 1085, 8462, 8467, 8472, 5434, 8473, 8263, 8474, 1126, 2]
+// Dependencies: [5, 6332, 2072, 2068, 2090, 8741, 1087, 8740, 8745, 8750, 5534, 8751, 8540, 8752, 1128, 2]
 // Exports: compareGravityUnreadIds, contentTypeToText, createGravityMessageFromServer, customScoreToNumber, customStatusToContentInventoryEntry, determineContentType, hydrateItems, isChannelCustomScoreEligible, isGuildItem, isItemNSFW, itemToType, numberToCustomScore
 
-// Module 8466 (ICYMIUtils)
-import intl11 from "intl" /* 1126 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5434 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8263 */;
-import ICYMITypes from "ICYMITypes" /* 8462 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8467 */;
-import generateHydrationId from "generateHydrationId" /* 8472 */;
-import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 8473 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8474 */;
+// Module 8744 (ICYMIUtils)
+import intl11 from "intl" /* 1128 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5534 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8540 */;
+import ICYMITypes from "ICYMITypes" /* 8740 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8745 */;
+import generateHydrationId from "generateHydrationId" /* 8750 */;
+import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 8751 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8752 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 8463 */;
-import Constants from "Constants" /* 1085 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6332 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 8741 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -369,11 +369,11 @@ export const determineContentType = function determineContentType(channel, messa
       let IMAGE;
       obj = ForumPostMediaUtils;
       if (obj.isValidImageAttachment(message.attachments[0])) {
-        IMAGE = tmp6(8462).ContentType.IMAGE;
+        IMAGE = tmp6(8740).ContentType.IMAGE;
       } else {
         const tmp6Result = ForumPostMediaUtils;
         const result = tmp6Result.isValidVideoAttachment(message.attachments[0]);
-        const ContentType = tmp6(8462).ContentType;
+        const ContentType = tmp6(8740).ContentType;
         IMAGE = result ? ContentType.VIDEO : ContentType.FILE;
       }
       INTERESTING = IMAGE;
@@ -391,34 +391,34 @@ export const contentTypeToText = function contentTypeToText(ANNOUNCEMENT, mentio
     flag = false;
   }
   if (ICYMITypes.ContentType.POPULAR_MESSAGE === ANNOUNCEMENT) {
-    const intl10 = tmp(1126).intl;
+    const intl10 = tmp(1128).intl;
     return intl10.string(intl11.t["H/2+cl"]);
   } else if (ICYMITypes.ContentType.IMAGE === ANNOUNCEMENT) {
-    const intl9 = tmp(1126).intl;
+    const intl9 = tmp(1128).intl;
     return intl9.string(intl11.t.gmOWAo);
   } else if (ICYMITypes.ContentType.VIDEO === ANNOUNCEMENT) {
-    const intl8 = tmp(1126).intl;
+    const intl8 = tmp(1128).intl;
     return intl8.string(intl11.t.swhcPM);
   } else if (ICYMITypes.ContentType.LINK === ANNOUNCEMENT) {
-    const intl7 = tmp(1126).intl;
+    const intl7 = tmp(1128).intl;
     return intl7.string(intl11.t.oj5yvD);
   } else if (ICYMITypes.ContentType.THREAD === ANNOUNCEMENT) {
-    const intl6 = tmp(1126).intl;
+    const intl6 = tmp(1128).intl;
     return intl6.string(intl11.t.DwLrLK);
   } else if (ICYMITypes.ContentType.FORUM_POST === ANNOUNCEMENT) {
-    const intl5 = tmp(1126).intl;
+    const intl5 = tmp(1128).intl;
     return intl5.string(intl11.t["Q9/6BS"]);
   } else if (ICYMITypes.ContentType.CHANGED_STATUS === ANNOUNCEMENT) {
-    const intl4 = tmp(1126).intl;
+    const intl4 = tmp(1128).intl;
     return intl4.string(intl11.t.TGrUmi);
   } else if (ICYMITypes.ContentType.INTERESTING === ANNOUNCEMENT) {
-    const intl3 = tmp(1126).intl;
+    const intl3 = tmp(1128).intl;
     return intl3.string(intl11.t["TahE/i"]);
   } else if (ICYMITypes.ContentType.ANNOUNCEMENT === ANNOUNCEMENT) {
     let stringResult;
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const string = intl2.string;
-    const t = tmp(1126).t;
+    const t = tmp(1128).t;
     if (flag) {
       stringResult = string(t.E0MW8I);
     } else {
@@ -426,7 +426,7 @@ export const contentTypeToText = function contentTypeToText(ANNOUNCEMENT, mentio
     }
     return stringResult;
   } else if (ICYMITypes.ContentType.FILE === ANNOUNCEMENT) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     return intl.string(intl11.t.pYrnTY);
   }
 };

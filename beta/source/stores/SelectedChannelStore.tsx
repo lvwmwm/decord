@@ -1,34 +1,34 @@
-// Module ID: 2116
-// Function ID: 2117
+// Module ID: 2119
+// Function ID: 2120
 // Name: SelectedChannelStore
-// Dependencies: [2117, 2069, 502, 2065, 4748, 2087, 2012, 4750, 4939, 1085, 2072, 510, 12, 1388, 1097, 4976, 1112, 7032, 504, 584, 2]
+// Dependencies: [2120, 2072, 502, 2068, 4843, 2090, 2014, 4845, 5034, 1087, 2075, 510, 12, 1388, 1099, 5072, 1114, 7307, 504, 584, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
-// Module 2116 (SelectedChannelStore)
+// Module 2119 (SelectedChannelStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import router_utils from "router_utils" /* 1112 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
+import router_utils from "router_utils" /* 1114 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ChannelConstants from "ChannelConstants" /* 2072 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
-import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 7032 */;
-import GatedChannelStore from "GatedChannelStore" /* 2117 */;
-import ChannelRecord from "ChannelRecord" /* 2069 */;
+import ChannelConstants from "ChannelConstants" /* 2075 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
+import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 7307 */;
+import GatedChannelStore from "GatedChannelStore" /* 2120 */;
+import ChannelRecord from "ChannelRecord" /* 2072 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildChannelStore from "GuildChannelStore" /* 4748 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import GuildChannelStore from "GuildChannelStore" /* 4843 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import MediaEngineStore from "MediaEngineStore" /* 2014 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, basicChannel, c4, c5, lastChannelFollowingDestination, lastConnectedTime, selectedVoiceChannelId, set2;
+let _require, basicChannel, c4, c5, closure_28, lastChannelFollowingDestination, lastConnectedTime, selectedVoiceChannelId, set2;
 
 let closure_12;
 let closure_21;
@@ -287,15 +287,15 @@ function handleGuildRoleChange(guildId) {
 const isGuildHomeChannel = ChannelConstants.isGuildHomeChannel;
 const SelectedChannelStore_str = "SelectedChannelStore";
 let selectedChannelIds = {};
-let closure_28 = {};
+const results = {};
 let mostRecentSelectedTextChannelIds = {};
 let set = new Set();
 const Store = get_initializedDefault.Store;
 class SelectedChannelStore extends Store {
   initialize() {
     let channelId;
-    let closure_1_9;
     let closure_7;
+    let closure_9;
     const Storage = Storage3.Storage;
     let value = Storage.get(SelectedChannelStore_str);
     if (value == null) {
@@ -308,7 +308,7 @@ class SelectedChannelStore extends Store {
       const self2 = this;
       new Set(value.knownThreadIds);
     }
-    ({ selectedVoiceChannelId: channelId, lastChannelFollowingDestination: closure_7, lastConnectedTime: closure_1_9, mostRecentSelectedTextChannelIds } = value);
+    ({ selectedVoiceChannelId: channelId, lastChannelFollowingDestination: closure_7, lastConnectedTime: closure_9, mostRecentSelectedTextChannelIds } = value);
     if (mostRecentSelectedTextChannelIds == null) {
       mostRecentSelectedTextChannelIds = {};
     }
@@ -372,10 +372,10 @@ class SelectedChannelStore extends Store {
     }
     return tmp;
   }
-  getCurrentlySelectedChannelId(guildId) {
+  getCurrentlySelectedChannelId(id) {
     let tmp;
-    if (null != guildId) {
-      tmp = selectedChannelIds[guildId];
+    if (null != id) {
+      tmp = selectedChannelIds[id];
     } else {
       tmp = c6;
     }
@@ -906,6 +906,35 @@ let obj = {
       });
       const result = set(SelectedChannelStore_str, obj2);
     }
+  },
+  AUTO_UPDATER_QUIT_AND_INSTALL: function handleAutoUpdaterQuitAndInstall() {
+    let iter;
+    const tmp = null == channelId || null == authStore;
+    if (!tmp) {
+      const _Date = Date;
+      lastConnectedTime = Date.now();
+      const Storage = Storage3.Storage;
+      const obj = { selectedChannelId, selectedVoiceChannelId: channelId, lastChannelFollowingDestination, lastConnectedTime, selectedChannelIds, mostRecentSelectedTextChannelIds, knownThreadIds: iter.value() };
+      set = Storage.set;
+      const obj2 = _modDef12(selectedChannelIds);
+      const values = obj2.values();
+      const concat = values.concat;
+      const obj3 = _modDef12;
+      const combined = concat(obj3.values(mostRecentSelectedTextChannelIds));
+      const found = combined.filter(GlobalUtils.isNotNullish);
+      const uniqResult = found.uniq();
+      iter = uniqResult.filter((item) => {
+        basicChannel = basicChannel.getBasicChannel(item);
+        let hasItem = set2.has(item);
+        if (!hasItem) {
+          const hasItem1 = null != basicChannel && set.has(basicChannel.type);
+          hasItem = hasItem1;
+        }
+        return hasItem;
+      });
+      const result = set(SelectedChannelStore_str, obj);
+    }
+    return false;
   },
   LOGOUT: function handleLogout() {
     let closure_27 = {};

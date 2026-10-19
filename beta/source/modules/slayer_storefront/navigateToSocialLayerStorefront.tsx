@@ -1,17 +1,17 @@
-// Module ID: 13721
-// Function ID: 13722
+// Module ID: 14501
+// Function ID: 14502
 // Name: navigateToSocialLayerStorefront
-// Dependencies: [5, 2087, 6933, 1085, 10158, 6931, 1112, 7052, 8492, 2]
+// Dependencies: [5, 2090, 7209, 1087, 10460, 7207, 1114, 7328, 8770, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 13721 (navigateToSocialLayerStorefront)
-import router_utils from "router_utils" /* 1112 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6931 */;
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10158 */;
+// Module 14501 (navigateToSocialLayerStorefront)
+import router_utils from "router_utils" /* 1114 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7207 */;
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10460 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 2087 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6933 */;
-import Constants from "Constants" /* 1085 */;
+import GuildStore from "GuildStore" /* 2090 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7209 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -65,7 +65,7 @@ let obj = function _navigateToSocialLayerStorefrontWithGuildPreview() {
             joinedAt = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Set", done: true };
+            return { value: "Reflect", done: true };
           }
         } else {
           if (1 === c3) {

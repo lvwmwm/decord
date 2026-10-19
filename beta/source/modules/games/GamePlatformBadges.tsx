@@ -1,13 +1,13 @@
-// Module ID: 12102
-// Function ID: 12103
+// Module ID: 13052
+// Function ID: 13053
 // Name: GamePlatformBadges
-// Dependencies: [12101, 1126, 2, 12103]
+// Dependencies: [13051, 1128, 2, 13053]
 // Exports: getGamePlatformAvailabilityLabel
 
-// Module 12102 (GamePlatformBadges)
-import intl4 from "intl" /* 1126 */;
-import GamePlatformAvailability from "GamePlatformAvailability" /* 12101 */;
-import GamePlatformAvailabilityUtils from "GamePlatformAvailabilityUtils" /* 12103 */;
+// Module 13052 (GamePlatformBadges)
+import intl5 from "intl" /* 1128 */;
+import GamePlatformAvailability from "GamePlatformAvailability" /* 13051 */;
+import GamePlatformAvailabilityUtils from "GamePlatformAvailabilityUtils" /* 13053 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/games/GamePlatformBadges.tsx");
@@ -16,13 +16,16 @@ export const GAME_PLATFORM_AVAILABILITY_ORDER = GamePlatformAvailabilityUtils.GA
 export const sortGamePlatformAvailability = GamePlatformAvailabilityUtils.getOrderedGamePlatforms;
 export const getGamePlatformAvailabilityLabel = function getGamePlatformAvailabilityLabel(item) {
   if (GamePlatformAvailability.GamePlatformAvailability.DESKTOP === item) {
-    const intl3 = tmp(1126).intl;
-    return intl3.string(intl4.t.KT6uCJ);
+    const intl4 = tmp(1128).intl;
+    return intl4.string(intl5.t.KT6uCJ);
   } else if (GamePlatformAvailability.GamePlatformAvailability.MOBILE === item) {
-    const intl2 = tmp(1126).intl;
-    return intl2.string(intl4.t["0DvssQ"]);
+    const intl3 = tmp(1128).intl;
+    return intl3.string(intl5.t["0DvssQ"]);
   } else if (GamePlatformAvailability.GamePlatformAvailability.CONSOLE === item) {
-    const intl = tmp(1126).intl;
-    return intl.string(intl4.t.RT9Ccb);
+    const intl2 = tmp(1128).intl;
+    return intl2.string(intl5.t.RT9Ccb);
+  } else if (GamePlatformAvailability.GamePlatformAvailability.ROBLOX === item) {
+    const intl = tmp(1128).intl;
+    return intl.string(intl5.t.MPURhG);
   }
 };

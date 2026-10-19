@@ -1,14 +1,14 @@
-// Module ID: 15139
-// Function ID: 15140
+// Module ID: 15901
+// Function ID: 15902
 // Name: ConsentActionCreators
-// Dependencies: [1085, 584, 1126, 1295, 2]
+// Dependencies: [1087, 584, 1128, 1297, 2]
 // Exports: fetchConsents, setConsents
 
-// Module 15139 (ConsentActionCreators)
+// Module 15901 (ConsentActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
-import intl3 from "intl" /* 1126 */;
-import HTTPUtils from "HTTPUtils" /* 1295 */;
+import Constants from "Constants" /* 1087 */;
+import intl3 from "intl" /* 1128 */;
+import HTTPUtils from "HTTPUtils" /* 1297 */;
 import size from "module_2" /* 2 */;
 
 function handleRequestSuccess(body) {

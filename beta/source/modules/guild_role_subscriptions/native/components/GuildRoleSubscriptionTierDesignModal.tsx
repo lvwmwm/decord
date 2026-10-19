@@ -1,29 +1,29 @@
-// Module ID: 18593
-// Function ID: 18594
+// Module ID: 18989
+// Function ID: 18990
 // Name: GuildRoleSubscriptionTierDesignModal
-// Dependencies: [32, 19, 17, 15503, 1085, 21, 5092, 587, 558, 576, 4818, 15536, 14130, 18575, 15525, 6884, 18552, 1126, 8672, 18558, 18594, 18559, 2]
+// Dependencies: [32, 19, 17, 16263, 1087, 21, 5191, 587, 558, 576, 4913, 16296, 14912, 18971, 16285, 7160, 18948, 1128, 8949, 18954, 18990, 18955, 2]
 
-// Module 18593 (GuildRoleSubscriptionTierDesignModal)
+// Module 18989 (GuildRoleSubscriptionTierDesignModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import intl4 from "intl" /* 1126 */;
-import useToken5 from "useToken" /* 4818 */;
-import RoleIconUtils from "RoleIconUtils" /* 6884 */;
-import FormHeaderDefault from "FormHeader" /* 8672 */;
-import FormStylesDefault from "FormStyles" /* 14130 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15503 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15525 */;
-import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 15536 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18552 */;
-import FormImagePicker from "FormImagePicker" /* 18558 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18559 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 18575 */;
+import Constants from "Constants" /* 1087 */;
+import intl4 from "intl" /* 1128 */;
+import useToken5 from "useToken" /* 4913 */;
+import RoleIconUtils from "RoleIconUtils" /* 7160 */;
+import FormHeaderDefault from "FormHeader" /* 8949 */;
+import FormStylesDefault from "FormStyles" /* 14912 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16263 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16285 */;
+import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 16296 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18948 */;
+import FormImagePicker from "FormImagePicker" /* 18954 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18955 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 18971 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -264,7 +264,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   }
   const header = tmp5.header;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t.sEr1zr);
     cResult[6] = stringResult;
     tmp20 = stringResult;
@@ -278,7 +278,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     const tmp24 = React4(FormHeaderDefault, obj8);
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl4.t.Glqj9m);
     cResult[9] = stringResult1;
     tmp25 = stringResult1;
@@ -288,7 +288,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   if (cResult[10] !== tmp8) {
     class M {
       constructor(arg0) {
-        obj = { icon: arg0.uri, unicodeEmoji: "r" };
+        obj = { icon: arg0.uri, unicodeEmoji: "a" };
         return closure_0(obj);
       }
     }
@@ -297,7 +297,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   } else {
     class M {
       constructor(arg0) {
-        obj = { icon: arg0.uri, unicodeEmoji: "r" };
+        obj = { icon: arg0.uri, unicodeEmoji: "a" };
         return closure_0(obj);
       }
     }
@@ -305,7 +305,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   if (cResult[12] === tmp12) {
     class M {
       constructor(arg0) {
-        obj = { icon: arg0.uri, unicodeEmoji: "r" };
+        obj = { icon: arg0.uri, unicodeEmoji: "a" };
         return closure_0(obj);
       }
     }
@@ -328,7 +328,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   let role;
   let tmp7;
   let tmp8;
-  const tmp3 = role(14130)();
+  const tmp3 = role(14912)();
   let obj = require("EditStateContextProvider");
   const editStateContext = obj.useEditStateContext();
   ({ editStateId, guildId } = editStateContext);
@@ -358,8 +358,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   const obj6 = { children: items1 };
   items1 = [closure_9(closure_13, { role }), , , , ];
   const obj7 = { style: tmp3.header, children: intl.string(require("intl").t.sEr1zr) };
-  const tmpResult = role(8672);
-  intl = tmp4(1126).intl;
+  const tmpResult = role(8949);
+  intl = tmp4(1128).intl;
   items1[1] = closure_9(tmpResult, obj7);
   const obj8 = {
     description: intl2.string(require("intl").t.Glqj9m),
@@ -368,19 +368,19 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
     previewShape: require("FormImagePicker").PreviewShape.SQUIRCLE,
     previewResizeMode: "cover",
     setImage(icon) {
-      const obj = { icon: icon.uri, unicodeEmoji: "r" };
+      const obj = { icon: icon.uri, unicodeEmoji: "a" };
       return closure_0(obj);
     },
     disabled: roleSubscriptionSettingsDisabled
   };
-  const tmpResult3 = role(18558);
-  intl2 = tmp4(1126).intl;
+  const tmpResult3 = role(18954);
+  intl2 = tmp4(1128).intl;
   items1[2] = closure_9(tmpResult3, obj8);
   const obj9 = { style: tmp3.header, children: intl3.string(require("intl").t["W7hH+z"]) };
-  const tmpResult4 = role(8672);
-  intl3 = tmp4(1126).intl;
+  const tmpResult4 = role(8949);
+  intl3 = tmp4(1128).intl;
   items1[3] = closure_9(tmpResult4, obj9);
-  items1[4] = closure_9(role(18594), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled });
+  items1[4] = closure_9(role(18990), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled });
   return closure_10(closure_11, obj6);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -408,9 +408,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   const obj = react2;
   const cResult = obj.c(5);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t.AbcgTx);
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl4.t.YAUjGn);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;

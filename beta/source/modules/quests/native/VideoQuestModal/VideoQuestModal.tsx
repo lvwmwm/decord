@@ -1,26 +1,26 @@
-// Module ID: 15409
-// Function ID: 15410
+// Module ID: 16169
+// Function ID: 16170
 // Name: VideoQuestModal
-// Dependencies: [32, 19, 17, 15375, 1085, 21, 5092, 587, 558, 576, 15410, 12994, 7402, 15376, 8390, 4850, 5378, 1631, 6762, 15411, 15414, 15441, 6814, 9163, 9166, 12988, 5975, 10604, 2]
+// Dependencies: [32, 19, 17, 16137, 1087, 21, 5191, 587, 558, 576, 16170, 13925, 7672, 16138, 8668, 4945, 5478, 1633, 7039, 16171, 16174, 16201, 7092, 9470, 9473, 13919, 6231, 10929, 2]
 
-// Module 15409 (VideoQuestModal)
+// Module 16169 (VideoQuestModal)
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1085 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import spring from "spring" /* 5378 */;
-import QuestTypes from "QuestTypes" /* 5975 */;
-import AnalyticsActions from "AnalyticsActions" /* 7402 */;
-import QuestUtils from "QuestUtils" /* 9163 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12988 */;
-import applyOrientationLock2 from "applyOrientationLock" /* 12994 */;
-import QuestDockConstants from "QuestDockConstants" /* 15375 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 15376 */;
-import VideoQuestModalContextDefault from "VideoQuestModalContext" /* 15410 */;
+import Constants from "Constants" /* 1087 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import spring from "spring" /* 5478 */;
+import QuestTypes from "QuestTypes" /* 6231 */;
+import AnalyticsActions from "AnalyticsActions" /* 7672 */;
+import QuestUtils from "QuestUtils" /* 9470 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 13919 */;
+import applyOrientationLock2 from "applyOrientationLock" /* 13925 */;
+import QuestDockConstants from "QuestDockConstants" /* 16137 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 16138 */;
+import VideoQuestModalContextDefault from "VideoQuestModalContext" /* 16170 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -655,18 +655,16 @@ const watch_mobile_video_quest = "watch_mobile_video_quest";
 ReactCompilerGating = ReactCompilerGating_mod;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestModal(questContentPosition) {
   let expandedHeight;
-  let tmp10;
-  let tmp11;
+  let initialStep;
   let tmp4;
   let videoSessionId;
-  let obj = questContentPosition(videoSessionId[9]);
-  const cResult = obj.c(14);
+  let obj = questContentPosition(initialStep[9]);
+  const cResult = obj.c(17);
   const tmp = questContentPosition;
   questContentPosition = questContentPosition.questContentPosition;
   const onClose = questContentPosition.onClose;
-  const tmp2 = videoSessionId;
-  videoSessionId = questContentPosition.videoSessionId;
-  const initialStep = questContentPosition.initialStep;
+  const tmp2 = initialStep;
+  ({ videoSessionId, initialStep } = questContentPosition);
   const sourceQuestContent = questContentPosition.sourceQuestContent;
   const questId = questContentPosition.questId;
   if (cResult[0] !== onClose) {
@@ -683,117 +681,148 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const tmpResult = tmp(tmp2[24]);
   const nonNullableQuest = tmpResult.useNonNullableQuest(questId, tmp4);
-  if (null != nonNullableQuest) {
-    let tmp7;
-    const _Symbol = Symbol;
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      class S {
-        constructor() {
-          return null;
-        }
-      }
-      cResult[2] = S;
-      tmp7 = S;
-    } else {
-      class S {
-        constructor() {
-          return null;
-        }
-      }
+  if (cResult[2] === nonNullableQuest) {
+    let tmp6;
+    let tmp17;
+    let tmp16;
+    if (cResult[3] === videoSessionId) {
+      tmp6 = cResult[4];
     }
-    if (cResult[3] === initialStep) {
-      class S {
-        constructor() {
-          return null;
-        }
-      }
-    }
-    let obj2 = {};
-    let obj3 = {
-      fullscreen: true,
-      headerLeft: tmp7,
-      render() {
-          let BillableAdPlacementImpressionTrackerNative;
-          let QuestDockGestureContextProvider;
-          let obj2;
-          let obj3;
-          let obj4;
-          let obj = { value: obj2, children: metroImportAll(QuestDockGestureContextProvider, obj3) };
-          obj2 = { quest: nonNullableQuest, videoSessionId };
-          const Provider = VideoQuestModalContextDefault.Provider;
-          obj3 = { expandedHeight, children: metroImportAll(BillableAdPlacementImpressionTrackerNative, obj4) };
-          QuestDockGestureContextProvider = QuestDockGestureContext.QuestDockGestureContextProvider;
-          obj4 = {
-            overrideVisibility: true,
-            questContent: QuestTypes.QuestContent.VIDEO_MODAL_MOBILE,
-            questOrQuests: nonNullableQuest,
-            questContentPosition,
-            sourceQuestContent,
-            children: function renderVideoQuestModal() {
-              const obj = { initialStep, onClose, sourceQuestContent };
-              return closure_2_8(closure_2_19, obj);
-            }
+    const value = tmp6;
+    let tmp10 = null;
+    if (null != nonNullableQuest) {
+      tmp10 = null;
+      if (null != tmp6) {
+        let tmp12;
+        const _Symbol = Symbol;
+        if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+          const fn2 = function h() {
+            return null;
           };
-          BillableAdPlacementImpressionTrackerNative = QuestContentImpressionTracker.BillableAdPlacementImpressionTrackerNative;
-          return metroImportAll(Provider, obj);
+          cResult[5] = fn2;
+          tmp12 = fn2;
+        } else {
+          tmp12 = cResult[5];
         }
-    };
-    obj2[watch_mobile_video_quest] = obj3;
-    cResult[3] = initialStep;
-    cResult[4] = onClose;
-    cResult[5] = nonNullableQuest;
-    cResult[6] = questContentPosition;
-    cResult[7] = sourceQuestContent;
-    cResult[8] = videoSessionId;
-    cResult[9] = obj2;
-  }
-  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
-      constructor() {
-        const obj = questContentPosition(videoSessionId[11]);
-        obj.applyOrientationLock("PORTRAIT");
-        return questContentPosition(videoSessionId[11]).restoreDefaultOrientationLock;
+        if (cResult[6] === initialStep) {
+          if (cResult[7] === onClose) {
+            if (cResult[8] === nonNullableQuest) {
+              if (cResult[9] === questContentPosition) {
+                if (cResult[10] === sourceQuestContent) {
+                  let tmp13;
+                  if (cResult[11] === tmp6) {
+                    tmp13 = cResult[12];
+                  }
+                  tmp10 = tmp13;
+                }
+              }
+            }
+          }
+        }
+        let obj2 = {};
+        let obj3 = {
+          fullscreen: true,
+          headerLeft: tmp12,
+          render() {
+                  let BillableAdPlacementImpressionTrackerNative;
+                  let QuestDockGestureContextProvider;
+                  let obj2;
+                  let obj3;
+                  let obj = { value, children: metroImportAll(QuestDockGestureContextProvider, obj2) };
+                  const Provider = VideoQuestModalContextDefault.Provider;
+                  obj2 = { expandedHeight, children: metroImportAll(BillableAdPlacementImpressionTrackerNative, obj3) };
+                  QuestDockGestureContextProvider = QuestDockGestureContext.QuestDockGestureContextProvider;
+                  obj3 = {
+                    overrideVisibility: true,
+                    questContent: QuestTypes.QuestContent.VIDEO_MODAL_MOBILE,
+                    questOrQuests: nonNullableQuest,
+                    questContentPosition,
+                    sourceQuestContent,
+                    children: function renderVideoQuestModal() {
+                      const obj = { initialStep, onClose, sourceQuestContent };
+                      return closure_2_8(closure_2_19, obj);
+                    }
+                  };
+                  BillableAdPlacementImpressionTrackerNative = QuestContentImpressionTracker.BillableAdPlacementImpressionTrackerNative;
+                  return metroImportAll(Provider, obj);
+                }
+        };
+        obj2[watch_mobile_video_quest] = obj3;
+        cResult[6] = initialStep;
+        cResult[7] = onClose;
+        cResult[8] = nonNullableQuest;
+        cResult[9] = questContentPosition;
+        cResult[10] = sourceQuestContent;
+        cResult[11] = tmp6;
+        cResult[12] = obj2;
+        tmp13 = obj2;
       }
     }
-    const items = [];
-    cResult[10] = T;
-    cResult[11] = items;
-    tmp11 = items;
-    tmp10 = T;
-  } else {
-    class T {
-      constructor() {
-        const obj = questContentPosition(videoSessionId[11]);
-        obj.applyOrientationLock("PORTRAIT");
-        return questContentPosition(videoSessionId[11]).restoreDefaultOrientationLock;
-      }
-    }
-    tmp11 = cResult[11];
-  }
-  const layoutEffect = sourceQuestContent.useLayoutEffect(tmp10, tmp11);
-  let tmp13 = null;
-  if (null != nonNullableQuest) {
-    class T {
-      constructor() {
-        const obj = questContentPosition(videoSessionId[11]);
-        obj.applyOrientationLock("PORTRAIT");
-        return questContentPosition(videoSessionId[11]).restoreDefaultOrientationLock;
-      }
-    }
-    if (null != null) {
-      class T {
+    const _Symbol2 = Symbol;
+    if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+      class G {
         constructor() {
-          const obj = questContentPosition(videoSessionId[11]);
+          const obj = questContentPosition(initialStep[11]);
           obj.applyOrientationLock("PORTRAIT");
-          return questContentPosition(videoSessionId[11]).restoreDefaultOrientationLock;
+          return questContentPosition(initialStep[11]).restoreDefaultOrientationLock;
         }
       }
-      tmp13 = tmp14;
+      const items = [];
+      cResult[13] = G;
+      cResult[14] = items;
+      tmp17 = items;
+      tmp16 = G;
+    } else {
+      class G {
+        constructor() {
+          const obj = questContentPosition(initialStep[11]);
+          obj.applyOrientationLock("PORTRAIT");
+          return questContentPosition(initialStep[11]).restoreDefaultOrientationLock;
+        }
+      }
+      tmp17 = cResult[14];
     }
+    const layoutEffect = nonNullableQuest.useLayoutEffect(tmp16, tmp17);
+    let tmp20 = null;
+    if (null != nonNullableQuest) {
+      class G {
+        constructor() {
+          const obj = questContentPosition(initialStep[11]);
+          obj.applyOrientationLock("PORTRAIT");
+          return questContentPosition(initialStep[11]).restoreDefaultOrientationLock;
+        }
+      }
+      if (null != tmp10) {
+        class G {
+          constructor() {
+            const obj = questContentPosition(initialStep[11]);
+            obj.applyOrientationLock("PORTRAIT");
+            return questContentPosition(initialStep[11]).restoreDefaultOrientationLock;
+          }
+        }
+        tmp20 = tmp21;
+      }
+    }
+    return tmp20;
   }
-  return tmp13;
+  let tmp7 = null;
+  if (null != nonNullableQuest) {
+    class G {
+      constructor() {
+        const obj = questContentPosition(initialStep[11]);
+        obj.applyOrientationLock("PORTRAIT");
+        return questContentPosition(initialStep[11]).restoreDefaultOrientationLock;
+      }
+    }
+    tmp8[0] = nonNullableQuest;
+    tmp8[1] = videoSessionId;
+    tmp7 = tmp8;
+  }
+  cResult[2] = nonNullableQuest;
+  cResult[3] = videoSessionId;
+  cResult[4] = tmp7;
+  tmp6 = tmp7;
 }) : (function VideoQuestModal(questContentPosition) {
-  let expandedHeight;
   questContentPosition = questContentPosition.questContentPosition;
   const onClose = questContentPosition.onClose;
   const videoSessionId = questContentPosition.videoSessionId;
@@ -806,65 +835,77 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const result = obj.showQuestUnavailableAlert();
     onClose();
   }, items);
+  let tmp2 = questContentPosition;
   let obj = questContentPosition(videoSessionId[24]);
   const nonNullableQuest = obj.useNonNullableQuest(questId, callback);
-  const items1 = [onClose, nonNullableQuest, videoSessionId, questContentPosition, initialStep, sourceQuestContent];
+  const items1 = [nonNullableQuest, videoSessionId];
   const memo = sourceQuestContent.useMemo(() => {
+    let tmp2 = null;
+    if (null != nonNullableQuest) {
+      tmp2 = { quest: tmp, videoSessionId };
+      const obj = { quest: tmp, videoSessionId };
+    }
+    return tmp2;
+  }, items1);
+  const items2 = [onClose, nonNullableQuest, memo, questContentPosition, initialStep, sourceQuestContent];
+  const memo1 = sourceQuestContent.useMemo(() => {
+    let questOrQuests;
+    let value;
     let tmp = null;
     if (null != nonNullableQuest) {
-      let obj = {};
-      let obj2 = {
-        fullscreen: true,
-        headerLeft() {
-            return null;
-          },
-        render() {
-            let BillableAdPlacementImpressionTrackerNative;
-            let QuestDockGestureContextProvider;
-            let obj2;
-            let obj3;
-            let obj4;
-            let obj = { value: obj2, children: closure_2_8(QuestDockGestureContextProvider, obj3) };
-            obj2 = { quest: questOrQuests, videoSessionId };
-            const Provider = onClose(videoSessionId[10]).Provider;
-            obj3 = { expandedHeight, children: closure_2_8(BillableAdPlacementImpressionTrackerNative, obj4) };
-            QuestDockGestureContextProvider = questContentPosition(videoSessionId[13]).QuestDockGestureContextProvider;
-            obj4 = {
-              overrideVisibility: true,
-              questContent: questContentPosition(videoSessionId[26]).QuestContent.VIDEO_MODAL_MOBILE,
-              questOrQuests,
-              questContentPosition,
-              sourceQuestContent,
-              children: function renderVideoQuestModal() {
-                const obj = { initialStep, onClose, sourceQuestContent };
-                return closure_2_8(closure_2_19, obj);
+      tmp = null;
+      if (null != memo) {
+        let obj = {};
+        let obj2 = {
+          fullscreen: true,
+          headerLeft() {
+                return null;
+              },
+          render() {
+                let BillableAdPlacementImpressionTrackerNative;
+                let QuestDockGestureContextProvider;
+                let obj2;
+                let obj3;
+                let obj = { value, children: closure_2_8(QuestDockGestureContextProvider, obj2) };
+                const Provider = onClose(videoSessionId[10]).Provider;
+                obj2 = { expandedHeight: memo, children: closure_2_8(BillableAdPlacementImpressionTrackerNative, obj3) };
+                QuestDockGestureContextProvider = questContentPosition(videoSessionId[13]).QuestDockGestureContextProvider;
+                obj3 = {
+                  overrideVisibility: true,
+                  questContent: questContentPosition(videoSessionId[26]).QuestContent.VIDEO_MODAL_MOBILE,
+                  questOrQuests,
+                  questContentPosition,
+                  sourceQuestContent,
+                  children: function renderVideoQuestModal() {
+                    const obj = { initialStep, onClose, sourceQuestContent };
+                    return closure_2_8(closure_2_19, obj);
+                  }
+                };
+                BillableAdPlacementImpressionTrackerNative = questContentPosition(videoSessionId[25]).BillableAdPlacementImpressionTrackerNative;
+                return closure_2_8(Provider, obj);
               }
-            };
-            BillableAdPlacementImpressionTrackerNative = questContentPosition(videoSessionId[25]).BillableAdPlacementImpressionTrackerNative;
-            return closure_2_8(Provider, obj);
-          }
-      };
-      obj[watch_mobile_video_quest] = obj2;
-      tmp = obj;
+        };
+        obj[watch_mobile_video_quest] = obj2;
+        tmp = obj;
+      }
     }
     return tmp;
-  }, items1);
+  }, items2);
   const layoutEffect = sourceQuestContent.useLayoutEffect(() => {
     const obj = questContentPosition(videoSessionId[11]);
     obj.applyOrientationLock("PORTRAIT");
     return questContentPosition(videoSessionId[11]).restoreDefaultOrientationLock;
   }, []);
-  let tmp7 = null;
-  const tmp2 = questContentPosition;
+  let tmp8 = null;
   const tmp3 = videoSessionId;
   if (null != nonNullableQuest) {
-    tmp7 = null;
-    if (null != memo) {
-      let obj2 = { hideTitle: true, initialRouteName: watch_mobile_video_quest, screens: memo };
-      tmp7 = closure_8(tmp2(tmp3[27]).Modal, obj2);
+    tmp8 = null;
+    if (null != memo1) {
+      let obj2 = { hideTitle: true, initialRouteName: watch_mobile_video_quest, screens: memo1 };
+      tmp8 = closure_8(tmp2(tmp3[27]).Modal, obj2);
     }
   }
-  return tmp7;
+  return tmp8;
 }));
 let result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestModal.tsx");
 

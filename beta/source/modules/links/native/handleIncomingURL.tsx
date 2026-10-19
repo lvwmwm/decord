@@ -1,21 +1,21 @@
-// Module ID: 18722
-// Function ID: 18723
+// Module ID: 19118
+// Function ID: 19119
 // Name: handleIncomingURL
-// Dependencies: [5, 2065, 5110, 1999, 1085, 3, 7192, 18721, 7477, 1265, 14077, 5069, 5074, 1278, 8492, 16374, 18723, 2]
+// Dependencies: [5, 2068, 5209, 2001, 1087, 3, 7463, 19117, 7748, 1267, 14859, 5168, 7314, 5174, 1280, 8770, 17063, 19119, 2]
 // Exports: default
 
-// Module 18722 (handleIncomingURL)
+// Module 19118 (handleIncomingURL)
 import LoggerDefault from "Logger" /* 3 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7192 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7477 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 14077 */;
-import DeepLinkTypes from "DeepLinkTypes" /* 18721 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7463 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7748 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 14859 */;
+import DeepLinkTypes from "DeepLinkTypes" /* 19117 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2065 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
-import AppStateStore from "AppStateStore" /* 1999 */;
-import Constants from "Constants" /* 1085 */;
+import ChannelStore from "ChannelStore" /* 2068 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
+import AppStateStore from "AppStateStore" /* 2001 */;
+import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
 let channel, channelId, closure_2, closure_3, closure_4, closure_5, message;
@@ -36,14 +36,14 @@ let obj = function _handleIncomingURL() {
     let c6 = 0;
     return (async function(arg0, value) {
       let Iterable;
-      let obj13;
-      let obj15;
-      let obj17;
-      let obj19;
-      let obj9;
-      let tmp198;
-      let tmp199;
-      let tmp82;
+      let obj10;
+      let obj14;
+      let obj16;
+      let obj18;
+      let obj20;
+      let tmp212;
+      let tmp213;
+      let tmp96;
       if (c8 === 2) {
         c8 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -67,7 +67,7 @@ let obj = function _handleIncomingURL() {
           let inviteCode;
           let guildTemplateCode;
           let authToken;
-          let result1;
+          let result2;
           c8 = 2;
           if (0 === c7) {
             if (arg0 === 1) {
@@ -93,7 +93,7 @@ let obj = function _handleIncomingURL() {
               inviteCode = undefined;
               guildTemplateCode = undefined;
               authToken = undefined;
-              result1 = undefined;
+              result2 = undefined;
               ({ url, source: Iterable } = url);
               const _HermesInternal = HermesInternal;
               logger.log("Opening url: " + url + " [" + Iterable + "]");
@@ -143,8 +143,8 @@ let obj = function _handleIncomingURL() {
                     c8 = 3;
                     return { value: undefined, done: true };
                   } else {
-                    const obj7 = { originalUrl: url };
-                    logger.warn("No hash mark found in AppsFlyer legacy URL", obj7);
+                    const obj8 = { originalUrl: url };
+                    logger.warn("No hash mark found in AppsFlyer legacy URL", obj8);
                   }
                 }
                 if (url.startsWith("discordwidget:///")) {
@@ -155,8 +155,8 @@ let obj = function _handleIncomingURL() {
                       channel = channel.getChannel(channelId);
                     }
                     if (null != channel) {
-                      const obj30 = PrivateChannelCallUtils;
-                      const result = obj30.navigateToVoiceChannel(channel, "LiveActivity");
+                      const obj31 = PrivateChannelCallUtils;
+                      const result = obj31.navigateToVoiceChannel(channel, "LiveActivity");
                       const index1 = url.indexOf("?");
                       let str3 = "";
                       const _URLSearchParams = URLSearchParams;
@@ -167,11 +167,11 @@ let obj = function _handleIncomingURL() {
                       const self4 = this;
                       const _URLSearchParams1 = new _URLSearchParams(str3);
                       value = _URLSearchParams1.get("source");
-                      const tmp164 = "lockScreen" !== value && "dynamicIsland" !== value;
-                      if (!tmp164) {
-                        const obj8 = { action: "Open Voice Panel", channel_id: channel.id, surface: value };
-                        const obj22 = AnalyticsUtilsDefault;
-                        obj22.track(constants2.LIVE_ACTIVITY_INTERACTED, obj8);
+                      const tmp178 = "lockScreen" !== value && "dynamicIsland" !== value;
+                      if (!tmp178) {
+                        const obj9 = { action: "Open Voice Panel", channel_id: channel.id, surface: value };
+                        const obj23 = AnalyticsUtilsDefault;
+                        obj23.track(constants2.LIVE_ACTIVITY_INTERACTED, obj9);
                       }
                     }
                     c8 = 3;
@@ -189,22 +189,22 @@ let obj = function _handleIncomingURL() {
                         return { value: "IconComponent", done: null };
                       } else if ("user" !== parts1[0]) {
                         if ("invite" === parts1[0]) {
-                          const obj12 = { payload: obj13, isAppStartupNavigation };
-                          obj13 = { type: constants3.CREATE_VOICE_INVITE, guildId: parts1[1], channelId: parts1[2] };
-                          handleSupportedURLDefault(obj12);
+                          const obj13 = { payload: obj14, isAppStartupNavigation };
+                          obj14 = { type: constants3.CREATE_VOICE_INVITE, guildId: parts1[1], channelId: parts1[2] };
+                          handleSupportedURLDefault(obj13);
                         } else if ("wave" === parts1[0]) {
-                          const obj14 = { payload: obj15, isAppStartupNavigation };
-                          obj15 = { type: constants3.SEND_VOICE_HANGOUT_WAVE, guildId: parts1[1], channelId: parts1[2] };
-                          handleSupportedURLDefault(obj14);
+                          const obj15 = { payload: obj16, isAppStartupNavigation };
+                          obj16 = { type: constants3.SEND_VOICE_HANGOUT_WAVE, guildId: parts1[1], channelId: parts1[2] };
+                          handleSupportedURLDefault(obj15);
                         } else if ("join" === parts1[0]) {
-                          const obj16 = { payload: obj17, isAppStartupNavigation };
-                          obj17 = { type: constants3.CHANNEL, guildId: parts1[1], channelId: parts1[2] };
-                          handleSupportedURLDefault(obj16);
+                          const obj17 = { payload: obj18, isAppStartupNavigation };
+                          obj18 = { type: constants3.CHANNEL, guildId: parts1[1], channelId: parts1[2] };
+                          handleSupportedURLDefault(obj17);
                         } else if (2 === parts1.length) {
-                          [tmp198, tmp199] = parts1;
-                          const obj18 = { payload: obj19, isAppStartupNavigation };
-                          obj19 = { type: constants3.CHANNEL, guildId: tmp198, channelId: tmp199 };
-                          handleSupportedURLDefault(obj18);
+                          [tmp212, tmp213] = parts1;
+                          const obj19 = { payload: obj20, isAppStartupNavigation };
+                          obj20 = { type: constants3.CHANNEL, guildId: tmp212, channelId: tmp213 };
+                          handleSupportedURLDefault(obj19);
                           c8 = 3;
                           return { value: undefined, done: true };
                         }
@@ -220,8 +220,8 @@ let obj = function _handleIncomingURL() {
                     const _fetch = fetch;
                     c7 = 2;
                     c8 = 1;
-                    const obj21 = { value: fetch(url, { method: "HEAD", redirect: "follow" }), done: false };
-                    return obj21;
+                    const obj22 = { value: fetch(url, { method: "HEAD", redirect: "follow" }), done: false };
+                    return obj22;
                   }
                 }
               }
@@ -231,8 +231,8 @@ let obj = function _handleIncomingURL() {
           } else if (1 === tmp4) {
             c6 = 0;
             message = closure_5;
-            const obj23 = { originalUrl: url.url, extractedUrlString: str2, error: message.message };
-            closure_132_10.warn("Failed to parse URL from AppsFlyer legacy URL", obj23);
+            const obj24 = { originalUrl: url.url, extractedUrlString: str2, error: message.message };
+            closure_132_10.warn("Failed to parse URL from AppsFlyer legacy URL", obj24);
             c8 = 3;
             return { value: undefined, done: true };
           } else if (arg0 === 1) {
@@ -251,57 +251,62 @@ let obj = function _handleIncomingURL() {
           payload = closure_7.payload;
           installationId = closure_7.installationId;
           didRegister = closure_7.didRegister;
+          const tmp47 = payload.type === closure_132_9.CHANNEL && null != payload.channelId;
+          if (tmp47) {
+            const obj5 = closure_132_0(closure_132_2[12]);
+            const result1 = obj5.queueFrameDeepLinkFromUrl(payload.channelId, url);
+          }
           closure_132_10.log("Parsed url as: ", closure_7);
           inviteCode = payload.inviteCode;
           guildTemplateCode = payload.guildTemplateCode;
           authToken = payload.authToken;
-          result1 = null;
+          result2 = null;
           if (null != inviteCode) {
-            const obj5 = closure_132_0(closure_132_2[12]);
-            result1 = obj5.parseInviteCodeFromInviteKey(inviteCode);
+            const obj6 = closure_132_0(closure_132_2[13]);
+            result2 = obj6.parseInviteCodeFromInviteKey(inviteCode);
           }
-          const tmp60 = null == fingerprint && null == attemptId && null == inviteCode && null == guildTemplateCode && null == authToken && null == Iterable && null == installationId;
-          if (!tmp60) {
-            const obj25 = { invite_code: result1, guild_template_code: guildTemplateCode, has_auth_token: tmp82, is_backgrounded: closure_132_6.getState() === closure_132_7.BACKGROUND, attempt_id: attemptId, deeplink_source: Iterable, link_type: payload.type, is_cold_start: isAppStartupNavigation, received_installation_id: installationId };
-            tmp82 = null != authToken;
+          const tmp74 = null == fingerprint && null == attemptId && null == inviteCode && null == guildTemplateCode && null == authToken && null == Iterable && null == installationId;
+          if (!tmp74) {
+            const obj26 = { invite_code: result2, guild_template_code: guildTemplateCode, has_auth_token: tmp96, is_backgrounded: closure_132_6.getState() === closure_132_7.BACKGROUND, attempt_id: attemptId, deeplink_source: Iterable, link_type: payload.type, is_cold_start: isAppStartupNavigation, received_installation_id: installationId };
+            tmp96 = null != authToken;
             const track = closure_132_1(closure_132_2[9]).track;
             const EXTERNAL_DYNAMIC_LINK_RECEIVED = closure_132_8.EXTERNAL_DYNAMIC_LINK_RECEIVED;
             closure_132_1(closure_132_2[9]);
-            if (tmp82) {
-              tmp82 = 0 === authToken.length;
+            if (tmp96) {
+              tmp96 = 0 === authToken.length;
             }
-            let obj26 = null;
+            let obj27 = null;
             if (didRegister) {
-              obj26 = { did_register: true };
+              obj27 = { did_register: true };
             }
-            const merged = Object.assign(obj26);
-            let tmp100 = null;
+            const merged = Object.assign(obj27);
+            let tmp114 = null;
             if (null != fingerprint) {
-              const obj27 = { fingerprint: obj9.extractId(fingerprint) };
-              tmp100 = obj27;
-              obj9 = closure_132_0(closure_132_2[13]);
+              const obj28 = { fingerprint: obj10.extractId(fingerprint) };
+              tmp114 = obj28;
+              obj10 = closure_132_0(closure_132_2[14]);
             }
-            const merged1 = Object.assign(tmp100);
-            track(EXTERNAL_DYNAMIC_LINK_RECEIVED, obj25);
+            const merged1 = Object.assign(tmp114);
+            track(EXTERNAL_DYNAMIC_LINK_RECEIVED, obj26);
           }
-          const tmp112 = null != result1 && null != installationId;
-          if (tmp112) {
-            const obj10 = closure_132_1(closure_132_2[14]);
-            const result2 = obj10.setReceivedInstallationIdForInviteCode(result1, installationId);
+          const tmp126 = null != result2 && null != installationId;
+          if (tmp126) {
+            const obj11 = closure_132_1(closure_132_2[15]);
+            const result3 = obj11.setReceivedInstallationIdForInviteCode(result2, installationId);
           }
-          const tmp124 = null != result1 && didRegister;
-          if (tmp124) {
-            const obj11 = closure_132_0(closure_132_2[15]);
-            const result3 = obj11.setRegistrationHandoff();
+          const tmp138 = null != result2 && didRegister;
+          if (tmp138) {
+            const obj12 = closure_132_0(closure_132_2[16]);
+            const result4 = obj12.setRegistrationHandoff();
           }
-          closure_132_1(closure_132_2[16])(url);
-          const obj28 = { payload, isAppStartupNavigation };
-          closure_132_1(closure_132_2[10])(obj28);
-        } catch (tmp171) {
-          closure_5 = tmp171;
+          closure_132_1(closure_132_2[17])(url);
+          const obj29 = { payload, isAppStartupNavigation };
+          closure_132_1(closure_132_2[10])(obj29);
+        } catch (tmp185) {
+          closure_5 = tmp185;
           if (0 === c6) {
             c8 = 3;
-            throw tmp171;
+            throw tmp185;
           } else {
             c7 = 1;
           }

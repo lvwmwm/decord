@@ -1,14 +1,14 @@
-// Module ID: 12791
-// Function ID: 12792
+// Module ID: 13733
+// Function ID: 13734
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 558, 576, 4850, 4834, 5378, 12792, 5088, 2]
+// Dependencies: [32, 19, 21, 558, 576, 4945, 4929, 5478, 13734, 5187, 2]
 
-// Module 12791 (BalanceCounter)
+// Module 13733 (BalanceCounter)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import react3 from "react" /* 4834 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import spring from "spring" /* 5378 */;
+import react3 from "react" /* 4929 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import spring from "spring" /* 5478 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(5088);
+const Text_Text = tmp(5187);
 let react = react_mod;
 ({ useState: closure_4, useEffect: hasOwnProperty, useRef: metroRequire, useCallback: metroImportDefault } = react);
 react = react_mod;
@@ -223,7 +223,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((value) => {
                       }
                       tmp33[0] = tmp22;
                       tmp33[1] = tmp26;
-                      const tmp34 = jsx(onValueChange(4850).View, tmp33);
+                      const tmp34 = jsx(onValueChange(4945).View, tmp33);
                       cResult[23] = tmp22;
                       cResult[24] = tmp26;
                       cResult[25] = tmp34;
@@ -447,7 +447,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((value) => {
     const items1 = [tmp14, ];
     const obj5 = { minWidth: 7 * first };
     items1[1] = obj5;
-    const View = onValueChange(4850).View;
+    const View = onValueChange(4945).View;
     ({ variant: "text-sm/semibold", style, maxFontSizeMultiplier: 2, children: obj2.toFixed(0) });
     const Text = Text_Text.Text;
     tmp15 = <View style={items1}>{null}</View>;

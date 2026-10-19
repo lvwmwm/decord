@@ -1,9 +1,9 @@
-// Module ID: 13729
-// Function ID: 13730
+// Module ID: 14509
+// Function ID: 14510
 // Name: Constants
 // Dependencies: [2]
 
-// Module 13729 (Constants)
+// Module 14509 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/referral_program/Constants.tsx");
@@ -11,3 +11,4 @@ const result = size.fileFinishedImporting("modules/premium/referral_program/Cons
 export const REFERRAL_TRIAL_OFFER_EXPIRATION_DAYS = 10;
 export const REFERRAL_INCENTIVE_DISCOUNT_PERCENTAGE = 30;
 export const REFERRAL_INCENTIVE_ORBS_PER_CONVERSION = 5000;
+export const ReferralShareModalVariant = { PROFILE: "profile", HD_STREAMING: "hd-streaming" };

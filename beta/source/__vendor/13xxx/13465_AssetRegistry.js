@@ -1,10 +1,10 @@
 // Module ID: 13465
 // Function ID: 13466
 // Name: AssetRegistry
-// Dependencies: [1132]
+// Dependencies: [1134]
 
 // Module 13465 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1132 */;
+import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/quests/images", width: 435, height: 218, scales: [1], hash: "92f827adadc1f86811fd4e36c86fdf27", name: "nitro_modal_header_background", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/empty_channel", width: 48, height: 48, scales: [2, 3], hash: "8d7c88bf2a3c70b7581717d42e9c4ec1", name: "send_message_32px", type: "png" });

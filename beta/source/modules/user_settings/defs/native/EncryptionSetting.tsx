@@ -1,17 +1,17 @@
-// Module ID: 16262
-// Function ID: 16263
+// Module ID: 16953
+// Function ID: 16954
 // Name: EncryptionSetting
-// Dependencies: [5131, 7988, 1085, 558, 576, 504, 16263, 1126, 10664, 16264, 2]
+// Dependencies: [5230, 8260, 1087, 558, 576, 504, 16954, 1128, 11084, 16955, 2]
 
-// Module 16262 (EncryptionSetting)
+// Module 16953 (EncryptionSetting)
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7988 */;
-import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 16263 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5131 */;
+import Constants from "Constants" /* 1087 */;
+import intl2 from "intl" /* 1128 */;
+import SettingsConstants from "SettingsConstants" /* 8260 */;
+import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 16954 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5230 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10664 */;
+import SettingBuilders from "SettingBuilders" /* 11084 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -55,7 +55,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureF
   const obj2 = useSecureFramesVerifiedUsers;
   const secureFramesVerifiedUserIds = obj2.useSecureFramesVerifiedUserIds();
   if (cResult[0] !== secureFramesVerifiedUserIds.length) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const obj3 = { count: secureFramesVerifiedUserIds.length };
     const formatToPlainStringResult = intl.formatToPlainString(intl2.t["6vrePS"], obj3);
     cResult[0] = secureFramesVerifiedUserIds.length;

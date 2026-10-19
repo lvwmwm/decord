@@ -1,17 +1,17 @@
-// Module ID: 15402
-// Function ID: 15403
+// Module ID: 16162
+// Function ID: 16163
 // Name: QuestAccessSuspendedBottomSheet
-// Dependencies: [19, 21, 558, 576, 5056, 15401, 11510, 1126, 10325, 5379, 2]
+// Dependencies: [19, 21, 558, 576, 5155, 16161, 12656, 1128, 10635, 5479, 2]
 
-// Module 15402 (QuestAccessSuspendedBottomSheet)
+// Module 16162 (QuestAccessSuspendedBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import PromoSheet2 from "PromoSheet" /* 10325 */;
-import openAccountStanding from "openAccountStanding" /* 11510 */;
-import openQuestAccessSuspendedBottomSheet from "openQuestAccessSuspendedBottomSheet" /* 15401 */;
+import intl4 from "intl" /* 1128 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import components_Button_Button from "components/Button/Button" /* 5479 */;
+import PromoSheet2 from "PromoSheet" /* 10635 */;
+import openAccountStanding from "openAccountStanding" /* 12656 */;
+import openQuestAccessSuspendedBottomSheet from "openQuestAccessSuspendedBottomSheet" /* 16161 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -38,9 +38,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestAcces
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl4.t.WfwodX);
-    const intl2 = tmp(1126).intl;
+    const intl2 = tmp(1128).intl;
     const stringResult1 = intl2.string(intl4.t.I27WXW);
     cResult[1] = stringResult;
     cResult[2] = stringResult1;
@@ -51,10 +51,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestAcces
     tmp6 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const PromoSheet = tmp(10325).PromoSheet;
+    const PromoSheet = tmp(10635).PromoSheet;
     ({ grow: true, size: "lg", variant: "primary", text: intl3.string(intl4.t.hvVgAZ), onPress: first });
-    const Button = tmp(5379).Button;
-    intl3 = tmp(1126).intl;
+    const Button = tmp(5479).Button;
+    intl3 = tmp(1128).intl;
     const tmp11 = <PromoSheet title={tmp5} description={tmp6} actions={null} />;
     cResult[3] = tmp11;
     tmp9 = tmp11;

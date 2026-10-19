@@ -1,16 +1,16 @@
-// Module ID: 12832
-// Function ID: 12833
+// Module ID: 13762
+// Function ID: 13763
 // Name: ContextMenuSubmenuActionSheetHeader
-// Dependencies: [19, 17, 21, 5092, 558, 576, 1126, 8558, 2]
+// Dependencies: [19, 17, 21, 5191, 558, 576, 1128, 8838, 2]
 
-// Module 12832 (ContextMenuSubmenuActionSheetHeader)
+// Module 13762 (ContextMenuSubmenuActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1126 */;
-import ActionSheetHeaderPressableText2 from "ActionSheetHeaderPressableText" /* 8558 */;
+import intl2 from "intl" /* 1128 */;
+import ActionSheetHeaderPressableText2 from "ActionSheetHeaderPressableText" /* 8838 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMen
   const tmp4 = closure_4();
   const headerContainer = tmp4.headerContainer;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1126).intl;
+    const intl = tmp(1128).intl;
     const stringResult = intl.string(intl2.t["13/7kX"]);
     cResult[0] = stringResult;
     first = stringResult;

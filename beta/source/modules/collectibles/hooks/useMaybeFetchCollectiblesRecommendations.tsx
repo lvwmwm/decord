@@ -1,13 +1,13 @@
-// Module ID: 14959
-// Function ID: 14960
+// Module ID: 15721
+// Function ID: 15722
 // Name: useMaybeFetchCollectiblesRecommendations
-// Dependencies: [19, 1390, 13475, 558, 576, 13476, 504, 14960, 2]
+// Dependencies: [19, 1392, 14254, 558, 576, 14255, 504, 15722, 2]
 
-// Module 14959 (useMaybeFetchCollectiblesRecommendations)
+// Module 15721 (useMaybeFetchCollectiblesRecommendations)
 import react from "react" /* 19 */;
-import CollectiblesRecommendationActionCreators from "CollectiblesRecommendationActionCreators" /* 14960 */;
-import UserStore from "UserStore" /* 1390 */;
-import CollectiblesRecommendationStore from "CollectiblesRecommendationStore" /* 13475 */;
+import CollectiblesRecommendationActionCreators from "CollectiblesRecommendationActionCreators" /* 15722 */;
+import UserStore from "UserStore" /* 1392 */;
+import CollectiblesRecommendationStore from "CollectiblesRecommendationStore" /* 14254 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

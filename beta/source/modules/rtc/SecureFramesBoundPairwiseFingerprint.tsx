@@ -1,14 +1,14 @@
-// Module ID: 8831
-// Function ID: 8832
+// Module ID: 9108
+// Function ID: 9109
 // Name: SecureFramesBoundPairwiseFingerprint
-// Dependencies: [5, 502, 5110, 8825, 206, 8809, 2]
+// Dependencies: [5, 502, 5209, 9102, 206, 9086, 2]
 // Exports: computeBoundPairwiseFingerprint
 
-// Module 8831 (SecureFramesBoundPairwiseFingerprint)
-import SecureFramesConstants from "SecureFramesConstants" /* 8825 */;
+// Module 9108 (SecureFramesBoundPairwiseFingerprint)
+import SecureFramesConstants from "SecureFramesConstants" /* 9102 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
