@@ -1,14 +1,14 @@
-// Module ID: 9213
-// Function ID: 9214
+// Module ID: 9225
+// Function ID: 9226
 // Name: XboxNeutralIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9214, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9226, 5630, 2]
 
-// Module 9213 (XboxNeutralIcon)
+// Module 9225 (XboxNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 9214 */;
+import AssetRegistry from "AssetRegistry" /* 9226 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

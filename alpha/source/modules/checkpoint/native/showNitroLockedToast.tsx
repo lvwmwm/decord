@@ -1,14 +1,14 @@
-// Module ID: 12822
-// Function ID: 12823
+// Module ID: 12840
+// Function ID: 12841
 // Name: showNitroLockedToast
-// Dependencies: [5993, 3078, 1128, 5624, 2]
+// Dependencies: [5996, 3078, 1128, 5624, 2]
 // Exports: default, getNitroLockedMessage
 
-// Module 12822 (showNitroLockedToast)
+// Module 12840 (showNitroLockedToast)
 import intl2 from "intl" /* 1128 */;
 import _modDef3078 from "module_3078" /* 3078 */;
 import ToastUtils from "ToastUtils" /* 5624 */;
-import CheckpointTrait from "CheckpointTrait" /* 5993 */;
+import CheckpointTrait from "CheckpointTrait" /* 5996 */;
 import size from "module_2" /* 2 */;
 
 let obj = {};

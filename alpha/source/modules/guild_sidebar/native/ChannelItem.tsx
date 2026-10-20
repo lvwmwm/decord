@@ -1,9 +1,9 @@
-// Module ID: 17287
-// Function ID: 17288
+// Module ID: 17306
+// Function ID: 17307
 // Name: ChannelItem
-// Dependencies: [109, 19, 17, 5674, 4890, 1392, 1087, 4807, 6653, 21, 4945, 587, 6655, 13071, 558, 576, 1417, 5631, 17288, 8491, 8447, 504, 1202, 5948, 1114, 17289, 5565, 2]
+// Dependencies: [109, 19, 17, 5674, 4890, 1392, 1087, 4807, 6656, 21, 4945, 587, 6658, 13089, 558, 576, 1417, 5631, 17307, 8495, 8451, 504, 1202, 5951, 1114, 17308, 5565, 2]
 
-// Module 17287 (ChannelItem)
+// Module 17306 (ChannelItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,12 +11,12 @@ import router_utils from "router_utils" /* 1114 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import ChannelConstants from "ChannelConstants" /* 4807 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import ReadStateConstants from "ReadStateConstants" /* 6653 */;
-import LegacyTokens from "LegacyTokens" /* 6655 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8447 */;
-import BookCheckIcon2 from "BookCheckIcon" /* 8491 */;
-import BaseChannelItem from "BaseChannelItem" /* 13071 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17288 */;
+import ReadStateConstants from "ReadStateConstants" /* 6656 */;
+import LegacyTokens from "LegacyTokens" /* 6658 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8451 */;
+import BookCheckIcon2 from "BookCheckIcon" /* 8495 */;
+import BaseChannelItem from "BaseChannelItem" /* 13089 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17307 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5674 */;
@@ -159,7 +159,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     }
     if (tmp5) {
       tmp12 = AssetRegistryDefault;
-      BookCheckIcon = tmp(8491).BookCheckIcon;
+      BookCheckIcon = tmp(8495).BookCheckIcon;
     } else {
       if (cResult[10] === channel) {
         if (cResult[11] === locked) {
@@ -218,7 +218,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       }
     }
     const obj10 = { mode, source: tmp12, isChannelLive, style: channelIconLive };
-    const BaseChannelIcon = tmp(13071).BaseChannelIcon;
+    const BaseChannelIcon = tmp(13089).BaseChannelIcon;
     const merged = Object.assign(tmp17);
     const tmp24 = syncedClientThemes(BaseChannelIcon, obj10);
     cResult[18] = tmp12;
@@ -278,7 +278,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     }
     const obj8 = { mode: tmp3, source: tmp13, isChannelLive, style: channelIconLive };
     channelIconLive = undefined;
-    const BaseChannelIcon = tmp10(13071).BaseChannelIcon;
+    const BaseChannelIcon = tmp10(13089).BaseChannelIcon;
     const tmp17 = syncedClientThemes;
     if (isChannelLive) {
       channelIconLive = tmp.channelIconLive;

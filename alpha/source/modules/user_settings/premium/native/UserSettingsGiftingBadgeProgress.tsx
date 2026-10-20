@@ -1,17 +1,17 @@
-// Module ID: 14682
-// Function ID: 14683
+// Module ID: 14700
+// Function ID: 14701
 // Name: UserSettingsGiftingBadgeProgress
-// Dependencies: [32, 19, 17, 8606, 21, 4945, 587, 558, 576, 7199, 7224, 8598, 504, 5195, 1128, 2622, 10420, 10423, 12693, 5205, 10364, 14683, 10871, 2]
+// Dependencies: [32, 19, 17, 8618, 21, 4945, 587, 558, 576, 7202, 7227, 8610, 504, 5195, 1128, 2622, 10431, 10434, 12710, 5205, 10375, 14701, 10882, 2]
 
-// Module 14682 (UserSettingsGiftingBadgeProgress)
+// Module 14700 (UserSettingsGiftingBadgeProgress)
 import nativeDefault from "native" /* 587 */;
 import _modDef2622 from "module_2622" /* 2622 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7199 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7224 */;
-import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8606 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10364 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10420 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10423 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7202 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7227 */;
+import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8618 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10375 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10431 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10434 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -493,7 +493,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
                                                 const _Symbol = Symbol;
                                                 if (cResult[84] === Symbol.for("react.memo_cache_sentinel")) {
                                                   let obj3 = { size: "sm", color: nativeDefault.unsafe_rawColors.WHITE };
-                                                  const GiftIcon = tmp(12693).GiftIcon;
+                                                  const GiftIcon = tmp(12710).GiftIcon;
                                                   const tmp83 = closure_9(GiftIcon, obj3);
                                                   const intl4 = tmp(1128).intl;
                                                   const stringResult = intl4.string(_modDef2622.DZnomS);
@@ -548,9 +548,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
                                                     let ChevronSmallDownIcon;
                                                     const tmp97 = closure_9;
                                                     if (tmp6) {
-                                                      ChevronSmallDownIcon = tmp(14683).ChevronSmallUpIcon;
+                                                      ChevronSmallDownIcon = tmp(14701).ChevronSmallUpIcon;
                                                     } else {
-                                                      ChevronSmallDownIcon = tmp(10871).ChevronSmallDownIcon;
+                                                      ChevronSmallDownIcon = tmp(10882).ChevronSmallDownIcon;
                                                     }
                                                     let obj6 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
                                                     const tmp97Result = tmp97(ChevronSmallDownIcon, obj6);
@@ -787,7 +787,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           tmp29 = cResult[35];
         }
         if (cResult[36] !== currentTier) {
-          const tmpResult4 = tmp(10420);
+          const tmpResult4 = tmp(10431);
           let giftingBadgeTierIconUrl = tmpResult4.getGiftingBadgeTierIconUrl(currentTier);
           cResult[36] = currentTier;
           cResult[37] = giftingBadgeTierIconUrl;
@@ -796,7 +796,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           tmp31 = cResult[37];
         }
         if (cResult[38] !== nextTier) {
-          const tmpResult5 = tmp(10420);
+          const tmpResult5 = tmp(10431);
           const giftingBadgeTierIconUrl1 = tmpResult5.getGiftingBadgeTierIconUrl(nextTier);
           cResult[38] = nextTier;
           cResult[39] = giftingBadgeTierIconUrl1;
@@ -872,7 +872,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           let tmp47 = null != tmp31;
           if (tmp47) {
             const obj19 = { icon: tmp31, size: 36, style: { margin: 4 } };
-            tmp47 = closure_9(tmp7(10423), obj19);
+            tmp47 = closure_9(tmp7(10434), obj19);
           }
           cResult[45] = tmp31;
           cResult[46] = tmp47;
@@ -890,7 +890,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
             let tmp53 = null != tmp33;
             if (tmp53) {
               const obj20 = { icon: tmp33, size: 36, style: { margin: 4 } };
-              tmp53 = closure_9(tmp7(10423), obj20);
+              tmp53 = closure_9(tmp7(10434), obj20);
             }
             cResult[50] = tmp33;
             cResult[51] = tmp53;
@@ -1017,7 +1017,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
         tmp49 = tmp51;
       }
     }
-    const tmpResult6 = tmp(10420);
+    const tmpResult6 = tmp(10431);
     const giftingBadgeProgressPercent = tmpResult6.getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
     cResult[32] = badgeProgress;
     cResult[33] = currentTier;
@@ -1095,11 +1095,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     let ChevronSmallDownIcon;
     let tmp19 = closure_8(currentTier);
     const tmp25 = closure_8(nextTier);
-    const tmp7Result = analyticsLocation(10420);
+    const tmp7Result = analyticsLocation(10431);
     const giftingBadgeProgressPercent = tmp7Result.getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
-    const tmp7Result3 = analyticsLocation(10420);
+    const tmp7Result3 = analyticsLocation(10431);
     let giftingBadgeTierIconUrl = tmp7Result3.getGiftingBadgeTierIconUrl(currentTier);
-    const tmp7Result4 = analyticsLocation(10420);
+    const tmp7Result4 = analyticsLocation(10431);
     const giftingBadgeTierIconUrl1 = tmp7Result4.getGiftingBadgeTierIconUrl(nextTier);
     if (null != nextTier) {
       const intl2 = tmp7(1128).intl;
@@ -1134,7 +1134,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     const obj7 = { style: tmp.progressRow, children: items1 };
     if (tmp13) {
       const obj8 = { icon: giftingBadgeTierIconUrl, size: 36, style: { margin: 4 } };
-      tmp13 = closure_9(tmp4(10423), obj8);
+      tmp13 = closure_9(tmp4(10434), obj8);
     }
     items1 = [tmp13, , ];
     const obj9 = { style: tmp.progressTitleText, variant: "text-md/medium", color: "text-strong", children: formatToPlainString2Result };
@@ -1142,7 +1142,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     let tmp15Result = null != giftingBadgeTierIconUrl1;
     if (tmp15Result) {
       const obj10 = { icon: giftingBadgeTierIconUrl1, size: 36, style: { margin: 4 } };
-      tmp15Result = tmp15(tmp4(10423), obj10);
+      tmp15Result = tmp15(tmp4(10434), obj10);
     }
     items1[2] = tmp15Result;
     items2 = [tmp11(tmp12, obj7), ];
@@ -1184,7 +1184,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     };
     const Button = tmp7(5205).Button;
     obj19 = { size: "sm", color: nativeDefault.unsafe_rawColors.WHITE };
-    GiftIcon = tmp7(12693).GiftIcon;
+    GiftIcon = tmp7(12710).GiftIcon;
     intl4 = tmp7(1128).intl;
     items5[1] = closure_9(Button, obj18);
     const obj20 = { style: tmp.divider };
@@ -1202,9 +1202,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     items6 = [closure_9(Text2, obj22), ];
     const tmp20 = closure_5;
     if (tmp11Result) {
-      ChevronSmallDownIcon = tmp7(14683).ChevronSmallUpIcon;
+      ChevronSmallDownIcon = tmp7(14701).ChevronSmallUpIcon;
     } else {
-      ChevronSmallDownIcon = tmp7(10871).ChevronSmallDownIcon;
+      ChevronSmallDownIcon = tmp7(10882).ChevronSmallDownIcon;
     }
     const obj23 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
     items6[1] = closure_9(ChevronSmallDownIcon, obj23);

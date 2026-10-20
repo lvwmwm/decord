@@ -1,25 +1,25 @@
-// Module ID: 16649
-// Function ID: 16650
+// Module ID: 16668
+// Function ID: 16669
 // Name: CopyClientInfoSetting
-// Dependencies: [10820, 21, 1383, 5171, 12539, 7231, 5624, 558, 576, 1128, 11128, 7240, 7194, 1384, 7244, 5644, 4902, 11099, 6788, 4776, 2]
+// Dependencies: [10831, 21, 1383, 5171, 12556, 7234, 5624, 558, 576, 1128, 7695, 7243, 7197, 1384, 7247, 5644, 4902, 11111, 6791, 4776, 2]
 // Exports: getClientInfoString
 
-// Module 16649 (CopyClientInfoSetting)
+// Module 16668 (CopyClientInfoSetting)
 import react from "react" /* 576 */;
 import intl8 from "intl" /* 1128 */;
 import UserSettings from "UserSettings" /* 4776 */;
 import DeviceUtils from "DeviceUtils" /* 4902 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import ToastUtils from "ToastUtils" /* 5624 */;
-import ClipboardListIcon from "ClipboardListIcon" /* 6788 */;
-import ClipboardUtils from "ClipboardUtils" /* 7231 */;
-import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 11128 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12539 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 10820 */;
+import ClipboardListIcon from "ClipboardListIcon" /* 6791 */;
+import ClipboardUtils from "ClipboardUtils" /* 7234 */;
+import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 7695 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12556 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10831 */;
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 1383 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11099 */;
+import SettingBuilders from "SettingBuilders" /* 11111 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -27,9 +27,9 @@ let hasOwnProperty;
 let tmp;
 const PlatformUtils = tmp(1384);
 const CopyIcon = tmp(5644);
-const BottomSheetTitleHeader2 = tmp(7194);
-const ActionSheetRow7 = tmp(7240);
-const ActionSheet2 = tmp(7244);
+const BottomSheetTitleHeader2 = tmp(7197);
+const ActionSheetRow7 = tmp(7243);
+const ActionSheet2 = tmp(7247);
 function getClientInfo() {
   let str10;
   const overrides = BuildOverrideStore.getCurrentBuildOverride().overrides;
@@ -92,7 +92,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function IOSAnch
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
     const string = intl.string;
-    const tmpResult = subLabel(11128);
+    const tmpResult = subLabel(7695);
     let result = tmpResult.isIOSAnchoredChatScrollerEnabled();
     const t = tmp(1128).t;
     const stringResult = string(result ? t.LfEwvz : t["pe/6Ma"]);
@@ -120,7 +120,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function IOSAnch
           const result = obj2.presentCopiedToClipboard();
         }
     };
-    const tmp11 = closure_4(subLabel(7240).ActionSheetRow, obj2);
+    const tmp11 = closure_4(subLabel(7243).ActionSheetRow, obj2);
     cResult[2] = tmp11;
     tmp9 = tmp11;
   } else {
@@ -146,7 +146,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function IOSAnch
       const result = obj2.presentCopiedToClipboard();
     }
   };
-  const ActionSheetRow = tmp(7240).ActionSheetRow;
+  const ActionSheetRow = tmp(7243).ActionSheetRow;
   intl2 = tmp(1128).intl;
   return closure_4(ActionSheetRow, obj2);
 });
@@ -485,7 +485,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientC
   items[5] = tmp4Result;
   items1 = [tmp(Group, { hasIcons: false, children: items }), ];
   const obj9 = { hasIcons: true, children: React3(ActionSheetRow6, obj10) };
-  const Group2 = tmp2(7240).ActionSheetRow.Group;
+  const Group2 = tmp2(7243).ActionSheetRow.Group;
   obj10 = {
     icon: React3(CopyIcon.CopyIcon, {}),
     label: intl7.string(intl8.t["7dqZ6H"]),
@@ -508,7 +508,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientC
       const result = obj4.presentCopiedToClipboard();
     }
   };
-  ActionSheetRow6 = tmp2(7240).ActionSheetRow;
+  ActionSheetRow6 = tmp2(7243).ActionSheetRow;
   intl7 = tmp2(1128).intl;
   items1[1] = React3(Group2, obj9);
   return tmp(ActionSheet, obj);

@@ -1,17 +1,17 @@
-// Module ID: 17136
-// Function ID: 17137
+// Module ID: 17155
+// Function ID: 17156
 // Name: AgeGateUnderage
-// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 6985, 1505, 6872, 6878, 1128, 7016, 7019, 7846, 7015, 2068, 5195, 5205, 2]
+// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 6988, 1505, 6875, 6881, 1128, 7019, 7022, 7850, 7018, 2068, 5195, 5205, 2]
 
-// Module 17136 (AgeGateUnderage)
+// Module 17155 (AgeGateUnderage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2068 */;
-import NavigatorHeader from "NavigatorHeader" /* 6872 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6985 */;
-import AuthHeaderDefault from "AuthHeader" /* 7015 */;
-import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 7019 */;
+import NavigatorHeader from "NavigatorHeader" /* 6875 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6988 */;
+import AuthHeaderDefault from "AuthHeader" /* 7018 */;
+import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 7022 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -85,7 +85,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
         } else {
           tmp15 = cResult[7];
         }
-        const tmpResult2 = onClose(6878);
+        const tmpResult2 = onClose(6881);
         tmpResult2.useNavigatorBackPressHandler(tmp15);
         if (cResult[8] !== (undefined !== existingUser && existingUser)) {
           let stringResult;
@@ -106,7 +106,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
         if (cResult[10] !== tmp8) {
           let tmp20 = null;
           if (!tmp8) {
-            tmp20 = closure_6(tmp7(7016), {});
+            tmp20 = closure_6(tmp7(7019), {});
           }
           cResult[10] = tmp8;
           cResult[11] = tmp20;
@@ -117,7 +117,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnder
         const _Symbol = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
           const tmp26 = closure_6(AuthNavbarPlaceholderDefault, {});
-          const tmp27 = closure_6(onClose(7846).ShieldSpotIllustration, {});
+          const tmp27 = closure_6(onClose(7850).ShieldSpotIllustration, {});
           cResult[12] = tmp27;
           cResult[13] = tmp26;
           tmp24 = tmp26;

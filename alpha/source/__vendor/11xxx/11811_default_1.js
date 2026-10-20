@@ -1,11 +1,11 @@
 // Module ID: 11811
 // Function ID: 11812
 // Name: default_1
-// Dependencies: [11772]
+// Dependencies: [11786]
 // Exports: default
 
 // Module 11811 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 11772 */;
+import captureStackTrace2 from "captureStackTrace" /* 11786 */;
 
 let hasOwnProperty;
 
@@ -109,10 +109,10 @@ export default function default_1() {
               const obj = /^[A-Z]/;
               if (obj.test(code.expected)) {
                 const _HermesInternal17 = HermesInternal;
-                combined = "\u0646\u0627\u0633\u0645 \u0648\u0631\u0648\u062F\u064A: \u0628\u0627\u06CC\u062F instanceof " + code.expected + " \u0648\u0627\u06CC, \u0645\u06AB\u0631 " + tmp48 + " \u062A\u0631\u0644\u0627\u0633\u0647 \u0634\u0648";
+                combined = "Input tidak valid: diharapkan instanceof " + code.expected + ", diterima " + tmp48;
               } else {
                 const _HermesInternal16 = HermesInternal;
-                combined = "\u0646\u0627\u0633\u0645 \u0648\u0631\u0648\u062F\u064A: \u0628\u0627\u06CC\u062F " + expected + " \u0648\u0627\u06CC, \u0645\u06AB\u0631 " + tmp48 + " \u062A\u0631\u0644\u0627\u0633\u0647 \u0634\u0648";
+                combined = "Input tidak valid: diharapkan " + expected + ", diterima " + tmp48;
               }
               return combined;
             }
@@ -121,38 +121,38 @@ export default function default_1() {
               let combined1;
               if (1 === code.values.length) {
                 const _HermesInternal15 = HermesInternal;
-                combined1 = "\u0646\u0627\u0633\u0645 \u0648\u0631\u0648\u062F\u064A: \u0628\u0627\u06CC\u062F " + captureStackTrace.stringifyPrimitive(code.values[0]) + " \u0648\u0627\u06CC";
+                combined1 = "Input tidak valid: diharapkan " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
                 const _HermesInternal14 = HermesInternal;
-                combined1 = "\u0646\u0627\u0633\u0645 \u0627\u0646\u062A\u062E\u0627\u0628: \u0628\u0627\u06CC\u062F \u06CC\u0648 \u0644\u0647 " + captureStackTrace.joinValues(code.values, "|") + " \u0685\u062E\u0647 \u0648\u0627\u06CC";
+                combined1 = "Pilihan tidak valid: diharapkan salah satu dari " + captureStackTrace.joinValues(code.values, "|");
               }
               return combined1;
             }
             case "too_big":
             {
               let combined2;
-              let str31 = "<";
+              let str25 = "<";
               if (code.inclusive) {
-                str31 = "<=";
+                str25 = "<=";
               }
-              let str32 = code.origin;
+              let str26 = code.origin;
               if (obj2[code.origin] ?? null) {
-                if (str32 == null) {
-                  str32 = "\u0627\u0631\u0632\u069A\u062A";
+                if (str26 == null) {
+                  str26 = "value";
                 }
-                const str38 = code.maximum;
+                const str31 = code.maximum;
                 const _HermesInternal13 = HermesInternal;
-                const str1 = str38.toString();
-                const str39 = (obj2[code.origin] ?? null).unit ?? "\u0639\u0646\u0635\u0631\u0648\u0646\u0647";
-                combined2 = "\u0689\u06CC\u0631 \u0644\u0648\u06CC: " + str32 + " \u0628\u0627\u06CC\u062F " + str31 + str1 + " " + str39 + " \u0648\u0644\u0631\u064A";
+                const str1 = str31.toString();
+                const str32 = (obj2[code.origin] ?? null).unit ?? "elemen";
+                combined2 = "Terlalu besar: diharapkan " + str26 + " memiliki " + str25 + str1 + " " + str32;
               } else {
-                let str33 = str32;
-                if (str32 == null) {
-                  str33 = "\u0627\u0631\u0632\u069A\u062A";
+                let str27 = str26;
+                if (str26 == null) {
+                  str27 = "value";
                 }
                 const _HermesInternal12 = HermesInternal;
-                const str34 = code.maximum;
-                combined2 = "\u0689\u06CC\u0631 \u0644\u0648\u06CC: " + str33 + " \u0628\u0627\u06CC\u062F " + str31 + str34.toString() + " \u0648\u064A";
+                const str28 = code.maximum;
+                combined2 = "Terlalu besar: diharapkan " + str27 + " menjadi " + str25 + str28.toString();
               }
               return combined2;
             }
@@ -161,18 +161,18 @@ export default function default_1() {
               let combined3;
               let minimum;
               let origin;
-              let str23 = ">";
+              let str19 = ">";
               if (code.inclusive) {
-                str23 = ">=";
+                str19 = ">=";
               }
               ({ origin, minimum } = code);
-              const str58 = minimum.toString();
+              const str46 = minimum.toString();
               if (obj2[code.origin] ?? null) {
                 const _HermesInternal11 = HermesInternal;
-                combined3 = "\u0689\u06CC\u0631 \u06A9\u0648\u0686\u0646\u06CC: " + origin + " \u0628\u0627\u06CC\u062F " + str23 + str58 + " " + tmp15.unit + " \u0648\u0644\u0631\u064A";
+                combined3 = "Terlalu kecil: diharapkan " + origin + " memiliki " + str19 + str46 + " " + tmp15.unit;
               } else {
                 const _HermesInternal10 = HermesInternal;
-                combined3 = "\u0689\u06CC\u0631 \u06A9\u0648\u0686\u0646\u06CC: " + origin + " \u0628\u0627\u06CC\u062F " + str23 + str58 + " \u0648\u064A";
+                combined3 = "Terlalu kecil: diharapkan " + origin + " menjadi " + str19 + str46;
               }
               return combined3;
             }
@@ -181,61 +181,61 @@ export default function default_1() {
               let combined4;
               if ("starts_with" === code.format) {
                 const _HermesInternal9 = HermesInternal;
-                combined4 = "\u0646\u0627\u0633\u0645 \u0645\u062A\u0646: \u0628\u0627\u06CC\u062F \u062F \"" + code.prefix + "\" \u0633\u0631\u0647 \u067E\u06CC\u0644 \u0634\u064A";
+                combined4 = "String tidak valid: harus dimulai dengan \"" + code.prefix + "\"";
               } else if ("ends_with" === code.format) {
                 const _HermesInternal8 = HermesInternal;
-                combined4 = "\u0646\u0627\u0633\u0645 \u0645\u062A\u0646: \u0628\u0627\u06CC\u062F \u062F \"" + code.suffix + "\" \u0633\u0631\u0647 \u067E\u0627\u06CC \u062A\u0647 \u0648\u0631\u0633\u064A\u0696\u064A";
+                combined4 = "String tidak valid: harus berakhir dengan \"" + code.suffix + "\"";
               } else if ("includes" === code.format) {
                 const _HermesInternal7 = HermesInternal;
-                combined4 = "\u0646\u0627\u0633\u0645 \u0645\u062A\u0646: \u0628\u0627\u06CC\u062F \"" + code.includes + "\" \u0648\u0644\u0631\u064A";
+                combined4 = "String tidak valid: harus menyertakan \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
                 const _HermesInternal6 = HermesInternal;
-                combined4 = "\u0646\u0627\u0633\u0645 \u0645\u062A\u0646: \u0628\u0627\u06CC\u062F \u062F " + code.pattern + " \u0633\u0631\u0647 \u0645\u0637\u0627\u0628\u0642\u062A \u0648\u0644\u0631\u064A";
+                combined4 = "String tidak valid: harus sesuai pola " + code.pattern;
               } else {
                 const format = closure_1[code.format] ?? code.format;
                 const _HermesInternal5 = HermesInternal;
-                combined4 = "" + format + " \u0646\u0627\u0633\u0645 \u062F\u06CC";
+                combined4 = "" + format + " tidak valid";
               }
               return combined4;
             }
             case "not_multiple_of":
             {
               const _HermesInternal4 = HermesInternal;
-              return "\u0646\u0627\u0633\u0645 \u0639\u062F\u062F: \u0628\u0627\u06CC\u062F \u062F " + code.divisor + " \u0645\u0636\u0631\u0628 \u0648\u064A";
+              return "Angka tidak valid: harus kelipatan dari " + code.divisor;
             }
             case "unrecognized_keys":
             {
-              let str5 = "\u06A9\u0644\u06CC\u0689";
+              let str3 = "";
               if (code.keys.length > 1) {
-                str5 = "\u06A9\u0644\u06CC\u0689\u0648\u0646\u0647";
+                str3 = "s";
               }
               const _HermesInternal3 = HermesInternal;
-              return "\u0646\u0627\u0633\u0645 " + str5 + ": " + captureStackTrace.joinValues(code.keys, ", ");
+              return "Kunci tidak dikenali " + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
               const _HermesInternal2 = HermesInternal;
-              return "\u0646\u0627\u0633\u0645 \u06A9\u0644\u06CC\u0689 \u067E\u0647 " + code.origin + " \u06A9\u06D0";
+              return "Kunci tidak valid di " + code.origin;
             }
             case "invalid_union":
             {
-              return "\u0646\u0627\u0633\u0645\u0647 \u0648\u0631\u0648\u062F\u064A";
+              return "Input tidak valid";
             }
             case "invalid_element":
             {
               const _HermesInternal = HermesInternal;
-              return "\u0646\u0627\u0633\u0645 \u0639\u0646\u0635\u0631 \u067E\u0647 " + code.origin + " \u06A9\u06D0";
+              return "Nilai tidak valid di " + code.origin;
             }
             default:
             {
-              return "\u0646\u0627\u0633\u0645\u0647 \u0648\u0631\u0648\u062F\u064A";
+              return "Input tidak valid";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "\u062A\u0648\u06A9\u064A", verb: "\u0648\u0644\u0631\u064A" }, file: { unit: "\u0628\u0627\u06CC\u067C\u0633", verb: "\u0648\u0644\u0631\u064A" }, array: { unit: "\u062A\u0648\u06A9\u064A", verb: "\u0648\u0644\u0631\u064A" }, set: { unit: "\u062A\u0648\u06A9\u064A", verb: "\u0648\u0644\u0631\u064A" } };
-    closure_1 = { regex: "\u0648\u0631\u0648\u062F\u064A", email: "\u0628\u0631\u06CC\u069A\u0646\u0627\u0644\u06CC\u06A9", url: "\u06CC\u0648 \u0622\u0631 \u0627\u0644", emoji: "\u0627\u06CC\u0645\u0648\u062C\u064A", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "\u0646\u06CC\u067C\u0647 \u0627\u0648 \u0648\u062E\u062A", date: "\u0646\u06D0\u067C\u0647", time: "\u0648\u062E\u062A", duration: "\u0645\u0648\u062F\u0647", ipv4: "\u062F IPv4 \u067E\u062A\u0647", ipv6: "\u062F IPv6 \u067E\u062A\u0647", cidrv4: "\u062F IPv4 \u0633\u0627\u062D\u0647", cidrv6: "\u062F IPv6 \u0633\u0627\u062D\u0647", base64: "base64-encoded \u0645\u062A\u0646", base64url: "base64url-encoded \u0645\u062A\u0646", json_string: "JSON \u0645\u062A\u0646", e164: "\u062F E.164 \u0634\u0645\u06D0\u0631\u0647", jwt: "JWT", template_literal: "\u0648\u0631\u0648\u062F\u064A" };
-    let closure_2 = { nan: "NaN", number: "\u0639\u062F\u062F", array: "\u0627\u0631\u06D0" };
+    const obj2 = { string: { unit: "karakter", verb: "memiliki" }, file: { unit: "byte", verb: "memiliki" }, array: { unit: "item", verb: "memiliki" }, set: { unit: "item", verb: "memiliki" } };
+    closure_1 = { regex: "input", email: "alamat email", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "tanggal dan waktu format ISO", date: "tanggal format ISO", time: "jam format ISO", duration: "durasi format ISO", ipv4: "alamat IPv4", ipv6: "alamat IPv6", cidrv4: "rentang alamat IPv4", cidrv6: "rentang alamat IPv6", base64: "string dengan enkode base64", base64url: "string dengan enkode base64url", json_string: "string JSON", e164: "angka E.164", jwt: "JWT", template_literal: "input" };
+    let closure_2 = { nan: "NaN" };
     return obj;
   } else {
     throw new TypeError("Trying to call a non-function");

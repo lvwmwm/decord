@@ -1,18 +1,18 @@
-// Module ID: 17441
-// Function ID: 17442
+// Module ID: 17460
+// Function ID: 17461
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 4946, 4881, 4822, 1087, 21, 4945, 587, 504, 1417, 1452, 1499, 1267, 6778, 7265, 7395, 7394, 1128, 9324, 5631, 9157, 1202, 5195, 5205, 9676, 7903, 9558, 2]
+// Dependencies: [5, 32, 19, 17, 4946, 4881, 4822, 1087, 21, 4945, 587, 504, 1417, 1452, 1499, 1267, 6781, 7268, 7398, 7397, 1128, 9336, 5631, 9169, 1202, 5195, 5205, 9689, 7907, 9571, 2]
 // Exports: default
 
-// Module 17441 (GameCommunityMultiGuildUpsellCard)
+// Module 17460 (GameCommunityMultiGuildUpsellCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
-import transitionToGuild from "transitionToGuild" /* 7395 */;
-import IconButton2 from "IconButton" /* 7903 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9558 */;
+import transitionToGuild from "transitionToGuild" /* 7398 */;
+import IconButton2 from "IconButton" /* 7907 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9571 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

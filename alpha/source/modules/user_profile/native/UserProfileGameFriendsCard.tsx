@@ -1,12 +1,12 @@
-// Module ID: 14214
-// Function ID: 14215
+// Module ID: 14232
+// Function ID: 14233
 // Name: UserProfileGameFriendsCard
-// Dependencies: [19, 21, 4945, 558, 576, 7203, 1128, 13353, 5195, 7249, 2]
+// Dependencies: [19, 21, 4945, 558, 576, 7206, 1128, 13371, 5195, 7252, 2]
 
-// Module 14214 (UserProfileGameFriendsCard)
+// Module 14232 (UserProfileGameFriendsCard)
 import Fragment from "Fragment" /* 21 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7203 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13353 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7206 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13371 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 let dependencyMap, importDefault;
 
 let tmp5;
-const UserProfileCardDefault = tmp5(7249);
+const UserProfileCardDefault = tmp5(7252);
 let jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ card: { flexDirection: "column" } });
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileGameFriendsCard(style) {

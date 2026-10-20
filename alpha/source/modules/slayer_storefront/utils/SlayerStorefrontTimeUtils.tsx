@@ -1,15 +1,15 @@
-// Module ID: 10428
-// Function ID: 10429
+// Module ID: 10439
+// Function ID: 10440
 // Name: SlayerStorefrontTimeUtils
-// Dependencies: [32, 19, 2050, 1104, 558, 576, 7501, 1128, 3690, 2]
+// Dependencies: [32, 19, 2050, 1104, 558, 576, 7504, 1128, 3690, 2]
 
-// Module 10428 (SlayerStorefrontTimeUtils)
+// Module 10439 (SlayerStorefrontTimeUtils)
 import react2 from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef2050 from "module_2050" /* 2050 */;
 import _modDef3690 from "module_3690" /* 3690 */;
-import useIntervalDefault from "useInterval" /* 7501 */;
+import useIntervalDefault from "useInterval" /* 7504 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 12111
-// Function ID: 12112
+// Module ID: 12126
+// Function ID: 12127
 // Name: MediaKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 1629, 1087, 21, 1630, 1384, 4945, 587, 558, 576, 1128, 12068, 4999, 5107, 5230, 5015, 5173, 5174, 1267, 5228, 5120, 5926, 5014, 5224, 1633, 5923, 2]
+// Dependencies: [32, 19, 17, 1629, 1087, 21, 1630, 1384, 4945, 587, 558, 576, 1128, 12083, 4999, 5107, 5230, 5015, 5173, 5174, 1267, 5228, 5120, 5929, 5014, 5224, 1633, 5926, 2]
 
-// Module 12111 (MediaKeyboardBottomSheet)
+// Module 12126 (MediaKeyboardBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

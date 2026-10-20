@@ -1,10 +1,10 @@
-// Module ID: 18650
-// Function ID: 18651
+// Module ID: 18673
+// Function ID: 18674
 // Name: ParentalConsentWarningModal
-// Dependencies: [19, 17, 7591, 7592, 1087, 4797, 21, 4784, 7593, 5112, 7436, 6623, 4945, 587, 1633, 1128, 2526, 1267, 584, 4785, 5171, 6620, 18651, 2002, 5226, 5932, 18652, 5195, 5205, 2]
+// Dependencies: [19, 17, 7594, 7595, 1087, 4797, 21, 4784, 7596, 5112, 7439, 6626, 4945, 587, 1633, 1128, 2526, 1267, 584, 4785, 5171, 6623, 18674, 2002, 5226, 5935, 18675, 5195, 5205, 2]
 // Exports: default
 
-// Module 18650 (ParentalConsentWarningModal)
+// Module 18673 (ParentalConsentWarningModal)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,12 +15,12 @@ import DismissibleContentUtils from "DismissibleContentUtils" /* 4785 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
 import RootNavigationRef from "RootNavigationRef" /* 5112 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
-import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 6623 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7593 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 6626 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7596 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7591 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7592 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7594 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7595 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -125,7 +125,7 @@ export default function ParentalConsentWarningModal(daysRemaining) {
       if (null != rootNavigationRef) {
         if (rootNavigationRef.isReady()) {
           let obj2 = { screen: constants2.FAMILY_CENTER };
-          const tmp9Result = tmp9(7436);
+          const tmp9Result = tmp9(7439);
           tmp9Result.openUserSettings(obj2);
         }
       }
@@ -137,7 +137,7 @@ export default function ParentalConsentWarningModal(daysRemaining) {
       });
     } else {
       const tmp2Result4 = ModalActionCreatorsDefault;
-      tmp2Result4.pushLazy(asyncRequire(18651, tmp3.paths));
+      tmp2Result4.pushLazy(asyncRequire(18674, tmp3.paths));
     }
   }, items2);
   const intl = daysRemaining(callback[15]).intl;

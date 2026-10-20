@@ -1,13 +1,13 @@
-// Module ID: 16894
-// Function ID: 16895
+// Module ID: 16913
+// Function ID: 16914
 // Name: UserSettingsDesignSystemCoachmark
-// Dependencies: [32, 19, 17, 21, 4945, 558, 576, 16892, 16895, 9756, 5205, 5219, 7241, 6935, 6932, 6933, 5558, 7169, 2]
+// Dependencies: [32, 19, 17, 21, 4945, 558, 576, 16911, 16914, 9768, 5205, 5219, 7244, 6938, 6935, 6936, 5558, 7172, 2]
 
-// Module 16894 (UserSettingsDesignSystemCoachmark)
+// Module 16913 (UserSettingsDesignSystemCoachmark)
 import react2 from "react" /* 576 */;
 import LayerScope2 from "LayerScope" /* 5558 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7169 */;
-import _modDef16895 from "module_16895" /* 16895 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7172 */;
+import _modDef16914 from "module_16914" /* 16914 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -44,7 +44,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   _slicedToArray(react.useState(false), 2);
   [tmp9, r10029] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
-  const obj3 = visible(16892);
+  const obj3 = visible(16911);
   [r10035, r10036] = obj3.useCanRotate();
   _slicedToArray(obj3.useCanRotate(), 2);
   const first1 = _slicedToArray(react.useState(false), 2)[0];
@@ -88,7 +88,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
         return closure_1(false);
       }
     }
-    tmp23[0] = _modDef16895;
+    tmp23[0] = _modDef16914;
     cResult[2] = tmp23;
     tmp22 = tmp23;
   } else {
@@ -237,8 +237,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
       gradientColor: tmp
     };
     str2 = undefined;
-    obj2 = { type: "image", src: { uri: _modDef16895 }, aspectRatio: first5 };
-    ({ uri: _modDef16895 });
+    obj2 = { type: "image", src: { uri: _modDef16914 }, aspectRatio: first5 };
+    ({ uri: _modDef16914 });
     if (first3) {
       str2 = "Button";
     }

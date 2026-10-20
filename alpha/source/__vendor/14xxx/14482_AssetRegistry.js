@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 184, height: 17, scales: [2, 3], hash: "dc6e9b555a9114d9845b29b8de00cc4e", name: "server_boost_logo_dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/backgrounds", width: 411, height: 134, scales: [2, 3], hash: "a7a629f03005b09b581ccdee10e4a92d", name: "img_boost_subheader_resub_mobile", type: "png" });

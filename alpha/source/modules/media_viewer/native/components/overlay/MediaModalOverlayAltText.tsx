@@ -1,13 +1,13 @@
-// Module ID: 14030
-// Function ID: 14031
+// Module ID: 14048
+// Function ID: 14049
 // Name: MediaModalOverlayAltText
-// Dependencies: [19, 21, 4945, 587, 558, 576, 1633, 4776, 11122, 5195, 1128, 6856, 2]
+// Dependencies: [19, 21, 4945, 587, 558, 576, 1633, 4776, 11134, 5195, 1128, 6859, 2]
 
-// Module 14030 (MediaModalOverlayAltText)
+// Module 14048 (MediaModalOverlayAltText)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 11122 */;
+import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 11134 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -73,7 +73,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
         tmp5 = tmp12;
       }
-      const tmp14 = jsx(tmp(6856).PressableOpacity, { style: tmp4.container, onPress: tmp6, hitSlop: tmp8, children: tmp9 });
+      const tmp14 = jsx(tmp(6859).PressableOpacity, { style: tmp4.container, onPress: tmp6, hitSlop: tmp8, children: tmp9 });
       cResult[4] = tmp4.container;
       cResult[5] = tmp6;
       cResult[6] = tmp14;
@@ -94,7 +94,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (ViewImageDescriptions.useSetting()) {
     tmp4 = null;
     if (0 !== str.length) {
-      const PressableOpacity = tmp3(6856).PressableOpacity;
+      const PressableOpacity = tmp3(6859).PressableOpacity;
       ({ variant: "text-xs/semibold", color: "text-overlay-light", children: intl.string(str(1128).t.Q5VqrN) });
       const Text = tmp3(5195).Text;
       intl = tmp3(1128).intl;

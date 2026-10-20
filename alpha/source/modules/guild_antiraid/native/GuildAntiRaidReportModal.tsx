@@ -1,21 +1,21 @@
-// Module ID: 15017
-// Function ID: 15018
+// Module ID: 15035
+// Function ID: 15036
 // Name: GuildAntiRaidReportModal
-// Dependencies: [5, 32, 19, 17, 15018, 21, 4945, 587, 558, 576, 1633, 5195, 5622, 1128, 6848, 6935, 5205, 6872, 9950, 12582, 7005, 7043, 2]
+// Dependencies: [5, 32, 19, 17, 15036, 21, 4945, 587, 558, 576, 1633, 5195, 5622, 1128, 6851, 6938, 5205, 6875, 9961, 12599, 7008, 7046, 2]
 
-// Module 15017 (GuildAntiRaidReportModal)
+// Module 15035 (GuildAntiRaidReportModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
-import NavigatorHeader from "NavigatorHeader" /* 6872 */;
-import TableRowGroup2 from "TableRowGroup" /* 6935 */;
+import NavigatorHeader from "NavigatorHeader" /* 6875 */;
+import TableRowGroup2 from "TableRowGroup" /* 6938 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 15018 */;
+import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 15036 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -112,7 +112,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
       }
       if (cResult[10] !== tmp13) {
         const obj4 = { hasIcons: false, children: tmp13 };
-        const tmp17 = closure_10(raidTypes(6935).TableRowGroup, obj4);
+        const tmp17 = closure_10(raidTypes(6938).TableRowGroup, obj4);
         cResult[10] = tmp13;
         cResult[11] = tmp17;
         tmp15 = tmp17;

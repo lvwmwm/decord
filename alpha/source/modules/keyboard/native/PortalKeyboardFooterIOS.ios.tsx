@@ -1,9 +1,9 @@
-// Module ID: 9768
-// Function ID: 9769
+// Module ID: 9780
+// Function ID: 9781
 // Name: PortalKeyboardFooterIOS
 // Dependencies: [19, 21, 4945, 587, 558, 576, 1633, 1647, 5122, 5014, 1631, 1107, 5127, 2]
 
-// Module 9768 (PortalKeyboardFooterIOS)
+// Module 9780 (PortalKeyboardFooterIOS)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;

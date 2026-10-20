@@ -1,9 +1,9 @@
-// Module ID: 7084
-// Function ID: 7085
+// Module ID: 7087
+// Function ID: 7088
 // Name: useNavigationTheme
 // Dependencies: [19, 558, 576, 5213, 587, 4952, 1506, 2]
 
-// Module 7084 (useNavigationTheme)
+// Module 7087 (useNavigationTheme)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Link from "Link" /* 1506 */;

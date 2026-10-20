@@ -1,10 +1,10 @@
-// Module ID: 14436
-// Function ID: 14437
+// Module ID: 14454
+// Function ID: 14455
 // Name: ClipsExperiment
 // Dependencies: [2014, 1392, 1394, 5680, 1455, 558, 576, 504, 2054, 1384, 2]
 // Exports: areClipsAvailable, isClientClipsCapable, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useScreenshotKeybindEnabled
 
-// Module 14436 (ClipsExperiment)
+// Module 14454 (ClipsExperiment)
 import react from "react" /* 576 */;
 import PlatformUtilsAll from "PlatformUtils" /* 1384 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;

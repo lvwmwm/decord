@@ -1,10 +1,10 @@
-// Module ID: 9070
-// Function ID: 9071
+// Module ID: 9082
+// Function ID: 9083
 // Name: EventDetailRsvpSheet
-// Dependencies: [19, 17, 5674, 1392, 1098, 21, 4945, 587, 6599, 558, 576, 8959, 9071, 1128, 5195, 5631, 8871, 7199, 504, 1202, 4994, 9054, 8593, 9072, 5230, 6828, 7168, 2]
+// Dependencies: [19, 17, 5674, 1392, 1098, 21, 4945, 587, 6602, 558, 576, 8971, 9083, 1128, 5195, 5631, 8883, 7202, 504, 1202, 4994, 9066, 8605, 9084, 5230, 6831, 7171, 2]
 // Exports: default
 
-// Module 9070 (EventDetailRsvpSheet)
+// Module 9082 (EventDetailRsvpSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,17 +13,17 @@ import intl2 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import BottomSheetModal from "BottomSheetModal" /* 5230 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8593 */;
-import Form from "Form" /* 8871 */;
-import StageSparkleDefault from "StageSparkle" /* 8959 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9071 */;
-import EventDetailTypes from "EventDetailTypes" /* 9072 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8605 */;
+import Form from "Form" /* 8883 */;
+import StageSparkleDefault from "StageSparkle" /* 8971 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9083 */;
+import EventDetailTypes from "EventDetailTypes" /* 9084 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5674 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
-import TextStyles from "TextStyles" /* 6599 */;
+import TextStyles from "TextStyles" /* 6602 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -304,7 +304,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   eventUser = eventUser.eventUser;
   const guildId = eventUser.guildId;
   closure_9();
-  analyticsLocations = analyticsLocations(7199)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7202)().analyticsLocations;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
     cResult[0] = items;
@@ -394,7 +394,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let analyticsLocations;
   const guildId = eventUser.guildId;
   const tmp = closure_9();
-  analyticsLocations = analyticsLocations(7199)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7202)().analyticsLocations;
   let obj = eventUser(504);
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(eventUser.user_id));
@@ -416,7 +416,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
   };
   tmp7Result = null;
-  const FormRow = eventUser(8871).FormRow;
+  const FormRow = eventUser(8883).FormRow;
   if (null != stateFromStores) {
     const obj4 = { user: stateFromStores, guildId, isMobileOnline, isVROnline, status, size: eventUser(1202).AvatarSizes.REFRESH_MEDIUM_32, autoStatusCutout: true };
     const Avatar = tmp4(1202).Avatar;
@@ -425,7 +425,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const member = eventUser.member;
   obj6 = { user: stateFromStores, nick, usernameStyle: null, nicknameStyle: null };
   nick = undefined;
-  tmp2Result = analyticsLocations(9054);
+  tmp2Result = analyticsLocations(9066);
   if (member != null) {
     nick = member.nick;
   }
@@ -489,7 +489,7 @@ export default function EventDetailRsvpSheet(arg0) {
   }, items);
   if (loading) {
     if (0 === userListItems.length) {
-      let obj2 = { children: closure_7(guildId(6828).ActivityIndicator, obj3) };
+      let obj2 = { children: closure_7(guildId(6831).ActivityIndicator, obj3) };
       obj3 = { style: items1 };
       items1 = [, ];
       class StaticMessageContainer {
@@ -553,7 +553,7 @@ export default function EventDetailRsvpSheet(arg0) {
     }
     tmp8 = closure_7(StaticMessageContainer, obj6);
   } else {
-    let obj = { contentContainerStyle: items4, data: userListItems, renderItem: callback, ItemSeparatorComponent: guildId(8871).FormDivider, keyExtractor };
+    let obj = { contentContainerStyle: items4, data: userListItems, renderItem: callback, ItemSeparatorComponent: guildId(8883).FormDivider, keyExtractor };
     items4 = [tmp.userList, ];
     class StaticMessageContainer {
       constructor(children) {
@@ -572,7 +572,7 @@ export default function EventDetailRsvpSheet(arg0) {
     }
     tmp6[0] = safeBottomPadding;
     items4[1] = tmp6;
-    const BottomSheetFlashList = guildId(7168).BottomSheetFlashList;
+    const BottomSheetFlashList = guildId(7171).BottomSheetFlashList;
     tmp8 = closure_7(BottomSheetFlashList, obj);
   }
 };

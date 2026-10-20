@@ -1,9 +1,9 @@
-// Module ID: 10870
-// Function ID: 10871
+// Module ID: 10881
+// Function ID: 10882
 // Name: UserProfilePrimaryInfo
-// Dependencies: [19, 17, 1392, 8597, 7250, 1087, 8218, 8608, 21, 4945, 587, 1384, 558, 576, 10579, 10580, 9055, 10871, 6856, 5195, 10873, 7745, 5112, 10905, 8598, 7436, 5625, 8658, 9488, 9489, 9492, 6661, 1267, 7744, 1128, 10907, 5631, 10908, 10910, 10911, 10913, 10917, 10942, 1499, 10943, 8579, 9146, 4994, 2]
+// Dependencies: [19, 17, 1392, 8609, 7253, 1087, 8222, 8620, 21, 4945, 587, 1384, 558, 576, 10590, 10591, 9067, 10882, 6859, 5195, 10884, 7749, 5112, 10916, 8610, 7439, 5625, 8670, 9501, 9502, 9505, 6664, 1267, 7748, 1128, 10918, 5631, 10919, 10921, 10922, 10924, 10928, 10953, 1499, 10954, 8591, 9158, 4994, 2]
 
-// Module 10870 (UserProfilePrimaryInfo)
+// Module 10881 (UserProfilePrimaryInfo)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -11,28 +11,28 @@ import PlatformUtils from "PlatformUtils" /* 1384 */;
 import UserUtilsDefault from "UserUtils" /* 4994 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5625 */;
-import QuestTypes from "QuestTypes" /* 6661 */;
-import openUserSettings from "openUserSettings" /* 7436 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7744 */;
-import GuildTagConstants from "GuildTagConstants" /* 8218 */;
-import GuildTagUtils from "GuildTagUtils" /* 8579 */;
-import Constants2 from "Constants" /* 8597 */;
-import BadgeId from "BadgeId" /* 8598 */;
-import Constants3 from "Constants" /* 8608 */;
-import useBadges from "useBadges" /* 8658 */;
-import BotTagDefault from "BotTag" /* 9055 */;
-import GuildTagDefault from "GuildTag" /* 9146 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9488 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9489 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9492 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10579 */;
-import types from "types" /* 10580 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10913 */;
-import BadgeUtils from "BadgeUtils" /* 10917 */;
+import QuestTypes from "QuestTypes" /* 6664 */;
+import openUserSettings from "openUserSettings" /* 7439 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7748 */;
+import GuildTagConstants from "GuildTagConstants" /* 8222 */;
+import GuildTagUtils from "GuildTagUtils" /* 8591 */;
+import Constants2 from "Constants" /* 8609 */;
+import BadgeId from "BadgeId" /* 8610 */;
+import Constants3 from "Constants" /* 8620 */;
+import useBadges from "useBadges" /* 8670 */;
+import BotTagDefault from "BotTag" /* 9067 */;
+import GuildTagDefault from "GuildTag" /* 9158 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9501 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9502 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9505 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10590 */;
+import types from "types" /* 10591 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 10924 */;
+import BadgeUtils from "BadgeUtils" /* 10928 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
-import Constants_mod from "Constants" /* 7250 */;
+import Constants_mod from "Constants" /* 7253 */;
 import Constants_mod2 from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -317,7 +317,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayName(
   if (null == onPress) {
     let tmp5 = closure_15;
     const obj = { children: items };
-    let obj3 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10580).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
+    let obj3 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10591).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
     ({ displayNameText: obj2.style, displayNameText: obj2.containerStyle } = tmp);
     const tmp10 = UsernameWithEffectsDefault;
     items = [closure_14(tmp10, obj3), renderBotTag()];
@@ -325,15 +325,15 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayName(
   } else {
     let tmp12 = closure_15;
     const obj7 = { onPress, accessibilityRole: "button", accessibilityLabel: name, accessibilityHint, style: tmp.displayName, children: items1 };
-    const PressableOpacity = user(6856).PressableOpacity;
-    const obj8 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10580).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
+    const PressableOpacity = user(6859).PressableOpacity;
+    const obj8 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(10591).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
     ({ displayNameText: obj4.style, displayNameText: obj4.containerStyle } = tmp);
     const tmp17 = UsernameWithEffectsDefault;
     items1 = [closure_14(tmp17, obj8), renderBotTag(), ];
     const tmp13 = user;
     const tmp15 = closure_14;
     if (showChevron) {
-      showChevron = tmp15(tmp13(10871).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
+      showChevron = tmp15(tmp13(10882).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
     }
     items1[2] = showChevron;
     tmp12Result = tmp12(PressableOpacity, obj7);
@@ -490,7 +490,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTagAndPr
         const tmp6 = require;
         if (null != onPressUserTag) {
           const obj3 = { onPress: tmp11, accessibilityRole: "button", accessibilityLabel: userTag, accessibilityHint: userTagAccessibilityHint, children: tmp10 };
-          tmp5Result = tmp5(tmp6(6856).PressableOpacity, obj3);
+          tmp5Result = tmp5(tmp6(6859).PressableOpacity, obj3);
         } else {
           const obj = { children: tmp10 };
           tmp5Result = tmp5(hasOwnProperty, obj);
@@ -551,7 +551,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserTagAndPr
         const tmp6 = require;
         if (null != onPressUserTag) {
           const obj3 = { onPress: tmp11, accessibilityRole: "button", accessibilityLabel: userTag, accessibilityHint: userTagAccessibilityHint, children: tmp10 };
-          tmp5Result = tmp5(tmp6(6856).PressableOpacity, obj3);
+          tmp5Result = tmp5(tmp6(6859).PressableOpacity, obj3);
         } else {
           const obj = { children: tmp10 };
           tmp5Result = tmp5(hasOwnProperty, obj);
@@ -803,7 +803,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
             const QUEST_CONTENT_VIEWED = unpackModuleId.QUEST_CONTENT_VIEWED;
             AnalyticsUtilsDefault;
             const tmp5Result7 = AnalyticsTypes;
-            const merged = Object.assign(tmp5Result7.getContentProperties(tmp5(6661).QuestContent.QUEST_BADGE));
+            const merged = Object.assign(tmp5Result7.getContentProperties(tmp5(6664).QuestContent.QUEST_BADGE));
             advertisingId = null;
             if (null != adUser) {
               advertisingId = null;
@@ -975,7 +975,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Profil
                   const QUEST_CONTENT_VIEWED = unpackModuleId.QUEST_CONTENT_VIEWED;
                   AnalyticsUtilsDefault;
                   const tmp5Result7 = AnalyticsTypes;
-                  const merged = Object.assign(tmp5Result7.getContentProperties(tmp5(6661).QuestContent.QUEST_BADGE));
+                  const merged = Object.assign(tmp5Result7.getContentProperties(tmp5(6664).QuestContent.QUEST_BADGE));
                   advertisingId = null;
                   if (null != closure_4) {
                     advertisingId = null;

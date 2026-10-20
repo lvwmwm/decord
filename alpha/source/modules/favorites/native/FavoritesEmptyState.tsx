@@ -1,9 +1,9 @@
-// Module ID: 17917
-// Function ID: 17918
+// Module ID: 17940
+// Function ID: 17941
 // Name: FavoritesEmptyState
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 13669, 10644, 1128, 3402, 5195, 5932, 5205, 10943, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 13687, 10655, 1128, 3402, 5195, 5935, 5205, 10954, 2]
 
-// Module 17917 (FavoritesEmptyState)
+// Module 17940 (FavoritesEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,10 +11,10 @@ import intl4 from "intl" /* 1128 */;
 import _modDef3402 from "module_3402" /* 3402 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
-import Stack_Stack from "Stack/Stack" /* 5932 */;
-import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 10644 */;
-import PlusMediumIcon from "PlusMediumIcon" /* 10943 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13669 */;
+import Stack_Stack from "Stack/Stack" /* 5935 */;
+import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 10655 */;
+import PlusMediumIcon from "PlusMediumIcon" /* 10954 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13687 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -128,7 +128,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesE
     tmp27 = tmp30;
   }
   const obj6 = { spacing: nativeDefault.space.PX_8, align: "center", children: items1 };
-  const Stack = tmp(5932).Stack;
+  const Stack = tmp(5935).Stack;
   items1 = [tmp12, tmp18];
   const tmp22 = metroRequire(Stack, obj6);
   cResult[8] = tmp12;

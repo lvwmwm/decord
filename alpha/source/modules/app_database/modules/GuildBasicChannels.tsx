@@ -1,9 +1,9 @@
-// Module ID: 7665
-// Function ID: 7666
+// Module ID: 7668
+// Function ID: 7669
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 6450, 4804, 502, 4800, 4854, 4822, 4880, 4801, 3, 4826, 7666, 1099, 4889, 2]
+// Dependencies: [32, 5, 6453, 4804, 502, 4800, 4854, 4822, 4880, 4801, 3, 4826, 7669, 1099, 4889, 2]
 
-// Module 7665 (GuildBasicChannels)
+// Module 7668 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import ChannelStore2 from "ChannelStore" /* 4800 */;
@@ -12,7 +12,7 @@ import DatabaseDaosDefault from "DatabaseDaos" /* 4826 */;
 import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4889 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6450 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6453 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildRoleStore from "GuildRoleStore" /* 4854 */;
 import GuildStore from "GuildStore" /* 4822 */;

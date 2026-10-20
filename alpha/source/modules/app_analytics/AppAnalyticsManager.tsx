@@ -1,22 +1,22 @@
-// Module ID: 18472
-// Function ID: 18473
+// Module ID: 18494
+// Function ID: 18495
 // Name: AppAnalyticsManager
-// Dependencies: [2021, 2014, 5676, 6452, 6633, 5679, 1087, 1104, 7162, 4795, 5673, 17924, 7764, 2]
+// Dependencies: [2021, 2014, 5676, 6455, 6636, 5679, 1087, 1104, 7165, 4795, 5673, 17947, 7768, 2]
 
-// Module 18472 (AppAnalyticsManager)
+// Module 18494 (AppAnalyticsManager)
 import DurationsDefault from "Durations" /* 1104 */;
 import Timers from "Timers" /* 4795 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5673 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7764 */;
-import getGamePlatformDefault from "getGamePlatform" /* 17924 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7768 */;
+import getGamePlatformDefault from "getGamePlatform" /* 17947 */;
 import RunningGameStore from "RunningGameStore" /* 2021 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5676 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6452 */;
-import SpeakingStore from "SpeakingStore" /* 6633 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6455 */;
+import SpeakingStore from "SpeakingStore" /* 6636 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5679 */;
 import Constants from "Constants" /* 1087 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7162 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7165 */;
 import size from "module_2" /* 2 */;
 
 let map;

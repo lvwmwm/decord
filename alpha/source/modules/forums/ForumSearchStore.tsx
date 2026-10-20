@@ -1,9 +1,9 @@
-// Module ID: 8234
-// Function ID: 8235
+// Module ID: 8238
+// Function ID: 8239
 // Name: ForumSearchStore
 // Dependencies: [4800, 504, 584, 2]
 
-// Module 8234 (ForumSearchStore)
+// Module 8238 (ForumSearchStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelStore from "ChannelStore" /* 4800 */;

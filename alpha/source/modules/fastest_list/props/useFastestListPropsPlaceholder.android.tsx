@@ -1,13 +1,13 @@
-// Module ID: 7104
-// Function ID: 7105
+// Module ID: 7107
+// Function ID: 7108
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 7105, 4942, 558, 576, 2]
+// Dependencies: [19, 17, 7108, 4942, 558, 576, 2]
 
-// Module 7104 (useFastestListPropsPlaceholder)
+// Module 7107 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ColorUtils from "ColorUtils" /* 4942 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7105 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7108 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "default", borderTopRightRadius: "unicodeVersion", borderBottomLeftRadius: "add", borderBottomRightRadius: "marginBottom", divider: "unicodeVersion", dividerColor: "type", dividerPaddingLeft: "formatToPlainString", dividerPaddingRight: "PX_8", placeholderShape: "unicodeVersion", placeholderShapeColor: "T", placeholderShapeCount: "hasDiversityParent", placeholderShapeGap: "Array", placeholderShapePaddingHorizontal: "unicodeVersion", placeholderShapePaddingVertical: "done", placeholderFeedBackgroundColor: "values", placeholderFeedColor: "IconComponent", placeholderFeedLabelPadding: "emoji", placeholderFeedLabelPaddingInnerRatio: "o", placeholderFeedLabelSize: "toCharArray$esjava$1", placeholderFeedLabelSecondarySize: "toCharArray$esjava$1", placeholderFeedPadding: "toCharArray$esjava$1", placeholderFeedShape: "fileFinishedImporting", placeholderFeedShapeSize: "toCharArray$esjava$1", placeholderType: NONE, width: "\u{1F4E1}", height: 6, verticalAlignment: 838, horizontalAlignment: "_getKeyForIndex" };
+  size = { borderRadius: "Array", borderTopLeftRadius: "default", borderTopRightRadius: "unicodeVersion", borderBottomLeftRadius: "default", borderBottomRightRadius: "accessible", divider: "applicationId", dividerColor: "add", dividerPaddingLeft: "__esModule", dividerPaddingRight: "Array", placeholderShape: "toCharArray$esjava$1", placeholderShapeColor: "unicodeVersion", placeholderShapeCount: "concat", placeholderShapeGap: "intl", placeholderShapePaddingHorizontal: "apply", placeholderShapePaddingVertical: "toString", placeholderFeedBackgroundColor: "data", placeholderFeedColor: "r", placeholderFeedLabelPadding: "toCharArray$esjava$1", placeholderFeedLabelPaddingInnerRatio: "top", placeholderFeedLabelSize: "data", placeholderFeedLabelSecondarySize: "r", placeholderFeedPadding: "toCharArray$esjava$1", placeholderFeedShape: "unicodeVersion", placeholderFeedShapeSize: "__workletHash", placeholderType: NONE, width: "onSelectionChangeShouldSetResponderCapture", height: "dier", verticalAlignment: "gorilla", horizontalAlignment: 132778825978495060000000000000000000000000000000000000000000000000000000000 };
   if (null == listFooter) {
     return size;
   } else {

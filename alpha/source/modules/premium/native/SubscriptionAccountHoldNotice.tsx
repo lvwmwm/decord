@@ -1,13 +1,13 @@
-// Module ID: 14499
-// Function ID: 14500
+// Module ID: 14517
+// Function ID: 14518
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 1202, 14500, 1128, 2054, 5195, 5205, 2]
+// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 1202, 14518, 1128, 2054, 5195, 5205, 2]
 
-// Module 14499 (SubscriptionAccountHoldNotice)
+// Module 14517 (SubscriptionAccountHoldNotice)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import PremiumUtils from "PremiumUtils" /* 2054 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14500 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14518 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,42 +1,31 @@
 // Module ID: 12441
 // Function ID: 12442
-// Dependencies: [12413]
-// Exports: handleCallbackErrors
+// Dependencies: [12424, 12425]
+// Exports: getMainCarrier, getSentryCarrier
 
 // Module 12441
-import _mod12413 from "module_12413" /* 12413 */;
+import _mod12424 from "module_12424" /* 12424 */;
+import _mod12425 from "module_12425" /* 12425 */;
 
 
-export const handleCallbackErrors = function handleCallbackErrors(fn, fn2) {
-  function maybeHandlePromiseRejection(promise, fn2, fn) {
-    let closure_0 = fn2;
-    let closure_1 = fn;
-    const obj = _mod12413;
-    if (obj.isThenable(promise)) {
-      return promise.then((result) => {
-        closure_1();
-        return result;
-      }, (arg0) => {
-        closure_0(arg0);
-        closure_1();
-        throw arg0;
-      });
-    } else {
-      fn();
-      return promise;
-    }
-  }
-  fn = arg2;
-  if (arg2 === undefined) {
-    fn = function t() {
-
-    };
-  }
-  try {
-    return maybeHandlePromiseRejection(fn(), fn2, fn);
-  } catch (tmp2) {
-    fn2(tmp2);
-    fn();
-    throw tmp2;
-  }
+export const getMainCarrier = function getMainCarrier() {
+  const GLOBAL_OBJ = _mod12424.GLOBAL_OBJ;
+  const tmp3 = GLOBAL_OBJ.__SENTRY__ || {};
+  GLOBAL_OBJ.__SENTRY__ = tmp3;
+  tmp3.version = tmp3.version || _mod12425.SDK_VERSION;
+  tmp3.version || _mod12425.SDK_VERSION;
+  const SDK_VERSION = tmp(12425).SDK_VERSION;
+  tmp3[SDK_VERSION] = tmp3[_mod12425.SDK_VERSION] || {};
+  tmp3[_mod12425.SDK_VERSION] || {};
+  return _mod12424.GLOBAL_OBJ;
+};
+export const getSentryCarrier = function getSentryCarrier(__SENTRY__) {
+  const tmp = __SENTRY__.__SENTRY__ || {};
+  __SENTRY__.__SENTRY__ = tmp;
+  const SDK_VERSION = tmp.version || _mod12425.SDK_VERSION;
+  tmp.version = SDK_VERSION;
+  const SDK_VERSION2 = _mod12425.SDK_VERSION;
+  const tmp4 = tmp[_mod12425.SDK_VERSION] || {};
+  tmp[SDK_VERSION2] = tmp4;
+  return tmp4;
 };

@@ -1,22 +1,21 @@
-// Module ID: 19070
-// Function ID: 19071
+// Module ID: 19093
+// Function ID: 19094
 // Name: OrbsArcadeStore
-// Dependencies: [502, 19071, 504, 584, 2]
+// Dependencies: [502, 19094, 504, 584, 2]
 
-// Module 19070 (OrbsArcadeStore)
+// Module 19093 (OrbsArcadeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 19071 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 19094 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
-
-let set;
 
 let c2 = false;
 let fetchedAt = null;
 let c4 = false;
 let orbsArcadeGames = [];
 let map = new Map();
+let set = new Set();
 const Store = get_initializedDefault.Store;
 class OrbsArcadeStore extends Store {
   initialize() {
@@ -28,6 +27,9 @@ class OrbsArcadeStore extends Store {
       value = null;
     }
     return value;
+  }
+  isClaimingRewards(arg0) {
+    return set.has(arg0);
   }
 }
 const prototype = OrbsArcadeStore.prototype;
@@ -96,12 +98,48 @@ let obj = {
     const obj = OrbsArcadeTypes;
     const result = set(game_id, obj.orbsArcadeGameStateFromServer(game_state));
   },
+  ORBS_ARCADE_CLAIM_REWARDS_BEGIN: function handleClaimRewardsBegin(gameId) {
+    gameId = gameId.gameId;
+    set = new Set(set);
+    set = set.add(gameId);
+  },
+  ORBS_ARCADE_CLAIM_REWARDS_SUCCESS: function handleClaimRewardsSuccess(gameId) {
+    let gameState;
+    let userId;
+    gameId = gameId.gameId;
+    ({ userId, gameState } = gameId);
+    if (userId !== AuthenticationStore.getId()) {
+      return false;
+    } else {
+      const _Set = Set;
+      const self = this;
+      const self2 = this;
+      set = new Set(set);
+      set.delete(gameId);
+      const result = map.set(gameId, gameState);
+    }
+  },
+  ORBS_ARCADE_CLAIM_REWARDS_FAILURE: function handleClaimRewardsFailure(arg0) {
+    let gameId;
+    let userId;
+    ({ userId, gameId } = arg0);
+    if (userId !== AuthenticationStore.getId()) {
+      return false;
+    } else {
+      const _Set = Set;
+      const self = this;
+      const self2 = this;
+      set = new Set(set);
+      set.delete(gameId);
+    }
+  },
   LOGOUT: function initializeState() {
     c2 = false;
     fetchedAt = null;
     c4 = false;
     orbsArcadeGames = [];
     map = new Map();
+    set = new Set();
   }
 };
 const orbsArcadeStore = new OrbsArcadeStore(DispatcherDefault, obj);

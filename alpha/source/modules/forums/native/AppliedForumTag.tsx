@@ -1,20 +1,20 @@
-// Module ID: 10328
-// Function ID: 10329
+// Module ID: 10339
+// Function ID: 10340
 // Name: AppliedForumTag
-// Dependencies: [109, 19, 17, 6673, 1395, 21, 4945, 587, 558, 576, 504, 1128, 7175, 1417, 5195, 10329, 2]
+// Dependencies: [109, 19, 17, 6676, 1395, 21, 4945, 587, 558, 576, 504, 1128, 7178, 1417, 5195, 10340, 2]
 
-// Module 10328 (AppliedForumTag)
+// Module 10339 (AppliedForumTag)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
-import EmojiDefault from "Emoji" /* 7175 */;
-import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 10329 */;
+import EmojiDefault from "Emoji" /* 7178 */;
+import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 10340 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6673 */;
+import EmojiStore from "EmojiStore" /* 6676 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

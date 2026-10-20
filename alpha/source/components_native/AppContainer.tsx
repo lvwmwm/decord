@@ -1,9 +1,9 @@
-// Module ID: 15619
-// Function ID: 15620
+// Module ID: 15638
+// Function ID: 15639
 // Name: AppContainer
-// Dependencies: [32, 19, 17, 6751, 4800, 4851, 1087, 4807, 21, 4945, 587, 5014, 558, 576, 8616, 15620, 6623, 1123, 1258, 5112, 5871, 7079, 15622, 6753, 5111, 1114, 5166, 5930, 1267, 5113, 15623, 7084, 1506, 1388, 15624, 1384, 11607, 15625, 15626, 15627, 11363, 11601, 17075, 5127, 11721, 17076, 1502, 12854, 17077, 17085, 5057, 17087, 1257, 2]
+// Dependencies: [32, 19, 17, 6754, 4800, 4851, 1087, 4807, 21, 4945, 587, 5014, 558, 576, 8628, 15639, 6626, 1123, 1258, 5112, 5874, 7082, 15641, 6756, 5111, 1114, 5166, 5933, 1267, 5113, 15642, 7087, 1506, 1388, 15643, 1384, 11618, 15644, 15645, 15646, 11374, 11612, 17094, 5127, 11735, 17095, 1502, 12872, 17096, 17104, 5057, 17106, 1257, 2]
 
-// Module 15619 (AppContainer)
+// Module 15638 (AppContainer)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,24 +16,24 @@ import ChannelConstants from "ChannelConstants" /* 4807 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5111 */;
 import RootNavigationRef from "RootNavigationRef" /* 5112 */;
 import useThemeDefault from "useTheme" /* 5166 */;
-import enableScreens from "enableScreens" /* 5871 */;
-import BackPressTracking from "BackPressTracking" /* 5930 */;
-import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 6623 */;
-import NavigationHistoryStore from "NavigationHistoryStore" /* 6751 */;
-import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 6753 */;
-import useNavigationTheme from "useNavigationTheme" /* 7084 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8616 */;
-import RouteManagerDefault from "RouteManager" /* 11607 */;
-import AnimatedKeyboardProviderDefault from "AnimatedKeyboardProvider" /* 11721 */;
-import StartupProfilerDefault from "StartupProfiler" /* 12854 */;
-import DiscordGestureHandlerRootViewDefault from "DiscordGestureHandlerRootView" /* 15620 */;
-import useTrackNavigatorScreenImpression from "useTrackNavigatorScreenImpression" /* 15622 */;
-import useRequestGatewaySocket from "useRequestGatewaySocket" /* 15624 */;
-import ThemedStatusBarDefault from "ThemedStatusBar" /* 15625 */;
-import DevToolsLazyDefault from "DevToolsLazy" /* 15627 */;
-import components_native_ErrorBoundaryDefault from "components_native/ErrorBoundary" /* 17075 */;
-import AccessibilityPreferencesContextProviderDefault from "AccessibilityPreferencesContextProvider" /* 17076 */;
-import RiveAppStatePlaybackExperiment from "RiveAppStatePlaybackExperiment" /* 17087 */;
+import enableScreens from "enableScreens" /* 5874 */;
+import BackPressTracking from "BackPressTracking" /* 5933 */;
+import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 6626 */;
+import NavigationHistoryStore from "NavigationHistoryStore" /* 6754 */;
+import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 6756 */;
+import useNavigationTheme from "useNavigationTheme" /* 7087 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8628 */;
+import RouteManagerDefault from "RouteManager" /* 11618 */;
+import AnimatedKeyboardProviderDefault from "AnimatedKeyboardProvider" /* 11735 */;
+import StartupProfilerDefault from "StartupProfiler" /* 12872 */;
+import DiscordGestureHandlerRootViewDefault from "DiscordGestureHandlerRootView" /* 15639 */;
+import useTrackNavigatorScreenImpression from "useTrackNavigatorScreenImpression" /* 15641 */;
+import useRequestGatewaySocket from "useRequestGatewaySocket" /* 15643 */;
+import ThemedStatusBarDefault from "ThemedStatusBar" /* 15644 */;
+import DevToolsLazyDefault from "DevToolsLazy" /* 15646 */;
+import components_native_ErrorBoundaryDefault from "components_native/ErrorBoundary" /* 17094 */;
+import AccessibilityPreferencesContextProviderDefault from "AccessibilityPreferencesContextProvider" /* 17095 */;
+import RiveAppStatePlaybackExperiment from "RiveAppStatePlaybackExperiment" /* 17106 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
@@ -43,7 +43,7 @@ import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import config from "config" /* 7079 */;
+import config from "config" /* 7082 */;
 import SentryUtils from "SentryUtils" /* 1257 */;
 import size from "module_2" /* 2 */;
 
@@ -63,13 +63,13 @@ const AppEntryKeyContext = tmp(1502);
 const ManaContext = tmp(5057);
 const getInitialNavigationStateDefault = tmp4(5113);
 const Portal = tmp(5127);
-const WebViewContext = tmp(11363);
-const _mod11601 = tmp(11601);
-const StartupProfiler = tmp(12854);
-const MainNavigationLoggerDefault = tmp4(15623);
-const SafeAreaProvider2 = tmp(15626);
-const _mod17077 = tmp(17077);
-const RootThemeContextProvider2 = tmp(17085);
+const WebViewContext = tmp(11374);
+const _mod11612 = tmp(11612);
+const StartupProfiler = tmp(12872);
+const MainNavigationLoggerDefault = tmp4(15642);
+const SafeAreaProvider2 = tmp(15645);
+const _mod17096 = tmp(17096);
+const RootThemeContextProvider2 = tmp(17104);
 function handleNavigationOnReady() {
   const obj = ModalDispatchQueueDefault;
   obj.flush();
@@ -175,7 +175,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppNav
   } else {
     first = cResult[0];
   }
-  const tmpResult3 = tmp(5930);
+  const tmpResult3 = tmp(5933);
   const trackNavigationBackPress = tmpResult3.useTrackNavigationBackPress(first);
   const ref = react.useRef(undefined);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -302,7 +302,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppNav
     tmp17 = cResult[4];
   }
   const effect = obj4.useEffect(tmp16, tmp17);
-  let tmpResult4 = tmp(7084);
+  let tmpResult4 = tmp(7087);
   const navigationTheme = tmpResult4.useNavigationTheme(tmp5);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class S {
@@ -707,7 +707,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppContainer
     const WebViewContextProvider = WebViewContext.WebViewContextProvider;
     obj6 = { history: tmp12, children: syncedClientThemes(closure_17, obj7) };
     obj7 = { children: syncedClientThemes(tmp29, obj8) };
-    Router = _mod11601.Router;
+    Router = _mod11612.Router;
     obj8 = { children: syncedClientThemes(PortalProvider, obj9) };
     obj9 = { children: authStore3(Component, obj10) };
     tmp29 = components_native_ErrorBoundaryDefault;
@@ -745,7 +745,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppContainer
       const obj12 = { profile: StartupProfiler.Profiles.AppContainer, children: syncedClientThemes(ReanimatedScreenProvider, obj13) };
       const tmp42 = StartupProfilerDefault;
       obj13 = { children: syncedClientThemes(RootThemeContextProvider, obj14) };
-      ReanimatedScreenProvider = _mod17077.ReanimatedScreenProvider;
+      ReanimatedScreenProvider = _mod17096.ReanimatedScreenProvider;
       obj14 = { children: syncedClientThemes(ManaContext.ManaContextProvider, obj15) };
       RootThemeContextProvider = RootThemeContextProvider2.RootThemeContextProvider;
       obj15 = { value: tmp11, children: tmp34 };
@@ -772,7 +772,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppContainer
 }) : (function AppContainer(children) {
   children = children.children;
   const appEntryKey = children.appEntryKey;
-  let obj = appEntryKey(15624);
+  let obj = appEntryKey(15643);
   const requestGatewaySocket = obj.useRequestGatewaySocket("AppContainer:" + appEntryKey);
   const effect = react.useEffect(() => {
     let RNScreensTurboModule;
@@ -831,7 +831,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppContainer
     const obj = { profile: StartupProfiler.Profiles.AppContainer, children: syncedClientThemes(ReanimatedScreenProvider, obj2) };
     const tmp = StartupProfilerDefault;
     obj2 = { children: syncedClientThemes(RootThemeContextProvider, obj3) };
-    ReanimatedScreenProvider = _mod17077.ReanimatedScreenProvider;
+    ReanimatedScreenProvider = _mod17096.ReanimatedScreenProvider;
     obj3 = { children: syncedClientThemes(ManaContextProvider, obj4) };
     RootThemeContextProvider = RootThemeContextProvider2.RootThemeContextProvider;
     obj4 = { value, children: syncedClientThemes(tmp2, obj5) };
@@ -844,7 +844,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppContainer
     obj8 = { children: syncedClientThemes(Router, obj9) };
     WebViewContextProvider = WebViewContext.WebViewContextProvider;
     obj9 = { history: obj10.getHistory(), children: syncedClientThemes(closure_17, obj11) };
-    Router = _mod11601.Router;
+    Router = _mod11612.Router;
     obj10 = RouteManagerDefault;
     obj11 = { children: syncedClientThemes(tmp3, obj12) };
     obj12 = { children: syncedClientThemes(PortalProvider, obj13) };
@@ -914,7 +914,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMan
   return tmp7;
 }) : (function useManaContextProviderValue() {
   let memo;
-  let obj = memo(17087);
+  let obj = memo(17106);
   const riveAppStatePlaybackExperiment = obj.useRiveAppStatePlaybackExperiment("AppContainer");
   let items = [riveAppStatePlaybackExperiment];
   memo = react.useMemo(() => {

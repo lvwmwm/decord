@@ -1,15 +1,15 @@
-// Module ID: 18080
-// Function ID: 18081
+// Module ID: 18103
+// Function ID: 18104
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: [32, 19, 17, 21, 4945, 18078, 587, 558, 576, 1128, 5195, 6856, 2]
+// Dependencies: [32, 19, 17, 21, 4945, 18101, 587, 558, 576, 1128, 5195, 6859, 2]
 
-// Module 18080 (RestrictedBlockedMessageGroup)
+// Module 18103 (RestrictedBlockedMessageGroup)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import Pressables from "Pressables" /* 6856 */;
-import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 18078 */;
+import Pressables from "Pressables" /* 6859 */;
+import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 18101 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -119,7 +119,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Restricted
       tmp16 = tmp17;
     }
   }
-  const tmp15 = closure_5(renderMessage(6856).PressableOpacity, { style: toggle, accessibilityRole: "button", accessibilityState: tmp8, onPress: first, children: tmp11 });
+  const tmp15 = closure_5(renderMessage(6859).PressableOpacity, { style: toggle, accessibilityRole: "button", accessibilityState: tmp8, onPress: first, children: tmp11 });
   cResult[7] = tmp4.toggle;
   cResult[8] = tmp8;
   cResult[9] = tmp11;

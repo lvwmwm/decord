@@ -1,11 +1,11 @@
-// Module ID: 10630
-// Function ID: 10631
+// Module ID: 10641
+// Function ID: 10642
 // Name: InviteRolesDisplay
-// Dependencies: [19, 17, 4854, 21, 4945, 558, 576, 504, 1128, 5195, 10631, 2]
+// Dependencies: [19, 17, 4854, 21, 4945, 558, 576, 504, 1128, 5195, 10642, 2]
 
-// Module 10630 (InviteRolesDisplay)
+// Module 10641 (InviteRolesDisplay)
 import react_native from "react-native" /* 17 */;
-import RolePillDefault from "RolePill" /* 10631 */;
+import RolePillDefault from "RolePill" /* 10642 */;
 import react from "react" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 4854 */;
 import Fragment from "Fragment" /* 21 */;

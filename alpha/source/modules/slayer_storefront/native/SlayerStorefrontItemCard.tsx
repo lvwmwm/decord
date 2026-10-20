@@ -1,16 +1,16 @@
-// Module ID: 9336
-// Function ID: 9337
+// Module ID: 9348
+// Function ID: 9349
 // Name: SlayerStorefrontItemCard
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 7276, 9337, 7606, 5631, 5219, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 7279, 9349, 7609, 5631, 5219, 2]
 
-// Module 9336 (SlayerStorefrontItemCard)
+// Module 9348 (SlayerStorefrontItemCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import LinearGradientDefault from "LinearGradient" /* 5219 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7276 */;
-import _modDef7606 from "module_7606" /* 7606 */;
-import DominantColorUtils from "DominantColorUtils" /* 9337 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7279 */;
+import _modDef7609 from "module_7609" /* 7609 */;
+import DominantColorUtils from "DominantColorUtils" /* 9349 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -93,7 +93,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
         let tmp16;
         let tmp19;
         if (cResult[11] !== dominantColorFromImage) {
-          const obj6 = _modDef7606(dominantColorFromImage);
+          const obj6 = _modDef7609(dominantColorFromImage);
           const brightenResult = obj6.brighten(20);
           const saturateResult = brightenResult.saturate(30);
           const setAlphaResult = saturateResult.setAlpha(0.8);
@@ -105,7 +105,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
           tmp16 = cResult[12];
         }
         if (cResult[13] !== dominantColorFromImage) {
-          const obj10 = _modDef7606(dominantColorFromImage);
+          const obj10 = _modDef7609(dominantColorFromImage);
           const saturateResult1 = obj10.saturate(50);
           const setAlphaResult1 = saturateResult1.setAlpha(0.9);
           const toRgbStringResult1 = setAlphaResult1.toRgbString();

@@ -1,12 +1,12 @@
-// Module ID: 7354
-// Function ID: 7355
+// Module ID: 7357
+// Function ID: 7358
 // Name: subscribeGuildMembers
-// Dependencies: [19, 6637, 1392, 558, 576, 12, 1257, 7323, 2]
+// Dependencies: [19, 6640, 1392, 558, 576, 12, 1257, 7326, 2]
 
-// Module 7354 (subscribeGuildMembers)
+// Module 7357 (subscribeGuildMembers)
 import _modDef12 from "module_12" /* 12 */;
 import react from "react" /* 19 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6637 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6640 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -138,7 +138,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnsureHyd
   }
   class M {
     constructor() {
-      item = closure_1.forEach(() => { /* body not rendered: F142634 */ });
+      item = closure_1.forEach(() => { /* body not rendered: F142798 */ });
       return;
     }
   }

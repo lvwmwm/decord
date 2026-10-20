@@ -1,10 +1,10 @@
-// Module ID: 7578
-// Function ID: 7579
+// Module ID: 7581
+// Function ID: 7582
 // Name: DraftCommand
 // Dependencies: [2]
 // Exports: isDraftCommandValidForText
 
-// Module 7578 (DraftCommand)
+// Module 7581 (DraftCommand)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_commands/DraftCommand.tsx");

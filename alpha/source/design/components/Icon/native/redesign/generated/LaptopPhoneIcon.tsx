@@ -1,14 +1,14 @@
-// Module ID: 16023
-// Function ID: 16024
+// Module ID: 16042
+// Function ID: 16043
 // Name: LaptopPhoneIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16024, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16043, 5630, 2]
 
-// Module 16023 (LaptopPhoneIcon)
+// Module 16042 (LaptopPhoneIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 16024 */;
+import AssetRegistry from "AssetRegistry" /* 16043 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

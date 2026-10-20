@@ -1,14 +1,14 @@
-// Module ID: 9205
-// Function ID: 9206
+// Module ID: 9217
+// Function ID: 9218
 // Name: BattlenetNeutralIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9206, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9218, 5630, 2]
 
-// Module 9205 (BattlenetNeutralIcon)
+// Module 9217 (BattlenetNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 9206 */;
+import AssetRegistry from "AssetRegistry" /* 9218 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 8537
-// Function ID: 8538
+// Module ID: 8543
+// Function ID: 8544
 // Name: InteractionComponentConstants
 // Dependencies: [2]
 
-// Module 8537 (InteractionComponentConstants)
+// Module 8543 (InteractionComponentConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/interaction_components/InteractionComponentConstants.tsx");

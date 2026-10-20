@@ -1,12 +1,12 @@
-// Module ID: 10053
-// Function ID: 10054
+// Module ID: 10064
+// Function ID: 10065
 // Name: FavoriteGIFHooks
-// Dependencies: [19, 558, 10054, 576, 12, 2]
+// Dependencies: [19, 558, 10065, 576, 12, 2]
 
-// Module 10053 (FavoriteGIFHooks)
+// Module 10064 (FavoriteGIFHooks)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 10054 */;
+import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 10065 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

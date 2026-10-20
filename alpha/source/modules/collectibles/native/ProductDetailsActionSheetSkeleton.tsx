@@ -1,9 +1,9 @@
-// Module ID: 14284
-// Function ID: 14285
+// Module ID: 14302
+// Function ID: 14303
 // Name: ProductDetailsActionSheetSkeleton
 // Dependencies: [19, 17, 21, 4945, 587, 5211, 558, 576, 5014, 5167, 2]
 
-// Module 14284 (ProductDetailsActionSheetSkeleton)
+// Module 14302 (ProductDetailsActionSheetSkeleton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

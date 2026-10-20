@@ -1,9 +1,9 @@
-// Module ID: 17932
-// Function ID: 17933
+// Module ID: 17955
+// Function ID: 17956
 // Name: NewMessageScreen
-// Dependencies: [5, 32, 19, 17, 4804, 4800, 4890, 7268, 10534, 1087, 21, 5014, 5195, 4945, 587, 1384, 7357, 558, 576, 7269, 584, 504, 1267, 17933, 5167, 17934, 9614, 1128, 10684, 11868, 7199, 7224, 5554, 5224, 11184, 11182, 11181, 9626, 1114, 11185, 5624, 10653, 10652, 5635, 5634, 5205, 12732, 17875, 13050, 2]
+// Dependencies: [5, 32, 19, 17, 4804, 4800, 4890, 7271, 10545, 1087, 21, 5014, 5195, 4945, 587, 1384, 7360, 558, 576, 7272, 584, 504, 1267, 17956, 5167, 17957, 9627, 1128, 10695, 11882, 7202, 7227, 5554, 5224, 11195, 11193, 11192, 9639, 1114, 11196, 5624, 10664, 10663, 5635, 5634, 5205, 12749, 17898, 13068, 2]
 
-// Module 17932 (NewMessageScreen)
+// Module 17955 (NewMessageScreen)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,23 +18,23 @@ import useMountEffectDefault from "useMountEffect" /* 5224 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5554 */;
 import UserPlusIcon from "UserPlusIcon" /* 5634 */;
 import AssetRegistryDefault from "AssetRegistry" /* 5635 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7199 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7224 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7269 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7357 */;
-import UserRowConstants from "UserRowConstants" /* 10534 */;
-import GroupPlusIcon from "GroupPlusIcon" /* 10652 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10653 */;
-import ChatViewDefault from "ChatView" /* 10684 */;
-import NoResultsDefault from "NoResults" /* 12732 */;
-import useOnMessageSendDefault from "useOnMessageSend" /* 17933 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17934 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7202 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7227 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7272 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7360 */;
+import UserRowConstants from "UserRowConstants" /* 10545 */;
+import GroupPlusIcon from "GroupPlusIcon" /* 10663 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10664 */;
+import ChatViewDefault from "ChatView" /* 10695 */;
+import NoResultsDefault from "NoResults" /* 12749 */;
+import useOnMessageSendDefault from "useOnMessageSend" /* 17956 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17957 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import RelationshipStore_mod from "RelationshipStore" /* 4890 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7268 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7271 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
@@ -57,10 +57,10 @@ let obj2;
 let obj3;
 let str;
 let tmp2;
-const getGroupDMRecipientLimitDefault = tmp2(11182);
-const GroupDMNitroCapExperimentDefault = tmp2(11184);
-const NewMessageUserListDefault = tmp2(13050);
-const GroupDMNitroUpsellBannerDefault = tmp2(17875);
+const getGroupDMRecipientLimitDefault = tmp2(11193);
+const GroupDMNitroCapExperimentDefault = tmp2(11195);
+const NewMessageUserListDefault = tmp2(13068);
+const GroupDMNitroUpsellBannerDefault = tmp2(17898);
 function isPrivateChannelMatch(arr, channel) {
   const recipients = channel.recipients;
   if (recipients.length !== arr.length) {
@@ -793,7 +793,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     let stringResult;
     if (cResult[4] !== title) {
       const obj5 = { title };
-      const tmp9 = closure_17(numInGroup(9614).GenericHeaderTitle, obj5);
+      const tmp9 = closure_17(numInGroup(9627).GenericHeaderTitle, obj5);
       let num = 4;
       cResult[4] = title;
       let num2 = 5;
@@ -898,12 +898,12 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
   if (usePersonLimitCopy) {
     let num2 = 1;
     const obj2 = { title, memberCount: numInGroup + 1, recipientLimit };
-    return closure_17(recipientLimit(17934), obj2);
+    return closure_17(recipientLimit(17957), obj2);
   } else {
     let num = 0;
     const obj3 = { style: tmp.header, children: items1 };
     const obj4 = { title };
-    items1 = [closure_17(tmp3(9614).GenericHeaderTitle, obj4), ];
+    items1 = [closure_17(tmp3(9627).GenericHeaderTitle, obj4), ];
     const obj5 = { style: tmp6, variant: "text-xs/medium", color: str, children: stringResult };
     str = "text-muted";
     const tmp10 = closure_17;
@@ -970,7 +970,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPr
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { portal: tmpResult.isAndroid() };
-      const PortalKeyboardRenderer = tmp(11868).PortalKeyboardRenderer;
+      const PortalKeyboardRenderer = tmp(11882).PortalKeyboardRenderer;
       tmpResult = tmp(1384);
       const tmp15 = closure_17(PortalKeyboardRenderer, obj3);
       cResult[6] = tmp15;
@@ -1035,7 +1035,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPr
   const obj3 = { guildId, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, alwaysRespectKeyboard: true, screenIndex: "new-message", secondaryTextFieldRef: tagListInputRef };
   items1[0] = closure_17(ChatViewDefault, obj3);
   const obj4 = { portal: obj5.isAndroid() };
-  const PortalKeyboardRenderer = channelId(11868).PortalKeyboardRenderer;
+  const PortalKeyboardRenderer = channelId(11882).PortalKeyboardRenderer;
   obj5 = channelId(1384);
   items1[1] = closure_17(PortalKeyboardRenderer, obj4);
   return closure_17(View, obj);
@@ -1626,13 +1626,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMessageSc
   const config = tmp2Result.useConfig({ location: "NewMessageScreen" });
   const tmp14 = getGroupDMRecipientLimitDefault({ useNitroCapExperiment: true });
   relationshipCount = tmp14;
-  let obj3 = navigation(11181);
+  let obj3 = navigation(11192);
   const result = obj3.shouldUseGroupDMParticipantLimitUI(config.enabled, tmp14);
   c10 = result;
-  navigation(11181);
+  navigation(11192);
   enabled = config.enabled;
   if (enabled) {
-    const tmp15Result = navigation(11181);
+    const tmp15Result = navigation(11192);
     enabled = tmp15Result.isGroupDMNitroUpsellAudience(tmp18);
   }
   const items2 = [navigation, selectedUserIds.length, tmp11, tmp14, result];
@@ -1784,7 +1784,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMessageSc
         const tmp26 = closure_17;
         const tmp27 = closure_30;
         if (null == tmp11) {
-          FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = tmp15(7269).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+          FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = tmp15(7272).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
         }
         let obj2 = { channelId: FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, navigateToChannel, tagListInputRef: ref };
         tmp26Result = tmp26(tmp27, obj2, tmp24);
@@ -1882,7 +1882,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMessageSc
     return closure_17(View, obj);
   }, items8);
   let obj4 = { value: analyticsLocations, children: closure_17(tmp2Result2, obj5) };
-  const AnalyticsLocationProvider = tmp15(7199).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp15(7202).AnalyticsLocationProvider;
   obj5 = { actions: memo, noResultActions: memo1, rowMode: enabled.NONE, tagListInputRef: ref, onSelectUser: callback1, onQueryChanged: callback3, selectedUserIds, withAffinitySuggestions: true, overrideResults: tmp26Result, afterSearchContent: closure_17(GroupDMNitroUpsellBannerDefault, obj6), withGuildMembers: tmp28, withGDMNames: true, forceSearchResults: tmp10, onForceSearchResults: callback2, defaultNoResultsFound: memo2, autoFocusSearch: true };
   obj6 = { location: "NewMessageScreen", memberCount: selectedUserIds.length + 1, recipientLimit: tmp14 };
   tmp2Result2 = NewMessageUserListDefault;

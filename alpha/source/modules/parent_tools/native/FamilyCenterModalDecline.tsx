@@ -1,13 +1,13 @@
-// Module ID: 16003
-// Function ID: 16004
+// Module ID: 16022
+// Function ID: 16023
 // Name: FamilyCenterModalDecline
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 8069, 6620, 5624, 1128, 12687, 38, 15999, 8058, 2526, 5195, 15967, 7845, 5205, 12696, 6644, 7844, 6872, 10941, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 8073, 6623, 5624, 1128, 12704, 38, 16018, 8062, 2526, 5195, 15986, 7849, 5205, 12713, 6647, 7848, 6875, 10952, 2]
 
-// Module 16003 (FamilyCenterModalDecline)
+// Module 16022 (FamilyCenterModalDecline)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
-import NavigatorHeader from "NavigatorHeader" /* 6872 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+import NavigatorHeader from "NavigatorHeader" /* 6875 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -54,7 +54,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   const cResult = obj.c(38);
   otherUser = otherUser.otherUser;
   const tmp4 = closure_7();
-  const tmp6 = declineLinkRequest(8069)();
+  const tmp6 = declineLinkRequest(8073)();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function o() {
       const arr = declineLinkRequest(dependencyMap[8]);
@@ -84,7 +84,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   } else {
     tmp9 = cResult[2];
   }
-  const tmpResult = tmp(12687);
+  const tmpResult = tmp(12704);
   const familyCenterActions = tmpResult.useFamilyCenterActions(tmp9);
   declineLinkRequest = familyCenterActions.declineLinkRequest;
   const isDeclineLoading = familyCenterActions.isDeclineLoading;
@@ -100,8 +100,8 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
     declineLinkRequest(38)(!tmp6, "FamilyCenterDeclineLinkModal should only be rendered for teens.");
     const header = tmp4.header;
     if (cResult[6] !== otherUser) {
-      const obj3 = { otherUser, iconSrc: declineLinkRequest(8058) };
-      const tmp5Result = declineLinkRequest(15999);
+      const obj3 = { otherUser, iconSrc: declineLinkRequest(8062) };
+      const tmp5Result = declineLinkRequest(16018);
       const tmp16 = closure_5(tmp5Result, obj3);
       cResult[6] = otherUser;
       cResult[7] = tmp16;
@@ -130,7 +130,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
     }
     if (cResult[11] !== otherUser) {
       const obj5 = { user: otherUser };
-      const tmp24 = closure_5(declineLinkRequest(15967), obj5);
+      const tmp24 = closure_5(declineLinkRequest(15986), obj5);
       cResult[11] = otherUser;
       cResult[12] = tmp24;
       tmp22 = tmp24;
@@ -206,7 +206,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
                 }
                 const _Symbol5 = Symbol;
                 if (cResult[32] === Symbol.for("react.memo_cache_sentinel")) {
-                  const obj8 = { variant: "tertiary", text: intl5.string(tmp(1128).t["ETE/oC"]), onPress: declineLinkRequest(6620).pop };
+                  const obj8 = { variant: "tertiary", text: intl5.string(tmp(1128).t["ETE/oC"]), onPress: declineLinkRequest(6623).pop };
                   const Button = tmp(5205).Button;
                   intl5 = tmp(1128).intl;
                   const tmp51 = closure_5(Button, obj8);
@@ -216,8 +216,8 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
                   tmp49 = cResult[32];
                 }
                 if (cResult[33] !== tmp46) {
-                  const obj9 = { children: closure_6(tmp(6644).ButtonGroup, obj10) };
-                  const ModalFooter = tmp(12696).ModalFooter;
+                  const obj9 = { children: closure_6(tmp(6647).ButtonGroup, obj10) };
+                  const ModalFooter = tmp(12713).ModalFooter;
                   obj10 = { children: items };
                   items = [tmp46, tmp49];
                   const tmp55 = closure_5(ModalFooter, obj9);
@@ -236,7 +236,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
                 }
                 const obj11 = { children: items1 };
                 items1 = [tmp41, tmp52];
-                const tmp58 = closure_6(tmp(7844).ModalScreen, obj11);
+                const tmp58 = closure_6(tmp(7848).ModalScreen, obj11);
                 cResult[35] = tmp41;
                 cResult[36] = tmp52;
                 cResult[37] = tmp58;
@@ -251,7 +251,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
             }
             const obj13 = { children: items2 };
             items2 = [tmp25, tmp37];
-            const tmp43 = closure_6(tmp(7845).ModalContent, obj13);
+            const tmp43 = closure_6(tmp(7849).ModalContent, obj13);
             cResult[25] = tmp25;
             cResult[26] = tmp37;
             cResult[27] = tmp43;
@@ -307,7 +307,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   otherUser = otherUser.otherUser;
   let declineLinkRequest;
   const tmp = closure_7();
-  const tmp2 = declineLinkRequest(8069)();
+  const tmp2 = declineLinkRequest(8073)();
   const callback = react.useCallback(() => {
     const arr = declineLinkRequest(dependencyMap[8]);
     arr.pop();
@@ -318,7 +318,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
     const intl = otherUser(dependencyMap[10]).intl;
     presentFailedToast(intl.string(otherUser(dependencyMap[10]).t.R0RpRX));
   }, []);
-  const obj = otherUser(12687);
+  const obj = otherUser(12704);
   const familyCenterActions = obj.useFamilyCenterActions({ onSuccess: callback, onError: callback1 });
   declineLinkRequest = familyCenterActions.declineLinkRequest;
   const isDeclineLoading = familyCenterActions.isDeclineLoading;
@@ -328,18 +328,18 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   }, items);
   declineLinkRequest(38)(!tmp2, "FamilyCenterDeclineLinkModal should only be rendered for teens.");
   const obj2 = { children: items4 };
-  const ModalScreen = otherUser(7844).ModalScreen;
+  const ModalScreen = otherUser(7848).ModalScreen;
   const obj3 = { children: items2 };
   const obj4 = { style: tmp.header, children: items1 };
-  const ModalContent = otherUser(7845).ModalContent;
-  const obj5 = { otherUser, iconSrc: declineLinkRequest(8058) };
-  const tmp8 = declineLinkRequest(15999);
+  const ModalContent = otherUser(7849).ModalContent;
+  const obj5 = { otherUser, iconSrc: declineLinkRequest(8062) };
+  const tmp8 = declineLinkRequest(16018);
   items1 = [closure_5(tmp8, obj5), , ];
   const obj6 = { style: tmp.headerText, variant: "text-lg/bold", children: intl.string(declineLinkRequest(2526).teIRCR) };
   const Text = otherUser(5195).Text;
   intl = otherUser(1128).intl;
   items1[1] = closure_5(Text, obj6);
-  items1[2] = closure_5(declineLinkRequest(15967), { user: otherUser });
+  items1[2] = closure_5(declineLinkRequest(15986), { user: otherUser });
   items2 = [closure_6(View, obj4), ];
   const obj7 = { style: tmp.body, children: items3 };
   const obj8 = { style: tmp.noticeHeader, variant: "eyebrow", color: "mobile-text-heading-primary", children: intl2.string(declineLinkRequest(2526).cXgKMD) };
@@ -353,14 +353,14 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   items2[1] = closure_6(View, obj7);
   items4 = [closure_6(ModalContent, obj3), ];
   const obj10 = { children: closure_6(ButtonGroup, obj11) };
-  const ModalFooter = otherUser(12696).ModalFooter;
+  const ModalFooter = otherUser(12713).ModalFooter;
   obj11 = { children: items5 };
-  ButtonGroup = otherUser(6644).ButtonGroup;
+  ButtonGroup = otherUser(6647).ButtonGroup;
   const obj12 = { variant: "destructive", disabled: isDeclineLoading, loading: isDeclineLoading, text: intl4.string(declineLinkRequest(2526).dKxFcn), onPress: callback2 };
   const Button = otherUser(5205).Button;
   intl4 = otherUser(1128).intl;
   items5 = [closure_5(Button, obj12), ];
-  const obj13 = { variant: "tertiary", text: intl5.string(otherUser(1128).t["ETE/oC"]), onPress: declineLinkRequest(6620).pop };
+  const obj13 = { variant: "tertiary", text: intl5.string(otherUser(1128).t["ETE/oC"]), onPress: declineLinkRequest(6623).pop };
   const Button2 = otherUser(5205).Button;
   intl5 = otherUser(1128).intl;
   items5[1] = closure_5(Button2, obj13);
@@ -391,7 +391,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
     cResult[0] = otherUser;
     cResult[1] = obj2;
     tmp4 = obj2;
-    tmpResult = otherUser(6872);
+    tmpResult = otherUser(6875);
   } else {
     tmp4 = cResult[1];
   }
@@ -405,7 +405,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   }
   if (cResult[3] !== tmp4) {
     const obj4 = { initialRouteName: "DECLINE", screens: tmp4, headerBackTitle: tmp6 };
-    const tmp10 = closure_5(otherUser(10941).Modal, obj4);
+    const tmp10 = closure_5(otherUser(10952).Modal, obj4);
     cResult[3] = tmp4;
     cResult[4] = tmp10;
     tmp8 = tmp10;
@@ -435,7 +435,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
     return obj;
   }, items);
   let obj = { initialRouteName: "DECLINE", screens: memo, headerBackTitle: intl.string(otherUser(1128).t["13/7kX"]) };
-  const Modal = otherUser(10941).Modal;
+  const Modal = otherUser(10952).Modal;
   intl = otherUser(1128).intl;
   return closure_5(Modal, obj);
 });

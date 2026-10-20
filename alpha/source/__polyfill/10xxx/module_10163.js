@@ -1,86 +1,75 @@
 // Module ID: 10163
 // Function ID: 10164
-// Dependencies: [41, 42, 93, 95, 98, 10132, 10135, 10136, 10140]
+// Dependencies: [41, 42]
 
 // Module 10163
-import _mod10132 from "module_10132" /* 10132 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10140 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-const regExp = new RegExp("(this|last|past|next|after|\\+|-)\\s*(" + _mod10132.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-const regExp1 = new RegExp("(this|last|past|next|after|\\+|-)\\s*(" + _mod10132.TIME_UNITS_NO_ABBR_PATTERN + ")(?=\\W|$)", "i");
-class ENTimeUnitCasualRelativeFormatParser {
+class Filter {
   constructor() {
-    let constructResult;
-    let flag = arg0;
-    if (arg0 === undefined) {
-      flag = true;
-    }
-    const self = this;
-    _classCallCheck(this, ENTimeUnitCasualRelativeFormatParser);
-    const obj = _getPrototypeOf(ENTimeUnitCasualRelativeFormatParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, undefined);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.allowAbbreviations = flag;
-    return tmp3Result;
+    _classCallCheck(this, Filter);
   }
 }
-_inherits(ENTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return this.allowAbbreviations ? regExp : regExp1;
+  key: "refine",
+  value: function refine(arg0, arr) {
+    const self = this;
+    let closure_0 = arg0;
+    return arr.filter((item) => self.isValid(closure_0, item));
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const str = arg1[1];
-      const formatted = str.toLowerCase();
-      const parseDurationResult = _mod10132.parseDuration(arg1[2]);
-      if (parseDurationResult) {
-        if ("last" !== formatted) {
-          let reverseDurationResult;
-          if ("past" !== formatted) {
-            reverseDurationResult = parseDurationResult;
+let items = [entry];
+class MergingRefiner {
+  constructor() {
+    _classCallCheck(this, MergingRefiner);
+  }
+}
+const entry1 = {
+  key: "refine",
+  value: function refine(text, arg1) {
+    const self = this;
+    if (arg1.length < 2) {
+      return arg1;
+    } else {
+      const items = [];
+      let first = arg1[0];
+      let num = 1;
+      let num2 = 1;
+      let tmp20 = first;
+      if (1 < arg1.length) {
+        do {
+          let tmp11;
+          let tmp = arg1[num];
+          let str = text.text;
+          let substr = str.substring(first.index + first.text.length, tmp.index);
+          if (self.shouldMergeResults(substr, first, tmp, text)) {
+            let closure_1 = tmp;
+            let mergeResultsResult = self.mergeResults(substr, tmp8, tmp, text);
+            let debugResult = text.debug(() => {
+              console.log("" + self.constructor.name + " merged " + first + " and " + closure_1 + " into " + mergeResultsResult);
+            });
+            tmp11 = mergeResultsResult;
+          } else {
+            let arr = items.push(first);
+            tmp11 = tmp;
           }
-          const ParsingComponents = tmp2(10136).ParsingComponents;
-          return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
-        }
-        reverseDurationResult = tmp2(10135).reverseDuration(parseDurationResult);
-      } else {
-        return null;
+          num = num2 + 1;
+          first = tmp11;
+          tmp20 = tmp11;
+          num2 = num;
+        } while (num < arg1.length);
       }
+      if (null != tmp20) {
+        items.push(tmp20);
+      }
+      return items;
     }
   }
-];
+};
+const items1 = [entry1];
+const Filter_export = _createClass(Filter, items);
+const MergingRefiner_export = _createClass(MergingRefiner, items1);
 
-export default _createClass(ENTimeUnitCasualRelativeFormatParser, items);
+export { Filter_export as Filter };
+export { MergingRefiner_export as MergingRefiner };

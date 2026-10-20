@@ -1,28 +1,28 @@
-// Module ID: 10596
-// Function ID: 10597
+// Module ID: 10607
+// Function ID: 10608
 // Name: StreakTrophyBadge
-// Dependencies: [19, 21, 10597, 10598, 10599, 558, 576, 6943, 5631, 2]
+// Dependencies: [19, 21, 10608, 10609, 10610, 558, 576, 6946, 5631, 2]
 
-// Module 10596 (StreakTrophyBadge)
+// Module 10607 (StreakTrophyBadge)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import react_native from "react-native" /* 6943 */;
-import _modDef10597 from "module_10597" /* 10597 */;
-import _modDef10598 from "module_10598" /* 10598 */;
-import _modDef10599 from "module_10599" /* 10599 */;
+import react_native from "react-native" /* 6946 */;
+import _modDef10608 from "module_10608" /* 10608 */;
+import _modDef10609 from "module_10609" /* 10609 */;
+import _modDef10610 from "module_10610" /* 10610 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef10597 };
+let obj2 = { uri: _modDef10608 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef10598 };
+let obj3 = { uri: _modDef10609 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef10599 };
-({ uri: _modDef10599 });
+obj[3] = { uri: _modDef10610 };
+({ uri: _modDef10610 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreakTrophyBadge(arg0) {
   let accessibilityLabel;
   let accessible;

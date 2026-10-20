@@ -1,9 +1,9 @@
-// Module ID: 10416
-// Function ID: 10417
+// Module ID: 10427
+// Function ID: 10428
 // Name: useSelectPremiumGift
-// Dependencies: [5, 19, 558, 576, 1505, 10368, 10417, 2054, 7465, 5864, 1128, 10365, 2]
+// Dependencies: [5, 19, 558, 576, 1505, 10379, 10428, 2054, 7468, 5867, 1128, 10376, 2]
 
-// Module 10416 (useSelectPremiumGift)
+// Module 10427 (useSelectPremiumGift)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

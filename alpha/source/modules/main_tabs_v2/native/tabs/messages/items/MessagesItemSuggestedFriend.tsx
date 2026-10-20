@@ -1,10 +1,10 @@
-// Module ID: 17200
-// Function ID: 17201
+// Module ID: 17219
+// Function ID: 17220
 // Name: MessagesItemSuggestedFriend
-// Dependencies: [32, 19, 17, 4890, 1087, 21, 4945, 587, 10851, 8593, 2002, 573, 1128, 4994, 17201, 17202, 1267, 6856, 1202, 5195, 5205, 5642, 558, 576, 7168, 13683, 2]
+// Dependencies: [32, 19, 17, 4890, 1087, 21, 4945, 587, 10862, 8605, 2002, 573, 1128, 4994, 17220, 17221, 1267, 6859, 1202, 5195, 5205, 5642, 558, 576, 7171, 13701, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 17200 (MessagesItemSuggestedFriend)
+// Module 17219 (MessagesItemSuggestedFriend)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,10 +12,10 @@ import intl3 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import UserUtilsDefault from "UserUtils" /* 4994 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10851 */;
-import LegendList from "LegendList" /* 13683 */;
-import FriendSuggestionUtils from "FriendSuggestionUtils" /* 17201 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17202 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10862 */;
+import LegendList from "LegendList" /* 13701 */;
+import FriendSuggestionUtils from "FriendSuggestionUtils" /* 17220 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17221 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
@@ -34,7 +34,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const defaultMVCPConfig = tmp(7168);
+const defaultMVCPConfig = tmp(7171);
 let react = react_mod;
 const View = react_native.View;
 ({ AnalyticEvents: metroImportDefault, RelationshipTypes: metroImportAll } = Constants);
@@ -72,7 +72,7 @@ let closure_12 = react.memo(function MessagesItemSuggestedFriendView(height) {
     return items;
   }, items);
   const callback = react.useCallback(() => {
-    const promise = asyncRequire(8593, dependencyMap.paths);
+    const promise = asyncRequire(8605, dependencyMap.paths);
     promise.then((result) => {
       const obj = { userId: suggestedFriend.user.id, localUser: suggestedFriend.user, location: "Messages Tab User Profile" };
       return result.default(obj);

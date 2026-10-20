@@ -1,9 +1,9 @@
-// Module ID: 9146
-// Function ID: 9147
+// Module ID: 9158
+// Function ID: 9159
 // Name: GuildTag
-// Dependencies: [19, 17, 1392, 8218, 21, 4945, 587, 1384, 558, 576, 1128, 5631, 5195, 6856, 504, 8579, 5171, 9147, 2002, 2]
+// Dependencies: [19, 17, 1392, 8222, 21, 4945, 587, 1384, 558, 576, 1128, 5631, 5195, 6859, 504, 8591, 5171, 9159, 2002, 2]
 
-// Module 9146 (GuildTag)
+// Module 9158 (GuildTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,8 +12,8 @@ import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import GuildTagConstants from "GuildTagConstants" /* 8218 */;
-import GuildTagUtils from "GuildTagUtils" /* 8579 */;
+import GuildTagConstants from "GuildTagConstants" /* 8222 */;
+import GuildTagUtils from "GuildTagUtils" /* 8591 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;

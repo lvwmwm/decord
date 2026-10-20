@@ -1,9 +1,9 @@
-// Module ID: 14576
-// Function ID: 14577
+// Module ID: 14594
+// Function ID: 14595
 // Name: Header
-// Dependencies: [19, 17, 21, 4945, 558, 576, 5166, 1128, 4952, 14577, 14578, 5631, 5195, 2]
+// Dependencies: [19, 17, 21, 4945, 558, 576, 5166, 1128, 4952, 14595, 14596, 5631, 5195, 2]
 
-// Module 14576 (Header)
+// Module 14594 (Header)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
@@ -49,9 +49,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header(style
     }
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp6)) {
-      tmp5Result = tmp5(14577);
+      tmp5Result = tmp5(14595);
     } else {
-      tmp5Result = tmp5(14578);
+      tmp5Result = tmp5(14596);
     }
     if (cResult[4] !== tmp5Result) {
       const obj2 = { accessible: true, accessibilityLabel: tmp9, accessibilityRole: "header", source: tmp5Result };
@@ -122,9 +122,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header(style
   const tmp5 = hasOwnProperty;
   const tmp6 = View;
   if (obj3.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(14577);
+    tmp2Result = tmp2(14595);
   } else {
-    tmp2Result = tmp2(14578);
+    tmp2Result = tmp2(14596);
   }
   items1 = [React3(tmp8, obj2), ];
   const obj4 = { style: tmp.headerText, variant: "text-md/medium", color: "mobile-text-heading-primary", children: intl2.string(intl3.t.SD5MJW) };

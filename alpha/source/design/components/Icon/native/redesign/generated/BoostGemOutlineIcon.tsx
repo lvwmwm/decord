@@ -1,14 +1,14 @@
-// Module ID: 18806
-// Function ID: 18807
+// Module ID: 18829
+// Function ID: 18830
 // Name: BoostGemOutlineIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 18807, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 18830, 5630, 2]
 
-// Module 18806 (BoostGemOutlineIcon)
+// Module 18829 (BoostGemOutlineIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 18807 */;
+import AssetRegistry from "AssetRegistry" /* 18830 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

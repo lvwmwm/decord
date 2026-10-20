@@ -1,14 +1,14 @@
-// Module ID: 18550
-// Function ID: 18551
+// Module ID: 18573
+// Function ID: 18574
 // Name: MemberVerificationApplicationManager
-// Dependencies: [4971, 4972, 7162, 5864, 4974, 6783, 6791, 2]
+// Dependencies: [4971, 4972, 7165, 5867, 4974, 6786, 6794, 2]
 
-// Module 18550 (MemberVerificationApplicationManager)
+// Module 18573 (MemberVerificationApplicationManager)
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4974 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5864 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5867 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4971 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4972 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7162 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7165 */;
 import size from "module_2" /* 2 */;
 
 class MemberVerificationApplicationManager extends AutomaticLifecycleManager {
@@ -63,7 +63,7 @@ class MemberVerificationApplicationManager extends AutomaticLifecycleManager {
             tmp6 = null !== lastSeen1;
           }
           if (!tmp6) {
-            const tmp3Result = tmp3(6783);
+            const tmp3Result = tmp3(6786);
             let result = tmp3Result.openMemberVerificationSuccessAlert(guildId, () => {
               const obj = closure_2_1(closure_2_2[6]);
               const result = obj.ackUserGuildJoinRequest(guildId, request.joinRequestId);

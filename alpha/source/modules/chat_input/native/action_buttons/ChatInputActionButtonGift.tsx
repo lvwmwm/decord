@@ -1,19 +1,19 @@
-// Module ID: 12939
-// Function ID: 12940
+// Module ID: 12957
+// Function ID: 12958
 // Name: ChatInputActionButtonGift
-// Dependencies: [32, 19, 17, 4946, 9437, 12359, 4797, 21, 4945, 587, 558, 576, 504, 10413, 2034, 12940, 7442, 4784, 12941, 12693, 1128, 5219, 12355, 4785, 12942, 2]
+// Dependencies: [32, 19, 17, 4946, 9449, 12376, 4797, 21, 4945, 587, 558, 576, 504, 10424, 2034, 12958, 7445, 4784, 12959, 12710, 1128, 5219, 12372, 4785, 12960, 2]
 
-// Module 12939 (ChatInputActionButtonGift)
+// Module 12957 (ChatInputActionButtonGift)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import dismissible_content from "dismissible_content" /* 4784 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 4785 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
-import ChatInputConstants from "ChatInputConstants" /* 12359 */;
+import ChatInputConstants from "ChatInputConstants" /* 12376 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
-import PromotionsStore_mod from "PromotionsStore" /* 9437 */;
+import PromotionsStore_mod from "PromotionsStore" /* 9449 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

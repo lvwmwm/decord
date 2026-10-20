@@ -1,16 +1,16 @@
-// Module ID: 18523
-// Function ID: 18524
+// Module ID: 18546
+// Function ID: 18547
 // Name: feedback/FeedbackManager
-// Dependencies: [7255, 18524, 9962, 18525, 4776, 510, 12, 7162, 2]
+// Dependencies: [7258, 18547, 9973, 18548, 4776, 510, 12, 7165, 2]
 
-// Module 18523 (feedback/FeedbackManager)
+// Module 18546 (feedback/FeedbackManager)
 import _mod12 from "module_12" /* 12 */;
 import UserSettings from "UserSettings" /* 4776 */;
-import FeedbackConfig from "FeedbackConfig" /* 18525 */;
-import HotspotStore from "hotspot/HotspotStore" /* 7255 */;
-import FeedbackOverrideStore from "FeedbackOverrideStore" /* 18524 */;
-import Constants from "Constants" /* 9962 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7162 */;
+import FeedbackConfig from "FeedbackConfig" /* 18548 */;
+import HotspotStore from "hotspot/HotspotStore" /* 7258 */;
+import FeedbackOverrideStore from "FeedbackOverrideStore" /* 18547 */;
+import Constants from "Constants" /* 9973 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7165 */;
 import size from "module_2" /* 2 */;
 
 let _require, optOutExpiryTime;

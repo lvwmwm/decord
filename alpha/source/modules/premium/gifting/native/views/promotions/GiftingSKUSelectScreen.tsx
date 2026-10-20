@@ -1,16 +1,16 @@
-// Module ID: 13717
-// Function ID: 13718
+// Module ID: 13735
+// Function ID: 13736
 // Name: GiftingSKUSelectScreen
-// Dependencies: [32, 19, 17, 21, 4945, 587, 558, 576, 1633, 1128, 5195, 13718, 5205, 2]
+// Dependencies: [32, 19, 17, 21, 4945, 587, 558, 576, 1633, 1128, 5195, 13736, 5205, 2]
 
-// Module 13717 (GiftingSKUSelectScreen)
+// Module 13735 (GiftingSKUSelectScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
-import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 13718 */;
+import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 13736 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

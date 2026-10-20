@@ -1,10 +1,10 @@
-// Module ID: 11709
-// Function ID: 11710
+// Module ID: 11723
+// Function ID: 11724
 // Name: ConjureDesignFeedback
 // Dependencies: [2]
 // Exports: conjureDesignAnchorFor, describeConjureDesignTarget, formatConjureDesignFeedback, formatConjureDesignRemark, hitTestConjureDesignTargets, isConjureDesignCommentUsable, parseConjureDesignFeedback, parseConjureDesignRemark
 
-// Module 11709 (ConjureDesignFeedback)
+// Module 11723 (ConjureDesignFeedback)
 import size from "module_2" /* 2 */;
 
 function labelConjureDesignTarget(target) {

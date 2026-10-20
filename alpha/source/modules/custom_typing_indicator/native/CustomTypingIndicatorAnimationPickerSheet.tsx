@@ -1,15 +1,15 @@
-// Module ID: 16450
-// Function ID: 16451
+// Module ID: 16469
+// Function ID: 16470
 // Name: CustomTypingIndicatorAnimationPickerSheet
-// Dependencies: [32, 19, 17, 21, 4945, 587, 558, 576, 5195, 6853, 1400, 1128, 3822, 7244, 12878, 5932, 2]
+// Dependencies: [32, 19, 17, 21, 4945, 587, 558, 576, 5195, 6856, 1400, 1128, 3822, 7247, 12896, 5935, 2]
 
-// Module 16450 (CustomTypingIndicatorAnimationPickerSheet)
+// Module 16469 (CustomTypingIndicatorAnimationPickerSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import Stack_Stack from "Stack/Stack" /* 5932 */;
-import Card_Card from "Card/Card" /* 6853 */;
+import Stack_Stack from "Stack/Stack" /* 5935 */;
+import Card_Card from "Card/Card" /* 6856 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -212,7 +212,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTyping
   const obj7 = { value: onChange(1400).TypingIndicatorAnimation.WAVE, label: intl4.string(animation(3822)["8t5EiI"]) };
   intl4 = tmp(1128).intl;
   items1[3] = obj7;
-  const ActionSheet = tmp(7244).ActionSheet;
+  const ActionSheet = tmp(7247).ActionSheet;
   const content = tmp4.content;
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
     const intl5 = tmp(1128).intl;
@@ -232,7 +232,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTyping
       if (cResult[17] === tmp16) {
         tmp19 = cResult[18];
       }
-      let Stack = tmp(5932).Stack;
+      let Stack = tmp(5935).Stack;
       const items2 = [items1.slice(0, 2), items1.slice(2, 4)];
       const mapped = items2.map((arr, index) => {
         let obj = {
@@ -282,7 +282,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTyping
   }
   const obj9 = { config: obj10, size: 54 };
   obj10 = { emojis, animation, typingSuggestion: onChange(1400).TypingSuggestion.UNSPECIFIED };
-  const tmp13Result = animation(12878);
+  const tmp13Result = animation(12896);
   const tmp18 = closure_6(tmp13Result, obj9);
   cResult[13] = emojis;
   cResult[14] = animation;
@@ -322,12 +322,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTyping
   intl4 = onChange(1128).intl;
   items[3] = obj4;
   const obj5 = { contentStyles: tmp.content, dismissAccessibilityLabel: intl5.string(animation(3822)["q+qHax"]), children: items1 };
-  const ActionSheet = onChange(7244).ActionSheet;
+  const ActionSheet = onChange(7247).ActionSheet;
   intl5 = onChange(1128).intl;
   const obj6 = { style: tmp.previewRow, children: closure_6(tmp4, obj7) };
   obj7 = { config: obj8, size: 54 };
   obj8 = { emojis, animation, typingSuggestion: onChange(1400).TypingSuggestion.UNSPECIFIED };
-  tmp4 = animation(12878);
+  tmp4 = animation(12896);
   items1 = [closure_6(View, obj6), ];
   const obj9 = {
     spacing: 8,
@@ -352,7 +352,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTyping
       return metroRequire(Stack, obj, index);
     })
   };
-  let Stack = onChange(5932).Stack;
+  let Stack = onChange(5935).Stack;
   items2 = [items.slice(0, 2), items.slice(2, 4)];
   items1[1] = closure_6(Stack, obj9);
   return closure_7(ActionSheet, obj5);

@@ -1,21 +1,21 @@
-// Module ID: 5991
-// Function ID: 5992
+// Module ID: 5994
+// Function ID: 5995
 // Name: checkpoint/CheckpointMessageComponentUtils
-// Dependencies: [5970, 11, 5992, 5993, 5994, 6314, 6315, 5979, 1128, 3078, 4894, 3046, 1900, 2000, 2]
+// Dependencies: [5973, 11, 5995, 5996, 5997, 6317, 6318, 5982, 1128, 3078, 4894, 3046, 1900, 2000, 2]
 // Exports: getCharacterLayerUrls, getCheckpointDataFromMessage, getCheckpointLabel, transformCheckpoint2026CardComponent, transformCheckpoint2026CardToRowGeneratedComponent
 
-// Module 5991 (checkpoint/CheckpointMessageComponentUtils)
+// Module 5994 (checkpoint/CheckpointMessageComponentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl19 from "intl" /* 1128 */;
 import Server from "Server" /* 2000 */;
 import _modDef3046 from "module_3046" /* 3046 */;
 import _modDef3078 from "module_3078" /* 3078 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4894 */;
-import CheckpointUtils from "CheckpointUtils" /* 5979 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 5992 */;
-import CheckpointTrait from "CheckpointTrait" /* 5993 */;
-import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 5994 */;
-import CheckpointConstants from "CheckpointConstants" /* 5970 */;
+import CheckpointUtils from "CheckpointUtils" /* 5982 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 5995 */;
+import CheckpointTrait from "CheckpointTrait" /* 5996 */;
+import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 5997 */;
+import CheckpointConstants from "CheckpointConstants" /* 5973 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -228,12 +228,12 @@ export const transformCheckpoint2026CardComponent = function transformCheckpoint
   }
   return tmp2;
 };
-export const getCharacterLayerUrls = function getCharacterLayerUrls(wearable, arg1) {
+export const getCharacterLayerUrls = function getCharacterLayerUrls(character, arg1) {
   let items;
-  _require = wearable;
+  _require = character;
   let closure_1 = arg1;
   const CHECKPOINT_WEARABLE_LAYER_BACKGROUND = require("CheckpointTraitConfig").CHECKPOINT_WEARABLE_LAYER_BACKGROUND;
-  const hasItem = CHECKPOINT_WEARABLE_LAYER_BACKGROUND.has(wearable.wearable);
+  const hasItem = CHECKPOINT_WEARABLE_LAYER_BACKGROUND.has(character.wearable);
   const tmp2 = require("CheckpointTraitConfig");
   items = [];
   const arr = hasItem ? tmp2.CHECKPOINT_LAYER_BACKGROUND_WEARABLE_ORDERING : tmp2.CHECKPOINT_LAYER_DEFAULT_ORDERING;

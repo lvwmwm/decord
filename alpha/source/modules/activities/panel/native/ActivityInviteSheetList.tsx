@@ -1,9 +1,9 @@
-// Module ID: 18193
-// Function ID: 18194
+// Module ID: 18216
+// Function ID: 18217
 // Name: ActivityInviteSheetList
-// Dependencies: [19, 1087, 21, 4945, 6599, 587, 558, 576, 1128, 1202, 5171, 5112, 6856, 5195, 18194, 5554, 7168, 2]
+// Dependencies: [19, 1087, 21, 4945, 6602, 587, 558, 576, 1128, 1202, 5171, 5112, 6859, 5195, 18217, 5554, 7171, 2]
 
-// Module 18193 (ActivityInviteSheetList)
+// Module 18216 (ActivityInviteSheetList)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,12 +12,12 @@ import native from "native" /* 1202 */;
 import RootNavigationRef from "RootNavigationRef" /* 5112 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import Pressables from "Pressables" /* 6856 */;
-import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 18194 */;
+import Pressables from "Pressables" /* 6859 */;
+import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 18217 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
-import TextStyles_mod from "TextStyles" /* 6599 */;
+import TextStyles_mod from "TextStyles" /* 6602 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -117,7 +117,7 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (funct
     }
     if (cResult[9] !== tmp4.goToFriendsLink) {
       let obj2 = { onPress: tmp11, accessibilityRole: "link", accessibilityLabel: tmp12, hitSlop: tmp13, children: React3(Text_Text.Text, obj3) };
-      const PressableOpacity = tmp(6856).PressableOpacity;
+      const PressableOpacity = tmp(6859).PressableOpacity;
       obj3 = { style: goToFriendsLink, variant: "text-sm/semibold", color: "text-link", children: tmp15 };
       const tmp19 = React3(PressableOpacity, obj2);
       cResult[9] = tmp4.goToFriendsLink;

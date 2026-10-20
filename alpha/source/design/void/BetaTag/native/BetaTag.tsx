@@ -1,9 +1,9 @@
-// Module ID: 13860
-// Function ID: 13861
+// Module ID: 13878
+// Function ID: 13879
 // Name: BetaTag
-// Dependencies: [19, 17, 7490, 21, 4945, 587, 558, 576, 1128, 5195, 5219, 1107, 2]
+// Dependencies: [19, 17, 7493, 21, 4945, 587, 558, 576, 1128, 5195, 5219, 1107, 2]
 
-// Module 13860 (BetaTag)
+// Module 13878 (BetaTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -12,7 +12,7 @@ import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import intl3 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import LinearGradientDefault from "LinearGradient" /* 5219 */;
-import ColorConstants from "ColorConstants" /* 7490 */;
+import ColorConstants from "ColorConstants" /* 7493 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,10 +1,10 @@
-// Module ID: 15672
-// Function ID: 15673
+// Module ID: 15691
+// Function ID: 15692
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 8574, 1392, 8606, 1087, 5227, 1394, 21, 4945, 587, 5173, 9678, 15673, 558, 576, 1128, 7011, 7009, 9676, 5648, 10908, 5195, 6853, 10917, 8833, 7005, 5014, 5167, 5170, 14205, 9677, 5258, 4954, 10910, 1633, 504, 2054, 7199, 7224, 5541, 9707, 9708, 8605, 1267, 8611, 5625, 1499, 11931, 15674, 6828, 5226, 7194, 5230, 2]
+// Dependencies: [19, 17, 8586, 1392, 8618, 1087, 5227, 1394, 21, 4945, 587, 5173, 9691, 15692, 558, 576, 1128, 7014, 7012, 9689, 5648, 10919, 5195, 6856, 10928, 8845, 7008, 5014, 5167, 5170, 14223, 9690, 5258, 4954, 10921, 1633, 504, 2054, 7202, 7227, 5541, 9720, 9721, 8617, 1267, 8623, 5625, 1499, 11945, 15693, 6831, 5226, 7197, 5230, 2]
 // Exports: default
 
-// Module 15672 (CustomizeBadgesSheet)
+// Module 15691 (CustomizeBadgesSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
@@ -19,26 +19,26 @@ import Text_Text from "Text/Text" /* 5195 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 5227 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5625 */;
 import CircleInformationIcon2 from "CircleInformationIcon" /* 5648 */;
-import Card_Card from "Card/Card" /* 6853 */;
-import EyeSlashIcon2 from "EyeSlashIcon" /* 7009 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8605 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8611 */;
-import native from "native" /* 8833 */;
-import ContextMenu2 from "ContextMenu" /* 9676 */;
-import ContextMenuState from "ContextMenuState" /* 9677 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9678 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9707 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9708 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10908 */;
-import BadgeUtils from "BadgeUtils" /* 10917 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11931 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 14205 */;
-import BadgeGrid from "BadgeGrid" /* 15673 */;
+import Card_Card from "Card/Card" /* 6856 */;
+import EyeSlashIcon2 from "EyeSlashIcon" /* 7012 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8617 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8623 */;
+import native from "native" /* 8845 */;
+import ContextMenu2 from "ContextMenu" /* 9689 */;
+import ContextMenuState from "ContextMenuState" /* 9690 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9691 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9720 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9721 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10919 */;
+import BadgeUtils from "BadgeUtils" /* 10928 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11945 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 14223 */;
+import BadgeGrid from "BadgeGrid" /* 15692 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8574 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8586 */;
 import UserStore from "UserStore" /* 1392 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8606 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8618 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -111,9 +111,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeV
     tmp4 = cResult[1];
   }
   if (flag) {
-    EyeSlashIcon = tmp(7011).EyeIcon;
+    EyeSlashIcon = tmp(7014).EyeIcon;
   } else {
-    EyeSlashIcon = tmp(7009).EyeSlashIcon;
+    EyeSlashIcon = tmp(7012).EyeSlashIcon;
   }
   if (cResult[2] === badge) {
     if (cResult[3] === flag) {
@@ -129,7 +129,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeV
             tmp7 = cResult[9];
           }
           if (cResult[10] !== index) {
-            const result = index % tmp(15673).BADGE_GRID_COLUMNS;
+            const result = index % tmp(15692).BADGE_GRID_COLUMNS;
             let str = "right";
             if (0 !== result) {
               let str2 = "above";
@@ -205,13 +205,13 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeV
   };
   const tmp = syncedClientThemes;
   if (flag) {
-    EyeSlashIcon = tmp2(7011).EyeIcon;
+    EyeSlashIcon = tmp2(7014).EyeIcon;
   } else {
-    EyeSlashIcon = tmp2(7009).EyeSlashIcon;
+    EyeSlashIcon = tmp2(7012).EyeSlashIcon;
   }
   const obj2 = { items, align: str, disableGesture: true, triggerOnLongPress: true, children };
   items = [obj];
-  const result = index % tmp2(15673).BADGE_GRID_COLUMNS;
+  const result = index % tmp2(15692).BADGE_GRID_COLUMNS;
   str = "right";
   if (0 !== result) {
     let str2 = "above";
@@ -274,7 +274,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeT
       const _Symbol = Symbol;
       if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-        const EyeSlashIcon = tmp(7009).EyeSlashIcon;
+        const EyeSlashIcon = tmp(7012).EyeSlashIcon;
         const tmp10 = syncedClientThemes(EyeSlashIcon, obj3);
         cResult[1] = tmp10;
         tmp7 = tmp10;

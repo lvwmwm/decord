@@ -1,9 +1,9 @@
-// Module ID: 17100
-// Function ID: 17101
+// Module ID: 17119
+// Function ID: 17120
 // Name: AccountSwitcherListItem
-// Dependencies: [19, 17, 1406, 4995, 1392, 13111, 21, 4945, 558, 576, 504, 7213, 587, 5648, 5195, 1128, 6856, 5001, 1202, 4994, 2]
+// Dependencies: [19, 17, 1406, 4995, 1392, 13129, 21, 4945, 558, 576, 504, 7216, 587, 5648, 5195, 1128, 6859, 5001, 1202, 4994, 2]
 
-// Module 17100 (AccountSwitcherListItem)
+// Module 17119 (AccountSwitcherListItem)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,7 +12,7 @@ import native from "native" /* 1202 */;
 import UserUtilsDefault from "UserUtils" /* 4994 */;
 import react_native from "react-native" /* 5001 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import MultiAccountStore from "MultiAccountStore" /* 13111 */;
+import MultiAccountStore from "MultiAccountStore" /* 13129 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import UserRecord from "UserRecord" /* 1406 */;
@@ -64,7 +64,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountStatu
     const _Symbol2 = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { color: nativeDefault.colors.TEXT_BRAND };
-      const CircleCheckIcon = tmp(7213).CircleCheckIcon;
+      const CircleCheckIcon = tmp(7216).CircleCheckIcon;
       const tmp17 = React4(CircleCheckIcon, obj2);
       cResult[2] = tmp17;
       tmp14 = tmp17;
@@ -104,7 +104,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountStatu
   }
   if (id === id1) {
     const obj2 = { color: nativeDefault.colors.TEXT_BRAND };
-    const CircleCheckIcon = tmp(7213).CircleCheckIcon;
+    const CircleCheckIcon = tmp(7216).CircleCheckIcon;
     tmp6 = React4(CircleCheckIcon, obj2);
   } else {
     tmp6 = null;
@@ -222,7 +222,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountSwitc
     if (null == onPressUser) {
       PressableOpacity = _false;
     } else {
-      PressableOpacity = tmp(6856).PressableOpacity;
+      PressableOpacity = tmp(6859).PressableOpacity;
     }
     if (cResult[8] !== (id === id1)) {
       const obj3 = { selected: id === id1 };
@@ -528,7 +528,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountSwitc
     if (null == onPressUser) {
       PressableOpacity = _false;
     } else {
-      PressableOpacity = tmp2(6856).PressableOpacity;
+      PressableOpacity = tmp2(6859).PressableOpacity;
     }
     const obj5 = { selected: id === id1 };
     const tmp2Result = react_native;

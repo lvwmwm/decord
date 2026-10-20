@@ -1,17 +1,17 @@
-// Module ID: 13751
-// Function ID: 13752
+// Module ID: 13769
+// Function ID: 13770
 // Name: PremiumGiftDMPurchaseSuccess
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 10368, 1505, 10414, 10365, 1128, 2590, 5205, 10504, 5195, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 10379, 1505, 10425, 10376, 1128, 2590, 5205, 10515, 5195, 2]
 
-// Module 13751 (PremiumGiftDMPurchaseSuccess)
+// Module 13769 (PremiumGiftDMPurchaseSuccess)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import PremiumGiftModal from "PremiumGiftModal" /* 10365 */;
-import NativeGiftContext from "NativeGiftContext" /* 10368 */;
-import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 10504 */;
+import PremiumGiftModal from "PremiumGiftModal" /* 10376 */;
+import NativeGiftContext from "NativeGiftContext" /* 10379 */;
+import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 10515 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;

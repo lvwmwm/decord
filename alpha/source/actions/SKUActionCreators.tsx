@@ -1,20 +1,20 @@
-// Module ID: 10487
-// Function ID: 10488
+// Module ID: 10498
+// Function ID: 10499
 // Name: SKUActionCreators
-// Dependencies: [5, 9298, 6772, 1087, 584, 6337, 1297, 4772, 9372, 7638, 6328, 4771, 4764, 6417, 6435, 1388, 2]
+// Dependencies: [5, 9310, 6775, 1087, 584, 6340, 1297, 4772, 9384, 7641, 6331, 4771, 4764, 6420, 6438, 1388, 2]
 // Exports: clearPurchaseError, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 10487 (SKUActionCreators)
+// Module 10498 (SKUActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import BillingUtils from "BillingUtils" /* 4764 */;
-import StoreUtils from "StoreUtils" /* 6337 */;
-import PurchaseTokenUtils from "PurchaseTokenUtils" /* 6435 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7638 */;
-import TestModeUtils from "TestModeUtils" /* 9372 */;
+import StoreUtils from "StoreUtils" /* 6340 */;
+import PurchaseTokenUtils from "PurchaseTokenUtils" /* 6438 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7641 */;
+import TestModeUtils from "TestModeUtils" /* 9384 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9298 */;
-import SKUStore from "SKUStore" /* 6772 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9310 */;
+import SKUStore from "SKUStore" /* 6775 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

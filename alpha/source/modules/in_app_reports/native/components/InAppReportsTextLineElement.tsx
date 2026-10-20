@@ -1,12 +1,12 @@
-// Module ID: 8073
-// Function ID: 8074
+// Module ID: 8077
+// Function ID: 8078
 // Name: InAppReportsTextLineElement
-// Dependencies: [5, 32, 19, 17, 21, 4945, 587, 558, 576, 5934, 5560, 7231, 5624, 1384, 4902, 5622, 5195, 1128, 5205, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4945, 587, 558, 576, 5937, 5560, 7234, 5624, 1384, 4902, 5622, 5195, 1128, 5205, 2]
 
-// Module 8073 (InAppReportsTextLineElement)
+// Module 8077 (InAppReportsTextLineElement)
 import nativeDefault from "native" /* 587 */;
 import ToastUtils from "ToastUtils" /* 5624 */;
-import ClipboardUtils from "ClipboardUtils" /* 7231 */;
+import ClipboardUtils from "ClipboardUtils" /* 7234 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

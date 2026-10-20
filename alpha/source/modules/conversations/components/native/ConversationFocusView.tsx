@@ -1,13 +1,13 @@
-// Module ID: 9692
-// Function ID: 9693
+// Module ID: 9705
+// Function ID: 9706
 // Name: ConversationFocusView
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5213, 9654, 9669, 1128, 5195, 5205, 9693, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5213, 9667, 9682, 1128, 5195, 5205, 9706, 2]
 
-// Module 9692 (ConversationFocusView)
+// Module 9705 (ConversationFocusView)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9654 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9669 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9667 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9682 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

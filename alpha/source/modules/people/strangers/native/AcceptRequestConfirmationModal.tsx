@@ -1,13 +1,13 @@
-// Module ID: 10551
-// Function ID: 10552
+// Module ID: 10562
+// Function ID: 10563
 // Name: AcceptRequestConfirmationModal
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1128, 5863, 5195, 5933, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1128, 5866, 5195, 5936, 2]
 
-// Module 10551 (AcceptRequestConfirmationModal)
+// Module 10562 (AcceptRequestConfirmationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5863 */;
-import AlertDefault from "Alert" /* 5933 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5866 */;
+import AlertDefault from "Alert" /* 5936 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;

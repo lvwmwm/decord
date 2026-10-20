@@ -1,9 +1,9 @@
-// Module ID: 11963
-// Function ID: 11964
+// Module ID: 11977
+// Function ID: 11978
 // Name: NoPermsState
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 4952, 5166, 11964, 11965, 11886, 10961, 5631, 1128, 5195, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 4952, 5166, 11978, 11979, 11900, 10972, 5631, 1128, 5195, 2]
 
-// Module 11963 (NoPermsState)
+// Module 11977 (NoPermsState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,7 +12,7 @@ import shared from "shared" /* 4952 */;
 import useThemeDefault from "useTheme" /* 5166 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11886 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11900 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -33,9 +33,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState()
   const cResult = obj.c(10);
   const tmp4 = closure_6();
   const obj2 = shared;
-  const tmp5Result = importDefault(obj2.isThemeLight(useThemeDefault()) ? 11964 : 11965);
+  const tmp5Result = importDefault(obj2.isThemeLight(useThemeDefault()) ? 11978 : 11979);
   const tmpResult = AppLauncherNativeUtils;
-  const logAppLauncherEmptyStateView = tmpResult.useLogAppLauncherEmptyStateView(tmp(10961).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  const logAppLauncherEmptyStateView = tmpResult.useLogAppLauncherEmptyStateView(tmp(10972).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   if (cResult[0] === tmp5Result) {
     let tmp9;
     let tmp12;
@@ -91,9 +91,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState()
   let items;
   const tmp = closure_6();
   const obj = shared;
-  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 11964 : 11965);
+  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 11978 : 11979);
   const tmp2Result = AppLauncherNativeUtils;
-  const logAppLauncherEmptyStateView = tmp2Result.useLogAppLauncherEmptyStateView(tmp2(10961).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  const logAppLauncherEmptyStateView = tmp2Result.useLogAppLauncherEmptyStateView(tmp2(10972).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   const obj2 = { style: tmp.container, children: items };
   items = [, ];
   const obj3 = { style: tmp.image, resizeMode: "contain", source: tmp4Result };

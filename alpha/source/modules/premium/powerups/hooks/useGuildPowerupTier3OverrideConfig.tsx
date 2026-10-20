@@ -1,9 +1,9 @@
-// Module ID: 13279
-// Function ID: 13280
+// Module ID: 13297
+// Function ID: 13298
 // Name: useGuildPowerupTier3OverrideConfig
 // Dependencies: [4822, 1087, 558, 576, 504, 1128, 2558, 2]
 
-// Module 13279 (useGuildPowerupTier3OverrideConfig)
+// Module 13297 (useGuildPowerupTier3OverrideConfig)
 import Constants from "Constants" /* 1087 */;
 import _modDef2558 from "module_2558" /* 2558 */;
 import GuildStore from "GuildStore" /* 4822 */;

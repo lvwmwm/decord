@@ -1,10 +1,10 @@
-// Module ID: 8815
-// Function ID: 8816
+// Module ID: 8827
+// Function ID: 8828
 // Name: guildEventEmbedFetchQueue
 // Dependencies: [2]
 // Exports: resetGuildEventEmbedFetchQueueForTest
 
-// Module 8815 (guildEventEmbedFetchQueue)
+// Module 8827 (guildEventEmbedFetchQueue)
 import size from "module_2" /* 2 */;
 
 let closure_8;

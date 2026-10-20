@@ -1,18 +1,18 @@
-// Module ID: 14450
-// Function ID: 14451
+// Module ID: 14468
+// Function ID: 14469
 // Name: NitroOrbsDeliveredModal
-// Dependencies: [32, 19, 17, 1087, 1089, 21, 4945, 587, 558, 576, 1275, 9279, 7595, 7224, 7436, 13960, 7169, 7239, 5631, 14451, 5195, 1128, 5205, 2]
+// Dependencies: [32, 19, 17, 1087, 1089, 21, 4945, 587, 558, 576, 1275, 9291, 7598, 7227, 7439, 13978, 7172, 7242, 5631, 14469, 5195, 1128, 5205, 2]
 
-// Module 14450 (NitroOrbsDeliveredModal)
+// Module 14468 (NitroOrbsDeliveredModal)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7224 */;
-import openUserSettings from "openUserSettings" /* 7436 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7595 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9279 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14451 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7227 */;
+import openUserSettings from "openUserSettings" /* 7439 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7598 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9291 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14469 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -151,7 +151,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsD
         obj.openUserSettings(obj2);
       }
     }
-    const obj4 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(13960).OrbsRewardBackground, obj5) };
+    const obj4 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(13978).OrbsRewardBackground, obj5) };
     obj5 = { style: tmp4.background, onReady: tmp12 };
     cResult[7] = tmp4.background;
     cResult[8] = closure_10(View, obj4);
@@ -196,8 +196,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsD
         }
       }
       const rect = { style: tmp4.main, top: true, bottom: true, left: true, right: true, children: items };
-      const obj6 = { style: tmp4.header, children: closure_10(onClose(7239).ActionSheetCloseButton, obj7) };
-      const SafeAreaPaddingView = tmp(7169).SafeAreaPaddingView;
+      const obj6 = { style: tmp4.header, children: closure_10(onClose(7242).ActionSheetCloseButton, obj7) };
+      const SafeAreaPaddingView = tmp(7172).SafeAreaPaddingView;
       obj7 = { onPress: onClose, variant: "overlay" };
       items = [closure_10(View, obj6), , ];
       const obj8 = { style: tmp4.body, children: items1 };
@@ -301,7 +301,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsD
   }, items1);
   [tmp10, c1] = react.useState(false);
   let obj2 = { style: tmp.root, children: items2 };
-  const obj3 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(13960).OrbsRewardBackground, obj4) };
+  const obj3 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(onClose(13978).OrbsRewardBackground, obj4) };
   _slicedToArray(react.useState(false), 2);
   const callback2 = react.useCallback(() => _undefined(true), []);
   obj4 = { style: tmp.background, onReady: callback2 };
@@ -314,8 +314,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroOrbsD
   items2[1] = tmp14Result;
   if (tmp12Result) {
     const rect = { style: tmp.main, top: true, bottom: true, left: true, right: true, children: items3 };
-    const obj6 = { style: tmp.header, children: closure_10(onClose(7239).ActionSheetCloseButton, obj7) };
-    const SafeAreaPaddingView = tmp5(7169).SafeAreaPaddingView;
+    const obj6 = { style: tmp.header, children: closure_10(onClose(7242).ActionSheetCloseButton, obj7) };
+    const SafeAreaPaddingView = tmp5(7172).SafeAreaPaddingView;
     obj7 = { onPress: onClose, variant: "overlay" };
     items3 = [closure_10(View, obj6), , ];
     const obj8 = { style: tmp.body, children: items4 };

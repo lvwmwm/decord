@@ -1,19 +1,19 @@
-// Module ID: 11686
-// Function ID: 11687
+// Module ID: 11699
+// Function ID: 11700
 // Name: useConjureSettingPickerOptions
-// Dependencies: [19, 4878, 4890, 4995, 1392, 6721, 558, 576, 7291, 504, 11687, 5565, 5944, 2]
-// Exports: conjureSettingPickedIds, withSavedPicks
+// Dependencies: [19, 4878, 4890, 4995, 1392, 6724, 558, 576, 7294, 504, 11700, 5565, 5947, 2]
+// Exports: conjureSettingPickedIds, withPickCap, withSavedPicks
 
-// Module 11686 (useConjureSettingPickerOptions)
-import NicknameUtils from "NicknameUtils" /* 5944 */;
-import ConjureUtils from "ConjureUtils" /* 7291 */;
-import conjureGuildPickerSources from "conjureGuildPickerSources" /* 11687 */;
+// Module 11699 (useConjureSettingPickerOptions)
+import NicknameUtils from "NicknameUtils" /* 5947 */;
+import ConjureUtils from "ConjureUtils" /* 7294 */;
+import conjureGuildPickerSources from "conjureGuildPickerSources" /* 11700 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4878 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
 import StreamerModeStore from "StreamerModeStore" /* 4995 */;
 import UserStore from "UserStore" /* 1392 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6721 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6724 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -72,21 +72,6 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-function conjureSettingPickedIds(value) {
-  let tmp = value;
-  if (!Array.isArray(value)) {
-    if (typeof value === "string") {
-      let items1;
-      if ("" !== value) {
-        const items = [value];
-        items1 = items;
-      }
-      tmp = items1;
-    }
-    items1 = [];
-  }
-  return tmp;
-}
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSettingPickerOptions(arg0, type) {
   let closure_0;
   let first;
@@ -115,39 +100,28 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     const tmpResult = tmp(504);
     const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
     let tmp11 = null;
-    const useConjureGuildRoles = tmp(11687).useConjureGuildRoles;
-    tmp(11687);
+    const useConjureGuildRoles = tmp(11700).useConjureGuildRoles;
+    tmp(11700);
     if ("role" === type.type) {
       tmp11 = arg0;
     }
     const conjureGuildRoles = useConjureGuildRoles(tmp11);
     let tmp13 = null;
-    const useConjureGuildMemberUsers = tmp(11687).useConjureGuildMemberUsers;
-    tmp(11687);
+    const useConjureGuildMemberUsers = tmp(11700).useConjureGuildMemberUsers;
+    tmp(11700);
     if ("user" === type.type) {
       tmp13 = arg0;
     }
     const conjureGuildMemberUsers = useConjureGuildMemberUsers(tmp13);
-    class S {
-      constructor() {
-        let channels = null;
-        if (null != closure_0) {
-          channels = null;
-          if ("channel" === type.type) {
-            channels = GuildChannelStore.getChannels(tmp);
-          }
-        }
-        return channels;
-      }
-    }
+    const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const items1 = [StreamerModeStore];
-      const fn = function j() {
+      const fn2 = function j() {
         return StreamerModeStore.hidePersonalInformation;
       };
       cResult[5] = items1;
-      cResult[6] = fn;
-      tmp16 = fn;
+      cResult[6] = fn2;
+      tmp16 = fn2;
       tmp15 = items1;
     } else {
       tmp15 = cResult[5];
@@ -166,7 +140,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       }
       let mapped = null;
       if (null != stateFromStores) {
-        const tmpResult8 = tmp(7291);
+        const tmpResult8 = tmp(7294);
         let result = tmpResult8.conjureSettingChannels(stateFromStores, type.channel_filter);
         mapped = result.map((id) => {
           let obj2;
@@ -183,7 +157,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       let tmp20;
       if (cResult[10] !== conjureGuildRoles) {
         let tmp21;
-        const _Symbol = Symbol;
+        const _Symbol2 = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
           class I {
             constructor(id) {
@@ -220,25 +194,23 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     }
     return tmp19;
   }
-  class S {
-    constructor() {
-      let channels = null;
-      if (null != closure_0) {
-        channels = null;
-        if ("channel" === type.type) {
-          channels = GuildChannelStore.getChannels(tmp);
-        }
+  const fn = function p() {
+    let channels = null;
+    if (null != closure_0) {
+      channels = null;
+      if ("channel" === type.type) {
+        channels = GuildChannelStore.getChannels(tmp);
       }
-      return channels;
     }
-  }
+    return channels;
+  };
   const items2 = [arg0, type.type];
   cResult[1] = type.type;
   cResult[2] = arg0;
-  cResult[3] = S;
+  cResult[3] = fn;
   cResult[4] = items2;
   tmp7 = items2;
-  tmp6 = S;
+  tmp6 = fn;
 }) : (function useConjureSettingPickerOptions(arg0, type) {
   let closure_0;
   let conjureGuildRoles;
@@ -267,8 +239,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   }
   conjureGuildRoles = useConjureGuildRoles(tmp5);
   let tmp8 = null;
-  const useConjureGuildMemberUsers = tmp(11687).useConjureGuildMemberUsers;
-  tmp(11687);
+  const useConjureGuildMemberUsers = tmp(11700).useConjureGuildMemberUsers;
+  tmp(11700);
   if ("user" === type.type) {
     tmp8 = arg0;
   }
@@ -320,14 +292,29 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     }
   }, items3);
 });
+function conjureSettingPickedIds(value) {
+  let tmp = value;
+  if (!Array.isArray(value)) {
+    if (typeof value === "string") {
+      let items1;
+      if ("" !== value) {
+        const items = [value];
+        items1 = items;
+      }
+      tmp = items1;
+    }
+    items1 = [];
+  }
+  return tmp;
+}
 let result = size.fileFinishedImporting("modules/conjure/settings/useConjureSettingPickerOptions.tsx");
 
 export default tmp3;
+export const MAX_CONJURE_SETTING_PICKS = 25;
 export { conjureSettingPickedIds };
-export const withSavedPicks = function withSavedPicks(arr, value, arg2) {
+export const withSavedPicks = function withSavedPicks(arr, value, cResult) {
   let items3;
   let closure_0 = arr;
-  let closure_1 = arg2;
   arr = value;
   if (!Array.isArray(value)) {
     if (typeof value === "string") {
@@ -350,12 +337,32 @@ export const withSavedPicks = function withSavedPicks(arr, value, arg2) {
       let closure_0 = item;
       let found = closure_0.find((id) => id.id === closure_0);
       if (found == null) {
-        found = closure_1(item);
+        found = cResult(item);
       }
       return found;
     }), 0);
     HermesBuiltin.arraySpread(items3, arr.filter((id) => !arr.includes(id.id)), arraySpreadResult3);
   }
   return items3;
+};
+export const withPickCap = function withPickCap(arr, arg1) {
+  let mapped;
+  let closure_0 = arg1;
+  if (arg1.length < 25) {
+    const items = [];
+    HermesBuiltin.arraySpread(items, arr, 0);
+    mapped = items;
+  } else {
+    mapped = arr.map((id) => {
+      let tmp = id;
+      if (!closure_0.includes(id.id)) {
+        const obj = { disabled: true };
+        const merged = Object.assign(id);
+        tmp = obj;
+      }
+      return tmp;
+    });
+  }
+  return mapped;
 };
 export const useConjureSettingsGuildId = tmp2;

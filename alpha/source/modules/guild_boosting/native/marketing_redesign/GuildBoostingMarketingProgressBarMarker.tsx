@@ -1,16 +1,16 @@
-// Module ID: 14693
-// Function ID: 14694
+// Module ID: 14711
+// Function ID: 14712
 // Name: GuildBoostingMarketingProgressBarMarker
-// Dependencies: [19, 17, 1087, 21, 14694, 14695, 14696, 4945, 587, 558, 576, 5166, 5014, 4942, 4952, 5208, 13307, 5631, 11149, 8310, 5195, 2]
+// Dependencies: [19, 17, 1087, 21, 14712, 14713, 14714, 4945, 587, 558, 576, 5166, 5014, 4942, 4952, 5208, 13325, 5631, 11160, 8314, 5195, 2]
 
-// Module 14693 (GuildBoostingMarketingProgressBarMarker)
+// Module 14711 (GuildBoostingMarketingProgressBarMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import spring from "spring" /* 5208 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14694 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14695 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14696 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14712 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14713 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14714 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -444,7 +444,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
                                 tmp34 = cResult[27];
                               }
                               if (cResult[28] !== tier) {
-                                const tmpResult4 = tmp(8310);
+                                const tmpResult4 = tmp(8314);
                                 const tierName = tmpResult4.getTierName(tier, { useLevels: false });
                                 cResult[28] = tier;
                                 cResult[29] = tierName;
@@ -501,7 +501,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
                           }
                           let tmp35 = tmp11 && tier !== BoostedGuildTiers.NONE;
                           if (tmp35) {
-                            const obj8 = { source: sharedValue(11149), style: tmp4.progressBarMarkerUnlockedIcon };
+                            const obj8 = { source: sharedValue(11160), style: tmp4.progressBarMarkerUnlockedIcon };
                             const tmp5Result = sharedValue(5631);
                             tmp35 = closure_6(tmp5Result, obj8);
                           }
@@ -651,14 +651,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarM
       tmp20Result = tier !== BoostedGuildTiers.NONE;
     }
     if (tmp20Result) {
-      const obj8 = { source: sharedValue(11149), style: tmp.progressBarMarkerUnlockedIcon };
+      const obj8 = { source: sharedValue(11160), style: tmp.progressBarMarkerUnlockedIcon };
       const tmp2Result = sharedValue(5631);
       tmp20Result = tmp20(tmp2Result, obj8);
     }
     items5 = [tmp20Result, ];
     const obj9 = { variant: "text-xs/medium", children: tmp5Result4.getTierName(tier, { useLevels: false }) };
     const Text = tmp5(5195).Text;
-    tmp5Result4 = useReducedMotion(8310);
+    tmp5Result4 = useReducedMotion(8314);
     items5[1] = closure_6(Text, obj9);
     items3[2] = closure_7(PREMIUM_PERK_PINK, obj7);
     return closure_7(PREMIUM_PERK_PINK, obj3);

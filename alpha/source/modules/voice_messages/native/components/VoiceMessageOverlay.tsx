@@ -1,9 +1,9 @@
-// Module ID: 13371
-// Function ID: 13372
+// Module ID: 13389
+// Function ID: 13390
 // Name: VoiceMessageOverlay
-// Dependencies: [32, 19, 17, 4946, 4800, 12857, 12858, 1087, 12359, 21, 5014, 1202, 5195, 12, 7906, 4945, 587, 6655, 558, 576, 504, 5213, 6833, 1128, 5167, 8484, 10795, 13372, 5554, 13105, 5228, 5926, 1123, 12628, 11371, 12952, 12947, 7903, 5652, 5642, 11513, 12355, 13373, 2]
+// Dependencies: [32, 19, 17, 4946, 4800, 12875, 12876, 1087, 12376, 21, 5014, 1202, 5195, 12, 7910, 4945, 587, 6658, 558, 576, 504, 5213, 6836, 1128, 5167, 8488, 10806, 13390, 5554, 13123, 5228, 5929, 1123, 12645, 11382, 12970, 12965, 7907, 5652, 5642, 11524, 12372, 13391, 2]
 
-// Module 13371 (VoiceMessageOverlay)
+// Module 13389 (VoiceMessageOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -14,12 +14,12 @@ import ReanimatedRexport2 from "ReanimatedRexport" /* 5014 */;
 import timing from "timing" /* 5167 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5228 */;
-import LegacyTokens from "LegacyTokens" /* 6655 */;
-import useRefValueDefault from "useRefValue" /* 6833 */;
-import inlineStyles from "inlineStyles" /* 7906 */;
-import ChatInputConstants from "ChatInputConstants" /* 12359 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 12857 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 12858 */;
+import LegacyTokens from "LegacyTokens" /* 6658 */;
+import useRefValueDefault from "useRefValue" /* 6836 */;
+import inlineStyles from "inlineStyles" /* 7910 */;
+import ChatInputConstants from "ChatInputConstants" /* 12376 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 12875 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 12876 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
@@ -41,7 +41,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp;
-const react_native = tmp(5926);
+const react_native = tmp(5929);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, AppState: metroRequire } = react_native2);
 const useVoiceMessagesUIStore = VoiceMessagesUIStore.useVoiceMessagesUIStore;

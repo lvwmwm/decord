@@ -1,10 +1,10 @@
-// Module ID: 6796
-// Function ID: 6797
+// Module ID: 6799
+// Function ID: 6800
 // Name: useCanReapplyToRejectedMemberVerificationApplication
-// Dependencies: [5, 32, 19, 5662, 4972, 1087, 504, 6797, 2]
+// Dependencies: [5, 32, 19, 5662, 4972, 1087, 504, 6800, 2]
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 6796 (useCanReapplyToRejectedMemberVerificationApplication)
+// Module 6799 (useCanReapplyToRejectedMemberVerificationApplication)
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

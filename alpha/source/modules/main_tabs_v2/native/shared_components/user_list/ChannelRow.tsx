@@ -1,23 +1,23 @@
-// Module ID: 10608
-// Function ID: 10609
+// Module ID: 10619
+// Function ID: 10620
 // Name: ChannelRow
-// Dependencies: [109, 19, 17, 4800, 4822, 6719, 4890, 1392, 10534, 6653, 21, 4945, 587, 558, 576, 504, 5565, 10609, 12749, 8504, 8496, 5195, 4773, 2050, 6848, 6851, 2]
+// Dependencies: [109, 19, 17, 4800, 4822, 6722, 4890, 1392, 10545, 6656, 21, 4945, 587, 558, 576, 504, 5565, 10620, 12766, 8508, 8500, 5195, 4773, 2050, 6851, 6854, 2]
 
-// Module 10608 (ChannelRow)
+// Module 10619 (ChannelRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DateUtils from "DateUtils" /* 4773 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import useChannelName from "useChannelName" /* 5565 */;
-import ReadStateConstants from "ReadStateConstants" /* 6653 */;
-import UserRowConstants from "UserRowConstants" /* 10534 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10609 */;
-import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 12749 */;
+import ReadStateConstants from "ReadStateConstants" /* 6656 */;
+import UserRowConstants from "UserRowConstants" /* 10545 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10620 */;
+import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 12766 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import GuildStore from "GuildStore" /* 4822 */;
-import ReadStateStore from "ReadStateStore" /* 6719 */;
+import ReadStateStore from "ReadStateStore" /* 6722 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
@@ -251,7 +251,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return closure_9.lastMessageTimestamp(closure_0.id, ReadStateTypes.CHANNEL);
           }
         }
-        let obj2 = { "aria-label": "", style: null, guild: stateFromStores, channel: tmp4, size: tmp(12749).GuildIconWithChannelTypeSizes.SMALL_32 };
+        let obj2 = { "aria-label": "", style: null, guild: stateFromStores, channel: tmp4, size: tmp(12766).GuildIconWithChannelTypeSizes.SMALL_32 };
         class J {
           constructor() {
             if (null == closure_1) {
@@ -267,7 +267,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return;
           }
         }
-        const GuildIconWithChannelType = tmp(12749).GuildIconWithChannelType;
+        const GuildIconWithChannelType = tmp(12766).GuildIconWithChannelType;
         tmp34 = closure_14(GuildIconWithChannelType, obj2);
       }
       cResult[26] = tmp4;
@@ -418,9 +418,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
       if (channel.isForumPost()) {
-        TextIcon = tmp3(8504).ForumIcon;
+        TextIcon = tmp3(8508).ForumIcon;
       } else {
-        TextIcon = tmp3(8496).TextIcon;
+        TextIcon = tmp3(8500).TextIcon;
       }
       const obj = { style: closure_7.subLabel, children: items };
       const obj2 = { color: nativeDefault.colors.TEXT_SUBTLE, style: closure_7.subLabelIcon };

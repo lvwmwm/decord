@@ -1,10 +1,10 @@
-// Module ID: 7344
-// Function ID: 7345
+// Module ID: 7347
+// Function ID: 7348
 // Name: SensitiveMediaGoreRedactionSettingsUtils
 // Dependencies: [19, 1392, 1087, 1211, 5605, 5612, 4776, 558, 2]
 // Exports: getGoreContentSettingOrDefault, resolveGoreSettingWithDefaultsForTeen, updateGoreContentSetting
 
-// Module 7344 (SensitiveMediaGoreRedactionSettingsUtils)
+// Module 7347 (SensitiveMediaGoreRedactionSettingsUtils)
 import Constants from "Constants" /* 1087 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import UserSettings from "UserSettings" /* 4776 */;

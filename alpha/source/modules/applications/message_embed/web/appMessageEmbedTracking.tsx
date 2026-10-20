@@ -1,10 +1,10 @@
-// Module ID: 7710
-// Function ID: 7711
+// Module ID: 7714
+// Function ID: 7715
 // Name: appMessageEmbedTracking
-// Dependencies: [19, 1087, 1267, 558, 576, 7711, 7712, 2]
+// Dependencies: [19, 1087, 1267, 558, 576, 7715, 7716, 2]
 // Exports: trackAppEmbedClick, trackAppEmbedLinkSent, trackAppEmbedViewed
 
-// Module 7710 (appMessageEmbedTracking)
+// Module 7714 (appMessageEmbedTracking)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import react from "react" /* 19 */;
@@ -23,7 +23,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackAppE
   let obj = require("react");
   const cResult = obj.c(4);
   if (cResult[0] !== id) {
-    const tmpResult = tmp(7711);
+    const tmpResult = tmp(7715);
     const result = tmpResult.trackingConfigWithDefaults(id);
     cResult[0] = id;
     cResult[1] = result;
@@ -68,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackAppE
   } else {
     tmp6 = cResult[3];
   }
-  const tmpResult2 = tmp(7712);
+  const tmpResult2 = tmp(7716);
   return tmpResult2.useIsVisible(tmp6, undefined);
 }) : (function useTrackAppEmbedViewed(id) {
   let obj = require("appMessageEmbedTrackingConfig");

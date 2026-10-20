@@ -1,14 +1,14 @@
-// Module ID: 16679
-// Function ID: 16680
+// Module ID: 16698
+// Function ID: 16699
 // Name: BeakerIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16680, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16699, 5630, 2]
 
-// Module 16679 (BeakerIcon)
+// Module 16698 (BeakerIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 16680 */;
+import AssetRegistry from "AssetRegistry" /* 16699 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

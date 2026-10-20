@@ -1,11 +1,11 @@
-// Module ID: 9430
-// Function ID: 9431
+// Module ID: 9442
+// Function ID: 9443
 // Name: useGameProfileCommunitiesLocaleOptions
-// Dependencies: [19, 9428, 1128, 558, 576, 2]
+// Dependencies: [19, 9440, 1128, 558, 576, 2]
 
-// Module 9430 (useGameProfileCommunitiesLocaleOptions)
+// Module 9442 (useGameProfileCommunitiesLocaleOptions)
 import intl3 from "intl" /* 1128 */;
-import GameProfileCommunitiesLocaleFilterStore2 from "GameProfileCommunitiesLocaleFilterStore" /* 9428 */;
+import GameProfileCommunitiesLocaleFilterStore2 from "GameProfileCommunitiesLocaleFilterStore" /* 9440 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 const GameProfileCommunitiesLocaleFilterStore_mod = GameProfileCommunitiesLocaleFilterStore2;
 let _require;
 
-const f102284 = (locale) => {
+const f102385 = (locale) => {
   let intl2;
   let stringResult;
   closure_0 = locale;
@@ -33,7 +33,7 @@ const f102284 = (locale) => {
     return obj;
   }
 };
-const f102285 = (label, label2) => {
+const f102386 = (label, label2) => {
   label = label.label;
   return label.localeCompare(label2.label);
 };
@@ -65,8 +65,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfi
   if (cResult[1] !== arr) {
     const tmpResult = tmp(1128);
     _require = tmpResult.getAvailableLocales();
-    const mapped = arr.map(f102284);
-    const sorted = mapped.sort(f102285);
+    const mapped = arr.map(f102385);
+    const sorted = mapped.sort(f102386);
     cResult[1] = arr;
     cResult[2] = sorted;
     arr = sorted;
@@ -171,8 +171,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfi
   memo = react.useMemo(() => {
     let obj = intl3;
     const availableLocales = obj.getAvailableLocales();
-    const mapped = closure_1.map(f102284);
-    return mapped.sort(f102285);
+    const mapped = closure_1.map(f102385);
+    return mapped.sort(f102386);
   }, items);
   let obj = {
     options: react.useMemo(() => {

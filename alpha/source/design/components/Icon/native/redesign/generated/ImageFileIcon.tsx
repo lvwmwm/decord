@@ -1,14 +1,14 @@
-// Module ID: 12045
-// Function ID: 12046
+// Module ID: 12060
+// Function ID: 12061
 // Name: ImageFileIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 12046, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 12061, 5630, 2]
 
-// Module 12045 (ImageFileIcon)
+// Module 12060 (ImageFileIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 12046 */;
+import AssetRegistry from "AssetRegistry" /* 12061 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

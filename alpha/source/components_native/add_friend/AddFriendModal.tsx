@@ -1,19 +1,19 @@
-// Module ID: 14894
-// Function ID: 14895
+// Module ID: 14912
+// Function ID: 14913
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1392, 1087, 13382, 21, 4945, 6599, 587, 558, 576, 13384, 1267, 1384, 5224, 1508, 6620, 4994, 1128, 8771, 7431, 14895, 6872, 5195, 14896, 14898, 1633, 7043, 2]
+// Dependencies: [32, 19, 17, 1392, 1087, 13400, 21, 4945, 6602, 587, 558, 576, 13402, 1267, 1384, 5224, 1508, 6623, 4994, 1128, 8783, 7434, 14913, 6875, 5195, 14914, 14916, 1633, 7046, 2]
 
-// Module 14894 (AddFriendModal)
+// Module 14912 (AddFriendModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
-import NavigatorHeader from "NavigatorHeader" /* 6872 */;
-import Navigator from "Navigator" /* 7043 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13382 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13384 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+import NavigatorHeader from "NavigatorHeader" /* 6875 */;
+import Navigator from "Navigator" /* 7046 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13400 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13402 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -21,7 +21,7 @@ import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
-import TextStyles from "TextStyles" /* 6599 */;
+import TextStyles from "TextStyles" /* 6602 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 19084
-// Function ID: 19085
+// Module ID: 19108
+// Function ID: 19109
 // Name: ForwardGuildBreadcrumbManager
-// Dependencies: [8257, 4822, 1087, 18590, 19085, 7162, 18602, 2]
+// Dependencies: [8261, 4822, 1087, 18613, 19109, 7165, 18625, 2]
 
-// Module 19084 (ForwardGuildBreadcrumbManager)
+// Module 19108 (ForwardGuildBreadcrumbManager)
 import Constants from "Constants" /* 1087 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18602 */;
-import BasicGuildActionCreators from "BasicGuildActionCreators" /* 19085 */;
-import BasicGuildStore from "BasicGuildStore" /* 8257 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18625 */;
+import BasicGuildActionCreators from "BasicGuildActionCreators" /* 19109 */;
+import BasicGuildStore from "BasicGuildStore" /* 8261 */;
 import GuildStore from "GuildStore" /* 4822 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7162 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7165 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
@@ -24,7 +24,7 @@ function fetchForwardReferencedGuilds(message_reference) {
     const guild_id = message_reference.message_reference.guild_id;
     const tmp2 = null != guild_id && null == GuildStore.getGuild(guild_id) && null == BasicGuildStore.getGuildOrStatus(guild_id);
     if (tmp2) {
-      let obj = guild_id(18590);
+      let obj = guild_id(18613);
       const result = obj.queueMessageLinkFetch(() => {
         const obj = BasicGuildActionCreators;
         return obj.fetchBasicGuild(guild_id);

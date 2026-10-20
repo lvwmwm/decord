@@ -1,14 +1,14 @@
-// Module ID: 10798
-// Function ID: 10799
+// Module ID: 10809
+// Function ID: 10810
 // Name: ForumPostTagsActionSheet
-// Dependencies: [32, 19, 17, 7326, 21, 4945, 558, 576, 1128, 7328, 9642, 5171, 7194, 10799, 5205, 7244, 2]
+// Dependencies: [32, 19, 17, 7329, 21, 4945, 558, 576, 1128, 7331, 9655, 5171, 7197, 10810, 5205, 7247, 2]
 
-// Module 10798 (ForumPostTagsActionSheet)
+// Module 10809 (ForumPostTagsActionSheet)
 import react_native from "react-native" /* 17 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import ForumConstants from "ForumConstants" /* 7326 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9642 */;
-import AvailableForumTagDefault from "AvailableForumTag" /* 10799 */;
+import ForumConstants from "ForumConstants" /* 7329 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9655 */;
+import AvailableForumTagDefault from "AvailableForumTag" /* 10810 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -272,7 +272,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
   let tmp3 = closure_9();
   let tmp4 = thread;
   const tmp5 = dependencyMap;
-  let obj = thread(7328);
+  let obj = thread(7331);
   let appliedTags = obj.useAppliedTags(thread);
   const useState = first.useState;
   let _Set = Set;
@@ -282,7 +282,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
   const _Set1 = new _Set(appliedTags);
   [first, closure_5] = useState(_Set1);
   closure_6 = first.size >= closure_6;
-  const tmp4Result = tmp4(7328);
+  const tmp4Result = tmp4(7331);
   const visibleForumTags = tmp4Result.useVisibleForumTags(parentChannel);
   let obj2 = {
     onDismiss() {
@@ -295,9 +295,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
     header: toggleTag(BottomSheetTitleHeader, obj3),
     children: items
   };
-  const ActionSheet = tmp4(7244).ActionSheet;
+  const ActionSheet = tmp4(7247).ActionSheet;
   obj3 = { title, subtitle: intl2.string(tmp4(1128).t["+HS9+m"]), subtitleStyle: tmp3.subtitle };
-  BottomSheetTitleHeader = tmp4(7194).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = tmp4(7197).BottomSheetTitleHeader;
   intl2 = tmp4(1128).intl;
   items = [, ];
   const obj4 = {

@@ -1,17 +1,17 @@
-// Module ID: 18833
-// Function ID: 18834
+// Module ID: 18856
+// Function ID: 18857
 // Name: GuildSettingsModalSecurity
-// Dependencies: [19, 17, 4818, 4822, 1392, 8927, 1087, 21, 4945, 587, 558, 576, 504, 8926, 1128, 5195, 5205, 5631, 15841, 5553, 2]
+// Dependencies: [19, 17, 4818, 4822, 1392, 8939, 1087, 21, 4945, 587, 558, 576, 504, 8938, 1128, 5195, 5205, 5631, 15860, 5553, 2]
 
-// Module 18833 (GuildSettingsModalSecurity)
+// Module 18856 (GuildSettingsModalSecurity)
 import nativeDefault from "native" /* 587 */;
 import GuildRecord from "GuildRecord" /* 4818 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8926 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8938 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import UserStore from "UserStore" /* 1392 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8927 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8939 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -282,7 +282,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
                           }
                         }
                         const tmp57 = stateFromStores(5631);
-                        tmp58[0] = stateFromStores(15841);
+                        tmp58[0] = stateFromStores(15860);
                         tmp58[1] = tmp4.image;
                         const tmp59 = closure_12(tmp57, tmp58);
                         cResult[35] = tmp4.image;
@@ -620,7 +620,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
   items4[2] = tmp18Result;
   items5 = [closure_13(closure_4, obj4), ];
   const obj10 = { style: tmp.center, children: items6 };
-  const obj11 = { source: stateFromStores(15841), style: tmp.image, resizeMode: "contain" };
+  const obj11 = { source: stateFromStores(15860), style: tmp.image, resizeMode: "contain" };
   const tmp23 = stateFromStores(5631);
   items6 = [closure_12(tmp23, obj11), ];
   const obj12 = { style: tmp.infoWrapper, children: closure_12(Text3, obj13) };

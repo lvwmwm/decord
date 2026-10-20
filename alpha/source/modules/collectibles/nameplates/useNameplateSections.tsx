@@ -1,15 +1,15 @@
-// Module ID: 15692
-// Function ID: 15693
+// Module ID: 15711
+// Function ID: 15712
 // Name: useNameplateSections
-// Dependencies: [32, 19, 7596, 7611, 558, 576, 573, 7608, 1128, 14286, 2]
+// Dependencies: [32, 19, 7599, 7614, 558, 576, 573, 7611, 1128, 14304, 2]
 
-// Module 15692 (useNameplateSections)
+// Module 15711 (useNameplateSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1128 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7608 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7611 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7596 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7611 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7599 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7614 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -187,7 +187,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNamepla
       tmp27 = obj4;
     }
   }
-  const tmp2Result4 = stateFromStores(7608);
+  const tmp2Result4 = stateFromStores(7611);
   const nameplates = tmp2Result4.getNameplates(stateFromStores, tmp13);
   if (cResult[10] === tmp14) {
     let tmp18;
@@ -350,7 +350,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNamepla
     items1[2] = obj4;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(14286)(tmp5, obj.PREVIEW);
+  return first(14304)(tmp5, obj.PREVIEW);
 });
 let result = size.fileFinishedImporting("modules/collectibles/nameplates/useNameplateSections.tsx");
 

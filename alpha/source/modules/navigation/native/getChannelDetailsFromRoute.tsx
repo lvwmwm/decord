@@ -1,10 +1,10 @@
-// Module ID: 6753
-// Function ID: 6754
+// Module ID: 6756
+// Function ID: 6757
 // Name: getChannelDetailsFromRoute
 // Dependencies: [5111, 2]
 // Exports: default
 
-// Module 6753 (getChannelDetailsFromRoute)
+// Module 6756 (getChannelDetailsFromRoute)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5111 */;
 import size from "module_2" /* 2 */;
 

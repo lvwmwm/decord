@@ -1,18 +1,18 @@
-// Module ID: 16040
-// Function ID: 16041
+// Module ID: 16059
+// Function ID: 16060
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 558, 576, 4945, 16041, 1128, 1202, 5195, 10846, 5863, 16018, 5933, 1417, 5207, 11728, 9139, 7903, 6851, 7241, 6852, 2]
+// Dependencies: [5, 32, 19, 17, 21, 558, 576, 4945, 16060, 1128, 1202, 5195, 10857, 5866, 16037, 5936, 1417, 5207, 11742, 9151, 7907, 6854, 7244, 6855, 2]
 
-// Module 16040 (ConnectedApplicationIdentity)
+// Module 16059 (ConnectedApplicationIdentity)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import Icon from "Icon" /* 5207 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5863 */;
-import AlertDefault from "Alert" /* 5933 */;
-import InfoBoxDefault from "InfoBox" /* 10846 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5866 */;
+import AlertDefault from "Alert" /* 5936 */;
+import InfoBoxDefault from "InfoBox" /* 10857 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

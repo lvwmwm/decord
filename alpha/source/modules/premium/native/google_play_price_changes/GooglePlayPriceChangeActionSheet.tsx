@@ -1,9 +1,9 @@
-// Module ID: 18112
-// Function ID: 18113
+// Module ID: 18135
+// Function ID: 18136
 // Name: GooglePlayPriceChangeActionSheet
-// Dependencies: [19, 17, 2059, 18113, 1087, 4797, 21, 4945, 587, 558, 576, 504, 2054, 7285, 5226, 5195, 1128, 2068, 5205, 2]
+// Dependencies: [19, 17, 2059, 18136, 1087, 4797, 21, 4945, 587, 558, 576, 504, 2054, 7288, 5226, 5195, 1128, 2068, 5205, 2]
 
-// Module 18112 (GooglePlayPriceChangeActionSheet)
+// Module 18135 (GooglePlayPriceChangeActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -11,7 +11,7 @@ import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2068 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 2059 */;
-import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 18113 */;
+import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 18136 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -229,9 +229,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GooglePlayPr
   const intervalType = tmpResult9.getInterval(str).intervalType;
   const tmpResult10 = markAsDismissed(2054);
   const intervalStringAsNoun = tmpResult10.getIntervalStringAsNoun(intervalType);
-  const tmpResult11 = markAsDismissed(7285);
+  const tmpResult11 = markAsDismissed(7288);
   const formatPriceResult = tmpResult11.formatPrice(stateFromStores.oldPrice, stateFromStores.oldCurrency);
-  const tmpResult12 = markAsDismissed(7285);
+  const tmpResult12 = markAsDismissed(7288);
   const formatPriceResult1 = tmpResult12.formatPrice(stateFromStores.newPrice, stateFromStores.newCurrency);
   BottomSheet = tmp(5226).BottomSheet;
   ({ container, textContainer } = tmp4);
@@ -311,9 +311,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GooglePlayPr
   const intervalType = tmp2Result5.getInterval(str).intervalType;
   const tmp2Result6 = markAsDismissed(2054);
   const intervalStringAsNoun = tmp2Result6.getIntervalStringAsNoun(intervalType);
-  const tmp2Result7 = markAsDismissed(7285);
+  const tmp2Result7 = markAsDismissed(7288);
   const formatPriceResult = tmp2Result7.formatPrice(stateFromStores.oldPrice, stateFromStores.oldCurrency);
-  const tmp2Result8 = markAsDismissed(7285);
+  const tmp2Result8 = markAsDismissed(7288);
   const obj3 = { children: closure_9(View, obj4) };
   obj4 = { style: tmp.container, children: items3 };
   const obj5 = { style: tmp.textContainer, children: items2 };

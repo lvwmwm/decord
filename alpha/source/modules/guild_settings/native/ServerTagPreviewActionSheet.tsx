@@ -1,15 +1,15 @@
-// Module ID: 14959
-// Function ID: 14960
+// Module ID: 14977
+// Function ID: 14978
 // Name: ServerTagPreviewActionSheet
-// Dependencies: [19, 17, 8906, 21, 4945, 587, 558, 576, 8907, 8908, 5171, 14960, 5195, 1128, 5205, 7082, 7194, 7244, 2]
+// Dependencies: [19, 17, 8918, 21, 4945, 587, 558, 576, 8919, 8920, 5171, 14978, 5195, 1128, 5205, 7085, 7197, 7247, 2]
 
-// Module 14959 (ServerTagPreviewActionSheet)
+// Module 14977 (ServerTagPreviewActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import GuildProfileStore from "GuildProfileStore" /* 8906 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 8908 */;
-import GuildSettingsServerTagPreviewDefault from "GuildSettingsServerTagPreview" /* 14960 */;
+import GuildProfileStore from "GuildProfileStore" /* 8918 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 8920 */;
+import GuildSettingsServerTagPreviewDefault from "GuildSettingsServerTagPreview" /* 14978 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -41,7 +41,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTagP
   const cResult = obj.c(21);
   guildId = guildId.guildId;
   const tmp4 = closure_8();
-  const obj2 = guildId(8907);
+  const obj2 = guildId(8919);
   const guildProfile1 = obj2.useGuildProfile(guildId);
   ({ guildProfile, fetchStatus } = guildProfile1);
   if (cResult[0] !== guildId) {
@@ -154,7 +154,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTagP
   } else {
     const _Symbol = Symbol;
     if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp12 = closure_6(guildId(7082).SceneLoadingIndicator, {});
+      const tmp12 = closure_6(guildId(7085).SceneLoadingIndicator, {});
       cResult[17] = tmp12;
       tmp10 = tmp12;
     } else {
@@ -163,7 +163,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTagP
   }
   if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
     const obj8 = { title: intl3.string(guildId(1128).t["2QmKZ2"]) };
-    const BottomSheetTitleHeader = tmp(7194).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(7197).BottomSheetTitleHeader;
     intl3 = tmp(1128).intl;
     const tmp34 = closure_6(BottomSheetTitleHeader, obj8);
     cResult[18] = tmp34;
@@ -174,7 +174,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTagP
   if (cResult[19] !== tmp10) {
     const obj14 = { children: items2 };
     items2 = [tmp32, tmp10];
-    const tmp37 = closure_7(guildId(7244).ActionSheet, obj14);
+    const tmp37 = closure_7(guildId(7247).ActionSheet, obj14);
     cResult[19] = tmp10;
     cResult[20] = tmp37;
     tmp35 = tmp37;
@@ -192,7 +192,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTagP
   let tmp8;
   guildId = guildId.guildId;
   const tmp = closure_8();
-  let obj = guildId(8907);
+  let obj = guildId(8919);
   const guildProfile1 = obj.useGuildProfile(guildId);
   let guildProfile = guildProfile1.guildProfile;
   const items = [guildId];
@@ -238,13 +238,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTagP
     tmp7 = closure_7(View, obj3);
     tmp8 = closure_6;
   } else {
-    tmp7 = closure_6(tmp2(7082).SceneLoadingIndicator, {});
+    tmp7 = closure_6(tmp2(7085).SceneLoadingIndicator, {});
     tmp8 = closure_6;
   }
   const obj7 = { children: items2 };
-  const ActionSheet = tmp2(7244).ActionSheet;
+  const ActionSheet = tmp2(7247).ActionSheet;
   const obj13 = { title: intl3.string(guildId(1128).t["2QmKZ2"]) };
-  const BottomSheetTitleHeader = tmp2(7194).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = tmp2(7197).BottomSheetTitleHeader;
   intl3 = tmp2(1128).intl;
   items2 = [tmp8(BottomSheetTitleHeader, obj13), tmp7];
   return closure_7(ActionSheet, obj7);

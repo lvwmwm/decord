@@ -1,21 +1,21 @@
-// Module ID: 17454
-// Function ID: 17455
+// Module ID: 17473
+// Function ID: 17474
 // Name: FavoritesGuildSidebarHeader
-// Dependencies: [19, 17, 17359, 21, 4945, 587, 558, 576, 13669, 5195, 1128, 3402, 8496, 8517, 8487, 5932, 2]
+// Dependencies: [19, 17, 17378, 21, 4945, 587, 558, 576, 13687, 5195, 1128, 3402, 8500, 8521, 8491, 5935, 2]
 
-// Module 17454 (FavoritesGuildSidebarHeader)
+// Module 17473 (FavoritesGuildSidebarHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3402 from "module_3402" /* 3402 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import Stack_Stack from "Stack/Stack" /* 5932 */;
-import ChatIcon2 from "ChatIcon" /* 8487 */;
-import TextIcon2 from "TextIcon" /* 8496 */;
-import VoiceNormalIcon2 from "VoiceNormalIcon" /* 8517 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13669 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17359 */;
+import Stack_Stack from "Stack/Stack" /* 5935 */;
+import ChatIcon2 from "ChatIcon" /* 8491 */;
+import TextIcon2 from "TextIcon" /* 8500 */;
+import VoiceNormalIcon2 from "VoiceNormalIcon" /* 8521 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13687 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17378 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -102,7 +102,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Placeh
   const tmp4 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-    const TextIcon = tmp(8496).TextIcon;
+    const TextIcon = tmp(8500).TextIcon;
     const tmp8 = metroRequire(TextIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -123,7 +123,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Placeh
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-        const VoiceNormalIcon = tmp(8517).VoiceNormalIcon;
+        const VoiceNormalIcon = tmp(8521).VoiceNormalIcon;
         const tmp18 = metroRequire(VoiceNormalIcon, obj3);
         cResult[7] = tmp18;
         tmp15 = tmp18;
@@ -144,7 +144,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Placeh
           const _Symbol2 = Symbol;
           if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
             const obj4 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-            const ChatIcon = tmp(8487).ChatIcon;
+            const ChatIcon = tmp(8491).ChatIcon;
             const tmp30 = metroRequire(ChatIcon, obj4);
             cResult[14] = tmp30;
             tmp27 = tmp30;
@@ -306,7 +306,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
     }
     if (cResult[5] !== tmp4.copy) {
       const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp4.copy, children: items };
-      const Stack = tmp(5932).Stack;
+      const Stack = tmp(5935).Stack;
       items = [tmp11, tmp12];
       const tmp22 = metroImportDefault(Stack, obj3);
       cResult[5] = tmp4.copy;
@@ -330,7 +330,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
         }
       }
       const obj4 = { spacing: nativeDefault.space.PX_8, children: items1 };
-      const Stack2 = tmp(5932).Stack;
+      const Stack2 = tmp(5935).Stack;
       items1 = [tmp6, tmp19, tmp23];
       const tmp33 = metroImportDefault(Stack2, obj4);
       cResult[10] = tmp6;
@@ -376,7 +376,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
   }
   items = [tmp7, , ];
   const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp.copy, children: items1 };
-  const Stack2 = tmp4(5932).Stack;
+  const Stack2 = tmp4(5935).Stack;
   const obj4 = { variant, color: "mobile-text-heading-primary", children: intl.string(_modDef3402["1n0TGE"]) };
   const Heading = tmp4(5195).Heading;
   intl = tmp4(1128).intl;

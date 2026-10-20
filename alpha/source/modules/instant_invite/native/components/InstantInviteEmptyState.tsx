@@ -1,17 +1,17 @@
-// Module ID: 9010
-// Function ID: 9011
+// Module ID: 9022
+// Function ID: 9023
 // Name: InstantInviteEmptyState
-// Dependencies: [19, 17, 8972, 21, 4945, 587, 558, 576, 504, 8973, 1128, 1202, 9011, 6979, 7434, 6856, 5195, 5205, 2]
+// Dependencies: [19, 17, 8984, 21, 4945, 587, 558, 576, 504, 8985, 1128, 1202, 9023, 6982, 7437, 6859, 5195, 5205, 2]
 
-// Module 9010 (InstantInviteEmptyState)
+// Module 9022 (InstantInviteEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
-import FreeFormTextInputDefault from "FreeFormTextInput" /* 6979 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8973 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9011 */;
+import FreeFormTextInputDefault from "FreeFormTextInput" /* 6982 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8985 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9023 */;
 import react from "react" /* 19 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8972 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8984 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -81,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
           }
           str2 = str;
         }
-        const getMaxUsesOptions = tmp5(8973).getMaxUsesOptions;
+        const getMaxUsesOptions = tmp5(8985).getMaxUsesOptions;
         const found = getMaxUsesOptions.find((value) => value.value === maxUses.maxUses);
         let str3 = "";
         if (null != found) {
@@ -152,7 +152,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
           }
           const _Symbol2 = Symbol;
           if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp26 = closure_5(tmp(7434).SettingsIcon, {});
+            const tmp26 = closure_5(tmp(7437).SettingsIcon, {});
             cResult[15] = tmp26;
             tmp24 = tmp26;
           } else {
@@ -246,7 +246,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
             tmp30 = tmp33;
           }
           const obj6 = { accessibilityLabel: tmp22, accessibilityRole: "button", onPress: onPressSettings, style: tmp4.settingsButton, children: tmp24 };
-          const tmp29 = closure_5(tmp(6856).PressableOpacity, obj6);
+          const tmp29 = closure_5(tmp(6859).PressableOpacity, obj6);
           cResult[16] = onPressSettings;
           cResult[17] = tmp4.settingsButton;
           cResult[18] = tmp29;
@@ -303,8 +303,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
     str = "";
   }
   items2 = [closure_5(tmp9, obj5), ];
-  const obj6 = { accessibilityLabel: intl3.string(stateFromStores(1128).t["3D5yo/"]), accessibilityRole: "button", onPress: onPressSettings, style: tmp.settingsButton, children: closure_5(stateFromStores(7434).SettingsIcon, {}) };
-  const PressableOpacity = tmp2(6856).PressableOpacity;
+  const obj6 = { accessibilityLabel: intl3.string(stateFromStores(1128).t["3D5yo/"]), accessibilityRole: "button", onPress: onPressSettings, style: tmp.settingsButton, children: closure_5(stateFromStores(7437).SettingsIcon, {}) };
+  const PressableOpacity = tmp2(6859).PressableOpacity;
   intl3 = tmp2(1128).intl;
   items2[1] = closure_5(PressableOpacity, obj6);
   items1[1] = closure_6(View, obj4);
@@ -323,7 +323,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
       }
       str3 = str4;
     }
-    const getMaxUsesOptions = tmp8(8973).getMaxUsesOptions;
+    const getMaxUsesOptions = tmp8(8985).getMaxUsesOptions;
     const found = getMaxUsesOptions.find((value) => value.value === stateFromStores.maxUses);
     let str5 = "";
     if (null != found) {

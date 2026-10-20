@@ -1,9 +1,9 @@
-// Module ID: 15101
-// Function ID: 15102
+// Module ID: 15119
+// Function ID: 15120
 // Name: DenormalizedPerksReadExperiment
 // Dependencies: [1455, 2]
 
-// Module 15101 (DenormalizedPerksReadExperiment)
+// Module 15119 (DenormalizedPerksReadExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 12137
-// Function ID: 12138
+// Module ID: 12152
+// Function ID: 12153
 // Name: conjureProjectMenuItems
 // Dependencies: [1128, 3820, 2]
 // Exports: previewMenuItems
 
-// Module 12137 (conjureProjectMenuItems)
+// Module 12152 (conjureProjectMenuItems)
 import intl4 from "intl" /* 1128 */;
 import _modDef3820 from "module_3820" /* 3820 */;
 import size from "module_2" /* 2 */;

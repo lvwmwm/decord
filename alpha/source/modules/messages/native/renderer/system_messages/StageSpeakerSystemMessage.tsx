@@ -1,14 +1,14 @@
-// Module ID: 8343
-// Function ID: 8344
+// Module ID: 8347
+// Function ID: 8348
 // Name: StageSpeakerSystemMessage
-// Dependencies: [8262, 1128, 8264, 8266, 2]
+// Dependencies: [8266, 1128, 8268, 8270, 2]
 // Exports: createStageSpeakerSystemMessage
 
-// Module 8343 (StageSpeakerSystemMessage)
+// Module 8347 (StageSpeakerSystemMessage)
 import intl2 from "intl" /* 1128 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8262 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8264 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8266 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8266 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8268 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8270 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/StageSpeakerSystemMessage.tsx");

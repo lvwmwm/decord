@@ -1,40 +1,27 @@
 // Module ID: 6341
 // Function ID: 6342
 // Name: allSettled
-// Dependencies: [6339, 1476, 1307, 6342, 6345, 6348, 6415]
+// Dependencies: [6342, 1476, 6343, 6371, 6344, 6419]
 
 // Module 6341 (allSettled)
-import GetIntrinsic from "GetIntrinsic" /* 1307 */;
-import requirePromise from "requirePromise" /* 6339 */;
-import PromiseResolve from "PromiseResolve" /* 6415 */;
-import callBind_mod from "callBind" /* 1476 */;
+import requirePromise from "requirePromise" /* 6342 */;
+import getPolyfill from "getPolyfill" /* 6343 */;
+import allSettled2 from "allSettled" /* 6344 */;
+import shimAllSettled from "shimAllSettled" /* 6419 */;
+import callBind from "callBind" /* 1476 */;
+import defineProperties from "defineProperties" /* 6371 */;
 
 let tmp = requirePromise();
-let callBind = callBind_mod;
-let closure_2 = callBind(GetIntrinsic("%Promise.all%"));
-callBind = callBind_mod;
-let closure_3 = callBind(GetIntrinsic("%Promise.reject%"));
-
-export default function allSettled(arg0) {
+let closure_0 = callBind(getPolyfill());
+function allSettled(arg0) {
   let self = this;
-  let tmp = self;
-  const tmp2 = dependencyMap;
-  if ("Object" !== self(6342)(this)) {
-    const _TypeError = TypeError;
-    self = this;
-    const self2 = this;
-    const typeError = new TypeError("`this` value must be an object");
-    throw typeError;
-  } else {
-    const tmp4 = tmp(6345)(arg0);
-    return closure_2(this, tmp(6348)(tmp4, (arg0) => {
-      const promise = PromiseResolve(self, arg0);
-      const tmp = self;
-      try {
-        return promise.then((value) => ({ status: "fulfilled", value }), (reason) => ({ status: "rejected", reason }));
-      } catch (tmp2) {
-        return closure_3(tmp, tmp2);
-      }
-    }));
+  const tmp = closure_0;
+  if (undefined === this) {
+    self = Promise;
   }
-};
+  return tmp(self, arg0);
+}
+const obj = { getPolyfill, implementation: allSettled2, shim: shimAllSettled };
+defineProperties(allSettled, obj);
+
+export default allSettled;

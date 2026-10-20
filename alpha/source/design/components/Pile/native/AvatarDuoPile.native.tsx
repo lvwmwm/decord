@@ -1,16 +1,16 @@
-// Module ID: 15096
-// Function ID: 15097
+// Module ID: 15114
+// Function ID: 15115
 // Name: AvatarDuoPile
-// Dependencies: [109, 19, 21, 558, 576, 12750, 12352, 12, 14116, 9324, 2]
+// Dependencies: [109, 19, 21, 558, 576, 12767, 12369, 12, 14134, 9336, 2]
 
-// Module 15096 (AvatarDuoPile)
+// Module 15114 (AvatarDuoPile)
 import _mod12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ClipView from "ClipView" /* 9324 */;
-import ListUtils from "ListUtils" /* 12352 */;
-import Pile2 from "Pile" /* 12750 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14116 */;
+import ClipView from "ClipView" /* 9336 */;
+import ListUtils from "ListUtils" /* 12369 */;
+import Pile2 from "Pile" /* 12767 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14134 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -31,7 +31,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarDuoP
     let prop;
     ({ size, children } = arg0);
     const tmp9 = _objectWithoutProperties(arg0, closure_2);
-    const Pile = tmp(12750).Pile;
+    const Pile = tmp(12767).Pile;
     if ("aria-label" in tmp9) {
       prop = tmp9["aria-label"];
     } else {
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarDuoP
     if (tmpResult2.isArray(arr)) {
       mapped = arr.map((item) => CutoutableAvatarImage.AVATAR_SIZE_MAP[item]);
     } else {
-      mapped = tmp(14116).AVATAR_SIZE_MAP[arr];
+      mapped = tmp(14134).AVATAR_SIZE_MAP[arr];
     }
     cResult[5] = arr;
     cResult[6] = mapped;
@@ -104,7 +104,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarDuoP
   if (tmp3Result2.isArray(size)) {
     mapped = size.map((item) => CutoutableAvatarImage.AVATAR_SIZE_MAP[item]);
   } else {
-    mapped = tmp3(14116).AVATAR_SIZE_MAP[size];
+    mapped = tmp3(14134).AVATAR_SIZE_MAP[size];
   }
   return tmp2(Pile, obj);
 });

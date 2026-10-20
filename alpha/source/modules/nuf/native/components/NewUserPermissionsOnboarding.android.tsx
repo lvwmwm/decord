@@ -1,9 +1,9 @@
-// Module ID: 13392
-// Function ID: 13393
+// Module ID: 13410
+// Function ID: 13411
 // Name: NewUserPermissionsOnboarding
 // Dependencies: [19, 17, 21, 4945, 5229, 587, 558, 576, 5195, 1128, 5205, 2]
 
-// Module 13392 (NewUserPermissionsOnboarding)
+// Module 13410 (NewUserPermissionsOnboarding)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;

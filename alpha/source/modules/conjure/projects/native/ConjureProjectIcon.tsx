@@ -1,15 +1,15 @@
-// Module ID: 11703
-// Function ID: 11704
+// Module ID: 11717
+// Function ID: 11718
 // Name: ConjureProjectIcon
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 11704, 5631, 1417, 8522, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 11718, 5631, 1417, 8526, 2]
 
-// Module 11703 (ConjureProjectIcon)
+// Module 11717 (ConjureProjectIcon)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import AppsIcon2 from "AppsIcon" /* 8522 */;
-import useConjureProjectIconDefault from "useConjureProjectIcon" /* 11704 */;
+import AppsIcon2 from "AppsIcon" /* 8526 */;
+import useConjureProjectIconDefault from "useConjureProjectIcon" /* 11718 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -88,7 +88,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
       tmp12 = hasOwnProperty(tmp5Result, obj4);
     } else {
       const obj5 = { size: "custom", style: tmp7.glyph, color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-      const AppsIcon = tmp(8522).AppsIcon;
+      const AppsIcon = tmp(8526).AppsIcon;
       tmp12 = hasOwnProperty(AppsIcon, obj5);
     }
     cResult[3] = tmp7.glyph;

@@ -1,13 +1,13 @@
-// Module ID: 12909
-// Function ID: 12910
+// Module ID: 12927
+// Function ID: 12928
 // Name: ForumPostTimestamp
-// Dependencies: [19, 12895, 21, 4945, 558, 576, 9640, 5195, 2]
+// Dependencies: [19, 12913, 21, 4945, 558, 576, 9653, 5195, 2]
 
-// Module 12909 (ForumPostTimestamp)
+// Module 12927 (ForumPostTimestamp)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ForumHooks from "ForumHooks" /* 9640 */;
-import ForumChannelStore from "ForumChannelStore" /* 12895 */;
+import ForumHooks from "ForumHooks" /* 9653 */;
+import ForumChannelStore from "ForumChannelStore" /* 12913 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

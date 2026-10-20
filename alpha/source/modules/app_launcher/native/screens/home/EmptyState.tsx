@@ -1,17 +1,17 @@
-// Module ID: 11962
-// Function ID: 11963
+// Module ID: 11976
+// Function ID: 11977
 // Name: home/EmptyState
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 11886, 10961, 1128, 5195, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 11900, 10972, 1128, 5195, 2]
 
-// Module 11962 (home/EmptyState)
+// Module 11976 (home/EmptyState)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10961 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11886 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10972 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11900 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

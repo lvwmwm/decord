@@ -1,14 +1,14 @@
-// Module ID: 8044
-// Function ID: 8045
+// Module ID: 8048
+// Function ID: 8049
 // Name: ManualReviewPendingAlertModal
-// Dependencies: [19, 21, 558, 576, 1128, 3144, 5869, 5869, 2]
+// Dependencies: [19, 21, 558, 576, 1128, 3144, 5872, 5872, 2]
 
-// Module 8044 (ManualReviewPendingAlertModal)
+// Module 8048 (ManualReviewPendingAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef3144 from "module_3144" /* 3144 */;
-import AlertModal2 from "AlertModal" /* 5869 */;
+import AlertModal2 from "AlertModal" /* 5872 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,10 +34,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualRevi
     [tmp4, tmp5] = cResult;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const AlertModal = tmp(5869).AlertModal;
-    const AlertActions = tmp(5869).AlertActions;
+    const AlertModal = tmp(5872).AlertModal;
+    const AlertActions = tmp(5872).AlertActions;
     ({ text: intl3.string(intl4.t["NX+WJN"]) });
-    const AlertActionButton = tmp(5869).AlertActionButton;
+    const AlertActionButton = tmp(5872).AlertActionButton;
     intl3 = tmp(1128).intl;
     const tmp11 = <AlertModal title={tmp4} content={tmp5} actions={null} />;
     cResult[2] = tmp11;

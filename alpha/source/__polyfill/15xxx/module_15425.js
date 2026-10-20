@@ -1,11 +1,14 @@
 // Module ID: 15425
 // Function ID: 15426
-// Dependencies: [15426, 15433]
+// Dependencies: [15373, 15374]
 
 // Module 15425
-import _mod15426 from "module_15426" /* 15426 */;
-import _mod15433 from "module_15433" /* 15433 */;
+import _mod15373 from "module_15373" /* 15373 */;
+import _mod15374 from "module_15374" /* 15374 */;
 
+const f70425 = () => 42 !== Object.defineProperty(() => {
 
-export const URL = _mod15426;
-export const URLSearchParams = _mod15433;
+}, "prototype", { value: 42, writable: false }).prototype;
+_mod15373 && _mod15374(f70425);
+
+export default _mod15373 && _mod15374(f70425);

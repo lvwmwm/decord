@@ -1,15 +1,15 @@
-// Module ID: 9012
-// Function ID: 9013
+// Module ID: 9024
+// Function ID: 9025
 // Name: InstantInviteShareApps
-// Dependencies: [32, 19, 17, 9013, 21, 4945, 587, 558, 576, 5214, 5258, 9048, 7903, 9017, 2]
+// Dependencies: [32, 19, 17, 9025, 21, 4945, 587, 558, 576, 5214, 5258, 9060, 7907, 9029, 2]
 
-// Module 9012 (InstantInviteShareApps)
+// Module 9024 (InstantInviteShareApps)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import InstantInviteConstants from "components/InstantInviteConstants" /* 9013 */;
+import InstantInviteConstants from "components/InstantInviteConstants" /* 9025 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

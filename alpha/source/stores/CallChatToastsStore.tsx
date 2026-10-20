@@ -1,9 +1,9 @@
-// Module ID: 17776
-// Function ID: 17777
+// Module ID: 17799
+// Function ID: 17800
 // Name: CallChatToastsStore
 // Dependencies: [504, 584, 2]
 
-// Module 17776 (CallChatToastsStore)
+// Module 17799 (CallChatToastsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

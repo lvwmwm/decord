@@ -1,83 +1,115 @@
 // Module ID: 10170
 // Function ID: 10171
-// Dependencies: [41, 42, 10137]
+// Dependencies: [41, 42, 93, 95, 98, 10144, 10143, 10149, 10171, 10151]
 
 // Module 10170
-import TIMEZONE_ABBR_MAP from "TIMEZONE_ABBR_MAP" /* 10137 */;
+import _mod10143 from "module_10143" /* 10143 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10144 */;
+import Meridiem from "Meridiem" /* 10149 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10151 */;
+import _mod10171 from "module_10171" /* 10171 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const regExp = new RegExp("^\\s*,?\\s*\\(?([A-Z]{2,4})\\)?(?=\\W|$)", "i");
-class ExtractTimezoneAbbrRefiner {
-  constructor(timezoneOverrides) {
-    _classCallCheck(this, ExtractTimezoneAbbrRefiner);
-    this.timezoneOverrides = timezoneOverrides;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
-const entry = {
-  key: "refine",
-  value: function refine(option, arr) {
-    let self = this;
-    let timezones = option.option.timezones;
-    if (null === timezones) {
-      timezones = {};
+const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:on\\s*?)?(?:(this|last|past|next)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod10143.WEEKDAY_DICTIONARY) + "|weekend|weekday)(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(this|last|past|next)\\s*week)?(?=\\W|$)", "i");
+class ENWeekdayParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ENWeekdayParser);
+    const obj = _getPrototypeOf(ENWeekdayParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
     }
-    const item = arr.forEach(function(item) {
-      let closure_0 = item;
-      const str = option.text;
-      const match = regExp.exec(str.substring(item.index + item.text.length));
-      const obj = option;
-      if (match) {
-        const str2 = match[1];
-        const formatted = str2.toUpperCase();
-        const start = item.start;
-        let refDate = start.date() ?? item.refDate;
-        if (null === refDate) {
-          const _Date = Date;
-          self = this;
-          const self2 = this;
-          refDate = new Date();
-        }
-        const _Object = Object;
-        const _Object2 = Object;
-        const merged = Object.assign(Object.assign({}, self.timezoneOverrides), timezones);
-        const toTimezoneOffsetResult = TIMEZONE_ABBR_MAP.toTimezoneOffset(formatted, refDate, merged);
-        if (null != toTimezoneOffsetResult) {
-          obj.debug(() => {
-            console.log("Extracting timezone: '" + formatted + "' into: " + toTimezoneOffsetResult + " for: " + start.start);
-          });
-          const start6 = item.start;
-          const value = start6.get("timezoneOffset");
-          if (null !== value) {
-            if (toTimezoneOffsetResult != value) {
-              const start2 = item.start;
-            }
-          }
-          const start3 = item.start;
-          const tmp12 = start3.isOnlyDate() && formatted != match[1];
-          if (!tmp12) {
-            item.text = item.text + match[0];
-            const start4 = item.start;
-            if (!start4.isCertain("timezoneOffset")) {
-              const start5 = item.start;
-              start5.assign("timezoneOffset", toTimezoneOffsetResult);
-            }
-            let isCertainResult = null == item.end;
-            if (!isCertainResult) {
-              const end = item.end;
-              isCertainResult = end.isCertain("timezoneOffset");
-            }
-            if (!isCertainResult) {
-              const end2 = item.end;
-              end2.assign("timezoneOffset", toTimezoneOffsetResult);
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ENWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      let sum;
+      const str = arg1[1] || arg1[3] || "";
+      const formatted = str.toLowerCase();
+      let str2 = "last";
+      if ("last" != formatted) {
+        str2 = "last";
+        if ("past" != formatted) {
+          str2 = "next";
+          if ("next" != formatted) {
+            str2 = null;
+            if ("this" == formatted) {
+              str2 = "this";
             }
           }
         }
       }
-    });
-    return arr;
+      const str6 = arg1[2];
+      const formatted1 = str6.toLowerCase();
+      if (undefined !== _mod10143.WEEKDAY_DICTIONARY[formatted1]) {
+        sum = tmp3(10143).WEEKDAY_DICTIONARY[formatted1];
+      } else if ("weekend" == formatted1) {
+        let SATURDAY;
+        if ("last" == str2) {
+          SATURDAY = tmp3(10149).Weekday.SUNDAY;
+        } else {
+          SATURDAY = tmp3(10149).Weekday.SATURDAY;
+        }
+        sum = SATURDAY;
+      } else if ("weekday" != formatted1) {
+        return null;
+      } else {
+        let MONDAY;
+        reference = reference.reference;
+        const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
+        const day = dateWithAdjustedTimezone.getDay();
+        if (day != Meridiem.Weekday.SUNDAY) {
+          if (day != Meridiem.Weekday.SATURDAY) {
+            const diff = day - 1;
+            sum = ("last" == str2 ? diff - 1 : diff + 1) % 5 + 1;
+          }
+        }
+        if ("last" == str2) {
+          MONDAY = tmp3(10149).Weekday.FRIDAY;
+        } else {
+          MONDAY = tmp3(10149).Weekday.MONDAY;
+        }
+        sum = MONDAY;
+      }
+      return _mod10171.createParsingComponentsAtWeekday(reference.reference, sum, str2);
+    }
   }
-};
-const items = [entry];
+];
 
-export default _createClass(ExtractTimezoneAbbrRefiner, items);
+export default _createClass(ENWeekdayParser, items);

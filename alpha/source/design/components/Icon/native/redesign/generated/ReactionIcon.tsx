@@ -1,14 +1,14 @@
-// Module ID: 9268
-// Function ID: 9269
+// Module ID: 9280
+// Function ID: 9281
 // Name: ReactionIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9269, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9281, 5630, 2]
 
-// Module 9268 (ReactionIcon)
+// Module 9280 (ReactionIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 9269 */;
+import AssetRegistry from "AssetRegistry" /* 9281 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

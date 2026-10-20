@@ -1,9 +1,9 @@
-// Module ID: 9619
-// Function ID: 9620
+// Module ID: 9632
+// Function ID: 9633
 // Name: shared_components/Badge
 // Dependencies: [19, 17, 21, 4945, 587, 558, 576, 2]
 
-// Module 9619 (shared_components/Badge)
+// Module 9632 (shared_components/Badge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

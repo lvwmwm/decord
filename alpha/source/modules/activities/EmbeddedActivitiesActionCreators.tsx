@@ -1,10 +1,10 @@
-// Module ID: 11268
-// Function ID: 11269
+// Module ID: 11279
+// Function ID: 11280
 // Name: EmbeddedActivitiesActionCreators
-// Dependencies: [5, 9564, 2046, 6720, 7774, 502, 4800, 4822, 4880, 1392, 5591, 4799, 2026, 5570, 1087, 1375, 4797, 7752, 11235, 10120, 11057, 11269, 11270, 11271, 11272, 584, 11021, 11273, 11064, 6329, 5973, 2032, 5587, 8802, 11274, 2000, 11275, 11277, 10115, 1267, 11278, 11286, 6610, 11287, 5863, 1128, 5590, 11288, 1275, 6624, 4869, 6728, 5672, 1297, 8786, 7512, 7357, 7698, 4785, 4784, 2]
+// Dependencies: [5, 9577, 2046, 6723, 7778, 502, 4800, 4822, 4880, 1392, 5591, 4799, 2026, 5570, 1087, 1375, 4797, 7756, 11246, 10131, 11069, 11280, 11281, 11282, 11283, 584, 11033, 11284, 11076, 6332, 5976, 2032, 5587, 8814, 11285, 2000, 11286, 11288, 10126, 1267, 11289, 11297, 6613, 11298, 5866, 1128, 5590, 11299, 1275, 6627, 4869, 6731, 5672, 1297, 8798, 7515, 7360, 7702, 4785, 4784, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, maybeDisconnectFromCurrentActivity, openActivityPopoutWindow, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPanelMode, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
-// Module 11268 (EmbeddedActivitiesActionCreators)
+// Module 11279 (EmbeddedActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
@@ -14,14 +14,14 @@ import DismissibleContentUtils from "DismissibleContentUtils" /* 4785 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4869 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5570 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6728 */;
-import Constants3 from "Constants" /* 7752 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9564 */;
-import createProxyTicket2 from "createProxyTicket" /* 11021 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6731 */;
+import Constants3 from "Constants" /* 7756 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9577 */;
+import createProxyTicket2 from "createProxyTicket" /* 11033 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2046 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6720 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 7774 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6723 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 7778 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import GuildStore from "GuildStore" /* 4822 */;
@@ -1073,7 +1073,7 @@ function stopEmbeddedActivity(showFeedback) {
         if ("" !== id) {
           const obj4 = { applicationId, instanceId: compositeInstanceId };
           compositeInstanceId = undefined;
-          const getEmbeddedActivityParticipantId = tmp7(6728).getEmbeddedActivityParticipantId;
+          const getEmbeddedActivityParticipantId = tmp7(6731).getEmbeddedActivityParticipantId;
           ChannelRTCParticipants;
           if (found != null) {
             compositeInstanceId = found.compositeInstanceId;

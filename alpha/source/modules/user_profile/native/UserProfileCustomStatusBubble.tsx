@@ -1,9 +1,9 @@
-// Module ID: 10850
-// Function ID: 10851
+// Module ID: 10861
+// Function ID: 10862
 // Name: UserProfileCustomStatusBubble
-// Dependencies: [32, 109, 19, 17, 7250, 1395, 1098, 21, 1384, 4945, 587, 558, 576, 7906, 4776, 1417, 5631, 5195, 7175, 5213, 8604, 10556, 10851, 5171, 10853, 7224, 1128, 6856, 10948, 2]
+// Dependencies: [32, 109, 19, 17, 7253, 1395, 1098, 21, 1384, 4945, 587, 558, 576, 7910, 4776, 1417, 5631, 5195, 7178, 5213, 8616, 10567, 10862, 5171, 10864, 7227, 1128, 6859, 10959, 2]
 
-// Module 10850 (UserProfileCustomStatusBubble)
+// Module 10861 (UserProfileCustomStatusBubble)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
@@ -13,11 +13,11 @@ import UserSettings from "UserSettings" /* 4776 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import EmojiDefault from "Emoji" /* 7175 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7224 */;
-import Constants2 from "Constants" /* 7250 */;
-import inlineStyles from "inlineStyles" /* 7906 */;
-import CustomStatusUtils from "CustomStatusUtils" /* 10853 */;
+import EmojiDefault from "Emoji" /* 7178 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7227 */;
+import Constants2 from "Constants" /* 7253 */;
+import inlineStyles from "inlineStyles" /* 7910 */;
+import CustomStatusUtils from "CustomStatusUtils" /* 10864 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;

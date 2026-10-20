@@ -1,11 +1,11 @@
-// Module ID: 10028
-// Function ID: 10029
+// Module ID: 10039
+// Function ID: 10040
 // Name: usePressHorizontalAutocompleteItemHandler
-// Dependencies: [19, 1087, 558, 576, 10029, 2]
+// Dependencies: [19, 1087, 558, 576, 10040, 2]
 
-// Module 10028 (usePressHorizontalAutocompleteItemHandler)
+// Module 10039 (usePressHorizontalAutocompleteItemHandler)
 import Constants from "Constants" /* 1087 */;
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10029 */;
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10040 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

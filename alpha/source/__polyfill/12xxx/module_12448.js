@@ -1,56 +1,46 @@
 // Module ID: 12448
 // Function ID: 12449
-// Dependencies: [12411, 12434, 12406, 12421]
-// Exports: setMeasurement, timedEventsToMeasurements
+// Dependencies: []
 
 // Module 12448
-import _mod12411 from "module_12411" /* 12411 */;
-import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 12421 */;
-import _mod12434 from "module_12434" /* 12434 */;
+let hasOwnProperty;
 
-
-export const setMeasurement = function setMeasurement(arg0, arg1, arg2) {
-  let activeSpan = arg3;
-  if (arg3 === undefined) {
-    const obj = _mod12411;
-    activeSpan = obj.getActiveSpan();
+function merge(arg0, obj) {
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 2;
   }
-  let rootSpan = activeSpan;
-  if (rootSpan) {
-    const obj3 = _mod12411;
-    rootSpan = obj3.getRootSpan(activeSpan);
-  }
-  if (rootSpan) {
-    if (_mod12434.DEBUG_BUILD) {
-      const logger = tmp9(12406).logger;
-      const _HermesInternal = HermesInternal;
-      logger.log("[Measurement] Setting measurement on root span: " + arg0 + " = " + arg1 + " " + arg2);
-    }
-    const obj2 = {};
-    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE] = arg1;
-    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = arg2;
-    rootSpan.addEvent(arg0, obj2);
-  }
-};
-export const timedEventsToMeasurements = function timedEventsToMeasurements(arr) {
-  let tmp = arr;
+  const tmp = obj;
   if (tmp) {
-    if (0 !== arr.length) {
-      let obj = {};
-      const item = arr.forEach((attributes) => {
-        const tmp = attributes.attributes || {};
-        const tmp2 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT];
-        const tmp3 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE];
-        let tmp4 = typeof tmp2 === "string";
-        if (typeof tmp2 === "string") {
-          tmp4 = typeof tmp3 === "number";
+    if (typeof obj === "object") {
+      if (num > 0) {
+        const tmp9 = arg0;
+        if (tmp9) {
+          if (obj) {
+            const _Object = Object;
+            if (0 === Object.keys(obj).length) {
+              return arg0;
+            }
+          }
         }
-        if (tmp4) {
-          obj = { value: tmp3, unit: tmp2 };
-          obj[attributes.name] = obj;
+        obj = {};
+        const merged = Object.assign(arg0);
+        for (const key10016 in obj) {
+          let _Object2 = Object;
+          hasOwnProperty = Object.prototype.hasOwnProperty;
+          if (!hasOwnProperty.call(obj, key10016)) {
+            continue;
+          } else {
+            obj[key10016] = merge(obj[key10016], obj[key10016], num - 1);
+            continue;
+          }
+          continue;
         }
-      });
-      return obj;
+        return obj;
+      }
     }
   }
-};
+  return obj;
+}
+
+export { merge };

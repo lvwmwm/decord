@@ -1,10 +1,10 @@
-// Module ID: 13210
-// Function ID: 13211
+// Module ID: 13228
+// Function ID: 13229
 // Name: regionResponseToRegion
 // Dependencies: [2]
 // Exports: default
 
-// Module 13210 (regionResponseToRegion)
+// Module 13228 (regionResponseToRegion)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_server/utils/regionResponseToRegion.tsx");

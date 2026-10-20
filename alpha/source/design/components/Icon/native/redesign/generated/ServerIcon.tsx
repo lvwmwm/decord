@@ -1,14 +1,14 @@
-// Module ID: 9560
-// Function ID: 9561
+// Module ID: 9573
+// Function ID: 9574
 // Name: ServerIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9561, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9574, 5630, 2]
 
-// Module 9560 (ServerIcon)
+// Module 9573 (ServerIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 9561 */;
+import AssetRegistry from "AssetRegistry" /* 9574 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

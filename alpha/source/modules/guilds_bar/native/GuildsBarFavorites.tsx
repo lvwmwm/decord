@@ -1,23 +1,23 @@
-// Module ID: 17487
-// Function ID: 17488
+// Module ID: 17506
+// Function ID: 17507
 // Name: GuildsBarFavorites
-// Dependencies: [19, 4803, 1087, 21, 558, 576, 17470, 10639, 504, 17488, 17473, 17485, 17295, 1128, 17489, 587, 9865, 2]
+// Dependencies: [19, 4803, 1087, 21, 558, 576, 17489, 10650, 504, 17507, 17492, 17504, 17314, 1128, 17508, 587, 9877, 2]
 
-// Module 17487 (GuildsBarFavorites)
+// Module 17506 (GuildsBarFavorites)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
-import StarIcon2 from "StarIcon" /* 9865 */;
-import FavoritesHooks from "FavoritesHooks" /* 10639 */;
-import openFavoritesGuildActionSheetDefault from "openFavoritesGuildActionSheet" /* 17295 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17470 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 17473 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17485 */;
-import useFavoritesGuildUnreadsDefault from "useFavoritesGuildUnreads" /* 17488 */;
-import HomeDrawerFavoritesRow from "HomeDrawerFavoritesRow" /* 17489 */;
+import StarIcon2 from "StarIcon" /* 9877 */;
+import FavoritesHooks from "FavoritesHooks" /* 10650 */;
+import openFavoritesGuildActionSheetDefault from "openFavoritesGuildActionSheet" /* 17314 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17489 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 17492 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17504 */;
+import useFavoritesGuildUnreadsDefault from "useFavoritesGuildUnreads" /* 17507 */;
+import HomeDrawerFavoritesRow from "HomeDrawerFavoritesRow" /* 17508 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 4803 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

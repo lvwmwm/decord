@@ -1,14 +1,14 @@
-// Module ID: 9288
-// Function ID: 9289
+// Module ID: 9300
+// Function ID: 9301
 // Name: WishlistStore
-// Dependencies: [9289, 1257, 7649, 504, 584, 2]
+// Dependencies: [9301, 1257, 7652, 504, 584, 2]
 
-// Module 9288 (WishlistStore)
+// Module 9300 (WishlistStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import UserProfileStore from "UserProfileStore" /* 7649 */;
-import WishlistRecord_mod from "WishlistRecord" /* 9289 */;
+import UserProfileStore from "UserProfileStore" /* 7652 */;
+import WishlistRecord_mod from "WishlistRecord" /* 9301 */;
 import size from "module_2" /* 2 */;
 
 let c3;

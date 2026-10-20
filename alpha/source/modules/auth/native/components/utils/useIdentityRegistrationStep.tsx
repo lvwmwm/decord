@@ -1,18 +1,18 @@
-// Module ID: 17104
-// Function ID: 17105
+// Module ID: 17123
+// Function ID: 17124
 // Name: useIdentityRegistrationStep
-// Dependencies: [5, 32, 19, 17094, 17095, 1087, 558, 576, 1505, 17091, 1128, 17105, 6420, 6989, 17102, 1107, 17093, 1506, 7004, 6998, 7366, 2]
+// Dependencies: [5, 32, 19, 17113, 17114, 1087, 558, 576, 1505, 17110, 1128, 17124, 6423, 6992, 17121, 1107, 17112, 1506, 7007, 7001, 7369, 2]
 
-// Module 17104 (useIdentityRegistrationStep)
+// Module 17123 (useIdentityRegistrationStep)
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7004 */;
-import ValidationUtilsDefault from "ValidationUtils" /* 7366 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7007 */;
+import ValidationUtilsDefault from "ValidationUtils" /* 7369 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17094 */;
-import RegistrationConstants from "RegistrationConstants" /* 17095 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17113 */;
+import RegistrationConstants from "RegistrationConstants" /* 17114 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,109 +1,103 @@
 // Module ID: 10173
 // Function ID: 10174
-// Dependencies: [41, 42, 93, 95, 98, 10152]
+// Dependencies: [41, 42, 10145]
 
 // Module 10173
-import _mod10152 from "module_10152" /* 10152 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 10145 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class UnlikelyFormatFilter {
-  constructor(strictMode) {
-    let constructResult;
+const regExp = new RegExp("([^\\d]|^)([0-3]{0,1}[0-9]{1})[\\/\\.\\-]([0-3]{0,1}[0-9]{1})(?:[\\/\\.\\-]([0-9]{4}|[0-9]{2}))?(\\W|$)", "i");
+class SlashDateFormatParser {
+  constructor(arg0) {
     const self = this;
-    _classCallCheck(this, UnlikelyFormatFilter);
-    const obj = _getPrototypeOf(UnlikelyFormatFilter);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, undefined);
+    _classCallCheck(this, SlashDateFormatParser);
+    let num = 2;
+    if (arg0) {
+      num = 3;
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = strictMode;
-    return tmp3Result;
+    self.groupNumberMonth = num;
+    let num2 = 3;
+    if (arg0) {
+      num2 = 2;
+    }
+    self.groupNumberDay = num2;
   }
 }
-_inherits(UnlikelyFormatFilter, _mod10152.Filter);
 const entry = {
-  key: "isValid",
-  value: function isValid(debug, text) {
-    let flag;
-    const str = text.text;
-    const str2 = str.replace(" ", "");
-    if (str2.match(/^\d*(\.\d*)?$/)) {
-      debug.debug(() => {
-        console.log("Removing unlikely result '" + text.text + "'");
-      });
-      flag = false;
-    } else {
-      const start = text.start;
-      if (start.isValidDate()) {
-        if (text.end) {
-          let flag2;
-          const end = text.end;
-          if (!end.isValidDate()) {
-            debug.debug(() => {
-              console.log("Removing invalid result: " + text + " (" + text.end + ")");
-            });
-            flag2 = false;
-          }
-          flag = flag2;
-        }
-        const self = this;
-        const strictMode = this.strictMode;
-        let isStrictModeValidResult = !strictMode;
-        if (strictMode) {
-          isStrictModeValidResult = self.isStrictModeValid(debug, text);
-        }
-        flag2 = isStrictModeValidResult;
-      } else {
-        debug.debug(() => {
-          console.log("Removing invalid result: " + text + " (" + text.start + ")");
-        });
-        flag = false;
-      }
-    }
-    return flag;
+  key: "pattern",
+  value: function pattern() {
+    return regExp;
   }
 };
-const items = [
+let items = [
   entry,
   {
-    key: "isStrictModeValid",
-    value: function isStrictModeValid(debug, start) {
-      start = start.start;
-      const result = start.isOnlyWeekdayComponent();
-      let flag = !result;
-      if (result) {
-        debug.debug(() => {
-          console.log("(Strict) Removing weekday only component: " + start + " (" + start.end + ")");
-        });
-        flag = false;
+    key: "extract",
+    value: function extract(text, index) {
+      let tmp6;
+      let tmp7;
+      const sum = index.index + index[1].length;
+      const diff = index.index + index[0].length - index[5].length;
+      if (sum > 0) {
+        const str = text.text;
+        str.substring(0, sum);
       }
-      return flag;
+      if (diff < text.text.length) {
+        const str4 = text.text;
+        str4.substring(diff);
+      }
+      const str7 = text.text;
+      const str8 = str7.substring(sum, diff);
+      if (!str8.match(/^\d\.\d$/)) {
+        if (!str8.match(/^\d\.\d{1,2}\.\d{1,2}\s*$/)) {
+          const self = this;
+          const parsingResult = text.createParsingResult(sum, str8);
+          const _parseInt = parseInt;
+          const parsed = parseInt(index[this.groupNumberMonth]);
+          const _parseInt2 = parseInt;
+          const parsed1 = parseInt(index[this.groupNumberDay]);
+          if (parsed < 1) {
+            tmp6 = parsed1;
+            tmp7 = parsed;
+            if (parsed > 12) {
+              if (parsed1 >= 1) {
+                if (parsed1 <= 12) {
+                  if (parsed <= 31) {
+                    const items = [parsed, parsed1];
+                    [tmp6, tmp7] = items;
+                  }
+                }
+              }
+              return null;
+            }
+          } else {
+            tmp6 = parsed1;
+            tmp7 = parsed;
+          }
+          if (tmp6 >= 1) {
+            if (tmp6 <= 31) {
+              const start3 = parsingResult.start;
+              start3.assign("day", tmp6);
+              const start4 = parsingResult.start;
+              start4.assign("month", tmp7);
+              if (index[4]) {
+                const _parseInt3 = parseInt;
+                const parsed2 = parseInt(index[4]);
+                const start2 = parsingResult.start;
+                start2.assign("year", findMostLikelyADYear.findMostLikelyADYear(parsed2));
+              } else {
+                const start = parsingResult.start;
+                start.imply("year", findMostLikelyADYear.findYearClosestToRef(text.refDate, tmp6, tmp7));
+              }
+              return parsingResult.addTag("parser/SlashDateFormatParser");
+            }
+          }
+          return null;
+        }
+      }
     }
   }
 ];
 
-export default _createClass(UnlikelyFormatFilter, items);
+export default _createClass(SlashDateFormatParser, items);

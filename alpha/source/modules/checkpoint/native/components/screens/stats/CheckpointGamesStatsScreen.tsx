@@ -1,9 +1,9 @@
-// Module ID: 12810
-// Function ID: 12811
+// Module ID: 12827
+// Function ID: 12828
 // Name: CheckpointGamesStatsScreen
-// Dependencies: [17, 2022, 12762, 5970, 21, 4945, 587, 558, 576, 504, 1128, 3078, 12782, 9530, 12780, 12786, 1417, 5631, 8018, 12791, 5195, 2]
+// Dependencies: [17, 2022, 12779, 5973, 21, 4945, 587, 558, 576, 504, 1128, 3078, 12799, 9543, 12797, 12803, 1417, 5631, 8022, 12808, 5195, 2]
 
-// Module 12810 (CheckpointGamesStatsScreen)
+// Module 12827 (CheckpointGamesStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
@@ -11,14 +11,14 @@ import nativeDefault from "native" /* 587 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import _modDef3078 from "module_3078" /* 3078 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import GameControllerIcon from "GameControllerIcon" /* 9530 */;
-import CheckpointTextDefault from "CheckpointText" /* 12780 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12782 */;
-import NumberAnimationDefault from "NumberAnimation" /* 12786 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 12791 */;
+import GameControllerIcon from "GameControllerIcon" /* 9543 */;
+import CheckpointTextDefault from "CheckpointText" /* 12797 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12799 */;
+import NumberAnimationDefault from "NumberAnimation" /* 12803 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 12808 */;
 import GameStore from "GameStore" /* 2022 */;
-import CheckpointStore from "CheckpointStore" /* 12762 */;
-import CheckpointConstants from "CheckpointConstants" /* 5970 */;
+import CheckpointStore from "CheckpointStore" /* 12779 */;
+import CheckpointConstants from "CheckpointConstants" /* 5973 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -581,7 +581,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCa
               obj7 = AvatarUtilsDefault;
               tmp25 = closure_7(tmp28, obj9);
             } else {
-              const obj10 = { style: items4, children: closure_7(id(8018).UnknownGameIcon, { size: "lg" }) };
+              const obj10 = { style: items4, children: closure_7(id(8022).UnknownGameIcon, { size: "lg" }) };
               items4 = [, ];
               ({ coverImage: arr2[0], unknownCover: arr2[1] } = tmp4);
               tmp25 = closure_7(View, obj10);
@@ -671,7 +671,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCa
     tmp11 = closure_7;
   } else {
     tmp11 = closure_7;
-    const obj6 = { style: items1, children: closure_7(id(8018).UnknownGameIcon, { size: "lg" }) };
+    const obj6 = { style: items1, children: closure_7(id(8022).UnknownGameIcon, { size: "lg" }) };
     items1 = [, ];
     ({ coverImage: arr2[0], unknownCover: arr2[1] } = tmp);
     tmp12 = closure_7(tmp9, obj6);

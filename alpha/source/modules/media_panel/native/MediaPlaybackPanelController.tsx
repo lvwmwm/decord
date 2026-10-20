@@ -1,20 +1,20 @@
-// Module ID: 18391
-// Function ID: 18392
+// Module ID: 18413
+// Function ID: 18414
 // Name: MediaPlaybackPanelController
-// Dependencies: [32, 19, 4946, 4799, 6752, 15603, 5570, 10694, 21, 5014, 1633, 18175, 558, 576, 15602, 504, 18392, 2]
+// Dependencies: [32, 19, 4946, 4799, 6755, 15622, 5570, 10705, 21, 5014, 1633, 18198, 558, 576, 15621, 504, 18414, 2]
 
-// Module 18391 (MediaPlaybackPanelController)
+// Module 18413 (MediaPlaybackPanelController)
 import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5570 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10694 */;
-import MediaPlayerManagerDefault from "MediaPlayerManager" /* 15602 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15603 */;
-import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 18392 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10705 */;
+import MediaPlayerManagerDefault from "MediaPlayerManager" /* 15621 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15622 */;
+import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 18414 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
-import VoicePanelStore from "VoicePanelStore" /* 6752 */;
+import VoicePanelStore from "VoicePanelStore" /* 6755 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -64,7 +64,7 @@ function useCoreState() {
   const obj7 = sharedValue(5014);
   const derivedValue = obj7.useDerivedValue(fn);
   const tmp9 = sharedValue3(1633)();
-  const tmp10 = sharedValue3(18175)(tmp9);
+  const tmp10 = sharedValue3(18198)(tmp9);
   const obj9 = sharedValue(5014);
   const sharedValue6 = obj9.useSharedValue(false);
   const obj10 = sharedValue(5014);

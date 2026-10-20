@@ -1,9 +1,9 @@
-// Module ID: 7171
-// Function ID: 7172
+// Module ID: 7174
+// Function ID: 7175
 // Name: GuildOnboardingPromptOptionButton
-// Dependencies: [32, 19, 17, 4946, 6673, 1395, 21, 5014, 4945, 587, 558, 576, 504, 5167, 5208, 7172, 4954, 1128, 5213, 5001, 7175, 1417, 5195, 6856, 7178, 1202, 2]
+// Dependencies: [32, 19, 17, 4946, 6676, 1395, 21, 5014, 4945, 587, 558, 576, 504, 5167, 5208, 7175, 4954, 1128, 5213, 5001, 7178, 1417, 5195, 6859, 7181, 1202, 2]
 
-// Module 7171 (GuildOnboardingPromptOptionButton)
+// Module 7174 (GuildOnboardingPromptOptionButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
@@ -15,7 +15,7 @@ import spring from "spring" /* 5208 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
-import EmojiStore from "EmojiStore" /* 6673 */;
+import EmojiStore from "EmojiStore" /* 6676 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -1297,7 +1297,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
   S.__workletHash = 8205438722579;
   S.__initData = derivedValue1;
   const animatedStyle = obj3.useAnimatedStyle(S);
-  const tmp9 = selected(7172)(guildId);
+  const tmp9 = selected(7175)(guildId);
   closure_5 = tmp9;
   num = 0;
   if (null != tmp9) {
@@ -1594,7 +1594,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     accessibilityLabel: memo,
     children: items7
   };
-  const PressableOpacity = tmp3(6856).PressableOpacity;
+  const PressableOpacity = tmp3(6859).PressableOpacity;
   if (option != null) {
     const emoji4 = option.emoji;
     if (emoji4 != null) {
@@ -1618,7 +1618,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     ({ optionTextEmoji: obj23.textEmojiStyle, optionImageEmoji: obj23.fastImageStyle } = tmp2);
     emojiURL = undefined;
     const tmp42 = closure_5;
-    tmp8Result = selected(7175);
+    tmp8Result = selected(7178);
     if (null != stateFromStores) {
       const obj13 = { id: null, animated: null, size };
       ({ id: obj25.id, animated: obj25.animated } = stateFromStores);
@@ -1667,7 +1667,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
   items11 = [tmp2.checkIcon, animatedStyle];
   const View3 = tmp8(5014).View;
   obj21 = { size: "xs", color: selected(587).colors.WHITE };
-  CheckmarkSmallIcon = tmp3(7178).CheckmarkSmallIcon;
+  CheckmarkSmallIcon = tmp3(7181).CheckmarkSmallIcon;
   items9[2] = closure_9(View3, obj20);
   if (canBeNew) {
     canBeNew = !selected;

@@ -1,15 +1,15 @@
-// Module ID: 12385
-// Function ID: 12386
+// Module ID: 12402
+// Function ID: 12403
 // Name: ConjureDebugAnalytics
-// Dependencies: [19, 21, 558, 576, 1128, 3820, 12380, 12383, 12381, 2]
+// Dependencies: [19, 21, 558, 576, 1128, 3820, 12397, 12400, 12398, 2]
 
-// Module 12385 (ConjureDebugAnalytics)
+// Module 12402 (ConjureDebugAnalytics)
 import react2 from "react" /* 576 */;
 import intl7 from "intl" /* 1128 */;
 import _modDef3820 from "module_3820" /* 3820 */;
-import ConjureDebugLabels from "ConjureDebugLabels" /* 12380 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 12381 */;
-import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 12383 */;
+import ConjureDebugLabels from "ConjureDebugLabels" /* 12397 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 12398 */;
+import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 12400 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -86,7 +86,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
         const _Symbol3 = Symbol;
         const tmpResult3 = ConjureDebugLabels;
         tmpResult3.analyticsMemoryValue(found);
-        const DebugStatRow2 = tmp(12383).DebugStatRow;
+        const DebugStatRow2 = tmp(12400).DebugStatRow;
         if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
           const intl3 = tmp(1128).intl;
           const stringResult2 = intl3.string(_modDef3820["H/X+FI"]);
@@ -109,7 +109,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
         const _Symbol2 = Symbol;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
           const obj3 = { label: tmp13, value: "\u2014", hint: intl2.string(_modDef3820.AGvoMJ) };
-          const DebugStatRow = tmp(12383).DebugStatRow;
+          const DebugStatRow = tmp(12400).DebugStatRow;
           intl2 = tmp(1128).intl;
           const tmp19 = _false(DebugStatRow, obj3);
           cResult[13] = tmp19;
@@ -149,7 +149,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
             let tmp33 = null;
             if (null != tmp5) {
               const obj4 = { label: intl4.string(_modDef3820.lmFmMO), value: tmp5 };
-              const DebugStatRow3 = tmp(12383).DebugStatRow;
+              const DebugStatRow3 = tmp(12400).DebugStatRow;
               intl4 = tmp(1128).intl;
               tmp33 = _false(DebugStatRow3, obj4);
             }
@@ -229,7 +229,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
       const tmp18 = importDefault;
       if (null != analyticsMemoryValueResult) {
         const obj = { label: intl.string(tmp18(3820).lmFmMO), value: analyticsMemoryValueResult };
-        const DebugStatRow = tmp12(12383).DebugStatRow;
+        const DebugStatRow = tmp12(12400).DebugStatRow;
         intl = tmp12(1128).intl;
         tmp17Result = tmp17(DebugStatRow, obj);
       }

@@ -1,9 +1,9 @@
 // Module ID: 10204
 // Function ID: 10205
-// Dependencies: [41, 42, 93, 95, 98, 10151]
+// Dependencies: [41, 42, 93, 95, 98, 10162]
 
 // Module 10204
-import _mod10151 from "module_10151" /* 10151 */;
+import _mod10162 from "module_10162" /* 10162 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
@@ -42,12 +42,12 @@ if (!fn) {
     return tmp2;
   };
 }
-class JPMergeDateRangeRefiner {
+class FRMergeDateRangeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, JPMergeDateRangeRefiner);
-    const obj = _getPrototypeOf(JPMergeDateRangeRefiner);
+    _classCallCheck(this, FRMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(FRMergeDateRangeRefiner);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
@@ -59,13 +59,13 @@ class JPMergeDateRangeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(JPMergeDateRangeRefiner, fn(_mod10151).default);
+_inherits(FRMergeDateRangeRefiner, fn(_mod10162).default);
 const entry = {
   key: "patternBetween",
   value: function patternBetween() {
-    return /^\s*(から|－|ー|-|～|~)\s*$/i;
+    return /^\s*(à|a|au|-)\s*$/i;
   }
 };
 const items = [entry];
 
-export default _createClass(JPMergeDateRangeRefiner, items);
+export default _createClass(FRMergeDateRangeRefiner, items);

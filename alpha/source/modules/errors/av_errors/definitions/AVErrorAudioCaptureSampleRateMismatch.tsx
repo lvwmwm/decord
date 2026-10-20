@@ -1,12 +1,12 @@
-// Module ID: 19106
-// Function ID: 19107
+// Module ID: 19130
+// Function ID: 19131
 // Name: AVErrorAudioCaptureSampleRateMismatch
-// Dependencies: [5693, 2014, 5676, 1104, 5853, 19094, 2]
+// Dependencies: [5693, 2014, 5676, 1104, 5855, 19118, 2]
 
-// Module 19106 (AVErrorAudioCaptureSampleRateMismatch)
+// Module 19130 (AVErrorAudioCaptureSampleRateMismatch)
 import DurationsDefault from "Durations" /* 1104 */;
-import AVError from "AVError" /* 5853 */;
-import AVErrorContext from "AVErrorContext" /* 19094 */;
+import AVError from "AVError" /* 5855 */;
+import AVErrorContext from "AVErrorContext" /* 19118 */;
 import MediaEngineStatsStore from "MediaEngineStatsStore" /* 5693 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5676 */;

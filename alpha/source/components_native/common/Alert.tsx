@@ -1,10 +1,10 @@
-// Module ID: 5933
-// Function ID: 5934
+// Module ID: 5936
+// Function ID: 5937
 // Name: Alert
-// Dependencies: [19, 17, 21, 4945, 587, 1202, 4999, 5934, 4795, 5926, 5195, 1128, 5205, 6856, 10543, 558, 576, 1499, 8616, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 1202, 4999, 5937, 4795, 5929, 5195, 1128, 5205, 6859, 10554, 558, 576, 1499, 8628, 2]
 // Exports: getAlertButtonVariant
 
-// Module 5933 (Alert)
+// Module 5936 (Alert)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
@@ -14,10 +14,10 @@ import Timers from "Timers" /* 4795 */;
 import native2 from "native" /* 4999 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
-import CustomMarkupAll from "CustomMarkup" /* 5934 */;
-import Pressables from "Pressables" /* 6856 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8616 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10543 */;
+import CustomMarkupAll from "CustomMarkup" /* 5937 */;
+import Pressables from "Pressables" /* 6859 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8628 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10554 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

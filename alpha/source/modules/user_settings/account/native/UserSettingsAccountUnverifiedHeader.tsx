@@ -1,16 +1,16 @@
-// Module ID: 7041
-// Function ID: 7042
+// Module ID: 7044
+// Function ID: 7045
 // Name: UserSettingsAccountUnverifiedHeader
-// Dependencies: [19, 1392, 21, 4945, 587, 6869, 1128, 558, 576, 504, 5195, 6856, 2]
+// Dependencies: [19, 1392, 21, 4945, 587, 6872, 1128, 558, 576, 504, 5195, 6859, 2]
 
-// Module 7041 (UserSettingsAccountUnverifiedHeader)
+// Module 7044 (UserSettingsAccountUnverifiedHeader)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import Pressables from "Pressables" /* 6856 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6869 */;
+import Pressables from "Pressables" /* 6859 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6872 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
@@ -145,7 +145,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   let tmp5 = null;
   if (null != tmp4) {
     const obj2 = { accessibilityRole: "button", style: tmp.accountWarning, onPress: handleOpenEmailVerification, children: items1 };
-    const PressableOpacity = tmp2(6856).PressableOpacity;
+    const PressableOpacity = tmp2(6859).PressableOpacity;
     const obj3 = { style: tmp.accountWarningText, variant: "text-xs/bold", color: "text-overlay-light", children: tmp4.title };
     items1 = [React3(Text_Text.Text, obj3), ];
     const obj4 = { style: tmp.accountWarningButton, variant: "text-xs/medium", color: "text-overlay-light", children: tmp4.button };

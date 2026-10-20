@@ -1,13 +1,13 @@
-// Module ID: 13671
-// Function ID: 13672
+// Module ID: 13689
+// Function ID: 13690
 // Name: useFavoritesGuildChannelFilter
-// Dependencies: [19, 4800, 4880, 4803, 1087, 558, 576, 504, 8988, 4825, 1388, 2]
+// Dependencies: [19, 4800, 4880, 4803, 1087, 558, 576, 504, 9000, 4825, 1388, 2]
 
-// Module 13671 (useFavoritesGuildChannelFilter)
+// Module 13689 (useFavoritesGuildChannelFilter)
 import Constants from "Constants" /* 1087 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import FavoritesUtils from "FavoritesUtils" /* 4825 */;
-import _mod8988 from "module_8988" /* 8988 */;
+import _mod9000 from "module_9000" /* 9000 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   if (cResult[2] !== stateFromStores) {
     const fn2 = function p(type, arg1) {
       type = type.type;
-      if (_mod8988.AutocompleterResultTypes.USER === type) {
+      if (_mod9000.AutocompleterResultTypes.USER === type) {
         const dMChannelFromUserId = ChannelStore.getDMChannelFromUserId(type.record.id);
         let tmp15 = !(!arg1 && null == dMChannelFromUserId);
         const tmp13 = !arg1 && null == dMChannelFromUserId;
@@ -51,11 +51,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
           const tmp17 = null == dMChannelFromUserId || null == stateFromStores[dMChannelFromUserId.id];
         }
         return tmp15;
-      } else if (_mod8988.AutocompleterResultTypes.GROUP_DM === type) {
+      } else if (_mod9000.AutocompleterResultTypes.GROUP_DM === type) {
         return null == stateFromStores[type.record.id];
       } else {
-        if (_mod8988.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-          if (_mod8988.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+        if (_mod9000.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+          if (_mod9000.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
             const tmpResult = GlobalUtils;
             return tmpResult.assertNever(type);
           }
@@ -87,7 +87,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   const items1 = [stateFromStores];
   return react.useCallback((type, arg1) => {
     type = type.type;
-    if (_mod8988.AutocompleterResultTypes.USER === type) {
+    if (_mod9000.AutocompleterResultTypes.USER === type) {
       const dMChannelFromUserId = ChannelStore.getDMChannelFromUserId(type.record.id);
       let tmp15 = !(!arg1 && null == dMChannelFromUserId);
       const tmp13 = !arg1 && null == dMChannelFromUserId;
@@ -96,11 +96,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
         const tmp17 = null == dMChannelFromUserId || null == stateFromStores[dMChannelFromUserId.id];
       }
       return tmp15;
-    } else if (_mod8988.AutocompleterResultTypes.GROUP_DM === type) {
+    } else if (_mod9000.AutocompleterResultTypes.GROUP_DM === type) {
       return null == stateFromStores[type.record.id];
     } else {
-      if (_mod8988.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-        if (_mod8988.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+      if (_mod9000.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+        if (_mod9000.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
           const tmpResult = GlobalUtils;
           return tmpResult.assertNever(type);
         }

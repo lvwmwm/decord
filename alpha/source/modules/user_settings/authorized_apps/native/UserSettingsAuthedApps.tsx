@@ -1,21 +1,21 @@
-// Module ID: 16015
-// Function ID: 16016
+// Module ID: 16034
+// Function ID: 16035
 // Name: UserSettingsAuthedApps
-// Dependencies: [19, 17, 7151, 1087, 21, 587, 4945, 558, 576, 9548, 9409, 13875, 5648, 1633, 504, 1505, 7205, 1506, 5195, 1128, 6935, 6851, 8901, 7035, 7039, 7168, 2]
+// Dependencies: [19, 17, 7154, 1087, 21, 587, 4945, 558, 576, 9561, 9421, 13893, 5648, 1633, 504, 1505, 7208, 1506, 5195, 1128, 6938, 6854, 8913, 7038, 7042, 7171, 2]
 
-// Module 16015 (UserSettingsAuthedApps)
+// Module 16034 (UserSettingsAuthedApps)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5648 */;
-import TableRowGroup from "TableRowGroup" /* 6935 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7035 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7039 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7151 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 9409 */;
-import applications from "applications" /* 9548 */;
-import EmbedIcon from "EmbedIcon" /* 13875 */;
+import TableRowGroup from "TableRowGroup" /* 6938 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7038 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7042 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7154 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 9421 */;
+import applications from "applications" /* 9561 */;
+import EmbedIcon from "EmbedIcon" /* 13893 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;

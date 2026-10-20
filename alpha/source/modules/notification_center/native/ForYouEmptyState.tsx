@@ -1,14 +1,14 @@
-// Module ID: 17619
-// Function ID: 17620
+// Module ID: 17638
+// Function ID: 17639
 // Name: ForYouEmptyState
-// Dependencies: [19, 17, 21, 4945, 558, 576, 17620, 1128, 5195, 2]
+// Dependencies: [19, 17, 21, 4945, 558, 576, 17639, 1128, 5195, 2]
 
-// Module 17619 (ForYouEmptyState)
+// Module 17638 (ForYouEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import MailboxSpotIllustration from "MailboxSpotIllustration" /* 17620 */;
+import MailboxSpotIllustration from "MailboxSpotIllustration" /* 17639 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;

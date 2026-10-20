@@ -1,10 +1,10 @@
-// Module ID: 8059
-// Function ID: 8060
+// Module ID: 8063
+// Function ID: 8064
 // Name: NodeView
-// Dependencies: [32, 109, 19, 17, 5198, 4800, 4880, 8060, 8057, 1087, 1098, 21, 4945, 587, 558, 576, 5934, 5560, 5195, 4942, 5648, 504, 8061, 6856, 1505, 5228, 5926, 8054, 8052, 5673, 8063, 8067, 8068, 7169, 8072, 8073, 8074, 8075, 14375, 14376, 14377, 14378, 14379, 14380, 14381, 14382, 14383, 14385, 14386, 14387, 14388, 14389, 14390, 14391, 14392, 14395, 2]
+// Dependencies: [32, 109, 19, 17, 5198, 4800, 4880, 8064, 8061, 1087, 1098, 21, 4945, 587, 558, 576, 5937, 5560, 5195, 4942, 5648, 504, 8065, 6859, 1505, 5228, 5929, 8058, 8056, 5673, 8067, 8071, 8072, 7172, 8076, 8077, 8078, 8079, 14393, 14394, 14395, 14396, 14397, 14398, 14399, 14400, 14401, 14403, 14404, 14405, 14406, 14407, 14408, 14409, 14410, 14413, 2]
 // Exports: default
 
-// Module 8059 (NodeView)
+// Module 8063 (NodeView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1098 */;
@@ -13,11 +13,11 @@ import Text_Text from "Text/Text" /* 5195 */;
 import useInitialValueDefault from "useInitialValue" /* 5560 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5648 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5673 */;
-import CustomMarkupAll from "CustomMarkup" /* 5934 */;
-import MenuTypes from "MenuTypes" /* 8052 */;
-import InAppReportsConstants from "InAppReportsConstants" /* 8057 */;
-import MenuConstants from "MenuConstants" /* 8060 */;
-import ArrowDefault from "Arrow" /* 8061 */;
+import CustomMarkupAll from "CustomMarkup" /* 5937 */;
+import MenuTypes from "MenuTypes" /* 8056 */;
+import InAppReportsConstants from "InAppReportsConstants" /* 8061 */;
+import MenuConstants from "MenuConstants" /* 8064 */;
+import ArrowDefault from "Arrow" /* 8065 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -532,7 +532,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChildI
   const obj2 = { style: tmp.childButton, accessibilityRole: "button", onPress: first, children: closure_19(closure_8, obj3) };
   obj3 = { style: tmp.childContainer, children: items2 };
   const obj4 = { style: tmp.childContent, children: items1 };
-  const PressableHighlight = tmp6(6856).PressableHighlight;
+  const PressableHighlight = tmp6(6859).PressableHighlight;
   items1 = [, ];
   const obj5 = { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp3 };
   items1[0] = closure_18(child(5195).Text, obj5);

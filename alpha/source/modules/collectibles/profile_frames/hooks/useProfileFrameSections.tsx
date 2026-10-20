@@ -1,16 +1,16 @@
-// Module ID: 15687
-// Function ID: 15688
+// Module ID: 15706
+// Function ID: 15707
 // Name: useProfileFrameSections
-// Dependencies: [32, 19, 7596, 7611, 558, 576, 573, 7608, 1128, 14286, 2]
+// Dependencies: [32, 19, 7599, 7614, 558, 576, 573, 7611, 1128, 14304, 2]
 
-// Module 15687 (useProfileFrameSections)
+// Module 15706 (useProfileFrameSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1128 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7608 */;
-import useRecommendedCollectiblesSectionsDefault from "useRecommendedCollectiblesSections" /* 14286 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7611 */;
+import useRecommendedCollectiblesSectionsDefault from "useRecommendedCollectiblesSections" /* 14304 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7596 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7611 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7599 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7614 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -147,7 +147,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfile
       tmp30 = obj4;
     }
   }
-  const tmp2Result4 = stateFromStores(7608);
+  const tmp2Result4 = stateFromStores(7611);
   const profileFrames = tmp2Result4.getProfileFrames(stateFromStores, tmp13);
   if (cResult[11] === tmp14) {
     let tmp19;
@@ -265,7 +265,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfile
     items1[2] = obj3;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(14286)(tmp5, obj.PREVIEW);
+  return first(14304)(tmp5, obj.PREVIEW);
 });
 let result = size.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useProfileFrameSections.tsx");
 

@@ -1,22 +1,22 @@
-// Module ID: 16320
-// Function ID: 16321
+// Module ID: 16339
+// Function ID: 16340
 // Name: GuildRoleSubscriptionTierTemplatesUtils
-// Dependencies: [5, 19, 4800, 4873, 16315, 16321, 1087, 4807, 6338, 558, 576, 573, 1405, 584, 8892, 7306, 14939, 2]
+// Dependencies: [5, 19, 4800, 4873, 16334, 16340, 1087, 4807, 6341, 558, 576, 573, 1405, 584, 8904, 7309, 14957, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge
 
-// Module 16320 (GuildRoleSubscriptionTierTemplatesUtils)
+// Module 16339 (GuildRoleSubscriptionTierTemplatesUtils)
 import react from "react" /* 19 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import FlagUtilsAll from "FlagUtils" /* 1405 */;
 import ChannelConstants from "ChannelConstants" /* 4807 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7306 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16315 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7309 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16334 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4873 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 16321 */;
-import allSettled_mod from "allSettled" /* 6338 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 16340 */;
+import allSettled_mod from "allSettled" /* 6341 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const require = globalThis.__r;
 let _require, c3, c4, set;
 
 let tmp;
-const GuildRoleSubscriptionsExperimentUtils = tmp(14939);
+const GuildRoleSubscriptionsExperimentUtils = tmp(14957);
 function getUsedTemplateChannelsForGuild(arg0) {
   const arr = useEditStateStore.getState().editStateIdsForGroup[arg0];
   const listings = useEditStateStore.getState().listings;

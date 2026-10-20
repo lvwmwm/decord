@@ -1,10 +1,10 @@
-// Module ID: 13988
-// Function ID: 13989
+// Module ID: 14006
+// Function ID: 14007
 // Name: useGetJoinRequestGuild
-// Dependencies: [19, 4972, 558, 576, 504, 6791, 2]
+// Dependencies: [19, 4972, 558, 576, 504, 6794, 2]
 
-// Module 13988 (useGetJoinRequestGuild)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6791 */;
+// Module 14006 (useGetJoinRequestGuild)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6794 */;
 import react from "react" /* 19 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

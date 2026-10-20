@@ -1,19 +1,19 @@
-// Module ID: 17481
-// Function ID: 17482
+// Module ID: 17500
+// Function ID: 17501
 // Name: HomeDrawerFolderRow
-// Dependencies: [19, 17, 6762, 4822, 6649, 6652, 5591, 1087, 21, 4945, 558, 576, 504, 10667, 1128, 5195, 17482, 5117, 5114, 2]
+// Dependencies: [19, 17, 6765, 4822, 6652, 6655, 5591, 1087, 21, 4945, 558, 576, 504, 10678, 1128, 5195, 17501, 5117, 5114, 2]
 
-// Module 17481 (HomeDrawerFolderRow)
+// Module 17500 (HomeDrawerFolderRow)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import BellSlashIcon2 from "BellSlashIcon" /* 10667 */;
+import BellSlashIcon2 from "BellSlashIcon" /* 10678 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6762 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6765 */;
 import GuildStore from "GuildStore" /* 4822 */;
-import SortedGuildStore from "SortedGuildStore" /* 6649 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6652 */;
+import SortedGuildStore from "SortedGuildStore" /* 6652 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6655 */;
 import VoiceStateStore from "VoiceStateStore" /* 5591 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;

@@ -1,15 +1,15 @@
-// Module ID: 12740
-// Function ID: 12741
+// Module ID: 12757
+// Function ID: 12758
 // Name: Checkpoint2025ForwardPreview
-// Dependencies: [12741, 21, 558, 576, 12742, 5979, 5631, 2]
+// Dependencies: [12758, 21, 558, 576, 12759, 5982, 5631, 2]
 
-// Module 12740 (Checkpoint2025ForwardPreview)
+// Module 12757 (Checkpoint2025ForwardPreview)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import CheckpointUtils from "CheckpointUtils" /* 5979 */;
-import checkpoint_CheckpointConstants from "checkpoint/CheckpointConstants" /* 12741 */;
-import CheckpointColors from "CheckpointColors" /* 12742 */;
+import CheckpointUtils from "CheckpointUtils" /* 5982 */;
+import checkpoint_CheckpointConstants from "checkpoint/CheckpointConstants" /* 12758 */;
+import CheckpointColors from "CheckpointColors" /* 12759 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

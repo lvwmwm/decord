@@ -1,9 +1,9 @@
-// Module ID: 10332
-// Function ID: 10333
+// Module ID: 10343
+// Function ID: 10344
 // Name: ImageCarousel
-// Dependencies: [19, 17, 7577, 8237, 10333, 21, 4945, 587, 558, 576, 5014, 5167, 1202, 5208, 38, 8088, 504, 10334, 1128, 12903, 8661, 5195, 8690, 7011, 12030, 6856, 6980, 1499, 9579, 10336, 8087, 2]
+// Dependencies: [19, 17, 7580, 8241, 10344, 21, 4945, 587, 558, 576, 5014, 5167, 1202, 5208, 38, 8092, 504, 10345, 1128, 12921, 8673, 5195, 8702, 7014, 12045, 6859, 6983, 1499, 9592, 10347, 8091, 2]
 
-// Module 10332 (ImageCarousel)
+// Module 10343 (ImageCarousel)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
@@ -12,18 +12,18 @@ import useWindowDimensions from "useWindowDimensions" /* 1499 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 5014 */;
 import timing from "timing" /* 5167 */;
 import spring from "spring" /* 5208 */;
-import Pressables from "Pressables" /* 6856 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6980 */;
-import DraftStore from "DraftStore" /* 7577 */;
-import Upload from "Upload" /* 8087 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9579 */;
-import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10334 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10336 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 12030 */;
+import Pressables from "Pressables" /* 6859 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6983 */;
+import DraftStore from "DraftStore" /* 7580 */;
+import Upload from "Upload" /* 8091 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9592 */;
+import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10345 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10347 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 12045 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8237 */;
-import ImageCarouselConstants from "ImageCarouselConstants" /* 10333 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8241 */;
+import ImageCarouselConstants from "ImageCarouselConstants" /* 10344 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -1360,7 +1360,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageCarous
   items4 = [unpackModuleId(tmp14, size), children];
   items5 = [unpackModuleId(PressableOpacity, obj2), ];
   const obj5 = { accessibilityRole: "button", accessibilityLabel: removeAccessibilityLabel, style: tmp.closeButton, onPress: onRemove, hitSlop: { top: 4, bottom: 4, left: 4, right: 4 }, children: unpackModuleId(View2, obj6) };
-  const PressableOpacity2 = tmp9(6856).PressableOpacity;
+  const PressableOpacity2 = tmp9(6859).PressableOpacity;
   obj6 = { style: items6, children: unpackModuleId(Icon, obj7) };
   items6 = [tmp.closeContainer, tmp8];
   View2 = ReanimatedRexportDefault.View;

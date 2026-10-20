@@ -1,15 +1,15 @@
-// Module ID: 18242
-// Function ID: 18243
+// Module ID: 18265
+// Function ID: 18266
 // Name: useSortedGuildIdsForSoundboard
-// Dependencies: [19, 4880, 6649, 1392, 1087, 1098, 558, 576, 573, 2054, 2]
+// Dependencies: [19, 4880, 6652, 1392, 1087, 1098, 558, 576, 573, 2054, 2]
 
-// Module 18242 (useSortedGuildIdsForSoundboard)
+// Module 18265 (useSortedGuildIdsForSoundboard)
 import Constants from "Constants" /* 1087 */;
 import Constants2 from "Constants" /* 1098 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2054 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
-import SortedGuildStore from "SortedGuildStore" /* 6649 */;
+import SortedGuildStore from "SortedGuildStore" /* 6652 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

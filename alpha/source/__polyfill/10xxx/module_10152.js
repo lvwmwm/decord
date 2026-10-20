@@ -1,75 +1,95 @@
 // Module ID: 10152
 // Function ID: 10153
-// Dependencies: [41, 42]
+// Dependencies: [41, 42, 93, 95, 98, 10143, 10144, 10145, 10151]
 
 // Module 10152
+import _mod10143 from "module_10143" /* 10143 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10144 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 10145 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10151 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-class Filter {
-  constructor() {
-    _classCallCheck(this, Filter);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
-const entry = {
-  key: "refine",
-  value: function refine(arg0, arr) {
+const ORDINAL_NUMBER_PATTERN = _mod10143.ORDINAL_NUMBER_PATTERN;
+const ORDINAL_NUMBER_PATTERN2 = _mod10143.ORDINAL_NUMBER_PATTERN;
+const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod10143.MONTH_DICTIONARY);
+const regExp = new RegExp("(?:on\\s{0,3})?(" + ORDINAL_NUMBER_PATTERN + ")(?:\\s{0,3}(?:to|\\-|\\\u2013|until|through|till)?\\s{0,3}(" + ORDINAL_NUMBER_PATTERN2 + "))?(?:-|/|\\s{0,3}(?:of)?\\s{0,3})(" + matchAnyPatternResult + ")(?:(?:-|/|,?\\s{0,3})(" + _mod10143.YEAR_PATTERN + "(?!\\w)))?(?=\\W|$)", "i");
+class ENMonthNameLittleEndianParser {
+  constructor() {
+    let constructResult;
     const self = this;
-    let closure_0 = arg0;
-    return arr.filter((item) => self.isValid(closure_0, item));
+    _classCallCheck(this, ENMonthNameLittleEndianParser);
+    const obj = _getPrototypeOf(ENMonthNameLittleEndianParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ENMonthNameLittleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
-let items = [entry];
-class MergingRefiner {
-  constructor() {
-    _classCallCheck(this, MergingRefiner);
-  }
-}
-const entry1 = {
-  key: "refine",
-  value: function refine(text, arg1) {
-    const self = this;
-    if (arg1.length < 2) {
-      return arg1;
-    } else {
-      const items = [];
-      let first = arg1[0];
-      let num = 1;
-      let num2 = 1;
-      let tmp20 = first;
-      if (1 < arg1.length) {
-        do {
-          let tmp11;
-          let tmp = arg1[num];
-          let str = text.text;
-          let substr = str.substring(first.index + first.text.length, tmp.index);
-          if (self.shouldMergeResults(substr, first, tmp, text)) {
-            let closure_1 = tmp;
-            let mergeResultsResult = self.mergeResults(substr, tmp8, tmp, text);
-            let debugResult = text.debug(() => {
-              console.log("" + self.constructor.name + " merged " + first + " and " + closure_1 + " into " + mergeResultsResult);
-            });
-            tmp11 = mergeResultsResult;
-          } else {
-            let arr = items.push(first);
-            tmp11 = tmp;
-          }
-          num = num2 + 1;
-          first = tmp11;
-          tmp20 = tmp11;
-          num2 = num;
-        } while (num < arg1.length);
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const tmp4 = _mod10143.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
+      const result = _mod10143.parseOrdinalNumberPattern(index[1]);
+      if (result > 31) {
+        index.index = index.index + index[1].length;
+        return null;
+      } else {
+        const start4 = parsingResult.start;
+        start4.assign("month", tmp4);
+        const start5 = parsingResult.start;
+        start5.assign("day", result);
+        if (index[4]) {
+          const start2 = parsingResult.start;
+          start2.assign("year", _mod10143.parseYear(index[4]));
+        } else {
+          const start = parsingResult.start;
+          start.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.refDate, result, tmp4));
+        }
+        if (index[2]) {
+          const start3 = parsingResult.start;
+          const result1 = tmp2(10143).parseOrdinalNumberPattern(index[2]);
+          parsingResult.end = start3.clone();
+          const end = parsingResult.end;
+          end.assign("day", result1);
+        }
+        return parsingResult;
       }
-      if (null != tmp20) {
-        items.push(tmp20);
-      }
-      return items;
     }
   }
-};
-const items1 = [entry1];
-const Filter_export = _createClass(Filter, items);
-const MergingRefiner_export = _createClass(MergingRefiner, items1);
+];
 
-export { Filter_export as Filter };
-export { MergingRefiner_export as MergingRefiner };
+export default _createClass(ENMonthNameLittleEndianParser, items);

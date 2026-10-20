@@ -1,10 +1,10 @@
-// Module ID: 13921
-// Function ID: 13922
+// Module ID: 13939
+// Function ID: 13940
 // Name: AppStoreOverlayStatCardUtils
 // Dependencies: [2]
 // Exports: formatAppStoreChartRank, formatAppStoreRatingCount, formatAppStoreRatingValue, getAppStoreStarFillAmounts
 
-// Module 13921 (AppStoreOverlayStatCardUtils)
+// Module 13939 (AppStoreOverlayStatCardUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayStatCardUtils.tsx");

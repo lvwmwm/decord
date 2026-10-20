@@ -1,9 +1,9 @@
-// Module ID: 14191
-// Function ID: 14192
+// Module ID: 14209
+// Function ID: 14210
 // Name: UserProfilePersonalWidgetCard
-// Dependencies: [32, 19, 17, 502, 1087, 21, 4945, 587, 558, 576, 14192, 14193, 5195, 1128, 4776, 14194, 5631, 5219, 8417, 4999, 504, 9343, 14189, 7249, 2]
+// Dependencies: [32, 19, 17, 502, 1087, 21, 4945, 587, 558, 576, 14210, 14211, 5195, 1128, 4776, 14212, 5631, 5219, 8421, 4999, 504, 9355, 14207, 7252, 2]
 
-// Module 14191 (UserProfilePersonalWidgetCard)
+// Module 14209 (UserProfilePersonalWidgetCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,11 +12,11 @@ import native from "native" /* 4999 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import LinearGradientDefault from "LinearGradient" /* 5219 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import UserProfileCardDefault from "UserProfileCard" /* 7249 */;
-import GifTagDefault from "GifTag" /* 8417 */;
-import UserProfileWidgetReportButtonDefault from "UserProfileWidgetReportButton" /* 14189 */;
-import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 14192 */;
-import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 14193 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7252 */;
+import GifTagDefault from "GifTag" /* 8421 */;
+import UserProfileWidgetReportButtonDefault from "UserProfileWidgetReportButton" /* 14207 */;
+import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 14210 */;
+import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 14211 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -45,7 +45,7 @@ let size;
 let tmp;
 let unpackModuleId;
 const intl2 = tmp(1128);
-const WidgetAssetUtils = tmp(14194);
+const WidgetAssetUtils = tmp(14212);
 let _slicedToArray = _slicedToArray_mod;
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const ThemeTypes = Constants.ThemeTypes;
@@ -289,7 +289,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWid
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F148826 */ });
+        return closure_0(() => { /* body not rendered: F149003 */ });
       }
     }
     cResult[6] = T;
@@ -297,21 +297,21 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWid
   } else {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F148826 */ });
+        return closure_0(() => { /* body not rendered: F149003 */ });
       }
     }
   }
   if (null != tmp7 && tmp7.isAnimated && !(setting || tmp5[0])) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F148826 */ });
+        return closure_0(() => { /* body not rendered: F149003 */ });
       }
     }
   }
   if (cResult[7] === tmp8) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F148826 */ });
+        return closure_0(() => { /* body not rendered: F149003 */ });
       }
     }
   }
@@ -613,7 +613,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoverS
     let tmp24Result5 = null;
     if (showGifTag) {
       const obj10 = { style: tmp.gifTag };
-      tmp24Result5 = tmp24(tmp14(8417), obj10);
+      tmp24Result5 = tmp24(tmp14(8421), obj10);
     }
     items2[3] = tmp24Result5;
     tmp24Result6 = tmp24(ThemeContextProvider, obj4);
@@ -923,7 +923,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPr
     }
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp13 = closure_10(userId(9343).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
+      const tmp13 = closure_10(userId(9355).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
       cResult[6] = tmp13;
       tmp11 = tmp13;
     } else {
@@ -1044,13 +1044,13 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPr
   let obj = userId(504);
   const items = [AuthenticationStore];
   const stateFromStores = obj.useStateFromStores(items, () => AuthenticationStore.getId() === userId);
-  let obj2 = { style: cardStyle, titleLeadingIcon: closure_10(userId(9343).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, trailingAction: tmp4Result, children: tmp8(tmp9, obj4) };
+  let obj2 = { style: cardStyle, titleLeadingIcon: closure_10(userId(9355).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, trailingAction: tmp4Result, children: tmp8(tmp9, obj4) };
   tmp4Result = !stateFromStores && !disableInteraction;
   const tmp5 = disableInteraction;
-  const tmp6 = disableInteraction(7249);
+  const tmp6 = disableInteraction(7252);
   if (tmp4Result) {
     const obj3 = { userId, widget };
-    tmp4Result = tmp4(tmp5(14189), obj3);
+    tmp4Result = tmp4(tmp5(14207), obj3);
   }
   const sections = widget.sections;
   obj4 = { style: tmp.sectionsContainer, children: items1 };

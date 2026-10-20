@@ -1,10 +1,10 @@
-// Module ID: 11109
-// Function ID: 11110
+// Module ID: 11121
+// Function ID: 11122
 // Name: useLegacyExperiments
-// Dependencies: [32, 19, 5151, 5152, 8432, 5156, 8430, 558, 576, 504, 2]
+// Dependencies: [32, 19, 5151, 5152, 8436, 5156, 8434, 558, 576, 504, 2]
 // Exports: getLegacyExperiments
 
-// Module 11109 (useLegacyExperiments)
+// Module 11121 (useLegacyExperiments)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;

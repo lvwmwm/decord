@@ -1,23 +1,23 @@
-// Module ID: 13337
-// Function ID: 13338
+// Module ID: 13355
+// Function ID: 13356
 // Name: UserProfileMutualsActionSheet
-// Dependencies: [32, 19, 17, 5674, 8597, 21, 4945, 587, 558, 576, 6730, 504, 1202, 5944, 10552, 6851, 6831, 5195, 13332, 13338, 10868, 13333, 13342, 13343, 8821, 1128, 11699, 10939, 2]
+// Dependencies: [32, 19, 17, 5674, 8609, 21, 4945, 587, 558, 576, 6733, 504, 1202, 5947, 10563, 6854, 6834, 5195, 13350, 13356, 10879, 13351, 13360, 13361, 8833, 1128, 11713, 10950, 2]
 
-// Module 13337 (UserProfileMutualsActionSheet)
+// Module 13355 (UserProfileMutualsActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5944 */;
-import GuildIcon from "GuildIcon" /* 6831 */;
-import TableRow2 from "TableRow" /* 6851 */;
-import Constants from "Constants" /* 8597 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10552 */;
-import UserProfileStackedActionSheet from "UserProfileStackedActionSheet" /* 10868 */;
-import useUserProfileMutualsDefault from "useUserProfileMutuals" /* 13332 */;
-import NoMutualServers from "NoMutualServers" /* 13333 */;
-import NoMutualFriends from "NoMutualFriends" /* 13338 */;
-import getMutualFriendsLabelDefault from "getMutualFriendsLabel" /* 13342 */;
-import getMutualGuildsLabelDefault from "getMutualGuildsLabel" /* 13343 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5947 */;
+import GuildIcon from "GuildIcon" /* 6834 */;
+import TableRow2 from "TableRow" /* 6854 */;
+import Constants from "Constants" /* 8609 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10563 */;
+import UserProfileStackedActionSheet from "UserProfileStackedActionSheet" /* 10879 */;
+import useUserProfileMutualsDefault from "useUserProfileMutuals" /* 13350 */;
+import NoMutualServers from "NoMutualServers" /* 13351 */;
+import NoMutualFriends from "NoMutualFriends" /* 13356 */;
+import getMutualFriendsLabelDefault from "getMutualFriendsLabel" /* 13360 */;
+import getMutualGuildsLabelDefault from "getMutualGuildsLabel" /* 13361 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -67,7 +67,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Mutual
   ({ guildId, onPress, start, end } = mutualFriend);
   user = mutualFriend.mutualFriend.user;
   const tmp4 = closure_11();
-  const obj2 = user(6730);
+  const obj2 = user(6733);
   const avatarDecoration = obj2.useAvatarDecoration(user);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [PresenceStore];
@@ -128,7 +128,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Mutual
                     }
                   }
                   const obj3 = { onPress, icon: tmp11, label: tmp13, subLabel: tmp16, start, end };
-                  const tmp22 = closure_9(user(6851).TableRow, obj3, tmp10);
+                  const tmp22 = closure_9(user(6854).TableRow, obj3, tmp10);
                   cResult[17] = end;
                   cResult[18] = onPress;
                   cResult[19] = start;
@@ -185,7 +185,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Mutual
   const guildId = mutualFriend.guildId;
   ({ onPress, start, end } = mutualFriend);
   const tmp = closure_11();
-  let obj = user(6730);
+  let obj = user(6733);
   const avatarDecoration = obj.useAvatarDecoration(user);
   const items = [PresenceStore];
   const obj2 = user(504);
@@ -195,7 +195,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Mutual
   });
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
   const obj3 = { onPress, icon: closure_9(Avatar, obj4), label: obj5.getName(guildId, undefined, user), subLabel: closure_9(ActivityStatusDefault, obj6), start, end };
-  const TableRow = user(6851).TableRow;
+  const TableRow = user(6854).TableRow;
   obj4 = { user, size: user(1202).AvatarSizes.REFRESH_MEDIUM_32, avatarDecoration, status, guildId, isMobileOnline, isVROnline, autoStatusCutout: true };
   Avatar = user(1202).Avatar;
   obj5 = NicknameUtilsDefault;
@@ -704,8 +704,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileM
   useUserProfileMutualsDefault(user);
   const obj2 = { pageWidth: first, defaultIndex: num, items };
   num = 0;
-  const useSegmentedControlState = user(8821).useSegmentedControlState;
-  user(8821);
+  const useSegmentedControlState = user(8833).useSegmentedControlState;
+  user(8833);
   if (section === UserProfileSections.MUTUAL_GUILDS) {
     num = 1;
   }
@@ -720,7 +720,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileM
     tmp12 = closure_9(closure_5, obj4);
     tmp11 = closure_9;
   } else if (0 === mutualFriends.length) {
-    const obj5 = { style: tmp.emptyState, children: closure_9(user(13338).NoMutualFriends, {}) };
+    const obj5 = { style: tmp.emptyState, children: closure_9(user(13356).NoMutualFriends, {}) };
     tmp12 = closure_9(closure_5, obj5);
     tmp11 = closure_9;
   } else {
@@ -744,7 +744,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileM
           return closure_1_9(closure_1_12, obj);
         }
     };
-    tmp12 = closure_9(tmp7(10868).UserProfileStackedActionSheetList, obj6);
+    tmp12 = closure_9(tmp7(10879).UserProfileStackedActionSheetList, obj6);
   }
   items = [obj3, ];
   let length1;
@@ -757,7 +757,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileM
     const obj8 = { style: tmp.loadingState, children: tmp11(closure_6, {}) };
     tmp11Result = tmp11(closure_5, obj8);
   } else if (0 === mutualGuilds.length) {
-    const obj9 = { style: tmp.emptyState, children: tmp11(user(13333).NoMutualServers, {}) };
+    const obj9 = { style: tmp.emptyState, children: tmp11(user(13351).NoMutualServers, {}) };
     tmp11Result = tmp11(closure_5, obj9);
   } else {
     const obj10 = {
@@ -779,7 +779,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileM
           return closure_1_9(closure_1_13, obj);
         }
     };
-    tmp11Result = tmp11(tmp7(10868).UserProfileStackedActionSheetList, obj10);
+    tmp11Result = tmp11(tmp7(10879).UserProfileStackedActionSheetList, obj10);
   }
   items[1] = obj7;
   const segmentedControlState = useSegmentedControlState(obj2);
@@ -791,9 +791,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileM
   intl = tmp7(1128).intl;
   obj12 = { style: tmp.container, onLayout: callback, children: items1 };
   items1 = [, ];
-  const obj13 = { children: tmp11(user(11699).Tabs, { state: segmentedControlState }) };
+  const obj13 = { children: tmp11(user(11713).Tabs, { state: segmentedControlState }) };
   items1[0] = tmp11(closure_5, obj13);
-  items1[1] = tmp11(user(10939).SegmentedControlPages, { state: segmentedControlState });
+  items1[1] = tmp11(user(10950).SegmentedControlPages, { state: segmentedControlState });
   return tmp11(tmp4Result4, obj11);
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileMutualsActionSheet.tsx");

@@ -1,25 +1,25 @@
-// Module ID: 10540
-// Function ID: 10541
+// Module ID: 10551
+// Function ID: 10552
 // Name: UsersFastList
-// Dependencies: [32, 19, 17, 10541, 21, 4945, 587, 558, 576, 10542, 6851, 9623, 5014, 1202, 5195, 6856, 10543, 1633, 7092, 10544, 10545, 10605, 10608, 13680, 13681, 7098, 2]
+// Dependencies: [32, 19, 17, 10552, 21, 4945, 587, 558, 576, 10553, 6854, 9636, 5014, 1202, 5195, 6859, 10554, 1633, 7095, 10555, 10556, 10616, 10619, 13698, 13699, 7101, 2]
 
-// Module 10540 (UsersFastList)
+// Module 10551 (UsersFastList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import Pressables from "Pressables" /* 6856 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9623 */;
-import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 10542 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10543 */;
-import UserRowDefault from "UserRow" /* 10545 */;
-import GroupDMRowDefault from "GroupDMRow" /* 10605 */;
-import ChannelRowDefault from "ChannelRow" /* 10608 */;
+import Pressables from "Pressables" /* 6859 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9636 */;
+import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 10553 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10554 */;
+import UserRowDefault from "UserRow" /* 10556 */;
+import GroupDMRowDefault from "GroupDMRow" /* 10616 */;
+import ChannelRowDefault from "ChannelRow" /* 10619 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10541 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10552 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -39,7 +39,7 @@ let obj6;
 let obj7;
 let rect;
 let tmp;
-const TableRow2 = tmp(6851);
+const TableRow2 = tmp(6854);
 let View = react_native.View;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 const USERS_LIST_SECTION_BOTTOM_PADDING = UsersFastListConstants.USERS_LIST_SECTION_BOTTOM_PADDING;
@@ -450,7 +450,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
                               return { opacity };
                             }
                           }
-                          const PressableOpacity = tmp(6856).PressableOpacity;
+                          const PressableOpacity = tmp(6859).PressableOpacity;
                           obj9 = { variant: "text-sm/semibold", color: "text-brand", children: actionTitle };
                           tmp31 = metroImportDefault(PressableOpacity, obj8);
                         }
@@ -693,7 +693,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   let tmp18 = tmp11Result4;
   if (null != onTitlePress) {
     const obj10 = { accessibilityRole: "button", style: tmp.titlePressable, onPress: onTitlePress, children: tmp11Result4 };
-    tmp18 = metroImportDefault(tmp3(6856).PressableOpacity, obj10);
+    tmp18 = metroImportDefault(tmp3(6859).PressableOpacity, obj10);
   }
   const obj11 = { style: memo1, children: items5 };
   items5 = [tmp18, ];
@@ -701,7 +701,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (func
   const tmp20 = View;
   if (null != actionTitle) {
     const obj12 = { onPress: action, children: metroImportDefault(Text_Text.Text, obj13) };
-    const PressableOpacity = tmp3(6856).PressableOpacity;
+    const PressableOpacity = tmp3(6859).PressableOpacity;
     obj13 = { variant: "text-sm/semibold", color: "text-brand", children: actionTitle };
     tmp21 = metroImportDefault(PressableOpacity, obj12);
   }

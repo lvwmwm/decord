@@ -1,9 +1,9 @@
-// Module ID: 13706
-// Function ID: 13707
+// Module ID: 13724
+// Function ID: 13725
 // Name: GiftBadgePostPurchase
-// Dependencies: [19, 17, 8606, 13707, 4797, 21, 4945, 587, 558, 576, 1633, 6620, 5112, 12693, 1128, 2622, 5205, 13708, 5195, 10420, 5173, 5174, 10423, 13709, 4970, 4784, 8598, 504, 2]
+// Dependencies: [19, 17, 8618, 13725, 4797, 21, 4945, 587, 558, 576, 1633, 6623, 5112, 12710, 1128, 2622, 5205, 13726, 5195, 10431, 5173, 5174, 10434, 13727, 4970, 4784, 8610, 504, 2]
 
-// Module 13706 (GiftBadgePostPurchase)
+// Module 13724 (GiftBadgePostPurchase)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -16,13 +16,13 @@ import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 497
 import HapticUtils from "HapticUtils" /* 5173 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5174 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
-import BadgeId from "BadgeId" /* 8598 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10420 */;
-import GiftingBadgeLevelUpProgressDefault from "GiftingBadgeLevelUpProgress" /* 13709 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+import BadgeId from "BadgeId" /* 8610 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10431 */;
+import GiftingBadgeLevelUpProgressDefault from "GiftingBadgeLevelUpProgress" /* 13727 */;
 import react from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8606 */;
-import GiftingBadgeConstants from "GiftingBadgeConstants" /* 13707 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8618 */;
+import GiftingBadgeConstants from "GiftingBadgeConstants" /* 13725 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -36,7 +36,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp4;
 let unpackModuleId;
-const GiftingBadgeProgressDefault = tmp4(13708);
+const GiftingBadgeProgressDefault = tmp4(13726);
 const View = react_native.View;
 ({ getRemainingGiftsToNextTier: metroRequire, getTierForProgress: metroImportDefault, getNextTierForProgress: metroImportAll } = GiftingBadgeConstants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -118,7 +118,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PostPu
       }
     }
     const obj2 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-    const GiftIcon = tmp(12693).GiftIcon;
+    const GiftIcon = tmp(12710).GiftIcon;
     const tmp10 = closure_10(GiftIcon, obj2);
     const intl = tmp(1128).intl;
     const stringResult = intl.string(_modDef2622.g86YiI);
@@ -247,7 +247,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PostPu
   const obj2 = { grow: true, variant: "primary", icon: closure_10(GiftIcon, obj3), text: intl.string(_modDef2622.g86YiI), onPress: callback };
   const Button = onSendGift(5205).Button;
   obj3 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  GiftIcon = onSendGift(12693).GiftIcon;
+  GiftIcon = onSendGift(12710).GiftIcon;
   intl = onSendGift(1128).intl;
   items1 = [closure_10(Button, obj2), ];
   const obj4 = { grow: true, variant: "secondary", text: intl2.string(_modDef2622["sa/cfM"]), onPress: callback1 };
@@ -469,7 +469,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function LevelU
     let tmp13 = null != tmp6;
     if (tmp13) {
       const obj2 = { icon: tmp6, size: 140 };
-      tmp13 = authStore(tmp4(10423), obj2);
+      tmp13 = authStore(tmp4(10434), obj2);
     }
     cResult[4] = tmp6;
     cResult[5] = tmp13;
@@ -677,7 +677,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function LevelU
   const obj3 = { style: tmp3.content, children: items };
   if (tmp9Result) {
     const obj5 = { icon: giftingBadgeTierIconUrl, size: 140 };
-    tmp9Result = tmp9(tmp(10423), obj5);
+    tmp9Result = tmp9(tmp(10434), obj5);
   }
   items = [authStore(View, obj4), ];
   const obj6 = { style: tmp3.levelUpBody, children: items1 };

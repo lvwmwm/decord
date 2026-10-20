@@ -1,18 +1,18 @@
-// Module ID: 17749
-// Function ID: 17750
+// Module ID: 17768
+// Function ID: 17769
 // Name: GuildSettingsModalMembersWithTabs
-// Dependencies: [109, 32, 19, 17, 4822, 4880, 1392, 21, 4945, 587, 558, 576, 17372, 504, 7311, 1128, 17750, 17751, 17758, 4974, 1505, 9676, 17753, 7431, 8953, 8821, 11699, 10939, 2]
+// Dependencies: [109, 32, 19, 17, 4822, 4880, 1392, 21, 4945, 587, 558, 576, 17391, 504, 7314, 1128, 17769, 17770, 17777, 4974, 1505, 9689, 17772, 7434, 8965, 8833, 11713, 10950, 2]
 
-// Module 17749 (GuildSettingsModalMembersWithTabs)
+// Module 17768 (GuildSettingsModalMembersWithTabs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4974 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7311 */;
-import ContextMenu2 from "ContextMenu" /* 9676 */;
-import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 17750 */;
-import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 17751 */;
-import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 17758 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7314 */;
+import ContextMenu2 from "ContextMenu" /* 9689 */;
+import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 17769 */;
+import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 17770 */;
+import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 17777 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -31,7 +31,7 @@ let closure_12;
 let obj2;
 let tmp2;
 let unpackModuleId;
-const showMembersManagementActionSheet = tmp2(17753);
+const showMembersManagementActionSheet = tmp2(17772);
 let closure_3 = ["ref"];
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;

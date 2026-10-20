@@ -1,13 +1,13 @@
-// Module ID: 6956
-// Function ID: 6957
+// Module ID: 6959
+// Function ID: 6960
 // Name: TextInput/TextInput
-// Dependencies: [109, 19, 21, 558, 576, 5002, 6957, 6963, 6958, 2]
+// Dependencies: [109, 19, 21, 558, 576, 5002, 6960, 6966, 6961, 2]
 
-// Module 6956 (TextInput/TextInput)
+// Module 6959 (TextInput/TextInput)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 5002 */;
-import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6958 */;
+import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6961 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -38,8 +38,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextInput(
     }
     status = str;
   }
-  const Input = tmp(6957).Input;
-  const TextField = tmp(6963).TextField;
+  const Input = tmp(6960).Input;
+  const TextField = tmp(6966).TextField;
   const tmpResult = getRequiredFieldA11yName;
   let requiredFieldA11yName = tmpResult.getRequiredFieldA11yName(accessibilityLabel, required);
   if (requiredFieldA11yName == null) {
@@ -108,9 +108,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextInput(
     }
     status = str;
   }
-  const Input = tmp2(6957).Input;
+  const Input = tmp2(6960).Input;
   const merged1 = Object.assign(merged);
-  const TextField = tmp2(6963).TextField;
+  const TextField = tmp2(6966).TextField;
   const merged2 = Object.assign(merged);
   const merged3 = Object.assign(tmp5);
   const tmp2Result = getRequiredFieldA11yName;

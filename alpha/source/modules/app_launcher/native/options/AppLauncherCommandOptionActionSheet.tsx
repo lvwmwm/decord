@@ -1,9 +1,9 @@
-// Module ID: 12018
-// Function ID: 12019
+// Module ID: 12033
+// Function ID: 12034
 // Name: AppLauncherCommandOptionActionSheet
-// Dependencies: [109, 19, 17, 1504, 21, 4945, 587, 558, 576, 7239, 5171, 1202, 7194, 5226, 2]
+// Dependencies: [109, 19, 17, 1504, 21, 4945, 587, 558, 576, 7242, 5171, 1202, 7197, 5226, 2]
 
-// Module 12018 (AppLauncherCommandOptionActionSheet)
+// Module 12033 (AppLauncherCommandOptionActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -181,7 +181,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   const tmp2 = closure_7();
   BottomSheet = merged(5226).BottomSheet;
   const merged1 = Object.assign(merged);
-  const BottomSheetTitleHeader = merged(7194).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = merged(7197).BottomSheetTitleHeader;
   ({ displayName: obj2.title, displayDescription: obj2.subtitle } = option);
   const items = [tmp2.contentContainer, contentContainerStyles];
   return <BottomSheet key={option.name} backgroundStyles={tmp2.actionSheetBackground} scrollable={scrollable} startExpanded={flag} header={<BottomSheetTitleHeader titleContainerStyle={tmp2.titleContainer} titleWrapperStyle={tmp2.titleWrapper} subtitleStyle={tmp2.subtitleWrapper} leading={null} title={null} subtitle={null} trailing={null} />}><View style={items}>{children}</View></BottomSheet>;

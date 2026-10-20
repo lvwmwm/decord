@@ -1,16 +1,16 @@
-// Module ID: 12568
-// Function ID: 12569
+// Module ID: 12585
+// Function ID: 12586
 // Name: GiftIntentGifModal
-// Dependencies: [32, 5, 19, 17, 4800, 1087, 4950, 21, 4945, 587, 7512, 7698, 1267, 7224, 558, 576, 5554, 504, 7128, 1128, 12569, 10047, 5205, 6620, 6872, 5560, 7043, 2]
+// Dependencies: [32, 5, 19, 17, 4800, 1087, 4950, 21, 4945, 587, 7515, 7702, 1267, 7227, 558, 576, 5554, 504, 7131, 1128, 12586, 10058, 5205, 6623, 6875, 5560, 7046, 2]
 
-// Module 12568 (GiftIntentGifModal)
+// Module 12585 (GiftIntentGifModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
 import MessageConstants from "MessageConstants" /* 4950 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
-import NavigatorHeader from "NavigatorHeader" /* 6872 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+import NavigatorHeader from "NavigatorHeader" /* 6875 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -460,7 +460,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftIntentGi
   tmp5 = fn2;
 }) : (function GiftIntentGifModal(arg0) {
   let onDismiss;
-  const f113957 = () => {
+  const f114082 = () => {
     let channelId;
     let giftIntentType;
     let intl;
@@ -489,8 +489,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftIntentGi
       onDismiss();
     }
   }, items);
-  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("useInitialValue")(f113957) };
-  require("useInitialValue")(f113957);
+  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("useInitialValue")(f114082) };
+  require("useInitialValue")(f114082);
   return closure_10(require("Navigator").Navigator, obj);
 });
 const result = size.fileFinishedImporting("modules/premium/gifting/native/GiftIntentGifModal.tsx");

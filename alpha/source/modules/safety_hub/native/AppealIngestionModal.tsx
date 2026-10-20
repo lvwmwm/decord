@@ -1,23 +1,23 @@
-// Module ID: 12647
-// Function ID: 12648
+// Module ID: 12664
+// Function ID: 12665
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 7866, 7842, 1087, 21, 4945, 587, 558, 576, 5195, 504, 12641, 1505, 7843, 12646, 12642, 7841, 7169, 1128, 5205, 6872, 12648, 1275, 12668, 12670, 12672, 12674, 12675, 5560, 7043, 2]
+// Dependencies: [5, 32, 19, 17, 7870, 7846, 1087, 21, 4945, 587, 558, 576, 5195, 504, 12658, 1505, 7847, 12663, 12659, 7845, 7172, 1128, 5205, 6875, 12665, 1275, 12685, 12687, 12689, 12691, 12692, 5560, 7046, 2]
 
-// Module 12647 (AppealIngestionModal)
+// Module 12664 (AppealIngestionModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12646 */;
-import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 12648 */;
-import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 12668 */;
-import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 12670 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12663 */;
+import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 12665 */;
+import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 12685 */;
+import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 12687 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7866 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7842 */;
+import SafetyHubStore from "SafetyHubStore" /* 7870 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7846 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

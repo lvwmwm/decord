@@ -1,9 +1,9 @@
-// Module ID: 15778
-// Function ID: 15779
+// Module ID: 15797
+// Function ID: 15798
 // Name: UserSettingsChangeUsername
-// Dependencies: [5, 32, 19, 17, 1392, 1087, 21, 4945, 587, 6438, 15779, 5195, 1128, 558, 576, 1505, 504, 2054, 15780, 7035, 7026, 1297, 1506, 9614, 6956, 7041, 6978, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 1087, 21, 4945, 587, 6441, 15798, 5195, 1128, 558, 576, 1505, 504, 2054, 15799, 7038, 7029, 1297, 1506, 9627, 6959, 7044, 6981, 2]
 
-// Module 15778 (UserSettingsChangeUsername)
+// Module 15797 (UserSettingsChangeUsername)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
@@ -32,18 +32,18 @@ function UsernameStatusMessage(showHint) {
   let P2;
   showHint = showHint.showHint;
   const usernameStatus = showHint.usernameStatus;
-  const str = showHint(6438);
+  const str = showHint(6441);
   const match = str.match(usernameStatus);
-  let obj = { type: showHint(15779).NameValidationState.ERROR, message: P.select() };
+  let obj = { type: showHint(15798).NameValidationState.ERROR, message: P.select() };
   const _with = match.with;
-  P = showHint(6438).P;
+  P = showHint(6441).P;
   const _withResult = _with(obj, (children) => {
     const obj = { variant: "text-xs/medium", color: "text-feedback-critical", children };
     return closure_1_11(showHint(dependencyMap[11]).Text, obj);
   });
   const _with2 = _withResult.with;
-  const obj2 = { type: showHint(15779).NameValidationState.AVAILABLE, message: P2.select() };
-  P2 = showHint(6438).P;
+  const obj2 = { type: showHint(15798).NameValidationState.AVAILABLE, message: P2.select() };
+  P2 = showHint(6441).P;
   const _with2Result = _with2(obj2, (children) => {
     const obj = { variant: "text-xs/medium", color: "text-feedback-positive", children };
     return closure_1_11(showHint(dependencyMap[11]).Text, obj);

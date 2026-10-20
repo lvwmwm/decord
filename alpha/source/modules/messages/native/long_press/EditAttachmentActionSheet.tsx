@@ -1,17 +1,17 @@
-// Module ID: 13794
-// Function ID: 13795
+// Module ID: 13812
+// Function ID: 13813
 // Name: EditAttachmentActionSheet
-// Dependencies: [5, 32, 19, 5965, 4950, 1087, 21, 558, 576, 8584, 8683, 1405, 1128, 4954, 7512, 7194, 5195, 7128, 6848, 5205, 5932, 587, 7244, 2]
+// Dependencies: [5, 32, 19, 5968, 4950, 1087, 21, 558, 576, 8596, 8695, 1405, 1128, 4954, 7515, 7197, 5195, 7131, 6851, 5205, 5935, 587, 7247, 2]
 
-// Module 13794 (EditAttachmentActionSheet)
+// Module 13812 (EditAttachmentActionSheet)
 import Constants from "Constants" /* 1087 */;
 import MessageConstants from "MessageConstants" /* 4950 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4954 */;
-import useBottomSheetRef from "useBottomSheetRef" /* 8584 */;
+import useBottomSheetRef from "useBottomSheetRef" /* 8596 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 5965 */;
+import MessageStore from "MessageStore" /* 5968 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -25,11 +25,11 @@ const intl7 = tmp(1128);
 const FlagUtils = tmp(1405);
 const Text_Text = tmp(5195);
 const components_Button_Button = tmp(5205);
-const Stack_Stack = tmp(5932);
-const TableCheckboxRow2 = tmp(6848);
-const TextArea2 = tmp(7128);
-const BottomSheetTitleHeader2 = tmp(7194);
-const ActionSheet2 = tmp(7244);
+const Stack_Stack = tmp(5935);
+const TableCheckboxRow2 = tmp(6851);
+const TextArea2 = tmp(7131);
+const BottomSheetTitleHeader2 = tmp(7197);
+const ActionSheet2 = tmp(7247);
 let closure_7 = MessageConstants.LEGACY_SPOILER_ATTACHMENT_PREFIX;
 let MessageAttachmentFlags = Constants.MessageAttachmentFlags;
 ({ jsx: c9, jsxs: c10 } = Fragment);
@@ -520,7 +520,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAttach
   ({ bottomSheetClose: c2, bottomSheetRef } = bottomSheetRef1);
   const tmp4 = attachment;
   const filename = attachment.filename;
-  const tmp5 = attachment(8683)(attachment);
+  const tmp5 = attachment(8695)(attachment);
   const startsWithResult = filename.startsWith(c7);
   let obj2 = first2;
   let str = attachment.description;

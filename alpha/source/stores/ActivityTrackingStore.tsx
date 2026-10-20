@@ -1,16 +1,16 @@
-// Module ID: 14853
-// Function ID: 14854
+// Module ID: 14871
+// Function ID: 14872
 // Name: ActivityTrackingStore
-// Dependencies: [2021, 1246, 502, 2040, 2044, 5676, 4851, 1087, 1104, 510, 7453, 11103, 4795, 7763, 504, 584, 2]
+// Dependencies: [2021, 1246, 502, 2040, 2044, 5676, 4851, 1087, 1104, 510, 7456, 11115, 4795, 7767, 504, 584, 2]
 
-// Module 14853 (ActivityTrackingStore)
+// Module 14871 (ActivityTrackingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import GameAnalyticsUtils from "GameAnalyticsUtils" /* 7763 */;
-import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11103 */;
+import GameAnalyticsUtils from "GameAnalyticsUtils" /* 7767 */;
+import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11115 */;
 import RunningGameStore from "RunningGameStore" /* 2021 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

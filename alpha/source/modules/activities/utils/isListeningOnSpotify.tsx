@@ -1,12 +1,12 @@
-// Module ID: 10569
-// Function ID: 10570
+// Module ID: 10580
+// Function ID: 10581
 // Name: isListeningOnSpotify
-// Dependencies: [1087, 8748, 6456, 2]
+// Dependencies: [1087, 8760, 6459, 2]
 // Exports: default
 
-// Module 10569 (isListeningOnSpotify)
-import PlatformsDefault from "Platforms" /* 6456 */;
-import SpotifyConstants from "SpotifyConstants" /* 8748 */;
+// Module 10580 (isListeningOnSpotify)
+import PlatformsDefault from "Platforms" /* 6459 */;
+import SpotifyConstants from "SpotifyConstants" /* 8760 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

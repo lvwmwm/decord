@@ -1,9 +1,9 @@
-// Module ID: 12882
-// Function ID: 12883
+// Module ID: 12900
+// Function ID: 12901
 // Name: useTextareaPlaceholderAndLabels
 // Dependencies: [1087, 558, 576, 5565, 1128, 2]
 
-// Module 12882 (useTextareaPlaceholderAndLabels)
+// Module 12900 (useTextareaPlaceholderAndLabels)
 import react from "react" /* 576 */;
 import intl15 from "intl" /* 1128 */;
 import useChannelNameDefault from "useChannelName" /* 5565 */;

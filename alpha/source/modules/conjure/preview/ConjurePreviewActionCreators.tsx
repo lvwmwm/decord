@@ -1,17 +1,17 @@
-// Module ID: 11031
-// Function ID: 11032
+// Module ID: 11043
+// Function ID: 11044
 // Name: ConjurePreviewActionCreators
-// Dependencies: [6721, 11032, 11033, 6722, 584, 11056, 11069, 2]
+// Dependencies: [6724, 11044, 11045, 6725, 584, 11068, 11081, 2]
 // Exports: pauseConjurePreview, reloadConjureAppFrames, reloadConjureProjectFrames, resumeConjurePreview, setBuilderPreviewApplicationId, setBuilderPreviewLandscape, setBuilderPreviewMobile, wakeConjurePreview
 
-// Module 11031 (ConjurePreviewActionCreators)
+// Module 11043 (ConjurePreviewActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6722 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11033 */;
-import leaveFrame from "leaveFrame" /* 11056 */;
-import conjurePausedPreviewViews from "conjurePausedPreviewViews" /* 11069 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6721 */;
-import ConjurePreviewPauseStore from "ConjurePreviewPauseStore" /* 11032 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6725 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11045 */;
+import leaveFrame from "leaveFrame" /* 11068 */;
+import conjurePausedPreviewViews from "conjurePausedPreviewViews" /* 11081 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6724 */;
+import ConjurePreviewPauseStore from "ConjurePreviewPauseStore" /* 11044 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/preview/ConjurePreviewActionCreators.tsx");
@@ -33,7 +33,7 @@ export const reloadConjureProjectFrames = function reloadConjureProjectFrames(ar
       if (prop == null) {
         prop = null;
       }
-      const tmp2Result = tmp2(11033);
+      const tmp2Result = tmp2(11045);
       tmp2Result.reloadAppFrames(prop);
     }
   }

@@ -1,9 +1,9 @@
-// Module ID: 11501
-// Function ID: 11502
+// Module ID: 11512
+// Function ID: 11513
 // Name: KrispLogo
-// Dependencies: [19, 17, 1207, 1087, 21, 2068, 1267, 1128, 5622, 558, 576, 504, 4952, 11502, 11503, 5631, 5195, 2]
+// Dependencies: [19, 17, 1207, 1087, 21, 2068, 1267, 1128, 5622, 558, 576, 504, 4952, 11513, 11514, 5631, 5195, 2]
 
-// Module 11501 (KrispLogo)
+// Module 11512 (KrispLogo)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
@@ -79,10 +79,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispLogo() 
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   const tmpResult2 = shared;
   if (tmpResult2.isThemeLight(stateFromStores)) {
-    tmp8Result = tmp8(11502);
+    tmp8Result = tmp8(11513);
     tmp10 = tmp8;
   } else {
-    tmp8Result = tmp8(11503);
+    tmp8Result = tmp8(11514);
     tmp10 = tmp8;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
@@ -147,10 +147,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispLogo() 
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   const obj2 = shared;
   if (obj2.isThemeLight(stateFromStores)) {
-    tmp4Result = tmp4(11502);
+    tmp4Result = tmp4(11513);
     tmp6 = tmp4;
   } else {
-    tmp4Result = tmp4(11503);
+    tmp4Result = tmp4(11514);
     tmp6 = tmp4;
   }
   const obj3 = { style: closure_12.detailsView, children: items1 };

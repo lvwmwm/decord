@@ -1,271 +1,148 @@
 // Module ID: 12426
 // Function ID: 12427
-// Dependencies: [41, 42, 12427, 12413, 12424, 12432]
-// Exports: getStackAsyncContextStrategy
+// Dependencies: []
+// Exports: getFramesFromEvent, getFunctionName, stackParserFromStackParserOptions
 
 // Module 12426
-import _mod12413 from "module_12413" /* 12413 */;
-import _mod12424 from "module_12424" /* 12424 */;
-import _mod12427 from "module_12427" /* 12427 */;
-import _mod12432 from "module_12432" /* 12432 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+let filename;
 
-const require = globalThis.__r;
-let _require;
-
-function withScope(arg0) {
-  const obj = _mod12424;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12424;
-  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-  let stack = sentryCarrier.stack;
-  if (!stack) {
-    const tmpResult = _mod12432;
-    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-    const self = this;
-    const self2 = this;
-    const tmpResult2 = _mod12432;
-    stack = new c3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-  }
-  sentryCarrier.stack = stack;
-  return stack.withScope(arg0);
-}
-function withSetScope(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  const obj = _mod12424;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12424;
-  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-  let stack = sentryCarrier.stack;
-  if (!stack) {
-    const tmpResult = _mod12432;
-    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-    const self = this;
-    const self2 = this;
-    const tmpResult2 = _mod12432;
-    stack = new c3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-  }
-  sentryCarrier.stack = stack;
-  return stack.withScope(() => {
-    stack.getStackTop().scope = scope;
-    return closure_1(scope);
-  });
-}
-function withIsolationScope(arg0) {
-  let closure_0;
-  _require = arg0;
-  const obj = require("module_12424");
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = require("module_12424");
-  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-  let stack = sentryCarrier.stack;
-  if (!stack) {
-    const tmpResult = require("module_12432");
-    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-    const self = this;
-    const self2 = this;
-    const tmpResult2 = require("module_12432");
-    stack = new closure_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-  }
-  sentryCarrier.stack = stack;
-  return stack.withScope(function() {
-    const obj = require("module_12424");
-    const mainCarrier = obj.getMainCarrier();
-    const obj2 = require("module_12424");
-    const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-    let stack = sentryCarrier.stack;
-    const tmp = closure_0;
-    if (!stack) {
-      const tmp2Result = require("module_12432");
-      const defaultCurrentScope = tmp2Result.getDefaultCurrentScope();
-      const self = this;
-      const self2 = this;
-      const tmp2Result2 = require("module_12432");
-      stack = new closure_2_3(defaultCurrentScope, tmp2Result2.getDefaultIsolationScope());
+function createStackParser() {
+  let items = [...arguments];
+  const sorted = items.sort((arg0, arg1) => arg0[0] - arg1[0]);
+  let closure_0 = sorted.map((item) => item[1]);
+  return (str) => {
+    let num = arg1;
+    if (arg1 === undefined) {
+      num = 0;
     }
-    sentryCarrier.stack = stack;
-    return tmp(stack.getIsolationScope());
-  });
-}
-class AsyncContextStack {
-  constructor(arg0, arg1) {
-    const self = this;
-    let scope = arg0;
-    _classCallCheck(this, AsyncContextStack);
-    if (!arg0) {
-      const self2 = this;
-      const self3 = this;
-      scope = new _mod12427.Scope();
+    let num2 = arg2;
+    if (arg2 === undefined) {
+      num2 = 0;
     }
-    let scope1 = arg1;
-    if (!scope1) {
-      const self4 = this;
-      const self5 = this;
-      scope1 = new _mod12427.Scope();
-    }
-    const items = [{ scope }];
-    self._stack = items;
-    self._isolationScope = scope1;
-  }
-}
-const entry = {
-  key: "withScope",
-  value: function withScope(fn) {
-    const self = this;
-    try {
-      let nextPromise;
-      const promise = fn(tmp);
-      const obj = _mod12413;
-      if (obj.isThenable(promise)) {
-        nextPromise = promise.then((result) => {
-          self._popScope();
-          return result;
-        }, (arg0) => {
-          self._popScope();
-          throw arg0;
-        });
-      } else {
-        self._popScope();
-        nextPromise = promise;
+    const items = [];
+    const parts = str.split("\n");
+    if (num < parts.length) {
+      while (true) {
+        let arr3 = parts[num];
+        if (arr3.length <= 1024) {
+          let tmp10 = re0;
+          str = arr3;
+          if (re0.test(arr3)) {
+            str = arr3.replace(tmp10, "$1");
+          }
+          if (!str.match(/\S*Error: /)) {
+            for (const item10026 of closure_0) {
+              let item10026Result = item10026(str);
+              if (item10026Result) {
+                let arr = items.push(tmp6);
+                obj.return();
+                break;
+              }
+              continue;
+            }
+            if (items.length >= 50 + num2) {
+              break;
+            }
+          }
+          break;
+        }
+        num = num + 1;
+        if (num >= parts.length) {
+          break;
+        }
       }
-      return nextPromise;
-    } catch (tmp9) {
-      self._popScope();
-      throw tmp9;
+    }
+    return stripSentryFramesAndReverse(items.slice(num2));
+  };
+}
+function stripSentryFramesAndReverse(arg0) {
+  if (arg0.length) {
+    const _Array = Array;
+    const arr = Array.from(arg0);
+    let obj = arr[arr.length - 1];
+    const test = /sentryWrapped/.test;
+    const tmp2 = /sentryWrapped/;
+    if (!obj) {
+      obj = {};
+    }
+    const tmp3 = obj.function || "";
+    if (test(tmp3)) {
+      arr.pop();
+    }
+    const reversed = arr.reverse();
+    let obj2 = arr[arr.length - 1];
+    const test2 = re1.test;
+    const tmp6 = re1;
+    if (!obj2) {
+      obj2 = {};
+    }
+    const tmp7 = obj2.function || "";
+    if (test2(tmp7)) {
+      arr.pop();
+      let obj3 = arr[arr.length - 1];
+      const test3 = tmp6.test;
+      if (!obj3) {
+        obj3 = {};
+      }
+      const tmp9 = obj3.function || "";
+      if (test3(tmp9)) {
+        arr.pop();
+      }
+    }
+    const substr = arr.slice(0, 50);
+    return substr.map((filename) => {
+      const obj = { filename, function: filename.function || "?" };
+      const merged = Object.assign(filename);
+      filename = filename.filename;
+      if (!filename) {
+        filename = (arr[arr.length - 1] || {}).filename;
+      }
+      return obj;
+    });
+  } else {
+    return [];
+  }
+}
+const re0 = /\(error: (.*)\)/;
+const re1 = /captureMessage|captureException/;
+let c4 = "<anonymous>";
+
+export const UNKNOWN_FUNCTION = "?";
+export { createStackParser };
+export const getFramesFromEvent = function getFramesFromEvent(exception) {
+  exception = exception.exception;
+  if (exception) {
+    let items = [];
+    try {
+      const values = exception.values;
+      const item = values.forEach((stacktrace) => {
+        if (stacktrace.stacktrace.frames) {
+          const push = items.push;
+          items = [];
+          HermesBuiltin.arraySpread(items, stacktrace.stacktrace.frames, 0);
+          HermesBuiltin.apply(push, items, items);
+        }
+      });
+      return items;
+    } catch (err) {
     }
   }
 };
-let items = [
-  entry,
-  {
-    key: "getClient",
-    value: function getClient() {
-      return this.getStackTop().client;
-    }
-  },
-  {
-    key: "getScope",
-    value: function getScope() {
-      return this.getStackTop().scope;
-    }
-  },
-  {
-    key: "getIsolationScope",
-    value: function getIsolationScope() {
-      return this._isolationScope;
-    }
-  },
-  {
-    key: "getStackTop",
-    value: function getStackTop() {
-      return this._stack[this._stack.length - 1];
-    }
-  },
-  {
-    key: "_pushScope",
-    value: function _pushScope() {
-      const scope = this.getScope();
-      const cloneResult = scope.clone();
-      const _stack = this._stack;
-      const obj = { client: this.getClient(), scope: cloneResult };
-      _stack.push(obj);
-      return cloneResult;
-    }
-  },
-  {
-    key: "_popScope",
-    value: function _popScope() {
-      let arr = this._stack.length > 1;
-      if (arr) {
-        const _stack = this._stack;
-        arr = _stack.pop();
-      }
-      return arr;
-    }
+export const getFunctionName = function getFunctionName(name) {
+  try {
+    name = name && typeof name === "function" && name.name || c4;
+    return name;
+  } catch (err) {
+    return c4;
   }
-];
-const _moduleResult = _createClass(AsyncContextStack, items);
-let c3 = _moduleResult;
-const AsyncContextStack_export = _moduleResult;
-
-export { AsyncContextStack_export as AsyncContextStack };
-export function getStackAsyncContextStrategy() {
-  let obj = {
-    withIsolationScope,
-    withScope,
-    withSetScope,
-    withSetIsolationScope(arg0, arg1) {
-      let closure_0 = arg1;
-      let tmp = closure_0;
-      let obj = closure_0(closure_1[4]);
-      let mainCarrier = obj.getMainCarrier();
-      let obj2 = closure_0(closure_1[4]);
-      let sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-      let stack = sentryCarrier.stack;
-      if (!stack) {
-        const tmpResult = tmp(closure_1[5]);
-        let defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-        let self = this;
-        let self2 = this;
-        const tmpResult2 = tmp(closure_1[5]);
-        stack = new closure_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-      }
-      sentryCarrier.stack = stack;
-      return stack.withScope(function() {
-        const obj = require("module_12424");
-        const mainCarrier = obj.getMainCarrier();
-        const obj2 = require("module_12424");
-        const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-        let stack = sentryCarrier.stack;
-        const tmp = closure_0;
-        if (!stack) {
-          const tmp2Result = require("module_12432");
-          const defaultCurrentScope = tmp2Result.getDefaultCurrentScope();
-          const self = this;
-          const self2 = this;
-          const tmp2Result2 = require("module_12432");
-          stack = new closure_2_3(defaultCurrentScope, tmp2Result2.getDefaultIsolationScope());
-        }
-        sentryCarrier.stack = stack;
-        return tmp(stack.getIsolationScope());
-      });
-    },
-    getCurrentScope() {
-      const obj = require("module_12424");
-      const mainCarrier = obj.getMainCarrier();
-      const obj2 = require("module_12424");
-      const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-      let stack = sentryCarrier.stack;
-      if (!stack) {
-        const tmpResult = require("module_12432");
-        const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-        const self = this;
-        const self2 = this;
-        const tmpResult2 = require("module_12432");
-        stack = new closure_1_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-      }
-      sentryCarrier.stack = stack;
-      return stack.getScope();
-    },
-    getIsolationScope() {
-      const obj = require("module_12424");
-      const mainCarrier = obj.getMainCarrier();
-      const obj2 = require("module_12424");
-      const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
-      let stack = sentryCarrier.stack;
-      if (!stack) {
-        const tmpResult = require("module_12432");
-        const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
-        const self = this;
-        const self2 = this;
-        const tmpResult2 = require("module_12432");
-        stack = new closure_1_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
-      }
-      sentryCarrier.stack = stack;
-      return stack.getIsolationScope();
-    }
-  };
-  return obj;
-}
+};
+export const stackParserFromStackParserOptions = function stackParserFromStackParserOptions(arg0) {
+  let applyResult = arg0;
+  if (Array.isArray(arg0)) {
+    const items = [];
+    HermesBuiltin.arraySpread(items, arg0, 0);
+    applyResult = HermesBuiltin.apply(createStackParser, items, undefined);
+  }
+  return applyResult;
+};
+export { stripSentryFramesAndReverse };

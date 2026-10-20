@@ -1,50 +1,76 @@
 // Module ID: 10241
 // Function ID: 10242
-// Dependencies: []
-// Exports: zhStringToNumber, zhStringToYear
+// Dependencies: [41, 42, 93, 95, 98, 10144, 10238, 10145, 10151]
 
 // Module 10241
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10144 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 10145 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10151 */;
+import _mod10238 from "module_10238" /* 10238 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-export const zhStringToNumber = function zhStringToNumber(arg0) {
-  let num = 0;
-  let num2 = 0;
-  let num3 = 0;
-  if (0 < arg0.length) {
-    do {
-      let sum;
-      let tmp = arg0[num];
-      if ("\u5341" === tmp) {
-        let result;
-        if (0 === num2) {
-          result = exports.NUMBER[tmp];
-        } else {
-          result = num2 * exports.NUMBER[tmp];
-        }
-        sum = result;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod10238.MONTH_DICTIONARY);
+const regExp = new RegExp("(" + matchAnyPatternResult + ")\\s*(?:[,-]?\\s*(" + _mod10238.YEAR_PATTERN + ")?)?(?=[^\\s\\w]|\\s+[^0-9]|\\s+$|$)", "i");
+class NLMonthNameParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, NLMonthNameParser);
+    const obj = _getPrototypeOf(NLMonthNameParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(NLMonthNameParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingComponents, arg1) {
+      const parsingComponents = createParsingComponents.createParsingComponents();
+      parsingComponents.imply("day", 1);
+      const tmp4 = _mod10238.MONTH_DICTIONARY[arg1[1].toLowerCase(arg1[1])];
+      parsingComponents.assign("month", tmp4);
+      if (arg1[2]) {
+        parsingComponents.assign("year", _mod10238.parseYear(arg1[2]));
       } else {
-        sum = num2 + exports.NUMBER[tmp];
+        parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, 1, tmp4));
       }
-      num = num + 1;
-      num2 = sum;
-      num3 = sum;
-    } while (num < arg0.length);
+      return parsingComponents;
+    }
   }
-  return num3;
-};
-export const zhStringToYear = function zhStringToYear(arg0) {
-  let length;
-  let num = 0;
-  let str = "";
-  let str2 = "";
-  if (0 < arg0.length) {
-    do {
-      str = `${exports.NUMBER[arg0[num]]}`;
-      num = num + 1;
-      str2 = str;
-      length = arg0.length;
-    } while (num < length);
-  }
-  return parseInt(str2);
-};
-export const NUMBER = { "\u96f6": 0, "\u3007": 0, "\u4e00": 1, "\u4e8c": 2, "\u4e24": 2, "\u4e09": 3, "\u56db": 4, "\u4e94": 5, "\u516d": 6, "\u4e03": 7, "\u516b": 8, "\u4e5d": 9, "\u5341": 10 };
-export const WEEKDAY_OFFSET = { "\u5929": 0, "\u65e5": 0, "\u4e00": 1, "\u4e8c": 2, "\u4e09": 3, "\u56db": 4, "\u4e94": 5, "\u516d": 6 };
+];
+
+export default _createClass(NLMonthNameParser, items);

@@ -1,15 +1,15 @@
-// Module ID: 17771
-// Function ID: 17772
+// Module ID: 17790
+// Function ID: 17791
 // Name: useFrameLifecycle
-// Dependencies: [32, 5, 19, 6724, 558, 576, 13666, 11057, 17772, 17773, 6757, 2032, 5584, 2]
+// Dependencies: [32, 5, 19, 6727, 558, 576, 13684, 11069, 17791, 17792, 6760, 2032, 5584, 2]
 
-// Module 17771 (useFrameLifecycle)
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 11057 */;
-import preloadChannelAppFrame from "preloadChannelAppFrame" /* 13666 */;
+// Module 17790 (useFrameLifecycle)
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 11069 */;
+import preloadChannelAppFrame from "preloadChannelAppFrame" /* 13684 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FramesConstants from "FramesConstants" /* 6724 */;
+import FramesConstants from "FramesConstants" /* 6727 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

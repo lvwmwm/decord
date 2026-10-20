@@ -1,9 +1,9 @@
-// Module ID: 10581
-// Function ID: 10582
+// Module ID: 10592
+// Function ID: 10593
 // Name: useDisplayNameStylesAccessibleColors
-// Dependencies: [19, 4946, 558, 576, 504, 1411, 10582, 4942, 683, 2]
+// Dependencies: [19, 4946, 558, 576, 504, 1411, 10593, 4942, 683, 2]
 
-// Module 10581 (useDisplayNameStylesAccessibleColors)
+// Module 10592 (useDisplayNameStylesAccessibleColors)
 import _modDef683 from "module_683" /* 683 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1411 */;
 import ColorUtils from "ColorUtils" /* 4942 */;

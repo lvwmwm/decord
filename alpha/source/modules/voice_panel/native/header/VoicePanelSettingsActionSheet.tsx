@@ -1,15 +1,15 @@
-// Module ID: 18259
-// Function ID: 18260
+// Module ID: 18282
+// Function ID: 18283
 // Name: VoicePanelSettingsActionSheet
-// Dependencies: [19, 21, 4945, 558, 576, 18260, 5226, 5230, 7169, 2]
+// Dependencies: [19, 21, 4945, 558, 576, 18283, 5226, 5230, 7172, 2]
 
-// Module 18259 (VoicePanelSettingsActionSheet)
+// Module 18282 (VoicePanelSettingsActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5226 */;
 import BottomSheetModal from "BottomSheetModal" /* 5230 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7169 */;
-import VoicePanelSettingsOverviewDefault from "VoicePanelSettingsOverview" /* 18260 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7172 */;
+import VoicePanelSettingsOverviewDefault from "VoicePanelSettingsOverview" /* 18283 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

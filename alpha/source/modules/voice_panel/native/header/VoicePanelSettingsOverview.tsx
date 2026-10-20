@@ -1,9 +1,9 @@
-// Module ID: 18260
-// Function ID: 18261
+// Module ID: 18283
+// Function ID: 18284
 // Name: VoicePanelSettingsOverview
-// Dependencies: [19, 4799, 6720, 11246, 502, 4800, 2014, 4880, 1392, 5679, 1087, 5593, 9118, 21, 4945, 587, 558, 576, 18261, 504, 5565, 9136, 9098, 5195, 13989, 1128, 6834, 8511, 7, 5625, 18258, 8771, 6851, 6859, 16654, 14398, 6860, 584, 7241, 4776, 5807, 5672, 10010, 11480, 5171, 18262, 2002, 9121, 9141, 18263, 18226, 18227, 10816, 9085, 18264, 7434, 18265, 9090, 18266, 11202, 11460, 10652, 10653, 2]
+// Dependencies: [19, 4799, 6723, 11257, 502, 4800, 2014, 4880, 1392, 5679, 1087, 5593, 9130, 21, 4945, 587, 558, 576, 18284, 504, 5565, 9148, 9110, 5195, 14007, 1128, 6837, 8515, 7, 5625, 18281, 8783, 6854, 6862, 16673, 14416, 6863, 584, 7244, 4776, 5809, 5672, 10021, 11491, 5171, 18285, 2002, 9133, 9153, 18286, 18249, 18250, 10827, 9097, 18287, 7437, 18288, 9102, 18289, 11213, 11471, 10663, 10664, 2]
 
-// Module 18260 (VoicePanelSettingsOverview)
+// Module 18283 (VoicePanelSettingsOverview)
 import LogAggregator from "LogAggregator" /* 7 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -16,23 +16,23 @@ import Text_Text from "Text/Text" /* 5195 */;
 import CallConstants from "CallConstants" /* 5593 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5625 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5672 */;
-import TableSwitchRow3 from "TableSwitchRow" /* 7241 */;
-import LockIcon from "LockIcon" /* 8511 */;
-import showShareActionSheet from "showShareActionSheet" /* 8771 */;
-import FormComponents from "FormComponents" /* 9085 */;
-import useIsSecureFramesVerified from "useIsSecureFramesVerified" /* 9098 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9118 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9121 */;
-import useIsSecureFramesUIEnabled from "useIsSecureFramesUIEnabled" /* 9136 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10010 */;
-import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 11480 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14398 */;
-import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 18258 */;
-import getChannelInfoSubtitleDefault from "getChannelInfoSubtitle" /* 18261 */;
+import TableSwitchRow3 from "TableSwitchRow" /* 7244 */;
+import LockIcon from "LockIcon" /* 8515 */;
+import showShareActionSheet from "showShareActionSheet" /* 8783 */;
+import FormComponents from "FormComponents" /* 9097 */;
+import useIsSecureFramesVerified from "useIsSecureFramesVerified" /* 9110 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9130 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9133 */;
+import useIsSecureFramesUIEnabled from "useIsSecureFramesUIEnabled" /* 9148 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10021 */;
+import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 11491 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14416 */;
+import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 18281 */;
+import getChannelInfoSubtitleDefault from "getChannelInfoSubtitle" /* 18284 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6720 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11246 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6723 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11257 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
@@ -55,10 +55,10 @@ let closure_20;
 let map1;
 let obj2;
 let tmp;
-const TableRow6 = tmp(6851);
-const TableRowIcon7 = tmp(6859);
-const TableRowArrow = tmp(6860);
-const WrenchIcon = tmp(16654);
+const TableRow6 = tmp(6854);
+const TableRowIcon7 = tmp(6862);
+const TableRowArrow = tmp(6863);
+const WrenchIcon = tmp(16673);
 ({ AnalyticsSections: map1, Permissions: closure_14, RPC_APPLICATION_LOGGING_CATEGORY: closure_15 } = Constants);
 const isStreamParticipant = CallConstants.isStreamParticipant;
 let closure_17 = SecureFramesConstants.SECURE_FRAMES_CALL_VERIFICATION_BOTTOM_SHEET_KEY;
@@ -131,7 +131,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSe
     } else {
       tmp16 = cResult[9];
     }
-    const tmpResult5 = guildId(9136);
+    const tmpResult5 = guildId(9148);
     const isSecureFramesUIEnabled = tmpResult5.useIsSecureFramesUIEnabled(tmp16);
     if (cResult[10] !== channelId) {
       const obj3 = { channelId };
@@ -141,7 +141,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSe
     } else {
       tmp18 = cResult[11];
     }
-    const tmpResult6 = guildId(9098);
+    const tmpResult6 = guildId(9110);
     const isCallSecureFramesVerified = tmpResult6.useIsCallSecureFramesVerified(tmp18);
     if (cResult[12] === tmp15) {
       let tmp20;
@@ -182,7 +182,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSe
                 }
                 const obj4 = { style: tmp4.headerContainer, children: items3 };
                 items3 = [tmp26, tmp29, tmp32];
-                const tmp39 = closure_19(channelId(6834), obj4);
+                const tmp39 = closure_19(channelId(6837), obj4);
                 cResult[28] = tmp4.headerContainer;
                 cResult[29] = tmp26;
                 cResult[30] = tmp29;
@@ -194,8 +194,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSe
               if (tmp33) {
                 const obj5 = { style: tmp4.secureFrames, children: items4 };
                 items4 = [, ];
-                const tmp14Result = channelId(6834);
-                items4[0] = closure_18(guildId(8511).LockIcon, { size: "xxs", color: "status-positive" });
+                const tmp14Result = channelId(6837);
+                items4[0] = closure_18(guildId(8515).LockIcon, { size: "xxs", color: "status-positive" });
                 const obj6 = { variant: "text-xs/medium", color: "status-positive", children: intl2.string(guildId(1128).t["3BogKe"]) };
                 const Text = tmp(5195).Text;
                 intl2 = tmp(1128).intl;
@@ -217,7 +217,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSe
         }
         const obj8 = { style: tmp4.channelTitleWrapper, children: items5 };
         items5 = [tmp20, tmp23];
-        const tmp28 = closure_19(channelId(6834), obj8);
+        const tmp28 = closure_19(channelId(6837), obj8);
         cResult[18] = tmp4.channelTitleWrapper;
         cResult[19] = tmp20;
         cResult[20] = tmp23;
@@ -227,7 +227,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSe
       let tmp24 = isCallSecureFramesVerified;
       if (tmp24) {
         const obj9 = { style: tmp4.secureFramesIcon, size: "xs", accessibilityLabel: intl.string(guildId(1128).t.mR9cf3) };
-        const ShieldLockIcon = tmp(13989).ShieldLockIcon;
+        const ShieldLockIcon = tmp(14007).ShieldLockIcon;
         intl = tmp(1128).intl;
         tmp24 = closure_18(ShieldLockIcon, obj9);
       }
@@ -283,13 +283,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSe
   const obj6 = { style: tmp.channelTitleWrapper, children: items3 };
   items3 = [, ];
   const obj7 = { style: tmp.channelTitle, variant: "heading-lg/bold", lineClamp: 1, accessibilityRole: "header", children: tmp7 };
-  const tmp11 = channelId(6834);
-  const tmp12 = channelId(6834);
+  const tmp11 = channelId(6837);
+  const tmp12 = channelId(6837);
   items3[0] = closure_18(Text_Text.Text, obj7);
   const tmp6 = channelId;
   if (isCallSecureFramesVerified) {
     const obj8 = { style: tmp.secureFramesIcon, size: "xs", accessibilityLabel: intl.string(intl18.t.mR9cf3) };
-    const ShieldLockIcon = tmp2(13989).ShieldLockIcon;
+    const ShieldLockIcon = tmp2(14007).ShieldLockIcon;
     intl = tmp2(1128).intl;
     isCallSecureFramesVerified = tmp13(ShieldLockIcon, obj8);
   }
@@ -300,7 +300,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSe
   if (isSecureFramesUIEnabled) {
     const obj10 = { style: tmp.secureFrames, children: items5 };
     items5 = [, ];
-    const tmp6Result = tmp6(6834);
+    const tmp6Result = tmp6(6837);
     items5[0] = closure_18(LockIcon.LockIcon, { size: "xxs", color: "status-positive" });
     const obj11 = { variant: "text-xs/medium", color: "status-positive", children: intl2.string(intl18.t["3BogKe"]) };
     const Text = tmp2(5195).Text;
@@ -430,7 +430,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { IconComponent: WrenchIcon.WrenchIcon, source: AssetRegistryDefault };
-    const TableRowIcon = tmp(6859).TableRowIcon;
+    const TableRowIcon = tmp(6862).TableRowIcon;
     const tmp13 = authStore5(TableRowIcon, obj2);
     const intl = tmp(1128).intl;
     const stringResult = intl.string(intl18.t["qv5/SP"]);
@@ -609,7 +609,7 @@ const memoResult = react.memo(function VoicePanelSettingsOverview(guildId) {
   const callback4 = stateFromStores1.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { channelId };
-    obj.openLazy(asyncRequire(18262, dependencyMap.paths), closure_17, obj2);
+    obj.openLazy(asyncRequire(18285, dependencyMap.paths), closure_17, obj2);
   }, items10);
   const callback5 = stateFromStores1.useCallback(() => {
     if (null != stateFromStores4) {

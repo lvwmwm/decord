@@ -1,10 +1,10 @@
-// Module ID: 6802
-// Function ID: 6803
+// Module ID: 6805
+// Function ID: 6806
 // Name: ImpersonateActionCreators
-// Dependencies: [4800, 4878, 4860, 4854, 4880, 4851, 6652, 4853, 1087, 4807, 1267, 5673, 4859, 584, 1114, 2]
+// Dependencies: [4800, 4878, 4860, 4854, 4880, 4851, 6655, 4853, 1087, 4807, 1267, 5673, 4859, 584, 1114, 2]
 // Exports: startImpersonating, stopImpersonating, updateImpersonatedChannels, updateImpersonatedData, updateImpersonatedRoles
 
-// Module 6802 (ImpersonateActionCreators)
+// Module 6805 (ImpersonateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import ChannelConstants from "ChannelConstants" /* 4807 */;
@@ -16,7 +16,7 @@ import GuildMemberStore from "GuildMemberStore" /* 4860 */;
 import GuildRoleStore from "GuildRoleStore" /* 4854 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6652 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6655 */;
 import ImpersonateStore from "ImpersonateStore" /* 4853 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

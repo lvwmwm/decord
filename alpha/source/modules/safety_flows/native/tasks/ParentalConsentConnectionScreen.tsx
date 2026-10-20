@@ -1,22 +1,22 @@
-// Module ID: 19139
-// Function ID: 19140
+// Module ID: 19163
+// Function ID: 19164
 // Name: ParentalConsentConnectionScreen
-// Dependencies: [5, 32, 19, 17, 7591, 1392, 7592, 21, 4945, 587, 19130, 19129, 12687, 5224, 18656, 15955, 8068, 504, 15953, 19140, 19124, 5625, 1128, 2822, 5171, 15954, 2002, 19133, 12696, 5932, 19141, 12746, 19142, 5195, 2526, 15956, 2]
+// Dependencies: [5, 32, 19, 17, 7594, 1392, 7595, 21, 4945, 587, 19154, 19153, 12704, 5224, 18679, 15974, 8072, 504, 15972, 19164, 19148, 5625, 1128, 2822, 5171, 15973, 2002, 19157, 12713, 5935, 19165, 12763, 19166, 5195, 2526, 15975, 2]
 // Exports: default
 
-// Module 19139 (ParentalConsentConnectionScreen)
+// Module 19163 (ParentalConsentConnectionScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import _modDef2822 from "module_2822" /* 2822 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7592 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 15953 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7595 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 15972 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7591 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7594 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -242,7 +242,7 @@ export default function ParentalConsentConnectionScreen() {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj = { linkCode: str2, expiresAt: parsed, onRefresh: getLinkCode, title: intl.string(_modDef2822.dMMSA0), body: intl2.format(_modDef2822["6GaRTu"], obj2) };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(15954, dependencyMap.paths);
+    const tmp2 = asyncRequire(15973, dependencyMap.paths);
     intl = intl5.intl;
     intl2 = intl5.intl;
     obj2 = { link };

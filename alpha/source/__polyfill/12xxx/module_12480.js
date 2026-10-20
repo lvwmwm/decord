@@ -1,42 +1,56 @@
 // Module ID: 12480
 // Function ID: 12481
-// Dependencies: [12412, 12433, 12462]
+// Dependencies: [42, 41, 93, 95, 98, 158]
 
 // Module 12480
-import module_12462 from "module_12462" /* 12462 */;
+import _createClass from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
 
-let has, toString;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-const weakMap = new WeakMap();
-
-export const functionToStringIntegration = module_12462.defineIntegration(() => {
-  let obj = {
-    name: "FunctionToString",
-    setupOnce() {
-      toString = Function.prototype.toString;
-      try {
-        const _Function = Function;
-        Function.prototype.toString = function() {
-          const items = [...arguments];
-          const obj = closure_1_0(closure_1_1[0]);
-          const originalFunction = obj.getOriginalFunction(this);
-          has = has.has;
-          let self = this;
-          const obj2 = closure_1_0(closure_1_1[1]);
-          if (has(obj2.getClient())) {
-            self = this;
-            if (undefined !== originalFunction) {
-              self = originalFunction;
-            }
-          }
-          return toString.apply(self, items);
-        };
-      } catch (err) {
-      }
-    },
-    setup(arg0) {
-      const result = weakMap.set(arg0, true);
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+class SentryError {
+  constructor(message) {
+    let constructResult;
+    let str = arg1;
+    if (arg1 === undefined) {
+      str = "warn";
     }
-  };
-  return obj;
-});
+    const self = this;
+    _classCallCheck(this, SentryError);
+    const items = [message];
+    const obj = _getPrototypeOf(SentryError);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.message = message;
+    tmp3Result.logLevel = str;
+    return tmp3Result;
+  }
+}
+_inherits(SentryError, _wrapNativeSuper(Error));
+const SentryError_export = _createClass(SentryError);
+
+export { SentryError_export as SentryError };

@@ -1,11 +1,11 @@
 // Module ID: 10324
 // Function ID: 10325
-// Dependencies: [41, 42, 93, 95, 98, 10157, 10139, 10140]
+// Dependencies: [41, 42, 93, 95, 98, 10168, 10150, 10151]
 
 // Module 10324
-import assignSimilarDate from "assignSimilarDate" /* 10139 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10140 */;
-import now2 from "now" /* 10157 */;
+import assignSimilarDate from "assignSimilarDate" /* 10150 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10151 */;
+import now2 from "now" /* 10168 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -125,13 +125,13 @@ if (!fn) {
   };
 }
 const now = fn(now2);
-const regExp = new RegExp("(nu|idag|imorgon|\u00F6vermorgon|ig\u00E5r|f\u00F6rrg\u00E5r|i\\s*f\u00F6rrg\u00E5r)(?:\\s*(?:p\u00E5\\s*)?(morgonen?|f\u00F6rmiddagen?|middagen?|eftermiddagen?|kv\u00E4llen?|natten?|midnatt))?(?=\\W|$)", "i");
-class SVCasualDateParser {
+const re10 = /(ora|oggi|stasera|questa sera|domani|dmn|ieri\s*sera)(?=\W|$)/i;
+class ITCasualDateParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, SVCasualDateParser);
-    const obj = _getPrototypeOf(SVCasualDateParser);
+    _classCallCheck(this, ITCasualDateParser);
+    const obj = _getPrototypeOf(ITCasualDateParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -143,11 +143,11 @@ class SVCasualDateParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(SVCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ITCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern(arg0) {
-    return regExp;
+    return re10;
   }
 };
 let items = [
@@ -155,172 +155,44 @@ let items = [
   {
     key: "innerExtract",
     value: function innerExtract(refDate, arg1) {
-      let nowResult;
       refDate = refDate.refDate;
-      const str = arg1[1] || "";
-      const formatted = str.toLowerCase();
-      const str2 = arg1[2] || "";
-      const formatted1 = str2.toLowerCase();
+      const str = arg1[0];
+      const str2 = str.toLowerCase();
       const parsingComponents = refDate.createParsingComponents();
-      if ("nu" === formatted) {
-        nowResult = now.now(refDate.reference);
-      } else if ("idag" === formatted) {
-        nowResult = now.today(refDate.reference);
+      if ("ora" === str2) {
+        return now.now(refDate.reference);
+      } else if ("oggi" === str2) {
+        return now.today(refDate.reference);
+      } else if ("ieri" === str2) {
+        return now.yesterday(refDate.reference);
       } else {
-        if ("imorgon" !== formatted) {
-          if ("imorn" !== formatted) {
-            if ("ig\u00E5r" === formatted) {
-              const _Date2 = Date;
-              const self3 = this;
-              const self4 = this;
-              const date = new Date(refDate.getTime());
-              date.setDate(date.getDate() - 1);
-              assignSimilarDate.assignSimilarDate(parsingComponents, date);
-              assignSimilarDate.implySimilarTime(parsingComponents, date);
-              nowResult = parsingComponents;
-            } else if ("f\u00F6rrg\u00E5r" === formatted) {
-              const _Date = Date;
-              const self = this;
-              self2 = this;
-              const date1 = new Date(refDate.getTime());
-              date1.setDate(date1.getDate() - 2);
-              assignSimilarDate.assignSimilarDate(parsingComponents, date1);
-              assignSimilarDate.implySimilarTime(parsingComponents, date1);
-              nowResult = parsingComponents;
-            } else {
-              nowResult = parsingComponents;
+        if ("domani" !== str2) {
+          if ("dmn" !== str2) {
+            if ("stasera" !== str2) {
+              if ("questa sera" !== str2) {
+                if (str2.match(/ieri\s*sera/)) {
+                  let tmp = refDate;
+                  if (refDate.getHours() > 6) {
+                    const _Date = Date;
+                    const self = this;
+                    self2 = this;
+                    const date = new Date(refDate.getTime());
+                    date.setDate(date.getDate() - 1);
+                    tmp = date;
+                  }
+                  assignSimilarDate.assignSimilarDate(parsingComponents, tmp);
+                  parsingComponents.imply("hour", 0);
+                }
+                return parsingComponents;
+              }
             }
+            return now.tonight(refDate.reference);
           }
         }
-        const _Date3 = Date;
-        const self5 = this;
-        const self6 = this;
-        const date2 = new Date(refDate.getTime());
-        date2.setDate(date2.getDate() + 1);
-        assignSimilarDate.assignSimilarDate(parsingComponents, date2);
-        assignSimilarDate.implySimilarTime(parsingComponents, date2);
-        nowResult = parsingComponents;
-      }
-      switch (formatted1) {
-        case "morgon":
-        {
-          nowResult.imply("hour", 6);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          return nowResult;
-        }
-        case "morgonen":
-        {
-          nowResult.imply("hour", 6);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          return nowResult;
-        }
-        case "f\u00F6rmiddag":
-        {
-          nowResult.imply("hour", 9);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "f\u00F6rmiddagen":
-        {
-          nowResult.imply("hour", 9);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "middag":
-        {
-          nowResult.imply("hour", 12);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "middagen":
-        {
-          nowResult.imply("hour", 12);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "eftermiddag":
-        {
-          nowResult.imply("hour", 15);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "eftermiddagen":
-        {
-          nowResult.imply("hour", 15);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "kv\u00E4ll":
-        {
-          nowResult.imply("hour", 20);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "kv\u00E4llen":
-        {
-          nowResult.imply("hour", 20);
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "natt":
-        {
-          if ("midnatt" === formatted1) {
-            nowResult.imply("hour", 0);
-          } else {
-            nowResult.imply("hour", 2);
-          }
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "natten":
-        {
-          if ("midnatt" === formatted1) {
-            nowResult.imply("hour", 0);
-          } else {
-            nowResult.imply("hour", 2);
-          }
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
-        case "midnatt":
-        {
-          if ("midnatt" === formatted1) {
-            nowResult.imply("hour", 0);
-          } else {
-            nowResult.imply("hour", 2);
-          }
-          nowResult.imply("minute", 0);
-          nowResult.imply("second", 0);
-          nowResult.imply("millisecond", 0);
-          break;
-        }
+        return now.tomorrow(refDate.reference);
       }
     }
   }
 ];
 
-export default _createClass(SVCasualDateParser, items);
+export default _createClass(ITCasualDateParser, items);

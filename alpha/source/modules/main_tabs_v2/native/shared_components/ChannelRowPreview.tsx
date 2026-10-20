@@ -1,9 +1,9 @@
-// Module ID: 13568
-// Function ID: 13569
+// Module ID: 13586
+// Function ID: 13587
 // Name: ChannelRowPreview
-// Dependencies: [109, 19, 17, 4890, 21, 558, 576, 8503, 11202, 10565, 10341, 5640, 13254, 9635, 9637, 5214, 11918, 13556, 11921, 10851, 5195, 5166, 4945, 587, 5213, 8552, 8080, 4776, 8076, 9687, 504, 2]
+// Dependencies: [109, 19, 17, 4890, 21, 558, 576, 8507, 11213, 10576, 10352, 5640, 13272, 9648, 9650, 5214, 11932, 13574, 11935, 10862, 5195, 5166, 4945, 587, 5213, 8558, 8084, 4776, 8080, 9700, 504, 2]
 
-// Module 13568 (ChannelRowPreview)
+// Module 13586 (ChannelRowPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import UserSettings from "UserSettings" /* 4776 */;
@@ -12,18 +12,18 @@ import Text_Text from "Text/Text" /* 5195 */;
 import useToken from "useToken" /* 5213 */;
 import useFontScale from "useFontScale" /* 5214 */;
 import LinkIcon2 from "LinkIcon" /* 5640 */;
-import RowGeneratorDefault from "RowGenerator" /* 8076 */;
-import ImageIcon2 from "ImageIcon" /* 8503 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8552 */;
-import PhoneCallIcon2 from "PhoneCallIcon" /* 9635 */;
-import PhoneHangUpIcon2 from "PhoneHangUpIcon" /* 9637 */;
-import AttachmentIcon2 from "AttachmentIcon" /* 10341 */;
-import MusicIcon2 from "MusicIcon" /* 10565 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10851 */;
-import VideoIcon2 from "VideoIcon" /* 11202 */;
-import ChannelListLayout from "ChannelListLayout" /* 11921 */;
-import StickerIcon2 from "StickerIcon" /* 13254 */;
-import useFormattedMessagePreview from "useFormattedMessagePreview" /* 13556 */;
+import RowGeneratorDefault from "RowGenerator" /* 8080 */;
+import ImageIcon2 from "ImageIcon" /* 8507 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8558 */;
+import PhoneCallIcon2 from "PhoneCallIcon" /* 9648 */;
+import PhoneHangUpIcon2 from "PhoneHangUpIcon" /* 9650 */;
+import AttachmentIcon2 from "AttachmentIcon" /* 10352 */;
+import MusicIcon2 from "MusicIcon" /* 10576 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10862 */;
+import VideoIcon2 from "VideoIcon" /* 11213 */;
+import ChannelListLayout from "ChannelListLayout" /* 11935 */;
+import StickerIcon2 from "StickerIcon" /* 13272 */;
+import useFormattedMessagePreview from "useFormattedMessagePreview" /* 13574 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
@@ -38,8 +38,8 @@ let c9;
 let metroImportAll;
 let tmp;
 let tmp2;
-const react_native2 = tmp2(8080);
-const MessagePreviewMarkup = tmp(11918);
+const react_native2 = tmp2(8084);
+const MessagePreviewMarkup = tmp(11932);
 let closure_3 = ["icon"];
 const View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -65,7 +65,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     let tmp51;
     if (cResult[3] !== tmp5) {
       const obj2 = {};
-      const ImageIcon = tmp(8503).ImageIcon;
+      const ImageIcon = tmp(8507).ImageIcon;
       const merged = Object.assign(tmp5);
       const tmp56 = metroImportAll(ImageIcon, obj2);
       cResult[3] = tmp5;
@@ -79,7 +79,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     let tmp45;
     if (cResult[5] !== tmp5) {
       const obj3 = {};
-      const VideoIcon = tmp(11202).VideoIcon;
+      const VideoIcon = tmp(11213).VideoIcon;
       const merged1 = Object.assign(tmp5);
       const tmp50 = metroImportAll(VideoIcon, obj3);
       cResult[5] = tmp5;
@@ -93,7 +93,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     let tmp39;
     if (cResult[7] !== tmp5) {
       const obj4 = {};
-      const MusicIcon = tmp(10565).MusicIcon;
+      const MusicIcon = tmp(10576).MusicIcon;
       const merged2 = Object.assign(tmp5);
       const tmp44 = metroImportAll(MusicIcon, obj4);
       cResult[7] = tmp5;
@@ -107,7 +107,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     let tmp33;
     if (cResult[9] !== tmp5) {
       const obj5 = {};
-      const AttachmentIcon = tmp(10341).AttachmentIcon;
+      const AttachmentIcon = tmp(10352).AttachmentIcon;
       const merged3 = Object.assign(tmp5);
       const tmp38 = metroImportAll(AttachmentIcon, obj5);
       cResult[9] = tmp5;
@@ -135,7 +135,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     let tmp21;
     if (cResult[13] !== tmp5) {
       const obj7 = {};
-      const StickerIcon = tmp(13254).StickerIcon;
+      const StickerIcon = tmp(13272).StickerIcon;
       const merged5 = Object.assign(tmp5);
       const tmp26 = metroImportAll(StickerIcon, obj7);
       cResult[13] = tmp5;
@@ -149,7 +149,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     let tmp15;
     if (cResult[15] !== tmp5) {
       const obj8 = {};
-      const PhoneCallIcon = tmp(9635).PhoneCallIcon;
+      const PhoneCallIcon = tmp(9648).PhoneCallIcon;
       const merged6 = Object.assign(tmp5);
       const tmp20 = metroImportAll(PhoneCallIcon, obj8);
       cResult[15] = tmp5;
@@ -163,7 +163,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     let tmp9;
     if (cResult[17] !== tmp5) {
       const obj9 = {};
-      const PhoneHangUpIcon = tmp(9637).PhoneHangUpIcon;
+      const PhoneHangUpIcon = tmp(9650).PhoneHangUpIcon;
       const merged7 = Object.assign(tmp5);
       const tmp14 = metroImportAll(PhoneHangUpIcon, obj9);
       cResult[17] = tmp5;
@@ -725,7 +725,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeChanne
     gradientStyles,
     gradientColors
   };
-  return closure_8(gifAutoPlay(9687), obj4);
+  return closure_8(gifAutoPlay(9700), obj4);
 });
 let closure_13 = tmp5;
 const memo2 = react.memo;

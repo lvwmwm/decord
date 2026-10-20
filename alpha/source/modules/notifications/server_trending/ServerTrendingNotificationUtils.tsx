@@ -1,10 +1,10 @@
-// Module ID: 16601
-// Function ID: 16602
+// Module ID: 16620
+// Function ID: 16621
 // Name: ServerTrendingNotificationUtils
 // Dependencies: [4893, 1087, 4776, 1267, 2]
 // Exports: onServerTrendingNotificationSettingsChanged
 
-// Module 16601 (ServerTrendingNotificationUtils)
+// Module 16620 (ServerTrendingNotificationUtils)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import UserSettings from "UserSettings" /* 4776 */;

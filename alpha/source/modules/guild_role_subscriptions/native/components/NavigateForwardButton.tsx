@@ -1,15 +1,15 @@
-// Module ID: 16308
-// Function ID: 16309
+// Module ID: 16327
+// Function ID: 16328
 // Name: NavigateForwardButton
-// Dependencies: [19, 21, 4945, 587, 558, 576, 5195, 1202, 16309, 6856, 2]
+// Dependencies: [19, 21, 4945, 587, 558, 576, 5195, 1202, 16328, 6859, 2]
 
-// Module 16308 (NavigateForwardButton)
+// Module 16327 (NavigateForwardButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import Pressables from "Pressables" /* 6856 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16309 */;
+import Pressables from "Pressables" /* 6859 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16328 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;

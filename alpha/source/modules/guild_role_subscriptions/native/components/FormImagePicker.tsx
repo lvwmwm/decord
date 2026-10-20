@@ -1,14 +1,14 @@
-// Module ID: 18989
-// Function ID: 18990
+// Module ID: 19012
+// Function ID: 19013
 // Name: FormImagePicker
-// Dependencies: [109, 5, 19, 17, 21, 4945, 587, 8098, 1452, 8962, 1128, 5631, 11678, 10037, 558, 576, 5195, 5205, 2]
+// Dependencies: [109, 5, 19, 17, 21, 4945, 587, 8102, 1452, 8974, 1128, 5631, 11691, 10048, 558, 576, 5195, 5205, 2]
 
-// Module 18989 (FormImagePicker)
+// Module 19012 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
-import utils_UploadUtilsDefault from "utils/UploadUtils" /* 8098 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8962 */;
+import utils_UploadUtilsDefault from "utils/UploadUtils" /* 8102 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8974 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -168,7 +168,7 @@ class ImagePickerIcon {
       tmp10 = tmp12;
     } else {
       tmp10 = closure_8;
-      tmp12Result = closure_8(tmp9(11678).ImagePlusIcon, {});
+      tmp12Result = closure_8(tmp9(11691).ImagePlusIcon, {});
     }
     items3 = [tmp12Result, ];
     let tmp10Result = null != image && !flag;
@@ -178,7 +178,7 @@ class ImagePickerIcon {
       if (standalone) {
         standalone = tmp.standaloneIcon;
       }
-      obj4 = { style: items4, children: tmp10(image(10037).PencilIcon, { color: "#292b30", size: "sm" }) };
+      obj4 = { style: items4, children: tmp10(image(10048).PencilIcon, { color: "#292b30", size: "sm" }) };
       items4[1] = standalone;
       tmp10Result = tmp10(tmp15, obj4);
     }

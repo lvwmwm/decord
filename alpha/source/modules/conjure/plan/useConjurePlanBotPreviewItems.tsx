@@ -1,23 +1,23 @@
-// Module ID: 12289
-// Function ID: 12290
+// Module ID: 12308
+// Function ID: 12309
 // Name: useConjurePlanBotPreviewItems
-// Dependencies: [19, 2046, 4804, 1406, 1392, 6721, 1087, 558, 576, 504, 8595, 5967, 10125, 5974, 12290, 1128, 3820, 4994, 2]
+// Dependencies: [19, 2046, 4804, 1406, 1392, 6724, 1087, 558, 576, 504, 8607, 5970, 10136, 5977, 12309, 1128, 3820, 4994, 2]
 
-// Module 12289 (useConjurePlanBotPreviewItems)
+// Module 12308 (useConjurePlanBotPreviewItems)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef3820 from "module_3820" /* 3820 */;
 import ChannelRecord from "ChannelRecord" /* 4804 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5967 */;
-import InteractionTypes from "InteractionTypes" /* 5974 */;
-import UserActionCreators from "UserActionCreators" /* 8595 */;
-import createMessage from "createMessage" /* 10125 */;
-import conjurePlanBot from "conjurePlanBot" /* 12290 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5970 */;
+import InteractionTypes from "InteractionTypes" /* 5977 */;
+import UserActionCreators from "UserActionCreators" /* 8607 */;
+import createMessage from "createMessage" /* 10136 */;
+import conjurePlanBot from "conjurePlanBot" /* 12309 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2046 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import UserStore from "UserStore" /* 1392 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6721 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6724 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

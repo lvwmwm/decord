@@ -1,13 +1,13 @@
-// Module ID: 17449
-// Function ID: 17450
+// Module ID: 17468
+// Function ID: 17469
 // Name: FavoritesGuildSuggestionsLoader
-// Dependencies: [19, 17359, 21, 558, 576, 17450, 2]
+// Dependencies: [19, 17378, 21, 558, 576, 17469, 2]
 
-// Module 17449 (FavoritesGuildSuggestionsLoader)
+// Module 17468 (FavoritesGuildSuggestionsLoader)
 import Fragment from "Fragment" /* 21 */;
-import useFavoritesGuildSuggestionCandidatesDefault from "useFavoritesGuildSuggestionCandidates" /* 17450 */;
+import useFavoritesGuildSuggestionCandidatesDefault from "useFavoritesGuildSuggestionCandidates" /* 17469 */;
 import react from "react" /* 19 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17359 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17378 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 16043
-// Function ID: 16044
+// Module ID: 16062
+// Function ID: 16063
 // Name: XboxTwoWayLinkUpsell
-// Dependencies: [19, 1087, 21, 4945, 558, 576, 2068, 16044, 1128, 5631, 16045, 9524, 4784, 2]
+// Dependencies: [19, 1087, 21, 4945, 558, 576, 2068, 16063, 1128, 5631, 16064, 9537, 4784, 2]
 
-// Module 16043 (XboxTwoWayLinkUpsell)
+// Module 16062 (XboxTwoWayLinkUpsell)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2068 */;
 import dismissible_content from "dismissible_content" /* 4784 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9524 */;
-import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 16044 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16045 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9537 */;
+import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 16063 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16064 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -37,7 +37,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxTwoWayLi
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = HelpdeskUtilsDefault;
     const articleURL = obj2.getArticleURL(constants.XBOX_CONNECTION);
-    const OneWayToTwoWayLinkUpsell = tmp(16044).OneWayToTwoWayLinkUpsell;
+    const OneWayToTwoWayLinkUpsell = tmp(16063).OneWayToTwoWayLinkUpsell;
     const intl = tmp(1128).intl;
     const stringResult = intl.string(intl3.t["2okkZV"]);
     const intl2 = tmp(1128).intl;

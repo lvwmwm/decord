@@ -1,9 +1,9 @@
-// Module ID: 10833
-// Function ID: 10834
+// Module ID: 10844
+// Function ID: 10845
 // Name: BlockedPaymentsCountryDisplay
-// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 5166, 1128, 1202, 2068, 4952, 10834, 10835, 5631, 2]
+// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 5166, 1128, 1202, 2068, 4952, 10845, 10846, 5631, 2]
 
-// Module 10833 (BlockedPaymentsCountryDisplay)
+// Module 10844 (BlockedPaymentsCountryDisplay)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -79,9 +79,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
   }
   const tmpResult = shared;
   if (tmpResult.isThemeDark(tmp6)) {
-    tmp5Result2 = tmp5(10834);
+    tmp5Result2 = tmp5(10845);
   } else {
-    tmp5Result2 = tmp5(10835);
+    tmp5Result2 = tmp5(10846);
   }
   if (cResult[4] === tmp4.image) {
     let tmp17;
@@ -142,9 +142,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
   const tmp6 = View;
   const tmp7 = hasOwnProperty;
   if (obj7.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(10834);
+    tmp2Result = tmp2(10845);
   } else {
-    tmp2Result = tmp2(10835);
+    tmp2Result = tmp2(10846);
   }
   items[2] = tmp7(tmp8, obj6);
   return tmp5(tmp6, obj);

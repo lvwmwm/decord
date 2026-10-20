@@ -1,16 +1,16 @@
-// Module ID: 6440
-// Function ID: 6441
+// Module ID: 6443
+// Function ID: 6444
 // Name: EmbedUtils
-// Dependencies: [1087, 6441, 11, 1405, 12, 2050, 5969, 2]
+// Dependencies: [1087, 6444, 11, 1405, 12, 2050, 5972, 2]
 // Exports: canEmbedLinks, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, isUserProfileArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 6440 (EmbedUtils)
+// Module 6443 (EmbedUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import _modDef2050 from "module_2050" /* 2050 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 5969 */;
-import EmbedConstants from "EmbedConstants" /* 6441 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 5972 */;
+import EmbedConstants from "EmbedConstants" /* 6444 */;
 import Constants from "Constants" /* 1087 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -64,6 +64,7 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
   let content_type2;
   let content_type3;
   let content_type4;
+  let content_type5;
   let flags;
   let flags2;
   let flags3;
@@ -118,7 +119,7 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
           const thumbnail3 = footer.thumbnail;
           ({ flags, content_type } = thumbnail3);
           size = { url: null, proxyURL: null, width: null, height: null, placeholder: null, placeholderVersion: null, description: null, srcIsAnimated: hasFlag4(num, constants.IS_ANIMATED), flags, contentType: content_type };
-          ({ url: obj14.url, proxy_url: obj14.proxyURL, width: obj14.width, height: obj14.height, placeholder: obj14.placeholder, placeholder_version: obj14.placeholderVersion, description: obj14.description } = thumbnail3);
+          ({ url: obj15.url, proxy_url: obj15.proxyURL, width: obj15.width, height: obj15.height, placeholder: obj15.placeholder, placeholder_version: obj15.placeholderVersion, description: obj15.description } = thumbnail3);
           num = flags;
           hasFlag4 = FlagUtils.hasFlag;
           FlagUtils;
@@ -239,6 +240,12 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
       obj.video = size4;
     }
   }
+  const tmp37 = null != footer.audio && null != footer.audio.proxy_url;
+  if (tmp37) {
+    const obj9 = { url: footer.audio.url, proxyURL: footer.audio.proxy_url, contentType: content_type5, description: footer.audio.description };
+    content_type5 = footer.audio.content_type;
+    obj.audio = obj9;
+  }
   if (set.has(obj.type)) {
     let fields = footer.fields;
     if (fields == null) {
@@ -249,13 +256,13 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
     obj.fields = [];
   }
   if (null != footer.components) {
-    const obj13 = InteractionComponentUtils;
-    const transformComponentsResult = obj13.transformComponents(footer.components);
-    let tmp38;
+    const obj14 = InteractionComponentUtils;
+    const transformComponentsResult = obj14.transformComponents(footer.components);
+    let tmp39;
     if (transformComponentsResult.length > 0) {
-      tmp38 = transformComponentsResult;
+      tmp39 = transformComponentsResult;
     }
-    obj.components = tmp38;
+    obj.components = tmp39;
   }
   return obj;
 };

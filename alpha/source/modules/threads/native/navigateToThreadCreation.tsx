@@ -1,12 +1,12 @@
-// Module ID: 13146
-// Function ID: 13147
+// Module ID: 13164
+// Function ID: 13165
 // Name: navigateToThreadCreation
-// Dependencies: [8231, 5111, 5669, 2]
+// Dependencies: [8235, 5111, 5669, 2]
 // Exports: navigateToThreadCreation
 
-// Module 13146 (navigateToThreadCreation)
+// Module 13164 (navigateToThreadCreation)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5111 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8231 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8235 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;

@@ -1,19 +1,19 @@
-// Module ID: 13364
-// Function ID: 13365
+// Module ID: 13382
+// Function ID: 13383
 // Name: ChatPlaceholder
-// Dependencies: [19, 17, 9697, 21, 4945, 587, 558, 576, 1633, 5554, 1499, 13365, 13366, 13367, 5014, 2]
+// Dependencies: [19, 17, 9710, 21, 4945, 587, 558, 576, 1633, 5554, 1499, 13383, 13384, 13385, 5014, 2]
 
-// Module 13364 (ChatPlaceholder)
+// Module 13382 (ChatPlaceholder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9697 */;
-import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 13365 */;
-import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 13366 */;
-import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 13367 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9710 */;
+import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 13383 */;
+import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 13384 */;
+import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 13385 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 15950
-// Function ID: 15951
+// Module ID: 15969
+// Function ID: 15970
 // Name: FamilyCenterActivityBanner
-// Dependencies: [19, 17, 21, 4945, 558, 576, 8068, 8069, 15951, 587, 1128, 2526, 12690, 15958, 15959, 5631, 5195, 2]
+// Dependencies: [19, 17, 21, 4945, 558, 576, 8072, 8073, 15970, 587, 1128, 2526, 12707, 15977, 15978, 5631, 5195, 2]
 
-// Module 15950 (FamilyCenterActivityBanner)
+// Module 15969 (FamilyCenterActivityBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,9 +11,9 @@ import intl5 from "intl" /* 1128 */;
 import _modDef2526 from "module_2526" /* 2526 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import useUserLinks from "useUserLinks" /* 8068 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8069 */;
-import useAgeSpecificText3 from "useAgeSpecificText" /* 12690 */;
+import useUserLinks from "useUserLinks" /* 8072 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8073 */;
+import useAgeSpecificText3 from "useAgeSpecificText" /* 12707 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -26,7 +26,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const FamilyCenterBannerButton = tmp(15951);
+const FamilyCenterBannerButton = tmp(15970);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -139,7 +139,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   }
   const tmpResult2 = useAgeSpecificText3;
   const ageSpecificText1 = tmpResult2.useAgeSpecificText(tmp13, tmp14);
-  const tmp4Result = importDefault(tmp5 ? 15958 : 15959);
+  const tmp4Result = importDefault(tmp5 ? 15977 : 15978);
   if (cResult[4] === tmp6.art) {
     let tmp19;
     if (cResult[5] === tmp4Result) {
@@ -230,7 +230,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const intl4 = intl5.intl;
   const obj2 = { style: tmp4.container, children: items };
   const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.format(_modDef2526.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
-  const obj3 = { source: importDefault(tmp3 ? 15958 : 15959), style: tmp4.art };
+  const obj3 = { source: importDefault(tmp3 ? 15977 : 15978), style: tmp4.art };
   const tmp16 = FastImageDefault;
   items = [React3(tmp16, obj3), , , ];
   const obj4 = { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText };

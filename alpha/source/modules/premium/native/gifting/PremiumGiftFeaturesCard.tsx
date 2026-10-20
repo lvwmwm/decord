@@ -1,9 +1,9 @@
-// Module ID: 10424
-// Function ID: 10425
+// Module ID: 10435
+// Function ID: 10436
 // Name: PremiumGiftFeaturesCard
-// Dependencies: [109, 19, 17, 9437, 1394, 1098, 21, 587, 4945, 6599, 558, 576, 10413, 504, 9718, 10425, 10426, 9732, 9730, 1128, 5195, 9737, 5205, 9342, 10427, 10412, 10428, 10429, 5653, 2034, 10430, 4999, 5219, 2]
+// Dependencies: [109, 19, 17, 9449, 1394, 1098, 21, 587, 4945, 6602, 558, 576, 10424, 504, 9731, 10436, 10437, 9745, 9743, 1128, 5195, 9750, 5205, 9354, 10438, 10423, 10439, 10440, 5653, 2034, 10441, 4999, 5219, 2]
 
-// Module 10424 (PremiumGiftFeaturesCard)
+// Module 10435 (PremiumGiftFeaturesCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,21 +11,21 @@ import intl5 from "intl" /* 1128 */;
 import StringUtils from "StringUtils" /* 2034 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
 import LinearGradientDefault from "LinearGradient" /* 5219 */;
-import TextStylesDefault from "TextStyles" /* 6599 */;
-import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9342 */;
-import usePremiumFeaturesDefault from "usePremiumFeatures" /* 9718 */;
-import PremiumFeaturesWumpusDefault from "PremiumFeaturesWumpus" /* 9732 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 9737 */;
-import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10412 */;
-import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10425 */;
-import useShouldShowGiftingPromotionDecoDefault from "useShouldShowGiftingPromotionDeco" /* 10426 */;
-import MarketingComponentHooks from "MarketingComponentHooks" /* 10427 */;
-import SlayerStorefrontTimeUtils from "SlayerStorefrontTimeUtils" /* 10428 */;
-import PremiumGiftCountdownBadgeDefault from "PremiumGiftCountdownBadge" /* 10429 */;
-import PremiumGiftPromotionDetailsDefault from "PremiumGiftPromotionDetails" /* 10430 */;
+import TextStylesDefault from "TextStyles" /* 6602 */;
+import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9354 */;
+import usePremiumFeaturesDefault from "usePremiumFeatures" /* 9731 */;
+import PremiumFeaturesWumpusDefault from "PremiumFeaturesWumpus" /* 9745 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 9750 */;
+import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10423 */;
+import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10436 */;
+import useShouldShowGiftingPromotionDecoDefault from "useShouldShowGiftingPromotionDeco" /* 10437 */;
+import MarketingComponentHooks from "MarketingComponentHooks" /* 10438 */;
+import SlayerStorefrontTimeUtils from "SlayerStorefrontTimeUtils" /* 10439 */;
+import PremiumGiftCountdownBadgeDefault from "PremiumGiftCountdownBadge" /* 10440 */;
+import PremiumGiftPromotionDetailsDefault from "PremiumGiftPromotionDetails" /* 10441 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 9437 */;
+import PromotionsStore from "PromotionsStore" /* 9449 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Constants from "Constants" /* 1098 */;
 import Fragment from "Fragment" /* 21 */;
@@ -53,7 +53,7 @@ let tmp;
 let tmp19;
 let unpackModuleId;
 const get_initialized = tmp(504);
-const PremiumFeaturesLogoDefault = tmp19(9730);
+const PremiumFeaturesLogoDefault = tmp19(9743);
 let closure_3 = ["premiumType", "onPress", "style", "claimableRewards", "isSelected", "variant"];
 const View = react_native.View;
 ({ PremiumTypes: metroImportDefault, SubscriptionIntervalTypes: metroImportAll } = PremiumConstants);
@@ -369,7 +369,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
   } else {
     first = cResult[0];
   }
-  const GiftPromotionReminderExperiment = tmp(10412).GiftPromotionReminderExperiment;
+  const GiftPromotionReminderExperiment = tmp(10423).GiftPromotionReminderExperiment;
   const enabled = GiftPromotionReminderExperiment.useConfig(first).enabled;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [PromotionsStore];

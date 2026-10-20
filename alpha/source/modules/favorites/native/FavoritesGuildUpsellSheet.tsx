@@ -1,17 +1,17 @@
-// Module ID: 10642
-// Function ID: 10643
+// Module ID: 10653
+// Function ID: 10654
 // Name: FavoritesGuildUpsellSheet
-// Dependencies: [19, 4813, 1087, 21, 558, 576, 10640, 10643, 5171, 10641, 1128, 3402, 10644, 5205, 9707, 9708, 10648, 1114, 6644, 10649, 2]
+// Dependencies: [19, 4813, 1087, 21, 558, 576, 10651, 10654, 5171, 10652, 1128, 3402, 10655, 5205, 9720, 9721, 10659, 1114, 6647, 10660, 2]
 
-// Module 10642 (FavoritesGuildUpsellSheet)
+// Module 10653 (FavoritesGuildUpsellSheet)
 import Constants from "Constants" /* 1087 */;
 import router_utils from "router_utils" /* 1114 */;
 import _modDef3402 from "module_3402" /* 3402 */;
 import FavoritesConstants from "FavoritesConstants" /* 4813 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9707 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9708 */;
-import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10643 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10648 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9720 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9721 */;
+import useTrackFavoritesGuildUpsellModalOpenedDefault from "useTrackFavoritesGuildUpsellModalOpened" /* 10654 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10659 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -41,9 +41,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
   const cResult = obj.c(14);
   let FREE_FAVORITE_LIMIT = limit.limit;
   if (undefined === FREE_FAVORITE_LIMIT) {
-    FREE_FAVORITE_LIMIT = tmp(10640).FREE_FAVORITE_LIMIT;
+    FREE_FAVORITE_LIMIT = tmp(10651).FREE_FAVORITE_LIMIT;
   }
-  analyticsLocations = first(10643)().analyticsLocations;
+  analyticsLocations = first(10654)().analyticsLocations;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function s() {
       const obj = first(dependencyMap[8]);
@@ -73,7 +73,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
     tmp8 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp13 = closure_6(analyticsLocations(10644).FavoritesSpotIllustration, {});
+    const tmp13 = closure_6(analyticsLocations(10655).FavoritesSpotIllustration, {});
     cResult[4] = tmp13;
     tmp11 = tmp13;
   } else {
@@ -130,7 +130,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
   if (cResult[9] !== tmp16) {
     const obj5 = { children: items };
     items = [tmp16, tmp19];
-    const tmp24 = closure_7(analyticsLocations(6644).ButtonGroup, obj5);
+    const tmp24 = closure_7(analyticsLocations(6647).ButtonGroup, obj5);
     cResult[9] = tmp16;
     cResult[10] = tmp24;
     tmp22 = tmp24;
@@ -144,7 +144,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
     }
     return tmp25;
   }
-  const tmp26 = closure_6(analyticsLocations(10649).PromoSheet, { title: tmp6, description: tmp8, illustration: tmp11, actions: tmp22 });
+  const tmp26 = closure_6(analyticsLocations(10660).PromoSheet, { title: tmp6, description: tmp8, illustration: tmp11, actions: tmp22 });
   cResult[11] = tmp8;
   cResult[12] = tmp22;
   cResult[13] = tmp26;
@@ -163,20 +163,20 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
   let FREE_FAVORITE_LIMIT = limit.limit;
   if (FREE_FAVORITE_LIMIT === undefined) {
     let tmp2 = dependencyMap;
-    FREE_FAVORITE_LIMIT = analyticsLocations(10640).FREE_FAVORITE_LIMIT;
+    FREE_FAVORITE_LIMIT = analyticsLocations(10651).FREE_FAVORITE_LIMIT;
   }
   analyticsLocations = useTrackFavoritesGuildUpsellModalOpenedDefault().analyticsLocations;
   importDefault = react.useCallback(() => {
     const obj = closure_1(dependencyMap[8]);
     obj.hideActionSheet(analyticsLocations(dependencyMap[9]).FAVORITES_UPSELL_SHEET_KEY);
   }, []);
-  let obj = { title: intl.string(_modDef3402.hINqUs), description: intl2.formatToPlainString(_modDef3402.D7S0Zo, obj2), illustration: closure_6(analyticsLocations(10644).FavoritesSpotIllustration, {}), actions: closure_7(ButtonGroup, obj3) };
-  const PromoSheet = analyticsLocations(10649).PromoSheet;
+  let obj = { title: intl.string(_modDef3402.hINqUs), description: intl2.formatToPlainString(_modDef3402.D7S0Zo, obj2), illustration: closure_6(analyticsLocations(10655).FavoritesSpotIllustration, {}), actions: closure_7(ButtonGroup, obj3) };
+  const PromoSheet = analyticsLocations(10660).PromoSheet;
   intl = analyticsLocations(1128).intl;
   intl2 = analyticsLocations(1128).intl;
   obj2 = { count: FREE_FAVORITE_LIMIT, maxCount: MAX_FAVORITE_CHANNELS };
   obj3 = { children: items };
-  ButtonGroup = analyticsLocations(6644).ButtonGroup;
+  ButtonGroup = analyticsLocations(6647).ButtonGroup;
   const obj4 = {
     size: "lg",
     variant: "primary",

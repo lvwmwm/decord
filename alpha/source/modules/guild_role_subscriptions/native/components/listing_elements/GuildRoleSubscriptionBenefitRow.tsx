@@ -1,14 +1,14 @@
-// Module ID: 16329
-// Function ID: 16330
+// Module ID: 16348
+// Function ID: 16349
 // Name: GuildRoleSubscriptionBenefitRow
-// Dependencies: [19, 17, 4800, 21, 4945, 4894, 558, 576, 16327, 1202, 5195, 504, 5565, 1128, 8447, 2]
+// Dependencies: [19, 17, 4800, 21, 4945, 4894, 558, 576, 16346, 1202, 5195, 504, 5565, 1128, 8451, 2]
 
-// Module 16329 (GuildRoleSubscriptionBenefitRow)
+// Module 16348 (GuildRoleSubscriptionBenefitRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1202 */;
 import useChannelNameDefault from "useChannelName" /* 5565 */;
-import EmojiIconDefault from "EmojiIcon" /* 16327 */;
+import EmojiIconDefault from "EmojiIcon" /* 16346 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import Fragment from "Fragment" /* 21 */;
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelBenef
     let tmp15;
     ({ channelTitle, channelIcon } = tmp4);
     if (cResult[5] !== stateFromStores) {
-      const tmpResult2 = benefit(8447);
+      const tmpResult2 = benefit(8451);
       const channelIcon1 = tmpResult2.getChannelIcon(stateFromStores);
       cResult[5] = stateFromStores;
       cResult[6] = channelIcon1;
@@ -289,7 +289,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelBenef
     const obj3 = { style: tmp.channelTitle, children: items2 };
     const obj4 = { style: tmp.channelIcon, size: benefit(1202).Icon.Sizes.CUSTOM, source: tmp2Result.getChannelIcon(stateFromStores) };
     const Icon = tmp2(1202).Icon;
-    tmp2Result = benefit(8447);
+    tmp2Result = benefit(8451);
     items2 = [closure_5(Icon, obj4), ];
     const obj5 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: tmp6 };
     items2[1] = closure_5(benefit(5195).Text, obj5);

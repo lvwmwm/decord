@@ -1,12 +1,12 @@
-// Module ID: 8899
-// Function ID: 8900
+// Module ID: 8911
+// Function ID: 8912
 // Name: useAppChannelApplicationOptions
-// Dependencies: [19, 558, 576, 8900, 5587, 6757, 2]
+// Dependencies: [19, 558, 576, 8912, 5587, 6760, 2]
 
-// Module 8899 (useAppChannelApplicationOptions)
+// Module 8911 (useAppChannelApplicationOptions)
 import react2 from "react" /* 576 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6757 */;
-import useGuildEmbeddedApplications2 from "useGuildEmbeddedApplications" /* 8900 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6760 */;
+import useGuildEmbeddedApplications2 from "useGuildEmbeddedApplications" /* 8912 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

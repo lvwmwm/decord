@@ -1,22 +1,22 @@
-// Module ID: 5807
-// Function ID: 5808
+// Module ID: 5809
+// Function ID: 5810
 // Name: AudioActionCreators
-// Dependencies: [5, 5808, 5811, 4800, 2014, 5676, 4851, 1392, 1087, 5812, 5680, 3, 1267, 551, 584, 5813, 5788, 5817, 5834, 2]
+// Dependencies: [5, 5810, 5813, 4800, 2014, 5676, 4851, 1392, 1087, 5814, 5680, 3, 1267, 551, 584, 5815, 5790, 5819, 5836, 2]
 
-// Module 5807 (AudioActionCreators)
+// Module 5809 (AudioActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import debounceDefault from "debounce" /* 551 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import Constants2 from "Constants" /* 5680 */;
-import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 5788 */;
-import Constants3 from "Constants" /* 5812 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 5813 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 5817 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 5834 */;
+import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 5790 */;
+import Constants3 from "Constants" /* 5814 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 5815 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 5819 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 5836 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SpatialAudioStore from "SpatialAudioStore" /* 5808 */;
-import CertifiedDeviceStore from "CertifiedDeviceStore" /* 5811 */;
+import SpatialAudioStore from "SpatialAudioStore" /* 5810 */;
+import CertifiedDeviceStore from "CertifiedDeviceStore" /* 5813 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5676 */;

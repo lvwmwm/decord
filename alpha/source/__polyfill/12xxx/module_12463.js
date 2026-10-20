@@ -1,56 +1,41 @@
 // Module ID: 12463
 // Function ID: 12464
-// Dependencies: [42, 41, 93, 95, 98, 158]
+// Dependencies: [12451, 12423]
+// Exports: parseSampleRate
 
 // Module 12463
-import _createClass from "_createClass" /* 42 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import map from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
+import _mod12451 from "module_12451" /* 12451 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class SentryError {
-  constructor(message) {
-    let constructResult;
-    let str = arg1;
-    if (arg1 === undefined) {
-      str = "warn";
+export const parseSampleRate = function parseSampleRate(flag) {
+  if (typeof flag === "boolean") {
+    const _Number = Number;
+    return Number(flag);
+  } else {
+    let parsed = flag;
+    if (typeof flag === "string") {
+      const _parseFloat = parseFloat;
+      parsed = parseFloat(flag);
     }
-    const self = this;
-    _classCallCheck(this, SentryError);
-    const items = [message];
-    const obj = _getPrototypeOf(SentryError);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
+    if (typeof parsed === "number") {
+      const _isNaN = isNaN;
+      if (!isNaN(parsed)) {
+        if (parsed >= 0) {
+          if (parsed <= 1) {
+            return parsed;
+          }
+        }
+      }
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.message = message;
-    tmp3Result.logLevel = str;
-    return tmp3Result;
+    const tmp = require;
+    if (_mod12451.DEBUG_BUILD) {
+      const logger = tmp(12423).logger;
+      const _JSON = JSON;
+      const warn = logger.warn;
+      const json = JSON.stringify(flag);
+      const _JSON2 = JSON;
+      const _HermesInternal = HermesInternal;
+      warn("[Tracing] Given sample rate is invalid. Sample rate must be a boolean or a number between 0 and 1. Got " + json + " of type " + JSON.stringify(typeof flag) + ".");
+    }
   }
-}
-_inherits(SentryError, _wrapNativeSuper(Error));
-const SentryError_export = _createClass(SentryError);
-
-export { SentryError_export as SentryError };
+};

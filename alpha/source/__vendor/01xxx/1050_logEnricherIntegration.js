@@ -229,7 +229,7 @@ export const logEnricherIntegration = () => {
         });
         promise.then(() => {
           on.on("beforeCaptureLog", (attributes) => {
-            const f86166 = (item) => {
+            const f86266 = (item) => {
               let tmp2 = typeof tmp !== "string";
               if (typeof attributes3[item] !== "string") {
                 tmp2 = typeof tmp !== "number";
@@ -267,7 +267,7 @@ export const logEnricherIntegration = () => {
                   }
                   const _Object = Object;
                   const keys = Object.keys(attributes1);
-                  const item = keys.forEach(f86166);
+                  const item = keys.forEach(f86266);
                 }
               }
               const tmpResult = tmp(tmp2[0]);
@@ -290,7 +290,7 @@ export const logEnricherIntegration = () => {
                   }
                   const _Object2 = Object;
                   const keys1 = Object.keys(attributes2);
-                  const item1 = keys1.forEach(f86166);
+                  const item1 = keys1.forEach(f86266);
                 }
               }
               const tmpResult2 = tmp(tmp2[0]);
@@ -313,7 +313,7 @@ export const logEnricherIntegration = () => {
                   }
                   const _Object3 = Object;
                   const keys2 = Object.keys(attributes3);
-                  const item2 = keys2.forEach(f86166);
+                  const item2 = keys2.forEach(f86266);
                 }
               }
               const _Object4 = Object;

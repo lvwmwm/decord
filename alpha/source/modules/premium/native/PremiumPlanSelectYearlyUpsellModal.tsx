@@ -1,22 +1,22 @@
-// Module ID: 14664
-// Function ID: 14665
+// Module ID: 14682
+// Function ID: 14683
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [32, 19, 17, 2069, 7470, 14651, 1394, 1098, 21, 4945, 6599, 6655, 558, 576, 7464, 504, 1903, 5631, 14665, 1202, 1128, 5205, 5933, 2054, 2]
+// Dependencies: [32, 19, 17, 2069, 7473, 14669, 1394, 1098, 21, 4945, 6602, 6658, 558, 576, 7467, 504, 1903, 5631, 14683, 1202, 1128, 5205, 5936, 2054, 2]
 
-// Module 14664 (PremiumPlanSelectYearlyUpsellModal)
+// Module 14682 (PremiumPlanSelectYearlyUpsellModal)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1098 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import AlertDefault from "Alert" /* 5933 */;
-import TextStylesDefault from "TextStyles" /* 6599 */;
-import LegacyTokens from "LegacyTokens" /* 6655 */;
-import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 14651 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14665 */;
+import AlertDefault from "Alert" /* 5936 */;
+import TextStylesDefault from "TextStyles" /* 6602 */;
+import LegacyTokens from "LegacyTokens" /* 6658 */;
+import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 14669 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14683 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2069 */;
-import IAPStore from "IAPStore" /* 7470 */;
+import IAPStore from "IAPStore" /* 7473 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -266,7 +266,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
   const tmp2 = usePremiumPlanSelectStore((isPurchasing) => isPurchasing.isPurchasing);
   [tmp4, c3] = _slicedToArray(react.useState(null), 2);
   const tmp3 = _slicedToArray(react.useState(null), 2);
-  const obj2 = productId(7464);
+  const obj2 = productId(7467);
   const premiumBundledItemsFromProductId = obj2.getPremiumBundledItemsFromProductId(productId);
   let items = [LocaleStore];
   const obj3 = productId(504);

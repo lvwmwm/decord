@@ -1,16 +1,16 @@
-// Module ID: 12913
-// Function ID: 12914
+// Module ID: 12931
+// Function ID: 12932
 // Name: ForumPostMessageCount
-// Dependencies: [19, 17, 21, 4945, 587, 1384, 558, 576, 9640, 1128, 8487, 5195, 10807, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 1384, 558, 576, 9653, 1128, 8491, 5195, 10818, 2]
 
-// Module 12913 (ForumPostMessageCount)
+// Module 12931 (ForumPostMessageCount)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import ChatIcon2 from "ChatIcon" /* 8487 */;
-import ForumHooks from "ForumHooks" /* 9640 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 10807 */;
+import ChatIcon2 from "ChatIcon" /* 8491 */;
+import ForumHooks from "ForumHooks" /* 9653 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 10818 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -196,7 +196,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostM
   intl = tmp2(1128).intl;
   const obj3 = { size: "xs", style: hasUnreads ? tmp.iconUnread : tmp.iconRead, color: str2 };
   str2 = "icon-muted";
-  const ChatIcon = tmp2(8487).ChatIcon;
+  const ChatIcon = tmp2(8491).ChatIcon;
   const tmp6 = View;
   if (hasUnreads) {
     str2 = "interactive-text-default";

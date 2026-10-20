@@ -48,18 +48,18 @@ export const defineProtoSetting = function defineProtoSetting(textAndImages, act
     return tmp(tmp3);
   }
   const obj2 = require("ReactCompilerGating");
-  const f92234 = (favorites) => {
+  const f92335 = (favorites) => {
     let closure_0 = favorites;
     const PreloadedUserSettingsActionCreators = getSetting(explicitContentFromProto[6]).PreloadedUserSettingsActionCreators;
     return PreloadedUserSettingsActionCreators.updateAsync(closure_0, async (arg0) => {
-      arg0[f92234] = explicitContentToProto(favorites, arg0[f92234]);
+      arg0[f92335] = explicitContentToProto(favorites, arg0[f92335]);
     }, closure_4);
   };
   const obj3 = {
     getSetting,
     updateSetting: (fn) => {
       let tmp2 = fn;
-      const tmp = f92240;
+      const tmp = f92341;
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
@@ -121,7 +121,7 @@ export function wrapSettingWithSelectiveSyncing(UserSettingDefinitions, text, in
     },
     updateSetting: (fn) => {
       let tmp2 = fn;
-      const tmp = f92240;
+      const tmp = f92341;
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
@@ -174,17 +174,17 @@ export function wrapSettingWithOverride(arg0, gifAutoPlay, arg2, arg3) {
     },
     updateSetting: (fn) => {
       let tmp2 = fn;
-      const tmp = f92240;
+      const tmp = f92341;
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
       return tmp(tmp2);
     }
   };
-  const f92240 = (arg0) => {
+  const f92341 = (arg0) => {
     let items;
     const obj2 = { type: "USER_SETTINGS_OVERRIDE_CLEAR", settings: items };
-    items = [f92240];
+    items = [f92341];
     const obj = gifAutoPlay(closure_2[7]);
     obj.dispatch(obj2);
     return getSetting.updateSetting(arg0);

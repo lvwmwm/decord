@@ -1,10 +1,10 @@
-// Module ID: 15546
-// Function ID: 15547
+// Module ID: 15564
+// Function ID: 15565
 // Name: getActivitiesModalContextKey
 // Dependencies: [2]
 // Exports: getActivitiesModalContextKey
 
-// Module 15546 (getActivitiesModalContextKey)
+// Module 15564 (getActivitiesModalContextKey)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/getActivitiesModalContextKey.native.tsx");

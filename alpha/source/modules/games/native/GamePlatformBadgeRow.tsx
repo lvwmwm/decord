@@ -1,25 +1,25 @@
-// Module ID: 13082
-// Function ID: 13083
+// Module ID: 13100
+// Function ID: 13101
 // Name: GamePlatformBadgeRow
-// Dependencies: [19, 21, 13083, 9402, 7001, 9530, 9203, 4945, 558, 576, 13084, 5932, 587, 2]
+// Dependencies: [19, 21, 13101, 9414, 7004, 9543, 9215, 4945, 558, 576, 13102, 5935, 587, 2]
 
-// Module 13082 (GamePlatformBadgeRow)
+// Module 13100 (GamePlatformBadgeRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7001 */;
-import RobloxNeutralIcon from "RobloxNeutralIcon" /* 9203 */;
-import ScreenIcon from "ScreenIcon" /* 9402 */;
-import GameControllerIcon from "GameControllerIcon" /* 9530 */;
-import GamePlatformAvailability from "GamePlatformAvailability" /* 13083 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7004 */;
+import RobloxNeutralIcon from "RobloxNeutralIcon" /* 9215 */;
+import ScreenIcon from "ScreenIcon" /* 9414 */;
+import GameControllerIcon from "GameControllerIcon" /* 9543 */;
+import GamePlatformAvailability from "GamePlatformAvailability" /* 13101 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Stack_Stack = tmp(5932);
-const GamePlatformBadges = tmp(13084);
+const Stack_Stack = tmp(5935);
+const GamePlatformBadges = tmp(13102);
 const jsx = Fragment.jsx;
 let obj = {};
 obj[GamePlatformAvailability.GamePlatformAvailability.DESKTOP] = ScreenIcon.ScreenIcon;
@@ -85,7 +85,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     obj = GamePlatformBadges;
     return obj.sortGamePlatformAvailability(platforms);
   }, items);
-  const Stack = platforms(5932).Stack;
+  const Stack = platforms(5935).Stack;
   return <Stack direction="horizontal" align="center" spacing={nativeDefault.space.PX_4} style={tmp.row}>{memo.map((item) => {
     const obj2 = platforms(dependencyMap[10]);
     return <tmp key={arg0} size="xs" color="icon-muted" accessibilityLabel={obj2.getGamePlatformAvailabilityLabel(arg0)} />;

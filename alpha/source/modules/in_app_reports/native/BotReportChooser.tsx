@@ -1,18 +1,18 @@
-// Module ID: 14070
-// Function ID: 14071
+// Module ID: 14088
+// Function ID: 14089
 // Name: BotReportChooser
-// Dependencies: [19, 2046, 21, 558, 576, 5195, 1128, 7244, 7240, 5171, 8051, 504, 6757, 2]
+// Dependencies: [19, 2046, 21, 558, 576, 5195, 1128, 7247, 7243, 5171, 8055, 504, 6760, 2]
 
-// Module 14070 (BotReportChooser)
+// Module 14088 (BotReportChooser)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6757 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 7240 */;
-import ActionSheet2 from "ActionSheet" /* 7244 */;
-import ReportModals from "ReportModals" /* 8051 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6760 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 7243 */;
+import ActionSheet2 from "ActionSheet" /* 7247 */;
+import ReportModals from "ReportModals" /* 8055 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2046 */;
 import Fragment from "Fragment" /* 21 */;
@@ -53,10 +53,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotReportC
   }
   if (cResult[2] !== arg0) {
     const obj4 = { header: tmp5, children: hasOwnProperty(Group, obj5) };
-    const ActionSheet = tmp(7244).ActionSheet;
+    const ActionSheet = tmp(7247).ActionSheet;
     obj5 = { hasIcons: false, children: items };
     const obj6 = {};
-    Group = tmp(7240).ActionSheetRow.Group;
+    Group = tmp(7243).ActionSheetRow.Group;
     const merged = Object.assign(arg0);
     items = [React3(closure_7, obj6), ];
     const obj7 = {};

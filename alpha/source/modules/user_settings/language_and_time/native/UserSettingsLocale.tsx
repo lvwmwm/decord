@@ -1,17 +1,17 @@
-// Module ID: 16512
-// Function ID: 16513
+// Module ID: 16531
+// Function ID: 16532
 // Name: UserSettingsLocale
-// Dependencies: [5, 19, 17, 2070, 2069, 21, 4945, 587, 5824, 558, 576, 504, 1128, 6932, 5631, 16513, 7169, 6933, 2]
+// Dependencies: [5, 19, 17, 2070, 2069, 21, 4945, 587, 5826, 558, 576, 504, 1128, 6935, 5631, 16532, 7172, 6936, 2]
 
-// Module 16512 (UserSettingsLocale)
+// Module 16531 (UserSettingsLocale)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2070 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import TableRadioRow2 from "TableRadioRow" /* 6932 */;
-import flags from "flags" /* 16513 */;
+import TableRadioRow2 from "TableRadioRow" /* 6935 */;
+import flags from "flags" /* 16532 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2069 */;
@@ -151,7 +151,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     cResult[9] = tmp16;
     tmp13 = tmp16;
   }
-  const SafeAreaPaddingView = tmp(7169).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp(7172).SafeAreaPaddingView;
   const tmp12 = <SafeAreaPaddingView bottom>{null}</SafeAreaPaddingView>;
   cResult[4] = stateFromStores;
   cResult[5] = tmp9;

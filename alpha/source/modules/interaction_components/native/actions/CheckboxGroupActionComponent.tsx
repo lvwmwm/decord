@@ -1,11 +1,11 @@
-// Module ID: 18571
-// Function ID: 18572
+// Module ID: 18594
+// Function ID: 18595
 // Name: CheckboxGroupActionComponent
-// Dependencies: [19, 21, 558, 576, 8538, 6848, 6935, 2]
+// Dependencies: [19, 21, 558, 576, 8544, 6851, 6938, 2]
 
-// Module 18571 (CheckboxGroupActionComponent)
+// Module 18594 (CheckboxGroupActionComponent)
 import Fragment from "Fragment" /* 21 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 6848 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 6851 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

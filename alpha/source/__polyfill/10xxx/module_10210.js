@@ -1,12 +1,14 @@
 // Module ID: 10210
 // Function ID: 10211
-// Dependencies: [41, 42, 93, 95, 98, 10152]
+// Dependencies: [41, 42, 93, 95, 98, 10206, 10147, 10151]
 
 // Module 10210
-import _mod10152 from "module_10152" /* 10152 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10147 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10151 */;
+import _mod10206 from "module_10206" /* 10206 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,14 +27,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class JPMergeWeekdayComponentRefiner {
+class FRTimeUnitWithinFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, JPMergeWeekdayComponentRefiner);
-    const obj = _getPrototypeOf(JPMergeWeekdayComponentRefiner);
+    _classCallCheck(this, FRTimeUnitWithinFormatParser);
+    const obj = _getPrototypeOf(FRTimeUnitWithinFormatParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -42,44 +44,24 @@ class JPMergeWeekdayComponentRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(JPMergeWeekdayComponentRefiner, _mod10152.MergingRefiner);
+_inherits(FRTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "mergeResults",
-  value: function mergeResults(arg0, clone, text) {
-    const cloneResult = clone.clone();
-    cloneResult.text = clone.text + arg0 + text.text;
-    const start = cloneResult.start;
-    const start2 = text.start;
-    start.assign("weekday", start2.get("weekday"));
-    if (cloneResult.end) {
-      const end = cloneResult.end;
-      const start3 = text.start;
-      end.assign("weekday", start3.get("weekday"));
-    }
-    return cloneResult;
+  key: "innerPattern",
+  value: function innerPattern() {
+    const regExp = new RegExp("(?:dans|en|pour|pendant|de)\\s*(" + _mod10206.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+    return regExp;
   }
 };
 const items = [
   entry,
   {
-    key: "shouldMergeResults",
-    value: function shouldMergeResults(str, start, start2) {
-      start = start.start;
-      let isCertainResult = start.isCertain("day");
-      if (isCertainResult) {
-        start2 = start2.start;
-        isCertainResult = start2.isOnlyWeekdayComponent();
-      }
-      if (isCertainResult) {
-        const start3 = start2.start;
-        isCertainResult = !start3.isCertain("hour");
-      }
-      if (isCertainResult) {
-        isCertainResult = null !== str.match(/^[,、の]?\s*$/);
-      }
-      return isCertainResult;
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = _mod10206.parseDuration(arg1[1]);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
     }
   }
 ];
 
-export default _createClass(JPMergeWeekdayComponentRefiner, items);
+export default _createClass(FRTimeUnitWithinFormatParser, items);

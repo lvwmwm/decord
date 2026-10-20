@@ -1,18 +1,18 @@
-// Module ID: 8986
-// Function ID: 8987
+// Module ID: 8998
+// Function ID: 8999
 // Name: InviteSuggestionsStore
-// Dependencies: [8987, 7676, 4800, 6637, 4860, 4880, 4890, 1087, 7752, 8973, 6776, 1388, 504, 584, 2]
+// Dependencies: [8999, 7679, 4800, 6640, 4860, 4880, 4890, 1087, 7756, 8985, 6779, 1388, 504, 584, 2]
 
-// Module 8986 (InviteSuggestionsStore)
+// Module 8998 (InviteSuggestionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import sortByMatchScoreDefault from "sortByMatchScore" /* 6776 */;
-import Constants2 from "Constants" /* 7752 */;
-import InstantInviteUtils from "InstantInviteUtils" /* 8973 */;
-import QuickSwitcherStore from "QuickSwitcherStore" /* 8987 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7676 */;
+import sortByMatchScoreDefault from "sortByMatchScore" /* 6779 */;
+import Constants2 from "Constants" /* 7756 */;
+import InstantInviteUtils from "InstantInviteUtils" /* 8985 */;
+import QuickSwitcherStore from "QuickSwitcherStore" /* 8999 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7679 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6637 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6640 */;
 import GuildMemberStore from "GuildMemberStore" /* 4860 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;

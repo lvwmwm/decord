@@ -1,15 +1,15 @@
-// Module ID: 11921
-// Function ID: 11922
+// Module ID: 11935
+// Function ID: 11936
 // Name: ChannelListLayout
-// Dependencies: [5604, 11922, 11924, 11925, 558, 4776, 2]
+// Dependencies: [5604, 11936, 11938, 11939, 558, 4776, 2]
 // Exports: getScaledChannelRowHeight, isLayoutCompact, isLayoutCozy, makeSizeStyle
 
-// Module 11921 (ChannelListLayout)
+// Module 11935 (ChannelListLayout)
 import UserSettings from "UserSettings" /* 4776 */;
 import ChannelListLayoutTypes2 from "ChannelListLayoutTypes" /* 5604 */;
-import CozyDrawer from "CozyDrawer" /* 11922 */;
-import Compact from "Compact" /* 11924 */;
-import Cozy from "Cozy" /* 11925 */;
+import CozyDrawer from "CozyDrawer" /* 11936 */;
+import Compact from "Compact" /* 11938 */;
+import Cozy from "Cozy" /* 11939 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

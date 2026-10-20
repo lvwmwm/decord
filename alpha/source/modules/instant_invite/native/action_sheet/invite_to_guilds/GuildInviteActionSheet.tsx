@@ -1,9 +1,9 @@
-// Module ID: 14056
-// Function ID: 14057
+// Module ID: 14074
+// Function ID: 14075
 // Name: GuildInviteActionSheet
-// Dependencies: [32, 19, 17, 21, 4945, 587, 558, 576, 1128, 1202, 14057, 14058, 14054, 14059, 5195, 5554, 10868, 7194, 7093, 8973, 5226, 2]
+// Dependencies: [32, 19, 17, 21, 4945, 587, 558, 576, 1128, 1202, 14075, 14076, 14072, 14077, 5195, 5554, 10879, 7197, 7096, 8985, 5226, 2]
 
-// Module 14056 (GuildInviteActionSheet)
+// Module 14074 (GuildInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,12 +11,12 @@ import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5226 */;
-import SearchField2 from "SearchField" /* 7093 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7194 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8973 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14057 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14058 */;
-import GuildInviteRowDefault from "GuildInviteRow" /* 14059 */;
+import SearchField2 from "SearchField" /* 7096 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7197 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8985 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14075 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14076 */;
+import GuildInviteRowDefault from "GuildInviteRow" /* 14077 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -99,7 +99,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
   const query = recipientId.query;
   const tmp4 = closure_8();
   dependencyMap = tmp4;
-  const obj2 = recipientId(14054);
+  const obj2 = recipientId(14072);
   [arr, arr2] = _slicedToArray(obj2.useServerInviteRows(recipientId, query), 2);
   const tmp5 = _slicedToArray(obj2.useServerInviteRows(recipientId, query), 2);
   if (cResult[0] === (0 === arr.length && 0 === arr2.length)) {
@@ -191,7 +191,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
               }
             }
             const obj3 = { renderItem: tmp9, contentContainerStyle: tmp15, sections: tmp7, renderSectionHeader: tmp16, stickySectionHeadersEnabled: true, keyExtractor: tmp18, ListEmptyComponent };
-            const tmp22 = closure_6(tmp(10868).UserProfileStackedActionSheetSectionList, obj3);
+            const tmp22 = closure_6(tmp(10879).UserProfileStackedActionSheetSectionList, obj3);
             cResult[16] = tmp9;
             cResult[17] = tmp7;
             cResult[18] = tmp15;
@@ -265,7 +265,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
   dependencyMap = closure_8();
   let tmp = recipientId;
   let tmp2 = dependencyMap;
-  let obj = recipientId(14054);
+  let obj = recipientId(14072);
   [arr, arr2] = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   const tmp3 = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   if (0 === arr.length) {
@@ -310,7 +310,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildL
         },
       ListEmptyComponent
     };
-    const UserProfileStackedActionSheetSectionList = tmp(10868).UserProfileStackedActionSheetSectionList;
+    const UserProfileStackedActionSheetSectionList = tmp(10879).UserProfileStackedActionSheetSectionList;
     const tmp6 = closure_6;
     if (tmp5) {
       num = 24;
@@ -360,7 +360,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInviteA
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(intl4.t.HvoZQD) };
-    const BottomSheetTitleHeader = tmp(7194).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(7197).BottomSheetTitleHeader;
     intl = tmp(1128).intl;
     const tmp10 = metroRequire(BottomSheetTitleHeader, obj2);
     cResult[1] = tmp10;
@@ -370,7 +370,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInviteA
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { onChange: first, placeholder: intl2.string(intl4.t.uohsSv) };
-    const SearchField = tmp(7093).SearchField;
+    const SearchField = tmp(7096).SearchField;
     intl2 = tmp(1128).intl;
     const tmp13 = metroRequire(SearchField, obj3);
     cResult[2] = tmp13;

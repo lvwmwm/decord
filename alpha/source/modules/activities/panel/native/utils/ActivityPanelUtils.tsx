@@ -1,10 +1,10 @@
-// Module ID: 18172
-// Function ID: 18173
+// Module ID: 18195
+// Function ID: 18196
 // Name: ActivityPanelUtils
 // Dependencies: [4800, 4851, 4799, 5570, 4869, 5590, 1108, 558, 576, 504, 2]
 // Exports: isActivityPanelFullscreen, isConnectedToActivityInText
 
-// Module 18172 (ActivityPanelUtils)
+// Module 18195 (ActivityPanelUtils)
 import react from "react" /* 576 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4869 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5570 */;

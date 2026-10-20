@@ -1,10 +1,10 @@
-// Module ID: 18272
-// Function ID: 18273
+// Module ID: 18295
+// Function ID: 18296
 // Name: activityPlatformToConnectedAccountType
 // Dependencies: [1087, 2]
 // Exports: default
 
-// Module 18272 (activityPlatformToConnectedAccountType)
+// Module 18295 (activityPlatformToConnectedAccountType)
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

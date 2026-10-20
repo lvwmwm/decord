@@ -1,17 +1,17 @@
-// Module ID: 13299
-// Function ID: 13300
+// Module ID: 13317
+// Function ID: 13318
 // Name: useGameServerPerk
-// Dependencies: [19, 8316, 5144, 5143, 558, 576, 5161, 504, 13300, 1128, 2982, 13301, 2]
+// Dependencies: [19, 8320, 5144, 5143, 558, 576, 5161, 504, 13318, 1128, 2982, 13319, 2]
 
-// Module 13299 (useGameServerPerk)
+// Module 13317 (useGameServerPerk)
 import intl3 from "intl" /* 1128 */;
 import _modDef2982 from "module_2982" /* 2982 */;
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5143 */;
 import GameServerConstants from "GameServerConstants" /* 5144 */;
-import useGameServerFeaturedGameNamesDefault from "useGameServerFeaturedGameNames" /* 13300 */;
-import _modDef13301 from "module_13301" /* 13301 */;
+import useGameServerFeaturedGameNamesDefault from "useGameServerFeaturedGameNames" /* 13318 */;
+import _modDef13319 from "module_13319" /* 13319 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 8316 */;
+import GameServerStore from "GameServerStore" /* 8320 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -87,7 +87,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameSer
           }
           tmp11 = tmp17;
         }
-        const obj3 = { skuId, title: tmp12, description: tmp14, cost: stateFromStores, dependencies: tmp16, type: GuildPowerupType.PERK, animatedImageUrl: _modDef13301, staticImageUrl: _modDef13301 };
+        const obj3 = { skuId, title: tmp12, description: tmp14, cost: stateFromStores, dependencies: tmp16, type: GuildPowerupType.PERK, animatedImageUrl: _modDef13319, staticImageUrl: _modDef13319 };
         cResult[8] = stateFromStores;
         cResult[9] = tmp14;
         cResult[10] = obj3;
@@ -125,7 +125,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameSer
     if (gameServerEnabled) {
       tmp = null;
       if (null != stateFromStores) {
-        const obj = { skuId, title: intl.string(_modDef2982["B3OfL/"]), description: intl2.format(_modDef2982["+UqyGU"], obj2), cost: tmp2, dependencies: [], type: GuildPowerupType.PERK, animatedImageUrl: _modDef13301, staticImageUrl: _modDef13301 };
+        const obj = { skuId, title: intl.string(_modDef2982["B3OfL/"]), description: intl2.format(_modDef2982["+UqyGU"], obj2), cost: tmp2, dependencies: [], type: GuildPowerupType.PERK, animatedImageUrl: _modDef13319, staticImageUrl: _modDef13319 };
         intl = intl3.intl;
         intl2 = intl3.intl;
         tmp = obj;

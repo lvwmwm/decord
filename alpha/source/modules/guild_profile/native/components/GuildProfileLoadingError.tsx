@@ -1,9 +1,9 @@
-// Module ID: 13986
-// Function ID: 13987
+// Module ID: 14004
+// Function ID: 14005
 // Name: GuildProfileLoadingError
-// Dependencies: [19, 17, 21, 558, 576, 9150, 5166, 5213, 587, 5219, 7901, 5195, 1128, 6856, 2]
+// Dependencies: [19, 17, 21, 558, 576, 9162, 5166, 5213, 587, 5219, 7905, 5195, 1128, 6859, 2]
 
-// Module 13986 (GuildProfileLoadingError)
+// Module 14004 (GuildProfileLoadingError)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,9 +12,9 @@ import useThemeDefault from "useTheme" /* 5166 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import useToken from "useToken" /* 5213 */;
 import LinearGradientDefault from "LinearGradient" /* 5219 */;
-import Pressables from "Pressables" /* 6856 */;
-import WarningIcon3 from "WarningIcon" /* 7901 */;
-import GuildProfileView from "GuildProfileView" /* 9150 */;
+import Pressables from "Pressables" /* 6859 */;
+import WarningIcon3 from "WarningIcon" /* 7905 */;
+import GuildProfileView from "GuildProfileView" /* 9162 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -53,7 +53,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfile
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const obj4 = { size: "lg", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
-        const WarningIcon = tmp(7901).WarningIcon;
+        const WarningIcon = tmp(7905).WarningIcon;
         const tmp19 = React3(WarningIcon, obj4);
         cResult[6] = tmp19;
         tmp17 = tmp19;
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfile
             const intl2 = tmp(1128).intl;
             const stringResult = intl2.string(intl4.t.s1fAEw);
             const obj7 = { size: "sm", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
-            const WarningIcon2 = tmp(7901).WarningIcon;
+            const WarningIcon2 = tmp(7905).WarningIcon;
             const tmp39 = React3(WarningIcon2, obj7);
             cResult[16] = stringResult;
             cResult[17] = tmp39;

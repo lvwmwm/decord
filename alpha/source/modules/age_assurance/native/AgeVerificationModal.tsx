@@ -1,14 +1,14 @@
-// Module ID: 7864
-// Function ID: 7865
+// Module ID: 7868
+// Function ID: 7869
 // Name: AgeVerificationModal
-// Dependencies: [19, 6604, 21, 5111, 6602, 5622, 7851, 4945, 587, 6620, 7431, 1128, 558, 576, 7043, 2]
+// Dependencies: [19, 6607, 21, 5111, 6605, 5622, 7855, 4945, 587, 6623, 7434, 1128, 558, 576, 7046, 2]
 
-// Module 7864 (AgeVerificationModal)
+// Module 7868 (AgeVerificationModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5111 */;
 import LinkingDefault from "Linking" /* 5622 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6604 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6607 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

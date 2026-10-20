@@ -1,27 +1,27 @@
-// Module ID: 11650
-// Function ID: 11651
+// Module ID: 11663
+// Function ID: 11664
 // Name: conjureProjectActions
-// Dependencies: [5, 10990, 11005, 6721, 4807, 11619, 5624, 5869, 1128, 3820, 11651, 11405, 11653, 6999, 9061, 10667, 11014, 11655, 5646, 11657, 11659, 5653, 5640, 7231, 5949, 10330, 5625, 5644, 7434, 11661, 11662, 7009, 11666, 5651, 11011, 2]
+// Dependencies: [5, 11001, 11017, 6724, 4807, 11632, 5624, 5872, 1128, 3820, 11664, 11416, 11666, 7002, 9073, 10678, 11026, 11668, 5646, 11670, 11672, 5653, 5640, 7234, 5952, 10341, 5625, 5644, 7437, 11674, 11675, 7012, 11679, 5651, 11023, 2]
 // Exports: conjureProjectActions
 
-// Module 11650 (conjureProjectActions)
+// Module 11663 (conjureProjectActions)
 import intl15 from "intl" /* 1128 */;
 import _modDef3820 from "module_3820" /* 3820 */;
 import ChannelConstants from "ChannelConstants" /* 4807 */;
 import ToastUtils from "ToastUtils" /* 5624 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5625 */;
 import CopyIcon from "CopyIcon" /* 5644 */;
-import AlertModal from "AlertModal" /* 5869 */;
-import ChannelUtils from "ChannelUtils" /* 5949 */;
-import ClipboardUtils from "ClipboardUtils" /* 7231 */;
-import conjureProjectMute from "conjureProjectMute" /* 11014 */;
-import ConjureArchivePicker from "ConjureArchivePicker" /* 11619 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 11661 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 11666 */;
+import AlertModal from "AlertModal" /* 5872 */;
+import ChannelUtils from "ChannelUtils" /* 5952 */;
+import ClipboardUtils from "ClipboardUtils" /* 7234 */;
+import conjureProjectMute from "conjureProjectMute" /* 11026 */;
+import ConjureArchivePicker from "ConjureArchivePicker" /* 11632 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 11674 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 11679 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10990 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11005 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6721 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11001 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11017 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6724 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

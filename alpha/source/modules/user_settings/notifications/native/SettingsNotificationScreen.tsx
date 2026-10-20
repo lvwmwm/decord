@@ -1,22 +1,22 @@
-// Module ID: 16571
-// Function ID: 16572
+// Module ID: 16590
+// Function ID: 16591
 // Name: SettingsNotificationScreen
-// Dependencies: [19, 17, 16572, 8276, 21, 4945, 587, 558, 576, 7023, 13109, 16573, 16574, 5195, 1128, 6853, 6960, 11099, 16575, 16576, 15761, 2]
+// Dependencies: [19, 17, 16591, 8280, 21, 4945, 587, 558, 576, 7026, 13127, 16592, 16593, 5195, 1128, 6856, 6963, 11111, 16594, 16595, 15780, 2]
 
-// Module 16571 (SettingsNotificationScreen)
+// Module 16590 (SettingsNotificationScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7023 */;
-import SettingsConstants from "SettingsConstants" /* 8276 */;
-import SettingBuilders from "SettingBuilders" /* 11099 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13109 */;
-import SettingLayoutDefault from "SettingLayout" /* 15761 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16572 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16573 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 16574 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 16575 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7026 */;
+import SettingsConstants from "SettingsConstants" /* 8280 */;
+import SettingBuilders from "SettingBuilders" /* 11111 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13127 */;
+import SettingLayoutDefault from "SettingLayout" /* 15780 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16591 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16592 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 16593 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 16594 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -211,9 +211,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function System
     const obj8 = { style: tmp4.card, children: metroImportDefault(Card, obj9) };
     obj9 = { border: "none", shadow: "none", children: metroImportAll(View, obj10) };
     obj10 = { style: tmp4.cardContent, children: items1 };
-    Card = tmp(6853).Card;
+    Card = tmp(6856).Card;
     const obj11 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-    const CircleErrorIcon = tmp(6960).CircleErrorIcon;
+    const CircleErrorIcon = tmp(6963).CircleErrorIcon;
     items1 = [metroImportDefault(CircleErrorIcon, obj11), ];
     const obj12 = { style: tmp4.text, children: metroImportDefault(Text2, obj13) };
     obj13 = { color: "text-default", variant: "text-sm/medium", children: intl2.string(intl7.t.TAuasM) };
@@ -265,9 +265,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function System
     const obj6 = { style: tmp.card, children: metroImportDefault(Card, obj7) };
     obj7 = { border: "none", shadow: "none", children: metroImportAll(View, obj8) };
     obj8 = { style: tmp.cardContent, children: items1 };
-    Card = tmp2(6853).Card;
+    Card = tmp2(6856).Card;
     const obj9 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-    const CircleErrorIcon = tmp2(6960).CircleErrorIcon;
+    const CircleErrorIcon = tmp2(6963).CircleErrorIcon;
     items1 = [metroImportDefault(CircleErrorIcon, obj9), ];
     const obj10 = { style: tmp.text, children: metroImportDefault(Text2, obj11) };
     obj11 = { color: "text-default", variant: "text-sm/medium", children: intl2.string(intl7.t.TAuasM) };
@@ -303,11 +303,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const inHoldout = obj3.useConfig(first).inHoldout;
   if (cResult[1] !== !inHoldout) {
     const obj4 = { sections: getNotificationSettings(), ListHeaderComponent: tmp5Result };
-    const createList = tmp(11099).createList;
+    const createList = tmp(11111).createList;
     SettingBuilders;
     tmp5Result = undefined;
     if (!inHoldout) {
-      tmp5Result = tmp5(16575);
+      tmp5Result = tmp5(16594);
     }
     const list = createList(obj4);
     cResult[1] = !inHoldout;

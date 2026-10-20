@@ -1,18 +1,18 @@
-// Module ID: 9657
-// Function ID: 9658
+// Module ID: 9670
+// Function ID: 9671
 // Name: ConversationNavigator
-// Dependencies: [32, 19, 9652, 21, 9658, 558, 576, 7043, 9668, 9669, 9670, 587, 9681, 9691, 5112, 9651, 2]
+// Dependencies: [32, 19, 9665, 21, 9671, 558, 576, 7046, 9681, 9682, 9683, 587, 9694, 9704, 5112, 9664, 2]
 // Exports: openConversationNavigator
 
-// Module 9657 (ConversationNavigator)
+// Module 9670 (ConversationNavigator)
 import nativeDefault from "native" /* 587 */;
 import RootNavigationRef from "RootNavigationRef" /* 5112 */;
-import useSelectedConversationDefault from "useSelectedConversation" /* 9668 */;
+import useSelectedConversationDefault from "useSelectedConversation" /* 9681 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 9652 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 9665 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9658 */;
+import NativeStackView from "NativeStackView" /* 9671 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let _require;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ConversationsActionCreators = tmp(9651);
+const ConversationsActionCreators = tmp(9664);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = NativeStackView.createNativeStackNavigator();
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConversationNavigator(route) {
@@ -64,9 +64,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
   }
   const first = _slicedToArray(react.useState(tmp6), 1)[0];
   if (null != first) {
-    LIST = tmp(9669).ConversationNavigatorScreens.FOCUS;
+    LIST = tmp(9682).ConversationNavigatorScreens.FOCUS;
   } else {
-    LIST = tmp(9669).ConversationNavigatorScreens.LIST;
+    LIST = tmp(9682).ConversationNavigatorScreens.LIST;
   }
   if (cResult[2] === channelId) {
     let tmp8;
@@ -98,7 +98,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
     }
     if (cResult[7] !== tmp8) {
       const Screen = closure_8.Screen;
-      const obj3 = { initialParams: tmp8, name: tmp(9669).ConversationNavigatorScreens.LIST, options: tmp10, getComponent: tmp11 };
+      const obj3 = { initialParams: tmp8, name: tmp(9682).ConversationNavigatorScreens.LIST, options: tmp10, getComponent: tmp11 };
       const tmp15 = closure_6(Screen, obj3);
       cResult[7] = tmp8;
       cResult[8] = tmp15;
@@ -155,7 +155,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
             }
           }
           const Screen2 = closure_8.Screen;
-          const obj4 = { name: tmp(9669).ConversationNavigatorScreens.FOCUS, initialParams: tmp16, options: tmp22, getComponent: tmp23 };
+          const obj4 = { name: tmp(9682).ConversationNavigatorScreens.FOCUS, initialParams: tmp16, options: tmp22, getComponent: tmp23 };
           cResult[15] = tmp16;
           cResult[16] = closure_6(Screen2, obj4);
           const tmp26 = closure_6(Screen2, obj4);
@@ -250,14 +250,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
   const Navigator = closure_8.Navigator;
   const tmp5 = closure_7;
   if (null != first) {
-    LIST = tmp(9669).ConversationNavigatorScreens.FOCUS;
+    LIST = tmp(9682).ConversationNavigatorScreens.FOCUS;
   } else {
-    LIST = tmp(9669).ConversationNavigatorScreens.LIST;
+    LIST = tmp(9682).ConversationNavigatorScreens.LIST;
   }
   items = [, ];
   const obj3 = {
     initialParams: { channelId, guildId },
-    name: tmp(9669).ConversationNavigatorScreens.LIST,
+    name: tmp(9682).ConversationNavigatorScreens.LIST,
     options(arg0) {
       let route;
       ({ route, navigation } = arg0);
@@ -272,7 +272,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
   items[0] = closure_6(closure_8.Screen, obj3);
   const Screen = tmp6.Screen;
   const obj4 = {
-    name: tmp(9669).ConversationNavigatorScreens.FOCUS,
+    name: tmp(9682).ConversationNavigatorScreens.FOCUS,
     initialParams: tmp8,
     options(arg0) {
       let route;

@@ -1,9 +1,9 @@
-// Module ID: 16971
-// Function ID: 16972
+// Module ID: 16990
+// Function ID: 16991
 // Name: useCollectiblesShopHeader
-// Dependencies: [19, 17, 1392, 1089, 1087, 6658, 8597, 21, 4945, 587, 558, 576, 11989, 1128, 5195, 504, 9369, 9480, 7595, 7224, 7178, 5171, 13770, 2002, 1267, 9482, 6661, 6620, 8593, 13759, 7903, 9285, 9676, 16972, 1505, 2]
+// Dependencies: [19, 17, 1392, 1089, 1087, 6661, 8609, 21, 4945, 587, 558, 576, 12003, 1128, 5195, 504, 9381, 9493, 7598, 7227, 7181, 5171, 13788, 2002, 1267, 9495, 6664, 6623, 8605, 13777, 7907, 9297, 9689, 16991, 1505, 2]
 
-// Module 16971 (useCollectiblesShopHeader)
+// Module 16990 (useCollectiblesShopHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,12 +13,12 @@ import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
-import QuestConstants from "QuestConstants" /* 6658 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7224 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8593 */;
-import Constants2 from "Constants" /* 8597 */;
-import ShopIcon from "ShopIcon" /* 11989 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+import QuestConstants from "QuestConstants" /* 6661 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7227 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8605 */;
+import Constants2 from "Constants" /* 8609 */;
+import ShopIcon from "ShopIcon" /* 12003 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
@@ -33,7 +33,7 @@ let obj2;
 let obj3;
 let tmp;
 let unpackModuleId;
-const CheckmarkSmallIcon3 = tmp(7178);
+const CheckmarkSmallIcon3 = tmp(7181);
 function CollectiblesShopHeaderRight(currentScreen) {
   let constants2;
   let constants3;
@@ -101,7 +101,7 @@ function CollectiblesShopHeaderRight(currentScreen) {
     }
     items[1] = obj2;
     const obj3 = {
-      label: intl3.string(intl4.t.EBYkzk),
+      label: intl3.string(intl4.t.fG3RIg),
       action() {
         let items;
         const obj = { analyticsLocations: items, analyticsSource: stateFromStores(balance[19]).COLLECTIBLES_SHOP_MOBILE_ORBS_MENU_ITEM, screen: constants.ORBS };

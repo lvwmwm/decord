@@ -1,12 +1,12 @@
-// Module ID: 11130
-// Function ID: 11131
+// Module ID: 11141
+// Function ID: 11142
 // Name: GuildIncidentsStore
-// Dependencies: [5151, 1246, 4822, 4880, 8329, 504, 584, 2]
+// Dependencies: [5151, 1246, 4822, 4880, 8333, 504, 584, 2]
 
-// Module 11130 (GuildIncidentsStore)
+// Module 11141 (GuildIncidentsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8329 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8333 */;
 import ExperimentStore from "ExperimentStore" /* 5151 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import GuildStore from "GuildStore" /* 4822 */;
@@ -45,7 +45,7 @@ function updateGuildIncident(id) {
     let hasDetectedActivityResult = obj.hasDetectedActivity(incidentsData);
     const tmp6 = require;
     if (!hasDetectedActivityResult) {
-      const tmp6Result = tmp6(8329);
+      const tmp6Result = tmp6(8333);
       hasDetectedActivityResult = tmp6Result.isUnderLockdown(incidentsData);
     }
     if (hasDetectedActivityResult) {
@@ -108,7 +108,7 @@ let obj = {
       let hasDetectedActivityResult = obj.hasDetectedActivity(incidentsData);
       const tmp5 = require;
       if (!hasDetectedActivityResult) {
-        const tmp5Result = tmp5(8329);
+        const tmp5Result = tmp5(8333);
         hasDetectedActivityResult = tmp5Result.isUnderLockdown(incidentsData);
       }
       if (hasDetectedActivityResult) {
@@ -141,7 +141,7 @@ let obj = {
       let hasDetectedActivityResult = obj.hasDetectedActivity(incidentsData);
       const tmp5 = require;
       if (!hasDetectedActivityResult) {
-        const tmp5Result = tmp5(8329);
+        const tmp5Result = tmp5(8333);
         hasDetectedActivityResult = tmp5Result.isUnderLockdown(incidentsData);
       }
       if (hasDetectedActivityResult) {

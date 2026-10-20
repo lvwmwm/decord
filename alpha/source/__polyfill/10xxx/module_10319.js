@@ -1,120 +1,117 @@
 // Module ID: 10319
 // Function ID: 10320
-// Dependencies: [10129, 10136, 10138, 10162, 10174, 10320, 10322, 10323, 10324, 10169]
-// Exports: createCasualConfiguration, createConfiguration, parse, parseDate
+// Dependencies: [41, 42, 93, 95, 96, 98, 10138, 10158]
 
 // Module 10319
-import _mod10162 from "module_10162" /* 10162 */;
-import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10169 */;
-import _mod10174 from "module_10174" /* 10174 */;
-import _mod10320 from "module_10320" /* 10320 */;
-import _mod10322 from "module_10322" /* 10322 */;
-import _mod10323 from "module_10323" /* 10323 */;
-import _mod10324 from "module_10324" /* 10324 */;
-import { Chrono } from "module_10129" /* 10129 */;
+import en from "en" /* 10138 */;
+import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10158 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _get from "_get" /* 96 */;
+import _inherits from "_inherits" /* 98 */;
 
-const require = globalThis.__r;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-let items;
-const fn = this && this.__importDefault || ((__esModule) => {
-  let tmp2;
-  const tmp = __esModule;
-  if (!tmp) {
-    tmp2 = { default: __esModule };
-    const obj = { default: __esModule };
-  } else {
-    tmp2 = __esModule;
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  return tmp2;
-});
-function createCasualConfiguration() {
-  let items;
-  let flag = arg0;
-  if (arg0 === undefined) {
-    flag = true;
-  }
-  if (flag === undefined) {
-    flag = true;
-  }
-  const obj = { parsers: items, refiners: [] };
-  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
-  items = [new module_10174.default(), , , , ];
-  new module_10174.default();
-  items[1] = new module_10162.default(flag);
-  new module_10162.default(flag);
-  items[2] = new module_10322.default();
-  new module_10322.default();
-  items[3] = new module_10320.default();
-  new module_10320.default();
-  items[4] = new module_10323.default();
-  new module_10323.default();
-  const result = includeCommonConfiguration(obj, false);
-  const parsers = result.parsers;
-  const unshift = parsers.unshift;
-  const _default5 = new module_10324.default();
-  unshift(_default5);
-  return result;
 }
-function createConfiguration(flag) {
-  let items;
-  if (flag === undefined) {
-    flag = true;
+class ENTimeExpressionParser {
+  constructor(arg0) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ENTimeExpressionParser);
+    const items = [arg0];
+    const obj = _getPrototypeOf(ENTimeExpressionParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    return tmp3(self, constructResult);
   }
-  let flag2 = arg1;
-  if (arg1 === undefined) {
-    flag2 = true;
-  }
-  const obj = { parsers: items, refiners: [] };
-  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
-  items = [new module_10174.default(), , , , ];
-  new module_10174.default();
-  items[1] = new module_10162.default(flag2);
-  new module_10162.default(flag2);
-  items[2] = new module_10322.default();
-  new module_10322.default();
-  items[3] = new module_10320.default();
-  new module_10320.default();
-  items[4] = new module_10323.default();
-  new module_10323.default();
-  return includeCommonConfiguration(obj, flag);
 }
-const module_10162 = fn(_mod10162);
-const module_10174 = fn(_mod10174);
-const module_10320 = fn(_mod10320);
-const module_10322 = fn(_mod10322);
-const module_10323 = fn(_mod10323);
-const module_10324 = fn(_mod10324);
-const chrono = new require("module_10129").Chrono(createCasualConfiguration());
-const obj7 = { parsers: items, refiners: [] };
-let includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
-const _default = new module_10174.default();
-items = [_default, , , , ];
-const _default1 = new module_10162.default(true);
-items[1] = _default1;
-const _default2 = new module_10322.default();
-items[2] = _default2;
-const _default3 = new module_10320.default();
-items[3] = _default3;
-const _default4 = new module_10323.default();
-items[4] = _default4;
-const chrono1 = new Chrono(includeCommonConfiguration(obj7, true));
-const Chrono_export = require("module_10129").Chrono;
+_inherits(ENTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
+const entry = {
+  key: "followingPhase",
+  value: function followingPhase() {
+    return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|to|\\?)\\s*";
+  }
+};
+let items = [
+  entry,
+  {
+    key: "primaryPrefix",
+    value: function primaryPrefix() {
+      return "(?:(?:alle|dalle)\\s*)??";
+    }
+  },
+  {
+    key: "primarySuffix",
+    value: function primarySuffix() {
+      return "(?:\\s*(?:o\\W*in punto|alle\\s*sera|in\\s*del\\s*(?:mattina|pomeriggio)))?(?!/)(?=\\W|$)";
+    }
+  },
+  {
+    key: "extractPrimaryTimeComponents",
+    value: function extractPrimaryTimeComponents(arg0, arg1) {
+      const self = this;
+      const tmp = _get(_getPrototypeOf(ENTimeExpressionParser.prototype), "extractPrimaryTimeComponents", this);
+      let closure_1 = tmp;
+      let fn = tmp;
+      if (typeof tmp === "function") {
+        fn = (items) => closure_1.apply(self, items);
+      }
+      const items = [arg0, arg1];
+      const fnResult = fn(items);
+      if (fnResult) {
+        const first = arg1[0];
+        if (first.endsWith("sera")) {
+          const value = fnResult.get("hour");
+          if (value >= 6) {
+            if (value < 12) {
+              fnResult.assign("hour", fnResult.get("hour") + 12);
+              fnResult.assign("meridiem", en.Meridiem.PM);
+            }
+          }
+          if (value < 6) {
+            fnResult.assign("meridiem", en.Meridiem.AM);
+          }
+        }
+        const first1 = arg1[0];
+        if (first1.endsWith("pomeriggio")) {
+          fnResult.assign("meridiem", en.Meridiem.PM);
+          const value2 = fnResult.get("hour");
+          const tmp14 = value2 >= 0 && value2 <= 6;
+          if (tmp14) {
+            fnResult.assign("hour", fnResult.get("hour") + 12);
+          }
+        }
+        const first2 = arg1[0];
+        if (first2.endsWith("mattina")) {
+          fnResult.assign("meridiem", en.Meridiem.AM);
+          if (fnResult.get("hour") < 12) {
+            fnResult.assign("hour", fnResult.get("hour"));
+          }
+        }
+      }
+      return fnResult;
+    }
+  }
+];
 
-export const parse = function parse(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parse(arg0, arg1, arg2);
-};
-export const parseDate = function parseDate(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parseDate(arg0, arg1, arg2);
-};
-export { createCasualConfiguration };
-export { createConfiguration };
-export { Chrono_export as Chrono };
-export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
-export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
-export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
-export const Meridiem = require("Meridiem").Meridiem;
-export const Weekday = require("Meridiem").Weekday;
-export const casual = chrono;
-export const strict = chrono1;
+export default _createClass(ENTimeExpressionParser, items);

@@ -1,9 +1,9 @@
-// Module ID: 16444
-// Function ID: 16445
+// Module ID: 16463
+// Function ID: 16464
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 4946, 8574, 21, 4945, 587, 558, 576, 8580, 1992, 8583, 504, 1128, 2918, 10848, 10966, 6730, 8573, 4773, 1202, 8663, 10579, 10580, 5195, 2]
+// Dependencies: [19, 17, 4946, 8586, 21, 4945, 587, 558, 576, 8592, 1992, 8595, 504, 1128, 2918, 10859, 10977, 6733, 8585, 4773, 1202, 8675, 10590, 10591, 5195, 2]
 
-// Module 16444 (DisplayNameStylesEditPreview)
+// Module 16463 (DisplayNameStylesEditPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -12,15 +12,15 @@ import native from "native" /* 1202 */;
 import _modDef2918 from "module_2918" /* 2918 */;
 import DateUtils from "DateUtils" /* 4773 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 6730 */;
-import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8573 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8583 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8663 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10579 */;
-import types from "types" /* 10580 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 6733 */;
+import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8585 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 8595 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8675 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10590 */;
+import types from "types" /* 10591 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8574 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8586 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -64,7 +64,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   ({ selectedFontId, selectedEffectId, selectedColors, isTryItOut } = user);
   dependencyMap = tmp4;
   const tmp5 = closure_9();
-  const tmpResult = user(8580);
+  const tmpResult = user(8592);
   const guildMemberAndUserPendingNameplate = tmpResult.useGuildMemberAndUserPendingNameplate(user, guildId);
   ({ guildNameplate, pendingNameplate, userNameplate } = guildMemberAndUserPendingNameplate);
   if (cResult[0] !== guildNameplate) {
@@ -186,7 +186,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
                                 }
                               }
                               const obj4 = { user, nameplate: pendingNameplate, nameplateData: tmp30, guildId, pendingAvatarSrc: stateFromStores, pendingDisplayNameStyles: tmp13, pendingGlobalName: displayName };
-                              const tmp33 = closure_7(user(10966).NameplatePreview, obj4);
+                              const tmp33 = closure_7(user(10977).NameplatePreview, obj4);
                               cResult[28] = stateFromStores;
                               cResult[29] = displayName;
                               cResult[30] = tmp13;
@@ -223,7 +223,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
             }
           }
           const obj7 = { user, displayName, guildId, displayNameStylesOverride: tmp13, isPremiumTryItOut: undefined !== isTryItOut && isTryItOut, compact: true, hideFrame: true, maxWidth: 320, accessibilityLabel: tmp14 };
-          const tmp20 = closure_7(guildId(10848), obj7);
+          const tmp20 = closure_7(guildId(10859), obj7);
           cResult[12] = displayName;
           cResult[13] = tmp13;
           cResult[14] = guildId;

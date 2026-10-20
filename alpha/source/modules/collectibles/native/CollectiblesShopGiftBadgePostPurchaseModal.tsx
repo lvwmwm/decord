@@ -1,17 +1,17 @@
-// Module ID: 13705
-// Function ID: 13706
+// Module ID: 13723
+// Function ID: 13724
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1633, 6620, 7595, 7224, 1128, 6879, 5195, 2622, 13706, 7844, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1633, 6623, 7598, 7227, 1128, 6882, 5195, 2622, 13724, 7848, 2]
 
-// Module 13705 (CollectiblesShopGiftBadgePostPurchaseModal)
+// Module 13723 (CollectiblesShopGiftBadgePostPurchaseModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import _modDef2622 from "module_2622" /* 2622 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7224 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7595 */;
-import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 13706 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7227 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7598 */;
+import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 13724 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -26,8 +26,8 @@ let metroRequire;
 let tmp;
 const intl3 = tmp(1128);
 const Text_Text = tmp(5195);
-const XSmallIcon = tmp(6879);
-const ModalScreen2 = tmp(7844);
+const XSmallIcon = tmp(6882);
+const ModalScreen2 = tmp(7848);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles((paddingTop) => {

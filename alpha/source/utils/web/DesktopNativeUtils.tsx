@@ -1,17 +1,17 @@
-// Module ID: 6814
-// Function ID: 6815
+// Module ID: 6817
+// Function ID: 6818
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1087, 38, 5162, 1384, 510, 6815, 6816, 4, 6817, 6818, 1386, 1297, 5681, 2]
+// Dependencies: [32, 5, 1087, 38, 5162, 1384, 510, 6818, 6819, 4, 6820, 6821, 1386, 1297, 5681, 2]
 
-// Module 6814 (DesktopNativeUtils)
+// Module 6817 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1087 */;
 import flow_Client from "flow/Client" /* 5162 */;
 import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5681 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 6815 */;
-import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6816 */;
-import IPCEvents from "IPCEvents" /* 6817 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 6818 */;
+import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 6819 */;
+import IPCEvents from "IPCEvents" /* 6820 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require, c10, c9, closeResult, importDefault;
 
 let tmp2;
-const FileExtensionUtils = tmp2(6818);
+const FileExtensionUtils = tmp2(6821);
 function sanitizeFilename(str) {
   try {
     const _decodeURIComponent = decodeURIComponent;
@@ -1037,7 +1037,7 @@ let obj2 = {
     if (null != uri) {
       const tmp = require;
       if (require("PlatformUtils").isPlatformEmbedded) {
-        const tmpResult = tmp(6818);
+        const tmpResult = tmp(6821);
         const decideFileExtensionResult = tmpResult.decideFileExtension(uri, contentType);
         const hasItem = null == decideFileExtensionResult || set2.has(decideFileExtensionResult);
         return hasItem;

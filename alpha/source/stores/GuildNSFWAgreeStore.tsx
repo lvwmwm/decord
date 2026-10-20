@@ -1,13 +1,13 @@
-// Module ID: 6611
-// Function ID: 6612
+// Module ID: 6614
+// Function ID: 6615
 // Name: GuildNSFWAgreeStore
-// Dependencies: [510, 504, 6601, 584, 2]
+// Dependencies: [510, 504, 6604, 584, 2]
 
-// Module 6611 (GuildNSFWAgreeStore)
+// Module 6614 (GuildNSFWAgreeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6601 */;
+import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6604 */;
 import size from "module_2" /* 2 */;
 
 const GuildNSFWAgreeStore_str = "GuildNSFWAgreeStore";

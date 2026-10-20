@@ -1,9 +1,9 @@
-// Module ID: 13074
-// Function ID: 13075
+// Module ID: 13092
+// Function ID: 13093
 // Name: DoubleTapToReactActionSheet
-// Dependencies: [5, 32, 19, 17, 4946, 6673, 1087, 1395, 21, 4945, 1384, 587, 5014, 5167, 558, 576, 5224, 504, 5208, 4776, 4894, 8270, 1417, 7175, 1267, 7224, 9753, 5171, 5195, 1128, 12973, 13075, 5205, 7244, 2]
+// Dependencies: [5, 32, 19, 17, 4946, 6676, 1087, 1395, 21, 4945, 1384, 587, 5014, 5167, 558, 576, 5224, 504, 5208, 4776, 4894, 8274, 1417, 7178, 1267, 7227, 9765, 5171, 5195, 1128, 12991, 13093, 5205, 7247, 2]
 
-// Module 13074 (DoubleTapToReactActionSheet)
+// Module 13092 (DoubleTapToReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,7 +19,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
-import EmojiStore from "EmojiStore" /* 6673 */;
+import EmojiStore from "EmojiStore" /* 6676 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
@@ -41,7 +41,7 @@ let obj7;
 let obj8;
 let tmp;
 let unpackModuleId;
-const DoubleTapToReactUtils = tmp(8270);
+const DoubleTapToReactUtils = tmp(8274);
 function randomizeAnimationValues(leading) {
   let Easing;
   let opacityValue;

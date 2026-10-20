@@ -1,10 +1,10 @@
-// Module ID: 12084
-// Function ID: 12085
+// Module ID: 12099
+// Function ID: 12100
 // Name: formatPollMessageChatData
-// Dependencies: [4946, 6673, 4800, 4860, 5965, 1392, 10825, 1087, 1098, 6438, 4894, 4898, 1417, 9265, 4886, 4867, 12085, 1128, 8228, 12087, 1384, 12088, 12089, 2]
+// Dependencies: [4946, 6676, 4800, 4860, 5968, 1392, 10836, 1087, 1098, 6441, 4894, 4898, 1417, 9277, 4886, 4867, 12100, 1128, 8232, 12102, 1384, 12103, 12104, 2]
 // Exports: default, isPollMessageDirectlyInteractive
 
-// Module 12084 (formatPollMessageChatData)
+// Module 12099 (formatPollMessageChatData)
 import Constants2 from "Constants" /* 1098 */;
 import intl5 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
@@ -12,15 +12,15 @@ import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4867 */;
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4886 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4894 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4898 */;
-import merged5 from "merged5" /* 6438 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9265 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 10825 */;
-import PollLayoutTypes from "PollLayoutTypes" /* 12087 */;
+import merged5 from "merged5" /* 6441 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9277 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 10836 */;
+import PollLayoutTypes from "PollLayoutTypes" /* 12102 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
-import EmojiStore from "EmojiStore" /* 6673 */;
+import EmojiStore from "EmojiStore" /* 6676 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import GuildMemberStore from "GuildMemberStore" /* 4860 */;
-import MessageStore from "MessageStore" /* 5965 */;
+import MessageStore from "MessageStore" /* 5968 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

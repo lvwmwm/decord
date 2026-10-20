@@ -1,10 +1,10 @@
-// Module ID: 17236
-// Function ID: 17237
+// Module ID: 17255
+// Function ID: 17256
 // Name: EmojiSourceUtils
 // Dependencies: [5, 4898, 1417, 1901, 2]
 // Exports: getEmojiSource
 
-// Module 17236 (EmojiSourceUtils)
+// Module 17255 (EmojiSourceUtils)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

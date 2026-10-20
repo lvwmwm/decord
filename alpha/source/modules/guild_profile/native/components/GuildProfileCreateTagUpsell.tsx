@@ -1,14 +1,14 @@
-// Module ID: 13980
-// Function ID: 13981
+// Module ID: 13998
+// Function ID: 13999
 // Name: GuildProfileCreateTagUpsell
-// Dependencies: [19, 17, 21, 4945, 558, 576, 13981, 13983, 5171, 13984, 7224, 5195, 1128, 2]
+// Dependencies: [19, 17, 21, 4945, 558, 576, 13999, 14001, 5171, 14002, 7227, 5195, 1128, 2]
 
-// Module 13980 (GuildProfileCreateTagUpsell)
+// Module 13998 (GuildProfileCreateTagUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7224 */;
-import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 13984 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7227 */;
+import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 14002 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -24,8 +24,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfi
   const cResult = obj.c(7);
   guildId = guildId.guildId;
   const tmp4 = closure_5();
-  const obj2 = guildId(13981);
-  const guildTagCreationUpsell = obj2.useGuildTagCreationUpsell("GuildProfileCreateTagUpsell", creatableGuilds(13983));
+  const obj2 = guildId(13999);
+  const guildTagCreationUpsell = obj2.useGuildTagCreationUpsell("GuildProfileCreateTagUpsell", creatableGuilds(14001));
   creatableGuilds = guildTagCreationUpsell.creatableGuilds;
   if (guildTagCreationUpsell.isUpsellVisible) {
     if (cResult[0] === creatableGuilds) {
@@ -76,8 +76,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfi
   let creatableGuilds;
   let tmp2 = guildId;
   const tmp = closure_5();
-  let obj = guildId(13981);
-  const guildTagCreationUpsell = obj.useGuildTagCreationUpsell("GuildProfileCreateTagUpsell", creatableGuilds(13983));
+  let obj = guildId(13999);
+  const guildTagCreationUpsell = obj.useGuildTagCreationUpsell("GuildProfileCreateTagUpsell", creatableGuilds(14001));
   creatableGuilds = guildTagCreationUpsell.creatableGuilds;
   let tmp5 = null;
   if (guildTagCreationUpsell.isUpsellVisible) {

@@ -1,9 +1,9 @@
-// Module ID: 12640
-// Function ID: 12641
+// Module ID: 12657
+// Function ID: 12658
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2069, 7866, 7842, 1087, 21, 4945, 587, 558, 576, 5195, 7843, 1128, 504, 3144, 5622, 10746, 8962, 6851, 5205, 12641, 12643, 7865, 6605, 1267, 12644, 6422, 6427, 12646, 12651, 7841, 7169, 2]
+// Dependencies: [19, 17, 2069, 7870, 7846, 1087, 21, 4945, 587, 558, 576, 5195, 7847, 1128, 504, 3144, 5622, 10757, 8974, 6854, 5205, 12658, 12660, 7869, 6608, 1267, 12661, 6425, 6430, 12663, 12668, 7845, 7172, 2]
 
-// Module 12640 (ClassificationDetail)
+// Module 12657 (ClassificationDetail)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -13,18 +13,18 @@ import _modDef3144 from "module_3144" /* 3144 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
 import LinkingDefault from "Linking" /* 5622 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6422 */;
-import MetricEvents from "MetricEvents" /* 6427 */;
-import TableRow2 from "TableRow" /* 6851 */;
-import SafetyHubModels from "SafetyHubModels" /* 7843 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8962 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12644 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12646 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6425 */;
+import MetricEvents from "MetricEvents" /* 6430 */;
+import TableRow2 from "TableRow" /* 6854 */;
+import SafetyHubModels from "SafetyHubModels" /* 7847 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8974 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12661 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12663 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2069 */;
-import SafetyHubStore_mod from "SafetyHubStore" /* 7866 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7842 */;
+import SafetyHubStore_mod from "SafetyHubStore" /* 7870 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7846 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -95,7 +95,7 @@ function ClassificationPolicyCard(policyExplainerLink) {
     const classificationPolicyCard = tmp16.classificationPolicyCard;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
-      const ShieldIcon2 = tmp12(10746).ShieldIcon;
+      const ShieldIcon2 = tmp12(10757).ShieldIcon;
       const tmp22 = closure_13(ShieldIcon2, obj2);
       cResult[2] = tmp22;
       tmp19 = tmp22;
@@ -180,7 +180,7 @@ function ClassificationPolicyCard(policyExplainerLink) {
     const obj11 = { style: tmp3.classificationPolicyCardIcon, children: closure_13(ShieldIcon, obj12) };
     obj12 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
     tmp9 = TouchableHitBoxDefault;
-    ShieldIcon = policyExplainerLink(10746).ShieldIcon;
+    ShieldIcon = policyExplainerLink(10757).ShieldIcon;
     items1 = [closure_13(closure_4, obj11), ];
     const obj13 = { style: tmp3.classificationPolicyCardContent, children: closure_13(Text, obj14) };
     obj14 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.format(policyExplainerLink(1128).t.zxUdpj, obj15) };

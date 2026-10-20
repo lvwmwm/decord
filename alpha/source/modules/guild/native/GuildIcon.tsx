@@ -1,13 +1,13 @@
-// Module ID: 6831
-// Function ID: 6832
+// Module ID: 6834
+// Function ID: 6835
 // Name: GuildIcon
-// Dependencies: [32, 19, 6832, 4818, 1087, 21, 4945, 587, 2034, 6833, 1901, 5631, 6834, 299, 2]
+// Dependencies: [32, 19, 6835, 4818, 1087, 21, 4945, 587, 2034, 6836, 1901, 5631, 6837, 299, 2]
 
-// Module 6831 (GuildIcon)
+// Module 6834 (GuildIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6832 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6835 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildRecord from "GuildRecord" /* 4818 */;

@@ -1,10 +1,10 @@
-// Module ID: 12765
-// Function ID: 12766
+// Module ID: 12782
+// Function ID: 12783
 // Name: CheckpointStatsUtils
 // Dependencies: [1406, 4814, 11, 2]
 // Exports: statsFromServer
 
-// Module 12765 (CheckpointStatsUtils)
+// Module 12782 (CheckpointStatsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4814 */;
 import UserRecord from "UserRecord" /* 1406 */;

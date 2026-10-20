@@ -1,9 +1,9 @@
-// Module ID: 19138
-// Function ID: 19139
+// Module ID: 19162
+// Function ID: 19163
 // Name: ParentalConsentConnectionHeader
-// Dependencies: [19, 17, 1392, 21, 4945, 5229, 587, 558, 576, 1633, 504, 6616, 1128, 2822, 5195, 2]
+// Dependencies: [19, 17, 1392, 21, 4945, 5229, 587, 558, 576, 1633, 504, 6619, 1128, 2822, 5195, 2]
 
-// Module 19138 (ParentalConsentConnectionHeader)
+// Module 19162 (ParentalConsentConnectionHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -12,7 +12,7 @@ import intl2 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import NavigatorConstants from "NavigatorConstants" /* 5229 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6616 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6619 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;

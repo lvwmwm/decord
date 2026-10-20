@@ -1,9 +1,9 @@
-// Module ID: 18393
-// Function ID: 18394
+// Module ID: 18415
+// Function ID: 18416
 // Name: MediaPlaybackPanelUI
-// Dependencies: [32, 19, 11382, 15603, 10694, 10693, 21, 4945, 587, 558, 576, 1633, 1499, 18392, 5014, 9892, 10697, 18184, 5167, 5170, 5208, 18186, 18394, 5258, 5558, 2]
+// Dependencies: [32, 19, 11393, 15622, 10705, 10704, 21, 4945, 587, 558, 576, 1633, 1499, 18414, 5014, 9904, 10708, 18207, 5167, 5170, 5208, 18209, 18416, 5258, 5558, 2]
 
-// Module 18393 (MediaPlaybackPanelUI)
+// Module 18415 (MediaPlaybackPanelUI)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import react3 from "react" /* 576 */;
@@ -16,16 +16,16 @@ import timingPresets from "timingPresets" /* 5170 */;
 import spring from "spring" /* 5208 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5258 */;
 import LayerScope2 from "LayerScope" /* 5558 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9892 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10693 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10694 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10697 */;
-import MorphablePanelUtils from "MorphablePanelUtils" /* 18184 */;
-import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 18392 */;
-import MediaPlaybackPipDefault from "MediaPlaybackPip" /* 18394 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9904 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10704 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10705 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10708 */;
+import MorphablePanelUtils from "MorphablePanelUtils" /* 18207 */;
+import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 18414 */;
+import MediaPlaybackPipDefault from "MediaPlaybackPip" /* 18416 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11382 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15603 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 11393 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15622 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -42,8 +42,8 @@ let obj3;
 let rect;
 let tmp;
 let tmp4;
-const useMorphablePanelGesture = tmp(18186);
-const useMorphablePanelGestureDefault = tmp4(18186);
+const useMorphablePanelGesture = tmp(18209);
+const useMorphablePanelGestureDefault = tmp4(18209);
 const useContext = react2.useContext;
 ({ MEDIA_PLAYBACK_PANEL_LAYOUT_PHYSICS: metroImportDefault, MediaPlaybackPanelModes: metroImportAll } = MediaPlaybackPanelConstants);
 const IS_IOS = MorphablePanelConstants.IS_IOS;
@@ -160,7 +160,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWra
           size = { pipX: x, pipY: y, width: 120, height: 120, windowDimensions: tmp6, safeArea, bottomAvoidanceRegion: null, topAvoidanceRegion: null, positionOffset: tmp11, disableHorizontalSafeAreas };
           ({ bottom: obj.bottomAvoidanceRegion, top: obj.topAvoidanceRegion } = pipAvoidanceSpecs);
           tmp11 = undefined;
-          const getClampedPIPPosition = tmp(18184).getClampedPIPPosition;
+          const getClampedPIPPosition = tmp(18207).getClampedPIPPosition;
           MorphablePanelUtils;
           if (tmp7) {
             tmp11 = wrapperOffset;
@@ -474,7 +474,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWra
           size = { pipX: x, pipY: y, width: 120, height: 120, windowDimensions: tmp6, safeArea, bottomAvoidanceRegion: null, topAvoidanceRegion: null, positionOffset: tmp11, disableHorizontalSafeAreas };
           ({ bottom: obj.bottomAvoidanceRegion, top: obj.topAvoidanceRegion } = pipAvoidanceSpecs);
           tmp11 = undefined;
-          const getClampedPIPPosition = tmp(18184).getClampedPIPPosition;
+          const getClampedPIPPosition = tmp(18207).getClampedPIPPosition;
           MorphablePanelUtils;
           if (tmp7) {
             tmp11 = wrapperOffset;

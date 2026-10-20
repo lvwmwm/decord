@@ -1,10 +1,10 @@
-// Module ID: 8026
-// Function ID: 8027
+// Module ID: 8030
+// Function ID: 8031
 // Name: AppStoreAgeAssurance
-// Dependencies: [5, 8027, 2]
+// Dependencies: [5, 8031, 2]
 
-// Module 8026 (AppStoreAgeAssurance)
-import PlayAgeSignals from "PlayAgeSignals" /* 8027 */;
+// Module 8030 (AppStoreAgeAssurance)
+import PlayAgeSignals from "PlayAgeSignals" /* 8031 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

@@ -6,29 +6,6 @@
 // Module 7859 (react-native)
 import react_native from "react-native" /* 17 */;
 
-const NativeModules = react_native.NativeModules;
-const nativeEventEmitter = new react_native.NativeEventEmitter(undefined);
-class WebViewProxy {
-  constructor(webViewKey) {
-    this.webViewKey = webViewKey;
-  }
-  injectJavaScript(arg0) {
-    const RNCWebView = NativeModules.RNCWebView;
-    return RNCWebView.injectJavaScriptWithWebViewKey(this.webViewKey, arg0);
-  }
-  addOnMessageListener(arg0) {
-    let closure_0 = arg0;
-    const self = this;
-    return nativeEventEmitter.addListener("ReactNativeWebViewOnMessageWithWebViewKey", (webViewKey) => {
-      if (webViewKey.webViewKey === self.webViewKey) {
-        closure_0(webViewKey);
-      }
-    });
-  }
-  releaseWebView() {
-    const RNCWebView = NativeModules.RNCWebView;
-    RNCWebView.releaseWebView(this.webViewKey);
-  }
-}
+const StyleSheet = react_native.StyleSheet;
 
-export default WebViewProxy;
+export default StyleSheet.create({ container: { flex: 1, overflow: "hidden" }, loadingOrErrorView: { position: "absolute", flex: 1, justifyContent: "center", alignItems: "center", height: "100%", width: "100%", backgroundColor: "white" }, loadingProgressBar: { height: 20 }, errorText: { fontSize: 14, textAlign: "center", marginBottom: 2 }, errorTextTitle: { fontSize: 15, fontWeight: "500", marginBottom: 10 }, webView: { backgroundColor: "#ffffff" } });

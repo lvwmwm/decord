@@ -1,9 +1,9 @@
-// Module ID: 10982
-// Function ID: 10983
+// Module ID: 10993
+// Function ID: 10994
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1506, 10983, 10984, 5631, 1128, 5195, 5205, 6620, 7169, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1506, 10994, 10995, 5631, 1128, 5195, 5205, 6623, 7172, 2]
 
-// Module 10982 (GiftCodeRedeemError)
+// Module 10993 (GiftCodeRedeemError)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
@@ -11,8 +11,8 @@ import Link from "Link" /* 1506 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7169 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7172 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -47,10 +47,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRe
   ({ container, body } = tmp4);
   const obj2 = Link;
   if (obj2.useTheme().dark) {
-    tmp5Result = tmp5(10983);
+    tmp5Result = tmp5(10994);
     tmp7 = tmp5;
   } else {
-    tmp5Result = tmp5(10984);
+    tmp5Result = tmp5(10995);
     tmp7 = tmp5;
   }
   if (cResult[0] !== tmp5Result) {
@@ -184,9 +184,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRe
   const tmp6 = React3;
   const tmp9 = FastImageDefault;
   if (theme.dark) {
-    tmp8Result = tmp8(10983);
+    tmp8Result = tmp8(10994);
   } else {
-    tmp8Result = tmp8(10984);
+    tmp8Result = tmp8(10995);
   }
   items = [hasOwnProperty(tmp9, { source: tmp8Result }), , ];
   const obj4 = { variant: "heading-xl/bold", style: tmp.header, children: intl.formatToMarkdownString(intl3.t.JUvC0s, {}) };

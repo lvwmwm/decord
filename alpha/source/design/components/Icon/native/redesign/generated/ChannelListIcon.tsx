@@ -1,14 +1,14 @@
-// Module ID: 18714
-// Function ID: 18715
+// Module ID: 18737
+// Function ID: 18738
 // Name: ChannelListIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 18715, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 18738, 5630, 2]
 
-// Module 18714 (ChannelListIcon)
+// Module 18737 (ChannelListIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 18715 */;
+import AssetRegistry from "AssetRegistry" /* 18738 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,19 +1,19 @@
-// Module ID: 14122
-// Function ID: 14123
+// Module ID: 14140
+// Function ID: 14141
 // Name: getActivityJoinability
-// Dependencies: [1087, 11230, 11227, 11329, 11261, 7355, 14123, 1384, 11224, 11225, 11226, 2]
+// Dependencies: [1087, 11241, 11238, 11340, 11272, 7358, 14141, 1384, 11235, 11236, 11237, 2]
 // Exports: default
 
-// Module 14122 (getActivityJoinability)
+// Module 14140 (getActivityJoinability)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import hasFlagDefault from "hasFlag" /* 7355 */;
-import _slicedToArray from "_slicedToArray" /* 11224 */;
-import hasPartySize from "hasPartySize" /* 11225 */;
-import getIsInParty from "getIsInParty" /* 11227 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11230 */;
-import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 11261 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11329 */;
-import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 14123 */;
+import hasFlagDefault from "hasFlag" /* 7358 */;
+import _slicedToArray from "_slicedToArray" /* 11235 */;
+import hasPartySize from "hasPartySize" /* 11236 */;
+import getIsInParty from "getIsInParty" /* 11238 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11241 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 11272 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11340 */;
+import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 14141 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ export default function getActivityJoinability(arg0) {
       const obj4 = hasPartySize;
       const tmp28 = require;
       if (obj4.hasPartySize(partySize)) {
-        const tmp28Result = tmp28(11226);
+        const tmp28Result = tmp28(11237);
         if (!tmp28Result.isPartyFull(partySize)) {
           const tmp31 = importDefault;
           const tmp32 = constants;
@@ -99,7 +99,7 @@ export default function getActivityJoinability(arg0) {
               return obj.CAN_JOIN;
             }
           }
-          if (tmp31(7355)(activity, tmp32.PARTY_PRIVACY_VOICE_CHANNEL)) {
+          if (tmp31(7358)(activity, tmp32.PARTY_PRIVACY_VOICE_CHANNEL)) {
             const channel = ChannelStore.getChannel(SelectedChannelStore.getVoiceChannelId());
             if (null != channel) {
               if (VoiceStateStore.isInChannel(channel.id, user.id)) {

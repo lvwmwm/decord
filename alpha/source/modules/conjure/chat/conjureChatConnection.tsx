@@ -1,16 +1,17 @@
-// Module ID: 11008
-// Function ID: 11009
+// Module ID: 11020
+// Function ID: 11021
 // Name: conjureChatConnection
-// Dependencies: [584, 1128, 3820, 11009, 11010, 11011, 2]
+// Dependencies: [584, 11006, 1128, 3820, 11021, 11022, 11023, 2]
 // Exports: appendTurnStep, sendFailedStep, sendQueuedMessageAction
 
-// Module 11008 (conjureChatConnection)
+// Module 11020 (conjureChatConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3820 from "module_3820" /* 3820 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 11009 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 11010 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11011 */;
+import conjureAgentReaction from "conjureAgentReaction" /* 11006 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 11021 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 11022 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11023 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -38,7 +39,8 @@ function handleProjectEvent(event, projectId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "CONJURE_CHAT_PROJECT_EVENT", projectId, event };
   obj.dispatch(obj2);
-  if ("app_channel_deleted" !== event.type) {
+  const tmp3 = "app_channel_deleted" !== event.type && "remixed" !== event.type;
+  if (tmp3) {
     obj3 = ConjureActionCreators;
     const result = obj3.refreshConjureInstallState(projectId);
   }
@@ -64,6 +66,7 @@ let obj = {
   bot_removed: handleProjectEvent,
   preview_bot_removed: handleProjectEvent,
   app_channel_deleted: handleProjectEvent,
+  remixed: handleProjectEvent,
   side_reply(id, projectId) {
     projectId = projectId.projectId;
     const obj = DispatcherDefault;
@@ -90,6 +93,17 @@ let obj = {
   }
 };
 let obj2 = {
+  reaction(setting, arg1) {
+    const projectId = arg1.projectId;
+    const obj = conjureAgentReaction;
+    const result = obj.agentReactionFromStep(setting);
+    const tmp3 = null != setting.message_id && null != result;
+    if (tmp3) {
+      obj3 = { type: "CONJURE_CHAT_MESSAGE_REACTION", projectId, id: setting.message_id, reaction: result };
+      const obj2 = DispatcherDefault;
+      obj2.dispatch(obj3);
+    }
+  },
   reply(message, projectId) {
     let obj2;
     projectId = projectId.projectId;
@@ -115,7 +129,7 @@ let obj2 = {
       const tmp13Result = tmp13(584);
       tmp13Result.dispatch(obj3);
       const obj6 = { message: stringResult };
-      const trackConjureErrored = tmp11(11009).trackConjureErrored;
+      const trackConjureErrored = tmp11(11021).trackConjureErrored;
       ConjureAnalytics;
       const merged = Object.assign(tmp);
       trackConjureErrored(projectId, obj6);
@@ -216,7 +230,7 @@ let obj2 = {
       const tmp13Result = tmp13(584);
       tmp13Result.dispatch(obj3);
       const obj6 = { message: stringResult };
-      const trackConjureErrored = tmp11(11009).trackConjureErrored;
+      const trackConjureErrored = tmp11(11021).trackConjureErrored;
       ConjureAnalytics;
       const merged = Object.assign(tmp);
       trackConjureErrored(projectId, obj6);

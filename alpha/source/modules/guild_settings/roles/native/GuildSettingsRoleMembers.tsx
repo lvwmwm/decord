@@ -1,10 +1,10 @@
-// Module ID: 18867
-// Function ID: 18868
+// Module ID: 18890
+// Function ID: 18891
 // Name: GuildSettingsRoleMembers
-// Dependencies: [32, 19, 17, 7173, 1087, 21, 4945, 587, 5625, 1128, 18845, 7354, 504, 5863, 8926, 1202, 1267, 5171, 18846, 2002, 10626, 7903, 6966, 7093, 5648, 5195, 6851, 10948, 2]
+// Dependencies: [32, 19, 17, 7176, 1087, 21, 4945, 587, 5625, 1128, 18868, 7357, 504, 5866, 8938, 1202, 1267, 5171, 18869, 2002, 10637, 7907, 6969, 7096, 5648, 5195, 6854, 10959, 2]
 // Exports: default
 
-// Module 18867 (GuildSettingsRoleMembers)
+// Module 18890 (GuildSettingsRoleMembers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -13,10 +13,10 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5625 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8926 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8938 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7173 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7176 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import size from "module_2" /* 2 */;
@@ -147,7 +147,7 @@ export default function GuildSettingsRoleMembers(guild) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj2 = { guild, role };
-    const tmp3 = asyncRequire(18846, dependencyMap.paths);
+    const tmp3 = asyncRequire(18869, dependencyMap.paths);
     openLazy(tmp3, "role-add-members-" + guild.id + "-" + role.id, obj2);
   }, items3);
   closure_6 = found.useCallback((item) => {

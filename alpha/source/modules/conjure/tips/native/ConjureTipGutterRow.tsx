@@ -1,14 +1,14 @@
-// Module ID: 12181
-// Function ID: 12182
+// Module ID: 12196
+// Function ID: 12197
 // Name: ConjureTipGutterRow
-// Dependencies: [19, 17, 21, 4945, 12182, 5195, 558, 576, 587, 2]
+// Dependencies: [19, 17, 21, 4945, 12197, 5195, 558, 576, 587, 2]
 
-// Module 12181 (ConjureTipGutterRow)
+// Module 12196 (ConjureTipGutterRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12182 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12197 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;

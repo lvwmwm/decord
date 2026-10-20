@@ -1,16 +1,16 @@
-// Module ID: 8948
-// Function ID: 8949
+// Module ID: 8960
+// Function ID: 8961
 // Name: GuildEventCard
-// Dependencies: [19, 17, 5676, 6732, 4806, 21, 4945, 587, 558, 576, 8822, 6644, 504, 8809, 7826, 8949, 6853, 2]
+// Dependencies: [19, 17, 5676, 6735, 4806, 21, 4945, 587, 558, 576, 8834, 6647, 504, 8821, 7830, 8961, 6856, 2]
 
-// Module 8948 (GuildEventCard)
+// Module 8960 (GuildEventCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4806 */;
-import ButtonGroup2 from "ButtonGroup" /* 6644 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6732 */;
-import GuildEventCardComponents from "GuildEventCardComponents" /* 8822 */;
+import ButtonGroup2 from "ButtonGroup" /* 6647 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6735 */;
+import GuildEventCardComponents from "GuildEventCardComponents" /* 8834 */;
 import react from "react" /* 19 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5676 */;
 import Fragment from "Fragment" /* 21 */;
@@ -84,10 +84,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
         cResult[13] = tmp16;
         tmp14 = tmp16;
       }
-      let tmp9 = primaryActionButtonType === tmp(8822).PrimaryActionType.START;
+      let tmp9 = primaryActionButtonType === tmp(8834).PrimaryActionType.START;
       if (tmp9) {
         const obj5 = { event };
-        tmp9 = metroImportDefault(tmp(8822).GuildEventCardRSVPAction, obj5);
+        tmp9 = metroImportDefault(tmp(8834).GuildEventCardRSVPAction, obj5);
       }
       cResult[4] = event;
       cResult[5] = primaryActionButtonType;
@@ -117,7 +117,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildE
   const tmp5 = metroImportAll;
   if (tmp6Result) {
     const obj3 = { event };
-    tmp6Result = tmp6(tmp2(8822).GuildEventCardRSVPAction, obj3);
+    tmp6Result = tmp6(tmp2(8834).GuildEventCardRSVPAction, obj3);
   }
   items[1] = tmp6Result;
   items[2] = metroImportDefault(GuildEventCardComponents.GuildEventShareAction, { event });

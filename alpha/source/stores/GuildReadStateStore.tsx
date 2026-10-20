@@ -1,9 +1,9 @@
-// Module ID: 6762
-// Function ID: 6763
+// Module ID: 6765
+// Function ID: 6766
 // Name: GuildReadStateStore
-// Dependencies: [6763, 6735, 6718, 4882, 4804, 4818, 502, 4800, 4822, 1086, 4880, 6719, 4851, 6652, 1392, 1087, 4807, 6653, 6761, 11, 6629, 4825, 12, 4888, 2]
+// Dependencies: [6766, 6738, 6721, 4882, 4804, 4818, 502, 4800, 4822, 1086, 4880, 6722, 4851, 6655, 1392, 1087, 4807, 6656, 6764, 11, 6632, 4825, 12, 4888, 2]
 
-// Module 6762 (GuildReadStateStore)
+// Module 6765 (GuildReadStateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1087 */;
@@ -11,11 +11,11 @@ import ChannelConstants from "ChannelConstants" /* 4807 */;
 import GuildRecord from "GuildRecord" /* 4818 */;
 import FavoritesUtils from "FavoritesUtils" /* 4825 */;
 import ThreadActionUtils from "ThreadActionUtils" /* 4888 */;
-import NSFWContentGate from "NSFWContentGate" /* 6629 */;
-import isOptInEnabled from "isOptInEnabled" /* 6761 */;
-import RecentMentionsStore from "RecentMentionsStore" /* 6763 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6735 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6718 */;
+import NSFWContentGate from "NSFWContentGate" /* 6632 */;
+import isOptInEnabled from "isOptInEnabled" /* 6764 */;
+import RecentMentionsStore from "RecentMentionsStore" /* 6766 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6738 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6721 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4882 */;
 import ChannelRecord from "ChannelRecord" /* 4804 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -23,11 +23,11 @@ import ChannelStore from "ChannelStore" /* 4800 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1086 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
-import ReadStateStore from "ReadStateStore" /* 6719 */;
+import ReadStateStore from "ReadStateStore" /* 6722 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6652 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6655 */;
 import UserStore from "UserStore" /* 1392 */;
-import ReadStateConstants from "ReadStateConstants" /* 6653 */;
+import ReadStateConstants from "ReadStateConstants" /* 6656 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let c9;
 let closure_21;
 let closure_22;
 let metroImportAll;
-const f95523 = (item) => {
+const f95624 = (item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -133,7 +133,7 @@ function isCountableChannel(channel, mentionCount) {
 }
 function updateNotificationCenterMentions(mentionCounts, mentionCounts2) {
   let c1;
-  const f95524 = (item) => {
+  const f95625 = (item) => {
     const _ackMessageId = notifCenterReadState1._ackMessageId;
     const lastMessageIdResult = ReadStateStore.lastMessageId(item);
     const obj = c1(notifCenterReadState[19]);
@@ -153,7 +153,7 @@ function updateNotificationCenterMentions(mentionCounts, mentionCounts2) {
     if (null != notifCenterReadState) {
       const obj2 = require("SnowflakeUtils");
       const keys = obj2.keys(mentionCounts.mentionCounts);
-      const item = keys.forEach(f95524);
+      const item = keys.forEach(f95625);
     }
     closure_0 = mentionCounts2;
     let closure_1 = 0;
@@ -167,7 +167,7 @@ function updateNotificationCenterMentions(mentionCounts, mentionCounts2) {
     if (!tmp14) {
       const obj3 = require("SnowflakeUtils");
       const keys1 = obj3.keys(mentionCounts2.mentionCounts);
-      const item1 = keys1.forEach(f95524);
+      const item1 = keys1.forEach(f95625);
     }
     let num2;
     const _Math = Math;
@@ -184,7 +184,7 @@ function updateNotificationCenterMentions(mentionCounts, mentionCounts2) {
 function aggregateGuildState(guild_id, unreadByType, unread) {
   let closure_0 = unreadByType;
   const entries = Object.entries(unreadByType.unreadByType);
-  unreadByType.unread = entries.some(f95523);
+  unreadByType.unread = entries.some(f95624);
   unreadByType.lowImportanceMentionCount = 0;
   unreadByType.highImportanceMentionCount = 0;
   const arr = SnowflakeUtilsDefault;
@@ -410,7 +410,7 @@ function recountGuild(guildId, arg1) {
     if (tmp2 == null) {
       tmp7 = tmp3;
     }
-    const obj = { unread: entries.some(f95523), unreadByType: {}, unreadChannelId: null, lowImportanceMentionCount: 0, highImportanceMentionCount: 0, mentionCounts: {}, ncMentionCount: 0, sentinel: num };
+    const obj = { unread: entries.some(f95624), unreadByType: {}, unreadChannelId: null, lowImportanceMentionCount: 0, highImportanceMentionCount: 0, mentionCounts: {}, ncMentionCount: 0, sentinel: num };
     num = undefined;
     if (tmp5[tmp7] != null) {
       num = tmp8.sentinel;

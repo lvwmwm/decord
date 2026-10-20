@@ -1,21 +1,21 @@
-// Module ID: 15236
-// Function ID: 15237
+// Module ID: 15254
+// Function ID: 15255
 // Name: RefreshEmptyState
-// Dependencies: [109, 19, 17, 1087, 21, 4945, 6599, 587, 558, 576, 5631, 8887, 5205, 4952, 2]
+// Dependencies: [109, 19, 17, 1087, 21, 4945, 6602, 587, 558, 576, 5631, 8899, 5205, 4952, 2]
 
-// Module 15236 (RefreshEmptyState)
+// Module 15254 (RefreshEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import shared from "shared" /* 4952 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8887 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8899 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
-import TextStyles_mod from "TextStyles" /* 6599 */;
+import TextStyles_mod from "TextStyles" /* 6602 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

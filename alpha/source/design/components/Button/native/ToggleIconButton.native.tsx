@@ -1,19 +1,19 @@
-// Module ID: 12333
-// Function ID: 12334
+// Module ID: 12350
+// Function ID: 12351
 // Name: ToggleIconButton
-// Dependencies: [109, 19, 21, 558, 576, 12334, 7904, 2]
+// Dependencies: [109, 19, 21, 558, 576, 12351, 7908, 2]
 
-// Module 12333 (ToggleIconButton)
+// Module 12350 (ToggleIconButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useToggleButtonProps from "useToggleButtonProps" /* 12334 */;
+import useToggleButtonProps from "useToggleButtonProps" /* 12351 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const BaseIconButton2 = tmp2(7904);
+const BaseIconButton2 = tmp2(7908);
 let closure_2 = ["pressed", "selectedIcon", "variant", "icon", "ref"];
 const jsx = Fragment.jsx;
 let closure_5 = { default: { off: "toggle-icon-default-off", on: "toggle-icon-default-on" }, critical: { off: "toggle-icon-critical-off", on: "toggle-icon-critical-on" }, "icon-only": { off: "toggle-icon-only-off", on: "toggle-icon-only-on" } };
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ToggleIcon
             return tmp25;
           }
         }
-        const BaseIconButton = tmp(7904).BaseIconButton;
+        const BaseIconButton = tmp(7908).BaseIconButton;
         const merged = Object.assign(toggleIconButtonProps);
         const tmp30 = <BaseIconButton ref={tmp6} variant={tmp24} />;
         cResult[16] = tmp6;

@@ -1,9 +1,9 @@
-// Module ID: 13816
-// Function ID: 13817
+// Module ID: 13834
+// Function ID: 13835
 // Name: ConversationCoachmark
-// Dependencies: [32, 19, 17, 4797, 21, 4784, 4945, 587, 558, 576, 5195, 1128, 7442, 9756, 2]
+// Dependencies: [32, 19, 17, 4797, 21, 4784, 4945, 587, 558, 576, 5195, 1128, 7445, 9768, 2]
 
-// Module 13816 (ConversationCoachmark)
+// Module 13834 (ConversationCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -205,7 +205,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
   ({ children, isLast } = arg0);
   const tmp = closure_9();
   const ref = react.useRef(null);
-  let obj = first(7442);
+  let obj = first(7445);
   const tmp3 = _slicedToArray(obj.useSelectedDismissibleContent(items), 2);
   first = tmp3[0];
   dependencyMap = tmp5;
@@ -229,7 +229,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
     intl2 = intl3.intl;
     return obj;
   }, items);
-  const obj2 = first(9756);
+  const obj2 = first(9768);
   const coachmark = obj2.useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   let coachmarkWrapper;

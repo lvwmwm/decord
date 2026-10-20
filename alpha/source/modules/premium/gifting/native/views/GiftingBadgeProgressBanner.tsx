@@ -1,17 +1,17 @@
-// Module ID: 10432
-// Function ID: 10433
+// Module ID: 10443
+// Function ID: 10444
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 587, 4945, 558, 576, 7199, 1275, 9279, 10423, 1128, 2622, 5195, 2]
+// Dependencies: [19, 17, 21, 587, 4945, 558, 576, 7202, 1275, 9291, 10434, 1128, 2622, 5195, 2]
 
-// Module 10432 (GiftingBadgeProgressBanner)
+// Module 10443 (GiftingBadgeProgressBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import _modDef2622 from "module_2622" /* 2622 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7199 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9279 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7202 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9291 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -81,7 +81,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBad
         let tmp15 = null != nextTierIcon;
         if (tmp15) {
           const obj3 = { icon: nextTierIcon, size: PX_40 };
-          tmp15 = React3(tmp7(10423), obj3);
+          tmp15 = React3(tmp7(10434), obj3);
         }
         cResult[7] = nextTierIcon;
         cResult[8] = tmp15;
@@ -177,7 +177,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBad
   const tmp8 = hasOwnProperty;
   if (tmp10Result) {
     const obj4 = { icon: nextTierIcon, size: PX_40 };
-    tmp10Result = tmp10(tmp2(10423), obj4);
+    tmp10Result = tmp10(tmp2(10434), obj4);
   }
   items2 = [React3(View, obj3), ];
   const obj5 = { variant: "text-md/semibold", children: intl.formatToPlainString(_modDef2622["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName }) };

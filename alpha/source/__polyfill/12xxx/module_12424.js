@@ -1,31 +1,24 @@
 // Module ID: 12424
 // Function ID: 12425
-// Dependencies: [12407, 12408]
-// Exports: getMainCarrier, getSentryCarrier
+// Dependencies: [12425]
+// Exports: getGlobalSingleton
 
 // Module 12424
-import _mod12407 from "module_12407" /* 12407 */;
-import _mod12408 from "module_12408" /* 12408 */;
+import _mod12425 from "module_12425" /* 12425 */;
 
 
-export const getMainCarrier = function getMainCarrier() {
-  const GLOBAL_OBJ = _mod12407.GLOBAL_OBJ;
-  const tmp3 = GLOBAL_OBJ.__SENTRY__ || {};
-  GLOBAL_OBJ.__SENTRY__ = tmp3;
-  tmp3.version = tmp3.version || _mod12408.SDK_VERSION;
-  tmp3.version || _mod12408.SDK_VERSION;
-  const SDK_VERSION = tmp(12408).SDK_VERSION;
-  tmp3[SDK_VERSION] = tmp3[_mod12408.SDK_VERSION] || {};
-  tmp3[_mod12408.SDK_VERSION] || {};
-  return _mod12407.GLOBAL_OBJ;
-};
-export const getSentryCarrier = function getSentryCarrier(__SENTRY__) {
-  const tmp = __SENTRY__.__SENTRY__ || {};
-  __SENTRY__.__SENTRY__ = tmp;
-  const SDK_VERSION = tmp.version || _mod12408.SDK_VERSION;
-  tmp.version = SDK_VERSION;
-  const SDK_VERSION2 = _mod12408.SDK_VERSION;
-  const tmp4 = tmp[_mod12408.SDK_VERSION] || {};
-  tmp[SDK_VERSION2] = tmp4;
+export const GLOBAL_OBJ = globalThis;
+export const getGlobalSingleton = function getGlobalSingleton(arg0, fn, arg2) {
+  const tmp2 = (arg2 || globalThis).__SENTRY__ || {};
+  (arg2 || globalThis).__SENTRY__ = tmp2;
+  const SDK_VERSION = _mod12425.SDK_VERSION;
+  const tmp3 = tmp2[_mod12425.SDK_VERSION] || {};
+  tmp2[SDK_VERSION] = tmp3;
+  let tmp4 = tmp3[arg0];
+  if (!tmp4) {
+    const tmp6 = fn();
+    tmp3[arg0] = tmp6;
+    tmp4 = tmp6;
+  }
   return tmp4;
 };

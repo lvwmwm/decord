@@ -1,20 +1,20 @@
-// Module ID: 18270
-// Function ID: 18271
+// Module ID: 18293
+// Function ID: 18294
 // Name: useSpeakerTooltips
-// Dependencies: [32, 19, 18268, 10691, 4797, 21, 18271, 18235, 11439, 10692, 5014, 7442, 18215, 1128, 4784, 18273, 558, 576, 9756, 2]
+// Dependencies: [32, 19, 18291, 10702, 4797, 21, 18294, 18258, 11450, 10703, 5014, 7445, 18238, 1128, 4784, 18296, 558, 576, 9768, 2]
 // Exports: default
 
-// Module 18270 (useSpeakerTooltips)
+// Module 18293 (useSpeakerTooltips)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10691 */;
-import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 18273 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10702 */;
+import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 18296 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 18268 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 18291 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let hasOwnProperty;
 let metroRequire;
 let tmp;
 const dismissible_content = tmp(4784);
-const useCoachmark = tmp(9756);
+const useCoachmark = tmp(9768);
 let _slicedToArray = _slicedToArray_mod;
 ({ setVoiceUpsellDismissed: hasOwnProperty, useConsoleVoiceUpsellStore: metroRequire } = ConsoleVoiceUpsellStore);
 let VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;

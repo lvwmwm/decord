@@ -1,14 +1,14 @@
-// Module ID: 8509
-// Function ID: 8510
+// Module ID: 8513
+// Function ID: 8514
 // Name: AnnouncementsLockIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8483, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8487, 5630, 2]
 
-// Module 8509 (AnnouncementsLockIcon)
+// Module 8513 (AnnouncementsLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 8483 */;
+import AssetRegistry from "AssetRegistry" /* 8487 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

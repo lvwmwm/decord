@@ -1,12 +1,12 @@
-// Module ID: 7299
-// Function ID: 7300
+// Module ID: 7302
+// Function ID: 7303
 // Name: CreatorMonetizationRestrictionsHooks
-// Dependencies: [19, 4873, 4822, 1087, 558, 576, 7300, 7301, 504, 4872, 2]
+// Dependencies: [19, 4873, 4822, 1087, 558, 576, 7303, 7304, 504, 4872, 2]
 
-// Module 7299 (CreatorMonetizationRestrictionsHooks)
+// Module 7302 (CreatorMonetizationRestrictionsHooks)
 import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4873 */;
-import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 7300 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7301 */;
+import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 7303 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7304 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import Constants from "Constants" /* 1087 */;
@@ -583,14 +583,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMonetiz
   let obj3;
   let restrictions;
   let restrictionsLoading;
-  const f96889 = () => GuildStore.getGuild(closure_0);
+  const f96990 = () => GuildStore.getGuild(closure_0);
   _require = arg0;
   const items = [GuildStore];
   const items1 = [arg0];
   const obj = require("get initialized");
   const obj2 = { isMonetizationReapplicationDisabled: obj3.isRestrictedFromMonetizationReapplication(restrictions), restrictionsLoading };
-  ({ restrictions, restrictionsLoading } = closure_10(obj.useStateFromStores(items, f96889, items1)));
-  closure_10(obj.useStateFromStores(items, f96889, items1));
+  ({ restrictions, restrictionsLoading } = closure_10(obj.useStateFromStores(items, f96990, items1)));
+  closure_10(obj.useStateFromStores(items, f96990, items1));
   obj3 = require("CreatorMonetizationRestrictionsUtils");
   return obj2;
 });

@@ -1,19 +1,19 @@
-// Module ID: 13098
-// Function ID: 13099
+// Module ID: 13116
+// Function ID: 13117
 // Name: ApplicationCommandsCategories
-// Dependencies: [19, 17, 4860, 13093, 21, 4945, 587, 558, 576, 504, 12925, 5631, 1128, 6856, 5173, 5174, 7168, 2]
+// Dependencies: [19, 17, 4860, 13111, 21, 4945, 587, 558, 576, 504, 12943, 5631, 1128, 6859, 5173, 5174, 7171, 2]
 
-// Module 13098 (ApplicationCommandsCategories)
+// Module 13116 (ApplicationCommandsCategories)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import HapticUtils from "HapticUtils" /* 5173 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5174 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 12925 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 12943 */;
 import react_mod from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4860 */;
-import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 13093 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 13111 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -182,7 +182,7 @@ let closure_9 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Ca
     return obj.getApplicationCommandsIconSource(section, stateFromStores);
   }, items1);
   null != memo && jsx(FastImageDefault, { style: tmp.categoryImage, source: memo });
-  const PressableOpacity = tmp2(6856).PressableOpacity;
+  const PressableOpacity = tmp2(6859).PressableOpacity;
   const intl = tmp2(1128).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = tmp2(1128).t;

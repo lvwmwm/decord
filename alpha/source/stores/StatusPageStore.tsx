@@ -1,9 +1,9 @@
-// Module ID: 14866
-// Function ID: 14867
+// Module ID: 14884
+// Function ID: 14885
 // Name: StatusPageStore
 // Dependencies: [510, 504, 584, 2]
 
-// Module 14866 (StatusPageStore)
+// Module 14884 (StatusPageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

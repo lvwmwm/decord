@@ -1,9 +1,9 @@
-// Module ID: 7377
-// Function ID: 7378
+// Module ID: 7380
+// Function ID: 7381
 // Name: SimpleLoadingModalUI
-// Dependencies: [19, 17, 21, 4945, 558, 576, 6828, 2]
+// Dependencies: [19, 17, 21, 4945, 558, 576, 6831, 2]
 
-// Module 7377 (SimpleLoadingModalUI)
+// Module 7380 (SimpleLoadingModalUI)
 import Fragment from "Fragment" /* 21 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,9 +1,9 @@
-// Module ID: 17129
-// Function ID: 17130
+// Module ID: 17148
+// Function ID: 17149
 // Name: ExternalLink
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 6985, 1505, 7015, 1128, 5195, 5205, 6644, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 6988, 1505, 7018, 1128, 5195, 5205, 6647, 2]
 
-// Module 17129 (ExternalLink)
+// Module 17148 (ExternalLink)
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -54,7 +54,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalLink
   const obj = externalURL(576);
   const cResult = obj.c(22);
   externalURL = externalURL.externalURL;
-  const tmp5 = closure_9(navigation(6985)());
+  const tmp5 = closure_9(navigation(6988)());
   const obj2 = externalURL(1505);
   const tmp4 = navigation;
   navigation = obj2.useNavigation();
@@ -87,7 +87,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalLink
   const container = tmp5.container;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { children: intl.string(externalURL(1128).t["0Niu/F"]) };
-    const tmp4Result = tmp4(7015);
+    const tmp4Result = tmp4(7018);
     intl = tmp(1128).intl;
     const tmp14 = closure_7(tmp4Result, obj3);
     cResult[5] = tmp14;
@@ -182,7 +182,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalLink
   }
   const obj9 = { children: items3 };
   items3 = [tmp24, tmp29];
-  const tmp33 = closure_8(externalURL(6644).ButtonGroup, obj9);
+  const tmp33 = closure_8(externalURL(6647).ButtonGroup, obj9);
   cResult[15] = tmp24;
   cResult[16] = tmp29;
   cResult[17] = tmp33;

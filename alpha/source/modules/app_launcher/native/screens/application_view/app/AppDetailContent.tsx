@@ -1,10 +1,10 @@
-// Module ID: 11980
-// Function ID: 11981
+// Module ID: 11994
+// Function ID: 11995
 // Name: AppDetailContent
-// Dependencies: [5, 19, 17, 9564, 1504, 1087, 5938, 21, 4945, 11981, 587, 558, 576, 11889, 6851, 10960, 7576, 11275, 11954, 1128, 1633, 10121, 2000, 11985, 9563, 5595, 11886, 1384, 11987, 5195, 11989, 11951, 11991, 9562, 1202, 11998, 12000, 5171, 5673, 11035, 2]
+// Dependencies: [5, 19, 17, 9577, 1504, 1087, 5941, 21, 4945, 11995, 587, 558, 576, 11903, 6854, 10971, 7579, 11286, 11968, 1128, 1633, 10132, 2000, 11999, 9576, 5595, 11900, 1384, 12001, 5195, 12003, 11965, 12005, 9575, 1202, 12012, 12014, 5171, 5673, 11047, 2]
 // Exports: default
 
-// Module 11980 (AppDetailContent)
+// Module 11994 (AppDetailContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,20 +13,20 @@ import intl3 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5595 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5673 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5938 */;
-import TableRow2 from "TableRow" /* 6851 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7576 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9563 */;
-import AppLauncherContext from "AppLauncherContext" /* 10960 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11886 */;
-import usePlaceholderSize from "usePlaceholderSize" /* 11889 */;
-import CommandRowButtonDefault from "CommandRowButton" /* 11954 */;
-import Header from "Header" /* 11981 */;
-import BillIcon from "BillIcon" /* 11987 */;
-import ShopIcon from "ShopIcon" /* 11989 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5941 */;
+import TableRow2 from "TableRow" /* 6854 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7579 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9576 */;
+import AppLauncherContext from "AppLauncherContext" /* 10971 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11900 */;
+import usePlaceholderSize from "usePlaceholderSize" /* 11903 */;
+import CommandRowButtonDefault from "CommandRowButton" /* 11968 */;
+import Header from "Header" /* 11995 */;
+import BillIcon from "BillIcon" /* 12001 */;
+import ShopIcon from "ShopIcon" /* 12003 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9564 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9577 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -474,7 +474,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRow(c
   let onPressSend;
   ({ isFirstRow, isLastRow, onExecuteCommand, installOnDemand, icon } = command);
   let tmp = command;
-  let obj = command(10960);
+  let obj = command(10971);
   const entrypoint = obj.useAppLauncherContext().entrypoint;
   const tmp3 = onPressSend(true, true);
   hasOptions(context, true, true);
@@ -494,8 +494,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRow(c
     sectionName
   };
   fn = undefined;
-  const useCommandRowSend = command(11954).useCommandRowSend;
-  const tmp5 = command(11954);
+  const useCommandRowSend = command(11968).useCommandRowSend;
+  const tmp5 = command(11968);
   if (installOnDemand) {
     let closure_0 = _asyncToGenerator(async (arg0, value) => {
       let obj5;
@@ -601,7 +601,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRow(c
     onAccessibilityAction: callback,
     trailing: closure_13(CommandRowButtonDefault, { hasOptions, sending, onPressSend })
   };
-  const TableRow = tmp(6851).TableRow;
+  const TableRow = tmp(6854).TableRow;
   return closure_13(TableRow, obj3);
 });
 let closure_20 = tmp6;

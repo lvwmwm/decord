@@ -1,10 +1,10 @@
-// Module ID: 15645
-// Function ID: 15646
+// Module ID: 15664
+// Function ID: 15665
 // Name: ColorPickerUtils
 // Dependencies: [2]
 // Exports: hslToRgbWorklet, hsvToRgbWorklet, normalizeValue
 
-// Module 15645 (ColorPickerUtils)
+// Module 15664 (ColorPickerUtils)
 import size from "module_2" /* 2 */;
 
 function normalizeValue(arg0) {

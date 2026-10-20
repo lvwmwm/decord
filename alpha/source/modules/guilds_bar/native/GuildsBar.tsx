@@ -1,16 +1,16 @@
-// Module ID: 17459
-// Function ID: 17460
+// Module ID: 17478
+// Function ID: 17479
 // Name: GuildsBar
-// Dependencies: [19, 21, 4945, 558, 576, 1384, 5784, 17460, 17468, 17337, 7115, 17532, 6834, 12854, 5258, 2]
+// Dependencies: [19, 21, 4945, 558, 576, 1384, 5784, 17479, 17487, 17356, 7118, 17551, 6837, 12872, 5258, 2]
 
-// Module 17459 (GuildsBar)
-import NativeViewDefault from "NativeView" /* 6834 */;
-import FastListDefault from "FastList" /* 7115 */;
-import StartupProfilerDefault from "StartupProfiler" /* 12854 */;
-import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 17337 */;
-import useGuildsBarGestureDefault from "useGuildsBarGesture" /* 17460 */;
-import useGuildsBarPropsDefault from "useGuildsBarProps" /* 17468 */;
-import GuildsBarDragPreviewDefault from "GuildsBarDragPreview" /* 17532 */;
+// Module 17478 (GuildsBar)
+import NativeViewDefault from "NativeView" /* 6837 */;
+import FastListDefault from "FastList" /* 7118 */;
+import StartupProfilerDefault from "StartupProfiler" /* 12872 */;
+import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 17356 */;
+import useGuildsBarGestureDefault from "useGuildsBarGesture" /* 17479 */;
+import useGuildsBarPropsDefault from "useGuildsBarProps" /* 17487 */;
+import GuildsBarDragPreviewDefault from "GuildsBarDragPreview" /* 17551 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -252,7 +252,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                       }
                       return tmp26;
                     }
-                    const obj3 = { profile: fastListRef(12854).Profiles.Guilds, children: closure_4(fastListRef(5258).GestureDetector, obj4) };
+                    const obj3 = { profile: fastListRef(12872).Profiles.Guilds, children: closure_4(fastListRef(5258).GestureDetector, obj4) };
                     obj4 = { gesture, children: tmp23 };
                     const tmp6Result = StartupProfilerDefault;
                     const tmp29 = closure_4(tmp6Result, obj3);
@@ -324,7 +324,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const result = obj.registerGuildVisibilityMethod(fastListRef);
   }, items);
   closure_7(listProps, fastListRef);
-  let obj = { profile: fastListRef(12854).Profiles.Guilds, children: closure_4(GestureDetector, obj2) };
+  let obj = { profile: fastListRef(12872).Profiles.Guilds, children: closure_4(GestureDetector, obj2) };
   const tmp9 = StartupProfilerDefault;
   obj2 = { gesture, children: tmp10(tmp11, obj3) };
   GestureDetector = fastListRef(5258).GestureDetector;

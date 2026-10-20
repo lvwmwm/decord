@@ -1,9 +1,9 @@
-// Module ID: 18170
-// Function ID: 18171
+// Module ID: 18193
+// Function ID: 18194
 // Name: VoicePanelPIPConstants
 // Dependencies: [2]
 
-// Module 18170 (VoicePanelPIPConstants)
+// Module 18193 (VoicePanelPIPConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPConstants.tsx");

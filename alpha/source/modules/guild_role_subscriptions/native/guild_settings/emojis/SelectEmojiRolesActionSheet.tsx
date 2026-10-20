@@ -1,21 +1,21 @@
-// Module ID: 19038
-// Function ID: 19039
+// Module ID: 19061
+// Function ID: 19062
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 1206, 1098, 21, 4945, 587, 6599, 558, 576, 16299, 8871, 5195, 1128, 1202, 6856, 7194, 7115, 7244, 2]
+// Dependencies: [32, 19, 17, 1206, 1098, 21, 4945, 587, 6602, 558, 576, 16318, 8883, 5195, 1128, 1202, 6859, 7197, 7118, 7247, 2]
 
-// Module 19038 (SelectEmojiRolesActionSheet)
+// Module 19061 (SelectEmojiRolesActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import native from "native" /* 1202 */;
 import FormConstants from "FormConstants" /* 1206 */;
-import Pressables from "Pressables" /* 6856 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16299 */;
+import Pressables from "Pressables" /* 6859 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16318 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
-import TextStyles_mod from "TextStyles" /* 6599 */;
+import TextStyles_mod from "TextStyles" /* 6602 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,8 +33,8 @@ let obj6;
 let obj7;
 let tmp5;
 const intl5 = tmp5(1128);
-const BottomSheetTitleHeader2 = tmp5(7194);
-const ActionSheet2 = tmp5(7244);
+const BottomSheetTitleHeader2 = tmp5(7197);
+const ActionSheet2 = tmp5(7247);
 let react = react_mod;
 const View = react_native.View;
 const FORM_ROW_VERTICAL_PADDING = FormConstants.FORM_ROW_VERTICAL_PADDING;
@@ -113,7 +113,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectEmoji
   } else {
     tmp13 = cResult[2];
   }
-  const tmpResult = tmp(16299);
+  const tmpResult = tmp(16318);
   const subscriptionListingsForGuild = tmpResult.useSubscriptionListingsForGuild(guildId, tmp13);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     function toggleRole(arg0) {
@@ -206,7 +206,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectEmoji
                         }
                         if (cResult[29] !== tmp24) {
                           let obj3 = { title: tmp27, subtitle: tmp28, trailing: tmp24 };
-                          const tmp33 = closure_6(tmp(7194).BottomSheetTitleHeader, obj3);
+                          const tmp33 = closure_6(tmp(7197).BottomSheetTitleHeader, obj3);
                           cResult[29] = tmp24;
                           cResult[30] = tmp33;
                           tmp31 = tmp33;
@@ -237,7 +237,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectEmoji
                               }
                             }
                             let obj4 = { scrollable: true, header: tmp31, startExpanded: true, onDismiss: onCancel, children: tmp35 };
-                            const tmp42 = closure_6(tmp(7244).ActionSheet, obj4);
+                            const tmp42 = closure_6(tmp(7247).ActionSheet, obj4);
                             cResult[37] = tmp31;
                             cResult[38] = onCancel;
                             cResult[39] = tmp35;
@@ -246,7 +246,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectEmoji
                           }
                         }
                         let obj5 = { inActionSheet: true, style: tmp4.list, itemSize, sections: tmp34, renderItem: tmp16 };
-                        const tmp39 = closure_6(emoji(7115), obj5);
+                        const tmp39 = closure_6(emoji(7118), obj5);
                         cResult[33] = tmp16;
                         cResult[34] = tmp4.list;
                         cResult[35] = tmp34;
@@ -255,7 +255,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectEmoji
                       }
                     }
                     let obj6 = { onPress: tmp15, disabled: first1.size <= 0, accessibilityRole: "button", children: tmp21 };
-                    const tmp26 = closure_6(tmp(6856).PressableOpacity, obj6);
+                    const tmp26 = closure_6(tmp(6859).PressableOpacity, obj6);
                     cResult[23] = tmp15;
                     cResult[24] = tmp21;
                     cResult[25] = first1.size <= 0;
@@ -410,7 +410,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectEmoji
   const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl3 = intl5.intl;
   intl4 = intl5.intl;
-  let obj5 = { scrollable: true, header: tmp7(BottomSheetTitleHeader, obj4), startExpanded: true, onDismiss: onCancel, children: tmp7(emoji(7115), obj6) };
+  let obj5 = { scrollable: true, header: tmp7(BottomSheetTitleHeader, obj4), startExpanded: true, onDismiss: onCancel, children: tmp7(emoji(7118), obj6) };
   tmp7(BottomSheetTitleHeader, obj4);
   const ActionSheet = ActionSheet2.ActionSheet;
   obj6 = {

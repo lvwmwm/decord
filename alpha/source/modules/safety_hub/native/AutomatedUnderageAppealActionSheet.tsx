@@ -1,22 +1,22 @@
-// Module ID: 12645
-// Function ID: 12646
+// Module ID: 12662
+// Function ID: 12663
 // Name: AutomatedUnderageAppealActionSheet
-// Dependencies: [19, 17, 7866, 7842, 21, 4945, 587, 1128, 558, 576, 504, 1633, 12644, 7827, 6605, 5171, 5622, 5195, 6851, 6935, 12642, 5205, 5230, 5226, 2]
+// Dependencies: [19, 17, 7870, 7846, 21, 4945, 587, 1128, 558, 576, 504, 1633, 12661, 7831, 6608, 5171, 5622, 5195, 6854, 6938, 12659, 5205, 5230, 5226, 2]
 
-// Module 12645 (AutomatedUnderageAppealActionSheet)
+// Module 12662 (AutomatedUnderageAppealActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1128 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6605 */;
-import TableRow2 from "TableRow" /* 6851 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7827 */;
-import SafetyHubActionCreators from "SafetyHubActionCreators" /* 12642 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12644 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6608 */;
+import TableRow2 from "TableRow" /* 6854 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7831 */;
+import SafetyHubActionCreators from "SafetyHubActionCreators" /* 12659 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12661 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7866 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7842 */;
+import SafetyHubStore from "SafetyHubStore" /* 7870 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7846 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -354,7 +354,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomatedUnd
             const result = obj2.start_verification_check();
           }
         }
-        const obj4 = { children: closure_8(tmp(6935).TableRowGroup, tmp37) };
+        const obj4 = { children: closure_8(tmp(6938).TableRowGroup, tmp37) };
         class E {
           constructor() {
             return L.getIsLoadingAgeVerification();
@@ -424,7 +424,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomatedUnd
           }
         }
         obj7 = { label: intl.string(tmp(1128).t.N9WJMM), subLabel: intl2.string(tmp(1128).t.NHq382), onPress: tmp18, arrow: true, start: true, end: true };
-        TableRow = tmp(6851).TableRow;
+        TableRow = tmp(6854).TableRow;
         intl = tmp(1128).intl;
         intl2 = tmp(1128).intl;
         const tmp43 = closure_8(tmp42, obj5);
@@ -735,11 +735,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomatedUnd
       return metroImportAll(TableRow, obj, index);
     })
   };
-  TableRowGroup = onClose(6935).TableRowGroup;
+  TableRowGroup = onClose(6938).TableRowGroup;
   items6[1] = closure_8(callback, obj10);
   const obj12 = { style: tmp.moreInfo, children: closure_8(TableRowGroup2, obj13) };
   obj13 = { title: intl3.string(onClose(1128).t.WPwp1b), hasIcons: false, children: closure_8(TableRow, obj14) };
-  TableRowGroup2 = onClose(6935).TableRowGroup;
+  TableRowGroup2 = onClose(6938).TableRowGroup;
   intl3 = onClose(1128).intl;
   obj14 = {
     label: intl4.string(onClose(1128).t.N9WJMM),
@@ -752,7 +752,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomatedUnd
     start: true,
     end: true
   };
-  TableRow = onClose(6851).TableRow;
+  TableRow = onClose(6854).TableRow;
   intl4 = onClose(1128).intl;
   intl5 = onClose(1128).intl;
   items6[2] = closure_8(callback, obj12);

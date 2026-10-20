@@ -1,16 +1,16 @@
-// Module ID: 15723
-// Function ID: 15724
+// Module ID: 15742
+// Function ID: 15743
 // Name: useTryItOutProfileTheme
-// Dependencies: [8574, 558, 576, 8600, 504, 8643, 8583, 8557, 587, 2]
+// Dependencies: [8586, 558, 576, 8612, 504, 8655, 8595, 8563, 587, 2]
 
-// Module 15723 (useTryItOutProfileTheme)
+// Module 15742 (useTryItOutProfileTheme)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import useAvatarColor from "useAvatarColor" /* 8557 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8583 */;
-import useDisplayProfileDefault from "useDisplayProfile" /* 8600 */;
-import useProfileThemeDefault from "useProfileTheme" /* 8643 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8574 */;
+import useAvatarColor from "useAvatarColor" /* 8563 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 8595 */;
+import useDisplayProfileDefault from "useDisplayProfile" /* 8612 */;
+import useProfileThemeDefault from "useProfileTheme" /* 8655 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8586 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

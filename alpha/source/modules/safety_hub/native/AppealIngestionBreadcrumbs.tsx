@@ -1,9 +1,9 @@
-// Module ID: 12671
-// Function ID: 12672
+// Module ID: 12688
+// Function ID: 12689
 // Name: AppealIngestionBreadcrumbs
 // Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1128, 5195, 2]
 
-// Module 12671 (AppealIngestionBreadcrumbs)
+// Module 12688 (AppealIngestionBreadcrumbs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5195 */;

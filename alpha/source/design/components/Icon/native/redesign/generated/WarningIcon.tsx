@@ -1,14 +1,14 @@
-// Module ID: 7901
-// Function ID: 7902
+// Module ID: 7905
+// Function ID: 7906
 // Name: WarningIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 7902, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 7906, 5630, 2]
 
-// Module 7901 (WarningIcon)
+// Module 7905 (WarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 7902 */;
+import AssetRegistry from "AssetRegistry" /* 7906 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

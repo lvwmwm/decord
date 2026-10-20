@@ -1,9 +1,9 @@
-// Module ID: 16769
-// Function ID: 16770
+// Module ID: 16788
+// Function ID: 16789
 // Name: button
 // Dependencies: [19, 21, 558, 576, 5205, 2]
 
-// Module 16769 (button)
+// Module 16788 (button)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;

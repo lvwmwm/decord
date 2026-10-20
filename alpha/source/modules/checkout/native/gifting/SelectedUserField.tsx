@@ -1,17 +1,17 @@
-// Module ID: 10531
-// Function ID: 10532
+// Module ID: 10542
+// Function ID: 10543
 // Name: SelectedUserField
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1128, 4994, 7094, 1202, 5195, 6966, 6971, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1128, 4994, 7097, 1202, 5195, 6969, 6974, 2]
 
-// Module 10531 (SelectedUserField)
+// Module 10542 (SelectedUserField)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import UserUtilsDefault from "UserUtils" /* 4994 */;
-import CircleXIcon from "CircleXIcon" /* 6966 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 6971 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7094 */;
+import CircleXIcon from "CircleXIcon" /* 6969 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 6974 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7097 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -139,7 +139,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedUser
                     const obj5 = { children: metroRequire(React3, obj6) };
                     obj6 = { style: tmp4.content, children: items };
                     items = [tmp24, tmp28];
-                    const InputFieldContainer = tmp(6971).InputFieldContainer;
+                    const InputFieldContainer = tmp(6974).InputFieldContainer;
                     const tmp38 = hasOwnProperty(InputFieldContainer, obj5);
                     cResult[21] = tmp4.content;
                     cResult[22] = tmp24;

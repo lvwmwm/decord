@@ -1,15 +1,15 @@
-// Module ID: 11868
-// Function ID: 11869
+// Module ID: 11882
+// Function ID: 11883
 // Name: PortalKeyboardRenderer
-// Dependencies: [19, 1501, 21, 4999, 5122, 1631, 1384, 11869, 558, 576, 5123, 5112, 7269, 6750, 1503, 5126, 9841, 2]
+// Dependencies: [19, 1501, 21, 4999, 5122, 1631, 1384, 11883, 558, 576, 5123, 5112, 7272, 6753, 1503, 5126, 9853, 2]
 
-// Module 11868 (PortalKeyboardRenderer)
+// Module 11882 (PortalKeyboardRenderer)
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import native from "native" /* 4999 */;
 import useKeyboardType from "useKeyboardType" /* 5122 */;
 import PortalKeyboardUIStore3 from "PortalKeyboardUIStore" /* 5123 */;
-import PortalKeyboardRendererComponentDefault from "PortalKeyboardRendererComponent" /* 11869 */;
+import PortalKeyboardRendererComponentDefault from "PortalKeyboardRendererComponent" /* 11883 */;
 import react from "react" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1501 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -180,7 +180,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PortalKeyboa
       }
       tmp24 = tmp27;
     } else if (cResult[14] !== tmp19) {
-      const tmp26 = jsx(tmp(9841).PortalKeyboardInModalContext.Provider, { value: true, children: tmp19 });
+      const tmp26 = jsx(tmp(9853).PortalKeyboardInModalContext.Provider, { value: true, children: tmp19 });
       cResult[14] = tmp19;
       cResult[15] = tmp26;
       tmp24 = tmp26;
@@ -299,7 +299,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PortalKeyboa
     tmp10Result = tmp10(tmp5(5126).PortalKeyboard, obj3);
   } else {
     const obj4 = { value: true, children: tmp11 };
-    tmp10Result = tmp10(tmp5(9841).PortalKeyboardInModalContext.Provider, obj4);
+    tmp10Result = tmp10(tmp5(9853).PortalKeyboardInModalContext.Provider, obj4);
   }
   return tmp10Result;
 });

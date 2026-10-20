@@ -1,9 +1,9 @@
-// Module ID: 11362
-// Function ID: 11363
+// Module ID: 11373
+// Function ID: 11374
 // Name: BaseEmbeddedAppWebView
-// Dependencies: [5, 32, 19, 17, 5586, 1087, 2026, 21, 4945, 3, 1384, 558, 576, 11363, 7851, 11364, 11365, 1383, 11349, 11366, 11367, 11359, 1267, 573, 5863, 1128, 11368, 5584, 1297, 11369, 1386, 11049, 6608, 2]
+// Dependencies: [5, 32, 19, 17, 5586, 1087, 2026, 21, 4945, 3, 1384, 558, 576, 11374, 7855, 11375, 11376, 1383, 11360, 11377, 11378, 11370, 1267, 573, 5866, 1128, 11379, 5584, 1297, 11380, 1386, 11061, 6611, 2]
 
-// Module 11362 (BaseEmbeddedAppWebView)
+// Module 11373 (BaseEmbeddedAppWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -13,9 +13,9 @@ import intl4 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import URLUtilsDefault from "URLUtils" /* 1386 */;
 import Constants2 from "Constants" /* 2026 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5863 */;
-import usePreviousDefault from "usePrevious" /* 6608 */;
-import WebView2 from "WebView" /* 7851 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5866 */;
+import usePreviousDefault from "usePrevious" /* 6611 */;
+import WebView2 from "WebView" /* 7855 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

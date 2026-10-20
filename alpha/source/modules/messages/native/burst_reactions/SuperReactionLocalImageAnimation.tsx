@@ -1,9 +1,9 @@
-// Module ID: 9738
-// Function ID: 9739
+// Module ID: 9751
+// Function ID: 9752
 // Name: SuperReactionLocalImageAnimation
 // Dependencies: [109, 19, 21, 558, 576, 4903, 5188, 2]
 
-// Module 9738 (SuperReactionLocalImageAnimation)
+// Module 9751 (SuperReactionLocalImageAnimation)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FadeOutLottieAnimationDefault from "FadeOutLottieAnimation" /* 5188 */;

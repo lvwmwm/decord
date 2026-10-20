@@ -1,10 +1,10 @@
-// Module ID: 11710
-// Function ID: 11711
+// Module ID: 11724
+// Function ID: 11725
 // Name: ConjurePublishBlockedSheet
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 11711, 5171, 7194, 5195, 5205, 7244, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 11725, 5171, 7197, 5195, 5205, 7247, 2]
 // Exports: default
 
-// Module 11710 (ConjurePublishBlockedSheet)
+// Module 11724 (ConjurePublishBlockedSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5171 */;
@@ -57,7 +57,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
     let closure_1 = tmp8;
     if (cResult[4] !== tmp5.title) {
       const obj2 = { title: tmp5.title };
-      const tmp11 = closure_4(onConfirm(7194).BottomSheetTitleHeader, obj2);
+      const tmp11 = closure_4(onConfirm(7197).BottomSheetTitleHeader, obj2);
       cResult[4] = tmp5.title;
       cResult[5] = tmp11;
       tmp9 = tmp11;
@@ -119,7 +119,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
               return tmp26;
             }
             const obj5 = { header: tmp9, children: tmp22 };
-            const tmp28 = closure_4(onConfirm(7244).ActionSheet, obj5);
+            const tmp28 = closure_4(onConfirm(7247).ActionSheet, obj5);
             cResult[20] = tmp9;
             cResult[21] = tmp22;
             cResult[22] = tmp28;
@@ -144,7 +144,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
     cResult[12] = tmp18;
     tmp16 = tmp18;
   }
-  const tmpResult = onConfirm(11711);
+  const tmpResult = onConfirm(11725);
   const conjurePublishBlockedCopy = tmpResult.getConjurePublishBlockedCopy(reason, message);
   cResult[0] = message;
   cResult[1] = reason;
@@ -161,10 +161,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
   onConfirm = onConfirm.onConfirm;
   ({ reason, message } = onConfirm);
   const tmp = closure_7();
-  let obj = onConfirm(11711);
+  let obj = onConfirm(11725);
   const conjurePublishBlockedCopy = obj.getConjurePublishBlockedCopy(reason, message);
-  const obj2 = { header: closure_4(onConfirm(7194).BottomSheetTitleHeader, obj3), children: tmp6(tmp7, obj4) };
-  const ActionSheet = onConfirm(7244).ActionSheet;
+  const obj2 = { header: closure_4(onConfirm(7197).BottomSheetTitleHeader, obj3), children: tmp6(tmp7, obj4) };
+  const ActionSheet = onConfirm(7247).ActionSheet;
   obj4 = { style: tmp.content, children: items };
   items = [, , ];
   obj3 = { title: conjurePublishBlockedCopy.title };

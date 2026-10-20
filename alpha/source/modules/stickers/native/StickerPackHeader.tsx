@@ -1,21 +1,21 @@
-// Module ID: 10082
-// Function ID: 10083
+// Module ID: 10093
+// Function ID: 10094
 // Name: StickerPackHeader
-// Dependencies: [19, 17, 10041, 21, 4945, 587, 558, 576, 5195, 6442, 1202, 10083, 10084, 1128, 10085, 6856, 2]
+// Dependencies: [19, 17, 10052, 21, 4945, 587, 558, 576, 5195, 6445, 1202, 10094, 10095, 1128, 10096, 6859, 2]
 
-// Module 10082 (StickerPackHeader)
+// Module 10093 (StickerPackHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import StickersUtils from "StickersUtils" /* 6442 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10083 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10084 */;
-import StickerPackBannerDefault from "StickerPackBanner" /* 10085 */;
+import StickersUtils from "StickersUtils" /* 6445 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10094 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10095 */;
+import StickerPackBannerDefault from "StickerPackBanner" /* 10096 */;
 import react from "react" /* 19 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 10041 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 10052 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -159,7 +159,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                   if (null != onPress) {
                                     const obj5 = { style: items1, onPress, accessibilityRole: "header", children: tmp39 };
                                     items1 = [tmp6.section, style];
-                                    tmp51 = React3(tmp(6856).PressableOpacity, obj5);
+                                    tmp51 = React3(tmp(6859).PressableOpacity, obj5);
                                   } else {
                                     const obj6 = { style: items2, children: tmp39 };
                                     items2 = [tmp6.section, style];
@@ -332,7 +332,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (null != onPress) {
     const obj15 = { style: items3, onPress, accessibilityRole: "header", children: tmp2Result };
     items3 = [tmp.section, style];
-    tmp4Result = tmp4(tmp6(6856).PressableOpacity, obj15);
+    tmp4Result = tmp4(tmp6(6859).PressableOpacity, obj15);
   } else {
     const obj28 = { style: items4, children: tmp2Result };
     items4 = [tmp.section, style];

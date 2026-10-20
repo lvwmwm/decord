@@ -1,91 +1,84 @@
 // Module ID: 12423
 // Function ID: 12424
-// Dependencies: []
-// Exports: getSpanStatusFromHttpCode, setHttpStatus
+// Dependencies: [12424, 12422]
 
 // Module 12423
+import GLOBAL_OBJ from "module_12424" /* 12424 */;
 
-export const SPAN_STATUS_ERROR = 2;
-export const SPAN_STATUS_OK = 1;
-export const SPAN_STATUS_UNSET = 0;
-export const getSpanStatusFromHttpCode = function getSpanStatusFromHttpCode(arg0) {
-  if (arg0 < 400) {
-    if (arg0 >= 100) {
-      return { code: 1 };
+const require = globalThis.__r;
+let _require, c0, dependencyMap;
+
+function consoleSandbox(fn) {
+  let closure_1;
+  let console;
+  const f113611 = (item) => {
+    console[item] = closure_1[item];
+  };
+  const tmp = console;
+  if ("console" in console(12424).GLOBAL_OBJ) {
+    console = tmp(12424).GLOBAL_OBJ.console;
+    dependencyMap = {};
+    const _Object = Object;
+    const keys = Object.keys(obj);
+    const item = keys.forEach((item) => {
+      closure_1[item] = console[item];
+      console[item] = obj[item];
+    });
+    try {
+      const tmp6 = fn();
+      const item1 = keys.forEach(f113611);
+      return tmp6;
+    } catch (tmp8) {
+      const item2 = keys.forEach(f113611);
+      throw tmp8;
     }
+  } else {
+    return fn();
   }
-  if (arg0 >= 400) {
-    if (arg0 < 500) {
-      if (401 === arg0) {
-        return { code: 2, message: "unauthenticated" };
-      } else if (403 === arg0) {
-        return { code: 2, message: "permission_denied" };
-      } else if (404 === arg0) {
-        return { code: 2, message: "not_found" };
-      } else if (409 === arg0) {
-        return { code: 2, message: "already_exists" };
-      } else if (413 === arg0) {
-        return { code: 2, message: "failed_precondition" };
-      } else if (429 === arg0) {
-        return { code: 2, message: "resource_exhausted" };
-      } else {
-        return 499 === arg0 ? { code: 2, message: "cancelled" } : { code: 2, message: "invalid_argument" };
-      }
+}
+let items = ["debug", "info", "warn", "error", "log", "assert", "trace"];
+const originalConsoleMethods = {};
+
+export const CONSOLE_LEVELS = items;
+export { consoleSandbox };
+export const logger = GLOBAL_OBJ.getGlobalSingleton("logger", function makeLogger() {
+  _require = false;
+  let obj = {
+    enable() {
+      c0 = true;
+    },
+    disable() {
+      c0 = false;
+    },
+    isEnabled() {
+      return c0;
     }
+  };
+  let tmp = items;
+  const forEach = items.forEach;
+  if (require("module_12422").DEBUG_BUILD) {
+    const item = forEach((arg0) => {
+      let closure_0 = arg0;
+      obj[arg0] = () => {
+        const args = [...arguments];
+        const tmp = args;
+        if (tmp) {
+          consoleSandbox(() => {
+            const _console = GLOBAL_OBJ.GLOBAL_OBJ.console;
+            obj = _console[args];
+            items = ["Sentry Logger [" + args + "]:", ...closure_0];
+            obj.apply(items);
+          });
+        }
+      };
+    });
+  } else {
+    const item1 = forEach((arg0) => {
+      obj[arg0] = () => {
+
+      };
+    });
   }
-  if (arg0 >= 500) {
-    if (arg0 < 600) {
-      if (501 === arg0) {
-        return { code: 2, message: "unimplemented" };
-      } else if (503 === arg0) {
-        return { code: 2, message: "unavailable" };
-      } else {
-        return 504 === arg0 ? { code: 2, message: "deadline_exceeded" } : { code: 2, message: "internal_error" };
-      }
-    }
-  }
-  return { code: 2, message: "unknown_error" };
-};
-export const setHttpStatus = function setHttpStatus(setAttribute, arg1) {
-  let obj;
-  const attr = setAttribute.setAttribute("http.response.status_code", arg1);
-  if (arg1 < 400) {
-    if (arg1 >= 100) {
-      obj = { code: 1 };
-    }
-    if ("unknown_error" !== obj.message) {
-      setAttribute.setStatus(obj);
-    }
-  }
-  if (arg1 >= 400) {
-    if (arg1 < 500) {
-      if (401 === arg1) {
-        obj = { code: 2, message: "unauthenticated" };
-      } else if (403 === arg1) {
-        obj = { code: 2, message: "permission_denied" };
-      } else if (404 === arg1) {
-        obj = { code: 2, message: "not_found" };
-      } else if (409 === arg1) {
-        obj = { code: 2, message: "already_exists" };
-      } else if (413 === arg1) {
-        obj = { code: 2, message: "failed_precondition" };
-      } else if (429 === arg1) {
-        obj = { code: 2, message: "resource_exhausted" };
-      } else {
-        obj = 499 === arg1 ? { code: 2, message: "cancelled" } : { code: 2, message: "invalid_argument" };
-      }
-    }
-  }
-  if (arg1 >= 500) {
-    if (arg1 < 600) {
-      if (501 === arg1) {
-        obj = { code: 2, message: "unimplemented" };
-      } else if (503 === arg1) {
-        obj = { code: 2, message: "unavailable" };
-      } else {
-        obj = 504 === arg1 ? { code: 2, message: "deadline_exceeded" } : { code: 2, message: "internal_error" };
-      }
-    }
-  }
-  obj = { code: 2, message: "unknown_error" };
-};
+  return obj;
+});
+export { originalConsoleMethods };

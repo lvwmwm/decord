@@ -1,10 +1,10 @@
-// Module ID: 16787
-// Function ID: 16788
+// Module ID: 16806
+// Function ID: 16807
 // Name: CaptchaTestUtils
-// Dependencies: [16788, 2]
+// Dependencies: [16807, 2]
 
-// Module 16787 (CaptchaTestUtils)
-import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 16788 */;
+// Module 16806 (CaptchaTestUtils)
+import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 16807 */;
 import size from "module_2" /* 2 */;
 
 const entries = Object.entries(CaptchaTestActionCreators.HCaptchaDifficulty);

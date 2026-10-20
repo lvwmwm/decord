@@ -1,9 +1,9 @@
-// Module ID: 13536
-// Function ID: 13537
+// Module ID: 13554
+// Function ID: 13555
 // Name: ChannelNavbar
-// Dependencies: [19, 17, 6450, 4804, 4800, 4822, 5674, 4890, 1392, 1087, 4807, 4797, 21, 4945, 6599, 587, 558, 576, 504, 1128, 8447, 5565, 10552, 13537, 13538, 1202, 13539, 13540, 5631, 13541, 9774, 6856, 5195, 4994, 8674, 8962, 4970, 4784, 10326, 13542, 2]
+// Dependencies: [19, 17, 6453, 4804, 4800, 4822, 5674, 4890, 1392, 1087, 4807, 4797, 21, 4945, 6602, 587, 558, 576, 504, 1128, 8451, 5565, 10563, 13555, 13556, 1202, 13557, 13558, 5631, 13559, 9786, 6859, 5195, 4994, 8686, 8974, 4970, 4784, 10337, 13560, 2]
 
-// Module 13536 (ChannelNavbar)
+// Module 13554 (ChannelNavbar)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -17,11 +17,11 @@ import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 497
 import UserUtilsDefault from "UserUtils" /* 4994 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import useChannelName from "useChannelName" /* 5565 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8447 */;
-import isStreamingDefault from "isStreaming" /* 8674 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10552 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8451 */;
+import isStreamingDefault from "isStreaming" /* 8686 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10563 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6450 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6453 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import PresenceStore from "PresenceStore" /* 5674 */;
@@ -31,7 +31,7 @@ import Constants from "Constants" /* 1087 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
-import TextStyles from "TextStyles" /* 6599 */;
+import TextStyles from "TextStyles" /* 6602 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let obj3;
 let obj4;
 let size;
 let tmp;
-const Pressables = tmp(6856);
+const Pressables = tmp(6859);
 const View = react_native.View;
 const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;
 ({ ChannelTypes: closure_12, Fonts } = Constants);
@@ -133,7 +133,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelTitle
   if (cResult[7] !== stateFromStores) {
     let channelIcon = null;
     if (null != stateFromStores) {
-      const tmpResult5 = channelId(8447);
+      const tmpResult5 = channelId(8451);
       channelIcon = tmpResult5.getChannelIcon(stateFromStores);
     }
     class C {

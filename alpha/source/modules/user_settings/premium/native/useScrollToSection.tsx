@@ -1,9 +1,9 @@
-// Module ID: 14530
-// Function ID: 14531
+// Module ID: 14548
+// Function ID: 14549
 // Name: useScrollToSection
 // Dependencies: [19, 558, 576, 2]
 
-// Module 14530 (useScrollToSection)
+// Module 14548 (useScrollToSection)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

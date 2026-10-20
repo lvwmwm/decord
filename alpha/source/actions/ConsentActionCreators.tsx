@@ -1,10 +1,10 @@
-// Module ID: 15930
-// Function ID: 15931
+// Module ID: 15949
+// Function ID: 15950
 // Name: ConsentActionCreators
 // Dependencies: [1087, 584, 1128, 1297, 2]
 // Exports: fetchConsents, setConsents
 
-// Module 15930 (ConsentActionCreators)
+// Module 15949 (ConsentActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;

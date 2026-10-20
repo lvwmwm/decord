@@ -1,18 +1,18 @@
-// Module ID: 17380
-// Function ID: 17381
+// Module ID: 17399
+// Function ID: 17400
 // Name: GuildPowerupsProgressBar
-// Dependencies: [19, 17, 17381, 4822, 21, 587, 5014, 5219, 4945, 558, 576, 573, 17382, 17383, 5167, 13202, 7224, 1128, 2558, 5195, 7251, 8833, 2]
+// Dependencies: [19, 17, 17400, 4822, 21, 587, 5014, 5219, 4945, 558, 576, 573, 17401, 17402, 5167, 13220, 7227, 1128, 2558, 5195, 7254, 8845, 2]
 
-// Module 17380 (GuildPowerupsProgressBar)
+// Module 17399 (GuildPowerupsProgressBar)
 import nativeDefault from "native" /* 587 */;
 import timing from "timing" /* 5167 */;
 import LinearGradientDefault from "LinearGradient" /* 5219 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7224 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13202 */;
-import GuildBoostingProgressBarActionCreators from "GuildBoostingProgressBarActionCreators" /* 17383 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7227 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13220 */;
+import GuildBoostingProgressBarActionCreators from "GuildBoostingProgressBarActionCreators" /* 17402 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildBoostingProgressBarPersistedStore from "GuildBoostingProgressBarPersistedStore" /* 17381 */;
+import GuildBoostingProgressBarPersistedStore from "GuildBoostingProgressBarPersistedStore" /* 17400 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
@@ -88,7 +88,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
-  stateFromStores1(17382)(stateFromStores);
+  stateFromStores1(17401)(stateFromStores);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [GuildBoostingProgressBarPersistedStore];
     cResult[4] = items2;

@@ -1,15 +1,15 @@
-// Module ID: 16235
-// Function ID: 16236
+// Module ID: 16254
+// Function ID: 16255
 // Name: PremiumRewardGradient
-// Dependencies: [19, 17, 21, 4945, 4942, 587, 558, 576, 5213, 5166, 4953, 5219, 6914, 2]
+// Dependencies: [19, 17, 21, 4945, 4942, 587, 558, 576, 5213, 5166, 4953, 5219, 6917, 2]
 
-// Module 16235 (PremiumRewardGradient)
+// Module 16254 (PremiumRewardGradient)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useThemeDefault from "useTheme" /* 5166 */;
 import useToken from "useToken" /* 5213 */;
 import LinearGradientDefault from "LinearGradient" /* 5219 */;
-import _modDef6914 from "module_6914" /* 6914 */;
+import _modDef6917 from "module_6917" /* 6917 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -297,7 +297,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
         tmp29 = tmp32;
       }
       const obj5 = { style: tmp12, maskElement: tmp14, children: tmp20 };
-      const tmp28 = metroRequire(_modDef6914, obj5);
+      const tmp28 = metroRequire(_modDef6917, obj5);
       cResult[11] = tmp12;
       cResult[12] = tmp20;
       cResult[13] = tmp28;
@@ -331,7 +331,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Premiu
   items = [tmp.wrapper, style];
   const items1 = [tmp.glow, ];
   let glowLight = !isThemeDarkResult;
-  const tmp10 = _modDef6914;
+  const tmp10 = _modDef6917;
   const tmp7 = metroImportDefault;
   const tmp8 = hasOwnProperty;
   if (!isThemeDarkResult) {

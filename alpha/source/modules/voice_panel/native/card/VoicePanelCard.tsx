@@ -1,9 +1,9 @@
-// Module ID: 18285
-// Function ID: 18286
+// Module ID: 18307
+// Function ID: 18308
 // Name: VoicePanelCard
-// Dependencies: [32, 19, 17, 6590, 5676, 6633, 10693, 10691, 18170, 10696, 1087, 5593, 10694, 21, 5014, 5195, 5219, 1202, 4945, 587, 558, 576, 504, 7773, 6593, 6834, 1128, 5205, 10692, 11295, 5700, 14126, 11297, 11294, 18286, 11303, 18166, 5167, 5208, 9337, 5631, 7116, 5213, 11316, 18288, 11931, 9892, 4999, 7199, 18217, 18229, 18169, 18289, 8593, 18290, 5258, 18291, 10695, 18292, 18293, 18294, 18295, 18296, 18306, 2]
+// Dependencies: [32, 19, 17, 6593, 5676, 6636, 10704, 10702, 18193, 10707, 1087, 5593, 10705, 21, 5014, 5195, 5219, 1202, 4945, 587, 558, 576, 504, 7777, 6596, 6837, 1128, 5205, 10703, 11306, 5700, 14144, 11308, 11305, 18308, 11314, 18189, 5167, 5208, 9349, 5631, 7119, 5213, 11327, 18310, 11945, 9904, 4999, 7202, 18240, 18252, 18192, 18311, 8605, 18312, 5786, 5258, 18313, 10706, 18314, 18315, 18316, 18317, 18318, 18328, 2]
 
-// Module 18285 (VoicePanelCard)
+// Module 18307 (VoicePanelCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -15,24 +15,24 @@ import Text_Text from "Text/Text" /* 5195 */;
 import spring from "spring" /* 5208 */;
 import LinearGradientDefault from "LinearGradient" /* 5219 */;
 import CallConstants from "CallConstants" /* 5593 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6593 */;
-import StreamActionCreators from "StreamActionCreators" /* 7773 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8593 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9892 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10691 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10694 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10696 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11931 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18169 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18170 */;
-import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 18288 */;
-import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 18289 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6596 */;
+import StreamActionCreators from "StreamActionCreators" /* 7777 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8605 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9904 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10702 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10705 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10707 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11945 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18192 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18193 */;
+import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 18310 */;
+import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 18311 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ApplicationStreamingStore_mod from "ApplicationStreamingStore" /* 6590 */;
+import ApplicationStreamingStore_mod from "ApplicationStreamingStore" /* 6593 */;
 import RTCConnectionStore_mod from "RTCConnectionStore" /* 5676 */;
-import SpeakingStore from "SpeakingStore" /* 6633 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10693 */;
+import SpeakingStore from "SpeakingStore" /* 6636 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10704 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -2125,7 +2125,7 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
   let tmp = cleanUp;
   const tmp2 = id;
   let obj = cleanUp(id[21]);
-  const cResult = obj.c(64);
+  const cResult = obj.c(67);
   ({ children, cleanUp } = coords);
   coords = coords.coords;
   id = coords.id;
@@ -2774,6 +2774,8 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
   let mode;
   let mountedCards;
   let obj10;
+  let tmp5Result18;
+  let tmpResult2;
   let transitionState;
   let windowDimensions;
   cleanUp = cleanUp.cleanUp;
@@ -2859,9 +2861,9 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
   fn2.__closure = { focused, id, mode, VoicePanelModes: contentDimensions, scrollPosition };
   fn2.__workletHash = 1094240470006;
   fn2.__initData = __initData31;
-  const tmp5Result9 = tmp5(tmp2[14]);
-  derivedValue1 = tmp5Result9.useDerivedValue(fn2);
   const tmp5Result10 = tmp5(tmp2[14]);
+  derivedValue1 = tmp5Result10.useDerivedValue(fn2);
+  const tmp5Result11 = tmp5(tmp2[14]);
   class C {
     constructor() {
       let maxResult;
@@ -2879,14 +2881,14 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
   C.__closure = obj5;
   C.__workletHash = 12954455503263;
   C.__initData = __initData32;
-  derivedValue2 = tmp5Result10.useDerivedValue(C);
+  derivedValue2 = tmp5Result11.useDerivedValue(C);
   const tmp12 = closure_59({ id, participant: tmp7, transitionState, cleanUp, mountedCards, mode, focused, isScrollVisible, sharedVisible });
   sharedTransitionState = tmp12.sharedTransitionState;
   closure_31 = tmp13;
   const cardGestureEnabled = tmp12.cardGestureEnabled;
-  const tmp5Result11 = tmp5(tmp2[42]);
-  token = tmp5Result11.useToken(tmp(tmp2[19]).modules.mobile.VOICE_TILE_BORDER_RADIUS);
-  const tmp5Result12 = tmp5(tmp2[14]);
+  const tmp5Result12 = tmp5(tmp2[42]);
+  token = tmp5Result12.useToken(tmp(tmp2[19]).modules.mobile.VOICE_TILE_BORDER_RADIUS);
+  const tmp5Result13 = tmp5(tmp2[14]);
   class E {
     constructor() {
       let height;
@@ -3074,7 +3076,7 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
   E.__closure = obj6;
   E.__workletHash = 12967186727989;
   E.__initData = __initData33;
-  const animatedStyle = tmp5Result12.useAnimatedStyle(E);
+  const animatedStyle = tmp5Result13.useAnimatedStyle(E);
   let obj7 = {
     gesturesEnabled: cardGestureEnabled,
     onSingleTap() {
@@ -3088,8 +3090,8 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
     onLongPress: fn4
   };
   const tmpResult = tmp(tmp2[54]);
-  const tmp5Result13 = tmp5(tmp2[50]);
-  if (tmp5Result13.isStableActivityParticipant(tmp7)) {
+  const tmp5Result14 = tmp5(tmp2[50]);
+  if (tmp5Result14.isStableActivityParticipant(tmp7)) {
     fn3 = () => {
       const value = focused.get();
       id = undefined;
@@ -3119,8 +3121,8 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
   }, items);
   const items1 = [pipHandoff, id];
   const effect = obj.useEffect(() => () => pipHandoff.removeCard(id), items1);
-  const tmp5Result15 = tmp5(tmp2[14]);
-  sharedValue = tmp5Result15.useSharedValue(0);
+  const tmp5Result16 = tmp5(tmp2[14]);
+  sharedValue = tmp5Result16.useSharedValue(0);
   const items2 = [pipHandoff, id];
   reportPIPArrival = obj.useCallback(() => pipHandoff.setCardArrivedInPIP(id), items2);
   const items3 = [tmp13, layoutPhysics, sharedValue, reportPIPArrival];
@@ -3149,8 +3151,8 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
     }
   }, items3);
   let scale = pIPState.scale;
-  const tmp5Result16 = tmp5(tmp2[14]);
-  sharedValue1 = tmp5Result16.useSharedValue(scale.get());
+  const tmp5Result17 = tmp5(tmp2[14]);
+  sharedValue1 = tmp5Result17.useSharedValue(scale.get());
   function me(currentOriginX) {
     let obj4;
     let obj5;
@@ -3191,10 +3193,12 @@ let closure_76 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
   me.__initData = __initData35;
   const items4 = [layoutPhysics, wrapperOffset, sharedValue1, pIPState.scale];
   const callback1 = obj.useCallback(me, items4);
-  let obj9 = { gesture: tmpResultResult, children: windowDimensions(tmp(tmp2[41]), obj10) };
-  const GestureDetector = tmp5(tmp2[55]).GestureDetector;
-  obj10 = { style: items5, layout: callback1, children };
+  let obj9 = { gesture: tmpResultResult, children: windowDimensions(tmpResult2, obj10) };
+  const GestureDetector = tmp5(tmp2[56]).GestureDetector;
+  obj10 = { nativeID: tmp5Result18.getExternalPipTileNativeId("card", id), style: items5, layout: callback1, children };
+  tmpResult2 = tmp(tmp2[41]);
   items5 = [tmp3.positionWrapper, animatedStyle];
+  tmp5Result18 = tmp5(tmp2[55]);
   return windowDimensions(GestureDetector, obj9);
 });
 const __initData36 = { code: "function VoicePanelCardTsx40(){const{EDGE_GUTTER,coords,scrollPosition,windowDimensions}=this.__closure;const yPos=EDGE_GUTTER+coords.get().y;return yPos>scrollPosition.get()-coords.get().height&&yPos<scrollPosition.get()+windowDimensions.get().height;}" };
@@ -3311,7 +3315,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     DEFAULT = tmp(tmp2[30]).MediaEngineContextTypes.DEFAULT;
   }
   tmp4Result(DEFAULT, str);
-  tmp4(tmp2[56])(str);
+  tmp4(tmp2[57])(str);
   const useSharedValue = tmp(tmp2[14]).useSharedValue;
   tmp(tmp2[14]);
   if (transitionState === tmp(tmp2[47]).TransitionStates.MOUNTED) {
@@ -3336,7 +3340,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp27 = cResult[9];
     }
     const layoutEffect = obj2.useLayoutEffect(tmp26, tmp27);
-    tmp(tmp2[57]);
+    tmp(tmp2[58]);
     class N {
       constructor() {
         return connected.isConnected();
@@ -3367,7 +3371,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const sharedValue1 = tmpResult18.useSharedValue(scale.get());
     const _Symbol = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { mass: closure_11.mass, damping: tmp4(tmp2[58])(closure_11.damping - 2, closure_11.damping + 2), stiffness: tmp4(tmp2[58])(closure_11.stiffness - 20, closure_11.stiffness + 20) };
+      const obj4 = { mass: closure_11.mass, damping: tmp4(tmp2[59])(closure_11.damping - 2, closure_11.damping + 2), stiffness: tmp4(tmp2[59])(closure_11.stiffness - 20, closure_11.stiffness + 20) };
       class N {
         constructor() {
           return connected.isConnected();
@@ -3395,7 +3399,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         if (constants.NO_VIDEO_PARTICIPANTS === id5) {
           const _Symbol3 = Symbol;
           if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-            closure_20(tmp4(tmp2[59]), {});
+            closure_20(tmp4(tmp2[60]), {});
             class N {
               constructor() {
                 return connected.isConnected();
@@ -3410,7 +3414,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         } else if (tmp55.CALLER_DISCONNECTED === id5) {
           const _Symbol2 = Symbol;
           if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-            closure_20(tmp4(tmp2[60]), {});
+            closure_20(tmp4(tmp2[61]), {});
             class N {
               constructor() {
                 return connected.isConnected();
@@ -3527,7 +3531,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             }
           }
           userNick1 = undefined;
-          const tmp4Result2 = tmp4(tmp2[63]);
+          const tmp4Result2 = tmp4(tmp2[64]);
           const tmpResult20 = tmp(tmp2[50]);
           if (tmpResult20.isStableParticipantWithUser(tmp6)) {
             userNick1 = tmp6.userNick;
@@ -3634,7 +3638,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               return connected.isConnected();
             }
           }
-          const tmp43 = closure_20(tmp4(tmp2[62]), obj10, tmp6.id);
+          const tmp43 = closure_20(tmp4(tmp2[63]), obj10, tmp6.id);
           cResult[49] = layoutTransition2;
           cResult[50] = tmp6.applicationId;
           cResult[51] = tmp6.id;
@@ -3771,7 +3775,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     DEFAULT = tmp5(tmp2[30]).MediaEngineContextTypes.DEFAULT;
   }
   const tmpResultResult = tmpResult(DEFAULT, str);
-  const tmp13 = tmp(tmp2[56])(str);
+  const tmp13 = tmp(tmp2[57])(str);
   const useSharedValue = tmp5(tmp2[14]).useSharedValue;
   scrollPosition(tmp2[14]);
   if (transitionState === scrollPosition(tmp2[47]).TransitionStates.MOUNTED) {
@@ -3804,7 +3808,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const result = SpeakingStore.removeReactChangeListener(handleChange);
     };
   }, items1);
-  const tmp5Result13 = scrollPosition(tmp2[57]);
+  const tmp5Result13 = scrollPosition(tmp2[58]);
   cardLayoutCoordsSubscription = tmp5Result13.useCardLayoutCoordsSubscription(id, layoutManager);
   const tmp5Result14 = scrollPosition(tmp2[14]);
   class F {
@@ -3833,7 +3837,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const items2 = [pIPState.scale, sharedValue1];
   const memo = obj.useMemo(() => {
     let layoutTransition;
-    const physics = { mass: closure_1_11.mass, damping: windowDimensions(id2[58])(closure_1_11.damping - 2, closure_1_11.damping + 2), stiffness: windowDimensions(id2[58])(closure_1_11.stiffness - 20, closure_1_11.stiffness + 20) };
+    const physics = { mass: closure_1_11.mass, damping: windowDimensions(id2[59])(closure_1_11.damping - 2, closure_1_11.damping + 2), stiffness: windowDimensions(id2[59])(closure_1_11.stiffness - 20, closure_1_11.stiffness + 20) };
     const obj2 = { physics, layoutTransition };
     layoutTransition = function layoutTransition(originX, flag) {
       if (flag === undefined) {
@@ -3851,10 +3855,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (item.type === constants2.CTA) {
     const id3 = item.id;
     if (constants.NO_VIDEO_PARTICIPANTS === id3) {
-      tmp28 = closure_20(tmp(tmp2[59]), {});
+      tmp28 = closure_20(tmp(tmp2[60]), {});
       tmp29 = closure_20;
     } else if (tmp39.CALLER_DISCONNECTED === id3) {
-      tmp28 = closure_20(tmp(tmp2[60]), {});
+      tmp28 = closure_20(tmp(tmp2[61]), {});
       tmp29 = closure_20;
     }
     const obj4 = { cleanUp, coords: cardLayoutCoordsSubscription, id, isRTCConnected: stateFromStores, isScrollVisible: derivedValue, layoutPhysics: physics, transitionState, sharedVisible: sharedValue, children: items3 };
@@ -3865,7 +3869,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (tmp29Result) {
       const obj5 = { isRinging: tmp8, participant: tmp4, label: userNick, layout: layoutTransition, speaking: sharedValue2 };
       userNick = undefined;
-      const tmpResult3 = tmp(tmp2[63]);
+      const tmpResult3 = tmp(tmp2[64]);
       const tmp5Result17 = scrollPosition(tmp2[50]);
       if (tmp5Result17.isStableParticipantWithUser(tmp4)) {
         userNick = tmp4.userNick;
@@ -3896,7 +3900,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               let tmp34Result;
               if (null == tmp13) {
                 const obj7 = { avError: tmpResultResult, userId: user.id, style: pIPState.absoluteFill };
-                tmp34Result = closure_20(tmp(tmp2[61]), obj7);
+                tmp34Result = closure_20(tmp(tmp2[62]), obj7);
                 tmp34 = closure_20;
               }
               tmp31 = tmp34;
@@ -3930,7 +3934,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp29 = closure_20;
     } else if (ParticipantTypes.ACTIVITY === type2) {
       const obj12 = { sharedVisible: sharedValue, applicationId: tmp4.applicationId, layout: layoutTransition };
-      tmp28 = closure_20(tmp(tmp2[62]), obj12, tmp4.id);
+      tmp28 = closure_20(tmp(tmp2[63]), obj12, tmp4.id);
       tmp29 = closure_20;
     }
   }

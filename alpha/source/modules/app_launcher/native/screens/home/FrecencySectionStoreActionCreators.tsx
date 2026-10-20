@@ -1,10 +1,10 @@
-// Module ID: 11890
-// Function ID: 11891
+// Module ID: 11904
+// Function ID: 11905
 // Name: FrecencySectionStoreActionCreators
 // Dependencies: [584, 2]
 // Exports: setFrecencySectionSelection
 
-// Module 11890 (FrecencySectionStoreActionCreators)
+// Module 11904 (FrecencySectionStoreActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

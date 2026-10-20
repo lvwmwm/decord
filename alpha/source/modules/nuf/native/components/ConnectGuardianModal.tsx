@@ -1,14 +1,14 @@
-// Module ID: 18641
-// Function ID: 18642
+// Module ID: 18664
+// Function ID: 18665
 // Name: ConnectGuardianModal
-// Dependencies: [19, 17, 1087, 7592, 21, 4945, 587, 558, 576, 1633, 18642, 1267, 6828, 1128, 2526, 5195, 15956, 5205, 2]
+// Dependencies: [19, 17, 1087, 7595, 21, 4945, 587, 558, 576, 1633, 18665, 1267, 6831, 1128, 2526, 5195, 15975, 5205, 2]
 
-// Module 18641 (ConnectGuardianModal)
+// Module 18664 (ConnectGuardianModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7592 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7595 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -59,7 +59,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
   onComplete = route.route.params.onComplete;
   const tmp4 = closure_9();
   const bottom = connectGuardianGate(1633)().bottom;
-  let obj2 = onComplete(18642);
+  let obj2 = onComplete(18665);
   connectGuardianGate = obj2.useConnectGuardianGate();
   dependencyMap = react.useRef(false);
   const obj3 = react;
@@ -81,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
         }
         const _Symbol4 = Symbol;
         if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp60 = closure_7(tmp(6828).ActivityIndicator, {});
+          const tmp60 = closure_7(tmp(6831).ActivityIndicator, {});
           cResult[7] = tmp60;
           tmp58 = tmp60;
         } else {
@@ -292,7 +292,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
             }
             const obj14 = { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null };
             ({ linkCode: obj8.linkCode, expiresAt: obj8.expiresAt, refresh: obj8.onRefresh } = connectGuardianGate);
-            const tmp31 = closure_7(tmp(15956).ConnectGuardianCard, obj14);
+            const tmp31 = closure_7(tmp(15975).ConnectGuardianCard, obj14);
             cResult[24] = connectGuardianGate.expiresAt;
             cResult[25] = connectGuardianGate.linkCode;
             cResult[26] = connectGuardianGate.refresh;
@@ -354,7 +354,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
   const onComplete = route.route.params.onComplete;
   const tmp = closure_9();
   const bottom = connectGuardianGate(1633)().bottom;
-  let obj = onComplete(18642);
+  let obj = onComplete(18665);
   connectGuardianGate = obj.useConnectGuardianGate();
   dependencyMap = react.useRef(false);
   const items = [connectGuardianGate.state, onComplete];
@@ -371,7 +371,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
     }
   }, items);
   if ("gate" !== connectGuardianGate.state) {
-    let obj2 = { style: items1, children: closure_7(tmp4(6828).ActivityIndicator, {}) };
+    let obj2 = { style: items1, children: closure_7(tmp4(6831).ActivityIndicator, {}) };
     items1 = [, ];
     ({ container: arr2[0], centered: arr2[1] } = tmp);
     tmp9 = closure_7(View, obj2);
@@ -394,7 +394,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
     items4 = [closure_7(Text3, obj8), ];
     const obj10 = { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null };
     ({ linkCode: obj9.linkCode, expiresAt: obj9.expiresAt, refresh: obj9.onRefresh } = connectGuardianGate);
-    items4[1] = closure_7(onComplete(15956).ConnectGuardianCard, obj10);
+    items4[1] = closure_7(onComplete(15975).ConnectGuardianCard, obj10);
     items3[1] = closure_8(View, obj7);
     const obj11 = { style: tmp.grow };
     items3[2] = closure_7(View, obj11);

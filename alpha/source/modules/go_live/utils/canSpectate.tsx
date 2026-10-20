@@ -1,10 +1,10 @@
-// Module ID: 6632
-// Function ID: 6633
+// Module ID: 6635
+// Function ID: 6636
 // Name: canSpectate
 // Dependencies: [5680, 2]
 // Exports: default
 
-// Module 6632 (canSpectate)
+// Module 6635 (canSpectate)
 import Constants from "Constants" /* 5680 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 19115
-// Function ID: 19116
+// Module ID: 19139
+// Function ID: 19140
 // Name: StreamFullAlert
-// Dependencies: [19, 21, 558, 576, 5853, 1128, 5195, 5631, 19116, 5933, 2]
+// Dependencies: [19, 21, 558, 576, 5855, 1128, 5195, 5631, 19140, 5936, 2]
 
-// Module 19115 (StreamFullAlert)
+// Module 19139 (StreamFullAlert)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import AVError from "AVError" /* 5853 */;
-import AlertDefault from "Alert" /* 5933 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19116 */;
+import AVError from "AVError" /* 5855 */;
+import AlertDefault from "Alert" /* 5936 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19140 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -33,7 +33,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamFull
   const cResult = obj.c(7);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmpResult = AVError;
-    const errorInfo = tmpResult.getErrorInfo(tmp(5853).AVError.STREAM_FULL);
+    const errorInfo = tmpResult.getErrorInfo(tmp(5855).AVError.STREAM_FULL);
     let errorCode;
     if (errorInfo != null) {
       errorCode = errorInfo.errorCode;

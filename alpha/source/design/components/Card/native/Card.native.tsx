@@ -1,9 +1,9 @@
-// Module ID: 6853
-// Function ID: 6854
+// Module ID: 6856
+// Function ID: 6857
 // Name: Card/Card
-// Dependencies: [109, 19, 17, 21, 5014, 587, 4945, 6854, 558, 576, 5213, 1384, 5208, 5209, 6855, 2]
+// Dependencies: [109, 19, 17, 21, 5014, 587, 4945, 6857, 558, 576, 5213, 1384, 5208, 5209, 6858, 2]
 
-// Module 6853 (Card/Card)
+// Module 6856 (Card/Card)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,7 +12,7 @@ import ReanimatedRexport2 from "ReanimatedRexport" /* 5014 */;
 import spring from "spring" /* 5208 */;
 import springPresets from "springPresets" /* 5209 */;
 import useToken2 from "useToken" /* 5213 */;
-import CardTokens from "CardTokens" /* 6854 */;
+import CardTokens from "CardTokens" /* 6857 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -27,7 +27,7 @@ let _require;
 let Pressable;
 let c10;
 let tmp;
-const AnimatedPressableHighlight2 = tmp(6855);
+const AnimatedPressableHighlight2 = tmp(6858);
 function PressableCard(arg0) {
   let tmp2;
   const obj = PlatformUtils;

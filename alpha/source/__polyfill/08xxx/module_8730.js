@@ -1,168 +1,26 @@
 // Module ID: 8730
 // Function ID: 8731
-// Dependencies: [4979]
+// Dependencies: []
 
 // Module 8730
-import "module_4979";
-import module_4979_mod from "module_4979" /* 4979 */;
 
-let items;
-let items1;
-let items10;
-let items11;
-let items12;
-let items13;
-let items14;
-let items15;
-let items16;
-let items17;
-let items18;
-let items19;
-let items2;
-let items20;
-let items21;
-let items22;
-let items23;
-let items24;
-let items25;
-let items26;
-let items27;
-let items28;
-let items29;
-let items3;
-let items30;
-let items4;
-let items5;
-let items6;
-let items7;
-let items8;
-let items9;
-let module_4979;
-let oneOfType;
-let oneOfType10;
-let oneOfType11;
-let oneOfType12;
-let oneOfType13;
-let oneOfType14;
-let oneOfType15;
-let oneOfType16;
-let oneOfType17;
-let oneOfType18;
-let oneOfType19;
-let oneOfType2;
-let oneOfType20;
-let oneOfType21;
-let oneOfType22;
-let oneOfType23;
-let oneOfType24;
-let oneOfType25;
-let oneOfType26;
-let oneOfType27;
-let oneOfType28;
-let oneOfType29;
-let oneOfType3;
-let oneOfType30;
-let oneOfType31;
-let oneOfType4;
-let oneOfType5;
-let oneOfType6;
-let oneOfType7;
-let oneOfType8;
-let oneOfType9;
-const size = { display: module_4979.oneOf(["none", "flex"]), width: oneOfType(items), height: oneOfType2(items1), start: oneOfType3(items2), end: oneOfType4(items3), top: oneOfType5(items4), left: oneOfType6(items5), right: oneOfType7(items6), bottom: oneOfType8(items7), minWidth: oneOfType9(items8), maxWidth: oneOfType10(items9), minHeight: oneOfType11(items10), maxHeight: oneOfType12(items11), margin: oneOfType13(items12), marginVertical: oneOfType14(items13), marginHorizontal: oneOfType15(items14), marginTop: oneOfType16(items15), marginBottom: oneOfType17(items16), marginLeft: oneOfType18(items17), marginRight: oneOfType19(items18), marginStart: oneOfType20(items19), marginEnd: oneOfType21(items20), padding: oneOfType22(items21), paddingVertical: oneOfType23(items22), paddingHorizontal: oneOfType24(items23), paddingTop: oneOfType25(items24), paddingBottom: oneOfType26(items25), paddingLeft: oneOfType27(items26), paddingRight: oneOfType28(items27), paddingStart: oneOfType29(items28), paddingEnd: oneOfType30(items29), borderWidth: module_4979.number, borderTopWidth: module_4979.number, borderStartWidth: module_4979.number, borderEndWidth: module_4979.number, borderRightWidth: module_4979.number, borderBottomWidth: module_4979.number, borderLeftWidth: module_4979.number, position: module_4979.oneOf(["absolute", "relative"]), flexDirection: module_4979.oneOf(["row", "row-reverse", "column", "column-reverse"]), flexWrap: module_4979.oneOf(["wrap", "nowrap", "wrap-reverse"]), justifyContent: module_4979.oneOf(["flex-start", "flex-end", "center", "space-between", "space-around", "space-evenly"]), alignItems: module_4979.oneOf(["flex-start", "flex-end", "center", "stretch", "baseline"]), alignSelf: module_4979.oneOf(["auto", "flex-start", "flex-end", "center", "stretch", "baseline"]), alignContent: module_4979.oneOf(["flex-start", "flex-end", "center", "stretch", "space-between", "space-around"]), overflow: module_4979.oneOf(["visible", "hidden", "scroll"]), flex: module_4979.number, flexGrow: module_4979.number, flexShrink: module_4979.number, flexBasis: oneOfType31(items30), aspectRatio: module_4979.number, zIndex: module_4979.number, direction: module_4979.oneOf(["inherit", "ltr", "rtl"]) };
-module_4979 = module_4979_mod;
-oneOfType = module_4979.oneOfType;
-items = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType2 = module_4979.oneOfType;
-items1 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType3 = module_4979.oneOfType;
-items2 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType4 = module_4979.oneOfType;
-items3 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType5 = module_4979.oneOfType;
-items4 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType6 = module_4979.oneOfType;
-items5 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType7 = module_4979.oneOfType;
-items6 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType8 = module_4979.oneOfType;
-items7 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType9 = module_4979.oneOfType;
-items8 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType10 = module_4979.oneOfType;
-items9 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType11 = module_4979.oneOfType;
-items10 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType12 = module_4979.oneOfType;
-items11 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType13 = module_4979.oneOfType;
-items12 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType14 = module_4979.oneOfType;
-items13 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType15 = module_4979.oneOfType;
-items14 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType16 = module_4979.oneOfType;
-items15 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType17 = module_4979.oneOfType;
-items16 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType18 = module_4979.oneOfType;
-items17 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType19 = module_4979.oneOfType;
-items18 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType20 = module_4979.oneOfType;
-items19 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType21 = module_4979.oneOfType;
-items20 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType22 = module_4979.oneOfType;
-items21 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType23 = module_4979.oneOfType;
-items22 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType24 = module_4979.oneOfType;
-items23 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType25 = module_4979.oneOfType;
-items24 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType26 = module_4979.oneOfType;
-items25 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType27 = module_4979.oneOfType;
-items26 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType28 = module_4979.oneOfType;
-items27 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType29 = module_4979.oneOfType;
-items28 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType30 = module_4979.oneOfType;
-items29 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-oneOfType31 = module_4979.oneOfType;
-items30 = [module_4979.number, module_4979.string];
-module_4979 = module_4979_mod;
-
-export default size;
+export default (obj) => {
+  if (obj instanceof Object) {
+    const _Array = Array;
+    if (!Array.isArray(obj)) {
+      obj = {};
+      for (const key10010 in obj) {
+        if (!obj.hasOwnProperty(key10010)) {
+          continue;
+        } else {
+          obj[key10010] = key10010;
+          continue;
+        }
+        continue;
+      }
+      return obj;
+    }
+  }
+  const error = new Error("keyMirror(...): Argument must be an object.");
+  throw error;
+};

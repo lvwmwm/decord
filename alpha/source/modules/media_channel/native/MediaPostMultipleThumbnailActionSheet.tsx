@@ -1,9 +1,9 @@
-// Module ID: 10032
-// Function ID: 10033
+// Module ID: 10043
+// Function ID: 10044
 // Name: MediaPostMultipleThumbnailActionSheet
 // Dependencies: [19, 17, 4797, 21, 4945, 587, 558, 576, 1633, 5195, 1128, 1202, 5205, 5230, 5226, 2]
 
-// Module 10032 (MediaPostMultipleThumbnailActionSheet)
+// Module 10043 (MediaPostMultipleThumbnailActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;

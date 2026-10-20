@@ -1,10 +1,10 @@
-// Module ID: 8444
-// Function ID: 8445
+// Module ID: 8448
+// Function ID: 8449
 // Name: TimestampUtils
 // Dependencies: [4773, 2050, 1104, 2]
 // Exports: formatTimestampMention, parseTimestamp, unparseTimestamp
 
-// Module 8444 (TimestampUtils)
+// Module 8448 (TimestampUtils)
 import DurationsDefault from "Durations" /* 1104 */;
 import _modDef2050 from "module_2050" /* 2050 */;
 import DateUtils from "DateUtils" /* 4773 */;

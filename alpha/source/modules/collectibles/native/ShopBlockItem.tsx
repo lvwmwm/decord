@@ -1,21 +1,21 @@
-// Module ID: 16940
-// Function ID: 16941
+// Module ID: 16959
+// Function ID: 16960
 // Name: ShopBlockItem
-// Dependencies: [19, 17, 7596, 21, 4945, 587, 558, 576, 504, 5601, 9278, 16941, 16962, 16964, 16970, 2]
+// Dependencies: [19, 17, 7599, 21, 4945, 587, 558, 576, 504, 5601, 9290, 16960, 16981, 16983, 16989, 2]
 
-// Module 16940 (ShopBlockItem)
+// Module 16959 (ShopBlockItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ShopBlockType from "ShopBlockType" /* 5601 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9278 */;
-import FeaturedBlockDefault from "FeaturedBlock" /* 16962 */;
-import FeedBlockDefault from "FeedBlock" /* 16964 */;
-import ShelfBlockDefault from "ShelfBlock" /* 16970 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9290 */;
+import FeaturedBlockDefault from "FeaturedBlock" /* 16981 */;
+import FeedBlockDefault from "FeedBlock" /* 16983 */;
+import ShelfBlockDefault from "ShelfBlock" /* 16989 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7596 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7599 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -97,7 +97,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const CollectiblesAnalyticsProvider3 = tmp(9278).CollectiblesAnalyticsProvider;
+    const CollectiblesAnalyticsProvider3 = tmp(9290).CollectiblesAnalyticsProvider;
     const tmp49 = <CollectiblesAnalyticsProvider3 newValue={tmp45}>{null}</CollectiblesAnalyticsProvider3>;
     cResult[5] = block;
     cResult[6] = preferVCPrice;
@@ -133,7 +133,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp41;
       }
     }
-    const CollectiblesAnalyticsProvider2 = tmp(9278).CollectiblesAnalyticsProvider;
+    const CollectiblesAnalyticsProvider2 = tmp(9290).CollectiblesAnalyticsProvider;
     const tmp44 = <CollectiblesAnalyticsProvider2 newValue={tmp36}>{null}</CollectiblesAnalyticsProvider2>;
     cResult[13] = combined;
     cResult[14] = tmp4.shopBlockSpacing;
@@ -164,7 +164,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             return tmp32;
           }
-          const CollectiblesAnalyticsProvider = tmp(9278).CollectiblesAnalyticsProvider;
+          const CollectiblesAnalyticsProvider = tmp(9290).CollectiblesAnalyticsProvider;
           const tmp35 = <CollectiblesAnalyticsProvider newValue={tmp27}>{null}</CollectiblesAnalyticsProvider>;
           cResult[23] = tmp4.shopBlockSpacing;
           cResult[24] = tmp28;

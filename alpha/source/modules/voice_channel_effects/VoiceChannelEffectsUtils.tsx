@@ -1,17 +1,14 @@
-// Module ID: 7403
-// Function ID: 7404
+// Module ID: 7406
+// Function ID: 7407
 // Name: VoiceChannelEffectsUtils
-// Dependencies: [1392, 7402, 7404, 7405, 7406, 7407, 7408, 7409, 7410, 7411, 7412, 7413, 7414, 7415, 7416, 7417, 7418, 7419, 7420, 7421, 7422, 7423, 7424, 7425, 12, 1452, 1417, 4894, 4898, 1128, 2]
+// Dependencies: [1392, 7405, 7407, 7408, 7409, 7410, 7411, 7412, 7413, 7414, 7415, 7416, 7417, 7418, 7419, 7420, 7421, 7422, 7423, 7424, 7425, 7426, 7427, 7428, 12, 1452, 1417, 4894, 4898, 1128, 2]
 // Exports: getEffectAnnouncement, getEffectUrl, sampleAnimationId
 
-// Module 7403 (VoiceChannelEffectsUtils)
+// Module 7406 (VoiceChannelEffectsUtils)
 import intl4 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4894 */;
-import _modDef7404 from "module_7404" /* 7404 */;
-import _modDef7405 from "module_7405" /* 7405 */;
-import _modDef7406 from "module_7406" /* 7406 */;
 import _modDef7407 from "module_7407" /* 7407 */;
 import _modDef7408 from "module_7408" /* 7408 */;
 import _modDef7409 from "module_7409" /* 7409 */;
@@ -31,8 +28,11 @@ import _modDef7422 from "module_7422" /* 7422 */;
 import _modDef7423 from "module_7423" /* 7423 */;
 import _modDef7424 from "module_7424" /* 7424 */;
 import _modDef7425 from "module_7425" /* 7425 */;
+import _modDef7426 from "module_7426" /* 7426 */;
+import _modDef7427 from "module_7427" /* 7427 */;
+import _modDef7428 from "module_7428" /* 7428 */;
 import UserStore from "UserStore" /* 1392 */;
-import VoiceChannelEffectsConstants from "VoiceChannelEffectsConstants" /* 7402 */;
+import VoiceChannelEffectsConstants from "VoiceChannelEffectsConstants" /* 7405 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -41,8 +41,8 @@ let src;
 let VoiceChannelEffectAnimationType;
 let closure_4;
 ({ EMOJI_SIZE: closure_4, VoiceChannelEffectAnimationType } = VoiceChannelEffectsConstants);
-const items = [_modDef7404];
-const items1 = [_modDef7405, _modDef7406, _modDef7407, _modDef7408, _modDef7409, _modDef7410, _modDef7411, _modDef7412, _modDef7413, _modDef7414, _modDef7415, _modDef7416, _modDef7417, _modDef7418, _modDef7419, _modDef7420, _modDef7421, _modDef7422, _modDef7423, _modDef7424, _modDef7425];
+const items = [_modDef7407];
+const items1 = [_modDef7408, _modDef7409, _modDef7410, _modDef7411, _modDef7412, _modDef7413, _modDef7414, _modDef7415, _modDef7416, _modDef7417, _modDef7418, _modDef7419, _modDef7420, _modDef7421, _modDef7422, _modDef7423, _modDef7424, _modDef7425, _modDef7426, _modDef7427, _modDef7428];
 const AnimationTypeToAnimations = { [VoiceChannelEffectAnimationType.BASIC]: items, [VoiceChannelEffectAnimationType.PREMIUM]: items1 };
 const memoizeResult = module_12.memoize((src) => {
   const promise = new Promise((arg0) => {
@@ -120,28 +120,28 @@ export const getEffectUrl = function getEffectUrl(emoji) {
 export const getEffectAnnouncement = function getEffectAnnouncement(items) {
   let username2;
   let username4;
-  const f97262 = (item) => {
+  const f97363 = (item) => {
     let tmp = item[emojiName];
     if (tmp == null) {
       tmp = null;
     }
     return tmp;
   };
-  const f97263 = (item) => null != item;
+  const f97364 = (item) => null != item;
   if (items.length < 1) {
     return "";
   } else {
     let joined;
     const userId = "userId";
     const arr = module_12(items);
-    const mapped = arr.map(f97262);
-    const found = mapped.filter(f97263);
+    const mapped = arr.map(f97363);
+    const found = mapped.filter(f97364);
     const iter = found.uniq();
     const valueResult = iter.value();
     const emojiName = "emojiName";
     const arr4 = module_12(items);
-    const mapped1 = arr4.map(f97262);
-    const found1 = mapped1.filter(f97263);
+    const mapped1 = arr4.map(f97363);
+    const found1 = mapped1.filter(f97364);
     const iter2 = found1.uniq();
     const valueResult2 = iter2.value();
     if (valueResult2.length < 2) {

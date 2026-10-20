@@ -1,10 +1,10 @@
-// Module ID: 18777
-// Function ID: 18778
+// Module ID: 18800
+// Function ID: 18801
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1392, 18773, 1087, 21, 4945, 587, 1128, 4994, 18775, 558, 576, 5001, 6936, 10626, 1633, 1505, 6775, 18778, 1202, 11555, 18779, 6932, 7093, 8648, 7168, 5553, 2]
+// Dependencies: [32, 19, 17, 1392, 18796, 1087, 21, 4945, 587, 1128, 4994, 18798, 558, 576, 5001, 6939, 10637, 1633, 1505, 6778, 18801, 1202, 11566, 18802, 6935, 7096, 8660, 7171, 5553, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData
 
-// Module 18777 (GuildSettingsModalAuditLogFilter)
+// Module 18800 (GuildSettingsModalAuditLogFilter)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,15 +12,15 @@ import Constants from "Constants" /* 1087 */;
 import intl6 from "intl" /* 1128 */;
 import UserUtilsDefault from "UserUtils" /* 4994 */;
 import react_native2 from "react-native" /* 5001 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6775 */;
-import FormRadio from "FormRadio" /* 6936 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10626 */;
-import AuditLogUtils from "AuditLogUtils" /* 18775 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 18778 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6778 */;
+import FormRadio from "FormRadio" /* 6939 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10637 */;
+import AuditLogUtils from "AuditLogUtils" /* 18798 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 18801 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 18773 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 18796 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -258,7 +258,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                           }
                         }
                       }
-                      const tmp25 = closure_9(tmp(7093).SearchField, obj5);
+                      const tmp25 = closure_9(tmp(7096).SearchField, obj5);
                       cResult[25] = tmp20;
                       cResult[26] = tmp25;
                       tmp23 = tmp25;

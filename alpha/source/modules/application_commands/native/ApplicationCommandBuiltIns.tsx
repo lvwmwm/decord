@@ -1,15 +1,15 @@
-// Module ID: 9574
-// Function ID: 9575
+// Module ID: 9587
+// Function ID: 9588
 // Name: application_commands/ApplicationCommandBuiltIns
-// Dependencies: [4890, 1392, 5938, 2000, 5595, 1128, 5565, 5863, 7357, 7512, 2]
+// Dependencies: [4890, 1392, 5941, 2000, 5595, 1128, 5565, 5866, 7360, 7515, 2]
 
-// Module 9574 (application_commands/ApplicationCommandBuiltIns)
+// Module 9587 (application_commands/ApplicationCommandBuiltIns)
 import Server from "Server" /* 2000 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5595 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5863 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5938 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7357 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7512 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5866 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5941 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7360 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7515 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;

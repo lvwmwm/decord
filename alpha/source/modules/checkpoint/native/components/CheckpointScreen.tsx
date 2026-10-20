@@ -1,18 +1,19 @@
-// Module ID: 12782
-// Function ID: 12783
+// Module ID: 12799
+// Function ID: 12800
 // Name: CheckpointScreen
-// Dependencies: [19, 17, 5970, 21, 587, 4945, 558, 576, 5554, 2]
+// Dependencies: [19, 17, 5973, 21, 587, 4945, 558, 576, 1499, 5554, 2]
 
-// Module 12782 (CheckpointScreen)
+// Module 12799 (CheckpointScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5554 */;
-import CheckpointConstants from "CheckpointConstants" /* 5970 */;
+import CheckpointConstants from "CheckpointConstants" /* 5973 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import createStyles from "createStyles" /* 4945 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -21,16 +22,37 @@ let hasOwnProperty;
 const CHECKPOINT_NAV_HEIGHT = CheckpointConstants.CHECKPOINT_NAV_HEIGHT;
 const jsx = Fragment.jsx;
 const PX_24 = nativeDefault.space.PX_24;
-let closure_9 = createStyles.createStyles({ container: { height: "100%", width: "100%" }, scroll: { width: "100%" }, scrollContent: { flexGrow: 1 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointScreen(children) {
+let closure_10 = createStyles.createStyles({ container: { height: "100%", width: "100%" }, scroll: { width: "100%" }, scrollContent: { flexGrow: 1 } });
+let ReactCompilerGating = ReactCompilerGating_mod;
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckpointScreenContentHeight() {
+  let first;
+  const obj = react2;
+  const cResult = obj.c(1);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { ignoreKeyboard: true };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const height = useWindowDimensionsDefault(first).height;
+  const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;
+  return height - insets.top - CHECKPOINT_NAV_HEIGHT - insets.bottom - PX_24;
+}) : (function useCheckpointScreenContentHeight() {
+  const height = useWindowDimensionsDefault({ ignoreKeyboard: true }).height;
+  const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;
+  return height - insets.top - CHECKPOINT_NAV_HEIGHT - insets.bottom - PX_24;
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointScreen(children) {
   const obj = react2;
   const cResult = obj.c(15);
   children = children.children;
-  const tmp2 = closure_9();
+  const tmp2 = closure_10();
   const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;
   const sum = insets.left + PX_24;
   const sum1 = insets.right + PX_24;
-  const sum2 = insets.bottom + nativeDefault.space.PX_24;
+  const sum2 = insets.bottom + PX_24;
   const sum3 = insets.top + CHECKPOINT_NAV_HEIGHT;
   if (cResult[0] === sum) {
     if (cResult[1] === sum1) {
@@ -88,19 +110,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   tmp7 = obj4;
 }) : (function CheckpointScreen(children) {
   children = children.children;
-  const tmp = closure_9();
+  const tmp = closure_10();
   const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;
   const items = [, , , ];
   ({ bottom: arr[0], left: arr[1], right: arr[2], top: arr[3] } = insets);
-  const items1 = [
-    tmp.scrollContent,
-    react.useMemo(() => {
-      const obj = { paddingLeft: insets.left + PX_24, paddingRight: insets.right + PX_24, paddingBottom: insets.bottom + nativeDefault.space.PX_24, paddingTop: insets.top + CHECKPOINT_NAV_HEIGHT };
-      return obj;
-    }, items)
-  ];
+  const items1 = [tmp.scrollContent, react.useMemo(() => ({ paddingLeft: insets.left + PX_24, paddingRight: insets.right + PX_24, paddingBottom: insets.bottom + PX_24, paddingTop: insets.top + CHECKPOINT_NAV_HEIGHT }), items)];
   return <closure_5 style={tmp.container}>{null}</closure_5>;
 });
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointScreen.tsx");
 
-export default tmp3;
+export default tmp4;
+export const useCheckpointScreenContentHeight = tmp3;

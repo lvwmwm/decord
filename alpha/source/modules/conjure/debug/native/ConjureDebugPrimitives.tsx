@@ -1,16 +1,16 @@
-// Module ID: 12383
-// Function ID: 12384
+// Module ID: 12400
+// Function ID: 12401
 // Name: ConjureDebugPrimitives
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5195, 1128, 3820, 12381, 5205, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5195, 1128, 3820, 12398, 5205, 2]
 
-// Module 12383 (ConjureDebugPrimitives)
+// Module 12400 (ConjureDebugPrimitives)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef3820 from "module_3820" /* 3820 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 12381 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 12398 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,10 +1,10 @@
-// Module ID: 6325
-// Function ID: 6326
+// Module ID: 6328
+// Function ID: 6329
 // Name: isMessageMentioned
 // Dependencies: [4800, 4860, 4822, 2]
 // Exports: default, isRawMessageMentioned
 
-// Module 6325 (isMessageMentioned)
+// Module 6328 (isMessageMentioned)
 import ChannelStore from "ChannelStore" /* 4800 */;
 import GuildMemberStore from "GuildMemberStore" /* 4860 */;
 import GuildStore from "GuildStore" /* 4822 */;

@@ -1,9 +1,9 @@
-// Module ID: 11006
-// Function ID: 11007
+// Module ID: 11018
+// Function ID: 11019
 // Name: ConjureRemixStore
 // Dependencies: [504, 584, 2]
 
-// Module 11006 (ConjureRemixStore)
+// Module 11018 (ConjureRemixStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

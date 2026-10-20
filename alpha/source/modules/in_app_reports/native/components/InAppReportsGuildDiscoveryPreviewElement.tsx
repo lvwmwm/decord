@@ -1,9 +1,9 @@
-// Module ID: 14380
-// Function ID: 14381
+// Module ID: 14398
+// Function ID: 14399
 // Name: InAppReportsGuildDiscoveryPreviewElement
-// Dependencies: [19, 17, 4946, 21, 4945, 587, 558, 576, 7022, 504, 4942, 1128, 5195, 4814, 6831, 2]
+// Dependencies: [19, 17, 4946, 21, 4945, 587, 558, 576, 7025, 504, 4942, 1128, 5195, 4814, 6834, 2]
 
-// Module 14380 (InAppReportsGuildDiscoveryPreviewElement)
+// Module 14398 (InAppReportsGuildDiscoveryPreviewElement)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -12,8 +12,8 @@ import intl2 from "intl" /* 1128 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4814 */;
 import ColorUtils from "ColorUtils" /* 4942 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import GuildIconDefault from "GuildIcon" /* 6831 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7022 */;
+import GuildIconDefault from "GuildIcon" /* 6834 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7025 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
 import Fragment from "Fragment" /* 21 */;

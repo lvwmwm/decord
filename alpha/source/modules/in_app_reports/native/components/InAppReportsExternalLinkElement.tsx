@@ -1,15 +1,15 @@
-// Module ID: 14392
-// Function ID: 14393
+// Module ID: 14410
+// Function ID: 14411
 // Name: InAppReportsExternalLinkElement
-// Dependencies: [17, 21, 4945, 587, 558, 576, 7022, 5195, 1128, 5622, 6859, 14393, 8873, 2]
+// Dependencies: [17, 21, 4945, 587, 558, 576, 7025, 5195, 1128, 5622, 6862, 14411, 8885, 2]
 
-// Module 14392 (InAppReportsExternalLinkElement)
+// Module 14410 (InAppReportsExternalLinkElement)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import LinkingDefault from "Linking" /* 5622 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7022 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7025 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -193,8 +193,8 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Externa
     }
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { IconComponent: url(14393).LinkExternalMediumIcon };
-      const TableRowIcon = tmp(6859).TableRowIcon;
+      const obj2 = { IconComponent: url(14411).LinkExternalMediumIcon };
+      const TableRowIcon = tmp(6862).TableRowIcon;
       const tmp9 = closure_4(TableRowIcon, obj2);
       cResult[2] = tmp9;
       tmp7 = tmp9;
@@ -211,7 +211,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Externa
       }
     }
     const obj3 = { label: link_text, subLabel: link_description, trailing: tmp7, onPress: tmp5, arrow: false, accessibilityRole: "link" };
-    const tmp12 = closure_4(url(8873).RowButton, obj3);
+    const tmp12 = closure_4(url(8885).RowButton, obj3);
     cResult[3] = link_description;
     cResult[4] = link_text;
     cResult[5] = tmp5;
@@ -238,9 +238,9 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Externa
       arrow: false,
       accessibilityRole: "link"
     };
-    const RowButton = url(8873).RowButton;
-    obj2 = { IconComponent: url(14393).LinkExternalMediumIcon };
-    TableRowIcon = url(6859).TableRowIcon;
+    const RowButton = url(8885).RowButton;
+    obj2 = { IconComponent: url(14411).LinkExternalMediumIcon };
+    TableRowIcon = url(6862).TableRowIcon;
     tmp3 = closure_4(RowButton, obj);
   }
   return tmp3;

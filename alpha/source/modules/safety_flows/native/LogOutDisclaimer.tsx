@@ -1,16 +1,16 @@
-// Module ID: 19131
-// Function ID: 19132
+// Module ID: 19155
+// Function ID: 19156
 // Name: LogOutDisclaimer
-// Dependencies: [21, 558, 576, 15095, 5195, 1128, 2822, 6616, 2]
+// Dependencies: [21, 558, 576, 15113, 5195, 1128, 2822, 6619, 2]
 
-// Module 19131 (LogOutDisclaimer)
+// Module 19155 (LogOutDisclaimer)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef2822 from "module_2822" /* 2822 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6616 */;
-import ModalDisclaimer2 from "ModalDisclaimer" /* 15095 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6619 */;
+import ModalDisclaimer2 from "ModalDisclaimer" /* 15113 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LogOutDisc
   let obj = react;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const ModalDisclaimer = tmp(15095).ModalDisclaimer;
+    const ModalDisclaimer = tmp(15113).ModalDisclaimer;
     ({ variant: "text-xs/medium", children: intl.format(_modDef2822["0DHxym"], obj4) });
     const Text = tmp(5195).Text;
     intl = tmp(1128).intl;

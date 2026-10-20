@@ -1,9 +1,9 @@
-// Module ID: 16443
-// Function ID: 16444
+// Module ID: 16462
+// Function ID: 16463
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 1410, 1087, 21, 1105, 16440, 4945, 587, 558, 576, 8584, 10583, 1409, 5173, 5171, 15642, 1267, 1128, 2918, 16432, 5205, 6867, 12, 16441, 5226, 2]
+// Dependencies: [32, 19, 17, 1410, 1087, 21, 1105, 16459, 4945, 587, 558, 576, 8596, 10594, 1409, 5173, 5171, 15661, 1267, 1128, 2918, 16451, 5205, 6870, 12, 16460, 5226, 2]
 
-// Module 16443 (DisplayNameStylesColorPickerSheet)
+// Module 16462 (DisplayNameStylesColorPickerSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
@@ -12,8 +12,8 @@ import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1409 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1410 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import HapticUtils from "HapticUtils" /* 5173 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15642 */;
-import ColorPickerConsts from "ColorPickerConsts" /* 16440 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15661 */;
+import ColorPickerConsts from "ColorPickerConsts" /* 16459 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -323,7 +323,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
           if (tmp) {
             const obj4 = { style: presetColor.checkmarkOverlay, pointerEvents: "none", children: React4(CheckmarkLargeIcon, obj5) };
             obj5 = { size: "custom", style: presetColor.checkmark, color: str };
-            CheckmarkLargeIcon = tmp5(6867).CheckmarkLargeIcon;
+            CheckmarkLargeIcon = tmp5(6870).CheckmarkLargeIcon;
             const tmp5Result2 = utils_ColorUtils;
             const darkness = tmp5Result2.getDarkness(item);
             str = "black";

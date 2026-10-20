@@ -1,9 +1,9 @@
-// Module ID: 14025
-// Function ID: 14026
+// Module ID: 14043
+// Function ID: 14044
 // Name: useMediaItemSpoilerState
-// Dependencies: [32, 19, 558, 576, 8681, 5014, 5167, 1202, 2]
+// Dependencies: [32, 19, 558, 576, 8693, 5014, 5167, 1202, 2]
 
-// Module 14025 (useMediaItemSpoilerState)
+// Module 14043 (useMediaItemSpoilerState)
 import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
 import timing from "timing" /* 5167 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -26,7 +26,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaItem
   const tmp2 = dependencyMap;
   let obj = mediaItemHasSpoiler(576);
   const cResult = obj.c(7);
-  const obj2 = mediaItemHasSpoiler(8681);
+  const obj2 = mediaItemHasSpoiler(8693);
   mediaItemHasSpoiler = obj2.useMediaItemHasSpoiler(arg0);
   [tmp6, dependencyMap] = sharedValue(react.useState(mediaItemHasSpoiler), 2);
   let num = 0;
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaItem
   let tmp5;
   const tmp = mediaItemHasSpoiler;
   const tmp2 = dependencyMap;
-  let obj = mediaItemHasSpoiler(8681);
+  let obj = mediaItemHasSpoiler(8693);
   mediaItemHasSpoiler = obj.useMediaItemHasSpoiler(arg0);
   const obj2 = react;
   const tmp4 = sharedValue(react.useState(mediaItemHasSpoiler), 2);

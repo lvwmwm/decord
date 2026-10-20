@@ -1,9 +1,9 @@
-// Module ID: 19147
-// Function ID: 19148
+// Module ID: 19171
+// Function ID: 19172
 // Name: AppStoreParentalRevocationScreen
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5622, 1128, 2822, 5195, 5932, 7845, 19131, 12696, 12746, 8035, 7844, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5622, 1128, 2822, 5195, 5935, 7849, 19155, 12713, 12763, 8039, 7848, 2]
 
-// Module 19147 (AppStoreParentalRevocationScreen)
+// Module 19171 (AppStoreParentalRevocationScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,13 +11,13 @@ import intl5 from "intl" /* 1128 */;
 import _modDef2822 from "module_2822" /* 2822 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import LinkingDefault from "Linking" /* 5622 */;
-import Stack_Stack from "Stack/Stack" /* 5932 */;
-import ModalScreen2 from "ModalScreen" /* 7844 */;
-import ModalContent2 from "ModalContent" /* 7845 */;
-import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 8035 */;
-import ModalFooter2 from "ModalFooter" /* 12696 */;
-import ModalActionButton2 from "ModalActionButton" /* 12746 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 19131 */;
+import Stack_Stack from "Stack/Stack" /* 5935 */;
+import ModalScreen2 from "ModalScreen" /* 7848 */;
+import ModalContent2 from "ModalContent" /* 7849 */;
+import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 8039 */;
+import ModalFooter2 from "ModalFooter" /* 12713 */;
+import ModalActionButton2 from "ModalActionButton" /* 12763 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 19155 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -169,12 +169,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
               if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
                 const obj6 = { children: items };
                 items = [tmp43, ];
-                const ModalFooter = tmp(12696).ModalFooter;
+                const ModalFooter = tmp(12713).ModalFooter;
                 const obj7 = { variant: "primary", text: intl4.string(_modDef2822["6FXIU6"]), icon: hasOwnProperty(LinkExternalSmallIcon, obj8), iconPosition: "end", onPress: first };
-                const ModalActionButton = tmp(12746).ModalActionButton;
+                const ModalActionButton = tmp(12763).ModalActionButton;
                 intl4 = tmp(1128).intl;
                 obj8 = { color: nativeDefault.colors.WHITE };
-                LinkExternalSmallIcon = tmp(8035).LinkExternalSmallIcon;
+                LinkExternalSmallIcon = tmp(8039).LinkExternalSmallIcon;
                 items[1] = hasOwnProperty(ModalActionButton, obj7);
                 const tmp51 = metroRequire(ModalFooter, obj6);
                 cResult[27] = tmp51;
@@ -198,7 +198,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
           const obj10 = { children: metroRequire(View, obj11) };
           obj11 = { style: content, children: items2 };
           items2 = [tmp30, tmp34];
-          const ModalContent = tmp(7845).ModalContent;
+          const ModalContent = tmp(7849).ModalContent;
           const tmp42 = hasOwnProperty(ModalContent, obj10);
           cResult[22] = tmp4.content;
           cResult[23] = tmp30;
@@ -214,7 +214,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
         tmp30 = tmp33;
       }
       const obj13 = { align: "center", spacing: nativeDefault.space.PX_16, children: items3 };
-      const Stack2 = tmp(5932).Stack;
+      const Stack2 = tmp(5935).Stack;
       items3 = [tmp9, tmp24];
       const tmp29 = metroRequire(Stack2, obj13);
       cResult[14] = tmp24;
@@ -224,7 +224,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStorePa
     }
   }
   const obj14 = { align: "center", spacing: nativeDefault.space.PX_16, style: body, children: items4 };
-  const Stack = tmp(5932).Stack;
+  const Stack = tmp(5935).Stack;
   items4 = [tmp15, tmp21];
   const tmp25 = metroRequire(Stack, obj14);
   cResult[10] = tmp4.body;

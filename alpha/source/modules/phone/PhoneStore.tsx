@@ -1,9 +1,9 @@
-// Module ID: 6983
-// Function ID: 6984
+// Module ID: 6986
+// Function ID: 6987
 // Name: PhoneStore
 // Dependencies: [5607, 504, 584, 2]
 
-// Module 6983 (PhoneStore)
+// Module 6986 (PhoneStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import CountryCodeUtils from "CountryCodeUtils" /* 5607 */;

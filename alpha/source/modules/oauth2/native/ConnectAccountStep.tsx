@@ -1,9 +1,9 @@
-// Module ID: 9557
-// Function ID: 9558
+// Module ID: 9570
+// Function ID: 9571
 // Name: ConnectAccountStep
-// Dependencies: [19, 17, 2046, 502, 1392, 21, 4945, 587, 558, 576, 5166, 504, 6456, 1417, 4952, 6757, 9523, 1202, 9558, 5195, 1128, 5205, 5648, 6867, 2]
+// Dependencies: [19, 17, 2046, 502, 1392, 21, 4945, 587, 558, 576, 5166, 504, 6459, 1417, 4952, 6760, 9536, 1202, 9571, 5195, 1128, 5205, 5648, 6870, 2]
 
-// Module 9557 (ConnectAccountStep)
+// Module 9570 (ConnectAccountStep)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,9 +12,9 @@ import AvatarUtils from "AvatarUtils" /* 1417 */;
 import shared from "shared" /* 4952 */;
 import useThemeDefault from "useTheme" /* 5166 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import PlatformsDefault from "Platforms" /* 6456 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6757 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9523 */;
+import PlatformsDefault from "Platforms" /* 6459 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6760 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9536 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2046 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -262,7 +262,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
         }
       }
       const obj4 = { color: platformType(587).colors.INTERACTIVE_TEXT_DEFAULT, size: "md" };
-      const MoreHorizontalIcon = tmp(9558).MoreHorizontalIcon;
+      const MoreHorizontalIcon = tmp(9571).MoreHorizontalIcon;
       const tmp36 = closure_8(MoreHorizontalIcon, obj4);
       class E {
         constructor() {
@@ -327,7 +327,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
     cResult[26] = closure_9(View, obj6);
     const tmp42 = closure_9(View, obj6);
   }
-  const tmp5Result4 = platformType(6456);
+  const tmp5Result4 = platformType(6459);
   const value = tmp5Result4.get(platformType);
   let source = null;
   if (null != value) {
@@ -374,7 +374,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
     }
     return currentUser;
   });
-  const obj3 = platformType(6456);
+  const obj3 = platformType(6459);
   const value = obj3.get(platformType);
   let source = null;
   if (null != value) {
@@ -415,7 +415,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectAccou
   const Avatar = tmp5(1202).Avatar;
   items4 = [closure_8(Avatar, obj9), , ];
   const obj10 = { color: platformType(587).colors.INTERACTIVE_TEXT_DEFAULT, size: "md" };
-  const MoreHorizontalIcon = tmp5(9558).MoreHorizontalIcon;
+  const MoreHorizontalIcon = tmp5(9571).MoreHorizontalIcon;
   items4[1] = closure_8(MoreHorizontalIcon, obj10);
   const obj11 = { source: userAvatarSource, size: clientId(1202).AvatarSizes.XLARGE };
   const Avatar2 = tmp5(1202).Avatar;
@@ -546,7 +546,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedA
             const _Symbol = Symbol;
             if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
               const obj6 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE, size: "sm" };
-              const CheckmarkLargeIcon = tmp(6867).CheckmarkLargeIcon;
+              const CheckmarkLargeIcon = tmp(6870).CheckmarkLargeIcon;
               const tmp35 = metroImportAll(CheckmarkLargeIcon, obj6);
               cResult[21] = tmp35;
               tmp33 = tmp35;
@@ -715,7 +715,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedA
   items2[1] = metroImportAll(Text2, obj9);
   items1[1] = React4(View, obj7);
   const obj11 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE, size: "sm" };
-  const CheckmarkLargeIcon = tmp12(6867).CheckmarkLargeIcon;
+  const CheckmarkLargeIcon = tmp12(6870).CheckmarkLargeIcon;
   items1[2] = metroImportAll(CheckmarkLargeIcon, obj11);
   items[1] = React4(View, obj5);
   const obj12 = { variant: "text-sm/normal", color: "text-default", children: intl3.format(intl5.t.pyRNXJ, { applicationName }) };

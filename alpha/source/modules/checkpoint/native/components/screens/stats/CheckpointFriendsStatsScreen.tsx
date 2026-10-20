@@ -1,29 +1,29 @@
-// Module ID: 12813
-// Function ID: 12814
+// Module ID: 12830
+// Function ID: 12831
 // Name: CheckpointFriendsStatsScreen
-// Dependencies: [5, 32, 19, 17, 4946, 1392, 12762, 5970, 21, 1385, 4945, 587, 558, 576, 6317, 1417, 504, 1499, 4994, 1128, 3046, 12814, 5072, 12780, 3078, 12782, 5628, 8487, 12815, 11513, 12816, 12763, 5624, 1202, 10364, 7224, 12693, 5642, 2]
+// Dependencies: [5, 32, 19, 17, 4946, 1392, 12779, 5973, 21, 1385, 4945, 587, 558, 576, 6320, 1417, 504, 1499, 4994, 1128, 3046, 12831, 5072, 12797, 3078, 12799, 5628, 8491, 12832, 11524, 12833, 12780, 5624, 1202, 10375, 7227, 12710, 5642, 2]
 
-// Module 12813 (CheckpointFriendsStatsScreen)
+// Module 12830 (CheckpointFriendsStatsScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import _modDef3046 from "module_3046" /* 3046 */;
 import FriendsIcon from "FriendsIcon" /* 5628 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 6317 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7224 */;
-import ChatIcon from "ChatIcon" /* 8487 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10364 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 11513 */;
-import CheckpointTextDefault from "CheckpointText" /* 12780 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12815 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 6320 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7227 */;
+import ChatIcon from "ChatIcon" /* 8491 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10375 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 11524 */;
+import CheckpointTextDefault from "CheckpointText" /* 12797 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12832 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
 import UserStore from "UserStore" /* 1392 */;
-import CheckpointStore from "CheckpointStore" /* 12762 */;
-import CheckpointConstants from "CheckpointConstants" /* 5970 */;
+import CheckpointStore from "CheckpointStore" /* 12779 */;
+import CheckpointConstants from "CheckpointConstants" /* 5973 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -166,7 +166,7 @@ function SidekickMessageInput(user) {
   [tmp7, c4] = _slicedToArray(react.useState(false), 2);
   let tmp10 = null != value;
   const tmp6 = _slicedToArray(react.useState(false), 2);
-  const tmp9 = value(12816)(user.id);
+  const tmp9 = value(12833)(user.id);
   if (tmp10) {
     tmp10 = value.length > 0;
   }
@@ -210,7 +210,7 @@ function SidekickMessageInput(user) {
         },
       accessibilityRole: "button",
       accessibilityLabel: intl2.string(tmp15(1128).t.Ve9Ge6),
-      children: tmp14(tmp15(12693).GiftIcon, obj6)
+      children: tmp14(tmp15(12710).GiftIcon, obj6)
     };
     intl2 = tmp15(1128).intl;
     obj6 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
@@ -293,10 +293,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFri
       tmp12 = !arg1;
       first.hasShownSquad || route === CheckpointNavigation.CheckpointRoute.SQUAD;
       if (tmp12) {
-        tmp12 = first.route === tmp(6317).CheckpointRoute.SQUAD;
+        tmp12 = first.route === tmp(6320).CheckpointRoute.SQUAD;
       }
       if (tmp12) {
-        tmp12 = route === tmp(6317).CheckpointRoute.SIDEKICK;
+        tmp12 = route === tmp(6320).CheckpointRoute.SIDEKICK;
       }
       tmp8[1](obj2);
     }
@@ -353,10 +353,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFri
     tmp7 = !arg1;
     first.hasShownSquad || route === CheckpointNavigation.CheckpointRoute.SQUAD;
     if (tmp7) {
-      tmp7 = first.route === tmp(6317).CheckpointRoute.SQUAD;
+      tmp7 = first.route === tmp(6320).CheckpointRoute.SQUAD;
     }
     if (tmp7) {
-      tmp7 = route === tmp(6317).CheckpointRoute.SIDEKICK;
+      tmp7 = route === tmp(6320).CheckpointRoute.SIDEKICK;
     }
     tmp3[1](obj3);
   }

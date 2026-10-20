@@ -1,14 +1,14 @@
-// Module ID: 7212
-// Function ID: 7213
+// Module ID: 7215
+// Function ID: 7216
 // Name: ConnectionCardView
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5195, 1128, 7213, 5205, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5195, 1128, 7216, 5205, 2]
 
-// Module 7212 (ConnectionCardView)
+// Module 7215 (ConnectionCardView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7213 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7216 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

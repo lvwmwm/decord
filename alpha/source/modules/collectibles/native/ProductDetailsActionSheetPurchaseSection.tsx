@@ -1,9 +1,9 @@
-// Module ID: 14270
-// Function ID: 14271
+// Module ID: 14288
+// Function ID: 14289
 // Name: ProductDetailsActionSheetPurchaseSection
-// Dependencies: [32, 19, 17, 7611, 1089, 1087, 10975, 1394, 21, 4945, 587, 558, 576, 12693, 5171, 13685, 1128, 7903, 14268, 9389, 9352, 1505, 7199, 6620, 14271, 2002, 7595, 14275, 1090, 14276, 13753, 9347, 5195, 5206, 1995, 8592, 504, 10874, 2054, 7608, 7607, 9368, 9712, 8588, 10974, 14278, 14279, 1633, 5205, 14280, 1257, 1384, 6423, 5864, 2]
+// Dependencies: [32, 19, 17, 7614, 1089, 1087, 10986, 1394, 21, 4945, 587, 558, 576, 12710, 5171, 13703, 1128, 7907, 14286, 9401, 9364, 1505, 7202, 6623, 14289, 2002, 7598, 14293, 1090, 14294, 13771, 9359, 5195, 5206, 1995, 8604, 504, 10885, 2054, 7611, 7610, 9380, 9725, 8600, 10985, 14296, 14297, 1633, 5205, 14298, 1257, 1384, 6426, 5867, 2]
 
-// Module 14270 (ProductDetailsActionSheetPurchaseSection)
+// Module 14288 (ProductDetailsActionSheetPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,18 +16,18 @@ import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5864 */;
-import ReleaseChannelUtils from "ReleaseChannelUtils" /* 6423 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7199 */;
-import OrbsIcon from "OrbsIcon" /* 9347 */;
-import MainTabsConstants from "MainTabsConstants" /* 10975 */;
-import openGiftModal from "openGiftModal" /* 13685 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 13753 */;
-import UnlockWithNitroButton from "UnlockWithNitroButton" /* 14280 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5867 */;
+import ReleaseChannelUtils from "ReleaseChannelUtils" /* 6426 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7202 */;
+import OrbsIcon from "OrbsIcon" /* 9359 */;
+import MainTabsConstants from "MainTabsConstants" /* 10986 */;
+import openGiftModal from "openGiftModal" /* 13703 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 13771 */;
+import UnlockWithNitroButton from "UnlockWithNitroButton" /* 14298 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7611 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7614 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -73,12 +73,12 @@ function VCButton(balance) {
   const tmp = closure_17();
   react = tmp;
   const tmp2 = balance;
-  let obj = balance(14268);
+  let obj = balance(14286);
   const virtualCurrencyData = obj.useVirtualCurrencyData(product, flag);
   ({ price, canAfford } = virtualCurrencyData);
-  let obj2 = balance(9389);
+  let obj2 = balance(9401);
   let isDisabled = obj2.useProductDisableState(product.skuId).isDisabled;
-  let obj3 = balance(9352);
+  let obj3 = balance(9364);
   const isPartiallyOwnedBundle = obj3.useProductPurchaseState(product).isPartiallyOwnedBundle;
   if (!isDisabled) {
     isDisabled = !canAfford;
@@ -153,7 +153,7 @@ function VCButton(balance) {
         }
       }
     };
-    obj2.pushLazy(asyncRequire(14271, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
+    obj2.pushLazy(asyncRequire(14289, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
   }, items);
   if (null == price) {
     return null;
@@ -951,7 +951,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetai
   const result1 = obj7.isFreeCollectiblesProduct(product);
   const obj8 = require("CollectiblesProductUtils");
   const result2 = obj8.isOrbsExclusiveProduct(product);
-  const obj9 = require("module_9368");
+  const obj9 = require("module_9380");
   const balance = obj9.useFetchVirtualCurrencyBalance().balance;
   const obj10 = require("NativePaymentHooks");
   nativePaymentsConnected = obj10.useNativeIAPPayments().nativePaymentsConnected;

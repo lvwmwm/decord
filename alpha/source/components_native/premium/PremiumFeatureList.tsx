@@ -1,17 +1,17 @@
-// Module ID: 9737
-// Function ID: 9738
+// Module ID: 9750
+// Function ID: 9751
 // Name: PremiumFeatureList
-// Dependencies: [19, 17, 1087, 21, 4945, 6599, 587, 558, 576, 8871, 2]
+// Dependencies: [19, 17, 1087, 21, 4945, 6602, 587, 558, 576, 8883, 2]
 
-// Module 9737 (PremiumFeatureList)
+// Module 9750 (PremiumFeatureList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import Form from "Form" /* 8871 */;
+import Form from "Form" /* 8883 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
-import TextStyles from "TextStyles" /* 6599 */;
+import TextStyles from "TextStyles" /* 6602 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

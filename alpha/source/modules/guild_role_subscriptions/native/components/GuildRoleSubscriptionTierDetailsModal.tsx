@@ -1,23 +1,23 @@
-// Module ID: 19026
-// Function ID: 19027
+// Module ID: 19049
+// Function ID: 19050
 // Name: GuildRoleSubscriptionTierDetailsModal
-// Dependencies: [32, 19, 16292, 1087, 21, 558, 576, 14944, 19006, 16314, 16299, 18983, 1128, 8965, 18989, 8871, 1202, 19027, 18990, 2]
+// Dependencies: [32, 19, 16311, 1087, 21, 558, 576, 14962, 19029, 16333, 16318, 19006, 1128, 8977, 19012, 8883, 1202, 19050, 19013, 2]
 
-// Module 19026 (GuildRoleSubscriptionTierDetailsModal)
+// Module 19049 (GuildRoleSubscriptionTierDetailsModal)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl8 from "intl" /* 1128 */;
-import FormHeaderDefault from "FormHeader" /* 8965 */;
-import FormStylesDefault from "FormStyles" /* 14944 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16299 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16314 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18983 */;
-import FormImagePicker from "FormImagePicker" /* 18989 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18990 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 19006 */;
+import FormHeaderDefault from "FormHeader" /* 8977 */;
+import FormStylesDefault from "FormStyles" /* 14962 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16318 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16333 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19006 */;
+import FormImagePicker from "FormImagePicker" /* 19012 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19013 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 19029 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16292 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16311 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,8 +34,8 @@ let tmp;
 let tmp4;
 let unpackModuleId;
 const native = tmp4(1202);
-const Form = tmp4(8871);
-const FormPriceTierDefault = tmp(19027);
+const Form = tmp4(8883);
+const FormPriceTierDefault = tmp(19050);
 ({ GuildRoleSubscriptionsTierScenes: hasOwnProperty, MAX_SUBSCRIPTION_TIER_DESCRIPTION_LENGTH: metroRequire, MAX_SUBSCRIPTION_TIER_NAME_LENGTH: metroImportDefault } = GuildRoleSubscriptionsConstants);
 const UPLOAD_MEDIUM_SIZE = Constants.UPLOAD_MEDIUM_SIZE;
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);

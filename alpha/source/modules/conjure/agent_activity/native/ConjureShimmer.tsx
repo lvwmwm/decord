@@ -1,9 +1,9 @@
-// Module ID: 12185
-// Function ID: 12186
+// Module ID: 12200
+// Function ID: 12201
 // Name: ConjureShimmer
-// Dependencies: [32, 19, 17, 4946, 21, 4945, 558, 576, 504, 5014, 5167, 683, 6914, 5219, 2]
+// Dependencies: [32, 19, 17, 4946, 21, 4945, 558, 576, 504, 5014, 5167, 683, 6917, 5219, 2]
 
-// Module 12185 (ConjureShimmer)
+// Module 12200 (ConjureShimmer)
 import _modDef683 from "module_683" /* 683 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
 import timing from "timing" /* 5167 */;
@@ -260,7 +260,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShimm
                 }
                 obj6 = { style: closure_5.absoluteFill, androidRenderingMode: "software", maskElement: closure_8(closure_6, obj7), children: closure_8(View, obj8) };
                 obj7 = { children: renderFace() };
-                tmp32 = require("module_6914");
+                tmp32 = require("module_6917");
                 obj8 = { style: items1, children: closure_8(require("LinearGradient"), obj10) };
                 items1 = [tmp4.band, , ];
                 const obj9 = { width: result };
@@ -492,7 +492,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShimm
     const obj5 = { style: c5.absoluteFill, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_8(tmp18, obj6) };
     obj6 = { style: c5.absoluteFill, androidRenderingMode: "software", maskElement: closure_8(closure_6, obj7), children: closure_8(View, obj8) };
     obj7 = { children: renderFace() };
-    tmp18 = width(6914);
+    tmp18 = width(6917);
     obj8 = { style: items4, children: closure_8(width(5219), obj10) };
     items4 = [tmp.band, , ];
     const obj9 = { width: result };

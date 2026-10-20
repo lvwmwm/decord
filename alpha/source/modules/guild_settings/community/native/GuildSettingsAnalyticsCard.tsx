@@ -1,9 +1,9 @@
-// Module ID: 18935
-// Function ID: 18936
+// Module ID: 18958
+// Function ID: 18959
 // Name: GuildSettingsAnalyticsCard
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5625, 5195, 5648, 1128, 10809, 18936, 6853, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5625, 5195, 5648, 1128, 10820, 18959, 6856, 2]
 
-// Module 18935 (GuildSettingsAnalyticsCard)
+// Module 18958 (GuildSettingsAnalyticsCard)
 import nativeDefault from "native" /* 587 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5625 */;
 import react from "react" /* 19 */;
@@ -116,7 +116,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                   }
                   const obj3 = { variant: "secondary", border: "subtle", style: tmp4.card, children: items };
                   items = [tmp14, tmp21, tmp24];
-                  const tmp37 = closure_7(tmp(6853).Card, obj3);
+                  const tmp37 = closure_7(tmp(6856).Card, obj3);
                   cResult[22] = tmp4.card;
                   cResult[23] = tmp14;
                   cResult[24] = tmp21;
@@ -134,7 +134,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
               const tmp27 = closure_5;
               if (isTrendingUp) {
                 const obj5 = { size: "xxs", color: description(587).colors.TEXT_FEEDBACK_POSITIVE, accessible: true, accessibilityLabel: intl2.string(tmp(1128).t["8mcccd"]) };
-                const ArrowLargeUpIcon = tmp(10809).ArrowLargeUpIcon;
+                const ArrowLargeUpIcon = tmp(10820).ArrowLargeUpIcon;
                 intl2 = tmp(1128).intl;
                 tmp28 = closure_6(ArrowLargeUpIcon, obj5);
               }
@@ -142,7 +142,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
               let tmp31 = null;
               if (isTrendingDown) {
                 const obj6 = { size: "xxs", color: description(587).colors.TEXT_FEEDBACK_CRITICAL, accessible: true, accessibilityLabel: intl3.string(tmp(1128).t.NLl6Q3) };
-                const ArrowLargeDownIcon = tmp(18936).ArrowLargeDownIcon;
+                const ArrowLargeDownIcon = tmp(18959).ArrowLargeDownIcon;
                 intl3 = tmp(1128).intl;
                 tmp31 = closure_6(ArrowLargeDownIcon, obj6);
               }
@@ -228,7 +228,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   }, items);
   let obj = { variant: "secondary", border: "subtle", style: tmp.card, children: items2 };
   let obj2 = { style: tmp.line, children: items1 };
-  const Card = metricKey(6853).Card;
+  const Card = metricKey(6856).Card;
   items1 = [closure_6(metricKey(5195).Text, { variant: "text-md/medium", color: "text-subtle", children: title }), ];
   let tmp7Result = null;
   if (null != description) {
@@ -256,7 +256,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     const obj6 = { style: tmp.line, children: items3 };
     if (isTrendingUp) {
       const obj7 = { size: "xxs", color: description(587).colors.TEXT_FEEDBACK_POSITIVE, accessible: true, accessibilityLabel: intl2.string(metricKey(1128).t["8mcccd"]) };
-      const ArrowLargeUpIcon = tmp4(10809).ArrowLargeUpIcon;
+      const ArrowLargeUpIcon = tmp4(10820).ArrowLargeUpIcon;
       intl2 = tmp4(1128).intl;
       tmp7Result3 = tmp7(ArrowLargeUpIcon, obj7);
     }
@@ -264,7 +264,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     let tmp7Result4 = null;
     if (isTrendingDown) {
       const obj8 = { size: "xxs", color: description(587).colors.TEXT_FEEDBACK_CRITICAL, accessible: true, accessibilityLabel: intl3.string(metricKey(1128).t.NLl6Q3) };
-      const ArrowLargeDownIcon = tmp4(18936).ArrowLargeDownIcon;
+      const ArrowLargeDownIcon = tmp4(18959).ArrowLargeDownIcon;
       intl3 = tmp4(1128).intl;
       tmp7Result4 = tmp7(ArrowLargeDownIcon, obj8);
     }

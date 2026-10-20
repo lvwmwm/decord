@@ -1,9 +1,9 @@
-// Module ID: 12942
-// Function ID: 12943
+// Module ID: 12960
+// Function ID: 12961
 // Name: GiftIconTrinketsAnimation
-// Dependencies: [19, 17, 4946, 21, 4945, 558, 576, 5213, 587, 504, 2034, 1384, 9319, 5631, 2]
+// Dependencies: [19, 17, 4946, 21, 4945, 558, 576, 5213, 587, 504, 2034, 1384, 9331, 5631, 2]
 
-// Module 12942 (GiftIconTrinketsAnimation)
+// Module 12960 (GiftIconTrinketsAnimation)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -76,7 +76,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const tmpResult4 = PlatformUtils;
     if (tmpResult4.isAndroid()) {
       const obj4 = { url: trinketsAnimationUrl, autoplay: !stateFromStores, style: trinketsRefresh };
-      tmp12Result = tmp12(tmp(9319).APNGPlayer, obj4);
+      tmp12Result = tmp12(tmp(9331).APNGPlayer, obj4);
     } else {
       const obj5 = { source: obj6, style: trinketsRefresh, resizeMode: "contain", enableAnimation: !stateFromStores };
       obj6 = { uri: trinketsAnimationUrl };
@@ -108,7 +108,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const tmpResult = PlatformUtils;
     if (tmpResult.isAndroid()) {
       const obj5 = { url: trinketsAnimationUrl, autoplay: !stateFromStores, style: trinketsRefresh };
-      tmp7Result = tmp7(tmp(9319).APNGPlayer, obj5);
+      tmp7Result = tmp7(tmp(9331).APNGPlayer, obj5);
     } else {
       const obj6 = { source: obj7, style: trinketsRefresh, resizeMode: "contain", enableAnimation: !stateFromStores };
       obj7 = { uri: trinketsAnimationUrl };

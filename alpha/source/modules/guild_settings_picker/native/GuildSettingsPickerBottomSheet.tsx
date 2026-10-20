@@ -1,14 +1,14 @@
-// Module ID: 14935
-// Function ID: 14936
+// Module ID: 14953
+// Function ID: 14954
 // Name: GuildSettingsPickerBottomSheet
-// Dependencies: [19, 17, 21, 4945, 558, 576, 14936, 5171, 38, 8926, 7194, 5195, 1202, 14940, 5205, 5226, 2]
+// Dependencies: [19, 17, 21, 4945, 558, 576, 14954, 5171, 38, 8938, 7197, 5195, 1202, 14958, 5205, 5226, 2]
 
-// Module 14935 (GuildSettingsPickerBottomSheet)
+// Module 14953 (GuildSettingsPickerBottomSheet)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8926 */;
-import GuildPickerDefault from "GuildPicker" /* 14940 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8938 */;
+import GuildPickerDefault from "GuildPicker" /* 14958 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -208,12 +208,12 @@ if (ReactCompilerGating.isReactCompilerEnabled()) {
       feature = feature.feature;
       ({ section: importDefault, subsection: dependencyMap, guildId } = feature);
       const tmp = closure_6();
-      let obj = feature(14936);
+      let obj = feature(14954);
       const guildSettingsPickerFeature = obj.useGuildSettingsPickerFeature(feature);
       ({ selectGuildCta, title, description, isGuildSupported } = guildSettingsPickerFeature);
       let obj2 = { startExpanded: true, children: items };
       BottomSheet = feature(5226).BottomSheet;
-      items = [closure_4(feature(7194).BottomSheetTitleHeader, { title }), , , , , ];
+      items = [closure_4(feature(7197).BottomSheetTitleHeader, { title }), , , , , ];
       const obj3 = { style: tmp.content, children: closure_4(feature(5195).Text, { variant: "text-md/medium", children: description }) };
       items[1] = closure_4(guildId, obj3);
       items[2] = closure_4(feature(1202).Spacer, { size: 16 });

@@ -1,18 +1,18 @@
-// Module ID: 7042
-// Function ID: 7043
+// Module ID: 7045
+// Function ID: 7046
 // Name: ChangeEmailComplete
-// Dependencies: [19, 17, 6871, 21, 4945, 587, 6869, 558, 576, 5631, 6952, 1128, 5195, 5205, 2]
+// Dependencies: [19, 17, 6874, 21, 4945, 587, 6872, 558, 576, 5631, 6955, 1128, 5195, 5205, 2]
 
-// Module 7042 (ChangeEmailComplete)
+// Module 7045 (ChangeEmailComplete)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6869 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6871 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6952 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6872 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6874 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6955 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

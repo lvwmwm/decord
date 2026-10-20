@@ -1,17 +1,17 @@
-// Module ID: 9966
-// Function ID: 9967
+// Module ID: 9977
+// Function ID: 9978
 // Name: RatingSelector
-// Dependencies: [19, 17, 9962, 21, 4945, 558, 576, 1128, 9967, 9968, 9972, 9973, 9977, 9978, 8873, 5631, 6856, 2]
+// Dependencies: [19, 17, 9973, 21, 4945, 558, 576, 1128, 9978, 9979, 9983, 9984, 9988, 9989, 8885, 5631, 6859, 2]
 
-// Module 9966 (RatingSelector)
+// Module 9977 (RatingSelector)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9967 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9972 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9977 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9978 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9983 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9988 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 9962 */;
+import Constants from "Constants" /* 9973 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -75,16 +75,16 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmoj
   obj4 = { selected: AssetRegistryDefault, normal: tmpResult.useFeedbackModalSadDesaturatedSource() };
   obj2[BAD] = obj3;
   const obj5 = { source: obj6, getLabel: tmp5, rating: constants.NEUTRAL };
-  tmpResult = obj2(9968);
+  tmpResult = obj2(9979);
   const NEUTRAL = constants.NEUTRAL;
   obj6 = { selected: AssetRegistryDefault2, normal: tmpResult3.useFeedbackModalNeutralDesaturatedSource() };
   obj2[NEUTRAL] = obj5;
   const obj7 = { source: obj8, getLabel: tmp6, rating: constants.GOOD };
-  tmpResult3 = obj2(9973);
+  tmpResult3 = obj2(9984);
   const GOOD = constants.GOOD;
   obj8 = { selected: AssetRegistryDefault3, normal: tmpResult4.useFeedbackModalHappyDesaturatedSource() };
   obj2[GOOD] = obj7;
-  tmpResult4 = obj2(9978);
+  tmpResult4 = obj2(9989);
   return arr.map((item) => obj2[item]);
 }) : (function useEmojiConfigs(arr) {
   let obj10;
@@ -105,7 +105,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmoj
   const BAD = constants.BAD;
   obj3 = { selected: AssetRegistryDefault, normal: obj4.useFeedbackModalSadDesaturatedSource() };
   obj[BAD] = obj2;
-  obj4 = obj(9968);
+  obj4 = obj(9979);
   const obj5 = {
     source: obj6,
     getLabel() {
@@ -117,7 +117,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmoj
   const NEUTRAL = constants.NEUTRAL;
   obj6 = { selected: AssetRegistryDefault2, normal: obj7.useFeedbackModalNeutralDesaturatedSource() };
   obj[NEUTRAL] = obj5;
-  obj7 = obj(9973);
+  obj7 = obj(9984);
   const obj8 = {
     source: obj9,
     getLabel() {
@@ -129,7 +129,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmoj
   const GOOD = constants.GOOD;
   obj9 = { selected: AssetRegistryDefault3, normal: obj10.useFeedbackModalHappyDesaturatedSource() };
   obj[GOOD] = obj8;
-  obj10 = obj(9978);
+  obj10 = obj(9989);
   return arr.map((item) => obj[item]);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

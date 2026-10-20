@@ -1,10 +1,10 @@
-// Module ID: 16018
-// Function ID: 16019
+// Module ID: 16037
+// Function ID: 16038
 // Name: UserSettingsAuthedApp
-// Dependencies: [19, 17, 4799, 7151, 4800, 4890, 6652, 2069, 1087, 9941, 10752, 21, 4945, 587, 558, 576, 5648, 5195, 1505, 1506, 1128, 7205, 11061, 9550, 504, 13324, 1417, 5865, 13323, 5171, 10753, 2002, 1275, 7360, 7368, 7035, 7039, 8780, 5112, 7163, 7158, 11, 11891, 10953, 6935, 7241, 6851, 2]
+// Dependencies: [19, 17, 4799, 7154, 4800, 4890, 6655, 2069, 1087, 9952, 10763, 21, 4945, 587, 558, 576, 5648, 5195, 1505, 1506, 1128, 7208, 11073, 9563, 504, 13342, 1417, 5868, 13341, 5171, 10764, 2002, 1275, 7363, 7371, 7038, 7042, 8792, 5112, 7166, 7161, 11, 11905, 10964, 6938, 7244, 6854, 2]
 // Exports: default, handleDeleteApp
 
-// Module 16018 (UserSettingsAuthedApp)
+// Module 16037 (UserSettingsAuthedApp)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl12 from "intl" /* 1128 */;
@@ -12,24 +12,24 @@ import Link from "Link" /* 1506 */;
 import RootNavigationRef from "RootNavigationRef" /* 5112 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import CircleInformationIcon2 from "CircleInformationIcon" /* 5648 */;
-import useAlertStore from "useAlertStore" /* 5865 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7035 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7039 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7158 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7163 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7205 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8780 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9941 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10752 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 11061 */;
-import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 13323 */;
+import useAlertStore from "useAlertStore" /* 5868 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7038 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7042 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7161 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7166 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7208 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8792 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9952 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10763 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 11073 */;
+import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 13341 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7151 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7154 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6652 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6655 */;
 import LocaleStore from "LocaleStore" /* 2069 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;

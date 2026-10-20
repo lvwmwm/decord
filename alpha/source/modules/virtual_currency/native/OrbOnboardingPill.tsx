@@ -1,15 +1,15 @@
-// Module ID: 16803
-// Function ID: 16804
+// Module ID: 16822
+// Function ID: 16823
 // Name: OrbOnboardingPill
-// Dependencies: [19, 17, 21, 558, 576, 9347, 5195, 1128, 4945, 587, 2]
+// Dependencies: [19, 17, 21, 558, 576, 9359, 5195, 1128, 4945, 587, 2]
 
-// Module 16803 (OrbOnboardingPill)
+// Module 16822 (OrbOnboardingPill)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import OrbsIcon from "OrbsIcon" /* 9347 */;
+import OrbsIcon from "OrbsIcon" /* 9359 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

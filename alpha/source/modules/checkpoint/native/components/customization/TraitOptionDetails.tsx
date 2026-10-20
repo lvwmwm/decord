@@ -1,14 +1,14 @@
-// Module ID: 12827
-// Function ID: 12828
+// Module ID: 12845
+// Function ID: 12846
 // Name: TraitOptionDetails
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5971, 1128, 3078, 5195, 9707, 7224, 6316, 12828, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5974, 1128, 3078, 5195, 9720, 7227, 6319, 12846, 2]
 
-// Module 12827 (TraitOptionDetails)
+// Module 12845 (TraitOptionDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3078 from "module_3078" /* 3078 */;
-import RarityBadgeDefault from "RarityBadge" /* 12828 */;
+import RarityBadgeDefault from "RarityBadge" /* 12846 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -42,7 +42,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
   let tmp5 = null;
   if (!hidden) {
     let tmp6;
-    if (asset.rarity === tmp(5971).CheckpointTraitRarity.NITRO) {
+    if (asset.rarity === tmp(5974).CheckpointTraitRarity.NITRO) {
       if (true === asset.locked) {
         let tmp8;
         if (cResult[0] !== tmp4) {
@@ -78,7 +78,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AssetDe
       }
     }
     if (cResult[2] !== asset) {
-      const tmpResult = tmp(6316);
+      const tmpResult = tmp(6319);
       const assetDescription = tmpResult.getAssetDescription(asset);
       cResult[2] = asset;
       cResult[3] = assetDescription;

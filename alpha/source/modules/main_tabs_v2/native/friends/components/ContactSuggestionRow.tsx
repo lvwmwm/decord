@@ -1,14 +1,14 @@
-// Module ID: 17942
-// Function ID: 17943
+// Module ID: 17965
+// Function ID: 17966
 // Name: ContactSuggestionRow
-// Dependencies: [109, 19, 4946, 1087, 21, 558, 576, 4994, 5014, 1128, 573, 17202, 17201, 17613, 1267, 17614, 10545, 2]
+// Dependencies: [109, 19, 4946, 1087, 21, 558, 576, 4994, 5014, 1128, 573, 17221, 17220, 17632, 1267, 17633, 10556, 2]
 
-// Module 17942 (ContactSuggestionRow)
+// Module 17965 (ContactSuggestionRow)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import UserUtilsDefault from "UserUtils" /* 4994 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17202 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17221 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
@@ -141,7 +141,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSug
               const result = sharedValue.set(closure_0);
             }
           }
-          const tmpResult4 = tmp(17201);
+          const tmpResult4 = tmp(17220);
           const suggestedContactNameForSuggestion = tmpResult4.getSuggestedContactNameForSuggestion(tmp11, tmp7);
           cResult[20] = tmp7;
           cResult[21] = tmp11;

@@ -1,10 +1,10 @@
-// Module ID: 6724
-// Function ID: 6725
+// Module ID: 6727
+// Function ID: 6728
 // Name: FramesConstants
 // Dependencies: [1087, 5587, 38, 2]
 // Exports: asLaunched, getFrameHostWindowKey, getFrameIntentForSurface, getFrameLaunchChannelId, getFrameSurfaceForChannel, getPipOrientationLockStateForFrame, isLaunched, makeFrameId
 
-// Module 6724 (FramesConstants)
+// Module 6727 (FramesConstants)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1087 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5587 */;

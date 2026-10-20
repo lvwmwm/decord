@@ -1,15 +1,15 @@
-// Module ID: 17913
-// Function ID: 17914
+// Module ID: 17936
+// Function ID: 17937
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 7203, 1128, 2068, 5195, 2]
+// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 7206, 1128, 2068, 5195, 2]
 
-// Module 17913 (ChannelDetailsLinkedLobby)
+// Module 17936 (ChannelDetailsLinkedLobby)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2068 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7203 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7206 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;

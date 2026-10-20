@@ -1,12 +1,12 @@
-// Module ID: 12371
-// Function ID: 12372
+// Module ID: 12388
+// Function ID: 12389
 // Name: ConjurePerfTraceFormat
-// Dependencies: [32, 11025, 12372, 2]
+// Dependencies: [32, 11037, 12389, 2]
 // Exports: formatDuration, formatSpanCount, formatTokens, perfCategoryTotal, perfModelSummary, perfNodeSections, perfSmallerLabel, perfTickLabel, perfTraceDuration, perfTraceSummary
 
-// Module 12371 (ConjurePerfTraceFormat)
-import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 11025 */;
-import ConjureTimeFormat from "ConjureTimeFormat" /* 12372 */;
+// Module 12388 (ConjurePerfTraceFormat)
+import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 11037 */;
+import ConjureTimeFormat from "ConjureTimeFormat" /* 12389 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

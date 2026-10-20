@@ -1,15 +1,16 @@
 // Module ID: 15373
 // Function ID: 15374
-// Dependencies: [15352]
+// Dependencies: [15374]
 
 // Module 15373
-import _mod15352 from "module_15352" /* 15352 */;
+import _mod15374 from "module_15374" /* 15374 */;
 
-const tmp = _mod15352.navigator && _mod15352.navigator.userAgent;
-let str = "";
-if (tmp) {
-  const _String = String;
-  str = String(tmp);
-}
 
-export default str;
+export default !_mod15374(() => {
+  const obj = {
+    get() {
+      return 7;
+    }
+  };
+  return 7 !== Object.defineProperty({}, 1, obj)[1];
+});

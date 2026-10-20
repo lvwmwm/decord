@@ -1,13 +1,13 @@
-// Module ID: 13862
-// Function ID: 13863
+// Module ID: 13880
+// Function ID: 13881
 // Name: openForumExplicitMediaWarning
-// Dependencies: [21, 5864, 13863, 2002, 2]
+// Dependencies: [21, 5867, 13881, 2002, 2]
 // Exports: default
 
-// Module 13862 (openForumExplicitMediaWarning)
+// Module 13880 (openForumExplicitMediaWarning)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5864 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5867 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -24,7 +24,7 @@ export default function openForumExplicitMediaWarning(arg0, arg1) {
     importer() {
       let channelId;
       let messageId;
-      const promise = asyncRequire(13863, dependencyMap.paths);
+      const promise = asyncRequire(13881, dependencyMap.paths);
       return promise.then((result) => {
         closure_0 = result.default;
         return (arg0) => {

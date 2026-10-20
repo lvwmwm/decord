@@ -1,16 +1,16 @@
-// Module ID: 8905
-// Function ID: 8906
+// Module ID: 8917
+// Function ID: 8918
 // Name: CreateChannelTypeDescription
-// Dependencies: [19, 17, 8906, 1087, 21, 558, 576, 8907, 6801, 5195, 1128, 2]
+// Dependencies: [19, 17, 8918, 1087, 21, 558, 576, 8919, 6804, 5195, 1128, 2]
 
-// Module 8905 (CreateChannelTypeDescription)
+// Module 8917 (CreateChannelTypeDescription)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import GuildProfileStore from "GuildProfileStore" /* 8906 */;
-import useGuildProfile from "useGuildProfile" /* 8907 */;
+import GuildProfileStore from "GuildProfileStore" /* 8918 */;
+import useGuildProfile from "useGuildProfile" /* 8919 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChan
   const fetchStatus = guildProfile1.fetchStatus;
   const FETCHED = GuildProfileFetchStatus.FETCHED;
   if (hasItem) {
-    const VISIBLE = tmp(6801).GuildProfileVisibilitySets.VISIBLE;
+    const VISIBLE = tmp(6804).GuildProfileVisibilitySets.VISIBLE;
     hasItem = VISIBLE.has(guildProfile.visibility);
   }
   let tmp7 = fetchStatus === FETCHED && !hasItem;
@@ -96,7 +96,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateChan
   const fetchStatus = guildProfile1.fetchStatus;
   const FETCHED = GuildProfileFetchStatus.FETCHED;
   if (hasItem) {
-    const VISIBLE = tmp(6801).GuildProfileVisibilitySets.VISIBLE;
+    const VISIBLE = tmp(6804).GuildProfileVisibilitySets.VISIBLE;
     hasItem = VISIBLE.has(guildProfile.visibility);
   }
   let tmp6 = fetchStatus === FETCHED && !hasItem;

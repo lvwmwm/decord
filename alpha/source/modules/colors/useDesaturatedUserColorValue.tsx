@@ -1,14 +1,14 @@
-// Module ID: 15736
-// Function ID: 15737
+// Module ID: 15755
+// Function ID: 15756
 // Name: useDesaturatedUserColorValue
-// Dependencies: [19, 4946, 558, 576, 504, 7606, 1105, 2]
+// Dependencies: [19, 4946, 558, 576, 504, 7609, 1105, 2]
 
-// Module 15736 (useDesaturatedUserColorValue)
+// Module 15755 (useDesaturatedUserColorValue)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
-import _modDef7606 from "module_7606" /* 7606 */;
+import _modDef7609 from "module_7609" /* 7609 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -64,13 +64,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDesatur
     cResult[8] = obj2;
     tmp14 = obj2;
   }
-  const tmp10 = _modDef7606;
+  const tmp10 = _modDef7609;
   const tmpResult2 = utils_ColorUtils;
   const tmp10Result = tmp10(tmpResult2.int2hex(color));
   ({ h, s, l } = tmp10Result.toHsl());
   const obj3 = { h, s: s * stateFromStores, l };
   tmp10Result.toHsl();
-  const obj6 = _modDef7606(obj3);
+  const obj6 = _modDef7609(obj3);
   const toHexStringResult = obj6.toHexString();
   const toHslStringResult = obj6.toHslString();
   cResult[2] = color;
@@ -96,13 +96,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDesatur
     let h;
     let l;
     let s;
-    const tmp = _modDef7606;
+    const tmp = _modDef7609;
     const obj = utils_ColorUtils;
     const tmpResult = tmp(obj.int2hex(closure_0));
     ({ h, s, l } = tmpResult.toHsl());
     const obj2 = { h, s: s * stateFromStores, l };
     tmpResult.toHsl();
-    const obj4 = _modDef7606(obj2);
+    const obj4 = _modDef7609(obj2);
     const obj3 = { hex: obj4.toHexString(), hsl: obj4.toHslString() };
     return obj3;
   }, items1);

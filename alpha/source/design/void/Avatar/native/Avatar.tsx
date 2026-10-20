@@ -1,23 +1,23 @@
-// Module ID: 15222
-// Function ID: 15223
+// Module ID: 15240
+// Function ID: 15241
 // Name: Avatar
-// Dependencies: [19, 17, 1087, 1203, 21, 4945, 587, 14116, 15211, 15212, 9324, 8571, 558, 576, 9323, 15213, 5207, 11321, 11322, 15223, 2]
+// Dependencies: [19, 17, 1087, 1203, 21, 4945, 587, 14134, 15229, 15230, 9336, 8583, 558, 576, 9335, 15231, 5207, 11332, 11333, 15241, 2]
 
-// Module 15222 (Avatar)
+// Module 15240 (Avatar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import IconDefault from "Icon" /* 5207 */;
-import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8571 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9323 */;
-import ClipView from "ClipView" /* 9324 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11321 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11322 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14116 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 15211 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15212 */;
-import Status from "Status" /* 15213 */;
-import SpeakerPulseDefault from "SpeakerPulse" /* 15223 */;
+import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8583 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9335 */;
+import ClipView from "ClipView" /* 9336 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11332 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11333 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14134 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 15229 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 15230 */;
+import Status from "Status" /* 15231 */;
+import SpeakerPulseDefault from "SpeakerPulse" /* 15241 */;
 import react from "react" /* 19 */;
 import StatusConstants from "StatusConstants" /* 1203 */;
 import Fragment from "Fragment" /* 21 */;

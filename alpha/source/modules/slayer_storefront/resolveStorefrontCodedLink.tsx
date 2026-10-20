@@ -1,13 +1,13 @@
-// Module ID: 18599
-// Function ID: 18600
+// Module ID: 18622
+// Function ID: 18623
 // Name: resolveStorefrontCodedLink
-// Dependencies: [32, 5, 6772, 18590, 11120, 5665, 584, 18600, 10474, 2]
+// Dependencies: [32, 5, 6775, 18613, 11132, 5665, 584, 18623, 10485, 2]
 // Exports: default
 
-// Module 18599 (resolveStorefrontCodedLink)
+// Module 18622 (resolveStorefrontCodedLink)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SKUStore from "SKUStore" /* 6772 */;
+import SKUStore from "SKUStore" /* 6775 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, closure_2;
@@ -19,7 +19,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
   let obj3;
   const tmp = obj3;
   const tmp2 = dependencyMap;
-  let obj = obj3(11120);
+  let obj = obj3(11132);
   const result = obj.parseStorefrontCodedLink(code);
   if (null != result) {
     if (arg0 === tmp(5665).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
@@ -36,7 +36,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
         let obj5 = { type: "STORE_LISTINGS_FETCH_START", skuId };
         obj4.dispatch(obj5);
         const items = [skuId];
-        const tmpResult = tmp(11120);
+        const tmpResult = tmp(11132);
         const storefrontCodedLink = tmpResult.makeStorefrontCodedLink(items, result.scopeId);
         const tmp8 = _asyncToGenerator;
         skuId = _asyncToGenerator(async (arg0, value) => {
@@ -111,7 +111,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
         let obj7 = set;
         if (!set.has(storefrontCodedLink)) {
           obj7.add(storefrontCodedLink);
-          const tmpResult2 = tmp(18590);
+          const tmpResult2 = tmp(18613);
           const result1 = tmpResult2.queueMessageLinkFetch(tmp8(function*(arg0, value) {
             if (c4 === 2) {
               c4 = 3;

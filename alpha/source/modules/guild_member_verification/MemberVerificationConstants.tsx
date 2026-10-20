@@ -1,9 +1,9 @@
-// Module ID: 6821
-// Function ID: 6822
+// Module ID: 6824
+// Function ID: 6825
 // Name: MemberVerificationConstants
 // Dependencies: [4974, 2]
 
-// Module 6821 (MemberVerificationConstants)
+// Module 6824 (MemberVerificationConstants)
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4974 */;
 import size from "module_2" /* 2 */;
 

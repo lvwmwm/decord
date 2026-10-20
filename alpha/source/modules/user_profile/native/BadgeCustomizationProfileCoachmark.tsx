@@ -1,9 +1,9 @@
-// Module ID: 17973
-// Function ID: 17974
+// Module ID: 17996
+// Function ID: 17997
 // Name: BadgeCustomizationProfileCoachmark
-// Dependencies: [32, 19, 1392, 4797, 587, 558, 576, 1499, 1633, 9435, 2054, 504, 4959, 1128, 5007, 9756, 2]
+// Dependencies: [32, 19, 1392, 4797, 587, 558, 576, 1499, 1633, 9447, 2054, 504, 4959, 1128, 5007, 9768, 2]
 
-// Module 17973 (BadgeCustomizationProfileCoachmark)
+// Module 17996 (BadgeCustomizationProfileCoachmark)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
@@ -18,7 +18,7 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const YouBannerDecorations = tmp(9435);
+const YouBannerDecorations = tmp(9447);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const PX_64 = nativeDefault.space.PX_64;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -211,7 +211,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeCustomi
                 if (cResult[19] === visible) {
                   tmp18 = cResult[20];
                 }
-                const tmpResult2 = markAsDismissed(9756);
+                const tmpResult2 = markAsDismissed(9768);
                 const coachmark = tmpResult2.useCoachmark(targetRef, tmp18);
                 return null;
               }

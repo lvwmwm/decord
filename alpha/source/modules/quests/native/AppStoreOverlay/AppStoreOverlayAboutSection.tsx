@@ -1,9 +1,9 @@
-// Module ID: 13928
-// Function ID: 13929
+// Module ID: 13946
+// Function ID: 13947
 // Name: AppStoreOverlayAboutSection
 // Dependencies: [32, 19, 17, 21, 587, 4945, 558, 576, 1128, 5195, 2]
 
-// Module 13928 (AppStoreOverlayAboutSection)
+// Module 13946 (AppStoreOverlayAboutSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

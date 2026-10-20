@@ -1,13 +1,13 @@
-// Module ID: 11538
-// Function ID: 11539
+// Module ID: 11549
+// Function ID: 11550
 // Name: DisconnectRemoteButton
-// Dependencies: [19, 5677, 21, 558, 576, 504, 8058, 11476, 1128, 11520, 9074, 11256, 2]
+// Dependencies: [19, 5677, 21, 558, 576, 504, 8062, 11487, 1128, 11531, 9086, 11267, 2]
 
-// Module 11538 (DisconnectRemoteButton)
+// Module 11549 (DisconnectRemoteButton)
 import Fragment from "Fragment" /* 21 */;
-import CallsUtils from "CallsUtils" /* 9074 */;
-import CallBarActionAll from "CallBarAction" /* 11256 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11520 */;
+import CallsUtils from "CallsUtils" /* 9086 */;
+import CallBarActionAll from "CallBarAction" /* 11267 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11531 */;
 import react from "react" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 5677 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -39,7 +39,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Disconnect
   const tmpResult = tmp(504);
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp4, tmp5);
   const remoteSessionId = stateFromStoresObject.remoteSessionId;
-  const tmp8 = remoteSessionId(stateFromStoresObject.awaitingRemote ? 8058 : 11476);
+  const tmp8 = remoteSessionId(stateFromStoresObject.awaitingRemote ? 8062 : 11487);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
     const stringResult = intl.string(tmp(1128).t["6vrfgt"]);
@@ -98,7 +98,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Disconnect
   const awaitingRemote = stateFromStoresObject.awaitingRemote;
   const PrimaryActionButton = CallBarActionAll.PrimaryActionButton;
   const intl = tmp(1128).intl;
-  return <PrimaryActionButton source={remoteSessionId(awaitingRemote ? 8058 : 11476)} accessibilityLabel={intl.string(tmp(1128).t["6vrfgt"])} isSmallSize={isSmallSize} onPress={function onPress() {
+  return <PrimaryActionButton source={remoteSessionId(awaitingRemote ? 8062 : 11487)} accessibilityLabel={intl.string(tmp(1128).t["6vrfgt"])} isSmallSize={isSmallSize} onPress={function onPress() {
     if (null != remoteSessionId) {
       const obj2 = GameConsoleActionCreators;
       obj2.remoteDisconnect(tmp);

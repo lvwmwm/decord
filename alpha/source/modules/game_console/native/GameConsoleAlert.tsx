@@ -1,9 +1,9 @@
-// Module ID: 11526
-// Function ID: 11527
+// Module ID: 11537
+// Function ID: 11538
 // Name: GameConsoleAlert
 // Dependencies: [19, 17, 5677, 21, 4945, 558, 576, 504, 5195, 2]
 
-// Module 11526 (GameConsoleAlert)
+// Module 11537 (GameConsoleAlert)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 5677 */;

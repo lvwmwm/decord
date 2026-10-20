@@ -1,14 +1,14 @@
-// Module ID: 9910
-// Function ID: 9911
+// Module ID: 9922
+// Function ID: 9923
 // Name: computeScrollData
-// Dependencies: [4946, 8077, 9911, 5162, 2]
+// Dependencies: [4946, 8081, 9923, 5162, 2]
 // Exports: default, findMessageRowIndex
 
-// Module 9910 (computeScrollData)
+// Module 9922 (computeScrollData)
 import flow_Client from "flow/Client" /* 5162 */;
-import NativeChatUtils from "NativeChatUtils" /* 9911 */;
+import NativeChatUtils from "NativeChatUtils" /* 9923 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8077 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8081 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -36,7 +36,7 @@ export default function computeScrollData(shouldInitialScroll) {
         tmp3 = findIndexResult;
       }
       if (null != tmp3) {
-        const obj2 = { type: NativeChatUtils.ChatScrollType.SCROLL, index: tmp3, animate: animated, highlight: false, position: tmp16(9911).ChatScrollPosition.TOP };
+        const obj2 = { type: NativeChatUtils.ChatScrollType.SCROLL, index: tmp3, animate: animated, highlight: false, position: tmp16(9923).ChatScrollPosition.TOP };
         tmp16 = require;
         if (animated) {
           animated = !AccessibilityStore.useReducedMotion;
@@ -59,7 +59,7 @@ export default function computeScrollData(shouldInitialScroll) {
       const obj = { type: NativeChatUtils.ChatScrollType.SCROLL, index: scrollToRowIndexOverride, animate: !AccessibilityStore.useReducedMotion && jumpType !== flow_Client.JumpType.INSTANT, highlight: scrollToMessageId === jumpTargetId, position: scrollPosition };
       !AccessibilityStore.useReducedMotion && jumpType !== flow_Client.JumpType.INSTANT;
       if (scrollPosition == null) {
-        scrollPosition = tmp7(9911).ChatScrollPosition.TOP;
+        scrollPosition = tmp7(9923).ChatScrollPosition.TOP;
       }
       tmp4 = obj;
     }

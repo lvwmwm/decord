@@ -1,15 +1,15 @@
-// Module ID: 9778
-// Function ID: 9779
+// Module ID: 9790
+// Function ID: 9791
 // Name: ShinyButton
-// Dependencies: [109, 19, 21, 4945, 587, 558, 576, 1202, 9779, 5206, 2]
+// Dependencies: [109, 19, 21, 4945, 587, 558, 576, 1202, 9791, 5206, 2]
 
-// Module 9778 (ShinyButton)
+// Module 9790 (ShinyButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import BaseTextButton2 from "BaseTextButton" /* 5206 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9779 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9791 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 4945 */;

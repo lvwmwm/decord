@@ -1,14 +1,14 @@
-// Module ID: 9672
-// Function ID: 9673
+// Module ID: 9685
+// Function ID: 9686
 // Name: ThumbsUpIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9673, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9686, 5630, 2]
 
-// Module 9672 (ThumbsUpIcon)
+// Module 9685 (ThumbsUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 9673 */;
+import AssetRegistry from "AssetRegistry" /* 9686 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

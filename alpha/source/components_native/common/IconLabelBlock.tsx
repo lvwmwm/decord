@@ -1,9 +1,9 @@
-// Module ID: 18029
-// Function ID: 18030
+// Module ID: 18052
+// Function ID: 18053
 // Name: IconLabelBlock
-// Dependencies: [109, 19, 17, 21, 4945, 587, 4999, 1202, 5195, 9951, 5631, 4952, 2]
+// Dependencies: [109, 19, 17, 21, 4945, 587, 4999, 1202, 5195, 9962, 5631, 4952, 2]
 
-// Module 18029 (IconLabelBlock)
+// Module 18052 (IconLabelBlock)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
@@ -11,7 +11,7 @@ import shared from "shared" /* 4952 */;
 import native2 from "native" /* 4999 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import IconUploaderDefault from "IconUploader" /* 9951 */;
+import IconUploaderDefault from "IconUploader" /* 9962 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,10 +1,10 @@
-// Module ID: 11021
-// Function ID: 11022
+// Module ID: 11033
+// Function ID: 11034
 // Name: createProxyTicket
 // Dependencies: [5, 502, 1087, 1297, 5584, 2]
-// Exports: createProxyTicket, prefetchProxyTicket
+// Exports: createProxyTicket, prefetchProxyTicket, rememberProxyTicket
 
-// Module 11021 (createProxyTicket)
+// Module 11033 (createProxyTicket)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -167,6 +167,25 @@ export const prefetchProxyTicket = function prefetchProxyTicket(prop, arg1, type
   }
   items[3] = str2;
   obj = { ticket: promise, expiresAt: Date.now() + 60000 };
+  const joined = items.join(":");
+  const result = set(joined, obj);
+};
+export const rememberProxyTicket = function rememberProxyTicket(proxy_ticket, id, CONJURE_UNKNOWN_CHANNEL, APP_CHANNEL) {
+  let str = CONJURE_UNKNOWN_CHANNEL;
+  const items = [, , , ];
+  set = map.set;
+  items[0] = AuthenticationStore.getId();
+  items[1] = id;
+  if (CONJURE_UNKNOWN_CHANNEL == null) {
+    str = "";
+  }
+  let str2 = APP_CHANNEL;
+  items[2] = str;
+  if (APP_CHANNEL == null) {
+    str2 = "";
+  }
+  items[3] = str2;
+  obj = { ticket: Promise.resolve(proxy_ticket), expiresAt: Date.now() + 60000 };
   const joined = items.join(":");
   const result = set(joined, obj);
 };

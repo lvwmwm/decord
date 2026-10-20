@@ -1,22 +1,22 @@
-// Module ID: 8866
-// Function ID: 8867
+// Module ID: 8878
+// Function ID: 8879
 // Name: EditGuildEventChannelSelection
-// Dependencies: [19, 17, 4880, 4890, 1392, 6732, 1087, 21, 4945, 587, 6971, 8862, 8847, 5565, 504, 8447, 8849, 8850, 1128, 5195, 6856, 1896, 8867, 8826, 5171, 8845, 2002, 1202, 8846, 2]
+// Dependencies: [19, 17, 4880, 4890, 1392, 6735, 1087, 21, 4945, 587, 6974, 8874, 8859, 5565, 504, 8451, 8861, 8862, 1128, 5195, 6859, 1896, 8879, 8838, 5171, 8857, 2002, 1202, 8858, 2]
 // Exports: default
 
-// Module 8866 (EditGuildEventChannelSelection)
+// Module 8878 (EditGuildEventChannelSelection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1896 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import StageChannelUpsellDefault from "StageChannelUpsell" /* 8867 */;
+import StageChannelUpsellDefault from "StageChannelUpsell" /* 8879 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
 import UserStore from "UserStore" /* 1392 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6732 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6735 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -59,12 +59,12 @@ export default function EditGuildEventChannelSelection(guild) {
   let tmp = closure_13();
   let tmp2 = guild;
   let tmp3 = dependencyMap;
-  let obj = guild(6971);
+  let obj = guild(6974);
   const inputStyles = obj.useInputStyles({ hasLeadingIcon: true });
   let closure_5 = tmp5;
-  let obj2 = guild(8862);
+  let obj2 = guild(8874);
   let closure_6 = obj2.useGetEventChannelsByType(guild.id, channelType);
-  let obj3 = guild(8847);
+  let obj3 = guild(8859);
   const length = obj3.useChannelsUserCanStartStageIn(guild);
   const tmp7 = channel(5565)(channel);
   const items = [closure_5];
@@ -75,16 +75,16 @@ export default function EditGuildEventChannelSelection(guild) {
   const obj5 = guild(504);
   constants = obj5.useStateFromStores(items1, () => GuildScheduledEventStore.getGuildScheduledEvent(guildEventId), items2);
   if (null != channel) {
-    const tmp2Result = tmp2(8447);
+    const tmp2Result = tmp2(8451);
     channelIcon = tmp2Result.getChannelIcon(channel);
   } else {
-    channelIcon = tmp6(8849);
+    channelIcon = tmp6(8861);
   }
   if (null != channel) {
-    const tmp2Result2 = tmp2(8447);
+    const tmp2Result2 = tmp2(8451);
     LocationIcon = tmp2Result2.getChannelIconComponent(channel);
   } else {
-    LocationIcon = tmp2(8850).LocationIcon;
+    LocationIcon = tmp2(8862).LocationIcon;
   }
   let intl = tmp2(1128).intl;
   let string = intl.string;
@@ -139,7 +139,7 @@ export default function EditGuildEventChannelSelection(guild) {
       }
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
-      const tmp10 = asyncRequire(8845, tmp.paths);
+      const tmp10 = asyncRequire(8857, tmp.paths);
       const intl = intl3.intl;
       const string = intl.string;
       const t = intl3.t;
@@ -172,7 +172,7 @@ export default function EditGuildEventChannelSelection(guild) {
     },
     children: items6
   };
-  const PressableOpacity = tmp2(6856).PressableOpacity;
+  const PressableOpacity = tmp2(6859).PressableOpacity;
   intl2 = tmp2(1128).intl;
   items5 = [, , ];
   ({ padding: arr6[0], radius: arr6[1] } = inputStyles);
@@ -189,7 +189,7 @@ export default function EditGuildEventChannelSelection(guild) {
   items6 = [tmp12Result, , ];
   const obj11 = { style: tmp.channelNameText, variant: "text-md/medium", color: "interactive-text-active", children: tmp7 };
   items6[1] = closure_11(tmp2(5195).Text, obj11);
-  const obj12 = { source: channel(8846) };
+  const obj12 = { source: channel(8858) };
   const Icon = tmp2(1202).Icon;
   items6[2] = closure_11(Icon, obj12);
   items4[1] = tmp10(PressableOpacity, obj8);

@@ -1,84 +1,42 @@
 // Module ID: 12458
 // Function ID: 12459
-// Dependencies: [12407]
-// Exports: getDebugImagesForResources
+// Dependencies: [12430]
+// Exports: handleCallbackErrors
 
 // Module 12458
-const require = globalThis.__r;
-let _require, obj;
+import _mod12430 from "module_12430" /* 12430 */;
 
-function getFilenameToDebugIdMap(arg0) {
-  let _sentryDebugIds;
-  let closure_0;
-  let length;
-  let reduced;
-  _require = arg0;
-  _sentryDebugIds = require("module_12407").GLOBAL_OBJ._sentryDebugIds;
-  if (_sentryDebugIds) {
-    let tmp = globalThis;
-    const _Object = Object;
-    const keys = Object.keys(_sentryDebugIds);
-    const tmp2 = reduced;
-    if (tmp2) {
-      return reduced;
+
+export const handleCallbackErrors = function handleCallbackErrors(fn, fn2) {
+  function maybeHandlePromiseRejection(promise, fn2, fn) {
+    let closure_0 = fn2;
+    let closure_1 = fn;
+    const obj = _mod12430;
+    if (obj.isThenable(promise)) {
+      return promise.then((result) => {
+        closure_1();
+        return result;
+      }, (arg0) => {
+        closure_0(arg0);
+        closure_1();
+        throw arg0;
+      });
+    } else {
+      fn();
+      return promise;
     }
-    reduced = keys.reduce((acc, item) => {
-      let tmp7;
-      let tmp9;
-      let tmp = obj;
-      if (!tmp) {
-        obj = {};
-        tmp = obj;
-      }
-      if (tmp[item]) {
-        acc[tmp[item][0]] = tmp[item][1];
-      } else {
-        const arr = closure_0(item);
-        let diff = arr.length - 1;
-        if (0 <= diff) {
-          while (true) {
-            let tmp5 = arr[diff];
-            tmp7 = tmp5 && tmp5.filename;
-            tmp9 = _sentryDebugIds[item];
-            if (tmp7) {
-              if (tmp9) {
-                break;
-              }
-            }
-            diff = diff - 1;
-          }
-          acc[tmp7] = tmp9;
-          const items = [tmp7, tmp9];
-          obj[item] = items;
-        }
-      }
-      return acc;
-    }, {});
-  } else {
-    return {};
   }
-}
+  fn = arg2;
+  if (arg2 === undefined) {
+    fn = function t() {
 
-export const getDebugImagesForResources = function getDebugImagesForResources(arg0, arg1) {
-  const tmp = getFilenameToDebugIdMap(arg0);
-  const items = [];
-  if (tmp) {
-    const iter = arg1[Symbol.iterator]();
-    let nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp7 = nextResult;
-      if (tmp7) {
-        nextResult = tmp[tmp7];
-      }
-      if (nextResult) {
-        obj = { type: "sourcemap", code_file: tmp7, debug_id: tmp[tmp7] };
-        let arr = items.push(obj);
-      }
-      continue;
-    }
-    return items;
-  } else {
-    return items;
+    };
+  }
+  try {
+    return maybeHandlePromiseRejection(fn(), fn2, fn);
+  } catch (tmp2) {
+    fn2(tmp2);
+    fn();
+    throw tmp2;
   }
 };
-export { getFilenameToDebugIdMap };

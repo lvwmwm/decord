@@ -1,9 +1,9 @@
-// Module ID: 8400
-// Function ID: 8401
+// Module ID: 8404
+// Function ID: 8405
 // Name: EphemeralMessageReason
 // Dependencies: [2]
 
-// Module 8400 (EphemeralMessageReason)
+// Module 8404 (EphemeralMessageReason)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/EphemeralMessageReason.tsx");

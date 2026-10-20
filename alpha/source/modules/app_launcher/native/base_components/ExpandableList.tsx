@@ -1,9 +1,9 @@
-// Module ID: 11959
-// Function ID: 11960
+// Module ID: 11973
+// Function ID: 11974
 // Name: ExpandableList
-// Dependencies: [32, 19, 17, 21, 4945, 558, 576, 6608, 5014, 5167, 5170, 6851, 1128, 5195, 2]
+// Dependencies: [32, 19, 17, 21, 4945, 558, 576, 6611, 5014, 5167, 5170, 6854, 1128, 5195, 2]
 
-// Module 11959 (ExpandableList)
+// Module 11973 (ExpandableList)
 import react_native from "react-native" /* 17 */;
 import timing from "timing" /* 5167 */;
 import timingPresets from "timingPresets" /* 5170 */;
@@ -452,7 +452,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expandable
   let obj14;
   let showsExpandCTAOverride;
   let title;
-  const f146433 = (fn, index) => {
+  const f146615 = (fn, index) => {
     const isLastRow = closure_1 && index === memo1.length - 1;
     return fn({ isLastRow });
   };
@@ -477,7 +477,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expandable
   first = tmp2[0];
   closure_6 = tmp2[1];
   const tmp4 = onExpand;
-  let tmp6 = onExpand(6608)(first);
+  let tmp6 = onExpand(6611)(first);
   if (tmp6 == null) {
     tmp6 = first;
   }
@@ -562,7 +562,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expandable
     onLayout: function handleCollapsedListLayout(nativeEvent) {
       const result = sharedValue.set(nativeEvent.nativeEvent.layout.height);
     },
-    children: memo.map(f146433)
+    children: memo.map(f146615)
   };
   View = tmp4(5014).View;
   const tmp16 = bound;
@@ -580,7 +580,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expandable
         },
       accessibilityElementsHidden: !first,
       importantForAccessibility: "no-hide-descendants",
-      children: memo1.map(f146433)
+      children: memo1.map(f146615)
     };
     tmp17Result = tmp17(tmp18, obj9);
   }
@@ -589,7 +589,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expandable
   if (showsExpandCTAOverride) {
     let stringResult;
     let stringResult1;
-    const TableRow = tmp10(6851).TableRow;
+    const TableRow = tmp10(6854).TableRow;
     if (first) {
       const intl2 = tmp10(1128).intl;
       stringResult = intl2.string(tmp10(1128).t.nPGLFQ);

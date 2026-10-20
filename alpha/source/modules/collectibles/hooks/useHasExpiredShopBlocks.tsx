@@ -1,9 +1,9 @@
-// Module ID: 16927
-// Function ID: 16928
+// Module ID: 16946
+// Function ID: 16947
 // Name: useHasExpiredShopBlocks
 // Dependencies: [32, 19, 1087, 558, 576, 5601, 2]
 
-// Module 16927 (useHasExpiredShopBlocks)
+// Module 16946 (useHasExpiredShopBlocks)
 import Constants from "Constants" /* 1087 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -15,7 +15,7 @@ let _require, dependencyMap;
 
 let c3;
 let closure_4;
-const f127538 = (type) => {
+const f127690 = (type) => {
   const tmp = time1;
   const tmp2 = closure_2_1;
   if (type.type === time1(closure_2_1[5]).ShopBlockType.IMMERSIVE_BANNER) {
@@ -68,7 +68,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   const fn = function p() {
     let timeout;
     let c0 = null;
-    const item = timeout.forEach(f127538);
+    const item = timeout.forEach(f127690);
     const tmp3 = closure_1;
     if (!tmp3) {
       const tmp4 = closure_2;
@@ -112,7 +112,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   let tmp3 = closure_3(() => {
     let timeout;
     let time1 = null;
-    const item = timeout.forEach(f127538);
+    const item = timeout.forEach(f127690);
     let tmp2 = time1;
     const tmp3 = closure_1;
     if (!tmp3) {

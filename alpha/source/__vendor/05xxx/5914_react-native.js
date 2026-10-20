@@ -1,14 +1,11 @@
 // Module ID: 5914
 // Function ID: 5915
 // Name: react-native
-// Dependencies: [17, 65]
+// Dependencies: [17]
 
 // Module 5914 (react-native)
 import react_native from "react-native" /* 17 */;
-import module_65 from "module_65" /* 65 */;
 
-const codegenNativeComponent = react_native.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSScreenContentWrapper", validAttributes: {} };
+const Platform = react_native.Platform;
 
-export default module_65.get("RNSScreenContentWrapper", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export const isIOS26OrHigher = false;

@@ -1,9 +1,9 @@
-// Module ID: 15818
-// Function ID: 15819
+// Module ID: 15837
+// Function ID: 15838
 // Name: SafetyHubErrorActionSheet
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 15817, 6966, 5195, 1128, 12642, 5205, 5226, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 15836, 6969, 5195, 1128, 12659, 5205, 5226, 2]
 
-// Module 15818 (SafetyHubErrorActionSheet)
+// Module 15837 (SafetyHubErrorActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,9 +11,9 @@ import intl3 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5226 */;
-import CircleXIcon2 from "CircleXIcon" /* 6966 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12642 */;
-import useSafetyHubLoadingDefault from "useSafetyHubLoading" /* 15817 */;
+import CircleXIcon2 from "CircleXIcon" /* 6969 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12659 */;
+import useSafetyHubLoadingDefault from "useSafetyHubLoading" /* 15836 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -46,7 +46,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubErr
   const tmp6 = useSafetyHubLoadingDefault();
   if (cResult[0] !== tmp4.redesignErrorIcon) {
     const obj2 = { size: "custom", color: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, style: tmp4.redesignErrorIcon };
-    const CircleXIcon = tmp(6966).CircleXIcon;
+    const CircleXIcon = tmp(6969).CircleXIcon;
     const tmp9 = hasOwnProperty(CircleXIcon, obj2);
     cResult[0] = tmp4.redesignErrorIcon;
     cResult[1] = tmp9;

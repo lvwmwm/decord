@@ -1,14 +1,14 @@
-// Module ID: 9478
-// Function ID: 9479
+// Module ID: 9491
+// Function ID: 9492
 // Name: useHasNewAdContent
-// Dependencies: [32, 9479, 7719, 1104, 558, 576, 7725, 504, 6665, 7442, 4784, 2]
+// Dependencies: [32, 9492, 7723, 1104, 558, 576, 7729, 504, 6668, 7445, 4784, 2]
 
-// Module 9478 (useHasNewAdContent)
+// Module 9491 (useHasNewAdContent)
 import DurationsDefault from "Durations" /* 1104 */;
-import AdCreativeType from "AdCreativeType" /* 6665 */;
+import AdCreativeType from "AdCreativeType" /* 6668 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AdContentSeenStore from "AdContentSeenStore" /* 9479 */;
-import QuestStore from "QuestStore" /* 7719 */;
+import AdContentSeenStore from "AdContentSeenStore" /* 9492 */;
+import QuestStore from "QuestStore" /* 7723 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -91,8 +91,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasNewAdC
     tmp14 = cResult[7];
   }
   let prop = null;
-  const useSelectedTimeRecurringDismissibleContent = tmp(7442).useSelectedTimeRecurringDismissibleContent;
-  tmp(7442);
+  const useSelectedTimeRecurringDismissibleContent = tmp(7445).useSelectedTimeRecurringDismissibleContent;
+  tmp(7445);
   if (stateFromStores) {
     prop = tmp(4784).DismissibleContent.QUEST_HOME_NEW_QUEST_BADGE;
   }
@@ -140,8 +140,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasNewAdC
     return false;
   }, items2);
   let prop = null;
-  const useSelectedTimeRecurringDismissibleContent = stateFromStoresArray(7442).useSelectedTimeRecurringDismissibleContent;
-  stateFromStoresArray(7442);
+  const useSelectedTimeRecurringDismissibleContent = stateFromStoresArray(7445).useSelectedTimeRecurringDismissibleContent;
+  stateFromStoresArray(7445);
   if (stateFromStores) {
     prop = tmp(4784).DismissibleContent.QUEST_HOME_NEW_QUEST_BADGE;
   }

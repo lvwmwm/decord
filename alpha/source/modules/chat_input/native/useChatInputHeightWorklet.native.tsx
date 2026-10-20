@@ -1,12 +1,12 @@
-// Module ID: 12924
-// Function ID: 12925
+// Module ID: 12942
+// Function ID: 12943
 // Name: useChatInputHeightWorklet
-// Dependencies: [19, 1384, 558, 576, 5014, 12363, 12364, 12365, 2]
+// Dependencies: [19, 1384, 558, 576, 5014, 12380, 12381, 12382, 2]
 // Exports: getIsChatInputHeightWorkletEnabled
 
-// Module 12924 (useChatInputHeightWorklet)
+// Module 12942 (useChatInputHeightWorklet)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import useChatInputMaxHeight from "useChatInputMaxHeight" /* 12363 */;
+import useChatInputMaxHeight from "useChatInputMaxHeight" /* 12380 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

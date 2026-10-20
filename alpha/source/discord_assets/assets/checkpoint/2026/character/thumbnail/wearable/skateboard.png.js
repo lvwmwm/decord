@@ -1,8 +1,8 @@
-// Module ID: 6266
-// Function ID: 6267
+// Module ID: 6269
+// Function ID: 6270
 // Dependencies: [2]
 
-// Module 6266
+// Module 6269
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/wearable/skateboard.png.js");

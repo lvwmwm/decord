@@ -1,15 +1,15 @@
-// Module ID: 9776
-// Function ID: 9777
+// Module ID: 9788
+// Function ID: 9789
 // Name: RoleSubscriptionEmojiUpsellAlert
-// Dependencies: [19, 4822, 4807, 21, 9587, 1128, 558, 576, 1499, 504, 6778, 9777, 9780, 5933, 2]
+// Dependencies: [19, 4822, 4807, 21, 9600, 1128, 558, 576, 1499, 504, 6781, 9789, 9792, 5936, 2]
 
-// Module 9776 (RoleSubscriptionEmojiUpsellAlert)
+// Module 9788 (RoleSubscriptionEmojiUpsellAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1128 */;
 import ChannelConstants from "ChannelConstants" /* 4807 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6778 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9587 */;
-import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9777 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6781 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9600 */;
+import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9789 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -63,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleSubscr
     name = stateFromStores.name;
   }
   if (cResult[3] !== name) {
-    const obj2 = { image: onClose(9587), title: intl.string(tmp(1128).t.cBjkcx), description: intl2.formatToPlainString(tmp(1128).t["h0u/Hi"], obj3) };
+    const obj2 = { image: onClose(9600), title: intl.string(tmp(1128).t.cBjkcx), description: intl2.formatToPlainString(tmp(1128).t["h0u/Hi"], obj3) };
     intl = tmp(1128).intl;
     intl2 = tmp(1128).intl;
     obj3 = { serverName: name };
@@ -128,13 +128,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleSubscr
       cResult[14] = onClose;
       cResult[15] = tmp15;
       cResult[16] = tmp16;
-      cResult[17] = jsx(onClose(5933), { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 });
-      const tmp21 = jsx(onClose(5933), { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 });
+      cResult[17] = jsx(onClose(5936), { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 });
+      const tmp21 = jsx(onClose(5936), { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 });
     }
     cResult[11] = diff;
     cResult[12] = tmp11;
-    cResult[13] = jsx(tmp(9780).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
-    const tmp18 = jsx(tmp(9780).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
+    cResult[13] = jsx(tmp(9792).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
+    const tmp18 = jsx(tmp(9792).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
   }
   function handleConfirm() {
     const obj = GuildActionCreatorsDefault;

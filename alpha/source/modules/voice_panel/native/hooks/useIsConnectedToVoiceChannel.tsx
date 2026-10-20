@@ -1,9 +1,9 @@
-// Module ID: 18202
-// Function ID: 18203
+// Module ID: 18225
+// Function ID: 18226
 // Name: useIsConnectedToVoiceChannel
 // Dependencies: [502, 5676, 5591, 1087, 558, 576, 504, 2]
 
-// Module 18202 (useIsConnectedToVoiceChannel)
+// Module 18225 (useIsConnectedToVoiceChannel)
 import Constants from "Constants" /* 1087 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5676 */;

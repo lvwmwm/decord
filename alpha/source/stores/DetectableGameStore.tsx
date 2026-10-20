@@ -165,11 +165,11 @@ class DetectableGameStore extends PersistedStore {
   }
   getState() {
     let obj3;
-    const f88887 = (source) => source.source;
+    const f88988 = (source) => source.source;
     const obj = PlatformUtils;
     if (obj.isDesktop()) {
-      obj3 = { detectableGamesEtag: etag, detectableGames: closure_7.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_18.map(f88887) };
-      const obj2 = { detectableGamesEtag: etag, detectableGames: closure_7.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_18.map(f88887) };
+      obj3 = { detectableGamesEtag: etag, detectableGames: closure_7.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_18.map(f88988) };
+      const obj2 = { detectableGamesEtag: etag, detectableGames: closure_7.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_18.map(f88988) };
     } else {
       obj3 = { detectableGamesEtag: "", detectableGames: [], blocklistEtag: "", blocklistExecutables: [], blocklistPatterns: [] };
     }

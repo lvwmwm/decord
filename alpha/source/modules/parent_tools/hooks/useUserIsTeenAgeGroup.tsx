@@ -1,11 +1,11 @@
-// Module ID: 15986
-// Function ID: 15987
+// Module ID: 16005
+// Function ID: 16006
 // Name: useUserIsTeenAgeGroup
-// Dependencies: [7591, 558, 576, 504, 2]
+// Dependencies: [7594, 558, 576, 504, 2]
 
-// Module 15986 (useUserIsTeenAgeGroup)
+// Module 16005 (useUserIsTeenAgeGroup)
 import react from "react" /* 576 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7591 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7594 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

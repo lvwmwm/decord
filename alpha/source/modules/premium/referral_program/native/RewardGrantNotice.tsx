@@ -1,19 +1,19 @@
-// Module ID: 14563
-// Function ID: 14564
+// Module ID: 14581
+// Function ID: 14582
 // Name: RewardGrantNotice
-// Dependencies: [19, 17, 14542, 21, 4945, 587, 558, 576, 14544, 13759, 5195, 1128, 7178, 2]
+// Dependencies: [19, 17, 14560, 21, 4945, 587, 558, 576, 14562, 13777, 5195, 1128, 7181, 2]
 
-// Module 14563 (RewardGrantNotice)
+// Module 14581 (RewardGrantNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7178 */;
-import BalanceWidgetPill from "BalanceWidgetPill" /* 13759 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 14544 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7181 */;
+import BalanceWidgetPill from "BalanceWidgetPill" /* 13777 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 14562 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 14542 */;
+import Constants from "Constants" /* 14560 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -88,7 +88,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RewardGrantN
       tmp4 = metroRequire(closure_9, obj2);
     } else {
       tmp4 = null;
-      if (referralRewardType === tmp2(14544).ReferralRewardType.DISCOUNT) {
+      if (referralRewardType === tmp2(14562).ReferralRewardType.DISCOUNT) {
         const obj = { nRewardsGranted };
         tmp4 = metroRequire(closure_10, obj);
       }
@@ -185,7 +185,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Discou
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE, size: "xs" };
-    const CheckmarkSmallIcon = tmp(7178).CheckmarkSmallIcon;
+    const CheckmarkSmallIcon = tmp(7181).CheckmarkSmallIcon;
     const tmp11 = metroRequire(CheckmarkSmallIcon, obj3);
     cResult[2] = tmp11;
     tmp8 = tmp11;

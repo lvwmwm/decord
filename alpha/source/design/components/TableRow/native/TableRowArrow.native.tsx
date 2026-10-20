@@ -1,14 +1,14 @@
-// Module ID: 6860
-// Function ID: 6861
+// Module ID: 6863
+// Function ID: 6864
 // Name: TableRowArrow
-// Dependencies: [19, 21, 4945, 587, 558, 576, 5207, 6861, 2]
+// Dependencies: [19, 21, 4945, 587, 558, 576, 5207, 6864, 2]
 
-// Module 6860 (TableRowArrow)
+// Module 6863 (TableRowArrow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import IconDefault from "Icon" /* 5207 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6861 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6864 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

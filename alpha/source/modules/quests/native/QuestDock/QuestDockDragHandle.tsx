@@ -1,14 +1,14 @@
-// Module ID: 16258
-// Function ID: 16259
+// Module ID: 16277
+// Function ID: 16278
 // Name: QuestDockDragHandle
-// Dependencies: [19, 17, 6658, 16166, 21, 4945, 558, 576, 16167, 16168, 5014, 5208, 1128, 5543, 7116, 16165, 2]
+// Dependencies: [19, 17, 6661, 16185, 21, 4945, 558, 576, 16186, 16187, 5014, 5208, 1128, 5543, 7119, 16184, 2]
 
-// Module 16258 (QuestDockDragHandle)
+// Module 16277 (QuestDockDragHandle)
 import react_native from "react-native" /* 17 */;
 import spring from "spring" /* 5208 */;
-import QuestConstants from "QuestConstants" /* 6658 */;
+import QuestConstants from "QuestConstants" /* 6661 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 16166 */;
+import QuestDockConstants from "QuestDockConstants" /* 16185 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -64,11 +64,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   isExpanded = isExpanded.isExpanded;
   const variant = isExpanded.variant;
   const tmp4 = closure_9();
-  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(16167).QuestDockGestureContext);
+  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(16186).QuestDockGestureContext);
   activeQuestDockMode = context.activeQuestDockMode;
   const windowDimensions = context.windowDimensions;
   dependencyMap = tmp6;
-  let obj2 = activeQuestDockMode(16168);
+  let obj2 = activeQuestDockMode(16187);
   youBarHorizontalMargin = obj2.useYouBarHorizontalMargin();
   const obj3 = activeQuestDockMode(5014);
   const fn = function n() {
@@ -208,7 +208,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
           if (cResult[17] !== tmp23) {
             const obj12 = { style: tmp23, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp25 };
-            const tmp31 = closure_7(windowDimensions(7116), obj12);
+            const tmp31 = closure_7(windowDimensions(7119), obj12);
             cResult[17] = tmp23;
             cResult[18] = tmp31;
             tmp28 = tmp31;
@@ -229,16 +229,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 return tmp37;
               }
               const obj13 = { style: tmp12, children: tmp32 };
-              const tmp40 = closure_7(windowDimensions(7116), obj13);
+              const tmp40 = closure_7(windowDimensions(7119), obj13);
               cResult[23] = tmp12;
               cResult[24] = tmp32;
               cResult[25] = tmp40;
               tmp37 = tmp40;
             }
           }
-          const obj14 = { style: animatedStyle1, layout: tmp(16165).dimensionsLayoutTransition, children: items };
+          const obj14 = { style: animatedStyle1, layout: tmp(16184).dimensionsLayoutTransition, children: items };
           items = [tmp19, tmp28];
-          const tmp35 = windowDimensions(7116);
+          const tmp35 = windowDimensions(7119);
           const tmp36 = closure_8(tmp35, obj14);
           cResult[19] = animatedStyle1;
           cResult[20] = tmp19;
@@ -253,7 +253,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         tmp23 = items1;
       }
       const obj15 = { style: tmp13, children: tmp16 };
-      const tmp22 = closure_7(windowDimensions(7116), obj15);
+      const tmp22 = closure_7(windowDimensions(7119), obj15);
       cResult[10] = tmp13;
       cResult[11] = tmp16;
       cResult[12] = tmp22;
@@ -291,11 +291,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp = closure_9();
   let tmp3 = dependencyMap;
   const tmp2 = activeQuestDockMode;
-  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(16167).QuestDockGestureContext);
+  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(16186).QuestDockGestureContext);
   activeQuestDockMode = context.activeQuestDockMode;
   const windowDimensions = context.windowDimensions;
   dependencyMap = tmp5;
-  let obj = activeQuestDockMode(16168);
+  let obj = activeQuestDockMode(16187);
   youBarHorizontalMargin = obj.useYouBarHorizontalMargin();
   let obj2 = activeQuestDockMode(5014);
   const fn = function n() {
@@ -376,12 +376,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const animatedStyle3 = obj8.useAnimatedStyle(fn3);
   const obj10 = { style: items, children: tmp14(tmp15, obj11) };
   items = [tmp.dragHandleWrapper, animatedStyle];
-  obj11 = { style: animatedStyle1, layout: activeQuestDockMode(16165).dimensionsLayoutTransition, children: items2 };
-  const tmp13 = windowDimensions(7116);
-  tmp15 = windowDimensions(7116);
+  obj11 = { style: animatedStyle1, layout: activeQuestDockMode(16184).dimensionsLayoutTransition, children: items2 };
+  const tmp13 = windowDimensions(7119);
+  tmp15 = windowDimensions(7119);
   const obj12 = { style: items1, children: closure_7(ActionSheetHeaderBar, { variant: "overlay", accessibilityLabel: stringResult }) };
   items1 = [tmp.dragHandleOverlay, animatedStyle3];
-  const tmp16 = windowDimensions(7116);
+  const tmp16 = windowDimensions(7119);
   ActionSheetHeaderBar = activeQuestDockMode(5543).ActionSheetHeaderBar;
   const intl = activeQuestDockMode(1128).intl;
   const string = intl.string;
@@ -396,7 +396,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   items2 = [closure_7(tmp16, obj12), ];
   const obj13 = { style: items3, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_7(tmp2(5543).ActionSheetHeaderBar, { variant: "default" }) };
   items3 = [tmp.dragHandleOverlay, animatedStyle2];
-  const tmp12Result = tmp12(7116);
+  const tmp12Result = tmp12(7119);
   items2[1] = closure_7(tmp12Result, obj13);
   return closure_7(tmp13, obj10);
 }));

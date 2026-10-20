@@ -1,10 +1,10 @@
-// Module ID: 13871
-// Function ID: 13872
+// Module ID: 13889
+// Function ID: 13890
 // Name: WebhookGuildChannelSelector
-// Dependencies: [5, 32, 19, 17, 4804, 4890, 1392, 21, 4945, 587, 5171, 8845, 2002, 1128, 5565, 9551, 5195, 1202, 8871, 2]
+// Dependencies: [5, 32, 19, 17, 4804, 4890, 1392, 21, 4945, 587, 5171, 8857, 2002, 1128, 5565, 9564, 5195, 1202, 8883, 2]
 // Exports: default
 
-// Module 13871 (WebhookGuildChannelSelector)
+// Module 13889 (WebhookGuildChannelSelector)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
@@ -85,7 +85,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
         hasIcons: false
       };
       ActionSheetActionCreatorsDefault;
-      const tmp8 = asyncRequire(8845, dependencyMap.paths);
+      const tmp8 = asyncRequire(8857, dependencyMap.paths);
       intl = intl4.intl;
       channels = tmp.channels;
       openLazy(tmp8, WebhookGuildChannelSelector_str, obj);

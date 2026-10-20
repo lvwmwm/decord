@@ -1,9 +1,9 @@
-// Module ID: 15030
-// Function ID: 15031
+// Module ID: 15048
+// Function ID: 15049
 // Name: GuildActionSheetEmojiSection
-// Dependencies: [32, 19, 17, 6673, 1207, 1392, 1087, 21, 4945, 587, 558, 576, 504, 1499, 5213, 2054, 7199, 7224, 5171, 9586, 4952, 15031, 1128, 6856, 1202, 15032, 5173, 5174, 5624, 5631, 7176, 7177, 1417, 2]
+// Dependencies: [32, 19, 17, 6676, 1207, 1392, 1087, 21, 4945, 587, 558, 576, 504, 1499, 5213, 2054, 7202, 7227, 5171, 9599, 4952, 15049, 1128, 6859, 1202, 15050, 5173, 5174, 5624, 5631, 7179, 7180, 1417, 2]
 
-// Module 15030 (GuildActionSheetEmojiSection)
+// Module 15048 (GuildActionSheetEmojiSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2054 */;
@@ -11,10 +11,10 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171
 import HapticUtils from "HapticUtils" /* 5173 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5174 */;
 import ToastUtils from "ToastUtils" /* 5624 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9586 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9599 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6673 */;
+import EmojiStore from "EmojiStore" /* 6676 */;
 import ThemeStore_mod from "ThemeStore" /* 1207 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;

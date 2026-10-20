@@ -1,19 +1,19 @@
-// Module ID: 8947
-// Function ID: 8948
+// Module ID: 8959
+// Function ID: 8960
 // Name: GuildEventsNoContent
-// Dependencies: [19, 17, 4880, 1087, 1098, 21, 4945, 587, 6599, 558, 576, 504, 1128, 5195, 8926, 2]
+// Dependencies: [19, 17, 4880, 1087, 1098, 21, 4945, 587, 6602, 558, 576, 504, 1128, 5195, 8938, 2]
 
-// Module 8947 (GuildEventsNoContent)
+// Module 8959 (GuildEventsNoContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants2 from "Constants" /* 1087 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8926 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8938 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
 import Constants from "Constants" /* 1098 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
-import TextStyles from "TextStyles" /* 6599 */;
+import TextStyles from "TextStyles" /* 6602 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 15917
-// Function ID: 15918
+// Module ID: 15936
+// Function ID: 15937
 // Name: useIsStaffOrDeveloperSettingPredicate
-// Dependencies: [7737, 558, 576, 504, 2]
+// Dependencies: [7741, 558, 576, 504, 2]
 
-// Module 15917 (useIsStaffOrDeveloperSettingPredicate)
+// Module 15936 (useIsStaffOrDeveloperSettingPredicate)
 import react from "react" /* 576 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7737 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7741 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

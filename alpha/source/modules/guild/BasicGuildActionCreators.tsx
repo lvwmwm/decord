@@ -1,16 +1,16 @@
-// Module ID: 19085
-// Function ID: 19086
+// Module ID: 19109
+// Function ID: 19110
 // Name: BasicGuildActionCreators
-// Dependencies: [5, 4822, 8257, 1087, 584, 1297, 2]
+// Dependencies: [5, 4822, 8261, 1087, 584, 1297, 2]
 // Exports: fetchBasicGuild
 
-// Module 19085 (BasicGuildActionCreators)
+// Module 19109 (BasicGuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildStore from "GuildStore" /* 4822 */;
-import BasicGuildStore from "BasicGuildStore" /* 8257 */;
+import BasicGuildStore from "BasicGuildStore" /* 8261 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2, closure_3;

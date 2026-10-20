@@ -1,11 +1,11 @@
-// Module ID: 12053
-// Function ID: 12054
+// Module ID: 12068
+// Function ID: 12069
 // Name: UsernameText
-// Dependencies: [19, 21, 558, 576, 5944, 5195, 2]
+// Dependencies: [19, 21, 558, 576, 5947, 5195, 2]
 
-// Module 12053 (UsernameText)
+// Module 12068 (UsernameText)
 import react2 from "react" /* 576 */;
-import NicknameUtils from "NicknameUtils" /* 5944 */;
+import NicknameUtils from "NicknameUtils" /* 5947 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

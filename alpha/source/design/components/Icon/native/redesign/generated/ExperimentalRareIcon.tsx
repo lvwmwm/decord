@@ -1,14 +1,14 @@
-// Module ID: 10929
-// Function ID: 10930
+// Module ID: 10940
+// Function ID: 10941
 // Name: ExperimentalRareIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 10930, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 10941, 5630, 2]
 
-// Module 10929 (ExperimentalRareIcon)
+// Module 10940 (ExperimentalRareIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 10930 */;
+import AssetRegistry from "AssetRegistry" /* 10941 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

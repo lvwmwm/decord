@@ -1,89 +1,68 @@
 // Module ID: 10213
 // Function ID: 10214
-// Dependencies: [41, 42, 93, 95, 98, 10133, 10214, 10160, 10140]
+// Dependencies: [41, 42, 10214, 10145]
 
 // Module 10213
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10133 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10140 */;
-import _mod10214 from "module_10214" /* 10214 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 10145 */;
+import NUMBER from "NUMBER" /* 10214 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-let tmp2;
-const _mod10160 = tmp2(10160);
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:(este|esta|passado|pr[o\u00F3]ximo)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod10214.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(este|esta|passado|pr[\u00F3o]ximo)\\s*semana)?(?=\\W|\\d|$)", "i");
-class PTWeekdayParser {
+const re3 = /(?:(?:([同今本])|((昭和|平成|令和)?([0-9０-９]{1,4}|元)))年\s*)?([0-9０-９]{1,2})月\s*([0-9０-９]{1,2})日/i;
+class JPStandardParser {
   constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, PTWeekdayParser);
-    const obj = _getPrototypeOf(PTWeekdayParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+    _classCallCheck(this, JPStandardParser);
   }
 }
-_inherits(PTWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "pattern",
+  value: function pattern() {
+    return re3;
   }
 };
 const items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const str = arg1[2];
-      const formatted = str.toLowerCase();
-      const tmp4 = _mod10214.WEEKDAY_DICTIONARY[formatted];
-      if (undefined === tmp4) {
-        return null;
-      } else {
-        const str2 = arg1[1] || arg1[3] || "";
-        const formatted1 = str2.toLowerCase();
-        let str5 = "this";
-        if ("passado" != formatted1) {
-          str5 = "next";
-          if ("pr\u00F3ximo" != formatted1) {
-            str5 = "next";
-            if ("proximo" != formatted1) {
-              str5 = null;
-              if ("este" == formatted1) {
-                str5 = "this";
-              }
-            }
+    key: "extract",
+    value: function extract(createParsingComponents, arg1) {
+      const parsed = parseInt(NUMBER.toHankaku(arg1[5]));
+      const parsed1 = parseInt(NUMBER.toHankaku(arg1[6]));
+      const parsingComponents = createParsingComponents.createParsingComponents({ day: parsed1, month: parsed });
+      let match = arg1[1];
+      if (match) {
+        const str = arg1[1];
+        match = str.match("\u540C|\u4ECA|\u672C");
+      }
+      if (match) {
+        const reference = createParsingComponents.reference;
+        const assign = parsingComponents.assign;
+        const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
+        assign("year", dateWithAdjustedTimezone.getFullYear());
+      }
+      if (arg1[2]) {
+        let sum;
+        let num = 1;
+        if ("\u5143" != arg1[4]) {
+          const _parseInt = parseInt;
+          num = parseInt(tmp(10214).toHankaku(tmp8));
+        }
+        if ("\u4EE4\u548C" == arg1[3]) {
+          sum = num + 2018;
+        } else if ("\u5E73\u6210" == arg1[3]) {
+          sum = num + 1988;
+        } else {
+          sum = num;
+          if ("\u662D\u548C" == arg1[3]) {
+            sum = num + 1925;
           }
         }
-        return _mod10160.createParsingComponentsAtWeekday(reference.reference, tmp4, str5);
+        parsingComponents.assign("year", sum);
+      } else {
+        parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, parsed1, parsed));
       }
+      return parsingComponents;
     }
   }
 ];
 
-export default _createClass(PTWeekdayParser, items);
+export default _createClass(JPStandardParser, items);

@@ -1,9 +1,9 @@
-// Module ID: 16236
-// Function ID: 16237
+// Module ID: 16255
+// Function ID: 16256
 // Name: QuestOrbMultiplierPerkPill
-// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 5166, 4967, 5213, 4942, 9485, 9507, 16237, 1128, 9343, 5195, 5219, 6856, 2]
+// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 5166, 4967, 5213, 4942, 9498, 9520, 16256, 1128, 9355, 5195, 5219, 6859, 2]
 
-// Module 16236 (QuestOrbMultiplierPerkPill)
+// Module 16255 (QuestOrbMultiplierPerkPill)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ColorUtils from "ColorUtils" /* 4942 */;
@@ -11,9 +11,9 @@ import themes from "themes" /* 4967 */;
 import useTheme from "useTheme" /* 5166 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import useToken from "useToken" /* 5213 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9485 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9507 */;
-import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 16237 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9498 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9520 */;
+import openQuestOrbMultiplierPerkInfoActionSheetDefault from "openQuestOrbMultiplierPerkInfoActionSheet" /* 16256 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -335,7 +335,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestOrbMult
     let tmp19 = tmp21Result;
     const tmp17 = closure_7;
     if (!tmp13) {
-      tmp19 = closure_6(tmp2(9343).NitroWheelIcon, { size: "xs", color: "white" });
+      tmp19 = closure_6(tmp2(9355).NitroWheelIcon, { size: "xs", color: "white" });
     }
     const obj13 = { children: items2 };
     items2 = [tmp19, ];
@@ -360,7 +360,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestOrbMult
     const obj17 = { backgroundColor: tmp14 };
     items3[1] = obj17;
     const tmp16Result = closure_8(tmp17, obj13);
-    const PressableOpacity = tmp2(6856).PressableOpacity;
+    const PressableOpacity = tmp2(6859).PressableOpacity;
     if (!tmp13) {
       const obj18 = { style: tmp.fullGradient, colors: items, start, end };
       tmp21Result = tmp21(tmp6(5219), obj18);

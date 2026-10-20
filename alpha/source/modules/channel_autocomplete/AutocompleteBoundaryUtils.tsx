@@ -1,12 +1,12 @@
-// Module ID: 7699
-// Function ID: 7700
+// Module ID: 7703
+// Function ID: 7704
 // Name: AutocompleteBoundaryUtils
-// Dependencies: [5939, 1087, 2]
+// Dependencies: [5942, 1087, 2]
 // Exports: boundAutocompleteWord
 
-// Module 7699 (AutocompleteBoundaryUtils)
+// Module 7703 (AutocompleteBoundaryUtils)
 import Constants from "Constants" /* 1087 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5939 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5942 */;
 import size from "module_2" /* 2 */;
 
 let CHANNEL_SENTINEL;

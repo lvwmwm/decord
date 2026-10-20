@@ -1,14 +1,14 @@
-// Module ID: 16826
-// Function ID: 16827
+// Module ID: 16845
+// Function ID: 16846
 // Name: ShopSkipCategoriesFilter
-// Dependencies: [19, 17, 7596, 21, 4945, 587, 558, 576, 504, 7595, 5195, 5932, 2]
+// Dependencies: [19, 17, 7599, 21, 4945, 587, 558, 576, 504, 7598, 5195, 5935, 2]
 
-// Module 16826 (ShopSkipCategoriesFilter)
+// Module 16845 (ShopSkipCategoriesFilter)
 import nativeDefault from "native" /* 587 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7595 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7598 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7596 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7599 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -168,7 +168,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopSkipCate
                       }
                       const obj4 = { spacing: 8, children: items1 };
                       items1 = [tmp13, tmp37];
-                      const tmp43 = closure_6(tmp(5932).Stack, obj4);
+                      const tmp43 = closure_6(tmp(5935).Stack, obj4);
                       cResult[32] = tmp37;
                       cResult[33] = tmp13;
                       cResult[34] = tmp43;
@@ -233,7 +233,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopSkipCate
   const items = [CollectiblesCategoryStore];
   stateFromStores = obj.useStateFromStores(items, () => skipNumCategories.skipNumCategories);
   const obj2 = { style: tmp.container, children: closure_6(Stack, obj7) };
-  Stack = stateFromStores(5932).Stack;
+  Stack = stateFromStores(5935).Stack;
   const items1 = [, ];
   const obj3 = { variant: "text-md/normal", style: tmp.label, children: "Hide first # of categories" };
   items1[0] = closure_5(stateFromStores(5195).Text, obj3);

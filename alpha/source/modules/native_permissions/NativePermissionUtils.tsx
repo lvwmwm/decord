@@ -1,13 +1,13 @@
-// Module ID: 7829
-// Function ID: 7830
+// Module ID: 7833
+// Function ID: 7834
 // Name: NativePermissionUtils
-// Dependencies: [7256, 7830, 7834, 2, 7831]
+// Dependencies: [7259, 7834, 7838, 2, 7835]
 
-// Module 7829 (NativePermissionUtils)
-import ProcessArgs2 from "ProcessArgs" /* 7256 */;
-import nativePermissionDesktopNullUtils from "nativePermissionDesktopNullUtils" /* 7830 */;
-import NativePermissionBaseUtils from "NativePermissionBaseUtils" /* 7831 */;
-import mobile_NativePermissionUtils from "mobile/NativePermissionUtils" /* 7834 */;
+// Module 7833 (NativePermissionUtils)
+import ProcessArgs2 from "ProcessArgs" /* 7259 */;
+import nativePermissionDesktopNullUtils from "nativePermissionDesktopNullUtils" /* 7834 */;
+import NativePermissionBaseUtils from "NativePermissionBaseUtils" /* 7835 */;
+import mobile_NativePermissionUtils from "mobile/NativePermissionUtils" /* 7838 */;
 import size from "module_2" /* 2 */;
 
 let _default;

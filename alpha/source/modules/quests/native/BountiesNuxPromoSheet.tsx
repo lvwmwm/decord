@@ -1,9 +1,9 @@
-// Module ID: 16139
-// Function ID: 16140
+// Module ID: 16158
+// Function ID: 16159
 // Name: BountiesNuxPromoSheet
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5171, 16138, 1128, 16140, 5205, 10649, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5171, 16157, 1128, 16159, 5205, 10660, 2]
 
-// Module 16139 (BountiesNuxPromoSheet)
+// Module 16158 (BountiesNuxPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -11,9 +11,9 @@ import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
-import PromoSheet2 from "PromoSheet" /* 10649 */;
-import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 16138 */;
-import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 16140 */;
+import PromoSheet2 from "PromoSheet" /* 10660 */;
+import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 16157 */;
+import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 16159 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

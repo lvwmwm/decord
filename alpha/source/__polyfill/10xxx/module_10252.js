@@ -1,100 +1,50 @@
 // Module ID: 10252
 // Function ID: 10253
-// Dependencies: [41, 42, 93, 95, 98, 10248, 10140]
+// Dependencies: []
+// Exports: zhStringToNumber, zhStringToYear
 
 // Module 10252
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10140 */;
-import _mod10248 from "module_10248" /* 10248 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-const keys = Object.keys(_mod10248.WEEKDAY_OFFSET);
-const regExp = new RegExp("(?:\u661F\u671F|\u79AE\u62DC|\u9031)(?<weekday>" + keys.join("|") + ")");
-class ZHHantWeekdayParser {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, ZHHantWeekdayParser);
-    const obj = _getPrototypeOf(ZHHantWeekdayParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(ZHHantWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
-const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
-  }
-};
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const tmp2 = _mod10248.WEEKDAY_OFFSET[index.groups.weekday];
-      if (undefined === tmp2) {
-        return null;
+export const zhStringToNumber = function zhStringToNumber(arg0) {
+  let num = 0;
+  let num2 = 0;
+  let num3 = 0;
+  if (0 < arg0.length) {
+    do {
+      let sum;
+      let tmp = arg0[num];
+      if ("\u5341" === tmp) {
+        let result;
+        if (0 === num2) {
+          result = exports.NUMBER[tmp];
+        } else {
+          result = num2 * exports.NUMBER[tmp];
+        }
+        sum = result;
       } else {
-        const _Date = Date;
-        const refDate = createParsingResult.refDate;
-        const self = this;
-        const self2 = this;
-        const date = new Date(refDate.getTime());
-        const diff = tmp2 - date.getDay();
-        const _Math3 = Math;
-        const _Math4 = Math;
-        const absolute = Math.abs(diff - 7);
-        let diff1 = diff;
-        if (absolute < Math.abs(diff)) {
-          diff1 = diff - 7;
-        }
-        const _Math = Math;
-        const _Math2 = Math;
-        const absolute1 = Math.abs(diff1 + 7);
-        let sum = diff1;
-        if (absolute1 < Math.abs(diff1)) {
-          sum = diff1 + 7;
-        }
-        date.setDate(date.getDate() + sum);
-        const start = parsingResult.start;
-        start.assign("weekday", tmp2);
-        const start2 = parsingResult.start;
-        start2.imply("day", date.getDate());
-        const start3 = parsingResult.start;
-        start3.imply("month", date.getMonth() + 1);
-        const start4 = parsingResult.start;
-        start4.imply("year", date.getFullYear());
-        return parsingResult;
+        sum = num2 + exports.NUMBER[tmp];
       }
-    }
+      num = num + 1;
+      num2 = sum;
+      num3 = sum;
+    } while (num < arg0.length);
   }
-];
-
-export default _createClass(ZHHantWeekdayParser, items);
+  return num3;
+};
+export const zhStringToYear = function zhStringToYear(arg0) {
+  let length;
+  let num = 0;
+  let str = "";
+  let str2 = "";
+  if (0 < arg0.length) {
+    do {
+      str = `${exports.NUMBER[arg0[num]]}`;
+      num = num + 1;
+      str2 = str;
+      length = arg0.length;
+    } while (num < length);
+  }
+  return parseInt(str2);
+};
+export const NUMBER = { "\u96f6": 0, "\u3007": 0, "\u4e00": 1, "\u4e8c": 2, "\u4e24": 2, "\u4e09": 3, "\u56db": 4, "\u4e94": 5, "\u516d": 6, "\u4e03": 7, "\u516b": 8, "\u4e5d": 9, "\u5341": 10 };
+export const WEEKDAY_OFFSET = { "\u5929": 0, "\u65e5": 0, "\u4e00": 1, "\u4e8c": 2, "\u4e09": 3, "\u56db": 4, "\u4e94": 5, "\u516d": 6 };

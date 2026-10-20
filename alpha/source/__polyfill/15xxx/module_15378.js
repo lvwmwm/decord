@@ -1,18 +1,16 @@
 // Module ID: 15378
 // Function ID: 15379
-// Dependencies: []
+// Dependencies: [15374]
 
 // Module 15378
-let all = typeof document === "object";
-if (typeof document === "object") {
-  const _document = document;
-  all = document.all;
-}
-if (undefined === all) {
-  let fn;
-  if (undefined !== all) {
-    fn = (fn) => typeof fn === "function" || fn === all;
-  }
-  module.exports = fn;
-}
-fn = (fn) => typeof fn === "function";
+import _mod15374 from "module_15374" /* 15374 */;
+
+
+export default !_mod15374(() => {
+  const fn = () => {
+
+  };
+  const bindResult = fn.bind();
+  const hasOwnPropertyResult = typeof bindResult !== "function" || bindResult.hasOwnProperty("prototype");
+  return hasOwnPropertyResult;
+});

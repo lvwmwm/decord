@@ -1,9 +1,9 @@
-// Module ID: 19061
-// Function ID: 19062
+// Module ID: 19084
+// Function ID: 19085
 // Name: clips/ClipsManager
-// Dependencies: [5, 7759, 502, 4800, 2014, 5676, 7757, 2020, 8092, 1087, 6591, 5680, 7162, 14436, 5700, 6593, 1267, 4776, 584, 4762, 1384, 14435, 2]
+// Dependencies: [5, 7763, 502, 4800, 2014, 5676, 7761, 2020, 8096, 1087, 6594, 5680, 7165, 14454, 5700, 6596, 1267, 4776, 584, 4762, 1384, 14453, 2]
 
-// Module 19061 (clips/ClipsManager)
+// Module 19084 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -11,20 +11,20 @@ import DiscordNativeDefault from "DiscordNative" /* 4762 */;
 import UserSettings from "UserSettings" /* 4776 */;
 import Constants2 from "Constants" /* 5680 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 5700 */;
-import Constants3 from "Constants" /* 6591 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6593 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 7759 */;
-import ClipsExperiment from "ClipsExperiment" /* 14436 */;
+import Constants3 from "Constants" /* 6594 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6596 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 7763 */;
+import ClipsExperiment from "ClipsExperiment" /* 14454 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5676 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7757 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7761 */;
 import ClipsStore from "ClipsStore" /* 2020 */;
-import ClipsConstants from "ClipsConstants" /* 8092 */;
+import ClipsConstants from "ClipsConstants" /* 8096 */;
 import Constants from "Constants" /* 1087 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7162 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7165 */;
 import size from "module_2" /* 2 */;
 
 const StreamKeyUtilsAll = StreamKeyUtils;
@@ -38,7 +38,7 @@ let closure_17;
 let closure_18;
 let map1;
 let tmp;
-const isClipsEnabled = tmp(14435);
+const isClipsEnabled = tmp(14453);
 const getSystemAnalyticsInfo = SystemAnalyticsStore.getSystemAnalyticsInfo;
 ({ WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX: closure_12, WINDOWS_HARDWARE_MINIMUM_GPU_REGEX: map1, CLIPS_HARDWARE_CLASSIFICATION_VERSION: closure_14, ClipsHardwareClassification: closure_15, CLIP_RUNTIME: closure_16 } = ClipsConstants);
 ({ AnalyticEvents: closure_17, RTCConnectionStates: closure_18 } = Constants);

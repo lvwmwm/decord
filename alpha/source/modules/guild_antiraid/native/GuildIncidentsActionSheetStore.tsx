@@ -1,12 +1,12 @@
-// Module ID: 12581
-// Function ID: 12582
+// Module ID: 12598
+// Function ID: 12599
 // Name: GuildIncidentsActionSheetStore
-// Dependencies: [8330, 570, 1274, 2]
+// Dependencies: [8334, 570, 1274, 2]
 // Exports: resetGuildIncidentsActionSheetStore, setInitialTime, setPauseDms, setPauseInvites, setTime
 
-// Module 12581 (GuildIncidentsActionSheetStore)
+// Module 12598 (GuildIncidentsActionSheetStore)
 import react_native from "react-native" /* 1274 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8330 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8334 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 

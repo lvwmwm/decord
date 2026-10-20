@@ -1,14 +1,14 @@
-// Module ID: 9911
-// Function ID: 9912
+// Module ID: 9923
+// Function ID: 9924
 // Name: NativeChatUtils
-// Dependencies: [17, 1384, 9912, 1257, 9913, 9914, 2]
+// Dependencies: [17, 1384, 9924, 1257, 9925, 8541, 2]
 
-// Module 9911 (NativeChatUtils)
+// Module 9923 (NativeChatUtils)
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ChatNativeComponent from "ChatNativeComponent" /* 9912 */;
-import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 9913 */;
-import react_nativeDefault from "react-native" /* 9914 */;
+import react_nativeDefault from "react-native" /* 8541 */;
+import ChatNativeComponent from "ChatNativeComponent" /* 9924 */;
+import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 9925 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj2 = {
           DCDChatManager.scrollTo(tmp15, arg1, undefined !== animated && animated, undefined !== highlight && highlight, TOP);
         }
       } else {
-        const Commands = tmp5(9912).Commands;
+        const Commands = tmp5(9924).Commands;
         Commands.scrollTo(arg0, arg1, undefined !== animated && animated, undefined !== highlight && highlight, TOP);
       }
     }
@@ -54,7 +54,7 @@ let obj2 = {
           DCDChatManager.scrollToBottom(tmp6, arg1);
         }
       } else {
-        const Commands = tmp2(9912).Commands;
+        const Commands = tmp2(9924).Commands;
         Commands.scrollToBottom(arg0, arg1);
       }
     }
@@ -100,7 +100,7 @@ let obj2 = {
           DCDChatManager.scrollIntoView(tmp13, arg1, undefined !== animated && animated, undefined !== highlight && highlight);
         }
       } else {
-        const Commands = tmp4(9912).Commands;
+        const Commands = tmp4(9924).Commands;
         Commands.scrollIntoView(arg0, arg1, undefined !== animated && animated, undefined !== highlight && highlight);
       }
     }
@@ -123,7 +123,7 @@ let obj2 = {
         SentryUtilsDefault;
         obj2 = { changesetUpdateId: andIncrementChangesetIdForChat, opCount: rows.length, rows, forceReload };
         addBreadcrumb(obj);
-        const Commands = tmp32(9912).Commands;
+        const Commands = tmp32(9924).Commands;
         const _JSON2 = JSON;
         const updateRows = Commands.updateRows;
         const json = JSON.stringify(rows.rows);
@@ -185,7 +185,7 @@ let obj2 = {
       if (obj4.isIOS()) {
         const tmp8Result = ChatChangesetUpdateTracker;
         const andIncrementChangesetIdForChat = tmp8Result.getAndIncrementChangesetIdForChat(arg0);
-        const Commands = tmp8(9912).Commands;
+        const Commands = tmp8(9924).Commands;
         Commands.clearRows(arg0, andIncrementChangesetIdForChat);
         return andIncrementChangesetIdForChat;
       } else {

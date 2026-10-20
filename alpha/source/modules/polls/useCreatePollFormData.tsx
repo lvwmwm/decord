@@ -1,20 +1,20 @@
-// Module ID: 12079
-// Function ID: 12080
+// Module ID: 12094
+// Function ID: 12095
 // Name: useCreatePollFormData
-// Dependencies: [5, 32, 19, 8254, 558, 576, 8228, 12080, 12081, 12094, 12095, 12096, 1128, 12087, 2]
+// Dependencies: [5, 32, 19, 8258, 558, 576, 8232, 12095, 12096, 12109, 12110, 12111, 1128, 12102, 2]
 
-// Module 12079 (useCreatePollFormData)
+// Module 12094 (useCreatePollFormData)
 import intl3 from "intl" /* 1128 */;
-import PollsUtils from "PollsUtils" /* 8228 */;
-import useRequestDefault from "useRequest" /* 12080 */;
-import PollsActionCreatorsDefault from "PollsActionCreators" /* 12081 */;
-import PollUploadAttachmentActionCreatorsAll from "PollUploadAttachmentActionCreators" /* 12094 */;
-import PollAttachmentUtils from "PollAttachmentUtils" /* 12095 */;
-import PollTypes from "PollTypes" /* 12096 */;
+import PollsUtils from "PollsUtils" /* 8232 */;
+import useRequestDefault from "useRequest" /* 12095 */;
+import PollsActionCreatorsDefault from "PollsActionCreators" /* 12096 */;
+import PollUploadAttachmentActionCreatorsAll from "PollUploadAttachmentActionCreators" /* 12109 */;
+import PollAttachmentUtils from "PollAttachmentUtils" /* 12110 */;
+import PollTypes from "PollTypes" /* 12111 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PollsConstants from "PollsConstants" /* 8254 */;
+import PollsConstants from "PollsConstants" /* 8258 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 18521
-// Function ID: 18522
+// Module ID: 18544
+// Function ID: 18545
 // Name: reportMalformedStorageValues
 // Dependencies: [4827, 1257, 2]
 // Exports: default
 
-// Module 18521 (reportMalformedStorageValues)
+// Module 18544 (reportMalformedStorageValues)
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import _mod4827 from "module_4827" /* 4827 */;
 import size from "module_2" /* 2 */;

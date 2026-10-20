@@ -1,15 +1,15 @@
-// Module ID: 10946
-// Function ID: 10947
+// Module ID: 10957
+// Function ID: 10958
 // Name: formatClearAfterOption
-// Dependencies: [10855, 4773, 1128, 1104, 1388, 2]
+// Dependencies: [10866, 4773, 1128, 1104, 1388, 2]
 // Exports: default
 
-// Module 10946 (formatClearAfterOption)
+// Module 10957 (formatClearAfterOption)
 import DurationsDefault from "Durations" /* 1104 */;
 import intl10 from "intl" /* 1128 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import DateUtils from "DateUtils" /* 4773 */;
-import Constants from "Constants" /* 10855 */;
+import Constants from "Constants" /* 10866 */;
 import size from "module_2" /* 2 */;
 
 const ClearAfterValues = Constants.ClearAfterValues;

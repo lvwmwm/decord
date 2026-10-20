@@ -1,13 +1,13 @@
-// Module ID: 15866
-// Function ID: 15867
+// Module ID: 15885
+// Function ID: 15886
 // Name: AccountWebAuthnNameSetting
-// Dependencies: [8276, 1087, 11099, 1128, 15867, 2]
+// Dependencies: [8280, 1087, 11111, 1128, 15886, 2]
 
-// Module 15866 (AccountWebAuthnNameSetting)
+// Module 15885 (AccountWebAuthnNameSetting)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8276 */;
-import SettingBuilders from "SettingBuilders" /* 11099 */;
+import SettingsConstants from "SettingsConstants" /* 8280 */;
+import SettingBuilders from "SettingBuilders" /* 11111 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

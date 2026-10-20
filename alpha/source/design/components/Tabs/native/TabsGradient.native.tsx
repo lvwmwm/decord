@@ -1,9 +1,9 @@
-// Module ID: 13504
-// Function ID: 13505
+// Module ID: 13522
+// Function ID: 13523
 // Name: TabsGradient
 // Dependencies: [19, 1087, 21, 5014, 5219, 4945, 558, 5208, 576, 2]
 
-// Module 13504 (TabsGradient)
+// Module 13522 (TabsGradient)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 5014 */;

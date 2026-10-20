@@ -1,11 +1,11 @@
-// Module ID: 18011
-// Function ID: 18012
+// Module ID: 18034
+// Function ID: 18035
 // Name: guild_automod/PermissionUtils
-// Dependencies: [4822, 4880, 12618, 1087, 558, 576, 504, 2]
+// Dependencies: [4822, 4880, 12635, 1087, 558, 576, 504, 2]
 // Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, hasMentionRaidLimitAccess
 
-// Module 18011 (guild_automod/PermissionUtils)
-import Constants2 from "Constants" /* 12618 */;
+// Module 18034 (guild_automod/PermissionUtils)
+import Constants2 from "Constants" /* 12635 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
 import Constants from "Constants" /* 1087 */;

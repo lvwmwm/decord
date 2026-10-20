@@ -1,9 +1,9 @@
-// Module ID: 5819
-// Function ID: 5820
+// Module ID: 5821
+// Function ID: 5822
 // Name: VideoBackgroundConstants
 // Dependencies: [2]
 
-// Module 5819 (VideoBackgroundConstants)
+// Module 5821 (VideoBackgroundConstants)
 import size from "module_2" /* 2 */;
 
 let obj = { OPTION_1: 0, [0]: "OPTION_1", OPTION_2: 1, [1]: "OPTION_2", OPTION_3: 2, [2]: "OPTION_3", OPTION_4: 3, [3]: "OPTION_4", OPTION_7: 7, [7]: "OPTION_7", OPTION_8: 8, [8]: "OPTION_8", OPTION_9: 9, [9]: "OPTION_9", OPTION_10: 10, [10]: "OPTION_10" };

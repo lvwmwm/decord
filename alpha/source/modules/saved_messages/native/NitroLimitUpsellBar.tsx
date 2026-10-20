@@ -1,18 +1,18 @@
-// Module ID: 13849
-// Function ID: 13850
+// Module ID: 13867
+// Function ID: 13868
 // Name: NitroLimitUpsellBar
-// Dependencies: [17, 21, 4945, 587, 558, 576, 7901, 5631, 9850, 5195, 1128, 10095, 5205, 2]
+// Dependencies: [17, 21, 4945, 587, 558, 576, 7905, 5631, 9862, 5195, 1128, 10106, 5205, 2]
 
-// Module 13849 (NitroLimitUpsellBar)
+// Module 13867 (NitroLimitUpsellBar)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import WarningIcon from "WarningIcon" /* 7901 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9850 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10095 */;
+import WarningIcon from "WarningIcon" /* 7905 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9862 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10106 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -117,7 +117,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroLimitUp
   }
   if (isAtLimit) {
     const obj6 = { color: "text-feedback-warning", style: tmp4.icon };
-    tmp6Result = tmp6(tmp(7901).WarningIcon, obj6);
+    tmp6Result = tmp6(tmp(7905).WarningIcon, obj6);
   } else {
     const obj7 = { source: AssetRegistryDefault, style: tmp4.icon };
     const tmp8 = FastImageDefault;

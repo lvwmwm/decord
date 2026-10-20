@@ -1,17 +1,17 @@
-// Module ID: 7557
-// Function ID: 7558
+// Module ID: 7560
+// Function ID: 7561
 // Name: MemberSafetySupplementalUtils
-// Dependencies: [5, 1087, 1128, 558, 576, 6456, 7558, 5166, 4952, 1297, 2]
+// Dependencies: [5, 1087, 1128, 558, 576, 6459, 7561, 5166, 4952, 1297, 2]
 // Exports: fetchMemberSupplemental, getIntegrationLabel, getJoinSourceTypeLabel, registerFetchedSupplementals
 
-// Module 7557 (MemberSafetySupplementalUtils)
+// Module 7560 (MemberSafetySupplementalUtils)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl11 from "intl" /* 1128 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import useThemeDefault from "useTheme" /* 5166 */;
-import PlatformsDefault from "Platforms" /* 6456 */;
-import ConnectionsHooks from "ConnectionsHooks" /* 7558 */;
+import PlatformsDefault from "Platforms" /* 6459 */;
+import ConnectionsHooks from "ConnectionsHooks" /* 7561 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

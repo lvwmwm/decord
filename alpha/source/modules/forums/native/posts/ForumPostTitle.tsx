@@ -1,9 +1,9 @@
-// Module ID: 12911
-// Function ID: 12912
+// Module ID: 12929
+// Function ID: 12930
 // Name: ForumPostTitle
 // Dependencies: [19, 21, 4945, 1385, 558, 576, 5195, 2]
 
-// Module 12911 (ForumPostTitle)
+// Module 12929 (ForumPostTitle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;

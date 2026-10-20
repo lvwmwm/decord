@@ -1,20 +1,20 @@
-// Module ID: 13245
-// Function ID: 13246
+// Module ID: 13263
+// Function ID: 13264
 // Name: GuildPowerupsCardFooter
-// Dependencies: [17, 21, 4945, 558, 576, 7213, 587, 5195, 6960, 1128, 2558, 13246, 13221, 7023, 9723, 2]
+// Dependencies: [17, 21, 4945, 558, 576, 7216, 587, 5195, 6963, 1128, 2558, 13264, 13239, 7026, 9736, 2]
 
-// Module 13245 (GuildPowerupsCardFooter)
+// Module 13263 (GuildPowerupsCardFooter)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef2558 from "module_2558" /* 2558 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 6960 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7023 */;
-import CircleCheckIcon2 from "CircleCheckIcon" /* 7213 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 13221 */;
-import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 13246 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 6963 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7026 */;
+import CircleCheckIcon2 from "CircleCheckIcon" /* 7216 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 13239 */;
+import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 13264 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -36,7 +36,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_POSITIVE };
-    const CircleCheckIcon = tmp(7213).CircleCheckIcon;
+    const CircleCheckIcon = tmp(7216).CircleCheckIcon;
     const tmp8 = React3(CircleCheckIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -89,7 +89,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   const inline = tmp4.inline;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_WARNING };
-    const CircleErrorIcon = tmp(6960).CircleErrorIcon;
+    const CircleErrorIcon = tmp(6963).CircleErrorIcon;
     const tmp8 = React3(CircleErrorIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -164,7 +164,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   const inline = tmp4.inline;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_WARNING };
-    const CircleErrorIcon = tmp(6960).CircleErrorIcon;
+    const CircleErrorIcon = tmp(6963).CircleErrorIcon;
     const tmp8 = React3(CircleErrorIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -311,7 +311,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
     const inline = tmp4.inline;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-      const BoostGemIcon = tmp(9723).BoostGemIcon;
+      const BoostGemIcon = tmp(9736).BoostGemIcon;
       const tmp10 = React3(BoostGemIcon, obj2);
       cResult[0] = tmp10;
       first = tmp10;
@@ -382,7 +382,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   if (null != cost) {
     const obj = { style: tmp.inline, children: items };
     const obj2 = { size: "sm", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-    const BoostGemIcon = tmp2(9723).BoostGemIcon;
+    const BoostGemIcon = tmp2(9736).BoostGemIcon;
     items = [React3(BoostGemIcon, obj2), ];
     let str = "heading-sm/semibold";
     const Text = tmp2(5195).Text;

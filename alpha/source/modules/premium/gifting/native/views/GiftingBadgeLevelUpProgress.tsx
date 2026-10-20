@@ -1,16 +1,16 @@
-// Module ID: 13709
-// Function ID: 13710
+// Module ID: 13727
+// Function ID: 13728
 // Name: GiftingBadgeLevelUpProgress
-// Dependencies: [19, 17, 8606, 21, 4945, 587, 558, 576, 10420, 10423, 5195, 1128, 2622, 2]
+// Dependencies: [19, 17, 8618, 21, 4945, 587, 558, 576, 10431, 10434, 5195, 1128, 2622, 2]
 
-// Module 13709 (GiftingBadgeLevelUpProgress)
+// Module 13727 (GiftingBadgeLevelUpProgress)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef2622 from "module_2622" /* 2622 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8606 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10420 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10423 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8618 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10431 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10434 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;

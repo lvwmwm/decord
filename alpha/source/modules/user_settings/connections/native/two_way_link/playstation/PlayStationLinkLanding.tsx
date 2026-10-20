@@ -1,14 +1,14 @@
-// Module ID: 13891
-// Function ID: 13892
+// Module ID: 13909
+// Function ID: 13910
 // Name: PlayStationLinkLanding
-// Dependencies: [19, 13890, 1087, 21, 4945, 1128, 8517, 9530, 558, 576, 1505, 2068, 13892, 9532, 2]
+// Dependencies: [19, 13908, 1087, 21, 4945, 1128, 8521, 9543, 558, 576, 1505, 2068, 13910, 9545, 2]
 
-// Module 13891 (PlayStationLinkLanding)
+// Module 13909 (PlayStationLinkLanding)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2068 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 13890 */;
-import _modDef13892 from "module_13892" /* 13892 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 13908 */;
+import _modDef13910 from "module_13910" /* 13910 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -48,11 +48,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj5 = { label: intl2.string(navigation(1128).t["+eJP7o"]), subLabel: intl3.string(navigation(1128).t["+0VIUh"]), icon: navigation(8517).VoiceNormalIcon };
+    const obj5 = { label: intl2.string(navigation(1128).t["+eJP7o"]), subLabel: intl3.string(navigation(1128).t["+0VIUh"]), icon: navigation(8521).VoiceNormalIcon };
     intl2 = tmp(1128).intl;
     intl3 = tmp(1128).intl;
     const items = [obj5, ];
-    const obj6 = { label: intl4.string(navigation(1128).t.ZH4QFa), icon: navigation(9530).GameControllerIcon };
+    const obj6 = { label: intl4.string(navigation(1128).t.ZH4QFa), icon: navigation(9543).GameControllerIcon };
     intl4 = tmp(1128).intl;
     items[1] = obj6;
     cResult[1] = items;
@@ -71,7 +71,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
     tmp12 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj7 = { uri: _modDef13892 };
+    const obj7 = { uri: _modDef13910 };
     cResult[4] = obj7;
     tmp13 = obj7;
   } else {
@@ -100,7 +100,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
       return tmp19;
     }
   }
-  const tmp20 = jsx(navigation(9532).TwoWayLinkLanding, { platformType, img: tmp13, imgStyle: image, headerConnect: tmp15, headerReconnect: tmp16, body: first, onNext: tmp12, valueProps: tmp11 });
+  const tmp20 = jsx(navigation(9545).TwoWayLinkLanding, { platformType, img: tmp13, imgStyle: image, headerConnect: tmp15, headerReconnect: tmp16, body: first, onNext: tmp12, valueProps: tmp11 });
   cResult[7] = tmp12;
   cResult[8] = platformType;
   cResult[9] = tmp4.image;
@@ -134,10 +134,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
     navigation.push(constants.PRE_CONNECT);
   }, items);
   const memo1 = react.useMemo(() => {
-    const obj = { uri: _modDef13892 };
+    const obj = { uri: _modDef13910 };
     return obj;
   }, []);
-  const TwoWayLinkLanding = navigation(9532).TwoWayLinkLanding;
+  const TwoWayLinkLanding = navigation(9545).TwoWayLinkLanding;
   let intl2 = navigation(1128).intl;
   let intl3 = navigation(1128).intl;
   return <TwoWayLinkLanding platformType={platformType} img={memo1} imgStyle={tmp.image} headerConnect={intl2.string(navigation(1128).t.xAWHOy)} headerReconnect={intl3.string(navigation(1128).t["ZJ/vBh"])} body={formatResult} onNext={callback} valueProps={memo} />;

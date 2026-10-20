@@ -1,11 +1,11 @@
-// Module ID: 16260
-// Function ID: 16261
+// Module ID: 16279
+// Function ID: 16280
 // Name: QuestBarRenderedTriggerPoint
-// Dependencies: [5152, 10482, 2]
+// Dependencies: [5152, 10493, 2]
 
-// Module 16260 (QuestBarRenderedTriggerPoint)
+// Module 16279 (QuestBarRenderedTriggerPoint)
 import ExperimentConstants from "ExperimentConstants" /* 5152 */;
-import Helpers from "Helpers" /* 10482 */;
+import Helpers from "Helpers" /* 10493 */;
 import size from "module_2" /* 2 */;
 
 const commonTriggerPointConfiguration = new Helpers.CommonTriggerPointConfiguration([], ExperimentConstants.CommonTriggerPoints.QUEST_BAR_RENDERED, { location: "quest bar rendered" });

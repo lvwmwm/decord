@@ -1,15 +1,15 @@
-// Module ID: 12211
-// Function ID: 12212
+// Module ID: 12227
+// Function ID: 12228
 // Name: ConjureContextBoundaryRow
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 11674, 11190, 5195, 5865, 5869, 1128, 3820, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 11687, 11201, 5195, 5868, 5872, 1128, 3820, 2]
 
-// Module 12211 (ConjureContextBoundaryRow)
+// Module 12227 (ConjureContextBoundaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import _modDef3820 from "module_3820" /* 3820 */;
-import useAlertStore from "useAlertStore" /* 5865 */;
-import AlertModal2 from "AlertModal" /* 5869 */;
+import useAlertStore from "useAlertStore" /* 5868 */;
+import AlertModal2 from "AlertModal" /* 5872 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -74,7 +74,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
   const cResult = obj.c(32);
   ({ projectId, contextSwitch } = arg0);
   const tmp4 = closure_7();
-  const obj2 = action(11674);
+  const obj2 = action(11687);
   const conjureContextSwitchRow = obj2.useConjureContextSwitchRow(projectId, contextSwitch);
   if (null == conjureContextSwitchRow) {
     return null;
@@ -95,7 +95,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-      const ChatPlusIcon = tmp(11190).ChatPlusIcon;
+      const ChatPlusIcon = tmp(11201).ChatPlusIcon;
       const tmp14 = closure_4(ChatPlusIcon, obj4);
       cResult[2] = tmp14;
       tmp11 = tmp14;
@@ -272,7 +272,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
   let action;
   ({ projectId, contextSwitch } = arg0);
   const tmp = closure_7();
-  const obj = action(11674);
+  const obj = action(11687);
   const conjureContextSwitchRow = obj.useConjureContextSwitchRow(projectId, contextSwitch);
   if (null == conjureContextSwitchRow) {
     return null;
@@ -284,7 +284,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
     items = [closure_4(View, obj4), , ];
     const obj5 = { style: tmp.contextLabel, accessible: true, accessibilityRole: "header", children: items1 };
     const obj6 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-    const ChatPlusIcon = tmp2(11190).ChatPlusIcon;
+    const ChatPlusIcon = tmp2(11201).ChatPlusIcon;
     items1 = [closure_4(ChatPlusIcon, obj6), ];
     const obj7 = { variant: "text-xs/semibold", color: "text-default", children: conjureContextSwitchRow.label };
     items1[1] = closure_4(action(5195).Text, obj7);

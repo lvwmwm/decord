@@ -1,9 +1,9 @@
-// Module ID: 13596
-// Function ID: 13597
+// Module ID: 13614
+// Function ID: 13615
 // Name: MessageNotificationHeader
-// Dependencies: [19, 17, 4946, 4890, 1392, 21, 4945, 587, 558, 576, 5195, 5565, 1108, 8487, 8489, 8447, 504, 2]
+// Dependencies: [19, 17, 4946, 4890, 1392, 21, 4945, 587, 558, 576, 5195, 5565, 1108, 8491, 8493, 8451, 504, 2]
 
-// Module 13596 (MessageNotificationHeader)
+// Module 13614 (MessageNotificationHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 587 */;
 import ChannelTypes from "ChannelTypes" /* 1108 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import useChannelName from "useChannelName" /* 5565 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8447 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8451 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
@@ -302,11 +302,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Locati
       if (null != parentChannel) {
         let ThreadIcon;
         if (parentChannel.type === ChannelTypes.ChannelTypes.GUILD_FORUM) {
-          ThreadIcon = tmp(8487).ChatIcon;
+          ThreadIcon = tmp(8491).ChatIcon;
         }
         simpleChannelIconComponent = ThreadIcon;
       }
-      ThreadIcon = tmp(8489).ThreadIcon;
+      ThreadIcon = tmp(8493).ThreadIcon;
     } else {
       const tmpResult = utils_ChannelUtils;
       simpleChannelIconComponent = tmpResult.getSimpleChannelIconComponent(channel);
@@ -343,11 +343,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Locati
         if (null != parentChannel) {
           let ThreadIcon;
           if (parentChannel.type === ChannelTypes.ChannelTypes.GUILD_FORUM) {
-            ThreadIcon = tmp3(8487).ChatIcon;
+            ThreadIcon = tmp3(8491).ChatIcon;
           }
           simpleChannelIconComponent = ThreadIcon;
         }
-        ThreadIcon = tmp3(8489).ThreadIcon;
+        ThreadIcon = tmp3(8493).ThreadIcon;
       } else {
         const tmp3Result = utils_ChannelUtils;
         simpleChannelIconComponent = tmp3Result.getSimpleChannelIconComponent(tmp);

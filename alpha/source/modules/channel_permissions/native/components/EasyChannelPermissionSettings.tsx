@@ -1,22 +1,22 @@
-// Module ID: 17999
-// Function ID: 18000
+// Module ID: 18022
+// Function ID: 18023
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 18000, 4800, 4860, 4854, 4822, 4880, 4890, 1392, 7819, 1087, 21, 4945, 587, 558, 576, 1505, 11200, 504, 8893, 8894, 8895, 1128, 5565, 5863, 8910, 4885, 5932, 7241, 6935, 7897, 10948, 6851, 11198, 6878, 5673, 8821, 9067, 18001, 18003, 2]
+// Dependencies: [32, 5, 19, 17, 18023, 4800, 4860, 4854, 4822, 4880, 4890, 1392, 7823, 1087, 21, 4945, 587, 558, 576, 1505, 11211, 504, 8905, 8906, 8907, 1128, 5565, 5866, 8922, 4885, 5935, 7244, 6938, 7901, 10959, 6854, 11209, 6881, 5673, 8833, 9079, 18024, 18026, 2]
 
-// Module 17999 (EasyChannelPermissionSettings)
+// Module 18022 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 587 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5673 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5863 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7819 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8893 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8894 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8910 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11198 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5866 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7823 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8905 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8906 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8922 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11209 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 18000 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 18023 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import GuildMemberStore from "GuildMemberStore" /* 4860 */;
 import GuildRoleStore from "GuildRoleStore" /* 4854 */;

@@ -1,20 +1,20 @@
-// Module ID: 11579
-// Function ID: 11580
+// Module ID: 11590
+// Function ID: 11591
 // Name: TouchableStreamPreview
-// Dependencies: [19, 17, 5677, 6590, 502, 4800, 4822, 4880, 5591, 1087, 21, 4945, 4942, 587, 558, 576, 5949, 504, 1128, 6582, 7773, 7810, 5672, 6593, 5224, 5195, 11580, 2]
+// Dependencies: [19, 17, 5677, 6593, 502, 4800, 4822, 4880, 5591, 1087, 21, 4945, 4942, 587, 558, 576, 5952, 504, 1128, 6585, 7777, 7814, 5672, 6596, 5224, 5195, 11591, 2]
 
-// Module 11579 (TouchableStreamPreview)
+// Module 11590 (TouchableStreamPreview)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5672 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6582 */;
-import StreamActionCreators from "StreamActionCreators" /* 7773 */;
-import transitionToStreamDefault from "transitionToStream" /* 7810 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6585 */;
+import StreamActionCreators from "StreamActionCreators" /* 7777 */;
+import transitionToStreamDefault from "transitionToStream" /* 7814 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GameConsoleStore from "GameConsoleStore" /* 5677 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6590 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6593 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import GuildStore from "GuildStore" /* 4822 */;
@@ -34,7 +34,7 @@ let closure_4;
 let obj2;
 let obj3;
 let tmp5;
-const StreamKeyUtils = tmp5(6593);
+const StreamKeyUtils = tmp5(6596);
 ({ View: closure_4, StyleSheet } = react_native);
 const Permissions = Constants.Permissions;
 const jsx = Fragment.jsx;

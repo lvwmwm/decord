@@ -1,9 +1,9 @@
-// Module ID: 15967
-// Function ID: 15968
+// Module ID: 15986
+// Function ID: 15987
 // Name: FamilyCenterUsernameHeader
 // Dependencies: [19, 17, 21, 4945, 558, 576, 4994, 5195, 2]
 
-// Module 15967 (FamilyCenterUsernameHeader)
+// Module 15986 (FamilyCenterUsernameHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import UserUtilsDefault from "UserUtils" /* 4994 */;

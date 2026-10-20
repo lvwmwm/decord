@@ -1,14 +1,14 @@
 // Module ID: 5783
 // Function ID: 5784
 // Name: WindowVisibilityVideoManager
-// Dependencies: [5703, 4795, 3, 1104, 584, 5784, 5785, 2]
+// Dependencies: [5703, 4795, 3, 1104, 584, 5784, 5787, 2]
 
 // Module 5783 (WindowVisibilityVideoManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import ExternalPipDefault from "ExternalPip" /* 5784 */;
-import WindowVisibilityUtilsDefault from "WindowVisibilityUtils" /* 5785 */;
+import WindowVisibilityUtilsDefault from "WindowVisibilityUtils" /* 5787 */;
 import TypedEventEmitter from "TypedEventEmitter" /* 5703 */;
 import size from "module_2" /* 2 */;
 

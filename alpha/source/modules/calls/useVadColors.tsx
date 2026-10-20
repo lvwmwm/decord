@@ -1,9 +1,9 @@
-// Module ID: 11318
-// Function ID: 11319
+// Module ID: 11329
+// Function ID: 11330
 // Name: useVadColors
 // Dependencies: [4860, 1392, 558, 576, 504, 2]
 
-// Module 11318 (useVadColors)
+// Module 11329 (useVadColors)
 import get_initialized from "get initialized" /* 504 */;
 import GuildMemberStore from "GuildMemberStore" /* 4860 */;
 import UserStore from "UserStore" /* 1392 */;

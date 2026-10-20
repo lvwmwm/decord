@@ -1,9 +1,9 @@
-// Module ID: 9349
-// Function ID: 9350
+// Module ID: 9361
+// Function ID: 9362
 // Name: WishlistButton
-// Dependencies: [5, 109, 32, 19, 17, 502, 1392, 1089, 1098, 21, 5014, 5211, 4945, 587, 4999, 558, 576, 6970, 4952, 4959, 5625, 1128, 5167, 5208, 5209, 9350, 9285, 504, 9281, 9340, 9352, 9280, 2]
+// Dependencies: [5, 109, 32, 19, 17, 502, 1392, 1089, 1098, 21, 5014, 5211, 4945, 587, 4999, 558, 576, 6973, 4952, 4959, 5625, 1128, 5167, 5208, 5209, 9362, 9297, 504, 9293, 9352, 9364, 9292, 2]
 
-// Module 9349 (WishlistButton)
+// Module 9361 (WishlistButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
@@ -15,9 +15,9 @@ import spring from "spring" /* 5208 */;
 import springPresets from "springPresets" /* 5209 */;
 import ButtonConstants from "ButtonConstants" /* 5211 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5625 */;
-import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 9280 */;
-import useWishlistNUXActionSheetDefault from "useWishlistNUXActionSheet" /* 9281 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9352 */;
+import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 9292 */;
+import useWishlistNUXActionSheetDefault from "useWishlistNUXActionSheet" /* 9293 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9364 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -683,7 +683,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistButt
             if (cResult[21] === tmp8) {
               tmp28 = cResult[22];
             }
-            const tmpResult4 = tmp(9340);
+            const tmpResult4 = tmp(9352);
             const wishlistButtonState = tmpResult4.useWishlistButtonState(tmp28);
             class I {
               constructor() {

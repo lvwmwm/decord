@@ -1,14 +1,14 @@
-// Module ID: 9385
-// Function ID: 9386
+// Module ID: 9397
+// Function ID: 9398
 // Name: CollectiblesShopCardVariants
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 9352, 9386, 7178, 9387, 9276, 7607, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 9364, 9398, 7181, 9399, 9288, 7610, 2]
 
-// Module 9385 (CollectiblesShopCardVariants)
+// Module 9397 (CollectiblesShopCardVariants)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9352 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9386 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9364 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9398 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -19,8 +19,8 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const CheckmarkSmallIcon2 = tmp(7178);
-const PlusSmallIcon2 = tmp(9387);
+const CheckmarkSmallIcon2 = tmp(7181);
+const PlusSmallIcon2 = tmp(9399);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -273,9 +273,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const cResult = obj.c(14);
   product = product.product;
   const tmp2 = closure_6();
-  const obj2 = defaultVariantIndex(9276);
+  const obj2 = defaultVariantIndex(9288);
   defaultVariantIndex = obj2.useDefaultVariantIndex(product);
-  const obj3 = defaultVariantIndex(7607);
+  const obj3 = defaultVariantIndex(7610);
   if (obj3.getIsVariantProduct(product)) {
     let tmp7;
     let num3 = 3;
@@ -359,9 +359,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   product = product.product;
   let defaultVariantIndex;
   const tmp = closure_6();
-  let obj = defaultVariantIndex(9276);
+  let obj = defaultVariantIndex(9288);
   defaultVariantIndex = obj.useDefaultVariantIndex(product);
-  const obj2 = defaultVariantIndex(7607);
+  const obj2 = defaultVariantIndex(7610);
   if (obj2.getIsVariantProduct(product)) {
     let num3 = 3;
     if (product.variants.length <= 4) {

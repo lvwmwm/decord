@@ -1,21 +1,21 @@
-// Module ID: 14368
-// Function ID: 14369
+// Module ID: 14386
+// Function ID: 14387
 // Name: createMediaPostPreviewEmbedContent
-// Dependencies: [17, 5198, 4800, 4822, 4971, 1392, 10823, 5952, 5567, 1128, 8262, 8264, 587, 5954, 14369, 8531, 6602, 5953, 2]
+// Dependencies: [17, 5198, 4800, 4822, 4971, 1392, 10834, 5955, 5567, 1128, 8266, 8268, 587, 5957, 14387, 8535, 6605, 5956, 2]
 // Exports: default
 
-// Module 14368 (createMediaPostPreviewEmbedContent)
+// Module 14386 (createMediaPostPreviewEmbedContent)
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import LinkUtils from "LinkUtils" /* 5567 */;
-import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 5952 */;
-import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 5953 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5954 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6602 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8262 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8264 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8531 */;
-import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 10823 */;
+import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 5955 */;
+import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 5956 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5957 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6605 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8266 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8268 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8535 */;
+import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 10834 */;
 import react_native from "react-native" /* 17 */;
 import DevSettingsStore from "DevSettingsStore" /* 5198 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
@@ -109,7 +109,7 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
                 mediaPostEmbedCommonData.coverImage = "" + mediaPostEmbedCommonData.coverImage + "?format=webp";
               }
               if (mediaPostEmbedCommonData.shouldShowBlurredThumbnailImage) {
-                const obj5 = { blurredCoverImage: _false.resolveAssetSource(tmp10(14369)).uri, footer: formatToPartsResult, ctaButtonColor: tmp11 };
+                const obj5 = { blurredCoverImage: _false.resolveAssetSource(tmp10(14387)).uri, footer: formatToPartsResult, ctaButtonColor: tmp11 };
                 const merged = Object.assign(mediaPostEmbedCommonData);
                 return obj5;
               } else {

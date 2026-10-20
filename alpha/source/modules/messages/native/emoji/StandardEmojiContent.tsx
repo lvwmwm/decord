@@ -1,17 +1,17 @@
-// Module ID: 9854
-// Function ID: 9855
+// Module ID: 9866
+// Function ID: 9867
 // Name: StandardEmojiContent
-// Dependencies: [19, 17, 4971, 21, 4945, 587, 558, 576, 9855, 4898, 5631, 5195, 9856, 4894, 9744, 9857, 1128, 8871, 9859, 5205, 2]
+// Dependencies: [19, 17, 4971, 21, 4945, 587, 558, 576, 9867, 4898, 5631, 5195, 9868, 4894, 9757, 9869, 1128, 8883, 9871, 5205, 2]
 
-// Module 9854 (StandardEmojiContent)
+// Module 9866 (StandardEmojiContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4894 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4898 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 9855 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9859 */;
+import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 9867 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9871 */;
 import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4971 */;
 import Fragment from "Fragment" /* 21 */;
@@ -181,7 +181,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function StandardEm
     _require = tmp15;
     const tmpResult2 = require("EmojiPickerUtils");
     isFavoriteEmoji = tmpResult2.useIsFavoriteEmoji(tmp10, tmp15);
-    const tmp20 = isFavoriteEmoji(9857)(emojiNode.content);
+    const tmp20 = isFavoriteEmoji(9869)(emojiNode.content);
     if (cResult[8] !== emojiNode.surrogate) {
       const obj4 = { surrogate: emojiNode.surrogate };
       const tmp24 = closure_6(closure_10, obj4);

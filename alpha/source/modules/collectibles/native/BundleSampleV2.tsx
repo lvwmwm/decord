@@ -1,19 +1,19 @@
-// Module ID: 9308
-// Function ID: 9309
+// Module ID: 9320
+// Function ID: 9321
 // Name: BundleSampleV2
-// Dependencies: [19, 17, 9309, 21, 558, 576, 5631, 4945, 587, 38, 1995, 1992, 9310, 9321, 9328, 1202, 2]
+// Dependencies: [19, 17, 9321, 21, 558, 576, 5631, 4945, 587, 38, 1995, 1992, 9322, 9333, 9340, 1202, 2]
 
-// Module 9308 (BundleSampleV2)
+// Module 9320 (BundleSampleV2)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils from "utils" /* 1992 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9309 */;
-import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9310 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9321 */;
-import NameplateDummyUserPreview2 from "NameplateDummyUserPreview" /* 9328 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9321 */;
+import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9322 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9333 */;
+import NameplateDummyUserPreview2 from "NameplateDummyUserPreview" /* 9340 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -363,7 +363,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bundle
             if (null != tmp5) {
               const obj3 = { style: tmp4.nameplate, children: metroRequire(NameplateDummyUserPreview, obj4) };
               obj4 = { width: BUNDLE_PREVIEW_CONFIG[str].nameplatePreviewWidth, avatarSize: XSMALL_20, nameplate: tmp5 };
-              NameplateDummyUserPreview = tmp(9328).NameplateDummyUserPreview;
+              NameplateDummyUserPreview = tmp(9340).NameplateDummyUserPreview;
               const tmp26 = React3;
               if ("large" === str) {
                 XSMALL_20 = tmp(1202).AvatarSizes.NORMAL;

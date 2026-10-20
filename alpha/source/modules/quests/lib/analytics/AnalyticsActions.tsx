@@ -1,24 +1,24 @@
-// Module ID: 7735
-// Function ID: 7736
+// Module ID: 7739
+// Function ID: 7740
 // Name: AnalyticsActions
-// Dependencies: [5, 7736, 1372, 7719, 1087, 7517, 7738, 7715, 7739, 7741, 7744, 6665, 5673, 1267, 7745, 7693, 1384, 1281, 7750, 6661, 2]
+// Dependencies: [5, 7740, 1372, 7723, 1087, 7520, 7742, 7719, 7743, 7745, 7748, 6668, 5673, 1267, 7749, 7697, 1384, 1281, 7754, 6664, 2]
 // Exports: createAppStoreOverlayCarouselScrollTracker, getAppStoreOverlayStoreAppIds, trackAdContentAppStoreOverlayEvent, trackAdContentClicked, trackAdContentQuestBarOrDockModeChange, trackAppStoreOverlayCarouselScroll, trackAppStoreOverlayEvent, trackBountyCarouselEmptyStateViewed, trackBountyVerticalScroll, trackQuestContentClicked, trackQuestContentQuestBarOrDockModeChange, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
 
-// Module 7735 (AnalyticsActions)
+// Module 7739 (AnalyticsActions)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5673 */;
-import QuestTypes from "QuestTypes" /* 6661 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7517 */;
-import QuestDataUtils from "QuestDataUtils" /* 7715 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 7738 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7739 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7741 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7744 */;
+import QuestTypes from "QuestTypes" /* 6664 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7520 */;
+import QuestDataUtils from "QuestDataUtils" /* 7719 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7742 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7743 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7745 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7748 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7736 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7740 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1372 */;
-import QuestStore from "QuestStore" /* 7719 */;
+import QuestStore from "QuestStore" /* 7723 */;
 import size from "module_2" /* 2 */;
 
 let _null, _null2, _null3;
@@ -50,7 +50,7 @@ function trackQuestEvent(questId) {
     }
     const id = value.id;
     tmp24Result = AnalyticsTypes;
-    const QUEST = tmp24(6665).AdCreativeType.QUEST;
+    const QUEST = tmp24(6668).AdCreativeType.QUEST;
     const tmp24Result5 = SessionAdGenerator;
     let uuid = tmp24Result5.getOrRefreshAdSession(shouldExtendSession).uuid;
     const tmp24Result6 = QuestDataUtils;

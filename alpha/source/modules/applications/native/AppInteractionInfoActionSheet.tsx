@@ -1,15 +1,15 @@
-// Module ID: 13795
-// Function ID: 13796
+// Module ID: 13813
+// Function ID: 13814
 // Name: AppInteractionInfoActionSheet
-// Dependencies: [19, 17, 1406, 4822, 1392, 21, 4945, 558, 576, 1633, 13796, 5564, 504, 8595, 6831, 5195, 1128, 8593, 1202, 6856, 5226, 2]
+// Dependencies: [19, 17, 1406, 4822, 1392, 21, 4945, 558, 576, 1633, 13814, 5564, 504, 8607, 6834, 5195, 1128, 8605, 1202, 6859, 5226, 2]
 
-// Module 13795 (AppInteractionInfoActionSheet)
+// Module 13813 (AppInteractionInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import GuildIconDefault from "GuildIcon" /* 6831 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8593 */;
-import UserActionCreators from "UserActionCreators" /* 8595 */;
-import ContextMenuSubmenuActionSheetHeaderDefault from "ContextMenuSubmenuActionSheetHeader" /* 13796 */;
+import GuildIconDefault from "GuildIcon" /* 6834 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8605 */;
+import UserActionCreators from "UserActionCreators" /* 8607 */;
+import ContextMenuSubmenuActionSheetHeaderDefault from "ContextMenuSubmenuActionSheetHeader" /* 13814 */;
 import react_mod from "react" /* 19 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import GuildStore from "GuildStore" /* 4822 */;
@@ -191,7 +191,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInterac
             return UserStore.getUser(id);
           }
         }
-        const obj3 = { guild: stateFromStores1, size: tmp(6831).GuildIconSizes.SMALL_32 };
+        const obj3 = { guild: stateFromStores1, size: tmp(6834).GuildIconSizes.SMALL_32 };
         const tmp5Result = GuildIconDefault;
         cResult[15] = stateFromStores1;
         cResult[16] = closure_8(tmp5Result, obj3);
@@ -338,7 +338,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInterac
         return showUserProfileActionSheetDefault(obj);
       };
       const obj9 = { style: tmp4.itemContainer, children: items4 };
-      const PressableOpacity = tmp(6856).PressableOpacity;
+      const PressableOpacity = tmp(6859).PressableOpacity;
       const obj10 = { user: tmp25, size: tmp(1202).AvatarSizes.REFRESH_MEDIUM_32, guildId };
       const Avatar = tmp(1202).Avatar;
       items4 = [closure_8(Avatar, obj10), ];
@@ -459,8 +459,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInterac
   }
   if (null != stateFromStores1) {
     const obj5 = { style: tmp.itemContainer, children: items5 };
-    const obj6 = { guild: stateFromStores1, size: message(6831).GuildIconSizes.SMALL_32 };
-    const tmp2Result = tmp2(6831);
+    const obj6 = { guild: stateFromStores1, size: message(6834).GuildIconSizes.SMALL_32 };
+    const tmp2Result = tmp2(6834);
     items5 = [closure_8(tmp2Result, obj6), ];
     const obj7 = { style: tmp.itemLabel, children: items6 };
     const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores1.name };
@@ -483,7 +483,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInterac
         children: closure_9(id, obj12)
       };
       obj12 = { style: tmp.itemContainer, children: items7 };
-      const PressableOpacity = tmp10(6856).PressableOpacity;
+      const PressableOpacity = tmp10(6859).PressableOpacity;
       const obj13 = { user: stateFromStores, size: message(1202).AvatarSizes.REFRESH_MEDIUM_32, guildId };
       const Avatar = tmp10(1202).Avatar;
       items7 = [closure_8(Avatar, obj13), ];
@@ -512,7 +512,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppInterac
       children: closure_9(id, obj20)
     };
     obj20 = { style: tmp.itemContainer, children: items10 };
-    const PressableOpacity2 = tmp10(6856).PressableOpacity;
+    const PressableOpacity2 = tmp10(6859).PressableOpacity;
     const obj21 = { user: tmp15, size: message(1202).AvatarSizes.REFRESH_MEDIUM_32, guildId };
     const Avatar2 = tmp10(1202).Avatar;
     items10 = [closure_8(Avatar2, obj21), ];

@@ -1,27 +1,37 @@
 // Module ID: 15358
 // Function ID: 15359
-// Dependencies: [15359, 15356, 15361]
+// Dependencies: [15273, 15359]
+// Exports: getSupportedNumberingSystems
 
 // Module 15358
-import _mod15356 from "module_15356" /* 15356 */;
-import _mod15359 from "module_15359" /* 15359 */;
-import _mod15361 from "module_15361" /* 15361 */;
+const require = globalThis.__r;
+let _require;
 
-let fn = Object;
-let closure_3 = _mod15359("".split);
-if (_mod15356(() => {
-  const obj = Object("z");
-  return !obj.propertyIsEnumerable(0);
-})) {
-  fn = (arg0) => {
-    let tmp2;
-    if ("String" === _mod15361(arg0)) {
-      tmp2 = closure_3(arg0, "");
-    } else {
-      tmp2 = Object(arg0);
+
+export const getSupportedNumberingSystems = function getSupportedNumberingSystems(locale) {
+  _require = locale;
+  const numberingSystemNames = require("numberingSystemNames").numberingSystemNames;
+  return numberingSystemNames.filter((item) => {
+    function isSupportedNumberingSystem(item, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
+      }
+      try {
+        const concat = "".concat;
+        const createMemoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat;
+        const combined = "".concat(str, "-u-nu-");
+        const memoizedNumberFormat = createMemoizedNumberFormat(combined.concat(item));
+        const obj3 = memoizedNumberFormat;
+        if (memoizedNumberFormat.resolvedOptions().numberingSystem !== item) {
+          if ("123" === obj3.format(123)) {
+            return false;
+          }
+        }
+        return true;
+      } catch (err) {
+      }
     }
-    return tmp2;
-  };
-}
-
-export default fn;
+    return isSupportedNumberingSystem(item, locale);
+  });
+};

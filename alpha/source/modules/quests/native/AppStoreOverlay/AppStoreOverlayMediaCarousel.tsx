@@ -1,15 +1,15 @@
-// Module ID: 13923
-// Function ID: 13924
+// Module ID: 13941
+// Function ID: 13942
 // Name: AppStoreOverlayMediaCarousel
-// Dependencies: [32, 19, 17, 4946, 1098, 21, 587, 4945, 13924, 558, 576, 13925, 1128, 5631, 504, 8715, 9231, 7735, 7744, 5258, 2]
+// Dependencies: [32, 19, 17, 4946, 1098, 21, 587, 4945, 13942, 558, 576, 13943, 1128, 5631, 504, 8727, 9243, 7739, 7748, 5258, 2]
 
-// Module 13923 (AppStoreOverlayMediaCarousel)
+// Module 13941 (AppStoreOverlayMediaCarousel)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
-import AnalyticsActions from "AnalyticsActions" /* 7735 */;
-import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 13924 */;
-import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 13925 */;
+import AnalyticsActions from "AnalyticsActions" /* 7739 */;
+import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 13942 */;
+import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 13943 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -558,9 +558,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
                 if (num5 !== current) {
                   const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.MEDIA, scrollingDirection: LEFT, carouselPosition: num5, carouselSize: tmp15 };
                   if (num5 > current) {
-                    LEFT = tmp12(7744).HorizontalScrollingDirection.RIGHT;
+                    LEFT = tmp12(7748).HorizontalScrollingDirection.RIGHT;
                   } else {
-                    LEFT = tmp12(7744).HorizontalScrollingDirection.LEFT;
+                    LEFT = tmp12(7748).HorizontalScrollingDirection.LEFT;
                   }
                   tmp(obj);
                   tmp11.current = num5;
@@ -774,9 +774,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
           if (num5 !== current) {
             const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.MEDIA, scrollingDirection: LEFT, carouselPosition: num5, carouselSize: tmp15 };
             if (num5 > current) {
-              LEFT = tmp12(7744).HorizontalScrollingDirection.RIGHT;
+              LEFT = tmp12(7748).HorizontalScrollingDirection.RIGHT;
             } else {
-              LEFT = tmp12(7744).HorizontalScrollingDirection.LEFT;
+              LEFT = tmp12(7748).HorizontalScrollingDirection.LEFT;
             }
             tmp(obj);
             tmp11.current = num5;

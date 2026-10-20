@@ -1,15 +1,15 @@
-// Module ID: 11256
-// Function ID: 11257
+// Module ID: 11267
+// Function ID: 11268
 // Name: CallBarAction
-// Dependencies: [109, 19, 17, 10675, 21, 4942, 587, 4945, 558, 576, 11257, 11258, 5631, 6856, 5195, 2]
+// Dependencies: [109, 19, 17, 10686, 21, 4942, 587, 4945, 558, 576, 11268, 11269, 5631, 6859, 5195, 2]
 
-// Module 11256 (CallBarAction)
+// Module 11267 (CallBarAction)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Pressables from "Pressables" /* 6856 */;
-import ChannelCallStore from "ChannelCallStore" /* 10675 */;
-import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 11258 */;
+import Pressables from "Pressables" /* 6859 */;
+import ChannelCallStore from "ChannelCallStore" /* 10686 */;
+import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 11269 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -192,7 +192,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionButton
                                                 }
                                               }
                                               const obj3 = { accessibilityLabel, accessibilityRole: "button", accessibilityState, onPress: tmp15, disabled: false, style: tmp16, children: tmp41 };
-                                              const tmp47 = closure_10(onPress(6856).PressableOpacity, obj3);
+                                              const tmp47 = closure_10(onPress(6859).PressableOpacity, obj3);
                                               cResult[46] = accessibilityLabel;
                                               cResult[47] = accessibilityState;
                                               cResult[48] = tmp41;
@@ -223,9 +223,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionButton
                                 const obj5 = { style: items1 };
                                 items1 = [tmp7.badge, ];
                                 const size1 = { width: result1, height: result1, borderRadius: tmp11.badgeRadius, top: tmpResult.getBadgeTop(tmp11.badgeRadius, tmp11.buttonRadius, cutoutPositionInDegrees), left: tmpResult2.getBadgeLeft(tmp11.badgeRadius, tmp11.buttonRadius, cutoutPositionInDegrees) };
-                                tmpResult = onPress(11258);
+                                tmpResult = onPress(11269);
                                 items1[1] = size1;
-                                tmpResult2 = onPress(11258);
+                                tmpResult2 = onPress(11269);
                                 tmp37 = closure_10(View, obj5);
                               }
                               cResult[34] = tmp11.badgeRadius;

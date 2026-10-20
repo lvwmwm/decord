@@ -1,14 +1,14 @@
-// Module ID: 12099
-// Function ID: 12100
+// Module ID: 12114
+// Function ID: 12115
 // Name: CalendarPlusIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 12100, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 12115, 5630, 2]
 
-// Module 12099 (CalendarPlusIcon)
+// Module 12114 (CalendarPlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 12100 */;
+import AssetRegistry from "AssetRegistry" /* 12115 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

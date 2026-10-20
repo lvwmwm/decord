@@ -1,10 +1,10 @@
-// Module ID: 8710
-// Function ID: 8711
+// Module ID: 8722
+// Function ID: 8723
 // Name: portraitThumbnailHelpers
 // Dependencies: [2]
 // Exports: lerpVarWidthThumbnailScrollBounds
 
-// Module 8710 (portraitThumbnailHelpers)
+// Module 8722 (portraitThumbnailHelpers)
 import size from "module_2" /* 2 */;
 
 function lerpVarWidthThumbnailScrollBounds(thumbnailScrollPositions, arg1) {

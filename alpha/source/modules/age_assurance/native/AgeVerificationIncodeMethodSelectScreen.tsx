@@ -1,12 +1,12 @@
-// Module ID: 7839
-// Function ID: 7840
+// Module ID: 7843
+// Function ID: 7844
 // Name: AgeVerificationIncodeMethodSelectScreen
-// Dependencies: [5, 32, 19, 1207, 6604, 7828, 21, 4945, 7840, 7844, 7845, 5932, 6828, 7846, 5195, 1128, 3080, 6935, 6851, 2]
+// Dependencies: [5, 32, 19, 1207, 6607, 7832, 21, 4945, 7844, 7848, 7849, 5935, 6831, 7850, 5195, 1128, 3080, 6938, 6854, 2]
 // Exports: default
 
-// Module 7839 (AgeVerificationIncodeMethodSelectScreen)
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6604 */;
-import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7828 */;
+// Module 7843 (AgeVerificationIncodeMethodSelectScreen)
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6607 */;
+import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7832 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -153,23 +153,23 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
     return closure_0(...arguments);
   }, items);
   const obj = { children: null };
-  const ModalScreen = onMethodSelected(7844).ModalScreen;
-  const ModalContent = onMethodSelected(7845).ModalContent;
+  const ModalScreen = onMethodSelected(7848).ModalScreen;
+  const ModalContent = onMethodSelected(7849).ModalContent;
   const obj2 = { children: null };
   if (tmp2) {
-    let obj3 = { align: "center", justify: "center", spacing: 16, style: tmp5.loadingContainer, children: tmp6(tmp7(6828).ActivityIndicator, { size: "large" }) };
-    const Stack4 = tmp7(5932).Stack;
+    let obj3 = { align: "center", justify: "center", spacing: 16, style: tmp5.loadingContainer, children: tmp6(tmp7(6831).ActivityIndicator, { size: "large" }) };
+    const Stack4 = tmp7(5935).Stack;
     obj2.children = closure_9(Stack4, obj3);
     obj.children = closure_9(ModalContent, obj2);
     tmp11 = obj;
   } else {
     const obj4 = { align: "stretch", spacing: 24, style: tmp5.container, children: items3 };
-    const Stack = tmp7(5932).Stack;
+    const Stack = tmp7(5935).Stack;
     let obj5 = { align: "center", justify: "center", spacing: 16, children: items1 };
-    const Stack2 = tmp7(5932).Stack;
-    items1 = [tmp6(tmp7(7846).ShieldSpotIllustration, { height: 100, width: 177 }), ];
+    const Stack2 = tmp7(5935).Stack;
+    items1 = [tmp6(tmp7(7850).ShieldSpotIllustration, { height: 100, width: 177 }), ];
     const obj6 = { align: "center", justify: "center", spacing: 8, children: items2 };
-    const Stack3 = tmp7(5932).Stack;
+    const Stack3 = tmp7(5935).Stack;
     let obj7 = { accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp5.header, children: intl.string(trustedOrigin(3080).eZvwAe) };
     const Text = tmp7(5195).Text;
     intl = tmp7(1128).intl;
@@ -188,7 +188,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
     }
     items3[1] = tmp6Result;
     const obj10 = { hasIcons: false, children: items4 };
-    const TableRowGroup = tmp7(6935).TableRowGroup;
+    const TableRowGroup = tmp7(6938).TableRowGroup;
     const obj11 = {
       arrow: true,
       label: intl4.string(trustedOrigin(3080).rgXXcW),
@@ -197,7 +197,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
           closure_4(VerificationMethod.FACIAL_AGE_ESTIMATION);
         }
     };
-    const TableRow = tmp7(6851).TableRow;
+    const TableRow = tmp7(6854).TableRow;
     intl4 = tmp7(1128).intl;
     intl5 = tmp7(1128).intl;
     items4 = [tmp6(TableRow, obj11), ];
@@ -209,7 +209,7 @@ export default function AgeVerificationIncodeMethodSelectScreen(onMethodSelected
           closure_4(VerificationMethod.ID_VERIFICATION);
         }
     };
-    const TableRow2 = tmp7(6851).TableRow;
+    const TableRow2 = tmp7(6854).TableRow;
     intl6 = tmp7(1128).intl;
     intl7 = tmp7(1128).intl;
     items4[1] = closure_9(TableRow2, obj12);

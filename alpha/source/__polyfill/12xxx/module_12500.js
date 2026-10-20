@@ -1,177 +1,114 @@
 // Module ID: 12500
 // Function ID: 12501
-// Dependencies: [12413, 12415, 12462]
+// Dependencies: [12430, 12432]
+// Exports: applyAggregateErrorsToEvent
 
 // Module 12500
-import _mod12413 from "module_12413" /* 12413 */;
-import _mod12415 from "module_12415" /* 12415 */;
-import module_12462 from "module_12462" /* 12462 */;
+import _mod12430 from "module_12430" /* 12430 */;
+import _mod12432 from "module_12432" /* 12432 */;
 
-let set;
+const require = globalThis.__r;
+let _require, dependencyMap, length;
 
-function flattenIssue(path) {
-  let joined;
-  let json;
-  let json1;
-  const obj = { path: joined, keys: json, unionErrors: json1 };
-  const merged = Object.assign(path);
-  joined = undefined;
-  if ("path" in path) {
-    const _Array = Array;
-    if (Array.isArray(path.path)) {
-      path = path.path;
-      joined = path.join(".");
-    }
-  }
-  json = undefined;
-  if ("keys" in path) {
-    const _JSON = JSON;
-    json = JSON.stringify(path.keys);
-  }
-  json1 = undefined;
-  if ("unionErrors" in path) {
-    const _JSON2 = JSON;
-    json1 = JSON.stringify(path.unionErrors);
-  }
-  return obj;
-}
-function flattenIssuePath(arr) {
-  const mapped = arr.map((item) => {
-    let str = "<array>";
-    if (typeof item !== "number") {
-      str = item;
-    }
-    return str;
-  });
-  return mapped.join(".");
-}
-function formatIssueMessage(issues) {
-  set = new Set();
-  const tmp = issues.issues[Symbol.iterator]();
-  while (tmp !== undefined) {
-    let arr = flattenIssuePath(tmp2.path);
-    if (arr.length > 0) {
-      let addResult = set.add(tmp4);
-    }
-    continue;
-  }
-  const arr2 = Array.from(set);
-  if (0 === arr2.length) {
-    let str4 = "variable";
-    if (issues.issues.length > 0) {
-      const first = issues.issues[0];
-      str4 = "variable";
-      const tmp10 = undefined !== first && "expected" in first && typeof first.expected === "string";
-      if (tmp10) {
-        str4 = first.expected;
-      }
-    }
-    const _HermesInternal2 = HermesInternal;
-    return "Failed to validate " + str4;
+function aggregateExceptionsFromError(fn, arg1, arg2, errors, source, arg5, mechanism, exception_id) {
+  let closure_1;
+  let closure_2;
+  _require = fn;
+  dependencyMap = arg1;
+  aggregateExceptionsFromError = arg2;
+  let closure_3 = source;
+  if (arg5.length >= arg2 + 1) {
+    return arg5;
   } else {
-    const _HermesInternal = HermesInternal;
-    const obj2 = _mod12415;
-    return "Failed to validate keys: " + obj2.truncate(arr2.join(", "), 100);
+    let items = [];
+    HermesBuiltin.arraySpread(items, arg5, 0);
+    length = items;
+    let obj3 = require("module_12430");
+    const _Error = Error;
+    if (obj3.isInstanceOf(errors[source], Error)) {
+      mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
+      let obj = { exception_id };
+      const tmp2 = obj;
+      let merged = Object.assign(mechanism.mechanism);
+      const tmp4 = "AggregateError" === mechanism.type && { is_exception_group: true };
+      let tmp6 = tmp4;
+      let merged1 = Object.assign(tmp4);
+      mechanism.mechanism = obj;
+      const tmp8 = fn(arg1, errors[source]);
+      length = length.length;
+      tmp8.mechanism = tmp8.mechanism || { type: "generic", handled: true };
+      let obj2 = { type: "chained", source, exception_id: length, parent_id: exception_id };
+      let merged2 = Object.assign(tmp8.mechanism);
+      tmp8.mechanism = obj2;
+      const tmp12 = aggregateExceptionsFromError;
+      const items1 = [tmp8];
+      let tmp13 = errors[source];
+      HermesBuiltin.arraySpread(items1, length, 1);
+      length = aggregateExceptionsFromError(fn, arg1, arg2, tmp13, source, items1, tmp8, length);
+    }
+    const _Array = Array;
+    if (Array.isArray(errors.errors)) {
+      errors = errors.errors;
+      const item = errors.forEach((item, index) => {
+        const obj = _mod12430;
+        if (obj.isInstanceOf(item, Error)) {
+          mechanism.mechanism = mechanism.mechanism || { type: "generic", handled: true };
+          const obj2 = { exception_id };
+          const merged = Object.assign(tmp2.mechanism);
+          const tmp6 = "AggregateError" === mechanism.type && { is_exception_group: true };
+          const merged1 = Object.assign(tmp6);
+          mechanism.mechanism = obj2;
+          const tmp13 = fn(closure_1, item);
+          length = length.length;
+          const _HermesInternal = HermesInternal;
+          mechanism = tmp13.mechanism;
+          const combined = "errors[" + index + "]";
+          if (!mechanism) {
+            mechanism = { type: "generic", handled: true };
+          }
+          tmp13.mechanism = mechanism;
+          const obj3 = { type: "chained", source: combined, exception_id: length, parent_id: exception_id };
+          const merged2 = Object.assign(tmp13.mechanism);
+          tmp13.mechanism = obj3;
+          const items = [tmp13];
+          HermesBuiltin.arraySpread(items, length, 1);
+          length = aggregateExceptionsFromError(tmp11, tmp12, closure_2, item, source, items, tmp13, length);
+        }
+      });
+    }
+    return length;
   }
 }
-function applyZodErrorsToEvent(arg0, arg1, exception, originalException) {
-  let items;
-  let obj2;
-  let obj4;
-  let obj6;
-  let obj8;
-  function originalExceptionIsZodError(originalException) {
-    const obj = _mod12413;
-    let isErrorResult = obj.isError(originalException) && "ZodError" === originalException.name;
-    if (isErrorResult) {
-      const _Array = Array;
-      isErrorResult = Array.isArray(originalException.issues);
-    }
-    return isErrorResult;
-  }
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = false;
+
+export const applyAggregateErrorsToEvent = function applyAggregateErrorsToEvent(arg0, arg1, arg2, arg3, arg4, exception, originalException) {
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 250;
   }
   if (exception.exception) {
     if (exception.exception.values) {
-      const tmp2 = originalException;
-      if (tmp2) {
-        if (originalException.originalException) {
-          if (originalExceptionIsZodError(originalException.originalException)) {
-            if (0 !== originalException.originalException.issues.length) {
-              try {
-                let substr;
-                const issues = originalException.originalException.issues;
-                if (flag) {
-                  substr = issues;
-                } else {
-                  substr = issues.slice(0, arg0);
-                }
-                const mapped = substr.map(flattenIssue);
-                if (flag) {
-                  let _Array = Array;
-                  if (!Array.isArray(originalException.attachments)) {
-                    originalException.attachments = [];
-                  }
-                  const attachments = originalException.attachments;
-                  let obj = { filename: "zod_issues.json", data: JSON.stringify(obj2) };
-                  const _JSON = JSON;
-                  const push = attachments.push;
-                  obj2 = { issues: mapped };
-                  push(obj);
-                }
-                const obj3 = { exception: obj4, extra: obj6 };
-                const merged = Object.assign(exception);
-                obj4 = { values: items };
-                const merged1 = Object.assign(exception.exception);
-                const obj5 = { value: formatIssueMessage(originalException.originalException) };
-                const merged2 = Object.assign(exception.exception.values[0]);
-                items = [obj5];
-                const values = exception.exception.values;
-                HermesBuiltin.arraySpread(items, values.slice(1), 1);
-                obj6 = { "zoderror.issues": mapped.slice(0, arg0) };
-                const merged3 = Object.assign(exception.extra);
-                return obj3;
-              } catch (error) {
-                const obj7 = { extra: obj8 };
-                const merged4 = Object.assign(exception);
-                obj8 = { "zoderrors sentry integration parse error": obj9 };
-                const merged5 = Object.assign(exception.extra);
-                const _Error = Error;
-                let str = "unknown";
-                if (error instanceof Error) {
-                  const _HermesInternal = HermesInternal;
-                  str = "" + error.name + ": " + error.message + "\n" + error.stack;
-                }
-                return obj7;
+      const tmp = originalException;
+      if (tmp) {
+        let obj = num(12430);
+        const _Error = Error;
+        if (obj.isInstanceOf(originalException.originalException, Error)) {
+          let tmp5;
+          if (exception.exception.values.length > 0) {
+            tmp5 = exception.exception.values[exception.exception.values.length - 1];
+          }
+          if (tmp5) {
+            exception = exception.exception;
+            const arr = aggregateExceptionsFromError(arg0, arg1, arg4, originalException.originalException, arg3, exception.exception.values, tmp5, 0);
+            exception.values = arr.map((value) => {
+              if (value.value) {
+                const obj = _mod12432;
+                value.value = obj.truncate(value.value, num);
               }
-            }
+              return value;
+            });
           }
         }
       }
     }
   }
-  return exception;
-}
-
-export { applyZodErrorsToEvent };
-export { flattenIssue };
-export { flattenIssuePath };
-export { formatIssueMessage };
-export const zodErrorsIntegration = module_12462.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let num = 10;
-  if (undefined !== obj.limit) {
-    num = obj.limit;
-  }
-  return {
-    name: "ZodErrors",
-    processEvent(arg0, arg1) {
-      return applyZodErrorsToEvent(num, obj.saveZodIssuesAsAttachment, arg0, arg1);
-    }
-  };
-});
+};

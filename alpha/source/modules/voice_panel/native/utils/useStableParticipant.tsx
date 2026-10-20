@@ -1,16 +1,16 @@
-// Module ID: 18229
-// Function ID: 18230
+// Module ID: 18252
+// Function ID: 18253
 // Name: useStableParticipant
-// Dependencies: [6720, 502, 2014, 1392, 5593, 568, 558, 576, 5944, 6730, 10698, 504, 2]
+// Dependencies: [6723, 502, 2014, 1392, 5593, 568, 558, 576, 5947, 6733, 10709, 504, 2]
 // Exports: isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 18229 (useStableParticipant)
+// Module 18252 (useStableParticipant)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import CallConstants from "CallConstants" /* 5593 */;
-import NicknameUtils from "NicknameUtils" /* 5944 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 6730 */;
-import participantHasVideoDefault from "participantHasVideo" /* 10698 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6720 */;
+import NicknameUtils from "NicknameUtils" /* 5947 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 6733 */;
+import participantHasVideoDefault from "participantHasVideo" /* 10709 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6723 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -80,7 +80,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStableP
         const user = UserStore.getUser(tmp);
         if (null != user) {
           const id3 = user.id;
-          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Set", ringing: null, hasVideo: 0.049, isSelf: id3 === id1 };
+          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Set", ringing: null, hasVideo: "LottieFiles AE 3.0.2", isSelf: id3 === id1 };
           id1 = AuthenticationStore.getId();
           obj5 = NicknameUtils;
           obj6 = useAvatarDecoration;
@@ -157,7 +157,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStableP
         const user = UserStore.getUser(tmp);
         if (null != user) {
           const id3 = user.id;
-          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Set", ringing: null, hasVideo: 0.049, isSelf: id3 === id1 };
+          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Set", ringing: null, hasVideo: "LottieFiles AE 3.0.2", isSelf: id3 === id1 };
           id1 = AuthenticationStore.getId();
           obj5 = NicknameUtils;
           obj6 = useAvatarDecoration;

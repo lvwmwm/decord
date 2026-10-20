@@ -1,9 +1,9 @@
-// Module ID: 17626
-// Function ID: 17627
+// Module ID: 17645
+// Function ID: 17646
 // Name: ICYMIConstants
 // Dependencies: [1104, 2]
 
-// Module 17626 (ICYMIConstants)
+// Module 17645 (ICYMIConstants)
 import DurationsDefault from "Durations" /* 1104 */;
 import size from "module_2" /* 2 */;
 

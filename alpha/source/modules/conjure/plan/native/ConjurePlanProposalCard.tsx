@@ -1,24 +1,24 @@
-// Module ID: 12283
-// Function ID: 12284
+// Module ID: 12302
+// Function ID: 12303
 // Name: ConjurePlanProposalCard
-// Dependencies: [19, 17, 6721, 21, 4945, 587, 558, 576, 12209, 5631, 5667, 12224, 12284, 12286, 12289, 12292, 504, 12290, 1128, 12293, 12294, 12295, 12297, 3820, 12282, 5195, 12301, 12302, 5205, 11683, 2]
+// Dependencies: [19, 17, 6724, 21, 4945, 587, 558, 576, 12224, 5631, 5667, 12243, 12303, 12305, 12308, 12311, 504, 12309, 1128, 12312, 12313, 12314, 12316, 3820, 12301, 5195, 12320, 12321, 5205, 11696, 2]
 
-// Module 12283 (ConjurePlanProposalCard)
+// Module 12302 (ConjurePlanProposalCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1128 */;
 import FastImageDefault from "FastImage" /* 5631 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5667 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12209 */;
-import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12224 */;
-import conjurePlanBot from "conjurePlanBot" /* 12290 */;
-import conjurePlanDesign from "conjurePlanDesign" /* 12293 */;
-import ConjurePlanWidgetDefault from "ConjurePlanWidget" /* 12294 */;
-import ConjurePlanAutomodExamplesDefault from "ConjurePlanAutomodExamples" /* 12295 */;
-import ConjurePlanBotPreviewDefault from "ConjurePlanBotPreview" /* 12297 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12224 */;
+import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12243 */;
+import conjurePlanBot from "conjurePlanBot" /* 12309 */;
+import conjurePlanDesign from "conjurePlanDesign" /* 12312 */;
+import ConjurePlanWidgetDefault from "ConjurePlanWidget" /* 12313 */;
+import ConjurePlanAutomodExamplesDefault from "ConjurePlanAutomodExamples" /* 12314 */;
+import ConjurePlanBotPreviewDefault from "ConjurePlanBotPreview" /* 12316 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6721 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6724 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

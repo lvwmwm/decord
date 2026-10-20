@@ -1,9 +1,9 @@
-// Module ID: 8556
-// Function ID: 8557
+// Module ID: 8562
+// Function ID: 8563
 // Name: ContentInventoryEntryType
 // Dependencies: [2]
 
-// Module 8556 (ContentInventoryEntryType)
+// Module 8562 (ContentInventoryEntryType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryEntryType.tsx");

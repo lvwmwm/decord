@@ -1,11 +1,11 @@
-// Module ID: 12173
-// Function ID: 12174
+// Module ID: 12188
+// Function ID: 12189
 // Name: useConjureTipContext
-// Dependencies: [1392, 558, 576, 11713, 504, 12174, 12175, 12170, 12176, 2]
+// Dependencies: [1392, 558, 576, 11727, 504, 12189, 12190, 12185, 12191, 2]
 
-// Module 12173 (useConjureTipContext)
-import conjureTipImpressions from "conjureTipImpressions" /* 12170 */;
-import conjureTipDismissals from "conjureTipDismissals" /* 12176 */;
+// Module 12188 (useConjureTipContext)
+import conjureTipImpressions from "conjureTipImpressions" /* 12185 */;
+import conjureTipDismissals from "conjureTipDismissals" /* 12191 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,8 @@ let _require, currentUser, importDefault;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureTipContext(arg0, arr, arg2, onAskForIdeas, arg4) {
   let closure_0;
   let stateFromStores;
-  let tmp13;
+  let tmp10;
+  let tmp14;
   let tmp5;
   let tmp6;
   let tmp9;
@@ -24,7 +25,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureTi
   importDefault = arr;
   let tmp = _require;
   let obj = require("react");
-  const cResult = obj.c(38);
+  const cResult = obj.c(42);
   const tmp4 = require("useConjurePublishAction")(arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
@@ -53,113 +54,164 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureTi
       entryActivityAtResult = tmpResult5.entryActivityAt(atResult);
     }
     cResult[2] = arr;
-    cResult[3] = entryActivityAtResult;
-    tmp9 = entryActivityAtResult;
+    cResult[3] = atResult;
+    cResult[4] = entryActivityAtResult;
+    tmp10 = entryActivityAtResult;
+    tmp9 = atResult;
   } else {
     tmp9 = cResult[3];
+    tmp10 = cResult[4];
   }
   const tmpResult6 = tmp(stateFromStores[6]);
-  const conjureTipClock = tmpResult6.useConjureTipClock(tmp9, arg4);
-  if (cResult[4] !== arr) {
+  const conjureTipClock = tmpResult6.useConjureTipClock(tmp10, arg4);
+  if (cResult[5] !== arr) {
     const tmpResult7 = tmp(stateFromStores[5]);
     const newestSettledTurnResult = tmpResult7.newestSettledTurn(arr);
-    let tmp16 = null;
+    let tmp17 = null;
     if (null != newestSettledTurnResult) {
-      tmp16 = null;
+      tmp17 = null;
       const tmpResult8 = tmp(stateFromStores[5]);
       if (!tmpResult8.hasOpenAsk(newestSettledTurnResult)) {
-        tmp16 = newestSettledTurnResult;
+        tmp17 = newestSettledTurnResult;
       }
     }
-    cResult[4] = arr;
-    cResult[5] = tmp16;
-    tmp13 = tmp16;
+    cResult[5] = arr;
+    cResult[6] = tmp17;
+    tmp14 = tmp17;
   } else {
-    tmp13 = cResult[5];
+    tmp14 = cResult[6];
   }
-  if (cResult[6] === arg2) {
-    if (cResult[7] === tmp9) {
-      if (cResult[8] === arr) {
-        if (cResult[9] === conjureTipClock) {
-          if (cResult[10] === arg0) {
-            if (cResult[11] === tmp4) {
-              if (cResult[12] === tmp13) {
-                let tmp17;
-                let tmp18;
-                let tmp19;
-                let tmp20;
-                let tmp21;
-                let tmp22;
-                let tmp23;
-                if (cResult[13] === stateFromStores) {
-                  tmp17 = cResult[14];
-                  tmp18 = cResult[15];
-                  tmp19 = cResult[16];
-                  tmp20 = cResult[17];
-                  tmp21 = cResult[18];
-                  tmp22 = cResult[19];
-                  tmp23 = cResult[20];
-                }
-                if (cResult[21] === arr) {
-                  if (cResult[22] === arg0) {
-                    let tmp28;
-                    if (cResult[23] === stateFromStores) {
-                      tmp28 = cResult[24];
-                    }
-                    if (cResult[25] !== arg0) {
-                      class P {
-                        constructor(dismissal) {
-                          const obj = conjureTipDismissals;
-                          return obj.isConjureTipDismissed(dismissal, closure_0);
+  if (cResult[7] === arg2) {
+    if (cResult[8] === tmp10) {
+      if (cResult[9] === arr) {
+        let type;
+        const tmp18 = cResult[10];
+        if (tmp9 != null) {
+          const projectEvent = tmp9.projectEvent;
+          if (projectEvent != null) {
+            type = projectEvent.type;
+          }
+        }
+        if (tmp18 === type) {
+          if (cResult[11] === conjureTipClock) {
+            if (cResult[12] === arg0) {
+              if (cResult[13] === tmp4) {
+                if (cResult[14] === tmp14) {
+                  let tmp21;
+                  let tmp22;
+                  let tmp24;
+                  let tmp25;
+                  let tmp26;
+                  let tmp27;
+                  let tmp28;
+                  if (cResult[15] === stateFromStores) {
+                    tmp21 = cResult[16];
+                    tmp22 = cResult[17];
+                    class P {
+                      constructor(id) {
+                        const obj = conjureTipImpressions;
+                        const conjureTipShownAtResult = obj.conjureTipShownAt(closure_0, id);
+                        let result = null;
+                        if (null != conjureTipShownAtResult) {
+                          const tmpResult = conjureTipImpressions;
+                          result = tmpResult.countOwnMessagesSince(arr, conjureTipShownAtResult, stateFromStores);
                         }
-                      }
-                      cResult[25] = arg0;
-                      cResult[26] = P;
-                    } else {
-                      class P {
-                        constructor(dismissal) {
-                          const obj = conjureTipDismissals;
-                          return obj.isConjureTipDismissed(dismissal, closure_0);
-                        }
+                        return result;
                       }
                     }
-                    if (cResult[27] === onAskForIdeas) {
-                      class P {
-                        constructor(dismissal) {
-                          const obj = conjureTipDismissals;
-                          return obj.isConjureTipDismissed(dismissal, closure_0);
-                        }
-                      }
-                    }
-                    const obj2 = { projectId: tmp18, turn: tmp19, publish: tmp20, draftHasText: tmp21, idleMs: tmp22, hasPublished: tmp23, publishedSinceLastMessage: tmp17, messagesSinceShown: tmp28, isDismissed: tmp29, onAskForIdeas };
-                    cResult[27] = onAskForIdeas;
-                    cResult[28] = tmp17;
-                    cResult[29] = tmp28;
-                    cResult[30] = tmp29;
-                    cResult[31] = tmp18;
-                    cResult[32] = tmp19;
-                    cResult[33] = tmp20;
-                    cResult[34] = tmp21;
-                    cResult[35] = tmp22;
-                    cResult[36] = tmp23;
-                    cResult[37] = obj2;
+                    tmp24 = cResult[19];
+                    tmp25 = cResult[20];
+                    tmp26 = cResult[21];
+                    tmp27 = cResult[22];
+                    tmp28 = cResult[23];
                   }
-                }
-                const fn2 = function y(id) {
-                  const obj = conjureTipImpressions;
-                  const conjureTipShownAtResult = obj.conjureTipShownAt(closure_0, id);
-                  let result = null;
-                  if (null != conjureTipShownAtResult) {
-                    const tmpResult = conjureTipImpressions;
-                    result = tmpResult.countOwnMessagesSince(arr, conjureTipShownAtResult, stateFromStores);
+                  if (cResult[24] === arr) {
+                    if (cResult[25] === arg0) {
+                      let tmp36;
+                      if (cResult[26] === stateFromStores) {
+                        tmp36 = cResult[27];
+                      }
+                      if (cResult[28] !== arg0) {
+                        class E {
+                          constructor(dismissal) {
+                            const obj = conjureTipDismissals;
+                            return obj.isConjureTipDismissed(dismissal, closure_0);
+                          }
+                        }
+                        class P {
+                          constructor(id) {
+                            const obj = conjureTipImpressions;
+                            const conjureTipShownAtResult = obj.conjureTipShownAt(closure_0, id);
+                            let result = null;
+                            if (null != conjureTipShownAtResult) {
+                              const tmpResult = conjureTipImpressions;
+                              result = tmpResult.countOwnMessagesSince(arr, conjureTipShownAtResult, stateFromStores);
+                            }
+                            return result;
+                          }
+                        }
+                        cResult[29] = E;
+                      } else {
+                        class E {
+                          constructor(dismissal) {
+                            const obj = conjureTipDismissals;
+                            return obj.isConjureTipDismissed(dismissal, closure_0);
+                          }
+                        }
+                      }
+                      class P {
+                        constructor(id) {
+                          const obj = conjureTipImpressions;
+                          const conjureTipShownAtResult = obj.conjureTipShownAt(closure_0, id);
+                          let result = null;
+                          if (null != conjureTipShownAtResult) {
+                            const tmpResult = conjureTipImpressions;
+                            result = tmpResult.countOwnMessagesSince(arr, conjureTipShownAtResult, stateFromStores);
+                          }
+                          return result;
+                        }
+                      }
+                      if (cResult[30] === onAskForIdeas) {
+                        class E {
+                          constructor(dismissal) {
+                            const obj = conjureTipDismissals;
+                            return obj.isConjureTipDismissed(dismissal, closure_0);
+                          }
+                        }
+                      }
+                      const obj2 = { projectId: tmp23, turn: tmp24, publish: tmp25, draftHasText: tmp26, idleMs: tmp27, hasPublished: tmp28, justRemixed: tmp21, publishedSinceLastMessage: tmp22, messagesSinceShown: tmp36, isDismissed: tmp37, onAskForIdeas };
+                      cResult[30] = onAskForIdeas;
+                      cResult[31] = tmp21;
+                      cResult[32] = tmp22;
+                      cResult[33] = tmp36;
+                      cResult[34] = tmp37;
+                      cResult[35] = tmp23;
+                      cResult[36] = tmp24;
+                      cResult[37] = tmp25;
+                      cResult[38] = tmp26;
+                      cResult[39] = tmp27;
+                      cResult[40] = tmp28;
+                      cResult[41] = obj2;
+                    }
                   }
-                  return result;
-                };
-                cResult[21] = arr;
-                cResult[22] = arg0;
-                cResult[23] = stateFromStores;
-                cResult[24] = fn2;
-                tmp28 = fn2;
+                  class P {
+                    constructor(id) {
+                      const obj = conjureTipImpressions;
+                      const conjureTipShownAtResult = obj.conjureTipShownAt(closure_0, id);
+                      let result = null;
+                      if (null != conjureTipShownAtResult) {
+                        const tmpResult = conjureTipImpressions;
+                        result = tmpResult.countOwnMessagesSince(arr, conjureTipShownAtResult, stateFromStores);
+                      }
+                      return result;
+                    }
+                  }
+                  cResult[24] = arr;
+                  cResult[25] = arg0;
+                  cResult[26] = stateFromStores;
+                  cResult[27] = P;
+                  tmp36 = P;
+                }
               }
             }
           }
@@ -170,77 +222,115 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureTi
   const diff = arr.length - 1;
   let created_at = null;
   if (0 <= diff) {
-    class P {
+    class E {
       constructor(dismissal) {
         const obj = conjureTipDismissals;
         return obj.isConjureTipDismissed(dismissal, closure_0);
       }
     }
-    while ("publish_notice" !== arr[diff].kind) {
-      class P {
-        constructor(dismissal) {
-          const obj = conjureTipDismissals;
-          return obj.isConjureTipDismissed(dismissal, closure_0);
+    class P {
+      constructor(id) {
+        const obj = conjureTipImpressions;
+        const conjureTipShownAtResult = obj.conjureTipShownAt(closure_0, id);
+        let result = null;
+        if (null != conjureTipShownAtResult) {
+          const tmpResult = conjureTipImpressions;
+          result = tmpResult.countOwnMessagesSince(arr, conjureTipShownAtResult, stateFromStores);
         }
-      }
-      created_at = null;
-      if (0 <= diff) {
-        class P {
-          constructor(dismissal) {
-            const obj = conjureTipDismissals;
-            return obj.isConjureTipDismissed(dismissal, closure_0);
-          }
-        }
+        return result;
       }
     }
     created_at = arr[diff].created_at;
   }
-  let num8 = 0;
-  if (null != tmp9) {
-    class P {
+  let num9 = 0;
+  if (null != tmp10) {
+    class E {
       constructor(dismissal) {
         const obj = conjureTipDismissals;
         return obj.isConjureTipDismissed(dismissal, closure_0);
       }
     }
-    num8 = Math.max(0, conjureTipClock - tmp9);
+    num9 = Math.max(0, conjureTipClock - tmp10);
   }
-  let tmp27 = null != created_at;
-  if (tmp27) {
-    class P {
+  if (tmp9 != null) {
+    class E {
       constructor(dismissal) {
         const obj = conjureTipDismissals;
         return obj.isConjureTipDismissed(dismissal, closure_0);
       }
     }
-    tmp27 = 0 === obj7.countOwnMessagesSince(arr, created_at, stateFromStores);
+    class P {
+      constructor(id) {
+        const obj = conjureTipImpressions;
+        const conjureTipShownAtResult = obj.conjureTipShownAt(closure_0, id);
+        let result = null;
+        if (null != conjureTipShownAtResult) {
+          const tmpResult = conjureTipImpressions;
+          result = tmpResult.countOwnMessagesSince(arr, conjureTipShownAtResult, stateFromStores);
+        }
+        return result;
+      }
+    }
   }
-  cResult[6] = arg2;
-  cResult[7] = tmp9;
-  cResult[8] = arr;
-  cResult[9] = conjureTipClock;
-  cResult[10] = arg0;
-  cResult[11] = tmp4;
-  cResult[12] = tmp13;
-  cResult[13] = stateFromStores;
-  cResult[14] = tmp27;
-  cResult[15] = arg0;
-  cResult[16] = tmp13;
-  cResult[17] = tmp4;
-  cResult[18] = arg2;
-  cResult[19] = num8;
-  cResult[20] = null != created_at;
-  tmp17 = tmp27;
-  tmp23 = tmp26;
-  tmp22 = num8;
-  tmp21 = arg2;
-  tmp20 = tmp4;
-  tmp19 = tmp13;
-  tmp18 = arg0;
+  let tmp33 = null != created_at;
+  if (tmp33) {
+    class E {
+      constructor(dismissal) {
+        const obj = conjureTipDismissals;
+        return obj.isConjureTipDismissed(dismissal, closure_0);
+      }
+    }
+    tmp33 = 0 === obj7.countOwnMessagesSince(arr, created_at, stateFromStores);
+  }
+  cResult[7] = arg2;
+  cResult[8] = tmp10;
+  cResult[9] = arr;
+  if (tmp9 != null) {
+    class E {
+      constructor(dismissal) {
+        const obj = conjureTipDismissals;
+        return obj.isConjureTipDismissed(dismissal, closure_0);
+      }
+    }
+    class P {
+      constructor(id) {
+        const obj = conjureTipImpressions;
+        const conjureTipShownAtResult = obj.conjureTipShownAt(closure_0, id);
+        let result = null;
+        if (null != conjureTipShownAtResult) {
+          const tmpResult = conjureTipImpressions;
+          result = tmpResult.countOwnMessagesSince(arr, conjureTipShownAtResult, stateFromStores);
+        }
+        return result;
+      }
+    }
+  }
+  cResult[10] = undefined;
+  cResult[11] = conjureTipClock;
+  cResult[12] = arg0;
+  cResult[13] = tmp4;
+  cResult[14] = tmp14;
+  cResult[15] = stateFromStores;
+  cResult[16] = "remixed" === undefined;
+  cResult[17] = tmp33;
+  cResult[18] = arg0;
+  cResult[19] = tmp14;
+  cResult[20] = tmp4;
+  cResult[21] = arg2;
+  cResult[22] = num9;
+  cResult[23] = null != created_at;
+  tmp28 = tmp31;
+  tmp27 = num9;
+  tmp26 = arg2;
+  tmp25 = tmp4;
+  tmp24 = tmp14;
+  tmp22 = tmp33;
+  tmp21 = tmp35;
 }) : (function useConjureTipContext(projectId, arr, draftHasText, onAskForIdeas, arg4) {
   let num;
   let stateFromStores;
-  let tmp14;
+  let tmp15;
+  let type;
   _require = projectId;
   importDefault = arr;
   let tmp = stateFromStores;
@@ -289,7 +379,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureTi
     draftHasText,
     idleMs: num,
     hasPublished: null != created_at,
-    publishedSinceLastMessage: tmp14,
+    justRemixed: "remixed" === type,
+    publishedSinceLastMessage: tmp15,
     messagesSinceShown(id) {
       const obj = conjureTipImpressions;
       const conjureTipShownAtResult = obj.conjureTipShownAt(projectId, id);
@@ -311,10 +402,17 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureTi
     const _Math = Math;
     num = Math.max(0, conjureTipClock - entryActivityAtResult);
   }
-  tmp14 = null != created_at;
-  if (tmp14) {
+  type = undefined;
+  if (atResult != null) {
+    const projectEvent = atResult.projectEvent;
+    if (projectEvent != null) {
+      type = projectEvent.type;
+    }
+  }
+  tmp15 = null != created_at;
+  if (tmp15) {
     const tmp3Result8 = require("conjureTipImpressions");
-    tmp14 = 0 === tmp3Result8.countOwnMessagesSince(arr, created_at, stateFromStores);
+    tmp15 = 0 === tmp3Result8.countOwnMessagesSince(arr, created_at, stateFromStores);
   }
   return obj2;
 });

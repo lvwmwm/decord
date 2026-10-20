@@ -1,15 +1,15 @@
-// Module ID: 16612
-// Function ID: 16613
+// Module ID: 16631
+// Function ID: 16632
 // Name: UserSettingsCommunityNotifications
-// Dependencies: [19, 11130, 21, 4945, 558, 576, 504, 11, 8871, 5932, 6935, 7241, 1128, 4781, 2]
+// Dependencies: [19, 11141, 21, 4945, 558, 576, 504, 11, 8883, 5935, 6938, 7244, 1128, 4781, 2]
 
-// Module 16612 (UserSettingsCommunityNotifications)
+// Module 16631 (UserSettingsCommunityNotifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl3 from "intl" /* 1128 */;
-import TableRowGroup2 from "TableRowGroup" /* 6935 */;
-import TableSwitchRow3 from "TableSwitchRow" /* 7241 */;
+import TableRowGroup2 from "TableRowGroup" /* 6938 */;
+import TableSwitchRow3 from "TableSwitchRow" /* 7244 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11130 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11141 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -103,8 +103,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   let tmp20;
   if (0 !== keys.length) {
     let tmp21;
-    const Form = tmp(8871).Form;
-    const Stack = tmp(5932).Stack;
+    const Form = tmp(8883).Form;
+    const Stack = tmp(5935).Stack;
     const container = tmp4.container;
     if (cResult[10] !== stateFromStores) {
       const fn2 = function p(arg0) {
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   let tmp5 = null;
   if (0 !== keys.length) {
     let obj3 = { children: closure_4(Stack, obj4) };
-    const Form = tmp2(8871).Form;
+    const Form = tmp2(8883).Form;
     obj4 = {
       spacing: 24,
       style: tmp.container,
@@ -223,7 +223,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
           return hasOwnProperty(TableRowGroup, obj, item);
         })
     };
-    Stack = tmp2(5932).Stack;
+    Stack = tmp2(5935).Stack;
     tmp5 = closure_4(Form, obj3);
   }
   return tmp5;

@@ -1,9 +1,9 @@
-// Module ID: 6771
-// Function ID: 6772
+// Module ID: 6774
+// Function ID: 6775
 // Name: FrecencyStore
 // Dependencies: [1246, 4800, 4822, 4851, 4971, 1087, 1097, 5692, 12, 504, 584, 2]
 
-// Module 6771 (FrecencyStore)
+// Module 6774 (FrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

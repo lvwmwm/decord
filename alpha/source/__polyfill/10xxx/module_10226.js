@@ -1,14 +1,12 @@
 // Module ID: 10226
 // Function ID: 10227
-// Dependencies: [41, 42, 93, 95, 98, 10227, 10136, 10140]
+// Dependencies: [41, 42, 93, 95, 98, 10158]
 
 // Module 10226
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10136 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10140 */;
-import _mod10227 from "module_10227" /* 10227 */;
+import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10158 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -27,14 +25,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class NLTimeUnitWithinFormatParser {
+class PTTimeExpressionParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, NLTimeUnitWithinFormatParser);
-    const obj = _getPrototypeOf(NLTimeUnitWithinFormatParser);
+    _classCallCheck(this, PTTimeExpressionParser);
+    const obj = _getPrototypeOf(PTTimeExpressionParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -44,24 +42,21 @@ class NLTimeUnitWithinFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(NLTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(PTTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    const regExp = new RegExp("(?:binnen|in|binnen de|voor)\\s*(" + _mod10227.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-    return regExp;
+  key: "primaryPrefix",
+  value: function primaryPrefix() {
+    return "(?:(?:ao?|\u00E0s?|das|da|de|do)\\s*)?";
   }
 };
 const items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod10227.parseDuration(arg1[1]);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+    key: "followingPhase",
+    value: function followingPhase() {
+      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|a(?:o)?|\\?)\\s*";
     }
   }
 ];
 
-export default _createClass(NLTimeUnitWithinFormatParser, items);
+export default _createClass(PTTimeExpressionParser, items);

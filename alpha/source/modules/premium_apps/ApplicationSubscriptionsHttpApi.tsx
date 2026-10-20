@@ -1,13 +1,13 @@
-// Module ID: 11280
-// Function ID: 11281
+// Module ID: 11291
+// Function ID: 11292
 // Name: ApplicationSubscriptionsHttpApi
-// Dependencies: [5, 1087, 1297, 584, 6329, 2]
+// Dependencies: [5, 1087, 1297, 584, 6332, 2]
 // Exports: fetchApplication, fetchEligibleApplicationSubscriptionGuilds, getApplicationSubscriptionGroupListingsForApplication, getEntitlementsForGuild, getSubscriptionGroupForSubscriptionPlan
 
-// Module 11280 (ApplicationSubscriptionsHttpApi)
+// Module 11291 (ApplicationSubscriptionsHttpApi)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import APIErrorDefault from "APIError" /* 6329 */;
+import APIErrorDefault from "APIError" /* 6332 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

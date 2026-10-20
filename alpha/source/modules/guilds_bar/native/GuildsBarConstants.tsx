@@ -1,10 +1,10 @@
-// Module ID: 17458
-// Function ID: 17459
+// Module ID: 17477
+// Function ID: 17478
 // Name: GuildsBarConstants
 // Dependencies: [558, 5213, 587, 2]
 // Exports: useGuildWrapperSize
 
-// Module 17458 (GuildsBarConstants)
+// Module 17477 (GuildsBarConstants)
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 5213 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

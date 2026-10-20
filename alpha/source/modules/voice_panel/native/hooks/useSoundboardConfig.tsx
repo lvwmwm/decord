@@ -1,11 +1,11 @@
-// Module ID: 18358
-// Function ID: 18359
+// Module ID: 18380
+// Function ID: 18381
 // Name: useSoundboardConfig
-// Dependencies: [19, 4800, 2014, 558, 576, 18202, 504, 18236, 7429, 1128, 2]
+// Dependencies: [19, 4800, 2014, 558, 576, 18225, 504, 18259, 7432, 1128, 2]
 
-// Module 18358 (useSoundboardConfig)
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18202 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 18236 */;
+// Module 18380 (useSoundboardConfig)
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 18225 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 18259 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 let tmp4;
-const canChannelUseSoundboardDefault = tmp4(7429);
+const canChannelUseSoundboardDefault = tmp4(7432);
 const SoundboardButtonLocation = { VOICE_CONTROLS: "call control drawer", VOICE_PANEL_CONTROLS: "voice panel controls" };
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundboardConfig(arg0, analyticsSource) {
   let closure_0;
@@ -160,7 +160,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundboar
   let closure_0;
   let deaf;
   let stringResult;
-  const f134835 = () => {
+  const f134989 = () => {
     const tmp = canChannelUseSoundboardDefault;
     return tmp(ChannelStore.getChannel(closure_0));
   };
@@ -190,9 +190,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSoundboar
       const result = obj.showSoundboardSoundPickerActionSheet(obj2);
     }
   }, items1);
-  let obj2 = { visible: tmp2, handlePress: callback, disabled: stateFromStores || !react.useMemo(f134835, items2), disabledAccessibilityHint: stringResult };
+  let obj2 = { visible: tmp2, handlePress: callback, disabled: stateFromStores || !react.useMemo(f134989, items2), disabledAccessibilityHint: stringResult };
   stringResult = undefined;
-  stateFromStores || !react.useMemo(f134835, items2);
+  stateFromStores || !react.useMemo(f134989, items2);
   if (stateFromStores) {
     const intl = tmp3(1128).intl;
     stringResult = intl.string(tmp3(1128).t.X1lQli);

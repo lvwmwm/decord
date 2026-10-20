@@ -1,9 +1,9 @@
-// Module ID: 12790
-// Function ID: 12791
+// Module ID: 12807
+// Function ID: 12808
 // Name: CheckpointServersStatsScreen
-// Dependencies: [17, 12762, 5970, 21, 4945, 587, 558, 576, 504, 9560, 1128, 3078, 12780, 3046, 12782, 12791, 5195, 11513, 8487, 6831, 2]
+// Dependencies: [17, 12779, 5973, 21, 4945, 587, 558, 576, 504, 9573, 1128, 3078, 12797, 3046, 12799, 12808, 5195, 11524, 8491, 6834, 2]
 
-// Module 12790 (CheckpointServersStatsScreen)
+// Module 12807 (CheckpointServersStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
@@ -11,14 +11,14 @@ import nativeDefault from "native" /* 587 */;
 import _modDef3046 from "module_3046" /* 3046 */;
 import _modDef3078 from "module_3078" /* 3078 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import GuildIcon from "GuildIcon" /* 6831 */;
-import ChatIcon from "ChatIcon" /* 8487 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 11513 */;
-import CheckpointTextDefault from "CheckpointText" /* 12780 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12782 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 12791 */;
-import CheckpointStore from "CheckpointStore" /* 12762 */;
-import CheckpointConstants from "CheckpointConstants" /* 5970 */;
+import GuildIcon from "GuildIcon" /* 6834 */;
+import ChatIcon from "ChatIcon" /* 8491 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 11524 */;
+import CheckpointTextDefault from "CheckpointText" /* 12797 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12799 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 12808 */;
+import CheckpointStore from "CheckpointStore" /* 12779 */;
+import CheckpointConstants from "CheckpointConstants" /* 5973 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -43,7 +43,7 @@ let size;
 let size1;
 let tmp;
 const intl4 = tmp(1128);
-const ServerIcon = tmp(9560);
+const ServerIcon = tmp(9573);
 const View = react_native.View;
 const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
 const CHECKPOINT_WHITE = CheckpointConstants.CHECKPOINT_WHITE;

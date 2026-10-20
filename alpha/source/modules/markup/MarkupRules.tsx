@@ -1,28 +1,28 @@
-// Module ID: 5937
-// Function ID: 5938
+// Module ID: 5940
+// Function ID: 5941
 // Name: MarkupRules
-// Dependencies: [32, 729, 4800, 4854, 4822, 1392, 1087, 5938, 5939, 5940, 1128, 5943, 4857, 5944, 4994, 5945, 1951, 5946, 5947, 5958, 4894, 5960, 8444, 14876, 8418, 8419, 5936, 8446, 12, 8440, 2]
+// Dependencies: [32, 729, 4800, 4854, 4822, 1392, 1087, 5941, 5942, 5943, 1128, 5946, 4857, 5947, 4994, 5948, 1951, 5949, 5950, 5961, 4894, 5963, 8448, 14894, 8422, 8423, 5939, 8450, 12, 8444, 2]
 // Exports: hydrateCommandMention
 
-// Module 5937 (MarkupRules)
+// Module 5940 (MarkupRules)
 import intl2 from "intl" /* 1128 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4894 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5938 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5939 */;
-import MarkupLinkRule from "MarkupLinkRule" /* 5940 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5943 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5944 */;
-import StaticRouteRendering from "StaticRouteRendering" /* 5945 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5946 */;
-import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5947 */;
-import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5958 */;
-import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5960 */;
-import MarkupListRuleDefault from "MarkupListRule" /* 8418 */;
-import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 8419 */;
-import HighlightJsAnsiLanguage from "HighlightJsAnsiLanguage" /* 8440 */;
-import TimestampUtils from "TimestampUtils" /* 8444 */;
-import PlatformMarkupRulesDefault from "PlatformMarkupRules" /* 8446 */;
-import MarkupHeadingRuleDefault from "MarkupHeadingRule" /* 14876 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5941 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5942 */;
+import MarkupLinkRule from "MarkupLinkRule" /* 5943 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 5946 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5947 */;
+import StaticRouteRendering from "StaticRouteRendering" /* 5948 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5949 */;
+import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5950 */;
+import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5961 */;
+import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5963 */;
+import MarkupListRuleDefault from "MarkupListRule" /* 8422 */;
+import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 8423 */;
+import HighlightJsAnsiLanguage from "HighlightJsAnsiLanguage" /* 8444 */;
+import TimestampUtils from "TimestampUtils" /* 8448 */;
+import PlatformMarkupRulesDefault from "PlatformMarkupRules" /* 8450 */;
+import MarkupHeadingRuleDefault from "MarkupHeadingRule" /* 14894 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 729 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
@@ -31,7 +31,7 @@ import GuildStore from "GuildStore" /* 4822 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import module_1951_mod from "module_1951" /* 1951 */;
-import combineMarkupRules_mod from "combineMarkupRules" /* 5936 */;
+import combineMarkupRules_mod from "combineMarkupRules" /* 5939 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -145,7 +145,7 @@ const parse6 = function parse(arg0, arg1, returnMentionIds) {
     const items = [];
     const arr = _toArray(arg0[1].split(" "));
     HermesBuiltin.arraySpread(items, arr.slice(1), 0);
-    const mapped = items.map(f94615);
+    const mapped = items.map(f94716);
     const _HermesInternal = HermesInternal;
     obj2 = { type: "commandMention", channelId: returnMentionIds.channelId, commandId: arg0[2], commandName: arg0[1], commandKey: "" + arg0[2] + mapped.join(""), content: items1 };
     const _HermesInternal2 = HermesInternal;
@@ -245,7 +245,7 @@ const parse14 = function parse(arg0, arg1, guildId) {
   const tmp = _slicedToArray(arg0, 3);
   return hydrateStaticRouteLink(tmp[1], tmp[2], guildId);
 };
-const f94615 = (item) => "" + SUB_COMMAND_KEY_SEPARATOR + item;
+const f94716 = (item) => "" + SUB_COMMAND_KEY_SEPARATOR + item;
 function parseLink(arg0) {
   let items;
   let obj3;
@@ -764,7 +764,7 @@ export const hydrateCommandMention = function hydrateCommandMention(name, comman
   let items1;
   const items = [..._toArray(name.split(" ")).slice(1)];
   _toArray(name.split(" "));
-  const mapped = items.map(f94615);
+  const mapped = items.map(f94716);
   const obj = { type: "commandMention", channelId: channelId.channelId, commandId, commandName: name, commandKey: "" + commandId + mapped.join(""), content: items1 };
   items1 = [{ type: "text", content: "" + name }];
   ({ type: "text", content: "" + name });

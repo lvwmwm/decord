@@ -1,9 +1,9 @@
-// Module ID: 5835
-// Function ID: 5836
+// Module ID: 5837
+// Function ID: 5838
 // Name: ApplicationStreamingSettingsStore
 // Dependencies: [5775, 5680, 504, 584, 2]
 
-// Module 5835 (ApplicationStreamingSettingsStore)
+// Module 5837 (ApplicationStreamingSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 5680 */;

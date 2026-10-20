@@ -1,9 +1,9 @@
-// Module ID: 10753
-// Function ID: 10754
+// Module ID: 10764
+// Function ID: 10765
 // Name: BlockConfirmationActionSheet
-// Dependencies: [32, 19, 17, 4800, 4890, 1392, 7361, 10752, 1087, 21, 4945, 587, 8599, 1128, 5650, 558, 576, 6935, 6851, 1202, 1633, 7199, 7224, 504, 8595, 5226, 1267, 5230, 8614, 5195, 5944, 7010, 5171, 10754, 2002, 1275, 5205, 7360, 7368, 2068, 5622, 2]
+// Dependencies: [32, 19, 17, 4800, 4890, 1392, 7364, 10763, 1087, 21, 4945, 587, 8611, 1128, 5650, 558, 576, 6938, 6854, 1202, 1633, 7202, 7227, 504, 8607, 5226, 1267, 5230, 8626, 5195, 5947, 7013, 5171, 10765, 2002, 1275, 5205, 7363, 7371, 2068, 5622, 2]
 
-// Module 10753 (BlockConfirmationActionSheet)
+// Module 10764 (BlockConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,18 +14,18 @@ import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 127
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import AssetRegistryDefault from "AssetRegistry" /* 5650 */;
-import TableRow2 from "TableRow" /* 6851 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7224 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7360 */;
-import RelationshipConstants from "RelationshipConstants" /* 7361 */;
-import UserActionCreators from "UserActionCreators" /* 8595 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8599 */;
+import TableRow2 from "TableRow" /* 6854 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7227 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7363 */;
+import RelationshipConstants from "RelationshipConstants" /* 7364 */;
+import UserActionCreators from "UserActionCreators" /* 8607 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8611 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
 import UserStore from "UserStore" /* 1392 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10752 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10763 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -48,7 +48,7 @@ let obj7;
 let rect;
 let tmp;
 let unpackModuleId;
-const TableRowGroup2 = tmp(6935);
+const TableRowGroup2 = tmp(6938);
 const View = react_native.View;
 const UserRemediationAction = RelationshipConstants.UserRemediationAction;
 ({ IGNORE_CONFIRMATION_ACTION_SHEET_KEY: c10, RESTRICTION_CONFIRMATION_ACTION_SHEET_HEIGHT: unpackModuleId } = RestrictionConfirmationConstants);
@@ -201,8 +201,8 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
   let tmp2 = channelId;
   let tmp3 = dependencyMap;
   const bottom = channelId(1633)().bottom;
-  const tmp4 = channelId(7199);
-  items = [channelId(7224).IGNORE_CONFIRMATION_ACTION_SHEET];
+  const tmp4 = channelId(7202);
+  items = [channelId(7227).IGNORE_CONFIRMATION_ACTION_SHEET];
   const analyticsLocations = tmp4(items).analyticsLocations;
   [tmp6, c5] = _slicedToArray(react.useState(false), 2);
   const tmp5 = _slicedToArray(react.useState(false), 2);
@@ -235,7 +235,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
   let tmp13Result2 = null;
   if (null != stateFromStores) {
     const obj4 = { value: analyticsLocations, children: closure_14(BottomSheet, obj5) };
-    const AnalyticsLocationProvider = tmp7(7199).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider = tmp7(7202).AnalyticsLocationProvider;
     let num = 485;
     obj5 = {
       onDismiss: function handleClose() {
@@ -263,7 +263,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
     const Avatar = tmp7(1202).Avatar;
     items8 = [closure_14(Avatar, obj9), ];
     const obj10 = { style: tmp.avatarIconContainer, children: closure_14(Icon, obj11) };
-    obj11 = { size: userId(1202).Icon.Sizes.MEDIUM, source: tmp2(8614) };
+    obj11 = { size: userId(1202).Icon.Sizes.MEDIUM, source: tmp2(8626) };
     Icon = tmp7(1202).Icon;
     items8[1] = closure_14(c5, obj10);
     items9 = [closure_15(c5, obj8), , ];
@@ -273,7 +273,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
     format = intl.format;
     obj13 = { username: tmp2Result.getName(stateFromStores2, channelId, stateFromStores) };
     CIbzHR = tmp7(1128).t.CIbzHR;
-    tmp2Result = tmp2(5944);
+    tmp2Result = tmp2(5947);
     items9[1] = closure_14(Text, obj12);
     const obj14 = { style: tmp.headerText, variant: "heading-md/medium", color: "text-default", accessibilityRole: "header", children: intl2.string(userId(1128).t.S70jou) };
     const Text2 = tmp7(5195).Text;
@@ -286,7 +286,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
     if (tmp13Result) {
       const obj16 = { style: tmp.otherOptions, children: closure_14(TableRowGroup, obj17) };
       obj17 = { title: intl3.string(userId(1128).t["+BJTcB"]), hasIcons: true, children: closure_14(TableRow, obj18) };
-      TableRowGroup = tmp7(6935).TableRowGroup;
+      TableRowGroup = tmp7(6938).TableRowGroup;
       intl3 = tmp7(1128).intl;
       obj18 = {
         icon: closure_14(Icon2, obj19),
@@ -299,14 +299,14 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
               obj.track(map1.USER_REMEDIATION_ACTION, obj2);
               const openLazy = ActionSheetActionCreatorsDefault.openLazy;
               ActionSheetActionCreatorsDefault;
-              const tmp3 = asyncRequire(10754, dependencyMap.paths);
+              const tmp3 = asyncRequire(10765, dependencyMap.paths);
               const obj3 = { userId, channelId, onBlock: dependencyMap, onSuccess: react, onIgnore: _slicedToArray, impressionName: discord_common_AnalyticsUtils.ImpressionNames.IGNORE_USER_CONFIRMATION };
               openLazy(tmp3, authStore, obj3, "replaceTopSheet");
             },
         arrow: true
       };
-      TableRow = tmp7(6851).TableRow;
-      obj19 = { size: userId(1202).Icon.Sizes.MEDIUM, source: tmp2(7010) };
+      TableRow = tmp7(6854).TableRow;
+      obj19 = { size: userId(1202).Icon.Sizes.MEDIUM, source: tmp2(7013) };
       Icon2 = tmp7(1202).Icon;
       intl4 = tmp7(1128).intl;
       intl5 = tmp7(1128).intl;

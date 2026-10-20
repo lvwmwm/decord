@@ -1,14 +1,14 @@
-// Module ID: 15867
-// Function ID: 15868
+// Module ID: 15886
+// Function ID: 15887
 // Name: WebAuthnNameStep
-// Dependencies: [5, 32, 19, 17, 1087, 21, 4945, 7038, 1505, 6625, 5625, 1128, 8871, 1202, 5205, 2]
+// Dependencies: [5, 32, 19, 17, 1087, 21, 4945, 7041, 1505, 6628, 5625, 1128, 8883, 1202, 5205, 2]
 // Exports: default
 
-// Module 15867 (WebAuthnNameStep)
+// Module 15886 (WebAuthnNameStep)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import useNavigation from "useNavigation" /* 1505 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7038 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7041 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -24,7 +24,7 @@ let tmp;
 const intl4 = tmp(1128);
 const native = tmp(1202);
 const components_Button_Button = tmp(5205);
-const Form2 = tmp(8871);
+const Form2 = tmp(8883);
 const View = react_native.View;
 const UserSettingsSections = Constants.UserSettingsSections;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);

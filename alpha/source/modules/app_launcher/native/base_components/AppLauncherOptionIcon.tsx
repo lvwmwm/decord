@@ -1,9 +1,9 @@
-// Module ID: 12051
-// Function ID: 12052
+// Module ID: 12066
+// Function ID: 12067
 // Name: AppLauncherOptionIcon
 // Dependencies: [19, 17, 21, 4945, 587, 558, 576, 2]
 
-// Module 12051 (AppLauncherOptionIcon)
+// Module 12066 (AppLauncherOptionIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

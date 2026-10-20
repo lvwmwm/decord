@@ -1,21 +1,18 @@
-// Module ID: 12172
-// Function ID: 12173
+// Module ID: 12187
+// Function ID: 12188
 // Name: conjureIdeasIntroTip
 // Dependencies: [2]
 // Exports: resolveIdeasIntroTip
 
-// Module 12172 (conjureIdeasIntroTip)
+// Module 12187 (conjureIdeasIntroTip)
 import size from "module_2" /* 2 */;
 
 function resolveIdeasIntroTip(turn) {
-  let str = null;
-  if (null != turn.turn) {
-    str = null;
-    if (tmp) {
-      str = "card";
-    }
+  if (null == turn.turn) {
+    let str = null;
+    return str;
   }
-  return str;
+  str = "card";
 }
 const result = size.fileFinishedImporting("modules/conjure/tips/conjureIdeasIntroTip.tsx");
 

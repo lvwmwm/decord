@@ -1,13 +1,15 @@
-// Module ID: 19069
-// Function ID: 19070
+// Module ID: 19092
+// Function ID: 19093
 // Name: OrbsArcadeFetchManager
-// Dependencies: [19070, 1104, 7162, 19072, 2]
+// Dependencies: [19093, 1104, 7165, 19095, 19096, 19094, 2]
 
-// Module 19069 (OrbsArcadeFetchManager)
+// Module 19092 (OrbsArcadeFetchManager)
 import DurationsDefault from "Durations" /* 1104 */;
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 19072 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 19070 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7162 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 19094 */;
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 19095 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 19096 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 19093 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7165 */;
 import size from "module_2" /* 2 */;
 
 let gameStateForGame, orbsArcadeGames;
@@ -60,15 +62,34 @@ class OrbsArcadeFetchManager extends AutomaticLifecycleManager {
         orbsArcadeGames = obj.fetchOrbsArcadeGames();
       }
     };
-    applyArgumentsResult.handleGameStateUpdate = function handleGameStateUpdate(game_id) {
-      game_id = game_id.game_id;
+    applyArgumentsResult.handleGameStateUpdate = function handleGameStateUpdate(arg0) {
+      let closure_129_0;
+      let game_state;
+      ({ game_id: closure_129_0, game_state } = arg0);
       orbsArcadeGames = orbsArcadeGames.orbsArcadeGames;
-      const game_state = game_id.game_state;
-      const found = orbsArcadeGames.find((id) => id.id === game_id);
-      const tmp2 = null != found && found.versionId !== game_state.game_version_id;
-      if (tmp2) {
-        const obj = OrbsArcadeActionCreators;
-        const orbsArcadeGames1 = obj.fetchOrbsArcadeGames();
+      const found = orbsArcadeGames.find((id) => id.id === closure_1_0);
+      if (null != found) {
+        let tmp4 = null != found.endsAt;
+        const versionId = found.versionId;
+        const game_version_id = game_state.game_version_id;
+        if (tmp4) {
+          const _Date = Date;
+          const _Date2 = Date;
+          const parsed = Date.parse(found.endsAt);
+          tmp4 = parsed <= Date.now();
+        }
+        let result = !tmp4;
+        if (result) {
+          const isOrbsArcadeEnrollmentOver = OrbsArcadeRewardUtils.isOrbsArcadeEnrollmentOver;
+          OrbsArcadeRewardUtils;
+          const obj = OrbsArcadeTypes;
+          result = isOrbsArcadeEnrollmentOver(obj.orbsArcadeGameStateFromServer(game_state));
+        }
+        const tmp9 = versionId !== game_version_id || result;
+        if (tmp9) {
+          const obj2 = OrbsArcadeActionCreators;
+          const orbsArcadeGames1 = obj2.fetchOrbsArcadeGames();
+        }
       }
     };
     applyArgumentsResult.handleLogout = function handleLogout() {
@@ -148,6 +169,6 @@ class OrbsArcadeFetchManager extends AutomaticLifecycleManager {
 }
 const prototype = OrbsArcadeFetchManager.prototype;
 const orbsArcadeFetchManager = new OrbsArcadeFetchManager();
-const result = size.fileFinishedImporting("modules/orbs_arcade/managers/OrbsArcadeFetchManager.tsx");
+let result = size.fileFinishedImporting("modules/orbs_arcade/managers/OrbsArcadeFetchManager.tsx");
 
 export default orbsArcadeFetchManager;

@@ -1,12 +1,14 @@
 // Module ID: 10175
 // Function ID: 10176
-// Dependencies: [41, 42, 93, 95, 98, 10152]
+// Dependencies: [41, 42, 93, 95, 98, 10143, 10146, 10147, 10163]
 
 // Module 10175
-import _mod10152 from "module_10152" /* 10152 */;
+import _mod10143 from "module_10143" /* 10143 */;
+import ReferenceWithTimezone2 from "ReferenceWithTimezone" /* 10147 */;
+import _mod10163 from "module_10163" /* 10163 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,14 +27,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class MergeWeekdayComponentRefiner {
+class ENMergeRelativeAfterDateRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, MergeWeekdayComponentRefiner);
-    const obj = _getPrototypeOf(MergeWeekdayComponentRefiner);
+    _classCallCheck(this, ENMergeRelativeAfterDateRefiner);
+    const obj = _getPrototypeOf(ENMergeRelativeAfterDateRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -42,45 +44,46 @@ class MergeWeekdayComponentRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(MergeWeekdayComponentRefiner, _mod10152.MergingRefiner);
+_inherits(ENMergeRelativeAfterDateRefiner, _mod10163.MergingRefiner);
 const entry = {
-  key: "mergeResults",
-  value: function mergeResults(arg0, index, clone) {
-    const cloneResult = clone.clone();
-    cloneResult.index = index.index;
-    cloneResult.text = index.text + arg0 + cloneResult.text;
-    const start = cloneResult.start;
-    const start2 = index.start;
-    start.assign("weekday", start2.get("weekday"));
-    if (cloneResult.end) {
-      const end = cloneResult.end;
-      const start3 = index.start;
-      end.assign("weekday", start3.get("weekday"));
+  key: "shouldMergeResults",
+  value: function shouldMergeResults(str, arg1, text) {
+    let match = str.match(/^\s*$/i);
+    if (match) {
+      str = text.text;
+      let tmp4 = null != str.match(/^[+-]/i);
+      if (!tmp4) {
+        const str2 = text.text;
+        tmp4 = null != str2.match(/^-/i);
+      }
+      match = tmp4;
     }
-    return cloneResult;
+    return match;
   }
 };
 const items = [
   entry,
   {
-    key: "shouldMergeResults",
-    value: function shouldMergeResults(str, start, start2) {
+    key: "mergeResults",
+    value: function mergeResults(arg0, start, text, arg3) {
+      let index;
+      let reference;
+      const parseDurationResult = _mod10143.parseDuration(text.text);
+      let reverseDurationResult = parseDurationResult;
+      const str = text.text;
+      if (null != str.match(/^-/i)) {
+        reverseDurationResult = tmp(10146).reverseDuration(parseDurationResult);
+      }
+      const ParsingComponents = tmp(10147).ParsingComponents;
+      const createRelativeFromReference = ParsingComponents.createRelativeFromReference;
+      const ReferenceWithTimezone = tmp(10147).ReferenceWithTimezone;
       start = start.start;
-      let result = start.isOnlyWeekdayComponent();
-      if (result) {
-        start2 = start.start;
-        result = !start2.isCertain("hour");
-      }
-      if (result) {
-        const start3 = start2.start;
-        result = start3.isCertain("day");
-      }
-      if (result) {
-        result = null != str.match(/^,?\s*$/);
-      }
-      return result;
+      const relativeFromReference = createRelativeFromReference(ReferenceWithTimezone.fromDate(start.date()), reverseDurationResult);
+      ({ reference, index } = start);
+      const parsingResult = new ReferenceWithTimezone2.ParsingResult(reference, index, "" + start.text + arg0 + text.text, relativeFromReference);
+      return parsingResult;
     }
   }
 ];
 
-export default _createClass(MergeWeekdayComponentRefiner, items);
+export default _createClass(ENMergeRelativeAfterDateRefiner, items);

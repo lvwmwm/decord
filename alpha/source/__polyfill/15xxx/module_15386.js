@@ -1,42 +1,24 @@
 // Module ID: 15386
 // Function ID: 15387
-// Dependencies: [15378, 15377, 15385]
+// Dependencies: [15370, 15371, 15387]
 
 // Module 15386
-import _mod15377 from "module_15377" /* 15377 */;
-import _mod15378 from "module_15378" /* 15378 */;
-import _mod15385 from "module_15385" /* 15385 */;
+import _mod15370 from "module_15370" /* 15370 */;
+import _mod15371 from "module_15371" /* 15371 */;
+import _mod15387 from "module_15387" /* 15387 */;
 
+const prop = _mod15370["__core-js_shared__"] || _mod15371("__core-js_shared__", {});
+let versions = prop.versions;
+if (!versions) {
+  const items = [];
+  prop.versions = items;
+  versions = items;
+}
+const push = versions.push;
+let str2 = "global";
+if (_mod15387) {
+  str2 = "pure";
+}
+push({ version: "3.41.0", mode: str2, copyright: "\u00A9 2014-2025 Denis Pushkarev (zloirock.ru)", license: "https://github.com/zloirock/core-js/blob/v3.41.0/LICENSE", source: "https://github.com/zloirock/core-js" });
 
-export default (arg0, arg1) => {
-  if ("string" === arg1) {
-    const toString = arg0.toString;
-    if (_mod15378(toString)) {
-      const tmpResult = _mod15377;
-      const tmp4 = _mod15385(toString, arg0);
-      if (!tmpResult(tmp4)) {
-        return tmp4;
-      }
-    }
-  }
-  const valueOf = arg0.valueOf;
-  if (_mod15378(valueOf)) {
-    const tmp5Result = _mod15377;
-    const tmp8 = _mod15385(valueOf, arg0);
-    if (!tmp5Result(tmp8)) {
-      return tmp8;
-    }
-  }
-  if ("string" !== arg1) {
-    const toString2 = arg0.toString;
-    if (_mod15378(toString2)) {
-      const tmp5Result2 = _mod15377;
-      const tmp10 = _mod15385(toString2, arg0);
-      if (!tmp5Result2(tmp10)) {
-        return tmp10;
-      }
-    }
-  }
-  const tmp11 = new TypeError("Can't convert object to primitive value");
-  throw tmp11;
-};
+export default prop;

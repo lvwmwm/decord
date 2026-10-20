@@ -1,22 +1,22 @@
-// Module ID: 8973
-// Function ID: 8974
+// Module ID: 8985
+// Function ID: 8986
 // Name: InstantInviteUtils
-// Dependencies: [4799, 4800, 4860, 6719, 4890, 1392, 7268, 1087, 7752, 6656, 8974, 1128, 2]
+// Dependencies: [4799, 4800, 4860, 6722, 4890, 1392, 7271, 1087, 7756, 6659, 8986, 1128, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 8973 (InstantInviteUtils)
+// Module 8985 (InstantInviteUtils)
 import Constants from "Constants" /* 1087 */;
 import intl6 from "intl" /* 1128 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6656 */;
-import Constants2 from "Constants" /* 7752 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 8974 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6659 */;
+import Constants2 from "Constants" /* 7756 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 8986 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import GuildMemberStore from "GuildMemberStore" /* 4860 */;
-import ReadStateStore from "ReadStateStore" /* 6719 */;
+import ReadStateStore from "ReadStateStore" /* 6722 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
 import UserStore from "UserStore" /* 1392 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7268 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7271 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,19 +1,19 @@
-// Module ID: 7026
-// Function ID: 7027
+// Module ID: 7029
+// Function ID: 7030
 // Name: UserSettingsAccountActionCreators
-// Dependencies: [5, 1087, 6619, 584, 1297, 6616, 1114, 1413, 510, 7027, 7031, 7033, 7035, 2]
+// Dependencies: [5, 1087, 6622, 584, 1297, 6619, 1114, 1413, 510, 7030, 7034, 7036, 7038, 2]
 // Exports: accountDetailsClose, accountDetailsInit, clearErrors, disableAccount, getHarvestStatus, requestHarvest, resetAccount, resetAllPending, resetAllTryItOut, resetAndCloseUserProfileForm, resetPendingAccountChanges, resetPendingLegacyUsernameDisabled, resetPendingPrimaryGuildChanges, saveAccountChanges, saveProfileAndAccountChanges, updateAccount
 
-// Module 7026 (UserSettingsAccountActionCreators)
+// Module 7029 (UserSettingsAccountActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1114 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6616 */;
-import trackUserAvatarUpdated from "trackUserAvatarUpdated" /* 7033 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7035 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6619 */;
+import trackUserAvatarUpdated from "trackUserAvatarUpdated" /* 7036 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7038 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1087 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6619 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6622 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;
@@ -252,8 +252,8 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
     user.push_voip_provider = tmp15;
     user.push_voip_token = value2;
   }
-  const obj4 = { headers: tmpResult.buildHeadersForMd5({ [avatar(7031).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
-  tmpResult = tmp(7027);
+  const obj4 = { headers: tmpResult.buildHeadersForMd5({ [avatar(7034).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
+  tmpResult = tmp(7030);
   const promise = saveProfileAndAccountRequest(user, obj4);
   return promise.then((result) => {
     const obj = DispatcherDefault;

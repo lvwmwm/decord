@@ -1,10 +1,10 @@
-// Module ID: 18559
-// Function ID: 18560
+// Module ID: 18582
+// Function ID: 18583
 // Name: react-native
 // Dependencies: [17, 2]
 // Exports: setIncomingRingtone
 
-// Module 18559 (react-native)
+// Module 18582 (react-native)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

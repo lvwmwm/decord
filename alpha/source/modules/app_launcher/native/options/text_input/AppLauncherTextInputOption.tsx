@@ -1,15 +1,15 @@
-// Module ID: 12023
-// Function ID: 12024
+// Module ID: 12038
+// Function ID: 12039
 // Name: AppLauncherTextInputOption
-// Dependencies: [32, 19, 17, 1395, 21, 4945, 587, 558, 576, 10960, 2000, 9746, 12019, 10961, 1202, 12024, 1384, 12025, 1896, 9740, 2]
+// Dependencies: [32, 19, 17, 1395, 21, 4945, 587, 558, 576, 10971, 2000, 9759, 12034, 10972, 1202, 12039, 1384, 12040, 1896, 9753, 2]
 
-// Module 12023 (AppLauncherTextInputOption)
+// Module 12038 (AppLauncherTextInputOption)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9740 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 9746 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9753 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 9759 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherT
   }), 2);
   value = tmp2[0];
   react = tmp2[1];
-  let obj = onChangeText(10960);
+  let obj = onChangeText(10971);
   const entrypoint = obj.useAppLauncherContext().entrypoint;
   react.useRef({ start: 0, end: 0 });
   const ref = react.useRef(null);
@@ -345,17 +345,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherT
       const result = obj.maybeFetchTopEmojisByGuild(guildId);
     }
   }, items2);
-  let obj2 = onChangeText(12019);
+  let obj2 = onChangeText(12034);
   const animationDelayedAutoFocus = obj2.useAnimationDelayedAutoFocus(autoFocus, () => {
     const current = ref.current;
     if (current != null) {
       current.focus();
     }
   });
-  if (entrypoint === onChangeText(10961).AppLauncherEntrypoint.VOICE) {
+  if (entrypoint === onChangeText(10972).AppLauncherEntrypoint.VOICE) {
     TextInput = tmp4(1202).TextInput;
   } else {
-    TextInput = guildId(12024);
+    TextInput = guildId(12039);
   }
   const items3 = [tmp.container, , ];
   const tmp12 = onChangeText;
@@ -411,7 +411,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherT
           const result1 = obj2.openEmojiPickerActionSheet(obj3);
         }
     };
-    tmp14Result = tmp14(guildId(12025), obj5);
+    tmp14Result = tmp14(guildId(12040), obj5);
   }
   items4[1] = tmp14Result;
   return tmp12(tmp13, obj3);

@@ -1,18 +1,19 @@
-// Module ID: 10991
-// Function ID: 10992
+// Module ID: 11002
+// Function ID: 11003
 // Name: ConjureChatStore
-// Dependencies: [109, 6721, 10992, 10994, 10993, 504, 1128, 3820, 584, 2]
+// Dependencies: [109, 6724, 11003, 11005, 11004, 504, 11006, 1128, 3820, 584, 2]
 // Exports: getOlderHistoryCursor
 
-// Module 10991 (ConjureChatStore)
+// Module 11002 (ConjureChatStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef3820 from "module_3820" /* 3820 */;
-import conjureChatTurns from "conjureChatTurns" /* 10992 */;
-import conjureStepTimeline from "conjureStepTimeline" /* 10993 */;
-import conjureChatHistory from "conjureChatHistory" /* 10994 */;
+import conjureChatTurns from "conjureChatTurns" /* 11003 */;
+import conjureStepTimeline from "conjureStepTimeline" /* 11004 */;
+import conjureChatHistory from "conjureChatHistory" /* 11005 */;
+import conjureAgentReaction from "conjureAgentReaction" /* 11006 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6721 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6724 */;
 import size from "module_2" /* 2 */;
 
 let set3;
@@ -188,9 +189,55 @@ function purgeProject(projectId) {
   }
   return deleteResult;
 }
+function applyAgentReactions(arr) {
+  map = new Map();
+  const iter = arr[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    if ("assistant" === nextResult.role) {
+      let steps = tmp2.steps;
+      let tmp3 = steps;
+      for (const item10022 of steps) {
+        let tmp4 = item10022;
+        if ("reaction" === item10022.kind) {
+          if (null != tmp4.message_id) {
+            let obj2 = map(11006);
+            let result = obj2.agentReactionFromStep(tmp4);
+            if (null != result) {
+              let result1 = map.set(tmp4.message_id, tmp10);
+            }
+          }
+        }
+        continue;
+      }
+    }
+    continue;
+  }
+  let mapped = arr;
+  if (0 !== map.size) {
+    mapped = arr.map((role) => {
+      let value;
+      if ("user" === role.role) {
+        value = map.get(role.id);
+      }
+      let tmp3 = role;
+      if (null != value) {
+        tmp3 = role;
+        const obj = conjureAgentReaction;
+        if (!obj.sameAgentReaction(role.agentReaction, value)) {
+          const obj2 = { agentReaction: value };
+          const merged = Object.assign(role);
+          tmp3 = obj2;
+        }
+      }
+      return tmp3;
+    });
+  }
+  return mapped;
+}
 let closure_3 = ["disposition"];
 let closure_4 = ["disposition"];
-const map = new Map();
+let map = new Map();
 const map1 = new Map();
 const map2 = new Map();
 const authStore = [];
@@ -198,8 +245,7 @@ const map3 = new Map();
 const map4 = new Map();
 let set = new Set();
 let set1 = new Set();
-let width = 0;
-let closure_16 = [];
+let closure_15 = [];
 const Store = get_initializedDefault.Store;
 class ConjureChatStore extends Store {
   initialize() {
@@ -208,7 +254,7 @@ class ConjureChatStore extends Store {
   getMessages(arg0) {
     let value = map.get(arg0);
     if (value == null) {
-      value = closure_16;
+      value = closure_15;
     }
     return value;
   }
@@ -258,9 +304,6 @@ class ConjureChatStore extends Store {
   isSaving(arg0) {
     return set1.has(arg0);
   }
-  getSidebarWidth() {
-    return width;
-  }
   getActivityOrderedProjectIds() {
     return closure_10.slice();
   }
@@ -293,9 +336,7 @@ let obj = {
                   if (0 === map5.size) {
                     if (0 === set2.size) {
                       if (0 === closure_10.length) {
-                        if (0 === width) {
-                          return false;
-                        }
+                        return false;
                       }
                     }
                   }
@@ -316,7 +357,6 @@ let obj = {
     map5.clear();
     set2.clear();
     closure_10.length = 0;
-    width = 0;
   },
   CONJURE_CHAT_HISTORY_SET: function handleChatHistorySet(arg0) {
     let cursor;
@@ -388,17 +428,18 @@ let obj = {
       }
       tmp.set(projectId, value);
     }
-    let tmp21 = messagesFromHistoryResult;
+    let tmp22 = messagesFromHistoryResult;
     set3 = map.set;
-    const foldDividers = tmp16(10994).foldDividers;
+    const foldDividers = tmp16(11005).foldDividers;
     conjureChatHistory;
+    const tmp20 = applyAgentReactions;
     if (-1 !== num2) {
       const items1 = [];
       const arraySpreadResult = HermesBuiltin.arraySpread(items1, items.slice(0, num2), 0);
       HermesBuiltin.arraySpread(items1, messagesFromHistoryResult.slice(num), arraySpreadResult);
-      tmp21 = items1;
+      tmp22 = items1;
     }
-    set3(projectId, foldDividers(tmp21));
+    set3(projectId, tmp20(foldDividers(tmp22)));
     recordThinkingTransition(projectId);
   },
   CONJURE_CHAT_HISTORY_PREPEND: function handleChatHistoryPrepend(cursor) {
@@ -409,7 +450,7 @@ let obj = {
     const result = map5.set(projectId, cursor.cursor);
     if (0 !== entries.length) {
       let items1 = map.get(projectId);
-      const tmp14 = map;
+      const tmp15 = map;
       if (items1 == null) {
         items1 = [];
       }
@@ -432,11 +473,11 @@ let obj = {
         return tmp;
       });
       let items = [];
-      set = tmp14.set;
+      set = tmp15.set;
       const foldDividers = conjureChatHistory.foldDividers;
       conjureChatHistory;
       HermesBuiltin.arraySpread(items, items1, HermesBuiltin.arraySpread(items, found, 0));
-      const result1 = set(projectId, foldDividers(items));
+      const result1 = set(projectId, applyAgentReactions(foldDividers(items)));
     }
   },
   CONJURE_CHAT_MESSAGE_APPEND: function handleChatMessageAppend(optimisticId) {
@@ -592,6 +633,31 @@ let obj = {
       }
     }
   },
+  CONJURE_CHAT_MESSAGE_REACTION: function handleChatMessageReaction(arg0) {
+    let closure_129_0;
+    let projectId;
+    let reaction;
+    ({ projectId, id: closure_129_0, reaction } = arg0);
+    const tmp = map;
+    const value = map.get(projectId);
+    if (null == value) {
+      return false;
+    } else {
+      const findIndexResult = value.findIndex((role) => "user" === role.role && role.id === closure_1_0);
+      if (-1 !== findIndexResult) {
+        const obj2 = conjureAgentReaction;
+        if (!obj2.sameAgentReaction(value[findIndexResult].agentReaction, reaction)) {
+          const obj = { agentReaction: reaction };
+          set = tmp.set;
+          const replaceAt = tmp2(11003).replaceAt;
+          conjureChatTurns;
+          const merged = Object.assign(value[findIndexResult]);
+          const result = set(projectId, replaceAt(value, findIndexResult, obj));
+        }
+      }
+      return false;
+    }
+  },
   CONJURE_CHAT_MESSAGE_CANCELLED: function handleChatMessageCancelled(withdrawn) {
     let closure_129_0;
     let projectId;
@@ -641,6 +707,7 @@ let obj = {
     let timestamp;
     ({ projectId, id } = inReplyTo);
     inReplyTo = inReplyTo.inReplyTo;
+    let obj = map;
     ({ content, timestamp } = inReplyTo);
     const value = map.get(projectId);
     if (null == value) {
@@ -660,7 +727,7 @@ let obj = {
           newMessageResult.acknowledges = disposition;
         }
         const items = [];
-        set = map.set;
+        set = obj.set;
         const arraySpreadResult = HermesBuiltin.arraySpread(items, value.slice(0, findIndexResult + 1), 0);
         items[arraySpreadResult] = newMessageResult;
         HermesBuiltin.arraySpread(items, value.slice(findIndexResult + 1), arraySpreadResult + 1);
@@ -689,7 +756,7 @@ let obj = {
       return false;
     } else {
       const obj3 = { ts: timestamp, id };
-      const obj2 = id(10994);
+      const obj2 = id(11005);
       const newMessageResult = obj2.newMessage("assistant", content, obj3);
       newMessageResult.kind = "publish_notice";
       newMessageResult.publishNotice = publishNotice;
@@ -705,7 +772,7 @@ let obj = {
       let tmp6 = null;
       if (-1 !== findLastIndexResult) {
         tmp6 = null;
-        const tmp2Result = id(10992);
+        const tmp2Result = id(11003);
         if (!tmp2Result.turnSettled(value[findLastIndexResult])) {
           tmp6 = value[findLastIndexResult];
         }
@@ -726,8 +793,8 @@ let obj = {
           items[arraySpreadResult] = obj4;
           const arraySpreadResult4 = HermesBuiltin.arraySpread(items, value.slice(findLastIndexResult + 1), arraySpreadResult + 1);
           items[arraySpreadResult4] = newMessageResult;
-          const newMessage = tmp2(10994).newMessage;
-          id(10994);
+          const newMessage = tmp2(11005).newMessage;
+          id(11005);
           if (null != tmp6.turn_id) {
             obj6 = { turnId: tmp6.turn_id };
             const obj5 = { turnId: tmp6.turn_id };
@@ -757,8 +824,8 @@ let obj = {
     let event;
     let projectId;
     ({ projectId, event } = arg0);
-    let obj = map;
     const value = map.get(projectId);
+    const obj = map;
     if (null == value) {
       return false;
     } else if (value.some((id) => id.id === event.id)) {
@@ -848,7 +915,7 @@ let obj = {
     if ("preview_ready" === step.kind) {
       if (null == turnId) {
         let tmp2 = step;
-        let obj = step(10992);
+        let obj = step(11003);
         if (!obj.hasOpenTurn(map.get(projectId))) {
           return false;
         }
@@ -967,7 +1034,7 @@ let obj = {
       if (flag2) {
         const obj2 = { provisionalTodo: text };
         set = tmp.set;
-        const replaceAt = tmp3(10992).replaceAt;
+        const replaceAt = tmp3(11003).replaceAt;
         conjureChatTurns;
         const merged = Object.assign(value[findTurnSegmentResult]);
         const result = set(projectId, replaceAt(value, findTurnSegmentResult, obj2));
@@ -1058,12 +1125,6 @@ let obj = {
   CONJURE_CHAT_USAGE_SET: function handleChatUsageSet(projectId) {
     const result = map3.set(projectId.projectId, projectId.project);
   },
-  CONJURE_CHAT_SIDEBAR_WIDTH_SET: function handleChatSidebarWidthSet(width) {
-    width = width.width;
-    if (width === width) {
-      return false;
-    }
-  },
   CONJURE_CHAT_TURN_PATCH: function handleChatTurnPatch(turnId) {
     let closure_129_0;
     let projectId;
@@ -1120,7 +1181,7 @@ let obj = {
                 items = [];
                 const obj2 = { type: "step", kind: "terminal_error", message: intl.string(_modDef3820.lmiuFX) };
                 const arraySpreadResult = HermesBuiltin.arraySpread(items, disposition.steps, 0);
-                intl = tmp11(tmp12[6]).intl;
+                intl = tmp11(tmp12[7]).intl;
                 items[arraySpreadResult] = obj2;
                 tmp8 = obj;
               }

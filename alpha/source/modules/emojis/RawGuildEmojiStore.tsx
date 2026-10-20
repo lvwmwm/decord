@@ -1,9 +1,9 @@
-// Module ID: 6674
-// Function ID: 6675
+// Module ID: 6677
+// Function ID: 6678
 // Name: RawGuildEmojiStore
 // Dependencies: [32, 4816, 4823, 4897, 559, 2]
 
-// Module 6674 (RawGuildEmojiStore)
+// Module 6677 (RawGuildEmojiStore)
 import libdiscoreExperiments from "libdiscoreExperiments" /* 559 */;
 import js_shim_PlainRecord from "js_shim/PlainRecord" /* 4816 */;
 import LibdiscoreStore2 from "LibdiscoreStore" /* 4823 */;

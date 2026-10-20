@@ -1,49 +1,80 @@
 // Module ID: 8201
 // Function ID: 8202
-// Dependencies: [8178, 8179, 8158]
+// Dependencies: [32, 8162, 8179, 8202]
 
 // Module 8201
-import _mod8158 from "module_8158" /* 8158 */;
-import get0thIfdOffset from "get0thIfdOffset" /* 8178 */;
-import IFD_TYPE_0TH from "IFD_TYPE_0TH" /* 8179 */;
+import _mod8162 from "module_8162" /* 8162 */;
+import _modDef8179 from "module_8179" /* 8179 */;
+import PathRecordTypesDefault from "PathRecordTypes" /* 8202 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-
-export default {
-  read(byteLength, sum, arg2, byteOrder, arg4) {
-    let str;
-    const obj = get0thIfdOffset;
-    const ifd = obj.readIfd(byteLength, IFD_TYPE_0TH.IFD_TYPE_CANON, sum, sum + arg2, byteOrder, arg4);
-    let tmp4 = ifd;
-    if (ifd.ShotInfo) {
-      const value = ifd.ShotInfo.value;
-      const obj2 = {};
-      const objectAssign = tmp(8158).objectAssign;
-      _mod8158;
-      if (undefined !== value[27]) {
-        const obj3 = { value: value[27], description: str };
-        str = "None";
-        if (0 !== value[27]) {
-          let str2 = "Rotate 90 CW";
-          if (1 !== value[27]) {
-            let str3 = "Rotate 180";
-            if (2 !== value[27]) {
-              let str4 = "Unknown";
-              if (3 === value[27]) {
-                str4 = "Rotate 270 CW";
-              }
-              str3 = str4;
-            }
-            str2 = str3;
+let length;
+let metroImportDefault;
+function getTagName(dataView, sum1) {
+  let num;
+  let sum;
+  const obj = _mod8162;
+  const tmp = _slicedToArray(obj.getPascalStringFromDataView(dataView, sum1), 2);
+  const first = tmp[0];
+  const obj2 = { tagName: tmp[1], tagNameSize: sum + num };
+  num = 0;
+  sum = 1 + first;
+  if (first % 2 === 0) {
+    num = 1;
+  }
+  return obj2;
+}
+let obj = {
+  read(arg0, arg1) {
+    let tmp4Result2;
+    const getDataView = _mod8162.getDataView;
+    _mod8162;
+    const uint8Array = new Uint8Array(arg0);
+    const dataView = getDataView(uint8Array.buffer);
+    const obj = {};
+    let num = 0;
+    if (0 < arg0.length) {
+      const sum = num + metroImportDefault;
+      const obj2 = _mod8162;
+      const stringFromDataView = obj2.getStringFromDataView(dataView, num, metroImportDefault);
+      const obj3 = _modDef8179;
+      const shortAt = obj3.getShortAt(dataView, sum);
+      const sum1 = sum + c5;
+      const tmp14 = getTagName(dataView, sum1);
+      let name = tmp14.tagName;
+      const sum2 = sum1 + tmp14.tagNameSize;
+      const obj4 = _modDef8179;
+      const longAt = obj4.getLongAt(dataView, sum2);
+      const sum3 = sum2 + c6;
+      if (stringFromDataView === c4) {
+        const tmp4Result = _mod8162;
+        const dataView1 = tmp4Result.getDataView(dataView.buffer, sum3, longAt);
+        const obj6 = { id: shortAt, value: tmp4Result2.getStringFromDataView(dataView1, 0, longAt) };
+        tmp4Result2 = _mod8162;
+        if (PathRecordTypesDefault[shortAt]) {
+          try {
+            const obj5 = PathRecordTypesDefault[shortAt];
+            obj6.description = obj5.description(dataView1);
+          } catch (err) {
+            obj6.description = "<no description formatter>";
           }
-          str = str2;
+          if (!name) {
+            name = tmp9(8202)[shortAt].name;
+          }
+          obj[name] = obj6;
+        } else if (arg1) {
+          const _HermesInternal = HermesInternal;
+          obj["undefined-" + shortAt] = obj6;
         }
-        obj2.AutoRotate = obj3;
       }
-      const objectAssignResult = objectAssign({}, ifd, obj2);
-      delete tmp7["ShotInfo"];
-      tmp4 = objectAssignResult;
+      num = sum3 + (longAt + longAt % 2);
     }
-    return tmp4;
-  },
-  SHOT_INFO_AUTO_ROTATE: 27
+    return obj;
+  }
 };
+let c4 = "8BIM";
+let c5 = 2;
+let c6 = 4;
+({ length, length: metroImportDefault } = "8BIM");
+
+export default obj;

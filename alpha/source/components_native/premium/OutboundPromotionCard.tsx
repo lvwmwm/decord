@@ -1,10 +1,10 @@
-// Module ID: 14668
-// Function ID: 14669
+// Module ID: 14686
+// Function ID: 14687
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1087, 21, 4945, 587, 6655, 558, 576, 7194, 1128, 5667, 5226, 5195, 5166, 9475, 14669, 5864, 14670, 2002, 9476, 5631, 5205, 5171, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 4945, 587, 6658, 558, 576, 7197, 1128, 5667, 5226, 5195, 5166, 9488, 14687, 5867, 14688, 2002, 9489, 5631, 5205, 5171, 2]
 // Exports: default
 
-// Module 14668 (OutboundPromotionCard)
+// Module 14686 (OutboundPromotionCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,9 +14,9 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171
 import Text_Text from "Text/Text" /* 5195 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5226 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5667 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5864 */;
-import LegacyTokens from "LegacyTokens" /* 6655 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7194 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5867 */;
+import LegacyTokens from "LegacyTokens" /* 6658 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7197 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -50,7 +50,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function TermsAn
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(intl4.t.PdKWVT) };
-    const BottomSheetTitleHeader = tmp(7194).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(7197).BottomSheetTitleHeader;
     intl = tmp(1128).intl;
     const tmp7 = metroRequire(BottomSheetTitleHeader, obj2);
     cResult[0] = tmp7;

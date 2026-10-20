@@ -1,17 +1,17 @@
-// Module ID: 12749
-// Function ID: 12750
+// Module ID: 12766
+// Function ID: 12767
 // Name: GuildIconWithChannelType
-// Dependencies: [109, 19, 17, 21, 6831, 4945, 587, 558, 576, 8447, 1202, 12750, 9324, 2]
+// Dependencies: [109, 19, 17, 21, 6834, 4945, 587, 558, 576, 8451, 1202, 12767, 9336, 2]
 
-// Module 12749 (GuildIconWithChannelType)
+// Module 12766 (GuildIconWithChannelType)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import GuildIcon from "GuildIcon" /* 6831 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8447 */;
-import ClipView from "ClipView" /* 9324 */;
-import Pile2 from "Pile" /* 12750 */;
+import GuildIcon from "GuildIcon" /* 6834 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8451 */;
+import ClipView from "ClipView" /* 9336 */;
+import Pile2 from "Pile" /* 12767 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -136,7 +136,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildIconWit
                 }
               }
               obj2 = { "aria-label": tmp4, shape: ClipView.CutoutShape.Circle, size: tmp16, gap, depthX: sum1, depthY: sum1, children: items };
-              const Pile = tmp(12750).Pile;
+              const Pile = tmp(12767).Pile;
               items = [tmp21, tmp33];
               const tmp39 = metroImportAll(Pile, obj2);
               cResult[27] = tmp4;

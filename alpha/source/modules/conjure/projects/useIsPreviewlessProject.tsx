@@ -1,11 +1,11 @@
-// Module ID: 11670
-// Function ID: 11671
+// Module ID: 11683
+// Function ID: 11684
 // Name: useIsPreviewlessProject
-// Dependencies: [6721, 558, 576, 6722, 504, 2]
+// Dependencies: [6724, 558, 576, 6725, 504, 2]
 
-// Module 11670 (useIsPreviewlessProject)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6722 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6721 */;
+// Module 11683 (useIsPreviewlessProject)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6725 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6724 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

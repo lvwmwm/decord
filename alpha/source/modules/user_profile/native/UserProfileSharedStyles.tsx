@@ -1,12 +1,12 @@
-// Module ID: 8657
-// Function ID: 8658
+// Module ID: 8669
+// Function ID: 8670
 // Name: UserProfileSharedStyles
-// Dependencies: [7250, 4945, 587, 558, 2]
+// Dependencies: [7253, 4945, 587, 558, 2]
 // Exports: default, useUserProfileCardRadius
 
-// Module 8657 (UserProfileSharedStyles)
+// Module 8669 (UserProfileSharedStyles)
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 7250 */;
+import Constants from "Constants" /* 7253 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

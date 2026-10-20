@@ -1,12 +1,12 @@
-// Module ID: 11053
-// Function ID: 11054
+// Module ID: 11065
+// Function ID: 11066
 // Name: conjurePreviewNativeSurfaces
-// Dependencies: [1087, 9190, 2]
+// Dependencies: [1087, 9202, 2]
 // Exports: beginNativeSurfaceSessionForFrame
 
-// Module 11053 (conjurePreviewNativeSurfaces)
+// Module 11065 (conjurePreviewNativeSurfaces)
 import Constants from "Constants" /* 1087 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 9190 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 9202 */;
 import size from "module_2" /* 2 */;
 
 function asString(str) {
@@ -151,8 +151,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "unicodeVersion", answered: "extractLlmResponseAttributes" }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "unicodeVersion", answered: "extractLlmResponseAttributes" })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "unicodeVersion", answered: "applicationId" }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "unicodeVersion", answered: "applicationId" })
 };
 let closure_5 = {
   drain() {
@@ -186,7 +186,7 @@ export const beginNativeSurfaceSessionForFrame = function beginNativeSurfaceSess
       closure_6.unshift(obj2);
     }
     if (1 === arr.length) {
-      obj = obj2(9190);
+      obj = obj2(9202);
       let result = obj.setRpcCommandInterceptor(answerFor);
     }
     return {

@@ -1,9 +1,9 @@
-// Module ID: 17561
-// Function ID: 17562
+// Module ID: 17580
+// Function ID: 17581
 // Name: YouBarAvatar
-// Dependencies: [5, 32, 19, 17, 4946, 6452, 1392, 16169, 1087, 21, 4945, 587, 558, 576, 504, 1202, 4999, 5014, 6730, 9324, 5208, 5213, 9323, 8571, 5173, 7436, 2002, 5258, 2]
+// Dependencies: [5, 32, 19, 17, 4946, 6455, 1392, 16188, 1087, 21, 4945, 587, 558, 576, 504, 1202, 4999, 5014, 6733, 9336, 5208, 5213, 9335, 8583, 5173, 7439, 2002, 5258, 2]
 
-// Module 17561 (YouBarAvatar)
+// Module 17580 (YouBarAvatar)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
@@ -11,15 +11,15 @@ import native2 from "native" /* 4999 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
 import spring from "spring" /* 5208 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5258 */;
-import ClipView from "ClipView" /* 9324 */;
+import ClipView from "ClipView" /* 9336 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6452 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6455 */;
 import UserStore from "UserStore" /* 1392 */;
-import YouBarConstants from "YouBarConstants" /* 16169 */;
+import YouBarConstants from "YouBarConstants" /* 16188 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

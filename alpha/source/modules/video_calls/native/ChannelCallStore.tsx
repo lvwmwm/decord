@@ -1,22 +1,22 @@
-// Module ID: 10675
-// Function ID: 10676
+// Module ID: 10686
+// Function ID: 10687
 // Name: ChannelCallStore
-// Dependencies: [19, 4799, 10676, 2026, 5593, 4795, 8740, 570, 1274, 5672, 12, 558, 576, 10677, 10678, 10679, 504, 10680, 2]
+// Dependencies: [19, 4799, 10687, 2026, 5593, 4795, 8752, 570, 1274, 5672, 12, 558, 576, 10688, 10689, 10690, 504, 10691, 2]
 // Exports: clearFocusTimer, resetChannelCallStore, resetFocus, resetFocusTimer, setFocus, setVoiceChatDrawerState, toggleFocus
 
-// Module 10675 (ChannelCallStore)
+// Module 10686 (ChannelCallStore)
 import react_native from "react-native" /* 1274 */;
 import Constants from "Constants" /* 2026 */;
 import Timers from "Timers" /* 4795 */;
 import CallConstants from "CallConstants" /* 5593 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5672 */;
-import DeviceOrientation from "DeviceOrientation" /* 8740 */;
-import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 10677 */;
-import useSelectedParticipantDefault from "useSelectedParticipant" /* 10678 */;
-import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 10680 */;
+import DeviceOrientation from "DeviceOrientation" /* 8752 */;
+import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 10688 */;
+import useSelectedParticipantDefault from "useSelectedParticipant" /* 10689 */;
+import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 10691 */;
 import react_mod from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10676 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10687 */;
 import module_570 from "module_570" /* 570 */;
 import module_12 from "module_12" /* 12 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -28,7 +28,7 @@ let _require, dependencyMap, importDefault;
 let VoiceCallOverlayType;
 let VoiceChatDrawerState;
 let obj2;
-const f106547 = () => {
+const f106650 = () => {
   const obj = require("react-native");
   obj.batchUpdates(() => state.setState({ focus: false }));
 };
@@ -90,7 +90,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelCa
     }
     dependencyMap = tmp6;
     const tmp9 = closure_11();
-    const tmpResult = tmp(10679);
+    const tmpResult = tmp(10690);
     const tmp10 = tmp9 || !tmpResult.useIsConnectedToVoiceChannel(isGuildStageVoice);
     react = tmp10;
     const _Symbol = Symbol;
@@ -306,7 +306,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelCa
 });
 function resetFocusTimer() {
   timeout.stop();
-  timeout.start(5000, f106547);
+  timeout.start(5000, f106650);
 }
 size = size_mod;
 let result = size.fileFinishedImporting("modules/video_calls/native/ChannelCallStore.tsx");
@@ -333,7 +333,7 @@ export const resetFocus = function resetFocus() {
   let state;
   if (obj3.getState().focus) {
     timeout.stop();
-    timeout.start(5000, f106547);
+    timeout.start(5000, f106650);
   } else {
     let obj = react_native;
     obj.batchUpdates(() => state.setState({ focus: true }));

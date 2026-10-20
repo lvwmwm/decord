@@ -1,14 +1,14 @@
-// Module ID: 14332
-// Function ID: 14333
+// Module ID: 14350
+// Function ID: 14351
 // Name: GroupDMInvite
-// Dependencies: [4800, 4890, 1392, 7752, 8219, 9922, 1128, 14118, 1420, 5565, 2]
+// Dependencies: [4800, 4890, 1392, 7756, 8223, 9933, 1128, 14136, 1420, 5565, 2]
 // Exports: createGroupDMInvite
 
-// Module 14332 (GroupDMInvite)
+// Module 14350 (GroupDMInvite)
 import intl7 from "intl" /* 1128 */;
-import Constants from "Constants" /* 7752 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8219 */;
-import getChannelAndRecipientsFromInviteDefault from "getChannelAndRecipientsFromInvite" /* 9922 */;
+import Constants from "Constants" /* 7756 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8223 */;
+import getChannelAndRecipientsFromInviteDefault from "getChannelAndRecipientsFromInvite" /* 9933 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -72,7 +72,7 @@ export const createGroupDMInvite = function createGroupDMInvite(invite, arg1, th
   }
   let channelIconSource = null;
   if (null != channel) {
-    const tmp8Result = tmp8(14118);
+    const tmp8Result = tmp8(14136);
     channelIconSource = tmp8Result.getChannelIconSource(channel);
   }
   let uri = null;

@@ -1,28 +1,28 @@
-// Module ID: 19012
-// Function ID: 19013
+// Module ID: 19035
+// Function ID: 19036
 // Name: ChannelSelectorActionSheet
-// Dependencies: [32, 19, 17, 4800, 7155, 4880, 1087, 6653, 21, 4945, 587, 6599, 558, 576, 5565, 5171, 17287, 5631, 18951, 504, 7244, 5195, 1128, 7093, 6856, 6620, 8870, 2002, 8891, 8896, 1202, 14717, 7168, 2]
+// Dependencies: [32, 19, 17, 4800, 7158, 4880, 1087, 6656, 21, 4945, 587, 6602, 558, 576, 5565, 5171, 17306, 5631, 18974, 504, 7247, 5195, 1128, 7096, 6859, 6623, 8882, 2002, 8903, 8908, 1202, 14735, 7171, 2]
 // Exports: default
 
-// Module 19012 (ChannelSelectorActionSheet)
+// Module 19035 (ChannelSelectorActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
-import ReadStateConstants from "ReadStateConstants" /* 6653 */;
-import useCreateChannelSubmit from "useCreateChannelSubmit" /* 8891 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8896 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14717 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+import ReadStateConstants from "ReadStateConstants" /* 6656 */;
+import useCreateChannelSubmit from "useCreateChannelSubmit" /* 8903 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8908 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14735 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7155 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7158 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
-import TextStyles from "TextStyles" /* 6599 */;
+import TextStyles from "TextStyles" /* 6602 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -94,7 +94,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
             }
             let tmp14 = selected;
             if (tmp14) {
-              const obj3 = { style: tmp3.selectedIcon, source: onChannelSelected(18951) };
+              const obj3 = { style: tmp3.selectedIcon, source: onChannelSelected(18974) };
               const tmp4Result = onChannelSelected(5631);
               tmp14 = closure_11(tmp4Result, obj3);
             }
@@ -107,7 +107,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       }
     }
     const obj4 = { style: tmp3.channelRow, onPress: tmp6, accessible: true, accessibilityLabel: tmp5, channel, selected, disableHighlightOnPress: true, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
-    const tmp12 = closure_11(onChannelSelected(17287), obj4);
+    const tmp12 = closure_11(onChannelSelected(17306), obj4);
     cResult[3] = channel;
     cResult[4] = tmp6;
     cResult[5] = selected;
@@ -138,12 +138,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     onChannelSelected(channel);
   }, items);
   let obj = { style: tmp.channelRow, onPress: callback, accessible: true, accessibilityLabel: tmp4, channel, selected, disableHighlightOnPress: true, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
-  const tmp9 = onChannelSelected(17287);
+  const tmp9 = onChannelSelected(17306);
   const children = [closure_11(tmp9, obj), ];
   const tmp6 = closure_13;
   const tmp7 = closure_12;
   if (selected) {
-    const obj2 = { style: tmp.selectedIcon, source: onChannelSelected(18951) };
+    const obj2 = { style: tmp.selectedIcon, source: onChannelSelected(18974) };
     const tmp2Result = onChannelSelected(5631);
     selected = tmp8(tmp2Result, obj2);
   }
@@ -209,10 +209,10 @@ export default function ChannelSelectorActionSheet(guildId) {
     }
     return items;
   }, items1);
-  let obj2 = { scrollable: true, ref, header: closure_13(tmp11, { children: items2 }), children: tmp9(tmp6(7168).BottomSheetFlashList, obj9) };
+  let obj2 = { scrollable: true, ref, header: closure_13(tmp11, { children: items2 }), children: tmp9(tmp6(7171).BottomSheetFlashList, obj9) };
   let tmp12 = View;
   const obj3 = { style: tmp.titleContainer, children: tmp9(Text, { accessibilityRole: "header", variant: "text-md/bold", color: "mobile-text-heading-primary", children: title }) };
-  const ActionSheet = guildId(7244).ActionSheet;
+  const ActionSheet = guildId(7247).ActionSheet;
   tmp11 = closure_12;
   Text = guildId(5195).Text;
   if (title == null) {
@@ -234,7 +234,7 @@ export default function ChannelSelectorActionSheet(guildId) {
       return expandActionSheetResult;
     }
   };
-  SearchField = tmp6(7093).SearchField;
+  SearchField = tmp6(7096).SearchField;
   intl2 = tmp6(1128).intl;
   items2[1] = tmp9(tmp12, obj4);
   let tmp10Result = !hideCreateChannel;
@@ -259,12 +259,12 @@ export default function ChannelSelectorActionSheet(guildId) {
             }
           };
           ModalActionCreatorsDefault;
-          const tmp3 = asyncRequire(8870, dependencyMap.paths);
+          const tmp3 = asyncRequire(8882, dependencyMap.paths);
           pushLazy(tmp3, obj2, CreateChannelModalActionCreatorsDefault.CREATE_CHANNEL_MODAL_KEY);
         },
       children: items3
     };
-    const PressableOpacity = tmp6(6856).PressableOpacity;
+    const PressableOpacity = tmp6(6859).PressableOpacity;
     let str1;
     const Icon = tmp6(1202).Icon;
     if (tmp.createChannelLabel.color != null) {

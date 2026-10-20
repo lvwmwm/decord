@@ -1,16 +1,16 @@
-// Module ID: 14388
-// Function ID: 14389
+// Module ID: 14406
+// Function ID: 14407
 // Name: InAppReportsDeleteMessageElement
-// Dependencies: [32, 19, 5965, 1087, 21, 558, 576, 504, 5673, 7512, 1128, 5651, 14384, 2]
+// Dependencies: [32, 19, 5968, 1087, 21, 558, 576, 504, 5673, 7515, 1128, 5651, 14402, 2]
 
-// Module 14388 (InAppReportsDeleteMessageElement)
+// Module 14406 (InAppReportsDeleteMessageElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5673 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7512 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7515 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 5965 */;
+import MessageStore from "MessageStore" /* 5968 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -140,7 +140,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteMess
       }
       return tmp23;
     }
-    const tmp26 = jsx(reportId(14384), { title: tmp15, disabledTitle: tmp16, description: tmp17, disabled: tmp5, variant: "danger", onPress: tmp14, icon: tmp21 });
+    const tmp26 = jsx(reportId(14402), { title: tmp15, disabledTitle: tmp16, description: tmp17, disabled: tmp5, variant: "danger", onPress: tmp14, icon: tmp21 });
     cResult[14] = tmp14;
     cResult[15] = tmp5;
     cResult[16] = tmp26;
@@ -184,7 +184,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteMess
     const obj3 = MessageActionCreatorsDefault;
     obj3.deleteMessage(message.getChannelId(), message.id);
   }, items3);
-  reportId(14384);
+  reportId(14402);
   const intl = message(1128).intl;
   const intl2 = message(1128).intl;
   const intl3 = message(1128).intl;

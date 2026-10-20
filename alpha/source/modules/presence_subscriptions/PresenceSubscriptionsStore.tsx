@@ -1,14 +1,14 @@
-// Module ID: 11102
-// Function ID: 11103
+// Module ID: 11114
+// Function ID: 11115
 // Name: PresenceSubscriptionsStore
-// Dependencies: [32, 5674, 2026, 11103, 4795, 504, 584, 2]
+// Dependencies: [32, 5674, 2026, 11115, 4795, 504, 584, 2]
 
-// Module 11102 (PresenceSubscriptionsStore)
+// Module 11114 (PresenceSubscriptionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 2026 */;
 import Timers from "Timers" /* 4795 */;
-import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11103 */;
+import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11115 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import PresenceStore from "PresenceStore" /* 5674 */;
 import size from "module_2" /* 2 */;

@@ -1,22 +1,22 @@
-// Module ID: 8926
-// Function ID: 8927
+// Module ID: 8938
+// Function ID: 8939
 // Name: GuildSettingsActionCreators
-// Dependencies: [5, 4853, 4881, 502, 4860, 4822, 8927, 1087, 3, 584, 1297, 7370, 8934, 7027, 7031, 6624, 1275, 4953, 1128, 1114, 6802, 2]
+// Dependencies: [5, 4853, 4881, 502, 4860, 4822, 8939, 1087, 3, 584, 1297, 7373, 8946, 7030, 7034, 6627, 1275, 4953, 1128, 1114, 6805, 2]
 
-// Module 8926 (GuildSettingsActionCreators)
+// Module 8938 (GuildSettingsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6624 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7370 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6627 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7373 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import ImpersonateStore from "ImpersonateStore" /* 4853 */;
 import LurkingStore from "LurkingStore" /* 4881 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 4860 */;
 import GuildStore from "GuildStore" /* 4822 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8927 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8939 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -292,7 +292,7 @@ let obj = {
     const obj5 = obj(584);
     obj5.dispatch({ type: "GUILD_SETTINGS_SUBMIT" });
     const pendingOriginalMd5s = GuildSettingsStore.getPendingOriginalMd5s();
-    const obj6 = obj(7027);
+    const obj6 = obj(7030);
     const obj7 = { [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_ICON]: pendingOriginalMd5s.icon, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_BANNER]: pendingOriginalMd5s.banner, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_INVITE_SPLASH]: pendingOriginalMd5s.splash, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_DISCOVERY_SPLASH]: pendingOriginalMd5s.discoverySplash };
     const headersForMd5 = obj6.buildHeadersForMd5(obj7);
     const HTTP = require("HTTPUtils").HTTP;

@@ -1,10 +1,10 @@
-// Module ID: 7753
-// Function ID: 7754
+// Module ID: 7757
+// Function ID: 7758
 // Name: GuildProfileUtils
 // Dependencies: [4804, 1087, 4814, 2]
 // Exports: getEstablishedDate, guildInviteCanEmbedProfile
 
-// Module 7753 (GuildProfileUtils)
+// Module 7757 (GuildProfileUtils)
 import Constants from "Constants" /* 1087 */;
 import ChannelRecord from "ChannelRecord" /* 4804 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4814 */;

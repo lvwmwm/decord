@@ -1,25 +1,25 @@
-// Module ID: 17562
-// Function ID: 17563
+// Module ID: 17581
+// Function ID: 17582
 // Name: YouBarName
-// Dependencies: [19, 17, 6590, 4800, 4880, 5674, 4890, 6452, 5591, 1087, 21, 4945, 587, 558, 576, 10579, 9146, 10871, 504, 10849, 10556, 10554, 10555, 17563, 10552, 10573, 5195, 4994, 2]
+// Dependencies: [19, 17, 6593, 4800, 4880, 5674, 4890, 6455, 5591, 1087, 21, 4945, 587, 558, 576, 10590, 9158, 10882, 504, 10860, 10567, 10565, 10566, 17582, 10563, 10584, 5195, 4994, 2]
 
-// Module 17562 (YouBarName)
+// Module 17581 (YouBarName)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import GuildTagDefault from "GuildTag" /* 9146 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10554 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10555 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10579 */;
-import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 17563 */;
+import GuildTagDefault from "GuildTag" /* 9158 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10565 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10566 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10590 */;
+import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 17582 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6590 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6593 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
 import PresenceStore from "PresenceStore" /* 5674 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6452 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6455 */;
 import VoiceStateStore from "VoiceStateStore" /* 5591 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -33,7 +33,7 @@ let closure_14;
 let map1;
 let obj2;
 let tmp;
-const ChevronSmallDownIcon = tmp(10871);
+const ChevronSmallDownIcon = tmp(10882);
 const View = react_native.View;
 const ActivityTypes = Constants.ActivityTypes;
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = Fragment);
@@ -143,11 +143,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const tmpResult = userId(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult4 = userId(10849);
+  const tmpResult4 = userId(10860);
   const customStatusActivity = tmpResult4.useCustomStatusActivity();
   let state;
-  const useGameMentionsAsPlainText = userId(10556).useGameMentionsAsPlainText;
-  userId(10556);
+  const useGameMentionsAsPlainText = userId(10567).useGameMentionsAsPlainText;
+  userId(10567);
   if (customStatusActivity != null) {
     state = customStatusActivity.state;
   }
@@ -190,7 +190,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   class M {
     constructor() {
       activities = closure_7.getActivities(userId);
-      found = activities.filter(() => { /* body not rendered: F151577 */ });
+      found = activities.filter(() => { /* body not rendered: F151754 */ });
       obj = closure_0(closure_2[21]);
       items = [, ];
       items[0] = closure_4;
@@ -218,11 +218,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj = userId(504);
   let items = [SelfPresenceStore];
   const stateFromStores = obj.useStateFromStores(items, () => status.getStatus());
-  let obj2 = userId(10849);
+  let obj2 = userId(10860);
   const customStatusActivity = obj2.useCustomStatusActivity();
   let state;
-  const useGameMentionsAsPlainText = userId(10556).useGameMentionsAsPlainText;
-  userId(10556);
+  const useGameMentionsAsPlainText = userId(10567).useGameMentionsAsPlainText;
+  userId(10567);
   if (customStatusActivity != null) {
     state = customStatusActivity.state;
   }
@@ -246,7 +246,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj4 = { style: tmp.statusRow, children: tmp10Result };
   if (stateFromStores1) {
     let obj5 = { userId, emojiSize: 16, maxFontSizeMultiplier: 1.75 };
-    tmp10Result = tmp12(stateFromStores(10552), obj5);
+    tmp10Result = tmp12(stateFromStores(10563), obj5);
   } else {
     let emoji;
     const tmp13 = closure_14;
@@ -256,7 +256,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let tmp12Result2 = null;
     if (null != emoji) {
       const obj6 = { size: 16, style: tmp.statusEmoji, emoji: customStatusActivity.emoji };
-      tmp12Result2 = tmp12(stateFromStores(10573), obj6);
+      tmp12Result2 = tmp12(stateFromStores(10584), obj6);
     }
     const items3 = [tmp12Result2, ];
     const obj7 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, ellipsizeMode: "tail", maxFontSizeMultiplier: 1.75, style: tmp.statusText, children: humanizeStatusResult };

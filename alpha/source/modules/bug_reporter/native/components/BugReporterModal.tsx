@@ -1,9 +1,9 @@
-// Module ID: 13603
-// Function ID: 13604
+// Module ID: 13621
+// Function ID: 13622
 // Name: BugReporterModal
-// Dependencies: [5, 32, 19, 17, 1392, 13602, 21, 4945, 587, 683, 1104, 6620, 1505, 504, 1128, 6872, 8088, 8087, 5625, 13604, 569, 13605, 7431, 6932, 5631, 1417, 1384, 8099, 11620, 1647, 7129, 5932, 5195, 6853, 12030, 6856, 1202, 8058, 5205, 6956, 6935, 6851, 5171, 13614, 2002, 6933, 7128, 1373, 13615, 10087, 558, 576, 7043, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 13620, 21, 4945, 587, 683, 1104, 6623, 1505, 504, 1128, 6875, 8092, 8091, 5625, 13622, 569, 13623, 7434, 6935, 5631, 1417, 1384, 8103, 11633, 1647, 7132, 5935, 5195, 6856, 12045, 6859, 1202, 8062, 5205, 6959, 6938, 6854, 5171, 13632, 2002, 6936, 7131, 1373, 13633, 10098, 558, 576, 7046, 2]
 
-// Module 13603 (BugReporterModal)
+// Module 13621 (BugReporterModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1104 */;
@@ -12,19 +12,19 @@ import AvatarUtils from "AvatarUtils" /* 1417 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
-import NavigatorHeader from "NavigatorHeader" /* 6872 */;
-import TableRadioRow2 from "TableRadioRow" /* 6932 */;
-import Navigator from "Navigator" /* 7043 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7431 */;
-import UploadDefault from "Upload" /* 8087 */;
-import UploadPlatform from "UploadPlatform" /* 8088 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+import NavigatorHeader from "NavigatorHeader" /* 6875 */;
+import TableRadioRow2 from "TableRadioRow" /* 6935 */;
+import Navigator from "Navigator" /* 7046 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7434 */;
+import UploadDefault from "Upload" /* 8091 */;
+import UploadPlatform from "UploadPlatform" /* 8092 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
-import BugReportStore from "BugReportStore" /* 13602 */;
+import BugReportStore from "BugReportStore" /* 13620 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import module_683 from "module_683" /* 683 */;
@@ -741,12 +741,12 @@ class BugCreateScreen {
     }, items5);
     let tmp35 = closure_11;
     let tmp36 = callback;
-    let obj3 = { bottomOffset: screenshotUri(7129).TEXT_AREA_HEIGHT, children: tmp35(Stack, obj4) };
+    let obj3 = { bottomOffset: screenshotUri(7132).TEXT_AREA_HEIGHT, children: tmp35(Stack, obj4) };
     const KeyboardAwareScrollView = screenshotUri(1647).KeyboardAwareScrollView;
     obj4 = { spacing: 24, style: tmp.container, children: items8 };
-    Stack = screenshotUri(5932).Stack;
+    Stack = screenshotUri(5935).Stack;
     let obj5 = { spacing: 8, children: items6 };
-    const Stack2 = screenshotUri(5932).Stack;
+    const Stack2 = screenshotUri(5935).Stack;
     let obj6 = { variant: "text-sm/semibold", color: "text-subtle", children: intl.string(screenshotUri(1128).t.tM969v) };
     let Text = screenshotUri(5195).Text;
     intl = screenshotUri(1128).intl;
@@ -778,7 +778,7 @@ class BugCreateScreen {
         return closure_11(first2, obj, uri.id);
       })
     };
-    const Card = screenshotUri(6853).Card;
+    const Card = screenshotUri(6856).Card;
     items7 = [first4(first3, obj8), ];
     let obj9 = {
       text: intl2.string(screenshotUri(1128).t.HVxmOD),
@@ -792,25 +792,25 @@ class BugCreateScreen {
     items6[1] = closure_11(Card, obj7);
     items8 = [closure_11(Stack2, obj5), , , , , , ];
     let obj10 = { label: intl3.string(screenshotUri(1128).t.OZRgjw), placeholder: intl4.string(screenshotUri(1128).t["6mpW05"]), onChange: tmp4, clearable: true, autoCapitalize: "sentences" };
-    const TextInput = screenshotUri(6956).TextInput;
+    const TextInput = screenshotUri(6959).TextInput;
     intl3 = screenshotUri(1128).intl;
     intl4 = screenshotUri(1128).intl;
     items8[1] = first4(TextInput, obj10);
     if (stateFromStores) {
       let obj11 = { title: intl5.string(tmp25(1128).t["77VVd8"]), hasIcons: false, children: tmp37(TableRow, obj12) };
-      const TableRowGroup = tmp25(6935).TableRowGroup;
+      const TableRowGroup = tmp25(6938).TableRowGroup;
       intl5 = tmp25(1128).intl;
       obj12 = {
         disabled: null == first7,
         onPress() {
             obj = ActionSheetActionCreatorsDefault;
             const obj2 = { features: null != first7 ? first7.features : [], feature: first8, setFeature };
-            return obj.openLazy(asyncRequire(13614, dependencyMap.paths), "BugReporterFeatureActionSheet", obj2);
+            return obj.openLazy(asyncRequire(13632, dependencyMap.paths), "BugReporterFeatureActionSheet", obj2);
           },
         label: name,
         arrow: true
       };
-      TableRow = tmp25(6851).TableRow;
+      TableRow = tmp25(6854).TableRow;
       if (null != first8) {
         name = first8.name;
       } else {
@@ -844,21 +844,21 @@ class BugCreateScreen {
         return authStore(TableRadioRow, obj, value);
       })
     };
-    const TableRadioGroup = tmp25(6933).TableRadioGroup;
+    const TableRadioGroup = tmp25(6936).TableRadioGroup;
     intl7 = tmp25(1128).intl;
     if (num == null) {
       num = -1;
     }
-    const tmp25Result = tmp25(13605);
+    const tmp25Result = tmp25(13623);
     priorities = tmp25Result.getPriorities();
     items8[3] = first4(TableRadioGroup, obj13);
     let obj14 = { label: intl8.string(tmp25(1128).t["1SplH2"]), placeholder: intl9.string(tmp25(1128).t.CQmAZd), onChange: tmp7, autoCorrect: true, autoCapitalize: "sentences" };
-    const TextArea = tmp25(7128).TextArea;
+    const TextArea = tmp25(7131).TextArea;
     intl8 = tmp25(1128).intl;
     intl9 = tmp25(1128).intl;
     items8[4] = first4(TextArea, obj14);
     const obj15 = { label: intl10.string(tmp25(1128).t["7p5pqh"]), placeholder: intl11.string(tmp25(1128).t.HewMzo), onChange: tmp12, clearable: true };
-    const TextInput2 = tmp25(6956).TextInput;
+    const TextInput2 = tmp25(6959).TextInput;
     intl10 = tmp25(1128).intl;
     intl11 = tmp25(1128).intl;
     items8[5] = first4(TextInput2, obj15);
@@ -968,7 +968,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BugReportMod
     intl = intl13.intl;
     return obj2;
   }, items);
-  return closure_10(screenshotUri(7043).Navigator, { screens, initialRouteName: "BUG_REPORT_CREATE" });
+  return closure_10(screenshotUri(7046).Navigator, { screens, initialRouteName: "BUG_REPORT_CREATE" });
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/bug_reporter/native/components/BugReporterModal.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 11674
-// Function ID: 11675
+// Module ID: 11687
+// Function ID: 11688
 // Name: ConjureSmartContext
-// Dependencies: [32, 19, 10991, 10990, 10999, 558, 576, 504, 11084, 1128, 3820, 11027, 2]
+// Dependencies: [32, 19, 11002, 11001, 11011, 558, 576, 504, 11096, 1128, 3820, 11039, 2]
 
-// Module 11674 (ConjureSmartContext)
-import conjureSmartContextConnection from "conjureSmartContextConnection" /* 11084 */;
+// Module 11687 (ConjureSmartContext)
+import conjureSmartContextConnection from "conjureSmartContextConnection" /* 11096 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureChatStore from "ConjureChatStore" /* 10991 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10990 */;
-import ConjureSmartContextStore from "ConjureSmartContextStore" /* 10999 */;
+import ConjureChatStore from "ConjureChatStore" /* 11002 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11001 */;
+import ConjureSmartContextStore from "ConjureSmartContextStore" /* 11011 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

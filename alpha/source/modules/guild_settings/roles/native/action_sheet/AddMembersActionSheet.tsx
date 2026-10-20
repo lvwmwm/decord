@@ -1,9 +1,9 @@
-// Module ID: 18846
-// Function ID: 18847
+// Module ID: 18869
+// Function ID: 18870
 // Name: AddMembersActionSheet
-// Dependencies: [32, 19, 17, 18840, 21, 4945, 587, 558, 576, 5001, 6849, 10626, 5554, 5569, 1202, 11, 4954, 1128, 6777, 18845, 7168, 8914, 8919, 7354, 8926, 5171, 5205, 7194, 5195, 5226, 2]
+// Dependencies: [32, 19, 17, 18863, 21, 4945, 587, 558, 576, 5001, 6852, 10637, 5554, 5569, 1202, 11, 4954, 1128, 6780, 18868, 7171, 8926, 8931, 7357, 8938, 5171, 5205, 7197, 5195, 5226, 2]
 
-// Module 18846 (AddMembersActionSheet)
+// Module 18869 (AddMembersActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -14,12 +14,12 @@ import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4954 */;
 import react_native2 from "react-native" /* 5001 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import RegexUtilsDefault from "RegexUtils" /* 5569 */;
-import GuildUtilsDefault from "GuildUtils" /* 6777 */;
-import FormCheckbox from "FormCheckbox" /* 6849 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8926 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10626 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 18840 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 18845 */;
+import GuildUtilsDefault from "GuildUtils" /* 6780 */;
+import FormCheckbox from "FormCheckbox" /* 6852 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8938 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10637 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 18863 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 18868 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

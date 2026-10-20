@@ -1,9 +1,9 @@
-// Module ID: 12625
-// Function ID: 12626
+// Module ID: 12642
+// Function ID: 12643
 // Name: AutomodUserProfileQuarantineAlert
-// Dependencies: [32, 109, 19, 17, 502, 4860, 4822, 12618, 1087, 4866, 21, 4945, 587, 558, 576, 1128, 1202, 12626, 5195, 5933, 12627, 7436, 573, 4886, 1267, 5224, 2]
+// Dependencies: [32, 109, 19, 17, 502, 4860, 4822, 12635, 1087, 4866, 21, 4945, 587, 558, 576, 1128, 1202, 12643, 5195, 5936, 12644, 7439, 573, 4886, 1267, 5224, 2]
 
-// Module 12625 (AutomodUserProfileQuarantineAlert)
+// Module 12642 (AutomodUserProfileQuarantineAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,10 +13,10 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4866 */;
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4886 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import AlertDefault from "Alert" /* 5933 */;
-import Constants2 from "Constants" /* 12618 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12626 */;
-import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 12627 */;
+import AlertDefault from "Alert" /* 5936 */;
+import Constants2 from "Constants" /* 12635 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12643 */;
+import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 12644 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -364,7 +364,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerSer
     const intl = intl6.intl;
     stringResult = intl.string(intl6.t.TBeZmG);
   }
-  const tmp2Result = tmp2(12627);
+  const tmp2Result = tmp2(12644);
   [closure_129_0, tmp8] = tmp2Result.useOpenFixQuarantinedProfileModal({ guildId });
   _slicedToArray(tmp2Result.useOpenFixQuarantinedProfileModal({ guildId }), 2);
   if (!tmp8) {

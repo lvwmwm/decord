@@ -1,17 +1,17 @@
-// Module ID: 10107
-// Function ID: 10108
+// Module ID: 10118
+// Function ID: 10119
 // Name: StickerPickerListEmptyState
-// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 9840, 5230, 1128, 1202, 10108, 2]
+// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 9852, 5230, 1128, 1202, 10119, 2]
 
-// Module 10107 (StickerPickerListEmptyState)
+// Module 10118 (StickerPickerListEmptyState)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9840 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10108 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9852 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10119 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -118,7 +118,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const items = [insetBottom, insetTop];
   const tmp = closure_7();
   const memo = react.useMemo(() => ({ marginBottom: insetBottom + EXPRESSION_FOOTER_HEIGHT, marginTop: insetTop, flex: 1 }), items);
-  const obj = insetTop(9840);
+  const obj = insetTop(9852);
   const modalDismissGuardRefreshControl = obj.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
     let BottomSheetScrollView = tmp3(5230).BottomSheetScrollView;
@@ -129,7 +129,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (inActionSheet) {
     tmp7 = modalDismissGuardRefreshControl;
   }
-  ({ body: intl.string(insetTop(1128).t.jyiGfc), bodyStyle: null, containerStyle: null, imageStyle: null, source: insetBottom(10108), titleStyle: { marginBottom: 0 } });
+  ({ body: intl.string(insetTop(1128).t.jyiGfc), bodyStyle: null, containerStyle: null, imageStyle: null, source: insetBottom(10119), titleStyle: { marginBottom: 0 } });
   const RefreshEmptyState = tmp3(1202).RefreshEmptyState;
   intl = tmp3(1128).intl;
   ({ emptyStateBody: obj3.bodyStyle, emptyStateContainer: obj3.containerStyle, emptyStateImage: obj3.imageStyle } = tmp);

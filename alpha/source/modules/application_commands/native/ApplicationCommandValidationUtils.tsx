@@ -1,10 +1,10 @@
-// Module ID: 12008
-// Function ID: 12009
+// Module ID: 12023
+// Function ID: 12024
 // Name: application_commands/ApplicationCommandValidationUtils
 // Dependencies: [2]
 // Exports: getFirstInvalidOption
 
-// Module 12008 (application_commands/ApplicationCommandValidationUtils)
+// Module 12023 (application_commands/ApplicationCommandValidationUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_commands/native/ApplicationCommandValidationUtils.tsx");

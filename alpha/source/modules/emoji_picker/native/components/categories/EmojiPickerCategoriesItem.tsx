@@ -1,14 +1,14 @@
-// Module ID: 9875
-// Function ID: 9876
+// Module ID: 9887
+// Function ID: 9888
 // Name: EmojiPickerCategoriesItem
-// Dependencies: [32, 19, 17, 6676, 1087, 21, 4945, 587, 558, 576, 5014, 5167, 5170, 6831, 9876, 8511, 6856, 2]
+// Dependencies: [32, 19, 17, 6679, 1087, 21, 4945, 587, 558, 576, 5014, 5167, 5170, 6834, 9888, 8515, 6859, 2]
 
-// Module 9875 (EmojiPickerCategoriesItem)
+// Module 9887 (EmojiPickerCategoriesItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
 import timing from "timing" /* 5167 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6676 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6679 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;

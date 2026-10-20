@@ -1,13 +1,13 @@
-// Module ID: 12322
-// Function ID: 12323
+// Module ID: 12340
+// Function ID: 12341
 // Name: ConjureSecretsSheet
-// Dependencies: [5, 32, 19, 17, 10990, 21, 4945, 587, 5554, 7231, 12152, 12323, 1128, 3820, 7244, 7194, 5195, 5205, 6956, 2]
+// Dependencies: [5, 32, 19, 17, 11001, 21, 4945, 587, 5554, 7234, 12167, 12341, 1128, 3820, 7247, 7197, 5195, 5205, 6959, 2]
 // Exports: default
 
-// Module 12322 (ConjureSecretsSheet)
+// Module 12340 (ConjureSecretsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10990 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11001 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -238,9 +238,9 @@ export default function ConjureSecretsSheet(projectId) {
     }
   }), items);
   let obj = { ref, startExpanded: true, keyboardShouldPersistTaps: "handled", header: c8(BottomSheetTitleHeader, obj2), children: tmp17(tmp18, obj3) };
-  const ActionSheet = projectId(7244).ActionSheet;
+  const ActionSheet = projectId(7247).ActionSheet;
   obj2 = { title: intl.string(request(3820).TuMGZp) };
-  BottomSheetTitleHeader = projectId(7194).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = projectId(7197).BottomSheetTitleHeader;
   intl = projectId(1128).intl;
   obj3 = { style: tmp3.container, children: items1 };
   let tmp15Result = null;

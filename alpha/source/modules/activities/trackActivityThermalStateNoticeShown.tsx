@@ -1,10 +1,10 @@
-// Module ID: 18383
-// Function ID: 18384
+// Module ID: 18405
+// Function ID: 18406
 // Name: trackActivityThermalStateNoticeShown
 // Dependencies: [4800, 5676, 4799, 1087, 4869, 1267, 2]
 // Exports: trackActivityThermalStateNoticeShown
 
-// Module 18383 (trackActivityThermalStateNoticeShown)
+// Module 18405 (trackActivityThermalStateNoticeShown)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4869 */;

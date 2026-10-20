@@ -1,16 +1,16 @@
-// Module ID: 8390
-// Function ID: 8391
+// Module ID: 8394
+// Function ID: 8395
 // Name: GiftIntentSystemMessage
-// Dependencies: [4945, 587, 8391, 8266, 8398, 8221, 8224, 2]
+// Dependencies: [4945, 587, 8395, 8270, 8402, 8225, 8228, 2]
 // Exports: createGiftIntentSystemMessage
 
-// Module 8390 (GiftIntentSystemMessage)
+// Module 8394 (GiftIntentSystemMessage)
 import nativeDefault from "native" /* 587 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8221 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8224 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8266 */;
-import GiftIntentEmbed from "GiftIntentEmbed" /* 8391 */;
-import EphemeralIndication from "EphemeralIndication" /* 8398 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8225 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8228 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8270 */;
+import GiftIntentEmbed from "GiftIntentEmbed" /* 8395 */;
+import EphemeralIndication from "EphemeralIndication" /* 8402 */;
 import createStyles from "createStyles" /* 4945 */;
 import size from "module_2" /* 2 */;
 

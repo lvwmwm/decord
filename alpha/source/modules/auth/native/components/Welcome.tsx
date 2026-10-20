@@ -1,9 +1,9 @@
-// Module ID: 17096
-// Function ID: 17097
+// Module ID: 17115
+// Function ID: 17116
 // Name: Welcome
-// Dependencies: [19, 17, 17097, 5151, 7513, 13111, 1406, 5662, 8976, 1087, 7373, 7752, 21, 4945, 587, 558, 576, 13463, 1128, 38, 1202, 4994, 5195, 5631, 14341, 6986, 7022, 14903, 1505, 1633, 504, 7530, 1267, 510, 5224, 6616, 5560, 17098, 17093, 1506, 5205, 6644, 5229, 12662, 4999, 2]
+// Dependencies: [19, 17, 17116, 5151, 7516, 13129, 1406, 5662, 8988, 1087, 7376, 7756, 21, 4945, 587, 558, 576, 13481, 1128, 38, 1202, 4994, 5195, 5631, 14359, 6989, 7025, 14921, 1505, 1633, 504, 7533, 1267, 510, 5224, 6619, 5560, 17117, 17112, 1506, 5205, 6647, 5229, 12679, 4999, 2]
 
-// Module 17096 (Welcome)
+// Module 17115 (Welcome)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,24 +14,24 @@ import Link from "Link" /* 1506 */;
 import UserUtilsDefault from "UserUtils" /* 4994 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6986 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7022 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7373 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7530 */;
-import Constants2 from "Constants" /* 7752 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 13463 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14341 */;
-import AssetRegistry from "AssetRegistry" /* 14903 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17093 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6989 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7025 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7376 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7533 */;
+import Constants2 from "Constants" /* 7756 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 13481 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14359 */;
+import AssetRegistry from "AssetRegistry" /* 14921 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17112 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AgeGateStore from "AgeGateStore" /* 17097 */;
+import AgeGateStore from "AgeGateStore" /* 17116 */;
 import ExperimentStore from "ExperimentStore" /* 5151 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7513 */;
-import MultiAccountStore from "MultiAccountStore" /* 13111 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7516 */;
+import MultiAccountStore from "MultiAccountStore" /* 13129 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import InviteStore from "InviteStore" /* 5662 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 8976 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 8988 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;

@@ -1,19 +1,19 @@
-// Module ID: 10666
-// Function ID: 10667
+// Module ID: 10677
+// Function ID: 10678
 // Name: markUnread
-// Dependencies: [5, 4882, 4800, 5965, 6719, 1392, 1087, 3, 11, 8231, 1297, 2]
+// Dependencies: [5, 4882, 4800, 5968, 6722, 1392, 1087, 3, 11, 8235, 1297, 2]
 // Exports: default
 
-// Module 10666 (markUnread)
+// Module 10677 (markUnread)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1087 */;
-import ReadStateStore from "ReadStateStore" /* 6719 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8231 */;
+import ReadStateStore from "ReadStateStore" /* 6722 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8235 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4882 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
-import MessageStore from "MessageStore" /* 5965 */;
+import MessageStore from "MessageStore" /* 5968 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 

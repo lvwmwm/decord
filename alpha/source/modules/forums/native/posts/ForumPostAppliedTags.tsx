@@ -1,12 +1,12 @@
-// Module ID: 12908
-// Function ID: 12909
+// Module ID: 12926
+// Function ID: 12927
 // Name: ForumPostAppliedTags
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 10328, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 10339, 2]
 
-// Module 12908 (ForumPostAppliedTags)
+// Module 12926 (ForumPostAppliedTags)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import AppliedForumTag2 from "AppliedForumTag" /* 10328 */;
+import AppliedForumTag2 from "AppliedForumTag" /* 10339 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -89,7 +89,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostApp
           const obj3 = { tag: obj4, containerStyle: tmp4.tag, hasUnreads };
           const _HermesInternal = HermesInternal;
           obj4 = { id: "-1", name: "+" + num };
-          const AppliedForumTagPill = tmp(10328).AppliedForumTagPill;
+          const AppliedForumTagPill = tmp(10339).AppliedForumTagPill;
           tmp10 = closure_3(AppliedForumTagPill, obj3);
         }
         cResult[10] = num;
@@ -156,7 +156,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostApp
     const obj2 = { tag: obj3, containerStyle: tmp.tag, hasUnreads };
     const _HermesInternal = HermesInternal;
     obj3 = { id: "-1", name: "+" + num };
-    const AppliedForumTagPill = hasUnreads(10328).AppliedForumTagPill;
+    const AppliedForumTagPill = hasUnreads(10339).AppliedForumTagPill;
     tmp4 = closure_3(AppliedForumTagPill, obj2);
   }
   items1[1] = tmp4;

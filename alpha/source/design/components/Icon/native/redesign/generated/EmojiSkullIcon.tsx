@@ -1,14 +1,14 @@
-// Module ID: 16478
-// Function ID: 16479
+// Module ID: 16497
+// Function ID: 16498
 // Name: EmojiSkullIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16479, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16498, 5630, 2]
 
-// Module 16478 (EmojiSkullIcon)
+// Module 16497 (EmojiSkullIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 16479 */;
+import AssetRegistry from "AssetRegistry" /* 16498 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

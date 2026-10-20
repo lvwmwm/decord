@@ -1,111 +1,31 @@
 // Module ID: 10225
 // Function ID: 10226
-// Dependencies: [41, 42, 93, 95, 98, 10138, 10139, 10140]
+// Dependencies: []
+// Exports: parseYear
 
 // Module 10225
-import Meridiem from "Meridiem" /* 10138 */;
-import assignSimilarDate from "assignSimilarDate" /* 10139 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10140 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class NLCasualTimeParser {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, NLCasualTimeParser);
-    const obj = _getPrototypeOf(NLCasualTimeParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
+export const parseYear = function parseYear(match) {
+  if (match.match(/^[0-9]{1,4}$/)) {
+    const _parseInt3 = parseInt;
+    const parsed = parseInt(match);
+    let sum = parsed;
+    if (parsed < 100) {
+      let num3 = 2000;
+      if (parsed > 50) {
+        num3 = 1900;
+      }
+      sum = parsed + num3;
     }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(NLCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
-const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return /(deze)?\s*(namiddag|avond|middernacht|ochtend|middag|'s middags|'s avonds|'s ochtends)(?=\W|$)/i;
+    return sum;
+  } else if (match.match(/a\.?\s*c\.?/i)) {
+    const _parseInt2 = parseInt;
+    return -parseInt(match.replace(/a\.?\s*c\.?/i, ""));
+  } else {
+    const _parseInt = parseInt;
+    return parseInt(match);
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(refDate, arg1) {
-      refDate = refDate.refDate;
-      const parsingComponents = refDate.createParsingComponents();
-      if ("deze" === arg1[1]) {
-        const refDate2 = refDate.refDate;
-        parsingComponents.assign("day", refDate2.getDate());
-        const refDate3 = refDate.refDate;
-        parsingComponents.assign("month", refDate3.getMonth() + 1);
-        const refDate4 = refDate.refDate;
-        parsingComponents.assign("year", refDate4.getFullYear());
-      }
-      const str4 = arg1[2];
-      const formatted = str4.toLowerCase();
-      if ("namiddag" !== formatted) {
-        if ("'s namiddags" !== formatted) {
-          if ("avond" !== formatted) {
-            if ("'s avonds'" !== formatted) {
-              if ("middernacht" === formatted) {
-                const _Date = Date;
-                const self = this;
-                const self2 = this;
-                const date = new Date(refDate.getTime());
-                date.setDate(date.getDate() + 1);
-                assignSimilarDate.assignSimilarDate(parsingComponents, date);
-                assignSimilarDate.implySimilarTime(parsingComponents, date);
-                parsingComponents.imply("hour", 0);
-                parsingComponents.imply("minute", 0);
-                parsingComponents.imply("second", 0);
-              } else {
-                if ("ochtend" !== formatted) {
-                  if ("'s ochtends" !== formatted) {
-                    if ("middag" === formatted) {
-                      parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
-                      parsingComponents.imply("hour", 12);
-                    }
-                  }
-                }
-                parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
-                parsingComponents.imply("hour", 6);
-              }
-            }
-          }
-          parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
-          parsingComponents.imply("hour", 20);
-        }
-        return parsingComponents;
-      }
-      parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
-      parsingComponents.imply("hour", 15);
-    }
-  }
-];
-
-export default _createClass(NLCasualTimeParser, items);
+export const WEEKDAY_DICTIONARY = { domingo: 0, dom: 0, segunda: 1, "segunda-feira": 1, seg: 1, "ter\u00e7a": 2, "ter\u00e7a-feira": 2, ter: 2, quarta: 3, "quarta-feira": 3, qua: 3, quinta: 4, "quinta-feira": 4, qui: 4, sexta: 5, "sexta-feira": 5, sex: 5, "s\u00e1bado": 6, sabado: 6, sab: 6 };
+export const MONTH_DICTIONARY = { janeiro: 1, jan: 1, "jan.": 1, fevereiro: 2, fev: 2, "fev.": 2, "mar\u00e7o": 3, mar: 3, "mar.": 3, abril: 4, abr: 4, "abr.": 4, maio: 5, mai: 5, "mai.": 5, junho: 6, jun: 6, "jun.": 6, julho: 7, jul: 7, "jul.": 7, agosto: 8, ago: 8, "ago.": 8, setembro: 9, set: 9, "set.": 9, outubro: 10, out: 10, "out.": 10, novembro: 11, nov: 11, "nov.": 11, dezembro: 12, dez: 12, "dez.": 12 };
+export const YEAR_PATTERN = "[0-9]{1,4}(?![^\\s]\\d)(?:\\s*[a|d]\\.?\\s*c\\.?|\\s*a\\.?\\s*d\\.?)?";

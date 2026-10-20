@@ -1,14 +1,14 @@
-// Module ID: 6963
-// Function ID: 6964
+// Module ID: 6966
+// Function ID: 6967
 // Name: TextField
-// Dependencies: [109, 19, 21, 558, 576, 6964, 6965, 6969, 6973, 2]
+// Dependencies: [109, 19, 21, 558, 576, 6967, 6968, 6972, 6976, 2]
 
-// Module 6963 (TextField)
+// Module 6966 (TextField)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useTextField from "useTextField" /* 6964 */;
-import useInputClearButton from "useInputClearButton" /* 6965 */;
-import useInputAttachments from "useInputAttachments" /* 6969 */;
+import useTextField from "useTextField" /* 6967 */;
+import useInputClearButton from "useInputClearButton" /* 6968 */;
+import useInputAttachments from "useInputAttachments" /* 6972 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -73,7 +73,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextField(
       }
     }
   }
-  const BaseTextField = tmp(6973).BaseTextField;
+  const BaseTextField = tmp(6976).BaseTextField;
   const merged = Object.assign(inputProps);
   const tmp17 = <BaseTextField ref={innerRef} leading={leading} trailing={trailing} inputStyle={inputStyle} />;
   cResult[5] = inputStyle;
@@ -106,7 +106,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextField(
   const tmp2Result = useInputAttachments;
   const inputAttachments = tmp2Result.useInputAttachments(merged, tmp6);
   ({ leading, trailing, inputStyle } = inputAttachments);
-  const BaseTextField = tmp2(6973).BaseTextField;
+  const BaseTextField = tmp2(6976).BaseTextField;
   const merged1 = Object.assign(inputProps);
   return <BaseTextField ref={innerRef} leading={leading} trailing={trailing} inputStyle={inputStyle} />;
 });

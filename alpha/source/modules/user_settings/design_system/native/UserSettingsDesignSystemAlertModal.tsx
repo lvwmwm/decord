@@ -1,13 +1,13 @@
-// Module ID: 16876
-// Function ID: 16877
+// Module ID: 16895
+// Function ID: 16896
 // Name: UserSettingsDesignSystemAlertModal
-// Dependencies: [5, 19, 17, 21, 558, 576, 5869, 5865, 4945, 5205, 2]
+// Dependencies: [5, 19, 17, 21, 558, 576, 5872, 5868, 4945, 5205, 2]
 
-// Module 16876 (UserSettingsDesignSystemAlertModal)
+// Module 16895 (UserSettingsDesignSystemAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useAlertStore from "useAlertStore" /* 5865 */;
-import AlertModal2 from "AlertModal" /* 5869 */;
+import useAlertStore from "useAlertStore" /* 5868 */;
+import AlertModal2 from "AlertModal" /* 5872 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -95,8 +95,8 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoMod
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp7 = jsx;
-    const AlertModal = tmp(5869).AlertModal;
-    const items = [jsx(tmp(5869).AlertActionButton, { variant: "destructive", onPress: first, text: "Clear" }, "clear"), ];
+    const AlertModal = tmp(5872).AlertModal;
+    const items = [jsx(tmp(5872).AlertActionButton, { variant: "destructive", onPress: first, text: "Clear" }, "clear"), ];
     items[1] = jsx(AlertModal2.AlertActionButton, { variant: "secondary", onPress: first, text: "Cancel" }, "cancel");
     const tmp8 = <AlertModal title="Are you sure?" content="This will clear 3 incoming friend requests. The users who sent them won’t be informed." actions={items} />;
     cResult[1] = tmp8;

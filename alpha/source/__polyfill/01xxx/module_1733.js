@@ -96,7 +96,7 @@ let fn = function n(userConfig, callback) {
       initialVelocity: 0,
       current: "emoji",
       lastTimestamp: null,
-      startTimestamp: "star2",
+      startTimestamp: "control_ack",
       reduceMotion: tmp4Result.getReduceMotionForAnimation(obj.reduceMotion)
     };
     num = obj.velocity;

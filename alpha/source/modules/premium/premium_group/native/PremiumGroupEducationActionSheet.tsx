@@ -1,9 +1,9 @@
-// Module ID: 14624
-// Function ID: 14625
+// Module ID: 14642
+// Function ID: 14643
 // Name: PremiumGroupEducationActionSheet
-// Dependencies: [17, 2067, 21, 4945, 587, 558, 576, 6960, 5195, 1128, 3240, 5226, 2]
+// Dependencies: [17, 2067, 21, 4945, 587, 558, 576, 6963, 5195, 1128, 3240, 5226, 2]
 
-// Module 14624 (PremiumGroupEducationActionSheet)
+// Module 14642 (PremiumGroupEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,7 +12,7 @@ import PremiumGroupConstants from "PremiumGroupConstants" /* 2067 */;
 import _modDef3240 from "module_3240" /* 3240 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5226 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6960 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6963 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,25 +1,18 @@
 // Module ID: 5912
 // Function ID: 5913
-// Dependencies: [109, 19, 17, 21, 5913]
-// Exports: default
+// Dependencies: [17, 26, 106, 65]
 
 // Module 5912
 import react_native from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
-import ScreenContentWrapperDefault from "ScreenContentWrapper" /* 5913 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import react from "react" /* 19 */;
+import _mod26 from "module_26" /* 26 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
-const Platform = react_native.Platform;
-const jsx = Fragment.jsx;
+let obj2;
+const codegenNativeComponent = react_native.codegenNativeComponent;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSScreenStack", directEventTypes: { topFinishTransitioning: { registrationName: "onFinishTransitioning" } }, validAttributes: obj2 };
+obj2 = { nativeContainerBackgroundColor: _mod26.colorAttribute };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onFinishTransitioning: true }));
 
-export default function _default(arg0) {
-  let contentStyle;
-  let style;
-  ({ contentStyle, style } = arg0);
-  const merged = Object.assign(arg0, Object.assign({ contentStyle: 0, style: 0 }));
-  const items = [style, contentStyle];
-  ScreenContentWrapperDefault;
-  const merged1 = Object.assign(merged);
-  return <tmp2 style={items} />;
-};
+export default module_65.get("RNSScreenStack", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

@@ -1,26 +1,26 @@
-// Module ID: 15819
-// Function ID: 15820
+// Module ID: 15838
+// Function ID: 15839
 // Name: SafetyHubAccountStanding
-// Dependencies: [32, 19, 17, 1392, 7866, 7842, 21, 7843, 15820, 4945, 587, 558, 576, 1128, 15812, 7213, 6960, 11319, 6966, 6980, 504, 1417, 9322, 1202, 5195, 2]
+// Dependencies: [32, 19, 17, 1392, 7870, 7846, 21, 7847, 15839, 4945, 587, 558, 576, 1128, 15831, 7216, 6963, 11330, 6969, 6983, 504, 1417, 9334, 1202, 5195, 2]
 
-// Module 15819 (SafetyHubAccountStanding)
+// Module 15838 (SafetyHubAccountStanding)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6960 */;
-import CircleXIcon from "CircleXIcon" /* 6966 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6980 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7213 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7842 */;
-import SafetyHubModels from "SafetyHubModels" /* 7843 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11319 */;
-import SafetyHubAccountStandingLabels from "SafetyHubAccountStandingLabels" /* 15812 */;
-import SafetyHubAccountStandingSubwayMarker from "SafetyHubAccountStandingSubwayMarker" /* 15820 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6963 */;
+import CircleXIcon from "CircleXIcon" /* 6969 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6983 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7216 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7846 */;
+import SafetyHubModels from "SafetyHubModels" /* 7847 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11330 */;
+import SafetyHubAccountStandingLabels from "SafetyHubAccountStandingLabels" /* 15831 */;
+import SafetyHubAccountStandingSubwayMarker from "SafetyHubAccountStandingSubwayMarker" /* 15839 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import SafetyHubStore from "SafetyHubStore" /* 7866 */;
+import SafetyHubStore from "SafetyHubStore" /* 7870 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -134,7 +134,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubAcc
     tmp10 = cResult[1];
   }
   if (cResult[2] !== tmp9.good) {
-    let obj4 = { title: tmp(1128).t.uaKrRi, description: tmp10, status: tmp(15812).ACCOUNT_STANDING_SHORT_STATUS[tmp(undefined, 7843).AccountStandingState.ALL_GOOD], style: tmp9.good, CustomIcon: tmp(7213).CircleCheckIcon };
+    let obj4 = { title: tmp(1128).t.uaKrRi, description: tmp10, status: tmp(15831).ACCOUNT_STANDING_SHORT_STATUS[tmp(undefined, 7847).AccountStandingState.ALL_GOOD], style: tmp9.good, CustomIcon: tmp(7216).CircleCheckIcon };
     cResult[2] = tmp9.good;
     cResult[3] = obj4;
     tmp13 = obj4;
@@ -150,7 +150,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubAcc
     tmp14 = cResult[4];
   }
   if (cResult[5] !== tmp9.limited) {
-    const obj5 = { title: tmp(1128).t.epkcmS, description: tmp14, status: tmp(15812).ACCOUNT_STANDING_SHORT_STATUS[tmp(undefined, 7843).AccountStandingState.LIMITED], style: tmp9.limited, CustomIcon: tmp(6960).CircleErrorIcon, iconSource: first1(11319) };
+    const obj5 = { title: tmp(1128).t.epkcmS, description: tmp14, status: tmp(15831).ACCOUNT_STANDING_SHORT_STATUS[tmp(undefined, 7847).AccountStandingState.LIMITED], style: tmp9.limited, CustomIcon: tmp(6963).CircleErrorIcon, iconSource: first1(11330) };
     cResult[5] = tmp9.limited;
     cResult[6] = obj5;
     tmp16 = obj5;
@@ -166,7 +166,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubAcc
     tmp18 = cResult[7];
   }
   if (cResult[8] !== tmp9.veryLimited) {
-    const obj6 = { title: tmp(1128).t.crzE2X, description: tmp18, status: tmp(15812).ACCOUNT_STANDING_SHORT_STATUS[tmp(undefined, 7843).AccountStandingState.VERY_LIMITED], style: tmp9.veryLimited, CustomIcon: tmp(6960).CircleErrorIcon, iconSource: first1(11319) };
+    const obj6 = { title: tmp(1128).t.crzE2X, description: tmp18, status: tmp(15831).ACCOUNT_STANDING_SHORT_STATUS[tmp(undefined, 7847).AccountStandingState.VERY_LIMITED], style: tmp9.veryLimited, CustomIcon: tmp(6963).CircleErrorIcon, iconSource: first1(11330) };
     cResult[8] = tmp9.veryLimited;
     cResult[9] = obj6;
     tmp20 = obj6;
@@ -182,7 +182,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubAcc
     tmp22 = cResult[10];
   }
   if (cResult[11] !== tmp9.atRisk) {
-    let obj7 = { title: tmp(1128).t.XRNVzO, description: tmp22, status: tmp(15812).ACCOUNT_STANDING_SHORT_STATUS[tmp(undefined, 7843).AccountStandingState.AT_RISK], style: tmp9.atRisk, CustomIcon: tmp(6960).CircleErrorIcon, iconSource: first1(11319) };
+    let obj7 = { title: tmp(1128).t.XRNVzO, description: tmp22, status: tmp(15831).ACCOUNT_STANDING_SHORT_STATUS[tmp(undefined, 7847).AccountStandingState.AT_RISK], style: tmp9.atRisk, CustomIcon: tmp(6963).CircleErrorIcon, iconSource: first1(11330) };
     cResult[11] = tmp9.atRisk;
     cResult[12] = obj7;
     tmp24 = obj7;
@@ -198,7 +198,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubAcc
     tmp26 = cResult[13];
   }
   if (cResult[14] !== tmp9.suspended) {
-    const obj8 = { title: tmp(1128).t.MExFkz, description: tmp26, status: tmp(15812).ACCOUNT_STANDING_SHORT_STATUS[tmp(undefined, 7843).AccountStandingState.SUSPENDED], style: tmp9.suspended, CustomIcon: tmp(6966).CircleXIcon, iconSource: first1(6980) };
+    const obj8 = { title: tmp(1128).t.MExFkz, description: tmp26, status: tmp(15831).ACCOUNT_STANDING_SHORT_STATUS[tmp(undefined, 7847).AccountStandingState.SUSPENDED], style: tmp9.suspended, CustomIcon: tmp(6969).CircleXIcon, iconSource: first1(6983) };
     cResult[14] = tmp9.suspended;
     cResult[15] = obj8;
     tmp28 = obj8;
@@ -257,7 +257,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubAcc
                       const obj10 = first1(1417);
                       userAvatarSource = obj10.getUserAvatarSource(stateFromStores);
                     } else {
-                      userAvatarSource = first1(9322);
+                      userAvatarSource = first1(9334);
                     }
                     cResult[32] = stateFromStores;
                     cResult[33] = userAvatarSource;
@@ -508,11 +508,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubAcc
     }
   }
   const obj23 = {};
-  obj23[tmp(7843).AccountStandingState.ALL_GOOD] = tmp13;
-  obj23[tmp(7843).AccountStandingState.LIMITED] = tmp16;
-  obj23[tmp(7843).AccountStandingState.VERY_LIMITED] = tmp20;
-  obj23[tmp(7843).AccountStandingState.AT_RISK] = tmp24;
-  obj23[tmp(7843).AccountStandingState.SUSPENDED] = tmp28;
+  obj23[tmp(7847).AccountStandingState.ALL_GOOD] = tmp13;
+  obj23[tmp(7847).AccountStandingState.LIMITED] = tmp16;
+  obj23[tmp(7847).AccountStandingState.VERY_LIMITED] = tmp20;
+  obj23[tmp(7847).AccountStandingState.AT_RISK] = tmp24;
+  obj23[tmp(7847).AccountStandingState.SUSPENDED] = tmp28;
   cResult[16] = tmp28;
   cResult[17] = tmp13;
   cResult[18] = tmp16;
@@ -623,7 +623,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubAcc
     let obj2 = height(1417);
     userAvatarSource = obj2.getUserAvatarSource(stateFromStores);
   } else {
-    userAvatarSource = height(9322);
+    userAvatarSource = height(9334);
   }
   const style = tmp13.style;
   let obj3 = { style: tmp4.container, children: items3 };

@@ -1,17 +1,17 @@
-// Module ID: 12341
-// Function ID: 12342
+// Module ID: 12358
+// Function ID: 12359
 // Name: ConjureUsageSheet
-// Dependencies: [19, 17, 10991, 21, 4945, 587, 558, 576, 5195, 10997, 504, 7244, 7194, 1128, 3820, 5932, 2]
+// Dependencies: [19, 17, 11002, 21, 4945, 587, 558, 576, 5195, 11009, 504, 7247, 7197, 1128, 3820, 5935, 2]
 
-// Module 12341 (ConjureUsageSheet)
+// Module 12358 (ConjureUsageSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3820 from "module_3820" /* 3820 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import ConjureUsageTypes from "ConjureUsageTypes" /* 10997 */;
+import ConjureUsageTypes from "ConjureUsageTypes" /* 11009 */;
 import react from "react" /* 19 */;
-import ConjureChatStore from "ConjureChatStore" /* 10991 */;
+import ConjureChatStore from "ConjureChatStore" /* 11002 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -303,17 +303,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
         }
       }
     }
-    const sumTokenUsage = projectId(10997).sumTokenUsage;
-    projectId(10997);
-    const tmpResult9 = projectId(10997);
+    const sumTokenUsage = projectId(11009).sumTokenUsage;
+    projectId(11009);
+    const tmpResult9 = projectId(11009);
     const sumTokenUsageResult = tmpResult9.sumTokenUsage(stateFromStores.orchestrator, stateFromStores.codegen);
-    const tmpResult10 = projectId(10997);
+    const tmpResult10 = projectId(11009);
     const sumTokenUsageResult1 = sumTokenUsage(sumTokenUsageResult, tmpResult10.usageOrEmpty(stateFromStores.compaction));
-    const ActionSheet = tmp(7244).ActionSheet;
+    const ActionSheet = tmp(7247).ActionSheet;
     const _Symbol = Symbol;
     if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
       const obj7 = { title: intl.string(_modDef3820.p5EGzq) };
-      const BottomSheetTitleHeader = tmp(7194).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(7197).BottomSheetTitleHeader;
       intl = tmp(1128).intl;
       const tmp28 = closure_5(BottomSheetTitleHeader, obj7);
       cResult[26] = tmp28;
@@ -321,14 +321,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
     } else {
       tmp25 = cResult[26];
     }
-    const Stack = tmp(5932).Stack;
+    const Stack = tmp(5935).Stack;
     const PX_12 = nativeDefault.space.PX_12;
     if (cResult[27] !== stateFromStores.cost_usd) {
       const intl2 = tmp(1128).intl;
       const formatToPlainString = intl2.formatToPlainString;
       const obj8 = { runes: runesFromUsdResult.toLocaleString() };
       const gMuw5d = tmp30(3820).gMuw5d;
-      const tmpResult11 = projectId(10997);
+      const tmpResult11 = projectId(11009);
       runesFromUsdResult = tmpResult11.runesFromUsd(stateFromStores.cost_usd);
       const formatToPlainStringResult = formatToPlainString(gMuw5d, obj8);
       cResult[27] = stateFromStores.cost_usd;
@@ -392,7 +392,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
       tmp48 = cResult[37];
     }
     if (cResult[38] !== stateFromStores.compaction) {
-      const tmpResult12 = projectId(10997);
+      const tmpResult12 = projectId(11009);
       const usageOrEmptyResult = tmpResult12.usageOrEmpty(stateFromStores.compaction);
       cResult[38] = stateFromStores.compaction;
       cResult[39] = usageOrEmptyResult;
@@ -419,7 +419,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
       tmp56 = cResult[42];
     }
     if (cResult[43] !== stateFromStores.classifier) {
-      const tmpResult13 = projectId(10997);
+      const tmpResult13 = projectId(11009);
       const usageOrEmptyResult1 = tmpResult13.usageOrEmpty(stateFromStores.classifier);
       cResult[43] = stateFromStores.classifier;
       cResult[44] = usageOrEmptyResult1;
@@ -468,7 +468,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
           }
           const Text2 = tmp(5195).Text;
           const _Math = Math;
-          const tmpResult14 = projectId(10997);
+          const tmpResult14 = projectId(11009);
           const roundResult = round(100 * tmpResult14.cacheHitRate(sumTokenUsageResult1));
           cResult[4] = tmp4.label;
           cResult[5] = tmp4.row;
@@ -511,7 +511,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
       }
     }
     const obj16 = { direction: "vertical", spacing: nativeDefault.space.PX_4, children: items4 };
-    const Stack2 = tmp(5932).Stack;
+    const Stack2 = tmp(5935).Stack;
     items4 = [tmp38, tmp44, tmp52, tmp60];
     const tmp66 = closure_6(Stack2, obj16);
     cResult[47] = tmp38;
@@ -555,31 +555,31 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
   if (null == stateFromStores) {
     return null;
   } else {
-    const sumTokenUsage = projectId(10997).sumTokenUsage;
-    projectId(10997);
-    const tmp2Result7 = projectId(10997);
+    const sumTokenUsage = projectId(11009).sumTokenUsage;
+    projectId(11009);
+    const tmp2Result7 = projectId(11009);
     const sumTokenUsageResult = tmp2Result7.sumTokenUsage(stateFromStores.orchestrator, stateFromStores.codegen);
-    const tmp2Result8 = projectId(10997);
+    const tmp2Result8 = projectId(11009);
     const obj2 = { header: closure_5(BottomSheetTitleHeader, obj3), children: closure_5(View, obj4) };
     const sumTokenUsageResult1 = sumTokenUsage(sumTokenUsageResult, tmp2Result8.usageOrEmpty(stateFromStores.compaction));
-    const ActionSheet = tmp2(7244).ActionSheet;
+    const ActionSheet = tmp2(7247).ActionSheet;
     obj3 = { title: intl.string(_modDef3820.p5EGzq) };
-    BottomSheetTitleHeader = tmp2(7194).BottomSheetTitleHeader;
+    BottomSheetTitleHeader = tmp2(7197).BottomSheetTitleHeader;
     intl = tmp2(1128).intl;
     obj4 = { children: closure_6(Stack, obj5) };
     obj5 = { direction: "vertical", spacing: nativeDefault.space.PX_12, children: items2 };
-    Stack = tmp2(5932).Stack;
+    Stack = tmp2(5935).Stack;
     const obj6 = { variant: "text-md/semibold", color: "text-default", children: formatToPlainString(gMuw5d, obj7) };
     const Text = tmp2(5195).Text;
     const intl2 = tmp2(1128).intl;
     formatToPlainString = intl2.formatToPlainString;
     obj7 = { runes: runesFromUsdResult.toLocaleString() };
     gMuw5d = _modDef3820.gMuw5d;
-    const tmp2Result9 = projectId(10997);
+    const tmp2Result9 = projectId(11009);
     runesFromUsdResult = tmp2Result9.runesFromUsd(stateFromStores.cost_usd);
     items2 = [closure_5(Text, obj6), , ];
     const obj8 = { direction: "vertical", spacing: nativeDefault.space.PX_4, children: items3 };
-    const Stack2 = tmp2(5932).Stack;
+    const Stack2 = tmp2(5935).Stack;
     const obj9 = { label: intl3.string(_modDef3820.xtxP0e), usage: stateFromStores.orchestrator };
     intl3 = tmp2(1128).intl;
     items3 = [closure_5(closure_8, obj9), , , ];
@@ -588,11 +588,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
     items3[1] = closure_5(closure_8, obj10);
     const obj11 = { label: intl5.string(_modDef3820.ANCEo3), usage: tmp2Result10.usageOrEmpty(stateFromStores.compaction) };
     intl5 = tmp2(1128).intl;
-    tmp2Result10 = projectId(10997);
+    tmp2Result10 = projectId(11009);
     items3[2] = closure_5(closure_8, obj11);
     const obj12 = { label: intl6.string(_modDef3820.ugL6D4), usage: tmp2Result11.usageOrEmpty(stateFromStores.classifier) };
     intl6 = tmp2(1128).intl;
-    tmp2Result11 = projectId(10997);
+    tmp2Result11 = projectId(11009);
     items3[3] = closure_5(closure_8, obj12);
     items2[1] = closure_6(Stack2, obj8);
     const obj13 = { style: tmp.row, children: items4 };
@@ -606,7 +606,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUsage
     const Text3 = tmp2(5195).Text;
     round = Math.round;
     const _HermesInternal = HermesInternal;
-    tmp2Result12 = projectId(10997);
+    tmp2Result12 = projectId(11009);
     items4[1] = closure_5(Text3, obj16);
     items2[2] = closure_6(View, obj13);
     return closure_5(ActionSheet, obj2);

@@ -1,17 +1,17 @@
-// Module ID: 9223
-// Function ID: 9224
+// Module ID: 9235
+// Function ID: 9236
 // Name: GameProfileHeader
-// Dependencies: [19, 17, 9221, 21, 4945, 587, 558, 576, 5014, 9224, 9225, 5631, 5219, 9226, 5195, 9228, 2]
+// Dependencies: [19, 17, 9233, 21, 4945, 587, 558, 576, 5014, 9236, 9237, 5631, 5219, 9238, 5195, 9240, 2]
 
-// Module 9223 (GameProfileHeader)
+// Module 9235 (GameProfileHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
 import LinearGradientDefault from "LinearGradient" /* 5219 */;
-import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 9225 */;
+import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 9237 */;
 import react from "react" /* 19 */;
-import GameProfileConstants from "GameProfileConstants" /* 9221 */;
+import GameProfileConstants from "GameProfileConstants" /* 9233 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -32,7 +32,7 @@ let rect;
 let size;
 let size1;
 let tmp;
-const SKUUtils = tmp(9224);
+const SKUUtils = tmp(9236);
 let View = react_native.View;
 ({ DISCORD_APP_GAME_ID: hasOwnProperty, MOBILE_GAME_PROFILE_MAX_WIDTH } = GameProfileConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);

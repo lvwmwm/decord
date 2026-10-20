@@ -1,16 +1,16 @@
-// Module ID: 11853
-// Function ID: 11854
+// Module ID: 11867
+// Function ID: 11868
 // Name: useApplicationWidgetLayoutRendererProps
-// Dependencies: [32, 19, 11854, 11726, 2069, 558, 576, 11728, 504, 11727, 11759, 1388, 11855, 2]
+// Dependencies: [32, 19, 11868, 11740, 2069, 558, 576, 11742, 504, 11741, 11773, 1388, 11869, 2]
 
-// Module 11853 (useApplicationWidgetLayoutRendererProps)
+// Module 11867 (useApplicationWidgetLayoutRendererProps)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import UserApplicationIdentityStore2 from "UserApplicationIdentityStore" /* 11726 */;
-import _mod11759 from "module_11759" /* 11759 */;
-import ApplicationAssetV2Utils from "ApplicationAssetV2Utils" /* 11855 */;
+import UserApplicationIdentityStore2 from "UserApplicationIdentityStore" /* 11740 */;
+import _mod11773 from "module_11773" /* 11773 */;
+import ApplicationAssetV2Utils from "ApplicationAssetV2Utils" /* 11869 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationAssetsV2Store from "ApplicationAssetsV2Store" /* 11854 */;
+import ApplicationAssetsV2Store from "ApplicationAssetsV2Store" /* 11868 */;
 import LocaleStore from "LocaleStore" /* 2069 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -306,8 +306,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplica
   const items3 = [profile];
   const memo1 = useMemo(() => {
     let profile;
-    const resolvedValuesFromUserApplicationIdentityProfile = _mod11759.resolvedValuesFromUserApplicationIdentityProfile;
-    _mod11759;
+    const resolvedValuesFromUserApplicationIdentityProfile = _mod11773.resolvedValuesFromUserApplicationIdentityProfile;
+    _mod11773;
     if (stateFromStores != null) {
       profile = stateFromStores.profile;
     }

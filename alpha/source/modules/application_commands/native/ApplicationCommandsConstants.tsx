@@ -1,9 +1,9 @@
-// Module ID: 10030
-// Function ID: 10031
+// Module ID: 10041
+// Function ID: 10042
 // Name: ApplicationCommandsConstants
 // Dependencies: [1384, 2]
 
-// Module 10030 (ApplicationCommandsConstants)
+// Module 10041 (ApplicationCommandsConstants)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 

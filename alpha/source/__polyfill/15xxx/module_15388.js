@@ -1,26 +1,18 @@
 // Module ID: 15388
 // Function ID: 15389
-// Dependencies: [15377, 15352]
+// Dependencies: [15389]
 
 // Module 15388
-import _mod15352 from "module_15352" /* 15352 */;
-import module_15377 from "module_15377" /* 15377 */;
+import prop_mod from "module_15389" /* 15389 */;
 
-let _moduleResult = module_15377(_mod15352.document);
-if (_moduleResult) {
-  const _module1 = module_15377;
-  _moduleResult = _module1(_mod15352.document.createElement);
+let prop = prop_mod;
+if (prop) {
+  const _Symbol = Symbol;
+  prop = !Symbol.sham;
 }
-let c2 = _moduleResult;
+if (prop) {
+  const _Symbol2 = Symbol;
+  prop = typeof Symbol.iterator === "symbol";
+}
 
-export default (arg0) => {
-  let element;
-  const tmp = c2;
-  if (tmp) {
-    const _document = _mod15352.document;
-    element = _document.createElement(arg0);
-  } else {
-    element = {};
-  }
-  return element;
-};
+export default prop;

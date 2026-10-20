@@ -1,13 +1,13 @@
-// Module ID: 7328
-// Function ID: 7329
+// Module ID: 7331
+// Function ID: 7332
 // Name: ForumTagHooks
-// Dependencies: [19, 4800, 4880, 1098, 558, 576, 504, 1388, 7329, 2]
+// Dependencies: [19, 4800, 4880, 1098, 558, 576, 504, 1388, 7332, 2]
 
-// Module 7328 (ForumTagHooks)
+// Module 7331 (ForumTagHooks)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1098 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ReportToModUtils from "ReportToModUtils" /* 7329 */;
+import ReportToModUtils from "ReportToModUtils" /* 7332 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import PermissionStore from "PermissionStore" /* 4880 */;

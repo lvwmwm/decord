@@ -1,15 +1,15 @@
-// Module ID: 10846
-// Function ID: 10847
+// Module ID: 10857
+// Function ID: 10858
 // Name: InfoBox
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5648, 6960, 5195, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5648, 6963, 5195, 2]
 
-// Module 10846 (InfoBox)
+// Module 10857 (InfoBox)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import CircleInformationIcon2 from "CircleInformationIcon" /* 5648 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 6960 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 6963 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -106,7 +106,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InfoBox(arg0
     obj5[obj4.INFO] = tmp10;
     const WARNING = tmp9.WARNING;
     const obj6 = { color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
-    const CircleErrorIcon = tmp(6960).CircleErrorIcon;
+    const CircleErrorIcon = tmp(6963).CircleErrorIcon;
     obj5[WARNING] = React3(CircleErrorIcon, obj6);
     cResult[8] = obj5;
     tmp14 = obj5;

@@ -1,9 +1,9 @@
-// Module ID: 12941
-// Function ID: 12942
+// Module ID: 12959
+// Function ID: 12960
 // Name: PremiumAnimatedGiftButton
-// Dependencies: [19, 4946, 21, 4945, 587, 558, 576, 5213, 504, 1384, 5014, 5189, 6856, 2]
+// Dependencies: [19, 4946, 21, 4945, 587, 558, 576, 5213, 504, 1384, 5014, 5189, 6859, 2]
 
-// Module 12941 (PremiumAnimatedGiftButton)
+// Module 12959 (PremiumAnimatedGiftButton)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -354,7 +354,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumAni
     FadeOut = tmp(5014).FadeOut;
   }
   const items2 = [tmp7.containerRefresh, style, ];
-  const PressableOpacity = tmp(6856).PressableOpacity;
+  const PressableOpacity = tmp(6859).PressableOpacity;
   if (active) {
     active = !disabled;
   }

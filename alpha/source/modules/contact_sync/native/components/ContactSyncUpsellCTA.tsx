@@ -1,15 +1,15 @@
-// Module ID: 14898
-// Function ID: 14899
+// Module ID: 14916
+// Function ID: 14917
 // Name: ContactSyncUpsellCTA
-// Dependencies: [19, 13383, 1087, 21, 4945, 587, 558, 576, 1267, 13380, 7236, 1128, 8871, 14899, 2]
+// Dependencies: [19, 13401, 1087, 21, 4945, 587, 558, 576, 1267, 13398, 7239, 1128, 8883, 14917, 2]
 
-// Module 14898 (ContactSyncUpsellCTA)
+// Module 14916 (ContactSyncUpsellCTA)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13380 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13383 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14899 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13398 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13401 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14917 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -111,7 +111,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       return tmp12;
     }
-    const FormCTA = tmp(8871).FormCTA;
+    const FormCTA = tmp(8883).FormCTA;
     const tmp15 = <FormCTA onPress={tmp5} onLongPress={tmp6} style={tmp7} iconSource={AssetRegistryDefault} title={tmp8} subtitle={tmp9} />;
     cResult[8] = tmp5;
     cResult[9] = tmp7;
@@ -128,7 +128,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const style = location.style;
   let tmp = closure_7();
   let items = [tmp.container, style];
-  const FormCTA = location(8871).FormCTA;
+  const FormCTA = location(8883).FormCTA;
   let intl = location(1128).intl;
   const intl2 = location(1128).intl;
   return <FormCTA onPress={function handleOpen() {

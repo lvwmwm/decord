@@ -1,14 +1,14 @@
-// Module ID: 8034
-// Function ID: 8035
+// Module ID: 8038
+// Function ID: 8039
 // Name: getAgeVerificationGetStartedSteps
-// Dependencies: [1087, 1128, 7827, 2068, 6605, 2]
+// Dependencies: [1087, 1128, 7831, 2068, 6608, 2]
 // Exports: getAgeVerificationGetStartedSteps
 
-// Module 8034 (getAgeVerificationGetStartedSteps)
+// Module 8038 (getAgeVerificationGetStartedSteps)
 import Constants from "Constants" /* 1087 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2068 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6605 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7827 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6608 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7831 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

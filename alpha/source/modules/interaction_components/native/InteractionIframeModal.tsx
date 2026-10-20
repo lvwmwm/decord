@@ -1,16 +1,16 @@
-// Module ID: 18575
-// Function ID: 18576
+// Module ID: 18598
+// Function ID: 18599
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 1375, 21, 4945, 587, 558, 576, 18563, 11338, 5554, 8740, 18576, 5927, 5625, 1128, 10575, 6856, 5195, 9055, 6725, 11373, 18160, 2]
+// Dependencies: [32, 19, 17, 1375, 21, 4945, 587, 558, 576, 18586, 11349, 5554, 8752, 18599, 5930, 5625, 1128, 10586, 6859, 5195, 9067, 6728, 11384, 18183, 2]
 
-// Module 18575 (InteractionIframeModal)
+// Module 18598 (InteractionIframeModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5625 */;
-import makeIframeIdDefault from "makeIframeId" /* 11338 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 18576 */;
+import makeIframeIdDefault from "makeIframeId" /* 11349 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 18599 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -68,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
       constructor() {
         obj = id(closure_2[12]);
         lockOrientationResult = obj.lockOrientation("PORTRAIT");
-        return () => { /* body not rendered: F154000 */ };
+        return () => { /* body not rendered: F154184 */ };
       }
     }
     const items = [];
@@ -81,7 +81,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Interactio
       constructor() {
         obj = id(closure_2[12]);
         lockOrientationResult = obj.lockOrientation("PORTRAIT");
-        return () => { /* body not rendered: F154000 */ };
+        return () => { /* body not rendered: F154184 */ };
       }
     }
     tmp10 = cResult[2];

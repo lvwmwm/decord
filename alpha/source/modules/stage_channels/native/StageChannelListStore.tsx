@@ -1,9 +1,9 @@
-// Module ID: 11567
-// Function ID: 11568
+// Module ID: 11578
+// Function ID: 11579
 // Name: StageChannelListStore
 // Dependencies: [32, 19, 1269, 1274, 558, 576, 4863, 2]
 
-// Module 11567 (StageChannelListStore)
+// Module 11578 (StageChannelListStore)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,9 +1,9 @@
-// Module ID: 7443
-// Function ID: 7444
+// Module ID: 7446
+// Function ID: 7447
 // Name: useGetDismissibleContent
-// Dependencies: [32, 19, 1246, 4971, 4787, 4792, 1087, 1097, 1267, 4784, 7444, 4785, 504, 558, 576, 4992, 4783, 4970, 11, 2]
+// Dependencies: [32, 19, 1246, 4971, 4787, 4792, 1087, 1097, 1267, 4784, 7447, 4785, 504, 558, 576, 4992, 4783, 4970, 11, 2]
 
-// Module 7443 (useGetDismissibleContent)
+// Module 7446 (useGetDismissibleContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;

@@ -1,18 +1,18 @@
-// Module ID: 12599
-// Function ID: 12600
+// Module ID: 12616
+// Function ID: 12617
 // Name: TransferOwnershipModal
-// Dependencies: [5, 19, 12600, 21, 12598, 1275, 1128, 6872, 12601, 6954, 8926, 5624, 558, 576, 7043, 2]
+// Dependencies: [5, 19, 12617, 21, 12615, 1275, 1128, 6875, 12618, 6957, 8938, 5624, 558, 576, 7046, 2]
 
-// Module 12599 (TransferOwnershipModal)
+// Module 12616 (TransferOwnershipModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import Navigator2 from "Navigator" /* 7043 */;
-import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 12598 */;
-import TransferOwnershipDefault from "TransferOwnership" /* 12601 */;
+import Navigator2 from "Navigator" /* 7046 */;
+import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 12615 */;
+import TransferOwnershipDefault from "TransferOwnership" /* 12618 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import TransferOwnershipConstants from "TransferOwnershipConstants" /* 12600 */;
+import TransferOwnershipConstants from "TransferOwnershipConstants" /* 12617 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -177,7 +177,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TransferOw
   const toUser = guild.toUser;
   const items = [guild, toUser];
   const memo = react.useMemo(() => getScreens(guild, toUser), items);
-  const Navigator = guild(7043).Navigator;
+  const Navigator = guild(7046).Navigator;
   const intl = guild(1128).intl;
   return <Navigator screens={memo} initialRouteName={constants.TRANFSER_OWNERSHIP} headerBackTitle={intl.string(guild(1128).t["13/7kX"])} />;
 });

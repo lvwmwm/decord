@@ -1,13 +1,13 @@
-// Module ID: 6657
-// Function ID: 6658
+// Module ID: 6660
+// Function ID: 6661
 // Name: InAppNavigationRecord
-// Dependencies: [1407, 1087, 6658, 1097, 6668, 2]
+// Dependencies: [1407, 1087, 6661, 1097, 6671, 2]
 
-// Module 6657 (InAppNavigationRecord)
+// Module 6660 (InAppNavigationRecord)
 import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import QuestConstants from "QuestConstants" /* 6658 */;
-import UserSettingsURLUtils from "UserSettingsURLUtils" /* 6668 */;
+import QuestConstants from "QuestConstants" /* 6661 */;
+import UserSettingsURLUtils from "UserSettingsURLUtils" /* 6671 */;
 import Record from "Record" /* 1407 */;
 import size from "module_2" /* 2 */;
 

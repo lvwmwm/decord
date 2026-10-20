@@ -1,123 +1,156 @@
 // Module ID: 12486
 // Function ID: 12487
-// Dependencies: [32, 109, 12487, 12462]
+// Dependencies: [12487, 12467, 12488, 12447, 12451, 12423, 12480]
+// Exports: createTransport
 
 // Module 12486
-import DEFAULT_USER_INCLUDES from "DEFAULT_USER_INCLUDES" /* 12487 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import module_12462 from "module_12462" /* 12462 */;
+import _mod12447 from "module_12447" /* 12447 */;
+import _mod12451 from "module_12451" /* 12451 */;
+import _mod12467 from "module_12467" /* 12467 */;
+import _mod12480 from "module_12480" /* 12480 */;
+import _slicedToArray from "_slicedToArray" /* 12488 */;
 
-let closure_4 = ["ip", "user"];
-let obj = { include: { cookies: true, data: true, headers: true, ip: false, query_string: true, url: true, user: { id: true, username: true, email: true } }, transactionNamingScheme: "methodPath" };
+const require = globalThis.__r;
+let _require, dependencyMap;
 
-export const requestDataIntegration = module_12462.defineIntegration(() => {
-  obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let obj2 = {};
-  let tmp = obj;
-  const merged = Object.assign(obj);
-  const merged1 = Object.assign(obj);
-  let obj3 = {};
-  const merged2 = Object.assign(obj.include);
-  const merged3 = Object.assign(obj.include);
-  if (obj.include) {
-    let user;
-    if (typeof obj.include.user === "boolean") {
-      user = obj.include.user;
+
+export const DEFAULT_TRANSPORT_BUFFER_SIZE = 64;
+export const createTransport = function createTransport(bufferSize, arg1) {
+  _require = bufferSize;
+  dependencyMap = arg1;
+  let promiseBuffer = arg2;
+  if (arg2 === undefined) {
+    let tmp2 = _require;
+    let tmp4 = require("module_12487");
+    let num = bufferSize.bufferSize;
+    const makePromiseBuffer = tmp4.makePromiseBuffer;
+    if (!num) {
+      num = 64;
     }
-    obj3.user = user;
-    obj2.include = obj3;
-    return {
-      name: "RequestData",
-      processEvent(sdkProcessingMetadata) {
-          let normalizedRequest;
-          let request;
-          function convertReqDataIntegrationOptsToAddReqDataOpts(include) {
-            let tmp15;
-            include = include.include;
-            const user = include.user;
-            const transactionNamingScheme = include.transactionNamingScheme;
-            const ip = include.ip;
-            const items = ["method"];
-            const entries = Object.entries(closure_1_3(include, closure_1_4));
-            const tmp2 = entries[Symbol.iterator]();
-            while (tmp2 !== undefined) {
-              let tmp5 = closure_1_2(tmp3, 2);
-              let first = tmp5[0];
-              if (tmp5[1]) {
-                let arr = items.push(first);
-              }
-              continue;
-            }
-            let flag = true;
-            if (undefined !== user) {
-              flag = user;
-              if (typeof user !== "boolean") {
-                const items1 = [];
-                const _Object = Object;
-                const entries1 = Object.entries(user);
-                flag = items1;
-                for (const item10032 of entries1) {
-                  let tmp11 = closure_1_2(item10032, 2);
-                  let first1 = tmp11[0];
-                  if (tmp11[1]) {
-                    let arr2 = items1.push(first1);
-                  }
-                  continue;
-                }
-              }
-            }
-            const include2 = { ip, user: flag, request: tmp15, transaction: transactionNamingScheme };
-            tmp15 = undefined;
-            if (0 !== items.length) {
-              tmp15 = items;
-            }
-            return { include: include2 };
-          }
-          let prop = sdkProcessingMetadata.sdkProcessingMetadata;
-          if (undefined === prop) {
-            prop = {};
-          }
-          ({ request, normalizedRequest } = prop);
-          const tmp = convertReqDataIntegrationOptsToAddReqDataOpts(obj2);
-          if (normalizedRequest) {
-            let tmp5;
-            if (request) {
-              let ip = request.ip;
-              if (!ip) {
-                ip = request.socket && request.socket.remoteAddress;
-              }
-              tmp5 = ip;
-            }
-            let user;
-            if (request) {
-              user = request.user;
-            }
-            const obj3 = DEFAULT_USER_INCLUDES;
-            obj = { ipAddress: tmp5, user };
-            let tmp10 = obj3;
-            let tmp11 = sdkProcessingMetadata;
-            let tmp13 = obj;
-            const result = obj3.addNormalizedRequestDataToEvent(sdkProcessingMetadata, normalizedRequest, obj, tmp);
-            return sdkProcessingMetadata;
-          } else {
-            let result1 = sdkProcessingMetadata;
-            if (request) {
-              const tmp3 = require;
-              let tmp4 = dependencyMap;
-              obj2 = DEFAULT_USER_INCLUDES;
-              result1 = obj2.addRequestDataToEvent(sdkProcessingMetadata, request, tmp);
-            }
-            return result1;
-          }
-        }
-    };
+    promiseBuffer = makePromiseBuffer(num);
   }
-  user = {};
-  const merged4 = Object.assign(tmp.include.user);
-  let tmp7 = obj.include || {};
-  const merged5 = Object.assign(tmp7.user);
-});
+  let closure_3 = {};
+  let obj = {
+    send(arg0) {
+      const items = [];
+      let tmp = bufferSize;
+      const tmp2 = closure_1;
+      let obj = bufferSize(closure_1[1]);
+      obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
+        const obj = _mod12467;
+        const result = obj.envelopeItemTypeToDataCategory(arg1);
+        const obj2 = _slicedToArray;
+        if (obj2.isRateLimited(closure_3, result)) {
+          let tmp4;
+          if ("event" === arg1) {
+            const _Array = Array;
+            let tmp6;
+            if (Array.isArray(arg0)) {
+              tmp6 = arg0[1];
+            }
+            tmp4 = tmp6;
+          }
+          items.recordDroppedEvent("ratelimit_backoff", result, tmp4);
+        } else {
+          items.push(arg0);
+        }
+      });
+      if (0 === items.length) {
+        let tmpResult = tmp(tmp2[3]);
+        return tmpResult.resolvedSyncPromise({});
+      } else {
+        let tmpResult2 = tmp(tmp2[1]);
+        closure_1 = tmpResult2.createEnvelope(arg0[0], items);
+        function recordEnvelopeLoss(arg0) {
+
+        }
+        let tmp4 = recordEnvelopeLoss;
+        const addResult = recordEnvelopeLoss.add(() => {
+          let obj2;
+          let obj = { body: obj2.serializeEnvelope(closure_1) };
+          obj2 = _mod12467;
+          const promise = closure_1(obj);
+          return promise.then((statusCode) => {
+            let DEBUG_BUILD = undefined !== statusCode.statusCode;
+            if (DEBUG_BUILD) {
+              DEBUG_BUILD = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
+              const tmp = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
+            }
+            if (DEBUG_BUILD) {
+              DEBUG_BUILD = items(closure_1[4]).DEBUG_BUILD;
+            }
+            if (DEBUG_BUILD) {
+              const logger = items(closure_1[5]).logger;
+              const _HermesInternal = HermesInternal;
+              logger.warn("Sentry responded with status code " + statusCode.statusCode + " to sent event.");
+            }
+            const obj = items(closure_1[2]);
+            closure_3 = obj.updateRateLimits(closure_3, statusCode);
+            return statusCode;
+          }, (arg0) => {
+            let recordDroppedEvent;
+            if (typeof recordEnvelopeLoss === "function") {
+              let tmp = arg0;
+              const network_error = "network_error";
+              let obj = recordDroppedEvent(closure_1[1]);
+              let tmp4 = closure_1_1;
+              obj.forEachEnvelopeItem(closure_1_1, (arg0, arg1) => {
+                let tmp;
+                if ("event" === arg1) {
+                  const _Array = Array;
+                  let tmp4;
+                  if (Array.isArray(arg0)) {
+                    tmp4 = arg0[1];
+                  }
+                  tmp = tmp4;
+                }
+                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
+                const obj = items(closure_3_1[1]);
+                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
+              });
+              throw arg0;
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          });
+        });
+        return addResult.then((result) => result, (arg0) => {
+          if (arg0 instanceof _mod12480.SentryError) {
+            if (_mod12451.DEBUG_BUILD) {
+              const logger = tmp(12423).logger;
+              logger.error("Skipped sending event because buffer is full.");
+            }
+            if (typeof recordEnvelopeLoss === "function") {
+              const queue_overflow = "queue_overflow";
+              const tmpResult = _mod12467;
+              tmpResult.forEachEnvelopeItem(closure_1, (arg0, arg1) => {
+                let tmp;
+                if ("event" === arg1) {
+                  const _Array = Array;
+                  let tmp4;
+                  if (Array.isArray(arg0)) {
+                    tmp4 = arg0[1];
+                  }
+                  tmp = tmp4;
+                }
+                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
+                const obj = items(closure_3_1[1]);
+                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
+              });
+              const tmpResult2 = _mod12447;
+              return tmpResult2.resolvedSyncPromise({});
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          } else {
+            throw arg0;
+          }
+        });
+      }
+    },
+    flush(arg0) {
+      return promiseBuffer.drain(arg0);
+    }
+  };
+  return obj;
+};

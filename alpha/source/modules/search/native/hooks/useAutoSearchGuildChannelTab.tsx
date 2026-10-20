@@ -1,14 +1,14 @@
-// Module ID: 17901
-// Function ID: 17902
+// Module ID: 17924
+// Function ID: 17925
 // Name: useAutoSearchGuildChannelTab
-// Dependencies: [19, 13036, 558, 576, 13027, 13045, 12, 13020, 2]
+// Dependencies: [19, 13054, 558, 576, 13045, 13063, 12, 13038, 2]
 
-// Module 17901 (useAutoSearchGuildChannelTab)
+// Module 17924 (useAutoSearchGuildChannelTab)
 import _mod12 from "module_12" /* 12 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13020 */;
-import SearchUtils from "SearchUtils" /* 13027 */;
-import SearchPlatformConstants from "SearchPlatformConstants" /* 13036 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13045 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13038 */;
+import SearchUtils from "SearchUtils" /* 13045 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 13054 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13063 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

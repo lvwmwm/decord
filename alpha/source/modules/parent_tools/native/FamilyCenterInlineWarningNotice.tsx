@@ -1,14 +1,14 @@
-// Module ID: 15949
-// Function ID: 15950
+// Module ID: 15968
+// Function ID: 15969
 // Name: FamilyCenterInlineWarningNotice
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 7901, 5195, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 7905, 5195, 2]
 
-// Module 15949 (FamilyCenterInlineWarningNotice)
+// Module 15968 (FamilyCenterInlineWarningNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import WarningIcon2 from "WarningIcon" /* 7901 */;
+import WarningIcon2 from "WarningIcon" /* 7905 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -44,7 +44,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
-      const WarningIcon = tmp(7901).WarningIcon;
+      const WarningIcon = tmp(7905).WarningIcon;
       const tmp10 = React3(WarningIcon, obj2);
       cResult[3] = tmp10;
       tmp7 = tmp10;

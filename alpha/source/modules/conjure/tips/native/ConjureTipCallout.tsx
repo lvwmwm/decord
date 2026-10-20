@@ -1,17 +1,17 @@
-// Module ID: 12187
-// Function ID: 12188
+// Module ID: 12202
+// Function ID: 12203
 // Name: ConjureTipCallout
-// Dependencies: [19, 17, 21, 587, 4945, 558, 576, 7903, 6879, 1128, 11683, 12181, 5195, 2]
+// Dependencies: [19, 17, 21, 587, 4945, 558, 576, 7907, 6882, 1128, 11696, 12196, 5195, 2]
 
-// Module 12187 (ConjureTipCallout)
+// Module 12202 (ConjureTipCallout)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import XSmallIcon from "XSmallIcon" /* 6879 */;
-import IconButton2 from "IconButton" /* 7903 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 11683 */;
-import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12181 */;
+import XSmallIcon from "XSmallIcon" /* 6882 */;
+import IconButton2 from "IconButton" /* 7907 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 11696 */;
+import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12196 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -89,7 +89,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTipCa
   if (null != onDismiss) {
     const obj4 = { style: tmp4.dismiss, children: React3(IconButton, obj5) };
     obj5 = { variant: "tertiary", size: "sm", icon: React3(XSmallIcon.XSmallIcon, { size: "sm" }), onPress: onDismiss, accessibilityLabel: intl.string(intl2.t.WAI6xu) };
-    IconButton = tmp(7903).IconButton;
+    IconButton = tmp(7907).IconButton;
     intl = tmp(1128).intl;
     tmp6 = React3(View, obj4);
   }

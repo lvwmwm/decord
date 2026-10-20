@@ -1,20 +1,20 @@
-// Module ID: 11141
-// Function ID: 11142
+// Module ID: 11152
+// Function ID: 11153
 // Name: ChannelBrowser
-// Dependencies: [32, 19, 17, 7587, 7155, 4878, 4822, 6652, 1087, 4797, 21, 4945, 587, 558, 576, 5554, 11142, 504, 11144, 4970, 4784, 11140, 7093, 6853, 6856, 1128, 6966, 5631, 11146, 5195, 7168, 5565, 5001, 6935, 6849, 5213, 8447, 6848, 6859, 1202, 5667, 2]
+// Dependencies: [32, 19, 17, 7590, 7158, 4878, 4822, 6655, 1087, 4797, 21, 4945, 587, 558, 576, 5554, 11153, 504, 11155, 4970, 4784, 11151, 7096, 6856, 6859, 1128, 6969, 5631, 11157, 5195, 7171, 5565, 5001, 6938, 6852, 5213, 8451, 6851, 6862, 1202, 5667, 2]
 
-// Module 11141 (ChannelBrowser)
+// Module 11152 (ChannelBrowser)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 7587 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7155 */;
+import NewChannelsStore from "NewChannelsStore" /* 7590 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7158 */;
 import GuildChannelStore from "GuildChannelStore" /* 4878 */;
 import GuildStore from "GuildStore" /* 4822 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6652 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6655 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -526,7 +526,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function C
                       return onChannelClick(channel.guild_id, channel.id, channel.id);
                     }
                   }
-                  const tmp27 = closure_12(channel(6856).PressableOpacity, obj3);
+                  const tmp27 = closure_12(channel(6859).PressableOpacity, obj3);
                   cResult[21] = tmp4.categoryContainer;
                   cResult[22] = tmp12;
                   cResult[23] = str2;
@@ -555,7 +555,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function C
           let tmp17 = null;
           if ("null" !== id) {
             const obj5 = { style: tmp4.selectAllContainer, children: items2 };
-            const obj6 = { style: tmp4.selectAllCheckbox, children: closure_12(channel(6849).FormCheckbox, obj7) };
+            const obj6 = { style: tmp4.selectAllCheckbox, children: closure_12(channel(6852).FormCheckbox, obj7) };
             obj7 = { checked: null };
             class T {
               constructor() {
@@ -587,7 +587,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function C
           }
         }
         const obj9 = { style: tmp4.categoryTitle, title: tmp5, lineClamp: 1 };
-        const tmp15 = closure_12(channel(6935).TableRowGroupTitle, obj9);
+        const tmp15 = closure_12(channel(6938).TableRowGroupTitle, obj9);
         cResult[10] = tmp5;
         cResult[11] = tmp4.categoryTitle;
         cResult[12] = tmp15;
@@ -639,7 +639,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function C
     children: closure_13(tmp11, { children: items1 })
   };
   str = "text";
-  const PressableOpacity = channel(6856).PressableOpacity;
+  const PressableOpacity = channel(6859).PressableOpacity;
   if ("null" !== channel.id) {
     str = checkboxA11yNative.accessibilityRole;
   }
@@ -649,12 +649,12 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function C
   }
   items1 = [, ];
   const obj4 = { style: tmp.categoryTitle, title: tmp3, lineClamp: 1 };
-  items1[0] = closure_12(channel(6935).TableRowGroupTitle, obj4);
+  items1[0] = closure_12(channel(6938).TableRowGroupTitle, obj4);
   let tmp10Result = null;
   tmp11 = closure_14;
   if ("null" !== channel.id) {
     const obj5 = { style: tmp.selectAllContainer, children: items2 };
-    const obj6 = { style: tmp.selectAllCheckbox, children: closure_12(channel(6849).FormCheckbox, obj7) };
+    const obj6 = { style: tmp.selectAllCheckbox, children: closure_12(channel(6852).FormCheckbox, obj7) };
     obj7 = { checked: stateFromStores };
     items2 = [closure_12(View, obj6), ];
     const obj8 = { variant: "text-xs/semibold", color: "interactive-text-default", children: intl.string(channel(1128).t.mSQwnW) };

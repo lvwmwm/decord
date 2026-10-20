@@ -1,14 +1,14 @@
-// Module ID: 17656
-// Function ID: 17657
+// Module ID: 17675
+// Function ID: 17676
 // Name: PaintbrushThinIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 17657, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 17676, 5630, 2]
 
-// Module 17656 (PaintbrushThinIcon)
+// Module 17675 (PaintbrushThinIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 17657 */;
+import AssetRegistry from "AssetRegistry" /* 17676 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,17 +1,17 @@
-// Module ID: 12206
-// Function ID: 12207
+// Module ID: 12221
+// Function ID: 12222
 // Name: ConjureFileMention
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 12144, 12207, 12208, 1128, 3820, 5195, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 12159, 12222, 12223, 1128, 3820, 5195, 2]
 
-// Module 12206 (ConjureFileMention)
+// Module 12221 (ConjureFileMention)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3820 from "module_3820" /* 3820 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import conjureFileMentions from "conjureFileMentions" /* 12144 */;
-import conjureStoredAttachments from "conjureStoredAttachments" /* 12207 */;
-import ConjureFileThumbnailDefault from "ConjureFileThumbnail" /* 12208 */;
+import conjureFileMentions from "conjureFileMentions" /* 12159 */;
+import conjureStoredAttachments from "conjureStoredAttachments" /* 12222 */;
+import ConjureFileThumbnailDefault from "ConjureFileThumbnail" /* 12223 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -48,7 +48,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFileM
     str = variant;
   }
   const tmp4 = closure_7();
-  const context = react.useContext(tmp(12144).ConjureFileMentionProjectContext);
+  const context = react.useContext(tmp(12159).ConjureFileMentionProjectContext);
   const tmpResult = conjureStoredAttachments;
   const conjureStoredAttachment = tmpResult.useConjureStoredAttachment(context, attachmentId);
   if (cResult[0] === conjureStoredAttachment) {

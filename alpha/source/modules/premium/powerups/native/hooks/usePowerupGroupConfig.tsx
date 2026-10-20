@@ -1,15 +1,15 @@
-// Module ID: 13272
-// Function ID: 13273
+// Module ID: 13290
+// Function ID: 13291
 // Name: usePowerupGroupConfig
-// Dependencies: [19, 4822, 558, 576, 8579, 504, 1128, 2558, 13273, 13274, 1388, 2]
+// Dependencies: [19, 4822, 558, 576, 8591, 504, 1128, 2558, 13291, 13292, 1388, 2]
 
-// Module 13272 (usePowerupGroupConfig)
+// Module 13290 (usePowerupGroupConfig)
 import intl4 from "intl" /* 1128 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import _modDef2558 from "module_2558" /* 2558 */;
-import GuildTagUtils from "GuildTagUtils" /* 8579 */;
-import _modDef13273 from "module_13273" /* 13273 */;
-import _modDef13274 from "module_13274" /* 13274 */;
+import GuildTagUtils from "GuildTagUtils" /* 8591 */;
+import _modDef13291 from "module_13291" /* 13291 */;
+import _modDef13292 from "module_13292" /* 13292 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -65,7 +65,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerup
       const stringResult = intl.string(_modDef2558.KC9HRW);
       const intl2 = tmp(1128).intl;
       const stringResult1 = intl2.string(_modDef2558.GJiSmP);
-      const obj2 = { staticUrl: _modDef13273, animatedUrl: _modDef13274 };
+      const obj2 = { staticUrl: _modDef13291, animatedUrl: _modDef13292 };
       cResult[3] = stringResult;
       cResult[4] = stringResult1;
       cResult[5] = obj2;
@@ -126,7 +126,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerup
       intl = intl4.intl;
       intl2 = intl4.intl;
       stringResult = undefined;
-      obj3 = { staticUrl: _modDef13273, animatedUrl: _modDef13274 };
+      obj3 = { staticUrl: _modDef13291, animatedUrl: _modDef13292 };
       const tmp7 = importDefault;
       if (!stateFromStores) {
         const intl3 = intl4.intl;

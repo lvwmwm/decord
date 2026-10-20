@@ -1,12 +1,12 @@
-// Module ID: 12816
-// Function ID: 12817
+// Module ID: 12833
+// Function ID: 12834
 // Name: useCanDM
-// Dependencies: [7675, 4881, 502, 4860, 4890, 4776, 558, 576, 504, 2]
+// Dependencies: [7678, 4881, 502, 4860, 4890, 4776, 558, 576, 504, 2]
 // Exports: canDm
 
-// Module 12816 (useCanDM)
+// Module 12833 (useCanDM)
 import UserSettings from "UserSettings" /* 4776 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7675 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7678 */;
 import LurkingStore from "LurkingStore" /* 4881 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 4860 */;

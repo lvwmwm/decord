@@ -1,9 +1,9 @@
-// Module ID: 14201
-// Function ID: 14202
+// Module ID: 14219
+// Function ID: 14220
 // Name: UserProfileActivityEmptyStates
-// Dependencies: [32, 19, 17, 1087, 21, 1128, 4945, 587, 558, 576, 5195, 5944, 12, 7357, 5171, 5205, 7436, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 1128, 4945, 587, 558, 576, 5195, 5947, 12, 7360, 5171, 5205, 7439, 2]
 
-// Module 14201 (UserProfileActivityEmptyStates)
+// Module 14219 (UserProfileActivityEmptyStates)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -13,7 +13,7 @@ import intl4 from "intl" /* 1128 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7357 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7360 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -359,7 +359,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       const tmp22 = closure_7(View, obj6);
     }
   }
-  let obj2 = user(5944);
+  let obj2 = user(5947);
   name = obj2.getName(guildId, channelId, user);
   const intl = tmp(1128).intl;
   const formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t.sjSitP, { name });
@@ -380,7 +380,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let name;
   ({ guildId, channelId } = user);
   let tmp = closure_10();
-  let obj = name(5944);
+  let obj = name(5947);
   name = obj.getName(guildId, channelId, user);
   const intl = user(1128).intl;
   items = [user.id];

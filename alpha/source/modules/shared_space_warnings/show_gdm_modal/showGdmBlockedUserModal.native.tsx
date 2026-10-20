@@ -1,10 +1,10 @@
-// Module ID: 18679
-// Function ID: 18680
+// Module ID: 18702
+// Function ID: 18703
 // Name: showGdmBlockedUserModal
-// Dependencies: [5171, 18680, 2002, 2]
+// Dependencies: [5171, 18703, 2002, 2]
 // Exports: showGdmBlockedUserModal
 
-// Module 18679 (showGdmBlockedUserModal)
+// Module 18702 (showGdmBlockedUserModal)
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import size from "module_2" /* 2 */;
@@ -17,5 +17,5 @@ export const showGdmBlockedUserModal = function showGdmBlockedUserModal(arg0) {
   let ignoredUserIds;
   ({ channelId, blockedUserIds, ignoredUserIds } = arg0);
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(18680, dependencyMap.paths), "gdm_blocked_user_action_sheet", { channelId, blockedUserIds, ignoredUserIds });
+  obj.openLazy(asyncRequire(18703, dependencyMap.paths), "gdm_blocked_user_action_sheet", { channelId, blockedUserIds, ignoredUserIds });
 };

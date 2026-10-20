@@ -1,18 +1,18 @@
-// Module ID: 11216
-// Function ID: 11217
+// Module ID: 11227
+// Function ID: 11228
 // Name: UserActivitySpotify
-// Dependencies: [19, 17, 8748, 21, 1383, 1297, 5622, 11217, 558, 576, 5205, 8566, 1128, 1202, 2]
+// Dependencies: [19, 17, 8760, 21, 1383, 1297, 5622, 11228, 558, 576, 5205, 8572, 1128, 1202, 2]
 // Exports: attributeInstall, canOpenSpotifyUrl, openAlbum, openArtist, openTrack, openUrl
 
-// Module 11216 (UserActivitySpotify)
+// Module 11227 (UserActivitySpotify)
 import native from "native" /* 1202 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import react_nativeAll from "react-native" /* 1383 */;
 import LinkingDefault from "Linking" /* 5622 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8566 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8572 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SpotifyConstants from "SpotifyConstants" /* 8748 */;
+import SpotifyConstants from "SpotifyConstants" /* 8760 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,16 +24,16 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f108591 = () => {
+const f108698 = () => {
 
 };
-const f108593 = () => {
+const f108700 = () => {
 
 };
-const f108595 = () => {
+const f108702 = () => {
 
 };
-const f108596 = (result) => {
+const f108703 = (result) => {
   let closure_0 = result;
   let obj = closure_2_0(closure_2_3[7]);
   const spotifyMetadataFromActivity = obj.getSpotifyMetadataFromActivity(closure_1_0, closure_1_1);
@@ -43,7 +43,7 @@ const f108596 = (result) => {
     const ALBUM = constants.ALBUM;
     if (closure_0) {
       const openURLResult = closure_2_4.openURL(closure_2_7.PLAYER_OPEN(ALBUM, album_id, true, "mobile"));
-      catchPromise = openURLResult.catch(f108591);
+      catchPromise = openURLResult.catch(f108698);
     } else {
       const obj = closure_2_1(closure_2_3[6]);
       catchPromise = obj.openURL(closure_2_7.WEB_OPEN(ALBUM, album_id, "mobile"));
@@ -51,7 +51,7 @@ const f108596 = (result) => {
     return catchPromise;
   });
 };
-const f108597 = () => {
+const f108704 = () => {
 
 };
 ({ Linking: closure_4, View: hasOwnProperty } = react_native);
@@ -71,14 +71,14 @@ class SpotifyTrack extends PureComponent {
         const tmp2 = result;
         if (tmp2) {
           const openURLResult = closure_2_4.openURL(closure_2_7.PLAYER_OPEN(TRACK, sync_id, true, "mobile"));
-          catchPromise = openURLResult.catch(f108591);
+          catchPromise = openURLResult.catch(f108698);
         } else {
           const obj = closure_2_1(closure_2_3[6]);
           catchPromise = obj.openURL(closure_2_7.WEB_OPEN(TRACK, tmp, "mobile"));
         }
         return catchPromise;
       });
-      let catchPromise = nextPromise.catch(f108593);
+      let catchPromise = nextPromise.catch(f108700);
     };
     return applyArgumentsResult;
   }
@@ -115,7 +115,7 @@ function openUrl(arg0, ALBUM, album_id) {
   const tmp = arg0;
   if (tmp) {
     const openURLResult = React3.openURL(metroImportDefault.PLAYER_OPEN(ALBUM, album_id, true, "mobile"));
-    catchPromise = openURLResult.catch(f108591);
+    catchPromise = openURLResult.catch(f108698);
   } else {
     const obj = LinkingDefault;
     catchPromise = obj.openURL(metroImportDefault.WEB_OPEN(ALBUM, album_id, "mobile"));
@@ -131,14 +131,14 @@ function openTrack(findActivityResult) {
     const tmp2 = result;
     if (tmp2) {
       const openURLResult = closure_2_4.openURL(closure_2_7.PLAYER_OPEN(TRACK, sync_id, true, "mobile"));
-      catchPromise = openURLResult.catch(f108591);
+      catchPromise = openURLResult.catch(f108698);
     } else {
       const obj = closure_2_1(closure_2_3[6]);
       catchPromise = obj.openURL(closure_2_7.WEB_OPEN(TRACK, tmp, "mobile"));
     }
     return catchPromise;
   });
-  nextPromise.catch(f108593);
+  nextPromise.catch(f108700);
 }
 function openArtist(arg0, arg1, arg2) {
   let closure_0 = arg0;
@@ -154,7 +154,7 @@ function openArtist(arg0, arg1, arg2) {
       const ARTIST = constants.ARTIST;
       if (closure_0) {
         const openURLResult = closure_3_4.openURL(closure_3_7.PLAYER_OPEN(ARTIST, result.artist_ids[closure_2], true, "mobile"));
-        catchPromise = openURLResult.catch(f108591);
+        catchPromise = openURLResult.catch(f108698);
       } else {
         const obj = closure_3_1(closure_3_3[6]);
         catchPromise = obj.openURL(closure_3_7.WEB_OPEN(ARTIST, tmp, "mobile"));
@@ -162,14 +162,14 @@ function openArtist(arg0, arg1, arg2) {
       return catchPromise;
     });
   });
-  nextPromise.catch(f108595);
+  nextPromise.catch(f108702);
 }
 function openAlbum(activity, id) {
   let closure_0 = activity;
   let closure_1 = id;
   const canOpenURLResult = closure_4.canOpenURL("" + closure_6 + ":");
-  const nextPromise = canOpenURLResult.then(f108596);
-  nextPromise.catch(f108597);
+  const nextPromise = canOpenURLResult.then(f108703);
+  nextPromise.catch(f108704);
 }
 const PureComponent2 = react.PureComponent;
 const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpotifyPlayButton(activity) {
@@ -326,7 +326,7 @@ class SpotifyArtists extends PureComponent2 {
           const ARTIST = constants.ARTIST;
           if (closure_0) {
             const openURLResult = closure_3_4.openURL(closure_3_7.PLAYER_OPEN(ARTIST, result.artist_ids[closure_2], true, "mobile"));
-            catchPromise = openURLResult.catch(f108591);
+            catchPromise = openURLResult.catch(f108698);
           } else {
             const obj = closure_3_1(closure_3_3[6]);
             catchPromise = obj.openURL(closure_3_7.WEB_OPEN(ARTIST, tmp, "mobile"));
@@ -334,7 +334,7 @@ class SpotifyArtists extends PureComponent2 {
           return catchPromise;
         });
       });
-      let catchPromise = nextPromise.catch(f108595);
+      let catchPromise = nextPromise.catch(f108702);
     };
     return applyArgumentsResult;
   }
@@ -385,8 +385,8 @@ class SpotifyAlbum extends PureComponent3 {
       let closure_129_1;
       ({ activity: closure_129_0, userId: closure_129_1 } = require.props);
       const canOpenURLResult = React3.canOpenURL("" + metroRequire + ":");
-      const nextPromise = canOpenURLResult.then(f108596);
-      let catchPromise = nextPromise.catch(f108597);
+      const nextPromise = canOpenURLResult.then(f108703);
+      let catchPromise = nextPromise.catch(f108704);
     };
     return applyArgumentsResult;
   }

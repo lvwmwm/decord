@@ -1,13 +1,13 @@
-// Module ID: 9684
-// Function ID: 9685
+// Module ID: 9697
+// Function ID: 9698
 // Name: ConversationPreviewBlockedMessage
-// Dependencies: [19, 21, 558, 576, 9685, 587, 7009, 1128, 5195, 5932, 2]
+// Dependencies: [19, 21, 558, 576, 9698, 587, 7012, 1128, 5195, 5935, 2]
 
-// Module 9684 (ConversationPreviewBlockedMessage)
+// Module 9697 (ConversationPreviewBlockedMessage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import Stack_Stack from "Stack/Stack" /* 5932 */;
+import Stack_Stack from "Stack/Stack" /* 5935 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -28,9 +28,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
     let EyeSlashIcon;
     const tmp5 = _false;
     if ("blocked" === reason) {
-      EyeSlashIcon = tmp(9685).DenyIcon;
+      EyeSlashIcon = tmp(9698).DenyIcon;
     } else {
-      EyeSlashIcon = tmp(7009).EyeSlashIcon;
+      EyeSlashIcon = tmp(7012).EyeSlashIcon;
     }
     const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_MUTED };
     const tmp5Result = tmp5(EyeSlashIcon, obj2);
@@ -73,7 +73,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
     return tmp13;
   }
   const obj4 = { direction: "horizontal", spacing: nativeDefault.space.PX_8, align: "center", children: items };
-  const Stack = tmp(5932).Stack;
+  const Stack = tmp(5935).Stack;
   items = [tmp4, tmp10];
   const tmp14 = React3(Stack, obj4);
   cResult[6] = tmp4;
@@ -88,9 +88,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
   const Stack = Stack_Stack.Stack;
   const tmp = React3;
   if ("blocked" === reason) {
-    EyeSlashIcon = tmp2(9685).DenyIcon;
+    EyeSlashIcon = tmp2(9698).DenyIcon;
   } else {
-    EyeSlashIcon = tmp2(7009).EyeSlashIcon;
+    EyeSlashIcon = tmp2(7012).EyeSlashIcon;
   }
   items = [, ];
   const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_MUTED };

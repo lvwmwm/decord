@@ -1,10 +1,10 @@
-// Module ID: 9372
-// Function ID: 9373
+// Module ID: 9384
+// Function ID: 9385
 // Name: TestModeUtils
 // Dependencies: [5586, 5585, 558, 576, 504, 2]
 // Exports: isAnyApplicationInTestMode, isTestModeForApplication
 
-// Module 9372 (TestModeUtils)
+// Module 9384 (TestModeUtils)
 import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5586 */;
 import TestModeStore from "TestModeStore" /* 5585 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

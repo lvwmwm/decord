@@ -1,10 +1,10 @@
-// Module ID: 11620
-// Function ID: 11621
+// Module ID: 11633
+// Function ID: 11634
 // Name: FilePickerUtils
-// Dependencies: [5, 1087, 11621, 1384, 5864, 1128, 5673, 2]
+// Dependencies: [5, 1087, 11634, 1384, 5867, 1128, 5673, 2]
 // Exports: handleDocumentSelection
 
-// Module 11620 (FilePickerUtils)
+// Module 11633 (FilePickerUtils)
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

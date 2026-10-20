@@ -1,10 +1,10 @@
-// Module ID: 10584
-// Function ID: 10585
+// Module ID: 10595
+// Function ID: 10596
 // Name: PerLetterEffect
-// Dependencies: [19, 17, 21, 4945, 10585, 10586, 5195, 2]
+// Dependencies: [19, 17, 21, 4945, 10596, 10597, 5195, 2]
 // Exports: default
 
-// Module 10584 (PerLetterEffect)
+// Module 10595 (PerLetterEffect)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

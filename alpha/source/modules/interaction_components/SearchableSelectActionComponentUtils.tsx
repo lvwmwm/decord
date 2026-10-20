@@ -1,22 +1,22 @@
-// Module ID: 8546
-// Function ID: 8547
+// Module ID: 8552
+// Function ID: 8553
 // Name: SearchableSelectActionComponentUtils
-// Dependencies: [4800, 4860, 4854, 4822, 4890, 1392, 8539, 2000, 6656, 5944, 5977, 5565, 8547, 1388, 2]
+// Dependencies: [4800, 4860, 4854, 4822, 4890, 1392, 8545, 2000, 6659, 5947, 5980, 5565, 8553, 1388, 2]
 // Exports: getInitialSnowflakeSelectOptions, getSnowflakeSelectDefaultValues, queryChannels, queryMentionables
 
-// Module 8546 (SearchableSelectActionComponentUtils)
+// Module 8552 (SearchableSelectActionComponentUtils)
 import useChannelName from "useChannelName" /* 5565 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5944 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 5977 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6656 */;
-import SnowflakeSelectDefaultValueTypes from "SnowflakeSelectDefaultValueTypes" /* 8547 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5947 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5980 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6659 */;
+import SnowflakeSelectDefaultValueTypes from "SnowflakeSelectDefaultValueTypes" /* 8553 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import GuildMemberStore from "GuildMemberStore" /* 4860 */;
 import GuildRoleStore from "GuildRoleStore" /* 4854 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
 import UserStore from "UserStore" /* 1392 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8539 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8545 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,7 +35,7 @@ export const queryMentionables = function queryMentionables(type, query, channel
   } else {
     const tmp3 = type === require("Server").ComponentType.USER_SELECT || type === require("Server").ComponentType.MENTIONABLE_SELECT;
     const tmp4 = type === require("Server").ComponentType.ROLE_SELECT || type === require("Server").ComponentType.MENTIONABLE_SELECT;
-    let obj = channel(6656);
+    let obj = channel(6659);
     let obj2 = { query, channel, canMentionEveryone: false, canMentionHere: false, canMentionUsers: tmp3, canMentionRoles: tmp4, includeAllGuildUsers: true, includeNonMentionableRoles: true, checkRecentlyTalkedOnEmptyQuery: false, limit: 15 };
     ({ users, roles } = obj.queryMentionResults(obj2));
     const items = [];

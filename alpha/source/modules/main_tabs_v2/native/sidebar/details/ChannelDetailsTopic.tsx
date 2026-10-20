@@ -1,20 +1,20 @@
-// Module ID: 17914
-// Function ID: 17915
+// Module ID: 17937
+// Function ID: 17938
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1392, 9941, 1087, 21, 1384, 4945, 558, 576, 17915, 5014, 5208, 5667, 6856, 5195, 5219, 4994, 504, 5949, 2]
+// Dependencies: [32, 19, 17, 1392, 9952, 1087, 21, 1384, 4945, 558, 576, 17938, 5014, 5208, 5667, 6859, 5195, 5219, 4994, 504, 5952, 2]
 
-// Module 17914 (ChannelDetailsTopic)
+// Module 17937 (ChannelDetailsTopic)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import UserUtilsDefault from "UserUtils" /* 4994 */;
 import spring from "spring" /* 5208 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5667 */;
-import ChannelUtils from "ChannelUtils" /* 5949 */;
+import ChannelUtils from "ChannelUtils" /* 5952 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9941 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9952 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import createStyles from "createStyles" /* 4945 */;

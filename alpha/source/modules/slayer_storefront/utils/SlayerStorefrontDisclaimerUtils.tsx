@@ -1,19 +1,19 @@
-// Module ID: 10491
-// Function ID: 10492
+// Module ID: 10502
+// Function ID: 10503
 // Name: SlayerStorefrontDisclaimerUtils
-// Dependencies: [2069, 7278, 1087, 10492, 1128, 3690, 2]
+// Dependencies: [2069, 7281, 1087, 10503, 1128, 3690, 2]
 // Exports: getCheckoutDisclaimerMessageForApplication, getFinePrintMessageForApplication, getGiftLinkAccountDescriptionForApplication, getMobileFinePrintMessageForApplication, getNotSupportedSentence, getRedeemPurchaseDescriptionForApplication
 
-// Module 10491 (SlayerStorefrontDisclaimerUtils)
+// Module 10502 (SlayerStorefrontDisclaimerUtils)
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import _modDef3690 from "module_3690" /* 3690 */;
-import StorefrontPlatform from "StorefrontPlatform" /* 10492 */;
+import StorefrontPlatform from "StorefrontPlatform" /* 10503 */;
 import LocaleStore from "LocaleStore" /* 2069 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7278 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7281 */;
 import size from "module_2" /* 2 */;
 
-const f106096 = (item) => closure_1_6[item];
+const f106199 = (item) => closure_1_6[item];
 const MarketingURLs = Constants.MarketingURLs;
 let closure_6 = { [StorefrontPlatform.StorefrontPlatform.DESKTOP]: "PC", [StorefrontPlatform.StorefrontPlatform.XBOX]: "Xbox", [StorefrontPlatform.StorefrontPlatform.PLAYSTATION]: "PlayStation", [StorefrontPlatform.StorefrontPlatform.SWITCH]: "Switch", [StorefrontPlatform.StorefrontPlatform.APPLE_ARCADE]: "Apple Arcade", [StorefrontPlatform.StorefrontPlatform.NETFLIX]: "Netflix", [StorefrontPlatform.StorefrontPlatform.AMAZON_KIDS_PLUS]: "Amazon Kids+" };
 let items = [StorefrontPlatform.StorefrontPlatform.PLAYSTATION];
@@ -35,7 +35,7 @@ export const getNotSupportedSentence = function getNotSupportedSentence(id) {
     const _Intl = Intl;
     const self = this;
     const self2 = this;
-    const obj = { platforms: listFormat.format(arr.map(f106096)), count: arr.length };
+    const obj = { platforms: listFormat.format(arr.map(f106199)), count: arr.length };
     const v5h8p5P = _modDef3690["5h8p5P"];
     listFormat = new Intl.ListFormat(LocaleStore.locale);
     str = formatToPlainString(v5h8p5P, obj);
@@ -65,7 +65,7 @@ export const getCheckoutDisclaimerMessageForApplication = function getCheckoutDi
     const _Intl = Intl;
     const self = this;
     const self2 = this;
-    const obj = { platforms: listFormat.format(arr.map(f106096)), count: arr.length };
+    const obj = { platforms: listFormat.format(arr.map(f106199)), count: arr.length };
     const v5h8p5P = _modDef3690["5h8p5P"];
     listFormat = new Intl.ListFormat(LocaleStore.locale);
     platforms_info = formatToPlainString(v5h8p5P, obj);
@@ -113,7 +113,7 @@ export const getFinePrintMessageForApplication = function getFinePrintMessageFor
       const _Intl = Intl;
       const self = this;
       const self2 = this;
-      const obj3 = { platforms: listFormat.format(arr.map(f106096)), count: arr.length };
+      const obj3 = { platforms: listFormat.format(arr.map(f106199)), count: arr.length };
       const v5h8p5P = tmp4(3690)["5h8p5P"];
       listFormat = new Intl.ListFormat(LocaleStore.locale);
       str2 = formatToPlainString(v5h8p5P, obj3);
@@ -161,7 +161,7 @@ export const getMobileFinePrintMessageForApplication = function getMobileFinePri
       const _Intl = Intl;
       const self = this;
       const self2 = this;
-      const obj2 = { platforms: listFormat.format(arr2.map(f106096)), count: arr2.length };
+      const obj2 = { platforms: listFormat.format(arr2.map(f106199)), count: arr2.length };
       const v5h8p5P = tmp3(3690)["5h8p5P"];
       listFormat = new Intl.ListFormat(LocaleStore.locale);
       str2 = formatToPlainString(v5h8p5P, obj2);
@@ -199,7 +199,7 @@ export const getRedeemPurchaseDescriptionForApplication = function getRedeemPurc
     const _Intl = Intl;
     const self = this;
     const self2 = this;
-    const obj2 = { platforms: listFormat.format(arr.map(f106096)), count: arr.length };
+    const obj2 = { platforms: listFormat.format(arr.map(f106199)), count: arr.length };
     const v5h8p5P = _modDef3690["5h8p5P"];
     listFormat = new Intl.ListFormat(LocaleStore.locale);
     str = formatToPlainString(v5h8p5P, obj2);
@@ -239,7 +239,7 @@ export const getGiftLinkAccountDescriptionForApplication = function getGiftLinkA
     const _Intl = Intl;
     const self = this;
     const self2 = this;
-    const obj2 = { platforms: listFormat.format(arr.map(f106096)), count: arr.length };
+    const obj2 = { platforms: listFormat.format(arr.map(f106199)), count: arr.length };
     const v5h8p5P = tmp4(3690)["5h8p5P"];
     listFormat = new Intl.ListFormat(LocaleStore.locale);
     str = formatToPlainString(v5h8p5P, obj2);

@@ -1,14 +1,14 @@
-// Module ID: 18768
-// Function ID: 18769
+// Module ID: 18791
+// Function ID: 18792
 // Name: RuleExemptionRows
-// Dependencies: [19, 4800, 4854, 4890, 1392, 12618, 21, 1128, 504, 5565, 6935, 6851, 8911, 5171, 18769, 2002, 18714, 18771, 2]
+// Dependencies: [19, 4800, 4854, 4890, 1392, 12635, 21, 1128, 504, 5565, 6938, 6854, 8923, 5171, 18792, 2002, 18737, 18794, 2]
 // Exports: default
 
-// Module 18768 (RuleExemptionRows)
+// Module 18791 (RuleExemptionRows)
 import intl5 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import Constants from "Constants" /* 12618 */;
+import Constants from "Constants" /* 12635 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import GuildRoleStore from "GuildRoleStore" /* 4854 */;
@@ -106,7 +106,7 @@ export default function RuleExemptionRows(rule) {
           return onChangeRule(obj);
         }
       };
-      obj.openLazy(asyncRequire(18769, dependencyMap.paths), "AutomodExemptRoles", obj2);
+      obj.openLazy(asyncRequire(18792, dependencyMap.paths), "AutomodExemptRoles", obj2);
     }
   };
   const TableRow = tmp2(tmp3[11]).TableRow;
@@ -133,7 +133,7 @@ export default function RuleExemptionRows(rule) {
               return onChangeRule(obj);
             }
           };
-          obj.openLazy(asyncRequire(18771, dependencyMap.paths), "AutomodExemptChannels", obj2);
+          obj.openLazy(asyncRequire(18794, dependencyMap.paths), "AutomodExemptChannels", obj2);
         }
     };
     const TableRow2 = tmp2(tmp3[11]).TableRow;

@@ -1,14 +1,14 @@
-// Module ID: 18818
-// Function ID: 18819
+// Module ID: 18841
+// Function ID: 18842
 // Name: GuildSettingsServerTagUpsellCard
-// Dependencies: [19, 17, 5142, 21, 4945, 587, 558, 576, 5146, 504, 13241, 13211, 5219, 13244, 1128, 5195, 5932, 17378, 5205, 2]
+// Dependencies: [19, 17, 5142, 21, 4945, 587, 558, 576, 5146, 504, 13259, 13229, 5219, 13262, 1128, 5195, 5935, 17397, 5205, 2]
 
-// Module 18818 (GuildSettingsServerTagUpsellCard)
+// Module 18841 (GuildSettingsServerTagUpsellCard)
 import nativeDefault from "native" /* 587 */;
 import Powerups from "Powerups" /* 5146 */;
 import LinearGradientDefault from "LinearGradient" /* 5219 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13211 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 13241 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13229 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 13259 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5142 */;
@@ -321,7 +321,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
           }
         }
         const obj7 = { spacing: nativeDefault.space.PX_8, style: textBlock, children: items5 };
-        const Stack = tmp(5932).Stack;
+        const Stack = tmp(5935).Stack;
         items5 = [tmp37, tmp42];
         cResult[30] = tmp4.textBlock;
         cResult[31] = tmp37;
@@ -353,7 +353,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       }
     }
     const obj9 = { imageUrl: tmp11, style: tmp4.powerupImage };
-    tmp30 = closure_6(tmp10(13244), obj9);
+    tmp30 = closure_6(tmp10(13262), obj9);
   }
   cResult[15] = tmp11;
   cResult[16] = tmp4.powerupImage;
@@ -401,16 +401,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   const obj5 = { style: tmp.backgroundLayer, colors: colors2, start, end, pointerEvents: "none" };
   items4[2] = closure_6(LinearGradientDefault, obj5);
   const obj6 = { spacing: nativeDefault.space.PX_16, children: items5 };
-  const Stack = guildId(5932).Stack;
+  const Stack = guildId(5935).Stack;
   const obj7 = { style: tmp.imageContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp10Result };
   tmp10Result = null != tmp6;
   if (tmp10Result) {
     const obj8 = { imageUrl: tmp6, style: tmp.powerupImage };
-    tmp10Result = tmp10(tmp5(13244), obj8);
+    tmp10Result = tmp10(tmp5(13262), obj8);
   }
   items5 = [closure_6(closure_4, obj7), , ];
   const obj9 = { spacing: nativeDefault.space.PX_8, style: tmp.textBlock, children: items6 };
-  const Stack2 = tmp2(5932).Stack;
+  const Stack2 = tmp2(5935).Stack;
   const obj10 = { variant: "heading-xl/semibold", color: "text-strong", style: tmp.centerText, children: intl.string(tmp2(1128).t["2QmKZ2"]) };
   const Text = tmp2(5195).Text;
   intl = tmp2(1128).intl;
@@ -422,7 +422,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   intl2 = tmp2(1128).intl;
   items6[1] = closure_6(Text2, obj11);
   items5[1] = closure_7(Stack2, obj9);
-  const obj12 = { variant: "primary", size: "lg", text: intl3.string(tmp2(1128).t.kMRDWs), icon: closure_6(tmp2(17378).BoostTier2Icon, { color: "white" }), iconPosition: "start", onPress: onUnlockPress };
+  const obj12 = { variant: "primary", size: "lg", text: intl3.string(tmp2(1128).t.kMRDWs), icon: closure_6(tmp2(17397).BoostTier2Icon, { color: "white" }), iconPosition: "start", onPress: onUnlockPress };
   const Button = tmp2(5205).Button;
   intl3 = tmp2(1128).intl;
   items5[2] = closure_6(Button, obj12);

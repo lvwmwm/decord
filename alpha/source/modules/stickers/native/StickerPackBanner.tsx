@@ -1,9 +1,9 @@
-// Module ID: 10085
-// Function ID: 10086
+// Module ID: 10096
+// Function ID: 10097
 // Name: StickerPackBanner
-// Dependencies: [19, 17, 21, 558, 576, 6442, 5631, 2]
+// Dependencies: [19, 17, 21, 558, 576, 6445, 5631, 2]
 
-// Module 10085 (StickerPackBanner)
+// Module 10096 (StickerPackBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -13,7 +13,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const StickersUtils = tmp(6442);
+const StickersUtils = tmp(6445);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPackBanner(arg0) {

@@ -1,26 +1,26 @@
-// Module ID: 10029
-// Function ID: 10030
+// Module ID: 10040
+// Function ID: 10041
 // Name: autocompleter/AutocompleteUtils
-// Dependencies: [19, 17, 4804, 4878, 4890, 1392, 1087, 10030, 5939, 21, 4945, 587, 5565, 8444, 6656, 4994, 558, 576, 8875, 2]
+// Dependencies: [19, 17, 4804, 4878, 4890, 1392, 1087, 10041, 5942, 21, 4945, 587, 5565, 8448, 6659, 4994, 558, 576, 8887, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSingleLineRun, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 10029 (autocompleter/AutocompleteUtils)
+// Module 10040 (autocompleter/AutocompleteUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ChannelRecord from "ChannelRecord" /* 4804 */;
 import useChannelName from "useChannelName" /* 5565 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6656 */;
-import TimestampUtils from "TimestampUtils" /* 8444 */;
-import FormDividerDefault from "FormDivider" /* 8875 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6659 */;
+import TimestampUtils from "TimestampUtils" /* 8448 */;
+import FormDividerDefault from "FormDivider" /* 8887 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4878 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10030 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5939 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10041 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5942 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 11259
-// Function ID: 11260
+// Module ID: 11270
+// Function ID: 11271
 // Name: useIsFiveButtonLayout
-// Dependencies: [4800, 4822, 558, 576, 504, 10679, 11260, 11262, 7324, 2]
+// Dependencies: [4800, 4822, 558, 576, 504, 10690, 11271, 11273, 7327, 2]
 
-// Module 11259 (useIsFiveButtonLayout)
+// Module 11270 (useIsFiveButtonLayout)
 import ChannelStore from "ChannelStore" /* 4800 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -53,7 +53,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFiveB
     guild_id = null;
   }
   let guild_id1;
-  const tmp10 = guild_id(11260);
+  const tmp10 = guild_id(11271);
   if (stateFromStores != null) {
     guild_id1 = stateFromStores.guild_id;
   }
@@ -106,12 +106,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFiveB
     tmp19 = cResult[8];
   }
   let id1;
-  const tmp9Result = guild_id(11262);
+  const tmp9Result = guild_id(11273);
   if (stateFromStores != null) {
     id1 = stateFromStores.id;
   }
   const tmp9ResultResult = tmp9Result(id1);
-  const tmp23 = guild_id(7324)();
+  const tmp23 = guild_id(7327)();
   if (isConnectedToVoiceChannel) {
     isConnectedToVoiceChannel = tmp10Result;
   }
@@ -146,7 +146,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFiveB
     guild_id = null;
   }
   let guild_id1;
-  const tmp6 = guild_id(11260);
+  const tmp6 = guild_id(11271);
   if (stateFromStores != null) {
     guild_id1 = stateFromStores.guild_id;
   }
@@ -173,12 +173,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFiveB
     flag = false;
   }
   let id1;
-  const tmp5Result = guild_id(11262);
+  const tmp5Result = guild_id(11273);
   if (stateFromStores != null) {
     id1 = stateFromStores.id;
   }
   const tmp5ResultResult = tmp5Result(id1);
-  const tmp14 = guild_id(7324)();
+  const tmp14 = guild_id(7327)();
   if (isConnectedToVoiceChannel) {
     isConnectedToVoiceChannel = tmp6Result;
   }

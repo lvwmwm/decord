@@ -1,8 +1,8 @@
-// Module ID: 6163
-// Function ID: 6164
+// Module ID: 6166
+// Function ID: 6167
 // Dependencies: [2]
 
-// Module 6163
+// Module 6166
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/trash_can_toxic.png.js");

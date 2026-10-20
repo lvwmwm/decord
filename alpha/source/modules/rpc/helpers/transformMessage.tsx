@@ -1,16 +1,16 @@
-// Module ID: 11353
-// Function ID: 11354
+// Module ID: 11364
+// Function ID: 11365
 // Name: transformMessage
-// Dependencies: [1406, 4800, 4890, 1392, 1087, 11354, 2000, 1388, 5667, 6320, 9183, 2]
+// Dependencies: [1406, 4800, 4890, 1392, 1087, 11365, 2000, 1388, 5667, 6323, 9195, 2]
 // Exports: transformMessageRecord, transformServerMessage
 
-// Module 11353 (transformMessage)
+// Module 11364 (transformMessage)
 import Constants from "Constants" /* 1087 */;
 import Server from "Server" /* 2000 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5667 */;
-import useMessageAuthor from "useMessageAuthor" /* 6320 */;
-import transformUserDefault from "transformUser" /* 9183 */;
-import getRemoteIconURLDefault from "getRemoteIconURL" /* 11354 */;
+import useMessageAuthor from "useMessageAuthor" /* 6323 */;
+import transformUserDefault from "transformUser" /* 9195 */;
+import getRemoteIconURLDefault from "getRemoteIconURL" /* 11365 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
@@ -21,7 +21,7 @@ let images, results;
 
 let tmp;
 const GlobalUtils = tmp(1388);
-const f108995 = (emoji) => {
+const f109102 = (emoji) => {
   let id;
   let obj2;
   const obj = { emoji: obj2 };
@@ -369,7 +369,7 @@ export const transformMessageRecord = function transformMessageRecord(id) {
       return items;
     }),
     components: found1,
-    reactions: mapped2.map(f108995),
+    reactions: mapped2.map(f109102),
     nonce: null,
     pinned: null,
     webhook_id: null,
@@ -612,7 +612,7 @@ export const transformServerMessage = function transformServerMessage(message) {
   mapped1 = undefined;
   if (null != message.reactions) {
     const reactions = message.reactions;
-    mapped1 = reactions.map(f108995);
+    mapped1 = reactions.map(f109102);
   }
   ({ nonce: obj.nonce, pinned: obj.pinned, webhook_id: obj.webhook_id, type: obj.type, activity: obj.activity, application: obj.application, application_id: obj.application_id, message_reference: obj.message_reference, flags: obj.flags, sticker_items: obj.sticker_items, poll: obj.poll } = message);
   tmp12 = undefined;

@@ -1,14 +1,14 @@
-// Module ID: 13133
-// Function ID: 13134
+// Module ID: 13151
+// Function ID: 13152
 // Name: ChatInputCharCounter
-// Dependencies: [32, 19, 1392, 1087, 1394, 21, 4945, 587, 558, 576, 2054, 504, 9576, 9586, 5625, 1128, 5195, 9343, 6856, 2]
+// Dependencies: [32, 19, 1392, 1087, 1394, 21, 4945, 587, 558, 576, 2054, 504, 9589, 9599, 5625, 1128, 5195, 9355, 6859, 2]
 
-// Module 13133 (ChatInputCharCounter)
+// Module 13151 (ChatInputCharCounter)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5625 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9586 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9599 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -67,7 +67,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmp9 = stateFromStores(9576)();
+  const tmp9 = stateFromStores(9589)();
   dependencyMap = tmp9;
   let result = tmp9 / 10;
   _slicedToArray = result;
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
               if (cResult[15] !== stateFromStores) {
                 let tmp42 = null;
                 if (!stateFromStores) {
-                  tmp42 = closure_9(tmp(9343).NitroWheelIcon, { size: "xs", color: "icon-muted" });
+                  tmp42 = closure_9(tmp(9355).NitroWheelIcon, { size: "xs", color: "icon-muted" });
                 }
                 class S {
                   constructor() {
@@ -147,7 +147,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
               }
               let obj4 = { onPress: tmp18, style: tmp36, children: items1 };
               items1 = [tmp38, tmp41];
-              const tmp46 = closure_10(tmp(6856).PressableOpacity, obj4);
+              const tmp46 = closure_10(tmp(6859).PressableOpacity, obj4);
               cResult[17] = tmp18;
               cResult[18] = tmp36;
               cResult[19] = tmp38;
@@ -206,7 +206,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
               }
               let obj6 = { onPress: tmp18, style: tmp27, children: items3 };
               items3 = [tmp29, tmp32];
-              const tmp35 = closure_10(tmp(6856).PressableOpacity, obj6);
+              const tmp35 = closure_10(tmp(6859).PressableOpacity, obj6);
               cResult[29] = tmp18;
               cResult[30] = tmp27;
               cResult[31] = tmp29;
@@ -248,7 +248,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
                   tmp26 = tmp23;
                 }
                 const obj7 = { onPress: tmp18, style: tmp20, children: tmp22 };
-                const tmp25 = closure_9(tmp(6856).PressableOpacity, obj7);
+                const tmp25 = closure_9(tmp(6859).PressableOpacity, obj7);
                 cResult[38] = tmp18;
                 cResult[39] = tmp20;
                 cResult[40] = tmp25;
@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
   }
   class E {
     constructor() {
-      obj = { onMessageLengthChanged() { /* body not rendered: F147828 */ } };
+      obj = { onMessageLengthChanged() { /* body not rendered: F148005 */ } };
       return obj;
     }
   }
@@ -321,7 +321,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
     const obj = stateFromStores(maxLength[10]);
     return obj.canUseIncreasedMessageLength(currentUser.getCurrentUser());
   });
-  const tmp5 = stateFromStores(9576)();
+  const tmp5 = stateFromStores(9589)();
   dependencyMap = tmp5;
   let result = tmp5 / 10;
   _slicedToArray = result;
@@ -367,7 +367,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
     const tmp19 = closure_10;
     let obj2 = { onPress: callback, style: items2, children: items3 };
     items2 = [tmp.container, style];
-    const PressableOpacity3 = tmp2(6856).PressableOpacity;
+    const PressableOpacity3 = tmp2(6859).PressableOpacity;
     let obj3 = { color: "text-feedback-critical", lineClamp: 1, variant: "text-xxs/semibold", children: "-" + first };
     const _HermesInternal = HermesInternal;
     const Text = tmp2(5195).Text;
@@ -375,30 +375,30 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatCounter(
     let tmp20Result = null;
     const tmp20 = closure_9;
     if (!stateFromStores) {
-      tmp20Result = tmp20(tmp2(9343).NitroWheelIcon, { size: "xs", color: "icon-muted" });
+      tmp20Result = tmp20(tmp2(9355).NitroWheelIcon, { size: "xs", color: "icon-muted" });
     }
     items3[1] = tmp20Result;
     tmp16Result = tmp19(PressableOpacity3, obj2);
   } else if (first >= -result) {
     let obj4 = { onPress: callback, style: items4, children: items5 };
     items4 = [tmp.container, style];
-    const PressableOpacity2 = tmp2(6856).PressableOpacity;
+    const PressableOpacity2 = tmp2(6859).PressableOpacity;
     let obj5 = { color: "text-default", lineClamp: 1, variant: "text-xxs/semibold", children: -first };
     items5 = [closure_9(tmp2(5195).Text, obj5), ];
     let tmp17Result = null;
     const tmp16 = closure_10;
     const tmp17 = closure_9;
     if (tmp11) {
-      tmp17Result = tmp17(tmp2(9343).NitroWheelIcon, { size: "xs", color: "icon-muted" });
+      tmp17Result = tmp17(tmp2(9355).NitroWheelIcon, { size: "xs", color: "icon-muted" });
     }
     items5[1] = tmp17Result;
     tmp16Result = tmp16(PressableOpacity2, obj4);
   } else {
     tmp16Result = null;
     if (tmp11) {
-      let obj6 = { onPress: callback, style: items6, children: closure_9(tmp2(9343).NitroWheelIcon, { size: "xs", color: "icon-muted" }) };
+      let obj6 = { onPress: callback, style: items6, children: closure_9(tmp2(9355).NitroWheelIcon, { size: "xs", color: "icon-muted" }) };
       items6 = [tmp.container, style];
-      const PressableOpacity = tmp2(6856).PressableOpacity;
+      const PressableOpacity = tmp2(6859).PressableOpacity;
       tmp16Result = closure_9(PressableOpacity, obj6);
     }
   }

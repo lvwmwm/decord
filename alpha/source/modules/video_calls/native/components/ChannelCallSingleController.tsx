@@ -1,16 +1,16 @@
-// Module ID: 11548
-// Function ID: 11549
+// Module ID: 11559
+// Function ID: 11560
 // Name: ChannelCallSingleController
-// Dependencies: [19, 6590, 502, 1087, 5593, 21, 558, 576, 1267, 5673, 504, 11549, 11551, 11552, 2]
+// Dependencies: [19, 6593, 502, 1087, 5593, 21, 558, 576, 1267, 5673, 504, 11560, 11562, 11563, 2]
 
-// Module 11548 (ChannelCallSingleController)
+// Module 11559 (ChannelCallSingleController)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import CallConstants from "CallConstants" /* 5593 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5673 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6590 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6593 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -105,8 +105,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCal
       cResult[7] = channel;
       cResult[8] = tmp15;
       cResult[9] = selectedParticipant;
-      cResult[10] = jsx(channel(tmp15 ? 11549 : 11551), { participant: selectedParticipant, channel });
-      const tmp17Result = jsx(channel(tmp15 ? 11549 : 11551), { participant: selectedParticipant, channel });
+      cResult[10] = jsx(channel(tmp15 ? 11560 : 11562), { participant: selectedParticipant, channel });
+      const tmp17Result = jsx(channel(tmp15 ? 11560 : 11562), { participant: selectedParticipant, channel });
     }
     return null;
   } else {
@@ -136,11 +136,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCal
     const id = selectedParticipant.user.id;
     let tmp15Result = null;
     if (null != tmp4) {
-      tmp15Result = jsx(channel(id === tmp13 ? 11549 : 11551), { participant: selectedParticipant, channel });
+      tmp15Result = jsx(channel(id === tmp13 ? 11560 : 11562), { participant: selectedParticipant, channel });
     }
     return tmp15Result;
   } else if (ParticipantTypes.USER === type) {
-    return jsx(channel(11552), { participant: selectedParticipant, channel });
+    return jsx(channel(11563), { participant: selectedParticipant, channel });
   } else if (ParticipantTypes.HIDDEN_STREAM === type) {
     return null;
   } else if (ParticipantTypes.ACTIVITY === type) {

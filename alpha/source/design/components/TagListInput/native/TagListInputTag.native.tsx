@@ -1,15 +1,15 @@
-// Module ID: 8917
-// Function ID: 8918
+// Module ID: 8929
+// Function ID: 8930
 // Name: TagListInputTag
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1128, 8918, 5195, 6856, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1128, 8930, 5195, 6859, 2]
 
-// Module 8917 (TagListInputTag)
+// Module 8929 (TagListInputTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Pressables from "Pressables" /* 6856 */;
-import useAccessibilityPressDefault from "useAccessibilityPress" /* 8918 */;
+import Pressables from "Pressables" /* 6859 */;
+import useAccessibilityPressDefault from "useAccessibilityPress" /* 8930 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagListInput
   let start;
   let str;
   let tag;
-  const f100889 = () => closure_1_0("remove");
+  const f100990 = () => closure_1_0("remove");
   ({ tag, selected, onPress: closure_129_0, start } = end);
   if (start === undefined) {
     start = false;
@@ -129,10 +129,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagListInput
   const intl = intl2.intl;
   const obj = { text: tag.text };
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t["0Vb9FQ"], obj);
-  ({ onAccessibilityAction, accessibilityActions } = useAccessibilityPressDefault(f100889, formatToPlainStringResult));
+  ({ onAccessibilityAction, accessibilityActions } = useAccessibilityPressDefault(f100990, formatToPlainStringResult));
   const items = [tmp.tagWrapper, , , ];
   let prop;
-  useAccessibilityPressDefault(f100889, formatToPlainStringResult);
+  useAccessibilityPressDefault(f100990, formatToPlainStringResult);
   const PressableOpacity = Pressables.PressableOpacity;
   const tmp6 = hasOwnProperty;
   if (selected) {

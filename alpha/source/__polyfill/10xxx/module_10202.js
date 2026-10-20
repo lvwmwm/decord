@@ -1,68 +1,80 @@
 // Module ID: 10202
 // Function ID: 10203
-// Dependencies: [41, 42, 10203, 10134]
+// Dependencies: [41, 42, 93, 95, 96, 98, 10158]
 
 // Module 10202
-import findMostLikelyADYear from "findMostLikelyADYear" /* 10134 */;
-import NUMBER from "NUMBER" /* 10203 */;
+import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10158 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _get from "_get" /* 96 */;
+import _inherits from "_inherits" /* 98 */;
 
-const re3 = /(?:(?:([同今本])|((昭和|平成|令和)?([0-9０-９]{1,4}|元)))年\s*)?([0-9０-９]{1,2})月\s*([0-9０-９]{1,2})日/i;
-class JPStandardParser {
-  constructor() {
-    _classCallCheck(this, JPStandardParser);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+class FRTimeExpressionParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, FRTimeExpressionParser);
+    const obj = _getPrototypeOf(FRTimeExpressionParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(FRTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
 const entry = {
-  key: "pattern",
-  value: function pattern() {
-    return re3;
+  key: "primaryPrefix",
+  value: function primaryPrefix() {
+    return "(?:(?:[\u00E0a])\\s*)?";
   }
 };
-const items = [
+let items = [
   entry,
   {
-    key: "extract",
-    value: function extract(createParsingComponents, arg1) {
-      const parsed = parseInt(NUMBER.toHankaku(arg1[5]));
-      const parsed1 = parseInt(NUMBER.toHankaku(arg1[6]));
-      const parsingComponents = createParsingComponents.createParsingComponents({ day: parsed1, month: parsed });
-      let match = arg1[1];
-      if (match) {
-        const str = arg1[1];
-        match = str.match("\u540C|\u4ECA|\u672C");
-      }
-      if (match) {
-        const reference = createParsingComponents.reference;
-        const assign = parsingComponents.assign;
-        const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
-        assign("year", dateWithAdjustedTimezone.getFullYear());
-      }
-      if (arg1[2]) {
-        let sum;
-        let num = 1;
-        if ("\u5143" != arg1[4]) {
-          const _parseInt = parseInt;
-          num = parseInt(tmp(10203).toHankaku(tmp8));
+    key: "followingPhase",
+    value: function followingPhase() {
+      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|[\u00E0a]|\\?)\\s*";
+    }
+  },
+  {
+    key: "extractPrimaryTimeComponents",
+    value: function extractPrimaryTimeComponents(arg0, arg1) {
+      let fnResult = null;
+      const str = arg1[0];
+      if (!str.match(/^\s*\d{4}\s*$/)) {
+        const self = this;
+        let fn = _get(_getPrototypeOf(FRTimeExpressionParser.prototype), "extractPrimaryTimeComponents", this);
+        if (typeof fn === "function") {
+          fn = (items) => fn.apply(self, items);
         }
-        if ("\u4EE4\u548C" == arg1[3]) {
-          sum = num + 2018;
-        } else if ("\u5E73\u6210" == arg1[3]) {
-          sum = num + 1988;
-        } else {
-          sum = num;
-          if ("\u662D\u548C" == arg1[3]) {
-            sum = num + 1925;
-          }
-        }
-        parsingComponents.assign("year", sum);
-      } else {
-        parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, parsed1, parsed));
+        const items = [arg0, arg1];
+        fnResult = fn(items);
       }
-      return parsingComponents;
+      return fnResult;
     }
   }
 ];
 
-export default _createClass(JPStandardParser, items);
+export default _createClass(FRTimeExpressionParser, items);

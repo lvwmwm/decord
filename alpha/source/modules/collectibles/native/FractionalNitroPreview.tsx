@@ -1,9 +1,9 @@
-// Module ID: 14254
-// Function ID: 14255
+// Module ID: 14272
+// Function ID: 14273
 // Name: FractionalNitroPreview
-// Dependencies: [19, 17, 1087, 1394, 21, 4945, 587, 558, 576, 1128, 8090, 2054, 5219, 14255, 5631, 14256, 7178, 5195, 2]
+// Dependencies: [19, 17, 1087, 1394, 21, 4945, 587, 558, 576, 1128, 8094, 2054, 5219, 14273, 5631, 14274, 7181, 5195, 2]
 
-// Module 14254 (FractionalNitroPreview)
+// Module 14272 (FractionalNitroPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -11,9 +11,9 @@ import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import LinearGradientDefault from "LinearGradient" /* 5219 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7178 */;
-import _modDef14255 from "module_14255" /* 14255 */;
-import NitroIconDefault from "NitroIcon" /* 14256 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7181 */;
+import _modDef14273 from "module_14273" /* 14273 */;
+import NitroIconDefault from "NitroIcon" /* 14274 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -102,7 +102,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fractional
     tmp8 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj6 = { uri: _modDef14255 };
+    const obj6 = { uri: _modDef14273 };
     cResult[4] = obj6;
     tmp13 = obj6;
   } else {
@@ -219,7 +219,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fractional
   const obj5 = { colors: ["#000000", "#36266d"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient };
   items1[0] = closure_6(LinearGradientDefault, obj5);
   const obj6 = { source: obj7, style: tmp.headerImage };
-  obj7 = { uri: _modDef14255 };
+  obj7 = { uri: _modDef14273 };
   const tmp3 = FastImageDefault;
   items1[1] = closure_6(tmp3, obj6);
   const obj8 = { style: tmp.nitroIconContainer, children: closure_6(NitroIconDefault, {}) };

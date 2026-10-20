@@ -1,14 +1,14 @@
-// Module ID: 9285
-// Function ID: 9286
+// Module ID: 9297
+// Function ID: 9298
 // Name: HeartIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9286, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9298, 5630, 2]
 
-// Module 9285 (HeartIcon)
+// Module 9297 (HeartIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 9286 */;
+import AssetRegistry from "AssetRegistry" /* 9298 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

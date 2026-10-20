@@ -1,9 +1,9 @@
-// Module ID: 9754
-// Function ID: 9755
+// Module ID: 9766
+// Function ID: 9767
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 4946, 4797, 21, 5014, 558, 576, 504, 5213, 587, 5167, 5208, 4945, 9755, 1128, 9721, 2]
+// Dependencies: [19, 17, 4946, 4797, 21, 5014, 558, 576, 504, 5213, 587, 5167, 5208, 4945, 9767, 1128, 9734, 2]
 
-// Module 9754 (BurstReactionToggle)
+// Module 9766 (BurstReactionToggle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -213,7 +213,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
     tmp6 = tmp5;
   }
   const ref = react.useRef(null);
-  const tmp8 = tmp6(9755)(ref);
+  const tmp8 = tmp6(9767)(ref);
   importDefault = tmp8;
   if (cResult[0] === tmp8) {
     let tmp9;
@@ -254,7 +254,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
         tmp14 = cResult[9];
       }
       if (cResult[10] !== INTERACTIVE_TEXT_DEFAULT) {
-        const tmp17 = jsx(onPress(9721).SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT });
+        const tmp17 = jsx(onPress(9734).SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT });
         cResult[10] = INTERACTIVE_TEXT_DEFAULT;
         cResult[11] = tmp17;
         tmp15 = tmp17;
@@ -322,7 +322,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
     tmp5 = tmp2;
   }
   const ref = react.useRef(null);
-  importDefault = tmp5(9755)(ref);
+  importDefault = tmp5(9767)(ref);
   const containerStyle = closure_12(isActive).containerStyle;
   const intl = intl2.intl;
   const string = intl.string;

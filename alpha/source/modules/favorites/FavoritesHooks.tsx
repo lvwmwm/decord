@@ -1,10 +1,10 @@
-// Module ID: 10639
-// Function ID: 10640
+// Module ID: 10650
+// Function ID: 10651
 // Name: FavoritesHooks
-// Dependencies: [4971, 1392, 4803, 4813, 1394, 10640, 558, 576, 504, 1991, 11, 1211, 4825, 2]
+// Dependencies: [4971, 1392, 4803, 4813, 1394, 10651, 558, 576, 504, 1991, 11, 1211, 4825, 2]
 // Exports: getFavoritesCategories, getFavoritesLimits
 
-// Module 10639 (FavoritesHooks)
+// Module 10650 (FavoritesHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
@@ -23,7 +23,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const FavoritesLimits = tmp(10640);
+const FavoritesLimits = tmp(10651);
 const MAX_FAVORITE_CHANNELS = FavoritesConstants.MAX_FAVORITE_CHANNELS;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -55,7 +55,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavo
     if (isPremiumExactlyResult) {
       FREE_FAVORITE_LIMIT = MAX_FAVORITE_CHANNELS;
     } else {
-      FREE_FAVORITE_LIMIT = tmp(10640).FREE_FAVORITE_LIMIT;
+      FREE_FAVORITE_LIMIT = tmp(10651).FREE_FAVORITE_LIMIT;
     }
     const obj2 = { favoriteLimit: FREE_FAVORITE_LIMIT, canUpsellFavoriteLimit: !isPremiumExactlyResult };
     cResult[2] = stateFromStores;

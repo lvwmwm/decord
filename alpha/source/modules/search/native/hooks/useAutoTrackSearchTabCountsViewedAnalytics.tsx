@@ -1,11 +1,11 @@
-// Module ID: 17904
-// Function ID: 17905
+// Module ID: 17927
+// Function ID: 17928
 // Name: useAutoTrackSearchTabCountsViewedAnalytics
-// Dependencies: [19, 9629, 558, 576, 13041, 2]
+// Dependencies: [19, 9642, 558, 576, 13059, 2]
 
-// Module 17904 (useAutoTrackSearchTabCountsViewedAnalytics)
-import SearchConstants from "SearchConstants" /* 9629 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13041 */;
+// Module 17927 (useAutoTrackSearchTabCountsViewedAnalytics)
+import SearchConstants from "SearchConstants" /* 9642 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13059 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

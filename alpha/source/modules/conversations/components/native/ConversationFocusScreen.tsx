@@ -1,13 +1,13 @@
-// Module ID: 9691
-// Function ID: 9692
+// Module ID: 9704
+// Function ID: 9705
 // Name: ConversationFocusScreen
-// Dependencies: [19, 9652, 21, 558, 576, 1508, 504, 9692, 2]
+// Dependencies: [19, 9665, 21, 558, 576, 1508, 504, 9705, 2]
 
-// Module 9691 (ConversationFocusScreen)
+// Module 9704 (ConversationFocusScreen)
 import Fragment from "Fragment" /* 21 */;
-import ConversationFocusViewDefault from "ConversationFocusView" /* 9692 */;
+import ConversationFocusViewDefault from "ConversationFocusView" /* 9705 */;
 import react from "react" /* 19 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 9652 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 9665 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

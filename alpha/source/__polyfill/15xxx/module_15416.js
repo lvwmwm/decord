@@ -1,48 +1,55 @@
 // Module ID: 15416
 // Function ID: 15417
-// Dependencies: [15359, 15356, 15355, 15417, 15376, 15405, 15390, 15358, 15385]
+// Dependencies: [15375, 15417, 15421]
 
 // Module 15416
-import _mod15355 from "module_15355" /* 15355 */;
-import _mod15356 from "module_15356" /* 15356 */;
-import _mod15358 from "module_15358" /* 15358 */;
-import _mod15359 from "module_15359" /* 15359 */;
-import _mod15376 from "module_15376" /* 15376 */;
-import _mod15405 from "module_15405" /* 15405 */;
+import _mod15375 from "module_15375" /* 15375 */;
+import _mod15417 from "module_15417" /* 15417 */;
 
-let closure_4 = _mod15359([].concat);
-if (!assign) {
-  assign = function assign(arg0, arg1) {
-    let num;
-    const tmp = _mod15376(arg0);
-    const length = arguments.length;
-    const f = _mod15405.f;
-    for (let num = 1; length > num; num = num + 1) {
-      let arr;
-      let num2;
-      let tmp3 = require;
-      let tmp5 = _mod15358(arguments[num]);
-      if (f) {
-        let tmp8 = tmp3(15417)(tmp5);
-        arr = closure_4(tmp8, f(tmp5));
-      } else {
-        arr = tmp3(15417)(tmp5);
-      }
-      let length2 = arr.length;
-      for (let num2 = 0; length2 > num2; num2 = num2 + 1) {
-        let tmp9 = arr[num2];
-        let tmp10 = require;
-        let tmp12 = _mod15355;
-        if (tmp12) {
-          tmp12 = !tmp10(15385)(tmp2, tmp5, tmp9);
-        }
-        if (!tmp12) {
-          tmp[tmp9] = tmp5[tmp9];
+let tmp;
+const _mod15421 = tmp(15421);
+const f122371 = (arg0, arg1, arg2) => {
+  const tmp3 = _mod15375(arg0);
+  const tmp4 = _mod15417(tmp3);
+  if (0 === tmp4) {
+    return !c0 && -1;
+  } else {
+    let sum = _mod15421(arg2, tmp4);
+    const tmp16 = c0;
+    if (tmp16) {
+      if (arg1 != arg1) {
+        if (tmp4 > sum) {
+          while (tmp3[+sum] == tmp3[+sum]) {
+            sum = tmp7 + 1;
+          }
+          return true;
         }
       }
+      return !c0 && -1;
     }
-    return tmp;
-  };
-}
+    let sum1 = sum;
+    if (tmp4 > sum) {
+      let num;
+      while (true) {
+        num = c0;
+        if (c0) {
+          if (tmp3[sum1] === arg1) {
+            break;
+          }
+        }
+        sum1 = sum1 + 1;
+      }
+      if (!num) {
+        num = sum1;
+      }
+      if (!num) {
+        num = 0;
+      }
+      return num;
+    }
+  }
+};
+let c0 = false;
+const obj = { includes: f122371, indexOf: f122371 };
 
-export default assign;
+export default obj;

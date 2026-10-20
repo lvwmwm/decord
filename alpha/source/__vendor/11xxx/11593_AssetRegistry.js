@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_profile/native/images", width: 24, height: 24, scales: [2, 3], hash: "0e02f6accc59d44ac3827104886762f1", name: "boost", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/application_streaming", width: 310, height: 124, scales: [2, 3], hash: "727e4438447317963db343e286b23476", name: "img_preview_not_available_light", type: "png" });

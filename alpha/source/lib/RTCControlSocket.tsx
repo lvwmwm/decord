@@ -1,7 +1,7 @@
 // Module ID: 2013
 // Function ID: 2014
 // Name: RTCControlSocket
-// Dependencies: [1372, 2014, 5680, 1104, 5703, 569, 3, 5684, 15187, 1384, 38, 2]
+// Dependencies: [1372, 2014, 5680, 1104, 5703, 569, 3, 5684, 15205, 5865, 1384, 38, 2]
 
 // Module 2013 (RTCControlSocket)
 import LoggerDefault from "Logger" /* 3 */;
@@ -10,6 +10,7 @@ import BackoffDefault from "Backoff" /* 569 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import TimeUtils from "TimeUtils" /* 5684 */;
+import DaveMessageValidator from "DaveMessageValidator" /* 5865 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1372 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import Constants from "Constants" /* 5680 */;
@@ -20,8 +21,8 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f88709 = (name) => ({ name: name.name, type: name.type, priority: 1000 * name.priority, payload_type: name.payloadType, rtx_payload_type: name.rtxPayloadType, encode: name.encode, decode: name.decode });
-const f88710 = (type) => {
+const f88809 = (name) => ({ name: name.name, type: name.type, priority: 1000 * name.priority, payload_type: name.payloadType, rtx_payload_type: name.rtxPayloadType, encode: name.encode, decode: name.decode });
+const f88810 = (type) => {
   let tmp;
   const obj = { type: type.type, rid: type.rid, ssrc: type.ssrc, active: type.active, quality: type.quality, rtx_ssrc: type.rtxSsrc, max_bitrate: type.maxBitrate, max_framerate: type.maxFrameRate, max_resolution: tmp };
   tmp = undefined;
@@ -31,7 +32,7 @@ const f88710 = (type) => {
   }
   return obj;
 };
-const f88711 = (rid) => {
+const f88811 = (rid) => {
   let VIDEO;
   let tmp5;
   const type = rid.type;
@@ -57,7 +58,7 @@ function noop() {
 }
 ({ Features: hasOwnProperty, MediaEngineContextTypes: metroRequire, MediaTypes: metroImportDefault, SpeakingFlags: metroImportAll } = Constants);
 const RTCSocketOpcode = { IDENTIFY: 0, [0]: "IDENTIFY", SELECT_PROTOCOL: 1, [1]: "SELECT_PROTOCOL", READY: 2, [2]: "READY", HEARTBEAT: 3, [3]: "HEARTBEAT", SELECT_PROTOCOL_ACK: 4, [4]: "SELECT_PROTOCOL_ACK", SPEAKING: 5, [5]: "SPEAKING", HEARTBEAT_ACK: 6, [6]: "HEARTBEAT_ACK", RESUME: 7, [7]: "RESUME", HELLO: 8, [8]: "HELLO", RESUMED: 9, [9]: "RESUMED", CLIENT_CONNECT: 11, [11]: "CLIENT_CONNECT", VIDEO: 12, [12]: "VIDEO", CLIENT_DISCONNECT: 13, [13]: "CLIENT_DISCONNECT", SESSION_UPDATE: 14, [14]: "SESSION_UPDATE", MEDIA_SINK_WANTS: 15, [15]: "MEDIA_SINK_WANTS", VOICE_BACKEND_VERSION: 16, [16]: "VOICE_BACKEND_VERSION", CHANNEL_OPTIONS_UPDATE: 17, [17]: "CHANNEL_OPTIONS_UPDATE", FLAGS: 18, [18]: "FLAGS", PLATFORM: 20, [20]: "PLATFORM", DAVE_PROTOCOL_PREPARE_TRANSITION: 21, [21]: "DAVE_PROTOCOL_PREPARE_TRANSITION", DAVE_PROTOCOL_EXECUTE_TRANSITION: 22, [22]: "DAVE_PROTOCOL_EXECUTE_TRANSITION", DAVE_PROTOCOL_READY_FOR_TRANSITION: 23, [23]: "DAVE_PROTOCOL_READY_FOR_TRANSITION", DAVE_PROTOCOL_PREPARE_EPOCH: 24, [24]: "DAVE_PROTOCOL_PREPARE_EPOCH", MLS_EXTERNAL_SENDER_PACKAGE: 25, [25]: "MLS_EXTERNAL_SENDER_PACKAGE", MLS_KEY_PACKAGE: 26, [26]: "MLS_KEY_PACKAGE", MLS_PROPOSALS: 27, [27]: "MLS_PROPOSALS", MLS_COMMIT_WELCOME: 28, [28]: "MLS_COMMIT_WELCOME", MLS_PREPARE_COMMIT_TRANSITION: 29, [29]: "MLS_PREPARE_COMMIT_TRANSITION", MLS_WELCOME: 30, [30]: "MLS_WELCOME", MLS_INVALID_COMMIT_WELCOME: 31, [31]: "MLS_INVALID_COMMIT_WELCOME", CLIENT_CANNOT_REACH_RTC_SERVER: 32, [32]: "CLIENT_CANNOT_REACH_RTC_SERVER", SFU_UPDATE: 33, [33]: "SFU_UPDATE" };
-let obj2 = { AUTHENTICATION_FAILED: 4004, [4004]: "AUTHENTICATION_FAILED", INVALID_SESSION: 4006, [4006]: "INVALID_SESSION", SERVER_NOT_FOUND: 4011, [4011]: "SERVER_NOT_FOUND", SERVER_CRASH: 4015, [4015]: "SERVER_CRASH", CANCELED: 4016, [4016]: "CANCELED", HEARTBEAT_TIMEOUT: 4800, [4800]: "HEARTBEAT_TIMEOUT", UNRESUMABLE: 4801, [4801]: "UNRESUMABLE", RESET_BACKOFF: 4802, [4802]: "RESET_BACKOFF", REPEATED_MLS_INVALID_MESSAGES: 4803, [4803]: "REPEATED_MLS_INVALID_MESSAGES", DAVE_DOWNGRADE_REFUSED: 4804, [4804]: "DAVE_DOWNGRADE_REFUSED" };
+let obj2 = { AUTHENTICATION_FAILED: 4004, [4004]: "AUTHENTICATION_FAILED", INVALID_SESSION: 4006, [4006]: "INVALID_SESSION", SERVER_NOT_FOUND: 4011, [4011]: "SERVER_NOT_FOUND", SERVER_CRASH: 4015, [4015]: "SERVER_CRASH", CANCELED: 4016, [4016]: "CANCELED", HEARTBEAT_TIMEOUT: 4800, [4800]: "HEARTBEAT_TIMEOUT", UNRESUMABLE: 4801, [4801]: "UNRESUMABLE", RESET_BACKOFF: 4802, [4802]: "RESET_BACKOFF", REPEATED_MLS_INVALID_MESSAGES: 4803, [4803]: "REPEATED_MLS_INVALID_MESSAGES", DAVE_DOWNGRADE_REFUSED: 4804, [4804]: "DAVE_DOWNGRADE_REFUSED", DAVE_INVALID_MESSAGE: 4805, [4805]: "DAVE_INVALID_MESSAGE" };
 const authStore2 = { DISCONNECTED: 0, [0]: "DISCONNECTED", CONNECTING: 1, [1]: "CONNECTING", IDENTIFYING: 2, [2]: "IDENTIFYING", RESUMING: 3, [3]: "RESUMING", CONNECTED: 4, [4]: "CONNECTED", RECONNECTING: 5, [5]: "RECONNECTING" };
 let closure_13 = 20 * DurationsDefault.Millis.SECOND;
 const MINUTE = DurationsDefault.Millis.MINUTE;
@@ -97,7 +98,7 @@ class RTCControlSocket extends TypedEventEmitter {
     return tmp6;
   }
   createWebSocket() {
-    let self = this;
+    const self = this;
     let logger = this.logger;
     logger.info("[CONNECT] " + this.url);
     if (null !== this.webSocket) {
@@ -112,7 +113,7 @@ class RTCControlSocket extends TypedEventEmitter {
       const obj = TimeUtils;
       self.handleClose(false, 0, "The connection timed out after " + obj.now() - self.connectionStartTime + " ms - did not receive OP_HELLO in time.");
     }, closure_13);
-    obj2 = self(15187);
+    obj2 = self(15205);
     obj3 = { location: "RTCControlSocket", supportsSfuUpdate: MediaEngineStore.supports(constants.UDP_ENDPOINT_UPDATE) };
     const webSocket = new WebSocket("" + self.url + "?v=" + obj2.getVoiceGatewayProtocolVersion(obj3));
     self.webSocket = webSocket;
@@ -130,23 +131,32 @@ class RTCControlSocket extends TypedEventEmitter {
       logger.info("[CONNECTED] " + self.url + " in " + diff + " ms");
       self.emit(obj3.Ping, Math.round(diff / 2));
     };
-    webSocket.onmessage = function(data) {
+    webSocket.onmessage = (data) => {
       let audio_ssrc;
       let d;
+      let obj;
       let op;
+      let parseBinaryMessageResult;
       let seq;
       let streams;
       let user_id;
       let video_ssrc;
-      let obj = self;
-      const result = self.parseWebSocketMessage(data);
-      ({ op, seq, d } = result);
+      if (data.data instanceof ArrayBuffer) {
+        obj = self;
+        parseBinaryMessageResult = self.parseBinaryMessage(data.data);
+        if (null == parseBinaryMessageResult) {
+          const result = obj.disconnectForInvalidDaveMessage("binary frame shorter than its header");
+        }
+      } else {
+        const _JSON = JSON;
+        parseBinaryMessageResult = JSON.parse(data.data);
+      }
+      ({ op, seq, d } = parseBinaryMessageResult);
       self.emit(obj3.ReceiveMessage, op, d);
       if (seq) {
-        obj.lastRecvSeqNum = seq;
+        self.lastRecvSeqNum = seq;
       }
       if (DeveloperOptionsStore.isLoggingGatewayEvents) {
-        let tmp5 = globalThis;
         const _Uint8Array = Uint8Array;
         if (d instanceof Uint8Array) {
           const items = [];
@@ -155,140 +165,158 @@ class RTCControlSocket extends TypedEventEmitter {
             const str = item.toString(16);
             return str.padStart(2, "0");
           });
-          const logger2 = obj.logger;
+          const logger2 = obj2.logger;
           const _HermesInternal2 = HermesInternal;
           logger2.info("~> " + op + ": 0x" + mapped.join(""));
         } else {
-          const logger = obj.logger;
-          const _JSON = JSON;
+          const logger = obj2.logger;
+          const _JSON2 = JSON;
           const _HermesInternal = HermesInternal;
           let str = ": ";
           logger.info("~> " + op + ": " + JSON.stringify(d));
         }
       }
       if (obj.HELLO === op) {
-        obj.clearHelloTimeout();
-        obj.handleHello(d);
+        self.clearHelloTimeout();
+        self.handleHello(d);
       } else if (obj.READY === op) {
-        obj.handleReady(d);
+        self.handleReady(d);
       } else if (obj.SFU_UPDATE === op) {
-        obj.emit(obj3.SfuUpdate, d);
+        self.emit(obj3.SfuUpdate, d);
       } else if (obj.RESUMED === op) {
-        obj.handleResumed(d);
+        self.handleResumed(d);
       } else if (obj.SELECT_PROTOCOL_ACK === op) {
-        obj.emit(obj3.SelectProtocolAck);
+        self.emit(obj3.SelectProtocolAck);
         if (d.bandwidth_estimation_experiment) {
-          obj.emit(obj3.BandwidthEstimationExperiment, d.bandwidth_estimation_experiment);
+          self.emit(obj3.BandwidthEstimationExperiment, d.bandwidth_estimation_experiment);
         }
-        obj.emit(obj3.Codecs, d.audio_codec, d.video_codec);
+        self.emit(obj3.Codecs, d.audio_codec, d.video_codec);
         if (d.media_session_id) {
-          obj.emit(obj3.MediaSessionId, d.media_session_id);
+          self.emit(obj3.MediaSessionId, d.media_session_id);
         }
         if (d.sdp) {
-          obj.emit(obj3.SDP, d.sdp);
+          self.emit(obj3.SDP, d.sdp);
         } else if (d.mode) {
-          obj.emit(obj3.Encryption, d.mode, d.secret_key);
+          self.emit(obj3.Encryption, d.mode, d.secret_key);
         }
         if (d.keyframe_interval) {
-          obj.emit(obj3.KeyframeInterval, d.keyframe_interval);
+          self.emit(obj3.KeyframeInterval, d.keyframe_interval);
         }
-        let num8 = d.dave_protocol_version;
-        const emit2 = obj.emit;
-        const SecureFramesInit = tmp3.SecureFramesInit;
-        if (!num8) {
-          num8 = 0;
+        const obj9 = DaveMessageValidator;
+        const parseDaveInitResult = obj9.parseDaveInit(d);
+        if (null == parseDaveInitResult) {
+          const _HermesInternal9 = HermesInternal;
+          const result1 = obj2.disconnectForInvalidDaveMessage("op " + op + " dave_protocol_version");
+        } else {
+          self.emit(obj3.SecureFramesInit, parseDaveInitResult);
+          self.resumable = true;
         }
-        emit2(SecureFramesInit, num8);
-        obj.resumable = true;
       } else if (obj.SPEAKING === op) {
         const speaking = d.speaking;
-        let tmp58 = speaking;
+        let tmp72 = speaking;
         if (typeof speaking === "boolean") {
-          tmp58 = speaking ? tmp76.VOICE : tmp76.NONE;
+          tmp72 = speaking ? tmp95.VOICE : tmp95.NONE;
         }
-        obj.emit(obj3.Speaking, d.user_id, d.ssrc, tmp58);
+        self.emit(obj3.Speaking, d.user_id, d.ssrc, tmp72);
       } else if (obj.HEARTBEAT === op) {
-        obj.sendHeartbeat();
+        self.sendHeartbeat();
       } else if (obj.HEARTBEAT_ACK === op) {
-        obj.handleHeartbeatAck(d);
+        self.handleHeartbeatAck(d);
       } else if (obj.VIDEO === op) {
-        const Video = tmp3.Video;
+        const Video = tmp4.Video;
         ({ user_id, audio_ssrc, video_ssrc, streams } = d);
         let mapped1;
-        const emit = obj.emit;
+        const emit = obj2.emit;
         if (streams != null) {
-          mapped1 = streams.map(f88711);
+          mapped1 = streams.map(f88811);
         }
         if (mapped1 == null) {
           mapped1 = [];
         }
         emit(Video, user_id, audio_ssrc, video_ssrc, mapped1);
       } else if (obj.CLIENT_CONNECT === op) {
-        obj.emit(obj3.ClientConnect, d.user_ids);
+        self.emit(obj3.ClientConnect, d.user_ids);
       } else if (obj.CLIENT_DISCONNECT === op) {
-        obj.emit(obj3.ClientDisconnect, d.user_id);
+        self.emit(obj3.ClientDisconnect, d.user_id);
       } else if (obj.SESSION_UPDATE === op) {
-        const tmp42 = null == d.audio_codec && null == d.video_codec;
-        if (!tmp42) {
-          obj.emit(obj3.Codecs, d.audio_codec, d.video_codec);
+        const tmp56 = null == d.audio_codec && null == d.video_codec;
+        if (!tmp56) {
+          self.emit(obj3.Codecs, d.audio_codec, d.video_codec);
         }
         if (null != d.media_session_id) {
-          obj.emit(obj3.MediaSessionId, d.media_session_id);
+          self.emit(obj3.MediaSessionId, d.media_session_id);
         }
         if (d.keyframe_interval) {
-          obj.emit(obj3.KeyframeInterval, d.keyframe_interval);
+          self.emit(obj3.KeyframeInterval, d.keyframe_interval);
         }
       } else if (obj.MEDIA_SINK_WANTS === op) {
-        obj.emit(obj3.MediaSinkWants, d);
+        self.emit(obj3.MediaSinkWants, d);
       } else if (obj.VOICE_BACKEND_VERSION === op) {
-        const tmp38 = null != d.voice && null != d.rtc_worker;
-        if (tmp38) {
-          obj.emit(obj3.VoiceBackendVersion, d.voice, d.rtc_worker);
+        const tmp52 = null != d.voice && null != d.rtc_worker;
+        if (tmp52) {
+          self.emit(obj3.VoiceBackendVersion, d.voice, d.rtc_worker);
         }
       } else if (obj.FLAGS === op) {
-        const tmp35 = null != d.flags && null != d.user_id;
-        if (tmp35) {
-          obj.emit(obj3.Flags, d.user_id, d.flags);
+        const tmp49 = null != d.flags && null != d.user_id;
+        if (tmp49) {
+          self.emit(obj3.Flags, d.user_id, d.flags);
         }
       } else if (obj.PLATFORM === op) {
-        const tmp32 = null != d.platform && null != d.user_id;
-        if (tmp32) {
-          obj.emit(obj3.Platform, d.user_id, d.platform);
+        const tmp46 = null != d.platform && null != d.user_id;
+        if (tmp46) {
+          self.emit(obj3.Platform, d.user_id, d.platform);
         }
       } else if (obj.DAVE_PROTOCOL_PREPARE_TRANSITION === op) {
-        const tmp29 = null != d.transition_id && null != d.protocol_version;
-        if (tmp29) {
-          obj.emit(obj3.SecureFramesPrepareTransition, d.transition_id, d.protocol_version);
+        const obj8 = DaveMessageValidator;
+        const result2 = obj8.parseDavePrepareTransition(d);
+        if (null == result2) {
+          const _HermesInternal8 = HermesInternal;
+          const result3 = obj2.disconnectForInvalidDaveMessage("op " + op);
+        } else {
+          self.emit(obj3.SecureFramesPrepareTransition, result2.transitionId, result2.protocolVersion);
         }
       } else if (obj.DAVE_PROTOCOL_EXECUTE_TRANSITION === op) {
-        if (null != d.transition_id) {
-          obj.emit(obj3.SecureFramesExecuteTransition, d.transition_id);
+        const obj7 = DaveMessageValidator;
+        const result4 = obj7.parseDaveExecuteTransition(d);
+        if (null == result4) {
+          const _HermesInternal7 = HermesInternal;
+          const result5 = obj2.disconnectForInvalidDaveMessage("op " + op);
+        } else {
+          self.emit(obj3.SecureFramesExecuteTransition, result4);
         }
       } else if (obj.DAVE_PROTOCOL_PREPARE_EPOCH === op) {
-        const tmp25 = null != d.epoch && null != d.protocol_version;
-        if (tmp25) {
-          obj.emit(obj3.SecureFramesPrepareEpoch, d.epoch, d.protocol_version);
+        const obj6 = DaveMessageValidator;
+        const result6 = obj6.parseDavePrepareEpoch(d);
+        if (null == result6) {
+          const _HermesInternal6 = HermesInternal;
+          const result7 = obj2.disconnectForInvalidDaveMessage("op " + op);
+        } else {
+          self.emit(obj3.SecureFramesPrepareEpoch, result6.epoch, result6.protocolVersion);
         }
       } else if (obj.MLS_EXTERNAL_SENDER_PACKAGE === op) {
-        obj.emit(obj3.MLSExternalSenderPackage, d);
+        self.emit(obj3.MLSExternalSenderPackage, d);
       } else if (obj.MLS_PROPOSALS === op) {
-        obj.emit(obj3.MLSProposals, d);
+        self.emit(obj3.MLSProposals, d);
       } else if (obj.MLS_PREPARE_COMMIT_TRANSITION === op) {
-        const _DataView2 = DataView;
-        const self3 = this;
-        const self4 = this;
-        const dataView = new DataView(d.buffer, d.byteOffset, 2);
-        const uint16 = dataView.getUint16(0, false);
-        obj.emit(obj3.MLSPrepareCommitTransition, uint16, d.slice(2));
+        const obj5 = DaveMessageValidator;
+        const result8 = obj5.parseMLSTransitionFrame(d);
+        if (null == result8) {
+          const _HermesInternal5 = HermesInternal;
+          const result9 = obj2.disconnectForInvalidDaveMessage("op " + op);
+        } else {
+          self.emit(obj3.MLSPrepareCommitTransition, result8.transitionId, result8.message);
+        }
       } else if (obj.MLS_WELCOME === op) {
-        const _DataView = DataView;
-        self = this;
-        const self2 = this;
-        const dataView1 = new DataView(d.buffer, d.byteOffset, 2);
-        const uint161 = dataView1.getUint16(0, false);
-        obj.emit(obj3.MLSWelcome, uint161, d.slice(2));
+        const obj4 = DaveMessageValidator;
+        const result10 = obj4.parseMLSTransitionFrame(d);
+        if (null == result10) {
+          const _HermesInternal4 = HermesInternal;
+          const result11 = obj2.disconnectForInvalidDaveMessage("op " + op);
+        } else {
+          self.emit(obj3.MLSWelcome, result10.transitionId, result10.message);
+        }
       } else {
-        const logger3 = obj.logger;
+        const logger3 = obj2.logger;
         const _HermesInternal3 = HermesInternal;
         logger3.info("Unhandled op " + op);
       }
@@ -448,7 +476,7 @@ class RTCControlSocket extends TypedEventEmitter {
     let mapped;
     const emit = self.emit;
     if (streams != null) {
-      mapped = streams.map(f88711);
+      mapped = streams.map(f88811);
     }
     if (mapped == null) {
       mapped = [];
@@ -537,31 +565,24 @@ class RTCControlSocket extends TypedEventEmitter {
     this.resumable = false;
     this.lastRecvSeqNum = null;
   }
-  parseWebSocketMessage(data) {
-    if (data.data instanceof ArrayBuffer) {
-      const _Uint8Array = Uint8Array;
-      const self2 = this;
-      const self3 = this;
-      const self = this;
-      const uint8Array = new Uint8Array(data.data);
-      let uint16 = null;
-      if (this.serverVersion >= 8) {
-        const _DataView = DataView;
-        const self4 = this;
-        const self5 = this;
-        const dataView = new DataView(uint8Array.buffer);
-        uint16 = dataView.getUint16(0, false);
-      }
-      let num3 = 0;
-      if (self.serverVersion >= 8) {
-        num3 = 2;
-      }
-      const obj = { op: uint8Array[num3], seq: uint16, d: uint8Array.subarray(num3 + 1) };
-      return obj;
-    } else {
-      const _JSON = JSON;
-      return JSON.parse(data.data);
+  parseBinaryMessage(data) {
+    const parseMLSFrameHeader = DaveMessageValidator.parseMLSFrameHeader;
+    DaveMessageValidator;
+    const uint8Array = new Uint8Array(data);
+    const parseMLSFrameHeaderResult = parseMLSFrameHeader(uint8Array, this.serverVersion >= 8);
+    let tmp4 = null;
+    if (null != parseMLSFrameHeaderResult) {
+      const obj = { op: null, seq: null, d: null };
+      ({ opcode: obj.op, sequenceNumber: obj.seq, payload: obj.d } = parseMLSFrameHeaderResult);
+      tmp4 = obj;
     }
+    return tmp4;
+  }
+  disconnectForInvalidDaveMessage(arg0) {
+    const logger = this.logger;
+    logger.error("[DAVE] Invalid message: " + arg0 + ".");
+    this.cleanupWebSocket((close) => close.close(constants.DAVE_INVALID_MESSAGE));
+    this.disconnect(false, obj2.DAVE_INVALID_MESSAGE, "Invalid DAVE message.");
   }
   clearHelloTimeout() {
     const self = this;
@@ -700,7 +721,7 @@ class RTCControlSocket extends TypedEventEmitter {
     const send = this.send;
     const IDENTIFY = obj.IDENTIFY;
     if (streamParameters != null) {
-      mapped = streamParameters.map(f88710);
+      mapped = streamParameters.map(f88810);
     }
     send(IDENTIFY, obj);
   }
@@ -793,7 +814,7 @@ class RTCControlSocket extends TypedEventEmitter {
         if (null != sdp.sdp) {
           if ("" !== sdp.sdp) {
             sdp = sdp.sdp;
-            obj3 = { codecs: codecs.map(f88709), rtc_connection_id: rTCConnectionId };
+            obj3 = { codecs: codecs.map(f88809), rtc_connection_id: rTCConnectionId };
             const merged = Object.assign(sdp);
             codecs = sdp.codecs;
             tmp = obj3;
@@ -815,7 +836,7 @@ class RTCControlSocket extends TypedEventEmitter {
       if (BooleanResult) {
         const obj4 = { address: null, port: null, mode: null };
         ({ address: obj2.address, port: obj2.port, mode: obj2.mode } = sdp);
-        const obj5 = { codecs: codecs1.map(f88709), rtc_connection_id: rTCConnectionId, experiments: _selectedExperiments };
+        const obj5 = { codecs: codecs1.map(f88809), rtc_connection_id: rTCConnectionId, experiments: _selectedExperiments };
         const merged1 = Object.assign(sdp);
         codecs1 = sdp.codecs;
         tmp = obj5;
@@ -829,7 +850,7 @@ class RTCControlSocket extends TypedEventEmitter {
     send(SELECT_PROTOCOL, obj9);
   }
   updateSession(codecs) {
-    const obj = { codecs: codecs.map(f88709) };
+    const obj = { codecs: codecs.map(f88809) };
     codecs = codecs.codecs;
     const send = this.send;
     const SESSION_UPDATE = obj.SESSION_UPDATE;
@@ -860,7 +881,7 @@ class RTCControlSocket extends TypedEventEmitter {
     const send = this.send;
     const VIDEO = obj.VIDEO;
     if (arr != null) {
-      mapped = arr.map(f88710);
+      mapped = arr.map(f88810);
     }
     send(VIDEO, obj);
   }

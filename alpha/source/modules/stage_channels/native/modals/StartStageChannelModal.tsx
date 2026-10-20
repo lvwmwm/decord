@@ -1,10 +1,10 @@
-// Module ID: 8958
-// Function ID: 8959
+// Module ID: 8970
+// Function ID: 8971
 // Name: StartStageChannelModal
-// Dependencies: [5, 32, 19, 17, 4805, 6585, 1087, 4806, 21, 4945, 587, 6620, 558, 576, 1128, 6856, 1202, 7132, 8959, 6831, 7254, 504, 8871, 5195, 8962, 8963, 8964, 5224, 1267, 1896, 7817, 7258, 6328, 8965, 8966, 7826, 5205, 7169, 7083, 2]
+// Dependencies: [5, 32, 19, 17, 4805, 6588, 1087, 4806, 21, 4945, 587, 6623, 558, 576, 1128, 6859, 1202, 7135, 8971, 6834, 7257, 504, 8883, 5195, 8974, 8975, 8976, 5224, 1267, 1896, 7821, 7261, 6331, 8977, 8978, 7830, 5205, 7172, 7086, 2]
 // Exports: default
 
-// Module 8958 (StartStageChannelModal)
+// Module 8970 (StartStageChannelModal)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,19 +14,19 @@ import native from "native" /* 1202 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1896 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4806 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
-import GuildIconDefault from "GuildIcon" /* 6831 */;
-import Pressables from "Pressables" /* 6856 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7132 */;
-import HotspotStore2 from "HotspotStore" /* 7254 */;
-import Form from "Form" /* 8871 */;
-import StageSparkleDefault from "StageSparkle" /* 8959 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+import GuildIconDefault from "GuildIcon" /* 6834 */;
+import Pressables from "Pressables" /* 6859 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7135 */;
+import HotspotStore2 from "HotspotStore" /* 7257 */;
+import Form from "Form" /* 8883 */;
+import StageSparkleDefault from "StageSparkle" /* 8971 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import StageInstanceStore from "StageInstanceStore" /* 4805 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6585 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6588 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ let obj6;
 let obj7;
 let tmp;
 let unpackModuleId;
-const GuildIcon = tmp(6831);
+const GuildIcon = tmp(6834);
 function closeModal() {
   const obj = ModalActionCreatorsDefault;
   obj.popWithKey(unpackModuleId);
@@ -99,7 +99,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Naviga
       const _Symbol2 = Symbol;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
         const obj2 = { accessibilityRole: "button", accessibilityLabel: tmp8, onPress: closeModal, children: syncedClientThemes(Icon, obj3) };
-        const PressableOpacity = tmp(6856).PressableOpacity;
+        const PressableOpacity = tmp(6859).PressableOpacity;
         obj3 = { source: AssetRegistryDefault };
         Icon = tmp(1202).Icon;
         const tmp14 = syncedClientThemes(PressableOpacity, obj2);
@@ -228,7 +228,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { text: intl.string(intl9.t.BYJgew) };
-    const FormLabel = tmp(8871).FormLabel;
+    const FormLabel = tmp(8883).FormLabel;
     intl = tmp(1128).intl;
     const tmp10 = syncedClientThemes(FormLabel, obj2);
     cResult[2] = tmp10;

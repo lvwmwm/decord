@@ -107,14 +107,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomT
   let tmp5;
   let tmp6;
   let tmpResult;
-  const f92996 = () => {
+  const f93097 = () => {
     const items = [CustomThemeMobileStore.getCustomTheme(), CustomThemeMobileStore.getBaseTheme(), CustomThemeMobileStore.getPreviewTheme()];
     return items;
   };
   let items = [CustomThemeMobileStore];
   const obj = get_initialized;
-  [tmp4, tmp5, tmp6] = obj.useStateFromStoresArray(items, f92996);
-  _slicedToArray(obj.useStateFromStoresArray(items, f92996), 3);
+  [tmp4, tmp5, tmp6] = obj.useStateFromStoresArray(items, f93097);
+  _slicedToArray(obj.useStateFromStoresArray(items, f93097), 3);
   if (undefined !== tmp6) {
     return tmp6;
   } else {

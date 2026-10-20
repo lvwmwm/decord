@@ -1,9 +1,9 @@
-// Module ID: 7771
-// Function ID: 7772
+// Module ID: 7775
+// Function ID: 7776
 // Name: VoiceEngineStreamingManager
-// Dependencies: [5, 17, 6590, 4800, 4851, 1087, 2026, 3, 4795, 4776, 584, 1297, 7772, 2004, 2016, 38, 7773, 5672, 6593, 1499, 1384, 11461, 11044, 1128, 2]
+// Dependencies: [5, 17, 6593, 4800, 4851, 1087, 2026, 3, 4795, 4776, 584, 1297, 7776, 2004, 2016, 38, 7777, 5672, 6596, 1499, 1384, 11472, 11056, 1128, 2]
 
-// Module 7771 (VoiceEngineStreamingManager)
+// Module 7775 (VoiceEngineStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
@@ -15,12 +15,12 @@ import inject from "inject" /* 2016 */;
 import Constants2 from "Constants" /* 2026 */;
 import UserSettings from "UserSettings" /* 4776 */;
 import Timers from "Timers" /* 4795 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6593 */;
-import AndroidStopAndPauseVideoExperimentDefault from "AndroidStopAndPauseVideoExperiment" /* 7772 */;
-import StreamActionCreators from "StreamActionCreators" /* 7773 */;
-import PushNotificationDefault from "PushNotification" /* 11044 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6596 */;
+import AndroidStopAndPauseVideoExperimentDefault from "AndroidStopAndPauseVideoExperiment" /* 7776 */;
+import StreamActionCreators from "StreamActionCreators" /* 7777 */;
+import PushNotificationDefault from "PushNotification" /* 11056 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6590 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6593 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
 import Constants from "Constants" /* 1087 */;
@@ -35,7 +35,7 @@ let c9;
 let metroImportAll;
 let tmp2;
 let unpackModuleId;
-const useScreenshareUtils = tmp2(11461);
+const useScreenshareUtils = tmp2(11472);
 function handleThumbnailUpload() {
   return obj(...arguments);
 }

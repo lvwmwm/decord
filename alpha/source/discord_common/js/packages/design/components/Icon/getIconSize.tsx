@@ -1,10 +1,10 @@
-// Module ID: 13966
-// Function ID: 13967
+// Module ID: 13984
+// Function ID: 13985
 // Name: getIconSize
 // Dependencies: [2]
 // Exports: getIconSize
 
-// Module 13966 (getIconSize)
+// Module 13984 (getIconSize)
 import size_mod from "module_2" /* 2 */;
 
 const ICON_SIZE = { xxs: 12, xs: 16, sm: 18, md: 24, lg: 32, custom: "duration", refresh_sm: true };

@@ -1,10 +1,10 @@
-// Module ID: 9625
-// Function ID: 9626
+// Module ID: 9638
+// Function ID: 9639
 // Name: useActiveTheme
 // Dependencies: [1209, 4969, 1253, 1210, 558, 576, 504, 5110, 2]
 // Exports: useIsCustomThemeActive
 
-// Module 9625 (useActiveTheme)
+// Module 9638 (useActiveTheme)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 5110 */;

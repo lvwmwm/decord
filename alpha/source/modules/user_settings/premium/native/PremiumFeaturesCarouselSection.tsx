@@ -1,9 +1,9 @@
-// Module ID: 14579
-// Function ID: 14580
+// Module ID: 14597
+// Function ID: 14598
 // Name: PremiumFeaturesCarouselSection
-// Dependencies: [32, 19, 17, 1087, 7490, 1394, 21, 587, 4945, 558, 576, 5219, 1107, 5195, 5631, 1128, 14580, 14581, 14582, 14583, 5228, 1630, 10433, 1202, 7199, 1499, 1267, 2]
+// Dependencies: [32, 19, 17, 1087, 7493, 1394, 21, 587, 4945, 558, 576, 5219, 1107, 5195, 5631, 1128, 14598, 14599, 14600, 14601, 5228, 1630, 10444, 1202, 7202, 1499, 1267, 2]
 
-// Module 14579 (PremiumFeaturesCarouselSection)
+// Module 14597 (PremiumFeaturesCarouselSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -14,12 +14,12 @@ import PremiumConstants from "PremiumConstants" /* 1394 */;
 import LinearGradientDefault from "LinearGradient" /* 5219 */;
 import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5228 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import ColorConstants from "ColorConstants" /* 7490 */;
-import PaginationDefault from "Pagination" /* 10433 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14580 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14581 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14582 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 14583 */;
+import ColorConstants from "ColorConstants" /* 7493 */;
+import PaginationDefault from "Pagination" /* 10444 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14598 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14599 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14600 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14601 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -621,7 +621,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
   const cResult = obj.c(18);
   style = style.style;
   const tmp4 = closure_14();
-  analyticsLocations = first(7199)().analyticsLocations;
+  analyticsLocations = first(7202)().analyticsLocations;
   let obj2 = react;
   [first, dependencyMap] = react.useState(false);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -740,7 +740,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
   _slicedToArray = undefined;
   style = style.style;
   let tmp = closure_14();
-  const analyticsLocations = first(7199)().analyticsLocations;
+  const analyticsLocations = first(7202)().analyticsLocations;
   [first, dependencyMap] = react.useState(false);
   const useState = react.useState;
   let obj = analyticsLocations(1499);

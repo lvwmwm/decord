@@ -1,17 +1,17 @@
-// Module ID: 17156
-// Function ID: 17157
+// Module ID: 17175
+// Function ID: 17176
 // Name: MainTabsNavigatorPanel
-// Dependencies: [32, 19, 17, 1087, 21, 3, 4945, 587, 558, 576, 1506, 5114, 11115, 11114, 17157, 5120, 17158, 5112, 5669, 1123, 17159, 7357, 17162, 5014, 6874, 9625, 17163, 17164, 17171, 17700, 17701, 17702, 17916, 17377, 5258, 11736, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 3, 4945, 587, 558, 576, 1506, 5114, 11127, 11126, 17176, 5120, 17177, 5112, 5669, 1123, 17178, 7360, 17181, 5014, 6877, 9638, 17182, 17183, 17190, 17719, 17720, 17721, 17939, 17396, 5258, 11750, 2]
 
-// Module 17156 (MainTabsNavigatorPanel)
+// Module 17175 (MainTabsNavigatorPanel)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 587 */;
 import RootNavigationRef from "RootNavigationRef" /* 5112 */;
 import ChatInputUtils from "ChatInputUtils" /* 5120 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7357 */;
-import PanelsNavigationUtils from "PanelsNavigationUtils" /* 17157 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17158 */;
-import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 17162 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7360 */;
+import PanelsNavigationUtils from "PanelsNavigationUtils" /* 17176 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17177 */;
+import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 17181 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -546,7 +546,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp61;
   let tmp65;
   let type1;
-  const f128232 = () => first4;
+  const f128384 = () => first4;
   let tmp = closure_13();
   const tmp3 = drawerWidth;
   let obj = navigation(drawerWidth[10]);
@@ -623,9 +623,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = useChannelScreensFromNavigation;
     return obj.isActiveTabsGuilds(navigation.getState());
   });
-  [tmp23, closure_13] = react.useState(f128232);
+  [tmp23, closure_13] = react.useState(f128384);
   const items3 = [navigation];
-  _slicedToArray(react.useState(f128232), 2);
+  _slicedToArray(react.useState(f128384), 2);
   const effect1 = obj3.useEffect(() => {
     function handleStateChange(data) {
       const obj = navigation(drawerWidth[16]);

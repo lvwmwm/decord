@@ -1,15 +1,15 @@
-// Module ID: 12011
-// Function ID: 12012
+// Module ID: 12026
+// Function ID: 12027
 // Name: CommandOptionView
-// Dependencies: [19, 17, 4946, 21, 2000, 4945, 587, 558, 576, 504, 5014, 12012, 5195, 12013, 1202, 10104, 12020, 2]
+// Dependencies: [19, 17, 4946, 21, 2000, 4945, 587, 558, 576, 504, 5014, 12027, 5195, 12028, 1202, 10115, 12035, 2]
 
-// Module 12011 (CommandOptionView)
+// Module 12026 (CommandOptionView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Server from "Server" /* 2000 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 5014 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10104 */;
-import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 12013 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10115 */;
+import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 12028 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
 import Fragment from "Fragment" /* 21 */;
@@ -164,7 +164,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandOptio
   const stateFromStores = obj.useStateFromStores(items, () => AccessibilityStore.useReducedMotion);
   const ReduceMotion = option(5014).ReduceMotion;
   const tmp5 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
-  const tmp2Result = option(12012);
+  const tmp2Result = option(12027);
   const optionEnteringAnimation = tmp2Result.useOptionEnteringAnimation();
   let fn = optionEnteringAnimation.registerAnimationCompleteCallback;
   const EnteringAnimation = optionEnteringAnimation.EnteringAnimation;
@@ -191,12 +191,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandOptio
     const obj3 = { skipEntering: option.required || isPreSelectedOption, children: closure_5(AwaitAnimationContext, obj4) };
     const LayoutAnimationConfig = tmp2(5014).LayoutAnimationConfig;
     obj4 = { handleQueuedCallback: fn, children: closure_5(View, obj5) };
-    AwaitAnimationContext = tmp2(12020).AwaitAnimationContext;
+    AwaitAnimationContext = tmp2(12035).AwaitAnimationContext;
     obj5 = {
       collapsable: false,
       entering: EnteringAnimation,
-      exiting: option(12012).ExitingAnimation,
-      layout: option(12012).LayoutAnimation,
+      exiting: option(12027).ExitingAnimation,
+      layout: option(12027).LayoutAnimation,
       onLayout(arg0) {
           importDefault(arg0, option);
         },

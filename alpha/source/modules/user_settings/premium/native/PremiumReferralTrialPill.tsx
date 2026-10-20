@@ -1,9 +1,9 @@
-// Module ID: 14507
-// Function ID: 14508
+// Module ID: 14525
+// Function ID: 14526
 // Name: PremiumReferralTrialPill
 // Dependencies: [17, 21, 4945, 587, 558, 576, 1128, 5195, 2]
 
-// Module 14507 (PremiumReferralTrialPill)
+// Module 14525 (PremiumReferralTrialPill)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;

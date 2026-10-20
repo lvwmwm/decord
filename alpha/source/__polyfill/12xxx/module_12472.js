@@ -1,586 +1,325 @@
 // Module ID: 12472
 // Function ID: 12473
-// Dependencies: [5, 12434, 12406, 12450, 12471]
-// Exports: makeOfflineTransport
+// Dependencies: [12434, 12437, 12450, 12473, 12474, 12460, 12432, 12475, 12468, 12444]
+// Exports: parseEventHintOrCaptureContext, prepareEvent
 
 // Module 12472
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _mod12432 from "module_12432" /* 12432 */;
+import _mod12444 from "module_12444" /* 12444 */;
+import _mod12460 from "module_12460" /* 12460 */;
+import _mod12468 from "module_12468" /* 12468 */;
+import _mod12475 from "module_12475" /* 12475 */;
 
-let c2, c6, c7;
+let breadcrumbs, data, filename, integrations;
 
-let c3 = 100;
-let c4 = 5000;
-
-export const MIN_DELAY = 100;
-export const START_DELAY = 5000;
-export function makeOfflineTransport(arg0) {
-  let closure_0 = arg0;
-  function log() {
-    const items = [...arguments];
-    const tmp2 = closure_0;
-    const tmp3 = log;
-    if (closure_0(log[1]).DEBUG_BUILD) {
-      const logger = tmp2(tmp3[2]).logger;
-      const info = logger.info;
-      const items1 = ["[Offline]:"];
-      HermesBuiltin.arraySpread(items1, items, 1);
-      HermesBuiltin.apply(info, items1, logger);
-    }
+function applyClientOptions(environment, environment2) {
+  let dist;
+  let maxValueLength;
+  let release;
+  ({ release, dist, maxValueLength } = environment2);
+  let num = 250;
+  environment = environment2.environment;
+  if (undefined !== maxValueLength) {
+    num = maxValueLength;
   }
-  return function(createStore) {
-    let timerId;
-    let tmp5;
-    closure_0 = createStore;
-    function flushIn(arg0) {
-      const tmp = timerId;
-      if (tmp) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(timerId);
-      }
-      timerId = setTimeout(_asyncToGenerator(async function(arg0, value) {
-        if (c3 === 2) {
-          c3 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            obj = { value, done: true };
-            return obj;
-          } else {
-            return { value: "IconComponent", done: null };
-          }
-        } else {
-          try {
-            c3 = 2;
-            if (0 === c2) {
-              if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 3;
-                const obj2 = { value, done: true };
-                return obj2;
-              } else {
-                closure_0 = undefined;
-                c2 = 1;
-                c3 = 1;
-                const obj3 = { value: closure_2_3.shift(), done: false };
-                return obj3;
-              }
-            } else if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              closure_0 = value;
-              const tmp21 = closure_0;
-              if (tmp21) {
-                tmp4("Attempting to send previously queued event");
-                const _Date = Date;
-                const self = this;
-                const self2 = this;
-                const first = closure_0[0];
-                const date = new Date();
-                first.sent_at = date.toISOString();
-                const promise = closure_129_7(closure_0, true);
-                promise.catch((error) => {
-                  closure_1_1("Failed to retry sending", error);
-                });
-              }
-              c3 = 3;
-              return { value: "IconComponent", done: null };
-            }
-          } catch (tmp16) {
-            c3 = 3;
-            throw tmp16;
-          }
-        }
-      }), arg0);
-      let unref = typeof timerId !== "number";
-      if (typeof timerId !== "number") {
-        unref = timerId.unref;
-      }
-      if (unref) {
-        timerId.unref();
-      }
-    }
-    function flushWithBackOff() {
-      if (!timerId) {
-        const tmp2 = closure_4;
-        if (tmp) {
-          const _clearTimeout = clearTimeout;
-          clearTimeout(timerId);
-        }
-        const _setTimeout = setTimeout;
-        timerId = setTimeout(_asyncToGenerator(async function(arg0, value) {
-          if (c3 === 2) {
-            c3 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp3 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              obj = { value, done: true };
-              return obj;
-            } else {
-              return { value: "IconComponent", done: null };
-            }
-          } else {
-            try {
-              c3 = 2;
-              if (0 === c2) {
-                if (arg0 === 1) {
-                  c3 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c3 = 3;
-                  const obj2 = { value, done: true };
-                  return obj2;
-                } else {
-                  closure_0 = undefined;
-                  c2 = 1;
-                  c3 = 1;
-                  const obj3 = { value: closure_2_3.shift(), done: false };
-                  return obj3;
-                }
-              } else if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 3;
-                const obj4 = { value, done: true };
-                return obj4;
-              } else {
-                closure_0 = value;
-                const tmp21 = closure_0;
-                if (tmp21) {
-                  tmp4("Attempting to send previously queued event");
-                  const _Date = Date;
-                  const self = this;
-                  const self2 = this;
-                  const first = closure_0[0];
-                  const date = new Date();
-                  first.sent_at = date.toISOString();
-                  const promise = closure_129_7(closure_0, true);
-                  promise.catch((error) => {
-                    closure_1_1("Failed to retry sending", error);
-                  });
-                }
-                c3 = 3;
-                return { value: "IconComponent", done: null };
-              }
-            } catch (tmp16) {
-              c3 = 3;
-              throw tmp16;
-            }
-          }
-        }), tmp2);
-        let unref = typeof timerId !== "number";
-        if (typeof timerId !== "number") {
-          unref = timerId.unref;
-        }
-        if (unref) {
-          timerId.unref();
-        }
-        const _Math = Math;
-        closure_4 = Math.min(2 * closure_4, 3600000);
-      }
-    }
-    function send(arg0) {
-      return obj(...arguments);
-    }
-    let obj = function _send() {
-      obj = _asyncToGenerator(async (arg0, value) => {
-        let shouldStore;
-        function shouldQueue(arg0, arg1, arg2) {
-          obj = createStore(closure_3_1[3]);
-          const result = obj.envelopeContainsItemType(arg0, ["client_report"]);
-          let tmp2 = !result;
-          if (tmp2) {
-            const obj2 = shouldStore;
-            shouldStore = shouldStore.shouldStore;
-            let shouldStoreResult = !shouldStore;
-            if (shouldStore) {
-              shouldStoreResult = obj2.shouldStore(arg0, arg1, arg2);
-            }
-            tmp2 = shouldStoreResult;
-          }
-          return tmp2;
-        }
-        closure_1 = value;
-        if (c7 === 2) {
-          c7 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            let obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "IconComponent", done: null };
-          }
-        } else {
-          let c5;
-          try {
-            let flag;
-            c7 = 2;
-            const tmp4 = c6;
-            if (0 === c6) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                closure_3 = tmp;
-                value = tmp4;
-                flag = closure_1;
-                if (closure_1 === undefined) {
-                  flag = false;
-                }
-                value = undefined;
-                c3 = undefined;
-                c6 = 1;
-                c7 = 1;
-                return { value: "test", done: true };
-              }
-            } else if (1 === tmp4) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                const obj4 = { value, done: true };
-                return obj4;
-              } else {
-                const tmp75 = flag;
-                if (!tmp75) {
-                  const obj14 = createStore(closure_2_1[3]);
-                  if (obj14.envelopeContainsItemType(shouldStore, ["replay_event", "replay_recording"])) {
-                    c6 = 2;
-                    c7 = 1;
-                    const obj6 = { value: closure_131_3.push(shouldStore), done: false };
-                    return obj6;
-                  }
-                }
-                c5 = 1;
-                c6 = 5;
-                c7 = 1;
-                const obj7 = { value: closure_131_1.send(shouldStore), done: false };
-                return obj7;
-              }
-            } else if (2 === tmp4) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                const obj8 = { value, done: true };
-                return obj8;
-              } else {
-                closure_131_5(closure_2_3);
-                c7 = 3;
-                const obj9 = { value: {}, done: true };
-                return obj9;
-              }
-            } else if (3 === tmp4) {
-              c5 = 0;
-              c6 = 4;
-              c7 = 1;
-              const obj10 = { value: shouldQueue(shouldStore, closure_4, closure_4), done: false };
-              return obj10;
-            } else if (4 === tmp4) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                const obj11 = { value, done: true };
-                return obj11;
-              } else if (value) {
-                if (flag) {
-                  c6 = 7;
-                  c7 = 1;
-                  const obj12 = { value: closure_131_3.unshift(shouldStore), done: false };
-                  return obj12;
-                } else {
-                  c6 = 6;
-                  c7 = 1;
-                  const obj13 = { value: closure_131_3.push(shouldStore), done: false };
-                  return obj13;
-                }
-              } else {
-                throw closure_4;
-              }
-            } else if (5 === tmp4) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c5 = 0;
-                c7 = 3;
-                const obj15 = { value, done: true };
-                return obj15;
-              } else {
-                c3 = closure_2_3;
-                const tmp73 = value;
-                if (tmp73) {
-                  if (value.headers) {
-                    if (value.headers["retry-after"]) {
-                      const obj5 = createStore(closure_2_1[4]);
-                      c3 = obj5.parseRetryAfterHeader(value.headers["retry-after"]);
-                    }
-                  }
-                  if (value.headers) {
-                    if (value.headers["x-sentry-rate-limits"]) {
-                      c3 = 60000;
-                    }
-                  }
-                  const num7 = value.statusCode || 0;
-                  if (num7 >= 400) {
-                    c5 = 0;
-                    c7 = 3;
-                    const obj16 = { value, done: true };
-                    return obj16;
-                  }
-                }
-                closure_131_5(c3);
-                closure_4 = closure_2_4;
-                c5 = 0;
-                c7 = 3;
-                const obj17 = { value, done: true };
-                return obj17;
-              }
-            } else {
-              if (6 === tmp4) {
-                if (arg0 === 1) {
-                  c7 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c7 = 3;
-                  const obj18 = { value, done: true };
-                  return obj18;
-                }
-              } else if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                obj = { value, done: true };
-                return obj;
-              }
-              closure_131_6();
-              closure_1("Error sending. Event queued.", closure_4);
-              c7 = 3;
-              const obj19 = { value: {}, done: true };
-              return obj19;
-            }
-          } catch (tmp64) {
-            closure_4 = tmp64;
-            if (0 === c5) {
-              c7 = 3;
-              throw tmp64;
-            } else {
-              c6 = 3;
-            }
-          }
+  const DEFAULT_ENVIRONMENT = environment.environment || environment || _mod12460.DEFAULT_ENVIRONMENT;
+  environment.environment = DEFAULT_ENVIRONMENT;
+  const tmp3 = !environment.release && release;
+  if (tmp3) {
+    environment.release = release;
+  }
+  const tmp4 = !environment.dist && dist;
+  if (tmp4) {
+    environment.dist = dist;
+  }
+  if (environment.message) {
+    const obj = _mod12432;
+    environment.message = obj.truncate(environment.message, num);
+  }
+  const tmp7 = environment.exception && environment.exception.values && environment.exception.values[0] && (environment.exception && environment.exception.values && environment.exception.values[0]).value;
+  if (tmp7) {
+    const obj2 = _mod12432;
+    (environment.exception && environment.exception.values && environment.exception.values[0]).value = obj2.truncate((environment.exception && environment.exception.values && environment.exception.values[0]).value, num);
+  }
+  const request = environment.request;
+  const tmp10 = request && request.url;
+  if (tmp10) {
+    const obj3 = _mod12432;
+    request.url = obj3.truncate(request.url, num);
+  }
+}
+function applyDebugIds(exception, arg1) {
+  const obj = _mod12475;
+  const filenameToDebugIdMap = obj.getFilenameToDebugIdMap(arg1);
+  try {
+    const values = exception.exception.values;
+    let item = values.forEach((stacktrace) => {
+      const frames = stacktrace.stacktrace.frames;
+      const item = frames.forEach((filename) => {
+        filename = closure_1_0 && filename.filename;
+        if (filename) {
+          filename.debug_id = closure_1_0[filename.filename];
         }
       });
-      return obj(...arguments);
-    };
-    let closure_1 = closure_0(createStore);
-    if (createStore.createStore) {
-      let closure_3 = createStore.createStore(createStore);
-      let tmp4 = closure_1_4;
-      let closure_4 = closure_1_4;
-      if (createStore.flushAtStartup) {
-        if (!timerId) {
-          const tmp6 = closure_4;
-          if (tmp5) {
-            const tmp7 = globalThis;
-            let _clearTimeout = clearTimeout;
-            clearTimeout(timerId);
-          }
-          const tmp10 = globalThis;
-          let _setTimeout = setTimeout;
-          timerId = setTimeout(_asyncToGenerator(async function(arg0, value) {
-            if (c3 === 2) {
-              c3 = 3;
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp3 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                obj = { value, done: true };
-                return obj;
-              } else {
-                return { value: "IconComponent", done: null };
-              }
-            } else {
-              try {
-                c3 = 2;
-                if (0 === c2) {
-                  if (arg0 === 1) {
-                    c3 = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    c3 = 3;
-                    const obj2 = { value, done: true };
-                    return obj2;
-                  } else {
-                    closure_0 = undefined;
-                    c2 = 1;
-                    c3 = 1;
-                    const obj3 = { value: closure_2_3.shift(), done: false };
-                    return obj3;
-                  }
-                } else if (arg0 === 1) {
-                  c3 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c3 = 3;
-                  const obj4 = { value, done: true };
-                  return obj4;
-                } else {
-                  closure_0 = value;
-                  const tmp21 = closure_0;
-                  if (tmp21) {
-                    tmp4("Attempting to send previously queued event");
-                    const _Date = Date;
-                    const self = this;
-                    const self2 = this;
-                    const first = closure_0[0];
-                    const date = new Date();
-                    first.sent_at = date.toISOString();
-                    const promise = closure_129_7(closure_0, true);
-                    promise.catch((error) => {
-                      closure_1_1("Failed to retry sending", error);
-                    });
-                  }
-                  c3 = 3;
-                  return { value: "IconComponent", done: null };
-                }
-              } catch (tmp16) {
-                c3 = 3;
-                throw tmp16;
-              }
-            }
-          }), tmp6);
-          let unref = typeof timerId !== "number";
-          if (typeof timerId !== "number") {
-            unref = timerId.unref;
-          }
-          if (unref) {
-            timerId.unref();
-          }
-          let _Math = Math;
-          closure_4 = Math.min(2 * closure_4, 3600000);
-        }
-      }
-      obj = {
-        send,
-        flush(arg0) {
-            if (undefined === arg0) {
-              const tmp = c4;
-              closure_4 = c4;
-              const tmp3 = timerId;
-              const tmp2 = c3;
-              if (timerId) {
-                const tmp4 = globalThis;
-                const _clearTimeout = clearTimeout;
-                clearTimeout(timerId);
-              }
-              const _setTimeout = setTimeout;
-              timerId = setTimeout(_asyncToGenerator(async function(arg0, value) {
-                if (c3 === 2) {
-                  c3 = 3;
-                  throw new TypeError("Generator functions may not be called on executing generators");
-                } else if (tmp3 === 3) {
-                  if (arg0 === 1) {
-                    throw value;
-                  } else if (arg0 === 2) {
-                    obj = { value, done: true };
-                    return obj;
-                  } else {
-                    return { value: "IconComponent", done: null };
-                  }
-                } else {
-                  try {
-                    c3 = 2;
-                    if (0 === c2) {
-                      if (arg0 === 1) {
-                        c3 = 3;
-                        throw value;
-                      } else if (arg0 === 2) {
-                        c3 = 3;
-                        const obj2 = { value, done: true };
-                        return obj2;
-                      } else {
-                        closure_0 = undefined;
-                        c2 = 1;
-                        c3 = 1;
-                        const obj3 = { value: closure_2_3.shift(), done: false };
-                        return obj3;
-                      }
-                    } else if (arg0 === 1) {
-                      c3 = 3;
-                      throw value;
-                    } else if (arg0 === 2) {
-                      c3 = 3;
-                      const obj4 = { value, done: true };
-                      return obj4;
-                    } else {
-                      closure_0 = value;
-                      const tmp21 = closure_0;
-                      if (tmp21) {
-                        tmp4("Attempting to send previously queued event");
-                        const _Date = Date;
-                        const self = this;
-                        const self2 = this;
-                        const first = closure_0[0];
-                        const date = new Date();
-                        first.sent_at = date.toISOString();
-                        const promise = closure_129_7(closure_0, true);
-                        promise.catch((error) => {
-                          closure_1_1("Failed to retry sending", error);
-                        });
-                      }
-                      c3 = 3;
-                      return { value: "IconComponent", done: null };
-                    }
-                  } catch (tmp16) {
-                    c3 = 3;
-                    throw tmp16;
-                  }
-                }
-              }), tmp2);
-              let unref = typeof timerId !== "number";
-              if (typeof timerId !== "number") {
-                unref = timerId.unref;
-              }
-              if (unref) {
-                timerId.unref();
-              }
-            }
-            return closure_1.flush(arg0);
-          }
-      };
-      return obj;
-    } else {
-      let tmp = globalThis;
-      const _Error = Error;
-      let self = this;
-      let self2 = this;
-      const error = new Error("No `createStore` function was provided");
-      let tmp3 = error;
-      throw error;
-    }
-  };
+    });
+  } catch (err) {
+  }
 }
+function applyDebugMeta(exception) {
+  const obj = {};
+  try {
+    const values = exception.exception.values;
+    let item = values.forEach((stacktrace) => {
+      const frames = stacktrace.stacktrace.frames;
+      const item = frames.forEach((debug_id) => {
+        if (debug_id.debug_id) {
+          if (debug_id.abs_path) {
+            obj[debug_id.abs_path] = debug_id.debug_id;
+          } else if (debug_id.filename) {
+            obj[debug_id.filename] = debug_id.debug_id;
+          }
+          delete tmp["debug_id"];
+        }
+      });
+    });
+  } catch (err) {
+  }
+  if (0 !== Object.keys(obj).length) {
+    exception.debug_meta = exception.debug_meta || {};
+    let images = exception.debug_meta.images;
+    const debug_meta = exception.debug_meta;
+    if (!images) {
+      images = [];
+    }
+    debug_meta.images = images;
+    images = exception.debug_meta.images;
+    const _Object = Object;
+    const entries = Object.entries(obj);
+    const item1 = entries.forEach((item) => {
+      let tmp;
+      let tmp2;
+      [tmp, tmp2] = item;
+      images.push({ type: "sourcemap", code_file: tmp, debug_id: tmp2 });
+    });
+  }
+}
+let closure_5 = ["user", "level", "extra", "contexts", "tags", "fingerprint", "requestSession", "propagationContext"];
+
+export { applyClientOptions };
+export { applyDebugIds };
+export { applyDebugMeta };
+export const parseEventHintOrCaptureContext = function parseEventHintOrCaptureContext(captureContext) {
+  if (captureContext) {
+    let tmp5;
+    const tmp3 = captureContext instanceof _mod12444.Scope || typeof captureContext === "function";
+    if (tmp3) {
+      tmp5 = { captureContext };
+      const obj = { captureContext };
+    } else {
+      const _Object = Object;
+      const keys = Object.keys(captureContext);
+      tmp5 = captureContext;
+    }
+    return tmp5;
+  }
+};
+export const prepareEvent = function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, getScopeData) {
+  let timestamp;
+  let uuid4Result;
+  normalizeDepth = normalizeDepth.normalizeDepth;
+  let num = 3;
+  if (undefined !== normalizeDepth) {
+    num = normalizeDepth;
+  }
+  const normalizeMaxBreadth = normalizeDepth.normalizeMaxBreadth;
+  let num2 = 1000;
+  if (undefined !== normalizeMaxBreadth) {
+    num2 = normalizeMaxBreadth;
+  }
+  let obj = { event_id: uuid4Result, timestamp };
+  let merged = Object.assign(event_id);
+  uuid4Result = event_id.event_id || event_id2.event_id;
+  if (!uuid4Result) {
+    const tmp4 = num;
+    let tmp5 = num2;
+    let obj2 = num(num2[0]);
+    uuid4Result = obj2.uuid4();
+  }
+  timestamp = event_id.timestamp;
+  if (!timestamp) {
+    let obj3 = num(num2[1]);
+    timestamp = obj3.dateTimestampInSeconds();
+  }
+  integrations = event_id2.integrations;
+  if (!integrations) {
+    const integrations1 = normalizeDepth.integrations;
+    integrations = integrations1.map((name) => name.name);
+  }
+  applyClientOptions(obj, normalizeDepth);
+  if (integrations.length > 0) {
+    obj.sdk = obj.sdk || {};
+    let integrations2 = obj.sdk.integrations;
+    const sdk = obj.sdk;
+    if (!integrations2) {
+      integrations2 = [];
+    }
+    const items = [];
+    HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, integrations2, 0));
+    sdk.integrations = items;
+  }
+  const tmp14 = emit;
+  if (tmp14) {
+    emit.emit("applyFrameMetadata", event_id);
+  }
+  if (undefined === event_id.type) {
+    applyDebugIds(obj, normalizeDepth.stackParser);
+  }
+  const captureContext = event_id2.captureContext;
+  let obj4 = clone;
+  if (captureContext) {
+    let cloneResult;
+    if (clone) {
+      cloneResult = clone.clone();
+    } else {
+      const self = this;
+      const self2 = this;
+      cloneResult = new num(num2[9]).Scope();
+    }
+    cloneResult.update(captureContext);
+    obj4 = cloneResult;
+  }
+  if (event_id2.mechanism) {
+    const obj6 = num(num2[0]);
+    const result = obj6.addExceptionMechanism(obj, event_id2.mechanism);
+  }
+  if (emit) {
+    let eventProcessors = emit.getEventProcessors();
+  } else {
+    eventProcessors = [];
+  }
+  const obj7 = num(num2[2]);
+  const globalScope = obj7.getGlobalScope();
+  const scopeData = globalScope.getScopeData();
+  if (getScopeData) {
+    const scopeData1 = getScopeData.getScopeData();
+    const tmp24Result = num(num2[3]);
+    tmp24Result.mergeScopeData(scopeData, scopeData1);
+  }
+  if (obj4) {
+    const scopeData2 = obj4.getScopeData();
+    const tmp24Result4 = num(num2[3]);
+    tmp24Result4.mergeScopeData(scopeData, scopeData2);
+  }
+  let tmp31 = event_id2.attachments || [];
+  const items1 = [...scopeData.attachments];
+  if (items1.length) {
+    event_id2.attachments = items1;
+  }
+  const tmp24Result5 = num(num2[3]);
+  const result1 = tmp24Result5.applyScopeDataToEvent(obj, scopeData);
+  const items2 = [...scopeData.eventProcessors];
+  const tmp24Result6 = num(num2[4]);
+  const result2 = tmp24Result6.notifyEventProcessors(items2, obj, event_id2);
+  return result2.then((breadcrumbs) => {
+    let breadcrumbs1;
+    let normalizer;
+    let normalizer2;
+    let normalizer3;
+    const tmp = breadcrumbs;
+    if (tmp) {
+      applyDebugMeta(breadcrumbs);
+    }
+    let tmp5 = breadcrumbs;
+    if (typeof num === "number") {
+      num2 = 0;
+      tmp5 = breadcrumbs;
+      if (num > 0) {
+        let closure_0 = tmp4;
+        let closure_1 = num2;
+        let tmp31 = null;
+        if (breadcrumbs) {
+          let obj = {};
+          let merged = Object.assign(breadcrumbs);
+          breadcrumbs = breadcrumbs.breadcrumbs;
+          if (breadcrumbs) {
+            let obj2 = {
+              breadcrumbs: breadcrumbs1.map((data) => {
+                        let normalizer;
+                        const obj = {};
+                        const merged = Object.assign(data);
+                        data = data.data;
+                        if (data) {
+                          const obj2 = { data: normalizer.normalize(data.data, closure_0, closure_1) };
+                          normalizer = num(num2[8]);
+                          data = obj2;
+                        }
+                        const merged1 = Object.assign(data);
+                        return obj;
+                      })
+            };
+            breadcrumbs1 = breadcrumbs.breadcrumbs;
+            breadcrumbs = obj2;
+          }
+          let merged1 = Object.assign(breadcrumbs);
+          let user = breadcrumbs.user;
+          if (user) {
+            const obj3 = { user: normalizer.normalize(breadcrumbs.user, num, num2) };
+            normalizer = _mod12468;
+            user = obj3;
+          }
+          const merged2 = Object.assign(user);
+          let contexts = breadcrumbs.contexts;
+          if (contexts) {
+            const obj4 = { contexts: normalizer2.normalize(breadcrumbs.contexts, num, num2) };
+            normalizer2 = _mod12468;
+            contexts = obj4;
+          }
+          const merged3 = Object.assign(contexts);
+          let extra = breadcrumbs.extra;
+          if (extra) {
+            const obj5 = { extra: normalizer3.normalize(breadcrumbs.extra, num, num2) };
+            normalizer3 = _mod12468;
+            extra = obj5;
+          }
+          const merged4 = Object.assign(extra);
+          const tmp27 = breadcrumbs.contexts && breadcrumbs.contexts.trace && obj.contexts;
+          if (tmp27) {
+            obj.contexts.trace = breadcrumbs.contexts.trace;
+            if (breadcrumbs.contexts.trace.data) {
+              const trace = obj.contexts.trace;
+              const normalizer4 = _mod12468;
+              trace.data = normalizer4.normalize(breadcrumbs.contexts.trace.data, num, num2);
+            }
+          }
+          if (breadcrumbs.spans) {
+            const spans = breadcrumbs.spans;
+            obj.spans = spans.map((data) => {
+              let normalizer;
+              const obj = {};
+              const merged = Object.assign(data);
+              data = data.data;
+              if (data) {
+                const obj2 = { data: normalizer.normalize(data.data, closure_0, closure_1) };
+                normalizer = num(num2[8]);
+                data = obj2;
+              }
+              const merged1 = Object.assign(data);
+              return obj;
+            });
+          }
+          tmp31 = obj;
+          const tmp30 = breadcrumbs.contexts && breadcrumbs.contexts.flags && obj.contexts;
+          if (tmp30) {
+            const contexts2 = obj.contexts;
+            const normalizer5 = _mod12468;
+            num = 3;
+            contexts2.flags = normalizer5.normalize(breadcrumbs.contexts.flags, 3, num2);
+            tmp31 = obj;
+          }
+        }
+        tmp5 = tmp31;
+      }
+    }
+    return tmp5;
+  });
+};

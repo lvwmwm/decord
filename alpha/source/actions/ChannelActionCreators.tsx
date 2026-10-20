@@ -1,9 +1,9 @@
-// Module ID: 7357
-// Function ID: 7358
+// Module ID: 7360
+// Function ID: 7361
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 7358, 4804, 4800, 6719, 1087, 7359, 1297, 6780, 5112, 5669, 6582, 584, 6769, 1267, 1114, 4952, 1128, 7370, 5671, 6337, 2]
+// Dependencies: [32, 5, 7361, 4804, 4800, 6722, 1087, 7362, 1297, 6783, 5112, 5669, 6585, 584, 6772, 1267, 1114, 4952, 1128, 7373, 5671, 6340, 2]
 
-// Module 7357 (ChannelActionCreators)
+// Module 7360 (ChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1114 */;
 import intl2 from "intl" /* 1128 */;
@@ -13,13 +13,13 @@ import ChannelRecord from "ChannelRecord" /* 4804 */;
 import shared from "shared" /* 4952 */;
 import RootNavigationRef from "RootNavigationRef" /* 5112 */;
 import preloadChannelDefault from "preloadChannel" /* 5671 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6582 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 6769 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6585 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 6772 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 7358 */;
+import ChangelogStore from "ChangelogStore" /* 7361 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
-import ReadStateStore from "ReadStateStore" /* 6719 */;
+import ReadStateStore from "ReadStateStore" /* 6722 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

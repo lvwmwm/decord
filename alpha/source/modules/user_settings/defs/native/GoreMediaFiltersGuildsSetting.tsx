@@ -1,24 +1,24 @@
-// Module ID: 15908
-// Function ID: 15909
+// Module ID: 15927
+// Function ID: 15928
 // Name: GoreMediaFiltersGuildsSetting
-// Dependencies: [8276, 558, 8067, 15892, 576, 15900, 8531, 7344, 15901, 1128, 1211, 11099, 2]
+// Dependencies: [8280, 558, 8071, 15911, 576, 15919, 8535, 7347, 15920, 1128, 1211, 11111, 2]
 
-// Module 15908 (GoreMediaFiltersGuildsSetting)
+// Module 15927 (GoreMediaFiltersGuildsSetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7344 */;
-import useUserIsTeen from "useUserIsTeen" /* 8067 */;
-import SettingsConstants from "SettingsConstants" /* 8276 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15892 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15900 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15901 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7347 */;
+import useUserIsTeen from "useUserIsTeen" /* 8071 */;
+import SettingsConstants from "SettingsConstants" /* 8280 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15911 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15919 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15920 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11099 */;
+import SettingBuilders from "SettingBuilders" /* 11111 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(8531);
+const ExplicitMediaRedactionUtils = tmp(8535);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsDisabled() {

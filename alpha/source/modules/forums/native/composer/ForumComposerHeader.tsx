@@ -1,18 +1,18 @@
-// Module ID: 10033
-// Function ID: 10034
+// Module ID: 10044
+// Function ID: 10045
 // Name: ForumComposerHeader
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5565, 1128, 6879, 6856, 8504, 5195, 8491, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5565, 1128, 6882, 6859, 8508, 5195, 8495, 2]
 
-// Module 10033 (ForumComposerHeader)
+// Module 10044 (ForumComposerHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import useChannelNameDefault from "useChannelName" /* 5565 */;
-import Pressables from "Pressables" /* 6856 */;
-import XSmallIcon from "XSmallIcon" /* 6879 */;
-import BookCheckIcon from "BookCheckIcon" /* 8491 */;
-import ForumIcon from "ForumIcon" /* 8504 */;
+import Pressables from "Pressables" /* 6859 */;
+import XSmallIcon from "XSmallIcon" /* 6882 */;
+import BookCheckIcon from "BookCheckIcon" /* 8495 */;
+import ForumIcon from "ForumIcon" /* 8508 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -195,7 +195,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumCompose
             let tmp38 = null;
             if (length1 > 0) {
               const obj6 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl4.t.yR6HwZ), style: tmp4.button, onPress: onGuidelinesPress, children: hasOwnProperty(BookCheckIcon.BookCheckIcon, {}) };
-              const PressableOpacity = tmp(6856).PressableOpacity;
+              const PressableOpacity = tmp(6859).PressableOpacity;
               intl3 = tmp(1128).intl;
               tmp38 = hasOwnProperty(PressableOpacity, obj6);
             }
@@ -281,7 +281,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumCompose
   let tmp6Result = null;
   if (length > 0) {
     const obj5 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl4.t.yR6HwZ), style: tmp.button, onPress: onGuidelinesPress, children: hasOwnProperty(BookCheckIcon.BookCheckIcon, {}) };
-    const PressableOpacity2 = tmp7(6856).PressableOpacity;
+    const PressableOpacity2 = tmp7(6859).PressableOpacity;
     intl3 = tmp7(1128).intl;
     tmp6Result = tmp6(PressableOpacity2, obj5);
   }

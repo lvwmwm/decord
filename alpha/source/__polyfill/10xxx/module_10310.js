@@ -1,11 +1,10 @@
 // Module ID: 10310
 // Function ID: 10311
-// Dependencies: [41, 42, 93, 95, 98, 10302, 10136, 10140]
+// Dependencies: [41, 42, 93, 95, 98, 10298, 10146, 10147, 10300]
 
 // Module 10310
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10136 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10140 */;
-import _mod10302 from "module_10302" /* 10302 */;
+import _mod10298 from "module_10298" /* 10298 */;
+import _mod10300 from "module_10300" /* 10300 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,32 +26,28 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(" + _mod10302.TIME_UNITS_PATTERN + ")\\s{0,5}(?:dopo|pi\u00F9 tardi|da adesso|avanti|oltre|a seguire)(?=(?:\\W|$))", "i");
-const regExp1 = new RegExp("(" + _mod10302.TIME_UNITS_PATTERN + ")(dopo|pi\u00F9 tardi)(?=(?:\\W|$))", "i");
-class ENTimeUnitLaterFormatParser {
-  constructor(strictMode) {
+class UKTimeUnitCasualRelativeFormatParser {
+  constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENTimeUnitLaterFormatParser);
-    const obj = _getPrototypeOf(ENTimeUnitLaterFormatParser);
+    _classCallCheck(this, UKTimeUnitCasualRelativeFormatParser);
+    const obj = _getPrototypeOf(UKTimeUnitCasualRelativeFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      constructResult = obj(...arguments);
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = strictMode;
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(ENTimeUnitLaterFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(UKTimeUnitCasualRelativeFormatParser, _mod10300.AbstractParserWithLeftRightBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return this.strictMode ? regExp1 : regExp;
+  key: "innerPatternString",
+  value: function innerPatternString(arg0) {
+    return "(\u0446\u0456|\u043E\u0441\u0442\u0430\u043D\u043D\u0456|\u043C\u0438\u043D\u0443\u043B\u0456|\u043C\u0430\u0439\u0431\u0443\u0442\u043D\u0456|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u0456|\u043F\u0456\u0441\u043B\u044F|\u0447\u0435\u0440\u0435\u0437|\\+|-)\\s*(" + _mod10298.TIME_UNITS_PATTERN + ")";
   }
 };
 const items = [
@@ -60,11 +55,20 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod10302.parseDuration(arg1[1]);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const parseDurationResult = _mod10298.parseDuration(arg1[3]);
+      if ("\u043E\u0441\u0442\u0430\u043D\u043D\u0456" !== formatted) {
+        let reverseDurationResult;
+        if ("\u043C\u0438\u043D\u0443\u043B\u0456" !== formatted) {
+          reverseDurationResult = parseDurationResult;
+        }
+        const ParsingComponents = tmp2(10147).ParsingComponents;
+        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+      }
+      reverseDurationResult = tmp2(10146).reverseDuration(parseDurationResult);
     }
   }
 ];
 
-export default _createClass(ENTimeUnitLaterFormatParser, items);
+export default _createClass(UKTimeUnitCasualRelativeFormatParser, items);

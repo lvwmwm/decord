@@ -1,14 +1,14 @@
-// Module ID: 10923
-// Function ID: 10924
+// Module ID: 10934
+// Function ID: 10935
 // Name: useShowBadgeProgress
-// Dependencies: [6618, 1087, 558, 576, 504, 10917, 2]
+// Dependencies: [6621, 1087, 558, 576, 504, 10928, 2]
 
-// Module 10923 (useShowBadgeProgress)
+// Module 10934 (useShowBadgeProgress)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import BadgeUtils from "BadgeUtils" /* 10917 */;
-import ConsentStore from "ConsentStore" /* 6618 */;
+import BadgeUtils from "BadgeUtils" /* 10928 */;
+import ConsentStore from "ConsentStore" /* 6621 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

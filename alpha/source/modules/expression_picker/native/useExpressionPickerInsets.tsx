@@ -1,9 +1,9 @@
-// Module ID: 10045
-// Function ID: 10046
+// Module ID: 10056
+// Function ID: 10057
 // Name: useExpressionPickerInsets
 // Dependencies: [19, 1087, 558, 576, 1633, 5554, 587, 2]
 
-// Module 10045 (useExpressionPickerInsets)
+// Module 10056 (useExpressionPickerInsets)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;

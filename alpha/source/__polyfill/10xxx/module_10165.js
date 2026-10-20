@@ -1,11 +1,10 @@
 // Module ID: 10165
 // Function ID: 10166
-// Dependencies: [41, 42, 93, 95, 98, 10132, 10135, 10136, 10152]
+// Dependencies: [41, 42, 93, 95, 98, 10166, 10163]
 
 // Module 10165
-import _mod10132 from "module_10132" /* 10132 */;
-import ReferenceWithTimezone2 from "ReferenceWithTimezone" /* 10136 */;
-import _mod10152 from "module_10152" /* 10152 */;
+import _mod10163 from "module_10163" /* 10163 */;
+import mergeDateTimeComponent from "mergeDateTimeComponent" /* 10166 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,12 +26,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ENMergeRelativeFollowByDateRefiner {
+class AbstractMergeDateTimeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENMergeRelativeFollowByDateRefiner);
-    const obj = _getPrototypeOf(ENMergeRelativeFollowByDateRefiner);
+    _classCallCheck(this, AbstractMergeDateTimeRefiner);
+    const obj = _getPrototypeOf(AbstractMergeDateTimeRefiner);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -44,65 +43,46 @@ class ENMergeRelativeFollowByDateRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENMergeRelativeFollowByDateRefiner, _mod10152.MergingRefiner);
+_inherits(AbstractMergeDateTimeRefiner, _mod10163.MergingRefiner);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    return /^\s*$/i;
+  key: "shouldMergeResults",
+  value: function shouldMergeResults(str, start, start2) {
+    start = start.start;
+    let isOnlyDateResult = start.isOnlyDate();
+    if (isOnlyDateResult) {
+      start2 = start2.start;
+      isOnlyDateResult = start2.isOnlyTime();
+    }
+    if (!isOnlyDateResult) {
+      const start3 = start2.start;
+      let isOnlyDateResult1 = start3.isOnlyDate();
+      if (isOnlyDateResult1) {
+        const start4 = start.start;
+        isOnlyDateResult1 = start4.isOnlyTime();
+      }
+      isOnlyDateResult = isOnlyDateResult1;
+    }
+    if (isOnlyDateResult) {
+      const self = this;
+      isOnlyDateResult = null != str.match(this.patternBetween());
+    }
+    return isOnlyDateResult;
   }
 };
 const items = [
   entry,
   {
-    key: "shouldMergeResults",
-    value: function shouldMergeResults(str, text, start) {
-      let match = str.match(this.patternBetween());
-      if (match) {
-        let tmp5 = null == str.match(/\s+(before|from)$/i);
-        null != text.text.match(/\s+(before|from)$/i);
-        if (tmp5) {
-          const str2 = text.text;
-          tmp5 = null == str2.match(/\s+(after|since)$/i);
-        }
-        let tmp6 = !tmp5;
-        if (tmp6) {
-          start = start.start;
-          let value = start.get("day");
-          if (value) {
-            const start2 = start.start;
-            value = start2.get("month");
-          }
-          if (value) {
-            const start3 = start.start;
-            value = start3.get("year");
-          }
-          tmp6 = value;
-        }
-        match = tmp6;
-      }
-      return match;
-    }
-  },
-  {
     key: "mergeResults",
-    value: function mergeResults(arg0, text, start) {
-      const parseDurationResult = _mod10132.parseDuration(text.text);
-      let reverseDurationResult = parseDurationResult;
-      const str = text.text;
-      if (null != str.match(/\s+(before|from)$/i)) {
-        reverseDurationResult = tmp(10135).reverseDuration(parseDurationResult);
-      }
-      const ParsingComponents = tmp(10136).ParsingComponents;
-      const createRelativeFromReference = ParsingComponents.createRelativeFromReference;
-      const ReferenceWithTimezone = tmp(10136).ReferenceWithTimezone;
+    value: function mergeResults(arg0, start, text) {
       start = start.start;
-      const relativeFromReference = createRelativeFromReference(ReferenceWithTimezone.fromDate(start.date()), reverseDurationResult);
-      const reference = start.reference;
-      const index = text.index;
-      const parsingResult = new ReferenceWithTimezone2.ParsingResult(reference, index, "" + text.text + arg0 + start.text, relativeFromReference);
-      return parsingResult;
+      const isOnlyDateResult = start.isOnlyDate();
+      const mergeDateTimeResult = mergeDateTimeComponent.mergeDateTimeResult;
+      const tmp2 = isOnlyDateResult ? mergeDateTimeResult(start, text) : mergeDateTimeResult(text, start);
+      tmp2.index = start.index;
+      tmp2.text = start.text + arg0 + text.text;
+      return tmp2;
     }
   }
 ];
 
-export default _createClass(ENMergeRelativeFollowByDateRefiner, items);
+export default _createClass(AbstractMergeDateTimeRefiner, items);

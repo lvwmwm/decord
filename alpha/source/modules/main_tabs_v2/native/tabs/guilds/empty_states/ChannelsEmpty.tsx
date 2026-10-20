@@ -1,18 +1,18 @@
-// Module ID: 17411
-// Function ID: 17412
+// Module ID: 17430
+// Function ID: 17431
 // Name: ChannelsEmpty
-// Dependencies: [19, 17, 4880, 1087, 21, 4945, 5195, 587, 558, 576, 573, 8926, 8896, 16171, 8873, 1202, 17412, 1128, 5631, 17413, 5206, 2]
+// Dependencies: [19, 17, 4880, 1087, 21, 4945, 5195, 587, 558, 576, 573, 8938, 8908, 16190, 8885, 1202, 17431, 1128, 5631, 17432, 5206, 2]
 
-// Module 17411 (ChannelsEmpty)
+// Module 17430 (ChannelsEmpty)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8896 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8926 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17412 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17413 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8908 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8938 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17431 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17432 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
 import Fragment from "Fragment" /* 21 */;
@@ -104,7 +104,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     tmp11 = cResult[7];
   }
-  const tmpResult2 = guild(16171);
+  const tmpResult2 = guild(16190);
   const youBarTotalHeight = tmpResult2.useYouBarTotalHeight(16);
   if (cResult[8] !== youBarTotalHeight) {
     const obj2 = { paddingBottom: youBarTotalHeight };
@@ -256,7 +256,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (tmp16) {
       const obj10 = { style: tmp4.personalizeButtonWrapper, children: closure_7(RowButton, obj11) };
       obj11 = { icon: closure_7(Icon, obj12), label: intl.string(guild(1128).t["Yhi9/N"]), onPress: tmp10 };
-      RowButton = tmp(8873).RowButton;
+      RowButton = tmp(8885).RowButton;
       obj12 = { source: AssetRegistryDefault, disableColor: true };
       Icon = tmp(1202).Icon;
       intl = tmp(1128).intl;
@@ -312,13 +312,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }, items3);
   const obj3 = { style: items4, children: items5 };
   items4 = [tmp.wrapper, ];
-  const obj2 = guild(16171);
+  const obj2 = guild(16190);
   items4[1] = { paddingBottom: obj2.useYouBarTotalHeight(16) };
   ({ paddingBottom: obj2.useYouBarTotalHeight(16) });
   if (canCustomizeGuild) {
     const obj5 = { style: tmp.personalizeButtonWrapper, children: closure_7(RowButton, obj6) };
     obj6 = { icon: closure_7(Icon, obj7), label: intl.string(guild(1128).t["Yhi9/N"]), onPress: callback };
-    RowButton = tmp2(8873).RowButton;
+    RowButton = tmp2(8885).RowButton;
     obj7 = { source: AssetRegistryDefault, disableColor: true };
     Icon = tmp2(1202).Icon;
     intl = tmp2(1128).intl;

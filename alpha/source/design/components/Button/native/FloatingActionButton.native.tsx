@@ -1,9 +1,9 @@
-// Module ID: 8840
-// Function ID: 8841
+// Module ID: 8852
+// Function ID: 8853
 // Name: FloatingActionButton
-// Dependencies: [109, 19, 21, 4945, 587, 5211, 558, 576, 5014, 5208, 7904, 2]
+// Dependencies: [109, 19, 21, 4945, 587, 5211, 558, 576, 5014, 5208, 7908, 2]
 
-// Module 8840 (FloatingActionButton)
+// Module 8852 (FloatingActionButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 5014 */;
@@ -179,7 +179,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FloatingActi
       }
     }
   }
-  const BaseIconButton = tmp(7904).BaseIconButton;
+  const BaseIconButton = tmp(7908).BaseIconButton;
   const merged = Object.assign(tmp8);
   ({ button: obj5.style, iconButtonPill: obj5.pillStyle } = tmp12);
   const tmp20 = <BaseIconButton accessibilityLabel={tmp4} size="lg" variant="primary" icon={tmp14} />;
@@ -233,7 +233,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FloatingActi
   const obj3 = { style: animatedStyle, children: tmp5(BaseIconButton, obj5) };
   const View = positionRight(5014).View;
   obj5 = { accessibilityLabel, size: "lg", variant: "primary", icon: cloneElementResult };
-  BaseIconButton = positionBottom(7904).BaseIconButton;
+  BaseIconButton = positionBottom(7908).BaseIconButton;
   const merged1 = Object.assign(merged);
   cloneElementResult = icon;
   const tmp6 = positionRight;

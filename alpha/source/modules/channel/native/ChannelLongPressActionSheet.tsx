@@ -1,9 +1,9 @@
-// Module ID: 10610
-// Function ID: 10611
+// Module ID: 10621
+// Function ID: 10622
 // Name: ChannelLongPressActionSheet
-// Dependencies: [5, 19, 10611, 6631, 4805, 6738, 4804, 7161, 4800, 7582, 4822, 4880, 6719, 4890, 4851, 6652, 1392, 4807, 1087, 9941, 21, 7822, 2002, 7811, 1128, 10612, 8593, 5638, 7357, 5565, 5863, 10037, 9942, 5640, 6620, 10614, 3402, 9560, 1114, 10635, 8490, 10637, 10651, 3820, 10652, 8971, 10654, 7157, 5112, 6879, 10656, 7901, 10657, 10658, 10660, 10662, 10663, 10665, 7011, 7154, 10667, 9061, 7163, 7158, 10669, 10010, 8489, 10671, 10672, 8513, 8487, 5171, 10673, 13664, 5672, 7813, 9887, 8051, 13665, 7009, 6778, 7434, 5644, 8896, 10330, 7231, 5624, 558, 576, 7199, 7224, 10639, 504, 4808, 6761, 9639, 4776, 6831, 1202, 13667, 10805, 13668, 13674, 7291, 13679, 7244, 1630, 10806, 7240, 2]
+// Dependencies: [5, 19, 10622, 6634, 4805, 6741, 4804, 7164, 4800, 7585, 4822, 4880, 6722, 4890, 4851, 6655, 1392, 4807, 1087, 9952, 21, 7826, 2002, 7815, 1128, 10623, 8605, 5638, 7360, 5565, 5866, 10048, 9953, 5640, 6623, 10625, 3402, 9573, 1114, 10646, 8494, 10648, 10662, 3820, 10663, 8983, 10665, 7160, 5112, 6882, 10667, 7905, 10668, 10669, 10671, 10673, 10674, 10676, 7014, 7157, 10678, 9073, 7166, 7161, 10680, 10021, 8493, 10682, 10683, 8517, 8491, 5171, 10684, 13682, 5672, 7817, 9899, 8055, 13683, 7012, 6781, 7437, 5644, 8908, 10341, 7234, 5624, 558, 576, 7202, 7227, 10650, 504, 4808, 6764, 9652, 4776, 6834, 1202, 13685, 10816, 13686, 13692, 7294, 13697, 7247, 1630, 10817, 7243, 2]
 
-// Module 10610 (ChannelLongPressActionSheet)
+// Module 10621 (ChannelLongPressActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import router_utils from "router_utils" /* 1114 */;
 import intl38 from "intl" /* 1128 */;
@@ -14,48 +14,48 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171
 import useChannelName from "useChannelName" /* 5565 */;
 import ToastUtils from "ToastUtils" /* 5624 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5672 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5863 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6778 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7154 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7157 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7158 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7163 */;
-import ClipboardUtils from "ClipboardUtils" /* 7231 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 7240 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7357 */;
-import ReportModals from "ReportModals" /* 8051 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8593 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8896 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8971 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9941 */;
-import showChatGDMCustomizeActionSheetDefault from "showChatGDMCustomizeActionSheet" /* 9942 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10010 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10611 */;
-import openFavoritesGuildMoveToCategoryActionSheetDefault from "openFavoritesGuildMoveToCategoryActionSheet" /* 10637 */;
-import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10656 */;
-import InappropriateConversationsActionCreators from "InappropriateConversationsActionCreators" /* 10657 */;
-import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10660 */;
-import markChannelUnreadDefault from "markChannelUnread" /* 10665 */;
-import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 10671 */;
-import ChannelCollapseActionCreatorsDefault from "ChannelCollapseActionCreators" /* 10672 */;
-import hideLaunchPadDefault from "hideLaunchPad" /* 13664 */;
-import openAppChannelToChatDefault from "openAppChannelToChat" /* 13665 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5866 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6781 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7157 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7160 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7161 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7166 */;
+import ClipboardUtils from "ClipboardUtils" /* 7234 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 7243 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7360 */;
+import ReportModals from "ReportModals" /* 8055 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8605 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8908 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8983 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9952 */;
+import showChatGDMCustomizeActionSheetDefault from "showChatGDMCustomizeActionSheet" /* 9953 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10021 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10622 */;
+import openFavoritesGuildMoveToCategoryActionSheetDefault from "openFavoritesGuildMoveToCategoryActionSheet" /* 10648 */;
+import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10667 */;
+import InappropriateConversationsActionCreators from "InappropriateConversationsActionCreators" /* 10668 */;
+import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10671 */;
+import markChannelUnreadDefault from "markChannelUnread" /* 10676 */;
+import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 10682 */;
+import ChannelCollapseActionCreatorsDefault from "ChannelCollapseActionCreators" /* 10683 */;
+import hideLaunchPadDefault from "hideLaunchPad" /* 13682 */;
+import openAppChannelToChatDefault from "openAppChannelToChat" /* 13683 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6631 */;
+import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6634 */;
 import StageInstanceStore from "StageInstanceStore" /* 4805 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6738 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6741 */;
 import ChannelRecord from "ChannelRecord" /* 4804 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7161 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7164 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7582 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7585 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
-import ReadStateStore from "ReadStateStore" /* 6719 */;
+import ReadStateStore from "ReadStateStore" /* 6722 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6652 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6655 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -326,7 +326,7 @@ function getActionSheetButtons(channel) {
         onPress() {
               obj = ModalActionCreatorsDefault;
               const obj2 = { channelId: channel.id };
-              obj.pushLazy(asyncRequire(10614, dependencyMap.paths), obj2);
+              obj.pushLazy(asyncRequire(10625, dependencyMap.paths), obj2);
             }
       };
       intl5 = tmp8(tmp9[24]).intl;
@@ -761,7 +761,7 @@ function getActionSheetButtons(channel) {
                   obj.hideActionSheet();
                   const obj2 = ModalActionCreatorsDefault;
                   const obj3 = { channel };
-                  obj2.pushLazy(asyncRequire(10673, dependencyMap.paths), obj3);
+                  obj2.pushLazy(asyncRequire(10684, dependencyMap.paths), obj3);
                   hideLaunchPadDefault();
                 }
         };
@@ -1093,8 +1093,8 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const cResult = obj.c(69);
   channel = channel.channel;
   const onClose = channel.onClose;
-  const tmp4 = onClose(7199);
-  const analyticsLocations = tmp4(onClose(7224).CHANNEL_LONG_PRESS_MENU).analyticsLocations;
+  const tmp4 = onClose(7202);
+  const analyticsLocations = tmp4(onClose(7227).CHANNEL_LONG_PRESS_MENU).analyticsLocations;
   if (cResult[0] !== channel) {
     const guildId = channel.getGuildId();
     cResult[0] = channel;
@@ -1104,7 +1104,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     tmp5 = cResult[1];
   }
   dependencyMap = tmp5;
-  const tmpResult = tmp(10639);
+  const tmpResult = tmp(10650);
   const isFavoritesGuildSelected = tmpResult.useIsFavoritesGuildSelected();
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildStore];
@@ -1153,8 +1153,8 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const tmpResult5 = tmp(504);
   const stateFromStoresObject = tmpResult5.useStateFromStoresObject(tmp12, tmp14);
   ({ canManageChannel, canCreateInstantInvite, canConnect, canModerateStage } = stateFromStoresObject);
-  const useOptInEnabledForGuild = tmp(6761).useOptInEnabledForGuild;
-  tmp(6761);
+  const useOptInEnabledForGuild = tmp(6764).useOptInEnabledForGuild;
+  tmp(6764);
   const tmp17 = tmp5;
   if (tmp5 == null) {
     class O {

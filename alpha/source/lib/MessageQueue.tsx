@@ -1,22 +1,22 @@
-// Module ID: 8083
-// Function ID: 8084
+// Module ID: 8087
+// Function ID: 8088
 // Name: MessageQueue
-// Dependencies: [109, 5198, 502, 5846, 1087, 4950, 1104, 8084, 3, 5673, 8085, 7515, 1297, 5974, 38, 8086, 8089, 8110, 8094, 2]
+// Dependencies: [109, 5198, 502, 5848, 1087, 4950, 1104, 8088, 3, 5673, 8089, 7518, 1297, 5977, 38, 8090, 8093, 8114, 8098, 2]
 // Exports: getFailedMessageId, isMessageDataCommand, isMessageDataEdit, isMessageDataSend
 
-// Module 8083 (MessageQueue)
+// Module 8087 (MessageQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import MessageConstants from "MessageConstants" /* 4950 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5673 */;
-import NetStats from "NetStats" /* 7515 */;
-import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 8085 */;
+import NetStats from "NetStats" /* 7518 */;
+import getOverlayMessageAnaylticsLocationDefault from "getOverlayMessageAnaylticsLocation" /* 8089 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import DevSettingsStore from "DevSettingsStore" /* 5198 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NetworkStore from "NetworkStore" /* 5846 */;
+import NetworkStore from "NetworkStore" /* 5848 */;
 import Constants from "Constants" /* 1087 */;
-import Queue from "Queue" /* 8084 */;
+import Queue from "Queue" /* 8088 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,9 +1,9 @@
-// Module ID: 14647
-// Function ID: 14648
+// Module ID: 14665
+// Function ID: 14666
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 2069, 1392, 1087, 7490, 1394, 21, 4945, 587, 6867, 1128, 1903, 558, 576, 504, 2054, 5195, 5631, 14648, 14649, 9737, 5205, 5219, 1107, 2]
+// Dependencies: [19, 17, 2069, 1392, 1087, 7493, 1394, 21, 4945, 587, 6870, 1128, 1903, 558, 576, 504, 2054, 5195, 5631, 14666, 14667, 9750, 5205, 5219, 1107, 2]
 
-// Module 14647 (PremiumSubscriptionUpsell)
+// Module 14665 (PremiumSubscriptionUpsell)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,11 +15,11 @@ import PremiumUtilsDefault from "PremiumUtils" /* 2054 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
 import LinearGradientDefault from "LinearGradient" /* 5219 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6867 */;
-import ColorConstants from "ColorConstants" /* 7490 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 9737 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14648 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14649 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6870 */;
+import ColorConstants from "ColorConstants" /* 7493 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 9750 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14666 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14667 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2069 */;

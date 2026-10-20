@@ -1,18 +1,18 @@
-// Module ID: 8275
-// Function ID: 8276
+// Module ID: 8279
+// Function ID: 8280
 // Name: DoubleTapNitroAlert
-// Dependencies: [19, 17, 8271, 1087, 8276, 21, 4945, 558, 576, 7436, 5865, 6960, 1128, 5869, 2]
+// Dependencies: [19, 17, 8275, 1087, 8280, 21, 4945, 558, 576, 7439, 5868, 6963, 1128, 5872, 2]
 
-// Module 8275 (DoubleTapNitroAlert)
+// Module 8279 (DoubleTapNitroAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
-import AlertModal2 from "AlertModal" /* 5869 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6960 */;
-import openUserSettings from "openUserSettings" /* 7436 */;
-import DoubleTapToRaectConstants from "DoubleTapToRaectConstants" /* 8271 */;
-import SettingsConstants from "SettingsConstants" /* 8276 */;
+import AlertModal2 from "AlertModal" /* 5872 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6963 */;
+import openUserSettings from "openUserSettings" /* 7439 */;
+import DoubleTapToRaectConstants from "DoubleTapToRaectConstants" /* 8275 */;
+import SettingsConstants from "SettingsConstants" /* 8280 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -109,7 +109,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DoubleTapN
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { onPress: first, text: intl3.string(intl5.t.LIIHRy) };
-    const AlertActionButton = tmp(5869).AlertActionButton;
+    const AlertActionButton = tmp(5872).AlertActionButton;
     intl3 = tmp(1128).intl;
     const tmp20 = metroImportDefault(AlertActionButton, obj5, "confirm");
     cResult[8] = tmp20;
@@ -121,7 +121,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DoubleTapN
     const obj6 = { children: items };
     items = [tmp18, ];
     const obj7 = { variant: "secondary", text: intl4.string(intl5.t["Nr6v2+"]) };
-    const AlertActionButton2 = tmp(5869).AlertActionButton;
+    const AlertActionButton2 = tmp(5872).AlertActionButton;
     intl4 = tmp(1128).intl;
     items[1] = metroImportDefault(AlertActionButton2, obj7, "cancel");
     const tmp25 = React4(metroImportAll, obj6);

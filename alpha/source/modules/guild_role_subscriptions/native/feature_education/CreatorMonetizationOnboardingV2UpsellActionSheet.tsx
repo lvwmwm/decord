@@ -1,9 +1,9 @@
-// Module ID: 17405
-// Function ID: 17406
+// Module ID: 17424
+// Function ID: 17425
 // Name: CreatorMonetizationOnboardingV2UpsellActionSheet
-// Dependencies: [19, 17, 1087, 4797, 21, 4945, 558, 576, 8926, 1128, 5195, 5631, 17406, 5205, 5226, 2]
+// Dependencies: [19, 17, 1087, 4797, 21, 4945, 558, 576, 8938, 1128, 5195, 5631, 17425, 5205, 5226, 2]
 
-// Module 17405 (CreatorMonetizationOnboardingV2UpsellActionSheet)
+// Module 17424 (CreatorMonetizationOnboardingV2UpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
@@ -12,8 +12,8 @@ import Text_Text from "Text/Text" /* 5195 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5226 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8926 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17406 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8938 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17425 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -138,7 +138,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
-      const obj6 = { style: tmp4.image, resizeMode: "contain", source: markAsDismissed(17406) };
+      const obj6 = { style: tmp4.image, resizeMode: "contain", source: markAsDismissed(17425) };
       const tmp18 = markAsDismissed(5631);
       cResult[11] = tmp4.image;
       cResult[12] = closure_6(tmp18, obj6);

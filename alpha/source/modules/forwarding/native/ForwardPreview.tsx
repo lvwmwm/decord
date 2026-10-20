@@ -1,9 +1,9 @@
-// Module ID: 12735
-// Function ID: 12736
+// Module ID: 12752
+// Function ID: 12753
 // Name: ForwardPreview
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5166, 8552, 8076, 9687, 12736, 5991, 12737, 12, 1128, 12353, 9231, 8503, 10341, 1498, 5631, 9324, 5195, 12739, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5166, 8558, 8080, 9700, 12753, 5994, 12754, 12, 1128, 12370, 9243, 8507, 10352, 1498, 5631, 9336, 5195, 12756, 2]
 
-// Module 12735 (ForwardPreview)
+// Module 12752 (ForwardPreview)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -13,14 +13,14 @@ import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1498 */;
 import useThemeDefault from "useTheme" /* 5166 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 5991 */;
-import RowGeneratorDefault from "RowGenerator" /* 8076 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8552 */;
-import CirclePlayIcon2 from "CirclePlayIcon" /* 9231 */;
-import ClipView from "ClipView" /* 9324 */;
-import ChatItemDefault from "ChatItem" /* 9687 */;
-import ForwardPreviewUtils from "ForwardPreviewUtils" /* 12736 */;
-import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 12739 */;
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 5994 */;
+import RowGeneratorDefault from "RowGenerator" /* 8080 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8558 */;
+import CirclePlayIcon2 from "CirclePlayIcon" /* 9243 */;
+import ClipView from "ClipView" /* 9336 */;
+import ChatItemDefault from "ChatItem" /* 9700 */;
+import ForwardPreviewUtils from "ForwardPreviewUtils" /* 12753 */;
+import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 12756 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -641,7 +641,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
           }
           const obj21 = { count: VIDEO };
           formatToPlainStringResult = obj6.formatToPlainString(intl5.t.SJ6pPX, obj21);
-          CirclePlayIcon = tmp(9231).CirclePlayIcon;
+          CirclePlayIcon = tmp(9243).CirclePlayIcon;
         } else {
           class G {
             constructor(arg0) {
@@ -901,7 +901,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
         const intl4 = tmp2(1128).intl;
         const obj3 = { image_count: num, video_count: num2 };
         formatToPlainStringResult = intl4.formatToPlainString(tmp2(1128).t.Lr0Top, obj3);
-        AttachmentIcon = tmp2(12353).ImagesIcon;
+        AttachmentIcon = tmp2(12370).ImagesIcon;
       }
       if (num2 > 0) {
         if (attachments.length === num2) {
@@ -957,16 +957,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
       const intl3 = tmp2(1128).intl;
       const obj12 = { count: num2 };
       formatToPlainStringResult = intl3.formatToPlainString(tmp2(1128).t.SJ6pPX, obj12);
-      AttachmentIcon = tmp2(9231).CirclePlayIcon;
+      AttachmentIcon = tmp2(9243).CirclePlayIcon;
     } else if (num > 0) {
       let ImagesIcon;
       const intl2 = tmp2(1128).intl;
       const obj13 = { count: num };
       const formatToPlainStringResult1 = intl2.formatToPlainString(intl5.t.h4pFfU, obj13);
       if (1 === num) {
-        ImagesIcon = tmp2(8503).ImageIcon;
+        ImagesIcon = tmp2(8507).ImageIcon;
       } else {
-        ImagesIcon = tmp2(12353).ImagesIcon;
+        ImagesIcon = tmp2(12370).ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
       formatToPlainStringResult = formatToPlainStringResult1;
@@ -974,7 +974,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardPrevi
       const intl = tmp2(1128).intl;
       const obj14 = { count: attachments.length };
       formatToPlainStringResult = intl.formatToPlainString(tmp2(1128).t["89ihS8"], obj14);
-      AttachmentIcon = tmp2(10341).AttachmentIcon;
+      AttachmentIcon = tmp2(10352).AttachmentIcon;
     }
   } else {
     tmp6 = null;

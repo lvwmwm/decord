@@ -1,7 +1,7 @@
 // Module ID: 5617
 // Function ID: 5618
 // Name: openURL
-// Dependencies: [5, 5618, 8785, 2002, 2]
+// Dependencies: [5, 5618, 8797, 2002, 2]
 // Exports: default
 
 // Module 5617 (openURL)

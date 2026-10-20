@@ -1,27 +1,59 @@
-// Module ID: 18168
-// Function ID: 18169
+// Module ID: 18191
+// Function ID: 18192
 // Name: useExternalPipParticipant
-// Dependencies: [19, 6720, 14851, 6590, 502, 2014, 5676, 5593, 10693, 558, 576, 504, 18169, 10698, 2]
+// Dependencies: [19, 6723, 14869, 6593, 502, 2014, 5676, 5593, 10704, 558, 576, 18192, 10709, 504, 2]
 
-// Module 18168 (useExternalPipParticipant)
+// Module 18191 (useExternalPipParticipant)
 import CallConstants from "CallConstants" /* 5593 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10693 */;
-import participantHasVideo from "participantHasVideo" /* 10698 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18169 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10704 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18192 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6720 */;
-import PIPSpeakerStore from "PIPSpeakerStore" /* 14851 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6590 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6723 */;
+import PIPSpeakerStore from "PIPSpeakerStore" /* 14869 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6593 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5676 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+function getExternalPipSelectedParticipant(batchedStoreListener, selectedParticipantId1, speakerId) {
+  let obj4;
+  let tmp3;
+  if (null == batchedStoreListener) {
+    return closure_10;
+  } else {
+    const obj2 = { channelId: batchedStoreListener, panelMode: VoicePanelModes.PIP, focusedParticipantId: selectedParticipantId1, lastParticipantId: selectedParticipantId1, speakingUserId: speakerId, blockList: obj4.createPIPBlockList(VoicePanelModes.PIP, selectedParticipantId1), showSecondaryPIP: false, canShowActivities: false };
+    const computePIPParticipantToShow = VoicePanelPIPUtils.computePIPParticipantToShow;
+    VoicePanelPIPUtils;
+    obj4 = VoicePanelPIPUtils;
+    const pIPParticipantToShow = computePIPParticipantToShow(obj2);
+    let participant;
+    const tmp7 = require;
+    if (null != pIPParticipantToShow) {
+      participant = ChannelRTCStore.getParticipant(batchedStoreListener, pIPParticipantToShow.id);
+    }
+    if (null != participant) {
+      let obj;
+      if (participant.type !== ParticipantTypes.ACTIVITY) {
+        obj = { participantType: null, selectedParticipantId: null, selectedParticipantSpeaking: participant.type === tmp12.USER && participant.speaking, selectedParticipantStreamId: tmp3, selectedParticipantUserId: participant.user.id };
+        ({ type: obj.participantType, id: obj.selectedParticipantId } = participant);
+        tmp3 = undefined;
+        const tmp7Result = tmp7(10709);
+        if (tmp7Result.canRenderParticipantVideo(participant)) {
+          const streamId = participant.streamId;
+          tmp3 = streamId;
+        }
+      }
+      return obj;
+    }
+    obj = closure_10;
+  }
+}
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSetHasActiveVideoOutputSink(selectedParticipantStreamId) {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSetHasActiveVideoOutputSink(selectedParticipantStreamId) {
   let tmp2;
   let tmp3;
   const obj = selectedParticipantStreamId(576);
@@ -39,7 +71,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSet
         };
       }
     };
-    const items = [selectedParticipantStreamId];
+    items = [selectedParticipantStreamId];
     cResult[0] = selectedParticipantStreamId;
     cResult[1] = fn;
     cResult[2] = items;
@@ -52,7 +84,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSet
   const effect = react.useEffect(tmp2, tmp3);
 }) : (function useSetHasActiveVideoOutputSink(selectedParticipantStreamId) {
   selectedParticipantStreamId = selectedParticipantStreamId.selectedParticipantStreamId;
-  const items = [selectedParticipantStreamId];
+  items = [selectedParticipantStreamId];
   const effect = react.useEffect(() => {
     let closure_0 = selectedParticipantStreamId;
     if (null != selectedParticipantStreamId) {
@@ -66,21 +98,23 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSet
     }
   }, items);
 });
+let closure_10 = { participantType: "test", selectedParticipantId: "data", selectedParticipantSpeaking: null, selectedParticipantStreamId: null, selectedParticipantUserId: null };
+let items = [ChannelRTCStore, ApplicationStreamingStore, AuthenticationStore, MediaEngineStore];
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExternalPipParticipant() {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExternalPipParticipant() {
   let channelId;
   let first;
   let stateFromStores;
   let stateFromStores1;
-  let tmp10;
+  let tmp11;
   let tmp7;
   let tmp9;
   const tmp = stateFromStores;
   let tmp2 = stateFromStores1;
-  let obj = stateFromStores(stateFromStores1[10]);
-  const cResult = obj.c(20);
-  let obj2 = stateFromStores(stateFromStores1[11]);
-  const items = [RTCConnectionStore];
+  const obj = stateFromStores(stateFromStores1[10]);
+  const cResult = obj.c(14);
+  items = [RTCConnectionStore];
+  const obj2 = stateFromStores(stateFromStores1[13]);
   stateFromStores = obj2.useStateFromStores(items, () => channelId.getChannelId());
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [ChannelRTCStore];
@@ -90,233 +124,97 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExternalP
     first = cResult[0];
   }
   if (cResult[1] !== stateFromStores) {
-    class I {
-      constructor() {
-        let tmp2;
-        if (null != stateFromStores) {
-          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
-          tmp2 = selectedParticipantId;
-        }
-        return tmp2;
+    const fn = function o() {
+      let tmp2;
+      if (null != stateFromStores) {
+        const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
+        tmp2 = selectedParticipantId;
       }
-    }
+      return tmp2;
+    };
     cResult[1] = stateFromStores;
-    cResult[2] = I;
-    tmp7 = I;
+    cResult[2] = fn;
+    tmp7 = fn;
   } else {
-    class I {
-      constructor() {
-        let tmp2;
-        if (null != stateFromStores) {
-          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
-          tmp2 = selectedParticipantId;
-        }
-        return tmp2;
-      }
-    }
+    tmp7 = cResult[2];
   }
-  const tmpResult = tmp(tmp2[11]);
+  const tmpResult = tmp(tmp2[13]);
   stateFromStores1 = tmpResult.useStateFromStores(first, tmp7);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
-      constructor() {
-        let tmp2;
-        if (null != stateFromStores) {
-          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
-          tmp2 = selectedParticipantId;
-        }
-        return tmp2;
-      }
-    }
     const items2 = [PIPSpeakerStore];
     cResult[3] = items2;
     tmp9 = items2;
   } else {
-    class I {
-      constructor() {
-        let tmp2;
-        if (null != stateFromStores) {
-          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
-          tmp2 = selectedParticipantId;
-        }
-        return tmp2;
-      }
-    }
+    tmp9 = cResult[3];
   }
   if (cResult[4] !== stateFromStores) {
-    class I {
+    class P {
       constructor() {
-        let tmp2;
-        if (null != stateFromStores) {
-          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
-          tmp2 = selectedParticipantId;
-        }
-        return tmp2;
+        return PIPSpeakerStore.getSpeakerId(stateFromStores);
       }
     }
     cResult[4] = stateFromStores;
-    cResult[5] = tmp11;
-    tmp10 = tmp11;
+    cResult[5] = P;
+    tmp11 = P;
   } else {
-    class I {
+    class P {
       constructor() {
-        let tmp2;
-        if (null != stateFromStores) {
-          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
-          tmp2 = selectedParticipantId;
-        }
-        return tmp2;
+        return PIPSpeakerStore.getSpeakerId(stateFromStores);
       }
     }
   }
-  const tmpResult2 = tmp(tmp2[11]);
-  const stateFromStores2 = tmpResult2.useStateFromStores(tmp9, tmp10);
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
+  const tmpResult2 = tmp(tmp2[13]);
+  const stateFromStores2 = tmpResult2.useStateFromStores(tmp9, tmp11);
+  if (cResult[6] === stateFromStores) {
+    class P {
       constructor() {
-        let tmp2;
-        if (null != stateFromStores) {
-          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
-          tmp2 = selectedParticipantId;
-        }
-        return tmp2;
-      }
-    }
-    const items3 = [ChannelRTCStore, , , ];
-    items3[1] = ApplicationStreamingStore;
-    let tmp15 = AuthenticationStore;
-    items3[2] = AuthenticationStore;
-    const tmp16 = MediaEngineStore;
-    items3[3] = MediaEngineStore;
-    cResult[6] = items3;
-  } else {
-    class I {
-      constructor() {
-        let tmp2;
-        if (null != stateFromStores) {
-          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
-          tmp2 = selectedParticipantId;
-        }
-        return tmp2;
+        return PIPSpeakerStore.getSpeakerId(stateFromStores);
       }
     }
   }
-  if (cResult[7] === stateFromStores) {
-    class I {
-      constructor() {
-        let tmp2;
-        if (null != stateFromStores) {
-          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
-          tmp2 = selectedParticipantId;
-        }
-        return tmp2;
-      }
-    }
-  }
-  class T {
+  class E {
     constructor() {
-      let obj2;
-      let pIPParticipantToShow;
-      let tmp15;
-      if (null != stateFromStores) {
-        const obj = { channelId: stateFromStores, panelMode: VoicePanelModes.PIP, focusedParticipantId: stateFromStores1, lastParticipantId: stateFromStores1, speakingUserId: stateFromStores2, blockList: obj2.createPIPBlockList(VoicePanelModes.PIP, stateFromStores1), showSecondaryPIP: false, canShowActivities: false };
-        const computePIPParticipantToShow = VoicePanelPIPUtils.computePIPParticipantToShow;
-        VoicePanelPIPUtils;
-        obj2 = VoicePanelPIPUtils;
-        pIPParticipantToShow = computePIPParticipantToShow(obj);
-      }
-      let participant;
-      if (null != stateFromStores) {
-        if (null != pIPParticipantToShow) {
-          participant = ChannelRTCStore.getParticipant(tmp, pIPParticipantToShow.id);
-        }
-      }
-      if (null != participant) {
-        let obj3;
-        if (participant.type !== ParticipantTypes.ACTIVITY) {
-          obj3 = { participantType: participant.type, selectedParticipantSpeaking: participant.type === tmp16.USER && participant.speaking, selectedParticipantStreamId: tmp15, selectedParticipantUserId: participant.user.id };
-          tmp15 = undefined;
-          const obj4 = participantHasVideo;
-          if (obj4.canRenderParticipantVideo(participant)) {
-            const streamId = participant.streamId;
-            tmp15 = streamId;
-          }
-        }
-        return obj3;
-      }
-      obj3 = { participantType: "test", selectedParticipantSpeaking: "duration", selectedParticipantStreamId: "toCharArray$esjava$1", selectedParticipantUserId: null };
+      return getExternalPipSelectedParticipant(stateFromStores, stateFromStores1, stateFromStores2);
     }
   }
-  const items4 = [stateFromStores, stateFromStores1, stateFromStores2];
-  cResult[7] = stateFromStores;
-  cResult[8] = stateFromStores1;
-  cResult[9] = stateFromStores2;
-  cResult[10] = T;
-  cResult[11] = items4;
+  const items3 = [stateFromStores, stateFromStores1, stateFromStores2];
+  cResult[6] = stateFromStores;
+  cResult[7] = stateFromStores1;
+  cResult[8] = stateFromStores2;
+  cResult[9] = E;
+  cResult[10] = items3;
 }) : (function useExternalPipParticipant() {
   let channelId;
-  let participantType;
-  let selectedParticipantSpeaking;
-  let selectedParticipantUserId;
+  let stateFromStores;
   let stateFromStores1;
-  const tmp = channelId;
+  const tmp = stateFromStores;
   let tmp2 = stateFromStores1;
-  let obj = channelId(stateFromStores1[11]);
-  const items = [RTCConnectionStore];
-  channelId = obj.useStateFromStores(items, () => channelId.getChannelId());
+  items = [RTCConnectionStore];
+  const obj = stateFromStores(stateFromStores1[13]);
+  stateFromStores = obj.useStateFromStores(items, () => channelId.getChannelId());
   const items1 = [ChannelRTCStore];
-  const tmpResult = tmp(tmp2[11]);
+  const tmpResult = tmp(tmp2[13]);
   stateFromStores1 = tmpResult.useStateFromStores(items1, () => {
     let tmp2;
-    if (null != channelId) {
+    if (null != stateFromStores) {
       const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
       tmp2 = selectedParticipantId;
     }
     return tmp2;
   });
   const items2 = [PIPSpeakerStore];
-  const tmpResult3 = tmp(tmp2[11]);
-  const stateFromStores2 = tmpResult3.useStateFromStores(items2, () => PIPSpeakerStore.getSpeakerId(channelId));
-  const items3 = [ChannelRTCStore, ApplicationStreamingStore, AuthenticationStore, MediaEngineStore];
-  const items4 = [channelId, stateFromStores1, stateFromStores2];
-  const tmpResult4 = tmp(tmp2[11]);
-  const stateFromStoresObject = tmpResult4.useStateFromStoresObject(items3, () => {
-    let obj2;
-    let pIPParticipantToShow;
-    let tmp15;
-    if (null != channelId) {
-      const obj = { channelId, panelMode: VoicePanelModes.PIP, focusedParticipantId: stateFromStores1, lastParticipantId: stateFromStores1, speakingUserId: stateFromStores2, blockList: obj2.createPIPBlockList(VoicePanelModes.PIP, stateFromStores1), showSecondaryPIP: false, canShowActivities: false };
-      const computePIPParticipantToShow = VoicePanelPIPUtils.computePIPParticipantToShow;
-      VoicePanelPIPUtils;
-      obj2 = VoicePanelPIPUtils;
-      pIPParticipantToShow = computePIPParticipantToShow(obj);
-    }
-    let participant;
-    if (null != channelId) {
-      if (null != pIPParticipantToShow) {
-        participant = ChannelRTCStore.getParticipant(tmp, pIPParticipantToShow.id);
-      }
-    }
-    if (null != participant) {
-      let obj3;
-      if (participant.type !== ParticipantTypes.ACTIVITY) {
-        obj3 = { participantType: participant.type, selectedParticipantSpeaking: participant.type === tmp16.USER && participant.speaking, selectedParticipantStreamId: tmp15, selectedParticipantUserId: participant.user.id };
-        tmp15 = undefined;
-        const obj4 = participantHasVideo;
-        if (obj4.canRenderParticipantVideo(participant)) {
-          const streamId = participant.streamId;
-          tmp15 = streamId;
-        }
-      }
-      return obj3;
-    }
-    obj3 = { participantType: "test", selectedParticipantSpeaking: "duration", selectedParticipantStreamId: "toCharArray$esjava$1", selectedParticipantUserId: null };
-  }, items4);
-  const selectedParticipantStreamId = stateFromStoresObject.selectedParticipantStreamId;
-  ({ participantType, selectedParticipantSpeaking, selectedParticipantUserId } = stateFromStoresObject);
-  closure_11({ selectedParticipantStreamId });
-  return { channelId, participantType, selectedParticipantSpeaking, selectedParticipantStreamId, selectedParticipantUserId };
+  const tmpResult3 = tmp(tmp2[13]);
+  const stateFromStores2 = tmpResult3.useStateFromStores(items2, () => PIPSpeakerStore.getSpeakerId(stateFromStores));
+  const items3 = [stateFromStores, stateFromStores1, stateFromStores2];
+  const tmpResult4 = tmp(tmp2[13]);
+  const stateFromStoresObject = tmpResult4.useStateFromStoresObject(items, () => getExternalPipSelectedParticipant(stateFromStores, stateFromStores1, stateFromStores2), items3);
+  closure_9(stateFromStoresObject);
+  const obj2 = { channelId: stateFromStores };
+  const merged = Object.assign(stateFromStoresObject);
+  return obj2;
 });
 const result = size.fileFinishedImporting("modules/external_pip/useExternalPipParticipant.android.tsx");
 
-export default tmp2;
+export default tmp6;
+export const EXTERNAL_PIP_SELECTED_PARTICIPANT_STORES = items;
+export { getExternalPipSelectedParticipant };

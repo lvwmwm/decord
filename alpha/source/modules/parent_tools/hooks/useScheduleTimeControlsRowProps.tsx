@@ -1,9 +1,9 @@
-// Module ID: 15985
-// Function ID: 15986
+// Module ID: 16004
+// Function ID: 16005
 // Name: useScheduleTimeControlsRowProps
 // Dependencies: [21, 558, 576, 5195, 1128, 2526, 2]
 
-// Module 15985 (useScheduleTimeControlsRowProps)
+// Module 16004 (useScheduleTimeControlsRowProps)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;

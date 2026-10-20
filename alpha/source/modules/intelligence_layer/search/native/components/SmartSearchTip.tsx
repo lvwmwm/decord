@@ -1,9 +1,9 @@
-// Module ID: 17855
-// Function ID: 17856
+// Module ID: 17878
+// Function ID: 17879
 // Name: SmartSearchTip
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1128, 4064, 5195, 14115, 1202, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1128, 4064, 5195, 14133, 1202, 2]
 
-// Module 17855 (SmartSearchTip)
+// Module 17878 (SmartSearchTip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
@@ -170,7 +170,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               return hasOwnProperty(Avatar, obj, user.id);
             })
       };
-      const AvatarPile = tmp(14115).AvatarPile;
+      const AvatarPile = tmp(14133).AvatarPile;
       substr = arr.slice(0, 3);
       tmp20 = closure_5(AvatarPile, obj7);
     }
@@ -224,7 +224,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           return hasOwnProperty(Avatar, obj, user.id);
         })
     };
-    const AvatarPile = tmp5(14115).AvatarPile;
+    const AvatarPile = tmp5(14133).AvatarPile;
     substr = memo.slice(0, 3);
     tmp4Result = tmp4(AvatarPile, obj6);
   }

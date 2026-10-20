@@ -1,21 +1,21 @@
-// Module ID: 8413
-// Function ID: 8414
+// Module ID: 8417
+// Function ID: 8418
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 4945, 587, 6655, 5934, 5195, 558, 576, 8414, 7023, 8415, 8416, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 6658, 5937, 5195, 558, 576, 8418, 7026, 8419, 8420, 2]
 
-// Module 8413 (utils/ChangeLogUtils)
+// Module 8417 (utils/ChangeLogUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment2 from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import LegacyTokens from "LegacyTokens" /* 6655 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7023 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 8415 */;
-import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8416 */;
+import LegacyTokens from "LegacyTokens" /* 6658 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7026 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 8419 */;
+import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8420 */;
 import React from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 4945 */;
-import CustomMarkup from "CustomMarkup" /* 5934 */;
+import CustomMarkup from "CustomMarkup" /* 5937 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -306,10 +306,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
     }
   }
   const forResult = Symbol.for("react.early_return_sentinel");
-  const tmpResult = output(8414);
+  const tmpResult = output(8418);
   const result = tmpResult.splitParagraphAtImages(node.content);
   if (true !== state.changelogImagesDisabled) {
-    const tmpResult2 = output(8414);
+    const tmpResult2 = output(8418);
     if (tmpResult2.hasImageSegment(result)) {
       if (cResult[18] === Paragraph) {
         if (cResult[19] === output) {
@@ -473,12 +473,12 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
     Paragraph = output(5195).Text;
   }
   let tmp6 = dependencyMap;
-  const obj = output(8414);
+  const obj = output(8418);
   const result = obj.splitParagraphAtImages(node.content);
   const tmp5 = output;
   if (true !== state.changelogImagesDisabled) {
     let tmp7;
-    const tmp5Result = tmp5(8414);
+    const tmp5Result = tmp5(8418);
     if (tmp5Result.hasImageSegment(result)) {
       tmp7 = <View key={state.key}>{result.map((type, index) => {
         let tmp6;

@@ -1,20 +1,20 @@
-// Module ID: 16882
-// Function ID: 16883
+// Module ID: 16901
+// Function ID: 16902
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 4945, 587, 558, 576, 5195, 5213, 4942, 8821, 11699, 13504, 10939, 5205, 5932, 7241, 2]
+// Dependencies: [32, 19, 17, 21, 4945, 587, 558, 576, 5195, 5213, 4942, 8833, 11713, 13522, 10950, 5205, 5935, 7244, 2]
 
-// Module 16882 (UserSettingsDesignSystemTabs)
+// Module 16901 (UserSettingsDesignSystemTabs)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
 import useToken from "useToken" /* 5213 */;
-import Stack_Stack from "Stack/Stack" /* 5932 */;
-import TableSwitchRow from "TableSwitchRow" /* 7241 */;
-import SegmentedControlState from "SegmentedControlState" /* 8821 */;
-import SegmentedControlPages from "SegmentedControlPages" /* 10939 */;
-import Tabs from "Tabs" /* 11699 */;
-import TabsGradientDefault from "TabsGradient" /* 13504 */;
+import Stack_Stack from "Stack/Stack" /* 5935 */;
+import TableSwitchRow from "TableSwitchRow" /* 7244 */;
+import SegmentedControlState from "SegmentedControlState" /* 8833 */;
+import SegmentedControlPages from "SegmentedControlPages" /* 10950 */;
+import Tabs from "Tabs" /* 11713 */;
+import TabsGradientDefault from "TabsGradient" /* 13522 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -285,7 +285,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   const obj4 = { children: metroImportAll(hasOwnProperty, obj2) };
   items1 = [metroImportDefault(hasOwnProperty, { children: items }), metroImportAll(SegmentedControlPages.SegmentedControlPages, { state: segmentedControlState }), , ];
   const obj6 = { spacing: 8, direction: "horizontal", children: items2 };
-  const Stack2 = tmp16(5932).Stack;
+  const Stack2 = tmp16(5935).Stack;
   items2 = [, ];
   const obj7 = {
     text: "Add Tab",

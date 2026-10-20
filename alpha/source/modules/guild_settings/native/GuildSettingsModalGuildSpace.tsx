@@ -1,17 +1,17 @@
-// Module ID: 19048
-// Function ID: 19049
+// Module ID: 19071
+// Function ID: 19072
 // Name: GuildSettingsModalGuildSpace
-// Dependencies: [19, 4880, 8927, 1087, 21, 4945, 587, 558, 576, 1405, 8926, 18726, 7241, 504, 1128, 2430, 6935, 5932, 8871, 5553, 2]
+// Dependencies: [19, 4880, 8939, 1087, 21, 4945, 587, 558, 576, 1405, 8938, 18749, 7244, 504, 1128, 2430, 6938, 5935, 8883, 5553, 2]
 
-// Module 19048 (GuildSettingsModalGuildSpace)
+// Module 19071 (GuildSettingsModalGuildSpace)
 import nativeDefault from "native" /* 587 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import _modDef2430 from "module_2430" /* 2430 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8926 */;
-import ServerHubAnalytics from "ServerHubAnalytics" /* 18726 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8938 */;
+import ServerHubAnalytics from "ServerHubAnalytics" /* 18749 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8927 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8939 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -234,21 +234,21 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     const obj3 = { children: items5 };
     const obj4 = { style: tmp.container, contentContainerStyle: items3, children: closure_8(Stack, obj5) };
     items3 = [tmp.content, contentContainerStyle];
-    const Form = tmp2(8871).Form;
+    const Form = tmp2(8883).Form;
     obj5 = { style: tmp.stackPadding, spacing: nativeDefault.space.PX_24, children: closure_9(TableRowGroup, obj6) };
-    Stack = tmp2(5932).Stack;
+    Stack = tmp2(5935).Stack;
     obj6 = { title: intl.string(stateFromStores(1128).t["0JLdD3"]), description: intl2.string(stateFromStores(1128).t.Xa1KEN), hasIcons: false, children: items4 };
-    TableRowGroup = tmp2(6935).TableRowGroup;
+    TableRowGroup = tmp2(6938).TableRowGroup;
     intl = tmp2(1128).intl;
     intl2 = tmp2(1128).intl;
-    const obj7 = { guild: stateFromStores, flag: constants2.SUPPRESS_GAMING_LEADERBOARD_NOTIFICATIONS, settingType: stateFromStores(18726).ServerHubSettingType.LEADERBOARD_SYSTEM_MESSAGES, label: intl3.string(_modDef2430.btBTIw), subLabel: intl4.string(stateFromStores(1128).t.n3aRYQ), disabled: !stateFromStores1 };
+    const obj7 = { guild: stateFromStores, flag: constants2.SUPPRESS_GAMING_LEADERBOARD_NOTIFICATIONS, settingType: stateFromStores(18749).ServerHubSettingType.LEADERBOARD_SYSTEM_MESSAGES, label: intl3.string(_modDef2430.btBTIw), subLabel: intl4.string(stateFromStores(1128).t.n3aRYQ), disabled: !stateFromStores1 };
     intl3 = tmp2(1128).intl;
     intl4 = tmp2(1128).intl;
     items4 = [closure_8(closure_12, obj7), , ];
-    const obj8 = { guild: stateFromStores, flag: constants2.SUPPRESS_GUILD_SPACE_WHITEBOARD_NOTIFICATIONS, settingType: stateFromStores(18726).ServerHubSettingType.WHITEBOARD_SYSTEM_MESSAGES, label: intl5.string(stateFromStores(1128).t["9tlK5J"]), disabled: !stateFromStores1 };
+    const obj8 = { guild: stateFromStores, flag: constants2.SUPPRESS_GUILD_SPACE_WHITEBOARD_NOTIFICATIONS, settingType: stateFromStores(18749).ServerHubSettingType.WHITEBOARD_SYSTEM_MESSAGES, label: intl5.string(stateFromStores(1128).t["9tlK5J"]), disabled: !stateFromStores1 };
     intl5 = tmp2(1128).intl;
     items4[1] = closure_8(closure_12, obj8);
-    const obj9 = { guild: stateFromStores, flag: constants2.SUPPRESS_GUILD_SPACE_MUSIC_NOTIFICATIONS, settingType: stateFromStores(18726).ServerHubSettingType.MUSIC_SYSTEM_MESSAGES, label: intl6.string(_modDef2430["5xxUI2"]), subLabel: intl7.string(_modDef2430.FMGoDB), disabled: !stateFromStores1 };
+    const obj9 = { guild: stateFromStores, flag: constants2.SUPPRESS_GUILD_SPACE_MUSIC_NOTIFICATIONS, settingType: stateFromStores(18749).ServerHubSettingType.MUSIC_SYSTEM_MESSAGES, label: intl6.string(_modDef2430["5xxUI2"]), subLabel: intl7.string(_modDef2430.FMGoDB), disabled: !stateFromStores1 };
     intl6 = tmp2(1128).intl;
     intl7 = tmp2(1128).intl;
     items4[2] = closure_8(closure_12, obj9);

@@ -1,10 +1,11 @@
 // Module ID: 10317
 // Function ID: 10318
-// Dependencies: [41, 42, 93, 95, 98, 10302, 10135, 10136, 10140]
+// Dependencies: [41, 42, 93, 95, 98, 10144, 10313, 10151]
 
 // Module 10317
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10140 */;
-import _mod10302 from "module_10302" /* 10302 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10144 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10151 */;
+import _mod10313 from "module_10313" /* 10313 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -26,13 +27,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(questo|ultimo|passato|prossimo|dopo|questa|ultima|passata|prossima|\\+|-)\\s*(" + _mod10302.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-class ENTimeUnitCasualRelativeFormatParser {
+const regExp = new RegExp("([0-9]{4})[\\.\\/\\s](?:(" + repeatedTimeunitPattern.matchAnyPattern(_mod10313.MONTH_DICTIONARY) + ")|([0-9]{1,2}))[\\.\\/\\s]([0-9]{1,2})(?=\\W|$)", "i");
+class ENCasualYearMonthDayParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENTimeUnitCasualRelativeFormatParser);
-    const obj = _getPrototypeOf(ENTimeUnitCasualRelativeFormatParser);
+    _classCallCheck(this, ENCasualYearMonthDayParser);
+    const obj = _getPrototypeOf(ENCasualYearMonthDayParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -44,7 +45,7 @@ class ENTimeUnitCasualRelativeFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENCasualYearMonthDayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
@@ -55,21 +56,27 @@ const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const str = arg1[1];
-      const formatted = str.toLowerCase();
-      const parseDurationResult = _mod10302.parseDuration(arg1[2]);
-      if ("last" !== formatted) {
-        let reverseDurationResult;
-        if ("past" !== formatted) {
-          reverseDurationResult = parseDurationResult;
-        }
-        const ParsingComponents = tmp2(10136).ParsingComponents;
-        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+    value: function innerExtract(arg0, arg1) {
+      let parsed;
+      let parsed1;
+      if (arg1[3]) {
+        const _parseInt = parseInt;
+        parsed = parseInt(arg1[3]);
+      } else {
+        parsed = _mod10313.MONTH_DICTIONARY[str.toLowerCase(str)];
       }
-      reverseDurationResult = tmp2(10135).reverseDuration(parseDurationResult);
+      if (parsed >= 1) {
+        if (parsed <= 12) {
+          const _parseInt2 = parseInt;
+          const _parseInt3 = parseInt;
+          const date = { day: parseInt(arg1[4]), month: parsed, year: parsed1 };
+          parsed1 = parseInt(arg1[1]);
+          return date;
+        }
+      }
+      return null;
     }
   }
 ];
 
-export default _createClass(ENTimeUnitCasualRelativeFormatParser, items);
+export default _createClass(ENCasualYearMonthDayParser, items);

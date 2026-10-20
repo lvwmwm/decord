@@ -1,42 +1,35 @@
 // Module ID: 12484
 // Function ID: 12485
-// Dependencies: [12462, 12450, 12485]
+// Dependencies: [12470, 12429, 12467]
+// Exports: createCheckInEnvelope
 
 // Module 12484
-import _mod12485 from "module_12485" /* 12485 */;
-import module_12462 from "module_12462" /* 12462 */;
+import _mod12429 from "module_12429" /* 12429 */;
+import _mod12467 from "module_12467" /* 12467 */;
+import _mod12470 from "module_12470" /* 12470 */;
 
 
-export const moduleMetadataIntegration = module_12462.defineIntegration(() => {
-  let obj = {
-    name: "ModuleMetadata",
-    setup(on) {
-      const options = on;
-      on.on("beforeEnvelope", (arg0) => {
-        let obj = options(closure_1_1[1]);
-        obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
-          if ("event" === arg1) {
-            const _Array = Array;
-            let tmp3;
-            if (Array.isArray(arg0)) {
-              tmp3 = arg0[1];
-            }
-            if (tmp3) {
-              const obj = options(closure_1_1[2]);
-              const result = obj.stripMetadataFromStackFrames(tmp3);
-              arg0[1] = tmp3;
-            }
-          }
-        });
-      });
-      on.on("applyFrameMetadata", (type) => {
-        if (!type.type) {
-          const stackParser = options.getOptions().stackParser;
-          const obj = _mod12485;
-          const result = obj.addMetadataToStackFrames(stackParser, type);
-        }
-      });
-    }
-  };
-  return obj;
-});
+export const createCheckInEnvelope = function createCheckInEnvelope(arg0, arg1, sdk, arg3, arg4) {
+  let date;
+  const obj = { sent_at: date.toISOString() };
+  date = new Date();
+  const tmp = sdk && sdk.sdk;
+  if (tmp) {
+    const obj2 = { name: sdk.sdk.name, version: sdk.sdk.version };
+    obj.sdk = obj2;
+  }
+  const tmp2 = arg3 && arg4;
+  if (tmp2) {
+    const obj4 = _mod12470;
+    obj.dsn = obj4.dsnToString(arg4);
+  }
+  const tmp5 = arg1;
+  if (tmp5) {
+    const obj5 = _mod12429;
+    obj.trace = obj5.dropUndefinedKeys(arg1);
+  }
+  const items = [{ type: "check_in" }, arg0];
+  const items1 = [items];
+  const obj6 = _mod12467;
+  return obj6.createEnvelope(obj, items1);
+};

@@ -1,8 +1,8 @@
-// Module ID: 13426
-// Function ID: 13427
+// Module ID: 13444
+// Function ID: 13445
 // Dependencies: [2]
 
-// Module 13426
+// Module 13444
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HeartIllocon-2x.png.js");

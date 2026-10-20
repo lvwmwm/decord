@@ -1,15 +1,15 @@
-// Module ID: 14532
-// Function ID: 14533
+// Module ID: 14550
+// Function ID: 14551
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 7199, 14533, 1275, 10413, 9279, 14536, 5631, 5195, 5622, 10095, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 7202, 14551, 1275, 10424, 9291, 14554, 5631, 5195, 5622, 10106, 2]
 
-// Module 14532 (MarketingPageBannerTile)
+// Module 14550 (MarketingPageBannerTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import LinkingDefault from "Linking" /* 5622 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7199 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9279 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10095 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7202 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9291 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10106 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -282,7 +282,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingP
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const button = bannerFields.button;
   let buttonAction;
-  const getButtonActionHandler = helpArticleLinkProps(14533).getButtonActionHandler;
+  const getButtonActionHandler = helpArticleLinkProps(14551).getButtonActionHandler;
   if (button != null) {
     buttonAction = button.buttonAction;
   }
@@ -294,14 +294,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingP
       value = iter.value;
     }
   }
-  const obj2 = { type: helpArticleLinkProps(1275).ImpressionTypes.VIEW, name: helpArticleLinkProps(1275).ImpressionNames.PREMIUM_MARKETING_COMPONENT, properties: { component_type: helpArticleLinkProps(10413).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId } };
+  const obj2 = { type: helpArticleLinkProps(1275).ImpressionTypes.VIEW, name: helpArticleLinkProps(1275).ImpressionNames.PREMIUM_MARKETING_COMPONENT, properties: { component_type: helpArticleLinkProps(10424).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId } };
   const buttonActionHandler = getButtonActionHandler(obj);
   const tmp2Result = useTrackImpressionDefault;
-  ({ component_type: helpArticleLinkProps(10413).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId });
+  ({ component_type: helpArticleLinkProps(10424).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId });
   tmp2Result(obj2);
-  const tmp4Result = helpArticleLinkProps(14536);
+  const tmp4Result = helpArticleLinkProps(14554);
   const formatStringWithCommonPremiumParams = tmp4Result.useFormatStringWithCommonPremiumParams(bannerFields.body);
-  const tmp4Result2 = helpArticleLinkProps(14536);
+  const tmp4Result2 = helpArticleLinkProps(14554);
   helpArticleLinkProps = tmp4Result2.getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
   const obj4 = { style: items, children: closure_5(View, obj5) };
   items = [tmp.container, style];

@@ -1,19 +1,19 @@
-// Module ID: 11059
-// Function ID: 11060
+// Module ID: 11071
+// Function ID: 11072
 // Name: launchFrame
-// Dependencies: [5, 6723, 6724, 5570, 11060, 584, 11021, 6726, 11062, 11068, 11056, 2]
+// Dependencies: [5, 6726, 6727, 5570, 11072, 584, 11033, 6729, 11074, 11080, 11068, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFrameRunsInBackground, updateFramePanelMode
 
-// Module 11059 (launchFrame)
+// Module 11071 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5570 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6726 */;
-import createProxyTicket from "createProxyTicket" /* 11021 */;
-import leaveFrame from "leaveFrame" /* 11056 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 11060 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6729 */;
+import createProxyTicket from "createProxyTicket" /* 11033 */;
+import leaveFrame from "leaveFrame" /* 11068 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 11072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 6723 */;
-import FramesConstants from "FramesConstants" /* 6724 */;
+import FramesStore from "FramesStore" /* 6726 */;
+import FramesConstants from "FramesConstants" /* 6727 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, dispatchResult1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
@@ -235,7 +235,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === hasOwnProperty.MAIN) {
-        const tmp4Result = tmp4(11056);
+        const tmp4Result = tmp4(11068);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);
@@ -393,9 +393,9 @@ export { clearMainFrameSlot };
 export { demoteMainFrame };
 export { promoteFrame };
 export { updateFrameLayoutMode };
-export const setFrameRunsInBackground = function setFrameRunsInBackground(frameId, enabled) {
+export const setFrameRunsInBackground = function setFrameRunsInBackground(id, enabled) {
   obj = DispatcherDefault;
-  const obj2 = { type: "FRAME_SET_RUNS_IN_BACKGROUND", frameId, enabled };
+  const obj2 = { type: "FRAME_SET_RUNS_IN_BACKGROUND", frameId: id, enabled };
   obj.dispatch(obj2);
 };
 export const updateFramePanelMode = function updateFramePanelMode(id, PIP) {

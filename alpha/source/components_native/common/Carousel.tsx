@@ -1,9 +1,9 @@
-// Module ID: 9818
-// Function ID: 9819
+// Module ID: 9830
+// Function ID: 9831
 // Name: Carousel
 // Dependencies: [19, 17, 21, 4945, 587, 4999, 1202, 558, 576, 5258, 2]
 
-// Module 9818 (Carousel)
+// Module 9830 (Carousel)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;

@@ -1,9 +1,9 @@
-// Module ID: 16789
-// Function ID: 16790
+// Module ID: 16808
+// Function ID: 16809
 // Name: DevToolsRevenuePlaygroundScreen
-// Dependencies: [5, 32, 19, 17, 8392, 7676, 1246, 4800, 4851, 1392, 5198, 1394, 21, 584, 573, 1297, 5625, 6851, 6860, 6935, 7237, 7512, 1202, 587, 10415, 4945, 7503, 5171, 16790, 2002, 558, 576, 7241, 16797, 13723, 12541, 6620, 16798, 16801, 16805, 16807, 16810, 2]
+// Dependencies: [5, 32, 19, 17, 8396, 7679, 1246, 4800, 4851, 1392, 5198, 1394, 21, 584, 573, 1297, 5625, 6854, 6863, 6938, 7240, 7515, 1202, 587, 10426, 4945, 7506, 5171, 16809, 2002, 558, 576, 7244, 16816, 13741, 12558, 6623, 16817, 16820, 16824, 16826, 16829, 2]
 
-// Module 16789 (DevToolsRevenuePlaygroundScreen)
+// Module 16808 (DevToolsRevenuePlaygroundScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,19 +11,19 @@ import native from "native" /* 1202 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import DevSettingsStore2 from "DevSettingsStore" /* 5198 */;
-import TableRow6 from "TableRow" /* 6851 */;
-import TableRowArrow from "TableRowArrow" /* 6860 */;
-import TableRowGroup4 from "TableRowGroup" /* 6935 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7237 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7241 */;
-import BundleUpdaterDefault from "BundleUpdater" /* 12541 */;
-import IAPUtils from "IAPUtils" /* 13723 */;
-import DevSettingsActions from "DevSettingsActions" /* 16797 */;
+import TableRow6 from "TableRow" /* 6854 */;
+import TableRowArrow from "TableRowArrow" /* 6863 */;
+import TableRowGroup4 from "TableRowGroup" /* 6938 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7240 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7244 */;
+import BundleUpdaterDefault from "BundleUpdater" /* 12558 */;
+import IAPUtils from "IAPUtils" /* 13741 */;
+import DevSettingsActions from "DevSettingsActions" /* 16816 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8392 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7676 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8396 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7679 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
@@ -689,10 +689,10 @@ function TrialOfferSheetExample() {
   }
   const tmp = premiumTrialOffer;
   const tmp2 = dependencyMap;
-  let obj = premiumTrialOffer(7503);
+  let obj = premiumTrialOffer(7506);
   premiumTrialOffer = obj.usePremiumTrialOffer();
-  const TableRowGroup = premiumTrialOffer(6935).TableRowGroup;
-  const TableRow = premiumTrialOffer(6851).TableRow;
+  const TableRowGroup = premiumTrialOffer(6938).TableRowGroup;
+  const TableRow = premiumTrialOffer(6854).TableRow;
   let obj2 = {
     label: "Trial Offer Nitro Basic",
     subLabel: str2,
@@ -701,12 +701,12 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(16790, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(16809, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
   items = [closure_17(TableRow, obj2), ];
-  const TableRow2 = tmp(6851).TableRow;
+  const TableRow2 = tmp(6854).TableRow;
   const obj3 = { title: "Trial Offers", hasIcons: false, children: items };
   const obj4 = {
     label: "Trial Offer Nitro",
@@ -716,7 +716,7 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(16790, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(16809, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
@@ -969,9 +969,9 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForceM
     tmp11 = cResult[3];
   }
   if (cResult[4] !== (tmp8 || stateFromStores)) {
-    const TableRowGroup = tmp(6935).TableRowGroup;
+    const TableRowGroup = tmp(6938).TableRowGroup;
     let str = "Replaces StoreKit with hardcoded fixture data. App will restart when toggled.";
-    const TableSwitchRow = tmp(7241).TableSwitchRow;
+    const TableSwitchRow = tmp(7244).TableSwitchRow;
     if (tmp8) {
       str = "Forced on - the current device can't fetch real StoreKit products.";
     }

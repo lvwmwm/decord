@@ -1,178 +1,42 @@
 // Module ID: 12497
 // Function ID: 12498
-// Dependencies: [12462, 12407, 12498]
-// Exports: generateIteratee
+// Dependencies: [12429, 12450, 12479]
 
 // Module 12497
-import _mod12498 from "module_12498" /* 12498 */;
-import module_12462 from "module_12462" /* 12462 */;
+import module_12479 from "module_12479" /* 12479 */;
 
-const require = globalThis.__r;
-let _require, stacktrace;
+let has, toString;
 
+const weakMap = new WeakMap();
 
-export const generateIteratee = function generateIteratee(arg0) {
-  let closure_2;
-  let require;
-  ({ isBrowser: require, root: dependencyMap, prefix: closure_2 } = arg0);
-  return (filename) => {
-    if (filename.filename) {
-      const obj = /^[a-zA-Z]:\\/;
-      let isMatch = obj.test(filename.filename);
-      if (!isMatch) {
-        filename = filename.filename;
-        let hasItem = filename.includes("\\");
-        if (hasItem) {
-          const filename2 = filename.filename;
-          hasItem = !filename2.includes("/");
-        }
-        isMatch = hasItem;
-      }
-      const tmp5 = closure_0;
-      if (tmp5) {
-        if (root) {
-          const filename1 = filename.filename;
-          if (0 === filename1.indexOf(root)) {
-            filename.filename = filename1.replace(root, prefix);
-          }
-        }
-      } else if (isMatch) {
-        let replaced;
-        let relativeResult;
-        if (isMatch) {
-          const str5 = filename.filename.replace(/^[a-zA-Z]:/, "");
-          replaced = str5.replace(/\\/g, "/");
-        } else {
-          replaced = str3;
-        }
-        const obj2 = _mod12498;
-        if (root) {
-          relativeResult = obj2.relative(tmp7, replaced);
-        } else {
-          relativeResult = obj2.basename(replaced);
-        }
-        const _HermesInternal = HermesInternal;
-        filename.filename = "" + prefix + relativeResult;
-      }
-      return filename;
-    } else {
-      return filename;
-    }
-  };
-};
-export const rewriteFramesIntegration = module_12462.defineIntegration(() => {
-  let closure_0;
-  let prefix;
-  let root;
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let fn;
-  ({ prefix, root } = obj);
-  if (!prefix) {
-    prefix = "app:///";
-  }
-  const tmp = _require;
-  let tmp2 = root;
-  fn = obj.iteratee;
-  const tmp3 = "window" in require("module_12407").GLOBAL_OBJ && undefined !== tmp(tmp2[1]).GLOBAL_OBJ.window;
-  if (!fn) {
-    _require = tmp3;
-    fn = (filename) => {
-      if (filename.filename) {
-        const obj = /^[a-zA-Z]:\\/;
-        let isMatch = obj.test(filename.filename);
-        if (!isMatch) {
-          filename = filename.filename;
-          let hasItem = filename.includes("\\");
-          if (hasItem) {
-            const filename2 = filename.filename;
-            hasItem = !filename2.includes("/");
-          }
-          isMatch = hasItem;
-        }
-        const tmp5 = closure_0;
-        if (tmp5) {
-          if (root) {
-            const filename1 = filename.filename;
-            if (0 === filename1.indexOf(root)) {
-              filename.filename = filename1.replace(root, prefix);
+export const functionToStringIntegration = module_12479.defineIntegration(() => {
+  let obj = {
+    name: "FunctionToString",
+    setupOnce() {
+      toString = Function.prototype.toString;
+      try {
+        const _Function = Function;
+        Function.prototype.toString = function() {
+          const items = [...arguments];
+          const obj = closure_1_0(closure_1_1[0]);
+          const originalFunction = obj.getOriginalFunction(this);
+          has = has.has;
+          let self = this;
+          const obj2 = closure_1_0(closure_1_1[1]);
+          if (has(obj2.getClient())) {
+            self = this;
+            if (undefined !== originalFunction) {
+              self = originalFunction;
             }
           }
-        } else if (isMatch) {
-          let replaced;
-          let relativeResult;
-          if (isMatch) {
-            const str5 = filename.filename.replace(/^[a-zA-Z]:/, "");
-            replaced = str5.replace(/\\/g, "/");
-          } else {
-            replaced = str3;
-          }
-          const obj2 = _mod12498;
-          if (root) {
-            relativeResult = obj2.relative(tmp7, replaced);
-          } else {
-            relativeResult = obj2.basename(replaced);
-          }
-          const _HermesInternal = HermesInternal;
-          filename.filename = "" + prefix + relativeResult;
-        }
-        return filename;
-      } else {
-        return filename;
+          return toString.apply(self, items);
+        };
+      } catch (err) {
       }
-    };
-  }
-  let obj2 = {
-    name: "RewriteFrames",
-    processEvent(exception) {
-      function _processExceptionsEvent(exception) {
-        let obj2;
-        let values;
-        try {
-          let obj = { exception: obj2 };
-          let merged = Object.assign(exception);
-          obj2 = {
-            values: values.map((stacktrace) => {
-                let mapped;
-                const obj = {};
-                const merged = Object.assign(stacktrace);
-                stacktrace = stacktrace.stacktrace;
-                if (stacktrace) {
-                  const stacktrace2 = stacktrace.stacktrace;
-                  const obj2 = { frames: mapped };
-                  const merged1 = Object.assign(stacktrace2);
-                  mapped = stacktrace2 && stacktrace2.frames;
-                  if (mapped) {
-                    const frames = stacktrace2.frames;
-                    mapped = frames.map((item) => closure_1_0(item));
-                  }
-                  stacktrace = { stacktrace: obj2 };
-                  const obj3 = { stacktrace: obj2 };
-                }
-                const merged2 = Object.assign(stacktrace);
-                return obj;
-              })
-          };
-          let merged1 = Object.assign(exception.exception);
-          values = exception.exception.values;
-          return obj;
-        } catch (err) {
-          return exception;
-        }
-      }
-      exception = exception.exception;
-      if (exception) {
-        const _Array = Array;
-        exception = Array.isArray(exception.exception.values);
-      }
-      let tmp2 = exception;
-      if (exception) {
-        tmp2 = _processExceptionsEvent(exception);
-      }
-      return tmp2;
+    },
+    setup(arg0) {
+      const result = weakMap.set(arg0, true);
     }
   };
-  return obj2;
+  return obj;
 });

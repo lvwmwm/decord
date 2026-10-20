@@ -1,13 +1,13 @@
-// Module ID: 8420
-// Function ID: 8421
+// Module ID: 8424
+// Function ID: 8425
 // Name: XNeutralIcon
-// Dependencies: [109, 19, 21, 558, 576, 8421, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 8425, 5630, 2]
 
-// Module 8420 (XNeutralIcon)
+// Module 8424 (XNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 8421 */;
+import AssetRegistry from "AssetRegistry" /* 8425 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

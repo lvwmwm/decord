@@ -1,12 +1,21 @@
 // Module ID: 15144
 // Function ID: 15145
-// Dependencies: [15142]
+// Dependencies: []
 
 // Module 15144
-import _mod15142 from "module_15142" /* 15142 */;
+let closure_0 = Object.freeze({ loose: true });
+let closure_1 = Object.freeze({});
 
-
-export default (arr, arg1) => {
-  let closure_0 = arg1;
-  return arr.sort((arg0, arg1) => _mod15142(arg1, arg0, closure_0));
+export default (arg0) => {
+  let tmp2;
+  let tmp = arg0;
+  if (tmp) {
+    if (typeof tmp !== "object") {
+      tmp = closure_0;
+    }
+    tmp2 = tmp;
+  } else {
+    tmp2 = closure_1;
+  }
+  return tmp2;
 };

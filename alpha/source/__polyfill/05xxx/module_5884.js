@@ -1,73 +1,18 @@
 // Module ID: 5884
 // Function ID: 5885
-// Dependencies: [19, 17, 5876]
-// Exports: useTabsScreen
+// Dependencies: [17, 26, 106, 65]
 
 // Module 5884
 import react_native from "react-native" /* 17 */;
-import RNSLog2 from "RNSLog" /* 5876 */;
-import react from "react" /* 19 */;
+import _mod26 from "module_26" /* 26 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
-const findNodeHandle = react_native.findNodeHandle;
+let obj2;
+const codegenNativeComponent = react_native.codegenNativeComponent;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSTabsHostAndroid", directEventTypes: { topTabSelected: { registrationName: "onTabSelected" }, topTabSelectionRejected: { registrationName: "onTabSelectionRejected" }, topTabSelectionPrevented: { registrationName: "onTabSelectionPrevented" } }, validAttributes: obj2 };
+obj2 = { navStateRequest: true, rejectStaleNavStateUpdates: true, tabBarHidden: true, nativeContainerBackgroundColor: _mod26.colorAttribute, colorScheme: true, tabBarRespectsIMEInsets: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onTabSelected: true, onTabSelectionRejected: true, onTabSelectionPrevented: true }));
 
-export const useTabsScreen = function useTabsScreen(componentNodeRef) {
-  componentNodeRef = componentNodeRef.componentNodeRef;
-  const onDidAppear = componentNodeRef.onDidAppear;
-  const onDidDisappear = componentNodeRef.onDidDisappear;
-  const onWillAppear = componentNodeRef.onWillAppear;
-  const onWillDisappear = componentNodeRef.onWillDisappear;
-  const screenKey = componentNodeRef.screenKey;
-  const ref = onDidDisappear.useRef(-1);
-  const effect = onDidDisappear.useEffect(() => {
-    if (null != componentNodeRef.current) {
-      let num2 = findNodeHandle(tmp.current);
-      const tmp3 = ref;
-      if (num2 == null) {
-        num2 = -1;
-      }
-      tmp3.current = num2;
-    } else {
-      ref.current = -1;
-    }
-  }, []);
-  const items = [onWillAppear];
-  const items1 = [onDidAppear];
-  const callback = onDidDisappear.useCallback((arg0) => {
-    const RNSLog = RNSLog2.RNSLog;
-    RNSLog.log("TabsScreen [" + ref.current + "] onWillAppear received");
-    if (onWillAppear != null) {
-      tmp2(arg0);
-    }
-  }, items);
-  const items2 = [onWillDisappear];
-  const callback1 = onDidDisappear.useCallback((arg0) => {
-    const RNSLog = RNSLog2.RNSLog;
-    RNSLog.log("TabsScreen [" + ref.current + "] onDidAppear received");
-    if (onDidAppear != null) {
-      tmp2(arg0);
-    }
-  }, items1);
-  const items3 = [onDidDisappear];
-  const callback2 = onDidDisappear.useCallback((arg0) => {
-    const RNSLog = RNSLog2.RNSLog;
-    RNSLog.log("TabsScreen [" + ref.current + "] onWillDisappear received");
-    if (onWillDisappear != null) {
-      tmp2(arg0);
-    }
-  }, items2);
-  const callback3 = onDidDisappear.useCallback((arg0) => {
-    const RNSLog = RNSLog2.RNSLog;
-    RNSLog.log("TabsScreen [" + ref.current + "] onDidDisappear received");
-    if (onDidDisappear != null) {
-      tmp2(arg0);
-    }
-  }, items3);
-  let RNSLog = componentNodeRef(onDidAppear[2]).RNSLog;
-  let num = ref.current;
-  const log = RNSLog.log;
-  if (num == null) {
-    num = -1;
-  }
-  log("TabsScreen [" + num + "] render; screenKey: " + screenKey);
-  return { componentNodeRef, lifecycleCallbacks: { onWillAppear: callback, onDidAppear: callback1, onWillDisappear: callback2, onDidDisappear: callback3 } };
-};
+export default module_65.get("RNSTabsHostAndroid", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

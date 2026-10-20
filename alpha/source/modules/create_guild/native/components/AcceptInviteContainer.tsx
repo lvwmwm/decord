@@ -1,15 +1,15 @@
-// Module ID: 13459
-// Function ID: 13460
+// Module ID: 13477
+// Function ID: 13478
 // Name: AcceptInviteContainer
-// Dependencies: [5, 19, 4860, 4822, 5662, 1087, 4866, 21, 4945, 587, 1505, 504, 6872, 1405, 7138, 2002, 7751, 8826, 7374, 8786, 9932, 13460, 7169, 4999, 2]
+// Dependencies: [5, 19, 4860, 4822, 5662, 1087, 4866, 21, 4945, 587, 1505, 504, 6875, 1405, 7141, 2002, 7755, 8838, 7377, 8798, 9943, 13478, 7172, 4999, 2]
 // Exports: default
 
-// Module 13459 (AcceptInviteContainer)
+// Module 13477 (AcceptInviteContainer)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4866 */;
-import NavigatorHeader from "NavigatorHeader" /* 6872 */;
+import NavigatorHeader from "NavigatorHeader" /* 6875 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4860 */;

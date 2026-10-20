@@ -1,20 +1,20 @@
-// Module ID: 18682
-// Function ID: 18683
+// Module ID: 18705
+// Function ID: 18706
 // Name: StageBoostUpsellManager
-// Dependencies: [5172, 4800, 4880, 4851, 6585, 7162, 5171, 6588, 9077, 4808, 6641, 2002, 2]
+// Dependencies: [5172, 4800, 4880, 4851, 6588, 7165, 5171, 6591, 9089, 4808, 6644, 2002, 2]
 
-// Module 18682 (StageBoostUpsellManager)
+// Module 18705 (StageBoostUpsellManager)
 import asyncRequire from "asyncRequire" /* 2002 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 4808 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6585 */;
-import StageMediaHooks from "StageMediaHooks" /* 6588 */;
-import useChannelVideoLimit from "useChannelVideoLimit" /* 9077 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6588 */;
+import StageMediaHooks from "StageMediaHooks" /* 6591 */;
+import useChannelVideoLimit from "useChannelVideoLimit" /* 9089 */;
 import ActionSheetStore from "ActionSheetStore" /* 5172 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7162 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7165 */;
 import size from "module_2" /* 2 */;
 
 const STAGE_BOOSTING_SHEET_KEY = StageChannelsConstants.STAGE_BOOSTING_SHEET_KEY;
@@ -52,7 +52,7 @@ class StageBoostUpsellManager extends AutomaticLifecycleManager {
                 if (PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, channel)) {
                   const obj2 = { channel };
                   const obj3 = ActionSheetActionCreatorsDefault;
-                  obj3.openLazy(asyncRequire(6641, tmp7.paths), STAGE_BOOSTING_SHEET_KEY, obj2);
+                  obj3.openLazy(asyncRequire(6644, tmp7.paths), STAGE_BOOSTING_SHEET_KEY, obj2);
                   c8 = true;
                 }
               }

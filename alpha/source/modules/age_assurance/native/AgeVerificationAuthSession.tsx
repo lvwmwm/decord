@@ -1,10 +1,10 @@
-// Module ID: 7861
-// Function ID: 7862
+// Module ID: 7865
+// Function ID: 7866
 // Name: AgeVerificationAuthSession
 // Dependencies: [5, 3, 570, 5657, 1384, 558, 576, 2]
 // Exports: closeAgeVerificationAuthSession, getIsAgeVerificationAuthSessionAwaitingResult, getIsAgeVerificationAuthSessionOpen, openAgeVerificationAuthSession
 
-// Module 7861 (AgeVerificationAuthSession)
+// Module 7865 (AgeVerificationAuthSession)
 import LoggerDefault from "Logger" /* 3 */;
 import react from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;

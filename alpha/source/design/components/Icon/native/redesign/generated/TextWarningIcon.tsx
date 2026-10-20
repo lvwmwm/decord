@@ -1,14 +1,14 @@
-// Module ID: 8492
-// Function ID: 8493
+// Module ID: 8496
+// Function ID: 8497
 // Name: TextWarningIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8463, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8467, 5630, 2]
 
-// Module 8492 (TextWarningIcon)
+// Module 8496 (TextWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 8463 */;
+import AssetRegistry from "AssetRegistry" /* 8467 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

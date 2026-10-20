@@ -1,10 +1,10 @@
-// Module ID: 10555
-// Function ID: 10556
+// Module ID: 10566
+// Function ID: 10567
 // Name: useUserVoiceActivity
 // Dependencies: [4800, 4880, 5591, 1098, 558, 576, 504, 2]
 // Exports: canViewUserVoiceChannel, getUserVoiceState
 
-// Module 10555 (useUserVoiceActivity)
+// Module 10566 (useUserVoiceActivity)
 import Constants from "Constants" /* 1098 */;
 import ChannelStore_mod from "ChannelStore" /* 4800 */;
 import PermissionStore_mod from "PermissionStore" /* 4880 */;
@@ -93,7 +93,7 @@ let PermissionStore = PermissionStore_mod;
 let VoiceStateStore = VoiceStateStore_mod;
 const Permissions = Constants.Permissions;
 let closure_6 = { ChannelStore, PermissionStore, VoiceStateStore };
-let closure_7 = Object.freeze({ voiceState: "Array", voiceChannel: "test" });
+let closure_7 = Object.freeze({ voiceState: "userId", voiceChannel: "code" });
 function getUserVoiceState(arg0) {
   let guildId;
   let includeNonDiscoverable;

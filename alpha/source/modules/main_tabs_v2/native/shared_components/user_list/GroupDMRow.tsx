@@ -1,13 +1,13 @@
-// Module ID: 10605
-// Function ID: 10606
+// Module ID: 10616
+// Function ID: 10617
 // Name: GroupDMRow
-// Dependencies: [109, 19, 10534, 21, 558, 576, 5565, 10606, 1202, 10607, 5195, 6848, 6851, 2]
+// Dependencies: [109, 19, 10545, 21, 558, 576, 5565, 10617, 1202, 10618, 5195, 6851, 6854, 2]
 
-// Module 10605 (GroupDMRow)
+// Module 10616 (GroupDMRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useChannelNameDefault from "useChannelName" /* 5565 */;
-import UserRowConstants from "UserRowConstants" /* 10534 */;
+import UserRowConstants from "UserRowConstants" /* 10545 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -17,10 +17,10 @@ let tmp;
 let tmp15;
 const native = tmp(1202);
 const Text_Text = tmp(5195);
-const TableCheckboxRow2 = tmp(6848);
-const TableRow2 = tmp(6851);
-const GroupDMAvatarDefault = tmp15(10606);
-const useRecipientsLabel = tmp(10607);
+const TableCheckboxRow2 = tmp(6851);
+const TableRow2 = tmp(6854);
+const GroupDMAvatarDefault = tmp15(10617);
+const useRecipientsLabel = tmp(10618);
 let closure_3 = ["channel", "mode", "selected", "disabled", "onPress"];
 const UserRowModes = UserRowConstants.UserRowModes;
 const jsx = Fragment.jsx;
@@ -201,12 +201,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRow
   }
   if (NONE === UserRowModes.TOGGLE) {
     const obj5 = { checked: flag };
-    const TableCheckboxRow = tmp7(6848).TableCheckboxRow;
+    const TableCheckboxRow = tmp7(6851).TableCheckboxRow;
     const merged2 = Object.assign(obj3);
     tmp5Result2 = tmp5(TableCheckboxRow, obj5);
   } else {
     const obj6 = {};
-    const TableRow = tmp7(6851).TableRow;
+    const TableRow = tmp7(6854).TableRow;
     const merged3 = Object.assign(obj3);
     tmp5Result2 = tmp5(TableRow, obj6);
   }

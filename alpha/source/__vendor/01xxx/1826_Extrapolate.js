@@ -12,13 +12,13 @@ import _mod1810 from "module_1810" /* 1810 */;
 import Extrapolation from "Extrapolation" /* 1827 */;
 import _modDef1828 from "module_1828" /* 1828 */;
 
-const f88366 = (ch1) => ({ ch1: ch1.r, ch2: ch1.g, ch3: ch1.b });
-const f88367 = (arg0) => {
+const f88466 = (ch1) => ({ ch1: ch1.r, ch2: ch1.g, ch3: ch1.b });
+const f88467 = (arg0) => {
   const obj = clampRGBA;
   const RGBtoHSVResult = obj.RGBtoHSV(arg0.r, arg0.g, arg0.b);
   return { ch1: RGBtoHSVResult.h, ch2: RGBtoHSVResult.s, ch3: RGBtoHSVResult.v };
 };
-const f88368 = (arg0) => {
+const f88468 = (arg0) => {
   const convert = _modDef1828.oklab.convert;
   const fromRgbResult = convert.fromRgb(arg0);
   return { ch1: fromRgbResult.l, ch2: fromRgbResult.a, ch3: fromRgbResult.b };
@@ -222,14 +222,14 @@ fn6.__closure = color;
 fn6.__workletHash = 8764168362190;
 fn6.__initData = { code: "function pnpm_interpolateColorTs6(colors,convFromRgb){const{processColor,red,green,blue,opacity}=this.__closure;const ch1=[];const ch2=[];const ch3=[];const alpha=[];for(let i=0;i<colors.length;i++){const color=colors[i];const processedColor=processColor(color);if(typeof processedColor==='number'){const convertedColor=convFromRgb({r:red(processedColor),g:green(processedColor),b:blue(processedColor)});ch1.push(convertedColor.ch1);ch2.push(convertedColor.ch2);ch3.push(convertedColor.ch3);alpha.push(opacity(processedColor));}}return{ch1:ch1,ch2:ch2,ch3:ch3,alpha:alpha};}" };
 const fn7 = function c(arg0) {
-  const tmp = fn6(arg0, f88366);
+  const tmp = fn6(arg0, f88466);
   return { r: tmp.ch1, g: tmp.ch2, b: tmp.ch3, a: tmp.alpha };
 };
 fn7.__closure = { _splitColorsIntoChannels: fn6 };
 fn7.__workletHash = 937749076324;
 fn7.__initData = { code: "function pnpm_interpolateColorTs7(colors){const{_splitColorsIntoChannels}=this.__closure;const{ch1:ch1,ch2:ch2,ch3:ch3,alpha:alpha}=_splitColorsIntoChannels(colors,function(color){return{ch1:color.r,ch2:color.g,ch3:color.b};});return{r:ch1,g:ch2,b:ch3,a:alpha};}" };
 const fn8 = function p(arg0) {
-  const tmp = fn6(arg0, f88367);
+  const tmp = fn6(arg0, f88467);
   return { h: tmp.ch1, s: tmp.ch2, v: tmp.ch3, a: tmp.alpha };
 };
 let obj4 = { _splitColorsIntoChannels: fn6, RGBtoHSV: clampRGBA.RGBtoHSV };
@@ -237,7 +237,7 @@ fn8.__closure = obj4;
 fn8.__workletHash = 11798906675452;
 fn8.__initData = { code: "function pnpm_interpolateColorTs8(colors){const{_splitColorsIntoChannels,RGBtoHSV}=this.__closure;const{ch1:ch1,ch2:ch2,ch3:ch3,alpha:alpha}=_splitColorsIntoChannels(colors,function(color){const hsvColor=RGBtoHSV(color.r,color.g,color.b);return{ch1:hsvColor.h,ch2:hsvColor.s,ch3:hsvColor.v};});return{h:ch1,s:ch2,v:ch3,a:alpha};}" };
 const fn9 = function i(arg0) {
-  const tmp = fn6(arg0, f88368);
+  const tmp = fn6(arg0, f88468);
   return { l: tmp.ch1, a: tmp.ch2, b: tmp.ch3, alpha: tmp.alpha };
 };
 let obj5 = { _splitColorsIntoChannels: fn6, culori: _modDef1828 };
@@ -256,8 +256,8 @@ function interpolateColor(arg0, arg1, arg2) {
   if ("HSV" === str) {
     if (typeof fn8 === "function") {
       const obj7 = { h: null, s: null, v: null, a: null };
-      ({ ch1: obj4.h, ch2: obj4.s, ch3: obj4.v, alpha: obj4.a } = fn6(arg2, f88367));
-      fn6(arg2, f88367);
+      ({ ch1: obj4.h, ch2: obj4.s, ch3: obj4.v, alpha: obj4.a } = fn6(arg2, f88467));
+      fn6(arg2, f88467);
       return tmp22(arg0, arg1, obj7, obj);
     } else {
       throw new TypeError("Trying to call a non-function");
@@ -265,8 +265,8 @@ function interpolateColor(arg0, arg1, arg2) {
   } else if ("RGB" === str) {
     if (typeof fn7 === "function") {
       const obj8 = { r: null, g: null, b: null, a: null };
-      ({ ch1: obj3.r, ch2: obj3.g, ch3: obj3.b, alpha: obj3.a } = fn6(arg2, f88366));
-      fn6(arg2, f88366);
+      ({ ch1: obj3.r, ch2: obj3.g, ch3: obj3.b, alpha: obj3.a } = fn6(arg2, f88466));
+      fn6(arg2, f88466);
       return tmp14(arg0, arg1, obj8, obj);
     } else {
       throw new TypeError("Trying to call a non-function");
@@ -274,8 +274,8 @@ function interpolateColor(arg0, arg1, arg2) {
   } else if ("LAB" === str) {
     if (typeof fn9 === "function") {
       const obj9 = { l: null, a: null, b: null, alpha: null };
-      ({ ch1: obj2.l, ch2: obj2.a, ch3: obj2.b, alpha: obj2.alpha } = fn6(arg2, f88368));
-      fn6(arg2, f88368);
+      ({ ch1: obj2.l, ch2: obj2.a, ch3: obj2.b, alpha: obj2.alpha } = fn6(arg2, f88468));
+      fn6(arg2, f88468);
       return tmp6(arg0, arg1, obj9, obj);
     } else {
       throw new TypeError("Trying to call a non-function");

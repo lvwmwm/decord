@@ -1,9 +1,9 @@
-// Module ID: 14375
-// Function ID: 14376
+// Module ID: 14393
+// Function ID: 14394
 // Name: InAppReportsUserPreview
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 7022, 4942, 1128, 5195, 1202, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 7025, 4942, 1128, 5195, 1202, 2]
 
-// Module 14375 (InAppReportsUserPreview)
+// Module 14393 (InAppReportsUserPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import ColorUtils from "ColorUtils" /* 4942 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7022 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7025 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;

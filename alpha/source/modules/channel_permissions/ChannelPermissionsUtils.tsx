@@ -1,10 +1,10 @@
-// Module ID: 8893
-// Function ID: 8894
+// Module ID: 8905
+// Function ID: 8906
 // Name: ChannelPermissionsUtils
-// Dependencies: [4804, 4818, 4855, 4860, 1392, 7819, 1087, 4858, 1128, 1099, 11, 4994, 1388, 4885, 8894, 2000, 5949, 2]
+// Dependencies: [4804, 4818, 4855, 4860, 1392, 7823, 1087, 4858, 1128, 1099, 11, 4994, 1388, 4885, 8906, 2000, 5952, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, flipEveryonePermission, getAllExistingRolesWithPermission, getExistingMembers, getExistingMembersRows, getExistingRoles, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getNoRolesRow, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 8893 (ChannelPermissionsUtils)
+// Module 8905 (ChannelPermissionsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import intl8 from "intl" /* 1128 */;
@@ -14,9 +14,9 @@ import GuildRecord from "GuildRecord" /* 4818 */;
 import GuildRoleUtils from "GuildRoleUtils" /* 4858 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4885 */;
 import UserUtilsDefault from "UserUtils" /* 4994 */;
-import ChannelUtils from "ChannelUtils" /* 5949 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7819 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8894 */;
+import ChannelUtils from "ChannelUtils" /* 5952 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7823 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8906 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 4855 */;
 import GuildMemberStore from "GuildMemberStore" /* 4860 */;
 import UserStore from "UserStore" /* 1392 */;

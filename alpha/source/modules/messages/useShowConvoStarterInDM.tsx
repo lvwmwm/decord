@@ -1,13 +1,13 @@
-// Module ID: 12956
-// Function ID: 12957
+// Module ID: 12974
+// Function ID: 12975
 // Name: useShowConvoStarterInDM
-// Dependencies: [19, 6733, 5965, 4890, 1392, 1087, 4807, 558, 576, 10720, 504, 2]
+// Dependencies: [19, 6736, 5968, 4890, 1392, 1087, 4807, 558, 576, 10731, 504, 2]
 
-// Module 12956 (useShowConvoStarterInDM)
+// Module 12974 (useShowConvoStarterInDM)
 import react from "react" /* 19 */;
 import ChannelConstants from "ChannelConstants" /* 4807 */;
-import MessageRequestStore_mod from "MessageRequestStore" /* 6733 */;
-import MessageStore_mod from "MessageStore" /* 5965 */;
+import MessageRequestStore_mod from "MessageRequestStore" /* 6736 */;
+import MessageStore_mod from "MessageStore" /* 5968 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
 import UserStore_mod from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowCon
       tmp6 = cResult[4];
     }
     MessageStore = tmp6;
-    const tmpResult = tmp(10720);
+    const tmpResult = tmp(10731);
     const strangerDangerWarning = tmpResult.useStrangerDangerWarning(id.id);
     if (cResult[5] !== id) {
       let tmp10 = ChannelFlags;

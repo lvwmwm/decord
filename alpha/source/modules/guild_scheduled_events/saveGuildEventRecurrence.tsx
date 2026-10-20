@@ -1,13 +1,13 @@
-// Module ID: 8828
-// Function ID: 8829
+// Module ID: 8840
+// Function ID: 8841
 // Name: saveGuildEventRecurrence
-// Dependencies: [8810, 8808, 11, 2]
+// Dependencies: [8822, 8820, 11, 2]
 // Exports: default
 
-// Module 8828 (saveGuildEventRecurrence)
+// Module 8840 (saveGuildEventRecurrence)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8808 */;
-import ScheduleUtils from "ScheduleUtils" /* 8810 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8820 */;
+import ScheduleUtils from "ScheduleUtils" /* 8822 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/saveGuildEventRecurrence.tsx");

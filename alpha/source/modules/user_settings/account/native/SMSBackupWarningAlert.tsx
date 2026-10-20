@@ -1,11 +1,11 @@
-// Module ID: 7120
-// Function ID: 7121
+// Module ID: 7123
+// Function ID: 7124
 // Name: SMSBackupWarningAlert
-// Dependencies: [19, 21, 4945, 558, 576, 5864, 1128, 5195, 5933, 2]
+// Dependencies: [19, 21, 4945, 558, 576, 5867, 1128, 5195, 5936, 2]
 
-// Module 7120 (SMSBackupWarningAlert)
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5864 */;
-import AlertDefault from "Alert" /* 5933 */;
+// Module 7123 (SMSBackupWarningAlert)
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5867 */;
+import AlertDefault from "Alert" /* 5936 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;

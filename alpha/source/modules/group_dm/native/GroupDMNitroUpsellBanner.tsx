@@ -1,21 +1,21 @@
-// Module ID: 17875
-// Function ID: 17876
+// Module ID: 17898
+// Function ID: 17899
 // Name: GroupDMNitroUpsellBanner
-// Dependencies: [32, 19, 17, 4946, 11183, 21, 587, 4945, 558, 576, 1633, 11720, 5213, 5014, 683, 5208, 5219, 504, 11184, 11181, 11188, 1128, 5205, 8366, 5195, 17876, 2]
+// Dependencies: [32, 19, 17, 4946, 11194, 21, 587, 4945, 558, 576, 1633, 11734, 5213, 5014, 683, 5208, 5219, 504, 11195, 11192, 11199, 1128, 5205, 8370, 5195, 17899, 2]
 
-// Module 17875 (GroupDMNitroUpsellBanner)
+// Module 17898 (GroupDMNitroUpsellBanner)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import intl4 from "intl" /* 1128 */;
 import spring from "spring" /* 5208 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8366 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11181 */;
-import GroupDMConstants from "GroupDMConstants" /* 11183 */;
-import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 11184 */;
-import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 11188 */;
-import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 17876 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8370 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11192 */;
+import GroupDMConstants from "GroupDMConstants" /* 11194 */;
+import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 11195 */;
+import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 11199 */;
+import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 17899 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

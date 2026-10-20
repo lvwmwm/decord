@@ -1,15 +1,15 @@
-// Module ID: 9823
-// Function ID: 9824
+// Module ID: 9835
+// Function ID: 9836
 // Name: PremiumUpsellSectionDivider
-// Dependencies: [19, 17, 7490, 21, 4945, 587, 558, 576, 9824, 5219, 1107, 8511, 2]
+// Dependencies: [19, 17, 7493, 21, 4945, 587, 558, 576, 9836, 5219, 1107, 8515, 2]
 
-// Module 9823 (PremiumUpsellSectionDivider)
+// Module 9835 (PremiumUpsellSectionDivider)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import LinearGradientDefault from "LinearGradient" /* 5219 */;
-import ColorConstants from "ColorConstants" /* 7490 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9824 */;
+import ColorConstants from "ColorConstants" /* 7493 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9836 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -136,7 +136,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
         obj5 = { style: tmp4.lockGradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? tmp10.PREMIUM_TIER_0 : tmp10.PREMIUM_TIER_2_TRI_COLOR, children: metroRequire(LockIcon, obj6) };
         tmp23 = LinearGradientDefault;
         obj6 = { color: nativeDefault.colors.WHITE, style: tmp4.lock };
-        LockIcon = tmp(8511).LockIcon;
+        LockIcon = tmp(8515).LockIcon;
         tmp20Result = tmp20(React3, obj4);
       }
       cResult[8] = position;
@@ -194,7 +194,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
     obj5 = { style: tmp.lockGradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? tmp9.PREMIUM_TIER_0 : tmp9.PREMIUM_TIER_2_TRI_COLOR, children: metroRequire(LockIcon, obj6) };
     tmp7Result = LinearGradientDefault;
     obj6 = { color: nativeDefault.colors.WHITE, style: tmp.lock };
-    LockIcon = tmp5(8511).LockIcon;
+    LockIcon = tmp5(8515).LockIcon;
     tmp4Result = tmp4(tmp3, obj4);
   }
   items[2] = tmp4Result;

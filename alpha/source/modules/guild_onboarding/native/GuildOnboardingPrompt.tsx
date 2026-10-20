@@ -1,10 +1,10 @@
-// Module ID: 7167
-// Function ID: 7168
+// Module ID: 7170
+// Function ID: 7171
 // Name: GuildOnboardingPrompt
-// Dependencies: [32, 19, 17, 6673, 6823, 4822, 7143, 7140, 1395, 21, 4945, 5229, 587, 558, 576, 1505, 504, 1633, 5213, 683, 6797, 6845, 7168, 1128, 5195, 5205, 5219, 1107, 7169, 7149, 7170, 7171, 1417, 7175, 5171, 7180, 2002, 6856, 5631, 7195, 2]
+// Dependencies: [32, 19, 17, 6676, 6826, 4822, 7146, 7143, 1395, 21, 4945, 5229, 587, 558, 576, 1505, 504, 1633, 5213, 683, 6800, 6848, 7171, 1128, 5195, 5205, 5219, 1107, 7172, 7152, 7173, 7174, 1417, 7178, 5171, 7183, 2002, 6859, 5631, 7198, 2]
 // Exports: DropdownPrompt
 
-// Module 7167 (GuildOnboardingPrompt)
+// Module 7170 (GuildOnboardingPrompt)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
@@ -14,18 +14,18 @@ import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import NavigatorConstants from "NavigatorConstants" /* 5229 */;
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 6797 */;
-import TermsFieldListDefault from "TermsFieldList" /* 6845 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7140 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7149 */;
-import EmojiDefault from "Emoji" /* 7175 */;
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 6800 */;
+import TermsFieldListDefault from "TermsFieldList" /* 6848 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7143 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7152 */;
+import EmojiDefault from "Emoji" /* 7178 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmojiStore from "EmojiStore" /* 6673 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6823 */;
+import EmojiStore from "EmojiStore" /* 6676 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6826 */;
 import GuildStore from "GuildStore" /* 4822 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7143 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7146 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -587,7 +587,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
       if (cResult[9] !== tmp20) {
         let selectedRoleIds;
         if (null != tmp20) {
-          const tmpResult4 = guildId(7149);
+          const tmpResult4 = guildId(7152);
           selectedRoleIds = tmpResult4.getSelectedRoleIds(tmp20);
         } else {
           const _Set = Set;
@@ -604,7 +604,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
       if (cResult[11] !== tmp20) {
         let selectedChannelIds;
         if (null != tmp20) {
-          const tmpResult5 = guildId(7149);
+          const tmpResult5 = guildId(7152);
           selectedChannelIds = tmpResult5.getSelectedChannelIds(tmp20);
         } else {
           const _Set2 = Set;
@@ -627,8 +627,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Prompt
             if (cResult[16] === tmp23) {
               tmp27 = cResult[17];
             }
-            ({ helpText, helpTextAdditional } = selectedOptionIds(7170)(tmp27));
-            selectedOptionIds(7170)(tmp27);
+            ({ helpText, helpTextAdditional } = selectedOptionIds(7173)(tmp27));
+            selectedOptionIds(7173)(tmp27);
             const tmpResult6 = guildId(5213);
             const token = tmpResult6.useToken(selectedOptionIds(587).colors.BACKGROUND_BASE_LOWER);
             if (cResult[18] !== token) {
@@ -1616,7 +1616,7 @@ export const DropdownPrompt = function DropdownPrompt(guildId) {
         return tmp(id, id2, flag);
       }
     };
-    obj.openLazy(asyncRequire(7180, dependencyMap.paths), "DropdownOptions", obj2);
+    obj.openLazy(asyncRequire(7183, dependencyMap.paths), "DropdownOptions", obj2);
   }, items2);
   items4 = [closure_13(closure_18, { currentPrompt, numberOfPrompts, currentPromptIndex }), ];
   let tmp11Result = 0 === found.length;

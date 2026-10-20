@@ -1,9 +1,9 @@
-// Module ID: 10941
-// Function ID: 10942
+// Module ID: 10952
+// Function ID: 10953
 // Name: Modal
-// Dependencies: [19, 21, 558, 576, 1633, 5229, 7043, 2]
+// Dependencies: [19, 21, 558, 576, 1633, 5229, 7046, 2]
 
-// Module 10941 (Modal)
+// Module 10952 (Modal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
@@ -13,7 +13,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Navigator2 = tmp(7043);
+const Navigator2 = tmp(7046);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Modal(arg0) {
   let tmp6;

@@ -1,9 +1,9 @@
-// Module ID: 17292
-// Function ID: 17293
+// Module ID: 17311
+// Function ID: 17312
 // Name: RedesignGuildHeader
-// Dependencies: [19, 17, 4946, 5172, 11920, 1087, 21, 558, 576, 9624, 5166, 4952, 5214, 17293, 4825, 17263, 10851, 5213, 587, 5211, 11931, 4945, 5014, 10543, 5015, 17294, 1499, 504, 1506, 5208, 5209, 14954, 1417, 5631, 17334, 2]
+// Dependencies: [19, 17, 4946, 5172, 11934, 1087, 21, 558, 576, 9637, 5166, 4952, 5214, 17312, 4825, 17282, 10862, 5213, 587, 5211, 11945, 4945, 5014, 10554, 5015, 17313, 1499, 504, 1506, 5208, 5209, 14972, 1417, 5631, 17353, 2]
 
-// Module 17292 (RedesignGuildHeader)
+// Module 17311 (RedesignGuildHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -16,19 +16,19 @@ import spring from "spring" /* 5208 */;
 import springPresets from "springPresets" /* 5209 */;
 import useToken from "useToken" /* 5213 */;
 import useFontScale from "useFontScale" /* 5214 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9624 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10543 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10851 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11931 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 14954 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17263 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17293 */;
-import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17294 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9637 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10554 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10862 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11945 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 14972 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17282 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17312 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17313 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
 import ActionSheetStore from "ActionSheetStore" /* 5172 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11920 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11934 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import createStyles_mod from "createStyles" /* 4945 */;

@@ -1,10 +1,10 @@
-// Module ID: 9379
-// Function ID: 9380
+// Module ID: 9391
+// Function ID: 9392
 // Name: OrderSigningErrors
 // Dependencies: [5660, 4771, 2]
 // Exports: getOrderSigningError
 
-// Module 9379 (OrderSigningErrors)
+// Module 9391 (OrderSigningErrors)
 import BillingErrorDefault from "BillingError" /* 4771 */;
 import PaymentConstants from "PaymentConstants" /* 5660 */;
 import size from "module_2" /* 2 */;

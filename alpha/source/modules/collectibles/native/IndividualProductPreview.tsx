@@ -1,20 +1,20 @@
-// Module ID: 14251
-// Function ID: 14252
+// Module ID: 14269
+// Function ID: 14270
 // Name: IndividualProductPreview
-// Dependencies: [19, 17, 1089, 21, 4945, 587, 558, 576, 5219, 8592, 10847, 10965, 14252, 14253, 1995, 1090, 14254, 14257, 2]
+// Dependencies: [19, 17, 1089, 21, 4945, 587, 558, 576, 5219, 8604, 10858, 10976, 14270, 14271, 1995, 1090, 14272, 14275, 2]
 
-// Module 14251 (IndividualProductPreview)
+// Module 14269 (IndividualProductPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
 import LinearGradientDefault from "LinearGradient" /* 5219 */;
-import useCurrentUser from "useCurrentUser" /* 8592 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10847 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10965 */;
-import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 14252 */;
-import NameplateProductPreviewDefault from "NameplateProductPreview" /* 14253 */;
-import FractionalNitroPreview from "FractionalNitroPreview" /* 14254 */;
-import OrbBadgePreview from "OrbBadgePreview" /* 14257 */;
+import useCurrentUser from "useCurrentUser" /* 8604 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10858 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10976 */;
+import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 14270 */;
+import NameplateProductPreviewDefault from "NameplateProductPreview" /* 14271 */;
+import FractionalNitroPreview from "FractionalNitroPreview" /* 14272 */;
+import OrbBadgePreview from "OrbBadgePreview" /* 14275 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
@@ -326,7 +326,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
     }
     if (cResult[3] !== product) {
       const obj2 = { product };
-      const tmp8 = closure_7(onTrackPress(14252), obj2);
+      const tmp8 = closure_7(onTrackPress(14270), obj2);
       cResult[3] = product;
       cResult[4] = tmp8;
       tmp5 = tmp8;
@@ -576,11 +576,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function IndividualPr
     let tmp5;
     const ALL = tmp(1090).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      tmp5 = metroImportDefault(tmp(14254).FractionalNitroPreview, {});
+      tmp5 = metroImportDefault(tmp(14272).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === hasOwnProperty.ORB_PROFILE_BADGE) {
-        tmp5 = metroImportDefault(tmp(14257).OrbBadgePreview, {});
+        tmp5 = metroImportDefault(tmp(14275).OrbBadgePreview, {});
       }
     }
     return tmp5;

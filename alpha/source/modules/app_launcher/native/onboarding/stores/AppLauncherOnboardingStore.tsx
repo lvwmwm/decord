@@ -1,9 +1,9 @@
-// Module ID: 11880
-// Function ID: 11881
+// Module ID: 11894
+// Function ID: 11895
 // Name: AppLauncherOnboardingStore
-// Dependencies: [1392, 11, 11878, 5595, 504, 584, 2]
+// Dependencies: [1392, 11, 11892, 5595, 504, 584, 2]
 
-// Module 11880 (AppLauncherOnboardingStore)
+// Module 11894 (AppLauncherOnboardingStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

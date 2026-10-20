@@ -1,12 +1,12 @@
-// Module ID: 7022
-// Function ID: 7023
+// Module ID: 7025
+// Function ID: 7026
 // Name: useTypeConsolidationTextTransform
-// Dependencies: [558, 7023, 576, 2]
+// Dependencies: [558, 7026, 576, 2]
 // Exports: useTypeConsolidationTextTransform
 
-// Module 7022 (useTypeConsolidationTextTransform)
+// Module 7025 (useTypeConsolidationTextTransform)
 import react from "react" /* 576 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7023 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7026 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

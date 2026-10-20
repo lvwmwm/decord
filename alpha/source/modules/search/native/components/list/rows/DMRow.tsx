@@ -1,18 +1,18 @@
-// Module ID: 17815
-// Function ID: 17816
+// Module ID: 17838
+// Function ID: 17839
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 4946, 5674, 4890, 1087, 21, 4945, 587, 558, 576, 4994, 5195, 10552, 504, 9055, 1202, 8912, 14610, 17801, 2]
+// Dependencies: [5, 32, 19, 17, 4946, 5674, 4890, 1087, 21, 4945, 587, 558, 576, 4994, 5195, 10563, 504, 9067, 1202, 8924, 14628, 17824, 2]
 
-// Module 17815 (DMRow)
+// Module 17838 (DMRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import UserUtils from "UserUtils" /* 4994 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8912 */;
-import BotTagDefault from "BotTag" /* 9055 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10552 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14610 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8924 */;
+import BotTagDefault from "BotTag" /* 9067 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10563 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14628 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,13 +1,13 @@
-// Module ID: 11610
-// Function ID: 11611
+// Module ID: 11621
+// Function ID: 11622
 // Name: handleConjureRoute
-// Dependencies: [4807, 5114, 5111, 11611, 2]
+// Dependencies: [4807, 5114, 5111, 11622, 2]
 // Exports: default
 
-// Module 11610 (handleConjureRoute)
+// Module 11621 (handleConjureRoute)
 import ChannelConstants from "ChannelConstants" /* 4807 */;
 import useChatLayout from "useChatLayout" /* 5114 */;
-import openConjureModalDefault from "openConjureModal" /* 11611 */;
+import openConjureModalDefault from "openConjureModal" /* 11622 */;
 import size from "module_2" /* 2 */;
 
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;

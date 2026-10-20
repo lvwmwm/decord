@@ -1,9 +1,9 @@
-// Module ID: 16380
-// Function ID: 16381
+// Module ID: 16399
+// Function ID: 16400
 // Name: SettingsAppearanceMessagesHeaderItem
 // Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1128, 5195, 2]
 
-// Module 16380 (SettingsAppearanceMessagesHeaderItem)
+// Module 16399 (SettingsAppearanceMessagesHeaderItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

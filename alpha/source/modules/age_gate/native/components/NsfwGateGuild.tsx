@@ -1,18 +1,18 @@
-// Module ID: 7260
-// Function ID: 7261
+// Module ID: 7263
+// Function ID: 7264
 // Name: NsfwGateGuild
-// Dependencies: [19, 17, 4860, 1392, 7261, 1087, 21, 4945, 587, 558, 576, 1128, 2068, 1267, 7262, 7016, 5631, 7264, 5195, 5205, 2]
+// Dependencies: [19, 17, 4860, 1392, 7264, 1087, 21, 4945, 587, 558, 576, 1128, 2068, 1267, 7265, 7019, 5631, 7267, 5195, 5205, 2]
 
-// Module 7260 (NsfwGateGuild)
+// Module 7263 (NsfwGateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2068 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import BackgroundImageDefault from "BackgroundImage" /* 7016 */;
-import Constants2 from "Constants" /* 7261 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7262 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7264 */;
+import BackgroundImageDefault from "BackgroundImage" /* 7019 */;
+import Constants2 from "Constants" /* 7264 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7265 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7267 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4860 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -272,8 +272,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
     track(GUILD_NSFW_GATE_VIEWED, obj);
   }, items);
   const obj3 = { style: tmp.container, children: items1 };
-  items1 = [closure_10(currentUser(7016), {}), , , , , ];
-  const obj4 = { source: currentUser(7264), style: tmp.image };
+  items1 = [closure_10(currentUser(7019), {}), , , , , ];
+  const obj4 = { source: currentUser(7267), style: tmp.image };
   const tmp7 = currentUser(5631);
   items1[1] = closure_10(tmp7, obj4);
   const obj5 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult };

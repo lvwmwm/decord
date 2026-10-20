@@ -1,9 +1,9 @@
-// Module ID: 18226
-// Function ID: 18227
+// Module ID: 18249
+// Function ID: 18250
 // Name: useCanInviteMembers
 // Dependencies: [4800, 4880, 1098, 558, 576, 573, 2]
 
-// Module 18226 (useCanInviteMembers)
+// Module 18249 (useCanInviteMembers)
 import Constants from "Constants" /* 1098 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import PermissionStore from "PermissionStore" /* 4880 */;

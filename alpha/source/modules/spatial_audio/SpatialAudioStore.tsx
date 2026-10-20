@@ -1,14 +1,14 @@
-// Module ID: 5808
-// Function ID: 5809
+// Module ID: 5810
+// Function ID: 5811
 // Name: SpatialAudioStore
-// Dependencies: [1261, 2014, 5676, 5809, 5680, 12, 510, 5810, 504, 5700, 584, 2]
+// Dependencies: [1261, 2014, 5676, 5811, 5680, 12, 510, 5812, 504, 5700, 584, 2]
 
-// Module 5808 (SpatialAudioStore)
+// Module 5810 (SpatialAudioStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SpatialAudioConstants from "SpatialAudioConstants" /* 5809 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5810 */;
+import SpatialAudioConstants from "SpatialAudioConstants" /* 5811 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5812 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5676 */;

@@ -1,15 +1,15 @@
-// Module ID: 8094
-// Function ID: 8095
+// Module ID: 8098
+// Function ID: 8099
 // Name: FileUtils
-// Dependencies: [4822, 1392, 1087, 1394, 12, 8095, 2054, 8089, 6333, 1128, 2]
+// Dependencies: [4822, 1392, 1087, 1394, 12, 8099, 2054, 8093, 6336, 1128, 2]
 // Exports: classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
 
-// Module 8094 (FileUtils)
+// Module 8098 (FileUtils)
 import _modDef12 from "module_12" /* 12 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2054 */;
-import FileSizeUtils from "FileSizeUtils" /* 6333 */;
-import UploadUtils from "UploadUtils" /* 8089 */;
-import _modDef8095 from "module_8095" /* 8095 */;
+import FileSizeUtils from "FileSizeUtils" /* 6336 */;
+import UploadUtils from "UploadUtils" /* 8093 */;
+import _modDef8099 from "module_8099" /* 8099 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
@@ -129,7 +129,7 @@ export const classifyFileName = function classifyFileName(fileName, arg1) {
   return str2;
 };
 export const sizeString = function sizeString(size) {
-  const obj = _modDef8095;
+  const obj = _modDef8099;
   return obj.filesize(size);
 };
 export const maxFileSize = function maxFileSize(guildId) {

@@ -1,10 +1,12 @@
 // Module ID: 10240
 // Function ID: 10241
-// Dependencies: [41, 42, 93, 95, 98, 10241, 10140]
+// Dependencies: [41, 42, 93, 95, 98, 10238, 10144, 10145, 10151]
 
 // Module 10240
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10140 */;
-import _mod10241 from "module_10241" /* 10241 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10144 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 10145 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10151 */;
+import _mod10238 from "module_10238" /* 10238 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -26,12 +28,15 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ZHHansDateParser {
+const combined = "(?:on\\s*?)?(" + _mod10238.ORDINAL_NUMBER_PATTERN + ")(?:\\s*(?:tot|\\-|\\\u2013|until|through|till|\\s)\\s*(" + _mod10238.ORDINAL_NUMBER_PATTERN + "))?(?:-|/|\\s*(?:of)?\\s*)(";
+const sum = combined + repeatedTimeunitPattern.matchAnyPattern(_mod10238.MONTH_DICTIONARY);
+const regExp = new RegExp(sum + ")(?:(?:-|/|,?\\s*)" + "(" + _mod10238.YEAR_PATTERN + "(?![^\\s]\\d)))?(?=\\W|$)", "i");
+class NLMonthNameMiddleEndianParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ZHHansDateParser);
-    const obj = _getPrototypeOf(ZHHansDateParser);
+    _classCallCheck(this, NLMonthNameMiddleEndianParser);
+    const obj = _getPrototypeOf(NLMonthNameMiddleEndianParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -43,18 +48,10 @@ class ZHHansDateParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ZHHansDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(NLMonthNameMiddleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
-    const keys = Object.keys(_mod10241.NUMBER);
-    const text = `(\\d{2,4}|[${obj.join("")}`;
-    const keys1 = Object.keys(_mod10241.NUMBER);
-    const text1 = `${`(\\d{2,4}|[${obj.join("")}`}]{4}|[${obj2.join("")}`;
-    const keys2 = Object.keys(_mod10241.NUMBER);
-    const text2 = `${tmp2}]{2})?(?:\\s*)(?:年)?(?:[\\s|,|，]*)(\\d{1,2}|[${obj3.join("")}`;
-    const keys3 = Object.keys(_mod10241.NUMBER);
-    const regExp = new RegExp(text2 + "]{1,3})(?:\\s*)(?:\u6708)(?:\\s*)(\\d{1,2}|[" + keys3.join("") + "]{1,3})?(?:\\s*)(?:\u65E5|\u53F7)?");
     return regExp;
   }
 };
@@ -62,47 +59,34 @@ const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const parsed = parseInt(index[2]);
-      let zhStringToNumberResult = parsed;
-      if (isNaN(parsed)) {
-        zhStringToNumberResult = _mod10241.zhStringToNumber(index[2]);
-      }
-      const start = parsingResult.start;
-      start.assign("month", zhStringToNumberResult);
-      if (index[3]) {
-        const _parseInt = parseInt;
-        const parsed1 = parseInt(index[3]);
-        const _isNaN = isNaN;
-        let zhStringToNumberResult1 = parsed1;
-        if (isNaN(parsed1)) {
-          zhStringToNumberResult1 = _mod10241.zhStringToNumber(index[3]);
-        }
-        const start3 = parsingResult.start;
-        start3.assign("day", zhStringToNumberResult1);
+    value: function innerExtract(createParsingComponents, index) {
+      const tmp3 = _mod10238.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
+      const result = _mod10238.parseOrdinalNumberPattern(index[1]);
+      if (result > 31) {
+        index.index = index.index + index[1].length;
+        return null;
       } else {
-        const start2 = parsingResult.start;
-        const refDate = createParsingResult.refDate;
-        start2.imply("day", refDate.getDate());
-      }
-      if (index[1]) {
-        const _parseInt2 = parseInt;
-        let parsed2 = parseInt(index[1]);
-        const _isNaN2 = isNaN;
-        if (isNaN(parsed2)) {
-          parsed2 = _mod10241.zhStringToYear(index[1]);
+        const date = { day: result, month: tmp3 };
+        const parsingComponents = createParsingComponents.createParsingComponents(date);
+        if (index[4]) {
+          parsingComponents.assign("year", _mod10238.parseYear(index[4]));
+        } else {
+          parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, result, tmp3));
         }
-        const start5 = parsingResult.start;
-        start5.assign("year", parsed2);
-      } else {
-        const start4 = parsingResult.start;
-        const refDate2 = createParsingResult.refDate;
-        start4.imply("year", refDate2.getFullYear());
+        if (index[2]) {
+          const result1 = tmp(10238).parseOrdinalNumberPattern(index[2]);
+          const parsingResult = createParsingComponents.createParsingResult(index.index, index[0]);
+          parsingResult.start = parsingComponents;
+          parsingResult.end = parsingComponents.clone();
+          const end = parsingResult.end;
+          end.assign("day", result1);
+          return parsingResult;
+        } else {
+          return parsingComponents;
+        }
       }
-      return parsingResult;
     }
   }
 ];
 
-export default _createClass(ZHHansDateParser, items);
+export default _createClass(NLMonthNameMiddleEndianParser, items);

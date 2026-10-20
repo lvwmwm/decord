@@ -1,9 +1,9 @@
-// Module ID: 17777
-// Function ID: 17778
+// Module ID: 17800
+// Function ID: 17801
 // Name: FrameSurfaceState
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5195, 6828, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5195, 6831, 2]
 
-// Module 17777 (FrameSurfaceState)
+// Module 17800 (FrameSurfaceState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,7 +19,7 @@ let closure_4;
 let obj2;
 let obj3;
 let tmp;
-const ActivityIndicator_ActivityIndicator = tmp(6828);
+const ActivityIndicator_ActivityIndicator = tmp(6831);
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let createStyles = createStyles_mod;

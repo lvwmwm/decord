@@ -1,21 +1,21 @@
-// Module ID: 8827
-// Function ID: 8828
+// Module ID: 8839
+// Function ID: 8840
 // Name: EditGuildEventRecurrenceModal
-// Dependencies: [5, 32, 19, 17, 21, 4945, 587, 558, 576, 1633, 8817, 8810, 1896, 8828, 8820, 1128, 5205, 8829, 8809, 8830, 8831, 5195, 7043, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4945, 587, 558, 576, 1633, 8829, 8822, 1896, 8840, 8832, 1128, 5205, 8841, 8821, 8842, 8843, 5195, 7046, 2]
 
-// Module 8827 (EditGuildEventRecurrenceModal)
+// Module 8839 (EditGuildEventRecurrenceModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1896 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8809 */;
-import useEventExceptionDefault from "useEventException" /* 8817 */;
-import LazyAPIPromiseDefault from "LazyAPIPromise" /* 8820 */;
-import saveGuildEventRecurrenceDefault from "saveGuildEventRecurrence" /* 8828 */;
-import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 8829 */;
-import EditGuildEventStepContainerDefault from "EditGuildEventStepContainer" /* 8830 */;
-import GuildEventScheduleDefault from "GuildEventSchedule" /* 8831 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8821 */;
+import useEventExceptionDefault from "useEventException" /* 8829 */;
+import LazyAPIPromiseDefault from "LazyAPIPromise" /* 8832 */;
+import saveGuildEventRecurrenceDefault from "saveGuildEventRecurrence" /* 8840 */;
+import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 8841 */;
+import EditGuildEventStepContainerDefault from "EditGuildEventStepContainer" /* 8842 */;
+import GuildEventScheduleDefault from "GuildEventSchedule" /* 8843 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -61,7 +61,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
   const tmp5 = onCloseModal;
   ({ left, right } = onCloseModal(1633)());
   const tmp6 = onCloseModal(1633)();
-  const tmp7 = onCloseModal(8817)(recurrenceId, guildEvent.id);
+  const tmp7 = onCloseModal(8829)(recurrenceId, guildEvent.id);
   dependencyMap = tmp7;
   if (cResult[0] === tmp7) {
     if (cResult[1] === guildEvent) {
@@ -85,7 +85,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
             if (cResult[7] === schedule) {
               tmp18 = cResult[8];
             }
-            const tmp11Result = tmp11(tmp5(8820)(tmp18), 2);
+            const tmp11Result = tmp11(tmp5(8832)(tmp18), 2);
             const first2 = tmp11Result[0];
             error = tmp11Result[1].error;
             if (cResult[9] === tmp8) {
@@ -392,9 +392,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
       tmp18 = M;
     }
   }
-  const tmpResult = tmp(8810);
+  const tmpResult = tmp(8822);
   const baseScheduleForRecurrence = tmpResult.getBaseScheduleForRecurrence(recurrenceId, guildEvent);
-  const tmpResult2 = tmp(8810);
+  const tmpResult2 = tmp(8822);
   const scheduleForRecurrenceWithException = tmpResult2.getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp7);
   cResult[0] = tmp7;
   cResult[1] = guildEvent;
@@ -493,9 +493,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
   ({ left, right } = tmp2);
   let tmp3 = useEventExceptionDefault(recurrenceId, guildEvent.id);
   dependencyMap = tmp3;
-  obj = guildEvent(8810);
+  obj = guildEvent(8822);
   const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(recurrenceId, guildEvent);
-  let obj2 = guildEvent(8810);
+  let obj2 = guildEvent(8822);
   const scheduleForRecurrenceWithException = obj2.getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp3);
   [c5, c6] = schedule(react.useState(scheduleForRecurrenceWithException), 2);
   const tmp6 = schedule(react.useState(scheduleForRecurrenceWithException), 2);
@@ -562,7 +562,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
     },
     fullscreen: true
   };
-  let obj5 = { style: items1, children: closure_8(guildEvent(7043).Navigator, obj6) };
+  let obj5 = { style: items1, children: closure_8(guildEvent(7046).Navigator, obj6) };
   items1 = [tmp.container, { paddingLeft: left, paddingRight: right }];
   obj6 = { screens: { [closure_11.TIME]: obj4 }, initialRouteName: obj.TIME, cardShadowEnabled: false, cardOverlayEnabled: false, cardStyle: tmp.cardStyle };
   return closure_8(first, obj5);

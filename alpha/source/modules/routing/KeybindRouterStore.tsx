@@ -1,9 +1,9 @@
-// Module ID: 11608
-// Function ID: 11609
+// Module ID: 11619
+// Function ID: 11620
 // Name: KeybindRouterStore
 // Dependencies: [1087, 4976, 4989, 1269, 1274, 2]
 
-// Module 11608 (KeybindRouterStore)
+// Module 11619 (KeybindRouterStore)
 import matchPathCompat from "matchPathCompat" /* 4976 */;
 import Constants from "Constants" /* 1087 */;
 import module_1269 from "module_1269" /* 1269 */;

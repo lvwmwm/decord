@@ -1,12 +1,12 @@
-// Module ID: 11762
-// Function ID: 11763
+// Module ID: 11776
+// Function ID: 11777
 // Name: resolvedValues
-// Dependencies: [11763, 11764, 2]
+// Dependencies: [11777, 11778, 2]
 // Exports: bindResolveFieldValue
 
-// Module 11762 (resolvedValues)
-import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 11763 */;
-import ApplicationWidgetFieldValueType from "ApplicationWidgetFieldValueType" /* 11764 */;
+// Module 11776 (resolvedValues)
+import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 11777 */;
+import ApplicationWidgetFieldValueType from "ApplicationWidgetFieldValueType" /* 11778 */;
 import size_mod from "module_2" /* 2 */;
 
 function resolveFieldValue(image, items, applicationAssets) {
@@ -19,9 +19,8 @@ function resolveFieldValue(image, items, applicationAssets) {
     let tmp10;
     const presentation_type = image.presentation_type;
     if (null != tmp[image.value]) {
-      let obj4 = closure_3[presentation_type];
       let hasItem;
-      if (obj4 != null) {
+      if (closure_3[presentation_type] != null) {
         hasItem = obj4.includes(iter.type);
       }
       if (hasItem) {
@@ -30,9 +29,9 @@ function resolveFieldValue(image, items, applicationAssets) {
             if (tmp[image.value].type === obj.NUMBER) {
               let obj3;
               if (presentation_type === ApplicationWidgetFieldPresentationType.ApplicationWidgetFieldPresentationType.DURATION) {
-                let obj2 = { type: tmp[image.value].type, value: Math.floor(60 * tmp[image.value].value * 60 * 1000), presentationType: presentation_type };
                 const _Math = Math;
-                obj3 = obj2;
+                obj3 = { type: tmp[image.value].type, value: Math.floor(60 * tmp[image.value].value * 60 * 1000), presentationType: presentation_type };
+                const obj2 = { type: tmp[image.value].type, value: Math.floor(60 * tmp[image.value].value * 60 * 1000), presentationType: presentation_type };
               }
               tmp10 = obj3;
             }
@@ -43,7 +42,6 @@ function resolveFieldValue(image, items, applicationAssets) {
         return tmp10;
       }
     }
-    let str = "fallback";
     tmp10 = null;
     if ("fallback" in image) {
       tmp10 = null;
@@ -57,18 +55,18 @@ function resolveFieldValue(image, items, applicationAssets) {
       tmp6 = null;
       const tmp7 = obj;
       if (items.includes(obj.STRING)) {
-        let obj5 = { type: tmp7.STRING, value: image.value, presentationType: tmp18(11763).ApplicationWidgetFieldPresentationType.TEXT };
-        tmp6 = obj5;
+        tmp6 = { type: tmp7.STRING, value: image.value, presentationType: ApplicationWidgetFieldPresentationType.ApplicationWidgetFieldPresentationType.TEXT };
+        const obj5 = { type: tmp7.STRING, value: image.value, presentationType: ApplicationWidgetFieldPresentationType.ApplicationWidgetFieldPresentationType.TEXT };
       }
     }
     return tmp6;
   } else if (image.value_type === ApplicationWidgetFieldValueType.ApplicationWidgetFieldValueType.APPLICATION_ASSET) {
     const tmp3 = obj;
     if (items.includes(obj.MEDIA)) {
-      const found = applicationAssets.find((key) => key.key === closure_0.value);
+      const found = applicationAssets.find((key) => key.key === value.value);
       let tmp5 = null;
       if (null != found) {
-        obj = { type: tmp3.MEDIA, media: size, presentationType: tmp18(11763).ApplicationWidgetFieldPresentationType.IMAGE };
+        obj = { type: tmp3.MEDIA, media: size, presentationType: ApplicationWidgetFieldPresentationType.ApplicationWidgetFieldPresentationType.IMAGE };
         size = { url: tmp2(found), width: found.metadata.width, height: found.metadata.height };
         tmp5 = obj;
       }
@@ -81,7 +79,7 @@ function resolveFieldValue(image, items, applicationAssets) {
   }
 }
 const ResolvedValueType = { STRING: "string", NUMBER: "number", MEDIA: "media" };
-let items = [ResolvedValueType.STRING];
+const items = [ResolvedValueType.STRING];
 const items1 = [ResolvedValueType.NUMBER];
 const items2 = [ResolvedValueType.MEDIA];
 const items3 = [ResolvedValueType.NUMBER];

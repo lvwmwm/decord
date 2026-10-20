@@ -1,9 +1,9 @@
-// Module ID: 10325
-// Function ID: 10326
+// Module ID: 10336
+// Function ID: 10337
 // Name: HorizontalAutocomplete
-// Dependencies: [19, 17, 4946, 4854, 4822, 4890, 1392, 1087, 21, 4945, 6599, 587, 558, 576, 5014, 5167, 5224, 504, 1202, 4994, 5195, 7229, 7247, 8550, 8447, 5565, 5631, 2]
+// Dependencies: [19, 17, 4946, 4854, 4822, 4890, 1392, 1087, 21, 4945, 6602, 587, 558, 576, 5014, 5167, 5224, 504, 1202, 4994, 5195, 7232, 7250, 8556, 8451, 5565, 5631, 2]
 
-// Module 10325 (HorizontalAutocomplete)
+// Module 10336 (HorizontalAutocomplete)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,9 +13,9 @@ import timing from "timing" /* 5167 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import useMountEffectDefault from "useMountEffect" /* 5224 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import RoleIconUtils from "RoleIconUtils" /* 7229 */;
-import RoleIconDefault from "RoleIcon" /* 7247 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8550 */;
+import RoleIconUtils from "RoleIconUtils" /* 7232 */;
+import RoleIconDefault from "RoleIcon" /* 7250 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8556 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
@@ -26,7 +26,7 @@ import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
-import TextStyles from "TextStyles" /* 6599 */;
+import TextStyles from "TextStyles" /* 6602 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import "ReactCompilerGating";
 import size from "module_2" /* 2 */;
@@ -371,7 +371,7 @@ let obj5 = {
       if (cResult[4] !== stateFromStores) {
         let roleIconData = null;
         if (null != stateFromStores) {
-          const tmpResult2 = guildId(7229);
+          const tmpResult2 = guildId(7232);
           roleIconData = tmpResult2.getRoleIconData(stateFromStores, 30);
         }
         cResult[4] = stateFromStores;
@@ -445,7 +445,7 @@ let obj5 = {
       }
       let tmp12 = null;
       if (null != tmp9) {
-        const obj6 = { style: tmp4.roleIcon, children: closure_11(id(7247), obj7) };
+        const obj6 = { style: tmp4.roleIcon, children: closure_11(id(7250), obj7) };
         obj7 = { name, src: null, unicodeEmoji: null, size: 24 };
         ({ customIconSrc: obj5.src, unicodeEmoji: obj5.unicodeEmoji } = tmp9);
         tmp12 = closure_11(closure_4, obj6);
@@ -595,7 +595,7 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmpResult4 = channel(8447);
+      const tmpResult4 = channel(8451);
       channelIconWithGuild = tmpResult4.getChannelIconWithGuild(channel, stateFromStores);
     }
     cResult[4] = channel;
@@ -613,7 +613,7 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmp2Result = channel(8447);
+      const tmp2Result = channel(8451);
       channelIconWithGuild = tmp2Result.getChannelIconWithGuild(channel, tmp5);
     }
     const obj = { onPress, children: items };

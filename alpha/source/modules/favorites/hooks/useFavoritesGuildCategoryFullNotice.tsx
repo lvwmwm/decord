@@ -1,16 +1,16 @@
-// Module ID: 17266
-// Function ID: 17267
+// Module ID: 17285
+// Function ID: 17286
 // Name: useFavoritesGuildCategoryFullNotice
-// Dependencies: [4803, 4813, 1087, 558, 576, 504, 10639, 4825, 1128, 3402, 2]
+// Dependencies: [4803, 4813, 1087, 558, 576, 504, 10650, 4825, 1128, 3402, 2]
 
-// Module 17266 (useFavoritesGuildCategoryFullNotice)
+// Module 17285 (useFavoritesGuildCategoryFullNotice)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import _modDef3402 from "module_3402" /* 3402 */;
 import FavoritesConstants from "FavoritesConstants" /* 4813 */;
 import FavoritesUtils from "FavoritesUtils" /* 4825 */;
-import FavoritesHooks from "FavoritesHooks" /* 10639 */;
+import FavoritesHooks from "FavoritesHooks" /* 10650 */;
 import FavoriteStore from "FavoriteStore" /* 4803 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

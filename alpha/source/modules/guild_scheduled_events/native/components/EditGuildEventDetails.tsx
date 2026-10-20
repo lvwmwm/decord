@@ -1,17 +1,17 @@
-// Module ID: 8935
-// Function ID: 8936
+// Module ID: 8947
+// Function ID: 8948
 // Name: EditGuildEventDetails
-// Dependencies: [32, 19, 6732, 4806, 21, 4945, 1128, 558, 576, 2050, 8810, 1505, 1896, 8809, 4954, 5195, 5205, 8924, 8832, 8830, 2]
+// Dependencies: [32, 19, 6735, 4806, 21, 4945, 1128, 558, 576, 2050, 8822, 1505, 1896, 8821, 4954, 5195, 5205, 8936, 8844, 8842, 2]
 
-// Module 8935 (EditGuildEventDetails)
+// Module 8947 (EditGuildEventDetails)
 import intl8 from "intl" /* 1128 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1896 */;
 import _modDef2050 from "module_2050" /* 2050 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4806 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4954 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6732 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8809 */;
-import ScheduleUtils from "ScheduleUtils" /* 8810 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6735 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8821 */;
+import ScheduleUtils from "ScheduleUtils" /* 8822 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -538,7 +538,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
   let name;
   let scheduledStartTime;
   let tmp12;
-  const f100956 = () => {
+  const f101057 = () => {
     const obj = ScheduleUtils;
     return obj.recurrenceRuleToOption(_modDef2050(scheduledStartTime), recurrenceRule);
   };
@@ -568,8 +568,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildE
     }
     return addResult;
   }, items1);
-  [c7, c8] = recurrenceRule(memo.useState(f100956), 2);
-  const tmp4 = recurrenceRule(memo.useState(f100956), 2);
+  [c7, c8] = recurrenceRule(memo.useState(f101057), 2);
+  const tmp4 = recurrenceRule(memo.useState(f101057), 2);
   const memo2 = memo.useMemo(() => onChange(scheduledEndTime[9])(), []);
   const items2 = [memo];
   const memo3 = memo.useMemo(() => {

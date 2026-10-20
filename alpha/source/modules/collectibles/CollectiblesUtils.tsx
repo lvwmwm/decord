@@ -1,10 +1,10 @@
-// Module ID: 7608
-// Function ID: 7609
+// Module ID: 7611
+// Function ID: 7612
 // Name: CollectiblesUtils
-// Dependencies: [7601, 1993, 7602, 7603, 7609, 1089, 1087, 1098, 2054, 1398, 1400, 7285, 1384, 1995, 12, 1128, 7607, 2]
+// Dependencies: [7604, 1993, 7605, 7606, 7612, 1089, 1087, 1098, 2054, 1398, 1400, 7288, 1384, 1995, 12, 1128, 7610, 2]
 // Exports: canActionOnProduct, extendVariantsProducts, extractPriceByPurchaseTypes, getAnalyticsShopDiscountSource, getAssetDisplayConfig, getAssetForAvatarDecorationProduct, getAvatarDecorations, getAvatarDecorationsFromCategories, getAvatarDecorationsFromPurchases, getBundleItemsPriceSum, getCollectibleTypeLabel, getCollectiblesItemTypeForDisplay, getCollectiblesPrice, getCollectiblesProductPriceComparisons, getDaysRemaining, getDefaultPriceSetAssignmentPurchaseType, getFormattedPriceForCollectiblesProduct, getLogoSize, getNameplates, getNameplatesFromCategories, getNameplatesFromPurchases, getPriceForCollectiblesProduct, getProductDiscount, getProductTypeNameForLogging, getProductsFromCategories, getProfileEffects, getProfileEffectsFromCategories, getProfileEffectsFromPurchases, getProfileFrames, getProfileFramesFromCategories, getProfileFramesFromPurchases, getShopDiscountSource, getStrikeThroughPriceAmountForCollectiblesProduct, groupProfileEffects, isBundleProduct, isCollectiblesGiftCode, isFreeCollectiblesProduct, isPremiumCollectiblesProduct, isPremiumCollectiblesPurchase, isProductNew, removeRewardProductsFilter, shouldHideGiftingForCurrency, shouldShowLimitedTimeBadge, sortProductsByPrice
 
-// Module 7608 (CollectiblesUtils)
+// Module 7611 (CollectiblesUtils)
 import _mod12 from "module_12" /* 12 */;
 import Constants2 from "Constants" /* 1098 */;
 import intl5 from "intl" /* 1128 */;
@@ -13,12 +13,12 @@ import PerksStateUtils from "PerksStateUtils" /* 1398 */;
 import NameplateRecord from "NameplateRecord" /* 1993 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2054 */;
-import PriceUtils from "PriceUtils" /* 7285 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7601 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7602 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7603 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7607 */;
-import ShopAssetConfigRecord from "ShopAssetConfigRecord" /* 7609 */;
+import PriceUtils from "PriceUtils" /* 7288 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7604 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7605 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7606 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7610 */;
+import ShopAssetConfigRecord from "ShopAssetConfigRecord" /* 7612 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let closure_12;
 let map1;
 let metroImportAll;
 let unpackModuleId;
-const f97980 = (arr, type) => {
+const f98081 = (arr, type) => {
   let closure_0 = type;
   if (null != type) {
     const tmp = _require;
@@ -103,7 +103,7 @@ function getItemRecordsFromCategories(arr, PROFILE_EFFECT) {
   items = [...arr.values()];
   const flatMapResult = obj.flatMap(items, "products");
   obj2 = _mod12;
-  const uniqByResult = obj2.uniqBy(flatMapResult.reduce(f97980, []), "storeListingId");
+  const uniqByResult = obj2.uniqBy(flatMapResult.reduce(f98081, []), "storeListingId");
   if (PROFILE_EFFECT === CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION) {
     let tmpResult = _mod12;
     const flatMapResult1 = tmpResult.flatMap(uniqByResult, "items");
@@ -551,7 +551,7 @@ export const isFreeCollectiblesProduct = function isFreeCollectiblesProduct(prod
   return 0 === amount;
 };
 export const extendVariantsProducts = function extendVariantsProducts(items) {
-  return items.reduce(f97980, []);
+  return items.reduce(f98081, []);
 };
 export const getProductsFromCategories = function getProductsFromCategories(arr, arg1) {
   items = [...arr.values()];
@@ -561,7 +561,7 @@ export const getProductsFromCategories = function getProductsFromCategories(arr,
   const uniqBy = _mod12.uniqBy;
   _mod12;
   if (arg1) {
-    reduced = flatMapResult.reduce(f97980, []);
+    reduced = flatMapResult.reduce(f98081, []);
   }
   return uniqBy(reduced, "storeListingId");
 };

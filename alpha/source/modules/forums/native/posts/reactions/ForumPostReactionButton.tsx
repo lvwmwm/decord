@@ -1,9 +1,9 @@
-// Module ID: 10790
-// Function ID: 10791
+// Module ID: 10801
+// Function ID: 10802
 // Name: ForumPostReactionButton
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 10791, 1128, 5195, 6856, 5186, 9698, 10788, 4776, 9899, 1105, 1417, 4892, 7175, 10807, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 10802, 1128, 5195, 6859, 5186, 9711, 10799, 4776, 9911, 1105, 1417, 4892, 7178, 10818, 2]
 
-// Module 10790 (ForumPostReactionButton)
+// Module 10801 (ForumPostReactionButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,13 +13,13 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import ReactionUtils from "ReactionUtils" /* 4892 */;
 import MessageReactionsTypes from "MessageReactionsTypes" /* 5186 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import Pressables from "Pressables" /* 6856 */;
-import EmojiDefault from "Emoji" /* 7175 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9698 */;
-import useEmojiColorPalette from "useEmojiColorPalette" /* 9899 */;
-import useReactionPermissionsDefault from "useReactionPermissions" /* 10788 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10791 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 10807 */;
+import Pressables from "Pressables" /* 6859 */;
+import EmojiDefault from "Emoji" /* 7178 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9711 */;
+import useEmojiColorPalette from "useEmojiColorPalette" /* 9911 */;
+import useReactionPermissionsDefault from "useReactionPermissions" /* 10799 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10802 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 10818 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;

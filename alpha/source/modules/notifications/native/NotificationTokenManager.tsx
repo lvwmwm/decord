@@ -1,9 +1,9 @@
-// Module ID: 15499
-// Function ID: 15500
+// Module ID: 15517
+// Function ID: 15518
 // Name: NotificationTokenManager
-// Dependencies: [17, 1261, 13111, 14747, 502, 15500, 1087, 2004, 584, 11044, 15503, 1257, 1128, 2854, 1384, 15504, 1267, 13110, 2]
+// Dependencies: [17, 1261, 13129, 14765, 502, 15518, 1087, 2004, 584, 11056, 15521, 1257, 1128, 2854, 1384, 15522, 1267, 13128, 2]
 
-// Module 15499 (NotificationTokenManager)
+// Module 15517 (NotificationTokenManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
@@ -12,14 +12,14 @@ import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import _modDef2854 from "module_2854" /* 2854 */;
-import PushNotificationDefault from "PushNotification" /* 11044 */;
-import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 13110 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15500 */;
-import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 15503 */;
-import react_nativeDefault from "react-native" /* 15504 */;
+import PushNotificationDefault from "PushNotification" /* 11056 */;
+import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 13128 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15518 */;
+import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 15521 */;
+import react_nativeDefault from "react-native" /* 15522 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
-import MultiAccountStore from "MultiAccountStore" /* 13111 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 14747 */;
+import MultiAccountStore from "MultiAccountStore" /* 13129 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 14765 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;

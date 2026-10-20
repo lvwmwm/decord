@@ -1,11 +1,11 @@
-// Module ID: 6790
-// Function ID: 6791
+// Module ID: 6793
+// Function ID: 6794
 // Name: MemberVerificationAlertCancelPending
-// Dependencies: [109, 19, 21, 558, 576, 6791, 1128, 5205, 6787, 2]
+// Dependencies: [109, 19, 21, 558, 576, 6794, 1128, 5205, 6790, 2]
 
-// Module 6790 (MemberVerificationAlertCancelPending)
-import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 6787 */;
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6791 */;
+// Module 6793 (MemberVerificationAlertCancelPending)
+import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 6790 */;
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6794 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -238,7 +238,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVeri
     const result = obj.removeGuildJoinRequest(guildId);
   }, items);
   let obj = { header: intl.string(guildId(1128).t.KYiN1Q), subtitle: subtitleText, buttons: tmp8(tmp9, obj2) };
-  const tmp5 = onClose(6787);
+  const tmp5 = onClose(6790);
   const merged1 = Object.assign(merged);
   intl = guildId(1128).intl;
   if (subtitleText == null) {

@@ -1,24 +1,24 @@
-// Module ID: 11144
-// Function ID: 11145
+// Module ID: 11155
+// Function ID: 11156
 // Name: OptInChannelsUtils
-// Dependencies: [19, 4800, 7155, 6719, 4890, 1392, 1087, 4807, 7589, 6653, 7270, 6775, 5565, 7156, 7583, 11145, 7154, 1114, 558, 576, 4970, 4784, 504, 1128, 2050, 11, 2]
+// Dependencies: [19, 4800, 7158, 6722, 4890, 1392, 1087, 4807, 7592, 6656, 7273, 6778, 5565, 7159, 7586, 11156, 7157, 1114, 558, 576, 4970, 4784, 504, 1128, 2050, 11, 2]
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useFilterCategoriesByQuery
 
-// Module 11144 (OptInChannelsUtils)
+// Module 11155 (OptInChannelsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef2050 from "module_2050" /* 2050 */;
 import useChannelName from "useChannelName" /* 5565 */;
-import ReadStateConstants from "ReadStateConstants" /* 6653 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6775 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7154 */;
-import ChannelListState from "ChannelListState" /* 7583 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7589 */;
-import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 11145 */;
+import ReadStateConstants from "ReadStateConstants" /* 6656 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6778 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7157 */;
+import ChannelListState from "ChannelListState" /* 7586 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7592 */;
+import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 11156 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7155 */;
-import ReadStateStore from "ReadStateStore" /* 6719 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7158 */;
+import ReadStateStore from "ReadStateStore" /* 6722 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;

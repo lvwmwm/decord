@@ -1,10 +1,34 @@
 // Module ID: 6909
 // Function ID: 6910
 // Name: react
-// Dependencies: [6906]
+// Dependencies: [19]
+// Exports: getNamedContext
 
 // Module 6909 (react)
-import react from "react" /* 6906 */;
+import react from "react" /* 19 */;
 
+let __react_navigation__elements_contexts = "__react_navigation__elements_contexts";
+__react_navigation__elements_contexts = globalThis.__react_navigation__elements_contexts;
+let _globalThis = globalThis;
+if (__react_navigation__elements_contexts == null) {
+  const _Map = Map;
+  const self = this;
+  const self2 = this;
+  __react_navigation__elements_contexts = new Map();
+}
+_globalThis.__react_navigation__elements_contexts = __react_navigation__elements_contexts;
 
-export const HeaderShownContext = react.getNamedContext("HeaderShownContext", false);
+export const getNamedContext = function getNamedContext(FrameContext, arg1) {
+  const obj = globalThis[__react_navigation__elements_contexts];
+  let value = obj.get(FrameContext);
+  const tmp = __react_navigation__elements_contexts;
+  if (!value) {
+    const context = react.createContext(arg1);
+    context.displayName = FrameContext;
+    const _globalThis = globalThis;
+    const obj2 = globalThis[tmp];
+    const result = obj2.set(FrameContext, context);
+    value = context;
+  }
+  return value;
+};

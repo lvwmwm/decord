@@ -1,12 +1,12 @@
-// Module ID: 11083
-// Function ID: 11084
+// Module ID: 11095
+// Function ID: 11096
 // Name: conjureSettingsConnection
-// Dependencies: [5, 584, 11077, 2]
+// Dependencies: [5, 584, 11089, 2]
 // Exports: requestProjectRebuild, submitProjectSettings
 
-// Module 11083 (conjureSettingsConnection)
+// Module 11095 (conjureSettingsConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 11077 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 11089 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

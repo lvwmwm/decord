@@ -1,9 +1,9 @@
-// Module ID: 18901
-// Function ID: 18902
+// Module ID: 18924
+// Function ID: 18925
 // Name: EnableCommunitySharedStyles
 // Dependencies: [17, 4945, 2]
 
-// Module 18901 (EnableCommunitySharedStyles)
+// Module 18924 (EnableCommunitySharedStyles)
 import react_native from "react-native" /* 17 */;
 import createStyles from "createStyles" /* 4945 */;
 import size from "module_2" /* 2 */;

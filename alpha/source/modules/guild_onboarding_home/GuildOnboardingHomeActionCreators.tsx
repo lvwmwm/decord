@@ -1,10 +1,10 @@
-// Module ID: 12966
-// Function ID: 12967
+// Module ID: 12984
+// Function ID: 12985
 // Name: GuildOnboardingHomeActionCreators
-// Dependencies: [5, 4853, 4800, 7271, 8245, 1087, 584, 1297, 12967, 1267, 5669, 11, 2]
+// Dependencies: [5, 4853, 4800, 7274, 8249, 1087, 584, 1297, 12985, 1267, 5669, 11, 2]
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel
 
-// Module 12966 (GuildOnboardingHomeActionCreators)
+// Module 12984 (GuildOnboardingHomeActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -13,8 +13,8 @@ import transitionToChannel from "transitionToChannel" /* 5669 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ImpersonateStore from "ImpersonateStore" /* 4853 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7271 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8245 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7274 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8249 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

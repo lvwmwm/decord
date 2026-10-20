@@ -1,16 +1,16 @@
-// Module ID: 12667
-// Function ID: 12668
+// Module ID: 12684
+// Function ID: 12685
 // Name: AppealIngestionExternalLink
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5622, 5195, 1202, 8062, 6856, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5622, 5195, 1202, 8066, 6859, 2]
 
-// Module 12667 (AppealIngestionExternalLink)
+// Module 12684 (AppealIngestionExternalLink)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import LinkingDefault from "Linking" /* 5622 */;
-import Pressables from "Pressables" /* 6856 */;
-import AssetRegistry from "AssetRegistry" /* 8062 */;
+import Pressables from "Pressables" /* 6859 */;
+import AssetRegistry from "AssetRegistry" /* 8066 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -53,7 +53,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
         tmp6 = cResult[5];
       }
       if (cResult[6] !== tmp4.chevron.color) {
-        const obj2 = { source: tmp(8062), color: tmp4.chevron.color };
+        const obj2 = { source: tmp(8066), color: tmp4.chevron.color };
         const Icon = tmp(1202).Icon;
         const tmp11 = closure_4(Icon, obj2);
         cResult[6] = tmp4.chevron.color;
@@ -78,7 +78,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngest
             }
           }
           const obj3 = { style: tmp4.childButton, accessibilityRole: "button", onPress: tmp5, children: tmp12 };
-          const tmp18 = closure_4(tmp(6856).PressableHighlight, obj3);
+          const tmp18 = closure_4(tmp(6859).PressableHighlight, obj3);
           cResult[12] = tmp5;
           cResult[13] = tmp4.childButton;
           cResult[14] = tmp12;

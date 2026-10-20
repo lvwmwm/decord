@@ -1,12 +1,12 @@
-// Module ID: 13863
-// Function ID: 13864
+// Module ID: 13881
+// Function ID: 13882
 // Name: ForumExplicitMediaAlert
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1128, 5195, 5205, 12681, 5933, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1128, 5195, 5205, 12698, 5936, 2]
 
-// Module 13863 (ForumExplicitMediaAlert)
+// Module 13881 (ForumExplicitMediaAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ExplicitMediaActionCreators from "ExplicitMediaActionCreators" /* 12681 */;
+import ExplicitMediaActionCreators from "ExplicitMediaActionCreators" /* 12698 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;

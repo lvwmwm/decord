@@ -1,12 +1,12 @@
-// Module ID: 12106
-// Function ID: 12107
+// Module ID: 12121
+// Function ID: 12122
 // Name: EditPollCreationImageAltTextModalActionCreators
-// Dependencies: [6620, 12107, 2002, 2]
+// Dependencies: [6623, 12122, 2002, 2]
 // Exports: closeEditPollCreationImageAltTextModal, openEditPollCreationImageAltTextModal
 
-// Module 12106 (EditPollCreationImageAltTextModalActionCreators)
+// Module 12121 (EditPollCreationImageAltTextModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "edit-poll-creation-image-alt-text-modal";
@@ -14,7 +14,7 @@ const result = size.fileFinishedImporting("modules/polls/native/EditPollCreation
 
 export const openEditPollCreationImageAltTextModal = function openEditPollCreationImageAltTextModal(merged) {
   const obj = ModalActionCreatorsDefault;
-  obj.pushLazy(asyncRequire(12107, dependencyMap.paths), merged, c3);
+  obj.pushLazy(asyncRequire(12122, dependencyMap.paths), merged, c3);
 };
 export const closeEditPollCreationImageAltTextModal = function closeEditPollCreationImageAltTextModal() {
   const obj = ModalActionCreatorsDefault;

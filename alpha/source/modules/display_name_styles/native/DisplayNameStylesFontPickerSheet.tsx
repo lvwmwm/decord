@@ -1,15 +1,15 @@
-// Module ID: 16431
-// Function ID: 16432
+// Module ID: 16450
+// Function ID: 16451
 // Name: DisplayNameStylesFontPickerSheet
-// Dependencies: [32, 19, 17, 1098, 21, 4945, 587, 558, 576, 8584, 16426, 16428, 1412, 1409, 5173, 5171, 1128, 2918, 16432, 5205, 15666, 9142, 5195, 5932, 5648, 5226, 2]
+// Dependencies: [32, 19, 17, 1098, 21, 4945, 587, 558, 576, 8596, 16445, 16447, 1412, 1409, 5173, 5171, 1128, 2918, 16451, 5205, 15685, 9154, 5195, 5935, 5648, 5226, 2]
 
-// Module 16431 (DisplayNameStylesFontPickerSheet)
+// Module 16450 (DisplayNameStylesFontPickerSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import _modDef2918 from "module_2918" /* 2918 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import HapticUtils from "HapticUtils" /* 5173 */;
-import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 16432 */;
+import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 16451 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -145,11 +145,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   importDefault = tmp;
   let tmp2 = onSelectFont;
   let tmp3 = dependencyMap;
-  let obj = onSelectFont(8584);
+  let obj = onSelectFont(8596);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  let obj2 = onSelectFont(16426);
+  let obj2 = onSelectFont(16445);
   const visibleFontOrder = obj2.useVisibleFontOrder();
-  let obj3 = onSelectFont(16428);
+  let obj3 = onSelectFont(16447);
   const displayNameStylesNewFonts = obj3.useDisplayNameStylesNewFonts(visibleFontOrder);
   ({ dotFontIds: c2, dismissFontDot: c3 } = displayNameStylesNewFonts);
   [first, closure_5] = first.useState(selectedFontId);
@@ -245,7 +245,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
       return closure_1_8(tmp9, obj, item);
     })
   };
-  const Stack = onSelectFont(5932).Stack;
+  const Stack = onSelectFont(5935).Stack;
   items1 = [closure_8(Stack, obj10), ];
   if (tmp15Result) {
     tmp15Result = hasNonLatinLettersResult;

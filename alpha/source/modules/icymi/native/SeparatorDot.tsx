@@ -1,9 +1,9 @@
-// Module ID: 17685
-// Function ID: 17686
+// Module ID: 17704
+// Function ID: 17705
 // Name: SeparatorDot
 // Dependencies: [19, 17, 21, 4945, 587, 558, 576, 2]
 
-// Module 17685 (SeparatorDot)
+// Module 17704 (SeparatorDot)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

@@ -1,19 +1,15 @@
 // Module ID: 12501
 // Function ID: 12502
-// Dependencies: [12462, 12450, 12485, 12409]
+// Dependencies: [12479, 12467, 12502]
 
 // Module 12501
-import _mod12409 from "module_12409" /* 12409 */;
-import module_12462 from "module_12462" /* 12462 */;
+import _mod12502 from "module_12502" /* 12502 */;
+import module_12479 from "module_12479" /* 12479 */;
 
-let filterKeys;
 
-let c2 = "_sentryBundlerPluginAppKey:";
-
-export const thirdPartyErrorFilterIntegration = module_12462.defineIntegration((arg0) => {
-  const behaviour = arg0;
+export const moduleMetadataIntegration = module_12479.defineIntegration(() => {
   let obj = {
-    name: "ThirdPartyErrorsFilter",
+    name: "ModuleMetadata",
     setup(on) {
       const options = on;
       on.on("beforeEnvelope", (arg0) => {
@@ -36,53 +32,10 @@ export const thirdPartyErrorFilterIntegration = module_12462.defineIntegration((
       on.on("applyFrameMetadata", (type) => {
         if (!type.type) {
           const stackParser = options.getOptions().stackParser;
-          const obj = options(dependencyMap[2]);
+          const obj = _mod12502;
           const result = obj.addMetadataToStackFrames(stackParser, type);
         }
       });
-    },
-    processEvent(tags) {
-      const obj = _mod12409;
-      const framesFromEvent = obj.getFramesFromEvent(tags);
-      let mapped;
-      if (framesFromEvent) {
-        let found = framesFromEvent.filter((filename) => filename.filename);
-        mapped = found.map((module_metadata) => {
-          let length;
-          let mapped;
-          if (module_metadata.module_metadata) {
-            const _Object = Object;
-            const keys = Object.keys(module_metadata.module_metadata);
-            const found = keys.filter((item) => item.startsWith(length));
-            mapped = found.map((arr) => arr.slice(length.length));
-          } else {
-            mapped = [];
-          }
-          return mapped;
-        });
-      }
-      if (mapped) {
-        let str2;
-        if ("drop-error-if-contains-third-party-frames" === behaviour.behaviour) {
-          str2 = "some";
-        } else {
-          str2 = "every";
-        }
-        if (mapped[str2]((arr) => !arr.some((item) => {
-          filterKeys = filterKeys.filterKeys;
-          return filterKeys.includes(item);
-        }))) {
-          if ("drop-error-if-contains-third-party-frames" !== behaviour.behaviour) {
-            if ("drop-error-if-exclusively-contains-third-party-frames" !== behaviour.behaviour) {
-              const obj2 = { third_party_code: true };
-              const merged = Object.assign(tags.tags);
-              tags.tags = obj2;
-            }
-          }
-          return null;
-        }
-      }
-      return tags;
     }
   };
   return obj;

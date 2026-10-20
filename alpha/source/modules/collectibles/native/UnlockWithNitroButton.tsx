@@ -1,17 +1,17 @@
-// Module ID: 14280
-// Function ID: 14281
+// Module ID: 14298
+// Function ID: 14299
 // Name: UnlockWithNitroButton
-// Dependencies: [19, 7470, 7611, 1089, 21, 558, 576, 7465, 504, 14266, 1128, 5195, 9343, 5206, 2]
+// Dependencies: [19, 7473, 7614, 1089, 21, 558, 576, 7468, 504, 14284, 1128, 5195, 9355, 5206, 2]
 
-// Module 14280 (UnlockWithNitroButton)
+// Module 14298 (UnlockWithNitroButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
-import ProductIds from "ProductIds" /* 7465 */;
-import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 14266 */;
+import ProductIds from "ProductIds" /* 7468 */;
+import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 14284 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 7470 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7611 */;
+import IAPStore from "IAPStore" /* 7473 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7614 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let tmp;
 const intl2 = tmp(1128);
 const Text_Text = tmp(5195);
 const BaseTextButton2 = tmp(5206);
-const NitroWheelIcon = tmp(9343);
+const NitroWheelIcon = tmp(9355);
 const ShopCtaEnum = CollectiblesShopConstants.ShopCtaEnum;
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnlockWithNitroButton(text) {
@@ -79,7 +79,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnlockWith
     }
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp20 = jsx(tmp(9343).NitroWheelIcon, { size: "sm", color: "white" });
+      const tmp20 = jsx(tmp(9355).NitroWheelIcon, { size: "sm", color: "white" });
       cResult[7] = tmp20;
       tmp18 = tmp20;
     } else {

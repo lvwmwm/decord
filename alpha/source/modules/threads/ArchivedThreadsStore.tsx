@@ -1,9 +1,9 @@
-// Module ID: 8232
-// Function ID: 8233
+// Module ID: 8236
+// Function ID: 8237
 // Name: ArchivedThreadsStore
-// Dependencies: [32, 4804, 4800, 6719, 4882, 4809, 8233, 12, 4811, 11, 7350, 504, 584, 2]
+// Dependencies: [32, 4804, 4800, 6722, 4882, 4809, 8237, 12, 4811, 11, 7353, 504, 584, 2]
 
-// Module 8232 (ArchivedThreadsStore)
+// Module 8236 (ArchivedThreadsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -11,11 +11,11 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelRecord from "ChannelRecord" /* 4804 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 4809 */;
 import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 4811 */;
-import ForumUtils from "ForumUtils" /* 7350 */;
-import Tracking from "Tracking" /* 8233 */;
+import ForumUtils from "ForumUtils" /* 7353 */;
+import Tracking from "Tracking" /* 8237 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
-import ReadStateStore from "ReadStateStore" /* 6719 */;
+import ReadStateStore from "ReadStateStore" /* 6722 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4882 */;
 import size from "module_2" /* 2 */;
 

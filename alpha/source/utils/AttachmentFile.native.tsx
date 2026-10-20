@@ -1,14 +1,14 @@
-// Module ID: 8097
-// Function ID: 8098
+// Module ID: 8101
+// Function ID: 8102
 // Name: AttachmentFile
-// Dependencies: [5, 3, 38, 8088, 8098, 8089, 2]
+// Dependencies: [5, 3, 38, 8092, 8102, 8093, 2]
 // Exports: cancelGetAttachmentFile, fileIsInAppDir, getAttachmentFile
 
-// Module 8097 (AttachmentFile)
+// Module 8101 (AttachmentFile)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import UploadPlatform from "UploadPlatform" /* 8088 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8098 */;
+import UploadPlatform from "UploadPlatform" /* 8092 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8102 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -193,7 +193,7 @@ export const fileIsInAppDir = function fileIsInAppDir(uri) {
     const tmp2 = require;
     if (startsWithResult) {
       const startsWith = replaced.startsWith;
-      const tmp2Result = tmp2(8098);
+      const tmp2Result = tmp2(8102);
       startsWithResult = startsWith(tmp2Result.getAppDir());
     }
     return startsWithResult;

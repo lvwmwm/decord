@@ -1,9 +1,9 @@
-// Module ID: 18939
-// Function ID: 18940
+// Module ID: 18962
+// Function ID: 18963
 // Name: Placeholder
 // Dependencies: [19, 17, 21, 4945, 558, 576, 2]
 
-// Module 18939 (Placeholder)
+// Module 18962 (Placeholder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

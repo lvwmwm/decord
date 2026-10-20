@@ -1,15 +1,15 @@
-// Module ID: 12689
-// Function ID: 12690
+// Module ID: 12706
+// Function ID: 12707
 // Name: FamilyCenterDataConfirmation
-// Dependencies: [19, 21, 558, 576, 5195, 6851, 6935, 5932, 1128, 2526, 12690, 5634, 9560, 8504, 12691, 7887, 12693, 9887, 5653, 12694, 7434, 6879, 2]
+// Dependencies: [19, 21, 558, 576, 5195, 6854, 6938, 5935, 1128, 2526, 12707, 5634, 9573, 8508, 12708, 7891, 12710, 9899, 5653, 12711, 7437, 6882, 2]
 
-// Module 12689 (FamilyCenterDataConfirmation)
+// Module 12706 (FamilyCenterDataConfirmation)
 import react2 from "react" /* 576 */;
 import _modDef2526 from "module_2526" /* 2526 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import Stack_Stack from "Stack/Stack" /* 5932 */;
-import TableRow2 from "TableRow" /* 6851 */;
-import TableRowGroup2 from "TableRowGroup" /* 6935 */;
+import Stack_Stack from "Stack/Stack" /* 5935 */;
+import TableRow2 from "TableRow" /* 6854 */;
+import TableRowGroup2 from "TableRowGroup" /* 6938 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -21,16 +21,16 @@ let tmp;
 const intl37 = tmp(1128);
 const UserPlusIcon = tmp(5634);
 const ClockIcon = tmp(5653);
-const XSmallIcon = tmp(6879);
-const SettingsIcon = tmp(7434);
-const CreditCardIcon = tmp(7887);
-const ForumIcon = tmp(8504);
-const ServerIcon = tmp(9560);
-const FlagIcon = tmp(9887);
-const useAgeSpecificText12 = tmp(12690);
-const PhoneIcon = tmp(12691);
-const GiftIcon = tmp(12693);
-const PiggyBankIcon = tmp(12694);
+const XSmallIcon = tmp(6882);
+const SettingsIcon = tmp(7437);
+const CreditCardIcon = tmp(7891);
+const ForumIcon = tmp(8508);
+const ServerIcon = tmp(9573);
+const FlagIcon = tmp(9899);
+const useAgeSpecificText12 = tmp(12707);
+const PhoneIcon = tmp(12708);
+const GiftIcon = tmp(12710);
+const PiggyBankIcon = tmp(12711);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RowGroup(arg0) {

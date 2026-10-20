@@ -1,19 +1,19 @@
-// Module ID: 11274
-// Function ID: 11275
+// Module ID: 11285
+// Function ID: 11286
 // Name: getPrimaryAppCommand
-// Dependencies: [5, 19, 4800, 9564, 2000, 9570, 558, 576, 9568, 5564, 2]
+// Dependencies: [5, 19, 4800, 9577, 2000, 9583, 558, 576, 9581, 5564, 2]
 // Exports: default, isPrimaryAppCommandUsableInAppDM
 
-// Module 11274 (getPrimaryAppCommand)
+// Module 11285 (getPrimaryAppCommand)
 import react2 from "react" /* 576 */;
 import Server from "Server" /* 2000 */;
 import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5564 */;
-import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9568 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9570 */;
+import ApplicationCommandIndexActionCreators from "ApplicationCommandIndexActionCreators" /* 9581 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 9583 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9564 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9577 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

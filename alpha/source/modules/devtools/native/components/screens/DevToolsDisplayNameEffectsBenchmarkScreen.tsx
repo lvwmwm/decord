@@ -1,9 +1,9 @@
-// Module ID: 16838
-// Function ID: 16839
+// Module ID: 16857
+// Function ID: 16858
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1392, 1410, 21, 1411, 10586, 1128, 10582, 2918, 4945, 587, 558, 576, 5195, 5205, 5932, 10579, 10580, 504, 16839, 13873, 6851, 6935, 6323, 2]
+// Dependencies: [32, 19, 17, 1392, 1410, 21, 1411, 10597, 1128, 10593, 2918, 4945, 587, 558, 576, 5195, 5205, 5935, 10590, 10591, 504, 16858, 13891, 6854, 6938, 6326, 2]
 
-// Module 16838 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 16857 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
@@ -11,9 +11,9 @@ import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1410 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1411 */;
 import _modDef2918 from "module_2918" /* 2918 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10579 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10582 */;
-import _mod10586 from "module_10586" /* 10586 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10590 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10593 */;
+import _mod10597 from "module_10597" /* 10597 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -33,8 +33,8 @@ let obj2;
 let obj3;
 let tmp;
 const Text_Text = tmp(5195);
-const Stack_Stack = tmp(5932);
-const types = tmp(10580);
+const Stack_Stack = tmp(5935);
+const types = tmp(10591);
 function effectName(arg0) {
   const intl = intl2.intl;
   const string = intl.string;
@@ -485,7 +485,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   const memo = first1.useMemo(() => items1.find((key) => key.key === first2).name, items2);
   const items3 = [memo];
   const memo1 = first1.useMemo(() => {
-    const obj = _mod10586;
+    const obj = _mod10597;
     return obj.splitGraphemes(memo).length;
   }, items3);
   const items4 = [first];
@@ -612,7 +612,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
               const length = String(Math.max(run.params.rowCount - 1, 0)).length;
               const StringResult = String(arg1);
               const padStartResult = StringResult.padStart(length, "0");
-              const obj3 = _mod10586;
+              const obj3 = _mod10597;
               const splitGraphemesResult = obj3.splitGraphemes(name);
               sum = padStartResult;
               const tmp = metroImportAll;

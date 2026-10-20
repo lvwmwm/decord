@@ -1,14 +1,14 @@
-// Module ID: 8968
-// Function ID: 8969
+// Module ID: 8980
+// Function ID: 8981
 // Name: CalendarIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8969, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8981, 5630, 2]
 
-// Module 8968 (CalendarIcon)
+// Module 8980 (CalendarIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 8969 */;
+import AssetRegistry from "AssetRegistry" /* 8981 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

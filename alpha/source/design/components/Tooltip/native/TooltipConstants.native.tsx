@@ -1,10 +1,10 @@
-// Module ID: 9761
-// Function ID: 9762
+// Module ID: 9773
+// Function ID: 9774
 // Name: TooltipConstants
 // Dependencies: [5208, 2]
 // Exports: tooltipEnterExitAnimation
 
-// Module 9761 (TooltipConstants)
+// Module 9773 (TooltipConstants)
 import spring from "spring" /* 5208 */;
 import size from "module_2" /* 2 */;
 

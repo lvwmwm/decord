@@ -1,17 +1,17 @@
-// Module ID: 18711
-// Function ID: 18712
+// Module ID: 18734
+// Function ID: 18735
 // Name: NewTermsModal
-// Dependencies: [5, 32, 19, 17, 4794, 1087, 21, 4945, 587, 7236, 1128, 6616, 558, 576, 1633, 6878, 5927, 8595, 1275, 9279, 5195, 5205, 8962, 8953, 2]
+// Dependencies: [5, 32, 19, 17, 4794, 1087, 21, 4945, 587, 7239, 1128, 6619, 558, 576, 1633, 6881, 5930, 8607, 1275, 9291, 5195, 5205, 8974, 8965, 2]
 
-// Module 18711 (NewTermsModal)
+// Module 18734 (NewTermsModal)
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1128 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6616 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7236 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8953 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8962 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9279 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6619 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7239 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8965 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8974 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9291 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -112,8 +112,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewTermsModa
   }
   [tmp11, importDefault] = _slicedToArray(react.useState(false), 2);
   const tmp10 = _slicedToArray(react.useState(false), 2);
-  const tmpResult = tmp(6878);
-  tmpResult.useNavigatorBackPressHandler(tmp(5927).BackPressHandler.minimize);
+  const tmpResult = tmp(6881);
+  tmpResult.useNavigatorBackPressHandler(tmp(5930).BackPressHandler.minimize);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp14 = _asyncToGenerator;
     required_action = _asyncToGenerator(async (arg0, value) => {
@@ -490,8 +490,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewTermsModa
   const bottom = rect.bottom;
   const memo = react.useMemo(() => action.getAction(), []);
   [first, importDefault] = react.useState(false);
-  let obj = memo(6878);
-  obj.useNavigatorBackPressHandler(memo(5927).BackPressHandler.minimize);
+  let obj = memo(6881);
+  obj.useNavigatorBackPressHandler(memo(5930).BackPressHandler.minimize);
   dependencyMap = react.useCallback(_asyncToGenerator(async (arg0, value) => {
     let closure_0;
     if (c3 === 2) {

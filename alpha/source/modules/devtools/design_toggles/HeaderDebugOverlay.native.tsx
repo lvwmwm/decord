@@ -1,13 +1,13 @@
-// Module ID: 6873
-// Function ID: 6874
+// Module ID: 6876
+// Function ID: 6877
 // Name: HeaderDebugOverlay
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 6874, 5195, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 6877, 5195, 2]
 
-// Module 6873 (HeaderDebugOverlay)
+// Module 6876 (HeaderDebugOverlay)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useDesignToggleDefault from "useDesignToggle" /* 6874 */;
+import useDesignToggleDefault from "useDesignToggle" /* 6877 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;

@@ -1,14 +1,14 @@
-// Module ID: 8061
-// Function ID: 8062
+// Module ID: 8065
+// Function ID: 8066
 // Name: Arrow
-// Dependencies: [19, 21, 4945, 587, 558, 576, 1202, 8062, 2]
+// Dependencies: [19, 21, 4945, 587, 558, 576, 1202, 8066, 2]
 
-// Module 8061 (Arrow)
+// Module 8065 (Arrow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8062 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8066 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

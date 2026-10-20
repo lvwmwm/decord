@@ -1,16 +1,16 @@
-// Module ID: 18991
-// Function ID: 18992
+// Module ID: 19014
+// Function ID: 19015
 // Name: GuildSettingsRoleSubscriptionContainer
-// Dependencies: [19, 17, 4822, 1087, 21, 4945, 558, 576, 504, 18969, 12101, 18942, 1128, 16300, 18983, 2]
+// Dependencies: [19, 17, 4822, 1087, 21, 4945, 558, 576, 504, 18992, 12116, 18965, 1128, 16319, 19006, 2]
 
-// Module 18991 (GuildSettingsRoleSubscriptionContainer)
+// Module 19014 (GuildSettingsRoleSubscriptionContainer)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12101 */;
-import GroupListingsFetchContext from "GroupListingsFetchContext" /* 16300 */;
-import WarningNoticeDefault from "WarningNotice" /* 18942 */;
-import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 18969 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18983 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12116 */;
+import GroupListingsFetchContext from "GroupListingsFetchContext" /* 16319 */;
+import WarningNoticeDefault from "WarningNotice" /* 18965 */;
+import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 18992 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 19006 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 4822 */;
@@ -229,7 +229,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
     tmp14 = closure_7(tmp9Result, obj2);
   } else if (null != requestRejectedNoticeText) {
     const obj3 = { notice: requestRejectedNoticeText };
-    tmp14 = closure_7(tmp9(18942), obj3);
+    tmp14 = closure_7(tmp9(18965), obj3);
   } else if (tmp13) {
     const obj4 = { notice: intl3.string(guildId(1128).t.MyJpJT) };
     const tmp9Result5 = WarningNoticeDefault;

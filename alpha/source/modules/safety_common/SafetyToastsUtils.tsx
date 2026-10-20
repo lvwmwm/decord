@@ -1,16 +1,16 @@
-// Module ID: 7367
-// Function ID: 7368
+// Module ID: 7370
+// Function ID: 7371
 // Name: SafetyToastsUtils
-// Dependencies: [4800, 1392, 7362, 5944, 4994, 1128, 3080, 2660, 2]
+// Dependencies: [4800, 1392, 7365, 5947, 4994, 1128, 3080, 2660, 2]
 // Exports: getSafetyToastTypeContent
 
-// Module 7367 (SafetyToastsUtils)
+// Module 7370 (SafetyToastsUtils)
 import intl19 from "intl" /* 1128 */;
 import _modDef2660 from "module_2660" /* 2660 */;
 import _modDef3080 from "module_3080" /* 3080 */;
 import UserUtilsDefault from "UserUtils" /* 4994 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5944 */;
-import Constants from "Constants" /* 7362 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5947 */;
+import Constants from "Constants" /* 7365 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;

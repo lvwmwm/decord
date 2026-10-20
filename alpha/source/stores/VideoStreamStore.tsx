@@ -1,9 +1,9 @@
-// Module ID: 6727
-// Function ID: 6728
+// Module ID: 6730
+// Function ID: 6731
 // Name: VideoStreamStore
 // Dependencies: [1087, 5680, 504, 584, 2]
 
-// Module 6727 (VideoStreamStore)
+// Module 6730 (VideoStreamStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;

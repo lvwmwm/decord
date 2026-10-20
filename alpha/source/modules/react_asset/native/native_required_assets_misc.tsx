@@ -1,9 +1,9 @@
-// Module ID: 19178
-// Function ID: 19179
+// Module ID: 19202
+// Function ID: 19203
 // Name: native_required_assets_misc
-// Dependencies: [1421, 1422, 1423, 1424, 1425, 1426, 1439, 1440, 1441, 1442, 1443, 1444, 1445, 1446, 19179, 19180, 19181, 19182, 19183, 19184, 19185, 2]
+// Dependencies: [1421, 1422, 1423, 1424, 1425, 1426, 1439, 1440, 1441, 1442, 1443, 1444, 1445, 1446, 19203, 19204, 19205, 19206, 19207, 19208, 19209, 2]
 
-// Module 19178 (native_required_assets_misc)
+// Module 19202 (native_required_assets_misc)
 import AssetRegistryDefault from "AssetRegistry" /* 1421 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 1422 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 1423 */;
@@ -18,13 +18,13 @@ import AssetRegistryDefault11 from "AssetRegistry" /* 1443 */;
 import AssetRegistryDefault12 from "AssetRegistry" /* 1444 */;
 import AssetRegistryDefault13 from "AssetRegistry" /* 1445 */;
 import AssetRegistryDefault14 from "AssetRegistry" /* 1446 */;
-import AssetRegistryDefault15 from "AssetRegistry" /* 19179 */;
-import AssetRegistryDefault16 from "AssetRegistry" /* 19180 */;
-import AssetRegistryDefault17 from "AssetRegistry" /* 19181 */;
-import AssetRegistryDefault18 from "AssetRegistry" /* 19182 */;
-import AssetRegistryDefault19 from "AssetRegistry" /* 19183 */;
-import AssetRegistryDefault20 from "AssetRegistry" /* 19184 */;
-import AssetRegistryDefault21 from "AssetRegistry" /* 19185 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 19203 */;
+import AssetRegistryDefault16 from "AssetRegistry" /* 19204 */;
+import AssetRegistryDefault17 from "AssetRegistry" /* 19205 */;
+import AssetRegistryDefault18 from "AssetRegistry" /* 19206 */;
+import AssetRegistryDefault19 from "AssetRegistry" /* 19207 */;
+import AssetRegistryDefault20 from "AssetRegistry" /* 19208 */;
+import AssetRegistryDefault21 from "AssetRegistry" /* 19209 */;
 import size from "module_2" /* 2 */;
 
 const obj = { DefaultAvatar0: AssetRegistryDefault, DefaultAvatar1: AssetRegistryDefault2, DefaultAvatar2: AssetRegistryDefault3, DefaultAvatar3: AssetRegistryDefault4, DefaultAvatar4: AssetRegistryDefault5, DefaultAvatar5: AssetRegistryDefault6, DefaultGroup0: AssetRegistryDefault7, DefaultGroup1: AssetRegistryDefault8, DefaultGroup2: AssetRegistryDefault9, DefaultGroup3: AssetRegistryDefault10, DefaultGroup4: AssetRegistryDefault11, DefaultGroup5: AssetRegistryDefault12, DefaultGroup6: AssetRegistryDefault13, DefaultGroup7: AssetRegistryDefault14, PoopDark: AssetRegistryDefault15, PoopLight: AssetRegistryDefault16, RoleSubscriptionBadge: AssetRegistryDefault17, RoleSubscriptionLanyard: AssetRegistryDefault18, RoleSubscriptionPurchaseCard: AssetRegistryDefault19, SummaryIndicatorEnd: AssetRegistryDefault20, SummaryIndicatorStart: AssetRegistryDefault21 };

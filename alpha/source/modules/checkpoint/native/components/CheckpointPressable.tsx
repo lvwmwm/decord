@@ -1,14 +1,14 @@
-// Module ID: 12809
-// Function ID: 12810
+// Module ID: 12826
+// Function ID: 12827
 // Name: CheckpointPressable
-// Dependencies: [109, 17, 5970, 21, 587, 4945, 558, 576, 2]
+// Dependencies: [109, 17, 5973, 21, 587, 4945, 558, 576, 2]
 
-// Module 12809 (CheckpointPressable)
+// Module 12826 (CheckpointPressable)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 5970 */;
+import CheckpointConstants from "CheckpointConstants" /* 5973 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

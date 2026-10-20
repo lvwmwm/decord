@@ -1,18 +1,18 @@
-// Module ID: 17583
-// Function ID: 17584
+// Module ID: 17602
+// Function ID: 17603
 // Name: NotificationCenterPermissionNudge
-// Dependencies: [32, 19, 17, 1087, 4797, 13108, 21, 4945, 587, 558, 576, 1267, 13109, 10667, 5195, 1128, 5205, 6879, 6856, 16573, 7442, 4784, 2]
+// Dependencies: [32, 19, 17, 1087, 4797, 13126, 21, 4945, 587, 558, 576, 1267, 13127, 10678, 5195, 1128, 5205, 6882, 6859, 16592, 7445, 4784, 2]
 
-// Module 17583 (NotificationCenterPermissionNudge)
+// Module 17602 (NotificationCenterPermissionNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16573 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16592 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13108 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13126 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -116,7 +116,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
   const container = tmp4.container;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-    const BellSlashIcon = tmp(10667).BellSlashIcon;
+    const BellSlashIcon = tmp(10678).BellSlashIcon;
     const tmp13 = closure_14(BellSlashIcon, obj2);
     cResult[5] = tmp13;
     tmp10 = tmp13;
@@ -184,7 +184,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
     if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
       const intl4 = tmp(1128).intl;
       const stringResult = intl4.string(onDismiss(1128).t.WAI6xu);
-      const tmp38 = closure_14(onDismiss(6879).XSmallIcon, { size: "sm", color: "icon-strong" });
+      const tmp38 = closure_14(onDismiss(6882).XSmallIcon, { size: "sm", color: "icon-strong" });
       cResult[16] = stringResult;
       cResult[17] = tmp38;
       tmp35 = tmp38;
@@ -195,7 +195,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
     }
     if (cResult[18] !== tmp9) {
       const obj9 = { onPress: tmp9, hitSlop: 8, accessibilityRole: "button", accessibilityLabel: tmp34, children: tmp35 };
-      const tmp41 = closure_14(onDismiss(6856).PressableHighlight, obj9);
+      const tmp41 = closure_14(onDismiss(6859).PressableHighlight, obj9);
       cResult[18] = tmp9;
       cResult[19] = tmp41;
       tmp39 = tmp41;
@@ -254,7 +254,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
   let obj = { style: tmp.container, children: items };
   let obj2 = { style: tmp.iconContainer, children: closure_14(BellSlashIcon, obj3) };
   obj3 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-  BellSlashIcon = onDismiss(10667).BellSlashIcon;
+  BellSlashIcon = onDismiss(10678).BellSlashIcon;
   items = [closure_14(View, obj2), , ];
   const obj4 = { style: tmp.contentContainer, children: items1 };
   const obj5 = { variant: "text-md/semibold", color: "text-default", children: intl.string(onDismiss(1128).t.G6YBna) };
@@ -293,9 +293,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifi
     hitSlop: 8,
     accessibilityRole: "button",
     accessibilityLabel: intl4.string(onDismiss(1128).t.WAI6xu),
-    children: closure_14(onDismiss(6879).XSmallIcon, { size: "sm", color: "icon-strong" })
+    children: closure_14(onDismiss(6882).XSmallIcon, { size: "sm", color: "icon-strong" })
   };
-  const PressableHighlight = onDismiss(6856).PressableHighlight;
+  const PressableHighlight = onDismiss(6859).PressableHighlight;
   intl4 = onDismiss(1128).intl;
   items[2] = closure_14(PressableHighlight, obj10);
   return closure_15(View, obj);

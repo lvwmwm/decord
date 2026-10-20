@@ -1,9 +1,9 @@
-// Module ID: 10916
-// Function ID: 10917
+// Module ID: 10927
+// Function ID: 10928
 // Name: ProfileCustomizationNavigationStore
 // Dependencies: [5124, 1097, 2]
 
-// Module 10916 (ProfileCustomizationNavigationStore)
+// Module 10927 (ProfileCustomizationNavigationStore)
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import ZustandStore from "ZustandStore" /* 5124 */;
 import size from "module_2" /* 2 */;

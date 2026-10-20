@@ -1,9 +1,9 @@
-// Module ID: 13719
-// Function ID: 13720
+// Module ID: 13737
+// Function ID: 13738
 // Name: PremiumGiftCustomization
-// Dependencies: [32, 19, 17, 1394, 21, 4945, 587, 558, 576, 1505, 10368, 13720, 1128, 10503, 13721, 5195, 10530, 10532, 13722, 2]
+// Dependencies: [32, 19, 17, 1394, 21, 4945, 587, 558, 576, 1505, 10379, 13738, 1128, 10514, 13739, 5195, 10541, 10543, 13740, 2]
 
-// Module 13719 (PremiumGiftCustomization)
+// Module 13737 (PremiumGiftCustomization)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;

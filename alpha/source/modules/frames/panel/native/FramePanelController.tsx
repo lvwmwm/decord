@@ -1,17 +1,18 @@
-// Module ID: 18205
-// Function ID: 18206
+// Module ID: 18228
+// Function ID: 18229
 // Name: FramePanelController
-// Dependencies: [19, 2046, 6723, 6724, 5570, 21, 558, 576, 504, 11057, 18173, 18206, 2]
+// Dependencies: [19, 2046, 6726, 6727, 5570, 21, 558, 576, 504, 17793, 11069, 18196, 18229, 2]
 
-// Module 18205 (FramePanelController)
+// Module 18228 (FramePanelController)
 import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5570 */;
-import FramesConstants from "FramesConstants" /* 6724 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 11057 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 18206 */;
+import FramesConstants from "FramesConstants" /* 6727 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 11069 */;
+import conjureBackgroundFrames from "conjureBackgroundFrames" /* 17793 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 18229 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2046 */;
-import FramesStore from "FramesStore" /* 6723 */;
+import FramesStore from "FramesStore" /* 6726 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +27,6 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FramePanel
   let mainFrameId;
   let mode;
   let orientationLockStateForApp;
-  let tmp10;
   let tmp4;
   let tmp5;
   let tmp6;
@@ -35,40 +35,43 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FramePanel
   const cResult = obj.c(13);
   children = children.children;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FramesStore, ApplicationStore];
-    const fn = function u() {
-      const tmp = asLaunched(mainFrame.getMainFrame());
-      let mode;
-      if (tmp != null) {
-        mode = tmp.data.activityPanelMode;
+    const items = [FramesStore, ];
+    items[1] = ApplicationStore;
+    class A {
+      constructor() {
+        const tmp = asLaunched(mainFrame.getMainFrame());
+        let mode;
+        if (tmp != null) {
+          mode = tmp.data.activityPanelMode;
+        }
+        if (mode == null) {
+          mode = constants.DISCONNECTED;
+        }
+        let connectedActivityAppId;
+        if (tmp != null) {
+          connectedActivityAppId = tmp.applicationId;
+        }
+        let currentApp;
+        if (null != connectedActivityAppId) {
+          currentApp = application.getApplication(connectedActivityAppId);
+        }
+        let orientationLockStateForApp;
+        if (tmp != null) {
+          orientationLockStateForApp = tmp.data.orientationLock;
+        }
+        mainFrameId = undefined;
+        if (tmp != null) {
+          mainFrameId = tmp.id;
+        }
+        return { mainFrameId, mode, connectedActivityAppId, currentApp, orientationLockStateForApp };
       }
-      if (mode == null) {
-        mode = constants.DISCONNECTED;
-      }
-      let connectedActivityAppId;
-      if (tmp != null) {
-        connectedActivityAppId = tmp.applicationId;
-      }
-      let currentApp;
-      if (null != connectedActivityAppId) {
-        currentApp = application.getApplication(connectedActivityAppId);
-      }
-      let orientationLockStateForApp;
-      if (tmp != null) {
-        orientationLockStateForApp = tmp.data.orientationLock;
-      }
-      mainFrameId = undefined;
-      if (tmp != null) {
-        mainFrameId = tmp.id;
-      }
-      return { mainFrameId, mode, connectedActivityAppId, currentApp, orientationLockStateForApp };
-    };
+    }
     const items1 = [];
     cResult[0] = items;
-    cResult[1] = fn;
+    cResult[1] = A;
     cResult[2] = items1;
     tmp4 = items;
-    tmp5 = fn;
+    tmp5 = A;
     tmp6 = items1;
   } else {
     [tmp4, tmp5, tmp6] = cResult;
@@ -78,17 +81,51 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FramePanel
   mainFrameId = stateFromStoresObject.mainFrameId;
   ({ mode, connectedActivityAppId, currentApp, orientationLockStateForApp } = stateFromStoresObject);
   if (cResult[3] !== mainFrameId) {
-    const fn2 = function y(PIP) {
+    const fn = function y(PIP) {
       if (null != mainFrameId) {
-        const obj = FramesActionCreatorsDefault;
-        obj.updateFramePanelMode(tmp, PIP);
+        const frame = FramesStore.getFrame(tmp);
+        let result = PIP === ActivityPanelModes.PANEL && null != frame;
+        if (result) {
+          const obj = conjureBackgroundFrames;
+          result = obj.returnToConjureFrameSurface(frame);
+        }
+        if (!result) {
+          const obj2 = FramesActionCreatorsDefault;
+          obj2.updateFramePanelMode(mainFrameId, PIP);
+        }
       }
     };
     cResult[3] = mainFrameId;
-    cResult[4] = fn2;
-    tmp10 = fn2;
-  } else {
-    tmp10 = cResult[4];
+    cResult[4] = fn;
+    class A {
+      constructor() {
+        const tmp = asLaunched(mainFrame.getMainFrame());
+        let mode;
+        if (tmp != null) {
+          mode = tmp.data.activityPanelMode;
+        }
+        if (mode == null) {
+          mode = constants.DISCONNECTED;
+        }
+        let connectedActivityAppId;
+        if (tmp != null) {
+          connectedActivityAppId = tmp.applicationId;
+        }
+        let currentApp;
+        if (null != connectedActivityAppId) {
+          currentApp = application.getApplication(connectedActivityAppId);
+        }
+        let orientationLockStateForApp;
+        if (tmp != null) {
+          orientationLockStateForApp = tmp.data.orientationLock;
+        }
+        mainFrameId = undefined;
+        if (tmp != null) {
+          mainFrameId = tmp.id;
+        }
+        return { mainFrameId, mode, connectedActivityAppId, currentApp, orientationLockStateForApp };
+      }
+    }
   }
   if (cResult[5] === children) {
     if (cResult[6] === connectedActivityAppId) {
@@ -107,7 +144,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FramePanel
       }
     }
   }
-  const BaseActivityPanelController = tmp(18173).BaseActivityPanelController;
+  const BaseActivityPanelController = tmp(18196).BaseActivityPanelController;
   const tmp13 = <BaseActivityPanelController context={FramePanelStateContextDefault} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={null != mainFrameId} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={tmp10}>{children}</BaseActivityPanelController>;
   cResult[5] = children;
   cResult[6] = connectedActivityAppId;
@@ -161,13 +198,21 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FramePanel
   ({ mode, connectedActivityAppId, currentApp, orientationLockStateForApp } = stateFromStoresObject);
   const callback = react.useCallback((PIP) => {
     if (null != mainFrameId) {
-      const obj = FramesActionCreatorsDefault;
-      obj.updateFramePanelMode(tmp, PIP);
+      const frame = FramesStore.getFrame(tmp);
+      let result = PIP === ActivityPanelModes.PANEL && null != frame;
+      if (result) {
+        const obj = conjureBackgroundFrames;
+        result = obj.returnToConjureFrameSurface(frame);
+      }
+      if (!result) {
+        const obj2 = FramesActionCreatorsDefault;
+        obj2.updateFramePanelMode(mainFrameId, PIP);
+      }
     }
   }, items1);
-  const BaseActivityPanelController = mainFrameId(18173).BaseActivityPanelController;
+  const BaseActivityPanelController = mainFrameId(18196).BaseActivityPanelController;
   return <BaseActivityPanelController context={FramePanelStateContextDefault} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={null != mainFrameId} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={callback}>{children}</BaseActivityPanelController>;
 });
-const result = size.fileFinishedImporting("modules/frames/panel/native/FramePanelController.tsx");
+let result = size.fileFinishedImporting("modules/frames/panel/native/FramePanelController.tsx");
 
 export default tmp2;

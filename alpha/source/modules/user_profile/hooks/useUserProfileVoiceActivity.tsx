@@ -1,11 +1,11 @@
-// Module ID: 14130
-// Function ID: 14131
+// Module ID: 14148
+// Function ID: 14149
 // Name: useUserProfileVoiceActivity
-// Dependencies: [5674, 5591, 7755, 558, 576, 10555, 504, 2]
+// Dependencies: [5674, 5591, 7759, 558, 576, 10566, 504, 2]
 // Exports: isUserProfileVoiceActivityForChannel
 
-// Module 14130 (useUserProfileVoiceActivity)
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7755 */;
+// Module 14148 (useUserProfileVoiceActivity)
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7759 */;
 import PresenceStore from "PresenceStore" /* 5674 */;
 import VoiceStateStore from "VoiceStateStore" /* 5591 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -26,8 +26,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
     if (cResult[1] === userId) {
       tmp4 = cResult[2];
     }
-    ({ voiceState, voiceChannel } = id(10555)(tmp4));
-    id(10555)(tmp4);
+    ({ voiceState, voiceChannel } = id(10566)(tmp4));
+    id(10566)(tmp4);
     id = undefined;
     if (voiceChannel != null) {
       id = voiceChannel.id;
@@ -101,7 +101,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfi
   const userId = guildId.userId;
   let id;
   let tmp = dependencyMap;
-  const tmp2 = id(10555)({ userId, guildId: guildId.guildId });
+  const tmp2 = id(10566)({ userId, guildId: guildId.guildId });
   const voiceChannel = tmp2.voiceChannel;
   id = undefined;
   const voiceState = tmp2.voiceState;

@@ -1,14 +1,14 @@
-// Module ID: 10341
-// Function ID: 10342
+// Module ID: 10352
+// Function ID: 10353
 // Name: AttachmentIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 10342, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 10353, 5630, 2]
 
-// Module 10341 (AttachmentIcon)
+// Module 10352 (AttachmentIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 10342 */;
+import AssetRegistry from "AssetRegistry" /* 10353 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

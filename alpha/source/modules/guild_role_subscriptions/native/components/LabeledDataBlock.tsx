@@ -1,9 +1,9 @@
-// Module ID: 16307
-// Function ID: 16308
+// Module ID: 16326
+// Function ID: 16327
 // Name: LabeledDataBlock
-// Dependencies: [19, 17, 1087, 21, 4945, 587, 6599, 558, 576, 5195, 6856, 1202, 2]
+// Dependencies: [19, 17, 1087, 21, 4945, 587, 6602, 558, 576, 5195, 6859, 1202, 2]
 
-// Module 16307 (LabeledDataBlock)
+// Module 16326 (LabeledDataBlock)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5195 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
-import TextStyles from "TextStyles" /* 6599 */;
+import TextStyles from "TextStyles" /* 6602 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -112,7 +112,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledDat
       let tmp11 = null != icon;
       if (tmp11) {
         const obj5 = { accessibilityRole: "button", onPress: onPressIcon, children: _false(Icon, obj6) };
-        const PressableOpacity = tmp(6856).PressableOpacity;
+        const PressableOpacity = tmp(6859).PressableOpacity;
         obj6 = { size: native.Icon.Sizes.SMALL, source: icon };
         Icon = tmp(1202).Icon;
         tmp11 = _false(PressableOpacity, obj5);
@@ -157,7 +157,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledDat
   let tmp4Result = null != icon;
   if (tmp4Result) {
     const obj4 = { accessibilityRole: "button", onPress: onPressIcon, children: _false(Icon, obj5) };
-    const PressableOpacity = tmp5(6856).PressableOpacity;
+    const PressableOpacity = tmp5(6859).PressableOpacity;
     obj5 = { size: native.Icon.Sizes.SMALL, source: icon };
     Icon = tmp5(1202).Icon;
     tmp4Result = tmp4(PressableOpacity, obj4);

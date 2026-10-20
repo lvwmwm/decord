@@ -1,9 +1,9 @@
-// Module ID: 17322
-// Function ID: 17323
+// Module ID: 17341
+// Function ID: 17342
 // Name: useGuildThemeNuxTrigger
-// Dependencies: [32, 19, 4797, 558, 576, 5138, 4784, 7442, 2]
+// Dependencies: [32, 19, 4797, 558, 576, 5138, 4784, 7445, 2]
 
-// Module 17322 (useGuildThemeNuxTrigger)
+// Module 17341 (useGuildThemeNuxTrigger)
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -117,8 +117,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildThem
             tmp4 = globalThis;
             _setTimeout = setTimeout;
             tmp5 = closure_5;
-            closure_0 = setTimeout(() => { /* body not rendered: F151250 */ }, closure_5);
-            return () => { /* body not rendered: F151251 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F151427 */ }, closure_5);
+            return () => { /* body not rendered: F151428 */ };
           }
         }
       }

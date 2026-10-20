@@ -1,9 +1,9 @@
-// Module ID: 7845
-// Function ID: 7846
+// Module ID: 7849
+// Function ID: 7850
 // Name: ModalContent
 // Dependencies: [19, 17, 21, 4945, 558, 576, 2]
 
-// Module 7845 (ModalContent)
+// Module 7849 (ModalContent)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

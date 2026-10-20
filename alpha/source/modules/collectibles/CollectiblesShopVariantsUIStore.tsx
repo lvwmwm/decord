@@ -1,12 +1,12 @@
-// Module ID: 9339
-// Function ID: 9340
+// Module ID: 9351
+// Function ID: 9352
 // Name: CollectiblesShopVariantsUIStore
-// Dependencies: [1269, 4863, 558, 576, 9276, 7607, 2]
+// Dependencies: [1269, 4863, 558, 576, 9288, 7610, 2]
 // Exports: setSelectedVariantIndex
 
-// Module 9339 (CollectiblesShopVariantsUIStore)
+// Module 9351 (CollectiblesShopVariantsUIStore)
 import _slicedToArray from "_slicedToArray" /* 4863 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7607 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7610 */;
 import module_1269 from "module_1269" /* 1269 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

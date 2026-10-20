@@ -1,9 +1,9 @@
-// Module ID: 13566
-// Function ID: 13567
+// Module ID: 13584
+// Function ID: 13585
 // Name: MessagePreviewText
-// Dependencies: [19, 17, 4800, 13558, 1098, 21, 4945, 1385, 587, 558, 576, 13567, 13568, 13557, 5195, 5631, 1105, 13569, 6320, 13572, 13573, 1109, 5563, 1128, 5604, 2]
+// Dependencies: [19, 17, 4800, 13576, 1098, 21, 4945, 1385, 587, 558, 576, 13585, 13586, 13575, 5195, 5631, 1105, 13587, 6323, 13590, 13591, 1109, 5563, 1128, 5604, 2]
 
-// Module 13566 (MessagePreviewText)
+// Module 13584 (MessagePreviewText)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,15 +14,15 @@ import Text_Text from "Text/Text" /* 5195 */;
 import isForwardMessageDefault from "isForwardMessage" /* 5563 */;
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5604 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import useMessageAuthor from "useMessageAuthor" /* 6320 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 13557 */;
-import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 13567 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 13569 */;
-import usePreviewableMediaText from "usePreviewableMediaText" /* 13572 */;
-import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 13573 */;
+import useMessageAuthor from "useMessageAuthor" /* 6323 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 13575 */;
+import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 13585 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 13587 */;
+import usePreviewableMediaText from "usePreviewableMediaText" /* 13590 */;
+import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 13591 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 13558 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 13576 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1385 */;
@@ -39,7 +39,7 @@ let obj5;
 let obj6;
 let size;
 let tmp;
-const ChannelRowPreview2 = tmp(13568);
+const ChannelRowPreview2 = tmp(13586);
 const View = react_native.View;
 ({ IN_APP_NOTIFICATION_MAX_HEIGHT: metroRequire, NOTIFICATION_PREVIEW_LINE_CLAMP: metroImportDefault } = InAppNotificationConstants);
 const Fonts = Constants.Fonts;
@@ -500,7 +500,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
   const tmpResult = usePreviewableMedia;
   const previewableMedia = tmpResult.usePreviewableMedia(message);
   let tmp6 = null;
-  const useNullableMessageAuthor = tmp(6320).useNullableMessageAuthor;
+  const useNullableMessageAuthor = tmp(6323).useNullableMessageAuthor;
   useMessageAuthor;
   if (tmp4) {
     tmp6 = message;
@@ -650,7 +650,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
               return tmp;
             }
           }
-          tmp15 = tmp16 === tmp(13569).PreviewableMediaTypes.GIF;
+          tmp15 = tmp16 === tmp(13587).PreviewableMediaTypes.GIF;
         }
         if (previewableMedia.length > 0) {
           let tmp23;
@@ -777,7 +777,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
   } else if (isForwardMessageDefault(message)) {
     let tmp30 = previewableMedia.length > 0;
     if (tmp30) {
-      tmp30 = previewableMedia[0].type === tmp(13569).PreviewableMediaTypes.GIF;
+      tmp30 = previewableMedia[0].type === tmp(13587).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
       let formatResult;
@@ -800,7 +800,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
       InAppNotificationUtils;
       if (null != channel) {
         const obj9 = { channel, message, color: "text-default", layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, variant: tmp25, muted: false, lineClamp: metroImportDefault };
-        const ChannelRowPreview = tmp(13568).ChannelRowPreview;
+        const ChannelRowPreview = tmp(13586).ChannelRowPreview;
         return metroImportAll(ChannelRowPreview, obj9);
       }
     }

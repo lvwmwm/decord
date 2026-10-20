@@ -1,9 +1,9 @@
-// Module ID: 9834
-// Function ID: 9835
+// Module ID: 9846
+// Function ID: 9847
 // Name: useShowNitroUpsellCallback
 // Dependencies: [19, 558, 576, 5014, 2]
 
-// Module 9834 (useShowNitroUpsellCallback)
+// Module 9846 (useShowNitroUpsellCallback)
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
 import react from "react" /* 19 */;

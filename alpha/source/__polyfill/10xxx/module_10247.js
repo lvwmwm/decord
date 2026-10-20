@@ -1,10 +1,11 @@
 // Module ID: 10247
 // Function ID: 10248
-// Dependencies: [41, 42, 93, 95, 98, 10248, 10140]
+// Dependencies: [41, 42, 93, 95, 98, 10144, 10238, 10147, 10151]
 
 // Module 10247
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10140 */;
-import _mod10248 from "module_10248" /* 10248 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10144 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10151 */;
+import _mod10238 from "module_10238" /* 10238 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -26,12 +27,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ZHHantDateParser {
+const regExp = new RegExp("(dit|deze|(?:aan)?komend|volgend|afgelopen|vorig)e?\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod10238.TIME_UNIT_DICTIONARY) + ")(?=\\s*)(?=\\W|$)", "i");
+class NLRelativeDateFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ZHHantDateParser);
-    const obj = _getPrototypeOf(ZHHantDateParser);
+    _classCallCheck(this, NLRelativeDateFormatParser);
+    const obj = _getPrototypeOf(NLRelativeDateFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -43,18 +45,10 @@ class ZHHantDateParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ZHHantDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(NLRelativeDateFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
-    const keys = Object.keys(_mod10248.NUMBER);
-    const text = `(\\d{2,4}|[${obj.join("")}`;
-    const keys1 = Object.keys(_mod10248.NUMBER);
-    const text1 = `${`(\\d{2,4}|[${obj.join("")}`}]{4}|[${obj2.join("")}`;
-    const keys2 = Object.keys(_mod10248.NUMBER);
-    const text2 = `${tmp2}]{2})?(?:\\s*)(?:年)?(?:[\\s|,|，]*)(\\d{1,2}|[${obj3.join("")}`;
-    const keys3 = Object.keys(_mod10248.NUMBER);
-    const regExp = new RegExp(text2 + "]{1,2})(?:\\s*)(?:\u6708)(?:\\s*)(\\d{1,2}|[" + keys3.join("") + "]{1,2})?(?:\\s*)(?:\u65E5|\u865F)?");
     return regExp;
   }
 };
@@ -62,47 +56,56 @@ const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const parsed = parseInt(index[2]);
-      let zhStringToNumberResult = parsed;
-      if (isNaN(parsed)) {
-        zhStringToNumberResult = _mod10248.zhStringToNumber(index[2]);
-      }
-      const start = parsingResult.start;
-      start.assign("month", zhStringToNumberResult);
-      if (index[3]) {
-        const _parseInt = parseInt;
-        const parsed1 = parseInt(index[3]);
-        const _isNaN = isNaN;
-        let zhStringToNumberResult1 = parsed1;
-        if (isNaN(parsed1)) {
-          zhStringToNumberResult1 = _mod10248.zhStringToNumber(index[3]);
+    value: function innerExtract(createParsingComponents, arg1) {
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const str2 = arg1[2];
+      const str3 = str2.toLowerCase();
+      const tmp4 = _mod10238.TIME_UNIT_DICTIONARY[str3];
+      if ("volgend" != formatted) {
+        if ("komend" != formatted) {
+          if ("aankomend" != formatted) {
+            if ("afgelopen" != formatted) {
+              if ("vorig" != formatted) {
+                const parsingComponents = createParsingComponents.createParsingComponents();
+                const _Date = Date;
+                const instant = createParsingComponents.reference.instant;
+                const self = this;
+                const self2 = this;
+                const date = new Date(instant.getTime());
+                if (str3.match(/week/i)) {
+                  const setDate = date.setDate;
+                  const date1 = date.getDate();
+                  setDate(date1 - date.getDay());
+                  parsingComponents.imply("day", date.getDate());
+                  parsingComponents.imply("month", date.getMonth() + 1);
+                  parsingComponents.imply("year", date.getFullYear());
+                } else if (str3.match(/maand/i)) {
+                  date.setDate(1);
+                  parsingComponents.imply("day", date.getDate());
+                  parsingComponents.assign("year", date.getFullYear());
+                  parsingComponents.assign("month", date.getMonth() + 1);
+                } else if (str3.match(/jaar/i)) {
+                  date.setDate(1);
+                  date.setMonth(0);
+                  parsingComponents.imply("day", date.getDate());
+                  parsingComponents.imply("month", date.getMonth() + 1);
+                  parsingComponents.assign("year", date.getFullYear());
+                }
+                return parsingComponents;
+              }
+            }
+            const obj = {};
+            obj[tmp4] = -1;
+            const ParsingComponents = tmp2(10147).ParsingComponents;
+            return ParsingComponents.createRelativeFromReference(createParsingComponents.reference, obj);
+          }
         }
-        const start3 = parsingResult.start;
-        start3.assign("day", zhStringToNumberResult1);
-      } else {
-        const start2 = parsingResult.start;
-        const refDate = createParsingResult.refDate;
-        start2.imply("day", refDate.getDate());
       }
-      if (index[1]) {
-        const _parseInt2 = parseInt;
-        let parsed2 = parseInt(index[1]);
-        const _isNaN2 = isNaN;
-        if (isNaN(parsed2)) {
-          parsed2 = _mod10248.zhStringToYear(index[1]);
-        }
-        const start5 = parsingResult.start;
-        start5.assign("year", parsed2);
-      } else {
-        const start4 = parsingResult.start;
-        const refDate2 = createParsingResult.refDate;
-        start4.imply("year", refDate2.getFullYear());
-      }
-      return parsingResult;
+      const ParsingComponents2 = tmp2(10147).ParsingComponents;
+      return ParsingComponents2.createRelativeFromReference(createParsingComponents.reference, { [tmp4]: 1 });
     }
   }
 ];
 
-export default _createClass(ZHHantDateParser, items);
+export default _createClass(NLRelativeDateFormatParser, items);

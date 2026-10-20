@@ -1,19 +1,19 @@
-// Module ID: 15455
-// Function ID: 15456
+// Module ID: 15473
+// Function ID: 15474
 // Name: ICYMISessionStore
-// Dependencies: [5151, 1261, 8763, 502, 8743, 1281, 15456, 504, 584, 2]
+// Dependencies: [5151, 1261, 8775, 502, 8755, 1281, 15474, 504, 584, 2]
 // Exports: resetGlobalState
 
-// Module 15455 (ICYMISessionStore)
+// Module 15473 (ICYMISessionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import v1 from "v1" /* 1281 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 15456 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 15474 */;
 import ExperimentStore from "ExperimentStore" /* 5151 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
-import LabFeatureStore from "LabFeatureStore" /* 8763 */;
+import LabFeatureStore from "LabFeatureStore" /* 8775 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ICYMIStore from "ICYMIStore" /* 8743 */;
+import ICYMIStore from "ICYMIStore" /* 8755 */;
 import size from "module_2" /* 2 */;
 
 let _null, c10, set;
@@ -148,7 +148,7 @@ class ICYMISession {
       }
       ({ interactionActionTypes: obj.interactionActionTypes, interactionCount: obj.interactionCount, uxVariation } = tmp7);
       if (uxVariation == null) {
-        uxVariation = tmp11(15456).DEFAULT_UX_VARIATION;
+        uxVariation = tmp11(15474).DEFAULT_UX_VARIATION;
       }
       let trackFeedItemDwell1sResult = trackFeedItemDwell1s(obj);
       continue;
@@ -344,7 +344,7 @@ class ICYMISession {
       }
       DEFAULT_UX_VARIATION = tmp2.uxVariation;
       if (DEFAULT_UX_VARIATION == null) {
-        DEFAULT_UX_VARIATION = tmp5(15456).DEFAULT_UX_VARIATION;
+        DEFAULT_UX_VARIATION = tmp5(15474).DEFAULT_UX_VARIATION;
       }
       ({ interactionActionTypes: obj.interactionActionTypes, interactionCount: obj.interactionCount, sessionImpressionIndex: obj.sessionImpressionIndex } = this._activeItems[findIndexResult]);
       trackFeedItemDwelled(obj);

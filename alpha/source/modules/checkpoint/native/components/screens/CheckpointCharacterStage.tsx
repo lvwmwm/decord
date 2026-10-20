@@ -1,15 +1,15 @@
-// Module ID: 12774
-// Function ID: 12775
+// Module ID: 12791
+// Function ID: 12792
 // Name: CheckpointCharacterStage
-// Dependencies: [17, 12762, 21, 4945, 587, 5993, 1128, 6319, 6318, 558, 576, 504, 5195, 6316, 2]
+// Dependencies: [17, 12779, 21, 4945, 587, 5996, 1128, 6322, 6321, 558, 576, 504, 5195, 6319, 2]
 
-// Module 12774 (CheckpointCharacterStage)
+// Module 12791 (CheckpointCharacterStage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import CheckpointTrait from "CheckpointTrait" /* 5993 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6318 */;
-import CheckpointTraitOptionNames from "CheckpointTraitOptionNames" /* 6319 */;
-import CheckpointStore from "CheckpointStore" /* 12762 */;
+import CheckpointTrait from "CheckpointTrait" /* 5996 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6321 */;
+import CheckpointTraitOptionNames from "CheckpointTraitOptionNames" /* 6322 */;
+import CheckpointStore from "CheckpointStore" /* 12779 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -71,7 +71,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
     tmp12 = cResult[4];
   }
   if (cResult[5] !== activeCustomizationOption) {
-    const tmpResult2 = stateFromStores(6316);
+    const tmpResult2 = stateFromStores(6319);
     const customizationOptionName = tmpResult2.getCustomizationOptionName(activeCustomizationOption);
     cResult[5] = activeCustomizationOption;
     cResult[6] = customizationOptionName;
@@ -110,7 +110,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
       }
     }
     const _Object = Object;
-    const values = Object.values(tmp(5993).CheckpointTrait);
+    const values = Object.values(tmp(5996).CheckpointTrait);
     const flatMapResult = values.flatMap((item) => {
       let items;
       if (null == stateFromStores[item]) {
@@ -179,10 +179,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   const obj3 = { color: "text-muted", variant: "text-md/medium", children: items2 };
   const Heading = stateFromStores(5195).Heading;
   items2 = ["Trait: "];
-  const obj4 = stateFromStores(6316);
+  const obj4 = stateFromStores(6319);
   items2[1] = obj4.getCustomizationOptionName(activeCustomizationOption);
   items1[2] = closure_5(Heading, obj3);
-  const values = Object.values(stateFromStores(5993).CheckpointTrait);
+  const values = Object.values(stateFromStores(5996).CheckpointTrait);
   const flatMapResult = values.flatMap((item) => {
     let items;
     if (null == stateFromStores[item]) {

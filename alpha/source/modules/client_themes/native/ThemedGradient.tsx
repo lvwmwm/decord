@@ -1,10 +1,10 @@
-// Module ID: 10543
-// Function ID: 10544
+// Module ID: 10554
+// Function ID: 10555
 // Name: ThemedGradient
 // Dependencies: [109, 19, 17, 4969, 21, 4945, 4952, 4943, 5105, 4942, 558, 576, 1499, 5219, 5166, 587, 5108, 683, 1257, 573, 5110, 5165, 1256, 2]
 // Exports: validateColors
 
-// Module 10543 (ThemedGradient)
+// Module 10554 (ThemedGradient)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
@@ -36,7 +36,7 @@ let tmp6;
 let unpackModuleId;
 const useRoutedActiveGuildThemeDefault = tmp6(5110);
 const LinearGradientDefault = tmp4(5219);
-const f106252 = (item) => item / 100;
+const f106355 = (item) => item / 100;
 function getMixedGradientColor(mixColorOverride) {
   let b;
   let darkFallbackAmount;
@@ -797,7 +797,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
     gradientColorStops = [];
   }
   if (gradientColorStops.length === reduced.length) {
-    mapped1 = gradientColorStops.map(f106252);
+    mapped1 = gradientColorStops.map(f106355);
   } else if (1 === reduced.length) {
     mapped1 = [0, 1];
   } else {
@@ -1048,7 +1048,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
     gradientColorStops = [];
   }
   if (gradientColorStops.length === reduced.length) {
-    mapped1 = gradientColorStops.map(f106252);
+    mapped1 = gradientColorStops.map(f106355);
   } else if (1 === reduced.length) {
     mapped1 = [0, 1];
   } else {

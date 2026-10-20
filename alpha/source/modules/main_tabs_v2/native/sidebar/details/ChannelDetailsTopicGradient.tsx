@@ -1,9 +1,9 @@
-// Module ID: 17915
-// Function ID: 17916
+// Module ID: 17938
+// Function ID: 17939
 // Name: ChannelDetailsTopicGradient
 // Dependencies: [19, 558, 576, 5213, 587, 683, 2]
 
-// Module 17915 (ChannelDetailsTopicGradient)
+// Module 17938 (ChannelDetailsTopicGradient)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useToken from "useToken" /* 5213 */;

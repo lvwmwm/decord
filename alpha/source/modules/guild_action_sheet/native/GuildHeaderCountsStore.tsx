@@ -1,12 +1,12 @@
-// Module ID: 15024
-// Function ID: 15025
+// Module ID: 15042
+// Function ID: 15043
 // Name: GuildHeaderCountsStore
-// Dependencies: [7318, 4800, 5155, 1392, 5591, 504, 584, 2]
+// Dependencies: [7321, 4800, 5155, 1392, 5591, 504, 584, 2]
 
-// Module 15024 (GuildHeaderCountsStore)
+// Module 15042 (GuildHeaderCountsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 7318 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 7321 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5155 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -63,7 +63,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "Array", onlineCount: "unicodeVersion", memberCount: "runOnJS" };
+      closure_6[guildId] = { activeChannelsCount: "Array", onlineCount: "unicodeVersion", memberCount: "lineClamp" };
     }
     closure_6[guildId].memberCount = count;
   },
@@ -71,7 +71,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "Array", onlineCount: "unicodeVersion", memberCount: "runOnJS" };
+      closure_6[guildId] = { activeChannelsCount: "Array", onlineCount: "unicodeVersion", memberCount: "lineClamp" };
     }
     closure_6[guildId].onlineCount = count;
   },
@@ -79,7 +79,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "Array", onlineCount: "unicodeVersion", memberCount: "runOnJS" };
+      closure_6[guildId] = { activeChannelsCount: "Array", onlineCount: "unicodeVersion", memberCount: "lineClamp" };
     }
     closure_6[guildId].activeChannelsCount = count;
   }

@@ -1,10 +1,10 @@
-// Module ID: 6587
-// Function ID: 6588
+// Module ID: 6590
+// Function ID: 6591
 // Name: canJoinVoiceChannel
 // Dependencies: [4804, 1087, 2]
 // Exports: default
 
-// Module 6587 (canJoinVoiceChannel)
+// Module 6590 (canJoinVoiceChannel)
 import Constants from "Constants" /* 1087 */;
 import ChannelRecord from "ChannelRecord" /* 4804 */;
 import size from "module_2" /* 2 */;

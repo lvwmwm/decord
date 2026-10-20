@@ -1,14 +1,14 @@
-// Module ID: 18054
-// Function ID: 18055
+// Module ID: 18077
+// Function ID: 18078
 // Name: MessageRequestList
-// Dependencies: [19, 17, 1087, 21, 4945, 587, 1128, 558, 576, 5625, 5669, 6620, 13149, 1267, 18055, 1202, 14335, 6856, 16000, 8871, 1633, 18060, 18062, 13148, 18065, 1384, 5195, 7168, 2]
+// Dependencies: [19, 17, 1087, 21, 4945, 587, 1128, 558, 576, 5625, 5669, 6623, 13167, 1267, 18078, 1202, 14353, 6859, 16019, 8883, 1633, 18083, 18085, 13166, 18088, 1384, 5195, 7171, 2]
 
-// Module 18054 (MessageRequestList)
+// Module 18077 (MessageRequestList)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import transitionToChannel from "transitionToChannel" /* 5669 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -805,19 +805,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReque
   const tmp3 = dependencyMap;
   let tmp2 = data;
   const bottom = data(1633)().bottom;
-  data = data(18060)();
-  let obj = goToMessageRequestPreview(18062);
+  data = data(18083)();
+  let obj = goToMessageRequestPreview(18085);
   dependencyMap = obj.useListHasSingleMessageRequest();
-  const obj2 = goToMessageRequestPreview(13148);
+  const obj2 = goToMessageRequestPreview(13166);
   const isRestricted = obj2.useIsMessageRequestRestrictedViewer();
   if (0 === data.length) {
     const obj3 = { bodyText: intl2.string(goToMessageRequestPreview(1128).t.SXrqTf) };
-    const tmp2Result = tmp2(18065);
+    const tmp2Result = tmp2(18088);
     intl2 = tmp4(1128).intl;
     tmp9Result = closure_7(tmp2Result, obj3);
   } else {
     const items = [tmp.list, ];
-    const FlashList = tmp4(7168).FlashList;
+    const FlashList = tmp4(7171).FlashList;
     let num = 0;
     const tmp4Result = goToMessageRequestPreview(1384);
     if (tmp4Result.isAndroid()) {

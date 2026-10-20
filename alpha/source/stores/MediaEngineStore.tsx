@@ -1,7 +1,7 @@
 // Module ID: 2014
 // Function ID: 2015
 // Name: MediaEngineStore
-// Dependencies: [32, 5, 2015, 2020, 5151, 2021, 7759, 1246, 502, 15108, 5811, 4800, 5676, 1392, 15109, 1087, 6591, 7812, 1097, 15110, 5680, 3, 1104, 1384, 5700, 13820, 4795, 7829, 15111, 15112, 15113, 11448, 12, 15114, 5806, 15115, 15116, 15117, 15118, 15119, 5853, 1267, 584, 11499, 15120, 15121, 15122, 5791, 15123, 15168, 15169, 15170, 15171, 15172, 15173, 7769, 4951, 4762, 510, 15174, 11484, 6814, 15178, 15179, 1128, 5782, 15180, 15181, 15182, 38, 14879, 5798, 1257, 5784, 504, 15183, 15184, 15185, 15186, 2]
+// Dependencies: [32, 5, 2015, 2020, 5151, 2021, 7763, 1246, 502, 15126, 5813, 4800, 5676, 1392, 15127, 1087, 6594, 7816, 1097, 15128, 5680, 3, 1104, 1384, 5700, 13838, 4795, 7833, 15129, 15130, 15131, 11459, 12, 15132, 5808, 15133, 15134, 15135, 15136, 15137, 5855, 1267, 584, 11510, 15138, 15139, 15140, 5793, 15141, 15186, 15187, 15188, 15189, 15190, 15191, 7773, 4951, 4762, 510, 15192, 11495, 6817, 15196, 15197, 1128, 5782, 15198, 15199, 15200, 38, 14897, 5800, 1257, 5784, 504, 15201, 15202, 15203, 15204, 2]
 
 // Module 2014 (MediaEngineStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -18,29 +18,29 @@ import DiscordNativeDefault from "DiscordNative" /* 4762 */;
 import Timers from "Timers" /* 4795 */;
 import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4951 */;
 import ExternalPipDefault from "ExternalPip" /* 5784 */;
-import KrispUtilsDefault from "KrispUtils" /* 5798 */;
-import NativeMuteManagerDefault from "NativeMuteManager" /* 5806 */;
-import AVError from "AVError" /* 5853 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 7759 */;
-import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11448 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 11484 */;
-import getEffectiveNoiseCancellationDefault from "getEffectiveNoiseCancellation" /* 11499 */;
-import VideoGuardExperiment2 from "VideoGuardExperiment" /* 13820 */;
-import UserSettingsVoiceAndVideoConstants from "UserSettingsVoiceAndVideoConstants" /* 15110 */;
-import GoLiveHdrExperiment from "GoLiveHdrExperiment" /* 15111 */;
-import StreamZeroVadLeadingExperiment2 from "StreamZeroVadLeadingExperiment" /* 15112 */;
-import AGC2MobileExperimentDefault from "AGC2MobileExperiment" /* 15113 */;
-import MuteAwareNoiseCancellationExperiment from "MuteAwareNoiseCancellationExperiment" /* 15114 */;
-import HookAll from "Hook" /* 15115 */;
-import GlobalFramePoolLockExperiment from "GlobalFramePoolLockExperiment" /* 15119 */;
-import AudioFidelityExperiment from "AudioFidelityExperiment" /* 15120 */;
-import SystemwideEchoCancellationExperiment from "SystemwideEchoCancellationExperiment" /* 15121 */;
-import _modDef15123 from "module_15123" /* 15123 */;
-import AudioEffectsExperimentDefault from "AudioEffectsExperiment" /* 15178 */;
-import IOSAudioInterruptExperiment from "IOSAudioInterruptExperiment" /* 15181 */;
-import KrispNCModels from "KrispNCModels" /* 15182 */;
-import NvencReconstructedFrameExperiment from "NvencReconstructedFrameExperiment" /* 15184 */;
-import DisableCameraSimulcastExperiment2 from "DisableCameraSimulcastExperiment" /* 15186 */;
+import KrispUtilsDefault from "KrispUtils" /* 5800 */;
+import NativeMuteManagerDefault from "NativeMuteManager" /* 5808 */;
+import AVError from "AVError" /* 5855 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 7763 */;
+import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11459 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 11495 */;
+import getEffectiveNoiseCancellationDefault from "getEffectiveNoiseCancellation" /* 11510 */;
+import VideoGuardExperiment2 from "VideoGuardExperiment" /* 13838 */;
+import UserSettingsVoiceAndVideoConstants from "UserSettingsVoiceAndVideoConstants" /* 15128 */;
+import GoLiveHdrExperiment from "GoLiveHdrExperiment" /* 15129 */;
+import StreamZeroVadLeadingExperiment2 from "StreamZeroVadLeadingExperiment" /* 15130 */;
+import AGC2MobileExperimentDefault from "AGC2MobileExperiment" /* 15131 */;
+import MuteAwareNoiseCancellationExperiment from "MuteAwareNoiseCancellationExperiment" /* 15132 */;
+import HookAll from "Hook" /* 15133 */;
+import GlobalFramePoolLockExperiment from "GlobalFramePoolLockExperiment" /* 15137 */;
+import AudioFidelityExperiment from "AudioFidelityExperiment" /* 15138 */;
+import SystemwideEchoCancellationExperiment from "SystemwideEchoCancellationExperiment" /* 15139 */;
+import _modDef15141 from "module_15141" /* 15141 */;
+import AudioEffectsExperimentDefault from "AudioEffectsExperiment" /* 15196 */;
+import IOSAudioInterruptExperiment from "IOSAudioInterruptExperiment" /* 15199 */;
+import KrispNCModels from "KrispNCModels" /* 15200 */;
+import NvencReconstructedFrameExperiment from "NvencReconstructedFrameExperiment" /* 15202 */;
+import DisableCameraSimulcastExperiment2 from "DisableCameraSimulcastExperiment" /* 15204 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import injectMediaEngine from "injectMediaEngine" /* 2015 */;
@@ -49,19 +49,19 @@ import ExperimentStore from "ExperimentStore" /* 5151 */;
 import RunningGameStore from "RunningGameStore" /* 2021 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BitRateStore from "BitRateStore" /* 15108 */;
-import CertifiedDeviceStore from "CertifiedDeviceStore" /* 5811 */;
+import BitRateStore from "BitRateStore" /* 15126 */;
+import CertifiedDeviceStore from "CertifiedDeviceStore" /* 5813 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5676 */;
 import UserStore from "UserStore" /* 1392 */;
-import VideoQualityModeStore from "VideoQualityModeStore" /* 15109 */;
+import VideoQualityModeStore from "VideoQualityModeStore" /* 15127 */;
 import Constants_mod from "Constants" /* 1087 */;
-import Constants_mod2 from "Constants" /* 6591 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7812 */;
+import Constants_mod2 from "Constants" /* 6594 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7816 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import Constants_mod3 from "Constants" /* 5680 */;
 import BaseConnectionEvent_mod from "BaseConnectionEvent" /* 5700 */;
-import NativePermissionUtils_mod from "NativePermissionUtils" /* 7829 */;
+import NativePermissionUtils_mod from "NativePermissionUtils" /* 7833 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -103,9 +103,9 @@ let closure_54;
 let closure_55;
 let tmp;
 let tmp6;
-const DesktopNativeUtilsDefault = tmp6(6814);
-const trackVideoToggleDefault = tmp(14879);
-const f88762 = (name) => {
+const DesktopNativeUtilsDefault = tmp6(6817);
+const trackVideoToggleDefault = tmp(14897);
+const f88863 = (name) => {
   const str = name.name;
   const formatted = str.toLowerCase();
   return formatted.includes("dualsense");
@@ -461,8 +461,8 @@ function updateVideo(enabled, arg1) {
       const obj18 = PlatformUtils;
       let isWindowsResult = obj18.isWindows();
       if (isWindowsResult) {
-        const satisfies = _modDef15123.satisfies;
-        _modDef15123;
+        const satisfies = _modDef15141.satisfies;
+        _modDef15141;
         const tmp43 = DiscordNativeDefault;
         let release;
         if (tmp43 != null) {
@@ -475,8 +475,8 @@ function updateVideo(enabled, arg1) {
         const tmp71Result = PlatformUtils;
         let isWindowsResult1 = tmp71Result.isWindows();
         if (isWindowsResult1) {
-          const satisfies2 = _modDef15123.satisfies;
-          _modDef15123;
+          const satisfies2 = _modDef15141.satisfies;
+          _modDef15141;
           const tmp50 = DiscordNativeDefault;
           let release1;
           if (tmp50 != null) {
@@ -492,17 +492,17 @@ function updateVideo(enabled, arg1) {
       if (isWindowsResult2) {
         enabled = true === c129;
         if (!enabled) {
-          const WGCDirtyRegionsAllExperiment = tmp71(15116).WGCDirtyRegionsAllExperiment;
+          const WGCDirtyRegionsAllExperiment = tmp71(15134).WGCDirtyRegionsAllExperiment;
           enabled = WGCDirtyRegionsAllExperiment.getConfig({ location: "updateVideo" }).enabled;
         }
         flag = enabled;
       }
       let enabled2 = videoHook2;
       if (enabled2) {
-        const VideoHookDX12Experiment = tmp71(15117).VideoHookDX12Experiment;
+        const VideoHookDX12Experiment = tmp71(15135).VideoHookDX12Experiment;
         enabled2 = VideoHookDX12Experiment.getConfig({ location: "updateVideo" }).enabled;
       }
-      const UpscaleSmallCapturedFramesExperiment = tmp71(15118).UpscaleSmallCapturedFramesExperiment;
+      const UpscaleSmallCapturedFramesExperiment = tmp71(15136).UpscaleSmallCapturedFramesExperiment;
       const config = UpscaleSmallCapturedFramesExperiment.getConfig({ location: "updateVideo" });
       const obj6 = { id: tmp2.desktopSource.id, soundshareId: tmp2.desktopSource.soundshareId, useVideoHook: videoHook2, useGraphicsCapture: isWindowsResult, useGraphicsCaptureApiLevel: num3, useCaptureDeviceForEncode: tmp71Result6.isWindows(), useLoopback: mediaEngineStore.getExperimentalSoundshare(), useQuartzCapturer: true, allowScreenCaptureKit: isMacResult, videoHookStaleFrameTimeoutMs: 500, graphicsCaptureStaleFrameTimeoutMs, hdrCaptureMode, enableGlobalFramePoolLock: tmp71Result8.getGlobalFramePoolLockExperimentConfig({ location: "updateVideo" }).enabled, useGraphicsCaptureDirtyRegions: flag, videoHookAllowDx12: enabled2, minCaptureWidth, minCaptureHeight };
       ({ minCaptureWidth, minCaptureHeight } = config);
@@ -515,8 +515,8 @@ function updateVideo(enabled, arg1) {
         isMacResult = obj8.supports(Features.SCREEN_CAPTURE_KIT);
       }
       if (isMacResult) {
-        const satisfies3 = _modDef15123.satisfies;
-        _modDef15123;
+        const satisfies3 = _modDef15141.satisfies;
+        _modDef15141;
         const tmp62 = DiscordNativeDefault;
         let release2;
         if (tmp62 != null) {
@@ -604,9 +604,9 @@ function handleVideoFilterError(code, arg1) {
     const reportAVError = AVError.reportAVError;
     AVError;
     if (constants10.UNSUPPORTED === code) {
-      VideoBackgroundInitFailed = tmp4(5853).AVUnderlyingError.VideoBackgroundUnsupported;
+      VideoBackgroundInitFailed = tmp4(5855).AVUnderlyingError.VideoBackgroundUnsupported;
     } else if (tmp7.INIT_FAILED === code) {
-      VideoBackgroundInitFailed = tmp4(5853).AVUnderlyingError.VideoBackgroundInitFailed;
+      VideoBackgroundInitFailed = tmp4(5855).AVUnderlyingError.VideoBackgroundInitFailed;
     }
     reportAVError(obj);
   }
@@ -646,13 +646,13 @@ function updateConnectionVoiceProcessing(setEchoCancellation) {
   const merged = Object.assign(tmp12);
   result = setAutomaticGainControl(obj2);
   const noiseCancellation = tmp2.noiseCancellation;
-  const tmp10Result = tmp10(11499);
+  const tmp10Result = tmp10(11510);
   const tmp10ResultResult = tmp10Result(noiseCancellation, mediaEngineStore.getSystemMicrophoneMode());
   if (tmp10ResultResult !== noiseCancellation) {
     CertifiedDeviceStore.info("Falling back to system noise suppression.");
   }
   setEchoCancellation.setNoiseCancellation(tmp10ResultResult);
-  const tmp10Result5 = tmp10(15113);
+  const tmp10Result5 = tmp10(15131);
   if (tmp10ResultResult) {
     defaultConfig2 = tmp10Result5.getConfig({ location: "setNoiseCancellation" });
   } else {
@@ -663,7 +663,7 @@ function updateConnectionVoiceProcessing(setEchoCancellation) {
   const inputDeviceId2 = tmpResult.inputDeviceId;
   const tmp22 = CertifiedDeviceStore.hasEchoCancellation(inputDeviceId2) || tmpResult.echoCancellation;
   const tmp23 = CertifiedDeviceStore.hasNoiseSuppression(inputDeviceId2) || tmpResult.noiseSuppression;
-  const tmp10Result6 = tmp10(11499);
+  const tmp10Result6 = tmp10(11510);
   const tmp10Result2Result = tmp10Result6(tmpResult.noiseCancellation, mediaEngineStore.getSystemMicrophoneMode());
   const obj6 = AudioFidelityExperiment;
   const voiceFidelityCaps = obj6.getVoiceFidelityCaps({ location: "updateVoiceFidelityCaps" }, { krispEnabled: tmp10Result2Result, noiseSuppressionEnabled: tmp23, echoCancellationEnabled: tmp22 });
@@ -673,8 +673,8 @@ function updateConnectionVoiceProcessing(setEchoCancellation) {
   const obj7 = PlatformUtils;
   let isWindowsResult = obj7.isWindows();
   if (isWindowsResult) {
-    const satisfies = tmp10(15123).satisfies;
-    tmp10(15123);
+    const satisfies = tmp10(15141).satisfies;
+    tmp10(15141);
     const tmp10Result8 = tmp10(4762);
     let release;
     if (tmp10Result8 != null) {
@@ -905,7 +905,7 @@ function setInputDevice(inputDeviceId) {
 }
 function hasHapticsOverAudioOutputDevices(arg0) {
   const values = Object.values(arg0);
-  return values.some(f88762);
+  return values.some(f88863);
 }
 function applyRemoteSettings(arg0) {
   let flag = arg0;
@@ -1124,7 +1124,7 @@ function setLoopback() {
   const inputDeviceId2 = tmpResult.inputDeviceId;
   const tmp16 = CertifiedDeviceStore.hasEchoCancellation(inputDeviceId2) || tmpResult.echoCancellation;
   const tmp17 = CertifiedDeviceStore.hasNoiseSuppression(inputDeviceId2) || tmpResult.noiseSuppression;
-  const tmp10Result = tmp10(11499);
+  const tmp10Result = tmp10(11510);
   const tmp10ResultResult = tmp10Result(tmpResult.noiseCancellation, mediaEngineStore.getSystemMicrophoneMode());
   const obj6 = AudioFidelityExperiment;
   const voiceFidelityCaps = obj6.getVoiceFidelityCaps({ location: "updateVoiceFidelityCaps" }, { krispEnabled: tmp10ResultResult, noiseSuppressionEnabled: tmp17, echoCancellationEnabled: tmp16 });
@@ -1666,7 +1666,7 @@ let closure_83 = performance.now();
 let c84 = null;
 let obj4 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.AUDIO_INPUT, index: 0, name: "No Input Devices", disabled: true, guid: "Boolean", hardwareId: "duration", containerId: "toCharArray$esjava$1" };
 const inputDevices = { [DEFAULT_DEVICE_ID]: obj4 };
-let obj5 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.AUDIO_OUTPUT, index: 0, name: "No Output Devices", disabled: true, guid: "unicodeVersion", hardwareId: "state", containerId: "bm" };
+let obj5 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.AUDIO_OUTPUT, index: 0, name: "No Output Devices", disabled: true, guid: "code", hardwareId: "source", containerId: "get" };
 const outputDevices = { [DEFAULT_DEVICE_ID]: obj5 };
 let obj6 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.VIDEO_INPUT, index: 0, name: "No Video Devices", disabled: true, guid: "unicodeVersion", hardwareId: "height", containerId: "toCharArray$esjava$1" };
 let closure_87 = { [DEFAULT_DEVICE_ID]: obj6 };
@@ -1753,7 +1753,7 @@ class MediaEngineStore extends Store {
       let self2 = this;
       const self3 = this;
       const tmp4 = self;
-      let tmp5 = new obj(15183)(closure_71, self);
+      let tmp5 = new obj(15201)(closure_71, self);
       let tmp6 = tmp5;
       navigation = tmp5;
     }
@@ -3208,8 +3208,8 @@ class MediaEngineStore extends Store {
   supportsExperimentalSoundshare() {
     let supportsResult = result.supports(Features.EXPERIMENTAL_SOUNDSHARE);
     if (supportsResult) {
-      const satisfies = _modDef15123.satisfies;
-      _modDef15123;
+      const satisfies = _modDef15141.satisfies;
+      _modDef15141;
       const tmp5 = DiscordNativeDefault;
       let release;
       if (tmp5 != null) {
@@ -3223,8 +3223,8 @@ class MediaEngineStore extends Store {
     obj = PlatformUtils;
     let isWindowsResult = obj.isWindows() && result.supports(Features.SOUNDSHARE);
     if (isWindowsResult) {
-      const satisfies = _modDef15123.satisfies;
-      _modDef15123;
+      const satisfies = _modDef15141.satisfies;
+      _modDef15141;
       const tmp7 = DiscordNativeDefault;
       let release;
       if (tmp7 != null) {
@@ -3275,7 +3275,7 @@ class MediaEngineStore extends Store {
     }
     if (isWindowsResult) {
       arr.push("useCaptureDeviceForEncode");
-      const VideoCaptureDeviceNoReuseExperiment = tmp6(15185).VideoCaptureDeviceNoReuseExperiment;
+      const VideoCaptureDeviceNoReuseExperiment = tmp6(15203).VideoCaptureDeviceNoReuseExperiment;
       if (VideoCaptureDeviceNoReuseExperiment.getConfig({ location: "handleReady" }).overrideDeviceReuse) {
         arr.push("videoCaptureDeviceOverrideReuse");
       }
@@ -3316,8 +3316,8 @@ class MediaEngineStore extends Store {
       const obj4 = result;
       const tmp9 = Features;
       if (supportsResult) {
-        const satisfies = _modDef15123.satisfies;
-        _modDef15123;
+        const satisfies = _modDef15141.satisfies;
+        _modDef15141;
         const tmp13 = DiscordNativeDefault;
         let release;
         if (tmp13 != null) {
@@ -3329,8 +3329,8 @@ class MediaEngineStore extends Store {
         const tmpResult = PlatformUtils;
         let satisfies2Result = tmpResult.isMac() && obj4.supports(tmp9.SCREEN_CAPTURE_KIT);
         if (satisfies2Result) {
-          const satisfies2 = _modDef15123.satisfies;
-          _modDef15123;
+          const satisfies2 = _modDef15141.satisfies;
+          _modDef15141;
           const tmp20 = DiscordNativeDefault;
           let release1;
           if (tmp20 != null) {
@@ -4501,8 +4501,8 @@ let obj7 = {
     let valueResult;
     let valueResult3;
     let valueResult4;
-    const f88760 = (id) => {
-      const f88759 = (containerId) => {
+    const f88861 = (id) => {
+      const f88860 = (containerId) => {
         let tmp = null != containerId.containerId && containerId.containerId === closure_0.containerId;
         if (!tmp) {
           tmp = null != containerId.hardwareId && containerId.hardwareId === closure_0.hardwareId;
@@ -4519,7 +4519,7 @@ let obj7 = {
       if ("videoinput" === id.type !== true) {
         let WEBCAM;
         closure_0 = id;
-        if (null != videoDevices.find(f88759) !== true) {
+        if (null != videoDevices.find(f88860) !== true) {
           const items = ["builtin", "displayport", "hdmi"];
           let str = id.macosTransportType;
           const includes = items.includes;
@@ -4554,7 +4554,7 @@ let obj7 = {
                     let tmp3 = "audioinput" === id.type;
                     if (tmp3) {
                       closure_0 = id;
-                      tmp3 = null != outputDevices.find(f88759);
+                      tmp3 = null != outputDevices.find(f88860);
                     }
                     if (tmp3 === true) {
                       let tmp5 = constants2;
@@ -4563,7 +4563,7 @@ let obj7 = {
                       let tmp4 = "audiooutput" === id.type;
                       if (tmp4) {
                         closure_0 = id;
-                        tmp4 = null != inputDevices.find(f88759);
+                        tmp4 = null != inputDevices.find(f88860);
                       }
                     }
                   }
@@ -4588,13 +4588,13 @@ let obj7 = {
     _require = videoDevices;
     const arr = videoDevices[{ audioinput: "inputDevices", audiooutput: "outputDevices", videoinput: "videoDevices" }[AUDIO_INPUT]];
     if (0 === arr.length) {
-      obj = { id: DEFAULT_DEVICE_ID, deviceType: AUDIO_INPUT, index: 0, name: tmp5, disabled: true, guid: "applicationId", hardwareId: "id", containerId: "p" };
+      obj = { id: DEFAULT_DEVICE_ID, deviceType: AUDIO_INPUT, index: 0, name: tmp5, disabled: true, guid: "applicationId", hardwareId: "methodobject", containerId: "c" };
       obj2 = {};
       obj2[obj.id] = obj;
       valueResult = obj2;
     } else {
       const arr2 = AUDIO_INPUT(12)(arr);
-      const mapped = arr2.map(f88760);
+      const mapped = arr2.map(f88861);
       let str = "id";
       const iter = mapped.keyBy("id");
       valueResult = iter.value();
@@ -4623,13 +4623,13 @@ let obj7 = {
     _require = videoDevices;
     const arr3 = videoDevices[{ audioinput: "inputDevices", audiooutput: "outputDevices", videoinput: "videoDevices" }[AUDIO_OUTPUT]];
     if (0 === arr3.length) {
-      const obj3 = { id: DEFAULT_DEVICE_ID, deviceType: AUDIO_OUTPUT, index: 0, name: tmp21, disabled: true, guid: "applicationId", hardwareId: "id", containerId: "p" };
+      const obj3 = { id: DEFAULT_DEVICE_ID, deviceType: AUDIO_OUTPUT, index: 0, name: tmp21, disabled: true, guid: "applicationId", hardwareId: "methodobject", containerId: "c" };
       const obj6 = {};
       obj6[obj3.id] = obj3;
       valueResult3 = obj6;
     } else {
       const arr4 = AUDIO_INPUT(12)(arr3);
-      const mapped1 = arr4.map(f88760);
+      const mapped1 = arr4.map(f88861);
       let str2 = "id";
       const iter2 = mapped1.keyBy("id");
       valueResult3 = iter2.value();
@@ -4654,9 +4654,9 @@ let obj7 = {
       const _Object = Object;
       const values5 = Object.values(tmp20);
       const _Object2 = Object;
-      const someResult = values5.some(f88762);
+      const someResult = values5.some(f88863);
       const values6 = Object.values(valueResult3);
-      const someResult1 = values6.some(f88762);
+      const someResult1 = values6.some(f88863);
       const obj13 = closure_71;
       if (someResult !== someResult1) {
         obj13.eachConnection((context) => {
@@ -4672,13 +4672,13 @@ let obj7 = {
     _require = videoDevices;
     const arr5 = videoDevices[{ audioinput: "inputDevices", audiooutput: "outputDevices", videoinput: "videoDevices" }[VIDEO_INPUT]];
     if (0 === arr5.length) {
-      const obj7 = { id: DEFAULT_DEVICE_ID, deviceType: VIDEO_INPUT, index: 0, name: tmp38, disabled: true, guid: "applicationId", hardwareId: "id", containerId: "p" };
+      const obj7 = { id: DEFAULT_DEVICE_ID, deviceType: VIDEO_INPUT, index: 0, name: tmp38, disabled: true, guid: "applicationId", hardwareId: "methodobject", containerId: "c" };
       const obj8 = {};
       obj8[obj7.id] = obj7;
       valueResult4 = obj8;
     } else {
       const arr6 = AUDIO_INPUT(12)(arr5);
-      const mapped2 = arr6.map(f88760);
+      const mapped2 = arr6.map(f88861);
       let str3 = "id";
       const iter3 = mapped2.keyBy("id");
       valueResult4 = iter3.value();
@@ -5278,10 +5278,10 @@ let obj7 = {
       const videoHook2 = getSettings().videoHook;
       enabled = videoHook2;
       if (enabled) {
-        const VideoHookDX12Experiment = tmp18(15117).VideoHookDX12Experiment;
+        const VideoHookDX12Experiment = tmp18(15135).VideoHookDX12Experiment;
         enabled = VideoHookDX12Experiment.getConfig({ location: "handleClipsInit" }).enabled;
       }
-      const UpscaleSmallCapturedFramesExperiment = tmp18(15118).UpscaleSmallCapturedFramesExperiment;
+      const UpscaleSmallCapturedFramesExperiment = tmp18(15136).UpscaleSmallCapturedFramesExperiment;
       const config = UpscaleSmallCapturedFramesExperiment.getConfig({ location: "handleClipsInit" });
       const obj8 = { id: _null.desktopSource.id, soundshareId: _null.desktopSource.soundshareId, useVideoHook: videoHook2, useGraphicsCapture: isWindowsResult, useCaptureDeviceForEncode: false, useLoopback: mediaEngineStore.getExperimentalSoundshare(), useQuartzCapturer: true, allowScreenCaptureKit: isMacResult, videoHookStaleFrameTimeoutMs: 500, graphicsCaptureStaleFrameTimeoutMs, hdrCaptureMode, videoHookAllowDx12: enabled, minCaptureWidth, minCaptureHeight };
       ({ minCaptureWidth, minCaptureHeight } = config);
@@ -5290,8 +5290,8 @@ let obj7 = {
       isWindowsResult = tmp18Result.isWindows();
       const obj7 = result;
       if (isWindowsResult) {
-        const satisfies = _modDef15123.satisfies;
-        _modDef15123;
+        const satisfies = _modDef15141.satisfies;
+        _modDef15141;
         const tmpResult6 = DiscordNativeDefault;
         let release;
         if (tmpResult6 != null) {
@@ -5306,8 +5306,8 @@ let obj7 = {
         isMacResult = obj7.supports(Features.SCREEN_CAPTURE_KIT);
       }
       if (isMacResult) {
-        const satisfies2 = _modDef15123.satisfies;
-        _modDef15123;
+        const satisfies2 = _modDef15141.satisfies;
+        _modDef15141;
         const tmpResult8 = DiscordNativeDefault;
         let release1;
         if (tmpResult8 != null) {

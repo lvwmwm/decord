@@ -1,12 +1,12 @@
-// Module ID: 5787
-// Function ID: 5788
+// Module ID: 5789
+// Function ID: 5790
 // Name: setShouldRecordNextConnection
-// Dependencies: [5698, 5788, 584, 2]
+// Dependencies: [5698, 5790, 584, 2]
 // Exports: default
 
-// Module 5787 (setShouldRecordNextConnection)
+// Module 5789 (setShouldRecordNextConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 5788 */;
+import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 5790 */;
 import RTCDebugStore from "RTCDebugStore" /* 5698 */;
 import size from "module_2" /* 2 */;
 

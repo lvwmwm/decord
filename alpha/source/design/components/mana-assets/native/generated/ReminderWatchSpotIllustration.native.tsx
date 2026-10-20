@@ -1,28 +1,28 @@
-// Module ID: 13649
-// Function ID: 13650
+// Module ID: 13667
+// Function ID: 13668
 // Name: ReminderWatchSpotIllustration
-// Dependencies: [19, 21, 13650, 13651, 13652, 558, 576, 6943, 5631, 2]
+// Dependencies: [19, 21, 13668, 13669, 13670, 558, 576, 6946, 5631, 2]
 
-// Module 13649 (ReminderWatchSpotIllustration)
+// Module 13667 (ReminderWatchSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import react_native from "react-native" /* 6943 */;
-import _modDef13650 from "module_13650" /* 13650 */;
-import _modDef13651 from "module_13651" /* 13651 */;
-import _modDef13652 from "module_13652" /* 13652 */;
+import react_native from "react-native" /* 6946 */;
+import _modDef13668 from "module_13668" /* 13668 */;
+import _modDef13669 from "module_13669" /* 13669 */;
+import _modDef13670 from "module_13670" /* 13670 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13650 };
+let obj2 = { uri: _modDef13668 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef13651 };
+let obj3 = { uri: _modDef13669 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef13652 };
-({ uri: _modDef13652 });
+obj[3] = { uri: _modDef13670 };
+({ uri: _modDef13670 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReminderWatchSpotIllustration(arg0) {
   let accessibilityLabel;
   let accessible;

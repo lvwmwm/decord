@@ -1,10 +1,10 @@
-// Module ID: 12537
-// Function ID: 12538
+// Module ID: 12554
+// Function ID: 12555
 // Name: closeCustomKeyboard
 // Dependencies: [5120, 2]
 // Exports: default
 
-// Module 12537 (closeCustomKeyboard)
+// Module 12554 (closeCustomKeyboard)
 import ChatInputUtils from "ChatInputUtils" /* 5120 */;
 import size from "module_2" /* 2 */;
 

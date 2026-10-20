@@ -1,18 +1,18 @@
-// Module ID: 12196
-// Function ID: 12197
+// Module ID: 12211
+// Function ID: 12212
 // Name: ConjureMessageAuthor
-// Dependencies: [19, 17, 21, 4945, 587, 12182, 558, 576, 12197, 5195, 6856, 1128, 12193, 4994, 12198, 3820, 1202, 8522, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 12197, 558, 576, 12212, 5195, 6859, 1128, 12208, 4994, 12213, 3820, 1202, 8526, 2]
 
-// Module 12196 (ConjureMessageAuthor)
+// Module 12211 (ConjureMessageAuthor)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef3820 from "module_3820" /* 3820 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12182 */;
-import ConjureMessageTime from "ConjureMessageTime" /* 12197 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12198 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12197 */;
+import ConjureMessageTime from "ConjureMessageTime" /* 12212 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12213 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -24,7 +24,7 @@ let metroRequire;
 let obj2;
 let size;
 let tmp;
-const AppsIcon2 = tmp(8522);
+const AppsIcon2 = tmp(8526);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -107,7 +107,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMessa
       let tmp11 = tmp7;
       if (null != onPressName) {
         const obj4 = { style: tmp4.name, onPress: onPressName, onLongPress: onPressName, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(intl2.t.uCenkh, obj5), children: tmp7 };
-        const PressableOpacity = tmp(6856).PressableOpacity;
+        const PressableOpacity = tmp(6859).PressableOpacity;
         intl = tmp(1128).intl;
         obj5 = { username: name };
         tmp11 = hasOwnProperty(PressableOpacity, obj4);
@@ -148,7 +148,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMessa
   const tmp8 = View;
   if (null != onPressName) {
     const obj4 = { style: tmp.name, onPress: onPressName, onLongPress: onPressName, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(intl2.t.uCenkh, obj5), children: tmp6 };
-    const PressableOpacity = tmp2(6856).PressableOpacity;
+    const PressableOpacity = tmp2(6859).PressableOpacity;
     intl = tmp2(1128).intl;
     obj5 = { username: name };
     tmp5Result = tmp5(PressableOpacity, obj4);
@@ -172,7 +172,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserH
   let obj = messageAuthorUser(576);
   const cResult = obj.c(6);
   ({ at, userId } = arg0);
-  const obj2 = messageAuthorUser(12193);
+  const obj2 = messageAuthorUser(12208);
   messageAuthorUser = obj2.useMessageAuthorUser(userId);
   const obj3 = messageAuthorUser(4994);
   const name = obj3.useName(messageAuthorUser);
@@ -217,7 +217,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserH
   let userId;
   let messageAuthorUser;
   ({ userId, at } = arg0);
-  let obj = messageAuthorUser(12193);
+  let obj = messageAuthorUser(12208);
   messageAuthorUser = obj.useMessageAuthorUser(userId);
   const obj2 = messageAuthorUser(4994);
   const name = obj2.useName(messageAuthorUser);
@@ -277,7 +277,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserA
   if (undefined === size) {
     size = tmp(1202).AvatarSizes.NORMAL;
   }
-  const tmpResult = tmp(12193);
+  const tmpResult = tmp(12208);
   messageAuthorUser = tmpResult.useMessageAuthorUser(userId);
   if (cResult[0] !== messageAuthorUser) {
     const fn = function t() {
@@ -317,7 +317,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserA
         tmp6 = tmp13;
       }
       const obj2 = { onPress: tmp5, onLongPress: tmp5, accessibilityRole: "button", accessibilityLabel: tmp8, children: tmp10 };
-      const tmp15 = closure_5(tmp(6856).PressableOpacity, obj2);
+      const tmp15 = closure_5(tmp(6859).PressableOpacity, obj2);
       cResult[6] = tmp5;
       cResult[7] = tmp10;
       cResult[8] = tmp15;
@@ -342,7 +342,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserA
     NORMAL = messageAuthorUser(1202).AvatarSizes.NORMAL;
   }
   messageAuthorUser = undefined;
-  let obj = messageAuthorUser(12193);
+  let obj = messageAuthorUser(12208);
   messageAuthorUser = obj.useMessageAuthorUser(userId);
   const items = [messageAuthorUser];
   const callback = react.useCallback(() => {
@@ -354,7 +354,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserA
   let tmp7 = null;
   if (null != messageAuthorUser) {
     const obj2 = { onPress: callback, onLongPress: callback, accessibilityRole: "button", accessibilityLabel: intl.string(messageAuthorUser(1128).t.iXAna6), children: closure_5(messageAuthorUser(1202).Avatar, obj3) };
-    const PressableOpacity = tmp3(6856).PressableOpacity;
+    const PressableOpacity = tmp3(6859).PressableOpacity;
     intl = tmp3(1128).intl;
     obj3 = { size: NORMAL, user: messageAuthorUser, guildId: "r" };
     tmp7 = closure_5(PressableOpacity, obj2);

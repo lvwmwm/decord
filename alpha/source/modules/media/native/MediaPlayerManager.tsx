@@ -1,10 +1,10 @@
-// Module ID: 15602
-// Function ID: 15603
+// Module ID: 15621
+// Function ID: 15622
 // Name: MediaPlayerManager
-// Dependencies: [17, 4799, 6752, 4800, 5965, 4880, 2001, 1087, 5570, 15603, 1098, 3, 570, 1274, 2004, 5112, 584, 1384, 568, 7512, 6750, 2]
+// Dependencies: [17, 4799, 6755, 4800, 5968, 4880, 2001, 1087, 5570, 15622, 1098, 3, 570, 1274, 2004, 5112, 584, 1384, 568, 7515, 6753, 2]
 // Exports: isPlaybackComplete
 
-// Module 15602 (MediaPlayerManager)
+// Module 15621 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -13,15 +13,15 @@ import Constants2 from "Constants" /* 1098 */;
 import react_native from "react-native" /* 1274 */;
 import RootNavigationRef from "RootNavigationRef" /* 5112 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5570 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7512 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7515 */;
 import react_native2 from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
-import VoicePanelStore from "VoicePanelStore" /* 6752 */;
+import VoicePanelStore from "VoicePanelStore" /* 6755 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
-import MessageStore from "MessageStore" /* 5965 */;
+import MessageStore from "MessageStore" /* 5968 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15603 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15622 */;
 import module_570 from "module_570" /* 570 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
@@ -53,13 +53,13 @@ const useMediaPlayerManagerStore = module_570.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "test",
-    showPip: "1f3fb",
+    showPip: "Niue",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: "+1 268"
+    currentlyDisplayedChannelId: null
   };
   return obj;
 });

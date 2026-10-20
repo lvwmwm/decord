@@ -1,9 +1,9 @@
-// Module ID: 13648
-// Function ID: 13649
+// Module ID: 13666
+// Function ID: 13667
 // Name: ForLaterIntro
-// Dependencies: [17, 5227, 21, 4945, 587, 558, 576, 9995, 13649, 13653, 1128, 5195, 13657, 5631, 13631, 5653, 7251, 2]
+// Dependencies: [17, 5227, 21, 4945, 587, 558, 576, 10006, 13667, 13671, 1128, 5195, 13675, 5631, 13649, 5653, 7254, 2]
 
-// Module 13648 (ForLaterIntro)
+// Module 13666 (ForLaterIntro)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
@@ -11,9 +11,9 @@ import Text_Text from "Text/Text" /* 5195 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 5227 */;
 import FastImageDefault from "FastImage" /* 5631 */;
 import ClockIcon from "ClockIcon" /* 5653 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 9995 */;
-import BookmarkIcon from "BookmarkIcon" /* 13631 */;
-import _modDef13657 from "module_13657" /* 13657 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 10006 */;
+import BookmarkIcon from "BookmarkIcon" /* 13649 */;
+import _modDef13675 from "module_13675" /* 13675 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -36,7 +36,7 @@ let obj9;
 let size;
 let size1;
 let tmp8;
-const ChevronSmallRightIcon2 = tmp8(7251);
+const ChevronSmallRightIcon2 = tmp8(7254);
 ({ ScrollView: c3, View: closure_4 } = react_native);
 const ACTION_SHEET_BORDER_RADIUS = ActionSheetConstants.ACTION_SHEET_BORDER_RADIUS;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -72,9 +72,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterIntr
   const tmp4 = closure_7();
   const tmp5 = type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER;
   if (tmp5) {
-    BookmarksSpotIllustration = tmp(13649).ReminderWatchSpotIllustration;
+    BookmarksSpotIllustration = tmp(13667).ReminderWatchSpotIllustration;
   } else {
-    BookmarksSpotIllustration = tmp(13653).BookmarksSpotIllustration;
+    BookmarksSpotIllustration = tmp(13671).BookmarksSpotIllustration;
   }
   ({ scrollView, pageContainer, container } = tmp4);
   if (cResult[0] !== BookmarksSpotIllustration) {
@@ -227,9 +227,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterIntr
   const tmp = closure_7();
   const tmp4 = type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER;
   if (tmp4) {
-    BookmarksSpotIllustration = tmp2(13649).ReminderWatchSpotIllustration;
+    BookmarksSpotIllustration = tmp2(13667).ReminderWatchSpotIllustration;
   } else {
-    BookmarksSpotIllustration = tmp2(13653).BookmarksSpotIllustration;
+    BookmarksSpotIllustration = tmp2(13671).BookmarksSpotIllustration;
   }
   const obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: metroRequire(React3, obj2) };
   obj2 = { style: tmp.container, children: items };
@@ -281,7 +281,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntroDe
   const tmp4 = closure_7();
   const demo = tmp4.demo;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef13657 };
+    const obj2 = { uri: _modDef13675 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -466,7 +466,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntroDe
   const obj = { style: tmp.demo, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items2 };
   const obj2 = { style: tmp.messages, children: items };
   const obj3 = { source: obj4, style: tmp.avatar };
-  obj4 = { uri: _modDef13657 };
+  obj4 = { uri: _modDef13675 };
   const tmp2 = FastImageDefault;
   items = [hasOwnProperty(tmp2, obj3), ];
   const obj5 = { style: tmp.messageLines, children: items1 };
@@ -545,7 +545,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SheetRo
         let tmp16 = null;
         if (tmp4) {
           const obj3 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
-          const ChevronSmallRightIcon = tmp(7251).ChevronSmallRightIcon;
+          const ChevronSmallRightIcon = tmp(7254).ChevronSmallRightIcon;
           tmp16 = hasOwnProperty(ChevronSmallRightIcon, obj3);
         }
         cResult[8] = tmp4;

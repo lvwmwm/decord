@@ -1,26 +1,26 @@
-// Module ID: 8538
-// Function ID: 8539
+// Module ID: 8544
+// Function ID: 8545
 // Name: ComponentStateContext
-// Dependencies: [32, 19, 8214, 4881, 4800, 4860, 6584, 1392, 8539, 21, 2000, 5977, 5975, 5974, 558, 576, 504, 8278, 7315, 8541, 8542, 584, 5224, 5969, 2]
+// Dependencies: [32, 19, 8218, 4881, 4800, 4860, 6587, 1392, 8545, 21, 2000, 5980, 5978, 5977, 558, 576, 504, 8282, 7318, 8547, 8548, 584, 5224, 5972, 2]
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentState, useComponentStateContext
 
-// Module 8538 (ComponentStateContext)
+// Module 8544 (ComponentStateContext)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Server from "Server" /* 2000 */;
 import useMountEffectDefault from "useMountEffect" /* 5224 */;
-import InteractionTypes from "InteractionTypes" /* 5974 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 5977 */;
-import InteractionUtils from "InteractionUtils" /* 8542 */;
+import InteractionTypes from "InteractionTypes" /* 5977 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5980 */;
+import InteractionUtils from "InteractionUtils" /* 8548 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import InteractionStore_mod from "InteractionStore" /* 8214 */;
+import InteractionStore_mod from "InteractionStore" /* 8218 */;
 import LurkingStore from "LurkingStore" /* 4881 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import GuildMemberStore from "GuildMemberStore" /* 4860 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6584 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6587 */;
 import UserStore from "UserStore" /* 1392 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8539 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8545 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,23 +56,23 @@ function getActionComponentState(interaction, id, shouldDisableInteractiveCompon
   }
   let DISABLED = InteractionComponentTypes.ActionComponentState.NORMAL;
   let DISABLED2 = DISABLED;
-  const tmp3 = null != interaction && interaction.state !== tmp(5975).InteractionState.FAILED;
+  const tmp3 = null != interaction && interaction.state !== tmp(5978).InteractionState.FAILED;
   if (tmp3) {
     if (interaction.data.interactionType === InteractionTypes.InteractionTypes.MESSAGE_COMPONENT) {
       if (interaction.data.componentId === id.id) {
-        DISABLED = tmp(5977).ActionComponentState.LOADING;
+        DISABLED = tmp(5980).ActionComponentState.LOADING;
       }
       DISABLED2 = DISABLED;
     }
     if (isInteractionComponent(id)) {
-      DISABLED = tmp(5977).ActionComponentState.DISABLED;
+      DISABLED = tmp(5980).ActionComponentState.DISABLED;
     }
   }
   if (flag) {
     flag = isInteractionComponent(id);
   }
   if (flag) {
-    DISABLED2 = tmp(5977).ActionComponentState.DISABLED;
+    DISABLED2 = tmp(5980).ActionComponentState.DISABLED;
   }
   return DISABLED2;
 }
@@ -307,8 +307,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldDis
   }
   const tmpResult7 = tmp(504);
   const stateFromStores2 = tmpResult7.useStateFromStores(tmp17, tmp20);
-  const useCurrentUserCommunicationDisabled = tmp(8278).useCurrentUserCommunicationDisabled;
-  tmp(8278);
+  const useCurrentUserCommunicationDisabled = tmp(8282).useCurrentUserCommunicationDisabled;
+  tmp(8282);
   if (tmp4 != null) {
     class I {
       constructor() {
@@ -322,10 +322,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldDis
     }
   }
   _slicedToArray(useCurrentUserCommunicationDisabled(undefined), 2)[1];
-  const tmpResult9 = tmp(7315);
+  const tmpResult9 = tmp(7318);
   const isThreadModerator = tmpResult9.useIsThreadModerator(tmp4);
   let tmp27 = !stateFromStores;
-  const tmpResult10 = tmp(7315);
+  const tmpResult10 = tmp(7318);
   const canUnarchiveThread = tmpResult10.useCanUnarchiveThread(tmp4);
   if (stateFromStores) {
     class I {
@@ -495,16 +495,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldDis
     return flag;
   });
   let guild_id;
-  const useCurrentUserCommunicationDisabled = channel(8278).useCurrentUserCommunicationDisabled;
-  channel(8278);
+  const useCurrentUserCommunicationDisabled = channel(8282).useCurrentUserCommunicationDisabled;
+  channel(8282);
   if (channel != null) {
     guild_id = channel.guild_id;
   }
   const tmp8 = _slicedToArray(useCurrentUserCommunicationDisabled(guild_id), 2)[1];
-  const tmpResult = tmp(7315);
+  const tmpResult = tmp(7318);
   const isThreadModerator = tmpResult.useIsThreadModerator(channel);
   let tmp11 = !stateFromStores;
-  const tmpResult2 = tmp(7315);
+  const tmpResult2 = tmp(7318);
   const canUnarchiveThread = tmpResult2.useCanUnarchiveThread(channel);
   if (stateFromStores) {
     tmp11 = stateFromStores1;
@@ -939,7 +939,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCom
                 return tmp18;
               }
             }
-            let obj2 = { state: tmp17, executeStateUpdate: tmp13, isDisabled: false, visualState: tmp(5977).ActionComponentState.NORMAL, error };
+            let obj2 = { state: tmp17, executeStateUpdate: tmp13, isDisabled: false, visualState: tmp(5980).ActionComponentState.NORMAL, error };
             class S {
               constructor(state) {
                 let tmp = null == state;
@@ -1034,7 +1034,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCom
   if (stateFromStores == null) {
     stateFromStores = null;
   }
-  let obj2 = { state: stateFromStores, executeStateUpdate, isDisabled: false, visualState: tmp(5977).ActionComponentState.NORMAL, error };
+  let obj2 = { state: stateFromStores, executeStateUpdate, isDisabled: false, visualState: tmp(5980).ActionComponentState.NORMAL, error };
   return obj2;
 });
 const redux = react.createContext(null);

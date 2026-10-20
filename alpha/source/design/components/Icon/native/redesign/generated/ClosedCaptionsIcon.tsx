@@ -1,14 +1,14 @@
-// Module ID: 16109
-// Function ID: 16110
+// Module ID: 16128
+// Function ID: 16129
 // Name: ClosedCaptionsIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16110, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16129, 5630, 2]
 
-// Module 16109 (ClosedCaptionsIcon)
+// Module 16128 (ClosedCaptionsIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 16110 */;
+import AssetRegistry from "AssetRegistry" /* 16129 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 16435
-// Function ID: 16436
+// Module ID: 16454
+// Function ID: 16455
 // Name: useColorPresetsWithA11yLabels
 // Dependencies: [19, 1410, 558, 576, 1128, 2918, 1105, 2]
 
-// Module 16435 (useColorPresetsWithA11yLabels)
+// Module 16454 (useColorPresetsWithA11yLabels)
 import react2 from "react" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
 import intl2 from "intl" /* 1128 */;

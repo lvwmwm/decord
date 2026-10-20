@@ -1,9 +1,9 @@
-// Module ID: 15094
-// Function ID: 15095
+// Module ID: 15112
+// Function ID: 15113
 // Name: ModalStepIndicator
 // Dependencies: [19, 17, 21, 4945, 558, 576, 587, 5014, 5213, 5208, 1128, 2082, 2]
 
-// Module 15094 (ModalStepIndicator)
+// Module 15112 (ModalStepIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

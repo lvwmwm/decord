@@ -1,13 +1,13 @@
-// Module ID: 13016
-// Function ID: 13017
+// Module ID: 13034
+// Function ID: 13035
 // Name: CreateGuild
-// Dependencies: [19, 17, 1392, 1087, 21, 4945, 587, 558, 576, 5228, 5926, 1128, 5195, 12551, 6956, 7241, 5205, 6981, 5932, 2]
+// Dependencies: [19, 17, 1392, 1087, 21, 4945, 587, 558, 576, 5228, 5929, 1128, 5195, 12568, 6959, 7244, 5205, 6984, 5935, 2]
 
-// Module 13016 (CreateGuild)
+// Module 13034 (CreateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import react_native2 from "react-native" /* 5926 */;
+import react_native2 from "react-native" /* 5929 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
@@ -363,8 +363,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
       cResult[16] = onIconPress;
       cResult[17] = tmp4.contentContainer.backgroundColor;
       cResult[18] = tmp4.iconUploader;
-      cResult[19] = closure_7(ref(12551), obj2);
-      const tmp27 = closure_7(ref(12551), obj2);
+      cResult[19] = closure_7(ref(12568), obj2);
+      const tmp27 = closure_7(ref(12568), obj2);
     }
     const obj3 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: tmp19 };
     cResult[12] = tmp4.description;
@@ -424,7 +424,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
     }
   }, items);
   let obj = { style: tmp.flex, contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer, children: tmp11(Stack, { children: items1 }) };
-  Stack = isScreenReaderEnabled(5932).Stack;
+  Stack = isScreenReaderEnabled(5935).Stack;
   const obj3 = { ref, style: tmp.header, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: customTitle };
   const Text = isScreenReaderEnabled(5195).Text;
   const tmp10 = ScrollView;
@@ -442,9 +442,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
   }
   items1[1] = closure_7(Text2, obj4);
   const obj5 = { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon };
-  items1[2] = closure_7(ref(12551), obj5);
+  items1[2] = closure_7(ref(12568), obj5);
   const obj6 = { clearable: true, label: intl3.string(isScreenReaderEnabled(1128).t.dBih7e), errorMessage: firstFieldErrorMessage, value: guild.name, onChange: onNameChange, autoFocus, autoCorrect: false, returnKeyType: "done" };
-  const TextInput = tmp4(6956).TextInput;
+  const TextInput = tmp4(6959).TextInput;
   intl3 = tmp4(1128).intl;
   firstFieldErrorMessage = undefined;
   const tmp12 = ref;
@@ -458,7 +458,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
   items1[3] = closure_7(TextInput, obj6);
   if (tmp9Result) {
     const obj7 = { onValueChange: onStaffOnlyChange, value: guild.staffOnly, start: true, end: true, label: "Staff Only", subLabel: intl4.string(isScreenReaderEnabled(1128).t.edQ5va) };
-    const TableSwitchRow = tmp4(7241).TableSwitchRow;
+    const TableSwitchRow = tmp4(7244).TableSwitchRow;
     intl4 = tmp4(1128).intl;
     tmp9Result = tmp9(TableSwitchRow, obj7);
   }
@@ -494,7 +494,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
       tmp9Result2 = null;
       if ("" !== message1) {
         let message2;
-        const tmp12Result = tmp12(6981);
+        const tmp12Result = tmp12(6984);
         if (error != null) {
           message2 = error.message;
         }

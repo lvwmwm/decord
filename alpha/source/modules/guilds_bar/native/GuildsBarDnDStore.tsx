@@ -1,13 +1,13 @@
-// Module ID: 17461
-// Function ID: 17462
+// Module ID: 17480
+// Function ID: 17481
 // Name: GuildsBarDnDStore
-// Dependencies: [6649, 1269, 5014, 1274, 1257, 558, 576, 4863, 2]
+// Dependencies: [6652, 1269, 5014, 1274, 1257, 558, 576, 4863, 2]
 
-// Module 17461 (GuildsBarDnDStore)
+// Module 17480 (GuildsBarDnDStore)
 import react from "react" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import react_native from "react-native" /* 1274 */;
-import SortedGuildStore from "SortedGuildStore" /* 6649 */;
+import SortedGuildStore from "SortedGuildStore" /* 6652 */;
 import module_1269 from "module_1269" /* 1269 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,12 +1,12 @@
-// Module ID: 9744
-// Function ID: 9745
+// Module ID: 9757
+// Function ID: 9758
 // Name: EmojiPickerUtils
-// Dependencies: [19, 6673, 4822, 6649, 1392, 6676, 1087, 1395, 1243, 1394, 1281, 9745, 5673, 9746, 9748, 9749, 504, 1991, 9750, 1128, 4898, 4894, 1267, 12, 1104, 558, 576, 4781, 2]
+// Dependencies: [19, 6676, 4822, 6652, 1392, 6679, 1087, 1395, 1243, 1394, 1281, 9758, 5673, 9759, 9761, 9762, 504, 1991, 4898, 1128, 4894, 1267, 12, 1104, 558, 576, 4781, 2]
 // Exports: getAriaIdForEmojiCategory, getEmojiSubCategory, getSearchPlaceholder, getStringForEmojiCategory, getUnicodeEmojiCategories, initializeSearch, trackEmojiFavorited, trackEmojiFocus, trackEmojiSearchEmpty, trackEmojiSearchResultsViewed, trackEmojiSearchSelect, trackEmojiSearchStart, trackEmojiSelect, trackPremiumSettingsPaneOpened, useEmojiCategories
 
-// Module 9744 (EmojiPickerUtils)
+// Module 9757 (EmojiPickerUtils)
 import DurationsDefault from "Durations" /* 1104 */;
-import intl14 from "intl" /* 1128 */;
+import intl13 from "intl" /* 1128 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1243 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import v1 from "v1" /* 1281 */;
@@ -14,13 +14,13 @@ import PremiumConstants from "PremiumConstants" /* 1394 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4894 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4898 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5673 */;
-import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 9745 */;
+import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 9758 */;
 import react_mod from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6673 */;
+import EmojiStore from "EmojiStore" /* 6676 */;
 import GuildStore from "GuildStore" /* 4822 */;
-import SortedGuildStore from "SortedGuildStore" /* 6649 */;
+import SortedGuildStore from "SortedGuildStore" /* 6652 */;
 import UserStore from "UserStore" /* 1392 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6676 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6679 */;
 import Constants from "Constants" /* 1087 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import module_12 from "module_12" /* 12 */;
@@ -28,7 +28,7 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, constants, constants2, dependencyMap, importDefault, results, set;
+let _require, dependencyMap, importDefault, results, set;
 
 let c10;
 let c9;
@@ -72,7 +72,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSear
   const cResult = obj.c(12);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function u() {
-      const FrecencyUserSettingsActionCreators = closure_0(intention[27]).FrecencyUserSettingsActionCreators;
+      const FrecencyUserSettingsActionCreators = closure_0(intention[26]).FrecencyUserSettingsActionCreators;
       const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
     };
     const items = [];
@@ -142,7 +142,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSear
   dependencyMap = intention;
   react = showOnlyUnicode;
   const effect = react.useEffect(() => {
-    const FrecencyUserSettingsActionCreators = closure_0(intention[27]).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = closure_0(intention[26]).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }, []);
   const tmp2 = closure_16(intention);
@@ -174,7 +174,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrequentl
   const tmp = _require;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function s() {
-      const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[27]).FrecencyUserSettingsActionCreators;
+      const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[26]).FrecencyUserSettingsActionCreators;
       const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
     };
     const items = [];
@@ -210,7 +210,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrequentl
   let closure_0;
   _require = arg0;
   const effect = react.useEffect(() => {
-    const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[27]).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[26]).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }, []);
   const items = [EmojiStore];
@@ -234,7 +234,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrequentl
   const tmp = _require;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function s() {
-      const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[27]).FrecencyUserSettingsActionCreators;
+      const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[26]).FrecencyUserSettingsActionCreators;
       const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
     };
     const items = [];
@@ -270,7 +270,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrequentl
   let closure_0;
   _require = arg0;
   const effect = react.useEffect(() => {
-    const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[27]).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[26]).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }, []);
   const items = [EmojiStore];
@@ -294,7 +294,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoriteE
   const tmp = _require;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function s() {
-      const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[27]).FrecencyUserSettingsActionCreators;
+      const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[26]).FrecencyUserSettingsActionCreators;
       const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
     };
     const items = [];
@@ -329,7 +329,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoriteE
   let closure_0;
   _require = arg0;
   const effect = react.useEffect(() => {
-    const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[27]).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[26]).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }, []);
   const items = [EmojiStore];
@@ -350,7 +350,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFavori
   const cResult = obj.c(6);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function l() {
-      const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[27]).FrecencyUserSettingsActionCreators;
+      const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[26]).FrecencyUserSettingsActionCreators;
       const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
     };
     const items = [];
@@ -396,7 +396,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFavori
   _require = arg0;
   let closure_1 = arg1;
   const effect = react.useEffect(() => {
-    const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[27]).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[26]).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }, []);
   const items = [EmojiStore];
@@ -423,7 +423,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiInP
   const tmp = _require;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function s() {
-      const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[27]).FrecencyUserSettingsActionCreators;
+      const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[26]).FrecencyUserSettingsActionCreators;
       const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
     };
     const items = [];
@@ -459,7 +459,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiInP
   let closure_0;
   _require = arg0;
   const effect = react.useEffect(() => {
-    const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[27]).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = closure_0(dependencyMap[26]).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
   }, []);
   const items = [EmojiStore];
@@ -503,41 +503,37 @@ export const useEmojiCategories = function useEmojiCategories(CHAT, channel, cRe
   }
   let guildId = obj.guildId;
   if (guildId === undefined) {
-    let tmp2 = null;
+    const tmp2 = null;
     let guildId1;
     if (channel != null) {
       guildId1 = channel.getGuildId();
     }
     guildId = guildId1;
   }
-  let flag = obj.shouldShowSoundmojiInEmojiPicker;
+  let flag = obj.bypassPremiumEmojiEntitlement;
   if (flag === undefined) {
     flag = false;
-  }
-  let flag2 = obj.bypassPremiumEmojiEntitlement;
-  if (flag2 === undefined) {
-    flag2 = false;
   }
   const suggestedEmojis = obj.suggestedEmojis;
   let obj2 = require("TopEmojisUtils");
   const result = obj2.maybeFetchTopEmojisByGuild(guildId);
   let tmp5 = closure_16(CHAT);
-  let flattenedGuildIds = tmp5;
+  let closure_5 = tmp5;
   let tmp6 = closure_22(guildId);
-  const currentUser = tmp6;
+  const flattenedGuildIds = tmp6;
   let tmp7 = closure_23(guildId);
-  constants = tmp7;
+  const currentUser = tmp7;
   let tmp8 = closure_24(guildId);
-  constants2 = tmp8;
+  let closure_8 = tmp8;
   let tmp9 = require("useTopAndNewlyAddedEmojis")(guildId, CHAT);
   ({ topEmojis, newlyAddedEmojis } = tmp9);
   const allEmojis = require("useEmojiHotrail")({ topEmojis, newlyAddedEmojis }).allEmojis;
   let obj3 = require("get initialized");
-  let items = [flag2];
+  let items = [suggestedEmojis];
   let items1 = [guildId];
   const stateFromStores = obj3.useStateFromStores(items, () => EmojiStore.getDisambiguatedEmojiContext(guildId), items1);
   let obj4 = require("get initialized");
-  const items2 = [suggestedEmojis];
+  const items2 = [closure_5];
   const stateFromStores1 = obj4.useStateFromStores(items2, () => {
     const guild = GuildStore.getGuild(guildId);
     let name;
@@ -551,15 +547,11 @@ export const useEmojiCategories = function useEmojiCategories(CHAT, channel, cRe
   const stateFromStores2 = obj5.useStateFromStores(items3, () => currentUser.getCurrentUser());
   let obj6 = require("PremiumTypeUtils");
   const isPremiumResult = obj6.isPremium(stateFromStores2);
-  let c13 = isPremiumResult;
-  let obj7 = require("SoundmojiSendingExperiment");
-  const soundmojiEmojiPickerSectionExperiment = obj7.useSoundmojiEmojiPickerSectionExperiment({ location: "useEmojiCategories" });
-  const items4 = [stateFromStores, channel, guildId, CHAT, isPremiumResult, allEmojis, stateFromStores1, tmp7, tmp6, tmp8, tmp5, soundmojiEmojiPickerSectionExperiment, flag, flag2];
+  let c12 = isPremiumResult;
+  const items4 = [stateFromStores, channel, guildId, CHAT, isPremiumResult, allEmojis, stateFromStores1, tmp7, tmp6, tmp8, tmp5, flag];
   const memo = flag.useMemo(() => {
     let bypassPremiumEmojiEntitlement;
     let categoryEmojis;
-    let intention;
-    let intl;
     function addCustomEmojiCategory(flattenedGuildIds, GUILD) {
       let emojisDisabled;
       let emojisPremiumLockedCount;
@@ -568,8 +560,8 @@ export const useEmojiCategories = function useEmojiCategories(CHAT, channel, cRe
       const nextResult = iter.next();
       while (iter !== undefined) {
         let guild;
-        let tmp4 = categoryEmojis;
-        if (GUILD === categoryEmojis.GUILD) {
+        let tmp4 = constants;
+        if (GUILD === constants.GUILD) {
           guild = GuildStore.getGuild(tmp2);
         }
         if (null != guild) {
@@ -584,7 +576,7 @@ export const useEmojiCategories = function useEmojiCategories(CHAT, channel, cRe
                 let tmp16 = null;
                 if (GUILD === tmp4.GUILD) {
                   let obj = { type: tmp4.GUILD, guild, isNitroLocked: tmp10, emojis: arr, emojisDisabled, emojisHidden: hiddenEmojiIds };
-                  tmp10 = !c13 && tmp33;
+                  tmp10 = !c12 && tmp33;
                   if (tmp10) {
                     tmp10 = emojisPremiumLockedCount === arr.length;
                   }
@@ -605,99 +597,88 @@ export const useEmojiCategories = function useEmojiCategories(CHAT, channel, cRe
       }
     }
     function getEmojiUnavailableReasons(categoryEmojis) {
-      const obj = channel(guildId[20]);
+      const obj = channel(guildId[18]);
       const obj2 = { categoryEmojis, channel, guildId: getEmojiUnavailableReasons, intention, bypassPremiumEmojiEntitlement };
       return obj.getEmojiUnavailableReasons(obj2);
     }
-    CHAT = stateFromStores.getGroupedCustomEmoji();
+    const intention = stateFromStores.getGroupedCustomEmoji();
     channel = [];
-    let obj = { type: constants2.SOUNDMOJI, name: intl.string(CHAT(guildId[19]).t.f0Ezmv), id: constants.SOUNDMOJI, isNitroLocked: false };
-    flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
-    intl = CHAT(guildId[19]).intl;
-    const tmp2 = addCustomEmojiCategory(flattenedGuildIds, constants2.GUILD);
-    const categories = flag2.categories;
-    let tmp4 = soundmojiEmojiPickerSectionExperiment;
-    if (tmp4) {
-      let tmp5 = flag;
-      if (tmp5) {
-        let items = [obj];
-        let tmp6 = items;
-      }
-      return tmp3((arr, id) => {
-        let intl;
-        let intl2;
-        let intl3;
-        let obj6;
-        if (id === metroImportAll.TOP_GUILD_EMOJI) {
-          const obj3 = { categoryEmojis: allEmojis, channel, guildId, intention, bypassPremiumEmojiEntitlement: flag2 };
-          const obj8 = EmojiUtilsDefault;
-          const emojiUnavailableReasons = obj8.getEmojiUnavailableReasons(obj3);
-          const emojisUnfiltered = emojiUnavailableReasons.emojisUnfiltered;
-          if (null != emojisUnfiltered) {
-            if (0 !== emojisUnfiltered.length) {
-              const push4 = arr.push;
-              const obj4 = { type: categoryEmojis.TOP_GUILD_EMOJI, id, name: intl3.formatToPlainString(intl14.t.W6Wi1X, obj6), isNitroLocked: false, emojis: emojisUnfiltered, emojisDisabled: tmp50 };
-              intl3 = intl14.intl;
-              obj6 = { guildName: stateFromStores1 };
-              push4(obj4);
-            }
+    addCustomEmojiCategory(flattenedGuildIds.getFlattenedGuildIds(), allEmojis.GUILD);
+    const categories = suggestedEmojis.categories;
+    return categories.reduce((arr, id) => {
+      let intl;
+      let intl2;
+      let intl3;
+      let obj6;
+      if (id === metroImportAll.TOP_GUILD_EMOJI) {
+        const obj3 = { categoryEmojis: allEmojis, channel, guildId, intention, bypassPremiumEmojiEntitlement: flag };
+        const obj8 = EmojiUtilsDefault;
+        const emojiUnavailableReasons = obj8.getEmojiUnavailableReasons(obj3);
+        const emojisUnfiltered = emojiUnavailableReasons.emojisUnfiltered;
+        if (null != emojisUnfiltered) {
+          if (0 !== emojisUnfiltered.length) {
+            const push4 = arr.push;
+            const obj4 = { type: constants.TOP_GUILD_EMOJI, id, name: intl3.formatToPlainString(intl13.t.W6Wi1X, obj6), isNitroLocked: false, emojis: emojisUnfiltered, emojisDisabled: tmp50 };
+            intl3 = intl13.intl;
+            obj6 = { guildName: stateFromStores1 };
+            push4(obj4);
           }
-          return arr;
-        } else if (id === metroImportAll.RECENT) {
-          const items = [, ];
-          ({ REACTION: arr4[0], DEFAULT_REACT_EMOJI: arr4[1] } = closure_18);
-          const obj7 = { categoryEmojis: items.includes(intention) ? constants : currentUser, channel, guildId, intention, bypassPremiumEmojiEntitlement: flag2 };
-          const obj5 = EmojiUtilsDefault;
-          const emojiUnavailableReasons1 = obj5.getEmojiUnavailableReasons(obj7);
-          const emojisUnfiltered1 = emojiUnavailableReasons1.emojisUnfiltered;
-          if (null != emojisUnfiltered1) {
-            if (0 !== emojisUnfiltered1.length) {
-              const push3 = arr.push;
-              const obj9 = { type: categoryEmojis.RECENT, id, name: intl2.string(intl14.t["5TvaSm"]), isNitroLocked: false, emojis: emojisUnfiltered1, emojisDisabled: tmp37 };
-              intl2 = intl14.intl;
-              push3(obj9);
-            }
-          }
-          return arr;
-        } else if (id === metroImportAll.FAVORITES) {
-          const obj10 = { categoryEmojis, channel, guildId, intention, bypassPremiumEmojiEntitlement: flag2 };
-          const obj2 = EmojiUtilsDefault;
-          const emojiUnavailableReasons2 = obj2.getEmojiUnavailableReasons(obj10);
-          const emojisUnfiltered2 = emojiUnavailableReasons2.emojisUnfiltered;
-          if (null != emojisUnfiltered2) {
-            if (0 !== emojisUnfiltered2.length) {
-              const push2 = arr.push;
-              const obj11 = { type: categoryEmojis.FAVORITES, id, name: intl.string(intl14.t.y3LQCG), isNitroLocked: false, emojis: emojisUnfiltered2, emojisDisabled: tmp22 };
-              intl = intl14.intl;
-              push2(obj11);
-            }
-          }
-          return arr;
-        } else if (id === metroImportAll.CUSTOM) {
-          let found = channel;
-          arr = channel;
-          if (!flattenedGuildIds) {
-            found = arr.filter((type) => {
-              if (type.type === categoryEmojis.GUILD) {
-                flag = type.guild.id === getEmojiUnavailableReasons;
-              } else {
-                type = type.type;
-                flag = false;
-              }
-              return flag;
-            });
-          }
-          const push = arr.push;
-          const items1 = [];
-          HermesBuiltin.arraySpread(items1, found, 0);
-          HermesBuiltin.apply(push, items1, arr);
-        } else {
-          const obj = { type: categoryEmojis.UNICODE, id, name: id, isNitroLocked: false };
-          arr.push(obj);
         }
         return arr;
-      }, []);
-    }
+      } else if (id === metroImportAll.RECENT) {
+        const items = [, ];
+        ({ REACTION: arr4[0], DEFAULT_REACT_EMOJI: arr4[1] } = closure_18);
+        const obj7 = { categoryEmojis: items.includes(intention) ? currentUser : flattenedGuildIds, channel, guildId, intention, bypassPremiumEmojiEntitlement: flag };
+        const obj5 = EmojiUtilsDefault;
+        const emojiUnavailableReasons1 = obj5.getEmojiUnavailableReasons(obj7);
+        const emojisUnfiltered1 = emojiUnavailableReasons1.emojisUnfiltered;
+        if (null != emojisUnfiltered1) {
+          if (0 !== emojisUnfiltered1.length) {
+            const push3 = arr.push;
+            const obj9 = { type: constants.RECENT, id, name: intl2.string(intl13.t["5TvaSm"]), isNitroLocked: false, emojis: emojisUnfiltered1, emojisDisabled: tmp37 };
+            intl2 = intl13.intl;
+            push3(obj9);
+          }
+        }
+        return arr;
+      } else if (id === metroImportAll.FAVORITES) {
+        const obj10 = { categoryEmojis, channel, guildId, intention, bypassPremiumEmojiEntitlement: flag };
+        const obj2 = EmojiUtilsDefault;
+        const emojiUnavailableReasons2 = obj2.getEmojiUnavailableReasons(obj10);
+        const emojisUnfiltered2 = emojiUnavailableReasons2.emojisUnfiltered;
+        if (null != emojisUnfiltered2) {
+          if (0 !== emojisUnfiltered2.length) {
+            const push2 = arr.push;
+            const obj11 = { type: constants.FAVORITES, id, name: intl.string(intl13.t.y3LQCG), isNitroLocked: false, emojis: emojisUnfiltered2, emojisDisabled: tmp22 };
+            intl = intl13.intl;
+            push2(obj11);
+          }
+        }
+        return arr;
+      } else if (id === metroImportAll.CUSTOM) {
+        let found = channel;
+        arr = channel;
+        if (!closure_5) {
+          found = arr.filter((type) => {
+            if (type.type === constants.GUILD) {
+              flag = type.guild.id === getEmojiUnavailableReasons;
+            } else {
+              type = type.type;
+              flag = false;
+            }
+            return flag;
+          });
+        }
+        const push = arr.push;
+        const items1 = [];
+        HermesBuiltin.arraySpread(items1, found, 0);
+        HermesBuiltin.apply(push, items1, arr);
+      } else {
+        const obj = { type: constants.UNICODE, id, name: id, isNitroLocked: false };
+        arr.push(obj);
+      }
+      return arr;
+    }, []);
   }, items4);
   const items5 = [CHAT, suggestedEmojis];
   const memo1 = flag.useMemo(function() {
@@ -724,8 +705,8 @@ export const useEmojiCategories = function useEmojiCategories(CHAT, channel, cRe
           }
           continue;
         }
-        const obj = { type: constants2.SUGGESTED, id: metroImportAll.SUGGESTED, name: intl.string(intl14.t.YUcvdQ), isNitroLocked: false, emojis: items, emojisDisabled: set };
-        intl = intl14.intl;
+        const obj = { type: allEmojis.SUGGESTED, id: metroImportAll.SUGGESTED, name: intl.string(intl13.t.YUcvdQ), isNitroLocked: false, emojis: items, emojisDisabled: set };
+        intl = intl13.intl;
         items = [];
         HermesBuiltin.arraySpread(items, locked, HermesBuiltin.arraySpread(items, unlocked, 0));
         return obj;
@@ -733,15 +714,15 @@ export const useEmojiCategories = function useEmojiCategories(CHAT, channel, cRe
     }
     return null;
   }, items5);
-  let tmp17 = memo;
+  let tmp16 = memo;
   if (null != memo1) {
     const items6 = [memo1];
-    let tmp18 = items6;
-    let tmp19 = memo;
+    let tmp17 = items6;
+    let tmp18 = memo;
     HermesBuiltin.arraySpread(items6, memo, 1);
-    tmp17 = items6;
+    tmp16 = items6;
   }
-  return tmp17;
+  return tmp16;
 };
 export const getUnicodeEmojiCategories = function getUnicodeEmojiCategories() {
   const obj = UnicodeEmojisDefault;
@@ -1013,45 +994,42 @@ export const getAriaIdForEmojiCategory = function getAriaIdForEmojiCategory(type
 };
 export const getStringForEmojiCategory = function getStringForEmojiCategory(PREMIUM_UPSELL, guildName) {
   if (metroImportAll.TOP_GUILD_EMOJI === PREMIUM_UPSELL) {
-    const intl13 = intl14.intl;
+    const intl12 = intl13.intl;
     const obj = { guildName };
-    return intl13.formatToPlainString(intl14.t.W6Wi1X, obj);
+    return intl12.formatToPlainString(intl13.t.W6Wi1X, obj);
   } else if (metroImportAll.RECENT === PREMIUM_UPSELL) {
-    const intl12 = intl14.intl;
-    return intl12.string(intl14.t["5TvaSm"]);
+    const intl11 = intl13.intl;
+    return intl11.string(intl13.t["5TvaSm"]);
   } else if (metroImportAll.FAVORITES === PREMIUM_UPSELL) {
-    const intl11 = intl14.intl;
-    return intl11.string(intl14.t.y3LQCG);
+    const intl10 = intl13.intl;
+    return intl10.string(intl13.t.y3LQCG);
   } else if (metroImportAll.ACTIVITY === PREMIUM_UPSELL) {
-    const intl10 = intl14.intl;
-    return intl10.string(intl14.t.O783tR);
+    const intl9 = intl13.intl;
+    return intl9.string(intl13.t.O783tR);
   } else if (metroImportAll.FLAGS === PREMIUM_UPSELL) {
-    const intl9 = intl14.intl;
-    return intl9.string(intl14.t.vvaizu);
+    const intl8 = intl13.intl;
+    return intl8.string(intl13.t.vvaizu);
   } else if (metroImportAll.FOOD === PREMIUM_UPSELL) {
-    const intl8 = intl14.intl;
-    return intl8.string(intl14.t.ldm9aY);
+    const intl7 = intl13.intl;
+    return intl7.string(intl13.t.ldm9aY);
   } else if (metroImportAll.NATURE === PREMIUM_UPSELL) {
-    const intl7 = intl14.intl;
-    return intl7.string(intl14.t.egIBDH);
+    const intl6 = intl13.intl;
+    return intl6.string(intl13.t.egIBDH);
   } else if (metroImportAll.OBJECTS === PREMIUM_UPSELL) {
-    const intl6 = intl14.intl;
-    return intl6.string(intl14.t.gWm7Mk);
+    const intl5 = intl13.intl;
+    return intl5.string(intl13.t.gWm7Mk);
   } else if (metroImportAll.PEOPLE === PREMIUM_UPSELL) {
-    const intl5 = intl14.intl;
-    return intl5.string(intl14.t.GX594D);
+    const intl4 = intl13.intl;
+    return intl4.string(intl13.t.GX594D);
   } else if (metroImportAll.SYMBOLS === PREMIUM_UPSELL) {
-    const intl4 = intl14.intl;
-    return intl4.string(intl14.t.QXMYAb);
+    const intl3 = intl13.intl;
+    return intl3.string(intl13.t.QXMYAb);
   } else if (metroImportAll.TRAVEL === PREMIUM_UPSELL) {
-    const intl3 = intl14.intl;
-    return intl3.string(intl14.t.w33hIP);
+    const intl2 = intl13.intl;
+    return intl2.string(intl13.t.w33hIP);
   } else if (metroImportAll.PREMIUM_UPSELL === PREMIUM_UPSELL) {
-    const intl2 = intl14.intl;
-    return intl2.string(intl14.t.pAF6xE);
-  } else if (metroImportAll.SOUNDMOJI === PREMIUM_UPSELL) {
-    const intl = intl14.intl;
-    return intl.string(intl14.t.f0Ezmv);
+    const intl = intl13.intl;
+    return intl.string(intl13.t.pAF6xE);
   } else {
     let tmp3 = guildName;
     if (guildName == null) {
@@ -1094,9 +1072,9 @@ export const getSearchPlaceholder = function getSearchPlaceholder(arg0, arg1) {
   let stringResult1;
   if (arg0 === constants8.REACTION) {
     let stringResult;
-    const intl2 = intl14.intl;
+    const intl2 = intl13.intl;
     const string = intl2.string;
-    const t = intl14.t;
+    const t = intl13.t;
     if (arg1) {
       stringResult = string(t["h7ES+n"]);
     } else {
@@ -1104,8 +1082,8 @@ export const getSearchPlaceholder = function getSearchPlaceholder(arg0, arg1) {
     }
     stringResult1 = stringResult;
   } else {
-    const intl = intl14.intl;
-    stringResult1 = intl.string(intl14.t.KgK5qg);
+    const intl = intl13.intl;
+    stringResult1 = intl.string(intl13.t.KgK5qg);
   }
   return stringResult1;
 };

@@ -1,15 +1,15 @@
-// Module ID: 16131
-// Function ID: 16132
+// Module ID: 16150
+// Function ID: 16151
 // Name: BountiesModalCloseButton
-// Dependencies: [19, 21, 4945, 587, 558, 576, 1128, 6879, 6856, 2]
+// Dependencies: [19, 21, 4945, 587, 558, 576, 1128, 6882, 6859, 2]
 
-// Module 16131 (BountiesModalCloseButton)
+// Module 16150 (BountiesModalCloseButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Pressables from "Pressables" /* 6856 */;
-import XSmallIcon2 from "XSmallIcon" /* 6879 */;
+import Pressables from "Pressables" /* 6859 */;
+import XSmallIcon2 from "XSmallIcon" /* 6882 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -37,7 +37,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesMo
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const XSmallIcon = tmp(6879).XSmallIcon;
+    const XSmallIcon = tmp(6882).XSmallIcon;
     const tmp10 = <XSmallIcon size="sm" color={nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT} />;
     cResult[1] = tmp10;
     tmp7 = tmp10;

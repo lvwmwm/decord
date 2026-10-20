@@ -1,10 +1,10 @@
-// Module ID: 14118
-// Function ID: 14119
+// Module ID: 14136
+// Function ID: 14137
 // Name: getChannelIcon
 // Dependencies: [32, 1392, 1087, 1388, 1417, 2]
 // Exports: getChannelIconSource, getChannelIconURL
 
-// Module 14118 (getChannelIcon)
+// Module 14136 (getChannelIcon)
 import Constants from "Constants" /* 1087 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;

@@ -1,9 +1,9 @@
-// Module ID: 16223
-// Function ID: 16224
+// Module ID: 16242
+// Function ID: 16243
 // Name: QuestGameLogotype
-// Dependencies: [32, 19, 17, 21, 5209, 4945, 587, 558, 576, 5014, 5208, 7906, 5631, 2]
+// Dependencies: [32, 19, 17, 21, 5209, 4945, 587, 558, 576, 5014, 5208, 7910, 5631, 2]
 
-// Module 16223 (QuestGameLogotype)
+// Module 16242 (QuestGameLogotype)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import spring from "spring" /* 5208 */;
@@ -102,7 +102,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (cResult[6] !== assetUrl) {
     class R {
       constructor() {
-        size = Image.getSize(assetUrl, () => { /* body not rendered: F150215 */ });
+        size = Image.getSize(assetUrl, () => { /* body not rendered: F150392 */ });
         return;
       }
     }
@@ -115,7 +115,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   } else {
     class R {
       constructor() {
-        size = Image.getSize(assetUrl, () => { /* body not rendered: F150215 */ });
+        size = Image.getSize(assetUrl, () => { /* body not rendered: F150392 */ });
         return;
       }
     }
@@ -143,7 +143,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (cResult[9] !== assetUrl) {
     class R {
       constructor() {
-        size = Image.getSize(assetUrl, () => { /* body not rendered: F150215 */ });
+        size = Image.getSize(assetUrl, () => { /* body not rendered: F150392 */ });
         return;
       }
     }
@@ -153,7 +153,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   } else {
     class R {
       constructor() {
-        size = Image.getSize(assetUrl, () => { /* body not rendered: F150215 */ });
+        size = Image.getSize(assetUrl, () => { /* body not rendered: F150392 */ });
         return;
       }
     }
@@ -162,14 +162,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     let tmp18Result;
     class R {
       constructor() {
-        size = Image.getSize(assetUrl, () => { /* body not rendered: F150215 */ });
+        size = Image.getSize(assetUrl, () => { /* body not rendered: F150392 */ });
         return;
       }
     }
     if (cResult[14] === assetUrl) {
       class R {
         constructor() {
-          size = Image.getSize(assetUrl, () => { /* body not rendered: F150215 */ });
+          size = Image.getSize(assetUrl, () => { /* body not rendered: F150392 */ });
           return;
         }
       }
@@ -177,7 +177,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     if (tmp15) {
       class R {
         constructor() {
-          size = Image.getSize(assetUrl, () => { /* body not rendered: F150215 */ });
+          size = Image.getSize(assetUrl, () => { /* body not rendered: F150392 */ });
           return;
         }
       }
@@ -188,7 +188,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     } else {
       class R {
         constructor() {
-          size = Image.getSize(assetUrl, () => { /* body not rendered: F150215 */ });
+          size = Image.getSize(assetUrl, () => { /* body not rendered: F150392 */ });
           return;
         }
       }

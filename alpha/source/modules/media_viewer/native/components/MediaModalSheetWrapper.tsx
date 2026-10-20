@@ -1,9 +1,9 @@
-// Module ID: 8704
-// Function ID: 8705
+// Module ID: 8716
+// Function ID: 8717
 // Name: MediaModalSheetWrapper
-// Dependencies: [109, 19, 1087, 21, 558, 576, 5541, 5171, 8705, 2]
+// Dependencies: [109, 19, 1087, 21, 558, 576, 5541, 5171, 8717, 2]
 
-// Module 8704 (MediaModalSheetWrapper)
+// Module 8716 (MediaModalSheetWrapper)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
@@ -98,7 +98,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModal
     }
     return tmp16;
   }
-  tmp8(8705);
+  tmp8(8717);
   const merged = Object.assign(tmp4);
   tmp16 = <tmp8Result onClose={tmp13} />;
   cResult[8] = tmp13;
@@ -127,7 +127,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModal
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet(MEDIA_MODAL_KEY);
   }, items1);
-  context(8705);
+  context(8717);
   const merged1 = Object.assign(merged);
   return <tmp5 onClose={callback} />;
 });

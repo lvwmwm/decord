@@ -1,10 +1,10 @@
-// Module ID: 8368
-// Function ID: 8369
+// Module ID: 8372
+// Function ID: 8373
 // Name: ReferralTrialEmbedRedesign
-// Dependencies: [4800, 1392, 2059, 7506, 7470, 1087, 1394, 4945, 587, 7465, 8369, 1128, 4994, 2068, 2054, 7505, 8370, 1630, 8221, 8366, 2]
+// Dependencies: [4800, 1392, 2059, 7509, 7473, 1087, 1394, 4945, 587, 7468, 8373, 1128, 4994, 2068, 2054, 7508, 8374, 1630, 8225, 8370, 2]
 // Exports: createReferralTrialEmbedRedesign
 
-// Module 8368 (ReferralTrialEmbedRedesign)
+// Module 8372 (ReferralTrialEmbedRedesign)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl13 from "intl" /* 1128 */;
@@ -14,16 +14,16 @@ import PremiumUtils from "PremiumUtils" /* 2054 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2068 */;
 import createStyles from "createStyles" /* 4945 */;
 import UserUtilsDefault from "UserUtils" /* 4994 */;
-import useTrialOffer from "useTrialOffer" /* 7505 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8221 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8366 */;
-import _modDef8369 from "module_8369" /* 8369 */;
-import ReferralProgramUtils from "ReferralProgramUtils" /* 8370 */;
+import useTrialOffer from "useTrialOffer" /* 7508 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8225 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8370 */;
+import _modDef8373 from "module_8373" /* 8373 */;
+import ReferralProgramUtils from "ReferralProgramUtils" /* 8374 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import UserStore from "UserStore" /* 1392 */;
 import SubscriptionStore from "SubscriptionStore" /* 2059 */;
-import UserOfferStore from "UserOfferStore" /* 7506 */;
-import IAPStore from "IAPStore" /* 7470 */;
+import UserOfferStore from "UserOfferStore" /* 7509 */;
+import IAPStore from "IAPStore" /* 7473 */;
 import size from "module_2" /* 2 */;
 
 const PremiumUtilsDefault = PremiumUtils;
@@ -98,7 +98,7 @@ export const createReferralTrialEmbedRedesign = function createReferralTrialEmbe
             obj4 = { action: "bindOpenUrl", url: tmp44Result9.getArticleURL(HelpdeskArticles.REFERRAL_PROGRAM), linkColor: linkTextColor };
             const yisueA2 = tmp41(1128).t.yisueA;
             tmp44Result9 = HelpdeskUtilsDefault;
-            const obj5 = { titleText: formatToPlainString2Result, titleColor, headerImageUrl: _modDef8369, headerText: intl12.string(intl13.t.HtTvXA), headerColor: headerTextColor, backgroundColor, borderColor: backgroundColor, learnMoreLink: formatToParts4Result };
+            const obj5 = { titleText: formatToPlainString2Result, titleColor, headerImageUrl: _modDef8373, headerText: intl12.string(intl13.t.HtTvXA), headerColor: headerTextColor, backgroundColor, borderColor: backgroundColor, learnMoreLink: formatToParts4Result };
             formatToParts4Result = formatToParts4(yisueA2, obj3);
             intl12 = tmp41(1128).intl;
             if (null == relevantUserTrialOffer) {
@@ -113,7 +113,7 @@ export const createReferralTrialEmbedRedesign = function createReferralTrialEmbe
               const userTrialOffer = UserOfferStore.getUserTrialOffer(closure_9);
               const offerIds = IAPStore.getOfferIds();
               const _Object = Object;
-              const values = Object.values(tmp41(7465).TrialIdToProductOfferId[closure_9]);
+              const values = Object.values(tmp41(7468).TrialIdToProductOfferId[closure_9]);
               let id1;
               const id2 = relevantUserTrialOffer.id;
               const everyResult = values.every((item) => set.has(item));
@@ -232,7 +232,7 @@ export const createReferralTrialEmbedRedesign = function createReferralTrialEmbe
             }
           }
         }
-        const obj18 = { titleText: "", titleColor, headerImageUrl: _modDef8369, headerText: "", headerColor: headerTextColor, backgroundColor, borderColor: backgroundColor, bodyText: intl9.string(intl13.t.eEz1N5), bodyTextColor, canBeAccepted: false };
+        const obj18 = { titleText: "", titleColor, headerImageUrl: _modDef8373, headerText: "", headerColor: headerTextColor, backgroundColor, borderColor: backgroundColor, bodyText: intl9.string(intl13.t.eEz1N5), bodyTextColor, canBeAccepted: false };
         intl9 = tmp41(1128).intl;
         return obj18;
       }

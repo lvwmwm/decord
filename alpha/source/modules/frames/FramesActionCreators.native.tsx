@@ -1,10 +1,10 @@
-// Module ID: 11057
-// Function ID: 11058
+// Module ID: 11069
+// Function ID: 11070
 // Name: FramesActionCreators
-// Dependencies: [5, 5591, 11058, 11059, 5587, 2]
+// Dependencies: [5, 5591, 11070, 11071, 5587, 2]
 
-// Module 11057 (FramesActionCreators)
-import launchFrameAll from "launchFrame" /* 11059 */;
+// Module 11069 (FramesActionCreators)
+import launchFrameAll from "launchFrame" /* 11071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import VoiceStateStore from "VoiceStateStore" /* 5591 */;
 import size from "module_2" /* 2 */;

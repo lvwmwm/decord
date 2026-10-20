@@ -1,10 +1,10 @@
-// Module ID: 12663
-// Function ID: 12664
+// Module ID: 12680
+// Function ID: 12681
 // Name: TTIMeasurementView
-// Dependencies: [5550, 12664, 2]
+// Dependencies: [5550, 12681, 2]
 
-// Module 12663 (TTIMeasurementView)
-import TTIMeasurementNativeComponentDefault from "TTIMeasurementNativeComponent" /* 12664 */;
+// Module 12680 (TTIMeasurementView)
+import TTIMeasurementNativeComponentDefault from "TTIMeasurementNativeComponent" /* 12681 */;
 import requireNativeComponentOrDefault from "requireNativeComponentOrDefault" /* 5550 */;
 import size from "module_2" /* 2 */;
 

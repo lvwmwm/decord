@@ -1,18 +1,17 @@
 // Module ID: 15403
 // Function ID: 15404
-// Dependencies: [15401]
+// Dependencies: [15378]
 
 // Module 15403
-import _mod15401 from "module_15401" /* 15401 */;
+import _mod15378 from "module_15378" /* 15378 */;
 
+let fn;
+if (_mod15378) {
+  fn = call.bind(call);
+} else {
+  fn = function() {
+    return call(...arguments);
+  };
+}
 
-export default (arg0, arg1) => {
-  let tmp3;
-  const tmp = _mod15401(arg0);
-  if (tmp < 0) {
-    tmp3 = max(tmp + arg1, 0);
-  } else {
-    tmp3 = min(tmp, arg1);
-  }
-  return tmp3;
-};
+export default fn;

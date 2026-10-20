@@ -1,10 +1,10 @@
-// Module ID: 13475
-// Function ID: 13476
+// Module ID: 13493
+// Function ID: 13494
 // Name: HubEmailConnectionContent
-// Dependencies: [5, 32, 19, 17, 4800, 13462, 1087, 21, 4945, 587, 1505, 5554, 13476, 6328, 1128, 13471, 13477, 5195, 5171, 13481, 2002, 6955, 1202, 5205, 2]
+// Dependencies: [5, 32, 19, 17, 4800, 13480, 1087, 21, 4945, 587, 1505, 5554, 13494, 6331, 1128, 13489, 13495, 5195, 5171, 13499, 2002, 6958, 1202, 5205, 2]
 // Exports: default
 
-// Module 13475 (HubEmailConnectionContent)
+// Module 13493 (HubEmailConnectionContent)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl8 from "intl" /* 1128 */;
@@ -15,7 +15,7 @@ import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
-import HubConstants from "HubConstants" /* 13462 */;
+import HubConstants from "HubConstants" /* 13480 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import size from "module_2" /* 2 */;
@@ -269,10 +269,10 @@ export default function HubEmailConnectionContent(arg0) {
   let obj4 = { ref, contentContainerStyle: items, children: items2 };
   items = [tmp.scrollViewContainer, ];
   let obj5 = { paddingBottom: insets.bottom + tmp10(587).space.PX_16 };
-  const HubEmailConnectionScreen = tmp2(13471).HubEmailConnectionScreen;
+  const HubEmailConnectionScreen = tmp2(13489).HubEmailConnectionScreen;
   items[1] = obj5;
   let obj6 = { style: tmp.container, children: items1 };
-  let obj7 = { style: tmp.header, children: closure_12(tmp2(13477).InkQuillSpotIllustration, { scale: 0.75 }) };
+  let obj7 = { style: tmp.header, children: closure_12(tmp2(13495).InkQuillSpotIllustration, { scale: 0.75 }) };
   items1 = [closure_12(ref, obj7), , , ];
   let obj8 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: formatToPlainStringResult };
   items1[1] = closure_12(Text_Text.Text, obj8);
@@ -316,7 +316,7 @@ export default function HubEmailConnectionContent(arg0) {
       }, 100);
     }
   };
-  const tmp10Result = invite(6955);
+  const tmp10Result = invite(6958);
   intl4 = tmp2(1128).intl;
   intl5 = tmp2(1128).intl;
   intl6 = tmp2(1128).intl;

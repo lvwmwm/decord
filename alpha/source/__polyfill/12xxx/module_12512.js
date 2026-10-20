@@ -1,232 +1,205 @@
 // Module ID: 12512
 // Function ID: 12513
-// Dependencies: [5, 12402, 12405, 12406, 12434, 12420, 12430, 12454, 12433, 12451, 12440, 12421]
-// Exports: trpcMiddleware
+// Dependencies: [12451, 12423, 12479, 12426]
 
 // Module 12512
-import _mod12430 from "module_12430" /* 12430 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import registerSpanErrorInstrumentation from "module_12402" /* 12402 */;
-import "module_12405";
-import CONSOLE_LEVELS from "module_12406" /* 12406 */;
-import DEBUG_BUILD from "module_12434" /* 12434 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12420 */;
+import _mod12426 from "module_12426" /* 12426 */;
+import _mod12451 from "module_12451" /* 12451 */;
+import module_12479 from "module_12479" /* 12479 */;
 
-let c5, c6;
+let closure_1_0;
 
-_mod12430;
-let obj = { mechanism: { handled: false, data: { function: "trpcMiddleware" } } };
-
-export const trpcMiddleware = function trpcMiddleware() {
-  obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let closure_0 = _asyncToGenerator(async (arg0, value) => {
-    let c1;
-    let fn;
-    let getRawInput;
-    let rawInput;
-    let tmp;
-    let tmp4;
-    closure_0 = arg0;
-    if (c6 === 2) {
-      c6 = 3;
-      let str = "Generator functions may not be called on executing generators";
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        let obj2 = { value, done: true };
-        return obj2;
+function _shouldDropEvent(message, message2) {
+  let tmp = message2;
+  if (tmp) {
+    let flag;
+    message = message.message;
+    message2 = message2.message;
+    if (message) {
+      if (!message) {
+        if (message) {
+          flag = false;
+          if (message === message2) {
+            flag = false;
+            if (_isSameFingerprint(message, message2)) {
+              let flag2;
+              const obj = _mod12426;
+              const framesFromEvent = obj.getFramesFromEvent(message);
+              const obj2 = _mod12426;
+              const framesFromEvent1 = obj2.getFramesFromEvent(message2);
+              if (framesFromEvent) {
+                if (!framesFromEvent) {
+                  if (framesFromEvent) {
+                    flag2 = false;
+                    if (framesFromEvent1.length === framesFromEvent.length) {
+                      let num = 0;
+                      flag2 = true;
+                      if (0 < framesFromEvent1.length) {
+                        flag2 = false;
+                        while (framesFromEvent1[num].filename === framesFromEvent[num].filename) {
+                          flag2 = false;
+                          if (tmp5.lineno !== tmp6.lineno) {
+                            break;
+                          } else {
+                            flag2 = false;
+                            if (tmp5.colno !== tmp6.colno) {
+                              break;
+                            } else {
+                              flag2 = false;
+                              if (tmp5.function !== tmp6.function) {
+                                break;
+                              } else {
+                                let sum = num + 1;
+                                num = sum;
+                                flag2 = true;
+                                if (sum >= framesFromEvent1.length) {
+                                  break;
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  } else {
+                    flag2 = false;
+                  }
+                } else {
+                  flag2 = false;
+                }
+              } else {
+                flag2 = true;
+              }
+              flag = false;
+              if (flag2) {
+                flag = true;
+              }
+            }
+          }
+        } else {
+          flag = false;
+        }
       } else {
-        return { value: "IconComponent", done: null };
+        flag = false;
       }
     } else {
-      let c4;
-      let closure_3;
-      try {
-        let closure_2;
-        let obj5;
-        c6 = 2;
-        if (0 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            let obj4 = { value, done: true };
-            return obj4;
-          } else {
-            closure_2 = tmp;
-            const tmp24 = closure_0;
-            c1 = undefined;
-            closure_3 = undefined;
-            const path = closure_0.path;
-            ({ next: c1, rawInput, getRawInput } = closure_0);
-            const type = closure_0.type;
-            const obj8 = closure_0(dependencyMap[8]);
-            const client = obj8.getClient();
-            const options = client && client.getOptions();
-            obj5 = { procedure_path: path, procedure_type: type };
-            value = closure_0.attachRpcInput;
-            if (undefined !== value) {
-              value = closure_0.attachRpcInput;
-            } else {
-              value = options && options.sendDefaultPii;
-            }
-            if (value) {
-              if (undefined !== rawInput) {
-                const normalizer2 = closure_0(dependencyMap[9]);
-                value = normalizer2.normalize(rawInput);
-                obj5.input = value;
-              }
-              if (undefined !== getRawInput) {
-                if (typeof getRawInput === "function") {
-                  c4 = 1;
-                  value = getRawInput();
-                  c5 = 2;
-                  c6 = 1;
-                  let obj6 = { value, done: false };
-                  return obj6;
+      flag = false;
+    }
+    let tmp9 = flag;
+    if (!tmp9) {
+      let flag3 = false;
+      if (message2.exception && message2.exception.values && message2.exception.values[0]) {
+        flag3 = false;
+        if (message.exception && message.exception.values && message.exception.values[0]) {
+          flag3 = false;
+          if ((message2.exception && message2.exception.values && message2.exception.values[0]).type === (message.exception && message.exception.values && message.exception.values[0]).type) {
+            flag3 = false;
+            if ((message2.exception && message2.exception.values && message2.exception.values[0]).value === (message.exception && message.exception.values && message.exception.values[0]).value) {
+              flag3 = false;
+              if (_isSameFingerprint(message, message2)) {
+                let flag4;
+                const obj3 = _mod12426;
+                const framesFromEvent2 = obj3.getFramesFromEvent(message);
+                const obj4 = _mod12426;
+                const framesFromEvent3 = obj4.getFramesFromEvent(message2);
+                if (framesFromEvent2) {
+                  if (!framesFromEvent2) {
+                    if (framesFromEvent2) {
+                      flag4 = false;
+                      if (framesFromEvent3.length === framesFromEvent2.length) {
+                        let num2 = 0;
+                        flag4 = true;
+                        if (0 < framesFromEvent3.length) {
+                          flag4 = false;
+                          while (framesFromEvent3[num2].filename === framesFromEvent2[num2].filename) {
+                            flag4 = false;
+                            if (tmp12.lineno !== tmp13.lineno) {
+                              break;
+                            } else {
+                              flag4 = false;
+                              if (tmp12.colno !== tmp13.colno) {
+                                break;
+                              } else {
+                                flag4 = false;
+                                if (tmp12.function !== tmp13.function) {
+                                  break;
+                                } else {
+                                  let sum1 = num2 + 1;
+                                  num2 = sum1;
+                                  flag4 = true;
+                                  if (sum1 >= framesFromEvent3.length) {
+                                    break;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    } else {
+                      flag4 = false;
+                    }
+                  } else {
+                    flag4 = false;
+                  }
+                } else {
+                  flag4 = true;
+                }
+                flag3 = false;
+                if (flag4) {
+                  flag3 = true;
                 }
               }
             }
           }
-        } else if (1 === tmp4) {
-          c4 = 0;
-        } else if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 0;
-          c6 = 3;
-          obj = { value, done: true };
-          return obj;
-        } else {
-          let tmp6 = closure_2;
-          closure_3 = value;
-          value = obj5;
-          const normalizer = closure_0(dependencyMap[9]);
-          obj5.input = normalizer.normalize(closure_3);
-          c4 = 0;
-        }
-        let obj3 = closure_0(dependencyMap[8]);
-        value = (setContext) => {
-          setContext.setContext("trpc", closure_2);
-          const tmp2 = closure_1_0(fn[10]);
-          obj = { name: "trpc/" + closure_0, op: "rpc.server", attributes: { [closure_1_0(closure_1_1[11]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE]: "route", [closure_1_0(closure_1_1[11]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: "auto.rpc.trpc" } };
-          const startSpanManual = tmp2.startSpanManual;
-          closure_0 = closure_1_2(function*(arg0, value) {
-            let tmp;
-            function captureIfError(ok) {
-              let tmp = typeof ok === "object";
-              if (typeof ok === "object") {
-                tmp = null !== ok;
-              }
-              if (tmp) {
-                tmp = "ok" in ok;
-              }
-              if (tmp) {
-                tmp = !ok.ok;
-              }
-              if (tmp) {
-                tmp = "error" in ok;
-              }
-              if (tmp) {
-                obj = closure_1_0(closure_1_1[7]);
-                obj.captureException(ok.error, closure_1_3);
-              }
-            }
-            closure_0 = arg0;
-            if (c6 === 2) {
-              c6 = 3;
-              const str = "Generator functions may not be called on executing generators";
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp3 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                const obj2 = { value, done: true };
-                return obj2;
-              } else {
-                return { value: "IconComponent", done: null };
-              }
-            } else {
-              try {
-                c6 = 2;
-                const tmp4 = c5;
-                if (0 === c5) {
-                  if (arg0 === 1) {
-                    c6 = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    c6 = 3;
-                    const obj4 = { value, done: true };
-                    return obj4;
-                  } else {
-                    closure_2 = tmp;
-                    value = undefined;
-                    c4 = 1;
-                    c5 = 2;
-                    c6 = 1;
-                    const obj5 = { value: value(), done: false };
-                    return obj5;
-                  }
-                } else if (1 === tmp4) {
-                  c4 = 0;
-                  closure_2 = closure_3;
-                  const obj3 = closure_0(fn[7]);
-                  const captureExceptionResult = obj3.captureException(closure_2, closure_2_3);
-                  closure_0.end();
-                  throw closure_2;
-                } else if (arg0 === 1) {
-                  c6 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c4 = 0;
-                  c6 = 3;
-                  const obj6 = { value, done: true };
-                  return obj6;
-                } else {
-                  captureIfError(value);
-                  closure_0.end();
-                  c4 = 0;
-                  c6 = 3;
-                  obj = { value, done: true };
-                  return obj;
-                }
-              } catch (tmp24) {
-                closure_3 = tmp24;
-                if (0 === c4) {
-                  c6 = 3;
-                  throw tmp24;
-                } else {
-                  c5 = 1;
-                }
-              }
-            }
-          });
-          return startSpanManual(obj, function(arg0) {
-            return closure_0(...arguments);
-          });
-        };
-        c6 = 3;
-        const obj7 = { value: obj3.withScope(value), done: true };
-        return obj7;
-      } catch (tmp18) {
-        closure_3 = tmp18;
-        if (0 === c4) {
-          c6 = 3;
-          throw tmp18;
-        } else {
-          c5 = 1;
         }
       }
+      tmp9 = flag3;
     }
-  });
-  return function(arg0) {
-    return closure_0(...arguments);
-  };
-};
+    tmp = tmp9;
+  }
+  return tmp;
+}
+function _isSameFingerprint(fingerprint, fingerprint2) {
+  fingerprint = fingerprint.fingerprint;
+  fingerprint2 = fingerprint2.fingerprint;
+  if (!fingerprint) {
+    if (!fingerprint2) {
+      return true;
+    }
+  }
+  if (!fingerprint) {
+    try {
+      const joined = fingerprint.join("");
+      return joined === fingerprint2.join("");
+    } catch (err) {
+      return false;
+    }
+  }
+  return false;
+}
+
+export { _shouldDropEvent };
+export const dedupeIntegration = module_12479.defineIntegration(() => ({
+  name: "Dedupe",
+  processEvent(type) {
+    if (type.type) {
+      return type;
+    } else {
+      try {
+        if (_shouldDropEvent(type, closure_1_0)) {
+          const tmp3 = require;
+          if (_mod12451.DEBUG_BUILD) {
+            const logger = tmp3(12423).logger;
+            logger.warn("Event dropped due to being a duplicate of previously captured event.");
+          }
+          return null;
+        } else {
+          closure_1_0 = type;
+          return type;
+        }
+      } catch (err) {
+      }
+    }
+  }
+}));

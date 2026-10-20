@@ -1,26 +1,27 @@
-// Module ID: 8532
-// Function ID: 8533
+// Module ID: 8536
+// Function ID: 8537
 // Name: transformEmbeds
-// Dependencies: [17, 1087, 8533, 8534, 6440, 8535, 1384, 8221, 5954, 1128, 1105, 8407, 4773, 7335, 7341, 6602, 2]
+// Dependencies: [17, 1087, 8537, 8538, 6443, 8539, 1384, 8225, 5957, 1128, 1105, 8411, 4773, 7338, 7344, 6605, 8540, 2]
 // Exports: default
 
-// Module 8532 (transformEmbeds)
+// Module 8536 (transformEmbeds)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
 import intl6 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import DateUtils from "DateUtils" /* 4773 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5954 */;
-import EmbedUtils from "EmbedUtils" /* 6440 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6602 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7335 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7341 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8221 */;
-import MarkupParsers from "MarkupParsers" /* 8407 */;
-import sanitizeMediaDimension from "sanitizeMediaDimension" /* 8533 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8534 */;
-import utils from "utils" /* 8535 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5957 */;
+import EmbedUtils from "EmbedUtils" /* 6443 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6605 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7338 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7344 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8225 */;
+import MarkupParsers from "MarkupParsers" /* 8411 */;
+import sanitizeMediaDimension from "sanitizeMediaDimension" /* 8537 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8538 */;
+import utils from "utils" /* 8539 */;
+import NativeChatCapabilities from "NativeChatCapabilities" /* 8540 */;
 import size from "module_2" /* 2 */;
 
 let borderLeftColor, type;
@@ -73,6 +74,8 @@ export default function transformEmbeds(arg0) {
     return obj;
   }
   return embeds.flatMap((type) => {
+    let RICH;
+    let audio;
     let getImageSrc;
     let height;
     let imageSrc;
@@ -89,11 +92,10 @@ export default function transformEmbeds(arg0) {
     let str11;
     let stringResult;
     let tmp35;
-    let tmp3Result17;
     let tmp3Result18;
+    let tmp3Result19;
     let tmp44;
     let tmp50;
-    let type2;
     let url2;
     let url3;
     let url4;
@@ -121,12 +123,12 @@ export default function transformEmbeds(arg0) {
                     return [];
                   }
                 }
-                const tmp3Result15 = EmbedUtils;
-                if (tmp3Result15.isSocialLayerStorefrontArticleEmbed(type)) {
+                const tmp3Result16 = EmbedUtils;
+                if (tmp3Result16.isSocialLayerStorefrontArticleEmbed(type)) {
                   return [];
                 } else {
-                  const tmp3Result16 = EmbedUtils;
-                  if (tmp3Result16.isUserProfileArticleEmbed(type)) {
+                  const tmp3Result17 = EmbedUtils;
+                  if (tmp3Result17.isUserProfileArticleEmbed(type)) {
                     return [];
                   } else {
                     let mapped;
@@ -136,12 +138,12 @@ export default function transformEmbeds(arg0) {
                       if (null != type.thumbnail) {
                         const thumbnail = type.thumbnail;
                         ({ proxyURL, width, height } = thumbnail);
-                        let obj2 = { width: tmp3Result17.sanitizeMediaDimension(width), height: tmp3Result18.sanitizeMediaDimension(height), proxyURL: imageSrc, url: getImageSrc(proxyURL, width, height, !importDefault) };
+                        let obj2 = { width: tmp3Result18.sanitizeMediaDimension(width), height: tmp3Result19.sanitizeMediaDimension(height), proxyURL: imageSrc, url: getImageSrc(proxyURL, width, height, !importDefault) };
                         const url = thumbnail.url;
                         let merged = Object.assign(thumbnail);
-                        tmp3Result17 = sanitizeMediaDimension;
-                        imageSrc = proxyURL;
                         tmp3Result18 = sanitizeMediaDimension;
+                        imageSrc = proxyURL;
+                        tmp3Result19 = sanitizeMediaDimension;
                         if (null != proxyURL) {
                           const obj7 = RowGeneratorUtilsDefault;
                           imageSrc = obj7.getImageSrc(proxyURL, width, height, !importDefault);
@@ -188,7 +190,7 @@ export default function transformEmbeds(arg0) {
                               }
                               ({ proxyURL: proxyURL4, url: url4 } = type.video);
                               let tmp52 = url4;
-                              const isWebPlayerVideoUrl = tmp3(5954).isWebPlayerVideoUrl;
+                              const isWebPlayerVideoUrl = tmp3(5957).isWebPlayerVideoUrl;
                               MediaFormatTesters;
                               if (null != proxyURL4) {
                                 tmp52 = url4;
@@ -209,15 +211,15 @@ export default function transformEmbeds(arg0) {
                               if (null == type.video.proxyURL) {
                                 const provider2 = type.provider;
                                 let name;
-                                const getEffectiveVideoProvider = tmp3(6440).getEffectiveVideoProvider;
+                                const getEffectiveVideoProvider = tmp3(6443).getEffectiveVideoProvider;
                                 EmbedUtils;
                                 if (provider2 != null) {
                                   name = provider2.name;
                                 }
                                 const effectiveVideoProvider = getEffectiveVideoProvider(name, type.video.url);
                                 tmp35 = tmp8;
-                                const tmp3Result21 = renderer_EmbedUtils;
-                                if (tmp3Result21.shouldPlayVideoInline(effectiveVideoProvider)) {
+                                const tmp3Result22 = renderer_EmbedUtils;
+                                if (tmp3Result22.shouldPlayVideoInline(effectiveVideoProvider)) {
                                   const obj5 = { showPlayButton: true };
                                   const merged3 = Object.assign(tmp8);
                                   tmp35 = obj5;
@@ -250,13 +252,13 @@ export default function transformEmbeds(arg0) {
                       const tmp61 = borderLeftColor;
                       borderLeftColor = borderLeftColor.embedBorderLeftColor;
                       if (null != type.color) {
-                        const tmp3Result22 = utils_ColorUtils;
-                        borderLeftColor = processColor(tmp3Result22.int2hsl(type.color));
+                        const tmp3Result23 = utils_ColorUtils;
+                        borderLeftColor = processColor(tmp3Result23.int2hsl(type.color));
                       }
                       if (null != type.url) {
                         let parseEmbedTitleMarkup;
                         if ("" !== type.url) {
-                          parseEmbedTitleMarkup = tmp3(8407).parseEmbedTitleMarkupWithoutLinks;
+                          parseEmbedTitleMarkup = tmp3(8411).parseEmbedTitleMarkupWithoutLinks;
                         }
                         if (type.type === MessageEmbedTypes.RICH) {
                           let rawTitle;
@@ -272,8 +274,8 @@ export default function transformEmbeds(arg0) {
                                 if (MessageEmbedTypes.RICH === type) {
                                   if (null != type.rawDescription) {
                                     const obj9 = { description: type.rawDescription, channelId: require, isField: false, ignoreCache: processColor, showListsAndHeaders, showMaskedLinks };
-                                    const tmp3Result23 = MarkupParsers;
-                                    result = tmp3Result23.parseEmbedDescriptionMarkup(obj9);
+                                    const tmp3Result24 = MarkupParsers;
+                                    result = tmp3Result24.parseEmbedDescriptionMarkup(obj9);
                                   }
                                 } else {
                                   result = type.rawDescription;
@@ -303,8 +305,8 @@ export default function transformEmbeds(arg0) {
                           });
                           let calendarFormatResult = null;
                           if (null != type.timestamp) {
-                            const tmp3Result24 = DateUtils;
-                            calendarFormatResult = tmp3Result24.calendarFormat(type.timestamp);
+                            const tmp3Result25 = DateUtils;
+                            calendarFormatResult = tmp3Result25.calendarFormat(type.timestamp);
                           }
                           if (null != type.footer) {
                             const text = type.footer.text;
@@ -368,28 +370,35 @@ export default function transformEmbeds(arg0) {
                             tmp87 = closure_13(mapped2);
                           }
                           const obj13 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
-                          const getMediaObscuredReasonFromBitmask = tmp3(7335).getMediaObscuredReasonFromBitmask;
+                          const getMediaObscuredReasonFromBitmask = tmp3(7338).getMediaObscuredReasonFromBitmask;
                           ObscuredMediaUtils;
                           let isMediaScanPendingResult = !closure_10;
                           const mediaObscuredReasonFromBitmask = getMediaObscuredReasonFromBitmask(obj13, closure_9);
                           const tmp92 = closure_9;
                           if (!closure_10) {
                             const obj14 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
-                            const isMediaScanPending = tmp3(7335).isMediaScanPending;
+                            const isMediaScanPending = tmp3(7338).isMediaScanPending;
                             ObscuredMediaUtils;
                             isMediaScanPendingResult = isMediaScanPending(obj14, tmp92);
                           }
                           let isVerifiedTeenResult = tmp96;
                           if (isVerifiedTeenResult) {
-                            const tmp3Result27 = AgeVerificationUtils;
-                            isVerifiedTeenResult = tmp3Result27.isVerifiedTeen();
+                            const tmp3Result28 = AgeVerificationUtils;
+                            isVerifiedTeenResult = tmp3Result28.isVerifiedTeen();
+                          }
+                          let tmp98 = type.type === tmp.AUDIO;
+                          if (tmp98) {
+                            const tmp3Result29 = NativeChatCapabilities;
+                            tmp98 = !tmp3Result29.nativeChatSupportsAudioEmbeds();
                           }
                           let str9 = type.id;
                           if (str9 == null) {
                             str9 = "";
                           }
-                          const obj15 = { id: str9, type: type2, spoiler: str11, obscure: stringResult, obscureAwaitingScan: str10, verifyAge: mediaObscuredReasonFromBitmask.length > 0 && closure_12, obscureHideControls: isVerifiedTeenResult, obscureIsOpaque: mediaObscuredReasonFromBitmask.length > 0, provider, author: tmp80, rawTitle: type.rawTitle, title: rawTitle, url: url5, rawDescription: type.rawDescription, description: result, thumbnail: tmp57, image: tmp26, images: mapped, fields: mapped1, components: tmp87, footer: tmp71, video, borderLeftColor, providerColor: null, headerTextColor: null, bodyTextColor: null, referenceId, backgroundColor };
-                          type2 = type.type;
+                          const obj15 = { id: str9, type: RICH, spoiler: str11, obscure: stringResult, obscureAwaitingScan: str10, verifyAge: mediaObscuredReasonFromBitmask.length > 0 && closure_12, obscureHideControls: isVerifiedTeenResult, obscureIsOpaque: mediaObscuredReasonFromBitmask.length > 0, provider, author: tmp80, rawTitle: type.rawTitle, title: rawTitle, url: url5, rawDescription: type.rawDescription, description: result, thumbnail: tmp57, image: tmp26, images: mapped, fields: mapped1, components: tmp87, footer: tmp71, video, audio, borderLeftColor, providerColor: null, headerTextColor: null, bodyTextColor: null, referenceId, backgroundColor };
+                          if (tmp98) {
+                            RICH = tmp.RICH;
+                          }
                           str10 = "";
                           str11 = "";
                           if (dependencyMap) {
@@ -409,18 +418,22 @@ export default function transformEmbeds(arg0) {
                           provider = type.provider;
                           url5 = type.url;
                           video = type.video;
-                          ({ embedProviderColor: obj27.providerColor, embedHeaderTextColor: obj27.headerTextColor, embedBodyTextColor: obj27.bodyTextColor } = tmp61);
+                          audio = undefined;
+                          if (!tmp98) {
+                            audio = type.audio;
+                          }
+                          ({ embedProviderColor: obj28.providerColor, embedHeaderTextColor: obj28.headerTextColor, embedBodyTextColor: obj28.bodyTextColor } = tmp61);
                           referenceId = type.referenceId;
                           return obj15;
                         }
                         rawTitle = type.rawTitle;
                       }
-                      parseEmbedTitleMarkup = tmp3(8407).parseEmbedTitleMarkup;
+                      parseEmbedTitleMarkup = tmp3(8411).parseEmbedTitleMarkup;
                     }
                     let tmp28 = null == tmp26;
                     if (!tmp28) {
-                      const tmp3Result28 = PlatformUtils;
-                      tmp28 = !tmp3Result28.isIOS();
+                      const tmp3Result30 = PlatformUtils;
+                      tmp28 = !tmp3Result30.isIOS();
                     }
                     mapped = null;
                     const tmp29 = !tmp28 && null == type.thumbnail;

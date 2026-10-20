@@ -1,9 +1,9 @@
-// Module ID: 11508
-// Function ID: 11509
+// Module ID: 11519
+// Function ID: 11520
 // Name: VoiceChatHeaderIcon
-// Dependencies: [19, 17, 6719, 1087, 21, 4945, 587, 5229, 558, 576, 504, 12, 11416, 4999, 1202, 6856, 2]
+// Dependencies: [19, 17, 6722, 1087, 21, 4945, 587, 5229, 558, 576, 504, 12, 11427, 4999, 1202, 6859, 2]
 
-// Module 11508 (VoiceChatHeaderIcon)
+// Module 11519 (VoiceChatHeaderIcon)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -11,10 +11,10 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
 import NavigatorConstants from "NavigatorConstants" /* 5229 */;
-import Pressables from "Pressables" /* 6856 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 11416 */;
+import Pressables from "Pressables" /* 6859 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 11427 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 6719 */;
+import ReadStateStore from "ReadStateStore" /* 6722 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

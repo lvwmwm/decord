@@ -1,9 +1,9 @@
-// Module ID: 11899
-// Function ID: 11900
+// Module ID: 11913
+// Function ID: 11914
 // Name: BannerBase
-// Dependencies: [32, 19, 17, 4946, 21, 587, 4945, 11885, 558, 576, 5014, 1499, 4942, 504, 5208, 5219, 5189, 11900, 5195, 2]
+// Dependencies: [32, 19, 17, 4946, 21, 587, 4945, 11899, 558, 576, 5014, 1499, 4942, 504, 5208, 5219, 5189, 11914, 5195, 2]
 
-// Module 11899 (BannerBase)
+// Module 11913 (BannerBase)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -12,8 +12,8 @@ import ColorUtils from "ColorUtils" /* 4942 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import spring from "spring" /* 5208 */;
-import ApplicationsImage from "ApplicationsImage" /* 11885 */;
-import _mod11900 from "module_11900" /* 11900 */;
+import ApplicationsImage from "ApplicationsImage" /* 11899 */;
+import _mod11914 from "module_11914" /* 11914 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
@@ -393,7 +393,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BannerBase(a
                 let tmp36 = null != image;
                 if (tmp36) {
                   const obj7 = { style: tmp4.imageContainer, children: tmp41 };
-                  const obj8 = { style: tmp4.trinketsLottie, source: _mod11900, autoPlay: !stateFromStores };
+                  const obj8 = { style: tmp4.trinketsLottie, source: _mod11914, autoPlay: !stateFromStores };
                   const tmp8Result = sharedValue(5189);
                   class M {
                     constructor() {
@@ -662,7 +662,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BannerBase(a
   let tmp11Result = null != image;
   if (tmp11Result) {
     const obj9 = { style: tmp.imageContainer, children: items5 };
-    const obj10 = { style: tmp.trinketsLottie, source: require("module_11900"), autoPlay: !stateFromStores };
+    const obj10 = { style: tmp.trinketsLottie, source: require("module_11914"), autoPlay: !stateFromStores };
     const tmp7Result = sharedValue(5189);
     items5 = [tmp12(tmp7Result, obj10), image];
     tmp11Result = tmp11(View, obj9);

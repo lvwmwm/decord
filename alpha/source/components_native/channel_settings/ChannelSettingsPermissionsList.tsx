@@ -1,14 +1,14 @@
-// Module ID: 18006
-// Function ID: 18007
+// Module ID: 18029
+// Function ID: 18030
 // Name: ChannelSettingsPermissionsList
-// Dependencies: [32, 19, 17, 4800, 4860, 4854, 1392, 1087, 21, 4945, 587, 558, 576, 504, 6775, 1505, 1633, 7092, 7357, 4885, 6851, 10038, 2000, 10626, 7093, 1128, 7098, 1202, 8648, 2]
+// Dependencies: [32, 19, 17, 4800, 4860, 4854, 1392, 1087, 21, 4945, 587, 558, 576, 504, 6778, 1505, 1633, 7095, 7360, 4885, 6854, 10049, 2000, 10637, 7096, 1128, 7101, 1202, 8660, 2]
 
-// Module 18006 (ChannelSettingsPermissionsList)
+// Module 18029 (ChannelSettingsPermissionsList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Server from "Server" /* 2000 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6775 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6778 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4800 */;

@@ -1,19 +1,17 @@
 // Module ID: 10297
 // Function ID: 10298
-// Dependencies: [41, 42, 93, 95, 98, 10133, 10287, 10160, 10289]
+// Dependencies: [41, 42, 93, 95, 98, 10298, 10147, 10151]
 
 // Module 10297
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10133 */;
-import _mod10287 from "module_10287" /* 10287 */;
-import _mod10289 from "module_10289" /* 10289 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10147 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10151 */;
+import _mod10298 from "module_10298" /* 10298 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-let tmp2;
-const _mod10160 = tmp2(10160);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,12 +27,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class UKWeekdayParser {
+let closure_6 = "(?:(?:\u043F\u0440\u0438\u0431\u043B\u0438\u0437\u043D\u043E|\u043E\u0440\u0456\u0454\u043D\u0442\u043E\u0432\u043D\u043E)\\s*(?:~\\s*)?)?(" + _mod10298.TIME_UNITS_PATTERN + ")" + _mod10298.REGEX_PARTS.rightBoundary;
+class UKTimeUnitWithinFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UKWeekdayParser);
-    const obj = _getPrototypeOf(UKWeekdayParser);
+    _classCallCheck(this, UKTimeUnitWithinFormatParser);
+    const obj = _getPrototypeOf(UKTimeUnitWithinFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -46,55 +45,42 @@ class UKWeekdayParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UKWeekdayParser, _mod10289.AbstractParserWithLeftRightBoundaryChecking);
+_inherits(UKTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(?:(?:,|\\(|\uFF08)\\s*)?(?:\u0432\\s*?)?(?:\u0443\\s*?)?(?:(\u0446\u0435\u0439|\u043C\u0438\u043D\u0443\u043B\u043E\u0433\u043E|\u043C\u0438\u043D\u0443\u043B\u0438\u0439|\u043F\u043E\u043F\u0435\u0440\u0435\u0434\u043D\u0456\u0439|\u043F\u043E\u043F\u0435\u0440\u0435\u0434\u043D\u044C\u043E\u0433\u043E|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u0433\u043E|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u0438\u0439|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod10287.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:,|\\)|\uFF09))?(?:\\s*(\u043D\u0430|\u0443|\u0432)\\s*(\u0446\u044C\u043E\u043C\u0443|\u043C\u0438\u043D\u0443\u043B\u043E\u043C\u0443|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443)\\s*\u0442\u0438\u0436\u043D\u0456)?";
+  key: "patternLeftBoundary",
+  value: function patternLeftBoundary() {
+    return _mod10298.REGEX_PARTS.leftBoundary;
   }
 };
 const items = [
   entry,
   {
+    key: "innerPattern",
+    value: function innerPattern(option) {
+      let _RegExp1;
+      const _RegExp = RegExp;
+      if (option.option.forwardDate) {
+        const self3 = this;
+        const self4 = this;
+        _RegExp1 = new _RegExp(tmp, "i");
+      } else {
+        const _HermesInternal = HermesInternal;
+        const combined = "(?:\u043F\u0440\u043E\u0442\u044F\u0433\u043E\u043C|\u043D\u0430 \u043F\u0440\u043E\u0442\u044F\u0437\u0456|\u043F\u0440\u043E\u0442\u044F\u0433\u043E\u043C|\u0443\u043F\u0440\u043E\u0434\u043E\u0432\u0436|\u0432\u043F\u0440\u043E\u0434\u043E\u0432\u0436)\\s*" + tmp;
+        const self = this;
+        const self2 = this;
+        _RegExp1 = new _RegExp(combined, _mod10298.REGEX_PARTS.flags);
+      }
+      return _RegExp1;
+    }
+  },
+  {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      let str = arg1[1];
-      const obj = arg1[2];
-      const toLocaleLowerCaseResult = obj.toLocaleLowerCase();
-      const tmp4 = _mod10287.WEEKDAY_DICTIONARY[toLocaleLowerCaseResult];
-      if (!str) {
-        str = arg1[3];
-      }
-      if (!str) {
-        str = "";
-      }
-      const toLocaleLowerCaseResult1 = str.toLocaleLowerCase();
-      let str2 = "last";
-      if ("\u043C\u0438\u043D\u0443\u043B\u043E\u0433\u043E" != toLocaleLowerCaseResult1) {
-        str2 = "last";
-        if ("\u043C\u0438\u043D\u0443\u043B\u0438\u0439" != toLocaleLowerCaseResult1) {
-          str2 = "last";
-          if ("\u043F\u043E\u043F\u0435\u0440\u0435\u0434\u043D\u0456\u0439" != toLocaleLowerCaseResult1) {
-            str2 = "last";
-            if ("\u043F\u043E\u043F\u0435\u0440\u0435\u0434\u043D\u044C\u043E\u0433\u043E" != toLocaleLowerCaseResult1) {
-              str2 = "next";
-              if ("\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u0433\u043E" != toLocaleLowerCaseResult1) {
-                str2 = "next";
-                if ("\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u0438\u0439" != toLocaleLowerCaseResult1) {
-                  str2 = null;
-                  const tmp6 = "\u0446\u0435\u0439" != toLocaleLowerCaseResult1 && "\u0446\u044C\u043E\u0433\u043E" != toLocaleLowerCaseResult1 && "\u0446\u044C\u043E\u043C\u0443" != toLocaleLowerCaseResult1;
-                  if (!tmp6) {
-                    str2 = "this";
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      return _mod10160.createParsingComponentsAtWeekday(reference.reference, tmp4, str2);
+      const parseDurationResult = _mod10298.parseDuration(arg1[1]);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
     }
   }
 ];
 
-export default _createClass(UKWeekdayParser, items);
+export default _createClass(UKTimeUnitWithinFormatParser, items);

@@ -1,19 +1,19 @@
-// Module ID: 13846
-// Function ID: 13847
+// Module ID: 13864
+// Function ID: 13865
 // Name: ScheduledMessageCard
-// Dependencies: [19, 17, 4800, 1087, 21, 4945, 587, 558, 576, 504, 1114, 6620, 13646, 6828, 13647, 10341, 5195, 1128, 6853, 9610, 13847, 13645, 12099, 2]
+// Dependencies: [19, 17, 4800, 1087, 21, 4945, 587, 558, 576, 504, 1114, 6623, 13664, 6831, 13665, 10352, 5195, 1128, 6856, 9623, 13865, 13663, 12114, 2]
 
-// Module 13846 (ScheduledMessageCard)
+// Module 13864 (ScheduledMessageCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import router_utils from "router_utils" /* 1114 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9610 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12099 */;
-import ForLaterCardStatusHeader2 from "ForLaterCardStatusHeader" /* 13645 */;
-import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 13847 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9623 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12114 */;
+import ForLaterCardStatusHeader2 from "ForLaterCardStatusHeader" /* 13663 */;
+import ScheduledMessageCardActionButtonsDefault from "ScheduledMessageCardActionButtons" /* 13865 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import Fragment from "Fragment" /* 21 */;
@@ -133,8 +133,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
         }
         let obj2 = { channel: stateFromStores, actions: null };
         cResult[8] = stateFromStores;
-        cResult[9] = closure_7(scheduledMessage(13646).ForLaterCardHeader, obj2);
-        const tmp15 = closure_7(scheduledMessage(13646).ForLaterCardHeader, obj2);
+        cResult[9] = closure_7(scheduledMessage(13664).ForLaterCardHeader, obj2);
+        const tmp15 = closure_7(scheduledMessage(13664).ForLaterCardHeader, obj2);
       } else {
         class I {
           constructor() {
@@ -197,7 +197,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
             }
           }
         }
-        const obj4 = { style: tmp4.pendingRemoval, children: closure_7(scheduledMessage(6828).ActivityIndicator, { size: "small" }) };
+        const obj4 = { style: tmp4.pendingRemoval, children: closure_7(scheduledMessage(6831).ActivityIndicator, { size: "small" }) };
         tmp20Result = tmp20(View, obj4);
       } else {
         class I {
@@ -212,7 +212,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
         }
         tmp21[0] = scheduledMessage.record;
         let tmp22;
-        const ForLaterMessageRow = tmp(13647).ForLaterMessageRow;
+        const ForLaterMessageRow = tmp(13665).ForLaterMessageRow;
         if (tmp26 > 0) {
           class I {
             constructor() {
@@ -226,7 +226,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
           }
           const obj5 = { style: tmp4.attachmentCount, children: items1 };
           const obj6 = { size: "xxs", color: stateFromStores(587).colors.TEXT_MUTED };
-          const AttachmentIcon = tmp(10341).AttachmentIcon;
+          const AttachmentIcon = tmp(10352).AttachmentIcon;
           items1 = [closure_7(AttachmentIcon, obj6), ];
           const obj7 = { variant: "text-sm/normal", color: "text-muted", children: intl.format(scheduledMessage(1128).t.ZJ1tPW, obj8) };
           const Text = tmp(5195).Text;
@@ -270,23 +270,23 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledM
     let tmp10Result;
     let obj2 = { variant: "primary", border: "subtle", shadow: "none", style: tmp.card, onPress: tmp5, children: items1 };
     const obj3 = { scheduledMessage, isPendingRemoval };
-    const Card = tmp2(6853).Card;
+    const Card = tmp2(6856).Card;
     items1 = [closure_7(closure_10, obj3), , , ];
     const obj4 = { channel: stateFromStores, actions: null };
-    items1[1] = closure_7(scheduledMessage(13646).ForLaterCardHeader, obj4);
+    items1[1] = closure_7(scheduledMessage(13664).ForLaterCardHeader, obj4);
     const obj5 = { style: tmp.cardDivider };
     items1[2] = closure_7(View, obj5);
     if (isPendingRemoval) {
-      const obj6 = { style: tmp.pendingRemoval, children: closure_7(scheduledMessage(6828).ActivityIndicator, { size: "small" }) };
+      const obj6 = { style: tmp.pendingRemoval, children: closure_7(scheduledMessage(6831).ActivityIndicator, { size: "small" }) };
       tmp10Result = tmp10(tmp12, obj6);
     } else {
       const obj7 = { message: scheduledMessage.record, lineClamp: 10, maxHeight: 400, footer: tmp9Result };
       tmp9Result = undefined;
-      const ForLaterMessageRow = tmp2(13647).ForLaterMessageRow;
+      const ForLaterMessageRow = tmp2(13665).ForLaterMessageRow;
       if (scheduledMessage.attachmentUploads.length > 0) {
         const obj8 = { style: tmp.attachmentCount, children: items2 };
         const obj9 = { size: "xxs", color: stateFromStores(587).colors.TEXT_MUTED };
-        const AttachmentIcon = tmp2(10341).AttachmentIcon;
+        const AttachmentIcon = tmp2(10352).AttachmentIcon;
         items2 = [closure_7(AttachmentIcon, obj9), ];
         const obj10 = { variant: "text-sm/normal", color: "text-muted", children: intl.format(scheduledMessage(1128).t.ZJ1tPW, obj11) };
         const Text = tmp2(5195).Text;
@@ -343,7 +343,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Schedu
           }
         }
         const obj2 = { IconComponent: CalendarPlusIcon.CalendarPlusIcon, label: tmp6, isCritical: isError, lineClamp: 2, actions: tmp10 };
-        const ForLaterCardStatusHeader = tmp(13645).ForLaterCardStatusHeader;
+        const ForLaterCardStatusHeader = tmp(13663).ForLaterCardStatusHeader;
         const tmp16 = metroImportDefault(ForLaterCardStatusHeader, obj2);
         cResult[9] = isError;
         cResult[10] = tmp6;

@@ -1,9 +1,9 @@
-// Module ID: 14253
-// Function ID: 14254
+// Module ID: 14271
+// Function ID: 14272
 // Name: NameplateProductPreview
-// Dependencies: [19, 17, 4946, 21, 4945, 587, 558, 576, 8585, 1992, 1128, 5195, 5219, 8592, 8580, 8673, 504, 4994, 6321, 10579, 10580, 1202, 10604, 6851, 2]
+// Dependencies: [19, 17, 4946, 21, 4945, 587, 558, 576, 8597, 1992, 1128, 5195, 5219, 8604, 8592, 8685, 504, 4994, 6324, 10590, 10591, 1202, 10615, 6854, 2]
 
-// Module 14253 (NameplateProductPreview)
+// Module 14271 (NameplateProductPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -14,15 +14,15 @@ import utils from "utils" /* 1992 */;
 import UserUtilsDefault from "UserUtils" /* 4994 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import LinearGradientDefault from "LinearGradient" /* 5219 */;
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6321 */;
-import TableRow2 from "TableRow" /* 6851 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8580 */;
-import useShopProductItems from "useShopProductItems" /* 8585 */;
-import useCurrentUser from "useCurrentUser" /* 8592 */;
-import useAvatarDecorationIfNotExpiredDefault from "useAvatarDecorationIfNotExpired" /* 8673 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10579 */;
-import types from "types" /* 10580 */;
-import UserNameplateRow from "UserNameplateRow" /* 10604 */;
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6324 */;
+import TableRow2 from "TableRow" /* 6854 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8592 */;
+import useShopProductItems from "useShopProductItems" /* 8597 */;
+import useCurrentUser from "useCurrentUser" /* 8604 */;
+import useAvatarDecorationIfNotExpiredDefault from "useAvatarDecorationIfNotExpired" /* 8685 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10590 */;
+import types from "types" /* 10591 */;
+import UserNameplateRow from "UserNameplateRow" /* 10615 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
 import Fragment from "Fragment" /* 21 */;

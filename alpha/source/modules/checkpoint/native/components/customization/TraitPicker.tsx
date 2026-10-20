@@ -1,9 +1,9 @@
-// Module ID: 12824
-// Function ID: 12825
+// Module ID: 12842
+// Function ID: 12843
 // Name: TraitPicker
-// Dependencies: [32, 19, 17, 4946, 1392, 12762, 5970, 21, 587, 4945, 12825, 558, 576, 6316, 1128, 3078, 12780, 5195, 504, 5228, 1991, 6318, 5971, 5560, 5014, 5167, 12827, 2]
+// Dependencies: [32, 19, 17, 4946, 1392, 12779, 5973, 21, 587, 4945, 12843, 558, 576, 6319, 1128, 3078, 12797, 5195, 504, 5228, 1991, 6321, 5974, 5560, 5014, 5167, 12845, 2]
 
-// Module 12824 (TraitPicker)
+// Module 12842 (TraitPicker)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,17 +12,17 @@ import _modDef3078 from "module_3078" /* 3078 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
 import timing from "timing" /* 5167 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import CheckpointConstants from "CheckpointConstants" /* 5970 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5971 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6316 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6318 */;
-import CheckpointTextDefault from "CheckpointText" /* 12780 */;
-import TraitOptionList from "TraitOptionList" /* 12825 */;
+import CheckpointConstants from "CheckpointConstants" /* 5973 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5974 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6319 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6321 */;
+import CheckpointTextDefault from "CheckpointText" /* 12797 */;
+import TraitOptionList from "TraitOptionList" /* 12843 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore_mod from "AccessibilityStore" /* 4946 */;
 import UserStore_mod from "UserStore" /* 1392 */;
-import CheckpointStore from "CheckpointStore" /* 12762 */;
+import CheckpointStore from "CheckpointStore" /* 12779 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -623,8 +623,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
       }
     }
   }
-  const tmp2Result8 = selectedOptionId(6318);
-  const visibleTraitRarities = tmp2Result8.getVisibleTraitRarities(tmp2(6316).CUSTOMIZATION_OPTION_TRAITS[customizationOption], stateFromStores1);
+  const tmp2Result8 = selectedOptionId(6321);
+  const visibleTraitRarities = tmp2Result8.getVisibleTraitRarities(tmp2(6319).CUSTOMIZATION_OPTION_TRAITS[customizationOption], stateFromStores1);
   const items6 = [];
   let num7 = 0;
   let num8 = 0;
@@ -648,7 +648,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
         }
       }
     }
-    let tmp35 = tmp27.rarity === selectedOptionId(5971).CheckpointTraitRarity.NITRO && !stateFromStores2;
+    let tmp35 = tmp27.rarity === selectedOptionId(5974).CheckpointTraitRarity.NITRO && !stateFromStores2;
     let tmp36 = tmp35;
     if (null != tmp27.rarity) {
       num7 = num7 + 1;

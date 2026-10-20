@@ -1,17 +1,17 @@
-// Module ID: 12797
-// Function ID: 12798
+// Module ID: 12814
+// Function ID: 12815
 // Name: EmojiCube
-// Dependencies: [17, 4946, 5970, 21, 12798, 4945, 1385, 587, 558, 576, 504, 1417, 1499, 7175, 2]
+// Dependencies: [17, 4946, 5973, 21, 12815, 4945, 1385, 587, 558, 576, 504, 1417, 1499, 7178, 2]
 
-// Module 12797 (EmojiCube)
+// Module 12814 (EmojiCube)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import CheckpointConstants from "CheckpointConstants" /* 5970 */;
-import EmojiDefault from "Emoji" /* 7175 */;
-import glMatrix from "glMatrix" /* 12798 */;
+import CheckpointConstants from "CheckpointConstants" /* 5973 */;
+import EmojiDefault from "Emoji" /* 7178 */;
+import glMatrix from "glMatrix" /* 12815 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import PlatformUtils_mod from "utils/PlatformUtils" /* 1385 */;

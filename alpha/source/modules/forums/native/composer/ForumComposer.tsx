@@ -1,10 +1,10 @@
-// Module ID: 10009
-// Function ID: 10010
+// Module ID: 10020
+// Function ID: 10021
 // Name: ForumComposer
-// Dependencies: [5, 32, 19, 17, 4946, 1207, 7577, 4860, 4880, 4851, 7703, 8237, 1392, 1087, 4807, 4797, 1243, 1127, 1098, 21, 4945, 587, 7199, 504, 4952, 5122, 9576, 5565, 9640, 7698, 7328, 4994, 5554, 5014, 8248, 5669, 7512, 12, 9642, 10010, 10012, 10023, 5864, 1128, 10024, 10026, 1384, 10027, 10028, 10031, 4784, 10032, 2002, 10033, 10034, 8871, 1202, 7327, 1631, 1503, 6981, 8593, 10038, 5195, 10039, 10111, 10326, 10327, 558, 576, 9381, 10328, 10332, 7431, 13786, 8503, 10336, 8233, 5171, 10798, 9268, 5205, 8487, 2]
+// Dependencies: [5, 32, 19, 17, 4946, 1207, 7580, 4860, 4880, 4851, 7707, 8241, 1392, 1087, 4807, 4797, 1243, 1127, 1098, 21, 4945, 587, 7202, 504, 4952, 5122, 9589, 5565, 9653, 7702, 7331, 4994, 5554, 5014, 8252, 5669, 7515, 12, 9655, 10021, 10023, 10034, 5867, 1128, 10035, 10037, 1384, 10038, 10039, 10042, 4784, 10043, 2002, 10044, 10045, 8883, 1202, 7330, 1631, 1503, 6984, 8605, 10049, 5195, 10050, 10122, 10337, 10338, 558, 576, 9393, 10339, 10343, 7434, 13804, 8507, 10347, 8237, 5171, 10809, 9280, 5205, 8491, 2]
 // Exports: default
 
-// Module 10009 (ForumComposer)
+// Module 10020 (ForumComposer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ThreadConstants from "ThreadConstants" /* 1127 */;
@@ -21,18 +21,18 @@ import useKeyboardTypeDefault from "useKeyboardType" /* 5122 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5554 */;
 import transitionToChannel from "transitionToChannel" /* 5669 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7327 */;
-import DraftStore2 from "DraftStore" /* 7577 */;
-import MessageParser from "MessageParser" /* 7698 */;
-import SlowmodeStore2 from "SlowmodeStore" /* 7703 */;
-import Tracking from "Tracking" /* 8233 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8248 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8593 */;
-import useFocusHandlers from "useFocusHandlers" /* 10026 */;
-import ForumGuidelinesActionSheet from "ForumGuidelinesActionSheet" /* 10034 */;
-import openExpressionPickerActionSheet from "openExpressionPickerActionSheet" /* 10039 */;
-import AppliedForumTag from "AppliedForumTag" /* 10328 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10336 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7330 */;
+import DraftStore2 from "DraftStore" /* 7580 */;
+import MessageParser from "MessageParser" /* 7702 */;
+import SlowmodeStore2 from "SlowmodeStore" /* 7707 */;
+import Tracking from "Tracking" /* 8237 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8252 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8605 */;
+import useFocusHandlers from "useFocusHandlers" /* 10037 */;
+import ForumGuidelinesActionSheet from "ForumGuidelinesActionSheet" /* 10045 */;
+import openExpressionPickerActionSheet from "openExpressionPickerActionSheet" /* 10050 */;
+import AppliedForumTag from "AppliedForumTag" /* 10339 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10347 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -42,7 +42,7 @@ import ThemeStore from "ThemeStore" /* 1207 */;
 import GuildMemberStore from "GuildMemberStore" /* 4860 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8237 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8241 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants_mod from "Constants" /* 1087 */;
 import Constants_mod2 from "Constants" /* 1098 */;
@@ -77,9 +77,9 @@ let size;
 let size1;
 let tmp;
 let tmp5;
-const TagIcon = tmp(9381);
-const DismissibleActionSheet = tmp(10327);
-const ImageCarouselDefault = tmp5(10332);
+const TagIcon = tmp(9393);
+const DismissibleActionSheet = tmp(10338);
+const ImageCarouselDefault = tmp5(10343);
 function ActionBar(channel) {
   let Button;
   let ChatIcon;
@@ -166,15 +166,15 @@ function ActionBar(channel) {
         },
       foregroundRipple: true
     };
-    const HeaderActionButton = tmp2(7431).HeaderActionButton;
+    const HeaderActionButton = tmp2(7434).HeaderActionButton;
     intl = tmp2(1128).intl;
     items4 = [, ];
     ({ actionButton: arr7[0], mediaButton: arr7[1] } = tmp);
     const tmp16 = closure_29;
     if (tmp8) {
-      ImageIcon = tmp2(13786).KeyboardIcon;
+      ImageIcon = tmp2(13804).KeyboardIcon;
     } else {
-      ImageIcon = tmp2(8503).ImageIcon;
+      ImageIcon = tmp2(8507).ImageIcon;
     }
     tmp16Result = tmp16(HeaderActionButton, obj6);
   }
@@ -183,7 +183,7 @@ function ActionBar(channel) {
     const obj7 = {
       accessibilityLabel: intl2.string(tmp2(1128).t["112vVE"]),
       style: items6,
-      IconComponent: tmp2(9381).TagIcon,
+      IconComponent: tmp2(9393).TagIcon,
       onPress: function handlePressTagsButton() {
           let intl;
           metroRequire.dismiss();
@@ -206,23 +206,23 @@ function ActionBar(channel) {
               }
             }
           };
-          const tmp3 = asyncRequire(10798, dependencyMap.paths);
+          const tmp3 = asyncRequire(10809, dependencyMap.paths);
           intl = intl6.intl;
           openLazy(tmp3, "ForumPostTagsActionSheet", obj);
         },
       foregroundRipple: true
     };
-    const HeaderActionButton2 = tmp2(7431).HeaderActionButton;
+    const HeaderActionButton2 = tmp2(7434).HeaderActionButton;
     intl2 = tmp2(1128).intl;
     items6 = [, ];
     ({ actionButton: arr9[0], mediaButton: arr9[1] } = tmp);
     tmp10 = closure_29(HeaderActionButton2, obj7);
   }
   items5[1] = tmp10;
-  let tmp18 = lastInput === tmp2(10026).PostComposerInputs.CONTENT;
+  let tmp18 = lastInput === tmp2(10037).PostComposerInputs.CONTENT;
   if (tmp18) {
-    const obj8 = { accessibilityLabel: intl3.string(tmp2(1128).t.iZ7Mz9), style: tmp.actionButton, IconComponent: tmp2(9268).ReactionIcon, onPress: onShowExpressionPicker, foregroundRipple: true };
-    const HeaderActionButton3 = tmp2(7431).HeaderActionButton;
+    const obj8 = { accessibilityLabel: intl3.string(tmp2(1128).t.iZ7Mz9), style: tmp.actionButton, IconComponent: tmp2(9280).ReactionIcon, onPress: onShowExpressionPicker, foregroundRipple: true };
+    const HeaderActionButton3 = tmp2(7434).HeaderActionButton;
     intl3 = tmp2(1128).intl;
     tmp18 = closure_29(HeaderActionButton3, obj8);
   }
@@ -253,7 +253,7 @@ function ActionBar(channel) {
     submitting = !canPost;
   }
   obj11 = { size: "sm", color: nativeDefault.colors.WHITE };
-  ChatIcon = tmp2(8487).ChatIcon;
+  ChatIcon = tmp2(8491).ChatIcon;
   items5[3] = closure_29(closure_9, obj9);
   items3[1] = closure_30(closure_9, obj5);
   return closure_30(closure_9, obj3);
@@ -1190,7 +1190,7 @@ export default function ForumComposer(parentChannel) {
               }
               if (tmp7Result !== name2) {
                 const obj = { name: tmp7Result };
-                const tmp5Result = tmp5(8248);
+                const tmp5Result = tmp5(8252);
                 tmp5Result.changeThreadSettings(parentChannel.id, obj);
                 closure_15(tmp7Result);
               }

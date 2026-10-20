@@ -1,16 +1,16 @@
-// Module ID: 19142
-// Function ID: 19143
+// Module ID: 19166
+// Function ID: 19167
 // Name: PendingRequestList
-// Dependencies: [19, 17, 1392, 21, 4945, 587, 1202, 558, 576, 504, 19140, 19143, 1417, 5195, 1128, 2822, 6856, 2526, 9137, 16000, 15952, 5625, 19144, 14018, 15957, 5932, 2]
+// Dependencies: [19, 17, 1392, 21, 4945, 587, 1202, 558, 576, 504, 19164, 19167, 1417, 5195, 1128, 2822, 6859, 2526, 9149, 16019, 15971, 5625, 19168, 14036, 15976, 5935, 2]
 
-// Module 19142 (PendingRequestList)
+// Module 19166 (PendingRequestList)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import _modDef2526 from "module_2526" /* 2526 */;
 import _modDef2822 from "module_2822" /* 2822 */;
-import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 15952 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16000 */;
+import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 15971 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16019 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -430,11 +430,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingReque
   if (avatar == null) {
     avatar = request.parent_avatar;
   }
-  const tmp2Result = request(19140);
+  const tmp2Result = request(19164);
   const pendingRequestResolution = tmp2Result.usePendingRequestResolution(request.parent_id);
   ({ isConnected, isResolved } = pendingRequestResolution);
   const obj2 = { style: tmp.row, children: items1 };
-  const tmp2Result2 = request(19143);
+  const tmp2Result2 = request(19167);
   const result = tmp2Result2.formatPendingRequestSentText(request.created_at);
   const obj3 = { avatarStyle: tmp.avatar, source: obj6.getUserAvatarSource(obj4), disablePlaceholder: true };
   const Avatar = tmp2(1202).Avatar;
@@ -472,7 +472,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingReque
         style: items3,
         children: tmp13Result6
       };
-      const PressableOpacity = tmp2(6856).PressableOpacity;
+      const PressableOpacity = tmp2(6859).PressableOpacity;
       intl = tmp2(1128).intl;
       items3 = [, ];
       obj11 = { name: request.parent_username };
@@ -482,7 +482,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingReque
         tmp13Result6 = tmp13(closure_4, obj12);
       } else {
         const obj13 = { size: "sm", color: nativeDefault.colors.WHITE };
-        const CheckmarkLargeBoldIcon = tmp2(9137).CheckmarkLargeBoldIcon;
+        const CheckmarkLargeBoldIcon = tmp2(9149).CheckmarkLargeBoldIcon;
         tmp13Result6 = tmp13(CheckmarkLargeBoldIcon, obj13);
       }
       tmp13Result7 = tmp13(PressableOpacity, obj10);
@@ -498,7 +498,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingReque
       style: items5,
       children: tmp13Result8
     };
-    const PressableOpacity2 = tmp2(6856).PressableOpacity;
+    const PressableOpacity2 = tmp2(6859).PressableOpacity;
     intl2 = tmp2(1128).intl;
     items5 = [, ];
     obj15 = { name: request.parent_username };
@@ -1047,14 +1047,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingReque
   items3[1] = tmp7(c5, obj11);
   const obj14 = { style: tmp.actions, children: items6 };
   const obj15 = { accessibilityRole: "button", accessibilityLabel: intl4.string(require("intl").t.Ej3B3Y), onPress: onShare, style: items5, children: c7(require("ShareIcon").ShareIcon, obj16) };
-  const PressableOpacity = tmp5(6856).PressableOpacity;
+  const PressableOpacity = tmp5(6859).PressableOpacity;
   intl4 = tmp5(1128).intl;
   items5 = [, ];
   ({ actionButton: arr6[0], inviteShareButton: arr6[1] } = tmp);
   obj16 = { size: "sm", color: tmp.declineIcon.color };
   items6 = [c7(PressableOpacity, obj15), ];
   const obj17 = { accessibilityRole: "button", accessibilityLabel: intl5.string(_modDef2822.z9gkwZ), onPress: onInviteAnotherGuardian, style: items7, children: c7(require("QrCodeIcon").QrCodeIcon, obj18) };
-  const PressableOpacity2 = tmp5(6856).PressableOpacity;
+  const PressableOpacity2 = tmp5(6859).PressableOpacity;
   intl5 = tmp5(1128).intl;
   items7 = [, ];
   ({ actionButton: arr8[0], inviteQrButton: arr8[1] } = tmp);

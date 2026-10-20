@@ -1,13 +1,13 @@
-// Module ID: 7897
-// Function ID: 7898
+// Module ID: 7901
+// Function ID: 7902
 // Name: InlineNotice
-// Dependencies: [19, 21, 7898, 558, 576, 7899, 7900, 5205, 5195, 2]
+// Dependencies: [19, 21, 7902, 558, 576, 7903, 7904, 5205, 5195, 2]
 
-// Module 7897 (InlineNotice)
+// Module 7901 (InlineNotice)
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import HelpMessage from "HelpMessage" /* 7898 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 7899 */;
+import HelpMessage from "HelpMessage" /* 7902 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 7903 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -33,7 +33,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineNoti
     let tmp20;
     if (cResult[0] !== hidden) {
       const obj4 = {};
-      const NewInlineNotice = tmp(7900).NewInlineNotice;
+      const NewInlineNotice = tmp(7904).NewInlineNotice;
       const merged = Object.assign(hidden);
       const tmp25 = _false(NewInlineNotice, obj4);
       cResult[0] = hidden;
@@ -107,7 +107,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineNoti
   obj = DesignSystemsNotificationComponentsExperiment;
   if (obj.useDesignSystemsNotificationComponents(InlineNotice_str)) {
     const obj3 = {};
-    const NewInlineNotice = tmp(7900).NewInlineNotice;
+    const NewInlineNotice = tmp(7904).NewInlineNotice;
     const merged = Object.assign(hidden);
     return _false(NewInlineNotice, obj3);
   } else {

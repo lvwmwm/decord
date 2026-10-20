@@ -52,7 +52,7 @@ class StateHistory {
     let obj7;
     let obj8;
     let obj9;
-    const f141750 = (state) => {
+    const f141914 = (state) => {
       let num = 0;
       if (state.state === RTC_DISCONNECTED) {
         num = state.durationMs;
@@ -65,7 +65,7 @@ class StateHistory {
     }
     const stateDurations = this.getStateDurations(nowResult);
     const AWAITING_ENDPOINT = RTCConnectionStates.AWAITING_ENDPOINT;
-    const obj2 = { state_awaiting_endpoint_ms: obj3.sumBy(stateDurations, f141750), state_authenticating_ms: obj4.sumBy(stateDurations, f141750), state_connecting_ms: obj5.sumBy(stateDurations, f141750), state_disconnected_ms: obj6.sumBy(stateDurations, f141750), state_ice_checking_ms: obj7.sumBy(stateDurations, f141750), state_no_route_ms: obj8.sumBy(stateDurations, f141750), state_rtc_connecting_ms: obj9.sumBy(stateDurations, f141750), state_rtc_disconnected_ms: obj10.sumBy(stateDurations, f141750) };
+    const obj2 = { state_awaiting_endpoint_ms: obj3.sumBy(stateDurations, f141914), state_authenticating_ms: obj4.sumBy(stateDurations, f141914), state_connecting_ms: obj5.sumBy(stateDurations, f141914), state_disconnected_ms: obj6.sumBy(stateDurations, f141914), state_ice_checking_ms: obj7.sumBy(stateDurations, f141914), state_no_route_ms: obj8.sumBy(stateDurations, f141914), state_rtc_connecting_ms: obj9.sumBy(stateDurations, f141914), state_rtc_disconnected_ms: obj10.sumBy(stateDurations, f141914) };
     const AUTHENTICATING = RTCConnectionStates.AUTHENTICATING;
     obj3 = _modDef12;
     const CONNECTING = RTCConnectionStates.CONNECTING;

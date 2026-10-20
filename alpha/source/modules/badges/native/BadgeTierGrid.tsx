@@ -1,9 +1,9 @@
-// Module ID: 10938
-// Function ID: 10939
+// Module ID: 10949
+// Function ID: 10950
 // Name: BadgeTierGrid
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5195, 1128, 10917, 10909, 8511, 9871, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5195, 1128, 10928, 10920, 8515, 9883, 2]
 
-// Module 10938 (BadgeTierGrid)
+// Module 10949 (BadgeTierGrid)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
@@ -365,7 +365,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeTierGri
     })
   };
   let tiers = badge.tiers;
-  let tmp9 = isViewingOtherUser(9871);
+  let tmp9 = isViewingOtherUser(9883);
   const tmp8 = closure_4;
   if (tiers == null) {
     tiers = [];

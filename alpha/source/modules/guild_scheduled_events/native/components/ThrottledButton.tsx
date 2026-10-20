@@ -1,9 +1,9 @@
-// Module ID: 9062
-// Function ID: 9063
+// Module ID: 9074
+// Function ID: 9075
 // Name: ThrottledButton
 // Dependencies: [109, 19, 21, 558, 576, 5205, 2]
 
-// Module 9062 (ThrottledButton)
+// Module 9074 (ThrottledButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

@@ -1,18 +1,18 @@
-// Module ID: 17522
-// Function ID: 17523
+// Module ID: 17541
+// Function ID: 17542
 // Name: GuildsBarItemUnavailableGuilds
-// Dependencies: [19, 17, 6651, 21, 4945, 587, 5863, 1128, 558, 576, 504, 5631, 17513, 2]
+// Dependencies: [19, 17, 6654, 21, 4945, 587, 5866, 1128, 558, 576, 504, 5631, 17532, 2]
 
-// Module 17522 (GuildsBarItemUnavailableGuilds)
+// Module 17541 (GuildsBarItemUnavailableGuilds)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5863 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17513 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5866 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17532 */;
 import react from "react" /* 19 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6651 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6654 */;
 import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;

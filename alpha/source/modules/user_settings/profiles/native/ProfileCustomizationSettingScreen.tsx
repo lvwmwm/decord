@@ -1,28 +1,28 @@
-// Module ID: 15633
-// Function ID: 15634
+// Module ID: 15652
+// Function ID: 15653
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 10916, 8574, 1097, 1087, 21, 4945, 1128, 15634, 15741, 558, 576, 15750, 5213, 587, 1505, 7038, 8821, 10863, 7026, 15654, 15742, 573, 5673, 10981, 6872, 9614, 1506, 11699, 10939, 2]
+// Dependencies: [5, 109, 32, 19, 17, 10927, 8586, 1097, 1087, 21, 4945, 1128, 15653, 15760, 558, 576, 15769, 5213, 587, 1505, 7041, 8833, 10874, 7029, 15673, 15761, 573, 5673, 10992, 6875, 9627, 1506, 11713, 10950, 2]
 
-// Module 15633 (ProfileCustomizationSettingScreen)
+// Module 15652 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import intl2 from "intl" /* 1128 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5673 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7026 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 10863 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10981 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15634 */;
-import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 15654 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15741 */;
-import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 15742 */;
-import useMaybeFetchCollectiblesRecommendationsDefault from "useMaybeFetchCollectiblesRecommendations" /* 15750 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7029 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 10874 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10992 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15653 */;
+import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 15673 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15760 */;
+import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 15761 */;
+import useMaybeFetchCollectiblesRecommendationsDefault from "useMaybeFetchCollectiblesRecommendations" /* 15769 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10916 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8574 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10927 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8586 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -102,7 +102,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   [dependencyMap, closure_3] = stateFromStores.useState(false);
   let obj3 = token(1505);
   const nativeStackNavigation = obj3.useNativeStackNavigation();
-  let obj4 = token(7038);
+  let obj4 = token(7041);
   const params = obj4.useSettingNavigationRoute().params;
   let autoFocusElement;
   if (params != null) {
@@ -148,7 +148,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       }
     }
   }
-  const useSegmentedControlState = tmp(8821).useSegmentedControlState;
+  const useSegmentedControlState = tmp(8833).useSegmentedControlState;
   const obj6 = {
     items: tmp14,
     pageWidth: first,
@@ -160,7 +160,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       return tmp(obj);
     }
   };
-  const tmpResult = tmp(8821);
+  const tmpResult = tmp(8833);
   if (field === ProfileCustomizationSubsection.GUILD) {
     class H {
       constructor(arg0) {

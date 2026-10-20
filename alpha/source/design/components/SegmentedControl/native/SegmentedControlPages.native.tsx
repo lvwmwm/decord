@@ -1,16 +1,16 @@
-// Module ID: 10939
-// Function ID: 10940
+// Module ID: 10950
+// Function ID: 10951
 // Name: SegmentedControlPages
-// Dependencies: [109, 32, 19, 17, 21, 5014, 558, 576, 10940, 1384, 5258, 5926, 5894, 2]
+// Dependencies: [109, 32, 19, 17, 21, 5014, 558, 576, 10951, 1384, 5258, 5929, 5897, 2]
 
-// Module 10939 (SegmentedControlPages)
+// Module 10950 (SegmentedControlPages)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 5014 */;
-import react_native2 from "react-native" /* 5926 */;
-import MathUtils from "MathUtils" /* 10940 */;
+import react_native2 from "react-native" /* 5929 */;
+import MathUtils from "MathUtils" /* 10951 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

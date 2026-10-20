@@ -1,20 +1,20 @@
-// Module ID: 15798
-// Function ID: 15799
+// Module ID: 15817
+// Function ID: 15818
 // Name: SettingsAgeGroupScreen
-// Dependencies: [19, 17, 8276, 1087, 21, 4945, 587, 558, 576, 7827, 2068, 5195, 1128, 3080, 15757, 11099, 15799, 15761, 2]
+// Dependencies: [19, 17, 8280, 1087, 21, 4945, 587, 558, 576, 7831, 2068, 5195, 1128, 3080, 15776, 11111, 15818, 15780, 2]
 
-// Module 15798 (SettingsAgeGroupScreen)
+// Module 15817 (SettingsAgeGroupScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2068 */;
 import _modDef3080 from "module_3080" /* 3080 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7827 */;
-import SettingsConstants from "SettingsConstants" /* 8276 */;
-import SettingBuilders from "SettingBuilders" /* 11099 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 15757 */;
-import SettingLayoutDefault from "SettingLayout" /* 15761 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7831 */;
+import SettingsConstants from "SettingsConstants" /* 8280 */;
+import SettingBuilders from "SettingBuilders" /* 11111 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 15776 */;
+import SettingLayoutDefault from "SettingLayout" /* 15780 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -27,7 +27,7 @@ let obj2;
 let tmp;
 const intl3 = tmp(1128);
 const Text_Text = tmp(5195);
-const TinyBroncoAgeGroupHeader2 = tmp(15799);
+const TinyBroncoAgeGroupHeader2 = tmp(15818);
 const View = react_native.View;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const HelpdeskArticles = Constants.HelpdeskArticles;
@@ -136,7 +136,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
     ({ AGE_GROUP_CONFIRM: arr[0], AGE_GROUP_RESET: arr[1], AGE_GROUP_CONFIRM_ACCOUNT_STATUS: arr[2] } = MobileUserSettings);
     items1 = [obj4];
     if (isTinyBroncoSettingsEnabled) {
-      TinyBroncoAgeGroupHeader = tmp(15799).TinyBroncoAgeGroupHeader;
+      TinyBroncoAgeGroupHeader = tmp(15818).TinyBroncoAgeGroupHeader;
     } else {
       TinyBroncoAgeGroupHeader = closure_10;
     }
@@ -159,7 +159,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAg
   return tmp10;
 }) : (function SettingsAgeGroupScreen() {
   let isTinyBroncoSettingsEnabled;
-  let obj = isTinyBroncoSettingsEnabled(15757);
+  let obj = isTinyBroncoSettingsEnabled(15776);
   isTinyBroncoSettingsEnabled = obj.useIsTinyBroncoSettingsEnabled();
   let items = [isTinyBroncoSettingsEnabled];
   const node = react.useMemo(() => {

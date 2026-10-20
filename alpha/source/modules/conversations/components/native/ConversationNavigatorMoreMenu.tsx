@@ -1,20 +1,20 @@
-// Module ID: 9671
-// Function ID: 9672
+// Module ID: 9684
+// Function ID: 9685
 // Name: ConversationNavigatorMoreMenu
-// Dependencies: [109, 19, 17, 21, 4945, 587, 558, 576, 1128, 9672, 9651, 9654, 5624, 9674, 7903, 9558, 9676, 2]
+// Dependencies: [109, 19, 17, 21, 4945, 587, 558, 576, 1128, 9685, 9664, 9667, 5624, 9687, 7907, 9571, 9689, 2]
 
-// Module 9671 (ConversationNavigatorMoreMenu)
+// Module 9684 (ConversationNavigatorMoreMenu)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import ToastUtils from "ToastUtils" /* 5624 */;
-import IconButton2 from "IconButton" /* 7903 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9558 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9651 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9654 */;
-import ThumbsUpIcon from "ThumbsUpIcon" /* 9672 */;
-import ThumbsDownIcon from "ThumbsDownIcon" /* 9674 */;
+import IconButton2 from "IconButton" /* 7907 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9571 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 9664 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9667 */;
+import ThumbsUpIcon from "ThumbsUpIcon" /* 9685 */;
+import ThumbsDownIcon from "ThumbsDownIcon" /* 9687 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4945 */;

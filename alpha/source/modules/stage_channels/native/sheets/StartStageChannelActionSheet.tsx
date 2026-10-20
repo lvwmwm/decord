@@ -1,9 +1,9 @@
-// Module ID: 7816
-// Function ID: 7817
+// Module ID: 7820
+// Function ID: 7821
 // Name: StartStageChannelActionSheet
-// Dependencies: [5, 32, 19, 17, 4805, 6585, 1087, 4806, 21, 4945, 587, 558, 576, 504, 6635, 1267, 5224, 1896, 7817, 5171, 6328, 1128, 5195, 6956, 7826, 5205, 5226, 7169, 2]
+// Dependencies: [5, 32, 19, 17, 4805, 6588, 1087, 4806, 21, 4945, 587, 558, 576, 504, 6638, 1267, 5224, 1896, 7821, 5171, 6331, 1128, 5195, 6959, 7830, 5205, 5226, 7172, 2]
 
-// Module 7816 (StartStageChannelActionSheet)
+// Module 7820 (StartStageChannelActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
@@ -12,7 +12,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import StageInstanceStore from "StageInstanceStore" /* 4805 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6585 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6588 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -86,7 +86,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartStage
   const tmp12 = _slicedToArray(obj3.useState(false), 2);
   [obj4, _asyncToGenerator] = _slicedToArray(obj3.useState(null), 2);
   const tmp14 = _slicedToArray(obj3.useState(null), 2);
-  const tmpResult2 = tmp(6635);
+  const tmpResult2 = tmp(6638);
   const shouldAgeVerifyToSpeakForCurrentUser = tmpResult2.useShouldAgeVerifyToSpeakForCurrentUser(channel.id);
   if (cResult[3] === channel.guild_id) {
     let tmp18;
@@ -271,11 +271,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartStage
                   let obj6 = { onConfirmPress: tmp47, style: tmp4.ageVerificationNotice, channelId: channel.id };
                   cResult[32] = channel.id;
                   cResult[33] = tmp4.ageVerificationNotice;
-                  cResult[34] = closure_13(tmp19(7826), obj6);
-                  const tmp50 = closure_13(tmp19(7826), obj6);
+                  cResult[34] = closure_13(tmp19(7830), obj6);
+                  const tmp50 = closure_13(tmp19(7830), obj6);
                 }
                 let obj7 = { label: tmp39, maxLength, value: first1, placeholder: tmp41, onChange: tmp11, autoFocus: true, returnKeyType: "done", clearable: true, onSubmitEditing: tmp21 };
-                const tmp46 = closure_13(tmp(6956).TextInput, obj7);
+                const tmp46 = closure_13(tmp(6959).TextInput, obj7);
                 cResult[28] = tmp21;
                 cResult[29] = first1;
                 cResult[30] = tmp46;
@@ -580,7 +580,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartStage
   const tmp8 = obj(obj2.useState(false), 2);
   [obj3, c4] = obj(obj2.useState(null), 2);
   const tmp10 = obj(obj2.useState(null), 2);
-  const tmp2Result = channel(6635);
+  const tmp2Result = channel(6638);
   const shouldAgeVerifyToSpeakForCurrentUser = tmp2Result.useShouldAgeVerifyToSpeakForCurrentUser(channel.id);
   stateFromStores(5224)(() => {
     let id;
@@ -627,9 +627,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartStage
   BottomSheet = tmp2(5226).BottomSheet;
   let obj7 = { bottom: true, style: tmp.container, children: items2 };
   items2 = [tmp14Result, , , , , ];
-  const SafeAreaPaddingView = tmp2(7169).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp2(7172).SafeAreaPaddingView;
   let obj8 = { label: intl6.string(tmp2(1128).t["5FPBOB"]), maxLength, value, placeholder: intl7.string(tmp2(1128).t.ZwWruY), onChange: tmp7, autoFocus: true, returnKeyType: "done", clearable: true, onSubmitEditing: handleSave };
-  const TextInput = tmp2(6956).TextInput;
+  const TextInput = tmp2(6959).TextInput;
   intl6 = tmp2(1128).intl;
   intl7 = tmp2(1128).intl;
   items2[1] = closure_13(TextInput, obj8);
@@ -641,7 +641,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartStage
     style: tmp.ageVerificationNotice,
     channelId: channel.id
   };
-  items2[2] = closure_13(tmp12(7826), obj9);
+  items2[2] = closure_13(tmp12(7830), obj9);
   let tmp16Result = null;
   if (null != obj3) {
     const obj10 = { style: tmp.error, variant: "text-xs/medium", color: "text-feedback-critical", children: obj3.getAnyErrorMessage() };

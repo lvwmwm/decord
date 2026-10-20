@@ -1,9 +1,9 @@
-// Module ID: 17835
-// Function ID: 17836
+// Module ID: 17858
+// Function ID: 17859
 // Name: SearchListCard
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1202, 4994, 5195, 5565, 10606, 8504, 1128, 8447, 6853, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1202, 4994, 5195, 5565, 10617, 8508, 1128, 8451, 6856, 2]
 
-// Module 17835 (SearchListCard)
+// Module 17858 (SearchListCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,8 +12,8 @@ import native from "native" /* 1202 */;
 import UserUtilsDefault from "UserUtils" /* 4994 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import useChannelNameDefault from "useChannelName" /* 5565 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8447 */;
-import ForumIcon from "ForumIcon" /* 8504 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8451 */;
+import ForumIcon from "ForumIcon" /* 8508 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -27,8 +27,8 @@ let obj3;
 let obj4;
 let tmp;
 let tmp5;
-const Card_Card = tmp(6853);
-const GroupDMAvatarDefault = tmp5(10606);
+const Card_Card = tmp(6856);
+const GroupDMAvatarDefault = tmp5(10617);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;

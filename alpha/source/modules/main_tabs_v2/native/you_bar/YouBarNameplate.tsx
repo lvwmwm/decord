@@ -1,12 +1,12 @@
-// Module ID: 17558
-// Function ID: 17559
+// Module ID: 17577
+// Function ID: 17578
 // Name: YouBarNameplate
-// Dependencies: [19, 4946, 16169, 21, 558, 576, 5213, 587, 16255, 504, 5014, 5208, 9329, 2]
+// Dependencies: [19, 4946, 16188, 21, 558, 576, 5213, 587, 16274, 504, 5014, 5208, 9341, 2]
 
-// Module 17558 (YouBarNameplate)
+// Module 17577 (YouBarNameplate)
 import Fragment from "Fragment" /* 21 */;
 import spring from "spring" /* 5208 */;
-import YouBarConstants from "YouBarConstants" /* 16169 */;
+import YouBarConstants from "YouBarConstants" /* 16188 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -34,7 +34,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ avatarSize, barWidth } = arg0);
   const obj2 = isQuestRendered(5213);
   token = obj2.useToken(token(587).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp6 = token(16255)(token);
+  const tmp6 = token(16274)(token);
   dependencyMap = tmp6;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
@@ -105,7 +105,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             cResult[15] = tmp21;
             tmp19 = tmp21;
           }
-          const tmp18 = jsx(token(9329), { nameplate, isFocused: true, animate: stateFromStores && "always" });
+          const tmp18 = jsx(token(9341), { nameplate, isFocused: true, animate: stateFromStores && "always" });
           cResult[10] = nameplate;
           cResult[11] = stateFromStores && "always";
           cResult[12] = tmp18;
@@ -139,7 +139,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj = isQuestRendered(5213);
   const tmp2 = token;
   token = obj.useToken(token(587).modules.mobile.YOU_BAR_BORDER_RADIUS);
-  const tmp4 = token(16255)(token);
+  const tmp4 = token(16274)(token);
   dependencyMap = tmp4;
   const items = [AccessibilityStore];
   const obj2 = isQuestRendered(504);
@@ -170,7 +170,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const items1 = [rect, animatedStyle];
   let str = stateFromStores;
-  tmp2(9329);
+  tmp2(9341);
   if (str) {
     str = "always";
   }

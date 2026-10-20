@@ -1,9 +1,9 @@
-// Module ID: 18333
-// Function ID: 18334
+// Module ID: 18355
+// Function ID: 18356
 // Name: useShouldDisplayCancelConsoleTransfer
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 18333 (useShouldDisplayCancelConsoleTransfer)
+// Module 18355 (useShouldDisplayCancelConsoleTransfer)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

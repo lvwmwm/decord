@@ -1,9 +1,9 @@
-// Module ID: 6673
-// Function ID: 6674
+// Module ID: 6676
+// Function ID: 6677
 // Name: EmojiStore
-// Dependencies: [32, 5, 5151, 4900, 2069, 1246, 4860, 4802, 4854, 4822, 6649, 1392, 6674, 6675, 1395, 1087, 6676, 1097, 4894, 4899, 11, 12, 1104, 4826, 4846, 10, 6677, 584, 5692, 38, 5569, 1388, 6678, 6679, 6711, 4870, 2050, 504, 4898, 4897, 2]
+// Dependencies: [32, 5, 5151, 4900, 2069, 1246, 4860, 4802, 4854, 4822, 6652, 1392, 6677, 6678, 1395, 1087, 6679, 1097, 4894, 4899, 11, 12, 1104, 4826, 4846, 10, 6680, 584, 5692, 38, 5569, 1388, 6681, 6682, 6714, 4870, 2050, 504, 4898, 4897, 2]
 
-// Module 6673 (EmojiStore)
+// Module 6676 (EmojiStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -18,10 +18,10 @@ import EmojiTypes from "EmojiTypes" /* 4897 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 4898 */;
 import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 4899 */;
 import RegexUtilsDefault from "RegexUtils" /* 5569 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6676 */;
-import dedupeEmojisByNameOrIdDefault from "dedupeEmojisByNameOrId" /* 6678 */;
-import EmojiTermsDefault from "EmojiTerms" /* 6679 */;
-import IAPEligibility from "IAPEligibility" /* 6711 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6679 */;
+import dedupeEmojisByNameOrIdDefault from "dedupeEmojisByNameOrId" /* 6681 */;
+import EmojiTermsDefault from "EmojiTerms" /* 6682 */;
+import IAPEligibility from "IAPEligibility" /* 6714 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ExperimentStore from "ExperimentStore" /* 5151 */;
@@ -32,10 +32,10 @@ import GuildMemberStore from "GuildMemberStore" /* 4860 */;
 import GuildMembershipStore from "GuildMembershipStore" /* 4802 */;
 import GuildRoleStore from "GuildRoleStore" /* 4854 */;
 import GuildStore from "GuildStore" /* 4822 */;
-import SortedGuildStore from "SortedGuildStore" /* 6649 */;
+import SortedGuildStore from "SortedGuildStore" /* 6652 */;
 import UserStore from "UserStore" /* 1392 */;
-import RawGuildEmojiStore from "RawGuildEmojiStore" /* 6674 */;
-import TopEmojiStore from "TopEmojiStore" /* 6675 */;
+import RawGuildEmojiStore from "RawGuildEmojiStore" /* 6677 */;
+import TopEmojiStore from "TopEmojiStore" /* 6678 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import UnicodeEmojis from "UnicodeEmojis" /* 4894 */;
 import SnowflakeUtils from "SnowflakeUtils" /* 11 */;

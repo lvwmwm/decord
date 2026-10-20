@@ -1,10 +1,10 @@
-// Module ID: 19097
-// Function ID: 19098
+// Module ID: 19121
+// Function ID: 19122
 // Name: AVErrorUtils
 // Dependencies: [5693, 1104, 5783, 2]
 // Exports: getAccumulatedStatsWithMinDatapoints, getReportInboundErrors, getWarningFrameRate
 
-// Module 19097 (AVErrorUtils)
+// Module 19121 (AVErrorUtils)
 import DurationsDefault from "Durations" /* 1104 */;
 import WindowVisibilityVideoManager3 from "WindowVisibilityVideoManager" /* 5783 */;
 import MediaEngineStatsStore from "MediaEngineStatsStore" /* 5693 */;

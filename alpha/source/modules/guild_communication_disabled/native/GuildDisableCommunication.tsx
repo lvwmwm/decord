@@ -1,9 +1,9 @@
-// Module ID: 12595
-// Function ID: 12596
+// Module ID: 12612
+// Function ID: 12613
 // Name: GuildDisableCommunication
-// Dependencies: [5, 32, 19, 17, 4862, 1087, 21, 1128, 4945, 587, 558, 576, 5554, 10861, 1267, 5224, 12596, 5625, 5944, 5195, 6933, 6932, 7128, 5205, 2]
+// Dependencies: [5, 32, 19, 17, 4862, 1087, 21, 1128, 4945, 587, 558, 576, 5554, 10872, 1267, 5224, 12613, 5625, 5947, 5195, 6936, 6935, 7131, 5205, 2]
 
-// Module 12595 (GuildDisableCommunication)
+// Module 12612 (GuildDisableCommunication)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl6 from "intl" /* 1128 */;
@@ -12,10 +12,10 @@ import Text_Text from "Text/Text" /* 5195 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
 import useMountEffectDefault from "useMountEffect" /* 5224 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5554 */;
-import TableRadioRow2 from "TableRadioRow" /* 6932 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6933 */;
-import TextArea2 from "TextArea" /* 7128 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 10861 */;
+import TableRadioRow2 from "TableRadioRow" /* 6935 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6936 */;
+import TextArea2 from "TextArea" /* 7131 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 10872 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

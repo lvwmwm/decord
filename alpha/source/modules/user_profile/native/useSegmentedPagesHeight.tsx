@@ -1,9 +1,9 @@
-// Module ID: 14209
-// Function ID: 14210
+// Module ID: 14227
+// Function ID: 14228
 // Name: useSegmentedPagesHeight
 // Dependencies: [32, 19, 558, 576, 5014, 1499, 1633, 2]
 
-// Module 14209 (useSegmentedPagesHeight)
+// Module 14227 (useSegmentedPagesHeight)
 import react2 from "react" /* 576 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;

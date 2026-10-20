@@ -1,10 +1,10 @@
-// Module ID: 15104
-// Function ID: 15105
+// Module ID: 15122
+// Function ID: 15123
 // Name: PathUtils
 // Dependencies: [1384, 2]
 // Exports: pathBasename, pathFilenameWithoutExt, pathJoin
 
-// Module 15104 (PathUtils)
+// Module 15122 (PathUtils)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 

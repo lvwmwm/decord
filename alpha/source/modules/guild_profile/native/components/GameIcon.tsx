@@ -1,9 +1,9 @@
-// Module ID: 13973
-// Function ID: 13974
+// Module ID: 13991
+// Function ID: 13992
 // Name: components/GameIcon
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1417, 13974, 5631, 13975, 6856, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1417, 13992, 5631, 13993, 6859, 2]
 
-// Module 13973 (components/GameIcon)
+// Module 13991 (components/GameIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -22,9 +22,9 @@ let metroRequire;
 let size;
 let size1;
 let tmp;
-const Pressables = tmp(6856);
-const ClanGameplayActivity = tmp(13974);
-const FireIcon3 = tmp(13975);
+const Pressables = tmp(6859);
+const ClanGameplayActivity = tmp(13992);
+const FireIcon3 = tmp(13993);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -275,7 +275,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameIcon(arg
     if (null != onPress) {
       const obj2 = { style: items1, onPress: callback, children: items2 };
       items1 = [style, tmp.gameIcon];
-      const PressableHighlight = tmp7(6856).PressableHighlight;
+      const PressableHighlight = tmp7(6859).PressableHighlight;
       const obj3 = { style: tmp.gameIconImage, source };
       items2 = [hasOwnProperty(FastImageDefault, obj3), ];
       const tmp13 = metroRequire;
@@ -283,7 +283,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameIcon(arg
       if (tmp14Result) {
         const obj4 = { style: tmp.gameIconMask, children: hasOwnProperty(FireIcon2, obj5) };
         obj5 = { style: tmp.fireIcon, color: tmp15(587).unsafe_rawColors.ORANGE_260 };
-        FireIcon2 = tmp7(13975).FireIcon;
+        FireIcon2 = tmp7(13993).FireIcon;
         tmp14Result = tmp14(View, obj4);
       }
       items2[1] = tmp14Result;
@@ -299,7 +299,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameIcon(arg
       if (tmp19Result) {
         const obj8 = { style: tmp.gameIconMask, children: hasOwnProperty(FireIcon, obj9) };
         obj9 = { style: tmp.fireIcon, color: tmp20(587).unsafe_rawColors.ORANGE_330 };
-        FireIcon = tmp7(13975).FireIcon;
+        FireIcon = tmp7(13993).FireIcon;
         tmp19Result = tmp19(tmp18, obj8);
       }
       items4[1] = tmp19Result;

@@ -1,15 +1,15 @@
-// Module ID: 17498
-// Function ID: 17499
+// Module ID: 17517
+// Function ID: 17518
 // Name: MentionSubtitle
-// Dependencies: [19, 17, 21, 558, 576, 17499, 8447, 8496, 1128, 5195, 2]
+// Dependencies: [19, 17, 21, 558, 576, 17518, 8451, 8500, 1128, 5195, 2]
 
-// Module 17498 (MentionSubtitle)
+// Module 17517 (MentionSubtitle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8447 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 17499 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8451 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 17518 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -103,7 +103,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionSub
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(8496).TextIcon;
+    channelIconComponentWithGuild = tmp(8500).TextIcon;
   }
   cResult[0] = channel;
   cResult[1] = guild;
@@ -126,7 +126,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionSub
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(8496).TextIcon;
+    channelIconComponentWithGuild = tmp(8500).TextIcon;
   }
   const obj2 = { style: subtitleStyles.subtitleRow, children: items };
   items = [, ];

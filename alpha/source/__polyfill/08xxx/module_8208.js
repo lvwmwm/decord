@@ -1,74 +1,81 @@
 // Module ID: 8208
 // Function ID: 8209
-// Dependencies: [8158]
+// Dependencies: [8179]
 
 // Module 8208
-import _mod8158 from "module_8158" /* 8158 */;
+import _modDef8179 from "module_8179" /* 8179 */;
 
 
 export default {
-  read(byteLength) {
-    let str5;
+  read(byteLength, sum) {
     let str6;
-    let str9;
+    let str7;
     let tmp11;
-    let tmp13;
     let tmp16;
-    let tmp5;
-    let tmp8;
+    let tmp20;
+    let tmp24;
+    let tmp28;
+    let tmp6;
     let tmp;
-    if (6 <= byteLength.byteLength) {
-      const obj = _mod8158;
-      const stringFromDataView = obj.getStringFromDataView(byteLength, 3, 3);
-      tmp = { value: stringFromDataView, description: stringFromDataView };
-      const obj2 = { value: stringFromDataView, description: stringFromDataView };
-    }
-    const obj3 = { "GIF Version": tmp, "Image Width": tmp5, "Image Height": tmp8, "Global Color Map": tmp11, "Bits Per Pixel": tmp13, "Color Resolution Depth": tmp16 };
-    tmp5 = undefined;
-    if (8 <= byteLength.byteLength) {
-      const uint16 = byteLength.getUint16(6, true);
+    if (sum + 4 <= byteLength.byteLength) {
+      const obj = _modDef8179;
+      const longAt = obj.getLongAt(byteLength, sum);
       const _HermesInternal = HermesInternal;
-      tmp5 = { value: uint16, description: "" + uint16 + "px" };
-      const obj4 = { value: uint16, description: "" + uint16 + "px" };
+      tmp = { value: longAt, description: "" + longAt + "px" };
+      const obj2 = { value: longAt, description: "" + longAt + "px" };
     }
-    tmp8 = undefined;
-    if (10 <= byteLength.byteLength) {
-      const uint161 = byteLength.getUint16(8, true);
+    const obj3 = { "Image Width": tmp, "Image Height": tmp6, "Bit Depth": tmp11, "Color Type": tmp16, Compression: tmp20, Filter: tmp24, Interlace: tmp28 };
+    tmp6 = undefined;
+    if (sum + 4 + 4 <= byteLength.byteLength) {
+      const obj4 = _modDef8179;
+      const longAt1 = obj4.getLongAt(byteLength, sum + 4);
       const _HermesInternal2 = HermesInternal;
-      tmp8 = { value: uint161, description: "" + uint161 + "px" };
-      const obj5 = { value: uint161, description: "" + uint161 + "px" };
+      tmp6 = { value: longAt1, description: "" + longAt1 + "px" };
+      const obj5 = { value: longAt1, description: "" + longAt1 + "px" };
     }
     tmp11 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const tmp12 = (128 & byteLength.getUint8(10)) >>> 7;
-      const obj6 = { value: tmp12, description: str5 };
-      str5 = "No";
-      if (1 === tmp12) {
-        str5 = "Yes";
-      }
-      tmp11 = obj6;
-    }
-    tmp13 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const sum = 1 + (7 & byteLength.getUint8(10));
-      const obj7 = { value: sum, description: "" + sum + " " + str6 };
-      str6 = "bits";
-      if (1 === sum) {
-        str6 = "bit";
-      }
+    if (sum + 8 + 1 <= byteLength.byteLength) {
+      const obj6 = _modDef8179;
+      const byteAt = obj6.getByteAt(byteLength, sum + 8);
       const _HermesInternal3 = HermesInternal;
-      tmp13 = obj7;
+      tmp11 = { value: byteAt, description: "" + byteAt };
+      const obj7 = { value: byteAt, description: "" + byteAt };
     }
     tmp16 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const sum1 = 1 + ((112 & byteLength.getUint8(10)) >>> 4);
-      const obj8 = { value: sum1, description: "" + sum1 + " " + str9 };
-      str9 = "bits";
-      if (1 === sum1) {
-        str9 = "bit";
+    if (sum + 9 + 1 <= byteLength.byteLength) {
+      const obj8 = _modDef8179;
+      const byteAt1 = obj8.getByteAt(byteLength, sum + 9);
+      tmp16 = { value: byteAt1, description: { 0: "Grayscale", 2: "RGB", 3: "Palette", 4: "Grayscale with Alpha", 6: "RGB with Alpha" }[byteAt1] || "Unknown" };
+      const obj9 = { value: byteAt1, description: { 0: "Grayscale", 2: "RGB", 3: "Palette", 4: "Grayscale with Alpha", 6: "RGB with Alpha" }[byteAt1] || "Unknown" };
+    }
+    tmp20 = undefined;
+    if (sum + 10 + 1 <= byteLength.byteLength) {
+      const obj10 = _modDef8179;
+      const byteAt2 = obj10.getByteAt(byteLength, sum + 10);
+      const obj11 = { value: byteAt2, description: str6 };
+      str6 = "Unknown";
+      if (0 === byteAt2) {
+        str6 = "Deflate/Inflate";
       }
-      const _HermesInternal4 = HermesInternal;
-      tmp16 = obj8;
+      tmp20 = obj11;
+    }
+    tmp24 = undefined;
+    if (sum + 11 + 1 <= byteLength.byteLength) {
+      const obj12 = _modDef8179;
+      const byteAt3 = obj12.getByteAt(byteLength, sum + 11);
+      const obj13 = { value: byteAt3, description: str7 };
+      str7 = "Unknown";
+      if (0 === byteAt3) {
+        str7 = "Adaptive";
+      }
+      tmp24 = obj13;
+    }
+    tmp28 = undefined;
+    if (sum + 12 + 1 <= byteLength.byteLength) {
+      const obj14 = _modDef8179;
+      const byteAt4 = obj14.getByteAt(byteLength, sum + 12);
+      tmp28 = { value: byteAt4, description: { 0: "Noninterlaced", 1: "Adam7 Interlace" }[byteAt4] || "Unknown" };
+      const obj15 = { value: byteAt4, description: { 0: "Noninterlaced", 1: "Adam7 Interlace" }[byteAt4] || "Unknown" };
     }
     return obj3;
   }

@@ -1,15 +1,15 @@
-// Module ID: 8068
-// Function ID: 8069
+// Module ID: 8072
+// Function ID: 8073
 // Name: useUserLinks
-// Dependencies: [19, 1392, 7591, 7592, 558, 576, 573, 8069, 8070, 8071, 2]
+// Dependencies: [19, 1392, 7594, 7595, 558, 576, 573, 8073, 8074, 8075, 2]
 // Exports: getActiveLinkUserIds, useAcceptedRequestsCount, useActiveLinkUsers, useHasActiveLinks
 
-// Module 8068 (useUserLinks)
+// Module 8072 (useUserLinks)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7591 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7592 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7594 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7595 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -547,7 +547,7 @@ const tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivi
     const _Date = Date;
     const self = this;
     const self2 = this;
-    const formatUserActivityTimestamp = tmp(8071).formatUserActivityTimestamp;
+    const formatUserActivityTimestamp = tmp(8075).formatUserActivityTimestamp;
     require("FamilyCenterUtils");
     const date = new Date(stateFromStores);
     result = formatUserActivityTimestamp(date.getTime(), () => closure_0, 7);
@@ -608,7 +608,7 @@ let tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLinkTime
   const tmp = _require;
   if (null != stateFromStores) {
     const _Date = Date;
-    const tmpResult = tmp(8071);
+    const tmpResult = tmp(8075);
     formatLinkTimestampResult = tmpResult.formatLinkTimestamp(Date.parse(stateFromStores), arg1 === constants.PENDING ? closure_10 : closure_6);
   }
   return formatLinkTimestampResult;

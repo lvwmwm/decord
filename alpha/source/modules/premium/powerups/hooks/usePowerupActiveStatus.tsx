@@ -1,10 +1,10 @@
-// Module ID: 13223
-// Function ID: 13224
+// Module ID: 13241
+// Function ID: 13242
 // Name: usePowerupActiveStatus
 // Dependencies: [4822, 5142, 5143, 1087, 5144, 558, 576, 504, 2]
 // Exports: isPowerupActiveStatusActive
 
-// Module 13223 (usePowerupActiveStatus)
+// Module 13241 (usePowerupActiveStatus)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import GameServerConstants from "GameServerConstants" /* 5144 */;
@@ -120,7 +120,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           let obj;
           if (null != stateFromStores1) {
             if (null == metroRequire[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "unicodeVersion" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "enumerable" };
             } else {
               obj = { isActiveFromLevel: tmp16.premiumTier >= metroRequire[skuId.skuId], levelEntitlement: tmp3, levelPowerup: tmp5 };
               tmp3 = undefined;
@@ -171,7 +171,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           }
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "unicodeVersion" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "enumerable" };
     }
     return obj3;
   });
@@ -230,7 +230,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           let obj;
           if (null != unlockedPowerups) {
             if (null == metroRequire[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "unicodeVersion" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "enumerable" };
             } else {
               let tmp4;
               const tmp = tmp18.premiumTier >= metroRequire[skuId.skuId];
@@ -282,7 +282,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           }
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "unicodeVersion" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "enumerable" };
     }
     return obj3;
   });

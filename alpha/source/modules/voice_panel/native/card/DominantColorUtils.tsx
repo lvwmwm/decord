@@ -1,10 +1,10 @@
-// Module ID: 9337
-// Function ID: 9338
+// Module ID: 9349
+// Function ID: 9350
 // Name: DominantColorUtils
 // Dependencies: [32, 19, 17, 1459, 558, 576, 4942, 587, 568, 1901, 2]
 // Exports: getCachedSourceFromURI
 
-// Module 9337 (DominantColorUtils)
+// Module 9349 (DominantColorUtils)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import LRUCacheDefault from "LRUCache" /* 1459 */;

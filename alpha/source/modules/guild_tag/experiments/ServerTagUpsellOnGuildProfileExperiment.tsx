@@ -1,9 +1,9 @@
-// Module ID: 13983
-// Function ID: 13984
+// Module ID: 14001
+// Function ID: 14002
 // Name: ServerTagUpsellOnGuildProfileExperiment
 // Dependencies: [1455, 2]
 
-// Module 13983 (ServerTagUpsellOnGuildProfileExperiment)
+// Module 14001 (ServerTagUpsellOnGuildProfileExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

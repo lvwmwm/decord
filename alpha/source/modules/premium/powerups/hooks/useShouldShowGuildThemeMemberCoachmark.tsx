@@ -1,15 +1,15 @@
-// Module ID: 17314
-// Function ID: 17315
+// Module ID: 17333
+// Function ID: 17334
 // Name: useShouldShowGuildThemeMemberCoachmark
-// Dependencies: [5143, 558, 13234, 5148, 5147, 17315, 8315, 2]
+// Dependencies: [5143, 558, 13252, 5148, 5147, 17334, 8319, 2]
 
-// Module 17314 (useShouldShowGuildThemeMemberCoachmark)
+// Module 17333 (useShouldShowGuildThemeMemberCoachmark)
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5143 */;
 import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5147 */;
 import ServerThemeExperiment from "ServerThemeExperiment" /* 5148 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8315 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13234 */;
-import useIsGuildThemePerkEnabledDefault from "useIsGuildThemePerkEnabled" /* 17315 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 8319 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13252 */;
+import useIsGuildThemePerkEnabledDefault from "useIsGuildThemePerkEnabled" /* 17334 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

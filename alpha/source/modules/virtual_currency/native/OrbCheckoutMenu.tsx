@@ -1,12 +1,12 @@
-// Module ID: 16804
-// Function ID: 16805
+// Module ID: 16823
+// Function ID: 16824
 // Name: OrbCheckoutMenu
-// Dependencies: [32, 19, 21, 4945, 6620, 14271, 2002, 5625, 6853, 5195, 6956, 5205, 2]
+// Dependencies: [32, 19, 21, 4945, 6623, 14289, 2002, 5625, 6856, 5195, 6959, 5205, 2]
 // Exports: default
 
-// Module 16804 (OrbCheckoutMenu)
+// Module 16823 (OrbCheckoutMenu)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -37,11 +37,11 @@ export default function OrbCheckoutMenu() {
             obj.open("ORB_CHECKOUT_SUCCESS", { text: "Successfully redeemed item with Orbs" });
           }
       };
-      obj.pushLazy(asyncRequire(14271, dependencyMap.paths), obj2);
+      obj.pushLazy(asyncRequire(14289, dependencyMap.paths), obj2);
     }
   }, items);
   let obj = { children: items1 };
-  const Card = value(6853).Card;
+  const Card = value(6856).Card;
   let obj2 = { style: tmp.title, variant: "text-md/bold", children: "Redeem SKU for Orbs" };
   items1 = [closure_5(value(5195).Text, obj2), , , ];
   const obj3 = {
@@ -53,7 +53,7 @@ export default function OrbCheckoutMenu() {
     },
     clearable: true
   };
-  items1[1] = closure_5(value(6956).TextInput, obj3);
+  items1[1] = closure_5(value(6959).TextInput, obj3);
   const obj4 = { style: tmp.title, variant: "text-md/bold", children: "Checkout will open with the orb price of the product, if it exists" };
   items1[2] = closure_5(value(5195).Text, obj4);
   const obj5 = { text: "Open Orbs Checkout", variant: "primary", onPress: callback, disabled: null == value };

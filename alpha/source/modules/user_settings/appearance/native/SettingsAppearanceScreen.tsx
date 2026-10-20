@@ -1,9 +1,9 @@
-// Module ID: 16351
-// Function ID: 16352
+// Module ID: 16370
+// Function ID: 16371
 // Name: SettingsAppearanceScreen
-// Dependencies: [19, 4969, 1208, 1207, 16352, 8276, 1087, 21, 558, 576, 1505, 1384, 9614, 1128, 10852, 1274, 3402, 2068, 16353, 5224, 573, 11099, 15761, 2]
+// Dependencies: [19, 4969, 1208, 1207, 16371, 8280, 1087, 21, 558, 576, 1505, 1384, 9627, 1128, 10863, 1274, 3402, 2068, 16372, 5224, 573, 11111, 15780, 2]
 
-// Module 16351 (SettingsAppearanceScreen)
+// Module 16370 (SettingsAppearanceScreen)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
@@ -13,14 +13,14 @@ import PlatformUtils from "PlatformUtils" /* 1384 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2068 */;
 import _modDef3402 from "module_3402" /* 3402 */;
 import useMountEffectDefault from "useMountEffect" /* 5224 */;
-import SettingsConstants from "SettingsConstants" /* 8276 */;
-import HeaderShared from "HeaderShared" /* 9614 */;
-import SettingBuilders from "SettingBuilders" /* 11099 */;
+import SettingsConstants from "SettingsConstants" /* 8280 */;
+import HeaderShared from "HeaderShared" /* 9627 */;
+import SettingBuilders from "SettingBuilders" /* 11111 */;
 import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4969 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1208 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
-import FontScaleStore from "FontScaleStore" /* 16352 */;
+import FontScaleStore from "FontScaleStore" /* 16371 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let _require, gradientPreset;
 let metroImportAll;
 let metroImportDefault;
 let tmp5;
-const SettingLayoutDefault = tmp5(15761);
+const SettingLayoutDefault = tmp5(15780);
 function getAppearanceSettings() {
   let GR2KOG;
   let format;
@@ -264,7 +264,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   closure_12();
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getAppearanceSettings() };
-    const createList = tmp(11099).createList;
+    const createList = tmp(11111).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[3] = list;

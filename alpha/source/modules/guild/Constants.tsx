@@ -1,9 +1,9 @@
-// Module ID: 13526
-// Function ID: 13527
+// Module ID: 13544
+// Function ID: 13545
 // Name: Constants
 // Dependencies: [2]
 
-// Module 13526 (Constants)
+// Module 13544 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild/Constants.tsx");

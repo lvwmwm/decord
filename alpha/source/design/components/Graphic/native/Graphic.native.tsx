@@ -1,9 +1,9 @@
-// Module ID: 9766
-// Function ID: 9767
+// Module ID: 9778
+// Function ID: 9779
 // Name: Graphic
 // Dependencies: [109, 19, 17, 21, 4945, 558, 576, 5631, 4999, 5098, 2]
 
-// Module 9766 (Graphic)
+// Module 9778 (Graphic)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

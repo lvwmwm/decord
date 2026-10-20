@@ -1,13 +1,13 @@
-// Module ID: 16070
-// Function ID: 16071
+// Module ID: 16089
+// Function ID: 16090
 // Name: PremiumGuildBoostingSetting
-// Dependencies: [1087, 11099, 1128, 9723, 14608, 2]
+// Dependencies: [1087, 11111, 1128, 9736, 14626, 2]
 
-// Module 16070 (PremiumGuildBoostingSetting)
+// Module 16089 (PremiumGuildBoostingSetting)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import BoostGemIcon from "BoostGemIcon" /* 9723 */;
-import SettingBuilders from "SettingBuilders" /* 11099 */;
+import BoostGemIcon from "BoostGemIcon" /* 9736 */;
+import SettingBuilders from "SettingBuilders" /* 11111 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

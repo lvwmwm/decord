@@ -1,8 +1,8 @@
-// Module ID: 18655
-// Function ID: 18656
+// Module ID: 18678
+// Function ID: 18679
 // Dependencies: [2]
 
-// Module 18655
+// Module 18678
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FamilyKeysSpotIllustration-3x.png.js");

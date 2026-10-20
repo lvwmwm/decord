@@ -1,19 +1,43 @@
 // Module ID: 8737
 // Function ID: 8738
-// Dependencies: [8727, 8738, 4979, 8724, 8722]
+// Dependencies: [8738, 8739, 8746, 4979]
 
 // Module 8737
-import normalizeColor from "normalizeColor" /* 8722 */;
-import _mod8724 from "module_8724" /* 8724 */;
 import _mod8738 from "module_8738" /* 8738 */;
-import DeprecatedStyleSheetPropType from "DeprecatedStyleSheetPropType" /* 8727 */;
-import "module_4979";
+import _mod8746 from "module_8746" /* 8746 */;
+import DeprecatedStyleSheetPropType_mod from "DeprecatedStyleSheetPropType" /* 8739 */;
 import module_4979_mod from "module_4979" /* 4979 */;
+import "module_4979";
 
+let DeprecatedStyleSheetPropType;
+let items;
+let items1;
 let module_4979;
-let module_8738;
-const obj = { ellipsizeMode: module_4979.oneOf(["head", "middle", "tail", "clip"]), numberOfLines: module_4979.number, textBreakStrategy: module_4979.oneOf(["simple", "highQuality", "balanced"]), onLayout: module_4979.func, onPress: module_4979.func, onLongPress: module_4979.func, pressRetentionOffset: _mod8724, selectable: module_4979.bool, selectionColor: normalizeColor, suppressHighlighting: module_4979.bool, style: module_8738, testID: module_4979.string, nativeID: module_4979.string, allowFontScaling: module_4979.bool, maxFontSizeMultiplier: module_4979.number, accessible: module_4979.bool, adjustsFontSizeToFit: module_4979.bool, minimumFontScale: module_4979.number, disabled: module_4979.bool, dataDetectorType: module_4979.oneOf(["phoneNumber", "link", "email", "none", "all"]) };
-module_8738 = DeprecatedStyleSheetPropType(_mod8738);
+let oneOfType;
+let oneOfType2;
+const obj = { style: DeprecatedStyleSheetPropType(_mod8746), source: oneOfType(items), blurRadius: module_4979.number, defaultSource: module_4979.number, loadingIndicatorSource: oneOfType2(items1), progressiveRenderingEnabled: module_4979.bool, fadeDuration: module_4979.number, internal_analyticTag: module_4979.string, onLoadStart: module_4979.func, onError: module_4979.func, onLoad: module_4979.func, onLoadEnd: module_4979.func, testID: module_4979.string, resizeMethod: module_4979.oneOf(["auto", "resize", "scale"]), resizeMode: module_4979.oneOf(["cover", "contain", "stretch", "repeat", "center"]) };
+const module_8738 = Object.assign(_mod8738);
+DeprecatedStyleSheetPropType = DeprecatedStyleSheetPropType_mod;
+module_4979 = module_4979_mod;
+oneOfType = module_4979.oneOfType;
+module_4979 = module_4979_mod;
+const shape = module_4979.shape;
+const obj2 = { uri: module_4979.string, headers: module_4979.objectOf(module_4979.string) };
+module_4979 = module_4979_mod;
+items = [shape(obj2), module_4979.number, ];
+module_4979 = module_4979_mod;
+const arrayOf = module_4979.arrayOf;
+module_4979 = module_4979_mod;
+const size = { uri: module_4979.string, width: module_4979.number, height: module_4979.number, headers: module_4979.objectOf(module_4979.string) };
+const shape2 = module_4979.shape;
+items[2] = arrayOf(shape2(size));
+module_4979 = module_4979_mod;
+oneOfType2 = module_4979.oneOfType;
+module_4979 = module_4979_mod;
+items1 = [, ];
+const obj3 = { uri: module_4979.string };
+items1[0] = module_4979.shape(obj3);
+items1[1] = module_4979.number;
 module_4979 = module_4979_mod;
 
 export default obj;

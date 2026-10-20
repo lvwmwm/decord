@@ -1,10 +1,10 @@
-// Module ID: 12151
-// Function ID: 12152
+// Module ID: 12166
+// Function ID: 12167
 // Name: ConjureTimelineTree
 // Dependencies: [32, 3820, 1128, 2]
 // Exports: currentStep, describeNode, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 12151 (ConjureTimelineTree)
+// Module 12166 (ConjureTimelineTree)
 import intl2 from "intl" /* 1128 */;
 import _modDef3820 from "module_3820" /* 3820 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -661,18 +661,18 @@ export const turnSegments = function turnSegments(steps, arg1) {
   }
   return items4;
 };
-export const turnLifecycle = function turnLifecycle(memo1, turnActive) {
+export const turnLifecycle = function turnLifecycle(arr, turnActive) {
   let index;
   let obj2;
   let obj5;
   turnActive = turnActive.turnActive;
-  const found = memo1.filter((hasWork) => hasWork.hasWork || hasWork.hasTodos);
+  const found = arr.filter((hasWork) => hasWork.hasWork || hasWork.hasTodos);
   const atResult = found.at(-1);
   let index1;
   if (atResult != null) {
     index1 = atResult.index;
   }
-  const atResult1 = memo1.at(-1);
+  const atResult1 = arr.at(-1);
   if (atResult1 != null) {
     index = atResult1.index;
   }

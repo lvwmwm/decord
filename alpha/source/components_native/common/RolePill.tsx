@@ -1,15 +1,15 @@
-// Module ID: 10631
-// Function ID: 10632
+// Module ID: 10642
+// Function ID: 10643
 // Name: RolePill
-// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 4776, 7228, 7231, 5624, 7245, 7247, 5195, 6856, 2]
+// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 4776, 7231, 7234, 5624, 7248, 7250, 5195, 6859, 2]
 
-// Module 10631 (RolePill)
+// Module 10642 (RolePill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ToastUtils from "ToastUtils" /* 5624 */;
-import ClipboardUtils from "ClipboardUtils" /* 7231 */;
-import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7245 */;
-import RoleIconDefault from "RoleIcon" /* 7247 */;
+import ClipboardUtils from "ClipboardUtils" /* 7234 */;
+import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7248 */;
+import RoleIconDefault from "RoleIcon" /* 7250 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -60,7 +60,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePill(r
     if (cResult[1] === role.id) {
       tmp5 = cResult[2];
     }
-    const tmpResult = role(7228);
+    const tmpResult = role(7231);
     const roleIconProps = tmpResult.useRoleIconProps(tmp5);
     if (cResult[3] !== role.name) {
       let name = role.name;
@@ -138,7 +138,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePill(r
                           }
                         }
                         const obj3 = { disabled: tmp15, style: tmp14.container, onPress: tmp12, accessible: false, children: tmp37 };
-                        const tmp43 = closure_6(role(6856).PressableHighlight, obj3);
+                        const tmp43 = closure_6(role(6859).PressableHighlight, obj3);
                         cResult[25] = tmp12;
                         cResult[26] = tmp14.container;
                         cResult[27] = tmp15;
@@ -237,7 +237,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePill(r
   const disableInteraction = role.disableInteraction;
   const DeveloperMode = role(4776).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = role(7228);
+  let obj = role(7231);
   let obj2 = { guildId, roleId: role.id, size: 12 };
   const roleIconProps = obj.useRoleIconProps(obj2);
   let name = role.name;
@@ -258,7 +258,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePill(r
   }
   const tmp9 = closure_8();
   let tmp11 = !setting;
-  const PressableHighlight = tmp(6856).PressableHighlight;
+  const PressableHighlight = tmp(6859).PressableHighlight;
   if (setting) {
     tmp11 = disableInteraction;
   }
@@ -278,7 +278,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePill(r
   tmp12 = closure_7;
   if (undefined !== guild_connections) {
     const obj5 = { style: tmp9.verifiedContainer, roleId: role.id, guildId, roleColor: color, size: 14, displayRoleIcon: false };
-    const tmp16 = combined(7245);
+    const tmp16 = combined(7248);
     if (guildId == null) {
       guildId = closure_4;
     }
@@ -301,7 +301,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePill(r
   if (null != roleIconProps) {
     const obj9 = { style: tmp9.roleIcon, children: closure_6(tmp19, obj10) };
     obj10 = {};
-    tmp19 = combined(7247);
+    tmp19 = combined(7250);
     const merged = Object.assign(roleIconProps);
     tmp10Result2 = tmp10(tmp13, obj9);
   }

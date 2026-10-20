@@ -1,19 +1,19 @@
-// Module ID: 15972
-// Function ID: 15973
+// Module ID: 15991
+// Function ID: 15992
 // Name: FamilyCenterTopUsersBottomSheet
-// Dependencies: [19, 1392, 21, 4945, 558, 576, 8071, 6851, 4994, 1202, 1128, 2526, 5195, 6935, 7244, 2]
+// Dependencies: [19, 1392, 21, 4945, 558, 576, 8075, 6854, 4994, 1202, 1128, 2526, 5195, 6938, 7247, 2]
 
-// Module 15972 (FamilyCenterTopUsersBottomSheet)
+// Module 15991 (FamilyCenterTopUsersBottomSheet)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import _modDef2526 from "module_2526" /* 2526 */;
 import UserUtilsDefault from "UserUtils" /* 4994 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import TableRow2 from "TableRow" /* 6851 */;
-import TableRowGroup2 from "TableRowGroup" /* 6935 */;
-import ActionSheet2 from "ActionSheet" /* 7244 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8071 */;
+import TableRow2 from "TableRow" /* 6854 */;
+import TableRowGroup2 from "TableRowGroup" /* 6938 */;
+import ActionSheet2 from "ActionSheet" /* 7247 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8075 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
@@ -92,7 +92,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRow
       if (cResult[9] === userActivity.dms_sent) {
         tmp15 = cResult[10];
       }
-      TableRow = tmp(6851).TableRow;
+      TableRow = tmp(6854).TableRow;
       const obj3 = UserUtilsDefault;
       name = obj3.getName(user);
       tmp13 = tmp15;

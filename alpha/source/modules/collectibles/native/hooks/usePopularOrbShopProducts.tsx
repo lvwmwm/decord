@@ -1,10 +1,10 @@
-// Module ID: 16144
-// Function ID: 16145
+// Module ID: 16163
+// Function ID: 16164
 // Name: usePopularOrbShopProducts
-// Dependencies: [5, 32, 19, 1089, 1104, 1092, 16145, 16146, 1093, 9394, 16147, 2]
+// Dependencies: [5, 32, 19, 1089, 1104, 1092, 16164, 16165, 1093, 9406, 16166, 2]
 // Exports: usePopularOrbShopProducts
 
-// Module 16144 (usePopularOrbShopProducts)
+// Module 16163 (usePopularOrbShopProducts)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

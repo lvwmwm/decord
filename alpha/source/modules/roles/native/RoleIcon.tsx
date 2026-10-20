@@ -1,9 +1,9 @@
-// Module ID: 7247
-// Function ID: 7248
+// Module ID: 7250
+// Function ID: 7251
 // Name: RoleIcon
 // Dependencies: [19, 21, 1384, 558, 576, 5631, 5195, 2]
 
-// Module 7247 (RoleIcon)
+// Module 7250 (RoleIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 5631 */;
@@ -109,7 +109,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIcon(a
     cResult[7] = obj5;
     tmp7 = obj5;
   }
-  const obj6 = { fontFamily: "System", fontSize: result, lineHeight: "unicodeVersion", textAlign: 6059676558461562000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, width: num, marginBottom: -311915811926054500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  const obj6 = { fontFamily: "System", fontSize: result, lineHeight: "unicodeVersion", textAlign: "<string:4268818749>", width: num, marginBottom: "Symbol" };
   cResult[2] = num;
   cResult[3] = result;
   cResult[4] = obj6;
@@ -123,7 +123,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIcon(a
     size = 20;
   }
   const size1 = { height: size, width: size };
-  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "unicodeVersion", textAlign: 6059676558461562000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, width: size, marginBottom: -311915811926054500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "unicodeVersion", textAlign: "<string:4268818749>", width: size, marginBottom: "Symbol" };
   if (null != src) {
     const obj3 = { uri: src };
     tmp = jsx(FastImageDefault, { resizeMode: "contain", source: obj3, style: size1 });

@@ -1,12 +1,12 @@
-// Module ID: 9373
-// Function ID: 9374
+// Module ID: 9385
+// Function ID: 9386
 // Name: useFetchVirtualCurrencyTotalRedeemed
-// Dependencies: [19, 9370, 558, 576, 504, 9371, 2]
+// Dependencies: [19, 9382, 558, 576, 504, 9383, 2]
 
-// Module 9373 (useFetchVirtualCurrencyTotalRedeemed)
+// Module 9385 (useFetchVirtualCurrencyTotalRedeemed)
 import react from "react" /* 19 */;
-import VirtualCurrencyActionCreators from "VirtualCurrencyActionCreators" /* 9371 */;
-import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9370 */;
+import VirtualCurrencyActionCreators from "VirtualCurrencyActionCreators" /* 9383 */;
+import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

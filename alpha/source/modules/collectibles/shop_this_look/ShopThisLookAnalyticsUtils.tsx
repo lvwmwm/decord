@@ -1,10 +1,10 @@
-// Module ID: 14067
-// Function ID: 14068
+// Module ID: 14085
+// Function ID: 14086
 // Name: ShopThisLookAnalyticsUtils
 // Dependencies: [1087, 1995, 1267, 2]
 // Exports: trackShopThisLookMenuAction, trackShopThisLookRowAction
 
-// Module 14067 (ShopThisLookAnalyticsUtils)
+// Module 14085 (ShopThisLookAnalyticsUtils)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;

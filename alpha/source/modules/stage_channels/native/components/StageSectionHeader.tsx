@@ -1,13 +1,13 @@
-// Module ID: 11575
-// Function ID: 11576
+// Module ID: 11586
+// Function ID: 11587
 // Name: StageSectionHeader
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5014, 5167, 5195, 1202, 7195, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5014, 5167, 5195, 1202, 7198, 2]
 
-// Module 11575 (StageSectionHeader)
+// Module 11586 (StageSectionHeader)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 5014 */;
 import timing from "timing" /* 5167 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7195 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7198 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

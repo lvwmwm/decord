@@ -1,16 +1,16 @@
-// Module ID: 16938
-// Function ID: 16939
+// Module ID: 16957
+// Function ID: 16958
 // Name: ShopNitroUpsellBanner
-// Dependencies: [19, 21, 4945, 587, 683, 5213, 5171, 14261, 2002, 7224, 1128, 6853, 5219, 1107, 1202, 6879, 5932, 5195, 16934, 5205, 10095, 2]
+// Dependencies: [19, 21, 4945, 587, 683, 5213, 5171, 14279, 2002, 7227, 1128, 6856, 5219, 1107, 1202, 6882, 5935, 5195, 16953, 5205, 10106, 2]
 
-// Module 16938 (ShopNitroUpsellBanner)
+// Module 16957 (ShopNitroUpsellBanner)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import intl5 from "intl" /* 1128 */;
 import useToken from "useToken" /* 5213 */;
-import Card_Card from "Card/Card" /* 6853 */;
-import MobileNitroUpsellInShopFeedExperiment from "MobileNitroUpsellInShopFeedExperiment" /* 16934 */;
+import Card_Card from "Card/Card" /* 6856 */;
+import MobileNitroUpsellInShopFeedExperiment from "MobileNitroUpsellInShopFeedExperiment" /* 16953 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -25,7 +25,7 @@ let obj3;
 let obj4;
 let tmp2;
 const LinearGradientDefault = tmp2(5219);
-const NitroUpsellButtonDefault = tmp2(10095);
+const NitroUpsellButtonDefault = tmp2(10106);
 class ShopNitroUpsellBanner {
   constructor(arg0) {
     let XSmallIcon;
@@ -80,9 +80,9 @@ class ShopNitroUpsellBanner {
     const PressableOpacity = tmp5(1202).PressableOpacity;
     intl = tmp5(1128).intl;
     obj6 = { size: "md", color: nativeDefault.colors.ICON_DEFAULT };
-    XSmallIcon = tmp5(6879).XSmallIcon;
+    XSmallIcon = tmp5(6882).XSmallIcon;
     items2[1] = React3(PressableOpacity, obj5);
-    const Stack = tmp5(5932).Stack;
+    const Stack = tmp5(5935).Stack;
     const obj7 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: tmp.text, children: intl2.string(intl5.t.WjOclf) };
     const Text = tmp5(5195).Text;
     intl2 = tmp5(1128).intl;

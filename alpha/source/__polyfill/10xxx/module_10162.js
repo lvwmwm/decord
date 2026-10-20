@@ -1,103 +1,177 @@
 // Module ID: 10162
 // Function ID: 10163
-// Dependencies: [41, 42, 10134]
+// Dependencies: [41, 42, 93, 95, 98, 10146, 10163]
 
 // Module 10162
-import findMostLikelyADYear from "findMostLikelyADYear" /* 10134 */;
+import EmptyDuration from "EmptyDuration" /* 10146 */;
+import _mod10163 from "module_10163" /* 10163 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const regExp = new RegExp("([^\\d]|^)([0-3]{0,1}[0-9]{1})[\\/\\.\\-]([0-3]{0,1}[0-9]{1})(?:[\\/\\.\\-]([0-9]{4}|[0-9]{2}))?(\\W|$)", "i");
-class SlashDateFormatParser {
-  constructor(arg0) {
-    const self = this;
-    _classCallCheck(this, SlashDateFormatParser);
-    let num = 2;
-    if (arg0) {
-      num = 3;
-    }
-    self.groupNumberMonth = num;
-    let num2 = 3;
-    if (arg0) {
-      num2 = 2;
-    }
-    self.groupNumberDay = num2;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+class AbstractMergeDateRangeRefiner {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, AbstractMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(AbstractMergeDateRangeRefiner);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(AbstractMergeDateRangeRefiner, _mod10163.MergingRefiner);
 const entry = {
-  key: "pattern",
-  value: function pattern() {
-    return regExp;
+  key: "shouldMergeResults",
+  value: function shouldMergeResults(str, end, end2) {
+    let tmp = !end.end && !end2.end;
+    if (tmp) {
+      const self = this;
+      tmp = null != str.match(this.patternBetween());
+    }
+    return tmp;
   }
 };
 let items = [
   entry,
   {
-    key: "extract",
-    value: function extract(text, index) {
-      let tmp6;
-      let tmp7;
-      const sum = index.index + index[1].length;
-      const diff = index.index + index[0].length - index[5].length;
-      if (sum > 0) {
-        const str = text.text;
-        str.substring(0, sum);
+    key: "mergeResults",
+    value: function mergeResults(arg0, start, start2) {
+      let closure_0 = start;
+      let first = start2;
+      start = start.start;
+      let result = start.isOnlyWeekdayComponent();
+      if (!result) {
+        start2 = start2.start;
+        result = start2.isOnlyWeekdayComponent();
       }
-      if (diff < text.text.length) {
-        const str4 = text.text;
-        str4.substring(diff);
+      if (!result) {
+        let start3 = start2.start;
+        const certainComponents = start3.getCertainComponents();
+        const item = certainComponents.forEach((item) => {
+          const start = closure_0.start;
+          const tmp = closure_0;
+          if (!start.isCertain(item)) {
+            const start2 = tmp.start;
+            const start3 = first.start;
+            start2.imply(item, start3.get(item));
+          }
+        });
+        const start4 = start.start;
+        const certainComponents1 = start4.getCertainComponents();
+        const item1 = certainComponents1.forEach((item) => {
+          const start = first.start;
+          const tmp = first;
+          if (!start.isCertain(item)) {
+            const start2 = tmp.start;
+            const start3 = closure_0.start;
+            start2.imply(item, start3.get(item));
+          }
+        });
       }
-      const str7 = text.text;
-      const str8 = str7.substring(sum, diff);
-      if (!str8.match(/^\d\.\d$/)) {
-        if (!str8.match(/^\d\.\d{1,2}\.\d{1,2}\s*$/)) {
-          const self = this;
-          const parsingResult = text.createParsingResult(sum, str8);
-          const _parseInt = parseInt;
-          const parsed = parseInt(index[this.groupNumberMonth]);
-          const _parseInt2 = parseInt;
-          const parsed1 = parseInt(index[this.groupNumberDay]);
-          if (parsed < 1) {
-            tmp6 = parsed1;
-            tmp7 = parsed;
-            if (parsed > 12) {
-              if (parsed1 >= 1) {
-                if (parsed1 <= 12) {
-                  if (parsed <= 31) {
-                    const items = [parsed, parsed1];
-                    [tmp6, tmp7] = items;
-                  }
-                }
-              }
-              return null;
-            }
-          } else {
-            tmp6 = parsed1;
-            tmp7 = parsed;
+      const start5 = start.start;
+      const start6 = start2.start;
+      let tmp5 = start2;
+      let obj = start;
+      const dateResult = start5.date();
+      if (dateResult > start6.date()) {
+        const start18 = start.start;
+        const dateResult1 = start18.date();
+        const start19 = start2.start;
+        const dateResult2 = start19.date();
+        const start20 = start2.start;
+        if (start20.isOnlyWeekdayComponent()) {
+          const tmp6 = require;
+          if (EmptyDuration.addDuration(dateResult2, { day: 7 }) > dateResult1) {
+            const addDurationResult = tmp6(10146).addDuration(dateResult2, { day: 7 });
+            const start15 = start2.start;
+            start15.imply("day", addDurationResult.getDate());
+            const start16 = start2.start;
+            start16.imply("month", addDurationResult.getMonth() + 1);
+            const start17 = start2.start;
+            start17.imply("year", addDurationResult.getFullYear());
+            tmp5 = start2;
+            obj = start;
           }
-          if (tmp6 >= 1) {
-            if (tmp6 <= 31) {
-              const start3 = parsingResult.start;
-              start3.assign("day", tmp6);
-              const start4 = parsingResult.start;
-              start4.assign("month", tmp7);
-              if (index[4]) {
-                const _parseInt3 = parseInt;
-                const parsed2 = parseInt(index[4]);
-                const start2 = parsingResult.start;
-                start2.assign("year", findMostLikelyADYear.findMostLikelyADYear(parsed2));
-              } else {
-                const start = parsingResult.start;
-                start.imply("year", findMostLikelyADYear.findYearClosestToRef(text.refDate, tmp6, tmp7));
-              }
-              return parsingResult.addTag("parser/SlashDateFormatParser");
-            }
-          }
-          return null;
         }
+        const start7 = start.start;
+        if (start7.isOnlyWeekdayComponent()) {
+          const tmp8 = require;
+          if (EmptyDuration.addDuration(dateResult1, { day: -7 }) < dateResult2) {
+            const addDurationResult1 = tmp8(10146).addDuration(dateResult1, { day: -7 });
+            const start12 = start.start;
+            start12.imply("day", addDurationResult1.getDate());
+            const start13 = start.start;
+            start13.imply("month", addDurationResult1.getMonth() + 1);
+            const start14 = start.start;
+            start14.imply("year", addDurationResult1.getFullYear());
+            tmp5 = start2;
+            obj = start;
+          }
+        }
+        const start8 = start2.start;
+        if (start8.isDateWithUnknownYear()) {
+          const tmp10 = require;
+          if (EmptyDuration.addDuration(dateResult2, { year: 1 }) > dateResult1) {
+            const start11 = start2.start;
+            const addDurationResult2 = tmp10(10146).addDuration(dateResult2, { year: 1 });
+            start11.imply("year", addDurationResult2.getFullYear());
+            tmp5 = start2;
+            obj = start;
+          }
+        }
+        const start9 = start.start;
+        if (start9.isDateWithUnknownYear()) {
+          const tmp12 = require;
+          if (EmptyDuration.addDuration(dateResult1, { year: -1 }) < dateResult2) {
+            const start10 = start.start;
+            const addDurationResult3 = tmp12(10146).addDuration(dateResult1, { year: -1 });
+            start10.imply("year", addDurationResult3.getFullYear());
+            tmp5 = start2;
+            obj = start;
+          }
+        }
+        const items = [start, start2];
+        first = items[0];
+        closure_0 = tmp15;
+        tmp5 = first;
+        obj = tmp15;
       }
+      const cloneResult = obj.clone();
+      cloneResult.start = obj.start;
+      cloneResult.end = tmp5.start;
+      cloneResult.index = Math.min(obj.index, tmp5.index);
+      if (obj.index < tmp5.index) {
+        cloneResult.text = obj.text + arg0 + tmp5.text;
+      } else {
+        cloneResult.text = tmp5.text + arg0 + obj.text;
+      }
+      return cloneResult;
     }
   }
 ];
 
-export default _createClass(SlashDateFormatParser, items);
+export default _createClass(AbstractMergeDateRangeRefiner, items);

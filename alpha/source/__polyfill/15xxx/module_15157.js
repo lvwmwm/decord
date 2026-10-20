@@ -1,19 +1,14 @@
 // Module ID: 15157
 // Function ID: 15158
-// Dependencies: [15154]
+// Dependencies: [15143]
 
 // Module 15157
-import _mod15154 from "module_15154" /* 15154 */;
-
-let set;
+import _mod15143 from "module_15143" /* 15143 */;
 
 
-export default (arg0, arg1) => {
-  set = new _mod15154(arg0, arg1).set;
-  return set.map((arr) => {
-    const mapped = arr.map((value) => value.value);
-    const str = mapped.join(" ");
-    const str2 = str.trim();
-    return str2.split(" ");
-  });
+export default (arg0, arg1, arg2) => {
+  const compare = new _mod15143(arg0, arg2).compare;
+  new _mod15143(arg0, arg2);
+  const tmp2 = new _mod15143(arg1, arg2);
+  return compare(tmp2);
 };

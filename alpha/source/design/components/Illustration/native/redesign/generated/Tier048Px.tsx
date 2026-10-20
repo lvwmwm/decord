@@ -1,15 +1,15 @@
-// Module ID: 14616
-// Function ID: 14617
+// Module ID: 14634
+// Function ID: 14635
 // Name: Tier048Px
-// Dependencies: [19, 21, 8649, 14617, 14618, 14619, 558, 576, 4952, 5631, 2]
+// Dependencies: [19, 21, 8661, 14635, 14636, 14637, 558, 576, 4952, 5631, 2]
 // Exports: getTier048PxSource
 
-// Module 14616 (Tier048Px)
+// Module 14634 (Tier048Px)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import shared from "shared" /* 4952 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import _mod8649 from "module_8649" /* 8649 */;
+import _mod8661 from "module_8661" /* 8661 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTier048Px
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod8649;
+    const tmpResult = _mod8661;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTier048Px
 }) : (function useTier048PxSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8649;
+  const obj2 = _mod8661;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tier048Px(ar
   return <tmp2 source={tmp} />;
 });
 function getTier048PxSource(theme) {
-  const obj = _mod8649;
+  const obj = _mod8661;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

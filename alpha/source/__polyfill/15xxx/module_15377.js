@@ -3,15 +3,21 @@
 // Dependencies: [15378]
 
 // Module 15377
-import _mod15378 from "module_15378" /* 15378 */;
+import module_15378_mod from "module_15378" /* 15378 */;
 
+const call = prototype.call;
+let module_15378 = module_15378_mod;
+if (module_15378) {
+  const bind = prototype.bind;
+  module_15378 = bind.bind(call, call);
+}
+if (!module_15378) {
+  module_15378 = (arg0) => {
+    let closure_0 = arg0;
+    return function() {
+      return call(...arguments);
+    };
+  };
+}
 
-export default (obj) => {
-  let tmp2;
-  if (typeof obj === "object") {
-    tmp2 = null !== obj;
-  } else {
-    tmp2 = _mod15378(obj);
-  }
-  return tmp2;
-};
+export default module_15378;

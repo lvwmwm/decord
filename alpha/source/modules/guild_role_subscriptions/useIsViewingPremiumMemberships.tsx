@@ -1,9 +1,9 @@
-// Module ID: 13538
-// Function ID: 13539
+// Module ID: 13556
+// Function ID: 13557
 // Name: useIsViewingPremiumMemberships
 // Dependencies: [1087, 4807, 558, 576, 4989, 4982, 2]
 
-// Module 13538 (useIsViewingPremiumMemberships)
+// Module 13556 (useIsViewingPremiumMemberships)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import ChannelConstants from "ChannelConstants" /* 4807 */;

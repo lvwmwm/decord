@@ -1,31 +1,31 @@
-// Module ID: 15588
-// Function ID: 15589
+// Module ID: 15607
+// Function ID: 15608
 // Name: MobileVoiceOverlayLifecycleManager
-// Dependencies: [4800, 4878, 4822, 2014, 4880, 5676, 4890, 6633, 1392, 5591, 11482, 1087, 15589, 15590, 15591, 15592, 8058, 14421, 15593, 15594, 14396, 1128, 15595, 11495, 10016, 5565, 6656, 1267, 5673, 2004, 2]
+// Dependencies: [4800, 4878, 4822, 2014, 4880, 5676, 4890, 6636, 1392, 5591, 11493, 1087, 15608, 15609, 15610, 15611, 8062, 14439, 15612, 15613, 14414, 1128, 15614, 11506, 10027, 5565, 6659, 1267, 5673, 2004, 2]
 
-// Module 15588 (MobileVoiceOverlayLifecycleManager)
+// Module 15607 (MobileVoiceOverlayLifecycleManager)
 import intl12 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import GuildChannelStore from "GuildChannelStore" /* 4878 */;
 import useChannelName from "useChannelName" /* 5565 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5673 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6656 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 10016 */;
-import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 11495 */;
-import react_nativeDefault from "react-native" /* 15595 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6659 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 10027 */;
+import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 11506 */;
+import react_nativeDefault from "react-native" /* 15614 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5676 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
-import SpeakingStore from "SpeakingStore" /* 6633 */;
+import SpeakingStore from "SpeakingStore" /* 6636 */;
 import UserStore from "UserStore" /* 1392 */;
 import VoiceStateStore from "VoiceStateStore" /* 5591 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11482 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11493 */;
 import Constants from "Constants" /* 1087 */;
 import "AssetRegistry";
-import AssetRegistry from "AssetRegistry" /* 14396 */;
+import AssetRegistry from "AssetRegistry" /* 14414 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
 

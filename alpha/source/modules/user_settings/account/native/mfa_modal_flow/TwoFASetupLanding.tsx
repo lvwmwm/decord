@@ -1,18 +1,18 @@
-// Module ID: 15833
-// Function ID: 15834
+// Module ID: 15852
+// Function ID: 15853
 // Name: TwoFASetupLanding
-// Dependencies: [19, 17, 21, 4945, 558, 576, 15834, 5631, 15835, 5195, 1128, 7169, 15830, 2]
+// Dependencies: [19, 17, 21, 4945, 558, 576, 15853, 5631, 15854, 5195, 1128, 7172, 15849, 2]
 
-// Module 15833 (TwoFASetupLanding)
+// Module 15852 (TwoFASetupLanding)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7169 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 15830 */;
-import TwoFASetupStyles from "TwoFASetupStyles" /* 15834 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15835 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7172 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 15849 */;
+import TwoFASetupStyles from "TwoFASetupStyles" /* 15853 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15854 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -98,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetupLa
         }
         const obj6 = { children: React3(View, obj7) };
         obj7 = { style: container, children: tmp20 };
-        const TwoFASetupModalScreen = tmp(15830).TwoFASetupModalScreen;
+        const TwoFASetupModalScreen = tmp(15849).TwoFASetupModalScreen;
         const tmp26 = React3(TwoFASetupModalScreen, obj6);
         cResult[13] = tmp4.container;
         cResult[14] = tmp20;

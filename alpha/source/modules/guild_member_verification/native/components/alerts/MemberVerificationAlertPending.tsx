@@ -1,11 +1,11 @@
-// Module ID: 6786
-// Function ID: 6787
+// Module ID: 6789
+// Function ID: 6790
 // Name: MemberVerificationAlertPending
-// Dependencies: [109, 19, 21, 558, 576, 6783, 1128, 5205, 6787, 6788, 2]
+// Dependencies: [109, 19, 21, 558, 576, 6786, 1128, 5205, 6790, 6791, 2]
 
-// Module 6786 (MemberVerificationAlertPending)
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6783 */;
-import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 6787 */;
+// Module 6789 (MemberVerificationAlertPending)
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6786 */;
+import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 6790 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -116,7 +116,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
         }
         return tmp30;
       }
-      const obj4 = { icon: tmp(6788).ClipboardListIcon, header: tmp12, subtitle: tmp13, buttons: tmp26 };
+      const obj4 = { icon: tmp(6791).ClipboardListIcon, header: tmp12, subtitle: tmp13, buttons: tmp26 };
       const tmp33 = MemberVerificationAlertDefault;
       const merged = Object.assign(tmp6);
       const tmp37 = closure_6(tmp33, obj4);
@@ -164,8 +164,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
     const obj2 = { guildId };
     const result = obj.openMemberVerificationCancelPendingAlert(obj2);
   }, items);
-  let obj = { icon: guildId(6788).ClipboardListIcon, header: intl.string(guildId(1128).t.zhfXbs), subtitle: intl2.string(guildId(1128).t["SRM/e/"]), buttons: closure_8(closure_7, obj2) };
-  const tmp3 = onClose(6787);
+  let obj = { icon: guildId(6791).ClipboardListIcon, header: intl.string(guildId(1128).t.zhfXbs), subtitle: intl2.string(guildId(1128).t["SRM/e/"]), buttons: closure_8(closure_7, obj2) };
+  const tmp3 = onClose(6790);
   const merged1 = Object.assign(merged);
   intl = guildId(1128).intl;
   intl2 = guildId(1128).intl;

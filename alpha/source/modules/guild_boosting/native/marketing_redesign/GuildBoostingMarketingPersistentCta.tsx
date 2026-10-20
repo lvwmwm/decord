@@ -1,9 +1,9 @@
-// Module ID: 7455
-// Function ID: 7456
+// Module ID: 7458
+// Function ID: 7459
 // Name: GuildBoostingMarketingPersistentCta
-// Dependencies: [19, 17, 4946, 1087, 21, 4945, 587, 558, 576, 573, 5014, 5208, 6831, 5195, 7456, 5219, 2]
+// Dependencies: [19, 17, 4946, 1087, 21, 4945, 587, 558, 576, 573, 5014, 5208, 6834, 5195, 7459, 5219, 2]
 
-// Module 7455 (GuildBoostingMarketingPersistentCta)
+// Module 7458 (GuildBoostingMarketingPersistentCta)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -216,7 +216,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
                 }
               }
               const obj8 = { guild, previousGuildSubscriptionSlot, useShortenedCTA: true, styles: tmp4.button, analyticsSection: AnalyticsSections.PREMIUM_GUILD_USER_MODAL_FLOATING_CTA_BAR, fractionalPremiumState, premiumGroupRole };
-              const tmp30 = closure_6(stateFromStores(7456), obj8);
+              const tmp30 = closure_6(stateFromStores(7459), obj8);
               cResult[19] = fractionalPremiumState;
               cResult[20] = guild;
               cResult[21] = premiumGroupRole;
@@ -255,8 +255,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
       }
     }
     ({ guildIcon: obj5.style, guildIconText: obj5.textStyle } = tmp4);
-    const obj10 = { style: null, textStyle: null, guild, size: isVisible(6831).GuildIconSizes.LARGE };
-    const tmp18 = stateFromStores(6831);
+    const obj10 = { style: null, textStyle: null, guild, size: isVisible(6834).GuildIconSizes.LARGE };
+    const tmp18 = stateFromStores(6834);
     const tmp19 = closure_6(tmp18, obj10);
     let num3 = 8;
     cResult[8] = guild;
@@ -329,13 +329,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
   items2 = [stateFromStores(587).unsafe_rawColors.GUILD_BOOSTING_BLUE, stateFromStores(587).unsafe_rawColors.GUILD_BOOSTING_PURPLE];
   obj6 = { style: tmp.innerWraper, children: items4 };
   const obj7 = { style: tmp.guildInfoContainer, children: items3 };
-  const obj8 = { style: tmp.guildIcon, textStyle: tmp.guildIconText, guild, size: isVisible(6831).GuildIconSizes.LARGE };
-  const tmp5 = stateFromStores(6831);
+  const obj8 = { style: tmp.guildIcon, textStyle: tmp.guildIconText, guild, size: isVisible(6834).GuildIconSizes.LARGE };
+  const tmp5 = stateFromStores(6834);
   items3 = [closure_6(tmp5, obj8), ];
   const obj9 = { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name };
   items3[1] = closure_6(isVisible(5195).Text, obj9);
   items4 = [closure_7(View, obj7), ];
-  const obj10 = { style: tmp.buttonContainer, children: closure_6(stateFromStores(7456), obj11) };
+  const obj10 = { style: tmp.buttonContainer, children: closure_6(stateFromStores(7459), obj11) };
   obj11 = { guild, previousGuildSubscriptionSlot, useShortenedCTA: true, styles: tmp.button, analyticsSection: AnalyticsSections.PREMIUM_GUILD_USER_MODAL_FLOATING_CTA_BAR, fractionalPremiumState, premiumGroupRole };
   items4[1] = closure_6(View, obj10);
   return closure_6(View, obj4);

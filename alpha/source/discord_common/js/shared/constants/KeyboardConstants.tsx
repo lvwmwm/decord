@@ -1,28 +1,28 @@
-// Module ID: 7559
-// Function ID: 7560
+// Module ID: 7562
+// Function ID: 7563
 // Name: KeyboardConstants
-// Dependencies: [7560, 2]
+// Dependencies: [7563, 2]
 
-// Module 7559 (KeyboardConstants)
-import _mod7560 from "module_7560" /* 7560 */;
+// Module 7562 (KeyboardConstants)
+import _mod7563 from "module_7563" /* 7563 */;
 import size from "module_2" /* 2 */;
 
-const F6 = _mod7560.Key.F6;
-const items = [_mod7560.Key.F6, "f6"];
+const F6 = _mod7563.Key.F6;
+const items = [_mod7563.Key.F6, "f6"];
 const items1 = [items, , , , , , , ];
-const items2 = [_mod7560.Key.Tab, "tab"];
+const items2 = [_mod7563.Key.Tab, "tab"];
 items1[1] = items2;
-const items3 = [_mod7560.Key.ArrowDown, "down"];
+const items3 = [_mod7563.Key.ArrowDown, "down"];
 items1[2] = items3;
-const items4 = [_mod7560.Key.ArrowUp, "up"];
+const items4 = [_mod7563.Key.ArrowUp, "up"];
 items1[3] = items4;
-const items5 = [_mod7560.Key.ArrowLeft, "left"];
+const items5 = [_mod7563.Key.ArrowLeft, "left"];
 items1[4] = items5;
-const items6 = [_mod7560.Key.ArrowRight, "right"];
+const items6 = [_mod7563.Key.ArrowRight, "right"];
 items1[5] = items6;
-const items7 = [_mod7560.Key.Home, "home"];
+const items7 = [_mod7563.Key.Home, "home"];
 items1[6] = items7;
-const items8 = [_mod7560.Key.End, "end"];
+const items8 = [_mod7563.Key.End, "end"];
 items1[7] = items8;
 const map = new Map(items1);
 const set = new Set(["tab", "shift+tab", "down", "up", "left", "right", "home", "end"]);
@@ -33,7 +33,7 @@ const merged = Object.assign(Object.freeze({ "^": 220, "\u00a7": 220, "\u00bd": 
 const freezeResult = freeze(point);
 const result = size.fileFinishedImporting("../discord_common/js/shared/constants/KeyboardConstants.tsx");
 
-export const KeyboardEventKey = _mod7560.Key;
+export const KeyboardEventKey = _mod7563.Key;
 export const FOCUS_SECTION_JUMP_KEY = F6;
 export const NavigationKeyShortcutMap = map;
 export const NavigationShortcuts = set;

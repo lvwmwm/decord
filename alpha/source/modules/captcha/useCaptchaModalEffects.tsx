@@ -1,9 +1,9 @@
-// Module ID: 18445
-// Function ID: 18446
+// Module ID: 18467
+// Function ID: 18468
 // Name: useCaptchaModalEffects
-// Dependencies: [19, 1087, 558, 576, 6420, 5224, 1267, 2]
+// Dependencies: [19, 1087, 558, 576, 6423, 5224, 1267, 2]
 
-// Module 18445 (useCaptchaModalEffects)
+// Module 18467 (useCaptchaModalEffects)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import react from "react" /* 19 */;

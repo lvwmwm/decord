@@ -1,11 +1,11 @@
-// Module ID: 9123
-// Function ID: 9124
+// Module ID: 9135
+// Function ID: 9136
 // Name: useSecureFramesPairwiseFingerprint
-// Dependencies: [32, 5, 19, 502, 2014, 5676, 9118, 5680, 206, 558, 576, 504, 38, 9124, 2]
+// Dependencies: [32, 5, 19, 502, 2014, 5676, 9130, 5680, 206, 558, 576, 504, 38, 9136, 2]
 
-// Module 9123 (useSecureFramesPairwiseFingerprint)
+// Module 9135 (useSecureFramesPairwiseFingerprint)
 import Constants from "Constants" /* 5680 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9118 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9130 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -346,7 +346,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFra
             closure_9.current = setTimeout(() => {
               _asyncToGenerator(true);
               const promise = t8();
-              promise.then(() => { /* body not rendered: F156835 */ });
+              promise.then(() => { /* body not rendered: F157024 */ });
             }, 0);
           } else {
             tmp4 = closure_10;

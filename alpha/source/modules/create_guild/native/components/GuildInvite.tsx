@@ -1,32 +1,32 @@
-// Module ID: 13453
-// Function ID: 13454
+// Module ID: 13471
+// Function ID: 13472
 // Name: GuildInvite
-// Dependencies: [32, 19, 17, 9052, 4800, 8972, 4878, 8986, 7021, 1087, 21, 4945, 5229, 587, 1267, 558, 576, 8505, 1128, 6851, 9051, 7168, 1505, 5228, 504, 5926, 9003, 5224, 6872, 4952, 8982, 13413, 8971, 5673, 5195, 13454, 1202, 9018, 6856, 9049, 5205, 7169, 2]
+// Dependencies: [32, 19, 17, 9064, 4800, 8984, 4878, 8998, 7024, 1087, 21, 4945, 5229, 587, 1267, 558, 576, 8509, 1128, 6854, 9063, 7171, 1505, 5228, 504, 5929, 9015, 5224, 6875, 4952, 8994, 13431, 8983, 5673, 5195, 13472, 1202, 9030, 6859, 9061, 5205, 7172, 2]
 
-// Module 13453 (GuildInvite)
+// Module 13471 (GuildInvite)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import NavigatorConstants from "NavigatorConstants" /* 5229 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5673 */;
-import react_native from "react-native" /* 5926 */;
-import TableRow2 from "TableRow" /* 6851 */;
-import NavigatorHeader from "NavigatorHeader" /* 6872 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7021 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7168 */;
-import GroupIcon from "GroupIcon" /* 8505 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8971 */;
-import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9003 */;
-import InstantInviteRowDefault from "InstantInviteRow" /* 9051 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9052 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13413 */;
+import react_native from "react-native" /* 5929 */;
+import TableRow2 from "TableRow" /* 6854 */;
+import NavigatorHeader from "NavigatorHeader" /* 6875 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7024 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7171 */;
+import GroupIcon from "GroupIcon" /* 8509 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8983 */;
+import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9015 */;
+import InstantInviteRowDefault from "InstantInviteRow" /* 9063 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9064 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13431 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8972 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8984 */;
 import GuildChannelStore_mod from "GuildChannelStore" /* 4878 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 8986 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 8998 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -221,7 +221,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildI
         }
       }
       const obj3 = { data: tmp5, renderItem: tmp7, contentContainerStyle: tmp4.suggestionRowsContainer, ListFooterComponent: tmp8, ItemSeparatorComponent: tmp12, keyExtractor: tmp14, getItemType: tmp15 };
-      const tmp18 = closure_17(tmp(7168).FlashList, obj3);
+      const tmp18 = closure_17(tmp(7171).FlashList, obj3);
       cResult[11] = tmp5;
       cResult[12] = tmp7;
       cResult[13] = tmp4.suggestionRowsContainer;
@@ -744,7 +744,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildInvit
       if (stateFromStores != null) {
         code = stateFromStores.code;
       }
-      const tmp2Result = tmp2(8971);
+      const tmp2Result = tmp2(8983);
       handleOpenShareSheet(code, tmp, tmp2Result.getShareMessage(inviteSuggestionRows));
       closure_6(true);
     }

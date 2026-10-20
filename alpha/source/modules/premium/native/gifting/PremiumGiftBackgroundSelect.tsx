@@ -1,14 +1,14 @@
-// Module ID: 10503
-// Function ID: 10504
+// Module ID: 10514
+// Function ID: 10515
 // Name: PremiumGiftBackgroundSelect
-// Dependencies: [32, 19, 17, 21, 5014, 4945, 587, 558, 576, 1499, 5167, 1202, 10504, 10368, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 4945, 587, 558, 576, 1499, 5167, 1202, 10515, 10379, 2]
 
-// Module 10503 (PremiumGiftBackgroundSelect)
+// Module 10514 (PremiumGiftBackgroundSelect)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import timing from "timing" /* 5167 */;
-import NativeGiftContext from "NativeGiftContext" /* 10368 */;
+import NativeGiftContext from "NativeGiftContext" /* 10379 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

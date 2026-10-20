@@ -1,10 +1,10 @@
-// Module ID: 12113
-// Function ID: 12114
+// Module ID: 12128
+// Function ID: 12129
 // Name: getEmojiText
 // Dependencies: [2]
 // Exports: default
 
-// Module 12113 (getEmojiText)
+// Module 12128 (getEmojiText)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/emojis/utils/getEmojiText.tsx");

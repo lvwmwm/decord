@@ -1,18 +1,18 @@
-// Module ID: 17450
-// Function ID: 17451
+// Module ID: 17469
+// Function ID: 17470
 // Name: useFavoritesGuildSuggestionCandidates
-// Dependencies: [19, 17451, 7676, 4800, 17359, 12714, 558, 576, 17453, 504, 9004, 13671, 12725, 9000, 8988, 2]
+// Dependencies: [19, 17470, 7679, 4800, 17378, 12731, 558, 576, 17472, 504, 9016, 13689, 12742, 9012, 9000, 2]
 // Exports: default
 
-// Module 17450 (useFavoritesGuildSuggestionCandidates)
+// Module 17469 (useFavoritesGuildSuggestionCandidates)
 import react2 from "react" /* 576 */;
-import _mod8988 from "module_8988" /* 8988 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9000 */;
-import ShareConstants from "ShareConstants" /* 12714 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17359 */;
+import _mod9000 from "module_9000" /* 9000 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9012 */;
+import ShareConstants from "ShareConstants" /* 12731 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17378 */;
 import react_mod from "react" /* 19 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 17451 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7676 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 17470 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7679 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -223,7 +223,7 @@ export default function useFavoritesGuildSuggestionCandidates(arg0) {
               let sum = tmp25 + 1;
               if (null != tmp20) {
                 let tmp24;
-                if (tmp20.type !== _mod8988.AutocompleterResultTypes.HEADER) {
+                if (tmp20.type !== _mod9000.AutocompleterResultTypes.HEADER) {
                   tmp24 = sum;
                   if (!set.has(tmp20.record.id)) {
                     break;

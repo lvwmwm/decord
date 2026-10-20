@@ -1,21 +1,21 @@
-// Module ID: 16824
-// Function ID: 16825
+// Module ID: 16843
+// Function ID: 16844
 // Name: DevToolsShopScreen
-// Dependencies: [19, 17, 5198, 21, 4945, 587, 558, 576, 5554, 504, 16712, 4784, 16797, 6851, 7242, 7241, 5932, 6935, 2]
+// Dependencies: [19, 17, 5198, 21, 4945, 587, 558, 576, 5554, 504, 16731, 4784, 16816, 6854, 7245, 7244, 5935, 6938, 2]
 
-// Module 16824 (DevToolsShopScreen)
+// Module 16843 (DevToolsShopScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import dismissible_content from "dismissible_content" /* 4784 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5554 */;
-import Stack_Stack from "Stack/Stack" /* 5932 */;
-import TableRow5 from "TableRow" /* 6851 */;
-import TableRowGroup2 from "TableRowGroup" /* 6935 */;
-import TableSwitchRow from "TableSwitchRow" /* 7241 */;
-import FormSwitch from "FormSwitch" /* 7242 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 16712 */;
+import Stack_Stack from "Stack/Stack" /* 5935 */;
+import TableRow5 from "TableRow" /* 6854 */;
+import TableRowGroup2 from "TableRowGroup" /* 6938 */;
+import TableSwitchRow from "TableSwitchRow" /* 7244 */;
+import FormSwitch from "FormSwitch" /* 7245 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 16731 */;
 import react from "react" /* 19 */;
 import DevSettingsStore from "DevSettingsStore" /* 5198 */;
 import Fragment from "Fragment" /* 21 */;
@@ -156,7 +156,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsSh
   }
   if (cResult[12] !== stateFromStores) {
     const obj4 = { label: "Disable collectibles shop cache", subLabel: "shop_disable_cache", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp30) };
-    const TableRow = tmp(6851).TableRow;
+    const TableRow = tmp(6854).TableRow;
     class R {
       constructor() {
         return DevSettingsStore.get("bypass_google_sku_sync");
@@ -200,7 +200,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsSh
       }
     }
     const obj5 = { label: "Show unpublished items in collectibles shop", subLabel: "shop_include_unpublished", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp34) };
-    const TableRow2 = tmp(6851).TableRow;
+    const TableRow2 = tmp(6854).TableRow;
     class R {
       constructor() {
         return DevSettingsStore.get("bypass_google_sku_sync");
@@ -240,7 +240,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsSh
         }
       }
       const obj6 = { label: "Show debug log overlay in collectibles shop", subLabel: "shop_show_debug_overlay", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp41) };
-      const TableRow3 = tmp(6851).TableRow;
+      const TableRow3 = tmp(6854).TableRow;
       class R {
         constructor() {
           return DevSettingsStore.get("bypass_google_sku_sync");
@@ -289,7 +289,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsSh
         }
       }
       const obj7 = { label: "[Android] Bypass Google SKU sync in collectibles shop", subLabel: "bypass_google_sku_sync", subLabelLineClamp: 1, trailing: hasOwnProperty(FormSwitch.FormSwitch, tmp45) };
-      const TableRow4 = tmp(6851).TableRow;
+      const TableRow4 = tmp(6854).TableRow;
       class R {
         constructor() {
           return DevSettingsStore.get("bypass_google_sku_sync");
@@ -317,7 +317,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsSh
       }
     }
     const obj8 = { spacing: 16, children: metroRequire(TableRowGroup2.TableRowGroup, obj9) };
-    const Stack = tmp(5932).Stack;
+    const Stack = tmp(5935).Stack;
     obj9 = { title: "Shop Toggles", hasIcons: false, children: items4 };
     items4 = [tmp28, tmp33, tmp36, tmp40, tmp44];
     cResult[26] = tmp28;

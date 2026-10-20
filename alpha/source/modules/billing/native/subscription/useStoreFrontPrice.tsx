@@ -1,9 +1,9 @@
-// Module ID: 9715
-// Function ID: 9716
+// Module ID: 9728
+// Function ID: 9729
 // Name: useStoreFrontPrice
 // Dependencies: [19, 1087, 558, 576, 2054, 2]
 
-// Module 9715 (useStoreFrontPrice)
+// Module 9728 (useStoreFrontPrice)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import PremiumUtils from "PremiumUtils" /* 2054 */;

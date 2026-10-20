@@ -1,21 +1,21 @@
-// Module ID: 18042
-// Function ID: 18043
+// Module ID: 18065
+// Function ID: 18066
 // Name: ChannelSecondaryViewChatNavigator
-// Dependencies: [19, 21, 9658, 4945, 587, 9614, 1384, 558, 576, 10684, 11868, 13543, 5107, 7043, 13824, 9626, 4999, 2]
+// Dependencies: [19, 21, 9671, 4945, 587, 9627, 1384, 558, 576, 10695, 11882, 13561, 5107, 7046, 13842, 9639, 4999, 2]
 
-// Module 18042 (ChannelSecondaryViewChatNavigator)
+// Module 18065 (ChannelSecondaryViewChatNavigator)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import HeaderShared from "HeaderShared" /* 9614 */;
-import ChannelActionsDefault from "ChannelActions" /* 9626 */;
-import ChatViewDefault from "ChatView" /* 10684 */;
-import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 11868 */;
-import ChannelContainer2 from "ChannelContainer" /* 13543 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 13824 */;
+import HeaderShared from "HeaderShared" /* 9627 */;
+import ChannelActionsDefault from "ChannelActions" /* 9639 */;
+import ChatViewDefault from "ChatView" /* 10695 */;
+import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 11882 */;
+import ChannelContainer2 from "ChannelContainer" /* 13561 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 13842 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9658 */;
+import NativeStackView from "NativeStackView" /* 9671 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -58,7 +58,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channel
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const tmpResult = PlatformUtils;
-      const isIOSResult = tmpResult.isIOS() && React3(tmp(11868).PortalKeyboardRenderer, { portal: false });
+      const isIOSResult = tmpResult.isIOS() && React3(tmp(11882).PortalKeyboardRenderer, { portal: false });
       cResult[3] = isIOSResult;
       tmp8 = isIOSResult;
     } else {
@@ -223,7 +223,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSec
   const tmp = closure_7();
   dependencyMap = tmp;
   const tmp2 = params(5107)();
-  let obj = navigation(7043);
+  let obj = navigation(7046);
   const accessibilityNativeStackOptions = obj.useAccessibilityNativeStackOptions();
   const channelId = params.channelId;
   const items = [channelId, tmp, navigation, accessibilityNativeStackOptions];

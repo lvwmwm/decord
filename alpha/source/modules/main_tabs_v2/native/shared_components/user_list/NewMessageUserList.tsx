@@ -1,17 +1,17 @@
-// Module ID: 13050
-// Function ID: 13051
+// Module ID: 13068
+// Function ID: 13069
 // Name: NewMessageUserList
-// Dependencies: [32, 19, 17, 4800, 4890, 1392, 10534, 21, 4945, 587, 6775, 4994, 5565, 558, 576, 12, 10536, 1128, 5195, 10538, 10540, 12732, 13051, 2]
+// Dependencies: [32, 19, 17, 4800, 4890, 1392, 10545, 21, 4945, 587, 6778, 4994, 5565, 558, 576, 12, 10547, 1128, 5195, 10549, 10551, 12749, 13069, 2]
 
-// Module 13050 (NewMessageUserList)
+// Module 13068 (NewMessageUserList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import UserUtilsDefault from "UserUtils" /* 4994 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import useChannelName from "useChannelName" /* 5565 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6775 */;
-import UserRowConstants from "UserRowConstants" /* 10534 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6778 */;
+import UserRowConstants from "UserRowConstants" /* 10545 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore_mod from "ChannelStore" /* 4800 */;
@@ -50,7 +50,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
           toLocaleLowerCaseResult1 = globalName.toLocaleLowerCase();
         }
         if (null != toLocaleLowerCaseResult1) {
-          if (tmp19(6775)(trimmed1, tmp7)) {
+          if (tmp19(6778)(trimmed1, tmp7)) {
             obj.return();
             return 1;
           }
@@ -61,7 +61,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
           toLocaleLowerCaseResult2 = nickname.toLocaleLowerCase();
         }
         if (null != toLocaleLowerCaseResult2) {
-          if (tmp19(6775)(trimmed1, tmp12)) {
+          if (tmp19(6778)(trimmed1, tmp12)) {
             obj.return();
             return 1;
           }

@@ -1,9 +1,9 @@
-// Module ID: 17725
-// Function ID: 17726
+// Module ID: 17744
+// Function ID: 17745
 // Name: GuildRoleSubscriptionPurchasePreviewCard
-// Dependencies: [32, 19, 17, 4800, 21, 4945, 587, 558, 576, 7022, 5195, 5171, 17726, 2002, 9873, 16327, 1202, 504, 5565, 1128, 8447, 16314, 17721, 5631, 17727, 2]
+// Dependencies: [32, 19, 17, 4800, 21, 4945, 587, 558, 576, 7025, 5195, 5171, 17745, 2002, 9885, 16346, 1202, 504, 5565, 1128, 8451, 16333, 17740, 5631, 17746, 2]
 
-// Module 17725 (GuildRoleSubscriptionPurchasePreviewCard)
+// Module 17744 (GuildRoleSubscriptionPurchasePreviewCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
@@ -12,10 +12,10 @@ import asyncRequire from "asyncRequire" /* 2002 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import useChannelNameDefault from "useChannelName" /* 5565 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7022 */;
-import LayoutUtils from "LayoutUtils" /* 9873 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16314 */;
-import EmojiIconDefault from "EmojiIcon" /* 16327 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7025 */;
+import LayoutUtils from "LayoutUtils" /* 9885 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16333 */;
+import EmojiIconDefault from "EmojiIcon" /* 16346 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -198,7 +198,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiG
   }
   const substr = emojiIds.slice(0, maxEmojis);
   const diff = emojiIds.length - maxEmojis;
-  const GappedList = tmp(9873).GappedList;
+  const GappedList = tmp(9885).GappedList;
   const tmp12 = closure_6;
   if (cResult[10] !== guildId) {
     class I {
@@ -405,7 +405,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       tmp12 = cResult[5];
     }
     if (cResult[6] !== stateFromStores) {
-      const tmpResult2 = channelId(8447);
+      const tmpResult2 = channelId(8451);
       const channelIcon = tmpResult2.getChannelIcon(stateFromStores);
       cResult[6] = stateFromStores;
       cResult[7] = channelIcon;
@@ -483,7 +483,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     const obj2 = { style: { flexDirection: "row", alignItems: "center" }, children: items2 };
     const obj3 = { size: channelId(1202).Icon.Sizes.REFRESH_SMALL_16, source: tmpResult.getChannelIcon(stateFromStores) };
     const Icon = tmp(1202).Icon;
-    tmpResult = channelId(8447);
+    tmpResult = channelId(8451);
     items2 = [closure_8(Icon, obj3), closure_8(channelId(1202).Spacer, { size: 4 }), ];
     const obj4 = { variant: "text-md/semibold", color: "text-default", children: tmp4 };
     items2[2] = closure_8(channelId(5195).Text, obj4);
@@ -592,7 +592,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   const first2 = _slicedToArray(obj5.useChannelBenefits(listingId), 1)[0];
   const obj6 = GuildRoleSubscriptionListingEditStateUtilsAll;
   const first3 = _slicedToArray(obj6.useIntangibleBenefits(listingId), 1)[0];
-  const obj7 = listingId(17721);
+  const obj7 = listingId(17740);
   const formattedSubscriptionPlan = obj7.useFormattedSubscriptionPlan(listingId);
   const first4 = first2[0];
   const first5 = first3[0];
@@ -680,7 +680,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
             }
             if (cResult[22] !== listingId) {
               const obj11 = { listingId };
-              const tmp46 = closure_8(guildId(17727), obj11);
+              const tmp46 = closure_8(guildId(17746), obj11);
               cResult[22] = listingId;
               cResult[23] = tmp46;
               tmp43 = tmp46;
@@ -740,7 +740,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                             },
                 children: items4
               };
-              GappedList = tmp2(9873).GappedList;
+              GappedList = tmp2(9885).GappedList;
               const tmp50 = closure_10;
               if (size > 0) {
                 const obj15 = { children: items2 };
@@ -831,7 +831,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { listingId, guildId };
-    const tmp2 = asyncRequire(17726, dependencyMap.paths);
+    const tmp2 = asyncRequire(17745, dependencyMap.paths);
     openLazy(tmp2, "PurchaseCard:" + listingId, obj);
   }
   cResult[0] = guildId;
@@ -872,7 +872,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   size = first1.size;
   const obj7 = { style: tmp2.container, children: items2 };
   const obj8 = { style: tmp2.header, children: items };
-  const obj6 = listingId(17721);
+  const obj6 = listingId(17740);
   const formattedSubscriptionPlan = obj6.useFormattedSubscriptionPlan(listingId);
   const tmp13 = guildId;
   const tmp14 = guildId(5631);
@@ -886,7 +886,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   const obj10 = { children: items1 };
   items1 = [closure_8(listingId(5195).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first }), closure_8(listingId(1202).Spacer, { size: 4 }), closure_8(listingId(5195).Text, { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan })];
   items[2] = closure_9(closure_6, obj10);
-  items2 = [closure_9(closure_6, obj8), closure_8(listingId(1202).Spacer, { size: 16 }), closure_8(tmp13(17727), { listingId }), ];
+  items2 = [closure_9(closure_6, obj8), closure_8(listingId(1202).Spacer, { size: 16 }), closure_8(tmp13(17746), { listingId }), ];
   let tmp10Result6 = length > 0 || size > 0 || length2 > 0;
   if (tmp10Result6) {
     const items3 = [closure_8(listingId(1202).Spacer, { size: 24 }), , ];
@@ -898,7 +898,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
         },
       children: items6
     };
-    GappedList = tmp6(9873).GappedList;
+    GappedList = tmp6(9885).GappedList;
     const tmp16 = closure_10;
     if (size > 0) {
       const obj13 = { children: items4 };
@@ -948,7 +948,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
           const obj = { listingId, guildId };
-          const tmp2 = asyncRequire(17726, dependencyMap.paths);
+          const tmp2 = asyncRequire(17745, dependencyMap.paths);
           openLazy(tmp2, "PurchaseCard:" + listingId, obj);
         }
     };

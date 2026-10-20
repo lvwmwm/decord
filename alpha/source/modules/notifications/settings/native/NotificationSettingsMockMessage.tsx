@@ -1,9 +1,9 @@
-// Module ID: 13583
-// Function ID: 13584
+// Module ID: 13601
+// Function ID: 13602
 // Name: NotificationSettingsMockMessage
-// Dependencies: [19, 17, 1392, 1087, 21, 4945, 587, 558, 576, 504, 4994, 5014, 5167, 5170, 5195, 1128, 1202, 13584, 2]
+// Dependencies: [19, 17, 1392, 1087, 21, 4945, 587, 558, 576, 504, 4994, 5014, 5167, 5170, 5195, 1128, 1202, 13602, 2]
 
-// Module 13583 (NotificationSettingsMockMessage)
+// Module 13601 (NotificationSettingsMockMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -171,7 +171,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
     const _Symbol2 = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
       const obj8 = { children: closure_7(Avatar, obj9) };
-      obj9 = { source: sharedValue(13584), size: tmp(1202).AvatarSizes.LARGE_48 };
+      obj9 = { source: sharedValue(13602), size: tmp(1202).AvatarSizes.LARGE_48 };
       Avatar = tmp(1202).Avatar;
       const tmp38 = closure_7(View, obj8);
       cResult[14] = tmp38;
@@ -345,7 +345,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   const obj8 = { style: tmp.card, children: items6 };
   const obj9 = { style: tmp.cardContent, children: items4 };
   const obj10 = { children: tmp13(Avatar, obj11) };
-  obj11 = { source: sharedValue(13584), size: require("native").AvatarSizes.LARGE_48 };
+  obj11 = { source: sharedValue(13602), size: require("native").AvatarSizes.LARGE_48 };
   Avatar = tmp2(1202).Avatar;
   items4 = [tmp13(View, obj10), ];
   const obj12 = { style: tmp.cardMessage, children: items5 };

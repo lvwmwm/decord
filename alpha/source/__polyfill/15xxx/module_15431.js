@@ -1,44 +1,112 @@
 // Module ID: 15431
 // Function ID: 15432
-// Dependencies: []
+// Dependencies: [15395, 15370, 15432, 15386, 15433, 15415, 15393, 15426]
 
 // Module 15431
-const obj = {
-  isASCIIDigit(decodeResult) {
-    return decodeResult >= 48 && decodeResult <= 57;
-  },
-  isASCIIAlpha(input) {
-    let tmp = input >= 65 && input <= 90;
-    if (!tmp) {
-      tmp = input >= 97 && input <= 122;
-      const tmp2 = input >= 97 && input <= 122;
-    }
-    return tmp;
-  },
-  isASCIIAlphanumeric(arg0) {
-    let tmp = arg0 >= 65 && arg0 <= 90;
-    if (!tmp) {
-      tmp = arg0 >= 97 && arg0 <= 122;
-      const tmp2 = arg0 >= 97 && arg0 <= 122;
-    }
-    if (!tmp) {
-      tmp = arg0 >= 48 && arg0 <= 57;
-      const tmp3 = arg0 >= 48 && arg0 <= 57;
-    }
-    return tmp;
-  },
-  isASCIIHex(decodeResult) {
-    let tmp = decodeResult >= 48 && decodeResult <= 57;
-    if (!tmp) {
-      tmp = decodeResult >= 65 && decodeResult <= 70;
-      const tmp2 = decodeResult >= 65 && decodeResult <= 70;
-    }
-    if (!tmp) {
-      tmp = decodeResult >= 97 && decodeResult <= 102;
-      const tmp3 = decodeResult >= 97 && decodeResult <= 102;
-    }
-    return tmp;
+import _mod15370 from "module_15370" /* 15370 */;
+import _mod15386 from "module_15386" /* 15386 */;
+import _mod15395 from "module_15395" /* 15395 */;
+import _mod15415 from "module_15415" /* 15415 */;
+import _mod15426 from "module_15426" /* 15426 */;
+import _mod15432 from "module_15432" /* 15432 */;
+import _mod15433 from "module_15433" /* 15433 */;
+
+const require = globalThis.__r;
+
+let fn4;
+let fn5;
+let fn6;
+if (!_mod15432) {
+  let fn;
+  let fn2;
+  let fn3;
+  if (!_mod15386.state) {
+    let tmp = _mod15433("state");
+    let closure_6 = tmp;
+    _mod15415[tmp] = true;
+    fn = function t(facade, arg1) {
+      const tmp3 = closure_6;
+      if (require("module_15393")(facade, closure_6)) {
+        const self = this;
+        const self2 = this;
+        const typeError = new tmp(15370).TypeError("Object already initialized");
+        throw typeError;
+      } else {
+        arg1.facade = facade;
+        _mod15426(facade, tmp3, arg1);
+        return arg1;
+      }
+    };
+    fn4 = fn;
+    fn2 = function n(arg0) {
+      return require("module_15393")(arg0, closure_6) ? arg0[closure_6] : {};
+    };
+    fn5 = fn2;
+    fn3 = function u(arg0) {
+      return require("module_15393")(arg0, closure_6);
+    };
+    fn6 = fn3;
+  }
+  let obj = {
+    set: fn,
+    get: fn2,
+    has: fn3,
+    enforce(toString) {
+        let tmp2;
+        if (fn6(toString)) {
+          tmp2 = fn5(toString);
+        } else {
+          tmp2 = fn4(toString, {});
+        }
+        return tmp2;
+      },
+    getterFor(arg0) {
+        let closure_0 = arg0;
+        return (arg0) => {
+          if (_mod15395(arg0)) {
+            const tmp4 = fn5(arg0);
+            if (tmp4.type === closure_0) {
+              return tmp4;
+            }
+          }
+          const typeError = new _mod15370.TypeError("Incompatible receiver, " + closure_0 + " required");
+          throw typeError;
+        };
+      }
+  };
+  module.exports = obj;
+}
+let state = _mod15386.state;
+if (!state) {
+  const _module = _mod15386;
+  let self = this;
+  let self2 = this;
+  const weakMap = new _mod15370.WeakMap();
+  let tmp4 = weakMap;
+  _module.state = weakMap;
+  state = weakMap;
+}
+({ get: state.get, has: state.has, set: state.set } = state);
+fn4 = function t(facade, arg1) {
+  const obj = state;
+  if (state.has(facade)) {
+    const self = this;
+    const self2 = this;
+    const typeError = new _mod15370.TypeError("Object already initialized");
+    throw typeError;
+  } else {
+    arg1.facade = facade;
+    const result = obj.set(facade, arg1);
+    return arg1;
   }
 };
-
-export default obj;
+fn5 = function n(arg0) {
+  const tmp = state.get(arg0) || {};
+  return tmp;
+};
+fn6 = function u(arg0) {
+  return state.has(arg0);
+};
+fn3 = fn6;
+fn2 = fn5;
+fn = fn4;

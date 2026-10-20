@@ -1,12 +1,12 @@
-// Module ID: 14203
-// Function ID: 14204
+// Module ID: 14221
+// Function ID: 14222
 // Name: useIsGameFriends
-// Dependencies: [32, 7675, 1087, 558, 576, 504, 6643, 2]
+// Dependencies: [32, 7678, 1087, 558, 576, 504, 6646, 2]
 
-// Module 14203 (useIsGameFriends)
+// Module 14221 (useIsGameFriends)
 import Constants from "Constants" /* 1087 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7675 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7678 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

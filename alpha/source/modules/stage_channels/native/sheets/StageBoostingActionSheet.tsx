@@ -1,15 +1,15 @@
-// Module ID: 6641
-// Function ID: 6642
+// Module ID: 6644
+// Function ID: 6645
 // Name: StageBoostingActionSheet
-// Dependencies: [19, 4946, 4822, 4880, 6585, 1087, 1394, 21, 504, 4808, 1128, 5171, 1267, 6642, 6636, 5224, 6644, 5205, 6645, 10649, 14739, 5631, 14743, 2]
+// Dependencies: [19, 4946, 4822, 4880, 6588, 1087, 1394, 21, 504, 4808, 1128, 5171, 1267, 6645, 6639, 5224, 6647, 5205, 6648, 10660, 14757, 5631, 14761, 2]
 // Exports: default
 
-// Module 6641 (StageBoostingActionSheet)
+// Module 6644 (StageBoostingActionSheet)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 4808 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6585 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 6645 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6588 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 6648 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
 import GuildStore from "GuildStore" /* 4822 */;
@@ -123,10 +123,10 @@ export default function StageBoostingActionSheet(channel) {
       const obj3 = { guild_id: channel.guild_id, type: map1.VIDEO_STAGE_LIMIT, is_moderator: stateFromStores2, action: constants.DISMISS };
       obj2.track(metroImportDefault.BOOSTING_UPSELL_CLICKED, obj3);
     }
-    const tmpResult3 = channel(6642);
+    const tmpResult3 = channel(6645);
     dependencyMap = tmpResult3.useActualStageSpeakerCount(channel.id);
-    const tmpResult4 = channel(6642);
-    useReducedMotion = tmpResult4.useStageParticipantsCount(channel.id, tmp(6636).StageChannelParticipantNamedIndex.AUDIENCE);
+    const tmpResult4 = channel(6645);
+    useReducedMotion = tmpResult4.useStageParticipantsCount(channel.id, tmp(6639).StageChannelParticipantNamedIndex.AUDIENCE);
     stateFromStores2(5224)(() => {
       const obj = AnalyticsUtilsDefault;
       const obj2 = { guild_id: channel.guild_id, type: map1.VIDEO_STAGE_LIMIT, is_moderator: stateFromStores2, listener_count: closure_2 + useReducedMotion };
@@ -134,7 +134,7 @@ export default function StageBoostingActionSheet(channel) {
     });
     if (tmp9) {
       let obj3 = { size: "lg", children: items5 };
-      const ButtonGroup = tmp(6644).ButtonGroup;
+      const ButtonGroup = tmp(6647).ButtonGroup;
       let obj4 = {
         variant: "experimental_premium-primary",
         size: "lg",
@@ -177,11 +177,11 @@ export default function StageBoostingActionSheet(channel) {
       tmp21Result = tmp21(Button, obj7);
     }
     const obj8 = { title: string3Result1, description: stringResult, illustration: tmp21Result2, actions: tmp21Result };
-    const PromoSheet = tmp(10649).PromoSheet;
+    const PromoSheet = tmp(10660).PromoSheet;
     if (tmp9) {
-      tmp21Result2 = tmp21(tmp(14739).HoldingGemSpotIllustration, { accessible: false });
+      tmp21Result2 = tmp21(tmp(14757).HoldingGemSpotIllustration, { accessible: false });
     } else {
-      const obj9 = { source: stateFromStores2(14743) };
+      const obj9 = { source: stateFromStores2(14761) };
       const tmp19Result = stateFromStores2(5631);
       tmp21Result2 = tmp21(tmp19Result, obj9);
     }

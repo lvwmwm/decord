@@ -1,10 +1,10 @@
-// Module ID: 17131
-// Function ID: 17132
+// Module ID: 17150
+// Function ID: 17151
 // Name: isDateValidDateOfBirth
 // Dependencies: [2050, 2]
 // Exports: default
 
-// Module 17131 (isDateValidDateOfBirth)
+// Module 17150 (isDateValidDateOfBirth)
 import _modDef2050 from "module_2050" /* 2050 */;
 import size from "module_2" /* 2 */;
 

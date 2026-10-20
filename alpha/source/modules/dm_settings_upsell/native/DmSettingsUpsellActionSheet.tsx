@@ -1,17 +1,17 @@
-// Module ID: 18507
-// Function ID: 18508
+// Module ID: 18530
+// Function ID: 18531
 // Name: DmSettingsUpsellActionSheet
-// Dependencies: [19, 17, 4822, 21, 4945, 587, 558, 576, 504, 18504, 18508, 5171, 14954, 7039, 4776, 5625, 1128, 5631, 10738, 5195, 6831, 5205, 7244, 2]
+// Dependencies: [19, 17, 4822, 21, 4945, 587, 558, 576, 504, 18527, 18531, 5171, 14972, 7042, 4776, 5625, 1128, 5631, 10749, 5195, 6834, 5205, 7247, 2]
 
-// Module 18507 (DmSettingsUpsellActionSheet)
+// Module 18530 (DmSettingsUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import UserSettings from "UserSettings" /* 4776 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7039 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 14954 */;
-import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 18504 */;
-import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 18508 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7042 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 14972 */;
+import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 18527 */;
+import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 18531 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import Fragment from "Fragment" /* 21 */;
@@ -142,7 +142,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
       }
       const container = tmp4.container;
       if (cResult[13] !== tmp4.headerImage) {
-        let obj2 = { source: stateFromStores(10738), style: tmp4.headerImage };
+        let obj2 = { source: stateFromStores(10749), style: tmp4.headerImage };
         const tmp18 = stateFromStores(5631);
         const tmp19 = closure_6(tmp18, obj2);
         cResult[13] = tmp4.headerImage;
@@ -201,8 +201,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
           tmp30 = cResult[23];
         }
         if (cResult[24] !== stateFromStores) {
-          const obj6 = { guild: stateFromStores, size: tmp(6831).GuildIconSizes.SMALL_32 };
-          const tmp36 = stateFromStores(6831);
+          const obj6 = { guild: stateFromStores, size: tmp(6834).GuildIconSizes.SMALL_32 };
+          const tmp36 = stateFromStores(6834);
           const tmp37 = closure_6(tmp36, obj6);
           cResult[24] = stateFromStores;
           cResult[25] = tmp37;
@@ -309,7 +309,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
                 const obj11 = { startExpanded: true, children: closure_7(View, obj12) };
                 obj12 = { style: container, children: items2 };
                 items2 = [tmp15, tmp22, tmp27, tmp45, tmp51, tmp56, tmp61];
-                const ActionSheet = tmp(7244).ActionSheet;
+                const ActionSheet = tmp(7247).ActionSheet;
                 const tmp68 = closure_6(ActionSheet, obj11);
                 cResult[46] = tmp4.container;
                 cResult[47] = tmp22;
@@ -397,8 +397,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
   if (null != stateFromStores) {
     let obj2 = { startExpanded: true, children: closure_7(View, obj3) };
     obj3 = { style: tmp.container, children: items2 };
-    const ActionSheet = tmp2(7244).ActionSheet;
-    let obj4 = { source: stateFromStores(10738), style: tmp.headerImage };
+    const ActionSheet = tmp2(7247).ActionSheet;
+    let obj4 = { source: stateFromStores(10749), style: tmp.headerImage };
     const tmp11 = stateFromStores(5631);
     items2 = [closure_6(tmp11, obj4), , , , , , ];
     const obj5 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.title, children: intl.string(guildId(1128).t.w2BvnL) };
@@ -416,8 +416,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DmSettingsUp
     intl3 = tmp2(1128).intl;
     items3 = [closure_6(Text3, obj9), ];
     const obj10 = { style: tmp.guildInfo, children: items4 };
-    const obj11 = { guild: stateFromStores, size: guildId(6831).GuildIconSizes.SMALL_32 };
-    const tmp12 = stateFromStores(6831);
+    const obj11 = { guild: stateFromStores, size: guildId(6834).GuildIconSizes.SMALL_32 };
+    const tmp12 = stateFromStores(6834);
     items4 = [closure_6(tmp12, obj11), ];
     const obj12 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores.name };
     items4[1] = closure_6(guildId(5195).Text, obj12);

@@ -1,18 +1,18 @@
-// Module ID: 8402
-// Function ID: 8403
+// Module ID: 8406
+// Function ID: 8407
 // Name: GuildSpaceLeaderboardSystemMessage
-// Dependencies: [4800, 1392, 4945, 587, 4868, 8300, 5944, 8262, 1128, 8264, 8221, 8403, 8266, 2]
+// Dependencies: [4800, 1392, 4945, 587, 4868, 8304, 5947, 8266, 1128, 8268, 8225, 8407, 8270, 2]
 // Exports: createGuildSpaceLeaderboardSystemMessage
 
-// Module 8402 (GuildSpaceLeaderboardSystemMessage)
+// Module 8406 (GuildSpaceLeaderboardSystemMessage)
 import nativeDefault from "native" /* 587 */;
 import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4868 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5944 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8221 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8262 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8264 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8300 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8403 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5947 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8225 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8266 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8268 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 8304 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8407 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import UserStore from "UserStore" /* 1392 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -123,7 +123,7 @@ export const createGuildSpaceLeaderboardSystemMessage = function createGuildSpac
           }
           const obj5 = { content: formatToParts(message2, obj2), iconUrl: tmpResult10.getAssetUriForEmbed(AssetRegistryDefault), iconTintColor: tmp16.iconTintColor };
           tmpResult10 = renderer_EmbedUtils;
-          const merged1 = Object.assign(tmp26(8266)(theme));
+          const merged1 = Object.assign(tmp26(8270)(theme));
           return obj5;
         }
       }

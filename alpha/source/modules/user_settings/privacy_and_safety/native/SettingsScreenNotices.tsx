@@ -1,20 +1,20 @@
-// Module ID: 15888
-// Function ID: 15889
+// Module ID: 15907
+// Function ID: 15908
 // Name: SettingsScreenNotices
-// Dependencies: [19, 17, 1392, 21, 4945, 587, 8071, 15889, 15890, 5605, 6607, 6602, 15897, 15898, 558, 576, 2]
+// Dependencies: [19, 17, 1392, 21, 4945, 587, 8075, 15908, 15909, 5605, 6610, 6605, 15916, 15917, 558, 576, 2]
 
-// Module 15888 (SettingsScreenNotices)
+// Module 15907 (SettingsScreenNotices)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5605 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6607 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8071 */;
-import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 15889 */;
-import TinyBroncoSettingsNoticesLazy from "TinyBroncoSettingsNoticesLazy" /* 15890 */;
-import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 15897 */;
-import SensitiveContentFiltersNotices from "SensitiveContentFiltersNotices" /* 15898 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6610 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8075 */;
+import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 15908 */;
+import TinyBroncoSettingsNoticesLazy from "TinyBroncoSettingsNoticesLazy" /* 15909 */;
+import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 15916 */;
+import SensitiveContentFiltersNotices from "SensitiveContentFiltersNotices" /* 15917 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -26,7 +26,7 @@ let items1;
 let items2;
 let obj2;
 let tmp;
-const AgeVerificationUtils = tmp(6602);
+const AgeVerificationUtils = tmp(6605);
 function predicate() {
   const obj = RegionalFeatureConfigUtils;
   let isFeatureAgeGatedResult = obj.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.REACTIVE_CHECK);

@@ -1,9 +1,9 @@
-// Module ID: 7113
-// Function ID: 7114
+// Module ID: 7116
+// Function ID: 7117
 // Name: PortalToNativeView
 // Dependencies: [19, 17, 21, 4945, 558, 576, 2]
 
-// Module 7113 (PortalToNativeView)
+// Module 7116 (PortalToNativeView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

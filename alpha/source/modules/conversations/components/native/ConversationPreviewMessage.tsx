@@ -1,14 +1,14 @@
-// Module ID: 9686
-// Function ID: 9687
+// Module ID: 9699
+// Function ID: 9700
 // Name: ConversationPreviewMessage
-// Dependencies: [19, 17, 4946, 4860, 21, 8076, 8552, 4945, 587, 558, 576, 504, 5944, 8263, 4776, 4773, 1202, 5195, 9687, 2]
+// Dependencies: [19, 17, 4946, 4860, 21, 8080, 8558, 4945, 587, 558, 576, 504, 5947, 8267, 4776, 4773, 1202, 5195, 9700, 2]
 
-// Module 9686 (ConversationPreviewMessage)
+// Module 9699 (ConversationPreviewMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DateUtils from "DateUtils" /* 4773 */;
-import RowGeneratorDefault from "RowGenerator" /* 8076 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8552 */;
+import RowGeneratorDefault from "RowGenerator" /* 8080 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8558 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4946 */;
 import GuildMemberStore from "GuildMemberStore" /* 4860 */;
@@ -82,20 +82,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
     }
     const tmpResult6 = message(504);
     const stateFromStores1 = tmpResult6.useStateFromStores(tmp9, tmp11, tmp12);
-    const tmpResult7 = message(5944);
+    const tmpResult7 = message(5947);
     const name = tmpResult7.useName(guildId, channelId, message.author);
     if (cResult[7] === stateFromStores1) {
       if (cResult[8] === stateFromStores) {
         tmp15 = cResult[9];
       }
       let colorStrings;
-      const useProcessColorStringsArray = message(8263).useProcessColorStringsArray;
-      message(8263);
+      const useProcessColorStringsArray = message(8267).useProcessColorStringsArray;
+      message(8267);
       if (stateFromStores1 != null) {
         colorStrings = stateFromStores1.colorStrings;
       }
       const processColorStringsArray = useProcessColorStringsArray(colorStrings);
-      const tmpResult9 = message(8263);
+      const tmpResult9 = message(8267);
       const isRoleStyleAndRoleColorsEligibleForERC = tmpResult9.useIsRoleStyleAndRoleColorsEligibleForERC(guildId, message.author.id, stateFromStores, processColorStringsArray);
       const TimestampHourCycle = tmp(4776).TimestampHourCycle;
       const setting = TimestampHourCycle.useSetting();
@@ -145,7 +145,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
                             }
                             if (cResult[35] !== message) {
                               const obj2 = { pointerEvents: "none", horizontalOffset: 0, modifyRow, message, rowGenerator };
-                              const tmp57 = closure_7(guildId(9687), obj2);
+                              const tmp57 = closure_7(guildId(9700), obj2);
                               cResult[35] = message;
                               cResult[36] = tmp57;
                               tmp52 = tmp57;

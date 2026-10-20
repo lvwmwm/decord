@@ -1,9 +1,9 @@
-// Module ID: 16334
-// Function ID: 16335
+// Module ID: 16353
+// Function ID: 16354
 // Name: SettingsVoiceScreen
-// Dependencies: [19, 17, 2014, 8276, 1087, 21, 2068, 4945, 558, 576, 5166, 4952, 11502, 11503, 1128, 5631, 5258, 11501, 5195, 11498, 11099, 15761, 2]
+// Dependencies: [19, 17, 2014, 8280, 1087, 21, 2068, 4945, 558, 576, 5166, 4952, 11513, 11514, 1128, 5631, 5258, 11512, 5195, 11509, 11111, 15780, 2]
 
-// Module 16334 (SettingsVoiceScreen)
+// Module 16353 (SettingsVoiceScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
@@ -11,11 +11,11 @@ import intl10 from "intl" /* 1128 */;
 import shared from "shared" /* 4952 */;
 import useThemeDefault from "useTheme" /* 5166 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import SettingsConstants from "SettingsConstants" /* 8276 */;
-import SettingBuilders from "SettingBuilders" /* 11099 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11498 */;
-import KrispLogo2 from "KrispLogo" /* 11501 */;
-import SettingLayoutDefault from "SettingLayout" /* 15761 */;
+import SettingsConstants from "SettingsConstants" /* 8280 */;
+import SettingBuilders from "SettingBuilders" /* 11111 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11509 */;
+import KrispLogo2 from "KrispLogo" /* 11512 */;
+import SettingLayoutDefault from "SettingLayout" /* 15780 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import Fragment from "Fragment" /* 21 */;
@@ -124,9 +124,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispL
   const tmp6 = useThemeDefault();
   const obj2 = shared;
   if (obj2.isThemeLight(tmp6)) {
-    tmp5Result = tmp5(11502);
+    tmp5Result = tmp5(11513);
   } else {
-    tmp5Result = tmp5(11503);
+    tmp5Result = tmp5(11514);
   }
   ({ krisp, logo } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -198,9 +198,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispL
   const tmp4 = useThemeDefault();
   const obj = shared;
   if (obj.isThemeLight(tmp4)) {
-    tmp2Result = tmp2(11502);
+    tmp2Result = tmp2(11513);
   } else {
-    tmp2Result = tmp2(11503);
+    tmp2Result = tmp2(11514);
   }
   const obj2 = { style: tmp.krisp, children: items };
   const obj3 = { style: tmp.logo, source: tmp2Result, accessibilityLabel: intl.string(intl10.t.vFiCSx) };
@@ -273,7 +273,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsVoic
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getVoiceSettings() };
-    const createList = tmp(11099).createList;
+    const createList = tmp(11111).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[0] = list;

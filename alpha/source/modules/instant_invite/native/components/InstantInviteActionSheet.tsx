@@ -1,25 +1,25 @@
-// Module ID: 8980
-// Function ID: 8981
+// Module ID: 8992
+// Function ID: 8993
 // Name: InstantInviteActionSheet
-// Dependencies: [32, 19, 17, 4805, 8972, 4822, 4880, 7752, 1087, 21, 4945, 587, 558, 576, 8981, 1633, 7199, 7224, 7203, 5663, 504, 8982, 8971, 5171, 8593, 8983, 1211, 8985, 1128, 7194, 1202, 9006, 9010, 9012, 7093, 9003, 9049, 9050, 5226, 2]
+// Dependencies: [32, 19, 17, 4805, 8984, 4822, 4880, 7756, 1087, 21, 4945, 587, 558, 576, 8993, 1633, 7202, 7227, 7206, 5663, 504, 8994, 8983, 5171, 8605, 8995, 1211, 8997, 1128, 7197, 1202, 9018, 9022, 9024, 7096, 9015, 9061, 9062, 5226, 2]
 
-// Module 8980 (InstantInviteActionSheet)
+// Module 8992 (InstantInviteActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import InviteCodeUtils from "InviteCodeUtils" /* 5663 */;
-import Constants2 from "Constants" /* 7752 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8593 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8971 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8981 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 8983 */;
+import Constants2 from "Constants" /* 7756 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8605 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8983 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8993 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 8995 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import StageInstanceStore from "StageInstanceStore" /* 4805 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8972 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8984 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
 import Fragment from "Fragment" /* 21 */;

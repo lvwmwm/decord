@@ -1,16 +1,16 @@
-// Module ID: 13580
-// Function ID: 13581
+// Module ID: 13598
+// Function ID: 13599
 // Name: notificationSettingsGuildFlagUtils
-// Dependencies: [6652, 1087, 1097, 8243, 7163, 10785, 7158, 558, 576, 573, 2]
+// Dependencies: [6655, 1087, 1097, 8247, 7166, 10796, 7161, 558, 576, 573, 2]
 // Exports: updateGuildPreset
 
-// Module 13580 (notificationSettingsGuildFlagUtils)
+// Module 13598 (notificationSettingsGuildFlagUtils)
 import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7163 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 8243 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10785 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6652 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7166 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 8247 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10796 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6655 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -120,25 +120,25 @@ export const updateGuildPreset = function updateGuildPreset(guildId, arg1) {
     const updateGuildNotificationSettings3 = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings;
     NotificationSettingsModalActionCreatorsDefault;
     tmp2Result = notificationSettingsFlagUtils;
-    const result = updateGuildNotificationSettings3(guildId, obj2, tmp2(7158).NotificationLabels.PresetAll);
+    const result = updateGuildNotificationSettings3(guildId, obj2, tmp2(7161).NotificationLabels.PresetAll);
   } else if (arg1 === notificationSettingsPresetUtils.Presets.HYBRID) {
     const obj3 = { message_notifications: UserNotificationSettings.ONLY_MENTIONS, flags: tmp2Result4.withGuildUnreadFlags(guildFlags, constants.UNREADS_ALL_MESSAGES) };
     const updateGuildNotificationSettings2 = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings;
     NotificationSettingsModalActionCreatorsDefault;
     tmp2Result4 = notificationSettingsFlagUtils;
-    const result1 = updateGuildNotificationSettings2(guildId, obj3, tmp2(7158).NotificationLabels.PresetHybrid);
+    const result1 = updateGuildNotificationSettings2(guildId, obj3, tmp2(7161).NotificationLabels.PresetHybrid);
   } else if (arg1 === notificationSettingsPresetUtils.Presets.MENTIONS) {
     const obj = { message_notifications: UserNotificationSettings.ONLY_MENTIONS, flags: tmp2Result5.withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS) };
     const updateGuildNotificationSettings = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings;
     NotificationSettingsModalActionCreatorsDefault;
     tmp2Result5 = notificationSettingsFlagUtils;
-    const result2 = updateGuildNotificationSettings(guildId, obj, tmp2(7158).NotificationLabels.PresetMentions);
+    const result2 = updateGuildNotificationSettings(guildId, obj, tmp2(7161).NotificationLabels.PresetMentions);
   } else if (arg1 === notificationSettingsPresetUtils.Presets.NOTHING) {
     const obj4 = { message_notifications: UserNotificationSettings.NO_MESSAGES, flags: tmp2Result6.withGuildUnreadFlags(guildFlags, constants.UNREADS_ONLY_MENTIONS) };
     const updateGuildNotificationSettings4 = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings;
     NotificationSettingsModalActionCreatorsDefault;
     tmp2Result6 = notificationSettingsFlagUtils;
-    const result3 = updateGuildNotificationSettings4(guildId, obj4, tmp2(7158).NotificationLabels.PresetNothing);
+    const result3 = updateGuildNotificationSettings4(guildId, obj4, tmp2(7161).NotificationLabels.PresetNothing);
   }
 };
 export const useGuildPresetSettings = tmp2;

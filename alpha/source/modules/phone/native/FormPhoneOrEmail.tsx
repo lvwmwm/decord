@@ -1,17 +1,17 @@
-// Module ID: 7089
-// Function ID: 7090
+// Module ID: 7092
+// Function ID: 7093
 // Name: FormPhoneOrEmail
-// Dependencies: [109, 19, 17, 21, 4945, 587, 558, 576, 1128, 5195, 6856, 7004, 6978, 6979, 6981, 2]
+// Dependencies: [109, 19, 17, 21, 4945, 587, 558, 576, 1128, 5195, 6859, 7007, 6981, 6982, 6984, 2]
 
-// Module 7089 (FormPhoneOrEmail)
+// Module 7092 (FormPhoneOrEmail)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import Pressables from "Pressables" /* 6856 */;
-import FreeFormLabelDefault from "FreeFormLabel" /* 6978 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7004 */;
+import Pressables from "Pressables" /* 6859 */;
+import FreeFormLabelDefault from "FreeFormLabel" /* 6981 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7007 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -370,7 +370,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormPhoneOrE
     cResult[20] = handleChangeText;
     tmp23 = handleChangeText;
   }
-  const tmpResult = tmp(7004);
+  const tmpResult = tmp(7007);
   const result = tmpResult.shouldShowCountryCodeSelector(tmp7, tmp16);
   cResult[14] = tmp7;
   cResult[15] = tmp16;

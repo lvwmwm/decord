@@ -1,9 +1,9 @@
-// Module ID: 10494
-// Function ID: 10495
+// Module ID: 10505
+// Function ID: 10506
 // Name: useSubscriptionSelection
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 10494 (useSubscriptionSelection)
+// Module 10505 (useSubscriptionSelection)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

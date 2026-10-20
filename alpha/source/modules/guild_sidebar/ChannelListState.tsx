@@ -1,42 +1,42 @@
-// Module ID: 7583
-// Function ID: 7584
+// Module ID: 7586
+// Function ID: 7587
 // Name: ChannelListState
-// Dependencies: [4799, 2046, 7584, 4852, 6732, 4853, 7585, 7586, 7587, 6718, 4882, 4804, 7161, 4800, 7582, 4822, 4880, 6719, 4851, 6652, 5591, 5679, 7588, 7589, 1087, 4807, 1098, 12, 6761, 7270, 7333, 7312, 7590, 38, 1388, 11, 5950, 2]
+// Dependencies: [4799, 2046, 7587, 4852, 6735, 4853, 7588, 7589, 7590, 6721, 4882, 4804, 7164, 4800, 7585, 4822, 4880, 6722, 4851, 6655, 5591, 5679, 7591, 7592, 1087, 4807, 1098, 12, 6764, 7273, 7336, 7315, 7593, 38, 1388, 11, 5953, 2]
 
-// Module 7583 (ChannelListState)
+// Module 7586 (ChannelListState)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import Constants2 from "Constants" /* 1098 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import ChannelConstants from "ChannelConstants" /* 4807 */;
-import ChannelListUtils from "ChannelListUtils" /* 5950 */;
-import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 7312 */;
-import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 7333 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7589 */;
+import ChannelListUtils from "ChannelListUtils" /* 5953 */;
+import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 7315 */;
+import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 7336 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7592 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
 import ApplicationStore from "ApplicationStore" /* 2046 */;
-import ChannelStatusStore from "ChannelStatusStore" /* 7584 */;
+import ChannelStatusStore from "ChannelStatusStore" /* 7587 */;
 import GatedChannelStore from "GatedChannelStore" /* 4852 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6732 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6735 */;
 import ImpersonateStore from "ImpersonateStore" /* 4853 */;
-import FavoritesSuggestionStore from "FavoritesSuggestionStore" /* 7585 */;
-import RecentlyActiveCollapseStore from "RecentlyActiveCollapseStore" /* 7586 */;
-import NewChannelsStore from "NewChannelsStore" /* 7587 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6718 */;
+import FavoritesSuggestionStore from "FavoritesSuggestionStore" /* 7588 */;
+import RecentlyActiveCollapseStore from "RecentlyActiveCollapseStore" /* 7589 */;
+import NewChannelsStore from "NewChannelsStore" /* 7590 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6721 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4882 */;
 import ChannelRecord from "ChannelRecord" /* 4804 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7161 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7164 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7582 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7585 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
-import ReadStateStore from "ReadStateStore" /* 6719 */;
+import ReadStateStore from "ReadStateStore" /* 6722 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6652 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6655 */;
 import VoiceStateStore from "VoiceStateStore" /* 5591 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5679 */;
-import ChannelListVoiceCategoryStore from "ChannelListVoiceCategoryStore" /* 7588 */;
+import ChannelListVoiceCategoryStore from "ChannelListVoiceCategoryStore" /* 7591 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -49,9 +49,9 @@ let closure_16;
 let closure_17;
 let closure_30;
 let closure_31;
-const f97808 = (id) => id.id;
-const f97820 = (id) => id.id;
-const f97828 = (id) => id.id;
+const f97909 = (id) => id.id;
+const f97921 = (id) => id.id;
+const f97929 = (id) => id.id;
 function computeSubtitle(type, arg1, arg2) {
   type = type.type;
   if (constants.GUILD_VOICE === type) {
@@ -275,7 +275,7 @@ class ChannelListImpl {
     let self;
     let tmp34;
     let type;
-    const merged = Object.assign({ sortedNamedCategories: null, sections: null, rows: null, firstVoiceChannel: "Array", allChannelsById: 0, version: "APP_STATE_UPDATE_WILL_BECOME_ACTIVE" });
+    const merged = Object.assign({ sortedNamedCategories: null, sections: null, rows: null, firstVoiceChannel: "Array", allChannelsById: 0, version: "text-brand" });
     merged.id = id;
     merged.hideMutedChannels = UserGuildSettingsStore.isGuildCollapsed(merged.id);
     merged.mutedChannelIds = UserGuildSettingsStore.getMutedChannels(merged.id);
@@ -284,9 +284,9 @@ class ChannelListImpl {
       optedInChannelsWithPendingUpdates = obj.getOptedInChannels(merged.id);
     }
     merged.optedInChannels = optedInChannelsWithPendingUpdates;
-    const obj2 = initializationData(6761);
+    const obj2 = initializationData(6764);
     merged.optInEnabled = obj2.isOptInEnabledForGuild(merged.id);
-    const obj3 = initializationData(7270);
+    const obj3 = initializationData(7273);
     merged.hideResourceChannels = obj3.canSeeOnboardingHome(merged.id);
     const _Set = Set;
     let guildFavorites = obj.getGuildFavorites(merged.id);
@@ -400,13 +400,13 @@ class ChannelListImpl {
       importDefault = tmp20;
       const arr7 = _modDef12(items);
       let iter = arr7.map((item) => new ChannelListChannelImpl(closure_1, item, closure_0));
-      let self4 = iter.keyBy(f97808);
+      let self4 = iter.keyBy(f97909);
       tmp20.channels = self4.value();
       merged.noParentCategory = tmp20;
       const self5 = this;
       let tmp26 = initializationData;
       merged.favoritesCategory = new ChannelListFavoritesCategory(merged, initializationData);
-      const obj6 = initializationData(7590);
+      const obj6 = initializationData(7593);
       if (obj6.isRecentlyActiveChannelsEnabled()) {
         self4 = this;
         tmp26 = mutableGuildChannelsForGuild;
@@ -429,7 +429,7 @@ class ChannelListImpl {
               tmp31.isMuted = false;
               const arr8 = _modDef12(items1);
               items1 = arr8.map((item) => new RecentsChannelListChannel(closure_1, item, closure_0));
-              iter = items1.keyBy(f97820);
+              iter = items1.keyBy(f97921);
               self4 = iter.value();
               tmp31.channels = self4;
               tmp33 = tmp31;
@@ -453,7 +453,7 @@ class ChannelListImpl {
           tmp42.categoriesById = obj4;
           const arr9 = _modDef12(items2);
           const mapped = arr9.map((item) => new VoiceChannelListChannel(closure_1, item, initializationData));
-          const iter2 = mapped.keyBy(f97828);
+          const iter2 = mapped.keyBy(f97929);
           tmp42.channels = iter2.value();
         }
         merged.voiceChannelsCategory = tmp42;
@@ -1101,7 +1101,7 @@ class ChannelListCategoryNoParent extends BaseChannelListCategory {
     importDefault = tmp22;
     const arr = _modDef12(arg1);
     const mapped = arr.map((item) => new ChannelListChannelImpl(closure_1, item, closure_0));
-    const iter = mapped.keyBy(f97808);
+    const iter = mapped.keyBy(f97909);
     tmp22.channels = iter.value();
     return tmp22;
   }
@@ -1381,7 +1381,7 @@ class ChannelListRecentsCategory extends BaseChannelListCategory {
         tmp2.isMuted = false;
         const arr = _modDef12(arg1);
         const mapped = arr.map((item) => new RecentsChannelListChannel(closure_1, item, closure_0));
-        const iter = mapped.keyBy(f97820);
+        const iter = mapped.keyBy(f97921);
         tmp2.channels = iter.value();
       }
     }
@@ -1461,7 +1461,7 @@ class ChannelListVoiceChannelsCategory extends BaseChannelListCategory {
       tmp2.categoriesById = categoriesById;
       const arr = _modDef12(arg1);
       const mapped = arr.map((item) => new VoiceChannelListChannel(closure_1, item, initializationData));
-      const iter = mapped.keyBy(f97828);
+      const iter = mapped.keyBy(f97929);
       tmp2.channels = iter.value();
     }
     return tmp2;

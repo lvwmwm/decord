@@ -1,19 +1,19 @@
-// Module ID: 18912
-// Function ID: 18913
+// Module ID: 18935
+// Function ID: 18936
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 8927, 4800, 4878, 4890, 1392, 8350, 1087, 21, 5213, 587, 18901, 504, 5565, 1128, 18902, 5171, 8845, 2002, 8926, 18899, 5195, 5631, 5932, 6935, 6851, 2]
+// Dependencies: [19, 17, 8939, 4800, 4878, 4890, 1392, 8354, 1087, 21, 5213, 587, 18924, 504, 5565, 1128, 18925, 5171, 8857, 2002, 8938, 18922, 5195, 5631, 5935, 6938, 6854, 2]
 // Exports: default
 
-// Module 18912 (ChannelSetupScreen)
+// Module 18935 (ChannelSetupScreen)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import intl10 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 4878 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8350 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8354 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8927 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8939 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -145,7 +145,7 @@ export default function ChannelSetupScreen() {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(8845, dependencyMap.paths);
+    const tmp2 = asyncRequire(8857, dependencyMap.paths);
     intl = intl10.intl;
     id = undefined;
     if (rulesChannel != null) {
@@ -174,7 +174,7 @@ export default function ChannelSetupScreen() {
       hasIcons: false
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(8845, dependencyMap.paths);
+    const tmp2 = asyncRequire(8857, dependencyMap.paths);
     intl = intl10.intl;
     id = undefined;
     if (publicUpdatesChannel != null) {

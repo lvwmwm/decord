@@ -1,14 +1,14 @@
-// Module ID: 7885
-// Function ID: 7886
+// Module ID: 7889
+// Function ID: 7890
 // Name: AppleNeutralIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 7886, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 7890, 5630, 2]
 
-// Module 7885 (AppleNeutralIcon)
+// Module 7889 (AppleNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 7886 */;
+import AssetRegistry from "AssetRegistry" /* 7890 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

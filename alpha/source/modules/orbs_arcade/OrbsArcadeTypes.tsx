@@ -1,10 +1,10 @@
-// Module ID: 19071
-// Function ID: 19072
+// Module ID: 19094
+// Function ID: 19095
 // Name: OrbsArcadeTypes
 // Dependencies: [32, 2]
 // Exports: orbsArcadeApplicationGameFromServer, orbsArcadeClaimedRewardFromServer, orbsArcadeGamesFromServer
 
-// Module 19071 (OrbsArcadeTypes)
+// Module 19094 (OrbsArcadeTypes)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -55,6 +55,7 @@ const OrbsArcadeRewardType = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", COLLECTIBLE: 
 const result = size.fileFinishedImporting("modules/orbs_arcade/OrbsArcadeTypes.tsx");
 
 export { OrbsArcadeRewardType };
+export const OrbsArcadeRewardStatus = { LOCKED: "locked", CLAIMABLE: "claimable", CLAIMED: "claimed" };
 export { orbsArcadeGameFromServer };
 export { orbsArcadeGameStateFromServer };
 export const orbsArcadeGamesFromServer = function orbsArcadeGamesFromServer(body) {
@@ -84,7 +85,7 @@ export const orbsArcadeApplicationGameFromServer = function orbsArcadeApplicatio
   ({ enrollment_closes_at: obj.enrollmentClosesAt, can_afford_run: obj.canAffordRun } = game);
   return obj;
 };
-export const orbsArcadeClaimedRewardFromServer = function orbsArcadeClaimedRewardFromServer(entitlements) {
-  obj = { gameState: orbsArcadeGameStateFromServer(entitlements.game_state), entitlements: entitlements.entitlements };
+export const orbsArcadeClaimedRewardFromServer = function orbsArcadeClaimedRewardFromServer(body) {
+  obj = { gameState: orbsArcadeGameStateFromServer(body.game_state), entitlements: body.entitlements };
   return obj;
 };

@@ -1,16 +1,16 @@
-// Module ID: 8051
-// Function ID: 8052
+// Module ID: 8055
+// Function ID: 8056
 // Name: ReportModals
-// Dependencies: [5, 4805, 4891, 1406, 1087, 8052, 8053, 8055, 4814, 5673, 2]
+// Dependencies: [5, 4805, 4891, 1406, 1087, 8056, 8057, 8059, 4814, 5673, 2]
 // Exports: showReportModalForApp, showReportModalForFirstDM, showReportModalForGuild, showReportModalForGuildDirectoryEntry, showReportModalForGuildScheduledEvent, showReportModalForInappropriateConversationSafetyAlert, showReportModalForMessage, showReportModalForStageChannel, showReportModalForUser, showReportModalForWidget, showReportToModMessageModal, showStaffTestReportModalForGuild, showStaffTestReportModalForMessage, showStaffTestReportModalForUser, showUnauthenticatedReportModalForGuild, showUnauthenticatedReportModalForMessage, showUnauthenticatedReportModalForTida, showUnauthenticatedReportModalForUser, submitHamReportForFirstDM, submitReportForInappropriateConversationSafetyAlert
 
-// Module 8051 (ReportModals)
+// Module 8055 (ReportModals)
 import Constants from "Constants" /* 1087 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 4814 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5673 */;
-import MenuTypes from "MenuTypes" /* 8052 */;
-import showReportModal2 from "showReportModal" /* 8053 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8055 */;
+import MenuTypes from "MenuTypes" /* 8056 */;
+import showReportModal2 from "showReportModal" /* 8057 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8059 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import StageInstanceStore from "StageInstanceStore" /* 4805 */;
 import MessageRecord from "MessageRecord" /* 4891 */;
@@ -372,7 +372,7 @@ export const showUnauthenticatedReportModalForMessage = function showUnauthentic
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
   obj = { report_type: MESSAGE };
   AppAnalyticsUtilsDefault;
-  const merged = Object.assign({ message_id: "Array", channel_id: "test" });
+  const merged = Object.assign({ message_id: "userId", channel_id: "code" });
   trackWithMetadata(IAR_MODAL_OPEN, obj);
   const obj2 = showReportModal2;
   const obj3 = { name: MenuTypes.UnauthenticatedReportNames.MESSAGE, record: tmp };

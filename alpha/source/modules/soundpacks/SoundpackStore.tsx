@@ -1,12 +1,12 @@
-// Module ID: 11394
-// Function ID: 11395
+// Module ID: 11405
+// Function ID: 11406
 // Name: SoundpackStore
-// Dependencies: [11395, 504, 584, 2]
+// Dependencies: [11406, 504, 584, 2]
 
-// Module 11394 (SoundpackStore)
+// Module 11405 (SoundpackStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 11395 */;
+import Constants from "Constants" /* 11406 */;
 import size from "module_2" /* 2 */;
 
 const Soundpacks = Constants.Soundpacks;

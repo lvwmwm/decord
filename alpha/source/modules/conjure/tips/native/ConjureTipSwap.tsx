@@ -1,9 +1,9 @@
-// Module ID: 12189
-// Function ID: 12190
+// Module ID: 12204
+// Function ID: 12205
 // Name: ConjureTipSwap
 // Dependencies: [19, 21, 558, 576, 5014, 5167, 2]
 
-// Module 12189 (ConjureTipSwap)
+// Module 12204 (ConjureTipSwap)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;

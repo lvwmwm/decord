@@ -1,19 +1,19 @@
-// Module ID: 16548
-// Function ID: 16549
+// Module ID: 16567
+// Function ID: 16568
 // Name: SettingsChatScreen
-// Dependencies: [19, 17, 1392, 2059, 8276, 1087, 21, 4945, 587, 558, 576, 1505, 2054, 573, 5195, 1128, 6853, 1202, 10084, 7035, 11099, 15761, 2]
+// Dependencies: [19, 17, 1392, 2059, 8280, 1087, 21, 4945, 587, 558, 576, 1505, 2054, 573, 5195, 1128, 6856, 1202, 10095, 7038, 11111, 15780, 2]
 
-// Module 16548 (SettingsChatScreen)
+// Module 16567 (SettingsChatScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl14 from "intl" /* 1128 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7035 */;
-import SettingsConstants from "SettingsConstants" /* 8276 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10084 */;
-import SettingBuilders from "SettingBuilders" /* 11099 */;
-import SettingLayoutDefault from "SettingLayout" /* 15761 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7038 */;
+import SettingsConstants from "SettingsConstants" /* 8280 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10095 */;
+import SettingBuilders from "SettingBuilders" /* 11111 */;
+import SettingLayoutDefault from "SettingLayout" /* 15780 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import SubscriptionStore from "SubscriptionStore" /* 2059 */;
@@ -178,7 +178,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoU
     const obj5 = { style: tmp5.card, children: closure_9(Card, obj6) };
     obj6 = { border: "none", shadow: "none", children: closure_10(View, obj7) };
     obj7 = { style: tmp5.cardContent, children: items2 };
-    Card = tmp(6853).Card;
+    Card = tmp(6856).Card;
     const obj8 = { style: tmp5.cardIcon, source: AssetRegistryDefault, size: stackNavigation(1202).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
     const Icon = tmp(1202).Icon;
     items2 = [closure_9(Icon, obj8), ];
@@ -229,7 +229,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoU
     const obj4 = { style: tmp3.card, children: closure_9(Card, obj5) };
     obj5 = { border: "none", shadow: "none", children: closure_10(View, obj6) };
     obj6 = { style: tmp3.cardContent, children: items2 };
-    Card = tmp(6853).Card;
+    Card = tmp(6856).Card;
     const obj7 = { style: tmp3.cardIcon, source: AssetRegistryDefault, size: require("native").Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
     const Icon = tmp(1202).Icon;
     items2 = [closure_9(Icon, obj7), ];
@@ -267,7 +267,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsChat
   }
   if (first !== initialSetting) {
     const obj2 = { sections: getChatSettings(), scrollTarget: initialSetting1 };
-    const createList = tmp(11099).createList;
+    const createList = tmp(11111).createList;
     SettingBuilders;
     initialSetting1 = undefined;
     if (route != null) {

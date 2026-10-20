@@ -1,14 +1,14 @@
-// Module ID: 9120
-// Function ID: 9121
+// Module ID: 9132
+// Function ID: 9133
 // Name: SecureFramesTracking
-// Dependencies: [4800, 1087, 5673, 8605, 1267, 2]
+// Dependencies: [4800, 1087, 5673, 8617, 1267, 2]
 // Exports: trackE2EECallVerificationCopied, trackE2EECallVerificationShareClicked, trackE2EEPublicKeyMismatch, trackE2EESettingsDeviceDelete, trackE2EESettingsUserDelete, trackE2EEStreamVerificationCopied, trackE2EEStreamVerificationShareClicked, trackE2EEUserVerificationCopied, trackE2EEUserVerificationFailed, trackE2EEUserVerificationShareClicked, trackE2EEUserVerificationViewed, trackE2EEUserVerified, trackRTCPanelViewed
 
-// Module 9120 (SecureFramesTracking)
+// Module 9132 (SecureFramesTracking)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5673 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8605 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8617 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import size from "module_2" /* 2 */;
 

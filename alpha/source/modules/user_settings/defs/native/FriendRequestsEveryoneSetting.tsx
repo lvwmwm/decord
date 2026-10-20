@@ -1,24 +1,24 @@
-// Module ID: 16053
-// Function ID: 16054
+// Module ID: 16072
+// Function ID: 16073
 // Name: FriendRequestsEveryoneSetting
-// Dependencies: [19, 8276, 1087, 558, 576, 4776, 7039, 15892, 11099, 1128, 2]
+// Dependencies: [19, 8280, 1087, 558, 576, 4776, 7042, 15911, 11111, 1128, 2]
 
-// Module 16053 (FriendRequestsEveryoneSetting)
+// Module 16072 (FriendRequestsEveryoneSetting)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import UserSettings from "UserSettings" /* 4776 */;
-import SettingsConstants from "SettingsConstants" /* 8276 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15892 */;
+import SettingsConstants from "SettingsConstants" /* 8280 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15911 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11099 */;
+import SettingBuilders from "SettingBuilders" /* 11111 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let tmp;
-const UserSettingsUtils = tmp(7039);
+const UserSettingsUtils = tmp(7042);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 ({ AllFriendSourceFlags: c3, FriendSourceFlags: closure_4 } = Constants);
 let ReactCompilerGating = ReactCompilerGating_mod;

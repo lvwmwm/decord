@@ -1,14 +1,14 @@
-// Module ID: 12609
-// Function ID: 12610
+// Module ID: 12626
+// Function ID: 12627
 // Name: ClockWarningIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 12610, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 12627, 5630, 2]
 
-// Module 12609 (ClockWarningIcon)
+// Module 12626 (ClockWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 12610 */;
+import AssetRegistry from "AssetRegistry" /* 12627 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

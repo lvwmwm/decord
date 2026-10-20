@@ -1,9 +1,9 @@
-// Module ID: 14023
-// Function ID: 14024
+// Module ID: 14041
+// Function ID: 14042
 // Name: useOverlayLayoutDriver
-// Dependencies: [19, 558, 576, 5014, 8709, 5167, 1202, 2]
+// Dependencies: [19, 558, 576, 5014, 8721, 5167, 1202, 2]
 
-// Module 14023 (useOverlayLayoutDriver)
+// Module 14041 (useOverlayLayoutDriver)
 import native from "native" /* 1202 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
 import timing from "timing" /* 5167 */;
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOverlay
   const cResult = obj.c(6);
   let obj2 = sharedValue(5014);
   sharedValue = obj2.useSharedValue(0);
-  const obj3 = sharedValue(8709);
+  const obj3 = sharedValue(8721);
   const mediaViewerDimensions = obj3.useMediaViewerDimensions();
   ({ height, width } = mediaViewerDimensions);
   if (cResult[0] !== sharedValue) {
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOverlay
   let sharedValue;
   let obj = sharedValue(5014);
   sharedValue = obj.useSharedValue(0);
-  let obj2 = sharedValue(8709);
+  let obj2 = sharedValue(8721);
   const mediaViewerDimensions = obj2.useMediaViewerDimensions();
   const items = [sharedValue, , ];
   ({ height: arr[1], width: arr[2] } = mediaViewerDimensions);

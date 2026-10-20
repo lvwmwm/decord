@@ -1,18 +1,18 @@
-// Module ID: 19113
-// Function ID: 19114
+// Module ID: 19137
+// Function ID: 19138
 // Name: ApplicationStreamingManager
-// Dependencies: [19, 5835, 5775, 5680, 21, 3, 19114, 5864, 19115, 2002, 11467, 5807, 2]
+// Dependencies: [19, 5837, 5775, 5680, 21, 3, 19138, 5867, 19139, 2002, 11478, 5809, 2]
 
-// Module 19113 (ApplicationStreamingManager)
+// Module 19137 (ApplicationStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 5680 */;
 import StreamSettingsConstants from "StreamSettingsConstants" /* 5775 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5864 */;
-import MobileGoLiveUpsellExperimentDefault from "MobileGoLiveUpsellExperiment" /* 11467 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5867 */;
+import MobileGoLiveUpsellExperimentDefault from "MobileGoLiveUpsellExperiment" /* 11478 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5835 */;
-import ApplicationStreamingManager2 from "go_live/ApplicationStreamingManager" /* 19114 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5837 */;
+import ApplicationStreamingManager2 from "go_live/ApplicationStreamingManager" /* 19138 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,7 +63,7 @@ class ApplicationStreamingManager extends ApplicationStreamingManager2 {
       const obj2 = { desktopSettings: obj3, qualityOptions: obj4, context: MediaEngineContextTypes.STREAM };
       obj3 = { sourceId, sound: soundshareEnabled };
       obj4 = { preset, resolution, frameRate: fps };
-      const tmp4Result = tmp4(5807);
+      const tmp4Result = tmp4(5809);
       tmp4Result.setGoLiveSource(obj2);
     } else {
       const _HermesInternal = HermesInternal;

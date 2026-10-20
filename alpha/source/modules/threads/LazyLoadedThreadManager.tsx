@@ -1,12 +1,12 @@
-// Module ID: 7356
-// Function ID: 7357
+// Module ID: 7359
+// Function ID: 7360
 // Name: LazyLoadedThreadManager
-// Dependencies: [6450, 4804, 4800, 4851, 1087, 4807, 584, 7269, 4976, 4989, 1297, 2]
+// Dependencies: [6453, 4804, 4800, 4851, 1087, 4807, 584, 7272, 4976, 4989, 1297, 2]
 
-// Module 7356 (LazyLoadedThreadManager)
+// Module 7359 (LazyLoadedThreadManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelConstants from "ChannelConstants" /* 4807 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6450 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6453 */;
 import ChannelRecord from "ChannelRecord" /* 4804 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
@@ -20,7 +20,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f97122 = () => {
+const f97223 = () => {
   closure_11 = {};
   channelId = channelId.getChannelId();
   const tmp2 = null != channelId && null == channel.getChannel(channelId);
@@ -33,7 +33,7 @@ function initialize() {
   if (!tmp) {
     c12 = true;
     const obj = DispatcherDefault;
-    const subscription = obj.subscribe("CONNECTION_OPEN", f97122);
+    const subscription = obj.subscribe("CONNECTION_OPEN", f97223);
   }
 }
 function dispatchLoadedThread(nextResult, arg1) {
@@ -64,7 +64,7 @@ function loadThread(channelId) {
       c12 = true;
       let tmp2 = importDefault;
       let obj = DispatcherDefault;
-      const subscription = obj.subscribe("CONNECTION_OPEN", f97122);
+      const subscription = obj.subscribe("CONNECTION_OPEN", f97223);
     }
     if (GatewayConnectionStore.isConnected()) {
       if (null != closure_11[channelId]) {
@@ -159,7 +159,7 @@ let obj = {
       let nextResult = iter.next();
       while (iter !== undefined) {
         let tmp10 = nextResult;
-        if (nextResult !== items1(7269).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (nextResult !== items1(7272).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           if (!isStaticChannelRoute(tmp10)) {
             if (null == ChannelStore.getChannel(tmp10)) {
               let tmp19 = closure_11[tmp10];

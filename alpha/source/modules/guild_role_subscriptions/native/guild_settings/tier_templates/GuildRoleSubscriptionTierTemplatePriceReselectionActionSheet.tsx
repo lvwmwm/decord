@@ -1,9 +1,9 @@
-// Module ID: 19045
-// Function ID: 19046
+// Module ID: 19068
+// Function ID: 19069
 // Name: GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet
-// Dependencies: [32, 19, 17, 1394, 1098, 21, 4945, 587, 558, 576, 5001, 18951, 17742, 5631, 1128, 7285, 16318, 5195, 8962, 1633, 1202, 5206, 5171, 5230, 5226, 2]
+// Dependencies: [32, 19, 17, 1394, 1098, 21, 4945, 587, 558, 576, 5001, 18974, 17761, 5631, 1128, 7288, 16337, 5195, 8974, 1633, 1202, 5206, 5171, 5230, 5226, 2]
 
-// Module 19045 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
+// Module 19068 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
@@ -11,9 +11,9 @@ import PremiumConstants from "PremiumConstants" /* 1394 */;
 import react_native from "react-native" /* 5001 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import PriceUtils from "PriceUtils" /* 7285 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8962 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 16318 */;
+import PriceUtils from "PriceUtils" /* 7288 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8974 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 16337 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
@@ -83,7 +83,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PriceO
     if (cResult[3] === containerSelected) {
       tmp8 = cResult[4];
     }
-    const tmp9Result = importDefault(selected ? 18951 : 17742);
+    const tmp9Result = importDefault(selected ? 18974 : 17761);
     if (cResult[5] === tmp4.rowStatusIcon) {
       let tmp11;
       let tmp14;
@@ -181,7 +181,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PriceO
   }
   const obj2 = { style: items, accessibilityRole, accessibilityState, onPress, children: items1 };
   items[1] = containerSelected;
-  const obj3 = { style: tmp.rowStatusIcon, source: importDefault(selected ? 18951 : 17742) };
+  const obj3 = { style: tmp.rowStatusIcon, source: importDefault(selected ? 18974 : 17761) };
   const tmp6Result = FastImageDefault;
   items1 = [React4(tmp6Result, obj3), ];
   const obj4 = { variant: "text-sm/normal", color: "text-default", children: format(CgmBaG, obj5) };

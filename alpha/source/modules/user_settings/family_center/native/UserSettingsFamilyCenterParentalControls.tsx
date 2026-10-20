@@ -1,15 +1,15 @@
-// Module ID: 16006
-// Function ID: 16007
+// Module ID: 16025
+// Function ID: 16026
 // Name: UserSettingsFamilyCenterParentalControls
-// Dependencies: [32, 19, 17, 1087, 7592, 21, 4945, 587, 558, 576, 1505, 7199, 7224, 7038, 15968, 15986, 1128, 2526, 9614, 16007, 16008, 7593, 8821, 16009, 7169, 9067, 10939, 2]
+// Dependencies: [32, 19, 17, 1087, 7595, 21, 4945, 587, 558, 576, 1505, 7202, 7227, 7041, 15987, 16005, 1128, 2526, 9627, 16026, 16027, 7596, 8833, 16028, 7172, 9079, 10950, 2]
 
-// Module 16006 (UserSettingsFamilyCenterParentalControls)
+// Module 16025 (UserSettingsFamilyCenterParentalControls)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import _modDef2526 from "module_2526" /* 2526 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7592 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7593 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7595 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7596 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -131,7 +131,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                       fn = (arg0) => {
                         let intl;
                         let teenId;
-                        let obj = { onPress() { /* body not rendered: F158452 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                        let obj = { onPress() { /* body not rendered: F158640 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                         const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                         const merged = Object.assign(arg0);
                         intl = stackNavigation(selectedSubPage[16]).intl;
@@ -143,7 +143,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                   }
                   return;
                 }
-                setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "test" });
+                setOptionsResult1 = closure_0.setOptions({ title: "userId", headerRight: "code" });
                 return;
               }
             }
@@ -171,7 +171,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                         fn = (arg0) => {
                           let intl;
                           let teenId;
-                          let obj = { onPress() { /* body not rendered: F158452 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                          let obj = { onPress() { /* body not rendered: F158640 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                           const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                           const merged = Object.assign(arg0);
                           intl = stackNavigation(selectedSubPage[16]).intl;
@@ -183,7 +183,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "test" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "userId", headerRight: "code" });
                   return;
                 }
               }
@@ -215,7 +215,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                         fn = (arg0) => {
                           let intl;
                           let teenId;
-                          let obj = { onPress() { /* body not rendered: F158452 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                          let obj = { onPress() { /* body not rendered: F158640 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                           const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                           const merged = Object.assign(arg0);
                           intl = stackNavigation(selectedSubPage[16]).intl;
@@ -227,7 +227,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "test" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "userId", headerRight: "code" });
                   return;
                 }
               }
@@ -263,7 +263,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                         fn = (arg0) => {
                           let intl;
                           let teenId;
-                          let obj = { onPress() { /* body not rendered: F158452 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                          let obj = { onPress() { /* body not rendered: F158640 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                           const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                           const merged = Object.assign(arg0);
                           intl = stackNavigation(selectedSubPage[16]).intl;
@@ -275,7 +275,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "test" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "userId", headerRight: "code" });
                   return;
                 }
               }
@@ -314,7 +314,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                         fn = (arg0) => {
                           let intl;
                           let teenId;
-                          let obj = { onPress() { /* body not rendered: F158452 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                          let obj = { onPress() { /* body not rendered: F158640 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                           const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                           const merged = Object.assign(arg0);
                           intl = stackNavigation(selectedSubPage[16]).intl;
@@ -326,7 +326,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "test" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "userId", headerRight: "code" });
                   return;
                 }
               }
@@ -369,7 +369,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                         fn = (arg0) => {
                           let intl;
                           let teenId;
-                          let obj = { onPress() { /* body not rendered: F158452 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                          let obj = { onPress() { /* body not rendered: F158640 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                           const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                           const merged = Object.assign(arg0);
                           intl = stackNavigation(selectedSubPage[16]).intl;
@@ -381,7 +381,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                     }
                     return;
                   }
-                  setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "test" });
+                  setOptionsResult1 = closure_0.setOptions({ title: "userId", headerRight: "code" });
                   return;
                 }
               }
@@ -415,7 +415,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
                 fn = (arg0) => {
                   let intl;
                   let teenId;
-                  let obj = { onPress() { /* body not rendered: F158452 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
+                  let obj = { onPress() { /* body not rendered: F158640 */ }, label: intl.string(stackNavigation(selectedSubPage[16]).t.OYkgVk) };
                   const HeaderTextButton = stackNavigation(selectedSubPage[18]).HeaderTextButton;
                   const merged = Object.assign(arg0);
                   intl = stackNavigation(selectedSubPage[16]).intl;
@@ -427,7 +427,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
             }
             return;
           }
-          setOptionsResult1 = closure_0.setOptions({ title: "Array", headerRight: "test" });
+          setOptionsResult1 = closure_0.setOptions({ title: "userId", headerRight: "code" });
           return;
         }
       }
@@ -554,7 +554,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
         setOptions(obj);
       }
     }
-    stackNavigation.setOptions({ title: "Array", headerRight: "test" });
+    stackNavigation.setOptions({ title: "userId", headerRight: "code" });
   }, items1);
   const SCREEN_TIME_CONTROLS = FamilyCenterSubPages.SCREEN_TIME_CONTROLS;
   const obj4 = { label: intl.string(stackNavigation(selectedSubPage[16]).t["+o1pDZ"]), id: FamilyCenterSubPages.CONTENT_AND_SOCIAL, page: closure_9(require("FamilyCenterParentalControlsContentAndSocial"), {}) };

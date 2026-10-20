@@ -1,9 +1,9 @@
-// Module ID: 8236
-// Function ID: 8237
+// Module ID: 8240
+// Function ID: 8241
 // Name: ThreadMembersStore
 // Dependencies: [4804, 4800, 12, 504, 584, 2]
 
-// Module 8236 (ThreadMembersStore)
+// Module 8240 (ThreadMembersStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

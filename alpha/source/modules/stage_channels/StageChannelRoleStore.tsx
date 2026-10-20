@@ -1,15 +1,15 @@
-// Module ID: 6634
-// Function ID: 6635
+// Module ID: 6637
+// Function ID: 6638
 // Name: StageChannelRoleStore
-// Dependencies: [4800, 4860, 4854, 4822, 1392, 5591, 5951, 4885, 4808, 12, 504, 6635, 584, 2]
+// Dependencies: [4800, 4860, 4854, 4822, 1392, 5591, 5954, 4885, 4808, 12, 504, 6638, 584, 2]
 
-// Module 6634 (StageChannelRoleStore)
+// Module 6637 (StageChannelRoleStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import PermissionUtilsAll from "PermissionUtils" /* 4885 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5951 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6635 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5954 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6638 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import GuildMemberStore from "GuildMemberStore" /* 4860 */;
 import GuildRoleStore from "GuildRoleStore" /* 4854 */;

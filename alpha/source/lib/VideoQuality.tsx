@@ -1,18 +1,18 @@
-// Module ID: 5855
-// Function ID: 5856
+// Module ID: 5857
+// Function ID: 5858
 // Name: VideoQuality
-// Dependencies: [5818, 5703, 5845, 5684, 5839, 5700, 5856, 12, 1384, 11, 4817, 2]
+// Dependencies: [5820, 5703, 5847, 5684, 5841, 5700, 5858, 12, 1384, 11, 4817, 2]
 
-// Module 5855 (VideoQuality)
+// Module 5857 (VideoQuality)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import TimeUtils from "TimeUtils" /* 5684 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 5700 */;
-import Histogram from "Histogram" /* 5839 */;
-import NetworkQualityDefault from "NetworkQuality" /* 5845 */;
-import VideoQualityStats from "VideoQualityStats" /* 5856 */;
-import VideoBackgroundStore_mod from "VideoBackgroundStore" /* 5818 */;
+import Histogram from "Histogram" /* 5841 */;
+import NetworkQualityDefault from "NetworkQuality" /* 5847 */;
+import VideoQualityStats from "VideoQualityStats" /* 5858 */;
+import VideoBackgroundStore_mod from "VideoBackgroundStore" /* 5820 */;
 import TypedEventEmitter from "TypedEventEmitter" /* 5703 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -284,23 +284,23 @@ class VideoQuality extends TypedEventEmitter {
         if (num == null) {
           num = 0;
         }
-        num2 = value.get(tmp2(5856).CodecTypes.H265);
+        num2 = value.get(tmp2(5858).CodecTypes.H265);
         if (num2 == null) {
           num2 = 0;
         }
-        num3 = value.get(tmp2(5856).CodecTypes.VP8);
+        num3 = value.get(tmp2(5858).CodecTypes.VP8);
         if (num3 == null) {
           num3 = 0;
         }
-        num4 = value.get(tmp2(5856).CodecTypes.VP9);
+        num4 = value.get(tmp2(5858).CodecTypes.VP9);
         if (num4 == null) {
           num4 = 0;
         }
-        num5 = value.get(tmp2(5856).CodecTypes.AV1);
+        num5 = value.get(tmp2(5858).CodecTypes.AV1);
         if (num5 == null) {
           num5 = 0;
         }
-        num6 = value.get(tmp2(5856).CodecTypes.UNKNOWN);
+        num6 = value.get(tmp2(5858).CodecTypes.UNKNOWN);
         if (num6 == null) {
           num6 = 0;
         }
@@ -318,23 +318,23 @@ class VideoQuality extends TypedEventEmitter {
     if (num8 == null) {
       num8 = 0;
     }
-    num9 = map.get(tmp7(5856).CodecTypes.H265);
+    num9 = map.get(tmp7(5858).CodecTypes.H265);
     if (num9 == null) {
       num9 = 0;
     }
-    num10 = map.get(tmp7(5856).CodecTypes.VP8);
+    num10 = map.get(tmp7(5858).CodecTypes.VP8);
     if (num10 == null) {
       num10 = 0;
     }
-    num11 = map.get(tmp7(5856).CodecTypes.VP9);
+    num11 = map.get(tmp7(5858).CodecTypes.VP9);
     if (num11 == null) {
       num11 = 0;
     }
-    num12 = map.get(tmp7(5856).CodecTypes.AV1);
+    num12 = map.get(tmp7(5858).CodecTypes.AV1);
     if (num12 == null) {
       num12 = 0;
     }
-    num13 = map.get(tmp7(5856).CodecTypes.UNKNOWN);
+    num13 = map.get(tmp7(5858).CodecTypes.UNKNOWN);
     if (num13 == null) {
       num13 = 0;
     }

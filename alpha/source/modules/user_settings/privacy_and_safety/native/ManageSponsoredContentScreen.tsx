@@ -1,9 +1,9 @@
-// Module ID: 16998
-// Function ID: 16999
+// Module ID: 17017
+// Function ID: 17018
 // Name: ManageSponsoredContentScreen
-// Dependencies: [19, 17, 1087, 21, 1211, 2114, 558, 576, 4776, 1128, 7241, 4945, 587, 6935, 2068, 2]
+// Dependencies: [19, 17, 1087, 21, 1211, 2114, 558, 576, 4776, 1128, 7244, 4945, 587, 6938, 2068, 2]
 
-// Module 16998 (ManageSponsoredContentScreen)
+// Module 17017 (ManageSponsoredContentScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2068 */;
 import _modDef2114 from "module_2114" /* 2114 */;
 import UserSettings from "UserSettings" /* 4776 */;
-import TableRowGroup3 from "TableRowGroup" /* 6935 */;
+import TableRowGroup3 from "TableRowGroup" /* 6938 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -99,7 +99,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AdTopic
       }
     }
     const obj2 = { label: tmp9, subLabel: tmp11, value: !tmp4, onValueChange: tmp8 };
-    const tmp18 = closure_5(tmp(7241).TableSwitchRow, obj2);
+    const tmp18 = closure_5(tmp(7244).TableSwitchRow, obj2);
     cResult[9] = tmp8;
     cResult[10] = tmp9;
     cResult[11] = tmp11;
@@ -138,7 +138,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AdTopic
       AdTopicOptOuts2.updateSetting(items);
     }
   };
-  const TableSwitchRow = adTopic(7241).TableSwitchRow;
+  const TableSwitchRow = adTopic(7244).TableSwitchRow;
   intl = adTopic(1128).intl;
   const intl2 = adTopic(1128).intl;
   string = intl2.string;
@@ -164,7 +164,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManageSponso
   const tmp4 = closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { hasIcons: false, description: format(prop, obj3) };
-    const TableRowGroup = tmp(6935).TableRowGroup;
+    const TableRowGroup = tmp(6938).TableRowGroup;
     const intl = tmp(1128).intl;
     format = intl.format;
     obj3 = { helpdeskArticle: obj4.getArticleURL(HelpdeskArticles.MANAGE_SPONSORED_CONTENT) };
@@ -185,7 +185,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManageSponso
           return closure_1_5(closure_1_9, obj, adTopic);
         })
     };
-    const TableRowGroup2 = tmp(6935).TableRowGroup;
+    const TableRowGroup2 = tmp(6938).TableRowGroup;
     intl2 = tmp(1128).intl;
     const tmp15 = hasOwnProperty(TableRowGroup2, obj5);
     cResult[1] = tmp15;

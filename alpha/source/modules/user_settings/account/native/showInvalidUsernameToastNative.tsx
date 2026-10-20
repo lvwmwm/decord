@@ -1,10 +1,10 @@
-// Module ID: 7036
-// Function ID: 7037
+// Module ID: 7039
+// Function ID: 7040
 // Name: showInvalidUsernameToastNative
 // Dependencies: [5625, 1128, 2]
 // Exports: showInvalidUsernameToast
 
-// Module 7036 (showInvalidUsernameToastNative)
+// Module 7039 (showInvalidUsernameToastNative)
 import intl2 from "intl" /* 1128 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5625 */;
 import size from "module_2" /* 2 */;

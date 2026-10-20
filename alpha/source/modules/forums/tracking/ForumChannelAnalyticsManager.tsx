@@ -1,9 +1,9 @@
-// Module ID: 8239
-// Function ID: 8240
+// Module ID: 8243
+// Function ID: 8244
 // Name: ForumChannelAnalyticsManager
 // Dependencies: [4800, 2]
 
-// Module 8239 (ForumChannelAnalyticsManager)
+// Module 8243 (ForumChannelAnalyticsManager)
 import ChannelStore from "ChannelStore" /* 4800 */;
 import size from "module_2" /* 2 */;
 

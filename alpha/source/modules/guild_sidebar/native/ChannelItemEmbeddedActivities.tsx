@@ -1,13 +1,13 @@
-// Module ID: 17389
-// Function ID: 17390
+// Module ID: 17408
+// Function ID: 17409
 // Name: ChannelItemEmbeddedActivities
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 7207, 5195, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 7210, 5195, 2]
 
-// Module 17389 (ChannelItemEmbeddedActivities)
+// Module 17408 (ChannelItemEmbeddedActivities)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GameIcon from "GameIcon" /* 7207 */;
+import GameIcon from "GameIcon" /* 7210 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -35,7 +35,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelItemE
   const cResult = obj.c(20);
   ({ embeddedApps, size, muted } = arg0);
   if (undefined === size) {
-    size = tmp(7207).GameIconSizes.SIZE_24;
+    size = tmp(7210).GameIconSizes.SIZE_24;
   }
   const tmp4 = closure_6();
   if (embeddedApps.length <= 0) {
@@ -179,7 +179,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelItemE
     const tmp17 = importDefault;
     if (2 === embeddedApps.length) {
       const obj = { game: application2, size };
-      tmp16Result = tmp16(tmp17(7207), obj);
+      tmp16Result = tmp16(tmp17(7210), obj);
     } else {
       const obj5 = { style: items1, children: React3(Text, obj7) };
       items1 = [tmp3.overflowContainer, ];

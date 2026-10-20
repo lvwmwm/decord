@@ -1,10 +1,10 @@
-// Module ID: 7223
-// Function ID: 7224
+// Module ID: 7226
+// Function ID: 7227
 // Name: getConnectionsRoles
 // Dependencies: [4854, 4822, 1087, 1099, 2]
 // Exports: default
 
-// Module 7223 (getConnectionsRoles)
+// Module 7226 (getConnectionsRoles)
 import GuildRoleStore from "GuildRoleStore" /* 4854 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import Constants from "Constants" /* 1087 */;

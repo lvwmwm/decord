@@ -1,10 +1,10 @@
-// Module ID: 12276
-// Function ID: 12277
+// Module ID: 12295
+// Function ID: 12296
 // Name: ConjureSubagentMarks
 // Dependencies: [3820, 1128, 2]
 // Exports: assignSubagentMarkKeys, isConjureSubagentMarkKey, subagentMarkName
 
-// Module 12276 (ConjureSubagentMarks)
+// Module 12295 (ConjureSubagentMarks)
 import intl2 from "intl" /* 1128 */;
 import _modDef3820 from "module_3820" /* 3820 */;
 import size from "module_2" /* 2 */;

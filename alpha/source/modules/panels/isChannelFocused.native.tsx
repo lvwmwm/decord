@@ -1,21 +1,21 @@
-// Module ID: 6750
-// Function ID: 6751
+// Module ID: 6753
+// Function ID: 6754
 // Name: isChannelFocused
-// Dependencies: [32, 19, 6720, 6751, 6752, 5113, 5111, 5112, 5114, 6753, 558, 576, 6754, 2]
+// Dependencies: [32, 19, 6723, 6754, 6755, 5113, 5111, 5112, 5114, 6756, 558, 576, 6757, 2]
 // Exports: isChannelFocused, isChannelFocusedForReadStateAck
 
-// Module 6750 (isChannelFocused)
+// Module 6753 (isChannelFocused)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5111 */;
 import RootNavigationRef from "RootNavigationRef" /* 5112 */;
 import getInitialNavigationStateDefault from "getInitialNavigationState" /* 5113 */;
 import useChatLayout from "useChatLayout" /* 5114 */;
-import NavigationHistoryStore2 from "NavigationHistoryStore" /* 6751 */;
-import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 6753 */;
-import hasSecondaryViewChatDefault from "hasSecondaryViewChat" /* 6754 */;
+import NavigationHistoryStore2 from "NavigationHistoryStore" /* 6754 */;
+import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 6756 */;
+import hasSecondaryViewChatDefault from "hasSecondaryViewChat" /* 6757 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6720 */;
-import VoicePanelStore from "VoicePanelStore" /* 6752 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6723 */;
+import VoicePanelStore from "VoicePanelStore" /* 6755 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

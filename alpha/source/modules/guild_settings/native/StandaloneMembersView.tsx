@@ -1,15 +1,15 @@
-// Module ID: 17748
-// Function ID: 17749
+// Module ID: 17767
+// Function ID: 17768
 // Name: StandaloneMembersView
-// Dependencies: [19, 21, 558, 576, 1505, 1633, 8926, 6872, 1128, 17749, 12589, 12603, 12607, 7043, 2]
+// Dependencies: [19, 21, 558, 576, 1505, 1633, 8938, 6875, 1128, 17768, 12606, 12620, 12624, 7046, 2]
 
-// Module 17748 (StandaloneMembersView)
+// Module 17767 (StandaloneMembersView)
 import Fragment from "Fragment" /* 21 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8926 */;
-import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 12589 */;
-import KickConfirmDefault from "KickConfirm" /* 12603 */;
-import BanConfirmDefault from "BanConfirm" /* 12607 */;
-import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 17749 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8938 */;
+import GuildSettingsModalMemberEdit from "GuildSettingsModalMemberEdit" /* 12606 */;
+import KickConfirmDefault from "KickConfirm" /* 12620 */;
+import BanConfirmDefault from "BanConfirm" /* 12624 */;
+import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 17768 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

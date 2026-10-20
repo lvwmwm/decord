@@ -1,9 +1,9 @@
-// Module ID: 14403
-// Function ID: 14404
+// Module ID: 14421
+// Function ID: 14422
 // Name: NUFChannelsManager
-// Dependencies: [4860, 4822, 4971, 1392, 1087, 4866, 510, 4994, 7162, 5112, 5111, 1405, 5171, 14404, 2002, 2]
+// Dependencies: [4860, 4822, 4971, 1392, 1087, 4866, 510, 4994, 7165, 5112, 5111, 1405, 5171, 14422, 2002, 2]
 
-// Module 14403 (NUFChannelsManager)
+// Module 14421 (NUFChannelsManager)
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1087 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
@@ -17,7 +17,7 @@ import GuildMemberStore from "GuildMemberStore" /* 4860 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4971 */;
 import UserStore from "UserStore" /* 1392 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7162 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7165 */;
 import size from "module_2" /* 2 */;
 
 const GuildFeatures = Constants.GuildFeatures;
@@ -96,7 +96,7 @@ class NUFChannelsManager extends AutomaticLifecycleManager {
           }
           if (isNewUserResult) {
             const obj3 = ActionSheetActionCreatorsDefault;
-            obj3.openLazy(asyncRequire(14404, tmp2.paths), "NUFChannelsActionSheet");
+            obj3.openLazy(asyncRequire(14422, tmp2.paths), "NUFChannelsActionSheet");
             const Storage2 = tmp(510).Storage;
             const result = Storage2.set(tmp14, true);
           }

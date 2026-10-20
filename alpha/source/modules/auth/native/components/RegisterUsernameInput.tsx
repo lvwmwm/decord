@@ -1,20 +1,20 @@
-// Module ID: 17120
-// Function ID: 17121
+// Module ID: 17139
+// Function ID: 17140
 // Name: RegisterUsernameInput
-// Dependencies: [109, 32, 19, 17094, 21, 4945, 5014, 558, 576, 15779, 6960, 587, 5932, 5195, 1128, 15092, 1384, 6956, 2]
+// Dependencies: [109, 32, 19, 17113, 21, 4945, 5014, 558, 576, 15798, 6963, 587, 5935, 5195, 1128, 15110, 1384, 6959, 2]
 
-// Module 17120 (RegisterUsernameInput)
+// Module 17139 (RegisterUsernameInput)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 15092 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 15779 */;
+import useFocusRefOnNavigationDefault from "useFocusRefOnNavigation" /* 15110 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 15798 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17094 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17113 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -61,7 +61,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Userna
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       obj2 = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
-      const CircleErrorIcon = tmp(6960).CircleErrorIcon;
+      const CircleErrorIcon = tmp(6963).CircleErrorIcon;
       const tmp35 = authStore(CircleErrorIcon, obj2);
       cResult[0] = tmp35;
       first = tmp35;
@@ -77,7 +77,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Userna
     }
     const obj3 = { direction: "horizontal", spacing: 4, align: "flex-start", children: items };
     items = [first, ];
-    const Stack = tmp(5932).Stack;
+    const Stack = tmp(5935).Stack;
     const obj4 = { variant: "text-xs/medium", color: "text-feedback-critical", style: tmp4.status, animated: true, children: usernameStatus.message };
     const Text3 = tmp(5195).Text;
     const merged = Object.assign(obj);
@@ -168,9 +168,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Userna
   }
   if (type === UniqueUsernamesTypes.NameValidationState.ERROR) {
     obj2 = { direction: "horizontal", spacing: 4, align: "flex-start", children: items };
-    const Stack = tmp3(5932).Stack;
+    const Stack = tmp3(5935).Stack;
     const obj3 = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
-    const CircleErrorIcon = tmp3(6960).CircleErrorIcon;
+    const CircleErrorIcon = tmp3(6963).CircleErrorIcon;
     items = [authStore(CircleErrorIcon, obj3), ];
     const obj4 = { variant: "text-xs/medium", color: "text-feedback-critical", style: tmp.status, animated: true, children: usernameStatus.message };
     const Text3 = tmp3(5195).Text;
@@ -340,7 +340,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterUser
         }
       }
     }
-    if (undefined === tmp(15779).NameValidationState.ERROR) {
+    if (undefined === tmp(15798).NameValidationState.ERROR) {
       class H {
         constructor() {
           tmp = closure_1(true);
@@ -356,7 +356,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterUser
         }
       }
     }
-    const TextInput = tmp(6956).TextInput;
+    const TextInput = tmp(6959).TextInput;
     const tmpResult = tmp(1384);
     if (tmpResult.isAndroid()) {
       class H {
@@ -452,7 +452,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterUser
     closure_1(false);
   }, items2);
   const obj3 = { ref, label: intl.string(setUsername(1128).t.IEpCBQ), accessibilityHint: intl2.string(setUsername(1128).t["47dcUZ"]), onChange: callback, autoCorrect: false, secureTextEntry: obj4.isAndroid(), keyboardType: str, value: username, onSubmitEditing, returnKeyType: "next", autoComplete: "username", textContentType: "username", autoCapitalize: "none", onFocus: callback1, onBlur: callback2, clearable: true, status: str2, submitBehavior };
-  const TextInput = setUsername(6956).TextInput;
+  const TextInput = setUsername(6959).TextInput;
   intl = setUsername(1128).intl;
   intl2 = setUsername(1128).intl;
   str = "default";
@@ -469,7 +469,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterUser
     type = usernameStatus.type;
   }
   str2 = undefined;
-  if (type === tmp15(15779).NameValidationState.ERROR) {
+  if (type === tmp15(15798).NameValidationState.ERROR) {
     str2 = "error";
   }
   const obj6 = { children: items3 };

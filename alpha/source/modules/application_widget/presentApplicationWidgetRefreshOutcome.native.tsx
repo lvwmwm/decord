@@ -1,14 +1,14 @@
-// Module ID: 11859
-// Function ID: 11860
+// Module ID: 11873
+// Function ID: 11874
 // Name: presentApplicationWidgetRefreshOutcome
-// Dependencies: [11860, 5625, 11653, 5624, 2]
+// Dependencies: [11874, 5625, 11666, 5624, 2]
 // Exports: default
 
-// Module 11859 (presentApplicationWidgetRefreshOutcome)
+// Module 11873 (presentApplicationWidgetRefreshOutcome)
 import ToastUtils from "ToastUtils" /* 5624 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5625 */;
-import RetryIcon from "RetryIcon" /* 11653 */;
-import applicationWidgetRefreshOutcomeDefault from "applicationWidgetRefreshOutcome" /* 11860 */;
+import RetryIcon from "RetryIcon" /* 11666 */;
+import applicationWidgetRefreshOutcomeDefault from "applicationWidgetRefreshOutcome" /* 11874 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_widget/presentApplicationWidgetRefreshOutcome.native.tsx");

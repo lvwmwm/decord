@@ -1,116 +1,81 @@
 // Module ID: 8206
 // Function ID: 8207
-// Dependencies: [8175, 8165, 8158]
+// Dependencies: [8167, 8182, 8183, 8162]
 
 // Module 8206
-import _mod8158 from "module_8158" /* 8158 */;
-import PNG_CHUNK_TYPE_SIZE from "PNG_CHUNK_TYPE_SIZE" /* 8165 */;
-import _modDef8175 from "module_8175" /* 8175 */;
+import _mod8162 from "module_8162" /* 8162 */;
+import _modDef8167 from "module_8167" /* 8167 */;
+import get0thIfdOffset from "get0thIfdOffset" /* 8182 */;
+import IFD_TYPE_0TH from "IFD_TYPE_0TH" /* 8183 */;
 
+const MODEL_ID = { K3_III: 78420 };
+let obj2 = { CAMERA_ORIENTATION: 1, ROLL_ANGLE: 3, PITCH_ANGLE: 5 };
 
 export default {
-  read(byteLength, arg1) {
-    let combined;
-    let combined1;
-    let combined2;
-    let combined3;
-    let combined4;
-    let items;
-    let num;
-    let str7;
-    const obj = {};
-    for (let num = 0; num < arg1.length; num = num + 1) {
-      let tmp = importDefault;
-      let obj2 = _modDef8175;
-      let tmp3 = require;
-      let longAt = obj2.getLongAt(byteLength, arg1[num] + PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_LENGTH_OFFSET);
-      let tmp5 = _mod8158;
-      let getStringFromDataView = tmp5.getStringFromDataView;
-      let sum = arg1[num] + PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_TYPE_OFFSET;
-      let stringFromDataView = getStringFromDataView(byteLength, sum, PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_TYPE_SIZE);
-      if (stringFromDataView === PNG_CHUNK_TYPE_SIZE.TYPE_PHYS) {
-        let tmp23 = arg1[num];
-        let tmp24 = 4 <= longAt && tmp23 + tmp3(8165).PNG_CHUNK_DATA_OFFSET + 4 <= byteLength.byteLength;
-        let tmp25;
-        if (tmp24) {
-          let tmpResult = tmp(8175);
-          let longAt1 = tmpResult.getLongAt(byteLength, tmp23 + tmp3(8165).PNG_CHUNK_DATA_OFFSET);
-          let obj3 = { value: longAt1, description: "" + longAt1 };
-          tmp25 = obj3;
-        }
-        obj["Pixels Per Unit X"] = tmp25;
-        let tmp27 = arg1[num];
-        let tmp28 = 8 <= longAt && tmp27 + tmp3(8165).PNG_CHUNK_DATA_OFFSET + 4 + 4 <= byteLength.byteLength;
-        let tmp29;
-        if (tmp28) {
-          let tmpResult9 = tmp(8175);
-          let longAt2 = tmpResult9.getLongAt(byteLength, tmp27 + tmp3(8165).PNG_CHUNK_DATA_OFFSET + 4);
-          let obj4 = { value: longAt2, description: "" + longAt2 };
-          tmp29 = obj4;
-        }
-        obj["Pixels Per Unit Y"] = tmp29;
-        let tmp31 = arg1[num];
-        let tmp32 = 9 <= longAt && tmp31 + tmp3(8165).PNG_CHUNK_DATA_OFFSET + 8 + 1 <= byteLength.byteLength;
-        let tmp33;
-        if (tmp32) {
-          let tmpResult10 = tmp(8175);
-          let byteAt = tmpResult10.getByteAt(byteLength, tmp31 + tmp3(8165).PNG_CHUNK_DATA_OFFSET + 8);
-          let obj5 = { value: byteAt, description: str7 };
-          str7 = "Unknown";
-          if (1 === byteAt) {
-            str7 = "meters";
-          }
-          tmp33 = obj5;
-        }
-        obj["Pixel Units"] = tmp33;
-      } else if (stringFromDataView === tmp3(8165).TYPE_TIME) {
-        let tmp35 = arg1[num];
-        let tmp9 = 7 <= longAt && tmp35 + tmp3(8165).PNG_CHUNK_DATA_OFFSET + 7 <= byteLength.byteLength;
-        let tmp10;
-        if (tmp9) {
-          let tmpResult11 = tmp(8175);
-          let shortAt = tmpResult11.getShortAt(byteLength, tmp35 + tmp3(8165).PNG_CHUNK_DATA_OFFSET);
-          let tmpResult12 = tmp(8175);
-          let byteAt1 = tmpResult12.getByteAt(byteLength, tmp35 + tmp3(8165).PNG_CHUNK_DATA_OFFSET + 2);
-          let tmpResult13 = tmp(8175);
-          let byteAt2 = tmpResult13.getByteAt(byteLength, tmp35 + tmp3(8165).PNG_CHUNK_DATA_OFFSET + 3);
-          let tmpResult14 = tmp(8175);
-          let byteAt3 = tmpResult14.getByteAt(byteLength, tmp35 + tmp3(8165).PNG_CHUNK_DATA_OFFSET + 4);
-          let tmpResult15 = tmp(8175);
-          let byteAt4 = tmpResult15.getByteAt(byteLength, tmp35 + tmp3(8165).PNG_CHUNK_DATA_OFFSET + 5);
-          let tmpResult16 = tmp(8175);
-          let byteAt5 = tmpResult16.getByteAt(byteLength, tmp35 + tmp3(8165).PNG_CHUNK_DATA_OFFSET + 6);
-          let obj6 = { value: items, description: "" + combined + "-" + combined1 + "-" + combined2 + " " + combined3 + ":" + combined4 + ":" + "" + "0".repeat(2 - ("" + byteAt5).length) + byteAt5 };
-          items = [shortAt, byteAt1, byteAt2, byteAt3, byteAt4, byteAt5];
-          let repeat = "0".repeat;
-          let _HermesInternal = HermesInternal;
-          combined = "" + "0".repeat(4 - ("" + shortAt).length) + shortAt;
-          let repeat2 = "0".repeat;
-          let _HermesInternal2 = HermesInternal;
-          let repeat3 = "0".repeat;
-          combined1 = "" + "0".repeat(2 - ("" + byteAt1).length) + byteAt1;
-          let _HermesInternal3 = HermesInternal;
-          let repeat4 = "0".repeat;
-          combined2 = "" + "0".repeat(2 - ("" + byteAt2).length) + byteAt2;
-          let _HermesInternal4 = HermesInternal;
-          let repeat5 = "0".repeat;
-          combined3 = "" + "0".repeat(2 - ("" + byteAt3).length) + byteAt3;
-          let _HermesInternal5 = HermesInternal;
-          let repeat6 = "0".repeat;
-          combined4 = "" + "0".repeat(2 - ("" + byteAt4).length) + byteAt4;
-          let _HermesInternal6 = HermesInternal;
-          let _HermesInternal7 = HermesInternal;
-          let str = "";
-          let str2 = "-";
-          let str3 = "-";
-          let str4 = " ";
-          let str5 = ":";
-          let str6 = ":";
-          tmp10 = obj6;
-        }
-        obj["Modify Date"] = tmp10;
-      }
+  read(byteLength, arg1, arg2, arg3) {
+    let str6;
+    const obj = _modDef8167;
+    const byteOrder = obj.getByteOrder(byteLength, arg1 + arg2 + 8);
+    const sum = arg1 + arg2;
+    obj2 = get0thIfdOffset;
+    const ifd = obj2.readIfd(byteLength, IFD_TYPE_0TH.IFD_TYPE_PENTAX, sum, sum + 10, byteOrder, arg3, true);
+    let LevelInfo = ifd.PentaxModelID;
+    if (LevelInfo) {
+      LevelInfo = ifd.PentaxModelID.value === obj.K3_III;
     }
-    return obj;
-  }
+    if (LevelInfo) {
+      LevelInfo = ifd.LevelInfo;
+    }
+    let tmp8 = ifd;
+    if (LevelInfo) {
+      const sum1 = sum + ifd.LevelInfo.__offset;
+      const obj3 = {};
+      const objectAssign = tmp5(8162).objectAssign;
+      _mod8162;
+      if (sum1 + 7 <= byteLength.byteLength) {
+        const int8 = byteLength.getInt8(sum1 + obj2.CAMERA_ORIENTATION);
+        const obj4 = { value: int8, description: str6 };
+        str6 = "Horizontal (normal)";
+        if (0 !== int8) {
+          let str = "Rotate 270 CW";
+          if (1 !== int8) {
+            let str2 = "Rotate 180";
+            if (2 !== int8) {
+              let str3 = "Rotate 90 CW";
+              if (3 !== int8) {
+                let str4 = "Upwards";
+                if (4 !== int8) {
+                  let str5 = "Unknown";
+                  if (5 === int8) {
+                    str5 = "Downwards";
+                  }
+                  str4 = str5;
+                }
+                str3 = str4;
+              }
+              str2 = str3;
+            }
+            str = str2;
+          }
+          str6 = str;
+        }
+        obj3.CameraOrientation = obj4;
+        const sum2 = sum1 + tmp16.ROLL_ANGLE;
+        const int16 = byteLength.getInt16(sum2, byteOrder === tmp(8167).LITTLE_ENDIAN);
+        const obj5 = { value: int16, description: "" + -0.5 * int16 };
+        obj3.RollAngle = obj5;
+        const sum3 = sum1 + tmp16.PITCH_ANGLE;
+        const int161 = byteLength.getInt16(sum3, byteOrder === tmp(8167).LITTLE_ENDIAN);
+        const obj6 = { value: int161, description: "" + -0.5 * int161 };
+        obj3.PitchAngle = obj6;
+      }
+      const objectAssignResult = objectAssign({}, ifd, obj3);
+      delete tmp15["LevelInfo"];
+      tmp8 = objectAssignResult;
+    }
+    return tmp8;
+  },
+  PENTAX_IFD_OFFSET: 10,
+  MODEL_ID,
+  LIK3III: obj2
 };

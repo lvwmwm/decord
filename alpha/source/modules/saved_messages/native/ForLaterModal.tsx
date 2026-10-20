@@ -1,15 +1,15 @@
-// Module ID: 13622
-// Function ID: 13623
+// Module ID: 13640
+// Function ID: 13641
 // Name: ForLaterModal
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1633, 1128, 9995, 9614, 1384, 6872, 6620, 6881, 13623, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1633, 1128, 10006, 9627, 1384, 6875, 6623, 6884, 13641, 2]
 
-// Module 13622 (ForLaterModal)
+// Module 13640 (ForLaterModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
-import HeaderShared from "HeaderShared" /* 9614 */;
-import ForLaterScreenDefault from "ForLaterScreen" /* 13623 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6623 */;
+import HeaderShared from "HeaderShared" /* 9627 */;
+import ForLaterScreenDefault from "ForLaterScreen" /* 13641 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -89,7 +89,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterMo
   const sum = tmp10 + tmp5(587).space.PX_8;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const tmpResult2 = require("NavigatorHeader");
-    const headerCloseButton = tmpResult2.getHeaderCloseButton(tmp5(6620).pop);
+    const headerCloseButton = tmpResult2.getHeaderCloseButton(tmp5(6623).pop);
     cResult[6] = headerCloseButton;
     tmp12 = headerCloseButton;
   } else {
@@ -136,7 +136,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterMo
     }
   }
   const obj4 = { title: tmp6, headerTitle: tmp9, headerTitleAlign: "center", headerStatusBarHeight: sum, headerLeft: tmp12, headerLeftContainerStyle: tmp4.headerLeftContainer, headerRightContainerStyle: tmp4.headerRightContainer };
-  const tmp15 = closure_4(require("module_6881").Header, obj4);
+  const tmp15 = closure_4(require("module_6884").Header, obj4);
   cResult[7] = tmp4.headerLeftContainer;
   cResult[8] = tmp4.headerRightContainer;
   cResult[9] = tmp9;
@@ -176,7 +176,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterMo
     headerLeftContainerStyle: null,
     headerRightContainerStyle: null
   };
-  const Header = tmp4(6881).Header;
+  const Header = tmp4(6884).Header;
   num = 0;
   const tmp4Result = require("PlatformUtils");
   const tmp7 = closure_5;

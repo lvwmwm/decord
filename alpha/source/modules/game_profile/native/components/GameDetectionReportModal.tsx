@@ -1,20 +1,20 @@
-// Module ID: 9421
-// Function ID: 9422
+// Module ID: 9433
+// Function ID: 9434
 // Name: GameDetectionReportModal
-// Dependencies: [32, 19, 17, 21, 4945, 587, 558, 576, 1505, 9166, 9422, 8997, 8994, 6620, 1128, 7431, 6879, 6872, 5195, 6933, 6932, 6956, 5205, 7128, 7043, 2]
+// Dependencies: [32, 19, 17, 21, 4945, 587, 558, 576, 1505, 9178, 9434, 9009, 9006, 6623, 1128, 7434, 6882, 6875, 5195, 6936, 6935, 6959, 5205, 7131, 7046, 2]
 
-// Module 9421 (GameDetectionReportModal)
+// Module 9433 (GameDetectionReportModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl10 from "intl" /* 1128 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
-import NavigatorHeader from "NavigatorHeader" /* 6872 */;
-import TableRadioRow3 from "TableRadioRow" /* 6932 */;
-import TableRadioGroup3 from "TableRadioGroup" /* 6933 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 6956 */;
-import TextArea2 from "TextArea" /* 7128 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9166 */;
+import NavigatorHeader from "NavigatorHeader" /* 6875 */;
+import TableRadioRow3 from "TableRadioRow" /* 6935 */;
+import TableRadioGroup3 from "TableRadioGroup" /* 6936 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 6959 */;
+import TextArea2 from "TextArea" /* 7131 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9178 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -34,7 +34,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const Navigator = tmp(7043);
+const Navigator = tmp(7046);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
@@ -192,8 +192,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
         tmp13 = closure_0;
         tmp14 = closure_2;
         obj1.title = intl2.string(closure_0(closure_2[14]).t["6tnjbD"]);
-        obj1.headerLeft = function headerLeft() { /* body not rendered: F144241 */ };
-        obj1.headerRight = function headerRight() { /* body not rendered: F144242 */ };
+        obj1.headerLeft = function headerLeft() { /* body not rendered: F144405 */ };
+        obj1.headerRight = function headerRight() { /* body not rendered: F144406 */ };
         setOptions2Result = setOptions2(obj1);
       } else {
         str = "game_search";
@@ -210,8 +210,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
           tmp7 = closure_0;
           tmp8 = closure_2;
           obj2 = closure_0(closure_2[17]);
-          obj.headerLeft = obj2.getHeaderBackButton(() => { /* body not rendered: F144243 */ });
-          obj.headerRight = function headerRight() { /* body not rendered: F144244 */ };
+          obj.headerLeft = obj2.getHeaderBackButton(() => { /* body not rendered: F144407 */ });
+          obj.headerRight = function headerRight() { /* body not rendered: F144408 */ };
           setOptionsResult = setOptions(obj);
         } else {
           tmp16 = closure_2;
@@ -226,8 +226,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
           tmp21 = closure_0;
           tmp22 = closure_2;
           obj5 = closure_0(closure_2[17]);
-          obj6.headerLeft = obj5.getHeaderBackButton(() => { /* body not rendered: F144245 */ });
-          obj6.headerRight = function headerRight() { /* body not rendered: F144246 */ };
+          obj6.headerLeft = obj5.getHeaderBackButton(() => { /* body not rendered: F144409 */ });
+          obj6.headerRight = function headerRight() { /* body not rendered: F144410 */ };
           setOptions3Result = setOptions3(obj6);
         }
       }

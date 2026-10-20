@@ -1,10 +1,10 @@
-// Module ID: 8768
-// Function ID: 8769
+// Module ID: 8780
+// Function ID: 8781
 // Name: ForumPostMediaUtils
-// Dependencies: [19, 7349, 4800, 5965, 1392, 1087, 1105, 5954, 4776, 1405, 1386, 1388, 558, 576, 5969, 2000, 5976, 11, 2]
+// Dependencies: [19, 7352, 4800, 5968, 1392, 1087, 1105, 5957, 4776, 1405, 1386, 1388, 558, 576, 5972, 2000, 5979, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal
 
-// Module 8768 (ForumPostMediaUtils)
+// Module 8780 (ForumPostMediaUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1105 */;
@@ -12,11 +12,11 @@ import URLUtilsDefault from "URLUtils" /* 1386 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import UserSettings from "UserSettings" /* 4776 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5954 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5957 */;
 import react from "react" /* 19 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7349 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7352 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
-import MessageStore from "MessageStore" /* 5965 */;
+import MessageStore from "MessageStore" /* 5968 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -28,7 +28,7 @@ let _require, type;
 let c9;
 let metroImportAll;
 let tmp;
-const InteractionComponentUtils = tmp(5969);
+const InteractionComponentUtils = tmp(5972);
 function isMediaAttachment(filename) {
   let height;
   let width;

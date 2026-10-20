@@ -1,14 +1,14 @@
-// Module ID: 10703
-// Function ID: 10704
+// Module ID: 10714
+// Function ID: 10715
 // Name: useIsSelectedResourceChannel
-// Dependencies: [6739, 4800, 4851, 1087, 4807, 558, 576, 1405, 10704, 573, 7270, 2]
+// Dependencies: [6742, 4800, 4851, 1087, 4807, 558, 576, 1405, 10715, 573, 7273, 2]
 
-// Module 10703 (useIsSelectedResourceChannel)
+// Module 10714 (useIsSelectedResourceChannel)
 import Constants from "Constants" /* 1087 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import ChannelConstants from "ChannelConstants" /* 4807 */;
-import isSelectedFromHomeChannelDefault from "isSelectedFromHomeChannel" /* 10704 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6739 */;
+import isSelectedFromHomeChannelDefault from "isSelectedFromHomeChannel" /* 10715 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6742 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

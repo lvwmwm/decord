@@ -1,9 +1,9 @@
-// Module ID: 14931
-// Function ID: 14932
+// Module ID: 14949
+// Function ID: 14950
 // Name: ActivateDeviceSuccess
-// Dependencies: [19, 17, 21, 4945, 558, 576, 1128, 9545, 5631, 1417, 5195, 14930, 5205, 2]
+// Dependencies: [19, 17, 21, 4945, 558, 576, 1128, 9558, 5631, 1417, 5195, 14948, 5205, 2]
 
-// Module 14931 (ActivateDeviceSuccess)
+// Module 14949 (ActivateDeviceSuccess)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
@@ -11,8 +11,8 @@ import AvatarUtils from "AvatarUtils" /* 1417 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import components_Button_Button from "components/Button/Button" /* 5205 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import scopes2 from "scopes" /* 9545 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 14930 */;
+import scopes2 from "scopes" /* 9558 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 14948 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;

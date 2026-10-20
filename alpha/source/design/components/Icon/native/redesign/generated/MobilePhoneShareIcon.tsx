@@ -1,14 +1,14 @@
-// Module ID: 18360
-// Function ID: 18361
+// Module ID: 18382
+// Function ID: 18383
 // Name: MobilePhoneShareIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 18361, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 18383, 5630, 2]
 
-// Module 18360 (MobilePhoneShareIcon)
+// Module 18382 (MobilePhoneShareIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 18361 */;
+import AssetRegistry from "AssetRegistry" /* 18383 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

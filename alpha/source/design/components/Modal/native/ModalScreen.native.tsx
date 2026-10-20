@@ -1,9 +1,9 @@
-// Module ID: 7844
-// Function ID: 7845
+// Module ID: 7848
+// Function ID: 7849
 // Name: ModalScreen
 // Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5554, 2]
 
-// Module 7844 (ModalScreen)
+// Module 7848 (ModalScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

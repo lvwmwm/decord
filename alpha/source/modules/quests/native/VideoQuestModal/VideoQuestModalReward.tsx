@@ -1,12 +1,12 @@
-// Module ID: 16222
-// Function ID: 16223
+// Module ID: 16241
+// Function ID: 16242
 // Name: VideoQuestModalReward
-// Dependencies: [19, 21, 4945, 558, 576, 16199, 9485, 9482, 16204, 5195, 1128, 5932, 587, 2]
+// Dependencies: [19, 21, 4945, 558, 576, 16218, 9498, 9495, 16223, 5195, 1128, 5935, 587, 2]
 
-// Module 16222 (VideoQuestModalReward)
+// Module 16241 (VideoQuestModalReward)
 import nativeDefault from "native" /* 587 */;
-import QuestUtils from "QuestUtils" /* 9482 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 16204 */;
+import QuestUtils from "QuestUtils" /* 9495 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 16223 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
@@ -37,9 +37,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (undefined !== size) {
     str = size;
   }
-  const tmpResult = quest(16199);
+  const tmpResult = quest(16218);
   quest = tmpResult.useVideoQuestModalContext().quest;
-  const tmpResult2 = quest(9485);
+  const tmpResult2 = quest(9498);
   const questTaskDetails = tmpResult2.useQuestTaskDetails(quest);
   if (cResult[0] !== quest.id) {
     const fn = function s() {
@@ -99,7 +99,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                     }
                   }
                   const obj3 = { justify: "center", align: "center", spacing: nativeDefault.space.PX_24, style, children: items };
-                  const Stack2 = tmp(5932).Stack;
+                  const Stack2 = tmp(5935).Stack;
                   items = [tmp9, tmp17];
                   const tmp24 = closure_5(Stack2, obj3);
                   cResult[18] = style;
@@ -110,7 +110,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 }
               }
               const obj4 = { align: "center", spacing: nativeDefault.space.PX_4, onLayout: onTextBlockLayout, children: items1 };
-              const Stack = tmp(5932).Stack;
+              const Stack = tmp(5935).Stack;
               items1 = [tmp11, tmp14];
               const tmp20 = closure_5(Stack, obj4);
               cResult[14] = onTextBlockLayout;
@@ -169,9 +169,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     str = size;
   }
   ({ withRewardTileAnimation, onTextBlockLayout } = withQuestName);
-  let obj = quest(16199);
+  let obj = quest(16218);
   quest = obj.useVideoQuestModalContext().quest;
-  let obj2 = quest(9485);
+  let obj2 = quest(9498);
   const items = [quest.id];
   const questTaskDetails = obj2.useQuestTaskDetails(quest);
   const callback = react.useCallback(() => {
@@ -181,12 +181,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }, items);
   const obj3 = { justify: "center", align: "center", spacing: nativeDefault.space.PX_24, style, children: items1 };
   const tmp7 = closure_6();
-  const Stack = quest(5932).Stack;
+  const Stack = quest(5935).Stack;
   items1 = [, ];
   const obj4 = { hasConfetti: true, quest, size: str, progress: questTaskDetails.percentComplete, onPress: callback, withAnimation: withRewardTileAnimation };
   items1[0] = closure_4(QuestProgressIndicatorDefault, obj4);
   const obj5 = { align: "center", spacing: nativeDefault.space.PX_4, onLayout: onTextBlockLayout, children: items2 };
-  const Stack2 = quest(5932).Stack;
+  const Stack2 = quest(5935).Stack;
   if (tmp) {
     const obj6 = { variant: "heading-lg/semibold", color: "text-strong", style: tmp7.questName, children: intl.formatToPlainString(quest(1128).t.EAYZAr, obj7) };
     const Text = tmp3(5195).Text;

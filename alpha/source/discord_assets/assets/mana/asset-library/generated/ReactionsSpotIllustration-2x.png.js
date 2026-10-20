@@ -1,8 +1,8 @@
-// Module ID: 9601
-// Function ID: 9602
+// Module ID: 9614
+// Function ID: 9615
 // Dependencies: [2]
 
-// Module 9601
+// Module 9614
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ReactionsSpotIllustration-2x.png.js");

@@ -1,9 +1,9 @@
-// Module ID: 9083
-// Function ID: 9084
+// Module ID: 9095
+// Function ID: 9096
 // Name: VoicePanelAudioOutputActionSheet
-// Dependencies: [19, 17, 5677, 9075, 4800, 5678, 9082, 1087, 21, 4945, 5171, 558, 576, 573, 9084, 9085, 1128, 6933, 6932, 6859, 9074, 11517, 11438, 13992, 4970, 4784, 13993, 7194, 5226, 6834, 2]
+// Dependencies: [19, 17, 5677, 9087, 4800, 5678, 9094, 1087, 21, 4945, 5171, 558, 576, 573, 9096, 9097, 1128, 6936, 6935, 6862, 9086, 11528, 11449, 14010, 4970, 4784, 14011, 7197, 5226, 6837, 2]
 
-// Module 9083 (VoicePanelAudioOutputActionSheet)
+// Module 9095 (VoicePanelAudioOutputActionSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import Constants from "Constants" /* 1087 */;
@@ -11,12 +11,12 @@ import intl3 from "intl" /* 1128 */;
 import dismissible_content from "dismissible_content" /* 4784 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4970 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import NativeViewDefault from "NativeView" /* 6834 */;
-import VoicePanelHeaderConstants from "VoicePanelHeaderConstants" /* 9082 */;
-import useOnConnectToConsole from "useOnConnectToConsole" /* 13992 */;
+import NativeViewDefault from "NativeView" /* 6837 */;
+import VoicePanelHeaderConstants from "VoicePanelHeaderConstants" /* 9094 */;
+import useOnConnectToConsole from "useOnConnectToConsole" /* 14010 */;
 import react from "react" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 5677 */;
-import AudioManagerStore from "AudioManagerStore" /* 9075 */;
+import AudioManagerStore from "AudioManagerStore" /* 9087 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
 import SessionsStore from "SessionsStore" /* 5678 */;
 import Fragment from "Fragment" /* 21 */;
@@ -88,7 +88,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceP
   let tmp11 = null;
   if (availableDevices.length > 0) {
     let obj2 = { style: tmp4.sectionContainer, title: intl.string(tmp(1128).t.CxyS15), hasIcons: true, children: closure_11(TableRadioGroup, obj3) };
-    const VoicePanelFormSection = tmp(9085).VoicePanelFormSection;
+    const VoicePanelFormSection = tmp(9097).VoicePanelFormSection;
     intl = tmp(1128).intl;
     obj3 = {
       value: activeDevice.deviceId,
@@ -123,7 +123,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceP
           return tmp(TableRadioRow, obj, deviceId.deviceId);
         })
     };
-    TableRadioGroup = tmp(6933).TableRadioGroup;
+    TableRadioGroup = tmp(6936).TableRadioGroup;
     tmp11 = closure_11(VoicePanelFormSection, obj2);
   }
   cResult[3] = activeDevice;
@@ -154,7 +154,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceP
   let tmp5 = null;
   if (availableDevices.length > 0) {
     let obj2 = { style: tmp.sectionContainer, title: intl.string(tmp2(1128).t.CxyS15), hasIcons: true, children: closure_11(TableRadioGroup, obj3) };
-    const VoicePanelFormSection = tmp2(9085).VoicePanelFormSection;
+    const VoicePanelFormSection = tmp2(9097).VoicePanelFormSection;
     intl = tmp2(1128).intl;
     obj3 = {
       value: activeDevice.deviceId,
@@ -189,7 +189,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceP
           return tmp(TableRadioRow, obj, deviceId.deviceId);
         })
     };
-    TableRadioGroup = tmp2(6933).TableRadioGroup;
+    TableRadioGroup = tmp2(6936).TableRadioGroup;
     tmp5 = closure_11(VoicePanelFormSection, obj2);
   }
   return tmp5;
@@ -212,8 +212,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceP
   const cResult = obj.c(19);
   channel = channel.channel;
   const tmp4 = closure_13();
-  arr = arr(11517)();
-  let tmp5 = arr(11438)();
+  arr = arr(11528)();
+  let tmp5 = arr(11449)();
   dependencyMap = tmp5;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GameConsoleStore];
@@ -370,7 +370,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceP
           }
           intl = tmp(1128).intl;
           obj3 = { defaultValue: str, onChange: tmp17, hasIcons: true, children: mapped.filter((item) => Boolean(item)) };
-          TableRadioGroup = tmp(6933).TableRadioGroup;
+          TableRadioGroup = tmp(6936).TableRadioGroup;
           mapped = arr.map((type) => {
             let TableRowIcon;
             let intl;
@@ -480,8 +480,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceP
   let awaitingRemoteSessionInfo;
   let tmp2 = dependencyMap;
   let tmp = closure_13();
-  arr = arr(11517)();
-  dependencyMap = arr(11438)();
+  arr = arr(11528)();
+  dependencyMap = arr(11449)();
   let obj = channel(573);
   const items = [awaitingRemoteSessionInfo];
   const stateFromStores = obj.useStateFromStores(items, () => awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
@@ -547,10 +547,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceP
   let tmp10 = null;
   if (arr.length > 0) {
     let obj4 = { title: intl.string(tmp3(1128).t.q22XnQ), style: tmp.sectionContainer, hasIcons: true, children: closure_11(TableRadioGroup, obj5) };
-    const VoicePanelFormSection = tmp3(9085).VoicePanelFormSection;
+    const VoicePanelFormSection = tmp3(9097).VoicePanelFormSection;
     intl = tmp3(1128).intl;
     obj5 = { defaultValue: memo, onChange: callback, hasIcons: true, children: mapped.filter((item) => Boolean(item)) };
-    TableRadioGroup = tmp3(6933).TableRadioGroup;
+    TableRadioGroup = tmp3(6936).TableRadioGroup;
     mapped = arr.map((type) => {
       let TableRowIcon;
       let intl;
@@ -623,7 +623,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { title: intl.string(channelId(1128).t.iwxPM3) };
-      const BottomSheetTitleHeader = tmp(7194).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(7197).BottomSheetTitleHeader;
       intl = tmp(1128).intl;
       const tmp10 = closure_11(BottomSheetTitleHeader, obj2);
       cResult[3] = tmp10;
@@ -689,7 +689,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj2 = { header: closure_11(BottomSheetTitleHeader, obj3), children: closure_11(tmp5, obj5) };
     BottomSheet = tmp(5226).BottomSheet;
     obj3 = { title: intl.string(intl3.t.iwxPM3) };
-    BottomSheetTitleHeader = tmp(7194).BottomSheetTitleHeader;
+    BottomSheetTitleHeader = tmp(7197).BottomSheetTitleHeader;
     intl = tmp(1128).intl;
     tmp5 = ScrollView;
     const tmp6 = closure_12;

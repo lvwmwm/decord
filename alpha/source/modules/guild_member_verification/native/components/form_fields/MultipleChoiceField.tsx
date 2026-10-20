@@ -1,16 +1,16 @@
-// Module ID: 7131
-// Function ID: 7132
+// Module ID: 7134
+// Function ID: 7135
 // Name: MultipleChoiceField
-// Dependencies: [19, 17, 1098, 21, 4945, 6599, 587, 558, 576, 5195, 6932, 6933, 2]
+// Dependencies: [19, 17, 1098, 21, 4945, 6602, 587, 558, 576, 5195, 6935, 6936, 2]
 
-// Module 7131 (MultipleChoiceField)
+// Module 7134 (MultipleChoiceField)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
-import TextStyles from "TextStyles" /* 6599 */;
+import TextStyles from "TextStyles" /* 6602 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -129,8 +129,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MultipleChoi
     cResult[12] = response;
     cResult[13] = tmp11;
     cResult[14] = tmp12;
-    cResult[15] = closure_4(onChange(6933).TableRadioGroup, obj2);
-    const tmp17 = closure_4(onChange(6933).TableRadioGroup, obj2);
+    cResult[15] = closure_4(onChange(6936).TableRadioGroup, obj2);
+    const tmp17 = closure_4(onChange(6936).TableRadioGroup, obj2);
   }
   const obj3 = { style: tmp4.formHeader, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: label };
   cResult[3] = label;

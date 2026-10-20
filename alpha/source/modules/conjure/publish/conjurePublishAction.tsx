@@ -1,14 +1,14 @@
-// Module ID: 11716
-// Function ID: 11717
+// Module ID: 11730
+// Function ID: 11731
 // Name: conjurePublishAction
-// Dependencies: [1128, 3820, 11717, 11719, 2]
+// Dependencies: [1128, 3820, 11731, 11733, 2]
 // Exports: conjurePublishTooltip, resolveConjurePublishAction
 
-// Module 11716 (conjurePublishAction)
+// Module 11730 (conjurePublishAction)
 import intl5 from "intl" /* 1128 */;
 import _modDef3820 from "module_3820" /* 3820 */;
-import conjurePreviewModes from "conjurePreviewModes" /* 11717 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11719 */;
+import conjurePreviewModes from "conjurePreviewModes" /* 11731 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11733 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishAction.tsx");

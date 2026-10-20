@@ -1,23 +1,23 @@
-// Module ID: 8228
-// Function ID: 8229
+// Module ID: 8232
+// Function ID: 8233
 // Name: PollsUtils
-// Dependencies: [4800, 8229, 5965, 4880, 4890, 8254, 1087, 1281, 558, 576, 7269, 504, 1104, 2035, 6320, 1128, 5186, 12, 5944, 2]
+// Dependencies: [4800, 8233, 5968, 4880, 4890, 8258, 1087, 1281, 558, 576, 7272, 504, 1104, 2035, 6323, 1128, 5186, 12, 5947, 2]
 // Exports: createPollExpiryTimestamp, createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, generateLocalCreationAnswerId, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isAnswerFilled, isIncompleteAnswer, isPollCreationEmpty
 
-// Module 8228 (PollsUtils)
+// Module 8232 (PollsUtils)
 import DurationsDefault from "Durations" /* 1104 */;
 import intl7 from "intl" /* 1128 */;
 import v1 from "v1" /* 1281 */;
 import utils_StringUtils from "utils/StringUtils" /* 2035 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5944 */;
-import useMessageAuthor from "useMessageAuthor" /* 6320 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7269 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5947 */;
+import useMessageAuthor from "useMessageAuthor" /* 6323 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7272 */;
 import ChannelStore from "ChannelStore" /* 4800 */;
-import MessageReactionsStore from "MessageReactionsStore" /* 8229 */;
-import MessageStore from "MessageStore" /* 5965 */;
+import MessageReactionsStore from "MessageReactionsStore" /* 8233 */;
+import MessageStore from "MessageStore" /* 5968 */;
 import PermissionStore from "PermissionStore" /* 4880 */;
 import RelationshipStore from "RelationshipStore" /* 4890 */;
-import PollsConstants from "PollsConstants" /* 8254 */;
+import PollsConstants from "PollsConstants" /* 8258 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let c10;
 let c9;
 let metroImportAll;
 let unpackModuleId;
-const f99287 = (rawName) => "poll_question_text" === rawName.rawName;
+const f99388 = (rawName) => "poll_question_text" === rawName.rawName;
 function getSampleOfVoterUsernamesForAnswer(message, id) {
   let blockedOrIgnored;
   let channel;
@@ -203,7 +203,7 @@ const result = size.fileFinishedImporting("modules/polls/PollsUtils.tsx");
 
 export const generateEmptyPollAnswer = function generateEmptyPollAnswer() {
   let obj2;
-  const obj = { text: "Array", image: "test", localCreationAnswerId: obj2.v4() };
+  const obj = { text: "Array", image: "toCharArray$esjava$1", localCreationAnswerId: obj2.v4() };
   obj2 = v1;
   return obj;
 };
@@ -324,7 +324,7 @@ export const getPollResultsReplyPreview = function getPollResultsReplyPreview(me
   if (first != null) {
     const fields = first.fields;
     if (fields != null) {
-      const found = fields.find(f99287);
+      const found = fields.find(f99388);
       if (found != null) {
         str = found.rawValue;
       }
@@ -351,7 +351,7 @@ export const getPollResultsReplyPreviewMobile = function getPollResultsReplyPrev
     if (first != null) {
       const fields = first.fields;
       if (fields != null) {
-        const found = fields.find(f99287);
+        const found = fields.find(f99388);
         if (found != null) {
           str = found.rawValue;
         }

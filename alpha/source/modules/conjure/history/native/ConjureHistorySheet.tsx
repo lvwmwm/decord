@@ -1,10 +1,10 @@
-// Module ID: 12124
-// Function ID: 12125
+// Module ID: 12139
+// Function ID: 12140
 // Name: ConjureHistorySheet
-// Dependencies: [5, 32, 19, 17, 21, 4945, 587, 558, 576, 5195, 5205, 1128, 3820, 5932, 6828, 6935, 11719, 6851, 12125, 12130, 7903, 9060, 9676, 6853, 8821, 11699, 5171, 8853, 2002, 2050, 1633, 12131, 12123, 11670, 5869, 12122, 5625, 5624, 12120, 12133, 12133, 7244, 7194, 5230, 12132, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4945, 587, 558, 576, 5195, 5205, 1128, 3820, 5935, 6831, 6938, 11733, 6854, 12140, 12145, 7907, 9072, 9689, 6856, 8833, 11713, 5171, 8865, 2002, 2050, 1633, 12146, 12138, 11683, 5872, 12137, 5625, 5624, 12135, 12148, 12148, 7247, 7197, 5230, 12147, 2]
 // Exports: default
 
-// Module 12124 (ConjureHistorySheet)
+// Module 12139 (ConjureHistorySheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,13 +13,13 @@ import asyncRequire from "asyncRequire" /* 2002 */;
 import _modDef3820 from "module_3820" /* 3820 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import Text_Text from "Text/Text" /* 5195 */;
-import Stack_Stack from "Stack/Stack" /* 5932 */;
-import IconButton2 from "IconButton" /* 7903 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9060 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11719 */;
-import conjureHistoryRequests from "conjureHistoryRequests" /* 12120 */;
-import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 12130 */;
-import ConjureSaveBackupSheet from "ConjureSaveBackupSheet" /* 12133 */;
+import Stack_Stack from "Stack/Stack" /* 5935 */;
+import IconButton2 from "IconButton" /* 7907 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9072 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11733 */;
+import conjureHistoryRequests from "conjureHistoryRequests" /* 12135 */;
+import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 12145 */;
+import ConjureSaveBackupSheet from "ConjureSaveBackupSheet" /* 12148 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -36,11 +36,11 @@ let metroImportDefault;
 let tmp;
 let tmp4;
 const components_Button_Button = tmp4(5205);
-const ActivityIndicator_ActivityIndicator = tmp(6828);
-const TableRow2 = tmp4(6851);
-const Card_Card = tmp4(6853);
-const TableRowGroup3 = tmp4(6935);
-const ContextMenu = tmp4(9676);
+const ActivityIndicator_ActivityIndicator = tmp(6831);
+const TableRow2 = tmp4(6854);
+const Card_Card = tmp4(6856);
+const TableRowGroup3 = tmp4(6938);
+const ContextMenu = tmp4(9689);
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
@@ -241,7 +241,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Histor
         }
         if (cResult[7] !== tmp4) {
           const obj2 = { spacing: 16, children: tmp4 };
-          const tmp9 = closure_7(tmp(5932).Stack, obj2);
+          const tmp9 = closure_7(tmp(5935).Stack, obj2);
           cResult[7] = tmp4;
           cResult[8] = tmp9;
           tmp7 = tmp9;
@@ -267,7 +267,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Histor
   } else {
     tmp5 = cResult[6];
   }
-  const tmpResult = tmp(11719);
+  const tmpResult = tmp(11733);
   const groupHistoryByDayResult = tmpResult.groupHistoryByDay(items, getMs, nowMs);
   const mapped = groupHistoryByDayResult.map(tmp5);
   cResult[0] = getMs;
@@ -294,8 +294,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Histor
       return metroImportDefault(TableRowGroup, obj, label.key);
     })
   };
-  const Stack = renderItem(5932).Stack;
-  const obj2 = renderItem(11719);
+  const Stack = renderItem(5935).Stack;
+  const obj2 = renderItem(11733);
   groupHistoryByDayResult = obj2.groupHistoryByDay(items, getMs, nowMs);
   return closure_7(Stack, obj);
 });
@@ -494,7 +494,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Versio
               obj17.accessibilityLabel = intl5.formatToPlainString(restoreDisabled(tmp2[12])["2KgEnm"], obj18);
               tmp21 = restoreDisabled;
               obj17.disabled = restoreDisabled;
-              obj17.onPress = function onPress() { /* body not rendered: F146693 */ };
+              obj17.onPress = function onPress() { /* body not rendered: F146875 */ };
               tmp13Result2 = tmp13(Button, obj17);
             }
           }
@@ -1647,7 +1647,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Histor
     items[1] = obj2;
     return items;
   }, []);
-  let obj = onChange(8821);
+  let obj = onChange(8833);
   let obj2 = {
     items: memo,
     pageWidth: tmp2,
@@ -1658,7 +1658,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Histor
       }
     }
   };
-  const obj3 = { onLayout: tmp3, accessibilityLabel: intl.string(_modDef3820["/2GnYy"]), children: closure_7(onChange(11699).Tabs, { state: segmentedControlState }) };
+  const obj3 = { onLayout: tmp3, accessibilityLabel: intl.string(_modDef3820["/2GnYy"]), children: closure_7(onChange(11713).Tabs, { state: segmentedControlState }) };
   segmentedControlState = obj.useSegmentedControlState(obj2);
   intl = onChange(1128).intl;
   return closure_7(View, obj3);
@@ -1701,13 +1701,13 @@ export default function ConjureHistorySheet(projectId) {
   const tmp3 = onSaveBackup(onRestoreVersion(1633)().bottom + onRestoreVersion(587).space.PX_16);
   let tmp4 = versionTitles(conjureDatabaseBusy.useState("versions"), 2);
   [tmp5, tmp6] = tmp4;
-  const tmp7 = onRestoreVersion(12131)(projectId, installScope);
+  const tmp7 = onRestoreVersion(12146)(projectId, installScope);
   ({ sharedDatabase: c2, versions, databases, refreshAllBackups } = tmp7);
   versionTitles = tmp7.versionTitles;
   ({ previewBackups, previewBackupsLoading } = tmp7);
-  let obj = projectId(12123);
+  let obj = projectId(12138);
   conjureDatabaseBusy = obj.useConjureDatabaseBusy(projectId);
-  const tmp10 = onRestoreVersion(11670)(projectId);
+  const tmp10 = onRestoreVersion(11683)(projectId);
   [tmp12, c6] = versionTitles(conjureDatabaseBusy.useState(false), 2);
   const refresh = versions.refresh;
   const tmp11 = versionTitles(conjureDatabaseBusy.useState(false), 2);
@@ -1942,7 +1942,7 @@ export default function ConjureHistorySheet(projectId) {
               });
             }
           };
-          const tmp5 = asyncRequire(8853, dependencyMap.paths);
+          const tmp5 = asyncRequire(8865, dependencyMap.paths);
           intl = intl8.intl;
           [obj.minimumDate, obj.maximumDate] = items;
           openLazy(tmp5, "ConjureHistoryRewindTime", obj, "stack");
@@ -1958,14 +1958,14 @@ export default function ConjureHistorySheet(projectId) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { projectId, environment, onSaved: refreshAllBackups };
-    const tmp2 = asyncRequire(12133, dependencyMap.paths);
+    const tmp2 = asyncRequire(12148, dependencyMap.paths);
     return openLazy(tmp2, ConjureSaveBackupSheet.CONJURE_SAVE_BACKUP_SHEET_KEY, obj, "stack");
   }, items4);
   let obj2 = { scrollable: true, startExpanded: true, header: callback1(onRestoreBackup, obj3), children: tmp15(BottomSheetScrollView, obj5) };
   obj3 = { children: items5 };
-  const ActionSheet = projectId(7244).ActionSheet;
+  const ActionSheet = projectId(7247).ActionSheet;
   let obj4 = { title: intl.string(onRestoreVersion(3820)["3hIVou"]) };
-  const BottomSheetTitleHeader = projectId(7194).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = projectId(7197).BottomSheetTitleHeader;
   intl = projectId(1128).intl;
   items5 = [refresh(BottomSheetTitleHeader, obj4), refresh(closure_18, { tab: tmp5, onChange: tmp6 })];
   obj5 = { contentContainerStyle: tmp3.content, children: tmp16Result };
@@ -1988,7 +1988,7 @@ export default function ConjureHistorySheet(projectId) {
     const Text = tmp8(5195).Text;
     let intl2 = tmp8(1128).intl;
     formatToPlainString = intl2.formatToPlainString;
-    obj9 = { days: projectId(12132).RESTORE_WINDOW_DAYS };
+    obj9 = { days: projectId(12147).RESTORE_WINDOW_DAYS };
     ptsHZu = tmp(3820).ptsHZu;
     items6 = [
       tmp15(Text, obj8),

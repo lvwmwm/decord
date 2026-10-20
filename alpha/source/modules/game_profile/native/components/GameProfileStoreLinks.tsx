@@ -1,16 +1,16 @@
-// Module ID: 9235
-// Function ID: 9236
+// Module ID: 9247
+// Function ID: 9248
 // Name: GameProfileStoreLinks
-// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 9175, 5622, 5205, 1128, 5171, 9217, 9166, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 9187, 5622, 5205, 1128, 5171, 9229, 9178, 2]
 
-// Module 9235 (GameProfileStoreLinks)
+// Module 9247 (GameProfileStoreLinks)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5171 */;
 import LinkingDefault from "Linking" /* 5622 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9175 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 9217 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9187 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 9229 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;

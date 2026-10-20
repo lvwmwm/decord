@@ -1,10 +1,10 @@
-// Module ID: 12024
-// Function ID: 12025
+// Module ID: 12039
+// Function ID: 12040
 // Name: components/BottomSheetTextInput
-// Dependencies: [2, 8915]
+// Dependencies: [2, 8927]
 
-// Module 12024 (components/BottomSheetTextInput)
-import Sheet_BottomSheetTextInput from "Sheet/BottomSheetTextInput" /* 8915 */;
+// Module 12039 (components/BottomSheetTextInput)
+import Sheet_BottomSheetTextInput from "Sheet/BottomSheetTextInput" /* 8927 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/action_sheet/native/components/BottomSheetTextInput.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 11695
-// Function ID: 11696
+// Module ID: 11708
+// Function ID: 11709
 // Name: ConjurePublishScheduleSection
-// Dependencies: [19, 21, 558, 576, 11696, 5869, 1128, 3820, 5195, 5932, 587, 11697, 5205, 2]
+// Dependencies: [19, 21, 558, 576, 11709, 5872, 1128, 3820, 5195, 5935, 587, 11710, 5205, 2]
 
-// Module 11695 (ConjurePublishScheduleSection)
+// Module 11708 (ConjurePublishScheduleSection)
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import _modDef3820 from "module_3820" /* 3820 */;
-import AlertModal from "AlertModal" /* 5869 */;
-import useConjurePublishScheduleDefault from "useConjurePublishSchedule" /* 11696 */;
+import AlertModal from "AlertModal" /* 5872 */;
+import useConjurePublishScheduleDefault from "useConjurePublishSchedule" /* 11709 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -123,7 +123,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePub
                   }
                 }
                 const obj6 = { spacing: nativeDefault.space.PX_16, children: items };
-                const Stack2 = tmp(5932).Stack;
+                const Stack2 = tmp(5935).Stack;
                 items = [tmp9, tmp12, tmp15, tmp25, tmp28, tmp31];
                 const tmp37 = closure_4(Stack2, obj6);
                 cResult[19] = tmp12;
@@ -175,8 +175,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePub
         let tmp18Result = null;
         if (null != tmp5.saved) {
           const obj10 = { spacing: nativeDefault.space.PX_8, children: items2 };
-          const Stack = tmp(5932).Stack;
-          const tmpResult = tmp(11697);
+          const Stack = tmp(5935).Stack;
+          const tmpResult = tmp(11710);
           const result = tmpResult.publishScheduleDetails(tmp5.saved);
           items2 = [
             result.map((children, index) => {
@@ -240,7 +240,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePub
   let tmp5Result4 = null;
   if (canEdit) {
     let obj = { spacing: nativeDefault.space.PX_16, children: items };
-    const Stack = projectId(5932).Stack;
+    const Stack = projectId(5935).Stack;
     const obj2 = { variant: "heading-md/semibold", children: intl.string(_modDef3820.ptzKKH) };
     const Heading = projectId(5195).Heading;
     intl = projectId(1128).intl;
@@ -272,8 +272,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePub
       let tmp5Result = null;
       if (null != tmp3.saved) {
         const obj6 = { spacing: nativeDefault.space.PX_8, children: items2 };
-        const Stack2 = tmp6(5932).Stack;
-        const tmp6Result = projectId(11697);
+        const Stack2 = tmp6(5935).Stack;
+        const tmp6Result = projectId(11710);
         const result = tmp6Result.publishScheduleDetails(tmp3.saved);
         items2 = [
           result.map((children, index) => {

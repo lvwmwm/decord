@@ -1,13 +1,13 @@
-// Module ID: 9867
-// Function ID: 9868
+// Module ID: 9879
+// Function ID: 9880
 // Name: EmojiOptionsActionSheet
-// Dependencies: [19, 21, 558, 576, 7231, 5624, 5171, 5640, 1128, 7244, 6935, 6851, 2]
+// Dependencies: [19, 21, 558, 576, 7234, 5624, 5171, 5640, 1128, 7247, 6938, 6854, 2]
 
-// Module 9867 (EmojiOptionsActionSheet)
+// Module 9879 (EmojiOptionsActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
 import ToastUtils from "ToastUtils" /* 5624 */;
-import ClipboardUtils from "ClipboardUtils" /* 7231 */;
+import ClipboardUtils from "ClipboardUtils" /* 7234 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -42,9 +42,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOptio
     cResult[3] = stringResult;
   }
   if (cResult[4] !== tmp4) {
-    const ActionSheet = tmp(7244).ActionSheet;
+    const ActionSheet = tmp(7247).ActionSheet;
     let obj3 = { hasIcons: true, children: null };
-    const TableRowGroup = tmp(6935).TableRowGroup;
+    const TableRowGroup = tmp(6938).TableRowGroup;
     const tmp12 = <ActionSheet>{null}</ActionSheet>;
     cResult[4] = tmp4;
     cResult[5] = tmp12;
@@ -65,11 +65,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiOptio
     const obj3 = ActionSheetActionCreatorsDefault;
     obj3.hideActionSheet();
   }, items);
-  const ActionSheet = emojiSrc(7244).ActionSheet;
+  const ActionSheet = emojiSrc(7247).ActionSheet;
   let obj2 = { hasIcons: true, children: null };
-  const TableRowGroup = emojiSrc(6935).TableRowGroup;
+  const TableRowGroup = emojiSrc(6938).TableRowGroup;
   let obj3 = { icon: null, label: intl.string(emojiSrc(1128).t.cIoudn), onPress: callback };
-  const TableRow = emojiSrc(6851).TableRow;
+  const TableRow = emojiSrc(6854).TableRow;
   intl = emojiSrc(1128).intl;
   return <ActionSheet>{null}</ActionSheet>;
 });

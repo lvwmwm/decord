@@ -1,10 +1,10 @@
-// Module ID: 7297
-// Function ID: 7298
+// Module ID: 7300
+// Function ID: 7301
 // Name: useIsCreatorMonetizationEnabledGuild
 // Dependencies: [4822, 1087, 558, 576, 504, 2]
 // Exports: isCreatorMonetizationEnabledGuild
 
-// Module 7297 (useIsCreatorMonetizationEnabledGuild)
+// Module 7300 (useIsCreatorMonetizationEnabledGuild)
 import Constants from "Constants" /* 1087 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,13 +1,13 @@
-// Module ID: 16916
-// Function ID: 16917
+// Module ID: 16935
+// Function ID: 16936
 // Name: UserSettingsDesignSystemAILoader
-// Dependencies: [19, 17, 21, 4945, 558, 576, 5195, 6853, 5932, 11750, 2]
+// Dependencies: [19, 17, 21, 4945, 558, 576, 5195, 6856, 5935, 11764, 2]
 
-// Module 16916 (UserSettingsDesignSystemAILoader)
+// Module 16935 (UserSettingsDesignSystemAILoader)
 import react2 from "react" /* 576 */;
-import Stack_Stack from "Stack/Stack" /* 5932 */;
-import Card_Card from "Card/Card" /* 6853 */;
-import AILoader from "AILoader" /* 11750 */;
+import Stack_Stack from "Stack/Stack" /* 5935 */;
+import Card_Card from "Card/Card" /* 6856 */;
+import AILoader from "AILoader" /* 11764 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -85,9 +85,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { children: hasOwnProperty(Stack, obj3) };
-    const Card = tmp(6853).Card;
+    const Card = tmp(6856).Card;
     obj3 = { children: items };
-    Stack = tmp(5932).Stack;
+    Stack = tmp(5935).Stack;
     items = [
       React3(Text_Text.Text, { variant: "text-lg/bold", children: "Sizes" }),
       React3(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "`size` is the glyph size in pixels; the gap between slots scales with it. Default 16." }),
@@ -107,11 +107,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { spacing: 24, children: items1 };
     items1 = [first, ];
-    const Stack2 = tmp(5932).Stack;
+    const Stack2 = tmp(5935).Stack;
     const obj5 = { children: hasOwnProperty(Stack3, obj6) };
-    const Card2 = tmp(6853).Card;
+    const Card2 = tmp(6856).Card;
     obj6 = { children: items2 };
-    Stack3 = tmp(5932).Stack;
+    Stack3 = tmp(5935).Stack;
     items2 = [
       React3(Text_Text.Text, { variant: "text-lg/bold", children: "Colors" }),
       React3(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Any semantic text token. Defaults to `text-default`." }),

@@ -1,18 +1,18 @@
-// Module ID: 10420
-// Function ID: 10421
+// Module ID: 10431
+// Function ID: 10432
 // Name: GiftingBadgesUtils
-// Dependencies: [19, 8606, 1392, 1128, 2622, 558, 576, 10414, 10421, 10422, 504, 4970, 4784, 8598, 8611, 2]
+// Dependencies: [19, 8618, 1392, 1128, 2622, 558, 576, 10425, 10432, 10433, 504, 4970, 4784, 8610, 8623, 2]
 // Exports: getGiftingBadgeAccessibilityLabel, getGiftingBadgeProgressPercent, getGiftingBadgeTierIconUrl, getIsGiftingBadgesDesktopEnabled
 
-// Module 10420 (GiftingBadgesUtils)
+// Module 10431 (GiftingBadgesUtils)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef2622 from "module_2622" /* 2622 */;
-import BadgeId from "BadgeId" /* 8598 */;
-import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8606 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8611 */;
-import GiftingBadgeExperiment2 from "GiftingBadgeExperiment" /* 10414 */;
-import GiftingBadgeDesktopExperiment2 from "GiftingBadgeDesktopExperiment" /* 10421 */;
+import BadgeId from "BadgeId" /* 8610 */;
+import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8618 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8623 */;
+import GiftingBadgeExperiment2 from "GiftingBadgeExperiment" /* 10425 */;
+import GiftingBadgeDesktopExperiment2 from "GiftingBadgeDesktopExperiment" /* 10432 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -37,7 +37,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGifting
   } else {
     tmp4 = cResult[1];
   }
-  const GiftingBadgeExperiment = tmp(10414).GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = tmp(10425).GiftingBadgeExperiment;
   const enabled = GiftingBadgeExperiment.useConfig(tmp4).enabled;
   let str = "-DISABLED";
   if (enabled) {
@@ -52,7 +52,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGifting
   } else {
     tmp6 = cResult[3];
   }
-  const GiftingBadgeDesktopExperiment = tmp(10421).GiftingBadgeDesktopExperiment;
+  const GiftingBadgeDesktopExperiment = tmp(10432).GiftingBadgeDesktopExperiment;
   const tmp7 = GiftingBadgeDesktopExperiment.useConfig(tmp6).enabled && enabled;
   return tmp7;
 }) : (function useIsGiftingBadgesDesktopEnabled(location) {
@@ -100,7 +100,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGifting
   } else {
     tmp5 = cResult[1];
   }
-  const GiftingBadgeExperiment = tmp(10414).GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = tmp(10425).GiftingBadgeExperiment;
   const enabled2 = GiftingBadgeExperiment.useConfig(tmp5).enabled;
   let str = "-DISABLED";
   let str2 = "-DISABLED";
@@ -116,7 +116,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGifting
   } else {
     tmp8 = cResult[3];
   }
-  const GiftingBadgeDesktopExperiment = tmp(10421).GiftingBadgeDesktopExperiment;
+  const GiftingBadgeDesktopExperiment = tmp(10432).GiftingBadgeDesktopExperiment;
   let enabled3 = GiftingBadgeDesktopExperiment.useConfig(tmp8).enabled;
   let tmp9 = enabled2;
   if ("web" === platform) {
@@ -137,7 +137,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGifting
   } else {
     tmp11 = cResult[5];
   }
-  const GiftingBadgeCoachmarkAudienceExperiment = tmp(10422).GiftingBadgeCoachmarkAudienceExperiment;
+  const GiftingBadgeCoachmarkAudienceExperiment = tmp(10433).GiftingBadgeCoachmarkAudienceExperiment;
   const enabled4 = GiftingBadgeCoachmarkAudienceExperiment.useConfig(tmp11).enabled;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
@@ -286,7 +286,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGifting
     }
     tmp4 = enabled3;
   }
-  const GiftingBadgeCoachmarkAudienceExperiment = tmp(10422).GiftingBadgeCoachmarkAudienceExperiment;
+  const GiftingBadgeCoachmarkAudienceExperiment = tmp(10433).GiftingBadgeCoachmarkAudienceExperiment;
   const useConfig2 = GiftingBadgeCoachmarkAudienceExperiment.useConfig;
   if (tmp4) {
     str = "";

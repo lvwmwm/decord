@@ -1,9 +1,9 @@
-// Module ID: 7815
-// Function ID: 7816
+// Module ID: 7819
+// Function ID: 7820
 // Name: useStateChannelIsLive
 // Dependencies: [4805, 558, 576, 504, 2]
 
-// Module 7815 (useStateChannelIsLive)
+// Module 7819 (useStateChannelIsLive)
 import StageInstanceStore from "StageInstanceStore" /* 4805 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

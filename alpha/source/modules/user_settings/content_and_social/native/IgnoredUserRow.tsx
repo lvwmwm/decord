@@ -1,12 +1,12 @@
-// Module ID: 15882
-// Function ID: 15883
+// Module ID: 15901
+// Function ID: 15902
 // Name: IgnoredUserRow
-// Dependencies: [19, 1392, 21, 7360, 558, 576, 7199, 1128, 8593, 1202, 15879, 5205, 6851, 504, 2]
+// Dependencies: [19, 1392, 21, 7363, 558, 576, 7202, 1128, 8605, 1202, 15898, 5205, 6854, 504, 2]
 
-// Module 15882 (IgnoredUserRow)
+// Module 15901 (IgnoredUserRow)
 import Fragment from "Fragment" /* 21 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7360 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8593 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7363 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8605 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -22,7 +22,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Ignored
   let obj = userRecord(576);
   const cResult = obj.c(31);
   userRecord = userRecord.userRecord;
-  analyticsLocations = analyticsLocations(7199)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7202)().analyticsLocations;
   if (cResult[0] === userRecord.globalName) {
     let tmp4;
     if (cResult[1] === userRecord.username) {
@@ -134,8 +134,8 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Ignored
               cResult[27] = tmp22;
               cResult[28] = tmp10;
               cResult[29] = tmp16;
-              cResult[30] = jsx(userRecord(6851).TableRow, { accessible: false, icon: tmp10, label: tmp16, onPress: tmp6, trailing: tmp22 });
-              const tmp27 = jsx(userRecord(6851).TableRow, { accessible: false, icon: tmp10, label: tmp16, onPress: tmp6, trailing: tmp22 });
+              cResult[30] = jsx(userRecord(6854).TableRow, { accessible: false, icon: tmp10, label: tmp16, onPress: tmp6, trailing: tmp22 });
+              const tmp27 = jsx(userRecord(6854).TableRow, { accessible: false, icon: tmp10, label: tmp16, onPress: tmp6, trailing: tmp22 });
             }
             cResult[23] = tmp21;
             cResult[24] = tmp4;
@@ -143,7 +143,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Ignored
             const tmp24 = jsx(userRecord(5205).Button, { size: "sm", variant: "secondary", text: tmp19, accessibilityLabel: tmp4, onPress: tmp21 });
           }
         }
-        const tmp18 = jsx(userRecord(15879).RestrictedUserRowLabel, { userRecord, accessibilityActions: tmp15, onAccessibilityAction: tmp7 });
+        const tmp18 = jsx(userRecord(15898).RestrictedUserRowLabel, { userRecord, accessibilityActions: tmp15, onAccessibilityAction: tmp7 });
         cResult[16] = tmp7;
         cResult[17] = tmp15;
         cResult[18] = userRecord;
@@ -196,7 +196,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Ignored
   let intl2;
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7199)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7202)().analyticsLocations;
   const intl = userRecord(1128).intl;
   const formatToPlainString = intl.formatToPlainString;
   let username = userRecord.globalName;
@@ -209,7 +209,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Ignored
     showUserProfileActionSheetDefault(obj);
   }
   const formatToPlainStringResult = formatToPlainString(e3qAIz, { name: username });
-  const TableRow = tmp2(6851).TableRow;
+  const TableRow = tmp2(6854).TableRow;
   let obj2 = { source: userRecord.getAvatarSource(undefined), size: tmp2(1202).AvatarSizes.REFRESH_MEDIUM_32 };
   const Avatar = tmp2(1202).Avatar;
   const items = [{ name: "activate" }, { name: "unignore", label: formatToPlainStringResult }];

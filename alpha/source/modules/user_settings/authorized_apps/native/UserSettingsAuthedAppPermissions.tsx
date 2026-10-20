@@ -1,12 +1,12 @@
-// Module ID: 16021
-// Function ID: 16022
+// Module ID: 16040
+// Function ID: 16041
 // Name: UserSettingsAuthedAppPermissions
-// Dependencies: [19, 17, 21, 4945, 558, 576, 9545, 8747, 1128, 5195, 7213, 587, 9547, 16015, 2]
+// Dependencies: [19, 17, 21, 4945, 558, 576, 9558, 8759, 1128, 5195, 7216, 587, 9560, 16034, 2]
 
-// Module 16021 (UserSettingsAuthedAppPermissions)
+// Module 16040 (UserSettingsAuthedAppPermissions)
 import Text_Text from "Text/Text" /* 5195 */;
-import disclosures2 from "disclosures" /* 9547 */;
-import UserSettingsAuthedApps from "UserSettingsAuthedApps" /* 16015 */;
+import disclosures2 from "disclosures" /* 9560 */;
+import UserSettingsAuthedApps from "UserSettingsAuthedApps" /* 16034 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

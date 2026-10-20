@@ -1,17 +1,17 @@
-// Module ID: 9282
-// Function ID: 9283
+// Module ID: 9294
+// Function ID: 9295
 // Name: WishlistNUXAddedItemActionSheet
-// Dependencies: [32, 19, 17, 1392, 8597, 21, 4945, 587, 558, 576, 504, 1995, 5171, 8593, 7224, 9283, 9284, 5195, 1128, 5205, 6644, 5226, 2]
+// Dependencies: [32, 19, 17, 1392, 8609, 21, 4945, 587, 558, 576, 504, 1995, 5171, 8605, 7227, 9295, 9296, 5195, 1128, 5205, 6647, 5226, 2]
 
-// Module 9282 (WishlistNUXAddedItemActionSheet)
+// Module 9294 (WishlistNUXAddedItemActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7224 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8593 */;
-import Constants from "Constants" /* 8597 */;
-import SKUPreview from "SKUPreview" /* 9283 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7227 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8605 */;
+import Constants from "Constants" /* 8609 */;
+import SKUPreview from "SKUPreview" /* 9295 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -194,8 +194,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
     }
     const obj5 = { renderPreview: tmp18 };
     cResult[13] = tmp18;
-    cResult[14] = closure_8(obj4(9284), obj5);
-    const tmp21 = closure_8(obj4(9284), obj5);
+    cResult[14] = closure_8(obj4(9296), obj5);
+    const tmp21 = closure_8(obj4(9296), obj5);
   } else {
     class L {
       constructor() {
@@ -375,7 +375,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
       }
       const obj10 = { direction: "horizontal", children: items2 };
       items2 = [tmp30, ];
-      const ButtonGroup = tmp(6644).ButtonGroup;
+      const ButtonGroup = tmp(6647).ButtonGroup;
       const obj12 = { text: tmp32, onPress: tmp17, variant: "secondary", size: "lg", grow: true };
       items2[1] = closure_8(tmp(5205).Button, obj12);
       cResult[24] = tmp17;

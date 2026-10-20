@@ -1,10 +1,10 @@
-// Module ID: 11707
-// Function ID: 11708
+// Module ID: 11721
+// Function ID: 11722
 // Name: ConjureChatScene
-// Dependencies: [5, 32, 19, 17, 2046, 10990, 11708, 11012, 6721, 11005, 6724, 21, 11710, 11712, 5625, 4945, 587, 1505, 1633, 11720, 1647, 5014, 504, 6757, 11724, 11078, 11730, 11613, 11717, 11011, 5584, 11714, 11033, 11731, 11713, 11052, 1128, 3820, 11732, 10871, 11733, 1499, 8821, 11734, 5171, 11667, 11648, 12114, 12118, 12120, 5624, 11719, 12122, 12124, 12134, 11019, 11737, 11055, 12135, 11014, 11662, 11716, 9719, 7434, 12138, 11650, 12140, 6872, 11706, 12141, 9676, 9558, 5195, 5205, 12143, 12144, 12145, 558, 576, 2]
+// Dependencies: [5, 32, 19, 17, 2046, 11001, 11722, 11024, 6724, 11017, 6727, 21, 11724, 11726, 5625, 4945, 587, 1505, 1633, 11734, 1647, 5014, 504, 6760, 11738, 11090, 11744, 11624, 11731, 11023, 5584, 11728, 11045, 11745, 11727, 11064, 1128, 3820, 11746, 10882, 11747, 1499, 8833, 11748, 5171, 11680, 11661, 12129, 12133, 12135, 5624, 11733, 12137, 12139, 12149, 11031, 11751, 11067, 12150, 11026, 11675, 11730, 9732, 7437, 12153, 11663, 12155, 6875, 11720, 12156, 9689, 9571, 5195, 5205, 12158, 12159, 12160, 558, 576, 2]
 // Exports: default
 
-// Module 11707 (ConjureChatScene)
+// Module 11721 (ConjureChatScene)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
@@ -12,36 +12,36 @@ import _modDef3820 from "module_3820" /* 3820 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5171 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5625 */;
-import FramesConstants from "FramesConstants" /* 6724 */;
-import NavigatorHeader from "NavigatorHeader" /* 6872 */;
-import SettingsIcon from "SettingsIcon" /* 7434 */;
-import UploadIcon from "UploadIcon" /* 9719 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10990 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11011 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 11019 */;
-import restartFrames from "restartFrames" /* 11055 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11613 */;
-import ConjureRemixSheet from "ConjureRemixSheet" /* 11648 */;
-import conjureProjectActions2 from "conjureProjectActions" /* 11650 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11667 */;
-import ConjurePublishBlockedSheetDefault from "ConjurePublishBlockedSheet" /* 11710 */;
-import ConjureFirstPublishSheet from "ConjureFirstPublishSheet" /* 11712 */;
-import useConjurePublishAction from "useConjurePublishAction" /* 11713 */;
-import conjurePublishAction from "conjurePublishAction" /* 11716 */;
-import conjurePreviewTargets from "conjurePreviewTargets" /* 11732 */;
-import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 12114 */;
-import ConjureHistorySheet from "ConjureHistorySheet" /* 12124 */;
-import BugIcon from "BugIcon" /* 12138 */;
-import ConjureProjectHeaderTitleDefault from "ConjureProjectHeaderTitle" /* 12140 */;
+import FramesConstants from "FramesConstants" /* 6727 */;
+import NavigatorHeader from "NavigatorHeader" /* 6875 */;
+import SettingsIcon from "SettingsIcon" /* 7437 */;
+import UploadIcon from "UploadIcon" /* 9732 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11001 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11023 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 11031 */;
+import restartFrames from "restartFrames" /* 11067 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11624 */;
+import ConjureRemixSheet from "ConjureRemixSheet" /* 11661 */;
+import conjureProjectActions2 from "conjureProjectActions" /* 11663 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11680 */;
+import ConjurePublishBlockedSheetDefault from "ConjurePublishBlockedSheet" /* 11724 */;
+import ConjureFirstPublishSheet from "ConjureFirstPublishSheet" /* 11726 */;
+import useConjurePublishAction from "useConjurePublishAction" /* 11727 */;
+import conjurePublishAction from "conjurePublishAction" /* 11730 */;
+import conjurePreviewTargets from "conjurePreviewTargets" /* 11746 */;
+import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 12129 */;
+import ConjureHistorySheet from "ConjureHistorySheet" /* 12139 */;
+import BugIcon from "BugIcon" /* 12153 */;
+import ConjureProjectHeaderTitleDefault from "ConjureProjectHeaderTitle" /* 12155 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ApplicationStore from "ApplicationStore" /* 2046 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11708 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 11012 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6721 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11005 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11722 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 11024 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6724 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11017 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -62,7 +62,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const ExperimentalDirectSelectIcon2 = tmp(12141);
+const ExperimentalDirectSelectIcon2 = tmp(12156);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ ActivityIndicator: metroRequire, Keyboard: metroImportDefault, View: metroImportAll } = react_native);

@@ -1,14 +1,14 @@
-// Module ID: 11246
-// Function ID: 11247
+// Module ID: 11257
+// Function ID: 11258
 // Name: ChannelCallLifecycleStore
-// Dependencies: [4851, 10676, 8740, 1357, 504, 584, 2]
+// Dependencies: [4851, 10687, 8752, 1357, 504, 584, 2]
 
-// Module 11246 (ChannelCallLifecycleStore)
+// Module 11257 (ChannelCallLifecycleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef1357 from "module_1357" /* 1357 */;
-import DeviceOrientation from "DeviceOrientation" /* 8740 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10676 */;
+import DeviceOrientation from "DeviceOrientation" /* 8752 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10687 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
 import size_mod from "module_2" /* 2 */;
 

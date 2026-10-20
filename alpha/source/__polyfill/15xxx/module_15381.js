@@ -1,9 +1,7 @@
 // Module ID: 15381
 // Function ID: 15382
-// Dependencies: [15359]
+// Dependencies: []
 
 // Module 15381
-import _mod15359 from "module_15359" /* 15359 */;
 
-
-export default _mod15359({}.isPrototypeOf);
+export default (arg0) => null == arg0;

@@ -1,12 +1,12 @@
-// Module ID: 16819
-// Function ID: 16820
+// Module ID: 16838
+// Function ID: 16839
 // Name: SelectMenuNativeComponent
-// Dependencies: [109, 19, 21, 558, 576, 16820, 2]
+// Dependencies: [109, 19, 21, 558, 576, 16839, 2]
 
-// Module 16819 (SelectMenuNativeComponent)
+// Module 16838 (SelectMenuNativeComponent)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SelectActionComponentViewNativeComponentDefault from "SelectActionComponentViewNativeComponent" /* 16820 */;
+import SelectActionComponentViewNativeComponentDefault from "SelectActionComponentViewNativeComponent" /* 16839 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

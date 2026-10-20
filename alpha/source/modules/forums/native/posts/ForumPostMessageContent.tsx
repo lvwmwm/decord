@@ -1,12 +1,12 @@
-// Module ID: 12918
-// Function ID: 12919
+// Module ID: 12936
+// Function ID: 12937
 // Name: ForumPostMessageContent
-// Dependencies: [19, 21, 4945, 558, 576, 12919, 5195, 2]
+// Dependencies: [19, 21, 4945, 558, 576, 12937, 5195, 2]
 
-// Module 12918 (ForumPostMessageContent)
+// Module 12936 (ForumPostMessageContent)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 12919 */;
+import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 12937 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

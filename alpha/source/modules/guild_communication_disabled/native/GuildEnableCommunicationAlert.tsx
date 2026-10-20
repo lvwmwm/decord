@@ -1,14 +1,14 @@
-// Module ID: 12597
-// Function ID: 12598
+// Module ID: 12614
+// Function ID: 12615
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 109, 19, 17, 1392, 4862, 1087, 21, 4945, 558, 576, 8278, 9953, 1267, 5224, 5944, 12596, 5625, 1128, 5195, 5933, 2]
+// Dependencies: [5, 32, 109, 19, 17, 1392, 4862, 1087, 21, 4945, 558, 576, 8282, 9964, 1267, 5224, 5947, 12613, 5625, 1128, 5195, 5936, 2]
 
-// Module 12597 (GuildEnableCommunicationAlert)
+// Module 12614 (GuildEnableCommunicationAlert)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5944 */;
-import useUserCommunicationDisabledDefault from "useUserCommunicationDisabled" /* 8278 */;
-import CountDownDefault from "CountDown" /* 9953 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5947 */;
+import useUserCommunicationDisabledDefault from "useUserCommunicationDisabled" /* 8282 */;
+import CountDownDefault from "CountDown" /* 9964 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -201,7 +201,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEnabl
   const tmp2 = closure_14();
   dependencyMap = tmp2;
   const tmp3 = userId;
-  closure_3 = _slicedToArray(userId(8278)(userId, guildId), 1)[0];
+  closure_3 = _slicedToArray(userId(8282)(userId, guildId), 1)[0];
   userId(5224)(() => {
     obj = AnalyticsUtilsDefault;
     const obj2 = { type, guild_id: guildId, other_user_id: userId };
@@ -219,7 +219,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEnabl
     },
     children: tmp11(tmp12, obj2)
   };
-  const tmp7 = userId(5933);
+  const tmp7 = userId(5936);
   const merged1 = Object.assign(merged);
   intl = guildId(1128).intl;
   intl2 = guildId(1128).intl;
@@ -235,7 +235,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEnabl
   format = intl4.format;
   prop = tmp9(1128).t["t+abNU"];
   const user = UserStore.getUser(userId);
-  const tmp3Result = tmp3(5944);
+  const tmp3Result = tmp3(5947);
   let str = tmp3Result.getName(guildId, null, user);
   tmp11 = closure_13;
   tmp12 = View;

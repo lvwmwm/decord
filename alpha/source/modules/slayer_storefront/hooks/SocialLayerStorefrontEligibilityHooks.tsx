@@ -1,19 +1,19 @@
-// Module ID: 9303
-// Function ID: 9304
+// Module ID: 9315
+// Function ID: 9316
 // Name: SocialLayerStorefrontEligibilityHooks
-// Dependencies: [19, 9304, 2021, 7649, 4822, 5674, 7278, 558, 576, 8749, 504, 9305, 2]
+// Dependencies: [19, 9316, 2021, 7652, 4822, 5674, 7281, 558, 576, 8761, 504, 9317, 2]
 // Exports: useIsCurrentUserPlayingSocialLayerStorefrontGames
 
-// Module 9303 (SocialLayerStorefrontEligibilityHooks)
+// Module 9315 (SocialLayerStorefrontEligibilityHooks)
 import react2 from "react" /* 576 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8749 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8761 */;
 import react from "react" /* 19 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9304 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9316 */;
 import RunningGameStore from "RunningGameStore" /* 2021 */;
-import UserProfileStore from "UserProfileStore" /* 7649 */;
+import UserProfileStore from "UserProfileStore" /* 7652 */;
 import GuildStore from "GuildStore" /* 4822 */;
 import PresenceStore from "PresenceStore" /* 5674 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7278 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7281 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -255,7 +255,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUsersPlay
   }
   const tmp2Result = tmp2(504);
   const stateFromStoresArray = tmp2Result.useStateFromStoresArray(first, tmp8, tmp9);
-  const tmp2Result2 = tmp2(9305);
+  const tmp2Result2 = tmp2(9317);
   const slayerStorefrontDevApplicationIdOverride = tmp2Result2.useSlayerStorefrontDevApplicationIdOverride();
   let tmp12 = stateFromStoresArray;
   if (null != slayerStorefrontDevApplicationIdOverride) {

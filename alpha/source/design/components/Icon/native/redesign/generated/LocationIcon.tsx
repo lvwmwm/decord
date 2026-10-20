@@ -1,14 +1,14 @@
-// Module ID: 8850
-// Function ID: 8851
+// Module ID: 8862
+// Function ID: 8863
 // Name: LocationIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8851, 5630, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8863, 5630, 2]
 
-// Module 8850 (LocationIcon)
+// Module 8862 (LocationIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 5630 */;
-import AssetRegistry from "AssetRegistry" /* 8851 */;
+import AssetRegistry from "AssetRegistry" /* 8863 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

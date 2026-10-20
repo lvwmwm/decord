@@ -1,9 +1,9 @@
-// Module ID: 10497
-// Function ID: 10498
+// Module ID: 10508
+// Function ID: 10509
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 7203, 10478, 1417, 9336, 5631, 5195, 2]
+// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 7206, 10489, 1417, 9348, 5631, 5195, 2]
 
-// Module 10497 (SocialLayerStorefrontGiftProductDetails)
+// Module 10508 (SocialLayerStorefrontGiftProductDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,9 +11,9 @@ import Constants from "Constants" /* 1087 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import Text_Text from "Text/Text" /* 5195 */;
 import FastImageDefault from "FastImage" /* 5631 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7203 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9336 */;
-import StorefrontNativeUtils from "StorefrontNativeUtils" /* 10478 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7206 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9348 */;
+import StorefrontNativeUtils from "StorefrontNativeUtils" /* 10489 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4945 */;
@@ -183,9 +183,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerS
   sku = sku.sku;
   let getOrFetchApplication;
   let tmp = closure_8();
-  let obj = getOrFetchApplication(7203);
+  let obj = getOrFetchApplication(7206);
   getOrFetchApplication = obj.useGetOrFetchApplication(sku.applicationId);
-  const obj2 = getOrFetchApplication(10478);
+  const obj2 = getOrFetchApplication(10489);
   let obj3 = { sku, priceSetAssignmentPurchaseType: constants.GIFT };
   const userPrice = obj2.useFormattedSKUPrice(obj3).userPrice;
   const items = [getOrFetchApplication];

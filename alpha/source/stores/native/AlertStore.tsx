@@ -1,9 +1,9 @@
-// Module ID: 9939
-// Function ID: 9940
+// Module ID: 9950
+// Function ID: 9951
 // Name: AlertStore
 // Dependencies: [504, 584, 2]
 
-// Module 9939 (AlertStore)
+// Module 9950 (AlertStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
