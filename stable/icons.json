@@ -13,6 +13,13 @@
         "width": 24,
         "height": 24
     },
+    "ActivitiesIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/ActivitiesIcon.png",
+        "hash": "04284dcfb33cab4ac93ceefb6696c6d5",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
     "add": {
         "file": "app/modules/video_calls/native/images/add.png",
         "hash": "db76c9ef21a10a502ae95ae16e345521",
@@ -54,13 +61,6 @@
         "scales": [],
         "width": 16,
         "height": 16
-    },
-    "amanda": {
-        "file": "app/modules/nuf_channels/native/images/amanda.png",
-        "hash": "b269fec2e8135bbc2e2d49cb182b352b",
-        "scales": [],
-        "width": 120,
-        "height": 120
     },
     "amanda_1": {
         "file": "app/images/native/avatars/amanda_1.png",
@@ -1028,13 +1028,6 @@
         "width": 24,
         "height": 24
     },
-    "check": {
-        "file": "app/modules/age_gate/native/images/check.png",
-        "hash": "d591eaa154611b58ebc00af8c514af58",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
     "Check": {
         "file": "app/images/native/icons/Check.png",
         "hash": "cda3a003be131c8b7dcff249dd205483",
@@ -1360,6 +1353,13 @@
     "ClosedCaptionsOutlineIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/ClosedCaptionsOutlineIcon.png",
         "hash": "d4b8535e8fda48cfe70d5688d1051d12",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "CloudDownloadIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/CloudDownloadIcon.png",
+        "hash": "66946e5f24d9f7d485f69d93acc2bd06",
         "scales": [],
         "width": 24,
         "height": 24
@@ -1833,6 +1833,13 @@
         "width": 24,
         "height": 24
     },
+    "DoubleChevronSmallRightIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/DoubleChevronSmallRightIcon.png",
+        "hash": "75fbb724131df976287046b6c3b3dfce",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
     "DownloadIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/DownloadIcon.png",
         "hash": "69ad990cd3c9b3023cf6437375e2fe6f",
@@ -2070,13 +2077,6 @@
         "scales": [],
         "width": 200,
         "height": 72
-    },
-    "empty_dms_activities": {
-        "file": "app/images/native/empties/empty_dms_activities.png",
-        "hash": "813b26f9493222d83dc58dec090b98ea",
-        "scales": [],
-        "width": 311,
-        "height": 175
     },
     "empty_permission": {
         "file": "app/modules/media_keyboard/native/images/empty_permission.png",
@@ -2343,20 +2343,6 @@
         "scales": [],
         "width": 76,
         "height": 76
-    },
-    "family_center_empty": {
-        "file": "app/modules/parent_tools/images/family_center_empty.png",
-        "hash": "245663cd177e246da48f58dd5c39e32f",
-        "scales": [],
-        "width": 244,
-        "height": 82
-    },
-    "family_center_linking_banner_image": {
-        "file": "app/modules/parent_tools/images/family_center_linking_banner_image.png",
-        "hash": "486816aa941617e34b6723be8f7303c9",
-        "scales": [],
-        "width": 343,
-        "height": 149
     },
     "featured_page_footer_dark": {
         "file": "app/modules/collectibles/native/images/featured_page_footer_dark.png",
@@ -2715,13 +2701,6 @@
         "width": 24,
         "height": 24
     },
-    "graggle": {
-        "file": "app/modules/contact_sync/native/images/graggle.png",
-        "hash": "343480e621e13dced5261af60d8976f8",
-        "scales": [],
-        "width": 103,
-        "height": 113
-    },
     "graggle_2": {
         "file": "app/images/native/avatars/graggle_2.png",
         "hash": "1b6a1fd726ebdfc69d47b037085b4f19",
@@ -2833,13 +2812,6 @@
         "scales": [],
         "width": 203,
         "height": 120
-    },
-    "guilds-empty-illustration": {
-        "file": "app/modules/main_tabs_v2/native/tabs/guilds/empty_states/images/guilds-empty-illustration.png",
-        "hash": "c4e35cf59b65ee25c9dfc91c26e34f5e",
-        "scales": [],
-        "width": 193.5,
-        "height": 205.5
     },
     "HammerIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/HammerIcon.png",
@@ -4388,13 +4360,6 @@
         "width": 24.5,
         "height": 24
     },
-    "ic_switch_accounts": {
-        "file": "app/images/native/icons/ic_switch_accounts.png",
-        "hash": "633af95b6b643ea3b8457ce65540e36c",
-        "scales": [],
-        "width": 24,
-        "height": 24
-    },
     "ic_sync_24px": {
         "file": "app/images/native/icons/ic_sync_24px.png",
         "hash": "f8d71a087b50ca9ab07431463764cd8d",
@@ -4527,13 +4492,6 @@
         "scales": [],
         "width": 12,
         "height": 12
-    },
-    "ic_video_disabled": {
-        "file": "app/images/native/icons/user_profile/ic_video_disabled.png",
-        "hash": "c67b491c21edfc140b968b3afa5e6528",
-        "scales": [],
-        "width": 24,
-        "height": 24
     },
     "ic_video_disabled_dark": {
         "file": "app/images/native/icons/user_profile/ic_video_disabled_dark.png",
@@ -6131,20 +6089,6 @@
         "width": 762,
         "height": 525
     },
-    "img_remote_auth_loaded": {
-        "file": "app/images/native/img_remote_auth_loaded.png",
-        "hash": "0abf9581567470a391d7233deb0a4631",
-        "scales": [],
-        "width": 120,
-        "height": 100
-    },
-    "img_remote_auth_succeeded": {
-        "file": "app/images/native/img_remote_auth_succeeded.png",
-        "hash": "3ec4fb1a4fcdb736c4c87e7591f26daf",
-        "scales": [],
-        "width": 120,
-        "height": 108
-    },
     "img_roblox_dark": {
         "file": "app/images/platforms/img_roblox_dark.png",
         "hash": "8fce658b14b12e381e1ecc554a57f171",
@@ -6586,13 +6530,6 @@
         "width": 192.33333333333334,
         "height": 416
     },
-    "invite-wumpus-ticket": {
-        "file": "app/modules/create_guild/native/images/invite-wumpus-ticket.png",
-        "hash": "15df55e98006c5e50dacb86d466b47d8",
-        "scales": [],
-        "width": 161,
-        "height": 105
-    },
     "it": {
         "file": "discord_common/js/shared/images/flags/it.png",
         "hash": "cbf50c2e3287d2118f741e827a3ddaf5",
@@ -6747,6 +6684,13 @@
         "width": 24,
         "height": 24
     },
+    "ListNumberedIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/ListNumberedIcon.png",
+        "hash": "e605304dde4d78202fb1f94d6df2847d",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
     "ListViewIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/ListViewIcon.png",
         "hash": "87455c29d9dd2f3e04ebd45e93b772ba",
@@ -6851,13 +6795,6 @@
         "scales": [],
         "width": 60,
         "height": 60
-    },
-    "mallow": {
-        "file": "app/modules/nuf_channels/native/images/mallow.png",
-        "hash": "94bb0fdcfba6a856a1567cdd4f281049",
-        "scales": [],
-        "width": 120,
-        "height": 120
     },
     "mallow_1": {
         "file": "app/images/native/avatars/mallow_1.png",
@@ -7727,13 +7664,6 @@
         "width": 119,
         "height": 83
     },
-    "redesign_notification_illustration": {
-        "file": "app/modules/nuf/native/components/notification/redesign_notification_illustration.png",
-        "hash": "af47f5760d10cc835b5537c36ba26c7a",
-        "scales": [],
-        "width": 150.5,
-        "height": 156
-    },
     "RedoIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/RedoIcon.png",
         "hash": "3ba857c31c01ecf1567374bfd4da8171",
@@ -7943,6 +7873,13 @@
         "scales": [],
         "width": 300,
         "height": 120
+    },
+    "SaveIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/SaveIcon.png",
+        "hash": "fd7a05931e4df085da6e8b62ffa48f48",
+        "scales": [],
+        "width": 24,
+        "height": 24
     },
     "ScienceIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/ScienceIcon.png",
@@ -8356,34 +8293,6 @@
         "scales": [],
         "width": 20,
         "height": 20
-    },
-    "star_blue": {
-        "file": "app/modules/nuf_channels/native/images/star_blue.png",
-        "hash": "da7dcc5777ff296b64b9eaee0cd191e4",
-        "scales": [],
-        "width": 26,
-        "height": 51
-    },
-    "star_green": {
-        "file": "app/modules/nuf_channels/native/images/star_green.png",
-        "hash": "0874b569caae69893f5d6cd4e4046089",
-        "scales": [],
-        "width": 38,
-        "height": 76
-    },
-    "star_pink": {
-        "file": "app/modules/nuf_channels/native/images/star_pink.png",
-        "hash": "a22d4ac6a3cb3a331ce2730f706e3d95",
-        "scales": [],
-        "width": 40,
-        "height": 77
-    },
-    "star_purple": {
-        "file": "app/modules/nuf_channels/native/images/star_purple.png",
-        "hash": "997fd56d3361833ef80c750f0e0e48a8",
-        "scales": [],
-        "width": 23,
-        "height": 45
     },
     "StarIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/StarIcon.png",
@@ -9288,6 +9197,13 @@
         "width": 60,
         "height": 60
     },
+    "WidgetsIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/WidgetsIcon.png",
+        "hash": "07694532fe5b5d77fc59f6774ff08cb4",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
     "WindowLaunchIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/WindowLaunchIcon.png",
         "hash": "6fc18e0c40f0ce37259a8a45cc634c66",
@@ -9357,27 +9273,6 @@
         "scales": [],
         "width": 84,
         "height": 66
-    },
-    "wumpus-bookmark": {
-        "file": "app/modules/saved_messages/wumpus-bookmark.png",
-        "hash": "ee27927c992063817a4891d6fea39469",
-        "scales": [],
-        "width": 297,
-        "height": 238
-    },
-    "wumpus-calendar-plus": {
-        "file": "app/modules/scheduled_messages/wumpus-calendar-plus.png",
-        "hash": "0ad2bf31ea242663dc2fd22966e4c43e",
-        "scales": [],
-        "width": 297,
-        "height": 238
-    },
-    "wumpus-clock": {
-        "file": "app/modules/saved_messages/wumpus-clock.png",
-        "hash": "2a38db2647d78740ca056c705d4301a7",
-        "scales": [],
-        "width": 297,
-        "height": 238
     },
     "wumpus-link": {
         "file": "app/images/native/wumpus/wumpus-link.png",
