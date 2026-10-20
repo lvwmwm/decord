@@ -1973,6 +1973,13 @@
         "width": 24,
         "height": 24
     },
+    "EmojiFrowningFaceIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/EmojiFrowningFaceIcon.png",
+        "hash": "a542756744177a7dd9604c93f229915b",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
     "EmojiMeltingFaceIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/EmojiMeltingFaceIcon.png",
         "hash": "d28a54af44f7516fe576101d4a6c7e22",
@@ -2018,6 +2025,13 @@
     "EmojiSkullIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/EmojiSkullIcon.png",
         "hash": "de398aa4b5d51823872a90561f246715",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
+    "EmojiSlightlySmilingFaceIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/EmojiSlightlySmilingFaceIcon.png",
+        "hash": "816d3367ed7ad398b85a9db798abd14c",
         "scales": [],
         "width": 24,
         "height": 24
