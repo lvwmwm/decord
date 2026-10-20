@@ -1,12 +1,12 @@
-// Module ID: 4769
-// Function ID: 4770
+// Module ID: 5009
+// Function ID: 5010
 // Name: GameServerConstants
-// Dependencies: [1389, 4770, 2]
+// Dependencies: [1402, 5010, 2]
 // Exports: GAME_SERVER_SURVEY_URL
 
-// Module 4769 (GameServerConstants)
-import UserStoreConstants from "UserStoreConstants" /* 1389 */;
-import GameServerProviderType from "GameServerProviderType" /* 4770 */;
+// Module 5009 (GameServerConstants)
+import UserStoreConstants from "UserStoreConstants" /* 1402 */;
+import GameServerProviderType from "GameServerProviderType" /* 5010 */;
 import size from "module_2" /* 2 */;
 
 let obj3;

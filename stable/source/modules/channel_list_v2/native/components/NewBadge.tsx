@@ -1,25 +1,25 @@
-// Module ID: 11924
-// Function ID: 11925
+// Module ID: 11996
+// Function ID: 11997
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 4890, 1369, 587, 4729, 558, 576, 7508, 4791, 1126, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 1382, 587, 4969, 558, 576, 9303, 5031, 1126, 5088, 2]
 
-// Module 11924 (NewBadge)
+// Module 11996 (NewBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import useThemeDefault from "useTheme" /* 4791 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7508 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import useThemeDefault from "useTheme" /* 5031 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9303 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const shared = tmp(4729);
+const shared = tmp(4969);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((arg0, arg1) => {
@@ -43,7 +43,7 @@ let closure_5 = createStyles.createStyles((arg0, arg1) => {
   }
   MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(587).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
 });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBadge() {
   let base;
   let first;
   let str;
@@ -91,7 +91,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[2] = str;
   cResult[3] = tmp10;
   tmp9 = tmp10;
-}) : (() => {
+}) : (function NewBadge() {
   let intl;
   let str;
   const tmp2 = useIsUsingClientThemeDefault();

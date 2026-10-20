@@ -1,62 +1,76 @@
-// Module ID: 16716
-// Function ID: 16717
+// Module ID: 17304
+// Function ID: 17305
 // Name: ConjureClarificationCard
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 4594, 16717, 16718, 16719, 4886, 1126, 3723, 16551, 6017, 16720, 5995, 5991, 6098, 5594, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 1126, 3849, 558, 576, 17305, 17306, 17307, 6286, 5088, 7569, 6208, 17308, 6265, 6177, 6182, 17311, 5379, 17282, 2]
 
-// Module 16716 (ConjureClarificationCard)
+// Module 17304 (ConjureClarificationCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ConjureClarification from "ConjureClarification" /* 16719 */;
+import ConjureClarification from "ConjureClarification" /* 17307 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_1, dependencyMap, id, onSubmit, tmp8;
+let dependencyMap;
 
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
 let obj4;
+const f128743 = (item) => "" !== item;
 let react = react_mod;
-let View = react_native.View;
+const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { card: obj2, optionHeader: obj3, footer: obj4, customField: { flex: 1 } };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
+obj2 = { marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 let closure_8 = createStyles(obj);
 let closure_9 = [];
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSubmit) => {
+let closure_10 = [];
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClarificationCard(onSubmit) {
   let answeredOptionIdsResult;
   let clarification;
   let closure_4;
-  let closure_5;
+  let closure_7;
   let first;
   let first1;
   let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
   let items;
   let items1;
   let items2;
   let items3;
-  let obj19;
+  let obj22;
+  let obj24;
   let optionHeader;
+  let options;
   let projectId;
   let string;
   let tmp10;
   let tmp13;
+  let tmp16;
+  let tmp18;
+  let tmp19;
   let tmp21;
-  let tmp22;
+  let tmp27;
+  let tmp92;
+  let tmp93;
   let w1nRmT;
   let tmp = clarification;
   let tmp2 = dependencyMap;
   let obj = clarification(576);
-  const cResult = obj.c(82);
+  const cResult = obj.c(101);
   ({ projectId, clarification } = onSubmit);
   onSubmit = onSubmit.onSubmit;
   const onDismiss = onSubmit.onDismiss;
@@ -70,7 +84,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSubmit) => {
     first = cResult[0];
   }
   let obj3 = react;
-  const tmp7 = first1(react.useState(first), 2);
+  let tmp7 = first1(react.useState(first), 2);
   first1 = tmp7[0];
   react = tmp9;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -81,7 +95,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSubmit) => {
     tmp10 = cResult[1];
   }
   const tmp6Result = first1(obj3.useState(tmp10), 2);
-  View = tmp6Result[1];
+  let closure_5 = tmp6Result[1];
   const first2 = tmp6Result[0];
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let obj5 = {};
@@ -90,1367 +104,745 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSubmit) => {
   } else {
     tmp13 = cResult[2];
   }
-  const tmp6Result3 = first1(obj3.useState(tmp13), 2);
-  let closure_6 = tmp6Result3[1];
-  const first3 = tmp6Result3[0];
-  const tmp6Result4 = first1(obj3.useState(0), 2);
-  let closure_7 = tmp6Result4[1];
-  closure_8 = tmp17;
-  const bound = Math.min(tmp6Result4[0], length - 1);
-  id = tmp19;
-  let closure_11 = tmp20;
+  const tmp6Result5 = first1(obj3.useState(tmp13), 2);
+  let closure_6 = tmp6Result5[1];
+  const first3 = tmp6Result5[0];
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj6 = { checked: false };
+    let obj6 = {};
     cResult[3] = obj6;
-    tmp21 = obj6;
+    tmp16 = obj6;
   } else {
-    tmp21 = cResult[3];
+    tmp16 = cResult[3];
   }
-  const tmpResult = tmp(4594);
-  const accessibilityRole = tmpResult.useCheckboxA11yNative(tmp21).accessibilityRole;
-  if (cResult[4] !== clarification.questions[bound]) {
-    const tmpResult5 = tmp(16717);
-    const isImageQuestionResult = tmpResult5.isImageQuestion(clarification.questions[bound]);
-    cResult[4] = clarification.questions[bound];
-    cResult[5] = isImageQuestionResult;
-    tmp22 = isImageQuestionResult;
+  [tmp18, closure_7] = first1(obj3.useState(tmp16), 2);
+  first1(obj3.useState(tmp16), 2);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj7 = {};
+    cResult[4] = obj7;
+    tmp19 = obj7;
   } else {
-    tmp22 = cResult[5];
+    tmp19 = cResult[4];
   }
-  let closure_13 = tmp22;
-  if (true === clarification.questions[bound].multi_select) {
-    let tmp25 = first3[tmp19.id];
-    if (tmp25 == null) {
-      tmp25 = bound;
+  [tmp21, closure_8] = first1(obj3.useState(tmp19), 2);
+  first1(obj3.useState(tmp19), 2);
+  const tmp6Result8 = first1(obj3.useState(0), 2);
+  closure_9 = tmp6Result8[1];
+  const disabled = tmp23;
+  const bound = Math.min(tmp6Result8[0], length - 1);
+  const tmp25 = clarification.questions[bound];
+  let id = tmp25;
+  let closure_13 = tmp26;
+  if (cResult[5] !== tmp25) {
+    const tmpResult = tmp(17305);
+    const isImageQuestionResult = tmpResult.isImageQuestion(tmp25);
+    cResult[5] = tmp25;
+    cResult[6] = isImageQuestionResult;
+    tmp27 = isImageQuestionResult;
+  } else {
+    tmp27 = cResult[6];
+  }
+  let closure_14 = tmp27;
+  if (true === tmp25.multi_select) {
+    let tmp30 = first3[tmp25.id];
+    if (tmp30 == null) {
+      tmp30 = closure_9;
     }
-    answeredOptionIdsResult = tmp25;
+    answeredOptionIdsResult = tmp30;
   } else {
-    const tmpResult6 = tmp(16717);
-    answeredOptionIdsResult = tmpResult6.answeredOptionIds(first1[tmp19.id]);
+    const tmpResult5 = tmp(17305);
+    answeredOptionIdsResult = tmpResult5.answeredOptionIds(first1[tmp25.id]);
   }
-  const tmpResult7 = tmp(16718);
-  const conjureOwnImages = tmpResult7.useConjureOwnImages(projectId, first1, tmp9);
-  if (cResult[6] === first1) {
-    if (cResult[7] === clarification) {
-      if (cResult[8] === bound) {
-        if (cResult[9] === onSubmit) {
-          let tmp26;
-          if (cResult[10] === clarification.questions[bound].id) {
-            tmp26 = cResult[11];
+  const tmpResult6 = tmp(17306);
+  const conjureOwnImages = tmpResult6.useConjureOwnImages(projectId, first1, tmp9);
+  if (cResult[7] === first1) {
+    if (cResult[8] === clarification) {
+      if (cResult[9] === bound) {
+        if (cResult[10] === onSubmit) {
+          let tmp31;
+          if (cResult[11] === tmp25.id) {
+            tmp31 = cResult[12];
           }
-          let closure_15 = tmp26;
-          if (cResult[12] === true === clarification.questions[bound].multi_select) {
-            if (cResult[13] === tmp22) {
-              if (cResult[14] === clarification.questions[bound]) {
-                let tmp27;
-                if (cResult[15] === tmp26) {
-                  tmp27 = cResult[16];
+          let closure_16 = tmp31;
+          if (cResult[13] === true === tmp25.multi_select) {
+            if (cResult[14] === tmp27) {
+              if (cResult[15] === tmp25) {
+                let tmp32;
+                if (cResult[16] === tmp31) {
+                  tmp32 = cResult[17];
                 }
-                let closure_16 = tmp27;
-                if (cResult[17] === null == onSubmit) {
-                  let tmp28;
-                  if (cResult[18] === bound) {
-                    tmp28 = cResult[19];
+                let closure_17 = tmp32;
+                if (cResult[18] === null == onSubmit) {
+                  let tmp33;
+                  if (cResult[19] === bound) {
+                    tmp33 = cResult[20];
                   }
-                  let str = first2[tmp19.id];
+                  let str = first2[tmp25.id];
                   if (str == null) {
                     str = "";
                   }
-                  class Z {
-                    constructor(arg0) {
-                      closure_0 = onSubmit;
-                      tmp = closure_11;
-                      if (tmp) {
-                        tmp9 = closure_6;
-                        tmp10 = closure_6((arr) => {
-                          obj = {};
-                          const merged = Object.assign(arr);
-                          id = user.id;
-                          let tmp4 = arr[user.id];
-                          const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                          ConjureClarification;
-                          const tmp2 = user;
-                          if (tmp4 == null) {
-                            tmp4 = closure_9;
-                          }
-                          obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                          return obj;
-                        });
-                      } else {
-                        tmp2 = closure_5;
-                        tmp3 = closure_5((arg0) => {
-                          obj = {};
-                          const merged = Object.assign(arg0);
-                          obj[user.id] = "";
-                          return obj;
-                        });
-                        obj = { kind: "option", optionId: null, text: null };
-                        ({ id: obj.optionId, label: obj.text } = onSubmit);
-                        closure_1 = obj;
-                        tmp4 = closure_13;
-                        if (tmp4) {
-                          tmp7 = closure_4;
-                          tmp8 = closure_4((arg0) => {
-                            obj = {};
-                            const merged = Object.assign(arg0);
-                            obj[user.id] = obj;
-                            return obj;
-                          });
-                        } else {
-                          tmp5 = closure_15;
-                          tmp6 = closure_15(obj);
-                        }
-                      }
-                      return;
-                    }
-                  }
                   let multiSelectAnswerResult = null;
-                  if (true === clarification.questions[bound].multi_select) {
-                    const multiSelectAnswer = tmp(16719).multiSelectAnswer;
-                    const tmpResult8 = tmp(16719);
-                    class Z {
-                      constructor(arg0) {
-                        closure_0 = onSubmit;
-                        tmp = closure_11;
-                        if (tmp) {
-                          tmp9 = closure_6;
-                          tmp10 = closure_6((arr) => {
-                            obj = {};
-                            const merged = Object.assign(arr);
-                            id = user.id;
-                            let tmp4 = arr[user.id];
-                            const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                            ConjureClarification;
-                            const tmp2 = user;
-                            if (tmp4 == null) {
-                              tmp4 = closure_9;
-                            }
-                            obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                            return obj;
-                          });
-                        } else {
-                          tmp2 = closure_5;
-                          tmp3 = closure_5((arg0) => {
-                            obj = {};
-                            const merged = Object.assign(arg0);
-                            obj[user.id] = "";
-                            return obj;
-                          });
-                          obj = { kind: "option", optionId: null, text: null };
-                          ({ id: obj.optionId, label: obj.text } = onSubmit);
-                          closure_1 = obj;
-                          tmp4 = closure_13;
-                          if (tmp4) {
-                            tmp7 = closure_4;
-                            tmp8 = closure_4((arg0) => {
-                              obj = {};
-                              const merged = Object.assign(arg0);
-                              obj[user.id] = obj;
-                              return obj;
-                            });
-                          } else {
-                            tmp5 = closure_15;
-                            tmp6 = closure_15(obj);
-                          }
-                        }
-                        return;
-                      }
-                    }
-                    multiSelectAnswerResult = multiSelectAnswer(tmp19, answeredOptionIdsResult, str, conjureOwnImages.multiPartFor(tmp19));
+                  if (true === tmp25.multi_select) {
+                    const tmpResult7 = tmp(17307);
+                    multiSelectAnswerResult = tmpResult7.multiSelectAnswer(tmp25, answeredOptionIdsResult, str, conjureOwnImages.multiPartFor(tmp25));
                   }
-                  if (cResult[20] === str) {
-                    if (cResult[21] === multiSelectAnswerResult) {
-                      let tmp35;
-                      let tmp37;
-                      if (cResult[22] === tmp26) {
-                        tmp35 = cResult[23];
-                      }
-                      if (cResult[24] === first1) {
-                        if (cResult[25] === str) {
-                          if (cResult[26] === multiSelectAnswerResult) {
-                            let tmp36;
-                            let tmp41;
-                            if (cResult[27] === clarification.questions[bound].id) {
-                              tmp36 = cResult[28];
+                  if (cResult[21] === str) {
+                    if (cResult[22] === tmp18) {
+                      if (cResult[23] === tmp21) {
+                        if (cResult[24] === tmp25.id) {
+                          let tmp39;
+                          let tmp47;
+                          if (cResult[25] === tmp25.input) {
+                            tmp39 = cResult[26];
+                          }
+                          const text = tmp39;
+                          if (cResult[27] !== tmp25.id) {
+                            function fe(arg0, arg1) {
+                              let user;
+                              let closure_0 = arg0;
+                              let closure_1 = arg1;
+                              closure_7((arg0) => {
+                                const obj = {};
+                                const merged = Object.assign(arg0);
+                                obj[user.id] = closure_0;
+                                return obj;
+                              });
+                              closure_8((arg0) => {
+                                const obj = {};
+                                const merged = Object.assign(arg0);
+                                obj[user.id] = closure_1;
+                                return obj;
+                              });
                             }
-                            let closure_19 = tmp36;
-                            if (cResult[29] === bound) {
-                              let tmp40;
-                              let tmp44;
-                              if (cResult[30] === clarification.questions.length) {
-                                tmp40 = cResult[31];
-                              }
-                              if (cResult[32] !== clarification.questions[bound].question) {
-                                let obj7 = { variant: "text-md/semibold", color: "text-default", accessibilityRole: "header", children: clarification.questions[bound].question };
-                                class Z {
-                                  constructor(arg0) {
-                                    closure_0 = onSubmit;
-                                    tmp = closure_11;
-                                    if (tmp) {
-                                      tmp9 = closure_6;
-                                      tmp10 = closure_6((arr) => {
-                                        obj = {};
-                                        const merged = Object.assign(arr);
-                                        id = user.id;
-                                        let tmp4 = arr[user.id];
-                                        const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                                        ConjureClarification;
-                                        const tmp2 = user;
-                                        if (tmp4 == null) {
-                                          tmp4 = closure_9;
-                                        }
-                                        obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                                        return obj;
-                                      });
-                                    } else {
-                                      tmp2 = closure_5;
-                                      tmp3 = closure_5((arg0) => {
-                                        obj = {};
-                                        const merged = Object.assign(arg0);
-                                        obj[user.id] = "";
-                                        return obj;
-                                      });
-                                      obj = { kind: "option", optionId: null, text: null };
-                                      ({ id: obj.optionId, label: obj.text } = onSubmit);
-                                      closure_1 = obj;
-                                      tmp4 = closure_13;
-                                      if (tmp4) {
-                                        tmp7 = closure_4;
-                                        tmp8 = closure_4((arg0) => {
-                                          obj = {};
-                                          const merged = Object.assign(arg0);
-                                          obj[user.id] = obj;
-                                          return obj;
-                                        });
-                                      } else {
-                                        tmp5 = closure_15;
-                                        tmp6 = closure_15(obj);
-                                      }
-                                    }
-                                    return;
-                                  }
+                            cResult[27] = tmp25.id;
+                            cResult[28] = fe;
+                            tmp47 = fe;
+                          } else {
+                            tmp47 = cResult[28];
+                          }
+                          if (cResult[29] === str) {
+                            if (cResult[30] === multiSelectAnswerResult) {
+                              if (cResult[31] === tmp39) {
+                                let tmp48;
+                                let tmp50;
+                                if (cResult[32] === tmp31) {
+                                  tmp48 = cResult[33];
                                 }
-                                cResult[32] = clarification.questions[bound].question;
-                                cResult[33] = tmp46;
-                                tmp44 = tmp46;
-                              } else {
-                                tmp44 = cResult[33];
-                              }
-                              if (cResult[34] === tmp4.customField) {
-                                if (cResult[35] === tmp40) {
-                                  let tmp47;
-                                  let tmp50;
-                                  if (cResult[36] === tmp44) {
-                                    tmp47 = cResult[37];
-                                  }
-                                  if (cResult[38] !== onDismiss) {
-                                    let tmp51 = null;
-                                    if (null != onDismiss) {
-                                      let obj8 = { IconComponent: tmp(6017).XSmallIcon, onPress: onDismiss, accessibilityLabel: intl.string(onSubmit(3723).qVXlk0) };
-                                      class Z {
-                                        constructor(arg0) {
-                                          closure_0 = onSubmit;
-                                          tmp = closure_11;
-                                          if (tmp) {
-                                            tmp9 = closure_6;
-                                            tmp10 = closure_6((arr) => {
-                                              obj = {};
-                                              const merged = Object.assign(arr);
-                                              id = user.id;
-                                              let tmp4 = arr[user.id];
-                                              const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                                              ConjureClarification;
-                                              const tmp2 = user;
-                                              if (tmp4 == null) {
-                                                tmp4 = closure_9;
-                                              }
-                                              obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                                              return obj;
-                                            });
-                                          } else {
-                                            tmp2 = closure_5;
-                                            tmp3 = closure_5((arg0) => {
-                                              obj = {};
-                                              const merged = Object.assign(arg0);
-                                              obj[user.id] = "";
-                                              return obj;
-                                            });
-                                            obj = { kind: "option", optionId: null, text: null };
-                                            ({ id: obj.optionId, label: obj.text } = onSubmit);
-                                            closure_1 = obj;
-                                            tmp4 = closure_13;
-                                            if (tmp4) {
-                                              tmp7 = closure_4;
-                                              tmp8 = closure_4((arg0) => {
-                                                obj = {};
-                                                const merged = Object.assign(arg0);
-                                                obj[user.id] = obj;
-                                                return obj;
-                                              });
-                                            } else {
-                                              tmp5 = closure_15;
-                                              tmp6 = closure_15(obj);
-                                            }
-                                          }
-                                          return;
+                                if (cResult[34] === first1) {
+                                  if (cResult[35] === str) {
+                                    if (cResult[36] === multiSelectAnswerResult) {
+                                      if (cResult[37] === tmp39) {
+                                        let tmp49;
+                                        if (cResult[38] === tmp25.id) {
+                                          tmp49 = cResult[39];
                                         }
-                                      }
-                                      intl = tmp(1126).intl;
-                                      tmp51 = closure_6(tmp54, obj8);
-                                    }
-                                    class Z {
-                                      constructor(arg0) {
-                                        closure_0 = onSubmit;
-                                        tmp = closure_11;
-                                        if (tmp) {
-                                          tmp9 = closure_6;
-                                          tmp10 = closure_6((arr) => {
-                                            obj = {};
-                                            const merged = Object.assign(arr);
-                                            id = user.id;
-                                            let tmp4 = arr[user.id];
-                                            const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                                            ConjureClarification;
-                                            const tmp2 = user;
-                                            if (tmp4 == null) {
-                                              tmp4 = closure_9;
-                                            }
-                                            obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                                            return obj;
-                                          });
-                                        } else {
-                                          tmp2 = closure_5;
-                                          tmp3 = closure_5((arg0) => {
-                                            obj = {};
-                                            const merged = Object.assign(arg0);
-                                            obj[user.id] = "";
-                                            return obj;
-                                          });
-                                          obj = { kind: "option", optionId: null, text: null };
-                                          ({ id: obj.optionId, label: obj.text } = onSubmit);
-                                          closure_1 = obj;
-                                          tmp4 = closure_13;
-                                          if (tmp4) {
-                                            tmp7 = closure_4;
-                                            tmp8 = closure_4((arg0) => {
-                                              obj = {};
-                                              const merged = Object.assign(arg0);
-                                              obj[user.id] = obj;
-                                              return obj;
-                                            });
-                                          } else {
-                                            tmp5 = closure_15;
-                                            tmp6 = closure_15(obj);
-                                          }
-                                        }
-                                        return;
-                                      }
-                                    }
-                                    cResult[39] = tmp51;
-                                    tmp50 = tmp51;
-                                  } else {
-                                    tmp50 = cResult[39];
-                                  }
-                                  if (cResult[40] === tmp4.footer) {
-                                    if (cResult[41] === tmp47) {
-                                      let tmp55;
-                                      let tmp58;
-                                      if (cResult[42] === tmp50) {
-                                        tmp55 = cResult[43];
-                                      }
-                                      if (cResult[44] !== (true === clarification.questions[bound].multi_select)) {
-                                        let tmp59 = null;
-                                        if (true === clarification.questions[bound].multi_select) {
-                                          let obj9 = { variant: "text-xs/normal", color: "text-muted", children: obj21.string(onSubmit(3723).tE8qbz) };
-                                          const Text2 = tmp(4886).Text;
-                                          class Z {
-                                            constructor(arg0) {
-                                              closure_0 = onSubmit;
-                                              tmp = closure_11;
-                                              if (tmp) {
-                                                tmp9 = closure_6;
-                                                tmp10 = closure_6((arr) => {
-                                                  obj = {};
-                                                  const merged = Object.assign(arr);
-                                                  id = user.id;
-                                                  let tmp4 = arr[user.id];
-                                                  const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                                                  ConjureClarification;
-                                                  const tmp2 = user;
-                                                  if (tmp4 == null) {
-                                                    tmp4 = closure_9;
+                                        let closure_21 = tmp49;
+                                        if (cResult[40] === tmp48) {
+                                          if (cResult[41] === str) {
+                                            if (cResult[42] === tmp27) {
+                                              if (cResult[43] === tmp25.id) {
+                                                let tmp54;
+                                                if (cResult[44] === tmp25.question) {
+                                                  tmp54 = cResult[45];
+                                                }
+                                                if (cResult[46] === bound) {
+                                                  let tmp58;
+                                                  let tmp62;
+                                                  if (cResult[47] === clarification.questions.length) {
+                                                    tmp58 = cResult[48];
                                                   }
-                                                  obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                                                  return obj;
-                                                });
-                                              } else {
-                                                tmp2 = closure_5;
-                                                tmp3 = closure_5((arg0) => {
-                                                  obj = {};
-                                                  const merged = Object.assign(arg0);
-                                                  obj[user.id] = "";
-                                                  return obj;
-                                                });
-                                                obj = { kind: "option", optionId: null, text: null };
-                                                ({ id: obj.optionId, label: obj.text } = onSubmit);
-                                                closure_1 = obj;
-                                                tmp4 = closure_13;
-                                                if (tmp4) {
-                                                  tmp7 = closure_4;
-                                                  tmp8 = closure_4((arg0) => {
-                                                    obj = {};
-                                                    const merged = Object.assign(arg0);
-                                                    obj[user.id] = obj;
-                                                    return obj;
-                                                  });
-                                                } else {
-                                                  tmp5 = closure_15;
-                                                  tmp6 = closure_15(obj);
-                                                }
-                                              }
-                                              return;
-                                            }
-                                          }
-                                          tmp59 = closure_6(Text2, obj9);
-                                        }
-                                        class Z {
-                                          constructor(arg0) {
-                                            closure_0 = onSubmit;
-                                            tmp = closure_11;
-                                            if (tmp) {
-                                              tmp9 = closure_6;
-                                              tmp10 = closure_6((arr) => {
-                                                obj = {};
-                                                const merged = Object.assign(arr);
-                                                id = user.id;
-                                                let tmp4 = arr[user.id];
-                                                const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                                                ConjureClarification;
-                                                const tmp2 = user;
-                                                if (tmp4 == null) {
-                                                  tmp4 = closure_9;
-                                                }
-                                                obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                                                return obj;
-                                              });
-                                            } else {
-                                              tmp2 = closure_5;
-                                              tmp3 = closure_5((arg0) => {
-                                                obj = {};
-                                                const merged = Object.assign(arg0);
-                                                obj[user.id] = "";
-                                                return obj;
-                                              });
-                                              obj = { kind: "option", optionId: null, text: null };
-                                              ({ id: obj.optionId, label: obj.text } = onSubmit);
-                                              closure_1 = obj;
-                                              tmp4 = closure_13;
-                                              if (tmp4) {
-                                                tmp7 = closure_4;
-                                                tmp8 = closure_4((arg0) => {
-                                                  obj = {};
-                                                  const merged = Object.assign(arg0);
-                                                  obj[user.id] = obj;
-                                                  return obj;
-                                                });
-                                              } else {
-                                                tmp5 = closure_15;
-                                                tmp6 = closure_15(obj);
-                                              }
-                                            }
-                                            return;
-                                          }
-                                        }
-                                        cResult[45] = tmp59;
-                                        tmp58 = tmp59;
-                                      } else {
-                                        tmp58 = cResult[45];
-                                      }
-                                      if (cResult[46] === accessibilityRole) {
-                                        if (cResult[47] === null == onSubmit) {
-                                          if (cResult[48] === tmp27) {
-                                            if (cResult[49] === true === clarification.questions[bound].multi_select) {
-                                              if (cResult[50] === conjureOwnImages) {
-                                                if (cResult[51] === tmp22) {
-                                                  if (cResult[52] === projectId) {
-                                                    if (cResult[53] === clarification.questions[bound]) {
-                                                      if (cResult[54] === answeredOptionIdsResult) {
-                                                        let tmp62;
-                                                        if (cResult[55] === tmp4.optionHeader) {
-                                                          tmp62 = cResult[56];
+                                                  if (cResult[49] !== tmp25.question) {
+                                                    const obj8 = { variant: "text-md/semibold", color: "text-default", accessibilityRole: "header", children: tmp25.question };
+                                                    const tmp64 = closure_6(tmp(5088).Text, obj8);
+                                                    cResult[49] = tmp25.question;
+                                                    cResult[50] = tmp64;
+                                                    tmp62 = tmp64;
+                                                  } else {
+                                                    tmp62 = cResult[50];
+                                                  }
+                                                  if (cResult[51] === tmp4.customField) {
+                                                    if (cResult[52] === tmp58) {
+                                                      let tmp65;
+                                                      let tmp69;
+                                                      if (cResult[53] === tmp62) {
+                                                        tmp65 = cResult[54];
+                                                      }
+                                                      if (cResult[55] !== onDismiss) {
+                                                        let tmp70 = null;
+                                                        if (null != onDismiss) {
+                                                          const obj9 = { variant: "tertiary", size: "sm", icon: closure_6(tmp(6208).XSmallIcon, { size: "sm" }), onPress: onDismiss, accessibilityLabel: intl4.string(onSubmit(3849).qVXlk0) };
+                                                          const IconButton = tmp(7569).IconButton;
+                                                          intl4 = tmp(1126).intl;
+                                                          tmp70 = closure_6(IconButton, obj9);
                                                         }
-                                                        if (cResult[57] === tmp35) {
-                                                          if (cResult[58] === str) {
-                                                            if (cResult[59] === tmp22) {
-                                                              if (cResult[60] === clarification.questions[bound].id) {
-                                                                let tmp64;
-                                                                if (cResult[61] === clarification.questions[bound].question) {
-                                                                  tmp64 = cResult[62];
-                                                                }
-                                                                if (cResult[63] === null == onSubmit) {
-                                                                  if (cResult[64] === tmp28) {
-                                                                    if (cResult[65] === bound) {
-                                                                      if (cResult[66] === true === clarification.questions[bound].multi_select) {
-                                                                        if (cResult[67] === tmp36) {
-                                                                          if (cResult[68] === tmp22) {
-                                                                            if (cResult[69] === tmp26) {
-                                                                              if (cResult[70] === tmp4.customField) {
-                                                                                if (cResult[71] === tmp4.footer) {
-                                                                                  if (cResult[72] === bound === tmp39) {
-                                                                                    if (cResult[75] === tmp4.card) {
-                                                                                      if (cResult[76] === tmp55) {
-                                                                                        if (cResult[77] === tmp58) {
-                                                                                          if (cResult[78] === tmp62) {
-                                                                                            if (cResult[79] === tmp64) {
-                                                                                              let tmp77;
-                                                                                              if (cResult[80] === tmp67) {
-                                                                                                tmp77 = cResult[81];
+                                                        cResult[55] = onDismiss;
+                                                        cResult[56] = tmp70;
+                                                        tmp69 = tmp70;
+                                                      } else {
+                                                        tmp69 = cResult[56];
+                                                      }
+                                                      if (cResult[57] === tmp4.footer) {
+                                                        if (cResult[58] === tmp65) {
+                                                          let tmp73;
+                                                          let tmp77;
+                                                          let mapped;
+                                                          if (cResult[59] === tmp69) {
+                                                            tmp73 = cResult[60];
+                                                          }
+                                                          if (cResult[61] !== (true === tmp25.multi_select)) {
+                                                            let tmp78 = null;
+                                                            if (true === tmp25.multi_select) {
+                                                              const obj10 = { variant: "text-xs/normal", color: "text-muted", children: intl5.string(onSubmit(3849).tE8qbz) };
+                                                              const Text2 = tmp(5088).Text;
+                                                              intl5 = tmp(1126).intl;
+                                                              tmp78 = closure_6(Text2, obj10);
+                                                            }
+                                                            cResult[61] = true === tmp25.multi_select;
+                                                            cResult[62] = tmp78;
+                                                            tmp77 = tmp78;
+                                                          } else {
+                                                            tmp77 = cResult[62];
+                                                          }
+                                                          if (cResult[63] === null == onSubmit) {
+                                                            if (cResult[64] === tmp32) {
+                                                              if (cResult[65] === true === tmp25.multi_select) {
+                                                                if (cResult[66] === conjureOwnImages) {
+                                                                  if (cResult[67] === tmp27) {
+                                                                    if (cResult[68] === projectId) {
+                                                                      if (cResult[69] === tmp25) {
+                                                                        if (cResult[70] === answeredOptionIdsResult) {
+                                                                          let tmp81;
+                                                                          if (cResult[71] === tmp4.optionHeader) {
+                                                                            tmp81 = cResult[72];
+                                                                          }
+                                                                          if (cResult[73] === null == onSubmit) {
+                                                                            if (cResult[74] === tmp18) {
+                                                                              if (cResult[75] === tmp54) {
+                                                                                if (cResult[76] === tmp47) {
+                                                                                  if (cResult[77] === projectId) {
+                                                                                    let tmp87;
+                                                                                    let tmp96;
+                                                                                    if (cResult[78] === tmp25) {
+                                                                                      tmp87 = cResult[79];
+                                                                                    }
+                                                                                    let tmp94 = null;
+                                                                                    if (false !== tmp25.allow_custom) {
+                                                                                      tmp94 = tmp54;
+                                                                                    }
+                                                                                    if (cResult[80] === null == onSubmit) {
+                                                                                      if (cResult[81] === tmp33) {
+                                                                                        if (cResult[82] === bound) {
+                                                                                          if (cResult[83] === true === tmp25.multi_select) {
+                                                                                            if (cResult[84] === tmp49) {
+                                                                                              if (cResult[85] === tmp27) {
+                                                                                                if (cResult[86] === tmp25.input) {
+                                                                                                  if (cResult[87] === tmp31) {
+                                                                                                    if (cResult[88] === tmp4.customField) {
+                                                                                                      if (cResult[89] === tmp4.footer) {
+                                                                                                        if (cResult[90] === bound === tmp53) {
+                                                                                                          if (cResult[91] === clarification.questions.length) {
+                                                                                                            tmp96 = cResult[92];
+                                                                                                          }
+                                                                                                          if (cResult[93] === tmp4.card) {
+                                                                                                            if (cResult[94] === tmp73) {
+                                                                                                              if (cResult[95] === tmp77) {
+                                                                                                                if (cResult[96] === tmp81) {
+                                                                                                                  if (cResult[97] === tmp87) {
+                                                                                                                    if (cResult[98] === tmp94) {
+                                                                                                                      let tmp106;
+                                                                                                                      if (cResult[99] === tmp96) {
+                                                                                                                        tmp106 = cResult[100];
+                                                                                                                      }
+                                                                                                                      return tmp106;
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              }
+                                                                                                            }
+                                                                                                          }
+                                                                                                          const obj11 = { style: tmp4.card, children: items };
+                                                                                                          items = [tmp73, tmp77, tmp81, tmp87, tmp94, tmp96];
+                                                                                                          const tmp109 = closure_7(onSubmit(17282), obj11);
+                                                                                                          cResult[93] = tmp4.card;
+                                                                                                          cResult[94] = tmp73;
+                                                                                                          cResult[95] = tmp77;
+                                                                                                          cResult[96] = tmp81;
+                                                                                                          cResult[97] = tmp87;
+                                                                                                          cResult[98] = tmp94;
+                                                                                                          cResult[99] = tmp96;
+                                                                                                          cResult[100] = tmp109;
+                                                                                                          tmp106 = tmp109;
+                                                                                                        }
+                                                                                                      }
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
                                                                                               }
-                                                                                              return tmp77;
                                                                                             }
                                                                                           }
                                                                                         }
                                                                                       }
                                                                                     }
-                                                                                    class Z {
-                                                                                      constructor(arg0) {
-                                                                                        closure_0 = onSubmit;
-                                                                                        tmp = closure_11;
-                                                                                        if (tmp) {
-                                                                                          tmp9 = closure_6;
-                                                                                          tmp10 = closure_6((arr) => {
-                                                                                            obj = {};
-                                                                                            const merged = Object.assign(arr);
-                                                                                            id = user.id;
-                                                                                            let tmp4 = arr[user.id];
-                                                                                            const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                                                                                            ConjureClarification;
-                                                                                            const tmp2 = user;
-                                                                                            if (tmp4 == null) {
-                                                                                              tmp4 = closure_9;
-                                                                                            }
-                                                                                            obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                                                                                            return obj;
-                                                                                          });
-                                                                                        } else {
-                                                                                          tmp2 = closure_5;
-                                                                                          tmp3 = closure_5((arg0) => {
-                                                                                            obj = {};
-                                                                                            const merged = Object.assign(arg0);
-                                                                                            obj[user.id] = "";
-                                                                                            return obj;
-                                                                                          });
-                                                                                          obj = { kind: "option", optionId: null, text: null };
-                                                                                          ({ id: obj.optionId, label: obj.text } = onSubmit);
-                                                                                          closure_1 = obj;
-                                                                                          tmp4 = closure_13;
-                                                                                          if (tmp4) {
-                                                                                            tmp7 = closure_4;
-                                                                                            tmp8 = closure_4((arg0) => {
-                                                                                              obj = {};
-                                                                                              const merged = Object.assign(arg0);
-                                                                                              obj[user.id] = obj;
-                                                                                              return obj;
-                                                                                            });
-                                                                                          } else {
-                                                                                            tmp5 = closure_15;
-                                                                                            tmp6 = closure_15(obj);
-                                                                                          }
+                                                                                    if (clarification.questions.length <= 1) {
+                                                                                      if (true !== tmp25.multi_select) {
+                                                                                        let tmp98Result;
+                                                                                        if (!tmp27) {
+                                                                                          tmp98Result = null;
                                                                                         }
-                                                                                        return;
+                                                                                        cResult[80] = null == onSubmit;
+                                                                                        cResult[81] = tmp33;
+                                                                                        cResult[82] = bound;
+                                                                                        cResult[83] = true === tmp25.multi_select;
+                                                                                        cResult[84] = tmp49;
+                                                                                        cResult[85] = tmp27;
+                                                                                        cResult[86] = tmp25.input;
+                                                                                        cResult[87] = tmp31;
+                                                                                        cResult[88] = tmp4.customField;
+                                                                                        cResult[89] = tmp4.footer;
+                                                                                        cResult[90] = bound === tmp53;
+                                                                                        cResult[91] = clarification.questions.length;
+                                                                                        cResult[92] = tmp98Result;
+                                                                                        tmp96 = tmp98Result;
                                                                                       }
                                                                                     }
-                                                                                    let obj10 = { style: tmp4.card, children: items };
-                                                                                    items = [tmp55, tmp58, tmp62, tmp64, tmp67];
-                                                                                    const tmp79 = closure_7(View, obj10);
-                                                                                    cResult[75] = tmp4.card;
-                                                                                    cResult[76] = tmp55;
-                                                                                    cResult[77] = tmp58;
-                                                                                    cResult[78] = tmp62;
-                                                                                    cResult[79] = tmp64;
-                                                                                    cResult[80] = tmp67;
-                                                                                    cResult[81] = tmp79;
-                                                                                    tmp77 = tmp79;
+                                                                                    let tmp100 = null;
+                                                                                    const obj12 = { style: tmp4.footer, children: items1 };
+                                                                                    const tmp98 = closure_7;
+                                                                                    if (bound > 0) {
+                                                                                      tmp100 = null;
+                                                                                      if (null != onSubmit) {
+                                                                                        const obj13 = { variant: "tertiary", size: "sm", text: intl6.string(onSubmit(3849).Pk5lfA), onPress: tmp33 };
+                                                                                        const Button = tmp(5379).Button;
+                                                                                        intl6 = tmp(1126).intl;
+                                                                                        tmp100 = closure_6(Button, obj13);
+                                                                                      }
+                                                                                    }
+                                                                                    items1 = [tmp100, , ];
+                                                                                    const obj14 = { style: tmp4.customField };
+                                                                                    items1[1] = closure_6(closure_5, obj14);
+                                                                                    let tmp104 = tmp23;
+                                                                                    const Button2 = tmp(5379).Button;
+                                                                                    const tmp103 = closure_6;
+                                                                                    if (null != onSubmit) {
+                                                                                      tmp104 = null == tmp49;
+                                                                                    }
+                                                                                    const obj15 = {
+                                                                                      variant: "primary",
+                                                                                      size: "sm",
+                                                                                      disabled: tmp104,
+                                                                                      text: string(w1nRmT),
+                                                                                      onPress() {
+                                                                                                                                                                          if (null != closure_21) {
+                                                                                                                                                                            closure_16(tmp);
+                                                                                                                                                                          }
+                                                                                                                                                                        }
+                                                                                    };
+                                                                                    const intl7 = tmp(1126).intl;
+                                                                                    string = intl7.string;
+                                                                                    if (bound === tmp53) {
+                                                                                      w1nRmT = tmp(1126).t.geKm7t;
+                                                                                    } else {
+                                                                                      w1nRmT = onSubmit(3849).w1nRmT;
+                                                                                    }
+                                                                                    items1[2] = tmp103(Button2, obj15);
+                                                                                    tmp98Result = tmp98(tmp99, obj12);
                                                                                   }
                                                                                 }
                                                                               }
                                                                             }
                                                                           }
-                                                                        }
-                                                                      }
-                                                                    }
-                                                                  }
-                                                                }
-                                                                class Z {
-                                                                  constructor(arg0) {
-                                                                    closure_0 = onSubmit;
-                                                                    tmp = closure_11;
-                                                                    if (tmp) {
-                                                                      tmp9 = closure_6;
-                                                                      tmp10 = closure_6((arr) => {
-                                                                        obj = {};
-                                                                        const merged = Object.assign(arr);
-                                                                        id = user.id;
-                                                                        let tmp4 = arr[user.id];
-                                                                        const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                                                                        ConjureClarification;
-                                                                        const tmp2 = user;
-                                                                        if (tmp4 == null) {
-                                                                          tmp4 = closure_9;
-                                                                        }
-                                                                        obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                                                                        return obj;
-                                                                      });
-                                                                    } else {
-                                                                      tmp2 = closure_5;
-                                                                      tmp3 = closure_5((arg0) => {
-                                                                        obj = {};
-                                                                        const merged = Object.assign(arg0);
-                                                                        obj[user.id] = "";
-                                                                        return obj;
-                                                                      });
-                                                                      obj = { kind: "option", optionId: null, text: null };
-                                                                      ({ id: obj.optionId, label: obj.text } = onSubmit);
-                                                                      closure_1 = obj;
-                                                                      tmp4 = closure_13;
-                                                                      if (tmp4) {
-                                                                        tmp7 = closure_4;
-                                                                        tmp8 = closure_4((arg0) => {
-                                                                          obj = {};
-                                                                          const merged = Object.assign(arg0);
-                                                                          obj[user.id] = obj;
-                                                                          return obj;
-                                                                        });
-                                                                      } else {
-                                                                        tmp5 = closure_15;
-                                                                        tmp6 = closure_15(obj);
-                                                                      }
-                                                                    }
-                                                                    return;
-                                                                  }
-                                                                }
-                                                                let tmp71 = null;
-                                                                const obj11 = { style: tmp4.footer, children: items1 };
-                                                                const tmp69 = closure_7;
-                                                                if (bound > 0) {
-                                                                  tmp71 = null;
-                                                                  if (null != onSubmit) {
-                                                                    const obj12 = { variant: "tertiary", size: "sm", text: obj24.string(onSubmit(3723).Pk5lfA), onPress: tmp28 };
-                                                                    const Button = tmp(5594).Button;
-                                                                    class Z {
-                                                                      constructor(arg0) {
-                                                                        closure_0 = onSubmit;
-                                                                        tmp = closure_11;
-                                                                        if (tmp) {
-                                                                          tmp9 = closure_6;
-                                                                          tmp10 = closure_6((arr) => {
-                                                                            obj = {};
-                                                                            const merged = Object.assign(arr);
-                                                                            id = user.id;
-                                                                            let tmp4 = arr[user.id];
-                                                                            const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                                                                            ConjureClarification;
-                                                                            const tmp2 = user;
-                                                                            if (tmp4 == null) {
-                                                                              tmp4 = closure_9;
+                                                                          let tmp89Result = null;
+                                                                          if (null != tmp25.input) {
+                                                                            const obj16 = { projectId, question: tmp25, value: tmp92, disabled: null == onSubmit, onChange: tmp47, fallback: tmp93 };
+                                                                            tmp92 = tmp18[tmp25.id];
+                                                                            const tmp89 = closure_6;
+                                                                            const tmp91 = onSubmit(17311);
+                                                                            if (tmp92 == null) {
+                                                                              tmp92 = disabled;
                                                                             }
-                                                                            obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                                                                            return obj;
-                                                                          });
-                                                                        } else {
-                                                                          tmp2 = closure_5;
-                                                                          tmp3 = closure_5((arg0) => {
-                                                                            obj = {};
-                                                                            const merged = Object.assign(arg0);
-                                                                            obj[user.id] = "";
-                                                                            return obj;
-                                                                          });
-                                                                          obj = { kind: "option", optionId: null, text: null };
-                                                                          ({ id: obj.optionId, label: obj.text } = onSubmit);
-                                                                          closure_1 = obj;
-                                                                          tmp4 = closure_13;
-                                                                          if (tmp4) {
-                                                                            tmp7 = closure_4;
-                                                                            tmp8 = closure_4((arg0) => {
-                                                                              obj = {};
-                                                                              const merged = Object.assign(arg0);
-                                                                              obj[user.id] = obj;
-                                                                              return obj;
-                                                                            });
-                                                                          } else {
-                                                                            tmp5 = closure_15;
-                                                                            tmp6 = closure_15(obj);
+                                                                            tmp93 = null;
+                                                                            if (false === tmp25.allow_custom) {
+                                                                              tmp93 = tmp54;
+                                                                            }
+                                                                            tmp89Result = tmp89(tmp91, obj16);
                                                                           }
+                                                                          cResult[73] = null == onSubmit;
+                                                                          cResult[74] = tmp18;
+                                                                          cResult[75] = tmp54;
+                                                                          cResult[76] = tmp47;
+                                                                          cResult[77] = projectId;
+                                                                          cResult[78] = tmp25;
+                                                                          cResult[79] = tmp89Result;
+                                                                          tmp87 = tmp89Result;
                                                                         }
-                                                                        return;
                                                                       }
                                                                     }
-                                                                    tmp71 = closure_6(Button, obj12);
                                                                   }
                                                                 }
-                                                                items1 = [tmp71, , ];
-                                                                const obj13 = { style: tmp4.customField };
-                                                                items1[1] = closure_6(View, obj13);
-                                                                let tmp75 = tmp17;
-                                                                const Button2 = tmp(5594).Button;
-                                                                const tmp74 = closure_6;
-                                                                if (null != onSubmit) {
-                                                                  tmp75 = null == tmp36;
-                                                                }
-                                                                const obj15 = {
-                                                                  variant: "primary",
-                                                                  size: "sm",
-                                                                  disabled: tmp75,
-                                                                  text: string(w1nRmT),
-                                                                  onPress() {
-                                                                                                                                  if (null != closure_19) {
-                                                                                                                                    closure_15(tmp);
-                                                                                                                                  }
-                                                                                                                                }
-                                                                };
-                                                                let intl2 = tmp(1126).intl;
-                                                                string = intl2.string;
-                                                                if (bound === tmp39) {
-                                                                  w1nRmT = tmp(1126).t.geKm7t;
-                                                                } else {
-                                                                  w1nRmT = onSubmit(3723).w1nRmT;
-                                                                }
-                                                                items1[2] = tmp74(Button2, obj15);
-                                                                tmp69(View, obj11);
                                                               }
                                                             }
                                                           }
-                                                        }
-                                                        class Z {
-                                                          constructor(arg0) {
-                                                            closure_0 = onSubmit;
-                                                            tmp = closure_11;
-                                                            if (tmp) {
-                                                              tmp9 = closure_6;
-                                                              tmp10 = closure_6((arr) => {
-                                                                obj = {};
-                                                                const merged = Object.assign(arr);
-                                                                id = user.id;
-                                                                let tmp4 = arr[user.id];
-                                                                const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                                                                ConjureClarification;
-                                                                const tmp2 = user;
-                                                                if (tmp4 == null) {
-                                                                  tmp4 = closure_9;
-                                                                }
-                                                                obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                                                                return obj;
-                                                              });
-                                                            } else {
-                                                              tmp2 = closure_5;
-                                                              tmp3 = closure_5((arg0) => {
-                                                                obj = {};
-                                                                const merged = Object.assign(arg0);
-                                                                obj[user.id] = "";
-                                                                return obj;
-                                                              });
-                                                              obj = { kind: "option", optionId: null, text: null };
-                                                              ({ id: obj.optionId, label: obj.text } = onSubmit);
-                                                              closure_1 = obj;
-                                                              tmp4 = closure_13;
-                                                              if (tmp4) {
-                                                                tmp7 = closure_4;
-                                                                tmp8 = closure_4((arg0) => {
-                                                                  obj = {};
-                                                                  const merged = Object.assign(arg0);
-                                                                  obj[user.id] = obj;
-                                                                  return obj;
-                                                                });
+                                                          if (tmp27) {
+                                                            const obj17 = { projectId, question: tmp25, selectedIds: answeredOptionIdsResult, disabled: null == onSubmit, onPick: tmp32, own: conjureOwnImages.controlsFor(tmp25, null == onSubmit) };
+                                                            const tmp86 = onSubmit(17308);
+                                                            mapped = closure_6(tmp86, obj17);
+                                                          } else if (true === tmp25.multi_select) {
+                                                            const obj18 = {
+                                                              hasIcons: false,
+                                                              children: options.map((label) => {
+                                                                                                                          let joined;
+                                                                                                                          let closure_0 = label;
+                                                                                                                          str = "";
+                                                                                                                          const obj = {
+                                                                                                                            label: label.label,
+                                                                                                                            subLabel: joined,
+                                                                                                                            checked: answeredOptionIdsResult.includes(label.id),
+                                                                                                                            disabled,
+                                                                                                                            onPress() {
+                                                                                                                              return closure_17(label);
+                                                                                                                            }
+                                                                                                                          };
+                                                                                                                          const TableCheckboxRow = clarification(optionHeader[19]).TableCheckboxRow;
+                                                                                                                          const tmp = closure_6;
+                                                                                                                          const tmp2 = clarification;
+                                                                                                                          if (true === label.recommended) {
+                                                                                                                            const intl = tmp2(tmp3[6]).intl;
+                                                                                                                            str = intl.string(onSubmit(tmp3[7]).zku6r1);
+                                                                                                                          }
+                                                                                                                          const items = [str, ];
+                                                                                                                          let str2 = label.detail;
+                                                                                                                          if (str2 == null) {
+                                                                                                                            str2 = "";
+                                                                                                                          }
+                                                                                                                          items[1] = str2;
+                                                                                                                          const found = items.filter(f128743);
+                                                                                                                          joined = undefined;
+                                                                                                                          if (found.length > 0) {
+                                                                                                                            joined = found.join(" \u00B7 ");
+                                                                                                                          }
+                                                                                                                          return tmp(TableCheckboxRow, obj, label.id);
+                                                                                                                        })
+                                                            };
+                                                            options = tmp25.options;
+                                                            const TableRowGroup = tmp(6265).TableRowGroup;
+                                                            mapped = closure_6(TableRowGroup, obj18);
+                                                          } else {
+                                                            const options1 = tmp25.options;
+                                                            mapped = options1.map((answer) => {
+                                                              let AQbxhf;
+                                                              let formatToPlainString;
+                                                              let intl2;
+                                                              let items;
+                                                              let items1;
+                                                              let obj2;
+                                                              let tmp5;
+                                                              let closure_0 = answer;
+                                                              let fn;
+                                                              const Card = clarification(optionHeader[20]).Card;
+                                                              if (!closure_10) {
+                                                                fn = () => closure_17(answer);
+                                                              }
+                                                              const obj = { onPress: fn, accessibilityLabel: formatToPlainString(AQbxhf, obj2), children: items1 };
+                                                              const intl = tmp2(tmp3[6]).intl;
+                                                              formatToPlainString = intl.formatToPlainString;
+                                                              if (true === answer.recommended) {
+                                                                AQbxhf = onSubmit(tmp3[7])["2p6UFz"];
+                                                                tmp5 = onSubmit;
                                                               } else {
-                                                                tmp5 = closure_15;
-                                                                tmp6 = closure_15(obj);
+                                                                AQbxhf = onSubmit(tmp3[7]).AQbxhf;
+                                                                tmp5 = onSubmit;
                                                               }
-                                                            }
-                                                            return;
+                                                              const obj3 = { style: optionHeader.optionHeader, children: items };
+                                                              items = [, ];
+                                                              obj2 = { answer: answer.label };
+                                                              const obj4 = { variant: "text-sm/semibold", color: "text-default", children: answer.label };
+                                                              items[0] = closure_6(clarification(optionHeader[14]).Text, obj4);
+                                                              let tmp8Result = null;
+                                                              const tmp7 = closure_5;
+                                                              if (true === answer.recommended) {
+                                                                const obj5 = { variant: "text-xs/semibold", color: "text-muted", children: intl2.string(tmp5(optionHeader[7]).zku6r1) };
+                                                                const Text = tmp2(tmp3[14]).Text;
+                                                                intl2 = tmp2(tmp3[6]).intl;
+                                                                tmp8Result = tmp8(Text, obj5);
+                                                              }
+                                                              items[1] = tmp8Result;
+                                                              items1 = [closure_7(tmp7, obj3), ];
+                                                              let tmp8Result2 = null;
+                                                              if (null != answer.detail) {
+                                                                tmp8Result2 = null;
+                                                                if ("" !== answer.detail) {
+                                                                  const obj6 = { variant: "text-xs/normal", color: "text-muted", children: answer.detail };
+                                                                  tmp8Result2 = tmp8(tmp2(tmp3[14]).Text, obj6);
+                                                                }
+                                                              }
+                                                              items1[1] = tmp8Result2;
+                                                              return closure_7(Card, obj, answer.id);
+                                                            });
                                                           }
+                                                          cResult[63] = null == onSubmit;
+                                                          cResult[64] = tmp32;
+                                                          cResult[65] = true === tmp25.multi_select;
+                                                          cResult[66] = conjureOwnImages;
+                                                          cResult[67] = tmp27;
+                                                          cResult[68] = projectId;
+                                                          cResult[69] = tmp25;
+                                                          cResult[70] = answeredOptionIdsResult;
+                                                          cResult[71] = tmp4.optionHeader;
+                                                          cResult[72] = mapped;
+                                                          tmp81 = mapped;
                                                         }
-                                                        cResult[57] = tmp35;
-                                                        cResult[58] = str;
-                                                        cResult[59] = tmp22;
-                                                        cResult[60] = clarification.questions[bound].id;
-                                                        cResult[61] = clarification.questions[bound].question;
-                                                        cResult[62] = null;
-                                                        tmp64 = tmp65;
                                                       }
+                                                      const obj19 = { style: tmp4.footer, children: items2 };
+                                                      items2 = [tmp65, tmp69];
+                                                      const tmp76 = closure_7(closure_5, obj19);
+                                                      cResult[57] = tmp4.footer;
+                                                      cResult[58] = tmp65;
+                                                      cResult[59] = tmp69;
+                                                      cResult[60] = tmp76;
+                                                      tmp73 = tmp76;
                                                     }
                                                   }
+                                                  const obj20 = { style: tmp4.customField, children: items3 };
+                                                  items3 = [tmp58, tmp62];
+                                                  const tmp68 = closure_7(closure_5, obj20);
+                                                  cResult[51] = tmp4.customField;
+                                                  cResult[52] = tmp58;
+                                                  cResult[53] = tmp62;
+                                                  cResult[54] = tmp68;
+                                                  tmp65 = tmp68;
                                                 }
+                                                let tmp59 = null;
+                                                if (clarification.questions.length > 1) {
+                                                  const obj21 = { variant: "text-xs/semibold", color: "text-muted", children: intl3.formatToPlainString(onSubmit(3849).yzYUjq, obj22) };
+                                                  let Text = tmp(5088).Text;
+                                                  intl3 = tmp(1126).intl;
+                                                  obj22 = { index: bound + 1, total: clarification.questions.length };
+                                                  tmp59 = closure_6(Text, obj21);
+                                                }
+                                                cResult[46] = bound;
+                                                cResult[47] = clarification.questions.length;
+                                                cResult[48] = tmp59;
+                                                tmp58 = tmp59;
                                               }
                                             }
                                           }
                                         }
-                                      }
-                                      class Z {
-                                        constructor(arg0) {
-                                          closure_0 = onSubmit;
-                                          tmp = closure_11;
-                                          if (tmp) {
-                                            tmp9 = closure_6;
-                                            tmp10 = closure_6((arr) => {
-                                              obj = {};
-                                              const merged = Object.assign(arr);
-                                              id = user.id;
-                                              let tmp4 = arr[user.id];
-                                              const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                                              ConjureClarification;
-                                              const tmp2 = user;
-                                              if (tmp4 == null) {
-                                                tmp4 = closure_9;
-                                              }
-                                              obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                                              return obj;
-                                            });
-                                          } else {
-                                            tmp2 = closure_5;
-                                            tmp3 = closure_5((arg0) => {
-                                              obj = {};
-                                              const merged = Object.assign(arg0);
-                                              obj[user.id] = "";
-                                              return obj;
-                                            });
-                                            obj = { kind: "option", optionId: null, text: null };
-                                            ({ id: obj.optionId, label: obj.text } = onSubmit);
-                                            closure_1 = obj;
-                                            tmp4 = closure_13;
-                                            if (tmp4) {
-                                              tmp7 = closure_4;
-                                              tmp8 = closure_4((arg0) => {
-                                                obj = {};
-                                                const merged = Object.assign(arg0);
-                                                obj[user.id] = obj;
-                                                return obj;
-                                              });
-                                            } else {
-                                              tmp5 = closure_15;
-                                              tmp6 = closure_15(obj);
-                                            }
-                                          }
-                                          return;
+                                        let tmp55 = null;
+                                        if (!tmp27) {
+                                          const obj23 = {
+                                            size: "md",
+                                            placeholder: intl.string(onSubmit(3849)["tOC+tn"]),
+                                            accessibilityLabel: intl2.formatToPlainString(onSubmit(3849)["4JeYPB"], obj24),
+                                            value: str,
+                                            onChange(arg0) {
+                                                                                      let closure_0 = arg0;
+                                                                                      return closure_5((arg0) => {
+                                                                                        const obj = {};
+                                                                                        const merged = Object.assign(arg0);
+                                                                                        obj[id.id] = closure_0;
+                                                                                        return obj;
+                                                                                      });
+                                                                                    },
+                                            onSubmitEditing: tmp48,
+                                            returnKeyType: "send"
+                                          };
+                                          const TextInput = tmp(6286).TextInput;
+                                          intl = tmp(1126).intl;
+                                          intl2 = tmp(1126).intl;
+                                          obj24 = { question: tmp25.question };
+                                          tmp55 = closure_6(TextInput, obj23);
                                         }
+                                        cResult[40] = tmp48;
+                                        cResult[41] = str;
+                                        cResult[42] = tmp27;
+                                        cResult[43] = tmp25.id;
+                                        cResult[44] = tmp25.question;
+                                        cResult[45] = tmp55;
+                                        tmp54 = tmp55;
                                       }
-                                      cResult[46] = accessibilityRole;
-                                      cResult[47] = null == onSubmit;
-                                      cResult[48] = tmp27;
-                                      cResult[49] = true === clarification.questions[bound].multi_select;
-                                      cResult[50] = conjureOwnImages;
-                                      cResult[51] = tmp22;
-                                      cResult[52] = projectId;
-                                      cResult[53] = clarification.questions[bound];
-                                      cResult[54] = answeredOptionIdsResult;
-                                      cResult[55] = tmp4.optionHeader;
-                                      cResult[56] = tmp63;
-                                      tmp62 = tmp63;
                                     }
                                   }
-                                  class Z {
-                                    constructor(arg0) {
-                                      closure_0 = onSubmit;
-                                      tmp = closure_11;
-                                      if (tmp) {
-                                        tmp9 = closure_6;
-                                        tmp10 = closure_6((arr) => {
-                                          obj = {};
-                                          const merged = Object.assign(arr);
-                                          id = user.id;
-                                          let tmp4 = arr[user.id];
-                                          const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                                          ConjureClarification;
-                                          const tmp2 = user;
-                                          if (tmp4 == null) {
-                                            tmp4 = closure_9;
-                                          }
-                                          obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                                          return obj;
-                                        });
-                                      } else {
-                                        tmp2 = closure_5;
-                                        tmp3 = closure_5((arg0) => {
-                                          obj = {};
-                                          const merged = Object.assign(arg0);
-                                          obj[user.id] = "";
-                                          return obj;
-                                        });
-                                        obj = { kind: "option", optionId: null, text: null };
-                                        ({ id: obj.optionId, label: obj.text } = onSubmit);
-                                        closure_1 = obj;
-                                        tmp4 = closure_13;
-                                        if (tmp4) {
-                                          tmp7 = closure_4;
-                                          tmp8 = closure_4((arg0) => {
-                                            obj = {};
-                                            const merged = Object.assign(arg0);
-                                            obj[user.id] = obj;
-                                            return obj;
-                                          });
-                                        } else {
-                                          tmp5 = closure_15;
-                                          tmp6 = closure_15(obj);
-                                        }
-                                      }
-                                      return;
-                                    }
-                                  }
-                                  const obj16 = { style: tmp4.footer, children: items2 };
-                                  items2 = [tmp47, tmp50];
-                                  const tmp57 = closure_7(View, obj16);
-                                  cResult[40] = tmp4.footer;
-                                  cResult[41] = tmp47;
-                                  cResult[42] = tmp50;
-                                  cResult[43] = tmp57;
-                                  tmp55 = tmp57;
                                 }
-                              }
-                              class Z {
-                                constructor(arg0) {
-                                  closure_0 = onSubmit;
-                                  tmp = closure_11;
-                                  if (tmp) {
-                                    tmp9 = closure_6;
-                                    tmp10 = closure_6((arr) => {
-                                      obj = {};
-                                      const merged = Object.assign(arr);
-                                      id = user.id;
-                                      let tmp4 = arr[user.id];
-                                      const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                                      ConjureClarification;
-                                      const tmp2 = user;
-                                      if (tmp4 == null) {
-                                        tmp4 = closure_9;
-                                      }
-                                      obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                                      return obj;
-                                    });
-                                  } else {
-                                    tmp2 = closure_5;
-                                    tmp3 = closure_5((arg0) => {
-                                      obj = {};
-                                      const merged = Object.assign(arg0);
-                                      obj[user.id] = "";
-                                      return obj;
-                                    });
-                                    obj = { kind: "option", optionId: null, text: null };
-                                    ({ id: obj.optionId, label: obj.text } = onSubmit);
-                                    closure_1 = obj;
-                                    tmp4 = closure_13;
-                                    if (tmp4) {
-                                      tmp7 = closure_4;
-                                      tmp8 = closure_4((arg0) => {
-                                        obj = {};
-                                        const merged = Object.assign(arg0);
-                                        obj[user.id] = obj;
-                                        return obj;
-                                      });
-                                    } else {
-                                      tmp5 = closure_15;
-                                      tmp6 = closure_15(obj);
-                                    }
+                                if (null != tmp39) {
+                                  let tmp52 = null;
+                                  if ("" !== tmp39.text) {
+                                    tmp52 = tmp39;
                                   }
-                                  return;
-                                }
-                              }
-                              const obj17 = { style: tmp4.customField, children: items3 };
-                              items3 = [tmp40, tmp44];
-                              const tmp49 = closure_7(View, obj17);
-                              cResult[34] = tmp4.customField;
-                              cResult[35] = tmp40;
-                              cResult[36] = tmp44;
-                              cResult[37] = tmp49;
-                              tmp47 = tmp49;
-                            }
-                            class Z {
-                              constructor(arg0) {
-                                closure_0 = onSubmit;
-                                tmp = closure_11;
-                                if (tmp) {
-                                  tmp9 = closure_6;
-                                  tmp10 = closure_6((arr) => {
-                                    obj = {};
-                                    const merged = Object.assign(arr);
-                                    id = user.id;
-                                    let tmp4 = arr[user.id];
-                                    const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                                    ConjureClarification;
-                                    const tmp2 = user;
-                                    if (tmp4 == null) {
-                                      tmp4 = closure_9;
-                                    }
-                                    obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                                    return obj;
-                                  });
+                                  tmp50 = tmp52;
+                                } else if (null != multiSelectAnswerResult) {
+                                  let tmp51 = null;
+                                  if ("" !== multiSelectAnswerResult.text) {
+                                    tmp51 = multiSelectAnswerResult;
+                                  }
+                                  tmp50 = tmp51;
                                 } else {
-                                  tmp2 = closure_5;
-                                  tmp3 = closure_5((arg0) => {
-                                    obj = {};
-                                    const merged = Object.assign(arg0);
-                                    obj[user.id] = "";
-                                    return obj;
-                                  });
-                                  obj = { kind: "option", optionId: null, text: null };
-                                  ({ id: obj.optionId, label: obj.text } = onSubmit);
-                                  closure_1 = obj;
-                                  tmp4 = closure_13;
-                                  if (tmp4) {
-                                    tmp7 = closure_4;
-                                    tmp8 = closure_4((arg0) => {
-                                      obj = {};
-                                      const merged = Object.assign(arg0);
-                                      obj[user.id] = obj;
-                                      return obj;
-                                    });
+                                  let str2 = "";
+                                  if ("" !== str.trim()) {
+                                    tmp50 = { kind: "custom", text: str.trim() };
+                                    const obj25 = { kind: "custom", text: str.trim() };
                                   } else {
-                                    tmp5 = closure_15;
-                                    tmp6 = closure_15(obj);
-                                  }
-                                }
-                                return;
-                              }
-                            }
-                            if (clarification.questions.length > 1) {
-                              const obj18 = { variant: "text-xs/semibold", color: "text-muted", children: obj14.formatToPlainString(onSubmit(3723).yzYUjq, obj19) };
-                              let Text = tmp(4886).Text;
-                              class Z {
-                                constructor(arg0) {
-                                  closure_0 = onSubmit;
-                                  tmp = closure_11;
-                                  if (tmp) {
-                                    tmp9 = closure_6;
-                                    tmp10 = closure_6((arr) => {
-                                      obj = {};
-                                      const merged = Object.assign(arr);
-                                      id = user.id;
-                                      let tmp4 = arr[user.id];
-                                      const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                                      ConjureClarification;
-                                      const tmp2 = user;
-                                      if (tmp4 == null) {
-                                        tmp4 = closure_9;
-                                      }
-                                      obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                                      return obj;
-                                    });
-                                  } else {
-                                    tmp2 = closure_5;
-                                    tmp3 = closure_5((arg0) => {
-                                      obj = {};
-                                      const merged = Object.assign(arg0);
-                                      obj[user.id] = "";
-                                      return obj;
-                                    });
-                                    obj = { kind: "option", optionId: null, text: null };
-                                    ({ id: obj.optionId, label: obj.text } = onSubmit);
-                                    closure_1 = obj;
-                                    tmp4 = closure_13;
-                                    if (tmp4) {
-                                      tmp7 = closure_4;
-                                      tmp8 = closure_4((arg0) => {
-                                        obj = {};
-                                        const merged = Object.assign(arg0);
-                                        obj[user.id] = obj;
-                                        return obj;
-                                      });
-                                    } else {
-                                      tmp5 = closure_15;
-                                      tmp6 = closure_15(obj);
+                                    tmp50 = first1[tmp25.id];
+                                    if (tmp50 == null) {
+                                      tmp50 = null;
                                     }
                                   }
-                                  return;
                                 }
+                                cResult[34] = first1;
+                                cResult[35] = str;
+                                cResult[36] = multiSelectAnswerResult;
+                                cResult[37] = tmp39;
+                                cResult[38] = tmp25.id;
+                                cResult[39] = tmp50;
+                                tmp49 = tmp50;
                               }
-                              obj19 = { index: bound + 1, total: clarification.questions.length };
-                              tmp41 = closure_6(Text, obj18);
                             }
-                            cResult[29] = bound;
-                            cResult[30] = clarification.questions.length;
-                            cResult[31] = tmp41;
-                            tmp40 = tmp41;
                           }
-                        }
-                      }
-                      if (null != multiSelectAnswerResult) {
-                        class Z {
-                          constructor(arg0) {
-                            closure_0 = onSubmit;
-                            tmp = closure_11;
-                            if (tmp) {
-                              tmp9 = closure_6;
-                              tmp10 = closure_6((arr) => {
-                                obj = {};
-                                const merged = Object.assign(arr);
-                                id = user.id;
-                                let tmp4 = arr[user.id];
-                                const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                                ConjureClarification;
-                                const tmp2 = user;
-                                if (tmp4 == null) {
-                                  tmp4 = closure_9;
+                          function ve() {
+                            if (null == text) {
+                              if (null == multiSelectAnswerResult) {
+                                const trimmed = str.trim();
+                                if ("" !== trimmed) {
+                                  const obj = { kind: "custom", text: trimmed };
+                                  closure_16(obj);
                                 }
-                                obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                                return obj;
-                              });
-                            } else {
-                              tmp2 = closure_5;
-                              tmp3 = closure_5((arg0) => {
-                                obj = {};
-                                const merged = Object.assign(arg0);
-                                obj[user.id] = "";
-                                return obj;
-                              });
-                              obj = { kind: "option", optionId: null, text: null };
-                              ({ id: obj.optionId, label: obj.text } = onSubmit);
-                              closure_1 = obj;
-                              tmp4 = closure_13;
-                              if (tmp4) {
-                                tmp7 = closure_4;
-                                tmp8 = closure_4((arg0) => {
-                                  obj = {};
-                                  const merged = Object.assign(arg0);
-                                  obj[user.id] = obj;
-                                  return obj;
-                                });
-                              } else {
-                                tmp5 = closure_15;
-                                tmp6 = closure_15(obj);
+                              } else if ("" !== multiSelectAnswerResult.text) {
+                                closure_16(multiSelectAnswerResult);
                               }
-                            }
-                            return;
-                          }
-                        }
-                      } else if ("" !== str.trim()) {
-                        tmp37 = { kind: "custom", text: str.trim() };
-                        const obj20 = { kind: "custom", text: str.trim() };
-                      } else {
-                        tmp37 = first1[tmp19.id];
-                        if (tmp37 == null) {
-                          tmp37 = null;
-                        }
-                      }
-                      class Z {
-                        constructor(arg0) {
-                          closure_0 = onSubmit;
-                          tmp = closure_11;
-                          if (tmp) {
-                            tmp9 = closure_6;
-                            tmp10 = closure_6((arr) => {
-                              obj = {};
-                              const merged = Object.assign(arr);
-                              id = user.id;
-                              let tmp4 = arr[user.id];
-                              const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                              ConjureClarification;
-                              const tmp2 = user;
-                              if (tmp4 == null) {
-                                tmp4 = closure_9;
-                              }
-                              obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                              return obj;
-                            });
-                          } else {
-                            tmp2 = closure_5;
-                            tmp3 = closure_5((arg0) => {
-                              obj = {};
-                              const merged = Object.assign(arg0);
-                              obj[user.id] = "";
-                              return obj;
-                            });
-                            obj = { kind: "option", optionId: null, text: null };
-                            ({ id: obj.optionId, label: obj.text } = onSubmit);
-                            closure_1 = obj;
-                            tmp4 = closure_13;
-                            if (tmp4) {
-                              tmp7 = closure_4;
-                              tmp8 = closure_4((arg0) => {
-                                obj = {};
-                                const merged = Object.assign(arg0);
-                                obj[user.id] = obj;
-                                return obj;
-                              });
-                            } else {
-                              tmp5 = closure_15;
-                              tmp6 = closure_15(obj);
+                            } else if ("" !== text.text) {
+                              closure_16(text);
                             }
                           }
-                          return;
+                          cResult[29] = str;
+                          cResult[30] = multiSelectAnswerResult;
+                          cResult[31] = tmp39;
+                          cResult[32] = tmp31;
+                          cResult[33] = ve;
+                          tmp48 = ve;
                         }
                       }
-                      cResult[24] = first1;
-                      cResult[25] = str;
-                      cResult[26] = multiSelectAnswerResult;
-                      cResult[27] = clarification.questions[bound].id;
-                      cResult[28] = tmp37;
-                      tmp36 = tmp37;
                     }
                   }
-                  function ie() {
-                    if (null == multiSelectAnswerResult) {
-                      const trimmed = closure_1_17.trim();
-                      if ("" !== trimmed) {
-                        const obj = { kind: "custom", text: trimmed };
-                        closure_15(obj);
-                      }
-                    } else if ("" !== multiSelectAnswerResult.text) {
-                      closure_15(multiSelectAnswerResult);
+                  let entityAnswerResult = null;
+                  if (null != tmp25.input) {
+                    const input = tmp25.input;
+                    let tmp42 = tmp18[tmp25.id];
+                    const entityAnswer = tmp(17307).entityAnswer;
+                    const tmpResult8 = tmp(17307);
+                    if (tmp42 == null) {
+                      tmp42 = disabled;
                     }
+                    entityAnswerResult = entityAnswer(input, tmp42, str, tmp21[tmp25.id]);
                   }
-                  cResult[20] = str;
-                  cResult[21] = multiSelectAnswerResult;
-                  cResult[22] = tmp26;
-                  cResult[23] = ie;
-                  tmp35 = ie;
+                  cResult[21] = str;
+                  cResult[22] = tmp18;
+                  cResult[23] = tmp21;
+                  cResult[24] = tmp25.id;
+                  cResult[25] = tmp25.input;
+                  cResult[26] = entityAnswerResult;
+                  tmp39 = entityAnswerResult;
                 }
-                class Z {
-                  constructor(arg0) {
-                    closure_0 = onSubmit;
-                    tmp = closure_11;
-                    if (tmp) {
-                      tmp9 = closure_6;
-                      tmp10 = closure_6((arr) => {
-                        obj = {};
-                        const merged = Object.assign(arr);
-                        id = user.id;
-                        let tmp4 = arr[user.id];
-                        const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                        ConjureClarification;
-                        const tmp2 = user;
-                        if (tmp4 == null) {
-                          tmp4 = closure_9;
-                        }
-                        obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
-                        return obj;
-                      });
-                    } else {
-                      tmp2 = closure_5;
-                      tmp3 = closure_5((arg0) => {
-                        obj = {};
-                        const merged = Object.assign(arg0);
-                        obj[user.id] = "";
-                        return obj;
-                      });
-                      obj = { kind: "option", optionId: null, text: null };
-                      ({ id: obj.optionId, label: obj.text } = onSubmit);
-                      closure_1 = obj;
-                      tmp4 = closure_13;
-                      if (tmp4) {
-                        tmp7 = closure_4;
-                        tmp8 = closure_4((arg0) => {
-                          obj = {};
-                          const merged = Object.assign(arg0);
-                          obj[user.id] = obj;
-                          return obj;
-                        });
-                      } else {
-                        tmp5 = closure_15;
-                        tmp6 = closure_15(obj);
-                      }
-                    }
-                    return;
+                function de() {
+                  const tmp = disabled || 0 === bound;
+                  if (!tmp) {
+                    closure_9(bound - 1);
                   }
                 }
-                cResult[17] = null == onSubmit;
-                cResult[18] = bound;
-                cResult[19] = tmp29;
-                tmp28 = tmp29;
+                cResult[18] = null == onSubmit;
+                cResult[19] = bound;
+                cResult[20] = de;
+                tmp33 = de;
               }
             }
           }
-          class Z {
-            constructor(arg0) {
-              closure_0 = onSubmit;
-              tmp = closure_11;
-              if (tmp) {
-                tmp9 = closure_6;
-                tmp10 = closure_6((arr) => {
+          function re(arg0) {
+            let user;
+            id = arg0;
+            const tmp = closure_13;
+            if (tmp) {
+              closure_6((arr) => {
+                obj = {};
+                const merged = Object.assign(arr);
+                id = user.id;
+                let tmp4 = arr[user.id];
+                const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
+                ConjureClarification;
+                const tmp2 = user;
+                if (tmp4 == null) {
+                  tmp4 = closure_9;
+                }
+                obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
+                return obj;
+              });
+            } else {
+              let tmp2 = closure_5;
+              const tmp3 = closure_5((arg0) => {
+                obj = {};
+                const merged = Object.assign(arg0);
+                obj[user.id] = "";
+                return obj;
+              });
+              let obj = { kind: "option", optionId: null, text: null };
+              ({ id: obj.optionId, label: obj.text } = arg0);
+              let tmp4 = closure_14;
+              if (tmp4) {
+                closure_4((arg0) => {
                   obj = {};
-                  const merged = Object.assign(arr);
-                  id = user.id;
-                  let tmp4 = arr[user.id];
-                  const toggleClarificationOption = ConjureClarification.toggleClarificationOption;
-                  ConjureClarification;
-                  const tmp2 = user;
-                  if (tmp4 == null) {
-                    tmp4 = closure_9;
-                  }
-                  obj[id] = toggleClarificationOption(tmp2, tmp4, id.id);
+                  const merged = Object.assign(arg0);
+                  obj[user.id] = obj;
                   return obj;
                 });
               } else {
-                tmp2 = closure_5;
-                tmp3 = closure_5((arg0) => {
-                  obj = {};
-                  const merged = Object.assign(arg0);
-                  obj[user.id] = "";
-                  return obj;
-                });
-                obj = { kind: "option", optionId: null, text: null };
-                ({ id: obj.optionId, label: obj.text } = onSubmit);
-                closure_1 = obj;
-                tmp4 = closure_13;
-                if (tmp4) {
-                  tmp7 = closure_4;
-                  tmp8 = closure_4((arg0) => {
-                    obj = {};
-                    const merged = Object.assign(arg0);
-                    obj[user.id] = obj;
-                    return obj;
-                  });
-                } else {
-                  tmp5 = closure_15;
-                  tmp6 = closure_15(obj);
-                }
+                closure_16(obj);
               }
-              return;
             }
           }
-          cResult[12] = true === clarification.questions[bound].multi_select;
-          cResult[13] = tmp22;
-          cResult[14] = clarification.questions[bound];
-          cResult[15] = tmp26;
-          cResult[16] = Z;
-          tmp27 = Z;
+          cResult[13] = true === tmp25.multi_select;
+          cResult[14] = tmp27;
+          cResult[15] = tmp25;
+          cResult[16] = tmp31;
+          cResult[17] = re;
+          tmp32 = re;
         }
       }
     }
   }
-  class V {
-    constructor(arg0) {
-      if (null != onSubmit) {
-        const obj = {};
-        const merged = Object.assign(first1);
-        obj[id.id] = arg0;
-        closure_4(obj);
-        const obj5 = ConjureClarification;
-        const result = obj5.followingClarificationStep(clarification, obj, bound);
-        if (null == result) {
-          const tmp14Result = ConjureClarification;
-          const result1 = tmp14Result.formatClarificationAnswers(tmp16, obj);
-          if ("" !== result1) {
-            const tmp14Result3 = ConjureClarification;
-            const result2 = tmp14Result3.clarificationAnswersPayload(tmp16, obj);
-            const tmp14Result4 = ConjureClarification;
-            tmp(result1, result2, tmp14Result4.clarificationAnswerAttachments(clarification, obj));
-          }
-        } else {
-          closure_7(result);
+  function le(arg0) {
+    if (null != onSubmit) {
+      const obj = {};
+      const merged = Object.assign(first1);
+      obj[id.id] = arg0;
+      closure_4(obj);
+      const obj5 = ConjureClarification;
+      const result = obj5.followingClarificationStep(clarification, obj, bound);
+      if (null == result) {
+        const tmp14Result = ConjureClarification;
+        const result1 = tmp14Result.formatClarificationAnswers(tmp16, obj);
+        if ("" !== result1) {
+          const tmp14Result3 = ConjureClarification;
+          const result2 = tmp14Result3.clarificationAnswersPayload(tmp16, obj);
+          const tmp14Result4 = ConjureClarification;
+          tmp(result1, result2, tmp14Result4.clarificationAnswerAttachments(clarification, obj));
         }
+      } else {
+        closure_9(result);
       }
     }
   }
-  cResult[6] = first1;
-  cResult[7] = clarification;
-  cResult[8] = bound;
-  cResult[9] = onSubmit;
-  cResult[10] = clarification.questions[bound].id;
-  cResult[11] = V;
-  tmp26 = V;
-}) : ((onSubmit) => {
+  cResult[7] = first1;
+  cResult[8] = clarification;
+  cResult[9] = bound;
+  cResult[10] = onSubmit;
+  cResult[11] = tmp25.id;
+  cResult[12] = le;
+  tmp31 = le;
+}) : (function ConjureClarificationCard(onSubmit) {
   let _undefined;
   let _undefined2;
+  let _undefined3;
+  let _undefined4;
   let answeredOptionIdsResult;
   let c5;
+  let c6;
+  let c7;
   let clarification;
   let closure_4;
   let intl;
@@ -1459,17 +851,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSubmit) => {
   let intl4;
   let intl5;
   let intl6;
-  let items4;
   let items5;
-  let items7;
-  let obj15;
-  let obj9;
+  let items6;
+  let items8;
+  let obj10;
+  let obj5;
   let optionHeader;
+  let options;
   let projectId;
   let string;
-  let tmp28;
-  let tmp35Result6;
+  let tmp10;
+  let tmp40;
+  let tmp52Result6;
+  let tmp59;
   let tmp6;
+  let tmp60;
+  let tmp8;
   let w1nRmT;
   ({ projectId, clarification } = onSubmit);
   onSubmit = onSubmit.onSubmit;
@@ -1477,13 +874,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSubmit) => {
   let first;
   react = undefined;
   c5 = undefined;
+  c6 = undefined;
+  c7 = undefined;
   closure_8 = undefined;
-  let c14;
+  let c15;
   let callback;
   let callback1;
   let str;
-  let c18;
   let c19;
+  let c20;
+  let c21;
   let tmp = closure_8();
   dependencyMap = tmp;
   let obj = react;
@@ -1491,39 +891,40 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSubmit) => {
   first = tmp2[0];
   let tmp4 = tmp2[1];
   react = tmp4;
-  [tmp6, c5] = first(react.useState({}), 2);
-  const tmp5 = first(react.useState({}), 2);
-  const tmp7 = first(react.useState({}), 2);
-  let closure_6 = tmp7[1];
-  const first1 = tmp7[0];
-  const tmp9 = first(react.useState(0), 2);
-  let closure_7 = tmp9[1];
-  let tmp10 = null == onSubmit;
-  closure_8 = tmp10;
-  const bound = Math.min(tmp9[0], length - 1);
-  let tmp12 = clarification.questions[bound];
-  id = tmp12;
-  let tmp13 = true === tmp12.multi_select;
-  let closure_11 = tmp13;
-  let obj2 = clarification(4594);
-  const accessibilityRole = obj2.useCheckboxA11yNative({ checked: false }).accessibilityRole;
-  let obj3 = clarification(16717);
-  const isImageQuestionResult = obj3.isImageQuestion(tmp12);
-  let c13 = isImageQuestionResult;
-  if (tmp13) {
-    let tmp18 = first1[tmp12.id];
-    if (tmp18 == null) {
-      tmp18 = bound;
+  let tmp5 = first(react.useState({}), 2);
+  [tmp6, c5] = tmp5;
+  let tmp7 = first(react.useState({}), 2);
+  [tmp8, c6] = tmp7;
+  [tmp10, c7] = first(react.useState({}), 2);
+  const tmp9 = first(react.useState({}), 2);
+  const tmp11 = first(react.useState({}), 2);
+  closure_8 = tmp11[1];
+  const first1 = tmp11[0];
+  const tmp13 = first(react.useState(0), 2);
+  closure_9 = tmp13[1];
+  let tmp14 = null == onSubmit;
+  const disabled = tmp14;
+  const bound = Math.min(tmp13[0], length - 1);
+  const tmp16 = clarification.questions[bound];
+  let id = tmp16;
+  let closure_13 = tmp17;
+  let obj2 = clarification(17305);
+  const isImageQuestionResult = obj2.isImageQuestion(tmp16);
+  let c14 = isImageQuestionResult;
+  if (true === tmp16.multi_select) {
+    let tmp22 = tmp8[tmp16.id];
+    if (tmp22 == null) {
+      tmp22 = closure_9;
     }
-    answeredOptionIdsResult = tmp18;
+    answeredOptionIdsResult = tmp22;
   } else {
-    let tmp14Result = tmp14(16717);
-    answeredOptionIdsResult = tmp14Result.answeredOptionIds(first[tmp12.id]);
+    const tmp18Result = clarification(17305);
+    answeredOptionIdsResult = tmp18Result.answeredOptionIds(first[tmp16.id]);
   }
-  c14 = answeredOptionIdsResult;
-  let tmp14Result3 = tmp14(16718);
-  const conjureOwnImages = tmp14Result3.useConjureOwnImages(projectId, first, tmp4);
-  let items = [first, clarification, bound, onSubmit, tmp12.id];
+  c15 = answeredOptionIdsResult;
+  const tmp18Result4 = clarification(17306);
+  const conjureOwnImages = tmp18Result4.useConjureOwnImages(projectId, first, tmp4);
+  let items = [first, clarification, bound, onSubmit, tmp16.id];
   callback = obj.useCallback((arg0) => {
     if (null != onSubmit) {
       const obj = {};
@@ -1542,17 +943,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSubmit) => {
           tmp(result1, result2, tmp14Result4.clarificationAnswerAttachments(clarification, obj));
         }
       } else {
-        closure_7(result);
+        closure_9(result);
       }
     }
   }, items);
-  let items1 = [tmp13, isImageQuestionResult, tmp12, callback];
+  let items1 = [tmp17, isImageQuestionResult, tmp16, callback];
   callback1 = obj.useCallback((arg0) => {
     let user;
     id = arg0;
-    const tmp = closure_11;
+    const tmp = closure_13;
     if (tmp) {
-      closure_6((arr) => {
+      _undefined2((arr) => {
         obj = {};
         const merged = Object.assign(arr);
         id = user.id;
@@ -1576,7 +977,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSubmit) => {
       });
       let obj = { kind: "option", optionId: null, text: null };
       ({ id: obj.optionId, label: obj.text } = arg0);
-      let tmp4 = c13;
+      let tmp4 = c14;
       if (tmp4) {
         closure_4((arg0) => {
           obj = {};
@@ -1589,169 +990,100 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSubmit) => {
       }
     }
   }, items1);
-  const items2 = [tmp10, bound];
-  str = tmp6[tmp12.id];
+  const items2 = [tmp14, bound];
+  str = tmp6[tmp16.id];
   const callback2 = obj.useCallback(() => {
-    const tmp = closure_8 || 0 === bound;
+    const tmp = disabled || 0 === bound;
     if (!tmp) {
-      closure_7(bound - 1);
+      closure_9(bound - 1);
     }
   }, items2);
   if (str == null) {
     str = "";
   }
   let multiSelectAnswerResult = null;
-  if (tmp13) {
-    let tmp14Result4 = tmp14(16719);
-    multiSelectAnswerResult = tmp14Result4.multiSelectAnswer(tmp12, answeredOptionIdsResult, str, conjureOwnImages.multiPartFor(tmp12));
+  if (true === tmp16.multi_select) {
+    const tmp18Result5 = clarification(17307);
+    multiSelectAnswerResult = tmp18Result5.multiSelectAnswer(tmp16, answeredOptionIdsResult, str, conjureOwnImages.multiPartFor(tmp16));
   }
-  c18 = multiSelectAnswerResult;
-  const items3 = [str, multiSelectAnswerResult, callback];
-  const callback3 = obj.useCallback(() => {
-    if (null == _undefined) {
-      const trimmed = str.trim();
-      if ("" !== trimmed) {
-        const obj = { kind: "custom", text: trimmed };
-        callback(obj);
-      }
-    } else if ("" !== _undefined.text) {
-      callback(_undefined);
+  c19 = multiSelectAnswerResult;
+  let entityAnswerResult = null;
+  if (null != tmp16.input) {
+    const input = tmp16.input;
+    let tmp33 = tmp10[tmp16.id];
+    const entityAnswer = clarification(17307).entityAnswer;
+    const tmp18Result6 = clarification(17307);
+    if (tmp33 == null) {
+      tmp33 = disabled;
     }
-  }, items3);
-  if (null != multiSelectAnswerResult) {
-    let tmp29 = null;
-    if ("" !== multiSelectAnswerResult.text) {
-      tmp29 = multiSelectAnswerResult;
-    }
-    tmp28 = tmp29;
-  } else if ("" !== str.trim()) {
-    let obj4 = { kind: "custom", text: str.trim() };
-    tmp28 = obj4;
-  } else {
-    tmp28 = first[tmp12.id];
-    if (tmp28 == null) {
-      tmp28 = null;
-    }
+    entityAnswerResult = entityAnswer(input, tmp33, str, first1[tmp16.id]);
   }
-  c19 = tmp28;
-  let obj5 = { style: tmp.card, children: null };
-  let obj6 = { style: tmp.footer, children: items5 };
-  let obj7 = { style: tmp.customField, children: items4 };
-  let tmp32 = null;
-  if (clarification.questions.length > 1) {
-    let obj8 = { variant: "text-xs/semibold", color: "text-muted", children: intl.formatToPlainString(onSubmit(3723).yzYUjq, obj9) };
-    let Text = tmp14(4886).Text;
-    intl = tmp14(1126).intl;
-    obj9 = { index: bound + 1, total: clarification.questions.length };
-    tmp32 = closure_6(Text, obj8);
-  }
-  items4 = [tmp32, ];
-  let obj10 = { variant: "text-md/semibold", color: "text-default", accessibilityRole: "header", children: tmp12.question };
-  items4[1] = closure_6(clarification(4886).Text, obj10);
-  items5 = [closure_7(c5, obj7), ];
-  let tmp35Result = null;
-  if (null != onDismiss) {
-    const obj11 = { IconComponent: clarification(6017).XSmallIcon, onPress: onDismiss, accessibilityLabel: intl2.string(onSubmit(3723).qVXlk0) };
-    const tmp38 = onSubmit(16551);
-    intl2 = tmp14(1126).intl;
-    tmp35Result = tmp35(tmp38, obj11);
-  }
-  items5[1] = tmp35Result;
-  const items6 = [closure_7(c5, obj6), , , , ];
-  let tmp35Result5 = null;
-  if (tmp13) {
-    const obj12 = { variant: "text-xs/normal", color: "text-muted", children: intl3.string(onSubmit(3723).tE8qbz) };
-    const Text2 = tmp14(4886).Text;
-    intl3 = tmp14(1126).intl;
-    tmp35Result5 = tmp35(Text2, obj12);
-  }
-  items6[1] = tmp35Result5;
-  if (isImageQuestionResult) {
-    const obj13 = { projectId, question: tmp12, selectedIds: answeredOptionIdsResult, disabled: tmp10, onPick: callback1, own: conjureOwnImages.controlsFor(tmp12, tmp10) };
-    const tmp43 = onSubmit(16720);
-    tmp35Result6 = tmp35(tmp43, obj13);
-  } else {
-    const options = tmp12.options;
-    tmp35Result6 = options.map((answer) => {
-      let AQbxhf;
-      let formatToPlainString;
-      let intl2;
-      let items;
-      let items1;
-      let obj3;
-      let obj4;
-      let obj5;
-      let tmp10;
-      let closure_0 = answer;
-      let fn;
-      const Card = clarification(optionHeader[18]).Card;
-      if (!closure_8) {
-        fn = () => callback1(answer);
-      }
-      const obj = { onPress: fn, border: str, accessibilityLabel: formatToPlainString(AQbxhf, obj5), children: items1 };
-      str = undefined;
-      if (closure_11) {
-        if (_undefined2.includes(answer.id)) {
-          str = "strong";
-        }
-      }
-      if (closure_11) {
-        const obj2 = { accessibilityRole, accessibilityState: obj3 };
-        obj4 = obj2;
-        obj3 = { checked: _undefined2.includes(answer.id), selected: _undefined2.includes(answer.id) };
-      } else {
-        obj4 = {};
-      }
-      const merged = Object.assign(obj4);
-      const intl = tmp2(tmp3[13]).intl;
-      formatToPlainString = intl.formatToPlainString;
-      if (true === answer.recommended) {
-        AQbxhf = onSubmit(tmp3[14])["2p6UFz"];
-        tmp10 = onSubmit;
-      } else {
-        AQbxhf = onSubmit(tmp3[14]).AQbxhf;
-        tmp10 = onSubmit;
-      }
-      let tmp13 = null;
-      obj5 = { answer: answer.label };
-      const obj6 = { style: optionHeader.optionHeader, children: items };
-      const tmp12 = c5;
-      if (closure_11) {
-        const obj7 = { checked: _undefined2.includes(answer.id) };
-        const FormCheckbox = tmp2(tmp3[19]).FormCheckbox;
-        tmp13 = closure_6(FormCheckbox, obj7);
-      }
-      items = [tmp13, , ];
-      const obj8 = { variant: "text-sm/semibold", color: "text-default", children: answer.label };
-      items[1] = closure_6(clarification(optionHeader[12]).Text, obj8);
-      let tmp16Result = null;
-      if (true === answer.recommended) {
-        const obj9 = { variant: "text-xs/semibold", color: "text-muted", children: intl2.string(tmp10(optionHeader[14]).zku6r1) };
-        const Text = tmp2(tmp3[12]).Text;
-        intl2 = tmp2(tmp3[13]).intl;
-        tmp16Result = tmp16(Text, obj9);
-      }
-      items[2] = tmp16Result;
-      items1 = [closure_7(tmp12, obj6), ];
-      let tmp16Result2 = null;
-      if (null != answer.detail) {
-        tmp16Result2 = null;
-        if ("" !== answer.detail) {
-          const obj10 = { variant: "text-xs/normal", color: "text-muted", children: answer.detail };
-          tmp16Result2 = tmp16(tmp2(tmp3[12]).Text, obj10);
-        }
-      }
-      items1[1] = tmp16Result2;
-      return closure_7(Card, obj, answer.id);
+  c20 = entityAnswerResult;
+  const items3 = [tmp16.id];
+  const items4 = [str, multiSelectAnswerResult, entityAnswerResult, callback];
+  const callback3 = obj.useCallback((arg0, arg1) => {
+    let user;
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    _undefined3((arg0) => {
+      const obj = {};
+      const merged = Object.assign(arg0);
+      obj[user.id] = closure_0;
+      return obj;
     });
+    closure_8((arg0) => {
+      const obj = {};
+      const merged = Object.assign(arg0);
+      obj[user.id] = closure_1;
+      return obj;
+    });
+  }, items3);
+  const callback4 = obj.useCallback(() => {
+    if (null == _undefined4) {
+      if (null == _undefined) {
+        const trimmed = str.trim();
+        if ("" !== trimmed) {
+          const obj = { kind: "custom", text: trimmed };
+          callback(obj);
+        }
+      } else if ("" !== _undefined.text) {
+        callback(_undefined);
+      }
+    } else if ("" !== _undefined4.text) {
+      callback(_undefined4);
+    }
+  }, items4);
+  if (null != entityAnswerResult) {
+    let tmp42 = null;
+    if ("" !== entityAnswerResult.text) {
+      tmp42 = entityAnswerResult;
+    }
+    tmp40 = tmp42;
+  } else if (null != multiSelectAnswerResult) {
+    let tmp41 = null;
+    if ("" !== multiSelectAnswerResult.text) {
+      tmp41 = multiSelectAnswerResult;
+    }
+    tmp40 = tmp41;
+  } else {
+    let str2 = "";
+    if ("" !== str.trim()) {
+      let obj3 = { kind: "custom", text: str.trim() };
+      tmp40 = obj3;
+    } else {
+      tmp40 = first[tmp16.id];
+      if (tmp40 == null) {
+        tmp40 = null;
+      }
+    }
   }
-  items6[2] = tmp35Result6;
-  let tmp35Result7 = null;
+  c21 = tmp40;
+  let tmp43 = null;
   if (!isImageQuestionResult) {
-    const obj14 = {
+    let obj4 = {
       size: "md",
-      placeholder: intl4.string(onSubmit(3723)["tOC+tn"]),
-      accessibilityLabel: intl5.formatToPlainString(onSubmit(3723)["4JeYPB"], obj15),
+      placeholder: intl.string(onSubmit(3849)["tOC+tn"]),
+      accessibilityLabel: intl2.formatToPlainString(onSubmit(3849)["4JeYPB"], obj5),
       value: str,
       onChange(arg0) {
           let closure_0 = arg0;
@@ -1762,63 +1094,215 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSubmit) => {
             return obj;
           });
         },
-      onSubmitEditing: callback3,
+      onSubmitEditing: callback4,
       returnKeyType: "send"
     };
-    const TextInput = tmp14(6098).TextInput;
-    intl4 = tmp14(1126).intl;
-    intl5 = tmp14(1126).intl;
-    obj15 = { question: tmp12.question };
-    tmp35Result7 = tmp35(TextInput, obj14);
+    const TextInput = tmp18(6286).TextInput;
+    intl = tmp18(1126).intl;
+    intl2 = tmp18(1126).intl;
+    obj5 = { question: tmp16.question };
+    tmp43 = c6(TextInput, obj4);
   }
-  items6[3] = tmp35Result7;
+  let obj6 = { style: tmp.card, children: null };
+  let tmp50 = null;
+  const obj7 = { style: tmp.footer, children: items6 };
+  const obj8 = { style: tmp.customField, children: items5 };
+  const tmp48 = onSubmit(17282);
+  if (clarification.questions.length > 1) {
+    const obj9 = { variant: "text-xs/semibold", color: "text-muted", children: intl3.formatToPlainString(onSubmit(3849).yzYUjq, obj10) };
+    let Text = tmp18(5088).Text;
+    intl3 = tmp18(1126).intl;
+    obj10 = { index: bound + 1, total: clarification.questions.length };
+    tmp50 = c6(Text, obj9);
+  }
+  items5 = [tmp50, ];
+  const obj11 = { variant: "text-md/semibold", color: "text-default", accessibilityRole: "header", children: tmp16.question };
+  items5[1] = c6(clarification(5088).Text, obj11);
+  items6 = [c7(c5, obj8), ];
+  let tmp52Result = null;
+  if (null != onDismiss) {
+    const obj12 = { variant: "tertiary", size: "sm", icon: c6(clarification(6208).XSmallIcon, { size: "sm" }), onPress: onDismiss, accessibilityLabel: intl4.string(onSubmit(3849).qVXlk0) };
+    const IconButton = tmp18(7569).IconButton;
+    intl4 = tmp18(1126).intl;
+    tmp52Result = tmp52(IconButton, obj12);
+  }
+  items6[1] = tmp52Result;
+  const items7 = [c7(c5, obj7), , , , , ];
+  let tmp52Result5 = null;
+  if (true === tmp16.multi_select) {
+    const obj13 = { variant: "text-xs/normal", color: "text-muted", children: intl5.string(onSubmit(3849).tE8qbz) };
+    const Text2 = tmp18(5088).Text;
+    intl5 = tmp18(1126).intl;
+    tmp52Result5 = tmp52(Text2, obj13);
+  }
+  items7[1] = tmp52Result5;
+  if (isImageQuestionResult) {
+    const obj14 = { projectId, question: tmp16, selectedIds: answeredOptionIdsResult, disabled: tmp14, onPick: callback1, own: conjureOwnImages.controlsFor(tmp16, tmp14) };
+    const tmp47Result = onSubmit(17308);
+    tmp52Result6 = tmp52(tmp47Result, obj14);
+  } else if (true === tmp16.multi_select) {
+    const obj15 = {
+      hasIcons: false,
+      children: options.map((label) => {
+          let joined;
+          let closure_0 = label;
+          str = "";
+          const obj = {
+            label: label.label,
+            subLabel: joined,
+            checked: _undefined4.includes(label.id),
+            disabled,
+            onPress() {
+              return callback1(label);
+            }
+          };
+          const TableCheckboxRow = clarification(optionHeader[19]).TableCheckboxRow;
+          const tmp = c6;
+          const tmp2 = clarification;
+          if (true === label.recommended) {
+            const intl = tmp2(tmp3[6]).intl;
+            str = intl.string(onSubmit(tmp3[7]).zku6r1);
+          }
+          const items = [str, ];
+          let str2 = label.detail;
+          if (str2 == null) {
+            str2 = "";
+          }
+          items[1] = str2;
+          const found = items.filter(f128743);
+          joined = undefined;
+          if (found.length > 0) {
+            joined = found.join(" \u00B7 ");
+          }
+          return tmp(TableCheckboxRow, obj, label.id);
+        })
+    };
+    options = tmp16.options;
+    const TableRowGroup = tmp18(6265).TableRowGroup;
+    tmp52Result6 = tmp52(TableRowGroup, obj15);
+  } else {
+    const options1 = tmp16.options;
+    tmp52Result6 = options1.map((answer) => {
+      let AQbxhf;
+      let formatToPlainString;
+      let intl2;
+      let items;
+      let items1;
+      let obj2;
+      let tmp5;
+      let closure_0 = answer;
+      let fn;
+      const Card = clarification(optionHeader[20]).Card;
+      if (!closure_10) {
+        fn = () => callback1(answer);
+      }
+      const obj = { onPress: fn, accessibilityLabel: formatToPlainString(AQbxhf, obj2), children: items1 };
+      const intl = tmp2(tmp3[6]).intl;
+      formatToPlainString = intl.formatToPlainString;
+      if (true === answer.recommended) {
+        AQbxhf = onSubmit(tmp3[7])["2p6UFz"];
+        tmp5 = onSubmit;
+      } else {
+        AQbxhf = onSubmit(tmp3[7]).AQbxhf;
+        tmp5 = onSubmit;
+      }
+      const obj3 = { style: optionHeader.optionHeader, children: items };
+      items = [, ];
+      obj2 = { answer: answer.label };
+      const obj4 = { variant: "text-sm/semibold", color: "text-default", children: answer.label };
+      items[0] = _undefined2(clarification(optionHeader[14]).Text, obj4);
+      let tmp8Result = null;
+      const tmp7 = c5;
+      if (true === answer.recommended) {
+        const obj5 = { variant: "text-xs/semibold", color: "text-muted", children: intl2.string(tmp5(optionHeader[7]).zku6r1) };
+        const Text = tmp2(tmp3[14]).Text;
+        intl2 = tmp2(tmp3[6]).intl;
+        tmp8Result = tmp8(Text, obj5);
+      }
+      items[1] = tmp8Result;
+      items1 = [_undefined3(tmp7, obj3), ];
+      let tmp8Result2 = null;
+      if (null != answer.detail) {
+        tmp8Result2 = null;
+        if ("" !== answer.detail) {
+          const obj6 = { variant: "text-xs/normal", color: "text-muted", children: answer.detail };
+          tmp8Result2 = tmp8(tmp2(tmp3[14]).Text, obj6);
+        }
+      }
+      items1[1] = tmp8Result2;
+      return _undefined3(Card, obj, answer.id);
+    });
+  }
+  items7[2] = tmp52Result6;
+  let tmp52Result7 = null;
+  if (null != tmp16.input) {
+    const obj16 = { projectId, question: tmp16, value: tmp59, disabled: tmp14, onChange: callback3, fallback: tmp60 };
+    tmp59 = tmp10[tmp16.id];
+    const tmp47Result2 = onSubmit(17311);
+    if (tmp59 == null) {
+      tmp59 = disabled;
+    }
+    tmp60 = null;
+    if (false === tmp16.allow_custom) {
+      tmp60 = tmp43;
+    }
+    tmp52Result7 = tmp52(tmp47Result2, obj16);
+  }
+  items7[3] = tmp52Result7;
+  let tmp61 = null;
+  if (false !== tmp16.allow_custom) {
+    tmp61 = tmp43;
+  }
+  items7[4] = tmp61;
   if (clarification.questions.length <= 1) {
-    let tmp30Result;
-    if (!tmp13) {
-      tmp30Result = null;
+    if (true !== tmp16.multi_select) {
+      let tmp46Result;
+      if (!isImageQuestionResult) {
+        tmp46Result = null;
+      }
+      items7[5] = tmp46Result;
+      obj6.children = items7;
+      return c7(tmp48, obj6);
     }
-    items6[4] = tmp30Result;
-    obj5.children = items6;
-    return closure_7(c5, obj5);
   }
-  let tmp35Result8 = null;
-  const obj16 = { style: tmp.footer, children: items7 };
+  let tmp52Result8 = null;
+  const obj17 = { style: tmp.footer, children: items8 };
   if (bound > 0) {
-    tmp35Result8 = null;
-    if (!tmp10) {
-      const obj17 = { variant: "tertiary", size: "sm", text: intl6.string(onSubmit(3723).Pk5lfA), onPress: callback2 };
-      const Button = tmp14(5594).Button;
-      intl6 = tmp14(1126).intl;
-      tmp35Result8 = tmp35(Button, obj17);
+    tmp52Result8 = null;
+    if (!tmp14) {
+      const obj18 = { variant: "tertiary", size: "sm", text: intl6.string(onSubmit(3849).Pk5lfA), onPress: callback2 };
+      const Button = tmp18(5379).Button;
+      intl6 = tmp18(1126).intl;
+      tmp52Result8 = tmp52(Button, obj18);
     }
   }
-  items7 = [tmp35Result8, , ];
-  const obj18 = { style: tmp.customField };
-  items7[1] = closure_6(c5, obj18);
-  const Button2 = tmp14(5594).Button;
-  if (!tmp10) {
-    tmp10 = null == tmp28;
+  items8 = [tmp52Result8, , ];
+  const obj19 = { style: tmp.customField };
+  items8[1] = c6(c5, obj19);
+  const Button2 = tmp18(5379).Button;
+  if (!tmp14) {
+    tmp14 = null == tmp40;
   }
-  const obj19 = {
+  const obj20 = {
     variant: "primary",
     size: "sm",
-    disabled: tmp10,
+    disabled: tmp14,
     text: string(w1nRmT),
     onPress() {
-      if (null != c19) {
+      if (null != c21) {
         callback(tmp);
       }
     }
   };
-  const intl7 = tmp14(1126).intl;
+  const intl7 = tmp18(1126).intl;
   string = intl7.string;
   if (bound === clarification.questions.length - 1) {
-    w1nRmT = tmp14(1126).t.geKm7t;
+    w1nRmT = tmp18(1126).t.geKm7t;
   } else {
-    w1nRmT = onSubmit(3723).w1nRmT;
+    w1nRmT = tmp47(3849).w1nRmT;
   }
-  items7[2] = closure_6(Button2, obj19);
-  tmp30Result = tmp30(tmp31, obj16);
+  items8[2] = c6(Button2, obj20);
+  tmp46Result = tmp46(tmp49, obj17);
 });
 let result = size.fileFinishedImporting("modules/conjure/clarification/native/ConjureClarificationCard.tsx");
 

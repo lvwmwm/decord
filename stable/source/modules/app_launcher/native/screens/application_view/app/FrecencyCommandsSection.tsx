@@ -1,23 +1,21 @@
-// Module ID: 11771
-// Function ID: 11772
+// Module ID: 11837
+// Function ID: 11838
 // Name: FrecencyCommandsSection
-// Dependencies: [19, 17, 1085, 21, 4890, 11753, 558, 576, 11772, 5070, 8932, 4886, 1126, 7034, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 11819, 558, 576, 11838, 5107, 10624, 5088, 1126, 7242, 2]
 
-// Module 11771 (FrecencyCommandsSection)
+// Module 11837 (FrecencyCommandsSection)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7034 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8932 */;
-import AppDetailContent from "AppDetailContent" /* 11753 */;
-import useFilterAndSortToOnlyFrecentCommandsDefault from "useFilterAndSortToOnlyFrecentCommands" /* 11772 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7242 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10624 */;
+import AppDetailContent from "AppDetailContent" /* 11819 */;
+import useFilterAndSortToOnlyFrecentCommandsDefault from "useFilterAndSortToOnlyFrecentCommands" /* 11838 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let context;
 
 let metroImportDefault;
 let metroRequire;
@@ -28,7 +26,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 let obj = { container: obj2, header: { flexDirection: "row", alignItems: "center", gap: 4, marginBottom: 8 } };
 obj2 = { marginBottom: AppDetailContent.BETWEEN_SECTIONS_MARGIN };
 let closure_8 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrecencyCommandsSection(context) {
   let allCommands;
   let items;
   let onPressCommand;
@@ -172,7 +170,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
             }
           }
         }
-        const fn = function w(command, arg1) {
+        const fn = function y(command, arg1) {
           const obj = { command, onPressCommand, isFirstRow: 0 === arg1, isLastRow: arg1 === arr.length - 1, context, onExecuteCommand, installOnDemand, section, location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW_FRECENCT, sectionName };
           const CommandRow = AppDetailContent.CommandRow;
           return metroRequire(CommandRow, obj, command.id);
@@ -212,7 +210,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   cResult[1] = context;
   cResult[2] = obj4;
   tmp4 = obj4;
-}) : ((context) => {
+}) : (function FrecencyCommandsSection(context) {
   let Heading;
   let installOnDemand;
   let intl;
@@ -242,7 +240,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
     let obj = { style: tmp.container, children: items1 };
     const obj2 = { style: tmp.header, children: arr(Heading, obj3) };
     obj3 = { variant: "text-md/medium", color: "text-default", children: intl.string(context(1126).t.acSE0h) };
-    Heading = context(4886).Heading;
+    Heading = context(5088).Heading;
     intl = context(1126).intl;
     items1 = [
       arr(View, obj2),

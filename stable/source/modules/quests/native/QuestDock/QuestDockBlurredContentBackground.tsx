@@ -1,20 +1,20 @@
-// Module ID: 14963
-// Function ID: 14964
+// Module ID: 15443
+// Function ID: 15444
 // Name: QuestDockBlurredContentBackground
-// Dependencies: [19, 17, 21, 558, 576, 5772, 2]
+// Dependencies: [19, 17, 21, 558, 576, 5364, 2]
 
-// Module 14963 (QuestDockBlurredContentBackground)
+// Module 15443 (QuestDockBlurredContentBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5772 */;
+import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5364 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const StyleSheet = react_native.StyleSheet;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockBlurredContentBackground(arg0) {
   let blurTheme;
   let layoutAnimatedStyle;
   let layoutAnimation;
@@ -63,7 +63,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[1] = opacityAnimatedStyle;
   cResult[2] = items;
   tmp4 = items;
-}) : ((blurTheme) => {
+}) : (function QuestDockBlurredContentBackground(blurTheme) {
   let layoutAnimatedStyle;
   let layoutAnimation;
   let opacityAnimatedStyle;

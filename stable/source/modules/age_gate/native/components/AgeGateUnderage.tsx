@@ -1,24 +1,24 @@
-// Module ID: 15908
-// Function ID: 15909
+// Module ID: 16418
+// Function ID: 16419
 // Name: AgeGateUnderage
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 6432, 1490, 6010, 6016, 1126, 6463, 6466, 8097, 6462, 2115, 4886, 5594, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 6626, 1503, 6201, 6207, 1126, 6657, 6660, 7512, 6656, 2128, 5088, 5379, 2]
 
-// Module 15908 (AgeGateUnderage)
+// Module 16418 (AgeGateUnderage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import NavigatorHeader from "NavigatorHeader" /* 6010 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6432 */;
-import AuthHeaderDefault from "AuthHeader" /* 6462 */;
-import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 6466 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import NavigatorHeader from "NavigatorHeader" /* 6201 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6626 */;
+import AuthHeaderDefault from "AuthHeader" /* 6656 */;
+import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 6660 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, importDefault, navigation, onClose;
+let dependencyMap, importDefault, navigation;
 
 let metroImportAll;
 let metroImportDefault;
@@ -35,7 +35,7 @@ let closure_9 = createStyles.createStyles((arg0) => {
   ({ alignItems: "center", justifyContent: "center", flex: 1, padding: 16, paddingTop: 0, paddingBottom: num, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW });
   return obj;
 });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateUnderage(onClose) {
   let Button;
   let closure_1;
   let closure_2;
@@ -57,7 +57,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   dependencyMap = tmp6;
   const tmp8 = useWideAuthViewDefault();
   const tmp9 = closure_9(tmp8);
-  const tmpResult = onClose(1490);
+  const tmpResult = onClose(1503);
   navigation = tmpResult.useNavigation();
   if (cResult[0] === (undefined !== disableSwipe && disableSwipe)) {
     if (cResult[1] === (undefined !== existingUser && existingUser)) {
@@ -85,7 +85,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         } else {
           tmp15 = cResult[7];
         }
-        const tmpResult2 = onClose(6016);
+        const tmpResult2 = onClose(6207);
         tmpResult2.useNavigatorBackPressHandler(tmp15);
         if (cResult[8] !== (undefined !== existingUser && existingUser)) {
           let stringResult;
@@ -106,7 +106,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         if (cResult[10] !== tmp8) {
           let tmp20 = null;
           if (!tmp8) {
-            tmp20 = closure_6(tmp7(6463), {});
+            tmp20 = closure_6(tmp7(6657), {});
           }
           cResult[10] = tmp8;
           cResult[11] = tmp20;
@@ -117,7 +117,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         const _Symbol = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
           const tmp26 = closure_6(AuthNavbarPlaceholderDefault, {});
-          const tmp27 = closure_6(onClose(8097).ShieldSpotIllustration, {});
+          const tmp27 = closure_6(onClose(7512).ShieldSpotIllustration, {});
           cResult[12] = tmp27;
           cResult[13] = tmp26;
           tmp24 = tmp26;
@@ -179,12 +179,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
               if (undefined !== existingUser && existingUser) {
                 const obj3 = { children: items1 };
                 const obj4 = { style: tmp9.body, variant: "text-md/medium", color: "interactive-text-default", children: intl4.format(onClose(1126).t["3axQdB"], { days: 30 }) };
-                const Text = tmp(4886).Text;
+                const Text = tmp(5088).Text;
                 intl4 = tmp(1126).intl;
                 items1 = [closure_6(Text, obj4), ];
                 const obj5 = { style: tmp9.buttonWrapper, children: closure_6(Button, obj6) };
                 obj6 = { onPress: onClose, text: intl5.string(onClose(1126).t.JhDw5o), grow: true };
-                Button = tmp(5594).Button;
+                Button = tmp(5379).Button;
                 intl5 = tmp(1126).intl;
                 items1[1] = closure_6(View, obj5);
                 tmp40 = closure_8(closure_7, obj3);
@@ -197,7 +197,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
               tmp39 = tmp40;
             }
             const obj7 = { style: tmp9.body, variant: "text-md/medium", color: "interactive-text-default", children: tmp31 };
-            const tmp38 = closure_6(onClose(4886).Text, obj7);
+            const tmp38 = closure_6(onClose(5088).Text, obj7);
             cResult[20] = tmp9.body;
             cResult[21] = tmp31;
             cResult[22] = tmp38;
@@ -253,7 +253,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   cResult[5] = items2;
   tmp12 = items2;
   tmp11 = fn;
-}) : ((onClose) => {
+}) : (function AgeGateUnderage(onClose) {
   let Button;
   let existingUser;
   let intl4;

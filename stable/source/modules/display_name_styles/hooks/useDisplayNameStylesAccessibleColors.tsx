@@ -1,18 +1,18 @@
-// Module ID: 10635
-// Function ID: 10636
+// Module ID: 10266
+// Function ID: 10267
 // Name: useDisplayNameStylesAccessibleColors
-// Dependencies: [19, 4879, 558, 576, 504, 1396, 10636, 4727, 683, 2]
+// Dependencies: [19, 5081, 558, 576, 504, 1409, 10267, 4967, 683, 2]
 
-// Module 10635 (useDisplayNameStylesAccessibleColors)
+// Module 10266 (useDisplayNameStylesAccessibleColors)
 import _modDef683 from "module_683" /* 683 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
-import ColorUtils from "ColorUtils" /* 4727 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1409 */;
+import ColorUtils from "ColorUtils" /* 4967 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplayNameStylesAccessibleColors(arg0) {
   let backgroundColor;
   let displayNameStyles;
   let effectId;
@@ -114,7 +114,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp10;
-}) : ((displayNameStyles) => {
+}) : (function useDisplayNameStylesAccessibleColors(displayNameStyles) {
   displayNameStyles = displayNameStyles.displayNameStyles;
   const backgroundColor = displayNameStyles.backgroundColor;
   let stateFromStores;

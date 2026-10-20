@@ -1,106 +1,95 @@
 // Module ID: 6227
 // Function ID: 6228
-// Dependencies: [19, 6183, 6226]
-// Exports: useReanimatedEventHandler
+// Dependencies: [19, 17, 21, 1504, 6219, 6228, 6229]
+// Exports: Button
 
 // Module 6227
-import Reanimated2 from "Reanimated" /* 6183 */;
-import eventHandler from "eventHandler" /* 6226 */;
+import Fragment from "Fragment" /* 21 */;
+import Link from "Link" /* 1504 */;
+import ColorDefault from "Color" /* 6219 */;
+import Text from "Text" /* 6229 */;
 import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
-
-let c2;
-let c3;
-let closure_4;
-({ useEffect: c2, useMemo: c3, useRef: closure_4 } = react);
-let closure_5 = ["onGestureHandlerReanimatedEvent", "onGestureHandlerReanimatedStateChange", "onGestureHandlerReanimatedTouchEvent"];
-const onUpdate = function n() {
-
-};
-onUpdate.__closure = {};
-onUpdate.__workletHash = 763644533783;
-onUpdate.__initData = { code: "function pnpm_useReanimatedEventHandlerTs1(){}" };
-let Reanimated = Reanimated2.Reanimated;
-let mutable;
-if (Reanimated != null) {
-  mutable = Reanimated.makeMutable({});
+let Platform;
+let StyleSheet;
+function ButtonLink(arg0) {
+  let action;
+  let href;
+  let params;
+  let screen;
+  ({ screen, params, action, href } = arg0);
+  const merged = Object.assign(arg0, Object.assign({ screen: 0, params: 0, action: 0, href: 0 }));
+  const obj = Link;
+  const linkProps = obj.useLinkProps({ screen, params, action, href });
+  const merged1 = Object.assign(merged);
+  const merged2 = Object.assign(linkProps);
+  return <ButtonBase />;
 }
-function deleteHandlerEventEntry(arg0) {
-  delete mutable.value[arg0];
-}
-deleteHandlerEventEntry.__closure = { lastUpdateEventMap: mutable };
-deleteHandlerEventEntry.__workletHash = 8348834805583;
-deleteHandlerEventEntry.__initData = { code: "function deleteHandlerEventEntry_Pnpm_useReanimatedEventHandlerTs2(handlerTag){const{lastUpdateEventMap}=this.__closure;delete lastUpdateEventMap.value[handlerTag];}" };
-const __initData = { code: "function pnpm_useReanimatedEventHandlerTs3(event){const{lastUpdateEventMap,eventHandler,handlerTag,workletizedHandlers,changeEventCalculator,fillInDefaultValues}=this.__closure;let context=lastUpdateEventMap.value[event.handlerTag];if(context===undefined){context={lastUpdateEvent:undefined};lastUpdateEventMap.value[event.handlerTag]=context;}eventHandler(handlerTag,event,workletizedHandlers,changeEventCalculator,context,false,fillInDefaultValues);}" };
-
-export const useReanimatedEventHandler = function useReanimatedEventHandler(handlerTag, memoizedGestureCallbacks, handler, changeEventCalculator, fillInDefaultValues) {
-  _require = handlerTag;
-  dependencyMap = memoizedGestureCallbacks;
-  let closure_2 = changeEventCalculator;
-  let closure_3 = fillInDefaultValues;
-  const items = [memoizedGestureCallbacks];
-  let tmp = closure_3(() => {
-    let obj;
-    const Reanimated = Reanimated2.Reanimated;
-    let isWorkletFunctionResult;
-    if (Reanimated != null) {
-      isWorkletFunctionResult = Reanimated.isWorkletFunction(memoizedGestureCallbacks.onUpdate);
-    }
-    if (isWorkletFunctionResult) {
-      obj = tmp3;
-    } else {
-      obj = { onUpdate };
-      const merged = Object.assign(tmp3);
-    }
-    return obj;
-  }, items);
-  let closure_4 = tmp;
-  const fn = function h(handlerTag) {
-    let tmp = mutable.value[handlerTag.handlerTag];
-    if (undefined === tmp) {
-      const obj = { lastUpdateEvent: "r" };
-      iter.value[handlerTag.handlerTag] = obj;
-      tmp = obj;
-    }
-    const obj2 = eventHandler;
-    obj2.eventHandler(current, handlerTag, closure_4, changeEventCalculator, tmp, false, fillInDefaultValues);
-  };
-  let obj = { lastUpdateEventMap: mutable, eventHandler: require("eventHandler").eventHandler, handlerTag, workletizedHandlers: tmp, changeEventCalculator, fillInDefaultValues };
-  fn.__closure = obj;
-  fn.__workletHash = 3272953373395;
-  fn.__initData = __initData;
-  const tmp2 = closure_4(handlerTag);
-  closure_5 = tmp2;
-  const items1 = [handlerTag];
-  const current = tmp2.current;
-  const tmp3 = closure_2(() => {
-    closure_5.current = current;
-    return () => {
-      const Reanimated = closure_0(memoizedGestureCallbacks[1]).Reanimated;
-      if (Reanimated != null) {
-        const runOnUI = Reanimated.runOnUI;
-        if (runOnUI != null) {
-          runOnUI(deleteHandlerEventEntry)(closure_1_0);
-        }
-      }
-    };
-  }, items1);
-  let Reanimated = require("Reanimated").Reanimated;
-  let event;
-  if (Reanimated != null) {
-    let tmp5 = current !== handlerTag;
-    const useEvent = Reanimated.useEvent;
-    const tmp6 = closure_5;
-    if (!tmp5) {
-      let doDependenciesDiffer;
-      if (handler != null) {
-        doDependenciesDiffer = handler.doDependenciesDiffer;
-      }
-      tmp5 = doDependenciesDiffer;
-    }
-    event = useEvent(fn, tmp6, tmp5);
+function ButtonBase(variant) {
+  let android_ripple;
+  let children;
+  let color;
+  let fadeResult1;
+  let str3;
+  let style;
+  let tmp5;
+  let str = variant.variant;
+  if (str === undefined) {
+    str = "tinted";
   }
-  return event;
+  ({ color, android_ripple } = variant);
+  ({ style, children } = variant);
+  const merged = Object.assign(variant, Object.assign({ variant: 0, color: 0, android_ripple: 0, style: 0, children: 0 }));
+  const obj = Link;
+  const theme = obj.useTheme();
+  const fonts = theme.fonts;
+  if (color == null) {
+    color = theme.colors.primary;
+  }
+  if ("plain" === str) {
+    str3 = "transparent";
+    tmp5 = color;
+  } else if ("tinted" === str) {
+    const obj4 = ColorDefault(color);
+    const fadeResult = obj4.fade(0.85);
+    str3 = fadeResult.string();
+    tmp5 = color;
+  } else if ("filled" === str) {
+    let str4 = "white";
+    const obj11 = ColorDefault(color);
+    const tmp9 = importDefault;
+    if (!obj11.isDark()) {
+      const obj2 = tmp9(6219)(color);
+      const darkenResult = obj2.darken(0.71);
+      str4 = darkenResult.string();
+    }
+    tmp5 = str4;
+    str3 = color;
+  }
+  const PlatformPressable = tmp2(6228).PlatformPressable;
+  const merged1 = Object.assign(merged);
+  const obj5 = { radius: 40, color: fadeResult1.string() };
+  const obj8 = ColorDefault(tmp5);
+  fadeResult1 = obj8.fade(0.85);
+  const merged2 = Object.assign(android_ripple);
+  const items = [{ backgroundColor: str3 }, closure_6.button, style];
+  const items1 = [{ color: tmp5 }, fonts.regular, closure_6.text];
+  return <PlatformPressable android_ripple={obj5} pressOpacity={1} hoverEffect={{ color: tmp5 }} style={items}>{jsx(Text.Text, { style: items1, children })}</PlatformPressable>;
+}
+({ Platform, StyleSheet } = react_native);
+const jsx = Fragment.jsx;
+const styles = StyleSheet.create({ button: { paddingHorizontal: 24, paddingVertical: 10, borderRadius: 40, borderCurve: "continuous" }, text: { fontSize: 14, lineHeight: 20, letterSpacing: 0.1, textAlign: "center" } });
+
+export const Button = function Button(arg0) {
+  if (!("screen" in arg0)) {
+    let tmp2;
+    if (!("action" in arg0)) {
+      tmp2 = ButtonBase;
+    }
+    const obj = {};
+    const merged = Object.assign(arg0);
+    return tmp(tmp2, obj);
+  }
+  tmp2 = ButtonLink;
 };

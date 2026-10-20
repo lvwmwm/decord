@@ -1,24 +1,22 @@
-// Module ID: 11501
-// Function ID: 11502
+// Module ID: 11484
+// Function ID: 11485
 // Name: AppealIngestionActivitySummary
-// Dependencies: [19, 17, 21, 4890, 558, 576, 11502, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 11485, 2]
 
-// Module 11501 (AppealIngestionActivitySummary)
+// Module 11484 (AppealIngestionActivitySummary)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ClassificationEvidenceDefault from "ClassificationEvidence" /* 11502 */;
+import ClassificationEvidenceDefault from "ClassificationEvidence" /* 11485 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let flaggedContent;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ activity: { marginBottom: 16 } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((flaggedContent) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngestionActivitySummary(flaggedContent) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(5);
@@ -44,7 +42,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((flaggedContent) => {
   cResult[3] = tmp4;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((flaggedContent) => {
+}) : (function AppealIngestionActivitySummary(flaggedContent) {
   flaggedContent = flaggedContent.flaggedContent;
   return <View style={closure_5().activity}>{jsx(ClassificationEvidenceDefault, { flaggedContent })}</View>;
 });

@@ -1,10 +1,10 @@
-// Module ID: 17440
-// Function ID: 17441
+// Module ID: 18038
+// Function ID: 18039
 // Name: ManagerRegistry
-// Dependencies: [17441, 17444, 17453, 17454, 17455, 17456, 10919, 17459, 17460, 17463, 17464, 17466, 12538, 17467, 17468, 17469, 17473, 17474, 17475, 17477, 12119, 12330, 17482, 17483, 17484, 17485, 17490, 17491, 17492, 17495, 16633, 17497, 10078, 7401, 8978, 17498, 17499, 17501, 17503, 17504, 17505, 9271, 17506, 17507, 17508, 17509, 17517, 17518, 17534, 15398, 17536, 17537, 17542, 17543, 17545, 17546, 7517, 17560, 15139, 17561, 17562, 17565, 17567, 17581, 17594, 13578, 17597, 17599, 17606, 17607, 17609, 17610, 17612, 17613, 17616, 17618, 17620, 17621, 17622, 17623, 17624, 13544, 17625, 17626, 9561, 17628, 17631, 17632, 17634, 17635, 17639, 6611, 9500, 17640, 17641, 7922, 17642, 17461, 17643, 17644, 17996, 17997, 17998, 18000, 18001, 18003, 18005, 18006, 18008, 18010, 18011, 18012, 18016, 18017, 18018, 18019, 15516, 18021, 18022, 18025, 18026, 18048, 18052, 18053, 18056, 18057, 18082, 18083, 18084, 18085, 18086, 18087, 18088, 2]
+// Dependencies: [18039, 18042, 18049, 18050, 18051, 18052, 12949, 18055, 18056, 18059, 18060, 18062, 12645, 18063, 18064, 18065, 18069, 18070, 18071, 18073, 12203, 18078, 12410, 18079, 18080, 18081, 18082, 18087, 18088, 18089, 18092, 18094, 18112, 9719, 7906, 14807, 18113, 18114, 18116, 18118, 18119, 18120, 8513, 18121, 18122, 18123, 18124, 18132, 18133, 18149, 15878, 18151, 18152, 18157, 18158, 18160, 18161, 9312, 18176, 15619, 18177, 18178, 18183, 18185, 18199, 18216, 13590, 18219, 18221, 18230, 18231, 18233, 18234, 18236, 18237, 18240, 18242, 18243, 18245, 18246, 18247, 18248, 18249, 18250, 18254, 18255, 10981, 18257, 18260, 18261, 18263, 18264, 18268, 6806, 8699, 18269, 18270, 8372, 18271, 18057, 18272, 18273, 18627, 18628, 18629, 18631, 18632, 18633, 18635, 18636, 18638, 18640, 18641, 18642, 18646, 18647, 18648, 18649, 15997, 18651, 18652, 18655, 18656, 18678, 18682, 18683, 18686, 18687, 18714, 18715, 18716, 18717, 18718, 18719, 18720, 2]
 
-// Module 17440 (ManagerRegistry)
-import ManagerRegistryShared from "ManagerRegistryShared" /* 18088 */;
+// Module 18038 (ManagerRegistry)
+import ManagerRegistryShared from "ManagerRegistryShared" /* 18720 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -142,6 +142,12 @@ const obj = {
       return require("CommunicationDisabledManager").default;
     },
     loadAfterConnectionOpen: true
+  },
+  ConjureTurnNotificationManager: {
+    actions: ["CONJURE_TURN_NOTIFICATION", "CONJURE_TURN_SETTLED", "LOGOUT"],
+    inlineRequire() {
+      return require("ConjureTurnNotificationManager").default;
+    }
   },
   ContactSyncLifecycleManager: {
     actions: ["POST_CONNECTION_OPEN"],
@@ -425,10 +431,10 @@ const obj = {
       return require("RedesignNewUserManager").default;
     }
   },
-  NotificationPermissionManager: {
+  NotificationsManager: {
     actions: ["MESSAGE_CREATE", "MESSAGE_REACTION_ADD", "INVITE_ACCEPT_SUCCESS", "RELATIONSHIP_ADD", "POST_CONNECTION_OPEN", "APP_STATE_UPDATE"],
     inlineRequire() {
-      return require("NotificationPermissionManager").default;
+      return require("NotificationsManager").default;
     },
     neverLoadBeforeConnectionOpen: true
   },
@@ -497,6 +503,12 @@ const obj = {
     actions: ["POST_CONNECTION_OPEN"],
     inlineRequire() {
       return require("RTCLatencyTestManager").default;
+    }
+  },
+  RTCReconnectTimeoutManager: {
+    actions: ["VOICE_STATE_UPDATES"],
+    inlineRequire() {
+      return require("RTCReconnectTimeoutManager").default;
     }
   },
   SavedMessagesManager: {
@@ -686,7 +698,7 @@ const obj = {
     neverLoadBeforeConnectionOpen: true
   },
   NativeNotificationsManager: {
-    actions: ["MESSAGE_ACK", "CHANNEL_SELECT", "POST_CONNECTION_OPEN", "EXPERIMENT_OVERRIDE_BUCKET", "EXPERIMENTS_FETCH_SUCCESS", "APP_STATE_UPDATE"],
+    actions: ["MESSAGE_ACK", "CHANNEL_SELECT", "POST_CONNECTION_OPEN", "EXPERIMENT_OVERRIDE_BUCKET", "EXPERIMENTS_FETCH_SUCCESS"],
     inlineRequire() {
       return require("NativeNotificationsManager").default;
     },

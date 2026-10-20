@@ -1,23 +1,23 @@
-// Module ID: 12518
-// Function ID: 12519
+// Module ID: 12623
+// Function ID: 12624
 // Name: MessageNotificationHeader
-// Dependencies: [19, 17, 4879, 4519, 1377, 21, 4890, 587, 558, 576, 4886, 5043, 1106, 5855, 5857, 5812, 504, 2]
+// Dependencies: [19, 17, 5081, 4760, 1390, 21, 5092, 587, 558, 576, 5088, 5421, 1106, 8194, 8196, 8154, 504, 2]
 
-// Module 12518 (MessageNotificationHeader)
+// Module 12623 (MessageNotificationHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ChannelTypes from "ChannelTypes" /* 1106 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useChannelName from "useChannelName" /* 5043 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5812 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import useChannelName from "useChannelName" /* 5421 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserStore from "UserStore" /* 1377 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -103,7 +103,7 @@ let obj = { container: obj2, headerContent: { flex: 1, flexDirection: "row", ali
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 let closure_9 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SimpleNotificationHeader(arg0) {
   let items;
   let items1;
   let labelStyle;
@@ -178,7 +178,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.primaryText;
   cResult[2] = items2;
   tmp5 = items2;
-}) : ((secondaryText) => {
+}) : (function SimpleNotificationHeader(secondaryText) {
   let items;
   let items1;
   let items2;
@@ -204,7 +204,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportAll(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function LocationText(arg0) {
   let _location;
   let author;
   let channel;
@@ -275,7 +275,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp12 = null != author;
         if (tmp12) {
           const obj4 = { variant: "text-md/bold", color, maxFontSizeMultiplier: 1.75, style: tmp4.separator, children: "\u00B7" };
-          tmp12 = metroImportDefault(tmp(4886).Text, obj4);
+          tmp12 = metroImportDefault(tmp(5088).Text, obj4);
         }
         cResult[7] = author;
         cResult[8] = tmp4.separator;
@@ -302,11 +302,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (null != parentChannel) {
         let ThreadIcon;
         if (parentChannel.type === ChannelTypes.ChannelTypes.GUILD_FORUM) {
-          ThreadIcon = tmp(5855).ChatIcon;
+          ThreadIcon = tmp(8194).ChatIcon;
         }
         simpleChannelIconComponent = ThreadIcon;
       }
-      ThreadIcon = tmp(5857).ThreadIcon;
+      ThreadIcon = tmp(8196).ThreadIcon;
     } else {
       const tmpResult = utils_ChannelUtils;
       simpleChannelIconComponent = tmpResult.getSimpleChannelIconComponent(channel);
@@ -317,7 +317,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = parentChannel;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((channel) => {
+}) : (function LocationText(channel) {
   let _location;
   let author;
   let icon;
@@ -343,11 +343,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (null != parentChannel) {
           let ThreadIcon;
           if (parentChannel.type === ChannelTypes.ChannelTypes.GUILD_FORUM) {
-            ThreadIcon = tmp3(5855).ChatIcon;
+            ThreadIcon = tmp3(8194).ChatIcon;
           }
           simpleChannelIconComponent = ThreadIcon;
         }
-        ThreadIcon = tmp3(5857).ThreadIcon;
+        ThreadIcon = tmp3(8196).ThreadIcon;
       } else {
         const tmp3Result = utils_ChannelUtils;
         simpleChannelIconComponent = tmp3Result.getSimpleChannelIconComponent(tmp);
@@ -372,7 +372,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp3(tmp4, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageNotificationHeader(arg0) {
   let author;
   let channel;
   let colorString;
@@ -493,7 +493,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (tmp15) {
         const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: items2, children: author.nick };
         items2 = [tmp4.primaryText, tmp10];
-        tmp15 = metroImportDefault(tmp(4886).Text, obj6);
+        tmp15 = metroImportDefault(tmp(5088).Text, obj6);
       }
       cResult[8] = author;
       cResult[9] = tmp10;
@@ -508,7 +508,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = parentChannel;
   cResult[7] = tmp13;
   tmp12 = tmp13;
-}) : ((arg0) => {
+}) : (function MessageNotificationHeader(arg0) {
   let author;
   let channel;
   let colorString;

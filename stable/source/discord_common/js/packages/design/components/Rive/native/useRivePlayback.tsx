@@ -1,19 +1,19 @@
-// Module ID: 4656
-// Function ID: 4657
+// Module ID: 4894
+// Function ID: 4895
 // Name: useRivePlayback
 // Dependencies: [19, 17, 558, 576, 2]
 
-// Module 4656 (useRivePlayback)
+// Module 4894 (useRivePlayback)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_12, ref;
+let _require, ref;
 
 const AppState = react_native.AppState;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isReady) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRivePlayback(arg0, isReady) {
   let ref2;
   let tmp2;
   let tmp3;
@@ -82,7 +82,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isReady) => {
     if (cResult[6] === shouldShortLoopForReducedMotion) {
       tmp7 = cResult[7];
     }
-    closure_12 = tmp7;
+    let closure_12 = tmp7;
     if (cResult[8] === tmp7) {
       let tmp8;
       if (cResult[9] === arg0) {
@@ -216,7 +216,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isReady) => {
       cResult[13] = arg0;
       cResult[14] = N;
     }
-    class P {
+    class M {
       constructor() {
         const obj = closure_0;
         if (closure_0 != null) {
@@ -228,10 +228,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isReady) => {
     }
     cResult[8] = tmp7;
     cResult[9] = arg0;
-    cResult[10] = P;
-    tmp8 = P;
+    cResult[10] = M;
+    tmp8 = M;
   }
-  class I {
+  class C {
     constructor() {
       closure_10();
       const tmp2 = shouldShortLoopForReducedMotion;
@@ -243,9 +243,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isReady) => {
   }
   cResult[5] = tmp6;
   cResult[6] = shouldShortLoopForReducedMotion;
-  cResult[7] = I;
-  tmp7 = I;
-}) : ((arg0, isReady) => {
+  cResult[7] = C;
+  tmp7 = C;
+}) : (function useRivePlayback(arg0, isReady) {
   let closure_0 = arg0;
   isReady = isReady.isReady;
   const appStatePlaybackEnabled = isReady.appStatePlaybackEnabled;

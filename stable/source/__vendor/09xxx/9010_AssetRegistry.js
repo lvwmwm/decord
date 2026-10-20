@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/activities/images", width: 445, height: 482, scales: [1], hash: "578f09ddbff611181344fe43546bae68", name: "announcement_birb", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images", width: 132, height: 132, scales: [1], hash: "e32a360d37f718d45e03d9f2fe827035", name: "avatar_placeholder", type: "png" });

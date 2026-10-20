@@ -1,22 +1,22 @@
-// Module ID: 16239
-// Function ID: 16240
+// Module ID: 16761
+// Function ID: 16762
 // Name: GuildsBarGuildJoinRequestBadge
-// Dependencies: [19, 17, 21, 4890, 587, 5620, 4702, 16240, 16241, 16242, 11917, 558, 576, 5974, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 5969, 4942, 16762, 16763, 16764, 11989, 558, 576, 6157, 2]
 
-// Module 16239 (GuildsBarGuildJoinRequestBadge)
+// Module 16761 (GuildsBarGuildJoinRequestBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4702 */;
-import LegacyTokens from "LegacyTokens" /* 5620 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11917 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16240 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 16241 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 16242 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4942 */;
+import LegacyTokens from "LegacyTokens" /* 5969 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11989 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16762 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 16763 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 16764 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ size = { position: "absolute", bottom: -3, right: -3, height: 22, width: 22, bor
 createStyles = createStyles.createStyles;
 size1 = { height: 16, width: 16, opacity: LegacyTokens.DARK_1_LIGHT_08 };
 let closure_5 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsBarGuildJoinRequestBadge(arg0) {
   let joinRequestState;
   let style;
   let tmp5;
@@ -96,7 +96,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp12 = items;
   }
   return tmp11;
-}) : ((joinRequestState) => {
+}) : (function GuildsBarGuildJoinRequestBadge(joinRequestState) {
   let tmp4;
   joinRequestState = joinRequestState.joinRequestState;
   const style = joinRequestState.style;

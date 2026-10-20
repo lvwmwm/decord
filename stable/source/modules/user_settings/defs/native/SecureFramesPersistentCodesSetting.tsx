@@ -1,22 +1,22 @@
-// Module ID: 15761
-// Function ID: 15762
+// Module ID: 16266
+// Function ID: 16267
 // Name: SecureFramesPersistentCodesSetting
-// Dependencies: [9365, 7634, 558, 576, 504, 9367, 11129, 1126, 2]
+// Dependencies: [5131, 7988, 558, 576, 504, 16267, 10664, 1126, 2]
 
-// Module 15761 (SecureFramesPersistentCodesSetting)
+// Module 16266 (SecureFramesPersistentCodesSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9367 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 9365 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import updatePersistentCodesEnabled from "updatePersistentCodesEnabled" /* 16267 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5131 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFramesPersistentCodesValue() {
   let persistentCodesEnabled;
   let tmp4;
   let tmp5;
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useSecureFramesPersistentCodesValue() {
   let persistentCodesEnabled;
   const items = [SecureFramesPersistedStore];
   const obj = get_initialized;
@@ -54,7 +54,7 @@ let obj = {
   parent: MobileUserSettings.DATA_AND_PRIVACY,
   useValue: tmp2,
   onValueChange: function handleSecureFramesPersistentCodesToggle(arg0) {
-    const obj = SecureFramesActionCreatorsDefault;
+    const obj = updatePersistentCodesEnabled;
     const result = obj.updatePersistentCodesEnabled(arg0);
   }
 };

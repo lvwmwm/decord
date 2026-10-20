@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "07392a850e043822a5c8062588fbfbb4", name: "WaveformIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 121, height: 80, scales: [1, 2], hash: "03d3616a833b9606b61838a277c7b0cf", name: "link_expired", type: "png" });

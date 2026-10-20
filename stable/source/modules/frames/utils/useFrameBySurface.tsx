@@ -1,17 +1,17 @@
-// Module ID: 16591
-// Function ID: 16592
+// Module ID: 17130
+// Function ID: 17131
 // Name: useFrameBySurface
-// Dependencies: [8703, 558, 576, 504, 2]
+// Dependencies: [10808, 558, 576, 504, 2]
 
-// Module 16591 (useFrameBySurface)
-import FramesStore from "FramesStore" /* 8703 */;
+// Module 17130 (useFrameBySurface)
+import FramesStore from "FramesStore" /* 10808 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameBySurface(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmpResult = tmp(504);
     return tmpResult.useStateFromStores(first, tmp6, tmp7);
   }
-  const fn = function s() {
+  const fn = function c() {
     if (null != closure_0) {
       return FramesStore.getFrameBySurface(tmp, closure_1);
     }
@@ -49,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useFrameBySurface(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;

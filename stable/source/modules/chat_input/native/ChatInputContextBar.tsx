@@ -1,35 +1,35 @@
-// Module ID: 12063
-// Function ID: 12064
+// Module ID: 12137
+// Function ID: 12138
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 4879, 7031, 1377, 1085, 21, 1188, 4890, 587, 558, 576, 4580, 1126, 4886, 6427, 5909, 504, 4594, 5305, 9389, 7620, 12064, 4696, 4612, 4891, 11292, 1252, 11290, 1112, 5304, 7405, 11840, 7477, 12065, 2]
+// Dependencies: [19, 17, 5081, 7239, 1390, 1085, 21, 1200, 5092, 587, 558, 576, 4818, 1126, 5088, 6621, 6185, 504, 4832, 5628, 8849, 7975, 12138, 4936, 4850, 5093, 9687, 1265, 9685, 1112, 5627, 7914, 9288, 9290, 12139, 2]
 
-// Module 12063 (ChatInputContextBar)
+// Module 12137 (ChatInputContextBar)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import router_utils from "router_utils" /* 1112 */;
 import intl9 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import useToken from "useToken" /* 4580 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Pressables from "Pressables" /* 5909 */;
-import DraftStore2 from "DraftStore" /* 7031 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 7405 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 7477 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 11292 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 11840 */;
+import native from "native" /* 1200 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import useToken from "useToken" /* 4818 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Pressables from "Pressables" /* 6185 */;
+import DraftStore2 from "DraftStore" /* 7239 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 7914 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9288 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9290 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 9687 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import UserStore from "UserStore" /* 1377 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const DraftStore = DraftStore2;
-let channel, children, closure_0, dependencyMap, set;
+let dependencyMap, set;
 
 let c10;
 let closure_12;
@@ -39,7 +39,7 @@ let hasOwnProperty;
 let map1;
 let tmp5;
 let unpackModuleId;
-const AssetRegistryDefault = tmp5(6427);
+const AssetRegistryDefault = tmp5(6621);
 let react = react_mod;
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 const DraftType = DraftStore2.DraftType;
@@ -68,7 +68,7 @@ let closure_17 = createStyles.createStyles(() => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelReplying) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputReplyBarNoAuthor(onCancelReplying) {
   let contextBarRow;
   let first;
   let floatingReplyTextWrapper;
@@ -95,7 +95,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelReplyi
   }
   if (cResult[1] !== tmp4.floatingReplyTextWrapper) {
     const obj4 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: floatingReplyTextWrapper, children: first };
-    const tmp12 = closure_12(Text_Text.Text, obj4);
+    const tmp12 = authStore2(Text_Text.Text, obj4);
     cResult[1] = tmp4.floatingReplyTextWrapper;
     cResult[2] = tmp12;
     tmp10 = tmp12;
@@ -117,8 +117,8 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelReplyi
   }
   if (cResult[4] !== tmp4.floatingCloseIcon) {
     const obj5 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp4.floatingCloseIcon };
-    const Icon = tmp(1188).Icon;
-    const tmp18 = closure_12(Icon, obj5);
+    const Icon = tmp(1200).Icon;
+    const tmp18 = authStore2(Icon, obj5);
     cResult[4] = tmp4.floatingCloseIcon;
     cResult[5] = tmp18;
     tmp16 = tmp18;
@@ -155,20 +155,20 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelReplyi
         tmp25 = tmp28;
       }
       const obj7 = { style: floatingRightActions, children: tmp19 };
-      const tmp24 = closure_12(hasOwnProperty, obj7);
+      const tmp24 = authStore2(hasOwnProperty, obj7);
       cResult[10] = tmp4.floatingRightActions;
       cResult[11] = tmp19;
       cResult[12] = tmp24;
       tmp21 = tmp24;
     }
   }
-  const tmp20 = closure_12(Pressables.PressableOpacity, { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: tmp13, hitSlop: tmp15, onPress: onCancelReplying, children: tmp16 });
+  const tmp20 = authStore2(Pressables.PressableOpacity, { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: tmp13, hitSlop: tmp15, onPress: onCancelReplying, children: tmp16 });
   cResult[6] = onCancelReplying;
   cResult[7] = tmp15;
   cResult[8] = tmp16;
   cResult[9] = tmp20;
   tmp19 = tmp20;
-}) : ((onCancelReplying) => {
+}) : (function ChatInputReplyBarNoAuthor(onCancelReplying) {
   let Icon;
   let PressableOpacity;
   let intl;
@@ -187,9 +187,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelReplyi
   const obj4 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: tmp.floatingReplyTextWrapper, children: intl.string(intl9.t["5IEsGx"]) };
   const Text = Text_Text.Text;
   intl = intl9.intl;
-  items = [closure_12(Text, obj4), ];
-  const obj5 = { style: tmp.floatingRightActions, children: closure_12(PressableOpacity, obj6) };
-  obj6 = { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl2.string(intl9.t.jSnJGT), hitSlop: tmp10, onPress: onCancelReplying, children: closure_12(Icon, obj7) };
+  items = [authStore2(Text, obj4), ];
+  const obj5 = { style: tmp.floatingRightActions, children: authStore2(PressableOpacity, obj6) };
+  obj6 = { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl2.string(intl9.t.jSnJGT), hitSlop: tmp10, onPress: onCancelReplying, children: authStore2(Icon, obj7) };
   PressableOpacity = Pressables.PressableOpacity;
   intl2 = intl9.intl;
   tmp10 = undefined;
@@ -198,13 +198,14 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelReplyi
     tmp10 = bound;
   }
   obj7 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
-  Icon = tmp2(1188).Icon;
-  items[1] = closure_12(hasOwnProperty, obj5);
+  Icon = tmp2(1200).Icon;
+  items[1] = authStore2(hasOwnProperty, obj5);
   return tmp7(hasOwnProperty, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingReply) => {
+tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputReplyBar(pendingReply) {
   let Icon;
+  let Text3;
   let accessibilityRole;
   let accessibilityState;
   let colorString;
@@ -218,6 +219,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingReply) => {
   let items5;
   let obj15;
   let obj18;
+  let obj19;
   let onCancelReplying;
   let onTapContextBarReply;
   let onToggleReplyMention;
@@ -380,56 +382,6 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingReply) => {
                                                                 cResult[57] = tmp28;
                                                                 cResult[58] = tmp4.contextBarRow;
                                                                 cResult[59] = tmp54;
-                                                                class G {
-                                                                  constructor(arg0) {
-                                                                    closure_0 = pendingReply;
-                                                                    intl = pendingReply(colorString[13]).intl;
-                                                                    obj = {
-                                                                      userHook(arg0, arg1) {
-                                                                                                                                          let items1;
-                                                                                                                                          let tmp20;
-                                                                                                                                          let tmp6;
-                                                                                                                                          if ("dot" === stateFromStores) {
-                                                                                                                                            let tmp3Result;
-                                                                                                                                            if (null != colorString) {
-                                                                                                                                              const obj2 = { color: tmp, colors: colorStrings, guildId, size: "small" };
-                                                                                                                                              const items = [closure_12(native.RoleDot, obj2), ];
-                                                                                                                                              const obj3 = { variant, style: tmp20, children: nick };
-                                                                                                                                              tmp20 = undefined;
-                                                                                                                                              const Text2 = Text_Text.Text;
-                                                                                                                                              const tmp15 = closure_12;
-                                                                                                                                              const tmp8 = map1;
-                                                                                                                                              const tmp9 = authStore2;
-                                                                                                                                              if (null != displayNameStylesFont) {
-                                                                                                                                                tmp20 = { fontFamily: tmp19 };
-                                                                                                                                                const obj4 = { fontFamily: tmp19 };
-                                                                                                                                              }
-                                                                                                                                              const obj5 = { children: items };
-                                                                                                                                              items[1] = tmp15(Text2, obj3, arg1);
-                                                                                                                                              tmp3Result = tmp8(tmp9, obj5);
-                                                                                                                                            }
-                                                                                                                                            return tmp3Result;
-                                                                                                                                          }
-                                                                                                                                          obj = { variant, style: items1, gradientColors: tmp6, children: nick };
-                                                                                                                                          items1 = [roleStyle, ];
-                                                                                                                                          let tmp5 = null != displayNameStylesFont;
-                                                                                                                                          const Text = Text_Text.Text;
-                                                                                                                                          const tmp3 = closure_12;
-                                                                                                                                          if (tmp5) {
-                                                                                                                                            tmp5 = { fontFamily: tmp4 };
-                                                                                                                                            const obj6 = { fontFamily: tmp4 };
-                                                                                                                                          }
-                                                                                                                                          items1[1] = tmp5;
-                                                                                                                                          tmp6 = undefined;
-                                                                                                                                          if (isRoleStyleAndRoleColorsEligibleForERC) {
-                                                                                                                                            tmp6 = processColorStringsArray;
-                                                                                                                                          }
-                                                                                                                                          tmp3Result = tmp3(Text, obj, "" + arg1 + "-" + pendingReply.message.author.id);
-                                                                                                                                        }
-                                                                    };
-                                                                    return intl.format(pendingReply(colorString[13]).t["8E4GxS"], obj);
-                                                                  }
-                                                                }
                                                                 cResult[60] = tmp61;
                                                                 tmp58 = tmp61;
                                                               }
@@ -440,56 +392,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingReply) => {
                                                           const tmp57 = closure_13(guildId, obj9);
                                                           cResult[52] = tmp32;
                                                           cResult[53] = tmp46;
-                                                          class G {
-                                                            constructor(arg0) {
-                                                              closure_0 = pendingReply;
-                                                              intl = pendingReply(colorString[13]).intl;
-                                                              obj = {
-                                                                userHook(arg0, arg1) {
-                                                                                                                              let items1;
-                                                                                                                              let tmp20;
-                                                                                                                              let tmp6;
-                                                                                                                              if ("dot" === stateFromStores) {
-                                                                                                                                let tmp3Result;
-                                                                                                                                if (null != colorString) {
-                                                                                                                                  const obj2 = { color: tmp, colors: colorStrings, guildId, size: "small" };
-                                                                                                                                  const items = [closure_12(native.RoleDot, obj2), ];
-                                                                                                                                  const obj3 = { variant, style: tmp20, children: nick };
-                                                                                                                                  tmp20 = undefined;
-                                                                                                                                  const Text2 = Text_Text.Text;
-                                                                                                                                  const tmp15 = closure_12;
-                                                                                                                                  const tmp8 = map1;
-                                                                                                                                  const tmp9 = authStore2;
-                                                                                                                                  if (null != displayNameStylesFont) {
-                                                                                                                                    tmp20 = { fontFamily: tmp19 };
-                                                                                                                                    const obj4 = { fontFamily: tmp19 };
-                                                                                                                                  }
-                                                                                                                                  const obj5 = { children: items };
-                                                                                                                                  items[1] = tmp15(Text2, obj3, arg1);
-                                                                                                                                  tmp3Result = tmp8(tmp9, obj5);
-                                                                                                                                }
-                                                                                                                                return tmp3Result;
-                                                                                                                              }
-                                                                                                                              obj = { variant, style: items1, gradientColors: tmp6, children: nick };
-                                                                                                                              items1 = [roleStyle, ];
-                                                                                                                              let tmp5 = null != displayNameStylesFont;
-                                                                                                                              const Text = Text_Text.Text;
-                                                                                                                              const tmp3 = closure_12;
-                                                                                                                              if (tmp5) {
-                                                                                                                                tmp5 = { fontFamily: tmp4 };
-                                                                                                                                const obj6 = { fontFamily: tmp4 };
-                                                                                                                              }
-                                                                                                                              items1[1] = tmp5;
-                                                                                                                              tmp6 = undefined;
-                                                                                                                              if (isRoleStyleAndRoleColorsEligibleForERC) {
-                                                                                                                                tmp6 = processColorStringsArray;
-                                                                                                                              }
-                                                                                                                              tmp3Result = tmp3(Text, obj, "" + arg1 + "-" + pendingReply.message.author.id);
-                                                                                                                            }
-                                                              };
-                                                              return intl.format(pendingReply(colorString[13]).t["8E4GxS"], obj);
-                                                            }
-                                                          }
+                                                          cResult[54] = tmp36;
                                                           cResult[55] = tmp53;
                                                           cResult[56] = tmp57;
                                                           tmp54 = tmp57;
@@ -533,7 +436,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingReply) => {
                                   }
                                   let tmp40Result = null;
                                   if (showMentionToggle1) {
-                                    const obj11 = { accessibilityRole, accessibilityState, accessibilityLabel: intl2.string(tmp(colorString[13]).t.P8tvKG), accessibilityHint: stringResult, activeOpacity: 0.5, hitSlop: tmp42, onPress: null, style: tmp4.floatingMentionGroup, children: items5 };
+                                    const obj11 = { accessibilityRole, accessibilityState, accessibilityLabel: intl2.string(tmp(colorString[13]).t.P8tvKG), accessibilityHint: stringResult, activeOpacity: 0.5, hitSlop: tmp42, onPress: onToggleReplyMention, style: tmp4.floatingMentionGroup, children: items5 };
                                     const PressableOpacity2 = tmp(tmp2[16]).PressableOpacity;
                                     intl2 = tmp(tmp2[13]).intl;
                                     const shouldMention = pendingReply.shouldMention;
@@ -549,56 +452,6 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingReply) => {
                                     tmp42 = undefined;
                                     if (bound > 0) {
                                       tmp42 = bound;
-                                    }
-                                    class G {
-                                      constructor(arg0) {
-                                        closure_0 = pendingReply;
-                                        intl = pendingReply(colorString[13]).intl;
-                                        obj = {
-                                          userHook(arg0, arg1) {
-                                                                                  let items1;
-                                                                                  let tmp20;
-                                                                                  let tmp6;
-                                                                                  if ("dot" === stateFromStores) {
-                                                                                    let tmp3Result;
-                                                                                    if (null != colorString) {
-                                                                                      const obj2 = { color: tmp, colors: colorStrings, guildId, size: "small" };
-                                                                                      const items = [closure_12(native.RoleDot, obj2), ];
-                                                                                      const obj3 = { variant, style: tmp20, children: nick };
-                                                                                      tmp20 = undefined;
-                                                                                      const Text2 = Text_Text.Text;
-                                                                                      const tmp15 = closure_12;
-                                                                                      const tmp8 = map1;
-                                                                                      const tmp9 = authStore2;
-                                                                                      if (null != displayNameStylesFont) {
-                                                                                        tmp20 = { fontFamily: tmp19 };
-                                                                                        const obj4 = { fontFamily: tmp19 };
-                                                                                      }
-                                                                                      const obj5 = { children: items };
-                                                                                      items[1] = tmp15(Text2, obj3, arg1);
-                                                                                      tmp3Result = tmp8(tmp9, obj5);
-                                                                                    }
-                                                                                    return tmp3Result;
-                                                                                  }
-                                                                                  obj = { variant, style: items1, gradientColors: tmp6, children: nick };
-                                                                                  items1 = [roleStyle, ];
-                                                                                  let tmp5 = null != displayNameStylesFont;
-                                                                                  const Text = Text_Text.Text;
-                                                                                  const tmp3 = closure_12;
-                                                                                  if (tmp5) {
-                                                                                    tmp5 = { fontFamily: tmp4 };
-                                                                                    const obj6 = { fontFamily: tmp4 };
-                                                                                  }
-                                                                                  items1[1] = tmp5;
-                                                                                  tmp6 = undefined;
-                                                                                  if (isRoleStyleAndRoleColorsEligibleForERC) {
-                                                                                    tmp6 = processColorStringsArray;
-                                                                                  }
-                                                                                  tmp3Result = tmp3(Text, obj, "" + arg1 + "-" + pendingReply.message.author.id);
-                                                                                }
-                                        };
-                                        return intl.format(pendingReply(colorString[13]).t["8E4GxS"], obj);
-                                      }
                                     }
                                     const obj12 = { source: tmp5(colorString[22]), size: tmp(colorString[7]).Icon.Sizes.CUSTOM, style: items4 };
                                     const Icon2 = tmp(tmp2[7]).Icon;
@@ -627,56 +480,6 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingReply) => {
                                   cResult[34] = accessibilityState;
                                   cResult[35] = onToggleReplyMention;
                                   cResult[36] = pendingReply.shouldMention;
-                                  class G {
-                                    constructor(arg0) {
-                                      closure_0 = pendingReply;
-                                      intl = pendingReply(colorString[13]).intl;
-                                      obj = {
-                                        userHook(arg0, arg1) {
-                                                                              let items1;
-                                                                              let tmp20;
-                                                                              let tmp6;
-                                                                              if ("dot" === stateFromStores) {
-                                                                                let tmp3Result;
-                                                                                if (null != colorString) {
-                                                                                  const obj2 = { color: tmp, colors: colorStrings, guildId, size: "small" };
-                                                                                  const items = [closure_12(native.RoleDot, obj2), ];
-                                                                                  const obj3 = { variant, style: tmp20, children: nick };
-                                                                                  tmp20 = undefined;
-                                                                                  const Text2 = Text_Text.Text;
-                                                                                  const tmp15 = closure_12;
-                                                                                  const tmp8 = map1;
-                                                                                  const tmp9 = authStore2;
-                                                                                  if (null != displayNameStylesFont) {
-                                                                                    tmp20 = { fontFamily: tmp19 };
-                                                                                    const obj4 = { fontFamily: tmp19 };
-                                                                                  }
-                                                                                  const obj5 = { children: items };
-                                                                                  items[1] = tmp15(Text2, obj3, arg1);
-                                                                                  tmp3Result = tmp8(tmp9, obj5);
-                                                                                }
-                                                                                return tmp3Result;
-                                                                              }
-                                                                              obj = { variant, style: items1, gradientColors: tmp6, children: nick };
-                                                                              items1 = [roleStyle, ];
-                                                                              let tmp5 = null != displayNameStylesFont;
-                                                                              const Text = Text_Text.Text;
-                                                                              const tmp3 = closure_12;
-                                                                              if (tmp5) {
-                                                                                tmp5 = { fontFamily: tmp4 };
-                                                                                const obj6 = { fontFamily: tmp4 };
-                                                                              }
-                                                                              items1[1] = tmp5;
-                                                                              tmp6 = undefined;
-                                                                              if (isRoleStyleAndRoleColorsEligibleForERC) {
-                                                                                tmp6 = processColorStringsArray;
-                                                                              }
-                                                                              tmp3Result = tmp3(Text, obj, "" + arg1 + "-" + pendingReply.message.author.id);
-                                                                            }
-                                      };
-                                      return intl.format(pendingReply(colorString[13]).t["8E4GxS"], obj);
-                                    }
-                                  }
                                   cResult[37] = pendingReply.showMentionToggle;
                                   cResult[38] = tmp4.floatingMentionGroup;
                                   cResult[39] = tmp4.replyMentionButtonActive;
@@ -712,63 +515,13 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingReply) => {
                           let Text = tmp(tmp2[14]).Text;
                           tmp31 = closure_12(Text, obj16);
                         } else {
-                          const obj17 = { style: tmp4.floatingReplyTextWrapper, accessibilityRole: "link", accessibilityLabel: intl5.formatToPlainString(tmp(colorString[13]).t.EpJL4E, obj18), accessibilityHint: intl6.string(tmp(colorString[13]).t["0CfCVW"]), activeOpacity: 0.5, onPress: onTapContextBarReply, children: null };
+                          const obj17 = { style: tmp4.floatingReplyTextWrapper, accessibilityRole: "link", accessibilityLabel: intl5.formatToPlainString(tmp(colorString[13]).t.EpJL4E, obj18), accessibilityHint: intl6.string(tmp(colorString[13]).t["0CfCVW"]), activeOpacity: 0.5, onPress: onTapContextBarReply, children: closure_12(Text3, obj19) };
                           const PressableOpacity3 = tmp(tmp2[16]).PressableOpacity;
                           intl5 = tmp(tmp2[13]).intl;
                           obj18 = { username: nick };
                           intl6 = tmp(tmp2[13]).intl;
-                          ({ lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: tmp27("text-sm/semibold") });
-                          const Text3 = tmp(tmp2[14]).Text;
-                          class G {
-                            constructor(arg0) {
-                              closure_0 = pendingReply;
-                              intl = pendingReply(colorString[13]).intl;
-                              obj = {
-                                userHook(arg0, arg1) {
-                                                              let items1;
-                                                              let tmp20;
-                                                              let tmp6;
-                                                              if ("dot" === stateFromStores) {
-                                                                let tmp3Result;
-                                                                if (null != colorString) {
-                                                                  const obj2 = { color: tmp, colors: colorStrings, guildId, size: "small" };
-                                                                  const items = [closure_12(native.RoleDot, obj2), ];
-                                                                  const obj3 = { variant, style: tmp20, children: nick };
-                                                                  tmp20 = undefined;
-                                                                  const Text2 = Text_Text.Text;
-                                                                  const tmp15 = closure_12;
-                                                                  const tmp8 = map1;
-                                                                  const tmp9 = authStore2;
-                                                                  if (null != displayNameStylesFont) {
-                                                                    tmp20 = { fontFamily: tmp19 };
-                                                                    const obj4 = { fontFamily: tmp19 };
-                                                                  }
-                                                                  const obj5 = { children: items };
-                                                                  items[1] = tmp15(Text2, obj3, arg1);
-                                                                  tmp3Result = tmp8(tmp9, obj5);
-                                                                }
-                                                                return tmp3Result;
-                                                              }
-                                                              obj = { variant, style: items1, gradientColors: tmp6, children: nick };
-                                                              items1 = [roleStyle, ];
-                                                              let tmp5 = null != displayNameStylesFont;
-                                                              const Text = Text_Text.Text;
-                                                              const tmp3 = closure_12;
-                                                              if (tmp5) {
-                                                                tmp5 = { fontFamily: tmp4 };
-                                                                const obj6 = { fontFamily: tmp4 };
-                                                              }
-                                                              items1[1] = tmp5;
-                                                              tmp6 = undefined;
-                                                              if (isRoleStyleAndRoleColorsEligibleForERC) {
-                                                                tmp6 = processColorStringsArray;
-                                                              }
-                                                              tmp3Result = tmp3(Text, obj, "" + arg1 + "-" + pendingReply.message.author.id);
-                                                            }
-                              };
-                              return intl.format(pendingReply(colorString[13]).t["8E4GxS"], obj);
-                            }
-                          }
+                          obj19 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: tmp27("text-sm/semibold") };
+                          Text3 = tmp(tmp2[14]).Text;
                           tmp31 = closure_12(PressableOpacity3, obj17);
                         }
                         cResult[23] = nick;
@@ -786,55 +539,52 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingReply) => {
           }
         }
       }
-      class G {
-        constructor(arg0) {
-          closure_0 = pendingReply;
-          intl = pendingReply(colorString[13]).intl;
-          obj = {
-            userHook(arg0, arg1) {
-                      let items1;
-                      let tmp20;
-                      let tmp6;
-                      if ("dot" === stateFromStores) {
-                        let tmp3Result;
-                        if (null != colorString) {
-                          const obj2 = { color: tmp, colors: colorStrings, guildId, size: "small" };
-                          const items = [closure_12(native.RoleDot, obj2), ];
-                          const obj3 = { variant, style: tmp20, children: nick };
-                          tmp20 = undefined;
-                          const Text2 = Text_Text.Text;
-                          const tmp15 = closure_12;
-                          const tmp8 = map1;
-                          const tmp9 = authStore2;
-                          if (null != displayNameStylesFont) {
-                            tmp20 = { fontFamily: tmp19 };
-                            const obj4 = { fontFamily: tmp19 };
-                          }
-                          const obj5 = { children: items };
-                          items[1] = tmp15(Text2, obj3, arg1);
-                          tmp3Result = tmp8(tmp9, obj5);
-                        }
-                        return tmp3Result;
-                      }
-                      obj = { variant, style: items1, gradientColors: tmp6, children: nick };
-                      items1 = [roleStyle, ];
-                      let tmp5 = null != displayNameStylesFont;
-                      const Text = Text_Text.Text;
-                      const tmp3 = closure_12;
-                      if (tmp5) {
-                        tmp5 = { fontFamily: tmp4 };
-                        const obj6 = { fontFamily: tmp4 };
-                      }
-                      items1[1] = tmp5;
-                      tmp6 = undefined;
-                      if (isRoleStyleAndRoleColorsEligibleForERC) {
-                        tmp6 = processColorStringsArray;
-                      }
-                      tmp3Result = tmp3(Text, obj, "" + arg1 + "-" + pendingReply.message.author.id);
-                    }
-          };
-          return intl.format(pendingReply(colorString[13]).t["8E4GxS"], obj);
-        }
+      function replyText(variant) {
+        const intl = pendingReply(colorString[13]).intl;
+        obj = {
+          userHook(arg0, arg1) {
+            let items1;
+            let tmp20;
+            let tmp6;
+            if ("dot" === stateFromStores) {
+              let tmp3Result;
+              if (null != colorString) {
+                const obj2 = { color: tmp, colors: colorStrings, guildId, size: "small" };
+                const items = [authStore2(native.RoleDot, obj2), ];
+                const obj3 = { variant, style: tmp20, children: nick };
+                tmp20 = undefined;
+                const Text2 = Text_Text.Text;
+                const tmp15 = authStore2;
+                const tmp8 = map1;
+                const tmp9 = syncedClientThemes;
+                if (null != displayNameStylesFont) {
+                  tmp20 = { fontFamily: tmp19 };
+                  const obj4 = { fontFamily: tmp19 };
+                }
+                const obj5 = { children: items };
+                items[1] = tmp15(Text2, obj3, arg1);
+                tmp3Result = tmp8(tmp9, obj5);
+              }
+              return tmp3Result;
+            }
+            obj = { variant, style: items1, gradientColors: tmp6, children: nick };
+            items1 = [roleStyle, ];
+            let tmp5 = null != displayNameStylesFont;
+            const Text = Text_Text.Text;
+            const tmp3 = authStore2;
+            if (tmp5) {
+              tmp5 = { fontFamily: tmp4 };
+              const obj6 = { fontFamily: tmp4 };
+            }
+            items1[1] = tmp5;
+            tmp6 = undefined;
+            if (isRoleStyleAndRoleColorsEligibleForERC) {
+              tmp6 = processColorStringsArray;
+            }
+            tmp3Result = tmp3(Text, obj, "" + arg1 + "-" + pendingReply.message.author.id);
+          }
+        };
+        return intl.format(pendingReply(colorString[13]).t["8E4GxS"], obj);
       }
       cResult[12] = tmp14;
       cResult[13] = colorString;
@@ -846,8 +596,8 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingReply) => {
       cResult[19] = pendingReply.message.author.id;
       cResult[20] = stateFromStores;
       cResult[21] = isRoleStyleAndRoleColorsEligibleForERC;
-      cResult[22] = G;
-      tmp27 = G;
+      cResult[22] = replyText;
+      tmp27 = replyText;
     }
     const obj20 = { userId: pendingReply.message.author.id, guildId };
     cResult[7] = guildId;
@@ -867,7 +617,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingReply) => {
   cResult[5] = stateFromStores;
   cResult[6] = tmp15;
   tmp14 = tmp15;
-}) : ((pendingReply) => {
+}) : (function ChatInputReplyBar(pendingReply) {
   let Icon;
   let Text3;
   let accessibilityRole;
@@ -905,13 +655,13 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingReply) => {
       let tmp3Result;
       if (null != colorString) {
         const obj2 = { color: tmp, colors: colorStrings, guildId, size: "small" };
-        const items = [closure_12(native.RoleDot, obj2), ];
+        const items = [authStore2(native.RoleDot, obj2), ];
         const obj3 = { variant: "text-sm/semibold", style: tmp19, children: nick };
         tmp19 = undefined;
         const Text2 = Text_Text.Text;
-        const tmp15 = closure_12;
+        const tmp15 = authStore2;
         const tmp8 = map1;
-        const tmp9 = authStore2;
+        const tmp9 = syncedClientThemes;
         if (null != closure_7) {
           tmp19 = { fontFamily: tmp18 };
           const obj4 = { fontFamily: tmp18 };
@@ -926,7 +676,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingReply) => {
     items1 = [roleStyle, ];
     let tmp5 = null != closure_7;
     const Text = Text_Text.Text;
-    const tmp3 = closure_12;
+    const tmp3 = authStore2;
     if (tmp5) {
       tmp5 = { fontFamily: tmp4 };
       const obj6 = { fontFamily: tmp4 };
@@ -1083,7 +833,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((pendingReply) => {
 });
 let closure_19 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelEditing) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputEditBar(onCancelEditing) {
   let first;
   let items;
   let tmp10;
@@ -1108,7 +858,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelEditin
   }
   if (cResult[1] !== tmp4.floatingReplyTextWrapper) {
     const obj4 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: floatingReplyTextWrapper, children: first };
-    const tmp12 = closure_12(Text_Text.Text, obj4);
+    const tmp12 = authStore2(Text_Text.Text, obj4);
     cResult[1] = tmp4.floatingReplyTextWrapper;
     cResult[2] = tmp12;
     tmp10 = tmp12;
@@ -1129,8 +879,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelEditin
   }
   if (cResult[4] !== tmp4.floatingCloseIcon) {
     const obj5 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp4.floatingCloseIcon };
-    const Icon = tmp(1188).Icon;
-    const tmp18 = closure_12(Icon, obj5);
+    const Icon = tmp(1200).Icon;
+    const tmp18 = authStore2(Icon, obj5);
     cResult[4] = tmp4.floatingCloseIcon;
     cResult[5] = tmp18;
     tmp16 = tmp18;
@@ -1161,7 +911,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelEditin
             return tmp29;
           }
           const obj6 = { style: tmp4.contextBarRow, children: tmp25 };
-          const tmp32 = closure_12(hasOwnProperty, obj6);
+          const tmp32 = authStore2(hasOwnProperty, obj6);
           cResult[16] = tmp4.contextBarRow;
           cResult[17] = tmp25;
           cResult[18] = tmp32;
@@ -1169,27 +919,27 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelEditin
         }
         const obj7 = { children: items };
         items = [tmp10, tmp21];
-        const tmp28 = map1(authStore2, obj7);
+        const tmp28 = map1(syncedClientThemes, obj7);
         cResult[13] = tmp10;
         cResult[14] = tmp21;
         cResult[15] = tmp28;
         tmp25 = tmp28;
       }
       const obj8 = { style: tmp4.floatingRightActions, children: tmp19 };
-      const tmp24 = closure_12(hasOwnProperty, obj8);
+      const tmp24 = authStore2(hasOwnProperty, obj8);
       cResult[10] = tmp19;
       cResult[11] = tmp4.floatingRightActions;
       cResult[12] = tmp24;
       tmp21 = tmp24;
     }
   }
-  const tmp20 = closure_12(Pressables.PressableOpacity, { accessibilityRole: "button", accessibilityLabel: tmp13, activeOpacity: 0.5, hitSlop: tmp15, onPress: onCancelEditing, children: tmp16 });
+  const tmp20 = authStore2(Pressables.PressableOpacity, { accessibilityRole: "button", accessibilityLabel: tmp13, activeOpacity: 0.5, hitSlop: tmp15, onPress: onCancelEditing, children: tmp16 });
   cResult[6] = onCancelEditing;
   cResult[7] = tmp15;
   cResult[8] = tmp16;
   cResult[9] = tmp20;
   tmp19 = tmp20;
-}) : ((onCancelEditing) => {
+}) : (function ChatInputEditBar(onCancelEditing) {
   let Icon;
   let intl;
   let intl2;
@@ -1206,8 +956,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelEditin
   const obj3 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: tmp.floatingReplyTextWrapper, children: intl.string(intl9.t.rtNXxN) };
   const Text = Text_Text.Text;
   intl = intl9.intl;
-  const obj4 = { accessibilityRole: "button", accessibilityLabel: intl2.string(intl9.t.qv9j1K), activeOpacity: 0.5, hitSlop: tmp9, onPress: onCancelEditing, children: closure_12(Icon, obj5) };
-  const tmp8 = closure_12(Text, obj3);
+  const obj4 = { accessibilityRole: "button", accessibilityLabel: intl2.string(intl9.t.qv9j1K), activeOpacity: 0.5, hitSlop: tmp9, onPress: onCancelEditing, children: authStore2(Icon, obj5) };
+  const tmp8 = authStore2(Text, obj3);
   const PressableOpacity = Pressables.PressableOpacity;
   intl2 = intl9.intl;
   tmp9 = undefined;
@@ -1215,16 +965,16 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancelEditin
     tmp9 = bound;
   }
   obj5 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
-  Icon = tmp2(1188).Icon;
-  const obj6 = { style: tmp.contextBarRow, children: map1(authStore2, obj7) };
+  Icon = tmp2(1200).Icon;
+  const obj6 = { style: tmp.contextBarRow, children: map1(syncedClientThemes, obj7) };
   obj7 = { children: items };
   items = [tmp8, ];
-  const obj8 = { style: tmp.floatingRightActions, children: closure_12(PressableOpacity, obj4) };
-  items[1] = closure_12(hasOwnProperty, obj8);
-  return closure_12(hasOwnProperty, obj6);
+  const obj8 = { style: tmp.floatingRightActions, children: authStore2(PressableOpacity, obj4) };
+  items[1] = authStore2(hasOwnProperty, obj8);
+  return authStore2(hasOwnProperty, obj6);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputScheduledMessageBar(arg0) {
   let date;
   let first;
   let items;
@@ -1268,7 +1018,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
   }
   if (cResult[3] !== tmp10) {
     const obj5 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: tmp10 };
-    const tmp16 = closure_12(Text_Text.Text, obj5);
+    const tmp16 = authStore2(Text_Text.Text, obj5);
     cResult[3] = tmp10;
     cResult[4] = tmp16;
     tmp14 = tmp16;
@@ -1298,8 +1048,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
       }
       if (cResult[10] !== tmp4.floatingCloseIcon) {
         const obj6 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp4.floatingCloseIcon };
-        const Icon = tmp(1188).Icon;
-        const tmp24 = closure_12(Icon, obj6);
+        const Icon = tmp(1200).Icon;
+        const tmp24 = authStore2(Icon, obj6);
         cResult[10] = tmp4.floatingCloseIcon;
         cResult[11] = tmp24;
         tmp22 = tmp24;
@@ -1330,7 +1080,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
                 return tmp36;
               }
               const obj7 = { style: tmp4.contextBarRow, children: tmp32 };
-              const tmp39 = closure_12(hasOwnProperty, obj7);
+              const tmp39 = authStore2(hasOwnProperty, obj7);
               cResult[22] = tmp4.contextBarRow;
               cResult[23] = tmp32;
               cResult[24] = tmp39;
@@ -1338,14 +1088,14 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
             }
             const obj8 = { children: items };
             items = [tmp17, tmp28];
-            const tmp35 = map1(authStore2, obj8);
+            const tmp35 = map1(syncedClientThemes, obj8);
             cResult[19] = tmp17;
             cResult[20] = tmp28;
             cResult[21] = tmp35;
             tmp32 = tmp35;
           }
           const obj9 = { style: tmp4.floatingRightActions, children: tmp25 };
-          const tmp31 = closure_12(hasOwnProperty, obj9);
+          const tmp31 = authStore2(hasOwnProperty, obj9);
           cResult[16] = tmp25;
           cResult[17] = tmp4.floatingRightActions;
           cResult[18] = tmp31;
@@ -1353,7 +1103,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
         }
       }
       const obj10 = { accessibilityRole: "button", accessibilityLabel: tmp19, activeOpacity: 0.5, hitSlop: tmp21, onPress: onCancelScheduling, children: tmp22 };
-      const tmp27 = closure_12(Pressables.PressableOpacity, obj10);
+      const tmp27 = authStore2(Pressables.PressableOpacity, obj10);
       cResult[12] = onCancelScheduling;
       cResult[13] = tmp21;
       cResult[14] = tmp22;
@@ -1361,13 +1111,13 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
       tmp25 = tmp27;
     }
   }
-  const tmp18 = closure_12(Pressables.PressableOpacity, { style: floatingReplyTextWrapper, accessibilityRole: "button", accessibilityLabel: first, activeOpacity: 0.5, onPress: onEditSchedule, children: tmp14 });
+  const tmp18 = authStore2(Pressables.PressableOpacity, { style: floatingReplyTextWrapper, accessibilityRole: "button", accessibilityLabel: first, activeOpacity: 0.5, onPress: onEditSchedule, children: tmp14 });
   cResult[5] = onEditSchedule;
   cResult[6] = tmp4.floatingReplyTextWrapper;
   cResult[7] = tmp14;
   cResult[8] = tmp18;
   tmp17 = tmp18;
-}) : ((scheduledTimestamp) => {
+}) : (function ChatInputScheduledMessageBar(scheduledTimestamp) {
   let Icon;
   let Text;
   let ZN3tIx;
@@ -1390,7 +1140,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
   const token = obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   const obj2 = useToken;
   const bound = Math.max(0, (token - obj2.useToken(nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
-  const obj3 = { style: tmp.floatingReplyTextWrapper, accessibilityRole: "button", accessibilityLabel: intl.string(intl9.t.SBcdAN), activeOpacity: 0.5, onPress: onEditSchedule, children: closure_12(Text, obj4) };
+  const obj3 = { style: tmp.floatingReplyTextWrapper, accessibilityRole: "button", accessibilityLabel: intl.string(intl9.t.SBcdAN), activeOpacity: 0.5, onPress: onEditSchedule, children: authStore2(Text, obj4) };
   const PressableOpacity = Pressables.PressableOpacity;
   intl = intl9.intl;
   obj4 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: formatToPlainString(ZN3tIx, obj5) };
@@ -1400,8 +1150,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
   obj5 = { timestamp: date.valueOf() };
   ZN3tIx = intl9.t.ZN3tIx;
   date = new Date(scheduledTimestamp);
-  const obj6 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl9.t.cpT0Cq), activeOpacity: 0.5, hitSlop: tmp9, onPress: onCancelScheduling, children: closure_12(Icon, obj7) };
-  const tmp8 = closure_12(PressableOpacity, obj3);
+  const obj6 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl9.t.cpT0Cq), activeOpacity: 0.5, hitSlop: tmp9, onPress: onCancelScheduling, children: authStore2(Icon, obj7) };
+  const tmp8 = authStore2(PressableOpacity, obj3);
   const PressableOpacity2 = Pressables.PressableOpacity;
   intl3 = intl9.intl;
   tmp9 = undefined;
@@ -1409,47 +1159,48 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
     tmp9 = bound;
   }
   obj7 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
-  Icon = tmp2(1188).Icon;
-  const obj8 = { style: tmp.contextBarRow, children: map1(authStore2, obj9) };
+  Icon = tmp2(1200).Icon;
+  const obj8 = { style: tmp.contextBarRow, children: map1(syncedClientThemes, obj9) };
   obj9 = { children: items };
   items = [tmp8, ];
-  const obj10 = { style: tmp.floatingRightActions, children: closure_12(PressableOpacity2, obj6) };
-  items[1] = closure_12(hasOwnProperty, obj10);
-  return closure_12(hasOwnProperty, obj8);
+  const obj10 = { style: tmp.floatingRightActions, children: authStore2(PressableOpacity2, obj6) };
+  items[1] = authStore2(hasOwnProperty, obj10);
+  return authStore2(hasOwnProperty, obj8);
 });
 const __initData = { code: "function ChatInputContextBarTsx1(){const{stylesBackgroundColor,heightSv}=this.__closure;return{backgroundColor:stylesBackgroundColor,...{maxHeight:heightSv.get()}};}" };
 let closure_23 = { code: "function ChatInputContextBarTsx2(finished){const{runOnJS,handleTransitionFinished}=this.__closure;if(finished){runOnJS(handleTransitionFinished)();}}" };
 const __initData2 = { code: "function ChatInputContextBarTsx3(){const{stylesBackgroundColor,heightSv}=this.__closure;return{backgroundColor:stylesBackgroundColor,...{maxHeight:heightSv.get()}};}" };
 let closure_25 = { code: "function ChatInputContextBarTsx4(finished){const{runOnJS,handleTransitionFinished}=this.__closure;if(finished){runOnJS(handleTransitionFinished)();}}" };
-const forwardRef = react.forwardRef;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((children, ref) => {
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextBarItem(arg0) {
   let backgroundColor;
+  let children;
   let first;
+  let ref;
   let tmp10;
   let tmp7;
   let tmp = dependencyMap;
   obj = backgroundColor(576);
   const cResult = obj.c(9);
-  children = children.children;
-  const obj2 = backgroundColor(4696);
-  backgroundColor = closure_16(obj2.useGradientValue(backgroundColor(4696).GradientPercentage.END)).contextBar.backgroundColor;
+  ({ children, ref } = arg0);
+  const obj2 = backgroundColor(4936);
+  backgroundColor = closure_16(obj2.useGradientValue(backgroundColor(4936).GradientPercentage.END)).contextBar.backgroundColor;
   const tmp3 = closure_17();
-  const obj3 = backgroundColor(4612);
+  const obj3 = backgroundColor(4850);
   const sharedValue = obj3.useSharedValue(0);
-  let fn = function o() {
+  let fn = function l() {
     obj = { backgroundColor, maxHeight: sharedValue.get() };
     return obj;
   };
   fn.__closure = { stylesBackgroundColor: backgroundColor, heightSv: sharedValue };
   fn.__workletHash = 16731072716488;
   fn.__initData = __initData;
-  const obj4 = backgroundColor(4612);
+  const obj4 = backgroundColor(4850);
   const animatedStyle = obj4.useAnimatedStyle(fn);
   dependencyMap = first.useRef(null);
   const obj5 = first;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function s() {
+    const fn2 = function o() {
       const current = ref.current;
       if (current != null) {
         current();
@@ -1478,7 +1229,7 @@ let closure_26 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((chi
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F152580 */ };
+                  const fn = function n() { /* body not rendered: F155428 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1510,7 +1261,7 @@ let closure_26 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((chi
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F152580 */ };
+                  const fn = function n() { /* body not rendered: F155428 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1541,7 +1292,7 @@ let closure_26 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((chi
                   closure_1_2.current = current;
                   set = sharedValue.set;
                   obj = backgroundColor(closure_2[25]);
-                  const fn = function n() { /* body not rendered: F152580 */ };
+                  const fn = function n() { /* body not rendered: F155428 */ };
                   fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                   fn.__workletHash = 10908592279914;
                   fn.__initData = __initData;
@@ -1570,7 +1321,7 @@ let closure_26 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((chi
                       closure_1_2.current = current;
                       set = sharedValue.set;
                       obj = backgroundColor(closure_2[25]);
-                      const fn = function n() { /* body not rendered: F152580 */ };
+                      const fn = function n() { /* body not rendered: F155428 */ };
                       fn.__closure = { runOnJS: backgroundColor(closure_2[24]).runOnJS, handleTransitionFinished };
                       fn.__workletHash = 10908592279914;
                       fn.__initData = __initData;
@@ -1584,7 +1335,7 @@ let closure_26 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((chi
       return tmp10;
     }
     const obj6 = { style: tmp9, children };
-    const tmp13 = closure_12(sharedValue(4612).View, obj6);
+    const tmp13 = closure_12(sharedValue(4850).View, obj6);
     cResult[6] = children;
     cResult[7] = tmp9;
     cResult[8] = tmp13;
@@ -1594,17 +1345,19 @@ let closure_26 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((chi
   cResult[3] = animatedStyle;
   cResult[4] = tmp3.floatingContextBar;
   cResult[5] = items;
-}) : ((children, ref) => {
+}) : (function ContextBarItem(arg0) {
+  let children;
   let closure_3;
   let items1;
+  let ref;
   let backgroundColor;
-  ref = undefined;
+  let ref1;
   react = undefined;
-  children = children.children;
-  obj = backgroundColor(ref[23]);
-  backgroundColor = closure_16(obj.useGradientValue(backgroundColor(ref[23]).GradientPercentage.END)).contextBar.backgroundColor;
+  ({ children, ref } = arg0);
+  obj = backgroundColor(ref1[23]);
+  backgroundColor = closure_16(obj.useGradientValue(backgroundColor(ref1[23]).GradientPercentage.END)).contextBar.backgroundColor;
   let tmp = closure_17();
-  const obj2 = backgroundColor(ref[24]);
+  const obj2 = backgroundColor(ref1[24]);
   const sharedValue = obj2.useSharedValue(0);
   let fn = function o() {
     obj = { backgroundColor, maxHeight: sharedValue.get() };
@@ -1613,12 +1366,12 @@ let closure_26 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((chi
   fn.__closure = { stylesBackgroundColor: backgroundColor, heightSv: sharedValue };
   fn.__workletHash = 10645440321802;
   fn.__initData = __initData2;
-  const obj3 = backgroundColor(ref[24]);
+  const obj3 = backgroundColor(ref1[24]);
   const animatedStyle = obj3.useAnimatedStyle(fn);
-  ref = react.useRef(null);
-  const items = [ref];
+  ref1 = react.useRef(null);
+  const items = [ref1];
   react = react.useCallback(() => {
-    const current = ref.current;
+    const current = ref1.current;
     if (current != null) {
       current();
     }
@@ -1628,29 +1381,29 @@ let closure_26 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((chi
     obj = {
       componentDidAppear() {
         set = sharedValue.set;
-        obj = backgroundColor(ref[25]);
+        obj = backgroundColor(ref1[25]);
         const result = set(obj.withTiming(60, closure_2_15));
       },
       componentDidEnter() {
         set = sharedValue.set;
-        obj = backgroundColor(ref[25]);
+        obj = backgroundColor(ref1[25]);
         const result = set(obj.withTiming(60, closure_2_15));
       },
       componentWillLeave(current) {
         closure_1_2.current = current;
         set = sharedValue.set;
-        obj = backgroundColor(ref[25]);
+        obj = backgroundColor(ref1[25]);
         const fn = function n(arg0) {
           const tmp = arg0;
           if (tmp) {
-            obj = backgroundColor(ref[24]);
+            obj = backgroundColor(ref1[24]);
             obj.runOnJS(handleTransitionFinished)();
           }
         };
-        fn.__closure = { runOnJS: backgroundColor(ref[24]).runOnJS, handleTransitionFinished };
+        fn.__closure = { runOnJS: backgroundColor(ref1[24]).runOnJS, handleTransitionFinished };
         fn.__workletHash = 1243097213612;
         fn.__initData = __initData;
-        ({ runOnJS: backgroundColor(ref[24]).runOnJS, handleTransitionFinished });
+        ({ runOnJS: backgroundColor(ref1[24]).runOnJS, handleTransitionFinished });
         const result = set(obj.withTiming(0, closure_2_15, "respect-motion-settings", fn));
       }
     };
@@ -1658,11 +1411,12 @@ let closure_26 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((chi
   });
   const obj4 = { style: items1, children };
   items1 = [animatedStyle, tmp.floatingContextBar];
-  return closure_12(sharedValue(ref[24]).View, obj4);
-}));
+  return closure_12(sharedValue(ref1[24]).View, obj4);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputContextBar(channel) {
   let obj3;
+  let onCancelEditing;
   let onCancelReplying;
   let onTapContextBarReply;
   let onToggleReplyMention;
@@ -1691,6 +1445,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   if (cResult[2] === channel.guild_id) {
     if (cResult[3] === channel.id) {
       let tmp5;
+      let tmp7;
       let tmp6;
       if (cResult[4] === pendingReply) {
         tmp5 = cResult[5];
@@ -1703,47 +1458,31 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
             obj.transitionTo(unpackModuleId.CHANNEL(channel.getGuildId(), pendingReply.channel.id, pendingReply.message.id));
           }
         };
-        class T {
-          constructor() {
-            if (null != pendingReply) {
-              obj = PendingReplyActionCreators;
-              const result = obj.setPendingReplyShouldMention(tmp.channel.id, !tmp.shouldMention);
-            }
+        const fn4 = function p() {
+          if (null != pendingReply) {
+            obj = PendingReplyActionCreators;
+            const result = obj.setPendingReplyShouldMention(tmp.channel.id, !tmp.shouldMention);
           }
-        }
+        };
         cResult[6] = pendingReply;
         cResult[7] = fn3;
-        cResult[8] = T;
+        cResult[8] = fn4;
+        tmp7 = fn4;
         tmp6 = fn3;
       } else {
         tmp6 = cResult[7];
-        class T {
-          constructor() {
-            if (null != pendingReply) {
-              obj = PendingReplyActionCreators;
-              const result = obj.setPendingReplyShouldMention(tmp.channel.id, !tmp.shouldMention);
-            }
-          }
-        }
+        tmp7 = cResult[8];
       }
       if (cResult[9] === tmp4) {
         if (cResult[10] === tmp5) {
           if (cResult[11] === tmp6) {
             let tmp8;
             let tmp14;
-            let tmp17;
+            let tmp16;
             if (cResult[12] === tmp7) {
               tmp8 = cResult[13];
             }
-            class T {
-              constructor() {
-                if (null != pendingReply) {
-                  obj = PendingReplyActionCreators;
-                  const result = obj.setPendingReplyShouldMention(tmp.channel.id, !tmp.shouldMention);
-                }
-              }
-            }
-            ({ onCancelReplying, onTapContextBarReply, onToggleReplyMention } = tmp8);
+            ({ onCancelEditing, onCancelReplying, onTapContextBarReply, onToggleReplyMention } = tmp8);
             let tmp10 = null;
             let message;
             const useNullableMessageAuthor = tmp(tmp2[30]).useNullableMessageAuthor;
@@ -1755,17 +1494,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
             const tmp13 = globalThis;
             const _Symbol = Symbol;
             if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-              class T {
-                constructor() {
-                  if (null != pendingReply) {
-                    obj = PendingReplyActionCreators;
-                    const result = obj.setPendingReplyShouldMention(tmp.channel.id, !tmp.shouldMention);
-                  }
-                }
-              }
-              tmp16[0] = DraftStore;
-              cResult[14] = tmp16;
-              tmp14 = tmp16;
+              const items = [DraftStore];
+              cResult[14] = items;
+              tmp14 = items;
             } else {
               tmp14 = cResult[14];
             }
@@ -1775,17 +1506,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
                   return DraftStore.getScheduledMessage(channel.id);
                 }
               }
-              class T {
-                constructor() {
-                  if (null != pendingReply) {
-                    obj = PendingReplyActionCreators;
-                    const result = obj.setPendingReplyShouldMention(tmp.channel.id, !tmp.shouldMention);
-                  }
-                }
-              }
               cResult[15] = channel.id;
               cResult[16] = A;
-              tmp17 = A;
+              tmp16 = A;
             } else {
               class A {
                 constructor() {
@@ -1794,7 +1517,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
               }
             }
             const tmpResult2 = tmp(pendingReply[17]);
-            const stateFromStores = tmpResult2.useStateFromStores(tmp14, tmp17);
+            const stateFromStores = tmpResult2.useStateFromStores(tmp14, tmp16);
             if (cResult[17] === onCancelReplying) {
               class A {
                 constructor() {
@@ -1802,31 +1525,23 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
                 }
               }
             }
-            let tmp20 = null != pendingReply && null != nullableMessageAuthor;
-            if (tmp20) {
+            let tmp19 = null != pendingReply && null != nullableMessageAuthor;
+            if (tmp19) {
               class A {
                 constructor() {
                   return DraftStore.getScheduledMessage(channel.id);
                 }
               }
-              class T {
-                constructor() {
-                  if (null != pendingReply) {
-                    obj = PendingReplyActionCreators;
-                    const result = obj.setPendingReplyShouldMention(tmp.channel.id, !tmp.shouldMention);
-                  }
-                }
-              }
               const obj2 = { children: closure_12(closure_19, obj3) };
               obj3 = { pendingReply, pendingReplyAuthor: nullableMessageAuthor, onTapContextBarReply, onCancelReplying, onToggleReplyMention };
-              tmp20 = closure_12(closure_26, obj2);
+              tmp19 = closure_12(closure_26, obj2);
             }
             cResult[17] = onCancelReplying;
             cResult[18] = onTapContextBarReply;
             cResult[19] = onToggleReplyMention;
             cResult[20] = pendingReply;
             cResult[21] = nullableMessageAuthor;
-            cResult[22] = tmp20;
+            cResult[22] = tmp19;
           }
         }
       }
@@ -1857,7 +1572,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       }
       obj = { message_id: id, channel_id: null, guild_id: null, context_action: "reply", reason: tmp8Result.getContextBarCancelReason("reply", "cancel"), is_own_message: id1 === id2 };
       ({ id: obj.channel_id, guild_id: obj.guild_id } = tmp10);
-      tmp8Result = tmp8(11290);
+      tmp8Result = tmp8(9685);
       const currentUser = UserStore.getCurrentUser();
       id1 = undefined;
       if (currentUser != null) {
@@ -1875,7 +1590,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[4] = pendingReply;
   cResult[5] = fn2;
   tmp5 = fn2;
-}) : ((channel) => {
+}) : (function ChatInputContextBar(channel) {
   let items2;
   let obj3;
   let obj5;

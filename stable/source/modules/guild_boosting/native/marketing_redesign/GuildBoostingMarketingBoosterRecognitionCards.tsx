@@ -1,24 +1,24 @@
-// Module ID: 13403
-// Function ID: 13404
+// Module ID: 13894
+// Function ID: 13895
 // Name: GuildBoostingMarketingBoosterRecognitionCards
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4886, 1126, 13404, 4826, 13405, 13330, 13406, 9232, 13407, 8428, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1126, 13895, 9405, 13896, 13820, 13897, 8617, 13898, 8973, 2]
 
-// Module 13403 (GuildBoostingMarketingBoosterRecognitionCards)
+// Module 13894 (GuildBoostingMarketingBoosterRecognitionCards)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import BoostGemIcon from "BoostGemIcon" /* 4826 */;
-import HeartIcon from "HeartIcon" /* 8428 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9232 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 13330 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13404 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13405 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13406 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13407 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 8617 */;
+import HeartIcon from "HeartIcon" /* 8973 */;
+import BoostGemIcon from "BoostGemIcon" /* 9405 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 13820 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13895 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13896 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13897 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13898 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const Text_Text = tmp(4886);
+const Text_Text = tmp(5088);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -34,7 +34,7 @@ let obj = { card: obj2, description: { textAlign: "center" }, iconContainer: { h
 obj2 = { minHeight: 124, width: 172, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, display: "flex", flexDirection: "column", alignItems: "center", margin: 5, borderRadius: nativeDefault.radii.sm, paddingHorizontal: 13, paddingVertical: 16 };
 let closure_6 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Card(arg0) {
   let IconComponent;
   let children;
   let items;
@@ -93,7 +93,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp5;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function Card(arg0) {
   let IconComponent;
   let children;
   let items;
@@ -111,7 +111,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 createStyles = createStyles_mod;
 let closure_8 = createStyles.createStyles({ container: { marginTop: 50, display: "flex", flexDirection: "column", alignItems: "center" }, title: { textAlign: "center", marginHorizontal: 34 }, recognitionCardsContainer: { marginTop: 15, display: "flex", flexDirection: "row", justifyContent: "center", flexWrap: "wrap" } });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostingMarketingBoosterRecognitionCards() {
   let container;
   let first;
   let intl2;
@@ -211,7 +211,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[11] = tmp30;
   cResult[12] = tmp35;
   tmp34 = tmp35;
-}) : (() => {
+}) : (function GuildBoostingMarketingBoosterRecognitionCards() {
   let intl;
   let intl2;
   let intl3;

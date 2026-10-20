@@ -1,16 +1,16 @@
-// Module ID: 15163
-// Function ID: 15164
+// Module ID: 15643
+// Function ID: 15644
 // Name: DisplayNameStylesSheetHeader
-// Dependencies: [109, 19, 17, 21, 4890, 587, 558, 576, 6644, 2]
+// Dependencies: [109, 19, 17, 21, 5092, 587, 558, 576, 6839, 2]
 
-// Module 15163 (DisplayNameStylesSheetHeader)
+// Module 15643 (DisplayNameStylesSheetHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const jsx = Fragment.jsx;
 let obj = { trailingButtonClearance: obj2, centeredAccessory: { justifyContent: "center", alignItems: "center" } };
 obj2 = { paddingTop: nativeDefault.space.PX_8 };
 let closure_6 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameStylesSheetHeader(arg0) {
   let centeredAccessory;
   let leading;
   let tmp11;
@@ -53,16 +53,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp10 = closure_6();
   _require = tmp10;
   if (cResult[4] !== tmp10.centeredAccessory) {
-    const fn = function p(children) {
+    function centerAccessory(children) {
       let tmp = children;
       if (null != children) {
         tmp = <View style={centeredAccessory.centeredAccessory}>{arg0}</View>;
       }
       return tmp;
-    };
+    }
     cResult[4] = tmp10.centeredAccessory;
-    cResult[5] = fn;
-    tmp11 = fn;
+    cResult[5] = centerAccessory;
+    tmp11 = centerAccessory;
   } else {
     tmp11 = cResult[5];
   }
@@ -96,7 +96,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp23 = tmp26;
         }
       }
-      const BottomSheetTitleHeader = tmp(6644).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
       const merged = Object.assign(tmp5);
       const tmp22 = <BottomSheetTitleHeader leading={tmp13} trailing={tmp15} />;
       cResult[12] = tmp5;
@@ -116,7 +116,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp4;
   cResult[8] = tmp11Result2;
   tmp13 = tmp11Result2;
-}) : ((arg0) => {
+}) : (function DisplayNameStylesSheetHeader(arg0) {
   let leading;
   let trailing;
   ({ leading, trailing } = arg0);

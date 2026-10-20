@@ -1,18 +1,18 @@
-// Module ID: 4601
-// Function ID: 4602
+// Module ID: 4839
+// Function ID: 4840
 // Name: ThemeContextProvider
-// Dependencies: [19, 21, 558, 576, 4593, 2]
+// Dependencies: [19, 21, 558, 576, 4831, 2]
 
-// Module 4601 (ThemeContextProvider)
+// Module 4839 (ThemeContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ThemeContext from "ThemeContext" /* 4593 */;
+import ThemeContext from "ThemeContext" /* 4831 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemeContextProvider(arg0) {
   let children;
   let contrast;
   let density;
@@ -114,7 +114,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[10] = density;
   cResult[11] = themedContext;
   tmp5 = themedContext;
-}) : ((theme) => {
+}) : (function ThemeContextProvider(theme) {
   theme = theme.theme;
   let primaryColor = theme.primaryColor;
   let secondaryColor = theme.secondaryColor;

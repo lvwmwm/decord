@@ -1,13 +1,13 @@
-// Module ID: 5020
-// Function ID: 5021
+// Module ID: 7431
+// Function ID: 7432
 // Name: RobloxSubgameUtils
-// Dependencies: [5, 1085, 5021, 12, 5022, 4559, 2]
+// Dependencies: [5, 1085, 7432, 12, 7433, 4800, 2]
 // Exports: convertMapToRobloxSubgameInfo, getSubgameMetadata, hasRunningGameChanged, hasSubgameInfoChanged, isRobloxSubgame, isRobloxSubgameApplication, isRobloxSubgameGame, keyForRobloxGame, maybeAddAdditionalGameMetadata, maybeTransformRobloxSubgameToRoblox, openRobloxURLWithRootPlaceId
 
-// Module 5020 (RobloxSubgameUtils)
+// Module 7431 (RobloxSubgameUtils)
 import _modDef12 from "module_12" /* 12 */;
-import RobloxSubgameTypes from "RobloxSubgameTypes" /* 5021 */;
-import RobloxSubgamePlatformUtilsDefault from "RobloxSubgamePlatformUtils" /* 5022 */;
+import RobloxSubgameTypes from "RobloxSubgameTypes" /* 7432 */;
+import RobloxSubgamePlatformUtilsDefault from "RobloxSubgamePlatformUtils" /* 7433 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -186,7 +186,7 @@ export const getSubgameMetadata = function getSubgameMetadata(currentGameForAnal
       const tmp2 = require;
       if (null != currentGameForAnalytics.gameMetadata[RobloxSubgameTypes.RobloxMetadataKeys.PLACE_ID]) {
         const _JSON = JSON;
-        obj = { placeId: currentGameForAnalytics.gameMetadata[tmp2(undefined, 5021).RobloxMetadataKeys.PLACE_ID] };
+        obj = { placeId: currentGameForAnalytics.gameMetadata[tmp2(undefined, 7432).RobloxMetadataKeys.PLACE_ID] };
         json = stringify(obj);
       }
     }
@@ -235,7 +235,7 @@ export const maybeTransformRobloxSubgameToRoblox = function maybeTransformRoblox
     tmp2 = distributor;
     const tmp3 = require;
     if (distributor.id !== RobloxSubgameTypes.ROBLOX_APPLICATION_ID) {
-      obj = { id: tmp3(5021).ROBLOX_APPLICATION_ID, name: React3[tmp.ROBLOX] };
+      obj = { id: tmp3(7432).ROBLOX_APPLICATION_ID, name: React3[tmp.ROBLOX] };
       const merged = Object.assign(distributor);
       tmp2 = obj;
     }

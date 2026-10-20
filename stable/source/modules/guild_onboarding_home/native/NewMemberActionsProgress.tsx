@@ -1,26 +1,24 @@
-// Module ID: 16135
-// Function ID: 16136
+// Module ID: 16651
+// Function ID: 16652
 // Name: NewMemberActionsProgress
-// Dependencies: [19, 17, 2112, 5077, 5078, 2058, 4495, 21, 4890, 587, 558, 576, 5605, 573, 1390, 5909, 1112, 4886, 1126, 1188, 9602, 2]
+// Dependencies: [19, 17, 2125, 6926, 7911, 2072, 4736, 21, 5092, 587, 558, 576, 5391, 573, 1403, 6185, 1112, 5088, 1126, 1200, 11020, 2]
 // Exports: NewMemberActionsProgress
 
-// Module 16135 (NewMemberActionsProgress)
+// Module 16651 (NewMemberActionsProgress)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4495 */;
-import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4736 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5077 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 5078 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6926 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 7911 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let percent;
 
 let c10;
 let obj2;
@@ -36,7 +34,7 @@ obj2 = { borderRadius: nativeDefault.radii.round, height: 8, backgroundColor: na
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, borderRadius: nativeDefault.radii.round, height: 8 };
 let closure_12 = createStyles(obj);
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((percent) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBar(percent) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(11);
@@ -94,7 +92,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((percent) => {
   cResult[3] = tmp5;
   cResult[4] = items1;
   tmp6 = items1;
-}) : ((percent) => {
+}) : (function ProgressBar(percent) {
   let items;
   let obj2;
   let tmp2;

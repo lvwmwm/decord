@@ -1,41 +1,50 @@
-// Module ID: 12799
-// Function ID: 12800
+// Module ID: 13102
+// Function ID: 13103
 // Name: useShopThisLookMarketing
-// Dependencies: [32, 558, 576, 7886, 2036, 6891, 2]
+// Dependencies: [32, 558, 576, 8337, 2049, 7100, 2]
 
-// Module 12799 (useShopThisLookMarketing)
+// Module 13102 (useShopThisLookMarketing)
 import react from "react" /* 576 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6891 */;
-import useMaybeFetchEquippedCollectibleProducts from "useMaybeFetchEquippedCollectibleProducts" /* 7886 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7100 */;
+import useMaybeFetchEquippedCollectibleProducts from "useMaybeFetchEquippedCollectibleProducts" /* 8337 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShopThisLookMarketing(arg0, arg1, arg2) {
   let tmp5;
   const obj = react;
-  const cResult = obj.c(6);
+  const cResult = obj.c(7);
   const obj2 = useMaybeFetchEquippedCollectibleProducts;
   const tmp4 = obj2.useEquippedCollectibleSkuIds(arg0, arg1).length > 0;
   if (cResult[0] === tmp4) {
+    let tmp7;
     if (cResult[1] === arg2) {
       tmp5 = cResult[2];
     }
-    const tmpResult = useSelectedDismissibleContent;
-    const tmp7 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp5, undefined, true), 2);
-    if (cResult[3] === tmp7[1]) {
-      let tmp11;
-      if (cResult[4] === null != tmp7[0]) {
-        tmp11 = cResult[5];
-      }
-      return tmp11;
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj3 = { bypassAutoDismiss: true };
+      cResult[3] = obj3;
+      tmp7 = obj3;
+    } else {
+      tmp7 = cResult[3];
     }
-    const obj3 = { isVisible: null != tmp7[0], markAsDismissed: tmp7[1] };
-    cResult[3] = tmp7[1];
-    cResult[4] = null != tmp7[0];
-    cResult[5] = obj3;
-    tmp11 = obj3;
+    const tmpResult = useSelectedDismissibleContent;
+    const tmp9 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp5, tmp7), 2);
+    if (cResult[4] === tmp9[1]) {
+      let tmp13;
+      if (cResult[5] === null != tmp9[0]) {
+        tmp13 = cResult[6];
+      }
+      return tmp13;
+    }
+    const obj4 = { isVisible: null != tmp9[0], markAsDismissed: tmp9[1] };
+    cResult[4] = tmp9[1];
+    cResult[5] = null != tmp9[0];
+    cResult[6] = obj4;
+    tmp13 = obj4;
   }
   if (arg2) {
     let items1;
@@ -49,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
     tmp5 = items1;
   }
   items1 = [];
-}) : ((arg0, arg1, arg2) => {
+}) : (function useShopThisLookMarketing(arg0, arg1, arg2) {
   const obj = useMaybeFetchEquippedCollectibleProducts;
   const tmp3 = obj.useEquippedCollectibleSkuIds(arg0, arg1).length > 0;
   useSelectedDismissibleContent;
@@ -58,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
     if (tmp3) {
       const items = [dismissible_content.DismissibleContent.SHOP_THIS_LOOK_WEB_MARKETING];
     }
-    const tmp9 = _slicedToArray(tmp5([], undefined, true), 2);
+    const tmp9 = _slicedToArray(tmp5([], { bypassAutoDismiss: true }), 2);
     return { isVisible: null != tmp9[0], markAsDismissed: tmp9[1] };
   }
 });

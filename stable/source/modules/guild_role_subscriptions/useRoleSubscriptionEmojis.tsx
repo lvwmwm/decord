@@ -1,12 +1,12 @@
-// Module ID: 17945
-// Function ID: 17946
+// Module ID: 18576
+// Function ID: 18577
 // Name: useRoleSubscriptionEmojis
-// Dependencies: [19, 5638, 558, 576, 504, 5643, 2]
+// Dependencies: [19, 5987, 558, 576, 504, 5992, 2]
 
-// Module 17945 (useRoleSubscriptionEmojis)
-import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5643 */;
+// Module 18576 (useRoleSubscriptionEmojis)
+import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5992 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5638 */;
+import EmojiStore from "EmojiStore" /* 5987 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 let items = [];
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRoleSubscriptionEmojis(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -32,7 +32,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function l() {
+    const fn = function u() {
       return EmojiStore.getGuildEmoji(closure_0);
     };
     const items1 = [arg0];
@@ -57,17 +57,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp8 = tmp9;
     }
     if (cResult[7] !== arg0) {
-      class S {
+      class E {
         constructor(roles) {
           const obj = RoleSubscriptionEmojiUtils;
           return obj.isRoleSubscriptionEmoji(roles, closure_0);
         }
       }
       cResult[7] = arg0;
-      cResult[8] = S;
-      tmp10 = S;
+      cResult[8] = E;
+      tmp10 = E;
     } else {
-      class S {
+      class E {
         constructor(roles) {
           const obj = RoleSubscriptionEmojiUtils;
           return obj.isRoleSubscriptionEmoji(roles, closure_0);
@@ -80,7 +80,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[6] = found;
     tmp9 = found;
   } else {
-    class S {
+    class E {
       constructor(roles) {
         const obj = RoleSubscriptionEmojiUtils;
         return obj.isRoleSubscriptionEmoji(roles, closure_0);
@@ -88,7 +88,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp8;
-}) : ((arg0) => {
+}) : (function useRoleSubscriptionEmojis(arg0) {
   let closure_0;
   let stateFromStores;
   _require = arg0;

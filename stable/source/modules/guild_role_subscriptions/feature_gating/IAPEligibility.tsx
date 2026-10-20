@@ -1,14 +1,14 @@
-// Module ID: 5678
-// Function ID: 5679
+// Module ID: 6027
+// Function ID: 6028
 // Name: IAPEligibility
-// Dependencies: [19, 2074, 1085, 1369, 5679, 558, 576, 573, 2]
+// Dependencies: [19, 2087, 1085, 1382, 6028, 558, 576, 573, 2]
 // Exports: canUseRoleSubscriptionIAP
 
-// Module 5678 (IAPEligibility)
+// Module 6027 (IAPEligibility)
 import Constants from "Constants" /* 1085 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,10 +16,10 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const getSystemVersion = tmp(5679);
+const getSystemVersion = tmp(6028);
 let c4 = "13.2";
 let items = [Constants.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE];
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanUseRoleSubscriptionIAP(arg0) {
   let closure_0;
   let first;
   let stateFromStores;
@@ -116,7 +116,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     stateFromStores = first;
   }
   return stateFromStores;
-}) : ((arg0) => {
+}) : (function useCanUseRoleSubscriptionIAP(arg0) {
   let closure_0;
   _require = arg0;
   const memo = react.useMemo(() => {

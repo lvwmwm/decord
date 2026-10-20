@@ -1,17 +1,17 @@
-// Module ID: 15546
-// Function ID: 15547
+// Module ID: 16035
+// Function ID: 16036
 // Name: CheckpointEmojiStatsScreen
-// Dependencies: [21, 558, 576, 15543, 2]
+// Dependencies: [21, 558, 576, 16033, 2]
 
-// Module 15546 (CheckpointEmojiStatsScreen)
+// Module 16035 (CheckpointEmojiStatsScreen)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15543 */;
+import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 16033 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointEmojiStatsScreen() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -23,7 +23,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => jsx(CheckpointStatsScreenDefault, { name: "Emoji" }));
+}) : (function CheckpointEmojiStatsScreen() {
+  return jsx(CheckpointStatsScreenDefault, { name: "Emoji" });
+});
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/stats/CheckpointEmojiStatsScreen.tsx");
 
 export default tmp2;

@@ -1,14 +1,14 @@
-// Module ID: 8722
-// Function ID: 8723
+// Module ID: 9224
+// Function ID: 9225
 // Name: disclosures
-// Dependencies: [5, 1085, 1282, 8723, 1126, 2]
+// Dependencies: [5, 1085, 1295, 9225, 1126, 2]
 // Exports: ackDisclosures, getDisclosures, getTextForDisclosure
 
-// Module 8722 (disclosures)
+// Module 9224 (disclosures)
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import applications from "applications" /* 8723 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import applications from "applications" /* 9225 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

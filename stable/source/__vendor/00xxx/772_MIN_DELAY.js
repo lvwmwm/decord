@@ -7,7 +7,7 @@
 // Module 772 (MIN_DELAY)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 
-let c2, c6, c7;
+let c2;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let c3 = 100;
@@ -197,6 +197,7 @@ export function makeOfflineTransport(arg0) {
     }
     let obj = function _send() {
       obj = _asyncToGenerator(async function(arg0, value) {
+        let flag;
         let shouldStore;
         function shouldQueue(arg0, arg1, arg2) {
           obj = createStore(closure_3_1[3]);
@@ -214,218 +215,169 @@ export function makeOfflineTransport(arg0) {
           return tmp2;
         }
         closure_1 = value;
-        if (c7 === 2) {
-          c7 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
+        if (1 === tmp4) {
           if (arg0 === 1) {
+            let c7 = 3;
             throw value;
           } else if (arg0 === 2) {
-            let obj2 = { value, done: true };
-            return obj2;
+            c7 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
           } else {
-            return { value: "IconComponent", done: null };
+            const tmp81 = flag;
+            if (!tmp81) {
+              const obj15 = createStore(closure_2_1[3]);
+              if (obj15.envelopeContainsItemType(shouldStore, ["replay_event", "replay_recording"])) {
+                let c6 = 2;
+                c7 = 1;
+                const obj5 = { value: closure_131_3.push(shouldStore), done: false };
+                return obj5;
+              }
+            }
+            let c5 = 1;
+            if (closure_131_0.shouldSend) {
+              c6 = 6;
+              c7 = 1;
+              const obj7 = { value: closure_131_0.shouldSend(shouldStore), done: false };
+              return obj7;
+            }
+          }
+        } else if (2 === tmp4) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            const obj8 = { value, done: true };
+            return obj8;
+          } else {
+            closure_131_5(closure_2_3);
+            c7 = 3;
+            const obj9 = { value: {}, done: true };
+            return obj9;
+          }
+        } else if (3 === tmp4) {
+          c5 = 0;
+          c6 = 4;
+          c7 = 1;
+          const obj10 = { value: shouldQueue(shouldStore, closure_4, closure_4), done: false };
+          return obj10;
+        } else if (4 === tmp4) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            const obj11 = { value, done: true };
+            return obj11;
+          } else if (value) {
+            if (flag) {
+              c6 = 8;
+              c7 = 1;
+              const obj12 = { value: closure_131_3.unshift(shouldStore), done: false };
+              return obj12;
+            } else {
+              c6 = 7;
+              c7 = 1;
+              const obj13 = { value: closure_131_3.push(shouldStore), done: false };
+              return obj13;
+            }
+          } else {
+            throw closure_4;
+          }
+        } else if (5 === tmp4) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 0;
+            c7 = 3;
+            const obj14 = { value, done: true };
+            return obj14;
+          } else {
+            c3 = closure_2_3;
+            const tmp79 = value;
+            if (tmp79) {
+              const headers = value.headers;
+              let prop;
+              if (headers != null) {
+                prop = headers["retry-after"];
+              }
+              if (prop) {
+                const obj6 = createStore(closure_2_1[4]);
+                c3 = obj6.parseRetryAfterHeader(value.headers["retry-after"]);
+              } else {
+                const headers2 = value.headers;
+                let prop1;
+                if (headers2 != null) {
+                  prop1 = headers2["x-sentry-rate-limits"];
+                }
+                if (prop1) {
+                  c3 = 60000;
+                } else {
+                  const num9 = value.statusCode || 0;
+                  if (num9 >= 400) {
+                    c5 = 0;
+                    c7 = 3;
+                    const obj16 = { value, done: true };
+                    return obj16;
+                  }
+                }
+              }
+            }
+            closure_131_5(c3);
+            closure_4 = closure_2_4;
+            c5 = 0;
+            c7 = 3;
+            const obj17 = { value, done: true };
+            return obj17;
+          }
+        } else if (6 === tmp4) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 0;
+            c7 = 3;
+            const obj18 = { value, done: true };
+            return obj18;
+          } else if (false === value) {
+            const _Error = Error;
+            const self = this;
+            const self2 = this;
+            const error = new Error("Envelope not sent because `shouldSend` callback returned false");
+            throw error;
           }
         } else {
-          let c5;
-          try {
-            let flag;
-            c7 = 2;
-            const tmp4 = c6;
-            if (0 === c6) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                closure_3 = tmp;
-                value = tmp4;
-                flag = closure_1;
-                if (closure_1 === undefined) {
-                  flag = false;
-                }
-                value = undefined;
-                c3 = undefined;
-                c6 = 1;
-                c7 = 1;
-                return { value: "Reflect", done: null };
-              }
-            } else {
-              if (1 === tmp4) {
-                if (arg0 === 1) {
-                  c7 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c7 = 3;
-                  const obj4 = { value, done: true };
-                  return obj4;
-                } else {
-                  const tmp81 = flag;
-                  if (!tmp81) {
-                    const obj15 = createStore(closure_2_1[3]);
-                    if (obj15.envelopeContainsItemType(shouldStore, ["replay_event", "replay_recording"])) {
-                      c6 = 2;
-                      c7 = 1;
-                      const obj5 = { value: closure_131_3.push(shouldStore), done: false };
-                      return obj5;
-                    }
-                  }
-                  c5 = 1;
-                  if (closure_131_0.shouldSend) {
-                    c6 = 6;
-                    c7 = 1;
-                    const obj7 = { value: closure_131_0.shouldSend(shouldStore), done: false };
-                    return obj7;
-                  }
-                }
-              } else if (2 === tmp4) {
-                if (arg0 === 1) {
-                  c7 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c7 = 3;
-                  const obj8 = { value, done: true };
-                  return obj8;
-                } else {
-                  closure_131_5(closure_2_3);
-                  c7 = 3;
-                  const obj9 = { value: {}, done: true };
-                  return obj9;
-                }
-              } else if (3 === tmp4) {
-                c5 = 0;
-                c6 = 4;
-                c7 = 1;
-                const obj10 = { value: shouldQueue(shouldStore, closure_4, closure_4), done: false };
-                return obj10;
-              } else if (4 === tmp4) {
-                if (arg0 === 1) {
-                  c7 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c7 = 3;
-                  const obj11 = { value, done: true };
-                  return obj11;
-                } else if (value) {
-                  if (flag) {
-                    c6 = 8;
-                    c7 = 1;
-                    const obj12 = { value: closure_131_3.unshift(shouldStore), done: false };
-                    return obj12;
-                  } else {
-                    c6 = 7;
-                    c7 = 1;
-                    const obj13 = { value: closure_131_3.push(shouldStore), done: false };
-                    return obj13;
-                  }
-                } else {
-                  throw closure_4;
-                }
-              } else if (5 === tmp4) {
-                if (arg0 === 1) {
-                  c7 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c5 = 0;
-                  c7 = 3;
-                  const obj14 = { value, done: true };
-                  return obj14;
-                } else {
-                  c3 = closure_2_3;
-                  const tmp79 = value;
-                  if (tmp79) {
-                    const headers = value.headers;
-                    let prop;
-                    if (headers != null) {
-                      prop = headers["retry-after"];
-                    }
-                    if (prop) {
-                      const obj6 = createStore(closure_2_1[4]);
-                      c3 = obj6.parseRetryAfterHeader(value.headers["retry-after"]);
-                    } else {
-                      const headers2 = value.headers;
-                      let prop1;
-                      if (headers2 != null) {
-                        prop1 = headers2["x-sentry-rate-limits"];
-                      }
-                      if (prop1) {
-                        c3 = 60000;
-                      } else {
-                        const num9 = value.statusCode || 0;
-                        if (num9 >= 400) {
-                          c5 = 0;
-                          c7 = 3;
-                          const obj16 = { value, done: true };
-                          return obj16;
-                        }
-                      }
-                    }
-                  }
-                  closure_131_5(c3);
-                  closure_4 = closure_2_4;
-                  c5 = 0;
-                  c7 = 3;
-                  const obj17 = { value, done: true };
-                  return obj17;
-                }
-              } else if (6 === tmp4) {
-                if (arg0 === 1) {
-                  c7 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c5 = 0;
-                  c7 = 3;
-                  const obj18 = { value, done: true };
-                  return obj18;
-                } else if (false === value) {
-                  const _Error = Error;
-                  const self = this;
-                  const self2 = this;
-                  const error = new Error("Envelope not sent because `shouldSend` callback returned false");
-                  throw error;
-                }
-              } else {
-                if (7 === tmp4) {
-                  if (arg0 === 1) {
-                    c7 = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    c7 = 3;
-                    const obj19 = { value, done: true };
-                    return obj19;
-                  }
-                } else if (arg0 === 1) {
-                  c7 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c7 = 3;
-                  obj = { value, done: true };
-                  return obj;
-                }
-                closure_131_6();
-                closure_1("Error sending. Event queued.", closure_4);
-                c7 = 3;
-                const obj20 = { value: {}, done: true };
-                return obj20;
-              }
-              c6 = 5;
-              c7 = 1;
-              const obj21 = { value: closure_131_1.send(shouldStore), done: false };
-              return obj21;
-            }
-          } catch (tmp66) {
-            closure_4 = tmp66;
-            if (0 === c5) {
+          if (7 === tmp4) {
+            if (arg0 === 1) {
               c7 = 3;
-              throw tmp66;
-            } else {
-              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              const obj19 = { value, done: true };
+              return obj19;
             }
+          } else if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            obj = { value, done: true };
+            return obj;
           }
+          closure_131_6();
+          closure_1("Error sending. Event queued.", closure_4);
+          c7 = 3;
+          const obj20 = { value: {}, done: true };
+          return obj20;
         }
+        await closure_131_1.send(shouldStore);
+        flag = closure_1;
+        if (closure_1 === undefined) {
+          flag = false;
+        }
+        return "Set";
       });
       return obj(...arguments);
     };

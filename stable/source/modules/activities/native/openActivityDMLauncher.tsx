@@ -1,11 +1,11 @@
-// Module ID: 13796
-// Function ID: 13797
+// Module ID: 14219
+// Function ID: 14220
 // Name: openActivityDMLauncher
-// Dependencies: [5, 1489, 6658, 4903, 12743, 10946, 6681, 7034, 4745, 1616, 2]
+// Dependencies: [5, 1502, 6853, 7015, 13043, 11617, 6879, 7242, 4985, 1629, 2]
 // Exports: default
 
-// Module 13796 (openActivityDMLauncher)
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
+// Module 14219 (openActivityDMLauncher)
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ let obj = function _openActivityDMLauncher() {
               customId = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Set", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

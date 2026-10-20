@@ -1,19 +1,19 @@
-// Module ID: 4745
-// Function ID: 4746
+// Module ID: 4985
+// Function ID: 4986
 // Name: ChatInputUtils
-// Dependencies: [4746, 1881, 4747, 1616, 1488, 4748, 2]
+// Dependencies: [4986, 1894, 4987, 1629, 1501, 4988, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInputForChannelId, getChatInputRef, getHighestActiveScreenIndex
 
-// Module 4745 (ChatInputUtils)
-import KeyboardUIStore from "KeyboardUIStore" /* 1488 */;
-import KeyboardTypes from "KeyboardTypes" /* 1616 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
-import ScreenIndexFrozen from "ScreenIndexFrozen" /* 4746 */;
-import useKeyboardType from "useKeyboardType" /* 4747 */;
-import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4748 */;
+// Module 4985 (ChatInputUtils)
+import KeyboardUIStore from "KeyboardUIStore" /* 1501 */;
+import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
+import ScreenIndexFrozen from "ScreenIndexFrozen" /* 4986 */;
+import useKeyboardType from "useKeyboardType" /* 4987 */;
+import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4988 */;
 import size from "module_2" /* 2 */;
 
-const f89233 = (item) => {
+const f91176 = (item) => {
   let tmp = typeof item === "number";
   if (typeof item === "number") {
     const obj = ScreenIndexFrozen;
@@ -34,7 +34,7 @@ function getBestActiveInput() {
           if (!map1.has("conjure-preview")) {
             const _Array = Array;
             const arr = Array.from(map1.keys());
-            const found = arr.filter(f89233);
+            const found = arr.filter(f91176);
             if (0 !== found.length) {
               const _Math = Math;
               const items = [];
@@ -162,7 +162,7 @@ export const getHighestActiveScreenIndex = function getHighestActiveScreenIndex(
     } else {
       const _Array = Array;
       const arr = Array.from(obj.keys());
-      const found = arr.filter(f89233);
+      const found = arr.filter(f91176);
       if (0 !== found.length) {
         const _Math = Math;
         const items = [];
@@ -206,7 +206,7 @@ export const getBestActiveInputForChannelId = function getBestActiveInputForChan
               if (!obj2.has("conjure-preview")) {
                 const _Array = Array;
                 const arr = Array.from(obj2.keys());
-                const found = arr.filter(f89233);
+                const found = arr.filter(f91176);
                 if (0 !== found.length) {
                   const _Math = Math;
                   const items = [];

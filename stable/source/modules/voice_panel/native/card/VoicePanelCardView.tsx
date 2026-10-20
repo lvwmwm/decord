@@ -1,33 +1,33 @@
-// Module ID: 17270
-// Function ID: 17271
+// Module ID: 17865
+// Function ID: 17866
 // Name: VoicePanelCardView
-// Dependencies: [32, 19, 17, 4906, 11902, 11900, 17206, 11905, 4911, 21, 17271, 558, 4612, 9074, 11901, 4580, 587, 11906, 10725, 5597, 576, 17207, 5973, 5738, 6570, 17301, 504, 12, 4590, 1126, 4589, 2]
+// Dependencies: [32, 19, 17, 6036, 11974, 11972, 17801, 11977, 5115, 21, 17866, 558, 4850, 9576, 11973, 4818, 587, 11978, 11579, 5378, 576, 17802, 6161, 5330, 6762, 17895, 504, 12, 4828, 1126, 4827, 2]
 
-// Module 17270 (VoicePanelCardView)
+// Module 17865 (VoicePanelCardView)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4590 */;
-import CallConstants from "CallConstants" /* 4911 */;
-import spring from "spring" /* 5597 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6570 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9074 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11900 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11905 */;
-import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11906 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17206 */;
-import VoicePanelCardDefault from "VoicePanelCard" /* 17271 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
+import CallConstants from "CallConstants" /* 5115 */;
+import spring from "spring" /* 5378 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6762 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9576 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11972 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11977 */;
+import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11978 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17801 */;
+import VoicePanelCardDefault from "VoicePanelCard" /* 17866 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11974 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, children, dependencyMap;
+let _require, dependencyMap;
 
 let UI_SHOW_HIDE_PHYSICS;
 let VOICE_PANEL_CHUNK_DIVISOR;
@@ -38,9 +38,9 @@ let metroRequire;
 let tmp;
 let tmp2;
 let tmp3;
-const ReanimatedRexport = tmp2(4612);
-const react3 = tmp(5738);
-const roundToNearestPixelDefault = tmp3(10725);
+const ReanimatedRexport = tmp2(4850);
+const react3 = tmp(5330);
+const roundToNearestPixelDefault = tmp3(11579);
 function getCardKey(type) {
   return "" + type.type + "-" + type.id;
 }
@@ -62,7 +62,7 @@ const __initData2 = { code: "function VoicePanelCardViewTsx2(newChunks_0,previou
 const __initData3 = { code: "function VoicePanelCardViewTsx3(){const{viewableChunks}=this.__closure;return viewableChunks.get();}" };
 const __initData4 = { code: "function VoicePanelCardViewTsx4(newChunks_0,previous){const{cheapWorkletShallowEqual,runOnJS,updateValueIfChange}=this.__closure;if(cheapWorkletShallowEqual(newChunks_0,previous!==null&&previous!==void 0?previous:undefined))return;runOnJS(updateValueIfChange)(newChunks_0);}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((viewableChunks) => {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function useViewableChunkState(viewableChunks) {
   let closure_1;
   let first;
   _require = viewableChunks;
@@ -102,7 +102,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((viewableChunks
   ({ cheapWorkletShallowEqual: require("cheapWorkletShallowEqual").cheapWorkletShallowEqual, runOnJS: require("ReanimatedRexport").runOnJS, updateValueIfChange });
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
   return first;
-}) : ((viewableChunks) => {
+}) : (function useViewableChunkState(viewableChunks) {
   let tmp2;
   _require = viewableChunks;
   let tmp = _slicedToArray(react.useState(closure_18), 2);
@@ -146,7 +146,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((viewableChunks
 const __initData5 = { code: "function VoicePanelCardViewTsx5(){const{controlsSpecs,VoicePanelControlsModes,safeArea,EDGE_GUTTER,calculateVoicePanelHeaderSpecs,edgeGutter,connected,contentDimensions,windowDimensions,mode,VoicePanelModes,focused,roundToNearestPixel,withSpring,wrapperOffset,LAYOUT_PHYSICS,SCALE_PHYSICS,freeze}=this.__closure;const hidden=controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN;let height=0;let scale=1;let top=0;const safeAreaBottom=Math.max(safeArea.get().bottom,EDGE_GUTTER);const{height:headerBarHeight,paddingTop:safeAreaTop}=calculateVoicePanelHeaderSpecs(safeArea.get(),edgeGutter);if(connected.get()){height=0+safeAreaTop;height=height+contentDimensions.get().height;height=height+safeAreaBottom;if(height-windowDimensions.get().height<8){height=windowDimensions.get().height;}if(mode.get()!==VoicePanelModes.PIP&&!hidden&&focused.get()==null){const targetHeight=height-headerBarHeight-EDGE_GUTTER-controlsSpecs.get().height-safeAreaBottom;const fullView=windowDimensions.get().height-safeAreaTop-safeAreaBottom;const controlsView=windowDimensions.get().height-headerBarHeight-controlsSpecs.get().height-safeAreaBottom;top=headerBarHeight;scale=function(){if(contentDimensions.get().height>targetHeight){return targetHeight/contentDimensions.get().height;}return 1;}();if(contentDimensions.get().height<fullView&&contentDimensions.get().height>controlsView){const offsetOriginal=(fullView-contentDimensions.get().height)/2;const scaledContent=contentDimensions.get().height*scale;const scaledOffset=(controlsView-scaledContent)/2;top=top-(offsetOriginal-scaledOffset)*scale;}if(contentDimensions.get().height>targetHeight){top=top+(height*scale-height)/2;}else{top=top+(targetHeight-(windowDimensions.get().height-safeAreaTop-safeAreaBottom))/2;}top=top-safeAreaTop*scale;}}return{position:\"relative\",width:windowDimensions.get().width,height:roundToNearestPixel(height),transform:[{translateY:withSpring(top+wrapperOffset.get().y,wrapperOffset.get().gestureActive||mode.get()===VoicePanelModes.PIP?LAYOUT_PHYSICS:SCALE_PHYSICS)},{scale:withSpring(scale,SCALE_PHYSICS)}],opacity:freeze?0:1};}" };
 const __initData6 = { code: "function VoicePanelCardViewTsx6(){const{controlsSpecs,VoicePanelControlsModes,safeArea,EDGE_GUTTER,calculateVoicePanelHeaderSpecs,edgeGutter,connected,contentDimensions,windowDimensions,mode,VoicePanelModes,focused,roundToNearestPixel,withSpring,wrapperOffset,LAYOUT_PHYSICS,SCALE_PHYSICS,freeze}=this.__closure;const hidden=controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN;let height=0;let scale=1;let top=0;const safeAreaBottom=Math.max(safeArea.get().bottom,EDGE_GUTTER);const{height:headerBarHeight,paddingTop:safeAreaTop}=calculateVoicePanelHeaderSpecs(safeArea.get(),edgeGutter);if(connected.get()){height+=safeAreaTop;height+=contentDimensions.get().height;height+=safeAreaBottom;if(height-windowDimensions.get().height<8){height=windowDimensions.get().height;}if(mode.get()!==VoicePanelModes.PIP&&!hidden&&focused.get()==null){const targetHeight=height-headerBarHeight-EDGE_GUTTER-controlsSpecs.get().height-safeAreaBottom;const fullView=windowDimensions.get().height-safeAreaTop-safeAreaBottom;const controlsView=windowDimensions.get().height-headerBarHeight-controlsSpecs.get().height-safeAreaBottom;top=headerBarHeight;scale=function(){if(contentDimensions.get().height>targetHeight){return targetHeight/contentDimensions.get().height;}return 1;}();if(contentDimensions.get().height<fullView&&contentDimensions.get().height>controlsView){const offsetOriginal=(fullView-contentDimensions.get().height)/2;const scaledContent=contentDimensions.get().height*scale;const scaledOffset=(controlsView-scaledContent)/2;top-=(offsetOriginal-scaledOffset)*scale;}if(contentDimensions.get().height>targetHeight){top+=(height*scale-height)/2;}else{top+=(targetHeight-(windowDimensions.get().height-safeAreaTop-safeAreaBottom))/2;}top-=safeAreaTop*scale;}}return{position:'relative',width:windowDimensions.get().width,height:roundToNearestPixel(height),transform:[{translateY:withSpring(top+wrapperOffset.get().y,wrapperOffset.get().gestureActive||mode.get()===VoicePanelModes.PIP?LAYOUT_PHYSICS:SCALE_PHYSICS)},{scale:withSpring(scale,SCALE_PHYSICS)}],opacity:freeze?0:1};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((freeze) => {
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSpacerStyles(freeze) {
   let connected;
   let contentDimensions;
   let controlsSpecs;
@@ -252,7 +252,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((freeze) => {
   fn.__workletHash = 270121942538;
   fn.__initData = __initData5;
   return obj2.useAnimatedStyle(fn);
-}) : ((freeze) => {
+}) : (function useSpacerStyles(freeze) {
   let connected;
   let contentDimensions;
   let controlsSpecs;
@@ -360,14 +360,14 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((freeze) => {
   return obj2.useAnimatedStyle(fn);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLazyContentFreeze() {
   let closure_2;
   let first;
   let mode;
   let tmp = dependencyMap;
   const obj = mode(576);
   const cResult = obj.c(6);
-  const obj2 = mode(17207);
+  const obj2 = mode(17802);
   mode = obj2.usePIPState().mode;
   const ref = react.useRef(mode === VoicePanelPIPModes.IN_APP);
   const tmp3 = VoicePanelPIPModes;
@@ -395,7 +395,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp8 = cResult[5];
     }
     const effect = obj3.useEffect(tmp7, tmp8);
-    const tmp11 = mode === tmp3.IN_APP && ref(5973)(ref);
+    const tmp11 = mode === tmp3.IN_APP && ref(6161)(ref);
     return tmp11;
   }
   const fn = function l() {
@@ -421,10 +421,10 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[2] = mode;
   cResult[3] = fn;
   tmp7 = fn;
-}) : (() => {
+}) : (function useLazyContentFreeze() {
   let closure_2;
   let mode;
-  const obj = mode(17207);
+  const obj = mode(17802);
   mode = obj.usePIPState().mode;
   const ref = react.useRef(mode === VoicePanelPIPModes.IN_APP);
   dependencyMap = _slicedToArray(react.useState({}), 2)[1];
@@ -448,11 +448,11 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       ref.current = false;
     }
   }, items);
-  const tmp3 = mode === VoicePanelPIPModes.IN_APP && ref(5973)(ref);
+  const tmp3 = mode === VoicePanelPIPModes.IN_APP && ref(6161)(ref);
   return tmp3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function CardContentFreezer(children) {
   let tmp6;
   const obj = react2;
   const cResult = obj.c(8);
@@ -490,7 +490,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[3] = tmp6;
   cResult[4] = tmp12;
   tmp11 = tmp12;
-}) : ((children) => {
+}) : (function CardContentFreezer(children) {
   children = children.children;
   const tmp = closure_27();
   const freeze = tmp;
@@ -504,7 +504,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((viewableChunks) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelCardView(viewableChunks) {
   let channelId;
   let first;
   let items2;
@@ -518,9 +518,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((v
   const cResult = obj.c(11);
   let obj2 = react;
   viewableChunks = viewableChunks.viewableChunks;
-  channelId = react.useContext(stateFromStoresArray(11901)).channelId;
+  channelId = react.useContext(stateFromStoresArray(11973)).channelId;
   const tmp4 = closure_23(viewableChunks);
-  const obj3 = channelId(17301);
+  const obj3 = channelId(17895);
   const chunkedParticipants = obj3.useChunkedParticipants(channelId, tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelRTCStore];
@@ -674,7 +674,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((v
   cResult[6] = stateFromStoresArray;
   cResult[7] = channelId;
   cResult[8] = items2;
-}) : ((viewableChunks) => {
+}) : (function VoicePanelCardView(viewableChunks) {
   let chunkedParticipants;
   let stateFromStoresArray;
   viewableChunks = viewableChunks.viewableChunks;

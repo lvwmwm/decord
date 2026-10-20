@@ -1,35 +1,36 @@
-// Module ID: 16917
-// Function ID: 16918
+// Module ID: 17507
+// Function ID: 17508
 // Name: AutoAnalytics
-// Dependencies: [19, 4906, 5436, 7037, 2056, 2051, 2112, 2074, 1999, 4939, 4913, 2103, 4699, 5438, 5071, 1377, 1085, 2058, 21, 5070, 7403, 16918, 16919, 2077, 16920, 1252, 1375, 16921, 558, 576, 504, 16922, 16923, 2]
+// Dependencies: [19, 6036, 5757, 6054, 2070, 2065, 2125, 2087, 2012, 5282, 5110, 2116, 4939, 5759, 5966, 1390, 1085, 2072, 21, 7908, 7912, 5107, 17508, 17509, 2090, 17510, 1265, 1388, 17511, 558, 576, 504, 17512, 17513, 2]
 
-// Module 16917 (AutoAnalytics)
+// Module 17507 (AutoAnalytics)
 import Fragment from "Fragment" /* 21 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import FavoritesUtils from "FavoritesUtils" /* 2077 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7403 */;
-import GuildThemeAnalyticsUtils from "GuildThemeAnalyticsUtils" /* 16918 */;
-import trackGuildViewedClickstreamDefault from "trackGuildViewedClickstream" /* 16919 */;
-import getChannelOpenedRouteTrackingProps from "getChannelOpenedRouteTrackingProps" /* 16921 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import FavoritesUtils from "FavoritesUtils" /* 2090 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
+import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 7908 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7912 */;
+import GuildThemeAnalyticsUtils from "GuildThemeAnalyticsUtils" /* 17508 */;
+import trackGuildViewedClickstreamDefault from "trackGuildViewedClickstream" /* 17509 */;
+import getChannelOpenedRouteTrackingProps from "getChannelOpenedRouteTrackingProps" /* 17511 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
-import StageInstanceStore from "StageInstanceStore" /* 2056 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import NetworkStore from "NetworkStore" /* 4939 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5438 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
+import StageInstanceStore from "StageInstanceStore" /* 2070 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import NetworkStore from "NetworkStore" /* 5282 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -56,7 +57,7 @@ class AutoAnalytics extends PureComponent {
       const _trackWithMetadata2 = self._trackWithMetadata;
       const CHANNEL_OPENED = constants.CHANNEL_OPENED;
       const obj = { selected_guild_id: selectedGuildId };
-      const obj10 = AppAnalyticsUtils;
+      const obj10 = getChannelOpenedMetadata;
       const merged = Object.assign(obj10.getChannelOpenedMetadata(selectedChannelId));
       _trackWithMetadata2(CHANNEL_OPENED, obj);
       const obj2 = { channelId: selectedChannelId };
@@ -65,7 +66,7 @@ class AutoAnalytics extends PureComponent {
       const tmp18 = require;
       if (tmp) {
         const obj3 = { channel_is_nsfw: tmp2 };
-        const tmp18Result = tmp18(5070);
+        const tmp18Result = tmp18(5107);
         tmp18Result.trackWithMetadata(tmp17.TEXT_IN_VOICE_OPENED, obj3);
       }
     }
@@ -89,7 +90,7 @@ class AutoAnalytics extends PureComponent {
       const obj8 = FavoritesUtils;
       const tmp14 = importDefault;
       if (obj8.isFavoritesGuildId(selectedGuildId)) {
-        tmp14(16920)();
+        tmp14(17510)();
       }
     }
   }
@@ -215,7 +216,7 @@ class AutoAnalytics extends PureComponent {
         const VIDEO_INPUT_TOGGLED = constants.VIDEO_INPUT_TOGGLED;
         AnalyticsUtilsDefault;
         const merged5 = Object.assign(self.getGameMetadata());
-        const tmp32Result = tmp32(5070);
+        const tmp32Result = tmp32(5107);
         const merged6 = Object.assign(tmp32Result.collectVoiceAnalyticsMetadata(voiceChannelId));
         track2(VIDEO_INPUT_TOGGLED, obj5);
       }
@@ -230,7 +231,7 @@ class AutoAnalytics extends PureComponent {
       const obj6 = { selected_guild_id: selectedGuildId };
       const obj7 = getChannelOpenedRouteTrackingProps;
       const merged7 = Object.assign(obj7.getChannelOpenedRouteTrackingProps(selectedChannelId));
-      const obj8 = AppAnalyticsUtils;
+      const obj8 = getChannelOpenedMetadata;
       const merged8 = Object.assign(obj8.getChannelOpenedMetadata(selectedChannelId));
       _trackWithMetadata(CHANNEL_OPENED, obj6);
       const obj9 = { channelId: selectedChannelId };
@@ -239,7 +240,7 @@ class AutoAnalytics extends PureComponent {
       const tmp46 = require;
       if (isTextInVoice) {
         const obj10 = { channel_is_nsfw: isNSFWChannel };
-        const tmp46Result = tmp46(5070);
+        const tmp46Result = tmp46(5107);
         tmp46Result.trackWithMetadata(tmp45.TEXT_IN_VOICE_OPENED, obj10);
       }
     }
@@ -272,7 +273,7 @@ class AutoAnalytics extends PureComponent {
         const obj19 = FavoritesUtils;
         const tmp70 = importDefault;
         if (obj19.isFavoritesGuildId(selectedGuildId)) {
-          tmp70(16920)();
+          tmp70(17510)();
         }
       }
     }
@@ -297,7 +298,7 @@ class AutoAnalytics extends PureComponent {
         const obj3 = {};
         const merged = Object.assign(obj);
         const merged1 = Object.assign(self.collectDefaultAnalyticsMetadata(tmp, tmp2));
-        const tmp3Result = tmp3(1252);
+        const tmp3Result = tmp3(1265);
         tmp3Result.track(CHANNEL_OPENED, obj3);
       }
     }
@@ -328,7 +329,7 @@ class AutoAnalytics extends PureComponent {
   }
 }
 const prototype = AutoAnalytics.prototype;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedAutoAnalytics() {
   let ae;
   let connected;
   let currentUser;
@@ -366,7 +367,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp9;
   let tmp = stateFromStores;
   let tmp2 = stateFromStores6;
-  const obj = stateFromStores(stateFromStores6[29]);
+  const obj = stateFromStores(stateFromStores6[30]);
   const cResult = obj.c(68);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SelectedChannelStore];
@@ -383,7 +384,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     [tmp4, tmp5, tmp6] = cResult;
   }
-  const tmpResult = tmp(tmp2[30]);
+  const tmpResult = tmp(tmp2[31]);
   stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5, tmp6);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [ChannelStore];
@@ -412,7 +413,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     tmp12 = cResult[6];
   }
-  const tmpResult13 = tmp(tmp2[30]);
+  const tmpResult13 = tmp(tmp2[31]);
   const stateFromStores1 = tmpResult13.useStateFromStores(tmp9, tmp11, tmp12);
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     class E {
@@ -421,14 +422,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const items4 = [SelectedChannelStore];
-    class A {
+    class N {
       constructor() {
         return SelectedChannelStore.getChannelId(undefined, false);
       }
     }
     cResult[7] = items4;
-    cResult[8] = A;
-    tmp15 = A;
+    cResult[8] = N;
+    tmp15 = N;
     tmp14 = items4;
   } else {
     class E {
@@ -438,7 +439,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     tmp15 = cResult[8];
   }
-  const tmpResult14 = tmp(tmp2[30]);
+  const tmpResult14 = tmp(tmp2[31]);
   const stateFromStores2 = tmpResult14.useStateFromStores(tmp14, tmp15);
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
     class E {
@@ -447,7 +448,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const items5 = [ChannelStore];
-    class A {
+    class N {
       constructor() {
         return SelectedChannelStore.getChannelId(undefined, false);
       }
@@ -468,7 +469,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const items6 = [stateFromStores2];
-    class A {
+    class N {
       constructor() {
         return SelectedChannelStore.getChannelId(undefined, false);
       }
@@ -486,7 +487,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     tmp19 = cResult[12];
   }
-  const tmpResult15 = tmp(tmp2[30]);
+  const tmpResult15 = tmp(tmp2[31]);
   const stateFromStores3 = tmpResult15.useStateFromStores(tmp17, tmp19, tmp18);
   if (stateFromStores3 != null) {
     class O {
@@ -502,7 +503,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const items7 = [stateFromStores8];
-    class A {
+    class N {
       constructor() {
         return SelectedChannelStore.getChannelId(undefined, false);
       }
@@ -523,7 +524,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const items8 = [stateFromStores2];
-    class A {
+    class N {
       constructor() {
         return SelectedChannelStore.getChannelId(undefined, false);
       }
@@ -541,7 +542,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     tmp24 = cResult[16];
   }
-  const tmpResult16 = tmp(tmp2[30]);
+  const tmpResult16 = tmp(tmp2[31]);
   const stateFromStores4 = tmpResult16.useStateFromStores(tmp22, tmp23, tmp24);
   if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
     class O {
@@ -571,7 +572,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp28 = cResult[18];
     tmp29 = cResult[19];
   }
-  const tmpResult17 = tmp(tmp2[30]);
+  const tmpResult17 = tmp(tmp2[31]);
   const stateFromStores5 = tmpResult17.useStateFromStores(tmp27, tmp28, tmp29);
   if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
     class O {
@@ -601,7 +602,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp32 = cResult[21];
     tmp33 = cResult[22];
   }
-  const tmpResult18 = tmp(tmp2[30]);
+  const tmpResult18 = tmp(tmp2[31]);
   stateFromStores6 = tmpResult18.useStateFromStores(tmp31, tmp32, tmp33);
   if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
     class O {
@@ -649,7 +650,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     tmp37 = cResult[26];
   }
-  const tmpResult19 = tmp(tmp2[30]);
+  const tmpResult19 = tmp(tmp2[31]);
   const stateFromStores7 = tmpResult19.useStateFromStores(tmp35, tmp36, tmp37);
   if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
     class O {
@@ -679,7 +680,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp41 = cResult[28];
     tmp42 = cResult[29];
   }
-  const tmpResult20 = tmp(tmp2[30]);
+  const tmpResult20 = tmp(tmp2[31]);
   stateFromStores8 = tmpResult20.useStateFromStores(tmp40, tmp41, tmp42);
   if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
     class O {
@@ -717,7 +718,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return ChannelStore.getChannel(stateFromStores2);
       }
     }
-    const tmpResult21 = tmp(tmp2[30]);
+    const tmpResult21 = tmp(tmp2[31]);
     const stateFromStores9 = tmpResult21.useStateFromStores(tmp45, ae, items24);
     class X {
       constructor() {
@@ -752,7 +753,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp48 = cResult[36];
       tmp49 = cResult[37];
     }
-    const tmpResult22 = tmp(tmp2[30]);
+    const tmpResult22 = tmp(tmp2[31]);
     const stateFromStores10 = tmpResult22.useStateFromStores(tmp47, tmp48, tmp49);
     const _Symbol = Symbol;
     if (cResult[38] === Symbol.for("react.memo_cache_sentinel")) {
@@ -783,7 +784,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp53 = cResult[39];
       tmp54 = cResult[40];
     }
-    const tmpResult23 = tmp(tmp2[30]);
+    const tmpResult23 = tmp(tmp2[31]);
     const stateFromStores11 = tmpResult23.useStateFromStores(tmp52, tmp53, tmp54);
     const _Symbol2 = Symbol;
     if (cResult[41] === Symbol.for("react.memo_cache_sentinel")) {
@@ -814,9 +815,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp58 = cResult[42];
       tmp59 = cResult[43];
     }
-    const tmpResult24 = tmp(tmp2[30]);
+    const tmpResult24 = tmp(tmp2[31]);
     const stateFromStores12 = tmpResult24.useStateFromStores(tmp57, tmp58, tmp59);
-    const tmp63 = stateFromStores2(tmp2[31])(stateFromStores6);
+    const tmp63 = stateFromStores2(tmp2[32])(stateFromStores6);
     if (stateFromStores1 != null) {
       class O {
         constructor() {
@@ -988,7 +989,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[32] = stateFromStores6;
   cResult[33] = ae;
   cResult[34] = items24;
-}) : (() => {
+}) : (function ConnectedAutoAnalytics() {
   let application_id;
   let bitrate;
   let connected;
@@ -1003,18 +1004,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp = stateFromStores;
   let tmp2 = stateFromStores6;
   const items = [SelectedChannelStore];
-  const obj = stateFromStores(stateFromStores6[30]);
+  const obj = stateFromStores(stateFromStores6[31]);
   stateFromStores = obj.useStateFromStores(items, () => SelectedChannelStore.getVoiceChannelId(), []);
   const items1 = [ChannelStore];
   const items2 = [stateFromStores];
-  const obj2 = stateFromStores(stateFromStores6[30]);
+  const obj2 = stateFromStores(stateFromStores6[31]);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(stateFromStores), items2);
   const items3 = [SelectedChannelStore];
-  const obj4 = stateFromStores(stateFromStores6[30]);
+  const obj4 = stateFromStores(stateFromStores6[31]);
   const stateFromStores2 = obj4.useStateFromStores(items3, () => SelectedChannelStore.getChannelId(undefined, false));
   const items4 = [ChannelStore];
   const items5 = [stateFromStores2];
-  const obj5 = stateFromStores(stateFromStores6[30]);
+  const obj5 = stateFromStores(stateFromStores6[31]);
   const stateFromStores3 = obj5.useStateFromStores(items4, () => ChannelStore.getChannel(stateFromStores2), items5);
   let nsfw;
   if (stateFromStores3 != null) {
@@ -1022,27 +1023,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const items6 = [stateFromStores8];
   const items7 = [stateFromStores2];
-  const tmpResult = tmp(tmp2[30]);
+  const tmpResult = tmp(tmp2[31]);
   const stateFromStores4 = tmpResult.useStateFromStores(items6, () => {
     const chatOpen = null != stateFromStores2 && ChannelRTCStore.getChatOpen(tmp);
     return chatOpen;
   }, items7);
   const items8 = [SelfPresenceStore];
-  const tmpResult9 = tmp(tmp2[30]);
+  const tmpResult9 = tmp(tmp2[31]);
   const stateFromStores5 = tmpResult9.useStateFromStores(items8, () => SelfPresenceStore.findActivity((type) => type.type === constants.PLAYING), []);
   const items9 = [SelectedGuildStore];
-  const tmpResult10 = tmp(tmp2[30]);
+  const tmpResult10 = tmp(tmp2[31]);
   stateFromStores6 = tmpResult10.useStateFromStores(items9, () => guildId.getGuildId(), []);
   const items10 = [GuildStore];
   const items11 = [stateFromStores6];
-  const tmpResult11 = tmp(tmp2[30]);
+  const tmpResult11 = tmp(tmp2[31]);
   const stateFromStores7 = tmpResult11.useStateFromStores(items10, () => GuildStore.getGuild(stateFromStores6), items11);
   const items12 = [UserStore];
-  const tmpResult12 = tmp(tmp2[30]);
+  const tmpResult12 = tmp(tmp2[31]);
   stateFromStores8 = tmpResult12.useStateFromStores(items12, () => currentUser.getCurrentUser(), []);
   const items13 = [GuildMemberStore];
   const items14 = [stateFromStores8, stateFromStores6];
-  const tmpResult13 = tmp(tmp2[30]);
+  const tmpResult13 = tmp(tmp2[31]);
   const stateFromStores9 = tmpResult13.useStateFromStores(items13, () => {
     let tmp2 = null != stateFromStores8;
     const tmp = stateFromStores8;
@@ -1063,21 +1064,21 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return tmp2;
   }, items14);
   const items15 = [MediaEngineStore];
-  const tmpResult14 = tmp(tmp2[30]);
+  const tmpResult14 = tmp(tmp2[31]);
   const stateFromStores10 = tmpResult14.useStateFromStores(items15, () => MediaEngineStore.isVideoEnabled(), []);
   const items16 = [MediaEngineStore];
-  const tmpResult15 = tmp(tmp2[30]);
+  const tmpResult15 = tmp(tmp2[31]);
   const stateFromStores11 = tmpResult15.useStateFromStores(items16, () => MediaEngineStore.isScreenSharing(), []);
   const items17 = [GatewayConnectionStore];
-  const tmpResult16 = tmp(tmp2[30]);
+  const tmpResult16 = tmp(tmp2[31]);
   const stateFromStores12 = tmpResult16.useStateFromStores(items17, () => connected.isConnected(), []);
   let id;
   const tmp16 = stateFromStores2;
-  const tmp17 = stateFromStores2(tmp2[31])(stateFromStores6);
+  const tmp17 = stateFromStores2(tmp2[32])(stateFromStores6);
   if (stateFromStores1 != null) {
     id = stateFromStores1.id;
   }
-  const obj3 = { voiceChannelId: id, voiceChannelGuildId: guildId, voiceChannelType: type, voiceChannelBitrate: bitrate, videoEnabled: stateFromStores10, isScreenSharing: stateFromStores11, gamePlatform: tmp16(tmp2[32])(stateFromStores5), gameName: name, gameId: application_id, selectedChannelId: stateFromStores2, selectedGuildId: stateFromStores6, connected: stateFromStores12, isNSFWChannel: nsfw, hasPreviewEnabled: hasItem, isMemberPending: stateFromStores9, postableChannelCount: tmp17, isTextInVoice: stateFromStores4 };
+  const obj3 = { voiceChannelId: id, voiceChannelGuildId: guildId, voiceChannelType: type, voiceChannelBitrate: bitrate, videoEnabled: stateFromStores10, isScreenSharing: stateFromStores11, gamePlatform: tmp16(tmp2[33])(stateFromStores5), gameName: name, gameId: application_id, selectedChannelId: stateFromStores2, selectedGuildId: stateFromStores6, connected: stateFromStores12, isNSFWChannel: nsfw, hasPreviewEnabled: hasItem, isMemberPending: stateFromStores9, postableChannelCount: tmp17, isTextInVoice: stateFromStores4 };
   guildId = undefined;
   if (stateFromStores1 != null) {
     guildId = stateFromStores1.getGuildId();

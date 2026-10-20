@@ -1,18 +1,18 @@
-// Module ID: 15001
-// Function ID: 15002
+// Module ID: 15481
+// Function ID: 15482
 // Name: QuestDockUnenrolledBody
-// Dependencies: [5, 19, 7187, 5623, 21, 558, 576, 14925, 14984, 14893, 573, 14892, 10911, 10916, 10914, 10007, 10008, 14900, 10954, 5626, 7212, 14921, 9994, 14928, 10955, 10908, 10918, 15002, 14967, 1126, 7575, 12724, 10010, 2]
+// Dependencies: [5, 19, 7386, 5972, 21, 558, 576, 15405, 15464, 15372, 573, 15371, 9166, 9197, 9157, 9158, 9159, 15379, 12984, 5975, 7411, 15401, 9167, 15408, 12985, 9163, 9199, 15482, 15447, 1126, 7569, 13581, 9188, 2]
 
-// Module 15001 (QuestDockUnenrolledBody)
+// Module 15481 (QuestDockUnenrolledBody)
 import Fragment from "Fragment" /* 21 */;
-import QuestTypes from "QuestTypes" /* 5626 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
-import QuestUtils from "QuestUtils" /* 10908 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10918 */;
+import QuestTypes from "QuestTypes" /* 5975 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
+import QuestUtils from "QuestUtils" /* 9163 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9199 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7187 */;
-import QuestConstants from "QuestConstants" /* 5623 */;
+import QuestStore from "QuestStore" /* 7386 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let metroImportDefault;
 let metroRequire;
 ({ QuestDockMode: metroRequire, QuestsExperimentLocations: metroImportDefault } = QuestConstants);
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockUnenrolledBody() {
   let first;
   let getQuestImpressionId;
   let hasWatchVideoOnMobileTasks;
@@ -204,9 +204,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
       }
     }
   });
-  const fn = function() {
+  function t3() {
     return closure_0(...arguments);
-  };
+  }
   cResult[4] = isMobileActivityQuest;
   cResult[5] = isQuestAccessSuspended;
   cResult[6] = launchMobileActivity;
@@ -214,8 +214,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   cResult[8] = setRestingQuestDockMode;
   cResult[9] = hasWatchVideoOnMobileTasks;
   cResult[10] = trackQuestContentClickedWithImpression;
-  cResult[11] = fn;
-}) : (() => {
+  cResult[11] = t3;
+}) : (function QuestDockUnenrolledBody() {
   let getQuestImpressionId;
   let hasWatchVideoOnMobileTasks;
   let intl;

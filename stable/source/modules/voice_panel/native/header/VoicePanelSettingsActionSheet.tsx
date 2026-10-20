@@ -1,17 +1,17 @@
-// Module ID: 17250
-// Function ID: 17251
+// Module ID: 17845
+// Function ID: 17846
 // Name: VoicePanelSettingsActionSheet
-// Dependencies: [19, 21, 4890, 558, 576, 17251, 6645, 6112, 6619, 2]
+// Dependencies: [19, 21, 5092, 558, 576, 17846, 6840, 6307, 6814, 2]
 
-// Module 17250 (VoicePanelSettingsActionSheet)
+// Module 17845 (VoicePanelSettingsActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import BottomSheetModal from "BottomSheetModal" /* 6112 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
-import VoicePanelSettingsOverviewDefault from "VoicePanelSettingsOverview" /* 17251 */;
+import BottomSheetModal from "BottomSheetModal" /* 6307 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
+import VoicePanelSettingsOverviewDefault from "VoicePanelSettingsOverview" /* 17846 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let BottomSheet;
 
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ wrapper: { gap: 24 } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSettingsActionSheet(arg0) {
   let channelId;
   let guildId;
   const obj = react2;
@@ -38,8 +38,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       }
       return tmp7;
     }
-    BottomSheet = tmp(6645).BottomSheet;
-    const BottomSheetScrollView = tmp(6112).BottomSheetScrollView;
+    BottomSheet = tmp(6840).BottomSheet;
+    const BottomSheetScrollView = tmp(6307).BottomSheetScrollView;
     const tmp9 = <BottomSheet startExpanded scrollable>{null}</BottomSheet>;
     cResult[3] = tmp4.wrapper;
     cResult[4] = tmp5;
@@ -51,7 +51,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[1] = guildId;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0) => {
+}) : (function VoicePanelSettingsActionSheet(arg0) {
   let channelId;
   let guildId;
   ({ guildId, channelId } = arg0);

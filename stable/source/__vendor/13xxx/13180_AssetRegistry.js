@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 167.5, height: 16, scales: [2, 3], hash: "48c1555b13d7692f2f1f3a2ca57206f1", name: "server_boost_logo_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ef42f58d92ae3022fbec5decb610cbf2", name: "ThreadMinusIcon", type: "png" });

@@ -1,18 +1,18 @@
-// Module ID: 17966
-// Function ID: 17967
+// Module ID: 18597
+// Function ID: 18598
 // Name: components/StepsIndicator
-// Dependencies: [19, 17, 4879, 21, 4890, 587, 558, 576, 4612, 4891, 4886, 504, 2]
+// Dependencies: [19, 17, 5081, 21, 5092, 587, 558, 576, 4850, 5093, 5088, 504, 2]
 
-// Module 17966 (components/StepsIndicator)
+// Module 18597 (components/StepsIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let closure_7 = createStyles(obj);
 const __initData = { code: "function StepsIndicatorTsx1(){const{interpolate,state,withTiming,duration,Easing}=this.__closure;const rawScale=interpolate(state.get(),[0,1],[0.4,1]);const scale=withTiming(rawScale,{duration:duration,easing:Easing.out(Easing.ease)});const rawMargin=interpolate(state.get(),[0,1],[-2,6]);const marginHorizontal=withTiming(rawMargin,{duration:duration,easing:Easing.out(Easing.ease)});return{marginHorizontal:marginHorizontal,transform:[{scale:scale}]};}" };
 const __initData2 = { code: "function StepsIndicatorTsx2(){const{interpolate,state,withTiming,duration,Easing}=this.__closure;const rawScale=interpolate(state.get(),[0,1],[8/20,1]);const scale=withTiming(rawScale,{duration:duration,easing:Easing.out(Easing.ease)});const rawMargin=interpolate(state.get(),[0,1],[-2,6]);const marginHorizontal=withTiming(rawMargin,{duration:duration,easing:Easing.out(Easing.ease)});return{marginHorizontal:marginHorizontal,transform:[{scale:scale}]};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StepNode(arg0) {
   let isCurrent;
   let isDone;
   let label;
@@ -154,7 +154,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = items1;
   tmp9 = items1;
   tmp8 = fn2;
-}) : ((isCurrent) => {
+}) : (function StepNode(isCurrent) {
   let isDone;
   let label;
   let useReducedMotion;
@@ -230,7 +230,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   filledNode = tmp.filledNode;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function StepsIndicator(arg0) {
   let current;
   let style;
   let sum;
@@ -301,7 +301,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = stateFromStores;
   cResult[5] = items2;
   tmp9 = items2;
-}) : ((current) => {
+}) : (function StepsIndicator(current) {
   let useReducedMotion;
   current = current.current;
   const total = current.total;

@@ -1,12 +1,12 @@
-// Module ID: 5580
-// Function ID: 5581
+// Module ID: 5921
+// Function ID: 5922
 // Name: RegionalFeatureConfigUtils
-// Dependencies: [5104, 558, 576, 504, 2]
+// Dependencies: [5910, 558, 576, 504, 2]
 // Exports: hasAgeGatedFeatures, hasTeenDefaults, isFeatureAgeGated, isSettingTeenByDefault, shouldCollectAppStoreSignal
 
-// Module 5580 (RegionalFeatureConfigUtils)
+// Module 5921 (RegionalFeatureConfigUtils)
 import react from "react" /* 576 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5104 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5910 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let _require;
 let tmp;
 const get_initialized = tmp(504);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFeatureAgeGated(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -32,7 +32,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function u() {
+    const fn = function n() {
       return RegionalFeatureConfigStore.isFeatureAgeGated(closure_0);
     };
     cResult[1] = arg0;
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useIsFeatureAgeGated(arg0) {
   let closure_0;
   _require = arg0;
   const items = [RegionalFeatureConfigStore];
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj.useStateFromStores(items, () => RegionalFeatureConfigStore.isFeatureAgeGated(closure_0));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSettingTeenByDefault(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -67,7 +67,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function u() {
+    const fn = function n() {
       return RegionalFeatureConfigStore.isSettingTeenByDefault(closure_0);
     };
     cResult[1] = arg0;
@@ -78,7 +78,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useIsSettingTeenByDefault(arg0) {
   let closure_0;
   _require = arg0;
   const items = [RegionalFeatureConfigStore];
@@ -86,14 +86,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj.useStateFromStores(items, () => RegionalFeatureConfigStore.isSettingTeenByDefault(closure_0));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasAgeGatedFeatures() {
   let tmp4;
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [RegionalFeatureConfigStore];
-    const fn = function s() {
+    const fn = function u() {
       return RegionalFeatureConfigStore.hasAgeGatedFeatures();
     };
     cResult[0] = items;
@@ -105,20 +105,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useHasAgeGatedFeatures() {
   const items = [RegionalFeatureConfigStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => RegionalFeatureConfigStore.hasAgeGatedFeatures());
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasTeenDefaults() {
   let tmp4;
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [RegionalFeatureConfigStore];
-    const fn = function s() {
+    const fn = function u() {
       return RegionalFeatureConfigStore.hasTeenDefaults();
     };
     cResult[0] = items;
@@ -130,7 +130,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useHasTeenDefaults() {
   const items = [RegionalFeatureConfigStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => RegionalFeatureConfigStore.hasTeenDefaults());

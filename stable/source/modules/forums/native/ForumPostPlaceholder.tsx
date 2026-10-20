@@ -1,17 +1,17 @@
-// Module ID: 11641
-// Function ID: 11642
+// Module ID: 11706
+// Function ID: 11707
 // Name: ForumPostPlaceholder
-// Dependencies: [32, 19, 4879, 21, 4890, 587, 558, 576, 504, 4612, 4891, 5995, 2]
+// Dependencies: [32, 19, 5081, 21, 5092, 587, 558, 576, 504, 4850, 5093, 6182, 2]
 
-// Module 11641 (ForumPostPlaceholder)
+// Module 11706 (ForumPostPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import createStyles from "createStyles" /* 4890 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let c9 = 1000;
 const __initData = { code: "function ForumPostPlaceholderTsx1(){const{reducedMotion,ROW_OPACITY_END,withDelay,INITIAL_DELAY_MS,withRepeat,withSequence,withTiming,timingConfig}=this.__closure;if(reducedMotion){return{opacity:ROW_OPACITY_END};}return{opacity:withDelay(INITIAL_DELAY_MS,withRepeat(withSequence(withTiming(ROW_OPACITY_END,timingConfig),withTiming(1,timingConfig)),-1,true))};}" };
 const __initData2 = { code: "function ForumPostPlaceholderTsx2(){const{reducedMotion,ROW_OPACITY_END,withDelay,INITIAL_DELAY_MS,withRepeat,withSequence,withTiming,timingConfig}=this.__closure;if(reducedMotion){return{opacity:ROW_OPACITY_END};}return{opacity:withDelay(INITIAL_DELAY_MS,withRepeat(withSequence(withTiming(ROW_OPACITY_END,timingConfig),withTiming(1,timingConfig)),-1,true))};}" };
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostPlaceholder() {
   let stateFromStores;
   let tmp13;
   let tmp5;
@@ -75,7 +75,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   const timingConfig = _slicedToArray(react.useState(tmp9), 1)[0].timingConfig;
-  const tmpResult2 = stateFromStores(4612);
+  const tmpResult2 = stateFromStores(4850);
   class I {
     constructor() {
       let tmp10;
@@ -99,7 +99,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return tmp10;
     }
   }
-  let obj2 = { reducedMotion: stateFromStores, ROW_OPACITY_END: v055, withDelay: tmp(4612).withDelay, INITIAL_DELAY_MS, withRepeat: tmp(4612).withRepeat, withSequence: tmp(4612).withSequence, withTiming: tmp(4891).withTiming, timingConfig };
+  let obj2 = { reducedMotion: stateFromStores, ROW_OPACITY_END: v055, withDelay: tmp(4850).withDelay, INITIAL_DELAY_MS, withRepeat: tmp(4850).withRepeat, withSequence: tmp(4850).withSequence, withTiming: tmp(5093).withTiming, timingConfig };
   I.__closure = obj2;
   I.__workletHash = 9488742940898;
   I.__initData = __initData;
@@ -115,7 +115,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return obj;
       }
     }
-    const tmp12 = jsx(stateFromStores(5995).Card, { variant: "secondary", style: tmp4.postPlaceholder });
+    const tmp12 = jsx(stateFromStores(6182).Card, { variant: "secondary", style: tmp4.postPlaceholder });
     cResult[3] = tmp4.postPlaceholder;
     cResult[4] = tmp12;
   } else {
@@ -143,11 +143,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp13;
   }
-  tmp13 = jsx(timingConfig(4612).View, { style: animatedStyle, pointerEvents: "none", children: tmp11 });
+  tmp13 = jsx(timingConfig(4850).View, { style: animatedStyle, pointerEvents: "none", children: tmp11 });
   cResult[5] = animatedStyle;
   cResult[6] = tmp11;
   cResult[7] = tmp13;
-}) : (() => {
+}) : (function ForumPostPlaceholder() {
   let stateFromStores;
   let useReducedMotion;
   const tmp = closure_7();
@@ -162,8 +162,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     Easing = stateFromStores(dependencyMap[9]).Easing;
     return obj;
   }), 1)[0].timingConfig;
-  let obj2 = stateFromStores(4612);
-  const fn = function _() {
+  let obj2 = stateFromStores(4850);
+  const fn = function l() {
     let tmp10;
     const obj = { opacity: null };
     if (stateFromStores) {
@@ -184,12 +184,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp10;
   };
-  let obj3 = { reducedMotion: stateFromStores, ROW_OPACITY_END: v055, withDelay: stateFromStores(4612).withDelay, INITIAL_DELAY_MS, withRepeat: stateFromStores(4612).withRepeat, withSequence: stateFromStores(4612).withSequence, withTiming: stateFromStores(4891).withTiming, timingConfig };
+  let obj3 = { reducedMotion: stateFromStores, ROW_OPACITY_END: v055, withDelay: stateFromStores(4850).withDelay, INITIAL_DELAY_MS, withRepeat: stateFromStores(4850).withRepeat, withSequence: stateFromStores(4850).withSequence, withTiming: stateFromStores(5093).withTiming, timingConfig };
   fn.__closure = obj3;
   fn.__workletHash = 13857107900577;
   fn.__initData = __initData2;
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  const View = timingConfig(4612).View;
+  const View = timingConfig(4850).View;
   return <View style={animatedStyle} pointerEvents="none">{null}</View>;
 }));
 const result = size.fileFinishedImporting("modules/forums/native/ForumPostPlaceholder.tsx");

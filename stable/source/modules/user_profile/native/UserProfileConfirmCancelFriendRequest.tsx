@@ -1,12 +1,12 @@
-// Module ID: 12287
-// Function ID: 12288
+// Module ID: 12369
+// Function ID: 12370
 // Name: UserProfileConfirmCancelFriendRequest
-// Dependencies: [19, 21, 558, 576, 1126, 5713, 5713, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 5305, 5305, 2]
 
-// Module 12287 (UserProfileConfirmCancelFriendRequest)
+// Module 12369 (UserProfileConfirmCancelFriendRequest)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import AlertModal2 from "AlertModal" /* 5713 */;
+import AlertModal2 from "AlertModal" /* 5305 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 let c2;
 let c3;
 ({ jsx: c2, jsxs: c3 } = Fragment);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileConfirmCancelFriendRequest(arg0) {
   let first;
   let intl4;
   let items;
@@ -66,7 +66,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { variant: "secondary", text: intl4.string(intl5.t["eN6+rI"]) };
-    const AlertActionButton = tmp(5713).AlertActionButton;
+    const AlertActionButton = tmp(5305).AlertActionButton;
     intl4 = tmp(1126).intl;
     const tmp15 = React2(AlertActionButton, obj4, "nevermind");
     cResult[6] = tmp15;
@@ -96,7 +96,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[10] = tmp16;
   cResult[11] = tmp20;
   tmp19 = tmp20;
-}) : ((arg0) => {
+}) : (function UserProfileConfirmCancelFriendRequest(arg0) {
   let AlertActions;
   let intl;
   let intl2;

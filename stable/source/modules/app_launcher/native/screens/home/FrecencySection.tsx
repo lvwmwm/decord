@@ -1,37 +1,36 @@
-// Module ID: 11666
-// Function ID: 11667
+// Module ID: 11732
+// Function ID: 11733
 // Name: FrecencySection
-// Dependencies: [109, 32, 19, 17, 2050, 11667, 1085, 21, 4890, 587, 558, 576, 8794, 1375, 6663, 11668, 10994, 504, 8932, 5070, 4612, 4891, 1126, 8962, 11669, 11665, 1985, 8567, 11670, 4886, 10844, 7579, 5909, 11671, 7034, 5974, 11674, 2]
+// Dependencies: [109, 32, 19, 17, 2064, 11733, 1085, 21, 5092, 587, 558, 576, 9242, 1388, 6858, 11734, 10623, 504, 10624, 5107, 4850, 5093, 1126, 8763, 11735, 11731, 1998, 8537, 11736, 5088, 10534, 9358, 6185, 11737, 7242, 6157, 11740, 2]
 
-// Module 11666 (FrecencySection)
+// Module 11732 (FrecencySection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import timing from "timing" /* 4891 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6663 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 8794 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8932 */;
-import FrecencySectionStore2 from "FrecencySectionStore" /* 11667 */;
-import usePlaceholderSize from "usePlaceholderSize" /* 11668 */;
-import FrecencySectionStoreActionCreators from "FrecencySectionStoreActionCreators" /* 11669 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import timing from "timing" /* 5093 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6858 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9242 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10624 */;
+import FrecencySectionStore2 from "FrecencySectionStore" /* 11733 */;
+import usePlaceholderSize from "usePlaceholderSize" /* 11734 */;
+import FrecencySectionStoreActionCreators from "FrecencySectionStoreActionCreators" /* 11735 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2050 */;
+import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2064 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const FrecencySectionStore_mod = FrecencySectionStore2;
-let closure_12;
 
 let closure_14;
 let map1;
@@ -49,7 +48,7 @@ let size;
 let size1;
 let size2;
 let tmp6;
-const ChevronSmallDownIcon = tmp6(10844);
+const ChevronSmallDownIcon = tmp6(10534);
 let closure_3 = ["ref"];
 ({ View: metroImportDefault, ScrollView: metroImportAll } = react_native);
 let EmbeddedActivitiesStore = EmbeddedActivitiesStore_mod;
@@ -75,7 +74,7 @@ obj9 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, height: 16
 size2 = { position: "absolute", top: 0, left: 0, width: 60, height: 60, borderRadius: nativeDefault.radii.lg };
 let closure_15 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchFrecentActivityApps(arg0) {
   let apps;
   let onlyActivityApps;
   let tmp5;
@@ -116,12 +115,12 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp5 = cResult[4];
   }
   const mapped = apps.map(tmp5);
-  const found = mapped.filter(tmp(1375).isNotNullish);
+  const found = mapped.filter(tmp(1388).isNotNullish);
   cResult[0] = apps;
   cResult[1] = onlyActivityApps;
   cResult[2] = found;
   tmp4 = found;
-}) : ((apps) => {
+}) : (function useFetchFrecentActivityApps(apps) {
   apps = apps.apps;
   const onlyActivityApps = apps.onlyActivityApps;
   const items = [apps, onlyActivityApps];
@@ -146,10 +145,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     });
     return mapped.filter(GlobalUtils.isNotNullish);
   }, items);
-  onlyActivityApps(6663)(memo);
+  onlyActivityApps(6858)(memo);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Placeholder() {
   let items;
   let items1;
   let items2;
@@ -215,7 +214,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
         const obj7 = { style: tmp2.commandContainer, children: items };
         items = [tmp5, tmp17];
-        const tmp24 = authStore2(metroImportDefault, obj7);
+        const tmp24 = syncedClientThemes(metroImportDefault, obj7);
         cResult[15] = tmp2.commandContainer;
         cResult[16] = tmp5;
         cResult[17] = tmp17;
@@ -224,7 +223,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const obj8 = { children: items1 };
       items1 = [tmp10, tmp13];
-      const tmp20 = authStore2(metroImportDefault, obj8);
+      const tmp20 = syncedClientThemes(metroImportDefault, obj8);
       cResult[12] = tmp10;
       cResult[13] = tmp13;
       cResult[14] = tmp20;
@@ -245,7 +244,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = tmp9;
   cResult[6] = tmp11;
   tmp10 = tmp11;
-}) : (() => {
+}) : (function Placeholder() {
   let items;
   let items1;
   let items2;
@@ -265,14 +264,14 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj7 = { style: items3 };
   items3 = [tmp.loadingTextPlaceholderSmall, { width: placeholderWidth1 }];
   items2[1] = map1(metroImportDefault, obj7);
-  items[1] = authStore2(metroImportDefault, obj5);
-  return authStore2(metroImportDefault, obj3);
+  items[1] = syncedClientThemes(metroImportDefault, obj5);
+  return syncedClientThemes(metroImportDefault, obj3);
 });
 let obj10 = { APPS: 0, [0]: "APPS", COMMANDS: 1, [1]: "COMMANDS" };
 let closure_19 = { code: "function FrecencySectionTsx1(){const{withTiming,isRecentsMenuOpen}=this.__closure;return{transform:[{rotate:withTiming(isRecentsMenuOpen?\"-180deg\":\"0deg\")}]};}" };
 const __initData = { code: "function FrecencySectionTsx2(){const{withTiming,isRecentsMenuOpen}=this.__closure;return{transform:[{rotate:withTiming(isRecentsMenuOpen?'-180deg':'0deg')}]};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrecencySection(context) {
   let closure_11;
   let commands;
   let launchingActivity;
@@ -344,7 +343,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
       }
     }
     FrecencySectionSelection = tmp20;
-    closure_12 = tmp5Result[1];
+    let closure_12 = tmp5Result[1];
     const tmp21 = entrypoint === tmp(tmp2[18]).AppLauncherEntrypoint.VOICE;
     let closure_13 = tmp21;
     if (cResult[4] === apps.length) {
@@ -403,9 +402,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
         }
         const obj = { num: length, section_name: RECENT_COMMANDS, location: AppLauncherTypes.AppLauncherLocations.HOME };
         if (tmp9 === tmp10.APPS) {
-          RECENT_COMMANDS = tmp5(8932).AppLauncherSectionName.RECENT_APPS;
+          RECENT_COMMANDS = tmp5(10624).AppLauncherSectionName.RECENT_APPS;
         } else {
-          RECENT_COMMANDS = tmp5(8932).AppLauncherSectionName.RECENT_COMMANDS;
+          RECENT_COMMANDS = tmp5(10624).AppLauncherSectionName.RECENT_COMMANDS;
         }
         trackWithMetadata(APP_LAUNCHER_FRECENTS_SEEN, obj);
       }
@@ -421,7 +420,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
     tmp22 = fn;
   }
   APPS = obj10.APPS;
-}) : ((loading) => {
+}) : (function FrecencySection(loading) {
   let Text;
   let closure_7;
   let commands;
@@ -447,7 +446,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   isRecentsMenuOpen = undefined;
   selection = undefined;
   let first1;
-  closure_12 = undefined;
+  let closure_12;
   let closure_13;
   let style;
   let COMMANDS;
@@ -500,9 +499,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
         }
         const obj = { num: length, section_name: RECENT_COMMANDS, location: AppLauncherTypes.AppLauncherLocations.HOME };
         if (tmp9 === tmp10.APPS) {
-          RECENT_COMMANDS = tmp5(8932).AppLauncherSectionName.RECENT_APPS;
+          RECENT_COMMANDS = tmp5(10624).AppLauncherSectionName.RECENT_APPS;
         } else {
-          RECENT_COMMANDS = tmp5(8932).AppLauncherSectionName.RECENT_COMMANDS;
+          RECENT_COMMANDS = tmp5(10624).AppLauncherSectionName.RECENT_COMMANDS;
         }
         trackWithMetadata(APP_LAUNCHER_FRECENTS_SEEN, obj);
       }
@@ -688,7 +687,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
               intl = intl4.intl;
               items = [map1(Text, obj2), ];
               let tmp5Result = null;
-              const tmp = authStore2;
+              const tmp = syncedClientThemes;
               const tmp2 = metroImportDefault;
               const tmp3 = closure_8;
               if (commands.length > 0) {
@@ -745,7 +744,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   APPS = obj10.APPS;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrecentActivityOneClickCTA(context) {
   let entrypoint;
   let first;
   let handleActivityItemSelected;
@@ -801,29 +800,29 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
                 const tmpResult4 = context(handleActivityItemSelected[25]);
                 handleActivityItemSelected = tmpResult4.useHandleActivityItemSelected(tmp16).handleActivityItemSelected;
                 if (cResult[14] !== handleActivityItemSelected) {
-                  class O {
+                  class M {
                     constructor() {
                       handleActivityItemSelected();
                     }
                   }
                   cResult[14] = handleActivityItemSelected;
-                  cResult[15] = O;
+                  cResult[15] = M;
                 } else {
-                  class O {
+                  class M {
                     constructor() {
                       handleActivityItemSelected();
                     }
                   }
                 }
                 if (!tmp11) {
-                  class O {
+                  class M {
                     constructor() {
                       handleActivityItemSelected();
                     }
                   }
                 }
                 if (cResult[16] === app) {
-                  class O {
+                  class M {
                     constructor() {
                       handleActivityItemSelected();
                     }
@@ -872,13 +871,13 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   cResult[3] = context.type;
   cResult[4] = fn;
   tmp8 = fn;
-}) : ((context) => {
+}) : (function FrecentActivityOneClickCTA(context) {
   let callback;
   let entrypoint;
   let onActivityItemSelected;
   let tmp6;
   let tmp7;
-  const f108599 = () => {
+  const f109622 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -898,8 +897,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   let id = react.useId();
   let items = [EmbeddedActivitiesStore];
   const obj3 = context(handleActivityItemSelected[17]);
-  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f108599);
-  _slicedToArray(obj3.useStateFromStoresArray(items, f108599), 2);
+  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f109622);
+  _slicedToArray(obj3.useStateFromStoresArray(items, f109622), 2);
   let isLaunching = null != tmp7;
   const obj4 = context(handleActivityItemSelected[33]);
   const obj5 = { context, applicationId: app.applicationId };
@@ -927,7 +926,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
   return tmp10(tmp11, obj7);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((app) => {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrecentApp(app) {
   let disabled;
   let items;
   let onAppSelected;
@@ -944,7 +943,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((app) => {
   } else {
     let name;
     if (cResult[0] !== app.section.application) {
-      const tmpResult = tmp(11665);
+      const tmpResult = tmp(11731);
       const appLauncherIconSource = tmpResult.getAppLauncherIconSource(app.section.application);
       cResult[0] = app.section.application;
       cResult[1] = appLauncherIconSource;
@@ -1028,7 +1027,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((app) => {
             }
           }
           items = [tmp10, tmp14];
-          const tmp19 = closure_14(tmp(5909).PressableOpacity, obj2, app.applicationId);
+          const tmp19 = closure_14(tmp(6185).PressableOpacity, obj2, app.applicationId);
           cResult[11] = app.applicationId;
           cResult[12] = disabled;
           cResult[13] = tmp8;
@@ -1067,7 +1066,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((app) => {
       let tmp11 = null != tmp6;
       if (tmp11) {
         const obj4 = { style: tmp5.appIcon, source: tmp6 };
-        tmp11 = closure_13(onAppSelected(5974), obj4);
+        tmp11 = closure_13(onAppSelected(6157), obj4);
       }
       cResult[5] = tmp6;
       class A {
@@ -1119,7 +1118,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((app) => {
     cResult[4] = A;
     tmp9 = A;
   }
-}) : ((app) => {
+}) : (function FrecentApp(app) {
   let disabled;
   let items;
   let name;
@@ -1134,7 +1133,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((app) => {
   if (null == app.section) {
     return null;
   } else {
-    const obj4 = app(11665);
+    const obj4 = app(11731);
     const appLauncherIconSource = obj4.getAppLauncherIconSource(app.section.application);
     let obj = {
       style: disabled ? tmp.appContainerDisabled : tmp.appContainer,
@@ -1157,7 +1156,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((app) => {
     };
     const application = app.section.application;
     name = undefined;
-    const PressableOpacity = app(5909).PressableOpacity;
+    const PressableOpacity = app(6185).PressableOpacity;
     const tmp10 = closure_14;
     const tmp7 = app;
     if (application != null) {
@@ -1166,11 +1165,11 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((app) => {
     let tmp3 = null != appLauncherIconSource;
     if (tmp3) {
       const obj2 = { style: tmp.appIcon, source: appLauncherIconSource };
-      tmp3 = closure_13(onAppSelected(5974), obj2);
+      tmp3 = closure_13(onAppSelected(6157), obj2);
     }
     items = [tmp3, ];
     const obj3 = { submitting, style: tmp.submittingOverlay };
-    items[1] = closure_13(tmp7(11674).SubmittingOverlay, obj3);
+    items[1] = closure_13(tmp7(11740).SubmittingOverlay, obj3);
     return tmp10(PressableOpacity, obj, app.applicationId);
   }
 });

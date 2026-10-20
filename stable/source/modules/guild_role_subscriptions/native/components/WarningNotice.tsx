@@ -1,19 +1,19 @@
-// Module ID: 17880
-// Function ID: 17881
+// Module ID: 18511
+// Function ID: 18512
 // Name: WarningNotice
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 5974, 4807, 4886, 5594, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6157, 13906, 5088, 5379, 2]
 
-// Module 17880 (WarningNotice)
+// Module 18511 (WarningNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4807 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import FastImageDefault from "FastImage" /* 5974 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13906 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, borderColor: nativeDefault.colors.STATUS_WARNING };
 obj4 = { color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WarningNotice(arg0) {
   let ctaLabel;
   let disabled;
   let items;
@@ -153,7 +153,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp4.containerYellow;
   cResult[3] = items3;
   tmp5 = items3;
-}) : ((arg0) => {
+}) : (function WarningNotice(arg0) {
   let ctaLabel;
   let disabled;
   let items;

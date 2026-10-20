@@ -1,15 +1,15 @@
-// Module ID: 1242
-// Function ID: 1243
+// Module ID: 1255
+// Function ID: 1256
 // Name: SentryUtils
-// Dependencies: [17, 3, 1243, 686, 13897, 685, 1368, 2]
+// Dependencies: [17, 3, 1256, 686, 14397, 685, 1381, 2]
 
-// Module 1242 (SentryUtils)
+// Module 1255 (SentryUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import addSentryBreadcrumbDefault from "addSentryBreadcrumb" /* 685 */;
 import _modAll686 from "module_686" /* 686 */;
-import react_nativeAll from "react-native" /* 1368 */;
-import SentryInitUtils_mod from "SentryInitUtils" /* 1243 */;
+import react_nativeAll from "react-native" /* 1381 */;
+import SentryInitUtils_mod from "SentryInitUtils" /* 1256 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

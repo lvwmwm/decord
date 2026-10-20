@@ -1,22 +1,22 @@
-// Module ID: 17009
-// Function ID: 17010
+// Module ID: 17597
+// Function ID: 17598
 // Name: PermissionSpecUtils
-// Dependencies: [2055, 2074, 1085, 8077, 17010, 6754, 5802, 17011, 1126, 2115, 6772, 5574, 17012, 6771, 17013, 9247, 7263, 2]
+// Dependencies: [2069, 2087, 1085, 7485, 17598, 6954, 11603, 17599, 1126, 2128, 6972, 5895, 17600, 6971, 17601, 8633, 7899, 2]
 
-// Module 17009 (PermissionSpecUtils)
+// Module 17597 (PermissionSpecUtils)
 import intl34 from "intl" /* 1126 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import SoundmojiRenderingExperiment from "SoundmojiRenderingExperiment" /* 5802 */;
-import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 6754 */;
-import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 6771 */;
-import tracking_Tracking from "tracking/Tracking" /* 7263 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8077 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
-import useGuildEligibleForStageChannels from "useGuildEligibleForStageChannels" /* 17010 */;
-import HangoutWindowExperiment from "HangoutWindowExperiment" /* 17011 */;
-import permissions_PermissionUtilsAll from "permissions/PermissionUtils" /* 17013 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 6954 */;
+import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 6971 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7485 */;
+import Tracking from "Tracking" /* 7899 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8633 */;
+import SoundmojiRenderingExperiment from "SoundmojiRenderingExperiment" /* 11603 */;
+import useGuildEligibleForStageChannels from "useGuildEligibleForStageChannels" /* 17598 */;
+import HangoutWindowExperiment from "HangoutWindowExperiment" /* 17599 */;
+import permissions_PermissionUtilsAll from "permissions/PermissionUtils" /* 17601 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -79,9 +79,9 @@ let obj = {
     const VoiceInThreadsExperiment = require("ThreadHooks").VoiceInThreadsExperiment;
     let obj2 = { guildId: guild_id, location: "3ad37d_1" };
     const enabled = VoiceInThreadsExperiment.getCurrentConfig(obj2).enabled && set.has(stateFromStores.type);
-    const tmp4Result = tmp4(5574);
+    const tmp4Result = tmp4(5895);
     const isStageVideoEnabledResult = tmp4Result.isStageVideoEnabled(guild_id);
-    const tmp4Result2 = tmp4(17012);
+    const tmp4Result2 = tmp4(17600);
     let result = tmp4Result2.canCurrentUserManageMessageFilters(guild_id);
     const isMediaChannelResult = stateFromStores.isMediaChannel();
     importDefault = isMediaChannelResult;
@@ -219,7 +219,7 @@ let obj = {
       }
       const obj9 = { sectionDescription: formatResult1, inSoundmojiExperiment };
       items4[5] = generateChannelVoiceChatSection(tmp3, stringResult1, obj9);
-      const generateChannelAppsSection2 = tmp33(17013).generateChannelAppsSection;
+      const generateChannelAppsSection2 = tmp33(17601).generateChannelAppsSection;
       permissions_PermissionUtilsAll;
       const intl15 = tmp4(1126).intl;
       items4[6] = generateChannelAppsSection2(tmp3, intl15.string(tmp4(1126).t["rrh/W6"]), { showActivities: false });
@@ -248,7 +248,7 @@ let obj = {
           const intl33 = tmp4(1126).intl;
           items5[3] = generateChannelAppsSection5(tmp3, intl33.string(tmp4(1126).t["rrh/W6"]));
           if (enabled) {
-            const generateChannelVoiceSection = tmp64(17013).generateChannelVoiceSection;
+            const generateChannelVoiceSection = tmp64(17601).generateChannelVoiceSection;
             permissions_PermissionUtilsAll;
             const intl = tmp4(1126).intl;
             const items6 = [generateChannelVoiceSection(tmp3, intl.string(tmp4(1126).t["46Ra1b"]))];
@@ -286,7 +286,7 @@ let obj = {
           setUpAutomod() {
                 const tmp = importDefault;
                 if (!tmp) {
-                  const obj = tracking_Tracking;
+                  const obj = Tracking;
                   const result = obj.trackForumEnableAutomodClicked();
                 }
                 const obj2 = GuildSettingsActionCreatorsDefault;

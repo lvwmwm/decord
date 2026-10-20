@@ -1,18 +1,19 @@
-// Module ID: 12314
-// Function ID: 12315
+// Module ID: 12396
+// Function ID: 12397
 // Name: NsfwGateChat
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 12315, 1126, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6157, 12397, 1126, 5088, 2]
 
-// Module 12314 (NsfwGateChat)
+// Module 12396 (NsfwGateChat)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12315 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12397 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,19 +21,18 @@ let StyleSheet;
 let c3;
 let closure_4;
 let hasOwnProperty;
-let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
-({ View: c3, Image: closure_4, StyleSheet } = react_native);
-({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
+({ View: c3, StyleSheet } = react_native);
+({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, border: obj3, description: { marginTop: 16, textAlign: "center" } };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center" };
 createStyles = createStyles.createStyles;
 obj3 = { height: StyleSheet.hairlineWidth, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-let closure_8 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_7 = createStyles(obj);
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateChat() {
   let items;
   let items1;
   let tmp14;
@@ -41,10 +41,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp9;
   const obj = react2;
   const cResult = obj.c(12);
-  const tmp4 = closure_8();
+  const tmp4 = closure_7();
   if (cResult[0] !== tmp4.border) {
     const obj2 = { style: tmp4.border };
-    const tmp8 = hasOwnProperty(_false, obj2);
+    const tmp8 = React3(_false, obj2);
     cResult[0] = tmp4.border;
     cResult[1] = tmp8;
     tmp5 = tmp8;
@@ -54,7 +54,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const container = tmp4.container;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { source: AssetRegistryDefault };
-    const tmp13 = hasOwnProperty(React3, obj3);
+    const tmp12 = FastImageDefault;
+    const tmp13 = React3(tmp12, obj3);
     cResult[2] = tmp13;
     tmp9 = tmp13;
   } else {
@@ -71,7 +72,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[4] !== tmp4.description) {
     const obj4 = { style: description, variant: "text-md/medium", color: "text-muted", children: tmp14 };
-    const tmp18 = hasOwnProperty(Text_Text.Text, obj4);
+    const tmp18 = React3(Text_Text.Text, obj4);
     cResult[4] = tmp4.description;
     cResult[5] = tmp18;
     tmp16 = tmp18;
@@ -92,7 +93,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const obj5 = { children: items };
     items = [tmp5, tmp19];
-    const tmp24 = metroRequire(metroImportDefault, obj5);
+    const tmp24 = hasOwnProperty(metroRequire, obj5);
     cResult[9] = tmp5;
     cResult[10] = tmp19;
     cResult[11] = tmp24;
@@ -100,30 +101,30 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const obj6 = { style: container, children: items1 };
   items1 = [tmp9, tmp16];
-  const tmp20 = metroRequire(_false, obj6);
+  const tmp20 = hasOwnProperty(_false, obj6);
   cResult[6] = tmp4.container;
   cResult[7] = tmp16;
   cResult[8] = tmp20;
   tmp19 = tmp20;
-}) : (() => {
+}) : (function NsfwGateChat() {
   let intl;
   let items;
   let items1;
-  const tmp = closure_8();
+  const tmp = closure_7();
   const obj = { children: items };
   items = [, ];
   const obj2 = { style: tmp.border };
-  items[0] = hasOwnProperty(_false, obj2);
+  items[0] = React3(_false, obj2);
   const obj3 = { style: tmp.container, children: items1 };
-  items1 = [, ];
   const obj4 = { source: AssetRegistryDefault };
-  items1[0] = hasOwnProperty(React3, obj4);
+  const tmp2 = FastImageDefault;
+  items1 = [React3(tmp2, obj4), ];
   const obj5 = { style: tmp.description, variant: "text-md/medium", color: "text-muted", children: intl.string(intl2.t.W4Qyxr) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
-  items1[1] = hasOwnProperty(Text, obj5);
-  items[1] = metroRequire(_false, obj3);
-  return metroRequire(metroImportDefault, obj);
+  items1[1] = React3(Text, obj5);
+  items[1] = hasOwnProperty(_false, obj3);
+  return hasOwnProperty(metroRequire, obj);
 });
 const result = size.fileFinishedImporting("modules/age_gate/native/components/NsfwGateChat.tsx");
 

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "0da6e85b52f6338da38daa05a2b6d1cc", name: "ic_mic_24px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/emoji_picker/native/images", width: 16, height: 16, scales: [2, 3], hash: "494d75fe739ed4a36d195ab8193847fa", name: "alert", type: "png" });

@@ -1,10 +1,10 @@
-// Module ID: 5083
-// Function ID: 5084
+// Module ID: 5938
+// Function ID: 5939
 // Name: TrackedHTTPUtils
-// Dependencies: [109, 1252, 1282, 2]
+// Dependencies: [109, 1265, 1295, 2]
 
-// Module 5083 (TrackedHTTPUtils)
-import AnalyticsUtils from "AnalyticsUtils" /* 1252 */;
+// Module 5938 (TrackedHTTPUtils)
+import AnalyticsUtils from "AnalyticsUtils" /* 1265 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 

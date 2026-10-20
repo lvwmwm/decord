@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/auth", width: 1920, height: 1080, scales: [1], hash: "c2620d71d0c18f7cbdf536c0e7d3a788", name: "background-splash-dev", type: "jpg" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 77.5, height: 30, scales: [2, 3], hash: "eb98ab037be2f7c5d6e15b4152c0f9cb", name: "img_logo_nitro_basic_stacked", type: "png" });

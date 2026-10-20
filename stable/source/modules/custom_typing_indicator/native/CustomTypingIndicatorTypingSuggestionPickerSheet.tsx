@@ -1,26 +1,26 @@
-// Module ID: 15180
-// Function ID: 15181
+// Module ID: 15660
+// Function ID: 15661
 // Name: CustomTypingIndicatorTypingSuggestionPickerSheet
-// Dependencies: [32, 19, 21, 4890, 587, 558, 576, 6644, 1126, 3725, 11587, 6071, 6072, 6701, 2]
+// Dependencies: [32, 19, 21, 5092, 587, 558, 576, 6839, 1126, 3851, 11645, 6262, 6263, 6899, 2]
 
-// Module 15180 (CustomTypingIndicatorTypingSuggestionPickerSheet)
+// Module 15660 (CustomTypingIndicatorTypingSuggestionPickerSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3725 from "module_3725" /* 3725 */;
+import _modDef3851 from "module_3851" /* 3851 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let importDefault, onChange;
+let importDefault;
 
 let obj2;
 const jsx = Fragment.jsx;
 let obj = { content: obj2 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_6 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypingIndicatorTypingSuggestionPickerSheet(onChange) {
   let tmp14;
   let tmp6;
   let tmp7;
@@ -34,23 +34,23 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
   [tmp6, importDefault] = react.useState(initialValue);
   _slicedToArray(react.useState(initialValue), 2);
   if (cResult[0] !== onChange) {
-    const fn = function c(arg0) {
+    function handleChange(arg0) {
       importDefault(arg0);
       onChange(arg0);
-    };
+    }
     cResult[0] = onChange;
-    cResult[1] = fn;
-    tmp7 = fn;
+    cResult[1] = handleChange;
+    tmp7 = handleChange;
   } else {
     tmp7 = cResult[1];
   }
   const content = tmp4.content;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const BottomSheetTitleHeader = tmp(6644).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
     let intl = tmp(1126).intl;
-    const tmp12 = <BottomSheetTitleHeader title={intl.string(_modDef3725["X+ijyw"])} />;
+    const tmp12 = <BottomSheetTitleHeader title={intl.string(_modDef3851["X+ijyw"])} />;
     const intl2 = tmp(1126).intl;
-    const stringResult = intl2.string(_modDef3725.hrl2cG);
+    const stringResult = intl2.string(_modDef3851.hrl2cG);
     cResult[2] = tmp12;
     cResult[3] = stringResult;
     tmp9 = stringResult;
@@ -60,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
     tmp9 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = onChange(11587);
+    const tmpResult = onChange(11645);
     const customTypingIndicatorSuggestionPresets = tmpResult.getCustomTypingIndicatorSuggestionPresets();
     const mapped = customTypingIndicatorSuggestionPresets.map((value) => {
       const TableRadioRow = onChange(dependencyMap[11]).TableRadioRow;
@@ -86,18 +86,18 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
       }
       return tmp18;
     }
-    const tmp20 = jsx(onChange(6701).ActionSheet, { contentStyles: content, header: tmp8, dismissAccessibilityLabel: tmp9, children: tmp16 });
+    const tmp20 = jsx(onChange(6899).ActionSheet, { contentStyles: content, header: tmp8, dismissAccessibilityLabel: tmp9, children: tmp16 });
     cResult[8] = tmp4.content;
     cResult[9] = tmp16;
     cResult[10] = tmp20;
     tmp18 = tmp20;
   }
-  const tmp17 = jsx(onChange(6072).TableRadioGroup, { value: tmp6, onChange: tmp7, hasIcons: false, children: tmp14 });
+  const tmp17 = jsx(onChange(6263).TableRadioGroup, { value: tmp6, onChange: tmp7, hasIcons: false, children: tmp14 });
   cResult[5] = tmp7;
   cResult[6] = tmp6;
   cResult[7] = tmp17;
   tmp16 = tmp17;
-}) : ((onChange) => {
+}) : (function CustomTypingIndicatorTypingSuggestionPickerSheet(onChange) {
   let closure_1;
   let customTypingIndicatorSuggestionPresets;
   let first;
@@ -107,14 +107,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
   const initialValue = onChange.initialValue;
   const tmp = closure_6();
   [first, importDefault] = react.useState(initialValue);
-  const ActionSheet = onChange(6701).ActionSheet;
-  let obj2 = { title: intl.string(_modDef3725["X+ijyw"]) };
-  const BottomSheetTitleHeader = onChange(6644).BottomSheetTitleHeader;
+  const ActionSheet = onChange(6899).ActionSheet;
+  let obj2 = { title: intl.string(_modDef3851["X+ijyw"]) };
+  const BottomSheetTitleHeader = onChange(6839).BottomSheetTitleHeader;
   intl = onChange(1126).intl;
   const intl2 = onChange(1126).intl;
   ({
     value: first,
-    onChange(arg0) {
+    onChange: function handleChange(arg0) {
       closure_1(arg0);
       onChange(arg0);
     },
@@ -127,10 +127,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onChange) => {
       return <TableRadioRow key={arg0} value={arg0} label={string(obj2.getCustomTypingIndicatorSuggestionMessage(arg0))} />;
     })
   });
-  const TableRadioGroup = onChange(6072).TableRadioGroup;
-  const obj4 = onChange(11587);
+  const TableRadioGroup = onChange(6263).TableRadioGroup;
+  const obj4 = onChange(11645);
   customTypingIndicatorSuggestionPresets = obj4.getCustomTypingIndicatorSuggestionPresets();
-  return <ActionSheet contentStyles={tmp.content} header={null} dismissAccessibilityLabel={intl2.string(_modDef3725.hrl2cG)}>{null}</ActionSheet>;
+  return <ActionSheet contentStyles={tmp.content} header={null} dismissAccessibilityLabel={intl2.string(_modDef3851.hrl2cG)}>{null}</ActionSheet>;
 });
 const result = size.fileFinishedImporting("modules/custom_typing_indicator/native/CustomTypingIndicatorTypingSuggestionPickerSheet.tsx");
 

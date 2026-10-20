@@ -1,14 +1,14 @@
-// Module ID: 10612
-// Function ID: 10613
+// Module ID: 10239
+// Function ID: 10240
 // Name: useUserVoiceActivity
-// Dependencies: [2051, 4509, 4909, 1096, 558, 576, 504, 2]
+// Dependencies: [2065, 4750, 5113, 1096, 558, 576, 504, 2]
 // Exports: canViewUserVoiceChannel, getUserVoiceState
 
-// Module 10612 (useUserVoiceActivity)
+// Module 10239 (useUserVoiceActivity)
 import Constants from "Constants" /* 1096 */;
-import ChannelStore_mod from "ChannelStore" /* 2051 */;
-import PermissionStore_mod from "PermissionStore" /* 4509 */;
-import VoiceStateStore_mod from "VoiceStateStore" /* 4909 */;
+import ChannelStore_mod from "ChannelStore" /* 2065 */;
+import PermissionStore_mod from "PermissionStore" /* 4750 */;
+import VoiceStateStore_mod from "VoiceStateStore" /* 5113 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ let PermissionStore = PermissionStore_mod;
 let VoiceStateStore = VoiceStateStore_mod;
 const Permissions = Constants.Permissions;
 let closure_6 = { ChannelStore, PermissionStore, VoiceStateStore };
-let closure_7 = Object.freeze({ voiceState: "Symbol", voiceChannel: "cursor" });
+let closure_7 = Object.freeze({ voiceState: "top", voiceChannel: "code" });
 function getUserVoiceState(arg0) {
   let guildId;
   let includeNonDiscoverable;
@@ -131,7 +131,7 @@ function getUserVoiceState(arg0) {
     tmp2 = voiceStateForUser;
   }
 }
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserVoiceActivity(userId) {
   let first;
   let guildId;
   let obj = userId(guildId[5]);
@@ -173,7 +173,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[5] = items1;
   tmp9 = items1;
   tmp8 = fn;
-}) : ((userId) => {
+}) : (function useUserVoiceActivity(userId) {
   userId = userId.userId;
   const guildId = userId.guildId;
   const includeNonDiscoverable = userId.includeNonDiscoverable;

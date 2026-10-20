@@ -1,17 +1,17 @@
-// Module ID: 13006
-// Function ID: 13007
+// Module ID: 13476
+// Function ID: 13477
 // Name: EditProfileCollectiblesOrderingExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 
-// Module 13006 (EditProfileCollectiblesOrderingExperiment)
+// Module 13476 (EditProfileCollectiblesOrderingExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-09-edit-profile-collectibles-ordering", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEditProfileCollectiblesOrderingEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -24,7 +24,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useIsEditProfileCollectiblesOrderingEnabled(location) {
   const obj = { location };
   return closure_2.useConfig(obj).enabled;
 });

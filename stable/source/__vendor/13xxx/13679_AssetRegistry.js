@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 120, height: 108, scales: [1, 2, 3], hash: "3ec4fb1a4fcdb736c4c87e7591f26daf", name: "img_remote_auth_succeeded", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 180, height: 101.5, scales: [2, 3], hash: "e7c47aa4983bcda8af147e4a2811c93e", name: "img_what_you_lose_boost", type: "png" });

@@ -1,22 +1,20 @@
-// Module ID: 12307
-// Function ID: 12308
+// Module ID: 12389
+// Function ID: 12390
 // Name: ChatPlaceholderRow
-// Dependencies: [19, 17, 21, 1188, 4890, 587, 12306, 558, 576, 11965, 2]
+// Dependencies: [19, 17, 21, 1200, 5092, 587, 12388, 558, 576, 12037, 2]
 
-// Module 12307 (ChatPlaceholderRow)
+// Module 12389 (ChatPlaceholderRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import getChatPlaceholderRowWidthDefault from "getChatPlaceholderRowWidth" /* 11965 */;
-import getChatPlaceholderRowHeight from "getChatPlaceholderRowHeight" /* 12306 */;
+import native from "native" /* 1200 */;
+import getChatPlaceholderRowWidthDefault from "getChatPlaceholderRowWidth" /* 12037 */;
+import getChatPlaceholderRowHeight from "getChatPlaceholderRowHeight" /* 12388 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let lines;
 
 let closure_4;
 let hasOwnProperty;
@@ -37,7 +35,7 @@ size = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, height: tmp
 obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, height: getChatPlaceholderRowHeight.CHAT_PLACEHOLDER_ROW_LINE_HEIGHT, borderRadius: nativeDefault.radii.sm };
 obj5 = { marginTop: getChatPlaceholderRowHeight.CHAT_PLACEHOLDER_ROW_LINE_MARGIN_TOP, width: "100%" };
 let closure_6 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((lines) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPlaceholderRow(lines) {
   let items;
   let items1;
   let items2;
@@ -135,7 +133,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((l
   cResult[2] = tmp2.placeholderText;
   cResult[3] = items3;
   tmp5 = items3;
-}) : ((lines) => {
+}) : (function ChatPlaceholderRow(lines) {
   let items1;
   let items2;
   let items3;

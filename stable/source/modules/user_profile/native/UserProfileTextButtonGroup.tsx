@@ -1,16 +1,16 @@
-// Module ID: 12815
-// Function ID: 12816
+// Module ID: 13120
+// Function ID: 13121
 // Name: UserProfileTextButtonGroup
-// Dependencies: [19, 17, 6707, 21, 4890, 558, 576, 1484, 2]
+// Dependencies: [19, 17, 6905, 21, 5092, 558, 576, 1497, 2]
 
-// Module 12815 (UserProfileTextButtonGroup)
+// Module 13120 (UserProfileTextButtonGroup)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import Constants from "Constants" /* 6707 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import Constants from "Constants" /* 6905 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const View = react_native.View;
 const PROFILE_SIDE_PADDING = Constants.PROFILE_SIDE_PADDING;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ container: { flexDirection: "row", flexWrap: "wrap", gap: 12 }, buttonArea: { flexGrow: 1 } });
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileTextButtonGroup(arg0) {
   let items2;
   let maxWidth;
   let primaryButton;
@@ -186,7 +186,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp6 = null;
   }
   return tmp6;
-}) : ((arg0) => {
+}) : (function UserProfileTextButtonGroup(arg0) {
   let items;
   let items1;
   let items2;

@@ -1,19 +1,19 @@
-// Module ID: 16214
-// Function ID: 16215
+// Module ID: 16736
+// Function ID: 16737
 // Name: useFavoritesGuildSuggestionCandidates
-// Dependencies: [19, 16215, 7143, 2051, 16127, 10712, 558, 576, 16217, 504, 9509, 10709, 10715, 9505, 9496, 2]
+// Dependencies: [19, 16737, 7343, 2065, 16643, 11561, 558, 576, 16739, 504, 8712, 12699, 11572, 8708, 8695, 2]
 // Exports: default
 
-// Module 16214 (useFavoritesGuildSuggestionCandidates)
+// Module 16736 (useFavoritesGuildSuggestionCandidates)
 import react2 from "react" /* 576 */;
-import _mod9496 from "module_9496" /* 9496 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9505 */;
-import ShareConstants from "ShareConstants" /* 10712 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 16127 */;
+import _mod8695 from "module_8695" /* 8695 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 8708 */;
+import ShareConstants from "ShareConstants" /* 11561 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 16643 */;
 import react_mod from "react" /* 19 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 16215 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7143 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 16737 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7343 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ function getAffineUserDMId(otherUserId) {
 let react = react_mod;
 const NO_SUGGESTIONS = FavoritesGuildSuggestionsStore.NO_SUGGESTIONS;
 const isAllowedType = ShareConstants.isAllowedType;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelAffinities() {
   let channelAffinities;
   let tmp10;
   let tmp4;
@@ -90,7 +90,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[5];
   }
   return tmp10;
-}) : (() => {
+}) : (function useChannelAffinities() {
   let channelAffinities;
   let stateFromStores;
   const effect = react.useEffect(() => {
@@ -224,7 +224,7 @@ export default function useFavoritesGuildSuggestionCandidates(arg0) {
               let sum = tmp25 + 1;
               if (null != tmp20) {
                 let tmp24;
-                if (tmp20.type !== _mod9496.AutocompleterResultTypes.HEADER) {
+                if (tmp20.type !== _mod8695.AutocompleterResultTypes.HEADER) {
                   tmp24 = sum;
                   if (!set.has(tmp20.record.id)) {
                     break;

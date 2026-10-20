@@ -1,21 +1,31 @@
-// Module ID: 17150
-// Function ID: 17151
+// Module ID: 17745
+// Function ID: 17746
 // Name: getFrameLaunchContextQueryParams
 // Dependencies: [2]
 // Exports: default
 
-// Module 17150 (getFrameLaunchContextQueryParams)
+// Module 17745 (getFrameLaunchContextQueryParams)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/frames/utils/getFrameLaunchContextQueryParams.tsx");
 
-export default function getFrameLaunchContextQueryParams(customId) {
-  const obj = {};
-  if (null != customId.customId) {
-    obj.custom_id = customId.customId;
+export default function getFrameLaunchContextQueryParams(launch) {
+  launch = launch.launch;
+  let customId;
+  if (launch != null) {
+    customId = launch.customId;
   }
-  if (null != customId.referrerId) {
-    obj.referrer_id = customId.referrerId;
+  const obj = {};
+  if (null != customId) {
+    obj.custom_id = launch.launch.customId;
+  }
+  const launch2 = launch.launch;
+  let referrerId;
+  if (launch2 != null) {
+    referrerId = launch2.referrerId;
+  }
+  if (null != referrerId) {
+    obj.referrer_id = launch.launch.referrerId;
   }
   return obj;
 };

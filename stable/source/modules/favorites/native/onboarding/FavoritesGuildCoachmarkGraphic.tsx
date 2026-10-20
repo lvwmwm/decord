@@ -1,16 +1,16 @@
-// Module ID: 16255
-// Function ID: 16256
+// Module ID: 16777
+// Function ID: 16778
 // Name: FavoritesGuildCoachmarkGraphic
-// Dependencies: [17, 21, 4890, 587, 558, 576, 10042, 1188, 2]
+// Dependencies: [17, 21, 5092, 587, 558, 576, 10320, 1200, 2]
 
-// Module 16255 (FavoritesGuildCoachmarkGraphic)
+// Module 16777 (FavoritesGuildCoachmarkGraphic)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 10042 */;
+import native from "native" /* 1200 */;
+import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 10320 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const View = react_native.View;
 let obj = { container: obj2, betaTag: { marginLeft: 0 } };
 obj2 = { alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_12 };
 let closure_5 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildCoachmarkGraphic() {
   let first;
   let items;
   let tmp8;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = tmp8;
   cResult[5] = tmp12;
   tmp11 = tmp12;
-}) : (() => {
+}) : (function FavoritesGuildCoachmarkGraphic() {
   let items;
   const tmp = closure_5();
   const obj = { style: tmp.container, children: items };

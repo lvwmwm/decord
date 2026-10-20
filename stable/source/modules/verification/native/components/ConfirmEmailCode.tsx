@@ -1,19 +1,19 @@
-// Module ID: 6096
-// Function ID: 6097
+// Module ID: 6284
+// Function ID: 6285
 // Name: ConfirmEmailCode
-// Dependencies: [5, 32, 19, 17, 1377, 6009, 21, 4890, 587, 504, 5313, 4886, 1126, 6097, 6429, 4568, 5594, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 6200, 21, 5092, 587, 504, 5636, 5088, 1126, 6285, 6623, 4809, 5379, 2]
 // Exports: default
 
-// Module 6096 (ConfirmEmailCode)
+// Module 6284 (ConfirmEmailCode)
 import nativeDefault from "native" /* 587 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1377 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6009 */;
+import UserStore from "UserStore" /* 1390 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6200 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let _undefined, c4;
@@ -202,7 +202,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
           } else {
             let c3;
             try {
-              let content;
+              let text;
               c5 = 2;
               if (0 === c4) {
                 if (arg0 === 1) {
@@ -213,7 +213,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
                   const obj5 = { value, done: true };
                   return obj5;
                 } else {
-                  content = undefined;
+                  text = undefined;
                   c3 = 1;
                   c4 = 2;
                   c5 = 1;
@@ -228,11 +228,11 @@ export default function ConfirmEmailCode(onFormSubmit) {
                   const self = this;
                   const self2 = this;
                   const obj3 = new tmp(onResend[10])(tmp);
-                  content = obj3.getAnyErrorMessage();
-                  if (null != content) {
-                    const obj7 = { key: "CONFIRM_EMAIL_ERROR", content };
+                  text = obj3.getAnyErrorMessage();
+                  if (null != text) {
+                    const obj7 = { text };
                     const obj4 = tmp(onResend[15]);
-                    obj4.open(obj7);
+                    obj4.open("CONFIRM_EMAIL_ERROR", obj7);
                   }
                 } else if (arg0 === 1) {
                   c5 = 3;
@@ -243,11 +243,11 @@ export default function ConfirmEmailCode(onFormSubmit) {
                   const obj8 = { value, done: true };
                   return obj8;
                 } else {
-                  const obj = { key: "USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", content: intl.string(content(onResend[12]).t["84yeoz"]) };
+                  const obj = { text: intl.string(text(onResend[12]).t["84yeoz"]) };
                   const open = tmp(onResend[15]).open;
                   const tmp8 = tmp(onResend[15]);
-                  intl = content(onResend[12]).intl;
-                  open(obj);
+                  intl = text(onResend[12]).intl;
+                  open("USER_SETTINGS_ACCOUNT_CHANGE_EMAIL_CONFIRM_CODE_SENT", obj);
                   c3 = 0;
                 }
                 c5 = 3;

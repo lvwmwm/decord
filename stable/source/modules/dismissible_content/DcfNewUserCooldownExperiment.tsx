@@ -1,13 +1,13 @@
-// Module ID: 4721
-// Function ID: 4722
+// Module ID: 4961
+// Function ID: 4962
 // Name: DcfNewUserCooldownExperiment
-// Dependencies: [1440, 1102, 558, 576, 2]
+// Dependencies: [1453, 1102, 558, 576, 2]
 // Exports: getDcfNewUserCooldown
 
-// Module 4721 (DcfNewUserCooldownExperiment)
+// Module 4961 (DcfNewUserCooldownExperiment)
 import react from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ obj3[2] = { newUserCooldownMs: 3 * DurationsDefault.Millis.DAY };
 obj3[3] = { newUserCooldownMs: 7 * DurationsDefault.Millis.DAY };
 ({ newUserCooldownMs: 7 * DurationsDefault.Millis.DAY });
 let closure_2 = createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDcfNewUserCooldown() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -35,7 +35,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_2.useConfig(first).newUserCooldownMs;
-}) : (() => closure_2.useConfig({ location: "useDcfNewUserCooldown" }).newUserCooldownMs);
+}) : (function useDcfNewUserCooldown() {
+  return closure_2.useConfig({ location: "useDcfNewUserCooldown" }).newUserCooldownMs;
+});
 const result = size.fileFinishedImporting("modules/dismissible_content/DcfNewUserCooldownExperiment.tsx");
 
 export const useDcfNewUserCooldown = tmp3;

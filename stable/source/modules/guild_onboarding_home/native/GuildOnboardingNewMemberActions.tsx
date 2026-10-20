@@ -1,30 +1,28 @@
-// Module ID: 16517
-// Function ID: 16518
+// Module ID: 17032
+// Function ID: 17033
 // Name: GuildOnboardingNewMemberActions
-// Dependencies: [19, 17, 5638, 2051, 2112, 2074, 4509, 5077, 5078, 1085, 1380, 4495, 21, 4890, 587, 558, 576, 504, 5043, 1402, 7521, 5974, 4523, 4886, 1188, 11415, 1126, 11917, 16518, 5909, 1390, 16519, 2]
+// Dependencies: [19, 17, 5987, 2065, 2125, 2087, 4750, 6926, 7911, 1085, 1393, 4736, 21, 5092, 587, 558, 576, 504, 5421, 1415, 9315, 6157, 4764, 5088, 1200, 11361, 1126, 11989, 17033, 6185, 1403, 17034, 2]
 
-// Module 16517 (GuildOnboardingNewMemberActions)
+// Module 17032 (GuildOnboardingNewMemberActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import FlagUtils from "FlagUtils" /* 1390 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4495 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 7521 */;
+import EmojiConstants from "EmojiConstants" /* 1393 */;
+import FlagUtils from "FlagUtils" /* 1403 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4736 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 9315 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5638 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5077 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 5078 */;
+import EmojiStore from "EmojiStore" /* 5987 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6926 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 7911 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let channelId, guildId;
 
 let closure_15;
 let closure_16;
@@ -44,7 +42,7 @@ size = { width: 40, height: 40, borderRadius: nativeDefault.radii.xs };
 size1 = { width: 40, height: 40, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: 20, display: "flex", alignItems: "center", justifyContent: "center" };
 let closure_17 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberActionRow(channelId) {
   let emoji;
   let first;
   let icon;
@@ -93,23 +91,38 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
     tmp11 = cResult[3];
   }
   if (cResult[4] !== stateFromStores) {
-    const fn2 = function z() {
-      return PermissionStore.can(Permissions.VIEW_CHANNEL, stateFromStores);
-    };
+    class R {
+      constructor() {
+        return PermissionStore.can(Permissions.VIEW_CHANNEL, stateFromStores);
+      }
+    }
     cResult[4] = stateFromStores;
-    cResult[5] = fn2;
-    tmp13 = fn2;
+    cResult[5] = R;
+    tmp13 = R;
   } else {
-    tmp13 = cResult[5];
+    class R {
+      constructor() {
+        return PermissionStore.can(Permissions.VIEW_CHANNEL, stateFromStores);
+      }
+    }
   }
   const tmpResult3 = tmp(stateFromStores[17]);
   const stateFromStores1 = tmpResult3.useStateFromStores(tmp11, tmp13);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class R {
+      constructor() {
+        return PermissionStore.can(Permissions.VIEW_CHANNEL, stateFromStores);
+      }
+    }
     const items2 = [EmojiStore];
     cResult[6] = items2;
     tmp15 = items2;
   } else {
-    tmp15 = cResult[6];
+    class R {
+      constructor() {
+        return PermissionStore.can(Permissions.VIEW_CHANNEL, stateFromStores);
+      }
+    }
   }
   const items3 = [id];
   const tmpResult4 = tmp(stateFromStores[17]);
@@ -121,8 +134,13 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
     return customEmojiById;
   }, items3);
   if (cResult[7] === channelId) {
+    class R {
+      constructor() {
+        return PermissionStore.can(Permissions.VIEW_CHANNEL, stateFromStores);
+      }
+    }
     if (cResult[10] !== stateFromStores) {
-      class H {
+      class O {
         constructor() {
           if (null != stateFromStores) {
             const obj = GuildOnboardingHomeActionCreators;
@@ -131,9 +149,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
         }
       }
       cResult[10] = stateFromStores;
-      cResult[11] = H;
+      cResult[11] = O;
     } else {
-      class H {
+      class O {
         constructor() {
           if (null != stateFromStores) {
             const obj = GuildOnboardingHomeActionCreators;
@@ -143,7 +161,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
       }
     }
     if (null != stateFromStores) {
-      class H {
+      class O {
         constructor() {
           if (null != stateFromStores) {
             const obj = GuildOnboardingHomeActionCreators;
@@ -159,7 +177,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   cResult[7] = channelId;
   cResult[8] = icon;
   cResult[9] = newMemberActionIconURL;
-}) : ((channelId) => {
+}) : (function MemberActionRow(channelId) {
   let Icon;
   let completed;
   let icon;
@@ -262,15 +280,15 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
   return tmp22Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboardingNewMemberActions(guildId) {
   let first;
   let stateFromStores2;
   let tmp10;
   let tmp12;
   let tmp14;
-  let tmp16;
+  let tmp15;
   let tmp18;
-  let tmp20;
+  let tmp19;
   let tmp7;
   let tmp8;
   let tmp = guildId;
@@ -288,7 +306,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     first = cResult[0];
   }
   if (cResult[1] !== guildId) {
-    const fn = function h() {
+    const fn = function u() {
       return GuildOnboardingHomeSettingsStore.getNewMemberActions(guildId);
     };
     const items1 = [guildId];
@@ -311,69 +329,99 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp10 = cResult[4];
   }
   if (cResult[5] !== guildId) {
-    const fn2 = function j() {
-      return GuildOnboardingMemberActionStore.getCompletedActions(guildId);
-    };
+    class N {
+      constructor() {
+        return GuildOnboardingMemberActionStore.getCompletedActions(guildId);
+      }
+    }
     cResult[5] = guildId;
-    cResult[6] = fn2;
-    tmp12 = fn2;
+    cResult[6] = N;
+    tmp12 = N;
   } else {
-    tmp12 = cResult[6];
+    class N {
+      constructor() {
+        return GuildOnboardingMemberActionStore.getCompletedActions(guildId);
+      }
+    }
   }
   const tmpResult4 = tmp(tmp2[17]);
   const stateFromStores1 = tmpResult4.useStateFromStores(tmp10, tmp12);
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    class N {
+      constructor() {
+        return GuildOnboardingMemberActionStore.getCompletedActions(guildId);
+      }
+    }
     const items3 = [GuildMemberStore];
     cResult[7] = items3;
     tmp14 = items3;
   } else {
-    tmp14 = cResult[7];
+    class N {
+      constructor() {
+        return GuildOnboardingMemberActionStore.getCompletedActions(guildId);
+      }
+    }
   }
   if (cResult[8] !== guildId) {
-    const fn3 = function p() {
-      return GuildMemberStore.getSelfMember(guildId);
-    };
+    class N {
+      constructor() {
+        return GuildOnboardingMemberActionStore.getCompletedActions(guildId);
+      }
+    }
     cResult[8] = guildId;
-    cResult[9] = fn3;
-    tmp16 = fn3;
+    cResult[9] = tmp16;
+    tmp15 = tmp16;
   } else {
-    tmp16 = cResult[9];
+    class N {
+      constructor() {
+        return GuildOnboardingMemberActionStore.getCompletedActions(guildId);
+      }
+    }
   }
   const tmpResult5 = tmp(tmp2[17]);
-  stateFromStores2 = tmpResult5.useStateFromStores(tmp14, tmp16);
+  stateFromStores2 = tmpResult5.useStateFromStores(tmp14, tmp15);
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    class N {
+      constructor() {
+        return GuildOnboardingMemberActionStore.getCompletedActions(guildId);
+      }
+    }
     const items4 = [GuildStore];
     cResult[10] = items4;
     tmp18 = items4;
   } else {
-    tmp18 = cResult[10];
+    class N {
+      constructor() {
+        return GuildOnboardingMemberActionStore.getCompletedActions(guildId);
+      }
+    }
   }
   if (cResult[11] !== guildId) {
-    class R {
+    class F {
       constructor() {
         return GuildStore.getGuild(guildId);
       }
     }
     cResult[11] = guildId;
-    cResult[12] = R;
-    tmp20 = R;
+    cResult[12] = F;
+    tmp19 = F;
   } else {
-    class R {
+    class F {
       constructor() {
         return GuildStore.getGuild(guildId);
       }
     }
   }
   const tmpResult6 = tmp(tmp2[17]);
-  const stateFromStores3 = tmpResult6.useStateFromStores(tmp18, tmp20);
+  const stateFromStores3 = tmpResult6.useStateFromStores(tmp18, tmp19);
   if (cResult[13] === stateFromStores1) {
-    class R {
+    class F {
       constructor() {
         return GuildStore.getGuild(guildId);
       }
     }
   }
-  class P {
+  class L {
     constructor() {
       let hasFlagResult = null == stateFromStores1;
       if (hasFlagResult) {
@@ -401,8 +449,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[13] = stateFromStores1;
   cResult[14] = guildId;
   cResult[15] = stateFromStores2;
-  cResult[16] = P;
-}) : ((guildId) => {
+  cResult[16] = L;
+}) : (function GuildOnboardingNewMemberActions(guildId) {
   let Icon;
   let Text;
   let Text2;
@@ -480,7 +528,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                   let flag;
                   const obj = { channelId: channelId.channelId, title: channelId.title, emoji: channelId.emoji, icon: channelId.icon, completed: flag };
                   flag = undefined;
-                  const tmp = closure_15;
+                  const tmp = authStore3;
                   const tmp2 = closure_18;
                   if (stateFromStores1 != null) {
                     flag = tmp3[channelId.channelId];

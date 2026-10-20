@@ -1,21 +1,19 @@
-// Module ID: 17529
-// Function ID: 17530
+// Module ID: 18144
+// Function ID: 18145
 // Name: CheckboxActionComponent
-// Dependencies: [19, 21, 7795, 38, 1985, 8952, 2]
+// Dependencies: [19, 21, 8245, 38, 1998, 12908, 2]
 
-// Module 17529 (CheckboxActionComponent)
+// Module 18144 (CheckboxActionComponent)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
-import Server from "Server" /* 1985 */;
-import ComponentStateContext from "ComponentStateContext" /* 7795 */;
-import Checkbox from "Checkbox" /* 8952 */;
+import Server from "Server" /* 1998 */;
+import ComponentStateContext from "ComponentStateContext" /* 8245 */;
+import Checkbox from "Checkbox" /* 12908 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let type;
-
 const jsx = Fragment.jsx;
-const memoResult = react.memo((type) => {
+const memoResult = react.memo(function CheckboxActionComponent(type) {
   type = type.type;
   let obj = ComponentStateContext;
   const componentStateContext = obj.useComponentStateContext();
@@ -55,7 +53,7 @@ const memoResult = react.memo((type) => {
     label: tmp11.label,
     description: tmp11.description,
     checked: memo,
-    onToggle(value) {
+    onToggle: function onChange(value) {
       const obj = { type, value };
       executeStateUpdate(obj);
     }

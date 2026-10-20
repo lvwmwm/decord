@@ -1,20 +1,20 @@
-// Module ID: 15030
-// Function ID: 15031
+// Module ID: 15510
+// Function ID: 15511
 // Name: GuildRoleSubscriptionsHooks
-// Dependencies: [5, 32, 19, 5436, 4502, 558, 576, 504, 6758, 5973, 15031, 15032, 11832, 1375, 2]
+// Dependencies: [5, 32, 19, 5757, 4743, 558, 576, 504, 6958, 6161, 15511, 15512, 11915, 1388, 2]
 // Exports: useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchSubscriptionsSettings, usePublishSubscriptionListing, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 15030 (GuildRoleSubscriptionsHooks)
+// Module 15510 (GuildRoleSubscriptionsHooks)
 import react2 from "react" /* 576 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4502 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6758 */;
-import useRequestDefault from "useRequest" /* 11832 */;
-import subscriptionUtils from "subscriptionUtils" /* 15032 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4743 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6958 */;
+import useRequestDefault from "useRequest" /* 11915 */;
+import subscriptionUtils from "subscriptionUtils" /* 15512 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let _require, c3, c7, closure_4, closure_5, dependencyMap, groupListingId, guild
 const FetchState = GuildRoleSubscriptionsStore2.FetchState;
 let closure_10 = [];
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchListingsForGuild(arg0, arg1) {
   let closure_0;
   let closure_3;
   let connected;
@@ -182,7 +182,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[14] = items2;
   tmp17 = items2;
   tmp16 = D;
-}) : ((arg0) => {
+}) : (function useFetchListingsForGuild(arg0) {
   let closure_0;
   let connected;
   let tmp5;
@@ -672,7 +672,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   let tmp = loading;
   let obj = loading(stateFromStoresArray[6]);
   const cResult = obj.c(12);
-  [loading, closure_1] = react.useState(false);
+  [loading, importDefault] = react.useState(false);
   const obj2 = react;
   if (cResult[0] !== arr) {
     const mapped = arr.map(tmp(tmp2[11]).getRoleSubscriptionPlanId);
@@ -726,29 +726,31 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
     }
     return tmp16;
   }
-  const fn2 = function v() {
-    const tmp = !first && stateFromStoresArray.length > 0;
-    if (tmp) {
-      closure_1(true);
-      const allPromises = Promise.all(stateFromStoresArray.map((item) => {
-        const obj = closure_1_2(stateFromStoresArray[8]);
-        return obj.fetchSubscriptionListingForPlan(item);
-      }));
-      const catchPromise = allPromises.catch(() => {
+  class F {
+    constructor() {
+      const tmp = !first && stateFromStoresArray.length > 0;
+      if (tmp) {
+        closure_1(true);
+        const allPromises = Promise.all(stateFromStoresArray.map((item) => {
+          const obj = closure_1_2(stateFromStoresArray[8]);
+          return obj.fetchSubscriptionListingForPlan(item);
+        }));
+        const catchPromise = allPromises.catch(() => {
 
-      });
-      catchPromise.then(() => {
-        closure_1_1(false);
-      });
+        });
+        catchPromise.then(() => {
+          closure_1_1(false);
+        });
+      }
     }
-  };
+  }
   const items2 = [loading, stateFromStoresArray];
   cResult[6] = loading;
   cResult[7] = stateFromStoresArray;
-  cResult[8] = fn2;
+  cResult[8] = F;
   cResult[9] = items2;
   tmp14 = items2;
-  tmp13 = fn2;
+  tmp13 = F;
 }) : ((arg0) => {
   let closure_0;
   let closure_2;
@@ -1343,7 +1345,7 @@ export const usePublishSubscriptionListing = function usePublishSubscriptionList
                 ({ guildId: c0, groupListingId: c1, listingId: c2 } = closure_0);
                 c5 = 1;
                 c6 = 1;
-                return { value: "Reflect", done: null };
+                return { value: "Set", done: true };
               }
             } else if (1 === c5) {
               if (arg0 === 1) {

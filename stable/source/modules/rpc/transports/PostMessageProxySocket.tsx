@@ -1,26 +1,27 @@
-// Module ID: 9035
-// Function ID: 9036
+// Module ID: 10950
+// Function ID: 10951
 // Name: PostMessageProxySocket
-// Dependencies: [1085, 9036, 9026, 9025, 2]
+// Dependencies: [1085, 10951, 10937, 10936, 2]
 
-// Module 9035 (PostMessageProxySocket)
+// Module 10950 (PostMessageProxySocket)
 import Constants from "Constants" /* 1085 */;
-import RPCOpcodesDefault from "RPCOpcodes" /* 9025 */;
-import RPCErrorDefault from "RPCError" /* 9026 */;
-import BaseSocket from "BaseSocket" /* 9036 */;
+import RPCOpcodesDefault from "RPCOpcodes" /* 10936 */;
+import RPCErrorDefault from "RPCError" /* 10937 */;
+import BaseSocket from "BaseSocket" /* 10951 */;
 import size from "module_2" /* 2 */;
 
 const RPCCloseCodes = Constants.RPCCloseCodes;
 class WindowProxySocket extends BaseSocket {
   constructor(source) {
+    let context;
     let encoding;
     let logger;
     let onSendingToRPCClient;
     let postClose;
     let postMessageToRPCClient;
-    ({ postMessageToRPCClient, encoding, logger } = source);
+    ({ context, postMessageToRPCClient, encoding, logger } = source);
     ({ postClose, onSendingToRPCClient } = source);
-    const tmp3 = new WindowProxySocket(source.source, source.version, encoding, tmp2, tmp, new.target, this, postMessageToRPCClient, logger);
+    const tmp3 = new WindowProxySocket(source.source, source.version, encoding, tmp2, tmp, new.target, this, context, postMessageToRPCClient, logger);
     const items = ["etf", "json"];
     if (-1 === items.indexOf(encoding)) {
       const _HermesInternal = HermesInternal;
@@ -37,6 +38,7 @@ class WindowProxySocket extends BaseSocket {
       const tmp9 = new RPCErrorDefault(obj, "Erlpack cannot be used on this client");
       throw tmp9;
     } else {
+      tmp3.context = context;
       tmp3.postMessageToRPCClient = postMessageToRPCClient;
       tmp3.logger = logger;
       tmp3.postClose = postClose;

@@ -1,27 +1,25 @@
-// Module ID: 16881
-// Function ID: 16882
+// Module ID: 17470
+// Function ID: 17471
 // Name: BaseMessagesScreen
-// Dependencies: [19, 6784, 11967, 7512, 21, 11982, 558, 576, 11968, 504, 16870, 16882, 11966, 16883, 16884, 11989, 16808, 16820, 2]
+// Dependencies: [19, 6062, 12052, 9307, 21, 12059, 558, 576, 12045, 504, 17459, 17471, 12038, 17472, 17473, 12043, 17391, 17403, 2]
 // Exports: trackMessageItemPress
 
-// Module 16881 (BaseMessagesScreen)
+// Module 17470 (BaseMessagesScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 7512 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11966 */;
-import SearchUtils from "SearchUtils" /* 11968 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11982 */;
-import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 16883 */;
+import TrackingConstants from "TrackingConstants" /* 9307 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12038 */;
+import SearchUtils from "SearchUtils" /* 12045 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12059 */;
+import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 17472 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6784 */;
-import SearchQueryStore from "SearchQueryStore" /* 11967 */;
+import SearchMessageStore from "SearchMessageStore" /* 6062 */;
+import SearchQueryStore from "SearchQueryStore" /* 12052 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tab;
-
 const constants = TrackingConstants.SearchResultContentEntityTypes;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessagesScreen(tab) {
   let ItemSeparatorComponent;
   let contentContainerStyle;
   let data;
@@ -299,7 +297,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
   cResult[2] = tab;
   cResult[3] = fn;
   tmp8 = fn;
-}) : ((tab) => {
+}) : (function BaseMessagesScreen(tab) {
   let ItemSeparatorComponent;
   let contentContainerStyle;
   let data;

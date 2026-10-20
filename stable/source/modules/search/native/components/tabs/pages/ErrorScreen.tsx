@@ -1,28 +1,26 @@
-// Module ID: 16808
-// Function ID: 16809
+// Module ID: 17391
+// Function ID: 17392
 // Name: ErrorScreen
-// Dependencies: [19, 17, 21, 4890, 558, 576, 6471, 4590, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 6665, 4828, 5088, 2]
 
-// Module 16808 (ErrorScreen)
+// Module 17391 (ErrorScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4590 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6471 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let text;
-
 let tmp;
-const Text_Text = tmp(4886);
+const Text_Text = tmp(5088);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ container: { justifyContent: "center", alignItems: "center", height: "100%", display: "flex" }, text: { textAlign: "center", width: "75%" } });
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ErrorScreen(text) {
   let first;
   let tmp6;
   let tmp7;
@@ -98,7 +96,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((text) =
   cResult[7] = tmp9;
   cResult[8] = items1;
   tmp10 = items1;
-}) : ((text) => {
+}) : (function ErrorScreen(text) {
   text = text.text;
   require = text;
   const tmp = closure_6();

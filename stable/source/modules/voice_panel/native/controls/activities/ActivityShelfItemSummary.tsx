@@ -1,21 +1,21 @@
-// Module ID: 17288
-// Function ID: 17289
+// Module ID: 17883
+// Function ID: 17884
 // Name: ActivityShelfItemSummary
-// Dependencies: [32, 19, 17, 21, 4890, 587, 4727, 558, 576, 17289, 9738, 1188, 5603, 4886, 5609, 4612, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 4967, 558, 576, 17884, 10724, 1200, 5389, 5088, 5395, 4850, 2]
 
-// Module 17288 (ActivityShelfItemSummary)
+// Module 17883 (ActivityShelfItemSummary)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ButtonPill from "ButtonPill" /* 5603 */;
-import useActivityUsersDefault from "useActivityUsers" /* 17289 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ButtonPill from "ButtonPill" /* 5389 */;
+import useActivityUsersDefault from "useActivityUsers" /* 17884 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import ColorUtils_mod from "ColorUtils" /* 4727 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import ColorUtils_mod from "ColorUtils" /* 4967 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,9 +27,9 @@ let obj3;
 let tmp;
 let tmp2;
 let tmp4;
-const native = tmp(1188);
-const ButtonEllipsis = tmp2(5609);
-const UserSummaryItemDefault = tmp4(9738);
+const native = tmp(1200);
+const ButtonEllipsis = tmp2(5395);
+const UserSummaryItemDefault = tmp4(10724);
 let View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -40,7 +40,7 @@ ColorUtils = ColorUtils_mod;
 obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParticipantsSummary(arg0) {
   let applicationId;
   let channelId;
   let tmp6;
@@ -71,7 +71,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8 = cResult[3];
   }
   return tmp8;
-}) : ((arg0) => {
+}) : (function ParticipantsSummary(arg0) {
   let applicationId;
   let channelId;
   ({ applicationId, channelId } = arg0);
@@ -80,7 +80,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return hasOwnProperty(tmp2, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShelfItemSummary(arg0) {
   let applicationId;
   let applicationName;
   let channelId;
@@ -106,7 +106,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp10 = cResult[5];
       }
       if (cResult[6] !== (undefined !== submitting && submitting)) {
-        const tmp12 = tmp4 && hasOwnProperty(tmp(5609).Ellipsis, { variant: "active", size: "md" });
+        const tmp12 = tmp4 && hasOwnProperty(tmp(5395).Ellipsis, { variant: "active", size: "md" });
         cResult[6] = undefined !== submitting && submitting;
         cResult[7] = tmp12;
         tmp11 = tmp12;
@@ -182,7 +182,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp7;
   cResult[2] = tmp9;
   tmp8 = tmp9;
-}) : ((submitting) => {
+}) : (function ActivityShelfItemSummary(submitting) {
   let applicationId;
   let applicationName;
   let channelId;

@@ -1,12 +1,12 @@
-// Module ID: 7675
-// Function ID: 7676
+// Module ID: 8029
+// Function ID: 8030
 // Name: useGuildPowerupsBoostLevelProgress
-// Dependencies: [2074, 1085, 7671, 558, 576, 504, 2]
+// Dependencies: [2087, 1085, 8025, 558, 576, 504, 2]
 // Exports: getGuildPowerupBoostLevelProgress
 
-// Module 7675 (useGuildPowerupsBoostLevelProgress)
-import useGuildPowerupsBoostCount from "useGuildPowerupsBoostCount" /* 7671 */;
-import GuildStore from "GuildStore" /* 2074 */;
+// Module 8029 (useGuildPowerupsBoostLevelProgress)
+import useGuildPowerupsBoostCount from "useGuildPowerupsBoostCount" /* 8025 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: closure_4, BoostedGuildTiers: hasOwnProperty, GuildFeatures: metroRequire } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowerupBoostLevelProgress(arg0) {
   let closure_0;
   let first;
   let tmp11;
@@ -64,7 +64,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = cResult[3];
   }
   if (cResult[4] !== arg0) {
-    class G {
+    class P {
       constructor() {
         const guild = GuildStore.getGuild(closure_0);
         let hasItem;
@@ -76,10 +76,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     cResult[4] = arg0;
-    cResult[5] = G;
-    tmp11 = G;
+    cResult[5] = P;
+    tmp11 = P;
   } else {
-    class G {
+    class P {
       constructor() {
         const guild = GuildStore.getGuild(closure_0);
         let hasItem;
@@ -94,7 +94,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let num7 = 0;
   const tmpResult2 = require("get initialized");
   if (!tmpResult2.useStateFromStores(tmp9, tmp11)) {
-    class G {
+    class P {
       constructor() {
         const guild = GuildStore.getGuild(closure_0);
         let hasItem;
@@ -108,7 +108,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num7 = closure_4[stateFromStores];
   }
   return num7 + tmp4.available;
-}) : ((arg0) => {
+}) : (function useGuildPowerupBoostLevelProgress(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore];

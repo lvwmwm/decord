@@ -1,18 +1,18 @@
-// Module ID: 6930
-// Function ID: 6931
+// Module ID: 7144
+// Function ID: 7145
 // Name: NativeCheckoutStore
-// Dependencies: [5, 32, 19, 6931, 4869, 6934, 558, 4492, 1254, 6935, 12, 6745, 4543, 6936, 2]
+// Dependencies: [5, 32, 19, 7145, 5071, 7148, 558, 4733, 1267, 7149, 12, 6945, 4784, 7150, 2]
 // Exports: createNativeStore, useNativeCheckoutStoreOrNull
 
-// Module 6930 (NativeCheckoutStore)
-import _mod1254 from "module_1254" /* 1254 */;
-import _slicedToArray2 from "_slicedToArray" /* 4492 */;
-import PaymentConstants from "PaymentConstants" /* 4869 */;
-import ContextUtilsDefault from "ContextUtils" /* 6934 */;
+// Module 7144 (NativeCheckoutStore)
+import _mod1267 from "module_1267" /* 1267 */;
+import _slicedToArray2 from "_slicedToArray" /* 4733 */;
+import PaymentConstants from "PaymentConstants" /* 5071 */;
+import ContextUtilsDefault from "ContextUtils" /* 7148 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import OrderRecord from "OrderRecord" /* 6931 */;
+import OrderRecord from "OrderRecord" /* 7145 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,19 +23,19 @@ let first;
 const OrderStatus = PaymentConstants.OrderStatus;
 [first, closure_7] = ContextUtilsDefault();
 let context = react.createContext("unset_context");
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult, shallow) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeCheckoutStore(cResult, shallow) {
   if (undefined === shallow) {
     shallow = _slicedToArray2.shallow;
   }
   const tmp3 = closure_7();
-  const obj = _mod1254;
+  const obj = _mod1267;
   return obj.useStoreWithEqualityFn(tmp3, cResult, shallow);
-}) : ((cResult, shallow) => {
+}) : (function useNativeCheckoutStore(cResult, shallow) {
   if (shallow === undefined) {
     shallow = _slicedToArray2.shallow;
   }
   const tmp3 = closure_7();
-  const obj = _mod1254;
+  const obj = _mod1267;
   return obj.useStoreWithEqualityFn(tmp3, cResult, shallow);
 });
 let result = size.fileFinishedImporting("modules/checkout/native/NativeCheckoutStore.tsx");
@@ -49,14 +49,14 @@ export const useNativeCheckoutStoreOrNull = function useNativeCheckoutStoreOrNul
   context = react.useContext(context);
   let storeWithEqualityFn = null;
   if ("unset_context" !== context) {
-    const obj = _mod1254;
+    const obj = _mod1267;
     storeWithEqualityFn = obj.useStoreWithEqualityFn(context, cResult, shallow);
   }
   return storeWithEqualityFn;
 };
 export const createNativeStore = function createNativeStore(arg0) {
   ({ order: require, checkoutInitParameters: importDefault, contextMetadata: dependencyMap, analyticsFields: _asyncToGenerator, paymentGateway: react, orderRequired: OrderRecord, onOrderRetryCancellation: OrderStatus, initialSubscriptionFacet: closure_7 } = arg0);
-  let obj = _mod1254;
+  let obj = _mod1267;
   return obj.createWithEqualityFn((arg0, arg1) => {
     let tmp;
     let closure_0 = arg0;
@@ -370,14 +370,14 @@ export const createNativeStore = function createNativeStore(arg0) {
         return prop;
       },
       isPatchOrderLoading: false,
-      patchOrderLineItems: function() {
+      patchOrderLineItems() {
         return closure_10(...arguments);
       },
       isCreateOrderLoading: false,
-      recreateOrder: function() {
+      recreateOrder() {
         return closure_9(...arguments);
       },
-      revertOrderToDraft: function() {
+      revertOrderToDraft() {
         return closure_8(...arguments);
       },
       checkoutInitParameters,

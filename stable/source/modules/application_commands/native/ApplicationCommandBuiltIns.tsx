@@ -1,17 +1,17 @@
-// Module ID: 8807
-// Function ID: 8808
+// Module ID: 9253
+// Function ID: 9254
 // Name: application_commands/ApplicationCommandBuiltIns
-// Dependencies: [4519, 1377, 5788, 1985, 7034, 1126, 5043, 5707, 4903, 6965, 2]
+// Dependencies: [4760, 1390, 5403, 1998, 7242, 1126, 5421, 5299, 7015, 7174, 2]
 
-// Module 8807 (application_commands/ApplicationCommandBuiltIns)
-import Server from "Server" /* 1985 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5788 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6965 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7034 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserStore from "UserStore" /* 1377 */;
+// Module 9253 (application_commands/ApplicationCommandBuiltIns)
+import Server from "Server" /* 1998 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5403 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7242 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,7 +34,7 @@ let obj = {
     let intl4;
     channel = channel.channel;
     if (null != channel) {
-      const obj4 = channel(5043);
+      const obj4 = channel(5421);
       const channelName = obj4.computeChannelName(channel, UserStore, RelationshipStore);
       const intl5 = channel(1126).intl;
       const obj2 = { name: channelName };

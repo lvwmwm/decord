@@ -1,19 +1,19 @@
-// Module ID: 15314
-// Function ID: 15315
+// Module ID: 15794
+// Function ID: 15795
 // Name: CustomStatusNotificationSettings
-// Dependencies: [7634, 1085, 4522, 2028, 1197, 1252, 558, 11129, 1126, 2]
+// Dependencies: [7988, 1085, 4763, 2041, 1209, 1265, 558, 10664, 1126, 2]
 // Exports: onChange
 
-// Module 15314 (CustomStatusNotificationSettings)
+// Module 15794 (CustomStatusNotificationSettings)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import NotificationConstants from "NotificationConstants" /* 4522 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import NotificationConstants from "NotificationConstants" /* 4763 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 function onChange(custom_status_push_notifications) {
@@ -40,7 +40,7 @@ let obj = {
     return intl.string(intl2.t["/+OQEs"]);
   },
   parent: MobileUserSettings.NOTIFICATIONS,
-  useValue: () => {
+  useValue() {
     const CustomStatusPushNotifications = UserSettings.CustomStatusPushNotifications;
     const setting = CustomStatusPushNotifications.useSetting();
     return setting !== preloaded_user_settings.CustomStatusPushNotificationType.STATUS_PUSH_DISABLED;

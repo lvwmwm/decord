@@ -1,20 +1,20 @@
-// Module ID: 17264
-// Function ID: 17265
+// Module ID: 17859
+// Function ID: 17860
 // Name: VoicePanelConsoleFacepile
-// Dependencies: [19, 1085, 21, 4890, 587, 9463, 1126, 558, 576, 9444, 1375, 5976, 1188, 2]
+// Dependencies: [19, 1085, 21, 5092, 587, 13032, 1126, 558, 576, 11110, 1388, 6162, 1200, 2]
 
-// Module 17264 (VoicePanelConsoleFacepile)
+// Module 17859 (VoicePanelConsoleFacepile)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import NativeViewDefault from "NativeView" /* 5976 */;
-import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 9444 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 9463 */;
+import native from "native" /* 1200 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import NativeViewDefault from "NativeView" /* 6162 */;
+import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 11110 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 13032 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ obj2 = { borderRadius: nativeDefault.radii.round, padding: 8, margin: -3, border
 createStyles = createStyles.createStyles;
 ({ tintColor: nativeDefault.colors.WHITE });
 let closure_6 = createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelConsoleFacepile() {
   let closure_0;
   let tmp5;
   const tmp = _require;
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const arr = useGameConsoleAccountsDefault();
   if (cResult[0] !== arr) {
     const mapped = arr.map(getConsoleInfo);
-    const found = mapped.filter(tmp(1375).isNotNullish);
+    const found = mapped.filter(tmp(1388).isNotNullish);
     cResult[0] = arr;
     cResult[1] = found;
     tmp5 = found;
@@ -80,7 +80,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       return tmp9;
     }
-    const tmp11 = jsx(tmp(1188).SummarizedIconRow, { items: tmp5, renderItem: tmp8, offsetAmount: -3 });
+    const tmp11 = jsx(tmp(1200).SummarizedIconRow, { items: tmp5, renderItem: tmp8, offsetAmount: -3 });
     cResult[5] = tmp5;
     cResult[6] = tmp8;
     cResult[7] = tmp11;
@@ -97,7 +97,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp4.consoleIconContainer;
   cResult[4] = fn;
   tmp8 = fn;
-}) : (() => {
+}) : (function VoicePanelConsoleFacepile() {
   let closure_0;
   let closure_1;
   const tmp = closure_6();

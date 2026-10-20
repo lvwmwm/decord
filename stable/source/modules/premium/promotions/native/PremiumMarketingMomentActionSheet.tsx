@@ -1,24 +1,24 @@
-// Module ID: 17112
-// Function ID: 17113
+// Module ID: 17703
+// Function ID: 17704
 // Name: PremiumMarketingMomentActionSheet
-// Dependencies: [19, 17, 4879, 1085, 2048, 21, 4890, 587, 558, 576, 504, 6657, 584, 13232, 1260, 10470, 8422, 13235, 7243, 7983, 5974, 4886, 4565, 1126, 9648, 6645, 2]
+// Dependencies: [19, 17, 5081, 1085, 2062, 21, 5092, 587, 558, 576, 504, 6852, 584, 13720, 1273, 10096, 8967, 13723, 7755, 8421, 6157, 5088, 4806, 1126, 9778, 6840, 2]
 
-// Module 17112 (PremiumMarketingMomentActionSheet)
+// Module 17703 (PremiumMarketingMomentActionSheet)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import LinkingDefault from "Linking" /* 4565 */;
-import PremiumMarketingButtonActions from "PremiumMarketingButtonActions" /* 13232 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import LinkingDefault from "Linking" /* 4806 */;
+import PremiumMarketingButtonActions from "PremiumMarketingButtonActions" /* 13720 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, markAsDismissed;
+let BottomSheet;
 
 let c9;
 let metroImportAll;
@@ -40,7 +40,7 @@ obj3 = { marginBottom: nativeDefault.space.PX_8, textAlign: "center" };
 size1 = { height: 188, width: 335, borderRadius: nativeDefault.radii.md, marginBottom: nativeDefault.space.PX_24 };
 obj4 = { borderRadius: nativeDefault.radii.md, marginBottom: nativeDefault.space.PX_24 };
 let closure_10 = createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarketingMomentActionSheet(markAsDismissed) {
   let button3;
   let button4;
   let closure_4;
@@ -50,7 +50,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   let tmp5;
   let tmp6;
   let obj = markAsDismissed(promotionId[9]);
-  const cResult = obj.c(58);
+  const cResult = obj.c(50);
   markAsDismissed = markAsDismissed.markAsDismissed;
   const bottomSheetData = markAsDismissed.bottomSheetData;
   ({ componentId, promotionId } = markAsDismissed);
@@ -173,7 +173,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
     cResult[8] = tmp9;
     cResult[9] = fn2;
   }
-  class T {
+  class S {
     constructor(arg0) {
       markAsDismissed(arg0);
       const obj = DispatcherDefault;
@@ -183,16 +183,12 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   }
   cResult[2] = markAsDismissed;
   cResult[3] = promotionId;
-  cResult[4] = T;
-  tmp9 = T;
-}) : ((markAsDismissed) => {
+  cResult[4] = S;
+  tmp9 = S;
+}) : (function PremiumMarketingMomentActionSheet(markAsDismissed) {
   let copy;
   let items4;
   let items5;
-  let items6;
-  let items7;
-  let items8;
-  let items9;
   let obj10;
   let obj6;
   let obj8;
@@ -266,8 +262,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   const tmp2Result = markAsDismissed(tmp3[17]);
   helpArticleLinkProps = tmp2Result.getHelpArticleLinkProps(bottomSheetData.helpArticle, bottomSheetData.helpArticleId);
   const obj5 = { onDismiss: callback2, children: closure_9(callback, obj6) };
-  obj6 = { style: items4, children: items5 };
-  items4 = [tmp.container];
+  obj6 = { style: tmp.container, children: items4 };
   BottomSheet = tmp2(tmp3[25]).BottomSheet;
   const obj7 = { uri: bottomSheetData.assetUrl };
   const tmp2Result2 = markAsDismissed(tmp3[18]);
@@ -281,13 +276,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
     obj10 = { uri: bottomSheetData.assetUrl };
     tmp14Result = tmp14(tmp5(tmp3[20]), obj9);
   }
-  items5 = [tmp14Result, , , ];
-  const obj11 = { style: items6, color: "mobile-text-heading-primary", variant: "heading-lg/extrabold", children: bottomSheetData.header };
-  items6 = [tmp.header];
-  items5[1] = closure_8(markAsDismissed(tmp3[21]).Text, obj11);
-  const obj12 = { style: items7, color: "text-default", variant: "text-sm/normal", children: items8 };
-  items7 = [tmp.body];
-  items8 = [bottomSheetData.body, " ", ];
+  items4 = [tmp14Result, , , ];
+  const obj11 = { style: tmp.header, color: "mobile-text-heading-primary", variant: "heading-lg/extrabold", children: bottomSheetData.header };
+  items4[1] = closure_8(markAsDismissed(tmp3[21]).Text, obj11);
+  const obj12 = { style: tmp.body, color: "text-default", variant: "text-sm/normal", children: items5 };
+  items5 = [bottomSheetData.body, " ", ];
   let tmp14Result2 = null != helpArticleLinkProps;
   const Text = tmp2(tmp3[21]).Text;
   if (tmp14Result2) {
@@ -303,11 +296,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
     };
     tmp14Result2 = tmp14(tmp2(tmp3[21]).Text, obj14);
   }
-  items8[2] = tmp14Result2;
-  items5[2] = closure_9(Text, obj12);
-  const obj15 = { style: items9, children: closure_8(tmp5Result2, { text: copy, onPress: callback1 }) };
-  items9 = [tmp.buttonContainer];
+  items5[2] = tmp14Result2;
+  items4[2] = closure_9(Text, obj12);
   const button3 = bottomSheetData.button;
+  const obj15 = { style: tmp.buttonContainer, children: closure_8(tmp5Result2, { text: copy, onPress: callback1 }) };
   copy = undefined;
   tmp5Result2 = bottomSheetData(tmp3[24]);
   if (button3 != null) {
@@ -317,7 +309,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
     const intl = tmp2(tmp3[23]).intl;
     copy = intl.string(tmp2(tmp3[23]).t.J61px0);
   }
-  items5[3] = closure_8(callback, obj15);
+  items4[3] = closure_8(callback, obj15);
   return closure_8(BottomSheet, obj5);
 });
 size = size_mod;

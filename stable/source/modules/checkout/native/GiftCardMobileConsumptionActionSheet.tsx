@@ -1,22 +1,22 @@
-// Module ID: 6895
-// Function ID: 6896
+// Module ID: 7104
+// Function ID: 7105
 // Name: GiftCardMobileConsumptionActionSheet
-// Dependencies: [19, 17, 2048, 21, 4890, 587, 558, 576, 1618, 4854, 6896, 1126, 2259, 4886, 5594, 5593, 6645, 2]
+// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 1631, 5056, 7105, 1126, 2274, 5088, 5379, 5377, 6840, 2]
 
-// Module 6895 (GiftCardMobileConsumptionActionSheet)
+// Module 7104 (GiftCardMobileConsumptionActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import _modDef2259 from "module_2259" /* 2259 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import _modDef2274 from "module_2274" /* 2274 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, dependencyMap, importDefault, markAsDismissed;
+let BottomSheet, dependencyMap, importDefault;
 
 let metroImportDefault;
 let metroRequire;
@@ -34,7 +34,7 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj4 = { alignSelf: "stretch", alignItems: "center", paddingTop: nativeDefault.space.PX_12 };
 let closure_8 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
   let closure_2;
   let closure_3;
   let items2;
@@ -109,177 +109,177 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   }
   react = tmp13;
   if (cResult[7] !== tmp13) {
-    class S {
+    class A {
       constructor() {
-        closure_2.current = markAsDismissed;
+        return tmp14(ContentDismissActionType.USER_DISMISS);
       }
     }
     cResult[7] = tmp13;
-    cResult[8] = tmp16;
+    cResult[8] = A;
   } else {
-    class S {
+    class A {
       constructor() {
-        closure_2.current = markAsDismissed;
+        return tmp14(ContentDismissActionType.USER_DISMISS);
       }
     }
   }
   if (cResult[9] !== bottom) {
-    class S {
+    class A {
       constructor() {
-        closure_2.current = markAsDismissed;
+        return tmp14(ContentDismissActionType.USER_DISMISS);
       }
     }
-    tmp18[0] = bottom;
+    tmp17[0] = bottom;
     cResult[9] = bottom;
-    cResult[10] = tmp18;
+    cResult[10] = tmp17;
   } else {
-    class S {
+    class A {
       constructor() {
-        closure_2.current = markAsDismissed;
+        return tmp14(ContentDismissActionType.USER_DISMISS);
       }
     }
   }
   if (cResult[11] === tmp4.container) {
-    let tmp19;
-    let tmp24;
-    let tmp28;
-    class S {
+    let tmp18;
+    let tmp23;
+    let tmp27;
+    class A {
       constructor() {
-        closure_2.current = markAsDismissed;
+        return tmp14(ContentDismissActionType.USER_DISMISS);
       }
     }
     const _Symbol = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      class S {
+      class A {
         constructor() {
-          closure_2.current = markAsDismissed;
+          return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
-      const tmp20 = closure_6(tmp(6896).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 });
-      cResult[14] = tmp20;
-      tmp19 = tmp20;
+      const tmp19 = closure_6(tmp(7105).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 });
+      cResult[14] = tmp19;
+      tmp18 = tmp19;
     } else {
-      class S {
+      class A {
         constructor() {
-          closure_2.current = markAsDismissed;
+          return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
     }
     if (cResult[15] !== tmp4.illustration) {
-      class S {
+      class A {
         constructor() {
-          closure_2.current = markAsDismissed;
+          return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
-      const obj3 = { style: tmp4.illustration, children: tmp19 };
+      const obj3 = { style: tmp4.illustration, children: tmp18 };
       cResult[15] = tmp4.illustration;
       cResult[16] = closure_6(View, obj3);
-      const tmp23 = closure_6(View, obj3);
+      const tmp22 = closure_6(View, obj3);
     } else {
-      class S {
+      class A {
         constructor() {
-          closure_2.current = markAsDismissed;
+          return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
     }
     const _Symbol2 = Symbol;
     const body = tmp4.body;
     if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      class S {
+      class A {
         constructor() {
-          closure_2.current = markAsDismissed;
+          return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
-      const stringResult = obj4.string(_modDef2259.V3DI1E);
+      const stringResult = obj4.string(_modDef2274.V3DI1E);
       cResult[17] = stringResult;
-      tmp24 = stringResult;
+      tmp23 = stringResult;
     } else {
-      class S {
+      class A {
         constructor() {
-          closure_2.current = markAsDismissed;
+          return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
     }
     if (cResult[18] !== tmp4.body) {
-      class S {
+      class A {
         constructor() {
-          closure_2.current = markAsDismissed;
+          return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
-      const obj5 = { variant: "text-md/medium", color: "text-default", style: body, children: tmp24 };
+      const obj5 = { variant: "text-md/medium", color: "text-default", style: body, children: tmp23 };
       cResult[18] = tmp4.body;
-      cResult[19] = closure_6(tmp(4886).Text, obj5);
-      const tmp27 = closure_6(tmp(4886).Text, obj5);
+      cResult[19] = closure_6(tmp(5088).Text, obj5);
+      const tmp26 = closure_6(tmp(5088).Text, obj5);
     } else {
-      class S {
+      class A {
         constructor() {
-          closure_2.current = markAsDismissed;
+          return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
     }
     const _Symbol3 = Symbol;
     if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-      class S {
+      class A {
         constructor() {
-          closure_2.current = markAsDismissed;
+          return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
-      const stringResult1 = obj6.string(_modDef2259.YZePWx);
+      const stringResult1 = obj6.string(_modDef2274.YZePWx);
       cResult[20] = stringResult1;
-      tmp28 = stringResult1;
+      tmp27 = stringResult1;
     } else {
-      class S {
+      class A {
         constructor() {
-          closure_2.current = markAsDismissed;
+          return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
     }
     if (cResult[21] !== tmp13) {
-      class S {
+      class A {
         constructor() {
-          closure_2.current = markAsDismissed;
+          return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
       const obj7 = {
         size: "lg",
         variant: "secondary",
         grow: true,
-        text: tmp28,
+        text: tmp27,
         onPress() {
               return tmp14(ContentDismissActionType.USER_DISMISS);
             }
       };
       cResult[21] = tmp13;
-      cResult[22] = closure_6(tmp(5594).Button, obj7);
-      const tmp31 = closure_6(tmp(5594).Button, obj7);
+      cResult[22] = closure_6(tmp(5379).Button, obj7);
+      const tmp30 = closure_6(tmp(5379).Button, obj7);
     } else {
-      class S {
+      class A {
         constructor() {
-          closure_2.current = markAsDismissed;
+          return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
     }
-    if (cResult[23] === tmp21) {
-      class S {
+    if (cResult[23] === tmp20) {
+      class A {
         constructor() {
-          closure_2.current = markAsDismissed;
+          return tmp14(ContentDismissActionType.USER_DISMISS);
         }
       }
     }
     const obj8 = { spacing: nativeDefault.space.PX_16, children: items2 };
-    const Stack = tmp(5593).Stack;
-    items2 = [tmp21, tmp26, tmp30];
-    cResult[23] = tmp21;
-    cResult[24] = tmp26;
-    cResult[25] = tmp30;
+    const Stack = tmp(5377).Stack;
+    items2 = [tmp20, tmp25, tmp29];
+    cResult[23] = tmp20;
+    cResult[24] = tmp25;
+    cResult[25] = tmp29;
     cResult[26] = closure_7(Stack, obj8);
-    const tmp34 = closure_7(Stack, obj8);
+    const tmp33 = closure_7(Stack, obj8);
   }
-  const items3 = [tmp4.container, tmp17];
+  const items3 = [tmp4.container, tmp16];
   cResult[11] = tmp4.container;
-  cResult[12] = tmp17;
+  cResult[12] = tmp16;
   cResult[13] = items3;
-}) : ((markAsDismissed) => {
+}) : (function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
   let Stack;
   let closure_2;
   let closure_3;
@@ -327,26 +327,26 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   };
   obj2 = { style: items2, children: closure_7(Stack, obj3) };
   items2 = [tmp.container, { paddingBottom: bottom }];
-  BottomSheet = markAsDismissed(6645).BottomSheet;
+  BottomSheet = markAsDismissed(6840).BottomSheet;
   obj3 = { spacing: nativeDefault.space.PX_16, children: items3 };
-  Stack = markAsDismissed(5593).Stack;
+  Stack = markAsDismissed(5377).Stack;
   items3 = [, , ];
-  const obj4 = { style: tmp.illustration, children: closure_6(markAsDismissed(6896).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) };
+  const obj4 = { style: tmp.illustration, children: closure_6(markAsDismissed(7105).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) };
   items3[0] = closure_6(View, obj4);
-  const obj5 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: intl.string(_modDef2259.V3DI1E) };
-  const Text = markAsDismissed(4886).Text;
+  const obj5 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: intl.string(_modDef2274.V3DI1E) };
+  const Text = markAsDismissed(5088).Text;
   intl = markAsDismissed(1126).intl;
   items3[1] = closure_6(Text, obj5);
   const obj6 = {
     size: "lg",
     variant: "secondary",
     grow: true,
-    text: intl2.string(_modDef2259.YZePWx),
+    text: intl2.string(_modDef2274.YZePWx),
     onPress() {
       return closure_3(ContentDismissActionType.USER_DISMISS);
     }
   };
-  const Button = markAsDismissed(5594).Button;
+  const Button = markAsDismissed(5379).Button;
   intl2 = markAsDismissed(1126).intl;
   items3[2] = closure_6(Button, obj6);
   return closure_6(BottomSheet, obj);

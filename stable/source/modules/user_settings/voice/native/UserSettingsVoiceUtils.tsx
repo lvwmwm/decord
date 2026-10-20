@@ -1,14 +1,14 @@
-// Module ID: 9673
-// Function ID: 9674
+// Module ID: 11090
+// Function ID: 11091
 // Name: UserSettingsVoiceUtils
-// Dependencies: [1999, 1085, 9306, 9674, 558, 576, 504, 2]
+// Dependencies: [2012, 1085, 5243, 11091, 558, 576, 504, 2]
 // Exports: getSelectedNoiseSuppressionOption, handleAutomaticGainControlChange, handleEchoCancellationChange, handleNoiseSuppressionChange
 
-// Module 9673 (UserSettingsVoiceUtils)
+// Module 11090 (UserSettingsVoiceUtils)
 import react from "react" /* 576 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9306 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 9674 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5243 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11091 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ let tmp;
 const get_initialized = tmp(504);
 ({ AnalyticsPages: closure_4, AnalyticsSections: hasOwnProperty } = Constants);
 const NoiseSuppressionOpt = { NONE: "NONE", STANDARD: "STANDARD", KRISP: "KRISP" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedNoiseSuppressionOption() {
   let tmp4;
   let tmp5;
   let obj = react;
@@ -47,7 +47,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useSelectedNoiseSuppressionOption() {
   let obj = get_initialized;
   const items = [MediaEngineStore];
   return obj.useStateFromStores(items, () => {

@@ -1,21 +1,21 @@
-// Module ID: 6766
-// Function ID: 6767
+// Module ID: 6966
+// Function ID: 6967
 // Name: useGuildShopPreviewVisible
-// Dependencies: [4509, 1085, 558, 576, 4698, 2036, 573, 6761, 2]
+// Dependencies: [4750, 1085, 558, 576, 4938, 2049, 573, 6961, 2]
 
-// Module 6766 (useGuildShopPreviewVisible)
-import PermissionStore from "PermissionStore" /* 4509 */;
+// Module 6966 (useGuildShopPreviewVisible)
+import PermissionStore from "PermissionStore" /* 4750 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, features;
+let _require;
 
 let c3;
 let closure_4;
 ({ Permissions: c3, GuildFeatures: closure_4 } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildShopPreviewVisible(features) {
   let first;
   let tmp11;
   let tmp19;
@@ -71,8 +71,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
     tmp11 = cResult[4];
   }
   let id;
-  const useGuildEligibleForGuildProducts = tmp(6761).useGuildEligibleForGuildProducts;
-  tmp(6761);
+  const useGuildEligibleForGuildProducts = tmp(6961).useGuildEligibleForGuildProducts;
+  tmp(6961);
   if (features != null) {
     id = features.id;
   }
@@ -104,7 +104,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
     tmp19 = cResult[6];
   }
   return null != features && stateFromStores && !tmp11 && tmp19 && guildEligibleForGuildProducts && !result;
-}) : ((features) => {
+}) : (function useGuildShopPreviewVisible(features) {
   _require = features;
   const tmp = _require;
   const obj = require("DismissibleContentUnsafeUtils");
@@ -124,8 +124,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((features) => {
     flag = false;
   }
   let id;
-  const useGuildEligibleForGuildProducts = tmp(6761).useGuildEligibleForGuildProducts;
-  tmp(6761);
+  const useGuildEligibleForGuildProducts = tmp(6961).useGuildEligibleForGuildProducts;
+  tmp(6961);
   if (features != null) {
     id = features.id;
   }

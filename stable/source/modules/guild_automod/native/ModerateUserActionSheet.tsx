@@ -1,34 +1,34 @@
-// Module ID: 11445
-// Function ID: 11446
+// Module ID: 11392
+// Function ID: 11393
 // Name: ModerateUserActionSheet
-// Dependencies: [19, 2112, 2074, 4509, 1377, 1085, 21, 4890, 504, 11446, 8926, 5042, 4854, 6697, 1126, 6883, 5093, 11447, 1987, 11444, 4496, 11465, 11451, 4837, 11467, 8956, 11469, 6645, 6644, 11471, 6074, 2]
+// Dependencies: [19, 2125, 2087, 4750, 1390, 1085, 21, 5092, 504, 11393, 11394, 5409, 5056, 6895, 1126, 7092, 5934, 11395, 2000, 11391, 4737, 11441, 11399, 5036, 11443, 11445, 11447, 6840, 6839, 11449, 6265, 2]
 
-// Module 11445 (ModerateUserActionSheet)
+// Module 11392 (ModerateUserActionSheet)
 import Constants from "Constants" /* 1085 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 8926 */;
-import GuildMemberUtils from "GuildMemberUtils" /* 11446 */;
-import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 11451 */;
-import showKickConfirmModalDefault from "showKickConfirmModal" /* 11467 */;
-import showBanConfirmModalDefault from "showBanConfirmModal" /* 11469 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import GuildMemberUtils from "GuildMemberUtils" /* 11393 */;
+import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 11394 */;
+import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 11399 */;
+import showKickConfirmModalDefault from "showKickConfirmModal" /* 11443 */;
+import showBanConfirmModalDefault from "showBanConfirmModal" /* 11447 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, user;
+let BottomSheet;
 
 let c10;
 let c9;
 const Permissions = Constants.Permissions;
 ({ jsx: c9, jsxs: c10 } = Fragment);
 let closure_11 = createStyles.createStyles({ container: { padding: 16, gap: 16 }, memberRoles: { justifyContent: "flex-start" } });
-const memoResult = react.memo((user) => {
+const memoResult = react.memo(function ModerateUserActionSheet(user) {
   let BottomSheetTitleHeader;
   let Icon;
   let Icon2;
@@ -41,7 +41,6 @@ const memoResult = react.memo((user) => {
   let intl4;
   let intl5;
   let items5;
-  let items6;
   let obj11;
   let obj12;
   let obj3;
@@ -132,7 +131,7 @@ const memoResult = react.memo((user) => {
                       arr.pop();
                     }
                   };
-                  obj.pushLazy(asyncRequire(11447, dependencyMap.paths), obj2);
+                  obj.pushLazy(asyncRequire(11395, dependencyMap.paths), obj2);
                 }
         };
         const ActionSheetRow = tmp2(tmp3[13]).ActionSheetRow;
@@ -229,15 +228,14 @@ const memoResult = react.memo((user) => {
         Icon4 = tmp2(tmp3[13]).ActionSheetRow.Icon;
         push4(closure_9(ActionSheetRow4, obj8));
       }
-      const obj10 = { header: closure_9(BottomSheetTitleHeader, obj11), bodyStyles: tmp.container, children: items6 };
+      const obj10 = { header: closure_9(BottomSheetTitleHeader, obj11), bodyStyles: tmp.container, children: items5 };
       BottomSheet = tmp2(tmp3[27]).BottomSheet;
       obj11 = { title: intl5.formatToPlainString(user(stateFromStores[14]).t["792QKT"], obj12) };
       BottomSheetTitleHeader = tmp2(tmp3[28]).BottomSheetTitleHeader;
       intl5 = tmp2(tmp3[14]).intl;
-      const obj13 = { style: items5, guild, userRoles: tmp5 };
-      items5 = [tmp.memberRoles];
       obj12 = { nick: name };
-      items6 = [closure_9(tmp26(tmp3[29]), obj13), ];
+      const obj13 = { style: tmp.memberRoles, guild, userRoles: tmp5 };
+      items5 = [closure_9(tmp26(tmp3[29]), obj13), ];
       const obj14 = {
         hasIcons: true,
         children: items4.map((children, index) => {
@@ -246,7 +244,7 @@ const memoResult = react.memo((user) => {
             })
       };
       const TableRowGroup = tmp2(tmp3[30]).TableRowGroup;
-      items6[1] = closure_9(TableRowGroup, obj14);
+      items5[1] = closure_9(TableRowGroup, obj14);
       return closure_10(BottomSheet, obj10);
     }
   }

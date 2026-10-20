@@ -17,10 +17,10 @@ class ReactNativeStartupTiming {
   constructor(arg0) {
     const self = this;
     _classCallCheck(this, ReactNativeStartupTiming);
-    Object.defineProperty(this, closure_2, { writable: true, value: "a" });
-    Object.defineProperty(this, closure_3, { writable: true, value: "a" });
-    Object.defineProperty(this, closure_4, { writable: true, value: "a" });
-    Object.defineProperty(this, closure_5, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_2, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_3, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_4, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_5, { writable: true, value: "Array" });
     if (null != arg0) {
       ({ startTime: _classPrivateFieldBase(undefined, self, tmp2)[tmp2], initializeRuntimeStart: _classPrivateFieldBase(undefined, self, tmp4)[tmp4], executeJavaScriptBundleEntryPointStart: _classPrivateFieldBase(undefined, self, tmp6)[tmp6], endTime: _classPrivateFieldBase(undefined, self, tmp8)[tmp8] } = arg0);
     }

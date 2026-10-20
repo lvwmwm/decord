@@ -1,25 +1,25 @@
-// Module ID: 14605
-// Function ID: 14606
+// Module ID: 15081
+// Function ID: 15082
 // Name: AccountBlockedUsersSetting
-// Dependencies: [4519, 7634, 1085, 558, 576, 504, 1126, 11129, 7588, 14606, 2]
+// Dependencies: [4760, 7988, 1085, 558, 576, 504, 1126, 10664, 9367, 15082, 2]
 
-// Module 14605 (AccountBlockedUsersSetting)
+// Module 15081 (AccountBlockedUsersSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import DenyIcon from "DenyIcon" /* 7588 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import DenyIcon from "DenyIcon" /* 9367 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountBlockedUsersSettingDescription() {
   let blockedIDs;
   let tmp4;
   let tmp5;
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [RelationshipStore];
-    const fn = function o() {
+    const fn = function s() {
       return "" + blockedIDs.getBlockedIDs().length;
     };
     cResult[0] = items;
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[3];
   }
   return tmp8;
-}) : (() => {
+}) : (function useAccountBlockedUsersSettingDescription() {
   let blockedIDs;
   const items = [RelationshipStore];
   const obj = get_initialized;

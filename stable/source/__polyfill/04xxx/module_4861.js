@@ -1,72 +1,52 @@
 // Module ID: 4861
 // Function ID: 4862
-// Dependencies: [19, 4858, 4862]
-// Exports: useHaptics
+// Dependencies: [4853]
+// Exports: getHybridObjectConstructor
 
 // Module 4861
-import react from "react" /* 19 */;
-import _modDef4858 from "module_4858" /* 4858 */;
+import installedNitro1 from "installedNitro1" /* 4853 */;
 
-const useMemo = react.useMemo;
+const map = new Map();
 
-export const useHaptics = function useHaptics(enableVibrateFallback) {
-  let closure_0 = enableVibrateFallback;
-  let prop;
-  if (enableVibrateFallback != null) {
-    prop = enableVibrateFallback.enableVibrateFallback;
-  }
-  let prop1;
-  if (enableVibrateFallback != null) {
-    prop1 = enableVibrateFallback.ignoreAndroidSystemSettings;
-  }
-  const items = [prop, prop1];
-  return useMemo(() => {
-    let obj = {
-      trigger(arg0, arg1) {
-        const trigger = _modDef4858.trigger;
-        const obj = {};
-        _modDef4858;
-        const merged = Object.assign(enableVibrateFallback);
-        const merged1 = Object.assign(arg1);
-        trigger(arg0, obj);
-      },
-      triggerPattern(arg0, arg1) {
-        const triggerPattern = _modDef4858.triggerPattern;
-        const obj = {};
-        _modDef4858;
-        const merged = Object.assign(enableVibrateFallback);
-        const merged1 = Object.assign(arg1);
-        triggerPattern(arg0, obj);
-      },
-      stop() {
-        const obj = closure_1_1(closure_1_2[1]);
-        obj.stop();
-      },
-      isSupported() {
-        const obj = closure_1_1(closure_1_2[1]);
-        return obj.isSupported();
-      },
-      playHaptic(arg0, arg1, arg2) {
-        const playHaptic = closure_0(dependencyMap[2]).playHaptic;
-        const obj = {};
-        closure_0(dependencyMap[2]);
-        const merged = Object.assign(closure_1_0);
-        const merged1 = Object.assign(arg2);
-        return playHaptic(arg0, arg1, obj);
-      },
-      impact(arg0, arg1, arg2) {
-        const impact = _modDef4858.impact;
-        const obj = {};
-        _modDef4858;
-        const merged = Object.assign(enableVibrateFallback);
-        const merged1 = Object.assign(arg2);
-        impact(arg0, arg1, obj);
-      },
-      setEnabled: _modDef4858.setEnabled,
-      isEnabled: _modDef4858.isEnabled,
-      getSystemHapticStatus: _modDef4858.getSystemHapticStatus,
-      playAHAP: _modDef4858.playAHAP
+export const getHybridObjectConstructor = function getHybridObjectConstructor(arg0) {
+  let closure_0 = arg0;
+  if (map.has(arg0)) {
+    return map.get(arg0);
+  } else {
+    function constructorFunc() {
+      const NitroModules = installedNitro1.NitroModules;
+      const hybridObject = NitroModules.createHybridObject(closure_0);
+      const prototypeOf = Object.getPrototypeOf(hybridObject);
+      if (constructorFunc.prototype !== prototypeOf) {
+        constructorFunc.prototype = prototypeOf;
+        constructorFunc.prototypeInitialized = true;
+      }
+      return hybridObject;
+    }
+    constructorFunc.prototypeInitialized = false;
+    let _Object = Object;
+    const _Symbol = Symbol;
+    const obj2 = {
+      value(arg0) {
+          if (!constructorFunc.prototypeInitialized) {
+            const NitroModules = installedNitro1.NitroModules;
+            const _Object = Object;
+            constructorFunc.prototype = Object.getPrototypeOf(NitroModules.createHybridObject(closure_0));
+            constructorFunc.prototypeInitialized = true;
+          }
+          let prototypeOf = Object.getPrototypeOf(arg0);
+          if (null != prototypeOf) {
+            while (prototypeOf !== constructorFunc.prototype) {
+              let _Object2 = Object;
+              prototypeOf = Object.getPrototypeOf(prototypeOf);
+            }
+            return true;
+          }
+          return false;
+        }
     };
-    return obj;
-  }, items);
+    Object.defineProperty(constructorFunc, Symbol.hasInstance, obj2);
+    const result = obj.set(arg0, constructorFunc);
+    return constructorFunc;
+  }
 };

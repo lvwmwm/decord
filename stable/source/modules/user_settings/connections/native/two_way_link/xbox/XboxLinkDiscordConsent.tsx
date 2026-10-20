@@ -1,13 +1,13 @@
-// Module ID: 8748
-// Function ID: 8749
+// Module ID: 9216
+// Function ID: 9217
 // Name: XboxLinkDiscordConsent
-// Dependencies: [19, 8735, 1085, 8749, 21, 558, 576, 1490, 8750, 8751, 2]
+// Dependencies: [19, 9203, 1085, 9217, 21, 558, 576, 1503, 9218, 12345, 2]
 
-// Module 8748 (XboxLinkDiscordConsent)
+// Module 9216 (XboxLinkDiscordConsent)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 8735 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 8749 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 9203 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9217 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ const XboxLinkModalScenes = XboxLinkConstants.XboxLinkModalScenes;
 const PlatformTypes = Constants.PlatformTypes;
 const XBOX_CLIENT_SCOPES = GameConsoleConstants.XBOX_CLIENT_SCOPES;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkDiscordConsent(arg0) {
   let callbackCode;
   let callbackState;
   let tmp5;
@@ -26,10 +26,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = navigation(576);
   const cResult = obj.c(9);
   ({ callbackCode, callbackState } = arg0);
-  const obj2 = navigation(1490);
+  const obj2 = navigation(1503);
   navigation = obj2.useNavigation();
   if (cResult[0] !== navigation) {
-    const fn = function s() {
+    const fn = function l() {
       navigation.push(XboxLinkModalScenes.SUCCESS);
     };
     cResult[0] = navigation;
@@ -59,20 +59,20 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  const TwoWayLinkDiscordConsent = tmp(8750).TwoWayLinkDiscordConsent;
-  const tmp8 = <TwoWayLinkDiscordConsent platformType={PlatformTypes.XBOX} callbackCode={callbackCode} callbackState={callbackState} clientId={navigation(8751).ConsoleOAuthApplications.XBOX_APPLICATION_ID} scopes={XBOX_CLIENT_SCOPES} onNext={tmp5} onError={tmp6} />;
+  const TwoWayLinkDiscordConsent = tmp(9218).TwoWayLinkDiscordConsent;
+  const tmp8 = <TwoWayLinkDiscordConsent platformType={PlatformTypes.XBOX} callbackCode={callbackCode} callbackState={callbackState} clientId={navigation(12345).ConsoleOAuthApplications.XBOX_APPLICATION_ID} scopes={XBOX_CLIENT_SCOPES} onNext={tmp5} onError={tmp6} />;
   cResult[4] = callbackCode;
   cResult[5] = callbackState;
   cResult[6] = tmp6;
   cResult[7] = tmp5;
   cResult[8] = tmp8;
   tmp7 = tmp8;
-}) : ((arg0) => {
+}) : (function XboxLinkDiscordConsent(arg0) {
   let callbackCode;
   let callbackState;
   navigation = undefined;
   ({ callbackCode, callbackState } = arg0);
-  const obj = navigation(1490);
+  const obj = navigation(1503);
   navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
@@ -82,8 +82,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const callback1 = react.useCallback(() => {
     navigation.push(XboxLinkModalScenes.ERROR);
   }, items1);
-  const TwoWayLinkDiscordConsent = navigation(8750).TwoWayLinkDiscordConsent;
-  return <TwoWayLinkDiscordConsent platformType={PlatformTypes.XBOX} callbackCode={callbackCode} callbackState={callbackState} clientId={navigation(8751).ConsoleOAuthApplications.XBOX_APPLICATION_ID} scopes={XBOX_CLIENT_SCOPES} onNext={callback} onError={callback1} />;
+  const TwoWayLinkDiscordConsent = navigation(9218).TwoWayLinkDiscordConsent;
+  return <TwoWayLinkDiscordConsent platformType={PlatformTypes.XBOX} callbackCode={callbackCode} callbackState={callbackState} clientId={navigation(12345).ConsoleOAuthApplications.XBOX_APPLICATION_ID} scopes={XBOX_CLIENT_SCOPES} onNext={callback} onError={callback1} />;
 });
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkDiscordConsent.tsx");
 

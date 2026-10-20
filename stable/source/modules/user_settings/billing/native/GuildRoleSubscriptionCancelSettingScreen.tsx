@@ -1,19 +1,19 @@
-// Module ID: 15043
-// Function ID: 15044
+// Module ID: 15523
+// Function ID: 15524
 // Name: GuildRoleSubscriptionCancelSettingScreen
-// Dependencies: [19, 21, 558, 576, 6490, 15044, 2]
+// Dependencies: [19, 21, 558, 576, 6683, 15524, 2]
 
-// Module 15043 (GuildRoleSubscriptionCancelSettingScreen)
+// Module 15523 (GuildRoleSubscriptionCancelSettingScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6490 */;
-import UserSettingsGuildRoleSubscriptionsCancelDefault from "UserSettingsGuildRoleSubscriptionsCancel" /* 15044 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6683 */;
+import UserSettingsGuildRoleSubscriptionsCancelDefault from "UserSettingsGuildRoleSubscriptionsCancel" /* 15524 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionCancelSettingScreen() {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -30,7 +30,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : (() => {
+}) : (function GuildRoleSubscriptionCancelSettingScreen() {
   const obj = useSettingNavigationRoute;
   const settingNavigationRoute = obj.useSettingNavigationRoute();
   UserSettingsGuildRoleSubscriptionsCancelDefault;

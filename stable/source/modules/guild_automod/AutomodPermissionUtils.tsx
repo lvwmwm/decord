@@ -1,13 +1,13 @@
-// Module ID: 4515
-// Function ID: 4516
+// Module ID: 4756
+// Function ID: 4757
 // Name: AutomodPermissionUtils
-// Dependencies: [2112, 4495, 1390, 558, 576, 504, 2]
+// Dependencies: [2125, 4736, 1403, 558, 576, 504, 2]
 // Exports: getAutomodQuarantinedGuildMemberFlags, getAutomodQuarantinedProfileFlags, getAutomodReason, hasAutomodQuarantinedProfile
 
-// Module 4515 (AutomodPermissionUtils)
-import FlagUtils from "FlagUtils" /* 1390 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4495 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+// Module 4756 (AutomodPermissionUtils)
+import FlagUtils from "FlagUtils" /* 1403 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4736 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let _require, set;
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
 let items = [, , ];
 ({ AUTOMOD_QUARANTINED_BIO: arr[0], AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME: arr[1], AUTOMOD_QUARANTINED_SERVER_TAG: arr[2] } = GuildMemberFlags);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentUserAutomodQuaratinedProfile(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -36,7 +36,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function u() {
+    const fn = function n() {
       let tmp2 = null != closure_0;
       if (tmp2) {
         const selfMember = GuildMemberStore.getSelfMember(tmp);
@@ -77,7 +77,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useCurrentUserAutomodQuaratinedProfile(arg0) {
   let closure_0;
   _require = arg0;
   items = [GuildMemberStore];

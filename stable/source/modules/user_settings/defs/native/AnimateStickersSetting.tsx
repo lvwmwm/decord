@@ -1,22 +1,22 @@
-// Module ID: 15241
-// Function ID: 15242
+// Module ID: 15721
+// Function ID: 15722
 // Name: AnimateStickersSetting
-// Dependencies: [19, 7634, 2031, 2028, 558, 576, 1126, 11129, 2]
+// Dependencies: [19, 7988, 2044, 2041, 558, 576, 1126, 10664, 2]
 
-// Module 15241 (AnimateStickersSetting)
+// Module 15721 (AnimateStickersSetting)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import StickersConstants from "StickersConstants" /* 2031 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import StickersConstants from "StickersConstants" /* 2044 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const StickerAnimationSettings = StickersConstants.StickerAnimationSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnimateStickerSettingOptions() {
   let first;
   let intl;
   let intl2;
@@ -39,21 +39,23 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => react.useMemo(() => {
-  let intl;
-  let intl2;
-  let intl3;
-  const obj = { label: intl.string(intl4.t["Xp+X2U"]), value: constants.ALWAYS_ANIMATE };
-  intl = intl4.intl;
-  const items = [obj, , ];
-  const obj2 = { label: intl2.string(intl4.t.IlLT7e), value: constants.ANIMATE_ON_INTERACTION };
-  intl2 = intl4.intl;
-  items[1] = obj2;
-  const obj3 = { label: intl3.string(intl4.t.IGu8x3), value: constants.NEVER_ANIMATE };
-  intl3 = intl4.intl;
-  items[2] = obj3;
-  return items;
-}, []));
+}) : (function useAnimateStickerSettingOptions() {
+  return react.useMemo(() => {
+    let intl;
+    let intl2;
+    let intl3;
+    const obj = { label: intl.string(intl4.t["Xp+X2U"]), value: constants.ALWAYS_ANIMATE };
+    intl = intl4.intl;
+    const items = [obj, , ];
+    const obj2 = { label: intl2.string(intl4.t.IlLT7e), value: constants.ANIMATE_ON_INTERACTION };
+    intl2 = intl4.intl;
+    items[1] = obj2;
+    const obj3 = { label: intl3.string(intl4.t.IGu8x3), value: constants.NEVER_ANIMATE };
+    intl3 = intl4.intl;
+    items[2] = obj3;
+    return items;
+  }, []);
+});
 let obj = {
   useTitle() {
     const intl = intl4.intl;

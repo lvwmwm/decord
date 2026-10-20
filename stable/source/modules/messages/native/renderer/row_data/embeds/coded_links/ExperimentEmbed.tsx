@@ -1,26 +1,26 @@
-// Module ID: 11417
-// Function ID: 11418
+// Module ID: 11363
+// Function ID: 11364
 // Name: ExperimentEmbed
-// Dependencies: [19, 17, 502, 4777, 7226, 21, 7604, 7534, 11139, 11140, 4587, 11418, 11419, 11420, 7605, 11421, 558, 576, 7536, 4854, 4781, 6644, 11422, 6645, 11138, 2]
+// Dependencies: [19, 17, 502, 5017, 7419, 21, 7884, 8137, 10674, 10675, 4825, 11364, 11365, 11366, 7886, 11367, 558, 576, 8139, 5056, 5021, 6839, 11368, 6840, 10673, 2]
 // Exports: createExperimentEmbed
 
-// Module 11417 (ExperimentEmbed)
+// Module 11363 (ExperimentEmbed)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import themes from "themes" /* 4587 */;
-import ExperimentConstants from "ExperimentConstants" /* 4777 */;
-import ExperimentManager from "ExperimentManager" /* 4781 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Constants from "Constants" /* 7226 */;
-import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 7534 */;
-import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 7536 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7604 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7605 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11139 */;
-import useApexExperiments from "useApexExperiments" /* 11140 */;
-import useExperimentAssignments from "useExperimentAssignments" /* 11420 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11421 */;
+import themes from "themes" /* 4825 */;
+import ExperimentConstants from "ExperimentConstants" /* 5017 */;
+import ExperimentManager from "ExperimentManager" /* 5021 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Constants from "Constants" /* 7419 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7884 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7886 */;
+import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8137 */;
+import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8139 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 10674 */;
+import useApexExperiments from "useApexExperiments" /* 10675 */;
+import useExperimentAssignments from "useExperimentAssignments" /* 11366 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11367 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -29,13 +29,13 @@ import size from "module_2" /* 2 */;
 let BottomSheet, map;
 
 let tmp;
-const useCodedLinksExperimentEmbeds = tmp(11138);
+const useCodedLinksExperimentEmbeds = tmp(10673);
 const Image = react_native.Image;
 const ExperimentEmbedType = ExperimentConstants.ExperimentEmbedType;
 const InviteTypes = Constants.InviteTypes;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id) {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExperimentOverrideActionSheet(id) {
   let arr;
   let items;
   let tmp14;
@@ -168,7 +168,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id) {
   cResult[12] = id;
   cResult[13] = jsx(id(items[21]).BottomSheetTitleHeader, { title: experiment.title, subtitle: id });
   jsx(id(items[21]).BottomSheetTitleHeader, { title: experiment.title, subtitle: id });
-}) : ((id) => {
+}) : (function ExperimentOverrideActionSheet(id) {
   id = id.id;
   const experiment = id.experiment;
   let items = [experiment];
@@ -234,7 +234,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id) {
   return <BottomSheet header={null}>{null}</BottomSheet>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedExperimentOverrideActionSheet(id) {
   let experiments;
   let overridesInfo;
   const obj = react2;
@@ -283,7 +283,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     }
   }
   return tmp10;
-}) : ((id) => {
+}) : (function ConnectedExperimentOverrideActionSheet(id) {
   id = id.id;
   const obj = useLegacyExperiments;
   const legacyExperiments = obj.useLegacyExperiments();
@@ -429,9 +429,9 @@ export const createExperimentEmbed = function createExperimentEmbed(url, arg1) {
   resolveAssetSource = Image.resolveAssetSource;
   const tmp4Result10 = themes;
   if (tmp4Result10.isThemeDark(arg1)) {
-    tmpResult = tmp(11418);
+    tmpResult = tmp(11364);
   } else {
-    tmpResult = tmp(11419);
+    tmpResult = tmp(11365);
   }
   return obj7;
 };

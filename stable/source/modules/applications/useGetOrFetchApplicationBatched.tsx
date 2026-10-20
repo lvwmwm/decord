@@ -1,12 +1,12 @@
-// Module ID: 11180
-// Function ID: 11181
+// Module ID: 10713
+// Function ID: 10714
 // Name: useGetOrFetchApplicationBatched
-// Dependencies: [19, 5118, 2046, 12, 6658, 558, 576, 504, 2]
+// Dependencies: [19, 5440, 2060, 12, 6853, 558, 576, 504, 2]
 
-// Module 11180 (useGetOrFetchApplicationBatched)
-import Timers from "Timers" /* 2046 */;
+// Module 10713 (useGetOrFetchApplicationBatched)
+import Timers from "Timers" /* 2060 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ obj._pending = set;
 let delayedCall = new Timers.DelayedCall(32, () => obj._flush());
 obj._flushHandler = delayedCall;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequestApplication(arg0) {
   let closure_0;
   let tmp2;
   let tmp3;
@@ -98,7 +98,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj = require("react");
   const cResult = obj.c(3);
   if (cResult[0] !== arg0) {
-    const fn = function s() {
+    const fn = function c() {
       const tmp2 = null != closure_0 && "" !== tmp;
       if (tmp2) {
         obj.request(closure_0);
@@ -115,7 +115,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = cResult[2];
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : ((arg0) => {
+}) : (function useRequestApplication(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   const effect = react.useEffect(() => {
@@ -127,7 +127,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_6 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetchApplicationBatched(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -145,7 +145,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function c() {
+    const fn = function s() {
       let application = null;
       if (null != closure_0) {
         application = null;
@@ -167,7 +167,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useGetOrFetchApplicationBatched(arg0) {
   let closure_0;
   _require = arg0;
   const tmp = closure_6(arg0);

@@ -1,19 +1,19 @@
-// Module ID: 6706
-// Function ID: 6707
+// Module ID: 6904
+// Function ID: 6905
 // Name: UserProfileCard
-// Dependencies: [109, 19, 17, 6707, 21, 4890, 587, 558, 576, 4886, 6708, 5909, 2]
+// Dependencies: [109, 19, 17, 6905, 21, 5092, 587, 558, 576, 5088, 6906, 6185, 2]
 
-// Module 6706 (UserProfileCard)
+// Module 6904 (UserProfileCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Pressables from "Pressables" /* 5909 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Pressables from "Pressables" /* 6185 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 6707 */;
+import Constants from "Constants" /* 6905 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp3;
-const ChevronSmallRightIcon = tmp3(6708);
+const ChevronSmallRightIcon = tmp3(6906);
 let closure_2 = ["title", "titleLeadingIcon", "titleIcon", "titleStyle", "trailingAction", "children", "style"];
 const View = react_native.View;
 ({ CARD_ROWS_COLUMN_GAP, CARD_ROWS_ICON_SIZE, CARD_ROWS_ICON_SIZE_VARIANT: metroRequire } = Constants);
@@ -38,7 +38,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 let closure_10 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileFormRow(arg0) {
   let arrow;
   let disabled;
   let hint;
@@ -83,7 +83,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp12 = cResult[9];
           }
           if (cResult[10] !== (undefined !== arrow && arrow)) {
-            const tmp17 = tmp4 && metroImportDefault(tmp(6708).ChevronSmallRightIcon, { size: "sm" });
+            const tmp17 = tmp4 && metroImportDefault(tmp(6906).ChevronSmallRightIcon, { size: "sm" });
             cResult[10] = undefined !== arrow && arrow;
             cResult[11] = tmp17;
             tmp16 = tmp17;
@@ -179,7 +179,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = str;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((arg0) => {
+}) : (function UserProfileFormRow(arg0) {
   let arrow;
   let disabled;
   let hint;
@@ -238,7 +238,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportAll(PressableOpacity, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileCardRows(children) {
   let tmp2;
   let tmp7;
   let obj = react2;
@@ -275,7 +275,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     tmp7 = cResult[4];
   }
   return tmp7;
-}) : ((children) => {
+}) : (function UserProfileCardRows(children) {
   let Children;
   let obj = {
     children: Children.map(children.children, (children, arg1) => {
@@ -287,7 +287,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   return metroImportDefault(React4, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileCard(arg0) {
   let children;
   let items;
   let items1;
@@ -399,7 +399,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[14] = tmp11;
   cResult[15] = tmp18Result2;
   tmp16 = tmp18Result2;
-}) : ((arg0) => {
+}) : (function UserProfileCard(arg0) {
   let children;
   let items;
   let items1;

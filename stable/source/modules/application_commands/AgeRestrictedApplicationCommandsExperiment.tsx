@@ -1,10 +1,10 @@
-// Module ID: 8930
-// Function ID: 8931
+// Module ID: 9807
+// Function ID: 9808
 // Name: AgeRestrictedApplicationCommandsExperiment
-// Dependencies: [1441, 2]
+// Dependencies: [1454, 2]
 
-// Module 8930 (AgeRestrictedApplicationCommandsExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
+// Module 9807 (AgeRestrictedApplicationCommandsExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1454 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

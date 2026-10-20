@@ -1,28 +1,28 @@
-// Module ID: 11453
-// Function ID: 11454
+// Module ID: 11401
+// Function ID: 11402
 // Name: GuildDisableCommunication
-// Dependencies: [5, 32, 19, 17, 2114, 1085, 21, 1126, 4890, 587, 558, 576, 6471, 10836, 1252, 5590, 11454, 4568, 5042, 4805, 4886, 6072, 6071, 6580, 5594, 2]
+// Dependencies: [5, 32, 19, 17, 2127, 1085, 21, 1126, 5092, 587, 558, 576, 6665, 10526, 1265, 5396, 11402, 4809, 5409, 5088, 6263, 6262, 6774, 5379, 2]
 
-// Module 11453 (GuildDisableCommunication)
+// Module 11401 (GuildDisableCommunication)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useMountEffectDefault from "useMountEffect" /* 5590 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import TableRadioRow2 from "TableRadioRow" /* 6071 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6072 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6471 */;
-import TextArea2 from "TextArea" /* 6580 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 10836 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import useMountEffectDefault from "useMountEffect" /* 5396 */;
+import TableRadioRow2 from "TableRadioRow" /* 6262 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6263 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
+import TextArea2 from "TextArea" /* 6774 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 10526 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2114 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2127 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -97,7 +97,7 @@ createStyles = createStyles.createStyles;
 obj4 = { marginVertical: nativeDefault.space.PX_16 };
 obj5 = { marginBottom: nativeDefault.space.PX_16 };
 let closure_15 = createStyles(obj2);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDisableCommunication(user) {
   let closure_4;
   let closure_5;
   let first;
@@ -188,7 +188,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
           const _Symbol2 = Symbol;
           if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
             let obj7 = { style: tmp19, variant: "heading-md/semibold", children: intl.format(tmp(tmp2[7]).t.Ns83GT, obj8) };
-            const Text = tmp(tmp2[20]).Text;
+            const Text = tmp(tmp2[19]).Text;
             intl = tmp(tmp2[7]).intl;
             obj8 = { helpdeskArticle };
             const tmp23 = closure_11(Text, obj7);
@@ -236,11 +236,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
               hasIcons: false,
               children: items.map((getLabel, value) => {
                           const obj = { value, label: getLabel.getLabel() };
-                          const TableRadioRow = user(onClose[22]).TableRadioRow;
+                          const TableRadioRow = user(onClose[21]).TableRadioRow;
                           return closure_1_11(TableRadioRow, obj, value);
                         })
             };
-            const TableRadioGroup = tmp(tmp2[21]).TableRadioGroup;
+            const TableRadioGroup = tmp(tmp2[20]).TableRadioGroup;
             const tmp29 = closure_11(TableRadioGroup, obj9);
             cResult[18] = tmp29;
             tmp27 = tmp29;
@@ -298,8 +298,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
             }
             const obj11 = { ref: ref1, containerStyle: reasonTextArea, placeholder: tmp30, label: tmp31, maxLength: 512, onChange: tmp34 };
             cResult[22] = tmp4.reasonTextArea;
-            cResult[23] = closure_11(user(tmp2[23]).TextArea, obj11);
-            const tmp36 = closure_11(user(tmp2[23]).TextArea, obj11);
+            cResult[23] = closure_11(user(tmp2[22]).TextArea, obj11);
+            const tmp36 = closure_11(user(tmp2[22]).TextArea, obj11);
           } else {
             class Y {
               constructor(current) {
@@ -332,7 +332,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
               }
             }
             const obj13 = { variant: "primary", text: tmp37, onPress: tmp16 };
-            const tmp40 = closure_11(user(tmp2[24]).Button, obj13);
+            const tmp40 = closure_11(user(tmp2[23]).Button, obj13);
             cResult[25] = tmp16;
             cResult[26] = tmp40;
             tmp39 = tmp40;
@@ -390,6 +390,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
         }
       }
     }
+    const tmp17 = first;
     let closure_0 = first(function*(arg0, value) {
       let obj7;
       let v1;
@@ -434,7 +435,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
             return obj6;
           } else {
             const open = guildId(onClose[17]).open;
-            const tmp26 = guildId(onClose[17]);
+            const tmp24 = guildId(onClose[17]);
             const intl = user(onClose[7]).intl;
             const formatToPlainString = intl.formatToPlainString;
             const O9C3Nt = user(onClose[7]).t.O9C3Nt;
@@ -444,16 +445,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
             if (name == null) {
               user = "";
             }
-            const obj = { key: "GUILD_COMMUNICATION_DISABLED_SUCCESS", content: formatToPlainString(O9C3Nt, obj7), icon: guildId(onClose[19]) };
+            const obj = { text: formatToPlainString(O9C3Nt, obj7), variant: "success" };
             obj7 = { user };
-            open(obj);
+            open("GUILD_COMMUNICATION_DISABLED_SUCCESS", obj);
             c2();
             c3 = 3;
             return { value: "IconComponent", done: null };
           }
-        } catch (tmp19) {
+        } catch (tmp17) {
           c3 = 3;
-          throw tmp19;
+          throw tmp17;
         }
       }
     });
@@ -478,7 +479,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
   cResult[5] = user.id;
   cResult[6] = U;
   tmp14 = U;
-}) : ((arg0) => {
+}) : (function GuildDisableCommunication(arg0) {
   let Button;
   let _undefined;
   let c3;
@@ -546,7 +547,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
             return obj6;
           } else {
             const open = tmp3(c2[17]).open;
-            const tmp26 = tmp3(c2[17]);
+            const tmp24 = tmp3(c2[17]);
             const intl = user(c2[7]).intl;
             const formatToPlainString = intl.formatToPlainString;
             const O9C3Nt = user(c2[7]).t.O9C3Nt;
@@ -556,16 +557,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
             if (name == null) {
               user = "";
             }
-            obj = { key: "GUILD_COMMUNICATION_DISABLED_SUCCESS", content: formatToPlainString(O9C3Nt, obj7), icon: tmp3(c2[19]) };
+            obj = { text: formatToPlainString(O9C3Nt, obj7), variant: "success" };
             obj7 = { user };
-            open(obj);
+            open("GUILD_COMMUNICATION_DISABLED_SUCCESS", obj);
             closure_129_2();
             c3 = 3;
             return { value: "IconComponent", done: null };
           }
-        } catch (tmp19) {
+        } catch (tmp17) {
           c3 = 3;
-          throw tmp19;
+          throw tmp17;
         }
       }
     });

@@ -1,18 +1,18 @@
-// Module ID: 9462
-// Function ID: 9463
+// Module ID: 11127
+// Function ID: 11128
 // Name: XboxInstallAlert
-// Dependencies: [19, 8749, 21, 4890, 587, 558, 576, 1126, 1188, 8756, 1369, 4565, 5783, 2]
+// Dependencies: [19, 9217, 21, 5092, 587, 558, 576, 1126, 1200, 11128, 1382, 4806, 5398, 2]
 
-// Module 9462 (XboxInstallAlert)
+// Module 11127 (XboxInstallAlert)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import LinkingDefault from "Linking" /* 4565 */;
-import AlertDefault from "Alert" /* 5783 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8756 */;
+import native from "native" /* 1200 */;
+import LinkingDefault from "Linking" /* 4806 */;
+import AlertDefault from "Alert" /* 5398 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11128 */;
 import react from "react" /* 19 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 8749 */;
-import createStyles from "createStyles" /* 4890 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9217 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const jsx = Fragment.jsx;
 let obj = { externalLinkIcon: size };
 size = { tintColor: nativeDefault.colors.WHITE, width: 20, height: 20, marginLeft: 8 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxInstallAlert(arg0) {
   let closure_0;
   let tmp13;
   let tmp14;
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = tmp13;
   cResult[9] = tmp18;
   tmp15 = tmp18;
-}) : ((arg0) => {
+}) : (function XboxInstallAlert(arg0) {
   let closure_0;
   _require = closure_6();
   AlertDefault;

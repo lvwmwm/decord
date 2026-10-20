@@ -1,30 +1,30 @@
-// Module ID: 8810
-// Function ID: 8811
+// Module ID: 9256
+// Function ID: 9257
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 6808, 502, 2051, 7031, 5110, 7171, 1125, 1085, 4883, 558, 6772, 7166, 6777, 576, 1126, 8811, 11, 1282, 7405, 8812, 7168, 1390, 7243, 8814, 7263, 5070, 6965, 5707, 584, 4729, 1102, 7249, 8916, 2]
+// Dependencies: [32, 5, 19, 7005, 502, 2065, 7239, 5432, 7370, 1125, 1085, 5085, 558, 6972, 7365, 6976, 576, 1126, 9257, 11, 1295, 7914, 9258, 7367, 1403, 7755, 9260, 7899, 5107, 7174, 5299, 584, 4969, 1102, 9803, 12897, 2]
 // Exports: createThread
 
-// Module 8810 (ThreadCreationHooks)
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import MessageConstants from "MessageConstants" /* 4883 */;
-import ThreadHooks from "ThreadHooks" /* 6772 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6965 */;
-import DraftStore from "DraftStore" /* 7031 */;
-import MessageParserDefault from "MessageParser" /* 7166 */;
-import SlowmodeStore from "SlowmodeStore" /* 7171 */;
+// Module 9256 (ThreadCreationHooks)
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import MessageConstants from "MessageConstants" /* 5085 */;
+import ThreadHooks from "ThreadHooks" /* 6972 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
+import DraftStore from "DraftStore" /* 7239 */;
+import MessageParserDefault from "MessageParser" /* 7365 */;
+import SlowmodeStore from "SlowmodeStore" /* 7370 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 6808 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7005 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MessageStore from "MessageStore" /* 5110 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import MessageStore from "MessageStore" /* 5432 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let andDeleteMostRecentUserCreatedThreadId, c3, c4, getChannel, guildId, parentChannel;
+let andDeleteMostRecentUserCreatedThreadId, c3, c4, channel, getChannel, guildId;
 
 let closure_12;
 let closure_14;
@@ -105,7 +105,7 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
       str3 = "";
     }
     const str4 = unparse(str3, stateFromStores.id, true);
-    const tmp17Result = tmp17(6777);
+    const tmp17Result = tmp17(6976);
     const str6 = tmp17Result(str4.split("\n")[0], true);
     let str7 = str6.replace(/^[ #-]+/, "");
     const items = [];
@@ -224,10 +224,8 @@ let obj = function _createThread_() {
         }
       } else {
         try {
-          let body;
           let closure_4;
           c11 = 2;
-          const tmp4 = c10;
           if (0 === c10) {
             if (arg0 === 1) {
               c11 = 3;
@@ -236,7 +234,7 @@ let obj = function _createThread_() {
               c11 = 3;
               return { value, done: true };
             } else {
-              body = undefined;
+              closure_3 = undefined;
               analyticsLocations = undefined;
               self = undefined;
               value = undefined;
@@ -244,13 +242,13 @@ let obj = function _createThread_() {
               c9 = 1;
               c10 = 3;
               c11 = 1;
-              const obj4 = { value: body(), done: false };
+              const obj4 = { value: closure_3(), done: false };
               return obj4;
             }
           } else {
-            if (1 === tmp4) {
+            if (1 === c10) {
               c9 = 0;
-              body = tmp166.body;
+              const body = tmp166.body;
               self = body == null;
               let code;
               if (!self) {
@@ -416,20 +414,17 @@ let obj = function _createThread_() {
                                                   closure_0 = arg0;
                                                   closure_1 = fn;
                                                   if (null == closure_1_8.body) {
-                                                    const tmp = fn();
+                                                    fn();
                                                   }
                                                   const result = self.addConditionalChangeListener(() => {
                                                     andDeleteMostRecentUserCreatedThreadId = andDeleteMostRecentUserCreatedThreadId.getAndDeleteMostRecentUserCreatedThreadId();
                                                     if (null != andDeleteMostRecentUserCreatedThreadId) {
-                                                      const channel2 = channel.getChannel(andDeleteMostRecentUserCreatedThreadId);
-                                                      obj = closure_1(closure_1_2[31]);
-                                                      obj.wait(() => {
-                                                        if (null == closure_0) {
-                                                          closure_1();
-                                                        } else {
-                                                          closure_0(tmp);
-                                                        }
-                                                      });
+                                                      channel = channel.getChannel(andDeleteMostRecentUserCreatedThreadId);
+                                                      if (null == channel) {
+                                                        closure_1();
+                                                      } else {
+                                                        closure_0(channel);
+                                                      }
                                                       return false;
                                                     }
                                                   });
@@ -450,7 +445,7 @@ let obj = function _createThread_() {
                   }
                 }
               }
-            } else if (2 === tmp4) {
+            } else if (2 === c10) {
               if (arg0 === 1) {
                 c11 = 3;
                 throw value;
@@ -466,7 +461,7 @@ let obj = function _createThread_() {
                 const obj17 = { value: self.fetchMessages(obj16), done: false };
                 return obj17;
               }
-            } else if (3 === tmp4) {
+            } else if (3 === c10) {
               if (arg0 === 1) {
                 c11 = 3;
                 throw value;
@@ -475,7 +470,7 @@ let obj = function _createThread_() {
                 c11 = 3;
                 return { value, done: true };
               } else {
-                body = value;
+                closure_3 = value;
                 if (null == value.body) {
                   self = closure_135_1(closure_135_2[30]);
                   const show = self.show;
@@ -488,7 +483,7 @@ let obj = function _createThread_() {
                   const obj21 = { type: "SLOWMODE_RESET_COOLDOWN", slowmodeType: closure_135_11.CreateThread, channelId: closure_0.id };
                   const obj20 = closure_135_1(closure_135_2[31]);
                   obj20.dispatch(obj21);
-                  const obj23 = { type: "THREAD_CREATE_LOCAL", channelId: body.body.id };
+                  const obj23 = { type: "THREAD_CREATE_LOCAL", channelId: closure_3.body.id };
                   const obj22 = closure_135_1(closure_135_2[31]);
                   obj22.dispatch(obj23);
                   self = closure_135_0(closure_135_2[32]).AccessibilityAnnouncer;
@@ -506,7 +501,7 @@ let obj = function _createThread_() {
                 c9 = 0;
               }
             } else {
-              if (4 === tmp4) {
+              if (4 === c10) {
                 c9 = 0;
               } else if (arg0 === 1) {
                 c11 = 3;
@@ -514,8 +509,7 @@ let obj = function _createThread_() {
               } else if (arg0 === 2) {
                 c9 = 0;
                 c11 = 3;
-                obj = { value, done: true };
-                return obj;
+                return { value, done: true };
               } else {
                 c9 = 0;
               }
@@ -530,16 +524,13 @@ let obj = function _createThread_() {
             const obj25 = {
               value: new Promise((arg0, fn) => {
                       closure_0 = arg0;
-                      if (null == body.body) {
+                      if (null == closure_3.body) {
                         fn();
                       }
                       const result = closure_1_8.addConditionalChangeListener(() => {
-                        const channel = closure_2_8.getChannel(body.body.id);
+                        channel = channel.getChannel(closure_2_3.body.id);
                         if (null != channel) {
-                          obj = closure_2_1(file[31]);
-                          obj.wait(() => {
-                            channel(channel);
-                          });
+                          closure_0(channel);
                           return false;
                         }
                       });
@@ -570,7 +561,7 @@ const SlowmodeType = SlowmodeStore.SlowmodeType;
 const MessageSendLocation = MessageConstants.MessageSendLocation;
 obj = { Disabled: 1, [1]: "Disabled", Enabled: 2, [2]: "Enabled", PrivateOnly: 3, [3]: "PrivateOnly" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateThreadMode(arg0) {
   let Disabled;
   obj = ThreadHooks;
   const canStartPublicThread = obj.useCanStartPublicThread(arg0);
@@ -581,7 +572,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     Disabled = tmp2.Disabled;
   }
   return Disabled;
-}) : ((arg0) => {
+}) : (function usePrivateThreadMode(arg0) {
   let Disabled;
   obj = ThreadHooks;
   const canStartPublicThread = obj.useCanStartPublicThread(arg0);
@@ -594,7 +585,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return Disabled;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateThreadCommon(parentChannel) {
   let threadSettings;
   let uploadHandler;
   obj = parentChannel(threadSettings[16]);
@@ -751,9 +742,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => 
       }
     })();
   });
-  const fn = function() {
+  function t1() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = _location;
   cResult[1] = onThreadCreated;
   cResult[2] = parentChannel;
@@ -762,9 +753,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => 
   cResult[5] = threadSettings;
   cResult[6] = parentChannel.uploadHandler;
   cResult[7] = useDefaultThreadName;
-  cResult[8] = fn;
-  tmp2 = fn;
-}) : ((parentChannel) => {
+  cResult[8] = t1;
+  tmp2 = t1;
+}) : (function useCreateThreadCommon(parentChannel) {
   parentChannel = parentChannel.parentChannel;
   const parentMessageId = parentChannel.parentMessageId;
   const threadSettings = parentChannel.threadSettings;
@@ -906,7 +897,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => 
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateForumPostCommon(parentChannel) {
   let appliedTags;
   obj = parentChannel(appliedTags[16]);
   const cResult = obj.c(10);
@@ -1158,9 +1149,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
       }
     })();
   });
-  const fn = function() {
+  function t1() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = activityAction;
   cResult[1] = analyticsLocations;
   cResult[2] = applicationId;
@@ -1170,9 +1161,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentChannel) => {
   cResult[6] = parentChannel;
   cResult[7] = upload;
   cResult[8] = voiceChatEnabled;
-  cResult[9] = fn;
-  tmp2 = fn;
-}) : ((parentChannel) => {
+  cResult[9] = t1;
+  tmp2 = t1;
+}) : (function useCreateForumPostCommon(parentChannel) {
   parentChannel = parentChannel.parentChannel;
   const name = parentChannel.name;
   const appliedTags = parentChannel.appliedTags;

@@ -1,14 +1,14 @@
-// Module ID: 10971
-// Function ID: 10972
+// Module ID: 10599
+// Function ID: 10600
 // Name: trackBadgeDirectoryAction
-// Dependencies: [1377, 7863, 1085, 1252, 2]
+// Dependencies: [1390, 8312, 1085, 1265, 2]
 // Exports: default
 
-// Module 10971 (trackBadgeDirectoryAction)
+// Module 10599 (trackBadgeDirectoryAction)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserStore from "UserStore" /* 1377 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7863 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import UserStore from "UserStore" /* 1390 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8312 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

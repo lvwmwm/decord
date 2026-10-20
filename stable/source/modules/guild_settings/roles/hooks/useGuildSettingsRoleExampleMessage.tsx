@@ -1,24 +1,24 @@
-// Module ID: 17800
-// Function ID: 17801
+// Module ID: 18431
+// Function ID: 18432
 // Name: useGuildSettingsRoleExampleMessage
-// Dependencies: [19, 1391, 1085, 558, 576, 5112, 7248, 1126, 7852, 13135, 2]
+// Dependencies: [19, 1404, 1085, 558, 576, 5434, 9808, 1126, 8301, 12687, 2]
 
-// Module 17800 (useGuildSettingsRoleExampleMessage)
+// Module 18431 (useGuildSettingsRoleExampleMessage)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5112 */;
-import createMessageDefault from "createMessage" /* 7248 */;
-import UserActionCreatorsAll from "UserActionCreators" /* 7852 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5434 */;
+import UserActionCreatorsAll from "UserActionCreators" /* 8301 */;
+import createMessageDefault from "createMessage" /* 9808 */;
 import react from "react" /* 19 */;
-import UserRecord from "UserRecord" /* 1391 */;
+import UserRecord from "UserRecord" /* 1404 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 const MessageStates = Constants.MessageStates;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(content) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildSettingsRoleExampleMessage(content) {
   let intl;
   let tmp4;
   const obj = react2;
@@ -40,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(content) {
     const insertStaticUserResult = obj5.insertStaticUser(tmp13);
     if (null != insertStaticUserResult) {
       messageRecord.author = insertStaticUserResult;
-      messageRecord.author.getAvatarURL = () => require("module_13135");
+      messageRecord.author.getAvatarURL = () => require("module_12687");
     }
     cResult[0] = content;
     cResult[1] = messageRecord;
@@ -49,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(content) {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((content) => {
+}) : (function useGuildSettingsRoleExampleMessage(content) {
   const items = [content];
   return react.useMemo(() => {
     let intl;

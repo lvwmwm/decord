@@ -1,17 +1,17 @@
-// Module ID: 9317
-// Function ID: 9318
+// Module ID: 5259
+// Function ID: 5260
 // Name: VideoBackgroundUtils
-// Dependencies: [2051, 4913, 6484, 1085, 1402, 5070, 1252, 2]
+// Dependencies: [2065, 5110, 5255, 1085, 1415, 5107, 1265, 2]
 // Exports: getEffectAnalyticsType, getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, isCustomBackgroundOption, isDefaultBackgroundOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 9317 (VideoBackgroundUtils)
+// Module 5259 (VideoBackgroundUtils)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 6484 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5255 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -41,7 +41,7 @@ function isAnimatedBackgroundOption(type) {
       let isAnimatedIconHashResult = obj.isAnimatedIconHash(type.asset);
       const tmp6 = require;
       if (!isAnimatedIconHashResult) {
-        const tmp6Result = tmp6(1402);
+        const tmp6Result = tmp6(1415);
         isAnimatedIconHashResult = tmp6Result.isVideoAssetHash(type.asset);
       }
       hasItem = isAnimatedIconHashResult;

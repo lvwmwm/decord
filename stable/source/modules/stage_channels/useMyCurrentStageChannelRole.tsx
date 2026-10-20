@@ -1,19 +1,19 @@
-// Module ID: 9717
-// Function ID: 9718
+// Module ID: 11150
+// Function ID: 11151
 // Name: useMyCurrentStageChannelRole
-// Dependencies: [502, 2103, 5578, 558, 576, 504, 2]
+// Dependencies: [502, 2116, 5948, 558, 576, 504, 2]
 
-// Module 9717 (useMyCurrentStageChannelRole)
+// Module 11150 (useMyCurrentStageChannelRole)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5578 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5948 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMyCurrentStageChannelRole(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -51,7 +51,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp8, tmp9);
-}) : ((arg0) => {
+}) : (function useMyCurrentStageChannelRole(arg0) {
   let closure_0;
   _require = arg0;
   const items = [AuthenticationStore, SelectedChannelStore, StageChannelRoleStore];

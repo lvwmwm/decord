@@ -1,19 +1,19 @@
-// Module ID: 17277
-// Function ID: 17278
+// Module ID: 17872
+// Function ID: 17873
 // Name: useCameraEncodeError
-// Dependencies: [502, 9094, 558, 576, 9095, 504, 2]
+// Dependencies: [502, 10887, 558, 576, 5289, 504, 2]
 
-// Module 17277 (useCameraEncodeError)
-import AVError from "AVError" /* 9095 */;
+// Module 17872 (useCameraEncodeError)
+import AVError from "AVError" /* 5289 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AVErrorStore from "AVErrorStore" /* 9094 */;
+import AVErrorStore from "AVErrorStore" /* 10887 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCameraEncodeError(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -47,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+}) : (function useCameraEncodeError(arg0) {
   let closure_0;
   _require = arg0;
   const items = [AVErrorStore, AuthenticationStore];

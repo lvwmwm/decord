@@ -1,20 +1,19 @@
-// Module ID: 12843
-// Function ID: 12844
+// Module ID: 13150
+// Function ID: 13151
 // Name: useTrackUserProfileActivityAction
-// Dependencies: [19, 8447, 558, 576, 7861, 6657, 504, 7862, 2]
+// Dependencies: [19, 8992, 558, 576, 8310, 6852, 504, 8311, 2]
 
-// Module 12843 (useTrackUserProfileActivityAction)
+// Module 13150 (useTrackUserProfileActivityAction)
 import react from "react" /* 19 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 7862 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8447 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8311 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8992 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let user;
 
 react.useCallback;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackUserProfileActivityAction(user) {
   let activity;
   let first;
   let tmp7;
@@ -44,7 +43,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     first = cResult[0];
   }
   if (cResult[1] !== user.id) {
-    const fn = function c() {
+    const fn = function n() {
       return ContentInventoryOutboxStore.getUserOutbox(user.id);
     };
     cResult[1] = user.id;
@@ -76,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       }
     }
   }
-  class P {
+  class C {
     constructor(action) {
       action = action.action;
       const obj = { action, analyticsLocations };
@@ -97,9 +96,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[9] = stream;
   cResult[10] = trackUserProfileAction;
   cResult[11] = voiceChannelId;
-  cResult[12] = P;
-  tmp9 = P;
-}) : ((activity) => {
+  cResult[12] = C;
+  tmp9 = C;
+}) : (function useTrackUserProfileActivityAction(activity) {
   let display;
   let id;
   let require;

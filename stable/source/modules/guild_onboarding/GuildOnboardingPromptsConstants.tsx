@@ -1,14 +1,14 @@
-// Module ID: 6596
-// Function ID: 6597
+// Module ID: 6790
+// Function ID: 6791
 // Name: GuildOnboardingPromptsConstants
-// Dependencies: [32, 109, 1085, 1342, 1126, 2018, 2]
+// Dependencies: [32, 109, 1085, 1355, 1126, 2031, 2]
 // Exports: clientPromptToServerPrompt, getConnectionIdentifier, getDefaultPrompt, getEmptyPrompt, isDefaultPrompt, isEmojiEmpty, parseConnectionIdentifier, serverApiResponseToClientState, validateOnboardingConnections
 
-// Module 6596 (GuildOnboardingPromptsConstants)
+// Module 6790 (GuildOnboardingPromptsConstants)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef1342 from "module_1342" /* 1342 */;
-import StringUtils from "StringUtils" /* 2018 */;
+import _modDef1355 from "module_1355" /* 1355 */;
+import StringUtils from "StringUtils" /* 2031 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ function validateOnboardingConnection(connection_type) {
     if (obj3.isNullOrEmpty(connection_type.application_id)) {
       items.push("Application ID is required for application connections");
     }
-    const tmp9Result = tmp9(2018);
+    const tmp9Result = tmp9(2031);
     if (!tmp9Result.isNullOrEmpty(connection_type.provider_id)) {
       items.push("Platform ID not allowed for application connections");
     }
@@ -57,7 +57,7 @@ function validateOnboardingConnection(connection_type) {
     } else if (!closure_11.includes(connection_type.provider_id)) {
       items.push("Invalid platform ID");
     }
-    const tmp3Result = tmp3(2018);
+    const tmp3Result = tmp3(2031);
     if (!tmp3Result.isNullOrEmpty(connection_type.application_id)) {
       items.push("Application ID not allowed for platform connections");
     }
@@ -114,7 +114,7 @@ export const isDefaultPrompt = function isDefaultPrompt(options) {
     const id2 = options.id;
     const tmp7 = _objectWithoutProperties(obj, closure_3);
     const tmp9 = _objectWithoutProperties(options, closure_4);
-    return _modDef1342(tmp7, tmp9);
+    return _modDef1355(tmp7, tmp9);
   }
 };
 export const getDefaultPrompt = function getDefaultPrompt() {

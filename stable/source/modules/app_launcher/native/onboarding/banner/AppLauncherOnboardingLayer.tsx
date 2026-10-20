@@ -1,16 +1,16 @@
-// Module ID: 11661
-// Function ID: 11662
+// Module ID: 11727
+// Function ID: 11728
 // Name: AppLauncherOnboardingLayer
-// Dependencies: [19, 17, 9064, 21, 4890, 587, 558, 576, 11662, 2]
+// Dependencies: [19, 17, 9379, 21, 5092, 587, 558, 576, 11728, 2]
 
-// Module 11661 (AppLauncherOnboardingLayer)
+// Module 11727 (AppLauncherOnboardingLayer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9064 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9379 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let obj = { container: rect };
 rect = { opacity: 1, width: "100%", position: "absolute", left: 0, top: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM };
 let closure_6 = createStyles.createStyles(obj);
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherOnboardingLayer(arg0) {
   let bottomOffset;
   let context;
   let visibleContent;
@@ -58,7 +58,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[4] = visibleContent;
   cResult[5] = tmp6;
   tmp5 = tmp6;
-}) : ((visibleContent) => {
+}) : (function AppLauncherOnboardingLayer(visibleContent) {
   let bottomOffset;
   let context;
   visibleContent = visibleContent.visibleContent;

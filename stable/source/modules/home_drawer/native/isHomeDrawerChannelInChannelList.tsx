@@ -1,16 +1,16 @@
-// Module ID: 16259
-// Function ID: 16260
+// Module ID: 16781
+// Function ID: 16782
 // Name: isHomeDrawerChannelInChannelList
-// Dependencies: [5071, 558, 576, 7046, 504, 2]
+// Dependencies: [5966, 558, 576, 6077, 504, 2]
 
-// Module 16259 (isHomeDrawerChannelInChannelList)
+// Module 16781 (isHomeDrawerChannelInChannelList)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsHomeDrawerChannelInChannelList() {
   let tmp4;
   let tmp5;
   let tmp6;
@@ -18,7 +18,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserGuildSettingsStore];
-    const fn = function l() {
+    const fn = function s() {
       let channelRecordOrParentOptedIn;
       return (guild_id) => {
         const obj = closure_1_0(closure_1_1[3]);
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5, tmp6, get_initialized.statesWillNeverBeEqual);
-}) : (() => {
+}) : (function useIsHomeDrawerChannelInChannelList() {
   let obj = get_initialized;
   const items = [UserGuildSettingsStore];
   return obj.useStateFromStores(items, () => {

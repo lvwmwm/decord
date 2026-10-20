@@ -1,15 +1,15 @@
-// Module ID: 16207
-// Function ID: 16208
+// Module ID: 16726
+// Function ID: 16727
 // Name: OneColumnGuildUpsellList
-// Dependencies: [32, 19, 15450, 21, 4890, 8422, 1260, 558, 576, 1491, 504, 6657, 6681, 16208, 8371, 2]
+// Dependencies: [32, 19, 15931, 21, 5092, 8967, 1273, 558, 576, 1504, 504, 6852, 6879, 16727, 8620, 2]
 
-// Module 16207 (OneColumnGuildUpsellList)
+// Module 16726 (OneColumnGuildUpsellList)
 import Fragment from "Fragment" /* 21 */;
-import GameCommunityMultiGuildUpsellCardDefault from "GameCommunityMultiGuildUpsellCard" /* 16208 */;
+import GameCommunityMultiGuildUpsellCardDefault from "GameCommunityMultiGuildUpsellCard" /* 16727 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15450 */;
-import createStyles from "createStyles" /* 4890 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15931 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const viewabilityConfig = { itemVisiblePercentThreshold: 50, minimumViewTime: 50
 let c8 = 0;
 let closure_9 = createStyles.createStyles({ hidden: { opacity: 0 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnViewableItemsChanged(arg0, arg1) {
   let closure_0;
   let first;
   let ref;
@@ -53,7 +53,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, 
   } else {
     tmp7 = cResult[1];
   }
-  const tmpResult = tmp(1491);
+  const tmpResult = tmp(1504);
   const focusEffect = tmpResult.useFocusEffect(tmp7);
   if (cResult[2] === arg1) {
     let tmp9;
@@ -91,7 +91,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, 
   cResult[3] = arg0;
   cResult[4] = fn2;
   tmp9 = fn2;
-}) : ((arg0, arg1) => {
+}) : (function useOnViewableItemsChanged(arg0, arg1) {
   let closure_0;
   let ref;
   _require = arg0;
@@ -132,7 +132,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, 
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OneColumnGuildUpsellList(onDismiss) {
   let cardAction;
   let closure_4;
   let contentContainerStyle;
@@ -182,21 +182,21 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
   first1 = tmp8[0];
   react = tmp8[1];
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class G {
+    class O {
       constructor(nativeEvent) {
         const y = nativeEvent.nativeEvent.contentOffset.y;
       }
     }
-    cResult[2] = G;
+    cResult[2] = O;
   } else {
-    class G {
+    class O {
       constructor(nativeEvent) {
         const y = nativeEvent.nativeEvent.contentOffset.y;
       }
     }
   }
   if (cResult[3] !== first1) {
-    class M {
+    class A {
       constructor() {
         tmp = closure_3;
         if (tmp) {
@@ -224,9 +224,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
       }
     }
     cResult[3] = first1;
-    cResult[4] = M;
+    cResult[4] = A;
   } else {
-    class M {
+    class A {
       constructor() {
         tmp = closure_3;
         if (tmp) {
@@ -255,7 +255,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
     }
   }
   if (cResult[5] !== first1) {
-    class F {
+    class D {
       constructor() {
         if (closure_3) {
           tmp = globalThis;
@@ -270,12 +270,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
     }
     const items = [first1];
     cResult[5] = first1;
-    cResult[6] = F;
+    cResult[6] = D;
     cResult[7] = items;
     tmp13 = items;
-    tmp12 = F;
+    tmp12 = D;
   } else {
-    class F {
+    class D {
       constructor() {
         if (closure_3) {
           tmp = globalThis;
@@ -292,7 +292,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
   }
   const effect = obj2.useEffect(tmp12, tmp13);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class F {
+    class D {
       constructor() {
         if (closure_3) {
           tmp = globalThis;
@@ -316,7 +316,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
     tmp16 = N;
     tmp15 = items1;
   } else {
-    class F {
+    class D {
       constructor() {
         if (closure_3) {
           tmp = globalThis;
@@ -335,7 +335,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
   stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp15, tmp16);
   onDismiss(tmp2[11]);
   if (cResult[10] === cardAction) {
-    class F {
+    class D {
       constructor() {
         if (closure_3) {
           tmp = globalThis;
@@ -349,7 +349,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
       }
     }
   }
-  class Y {
+  class V {
     constructor(item) {
       item = item.item;
       let tmp = null;
@@ -366,8 +366,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDismiss) => {
   cResult[10] = cardAction;
   cResult[11] = stateFromStoresObject;
   cResult[12] = onDismiss;
-  cResult[13] = Y;
-}) : ((cardAction) => {
+  cResult[13] = V;
+}) : (function OneColumnGuildUpsellList(cardAction) {
   let closure_4;
   let closure_8;
   let contentContainerStyle;

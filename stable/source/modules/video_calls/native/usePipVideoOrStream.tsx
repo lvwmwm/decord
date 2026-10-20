@@ -1,32 +1,32 @@
-// Module ID: 9069
-// Function ID: 9070
+// Module ID: 10836
+// Function ID: 10837
 // Name: usePipVideoOrStream
-// Dependencies: [2050, 4906, 9070, 4912, 502, 2051, 1999, 4913, 4911, 558, 576, 4942, 4736, 9056, 504, 2]
+// Dependencies: [2064, 6036, 10837, 5897, 502, 2065, 2012, 5110, 5115, 558, 576, 5900, 4976, 10826, 504, 2]
 
-// Module 9069 (usePipVideoOrStream)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
-import ChannelCallModalDefault from "ChannelCallModal" /* 9056 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
-import VideoSpeakerStore from "VideoSpeakerStore" /* 9070 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
+// Module 10836 (usePipVideoOrStream)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
+import ChannelCallModalDefault from "ChannelCallModal" /* 10826 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
+import VideoSpeakerStore from "VideoSpeakerStore" /* 10837 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import CallConstants from "CallConstants" /* 4911 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import CallConstants from "CallConstants" /* 5115 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, isActivityViewFocused;
+let _require, dependencyMap;
 
 let closure_12;
 let map1;
 let unpackModuleId;
 ({ isStreamParticipant: unpackModuleId, isUserParticipant: closure_12, ParticipantTypes: map1 } = CallConstants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePipVideoOrStream(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -43,7 +43,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function c() {
+    const fn = function s() {
       let allActiveStreamsForChannel;
       let tmp8;
       let videoParticipants;
@@ -84,7 +84,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (participant == null) {
         participant = found1;
       }
-      if (!closure_12(participant)) {
+      if (!authStore2(participant)) {
         tmp8 = participant;
       } else {
         tmp8 = null;
@@ -169,7 +169,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp8, tmp9);
-}) : ((arg0) => {
+}) : (function usePipVideoOrStream(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -217,7 +217,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (participant == null) {
       participant = found1;
     }
-    if (!closure_12(participant)) {
+    if (!authStore2(participant)) {
       tmp8 = participant;
     } else {
       tmp8 = null;
@@ -293,7 +293,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_14 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isActivityViewFocused) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasPipParticipant(isActivityViewFocused) {
   let channelId;
   let streamId;
   let tmp11;
@@ -363,7 +363,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isActivityViewFocuse
   cResult[7] = items2;
   tmp16 = items2;
   tmp15 = fn2;
-}) : ((isActivityViewFocused) => {
+}) : (function useHasPipParticipant(isActivityViewFocused) {
   let channelId;
   let streamId;
   isActivityViewFocused = isActivityViewFocused.isActivityViewFocused;

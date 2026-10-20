@@ -1,15 +1,15 @@
-// Module ID: 16819
-// Function ID: 16820
+// Module ID: 17402
+// Function ID: 17403
 // Name: Separators
-// Dependencies: [19, 17, 7513, 21, 4890, 558, 576, 2]
+// Dependencies: [19, 17, 9308, 21, 5092, 558, 576, 2]
 
-// Module 16819 (Separators)
+// Module 17402 (Separators)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import SearchConstants from "SearchConstants" /* 7513 */;
-import createStyles from "createStyles" /* 4890 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ const jsx = Fragment.jsx;
 let obj = { filesOrLinksSeparator: { height: FILES_OR_LINKS_GAP_WIDTH }, mediaSeparator: { height: MEDIA_ITEM_GAP_WIDTH }, messageSeparator: { height: 4 } };
 let closure_4 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageVerticalSeparator() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -35,9 +35,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => <View style={closure_4().messageSeparator} />);
+}) : (function MessageVerticalSeparator() {
+  return <View style={closure_4().messageSeparator} />;
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaVerticalSeparator() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -51,9 +53,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => <View style={closure_4().mediaSeparator} />);
+}) : (function MediaVerticalSeparator() {
+  return <View style={closure_4().mediaSeparator} />;
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CardVerticalSeparator() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -67,7 +71,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => <View style={closure_4().filesOrLinksSeparator} />);
+}) : (function CardVerticalSeparator() {
+  return <View style={closure_4().filesOrLinksSeparator} />;
+});
 const result = size.fileFinishedImporting("modules/search/native/components/list/rows/Separators.tsx");
 
 export const MessageVerticalSeparator = tmp4;

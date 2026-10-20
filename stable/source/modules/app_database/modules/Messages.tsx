@@ -1,21 +1,21 @@
-// Module ID: 6986
-// Function ID: 6987
+// Module ID: 7194
+// Function ID: 7195
 // Name: modules/Messages
-// Dependencies: [5, 32, 5436, 2051, 6987, 3, 5435, 2078, 6993, 6996, 2079, 2]
+// Dependencies: [5, 32, 5757, 2065, 7195, 3, 5756, 2091, 7201, 7204, 2092, 11, 2]
 // Exports: isLikelyNotDelta
 
-// Module 6986 (modules/Messages)
+// Module 7194 (modules/Messages)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2078 */;
-import _mod2079 from "module_2079" /* 2079 */;
-import requireSortedDescending from "requireSortedDescending" /* 5435 */;
-import isReadableChannel from "isReadableChannel" /* 6993 */;
-import KvMessage2 from "KvMessage" /* 6996 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2091 */;
+import _mod2092 from "module_2092" /* 2092 */;
+import requireSortedDescending from "requireSortedDescending" /* 5756 */;
+import isReadableChannel from "isReadableChannel" /* 7201 */;
+import KvMessage2 from "KvMessage" /* 7204 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import SaveableChannelsStore from "SaveableChannelsStore" /* 6987 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import SaveableChannelsStore from "SaveableChannelsStore" /* 7195 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, dependencyMap, importDefault;
@@ -351,7 +351,7 @@ class Messages {
     const put = messagesTransactionResult.put;
     const KvMessage = KvMessage2.KvMessage;
     const fromMessageResult = KvMessage.fromMessage(guildId, channel_id, item10009, result);
-    put(guildId, channel_id, fromMessageResult, _mod2079.ConflictOptions.Skip);
+    put(guildId, channel_id, fromMessageResult, _mod2092.ConflictOptions.Skip);
   }
   upsertOne(guildId, channelId, message, database) {
     const obj = DatabaseDaosDefault;
@@ -360,7 +360,7 @@ class Messages {
     const put = messagesTransactionResult.put;
     const KvMessage = KvMessage2.KvMessage;
     const fromMessageResult = KvMessage.fromMessage(guildId, channelId, message, result);
-    put(guildId, channelId, fromMessageResult, _mod2079.ConflictOptions.Replace);
+    put(guildId, channelId, fromMessageResult, _mod2092.ConflictOptions.Replace);
     messagesTransactionResult.trimChannel(guildId, channelId, SaveableChannelsStore.saveLimit(channelId));
   }
   upsertMany(guild_id, channelId, messages, database) {
@@ -377,24 +377,26 @@ class Messages {
     }
     messagesTransactionResult.trimChannel(guild_id, channelId, SaveableChannelsStore.saveLimit(channelId));
   }
-  replaceChannel(arg0, channelId, arr, database) {
+  replaceChannel(arg0, channelId, arg2, database) {
     let closure_2;
     let closure_0 = arg0;
     importDefault = channelId;
-    const obj = DatabaseDaosDefault;
+    let obj = DatabaseDaosDefault;
     const messagesTransactionResult = obj.messagesTransaction(database);
     dependencyMap = GatewayConnectionStore.lastTimeConnectedChanged();
+    const items = [];
     const saveLimitResult = SaveableChannelsStore.saveLimit(channelId);
-    let substr = arr;
-    const obj3 = SaveableChannelsStore;
-    if (arr.length > saveLimitResult) {
-      substr = arr.slice(arr.length - saveLimitResult);
-    }
+    HermesBuiltin.arraySpread(items, arg2, 0);
+    const sorted = items.sort((id, id2) => {
+      const obj = channelId(closure_2[11]);
+      return obj.compare(id2.id, id.id);
+    });
+    const substr = sorted.slice(0, saveLimitResult);
     messagesTransactionResult.replaceChannel(arg0, channelId, substr.map((item) => {
       const KvMessage = KvMessage2.KvMessage;
       return KvMessage.fromMessage(closure_0, channelId, item, closure_2);
     }));
-    messagesTransactionResult.trimChannel(arg0, channelId, obj3.saveLimit(channelId));
+    messagesTransactionResult.trimChannel(arg0, channelId, SaveableChannelsStore.saveLimit(channelId));
   }
   updateOne(guildId, channel_id, message, database) {
     let closure_0 = guildId;

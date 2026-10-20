@@ -1,21 +1,21 @@
-// Module ID: 10103
-// Function ID: 10104
+// Module ID: 9746
+// Function ID: 9747
 // Name: GIFPickerItemView
-// Dependencies: [19, 17, 21, 4890, 10093, 587, 558, 576, 1881, 4854, 10104, 1987, 1126, 5909, 5974, 2]
+// Dependencies: [19, 17, 21, 5092, 9735, 587, 558, 576, 1894, 5056, 9747, 2000, 1126, 6185, 6157, 2]
 // Exports: default
 
-// Module 10103 (GIFPickerItemView)
+// Module 9746 (GIFPickerItemView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10093 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 9735 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let closure_6 = createStyles.createStyles((height) => {
   return obj;
 });
 let memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((height) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GIFPickerItemPlaceholder(height) {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(5);
@@ -54,7 +54,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((height)
   cResult[3] = tmp3;
   cResult[4] = tmp8;
   tmp7 = tmp8;
-}) : ((height) => {
+}) : (function GIFPickerItemPlaceholder(height) {
   const tmp = closure_6(height.height);
   return <View style={tmp.container}>{null}</View>;
 }));
@@ -79,7 +79,7 @@ export default function GIFPickerItemView(onPressGIF) {
   const callback1 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { item };
-    obj.openLazy(asyncRequire(10104, dependencyMap.paths), "GIFPickerItemActionSheet", obj2, "stack");
+    obj.openLazy(asyncRequire(9747, dependencyMap.paths), "GIFPickerItemActionSheet", obj2, "stack");
     const obj3 = KeyboardManagerUtils;
     const result = obj3.dismissGlobalKeyboard();
   }, items1);

@@ -1,34 +1,34 @@
-// Module ID: 10556
-// Function ID: 10557
+// Module ID: 10182
+// Function ID: 10183
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 6930, 1377, 1085, 1379, 21, 4890, 587, 558, 576, 6471, 6663, 504, 1252, 10557, 1369, 584, 10531, 10543, 1126, 4886, 10549, 5594, 2]
+// Dependencies: [5, 32, 19, 17, 7144, 1390, 1085, 1392, 21, 5092, 587, 558, 576, 6665, 6858, 504, 1265, 10183, 1382, 584, 10157, 10169, 1126, 5088, 10175, 5379, 2]
 
-// Module 10556 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 10182 (SocialLayerStorefrontGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 6930 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10531 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7144 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10157 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c1, c2, recipient, skuId;
+let c1, c2, recipient;
 
 let closure_12;
 let unpackModuleId;
 const View = react_native.View;
 let useNativeCheckoutStore = NativeCheckoutStore.useNativeCheckoutStore;
-let AnalyticEvents = Constants.AnalyticEvents;
+const AnalyticEvents = Constants.AnalyticEvents;
 const GiftingOrigin = PremiumConstants.GiftingOrigin;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let closure_13 = createStyles.createStyles((arg0) => {
@@ -39,12 +39,11 @@ let closure_13 = createStyles.createStyles((arg0) => {
   ({ display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_4 });
   return obj;
 });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerStorefrontGiftPurchaseSection(skuId) {
   let closure_7;
   let first;
   let giftOptions;
   let isPurchaseDisabled;
-  let ref;
   let tmp11;
   let tmp13;
   let tmp16;
@@ -75,7 +74,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     first = cResult[0];
   }
   if (cResult[1] !== giftOptions.recipient_id) {
-    const fn = function f() {
+    const fn = function h() {
       return UserStore.getUser(giftOptions.recipient_id);
     };
     cResult[1] = giftOptions.recipient_id;
@@ -121,15 +120,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   const tmp14Result = useNativeCheckoutStore(tmp16);
   useNativeCheckoutStore = tmp14Result;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
+    class M {
       constructor(isPatchOrderLoading) {
         return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
       }
     }
-    cResult[5] = R;
-    tmp18 = R;
+    cResult[5] = M;
+    tmp18 = M;
   } else {
-    class R {
+    class M {
       constructor(isPatchOrderLoading) {
         return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
       }
@@ -138,10 +137,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   useNativeCheckoutStore(tmp18);
   [r10083, UserStore] = analyticsLocations(stateFromStores.useState(false), 2);
   analyticsLocations(stateFromStores.useState(false), 2);
-  AnalyticEvents = stateFromStores.useRef(false);
+  const ref = stateFromStores.useRef(false);
   if (cResult[6] === tmp15) {
     let tmp21;
-    class R {
+    class M {
       constructor(isPatchOrderLoading) {
         return isPatchOrderLoading.isPatchOrderLoading || isPatchOrderLoading.isCreateOrderLoading;
       }
@@ -241,21 +240,19 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     cResult[18] = skuId;
     cResult[19] = V;
   }
-  class G {
-    constructor() {
-      if (ref.current) {
-        tmp.current = false;
-        const obj = AnalyticsUtilsDefault;
-        obj.track(AnalyticEvents.PAYMENT_FLOW_FAILED, closure_6);
-        closure_7();
-      }
-      UserStore(false);
+  const fn2 = function x() {
+    if (ref.current) {
+      tmp.current = false;
+      const obj = AnalyticsUtilsDefault;
+      obj.track(AnalyticEvents.PAYMENT_FLOW_FAILED, closure_6);
+      closure_7();
     }
-  }
+    UserStore(false);
+  };
   cResult[6] = tmp15;
   cResult[7] = tmp14Result;
-  cResult[8] = G;
-}) : ((skuId) => {
+  cResult[8] = fn2;
+}) : (function SocialLayerStorefrontGiftPurchaseSection(skuId) {
   let _undefined;
   let analyticsLocations;
   let c8;
@@ -277,7 +274,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   let ref;
   let onPurchaseError;
   let awaitSync;
-  closure_12 = undefined;
+  let closure_12;
   const tmp = sku;
   const tmp2 = giftOptions;
   const tmp3 = closure_13(sku(giftOptions[13])().insets.bottom);

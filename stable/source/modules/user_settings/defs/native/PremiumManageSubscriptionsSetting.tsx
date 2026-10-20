@@ -1,27 +1,27 @@
-// Module ID: 14795
-// Function ID: 14796
+// Module ID: 15274
+// Function ID: 15275
 // Name: PremiumManageSubscriptionsSetting
-// Dependencies: [19, 1085, 558, 576, 6923, 11092, 4528, 13202, 11129, 1126, 14796, 14794, 2]
+// Dependencies: [19, 1085, 558, 576, 7137, 10496, 4769, 13693, 10664, 1126, 15275, 15273, 2]
 
-// Module 14795 (PremiumManageSubscriptionsSetting)
+// Module 15274 (PremiumManageSubscriptionsSetting)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import PremiumUtils from "PremiumUtils" /* 4528 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 6923 */;
-import SubscriptionIcon from "SubscriptionIcon" /* 14796 */;
+import PremiumUtils from "PremiumUtils" /* 4769 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7137 */;
+import SubscriptionIcon from "SubscriptionIcon" /* 15275 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
-const MobileNitroManageSubscriptionsSettingsExperiment = tmp(13202);
+const MobileNitroManageSubscriptionsSettingsExperiment = tmp(13693);
 const UserSettingsSections = Constants.UserSettingsSections;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanNavigateToPaymentSetting() {
   let first;
   let obj = react2;
   const cResult = obj.c(1);
@@ -43,19 +43,21 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => react.useCallback(() => {
-  const obj = BlockedPaymentsCountryExperiment;
-  const isPaymentsBlocked = obj.getIsPaymentsBlocked();
-  let flag = !isPaymentsBlocked;
-  const tmp = dependencyMap;
-  if (isPaymentsBlocked) {
-    require("openBlockedPaymentsCountryActionSheet")();
-    flag = false;
-  }
-  return flag;
-}, []));
+}) : (function useCanNavigateToPaymentSetting() {
+  return react.useCallback(() => {
+    const obj = BlockedPaymentsCountryExperiment;
+    const isPaymentsBlocked = obj.getIsPaymentsBlocked();
+    let flag = !isPaymentsBlocked;
+    const tmp = dependencyMap;
+    if (isPaymentsBlocked) {
+      require("openBlockedPaymentsCountryActionSheet")();
+      flag = false;
+    }
+    return flag;
+  }, []);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowManageSubscriptionsSetting() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -73,7 +75,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     hasPremiumSubscriptionToDisplay = tmpResult.useMobileNitroManageSubscriptionsSettingsExperiment(first);
   }
   return hasPremiumSubscriptionToDisplay;
-}) : (() => {
+}) : (function useShowManageSubscriptionsSetting() {
   const obj = PremiumUtils;
   let hasPremiumSubscriptionToDisplay = obj.useHasPremiumSubscriptionToDisplay();
   const obj2 = MobileNitroManageSubscriptionsSettingsExperiment;

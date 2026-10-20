@@ -1,23 +1,23 @@
-// Module ID: 15623
-// Function ID: 15624
+// Module ID: 16124
+// Function ID: 16125
 // Name: InternalBuildUpdateSetting
-// Dependencies: [14158, 21, 13719, 558, 576, 504, 4461, 14650, 4845, 14778, 11129, 2]
+// Dependencies: [14653, 21, 14139, 558, 576, 504, 4702, 15126, 5044, 15257, 10664, 2]
 
-// Module 15623 (InternalBuildUpdateSetting)
+// Module 16124 (InternalBuildUpdateSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import _modDef4461 from "module_4461" /* 4461 */;
-import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 13719 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14650 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 14158 */;
+import _modDef4702 from "module_4702" /* 4702 */;
+import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 14139 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15126 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 14653 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInternalBuildUpdateDescription() {
   let str;
   let tmp4;
   let tmp5;
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     if (null != stateFromStores1) {
       let tmp12;
       if (cResult[4] !== stateFromStores1) {
-        const obj4 = _modDef4461(stateFromStores1);
+        const obj4 = _modDef4702(stateFromStores1);
         const fromNowResult = obj4.fromNow();
         cResult[4] = stateFromStores1;
         cResult[5] = fromNowResult;
@@ -80,7 +80,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   return str;
-}) : (() => {
+}) : (function useInternalBuildUpdateDescription() {
   let str;
   const items = [MobileNativeUpdateStore];
   const obj = get_initialized;
@@ -102,24 +102,24 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     str = "Never refreshed";
     if (null != stateFromStores1) {
       const _HermesInternal = HermesInternal;
-      const obj3 = _modDef4461(stateFromStores1);
+      const obj3 = _modDef4702(stateFromStores1);
       str = "Last refreshed " + obj3.fromNow();
     }
   }
   return str;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasInternalBuildUpdateSetting() {
   const obj = useIsStaffOrDeveloperSettingPredicate;
   const tmp = MobileNativeUpdateStore.hasUpdatesConfigured && obj.useStaffOrDeveloperSettingPredicate();
   return tmp;
-}) : (() => {
+}) : (function useHasInternalBuildUpdateSetting() {
   const obj = useIsStaffOrDeveloperSettingPredicate;
   const tmp = MobileNativeUpdateStore.hasUpdatesConfigured && obj.useStaffOrDeveloperSettingPredicate();
   return tmp;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstallNativeUpdateIcon() {
   let tmp4;
   let tmp5;
   let tmp8;
@@ -143,9 +143,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let RefreshIcon;
     const tmp9 = jsx;
     if (stateFromStores) {
-      RefreshIcon = tmp(4845).DownloadIcon;
+      RefreshIcon = tmp(5044).DownloadIcon;
     } else {
-      RefreshIcon = tmp(14778).RefreshIcon;
+      RefreshIcon = tmp(15257).RefreshIcon;
     }
     const tmp9Result = tmp9(RefreshIcon, {});
     cResult[2] = stateFromStores;
@@ -155,15 +155,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[3];
   }
   return tmp8;
-}) : (() => {
+}) : (function InstallNativeUpdateIcon() {
   let RefreshIcon;
   const items = [MobileNativeUpdateStore];
   const obj = get_initialized;
   const tmp3 = jsx;
   if (obj.useStateFromStores(items, () => null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild)) {
-    RefreshIcon = tmp(4845).DownloadIcon;
+    RefreshIcon = tmp(5044).DownloadIcon;
   } else {
-    RefreshIcon = tmp(14778).RefreshIcon;
+    RefreshIcon = tmp(15257).RefreshIcon;
   }
   return tmp3(RefreshIcon, {});
 });

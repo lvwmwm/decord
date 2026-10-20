@@ -1,33 +1,31 @@
-// Module ID: 13382
-// Function ID: 13383
+// Module ID: 13873
+// Function ID: 13874
 // Name: GuildPowerupsMarketingHeader
-// Dependencies: [19, 17, 4767, 21, 4890, 587, 683, 558, 576, 4886, 13383, 12147, 12170, 13384, 1126, 2525, 2]
+// Dependencies: [19, 17, 5007, 21, 5092, 587, 683, 558, 576, 5088, 13874, 12231, 12254, 13875, 1126, 2600, 2]
 
-// Module 13382 (GuildPowerupsMarketingHeader)
+// Module 13873 (GuildPowerupsMarketingHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import intl3 from "intl" /* 1126 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12147 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12170 */;
-import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 13383 */;
-import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 13384 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12231 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12254 */;
+import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 13874 */;
+import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 13875 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4767 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5007 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let guild, powerup;
 
 let alphaResult;
 let alphaResult1;
 let obj2;
 let obj4;
 let tmp;
-const Text_Text = tmp(4886);
+const Text_Text = tmp(5088);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -41,7 +39,7 @@ const obj6 = _modDef683("#FFFFFF");
 alphaResult1 = obj6.alpha(0.5);
 let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((powerup) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerkText(powerup) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -55,13 +53,14 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((powerup) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((children) => jsx(Text_Text.Text, { color: "text-overlay-light", variant: "text-sm/semibold", children: children.powerup.title }));
+}) : (function PerkText(children) {
+  return jsx(Text_Text.Text, { color: "text-overlay-light", variant: "text-sm/semibold", children: children.powerup.title });
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsMarketingHeader(guild) {
   let arr;
   let container;
   let text;
-  let tmp18;
   let tmp6;
   let tmp7;
   let tmp = guild;
@@ -69,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const cResult = obj.c(13);
   guild = guild.guild;
   const tmp4 = closure_7();
-  arr = arr(13383)(guild.id);
+  arr = arr(13874)(guild.id);
   if (cResult[0] !== guild.id) {
     const fn = function s() {
       const tmp = guild;
@@ -89,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     tmp7 = cResult[2];
   }
   const effect = react.useEffect(tmp6, tmp7);
-  if (arr(12170)(guild.id)) {
+  if (arr(12254)(guild.id)) {
     let num4;
     if (arr != null) {
       num4 = arr.length;
@@ -98,170 +97,74 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       num4 = 0;
     }
     if (0 !== num4) {
+      let tmp10;
+      let tmp11;
       if (cResult[3] !== arr) {
-        class F {
-          constructor() {
-            if (null != arr) {
-              if (0 !== arr.length) {
-                let formatResult;
-                const arr2 = orderMarketablePerksForDisplayDefault(arr);
-                const tmp7 = importDefault;
-                if (1 === arr2.length) {
-                  formatResult = <closure_8 powerup={arr2[0]} />;
-                } else {
-                  const intl = intl3.intl;
-                  const format = intl.format;
-                  const obj = { perk1: null, perk2: null };
-                  const MNO3sG = tmp7(2525).MNO3sG;
-                  formatResult = format(MNO3sG, obj);
-                }
-                return formatResult;
+        function getPerkString() {
+          if (null != arr) {
+            if (0 !== arr.length) {
+              let formatResult;
+              const arr2 = orderMarketablePerksForDisplayDefault(arr);
+              const tmp7 = importDefault;
+              if (1 === arr2.length) {
+                formatResult = <closure_8 powerup={arr2[0]} />;
+              } else {
+                const intl = intl3.intl;
+                const format = intl.format;
+                const obj = { perk1: null, perk2: null };
+                const MNO3sG = tmp7(2600).MNO3sG;
+                formatResult = format(MNO3sG, obj);
               }
+              return formatResult;
             }
-            return "";
           }
+          return "";
         }
         cResult[3] = arr;
-        cResult[4] = F;
+        cResult[4] = getPerkString;
+        tmp10 = getPerkString;
       } else {
-        class F {
-          constructor() {
-            if (null != arr) {
-              if (0 !== arr.length) {
-                let formatResult;
-                const arr2 = orderMarketablePerksForDisplayDefault(arr);
-                const tmp7 = importDefault;
-                if (1 === arr2.length) {
-                  formatResult = <closure_8 powerup={arr2[0]} />;
-                } else {
-                  const intl = intl3.intl;
-                  const format = intl.format;
-                  const obj = { perk1: null, perk2: null };
-                  const MNO3sG = tmp7(2525).MNO3sG;
-                  formatResult = format(MNO3sG, obj);
-                }
-                return formatResult;
-              }
-            }
-            return "";
-          }
-        }
+        tmp10 = cResult[4];
       }
       ({ container, text } = tmp4);
       if (cResult[5] !== tmp10) {
-        class F {
-          constructor() {
-            if (null != arr) {
-              if (0 !== arr.length) {
-                let formatResult;
-                const arr2 = orderMarketablePerksForDisplayDefault(arr);
-                const tmp7 = importDefault;
-                if (1 === arr2.length) {
-                  formatResult = <closure_8 powerup={arr2[0]} />;
-                } else {
-                  const intl = intl3.intl;
-                  const format = intl.format;
-                  const obj = { perk1: null, perk2: null };
-                  const MNO3sG = tmp7(2525).MNO3sG;
-                  formatResult = format(MNO3sG, obj);
-                }
-                return formatResult;
-              }
-            }
-            return "";
-          }
-        }
-        let format = tmp12.format;
+        let intl = tmp(1126).intl;
+        let format = intl.format;
         const obj2 = { perks: tmp10() };
-        const v7lwpzR = tmp5(2525)["7lwpzR"];
+        const v7lwpzR = tmp5(2600)["7lwpzR"];
         let formatResult = format(v7lwpzR, obj2);
         cResult[5] = tmp10;
         cResult[6] = formatResult;
+        tmp11 = formatResult;
       } else {
-        class F {
-          constructor() {
-            if (null != arr) {
-              if (0 !== arr.length) {
-                let formatResult;
-                const arr2 = orderMarketablePerksForDisplayDefault(arr);
-                const tmp7 = importDefault;
-                if (1 === arr2.length) {
-                  formatResult = <closure_8 powerup={arr2[0]} />;
-                } else {
-                  const intl = intl3.intl;
-                  const format = intl.format;
-                  const obj = { perk1: null, perk2: null };
-                  const MNO3sG = tmp7(2525).MNO3sG;
-                  formatResult = format(MNO3sG, obj);
-                }
-                return formatResult;
-              }
-            }
-            return "";
-          }
-        }
+        tmp11 = cResult[6];
       }
       if (cResult[7] === tmp4.text) {
-        class F {
-          constructor() {
-            if (null != arr) {
-              if (0 !== arr.length) {
-                let formatResult;
-                const arr2 = orderMarketablePerksForDisplayDefault(arr);
-                const tmp7 = importDefault;
-                if (1 === arr2.length) {
-                  formatResult = <closure_8 powerup={arr2[0]} />;
-                } else {
-                  const intl = intl3.intl;
-                  const format = intl.format;
-                  const obj = { perk1: null, perk2: null };
-                  const MNO3sG = tmp7(2525).MNO3sG;
-                  formatResult = format(MNO3sG, obj);
-                }
-                return formatResult;
-              }
-            }
-            return "";
-          }
+        let tmp14;
+        if (cResult[8] === tmp11) {
+          tmp14 = cResult[9];
         }
         if (cResult[10] === tmp4.container) {
-          class F {
-            constructor() {
-              if (null != arr) {
-                if (0 !== arr.length) {
-                  let formatResult;
-                  const arr2 = orderMarketablePerksForDisplayDefault(arr);
-                  const tmp7 = importDefault;
-                  if (1 === arr2.length) {
-                    formatResult = <closure_8 powerup={arr2[0]} />;
-                  } else {
-                    const intl = intl3.intl;
-                    const format = intl.format;
-                    const obj = { perk1: null, perk2: null };
-                    const MNO3sG = tmp7(2525).MNO3sG;
-                    formatResult = format(MNO3sG, obj);
-                  }
-                  return formatResult;
-                }
-              }
-              return "";
-            }
+          let tmp17;
+          if (cResult[11] === tmp14) {
+            tmp17 = cResult[12];
           }
-          return tmp18;
+          return tmp17;
         }
-        const tmp21 = <View style={container}>{tmp15}</View>;
+        const tmp20 = <View style={container}>{tmp14}</View>;
         cResult[10] = tmp4.container;
-        cResult[11] = tmp15;
-        cResult[12] = tmp21;
-        tmp18 = tmp21;
+        cResult[11] = tmp14;
+        cResult[12] = tmp20;
+        tmp17 = tmp20;
       }
+      const tmp16 = jsx(tmp(5088).Text, { style: text, variant: "text-sm/semibold", children: tmp11 });
       cResult[7] = tmp4.text;
       cResult[8] = tmp11;
-      cResult[9] = jsx(tmp(4886).Text, { style: text, variant: "text-sm/semibold", children: tmp11 });
-      const tmp17 = jsx(tmp(4886).Text, { style: text, variant: "text-sm/semibold", children: tmp11 });
+      cResult[9] = tmp16;
+      tmp14 = tmp16;
     }
   }
-}) : ((guild) => {
+}) : (function GuildPowerupsMarketingHeader(guild) {
   let format;
   let v7lwpzR;
   guild = guild.guild;
@@ -285,11 +188,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
     if (0 !== num) {
       ({ style: tmp.text, variant: "text-sm/semibold", children: format(v7lwpzR, obj7) });
-      const Text = guild(4886).Text;
+      const Text = guild(5088).Text;
       const intl = guild(1126).intl;
       format = intl.format;
       let str2 = "";
-      v7lwpzR = tmp2(2525)["7lwpzR"];
+      v7lwpzR = tmp2(2600)["7lwpzR"];
       const tmp8 = guild;
       if (null != arr) {
         str2 = "";
@@ -302,7 +205,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             const intl2 = tmp8(1126).intl;
             const format2 = intl2.format;
             const obj4 = { perk1: null, perk2: null };
-            const MNO3sG = tmp2(2525).MNO3sG;
+            const MNO3sG = tmp2(2600).MNO3sG;
             format2Result = format2(MNO3sG, obj4);
           }
         }

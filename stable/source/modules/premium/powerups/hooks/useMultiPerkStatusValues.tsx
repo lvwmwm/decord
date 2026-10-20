@@ -1,20 +1,20 @@
-// Module ID: 12232
-// Function ID: 12233
+// Module ID: 12316
+// Function ID: 12317
 // Name: useMultiPerkStatusValues
-// Dependencies: [4768, 558, 576, 12159, 1126, 2525, 2]
+// Dependencies: [5008, 558, 576, 12243, 1126, 2600, 2]
 
-// Module 12232 (useMultiPerkStatusValues)
+// Module 12316 (useMultiPerkStatusValues)
 import react from "react" /* 576 */;
-import _modDef2525 from "module_2525" /* 2525 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4768 */;
-import usePowerupActiveStatus from "usePowerupActiveStatus" /* 12159 */;
+import _modDef2600 from "module_2600" /* 2600 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5008 */;
+import usePowerupActiveStatus from "usePowerupActiveStatus" /* 12243 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const intl2 = tmp(1126);
 const PowerupActiveStatusType = GuildPowerupsConstants.PowerupActiveStatusType;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMultiPerkStatusValues(arg0) {
   let guildId;
   let intl;
   let powerups;
@@ -52,7 +52,6 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     let tmp8;
     let tmp13;
-    let tmp18;
     let tmp29;
     if (cResult[3] !== powerupsActiveStatuses) {
       let tmp10;
@@ -103,7 +102,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp15;
       const _Symbol3 = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj4 = { type: "active", statusText: intl.string(_modDef2525.FFLkmx) };
+        const obj4 = { type: "active", statusText: intl.string(_modDef2600.FFLkmx) };
         intl = intl2.intl;
         cResult[8] = obj4;
         tmp15 = obj4;
@@ -116,192 +115,128 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp20;
       const _Symbol4 = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn3 = function x(arg0, type) {
+        class S {
+          constructor(arg0, type) {
+            let sum = arg0;
+            if (type.type === constants.POWERUP_ACTIVATED) {
+              sum = arg0 + type.powerup.cost;
+            }
+            return sum;
+          }
+        }
+        cResult[11] = S;
+        tmp20 = S;
+      } else {
+        class S {
+          constructor(arg0, type) {
+            let sum = arg0;
+            if (type.type === constants.POWERUP_ACTIVATED) {
+              sum = arg0 + type.powerup.cost;
+            }
+            return sum;
+          }
+        }
+      }
+      const reduced1 = powerupsActiveStatuses.reduce(tmp20, 0);
+      cResult[9] = powerupsActiveStatuses;
+      cResult[10] = reduced1;
+    } else {
+      class S {
+        constructor(arg0, type) {
           let sum = arg0;
           if (type.type === constants.POWERUP_ACTIVATED) {
             sum = arg0 + type.powerup.cost;
           }
           return sum;
-        };
-        cResult[11] = fn3;
-        tmp20 = fn3;
-      } else {
-        tmp20 = cResult[11];
+        }
       }
-      const reduced1 = powerupsActiveStatuses.reduce(tmp20, 0);
-      cResult[9] = powerupsActiveStatuses;
-      cResult[10] = reduced1;
-      tmp18 = reduced1;
-    } else {
-      tmp18 = cResult[10];
     }
     if (cResult[12] !== powerupsActiveStatuses) {
-      let tmp24;
+      let tmp23;
+      class S {
+        constructor(arg0, type) {
+          let sum = arg0;
+          if (type.type === constants.POWERUP_ACTIVATED) {
+            sum = arg0 + type.powerup.cost;
+          }
+          return sum;
+        }
+      }
       const _Symbol5 = Symbol;
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        class E {
-          constructor(arg0, powerup) {
-            powerup = powerup.powerup;
-            let num;
-            if (powerup != null) {
-              num = powerup.cost;
+        class S {
+          constructor(arg0, type) {
+            let sum = arg0;
+            if (type.type === constants.POWERUP_ACTIVATED) {
+              sum = arg0 + type.powerup.cost;
             }
-            if (num == null) {
-              num = 0;
-            }
-            let tmp = arg0;
-            if (arg0 >= num) {
-              let num2;
-              if (powerup != null) {
-                num2 = powerup.cost;
-              }
-              if (num2 == null) {
-                num2 = 0;
-              }
-              tmp = num2;
-            }
-            return tmp;
+            return sum;
           }
         }
-        cResult[14] = E;
-        tmp24 = E;
+        cResult[14] = tmp24;
+        tmp23 = tmp24;
       } else {
-        class E {
-          constructor(arg0, powerup) {
-            powerup = powerup.powerup;
-            let num;
-            if (powerup != null) {
-              num = powerup.cost;
+        class S {
+          constructor(arg0, type) {
+            let sum = arg0;
+            if (type.type === constants.POWERUP_ACTIVATED) {
+              sum = arg0 + type.powerup.cost;
             }
-            if (num == null) {
-              num = 0;
-            }
-            let tmp = arg0;
-            if (arg0 >= num) {
-              let num2;
-              if (powerup != null) {
-                num2 = powerup.cost;
-              }
-              if (num2 == null) {
-                num2 = 0;
-              }
-              tmp = num2;
-            }
-            return tmp;
+            return sum;
           }
         }
       }
       const reduce = powerupsActiveStatuses.reduce;
       if (powerupsActiveStatuses[0] != null) {
-        class E {
-          constructor(arg0, powerup) {
-            powerup = powerup.powerup;
-            let num;
-            if (powerup != null) {
-              num = powerup.cost;
+        class S {
+          constructor(arg0, type) {
+            let sum = arg0;
+            if (type.type === constants.POWERUP_ACTIVATED) {
+              sum = arg0 + type.powerup.cost;
             }
-            if (num == null) {
-              num = 0;
-            }
-            let tmp = arg0;
-            if (arg0 >= num) {
-              let num2;
-              if (powerup != null) {
-                num2 = powerup.cost;
-              }
-              if (num2 == null) {
-                num2 = 0;
-              }
-              tmp = num2;
-            }
-            return tmp;
+            return sum;
           }
         }
         if (tmp26 != null) {
-          class E {
-            constructor(arg0, powerup) {
-              powerup = powerup.powerup;
-              let num;
-              if (powerup != null) {
-                num = powerup.cost;
+          class S {
+            constructor(arg0, type) {
+              let sum = arg0;
+              if (type.type === constants.POWERUP_ACTIVATED) {
+                sum = arg0 + type.powerup.cost;
               }
-              if (num == null) {
-                num = 0;
-              }
-              let tmp = arg0;
-              if (arg0 >= num) {
-                let num2;
-                if (powerup != null) {
-                  num2 = powerup.cost;
-                }
-                if (num2 == null) {
-                  num2 = 0;
-                }
-                tmp = num2;
-              }
-              return tmp;
+              return sum;
             }
           }
         }
       }
       if (undefined == null) {
-        class E {
-          constructor(arg0, powerup) {
-            powerup = powerup.powerup;
-            let num;
-            if (powerup != null) {
-              num = powerup.cost;
+        class S {
+          constructor(arg0, type) {
+            let sum = arg0;
+            if (type.type === constants.POWERUP_ACTIVATED) {
+              sum = arg0 + type.powerup.cost;
             }
-            if (num == null) {
-              num = 0;
-            }
-            let tmp = arg0;
-            if (arg0 >= num) {
-              let num2;
-              if (powerup != null) {
-                num2 = powerup.cost;
-              }
-              if (num2 == null) {
-                num2 = 0;
-              }
-              tmp = num2;
-            }
-            return tmp;
+            return sum;
           }
         }
       }
-      const reduced2 = reduce(tmp24, tmp25);
+      const reduced2 = reduce(tmp23, tmp25);
       cResult[12] = powerupsActiveStatuses;
       cResult[13] = reduced2;
     } else {
-      class E {
-        constructor(arg0, powerup) {
-          powerup = powerup.powerup;
-          let num;
-          if (powerup != null) {
-            num = powerup.cost;
+      class S {
+        constructor(arg0, type) {
+          let sum = arg0;
+          if (type.type === constants.POWERUP_ACTIVATED) {
+            sum = arg0 + type.powerup.cost;
           }
-          if (num == null) {
-            num = 0;
-          }
-          let tmp = arg0;
-          if (arg0 >= num) {
-            let num2;
-            if (powerup != null) {
-              num2 = powerup.cost;
-            }
-            if (num2 == null) {
-              num2 = 0;
-            }
-            tmp = num2;
-          }
-          return tmp;
+          return sum;
         }
       }
     }
     const _Symbol6 = Symbol;
     if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-      class P {
+      class I {
         constructor(arg0, powerup) {
           powerup = powerup.powerup;
           let num;
@@ -314,10 +249,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return arg0 + num;
         }
       }
-      cResult[15] = P;
-      tmp29 = P;
+      cResult[15] = I;
+      tmp29 = I;
     } else {
-      class P {
+      class I {
         constructor(arg0, powerup) {
           powerup = powerup.powerup;
           let num;
@@ -333,7 +268,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const reduced3 = powerupsActiveStatuses.reduce(tmp29, 0);
     if (tmp4) {
-      class P {
+      class I {
         constructor(arg0, powerup) {
           powerup = powerup.powerup;
           let num;
@@ -348,7 +283,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     if (!tmp4) {
-      class P {
+      class I {
         constructor(arg0, powerup) {
           powerup = powerup.powerup;
           let num;
@@ -362,7 +297,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       if (reduced3 > tmp22) {
-        class P {
+        class I {
           constructor(arg0, powerup) {
             powerup = powerup.powerup;
             let num;
@@ -378,7 +313,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     if (cResult[16] === tmp18) {
-      class P {
+      class I {
         constructor(arg0, powerup) {
           powerup = powerup.powerup;
           let num;
@@ -403,7 +338,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[23] = reduced3;
     cResult[24] = obj5;
   }
-}) : ((powerups) => {
+}) : (function useMultiPerkStatusValues(powerups) {
   let intl;
   let str;
   powerups = powerups.powerups;
@@ -439,7 +374,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp4 = { type: "expiring", expiringAt: reduced };
       const obj2 = { type: "expiring", expiringAt: reduced };
     } else if (someResult) {
-      const obj3 = { type: "active", statusText: intl.string(_modDef2525.FFLkmx) };
+      const obj3 = { type: "active", statusText: intl.string(_modDef2600.FFLkmx) };
       intl = intl2.intl;
       tmp4 = obj3;
     }

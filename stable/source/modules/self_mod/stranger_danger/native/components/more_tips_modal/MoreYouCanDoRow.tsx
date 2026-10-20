@@ -1,9 +1,9 @@
-// Module ID: 9820
-// Function ID: 9821
+// Module ID: 10420
+// Function ID: 10421
 // Name: MoreYouCanDoRow
-// Dependencies: [19, 21, 558, 576, 5993, 2]
+// Dependencies: [19, 21, 558, 576, 6180, 2]
 
-// Module 9820 (MoreYouCanDoRow)
+// Module 10420 (MoreYouCanDoRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -11,9 +11,9 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const TableRow = tmp(5993);
+const TableRow = tmp(6180);
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MoreYouCanDoRow(arg0) {
   let description;
   let disabled;
   let icon;
@@ -47,7 +47,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = variant;
   cResult[6] = tmp5;
   tmp4 = tmp5;
-}) : ((arg0) => {
+}) : (function MoreYouCanDoRow(arg0) {
   let description;
   let disabled;
   let icon;

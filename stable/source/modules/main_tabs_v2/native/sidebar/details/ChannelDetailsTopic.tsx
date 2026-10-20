@@ -1,23 +1,23 @@
-// Module ID: 16913
-// Function ID: 16914
+// Module ID: 17503
+// Function ID: 17504
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1377, 10653, 1085, 21, 1369, 4890, 558, 576, 16914, 4612, 5597, 4877, 5909, 4886, 5605, 4722, 504, 5035, 2]
+// Dependencies: [32, 19, 17, 1390, 9626, 1085, 21, 1382, 5092, 558, 576, 17504, 4850, 5378, 5079, 6185, 5088, 5391, 4962, 504, 5414, 2]
 
-// Module 16913 (ChannelDetailsTopic)
+// Module 17503 (ChannelDetailsTopic)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import UserUtilsDefault from "UserUtils" /* 4722 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4877 */;
-import ChannelUtils from "ChannelUtils" /* 5035 */;
-import spring from "spring" /* 5597 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5079 */;
+import spring from "spring" /* 5378 */;
+import ChannelUtils from "ChannelUtils" /* 5414 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1377 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10653 */;
+import UserStore from "UserStore" /* 1390 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9626 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import createStyles from "createStyles" /* 4890 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ const __initData4 = { code: "function ChannelDetailsTopicTsx4(){const{expandedHe
 const __initData5 = { code: "function ChannelDetailsTopicTsx5(){const{expandedHeight,EMPTY_STYLE}=this.__closure;if(expandedHeight.get()==null)return EMPTY_STYLE;return{height:expandedHeight.get()};}" };
 const __initData6 = { code: "function ChannelDetailsTopicTsx6(){const{withSpring,gradient,SPRING_CHANNEL_DETAILS}=this.__closure;return{opacity:withSpring(gradient.get(),SPRING_CHANNEL_DETAILS)};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildChannelDetailsTopic(arg0) {
   let channel;
   let closure_0;
   let closure_3;
@@ -209,24 +209,22 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[12] = parseTopic(str2.replace(/(\r\n|\n|\r)/gm, " "), true, obj5);
     const parseTopicResult1 = parseTopic(str2.replace(/(\r\n|\n|\r)/gm, " "), true, obj5);
   }
-  class I {
-    constructor(nativeEvent) {
-      importDefault(nativeEvent.nativeEvent.lines.length > metroImportAll);
-      if (nativeEvent.nativeEvent.lines.length > metroImportAll) {
-        let HIDDEN;
-        const tmp5 = first;
-        if (!tmp5) {
-          HIDDEN = constants.VISIBLE;
-        }
-        tmp4(HIDDEN);
+  const fn4 = function f(nativeEvent) {
+    importDefault(nativeEvent.nativeEvent.lines.length > metroImportAll);
+    if (nativeEvent.nativeEvent.lines.length > metroImportAll) {
+      let HIDDEN;
+      const tmp5 = first;
+      if (!tmp5) {
+        HIDDEN = constants.VISIBLE;
       }
-      HIDDEN = constants.HIDDEN;
+      tmp4(HIDDEN);
     }
-  }
+    HIDDEN = constants.HIDDEN;
+  };
   cResult[0] = expanded;
   cResult[1] = sharedValue2;
-  cResult[2] = I;
-}) : ((channel) => {
+  cResult[2] = fn4;
+}) : (function GuildChannelDetailsTopic(channel) {
   let PressableOpacity;
   let Text;
   let closure_3;
@@ -291,36 +289,36 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   fn.__initData = __initData4;
   ({ expandedHeight: sharedValue1, truncatedHeight: sharedValue, EMPTY_STYLE, withSpring: channel(first[13]).withSpring, expanded: first1, SPRING_CHANNEL_DETAILS });
   const animatedStyle = obj5.useAnimatedStyle(fn);
-  const fn2 = function y() {
-    let obj2;
-    const obj = sharedValue1;
-    if (null == sharedValue1.get()) {
-      obj2 = EMPTY_STYLE;
-    } else {
-      obj2 = { height: obj.get() };
-    }
-    return obj2;
-  };
-  fn2.__closure = { expandedHeight: sharedValue1, EMPTY_STYLE };
-  fn2.__workletHash = 16721769117590;
-  fn2.__initData = __initData5;
   const obj7 = channel(first[12]);
-  const animatedStyle1 = obj7.useAnimatedStyle(fn2);
-  const obj8 = channel(first[12]);
-  class N {
+  class D {
     constructor() {
       let obj2;
-      const obj = { opacity: obj2.withSpring(sharedValue2.get(), c9) };
-      obj2 = spring;
-      return obj;
+      const obj = sharedValue1;
+      if (null == sharedValue1.get()) {
+        obj2 = EMPTY_STYLE;
+      } else {
+        obj2 = { height: obj.get() };
+      }
+      return obj2;
     }
   }
-  N.__closure = { withSpring: channel(first[13]).withSpring, gradient: sharedValue2, SPRING_CHANNEL_DETAILS };
-  N.__workletHash = 16158058985911;
-  N.__initData = __initData6;
+  D.__closure = { expandedHeight: sharedValue1, EMPTY_STYLE };
+  D.__workletHash = 16721769117590;
+  D.__initData = __initData5;
+  const animatedStyle1 = obj7.useAnimatedStyle(D);
+  const fn2 = function y() {
+    let obj2;
+    const obj = { opacity: obj2.withSpring(sharedValue2.get(), c9) };
+    obj2 = spring;
+    return obj;
+  };
+  const obj8 = channel(first[12]);
+  fn2.__closure = { withSpring: channel(first[13]).withSpring, gradient: sharedValue2, SPRING_CHANNEL_DETAILS };
+  fn2.__workletHash = 16158058985911;
+  fn2.__initData = __initData6;
   const items = [sharedValue2, first1];
   ({ withSpring: channel(first[13]).withSpring, gradient: sharedValue2, SPRING_CHANNEL_DETAILS });
-  const animatedStyle2 = obj8.useAnimatedStyle(N);
+  const animatedStyle2 = obj8.useAnimatedStyle(fn2);
   const items1 = [sharedValue1];
   const callback = first1.useCallback((nativeEvent) => {
     closure_3(nativeEvent.nativeEvent.lines.length > metroImportAll);
@@ -412,7 +410,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_12(tmp23, obj17);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function PrivateChannelDetailsTopic(channel) {
   let first;
   let tmp6;
   let obj = channel(576);
@@ -467,14 +465,14 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       tmp8 = tmp10;
     }
     const obj3 = { variant: "heading-sm/normal", color: "interactive-text-default", style: tmp9, children: stateFromStores };
-    const tmp12 = closure_11(channel(4886).Text, obj3);
+    const tmp12 = closure_11(channel(5088).Text, obj3);
     cResult[5] = tmp9;
     cResult[6] = stateFromStores;
     cResult[7] = tmp12;
     tmp10 = tmp12;
   }
   return tmp8;
-}) : ((channel) => {
+}) : (function PrivateChannelDetailsTopic(channel) {
   let obj3;
   channel = channel.channel;
   const textAlign = channel.textAlign;
@@ -498,12 +496,12 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (null != stateFromStores) {
     const obj2 = { variant: "heading-sm/normal", color: "interactive-text-default", style: obj3, children: stateFromStores };
     obj3 = { textAlign };
-    tmp4 = closure_11(tmp(4886).Text, obj2);
+    tmp4 = closure_11(tmp(5088).Text, obj2);
   }
   return tmp4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMChannelDetailsTopic(channel) {
   let first;
   let tmp6;
   let obj = channel(576);
@@ -549,14 +547,14 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       tmp8 = tmp10;
     }
     const obj3 = { variant: "heading-sm/normal", color: "interactive-text-default", style: tmp9, children: stateFromStores };
-    const tmp12 = closure_11(channel(4886).Text, obj3);
+    const tmp12 = closure_11(channel(5088).Text, obj3);
     cResult[5] = tmp9;
     cResult[6] = stateFromStores;
     cResult[7] = tmp12;
     tmp10 = tmp12;
   }
   return tmp8;
-}) : ((channel) => {
+}) : (function GroupDMChannelDetailsTopic(channel) {
   let obj3;
   channel = channel.channel;
   const textAlign = channel.textAlign;
@@ -571,12 +569,12 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (null != stateFromStores) {
     const obj2 = { variant: "heading-sm/normal", color: "interactive-text-default", style: obj3, children: stateFromStores };
     obj3 = { textAlign };
-    tmp4 = closure_11(tmp(4886).Text, obj2);
+    tmp4 = closure_11(tmp(5088).Text, obj2);
   }
   return tmp4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelDetailsTopic(arg0) {
   let channel;
   let containerStyle;
   let initialExpanded;
@@ -659,7 +657,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp19 = tmp22;
   }
   return tmp18;
-}) : ((containerStyle) => {
+}) : (function ChannelDetailsTopic(containerStyle) {
   let channel;
   let textAlign;
   let tmp3;

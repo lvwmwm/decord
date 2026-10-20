@@ -1,25 +1,25 @@
-// Module ID: 15659
-// Function ID: 15660
+// Module ID: 16160
+// Function ID: 16161
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 4886, 4580, 4727, 9282, 12282, 12425, 10974, 5594, 5593, 6698, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5088, 4818, 4967, 8525, 12364, 12529, 10602, 5379, 5377, 6896, 2]
 
-// Module 15659 (UserSettingsDesignSystemTabs)
+// Module 16160 (UserSettingsDesignSystemTabs)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4580 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Stack_Stack from "Stack/Stack" /* 5593 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import TableSwitchRow from "TableSwitchRow" /* 6698 */;
-import SegmentedControlState from "SegmentedControlState" /* 9282 */;
-import SegmentedControlPages from "SegmentedControlPages" /* 10974 */;
-import Tabs from "Tabs" /* 12282 */;
-import TabsGradientDefault from "TabsGradient" /* 12425 */;
+import useToken from "useToken" /* 4818 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Stack_Stack from "Stack/Stack" /* 5377 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import TableSwitchRow from "TableSwitchRow" /* 6896 */;
+import SegmentedControlState from "SegmentedControlState" /* 8525 */;
+import SegmentedControlPages from "SegmentedControlPages" /* 10602 */;
+import Tabs from "Tabs" /* 12364 */;
+import TabsGradientDefault from "TabsGradient" /* 12529 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,14 +29,14 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const ColorUtils = tmp(4727);
+const ColorUtils = tmp(4967);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
 ({ jsxs: metroImportDefault, jsx: metroImportAll } = Fragment);
 let obj = { container: { margin: 16, flex: 1, alignItems: "center" }, item: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 2, borderColor: nativeDefault.colors.BORDER_STRONG, flex: 1, alignItems: "center", justifyContent: "center", height: 400 };
 let closure_9 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTabItems(arg0, arg1) {
   let items1;
   let obj3;
   let obj4;
@@ -81,7 +81,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   cResult[2] = arg1;
   cResult[3] = items;
   tmp3 = items;
-}) : ((arg0, arg1) => {
+}) : (function useTabItems(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const tmp = closure_9();
@@ -119,7 +119,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGradientColors() {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(5);
@@ -146,7 +146,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp5;
   cResult[4] = items;
   tmp7 = items;
-}) : (() => {
+}) : (function useGradientColors() {
   const obj = useToken;
   const token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   const items = [token, ];
@@ -155,7 +155,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return items;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemTabs() {
   let closure_129_0;
   let closure_2;
   let first;
@@ -183,15 +183,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const segmentedControlState = tmpResult.useSegmentedControlState(tmp16);
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      class D {
+      class M {
         constructor(arg0) {
           tmp = closure_0(arg0.nativeEvent.layout.width);
           return;
         }
       }
-      cResult[3] = D;
+      cResult[3] = M;
     } else {
-      class D {
+      class M {
         constructor(arg0) {
           tmp = closure_0(arg0.nativeEvent.layout.width);
           return;
@@ -200,14 +200,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const tmp21 = closure_11();
     if (cResult[4] === segmentedControlState) {
-      class D {
+      class M {
         constructor(arg0) {
           tmp = closure_0(arg0.nativeEvent.layout.width);
           return;
         }
       }
       if (cResult[7] === tmp21) {
-        class D {
+        class M {
           constructor(arg0) {
             tmp = closure_0(arg0.nativeEvent.layout.width);
             return;
@@ -216,7 +216,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       let tmp26 = first2;
       if (tmp26) {
-        class D {
+        class M {
           constructor(arg0) {
             tmp = closure_0(arg0.nativeEvent.layout.width);
             return;
@@ -241,7 +241,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = tmp5;
   cResult[2] = obj4;
   tmp16 = obj4;
-}) : (() => {
+}) : (function UserSettingsDesignSystemTabs() {
   let Stack;
   let closure_0;
   let closure_2;
@@ -285,7 +285,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj4 = { children: metroImportAll(hasOwnProperty, obj2) };
   items1 = [metroImportDefault(hasOwnProperty, { children: items }), metroImportAll(SegmentedControlPages.SegmentedControlPages, { state: segmentedControlState }), , ];
   const obj6 = { spacing: 8, direction: "horizontal", children: items2 };
-  const Stack2 = tmp16(5593).Stack;
+  const Stack2 = tmp16(5377).Stack;
   items2 = [, ];
   const obj7 = {
     text: "Add Tab",

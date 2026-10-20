@@ -1,17 +1,17 @@
-// Module ID: 15549
-// Function ID: 15550
+// Module ID: 16038
+// Function ID: 16039
 // Name: CheckpointSquadStatsScreen
-// Dependencies: [21, 558, 576, 15543, 2]
+// Dependencies: [21, 558, 576, 16033, 2]
 
-// Module 15549 (CheckpointSquadStatsScreen)
+// Module 16038 (CheckpointSquadStatsScreen)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15543 */;
+import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 16033 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointSquadStatsScreen() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -23,7 +23,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => jsx(CheckpointStatsScreenDefault, { name: "Squad" }));
+}) : (function CheckpointSquadStatsScreen() {
+  return jsx(CheckpointStatsScreenDefault, { name: "Squad" });
+});
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/stats/CheckpointSquadStatsScreen.tsx");
 
 export default tmp2;

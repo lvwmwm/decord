@@ -1,17 +1,17 @@
-// Module ID: 10742
-// Function ID: 10743
+// Module ID: 10509
+// Function ID: 10510
 // Name: useSocialLayerStorefrontMobileAccountLinkingDisabled
-// Dependencies: [6729, 558, 576, 504, 2]
+// Dependencies: [6933, 558, 576, 504, 2]
 
-// Module 10742 (useSocialLayerStorefrontMobileAccountLinkingDisabled)
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6729 */;
+// Module 10509 (useSocialLayerStorefrontMobileAccountLinkingDisabled)
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6933 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSocialLayerStorefrontMobileAccountLinkingDisabled(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -53,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useSocialLayerStorefrontMobileAccountLinkingDisabled(arg0) {
   let closure_0;
   _require = arg0;
   const items = [SocialLayerStorefrontStore];

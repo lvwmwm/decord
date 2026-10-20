@@ -1,18 +1,18 @@
-// Module ID: 17182
-// Function ID: 17183
+// Module ID: 17777
+// Function ID: 17778
 // Name: ActivityInviteSheetRow
-// Dependencies: [19, 17, 2051, 2074, 1377, 7226, 21, 4890, 587, 558, 576, 504, 5043, 9483, 5909, 1188, 9296, 4722, 1126, 1402, 2018, 4886, 9556, 5993, 2]
+// Dependencies: [19, 17, 2065, 2087, 1390, 7419, 21, 5092, 587, 558, 576, 504, 5421, 8680, 6185, 1200, 8761, 4962, 1126, 1415, 2031, 5088, 8764, 6180, 2]
 
-// Module 17182 (ActivityInviteSheetRow)
+// Module 17777 (ActivityInviteSheetRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 7226 */;
+import Constants from "Constants" /* 7419 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
-import createStyles from "createStyles" /* 4890 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import UserStore from "UserStore" /* 1390 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ const jsx = Fragment.jsx;
 let obj = { acronym: size };
 size = { width: 32, height: 32, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center", overflow: "hidden", marginTop: 0, marginRight: 10, borderColor: nativeDefault.colors.BORDER_MUTED, borderStyle: "solid", borderWidth: 2 };
 let closure_9 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onPressAvatar) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityInviteSheetRow(onPressAvatar) {
   let end;
   let error;
   let first;
@@ -213,11 +213,6 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
         cResult[42] = tmp31;
         cResult[43] = start;
         cResult[44] = tmp63;
-        class M {
-          constructor() {
-            onInviteSent(row);
-          }
-        }
         cResult[45] = null != error || isSubmitting || sendState === InviteSendStates.SENT;
         cResult[46] = tmp71;
         tmp69 = tmp71;
@@ -336,11 +331,6 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
     cResult[6] = id;
     cResult[7] = onPressAvatar;
     cResult[8] = tmp9Result9;
-    class M {
-      constructor() {
-        onInviteSent(row);
-      }
-    }
     cResult[9] = globalName;
     cResult[10] = user;
     cResult[11] = tmp44Result;
@@ -349,16 +339,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
     tmp38 = tmp9Result9;
     tmp41 = tmp44Result;
   }
-  class M {
-    constructor() {
-      onInviteSent(row);
-    }
+  function handlePress() {
+    onInviteSent(row);
   }
   cResult[3] = onInviteSent;
   cResult[4] = row;
-  cResult[5] = M;
-  tmp10 = M;
-}) : ((row) => {
+  cResult[5] = handlePress;
+  tmp10 = handlePress;
+}) : (function ActivityInviteSheetRow(row) {
   let end;
   let error;
   let isSubmitting;

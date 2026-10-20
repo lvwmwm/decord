@@ -1,22 +1,22 @@
-// Module ID: 14412
-// Function ID: 14413
+// Module ID: 14842
+// Function ID: 14843
 // Name: UserSettingsEditUserProfile
-// Dependencies: [19, 1377, 21, 558, 576, 6657, 6681, 504, 7858, 14413, 2]
+// Dependencies: [19, 1390, 21, 558, 576, 6852, 6879, 504, 8307, 14843, 2]
 
-// Module 14412 (UserSettingsEditUserProfile)
+// Module 14842 (UserSettingsEditUserProfile)
 import Fragment from "Fragment" /* 21 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7858 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const UserProfileEditFormDefault = tmp4(14413);
+const UserProfileEditFormDefault = tmp4(14843);
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsEditUserProfile(arg0) {
   let currentUser;
   let stateFromStores;
   let tmp10;
@@ -43,26 +43,26 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = stateFromStores(504);
   stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
   if (cResult[2] !== stateFromStores) {
-    class S {
+    class U {
       constructor() {
         if (null != stateFromStores) {
           const tmp3 = maybeFetchUserProfileDefault;
-          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
         }
       }
     }
     const items1 = [stateFromStores];
     cResult[2] = stateFromStores;
-    cResult[3] = S;
+    cResult[3] = U;
     cResult[4] = items1;
     tmp11 = items1;
-    tmp10 = S;
+    tmp10 = U;
   } else {
-    class S {
+    class U {
       constructor() {
         if (null != stateFromStores) {
           const tmp3 = maybeFetchUserProfileDefault;
-          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
         }
       }
     }
@@ -71,35 +71,35 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const effect = react.useEffect(tmp10, tmp11);
   let tmp13 = null;
   if (null != stateFromStores) {
-    class S {
+    class U {
       constructor() {
         if (null != stateFromStores) {
           const tmp3 = maybeFetchUserProfileDefault;
-          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
         }
       }
     }
     if (cResult[5] === stateFromStores) {
-      class S {
+      class U {
         constructor() {
           if (null != stateFromStores) {
             const tmp3 = maybeFetchUserProfileDefault;
-            tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+            tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
           }
         }
       }
       if (cResult[8] === analyticsLocations) {
-        class S {
+        class U {
           constructor() {
             if (null != stateFromStores) {
               const tmp3 = maybeFetchUserProfileDefault;
-              tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+              tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
             }
           }
         }
         tmp13 = tmp21;
       }
-      const tmp23 = jsx(stateFromStores(6657).AnalyticsLocationProvider, { value: analyticsLocations, children: tmp14 });
+      const tmp23 = jsx(stateFromStores(6852).AnalyticsLocationProvider, { value: analyticsLocations, children: tmp14 });
       cResult[8] = analyticsLocations;
       cResult[9] = tmp14;
       cResult[10] = tmp23;
@@ -113,7 +113,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = tmp20;
   }
   return tmp13;
-}) : ((arg0) => {
+}) : (function UserSettingsEditUserProfile(arg0) {
   let currentUser;
   let stateFromStores;
   let tmp3 = useAnalyticsLocationsDefault;
@@ -126,12 +126,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const effect = react.useEffect(() => {
     if (null != stateFromStores) {
       const tmp3 = maybeFetchUserProfileDefault;
-      tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+      tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
     }
   }, items1);
   let tmp7 = null;
   if (null != stateFromStores) {
-    const AnalyticsLocationProvider = tmp4(6657).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider = tmp4(6852).AnalyticsLocationProvider;
     UserProfileEditFormDefault;
     const merged = Object.assign(arg0);
     tmp7 = <AnalyticsLocationProvider value={analyticsLocations}>{null}</AnalyticsLocationProvider>;

@@ -1,19 +1,19 @@
-// Module ID: 9404
-// Function ID: 9405
+// Module ID: 8873
+// Function ID: 8874
 // Name: GuildProfileGames
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 8319, 8320, 9405, 4886, 9409, 4568, 4854, 9410, 1987, 5909, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8874, 8875, 13018, 5088, 13022, 4809, 5056, 13023, 2000, 6185, 2]
 // Exports: default
 
-// Module 9404 (GuildProfileGames)
+// Module 8873 (GuildProfileGames)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8320 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8875 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,9 +22,9 @@ let metroRequire;
 let rect;
 let tmp;
 let tmp5;
-const Text_Text = tmp(4886);
-const GameProfileAnalyticUtils = tmp(8319);
-const components_GameIconDefault = tmp5(9405);
+const Text_Text = tmp(5088);
+const GameProfileAnalyticUtils = tmp(8874);
+const components_GameIconDefault = tmp5(13018);
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -32,7 +32,7 @@ let obj = { container: { display: "flex", flexDirection: "row", gap: 8 }, favori
 rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM, borderRadius: nativeDefault.radii.xs };
 const styles = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClickableGameIcon(arg0) {
   let activityLevel;
   let game;
   let onPressFallback;
@@ -93,7 +93,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = onPressFallback;
   cResult[5] = tmp6;
   cResult[6] = fn;
-}) : ((game) => {
+}) : (function ClickableGameIcon(game) {
   let activityLevel;
   let onPress;
   let style;
@@ -121,7 +121,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return hasOwnProperty(components_GameIconDefault, { style, game, activityLevel, onPress });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoriteGame(arg0) {
   let activityLevel;
   let game;
   let items;
@@ -167,7 +167,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = game;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((game) => {
+}) : (function FavoriteGame(game) {
   let items;
   game = game.game;
   const activityLevel = game.activityLevel;
@@ -236,10 +236,10 @@ export default function GuildProfileGames(profile) {
     }
     return tmp2;
   }, items);
-  onPressFallback = react.useCallback((content) => {
+  onPressFallback = react.useCallback((name) => {
     const obj = lastGameToDisplay(remainingGames[12]);
-    const obj2 = { key: "profile-game-" + content.id, content: content.name };
-    obj.open(obj2);
+    const obj2 = { text: name.name };
+    obj.open("profile-game-" + name.id, obj2);
   }, []);
   [][0] = profile;
   let tmp9 = null;

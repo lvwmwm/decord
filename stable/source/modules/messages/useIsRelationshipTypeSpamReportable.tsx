@@ -1,11 +1,11 @@
-// Module ID: 12253
-// Function ID: 12254
+// Module ID: 12337
+// Function ID: 12338
 // Name: useIsRelationshipTypeSpamReportable
-// Dependencies: [4519, 1085, 558, 576, 504, 2]
+// Dependencies: [4760, 1085, 558, 576, 504, 2]
 
-// Module 12253 (useIsRelationshipTypeSpamReportable)
+// Module 12337 (useIsRelationshipTypeSpamReportable)
 import Constants from "Constants" /* 1085 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require;
 
 const RelationshipTypes = Constants.RelationshipTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsRelationshipTypeSpamReportable(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -30,7 +30,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function p() {
+    const fn = function n() {
       return RelationshipStore.getRelationshipType(closure_0);
     };
     const items1 = [arg0];
@@ -46,7 +46,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
   return stateFromStores === RelationshipTypes.NONE || stateFromStores === RelationshipTypes.BLOCKED || stateFromStores === RelationshipTypes.PENDING_INCOMING;
-}) : ((arg0) => {
+}) : (function useIsRelationshipTypeSpamReportable(arg0) {
   let closure_0;
   _require = arg0;
   const items = [RelationshipStore];

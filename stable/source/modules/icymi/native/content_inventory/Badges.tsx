@@ -1,30 +1,30 @@
-// Module ID: 12831
-// Function ID: 12832
+// Module ID: 13138
+// Function ID: 13139
 // Name: Badges
-// Dependencies: [19, 17, 2116, 21, 587, 4890, 558, 576, 12829, 7818, 4886, 504, 8739, 11227, 12832, 1126, 12834, 12836, 9407, 11364, 1102, 8364, 2]
+// Dependencies: [19, 17, 2129, 21, 587, 5092, 558, 576, 13136, 8267, 5088, 504, 9207, 10764, 13139, 1126, 13141, 13143, 13020, 12627, 1102, 8921, 2]
 
-// Module 12831 (Badges)
+// Module 13138 (Badges)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import utils from "utils" /* 7818 */;
-import TrophyIcon from "TrophyIcon" /* 8364 */;
-import GameControllerIcon from "GameControllerIcon" /* 8739 */;
-import FireIcon from "FireIcon" /* 9407 */;
-import TimerIcon2 from "TimerIcon" /* 11227 */;
-import RetryIcon from "RetryIcon" /* 11364 */;
-import useTimestampTickedNow from "useTimestampTickedNow" /* 12829 */;
-import NewUserIcon from "NewUserIcon" /* 12832 */;
-import FlashIcon2 from "FlashIcon" /* 12834 */;
-import TrendingType from "TrendingType" /* 12836 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import utils from "utils" /* 8267 */;
+import TrophyIcon from "TrophyIcon" /* 8921 */;
+import GameControllerIcon from "GameControllerIcon" /* 9207 */;
+import TimerIcon2 from "TimerIcon" /* 10764 */;
+import RetryIcon from "RetryIcon" /* 12627 */;
+import FireIcon from "FireIcon" /* 13020 */;
+import useTimestampTickedNow from "useTimestampTickedNow" /* 13136 */;
+import NewUserIcon from "NewUserIcon" /* 13139 */;
+import FlashIcon2 from "FlashIcon" /* 13141 */;
+import TrendingType from "TrendingType" /* 13143 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
+import LocaleStore from "LocaleStore" /* 2129 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,16 +53,16 @@ let closure_10 = createStyles.createStyles((arg0) => {
 const redux = react.createContext("overlay");
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f62279 = () => {
+function useBadgeLocation() {
 
-};
+}
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f62280 = () => {
+function useBadgeColors() {
 
-};
+}
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgesContainer(arg0) {
   let _location;
   let children;
   let style;
@@ -93,7 +93,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = style;
   cResult[2] = tmp3;
   tmp2 = tmp3;
-}) : ((location) => {
+}) : (function BadgesContainer(location) {
   let obj2;
   const Provider = redux.Provider;
   obj = { value: location.location, children: metroRequire(View, obj2) };
@@ -101,7 +101,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(Provider, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActiveTimestamp(arg0) {
   let entry;
   let style;
   obj = react2;
@@ -134,36 +134,36 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = now;
   cResult[2] = result;
   tmp4 = result;
-}) : ((entry) => {
+}) : (function ActiveTimestamp(entry) {
   entry = entry.entry;
   const style = entry.style;
-  obj = entry(12829);
+  obj = entry(13136);
   const now = obj.useTimestampTickedNow().now;
   const items = [entry, now];
   const children = react.useMemo(() => {
     obj = utils;
     return obj.formatActiveTimestamp(entry, now);
   }, items);
-  return closure_6(entry(4886).Text, { style, variant: "text-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children });
+  return closure_6(entry(5088).Text, { style, variant: "text-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children });
 });
 let closure_14 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentTimestamp(entry) {
   let locale;
   let tmp11;
   let tmp12;
   obj = react2;
   const cResult = obj.c(10);
   entry = entry.entry;
-  if (typeof f62280 === "function") {
-    if (typeof f62279 === "function") {
+  if (typeof useBadgeColors === "function") {
+    if (typeof useBadgeLocation === "function") {
       const tmp8 = tmp4[react.useContext(react, redux)];
       const _Symbol = Symbol;
       const tmpResult = utils;
       const isEntryActiveResult = tmpResult.isEntryActive(entry);
       if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
         const items = [LocaleStore];
-        const fn = function l() {
+        const fn = function c() {
           return locale.locale;
         };
         cResult[0] = items;
@@ -220,12 +220,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : ((entry) => {
+}) : (function ContentTimestamp(entry) {
   let locale;
   let tmp6Result;
   entry = entry.entry;
-  if (typeof f62280 === "function") {
-    if (typeof f62279 === "function") {
+  if (typeof useBadgeColors === "function") {
+    if (typeof useBadgeLocation === "function") {
       let tmp12Result;
       const tmp5 = tmp[react.useContext(react, redux)];
       obj = utils;
@@ -237,7 +237,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
         tmp12Result = tmp12(closure_14, obj2);
       } else {
         const obj3 = { variant: "text-sm/medium", color: tmp5.text, children: tmp6Result.formatEndedTimestamp(entry, tmp11) };
-        const Text = tmp6(4886).Text;
+        const Text = tmp6(5088).Text;
         tmp6Result = utils;
         tmp12Result = tmp12(Text, obj3);
       }
@@ -250,7 +250,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseBadge(arg0) {
   let Icon;
   let accessibilityLabel;
   let iconColor;
@@ -259,10 +259,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj = react2;
   const cResult = obj.c(13);
   ({ Icon, iconColor, text, accessibilityLabel } = arg0);
-  if (typeof f62279 === "function") {
+  if (typeof useBadgeLocation === "function") {
     const tmp4Result = tmp4(react.useContext(redux));
     const tmp6 = redux;
-    if (typeof f62280 === "function") {
+    if (typeof useBadgeColors === "function") {
       if (typeof tmp5 === "function") {
         const tmp10 = tmp9[react.useContext(react, tmp6)];
         if (cResult[0] === Icon) {
@@ -324,13 +324,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : ((accessibilityLabel) => {
+}) : (function BaseBadge(accessibilityLabel) {
   let items;
   accessibilityLabel = accessibilityLabel.accessibilityLabel;
-  if (typeof f62279 === "function") {
+  if (typeof useBadgeLocation === "function") {
     const tmp4Result = tmp4(react.useContext(redux));
     const tmp6 = redux;
-    if (typeof f62280 === "function") {
+    if (typeof useBadgeColors === "function") {
       if (typeof tmp5 === "function") {
         const obj2 = { style: tmp4Result.badgeContainer, accessible: null != accessibilityLabel, accessibilityLabel, children: items };
         items = [, ];
@@ -351,15 +351,15 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameTimestampBadge(entry) {
   let items;
   obj = react2;
   const cResult = obj.c(9);
   entry = entry.entry;
-  if (typeof f62279 === "function") {
+  if (typeof useBadgeLocation === "function") {
     const tmp4Result = tmp4(react.useContext(redux));
     const tmp6 = redux;
-    if (typeof f62280 === "function") {
+    if (typeof useBadgeColors === "function") {
       if (typeof tmp5 === "function") {
         let icon;
         const tmp10 = tmp9[react.useContext(react, tmp6)];
@@ -417,13 +417,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : ((entry) => {
+}) : (function GameTimestampBadge(entry) {
   let items;
   entry = entry.entry;
-  if (typeof f62279 === "function") {
+  if (typeof useBadgeLocation === "function") {
     const tmpResult = tmp(react.useContext(redux));
     const tmp3 = redux;
-    if (typeof f62280 === "function") {
+    if (typeof useBadgeColors === "function") {
       if (typeof tmp2 === "function") {
         let icon;
         const tmp7 = tmp6[react.useContext(react, tmp3)];
@@ -436,7 +436,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
         }
         const obj3 = { style: tmpResult.badgeContainer, children: items };
         const obj4 = { style: tmpResult.icon, color: icon };
-        items = [metroRequire(tmp8(8739).GameControllerIcon, obj4), ];
+        items = [metroRequire(tmp8(9207).GameControllerIcon, obj4), ];
         const obj5 = { entry };
         items[1] = metroRequire(closure_15, obj5);
         return metroImportDefault(View, obj3);
@@ -451,14 +451,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarathonBadge(entry) {
   let a11yText;
   let text;
   obj = react2;
   const cResult = obj.c(6);
   entry = entry.entry;
-  if (typeof f62280 === "function") {
-    if (typeof f62279 === "function") {
+  if (typeof useBadgeColors === "function") {
+    if (typeof useBadgeLocation === "function") {
       const tmp8 = tmp4[react.useContext(react, redux)];
       const tmpResult = utils;
       if (tmpResult.isEntryMarathon(entry)) {
@@ -509,10 +509,10 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : ((entry) => {
+}) : (function MarathonBadge(entry) {
   entry = entry.entry;
-  if (typeof f62280 === "function") {
-    if (typeof f62279 === "function") {
+  if (typeof useBadgeColors === "function") {
+    if (typeof useBadgeLocation === "function") {
       const tmp5 = tmp[react.useContext(react, redux)];
       obj = utils;
       if (obj.isEntryMarathon(entry)) {
@@ -543,7 +543,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewGameBadge(entry) {
   let intl;
   obj = react2;
   const cResult = obj.c(1);
@@ -565,7 +565,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
     tmp4 = first;
   }
   return tmp4;
-}) : ((entry) => {
+}) : (function NewGameBadge(entry) {
   let intl;
   entry = entry.entry;
   let tmp3 = null;
@@ -578,12 +578,12 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   return tmp3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreakBadge(entry) {
   obj = react2;
   const cResult = obj.c(14);
   entry = entry.entry;
-  if (typeof f62280 === "function") {
-    if (typeof f62279 === "function") {
+  if (typeof useBadgeColors === "function") {
+    if (typeof useBadgeLocation === "function") {
       const tmp8 = tmp4[react.useContext(react, redux)];
       if (cResult[0] === tmp8) {
         let tmp9;
@@ -641,7 +641,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
         tmp19 = null;
         if (streakCount >= 2) {
           tmp24 = closure_16;
-          FlashIcon = tmp(12834).FlashIcon;
+          FlashIcon = tmp(13141).FlashIcon;
           const intl = tmp(1126).intl;
           const obj3 = { days: streakCount };
           formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t["Klie/P"], obj3);
@@ -672,13 +672,13 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : ((arg0) => {
+}) : (function StreakBadge(arg0) {
   let intl;
   let intl2;
   let obj3;
   let obj4;
-  if (typeof f62280 === "function") {
-    if (typeof f62279 === "function") {
+  if (typeof useBadgeColors === "function") {
+    if (typeof useBadgeLocation === "function") {
       const tmp6 = tmp2[react.useContext(react, redux)];
       obj = utils;
       const streakCount = obj.getStreakCount(tmp);
@@ -703,11 +703,11 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function TrendingBadge(arg0) {
   obj = react2;
   const cResult = obj.c(3);
-  if (typeof f62280 === "function") {
-    if (typeof f62279 === "function") {
+  if (typeof useBadgeColors === "function") {
+    if (typeof useBadgeLocation === "function") {
       const tmp9 = tmp5[react.useContext(react, redux)];
       const tmpResult = utils;
       const trendingType = tmpResult.getTrendingType(tmp4);
@@ -745,10 +745,10 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : ((arg0) => {
+}) : (function TrendingBadge(arg0) {
   let intl;
-  if (typeof f62280 === "function") {
-    if (typeof f62279 === "function") {
+  if (typeof useBadgeColors === "function") {
+    if (typeof useBadgeLocation === "function") {
       const tmp6 = tmp2[react.useContext(react, redux)];
       obj = utils;
       const trendingType = obj.getTrendingType(tmp);
@@ -770,11 +770,11 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ResurrectedBadge(arg0) {
   obj = react2;
   const cResult = obj.c(3);
-  if (typeof f62280 === "function") {
-    if (typeof f62279 === "function") {
+  if (typeof useBadgeColors === "function") {
+    if (typeof useBadgeLocation === "function") {
       const tmp9 = tmp5[react.useContext(react, redux)];
       let tmp10 = null;
       const tmpResult = utils;
@@ -808,10 +808,10 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : ((arg0) => {
+}) : (function ResurrectedBadge(arg0) {
   let intl;
-  if (typeof f62280 === "function") {
-    if (typeof f62279 === "function") {
+  if (typeof useBadgeColors === "function") {
+    if (typeof useBadgeLocation === "function") {
       let tmp9 = null;
       const tmp6 = tmp2[react.useContext(react, redux)];
       obj = utils;
@@ -829,12 +829,12 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function TopGameBadge(arg0) {
   let items;
   obj = react2;
   const cResult = obj.c(8);
-  if (typeof f62280 === "function") {
-    if (typeof f62279 === "function") {
+  if (typeof useBadgeColors === "function") {
+    if (typeof useBadgeLocation === "function") {
       const tmp9 = tmp5[react.useContext(react, redux)];
       const tmpResult = utils;
       const entryDuration = tmpResult.getEntryDuration(tmp4);
@@ -896,11 +896,11 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : ((arg0) => {
+}) : (function TopGameBadge(arg0) {
   let items;
   let obj3;
-  if (typeof f62280 === "function") {
-    if (typeof f62279 === "function") {
+  if (typeof useBadgeColors === "function") {
+    if (typeof useBadgeLocation === "function") {
       const tmp6 = tmp2[react.useContext(react, redux)];
       obj = utils;
       const entryDuration = obj.getEntryDuration(tmp);
@@ -927,12 +927,12 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
+let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatusTimestampBadge(entry) {
   let items;
   obj = react2;
   const cResult = obj.c(8);
   entry = entry.entry;
-  if (typeof f62279 === "function") {
+  if (typeof useBadgeLocation === "function") {
     let tmp8;
     let tmp12;
     const tmp4Result = tmp4(react.useContext(redux));
@@ -975,9 +975,9 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? ((entry) => {
   } else {
     throw new TypeError("Trying to call a non-function");
   }
-}) : ((arg0) => {
+}) : (function CustomStatusTimestampBadge(arg0) {
   let items;
-  if (typeof f62279 === "function") {
+  if (typeof useBadgeLocation === "function") {
     const tmp2Result = tmp2(react.useContext(redux));
     obj = { style: tmp2Result.badgeContainer, children: items };
     const obj2 = { style: tmp2Result.icon, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };

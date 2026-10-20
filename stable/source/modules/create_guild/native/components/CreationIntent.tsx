@@ -1,26 +1,26 @@
-// Module ID: 12374
-// Function ID: 12375
+// Module ID: 12469
+// Function ID: 12470
 // Name: CreationIntent
-// Dependencies: [19, 17, 6468, 1085, 21, 4890, 6068, 587, 558, 576, 1490, 5770, 5779, 12332, 1252, 1126, 4886, 6074, 11960, 12375, 12377, 6619, 2]
+// Dependencies: [19, 17, 6662, 1085, 21, 5092, 6259, 587, 558, 576, 1503, 5362, 5371, 12412, 1265, 1126, 5088, 6265, 12032, 12470, 12474, 6814, 2]
 
-// Module 12374 (CreationIntent)
+// Module 12469 (CreationIntent)
 import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import useNavigation from "useNavigation" /* 1490 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5770 */;
-import react_native from "react-native" /* 5779 */;
-import NavigatorConstants from "NavigatorConstants" /* 6068 */;
-import TableRowGroup2 from "TableRowGroup" /* 6074 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12332 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import useNavigation from "useNavigation" /* 1503 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5362 */;
+import react_native from "react-native" /* 5371 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
+import TableRowGroup2 from "TableRowGroup" /* 6265 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12412 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 6468 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 6662 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,8 +39,8 @@ let obj3;
 let obj4;
 let tmp2;
 let unpackModuleId;
-const ChairIllocon = tmp2(12375);
-const WorldIllocon = tmp2(12377);
+const ChairIllocon = tmp2(12470);
+const WorldIllocon = tmp2(12474);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native2);
 ({ CreateGuildModalStates: metroRequire, GuildTemplateTriggers: metroImportDefault, NUXGuildTemplatesAnalytics: metroImportAll } = CreateGuildConstants);
 ({ AnalyticEvents: c9, AnalyticsLocations: c10 } = Constants);
@@ -53,7 +53,7 @@ obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj4 = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
 let closure_13 = createStyles(obj);
 let closure_14 = Math.random() < 0.5;
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildTemplate) => {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreationIntent(guildTemplate) {
   let contentContainer;
   let headerContainer;
   let headerTitle;
@@ -308,104 +308,60 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildTemplate) => 
       const obj15 = { style: headerContainer, children: items5 };
       items5 = [tmp18, tmp23];
       const tmp29 = closure_12(ref, obj15);
-      class P {
-        constructor(isCommunityIntent) {
-          let flag;
-          let id1;
-          const obj = { skipped: null == isCommunityIntent, is_community: flag };
-          flag = isCommunityIntent;
-          const track = AnalyticsUtilsDefault.track;
-          const GUILD_CREATION_INTENT_SELECTED = constants.GUILD_CREATION_INTENT_SELECTED;
-          AnalyticsUtilsDefault;
-          if (isCommunityIntent == null) {
-            flag = false;
-          }
-          track(GUILD_CREATION_INTENT_SELECTED, obj);
-          const obj2 = { guildTemplate, isCommunityIntent };
-          navigation.push(metroRequire.CREATE_SERVER, obj2);
-          if (metroImportDefault.NUF === trigger) {
-            const obj3 = NewUserAnalyticsUtils;
-            obj3.trackNUFStep(metroImportAll.STEP_CREATION_INTENT, metroImportAll.STEP_GUILD_CREATE, { skip: false });
-            let id;
-            const track2 = AnalyticsUtilsDefault.track;
-            const CREATE_GUILD_VIEWED = tmp4.CREATE_GUILD_VIEWED;
-            AnalyticsUtilsDefault;
-            if (guildTemplate != null) {
-              id = tmp6.id;
-            }
-            const obj4 = { guild_template_name: id };
-            track2(CREATE_GUILD_VIEWED, obj4);
-          } else if (tmp9.IN_APP === tmp8) {
-            const obj5 = { type: "Create Guild Step 2", location_section: constants2.CREATE_JOIN_GUILD_MODAL };
-            const tmpResult3 = AnalyticsUtilsDefault;
-            tmpResult3.track(constants.OPEN_MODAL, obj5);
-            const obj6 = { location_section: constants2.CREATE_JOIN_GUILD_MODAL, guild_template_name: id1 };
-            id1 = undefined;
-            const track3 = AnalyticsUtilsDefault.track;
-            const CREATE_GUILD_VIEWED2 = tmp4.CREATE_GUILD_VIEWED;
-            AnalyticsUtilsDefault;
-            if (guildTemplate != null) {
-              id1 = tmp6.id;
-            }
-            track3(CREATE_GUILD_VIEWED2, obj6);
-          }
-        }
-      }
+      cResult[16] = tmp4.headerContainer;
       cResult[17] = tmp18;
       cResult[18] = tmp23;
       cResult[19] = tmp29;
       tmp26 = tmp29;
     }
   }
-  class P {
-    constructor(isCommunityIntent) {
-      let flag;
-      let id1;
-      const obj = { skipped: null == isCommunityIntent, is_community: flag };
-      flag = isCommunityIntent;
-      const track = AnalyticsUtilsDefault.track;
-      const GUILD_CREATION_INTENT_SELECTED = constants.GUILD_CREATION_INTENT_SELECTED;
+  function onPress(isCommunityIntent) {
+    let flag;
+    let id1;
+    const obj = { skipped: null == isCommunityIntent, is_community: flag };
+    flag = isCommunityIntent;
+    const track = AnalyticsUtilsDefault.track;
+    const GUILD_CREATION_INTENT_SELECTED = constants.GUILD_CREATION_INTENT_SELECTED;
+    AnalyticsUtilsDefault;
+    if (isCommunityIntent == null) {
+      flag = false;
+    }
+    track(GUILD_CREATION_INTENT_SELECTED, obj);
+    const obj2 = { guildTemplate, isCommunityIntent };
+    navigation.push(metroRequire.CREATE_SERVER, obj2);
+    if (metroImportDefault.NUF === trigger) {
+      const obj3 = NewUserAnalyticsUtils;
+      obj3.trackNUFStep(metroImportAll.STEP_CREATION_INTENT, metroImportAll.STEP_GUILD_CREATE, { skip: false });
+      let id;
+      const track2 = AnalyticsUtilsDefault.track;
+      const CREATE_GUILD_VIEWED = tmp4.CREATE_GUILD_VIEWED;
       AnalyticsUtilsDefault;
-      if (isCommunityIntent == null) {
-        flag = false;
+      if (guildTemplate != null) {
+        id = tmp6.id;
       }
-      track(GUILD_CREATION_INTENT_SELECTED, obj);
-      const obj2 = { guildTemplate, isCommunityIntent };
-      navigation.push(metroRequire.CREATE_SERVER, obj2);
-      if (metroImportDefault.NUF === trigger) {
-        const obj3 = NewUserAnalyticsUtils;
-        obj3.trackNUFStep(metroImportAll.STEP_CREATION_INTENT, metroImportAll.STEP_GUILD_CREATE, { skip: false });
-        let id;
-        const track2 = AnalyticsUtilsDefault.track;
-        const CREATE_GUILD_VIEWED = tmp4.CREATE_GUILD_VIEWED;
-        AnalyticsUtilsDefault;
-        if (guildTemplate != null) {
-          id = tmp6.id;
-        }
-        const obj4 = { guild_template_name: id };
-        track2(CREATE_GUILD_VIEWED, obj4);
-      } else if (tmp9.IN_APP === tmp8) {
-        const obj5 = { type: "Create Guild Step 2", location_section: constants2.CREATE_JOIN_GUILD_MODAL };
-        const tmpResult3 = AnalyticsUtilsDefault;
-        tmpResult3.track(constants.OPEN_MODAL, obj5);
-        const obj6 = { location_section: constants2.CREATE_JOIN_GUILD_MODAL, guild_template_name: id1 };
-        id1 = undefined;
-        const track3 = AnalyticsUtilsDefault.track;
-        const CREATE_GUILD_VIEWED2 = tmp4.CREATE_GUILD_VIEWED;
-        AnalyticsUtilsDefault;
-        if (guildTemplate != null) {
-          id1 = tmp6.id;
-        }
-        track3(CREATE_GUILD_VIEWED2, obj6);
+      const obj4 = { guild_template_name: id };
+      track2(CREATE_GUILD_VIEWED, obj4);
+    } else if (tmp9.IN_APP === tmp8) {
+      const obj5 = { type: "Create Guild Step 2", location_section: constants2.CREATE_JOIN_GUILD_MODAL };
+      const tmpResult3 = AnalyticsUtilsDefault;
+      tmpResult3.track(constants.OPEN_MODAL, obj5);
+      const obj6 = { location_section: constants2.CREATE_JOIN_GUILD_MODAL, guild_template_name: id1 };
+      id1 = undefined;
+      const track3 = AnalyticsUtilsDefault.track;
+      const CREATE_GUILD_VIEWED2 = tmp4.CREATE_GUILD_VIEWED;
+      AnalyticsUtilsDefault;
+      if (guildTemplate != null) {
+        id1 = tmp6.id;
       }
+      track3(CREATE_GUILD_VIEWED2, obj6);
     }
   }
   cResult[6] = guildTemplate;
   cResult[7] = navigation;
   cResult[8] = trigger;
-  cResult[9] = P;
-  tmp14 = P;
-}) : ((arg0) => {
+  cResult[9] = onPress;
+  tmp14 = onPress;
+}) : (function CreationIntent(arg0) {
   let TableRowGroup;
   let closure_2;
   let guildTemplate;
@@ -418,7 +374,6 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildTemplate) => 
   let items3;
   let obj13;
   let obj3;
-  let require;
   let tmp10;
   let tmp15;
   let tmp9;
@@ -510,7 +465,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildTemplate) => 
   const obj8 = { hasIcons: true, children: null };
   const obj7 = { style: tmp.sections, children: tmp9(TableRowGroup, tmp15) };
   TableRowGroup = TableRowGroup2.TableRowGroup;
-  const tmp13 = trigger(11960);
+  const tmp13 = trigger(12032);
   const obj9 = { Icon: null, message: null, onPress: null };
   tmp10 = onPress;
   const tmp11 = ref;
@@ -529,7 +484,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildTemplate) => 
           onPress(true);
         }
     };
-    const tmp12Result = trigger(11960);
+    const tmp12Result = trigger(12032);
     intl6 = intl8.intl;
     items4[1] = tmp8(tmp12Result, obj10);
     obj8.children = items4;
@@ -549,7 +504,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildTemplate) => 
           onPress(false);
         }
     };
-    const tmp12Result2 = trigger(11960);
+    const tmp12Result2 = trigger(12032);
     intl4 = intl8.intl;
     items5[1] = tmp8(tmp12Result2, obj11);
     obj8.children = items5;

@@ -1,15 +1,15 @@
-// Module ID: 9284
-// Function ID: 9285
+// Module ID: 8775
+// Function ID: 8776
 // Name: SegmentedControlItem
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 7941, 4612, 5597, 1369, 1126, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8390, 4850, 5378, 1382, 1126, 5088, 2]
 
-// Module 9284 (SegmentedControlItem)
+// Module 8775 (SegmentedControlItem)
 import nativeDefault from "native" /* 587 */;
-import spring from "spring" /* 5597 */;
+import spring from "spring" /* 5378 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj = { inactive: nativeDefault.colors.TEXT_MUTED, active: nativeDefault.col
 let closure_9 = createStyles.createStyleProperties(obj);
 const __initData = { code: "function SegmentedControlItemNativeTsx1(){const{colors,pressed,index,activeIndex,withSpring,SPRING_CONFIG}=this.__closure;let color=colors.inactive;const isPressActive=pressed.get()>=0;const isPressed=pressed.get()===index;const isActive=Math.round(activeIndex.get())===index;if(isPressed){color=colors.pressed;}else{if(isPressActive){color=colors.inactive;}else{if(isActive){color=colors.active;}}}return{color:withSpring(color,SPRING_CONFIG,\"animate-always\")};}" };
 const __initData2 = { code: "function SegmentedControlItemNativeTsx2(){const{colors,pressed,index,activeIndex,withSpring,SPRING_CONFIG}=this.__closure;let color=colors.inactive;const isPressActive=pressed.get()>=0;const isPressed=pressed.get()===index;const isActive=Math.round(activeIndex.get())===index;if(isPressed){color=colors.pressed;}else if(isPressActive){color=colors.inactive;}else if(isActive){color=colors.active;}return{color:withSpring(color,SPRING_CONFIG,'animate-always')};}" };
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SegmentedControlItem(state) {
   let activeIndex;
   let icon;
   let index;
@@ -188,7 +188,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   cResult[3] = tmp4.item;
   cResult[4] = items1;
   tmp9 = items1;
-}) : ((index) => {
+}) : (function SegmentedControlItem(index) {
   let formatToPlainStringResult;
   let icon;
   let itemCount;

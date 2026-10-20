@@ -1,16 +1,16 @@
-// Module ID: 13247
-// Function ID: 13248
+// Module ID: 13736
+// Function ID: 13737
 // Name: useDebounce
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 13247 (useDebounce)
+// Module 13736 (useDebounce)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDebounce(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const obj = react2;
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[3] = items;
   tmp5 = items;
   tmp4 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useDebounce(arg0, arg1) {
   let closure_2;
   let first;
   let closure_0 = arg0;

@@ -1,24 +1,24 @@
-// Module ID: 9830
-// Function ID: 9831
+// Module ID: 10428
+// Function ID: 10429
 // Name: useShouldShowSafetyToolsButtonTooltipForChannel
-// Dependencies: [9786, 1102, 558, 576, 9831, 9790, 9832, 9833, 2]
+// Dependencies: [10286, 1102, 558, 576, 10429, 10388, 10430, 10431, 2]
 
-// Module 9830 (useShouldShowSafetyToolsButtonTooltipForChannel)
+// Module 10428 (useShouldShowSafetyToolsButtonTooltipForChannel)
 import react from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 9786 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 9790 */;
-import useInappropriateConversationSafetyToolsWarningForChannel from "useInappropriateConversationSafetyToolsWarningForChannel" /* 9831 */;
-import useShouldShowInitialSafetyToolsButtonTooltip from "useShouldShowInitialSafetyToolsButtonTooltip" /* 9832 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10286 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10388 */;
+import useInappropriateConversationSafetyToolsWarningForChannel from "useInappropriateConversationSafetyToolsWarningForChannel" /* 10429 */;
+import useShouldShowInitialSafetyToolsButtonTooltip from "useShouldShowInitialSafetyToolsButtonTooltip" /* 10430 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const InappropriateConversationUtils = tmp(9833);
+const InappropriateConversationUtils = tmp(10431);
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
 const HOUR = DurationsDefault.Millis.HOUR;
 let closure_4 = 12 * DurationsDefault.Millis.HOUR;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyToolsButtonTooltipForChannel(arg0) {
   const obj = react;
   const cResult = obj.c(3);
   const obj2 = useInappropriateConversationSafetyToolsWarningForChannel;
@@ -65,38 +65,24 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
               let tmp13;
               const _Symbol = Symbol;
               if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-                class T {
-                  constructor(dismiss_timestamp) {
-                    return null == dismiss_timestamp.dismiss_timestamp;
-                  }
-                }
-                cResult[2] = T;
-                tmp13 = T;
+                const fn = function _(dismiss_timestamp) {
+                  return null == dismiss_timestamp.dismiss_timestamp;
+                };
+                cResult[2] = fn;
+                tmp13 = fn;
               } else {
-                class T {
-                  constructor(dismiss_timestamp) {
-                    return null == dismiss_timestamp.dismiss_timestamp;
-                  }
-                }
+                tmp13 = cResult[2];
               }
               const found1 = inappropriateConversationWarningsForChannel.filter(tmp13);
-              const findLastResult = found1.findLast((type) => type.type === SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1);
+              let findLastResult = found1.findLast((type) => type.type === SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1);
               if (findLastResult == null) {
-                class T {
-                  constructor(dismiss_timestamp) {
-                    return null == dismiss_timestamp.dismiss_timestamp;
-                  }
-                }
+                findLastResult = found1.findLast((type) => type.type === SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_2);
               }
               cResult[0] = inappropriateConversationWarningsForChannel;
               cResult[1] = findLastResult;
               tmp11 = findLastResult;
             } else {
-              class T {
-                constructor(dismiss_timestamp) {
-                  return null == dismiss_timestamp.dismiss_timestamp;
-                }
-              }
+              tmp11 = cResult[1];
             }
             return tmp11;
           }
@@ -104,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
       }
     }
   }
-}) : (function(arg0) {
+}) : (function useSafetyToolsButtonTooltipForChannel(arg0) {
   const obj = useInappropriateConversationSafetyToolsWarningForChannel;
   const inappropriateConversationSafetyToolsWarningForChannel = obj.useInappropriateConversationSafetyToolsWarningForChannel(arg0);
   const obj2 = useInappropriateConversationWarningsForChannel;

@@ -1,57 +1,80 @@
-// Module ID: 6891
-// Function ID: 6892
+// Module ID: 7100
+// Function ID: 7101
 // Name: useSelectedDismissibleContent
-// Dependencies: [32, 558, 576, 6892, 6894, 2]
+// Dependencies: [32, 558, 576, 7101, 7103, 2]
 
-// Module 6891 (useSelectedDismissibleContent)
+// Module 7100 (useSelectedDismissibleContent)
 import react from "react" /* 576 */;
-import useGetDismissibleContent from "useGetDismissibleContent" /* 6892 */;
-import useSelectedDismissibleContentShared from "useSelectedDismissibleContentShared" /* 6894 */;
+import useGetDismissibleContent from "useGetDismissibleContent" /* 7101 */;
+import useSelectedDismissibleContentShared from "useSelectedDismissibleContentShared" /* 7103 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
-  let tmp6;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedDismissibleContent(arg0, arg1) {
+  let tmp4;
   let tmp7;
+  let tmp8;
   const obj = react;
-  const cResult = obj.c(3);
-  const tmp4 = undefined !== arg2 && arg2;
-  const tmpResult = useGetDismissibleContent;
-  [tmp6, tmp7] = tmpResult.useGetDismissibleContent(arg0, arg1);
-  _slicedToArray(tmpResult.useGetDismissibleContent(arg0, arg1), 2);
-  const tmpResult2 = useSelectedDismissibleContentShared;
-  const selectedDismissibleContentShared = tmpResult2.useSelectedDismissibleContentShared(tmp6, tmp7, tmp4);
-  if (cResult[0] === tmp7) {
-    let tmp9;
-    if (cResult[1] === tmp6) {
-      tmp9 = cResult[2];
+  const cResult = obj.c(5);
+  if (cResult[0] !== arg1) {
+    let obj2 = arg1;
+    if (undefined === arg1) {
+      obj2 = {};
     }
-    return tmp9;
+    cResult[0] = arg1;
+    cResult[1] = obj2;
+    tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
   }
-  const items = [tmp6, tmp7];
-  cResult[0] = tmp7;
-  cResult[1] = tmp6;
-  cResult[2] = items;
-  tmp9 = items;
-}) : ((arg0, arg1) => {
+  const bypassAutoDismiss = tmp4.bypassAutoDismiss;
+  let tmp5 = undefined !== bypassAutoDismiss;
+  const groupName = tmp4.groupName;
+  if (tmp5) {
+    tmp5 = bypassAutoDismiss;
+  }
+  const tmpResult = useGetDismissibleContent;
+  [tmp7, tmp8] = tmpResult.useGetDismissibleContent(arg0, groupName);
+  _slicedToArray(tmpResult.useGetDismissibleContent(arg0, groupName), 2);
+  const tmpResult2 = useSelectedDismissibleContentShared;
+  const selectedDismissibleContentShared = tmpResult2.useSelectedDismissibleContentShared(tmp7, tmp8, tmp5);
+  if (cResult[2] === tmp8) {
+    let tmp10;
+    if (cResult[3] === tmp7) {
+      tmp10 = cResult[4];
+    }
+    return tmp10;
+  }
+  const items = [tmp7, tmp8];
+  cResult[2] = tmp8;
+  cResult[3] = tmp7;
+  cResult[4] = items;
+  tmp10 = items;
+}) : (function useSelectedDismissibleContent(arg0) {
+  let bypassAutoDismiss;
+  let groupName;
   let tmp2;
   let tmp3;
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
   }
-  const obj = useGetDismissibleContent;
-  [tmp2, tmp3] = obj.useGetDismissibleContent(arg0, arg1);
-  _slicedToArray(obj.useGetDismissibleContent(arg0, arg1), 2);
-  const obj2 = useSelectedDismissibleContentShared;
-  const selectedDismissibleContentShared = obj2.useSelectedDismissibleContentShared(tmp2, tmp3, flag);
+  ({ bypassAutoDismiss, groupName } = obj);
+  if (bypassAutoDismiss === undefined) {
+    bypassAutoDismiss = false;
+  }
+  const obj2 = useGetDismissibleContent;
+  [tmp2, tmp3] = obj2.useGetDismissibleContent(arg0, groupName);
+  _slicedToArray(obj2.useGetDismissibleContent(arg0, groupName), 2);
+  const obj3 = useSelectedDismissibleContentShared;
+  const selectedDismissibleContentShared = obj3.useSelectedDismissibleContentShared(tmp2, tmp3, bypassAutoDismiss);
   const items = [tmp2, tmp3];
   return items;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedSingleUseGuildDismissibleContent(arg0, arg1, arg2, arg3) {
   let tmp6;
   let tmp7;
   const obj = react;
@@ -74,7 +97,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
   cResult[1] = tmp6;
   cResult[2] = items;
   tmp9 = items;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useSelectedSingleUseGuildDismissibleContent(arg0, arg1, arg2) {
   let tmp2;
   let tmp3;
   let flag = arg3;
@@ -90,7 +113,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
   return items;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedVersionedDismissibleContent(arg0, arg1, arg2, arg3) {
   let tmp6;
   let tmp7;
   const obj = react;
@@ -113,7 +136,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   cResult[1] = tmp6;
   cResult[2] = items;
   tmp9 = items;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useSelectedVersionedDismissibleContent(arg0, arg1, arg2) {
   let tmp2;
   let tmp3;
   let flag = arg3;
@@ -129,7 +152,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   return items;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedTimeRecurringDismissibleContent(arg0, arg1, arg2, arg3) {
   let tmp6;
   let tmp7;
   const obj = react;
@@ -152,7 +175,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
   cResult[1] = tmp6;
   cResult[2] = items;
   tmp9 = items;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useSelectedTimeRecurringDismissibleContent(arg0, arg1, arg2) {
   let tmp2;
   let tmp3;
   let flag = arg3;
@@ -168,7 +191,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
   return items;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedSnowflakeBoundDismissibleContent(arg0, arg1, arg2, arg3) {
   let tmp6;
   let tmp7;
   const obj = react;
@@ -191,7 +214,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   cResult[1] = tmp6;
   cResult[2] = items;
   tmp9 = items;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useSelectedSnowflakeBoundDismissibleContent(arg0, arg1, arg2) {
   let tmp2;
   let tmp3;
   let flag = arg3;
@@ -207,7 +230,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   return items;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3, arg4) => {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedSnowflakeBoundGuildDismissibleContent(arg0, arg1, arg2, arg3, arg4) {
   let tmp6;
   let tmp7;
   const obj = react;
@@ -230,7 +253,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
   cResult[1] = tmp6;
   cResult[2] = items;
   tmp9 = items;
-}) : ((arg0, arg1, arg2, arg3) => {
+}) : (function useSelectedSnowflakeBoundGuildDismissibleContent(arg0, arg1, arg2, arg3) {
   let tmp2;
   let tmp3;
   let flag = arg4;
@@ -246,7 +269,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
   return items;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3, arg4) => {
+const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedTimeRecurringSnowflakeBoundDismissibleContent(arg0, arg1, arg2, arg3, arg4) {
   let tmp6;
   let tmp7;
   const obj = react;
@@ -269,7 +292,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
   cResult[1] = tmp6;
   cResult[2] = items;
   tmp9 = items;
-}) : ((arg0, arg1, arg2, arg3) => {
+}) : (function useSelectedTimeRecurringSnowflakeBoundDismissibleContent(arg0, arg1, arg2, arg3) {
   let tmp2;
   let tmp3;
   let flag = arg4;
@@ -285,7 +308,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, 
   return items;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedTimeRecurringGuildDismissibleContent(arg0, arg1, arg2, arg3) {
   let tmp3;
   let tmp4;
   const obj = react;
@@ -307,7 +330,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   cResult[1] = tmp3;
   cResult[2] = items;
   tmp6 = items;
-}) : ((arg0, arg1, arg2, arg3) => {
+}) : (function useSelectedTimeRecurringGuildDismissibleContent(arg0, arg1, arg2, arg3) {
   let tmp2;
   let tmp3;
   const obj = useGetDismissibleContent;

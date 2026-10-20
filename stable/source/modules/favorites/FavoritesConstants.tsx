@@ -1,10 +1,10 @@
-// Module ID: 2065
-// Function ID: 2066
+// Module ID: 2078
+// Function ID: 2079
 // Name: FavoritesConstants
-// Dependencies: [2066, 2]
+// Dependencies: [2079, 2]
 
-// Module 2065 (FavoritesConstants)
-import GuildRecordUtils from "GuildRecordUtils" /* 2066 */;
+// Module 2078 (FavoritesConstants)
+import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
 import size from "module_2" /* 2 */;
 
 const constructFromPartialGuildRecord = GuildRecordUtils.constructFromPartialGuildRecord;

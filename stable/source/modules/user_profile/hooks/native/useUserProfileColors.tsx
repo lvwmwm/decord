@@ -1,26 +1,24 @@
-// Module ID: 7910
-// Function ID: 7911
+// Module ID: 8360
+// Function ID: 8361
 // Name: useUserProfileColors
-// Dependencies: [4879, 1096, 558, 576, 4791, 6683, 504, 4580, 587, 7901, 1103, 2]
+// Dependencies: [5081, 1096, 558, 576, 5031, 6881, 504, 4818, 587, 8351, 1103, 2]
 
-// Module 7910 (useUserProfileColors)
+// Module 8360 (useUserProfileColors)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import useToken from "useToken" /* 4580 */;
-import useThemeDefault from "useTheme" /* 4791 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 6683 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 7901 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import useToken from "useToken" /* 4818 */;
+import useThemeDefault from "useTheme" /* 5031 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 6881 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8351 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let theme;
-
 const ThemeTypes = Constants.ThemeTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfileColors(theme) {
   let int2hex2;
   let overlay;
   let overlaySyncedWithUserTheme;
@@ -40,7 +38,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
   const profileThemeValues = obj2.useProfileThemeValues(theme);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
-    const fn = function t() {
+    const fn = function s() {
       return AccessibilityStore.syncProfileThemeWithUserTheme;
     };
     cResult[0] = items;
@@ -153,7 +151,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
   cResult[7] = token5;
   cResult[8] = obj4;
   tmp17 = obj4;
-}) : ((theme) => {
+}) : (function useUserProfileColors(theme) {
   let int2hex;
   let int2hex2;
   let obj4;

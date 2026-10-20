@@ -1,17 +1,17 @@
-// Module ID: 11074
-// Function ID: 11075
+// Module ID: 10475
+// Function ID: 10476
 // Name: UnreadSettingNotice
-// Dependencies: [19, 17, 1095, 21, 4890, 587, 558, 576, 11075, 4886, 1126, 11076, 5909, 2]
+// Dependencies: [19, 17, 1095, 21, 5092, 587, 558, 576, 10476, 5088, 1126, 10477, 6185, 2]
 
-// Module 11074 (UnreadSettingNotice)
+// Module 10475 (UnreadSettingNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11075 */;
-import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 11076 */;
+import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 10476 */;
+import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 10477 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ obj2 = { display: "flex", flexDirection: "row", paddingVertical: nativeDefault.s
 createStyles = createStyles.createStyles;
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 let closure_7 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadSettingNoticeConnected(channel) {
   let intl;
   let intl2;
   let items;
@@ -54,7 +54,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-md/semibold", children: intl.string(require("intl").t.i4xQ5o) };
-    const Text = tmp(4886).Text;
+    const Text = tmp(5088).Text;
     intl = tmp(1126).intl;
     const tmp11 = closure_5(Text, obj3);
     cResult[2] = tmp11;
@@ -84,7 +84,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { variant: "text-xs/medium", color: "text-link", children: intl2.string(require("intl").t.KyUKhT) };
-    const Text2 = tmp(4886).Text;
+    const Text2 = tmp(5088).Text;
     intl2 = tmp(1126).intl;
     const tmp19 = closure_5(Text2, obj5);
     cResult[7] = tmp19;
@@ -136,7 +136,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[9] = tmp16;
   cResult[10] = tmp21;
   tmp20 = tmp21;
-}) : ((channel) => {
+}) : (function UnreadSettingNoticeConnected(channel) {
   let PressableOpacity;
   let Text;
   let Text2;

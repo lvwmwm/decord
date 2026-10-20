@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/oauth2", width: 158, height: 130, scales: [2, 3], hash: "dc953fc221fa07a0f6638b7e2877ae0b", name: "success-header", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 254, height: 154, scales: [2, 3], hash: "82ae7189682c36bee3dc3a129ab02a11", name: "img_app_crash_darker", type: "png" });

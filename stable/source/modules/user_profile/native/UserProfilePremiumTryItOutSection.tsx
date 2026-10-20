@@ -1,19 +1,20 @@
-// Module ID: 14473
-// Function ID: 14474
+// Module ID: 14912
+// Function ID: 14913
 // Name: UserProfilePremiumTryItOutSection
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6657, 6681, 8914, 8867, 1126, 5879, 14474, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6852, 14913, 9389, 9390, 1126, 8218, 14935, 14945, 2]
 
-// Module 14473 (UserProfilePremiumTryItOutSection)
+// Module 14912 (UserProfilePremiumTryItOutSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8867 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8914 */;
-import UserProfileUpsellCardV2Default from "UserProfileUpsellCardV2" /* 14474 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9389 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9390 */;
+import usePremiumTryItOutPresetShuffleDefault from "usePremiumTryItOutPresetShuffle" /* 14913 */;
+import UserProfileTryItOutFieldsDefault from "UserProfileTryItOutFields" /* 14935 */;
+import UserProfileUpsellCardV2Default from "UserProfileUpsellCardV2" /* 14945 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -21,21 +22,27 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let obj3;
+let obj4;
 let rect;
 let size;
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, divider: obj3, dividerLine: rect, lockCircle: size, lockIcon: { marginTop: -2 } };
+let obj = { container: obj2, cardInner: obj3, divider: obj4, dividerLine: rect, lockCircle: size, lockIcon: { marginTop: -2 } };
 obj2 = { marginTop: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
-obj3 = { height: 28, marginVertical: nativeDefault.space.PX_24, marginHorizontal: -nativeDefault.space.PX_16, justifyContent: "center", alignItems: "center" };
+obj3 = { paddingTop: nativeDefault.space.PX_24 };
+obj4 = { height: 28, marginVertical: nativeDefault.space.PX_24, marginHorizontal: -nativeDefault.space.PX_16, justifyContent: "center", alignItems: "center" };
 rect = { position: "absolute", left: 0, right: 0, top: 13.5, height: 1, backgroundColor: nativeDefault.colors.BORDER_NORMAL };
 size = { width: 28, height: 28, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_NORMAL, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_7 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfilePremiumTryItOutSection(arg0) {
   let analyticsLocations;
+  let cardInner;
+  let container;
+  let currentUser;
   let items;
+  let items1;
   let onLayout;
   let onPreviewPremium;
   let tmp10;
@@ -45,13 +52,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp8;
   let tmp = analyticsLocations;
   let obj = analyticsLocations(576);
-  const cResult = obj.c(22);
-  ({ onLayout, onPreviewPremium } = arg0);
+  const cResult = obj.c(26);
+  ({ currentUser, onLayout, onPreviewPremium } = arg0);
   const tmp4 = closure_7();
-  const tmp6 = useAnalyticsLocationsDefault;
-  analyticsLocations = tmp6(AnalyticsLocationDefault.USER_SETTINGS_TRY_OUT_PREMIUM).analyticsLocations;
+  analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
+  usePremiumTryItOutPresetShuffleDefault();
   if (cResult[0] !== analyticsLocations) {
-    const fn = function n() {
+    const fn = function o() {
       const obj = { analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
       const tmp = openPremiumModalDefault;
       tmp(obj);
@@ -62,7 +69,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     tmp7 = cResult[1];
   }
-  const container = tmp4.container;
+  ({ container, cardInner } = tmp4);
   if (cResult[2] !== tmp7) {
     const intl = tmp(1126).intl;
     const obj2 = { onClick: tmp7 };
@@ -92,7 +99,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[7] !== tmp4.lockIcon) {
     const obj4 = { size: "xs", color: nativeDefault.colors.ICON_MUTED, style: tmp4.lockIcon };
-    const LockIcon = tmp(5879).LockIcon;
+    const LockIcon = tmp(8218).LockIcon;
     const tmp18 = closure_5(LockIcon, obj4);
     cResult[7] = tmp4.lockIcon;
     cResult[8] = tmp18;
@@ -108,80 +115,99 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[12] === tmp4.divider) {
       if (cResult[13] === tmp12) {
         let tmp21;
+        let tmp25;
         if (cResult[14] === tmp19) {
           tmp21 = cResult[15];
         }
-        if (cResult[16] === onLayout) {
-          if (cResult[17] === onPreviewPremium) {
-            if (cResult[18] === tmp4.container) {
-              if (cResult[19] === tmp8) {
-                let tmp25;
-                if (cResult[20] === tmp21) {
-                  tmp25 = cResult[21];
+        if (cResult[16] !== currentUser) {
+          const obj5 = { currentUser, mode: "entrypoint" };
+          const tmp27 = closure_5(UserProfileTryItOutFieldsDefault, obj5);
+          cResult[16] = currentUser;
+          cResult[17] = tmp27;
+          tmp25 = tmp27;
+        } else {
+          tmp25 = cResult[17];
+        }
+        if (cResult[18] === onLayout) {
+          if (cResult[19] === onPreviewPremium) {
+            if (cResult[20] === tmp4.cardInner) {
+              if (cResult[21] === tmp4.container) {
+                if (cResult[22] === tmp25) {
+                  if (cResult[23] === tmp8) {
+                    let tmp28;
+                    if (cResult[24] === tmp21) {
+                      tmp28 = cResult[25];
+                    }
+                    return tmp28;
+                  }
                 }
-                return tmp25;
               }
             }
           }
         }
-        const obj5 = { style: container, text: tmp8, textAlign: "center", buttonText: tmp10, onButtonPress: onPreviewPremium, onLayout, children: tmp21 };
-        const tmp27 = closure_5(UserProfileUpsellCardV2Default, obj5);
-        cResult[16] = onLayout;
-        cResult[17] = onPreviewPremium;
-        cResult[18] = tmp4.container;
-        cResult[19] = tmp8;
-        cResult[20] = tmp21;
-        cResult[21] = tmp27;
-        tmp25 = tmp27;
+        const obj6 = { style: container, innerStyle: cardInner, text: tmp8, textAlign: "center", buttonText: tmp10, onButtonPress: onPreviewPremium, onLayout, children: items };
+        items = [tmp21, tmp25];
+        const tmp30 = closure_6(UserProfileUpsellCardV2Default, obj6);
+        cResult[18] = onLayout;
+        cResult[19] = onPreviewPremium;
+        cResult[20] = tmp4.cardInner;
+        cResult[21] = tmp4.container;
+        cResult[22] = tmp25;
+        cResult[23] = tmp8;
+        cResult[24] = tmp21;
+        cResult[25] = tmp30;
+        tmp28 = tmp30;
       }
     }
-    const obj6 = { style: tmp4.divider, children: items };
-    items = [tmp12, tmp19];
-    const tmp24 = closure_6(View, obj6);
+    const obj7 = { style: tmp4.divider, children: items1 };
+    items1 = [tmp12, tmp19];
+    const tmp24 = closure_6(View, obj7);
     cResult[12] = tmp4.divider;
     cResult[13] = tmp12;
     cResult[14] = tmp19;
     cResult[15] = tmp24;
     tmp21 = tmp24;
   }
-  const obj7 = { style: tmp4.lockCircle, children: tmp16 };
-  const tmp20 = closure_5(View, obj7);
+  const obj8 = { style: tmp4.lockCircle, children: tmp16 };
+  const tmp20 = closure_5(View, obj8);
   cResult[9] = tmp4.lockCircle;
   cResult[10] = tmp16;
   cResult[11] = tmp20;
   tmp19 = tmp20;
-}) : ((arg0) => {
+}) : (function UserProfilePremiumTryItOutSection(arg0) {
   let LockIcon;
+  let currentUser;
   let intl;
   let intl2;
   let items1;
-  let obj2;
+  let items2;
   let obj5;
   let onLayout;
   let onPreviewPremium;
-  ({ onLayout, onPreviewPremium } = arg0);
+  ({ currentUser, onLayout, onPreviewPremium } = arg0);
   let tmp = closure_7();
-  const tmp2 = useAnalyticsLocationsDefault;
-  const analyticsLocations = tmp2(AnalyticsLocationDefault.USER_SETTINGS_TRY_OUT_PREMIUM).analyticsLocations;
+  const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
+  usePremiumTryItOutPresetShuffleDefault();
   const items = [analyticsLocations];
   const callback = react.useCallback(() => {
     const obj = { analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
     const tmp = openPremiumModalDefault;
     tmp(obj);
   }, items);
-  let obj = { style: tmp.container, text: intl.format(analyticsLocations(1126).t.TmfgI2, { onClick: callback }), textAlign: "center", buttonText: intl2.string(analyticsLocations(1126).t.PxUx8e), onButtonPress: onPreviewPremium, onLayout, children: closure_6(View, obj2) };
+  let obj = { style: tmp.container, innerStyle: tmp.cardInner, text: intl.format(analyticsLocations(1126).t.TmfgI2, { onClick: callback }), textAlign: "center", buttonText: intl2.string(analyticsLocations(1126).t.PxUx8e), onButtonPress: onPreviewPremium, onLayout, children: items2 };
   const tmp4 = UserProfileUpsellCardV2Default;
   intl = analyticsLocations(1126).intl;
   intl2 = analyticsLocations(1126).intl;
-  obj2 = { style: tmp.divider, children: items1 };
+  const obj2 = { style: tmp.divider, children: items1 };
   items1 = [, ];
   const obj3 = { style: tmp.dividerLine };
   items1[0] = closure_5(View, obj3);
   const obj4 = { style: tmp.lockCircle, children: closure_5(LockIcon, obj5) };
   obj5 = { size: "xs", color: nativeDefault.colors.ICON_MUTED, style: tmp.lockIcon };
-  LockIcon = analyticsLocations(5879).LockIcon;
+  LockIcon = analyticsLocations(8218).LockIcon;
   items1[1] = closure_5(View, obj4);
-  return closure_5(tmp4, obj);
+  items2 = [closure_6(View, obj2), closure_5(UserProfileTryItOutFieldsDefault, { currentUser, mode: "entrypoint" })];
+  return closure_6(tmp4, obj);
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfilePremiumTryItOutSection.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 17413
-// Function ID: 17414
+// Module ID: 18009
+// Function ID: 18010
 // Name: useIsOnMainSurface
-// Dependencies: [32, 19, 4737, 558, 576, 2]
+// Dependencies: [32, 19, 4977, 558, 576, 2]
 
-// Module 17413 (useIsOnMainSurface)
-import RootNavigationRef from "RootNavigationRef" /* 4737 */;
+// Module 18009 (useIsOnMainSurface)
+import RootNavigationRef from "RootNavigationRef" /* 4977 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -58,7 +58,7 @@ function getIsOnMainSurface() {
   return false;
 }
 const set = new Set(["tabs", "channel"]);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsOnMainSurface() {
   let closure_0;
   let first;
   let tmp4;
@@ -92,7 +92,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = obj2.useEffect(tmp4, tmp5);
   return first;
-}) : (() => {
+}) : (function useIsOnMainSurface() {
   let require;
   let tmp2;
   [tmp2, require] = _slicedToArray(react.useState(getIsOnMainSurface), 2);

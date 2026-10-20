@@ -1,26 +1,25 @@
-// Module ID: 8391
-// Function ID: 8392
+// Module ID: 8947
+// Function ID: 8948
 // Name: GameProfileCommunity
-// Dependencies: [19, 17, 21, 587, 4890, 558, 576, 6433, 8386, 8388, 8359, 8319, 6845, 8392, 2066, 1126, 5971, 4886, 8394, 1188, 5594, 2]
+// Dependencies: [19, 17, 21, 587, 5092, 558, 576, 6627, 8942, 8944, 8916, 8874, 7053, 8948, 2079, 1126, 6159, 5088, 8865, 1200, 5379, 2]
 
-// Module 8391 (GameProfileCommunity)
+// Module 8947 (GameProfileCommunity)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6433 */;
-import transitionToGuild from "transitionToGuild" /* 6845 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8319 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 8386 */;
-import GameProfileSection from "GameProfileSection" /* 8388 */;
-import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 8392 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6627 */;
+import transitionToGuild from "transitionToGuild" /* 7053 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8874 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 8942 */;
+import GameProfileSection from "GameProfileSection" /* 8944 */;
+import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 8948 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;
-let closeModal, guild, id, showInviteResult, tmp5, tmp6Result, tmp6Result1, transitionToGuildResult;
 
 let hasOwnProperty;
 let metroRequire;
@@ -71,7 +70,7 @@ size7 = { width: "55%", height: nativeDefault.space.PX_12, borderRadius: nativeD
 let closure_7 = createStyles(obj);
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_8 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileCommunitySkeleton() {
   let items;
   let items1;
   let items2;
@@ -163,7 +162,7 @@ let closure_8 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 }
                 const obj6 = { animationDelayMs: result, showViewAllSkeleton: false, skeletonTitleWidth: 80, children: hasOwnProperty(View, obj7) };
                 obj7 = { style: tmp4.card, children: tmp34 };
-                const GameProfileSectionSkeleton = tmp(8388).GameProfileSectionSkeleton;
+                const GameProfileSectionSkeleton = tmp(8944).GameProfileSectionSkeleton;
                 const tmp40 = hasOwnProperty(GameProfileSectionSkeleton, obj6);
                 cResult[24] = tmp4.card;
                 cResult[25] = tmp34;
@@ -205,7 +204,7 @@ let closure_8 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp11;
   cResult[4] = items3;
   tmp12 = items3;
-}) : (() => {
+}) : (function GameProfileCommunitySkeleton() {
   let GameProfileSkeletonContainer;
   let items;
   let items2;
@@ -239,7 +238,7 @@ let closure_8 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return hasOwnProperty(GameProfileSectionSkeleton, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((closeModal) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileCommunityServer(closeModal) {
   let game;
   let intl2;
   let intl3;
@@ -561,34 +560,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((closeModal) => {
             const tmp19 = closure_5(tmp5Result4, obj24);
             cResult[13] = tmp11;
             cResult[14] = tmp4.guildIconImage;
-            class G {
-              constructor() {
-                tmp = invite;
-                if (null != invite) {
-                  tmp5 = trackAction;
-                  tmp6 = closure_0;
-                  tmp7 = closure_2;
-                  tmp8 = trackAction(closure_0(closure_2[11]).GameProfileTrackActionActions.JoinServer);
-                  tmp9 = closeModal;
-                  tmp10 = closeModal();
-                  tmp11 = isMember;
-                  if (tmp11) {
-                    guild = tmp.guild;
-                    id = undefined;
-                    if (guild != null) {
-                      id = guild.id;
-                    }
-                    if (null != id) {
-                      tmp6Result = tmp6(tmp7[12]);
-                      transitionToGuildResult = tmp6Result.transitionToGuild(tmp.guild.id);
-                    }
-                  }
-                  tmp6Result1 = tmp6(tmp7[13]);
-                  showInviteResult = tmp6Result1.showInvite(tmp.code);
-                }
-                return;
-              }
-            }
+            cResult[15] = tmp4.guildIconLoading;
             cResult[16] = tmp19;
             tmp16 = tmp19;
           }
@@ -614,41 +586,33 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((closeModal) => {
       }
     }
   }
-  class G {
-    constructor() {
-      tmp = invite;
-      if (null != invite) {
-        tmp5 = trackAction;
-        tmp6 = closure_0;
-        tmp7 = closure_2;
-        tmp8 = trackAction(closure_0(closure_2[11]).GameProfileTrackActionActions.JoinServer);
-        tmp9 = closeModal;
-        tmp10 = closeModal();
-        tmp11 = isMember;
-        if (tmp11) {
-          guild = tmp.guild;
-          id = undefined;
-          if (guild != null) {
-            id = guild.id;
-          }
-          if (null != id) {
-            tmp6Result = tmp6(tmp7[12]);
-            transitionToGuildResult = tmp6Result.transitionToGuild(tmp.guild.id);
-          }
+  const fn = function k() {
+    if (null != invite) {
+      trackAction(GameProfileAnalyticUtils.GameProfileTrackActionActions.JoinServer);
+      closeModal();
+      const tmp11 = isMember;
+      if (tmp11) {
+        const guild = tmp.guild;
+        let id;
+        if (guild != null) {
+          id = guild.id;
         }
-        tmp6Result1 = tmp6(tmp7[13]);
-        showInviteResult = tmp6Result1.showInvite(tmp.code);
+        if (null != id) {
+          const tmp6Result = transitionToGuild;
+          tmp6Result.transitionToGuild(invite.guild.id);
+        }
       }
-      return;
+      const tmp6Result2 = DisplayedInviteActionCreators;
+      tmp6Result2.showInvite(invite.code);
     }
-  }
+  };
   cResult[2] = closeModal;
   cResult[3] = invite;
   cResult[4] = isMember;
   cResult[5] = trackAction;
-  cResult[6] = G;
-  tmp9 = G;
-}) : ((closeModal) => {
+  cResult[6] = fn;
+  tmp9 = fn;
+}) : (function GameProfileCommunityServer(closeModal) {
   let game;
   let intl;
   let intl2;

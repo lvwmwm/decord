@@ -1,15 +1,15 @@
-// Module ID: 13500
-// Function ID: 13501
+// Module ID: 13988
+// Function ID: 13989
 // Name: ExperimentTriggerPointStore
-// Dependencies: [4776, 1246, 13501, 13502, 504, 584, 2]
+// Dependencies: [5016, 1259, 13989, 13990, 504, 584, 2]
 
-// Module 13500 (ExperimentTriggerPointStore)
+// Module 13988 (ExperimentTriggerPointStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Dispatcher2 from "Dispatcher" /* 584 */;
-import ConnectionOpenTriggerPoint2 from "ConnectionOpenTriggerPoint" /* 13502 */;
-import ExperimentStore from "ExperimentStore" /* 4776 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import DebugExperiment from "DebugExperiment" /* 13501 */;
+import ConnectionOpenTriggerPoint2 from "ConnectionOpenTriggerPoint" /* 13990 */;
+import ExperimentStore from "ExperimentStore" /* 5016 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1259 */;
+import DebugExperiment from "DebugExperiment" /* 13989 */;
 import size from "module_2" /* 2 */;
 
 const Dispatcher = Dispatcher2;

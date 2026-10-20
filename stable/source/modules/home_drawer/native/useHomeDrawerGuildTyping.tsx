@@ -1,15 +1,15 @@
-// Module ID: 16261
-// Function ID: 16262
+// Module ID: 16783
+// Function ID: 16784
 // Name: useHomeDrawerGuildTyping
-// Dependencies: [4511, 2055, 2051, 11579, 568, 558, 576, 16258, 16259, 11, 504, 2]
+// Dependencies: [4752, 2069, 2065, 11641, 568, 558, 576, 16780, 16781, 11, 504, 2]
 
-// Module 16261 (useHomeDrawerGuildTyping)
+// Module 16783 (useHomeDrawerGuildTyping)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import shallowEqual from "shallowEqual" /* 568 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4511 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import TypingStore from "TypingStore" /* 11579 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4752 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import TypingStore from "TypingStore" /* 11641 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,8 +25,8 @@ function areHomeDrawerGuildTypingStatesEqual(typingChannelId, typingChannelId2) 
   return result;
 }
 const isThread = ChannelRecord.isThread;
-let closure_7 = { typingChannelId: "Array", typingChannelName: "Reflect", typingUserIds: [] };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_7 = { typingChannelId: "Array", typingChannelName: "Set", typingUserIds: [] };
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHomeDrawerGuildTyping(arg0) {
   let closure_0;
   let first;
   let isHomeDrawerChannelInChannelList;
@@ -61,7 +61,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmpResult.useStateFromStores(first, tmp10, tmp11, areHomeDrawerGuildTypingStatesEqual);
     }
   }
-  const fn = function h() {
+  const fn = function p() {
     let name;
     let obj2;
     const typingUsersByGuild = TypingStore.getTypingUsersByGuild(closure_0);
@@ -98,7 +98,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = items1;
   tmp11 = items1;
   tmp10 = fn;
-}) : ((arg0) => {
+}) : (function useHomeDrawerGuildTyping(arg0) {
   let closure_0;
   let isHomeDrawerChannelInChannelList;
   _require = arg0;

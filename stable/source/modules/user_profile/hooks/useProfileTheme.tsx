@@ -1,27 +1,27 @@
-// Module ID: 7899
-// Function ID: 7900
+// Module ID: 8349
+// Function ID: 8350
 // Name: useProfileTheme
-// Dependencies: [32, 4879, 7900, 1085, 558, 576, 4791, 504, 586, 7815, 1103, 7901, 4729, 2]
+// Dependencies: [32, 5081, 8350, 1085, 558, 576, 5031, 504, 586, 8264, 1103, 8351, 4969, 2]
 
-// Module 7899 (useProfileTheme)
+// Module 8349 (useProfileTheme)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import shims from "shims" /* 586 */;
 import Constants from "Constants" /* 1085 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import shared from "shared" /* 4729 */;
-import useThemeDefault from "useTheme" /* 4791 */;
-import useAvatarColor from "useAvatarColor" /* 7815 */;
-import useProfileThemeOverrideStore from "useProfileThemeOverrideStore" /* 7900 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 7901 */;
+import shared from "shared" /* 4969 */;
+import useThemeDefault from "useTheme" /* 5031 */;
+import useAvatarColor from "useAvatarColor" /* 8264 */;
+import useProfileThemeOverrideStore from "useProfileThemeOverrideStore" /* 8350 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8351 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useEffectiveThemeOverride = useProfileThemeOverrideStore.useEffectiveThemeOverride;
 const ThemeTypes = Constants.ThemeTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPreview) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileTheme(isPreview) {
   let displayProfile;
   let forceUserTheme;
   let pendingAvatarSrc;
@@ -216,7 +216,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPreview) => {
   cResult[4] = user;
   cResult[5] = tmp13;
   tmp12 = tmp13;
-}) : ((arg0) => {
+}) : (function useProfileTheme(arg0) {
   let displayProfile;
   let forceUserTheme;
   let isPreview;

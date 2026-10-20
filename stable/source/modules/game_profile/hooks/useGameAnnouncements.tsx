@@ -1,12 +1,12 @@
-// Module ID: 8413
-// Function ID: 8414
+// Module ID: 8958
+// Function ID: 8959
 // Name: useGameAnnouncements
-// Dependencies: [19, 8327, 558, 576, 504, 8414, 2]
+// Dependencies: [19, 8882, 558, 576, 504, 8959, 2]
 
-// Module 8413 (useGameAnnouncements)
+// Module 8958 (useGameAnnouncements)
 import react from "react" /* 19 */;
-import GameProfileHttpUtils from "GameProfileHttpUtils" /* 8414 */;
-import GameProfileStore from "GameProfileStore" /* 8327 */;
+import GameProfileHttpUtils from "GameProfileHttpUtils" /* 8959 */;
+import GameProfileStore from "GameProfileStore" /* 8882 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 const useEffect = react.useEffect;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, limit) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameAnnouncements(arg0, limit) {
   let closure_0;
   let data;
   let first;
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, limit) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function u() {
+    const fn = function l() {
       let result;
       let result1;
       let announcements;
@@ -135,7 +135,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, limit) => {
   cResult[7] = items1;
   tmp9 = items1;
   tmp8 = fn2;
-}) : ((arg0, limit) => {
+}) : (function useGameAnnouncements(arg0, limit) {
   let channelId;
   let closure_0;
   let data;

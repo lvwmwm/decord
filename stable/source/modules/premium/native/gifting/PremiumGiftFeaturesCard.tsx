@@ -1,35 +1,35 @@
-// Module ID: 10482
-// Function ID: 10483
+// Module ID: 10108
+// Function ID: 10109
 // Name: PremiumGiftFeaturesCard
-// Dependencies: [109, 19, 17, 10396, 1379, 1096, 21, 587, 4890, 5915, 558, 576, 10470, 504, 8877, 10483, 10484, 8889, 8887, 1126, 4886, 8894, 5594, 8487, 10485, 10469, 10486, 10487, 4849, 2018, 10488, 4589, 5605, 2]
+// Dependencies: [109, 19, 17, 9117, 1392, 1096, 21, 587, 5092, 5906, 558, 576, 10096, 504, 9400, 10109, 10110, 9414, 9412, 1126, 5088, 9419, 5379, 9030, 10111, 10095, 10112, 10113, 5051, 2031, 10114, 4827, 5391, 2]
 
-// Module 10482 (PremiumGiftFeaturesCard)
+// Module 10108 (PremiumGiftFeaturesCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import StringUtils from "StringUtils" /* 2018 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import LinearGradientDefault from "LinearGradient" /* 5605 */;
-import TextStylesDefault from "TextStyles" /* 5915 */;
-import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 8487 */;
-import usePremiumFeaturesDefault from "usePremiumFeatures" /* 8877 */;
-import PremiumFeaturesWumpusDefault from "PremiumFeaturesWumpus" /* 8889 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 8894 */;
-import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10469 */;
-import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10483 */;
-import useShouldShowGiftingPromotionDecoDefault from "useShouldShowGiftingPromotionDeco" /* 10484 */;
-import MarketingComponentHooks from "MarketingComponentHooks" /* 10485 */;
-import SlayerStorefrontTimeUtils from "SlayerStorefrontTimeUtils" /* 10486 */;
-import PremiumGiftCountdownBadgeDefault from "PremiumGiftCountdownBadge" /* 10487 */;
-import PremiumGiftPromotionDetailsDefault from "PremiumGiftPromotionDetails" /* 10488 */;
+import StringUtils from "StringUtils" /* 2031 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
+import TextStylesDefault from "TextStyles" /* 5906 */;
+import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9030 */;
+import usePremiumFeaturesDefault from "usePremiumFeatures" /* 9400 */;
+import PremiumFeaturesWumpusDefault from "PremiumFeaturesWumpus" /* 9414 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 9419 */;
+import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10095 */;
+import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10109 */;
+import useShouldShowGiftingPromotionDecoDefault from "useShouldShowGiftingPromotionDeco" /* 10110 */;
+import MarketingComponentHooks from "MarketingComponentHooks" /* 10111 */;
+import SlayerStorefrontTimeUtils from "SlayerStorefrontTimeUtils" /* 10112 */;
+import PremiumGiftCountdownBadgeDefault from "PremiumGiftCountdownBadge" /* 10113 */;
+import PremiumGiftPromotionDetailsDefault from "PremiumGiftPromotionDetails" /* 10114 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 10396 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import PromotionsStore from "PromotionsStore" /* 9117 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Constants from "Constants" /* 1096 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let tmp;
 let tmp19;
 let unpackModuleId;
 const get_initialized = tmp(504);
-const PremiumFeaturesLogoDefault = tmp19(8887);
+const PremiumFeaturesLogoDefault = tmp19(9412);
 let closure_3 = ["premiumType", "onPress", "style", "claimableRewards", "isSelected", "variant"];
 const View = react_native.View;
 ({ PremiumTypes: metroImportDefault, SubscriptionIntervalTypes: metroImportAll } = PremiumConstants);
@@ -92,7 +92,7 @@ let closure_17 = createStyles.createStyles(() => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftFeaturesCard(arg0) {
   let arr;
   let claimableRewards;
   let isSelected;
@@ -251,7 +251,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[10] = tmp7;
   cResult[11] = tmp18.card;
   cResult[12] = items3;
-}) : ((variant) => {
+}) : (function PremiumGiftFeaturesCard(variant) {
   let Button;
   let claimableRewards;
   let intl;
@@ -304,18 +304,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items3[1] = unpackModuleId(PremiumFeaturesLogoDefault, obj4);
   const obj5 = { style: items4, variant: "text-sm/medium", color: "text-overlay-light", children: intl.format(intl5.t.Ob6fwp, { monthlyPrice: tmp9, yearlyPrice: tmp10 }) };
   items4 = [tmp6.pricing, obj8[str]];
-  const Text = tmp2(4886).Text;
+  const Text = tmp2(5088).Text;
   intl = tmp2(1126).intl;
   items3[2] = unpackModuleId(Text, obj5);
   const obj6 = { style: items5, variant: "heading-sm/bold", color: "text-overlay-light", children: intl2.string(intl5.t.JgsVht) };
   items5 = [tmp6.featureTitle, obj4[str]];
-  const Text2 = tmp2(4886).Text;
+  const Text2 = tmp2(5088).Text;
   intl2 = tmp2(1126).intl;
   items3[3] = unpackModuleId(Text2, obj6);
   const obj7 = { style: tmp6.features, features: tmp8, iconStyle: tmp6.featureIcon, labelStyle: tmp6.featureText, rowStyle: obj[str] };
   items3[4] = unpackModuleId(PremiumFeatureListDefault, obj7);
   items3[5] = unpackModuleId(View, { style: { flexGrow: 1 } });
-  const tmp14 = closure_12;
+  const tmp14 = authStore2;
   if (tmp11) {
     if (null != stateFromStores) {
       let tmp12Result;
@@ -331,7 +331,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const obj9 = { style: items6, children: unpackModuleId(Button, { variant: "primary-overlay", text: stringResult, onPress }) };
   items6 = [tmp6.button, obj12[str]];
-  Button = tmp2(5594).Button;
+  Button = tmp2(5379).Button;
   if (premiumType === metroImportDefault.TIER_0) {
     const intl4 = tmp2(1126).intl;
     stringResult = intl4.string(tmp2(1126).t.rk4Uu8);
@@ -342,7 +342,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmp12Result = tmp12(tmp13, obj9);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLargeSize) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftPlanSelectPromotionDetails(isLargeSize) {
   let ClockIcon;
   let config;
   let first;
@@ -369,7 +369,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLargeSize) =
   } else {
     first = cResult[0];
   }
-  const GiftPromotionReminderExperiment = tmp(10469).GiftPromotionReminderExperiment;
+  const GiftPromotionReminderExperiment = tmp(10095).GiftPromotionReminderExperiment;
   const enabled = GiftPromotionReminderExperiment.useConfig(first).enabled;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [PromotionsStore];
@@ -476,8 +476,8 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLargeSize) =
                   return tmp30;
                 }
               }
-              const obj5 = { theme: constants3.DARK, children: closure_12(LinearGradientDefault, obj6) };
-              const ThemeContextProvider = tmp(4589).ThemeContextProvider;
+              const obj5 = { theme: constants3.DARK, children: authStore2(LinearGradientDefault, obj6) };
+              const ThemeContextProvider = tmp(4827).ThemeContextProvider;
               obj6 = { style: promotionDetailsContainer, colors: tmp14, children: items2 };
               items2 = [tmp22, tmp27];
               const tmp35 = unpackModuleId(ThemeContextProvider, obj5);
@@ -538,14 +538,14 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLargeSize) =
     }
     obj11 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
     const tmp19 = PremiumGiftCountdownBadgeDefault;
-    ClockIcon = tmp(4849).ClockIcon;
+    ClockIcon = tmp(5051).ClockIcon;
     tmp16 = unpackModuleId(tmp19, obj10);
   }
   cResult[4] = tmp4.countdownBadge;
   cResult[5] = tickingFormattedLimitedOfferTimeLeft;
   cResult[6] = tmp16;
   tmp15 = tmp16;
-}) : ((config) => {
+}) : (function PremiumGiftPlanSelectPromotionDetails(config) {
   let ClockIcon;
   let giftPromotion;
   let header;
@@ -577,18 +577,18 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLargeSize) =
   }
   const tickingFormattedLimitedOfferTimeLeft = useTickingFormattedLimitedOfferTimeLeft(endDate, enabled);
   const obj3 = { theme: constants3.DARK, children: tmp10(tmp12, obj4) };
-  const ThemeContextProvider = tmp2(4589).ThemeContextProvider;
+  const ThemeContextProvider = tmp2(4827).ThemeContextProvider;
   const obj5 = { imageUrl: themeAndReducedMotionAwareAssetUrl, topContent: tmp9Result, title: header, subtitle: mobileBody, subtitleColor: "text-default", shouldAnimate: isSelected };
   tmp9Result = null != tickingFormattedLimitedOfferTimeLeft;
   obj4 = { style: tmp.promotionDetailsContainer, colors: [4294967102, 4294967053], children: items1 };
   tmp12 = LinearGradientDefault;
-  tmp10 = closure_12;
+  tmp10 = authStore2;
   const tmp13 = PremiumGiftPromotionDetailsDefault;
   if (tmp9Result) {
     const obj6 = { text: tickingFormattedLimitedOfferTimeLeft, icon: unpackModuleId(ClockIcon, obj7), style: tmp.countdownBadge };
     obj7 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
     const tmp11Result = PremiumGiftCountdownBadgeDefault;
-    ClockIcon = tmp2(4849).ClockIcon;
+    ClockIcon = tmp2(5051).ClockIcon;
     tmp9Result = tmp9(tmp11Result, obj6);
   }
   const tmp2Result = StringUtils;
@@ -608,7 +608,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((isLargeSize) =
   }
   items1 = [unpackModuleId(tmp13, obj5), ];
   const obj9 = { variant: "primary-overlay", text: intl3.string(intl5.t.Ve9Ge6), onPress };
-  const Button = tmp2(5594).Button;
+  const Button = tmp2(5379).Button;
   intl3 = tmp2(1126).intl;
   items1[1] = unpackModuleId(Button, obj9);
   return unpackModuleId(ThemeContextProvider, obj3);

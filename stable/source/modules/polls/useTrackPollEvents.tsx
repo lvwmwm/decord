@@ -1,21 +1,21 @@
-// Module ID: 11836
-// Function ID: 11837
+// Module ID: 11919
+// Function ID: 11920
 // Name: useTrackPollEvents
-// Dependencies: [19, 1085, 558, 576, 5070, 11350, 2]
+// Dependencies: [19, 1085, 558, 576, 5107, 11518, 2]
 
-// Module 11836 (useTrackPollEvents)
+// Module 11919 (useTrackPollEvents)
 import Constants from "Constants" /* 1085 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
-import PollLayoutTypes from "PollLayoutTypes" /* 11350 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
+import PollLayoutTypes from "PollLayoutTypes" /* 11518 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, attachments_count, closure_0, closure_2, image, stickers_count;
+let _require, closure_0, closure_2, image, stickers_count;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((attachments_count, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackPollCreationEvents(attachments_count, arg1) {
   _require = attachments_count;
   let closure_1 = arg1;
   let obj = require("react");
@@ -60,7 +60,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((attachments_count, a
   cResult[1] = attachments_count;
   cResult[2] = fn;
   tmp2 = fn;
-}) : ((attachments_count, arg1) => {
+}) : (function useTrackPollCreationEvents(attachments_count, arg1) {
   let items;
   let closure_1 = arg1;
   let obj = {

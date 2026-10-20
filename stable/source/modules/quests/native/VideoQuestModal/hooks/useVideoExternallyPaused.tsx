@@ -1,21 +1,21 @@
-// Module ID: 14960
-// Function ID: 14961
+// Module ID: 15440
+// Function ID: 15441
 // Name: useVideoExternallyPaused
-// Dependencies: [4561, 558, 576, 7580, 4736, 10940, 504, 5709, 1369, 2]
+// Dependencies: [4802, 558, 576, 9359, 4976, 12971, 504, 5301, 1382, 2]
 
-// Module 14960 (useVideoExternallyPaused)
+// Module 15440 (useVideoExternallyPaused)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
-import useAlertStore from "useAlertStore" /* 5709 */;
-import ContextMenuState from "ContextMenuState" /* 7580 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 10940 */;
-import ActionSheetStore from "ActionSheetStore" /* 4561 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
+import useAlertStore from "useAlertStore" /* 5301 */;
+import ContextMenuState from "ContextMenuState" /* 9359 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 12971 */;
+import ActionSheetStore from "ActionSheetStore" /* 4802 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoExternallyPaused(questId, arg1) {
   let key;
   let tmp12;
   let tmp6;
@@ -83,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId, arg1) => 
   cResult[9] = arg1;
   cResult[10] = tmpResult6.isIOS() && arg1 || tmp11 || tmp4 || openModalKey !== tmp6 || tmp14;
   tmpResult6.isIOS() && arg1 || tmp11 || tmp4 || openModalKey !== tmp6 || tmp14;
-}) : ((questId, arg1) => {
+}) : (function useVideoExternallyPaused(questId, arg1) {
   let key;
   const obj = ContextMenuState;
   const activeContextMenu = obj.useActiveContextMenu();

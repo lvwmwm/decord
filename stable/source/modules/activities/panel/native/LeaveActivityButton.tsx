@@ -1,26 +1,24 @@
-// Module ID: 17189
-// Function ID: 17190
+// Module ID: 17784
+// Function ID: 17785
 // Name: LeaveActivityButton
-// Dependencies: [19, 8705, 21, 558, 576, 1126, 5594, 9577, 8991, 2]
+// Dependencies: [19, 6067, 21, 558, 576, 1126, 5379, 10995, 10813, 2]
 
-// Module 17189 (LeaveActivityButton)
+// Module 17784 (LeaveActivityButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8991 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9577 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10813 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10995 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let selfEmbeddedActivity;
-
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseLeaveActivityButton(onPress) {
   let tmp4;
   let tmp5;
   let tmp8;
@@ -40,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     [tmp4, tmp5] = cResult;
   }
   if (cResult[2] !== onPress) {
-    const Button = tmp(5594).Button;
+    const Button = tmp(5379).Button;
     const tmp11 = <Button onPress={onPress} icon={AssetRegistryDefault} text={tmp4} accessibilityLabel={tmp5} variant="destructive" size="sm" maxFontSizeMultiplier={1} />;
     cResult[2] = onPress;
     cResult[3] = tmp11;
@@ -49,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     tmp8 = cResult[3];
   }
   return tmp8;
-}) : ((onPress) => {
+}) : (function BaseLeaveActivityButton(onPress) {
   const Button = components_Button_Button.Button;
   const intl = intl3.intl;
   const intl2 = intl3.intl;
@@ -57,7 +55,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
 });
 let closure_5 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((selfEmbeddedActivity) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveActivityButton(selfEmbeddedActivity) {
   let obj = selfEmbeddedActivity(576);
   const cResult = obj.c(4);
   selfEmbeddedActivity = selfEmbeddedActivity.selfEmbeddedActivity;
@@ -86,17 +84,17 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
     const timerId = setTimeout(() => {
       let applicationId;
       let _location;
-      const leaveActivity = setMode(dependencyMap[8]).leaveActivity;
-      setMode(dependencyMap[8]);
-      if (selfEmbeddedActivity != null) {
+      const leaveEmbeddedActivity = selfEmbeddedActivity(dependencyMap[8]).leaveEmbeddedActivity;
+      selfEmbeddedActivity(dependencyMap[8]);
+      if (closure_1_0 != null) {
         _location = tmp2.location;
       }
       const obj = { location: _location, applicationId };
       applicationId = undefined;
-      if (selfEmbeddedActivity != null) {
+      if (closure_1_0 != null) {
         applicationId = tmp2.applicationId;
       }
-      leaveActivity(obj);
+      const result = leaveEmbeddedActivity(obj);
     }, 400);
   }} />;
   let applicationId1;
@@ -112,15 +110,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[2] = setMode;
   cResult[3] = tmp7;
   tmp6 = tmp7;
-}) : ((arg0) => {
+}) : (function LeaveActivityButton(arg0) {
   ({ selfEmbeddedActivity: require, setMode: importDefault } = arg0);
   return <closure_5 onPress={function onPress() {
     const tmp = importDefault(ActivityPanelModes.DISCONNECTED);
     const timerId = setTimeout(() => {
       let applicationId;
       let _location;
-      const leaveActivity = EmbeddedActivitiesNativeManagerDefault.leaveActivity;
-      EmbeddedActivitiesNativeManagerDefault;
+      const leaveEmbeddedActivity = leaveEmbeddedActivity2.leaveEmbeddedActivity;
+      leaveEmbeddedActivity2;
       if (closure_1_0 != null) {
         _location = tmp2.location;
       }
@@ -129,11 +127,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
       if (closure_1_0 != null) {
         applicationId = tmp2.applicationId;
       }
-      leaveActivity(obj);
+      const result = leaveEmbeddedActivity(obj);
     }, 400);
   }} />;
 }));
-const result = size.fileFinishedImporting("modules/activities/panel/native/LeaveActivityButton.tsx");
+let result = size.fileFinishedImporting("modules/activities/panel/native/LeaveActivityButton.tsx");
 
 export default memoResult;
 export const BaseLeaveActivityButton = tmp2;

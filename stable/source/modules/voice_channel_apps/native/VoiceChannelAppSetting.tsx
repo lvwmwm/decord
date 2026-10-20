@@ -1,15 +1,15 @@
-// Module ID: 16991
-// Function ID: 16992
+// Module ID: 17579
+// Function ID: 17580
 // Name: VoiceChannelAppSetting
-// Dependencies: [19, 21, 558, 576, 16992, 16993, 1126, 3821, 6074, 5993, 9222, 4854, 16995, 1987, 16995, 2]
+// Dependencies: [19, 21, 558, 576, 17580, 17581, 1126, 3947, 6265, 6180, 8607, 5056, 17583, 2000, 17583, 2]
 
-// Module 16991 (VoiceChannelAppSetting)
+// Module 17579 (VoiceChannelAppSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import useVoiceChannelApp from "useVoiceChannelApp" /* 16992 */;
-import VoiceChannelAppActionSheet from "VoiceChannelAppActionSheet" /* 16995 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import useVoiceChannelApp from "useVoiceChannelApp" /* 17580 */;
+import VoiceChannelAppActionSheet from "VoiceChannelAppActionSheet" /* 17583 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -42,11 +42,11 @@ function VoiceChannelAppRow(guildId) {
     label: name,
     accessibilityLabel: "" + stringResult + " " + name,
     icon: tmp8Result,
-    onPress() {
+    onPress: function handlePress() {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { guildId, selectedApplicationId: application_id, onChange };
-      const tmp2 = asyncRequire(16995, dependencyMap.paths);
+      const tmp2 = asyncRequire(17583, dependencyMap.paths);
       openLazy(tmp2, VoiceChannelAppActionSheet.VOICE_CHANNEL_APP_ACTION_SHEET_KEY, obj);
     },
     arrow: true
@@ -60,7 +60,7 @@ function VoiceChannelAppRow(guildId) {
   return <TableRowGroup title={stringResult} description={intl3.string(onChange(application_id[7])["wKSjL/"])} hasIcons={null != found}>{null}</TableRowGroup>;
 }
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChannelAppSetting(arg0) {
   let channel;
   let guildId;
   let onChange;
@@ -87,7 +87,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = tmp6;
   }
   return tmp2;
-}) : ((channel) => {
+}) : (function VoiceChannelAppSetting(channel) {
   let guildId;
   let onChange;
   channel = channel.channel;

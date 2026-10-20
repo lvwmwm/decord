@@ -1,19 +1,19 @@
-// Module ID: 12945
-// Function ID: 12946
+// Module ID: 13414
+// Function ID: 13415
 // Name: useAddToWishlistGridItems
-// Dependencies: [19, 1379, 558, 576, 10526, 12924, 2]
+// Dependencies: [19, 1392, 558, 576, 10152, 13393, 2]
 
-// Module 12945 (useAddToWishlistGridItems)
+// Module 13414 (useAddToWishlistGridItems)
 import react2 from "react" /* 576 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import useWishlistRecommendations from "useWishlistRecommendations" /* 10526 */;
-import WishlistUtils from "WishlistUtils" /* 12924 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import useWishlistRecommendations from "useWishlistRecommendations" /* 10152 */;
+import WishlistUtils from "WishlistUtils" /* 13393 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const PremiumSubscriptionSKUs = PremiumConstants.PremiumSubscriptionSKUs;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAddToWishlistGridItems(arg0) {
   let maxWishlistItemsToShow;
   let numWishlistItemsToRecommend;
   let recommendations;
@@ -91,32 +91,26 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
         }
       }
       if (cResult[11] !== obj4) {
-        class R {
-          constructor(id) {
-            return !obj4.has(id.id);
-          }
-        }
+        const fn = function w(id) {
+          return !obj4.has(id.id);
+        };
         cResult[11] = obj4;
-        cResult[12] = R;
-        tmp17 = R;
+        cResult[12] = fn;
+        tmp17 = fn;
       } else {
-        class R {
-          constructor(id) {
-            return !obj4.has(id.id);
-          }
-        }
+        tmp17 = cResult[12];
       }
       const _Symbol = Symbol;
       if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-        class W {
+        class R {
           constructor(sku) {
             return { sku, itemSource: "recommendation" };
           }
         }
-        cResult[13] = W;
-        tmp19 = W;
+        cResult[13] = R;
+        tmp19 = R;
       } else {
-        class W {
+        class R {
           constructor(sku) {
             return { sku, itemSource: "recommendation" };
           }
@@ -125,7 +119,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
       const found = recommendations.filter(tmp17);
       const mapped1 = found.map(tmp19);
       if (tmp14) {
-        class W {
+        class R {
           constructor(sku) {
             return { sku, itemSource: "recommendation" };
           }
@@ -150,7 +144,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   cResult[2] = userId;
   cResult[3] = obj3;
   tmp4 = obj3;
-}) : ((wishlist) => {
+}) : (function useAddToWishlistGridItems(wishlist) {
   let items1;
   let maxWishlistItemsToShow;
   let numWishlistItemsToRecommend;

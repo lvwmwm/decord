@@ -1,20 +1,20 @@
-// Module ID: 9478
-// Function ID: 9479
+// Module ID: 8673
+// Function ID: 8674
 // Name: GuildStageChannelSelection
-// Dependencies: [19, 4519, 1377, 21, 4890, 9188, 5043, 1881, 4854, 8949, 1987, 1126, 4886, 2]
+// Dependencies: [19, 4760, 1390, 21, 5092, 8551, 5421, 1894, 5056, 8549, 2000, 1126, 5088, 2]
 // Exports: default
 
-// Module 9478 (GuildStageChannelSelection)
+// Module 8673 (GuildStageChannelSelection)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1881 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1894 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserStore from "UserStore" /* 1377 */;
-import createStyles from "createStyles" /* 4890 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserStore from "UserStore" /* 1390 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -52,7 +52,7 @@ export default function GuildStageChannelSelection(channel) {
       selectedItem: id,
       hasIcons: false
     };
-    const tmp4 = asyncRequire(8949, dependencyMap.paths);
+    const tmp4 = asyncRequire(8549, dependencyMap.paths);
     intl = intl2.intl;
     id = undefined;
     if (channel != null) {
@@ -79,7 +79,7 @@ export default function GuildStageChannelSelection(channel) {
     const obj3 = {
       stageName: tmp3,
       stageHook: renderChannelHook,
-      changeHook(children, arg1) {
+      changeHook: function renderChangeHook(children, arg1) {
           return jsx(Text_Text.Text, { onPress: handleSelectChannel, variant: "text-xs/medium", color: "text-link", children }, arg1);
         }
     };

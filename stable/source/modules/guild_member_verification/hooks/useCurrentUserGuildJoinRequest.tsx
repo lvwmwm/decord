@@ -1,17 +1,17 @@
-// Module ID: 5935
-// Function ID: 5936
+// Module ID: 6121
+// Function ID: 6122
 // Name: useCurrentUserGuildJoinRequest
-// Dependencies: [4700, 558, 576, 504, 2]
+// Dependencies: [4940, 558, 576, 504, 2]
 
-// Module 5935 (useCurrentUserGuildJoinRequest)
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4700 */;
+// Module 6121 (useCurrentUserGuildJoinRequest)
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4940 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentUserGuildJoinRequest(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -47,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useCurrentUserGuildJoinRequest(arg0) {
   let closure_0;
   _require = arg0;
   const items = [UserGuildJoinRequestStore];

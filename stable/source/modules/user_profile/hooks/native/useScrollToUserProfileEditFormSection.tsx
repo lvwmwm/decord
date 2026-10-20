@@ -1,13 +1,13 @@
-// Module ID: 14434
-// Function ID: 14435
+// Module ID: 14867
+// Function ID: 14868
 // Name: useScrollToUserProfileEditFormSection
-// Dependencies: [19, 17, 4879, 9417, 558, 576, 504, 2]
+// Dependencies: [19, 17, 5081, 10579, 558, 576, 504, 2]
 
-// Module 14434 (useScrollToUserProfileEditFormSection)
+// Module 14867 (useScrollToUserProfileEditFormSection)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9417 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10579 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 const findNodeHandle = react_native.findNodeHandle;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScrollToUserProfileEditFormSection(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -100,7 +100,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[5] = stateFromStores;
   cResult[6] = fn2;
   tmp10 = fn2;
-}) : ((arg0, arg1) => {
+}) : (function useScrollToUserProfileEditFormSection(arg0, arg1) {
   let closure_0;
   let closure_1;
   let ref;

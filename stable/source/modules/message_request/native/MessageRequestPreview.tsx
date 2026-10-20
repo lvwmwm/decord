@@ -1,22 +1,22 @@
-// Module ID: 17058
-// Function ID: 17059
+// Module ID: 17646
+// Function ID: 17647
 // Name: MessageRequestPreview
-// Dependencies: [19, 17, 4519, 1085, 21, 4890, 5915, 587, 558, 576, 12259, 504, 1252, 1126, 7531, 5428, 1188, 2]
+// Dependencies: [19, 17, 4760, 1085, 21, 5092, 5906, 587, 558, 576, 12340, 504, 1265, 1126, 8134, 5749, 1200, 2]
 
-// Module 17058 (MessageRequestPreview)
+// Module 17646 (MessageRequestPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import TextStyles_mod from "TextStyles" /* 5915 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import TextStyles_mod from "TextStyles" /* 5906 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channel, isBlockedForMessageResult, obj1, tmp2, tmp3, tmp5, trackResult;
+let isBlockedForMessageResult, obj1, tmp2, tmp3, tmp5, trackResult;
 
 let Fonts;
 let metroImportDefault;
@@ -36,7 +36,7 @@ obj3 = { lineHeight: 16 };
 TextStyles = TextStyles_mod;
 const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_DEFAULT, 12));
 let closure_9 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRequestPreview(channel) {
   let error;
   let first;
   let items2;
@@ -50,7 +50,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   channel = channel.channel;
   const style = channel.style;
   const tmp4 = closure_9();
-  const obj2 = channel(12259);
+  const obj2 = channel(12340);
   const messageRequestPreview = obj2.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -130,7 +130,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         return obj;
       }
     }
-    const effect = react.useEffect(P, items2);
+    const effect = react.useEffect(F, items2);
     if (error) {
       let tmp22;
       class S {
@@ -622,10 +622,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     }
     cResult[20] = tmp24;
     cResult[21] = tmp13;
-    cResult[22] = jsx(tmp(1188).LegacyText, { style: tmp24, numberOfLines: 3, ellipsizeMode: "tail", children: tmp13 });
-    const tmp27 = jsx(tmp(1188).LegacyText, { style: tmp24, numberOfLines: 3, ellipsizeMode: "tail", children: tmp13 });
+    cResult[22] = jsx(tmp(1200).LegacyText, { style: tmp24, numberOfLines: 3, ellipsizeMode: "tail", children: tmp13 });
+    const tmp27 = jsx(tmp(1200).LegacyText, { style: tmp24, numberOfLines: 3, ellipsizeMode: "tail", children: tmp13 });
   }
-  class P {
+  class F {
     constructor() {
       if (null != message) {
         tmp2 = closure_1;
@@ -644,9 +644,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   items2 = [channel, message];
   cResult[4] = channel;
   cResult[5] = message;
-  cResult[6] = P;
+  cResult[6] = F;
   cResult[7] = items2;
-}) : ((channel) => {
+}) : (function MessageRequestPreview(channel) {
   let error;
   let isBlocked;
   let isIgnored;
@@ -654,7 +654,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();
-  let obj = channel(12259);
+  let obj = channel(12340);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -704,7 +704,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(7531)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(8134)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
@@ -715,7 +715,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         }
       }
       if (null != message) {
-        const tmp2Result = channel(5428);
+        const tmp2Result = channel(5749);
         if (tmp2Result.getMessageStickers(message).length > 0) {
           const intl5 = tmp2(1126).intl;
           let stringResult1 = intl5.string(tmp2(1126).t["zuI+by"]);

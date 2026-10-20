@@ -1,11 +1,11 @@
-// Module ID: 9036
-// Function ID: 9037
+// Module ID: 10951
+// Function ID: 10952
 // Name: BaseSocket
-// Dependencies: [1085, 12, 9026, 2]
+// Dependencies: [1085, 12, 10937, 2]
 
-// Module 9036 (BaseSocket)
+// Module 10951 (BaseSocket)
 import _modDef12 from "module_12" /* 12 */;
-import RPCErrorDefault from "RPCError" /* 9026 */;
+import RPCErrorDefault from "RPCError" /* 10937 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -18,9 +18,10 @@ class BaseSocket {
     const merged = Object.assign({ id: null, authorization: null, application: null, abortController: null });
     const obj2 = _modDef12;
     merged[0] = obj2.uniqueId();
-    merged[1] = { authing: false, scopes: [], accessToken: null, expires: new Date(0) };
+    const obj = { authing: false, scopes: new Set(), accessToken: null, expires: new Date(0) };
+    new Set();
+    merged[1] = obj;
     merged[2] = { id: null, name: null, icon: null };
-    const obj = { authing: false, scopes: [], accessToken: null, expires: new Date(0) };
     new Date(0);
     const abortController = new AbortController();
     merged[3] = abortController;

@@ -1,12 +1,11 @@
-// Module ID: 11456
-// Function ID: 11457
+// Module ID: 11404
+// Function ID: 11405
 // Name: TransferOwnershipModalActionCreators
-// Dependencies: [5093, 11457, 1987, 584, 2]
+// Dependencies: [5934, 11405, 2000, 2]
 
-// Module 11456 (TransferOwnershipModalActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+// Module 11404 (TransferOwnershipModalActionCreators)
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import size from "module_2" /* 2 */;
 
 const TRANSFER_OWNERSHIP_MODAL_KEY = "TRANSFER_OWNERSHIP_MODAL_KEY";
@@ -14,14 +13,11 @@ let obj = {
   open(guild, toUser) {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { guild, toUser };
-    obj.pushLazy(asyncRequire(11457, dependencyMap.paths), obj2, TRANSFER_OWNERSHIP_MODAL_KEY);
+    obj.pushLazy(asyncRequire(11405, dependencyMap.paths), obj2, TRANSFER_OWNERSHIP_MODAL_KEY);
   },
   close() {
-    let obj = DispatcherDefault;
-    obj.wait(() => {
-      const obj = ModalActionCreatorsDefault;
-      obj.popWithKey(TRANSFER_OWNERSHIP_MODAL_KEY);
-    });
+    const obj = ModalActionCreatorsDefault;
+    obj.popWithKey(TRANSFER_OWNERSHIP_MODAL_KEY);
   }
 };
 const result = size.fileFinishedImporting("modules/guild_settings/safety/native/TransferOwnershipModalActionCreators.tsx");

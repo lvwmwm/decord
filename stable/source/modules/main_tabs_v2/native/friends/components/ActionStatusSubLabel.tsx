@@ -1,16 +1,16 @@
-// Module ID: 16382
-// Function ID: 16383
+// Module ID: 16904
+// Function ID: 16905
 // Name: ActionStatusSubLabel
-// Dependencies: [19, 21, 4890, 4590, 4612, 4886, 558, 576, 5602, 4891, 2]
+// Dependencies: [19, 21, 5092, 4828, 4850, 5088, 558, 576, 5386, 5093, 2]
 
-// Module 16382 (ActionStatusSubLabel)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4590 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4612 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import timing from "timing" /* 4891 */;
+// Module 16904 (ActionStatusSubLabel)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4850 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import timing from "timing" /* 5093 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ const __initData7 = { code: "function ActionStatusSubLabelTsx7(){const{actioned,
 const __initData8 = { code: "function ActionStatusSubLabelTsx8(){const{actioned,lineHeight,fontScale,animate,withTiming,interpolate}=this.__closure;const translateYValue_0=actioned.get()?0:-lineHeight*fontScale;return{transform:[{translateY:!animate?translateYValue_0:withTiming(interpolate(actioned.get()?1:0,[0,1],[translateYValue_0,0]))}],opacity:!animate?actioned.get()?1:0:withTiming(actioned.get()?1:0)};}" };
 const __initData9 = { code: "function ActionStatusSubLabelTsx9(){const{actioned}=this.__closure;return actioned.get();}" };
 const __initData10 = { code: "function ActionStatusSubLabelTsx10(actioned_0,actionedPrev){const{actionStatusAccessibilityLabel,runOnJS,announceActioned}=this.__closure;const isActioned=actioned_0&&actionedPrev===false;if(!isActioned||actionStatusAccessibilityLabel==null){return;}runOnJS(announceActioned)(actionStatusAccessibilityLabel);}" };
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionStatusSubLabel(arg0) {
   let actionStatus;
   let actionStatusAccessibilityLabel;
   let actioned;
@@ -302,7 +302,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp6.container;
   cResult[2] = items2;
   tmp11 = items2;
-}) : ((lineHeight) => {
+}) : (function ActionStatusSubLabel(lineHeight) {
   let actionStatus;
   let actionStatusAccessibilityLabel;
   let animate;

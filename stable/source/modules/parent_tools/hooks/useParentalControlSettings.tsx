@@ -1,21 +1,21 @@
-// Module ID: 14625
-// Function ID: 14626
+// Module ID: 15101
+// Function ID: 15102
 // Name: useParentalControlSettings
-// Dependencies: [5, 19, 7051, 8075, 558, 576, 8297, 14626, 14629, 1197, 6804, 6491, 8295, 504, 7050, 8080, 2]
+// Dependencies: [5, 19, 7257, 7020, 558, 576, 7736, 15102, 15105, 1209, 7000, 6684, 7734, 504, 7256, 7026, 2]
 // Exports: useIsParentallyControlled
 
-// Module 14625 (useParentalControlSettings)
+// Module 15101 (useParentalControlSettings)
 import react2 from "react" /* 576 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 6804 */;
-import Constants from "Constants" /* 8075 */;
-import useUserLinks from "useUserLinks" /* 8295 */;
-import useSelectedTeen from "useSelectedTeen" /* 8297 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14626 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 14629 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7000 */;
+import Constants from "Constants" /* 7020 */;
+import useUserLinks from "useUserLinks" /* 7734 */;
+import useSelectedTeen from "useSelectedTeen" /* 7736 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15102 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 15105 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7051 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7257 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,10 +23,10 @@ const require = globalThis.__r;
 let _require, c2, c5;
 
 let tmp;
-const UserSettingsUtils = tmp(6491);
+const UserSettingsUtils = tmp(6684);
 const SafetyToastType = Constants.SafetyToastType;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useParentalControlledExplicitContentSettings() {
   const obj = react2;
   const cResult = obj.c(9);
   const obj2 = useSelectedTeen;
@@ -96,7 +96,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[2] = explicitContentSettingWithDefaultsForTeen1;
     tmp9 = explicitContentSettingWithDefaultsForTeen1;
   }
-}) : (() => {
+}) : (function useParentalControlledExplicitContentSettings() {
   let obj4;
   let prop;
   let prop1;
@@ -140,7 +140,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useParentalControlledGoreContentSettings() {
   let goreContentFriendDm;
   let goreContentNonFriendDm;
   const obj = react2;
@@ -211,7 +211,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[8] = obj4;
     tmp12 = obj4;
   }
-}) : (() => {
+}) : (function useParentalControlledGoreContentSettings() {
   let goreContentFriendDm;
   let goreContentNonFriendDm;
   const obj = useSelectedTeen;
@@ -245,7 +245,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultGuildsRestricted() {
   const obj = useSelectedTeen;
   const selectedTeen = obj.useSelectedTeen();
   const ParentalControlledDefaultGuildsRestricted = ParentalControlledUserSettings.ParentalControlledDefaultGuildsRestricted;
@@ -266,7 +266,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     controlledSetting2 = controlledSetting || controlledSetting;
   }
   return controlledSetting2;
-}) : (() => {
+}) : (function useDefaultGuildsRestricted() {
   const obj = useSelectedTeen;
   const selectedTeen = obj.useSelectedTeen();
   const ParentalControlledDefaultGuildsRestricted = ParentalControlledUserSettings.ParentalControlledDefaultGuildsRestricted;
@@ -289,7 +289,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return controlledSetting2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAllowFriendsFromMutualGuildsOnlyForTeen() {
   let tmp7;
   const obj = react2;
   const cResult = obj.c(2);
@@ -312,11 +312,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[1];
   }
   return tmp7.mutualGuilds && !tmp7.all;
-}) : (() => {
+}) : (function useAllowFriendsFromMutualGuildsOnlyForTeen() {
   let controlledSetting;
-  let obj = controlledSetting(8297);
+  let obj = controlledSetting(7736);
   const selectedTeen = obj.useSelectedTeen();
-  const ParentalControlledFriendSourceFlags = controlledSetting(14626).ParentalControlledFriendSourceFlags;
+  const ParentalControlledFriendSourceFlags = controlledSetting(15102).ParentalControlledFriendSourceFlags;
   let id;
   const useControlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting;
   if (selectedTeen != null) {
@@ -333,7 +333,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useParentalControlledHasConsented(arg0) {
   let closure_0;
   let first;
   _require = arg0;
@@ -364,7 +364,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = selectedTeenId;
   cResult[3] = fn;
   tmp7 = fn;
-}) : ((arg0) => {
+}) : (function useParentalControlledHasConsented(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("useSelectedTeen");
@@ -374,7 +374,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj2.useStateFromStores(items, () => FamilyCenterControlledSettingsStore.hasConsented(closure_1, closure_0));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpdateParentalControlledConsent(arg0) {
   _require = arg0;
   let obj = require("react");
   const cResult = obj.c(3);
@@ -466,14 +466,14 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   });
-  const fn = function() {
+  function t0() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = arg0;
   cResult[1] = selectedTeenId;
-  cResult[2] = fn;
-  tmp3 = fn;
-}) : ((arg0) => {
+  cResult[2] = t0;
+  tmp3 = t0;
+}) : (function useUpdateParentalControlledConsent(arg0) {
   _require = arg0;
   let obj = require("useSelectedTeen");
   const selectedTeenId = obj.useSelectedTeenId();
@@ -563,7 +563,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useParentalControlledConsent(arg0) {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp2 = closure_7(arg0);
@@ -580,19 +580,19 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp3;
   cResult[2] = obj2;
   tmp4 = obj2;
-}) : ((arg0) => {
+}) : (function useParentalControlledConsent(arg0) {
   const obj = { hasConsented: closure_7(arg0), updateConsent: closure_8(arg0) };
   return obj;
 });
-let fn = () => {
+function useIsParentallyControlled() {
   const obj = useUserLinks;
   return obj.useHasActiveParentLinks();
-};
+}
 const result1 = size.fileFinishedImporting("modules/parent_tools/hooks/useParentalControlSettings.tsx");
 
 export const useParentalControlledExplicitContentSettings = tmp2;
 export const useParentalControlledGoreContentSettings = tmp3;
 export const useDefaultGuildsRestricted = tmp4;
 export const useAllowFriendsFromMutualGuildsOnlyForTeen = tmp5;
-export const useIsParentallyControlled = fn;
+export { useIsParentallyControlled };
 export const useParentalControlledConsent = tmp7;

@@ -1,20 +1,20 @@
-// Module ID: 14478
-// Function ID: 14479
+// Module ID: 14949
+// Function ID: 14950
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 7831, 1377, 21, 4890, 587, 6657, 6681, 504, 14479, 9419, 7858, 14481, 5993, 5971, 10659, 4854, 14483, 1987, 14484, 2]
+// Dependencies: [19, 17, 8280, 1390, 21, 5092, 587, 6852, 6879, 504, 14950, 10644, 8307, 14952, 6180, 6159, 9630, 5056, 14954, 2000, 14955, 2]
 // Exports: default
 
-// Module 14478 (UserSettingsEditGuildProfile)
+// Module 14949 (UserSettingsEditGuildProfile)
 import nativeDefault from "native" /* 587 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7858 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9419 */;
-import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 10659 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
+import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 9630 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10644 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7831 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8280 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -65,7 +65,7 @@ export default function UserSettingsEditGuildProfile() {
     if (tmp) {
       const obj2 = GuildIdentityActionCreators;
       obj2.setCurrentGuild(guild.id);
-      const obj3 = { guildId: guild.id, dispatchWait: true };
+      const obj3 = { guildId: guild.id };
       const tmp8 = maybeFetchUserProfileDefault;
       tmp8(stateFromStores.id, stateFromStores.getAvatarURL(guild.id, 80), obj3);
     }
@@ -82,7 +82,7 @@ export default function UserSettingsEditGuildProfile() {
         onPress() {
               let selectedGuild;
               let obj = {
-                onConfirm() {
+                onConfirm: function openGuildSelectActionSheet() {
                   let tmp2 = null != closure_1_0;
                   const tmp = closure_1_0;
                   if (tmp2) {

@@ -1,26 +1,26 @@
-// Module ID: 13388
-// Function ID: 13389
+// Module ID: 13879
+// Function ID: 13880
 // Name: GuildBoostingMarketingProgressBar
-// Dependencies: [32, 19, 17, 4879, 1085, 21, 4890, 13389, 587, 558, 576, 4791, 573, 4612, 7666, 5597, 4729, 5605, 2]
+// Dependencies: [32, 19, 17, 5081, 1085, 21, 5092, 13880, 587, 558, 576, 5031, 573, 4850, 8020, 5378, 4969, 5391, 2]
 
-// Module 13388 (GuildBoostingMarketingProgressBar)
+// Module 13879 (GuildBoostingMarketingProgressBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import spring from "spring" /* 5597 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 7666 */;
-import GuildBoostingMarketingProgressBarMarker from "GuildBoostingMarketingProgressBarMarker" /* 13389 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import spring from "spring" /* 5378 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8020 */;
+import GuildBoostingMarketingProgressBarMarker from "GuildBoostingMarketingProgressBarMarker" /* 13880 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildBoostingMarketingProgressBarMarkerDefault = GuildBoostingMarketingProgressBarMarker;
-let closure_0, guild, num, set;
+let closure_0, num, set;
 
 let c9;
 let metroImportAll;
@@ -47,7 +47,7 @@ const __initData3 = { code: "function GuildBoostingMarketingProgressBarTsx3(widt
 const __initData4 = { code: "function GuildBoostingMarketingProgressBarTsx4(){const{width}=this.__closure;return{width:width.get()+\"%\"};}" };
 const __initData5 = { code: "function GuildBoostingMarketingProgressBarTsx5(){const{width}=this.__closure;return width.get();}" };
 const __initData6 = { code: "function GuildBoostingMarketingProgressBarTsx6(width_0){const{BoostedGuildTiers,TIER_REACHED_OFFSET,revealedTier,runOnJS,setRevealedTier}=this.__closure;let tier=BoostedGuildTiers.NONE;if(width_0>=33.33-TIER_REACHED_OFFSET)tier=BoostedGuildTiers.TIER_1;if(width_0>=66.67-TIER_REACHED_OFFSET)tier=BoostedGuildTiers.TIER_2;if(width_0>=100-TIER_REACHED_OFFSET)tier=BoostedGuildTiers.TIER_3;if(tier!==revealedTier)runOnJS(setRevealedTier)(tier);}" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBar(guild) {
   let closure_4;
   let items3;
   let items4;
@@ -287,7 +287,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       tmp24 = items5;
     }
   }
-  class P {
+  class H {
     constructor() {
       result = 100 * fillFactor;
       closure_0 = result;
@@ -315,11 +315,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[4] = fillFactor;
   cResult[5] = stateFromStores;
   cResult[6] = sharedValue;
-  cResult[7] = P;
+  cResult[7] = H;
   cResult[8] = items6;
   tmp20 = items6;
-  tmp19 = P;
-}) : ((guild) => {
+  tmp19 = H;
+}) : (function ProgressBar(guild) {
   let closure_4;
   let items3;
   let items4;

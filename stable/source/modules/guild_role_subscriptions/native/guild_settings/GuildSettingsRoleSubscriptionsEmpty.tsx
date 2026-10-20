@@ -1,23 +1,21 @@
-// Module ID: 17875
-// Function ID: 17876
+// Module ID: 18506
+// Function ID: 18507
 // Name: GuildSettingsRoleSubscriptionsEmpty
-// Dependencies: [19, 2074, 1085, 1360, 21, 558, 576, 1490, 17876, 17877, 17878, 504, 2]
+// Dependencies: [19, 2087, 1085, 1373, 21, 558, 576, 1503, 18507, 18508, 18509, 504, 2]
 
-// Module 17875 (GuildSettingsRoleSubscriptionsEmpty)
+// Module 18506 (GuildSettingsRoleSubscriptionsEmpty)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ApplicationConstants from "ApplicationConstants" /* 1360 */;
-import useNavigation from "useNavigation" /* 1490 */;
-import useGuildApplicationDefault from "useGuildApplication" /* 17876 */;
-import PlaceholderDefault from "Placeholder" /* 17877 */;
-import GuildSettingsRoleSubscriptionWelcomeViewDefault from "GuildSettingsRoleSubscriptionWelcomeView" /* 17878 */;
+import ApplicationConstants from "ApplicationConstants" /* 1373 */;
+import useNavigation from "useNavigation" /* 1503 */;
+import useGuildApplicationDefault from "useGuildApplication" /* 18507 */;
+import PlaceholderDefault from "Placeholder" /* 18508 */;
+import GuildSettingsRoleSubscriptionWelcomeViewDefault from "GuildSettingsRoleSubscriptionWelcomeView" /* 18509 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let guild, guildId;
 
 let closure_4;
 let hasOwnProperty;
@@ -25,7 +23,7 @@ let hasOwnProperty;
 const ApplicationTypes = ApplicationConstants.ApplicationTypes;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleSubscriptionsEmptyContent(guild) {
   let tmp7;
   const obj = react2;
   const cResult = obj.c(3);
@@ -69,21 +67,21 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
   }
   return tmp7;
-}) : ((guild) => {
+}) : (function GuildSettingsRoleSubscriptionsEmptyContent(guild) {
   let tmp7;
   guild = guild.guild;
   const obj = useNavigation;
   const str = obj.useNavigation();
   const tmp3 = useGuildApplicationDefault(guild.id, ApplicationTypes.GUILD_ROLE_SUBSCRIPTIONS);
   if (tmp3.loading) {
-    tmp7 = jsx(tmp2(17877), {});
+    tmp7 = jsx(tmp2(18508), {});
   } else {
     const features = guild.features;
     const tmp5 = constants;
     if (!features.has(constants.CREATOR_MONETIZABLE)) {
       const features2 = guild.features;
       if (!features2.has(tmp5.CREATOR_MONETIZABLE_PROVISIONAL)) {
-        tmp7 = jsx(tmp2(17878), { guild });
+        tmp7 = jsx(tmp2(18509), { guild });
       }
     }
     if (null == tmp4) {
@@ -97,7 +95,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   return tmp7;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleSubscriptionsEmpty(guildId) {
   let first;
   let tmp6;
   let tmp8;
@@ -113,7 +111,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     first = cResult[0];
   }
   if (cResult[1] !== guildId) {
-    const fn = function n() {
+    const fn = function u() {
       return GuildStore.getGuild(guildId);
     };
     cResult[1] = guildId;
@@ -144,7 +142,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp8 = cResult[5];
   }
   return tmp8;
-}) : ((guildId) => {
+}) : (function GuildSettingsRoleSubscriptionsEmpty(guildId) {
   let tmp5;
   guildId = guildId.guildId;
   const items = [GuildStore];

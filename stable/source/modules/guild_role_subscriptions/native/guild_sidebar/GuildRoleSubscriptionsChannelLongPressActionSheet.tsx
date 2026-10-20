@@ -1,27 +1,25 @@
-// Module ID: 16131
-// Function ID: 16132
+// Module ID: 16647
+// Function ID: 16648
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 2058, 21, 4890, 587, 558, 576, 1188, 12461, 1126, 6644, 16023, 8895, 10694, 6701, 2]
+// Dependencies: [19, 17, 2072, 21, 5092, 587, 558, 576, 1200, 12566, 1126, 6839, 16539, 8575, 10336, 6899, 2]
 
-// Module 16131 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 16647 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
-import ActionSheet2 from "ActionSheet" /* 6701 */;
-import Form from "Form" /* 8895 */;
-import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10694 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12461 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16023 */;
+import native from "native" /* 1200 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
+import ActionSheet2 from "ActionSheet" /* 6899 */;
+import Form from "Form" /* 8575 */;
+import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10336 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12566 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16539 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let guildId;
 
 let hasOwnProperty;
 let metroRequire;
@@ -32,7 +30,7 @@ const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
 let obj = { headerIcon: size };
 size = { marginRight: 16, tintColor: nativeDefault.colors.CHANNEL_ICON, width: 20, height: 20 };
 let closure_7 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionsChannelLongPressActionSheet(guildId) {
   let first;
   let intl2;
   let items;
@@ -47,8 +45,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const onClose = guildId.onClose;
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { disableColor: true, source: onClose(12461) };
-    const Icon = tmp(1188).Icon;
+    const obj2 = { disableColor: true, source: onClose(12566) };
+    const Icon = tmp(1200).Icon;
     const tmp8 = closure_5(Icon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -74,7 +72,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   if (cResult[4] !== tmp9) {
     const obj4 = { leading: tmp9, title: tmp13 };
-    const tmp17 = closure_5(guildId(6644).BottomSheetTitleHeader, obj4);
+    const tmp17 = closure_5(guildId(6839).BottomSheetTitleHeader, obj4);
     cResult[4] = tmp9;
     cResult[5] = tmp17;
     tmp15 = tmp17;
@@ -82,8 +80,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp15 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj5 = { source: onClose(16023) };
-    const Icon2 = tmp(1188).Icon;
+    const obj5 = { source: onClose(16539) };
+    const Icon2 = tmp(1200).Icon;
     const tmp21 = closure_5(Icon2, obj5);
     cResult[6] = tmp21;
     tmp18 = tmp21;
@@ -92,7 +90,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { text: intl2.string(guildId(1126).t.WqhZss) };
-    const FormLabel = tmp(8895).FormLabel;
+    const FormLabel = tmp(8575).FormLabel;
     intl2 = tmp(1126).intl;
     const tmp24 = closure_5(FormLabel, obj6);
     cResult[7] = tmp24;
@@ -114,7 +112,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     const obj7 = { children: items };
     items = [tmp15, tmp25];
-    const tmp29 = closure_6(guildId(6701).ActionSheet, obj7);
+    const tmp29 = closure_6(guildId(6899).ActionSheet, obj7);
     cResult[11] = tmp15;
     cResult[12] = tmp25;
     cResult[13] = tmp29;
@@ -129,12 +127,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       const result = obj.copyGuildChannelOrThreadLink(guildId, StaticChannelRoute.ROLE_SUBSCRIPTIONS);
     }
   };
-  const tmp26 = closure_5(guildId(8895).FormRow, obj8);
+  const tmp26 = closure_5(guildId(8575).FormRow, obj8);
   cResult[8] = guildId;
   cResult[9] = onClose;
   cResult[10] = tmp26;
   tmp25 = tmp26;
-}) : ((arg0) => {
+}) : (function GuildRoleSubscriptionsChannelLongPressActionSheet(arg0) {
   let FormLabel;
   let Icon;
   let Icon2;

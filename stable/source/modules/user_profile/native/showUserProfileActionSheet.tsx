@@ -1,17 +1,17 @@
-// Module ID: 7850
-// Function ID: 7851
+// Module ID: 8299
+// Function ID: 8300
 // Name: showUserProfileActionSheet
-// Dependencies: [5, 5948, 4519, 3, 1377, 1987, 7851, 7852, 2028, 7853, 4854, 7871, 2]
+// Dependencies: [5, 6133, 4760, 3, 1390, 2000, 8300, 8301, 2041, 8302, 5056, 8321, 2]
 // Exports: getUserProfileActionSheetKey, getUserProfileBlockedSpeedBumpActionSheetKey, getUserProfileIgnoredSpeedBumpActionSheetKey, showUserProfileActionSheetPostConnection
 
-// Module 7850 (showUserProfileActionSheet)
+// Module 8299 (showUserProfileActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5948 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6133 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import size from "module_2" /* 2 */;
 
 let authStore, c4, c5;
@@ -25,7 +25,7 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
     const isBlockedResult = RelationshipStore.isBlocked(ignoreBlockedSpeedBump.userId);
     const isIgnoredResult = RelationshipStore.isIgnored(ignoreBlockedSpeedBump.userId);
     if (isIgnoredResult) {
-      const tmp8 = asyncRequire(7853, dependencyMap.paths);
+      const tmp8 = asyncRequire(8302, dependencyMap.paths);
       const _HermesInternal = HermesInternal;
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       const combined = "UserProfileIgnoredSpeedBump" + ignoreBlockedSpeedBump.userId;
@@ -38,7 +38,7 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
       openLazy(tmp8, combined, obj, str);
     }
   }
-  const tmp21 = asyncRequire(7871, dependencyMap.paths);
+  const tmp21 = asyncRequire(8321, dependencyMap.paths);
   const openLazy2 = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const combined1 = "UserProfile" + ignoreBlockedSpeedBump.userId;

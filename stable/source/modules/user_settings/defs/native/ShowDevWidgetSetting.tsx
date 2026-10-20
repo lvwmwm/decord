@@ -1,21 +1,21 @@
-// Module ID: 15403
-// Function ID: 15404
+// Module ID: 15884
+// Function ID: 15885
 // Name: ShowDevWidgetSetting
-// Dependencies: [7203, 15404, 558, 576, 504, 11129, 15405, 14650, 2]
+// Dependencies: [7403, 15885, 558, 576, 504, 10664, 15886, 15126, 2]
 
-// Module 15403 (ShowDevWidgetSetting)
+// Module 15884 (ShowDevWidgetSetting)
 import react from "react" /* 576 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14650 */;
-import DevToolsActionCreators from "DevToolsActionCreators" /* 15404 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 15405 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7203 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15126 */;
+import DevToolsActionCreators from "DevToolsActionCreators" /* 15885 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 15886 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7403 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowDevWidgetSettingToggleValue() {
   let showDevWidget;
   let tmp4;
   let tmp5;
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useShowDevWidgetSettingToggleValue() {
   let showDevWidget;
   const items = [DevToolsSettingsStore];
   const obj = get_initialized;

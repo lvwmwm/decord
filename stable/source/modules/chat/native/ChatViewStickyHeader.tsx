@@ -1,26 +1,24 @@
-// Module ID: 9783
-// Function ID: 9784
+// Module ID: 10382
+// Function ID: 10383
 // Name: ChatViewStickyHeader
-// Dependencies: [32, 19, 9784, 21, 558, 576, 9785, 9791, 9795, 9796, 9815, 9821, 9848, 9853, 11074, 11077, 2]
+// Dependencies: [32, 19, 10383, 21, 558, 576, 10384, 10389, 10393, 10394, 10415, 10421, 10445, 10450, 10475, 10478, 2]
 
-// Module 9783 (ChatViewStickyHeader)
+// Module 10382 (ChatViewStickyHeader)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 9784 */;
-import useStrangerDangerWarning from "useStrangerDangerWarning" /* 9785 */;
-import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 9791 */;
-import useLikelyAtoWarning from "useLikelyAtoWarning" /* 9795 */;
-import LikelyAtoWarningBannerDefault from "LikelyAtoWarningBanner" /* 9796 */;
-import StrangerDangerWarningBannerDefault from "StrangerDangerWarningBanner" /* 9815 */;
-import InappropriateConversationWarningBannerDefault from "InappropriateConversationWarningBanner" /* 9821 */;
-import useUnreadSettingNoticeDefault from "useUnreadSettingNotice" /* 9848 */;
-import ChatBannerDefault from "ChatBanner" /* 11077 */;
+import Constants from "Constants" /* 10383 */;
+import useStrangerDangerWarning from "useStrangerDangerWarning" /* 10384 */;
+import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10389 */;
+import useLikelyAtoWarning from "useLikelyAtoWarning" /* 10393 */;
+import LikelyAtoWarningBannerDefault from "LikelyAtoWarningBanner" /* 10394 */;
+import StrangerDangerWarningBannerDefault from "StrangerDangerWarningBanner" /* 10415 */;
+import InappropriateConversationWarningBannerDefault from "InappropriateConversationWarningBanner" /* 10421 */;
+import useUnreadSettingNoticeDefault from "useUnreadSettingNotice" /* 10445 */;
+import ChatBannerDefault from "ChatBanner" /* 10478 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channel;
 
 let metroImportAll;
 let metroImportDefault;
@@ -28,7 +26,7 @@ let metroRequire;
 const LOCATION_CONTEXT_MOBILE = Constants.LOCATION_CONTEXT_MOBILE;
 ({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatViewStickyHeaderAccountSafetyWarnings(arg0) {
   let channelId;
   let senderId;
   let tmp10;
@@ -97,7 +95,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp10;
-}) : ((arg0) => {
+}) : (function ChatViewStickyHeaderAccountSafetyWarnings(arg0) {
   let channelId;
   let senderId;
   let tmp5;
@@ -123,9 +121,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   return tmp5;
 });
-const forwardRef = react.forwardRef;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((channel, ref) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function StickyHeader(channel) {
   let clearUnreadsNotice;
   let closure_129_1;
   let items;
@@ -136,13 +133,14 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   const cResult = obj.c(19);
   channel = channel.channel;
   const scrollToNewMessages = channel.scrollToNewMessages;
+  const ref = channel.ref;
   [tmp4, closure_129_1] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   ({ showUnreadsNotice, clearUnreadsNotice } = useUnreadSettingNoticeDefault(channel));
   useUnreadSettingNoticeDefault(channel);
   const obj2 = react;
   if (cResult[0] !== channel) {
-    const fn = function h() {
+    const fn = function t() {
       let forumPost;
       return {
         onChatViewScrolled(isFirstMessageVisible) {
@@ -221,7 +219,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
     let tmp17 = null;
     if (showUnreadsNotice) {
       const obj6 = { channel, clearUnreadsNotice };
-      tmp17 = metroRequire(tmp5(11074), obj6);
+      tmp17 = metroRequire(tmp5(10475), obj6);
     }
     cResult[7] = channel;
     cResult[8] = clearUnreadsNotice;
@@ -234,21 +232,23 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
     tmp10 = null;
     if (tmp4) {
       const obj7 = { channel };
-      tmp10 = metroRequire(tmp5(9853), obj7);
+      tmp10 = metroRequire(tmp5(10450), obj7);
     }
   }
   cResult[2] = channel;
   cResult[3] = tmp4;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((channel, ref) => {
+}) : (function StickyHeader(channel) {
   let clearUnreadsNotice;
   let closure_1;
   let first;
+  let ref;
+  let scrollToNewMessages;
   let showUnreadsNotice;
   channel = channel.channel;
   closure_1 = undefined;
-  const scrollToNewMessages = channel.scrollToNewMessages;
+  ({ scrollToNewMessages, ref } = channel);
   [first, closure_1] = react.useState(false);
   ({ showUnreadsNotice, clearUnreadsNotice } = useUnreadSettingNoticeDefault(channel));
   useUnreadSettingNoticeDefault(channel);
@@ -270,7 +270,7 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
     tmp9 = null;
     if (first) {
       const obj = { channel };
-      tmp9 = metroRequire(tmp3(9853), obj);
+      tmp9 = metroRequire(tmp3(10450), obj);
     }
   }
   const items = [tmp9, , , ];
@@ -283,13 +283,13 @@ const memoResult = react.memo(forwardRef(ReactCompilerGating.isReactCompilerEnab
   let tmp14 = null;
   if (showUnreadsNotice) {
     const obj3 = { channel, clearUnreadsNotice };
-    tmp14 = metroRequire(tmp3(11074), obj3);
+    tmp14 = metroRequire(tmp3(10475), obj3);
   }
   const obj4 = { children: items };
   items[2] = tmp14;
   items[3] = metroRequire(ChatBannerDefault, { channel, handleScrollToNewMessages: scrollToNewMessages });
   return tmp7(tmp8, obj4);
-})));
+}));
 const result = size.fileFinishedImporting("modules/chat/native/ChatViewStickyHeader.tsx");
 
 export default memoResult;

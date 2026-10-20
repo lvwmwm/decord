@@ -1,28 +1,26 @@
-// Module ID: 8478
-// Function ID: 8479
+// Module ID: 9021
+// Function ID: 9022
 // Name: ProfileFrameSamplePreview
-// Dependencies: [19, 17, 8454, 6707, 21, 4890, 587, 558, 576, 7896, 4580, 7892, 7878, 6052, 8479, 5974, 2]
+// Dependencies: [19, 17, 8997, 6905, 21, 5092, 587, 558, 576, 8346, 4818, 8342, 8329, 6243, 9022, 6157, 2]
 
-// Module 8478 (ProfileFrameSamplePreview)
+// Module 9021 (ProfileFrameSamplePreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4580 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import _modDef6052 from "module_6052" /* 6052 */;
-import Constants from "Constants" /* 6707 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 7878 */;
-import ProfileFrameDefault from "ProfileFrame" /* 7892 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 7896 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8454 */;
-import _modDef8479 from "module_8479" /* 8479 */;
+import useToken from "useToken" /* 4818 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import _modDef6243 from "module_6243" /* 6243 */;
+import Constants from "Constants" /* 6905 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8329 */;
+import ProfileFrameDefault from "ProfileFrame" /* 8342 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 8346 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8997 */;
+import _modDef9022 from "module_9022" /* 9022 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let previewWidth;
 
 let c3;
 let closure_4;
@@ -39,7 +37,7 @@ const UserProfileThemeTypes = Constants.UserProfileThemeTypes;
 let obj = { profileFrameContainer: { flex: 1 }, profileContainer: obj2, sampleProfile: { width: "100%", aspectRatio: SAMPLE_PROFILE_ASPECT_RATIO } };
 obj2 = { flex: 1, overflow: "hidden", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_NORMAL, borderRadius: nativeDefault.radii.xs };
 let closure_9 = createStyles.createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewWidth) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileFrameSamplePreview(previewWidth) {
   let items;
   let items3;
   let overflowBottom;
@@ -212,7 +210,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewWidth) => {
                                                                 }
                                                                 const _Symbol = Symbol;
                                                                 if (cResult[69] === Symbol.for("react.memo_cache_sentinel")) {
-                                                                  const obj5 = { uri: _modDef8479 };
+                                                                  const obj5 = { uri: _modDef9022 };
                                                                   cResult[69] = obj5;
                                                                   tmp83 = obj5;
                                                                 } else {
@@ -300,7 +298,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewWidth) => {
                                                     }
                                                   }
                                                   const obj11 = { style: tmp22, maskElement: tmp63, children: tmp69 };
-                                                  const tmp75 = metroRequire(_modDef6052, obj11);
+                                                  const tmp75 = metroRequire(_modDef6243, obj11);
                                                   cResult[52] = tmp63;
                                                   cResult[53] = tmp69;
                                                   cResult[54] = tmp22;
@@ -419,7 +417,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewWidth) => {
   cResult[1] = result;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((previewWidth) => {
+}) : (function ProfileFrameSamplePreview(previewWidth) {
   let items;
   let items1;
   let items2;
@@ -451,7 +449,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewWidth) => {
   obj4 = { style: _false.absoluteFill, children: items };
   items = [, , , , , , , ];
   const obj5 = { style: { position: "absolute", top: 0, left: 0, right: 0, height: overflowTop, backgroundColor: "black" } };
-  const tmp13 = _modDef6052;
+  const tmp13 = _modDef6243;
   items[0] = metroRequire(React3, obj5);
   const obj6 = { style: { position: "absolute", bottom: 0, left: 0, right: 0, height: overflowBottom, backgroundColor: "black" } };
   items[1] = metroRequire(React3, obj6);
@@ -486,7 +484,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewWidth) => {
   items3[1] = tmp16;
   const obj16 = { style: items3, children: metroRequire(tmp3Result, obj17) };
   obj17 = { source: obj18, style: tmp.sampleProfile, resizeMode: "cover" };
-  obj18 = { uri: _modDef8479 };
+  obj18 = { uri: _modDef9022 };
   tmp3Result = FastImageDefault;
   items2[1] = metroRequire(React3, obj16);
   const obj19 = { frame: profileFrame, filterLayer: tmp10, profileThemeType: tmp11.PREVIEW, frameOrder: ProfileFrameLayerOrder.ProfileFrameLayerOrder.FRONT, containerWidth: result, containerHeight: previewHeight - overflowTop - overflowBottom };

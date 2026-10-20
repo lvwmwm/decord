@@ -1,32 +1,30 @@
-// Module ID: 10647
-// Function ID: 10648
+// Module ID: 10280
+// Function ID: 10281
 // Name: GroupDMRow
-// Dependencies: [109, 19, 10592, 21, 558, 576, 5043, 10648, 1188, 10649, 4886, 5990, 5993, 2]
+// Dependencies: [109, 19, 10218, 21, 558, 576, 5421, 10281, 1200, 10282, 5088, 6177, 6180, 2]
 
-// Module 10647 (GroupDMRow)
+// Module 10280 (GroupDMRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useChannelNameDefault from "useChannelName" /* 5043 */;
-import UserRowConstants from "UserRowConstants" /* 10592 */;
+import useChannelNameDefault from "useChannelName" /* 5421 */;
+import UserRowConstants from "UserRowConstants" /* 10218 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channel;
-
 let tmp;
 let tmp15;
-const native = tmp(1188);
-const Text_Text = tmp(4886);
-const TableCheckboxRow2 = tmp(5990);
-const TableRow2 = tmp(5993);
-const GroupDMAvatarDefault = tmp15(10648);
-const useRecipientsLabel = tmp(10649);
+const native = tmp(1200);
+const Text_Text = tmp(5088);
+const TableCheckboxRow2 = tmp(6177);
+const TableRow2 = tmp(6180);
+const GroupDMAvatarDefault = tmp15(10281);
+const useRecipientsLabel = tmp(10282);
 let closure_3 = ["channel", "mode", "selected", "disabled", "onPress"];
 const UserRowModes = UserRowConstants.UserRowModes;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRow(channel) {
   let NONE;
   let disabled;
   let mode;
@@ -152,7 +150,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     cResult[20] = obj6;
     tmp28 = obj6;
   }
-  const fn = function _() {
+  const fn = function x() {
     if (closure_1 != null) {
       tmp(closure_0);
     }
@@ -161,7 +159,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[8] = tmp5;
   cResult[9] = fn;
   tmp17 = fn;
-}) : ((channel) => {
+}) : (function GroupDMRow(channel) {
   let tmp5Result;
   let tmp5Result2;
   channel = channel.channel;
@@ -196,19 +194,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   tmp5Result = undefined;
   if (null != recipientsLabel) {
     const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
-    tmp5Result = tmp5(tmp7(4886).Text, obj4);
+    tmp5Result = tmp5(tmp7(5088).Text, obj4);
   }
   if (str == null) {
     str = "";
   }
   if (NONE === UserRowModes.TOGGLE) {
     const obj5 = { checked: flag };
-    const TableCheckboxRow = tmp7(5990).TableCheckboxRow;
+    const TableCheckboxRow = tmp7(6177).TableCheckboxRow;
     const merged2 = Object.assign(obj3);
     tmp5Result2 = tmp5(TableCheckboxRow, obj5);
   } else {
     const obj6 = {};
-    const TableRow = tmp7(5993).TableRow;
+    const TableRow = tmp7(6180).TableRow;
     const merged3 = Object.assign(obj3);
     tmp5Result2 = tmp5(TableRow, obj6);
   }

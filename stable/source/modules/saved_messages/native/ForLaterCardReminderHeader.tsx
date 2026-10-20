@@ -1,18 +1,18 @@
-// Module ID: 13131
-// Function ID: 13132
+// Module ID: 12674
+// Function ID: 12675
 // Name: ForLaterCardReminderHeader
-// Dependencies: [21, 558, 576, 11341, 11847, 4849, 2]
+// Dependencies: [21, 558, 576, 12663, 12675, 5051, 2]
 
-// Module 13131 (ForLaterCardReminderHeader)
+// Module 12674 (ForLaterCardReminderHeader)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import ClockIcon from "ClockIcon" /* 4849 */;
-import SavedMessageUtils from "SavedMessageUtils" /* 11341 */;
+import ClockIcon from "ClockIcon" /* 5051 */;
+import SavedMessageUtils from "SavedMessageUtils" /* 12663 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterCardReminderHeader(arg0) {
   let actions;
   let dueInText;
   let isOverdue;
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp7 = tmp8;
         }
       }
-      const ForLaterCardStatusHeader = tmp(11847).ForLaterCardStatusHeader;
+      const ForLaterCardStatusHeader = tmp(12675).ForLaterCardStatusHeader;
       const tmp10 = <ForLaterCardStatusHeader IconComponent={ClockIcon.ClockIcon} label={dueInText} isCritical={isOverdue} actions={actions} />;
       cResult[3] = actions;
       cResult[4] = dueInText;
@@ -59,7 +59,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = throttledNow;
   cResult[2] = obj3;
   tmp5 = obj3;
-}) : ((savedMessage) => {
+}) : (function ForLaterCardReminderHeader(savedMessage) {
   let actions;
   let throttledNow;
   savedMessage = savedMessage.savedMessage;
@@ -74,7 +74,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const dueInString = useDueInString(obj);
   let tmp8 = null;
   if (null != savedMessage.saveData.dueAt) {
-    const ForLaterCardStatusHeader = tmp(11847).ForLaterCardStatusHeader;
+    const ForLaterCardStatusHeader = tmp(12675).ForLaterCardStatusHeader;
     tmp8 = <ForLaterCardStatusHeader IconComponent={ClockIcon.ClockIcon} label={tmp6} isCritical={tmp7} actions={actions} />;
   }
   return tmp8;

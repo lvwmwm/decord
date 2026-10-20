@@ -1,10 +1,10 @@
-// Module ID: 5314
-// Function ID: 5315
+// Module ID: 5637
+// Function ID: 5638
 // Name: StripeError
-// Dependencies: [4550, 2]
+// Dependencies: [4791, 2]
 
-// Module 5314 (StripeError)
-import BillingError from "BillingError" /* 4550 */;
+// Module 5637 (StripeError)
+import BillingError from "BillingError" /* 4791 */;
 import size from "module_2" /* 2 */;
 
 class StripeError extends BillingError {

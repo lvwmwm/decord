@@ -1,37 +1,37 @@
-// Module ID: 11812
-// Function ID: 11813
+// Module ID: 11896
+// Function ID: 11897
 // Name: PrivateChannelUserList
-// Dependencies: [32, 19, 17, 2051, 4519, 1377, 1085, 21, 558, 576, 6657, 504, 12, 1375, 11211, 11214, 11213, 4580, 587, 11813, 1126, 8313, 11814, 7850, 10598, 2]
+// Dependencies: [32, 19, 17, 2065, 4760, 1390, 1085, 21, 558, 576, 6852, 504, 12, 1388, 10748, 10751, 10750, 4818, 587, 11897, 1126, 9031, 11898, 8299, 10224, 2]
 
-// Module 11812 (PrivateChannelUserList)
+// Module 11896 (PrivateChannelUserList)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 11814 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 11898 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let arr1, channelId, valueResult;
+let arr1, valueResult;
 
 let c10;
 let c9;
 let closure_12;
 let tmp;
 let unpackModuleId;
-const NitroWheelIcon2 = tmp(8313);
+const NitroWheelIcon2 = tmp(9031);
 const View = react_native.View;
 ({ RelationshipTypes: c9, MAX_GROUP_DM_PARTICIPANTS: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function PrivateChannelUserList(channelId) {
   let disableBottomSafeZone;
   let disableStickySections;
   let first;
@@ -424,7 +424,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       }
       tmp24 = tmp20 > c10;
     }
-    closure_12 = tmp24;
+    let closure_12 = tmp24;
     const tmpResult7 = tmp(tmp2[17]);
     const token = tmpResult7.useToken(tmp5(tmp2[18]).colors.TEXT_SUBTLE);
     const tmpResult8 = tmp(tmp2[17]);
@@ -539,7 +539,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[7] = stateFromStores;
   cResult[8] = !tmp4;
   cResult[9] = obj2;
-}) : ((channelId) => {
+}) : (function PrivateChannelUserList(channelId) {
   let _undefined;
   let c16;
   let disableBottomSafeZone;
@@ -566,7 +566,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   let stateFromStores;
   let renderListHeader;
   let ownerId;
-  closure_12 = undefined;
+  let closure_12;
   let token;
   let token1;
   let closure_15;
@@ -740,7 +740,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     const obj = { onLayout: callback2, children: items };
     items = [listHeaderContent, ];
     let tmp3;
-    const tmp = closure_12;
+    const tmp = authStore2;
     const tmp2 = View;
     if (renderListHeader != null) {
       tmp3 = renderListHeader();

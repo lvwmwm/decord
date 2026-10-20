@@ -1,11 +1,11 @@
-// Module ID: 12140
-// Function ID: 12141
+// Module ID: 12224
+// Function ID: 12225
 // Name: useLoadGuildPowerups
-// Dependencies: [19, 558, 576, 4786, 12141, 12147, 2]
+// Dependencies: [19, 558, 576, 5026, 12225, 12231, 2]
 
-// Module 12140 (useLoadGuildPowerups)
-import GameServerActionCreators from "GameServerActionCreators" /* 12141 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12147 */;
+// Module 12224 (useLoadGuildPowerups)
+import GameServerActionCreators from "GameServerActionCreators" /* 12225 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12231 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadGuildPowerups(arg0) {
   let closure_0;
   let gameServerEnabled;
   _require = arg0;
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const effect1 = obj3.useEffect(tmp6, tmp7);
   }
-  const fn = function o() {
+  const fn = function t() {
     const tmp = gameServerEnabled;
     if (tmp) {
       const obj = GameServerActionCreators;
@@ -65,7 +65,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = items1;
   tmp4 = items1;
   tmp3 = fn;
-}) : ((arg0) => {
+}) : (function useLoadGuildPowerups(arg0) {
   let closure_0;
   let gameServerEnabled;
   _require = arg0;

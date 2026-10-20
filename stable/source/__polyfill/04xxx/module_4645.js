@@ -1,39 +1,50 @@
 // Module ID: 4645
 // Function ID: 4646
-// Dependencies: [32, 576, 4643]
-// Exports: useRiveString
+// Dependencies: [4646, 4647, 4648, 4649, 4650]
 
 // Module 4645
-import react from "react" /* 576 */;
-import _mod4643 from "module_4643" /* 4643 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import formatDistance from "formatDistance" /* 4646 */;
+import buildFormatLongFn from "buildFormatLongFn" /* 4647 */;
+import formatRelative from "formatRelative" /* 4648 */;
+import date_mod from "module_4649" /* 4649 */;
+import date_mod2 from "module_4650" /* 4650 */;
 
-function getStringProperty(stringProperty, arg1) {
-  return stringProperty.stringProperty(arg1);
+let tmp11;
+let tmp3;
+let tmp5;
+let tmp7;
+let tmp9;
+if (!formatDistance) {
+  tmp3 = { default: formatDistance };
+  const obj = { default: formatDistance };
+} else {
+  tmp3 = formatDistance;
+}
+if (!buildFormatLongFn) {
+  tmp5 = { default: buildFormatLongFn };
+  const obj2 = { default: buildFormatLongFn };
+} else {
+  tmp5 = buildFormatLongFn;
+}
+if (!formatRelative) {
+  tmp7 = { default: formatRelative };
+  const obj3 = { default: formatRelative };
+} else {
+  tmp7 = formatRelative;
+}
+let date = date_mod2;
+if (!date) {
+  tmp9 = { default: date };
+  const obj4 = { default: date };
+} else {
+  tmp9 = date;
+}
+date = date_mod2;
+if (!date) {
+  tmp11 = { default: date };
+  const obj5 = { default: date };
+} else {
+  tmp11 = date;
 }
 
-export const useRiveString = function useRiveString(arg0, arg1) {
-  let tmp3;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(4);
-  const obj2 = _mod4643;
-  [tmp3, tmp4, tmp5] = obj2.useRiveProperty(arg1, arg0, getStringProperty);
-  _slicedToArray(obj2.useRiveProperty(arg1, arg0, getStringProperty), 3);
-  if (cResult[0] === tmp5) {
-    if (cResult[1] === tmp4) {
-      let tmp6;
-      if (cResult[2] === tmp3) {
-        tmp6 = cResult[3];
-      }
-      return tmp6;
-    }
-  }
-  const obj3 = { value: tmp3, setValue: tmp4, error: tmp5 };
-  cResult[0] = tmp5;
-  cResult[1] = tmp4;
-  cResult[2] = tmp3;
-  cResult[3] = obj3;
-  tmp6 = obj3;
-};
+export default { code: "vi", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 1 } };

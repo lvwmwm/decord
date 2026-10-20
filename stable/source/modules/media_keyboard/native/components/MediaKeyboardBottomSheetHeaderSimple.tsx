@@ -1,17 +1,17 @@
-// Module ID: 10371
-// Function ID: 10372
+// Module ID: 10026
+// Function ID: 10027
 // Name: MediaKeyboardBottomSheetHeaderSimple
-// Dependencies: [19, 17, 1614, 21, 4890, 587, 558, 576, 10372, 2]
+// Dependencies: [19, 17, 1627, 21, 5092, 587, 558, 576, 10027, 2]
 
-// Module 10371 (MediaKeyboardBottomSheetHeaderSimple)
+// Module 10026 (MediaKeyboardBottomSheetHeaderSimple)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1614 */;
-import MediaKeyboardBottomSheetHandleDefault from "MediaKeyboardBottomSheetHandle" /* 10372 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
+import MediaKeyboardBottomSheetHandleDefault from "MediaKeyboardBottomSheetHandle" /* 10027 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const jsx = Fragment.jsx;
 let obj = { headerHandleOnlyWrap: obj2 };
 obj2 = { height: HEADER_HANDLE_HEIGHT, paddingBottom: nativeDefault.space.PX_4 };
 let closure_5 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeyboardBottomSheetHeaderSimple(arg0) {
   let animatedIndex;
   let onPress;
   const obj = react2;
@@ -52,7 +52,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[1] = onPress;
   cResult[2] = tmp5;
   tmp4 = tmp5;
-}) : ((arg0) => {
+}) : (function MediaKeyboardBottomSheetHeaderSimple(arg0) {
   let animatedIndex;
   let onPress;
   ({ animatedIndex, onPress } = arg0);

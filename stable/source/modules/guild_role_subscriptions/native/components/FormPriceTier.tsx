@@ -1,18 +1,18 @@
-// Module ID: 17965
-// Function ID: 17966
+// Module ID: 18596
+// Function ID: 18597
 // Name: FormPriceTier
-// Dependencies: [19, 17926, 1085, 21, 1126, 13708, 6736, 38, 4854, 8949, 1987, 2]
+// Dependencies: [19, 18557, 1085, 21, 1126, 14128, 6940, 38, 5056, 8549, 2000, 2]
 // Exports: default
 
-// Module 17965 (FormPriceTier)
+// Module 18596 (FormPriceTier)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 17926 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18557 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -70,7 +70,7 @@ export default function FormPriceTier(guildId) {
     const obj3 = {
       label: formatPriceResult,
       disabled,
-      onPress() {
+      onPress: function handleSelectPrice() {
           let intl;
           let tmp4;
           const tmp = _modDef38(null != tiers, "handleSelectPrice must only be called if tiers != null");
@@ -93,7 +93,7 @@ export default function FormPriceTier(guildId) {
             selectedItem: tmp4,
             hasIcons: false
           };
-          const tmp3 = asyncRequire(8949, dependencyMap.paths);
+          const tmp3 = asyncRequire(8549, dependencyMap.paths);
           intl = intl4.intl;
           openLazy(tmp3, "GuildRoleSubscriptionPriceTierSelect", obj);
           tmp4 = price;

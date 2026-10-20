@@ -1,25 +1,23 @@
-// Module ID: 16748
-// Function ID: 16749
+// Module ID: 17324
+// Function ID: 17325
 // Name: ConjureNativeTurnTimer
-// Dependencies: [19, 21, 4890, 558, 576, 16749, 16673, 4886, 2]
+// Dependencies: [19, 21, 5092, 558, 576, 17325, 17277, 5088, 2]
 
-// Module 16748 (ConjureNativeTurnTimer)
+// Module 17324 (ConjureNativeTurnTimer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ConjureDuration from "ConjureDuration" /* 16673 */;
-import useConjureElapsedMs from "useConjureElapsedMs" /* 16749 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ConjureDuration from "ConjureDuration" /* 17277 */;
+import useConjureElapsedMs from "useConjureElapsedMs" /* 17325 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let variant;
 
 const jsx = Fragment.jsx;
 let obj = { timer: { fontVariant: ["tabular-nums"] } };
 let closure_3 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativeTurnTimer(variant) {
   let tmp6;
   let tmp8;
   const obj = react2;
@@ -70,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
   cResult[7] = str;
   cResult[8] = tmp11;
   tmp10 = tmp11;
-}) : ((variant) => {
+}) : (function ConjureNativeTurnTimer(variant) {
   let str = variant.variant;
   const startedAt = variant.startedAt;
   if (str === undefined) {

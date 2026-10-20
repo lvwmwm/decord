@@ -1,25 +1,23 @@
-// Module ID: 15736
-// Function ID: 15737
+// Module ID: 16242
+// Function ID: 16243
 // Name: FeaturedBlock
-// Dependencies: [19, 17, 21, 587, 4890, 8421, 15737, 558, 576, 6657, 6681, 2]
+// Dependencies: [19, 17, 21, 587, 5092, 8966, 16243, 558, 576, 6852, 6879, 2]
 
-// Module 15736 (FeaturedBlock)
+// Module 16242 (FeaturedBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8421 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8966 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let featuredBlock;
-
 let tmp;
-const useAnalyticsLocations = tmp(6657);
+const useAnalyticsLocations = tmp(6852);
 function Subblocks(style) {
   style = style.style;
   const subblocks = style.featuredBlock.subblocks;
@@ -34,7 +32,7 @@ const PX_16 = nativeDefault.space.PX_16;
 const PX_12 = nativeDefault.space.PX_12;
 let obj = { container: { display: "flex", width: "100%", flexDirection: "row", flexWrap: "wrap", gap: PX_12, paddingHorizontal: PX_16 }, featuredSubblock: { flex: 1, flexBasis: 400, maxWidth: "100%" } };
 let closure_5 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((featuredBlock) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FeaturedBlock(featuredBlock) {
   const obj = react2;
   const cResult = obj.c(9);
   featuredBlock = featuredBlock.featuredBlock;
@@ -75,7 +73,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((featuredBlock) => 
   cResult[1] = tmp4.featuredSubblock;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((featuredBlock) => {
+}) : (function FeaturedBlock(featuredBlock) {
   featuredBlock = featuredBlock.featuredBlock;
   const tmp = closure_5();
   const tmp2 = useAnalyticsLocationsDefault;

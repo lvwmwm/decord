@@ -1,17 +1,17 @@
-// Module ID: 11768
-// Function ID: 11769
+// Module ID: 11834
+// Function ID: 11835
 // Name: useShowTryItOutButtonInAppLauncher
-// Dependencies: [558, 576, 9001, 11769, 8994, 2]
+// Dependencies: [558, 576, 10860, 11835, 10804, 2]
 
-// Module 11768 (useShowTryItOutButtonInAppLauncher)
+// Module 11834 (useShowTryItOutButtonInAppLauncher)
 import react from "react" /* 576 */;
-import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 8994 */;
-import getPrimaryAppCommand from "getPrimaryAppCommand" /* 9001 */;
-import useIsAppDMDefault from "useIsAppDM" /* 11769 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 10804 */;
+import getPrimaryAppCommand from "getPrimaryAppCommand" /* 10860 */;
+import useIsAppDMDefault from "useIsAppDM" /* 11835 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowTryItOutButtonInAppLauncher(arg0) {
   let application;
   let botUserId;
   let context;
@@ -53,7 +53,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = context;
   cResult[3] = obj2;
   tmp4 = obj2;
-}) : ((arg0) => {
+}) : (function useShowTryItOutButtonInAppLauncher(arg0) {
   let application;
   let botUserId;
   let context;

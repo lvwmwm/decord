@@ -1,16 +1,16 @@
-// Module ID: 16826
-// Function ID: 16827
+// Module ID: 17409
+// Function ID: 17410
 // Name: guild_channels/VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 11698, 4886, 1188, 16827, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 11763, 5088, 1200, 17410, 2]
 
-// Module 16826 (guild_channels/VoiceOrStageSummaryRow)
+// Module 17409 (guild_channels/VoiceOrStageSummaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5088 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let closure_6 = createStyles.createStyles((height) => {
   ({ backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER });
   return obj;
 });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceOrStageSummaryRow(arg0) {
   let audienceCount;
   let closure_2;
   let guildId;
@@ -54,7 +54,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     num = max;
   }
   if (cResult[0] !== layout) {
-    const tmpResult = tmp(11698);
+    const tmpResult = tmp(11763);
     const layoutStyles = tmpResult.getLayoutStyles(layout);
     cResult[0] = layout;
     cResult[1] = layoutStyles;
@@ -108,7 +108,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                             return tmp22;
                           }
                         }
-                        class O {
+                        class C {
                           constructor(arg0, arg1) {
                             if (arg1 >= max) {
                               return;
@@ -191,7 +191,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                   }
                 }
                 let tmp15 = null;
-                class O {
+                class C {
                   constructor(arg0, arg1) {
                     if (arg1 >= max) {
                       return;
@@ -263,7 +263,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                 }
                 if (tmp17Result) {
                   let items1 = [, ];
-                  class O {
+                  class C {
                     constructor(arg0, arg1) {
                       if (arg1 >= max) {
                         return;
@@ -339,11 +339,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                   obj5 = { style: items2, children: items3 };
                   items2 = [, ];
                   ({ badge: arr3[0], audienceBadge: arr3[1] } = tmp7);
-                  let obj6 = { size: tmp(1188).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: num(16827) };
-                  const Icon = tmp(1188).Icon;
+                  let obj6 = { size: tmp(1200).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: num(17410) };
+                  const Icon = tmp(1200).Icon;
                   items3 = [tmp17(Icon, obj6), ];
                   let obj7 = { variant: "text-sm/bold", style: { marginLeft: 4 }, children: audienceCount };
-                  items3[1] = closure_4(tmp(4886).Text, obj7);
+                  items3[1] = closure_4(tmp(5088).Text, obj7);
                   tmp17Result = closure_4(bound, obj4);
                 }
                 cResult[22] = audienceCount;
@@ -369,7 +369,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                 tmp12 = cResult[21];
               }
               const mapped = users.map(tmp12);
-              class O {
+              class C {
                 constructor(arg0, arg1) {
                   if (arg1 >= max) {
                     return;
@@ -452,7 +452,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         }
       }
     }
-    class O {
+    class C {
       constructor(arg0, arg1) {
         if (arg1 >= max) {
           return;
@@ -528,15 +528,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     cResult[18] = bound;
     cResult[19] = tmp7.overflowCircle;
     cResult[20] = tmp7.wrapper;
-    cResult[21] = O;
-    tmp12 = O;
+    cResult[21] = C;
+    tmp12 = C;
   }
   const items4 = [tmp7.container, tmp9];
   cResult[4] = tmp7.container;
   cResult[5] = tmp9;
   cResult[6] = items4;
   tmp10 = items4;
-}) : ((layout) => {
+}) : (function VoiceOrStageSummaryRow(layout) {
   let audienceCount;
   let guildId;
   let items;

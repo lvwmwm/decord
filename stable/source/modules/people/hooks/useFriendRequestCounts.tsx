@@ -1,27 +1,27 @@
-// Module ID: 16926
-// Function ID: 16927
+// Module ID: 17516
+// Function ID: 17517
 // Name: useFriendRequestCounts
-// Dependencies: [32, 7142, 4519, 558, 576, 504, 2]
+// Dependencies: [32, 7342, 4760, 558, 576, 504, 2]
 // Exports: getIncomingFriendRequestCount, getOutgoingFriendRequestCount
 
-// Module 16926 (useFriendRequestCounts)
+// Module 17516 (useFriendRequestCounts)
 import react from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7142 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7342 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIncomingFriendRequestCount() {
   let tmp4;
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [RelationshipStore, GameRelationshipStore];
-    const fn = function u() {
+    const fn = function o() {
       let obj;
       let obj2;
       const items = [RelationshipStore, GameRelationshipStore];
@@ -39,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useIncomingFriendRequestCount() {
   const obj = get_initialized;
   let items = [RelationshipStore, GameRelationshipStore];
   return obj.useStateFromStores(items, () => {

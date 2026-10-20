@@ -1,13 +1,13 @@
-// Module ID: 11219
-// Function ID: 11220
+// Module ID: 10756
+// Function ID: 10757
 // Name: PremiumMarketingUtil
-// Dependencies: [1085, 6885, 7096, 1112, 2]
+// Dependencies: [1085, 7094, 7302, 1112, 2]
 // Exports: navigateToNitroHomePage, navigateToPremiumHomePage
 
-// Module 11219 (PremiumMarketingUtil)
+// Module 10756 (PremiumMarketingUtil)
 import router_utils from "router_utils" /* 1112 */;
-import openUserSettings from "openUserSettings" /* 6885 */;
-import LayerActionCreators from "LayerActionCreators" /* 7096 */;
+import openUserSettings from "openUserSettings" /* 7094 */;
+import LayerActionCreators from "LayerActionCreators" /* 7302 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

@@ -1,23 +1,23 @@
-// Module ID: 10708
-// Function ID: 10709
+// Module ID: 12698
+// Function ID: 12699
 // Name: FavoritesGuildAddChannelModal
-// Dependencies: [5, 32, 19, 17, 2065, 10592, 21, 4890, 587, 558, 576, 10709, 10710, 10711, 1375, 4567, 1126, 10035, 10706, 1484, 1369, 10713, 3367, 5911, 10714, 10727, 10728, 2]
+// Dependencies: [5, 32, 19, 17, 2078, 10218, 21, 5092, 587, 558, 576, 12699, 12700, 11560, 1388, 4808, 1126, 10313, 12697, 1497, 1382, 11570, 3442, 10227, 11571, 12701, 11595, 2]
 
-// Module 10708 (FavoritesGuildAddChannelModal)
+// Module 12698 (FavoritesGuildAddChannelModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import FavoritesConstants from "FavoritesConstants" /* 2065 */;
-import UserRowConstants from "UserRowConstants" /* 10592 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import FavoritesConstants from "FavoritesConstants" /* 2078 */;
+import UserRowConstants from "UserRowConstants" /* 10218 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3, c4, dependencyMap, parentId;
+let c3, c4, dependencyMap;
 
 let c10;
 let c9;
@@ -29,7 +29,7 @@ const UserRowModes = UserRowConstants.UserRowModes;
 let obj = { container: obj2 };
 obj2 = { flex: 1, display: "flex", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let closure_11 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildAddChannelModal(parentId) {
   let closure_2;
   let first;
   let first1;
@@ -42,8 +42,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentId) => {
   parentId = parentId.parentId;
   const source = parentId.source;
   const tmp4 = closure_11();
-  const tmp6 = first1(10709)();
-  first1(10710)(source);
+  const tmp6 = first1(12699)();
+  first1(12700)(source);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [];
     cResult[0] = items;
@@ -91,7 +91,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentId) => {
         }
       }
     }
-    const height = tmp5(1484)(tmp12).height;
+    const height = tmp5(1497)(tmp12).height;
     if (cResult[6] !== height) {
       class A {
         constructor(arg0) {
@@ -137,8 +137,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentId) => {
           closure_2(arg0);
         }
       }
-      let obj3 = { title: intl.string(tmp5(3367).Rp35U1), onClose: tmp(10706).closeFavoritesGuildAddChannelModal };
-      const tmp5Result = first1(10713);
+      let obj3 = { title: intl.string(tmp5(3442).Rp35U1), onClose: tmp(12697).closeFavoritesGuildAddChannelModal };
+      const tmp5Result = first1(11570);
       intl = tmp(1126).intl;
       const tmp19 = closure_9(tmp5Result, obj3);
       cResult[10] = tmp19;
@@ -157,7 +157,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentId) => {
           closure_2(arg0);
         }
       }
-      const tmp21 = closure_9(first1(5911), { absolute: true });
+      const tmp21 = closure_9(first1(10227), { absolute: true });
       cResult[11] = tmp21;
     } else {
       class A {
@@ -200,8 +200,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentId) => {
     cResult[13] = tmp6;
     cResult[14] = length >= closure_7;
     cResult[15] = 0;
-    cResult[16] = closure_9(first1(10714), obj4);
-    const tmp27 = closure_9(first1(10714), obj4);
+    cResult[16] = closure_9(first1(11571), obj4);
+    const tmp27 = closure_9(first1(11571), obj4);
   }
   let closure_0 = _asyncToGenerator(async (arg0, value) => {
     let closure_1;
@@ -271,13 +271,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentId) => {
       }
     }
   });
-  const fn = function() {
+  function t3() {
     return closure_0(...arguments);
-  };
+  }
   cResult[2] = parentId;
   cResult[3] = first1;
-  cResult[4] = fn;
-}) : ((parentId) => {
+  cResult[4] = t3;
+}) : (function FavoritesGuildAddChannelModal(parentId) {
   let closure_2;
   let first;
   let intl;
@@ -292,8 +292,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentId) => {
   const source = parentId.source;
   const tmp = closure_11();
   const tmp3 = dependencyMap;
-  const tmp4 = first(10709)();
-  first(10710)(source);
+  const tmp4 = first(12699)();
+  first(12700)(source);
   const tmp2 = first;
   [first, dependencyMap] = react.useState([]);
   const callback = react.useCallback((arg0) => {
@@ -370,7 +370,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentId) => {
       }
     }
   }), items);
-  height = first(1484)({ ignoreKeyboard: true }).height;
+  height = first(1497)({ ignoreKeyboard: true }).height;
   const items1 = [height];
   let obj = {
     style: react.useMemo(() => {
@@ -380,22 +380,22 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((parentId) => {
     }, items1),
     children: items2
   };
-  let obj2 = { title: intl.string(first(3367).Rp35U1), onClose: parentId(10706).closeFavoritesGuildAddChannelModal };
-  const tmp12 = first(10713);
+  let obj2 = { title: intl.string(first(3442).Rp35U1), onClose: parentId(12697).closeFavoritesGuildAddChannelModal };
+  const tmp12 = first(11570);
   intl = parentId(1126).intl;
   items2 = [closure_9(tmp12, obj2), ];
   let obj3 = { style: tmp.container, children: items3 };
-  items3 = [closure_9(first(5911), { absolute: true }), , ];
+  items3 = [closure_9(first(10227), { absolute: true }), , ];
   let obj4 = { rowMode: UserRowModes.TOGGLE, initialSelectedDestinations: [], onSelectedDestinationChange: callback, channelFilter: tmp4, insetEnd: num, disableGradient: true, disableStickySections: true, disableSelection: first.length >= closure_7 };
   num = 0;
-  const tmp14 = first(10714);
+  const tmp14 = first(11571);
   if (first.length > 0) {
     num = tmp2(587).space.PX_80;
   }
   items3[1] = closure_9(tmp14, obj4);
   let obj5 = { isVisible: length > 0, floatingBackgroundColor: tmp.container.backgroundColor, text: tmp13Result.getFavoritesAddButtonLabel(first.length), onPress: callback1 };
-  const ModalFloatingAction = tmp13(10728).ModalFloatingAction;
-  tmp13Result = parentId(10727);
+  const ModalFloatingAction = tmp13(11595).ModalFloatingAction;
+  tmp13Result = parentId(12701);
   items3[2] = closure_9(ModalFloatingAction, obj5);
   items2[1] = closure_10(View, obj3);
   return closure_10(View, obj);

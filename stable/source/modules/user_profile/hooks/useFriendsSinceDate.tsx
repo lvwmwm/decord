@@ -1,12 +1,12 @@
-// Module ID: 10988
-// Function ID: 10989
+// Module ID: 10617
+// Function ID: 10618
 // Name: useFriendsSinceDate
-// Dependencies: [2116, 4519, 1085, 558, 576, 573, 6678, 2]
+// Dependencies: [2129, 4760, 1085, 558, 576, 573, 6876, 2]
 
-// Module 10988 (useFriendsSinceDate)
+// Module 10617 (useFriendsSinceDate)
 import Constants from "Constants" /* 1085 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import LocaleStore from "LocaleStore" /* 2129 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,8 +14,9 @@ const require = globalThis.__r;
 let _require;
 
 const RelationshipTypes = Constants.RelationshipTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendsSinceDate(arg0) {
   let closure_0;
+  let createdAtDate;
   let locale;
   let tmp10;
   let tmp11;
@@ -48,41 +49,59 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8 = cResult[2];
   }
   if (cResult[3] !== arg0) {
-    const fn2 = function p() {
-      let since = null;
-      const obj = RelationshipStore;
-      const tmp = closure_0;
-      if (RelationshipStore.getRelationshipType(closure_0) === RelationshipTypes.FRIEND) {
-        since = obj.getSince(tmp);
+    class F {
+      constructor() {
+        let since = null;
+        const obj = RelationshipStore;
+        const tmp = closure_0;
+        if (RelationshipStore.getRelationshipType(closure_0) === RelationshipTypes.FRIEND) {
+          since = obj.getSince(tmp);
+        }
+        return since;
       }
-      return since;
-    };
+    }
     const items2 = [arg0];
     cResult[3] = arg0;
-    cResult[4] = fn2;
+    cResult[4] = F;
     cResult[5] = items2;
     tmp11 = items2;
-    tmp10 = fn2;
+    tmp10 = F;
   } else {
-    tmp10 = cResult[4];
+    class F {
+      constructor() {
+        let since = null;
+        const obj = RelationshipStore;
+        const tmp = closure_0;
+        if (RelationshipStore.getRelationshipType(closure_0) === RelationshipTypes.FRIEND) {
+          since = obj.getSince(tmp);
+        }
+        return since;
+      }
+    }
     tmp11 = cResult[5];
   }
   const tmpResult3 = tmp(573);
   const stateFromStores1 = tmpResult3.useStateFromStores(tmp8, tmp10, tmp11);
   if (cResult[6] === stateFromStores1) {
-    let tmp13;
-    if (cResult[7] === stateFromStores) {
-      tmp13 = cResult[8];
+    class F {
+      constructor() {
+        let since = null;
+        const obj = RelationshipStore;
+        const tmp = closure_0;
+        if (RelationshipStore.getRelationshipType(closure_0) === RelationshipTypes.FRIEND) {
+          since = obj.getSince(tmp);
+        }
+        return since;
+      }
     }
-    return tmp13;
+    return createdAtDate;
   }
-  const tmpResult4 = tmp(6678);
-  const createdAtDate = tmpResult4.getCreatedAtDate(stateFromStores1, stateFromStores);
+  const tmpResult4 = tmp(6876);
+  createdAtDate = tmpResult4.getCreatedAtDate(stateFromStores1, stateFromStores);
   cResult[6] = stateFromStores1;
   cResult[7] = stateFromStores;
   cResult[8] = createdAtDate;
-  tmp13 = createdAtDate;
-}) : ((arg0) => {
+}) : (function useFriendsSinceDate(arg0) {
   let closure_0;
   let locale;
   _require = arg0;

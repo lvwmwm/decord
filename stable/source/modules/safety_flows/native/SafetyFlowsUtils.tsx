@@ -1,21 +1,20 @@
-// Module ID: 18065
-// Function ID: 18066
+// Module ID: 18695
+// Function ID: 18696
 // Name: SafetyFlowsUtils
-// Dependencies: [5, 19, 1377, 18059, 18061, 5093, 18060, 4568, 4805, 1126, 2787, 558, 576, 1490, 18064, 2]
+// Dependencies: [5, 19, 1390, 18689, 18691, 5934, 18690, 4809, 1126, 2862, 558, 576, 1503, 18694, 2]
 // Exports: getScreensForTaskType
 
-// Module 18065 (SafetyFlowsUtils)
+// Module 18695 (SafetyFlowsUtils)
 import intl2 from "intl" /* 1126 */;
-import _modDef2787 from "module_2787" /* 2787 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4805 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import types from "types" /* 18059 */;
-import constants from "constants" /* 18060 */;
-import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 18061 */;
+import _modDef2862 from "module_2862" /* 2862 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import types from "types" /* 18689 */;
+import constants from "constants" /* 18690 */;
+import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 18691 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -87,11 +86,11 @@ function navigateToScreenForTask(arr, task_type) {
   if (null == task_type) {
     obj = ModalActionCreatorsDefault;
     obj.popWithKey(constants.SAFETY_FLOWS_MODAL_KEY);
-    const obj2 = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: AssetRegistryDefault, content: intl.string(_modDef2787["/fHz9S"]) };
+    const obj2 = { text: intl.string(_modDef2862["/fHz9S"]), variant: "success" };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = intl2.intl;
-    open(obj2);
+    open("SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", obj2);
   } else {
     task_type = task_type.task_type;
     const tmp17 = types.TASK_TYPE_TO_SCREENS[task_type];
@@ -140,13 +139,13 @@ function getScreensForTaskType(task_type) {
   }
   return tmp4;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskComplete() {
   let setTask;
-  obj = navigation(setTask[12]);
+  obj = navigation(setTask[11]);
   const cResult = obj.c(5);
-  const obj2 = navigation(setTask[13]);
+  const obj2 = navigation(setTask[12]);
   navigation = obj2.useNavigation();
-  const obj3 = navigation(setTask[14]);
+  const obj3 = navigation(setTask[13]);
   const safetyFlowTask = obj3.useSafetyFlowTask();
   const task = safetyFlowTask.task;
   setTask = safetyFlowTask.setTask;
@@ -230,20 +229,20 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     })();
   });
-  const fn = function() {
+  function t0() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = navigation;
   cResult[1] = setTask;
   cResult[2] = task.flow_context.flow_id;
   cResult[3] = task.task_id;
-  cResult[4] = fn;
-  tmp4 = fn;
-}) : (() => {
+  cResult[4] = t0;
+  tmp4 = t0;
+}) : (function useOnTaskComplete() {
   let setTask;
-  obj = navigation(setTask[13]);
+  obj = navigation(setTask[12]);
   navigation = obj.useNavigation();
-  const obj2 = navigation(setTask[14]);
+  const obj2 = navigation(setTask[13]);
   const safetyFlowTask = obj2.useSafetyFlowTask();
   const task = safetyFlowTask.task;
   setTask = safetyFlowTask.setTask;

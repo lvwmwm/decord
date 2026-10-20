@@ -1,22 +1,22 @@
-// Module ID: 5601
-// Function ID: 5602
+// Module ID: 5385
+// Function ID: 5386
 // Name: ButtonHooks
-// Dependencies: [19, 4890, 558, 576, 4589, 587, 4729, 4580, 4612, 5597, 5598, 5600, 5602, 5596, 4886, 1369, 2]
+// Dependencies: [19, 5092, 558, 576, 4827, 587, 4969, 4818, 4850, 5378, 5382, 5384, 5386, 5381, 5088, 1382, 2]
 
-// Module 5601 (ButtonHooks)
+// Module 5385 (ButtonHooks)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import native from "native" /* 4589 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import shared from "shared" /* 4729 */;
-import Icon from "Icon" /* 5596 */;
-import spring from "spring" /* 5597 */;
-import springPresets from "springPresets" /* 5598 */;
-import ButtonConstants from "ButtonConstants" /* 5600 */;
-import useFontScale from "useFontScale" /* 5602 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import native from "native" /* 4827 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import shared from "shared" /* 4969 */;
+import spring from "spring" /* 5378 */;
+import Icon from "Icon" /* 5381 */;
+import springPresets from "springPresets" /* 5382 */;
+import ButtonConstants from "ButtonConstants" /* 5384 */;
+import useFontScale from "useFontScale" /* 5386 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let tmp;
-const useToken = tmp(4580);
+const useToken = tmp(4818);
 function getButtonColorTokens(arg0) {
   let obj13;
   let obj20;
@@ -183,7 +183,7 @@ const backgroundInactive = createStyles.experimental_createToken(() => "#161CBB"
 createStyles = createStyles_mod;
 const backgroundPressed = createStyles.experimental_createToken(() => "#1318A0");
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileThemedButtonStyles(arg0) {
   let items;
   let items1;
   let primaryColor;
@@ -282,7 +282,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp29 = cResult[13];
         }
         if (cResult[14] !== tmp27) {
-          const obj5 = { backgroundColor: tmp27, borderColor: tmp29, color: "Array" };
+          const obj5 = { backgroundColor: tmp27, borderColor: tmp29, color: "r" };
           cResult[14] = tmp27;
           cResult[15] = obj5;
           tmp31 = obj5;
@@ -324,7 +324,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               tmp16 = cResult[23];
             }
             if (cResult[24] !== tmp14) {
-              const obj6 = { backgroundColor: tmp14, borderColor: tmp16, color: "Array" };
+              const obj6 = { backgroundColor: tmp14, borderColor: tmp16, color: "r" };
               cResult[24] = tmp14;
               cResult[25] = obj6;
               tmp18 = obj6;
@@ -366,7 +366,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp5;
-}) : ((arg0) => {
+}) : (function useProfileThemedButtonStyles(arg0) {
   let closure_0;
   let theme;
   _require = arg0;
@@ -417,7 +417,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       } else {
         setColorOpacity3Result = setColorOpacity3("white", 0.34);
       }
-      const obj8 = { backgroundColor: items2, borderColor: items3, color: "Array" };
+      const obj8 = { backgroundColor: items2, borderColor: items3, color: "r" };
       items2[1] = setColorOpacity3Result;
       items3 = [c4, c4];
       return obj8;
@@ -443,7 +443,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       } else {
         darkenColorResult1 = obj3.setColorOpacity("white", 0.2);
       }
-      const obj10 = { backgroundColor: items4, borderColor: items5, color: "Array" };
+      const obj10 = { backgroundColor: items4, borderColor: items5, color: "r" };
       items4[1] = darkenColorResult1;
       items5 = [c4, c4];
       return obj10;
@@ -454,7 +454,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_7 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForegroundColor(arg0) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -468,14 +468,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = useToken;
   return tmpResult.useToken(tmp4.foregroundInactive);
-}) : ((arg0) => {
+}) : (function useForegroundColor(arg0) {
   const obj = useToken;
   return obj.useToken(getButtonColorTokens(arg0).foregroundInactive);
 });
 createStyles = createStyles_mod;
 const styleProperties = createStyles.createStyleProperties(getButtonColorTokens);
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useButtonTextColorStyles(arg0) {
   let tmp10;
   let tmp5;
   const obj = react2;
@@ -507,7 +507,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp10 = cResult[3];
   }
   return tmp10;
-}) : ((arg0) => {
+}) : (function useButtonTextColorStyles(arg0) {
   const tmp = closure_7(arg0);
   let color;
   const obj = useToken;
@@ -524,7 +524,7 @@ let closure_10 = tmp5;
 const __initData = { code: "function ButtonHooksNativeTsx1(){const{interpolateColor,pressed,inactiveColor,pressedColor}=this.__closure;return{tintColor:interpolateColor(pressed.get(),[0,1],[inactiveColor,pressedColor])};}" };
 const __initData2 = { code: "function ButtonHooksNativeTsx2(){const{interpolateColor,pressed,inactiveColor,pressedColor}=this.__closure;return{tintColor:interpolateColor(pressed.get(),[0,1],[inactiveColor,pressedColor])};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, pressed) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIconTintStyles(arg0, pressed) {
   let tmp4;
   let token;
   _require = pressed;
@@ -555,7 +555,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, pressed) => {
   fn.__workletHash = 10122935395765;
   fn.__initData = __initData;
   return tmpResult2.useAnimatedStyle(fn);
-}) : ((arg0, pressed) => {
+}) : (function useIconTintStyles(arg0, pressed) {
   let token;
   _require = pressed;
   const color = closure_10(arg0).color;
@@ -579,7 +579,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, pressed) => {
 ReactCompilerGating = ReactCompilerGating_mod;
 const __initData3 = { code: "function ButtonHooksNativeTsx3(){const{themedStyles,colors,interpolateColor,pressed}=this.__closure;var _themedStyles$backgro,_themedStyles,_themedStyles$borderC,_themedStyles2;const backgroundColor=(_themedStyles$backgro=(_themedStyles=themedStyles)===null||_themedStyles===void 0?void 0:_themedStyles.backgroundColor)!==null&&_themedStyles$backgro!==void 0?_themedStyles$backgro:[colors.backgroundInactive,colors.backgroundPressed];const borderColor=(_themedStyles$borderC=(_themedStyles2=themedStyles)===null||_themedStyles2===void 0?void 0:_themedStyles2.borderColor)!==null&&_themedStyles$borderC!==void 0?_themedStyles$borderC:[colors.borderInactive,colors.borderPressed];return{backgroundColor:interpolateColor(pressed.get(),[0,1],backgroundColor),borderColor:interpolateColor(pressed.get(),[0,1],borderColor)};}" };
 const __initData4 = { code: "function ButtonHooksNativeTsx4(){const{themedStyles,colors,interpolateColor,pressed}=this.__closure;var _themedStyles$backgro,_themedStyles,_themedStyles$borderC,_themedStyles2;const backgroundColor=(_themedStyles$backgro=(_themedStyles=themedStyles)===null||_themedStyles===void 0?void 0:_themedStyles.backgroundColor)!==null&&_themedStyles$backgro!==void 0?_themedStyles$backgro:[colors.backgroundInactive,colors.backgroundPressed];const borderColor=(_themedStyles$borderC=(_themedStyles2=themedStyles)===null||_themedStyles2===void 0?void 0:_themedStyles2.borderColor)!==null&&_themedStyles$borderC!==void 0?_themedStyles$borderC:[colors.borderInactive,colors.borderPressed];return{backgroundColor:interpolateColor(pressed.get(),[0,1],backgroundColor),borderColor:interpolateColor(pressed.get(),[0,1],borderColor)};}" };
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGradientPillStyles(arg0) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(2);
@@ -593,14 +593,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function useGradientPillStyles(arg0) {
   const obj = { borderColor: styleProperties(arg0).borderInactive };
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 const __initData5 = { code: "function ButtonHooksNativeTsx5(){const{width,scaleAmountInPx,withSpring,interpolate,pressed,ON_PRESS_SPRING}=this.__closure;const scale=width.get()>0?(width.get()-scaleAmountInPx)/width.get():1;return{transform:[{scale:withSpring(interpolate(pressed.get(),[0,1],[1,scale]),ON_PRESS_SPRING,\"animate-always\")}]};}" };
 const __initData6 = { code: "function ButtonHooksNativeTsx6(){const{width,scaleAmountInPx,withSpring,interpolate,pressed,ON_PRESS_SPRING}=this.__closure;const scale=width.get()>0?(width.get()-scaleAmountInPx)/width.get():1;return{transform:[{scale:withSpring(interpolate(pressed.get(),[0,1],[1,scale]),ON_PRESS_SPRING,'animate-always')}]};}" };
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, pressed) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useButtonPillStyles(arg0, pressed) {
   let closure_2;
   _require = pressed;
   const tmp = closure_7(arg0);
@@ -639,7 +639,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, pressed) => {
   fn.__workletHash = 1024908390291;
   fn.__initData = __initData3;
   return obj.useAnimatedStyle(fn);
-}) : ((arg0, pressed) => {
+}) : (function useButtonPillStyles(arg0, pressed) {
   let closure_2;
   _require = pressed;
   const tmp = closure_7(arg0);
@@ -680,7 +680,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, pressed) => {
   return obj.useAnimatedStyle(fn);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((pressed, width, scaleAmountInPx) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useButtonScaleStyles(pressed, width, scaleAmountInPx) {
   _require = pressed;
   dependencyMap = scaleAmountInPx;
   const obj = require("ReanimatedRexport");
@@ -708,7 +708,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((pressed, width, scal
   fn.__workletHash = 11326712012657;
   fn.__initData = __initData5;
   return obj.useAnimatedStyle(fn);
-}) : ((pressed, width, scaleAmountInPx) => {
+}) : (function useButtonScaleStyles(pressed, width, scaleAmountInPx) {
   _require = pressed;
   dependencyMap = scaleAmountInPx;
   const obj = require("ReanimatedRexport");
@@ -739,7 +739,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((pressed, width, scal
 });
 let closure_17 = tmp9;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3, arg4) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useButtonPressAnimationProps(arg0, arg1, arg2, arg3, arg4) {
   let closure_0 = arg2;
   let closure_1 = arg3;
   let closure_2 = arg4;
@@ -831,7 +831,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, a
   cResult[1] = arg3;
   cResult[2] = fn;
   tmp7 = fn;
-}) : ((arg0) => {
+}) : (function useButtonPressAnimationProps(arg0) {
   let items;
   let items1;
   let items2;
@@ -886,13 +886,13 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((size, arg1, arg2)
   let BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = arg2;
   const tmp4 = undefined !== arg1 && arg1;
   if (undefined === arg2) {
-    BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = tmp(5600).BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
+    BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = tmp(5384).BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER;
   }
   const tmpResult = useFontScale;
   const fontScale = tmpResult.useFontScale();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmpResult6 = Icon;
-    const iconSize = tmpResult6.getIconSize(tmp(5600).MEDIUM_BUTTON_ICON_SIZE);
+    const iconSize = tmpResult6.getIconSize(tmp(5384).MEDIUM_BUTTON_ICON_SIZE);
     cResult[0] = iconSize;
     first = iconSize;
   } else {
@@ -903,7 +903,7 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((size, arg1, arg2)
     const _Symbol = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       const tmpResult7 = Icon;
-      const iconSize1 = tmpResult7.getIconSize(tmp(5600).SMALL_BUTTON_ICON_SIZE);
+      const iconSize1 = tmpResult7.getIconSize(tmp(5384).SMALL_BUTTON_ICON_SIZE);
       cResult[1] = iconSize1;
       tmp10 = iconSize1;
     } else {
@@ -915,7 +915,7 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((size, arg1, arg2)
     const _Symbol2 = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const tmpResult8 = Icon;
-      const iconSize2 = tmpResult8.getIconSize(tmp(5600).LARGE_BUTTON_ICON_SIZE);
+      const iconSize2 = tmpResult8.getIconSize(tmp(5384).LARGE_BUTTON_ICON_SIZE);
       cResult[2] = iconSize2;
       tmp8 = iconSize2;
     } else {
@@ -927,7 +927,7 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((size, arg1, arg2)
   if (tmp4) {
     bound = first;
     if (fontScale > 1) {
-      const TextStyleSheet = tmp(4886).TextStyleSheet;
+      const TextStyleSheet = tmp(5088).TextStyleSheet;
       const tmpResult9 = ButtonConstants;
       const tmp16 = TextStyleSheet[tmpResult9.getButtonDefaultTextVariant(tmpResult9, size)];
       const tmpResult10 = PlatformUtils;
@@ -972,19 +972,19 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((size, arg1, arg2)
     Icon;
     if ("sm" === closure_0) {
       const tmpResult = Icon;
-      iconSize = tmpResult.getIconSize(tmp(5600).SMALL_BUTTON_ICON_SIZE);
+      iconSize = tmpResult.getIconSize(tmp(5384).SMALL_BUTTON_ICON_SIZE);
     } else {
       iconSize = tmp4;
       if ("lg" === closure_0) {
         const tmpResult4 = Icon;
-        iconSize = tmpResult4.getIconSize(tmp(5600).LARGE_BUTTON_ICON_SIZE);
+        iconSize = tmpResult4.getIconSize(tmp(5384).LARGE_BUTTON_ICON_SIZE);
       }
     }
     let width = iconSize;
     if (flag) {
       width = iconSize;
       if (fontScale > 1) {
-        const TextStyleSheet = tmp(4886).TextStyleSheet;
+        const TextStyleSheet = tmp(5088).TextStyleSheet;
         const tmpResult5 = ButtonConstants;
         const tmp13 = TextStyleSheet[tmpResult5.getButtonDefaultTextVariant(tmpResult5, closure_0)];
         const tmpResult6 = PlatformUtils;

@@ -1,20 +1,20 @@
-// Module ID: 15392
-// Function ID: 15393
+// Module ID: 15872
+// Function ID: 15873
 // Name: UserSettingsDebugLogsActionSheet
-// Dependencies: [19, 21, 558, 576, 6644, 1126, 6074, 5993, 6071, 6072, 1188, 6701, 4854, 2]
+// Dependencies: [19, 21, 558, 576, 6839, 1126, 6265, 6180, 6262, 6263, 1200, 6899, 5056, 2]
 // Exports: openUserSettingsDebugLogsFiltersActionSheet
 
-// Module 15392 (UserSettingsDebugLogsActionSheet)
+// Module 15872 (UserSettingsDebugLogsActionSheet)
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import TableRow2 from "TableRow" /* 5993 */;
-import TableRadioRow3 from "TableRadioRow" /* 6071 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6072 */;
-import TableRowGroup2 from "TableRowGroup" /* 6074 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
-import ActionSheet2 from "ActionSheet" /* 6701 */;
+import native from "native" /* 1200 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import TableRow2 from "TableRow" /* 6180 */;
+import TableRadioRow3 from "TableRadioRow" /* 6262 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6263 */;
+import TableRowGroup2 from "TableRowGroup" /* 6265 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
+import ActionSheet2 from "ActionSheet" /* 6899 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -23,7 +23,7 @@ import size from "module_2" /* 2 */;
 let c3;
 let closure_4;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDebugLogsFiltersActionSheet(arg0) {
   let first;
   let intl;
   let intl4;
@@ -44,7 +44,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ sortOrder, onSortOrderChanged, onRefresh } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(intl6.t["+B9e11"]) };
-    const BottomSheetTitleHeader = tmp(6644).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
     intl = tmp(1126).intl;
     const tmp6 = _false(BottomSheetTitleHeader, obj2);
     cResult[0] = tmp6;
@@ -62,7 +62,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[2] !== onRefresh) {
     const obj3 = { hasIcons: false, children: _false(TableRow2.TableRow, obj4) };
-    const TableRowGroup = tmp(6074).TableRowGroup;
+    const TableRowGroup = tmp(6265).TableRowGroup;
     obj4 = { label: tmp7, onPress: onRefresh };
     const tmp11 = _false(TableRowGroup, obj3);
     cResult[2] = onRefresh;
@@ -81,7 +81,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { label: intl4.string(intl6.t.eoXe0r), value: "newest" };
-    const TableRadioRow = tmp(6071).TableRadioRow;
+    const TableRadioRow = tmp(6262).TableRadioRow;
     intl4 = tmp(1126).intl;
     const tmp16 = _false(TableRadioRow, obj5);
     cResult[5] = tmp16;
@@ -91,7 +91,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { label: intl5.string(intl6.t.mmeWUF), value: "oldest" };
-    const TableRadioRow2 = tmp(6071).TableRadioRow;
+    const TableRadioRow2 = tmp(6262).TableRadioRow;
     intl5 = tmp(1126).intl;
     const tmp19 = _false(TableRadioRow2, obj6);
     cResult[6] = tmp19;
@@ -135,7 +135,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = sortOrder;
   cResult[9] = tmp21;
   tmp20 = tmp21;
-}) : ((arg0) => {
+}) : (function UserSettingsDebugLogsFiltersActionSheet(arg0) {
   let BottomSheetTitleHeader;
   let TableRow;
   let intl;

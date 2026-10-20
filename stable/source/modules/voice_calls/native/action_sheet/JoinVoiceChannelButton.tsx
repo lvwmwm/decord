@@ -1,32 +1,29 @@
-// Module ID: 13594
-// Function ID: 13595
+// Module ID: 13603
+// Function ID: 13604
 // Name: JoinVoiceChannelButton
-// Dependencies: [19, 17, 4509, 1085, 21, 4890, 558, 576, 9600, 504, 1126, 1881, 5568, 5594, 2]
+// Dependencies: [19, 17, 4750, 1085, 21, 5092, 558, 576, 11018, 504, 1126, 1894, 5889, 5379, 2]
 
-// Module 13594 (JoinVoiceChannelButton)
+// Module 13603 (JoinVoiceChannelButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1881 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5568 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 9600 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1894 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11018 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import createStyles from "createStyles" /* 4890 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channel;
 
 const View = react_native.View;
 const Permissions = Constants.Permissions;
 const jsx = Fragment.jsx;
 let closure_9 = createStyles.createStyles({ container: { flexDirection: "row" } });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinVoiceChannelButton(channel) {
   let first;
   let flag;
   let tmp10;
-  let tmp16;
   let tmp8;
   let obj = channel(576);
   const cResult = obj.c(18);
@@ -42,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     first = cResult[0];
   }
   if (cResult[1] !== channel) {
-    const fn = function _() {
+    const fn = function h() {
       return !PermissionStore.can(Permissions.CONNECT, channel);
     };
     cResult[1] = channel;
@@ -92,56 +89,56 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
   }
   if (cResult[6] !== channel.id) {
-    const fn2 = function x() {
-      const obj = KeyboardManagerUtilsAll;
-      const result = obj.dismissGlobalKeyboard();
-      const obj2 = SelectedChannelActionCreatorsDefault;
-      const voiceChannel = obj2.selectVoiceChannel(channel.id);
-    };
-    cResult[6] = channel.id;
-    cResult[7] = fn2;
-    tmp16 = fn2;
-  } else {
-    tmp16 = cResult[7];
-  }
-  if (cResult[8] === style) {
-    let tmp17;
-    if (cResult[9] === tmp4.container) {
-      tmp17 = cResult[10];
-    }
-    if (cResult[11] === tmp10) {
-      if (cResult[12] === flag) {
-        let tmp18;
-        if (cResult[13] === tmp16) {
-          tmp18 = cResult[14];
-        }
-        if (cResult[15] === tmp17) {
-          let tmp21;
-          if (cResult[16] === tmp18) {
-            tmp21 = cResult[17];
-          }
-          return tmp21;
-        }
-        const tmp24 = <View style={tmp17}>{tmp18}</View>;
-        cResult[15] = tmp17;
-        cResult[16] = tmp18;
-        cResult[17] = tmp24;
-        tmp21 = tmp24;
+    class N {
+      constructor() {
+        const obj = KeyboardManagerUtilsAll;
+        const result = obj.dismissGlobalKeyboard();
+        const obj2 = SelectedChannelActionCreatorsDefault;
+        const voiceChannel = obj2.selectVoiceChannel(channel.id);
       }
     }
-    const tmp20 = jsx(channel(5594).Button, { disabled: flag, text: tmp10, onPress: tmp16 });
+    cResult[6] = channel.id;
+    cResult[7] = N;
+  } else {
+    class N {
+      constructor() {
+        const obj = KeyboardManagerUtilsAll;
+        const result = obj.dismissGlobalKeyboard();
+        const obj2 = SelectedChannelActionCreatorsDefault;
+        const voiceChannel = obj2.selectVoiceChannel(channel.id);
+      }
+    }
+  }
+  if (cResult[8] === style) {
+    class N {
+      constructor() {
+        const obj = KeyboardManagerUtilsAll;
+        const result = obj.dismissGlobalKeyboard();
+        const obj2 = SelectedChannelActionCreatorsDefault;
+        const voiceChannel = obj2.selectVoiceChannel(channel.id);
+      }
+    }
+    if (cResult[11] === tmp10) {
+      class N {
+        constructor() {
+          const obj = KeyboardManagerUtilsAll;
+          const result = obj.dismissGlobalKeyboard();
+          const obj2 = SelectedChannelActionCreatorsDefault;
+          const voiceChannel = obj2.selectVoiceChannel(channel.id);
+        }
+      }
+    }
     cResult[11] = tmp10;
     cResult[12] = flag;
     cResult[13] = tmp16;
-    cResult[14] = tmp20;
-    tmp18 = tmp20;
+    cResult[14] = jsx(channel(5379).Button, { disabled: flag, text: tmp10, onPress: tmp16 });
+    const tmp19 = jsx(channel(5379).Button, { disabled: flag, text: tmp10, onPress: tmp16 });
   }
   const items1 = [tmp4.container, style];
   cResult[8] = style;
   cResult[9] = tmp4.container;
   cResult[10] = items1;
-  tmp17 = items1;
-}) : ((channel) => {
+}) : (function JoinVoiceChannelButton(channel) {
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();

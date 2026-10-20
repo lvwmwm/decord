@@ -1,24 +1,24 @@
-// Module ID: 17453
-// Function ID: 17454
+// Module ID: 18049
+// Function ID: 18050
 // Name: AgeVerificationManager
-// Dependencies: [2051, 5110, 2103, 1377, 1085, 8075, 3, 1107, 5102, 8274, 6965, 6807, 6613, 1985, 5580, 5581, 5431, 2]
+// Dependencies: [2065, 5432, 2116, 1390, 1085, 7020, 3, 1107, 11527, 7712, 7174, 7004, 6808, 1998, 5921, 5920, 5752, 2]
 
-// Module 17453 (AgeVerificationManager)
+// Module 18049 (AgeVerificationManager)
 import LoggerDefault from "Logger" /* 3 */;
 import MessageEmbedTypes from "MessageEmbedTypes" /* 1107 */;
-import UserStore2 from "UserStore" /* 1377 */;
-import Server from "Server" /* 1985 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5102 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 5431 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5580 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5581 */;
-import Constants2 from "Constants" /* 8075 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8274 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MessageStore from "MessageStore" /* 5110 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import UserStore2 from "UserStore" /* 1390 */;
+import Server from "Server" /* 1998 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 5752 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5920 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5921 */;
+import Constants2 from "Constants" /* 7020 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 7712 */;
+import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 11527 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import MessageStore from "MessageStore" /* 5432 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 const UserStore = UserStore2;
@@ -46,7 +46,7 @@ function handleMessageCreate(channelId) {
         if (first1 != null) {
           const fields = first1.fields;
           if (fields != null) {
-            found = fields.find((rawName) => rawName.rawName === AgeVerificationUtils.AgeVerificationSystemNotificationEmbedKeys.CONTENT_TYPE);
+            found = fields.find((rawName) => rawName.rawName === AgeVerificationSystemNotificationUtils.AgeVerificationSystemNotificationEmbedKeys.CONTENT_TYPE);
           }
         }
       }
@@ -55,7 +55,7 @@ function handleMessageCreate(channelId) {
     if (found != null) {
       rawValue = found.rawValue;
     }
-    if (rawValue === AgeVerificationUtils.AgeVerificationSystemNotificationContentType.MANUAL_REVIEW_SUBMITTED) {
+    if (rawValue === AgeVerificationSystemNotificationUtils.AgeVerificationSystemNotificationContentType.MANUAL_REVIEW_SUBMITTED) {
       const tmp4Result = ManualReviewActionCreators;
       const result = tmp4Result.invalidateAgeVerificationCaches();
     }

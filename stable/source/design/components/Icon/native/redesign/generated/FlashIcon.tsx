@@ -1,14 +1,14 @@
-// Module ID: 12834
-// Function ID: 12835
+// Module ID: 13141
+// Function ID: 13142
 // Name: FlashIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 12835, 4579, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 13142, 4817, 2]
 
-// Module 12834 (FlashIcon)
+// Module 13141 (FlashIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4579 */;
-import AssetRegistry from "AssetRegistry" /* 12835 */;
+import BaseIconImage2 from "BaseIconImage" /* 4817 */;
+import AssetRegistry from "AssetRegistry" /* 13142 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 
 let closure_3 = ["style", "color"];
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FlashIcon(arg0) {
   let INTERACTIVE_ICON_DEFAULT;
   let color;
   let style;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4579).BaseIconImage;
+  const BaseIconImage = tmp(4817).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;
@@ -67,7 +67,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp5;
   cResult[8] = tmp14;
   tmp12 = tmp14;
-}) : ((color) => {
+}) : (function FlashIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   const style = color.style;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {

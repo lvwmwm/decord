@@ -1,16 +1,16 @@
-// Module ID: 6663
-// Function ID: 6664
+// Module ID: 6858
+// Function ID: 6859
 // Name: useGetOrFetchApplications
-// Dependencies: [19, 5118, 558, 576, 568, 6658, 12, 1375, 504, 2]
+// Dependencies: [19, 5440, 558, 576, 568, 6853, 12, 1388, 504, 2]
 
-// Module 6663 (useGetOrFetchApplications)
+// Module 6858 (useGetOrFetchApplications)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqual from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6658 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6853 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 let _require, application, dependencyMap;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((current, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetchApplications(current, arg1) {
   let first;
   let ref;
   _require = current;
@@ -54,25 +54,37 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((current, arg1) => {
       tmp9 = cResult[5];
     }
     if (cResult[6] !== current) {
-      const fn2 = function h() {
-        return current.map((item) => {
-          application = undefined;
-          if (null != item) {
-            application = application.getApplication(item);
-          }
-          return application;
-        });
-      };
+      class A {
+        constructor() {
+          return closure_0.map((item) => {
+            application = undefined;
+            if (null != item) {
+              application = application.getApplication(item);
+            }
+            return application;
+          });
+        }
+      }
       cResult[6] = current;
-      cResult[7] = fn2;
-      tmp11 = fn2;
+      cResult[7] = A;
+      tmp11 = A;
     } else {
-      tmp11 = cResult[7];
+      class A {
+        constructor() {
+          return closure_0.map((item) => {
+            application = undefined;
+            if (null != item) {
+              application = application.getApplication(item);
+            }
+            return application;
+          });
+        }
+      }
     }
     const tmpResult = tmp(504);
     return tmpResult.useStateFromStoresArray(tmp9, tmp11);
   }
-  const fn = function f() {
+  const fn = function p() {
     let tmp = closure_1;
     if (tmp) {
       const obj = shallowEqual;
@@ -95,7 +107,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((current, arg1) => {
   cResult[4] = items2;
   tmp7 = items2;
   tmp6 = fn;
-}) : ((current) => {
+}) : (function useGetOrFetchApplications(current) {
   let ref;
   _require = current;
   let flag = arg1;
@@ -132,7 +144,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((current, arg1) => {
 });
 let closure_5 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetchApplication(arg0, arg1) {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -152,7 +164,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     tmp3 = cResult[1];
   }
   return closure_5(tmp3, tmp2)[0];
-}) : ((arg0) => {
+}) : (function useGetOrFetchApplication(arg0) {
   let items1;
   let flag = arg1;
   if (arg1 === undefined) {

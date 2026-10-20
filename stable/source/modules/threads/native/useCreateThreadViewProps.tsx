@@ -1,18 +1,18 @@
-// Module ID: 9778
-// Function ID: 9779
+// Module ID: 10378
+// Function ID: 10379
 // Name: useCreateThreadViewProps
-// Dependencies: [2051, 558, 576, 9779, 573, 2]
+// Dependencies: [2065, 558, 576, 9691, 573, 2]
 
-// Module 9778 (useCreateThreadViewProps)
-import useGetThreadDraftSettingsDefault from "useGetThreadDraftSettings" /* 9779 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+// Module 10378 (useCreateThreadViewProps)
+import useGetThreadDraftSettingsDefault from "useGetThreadDraftSettings" /* 9691 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateThreadViewProps(arg0) {
   let first;
   let tmp11;
   let tmp9;
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (tmp4 != null) {
       parentChannelId1 = tmp4.parentChannelId;
     }
-    const fn = function u() {
+    const fn = function s() {
       parentChannelId = undefined;
       const getChannel = ChannelStore.getChannel;
       if (parentChannelId != null) {
@@ -81,7 +81,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp13;
-}) : ((arg0) => {
+}) : (function useCreateThreadViewProps(arg0) {
   const tmp = useGetThreadDraftSettingsDefault(arg0);
   _require = tmp;
   const items = [ChannelStore];

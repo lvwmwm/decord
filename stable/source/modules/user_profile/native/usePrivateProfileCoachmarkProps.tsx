@@ -1,31 +1,31 @@
-// Module ID: 16306
-// Function ID: 16307
+// Module ID: 16828
+// Function ID: 16829
 // Name: usePrivateProfileCoachmarkProps
-// Dependencies: [19, 17, 1085, 2048, 21, 4890, 558, 576, 16307, 1197, 1126, 8294, 2028, 2036, 6885, 2]
+// Dependencies: [19, 17, 1085, 2062, 21, 5092, 558, 576, 16829, 1209, 1126, 7733, 2041, 2049, 7094, 2]
 
-// Module 16306 (usePrivateProfileCoachmarkProps)
+// Module 16828 (usePrivateProfileCoachmarkProps)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import openUserSettings from "openUserSettings" /* 6885 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import openUserSettings from "openUserSettings" /* 7094 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const PrivateProfileAbstractUI = tmp(16307);
+const PrivateProfileAbstractUI = tmp(16829);
 const View = react_native.View;
 const UserSettingsSections = Constants.UserSettingsSections;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ imageContainer: { alignItems: "center", justifyContent: "center" } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function PrivateProfileCoachmarkImage() {
   let first;
   let tmp8;
   const obj = react2;
@@ -47,25 +47,26 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : (() => <View style={closure_7().imageContainer}>{jsx(PrivateProfileAbstractUI.PrivateProfileAbstractUI, { width: 100, height: 67, resizeMode: "contain" })}</View>);
+}) : (function PrivateProfileCoachmarkImage() {
+  return <View style={closure_7().imageContainer}>{jsx(PrivateProfileAbstractUI.PrivateProfileAbstractUI, { width: 100, height: 67, resizeMode: "contain" })}</View>;
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateProfileCoachmarkProps(markAsDismissed) {
   let stringResult2;
   let obj = markAsDismissed(576);
   const cResult = obj.c(15);
   markAsDismissed = markAsDismissed.markAsDismissed;
   const visibleContent = markAsDismissed.visibleContent;
-  let obj2 = markAsDismissed(8294);
+  let obj2 = markAsDismissed(7733);
   let userIsTeen = obj2.useUserIsTeen();
-  const ProfileVisibility = markAsDismissed(2028).ProfileVisibility;
+  const ProfileVisibility = markAsDismissed(2041).ProfileVisibility;
   const setting = ProfileVisibility.useSetting();
   if (userIsTeen) {
-    userIsTeen = setting !== tmp(1197).ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
+    userIsTeen = setting !== tmp(1209).ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
   }
   if (cResult[0] === userIsTeen) {
     let tmp6;
     let tmp10;
-    let tmp12;
     let tmp14;
     let tmp13;
     if (cResult[1] === setting) {
@@ -80,87 +81,83 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
     } else {
       tmp10 = cResult[3];
     }
-    const PRIVATE_PROFILE_COACHMARK = tmp(2036).DismissibleContent.PRIVATE_PROFILE_COACHMARK;
+    const PRIVATE_PROFILE_COACHMARK = tmp(2049).DismissibleContent.PRIVATE_PROFILE_COACHMARK;
     if (cResult[4] !== markAsDismissed) {
-      const fn = function f() {
-        return markAsDismissed(ContentDismissActionType.USER_DISMISS);
-      };
+      class S {
+        constructor() {
+          return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        }
+      }
       cResult[4] = markAsDismissed;
-      cResult[5] = fn;
-      tmp12 = fn;
+      cResult[5] = S;
     } else {
-      tmp12 = cResult[5];
+      class S {
+        constructor() {
+          return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        }
+      }
     }
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function p() {
-        return <closure_1_8 />;
-      };
+      class S {
+        constructor() {
+          return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        }
+      }
       const intl2 = tmp(1126).intl;
       const stringResult1 = intl2.string(markAsDismissed(1126).t.eOoTMX);
-      cResult[6] = fn2;
+      cResult[6] = tmp15;
       cResult[7] = stringResult1;
       tmp14 = stringResult1;
-      tmp13 = fn2;
+      tmp13 = tmp15;
     } else {
-      tmp13 = cResult[6];
+      class S {
+        constructor() {
+          return markAsDismissed(ContentDismissActionType.USER_DISMISS);
+        }
+      }
       tmp14 = cResult[7];
     }
     if (cResult[8] !== markAsDismissed) {
-      class D {
+      class S {
         constructor() {
-          markAsDismissed(ContentDismissActionType.TAKE_ACTION);
-          const obj = openUserSettings;
-          const obj2 = { screen: UserSettingsSections.DATA_AND_PRIVACY };
-          obj.openUserSettings(obj2);
+          return markAsDismissed(ContentDismissActionType.USER_DISMISS);
         }
       }
       cResult[8] = markAsDismissed;
-      cResult[9] = D;
+      cResult[9] = tmp18;
     } else {
-      class D {
+      class S {
         constructor() {
-          markAsDismissed(ContentDismissActionType.TAKE_ACTION);
-          const obj = openUserSettings;
-          const obj2 = { screen: UserSettingsSections.DATA_AND_PRIVACY };
-          obj.openUserSettings(obj2);
+          return markAsDismissed(ContentDismissActionType.USER_DISMISS);
         }
       }
     }
     if (cResult[10] === tmp6) {
-      class D {
+      class S {
         constructor() {
-          markAsDismissed(ContentDismissActionType.TAKE_ACTION);
-          const obj = openUserSettings;
-          const obj2 = { screen: UserSettingsSections.DATA_AND_PRIVACY };
-          obj.openUserSettings(obj2);
+          return markAsDismissed(ContentDismissActionType.USER_DISMISS);
         }
       }
     }
-    const obj4 = { title: tmp10, description: tmp6, position: "top", visible: visibleContent === PRIVATE_PROFILE_COACHMARK, onDismiss: tmp12, renderImgComponent: tmp13, buttonLabel: tmp14, buttonVariant: "primary", onButtonPress: tmp16 };
+    const obj4 = { title: tmp10, description: tmp6, position: "top", visible: visibleContent === PRIVATE_PROFILE_COACHMARK, onDismiss: tmp12, renderImgComponent: tmp13, buttonLabel: tmp14, buttonVariant: "primary", onButtonPress: tmp17 };
     cResult[10] = tmp6;
     cResult[11] = visibleContent === PRIVATE_PROFILE_COACHMARK;
     cResult[12] = tmp12;
-    cResult[13] = tmp16;
+    cResult[13] = tmp17;
     cResult[14] = obj4;
   }
   if (userIsTeen) {
-    class D {
+    class S {
       constructor() {
-        markAsDismissed(ContentDismissActionType.TAKE_ACTION);
-        const obj = openUserSettings;
-        const obj2 = { screen: UserSettingsSections.DATA_AND_PRIVACY };
-        obj.openUserSettings(obj2);
+        return markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
     stringResult2 = tmp8;
   } else {
-    class D {
+    class S {
       constructor() {
-        markAsDismissed(ContentDismissActionType.TAKE_ACTION);
-        const obj = openUserSettings;
-        const obj2 = { screen: UserSettingsSections.DATA_AND_PRIVACY };
-        obj.openUserSettings(obj2);
+        return markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
     stringResult2 = obj3.string(tmp(1126).t.bnNxW1);
@@ -169,7 +166,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   cResult[1] = setting;
   cResult[2] = stringResult2;
   tmp6 = stringResult2;
-}) : ((visibleContent) => {
+}) : (function usePrivateProfileCoachmarkProps(visibleContent) {
   let constants2;
   visibleContent = visibleContent.visibleContent;
   const markAsDismissed = visibleContent.markAsDismissed;

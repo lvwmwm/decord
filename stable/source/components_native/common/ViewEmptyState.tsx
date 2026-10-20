@@ -1,27 +1,26 @@
-// Module ID: 6550
-// Function ID: 6551
+// Module ID: 6742
+// Function ID: 6743
 // Name: ViewEmptyState
-// Dependencies: [19, 17, 1085, 21, 4890, 5915, 587, 558, 576, 1188, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 5906, 587, 558, 576, 6157, 1200, 2]
 
-// Module 6550 (ViewEmptyState)
+// Module 6742 (ViewEmptyState)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
+import native from "native" /* 1200 */;
+import FastImageDefault from "FastImage" /* 6157 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import TextStyles from "TextStyles" /* 5915 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import TextStyles from "TextStyles" /* 5906 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c2;
-let c3;
 let closure_4;
 let hasOwnProperty;
 let obj2;
-({ View: c2, Image: c3 } = react_native);
+const View = react_native.View;
 const Fonts = Constants.Fonts;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -30,7 +29,7 @@ obj2 = { textAlign: "center", marginTop: 32, opacity: 0.8 };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(TextStyles(Fonts.DISPLAY_SEMIBOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
 let closure_6 = createStyles(obj);
-const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewEmptyState(arg0) {
   let items;
   let items1;
   let label;
@@ -77,7 +76,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     return tmp20;
                   }
                   const obj2 = { style: tmp5, children: tmp16 };
-                  const tmp23 = React3(React2, obj2);
+                  const tmp23 = React3(View, obj2);
                   cResult[18] = tmp5;
                   cResult[19] = tmp16;
                   cResult[20] = tmp23;
@@ -87,7 +86,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             const obj3 = { style: tmp4.fixOpticalIllusion, children: items };
             items = [tmp6, tmp10, tmp13];
-            const tmp19 = hasOwnProperty(React2, obj3);
+            const tmp19 = hasOwnProperty(View, obj3);
             cResult[13] = tmp4.fixOpticalIllusion;
             cResult[14] = tmp6;
             cResult[15] = tmp10;
@@ -101,7 +100,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const obj4 = { style: items1, children: text };
           items1 = [, ];
           ({ emptyLabel: arr2[0], emptyText: arr2[1] } = tmp4);
-          tmp14 = React3(tmp(1188).LegacyText, obj4);
+          tmp14 = React3(tmp(1200).LegacyText, obj4);
         }
         cResult[9] = tmp4.emptyLabel;
         cResult[10] = tmp4.emptyText;
@@ -112,7 +111,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp11 = null;
       if (null != label) {
         const obj5 = { style: tmp4.emptyLabel, children: label.toUpperCase() };
-        const LegacyText = tmp(1188).LegacyText;
+        const LegacyText = tmp(1200).LegacyText;
         tmp11 = React3(LegacyText, obj5);
       }
       cResult[6] = label;
@@ -121,7 +120,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp10 = tmp11;
     }
     const obj6 = { resizeMode: "contain", source, style: tmp4.emptyImage };
-    const tmp9 = React3(_false, obj6);
+    const tmp9 = React3(FastImageDefault, obj6);
     cResult[3] = source;
     cResult[4] = tmp4.emptyImage;
     cResult[5] = tmp9;
@@ -132,7 +131,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.emptyContainer;
   cResult[2] = items2;
   tmp5 = items2;
-}) : ((arg0) => {
+}) : (function ViewEmptyState(arg0) {
   let items;
   let items1;
   let items2;
@@ -145,12 +144,12 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ label, text } = arg0);
   ({ source, style } = arg0);
   const tmp = closure_6();
-  const obj = { style: items, children: tmp4(React2, obj2) };
+  const obj = { style: items, children: tmp4(View, obj2) };
   items = [tmp.emptyContainer, style];
   obj2 = { style: tmp.fixOpticalIllusion, children: items1 };
   items1 = [, , ];
   const obj3 = { resizeMode: "contain", source, style: tmp.emptyImage };
-  items1[0] = React3(_false, obj3);
+  items1[0] = React3(FastImageDefault, obj3);
   let tmp2Result = null;
   tmp4 = hasOwnProperty;
   if (null != label) {
@@ -167,8 +166,8 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2Result2 = tmp2(native.LegacyText, obj5);
   }
   items1[2] = tmp2Result2;
-  return React3(React2, obj);
+  return React3(View, obj);
 });
 const result = size.fileFinishedImporting("components_native/common/ViewEmptyState.tsx");
 
-export default tmp8;
+export default tmp7;

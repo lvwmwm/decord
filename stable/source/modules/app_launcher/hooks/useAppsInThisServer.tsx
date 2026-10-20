@@ -1,15 +1,15 @@
-// Module ID: 11746
-// Function ID: 11747
+// Module ID: 11811
+// Function ID: 11812
 // Name: useAppsInThisServer
-// Dependencies: [19, 8795, 1377, 5788, 558, 576, 504, 1985, 8939, 8805, 11745, 8929, 12, 2]
+// Dependencies: [19, 9243, 1390, 5403, 558, 576, 504, 1998, 9804, 9251, 11810, 9806, 12, 2]
 
-// Module 11746 (useAppsInThisServer)
+// Module 11811 (useAppsInThisServer)
 import _modDef12 from "module_12" /* 12 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5788 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 8795 */;
-import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 8929 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5403 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9243 */;
+import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 9806 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let currentUser, set, values, values1;
 
 const useGuildIndexState = ApplicationCommandIndexStore.useGuildIndexState;
 const limit = ApplicationCommandConstants.DISCOVERY_COMMANDS_QUERY_LIMIT;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(context) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppsInThisServer(context) {
   let _require;
   let commandsByActiveSection;
   let items1;
@@ -66,7 +66,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(context) {
   const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { commandTypes: items1 };
-    items1 = [tmp(1985).ApplicationCommandType.CHAT, tmp(1985).ApplicationCommandType.PRIMARY_ENTRY_POINT];
+    items1 = [tmp(1998).ApplicationCommandType.CHAT, tmp(1998).ApplicationCommandType.PRIMARY_ENTRY_POINT];
     const obj3 = { placeholderCount: 0, limit, includeFrecency: true };
     cResult[2] = obj2;
     cResult[3] = obj3;
@@ -84,7 +84,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(context) {
   } else {
     tmp15 = cResult[5];
   }
-  const obj6 = reduced(8939);
+  const obj6 = reduced(9804);
   const discovery = obj6.useDiscovery(tmp15);
   ({ commandsByActiveSection, loading } = discovery);
   if (cResult[6] !== commandsByActiveSection) {
@@ -177,7 +177,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(context) {
         }
       }
     }
-    const tmpResult2 = tmp(11745);
+    const tmpResult2 = tmp(11810);
     const sortApplicationsViaFrecency = tmpResult2.useSortApplicationsViaFrecency(tmp24);
     if (cResult[14] === stateFromStores) {
       class I {
@@ -291,7 +291,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(context) {
   cResult[9] = undefined;
   cResult[10] = tmp17;
   cResult[11] = F;
-}) : ((context) => {
+}) : (function useAppsInThisServer(context) {
   let items1;
   let items4;
   let obj3;

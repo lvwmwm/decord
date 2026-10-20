@@ -1,19 +1,19 @@
-// Module ID: 9793
-// Function ID: 9794
+// Module ID: 10391
+// Function ID: 10392
 // Name: useSafetyAlertsSettingOrDefault
-// Dependencies: [1231, 1377, 558, 576, 504, 8294, 9794, 2]
+// Dependencies: [1244, 1390, 558, 576, 504, 7733, 10392, 2]
 
-// Module 9793 (useSafetyAlertsSettingOrDefault)
+// Module 10391 (useSafetyAlertsSettingOrDefault)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import useUserIsTeen from "useUserIsTeen" /* 8294 */;
-import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 9794 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import UserStore from "UserStore" /* 1377 */;
+import useUserIsTeen from "useUserIsTeen" /* 7733 */;
+import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 10392 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyAlertsSettingOrDefault() {
   let settings;
   let tmp4;
   let tmp5;
@@ -75,7 +75,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = userIsTeen;
   }
   return tmp11;
-}) : (() => {
+}) : (function useSafetyAlertsSettingOrDefault() {
   let settings;
   const currentUser = UserStore.getCurrentUser();
   const items = [UserSettingsProtoStore];

@@ -1,19 +1,19 @@
-// Module ID: 16464
-// Function ID: 16465
+// Module ID: 16986
+// Function ID: 16987
 // Name: AppFreezer
-// Dependencies: [19, 7964, 21, 5976, 558, 576, 5738, 2]
+// Dependencies: [19, 8412, 21, 6162, 558, 576, 5330, 2]
 
-// Module 16464 (AppFreezer)
+// Module 16986 (AppFreezer)
 import Fragment from "Fragment" /* 21 */;
-import NativeViewDefault from "NativeView" /* 5976 */;
+import NativeViewDefault from "NativeView" /* 6162 */;
 import react from "react" /* 19 */;
-import AppFreezeStore from "AppFreezeStore" /* 7964 */;
+import AppFreezeStore from "AppFreezeStore" /* 8412 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 const NativeView = jsx(NativeViewDefault, { style: { flex: 1 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppFreezer(arg0) {
   let children;
   let lockKeys;
   let manualFreeze;
@@ -55,13 +55,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp7;
     }
   }
-  const tmp8 = jsx(tmp(5738).Freeze, { freeze: tmp6, placeholder, children });
+  const tmp8 = jsx(tmp(5330).Freeze, { freeze: tmp6, placeholder, children });
   cResult[2] = children;
   cResult[3] = placeholder;
   cResult[4] = tmp6;
   cResult[5] = tmp8;
   tmp7 = tmp8;
-}) : ((manualFreeze) => {
+}) : (function AppFreezer(manualFreeze) {
   let flag = manualFreeze.manualFreeze;
   const children = manualFreeze.children;
   if (flag === undefined) {
@@ -83,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return someResult;
   });
-  const Freeze = lockKeys(5738).Freeze;
+  const Freeze = lockKeys(5330).Freeze;
   const tmp2 = jsx;
   if (!freeze) {
     freeze = flag;

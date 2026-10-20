@@ -1,16 +1,16 @@
-// Module ID: 11615
-// Function ID: 11616
+// Module ID: 11679
+// Function ID: 11680
 // Name: ForumChannelStore
-// Dependencies: [2051, 2062, 2061, 2063, 1259, 38, 7400, 570, 558, 576, 504, 2]
+// Dependencies: [2065, 2075, 2074, 2076, 1272, 38, 7905, 570, 558, 576, 504, 2]
 // Exports: useForumChannelStoreApi
 
-// Module 11615 (ForumChannelStore)
+// Module 11679 (ForumChannelStore)
 import _modDef38 from "module_38" /* 38 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 2061 */;
-import ForumLayout from "ForumLayout" /* 2062 */;
-import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2063 */;
-import ForumChannelAnalyticsManagerDefault from "ForumChannelAnalyticsManager" /* 7400 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 2074 */;
+import ForumLayout from "ForumLayout" /* 2075 */;
+import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 2076 */;
+import ForumChannelAnalyticsManagerDefault from "ForumChannelAnalyticsManager" /* 7905 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -122,7 +122,7 @@ let closure_7 = module_570.create((set, get) => {
     throw new TypeError("Trying to call a non-function");
   }
 });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumChannelStore(channelId) {
   let channelState;
   let first;
   let tmp6;
@@ -155,7 +155,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     channelState = obj2.getChannelState(channelId);
   }
   return channelState;
-}) : ((channelId) => {
+}) : (function useForumChannelStore(channelId) {
   let channelState;
   _require = channelId;
   obj = closure_7();

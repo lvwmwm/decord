@@ -1,15 +1,15 @@
-// Module ID: 8290
-// Function ID: 8291
+// Module ID: 7729
+// Function ID: 7730
 // Name: IarSettingsUpsellsConfigRegistry
-// Dependencies: [19, 8280, 8291, 8292, 8293, 558, 576, 1375, 2]
+// Dependencies: [19, 7718, 7730, 7731, 7732, 558, 576, 1388, 2]
 
-// Module 8290 (IarSettingsUpsellsConfigRegistry)
+// Module 7729 (IarSettingsUpsellsConfigRegistry)
 import react2 from "react" /* 576 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import MenuTypes from "MenuTypes" /* 8280 */;
-import IarSettingsUpsellsConfigDmSpamFilterDefault from "IarSettingsUpsellsConfigDmSpamFilter" /* 8291 */;
-import IarSettingsUpsellsConfigScFiltersSexualMediaDefault from "IarSettingsUpsellsConfigScFiltersSexualMedia" /* 8292 */;
-import IarSettingsUpsellsConfigScFiltersGraphicMediaDefault from "IarSettingsUpsellsConfigScFiltersGraphicMedia" /* 8293 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import MenuTypes from "MenuTypes" /* 7718 */;
+import IarSettingsUpsellsConfigDmSpamFilterDefault from "IarSettingsUpsellsConfigDmSpamFilter" /* 7730 */;
+import IarSettingsUpsellsConfigScFiltersSexualMediaDefault from "IarSettingsUpsellsConfigScFiltersSexualMedia" /* 7731 */;
+import IarSettingsUpsellsConfigScFiltersGraphicMediaDefault from "IarSettingsUpsellsConfigScFiltersGraphicMedia" /* 7732 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ SettingsUpsellsConfigRegistry[MenuTypes.SettingsUpsells.SAFETY_DM_SPAM_FILTER] =
 SettingsUpsellsConfigRegistry[MenuTypes.SettingsUpsells.SAFETY_SC_FILTERS_SEXUAL_MEDIA] = IarSettingsUpsellsConfigScFiltersSexualMediaDefault;
 SettingsUpsellsConfigRegistry[MenuTypes.SettingsUpsells.SAFETY_SC_FILTERS_GRAPHIC_MEDIA] = IarSettingsUpsellsConfigScFiltersGraphicMediaDefault;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIarReportSettingsUpsells(arg0) {
   const obj = react2;
   const cResult = obj.c(2);
   let tmp2 = null;
@@ -59,7 +59,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = tmp3;
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function useIarReportSettingsUpsells(arg0) {
   let closure_0 = arg0;
   let items = [arg0];
   return react.useMemo(() => {
@@ -92,7 +92,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSettingsUpsellsConfigs(arr, arg1) {
   let closure_0;
   let tmp5;
   _require = arg1;
@@ -137,12 +137,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, arg1) => {
     tmp5 = cResult[4];
   }
   const mapped = arr.map(tmp5);
-  const found = mapped.filter(tmp(1375).isNotNullish);
+  const found = mapped.filter(tmp(1388).isNotNullish);
   cResult[0] = arg1;
   cResult[1] = arr;
   cResult[2] = found;
   tmp4 = found;
-}) : ((arg0, arg1) => {
+}) : (function useSettingsUpsellsConfigs(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const items = [arg0, arg1];

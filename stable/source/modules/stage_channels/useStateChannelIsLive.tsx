@@ -1,17 +1,17 @@
-// Module ID: 8072
-// Function ID: 8073
+// Module ID: 7481
+// Function ID: 7482
 // Name: useStateChannelIsLive
-// Dependencies: [2056, 558, 576, 504, 2]
+// Dependencies: [2070, 558, 576, 504, 2]
 
-// Module 8072 (useStateChannelIsLive)
-import StageInstanceStore from "StageInstanceStore" /* 2056 */;
+// Module 7481 (useStateChannelIsLive)
+import StageInstanceStore from "StageInstanceStore" /* 2070 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStageChannelIsLive(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useStageChannelIsLive(arg0) {
   let closure_0;
   _require = arg0;
   const items = [StageInstanceStore];

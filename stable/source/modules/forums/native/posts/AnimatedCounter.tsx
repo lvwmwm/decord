@@ -1,19 +1,19 @@
-// Module ID: 11070
-// Function ID: 11071
+// Module ID: 10471
+// Function ID: 10472
 // Name: AnimatedCounter
-// Dependencies: [32, 19, 17, 21, 4890, 558, 576, 38, 4612, 4589, 5597, 4886, 5598, 11071, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 38, 4850, 4827, 5378, 5088, 5382, 10472, 2]
 
-// Module 11070 (AnimatedCounter)
+// Module 10471 (AnimatedCounter)
 import react2 from "react" /* 576 */;
-import native from "native" /* 4589 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import spring from "spring" /* 5597 */;
-import springPresets from "springPresets" /* 5598 */;
+import native from "native" /* 4827 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import spring from "spring" /* 5378 */;
+import springPresets from "springPresets" /* 5382 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,8 +24,8 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(4886);
-const AnimatedCounterUtils = tmp(11071);
+const Text_Text = tmp(5088);
+const AnimatedCounterUtils = tmp(10472);
 function getItemKey(arg0) {
   return "" + arg0;
 }
@@ -41,7 +41,7 @@ const __initData2 = { code: "function AnimatedCounterTsx2(finished){const{state,
 const __initData3 = { code: "function AnimatedCounterTsx3(){const{withSpring,interpolate,animationState,ANIMATION_INPUT,animationOutput,springConfig,state,TransitionStates,runOnJS,cleanUp}=this.__closure;return{transform:[{translateY:withSpring(interpolate(animationState.get(),ANIMATION_INPUT,animationOutput),springConfig,'respect-motion-settings',function(finished){if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}})}]};}" };
 let closure_16 = { code: "function AnimatedCounterTsx4(finished){const{state,TransitionStates,runOnJS,cleanUp}=this.__closure;if(finished&&state===TransitionStates.YEETED){runOnJS(cleanUp)();}}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((cleanUp) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedCount(cleanUp) {
   let NEUTRAL;
   let context;
   let count;
@@ -244,7 +244,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((cleanUp) => {
   cResult[6] = items1;
   tmp18 = items1;
   tmp17 = I;
-}) : ((state) => {
+}) : (function AnimatedCount(state) {
   let NEUTRAL;
   let Text;
   let count;
@@ -302,7 +302,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((cleanUp) => {
     }
     return num;
   }), items);
-  let fn = function y() {
+  let fn = function _() {
     let fn;
     let interpolateResult;
     let withSpring;
@@ -362,7 +362,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((cleanUp) => {
   return closure_7(View, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedCounterTransitionGroup(count) {
   let closure_8;
   let textColor;
   let tmp10;
@@ -446,7 +446,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
       }
     }
   }
-  class Y {
+  class B {
     constructor(arg0, count, state, cleanUp) {
       let springStandard;
       const obj = { formatter, springConfig: springStandard, count, state, cleanUp, height, textColor, textVariant, textStyle };
@@ -465,8 +465,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
   cResult[9] = textColor;
   cResult[10] = textStyle;
   cResult[11] = textVariant;
-  cResult[12] = Y;
-}) : ((count) => {
+  cResult[12] = B;
+}) : (function AnimatedCounterTransitionGroup(count) {
   let Text;
   let _undefined;
   let c8;
@@ -529,7 +529,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
   return c8(height, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function BasicCounter(arg0) {
   let count;
   let formatter;
   let textColor;
@@ -568,7 +568,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = formatter;
   cResult[2] = formatterResult;
   tmp4 = formatterResult;
-}) : ((arg0) => {
+}) : (function BasicCounter(arg0) {
   let count;
   let formatter;
   let textColor;
@@ -581,7 +581,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedCounter(arg0) {
   let animate;
   let count;
   let formatter;
@@ -654,7 +654,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     tmp5 = tmp8;
   }
   return tmp5;
-}) : ((springConfig) => {
+}) : (function AnimatedCounter(springConfig) {
   let animate;
   let count;
   let textStyle;

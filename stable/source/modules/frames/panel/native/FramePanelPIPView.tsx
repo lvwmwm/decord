@@ -1,20 +1,20 @@
-// Module ID: 17196
-// Function ID: 17197
+// Module ID: 17791
+// Function ID: 17792
 // Name: FramePanelPIPView
-// Dependencies: [19, 8703, 8704, 17171, 21, 558, 576, 504, 17170, 16594, 16598, 17194, 2]
+// Dependencies: [19, 10808, 10803, 17766, 21, 558, 576, 504, 17765, 17134, 17138, 17789, 2]
 
-// Module 17196 (FramePanelPIPView)
+// Module 17791 (FramePanelPIPView)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import FrameRenderTargetDefault from "FrameRenderTarget" /* 16594 */;
-import FrameStackLevel from "FrameStackLevel" /* 16598 */;
-import ActivityPanelPIPView from "ActivityPanelPIPView" /* 17170 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 17171 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 17194 */;
+import FrameRenderTargetDefault from "FrameRenderTarget" /* 17134 */;
+import FrameStackLevel from "FrameStackLevel" /* 17138 */;
+import ActivityPanelPIPView from "ActivityPanelPIPView" /* 17765 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 17766 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 17789 */;
 import react_mod from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 8703 */;
-import FramesConstants from "FramesConstants" /* 8704 */;
+import FramesStore from "FramesStore" /* 10808 */;
+import FramesConstants from "FramesConstants" /* 10803 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let react = react_mod;
 const portraitSafeAreasConfig = ActivityPanelNativeConstants.DEFAULT_PORTRAIT_LETTERBOX_CONFIG;
 const jsx = Fragment.jsx;
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FramePanelPIPView(arg0) {
   let mainFrame;
   let tmp4;
   let tmp5;
@@ -38,7 +38,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   ({ transitionState, transitionCleanUp } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [FramesStore];
-    const fn = function f() {
+    const fn = function u() {
       return closure_1_5(mainFrame.getMainFrame());
     };
     cResult[0] = items;
@@ -78,7 +78,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
         }
       }
     }
-    const BaseActivityPanelPIPView = tmp(17170).BaseActivityPanelPIPView;
+    const BaseActivityPanelPIPView = tmp(17765).BaseActivityPanelPIPView;
     const tmp22 = <BaseActivityPanelPIPView transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={tmp8} hasActivity={null != stateFromStores} context={FramePanelStateContextDefault}>{tmp12}</BaseActivityPanelPIPView>;
     cResult[7] = tmp8;
     cResult[8] = null != stateFromStores;
@@ -98,7 +98,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[5] = stateFromStores;
   cResult[6] = tmp13;
   tmp12 = tmp13;
-}) : ((transitionState) => {
+}) : (function FramePanelPIPView(transitionState) {
   let pipOrientationLockState;
   transitionState = transitionState.transitionState;
   const transitionCleanUp = transitionState.transitionCleanUp;

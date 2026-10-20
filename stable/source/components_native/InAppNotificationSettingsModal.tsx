@@ -1,23 +1,23 @@
-// Module ID: 12495
-// Function ID: 12496
+// Module ID: 12600
+// Function ID: 12601
 // Name: InAppNotificationSettingsModal
-// Dependencies: [19, 2055, 2051, 4519, 5071, 1377, 1085, 21, 6614, 6609, 5043, 8895, 1126, 12496, 6885, 558, 576, 504, 6010, 6496, 2]
+// Dependencies: [19, 2069, 2065, 4760, 5966, 1390, 1085, 21, 6809, 6804, 5421, 8575, 1126, 12601, 7094, 558, 576, 504, 6201, 6688, 2]
 
-// Module 12495 (InAppNotificationSettingsModal)
+// Module 12600 (InAppNotificationSettingsModal)
 import intl4 from "intl" /* 1126 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import useChannelName from "useChannelName" /* 5043 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6010 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6609 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6614 */;
-import openUserSettings from "openUserSettings" /* 6885 */;
-import Form2 from "Form" /* 8895 */;
-import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 12496 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import useChannelName from "useChannelName" /* 5421 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6201 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6804 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
+import openUserSettings from "openUserSettings" /* 7094 */;
+import Form2 from "Form" /* 8575 */;
+import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 12601 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -130,12 +130,12 @@ class InAppNotificationSettingsScreen extends PureComponent {
     const FormHint = Form2.FormHint;
     intl3 = intl4.intl;
     items[2] = unpackModuleId(FormHint, obj4);
-    return closure_12(Form, obj);
+    return authStore2(Form, obj);
   }
 }
 const prototype = InAppNotificationSettingsScreen.prototype;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedInAppNotificationSettingsScreen(channel) {
   let first;
   let tmp6;
   const obj = channel(576);
@@ -179,7 +179,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[4] = stateFromStores;
   cResult[5] = tmp9;
   tmp8 = tmp9;
-}) : ((channel) => {
+}) : (function ConnectedInAppNotificationSettingsScreen(channel) {
   channel = channel.channel;
   const obj = channel(504);
   const items = [UserGuildSettingsStore];
@@ -199,7 +199,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function InAppNotificationSettingsModal(arg0) {
   let channelId;
   let closure_0;
   let obj4;
@@ -255,7 +255,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[2] = obj3;
   tmp4 = obj3;
   tmpResult = require("NavigatorHeader");
-}) : ((channelId) => {
+}) : (function InAppNotificationSettingsModal(channelId) {
   channelId = channelId.channelId;
   const onClose = channelId.onClose;
   const items = [channelId, onClose];
@@ -290,7 +290,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     obj3 = NavigatorHeader2;
     return obj;
   }, items);
-  return closure_11(channelId(6496).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
+  return closure_11(channelId(6688).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
 }));
 let result = size.fileFinishedImporting("components_native/InAppNotificationSettingsModal.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 9166
-// Function ID: 9167
+// Module ID: 8522
+// Function ID: 8523
 // Name: useEventSchedule
-// Dependencies: [7037, 558, 576, 9163, 9167, 504, 2]
+// Dependencies: [6054, 558, 576, 8516, 8521, 504, 2]
 // Exports: getEventSchedule
 
-// Module 9166 (useEventSchedule)
+// Module 8522 (useEventSchedule)
 import react from "react" /* 576 */;
-import ScheduleUtils from "ScheduleUtils" /* 9163 */;
-import useEventException from "useEventException" /* 9167 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
+import ScheduleUtils from "ScheduleUtils" /* 8516 */;
+import useEventException from "useEventException" /* 8521 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const useEventExceptionDefault = useEventException;
 let _require;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id, arg1) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEventSchedule(id, arg1) {
   let date;
   let date1;
   let endDate;
@@ -83,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id, arg1) 
   cResult[1] = arg1;
   cResult[2] = nextRecurrenceIdInEvent;
   tmp4 = nextRecurrenceIdInEvent;
-}) : (function(recurrence_rule, nextRecurrenceIdInEvent) {
+}) : (function useEventSchedule(recurrence_rule, nextRecurrenceIdInEvent) {
   let date1;
   let endDate;
   let startDate;
@@ -120,7 +120,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(id, arg1) 
   obj4 = obj5;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEventScheduleById(arg0, arg1) {
   let closure_0;
   let date;
   let date1;
@@ -218,7 +218,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1
   cResult[4] = arg1;
   cResult[5] = nextRecurrenceIdInEvent;
   tmp8 = nextRecurrenceIdInEvent;
-}) : (function(arg0, nextRecurrenceIdInEvent) {
+}) : (function useEventScheduleById(arg0, nextRecurrenceIdInEvent) {
   let closure_0;
   let date;
   let date1;

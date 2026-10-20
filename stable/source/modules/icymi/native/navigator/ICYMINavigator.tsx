@@ -1,11 +1,11 @@
-// Module ID: 16391
-// Function ID: 16392
+// Module ID: 16915
+// Function ID: 16916
 // Name: ICYMINavigator
-// Dependencies: [21, 7556, 558, 576, 6496, 16392, 16343, 2]
+// Dependencies: [21, 9340, 558, 576, 6688, 16916, 16866, 2]
 
-// Module 16391 (ICYMINavigator)
+// Module 16915 (ICYMINavigator)
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 7556 */;
+import NativeStackView from "NativeStackView" /* 9340 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let c2;
 let c3;
 ({ jsx: c2, jsxs: c3 } = Fragment);
 let closure_4 = NativeStackView.createNativeStackNavigator();
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMINavigator() {
   let accessibilityNativeStackOptions;
   let items;
   let tmp12;
@@ -25,7 +25,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp8;
   let obj = accessibilityNativeStackOptions(576);
   const cResult = obj.c(6);
-  const obj2 = accessibilityNativeStackOptions(6496);
+  const obj2 = accessibilityNativeStackOptions(6688);
   accessibilityNativeStackOptions = obj2.useAccessibilityNativeStackOptions();
   if (cResult[0] !== accessibilityNativeStackOptions) {
     const fn = function n() {
@@ -76,7 +76,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp12 = cResult[5];
   }
   return tmp12;
-}) : (() => {
+}) : (function ICYMINavigator() {
   let closure_0;
   let items;
   let obj = require("Navigator");

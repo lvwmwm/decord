@@ -1,27 +1,27 @@
-// Module ID: 10598
-// Function ID: 10599
+// Module ID: 10224
+// Function ID: 10225
 // Name: UsersFastList
-// Dependencies: [32, 19, 17, 10599, 21, 4890, 587, 558, 576, 10600, 5993, 7507, 4612, 1188, 4886, 5909, 5911, 1618, 6546, 10601, 10602, 10647, 10650, 6552, 2]
+// Dependencies: [32, 19, 17, 10225, 21, 5092, 587, 558, 576, 10226, 6180, 9302, 4850, 1200, 5088, 6185, 10227, 1631, 6738, 10228, 10229, 10280, 10283, 6744, 2]
 
-// Module 10598 (UsersFastList)
+// Module 10224 (UsersFastList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Pressables from "Pressables" /* 5909 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5911 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 7507 */;
-import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 10600 */;
-import UserRowDefault from "UserRow" /* 10602 */;
-import GroupDMRowDefault from "GroupDMRow" /* 10647 */;
-import ChannelRowDefault from "ChannelRow" /* 10650 */;
+import native from "native" /* 1200 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Pressables from "Pressables" /* 6185 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9302 */;
+import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 10226 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10227 */;
+import UserRowDefault from "UserRow" /* 10229 */;
+import GroupDMRowDefault from "GroupDMRow" /* 10280 */;
+import ChannelRowDefault from "ChannelRow" /* 10283 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10599 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10225 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj6;
 let obj7;
 let rect;
 let tmp;
-const TableRow2 = tmp(5993);
+const TableRow2 = tmp(6180);
 let react = react_mod;
 let View = react_native.View;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
@@ -57,7 +57,7 @@ obj7 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX
 rect = { position: "absolute", left: nativeDefault.space.PX_4 + nativeDefault.space.PX_4 / 2, top: 5 };
 let closure_10 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Placeholder(arg0) {
   let end;
   let first;
   let items;
@@ -68,7 +68,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj2 = useFastestListTableRowPlaceholderConfig;
   const fastestListTableRowPlaceholderStyles = obj2.useFastestListTableRowPlaceholderStyles();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n() {
+    const fn = function o() {
       const obj = { width: `${10 + 80 * Math.random() | 0}%` };
       return obj;
     };
@@ -120,7 +120,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = first1;
   cResult[3] = tmp8;
   tmp7 = tmp8;
-}) : ((arg0) => {
+}) : (function Placeholder(arg0) {
   let end;
   let items;
   let obj3;
@@ -143,7 +143,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportDefault(TableRow, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlaceholderSection() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -155,7 +155,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => metroImportDefault(View, {}));
+}) : (function PlaceholderSection() {
+  return metroImportDefault(View, {});
+});
 const __initData = { code: "function UsersFastListTsx1(){const{scrollPosValue,stickyAt}=this.__closure;var _scrollPosValue;const scrollPos=(_scrollPosValue=scrollPosValue)===null||_scrollPosValue===void 0?void 0:_scrollPosValue.get();if(scrollPos==null||stickyAt==null){return false;}return scrollPos>=stickyAt;}" };
 const __initData2 = { code: "function UsersFastListTsx2(){const{isSticky,styles}=this.__closure;return{backgroundColor:isSticky.get()?styles.stickyHeader.backgroundColor:\"transparent\"};}" };
 const __initData3 = { code: "function UsersFastListTsx3(){const{isSticky}=this.__closure;return{opacity:isSticky.get()?1:0};}" };
@@ -163,7 +165,7 @@ const __initData4 = { code: "function UsersFastListTsx4(){const{scrollPosValue,s
 const __initData5 = { code: "function UsersFastListTsx5(){const{isSticky,styles}=this.__closure;return{backgroundColor:isSticky.get()?styles.stickyHeader.backgroundColor:'transparent'};}" };
 const __initData6 = { code: "function UsersFastListTsx6(){const{isSticky}=this.__closure;return{opacity:isSticky.get()?1:0};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((stickyAt) => {
+let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UserSectionInner(stickyAt) {
   let action;
   let actionTitle;
   let badge;
@@ -206,7 +208,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
         tmp10 = cResult[5];
       }
       const tmpResult4 = ReanimatedRexport;
-      class E {
+      class V {
         constructor() {
           obj = scrollPosValue;
           value = undefined;
@@ -226,12 +228,12 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
         }
       }
       const obj3 = { scrollPosValue, stickyAt };
-      E.__closure = obj3;
-      E.__workletHash = 15448160320615;
-      E.__initData = __initData;
-      const derivedValue = tmpResult4.useDerivedValue(E);
+      V.__closure = obj3;
+      V.__workletHash = 15448160320615;
+      V.__initData = __initData;
+      const derivedValue = tmpResult4.useDerivedValue(V);
       const tmpResult5 = ReanimatedRexport;
-      class O {
+      class E {
         constructor() {
           backgroundColor = "transparent";
           if (closure_3.get()) {
@@ -242,17 +244,17 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
         }
       }
       const obj4 = { isSticky: derivedValue, styles: tmp4 };
-      O.__closure = obj4;
-      O.__workletHash = 11315917458152;
-      O.__initData = __initData2;
-      const animatedStyle = tmpResult5.useAnimatedStyle(O);
+      E.__closure = obj4;
+      E.__workletHash = 11315917458152;
+      E.__initData = __initData2;
+      const animatedStyle = tmpResult5.useAnimatedStyle(E);
       if (cResult[6] === animatedStyle) {
         let tmp15;
         if (cResult[7] === tmp4.sectionHeader) {
           tmp15 = cResult[8];
         }
         const tmpResult6 = ReanimatedRexport;
-        class M {
+        class F {
           constructor() {
             opacity = 0;
             if (closure_3.get()) {
@@ -262,15 +264,15 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
           }
         }
         const obj5 = { isSticky: derivedValue };
-        M.__closure = obj5;
-        M.__workletHash = 13270974904859;
-        M.__initData = __initData3;
-        const animatedStyle1 = tmpResult6.useAnimatedStyle(M);
+        F.__closure = obj5;
+        F.__workletHash = 13270974904859;
+        F.__initData = __initData3;
+        const animatedStyle1 = tmpResult6.useAnimatedStyle(F);
         if (null == title) {
           if (null == actionTitle) {
             let tmp43;
             if (cResult[9] !== tmp4.emptySection) {
-              class M {
+              class F {
                 constructor() {
                   opacity = 0;
                   if (closure_3.get()) {
@@ -342,7 +344,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
                                   }
                                 }
                               }
-                              class M {
+                              class F {
                                 constructor() {
                                   opacity = 0;
                                   if (closure_3.get()) {
@@ -353,7 +355,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
                               }
                               if (!disableStickySections) {
                                 const tmp38 = metroImportAll;
-                                class M {
+                                class F {
                                   constructor() {
                                     opacity = 0;
                                     if (closure_3.get()) {
@@ -367,7 +369,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
                                 View = ReanimatedRexportDefault.View;
                                 if (!disableThemedGradient) {
                                   const obj6 = { style: null, children: metroImportDefault(ThemedGradientDefault, { absolute: true, tall: true, wide: true, mix: true }) };
-                                  class M {
+                                  class F {
                                     constructor() {
                                       opacity = 0;
                                       if (closure_3.get()) {
@@ -376,7 +378,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
                                       return { opacity };
                                     }
                                   }
-                                  const View2 = tmp39(4612).View;
+                                  const View2 = tmp39(4850).View;
                                   tmp41 = metroImportDefault(View2, obj6);
                                 }
                                 const items = [tmp41, tmp33];
@@ -388,7 +390,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
                               cResult[36] = disableThemedGradient;
                               cResult[37] = tmp33;
                               cResult[38] = tmp15;
-                              class O {
+                              class E {
                                 constructor() {
                                   backgroundColor = "transparent";
                                   if (closure_3.get()) {
@@ -402,7 +404,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
                               tmp36 = tmp38Result;
                             }
                           }
-                          class M {
+                          class F {
                             constructor() {
                               opacity = 0;
                               if (closure_3.get()) {
@@ -415,7 +417,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
                           items1 = [tmp27, tmp30];
                           const tmp35 = metroImportAll(View, obj7);
                           cResult[30] = tmp10;
-                          class O {
+                          class E {
                             constructor() {
                               backgroundColor = "transparent";
                               if (closure_3.get()) {
@@ -429,7 +431,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
                           cResult[33] = tmp35;
                           tmp33 = tmp35;
                         }
-                        class M {
+                        class F {
                           constructor() {
                             opacity = 0;
                             if (closure_3.get()) {
@@ -440,7 +442,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
                         }
                         if (null != actionTitle) {
                           const obj8 = { onPress: null, children: metroImportDefault(Text_Text.Text, obj9) };
-                          class M {
+                          class F {
                             constructor() {
                               opacity = 0;
                               if (closure_3.get()) {
@@ -449,7 +451,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
                               return { opacity };
                             }
                           }
-                          const PressableOpacity = tmp(5909).PressableOpacity;
+                          const PressableOpacity = tmp(6185).PressableOpacity;
                           obj9 = { variant: "text-sm/semibold", color: "text-brand", children: actionTitle };
                           tmp31 = metroImportDefault(PressableOpacity, obj8);
                         }
@@ -459,7 +461,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
                         tmp30 = tmp31;
                       }
                     }
-                    class M {
+                    class F {
                       constructor() {
                         opacity = 0;
                         if (closure_3.get()) {
@@ -470,7 +472,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
                     }
                     if (null != onTitlePress) {
                       const obj10 = { accessibilityRole: "button", style: null, onPress: onTitlePress, children: tmp22 };
-                      class M {
+                      class F {
                         constructor() {
                           opacity = 0;
                           if (closure_3.get()) {
@@ -488,7 +490,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
                     tmp27 = tmp28;
                   }
                 }
-                class M {
+                class F {
                   constructor() {
                     opacity = 0;
                     if (closure_3.get()) {
@@ -498,7 +500,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
                   }
                 }
                 if (null != titleLeading) {
-                  class M {
+                  class F {
                     constructor() {
                       opacity = 0;
                       if (closure_3.get()) {
@@ -519,7 +521,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
                 tmp22 = tmp23;
               }
             }
-            class M {
+            class F {
               constructor() {
                 opacity = 0;
                 if (closure_3.get()) {
@@ -533,7 +535,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
             const tmp21 = metroImportAll(Text_Text.Text, obj11);
             cResult[15] = tmp18;
             cResult[16] = tmp5;
-            class O {
+            class E {
               constructor() {
                 backgroundColor = "transparent";
                 if (closure_3.get()) {
@@ -548,7 +550,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
             tmp20 = tmp21;
           }
         }
-        class O {
+        class E {
           constructor() {
             backgroundColor = "transparent";
             if (closure_3.get()) {
@@ -577,7 +579,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
   cResult[4] = clientThemesOverride;
   cResult[5] = items5;
   tmp10 = items5;
-}) : ((stickyAt) => {
+}) : (function UserSectionInner(stickyAt) {
   let action;
   let actionTitle;
   let badge;
@@ -676,7 +678,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
   const obj6 = { maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-md/medium", color: "text-subtle", style: memo, children: items3 };
   items3 = [title, ];
   let tmp12 = null;
-  const Text = tmp3(4886).Text;
+  const Text = tmp3(5088).Text;
   if (null != badge) {
     const obj7 = { style: tmp.badgeWrapper, children: metroImportDefault(native.Badge, obj8) };
     obj8 = { style: tmp.badge, value: badge };
@@ -693,7 +695,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
   let tmp18 = tmp11Result4;
   if (null != onTitlePress) {
     const obj10 = { accessibilityRole: "button", style: tmp.titlePressable, onPress: onTitlePress, children: tmp11Result4 };
-    tmp18 = metroImportDefault(tmp3(5909).PressableOpacity, obj10);
+    tmp18 = metroImportDefault(tmp3(6185).PressableOpacity, obj10);
   }
   const obj11 = { style: memo1, children: items5 };
   items5 = [tmp18, ];
@@ -701,7 +703,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
   const tmp20 = View;
   if (null != actionTitle) {
     const obj12 = { onPress: action, children: metroImportDefault(Text_Text.Text, obj13) };
-    const PressableOpacity = tmp3(5909).PressableOpacity;
+    const PressableOpacity = tmp3(6185).PressableOpacity;
     obj13 = { variant: "text-sm/semibold", color: "text-brand", children: actionTitle };
     tmp21 = metroImportDefault(PressableOpacity, obj12);
   }
@@ -714,7 +716,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
     View = ReanimatedRexportDefault.View;
     if (!disableThemedGradient) {
       const obj15 = { style: animatedStyle1, children: metroImportDefault(ThemedGradientDefault, { absolute: true, tall: true, wide: true, mix: true }) };
-      const View2 = tmp25(4612).View;
+      const View2 = tmp25(4850).View;
       tmp26 = metroImportDefault(View2, obj15);
     }
     items6 = [tmp26, tmp11Result5];
@@ -723,7 +725,7 @@ let closure_19 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sti
   return tmp11Result6;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((getSectionProps, arg1) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UsersFastListInner(getSectionProps) {
   let disableBackgroundOverlay;
   let disableBottomSafeZone;
   let disableStickySections;
@@ -739,6 +741,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   let onContentLengthChange;
   let onLayout;
   let onScroll;
+  let ref;
   let renderListHeader;
   let sections;
   let obj = getItemProps(disableThemedGradient[8]);
@@ -747,7 +750,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   ({ sections, getItemProps } = getSectionProps);
   getSectionProps = getSectionProps.getSectionProps;
   ({ getItemSize, keyExtractor, insetStart, insetEnd, disableBottomSafeZone, disableStickySections, disableThemedGradient } = getSectionProps);
-  ({ disableBackgroundOverlay, inActionSheet, listHeaderSize, onContentLengthChange, onScroll, onLayout, renderListHeader, listStyleOverride } = getSectionProps);
+  ({ disableBackgroundOverlay, inActionSheet, listHeaderSize, onContentLengthChange, onScroll, onLayout, renderListHeader, listStyleOverride, ref } = getSectionProps);
   disableStickySections = tmp5;
   const tmp4 = undefined !== disableBottomSafeZone && disableBottomSafeZone;
   const tmp6 = closure_10();
@@ -764,8 +767,8 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     if (cResult[1] === disableThemedGradient) {
       if (cResult[4] !== getItemProps) {
         class X {
-          constructor(disableThemedGradient, arg1) {
-            const element = getItemProps(disableThemedGradient, arg1);
+          constructor(arg0, arg1) {
+            const element = getItemProps(arg0, arg1);
             let type;
             if (element != null) {
               type = element.type;
@@ -821,8 +824,8 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
         cResult[5] = X;
       } else {
         class X {
-          constructor(disableThemedGradient, arg1) {
-            const element = getItemProps(disableThemedGradient, arg1);
+          constructor(arg0, arg1) {
+            const element = getItemProps(arg0, arg1);
             let type;
             if (element != null) {
               type = element.type;
@@ -857,8 +860,8 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
       }
       if (cResult[6] === getSectionProps) {
         class X {
-          constructor(disableThemedGradient, arg1) {
-            const element = getItemProps(disableThemedGradient, arg1);
+          constructor(arg0, arg1) {
+            const element = getItemProps(arg0, arg1);
             let type;
             if (element != null) {
               type = element.type;
@@ -892,8 +895,8 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
         }
         if (disableBackgroundOverlay) {
           class X {
-            constructor(disableThemedGradient, arg1) {
-              const element = getItemProps(disableThemedGradient, arg1);
+            constructor(arg0, arg1) {
+              const element = getItemProps(arg0, arg1);
               let type;
               if (element != null) {
                 type = element.type;
@@ -928,8 +931,8 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
         }
         if (cResult[9] === listStyleOverride) {
           class X {
-            constructor(disableThemedGradient, arg1) {
-              const element = getItemProps(disableThemedGradient, arg1);
+            constructor(arg0, arg1) {
+              const element = getItemProps(arg0, arg1);
               let type;
               if (element != null) {
                 type = element.type;
@@ -1016,7 +1019,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
       let tmp13 = K;
     }
   }
-  const fn = function l(arg0, arg1, scrollPosValue, stickyAt) {
+  const fn = function s(arg0, arg1, scrollPosValue, stickyAt) {
     const element = getSectionProps(arg0);
     let type;
     if (element != null) {
@@ -1036,7 +1039,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   cResult[1] = disableThemedGradient;
   cResult[2] = getSectionProps;
   cResult[3] = fn;
-}) : ((getItemProps, ref) => {
+}) : (function UsersFastListInner(getItemProps) {
   let getItemSize;
   let inActionSheet;
   let insetEnd;
@@ -1046,6 +1049,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   let onContentLengthChange;
   let onLayout;
   let onScroll;
+  let ref;
   let renderListHeader;
   let sections;
   getItemProps = getItemProps.getItemProps;
@@ -1068,7 +1072,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   const listStyleOverride = getItemProps.listStyleOverride;
   let closure_7;
   let clientThemesOverride;
-  ({ inActionSheet, listHeaderSize, onContentLengthChange, onScroll, onLayout, renderListHeader } = getItemProps);
+  ({ inActionSheet, listHeaderSize, onContentLengthChange, onScroll, onLayout, renderListHeader, ref } = getItemProps);
   const tmp = closure_10();
   const list = tmp;
   let num = 0;
@@ -1100,8 +1104,8 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     }
   }, items);
   const items2 = [getSectionProps, tmp6];
-  const callback1 = disableBackgroundOverlay.useCallback((disableThemedGradient, arg1) => {
-    const element = getItemProps(disableThemedGradient, arg1);
+  const callback1 = disableBackgroundOverlay.useCallback((arg0, arg1) => {
+    const element = getItemProps(arg0, arg1);
     let type;
     if (element != null) {
       type = element.type;
@@ -1163,7 +1167,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     getItemSize = tmp5;
   }
   return tmp13(tmp2Result, obj2);
-}));
+});
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/UsersFastList.tsx");
 
-export const UsersFastList = forwardRefResult;
+export const UsersFastList = tmp5;

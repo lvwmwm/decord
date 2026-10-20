@@ -1,17 +1,17 @@
-// Module ID: 15022
-// Function ID: 15023
+// Module ID: 15502
+// Function ID: 15503
 // Name: GuildRoleSubscriptionsSetting
-// Dependencies: [7634, 1085, 15023, 558, 15024, 11129, 1126, 15025, 15027, 2]
+// Dependencies: [7988, 1085, 15503, 558, 15504, 10664, 1126, 15505, 15507, 2]
 
-// Module 15022 (GuildRoleSubscriptionsSetting)
+// Module 15502 (GuildRoleSubscriptionsSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15023 */;
-import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 15024 */;
-import TicketIcon from "TicketIcon" /* 15025 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15503 */;
+import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 15504 */;
+import TicketIcon from "TicketIcon" /* 15505 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,9 @@ const obj = {
   },
   parent: MobileUserSettings.PREMIUM,
   IconComponent: TicketIcon.TicketIcon,
-  usePredicate: () => useUserRoleSubscriptionRelationshipDefault() === constants.SUBSCRIBED,
+  usePredicate: function useHasGuildRoleSubscriptionsSetting() {
+    return useUserRoleSubscriptionRelationshipDefault() === constants.SUBSCRIBED;
+  },
   screen: {
     route: UserSettingsSections.GUILD_ROLE_SUBSCRIPTIONS,
     getComponent() {

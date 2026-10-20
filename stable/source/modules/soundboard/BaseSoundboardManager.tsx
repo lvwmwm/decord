@@ -1,13 +1,13 @@
-// Module ID: 14381
-// Function ID: 14382
+// Module ID: 14813
+// Function ID: 14814
 // Name: BaseSoundboardManager
-// Dependencies: [502, 1999, 1989, 584, 2]
+// Dependencies: [502, 2012, 2002, 584, 2]
 
-// Module 14381 (BaseSoundboardManager)
+// Module 14813 (BaseSoundboardManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import LifecycleManager from "LifecycleManager" /* 1989 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

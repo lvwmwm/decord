@@ -1,15 +1,15 @@
-// Module ID: 18064
-// Function ID: 18065
+// Module ID: 18694
+// Function ID: 18695
 // Name: SafetyFlowsTaskContext
 // Dependencies: [19, 558, 2]
 
-// Module 18064 (SafetyFlowsTaskContext)
+// Module 18694 (SafetyFlowsTaskContext)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let context = react.createContext(null);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyFlowTask() {
   context = react.useContext(context);
   if (null == context) {
     const _Error = Error;
@@ -20,7 +20,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function() {
   } else {
     return context;
   }
-}) : (function() {
+}) : (function useSafetyFlowTask() {
   context = react.useContext(context);
   if (null == context) {
     const _Error = Error;

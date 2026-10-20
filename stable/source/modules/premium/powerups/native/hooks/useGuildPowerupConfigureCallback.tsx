@@ -1,15 +1,15 @@
-// Module ID: 12203
-// Function ID: 12204
+// Module ID: 12287
+// Function ID: 12288
 // Name: useGuildPowerupConfigureCallback
-// Dependencies: [19, 1085, 558, 576, 4854, 12174, 4771, 9247, 9250, 38, 2]
+// Dependencies: [19, 1085, 558, 576, 5056, 12258, 5011, 8633, 8636, 38, 2]
 
-// Module 12203 (useGuildPowerupConfigureCallback)
+// Module 12287 (useGuildPowerupConfigureCallback)
 import _modDef38 from "module_38" /* 38 */;
-import Powerups from "Powerups" /* 4771 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9250 */;
-import openGuildPowerupsBottomSheet from "openGuildPowerupsBottomSheet" /* 12174 */;
+import Powerups from "Powerups" /* 5011 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8633 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8636 */;
+import openGuildPowerupsBottomSheet from "openGuildPowerupsBottomSheet" /* 12258 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -21,7 +21,7 @@ let _require;
 let closure_4;
 let hasOwnProperty;
 ({ GuildSettingsSections: closure_4, AnalyticsSections: hasOwnProperty } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, skuId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowerupConfigureCallback(arg0, skuId) {
   let closure_0;
   _require = arg0;
   let obj = require("react");
@@ -58,7 +58,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, skuId) => {
   cResult[1] = skuId.skuId;
   cResult[2] = fn;
   tmp2 = fn;
-}) : ((arg0, skuId) => {
+}) : (function useGuildPowerupConfigureCallback(arg0, skuId) {
   let closure_0 = arg0;
   const items = [arg0, skuId.skuId];
   return react.useCallback(() => {

@@ -1,18 +1,18 @@
-// Module ID: 5912
-// Function ID: 5913
+// Module ID: 8322
+// Function ID: 8323
 // Name: useIsScreenLandscape
-// Dependencies: [19, 1485, 558, 576, 1487, 2]
+// Dependencies: [19, 1498, 558, 576, 1500, 2]
 // Exports: getIsScreenLandscape
 
-// Module 5912 (useIsScreenLandscape)
+// Module 8322 (useIsScreenLandscape)
 import react2 from "react" /* 576 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1487 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1500 */;
 import react from "react" /* 19 */;
-import DimensionsStore from "DimensionsStore" /* 1485 */;
+import DimensionsStore from "DimensionsStore" /* 1498 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsScreenLandscape() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return DimensionsStore(tmp3);
-}) : (() => {
+}) : (function useIsScreenLandscape() {
   const obj = AppEntryKeyContext;
   const appEntryKey = obj.useAppEntryKey();
   const items = [appEntryKey];

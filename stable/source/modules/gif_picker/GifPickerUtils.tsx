@@ -1,10 +1,10 @@
-// Module ID: 10096
-// Function ID: 10097
+// Module ID: 9738
+// Function ID: 9739
 // Name: GifPickerUtils
 // Dependencies: [2]
 // Exports: filterFavoriteGIFsByQuery
 
-// Module 10096 (GifPickerUtils)
+// Module 9738 (GifPickerUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/gif_picker/GifPickerUtils.tsx");

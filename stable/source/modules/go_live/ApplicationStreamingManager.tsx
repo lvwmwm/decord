@@ -1,26 +1,27 @@
-// Module ID: 18049
-// Function ID: 18050
+// Module ID: 18679
+// Function ID: 18680
 // Name: go_live/ApplicationStreamingManager
-// Dependencies: [4912, 502, 2051, 4780, 4940, 2103, 4929, 1377, 4932, 1085, 12, 5032, 1102, 4942, 2046, 584, 6613, 9095, 18029, 2]
+// Dependencies: [5897, 502, 2065, 5020, 5211, 2116, 7424, 1390, 5898, 1085, 12, 7439, 1102, 584, 5900, 2060, 6808, 5289, 18659, 2]
 
-// Module 18049 (go_live/ApplicationStreamingManager)
+// Module 18679 (go_live/ApplicationStreamingManager)
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4942 */;
-import StreamActionCreators from "StreamActionCreators" /* 5032 */;
-import AVError from "AVError" /* 9095 */;
-import AVErrorContext from "AVErrorContext" /* 18029 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
+import AVError from "AVError" /* 5289 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
+import StreamActionCreators from "StreamActionCreators" /* 7439 */;
+import AVErrorContext from "AVErrorContext" /* 18659 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4780 */;
-import RTCRegionStore from "RTCRegionStore" /* 4940 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4929 */;
-import UserStore from "UserStore" /* 1377 */;
-import Constants_mod from "Constants" /* 4932 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5020 */;
+import RTCRegionStore from "RTCRegionStore" /* 5211 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7424 */;
+import UserStore from "UserStore" /* 1390 */;
+import Constants_mod from "Constants" /* 5898 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import module_12 from "module_12" /* 12 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 let allActiveStreamKeys, channel, memberCount;
@@ -30,7 +31,7 @@ let STREAM_NOTIFY_GUILD_MAX_SIZE;
 let c10;
 let tmp;
 let unpackModuleId;
-const Timers = tmp(2046);
+const Timers = tmp(2060);
 function updateRegion(encodeStreamKeyResult, preferredRegion) {
   if (preferredRegion == null) {
     preferredRegion = RTCRegionStore.getPreferredRegion();
@@ -55,7 +56,7 @@ let c17 = null;
 const set = new Set();
 class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
   constructor() {
-    const f133004 = (item) => {
+    const f135694 = (item) => {
       if (!streamMarkedFull.isStreamMarkedFull(item)) {
         set.delete(item);
       }
@@ -68,7 +69,7 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
       const allowMultiple = streamKey.allowMultiple;
       let tmp = streamKey;
       let tmp2 = closure_2;
-      let obj = streamKey(closure_2[13]);
+      let obj = streamKey(closure_2[14]);
       channel = channel.getChannel(obj.decodeStreamKey(streamKey).channelId);
       if (channel != null) {
         isGuildStageVoiceResult = channel.isGuildStageVoice();
@@ -80,11 +81,11 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
         if (timeout == null) {
           const self = this;
           const self2 = this;
-          timeout = new tmp(tmp2[14]).Timeout();
+          timeout = new tmp(tmp2[15]).Timeout();
         }
         tmp4[streamKey] = timeout;
         timeout.start(isGuildStageVoiceResult ? closure_16 : closure_15, () => {
-          const obj = closure_2_1(closure_2_2[15]);
+          const obj = closure_2_1(closure_2_2[13]);
           const obj2 = { type: "STREAM_TIMED_OUT", streamKey: encodeStreamKeyResult };
           obj.dispatch(obj2);
         });
@@ -136,7 +137,7 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
         }
         tmp5[encodeStreamKeyResult] = timeout;
         timeout.start(isGuildStageVoiceResult ? closure_16 : closure_15, () => {
-          const obj = closure_2_1(closure_2_2[15]);
+          const obj = closure_2_1(closure_2_2[13]);
           const obj2 = { type: "STREAM_TIMED_OUT", streamKey: encodeStreamKeyResult };
           obj.dispatch(obj2);
         });
@@ -150,19 +151,35 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
         closure_1_13[streamKey].stop();
       }
       delete tmp[streamKey];
-      const item = set.forEach(f133004);
+      const item = set.forEach(f135694);
       const obj2 = StreamKeyUtils;
       const decodeStreamKeyResult = obj2.decodeStreamKey(streamKey);
       memberCount = memberCount.getMemberCount(decodeStreamKeyResult.guildId);
     };
     applyArgumentsResult.handleStreamUpdate = function handleStreamUpdate(streamKey) {
+      let obj4;
       streamKey = streamKey.streamKey;
+      const paused = streamKey.paused;
       const tmp = closure_1_13;
       if (closure_1_13[streamKey] != null) {
         closure_1_13[streamKey].stop();
       }
       delete tmp[streamKey];
-      const item = set.forEach(f133004);
+      const item = set.forEach(f135694);
+      if (!paused) {
+        const rTCConnection = StreamRTCConnectionStore.getRTCConnection(streamKey);
+        let mediaEngineConnectionId;
+        if (rTCConnection != null) {
+          mediaEngineConnectionId = rTCConnection.getMediaEngineConnectionId();
+        }
+        if (null != mediaEngineConnectionId) {
+          const obj2 = { type: "MEDIA_ENGINE_CONNECTION_USER_STATS_RESET", mediaEngineConnectionId, userId: obj4.decodeStreamKey(streamKey).ownerId };
+          const dispatch = DispatcherDefault.dispatch;
+          DispatcherDefault;
+          obj4 = StreamKeyUtils;
+          dispatch(obj2);
+        }
+      }
     };
     applyArgumentsResult.handleStreamDelete = function handleStreamDelete(streamKey) {
       streamKey = streamKey.streamKey;
@@ -204,13 +221,13 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
       channelId = channelId.channelId;
       if (null != channelId) {
         c17 = null;
-        const item = set.forEach(f133004);
+        const item = set.forEach(f135694);
         const allApplicationStreamsForChannel = authStore.getAllApplicationStreamsForChannel(channelId);
         const found = allApplicationStreamsForChannel.find((ownerId) => {
           let tmp = ownerId.ownerId !== id.getId();
           if (tmp) {
             isStreamMarkedFull = isStreamMarkedFull.isStreamMarkedFull;
-            const obj = closure_1_0(closure_1_2[13]);
+            const obj = closure_1_0(closure_1_2[14]);
             tmp = !isStreamMarkedFull(obj.encodeStreamKey(ownerId));
           }
           return tmp;
@@ -263,7 +280,7 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
             tmp3 = set.size > 0;
           }
           if (tmp3) {
-            item = set.forEach(f133004);
+            item = set.forEach(f135694);
           }
           if (null != channelId) {
             if (selfStream) {
@@ -311,7 +328,7 @@ class BaseApplicationStreamingManager extends AutomaticLifecycleManager {
                     if (timeout == null) {
                       const self = this;
                       const self2 = this;
-                      timeout = new tmp19(tmp20[14]).Timeout();
+                      timeout = new tmp19(tmp20[15]).Timeout();
                     }
                     timeout.start(closure_2_14, () => {
                       const obj = closure_2_0(closure_2_2[11]);

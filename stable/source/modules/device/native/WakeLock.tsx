@@ -1,10 +1,10 @@
-// Module ID: 9145
-// Function ID: 9146
+// Module ID: 10960
+// Function ID: 10961
 // Name: WakeLock
-// Dependencies: [19, 558, 576, 9146, 2]
+// Dependencies: [19, 558, 576, 10961, 2]
 
-// Module 9145 (WakeLock)
-import react_nativeDefault from "react-native" /* 9146 */;
+// Module 10960 (WakeLock)
+import react_nativeDefault from "react-native" /* 10961 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWakeLock(arg0) {
   let closure_0;
   let tmp2;
   let tmp3;
@@ -21,7 +21,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = require("react");
   const cResult = obj.c(3);
   if (cResult[0] !== arg0) {
-    const fn = function n() {
+    const fn = function t() {
       let obj = react_nativeDefault;
       const lock = obj.requestLock(closure_0);
       return () => {
@@ -40,7 +40,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = cResult[2];
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : ((arg0) => {
+}) : (function useWakeLock(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   const effect = react.useEffect(() => {
@@ -54,10 +54,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_4 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((wakeLockKey) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WakeLock(wakeLockKey) {
   closure_4(wakeLockKey.wakeLockKey);
   return null;
-}) : ((wakeLockKey) => {
+}) : (function WakeLock(wakeLockKey) {
   closure_4(wakeLockKey.wakeLockKey);
   return null;
 });

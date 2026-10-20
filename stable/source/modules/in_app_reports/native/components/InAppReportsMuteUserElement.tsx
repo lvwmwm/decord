@@ -1,29 +1,29 @@
-// Module ID: 12717
-// Function ID: 12718
+// Module ID: 13574
+// Function ID: 13575
 // Name: InAppReportsMuteUserElement
-// Dependencies: [32, 19, 2051, 1085, 1095, 21, 558, 576, 504, 5042, 9800, 5070, 8080, 1126, 9813, 12713, 2]
+// Dependencies: [32, 19, 2065, 1085, 1095, 21, 558, 576, 504, 5409, 10398, 5107, 7026, 1126, 10347, 13571, 2]
 
-// Module 12717 (InAppReportsMuteUserElement)
+// Module 13574 (InAppReportsMuteUserElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8080 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 9800 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7026 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 10398 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore_mod from "ChannelStore" /* 2051 */;
+import ChannelStore_mod from "ChannelStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId, obj1, obj5, obj6, showMuteSuccessToastResult, trackWithMetadataResult, user;
+let channelId, obj1, obj5, obj6, showMuteSuccessToastResult, trackWithMetadataResult;
 
 let ChannelStore = ChannelStore_mod;
 const AnalyticEvents = Constants.AnalyticEvents;
 const MuteUntilSeconds = UserSettingsConstants.MuteUntilSeconds;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MuteUserElement(user) {
   let obj3;
   let reportId;
   let tmp10;
@@ -138,7 +138,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           }
         }
       }
-      class E {
+      class R {
         constructor() {
           tmp = closure_4(true);
           obj = closure_1(closure_2[11]);
@@ -156,7 +156,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       cResult[13] = tmp4;
       cResult[14] = reportId;
       cResult[15] = user.id;
-      cResult[16] = E;
+      cResult[16] = R;
     }
   }
   const getName = channelId(reportId[9]).getName;
@@ -194,7 +194,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[7] = undefined;
   cResult[8] = user;
   cResult[9] = name;
-}) : ((user) => {
+}) : (function MuteUserElement(user) {
   let closure_5;
   user = user.user;
   channelId = user.channelId;

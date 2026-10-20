@@ -1,13 +1,13 @@
-// Module ID: 17559
-// Function ID: 17560
+// Module ID: 18175
+// Function ID: 18176
 // Name: setupLoadFromMessageManagerHandlers
-// Dependencies: [6783, 2103, 1102, 2]
+// Dependencies: [6061, 2116, 1102, 2]
 // Exports: default
 
-// Module 17559 (setupLoadFromMessageManagerHandlers)
+// Module 18175 (setupLoadFromMessageManagerHandlers)
 import DurationsDefault from "Durations" /* 1102 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6783 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6061 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import size from "module_2" /* 2 */;
 
 let map, map1, set;
@@ -140,7 +140,7 @@ export default function setupLoadFromMessageManagerHandlers(actions, arg1) {
   map = new Map();
   map1 = new Map();
   let obj2 = {
-    POST_CONNECTION_OPEN() {
+    POST_CONNECTION_OPEN: function handleConnectionOpen() {
       set.clear();
       const item = map1.forEach((item) => clearTimeout(item));
       map1.clear();
@@ -150,14 +150,14 @@ export default function setupLoadFromMessageManagerHandlers(actions, arg1) {
     MESSAGE_UPDATE: handleMessage,
     LOAD_MESSAGES_SUCCESS: handleLoadMessages,
     LOAD_MESSAGES_AROUND_SUCCESS: handleLoadMessages,
-    LOAD_RECENT_MENTIONS_SUCCESS(messages) {
+    LOAD_RECENT_MENTIONS_SUCCESS: function handleLoadRecentMentions(messages) {
       messages = messages.messages;
       if (onBeforeBatch != null) {
         tmp();
       }
       const item = messages.forEach((item) => currentSidebarChannelId(item));
     },
-    LOAD_PINNED_MESSAGES_SUCCESS(pins) {
+    LOAD_PINNED_MESSAGES_SUCCESS: function handleLoadPinnedMessages(pins) {
       pins = pins.pins;
       if (onBeforeBatch != null) {
         tmp();

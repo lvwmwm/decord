@@ -1,17 +1,17 @@
-// Module ID: 12092
-// Function ID: 12093
+// Module ID: 12175
+// Function ID: 12176
 // Name: useLongestChannelMessageBeforeReply
-// Dependencies: [5110, 558, 576, 504, 2]
+// Dependencies: [5432, 558, 576, 504, 2]
 
-// Module 12092 (useLongestChannelMessageBeforeReply)
-import MessageStore from "MessageStore" /* 5110 */;
+// Module 12175 (useLongestChannelMessageBeforeReply)
+import MessageStore from "MessageStore" /* 5432 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLongestChannelMessageBeforeReply(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -71,7 +71,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useLongestChannelMessageBeforeReply(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;

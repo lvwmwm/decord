@@ -1,24 +1,24 @@
-// Module ID: 9416
-// Function ID: 9417
+// Module ID: 10642
+// Function ID: 10643
 // Name: useOpenProfileSettings
-// Dependencies: [19, 1377, 9417, 1085, 1095, 7831, 558, 576, 9418, 9419, 6885, 2]
+// Dependencies: [19, 1390, 10579, 1085, 1095, 8280, 558, 576, 10643, 10644, 7094, 2]
 
-// Module 9416 (useOpenProfileSettings)
+// Module 10642 (useOpenProfileSettings)
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import openUserSettings from "openUserSettings" /* 6885 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9419 */;
-import UserStore from "UserStore" /* 1377 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9417 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7831 */;
+import openUserSettings from "openUserSettings" /* 7094 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10644 */;
+import UserStore from "UserStore" /* 1390 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10579 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8280 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useCallback = react.useCallback;
 const UserSettingsSections = Constants.UserSettingsSections;
 let closure_5 = UserSettingsConstants.ProfileCustomizationSubsection;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenProfileSettings(arg0) {
   let guild;
   let scrollPosition;
   let tmp4;
@@ -76,7 +76,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = scrollPosition;
   cResult[6] = fn;
   tmp6 = fn;
-}) : (() => {
+}) : (function useOpenProfileSettings() {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};

@@ -1,25 +1,25 @@
-// Module ID: 17711
-// Function ID: 17712
+// Module ID: 18340
+// Function ID: 18341
 // Name: ExemptChannelsActionSheet
-// Dependencies: [19, 6606, 2074, 4519, 1377, 21, 558, 576, 504, 5043, 6607, 5812, 5993, 1126, 17710, 2]
+// Dependencies: [19, 6801, 2087, 4760, 1390, 21, 558, 576, 504, 5421, 6802, 8154, 6180, 1126, 18339, 2]
 
-// Module 17711 (ExemptChannelsActionSheet)
+// Module 18340 (ExemptChannelsActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5812 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6607 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 6802 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
 import react from "react" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 6606 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 6801 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, guildId;
+let _require;
 
 let tmp;
-const TableRow = tmp(5993);
+const TableRow = tmp(6180);
 function getChannelOptionId(channel) {
   return channel.channel.id;
 }
@@ -28,7 +28,7 @@ function getChannelOptionName(name) {
 }
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelOptions(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -123,7 +123,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp9;
-}) : ((arg0) => {
+}) : (function useChannelOptions(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -146,7 +146,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExemptChannelsActionSheet(guildId) {
   let exemptChannels;
   let first;
   let onSave;
@@ -225,14 +225,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
   }
-  const tmp16 = jsx(stateFromStores(17710), { title: tmp11, searchPlaceholder: tmp12, listId: "automod-exempt-channels", items: tmp9, initialSelected: exemptChannels, getId: getChannelOptionId, getSearchText: getChannelOptionName, renderLabel: getChannelOptionName, renderIcon: tmp10, onSave });
+  const tmp16 = jsx(stateFromStores(18339), { title: tmp11, searchPlaceholder: tmp12, listId: "automod-exempt-channels", items: tmp9, initialSelected: exemptChannels, getId: getChannelOptionId, getSearchText: getChannelOptionName, renderLabel: getChannelOptionName, renderIcon: tmp10, onSave });
   cResult[8] = exemptChannels;
   cResult[9] = onSave;
   cResult[10] = tmp9;
   cResult[11] = tmp10;
   cResult[12] = tmp16;
   tmp15 = tmp16;
-}) : ((guildId) => {
+}) : (function ExemptChannelsActionSheet(guildId) {
   let exemptChannels;
   let onSave;
   guildId = guildId.guildId;
@@ -253,7 +253,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     return tmp4;
   }, items2);
-  let tmp4 = stateFromStores(17710);
+  let tmp4 = stateFromStores(18339);
   const intl = guildId(1126).intl;
   const intl2 = guildId(1126).intl;
   return <tmp4 title={intl.string(guildId(1126).t.OGiMXJ)} searchPlaceholder={intl2.string(guildId(1126).t.vephiL)} listId="automod-exempt-channels" items={tmp2} initialSelected={exemptChannels} getId={getChannelOptionId} getSearchText={getChannelOptionName} renderLabel={getChannelOptionName} renderIcon={callback} onSave={onSave} />;

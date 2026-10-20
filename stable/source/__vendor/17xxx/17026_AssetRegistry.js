@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 292, height: 182, scales: [2, 3], hash: "f94bdada98ce42ab7be865282d2b8eba", name: "webhook_empty_dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 14, height: 14, scales: [2, 3], hash: "c34a0c861b7d42ccaa05d56a524cbcd8", name: "ic_public", type: "png" });

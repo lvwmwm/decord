@@ -1,16 +1,16 @@
-// Module ID: 12946
-// Function ID: 12947
+// Module ID: 13415
+// Function ID: 13416
 // Name: AddToWishlistGrid
-// Dependencies: [19, 17, 6707, 21, 4890, 558, 576, 12947, 12948, 2]
+// Dependencies: [19, 17, 6905, 21, 5092, 558, 576, 13416, 13417, 2]
 
-// Module 12946 (AddToWishlistGrid)
+// Module 13415 (AddToWishlistGrid)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 6707 */;
-import WishlistAnalyticsContext from "WishlistAnalyticsContext" /* 12947 */;
-import AddToWishlistItemCardDefault from "AddToWishlistItemCard" /* 12948 */;
+import Constants from "Constants" /* 6905 */;
+import WishlistAnalyticsContext from "WishlistAnalyticsContext" /* 13416 */;
+import AddToWishlistItemCardDefault from "AddToWishlistItemCard" /* 13417 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const WISHLIST_SUGGESTION_CARD_GAP = Constants.WISHLIST_SUGGESTION_CARD_GAP;
 const jsx = Fragment.jsx;
 let obj = { itemsContainer: { flexDirection: "row", flexWrap: "wrap", gap: WISHLIST_SUGGESTION_CARD_GAP, justifyContent: "flex-start" } };
 let closure_5 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocations) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddToWishlistGrid(analyticsLocations) {
   let cardSize;
   let items;
   let tmp7;
@@ -100,7 +100,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((analyticsLocations
   cResult[7] = id3;
   cResult[8] = fn;
   tmp11 = fn;
-}) : ((arg0) => {
+}) : (function AddToWishlistGrid(arg0) {
   let analyticsLocations;
   let id;
   let items;

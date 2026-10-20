@@ -1,27 +1,28 @@
-// Module ID: 12068
-// Function ID: 12069
+// Module ID: 12142
+// Function ID: 12143
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 4879, 1085, 21, 1188, 558, 576, 4612, 5597, 4589, 4891, 504, 12034, 12069, 12070, 8818, 2]
+// Dependencies: [32, 19, 5081, 1085, 21, 1200, 558, 576, 4850, 5378, 4827, 5093, 504, 6852, 6879, 12107, 12143, 12145, 9502, 9265, 2]
 // Exports: getEmojiEntranceKey, getEmojiIdentity, sortEmojisForDisplay
 
-// Module 12068 (EmojiSuggestionBarUtils)
+// Module 12142 (EmojiSuggestionBarUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
-import native2 from "native" /* 4589 */;
-import spring from "spring" /* 5597 */;
+import native from "native" /* 1200 */;
+import native2 from "native" /* 4827 */;
+import spring from "spring" /* 5378 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9265 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap, obj, replaceRangeResult, set, set2;
+let dependencyMap, obj, obj1, obj5, replaceRangeResult, set, set2;
 
 let tmp;
-const ReanimatedRexport = tmp(4612);
-const timing = tmp(4891);
+const ReanimatedRexport = tmp(4850);
+const timing = tmp(5093);
 const UpsellTypes = Constants.UpsellTypes;
 const jsx = Fragment.jsx;
 let closure_8 = { focused: false, text: "", selectionStart: 0, selectionEnd: 0 };
@@ -32,7 +33,7 @@ const __initData2 = { code: "function EmojiSuggestionBarUtilsTsx2(){const{progre
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_13 = { code: "function EmojiSuggestionBarUtilsTsx3(finished){const{runOnJS,cleanUp}=this.__closure;if(finished){runOnJS(cleanUp)();}}" };
 let closure_14 = { code: "function EmojiSuggestionBarUtilsTsx4(finished){const{runOnJS,cleanUp}=this.__closure;if(finished){runOnJS(cleanUp)();}}" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiEntranceAnimation(index) {
   let sharedValue;
   const tmp2 = sharedValue;
   obj = index(sharedValue[7]);
@@ -99,7 +100,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   cResult[4] = items;
   tmp6 = items;
   tmp5 = fn;
-}) : ((index) => {
+}) : (function EmojiEntranceAnimation(index) {
   index = index.index;
   const reducedMotion = index.reducedMotion;
   let sharedValue;
@@ -133,7 +134,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   return jsx(reducedMotion(sharedValue[8]).View, { style, children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cleanUp, arg2, arg3) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuggestionBarHeight(arg0, cleanUp, arg2, arg3) {
   let closure_0;
   let closure_2;
   const _require = arg0;
@@ -159,7 +160,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cleanUp, arg2,
       }
     }
   }
-  let fn = function c() {
+  let fn = function l() {
     let __closure;
     let tmp = require;
     if (closure_0 === native2.TransitionStates.YEETED) {
@@ -200,7 +201,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cleanUp, arg2,
   cResult[6] = items;
   tmp4 = items;
   tmp3 = fn;
-}) : ((arg0, cleanUp, arg2, arg3) => {
+}) : (function useSuggestionBarHeight(arg0, cleanUp, arg2, arg3) {
   let closure_0;
   let closure_2;
   const _require = arg0;
@@ -243,51 +244,57 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cleanUp, arg2,
   return sharedValue;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputStateRef, maxCount, minUnlockedEmojis, ref) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSuggestionBarState(chatInputStateRef, maxCount, minUnlockedEmojis, ref) {
+  let analyticsLocations;
   let channel;
   let chatInputRef;
+  let clear;
   let focused;
   let lockedEmojis;
   let queryEnd;
-  let queryStart;
   let selectionEnd;
   let selectionStart;
   let setData;
   let setDataImmediate;
   let text;
-  let tmp12;
-  let tmp13;
-  let tmp6;
+  let tmp14;
+  let tmp15;
   let tmp7;
-  let unlockedEmojis;
-  let tmp = chatInputRef;
-  obj = chatInputRef(setData[7]);
-  const cResult = obj.c(26);
+  let tmp8;
+  let tmp2 = dependencyMap;
+  const tmp = chatInputRef;
+  obj = chatInputRef(576);
+  const cResult = obj.c(29);
   ({ channel, chatInputRef } = chatInputStateRef);
   chatInputStateRef = chatInputStateRef.chatInputStateRef;
-  obj2 = queryStart;
+  obj2 = setData;
   const suppressed = chatInputStateRef.suppressed;
-  const tmp4 = setDataImmediate(queryStart.useState(closure_8), 2);
-  ({ focused, text, selectionStart, selectionEnd } = tmp4[0]);
-  const tmp5 = tmp4[1];
+  const tmp4 = analyticsLocations(setData.useState(clear), 2);
+  const first = tmp4[0];
+  ({ focused, text } = first);
+  dependencyMap = text;
+  ({ selectionStart, selectionEnd } = first);
+  const tmp6 = tmp4[1];
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [queryEnd];
+    const items = [setDataImmediate];
     const fn = function _() {
-      return queryEnd.useReducedMotion;
+      return setDataImmediate.useReducedMotion;
     };
     cResult[0] = items;
     cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
+    tmp7 = items;
+    tmp8 = fn;
   } else {
-    [tmp6, tmp7] = cResult;
+    [tmp7, tmp8] = cResult;
   }
-  const tmpResult = tmp(setData[12]);
-  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  const tmp11 = chatInputStateRef(setData[13])(tmp5, 16);
-  setData = tmp11.setData;
-  setDataImmediate = tmp11.setDataImmediate;
-  const tmp10 = chatInputStateRef;
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
+  const tmp12 = chatInputStateRef(6852);
+  analyticsLocations = tmp12(chatInputStateRef(6879).EMOJI_SUGGESTIONS).analyticsLocations;
+  const tmp13 = chatInputStateRef(12107)(tmp6, 16);
+  setData = tmp13.setData;
+  setDataImmediate = tmp13.setDataImmediate;
+  const tmp11 = chatInputStateRef;
   if (cResult[2] !== setData) {
     const fn2 = function k() {
       return { setData };
@@ -296,13 +303,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputStateRef, m
     cResult[2] = setData;
     cResult[3] = fn2;
     cResult[4] = items1;
-    tmp13 = items1;
-    tmp12 = fn2;
+    tmp15 = items1;
+    tmp14 = fn2;
   } else {
-    tmp12 = cResult[3];
-    tmp13 = cResult[4];
+    tmp14 = cResult[3];
+    tmp15 = cResult[4];
   }
-  const imperativeHandle = obj2.useImperativeHandle(ref, tmp12, tmp13);
+  const imperativeHandle = obj2.useImperativeHandle(ref, tmp14, tmp15);
   if (focused) {
     focused = !suppressed;
   }
@@ -312,80 +319,100 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputStateRef, m
         if (cResult[8] === selectionEnd) {
           if (cResult[9] === selectionStart) {
             if (cResult[10] === focused) {
-              let tmp15;
+              let tmp17;
               if (cResult[11] === text) {
-                tmp15 = cResult[12];
+                tmp17 = cResult[12];
               }
-              const tmp16 = tmp10(setData[14])(tmp15);
-              ({ unlockedEmojis, lockedEmojis, queryStart } = tmp16);
-              queryEnd = tmp16.queryEnd;
-              const clear = tmp16.clear;
+              const tmp18 = tmp11(12143)(tmp17);
+              const unlockedEmojis = tmp18.unlockedEmojis;
+              ({ lockedEmojis, queryEnd } = tmp18);
+              clear = tmp18.clear;
               if (cResult[13] === chatInputRef) {
                 if (cResult[14] === chatInputStateRef) {
                   if (cResult[15] === clear) {
                     if (cResult[16] === queryEnd) {
-                      if (cResult[17] === queryStart) {
-                        let tmp17;
-                        let tmp18;
-                        if (cResult[18] === setDataImmediate) {
-                          tmp17 = cResult[19];
-                        }
-                        const _Symbol = Symbol;
-                        if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-                          const fn3 = function q(animated) {
-                            obj = chatInputStateRef(setData[16]);
-                            obj2 = { initialUpsellKey: animated.animated ? clear.ANIMATED_EMOJI : clear.GLOBAL_EMOJI };
-                            const result = obj.handleShowUpsellAlert(obj2);
-                          };
-                          cResult[20] = fn3;
-                          tmp18 = fn3;
-                        } else {
-                          tmp18 = cResult[20];
-                        }
-                        if (cResult[21] === tmp17) {
-                          if (cResult[22] === lockedEmojis) {
-                            if (cResult[23] === stateFromStores) {
-                              let tmp19;
-                              if (cResult[24] === unlockedEmojis) {
-                                tmp19 = cResult[25];
+                      if (cResult[17] === setDataImmediate) {
+                        if (cResult[18] === text) {
+                          let tmp19;
+                          if (cResult[19] === unlockedEmojis) {
+                            tmp19 = cResult[20];
+                          }
+                          if (cResult[21] !== analyticsLocations) {
+                            class K {
+                              constructor(animated) {
+                                obj = PremiumUpsellUtilsDefault;
+                                obj2 = { initialUpsellKey: animated.animated ? UpsellTypes.ANIMATED_EMOJI : UpsellTypes.GLOBAL_EMOJI, analyticsLocations };
+                                const result = obj.handleShowUpsellAlert(obj2);
                               }
-                              return tmp19;
+                            }
+                            cResult[21] = analyticsLocations;
+                            cResult[22] = K;
+                          } else {
+                            class K {
+                              constructor(animated) {
+                                obj = PremiumUpsellUtilsDefault;
+                                obj2 = { initialUpsellKey: animated.animated ? UpsellTypes.ANIMATED_EMOJI : UpsellTypes.GLOBAL_EMOJI, analyticsLocations };
+                                const result = obj.handleShowUpsellAlert(obj2);
+                              }
                             }
                           }
-                        }
-                        const obj3 = { unlockedEmojis, lockedEmojis, reducedMotion: stateFromStores, handlePress: tmp17, handlePressEmojiUnavailable: tmp18 };
-                        class C {
-                          constructor(arg0) {
-                            combined = "" + chatInputStateRef(setData[15])(chatInputStateRef) + " ";
-                            closure_0 = combined;
-                            current = closure_0.current;
-                            obj = { location: queryStart, length: queryEnd - queryStart, text: combined, editId: null };
-                            editId = closure_1.current.editId;
-                            replaceRange = current.replaceRange;
-                            tmp = queryStart;
-                            obj.editId = editId;
-                            replaceRangeResult = replaceRange(obj);
-                            closure_1 = tmp + combined.length;
-                            tmp3 = setDataImmediate((text) => {
-                              let sum;
-                              let text1;
-                              obj = { text: sum + text1.slice(queryEnd), selectionStart: selectionEnd, selectionEnd };
-                              const merged = Object.assign(text);
-                              text = text.text;
-                              text1 = text.text;
-                              sum = text.slice(0, queryStart) + combined;
-                              return obj;
-                            });
-                            tmp4 = clear();
-                            return;
+                          if (cResult[23] === tmp19) {
+                            class K {
+                              constructor(animated) {
+                                obj = PremiumUpsellUtilsDefault;
+                                obj2 = { initialUpsellKey: animated.animated ? UpsellTypes.ANIMATED_EMOJI : UpsellTypes.GLOBAL_EMOJI, analyticsLocations };
+                                const result = obj.handleShowUpsellAlert(obj2);
+                              }
+                            }
                           }
+                          let obj3 = { unlockedEmojis, lockedEmojis, reducedMotion: stateFromStores, handlePress: tmp19, handlePressEmojiUnavailable: tmp20 };
+                          class C {
+                            constructor(arg0) {
+                              obj = /\s/;
+                              str = closure_2;
+                              tmp = queryEnd;
+                              str2 = " ";
+                              str3 = " ";
+                              if (obj.test(closure_2.charAt(queryEnd - 1))) {
+                                str3 = "";
+                              }
+                              obj2 = /\s/;
+                              if (obj2.test(str.charAt(tmp))) {
+                                str2 = "";
+                              }
+                              tmp2 = chatInputStateRef;
+                              tmp3 = text;
+                              combined = "" + str3 + chatInputStateRef(text[17])(chatInputStateRef) + str2;
+                              closure_0 = combined;
+                              current = closure_0.current;
+                              obj1 = { location: tmp, length: 0, text: combined, editId: null };
+                              editId = closure_1.current.editId;
+                              replaceRange = current.replaceRange;
+                              obj1.editId = editId;
+                              replaceRangeResult = replaceRange(obj1);
+                              closure_1 = tmp + combined.length;
+                              tmp5 = setDataImmediate((text) => {
+                                let sum;
+                                let text1;
+                                obj = { text: sum + text1.slice(queryEnd), selectionStart: selectionEnd, selectionEnd };
+                                const merged = Object.assign(text);
+                                text = text.text;
+                                text1 = text.text;
+                                sum = text.slice(0, queryEnd) + combined;
+                                return obj;
+                              });
+                              tmp6 = clear();
+                              obj5 = { emoji: chatInputStateRef, displayedSuggestions: unlockedEmojis };
+                              tmp7 = tmp2(tmp3[18])(obj5);
+                              return;
+                            }
+                          }
+                          cResult[24] = tmp20;
+                          cResult[25] = lockedEmojis;
+                          cResult[26] = stateFromStores;
+                          cResult[27] = unlockedEmojis;
+                          cResult[28] = obj3;
                         }
-                        cResult[21] = tmp17;
-                        cResult[22] = lockedEmojis;
-                        cResult[23] = stateFromStores;
-                        cResult[24] = unlockedEmojis;
-                        cResult[25] = obj3;
-                        tmp19 = obj3;
                       }
                     }
                   }
@@ -393,27 +420,42 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputStateRef, m
               }
               class C {
                 constructor(arg0) {
-                  combined = "" + chatInputStateRef(setData[15])(chatInputStateRef) + " ";
+                  obj = /\s/;
+                  str = closure_2;
+                  tmp = queryEnd;
+                  str2 = " ";
+                  str3 = " ";
+                  if (obj.test(closure_2.charAt(queryEnd - 1))) {
+                    str3 = "";
+                  }
+                  obj2 = /\s/;
+                  if (obj2.test(str.charAt(tmp))) {
+                    str2 = "";
+                  }
+                  tmp2 = chatInputStateRef;
+                  tmp3 = text;
+                  combined = "" + str3 + chatInputStateRef(text[17])(chatInputStateRef) + str2;
                   closure_0 = combined;
                   current = closure_0.current;
-                  obj = { location: queryStart, length: queryEnd - queryStart, text: combined, editId: null };
+                  obj1 = { location: tmp, length: 0, text: combined, editId: null };
                   editId = closure_1.current.editId;
                   replaceRange = current.replaceRange;
-                  tmp = queryStart;
-                  obj.editId = editId;
-                  replaceRangeResult = replaceRange(obj);
+                  obj1.editId = editId;
+                  replaceRangeResult = replaceRange(obj1);
                   closure_1 = tmp + combined.length;
-                  tmp3 = setDataImmediate((text) => {
+                  tmp5 = setDataImmediate((text) => {
                     let sum;
                     let text1;
                     obj = { text: sum + text1.slice(queryEnd), selectionStart: selectionEnd, selectionEnd };
                     const merged = Object.assign(text);
                     text = text.text;
                     text1 = text.text;
-                    sum = text.slice(0, queryStart) + combined;
+                    sum = text.slice(0, queryEnd) + combined;
                     return obj;
                   });
-                  tmp4 = clear();
+                  tmp6 = clear();
+                  obj5 = { emoji: chatInputStateRef, displayedSuggestions: unlockedEmojis };
+                  tmp7 = tmp2(tmp3[18])(obj5);
                   return;
                 }
               }
@@ -421,17 +463,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputStateRef, m
               cResult[14] = chatInputStateRef;
               cResult[15] = clear;
               cResult[16] = queryEnd;
-              cResult[17] = queryStart;
-              cResult[18] = setDataImmediate;
-              cResult[19] = C;
-              tmp17 = C;
+              cResult[17] = setDataImmediate;
+              cResult[18] = text;
+              cResult[19] = unlockedEmojis;
+              cResult[20] = C;
+              tmp19 = C;
             }
           }
         }
       }
     }
   }
-  const obj4 = { channel, text, selectionStart, selectionEnd, enabled: focused, maxCount, minUnlockedEmojis };
+  let obj4 = { channel, text, selectionStart, selectionEnd, enabled: focused, maxCount, minUnlockedEmojis };
   cResult[5] = channel;
   cResult[6] = maxCount;
   cResult[7] = minUnlockedEmojis;
@@ -440,78 +483,100 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputStateRef, m
   cResult[10] = focused;
   cResult[11] = text;
   cResult[12] = obj4;
-  tmp15 = obj4;
-}) : ((chatInputRef, maxCount, minUnlockedEmojis, ref) => {
+  tmp17 = obj4;
+}) : (function useEmojiSuggestionBarState(chatInputRef, maxCount, minUnlockedEmojis, ref) {
+  let _undefined;
   let channel;
-  let items2;
+  let focused;
   let selectionEnd;
   let selectionStart;
   let suppressed;
   let text;
   chatInputRef = chatInputRef.chatInputRef;
   let chatInputStateRef = chatInputRef.chatInputStateRef;
+  let analyticsLocations;
   let setData;
   let setDataImmediate;
-  let queryStart;
+  let unlockedEmojis;
   let queryEnd;
   let clear;
-  obj = queryStart;
+  obj = setData;
   ({ channel, suppressed } = chatInputRef);
-  let tmp = setDataImmediate(queryStart.useState(closure_8), 2);
+  const tmp = analyticsLocations(setData.useState(clear), 2);
   const first = tmp[0];
-  let focused = first.focused;
-  ({ text, selectionStart, selectionEnd } = first);
-  const tmp3 = tmp[1];
-  obj2 = chatInputRef(setData[12]);
-  const items = [queryEnd];
-  const stateFromStores = obj2.useStateFromStores(items, () => queryEnd.useReducedMotion);
-  const tmp5 = chatInputStateRef(setData[13])(tmp3, 16);
-  setData = tmp5.setData;
-  setDataImmediate = tmp5.setDataImmediate;
+  ({ focused, text } = first);
+  dependencyMap = text;
+  ({ selectionStart, selectionEnd } = first);
+  let tmp3 = tmp[1];
+  obj2 = chatInputRef(504);
+  const items = [setDataImmediate];
+  const stateFromStores = obj2.useStateFromStores(items, () => setDataImmediate.useReducedMotion);
+  const tmp5 = chatInputStateRef(6852);
+  analyticsLocations = tmp5(chatInputStateRef(6879).EMOJI_SUGGESTIONS).analyticsLocations;
+  const tmp6 = chatInputStateRef(12107)(tmp3, 16);
+  setData = tmp6.setData;
+  setDataImmediate = tmp6.setDataImmediate;
   const items1 = [setData];
-  const imperativeHandle = queryStart.useImperativeHandle(ref, () => ({ setData }), items1);
-  const obj3 = { channel, text, selectionStart, selectionEnd, enabled: focused, maxCount, minUnlockedEmojis };
-  const tmp7 = chatInputStateRef(setData[14]);
+  const imperativeHandle = setData.useImperativeHandle(ref, () => ({ setData }), items1);
+  let obj3 = { channel, text, selectionStart, selectionEnd, enabled: focused, maxCount, minUnlockedEmojis };
+  const tmp8 = chatInputStateRef(12143);
   if (focused) {
     focused = !suppressed;
   }
-  const tmp7Result = tmp7(obj3);
-  queryStart = tmp7Result.queryStart;
-  queryEnd = tmp7Result.queryEnd;
-  clear = tmp7Result.clear;
-  const obj4 = {
-    unlockedEmojis: tmp7Result.unlockedEmojis,
-    lockedEmojis: tmp7Result.lockedEmojis,
+  const tmp8Result = tmp8(obj3);
+  unlockedEmojis = tmp8Result.unlockedEmojis;
+  queryEnd = tmp8Result.queryEnd;
+  clear = tmp8Result.clear;
+  const items2 = [chatInputRef, chatInputStateRef, text, queryEnd, clear, setDataImmediate, unlockedEmojis];
+  const lockedEmojis = tmp8Result.lockedEmojis;
+  const items3 = [analyticsLocations];
+  const callback = obj.useCallback((emoji) => {
+    let closure_1;
+    let editId;
+    obj = /\s/;
+    let str2 = " ";
+    let str3 = " ";
+    const str = _undefined;
+    if (obj.test(_undefined.charAt(queryEnd - 1))) {
+      str3 = "";
+    }
+    obj2 = /\s/;
+    if (obj2.test(str.charAt(queryEnd))) {
+      str2 = "";
+    }
+    const combined = "" + str3 + chatInputStateRef(_undefined[17])(emoji) + str2;
+    const current = combined.current;
+    const obj3 = { location: queryEnd, length: 0, text: combined, editId };
+    editId = chatInputStateRef.current.editId;
+    const replaceRange = current.replaceRange;
+    replaceRange(obj3);
+    const tmp2 = chatInputStateRef;
+    chatInputStateRef = tmp + combined.length;
+    setDataImmediate((text) => {
+      let sum;
+      let text1;
+      obj = { text: sum + text1.slice(queryEnd), selectionStart: selectionEnd, selectionEnd };
+      const merged = Object.assign(text);
+      text = text.text;
+      text1 = text.text;
+      sum = text.slice(0, queryEnd) + combined;
+      return obj;
+    });
+    clear();
+    const obj4 = { emoji, displayedSuggestions: unlockedEmojis };
+    tmp2(_undefined[18])(obj4);
+  }, items2);
+  let obj4 = {
+    unlockedEmojis,
+    lockedEmojis,
     reducedMotion: stateFromStores,
-    handlePress: obj.useCallback((arg0) => {
-      let closure_1;
-      let editId;
-      const combined = "" + chatInputStateRef(setData[15])(arg0) + " ";
-      const current = combined.current;
-      obj = { location: queryStart, length: queryEnd - queryStart, text: combined, editId };
-      editId = chatInputStateRef.current.editId;
-      const replaceRange = current.replaceRange;
-      replaceRange(obj);
-      chatInputStateRef = queryStart + combined.length;
-      setDataImmediate((text) => {
-        let sum;
-        let text1;
-        obj = { text: sum + text1.slice(queryEnd), selectionStart: selectionEnd, selectionEnd };
-        const merged = Object.assign(text);
-        text = text.text;
-        text1 = text.text;
-        sum = text.slice(0, queryStart) + combined;
-        return obj;
-      });
-      clear();
-    }, items2),
+    handlePress: callback,
     handlePressEmojiUnavailable: obj.useCallback((animated) => {
-      obj = chatInputStateRef(setData[16]);
-      obj2 = { initialUpsellKey: animated.animated ? clear.ANIMATED_EMOJI : clear.GLOBAL_EMOJI };
+      obj = PremiumUpsellUtilsDefault;
+      obj2 = { initialUpsellKey: animated.animated ? UpsellTypes.ANIMATED_EMOJI : UpsellTypes.GLOBAL_EMOJI, analyticsLocations };
       const result = obj.handleShowUpsellAlert(obj2);
-    }, [])
+    }, items3)
   };
-  items2 = [chatInputRef, chatInputStateRef, queryStart, queryEnd, clear, setDataImmediate];
   return obj4;
 });
 function getEmojiIdentity(id) {

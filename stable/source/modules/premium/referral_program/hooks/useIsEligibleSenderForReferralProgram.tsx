@@ -1,17 +1,17 @@
-// Module ID: 7727
-// Function ID: 7728
+// Module ID: 8081
+// Function ID: 8082
 // Name: useIsEligibleSenderForReferralProgram
-// Dependencies: [6961, 558, 576, 7728, 504, 2]
+// Dependencies: [7170, 558, 576, 8082, 504, 2]
 
-// Module 7727 (useIsEligibleSenderForReferralProgram)
+// Module 8081 (useIsEligibleSenderForReferralProgram)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import useMaybeFetchReferralsRemaining from "useMaybeFetchReferralsRemaining" /* 7728 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 6961 */;
+import useMaybeFetchReferralsRemaining from "useMaybeFetchReferralsRemaining" /* 8082 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7170 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligibleSenderForReferralProgram(arg0) {
   let isEligibleToSendReferrals;
   let tmp6;
   let tmp7;
@@ -22,7 +22,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const maybeFetchReferralsRemaining = tmpResult.useMaybeFetchReferralsRemaining(tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ReferralTrialStore];
-    const fn = function l() {
+    const fn = function n() {
       return isEligibleToSendReferrals.getIsEligibleToSendReferrals();
     };
     cResult[0] = items;
@@ -34,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult2 = get_initialized;
   return tmpResult2.useStateFromStores(tmp6, tmp7);
-}) : (() => {
+}) : (function useIsEligibleSenderForReferralProgram() {
   let isEligibleToSendReferrals;
   let flag = arg0;
   if (arg0 === undefined) {

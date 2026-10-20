@@ -1,16 +1,16 @@
-// Module ID: 12200
-// Function ID: 12201
+// Module ID: 12284
+// Function ID: 12285
 // Name: useGuildPowerupOnDeactivate
-// Dependencies: [19, 558, 576, 12195, 2]
+// Dependencies: [19, 558, 576, 12279, 2]
 
-// Module 12200 (useGuildPowerupOnDeactivate)
+// Module 12284 (useGuildPowerupOnDeactivate)
 import react2 from "react" /* 576 */;
-import useGuildPowerupOnToggleDefault from "useGuildPowerupOnToggle" /* 12195 */;
+import useGuildPowerupOnToggleDefault from "useGuildPowerupOnToggle" /* 12279 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowerupOnDeactivate(arg0, arg1) {
   let error;
   let isLoading;
   let onToggle;
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = tmp3;
   cResult[5] = obj2;
   tmp4 = obj2;
-}) : ((arg0, arg1) => {
+}) : (function useGuildPowerupOnDeactivate(arg0, arg1) {
   let items;
   const tmp = useGuildPowerupOnToggleDefault(arg0, arg1);
   const onToggle = tmp.onToggle;

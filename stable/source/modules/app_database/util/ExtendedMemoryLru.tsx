@@ -1,11 +1,11 @@
-// Module ID: 6989
-// Function ID: 6990
+// Module ID: 7197
+// Function ID: 7198
 // Name: ExtendedMemoryLru
-// Dependencies: [32, 6990, 6991, 2]
+// Dependencies: [32, 7198, 7199, 2]
 
-// Module 6989 (ExtendedMemoryLru)
-import Lru from "Lru" /* 6990 */;
-import IterableAll from "Iterable" /* 6991 */;
+// Module 7197 (ExtendedMemoryLru)
+import Lru from "Lru" /* 7198 */;
+import IterableAll from "Iterable" /* 7199 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -62,26 +62,20 @@ class ExtendedMemoryLru {
     return deleteResult;
   }
   upstreamItems() {
+    let canUpstreamItemsResult;
+    let first;
+    let tmp4;
     const self = this;
     if (this.canUpstreamItems()) {
-      const extended = self.extended;
-      const entries = extended.entries();
-      const obj = entries[Symbol.iterator]();
-      while (obj !== undefined) {
-        let tmp7 = _slicedToArray(tmp4, 2);
-        let first = tmp7[0];
-        let primary = self.primary;
-        let putResult = primary.put(first, tmp7[1]);
+      do {
+        let extended = self.extended;
+        [first, tmp4] = extended.newest();
         let extended2 = self.extended;
         let deleteResult = extended2.delete(first);
-        if (self.canUpstreamItems()) {
-          continue;
-        } else {
-          obj.return();
-          break;
-        }
-        break;
-      }
+        let primary = self.primary;
+        let putOldestResult = primary.putOldest(first, tmp4);
+        canUpstreamItemsResult = self.canUpstreamItems();
+      } while (canUpstreamItemsResult);
     }
   }
   canUpstreamItems() {

@@ -1,28 +1,28 @@
-// Module ID: 5911
-// Function ID: 5912
+// Module ID: 10227
+// Function ID: 10228
 // Name: ThemedGradient
-// Dependencies: [109, 19, 17, 4697, 21, 4890, 4729, 4728, 4727, 558, 576, 1484, 5605, 4791, 587, 4733, 4696, 683, 1242, 573, 4735, 4790, 1241, 2]
+// Dependencies: [109, 19, 17, 4937, 21, 5092, 4969, 4968, 4967, 558, 576, 1497, 5391, 5031, 587, 4973, 4936, 683, 1255, 573, 4975, 5030, 1254, 2]
 // Exports: validateColors
 
-// Module 5911 (ThemedGradient)
+// Module 10227 (ThemedGradient)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import ColorUtils from "ColorUtils" /* 4727 */;
-import utils_ColorDefault from "utils/Color" /* 4728 */;
-import shared from "shared" /* 4729 */;
-import GuildThemePresets from "GuildThemePresets" /* 4733 */;
-import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 4790 */;
-import useThemeDefault from "useTheme" /* 4791 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1254 */;
+import SentryUtilsDefault from "SentryUtils" /* 1255 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import ColorUtils from "ColorUtils" /* 4967 */;
+import utils_ColorDefault from "utils/Color" /* 4968 */;
+import shared from "shared" /* 4969 */;
+import GuildThemePresets from "GuildThemePresets" /* 4973 */;
+import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 5030 */;
+import useThemeDefault from "useTheme" /* 5031 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4697 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,9 +33,9 @@ let c10;
 let tmp4;
 let tmp6;
 let unpackModuleId;
-const useRoutedActiveGuildThemeDefault = tmp6(4735);
-const LinearGradientDefault = tmp4(5605);
-const f90930 = (item) => item / 100;
+const useRoutedActiveGuildThemeDefault = tmp6(4975);
+const LinearGradientDefault = tmp4(5391);
+const f104423 = (item) => item / 100;
 function getMixedGradientColor(mixColorOverride) {
   let b;
   let darkFallbackAmount;
@@ -43,7 +43,6 @@ function getMixedGradientColor(mixColorOverride) {
   let g;
   let mixAmount;
   let r;
-  let theme;
   let theme2;
   let theme3;
   ({ mixAmount, theme } = mixColorOverride);
@@ -110,7 +109,7 @@ function getMixedGradientColor(mixColorOverride) {
   const mixColorsResult = mixColors(mixColorOverride, tmp14);
   return mixColorsResult.toHexString();
 }
-let closure_3 = ["overlayOpacity", "customTheme"];
+let theme = ["overlayOpacity", "customTheme"];
 let closure_4 = ["activeGuildTheme", "theme"];
 let closure_5 = ["overlayOpacity", "gradientOverride"];
 const View = react_native.View;
@@ -120,7 +119,7 @@ let angleCenter = { x: 0.5, y: 0.5 };
 let c14 = 0.7;
 let c15 = 0.5;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function GradientBase(arg0) {
   let absolute;
   let angle;
   let colors;
@@ -214,7 +213,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = wide;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((angleCenter) => {
+}) : (function GradientBase(angleCenter) {
   let absolute;
   let angle;
   let colors;
@@ -256,7 +255,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp3(tmp4, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Gradient(arg0) {
   let absolute;
   let angleOverride;
   let componentStyles;
@@ -266,6 +265,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let mixColorOverride;
   let tall;
   let tmp3;
+  let tmp5;
   let wide;
   let tmp = dependencyMap;
   let obj = mix(576);
@@ -284,82 +284,94 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = cResult[1];
   }
   dependencyMap = tmp3;
-  let tmp4 = mixColorOverride(4791)();
-  const theme = tmp4;
+  let tmp4 = mixColorOverride(5031)();
+  theme = tmp4;
   if (cResult[2] === gradient.colors) {
     if (cResult[3] === mix) {
       if (cResult[4] === tmp3) {
         if (cResult[5] === mixColorOverride) {
+          let tmp8;
+          if (cResult[6] === tmp4) {
+            tmp5 = cResult[7];
+          }
           if (cResult[13] !== gradient.colors) {
-            let tmp8;
+            let tmp10;
             const _Symbol = Symbol;
             if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-              class A {
-                constructor(stop) {
-                  return stop.stop / 100;
-                }
-              }
-              cResult[15] = A;
-              tmp8 = A;
+              const fn2 = function b(stop) {
+                return stop.stop / 100;
+              };
+              cResult[15] = fn2;
+              tmp10 = fn2;
             } else {
-              class A {
-                constructor(stop) {
-                  return stop.stop / 100;
-                }
-              }
+              tmp10 = cResult[15];
             }
             const colors = gradient.colors;
-            const mapped = colors.map(tmp8);
+            const mapped = colors.map(tmp10);
             cResult[13] = gradient.colors;
             cResult[14] = mapped;
+            tmp8 = mapped;
           } else {
-            class A {
-              constructor(stop) {
-                return stop.stop / 100;
-              }
-            }
+            tmp8 = cResult[14];
           }
           if (angleOverride == null) {
-            class A {
-              constructor(stop) {
-                return stop.stop / 100;
-              }
-            }
+            angleOverride = gradient.angle;
           }
           angleCenter = gradient.angleCenter;
           if (angleCenter == null) {
-            class A {
-              constructor(stop) {
-                return stop.stop / 100;
-              }
-            }
+            angleCenter = closure_13;
           }
           if (cResult[16] === absolute) {
-            class A {
-              constructor(stop) {
-                return stop.stop / 100;
+            if (cResult[17] === tmp5) {
+              if (cResult[18] === componentStyles) {
+                if (cResult[19] === tmp8) {
+                  if (cResult[20] === angleOverride) {
+                    if (cResult[21] === angleCenter) {
+                      if (cResult[22] === tall) {
+                        let tmp13;
+                        if (cResult[23] === wide) {
+                          tmp13 = cResult[24];
+                        }
+                        return tmp13;
+                      }
+                    }
+                  }
+                }
               }
             }
           }
-          const obj3 = { colors: tmp5, locations: tmp6, angle: angleOverride, angleCenter, absolute, wide, tall, componentStyles };
+          const obj3 = { colors: tmp5, locations: tmp8, angle: angleOverride, angleCenter, absolute, wide, tall, componentStyles };
+          const tmp16 = closure_10(closure_17, obj3);
           cResult[16] = absolute;
           cResult[17] = tmp5;
           cResult[18] = componentStyles;
-          cResult[19] = tmp6;
+          cResult[19] = tmp8;
           cResult[20] = angleOverride;
           cResult[21] = angleCenter;
           cResult[22] = tall;
           cResult[23] = wide;
-          cResult[24] = closure_10(closure_17, obj3);
-          const tmp14 = closure_10(closure_17, obj3);
+          cResult[24] = tmp16;
+          tmp13 = tmp16;
         }
       }
     }
   }
   if (cResult[8] === mix) {
-    class A {
-      constructor(stop) {
-        return stop.stop / 100;
+    if (cResult[9] === tmp3) {
+      if (cResult[10] === mixColorOverride) {
+        let tmp6;
+        if (cResult[11] === tmp4) {
+          tmp6 = cResult[12];
+        }
+        const colors1 = gradient.colors;
+        const mapped1 = colors1.map(tmp6);
+        cResult[2] = gradient.colors;
+        cResult[3] = mix;
+        cResult[4] = tmp3;
+        cResult[5] = mixColorOverride;
+        cResult[6] = tmp4;
+        cResult[7] = mapped1;
+        tmp5 = mapped1;
       }
     }
   }
@@ -379,7 +391,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[10] = mixColorOverride;
   cResult[11] = tmp4;
   cResult[12] = fn;
-}) : ((mixColorOverride) => {
+  tmp6 = fn;
+}) : (function Gradient(mixColorOverride) {
   let absolute;
   let angleOverride;
   let colors1;
@@ -394,7 +407,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     mixAmount = {};
   }
   mixColorOverride = mixColorOverride.mixColorOverride;
-  const theme = mixAmount(mixColorOverride[13])();
+  theme = mixAmount(mixColorOverride[13])();
   const colors = gradient.colors;
   let obj = {
     colors: colors.map((item) => {
@@ -430,7 +443,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_18 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemePresetGradient(arg0) {
   let absolute;
   let angleOverride;
   let componentStyles;
@@ -462,8 +475,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = cResult[1];
   }
   dependencyMap = tmp4;
-  const tmp5 = mixColorOverride(4791)();
-  const theme = tmp5;
+  const tmp5 = mixColorOverride(5031)();
+  theme = tmp5;
   if (cResult[2] === mix) {
     if (cResult[3] === tmp4) {
       if (cResult[4] === mixColorOverride) {
@@ -503,7 +516,18 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           cResult[19] = componentStyles;
           cResult[20] = tmp8;
           cResult[21] = tmp9;
-          cResult[22] = angleOverride;
+          class A {
+            constructor(hex) {
+              const tmp = mix;
+              if (tmp) {
+                const obj = { color: hex.hex, mixAmount, mixColorOverride, theme };
+                hex = getMixedGradientColor(obj);
+              } else {
+                hex = hex.hex;
+              }
+              return hex;
+            }
+          }
           cResult[23] = tall;
           cResult[24] = wide;
           cResult[25] = tmp21;
@@ -512,7 +536,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  const tmpResult = tmp(4733);
+  const tmpResult = tmp(4973);
   const guildThemePresetAppearance = tmpResult.getGuildThemePresetAppearance(preset, tmp5);
   if (cResult[11] === mix) {
     if (cResult[12] === tmp4) {
@@ -526,19 +550,13 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const mapped = colors.map(tmp11);
         const _Symbol = Symbol;
         if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-          class G {
-            constructor(stop) {
-              return stop.stop / 100;
-            }
-          }
-          cResult[16] = G;
-          tmp15 = G;
+          const fn = function w(stop) {
+            return stop.stop / 100;
+          };
+          cResult[16] = fn;
+          tmp15 = fn;
         } else {
-          class G {
-            constructor(stop) {
-              return stop.stop / 100;
-            }
-          }
+          tmp15 = cResult[16];
         }
         const colors1 = guildThemePresetAppearance.colors;
         const mapped1 = colors1.map(tmp15);
@@ -550,6 +568,18 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[7] = closure_17;
         cResult[8] = guildThemePresetAppearance;
         cResult[9] = mapped;
+        class A {
+          constructor(hex) {
+            const tmp = mix;
+            if (tmp) {
+              const obj = { color: hex.hex, mixAmount, mixColorOverride, theme };
+              hex = getMixedGradientColor(obj);
+            } else {
+              hex = hex.hex;
+            }
+            return hex;
+          }
+        }
         cResult[10] = mapped1;
         tmp9 = mapped1;
         tmp8 = mapped;
@@ -558,23 +588,25 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  const fn = function w(hex) {
-    const tmp = mix;
-    if (tmp) {
-      const obj = { color: hex.hex, mixAmount, mixColorOverride, theme };
-      hex = getMixedGradientColor(obj);
-    } else {
-      hex = hex.hex;
+  class A {
+    constructor(hex) {
+      const tmp = mix;
+      if (tmp) {
+        const obj = { color: hex.hex, mixAmount, mixColorOverride, theme };
+        hex = getMixedGradientColor(obj);
+      } else {
+        hex = hex.hex;
+      }
+      return hex;
     }
-    return hex;
-  };
+  }
   cResult[11] = mix;
   cResult[12] = tmp4;
   cResult[13] = mixColorOverride;
   cResult[14] = tmp5;
-  cResult[15] = fn;
-  tmp11 = fn;
-}) : ((mixColorOverride) => {
+  cResult[15] = A;
+  tmp11 = A;
+}) : (function GuildThemePresetGradient(mixColorOverride) {
   let absolute;
   let angleOverride;
   let colors1;
@@ -590,7 +622,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   mixColorOverride = mixColorOverride.mixColorOverride;
   let tmp = mixAmount(mixColorOverride[13])();
-  const theme = tmp;
+  theme = tmp;
   let obj = require("GuildThemePresets");
   const guildThemePresetAppearance = obj.getGuildThemePresetAppearance(preset, tmp);
   const colors = guildThemePresetAppearance.colors;
@@ -623,7 +655,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 const re20 = /^#(?:[0-9a-fA-F]{3}){1,2}$/;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomThemesGradient(arg0) {
   let absolute;
   let baseMix;
   let colors;
@@ -640,7 +672,6 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let point1;
   let start;
   let tall;
-  let theme;
   let tmp6;
   let wide;
   let width;
@@ -652,8 +683,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmp3 = closure_12();
   ({ width, height } = mixAmount(mixColorOverride[11])());
-  mixAmount(mixColorOverride[11])();
   const tmp4 = mixAmount;
+  const tmp5 = mixAmount(mixColorOverride[11])();
   mixAmount = undefined;
   mixColorOverride = undefined;
   theme = undefined;
@@ -766,7 +797,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     gradientColorStops = [];
   }
   if (gradientColorStops.length === reduced.length) {
-    mapped1 = gradientColorStops.map(f90930);
+    mapped1 = gradientColorStops.map(f104423);
   } else if (1 === reduced.length) {
     mapped1 = [0, 1];
   } else {
@@ -820,7 +851,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                       }
                     }
-                    const obj3 = { colors: reduced, locations: mapped1, start, end, style: tmp19 };
+                    let obj3 = { colors: reduced, locations: mapped1, start, end, style: tmp19 };
                     const tmp22 = closure_10(tmp4(mixColorOverride[12]), obj3);
                     cResult[20] = end;
                     cResult[21] = mapped1;
@@ -844,8 +875,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           let tmp18 = tall;
           if (tmp18) {
-            tmp18 = { height };
-            const obj4 = { height };
+            let obj4 = { height };
+            tmp18 = obj4;
           }
           cResult[11] = height;
           cResult[12] = tall;
@@ -888,7 +919,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = reduced.length;
   cResult[4] = fn;
   tmp11 = fn;
-}) : ((arg0) => {
+}) : (function CustomThemesGradient(arg0) {
   let absolute;
   let baseMix;
   let colors;
@@ -903,7 +934,6 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let mixColorOverride;
   let regex;
   let tall;
-  let theme;
   let wide;
   let width;
   ({ colors, gradientColorStops, absolute, wide, tall, mixAmount } = arg0);
@@ -919,8 +949,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   mixAmount = undefined;
   mixColorOverride = undefined;
   theme = undefined;
-  ({ width, height } = reduced(1484)());
-  const tmp4 = reduced(1484)();
+  ({ width, height } = reduced(1497)());
+  const tmp4 = reduced(1497)();
   if (mixAmount === undefined) {
     mixAmount = {};
   }
@@ -1018,7 +1048,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     gradientColorStops = [];
   }
   if (gradientColorStops.length === reduced.length) {
-    mapped1 = gradientColorStops.map(f90930);
+    mapped1 = gradientColorStops.map(f104423);
   } else if (1 === reduced.length) {
     mapped1 = [0, 1];
   } else {
@@ -1044,7 +1074,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (reduced.length >= 2) {
     let obj = { colors: reduced, locations: mapped1, start: point, end: point1, style: items2 };
     const tmp10 = closure_10;
-    const tmp2Result = tmp2(5605);
+    const tmp2Result = tmp2(5391);
     if (wide) {
       let obj2 = { width };
       wide = obj2;
@@ -1066,7 +1096,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp10Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThemedGradientCommon() {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp2 = closure_12();
@@ -1087,7 +1117,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = tmp2;
   cResult[2] = obj3;
   tmp6 = obj3;
-}) : (() => {
+}) : (function useThemedGradientCommon() {
   let isThemeDarkResult;
   let unsafe_rawColors;
   const obj = { styles: closure_12(), overlayColor: isThemeDarkResult ? unsafe_rawColors.BLACK : unsafe_rawColors.WHITE };
@@ -1098,7 +1128,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomThemedGradient(arg0) {
   let customTheme;
   let items;
   let items1;
@@ -1113,7 +1143,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(14);
   if (cResult[0] !== arg0) {
     ({ overlayOpacity, customTheme } = arg0);
-    const tmp9 = _objectWithoutProperties(arg0, closure_3);
+    const tmp9 = _objectWithoutProperties(arg0, theme);
     cResult[0] = arg0;
     cResult[1] = customTheme;
     cResult[2] = tmp9;
@@ -1180,7 +1210,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp5;
   cResult[7] = tmp14;
   tmp11 = tmp14;
-}) : ((overlayOpacity) => {
+}) : (function CustomThemedGradient(overlayOpacity) {
   let items;
   let items1;
   let obj5;
@@ -1213,9 +1243,8 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp7;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActiveGuildThemeGradient(arg0) {
   let activeGuildTheme;
-  let theme;
   let tmp5;
   let tmp6;
   let tmp7;
@@ -1259,7 +1288,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       let GUILD_THEME_DEFAULT_BASE_MIX = customUserThemeSettings.baseMix;
       if (GUILD_THEME_DEFAULT_BASE_MIX == null) {
-        GUILD_THEME_DEFAULT_BASE_MIX = tmp2(4733).GUILD_THEME_DEFAULT_BASE_MIX;
+        GUILD_THEME_DEFAULT_BASE_MIX = tmp2(4973).GUILD_THEME_DEFAULT_BASE_MIX;
       }
       if (cResult[8] === tmp6) {
         if (cResult[9] === tmp19) {
@@ -1308,12 +1337,11 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[16] = tmp17;
     tmp11 = tmp17;
   }
-}) : ((arg0) => {
+}) : (function ActiveGuildThemeGradient(arg0) {
   let GUILD_THEME_DEFAULT_BASE_MIX;
   let activeGuildTheme;
   let items;
   let num2;
-  let theme;
   ({ activeGuildTheme, theme } = arg0);
   const merged = Object.assign(arg0, Object.assign({ activeGuildTheme: 0, theme: 0 }));
   if ("custom" === activeGuildTheme.type) {
@@ -1333,7 +1361,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     GUILD_THEME_DEFAULT_BASE_MIX = customUserThemeSettings.baseMix;
     if (GUILD_THEME_DEFAULT_BASE_MIX == null) {
-      GUILD_THEME_DEFAULT_BASE_MIX = tmp14(4733).GUILD_THEME_DEFAULT_BASE_MIX;
+      GUILD_THEME_DEFAULT_BASE_MIX = tmp14(4973).GUILD_THEME_DEFAULT_BASE_MIX;
     }
     return tmp9(tmp10, obj2);
   } else {
@@ -1343,7 +1371,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemedGradient(arg0) {
   let gradientOverride;
   let gradientPreset;
   let items1;
@@ -1380,7 +1408,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp7 = useThemeDefault();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ClientThemesBackgroundStore];
-    const fn = function l() {
+    const fn = function n() {
       return { preset: gradientPreset.gradientPreset };
     };
     cResult[0] = items;
@@ -1501,7 +1529,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp14;
-}) : ((overlayOpacity) => {
+}) : (function ThemedGradient(overlayOpacity) {
   let gradientPreset;
   let items1;
   let items10;

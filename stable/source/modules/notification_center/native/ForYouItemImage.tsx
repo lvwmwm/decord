@@ -1,36 +1,34 @@
-// Module ID: 16365
-// Function ID: 16366
+// Module ID: 16887
+// Function ID: 16888
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 2070, 2074, 1377, 16366, 21, 4890, 587, 7125, 9542, 16367, 16368, 16369, 16370, 5974, 16371, 1188, 16372, 16373, 558, 576, 6657, 504, 7850, 7919, 5909, 16374, 4886, 2]
+// Dependencies: [19, 17, 2083, 2087, 1390, 16888, 21, 5092, 587, 6058, 8746, 16889, 16890, 16891, 16892, 6157, 16893, 1200, 16894, 16895, 558, 576, 6852, 504, 8299, 8369, 6185, 16896, 5088, 2]
 
-// Module 16365 (ForYouItemImage)
+// Module 16887 (ForYouItemImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import GuildRecord from "GuildRecord" /* 2070 */;
-import Pressables from "Pressables" /* 5909 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7125 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 7919 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9542 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16367 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 16368 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 16369 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 16370 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 16371 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 16372 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 16373 */;
+import native from "native" /* 1200 */;
+import GuildRecord from "GuildRecord" /* 2083 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6058 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import Pressables from "Pressables" /* 6185 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8369 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8746 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16889 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 16890 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 16891 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 16892 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 16893 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 16894 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 16895 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
-import Constants from "Constants" /* 16366 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import UserStore from "UserStore" /* 1390 */;
+import Constants from "Constants" /* 16888 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let item;
 
 let FRIEND_BACKGROUND;
 let MESSAGE_BACKGROUND;
@@ -76,12 +74,12 @@ function getLifecycleIcon(item_enum) {
           FastImageDefault;
           tmp5 = <tmp8 source={AssetRegistryDefault8} style={{ width: "105%" }} />;
         } else {
-          const Icon = tmp(1188).Icon;
+          const Icon = tmp(1200).Icon;
           tmp5 = <Icon source={AssetRegistryDefault5} />;
         }
       }
     }
-    const Icon2 = tmp(1188).Icon;
+    const Icon2 = tmp(1200).Icon;
     tmp5 = <Icon2 source={AssetRegistryDefault7} size={native.IconSizes.SMALL_20} color={nativeDefault.unsafe_rawColors.WHITE} />;
   }
   return tmp5;
@@ -118,7 +116,7 @@ obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_10 = createStyles(obj);
 let memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouItemImageWrapped(item) {
   let analyticsLocations;
   let first;
   let id;
@@ -158,7 +156,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((item) =
   if (null != stateFromStores) {
     if (cResult[3] === analyticsLocations) {
       if (cResult[4] === item.message_id) {
-        class N {
+        class F {
           constructor() {
             const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
             showUserProfileActionSheetDefault(obj);
@@ -172,7 +170,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((item) =
         cResult[10] = avatarSource;
       }
     }
-    class N {
+    class F {
       constructor() {
         const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
         showUserProfileActionSheetDefault(obj);
@@ -181,12 +179,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((item) =
     cResult[3] = analyticsLocations;
     cResult[4] = item.message_id;
     cResult[5] = stateFromStores;
-    cResult[6] = N;
+    cResult[6] = F;
   }
   if (null != item.icon_name) {
     let tmp24;
     if (cResult[18] !== item.icon_name) {
-      class N {
+      class F {
         constructor() {
           const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
           showUserProfileActionSheetDefault(obj);
@@ -198,7 +196,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((item) =
     } else {
       tmp24 = cResult[19];
     }
-    class N {
+    class F {
       constructor() {
         const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
         showUserProfileActionSheetDefault(obj);
@@ -210,7 +208,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((item) =
     const tmp28 = jsx(item(id[17]).Icon, { source: tmp24, color: tmp6.fallbackImage.color });
   } else if (null != item.icon_url) {
     tmp18 = null;
-    class N {
+    class F {
       constructor() {
         const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
         showUserProfileActionSheetDefault(obj);
@@ -220,7 +218,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((item) =
       let tmp20;
       if (cResult[23] !== item.icon_url) {
         const obj3 = { uri: null };
-        class N {
+        class F {
           constructor() {
             const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
             showUserProfileActionSheetDefault(obj);
@@ -232,7 +230,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((item) =
       } else {
         tmp20 = cResult[24];
       }
-      class N {
+      class F {
         constructor() {
           const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
           showUserProfileActionSheetDefault(obj);
@@ -245,14 +243,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((item) =
     }
   } else {
     tmp18 = null;
-    class N {
+    class F {
       constructor() {
         const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
         showUserProfileActionSheetDefault(obj);
       }
     }
     if (null == null) {
-      class N {
+      class F {
         constructor() {
           const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
           showUserProfileActionSheetDefault(obj);
@@ -265,7 +263,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((item) =
     if (cResult[51] === tmp4.container) {
       tmp29 = cResult[52];
     }
-    class N {
+    class F {
       constructor() {
         const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
         showUserProfileActionSheetDefault(obj);
@@ -281,7 +279,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((item) =
   cResult[51] = tmp4.container;
   cResult[52] = items1;
   tmp29 = items1;
-}) : ((item) => {
+}) : (function ForYouItemImageWrapped(item) {
   let brandBackground1;
   let items2;
   let tmp24Result;

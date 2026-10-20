@@ -1,45 +1,44 @@
-// Module ID: 17969
-// Function ID: 17970
+// Module ID: 18600
+// Function ID: 18601
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 4502, 17926, 15023, 1085, 2048, 21, 4890, 587, 558, 576, 1490, 17944, 17932, 6756, 9477, 4886, 1188, 17970, 5594, 6619, 17964, 17962, 17938, 15030, 17921, 11852, 1126, 17971, 15045, 4567, 6010, 6880, 9282, 2036, 17972, 1987, 10354, 10355, 9283, 2]
+// Dependencies: [32, 19, 17, 4743, 18557, 15503, 1085, 2062, 21, 5092, 587, 558, 576, 1503, 18575, 18563, 6956, 8672, 5088, 1200, 18601, 5379, 6814, 18595, 18593, 18569, 15510, 18552, 11923, 1126, 18602, 15525, 4808, 6201, 7089, 8525, 2049, 18603, 2000, 10009, 10010, 8774, 2]
 // Exports: default
 
-// Module 17969 (GuildSettingsRoleSubscriptionTierEdit)
-import react2 from "react" /* 19 */;
-import react3 from "react" /* 576 */;
+// Module 18600 (GuildSettingsRoleSubscriptionTierEdit)
+import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
-import useNavigation from "useNavigation" /* 1490 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4502 */;
-import ToastUtils from "ToastUtils" /* 4567 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
-import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 6756 */;
-import FormHeaderDefault from "FormHeader" /* 9477 */;
-import ErrorBlockDefault from "ErrorBlock" /* 11852 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15023 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15030 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 17921 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 17932 */;
-import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 17938 */;
-import EditStateContextProvider2 from "EditStateContextProvider" /* 17944 */;
-import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 17962 */;
-import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 17964 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17970 */;
-import ActionableNoticeDefault from "ActionableNotice" /* 17971 */;
+import native from "native" /* 1200 */;
+import useNavigation from "useNavigation" /* 1503 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4743 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
+import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 6956 */;
+import FormHeaderDefault from "FormHeader" /* 8672 */;
+import ErrorBlockDefault from "ErrorBlock" /* 11923 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15503 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15510 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18552 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18563 */;
+import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18569 */;
+import EditStateContextProvider2 from "EditStateContextProvider" /* 18575 */;
+import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 18593 */;
+import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 18595 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18601 */;
+import ActionableNoticeDefault from "ActionableNotice" /* 18602 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 17926 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18557 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const react = react2;
 const GuildRoleSubscriptionsStore = GuildRoleSubscriptionsStore2;
 let navigation;
 
@@ -52,9 +51,8 @@ let obj2;
 let obj3;
 let tmp;
 const intl4 = tmp(1126);
-const DismissibleActionSheet = tmp(10355);
+const DismissibleActionSheet = tmp(10010);
 let _slicedToArray = _slicedToArray_mod;
-const forwardRef = react2.forwardRef;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 const FetchState = GuildRoleSubscriptionsStore2.FetchState;
 const GuildRoleSubscriptionsTierScenes = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionsTierScenes;
@@ -74,7 +72,7 @@ let closure_19 = items.reduce((acc, item, index) => {
   return acc;
 }, {});
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ArchiveOrDeleteTierSection() {
   let archiving;
   let buttonText;
   let deleting;
@@ -82,7 +80,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let editStateId;
   let groupListingId;
   let handleArchiveOrDelete;
-  const obj = react3;
+  const obj = react2;
   const cResult = obj.c(18);
   const tmp4 = closure_17();
   const obj2 = useNavigation;
@@ -109,8 +107,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const obj5 = { size: native.Icon.Sizes.SMALL, disableColor: true, source: AssetRegistryDefault };
-        const Icon = tmp(1188).Icon;
-        const tmp17 = authStore2(Icon, obj5);
+        const Icon = tmp(1200).Icon;
+        const tmp17 = syncedClientThemes(Icon, obj5);
         cResult[6] = tmp17;
         tmp15 = tmp17;
       } else {
@@ -145,7 +143,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             const obj6 = { children: items };
             items = [tmp9, tmp11, tmp22];
-            const tmp29 = authStore3(closure_15, obj6);
+            const tmp29 = authStore4(authStore3, obj6);
             cResult[14] = tmp9;
             cResult[15] = tmp11;
             cResult[16] = tmp22;
@@ -153,7 +151,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             tmp26 = tmp29;
           }
           const obj7 = { style: tmp4.actionButton, children: tmp19 };
-          const tmp25 = authStore2(metroRequire, obj7);
+          const tmp25 = syncedClientThemes(metroRequire, obj7);
           cResult[11] = tmp4.actionButton;
           cResult[12] = tmp19;
           cResult[13] = tmp25;
@@ -161,7 +159,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       const obj8 = { variant: "destructive", grow: true, icon: tmp15, onPress: handleArchiveOrDelete, disabled: tmp18, text: buttonText };
-      const tmp21 = authStore2(components_Button_Button.Button, obj8);
+      const tmp21 = syncedClientThemes(components_Button_Button.Button, obj8);
       cResult[7] = buttonText;
       cResult[8] = handleArchiveOrDelete;
       cResult[9] = tmp18;
@@ -169,19 +167,19 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp19 = tmp21;
     }
     const obj9 = { style: tmp4.actionDescription, variant: "text-sm/medium", color: "text-default", children: descriptionText };
-    const tmp13 = authStore2(Text_Text.Text, obj9);
+    const tmp13 = syncedClientThemes(Text_Text.Text, obj9);
     cResult[3] = descriptionText;
     cResult[4] = tmp4.actionDescription;
     cResult[5] = tmp13;
     tmp11 = tmp13;
   }
   const obj10 = { style: tmp4.actionHeader, children: buttonText };
-  const tmp10 = authStore2(FormHeaderDefault, obj10);
+  const tmp10 = syncedClientThemes(FormHeaderDefault, obj10);
   cResult[0] = buttonText;
   cResult[1] = tmp4.actionHeader;
   cResult[2] = tmp10;
   tmp9 = tmp10;
-}) : (() => {
+}) : (function ArchiveOrDeleteTierSection() {
   let Button;
   let Icon;
   let archiving;
@@ -207,17 +205,17 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const allowSelfRemoveMonetization = obj3.useShouldRestrictUpdatingCreatorMonetizationSettings(guildId).allowSelfRemoveMonetization;
   items = [, , ];
   const obj4 = { style: tmp.actionHeader, children: buttonText };
-  items[0] = authStore2(FormHeaderDefault, obj4);
+  items[0] = syncedClientThemes(FormHeaderDefault, obj4);
   const obj5 = { style: tmp.actionDescription, variant: "text-sm/medium", color: "text-default", children: descriptionText };
-  items[1] = authStore2(Text_Text.Text, obj5);
-  const obj6 = { style: tmp.actionButton, children: authStore2(Button, obj7) };
-  obj7 = { variant: "destructive", grow: true, icon: authStore2(Icon, obj8), onPress: handleArchiveOrDelete, disabled: tmp9, text: buttonText };
+  items[1] = syncedClientThemes(Text_Text.Text, obj5);
+  const obj6 = { style: tmp.actionButton, children: syncedClientThemes(Button, obj7) };
+  obj7 = { variant: "destructive", grow: true, icon: syncedClientThemes(Icon, obj8), onPress: handleArchiveOrDelete, disabled: tmp9, text: buttonText };
   Button = components_Button_Button.Button;
   obj8 = { size: native.Icon.Sizes.SMALL, disableColor: true, source: AssetRegistryDefault };
   Icon = native.Icon;
   tmp9 = !allowSelfRemoveMonetization;
-  const tmp5 = authStore3;
-  const tmp6 = closure_15;
+  const tmp5 = authStore4;
+  const tmp6 = authStore3;
   const tmp8 = metroRequire;
   if (allowSelfRemoveMonetization) {
     tmp9 = deleting;
@@ -226,12 +224,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = archiving;
   }
   const obj9 = { children: items };
-  items[2] = authStore2(tmp8, obj6);
+  items[2] = syncedClientThemes(tmp8, obj6);
   return tmp5(tmp6, obj9);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(selectedTab) {
-  const obj = react3;
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabContent(selectedTab) {
+  const obj = react2;
   const cResult = obj.c(7);
   selectedTab = selectedTab.selectedTab;
   const tmp4 = closure_17();
@@ -241,9 +239,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(select
     const _Symbol3 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { bottom: true, children: items };
-      const SafeAreaPaddingView2 = tmp(6619).SafeAreaPaddingView;
-      items = [authStore2(GuildRoleSubscriptionTierDetailsModal.GuildRoleSubscriptionTierDetailsTab, {}), authStore2(closure_20, {})];
-      const tmp26 = authStore3(SafeAreaPaddingView2, obj2);
+      const SafeAreaPaddingView2 = tmp(6814).SafeAreaPaddingView;
+      items = [syncedClientThemes(GuildRoleSubscriptionTierDetailsModal.GuildRoleSubscriptionTierDetailsTab, {}), syncedClientThemes(closure_20, {})];
+      const tmp26 = authStore4(SafeAreaPaddingView2, obj2);
       cResult[0] = tmp26;
       first = tmp26;
     } else {
@@ -251,7 +249,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(select
     }
     if (cResult[1] !== tmp4.tabContent) {
       const obj3 = { style: tmp4.tabContent, children: first };
-      const tmp30 = authStore2(metroImportDefault, obj3);
+      const tmp30 = syncedClientThemes(metroImportDefault, obj3);
       cResult[1] = tmp4.tabContent;
       cResult[2] = tmp30;
       tmp27 = tmp30;
@@ -264,9 +262,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(select
     let tmp17;
     const _Symbol2 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { bottom: true, children: authStore2(GuildRoleSubscriptionTierDesignModal.GuildRoleSubscriptionTierDesignTab, {}) };
-      const SafeAreaPaddingView = tmp(6619).SafeAreaPaddingView;
-      const tmp16 = authStore2(SafeAreaPaddingView, obj4);
+      const obj4 = { bottom: true, children: syncedClientThemes(GuildRoleSubscriptionTierDesignModal.GuildRoleSubscriptionTierDesignTab, {}) };
+      const SafeAreaPaddingView = tmp(6814).SafeAreaPaddingView;
+      const tmp16 = syncedClientThemes(SafeAreaPaddingView, obj4);
       cResult[3] = tmp16;
       tmp14 = tmp16;
     } else {
@@ -274,7 +272,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(select
     }
     if (cResult[4] !== tmp4.tabContent) {
       const obj5 = { style: tmp4.tabContent, children: tmp14 };
-      const tmp20 = authStore2(metroImportDefault, obj5);
+      const tmp20 = syncedClientThemes(metroImportDefault, obj5);
       cResult[4] = tmp4.tabContent;
       cResult[5] = tmp20;
       tmp17 = tmp20;
@@ -286,7 +284,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(select
     let tmp10;
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp12 = authStore2(GuildRoleSubscriptionTierBenefitsModal.GuildRoleSubscriptionTierBenefitsTab, {});
+      const tmp12 = syncedClientThemes(GuildRoleSubscriptionTierBenefitsModal.GuildRoleSubscriptionTierBenefitsTab, {});
       cResult[6] = tmp12;
       tmp10 = tmp12;
     } else {
@@ -301,7 +299,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(select
     const error = new Error("Unsupported scene: " + selectedTab);
     throw error;
   }
-}) : (function(selectedTab) {
+}) : (function TabContent(selectedTab) {
   let SafeAreaPaddingView;
   let SafeAreaPaddingView2;
   let obj3;
@@ -309,18 +307,18 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(select
   selectedTab = selectedTab.selectedTab;
   const tmp = closure_17();
   if (GuildRoleSubscriptionsTierScenes.DETAILS === selectedTab) {
-    const obj2 = { style: tmp.tabContent, children: authStore3(SafeAreaPaddingView2, obj3) };
+    const obj2 = { style: tmp.tabContent, children: authStore4(SafeAreaPaddingView2, obj3) };
     obj3 = { bottom: true, children: items };
     SafeAreaPaddingView2 = common_SafeAreaView.SafeAreaPaddingView;
-    items = [authStore2(GuildRoleSubscriptionTierDetailsModal.GuildRoleSubscriptionTierDetailsTab, {}), authStore2(closure_20, {})];
-    return authStore2(metroImportDefault, obj2);
+    items = [syncedClientThemes(GuildRoleSubscriptionTierDetailsModal.GuildRoleSubscriptionTierDetailsTab, {}), syncedClientThemes(closure_20, {})];
+    return syncedClientThemes(metroImportDefault, obj2);
   } else if (GuildRoleSubscriptionsTierScenes.DESIGN === selectedTab) {
-    const obj = { style: tmp.tabContent, children: authStore2(SafeAreaPaddingView, obj4) };
-    obj4 = { bottom: true, children: authStore2(GuildRoleSubscriptionTierDesignModal.GuildRoleSubscriptionTierDesignTab, {}) };
+    const obj = { style: tmp.tabContent, children: syncedClientThemes(SafeAreaPaddingView, obj4) };
+    obj4 = { bottom: true, children: syncedClientThemes(GuildRoleSubscriptionTierDesignModal.GuildRoleSubscriptionTierDesignTab, {}) };
     SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
-    return authStore2(metroImportDefault, obj);
+    return syncedClientThemes(metroImportDefault, obj);
   } else if (GuildRoleSubscriptionsTierScenes.BENEFITS === selectedTab) {
-    return authStore2(GuildRoleSubscriptionTierBenefitsModal.GuildRoleSubscriptionTierBenefitsTab, {});
+    return syncedClientThemes(GuildRoleSubscriptionTierBenefitsModal.GuildRoleSubscriptionTierBenefitsTab, {});
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
@@ -331,15 +329,16 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function(select
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function DraftPublishPrompt(ref) {
   let error;
   let publishSubscriptionListing;
   let submitting;
   let tmp8;
   const tmp = require;
   const tmp2 = dependencyMap;
-  let obj = react3;
+  let obj = react2;
   const cResult = obj.c(21);
+  ref = ref.ref;
   const obj2 = EditStateContextProvider2;
   const editStateContext = obj2.useEditStateContext();
   const guildId = editStateContext.guildId;
@@ -354,7 +353,7 @@ let closure_22 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   const obj5 = RoleSubscriptionSettingsDisabledContext;
   const roleSubscriptionSettingsDisabled = obj5.useRoleSubscriptionSettingsDisabled();
   if (cResult[0] !== clearError) {
-    const fn = function o() {
+    const fn = function s() {
       return { dismissError: clearError };
     };
     cResult[0] = clearError;
@@ -383,7 +382,7 @@ let closure_22 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
                 let tmp32;
                 const _Symbol = Symbol;
                 if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-                  const tmp22 = authStore2(native.Spacer, { size: 16 });
+                  const tmp22 = syncedClientThemes(native.Spacer, { size: 16 });
                   cResult[7] = tmp22;
                   tmp20 = tmp22;
                 } else {
@@ -399,7 +398,7 @@ let closure_22 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
                 }
                 if (cResult[10] !== tmp23) {
                   const obj6 = { children: tmp23 };
-                  const tmp28 = authStore2(ErrorBlockDefault, obj6);
+                  const tmp28 = syncedClientThemes(ErrorBlockDefault, obj6);
                   cResult[10] = tmp23;
                   cResult[11] = tmp28;
                   tmp25 = tmp28;
@@ -408,7 +407,7 @@ let closure_22 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
                 }
                 const _Symbol2 = Symbol;
                 if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-                  const tmp31 = authStore2(native.Spacer, { size: 16 });
+                  const tmp31 = syncedClientThemes(native.Spacer, { size: 16 });
                   cResult[12] = tmp31;
                   tmp29 = tmp31;
                 } else {
@@ -417,7 +416,7 @@ let closure_22 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
                 if (cResult[13] !== tmp25) {
                   const obj7 = { children: items };
                   items = [tmp20, tmp25, tmp29];
-                  const tmp35 = authStore3(closure_15, obj7);
+                  const tmp35 = authStore4(authStore3, obj7);
                   cResult[13] = tmp25;
                   cResult[14] = tmp35;
                   tmp32 = tmp35;
@@ -450,7 +449,7 @@ let closure_22 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
                   }
                 }
                 const obj8 = { message: tmp11, ctaMessage: tmp12, onClick: tmp10, submitting, disabled: roleSubscriptionSettingsDisabled };
-                const tmp18 = authStore2(ActionableNoticeDefault, obj8);
+                const tmp18 = syncedClientThemes(ActionableNoticeDefault, obj8);
                 cResult[17] = tmp10;
                 cResult[18] = roleSubscriptionSettingsDisabled;
                 cResult[19] = submitting;
@@ -461,88 +460,93 @@ let closure_22 = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
             }
           }
         }
-        const fn2 = function l() {
+        function handlePublish() {
           if (null != groupListingId) {
             if (null != subscriptionListing) {
               const obj = { guildId, groupListingId: tmp, listingId: tmp2.id };
               return publishSubscriptionListing(obj);
             }
           }
-        };
+        }
         cResult[2] = groupListingId;
         cResult[3] = guildId;
         cResult[4] = subscriptionListing;
         cResult[5] = publishSubscriptionListing;
-        cResult[6] = fn2;
-        tmp10 = fn2;
+        cResult[6] = handlePublish;
+        tmp10 = handlePublish;
       }
     }
   }
   return null;
-}) : ((arg0, ref) => {
-  let closure_129_0;
-  let closure_129_2;
-  let closure_129_3;
+}) : (function DraftPublishPrompt(ref) {
+  let c0;
+  let c2;
+  let c3;
   let error;
   let groupListingId;
   let intl;
   let intl2;
   let submitting;
-  const tmp = require;
-  const tmp2 = dependencyMap;
+  ref = ref.ref;
+  const merged = Object.assign(ref, Object.assign({ ref: 0 }));
+  c0 = undefined;
+  groupListingId = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  const tmp2 = require;
   let obj = EditStateContextProvider2;
   const editStateContext = obj.useEditStateContext();
-  ({ guildId: closure_129_0, groupListingId } = editStateContext);
+  ({ guildId: c0, groupListingId } = editStateContext);
   const editStateId = editStateContext.editStateId;
   const obj2 = GuildRoleSubscriptionsHooks;
   const publishSubscriptionListing = obj2.usePublishSubscriptionListing();
-  ({ error, publishSubscriptionListing: closure_129_2, clearError: closure_129_3, submitting } = publishSubscriptionListing);
+  ({ error, publishSubscriptionListing: c2, clearError: c3, submitting } = publishSubscriptionListing);
   const obj3 = GuildRoleSubscriptionsHooks;
   const subscriptionListing = obj3.useSubscriptionListing(editStateId);
   const obj4 = RoleSubscriptionSettingsDisabledContext;
   const roleSubscriptionSettingsDisabled = obj4.useRoleSubscriptionSettingsDisabled();
   const imperativeHandle = react.useImperativeHandle(ref, () => ({ dismissError }));
-  let tmp8 = null;
+  let tmp9 = null;
   if (null != groupListingId) {
-    tmp8 = null;
+    tmp9 = null;
     if (null != subscriptionListing) {
-      tmp8 = null;
+      tmp9 = null;
       if (!subscriptionListing.published) {
-        let tmp14;
+        let tmp15;
         if (null != error) {
           const obj5 = { children: items };
-          items = [authStore2(native.Spacer, { size: 16 }), , ];
+          items = [syncedClientThemes(native.Spacer, { size: 16 }), , ];
           const obj6 = { children: error.getAnyErrorMessage() };
-          const tmp13 = ErrorBlockDefault;
-          items[1] = authStore2(tmp13, obj6);
-          items[2] = authStore2(native.Spacer, { size: 16 });
-          tmp14 = authStore3(closure_15, obj5);
+          const tmp14 = ErrorBlockDefault;
+          items[1] = syncedClientThemes(tmp14, obj6);
+          items[2] = syncedClientThemes(native.Spacer, { size: 16 });
+          tmp15 = authStore4(authStore3, obj5);
         } else {
           const obj7 = {
             message: intl.string(intl4.t.V5mSpz),
             ctaMessage: intl2.string(intl4.t.Lj6R5m),
-            onClick() {
+            onClick: function handlePublish() {
                       if (null != groupListingId) {
                         if (null != subscriptionListing) {
                           const obj = { guildId, groupListingId: tmp, listingId: tmp2.id };
-                          return closure_1_2(obj);
+                          return _undefined(obj);
                         }
                       }
                     },
             submitting,
             disabled: roleSubscriptionSettingsDisabled
           };
-          const tmp17 = ActionableNoticeDefault;
+          const tmp18 = ActionableNoticeDefault;
           intl = intl4.intl;
           intl2 = intl4.intl;
-          tmp14 = authStore2(tmp17, obj7);
+          tmp15 = syncedClientThemes(tmp18, obj7);
         }
-        tmp8 = tmp14;
+        tmp9 = tmp15;
       }
     }
   }
-  return tmp8;
-}));
+  return tmp9;
+});
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionTierEdit.tsx");
 
 export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
@@ -557,7 +561,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
   let obj7;
   let obj8;
   let tmp17;
-  const f132723 = (currentScene) => {
+  const f135416 = (currentScene) => {
     let DETAILS = currentScene.currentScene;
     if (DETAILS == null) {
       DETAILS = handleCreateOrUpdateFromEditState.DETAILS;
@@ -637,9 +641,9 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
       presentError(anyErrorMessage);
     }
   }, items1);
-  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f132723), 2);
+  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f135416), 2);
   const items2 = [navigation, hasChanges, first1, loading, callback];
-  _slicedToArray(loading.useRoleTierEditStore(f132723), 2);
+  _slicedToArray(loading.useRoleTierEditStore(f135416), 2);
   const layoutEffect1 = obj.useLayoutEffect(() => {
     let onPress;
     let title;
@@ -727,7 +731,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
               actionSheetKey: "TierTemplateSelected",
               importer: GuildRoleSubscriptionsTierTemplateSelectedActionSheetImporter
             };
-            tmp3 = authStore2(DismissibleActionSheet.DismissibleActionSheet, obj);
+            tmp3 = syncedClientThemes(DismissibleActionSheet.DismissibleActionSheet, obj);
           }
           return tmp3;
         }

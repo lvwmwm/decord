@@ -1,22 +1,22 @@
-// Module ID: 7455
-// Function ID: 7456
+// Module ID: 7964
+// Function ID: 7965
 // Name: FadeOutLottieAnimation
-// Dependencies: [32, 109, 19, 4879, 21, 4890, 558, 576, 504, 4612, 4891, 5920, 2]
+// Dependencies: [32, 109, 19, 5081, 21, 5092, 558, 576, 504, 4850, 5093, 6106, 2]
 
-// Module 7455 (FadeOutLottieAnimation)
+// Module 7964 (FadeOutLottieAnimation)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import createStyles from "createStyles" /* 4890 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, num2, obj1, obj5, obj6, onComplete, str, tmp6, tmp7;
+let _require, dependencyMap, num2, obj1, obj5, obj6, str, tmp6, tmp7;
 
 let closure_3 = ["onComplete"];
 const jsx = Fragment.jsx;
@@ -25,7 +25,7 @@ const __initData = { code: "function FadeOutLottieAnimationTsx1(){const{isAnimat
 const __initData2 = { code: "function FadeOutLottieAnimationTsx2(finished){const{runOnJS,setIsFadeOut}=this.__closure;if(finished){runOnJS(setIsFadeOut)(false);}}" };
 const __initData3 = { code: "function FadeOutLottieAnimationTsx3(){const{isAnimationComplete,isFadeOut,withTiming,runOnJS,setIsFadeOut}=this.__closure;if(!isAnimationComplete){return{opacity:1};}if(isFadeOut){return{opacity:withTiming(0,{duration:300},'respect-motion-settings',function(finished){if(finished)runOnJS(setIsFadeOut)(false);})};}return{opacity:0};}" };
 let closure_13 = { code: "function FadeOutLottieAnimationTsx4(finished){const{runOnJS,setIsFadeOut}=this.__closure;if(finished)runOnJS(setIsFadeOut)(false);}" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FadeOutLottieAnimation(onComplete) {
   let closure_0;
   let closure_2;
   let first1;
@@ -77,26 +77,20 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp15, tmp16);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class L {
-      constructor() {
-        closure_2(false);
-      }
-    }
+    const fn2 = function b() {
+      closure_2(false);
+    };
     const items1 = [];
-    cResult[5] = L;
+    cResult[5] = fn2;
     cResult[6] = items1;
     tmp20 = items1;
-    tmp19 = L;
+    tmp19 = fn2;
   } else {
-    class L {
-      constructor() {
-        closure_2(false);
-      }
-    }
+    tmp19 = cResult[5];
     tmp20 = cResult[6];
   }
   const effect = obj2.useEffect(tmp19, tmp20);
-  const tmpResult2 = tmp(4612);
+  const tmpResult2 = tmp(4850);
   class H {
     constructor() {
       tmp = closure_1;
@@ -140,24 +134,19 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
       return obj;
     }
   }
-  let obj3 = { isAnimationComplete, isFadeOut: first1, withTiming: tmp(4891).withTiming, runOnJS: tmp(4612).runOnJS, setIsFadeOut: tmp14 };
+  let obj3 = { isAnimationComplete, isFadeOut: first1, withTiming: tmp(5093).withTiming, runOnJS: tmp(4850).runOnJS, setIsFadeOut: tmp14 };
   H.__closure = obj3;
   H.__workletHash = 1522072883983;
   H.__initData = __initData;
   const animatedStyle = tmpResult2.useAnimatedStyle(H);
   if (isAnimationComplete) {
-    class L {
-      constructor() {
-        closure_2(false);
-      }
+    if (!first1) {
+      return null;
     }
   }
+  let num8 = 1;
   if (stateFromStores) {
-    class L {
-      constructor() {
-        closure_2(false);
-      }
-    }
+    num8 = 0.5;
   }
   if (cResult[7] !== tmp4) {
     class M {
@@ -190,15 +179,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
       }
     }
   }
-  let obj4 = { style: tmp9.content, speed: num8, onAnimationFinish: tmp23 };
-  isAnimationComplete(5920);
+  let obj4 = { style: tmp9.content, speed: num8, onAnimationFinish: tmp24 };
+  isAnimationComplete(6106);
   const merged = Object.assign(tmp5);
   cResult[9] = tmp5;
   cResult[10] = tmp9.content;
-  cResult[11] = 1;
-  cResult[12] = tmp23;
-  cResult[13] = <tmp24 style={tmp9.content} speed={num8} onAnimationFinish={tmp23} />;
-}) : ((onComplete) => {
+  cResult[11] = num8;
+  cResult[12] = tmp24;
+  cResult[13] = <tmp25 style={tmp9.content} speed={num8} onAnimationFinish={tmp24} />;
+}) : (function FadeOutLottieAnimation(onComplete) {
   let closure_2;
   let num;
   let tmp14Result;
@@ -219,7 +208,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
   const effect = react.useEffect(() => {
     closure_2(false);
   }, []);
-  onComplete(4612);
+  onComplete(4850);
   let fn = function v() {
     let fn;
     let obj;
@@ -253,13 +242,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
     }
     return obj;
   };
-  let obj2 = { isAnimationComplete, isFadeOut: first1, withTiming: onComplete(4891).withTiming, runOnJS: onComplete(4612).runOnJS, setIsFadeOut: tmp7 };
+  let obj2 = { isAnimationComplete, isFadeOut: first1, withTiming: onComplete(5093).withTiming, runOnJS: onComplete(4850).runOnJS, setIsFadeOut: tmp7 };
   fn.__closure = obj2;
   fn.__workletHash = 7916715451819;
   fn.__initData = __initData3;
   if (!isAnimationComplete) {
     let obj3 = { style: tmp12, children: null };
-    const View = isAnimationComplete(4612).View;
+    const View = isAnimationComplete(4850).View;
     let obj4 = {
       style: tmp2.content,
       speed: num,
@@ -271,7 +260,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
         }
     };
     num = 1;
-    isAnimationComplete(5920);
+    isAnimationComplete(6106);
     if (stateFromStores) {
       num = 0.5;
     }

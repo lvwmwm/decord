@@ -1,19 +1,19 @@
-// Module ID: 6074
-// Function ID: 6075
+// Module ID: 6265
+// Function ID: 6266
 // Name: TableRowGroup
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4886, 4580, 5988, 5994, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 4818, 6175, 6181, 2]
 // Exports: TableRowGroup
 
-// Module 6074 (TableRowGroup)
+// Module 6265 (TableRowGroup)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4580 */;
-import TableRowDivider from "TableRowDivider" /* 5988 */;
-import react3 from "react" /* 5994 */;
+import useToken from "useToken" /* 4818 */;
+import TableRowDivider from "TableRowDivider" /* 6175 */;
+import react3 from "react" /* 6181 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const Text_Text = tmp(4886);
+const Text_Text = tmp(5088);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -34,7 +34,7 @@ obj2 = { borderRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, ove
 createStyles = createStyles.createStyles;
 obj3 = { borderBottomLeftRadius: nativeDefault.radii.none, borderBottomRightRadius: nativeDefault.radii.none };
 let closure_8 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRowGroupTitle(arg0) {
   let lineClamp;
   let style;
   let title;
@@ -69,7 +69,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.title;
   cResult[2] = items;
   tmp5 = items;
-}) : ((arg0) => {
+}) : (function TableRowGroupTitle(arg0) {
   let items;
   let lineClamp;
   let style;

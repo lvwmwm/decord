@@ -1,91 +1,85 @@
-// Module ID: 5892
-// Function ID: 5893
+// Module ID: 8231
+// Function ID: 8232
 // Name: GameAutocompleteStore
-// Dependencies: [1444, 504, 5893, 5894, 584, 2]
+// Dependencies: [1102, 1457, 504, 8232, 584, 2]
 
-// Module 5892 (GameAutocompleteStore)
+// Module 8231 (GameAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LRUCacheDefault from "LRUCache" /* 1444 */;
-import GameAutocompleteTypes from "GameAutocompleteTypes" /* 5893 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5894 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import LRUCacheDefault from "LRUCache" /* 1457 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8232 */;
 import size from "module_2" /* 2 */;
+
+const require = globalThis.__r;
+let _require;
 
 function getCacheKey(arg0, arg1) {
   return "" + arg0 + ":" + arg1;
 }
-const _false = new LRUCacheDefault({ max: 100 });
-const tmp2 = new LRUCacheDefault({ max: 100 });
+const HOUR = DurationsDefault.Millis.HOUR;
+let obj = { max: 100, maxAge: HOUR };
+const _false = new LRUCacheDefault(obj);
+const tmp2 = new LRUCacheDefault(obj);
 const set = new Set();
-let tmp4 = new LRUCacheDefault({ max: 500 });
+const obj2 = { max: 500, maxAge: HOUR };
+let tmp4 = new LRUCacheDefault(obj2);
 const hasOwnProperty = tmp4;
 const Store = get_initializedDefault.Store;
 class GameAutocompleteStore extends Store {
-  getResults(query) {
-    let DEFAULT = arg1;
-    if (arg1 === undefined) {
-      DEFAULT = GameAutocompleteTypes.GameAutocompleteProfile.DEFAULT;
-    }
+  getResults(name, arg1) {
     const obj = GameAutocompleteUtils;
-    const result = obj.normalizeGameAutocompleteQuery(query);
+    const result = obj.normalizeGameAutocompleteQuery(name);
     let peekResult;
     if (null != result) {
       const _HermesInternal = HermesInternal;
-      peekResult = navigation.peek("" + DEFAULT + ":" + result);
+      peekResult = navigation.peek("" + arg1 + ":" + result);
     }
     return peekResult;
   }
-  getClosestResults(result) {
-    let DEFAULT = arg1;
-    if (arg1 === undefined) {
-      DEFAULT = GameAutocompleteTypes.GameAutocompleteProfile.DEFAULT;
-    }
+  getClosestResults(result, DEFAULT) {
     const obj = GameAutocompleteUtils;
     result = obj.normalizeGameAutocompleteQuery(result);
     if (null != result) {
       let length = result.length;
       if (length >= 1) {
+        const substr = result.slice(0, length);
         const _HermesInternal = HermesInternal;
-        const peekResult = navigation.peek("" + DEFAULT + ":" + result.slice(0, length));
+        const peekResult = navigation.peek("" + DEFAULT + ":" + substr);
         while (null == peekResult) {
           length = length - 1;
         }
-        return peekResult;
+        return { query: substr, results: peekResult };
       }
     }
   }
-  shouldSuppressFetch(query, DEFAULT) {
-    if (DEFAULT === undefined) {
-      DEFAULT = DEFAULT(5893).GameAutocompleteProfile.DEFAULT;
-    }
-    const obj = DEFAULT(5894);
-    const result = obj.normalizeGameAutocompleteQuery(query);
-    const tmp3 = DEFAULT;
+  shouldSuppressFetch(result, arg1) {
+    let closure_0;
+    _require = arg1;
+    const obj = require("GameAutocompleteUtils");
+    result = obj.normalizeGameAutocompleteQuery(result);
+    const tmp = _require;
     if (null == result) {
       return false;
     } else {
       const _HermesInternal = HermesInternal;
-      const combined = "" + DEFAULT + ":" + result;
+      const combined = "" + arg1 + ":" + result;
       const hasItem = navigation.has(combined);
       let result1 = !hasItem && !set.has(combined);
       if (result1) {
-        const tmp3Result = tmp3(5894);
-        result1 = tmp3Result.shouldSuppressAutocompleteFetch(result, (arg0) => navigation.peek("" + DEFAULT + ":" + arg0));
+        const tmpResult = tmp(8232);
+        result1 = tmpResult.shouldSuppressAutocompleteFetch(result, (arg0) => navigation.peek("" + closure_0 + ":" + arg0));
       }
       return result1;
     }
   }
-  isFetching(query) {
-    let DEFAULT = arg1;
-    if (arg1 === undefined) {
-      DEFAULT = GameAutocompleteTypes.GameAutocompleteProfile.DEFAULT;
-    }
+  isFetching(name, arg1) {
     const obj = GameAutocompleteUtils;
-    const result = obj.normalizeGameAutocompleteQuery(query);
+    const result = obj.normalizeGameAutocompleteQuery(name);
     let hasItem = null != result;
     if (hasItem) {
       const _HermesInternal = HermesInternal;
-      hasItem = set.has("" + DEFAULT + ":" + result);
+      hasItem = set.has("" + arg1 + ":" + result);
     }
     return hasItem;
   }
@@ -95,18 +89,18 @@ class GameAutocompleteStore extends Store {
 }
 const prototype = GameAutocompleteStore.prototype;
 GameAutocompleteStore.displayName = "GameAutocompleteStore";
-let obj = {
+const obj3 = {
   LOGOUT: function handleLogout() {
     navigation.reset();
     new Set();
     navigation2.reset();
   },
-  GAME_AUTOCOMPLETE_FETCH: function handleFetch(profile) {
-    set.add("" + profile.profile + ":" + profile.query);
+  GAME_AUTOCOMPLETE_FETCH: function handleFetch(filterGroup) {
+    set.add("" + filterGroup.filterGroup + ":" + filterGroup.query);
   },
   GAME_AUTOCOMPLETE_FETCH_SUCCESS: function handleFetchSuccess(results) {
     results = results.results;
-    const tmp = getCacheKey(results.profile, results.query);
+    const tmp = getCacheKey(results.filterGroup, results.query);
     set.delete(tmp);
     const result = navigation.set(tmp, results);
     for (const item10017 of results) {
@@ -114,11 +108,11 @@ let obj = {
       continue;
     }
   },
-  GAME_AUTOCOMPLETE_FETCH_FAILURE: function handleFetchFailure(profile) {
-    set.delete("" + profile.profile + ":" + profile.query);
+  GAME_AUTOCOMPLETE_FETCH_FAILURE: function handleFetchFailure(filterGroup) {
+    set.delete("" + filterGroup.filterGroup + ":" + filterGroup.query);
   }
 };
-const gameAutocompleteStore = new GameAutocompleteStore(DispatcherDefault, obj);
+const gameAutocompleteStore = new GameAutocompleteStore(DispatcherDefault, obj3);
 let result = size.fileFinishedImporting("modules/games/autocomplete/GameAutocompleteStore.tsx");
 
 export default gameAutocompleteStore;

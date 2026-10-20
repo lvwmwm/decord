@@ -1,26 +1,26 @@
-// Module ID: 10594
-// Function ID: 10595
+// Module ID: 10220
+// Function ID: 10221
 // Name: useUserListData
-// Dependencies: [109, 32, 19, 7146, 7142, 7143, 1391, 4519, 1377, 1085, 4504, 7141, 9500, 584, 7145, 5704, 12, 1126, 558, 576, 9509, 2]
+// Dependencies: [109, 32, 19, 7346, 7342, 7343, 1404, 4760, 1390, 1085, 4745, 7341, 8699, 584, 7345, 6097, 12, 1126, 558, 576, 8712, 2]
 
-// Module 10594 (useUserListData)
+// Module 10220 (useUserListData)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import GuildUtilsDefault from "GuildUtils" /* 5704 */;
-import UserSearchItemsDefault from "UserSearchItems" /* 7141 */;
-import UserSearchUtils from "UserSearchUtils" /* 7145 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9500 */;
+import GuildUtilsDefault from "GuildUtils" /* 6097 */;
+import UserSearchItemsDefault from "UserSearchItems" /* 7341 */;
+import UserSearchUtils from "UserSearchUtils" /* 7345 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 8699 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7146 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7142 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7143 */;
-import UserRecord from "UserRecord" /* 1391 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserStore from "UserStore" /* 1377 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7346 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7342 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7343 */;
+import UserRecord from "UserRecord" /* 1404 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -131,7 +131,7 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   let withFriendSuggestions;
   let withFriends;
   let withGuildMembers;
-  const f104635 = (items) => items.items;
+  const f104366 = (items) => items.items;
   ({ data, withFriends, excludeCurrentUser } = affinitySuggestionsLimit);
   ({ withGuildMembers, withAffinitySuggestions, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam } = affinitySuggestionsLimit);
   if (excludeCurrentUser === undefined) {
@@ -198,8 +198,8 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   } else {
     items11 = [];
   }
-  let items9 = [{ title: null, items: items11.flatMap(f104635) }];
-  const obj = { title: null, items: items11.flatMap(f104635) };
+  let items9 = [{ title: null, items: items11.flatMap(f104366) }];
+  const obj = { title: null, items: items11.flatMap(f104366) };
   const obj2 = { title: intl.string(intl6.t.HbJ7eD), items: valueResult2 };
   intl = intl6.intl;
   if (withAffinitySuggestions) {
@@ -259,7 +259,7 @@ const RelationshipTypes = Constants.RelationshipTypes;
 let items = [, , , ];
 ({ FRIEND: arr[0], SUGGESTION: arr[1], PENDING_INCOMING: arr[2], PENDING_OUTGOING: arr[3] } = RelationshipTypes);
 const set = new Set(items);
-const authStore3 = { AffinitySuggestions: "AFFINITY_SUGGESTIONS", Friends: "FRIENDS", FriendRequests: "FRIEND_REQUESTS", FriendRequestsIncoming: "FRIEND_REQUESTS_INCOMING", FriendRequestsOutgoing: "FRIEND_REQUESTS_OUTGOING", FriendRequestsSpam: "FRIEND_REQUESTS_SPAM", FriendSuggestions: "FRIEND_SUGGESTIONS", GuildMembers: "GUILD_MEMBERS" };
+const authStore4 = { AffinitySuggestions: "AFFINITY_SUGGESTIONS", Friends: "FRIENDS", FriendRequests: "FRIEND_REQUESTS", FriendRequestsIncoming: "FRIEND_REQUESTS_INCOMING", FriendRequestsOutgoing: "FRIEND_REQUESTS_OUTGOING", FriendRequestsSpam: "FRIEND_REQUESTS_SPAM", FriendSuggestions: "FRIEND_SUGGESTIONS", GuildMembers: "GUILD_MEMBERS" };
 class UserSearch {
   constructor(arg0, withGameFriends) {
     let spam;
@@ -272,7 +272,7 @@ class UserSearch {
     obj.currentQuery = "";
     obj.affinities = {};
     obj.userSearchContext = null;
-    const secondaryIndexMap = new obj(4504).SecondaryIndexMap((arg0) => {
+    const secondaryIndexMap = new obj(4745).SecondaryIndexMap((arg0) => {
       let names;
       let type;
       ({ names, type } = arg0);
@@ -569,7 +569,7 @@ class UserSearch {
       }
     }
   }
-  filter(toLocaleLowerCase) {
+  filter(toLocaleLowerCase, arg1) {
     const self = this;
     _require = toLocaleLowerCase;
     let tmp = dependencyMap;
@@ -712,7 +712,7 @@ class UserSearch {
       if ("" !== self.currentQuery) {
         nick = isMatch(names, self.currentQuery, { contains: true });
       }
-      const tmp12Result = tmp12(7145);
+      const tmp12Result = tmp12(7345);
       const relationshipType = tmp12Result.getRelationshipType(user.id);
       if (relationshipType !== RelationshipTypes.FRIEND) {
         const gameFriendsForUser = GameRelationshipStore.getGameFriendsForUser(id);
@@ -772,7 +772,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserListD
   let arr;
   let excludeCurrentUser;
   let first;
-  let tmp6;
+  let tmp4;
   let withAffinitySuggestions;
   let withAlphabeticalSections;
   let withFriendRequests;
@@ -783,17 +783,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserListD
   let withFriends;
   let withGameFriends;
   let obj = query(576);
-  const cResult = obj.c(34);
+  const cResult = obj.c(32);
   query = query.query;
   const withGuildMembers = query.withGuildMembers;
   ({ withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, excludeCurrentUser, affinitySuggestionsLimit, withAlphabeticalSections } = query);
-  let num = 5;
-  if (undefined !== affinitySuggestionsLimit) {
-    num = affinitySuggestionsLimit;
-  }
-  [tmp6, dependencyMap] = react.useState(0);
+  [tmp4, dependencyMap] = react.useState(0);
   _slicedToArray(react.useState(0), 2);
-  const tmp4 = _slicedToArray;
+  const obj2 = react;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function s() {
       return dependencyMap(Date.now());
@@ -805,112 +801,24 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserListD
   }
   if (cResult[1] !== withGameFriends) {
     const self = this;
-    const tmp11 = new UserSearch(first, withGameFriends);
+    const tmp9 = new UserSearch(first, withGameFriends);
     cResult[1] = withGameFriends;
-    cResult[2] = tmp11;
-    arr = tmp11;
+    cResult[2] = tmp9;
+    arr = tmp9;
   } else {
     arr = cResult[2];
   }
   if (cResult[3] === query) {
-    let tmp12;
     if (cResult[4] === arr) {
-      tmp12 = cResult[5];
-    }
-    if (cResult[6] === tmp12) {
-      let tmp14;
-      if (cResult[7] === tmp6) {
-        tmp14 = cResult[8];
-      }
-      const first1 = tmp4(tmp14, 1)[0];
-      if (cResult[9] === arr) {
-        let tmp16;
-        let tmp17;
-        if (cResult[10] === withGuildMembers) {
-          tmp16 = cResult[11];
-          tmp17 = cResult[12];
+      if (cResult[7] === arr) {
+        let tmp12;
+        let tmp13;
+        if (cResult[8] === withGuildMembers) {
+          tmp12 = cResult[9];
+          tmp13 = cResult[10];
         }
-        const effect = obj2.useEffect(tmp16, tmp17);
-        if (cResult[13] === query) {
-          if (cResult[14] === arr) {
-            let tmp19;
-            let tmp20;
-            if (cResult[15] === withGuildMembers) {
-              tmp19 = cResult[16];
-              tmp20 = cResult[17];
-            }
-            const effect1 = obj2.useEffect(tmp19, tmp20);
-            const _Symbol = Symbol;
-            class T {
-              constructor() {
-                const response = arr.fetch(query, withGuildMembers);
-              }
-            }
-            class O {
-              constructor() {
-                obj = withGuildMembers(closure_2[16]);
-                closure_0 = obj.debounce(() => closure_1_2(Date.now()), 0);
-                subscription = closure_3.subscribe(() => {
-                  closure_0();
-                }, withGuildMembers);
-                return () => arr.unsubscribe();
-              }
-            }
-            const effect2 = obj2.useEffect(tmp23, tmp24);
-            if (cResult[20] === num) {
-              if (cResult[21] === first1) {
-                if (cResult[22] === (undefined !== excludeCurrentUser && excludeCurrentUser)) {
-                  if (cResult[23] === withAffinitySuggestions) {
-                    if (cResult[24] === (undefined === withAlphabeticalSections || withAlphabeticalSections)) {
-                      if (cResult[25] === withFriendRequests) {
-                        if (cResult[26] === withFriendRequestsIncoming) {
-                          if (cResult[27] === withFriendRequestsOutgoing) {
-                            if (cResult[28] === withFriendRequestsSpam) {
-                              if (cResult[29] === withFriendSuggestions) {
-                                if (cResult[30] === withFriends) {
-                                  if (cResult[31] === withGameFriends) {
-                                    let tmp26;
-                                    if (cResult[32] === withGuildMembers) {
-                                      tmp26 = cResult[33];
-                                    }
-                                    return tmp26;
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-            const obj3 = { data: first1, withGuildMembers, withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, excludeCurrentUser: undefined !== excludeCurrentUser && excludeCurrentUser, affinitySuggestionsLimit: num, withAlphabeticalSections: undefined === withAlphabeticalSections || withAlphabeticalSections };
-            const tmp28 = parseUserSearchResults(obj3);
-            cResult[20] = num;
-            cResult[21] = first1;
-            cResult[22] = undefined !== excludeCurrentUser && excludeCurrentUser;
-            cResult[23] = withAffinitySuggestions;
-            cResult[24] = undefined === withAlphabeticalSections || withAlphabeticalSections;
-            cResult[25] = withFriendRequests;
-            cResult[26] = withFriendRequestsIncoming;
-            cResult[27] = withFriendRequestsOutgoing;
-            cResult[28] = withFriendRequestsSpam;
-            cResult[29] = withFriendSuggestions;
-            cResult[30] = withFriends;
-            cResult[31] = withGameFriends;
-            cResult[32] = withGuildMembers;
-            cResult[33] = tmp28;
-            tmp26 = tmp28;
-          }
-        }
-        class T {
-          constructor() {
-            const response = arr.fetch(query, withGuildMembers);
-          }
-        }
-        class O {
+        const effect = obj2.useEffect(tmp12, tmp13);
+        class A {
           constructor() {
             obj = withGuildMembers(closure_2[16]);
             closure_0 = obj.debounce(() => closure_1_2(Date.now()), 0);
@@ -920,18 +828,19 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserListD
             return () => arr.unsubscribe();
           }
         }
-        tmp21[0] = arr;
-        tmp21[1] = query;
-        tmp21[2] = withGuildMembers;
-        cResult[13] = query;
-        cResult[14] = arr;
-        cResult[15] = withGuildMembers;
-        cResult[16] = T;
-        cResult[17] = tmp21;
-        tmp20 = tmp21;
-        tmp19 = T;
+        class T {
+          constructor() {
+            const response = arr.fetch(query, withGuildMembers);
+          }
+        }
+        const items = [arr, query, withGuildMembers];
+        cResult[11] = query;
+        cResult[12] = arr;
+        cResult[13] = withGuildMembers;
+        cResult[14] = items;
+        cResult[15] = T;
       }
-      class O {
+      class A {
         constructor() {
           obj = withGuildMembers(closure_2[16]);
           closure_0 = obj.debounce(() => closure_1_2(Date.now()), 0);
@@ -941,25 +850,21 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserListD
           return () => arr.unsubscribe();
         }
       }
-      const items = [arr, withGuildMembers];
-      cResult[9] = arr;
-      cResult[10] = withGuildMembers;
-      cResult[11] = O;
-      cResult[12] = items;
-      tmp17 = items;
-      tmp16 = O;
+      tmp14[0] = arr;
+      tmp14[1] = withGuildMembers;
+      cResult[7] = arr;
+      cResult[8] = withGuildMembers;
+      cResult[9] = A;
+      cResult[10] = tmp14;
+      tmp13 = tmp14;
+      tmp12 = A;
     }
-    const items1 = [, ];
-    cResult[6] = tmp12;
-    cResult[7] = tmp6;
-    cResult[8] = items1;
-    tmp14 = items1;
   }
-  const found = arr.filter(query);
+  const found = arr.filter(query, tmp4);
   cResult[3] = query;
   cResult[4] = arr;
-  cResult[5] = found;
-  tmp12 = found;
+  cResult[5] = tmp4;
+  cResult[6] = found;
 }) : (function useUserListData(query) {
   query = query.query;
   const withGuildMembers = query.withGuildMembers;
@@ -986,13 +891,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserListD
   const tmp = withGameFriends(withFriendSuggestions.useState(0), 2);
   const first = tmp[0];
   let closure_14 = tmp3;
-  let items = [tmp[1], withGameFriends];
+  const items = [tmp[1], withGameFriends];
   const memo = withFriendSuggestions.useMemo(() => new UserSearch(() => closure_1_14(Date.now()), withGameFriends), items);
   const items1 = [first, memo, query];
-  const first1 = withGameFriends(withFriendSuggestions.useMemo(() => {
-    const items = [memo.filter(query), first];
-    return items;
-  }, items1), 1)[0];
+  const memo1 = withFriendSuggestions.useMemo(() => memo.filter(query, first), items1);
   const items2 = [memo, withGuildMembers];
   const effect = withFriendSuggestions.useEffect(() => {
     const obj = withGuildMembers(withAffinitySuggestions[16]);
@@ -1010,9 +912,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserListD
     const obj = query(withAffinitySuggestions[20]);
     const userAffinitiesV2 = obj.fetchUserAffinitiesV2();
   }, []);
-  const items4 = [first1, withGuildMembers, withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, flag, num, flag2];
+  const items4 = [memo1, withGuildMembers, withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, flag, num, flag2];
   return withFriendSuggestions.useMemo(() => {
-    const obj = { data: first1, withGuildMembers, withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, excludeCurrentUser: flag, affinitySuggestionsLimit: num, withAlphabeticalSections: flag2 };
+    const obj = { data: memo1, withGuildMembers, withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, excludeCurrentUser: flag, affinitySuggestionsLimit: num, withAlphabeticalSections: flag2 };
     return parseUserSearchResults(obj);
   }, items4);
 });

@@ -4,4 +4,4 @@
 
 // Module 1308
 
-export default Function.prototype.call;
+export default Object.getOwnPropertyDescriptor;

@@ -1,10 +1,10 @@
-// Module ID: 14319
-// Function ID: 14320
+// Module ID: 14743
+// Function ID: 14744
 // Name: helpers
 // Dependencies: [1096, 2]
 // Exports: joiEnum, joiReqObj
 
-// Module 14319 (helpers)
+// Module 14743 (helpers)
 import Constants from "Constants" /* 1096 */;
 import size from "module_2" /* 2 */;
 
@@ -19,6 +19,6 @@ export const joiReqObj = function joiReqObj(required) {
   const requiredResult = required.required();
   return requiredResult.unknown(true);
 };
-export const joiEnum = function joiEnum(OAuth2Scopes) {
-  return Object.values(OAuth2Scopes);
+export const joiEnum = function joiEnum(ActivityPlatform) {
+  return Object.values(ActivityPlatform);
 };

@@ -1,19 +1,19 @@
-// Module ID: 10768
-// Function ID: 10769
+// Module ID: 12733
+// Function ID: 12734
 // Name: GiftingBadgeLevelUpProgress
-// Dependencies: [19, 17, 7863, 21, 4890, 587, 558, 576, 10475, 10481, 4886, 1126, 2589, 2]
+// Dependencies: [19, 17, 8312, 21, 5092, 587, 558, 576, 10101, 10107, 5088, 1126, 2664, 2]
 
-// Module 10768 (GiftingBadgeLevelUpProgress)
+// Module 12733 (GiftingBadgeLevelUpProgress)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef2589 from "module_2589" /* 2589 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7863 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10475 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10481 */;
+import _modDef2664 from "module_2664" /* 2664 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8312 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10101 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10107 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX
 obj4 = { flex: 1, height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
 obj5 = { height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 let closure_7 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingBadgeLevelUpProgress(arg0) {
   let currentTier;
   let items;
   let items1;
@@ -216,10 +216,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     tmp39 = cResult[44];
                   }
                   const labels = tmp4.labels;
-                  const Text = tmp(4886).Text;
+                  const Text = tmp(5088).Text;
                   const intl = tmp(1126).intl;
                   const obj9 = { count: progress, threshold: tmp18 };
-                  const formatResult = intl.format(_modDef2589.iIpfQe, obj9);
+                  const formatResult = intl.format(_modDef2664.iIpfQe, obj9);
                   cResult[6] = tmp6;
                   cResult[7] = newTier;
                   cResult[8] = tmp8;
@@ -295,7 +295,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = currentTier;
   cResult[2] = giftingBadgeTierIconUrl1;
   tmp6 = giftingBadgeTierIconUrl1;
-}) : ((style) => {
+}) : (function GiftingBadgeLevelUpProgress(style) {
   let Text;
   let currentTier;
   let intl;
@@ -346,8 +346,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items1[2] = tmp15Result;
   items3 = [metroRequire(View, obj3), ];
   const obj9 = { style: tmp.labels, children: hasOwnProperty(Text, obj10) };
-  obj10 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2589.iIpfQe, { count: progress, threshold: tmp8 }) };
-  Text = tmp2(4886).Text;
+  obj10 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(_modDef2664.iIpfQe, { count: progress, threshold: tmp8 }) };
+  Text = tmp2(5088).Text;
   intl = tmp2(1126).intl;
   items3[1] = hasOwnProperty(View, obj9);
   return metroRequire(View, obj2);

@@ -1,17 +1,17 @@
-// Module ID: 7840
-// Function ID: 7841
+// Module ID: 8289
+// Function ID: 8290
 // Name: RecentAvatarUtils
-// Dependencies: [1085, 1402, 1437, 1478, 1126, 6486, 1375, 2]
+// Dependencies: [1085, 1415, 1450, 1491, 1126, 6679, 1388, 2]
 // Exports: generateAvatarDescription, generateRecentAvatarFileDetails, getImageFormat, getPendingAvatarSrc
 
-// Module 7840 (RecentAvatarUtils)
+// Module 8289 (RecentAvatarUtils)
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1437 */;
-import _modDef1478 from "module_1478" /* 1478 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6486 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
+import _modDef1491 from "module_1491" /* 1491 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6679 */;
 import size_mod from "module_2" /* 2 */;
 
 function getArchivedAvatarURL(allowWebp) {
@@ -54,7 +54,7 @@ function getArchivedAvatarURL(allowWebp) {
       let str6 = "gif";
       if (flag) {
         str6 = "gif";
-        if (tmp2(1402).SUPPORTS_WEBP) {
+        if (tmp2(1415).SUPPORTS_WEBP) {
           str6 = "webp";
         }
       }
@@ -67,7 +67,7 @@ function getArchivedAvatarURL(allowWebp) {
     obj3 = ImageLoaderUtils;
     const tmp6 = require;
     if (isAnimatedIconHashResult) {
-      const tmp6Result = tmp6(1402);
+      const tmp6Result = tmp6(1415);
       isAnimatedIconHashResult = tmp6Result.isAnimatedIconHash(storageHash);
     }
     if (isAnimatedIconHashResult) {
@@ -75,7 +75,7 @@ function getArchivedAvatarURL(allowWebp) {
     }
     const _HermesInternal2 = HermesInternal;
     const ARCHIVED_AVATARResult = Endpoints.ARCHIVED_AVATAR(userId, avatarId, storageHash, str2);
-    const obj5 = _modDef1478;
+    const obj5 = _modDef1491;
     return "" + combined + ARCHIVED_AVATARResult + "?" + obj5.stringify(obj2);
   }
   str2 = "jpg";
@@ -112,7 +112,7 @@ export const getImageFormat = function getImageFormat(canAnimate) {
       let str5 = "gif";
       if (flag2) {
         str5 = "gif";
-        if (tmp(1402).SUPPORTS_WEBP) {
+        if (tmp(1415).SUPPORTS_WEBP) {
           str5 = "webp";
         }
       }

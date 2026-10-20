@@ -1,17 +1,17 @@
-// Module ID: 17174
-// Function ID: 17175
+// Module ID: 17769
+// Function ID: 17770
 // Name: useMorphablePanelGesture
-// Dependencies: [19, 11903, 558, 576, 1484, 1618, 4612, 9774, 6140, 17172, 17175, 4855, 2]
+// Dependencies: [19, 11975, 558, 576, 1497, 1631, 4850, 10374, 6335, 17767, 17770, 5057, 2]
 
-// Module 17174 (useMorphablePanelGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import HapticUtils from "HapticUtils" /* 4855 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 9774 */;
-import MorphablePanelUtils from "MorphablePanelUtils" /* 17172 */;
-import triggerIOSHapticDefault from "triggerIOSHaptic" /* 17175 */;
+// Module 17769 (useMorphablePanelGesture)
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import HapticUtils from "HapticUtils" /* 5057 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10374 */;
+import MorphablePanelUtils from "MorphablePanelUtils" /* 17767 */;
+import triggerIOSHapticDefault from "triggerIOSHaptic" /* 17770 */;
 import react from "react" /* 19 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11903 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11975 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let closure_20 = { code: "function useMorphablePanelGestureTsx11(_e){const{updat
 let closure_21 = { code: "function useMorphablePanelGestureTsx12(event_1){const{mode,MorphablePanelModes,safeArea,initialGestureOffset,POP_RESISTANCE,PIP_POP_HEIGHT,runOnJS,triggerHapticFeedback,HapticFeedbackTypes,updateSharedValueIfChanged,wrapperOffset}=this.__closure;if(mode!==MorphablePanelModes.PIP){const minYOffset=safeArea.top;let newYOffset=(initialGestureOffset.get().absoluteYStart-event_1.absoluteY)*-1;if(!initialGestureOffset.get().requiresPop&&newYOffset<=minYOffset){initialGestureOffset.set({...initialGestureOffset.get(),requiresPop:true});}if(initialGestureOffset.get().requiresPop){const distance=Math.max(newYOffset,0);const resistance=distance*POP_RESISTANCE;if(distance<=PIP_POP_HEIGHT){newYOffset=distance-resistance;}else{initialGestureOffset.set({...initialGestureOffset.get(),requiresPop:false});runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_MEDIUM);}}updateSharedValueIfChanged(wrapperOffset,{y:newYOffset,x:0});}else{updateSharedValueIfChanged(wrapperOffset,{x:(initialGestureOffset.get().absoluteXStart-event_1.absoluteX)*-1,y:(initialGestureOffset.get().absoluteYStart-event_1.absoluteY)*-1});}}" };
 let closure_22 = { code: "function useMorphablePanelGestureTsx13(event_0,manager){const{IS_IOS,initialGestureOffset,State,calculateXYDiff,mode,MorphablePanelModes,MIN_PAN_GESTURE_MOVE,runOnJS,triggerIOSHaptic,updateSharedValueIfChanged,wrapperOffset}=this.__closure;if(IS_IOS&&initialGestureOffset.get().gestureInBottomSafeArea){manager.activate();return;}if(initialGestureOffset.get().cancel){manager.fail();return;}if(event_0.state!==State.BEGAN||initialGestureOffset.get().active){return;}const{absoluteX:absoluteX,absoluteY:absoluteY,absoluteMovement:absoluteMovement,isNotPullDownGesture:isNotPullDownGesture,yDiff:yDiff}=calculateXYDiff(event_0,initialGestureOffset);let startGesture=false;if(mode===MorphablePanelModes.PANEL){if(yDiff<0){startGesture=true;}else if(isNotPullDownGesture){manager.fail();}}else if(mode===MorphablePanelModes.PIP&&absoluteMovement>MIN_PAN_GESTURE_MOVE){startGesture=true;runOnJS(triggerIOSHaptic)();}if(startGesture){updateSharedValueIfChanged(wrapperOffset,{x:0,y:0,gestureActive:true});initialGestureOffset.set({absoluteXStart:absoluteX,absoluteYStart:absoluteY,active:true,cancel:false,gestureInBottomSafeArea:false,requiresPop:initialGestureOffset.get().requiresPop});manager.activate();}}" };
 let closure_23 = { code: "function useMorphablePanelGestureTsx14(event){const{updateSharedValueIfChanged,wrapperOffset,initialGestureOffset,windowDimensions,safeArea,swipeRequiresPop}=this.__closure;updateSharedValueIfChanged(wrapperOffset,{x:0,y:0});initialGestureOffset.set({absoluteXStart:event.absoluteX,absoluteYStart:event.absoluteY,active:false,cancel:event.absoluteY>windowDimensions.height-safeArea.bottom*2,gestureInBottomSafeArea:event.absoluteY>windowDimensions.height-safeArea.bottom,requiresPop:swipeRequiresPop});}" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((mode) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMorphablePanelGesture(mode) {
   let onTapGestureStart;
   let panGestureEnabled;
   let pipState;
@@ -264,7 +264,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((mode) => {
   cResult[19] = useMorphablePanelGestureTsx7;
   tmp14 = useMorphablePanelGestureTsx7;
   ({ updateSharedValueIfChanged: tmp7(tmp2[7]), wrapperOffset, initialGestureOffset: sharedValue, windowDimensions: tmp8, safeArea: tmp9, swipeRequiresPop: tmp5 });
-}) : ((mode) => {
+}) : (function useMorphablePanelGesture(mode) {
   let disableHorizontalSafeAreas;
   let requiresPop;
   mode = mode.mode;

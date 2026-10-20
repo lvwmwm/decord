@@ -1,19 +1,20 @@
-// Module ID: 11825
-// Function ID: 11826
+// Module ID: 6072
+// Function ID: 6073
 // Name: isChannelFocused
-// Dependencies: [32, 19, 4906, 6831, 5098, 4738, 4736, 4737, 4739, 558, 576, 2]
+// Dependencies: [32, 19, 6036, 6073, 6074, 4978, 4976, 4977, 4979, 6075, 558, 576, 2]
 // Exports: isChannelFocused, isChannelFocusedForReadStateAck
 
-// Module 11825 (isChannelFocused)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
-import RootNavigationRef from "RootNavigationRef" /* 4737 */;
-import getInitialNavigationStateDefault from "getInitialNavigationState" /* 4738 */;
-import useChatLayout from "useChatLayout" /* 4739 */;
-import NavigationHistoryStore2 from "NavigationHistoryStore" /* 6831 */;
+// Module 6072 (isChannelFocused)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
+import RootNavigationRef from "RootNavigationRef" /* 4977 */;
+import getInitialNavigationStateDefault from "getInitialNavigationState" /* 4978 */;
+import useChatLayout from "useChatLayout" /* 4979 */;
+import NavigationHistoryStore2 from "NavigationHistoryStore" /* 6073 */;
+import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 6075 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
-import VoicePanelStore from "VoicePanelStore" /* 5098 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
+import VoicePanelStore from "VoicePanelStore" /* 6074 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,138 +29,121 @@ function getFocusedChannelId() {
   const isChatLockedOpen = obj3.getChatLayout().isChatLockedOpen;
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
-      const currentRoute = rootNavigationRef.getCurrentRoute();
-      const tmpResult = NavigationRouteUtils;
-      const coerceChannelRouteResult = tmpResult.coerceChannelRoute(currentRoute);
-      if (null != coerceChannelRouteResult) {
-        return coerceChannelRouteResult.params.channelId;
-      } else if (isChatLockedOpen) {
-        const tmpResult5 = NavigationRouteUtils;
-        const coerceGuildsRouteResult = tmpResult5.coerceGuildsRoute(currentRoute);
-        let tmp6;
-        if (null != coerceGuildsRouteResult) {
-          const params = coerceGuildsRouteResult.params;
-          let channelId;
-          if (params != null) {
-            channelId = params.channelId;
-          }
-          tmp6 = channelId;
-        }
-        return tmp6;
-      }
+      const tmp4 = getChannelDetailsFromRouteDefault;
+      return _slicedToArray(tmp4(rootNavigationRef.getCurrentRoute(), isChatLockedOpen), 2)[1];
     }
   }
-  let tmp8 = channelId2;
-  if (null === channelId2) {
-    const tmp23 = getInitialNavigationStateDefault();
-    let tmp9;
+  let tmp6 = channelId1;
+  if (null === channelId1) {
+    const tmp21 = getInitialNavigationStateDefault();
+    let tmp7;
     const coerceMainRoute = NavigationRouteUtils.coerceMainRoute;
     NavigationRouteUtils;
-    if (tmp23 != null) {
-      const routes = tmp23.routes;
+    if (tmp21 != null) {
+      const routes = tmp21.routes;
       if (routes != null) {
-        let num;
-        if (tmp23 != null) {
-          num = tmp23.index;
+        let num2;
+        if (tmp21 != null) {
+          num2 = tmp21.index;
         }
-        if (num == null) {
-          num = 0;
+        if (num2 == null) {
+          num2 = 0;
         }
-        tmp9 = routes[num];
+        tmp7 = routes[num2];
       }
     }
-    const coerceMainRouteResult = coerceMainRoute(tmp9);
-    let tmp11;
+    const coerceMainRouteResult = coerceMainRoute(tmp7);
+    let tmp9;
     if (null != coerceMainRouteResult) {
-      const tmpResult7 = NavigationRouteUtils;
+      const tmpResult3 = NavigationRouteUtils;
       if (isChatLockedOpen) {
         const state3 = coerceMainRouteResult.state;
-        let tmp16;
-        const coerceTabsRoute = tmpResult7.coerceTabsRoute;
+        let tmp14;
+        const coerceTabsRoute = tmpResult3.coerceTabsRoute;
         if (state3 != null) {
           const routes3 = state3.routes;
           if (routes3 != null) {
             const state4 = coerceMainRouteResult.state;
-            let num3;
+            let num4;
             if (state4 != null) {
-              num3 = state4.index;
+              num4 = state4.index;
             }
-            if (num3 == null) {
-              num3 = 0;
+            if (num4 == null) {
+              num4 = 0;
             }
-            tmp16 = routes3[num3];
+            tmp14 = routes3[num4];
           }
         }
-        const coerceTabsRouteResult = coerceTabsRoute(tmp16);
+        const coerceTabsRouteResult = coerceTabsRoute(tmp14);
         if (null != coerceTabsRouteResult) {
           const state5 = coerceTabsRouteResult.state;
-          let tmp19;
+          let tmp17;
           const coerceGuildsRoute = NavigationRouteUtils.coerceGuildsRoute;
           NavigationRouteUtils;
           if (state5 != null) {
             const routes4 = state5.routes;
             if (routes4 != null) {
               const state6 = coerceTabsRouteResult.state;
-              let num4;
+              let num5;
               if (state6 != null) {
-                num4 = state6.index;
+                num5 = state6.index;
               }
-              if (num4 == null) {
-                num4 = 0;
+              if (num5 == null) {
+                num5 = 0;
               }
-              tmp19 = routes4[num4];
+              tmp17 = routes4[num5];
             }
           }
-          const coerceGuildsRouteResult1 = coerceGuildsRoute(tmp19);
-          if (null != coerceGuildsRouteResult1) {
-            const params3 = coerceGuildsRouteResult1.params;
-            let channelId1;
-            if (params3 != null) {
-              channelId1 = params3.channelId;
+          const coerceGuildsRouteResult = coerceGuildsRoute(tmp17);
+          if (null != coerceGuildsRouteResult) {
+            const params2 = coerceGuildsRouteResult.params;
+            let channelId;
+            if (params2 != null) {
+              channelId = params2.channelId;
             }
-            tmp11 = channelId1;
+            tmp9 = channelId;
           }
         }
       } else {
         const state = coerceMainRouteResult.state;
-        let tmp13;
-        const coerceChannelRoute = tmpResult7.coerceChannelRoute;
+        let tmp11;
+        const coerceChannelRoute = tmpResult3.coerceChannelRoute;
         if (state != null) {
           const routes2 = state.routes;
           if (routes2 != null) {
             const state2 = coerceMainRouteResult.state;
-            let num2;
+            let num3;
             if (state2 != null) {
-              num2 = state2.index;
+              num3 = state2.index;
             }
-            if (num2 == null) {
-              num2 = 0;
+            if (num3 == null) {
+              num3 = 0;
             }
-            tmp13 = routes2[num2];
+            tmp11 = routes2[num3];
           }
         }
-        const coerceChannelRouteResult1 = coerceChannelRoute(tmp13);
-        if (null != coerceChannelRouteResult1) {
-          const params2 = coerceChannelRouteResult1.params;
-          channelId2 = undefined;
-          if (params2 != null) {
-            channelId2 = params2.channelId;
+        const coerceChannelRouteResult = coerceChannelRoute(tmp11);
+        if (null != coerceChannelRouteResult) {
+          const params = coerceChannelRouteResult.params;
+          channelId1 = undefined;
+          if (params != null) {
+            channelId1 = params.channelId;
           }
-          tmp11 = channelId2;
+          tmp9 = channelId1;
         }
       }
     }
-    channelId2 = tmp11;
-    tmp8 = tmp11;
+    channelId1 = tmp9;
+    tmp6 = tmp9;
   }
-  return tmp8;
+  return tmp6;
 }
 const CHANNEL_PREFIX = NavigationHistoryStore2.CHANNEL_PREFIX;
-let channelId2 = null;
+let channelId1 = null;
 function isChannelFocused() {
   return null != getFocusedChannelId();
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsChannelFocused() {
   let closure_0;
   let first;
   let first1;
@@ -170,7 +154,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = require("react");
   const cResult = obj.c(6);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function u() {
+    const fn = function s() {
       return null != getFocusedChannelId();
     };
     cResult[0] = fn;
@@ -223,7 +207,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect1 = obj2.useEffect(tmp10, tmp11);
   return first1;
-}) : (() => {
+}) : (function useIsChannelFocused() {
   let closure_0;
   let first;
   [first, closure_0] = react.useState(() => null != getFocusedChannelId());

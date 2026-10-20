@@ -1,13 +1,13 @@
-// Module ID: 16773
-// Function ID: 16774
+// Module ID: 17357
+// Function ID: 17358
 // Name: useFrameLifecycle
-// Dependencies: [32, 5, 19, 8704, 558, 576, 8986, 16774, 16775, 6658, 2016, 8706, 2]
+// Dependencies: [32, 5, 19, 10803, 558, 576, 10805, 17358, 17359, 6853, 2029, 10809, 2]
 
-// Module 16773 (useFrameLifecycle)
+// Module 17357 (useFrameLifecycle)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FramesConstants from "FramesConstants" /* 8704 */;
+import FramesConstants from "FramesConstants" /* 10803 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,8 +61,8 @@ function useFrameLifecycleState(applicationId) {
       obj10 = { state: obj.Loading, frame: tmp3 };
       const obj7 = { state: obj.Loading, frame: tmp3 };
     } else if (isLoading) {
-      obj10 = { state: obj.Loading, frame: "Array" };
-      const obj8 = { state: obj.Loading, frame: "Array" };
+      obj10 = { state: obj.Loading, frame: "r" };
+      const obj8 = { state: obj.Loading, frame: "r" };
     } else {
       if (null != data) {
         if (tmp7) {
@@ -86,7 +86,7 @@ function useFrameLifecycleState(applicationId) {
 let _slicedToArray = _slicedToArray_mod;
 ({ isLaunched: metroRequire, makeFrameId: metroImportDefault } = FramesConstants);
 const FrameLifecycleState = { Loading: "loading", AwaitingLaunch: "awaiting-launch", Launched: "launched", RenderingElsewhere: "rendering-elsewhere", NoApplication: "no-application", DoesNotSupportSurface: "does-not-support-surface", Error: "error" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameLifecycle(applicationId) {
   let AwaitingLaunch;
   let setFailed;
   let obj = applicationId(setFailed[5]);
@@ -207,7 +207,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId) => {
   cResult[1] = applicationId;
   cResult[2] = obj2;
   tmp2 = obj2;
-}) : ((applicationId) => {
+}) : (function useFrameLifecycle(applicationId) {
   let AwaitingLaunch;
   applicationId = applicationId.applicationId;
   let obj = { applicationId, surface: applicationId.surface };

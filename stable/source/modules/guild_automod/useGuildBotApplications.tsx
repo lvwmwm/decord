@@ -1,20 +1,20 @@
-// Module ID: 17701
-// Function ID: 17702
+// Module ID: 18330
+// Function ID: 18331
 // Name: useGuildBotApplications
-// Dependencies: [19, 9248, 558, 576, 504, 9254, 17702, 1375, 2]
+// Dependencies: [19, 8634, 558, 576, 504, 8640, 18331, 1388, 2]
 
-// Module 17701 (useGuildBotApplications)
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 9254 */;
+// Module 18330 (useGuildBotApplications)
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 8640 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8634 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildBotApplications(arg0) {
   let closure_0;
   let props;
   let stateFromStores;
@@ -97,7 +97,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = items1;
   tmp8 = items1;
   tmp7 = fn2;
-}) : ((arg0) => {
+}) : (function useGuildBotApplications(arg0) {
   let closure_0;
   let props;
   let stateFromStores;

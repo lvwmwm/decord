@@ -1,20 +1,20 @@
-// Module ID: 15823
-// Function ID: 15824
+// Module ID: 16332
+// Function ID: 16333
 // Name: VideoBackgroundSetting
-// Dependencies: [7634, 1085, 558, 576, 9316, 9681, 9312, 9314, 11129, 1126, 9661, 2]
+// Dependencies: [7988, 1085, 558, 576, 5258, 11098, 5253, 5256, 10664, 1126, 11078, 2]
 
-// Module 15823 (VideoBackgroundSetting)
+// Module 16332 (VideoBackgroundSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 9312 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 9314 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 9316 */;
-import useIsVideoBackgroundEnabledDefault from "useIsVideoBackgroundEnabled" /* 9661 */;
-import VideoBackgroundOptions from "VideoBackgroundOptions" /* 9681 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 5253 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5256 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5258 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import useIsVideoBackgroundEnabledDefault from "useIsVideoBackgroundEnabled" /* 11078 */;
+import VideoBackgroundOptions from "VideoBackgroundOptions" /* 11098 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -22,7 +22,7 @@ let closure_4;
 let hasOwnProperty;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 ({ AnalyticsSections: c3, NOOP: closure_4, AnalyticsPages: hasOwnProperty } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoBackgroundSettingValue() {
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
@@ -38,7 +38,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return "" + tmp5;
-}) : (() => {
+}) : (function useVideoBackgroundSettingValue() {
   const obj = LastUsedVideoBackgroundOption;
   const lastUsedVideoBackgroundOption = obj.useLastUsedVideoBackgroundOption();
   const obj2 = VideoBackgroundOptions;

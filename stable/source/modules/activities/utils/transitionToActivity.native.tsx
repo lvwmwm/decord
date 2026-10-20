@@ -1,23 +1,23 @@
-// Module ID: 9049
-// Function ID: 9050
+// Module ID: 10825
+// Function ID: 10826
 // Name: transitionToActivity
-// Dependencies: [9050, 2050, 8705, 9051, 4498, 4736, 9056, 9014, 12695, 5091, 9016, 4854, 8993, 2]
+// Dependencies: [10355, 2064, 6067, 10356, 4739, 4976, 10826, 10482, 11340, 5106, 6038, 5056, 10854, 2]
 // Exports: default
 
-// Module 9049 (transitionToActivity)
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4498 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8993 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 9014 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9016 */;
-import ChannelCallStore from "ChannelCallStore" /* 9050 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 9051 */;
-import ChannelCallModalDefault from "ChannelCallModal" /* 9056 */;
-import openChannelCallModalForChannelIdDefault from "openChannelCallModalForChannelId" /* 12695 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+// Module 10825 (transitionToActivity)
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4739 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6038 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
+import ChannelCallStore from "ChannelCallStore" /* 10355 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10356 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 10482 */;
+import ChannelCallModalDefault from "ChannelCallModal" /* 10826 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10854 */;
+import openChannelCallModalForChannelIdDefault from "openChannelCallModalForChannelId" /* 11340 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import size from "module_2" /* 2 */;
 
 const setVoiceChatDrawerState = ChannelCallStore.setVoiceChatDrawerState;
@@ -25,9 +25,9 @@ const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 const VoiceChatDrawerState = ChannelCallConstants.VoiceChatDrawerState;
 let result = size.fileFinishedImporting("modules/activities/utils/transitionToActivity.native.tsx");
 
-export default function transitionToActivity(arg0, connectedActivityLocation) {
+export default function transitionToActivity(arg0, location) {
   const obj = embeddedActivityLocationUtils;
-  const embeddedActivityLocationChannelId = obj.getEmbeddedActivityLocationChannelId(connectedActivityLocation);
+  const embeddedActivityLocationChannelId = obj.getEmbeddedActivityLocationChannelId(location);
   if (null != embeddedActivityLocationChannelId) {
     const tmpResult = NavigationRouteUtils;
     const isModalOpenResult = tmpResult.isModalOpen(ChannelCallModalDefault);
@@ -35,7 +35,7 @@ export default function transitionToActivity(arg0, connectedActivityLocation) {
     if (tmp4) {
       openChannelCallModalForChannelIdDefault(embeddedActivityLocationChannelId);
     }
-    const selfEmbeddedActivityForLocation = EmbeddedActivitiesStore.getSelfEmbeddedActivityForLocation(connectedActivityLocation);
+    const selfEmbeddedActivityForLocation = EmbeddedActivitiesStore.getSelfEmbeddedActivityForLocation(location);
     if (null != selfEmbeddedActivityForLocation) {
       if (isVoiceEmbeddedActivityDefault(embeddedActivityLocationChannelId)) {
         const selectParticipant = ChannelRTCActionCreatorsDefault.selectParticipant;

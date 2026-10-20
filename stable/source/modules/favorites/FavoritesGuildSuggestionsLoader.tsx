@@ -1,13 +1,13 @@
-// Module ID: 16213
-// Function ID: 16214
+// Module ID: 16735
+// Function ID: 16736
 // Name: FavoritesGuildSuggestionsLoader
-// Dependencies: [19, 16127, 21, 558, 576, 16214, 2]
+// Dependencies: [19, 16643, 21, 558, 576, 16736, 2]
 
-// Module 16213 (FavoritesGuildSuggestionsLoader)
+// Module 16735 (FavoritesGuildSuggestionsLoader)
 import Fragment from "Fragment" /* 21 */;
-import useFavoritesGuildSuggestionCandidatesDefault from "useFavoritesGuildSuggestionCandidates" /* 16214 */;
+import useFavoritesGuildSuggestionCandidatesDefault from "useFavoritesGuildSuggestionCandidates" /* 16736 */;
 import react from "react" /* 19 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 16127 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 16643 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let metroRequire;
 ({ NO_SUGGESTIONS: closure_4, setFavoritesGuildSuggestions: hasOwnProperty, useFavoritesGuildSuggestionsVisibility: metroRequire } = FavoritesGuildSuggestionsStore);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildSuggestionsLoaderInner() {
   let closure_0;
   let tmp3;
   let tmp4;
@@ -44,7 +44,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const layoutEffect = react.useLayoutEffect(tmp3, tmp4);
   return null;
-}) : (() => {
+}) : (function FavoritesGuildSuggestionsLoaderInner() {
   const tmp = useFavoritesGuildSuggestionCandidatesDefault(4);
   let closure_0 = tmp;
   const items = [tmp];
@@ -54,7 +54,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return null;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildSuggestionsLoader() {
   let isEligible;
   let ref;
   const obj = isEligible(576);
@@ -105,7 +105,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   cResult[3] = items;
   tmp4 = items;
   tmp3 = fn;
-}) : (() => {
+}) : (function FavoritesGuildSuggestionsLoader() {
   const tmp = closure_6();
   const isEligible = tmp.isEligible;
   const isSelected = tmp.isSelected;

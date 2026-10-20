@@ -1,10 +1,10 @@
-// Module ID: 12530
-// Function ID: 12531
+// Module ID: 12637
+// Function ID: 12638
 // Name: uploadRtcLogFiles
-// Dependencies: [5, 1085, 3, 7876, 5312, 1282, 2]
+// Dependencies: [5, 1085, 3, 8327, 5635, 1295, 2]
 // Exports: uploadRtcLogFiles
 
-// Module 12530 (uploadRtcLogFiles)
+// Module 12637 (uploadRtcLogFiles)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;

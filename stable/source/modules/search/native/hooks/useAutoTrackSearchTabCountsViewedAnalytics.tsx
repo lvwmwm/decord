@@ -1,20 +1,18 @@
-// Module ID: 16904
-// Function ID: 16905
+// Module ID: 17493
+// Function ID: 17494
 // Name: useAutoTrackSearchTabCountsViewedAnalytics
-// Dependencies: [19, 7513, 558, 576, 11982, 2]
+// Dependencies: [19, 9308, 558, 576, 12059, 2]
 
-// Module 16904 (useAutoTrackSearchTabCountsViewedAnalytics)
-import SearchConstants from "SearchConstants" /* 7513 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11982 */;
+// Module 17493 (useAutoTrackSearchTabCountsViewedAnalytics)
+import SearchConstants from "SearchConstants" /* 9308 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12059 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let searchContext;
-
 let react = react_mod;
 const SearchTabs = SearchConstants.SearchTabs;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutoTrackSearchTabCountsViewedAnalytics(searchContext) {
   let closure_3;
   let tmp2;
   let tmp3;
@@ -169,7 +167,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
   cResult[6] = items1;
   tmp6 = items1;
   tmp5 = fn2;
-}) : ((searchContext) => {
+}) : (function useAutoTrackSearchTabCountsViewedAnalytics(searchContext) {
   let closure_3;
   searchContext = searchContext.searchContext;
   const visibleTabCounts = searchContext.visibleTabCounts;

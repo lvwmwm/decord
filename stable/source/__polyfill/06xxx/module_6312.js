@@ -1,65 +1,41 @@
 // Module ID: 6312
 // Function ID: 6313
-// Dependencies: [19, 17, 21, 6313, 6314]
+// Dependencies: [6313, 6315, 6317, 6322, 6323, 6332, 6333, 6476, 6477, 6480, 6481, 6482, 6483, 6484, 6485, 6486, 6487]
 
 // Module 6312
-import react_native from "react-native" /* 6314 */;
-import react_mod from "react" /* 19 */;
-import react_native2 from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
+import react from "react" /* 6313 */;
+import react2 from "react" /* 6315 */;
+import react3 from "react" /* 6317 */;
+import react4 from "react" /* 6322 */;
+import _mod6323 from "module_6323" /* 6323 */;
+import _mod6332 from "module_6332" /* 6332 */;
+import _mod6333 from "module_6333" /* 6333 */;
+import _mod6476 from "module_6476" /* 6476 */;
+import _mod6477 from "module_6477" /* 6477 */;
+import react5 from "react" /* 6480 */;
+import _mod6481 from "module_6481" /* 6481 */;
+import react6 from "react" /* 6482 */;
+import _mod6483 from "module_6483" /* 6483 */;
+import _mod6484 from "module_6484" /* 6484 */;
+import react7 from "react" /* 6485 */;
+import react8 from "react" /* 6486 */;
+import _mod6487 from "module_6487" /* 6487 */;
 
-let c3;
-let closure_4;
-let hasOwnProperty;
-let metroRequire;
-let react = react_mod;
-const useMemo = react.useMemo;
-const memo = react.memo;
-react = react_mod;
-({ StyleSheet: c3, View: closure_4 } = react_native2);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-const memoResult = memo(function BottomSheetHandleComponent(style) {
-  let items2;
-  style = style.style;
-  const indicatorStyle = style.indicatorStyle;
-  let DEFAULT_ACCESSIBLE = style.accessible;
-  if (DEFAULT_ACCESSIBLE === undefined) {
-    DEFAULT_ACCESSIBLE = style(indicatorStyle[3]).DEFAULT_ACCESSIBLE;
-  }
-  let DEFAULT_ACCESSIBILITY_ROLE = style.accessibilityRole;
-  if (DEFAULT_ACCESSIBILITY_ROLE === undefined) {
-    DEFAULT_ACCESSIBILITY_ROLE = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_ROLE;
-  }
-  let DEFAULT_ACCESSIBILITY_LABEL = style.accessibilityLabel;
-  if (DEFAULT_ACCESSIBILITY_LABEL === undefined) {
-    DEFAULT_ACCESSIBILITY_LABEL = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_LABEL;
-  }
-  let DEFAULT_ACCESSIBILITY_HINT = style.accessibilityHint;
-  if (DEFAULT_ACCESSIBILITY_HINT === undefined) {
-    DEFAULT_ACCESSIBILITY_HINT = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_HINT;
-  }
-  let items = [style];
-  const children = style.children;
-  const items1 = [indicatorStyle];
-  const obj = {
-    style: useMemo(() => {
-      const items = [react_native.styles.container, _false.flatten(style)];
-      return items;
-    }, items),
-    accessible: DEFAULT_ACCESSIBLE,
-    accessibilityRole: DEFAULT_ACCESSIBILITY_ROLE,
-    accessibilityLabel: DEFAULT_ACCESSIBILITY_LABEL,
-    accessibilityHint: DEFAULT_ACCESSIBILITY_HINT,
-    collapsable: true,
-    children: items2
-  };
-  const tmp10 = useMemo(() => {
-    const items = [react_native.styles.indicator, _false.flatten(indicatorStyle)];
-    return items;
-  }, items1);
-  items2 = [closure_5(closure_4, { style: tmp10 }), children];
-  return closure_6(closure_4, obj);
-});
-memoResult.displayName = "BottomSheetHandle";
 
-export default memoResult;
+export const useBottomSheet = react.useBottomSheet;
+export const useBottomSheetInternal = react2.useBottomSheetInternal;
+export const useBottomSheetModal = react3.useBottomSheetModal;
+export const useBottomSheetModalInternal = react4.useBottomSheetModalInternal;
+export const useScrollable = _mod6323.useScrollable;
+export const useScrollableSetter = _mod6332.useScrollableSetter;
+export const useScrollHandler = _mod6333.useScrollHandler;
+export const useGestureHandler = _mod6476.useGestureHandler;
+export const useGestureEventsHandlersDefault = _mod6477.useGestureEventsHandlersDefault;
+export const useBottomSheetGestureHandlers = react5.useBottomSheetGestureHandlers;
+export const useKeyboard = _mod6481.useKeyboard;
+export const useStableCallback = react6.useStableCallback;
+export const usePropsValidator = _mod6483.usePropsValidator;
+export const useAnimatedSnapPoints = _mod6484.useAnimatedSnapPoints;
+export const useReactiveSharedValue = react7.useReactiveSharedValue;
+export const useBoundingClientRect = react8.useBoundingClientRect;
+export const useBottomSheetContentContainerStyle = _mod6487.useBottomSheetContentContainerStyle;

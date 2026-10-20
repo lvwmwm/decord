@@ -1,58 +1,58 @@
-// Module ID: 13328
-// Function ID: 13329
+// Module ID: 13818
+// Function ID: 13819
 // Name: GuildBoostingUpsell
-// Dependencies: [19, 17, 5616, 1379, 21, 4890, 587, 13307, 1126, 4826, 13329, 13330, 13332, 9232, 13333, 8411, 13334, 12190, 13335, 12187, 13336, 8878, 13337, 9943, 558, 576, 504, 13205, 13338, 4791, 13170, 4729, 13179, 13180, 4886, 8894, 13342, 13343, 13344, 2]
+// Dependencies: [19, 17, 5963, 1392, 21, 5092, 587, 13797, 1126, 9405, 13819, 13820, 13822, 8617, 13823, 8956, 13824, 12274, 13825, 12271, 13826, 9401, 13827, 9549, 558, 576, 504, 13696, 13828, 5031, 6157, 13660, 4969, 13669, 13670, 5088, 9419, 13832, 13833, 13834, 2]
 
-// Module 13328 (GuildBoostingUpsell)
+// Module 13818 (GuildBoostingUpsell)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1126 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import shared from "shared" /* 4729 */;
-import useThemeDefault from "useTheme" /* 4791 */;
-import BoostGemIcon from "BoostGemIcon" /* 4826 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ReactionIcon from "ReactionIcon" /* 8411 */;
-import UploadIcon from "UploadIcon" /* 8878 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 8894 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9232 */;
-import StarIcon from "StarIcon" /* 9943 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 12187 */;
-import StickerIcon from "StickerIcon" /* 12190 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13170 */;
-import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 13205 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13307 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13329 */;
-import BoostTier3Icon2 from "BoostTier3Icon" /* 13330 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13332 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 13333 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 13334 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 13335 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 13336 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 13337 */;
-import GuildSubscriptionNoGuilds from "GuildSubscriptionNoGuilds" /* 13338 */;
-import GuildBoostingGuildListDefault from "GuildBoostingGuildList" /* 13343 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import shared from "shared" /* 4969 */;
+import useThemeDefault from "useTheme" /* 5031 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 8617 */;
+import ReactionIcon from "ReactionIcon" /* 8956 */;
+import UploadIcon from "UploadIcon" /* 9401 */;
+import BoostGemIcon from "BoostGemIcon" /* 9405 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 9419 */;
+import StarIcon from "StarIcon" /* 9549 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 12271 */;
+import StickerIcon from "StickerIcon" /* 12274 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13660 */;
+import useSubscriptionPlansLoaded from "useSubscriptionPlansLoaded" /* 13696 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13797 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13819 */;
+import BoostTier3Icon2 from "BoostTier3Icon" /* 13820 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13822 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13823 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 13824 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 13825 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 13826 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 13827 */;
+import GuildSubscriptionNoGuilds from "GuildSubscriptionNoGuilds" /* 13828 */;
+import GuildBoostingGuildListDefault from "GuildBoostingGuildList" /* 13833 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SortedGuildStore from "SortedGuildStore" /* 5616 */;
+import SortedGuildStore from "SortedGuildStore" /* 5963 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
 let c3;
-let closure_4;
-let metroImportAll;
 let metroImportDefault;
+let metroRequire;
 let obj2;
-({ View: c3, Image: closure_4, StyleSheet } = react_native);
+({ View: c3, StyleSheet } = react_native);
 const FractionalPremiumStates = PremiumConstants.FractionalPremiumStates;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { root: { paddingHorizontal: 16, paddingVertical: 32 }, title: { marginTop: 16 }, features: { marginTop: 16 }, cardText: { lineHeight: 20, marginTop: 8, textAlign: "center" }, guildList: { marginTop: 16 }, logoPremiumGuild: { resizeMode: "contain", width: "100%", height: 34, maxWidth: 320, marginTop: 16 }, imgPremiumGuild: { width: 95, height: 65 }, imgNoGuilds: { width: 178, height: 112, marginTop: 32 }, header: { alignItems: "center" }, upsell: obj2, subscriptionUpsell: { marginTop: 32 } };
 obj2 = { marginTop: 32, paddingTop: 16, borderTopWidth: 2 * StyleSheet.hairlineWidth, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
-let closure_9 = createStyles.createStyles(obj);
+let closure_8 = createStyles.createStyles(obj);
 class FEATURES_PREMIUM_GUILD_USER {
   constructor() {
     let intl;
@@ -68,7 +68,7 @@ class FEATURES_PREMIUM_GUILD_USER {
         const obj = { color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
         const BoostTier3Icon = BoostTier3Icon2.BoostTier3Icon;
         const merged = Object.assign(arg0);
-        return closure_1_7(BoostTier3Icon, obj);
+        return closure_1_6(BoostTier3Icon, obj);
       }
     };
     intl2 = intl9.intl;
@@ -102,7 +102,7 @@ function FEATURES_PREMIUM_GUILD() {
   items[4] = obj5;
   return items;
 }
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostingUpsell(hasAvailableSlots) {
   let flattenedGuildIds;
   let fractionalState;
   let header;
@@ -113,12 +113,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
   let isInReverseTrial;
   let items1;
   let items2;
-  let items4;
-  let items6;
-  let items7;
+  let items5;
   let onLearnMorePremium;
   let root;
-  let tmp11Result;
+  let tmp11Result2;
   let tmp15;
   let tmp5;
   let tmp6;
@@ -126,10 +124,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
   const cResult = obj.c(58);
   ({ onLearnMorePremium, fractionalState, isInReverseTrial } = hasAvailableSlots);
   hasAvailableSlots = hasAvailableSlots.hasAvailableSlots;
-  const tmp4 = closure_9();
+  const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SortedGuildStore];
-    const fn = function u() {
+    const fn = function c() {
       return flattenedGuildIds.getFlattenedGuildIds().length > 0;
     };
     cResult[0] = items;
@@ -157,7 +155,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
   ({ root, header } = tmp4);
   if (cResult[2] !== tmp4.imgPremiumGuild) {
     const obj2 = { style: tmp4.imgPremiumGuild, source: AssetRegistryDefault };
-    const tmp18 = metroImportDefault(React3, obj2);
+    const tmp11Result = FastImageDefault;
+    const tmp18 = metroRequire(tmp11Result, obj2);
     cResult[2] = tmp4.imgPremiumGuild;
     cResult[3] = tmp18;
     tmp15 = tmp18;
@@ -166,9 +165,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
   }
   const tmpResult6 = shared;
   if (tmpResult6.isThemeDark(tmp12)) {
-    tmp11Result = tmp11(13179);
+    tmp11Result2 = tmp11(13669);
   } else {
-    tmp11Result = tmp11(13180);
+    tmp11Result2 = tmp11(13670);
   }
   if (cResult[4] === tmp4.logoPremiumGuild) {
     let tmp20;
@@ -176,7 +175,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
     let tmp24;
     let tmp27;
     let tmp29;
-    if (cResult[5] === tmp11Result) {
+    if (cResult[5] === tmp11Result2) {
       tmp20 = cResult[6];
     }
     const _Symbol = Symbol;
@@ -191,7 +190,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
     }
     if (cResult[8] !== tmp4.title) {
       const obj3 = { style: title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp22 };
-      const tmp26 = metroImportDefault(Text_Text.Text, obj3);
+      const tmp26 = metroRequire(Text_Text.Text, obj3);
       cResult[8] = tmp4.title;
       cResult[9] = tmp26;
       tmp24 = tmp26;
@@ -210,7 +209,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
     }
     if (cResult[11] !== tmp4.cardText) {
       const obj4 = { style: cardText, variant: "text-md/medium", children: tmp27 };
-      const tmp31 = metroImportDefault(Text_Text.Text, obj4);
+      const tmp31 = metroRequire(Text_Text.Text, obj4);
       cResult[11] = tmp4.cardText;
       cResult[12] = tmp31;
       tmp29 = tmp31;
@@ -245,7 +244,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
             }
             if (cResult[20] !== tmp4.title) {
               const obj5 = { style: title2, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp36 };
-              const tmp40 = metroImportDefault(Text_Text.Text, obj5);
+              const tmp40 = metroRequire(Text_Text.Text, obj5);
               cResult[20] = tmp4.title;
               cResult[21] = tmp40;
               tmp38 = tmp40;
@@ -263,7 +262,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
             }
             if (cResult[23] !== tmp4.features) {
               const obj6 = { style: features, features: tmp41 };
-              const tmp46 = metroImportDefault(PremiumFeatureListDefault, obj6);
+              const tmp46 = metroRequire(PremiumFeatureListDefault, obj6);
               cResult[23] = tmp4.features;
               cResult[24] = tmp46;
               tmp44 = tmp46;
@@ -282,7 +281,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
             }
             if (cResult[26] !== tmp4.title) {
               const obj7 = { style: title3, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp47 };
-              const tmp51 = metroImportDefault(Text_Text.Text, obj7);
+              const tmp51 = metroRequire(Text_Text.Text, obj7);
               cResult[26] = tmp4.title;
               cResult[27] = tmp51;
               tmp49 = tmp51;
@@ -300,7 +299,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
             }
             if (cResult[29] !== tmp4.features) {
               const obj8 = { style: features2, features: tmp52 };
-              const tmp57 = metroImportDefault(PremiumFeatureListDefault, obj8);
+              const tmp57 = metroRequire(PremiumFeatureListDefault, obj8);
               cResult[29] = tmp4.features;
               cResult[30] = tmp57;
               tmp55 = tmp57;
@@ -323,16 +322,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
                         }
                         if (cResult[41] === subscriptionPlansLoaded) {
                           if (cResult[42] === onLearnMorePremium) {
-                            let tmp68;
+                            let tmp67;
                             if (cResult[43] === tmp4.subscriptionUpsell) {
-                              tmp68 = cResult[44];
+                              tmp67 = cResult[44];
                             }
                             if (cResult[45] === tmp4.upsell) {
                               if (cResult[46] === tmp58) {
                                 if (cResult[47] === tmp61) {
-                                  let tmp71;
-                                  if (cResult[48] === tmp68) {
-                                    tmp71 = cResult[49];
+                                  let tmp70;
+                                  if (cResult[48] === tmp67) {
+                                    tmp70 = cResult[49];
                                   }
                                   if (cResult[50] === tmp4.root) {
                                     if (cResult[51] === tmp32) {
@@ -340,11 +339,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
                                         if (cResult[53] === tmp44) {
                                           if (cResult[54] === tmp49) {
                                             if (cResult[55] === tmp55) {
-                                              let tmp75;
-                                              if (cResult[56] === tmp71) {
-                                                tmp75 = cResult[57];
+                                              let tmp74;
+                                              if (cResult[56] === tmp70) {
+                                                tmp74 = cResult[57];
                                               }
-                                              return tmp75;
+                                              return tmp74;
                                             }
                                           }
                                         }
@@ -352,41 +351,41 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
                                     }
                                   }
                                   const obj9 = { style: root, children: items1 };
-                                  items1 = [tmp32, tmp38, tmp44, tmp49, tmp55, tmp71];
-                                  const tmp78 = metroImportAll(_false, obj9);
+                                  items1 = [tmp32, tmp38, tmp44, tmp49, tmp55, tmp70];
+                                  const tmp77 = metroImportDefault(_false, obj9);
                                   cResult[50] = tmp4.root;
                                   cResult[51] = tmp32;
                                   cResult[52] = tmp38;
                                   cResult[53] = tmp44;
                                   cResult[54] = tmp49;
                                   cResult[55] = tmp55;
-                                  cResult[56] = tmp71;
-                                  cResult[57] = tmp78;
-                                  tmp75 = tmp78;
+                                  cResult[56] = tmp70;
+                                  cResult[57] = tmp77;
+                                  tmp74 = tmp77;
                                 }
                               }
                             }
                             const obj10 = { style: tmp4.upsell, children: items2 };
-                            items2 = [tmp58, tmp61, tmp68];
-                            const tmp74 = metroImportAll(_false, obj10);
+                            items2 = [tmp58, tmp61, tmp67];
+                            const tmp73 = metroImportDefault(_false, obj10);
                             cResult[45] = tmp4.upsell;
                             cResult[46] = tmp58;
                             cResult[47] = tmp61;
-                            cResult[48] = tmp68;
-                            cResult[49] = tmp74;
-                            tmp71 = tmp74;
+                            cResult[48] = tmp67;
+                            cResult[49] = tmp73;
+                            tmp70 = tmp73;
                           }
                         }
-                        let tmp69 = null;
+                        let tmp68 = null;
                         if (subscriptionPlansLoaded) {
                           const obj11 = { onLearnMorePremium, style: tmp4.subscriptionUpsell };
-                          tmp69 = metroImportDefault(tmp11(13344), obj11);
+                          tmp68 = metroRequire(tmp11(13834), obj11);
                         }
                         cResult[41] = subscriptionPlansLoaded;
                         cResult[42] = onLearnMorePremium;
                         cResult[43] = tmp4.subscriptionUpsell;
-                        cResult[44] = tmp69;
-                        tmp68 = tmp69;
+                        cResult[44] = tmp68;
+                        tmp67 = tmp68;
                       }
                     }
                   }
@@ -394,40 +393,38 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
               }
               let tmp63Result = null;
               if (!isInReverseTrial) {
-                let tmp67;
+                let tmp66;
                 const obj12 = { children: null };
-                const tmp63 = metroImportAll;
+                const tmp63 = metroImportDefault;
                 const tmp64 = _false;
                 if (stateFromStores) {
                   const obj13 = { style: tmp4.cardText, variant: "text-md/medium", children: intl7.string(intl9.t.WRzob8) };
-                  const Text3 = tmp(4886).Text;
+                  const Text3 = tmp(5088).Text;
                   intl7 = tmp(1126).intl;
-                  const items3 = [metroImportDefault(Text3, obj13), , ];
-                  const obj14 = { style: items4, variant: "text-md/bold", children: intl8.string(intl9.t.j4bXcm) };
-                  items4 = [tmp4.cardText];
-                  const Text4 = tmp(4886).Text;
+                  const items3 = [metroRequire(Text3, obj13), , ];
+                  const obj14 = { style: tmp4.cardText, variant: "text-md/bold", children: intl8.string(intl9.t.j4bXcm) };
+                  const Text4 = tmp(5088).Text;
                   intl8 = tmp(1126).intl;
-                  items3[1] = metroImportDefault(Text4, obj14);
+                  items3[1] = metroRequire(Text4, obj14);
                   const obj15 = { style: tmp4.guildList };
-                  items3[2] = metroImportDefault(GuildBoostingGuildListDefault, obj15);
+                  items3[2] = metroRequire(GuildBoostingGuildListDefault, obj15);
                   obj12.children = items3;
-                  tmp67 = obj12;
+                  tmp66 = obj12;
                 } else {
                   const obj16 = { style: tmp4.imgNoGuilds, source: guildSubscriptionNoGuildsSource };
-                  const items5 = [metroImportDefault(React3, obj16), , ];
-                  const obj17 = { style: items6, variant: "text-md/bold", children: intl5.string(intl9.t.FHm4bZ) };
-                  items6 = [tmp4.cardText];
-                  const Text = tmp(4886).Text;
+                  const items4 = [metroRequire(FastImageDefault, obj16), , ];
+                  const obj17 = { style: tmp4.cardText, variant: "text-md/bold", children: intl5.string(intl9.t.FHm4bZ) };
+                  const Text = tmp(5088).Text;
                   intl5 = tmp(1126).intl;
-                  items5[1] = metroImportDefault(Text, obj17);
+                  items4[1] = metroRequire(Text, obj17);
                   const obj18 = { style: tmp4.cardText, variant: "text-md/medium", children: intl6.string(intl9.t.PSLiiu) };
-                  const Text2 = tmp(4886).Text;
+                  const Text2 = tmp(5088).Text;
                   intl6 = tmp(1126).intl;
-                  items5[2] = metroImportDefault(Text2, obj18);
-                  obj12.children = items5;
-                  tmp67 = obj12;
+                  items4[2] = metroRequire(Text2, obj18);
+                  obj12.children = items4;
+                  tmp66 = obj12;
                 }
-                tmp63Result = tmp63(tmp64, tmp67);
+                tmp63Result = tmp63(tmp64, tmp66);
               }
               cResult[34] = stateFromStores;
               cResult[35] = isInReverseTrial;
@@ -442,7 +439,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
             if (subscriptionPlansLoaded) {
               tmp59 = null;
               if (fractionalState === tmp13.NONE) {
-                tmp59 = metroImportDefault(tmp11(13342), {});
+                tmp59 = metroRequire(tmp11(13832), {});
               }
             }
             cResult[31] = fractionalState;
@@ -453,9 +450,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
         }
       }
     }
-    const obj19 = { style: header, children: items7 };
-    items7 = [tmp15, tmp20, tmp24, tmp29];
-    const tmp35 = metroImportAll(_false, obj19);
+    const obj19 = { style: header, children: items5 };
+    items5 = [tmp15, tmp20, tmp24, tmp29];
+    const tmp35 = metroImportDefault(_false, obj19);
     cResult[13] = tmp4.header;
     cResult[14] = tmp24;
     cResult[15] = tmp29;
@@ -464,13 +461,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
     cResult[18] = tmp35;
     tmp32 = tmp35;
   }
-  const obj20 = { style: tmp4.logoPremiumGuild, source: tmp11Result };
-  const tmp21 = metroImportDefault(React3, obj20);
+  const obj20 = { style: tmp4.logoPremiumGuild, source: tmp11Result2 };
+  const tmp21 = metroRequire(FastImageDefault, obj20);
   cResult[4] = tmp4.logoPremiumGuild;
-  cResult[5] = tmp11Result;
+  cResult[5] = tmp11Result2;
   cResult[6] = tmp21;
   tmp20 = tmp21;
-}) : ((arg0) => {
+}) : (function GuildBoostingUpsell(arg0) {
   let flattenedGuildIds;
   let fractionalState;
   let hasAvailableSlots;
@@ -486,13 +483,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
   let items1;
   let items2;
   let items3;
-  let items5;
-  let items7;
   let onLearnMorePremium;
-  let tmp7Result;
+  let tmp7Result6;
   ({ fractionalState, isInReverseTrial } = arg0);
   ({ onLearnMorePremium, hasAvailableSlots } = arg0);
-  const tmp = closure_9();
+  const tmp = closure_8();
   const items = [SortedGuildStore];
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => flattenedGuildIds.getFlattenedGuildIds().length > 0);
@@ -509,94 +504,93 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasAvailableSlots) =
     }
     return tmp11Result2;
   }
-  const obj5 = { style: tmp.header, children: items1 };
-  items1 = [, , , ];
   const obj4 = { style: tmp.root, children: items2 };
+  const obj5 = { style: tmp.header, children: items1 };
   const obj6 = { style: tmp.imgPremiumGuild, source: AssetRegistryDefault };
-  items1[0] = metroImportDefault(React3, obj6);
-  const obj7 = { style: tmp.logoPremiumGuild, source: tmp7Result };
+  const tmp7Result = FastImageDefault;
+  items1 = [metroRequire(tmp7Result, obj6), , , ];
+  const obj7 = { style: tmp.logoPremiumGuild, source: tmp7Result6 };
+  const tmp7Result5 = FastImageDefault;
   const tmp2Result = shared;
   if (tmp2Result.isThemeDark(tmp8)) {
-    tmp7Result = tmp7(13179);
+    tmp7Result6 = tmp7(13669);
   } else {
-    tmp7Result = tmp7(13180);
+    tmp7Result6 = tmp7(13670);
   }
-  items1[1] = metroImportDefault(React3, obj7);
+  items1[1] = metroRequire(tmp7Result5, obj7);
   const obj8 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl9.t.hw6WTd) };
-  const Text = tmp2(4886).Text;
+  const Text = tmp2(5088).Text;
   intl = tmp2(1126).intl;
-  items1[2] = metroImportDefault(Text, obj8);
+  items1[2] = metroRequire(Text, obj8);
   const obj9 = { style: tmp.cardText, variant: "text-md/medium", children: intl2.string(intl9.t.K5jBdG) };
-  const Text2 = tmp2(4886).Text;
+  const Text2 = tmp2(5088).Text;
   intl2 = tmp2(1126).intl;
-  items1[3] = metroImportDefault(Text2, obj9);
-  items2 = [metroImportAll(_false, obj5), , , , , ];
+  items1[3] = metroRequire(Text2, obj9);
+  items2 = [metroImportDefault(_false, obj5), , , , , ];
   const obj10 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl3.string(intl9.t.RvfRTB) };
-  const Text3 = tmp2(4886).Text;
+  const Text3 = tmp2(5088).Text;
   intl3 = tmp2(1126).intl;
-  items2[1] = metroImportDefault(Text3, obj10);
+  items2[1] = metroRequire(Text3, obj10);
   const obj11 = { style: tmp.features, features: FEATURES_PREMIUM_GUILD_USER() };
-  const tmp7Result3 = PremiumFeatureListDefault;
-  items2[2] = metroImportDefault(tmp7Result3, obj11);
+  const tmp7Result7 = PremiumFeatureListDefault;
+  items2[2] = metroRequire(tmp7Result7, obj11);
   const obj12 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl4.string(intl9.t["/pVhjb"]) };
-  const Text4 = tmp2(4886).Text;
+  const Text4 = tmp2(5088).Text;
   intl4 = tmp2(1126).intl;
-  items2[3] = metroImportDefault(Text4, obj12);
+  items2[3] = metroRequire(Text4, obj12);
   const obj13 = { style: tmp.features, features: FEATURES_PREMIUM_GUILD() };
-  const tmp7Result4 = PremiumFeatureListDefault;
-  items2[4] = metroImportDefault(tmp7Result4, obj13);
+  const tmp7Result8 = PremiumFeatureListDefault;
+  items2[4] = metroRequire(tmp7Result8, obj13);
   let tmp13Result = null;
   const obj14 = { style: tmp.upsell, children: items3 };
   if (subscriptionPlansLoaded) {
     tmp13Result = null;
     if (fractionalState === tmp9.NONE) {
-      tmp13Result = tmp13(tmp7(13342), {});
+      tmp13Result = tmp13(tmp7(13832), {});
     }
   }
   items3 = [tmp13Result, , ];
   let tmp11Result = null;
   if (!isInReverseTrial) {
-    let tmp20;
+    let tmp21;
     const obj15 = { children: null };
     if (stateFromStores) {
       const obj16 = { style: tmp.cardText, variant: "text-md/medium", children: intl7.string(intl9.t.WRzob8) };
-      const Text7 = tmp2(4886).Text;
+      const Text7 = tmp2(5088).Text;
       intl7 = tmp2(1126).intl;
-      const items4 = [metroImportDefault(Text7, obj16), , ];
-      const obj17 = { style: items5, variant: "text-md/bold", children: intl8.string(intl9.t.j4bXcm) };
-      items5 = [tmp.cardText];
-      const Text8 = tmp2(4886).Text;
+      const items4 = [metroRequire(Text7, obj16), , ];
+      const obj17 = { style: tmp.cardText, variant: "text-md/bold", children: intl8.string(intl9.t.j4bXcm) };
+      const Text8 = tmp2(5088).Text;
       intl8 = tmp2(1126).intl;
-      items4[1] = metroImportDefault(Text8, obj17);
+      items4[1] = metroRequire(Text8, obj17);
       const obj18 = { style: tmp.guildList };
-      items4[2] = metroImportDefault(GuildBoostingGuildListDefault, obj18);
+      items4[2] = metroRequire(GuildBoostingGuildListDefault, obj18);
       obj15.children = items4;
-      tmp20 = obj15;
+      tmp21 = obj15;
     } else {
       const obj19 = { style: tmp.imgNoGuilds, source: guildSubscriptionNoGuildsSource };
-      const items6 = [metroImportDefault(React3, obj19), , ];
-      const obj20 = { style: items7, variant: "text-md/bold", children: intl5.string(intl9.t.FHm4bZ) };
-      items7 = [tmp.cardText];
-      const Text5 = tmp2(4886).Text;
+      const items5 = [metroRequire(FastImageDefault, obj19), , ];
+      const obj20 = { style: tmp.cardText, variant: "text-md/bold", children: intl5.string(intl9.t.FHm4bZ) };
+      const Text5 = tmp2(5088).Text;
       intl5 = tmp2(1126).intl;
-      items6[1] = metroImportDefault(Text5, obj20);
+      items5[1] = metroRequire(Text5, obj20);
       const obj21 = { style: tmp.cardText, variant: "text-md/medium", children: intl6.string(intl9.t.PSLiiu) };
-      const Text6 = tmp2(4886).Text;
+      const Text6 = tmp2(5088).Text;
       intl6 = tmp2(1126).intl;
-      items6[2] = metroImportDefault(Text6, obj21);
-      obj15.children = items6;
-      tmp20 = obj15;
+      items5[2] = metroRequire(Text6, obj21);
+      obj15.children = items5;
+      tmp21 = obj15;
     }
-    tmp11Result = tmp11(tmp12, tmp20);
+    tmp11Result = tmp11(tmp12, tmp21);
   }
   items3[1] = tmp11Result;
   let tmp13Result2 = null;
   if (subscriptionPlansLoaded) {
     const obj22 = { onLearnMorePremium, style: tmp.subscriptionUpsell };
-    tmp13Result2 = tmp13(tmp7(13344), obj22);
+    tmp13Result2 = tmp13(tmp7(13834), obj22);
   }
   items3[2] = tmp13Result2;
-  items2[5] = metroImportAll(_false, obj14);
+  items2[5] = metroImportDefault(_false, obj14);
   tmp11Result2 = tmp11(tmp12, obj4);
 });
 const result = size.fileFinishedImporting("components_native/premium/GuildBoostingUpsell.tsx");

@@ -1,0 +1,11 @@
+// Module ID: 9046
+// Function ID: 9047
+// Dependencies: [2]
+
+// Module 9046
+import size from "module_2" /* 2 */;
+
+const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroCoinSpotIllustration-1x.png.js");
+
+export default "https://cdn.discordapp.com/assets/content/00783fd8ba6fdbfa910af6396bb7c98fd3e0005bfdfb9c298632b7aad93204be.png";
+export const metadata = { fileBytes: 47350 };

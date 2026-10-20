@@ -1,42 +1,42 @@
-// Module ID: 10533
-// Function ID: 10534
+// Module ID: 10159
+// Function ID: 10160
 // Name: SocialLayerStorefrontProductDetailsModal
-// Dependencies: [32, 19, 17, 5695, 6729, 10534, 1085, 21, 683, 587, 4890, 6068, 10535, 558, 576, 7983, 5974, 4886, 1126, 10536, 1188, 2018, 5322, 1618, 5912, 8871, 504, 6663, 6660, 6727, 6681, 1252, 10531, 5590, 10532, 1369, 4541, 10537, 8870, 10538, 10542, 6732, 8481, 10546, 3593, 5594, 7575, 7752, 10549, 6017, 6019, 5605, 10551, 2]
+// Dependencies: [32, 19, 17, 6088, 6933, 10160, 1085, 21, 683, 587, 5092, 6259, 10161, 558, 576, 8421, 6157, 5088, 1126, 10162, 1200, 2031, 5644, 1631, 8322, 9394, 504, 6858, 6855, 6931, 6879, 1265, 10157, 5396, 10158, 1382, 4782, 10163, 9393, 10164, 10168, 6936, 9024, 10172, 3719, 5379, 7569, 8106, 10175, 6208, 6210, 5391, 10177, 2]
 
-// Module 10533 (SocialLayerStorefrontProductDetailsModal)
+// Module 10159 (SocialLayerStorefrontProductDetailsModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import StringUtils from "StringUtils" /* 2018 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 4541 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import StoreUtils from "StoreUtils" /* 5322 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import XSmallIcon from "XSmallIcon" /* 6017 */;
-import NavigatorConstants from "NavigatorConstants" /* 6068 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6727 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10531 */;
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10532 */;
-import SocialLayerStorefrontAnalyticsConstants from "SocialLayerStorefrontAnalyticsConstants" /* 10534 */;
-import carouselMediaItems from "carouselMediaItems" /* 10535 */;
-import StorefrontNativeUtils from "StorefrontNativeUtils" /* 10536 */;
-import redirectToSlayerStorefrontWebDefault from "redirectToSlayerStorefrontWeb" /* 10537 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import StringUtils from "StringUtils" /* 2031 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 4782 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import StoreUtils from "StoreUtils" /* 5644 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import XSmallIcon from "XSmallIcon" /* 6208 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6931 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10157 */;
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10158 */;
+import SocialLayerStorefrontAnalyticsConstants from "SocialLayerStorefrontAnalyticsConstants" /* 10160 */;
+import carouselMediaItems from "carouselMediaItems" /* 10161 */;
+import StorefrontNativeUtils from "StorefrontNativeUtils" /* 10162 */;
+import redirectToSlayerStorefrontWebDefault from "redirectToSlayerStorefrontWeb" /* 10163 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SKUStore from "SKUStore" /* 5695 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6729 */;
+import SKUStore from "SKUStore" /* 6088 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6933 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import module_683_mod from "module_683" /* 683 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let applicationId, closure_0, dependencyMap, importDefault, location_stack, obj1, sku, skuId, trackResult;
+let applicationId, closure_0, dependencyMap, importDefault, location_stack, obj1;
 
 let closure_12;
 let closure_14;
@@ -69,8 +69,8 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const common_Video = tmp(7983);
-const NativePaymentContext = tmp(10551);
+const common_Video = tmp(8421);
+const NativePaymentContext = tmp(10177);
 let react = react_mod;
 ({ ScrollView: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const SlayerShopPDPCTAType = SocialLayerStorefrontAnalyticsConstants.SlayerShopPDPCTAType;
@@ -85,7 +85,7 @@ const importDefaultResult1Result = module_683(nativeDefault.unsafe_rawColors.BRA
 const alphaResult1 = importDefaultResult1Result.alpha(0);
 let closure_17 = alphaResult1.hex();
 let createStyles = createStyles_mod;
-let obj = { container: { flex: 1 }, header: obj2, headerTitle: { flexShrink: 1 }, closeButtonIcon: obj3, scrollContent: obj4, scrollContainer: { flex: 1 }, columnsLandscape: obj5, heroColumnLandscape: { flex: 1 }, heroColumnContentLandscape: obj6, bundleGroupLandscape: obj7, detailsScrollLandscape: { flex: 1 }, detailsContentLandscape: { flexGrow: 1, justifyContent: "space-between", paddingBottom: 0 }, detailsGroupLandscape: obj8, section: obj9, bundleThumbnailRow: obj10, thumbnail: size, thumbnailSelected: obj11, thumbnailInner: obj12, thumbnailInnerSelected: obj13, thumbnailImage: { width: "100%", height: "100%" }, labelRow: obj14, labelIcon: size1, priceRow: obj15, footer: obj16, footerButtonRow: obj17, buyButton: { flex: 1 }, availabilityCopy: { textAlign: "center" }, legalCopy: obj18, hero: obj19, heroLandscape: { flex: 1, minHeight: 140, height: "call" }, priceSection: obj20, heroImage: { width: "100%", height: "100%" }, exclusiveBadgeContainer: obj21 };
+let obj = { container: { flex: 1 }, header: obj2, headerTitle: { flexShrink: 1 }, closeButtonIcon: obj3, scrollContent: obj4, scrollContainer: { flex: 1 }, columnsLandscape: obj5, heroColumnLandscape: { flex: 1 }, heroColumnContentLandscape: obj6, bundleGroupLandscape: obj7, detailsScrollLandscape: { flex: 1 }, detailsContentLandscape: { flexGrow: 1, justifyContent: "space-between", paddingBottom: 0 }, detailsGroupLandscape: obj8, section: obj9, bundleThumbnailRow: obj10, thumbnail: size, thumbnailSelected: obj11, thumbnailInner: obj12, thumbnailInnerSelected: obj13, thumbnailImage: { width: "100%", height: "100%" }, labelRow: obj14, labelIcon: size1, priceRow: obj15, footer: obj16, footerButtonRow: obj17, buyButton: { flex: 1 }, availabilityCopy: { textAlign: "center" }, legalCopy: obj18, hero: obj19, heroLandscape: { flex: 1, minHeight: 140, height: "set" }, priceSection: obj20, heroImage: { width: "100%", height: "100%" }, exclusiveBadgeContainer: obj21 };
 obj2 = { height: NavigatorConstants.NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
 createStyles = createStyles.createStyles;
 obj3 = { tintColor: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
@@ -111,7 +111,7 @@ obj20 = { width: "100%", gap: nativeDefault.space.PX_8 };
 obj21 = { paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_18 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeroMedia(arg0) {
   let items;
   let landscape;
   let mediaItem;
@@ -153,7 +153,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp11 = tmp33;
           }
           const obj3 = { style: tmp5, children: tmp30 };
-          const tmp36 = authStore2(metroImportDefault, obj3);
+          const tmp36 = syncedClientThemes(metroImportDefault, obj3);
           cResult[9] = tmp5;
           cResult[10] = tmp30;
           cResult[11] = tmp36;
@@ -161,7 +161,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj4 = { source: tmp29, poster: mediaItem.videoThumbnailSrc, muted: true, resizeMode: "cover", style: tmp4.heroImage };
-      const tmp32 = authStore2(common_Video.VideoComponent, obj4);
+      const tmp32 = syncedClientThemes(common_Video.VideoComponent, obj4);
       cResult[5] = mediaItem.videoThumbnailSrc;
       cResult[6] = tmp4.heroImage;
       cResult[7] = tmp29;
@@ -173,7 +173,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[12] !== mediaItem.backgroundSrc) {
         const obj5 = { source: obj6, style: metroRequire.absoluteFill, resizeMode: "cover" };
         obj6 = { uri: mediaItem.backgroundSrc };
-        const tmp19 = authStore2(FastImageDefault, obj5);
+        const tmp19 = syncedClientThemes(FastImageDefault, obj5);
         cResult[12] = mediaItem.backgroundSrc;
         cResult[13] = tmp19;
         tmp15 = tmp19;
@@ -204,7 +204,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const obj8 = { style: tmp5, children: items };
         items = [tmp15, tmp21];
-        const tmp28 = closure_15(metroImportDefault, obj8);
+        const tmp28 = authStore3(metroImportDefault, obj8);
         cResult[19] = tmp5;
         cResult[20] = tmp15;
         cResult[21] = tmp21;
@@ -212,7 +212,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp25 = tmp28;
       }
       const obj9 = { source: tmp20, style: tmp4.heroImage, resizeMode: "cover" };
-      const tmp24 = authStore2(FastImageDefault, obj9);
+      const tmp24 = syncedClientThemes(FastImageDefault, obj9);
       cResult[16] = tmp4.heroImage;
       cResult[17] = tmp20;
       cResult[18] = tmp24;
@@ -238,14 +238,14 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj11 = { style: tmp5, children: tmp7 };
-        const tmp14 = authStore2(metroImportDefault, obj11);
+        const tmp14 = syncedClientThemes(metroImportDefault, obj11);
         cResult[28] = tmp5;
         cResult[29] = tmp7;
         cResult[30] = tmp14;
         tmp11 = tmp14;
       }
       const obj12 = { source: tmp6, style: tmp4.heroImage, resizeMode: "cover" };
-      const tmp10 = authStore2(FastImageDefault, obj12);
+      const tmp10 = syncedClientThemes(FastImageDefault, obj12);
       cResult[25] = tmp4.heroImage;
       cResult[26] = tmp6;
       cResult[27] = tmp10;
@@ -258,7 +258,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = landscape;
   cResult[2] = items1;
   tmp5 = items1;
-}) : ((arg0) => {
+}) : (function HeroMedia(arg0) {
   let items1;
   let landscape;
   let mediaItem;
@@ -277,53 +277,53 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   items[1] = landscape;
   if ("video" === mediaItem.type) {
-    const obj2 = { style: items, children: authStore2(common_Video.VideoComponent, obj3) };
+    const obj2 = { style: items, children: syncedClientThemes(common_Video.VideoComponent, obj3) };
     obj3 = { source: obj4, poster: mediaItem.videoThumbnailSrc, muted: true, resizeMode: "cover", style: tmp.heroImage };
     obj4 = { uri: mediaItem.src };
-    tmp6 = authStore2(metroImportDefault, obj2);
+    tmp6 = syncedClientThemes(metroImportDefault, obj2);
   } else if (null != mediaItem.backgroundSrc) {
     const obj6 = { source: obj7, style: metroRequire.absoluteFill, resizeMode: "cover" };
     const obj5 = { style: items, children: items1 };
     obj7 = { uri: mediaItem.backgroundSrc };
-    items1 = [authStore2(FastImageDefault, obj6), ];
+    items1 = [syncedClientThemes(FastImageDefault, obj6), ];
     const obj8 = { source: obj9, style: tmp.heroImage, resizeMode: "cover" };
     obj9 = { uri: mediaItem.src };
-    items1[1] = authStore2(FastImageDefault, obj8);
-    tmp6 = closure_15(metroImportDefault, obj5);
+    items1[1] = syncedClientThemes(FastImageDefault, obj8);
+    tmp6 = authStore3(metroImportDefault, obj5);
   } else {
-    const obj = { style: items, children: authStore2(FastImageDefault, obj10) };
+    const obj = { style: items, children: syncedClientThemes(FastImageDefault, obj10) };
     obj10 = { source: obj11, style: tmp.heroImage, resizeMode: "cover" };
     obj11 = { uri: mediaItem.src };
-    tmp6 = authStore2(metroImportDefault, obj);
+    tmp6 = syncedClientThemes(metroImportDefault, obj);
   }
   return tmp6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function InGameItemTag() {
   let first;
   let intl;
   const obj = react2;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-sm/medium", color: "text-muted", children: intl.string(intl5.t.V91tvy) };
-    const Text = tmp(4886).Text;
+    const Text = tmp(5088).Text;
     intl = tmp(1126).intl;
-    const tmp6 = authStore2(Text, obj2);
+    const tmp6 = syncedClientThemes(Text, obj2);
     cResult[0] = tmp6;
     first = tmp6;
   } else {
     first = cResult[0];
   }
   return first;
-}) : (() => {
+}) : (function InGameItemTag() {
   let intl;
   const obj = { variant: "text-sm/medium", color: "text-muted", children: intl.string(intl5.t.V91tvy) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
-  return authStore2(Text, obj);
+  return syncedClientThemes(Text, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPriceSection(sku) {
   let items;
   let tmp5;
   const obj = react2;
@@ -346,7 +346,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
     let tmp13;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp12 = authStore2(closure_20, {});
+      const tmp12 = syncedClientThemes(closure_20, {});
       cResult[2] = tmp12;
       tmp9 = tmp12;
     } else {
@@ -354,7 +354,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
     }
     if (cResult[3] !== userPrice) {
       const obj3 = { variant: "text-md/bold", color: "mobile-text-heading-primary", children: userPrice };
-      const tmp15 = authStore2(Text_Text.Text, obj3);
+      const tmp15 = syncedClientThemes(Text_Text.Text, obj3);
       cResult[3] = userPrice;
       cResult[4] = tmp15;
       tmp13 = tmp15;
@@ -375,21 +375,21 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
       }
       const obj4 = { style: tmp4.priceSection, children: items };
       items = [tmp9, tmp16];
-      const tmp23 = closure_15(metroImportDefault, obj4);
+      const tmp23 = authStore3(metroImportDefault, obj4);
       cResult[8] = tmp4.priceSection;
       cResult[9] = tmp16;
       cResult[10] = tmp23;
       tmp20 = tmp23;
     }
     const obj5 = { style: tmp4.priceRow, children: tmp13 };
-    const tmp19 = authStore2(metroImportDefault, obj5);
+    const tmp19 = syncedClientThemes(metroImportDefault, obj5);
     cResult[5] = tmp4.priceRow;
     cResult[6] = tmp13;
     cResult[7] = tmp19;
     tmp16 = tmp19;
   }
   return tmp7;
-}) : ((sku) => {
+}) : (function ProductPriceSection(sku) {
   let items;
   let obj5;
   sku = sku.sku;
@@ -400,16 +400,16 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
   let tmp4 = null;
   if (null != userPrice) {
     const obj3 = { style: tmp.priceSection, children: items };
-    items = [authStore2(closure_20, {}), ];
-    const obj4 = { style: tmp.priceRow, children: authStore2(Text_Text.Text, obj5) };
+    items = [syncedClientThemes(closure_20, {}), ];
+    const obj4 = { style: tmp.priceRow, children: syncedClientThemes(Text_Text.Text, obj5) };
     obj5 = { variant: "text-md/bold", color: "mobile-text-heading-primary", children: userPrice };
-    items[1] = authStore2(metroImportDefault, obj4);
-    tmp4 = closure_15(metroImportDefault, obj3);
+    items[1] = syncedClientThemes(metroImportDefault, obj4);
+    tmp4 = authStore3(metroImportDefault, obj3);
   }
   return tmp4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectIndex) => {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function BundleThumbnailRow(onSelectIndex) {
   let intl;
   let items;
   let items1;
@@ -473,7 +473,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectIndex)
                       }
                       let obj3 = { style: section, children: items1 };
                       items1 = [tmp7, tmp14];
-                      class P {
+                      class C {
                         constructor(arg0, arg1) {
                           closure_0 = arg1;
                           tmp = closure_0[arg1];
@@ -537,7 +537,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectIndex)
                     let obj4 = { horizontal: true, showsHorizontalScrollIndicator: false, contentContainerStyle: tmp10, children: tmp11 };
                     const tmp17 = closure_14(closure_5, obj4);
                     cResult[23] = tmp4.bundleThumbnailRow;
-                    class P {
+                    class C {
                       constructor(arg0, arg1) {
                         closure_0 = arg1;
                         tmp = closure_0[arg1];
@@ -620,7 +620,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectIndex)
                   cResult[5] = items;
                   cResult[6] = mediaItems;
                   cResult[7] = selectedIndex;
-                  class P {
+                  class C {
                     constructor(arg0, arg1) {
                       closure_0 = arg1;
                       tmp = closure_0[arg1];
@@ -690,7 +690,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectIndex)
         }
       }
     }
-    class P {
+    class C {
       constructor(arg0, arg1) {
         closure_0 = arg1;
         tmp = closure_0[arg1];
@@ -754,8 +754,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectIndex)
     cResult[19] = tmp4.thumbnailInner;
     cResult[20] = tmp4.thumbnailInnerSelected;
     cResult[21] = tmp4.thumbnailSelected;
-    cResult[22] = P;
-    tmp12 = P;
+    cResult[22] = C;
+    tmp12 = C;
   }
   const fn = function l(arg0) {
     trackPDPClick(SlayerShopPDPCTAType.CAROUSEL_ITEM);
@@ -765,7 +765,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectIndex)
   cResult[1] = trackPDPClick;
   cResult[2] = fn;
   tmp5 = fn;
-}) : ((trackPDPClick) => {
+}) : (function BundleThumbnailRow(trackPDPClick) {
   let intl;
   let items1;
   let mediaItems;
@@ -843,7 +843,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelectIndex)
   return closure_15(closure_7, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function SKUNameAndDescriptionSection(sku) {
   let items;
   const obj = react2;
   const cResult = obj.c(8);
@@ -856,7 +856,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
     let tmp9;
     if (cResult[0] !== sku.name) {
       const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: sku.name };
-      const tmp8 = authStore2(Text_Text.Heading, obj3);
+      const tmp8 = syncedClientThemes(Text_Text.Heading, obj3);
       cResult[0] = sku.name;
       cResult[1] = tmp8;
       tmp6 = tmp8;
@@ -869,7 +869,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
       tmpResult.isNullOrEmpty(sku.description);
       if (tmp11) {
         const obj4 = { variant: "text-md/medium", color: "text-muted", children: sku.description };
-        tmp11 = authStore2(tmp(4886).Text, obj4);
+        tmp11 = syncedClientThemes(tmp(5088).Text, obj4);
       }
       cResult[2] = sku.description;
       cResult[3] = tmp11;
@@ -888,7 +888,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
     }
     const obj5 = { style: tmp4.section, children: items };
     items = [tmp6, tmp9];
-    const tmp16 = closure_15(metroImportDefault, obj5);
+    const tmp16 = authStore3(metroImportDefault, obj5);
     cResult[4] = tmp4.section;
     cResult[5] = tmp6;
     cResult[6] = tmp9;
@@ -896,7 +896,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
     tmp13 = tmp16;
   }
   return tmp5;
-}) : ((sku) => {
+}) : (function SKUNameAndDescriptionSection(sku) {
   let items;
   sku = sku.sku;
   let tmp5Result = null;
@@ -905,16 +905,16 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
   if (!obj.isNullOrEmpty(sku.name)) {
     const obj2 = { style: tmp.section, children: items };
     const obj3 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: sku.name };
-    items = [authStore2(Text_Text.Heading, obj3), ];
+    items = [syncedClientThemes(Text_Text.Heading, obj3), ];
     const tmp2Result = StringUtils;
     let tmp7Result = !tmp2Result.isNullOrEmpty(sku.description);
     tmp2Result.isNullOrEmpty(sku.description);
-    const tmp5 = closure_15;
+    const tmp5 = authStore3;
     const tmp6 = metroImportDefault;
-    const tmp7 = authStore2;
+    const tmp7 = syncedClientThemes;
     if (tmp7Result) {
       const obj4 = { variant: "text-md/medium", color: "text-muted", children: sku.description };
-      tmp7Result = tmp7(tmp2(4886).Text, obj4);
+      tmp7Result = tmp7(tmp2(5088).Text, obj4);
     }
     items[1] = tmp7Result;
     tmp5Result = tmp5(tmp6, obj2);
@@ -922,7 +922,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
   return tmp5Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ItemDetailsSection(arg0) {
   let items;
   let items1;
   let obj6;
@@ -971,7 +971,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
               const obj2 = { style: tmp8, children: items };
               items = [tmp9, tmp10, tmp11];
-              const tmp42 = closure_15(tmp7, obj2);
+              const tmp42 = authStore3(tmp7, obj2);
               cResult[14] = tmp7;
               cResult[15] = tmp8;
               cResult[16] = tmp9;
@@ -1031,7 +1031,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmpResult9.isNullOrEmpty(trimmed);
     if (tmp27) {
       const obj3 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: trimmed };
-      tmp27 = authStore2(tmp(4886).Heading, obj3);
+      tmp27 = syncedClientThemes(tmp(5088).Heading, obj3);
     }
     const tmpResult10 = StringUtils;
     let tmp31Result = !tmpResult10.isNullOrEmpty(trimmed1);
@@ -1039,15 +1039,15 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (tmp31Result) {
       let tmp32 = null != tmp5;
       const obj4 = { style: tmp4.labelRow, children: items1 };
-      const tmp31 = closure_15;
+      const tmp31 = authStore3;
       if (tmp32) {
         const obj5 = { source: obj6, style: tmp4.labelIcon };
         obj6 = { uri: tmp5 };
-        tmp32 = authStore2(FastImageDefault, obj5);
+        tmp32 = syncedClientThemes(FastImageDefault, obj5);
       }
       items1 = [tmp32, ];
       const obj7 = { variant: "text-sm/medium", color: "text-muted", children: trimmed1 };
-      items1[1] = authStore2(Text_Text.Text, obj7);
+      items1[1] = syncedClientThemes(Text_Text.Text, obj7);
       tmp31Result = tmp31(tmp25, obj4);
     }
     const tmpResult11 = StringUtils;
@@ -1055,7 +1055,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmpResult11.isNullOrEmpty(trimmed2);
     if (tmp37) {
       const obj8 = { variant: "text-md/medium", color: "text-default", children: trimmed2 };
-      tmp37 = authStore2(tmp(4886).Text, obj8);
+      tmp37 = syncedClientThemes(tmp(5088).Text, obj8);
     }
     tmp19 = forResult;
   }
@@ -1068,7 +1068,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = selectedItem.labelIconAssetId;
   cResult[2] = assetURL;
   tmp5 = assetURL;
-}) : ((selectedItem) => {
+}) : (function ItemDetailsSection(selectedItem) {
   let items;
   let items1;
   let obj7;
@@ -1108,7 +1108,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmp8Result6.isNullOrEmpty(trimmed);
   if (tmp14) {
     const obj4 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: trimmed };
-    tmp14 = authStore2(tmp8(4886).Heading, obj4);
+    tmp14 = syncedClientThemes(tmp8(5088).Heading, obj4);
   }
   items = [tmp14, , ];
   const tmp8Result7 = StringUtils;
@@ -1120,11 +1120,11 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (tmp18) {
       const obj6 = { source: obj7, style: tmp.labelIcon };
       obj7 = { uri: assetURL };
-      tmp18 = authStore2(FastImageDefault, obj6);
+      tmp18 = syncedClientThemes(FastImageDefault, obj6);
     }
     items1 = [tmp18, ];
     const obj8 = { variant: "text-sm/medium", color: "text-muted", children: trimmed1 };
-    items1[1] = authStore2(Text_Text.Text, obj8);
+    items1[1] = syncedClientThemes(Text_Text.Text, obj8);
     tmp11Result = tmp11(tmp12, obj5);
   }
   items[1] = tmp11Result;
@@ -1133,13 +1133,13 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmp8Result8.isNullOrEmpty(trimmed2);
   if (tmp23) {
     const obj9 = { variant: "text-md/medium", color: "text-default", children: trimmed2 };
-    tmp23 = authStore2(tmp8(4886).Text, obj9);
+    tmp23 = syncedClientThemes(tmp8(5088).Text, obj9);
   }
   items[2] = tmp23;
   tmp11Result2 = tmp11(tmp12, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerStorefrontProductDetailsModal(skuId) {
   let closeButtonIcon;
   let closure_5;
   let first;
@@ -1148,9 +1148,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   let skuAssets;
   let tmp12;
   let tmp14;
-  let tmp15;
-  let tmp20;
+  let tmp16;
   let tmp21;
+  let tmp22;
   let tmp2 = skuId;
   const tmp3 = mobileStoreFront;
   let obj = skuId(mobileStoreFront[14]);
@@ -1172,71 +1172,50 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     first = cResult[0];
   }
   if (cResult[1] !== skuId) {
-    class S {
-      constructor() {
-        return closure_8.get(skuId);
-      }
-    }
+    const fn = function b() {
+      return SKUStore.get(skuId);
+    };
     cResult[1] = skuId;
-    cResult[2] = S;
-    tmp12 = S;
+    cResult[2] = fn;
+    tmp12 = fn;
   } else {
-    class S {
-      constructor() {
-        return closure_8.get(skuId);
-      }
-    }
+    tmp12 = cResult[2];
   }
   const tmp2Result = tmp2(tmp3[26]);
   const stateFromStores = tmp2Result.useStateFromStores(first, tmp12);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        return closure_8.get(skuId);
-      }
-    }
     const items1 = [SKUStore];
     cResult[3] = items1;
     tmp14 = items1;
   } else {
-    class S {
-      constructor() {
-        return closure_8.get(skuId);
-      }
-    }
+    tmp14 = cResult[3];
   }
   if (cResult[4] !== skuId) {
-    class F {
+    class N {
       constructor() {
-        obj = closure_8;
-        tmp = skuId;
-        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        const tmp2 = SKUStore.isFetching(skuId) || SKUStore.didFetchingSkuFail(skuId);
         return tmp2;
       }
     }
     cResult[4] = skuId;
-    cResult[5] = F;
-    tmp15 = F;
+    cResult[5] = N;
+    tmp16 = N;
   } else {
-    class F {
+    class N {
       constructor() {
-        obj = closure_8;
-        tmp = skuId;
-        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        const tmp2 = SKUStore.isFetching(skuId) || SKUStore.didFetchingSkuFail(skuId);
         return tmp2;
       }
     }
   }
   const tmp2Result5 = tmp2(tmp3[26]);
-  const stateFromStores1 = tmp2Result5.useStateFromStores(tmp14, tmp15);
+  const stateFromStores1 = tmp2Result5.useStateFromStores(tmp14, tmp16);
   const useGetOrFetchApplication = tmp2(tmp3[27]).useGetOrFetchApplication;
   tmp2(tmp3[27]);
   if (stateFromStores != null) {
-    class F {
+    class N {
       constructor() {
-        obj = closure_8;
-        tmp = skuId;
-        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        const tmp2 = SKUStore.isFetching(skuId) || SKUStore.didFetchingSkuFail(skuId);
         return tmp2;
       }
     }
@@ -1244,171 +1223,147 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   const getOrFetchApplication = useGetOrFetchApplication(undefined);
   const tmp6Result = require("useStartAuthorize");
   if (getOrFetchApplication == null) {
-    class F {
+    class N {
       constructor() {
-        obj = closure_8;
-        tmp = skuId;
-        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        const tmp2 = SKUStore.isFetching(skuId) || SKUStore.didFetchingSkuFail(skuId);
         return tmp2;
       }
     }
   }
   const hasAlreadyLinked = tmp6Result(getOrFetchApplication).hasAlreadyLinked;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class F {
+    class N {
       constructor() {
-        obj = closure_8;
-        tmp = skuId;
-        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        const tmp2 = SKUStore.isFetching(skuId) || SKUStore.didFetchingSkuFail(skuId);
         return tmp2;
       }
     }
     const items2 = [SocialLayerStorefrontStore];
     class X {
       constructor() {
-        return closure_9.getSkuAssets();
+        return skuAssets.getSkuAssets();
       }
     }
     cResult[6] = items2;
     cResult[7] = X;
-    tmp21 = X;
-    tmp20 = items2;
+    tmp22 = X;
+    tmp21 = items2;
   } else {
-    class F {
+    class N {
       constructor() {
-        obj = closure_8;
-        tmp = skuId;
-        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        const tmp2 = SKUStore.isFetching(skuId) || SKUStore.didFetchingSkuFail(skuId);
         return tmp2;
       }
     }
-    tmp21 = cResult[7];
+    tmp22 = cResult[7];
   }
   const tmp2Result7 = tmp2(tmp3[26]);
-  const stateFromStores2 = tmp2Result7.useStateFromStores(tmp20, tmp21);
+  const stateFromStores2 = tmp2Result7.useStateFromStores(tmp21, tmp22);
   const tmp2Result8 = tmp2(tmp3[29]);
   const cardImageURL = tmp2Result8.getCardImageURL(stateFromStores);
   [r10099, r10100] = stateFromStores(stateFromStores1.useState(0), 2);
   stateFromStores(stateFromStores1.useState(0), 2);
   if (cResult[8] !== analyticsLocations) {
-    class F {
+    class N {
       constructor() {
-        obj = closure_8;
-        tmp = skuId;
-        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        const tmp2 = SKUStore.isFetching(skuId) || SKUStore.didFetchingSkuFail(skuId);
         return tmp2;
       }
     }
     if (analyticsLocations == null) {
-      class F {
+      class N {
         constructor() {
-          obj = closure_8;
-          tmp = skuId;
-          tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+          const tmp2 = SKUStore.isFetching(skuId) || SKUStore.didFetchingSkuFail(skuId);
           return tmp2;
         }
       }
     }
     class X {
       constructor() {
-        return closure_9.getSkuAssets();
+        return skuAssets.getSkuAssets();
       }
     }
-    cResult[9] = tmp26;
+    cResult[9] = tmp27;
   } else {
-    class F {
+    class N {
       constructor() {
-        obj = closure_8;
-        tmp = skuId;
-        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        const tmp2 = SKUStore.isFetching(skuId) || SKUStore.didFetchingSkuFail(skuId);
         return tmp2;
       }
     }
   }
-  if (cResult[10] !== tmp25) {
-    class F {
+  if (cResult[10] !== tmp26) {
+    class N {
       constructor() {
-        obj = closure_8;
-        tmp = skuId;
-        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        const tmp2 = SKUStore.isFetching(skuId) || SKUStore.didFetchingSkuFail(skuId);
         return tmp2;
       }
     }
     class X {
       constructor() {
-        return closure_9.getSkuAssets();
+        return skuAssets.getSkuAssets();
       }
     }
-    const arraySpreadResult = HermesBuiltin.arraySpread(tmp28, tmp25, 0);
-    tmp28[arraySpreadResult] = require("AnalyticsLocation").SLAYER_STOREFRONT_NATIVE_PDP;
-    cResult[10] = tmp25;
-    cResult[11] = tmp28;
+    const arraySpreadResult = HermesBuiltin.arraySpread(tmp29, tmp26, 0);
+    tmp29[arraySpreadResult] = require("AnalyticsLocation").SLAYER_STOREFRONT_NATIVE_PDP;
+    cResult[10] = tmp26;
+    cResult[11] = tmp29;
   } else {
-    class F {
+    class N {
       constructor() {
-        obj = closure_8;
-        tmp = skuId;
-        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        const tmp2 = SKUStore.isFetching(skuId) || SKUStore.didFetchingSkuFail(skuId);
         return tmp2;
       }
     }
   }
-  location_stack = tmp27;
-  if (cResult[12] === tmp27) {
-    class F {
+  location_stack = tmp28;
+  if (cResult[12] === tmp28) {
+    class N {
       constructor() {
-        obj = closure_8;
-        tmp = skuId;
-        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        const tmp2 = SKUStore.isFetching(skuId) || SKUStore.didFetchingSkuFail(skuId);
         return tmp2;
       }
     }
     if (stateFromStores != null) {
-      class F {
+      class N {
         constructor() {
-          obj = closure_8;
-          tmp = skuId;
-          tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+          const tmp2 = SKUStore.isFetching(skuId) || SKUStore.didFetchingSkuFail(skuId);
           return tmp2;
         }
       }
     }
     class X {
       constructor() {
-        return closure_9.getSkuAssets();
+        return skuAssets.getSkuAssets();
       }
     }
   }
-  cResult[12] = tmp27;
+  cResult[12] = tmp28;
   if (stateFromStores != null) {
-    class F {
+    class N {
       constructor() {
-        obj = closure_8;
-        tmp = skuId;
-        tmp2 = closure_8.isFetching(skuId) || obj.didFetchingSkuFail(tmp);
+        const tmp2 = SKUStore.isFetching(skuId) || SKUStore.didFetchingSkuFail(skuId);
         return tmp2;
       }
     }
   }
   class J {
     constructor() {
-      tmp = closure_1(closure_2[31]);
-      obj = { location_stack: closure_5, type: closure_0(closure_2[32]).SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY, sku_id: skuId, application_id: null };
-      track = tmp.track;
-      OPEN_MODAL = AnalyticEvents.OPEN_MODAL;
+      const tmp = AnalyticsUtilsDefault;
+      const track = tmp.track;
+      const OPEN_MODAL = unpackModuleId.OPEN_MODAL;
+      const obj = { location_stack: tmp29, type: SocialLayerStorefrontNativeActionCreators.SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_KEY, sku_id: skuId, application_id: applicationId };
       applicationId = undefined;
-      if (closure_3 != null) {
-        applicationId = closure_3.applicationId;
+      if (stateFromStores != null) {
+        applicationId = stateFromStores.applicationId;
       }
-      obj.application_id = applicationId;
-      trackResult = track(OPEN_MODAL, obj);
-      return;
+      track(OPEN_MODAL, obj);
     }
   }
   cResult[13] = undefined;
   cResult[14] = skuId;
   cResult[15] = J;
-}) : ((skuId) => {
+}) : (function SocialLayerStorefrontProductDetailsModal(skuId) {
   let Button;
   let GOOGLE;
   let _undefined;
@@ -1452,7 +1407,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   let tmp43;
   let tmp70;
   let type;
-  const f104467 = () => {
+  const f104199 = () => {
     let result;
     let applicationId1;
     if (stateFromStores != null) {
@@ -1476,7 +1431,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
         carouselItems = [];
       }
       applicationId = tmp.applicationId;
-      const obj = { heroWidth: tmp3(10535).MOBILE_HERO_WIDTH_PX };
+      const obj = { heroWidth: tmp3(10161).MOBILE_HERO_WIDTH_PX };
       result = convertCarouselItemsToMediaItems(carouselItems, applicationId, stateFromStores2, obj);
     }
     return result;
@@ -1495,11 +1450,11 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   dependencyMap = tmp;
   let tmp2 = analyticsLocations;
   let tmp3 = dependencyMap;
-  const rect = analyticsLocations(1618)();
+  const rect = analyticsLocations(1631)();
   let tmp4 = skuId;
-  let obj = skuId(5912);
+  let obj = skuId(8322);
   const isScreenLandscape = obj.useIsScreenLandscape();
-  let obj2 = analyticsLocations(8871);
+  let obj2 = analyticsLocations(9394);
   const mobileStoreFront = obj2.useMobileStoreFront();
   let items = [trackPDPClick];
   const obj3 = skuId(504);
@@ -1511,14 +1466,14 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     return tmp2;
   });
   let applicationId1;
-  const useGetOrFetchApplication = skuId(6663).useGetOrFetchApplication;
-  const tmp9 = skuId(6663);
+  const useGetOrFetchApplication = skuId(6858).useGetOrFetchApplication;
+  const tmp9 = skuId(6858);
   if (stateFromStores != null) {
     applicationId1 = stateFromStores.applicationId;
   }
   const getOrFetchApplication = useGetOrFetchApplication(applicationId1);
   let tmp13 = getOrFetchApplication;
-  const tmp2Result = tmp2(6660);
+  const tmp2Result = tmp2(6855);
   if (getOrFetchApplication == null) {
     tmp13 = null;
   }
@@ -1543,7 +1498,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     const items1 = [...items, AnalyticsLocationDefault.SLAYER_STOREFRONT_NATIVE_PDP];
     return items1;
   }, items4);
-  tmp2(5590)(() => {
+  tmp2(5396)(() => {
     const tmp = AnalyticsUtilsDefault;
     const track = tmp.track;
     const OPEN_MODAL = unpackModuleId.OPEN_MODAL;
@@ -1574,9 +1529,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     track(SLAYER_STOREFRONT_PDP_ELEMENT_CLICKED, obj);
   }, items5);
   const items6 = [stateFromStores, stateFromStores2];
-  [arr8, arr9] = mobileStoreFront(stateFromStores.useMemo(f104467, items6), 2);
+  [arr8, arr9] = mobileStoreFront(stateFromStores.useMemo(f104199, items6), 2);
   let num = 0;
-  mobileStoreFront(stateFromStores.useMemo(f104467, items6), 2);
+  mobileStoreFront(stateFromStores.useMemo(f104199, items6), 2);
   if (first < arr9.length) {
     num = first;
   }
@@ -1640,7 +1595,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
           country = mobileStoreFront.country;
         }
         APPLE = undefined;
-        const tmp5Result = tmp5(1369);
+        const tmp5Result = tmp5(1382);
         if (tmp5Result.isIOS()) {
           APPLE = _undefined3.APPLE;
         }
@@ -1704,9 +1659,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
       });
     }
   }, items9);
-  const OTPACOMOrderExperiment = tmp4(8870).OTPACOMOrderExperiment;
+  const OTPACOMOrderExperiment = tmp4(9393).OTPACOMOrderExperiment;
   let enabled = OTPACOMOrderExperiment.useConfig({ location: "SocialLayerStorefrontProductDetailsModal" }).enabled;
-  const tmp4Result6 = tmp4(1369);
+  const tmp4Result6 = tmp4(1382);
   if (tmp4Result6.isIOS()) {
     GOOGLE = tmp42.APPLE_ADVANCED_COMMERCE;
     tmp43 = tmp42;
@@ -1716,8 +1671,8 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   }
   let tmp45Result = null;
   if (tmp32) {
-    const obj5 = { headless: true, paymentGateway: GOOGLE, orderRequired: enabled, skuIds: items10, isGift: false, activeSubscription: null, onOrderRetryCancellation: tmp4(10531).closeSocialLayerStorefrontProductDetailsModal, checkoutAnalyticsFields: obj7, children: closure_14(tmp4(10542).HeadlessSlayerStorefrontPurchaseRunner, obj8) };
-    const tmp2Result2 = tmp2(10538);
+    const obj5 = { headless: true, paymentGateway: GOOGLE, orderRequired: enabled, skuIds: items10, isGift: false, activeSubscription: null, onOrderRetryCancellation: tmp4(10157).closeSocialLayerStorefrontProductDetailsModal, checkoutAnalyticsFields: obj7, children: closure_14(tmp4(10168).HeadlessSlayerStorefrontPurchaseRunner, obj8) };
+    const tmp2Result2 = tmp2(10164);
     if (enabled) {
       enabled = GOOGLE === tmp43.APPLE_ADVANCED_COMMERCE;
     }
@@ -1744,11 +1699,11 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   } else {
     let tmp51;
     let tmp65Result2;
-    const tmp4Result7 = tmp4(6732);
+    const tmp4Result7 = tmp4(6936);
     let result = tmp4Result7.isSlayerSkuAvailableOnThisPlatform(stateFromStores);
     const intl4 = tmp4(1126).intl;
     const stringResult = intl4.string(tmp4(1126).t.boqtTA);
-    const tmp4Result8 = tmp4(4541);
+    const tmp4Result8 = tmp4(4782);
     let result1 = tmp4Result8.isSocialLayerStorefrontGiftingSupported();
     if (null != tmp27) {
       const obj9 = { mediaItem: tmp27, landscape: isScreenLandscape };
@@ -1757,12 +1712,12 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
       tmp51 = null;
       if (null != memo) {
         const obj10 = { sku: stateFromStores };
-        tmp51 = closure_14(tmp2(8481), obj10);
+        tmp51 = closure_14(tmp2(9024), obj10);
       }
     }
     let tmp55 = null;
     if (stateFromStores.exclusive) {
-      const obj11 = { style: tmp.exclusiveBadgeContainer, children: closure_14(tmp4(10546).ExclusiveBadge, {}) };
+      const obj11 = { style: tmp.exclusiveBadgeContainer, children: closure_14(tmp4(10172).ExclusiveBadge, {}) };
       tmp55 = closure_14(memo1, obj11);
     }
     let tmp58 = null;
@@ -1791,8 +1746,8 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     items13 = [closure_14(closure_21, obj16), , , ];
     let tmp67Result = !result;
     if (tmp67Result) {
-      const obj17 = { variant: "text-xs/normal", color: "text-muted", style: tmp.availabilityCopy, includeFontPadding: true, children: intl.string(tmp2(3593).gndWN7) };
-      const Text = tmp4(4886).Text;
+      const obj17 = { variant: "text-xs/normal", color: "text-muted", style: tmp.availabilityCopy, includeFontPadding: true, children: intl.string(tmp2(3719).gndWN7) };
+      const Text = tmp4(5088).Text;
       intl = tmp4(1126).intl;
       tmp67Result = tmp67(Text, obj17);
     }
@@ -1801,14 +1756,14 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     const obj19 = { style: tmp.buyButton, children: closure_14(Button, obj20) };
     obj20 = { variant: "primary", size: "lg", text: stringResult, loading: tmp30, disabled: tmp70, onPress: callback3 };
     tmp70 = tmp30;
-    Button = tmp4(5594).Button;
+    Button = tmp4(5379).Button;
     if (!tmp30) {
       tmp70 = !result;
     }
     items14 = [closure_14(memo1, obj19), ];
     if (result1) {
-      const obj21 = { icon: tmp2(7752), variant: "primary", size: "lg", disabled: tmp30, accessibilityLabel: intl2.string(tmp4(1126).t.QAZA5f), onPress: tmp50 };
-      const IconButton = tmp4(7575).IconButton;
+      const obj21 = { icon: tmp2(8106), variant: "primary", size: "lg", disabled: tmp30, accessibilityLabel: intl2.string(tmp4(1126).t.QAZA5f), onPress: tmp50 };
+      const IconButton = tmp4(7569).IconButton;
       intl2 = tmp4(1126).intl;
       result1 = tmp67(IconButton, obj21);
     }
@@ -1822,8 +1777,8 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
               return closure_1_14(skuId(closeButtonIcon[17]).Text, obj, index);
             })
       };
-      const getMobileFinePrintMessageForApplication = tmp4(10549).getMobileFinePrintMessageForApplication;
-      tmp4(10549);
+      const getMobileFinePrintMessageForApplication = tmp4(10175).getMobileFinePrintMessageForApplication;
+      tmp4(10175);
       const obj23 = { shouldAppendDisclaimer: false === hasAlreadyLinked };
       mobileFinePrintMessageForApplication = getMobileFinePrintMessageForApplication(getOrFetchApplication, stringResult, obj23);
       result = tmp67(tmp66, obj22);
@@ -1832,7 +1787,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     const tmp65Result = closure_15(memo1, obj14);
     const items15 = [tmp.container, ];
     let num3 = 0;
-    const tmp4Result10 = tmp4(1369);
+    const tmp4Result10 = tmp4(1382);
     if (!tmp4Result10.isIOS()) {
       num3 = rect.top;
     }
@@ -1842,20 +1797,20 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     items16 = [tmp45Result, , , ];
     const obj26 = { style: tmp.header, children: items17 };
     const obj27 = {
-      onPress: tmp4(10531).closeSocialLayerStorefrontProductDetailsModal,
+      onPress: tmp4(10157).closeSocialLayerStorefrontProductDetailsModal,
       backImage() {
           const obj = { size: "md", style: closeButtonIcon.closeButtonIcon };
-          return authStore2(XSmallIcon.XSmallIcon, obj);
+          return syncedClientThemes(XSmallIcon.XSmallIcon, obj);
         },
       accessibilityLabel: intl3.string(tmp4(1126).t.cpT0Cq),
       displayMode: "minimal"
     };
-    const HeaderBackButton = tmp4(6019).HeaderBackButton;
+    const HeaderBackButton = tmp4(6210).HeaderBackButton;
     intl3 = tmp4(1126).intl;
     items17 = [closure_14(HeaderBackButton, obj27), ];
     const obj28 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.headerTitle, children: name };
     name = undefined;
-    const Heading = tmp4(4886).Heading;
+    const Heading = tmp4(5088).Heading;
     if (getOrFetchApplication != null) {
       name = getOrFetchApplication.name;
     }
@@ -1866,7 +1821,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     if (exclusive) {
       const obj30 = { style: stateFromStores2.absoluteFill, colors: items18, pointerEvents: "none" };
       items18 = [closure_16, closure_17];
-      exclusive = tmp67(tmp2(5605), obj30);
+      exclusive = tmp67(tmp2(5391), obj30);
     }
     items19 = [exclusive, ];
     if (isScreenLandscape) {
@@ -1906,7 +1861,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function WrappedSocialLayerStorefrontProductDetailsModal(arg0) {
   let first;
   let obj3;
   let tmp5;
@@ -1920,11 +1875,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const obj2 = { skuIDs: first, activeSubscription: null, children: authStore2(closure_25, obj3) };
+    const obj2 = { skuIDs: first, activeSubscription: null, children: syncedClientThemes(closure_25, obj3) };
     obj3 = {};
     const NativePaymentContextProvider = NativePaymentContext.NativePaymentContextProvider;
     const merged = Object.assign(arg0);
-    const tmp11 = authStore2(NativePaymentContextProvider, obj2);
+    const tmp11 = syncedClientThemes(NativePaymentContextProvider, obj2);
     cResult[1] = arg0;
     cResult[2] = tmp11;
     tmp5 = tmp11;
@@ -1932,13 +1887,13 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp5 = cResult[2];
   }
   return tmp5;
-}) : ((arg0) => {
+}) : (function WrappedSocialLayerStorefrontProductDetailsModal(arg0) {
   let obj2;
-  const obj = { skuIDs: [], activeSubscription: null, children: authStore2(closure_25, obj2) };
+  const obj = { skuIDs: [], activeSubscription: null, children: syncedClientThemes(closure_25, obj2) };
   obj2 = {};
   const NativePaymentContextProvider = NativePaymentContext.NativePaymentContextProvider;
   const merged = Object.assign(arg0);
-  return authStore2(NativePaymentContextProvider, obj);
+  return syncedClientThemes(NativePaymentContextProvider, obj);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/slayer_storefront/native/SocialLayerStorefrontProductDetailsModal.tsx");

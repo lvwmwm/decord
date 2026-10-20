@@ -1,10 +1,10 @@
-// Module ID: 18070
-// Function ID: 18071
+// Module ID: 18700
+// Function ID: 18701
 // Name: ResendVerificationCodeButton
-// Dependencies: [5, 32, 19, 17, 21, 18061, 4567, 4568, 1126, 2787, 14731, 4795, 4886, 2]
+// Dependencies: [5, 32, 19, 17, 21, 18691, 4808, 4809, 1126, 2862, 5088, 2]
 // Exports: default
 
-// Module 18070 (ResendVerificationCodeButton)
+// Module 18700 (ResendVerificationCodeButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
@@ -91,11 +91,11 @@ export default function ResendVerificationCodeButton(flowId) {
           } else {
             if (2 === setLoading) {
               c3 = 1;
-              const obj6 = { key: "SAFETY_FLOWS_VERIFY_EMAIL_ERROR", content: intl.string(setLoading(countdown[9])["3AXMYu"]), icon: setLoading(countdown[10]), IconComponent: tmp(countdown[11]).XLargeIcon, iconColor: "icon-feedback-critical" };
+              const obj6 = { text: intl.string(setLoading(countdown[9])["3AXMYu"]), variant: "critical" };
               const open = setLoading(countdown[7]).open;
               const tmp18 = setLoading(countdown[7]);
               intl = tmp(countdown[8]).intl;
-              open(obj6);
+              open("SAFETY_FLOWS_VERIFY_EMAIL_ERROR", obj6);
             } else if (arg0 === 1) {
               c4 = 3;
               throw value;
@@ -116,12 +116,12 @@ export default function ResendVerificationCodeButton(flowId) {
           }
           c4 = 3;
           return { value: "IconComponent", done: null };
-        } catch (tmp40) {
-          countdown = tmp40;
+        } catch (tmp37) {
+          countdown = tmp37;
           if (0 === c3) {
             c4 = 3;
-            throw tmp40;
-          } else if (1 === tmp42) {
+            throw tmp37;
+          } else if (1 === tmp39) {
             setLoading = 1;
           } else {
             setLoading = 2;
@@ -136,7 +136,7 @@ export default function ResendVerificationCodeButton(flowId) {
   };
   intl = flowId(countdown[8]).intl;
   obj2 = { variant: "text-sm/medium", color: "text-link", accessibilityLabel: intl2.string(setLoading(countdown[9]).ah0EUu), importantForAccessibility: "no", children: formatResult };
-  Text = flowId(countdown[12]).Text;
+  Text = flowId(countdown[10]).Text;
   intl2 = flowId(countdown[8]).intl;
   const tmp5 = Pressable;
   if (countdown > 0) {

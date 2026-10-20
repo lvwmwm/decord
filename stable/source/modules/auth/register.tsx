@@ -1,21 +1,21 @@
-// Module ID: 15878
-// Function ID: 15879
+// Module ID: 16387
+// Function ID: 16388
 // Name: register
-// Dependencies: [5, 15879, 502, 1085, 1110, 4461, 1252, 5083, 1260, 5313, 5407, 584, 15880, 15881, 2]
+// Dependencies: [5, 16388, 502, 1085, 1110, 4702, 1265, 5938, 1273, 5636, 5727, 584, 16389, 16390, 16391, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 15878 (register)
+// Module 16387 (register)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import _modDef4461 from "module_4461" /* 4461 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5083 */;
-import APIErrorDefault from "APIError" /* 5313 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5407 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 15880 */;
-import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 15881 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
+import _modDef4702 from "module_4702" /* 4702 */;
+import APIErrorDefault from "APIError" /* 5636 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5727 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 16389 */;
+import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 16391 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 15879 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 16388 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1085 */;
 import AgeGateConstants from "AgeGateConstants" /* 1110 */;
@@ -142,7 +142,7 @@ obj = function _registerPhone() {
               phone = phone.phone;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Set", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -210,7 +210,6 @@ function registerFull(giftCodeSKUId) {
   let checked1;
   let consent;
   let email;
-  let formatResult;
   let globalName;
   let guildTemplateCode;
   let invite;
@@ -219,6 +218,7 @@ function registerFull(giftCodeSKUId) {
   let password;
   let phoneToken;
   let preChecked;
+  let tmp9;
   let user;
   let username;
   ({ birthday, invite } = giftCodeSKUId);
@@ -245,7 +245,7 @@ function registerFull(giftCodeSKUId) {
     let obj2 = { source: constants5.REGISTER, action: constants4.AGE_GATE_SUBMITTED };
     const tmp4Result = AnalyticsUtilsDefault;
     tmp4Result.track(metroRequire.AGE_GATE_ACTION, obj2);
-    const obj10 = _modDef4461();
+    const obj10 = _modDef4702();
     const diffResult = obj10.diff(birthday, "years");
     const tmp15 = metroRequire;
     if (diffResult >= 13) {
@@ -269,11 +269,11 @@ function registerFull(giftCodeSKUId) {
   }
   const request = { url: metroImportAll.REGISTER, body: user, trackedActionData: obj4, rejectWithError: false };
   const tmp4Result4 = TrackedHTTPUtilsDefault;
-  user = { fingerprint: AuthenticationStore.getFingerprint(), email, username, global_name: globalName, password, invite, consent, phone_token: phoneToken, date_of_birth: formatResult, gift_code_sku_id: giftCodeSKUId, guild_template_code: guildTemplateCode, promotional_email_opt_in: checked };
+  user = { fingerprint: AuthenticationStore.getFingerprint(), email, username, global_name: globalName, password, invite, consent, phone_token: phoneToken, date_of_birth: tmp9, gift_code_sku_id: giftCodeSKUId, guild_template_code: guildTemplateCode, promotional_email_opt_in: checked };
   const post = tmp4Result4.post;
-  formatResult = undefined;
-  if (birthday != null) {
-    formatResult = birthday.format("YYYY-MM-DD");
+  tmp9 = undefined;
+  if (null != birthday) {
+    tmp9 = tmp4(16390)(birthday);
   }
   checked = undefined;
   if (promoEmailConsent != null) {

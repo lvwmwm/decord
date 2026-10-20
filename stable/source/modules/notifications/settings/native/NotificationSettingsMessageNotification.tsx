@@ -1,23 +1,23 @@
-// Module ID: 12503
-// Function ID: 12504
+// Module ID: 12608
+// Function ID: 12609
 // Name: NotificationSettingsMessageNotification
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 12504, 1126, 4886, 12505, 5909, 12502, 4854, 12507, 1987, 9851, 12509, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 12609, 1126, 5088, 12610, 6185, 12607, 5056, 12612, 2000, 10448, 12614, 2]
 // Exports: NotificationSettingsChannelMessageNotification, NotificationSettingsGuildMessageNotification
 
-// Module 12503 (NotificationSettingsMessageNotification)
+// Module 12608 (NotificationSettingsMessageNotification)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Pressables from "Pressables" /* 5909 */;
-import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 12504 */;
-import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 12505 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Pressables from "Pressables" /* 6185 */;
+import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 12609 */;
+import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 12610 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ const View = react_native.View;
 let obj = { card: obj2, cta: { textAlign: "center", marginTop: 4 }, label: { textAlign: "center", marginTop: 8 }, header: { marginBottom: 8 }, headerTitle: { marginBottom: 4 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: 20, borderWidth: 1, padding: 14 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((setting) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationSettingsMessageNotification(setting) {
   let header;
   let headerTitle;
   let items;
@@ -229,7 +229,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((setting) => {
   cResult[11] = tmp14;
   cResult[12] = tmp18;
   tmp17 = tmp18;
-}) : ((onPress) => {
+}) : (function NotificationSettingsMessageNotification(onPress) {
   let Text4;
   let intl;
   let intl4;
@@ -263,13 +263,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((setting) => {
   items1 = [hasOwnProperty(View, obj3), ];
   const obj5 = { onPress: onPress.onCustomize, activeOpacity: 0.6, children: hasOwnProperty(View, obj6) };
   obj6 = { style: tmp.card, children: items2 };
-  const PressableOpacity = tmp2(5909).PressableOpacity;
+  const PressableOpacity = tmp2(6185).PressableOpacity;
   items2 = [, , ];
   const obj7 = { notificationSetting: onPress.setting };
   items2[0] = React3(NotificationSettingsMockMessageDefault, obj7);
   const obj8 = { variant: "text-sm/medium", style: tmp.label, children: str };
   str = undefined;
-  const Text3 = tmp2(4886).Text;
+  const Text3 = tmp2(5088).Text;
   if (found != null) {
     str = found.label;
   }
@@ -278,9 +278,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((setting) => {
   }
   items2[1] = React3(Text3, obj8);
   const obj9 = { onPress: onPress.onCustomize, children: React3(Text4, obj10) };
-  const PressableOpacity2 = tmp2(5909).PressableOpacity;
+  const PressableOpacity2 = tmp2(6185).PressableOpacity;
   obj10 = { variant: "text-sm/semibold", style: tmp.cta, color: "text-brand", children: intl4.string(intl5.t.yxiV9W) };
-  Text4 = tmp2(4886).Text;
+  Text4 = tmp2(5088).Text;
   intl4 = tmp2(1126).intl;
   items2[2] = React3(PressableOpacity2, obj9);
   items1[1] = React3(PressableOpacity, obj5);
@@ -300,7 +300,7 @@ export const NotificationSettingsGuildMessageNotification = function Notificatio
     onCustomize() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guildId: style.guildId };
-      obj.openLazy(asyncRequire(12507, dependencyMap.paths), "MessageNotificationGuildActionSheet", obj2);
+      obj.openLazy(asyncRequire(12612, dependencyMap.paths), "MessageNotificationGuildActionSheet", obj2);
     }
   };
   obj2 = require("notificationSettingsGuildFlagUtils");
@@ -316,7 +316,7 @@ export const NotificationSettingsChannelMessageNotification = function Notificat
     onCustomize() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channel: style.channel };
-      obj.openLazy(asyncRequire(12509, dependencyMap.paths), "MessageNotificationChannelActionSheet", obj2);
+      obj.openLazy(asyncRequire(12614, dependencyMap.paths), "MessageNotificationChannelActionSheet", obj2);
     }
   };
   obj2 = require("notficationSettingsChannelFlagUtils");

@@ -1,28 +1,28 @@
-// Module ID: 15174
-// Function ID: 15175
+// Module ID: 15654
+// Function ID: 15655
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 1395, 1085, 21, 1103, 15171, 4890, 587, 558, 576, 7841, 10637, 1394, 4855, 4854, 14421, 1252, 1126, 2883, 15163, 5594, 4577, 12, 15172, 6645, 2]
+// Dependencies: [32, 19, 17, 1408, 1085, 21, 1103, 15651, 5092, 587, 558, 576, 8290, 10268, 1407, 5057, 5056, 14850, 1265, 1126, 2958, 15643, 5379, 6196, 12, 15652, 6840, 2]
 
-// Module 15174 (DisplayNameStylesColorPickerSheet)
+// Module 15654 (DisplayNameStylesColorPickerSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1394 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import HapticUtils from "HapticUtils" /* 4855 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14421 */;
-import ColorPickerConsts from "ColorPickerConsts" /* 15171 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1407 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1408 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import HapticUtils from "HapticUtils" /* 5057 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14850 */;
+import ColorPickerConsts from "ColorPickerConsts" /* 15651 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, selectedColor;
+let BottomSheet;
 
 let StyleSheet;
 let c10;
@@ -56,7 +56,7 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 size1 = { width: ColorPickerConsts.CHECKMARK_SIZE, height: ColorPickerConsts.CHECKMARK_SIZE };
 obj7 = { alignSelf: "stretch", flexDirection: "row", gap: nativeDefault.space.PX_16 };
 let closure_11 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColor) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameStylesColorPickerSheet(selectedColor) {
   let closure_4;
   let closure_6;
   let closure_7;
@@ -165,15 +165,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColor) => {
       cResult[11] = onSelectColor;
       cResult[12] = tmp19;
     }
-    class D {
-      constructor() {
-        const obj = HapticUtils;
-        const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
-        onSelectColor(closure_4[0]);
-        const obj2 = ActionSheetActionCreatorsDefault;
-        obj2.hideActionSheet();
-      }
-    }
+    const fn2 = function x() {
+      const obj = HapticUtils;
+      const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
+      onSelectColor(closure_4[0]);
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.hideActionSheet();
+    };
     cResult[7] = tmp3[0];
     cResult[8] = onSelectColor;
     class I {
@@ -193,7 +191,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColor) => {
   cResult[4] = selectedEffectId;
   cResult[5] = I;
   tmp9 = I;
-}) : ((selectedColor) => {
+}) : (function DisplayNameStylesColorPickerSheet(selectedColor) {
   let Button;
   let Button2;
   let Button3;
@@ -325,7 +323,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedColor) => {
           if (tmp) {
             const obj4 = { style: presetColor.checkmarkOverlay, pointerEvents: "none", children: React4(CheckmarkLargeIcon, obj5) };
             obj5 = { size: "custom", style: presetColor.checkmark, color: str };
-            CheckmarkLargeIcon = tmp5(4577).CheckmarkLargeIcon;
+            CheckmarkLargeIcon = tmp5(6196).CheckmarkLargeIcon;
             const tmp5Result2 = utils_ColorUtils;
             const darkness = tmp5Result2.getDarkness(item);
             str = "black";

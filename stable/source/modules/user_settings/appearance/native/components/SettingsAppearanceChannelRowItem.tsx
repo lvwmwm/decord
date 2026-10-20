@@ -1,19 +1,19 @@
-// Module ID: 15110
-// Function ID: 15111
+// Module ID: 15590
+// Function ID: 15591
 // Name: SettingsAppearanceChannelRowItem
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 1188, 558, 576, 10648, 4886, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 1200, 558, 576, 10281, 5088, 2]
 
-// Module 15110 (SettingsAppearanceChannelRowItem)
+// Module 15590 (SettingsAppearanceChannelRowItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import GroupDMAvatar from "GroupDMAvatar" /* 10648 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import GroupDMAvatar from "GroupDMAvatar" /* 10281 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import native_mod from "native" /* 1188 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import native_mod from "native" /* 1200 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ num = native.getStatusSize(native.AvatarSizes.LARGE_48);
 if (num == null) {
   num = 0;
 }
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelRowItem(arg0) {
   let animatedStyles;
   let avatar1;
   let avatar2;
@@ -164,7 +164,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     let tmp37Result = null;
                     if (null != preview) {
                       obj5 = { animated: true, style: undefined !== isUnread && isUnread ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "redesign/message-preview/medium", lineClamp: 1, children: preview };
-                      tmp37Result = React3(tmp(4886).Text, obj5);
+                      tmp37Result = React3(tmp(5088).Text, obj5);
                     }
                     cResult[25] = animatedStyles.textMuted;
                     cResult[26] = animatedStyles.textNormal;
@@ -208,11 +208,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (null != avatar2) {
         const obj10 = { sources: items3, size: native.AvatarSizes.LARGE_48 };
         items3 = [avatar1, avatar2];
-        const FacepileGroupDMAvatar = tmp(10648).FacepileGroupDMAvatar;
+        const FacepileGroupDMAvatar = tmp(10281).FacepileGroupDMAvatar;
         tmp18 = React3(FacepileGroupDMAvatar, obj10);
       } else {
         const obj11 = { status, source: avatar1, cutout: obj5, size: native.AvatarSizes.LARGE_48 };
-        const Avatar = tmp(1188).Avatar;
+        const Avatar = tmp(1200).Avatar;
         tmp18 = React3(Avatar, obj11);
       }
       cResult[8] = avatar1;
@@ -235,7 +235,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp7;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((isUnread) => {
+}) : (function ChannelRowItem(isUnread) {
   let animatedStyles;
   let avatar1;
   let avatar2;
@@ -287,14 +287,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items3 = [, ];
   const obj6 = { style: tmp2.channelItemContent, children: items4 };
   const obj8 = { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "redesign/channel-title/semibold", children: title };
-  items3[0] = React3(tmp6(4886).Text, obj8);
+  items3[0] = React3(tmp6(5088).Text, obj8);
   const obj9 = { animated: true, style: animatedStyles.textMuted, variant: "text-xs/medium", children: timestamp };
-  items3[1] = React3(tmp6(4886).Text, obj9);
+  items3[1] = React3(tmp6(5088).Text, obj9);
   items4 = [hasOwnProperty(View, obj7), ];
   let tmp5Result2 = null;
   if (null != preview) {
     const obj10 = { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "redesign/message-preview/medium", lineClamp: 1, children: preview };
-    tmp5Result2 = tmp5(tmp6(4886).Text, obj10);
+    tmp5Result2 = tmp5(tmp6(5088).Text, obj10);
   }
   items4[1] = tmp5Result2;
   items1[2] = hasOwnProperty(View, obj6);

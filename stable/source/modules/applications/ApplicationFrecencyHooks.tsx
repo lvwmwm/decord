@@ -1,13 +1,13 @@
-// Module ID: 11745
-// Function ID: 11746
+// Module ID: 11810
+// Function ID: 11811
 // Name: ApplicationFrecencyHooks
-// Dependencies: [19, 8796, 1095, 558, 576, 2033, 504, 11, 7030, 2]
+// Dependencies: [19, 9244, 1095, 558, 576, 2046, 504, 11, 7238, 2]
 
-// Module 11745 (ApplicationFrecencyHooks)
+// Module 11810 (ApplicationFrecencyHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import react_mod from "react" /* 19 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 8796 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9244 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let _require, closure_3;
 
 let react = react_mod;
 const UserSettingsTypes = UserSettingsConstants.UserSettingsTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, arr2) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSortApplicationsViaFrecency(arr, arr2) {
   let stateFromStores;
   let tmp5;
   let tmp6;
@@ -29,7 +29,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, arr2) => {
   let obj = require("react");
   const cResult = obj.c(31);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function l() {
+    const fn = function p() {
       const FrecencyUserSettingsActionCreators = arr(stateFromStores[5]).FrecencyUserSettingsActionCreators;
       const ifUncached = FrecencyUserSettingsActionCreators.loadIfUncached(str.FRECENCY_AND_FAVORITES_SETTINGS);
     };
@@ -300,7 +300,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr, arr2) => {
   cResult[10] = arr2;
   cResult[11] = undefined;
   arr4 = tmp14;
-}) : ((arg0, arg1) => {
+}) : (function useSortApplicationsViaFrecency(arg0, arg1) {
   let memo;
   let memo1;
   let stateFromStores;

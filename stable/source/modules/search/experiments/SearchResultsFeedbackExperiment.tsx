@@ -1,12 +1,12 @@
-// Module ID: 16637
-// Function ID: 16638
+// Module ID: 18098
+// Function ID: 18099
 // Name: SearchResultsFeedbackExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getIsSearchResultsFeedbackExperimentEnabled
 
-// Module 16637 (SearchResultsFeedbackExperiment)
+// Module 18098 (SearchResultsFeedbackExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let obj = { name: "2025-05-search-results-feedback", kind: "user", defaultConfig
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSearchResultsFeedbackExperimentEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -29,7 +29,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useIsSearchResultsFeedbackExperimentEnabled(location) {
   const obj = { location: location.location };
   return closure_2.useConfig(obj).enabled;
 });

@@ -1,10 +1,10 @@
-// Module ID: 16756
-// Function ID: 16757
+// Module ID: 17341
+// Function ID: 17342
 // Name: ConjureDebugFormat
 // Dependencies: [2]
 // Exports: debugLogEnv, formatBytes, formatClockTime, formatCount, formatMs, formatObservedAt, shortBuildLabel
 
-// Module 16756 (ConjureDebugFormat)
+// Module 17341 (ConjureDebugFormat)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/debug/ConjureDebugFormat.tsx");
@@ -134,10 +134,10 @@ export const formatClockTime = function formatClockTime(arg0) {
   }
   return combined;
 };
-export const formatObservedAt = function formatObservedAt(since) {
-  const date = new Date(since);
+export const formatObservedAt = function formatObservedAt(observedAt) {
+  const date = new Date(observedAt);
   if (Number.isNaN(date.getTime())) {
-    return since;
+    return observedAt;
   } else {
     const _Date = Date;
     const self = this;

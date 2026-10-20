@@ -1,10 +1,10 @@
-// Module ID: 13348
-// Function ID: 13349
+// Module ID: 13838
+// Function ID: 13839
 // Name: PremiumPlanSelectStore
-// Dependencies: [570, 1259, 2]
+// Dependencies: [570, 1272, 2]
 // Exports: setIsPurchasing
 
-// Module 13348 (PremiumPlanSelectStore)
+// Module 13838 (PremiumPlanSelectStore)
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 

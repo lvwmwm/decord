@@ -1,14 +1,14 @@
-// Module ID: 9119
-// Function ID: 9120
+// Module ID: 10905
+// Function ID: 10906
 // Name: participantHasVideo
-// Dependencies: [502, 1999, 4911, 4915, 558, 576, 504, 2]
+// Dependencies: [502, 2012, 5115, 5117, 558, 576, 504, 2]
 // Exports: default
 
-// Module 9119 (participantHasVideo)
-import Constants from "Constants" /* 4915 */;
+// Module 10905 (participantHasVideo)
+import Constants from "Constants" /* 5117 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import CallConstants from "CallConstants" /* 4911 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import CallConstants from "CallConstants" /* 5115 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,7 +69,7 @@ function canRenderParticipantVideo(participant, MediaEngineStore) {
 }
 ({ ParticipantTypes: closure_4, isStreamParticipant: hasOwnProperty, isUserParticipant: metroRequire } = CallConstants);
 const Features = Constants.Features;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanRenderParticipantVideo(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -96,7 +96,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useCanRenderParticipantVideo(arg0) {
   let closure_0;
   _require = arg0;
   const items = [MediaEngineStore];

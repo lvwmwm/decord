@@ -1,18 +1,18 @@
-// Module ID: 9490
-// Function ID: 9491
+// Module ID: 8688
+// Function ID: 8689
 // Name: UserPlaceholderRow
-// Dependencies: [19, 17, 4879, 21, 4890, 587, 558, 576, 4612, 504, 4891, 4894, 2]
+// Dependencies: [19, 17, 5081, 21, 5092, 587, 558, 576, 4850, 504, 5093, 5096, 2]
 
-// Module 9490 (UserPlaceholderRow)
+// Module 8688 (UserPlaceholderRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import timingPresets from "timingPresets" /* 4894 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
+import timingPresets from "timingPresets" /* 5096 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let closure_8 = createStyles.createStyles((height) => {
 });
 const __initData = { code: "function UserPlaceholderRowTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
 const __initData2 = { code: "function UserPlaceholderRowTsx2(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UserPlaceholderRow(arg0) {
   let animate;
   let closure_1;
   let height;
@@ -53,7 +53,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     height = nativeDefault.space.PX_48;
   }
   const tmp6 = closure_8(height);
-  const tmpResult = sharedValue(4612);
+  const tmpResult = sharedValue(4850);
   sharedValue = tmpResult.useSharedValue(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
@@ -80,7 +80,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       tmp12 = cResult[5];
     }
     const effect = react.useEffect(tmp11, tmp12);
-    const tmpResult4 = sharedValue(4612);
+    const tmpResult4 = sharedValue(4850);
     class I {
       constructor() {
         const obj = { opacity: sharedValue.get() };
@@ -235,32 +235,34 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     cResult[8] = items3;
     tmp17 = items3;
   }
-  const fn2 = function b() {
-    if (closure_1) {
-      const withRepeat = ReanimatedRexport.withRepeat;
-      ReanimatedRexport;
-      const withSequence = ReanimatedRexport.withSequence;
-      ReanimatedRexport;
-      const obj = { duration: 2 * timingPresets.timingSlowDuration };
-      const withTiming = timing.withTiming;
-      timing;
-      const withTimingResult = withTiming(0.3, obj);
-      const obj2 = { duration: 2 * timingPresets.timingSlowDuration };
-      const withTiming2 = timing.withTiming;
-      timing;
-      const result = set(withRepeat(withSequence(withTimingResult, withTiming2(1, obj2)), -1, true));
-    } else {
-      const result1 = set(1);
+  class P {
+    constructor() {
+      if (closure_1) {
+        const withRepeat = ReanimatedRexport.withRepeat;
+        ReanimatedRexport;
+        const withSequence = ReanimatedRexport.withSequence;
+        ReanimatedRexport;
+        const obj = { duration: 2 * timingPresets.timingSlowDuration };
+        const withTiming = timing.withTiming;
+        timing;
+        const withTimingResult = withTiming(0.3, obj);
+        const obj2 = { duration: 2 * timingPresets.timingSlowDuration };
+        const withTiming2 = timing.withTiming;
+        timing;
+        const result = set(withRepeat(withSequence(withTimingResult, withTiming2(1, obj2)), -1, true));
+      } else {
+        const result1 = set(1);
+      }
     }
-  };
+  }
   const items4 = [tmp4, sharedValue];
   cResult[2] = sharedValue;
   cResult[3] = tmp4;
-  cResult[4] = fn2;
+  cResult[4] = P;
   cResult[5] = items4;
   tmp12 = items4;
-  tmp11 = fn2;
-}) : ((animate) => {
+  tmp11 = P;
+}) : (function UserPlaceholderRow(animate) {
   let height;
   let items2;
   let items3;
@@ -281,7 +283,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let sharedValue;
   flag = undefined;
   const tmp3 = closure_8(height);
-  let obj = sharedValue(4612);
+  let obj = sharedValue(4850);
   const tmp4 = sharedValue;
   sharedValue = obj.useSharedValue(1);
   let obj2 = sharedValue(504);
@@ -308,21 +310,21 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       const result1 = set(1);
     }
   }, items1);
-  const tmp4Result = tmp4(4612);
-  class S {
+  const tmp4Result = tmp4(4850);
+  class R {
     constructor() {
       const obj = { opacity: sharedValue.get() };
       return obj;
     }
   }
-  S.__closure = { opacity: sharedValue };
-  S.__workletHash = 4335136835878;
-  S.__initData = __initData2;
-  const animatedStyle = tmp4Result.useAnimatedStyle(S);
+  R.__closure = { opacity: sharedValue };
+  R.__workletHash = 4335136835878;
+  R.__initData = __initData2;
+  const animatedStyle = tmp4Result.useAnimatedStyle(R);
   const obj3 = { style: items2, collapsable: false, children: items3 };
   items2 = [tmp3.row, animatedStyle];
   const obj4 = { style: tmp3.placeholderAvatar };
-  View = flag(4612).View;
+  View = flag(4850).View;
   items3 = [closure_6(View, obj4), ];
   const obj5 = { style: tmp3.rowInner, children: closure_6(View, obj6) };
   obj6 = { style: tmp3.rowHeaderWrapper, children: closure_6(View, obj7) };

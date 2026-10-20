@@ -1,14 +1,14 @@
-// Module ID: 9892
-// Function ID: 9893
+// Module ID: 9449
+// Function ID: 9450
 // Name: ExpressiveGradient
-// Dependencies: [19, 17, 21, 587, 558, 576, 4580, 683, 5605, 2]
+// Dependencies: [19, 17, 21, 587, 558, 576, 4818, 683, 5391, 2]
 
-// Module 9892 (ExpressiveGradient)
+// Module 9449 (ExpressiveGradient)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import useToken from "useToken" /* 4580 */;
-import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import useToken from "useToken" /* 4818 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -38,7 +38,7 @@ const start = { x: 0, y: 0.5 };
 const end = { x: 1, y: 0.5 };
 const start2 = { x: 0.5, y: 0 };
 const end2 = { x: 0.5, y: 0.5 };
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExpressiveGradient(backgroundColor) {
   let children;
   let color;
   let items2;
@@ -191,7 +191,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) =
   cResult[3] = token;
   cResult[4] = items5;
   tmp13 = items5;
-}) : ((color) => {
+}) : (function ExpressiveGradient(color) {
   let backgroundColor;
   let children;
   let items;

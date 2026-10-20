@@ -1,20 +1,20 @@
-// Module ID: 11904
-// Function ID: 11905
+// Module ID: 11976
+// Function ID: 11977
 // Name: VoicePanelCardLayoutManager
-// Dependencies: [32, 19, 17, 4906, 11902, 11905, 4911, 558, 576, 4612, 9774, 568, 9119, 11906, 11907, 1259, 2]
+// Dependencies: [32, 19, 17, 6036, 11974, 11977, 5115, 558, 576, 4850, 10374, 568, 10905, 11978, 11979, 1272, 2]
 
-// Module 11904 (VoicePanelCardLayoutManager)
+// Module 11976 (VoicePanelCardLayoutManager)
 import react_native from "react-native" /* 17 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
-import react_native2 from "react-native" /* 1259 */;
-import CallConstants from "CallConstants" /* 4911 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 9774 */;
+import react_native2 from "react-native" /* 1272 */;
+import CallConstants from "CallConstants" /* 5115 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10374 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11905 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11974 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11977 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ const VoicePanelCardItemType = VoicePanelConstants.VoicePanelCardItemType;
 const ParticipantTypes = CallConstants.ParticipantTypes;
 let closure_15 = { id: "invalid", type: VoicePanelCardItemType.PARTICIPANT, x: 0, y: 0, width: 0, height: 0, zIndex: 0 };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, getCardCoords) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCardLayoutCoordsSubscription(arg0, getCardCoords) {
   let closure_0;
   let sharedValue;
   _require = arg0;
@@ -97,7 +97,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, getCardCoords)
   cResult[4] = items;
   tmp7 = items;
   tmp6 = fn;
-}) : ((arg0, getCardCoords) => {
+}) : (function useCardLayoutCoordsSubscription(arg0, getCardCoords) {
   let closure_0;
   let sharedValue;
   _require = arg0;
@@ -127,7 +127,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, getCardCoords)
   return sharedValue;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, getTargetDimensions) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTargetDimensionsSubscription(id, getTargetDimensions) {
   let sharedValue;
   _require = id;
   const obj = require("react");
@@ -165,7 +165,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, getTargetDimensi
   cResult[4] = items;
   tmp6 = items;
   tmp5 = fn;
-}) : ((id, getTargetDimensions) => {
+}) : (function useTargetDimensionsSubscription(id, getTargetDimensions) {
   let sharedValue;
   _require = id;
   const useSharedValue = require("ReanimatedRexport").useSharedValue;
@@ -185,13 +185,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, getTargetDimensi
   return sharedValue;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((getLayoutKey) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useManagerSubscription(getLayoutKey) {
   let closure_129_1;
   let tmp2;
   let tmp5;
   let tmp6;
   let closure_0 = getLayoutKey;
-  let obj = react2;
+  const obj = react2;
   const cResult = obj.c(4);
   if (cResult[0] !== getLayoutKey) {
     const layoutKey = getLayoutKey.getLayoutKey();
@@ -201,12 +201,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((getLayoutKey) => {
   } else {
     tmp2 = cResult[1];
   }
-  let obj2 = react;
-  const tmp4 = _slicedToArray(react.useState(tmp2), 2);
-  [tmp5, closure_129_1] = tmp4;
+  [tmp5, closure_129_1] = react.useState(tmp2);
+  _slicedToArray(react.useState(tmp2), 2);
+  const obj2 = react;
   if (cResult[2] !== getLayoutKey) {
     const fn = function h() {
-      return layoutKey.subscribeToManager(() => onClose(layoutKey.getLayoutKey()));
+      return layoutKey.subscribeToManager(() => closure_1_1(layoutKey.getLayoutKey()));
     };
     cResult[2] = getLayoutKey;
     cResult[3] = fn;
@@ -216,7 +216,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((getLayoutKey) => {
   }
   const layoutEffect = obj2.useLayoutEffect(tmp6);
   return tmp5;
-}) : ((getLayoutKey) => {
+}) : (function useManagerSubscription(getLayoutKey) {
   let closure_129_1;
   let tmp2;
   let closure_0 = getLayoutKey;
@@ -279,7 +279,7 @@ class VoicePanelCardLayoutManager {
     let safeAreaTop;
     const self = this;
     windowHeight = windowHeight.windowHeight;
-    const obj = { windowHeight, windowWidth: windowHeight.windowWidth, chunkSize: windowHeight / unpackModuleId, safeAreaLeft: Math.max(windowHeight.safeAreaLeft, closure_12), safeAreaRight: Math.max(safeAreaRight, closure_12), safeAreaBottom: Math.max(safeAreaBottom, closure_12), safeAreaTop, gutter: map1, controlBarSize };
+    const obj = { windowHeight, windowWidth: windowHeight.windowWidth, chunkSize: windowHeight / unpackModuleId, safeAreaLeft: Math.max(windowHeight.safeAreaLeft, authStore2), safeAreaRight: Math.max(safeAreaRight, authStore2), safeAreaBottom: Math.max(safeAreaBottom, authStore2), safeAreaTop, gutter: map1, controlBarSize };
     ({ safeAreaRight, safeAreaTop, safeAreaBottom, controlBarSize } = windowHeight);
     if (!shallowEqualDefault(obj, this.props)) {
       self.props = obj;
@@ -991,7 +991,8 @@ class VoicePanelCardLayoutManager {
     const tmp = this.emitItemChanges && self.mounted;
     if (tmp) {
       self.emitItemChanges = false;
-      const obj = react_native2;
+      const tmp2 = require;
+      let obj = react_native2;
       obj.batchUpdates(() => {
         const managerSubscriptions = self.managerSubscriptions;
         for (const item10006 of managerSubscriptions) {

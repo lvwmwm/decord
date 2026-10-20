@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/nuf_channels/native/images", width: 40, height: 77, scales: [1], hash: "a22d4ac6a3cb3a331ce2730f706e3d95", name: "star_pink", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/chat_sidebar", width: 24, height: 24, scales: [2, 3], hash: "f15a8eea867ca31909b0a1cf49c6c7d8", name: "ic_notif", type: "png" });

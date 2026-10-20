@@ -1,24 +1,24 @@
-// Module ID: 16124
-// Function ID: 16125
+// Module ID: 16640
+// Function ID: 16641
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 17, 1085, 21, 4890, 587, 10723, 2115, 1987, 4565, 558, 576, 16125, 1126, 4886, 1188, 5909, 2]
+// Dependencies: [5, 19, 1085, 21, 5092, 587, 10516, 2128, 2000, 4806, 558, 576, 6157, 16641, 1126, 5088, 1200, 6185, 2]
 // Exports: getScaledGuildMFAWarningHeight
 
-// Module 16124 (GuildMFAWarning)
-import react_native from "react-native" /* 17 */;
+// Module 16640 (GuildMFAWarning)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Pressables from "Pressables" /* 5909 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10723 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16125 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import Pressables from "Pressables" /* 6185 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10516 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16641 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,8 +26,8 @@ const require = globalThis.__r;
 let c2, c3;
 
 let Fonts;
+let closure_4;
 let hasOwnProperty;
-let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
@@ -66,7 +66,7 @@ let obj = function _handlePress() {
             articleURL = undefined;
             c2 = 1;
             c3 = 1;
-            const obj4 = { value: require("asyncRequire")(paths[8], paths.paths), done: false };
+            const obj4 = { value: require("asyncRequire")(paths[7], paths.paths), done: false };
             return obj4;
           }
         } else if (arg0 === 1) {
@@ -78,8 +78,8 @@ let obj = function _handlePress() {
           return obj5;
         } else {
           articleURL = value.default;
-          obj = closure_129_1(closure_129_2[10]);
-          obj.openURL(articleURL.getArticleURL(closure_129_5.SETTING_UP_TWO_FACTOR));
+          obj = closure_129_1(closure_129_2[9]);
+          obj.openURL(articleURL.getArticleURL(closure_129_4.SETTING_UP_TWO_FACTOR));
           c3 = 3;
           return { value: "IconComponent", done: null };
         }
@@ -91,16 +91,15 @@ let obj = function _handlePress() {
   });
   return obj(...arguments);
 };
-const Image = react_native.Image;
-({ HelpdeskArticles: hasOwnProperty, Fonts } = Constants);
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ HelpdeskArticles: closure_4, Fonts } = Constants);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
 obj = { MFAWarning: obj2, MFAWarningIcon: { marginVertical: 10, width: 98, height: 53 }, MFAWarningLink: obj3 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: 10, alignItems: "center" };
 createStyles = createStyles.createStyles;
 obj3 = { color: nativeDefault.unsafe_rawColors.BLUE_345, fontFamily: Fonts.PRIMARY_SEMIBOLD };
-let closure_8 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_7 = createStyles(obj);
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildMFAWarning() {
   let items;
   let items1;
   let items2;
@@ -110,11 +109,12 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp5;
   obj = react2;
   const cResult = obj.c(10);
-  const tmp4 = closure_8();
+  const tmp4 = closure_7();
   const MFAWarning = tmp4.MFAWarning;
   if (cResult[0] !== tmp4.MFAWarningIcon) {
     const obj2 = { style: tmp4.MFAWarningIcon, source: AssetRegistryDefault };
-    const tmp9 = metroRequire(Image, obj2);
+    const tmp8 = FastImageDefault;
+    const tmp9 = hasOwnProperty(tmp8, obj2);
     cResult[0] = tmp4.MFAWarningIcon;
     cResult[1] = tmp9;
     tmp5 = tmp9;
@@ -141,11 +141,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[4] !== tmp4.MFAWarningLink) {
     const obj3 = { variant: "text-xs/medium", color: "text-default", children: items };
     items = [tmp10, ];
-    const Text = tmp(4886).Text;
+    const Text = tmp(5088).Text;
     const obj4 = { style: MFAWarningLink, children: items1 };
     items1 = [" ", tmp12];
-    items[1] = metroImportDefault(native.LegacyText, obj4);
-    const tmp16 = metroImportDefault(Text, obj3);
+    items[1] = metroRequire(native.LegacyText, obj4);
+    const tmp16 = metroRequire(Text, obj3);
     cResult[4] = tmp4.MFAWarningLink;
     cResult[5] = tmp16;
     tmp14 = tmp16;
@@ -163,21 +163,22 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const obj5 = { accessibilityRole: "button", style: MFAWarning, onPress: handlePress, children: items2 };
   items2 = [tmp5, tmp14];
-  const tmp18 = metroImportDefault(Pressables.PressableOpacity, obj5);
+  const tmp18 = metroRequire(Pressables.PressableOpacity, obj5);
   cResult[6] = tmp4.MFAWarning;
   cResult[7] = tmp5;
   cResult[8] = tmp14;
   cResult[9] = tmp18;
   tmp17 = tmp18;
-}) : (() => {
+}) : (function GuildMFAWarning() {
   let items;
   let items1;
   let items2;
-  const tmp = closure_8();
+  const tmp = closure_7();
   obj = { accessibilityRole: "button", style: tmp.MFAWarning, onPress: handlePress, children: items };
-  const obj2 = { style: tmp.MFAWarningIcon, source: AssetRegistryDefault };
   const PressableOpacity = Pressables.PressableOpacity;
-  items = [metroRequire(Image, obj2), ];
+  const obj2 = { style: tmp.MFAWarningIcon, source: AssetRegistryDefault };
+  const tmp2 = FastImageDefault;
+  items = [hasOwnProperty(tmp2, obj2), ];
   const obj3 = { variant: "text-xs/medium", color: "text-default", children: items1 };
   const Text = Text_Text.Text;
   const intl = intl3.intl;
@@ -186,9 +187,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const LegacyText = native.LegacyText;
   const intl2 = intl3.intl;
   items2 = [" ", intl2.string(intl3.t.hvVgAZ)];
-  items1[1] = metroImportDefault(LegacyText, obj4);
-  items[1] = metroImportDefault(Text, obj3);
-  return metroImportDefault(PressableOpacity, obj);
+  items1[1] = metroRequire(LegacyText, obj4);
+  items[1] = metroRequire(Text, obj3);
+  return metroRequire(PressableOpacity, obj);
 });
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/GuildMFAWarning.tsx");
 

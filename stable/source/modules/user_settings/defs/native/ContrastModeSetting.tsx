@@ -1,26 +1,26 @@
-// Module ID: 15233
-// Function ID: 15234
+// Module ID: 15713
+// Function ID: 15714
 // Name: ContrastModeSetting
-// Dependencies: [19, 4879, 7634, 21, 558, 576, 14277, 15132, 10983, 11129, 1126, 1188, 2]
+// Dependencies: [19, 5081, 7988, 21, 558, 576, 14698, 15612, 10611, 10664, 1126, 1200, 2]
 
-// Module 15233 (ContrastModeSetting)
+// Module 15713 (ContrastModeSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 10983 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14277 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 15132 */;
+import native from "native" /* 1200 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 10611 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14698 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 15612 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useContrastSettingProps() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -32,7 +32,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => {
+}) : (function useContrastSettingProps() {
   let contrast;
   return react.useMemo(() => {
     const obj = { value: contrast.contrast, onSlidingComplete: AccessibilityActionCreators.setContrast, minimumValue: 0, maximumValue: 2, step: 0.1, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}) };

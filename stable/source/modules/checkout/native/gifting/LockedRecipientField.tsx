@@ -1,22 +1,20 @@
-// Module ID: 10588
-// Function ID: 10589
+// Module ID: 10214
+// Function ID: 10215
 // Name: LockedRecipientField
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1188, 4722, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1200, 4962, 5088, 2]
 
-// Module 10588 (LockedRecipientField)
+// Module 10214 (LockedRecipientField)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import UserUtilsDefault from "UserUtils" /* 4722 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import native from "native" /* 1200 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import Text_Text from "Text/Text" /* 5088 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let user;
 
 let closure_4;
 let hasOwnProperty;
@@ -30,7 +28,7 @@ obj2 = { flexDirection: "row", alignItems: "center", marginLeft: nativeDefault.s
 createStyles = createStyles.createStyles;
 obj3 = { marginEnd: nativeDefault.space.PX_8 };
 let closure_6 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LockedRecipientField(user) {
   let items;
   const obj = react2;
   const cResult = obj.c(11);
@@ -80,13 +78,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     tmp14 = tmp17;
   }
   const obj5 = { style: tmp4.avatar, user, guildId: "Array", size: native.AvatarSizes.NORMAL };
-  const Avatar = tmp(1188).Avatar;
+  const Avatar = tmp(1200).Avatar;
   const tmp7 = React3(Avatar, obj5);
   cResult[0] = tmp4.avatar;
   cResult[1] = user;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((user) => {
+}) : (function LockedRecipientField(user) {
   let items;
   let obj4;
   user = user.user;

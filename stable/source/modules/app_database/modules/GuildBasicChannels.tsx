@@ -1,23 +1,23 @@
-// Module ID: 7132
-// Function ID: 7133
+// Module ID: 7332
+// Function ID: 7333
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 5436, 2055, 502, 2051, 2106, 2074, 4509, 2052, 3, 2078, 7133, 1097, 4518, 2]
+// Dependencies: [32, 5, 5757, 2069, 502, 2065, 2119, 2087, 4750, 2066, 3, 2091, 7333, 1097, 4759, 2]
 
-// Module 7132 (GuildBasicChannels)
+// Module 7332 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import ChannelStore2 from "ChannelStore" /* 2051 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2078 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4518 */;
+import ChannelStore2 from "ChannelStore" /* 2065 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2091 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4759 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import BasicChannelCacheStore from "BasicChannelCacheStore" /* 2052 */;
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import BasicChannelCacheStore from "BasicChannelCacheStore" /* 2066 */;
 import size from "module_2" /* 2 */;
 
 const ChannelStore = ChannelStore2;
@@ -25,6 +25,13 @@ let c10, c9, closure_3, set;
 
 function hasBasicChannelChanged(basicChannel, nextResult) {
   let tmp = null == basicChannel || basicChannel.type !== nextResult.type || basicChannel.parent_id !== nextResult.parent_id;
+  if (!tmp) {
+    let flag = basicChannel.nsfw;
+    if (flag == null) {
+      flag = false;
+    }
+    tmp = flag !== nextResult.nsfw;
+  }
   if (!tmp) {
     const basicPermissions = PermissionStore.computeBasicPermissions(basicChannel);
     tmp = basicPermissions !== PermissionStore.computeBasicPermissions(nextResult);
@@ -34,7 +41,7 @@ function hasBasicChannelChanged(basicChannel, nextResult) {
 let closure_7 = ChannelRecord.createChannelRecordFromServer;
 const ChannelLoader = ChannelStore2.ChannelLoader;
 let tmp2 = new LoggerDefault("GuildBasicChannels");
-let closure_15 = tmp2;
+const authStore3 = tmp2;
 class GuildBasicChannels {
   constructor() {
     const obj = Object.create(new.target.prototype);
@@ -566,6 +573,13 @@ class GuildBasicChannels {
         basicChannel = basicChannel.getBasicChannel(id.id);
         let tmp2 = null == basicChannel || basicChannel.type !== id.type || basicChannel.parent_id !== id.parent_id;
         if (!tmp2) {
+          let flag = basicChannel.nsfw;
+          if (flag == null) {
+            flag = false;
+          }
+          tmp2 = flag !== id.nsfw;
+        }
+        if (!tmp2) {
           const basicPermissions = PermissionStore.computeBasicPermissions(basicChannel);
           tmp2 = basicPermissions !== PermissionStore.computeBasicPermissions(id);
         }
@@ -643,7 +657,7 @@ class GuildBasicChannels {
       const values = Object.values(ChannelStore.getMutableGuildChannelsForGuild(id));
       put(id, values.map((id) => {
         let obj2;
-        const obj = { id: id.id, type: id.type, guild_id: id.guild_id, parent_id: id.parent_id, basicPermissions: obj2.asBasicFlag(PermissionStore.computePermissions(id)) };
+        const obj = { id: id.id, type: id.type, guild_id: id.guild_id, parent_id: id.parent_id, basicPermissions: obj2.asBasicFlag(PermissionStore.computePermissions(id)), nsfw: id.nsfw || undefined };
         obj2 = BasicPermissionUtilsDefault;
         return obj;
       }));

@@ -1,10 +1,10 @@
-// Module ID: 13798
-// Function ID: 13799
+// Module ID: 14300
+// Function ID: 14301
 // Name: PremiumSKUFeature
 // Dependencies: [2]
 // Exports: default
 
-// Module 13798 (PremiumSKUFeature)
+// Module 14300 (PremiumSKUFeature)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/PremiumSKUFeature.tsx");

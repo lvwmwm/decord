@@ -1,16 +1,16 @@
-// Module ID: 15613
-// Function ID: 15614
+// Module ID: 16114
+// Function ID: 16115
 // Name: useMountTimer
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 15613 (useMountTimer)
+// Module 16114 (useMountTimer)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMountTimer() {
   let closure_129_0;
   let first;
   let tmp3;
@@ -73,7 +73,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[4];
   }
   return tmp7;
-}) : (() => {
+}) : (function useMountTimer() {
   let closure_0;
   let first;
   [first, closure_0] = react.useState(null);

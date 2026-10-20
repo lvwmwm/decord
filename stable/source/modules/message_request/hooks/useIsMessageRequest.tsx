@@ -1,11 +1,11 @@
-// Module ID: 9788
-// Function ID: 9789
+// Module ID: 10386
+// Function ID: 10387
 // Name: useIsMessageRequest
-// Dependencies: [6720, 6721, 558, 576, 504, 2]
+// Dependencies: [6055, 6056, 558, 576, 504, 2]
 
-// Module 9788 (useIsMessageRequest)
-import MessageRequestStore from "MessageRequestStore" /* 6720 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6721 */;
+// Module 10386 (useIsMessageRequest)
+import MessageRequestStore from "MessageRequestStore" /* 6055 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6056 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMessageRequest(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -45,7 +45,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useIsMessageRequest(arg0) {
   let closure_0;
   _require = arg0;
   const items = [MessageRequestStore];
@@ -54,7 +54,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj.useStateFromStores(items, () => MessageRequestStore.isMessageRequest(closure_0), items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEitherTypeOfMessageRequest(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -87,7 +87,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+}) : (function useIsEitherTypeOfMessageRequest(arg0) {
   let closure_0;
   _require = arg0;
   const items = [MessageRequestStore, SpamMessageRequestStore];

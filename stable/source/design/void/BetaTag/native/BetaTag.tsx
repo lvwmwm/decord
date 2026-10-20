@@ -1,20 +1,20 @@
-// Module ID: 13140
-// Function ID: 13141
+// Module ID: 12895
+// Function ID: 12896
 // Name: BetaTag
-// Dependencies: [19, 17, 6938, 21, 4890, 587, 558, 576, 1126, 4886, 5605, 1105, 2]
+// Dependencies: [19, 17, 7152, 21, 5092, 587, 558, 576, 1126, 5088, 5391, 1105, 2]
 
-// Module 13140 (BetaTag)
+// Module 12895 (BetaTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import LinearGradientDefault from "LinearGradient" /* 5605 */;
-import ColorConstants from "ColorConstants" /* 6938 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
+import ColorConstants from "ColorConstants" /* 7152 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj = { container: obj2, text: { textTransform: "uppercase" } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.lg, marginLeft: 8, paddingHorizontal: 8, justifyContent: "center" };
 let closure_6 = createStyles.createStyles(obj);
 let obj3 = { SMALL: "small", MEDIUM: "medium" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BetaTag(arg0) {
   let gradient;
   let style;
   let textStyle;
@@ -158,7 +158,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[15] = items3;
     tmp7 = items3;
   }
-}) : ((gradient) => {
+}) : (function BetaTag(gradient) {
   let intl;
   let intl2;
   let items;

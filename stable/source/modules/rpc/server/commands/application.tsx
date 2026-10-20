@@ -1,20 +1,20 @@
-// Module ID: 14307
-// Function ID: 14308
+// Module ID: 14730
+// Function ID: 14731
 // Name: application
-// Dependencies: [5118, 5316, 1085, 9029, 9031, 14308, 8726, 9026, 8981, 1252, 1282, 8512, 2]
+// Dependencies: [5440, 5639, 1085, 10940, 10946, 14731, 9228, 10937, 14732, 1265, 1295, 9060, 2]
 
-// Module 14307 (application)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import Constants2 from "Constants" /* 5316 */;
-import TestModeUtils from "TestModeUtils" /* 8512 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8726 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 8981 */;
-import RPCErrorDefault from "RPCError" /* 9026 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9029 */;
-import RPCHelpers from "RPCHelpers" /* 9031 */;
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14308 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
+// Module 14730 (application)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import Constants2 from "Constants" /* 5639 */;
+import TestModeUtils from "TestModeUtils" /* 9060 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9228 */;
+import RPCErrorDefault from "RPCError" /* 10937 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10940 */;
+import RPCHelpers from "RPCHelpers" /* 10946 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14731 */;
+import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 14732 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ let obj = {
     const application = ApplicationStore.getApplication(id);
     const tmpResult = ApplicationFlagUtils;
     if (tmpResult.hasApplicationFlag(application, constants.EMBEDDED_FIRST_PARTY)) {
-      const tmpResult2 = EmbeddedActivitiesManager;
+      const tmpResult2 = ActivitySessionAnalytics;
       const activeAnalyticsSessionIDs = tmpResult2.getActiveAnalyticsSessionIDs(id);
       const obj4 = { activity_application_id: id, activity_channel_type: type, activity_guild_id: guildId, activity_user_session_id: prop };
       type = undefined;

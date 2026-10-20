@@ -1,28 +1,28 @@
-// Module ID: 15131
-// Function ID: 15132
+// Module ID: 15611
+// Function ID: 15612
 // Name: AndroidFontScaleSetting
-// Dependencies: [19, 15083, 1095, 7634, 21, 558, 576, 1259, 15132, 10983, 1126, 11129, 1369, 2]
+// Dependencies: [19, 15563, 1095, 7988, 21, 558, 576, 1272, 15612, 10611, 1126, 10664, 1382, 2]
 
-// Module 15131 (AndroidFontScaleSetting)
+// Module 15611 (AndroidFontScaleSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import intl2 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 10983 */;
-import FontScaleStore from "FontScaleStore" /* 15083 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 15132 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 10611 */;
+import FontScaleStore from "FontScaleStore" /* 15563 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 15612 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const useFontScaleStore = FontScaleStore.useFontScaleStore;
 const FontScales = UserSettingsConstants.FontScales;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFontScaleSliderProps() {
   let state;
   let tmp10;
   let tmp11;
@@ -107,7 +107,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[11] = text;
   cResult[12] = obj3;
   tmp22 = obj3;
-}) : (() => {
+}) : (function useFontScaleSliderProps() {
   let onValueChange;
   let state;
   const tmp = useFontScaleStore();

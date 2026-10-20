@@ -1,11 +1,11 @@
-// Module ID: 2027
-// Function ID: 2028
+// Module ID: 2040
+// Function ID: 2041
 // Name: GameDetectionTypes
-// Dependencies: [1392, 2009, 2]
+// Dependencies: [1405, 2022, 2]
 
-// Module 2027 (GameDetectionTypes)
-import ApplicationRecord from "ApplicationRecord" /* 2009 */;
-import Record from "Record" /* 1392 */;
+// Module 2040 (GameDetectionTypes)
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
+import Record from "Record" /* 1405 */;
 import size from "module_2" /* 2 */;
 
 const createExecutable = ApplicationRecord.createExecutable;

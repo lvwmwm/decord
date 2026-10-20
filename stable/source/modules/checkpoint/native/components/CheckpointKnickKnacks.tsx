@@ -1,29 +1,27 @@
-// Module ID: 15540
-// Function ID: 15541
+// Module ID: 16025
+// Function ID: 16026
 // Name: CheckpointKnickKnacks
-// Dependencies: [19, 17, 4879, 5115, 21, 4890, 558, 576, 504, 1369, 4604, 2]
+// Dependencies: [19, 17, 5081, 5437, 21, 5092, 558, 576, 504, 1382, 4842, 2]
 
-// Module 15540 (CheckpointKnickKnacks)
+// Module 16025 (CheckpointKnickKnacks)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import _mod4604 from "module_4604" /* 4604 */;
-import CheckpointConstants from "CheckpointConstants" /* 5115 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import _mod4842 from "module_4842" /* 4842 */;
+import CheckpointConstants from "CheckpointConstants" /* 5437 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import createStyles from "createStyles" /* 4890 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let style;
 
 const View = react_native.View;
 const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ rive: { width: 143, height: 32 } });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointKnickKnacks(style) {
   let tmp4;
   let tmp5;
   let tmp9;
@@ -33,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   style = style.style;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
-    const fn = function v() {
+    const fn = function k() {
       return useReducedMotion.useReducedMotion;
     };
     cResult[0] = items;
@@ -64,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
         tmp12 = cResult[6];
       }
       if (cResult[7] !== tmp9) {
-        const tmp15 = jsx(_mod4604.CheckpointKnickKnacksRive, { artboard: "Entry", dataBinding: tmp9 });
+        const tmp15 = jsx(_mod4842.CheckpointKnickKnacksRive, { artboard: "Entry", dataBinding: tmp9 });
         cResult[7] = tmp9;
         cResult[8] = tmp15;
         tmp13 = tmp15;
@@ -91,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     tmp12 = items1;
   }
   return tmp11;
-}) : ((style) => {
+}) : (function CheckpointKnickKnacks(style) {
   let useReducedMotion;
   let stateFromStores;
   style = style.style;
@@ -102,7 +100,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   const tmp4 = closure_7();
   const memo = react.useMemo(() => ({ iconColor: CHECKPOINT_PRIMARY, reducedMotion: stateFromStores }), items1);
   let tmp6 = null;
-  const obj2 = stateFromStores(1369);
+  const obj2 = stateFromStores(1382);
   if (!obj2.isAndroid()) {
     const items2 = [tmp4.rive, style];
     tmp6 = <View style={items2}>{null}</View>;

@@ -1,27 +1,25 @@
-// Module ID: 9819
-// Function ID: 9820
+// Module ID: 10419
+// Function ID: 10420
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 4519, 1377, 9786, 21, 558, 576, 504, 4722, 9798, 9434, 1126, 6458, 6456, 7588, 6074, 9820, 2]
+// Dependencies: [32, 19, 4760, 1390, 10286, 21, 558, 576, 504, 4962, 10396, 7018, 1126, 6652, 6650, 9367, 6265, 10420, 2]
 
-// Module 9819 (StrangerDangerMoreTipsModalActionItems)
+// Module 10419 (StrangerDangerMoreTipsModalActionItems)
 import Fragment2 from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1126 */;
-import UserUtilsDefault from "UserUtils" /* 4722 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9434 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 9786 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 9798 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10286 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10396 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserStore from "UserStore" /* 1377 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId;
-
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
 let jsx = Fragment2.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StrangerDangerMoreTipsModalActionItems(channelId) {
   let first;
   let senderId;
   let tmp12;
@@ -440,7 +438,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[12] = warningId;
   cResult[13] = N;
   tmp19 = N;
-}) : ((channelId) => {
+}) : (function StrangerDangerMoreTipsModalActionItems(channelId) {
   let closure_8;
   channelId = channelId.channelId;
   const warningId = channelId.warningId;
@@ -511,9 +509,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       stringResult = intl2.string(intl5.t.naWE6W);
     }
     if (first) {
-      let EyeSlashIcon = tmp11(6458).EyeIcon;
+      let EyeSlashIcon = tmp11(6652).EyeIcon;
     } else {
-      EyeSlashIcon = tmp11(6456).EyeSlashIcon;
+      EyeSlashIcon = tmp11(6650).EyeSlashIcon;
     }
     const items = [obj3, ];
     const intl3 = intl5.intl;

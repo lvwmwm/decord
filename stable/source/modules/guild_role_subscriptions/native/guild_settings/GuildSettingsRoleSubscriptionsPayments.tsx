@@ -1,20 +1,19 @@
-// Module ID: 17973
-// Function ID: 17974
+// Module ID: 18604
+// Function ID: 18605
 // Name: GuildSettingsRoleSubscriptionsPayments
-// Dependencies: [19, 21, 558, 576, 16490, 1126, 2]
+// Dependencies: [19, 21, 558, 576, 17005, 1126, 2]
 
-// Module 17973 (GuildSettingsRoleSubscriptionsPayments)
+// Module 18604 (GuildSettingsRoleSubscriptionsPayments)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 16490 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 17005 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleSubscriptionPayments() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -29,12 +28,13 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     first = cResult[0];
   }
   return first;
-}) : (() => {
+}) : (function GuildSettingsRoleSubscriptionPayments(arg0) {
+  const merged = Object.assign(arg0, Object.assign({ ref: 0 }));
   UnavailableNoticeDefault;
   const intl = intl3.intl;
   const intl2 = intl3.intl;
-  return <tmp title={intl.string(intl3.t.qAMb9K)} description={intl2.string(intl3.t.pRuzXJ)} brightTitle />;
-}));
+  return <tmp2 title={intl.string(intl3.t.qAMb9K)} description={intl2.string(intl3.t.pRuzXJ)} brightTitle />;
+});
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsPayments.tsx");
 
-export default forwardRefResult;
+export default tmp3;

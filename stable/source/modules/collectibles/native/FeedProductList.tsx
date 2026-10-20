@@ -1,17 +1,17 @@
-// Module ID: 15732
-// Function ID: 15733
+// Module ID: 16238
+// Function ID: 16239
 // Name: FeedProductList
-// Dependencies: [19, 17, 21, 4890, 8418, 558, 576, 15733, 8534, 15734, 2]
+// Dependencies: [19, 17, 21, 5092, 8963, 558, 576, 16239, 9082, 16240, 2]
 
-// Module 15732 (FeedProductList)
+// Module 16238 (FeedProductList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 8418 */;
-import SkeletonCardDefault from "SkeletonCard" /* 8534 */;
-import CollectiblesShopCardsGridDefault from "CollectiblesShopCardsGrid" /* 15734 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 8963 */;
+import SkeletonCardDefault from "SkeletonCard" /* 9082 */;
+import CollectiblesShopCardsGridDefault from "CollectiblesShopCardsGrid" /* 16240 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj = { skeletonGrid: { flex: 1, alignItems: "center" }, skeletonRow: obj2 }
 obj2 = { flexDirection: "row", gap: CollectiblesShopCardV2.COLLECTIBLES_SHOP_CARD_GAP, paddingBottom: CollectiblesShopCardV2.COLLECTIBLES_SHOP_CARD_GAP };
 let closure_5 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SkeletonGrid(arg0) {
   let accessibilityLabel;
   let cardWidth;
   let columns;
@@ -35,7 +35,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(11);
   ({ loadingCardsNum, accessibilityLabel } = arg0);
   const tmp2 = closure_5();
-  let obj2 = cardWidth(15733);
+  let obj2 = cardWidth(16239);
   const cardLayout = obj2.useCardLayout();
   ({ columns, cardWidth } = cardLayout);
   const rowWidth = cardLayout.rowWidth;

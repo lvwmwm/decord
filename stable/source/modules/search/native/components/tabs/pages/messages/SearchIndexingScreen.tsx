@@ -1,20 +1,18 @@
-// Module ID: 16884
-// Function ID: 16885
+// Module ID: 17473
+// Function ID: 17474
 // Name: SearchIndexingScreen
-// Dependencies: [19, 21, 558, 576, 11982, 11968, 16808, 2]
+// Dependencies: [19, 21, 558, 576, 12059, 12045, 17391, 2]
 
-// Module 16884 (SearchIndexingScreen)
+// Module 17473 (SearchIndexingScreen)
 import Fragment from "Fragment" /* 21 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11982 */;
-import ErrorScreenDefault from "ErrorScreen" /* 16808 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12059 */;
+import ErrorScreenDefault from "ErrorScreen" /* 17391 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let searchContext;
-
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchIndexingScreen(searchContext) {
   let tmp4;
   let tmp5;
   let tmp7;
@@ -41,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => 
   }
   const effect = react.useEffect(tmp4, tmp5);
   if (cResult[3] !== searchContext) {
-    const tmpResult = tmp(11968);
+    const tmpResult = tmp(12045);
     const indexingErrorText = tmpResult.getIndexingErrorText(searchContext);
     cResult[3] = searchContext;
     cResult[4] = indexingErrorText;
@@ -58,7 +56,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => 
     tmp9 = cResult[6];
   }
   return tmp9;
-}) : ((searchContext) => {
+}) : (function SearchIndexingScreen(searchContext) {
   searchContext = searchContext.searchContext;
   const items = [searchContext];
   const effect = react.useEffect(() => {
@@ -66,7 +64,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => 
     const obj2 = { searchContext };
     obj.trackSearchIndexing(obj2);
   }, items);
-  let obj = searchContext(11968);
+  let obj = searchContext(12045);
   const text = obj.getIndexingErrorText(searchContext);
   return jsx(ErrorScreenDefault, { text });
 });

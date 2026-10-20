@@ -1,42 +1,41 @@
-// Module ID: 16828
-// Function ID: 16829
+// Module ID: 17411
+// Function ID: 17412
 // Name: GuildChannelRow
-// Dependencies: [109, 19, 17, 7513, 21, 4890, 587, 558, 576, 5043, 16829, 5812, 16831, 16807, 2]
+// Dependencies: [109, 19, 17, 9308, 21, 5092, 587, 558, 576, 5421, 17412, 6157, 8154, 17414, 17390, 2]
 
-// Module 16828 (GuildChannelRow)
+// Module 17411 (GuildChannelRow)
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useChannelNameDefault from "useChannelName" /* 5043 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5812 */;
-import SearchConstants from "SearchConstants" /* 7513 */;
-import SearchListRow2 from "SearchListRow" /* 16807 */;
-import renderChannelItem from "renderChannelItem" /* 16831 */;
+import useChannelNameDefault from "useChannelName" /* 5421 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
+import SearchListRow2 from "SearchListRow" /* 17390 */;
+import renderChannelItem from "renderChannelItem" /* 17414 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let hasOwnProperty;
-let metroRequire;
 let size;
 let tmp;
-const ChannelContent = tmp(16829);
+const ChannelContent = tmp(17412);
 let closure_3 = ["channel", "subtitle", "trailing", "extras", "onPress", "voiceStates"];
-({ Image: hasOwnProperty, View: metroRequire } = react_native);
+const View = react_native.View;
 const layout = SearchConstants.CHANNEL_LIST_SEARCH_LAYOUT;
 const jsx = Fragment.jsx;
 let obj = { container: { paddingVertical: 10 }, content: { flexDirection: "row", alignItems: "center" }, iconContainer: { marginRight: 0 }, simpleIcon: size };
 size = { width: 20, height: 20, marginRight: 8, tintColor: nativeDefault.colors.TEXT_MUTED };
-let closure_9 = createStyles.createStyles(obj);
+let closure_8 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildChannelLabel(channel) {
   const obj = react2;
   const cResult = obj.c(6);
   channel = channel.channel;
-  const tmp4 = closure_9();
+  const tmp4 = closure_8();
   const tmp5 = useChannelNameDefault(channel);
   if (cResult[0] === channel) {
     let tmp7;
@@ -50,7 +49,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       return tmp9;
     }
-    const tmp12 = <metroRequire style={tmp6}>{tmp7}</metroRequire>;
+    const tmp12 = <View style={tmp6}>{tmp7}</View>;
     cResult[3] = tmp4.content;
     cResult[4] = tmp7;
     cResult[5] = tmp12;
@@ -63,15 +62,15 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[1] = tmp5;
   cResult[2] = renderChannelContentResult;
   tmp7 = renderChannelContentResult;
-}) : ((channel) => {
+}) : (function GuildChannelLabel(channel) {
   channel = channel.channel;
   const tmp2 = useChannelNameDefault(channel);
   const obj2 = ChannelContent;
   const obj3 = { channel, layout, name: tmp2 };
-  return <metroRequire style={closure_9().content}>{obj2.renderChannelContent(obj3)}</metroRequire>;
+  return <View style={closure_8().content}>{obj2.renderChannelContent(obj3)}</View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildChannelRow(arg0) {
   let channel;
   let extras;
   let icon;
@@ -117,7 +116,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp9 = cResult[6];
     tmp10 = cResult[7];
   }
-  const tmp14 = closure_9();
+  const tmp14 = closure_8();
   if (cResult[8] === tmp4) {
     let tmp15;
     if (cResult[9] === tmp10) {
@@ -125,18 +124,18 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
     if (cResult[11] === tmp4) {
       let tmp17;
-      let tmp20;
+      let tmp21;
       if (cResult[12] === tmp14) {
         tmp17 = cResult[13];
       }
       ({ icon, iconWidth } = tmp17);
       if (cResult[14] !== tmp4) {
-        const tmp23 = <closure_10 channel={tmp4} />;
+        const tmp24 = <closure_9 channel={tmp4} />;
         cResult[14] = tmp4;
-        cResult[15] = tmp23;
-        tmp20 = tmp23;
+        cResult[15] = tmp24;
+        tmp21 = tmp24;
       } else {
-        tmp20 = cResult[15];
+        tmp21 = cResult[15];
       }
       if (cResult[16] === tmp15) {
         if (cResult[17] === tmp5) {
@@ -147,12 +146,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                   if (cResult[22] === tmp14.container) {
                     if (cResult[23] === tmp14.iconContainer) {
                       if (cResult[24] === tmp8) {
-                        if (cResult[25] === tmp20) {
-                          let tmp24;
+                        if (cResult[25] === tmp21) {
+                          let tmp25;
                           if (cResult[26] === tmp9) {
-                            tmp24 = cResult[27];
+                            tmp25 = cResult[27];
                           }
-                          return tmp24;
+                          return tmp25;
                         }
                       }
                     }
@@ -163,11 +162,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
           }
         }
       }
-      const SearchListRow = tmp(16807).SearchListRow;
+      const SearchListRow = tmp(17390).SearchListRow;
       const merged = Object.assign(tmp15);
       const merged1 = Object.assign(tmp7);
       ({ container: obj7.containerStyle, iconContainer: obj7.iconContainerStyle } = tmp14);
-      const tmp32 = <SearchListRow icon={icon} iconWidth={iconWidth} label={tmp20} subLabel={tmp8} onPress={tmp6} trailing={tmp9} extras={tmp5} />;
+      const tmp33 = <SearchListRow icon={icon} iconWidth={iconWidth} label={tmp21} subLabel={tmp8} onPress={tmp6} trailing={tmp9} extras={tmp5} />;
       cResult[16] = tmp15;
       cResult[17] = tmp5;
       cResult[18] = icon;
@@ -177,13 +176,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       cResult[22] = tmp14.container;
       cResult[23] = tmp14.iconContainer;
       cResult[24] = tmp8;
-      cResult[25] = tmp20;
+      cResult[25] = tmp21;
       cResult[26] = tmp9;
-      cResult[27] = tmp32;
-      tmp24 = tmp32;
+      cResult[27] = tmp33;
+      tmp25 = tmp33;
     }
     const obj4 = { icon: null, iconWidth: 32 };
     ({ style: tmp14.simpleIcon, source: tmpResult.getSimpleChannelIcon(tmp4) });
+    FastImageDefault;
     cResult[11] = tmp4;
     cResult[12] = tmp14;
     cResult[13] = obj4;
@@ -196,7 +196,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[9] = tmp10;
   cResult[10] = channelAccessibilityProps;
   tmp15 = channelAccessibilityProps;
-}) : ((channel) => {
+}) : (function GuildChannelRow(channel) {
   let extras;
   let onPress;
   let subtitle;
@@ -205,15 +205,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   channel = channel.channel;
   ({ subtitle, trailing, extras, onPress, voiceStates } = channel);
   const merged = Object.assign(channel, Object.assign({ channel: 0, subtitle: 0, trailing: 0, extras: 0, onPress: 0, voiceStates: 0 }));
-  const tmp2 = closure_9();
+  const tmp2 = closure_8();
   const obj = renderChannelItem;
   const channelAccessibilityProps = obj.getChannelAccessibilityProps({ channel, unread: false, mentionCount: 0, voiceStates });
-  const tmp4 = <hasOwnProperty style={tmp2.simpleIcon} source={utils_ChannelUtils.getSimpleChannelIcon(channel)} />;
+  FastImageDefault;
+  const tmp5 = <tmp4 style={tmp2.simpleIcon} source={utils_ChannelUtils.getSimpleChannelIcon(channel)} />;
   const SearchListRow = SearchListRow2.SearchListRow;
   const merged1 = Object.assign(channelAccessibilityProps);
   const merged2 = Object.assign(merged);
   ({ container: obj4.containerStyle, iconContainer: obj4.iconContainerStyle } = tmp2);
-  return <SearchListRow icon={tmp4} iconWidth={32} label={<closure_10 channel={channel} />} subLabel={subtitle} onPress={onPress} trailing={trailing} extras={extras} />;
+  return <SearchListRow icon={tmp5} iconWidth={32} label={<closure_9 channel={channel} />} subLabel={subtitle} onPress={onPress} trailing={trailing} extras={extras} />;
 }));
 size = size_mod;
 const result = size.fileFinishedImporting("modules/search/native/components/list/rows/GuildChannelRow.tsx");

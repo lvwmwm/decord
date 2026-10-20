@@ -1,31 +1,25 @@
-// Module ID: 11165
-// Function ID: 11166
+// Module ID: 10697
+// Function ID: 10698
 // Name: handleMessagesTapChannel
-// Dependencies: [5, 2055, 2070, 2051, 2112, 2106, 2074, 4509, 1085, 2058, 6596, 6592, 6844, 8051, 7768, 5093, 11166, 1987, 6750, 4854, 11179, 11187, 1375, 5044, 5097, 5568, 2]
+// Dependencies: [5, 2069, 2083, 2065, 2087, 4750, 1085, 7052, 6920, 8490, 8123, 10698, 6950, 5422, 7477, 5889, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 11165 (handleMessagesTapChannel)
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import GuildRecord from "GuildRecord" /* 2070 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 6592 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6596 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 6844 */;
+// Module 10697 (handleMessagesTapChannel)
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import GuildRecord from "GuildRecord" /* 2083 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7052 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
-let c4, c5;
+let c4, c5, c8, closure_6;
 
+let c10;
 let closure_12;
-let closure_14;
-let closure_15;
-let map1;
+let unpackModuleId;
 function maybeStartLurking() {
   return obj(...arguments);
 }
@@ -36,10 +30,10 @@ let obj = function _maybeStartLurking() {
     let closure_1 = value;
     let closure_2 = arg2;
     let closure_3 = arg3;
-    if (c4 === 2) {
-      c4 = 3;
+    if (c8 === 2) {
+      c8 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -49,50 +43,56 @@ let obj = function _maybeStartLurking() {
         return { value: "IconComponent", done: null };
       }
     } else {
-      let c6;
+      let c7;
       try {
-        c4 = 2;
+        c8 = 2;
         if (0 === c5) {
           if (arg0 === 1) {
-            c4 = 3;
+            c8 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c4 = 3;
+            c8 = 3;
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            const tmp14 = closure_1;
-            const tmp15 = closure_2;
-            const tmp16 = closure_3;
-            c6 = 1;
-            const obj5 = { channelId: tmp15, messageId: tmp16 };
+            let closure_4 = tmp;
+            const tmp21 = closure_1;
+            const tmp22 = closure_2;
+            const tmp23 = closure_3;
+            c7 = 1;
+            const obj5 = { channelId: tmp22, messageId: tmp23 };
             c5 = 2;
-            c4 = 1;
-            const obj6 = { value: obj2.startLurking(tmp14, {}, obj5), done: false };
+            c8 = 1;
+            const obj6 = { value: obj2.startLurking(tmp21, {}, obj5), done: false };
             obj2 = GuildDiscoveryUtilsAll;
             return obj6;
           }
-        } else if (1 === tmp3) {
-          c6 = 0;
+        } else if (1 === tmp4) {
+          c7 = 0;
+          if (closure_6 instanceof closure_132_0(closure_132_3[8]).JoinGuildRefusedError) {
+            c8 = 3;
+            return { value: true, done: true };
+          }
         } else if (arg0 === 1) {
-          c4 = 3;
+          c8 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c6 = 0;
-          c4 = 3;
+          c7 = 0;
+          c8 = 3;
           obj = { value, done: true };
           return obj;
         } else {
-          c6 = 0;
-          c4 = 3;
+          c7 = 0;
+          c8 = 3;
           return { value: true, done: true };
         }
-        c4 = 3;
+        c8 = 3;
         return { value: false, done: true };
-      } catch (tmp7) {
-        if (0 === c6) {
-          c4 = 3;
-          throw tmp7;
+      } catch (tmp13) {
+        closure_6 = tmp13;
+        if (0 === c7) {
+          c8 = 3;
+          throw tmp13;
         } else {
           c5 = 1;
         }
@@ -128,9 +128,6 @@ obj = function _handleMessagesTapChannel() {
         let messageId;
         let channel;
         let guild;
-        let closure_9;
-        let roles;
-        let role;
         c4 = 2;
         if (0 === v4) {
           if (arg0 === 1) {
@@ -148,22 +145,19 @@ obj = function _handleMessagesTapChannel() {
             c2 = undefined;
             v4 = undefined;
             ({ data: c0, navigationReplace } = closure_0);
-            const tmp282 = closure_0;
+            const tmp188 = closure_0;
             if (navigationReplace === undefined) {
               navigationReplace = false;
             }
-            ({ onBeforeNavigate: c2, dismissKeyboard: c3 } = tmp282);
+            ({ onBeforeNavigate: c2, dismissKeyboard: c3 } = tmp188);
             channelId = undefined;
             guildId = undefined;
             messageId = undefined;
             channel = undefined;
             guild = undefined;
-            closure_9 = undefined;
-            roles = undefined;
-            role = undefined;
             v4 = 1;
             c4 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "Set", done: true };
           }
         } else {
           if (1 === v4) {
@@ -182,85 +176,16 @@ obj = function _handleMessagesTapChannel() {
               if (null != channelId) {
                 channel = closure_130_7.getChannel(channelId);
               }
-              guild = closure_130_10.getGuild(guildId);
+              guild = closure_130_8.getGuild(guildId);
               const obj6 = { guildId, channelId, messageId };
-              const obj5 = closure_130_1(closure_130_3[13]);
+              const obj5 = closure_130_1(closure_130_3[9]);
               const result = obj5.trackDiscordLinkClicked(obj6);
               if (null != guildId) {
                 if (null != channelId) {
-                  const obj7 = closure_130_0(closure_130_3[14]);
+                  const obj7 = closure_130_0(closure_130_3[10]);
                   if (obj7.isStaticRouteIconType(channelId)) {
-                    if (null == guild) {
-                      c4 = 3;
-                      return { value: "IconComponent", done: null };
-                    } else if ("browse" === channelId) {
-                      const features3 = guild.features;
-                      if (features3.has(closure_130_13.COMMUNITY)) {
-                        const obj8 = { guildId, defaultTab: closure_130_17.BROWSE };
-                        const obj26 = closure_130_1(closure_130_3[15]);
-                        obj26.pushLazy(closure_130_0(closure_130_3[17])(closure_130_3[16], closure_130_3.paths), obj8, closure_130_18);
-                      } else {
-                        c4 = 3;
-                        return { value: "IconComponent", done: null };
-                      }
-                    } else if ("customize" === channelId) {
-                      const features2 = guild.features;
-                      if (features2.has(closure_130_13.COMMUNITY)) {
-                        const obj10 = { guildId, defaultTab: closure_130_17.CUSTOMIZE };
-                        const obj24 = closure_130_1(closure_130_3[15]);
-                        obj24.pushLazy(closure_130_0(closure_130_3[17])(closure_130_3[16], closure_130_3.paths), obj10, closure_130_18);
-                      } else {
-                        c4 = 3;
-                        return { value: "IconComponent", done: null };
-                      }
-                    } else {
-                      if ("home" !== channelId) {
-                        if ("guide" !== channelId) {
-                          if ("linked-roles" === channelId) {
-                            closure_9 = messageId;
-                            if (null != closure_9) {
-                              roles = closure_130_8.getSelfMember(guildId);
-                              if (null == roles) {
-                                c4 = 3;
-                                return { value: "IconComponent", done: null };
-                              } else {
-                                role = closure_130_9.getRole(guildId, closure_9);
-                                if (null != role) {
-                                  roles = roles.roles;
-                                  if (!roles.includes(role.id)) {
-                                    const openLazy = closure_130_1(closure_130_3[19]).openLazy;
-                                    const _HermesInternal = HermesInternal;
-                                    const tmp197 = closure_130_1(closure_130_3[19]);
-                                    const obj11 = { role, guildId };
-                                    const tmp202 = closure_130_0(closure_130_3[17])(closure_130_3[20], closure_130_3.paths);
-                                    openLazy(tmp202, "GuildRoleConnectionsConnectAccountsActionSheet-" + role.id, obj11);
-                                  }
-                                }
-                                const obj13 = { guildId };
-                                const obj21 = closure_130_1(closure_130_3[15]);
-                                obj21.pushLazy(closure_130_0(closure_130_3[17])(closure_130_3[21], closure_130_3.paths), obj13);
-                              }
-                            } else {
-                              const obj15 = { guildId };
-                              const obj18 = closure_130_1(closure_130_3[15]);
-                              obj18.pushLazy(closure_130_0(closure_130_3[17])(closure_130_3[21], closure_130_3.paths), obj15);
-                            }
-                          } else {
-                            const obj17 = closure_130_0(closure_130_3[22]);
-                            obj17.assertNever(channelId);
-                          }
-                        }
-                      }
-                      const features = guild.features;
-                      if (features.has(closure_130_13.COMMUNITY)) {
-                        const obj16 = { navigationReplace, openChannel: true };
-                        const tmp225 = closure_130_1(closure_130_3[18]);
-                        tmp225(closure_130_15.CHANNEL(guildId, closure_130_16.GUILD_HOME), obj16);
-                      } else {
-                        c4 = 3;
-                        return { value: "IconComponent", done: null };
-                      }
-                    }
+                    const obj8 = { guildId, staticRoute: channelId, itemId: messageId, navigationReplace };
+                    closure_130_1(closure_130_3[11])(obj8);
                   }
                   c4 = 3;
                   return { value: "IconComponent", done: null };
@@ -271,8 +196,8 @@ obj = function _handleMessagesTapChannel() {
                   if (!channel.isPrivate()) {
                     v4 = 2;
                     c4 = 1;
-                    const obj19 = { value: closure_130_19(guild, channel.guild_id, channel.id, messageId), done: false };
-                    return obj19;
+                    const obj10 = { value: closure_130_13(guild, channel.guild_id, channel.id, messageId), done: false };
+                    return obj10;
                   }
                 }
               }
@@ -280,10 +205,10 @@ obj = function _handleMessagesTapChannel() {
                 if (null != guildId) {
                   if (channel.isPrivate()) {
                     if (closure_130_5(channel.type)) {
-                      const obj12 = closure_130_0(closure_130_3[23]);
+                      const obj12 = closure_130_0(closure_130_3[13]);
                       if (obj12.canViewChannel(channel)) {
-                        if (channel.type === closure_130_12.GUILD_STAGE_VOICE) {
-                          if (!closure_130_11.can(closure_130_14.CONNECT, channel)) {
+                        if (channel.type === closure_130_10.GUILD_STAGE_VOICE) {
+                          if (!closure_130_9.can(closure_130_11.CONNECT, channel)) {
                             c4 = 3;
                             return { value: "IconComponent", done: null };
                           }
@@ -294,21 +219,21 @@ obj = function _handleMessagesTapChannel() {
                         if (c2 != null) {
                           c2();
                         }
-                        const obj14 = closure_130_0(closure_130_3[24]);
+                        const obj14 = closure_130_0(closure_130_3[14]);
                         obj14.openChannelCallModal(channel);
                       }
                     }
                     if (c2 != null) {
                       c2();
                     }
-                    const obj20 = { navigationReplace, openChannel: true };
-                    const tmp119 = closure_130_1(closure_130_3[18]);
-                    tmp119(closure_130_15.CHANNEL(guildId, channel.id), obj20);
+                    const obj11 = { navigationReplace, openChannel: true };
+                    const tmp119 = closure_130_1(closure_130_3[12]);
+                    tmp119(closure_130_12.CHANNEL(guildId, channel.id), obj11);
                   } else {
                     v4 = 3;
                     c4 = 1;
-                    const obj22 = { value: closure_130_19(guild, guildId, channel.id, messageId), done: false };
-                    return obj22;
+                    const obj13 = { value: closure_130_13(guild, guildId, channel.id, messageId), done: false };
+                    return obj13;
                   }
                 }
               }
@@ -316,8 +241,8 @@ obj = function _handleMessagesTapChannel() {
                 if (null != guildId) {
                   v4 = 4;
                   c4 = 1;
-                  const obj23 = { value: closure_130_19(guild, guildId, channelId, messageId), done: false };
-                  return obj23;
+                  const obj15 = { value: closure_130_13(guild, guildId, channelId, messageId), done: false };
+                  return obj15;
                 }
               }
               if (null != channel) {
@@ -328,7 +253,7 @@ obj = function _handleMessagesTapChannel() {
                   if (c2 != null) {
                     c2();
                   }
-                  const obj9 = closure_130_1(closure_130_3[25]);
+                  const obj9 = closure_130_1(closure_130_3[15]);
                   const voiceChannel = obj9.selectVoiceChannel(channelId);
                 }
               }
@@ -337,9 +262,9 @@ obj = function _handleMessagesTapChannel() {
                 if (c2 != null) {
                   c2();
                 }
-                const obj25 = { navigationReplace, openChannel: true };
-                const tmp70 = closure_130_1(closure_130_3[18]);
-                tmp70(closure_130_15.CHANNEL(guildId, channelId, messageId), obj25);
+                const obj16 = { navigationReplace, openChannel: true };
+                const tmp70 = closure_130_1(closure_130_3[12]);
+                tmp70(closure_130_12.CHANNEL(guildId, channelId, messageId), obj16);
               }
             }
           } else if (2 === v4) {
@@ -348,8 +273,8 @@ obj = function _handleMessagesTapChannel() {
               throw value;
             } else if (arg0 === 2) {
               c4 = 3;
-              const obj27 = { value, done: true };
-              return obj27;
+              const obj17 = { value, done: true };
+              return obj17;
             } else if (value) {
               c4 = 3;
               return { value: "IconComponent", done: null };
@@ -360,8 +285,8 @@ obj = function _handleMessagesTapChannel() {
               throw value;
             } else if (arg0 === 2) {
               c4 = 3;
-              const obj28 = { value, done: true };
-              return obj28;
+              const obj18 = { value, done: true };
+              return obj18;
             } else if (value) {
               c4 = 3;
               return { value: "IconComponent", done: null };
@@ -371,8 +296,8 @@ obj = function _handleMessagesTapChannel() {
             throw value;
           } else if (arg0 === 2) {
             c4 = 3;
-            const obj29 = { value, done: true };
-            return obj29;
+            const obj19 = { value, done: true };
+            return obj19;
           } else if (value) {
             c4 = 3;
             return { value: "IconComponent", done: null };
@@ -381,19 +306,19 @@ obj = function _handleMessagesTapChannel() {
               tmp6();
             }
             obj = { navigationReplace, openChannel: true };
-            const tmp13 = closure_130_1(closure_130_3[18]);
-            tmp13(closure_130_15.CHANNEL(guildId, channelId, messageId), obj);
+            const tmp13 = closure_130_1(closure_130_3[12]);
+            tmp13(closure_130_12.CHANNEL(guildId, channelId, messageId), obj);
           }
           if (c2 != null) {
             tmp155();
           }
-          const obj30 = { navigationReplace, openChannel: true };
-          const tmp162 = closure_130_1(closure_130_3[18]);
-          tmp162(closure_130_15.CHANNEL(channel.guild_id, channel.id, messageId), obj30);
+          const obj20 = { navigationReplace, openChannel: true };
+          const tmp162 = closure_130_1(closure_130_3[12]);
+          tmp162(closure_130_12.CHANNEL(channel.guild_id, channel.id, messageId), obj20);
         }
-      } catch (tmp261) {
+      } catch (tmp178) {
         c4 = 3;
-        throw tmp261;
+        throw tmp178;
       }
     }
   });
@@ -401,10 +326,7 @@ obj = function _handleMessagesTapChannel() {
 };
 const isGuildVocalChannelType = ChannelRecord.isGuildVocalChannelType;
 const isGuildLurker = GuildRecord.isGuildLurker;
-({ ChannelTypes: closure_12, GuildFeatures: map1, Permissions: closure_14, Routes: closure_15 } = Constants);
-const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
-const GuildOnboardingTab = GuildOnboardingPromptsConstants.GuildOnboardingTab;
-let closure_18 = GuildOnboardingConstants.CHANNELS_AND_ROLES_MODAL_KEY;
+({ ChannelTypes: c10, Permissions: unpackModuleId, Routes: closure_12 } = Constants);
 let result = size.fileFinishedImporting("modules/messages/native/handlers/handleMessagesTapChannel.tsx");
 
 export const handleMessagesTapChannel = function handleMessagesTapChannel() {

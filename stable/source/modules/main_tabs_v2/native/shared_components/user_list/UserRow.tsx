@@ -1,43 +1,43 @@
-// Module ID: 10602
-// Function ID: 10603
+// Module ID: 10229
+// Function ID: 10230
 // Name: UserRow
-// Dependencies: [19, 17, 4879, 5118, 7146, 2051, 4930, 4519, 10592, 1085, 21, 4890, 587, 4903, 38, 10603, 10604, 4567, 10605, 9434, 7147, 558, 576, 504, 1188, 4886, 4722, 10609, 6657, 7887, 1126, 10630, 4795, 4577, 5594, 2019, 7523, 5855, 7850, 1987, 7888, 10631, 4826, 5793, 7620, 5305, 9389, 10633, 8961, 10641, 9395, 10642, 5990, 10646, 5993, 2]
+// Dependencies: [19, 17, 5081, 5440, 7346, 2065, 5108, 4760, 10218, 1085, 21, 5092, 587, 7015, 38, 10230, 10231, 4808, 10232, 7018, 7347, 558, 576, 504, 1200, 5088, 4962, 10236, 6852, 6053, 1126, 10259, 10260, 6196, 5379, 2032, 9317, 8194, 8299, 2000, 8338, 10262, 9405, 5408, 7975, 5628, 8849, 10264, 8762, 10272, 8854, 10273, 6177, 10279, 6180, 2]
 
-// Module 10602 (UserRow)
+// Module 10229 (UserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import intl14 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import utils_StringUtils from "utils/StringUtils" /* 2019 */;
-import ToastUtils from "ToastUtils" /* 4567 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4577 */;
-import UserUtils from "UserUtils" /* 4722 */;
-import XLargeIcon from "XLargeIcon" /* 4795 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 4826 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import ChatIcon from "ChatIcon" /* 5855 */;
-import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7147 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 7523 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9434 */;
-import UserRowConstants from "UserRowConstants" /* 10592 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10604 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10605 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10609 */;
-import ActionButtonDefault from "ActionButton" /* 10630 */;
-import CrownIcon2 from "CrownIcon" /* 10631 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import utils_StringUtils from "utils/StringUtils" /* 2032 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import UserUtils from "UserUtils" /* 4962 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6196 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
+import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7347 */;
+import ChatIcon from "ChatIcon" /* 8194 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 9317 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9405 */;
+import UserRowConstants from "UserRowConstants" /* 10218 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10231 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10232 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10236 */;
+import ActionButtonDefault from "ActionButton" /* 10259 */;
+import XLargeIcon from "XLargeIcon" /* 10260 */;
+import CrownIcon2 from "CrownIcon" /* 10262 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7146 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PresenceStore from "PresenceStore" /* 4930 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7346 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import PresenceStore from "PresenceStore" /* 5108 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let map1;
 let obj2;
 let obj3;
 let tmp2;
-const native = tmp2(1188);
+const native = tmp2(1200);
 const View = react_native.View;
 const UserRowModes = UserRowConstants.UserRowModes;
 ({ RelationshipTypes: closure_12, StatusTypes: map1 } = Constants);
@@ -67,7 +67,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", gap: 4, cornerRadius: nativeDefault.radii.xs };
 let closure_19 = createStyles(obj);
 const Friends_v2 = "Friends_v2";
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameRelationship) => {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRowSubLabel(isGameRelationship) {
   let animate;
   let applicationId;
   let first;
@@ -171,7 +171,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameRelation
           }
           if (cResult[13] !== stateFromStores.name) {
             const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-subtle", children: stateFromStores.name };
-            const tmp26 = closure_14(applicationId(4886).Text, obj5);
+            const tmp26 = closure_14(applicationId(5088).Text, obj5);
             cResult[13] = stateFromStores.name;
             cResult[14] = tmp26;
             tmp24 = tmp26;
@@ -196,7 +196,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameRelation
         }
       }
       const obj7 = { style: tmp4.gameIcon, resizeMode: "contain", source: tmp20, disableColor: true };
-      const tmp23 = closure_14(applicationId(1188).Icon, obj7, stateFromStores.id);
+      const tmp23 = closure_14(applicationId(1200).Icon, obj7, stateFromStores.id);
       cResult[9] = stateFromStores.id;
       cResult[10] = tmp4.gameIcon;
       cResult[11] = tmp20;
@@ -207,7 +207,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameRelation
   } else {
     let tmp13;
     if (cResult[19] !== user) {
-      const tmpResult2 = applicationId(4722);
+      const tmpResult2 = applicationId(4962);
       const userTag = tmpResult2.getUserTag(user);
       cResult[19] = user;
       cResult[20] = userTag;
@@ -217,7 +217,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameRelation
     }
     if (cResult[21] !== tmp13) {
       const obj8 = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: tmp13 };
-      const tmp17 = closure_14(applicationId(4886).Text, obj8);
+      const tmp17 = closure_14(applicationId(5088).Text, obj8);
       cResult[21] = tmp13;
       cResult[22] = tmp17;
       tmp15 = tmp17;
@@ -226,7 +226,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameRelation
     }
   }
   tmp9 = tmp15;
-}) : ((arg0) => {
+}) : (function UserRowSubLabel(arg0) {
   let animate;
   let guildId;
   let isGameRelationship;
@@ -260,7 +260,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameRelation
     } else {
       const obj4 = { style: tmp.gameContainer, children: items1 };
       const obj5 = { style: tmp.gameIcon, resizeMode: "contain", source: obj6, disableColor: true };
-      const Icon = tmp2(1188).Icon;
+      const Icon = tmp2(1200).Icon;
       let str = stateFromStores.getIconURL(16);
       const tmp14 = closure_15;
       const tmp15 = View;
@@ -276,7 +276,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGameRelation
     tmp9 = tmp14Result;
   } else {
     const obj8 = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: tmp2Result.getUserTag(user) };
-    const Text = tmp2(4886).Text;
+    const Text = tmp2(5088).Text;
     tmp2Result = UserUtils;
     tmp9 = closure_14(Text, obj8);
   }
@@ -448,7 +448,7 @@ const memoResult = react.memo(function UserRow(type) {
     let zFfSFQ2;
     const items = [];
     if (NONE !== UserRowModes.ACTIONS) {
-      let obj2 = { accessibilityActions: items, actions: "Array" };
+      let obj2 = { accessibilityActions: items, actions: "r" };
       return obj2;
     } else {
       let tmp9;
@@ -496,7 +496,7 @@ const memoResult = react.memo(function UserRow(type) {
         obj10 = { name: obj22.getName(user) };
         prop1 = intl14.t["C9Xe6+"];
         obj22 = UserUtilsDefault;
-        items1 = [authStore2(tmp32, obj9), ];
+        items1 = [syncedClientThemes(tmp32, obj9), ];
         const obj11 = {
           styles: closure_17.action,
           IconComponent: CheckmarkLargeIcon.CheckmarkLargeIcon,
@@ -529,8 +529,8 @@ const memoResult = react.memo(function UserRow(type) {
         obj13 = { name: obj25.getName(user) };
         v6p0yBo1 = intl14.t["6p0yBo"];
         obj25 = UserUtilsDefault;
-        items1[1] = authStore2(tmp34, obj11);
-        tmp9 = applicationId(View, obj7);
+        items1[1] = syncedClientThemes(tmp34, obj11);
+        tmp9 = authStore3(View, obj7);
       } else if (trailing.PENDING_OUTGOING === type) {
         const push2 = items.push;
         const obj14 = { name: closure_17.CANCEL, label: formatToPlainString(JFJ8Cg, obj16) };
@@ -540,7 +540,7 @@ const memoResult = react.memo(function UserRow(type) {
         JFJ8Cg = intl14.t.JFJ8Cg;
         obj8 = UserUtilsDefault;
         push2(obj14);
-        const obj17 = { style: closure_17.actions, children: authStore2(tmp19, obj19) };
+        const obj17 = { style: closure_17.actions, children: syncedClientThemes(tmp19, obj19) };
         obj19 = {
           styles: closure_17.action,
           IconComponent: XLargeIcon.XLargeIcon,
@@ -569,7 +569,7 @@ const memoResult = react.memo(function UserRow(type) {
         obj20 = { name: obj12.getName(user) };
         JFJ8Cg2 = intl14.t.JFJ8Cg;
         obj12 = UserUtilsDefault;
-        tmp9 = authStore2(View, obj17);
+        tmp9 = syncedClientThemes(View, obj17);
       } else if (trailing.SUGGESTION === type) {
         let obj = { name: closure_17.ACCEPT_SUGGESTION, label: intl.string(intl14.t["ed99+i"]) };
         let tmp = closure_17;
@@ -580,8 +580,8 @@ const memoResult = react.memo(function UserRow(type) {
         const obj21 = { name: closure_17.IGNORE_SUGGESTION, label: intl2.string(intl14.t["Tw3a/R"]) };
         intl2 = intl14.intl;
         push(obj, obj21);
-        const obj23 = { style: closure_17.actions, children: authStore2(View, obj24) };
-        obj24 = { style: closure_17.buttonWrapper, children: authStore2(Button, obj26) };
+        const obj23 = { style: closure_17.actions, children: syncedClientThemes(View, obj24) };
+        obj24 = { style: closure_17.buttonWrapper, children: syncedClientThemes(Button, obj26) };
         obj26 = {
           variant: "secondary",
           size: "sm",
@@ -600,7 +600,7 @@ const memoResult = react.memo(function UserRow(type) {
         Button = components_Button_Button.Button;
         truncateText = utils_StringUtils.truncateText;
         intl3 = intl14.intl;
-        tmp9 = authStore2(View, obj23);
+        tmp9 = syncedClientThemes(View, obj23);
       } else {
         const FRIEND = tmp37.FRIEND;
         const push4 = items.push;
@@ -651,7 +651,7 @@ const memoResult = react.memo(function UserRow(type) {
         obj35 = { name: obj37.getName(user) };
         Q75ddl2 = intl14.t.Q75ddl;
         obj37 = UserUtilsDefault;
-        items2 = [authStore2(tmp48, obj34), ];
+        items2 = [syncedClientThemes(tmp48, obj34), ];
         const obj36 = {
           styles: closure_17.action,
           IconComponent: ChatIcon.ChatIcon,
@@ -671,8 +671,8 @@ const memoResult = react.memo(function UserRow(type) {
         obj38 = { name: obj40.getName(user) };
         zFfSFQ2 = intl14.t.zFfSFQ;
         obj40 = UserUtilsDefault;
-        items2[1] = authStore2(tmp49, obj36);
-        tmp9 = applicationId(View, obj32);
+        items2[1] = syncedClientThemes(tmp49, obj36);
+        tmp9 = authStore3(View, obj32);
       }
       return { accessibilityActions: items, actions: tmp9 };
     }
@@ -763,7 +763,7 @@ const memoResult = react.memo(function UserRow(type) {
     let localUser;
     let sourceAnalyticsLocations;
     if (null == onLongPress) {
-      const promise = asyncRequire(7850, dependencyMap.paths);
+      const promise = asyncRequire(8299, dependencyMap.paths);
       promise.then((result) => {
         const obj = { userId: localUser.id, localUser, sourceAnalyticsLocations };
         return result.default(obj);
@@ -793,7 +793,7 @@ const memoResult = react.memo(function UserRow(type) {
     const obj = { style: closure_17.avatar, user, guildId, status: tmp4, isMobileOnline, isVROnline, size: native.AvatarSizes.REFRESH_MEDIUM_32, avatarDecoration, autoStatusCutout: true };
     tmp4 = null;
     const Avatar = native.Avatar;
-    const tmp = authStore2;
+    const tmp = syncedClientThemes;
     if (map1.OFFLINE !== status) {
       tmp4 = status;
     }
@@ -833,19 +833,19 @@ const memoResult = react.memo(function UserRow(type) {
   const memo4 = obj6.useMemo(() => {
     if (undefined === label) {
       let tmp5 = null;
-      const tmp = closure_15;
-      const tmp2 = authStore3;
+      const tmp = authStore3;
+      const tmp2 = authStore4;
       if (flag3) {
         const obj = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
         const CrownIcon = CrownIcon2.CrownIcon;
-        tmp5 = authStore2(CrownIcon, obj);
+        tmp5 = syncedClientThemes(CrownIcon, obj);
       }
       const items = [tmp5, ];
       let tmp11 = null;
       if (null != premiumSince) {
         const obj2 = { size: "xs", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
         const BoostGemIcon = BoostGemIcon2.BoostGemIcon;
-        tmp11 = authStore2(BoostGemIcon, obj2);
+        tmp11 = syncedClientThemes(BoostGemIcon, obj2);
       }
       const obj3 = { children: items };
       items[1] = tmp11;
@@ -857,7 +857,7 @@ const memoResult = react.memo(function UserRow(type) {
     let tmp = subLabel;
     if (undefined === subLabel) {
       const obj = { user, type, animate: !useReducedMotion, isGameRelationship: flag4, guildId, applicationId };
-      tmp = authStore2(closure_21, obj);
+      tmp = syncedClientThemes(closure_21, obj);
     }
     return tmp;
   }, items13);

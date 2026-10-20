@@ -1,16 +1,16 @@
-// Module ID: 17153
-// Function ID: 17154
+// Module ID: 17748
+// Function ID: 17749
 // Name: ExternalPipView
-// Dependencies: [32, 19, 7964, 21, 558, 576, 9110, 17154, 17156, 2]
+// Dependencies: [32, 19, 8412, 21, 558, 576, 5221, 17749, 17751, 2]
 
-// Module 17153 (ExternalPipView)
+// Module 17748 (ExternalPipView)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ExternalPipDefault from "ExternalPip" /* 9110 */;
-import ExternalPipViewVideoDefault from "ExternalPipViewVideo" /* 17156 */;
+import ExternalPipDefault from "ExternalPip" /* 5221 */;
+import ExternalPipViewVideoDefault from "ExternalPipViewVideo" /* 17751 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AppFreezeStore from "AppFreezeStore" /* 7964 */;
+import AppFreezeStore from "AppFreezeStore" /* 8412 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let _require;
 
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExternalPipActive() {
   let first;
   let require;
   let tmp3;
@@ -70,7 +70,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[4];
   }
   return tmp8;
-}) : (() => {
+}) : (function useExternalPipActive() {
   let require;
   let tmp2;
   [tmp2, require] = _slicedToArray(react.useState(false), 2);
@@ -89,7 +89,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return { externalPipActive, setExternalPipActive };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalPipView() {
   let externalPipActive;
   let externalPipEnabled;
   let first;
@@ -108,11 +108,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { disabled: !obj3.isSupported() };
     cResult[0] = obj2;
     first = obj2;
-    obj3 = setExternalPipActive(9110);
+    obj3 = setExternalPipActive(5221);
   } else {
     first = cResult[0];
   }
-  externalPipEnabled = setExternalPipActive(17154)(first).externalPipEnabled;
+  externalPipEnabled = setExternalPipActive(17749)(first).externalPipEnabled;
   ({ externalPipActive, setExternalPipActive } = closure_7());
   closure_7();
   if (cResult[1] !== externalPipEnabled) {
@@ -259,12 +259,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   return tmp15;
-}) : (() => {
+}) : (function ExternalPipView() {
   let obj2;
   let setExternalPipActive;
   let obj = { disabled: !obj2.isSupported() };
-  const tmp = setExternalPipActive(17154);
-  obj2 = setExternalPipActive(9110);
+  const tmp = setExternalPipActive(17749);
+  obj2 = setExternalPipActive(5221);
   const externalPipEnabled = tmp(obj).externalPipEnabled;
   const tmp2 = closure_7();
   setExternalPipActive = tmp2.setExternalPipActive;
@@ -311,7 +311,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FreezeAfterLayoutPipView() {
   let first;
   let ref;
   let tmp4;
@@ -362,7 +362,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[3];
   }
   return tmp7;
-}) : (() => {
+}) : (function FreezeAfterLayoutPipView() {
   const ref = react.useRef(false);
   const onLayout = react.useCallback(() => {
     if (!ref.current) {

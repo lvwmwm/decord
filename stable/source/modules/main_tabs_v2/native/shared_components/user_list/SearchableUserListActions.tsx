@@ -1,12 +1,12 @@
-// Module ID: 10596
-// Function ID: 10597
+// Module ID: 10222
+// Function ID: 10223
 // Name: SearchableUserListActions
-// Dependencies: [19, 17, 21, 558, 576, 10597, 5993, 6074, 2]
+// Dependencies: [19, 17, 21, 558, 576, 10223, 6180, 6265, 2]
 
-// Module 10596 (SearchableUserListActions)
+// Module 10222 (SearchableUserListActions)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import TableRow2 from "TableRow" /* 5993 */;
+import TableRow2 from "TableRow" /* 6180 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -17,11 +17,11 @@ let dependencyMap, flatten;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const TableRowGroup2 = tmp(6074);
+const TableRowGroup2 = tmp(6265);
 ({ View: closure_4, StyleSheet: hasOwnProperty } = react_native);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((actions) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserListActionsProps(actions) {
   let paddingBottom;
   let paddingTop;
   let tmp3;
@@ -29,7 +29,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((actions) => {
   const cResult = obj.c(8);
   actions = actions.actions;
   const style = actions.style;
-  const tmp2 = style(10597)();
+  const tmp2 = style(10223)();
   if (cResult[0] !== style) {
     let obj2 = style;
     flatten = flatten.flatten;
@@ -93,11 +93,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((actions) => {
   }
   const error = new Error("UserListActions: paddingTop and paddingBottom must be numbers.");
   throw error;
-}) : ((actions) => {
+}) : (function useUserListActionsProps(actions) {
   let closure_2;
   actions = actions.actions;
   const style = actions.style;
-  const tmp = style(10597)();
+  const tmp = style(10223)();
   dependencyMap = tmp;
   const items = [actions, tmp, style];
   return react.useMemo(() => {
@@ -142,7 +142,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((actions) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserFlashListActions(arg0) {
   let actions;
   let first;
   let style;
@@ -208,7 +208,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = tmp9;
   cResult[9] = tmp13;
   tmp12 = tmp13;
-}) : ((actions) => {
+}) : (function UserFlashListActions(actions) {
   actions = actions.actions;
   const items = [{ flex: 1 }, actions.style];
   let mapped;

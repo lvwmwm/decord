@@ -1,21 +1,21 @@
-// Module ID: 5578
-// Function ID: 5579
+// Module ID: 5948
+// Function ID: 5949
 // Name: StageChannelRoleStore
-// Dependencies: [2051, 2112, 2106, 2074, 1377, 4909, 5037, 4514, 2060, 12, 504, 5579, 584, 2]
+// Dependencies: [2065, 2125, 2119, 2087, 1390, 5113, 5416, 4755, 2073, 12, 504, 5949, 584, 2]
 
-// Module 5578 (StageChannelRoleStore)
+// Module 5948 (StageChannelRoleStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5037 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5579 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5416 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5949 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import UserStore from "UserStore" /* 1390 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import size from "module_2" /* 2 */;
 
 let closure_11;
@@ -50,7 +50,7 @@ function buildStageChannelUserRoles(user, id1, flag) {
         const MODERATOR = obj.MODERATOR;
         const tmp8 = require;
         if (flag) {
-          obj2 = { permission: tmp8(2060).MODERATE_STAGE_CHANNEL_PERMISSIONS, user, context: guild, overwrites: channel.permissionOverwrites, roles: GuildRoleStore.getUnsafeMutableRoles(guild.id) };
+          obj2 = { permission: tmp8(2073).MODERATE_STAGE_CHANNEL_PERMISSIONS, user, context: guild, overwrites: channel.permissionOverwrites, roles: GuildRoleStore.getUnsafeMutableRoles(guild.id) };
           const can = PermissionUtilsAll.can;
           PermissionUtilsAll;
           canResult = can(obj2);

@@ -1,31 +1,31 @@
-// Module ID: 15317
-// Function ID: 15318
+// Module ID: 15797
+// Function ID: 15798
 // Name: AndroidMessageNotificationsSetting
-// Dependencies: [15305, 7634, 558, 576, 1369, 11129, 1126, 14290, 2819, 15311, 2]
+// Dependencies: [15785, 7988, 558, 576, 1382, 10664, 1126, 14710, 2894, 15791, 2]
 // Exports: useAndroidMessageNotificationsSettingValue
 
-// Module 15317 (AndroidMessageNotificationsSetting)
+// Module 15797 (AndroidMessageNotificationsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef2819 from "module_2819" /* 2819 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14290 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15311 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15305 */;
+import _modDef2894 from "module_2894" /* 2894 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14710 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15791 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15785 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11129 */;
+import SettingBuilders_mod from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let setAndroidMessageNotificationsEnabled;
 let tmp;
-const PlatformUtils = tmp(1369);
+const PlatformUtils = tmp(1382);
 ({ useAndroidMessageNotificationsEnabled: c3, setAndroidMessageNotificationsEnabled } = AndroidNotificationSettingsStore);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasAndroidMessageNotificationsSetting() {
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
@@ -40,21 +40,21 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function useHasAndroidMessageNotificationsSetting() {
   const tmp = _false();
   const obj = PlatformUtils;
   const isAndroidResult = obj.isAndroid() && null != tmp;
   return isAndroidResult;
 });
-const fn = () => {
+function useAndroidMessageNotificationsSettingValue() {
   let flag = _false();
   if (flag == null) {
     flag = false;
   }
   return flag;
-};
+}
 let closure_4 = tmp4;
-let obj = { useValue: fn, onValueChange: setAndroidMessageNotificationsEnabled };
+let obj = { useValue: useAndroidMessageNotificationsSettingValue, onValueChange: setAndroidMessageNotificationsEnabled };
 let SettingBuilders = SettingBuilders_mod;
 const createToggle = SettingBuilders.createToggle;
 const obj2 = {
@@ -79,11 +79,11 @@ const createToggle2 = SettingBuilders.createToggle;
 const obj3 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2819.odJXYJ);
+    return intl.string(_modDef2894.odJXYJ);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef2819["+jwUmI"]);
+    return intl.string(_modDef2894["+jwUmI"]);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
@@ -100,6 +100,6 @@ const toggle2 = createToggle2(obj3);
 const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/AndroidMessageNotificationsSetting.tsx");
 
 export default toggle;
-export const useAndroidMessageNotificationsSettingValue = fn;
+export { useAndroidMessageNotificationsSettingValue };
 export const useHasAndroidMessageNotificationsSetting = tmp4;
 export const RedesignAndroidMessageNotificationsSetting = toggle2;

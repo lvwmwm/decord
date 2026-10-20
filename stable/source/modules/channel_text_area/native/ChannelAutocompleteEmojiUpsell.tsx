@@ -1,34 +1,34 @@
-// Module ID: 12025
-// Function ID: 12026
+// Module ID: 12098
+// Function ID: 12099
 // Name: ChannelAutocompleteEmojiUpsell
-// Dependencies: [19, 17, 1380, 21, 4890, 587, 558, 576, 5974, 1402, 1126, 4886, 2]
+// Dependencies: [19, 17, 1393, 21, 5092, 587, 558, 576, 6157, 1415, 1126, 5088, 2]
 
-// Module 12025 (ChannelAutocompleteEmojiUpsell)
+// Module 12098 (ChannelAutocompleteEmojiUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import FastImageDefault from "FastImage" /* 5974 */;
+import EmojiConstants from "EmojiConstants" /* 1393 */;
+import FastImageDefault from "FastImage" /* 6157 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, results;
+let _require;
 
 let hasOwnProperty;
 let metroRequire;
 let size;
 let tmp3;
-const AvatarUtilsDefault = tmp3(1402);
+const AvatarUtilsDefault = tmp3(1415);
 const View = react_native.View;
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { upsell: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, title: { lineHeight: 16, flex: 1 }, emojis: { height: 28 }, emojiWrapper: size, emoji: { width: 16, height: 16 } };
 size = { position: "absolute", width: 28, height: 28, padding: 2, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 2, borderRadius: 14, borderColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, alignItems: "center", justifyContent: "center" };
 let closure_7 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((results) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelAutocompleteEmojiUpsell(results) {
   let arr2;
   let closure_0;
   let items;
@@ -165,7 +165,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((results) => {
   cResult[6] = tmp4.emojiWrapper;
   cResult[7] = fn;
   tmp6 = fn;
-}) : ((results) => {
+}) : (function ChannelAutocompleteEmojiUpsell(results) {
   let closure_0;
   let intl;
   let items;

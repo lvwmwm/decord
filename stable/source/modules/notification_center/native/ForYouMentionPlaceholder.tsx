@@ -1,15 +1,15 @@
-// Module ID: 16359
-// Function ID: 16360
+// Module ID: 16881
+// Function ID: 16882
 // Name: ForYouMentionPlaceholder
-// Dependencies: [19, 17, 4879, 21, 4890, 587, 558, 576, 504, 4612, 4891, 2]
+// Dependencies: [19, 17, 5081, 21, 5092, 587, 558, 576, 504, 4850, 5093, 2]
 
-// Module 16359 (ForYouMentionPlaceholder)
+// Module 16881 (ForYouMentionPlaceholder)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let closure_7 = createStyles(obj);
 let closure_8 = [70, 50];
 const __initData = { code: "function ForYouMentionPlaceholderTsx1(){const{reducedMotion,opacity}=this.__closure;return{opacity:reducedMotion?0.7:opacity.get()};}" };
 const __initData2 = { code: "function ForYouMentionPlaceholderTsx2(){const{reducedMotion,opacity}=this.__closure;return{opacity:reducedMotion?0.7:opacity.get()};}" };
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouMentionPlaceholder() {
   let Easing;
   let items1;
   let items2;
@@ -71,18 +71,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   require("timing");
   Easing = tmp(tmp2[9]).Easing;
   const result = set(withRepeat(withTiming(0.7, obj2), -1, true));
-  const fn2 = function w() {
-    let opacity = 0.7;
-    if (!stateFromStores) {
-      opacity = sharedValue.get();
-    }
-    return { opacity };
-  };
-  fn2.__closure = { reducedMotion: stateFromStores, opacity: sharedValue };
-  fn2.__workletHash = 8828208724188;
-  fn2.__initData = __initData;
   const tmpResult8 = require("ReanimatedRexport");
-  const animatedStyle = tmpResult8.useAnimatedStyle(fn2);
+  class T {
+    constructor() {
+      let opacity = 0.7;
+      if (!stateFromStores) {
+        opacity = sharedValue.get();
+      }
+      return { opacity };
+    }
+  }
+  T.__closure = { reducedMotion: stateFromStores, opacity: sharedValue };
+  T.__workletHash = 8828208724188;
+  T.__initData = __initData;
+  const animatedStyle = tmpResult8.useAnimatedStyle(T);
   if (cResult[2] === animatedStyle) {
     let tmp14;
     let tmp15;
@@ -182,7 +184,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp4.placeholder;
   cResult[4] = items4;
   tmp14 = items4;
-}) : (() => {
+}) : (function ForYouMentionPlaceholder() {
   let Easing;
   let items1;
   let items2;

@@ -1,17 +1,17 @@
-// Module ID: 17207
-// Function ID: 17208
+// Module ID: 17802
+// Function ID: 17803
 // Name: VoicePanelPIPStateContext
-// Dependencies: [19, 6571, 558, 2]
+// Dependencies: [19, 6763, 558, 2]
 // Exports: usePIPState
 
-// Module 17207 (VoicePanelPIPStateContext)
+// Module 17802 (VoicePanelPIPStateContext)
 import react from "react" /* 19 */;
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 6571 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 6763 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let ReanimatedHelperTypes;
-let size = { id: "enabled", mode: "toCharArray$esjava$1", width: false, height: null, containerHeight: "\u{1F468}\u{1F3FF}\u200D\u2764\uFE0F\u200D\u{1F468}\u{1F3FF}", showSecondaryPIP: true, scale: ReanimatedHelperTypes.createFakeSharedValue(1) };
+let size = { id: "end", mode: "toCharArray$esjava$1", width: false, height: null, containerHeight: "sku", showSecondaryPIP: null, scale: ReanimatedHelperTypes.createFakeSharedValue(1) };
 const createContext = react.createContext;
 ReanimatedHelperTypes = ReanimatedHelperTypes_mod;
 const context = createContext(size);
@@ -21,4 +21,6 @@ size = size_mod;
 const result1 = size.fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPStateContext.tsx");
 
 export const VoicePanelPIPStateContext = context;
-export const usePIPState = () => react.useContext(context);
+export const usePIPState = function usePIPState() {
+  return react.useContext(context);
+};

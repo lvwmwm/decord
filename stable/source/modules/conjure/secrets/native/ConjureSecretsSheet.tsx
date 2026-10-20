@@ -1,42 +1,39 @@
-// Module ID: 16727
-// Function ID: 16728
+// Module ID: 17313
+// Function ID: 17314
 // Name: ConjureSecretsSheet
-// Dependencies: [5, 32, 19, 17, 12904, 21, 4890, 587, 558, 576, 6471, 6688, 1126, 3723, 6644, 4886, 5594, 6098, 6701, 2]
+// Dependencies: [5, 32, 19, 17, 13223, 21, 5092, 587, 558, 576, 6665, 6886, 17314, 1126, 3849, 6839, 5088, 5379, 6286, 6899, 2]
 
-// Module 16727 (ConjureSecretsSheet)
+// Module 17313 (ConjureSecretsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13223 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12904 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c1, c3, closure_1, importDefault, projectId;
+let c1, c3, closure_1, importDefault;
 
-let c10;
 let c9;
 let metroImportAll;
-let metroImportDefault;
 let _slicedToArray = _slicedToArray_mod;
 const View = react_native.View;
-({ sendUserMessage: metroImportDefault, submitProjectSecrets: metroImportAll } = ConjureConnectionStore);
-({ jsx: c9, jsxs: c10 } = Fragment);
-let closure_11 = createStyles.createStyles((paddingBottom) => {
+const sendUserMessage = ConjureConnectionStore.sendUserMessage;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let closure_10 = createStyles.createStyles((paddingBottom) => {
   const obj = { container: { gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom }, copyRow: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 }, copyInfo: { flex: 1, gap: nativeDefault.space.PX_4 } };
   ({ gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom });
   ({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 });
   ({ flex: 1, gap: nativeDefault.space.PX_4 });
   return obj;
 });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSecretsSheet(projectId) {
   let closure_4;
   let closure_6;
-  let closure_7;
   let closure_8;
   let closure_9;
   let first;
@@ -60,7 +57,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   } else {
     first = cResult[0];
   }
-  const tmp4 = V(require("useSafeAreaInsetsKeyboardAware")(first).insets.bottom);
+  const tmp4 = C(require("useSafeAreaInsetsKeyboardAware")(first).insets.bottom);
   importDefault = tmp4;
   let obj3 = first2;
   ref = first2.useRef(null);
@@ -73,21 +70,21 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   }
   [first1, _slicedToArray] = obj3.useState(tmp6);
   [first2, closure_6] = obj3.useState(false);
-  [r10055, closure_7] = _slicedToArray(obj3.useState(false), 2);
+  [r10055, sendUserMessage] = _slicedToArray(obj3.useState(false), 2);
   const tmp11 = _slicedToArray(obj3.useState(false), 2);
   [closure_8, closure_9] = obj3.useState(null);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
+    class C {
       constructor(arg0) {
         let closure_0 = arg0;
         const obj = projectId(ref[11]);
         obj.copy(arg0, () => closure_9(closure_0));
       }
     }
-    cResult[2] = I;
-    tmp13 = I;
+    cResult[2] = C;
+    tmp13 = C;
   } else {
-    class I {
+    class C {
       constructor(arg0) {
         let closure_0 = arg0;
         const obj = projectId(ref[11]);
@@ -95,13 +92,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       }
     }
   }
-  I = tmp13;
+  C = tmp13;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class V {
+    class K {
       constructor(arg0, arg1) {
         let closure_0 = arg0;
         closure_1 = arg1;
-        closure_7(false);
+        sendUserMessage(false);
         closure_4((arg0) => {
           const obj = {};
           const merged = Object.assign(arg0);
@@ -110,14 +107,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         });
       }
     }
-    cResult[3] = V;
-    tmp14 = V;
+    cResult[3] = K;
+    tmp14 = K;
   } else {
-    class V {
+    class K {
       constructor(arg0, arg1) {
         let closure_0 = arg0;
         closure_1 = arg1;
-        closure_7(false);
+        sendUserMessage(false);
         closure_4((arg0) => {
           const obj = {};
           const merged = Object.assign(arg0);
@@ -127,13 +124,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       }
     }
   }
-  V = tmp14;
+  K = tmp14;
   if (cResult[4] === request.fields) {
-    class V {
+    class K {
       constructor(arg0, arg1) {
         let closure_0 = arg0;
         closure_1 = arg1;
-        closure_7(false);
+        sendUserMessage(false);
         closure_4((arg0) => {
           const obj = {};
           const merged = Object.assign(arg0);
@@ -145,11 +142,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     let closure_13 = tmp18;
     let closure_14 = tmp19;
     if (cResult[10] === arr.length > 0) {
-      class V {
+      class K {
         constructor(arg0, arg1) {
           let closure_0 = arg0;
           closure_1 = arg1;
-          closure_7(false);
+          sendUserMessage(false);
           closure_4((arg0) => {
             const obj = {};
             const merged = Object.assign(arg0);
@@ -159,7 +156,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         }
       }
     }
-    const tmp21 = first1;
     let closure_0 = first1(function*(arg0, value) {
       if (c3 === 2) {
         c3 = 3;
@@ -186,8 +182,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              const tmp39 = closure_1_13;
-              if (tmp39) {
+              const tmp41 = closure_1_13;
+              if (tmp41) {
                 const tmp13 = first2;
                 if (!tmp13) {
                   closure_1_6(true);
@@ -202,9 +198,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                                 }))
                   };
                   const _Object = Object;
+                  const submitProjectSecrets = tmp(ref[12]).submitProjectSecrets;
+                  const tmp20 = tmp(ref[12]);
                   c1 = 2;
                   c3 = 1;
-                  const obj5 = { value: closure_2_8(tmp, obj4), done: false };
+                  const obj5 = { value: submitProjectSecrets(tmp, obj4), done: false };
                   return obj5;
                 }
               }
@@ -227,17 +225,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           } else {
             let UGqnoV;
             ref = 0;
-            const intl = tmp(ref[12]).intl;
+            const intl = tmp(ref[13]).intl;
             const string = intl.string;
-            const tmp37 = closure_2_1(ref[13]);
-            const tmp29 = closure_2_7;
-            const tmp30 = tmp;
+            const tmp39 = closure_2_1(ref[14]);
+            const tmp31 = sendUserMessage;
+            const tmp32 = tmp;
             if (closure_1_14) {
-              UGqnoV = tmp37.sMQt5O;
+              UGqnoV = tmp39.sMQt5O;
             } else {
-              UGqnoV = tmp37.UGqnoV;
+              UGqnoV = tmp39.UGqnoV;
             }
-            tmp29(tmp30, string(UGqnoV));
+            tmp31(tmp32, string(UGqnoV));
             const current = ref.current;
             if (current != null) {
               current.closeActionSheet();
@@ -245,44 +243,45 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           }
           c3 = 3;
           return { value: "IconComponent", done: null };
-        } catch (tmp21) {
+        } catch (tmp23) {
           if (0 === ref) {
             c3 = 3;
-            throw tmp21;
+            throw tmp23;
           } else {
             c1 = 1;
           }
         }
       }
     });
-    const fn = function() {
+    function t6() {
       return closure_0(...arguments);
-    };
+    }
     cResult[10] = arr.length > 0;
     cResult[11] = arr;
     cResult[12] = arr.length < request.fields.length;
     cResult[13] = projectId;
     cResult[14] = first2;
     cResult[15] = first1;
-    cResult[16] = fn;
+    cResult[16] = t6;
+    let tmp20 = t6;
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    class X {
+    class G {
       constructor(name) {
         return name.name;
       }
     }
-    cResult[7] = X;
-    tmp15 = X;
+    cResult[7] = G;
+    tmp15 = G;
   } else {
-    class X {
+    class G {
       constructor(name) {
         return name.name;
       }
     }
   }
   if (cResult[8] !== first1) {
-    class J {
+    class X {
       constructor(arg0) {
         let str = first1[arg0];
         if (str == null) {
@@ -292,10 +291,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       }
     }
     cResult[8] = first1;
-    cResult[9] = J;
-    tmp16 = J;
+    cResult[9] = X;
+    tmp16 = X;
   } else {
-    class J {
+    class X {
       constructor(arg0) {
         let str = first1[arg0];
         if (str == null) {
@@ -311,11 +310,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   cResult[4] = request.fields;
   cResult[5] = first1;
   cResult[6] = found;
-}) : ((projectId) => {
+}) : (function ConjureSecretsSheet(projectId) {
   let BottomSheetTitleHeader;
   let _undefined;
   let _undefined2;
-  let _undefined22;
+  let _undefined3;
   let c7;
   let c8;
   let c9;
@@ -345,10 +344,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   c7 = undefined;
   c8 = undefined;
   c9 = undefined;
-  closure_11 = undefined;
+  closure_10 = undefined;
   let tmp = importDefault;
   let tmp2 = ref;
-  let tmp3 = closure_11(require("useSafeAreaInsetsKeyboardAware")({ includeKeyboardHeight: true }).insets.bottom);
+  let tmp3 = closure_10(require("useSafeAreaInsetsKeyboardAware")({ includeKeyboardHeight: true }).insets.bottom);
   importDefault = tmp3;
   ref = first1.useRef(null);
   [first, _slicedToArray] = first1.useState({});
@@ -357,12 +356,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   const tmp9 = _slicedToArray(first1.useState(false), 2);
   [c8, c9] = _slicedToArray(first1.useState(null), 2);
   const tmp11 = _slicedToArray(first1.useState(null), 2);
-  let closure_10 = first1.useCallback((arg0) => {
+  closure_10 = first1.useCallback((arg0) => {
     let closure_0 = arg0;
     const obj = projectId(ref[11]);
     obj.copy(arg0, () => c9(closure_0));
   }, []);
-  closure_11 = first1.useCallback((arg0, arg1) => {
+  let closure_11 = first1.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     closure_1 = arg1;
     _undefined(false);
@@ -415,8 +414,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            const tmp39 = closure_13;
-            if (tmp39) {
+            const tmp41 = closure_13;
+            if (tmp41) {
               const tmp13 = first1;
               if (!tmp13) {
                 closure_6(true);
@@ -431,9 +430,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                               }))
                 };
                 const _Object = Object;
+                const submitProjectSecrets = tmp(ref[12]).submitProjectSecrets;
+                const tmp20 = tmp(ref[12]);
                 c1 = 2;
                 c3 = 1;
-                const obj5 = { value: _undefined2(projectId, obj4), done: false };
+                const obj5 = { value: submitProjectSecrets(projectId, obj4), done: false };
                 return obj5;
               }
             }
@@ -456,17 +457,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         } else {
           let UGqnoV;
           ref = 0;
-          const intl = tmp(ref[12]).intl;
+          const intl = tmp(ref[13]).intl;
           const string = intl.string;
-          const tmp37 = c1(ref[13]);
-          const tmp29 = _undefined;
-          const tmp30 = closure_128_0;
+          const tmp39 = c1(ref[14]);
+          const tmp31 = _undefined;
+          const tmp32 = closure_128_0;
           if (closure_128_14) {
-            UGqnoV = tmp37.sMQt5O;
+            UGqnoV = tmp39.sMQt5O;
           } else {
-            UGqnoV = tmp37.UGqnoV;
+            UGqnoV = tmp39.UGqnoV;
           }
-          tmp29(tmp30, string(UGqnoV));
+          tmp31(tmp32, string(UGqnoV));
           const current = closure_128_2.current;
           if (current != null) {
             current.closeActionSheet();
@@ -474,43 +475,43 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         }
         c3 = 3;
         return { value: "IconComponent", done: null };
-      } catch (tmp21) {
+      } catch (tmp23) {
         if (0 === ref) {
           c3 = 3;
-          throw tmp21;
+          throw tmp23;
         } else {
           c1 = 1;
         }
       }
     }
   }), items);
-  let obj = { ref, startExpanded: true, keyboardShouldPersistTaps: "handled", header: c9(BottomSheetTitleHeader, obj2), children: tmp17(tmp18, obj3) };
-  const ActionSheet = projectId(ref[18]).ActionSheet;
-  obj2 = { title: intl.string(require("module_3723").TuMGZp) };
-  BottomSheetTitleHeader = projectId(ref[14]).BottomSheetTitleHeader;
-  intl = projectId(ref[12]).intl;
+  let obj = { ref, startExpanded: true, keyboardShouldPersistTaps: "handled", header: c8(BottomSheetTitleHeader, obj2), children: tmp17(tmp18, obj3) };
+  const ActionSheet = projectId(ref[19]).ActionSheet;
+  obj2 = { title: intl.string(require("module_3849").TuMGZp) };
+  BottomSheetTitleHeader = projectId(ref[15]).BottomSheetTitleHeader;
+  intl = projectId(ref[13]).intl;
   obj3 = { style: tmp3.container, children: items1 };
   let tmp15Result = null;
-  tmp17 = closure_10;
+  tmp17 = c9;
   tmp18 = closure_6;
   if (null != request.note) {
     let str = "";
     tmp15Result = null;
     if ("" !== request.note) {
       let obj4 = { variant: "text-sm/normal", color: "text-default", children: request.note };
-      tmp15Result = tmp15(tmp16(tmp2[15]).Text, obj4);
+      tmp15Result = tmp15(tmp16(tmp2[16]).Text, obj4);
     }
   }
   items1 = [tmp15Result, , , , , , ];
-  let obj5 = { variant: "text-xs/normal", color: "text-muted", children: intl2.string(tmp(tmp2[13]).jgDBJZ) };
-  const Text = tmp16(tmp2[15]).Text;
-  intl2 = tmp16(tmp2[12]).intl;
-  items1[1] = c9(Text, obj5);
+  let obj5 = { variant: "text-xs/normal", color: "text-muted", children: intl2.string(tmp(tmp2[14]).jgDBJZ) };
+  const Text = tmp16(tmp2[16]).Text;
+  intl2 = tmp16(tmp2[13]).intl;
+  items1[1] = c8(Text, obj5);
   let tmp15Result3 = null;
   if (request.fields.length > 1) {
-    let obj6 = { variant: "text-xs/normal", color: "text-muted", children: intl3.string(tmp(tmp2[13])["La+pe4"]) };
-    const Text2 = tmp16(tmp2[15]).Text;
-    intl3 = tmp16(tmp2[12]).intl;
+    let obj6 = { variant: "text-xs/normal", color: "text-muted", children: intl3.string(tmp(tmp2[14])["La+pe4"]) };
+    const Text2 = tmp16(tmp2[16]).Text;
+    intl3 = tmp16(tmp2[13]).intl;
     tmp15Result3 = tmp15(Text2, obj6);
   }
   items1[2] = tmp15Result3;
@@ -526,20 +527,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     items = [, ];
     const obj = { style: closure_1.copyRow, children: items1 };
     const obj3 = { variant: "text-xs/semibold", color: "text-muted", children: children.label };
-    items[0] = _undefined22(projectId(ref[15]).Text, obj3);
+    items[0] = _undefined2(projectId(ref[16]).Text, obj3);
     const obj4 = { variant: "text-xs/normal", color: "text-default", children: children.value };
-    items[1] = _undefined22(projectId(ref[15]).Text, obj4);
-    items1 = [closure_10(closure_6, obj2), ];
-    const Button = projectId(ref[16]).Button;
-    const intl = projectId(ref[12]).intl;
+    items[1] = _undefined2(projectId(ref[16]).Text, obj4);
+    items1 = [_undefined3(closure_6, obj2), ];
+    const Button = projectId(ref[17]).Button;
+    const intl = projectId(ref[13]).intl;
     const string = intl.string;
-    const tmp = closure_10;
+    const tmp = _undefined3;
     const tmp2 = closure_6;
-    const tmp3 = _undefined22;
-    if (c8 === children.value) {
-      OpuAlK = tmp4(tmp5[12]).t.t5VZ88;
+    const tmp3 = _undefined2;
+    if (_undefined2 === children.value) {
+      OpuAlK = tmp4(tmp5[13]).t.t5VZ88;
     } else {
-      OpuAlK = tmp4(tmp5[12]).t.OpuAlK;
+      OpuAlK = tmp4(tmp5[13]).t.OpuAlK;
     }
     const obj5 = {
       variant: "secondary",
@@ -570,8 +571,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       disabled: first1
     };
     hint = undefined;
-    const TextInput = projectId(ref[17]).TextInput;
-    const tmp = c9;
+    const TextInput = projectId(ref[18]).TextInput;
+    const tmp = c8;
     if (null != label.hint) {
       if ("" !== label.hint) {
         hint = label.hint;
@@ -585,19 +586,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   });
   let tmp15Result4 = null;
   if (tmp10) {
-    const obj7 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl4.string(tmp(tmp2[13]).IrMuew) };
-    const Text3 = tmp16(tmp2[15]).Text;
-    intl4 = tmp16(tmp2[12]).intl;
+    const obj7 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl4.string(tmp(tmp2[14]).IrMuew) };
+    const Text3 = tmp16(tmp2[16]).Text;
+    intl4 = tmp16(tmp2[13]).intl;
     tmp15Result4 = tmp15(Text3, obj7);
   }
   items1[5] = tmp15Result4;
-  const obj8 = { text: intl5.string(tmp(tmp2[13]).DUdtms), variant: "primary", loading: first1, disabled: found.length <= 0, onPress: callback };
-  let Button = tmp16(tmp2[16]).Button;
-  intl5 = tmp16(tmp2[12]).intl;
-  items1[6] = c9(Button, obj8);
-  return c9(ActionSheet, obj);
+  const obj8 = { text: intl5.string(tmp(tmp2[14]).DUdtms), variant: "primary", loading: first1, disabled: found.length <= 0, onPress: callback };
+  let Button = tmp16(tmp2[17]).Button;
+  intl5 = tmp16(tmp2[13]).intl;
+  items1[6] = c8(Button, obj8);
+  return c8(ActionSheet, obj);
 });
 const result = size.fileFinishedImporting("modules/conjure/secrets/native/ConjureSecretsSheet.tsx");
 
-export default tmp4;
+export default tmp3;
 export const CONJURE_SECRETS_SHEET_KEY = "ConjureSecretsSheet";

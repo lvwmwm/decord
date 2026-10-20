@@ -1,23 +1,23 @@
-// Module ID: 9278
-// Function ID: 9279
+// Module ID: 8648
+// Function ID: 8649
 // Name: GuildEventsListActionSheet
-// Dependencies: [19, 17, 4905, 2057, 1085, 5072, 21, 4890, 558, 576, 9171, 9174, 1126, 9195, 6644, 9160, 9271, 9279, 1252, 5590, 6605, 5973, 9467, 6645, 2]
+// Dependencies: [19, 17, 6035, 2071, 1085, 5967, 21, 5092, 558, 576, 8649, 8530, 1126, 8558, 6839, 8650, 8513, 8509, 1265, 5396, 6800, 6161, 8653, 6840, 2]
 
-// Module 9278 (GuildEventsListActionSheet)
+// Module 8648 (GuildEventsListActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
-import ReadStateConstants from "ReadStateConstants" /* 5072 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6605 */;
-import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 9171 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9174 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9271 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 9279 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
+import ReadStateConstants from "ReadStateConstants" /* 5967 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6800 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8509 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8513 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8530 */;
+import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 8649 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
-import createStyles from "createStyles" /* 4890 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ const ReadStateTypes = ReadStateConstants.ReadStateTypes;
 const jsx = Fragment.jsx;
 let closure_10 = createStyles.createStyles({ container: { flex: 1 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventsListHeader(arg0) {
   let closure_1;
   let eventCount;
   let guild;
@@ -74,7 +74,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         return tmp11;
       }
-      const tmp13 = jsx(tmp(6644).BottomSheetTitleHeader, { title: tmp6, trailing: tmp8 });
+      const tmp13 = jsx(tmp(6839).BottomSheetTitleHeader, { title: tmp6, trailing: tmp8 });
       cResult[8] = tmp6;
       cResult[9] = tmp8;
       cResult[10] = tmp13;
@@ -82,7 +82,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     let tmp9 = tmp4;
     if (tmp9) {
-      const ActionSheetHeaderPressableText = tmp(9195).ActionSheetHeaderPressableText;
+      const ActionSheetHeaderPressableText = tmp(8558).ActionSheetHeaderPressableText;
       const intl3 = tmp(1126).intl;
       const intl4 = tmp(1126).intl;
       tmp9 = <ActionSheetHeaderPressableText accessibilityLabel={intl3.string(tmp(1126).t["60lJ0C"])} label={intl4.string(tmp(1126).t.NzROFF)} onPress={tmp5} />;
@@ -92,10 +92,10 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = tmp9;
     tmp8 = tmp9;
   }
-  const fn = function n() {
+  function handleCreateEvent() {
     const tmp = closure_1;
     if (tmp) {
-      let obj = GuildScheduledEventModalActionCreators;
+      let obj = guild_scheduled_events_GuildScheduledEventModalActionCreators;
       let result = obj.closeGuildEventListActionSheet();
       const obj3 = {
         onClose() {
@@ -103,15 +103,15 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             const result = obj.openGuildEventListActionSheet(closure_1_0);
           }
       };
-      const obj2 = GuildScheduledEventModalActionCreators;
+      const obj2 = guild_scheduled_events_GuildScheduledEventModalActionCreators;
       const result1 = obj2.openCreateOrEditGuildEventModal(guild, obj3);
     }
-  };
+  }
   cResult[0] = tmp4;
   cResult[1] = guild;
-  cResult[2] = fn;
-  tmp5 = fn;
-}) : ((arg0) => {
+  cResult[2] = handleCreateEvent;
+  tmp5 = handleCreateEvent;
+}) : (function GuildEventsListHeader(arg0) {
   let closure_1;
   let eventCount;
   let formatToPlainStringResult;
@@ -122,7 +122,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp = dependencyMap;
   let tmp3Result = useCanCreateAnEventDefault(guild.id);
   importDefault = tmp3Result;
-  const BottomSheetTitleHeader = guild(6644).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = guild(6839).BottomSheetTitleHeader;
   if (eventCount > 0) {
     const intl2 = tmp4(1126).intl;
     let obj = { count: eventCount };
@@ -136,10 +136,10 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let obj3 = {
       accessibilityLabel: intl3.string(guild(1126).t["60lJ0C"]),
       label: intl4.string(guild(1126).t.NzROFF),
-      onPress() {
+      onPress: function handleCreateEvent() {
           const tmp = closure_1;
           if (tmp) {
-            let obj = GuildScheduledEventModalActionCreators;
+            let obj = guild_scheduled_events_GuildScheduledEventModalActionCreators;
             let result = obj.closeGuildEventListActionSheet();
             const obj3 = {
               onClose() {
@@ -147,12 +147,12 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   const result = obj.openGuildEventListActionSheet(closure_1_0);
                 }
             };
-            const obj2 = GuildScheduledEventModalActionCreators;
+            const obj2 = guild_scheduled_events_GuildScheduledEventModalActionCreators;
             const result1 = obj2.openCreateOrEditGuildEventModal(guild, obj3);
           }
         }
     };
-    const ActionSheetHeaderPressableText = tmp4(9195).ActionSheetHeaderPressableText;
+    const ActionSheetHeaderPressableText = tmp4(8558).ActionSheetHeaderPressableText;
     intl3 = tmp4(1126).intl;
     intl4 = tmp4(1126).intl;
     tmp3Result = tmp3(ActionSheetHeaderPressableText, obj3);
@@ -160,14 +160,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return jsx(BottomSheetTitleHeader, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventsListActionSheet(guild) {
   let arr;
   const tmp = guild;
   let obj = guild(576);
   const cResult = obj.c(31);
   guild = guild.guild;
   const tmp4 = arr;
-  arr = arr(9160)(guild.id);
+  arr = arr(8650)(guild.id);
   closure_10();
   if (cResult[0] !== guild.id) {
     cResult[0] = guild.id;
@@ -185,15 +185,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     const effect = obj2.useEffect(tmp10, tmp11);
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function p() {
+      const fn2 = function p() {
         const obj = guild(dependencyMap[11]);
         const result = obj.closeGuildEventListActionSheet();
       };
-      cResult[6] = fn;
+      cResult[6] = fn2;
     }
     if (cResult[7] !== guild) {
-      const fn2 = function y(eventId, recurrenceId) {
-        let obj = guild_scheduled_events_GuildScheduledEventModalActionCreators;
+      const fn3 = function y(eventId, recurrenceId) {
+        let obj = GuildScheduledEventModalActionCreators;
         const obj2 = {
           eventId: eventId.id,
           event: eventId,
@@ -206,7 +206,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         let result = obj.openGuildEventDetails(obj2);
       };
       cResult[7] = guild;
-      cResult[8] = fn2;
+      cResult[8] = fn3;
     }
     if (cResult[9] === arr.length) {
       let tmp16;
@@ -215,7 +215,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       if (cResult[10] === guild.id) {
         tmp16 = cResult[11];
       }
-      tmp4(5590)(tmp16);
+      tmp4(5396)(tmp16);
       if (cResult[12] !== guild.id) {
         class M {
           constructor() {
@@ -279,17 +279,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         }
       }
       const tmp27 = <closure_11 eventCount={arr.length} guild={guild} />;
-      class L {
-        constructor() {
-          let id;
-          const item = arr.forEach((id) => {
-            const obj = arr(dependencyMap[16]);
-            return obj.getGuildEventUserCounts(id.id, id.id, []);
-          });
-          let obj = GuildScheduledEventManagerDefault;
-          const guildEventsForCurrentUser = obj.getGuildEventsForCurrentUser(guild.id);
-        }
-      }
+      cResult[16] = arr.length;
       cResult[17] = guild;
       cResult[18] = tmp27;
     }
@@ -305,28 +295,26 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     cResult[11] = T;
     tmp16 = T;
   }
-  class L {
-    constructor() {
-      let id;
-      const item = arr.forEach((id) => {
-        const obj = arr(dependencyMap[16]);
-        return obj.getGuildEventUserCounts(id.id, id.id, []);
-      });
-      let obj = GuildScheduledEventManagerDefault;
-      const guildEventsForCurrentUser = obj.getGuildEventsForCurrentUser(guild.id);
-    }
-  }
+  const fn = function _() {
+    let id;
+    const item = arr.forEach((id) => {
+      const obj = arr(dependencyMap[16]);
+      return obj.getGuildEventUserCounts(id.id, id.id, []);
+    });
+    let obj = GuildScheduledEventManagerDefault;
+    const guildEventsForCurrentUser = obj.getGuildEventsForCurrentUser(guild.id);
+  };
   const items1 = [arr, guild.id];
   cResult[2] = arr;
   cResult[3] = guild.id;
-  cResult[4] = L;
+  cResult[4] = fn;
   cResult[5] = items1;
   tmp11 = items1;
-  tmp10 = L;
-}) : ((guild) => {
+  tmp10 = fn;
+}) : (function GuildEventsListActionSheet(guild) {
   guild = guild.guild;
   let events;
-  events = events(9160)(guild.id);
+  events = events(8650)(guild.id);
   const tmp = closure_10();
   const items = [events, guild.id];
   const ref = react.useRef(ReadStateStore.ackMessageId(guild.id, ReadStateTypes.GUILD_EVENT));
@@ -345,7 +333,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     const result = obj.closeGuildEventListActionSheet();
   }, []);
   const callback1 = react.useCallback((eventId, recurrenceId) => {
-    let obj = guild_scheduled_events_GuildScheduledEventModalActionCreators;
+    let obj = GuildScheduledEventModalActionCreators;
     const obj2 = {
       eventId: eventId.id,
       event: eventId,
@@ -357,7 +345,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     };
     let result = obj.openGuildEventDetails(obj2);
   }, items1);
-  events(5590)(() => {
+  events(5396)(() => {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { type, guild_id: guild.id, guild_events_count: arr.length };
     obj.track(AnalyticEvents.OPEN_MODAL, obj2);
@@ -369,11 +357,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       obj.ackGuildFeature(tmp.id, ReadStateTypes.GUILD_EVENT);
     }
   }, items2);
-  BottomSheet = guild(6645).BottomSheet;
+  BottomSheet = guild(6840).BottomSheet;
   const intl = guild(1126).intl;
   let obj2 = { eventCount: events.length, guild };
-  ({ inActionSheet: true, events, onPressEvent: callback1, onCloseAction: callback, guild, lastAckedId: events(5973)(ref) });
-  events(9467);
+  ({ inActionSheet: true, events, onPressEvent: callback1, onCloseAction: callback, guild, lastAckedId: events(6161)(ref) });
+  events(8653);
   return <BottomSheet showGradient scrollable={events.length > 0} startExpanded dismissAccessibilityLabel={intl.string(guild(1126).t.VSlyAn)} header={null}>{null}</BottomSheet>;
 });
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventsListActionSheet.tsx");

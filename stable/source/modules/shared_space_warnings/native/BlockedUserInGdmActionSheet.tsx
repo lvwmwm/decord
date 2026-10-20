@@ -1,40 +1,38 @@
-// Module ID: 13547
-// Function ID: 13548
+// Module ID: 18252
+// Function ID: 18253
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 2051, 1377, 13548, 1085, 21, 4890, 587, 4886, 5042, 1126, 558, 576, 504, 1375, 1188, 11435, 10648, 4792, 4812, 1252, 4854, 13549, 4903, 6701, 9804, 6074, 5993, 5594, 2]
+// Dependencies: [19, 17, 2065, 1390, 14033, 1085, 21, 5092, 587, 5088, 5409, 1126, 558, 576, 504, 1388, 1200, 11382, 10281, 6868, 5046, 1265, 5056, 18253, 7015, 6899, 6157, 10402, 6265, 6180, 5379, 2]
 
-// Module 13547 (BlockedUserInGdmActionSheet)
+// Module 18252 (BlockedUserInGdmActionSheet)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl7 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4792 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4812 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
-import TableRow2 from "TableRow" /* 5993 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 13549 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
+import TableRow2 from "TableRow" /* 6180 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 6868 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 18253 */;
 import react_mod from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1377 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 13548 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import UserStore from "UserStore" /* 1390 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 14033 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, userIds;
+let dependencyMap;
 
-let c9;
+let c10;
 let closure_12;
-let closure_4;
-let hasOwnProperty;
-let map1;
 let metroImportAll;
+let metroImportDefault;
 let obj2;
 let obj3;
 let unpackModuleId;
@@ -57,7 +55,7 @@ function getUserCalloutRowText(arg0) {
           const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
-          return unpackModuleId(Text, obj);
+          return authStore(Text, obj);
         },
       usernameHook2() {
           let obj2;
@@ -66,7 +64,7 @@ function getUserCalloutRowText(arg0) {
           tmp = closure_2[1];
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
-          return unpackModuleId(Text, obj);
+          return authStore(Text, obj);
         },
       numberOfOtherUsers: totalUsers - calledOutUserIds.length
     };
@@ -80,7 +78,7 @@ function getUserCalloutRowText(arg0) {
           const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
-          return unpackModuleId(Text, obj);
+          return authStore(Text, obj);
         },
       usernameHook2() {
           let obj2;
@@ -89,7 +87,7 @@ function getUserCalloutRowText(arg0) {
           tmp = closure_2[1];
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
-          return unpackModuleId(Text, obj);
+          return authStore(Text, obj);
         }
     };
     formatResult = intl3.format(intl7.t["67ZE+9"], obj3);
@@ -102,7 +100,7 @@ function getUserCalloutRowText(arg0) {
           const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
-          return unpackModuleId(Text, obj);
+          return authStore(Text, obj);
         },
       usernameHook2() {
           let obj2;
@@ -111,7 +109,7 @@ function getUserCalloutRowText(arg0) {
           tmp = closure_2[1];
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
-          return unpackModuleId(Text, obj);
+          return authStore(Text, obj);
         }
     };
     formatResult = intl2.format(intl7.t.veV4IN, obj4);
@@ -125,7 +123,7 @@ function getUserCalloutRowText(arg0) {
           const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
-          return unpackModuleId(Text, obj);
+          return authStore(Text, obj);
         }
     };
     formatResult = intl.format(intl7.t["4WHCtq"], obj);
@@ -149,11 +147,11 @@ function getBlockedUserInGDMTableRows(arg0) {
   let tmp28;
   ({ channelId, blockedUserIds, ignoredUserIds } = arg0);
   const channel = ChannelStore.getChannel(channelId);
-  const obj = { icon: unpackModuleId(CircleCheckIcon.CircleCheckIcon, {}), label: intl.string(intl7.t.RIMw54) };
+  const obj = { icon: authStore(CircleCheckIcon.CircleCheckIcon, {}), label: intl.string(intl7.t.RIMw54) };
   const tmp4 = ignoredUserIds.length > 0;
   intl = intl7.intl;
   const items = [obj, ];
-  const obj2 = { icon: unpackModuleId(CircleInformationIcon.CircleInformationIcon, {}), label: intl2.string(intl7.t.bejNWN) };
+  const obj2 = { icon: authStore(CircleInformationIcon.CircleInformationIcon, {}), label: intl2.string(intl7.t.bejNWN) };
   intl2 = intl7.intl;
   items[1] = obj2;
   if (blockedUserIds.length > 0) {
@@ -164,11 +162,11 @@ function getBlockedUserInGDMTableRows(arg0) {
       const obj3 = { userIds: substr, guildId: guild_id };
       guild_id = undefined;
       const unshift2 = items.unshift;
-      const tmp25 = closure_16;
+      const tmp25 = closure_15;
       if (channel != null) {
         guild_id = channel.guild_id;
       }
-      const obj4 = { icon: unpackModuleId(tmp25, obj3), label: tmp28(obj5) };
+      const obj4 = { icon: authStore(tmp25, obj3), label: tmp28(obj5) };
       obj5 = { calledOutUserIds: substr, totalUsers: items1.length, channelId, guildId: guild_id1 };
       guild_id1 = undefined;
       tmp28 = getUserCalloutRowText;
@@ -191,11 +189,11 @@ function getBlockedUserInGDMTableRows(arg0) {
   guild_id2 = undefined;
   const unshift = items.unshift;
   const tmp13 = blockedUserIds.length > 0 ? blockedUserIds.length : ignoredUserIds.length;
-  const tmp14 = closure_16;
+  const tmp14 = closure_15;
   if (channel != null) {
     guild_id2 = channel.guild_id;
   }
-  const obj7 = { icon: unpackModuleId(tmp14, obj6), label: tmp16(obj8) };
+  const obj7 = { icon: authStore(tmp14, obj6), label: tmp16(obj8) };
   obj8 = { calledOutUserIds: substr1, totalUsers: tmp13, channelId, guildId: guild_id3 };
   guild_id3 = undefined;
   tmp16 = getUserCalloutRowText;
@@ -205,18 +203,18 @@ function getBlockedUserInGDMTableRows(arg0) {
   unshift(obj7);
 }
 let react = react_mod;
-({ Image: closure_4, View: hasOwnProperty } = react_native);
-({ BlockWarningEngagements: metroImportAll, GdmWarningMedium: c9 } = SharedSpaceWarningConstants);
+const View = react_native.View;
+({ BlockWarningEngagements: metroImportDefault, GdmWarningMedium: metroImportAll } = SharedSpaceWarningConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
-({ jsx: unpackModuleId, Fragment: closure_12, jsxs: map1 } = Fragment);
+({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, headerImage: { alignSelf: "center", width: 73, height: 86 }, title: { textAlign: "center", alignSelf: "center" }, description: { textAlign: "center", alignSelf: "center" }, tableGroup: obj3, buttons: { gap: 8 }, icon: { display: "flex", justifyContent: "center", alignItems: "center", minWidth: 32 } };
 obj2 = { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, textAlign: "center" };
 createStyles = createStyles.createStyles;
 obj3 = { paddingVertical: nativeDefault.space.PX_24 };
-let closure_14 = createStyles(obj);
+let closure_13 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCalloutAvatars(userIds) {
   let first;
   let tmp6;
   let tmp7;
@@ -250,7 +248,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
   const tmpResult = userIds(504);
   const stateFromStoresArray = tmpResult.useStateFromStoresArray(first, tmp6, tmp7);
   if (cResult[4] !== stateFromStoresArray) {
-    const found = stateFromStoresArray.filter(tmp(1375).isNotNullish);
+    const found = stateFromStoresArray.filter(tmp(1388).isNotNullish);
     cResult[4] = stateFromStoresArray;
     cResult[5] = found;
     tmp8 = found;
@@ -278,11 +276,11 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
       }
     }
     if (null != tmp13) {
-      const obj2 = { user: tmp8[0], guildId, size: userIds(1188).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
-      const Avatar = tmp(1188).Avatar;
-      tmp19 = closure_11(Avatar, obj2);
+      const obj2 = { user: tmp8[0], guildId, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
+      const Avatar = tmp(1200).Avatar;
+      tmp19 = closure_10(Avatar, obj2);
     } else {
-      tmp19 = closure_11(tmp(11435).UserIcon, {});
+      tmp19 = closure_10(tmp(11382).UserIcon, {});
     }
     cResult[8] = guildId;
     cResult[9] = tmp13;
@@ -292,9 +290,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
   } else {
     let tmp10;
     if (cResult[12] !== tmp8) {
-      const obj3 = { users: tmp8, size: userIds(1188).AvatarSizes.REFRESH_MEDIUM_32 };
-      const FacepileGroupDMAvatar = tmp(10648).FacepileGroupDMAvatar;
-      const tmp12 = closure_11(FacepileGroupDMAvatar, obj3);
+      const obj3 = { users: tmp8, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32 };
+      const FacepileGroupDMAvatar = tmp(10281).FacepileGroupDMAvatar;
+      const tmp12 = closure_10(FacepileGroupDMAvatar, obj3);
       cResult[12] = tmp8;
       cResult[13] = tmp12;
       tmp10 = tmp12;
@@ -303,7 +301,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
     }
     return tmp10;
   }
-}) : ((userIds) => {
+}) : (function UserCalloutAvatars(userIds) {
   let tmp5;
   userIds = userIds.userIds;
   const guildId = userIds.guildId;
@@ -314,27 +312,27 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
     let user;
     return userIds.map((item) => user.getUser(item));
   }, items1);
-  const found = stateFromStoresArray.filter(userIds(1375).isNotNullish);
+  const found = stateFromStoresArray.filter(userIds(1388).isNotNullish);
   const obj2 = UserStore;
   if (1 === userIds.length) {
     let tmp8;
     if (null != obj2.getUser(userIds[0])) {
-      const obj3 = { user: found[0], guildId, size: userIds(1188).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
-      const Avatar = tmp(1188).Avatar;
-      tmp8 = closure_11(Avatar, obj3);
+      const obj3 = { user: found[0], guildId, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
+      const Avatar = tmp(1200).Avatar;
+      tmp8 = closure_10(Avatar, obj3);
     } else {
-      tmp8 = closure_11(tmp(11435).UserIcon, {});
+      tmp8 = closure_10(tmp(11382).UserIcon, {});
     }
     tmp5 = tmp8;
   } else {
-    const obj4 = { users: found, size: userIds(1188).AvatarSizes.REFRESH_MEDIUM_32 };
-    const FacepileGroupDMAvatar = tmp(10648).FacepileGroupDMAvatar;
-    tmp5 = closure_11(FacepileGroupDMAvatar, obj4);
+    const obj4 = { users: found, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32 };
+    const FacepileGroupDMAvatar = tmp(10281).FacepileGroupDMAvatar;
+    tmp5 = closure_10(FacepileGroupDMAvatar, obj4);
   }
   return tmp5;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserInGDMDescription(arg0) {
   let items;
   let items1;
   let items2;
@@ -363,7 +361,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         items = [first, "\n", ];
         const intl6 = tmp(1126).intl;
         items[2] = intl6.string(intl7.t["Bp2/ni"]);
-        const tmp31 = map1(closure_12, obj2);
+        const tmp31 = authStore2(unpackModuleId, obj2);
         cResult[1] = tmp31;
         tmp28 = tmp31;
       } else {
@@ -399,7 +397,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (cResult[5] !== tmp16) {
       const obj4 = { children: items1 };
       items1 = [tmp16, "\n", tmp19];
-      const tmp24 = map1(closure_12, obj4);
+      const tmp24 = authStore2(unpackModuleId, obj4);
       cResult[5] = tmp16;
       cResult[6] = tmp24;
       tmp21 = tmp24;
@@ -435,7 +433,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[10] !== tmp7) {
         const obj6 = { children: items2 };
         items2 = [tmp7, "\n", tmp10];
-        const tmp15 = map1(closure_12, obj6);
+        const tmp15 = authStore2(unpackModuleId, obj6);
         cResult[10] = tmp7;
         cResult[11] = tmp15;
         tmp12 = tmp15;
@@ -445,7 +443,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp6 = tmp12;
     }
   }
-}) : ((arg0) => {
+}) : (function BlockedUserInGDMDescription(arg0) {
   let items;
   let items1;
   let items2;
@@ -460,7 +458,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       items = [intl5.string(intl7.t.xbRNI3), "\n", ];
       const intl6 = intl7.intl;
       items[2] = intl6.string(intl7.t["Bp2/ni"]);
-      tmp3 = map1(closure_12, obj2);
+      tmp3 = authStore2(unpackModuleId, obj2);
     }
     return tmp3;
   }
@@ -471,7 +469,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items1 = [intl3.format(intl7.t.iKtixW, obj4), "\n", ];
     const intl4 = intl7.intl;
     items1[2] = intl4.string(intl7.t.SN1hrl);
-    tmp3 = map1(closure_12, obj3);
+    tmp3 = authStore2(unpackModuleId, obj3);
   } else {
     tmp3 = null;
     if (numOfIgnoredUsers > 0) {
@@ -481,12 +479,12 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       items2 = [intl.format(intl7.t["6IRwua"], obj5), "\n", ];
       const intl2 = intl7.intl;
       items2[2] = intl2.string(intl7.t["6AKLRt"]);
-      tmp3 = map1(closure_12, obj);
+      tmp3 = authStore2(unpackModuleId, obj);
     }
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserInGdmActionSheet(channelId) {
   let icon;
   let ignoredUserIds;
   let items;
@@ -497,7 +495,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   channelId = channelId.channelId;
   const blockedUserIds = channelId.blockedUserIds;
   ignoredUserIds = channelId.ignoredUserIds;
-  const tmp4 = closure_14();
+  const tmp4 = closure_13();
   react = tmp4;
   if (cResult[0] === blockedUserIds) {
     if (cResult[1] === channelId) {
@@ -517,7 +515,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           if (cResult[9] === blockedUserIds) {
             if (cResult[10] === channelId) {
               let tmp10;
-              let tmp21;
+              let tmp22;
               let tmp28;
               let tmp30;
               let tmp19;
@@ -528,6 +526,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
               let flag;
               let tmp15;
               let tmp14;
+              let tmp13;
               let tmp12;
               let tmp11;
               if (cResult[11] === ignoredUserIds) {
@@ -544,19 +543,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
                               if (cResult[21] === tmp4.title) {
                                 tmp11 = cResult[22];
                                 tmp12 = cResult[23];
-                                class T {
-                                  constructor() {
-                                    const obj = ActionSheetActionCreatorsDefault;
-                                    obj.hideActionSheet();
-                                    const obj2 = SharedSpacesWarningActionCreators;
-                                    const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                                    const obj3 = ChannelActionCreatorsDefault;
-                                    obj3.closePrivateChannel(channelId, true, true);
-                                    const obj4 = AnalyticsUtilsDefault;
-                                    const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                                    obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-                                  }
-                                }
+                                tmp13 = cResult[24];
                                 tmp14 = cResult[25];
                                 tmp15 = cResult[26];
                                 flag = cResult[27];
@@ -568,246 +555,132 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
                               }
                               if (cResult[49] === tmp11) {
                                 if (cResult[50] === flag2) {
-                                  let tmp44;
+                                  let tmp45;
                                   if (cResult[51] === tmp16) {
-                                    tmp44 = cResult[52];
+                                    tmp45 = cResult[52];
                                   }
                                   if (cResult[53] === tmp12) {
-                                    if (cResult[54] === tmp44) {
-                                      let tmp46;
-                                      let tmp49;
-                                      let tmp51;
+                                    if (cResult[54] === tmp45) {
+                                      let tmp48;
+                                      let tmp52;
                                       let tmp54;
-                                      let tmp56;
+                                      let tmp57;
+                                      let tmp59;
                                       if (cResult[55] === tmp17) {
-                                        tmp46 = cResult[56];
-                                      }
-                                      class T {
-                                        constructor() {
-                                          const obj = ActionSheetActionCreatorsDefault;
-                                          obj.hideActionSheet();
-                                          const obj2 = SharedSpacesWarningActionCreators;
-                                          const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                                          const obj3 = ChannelActionCreatorsDefault;
-                                          obj3.closePrivateChannel(channelId, true, true);
-                                          const obj4 = AnalyticsUtilsDefault;
-                                          const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                                          obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-                                        }
-                                      }
-                                      const buttons = tmp4.buttons;
-                                      if (cResult[57] === Symbol.for("react.memo_cache_sentinel")) {
-                                        const string2 = tmp(tmp2[11]).intl.string;
-                                        class T {
-                                          constructor() {
-                                            const obj = ActionSheetActionCreatorsDefault;
-                                            obj.hideActionSheet();
-                                            const obj2 = SharedSpacesWarningActionCreators;
-                                            const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                                            const obj3 = ChannelActionCreatorsDefault;
-                                            obj3.closePrivateChannel(channelId, true, true);
-                                            const obj4 = AnalyticsUtilsDefault;
-                                            const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                                            obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-                                          }
-                                        }
-                                        cResult[57] = tmp50;
-                                        tmp49 = tmp50;
-                                      } else {
-                                        tmp49 = cResult[57];
-                                      }
-                                      if (cResult[58] !== tmp10) {
-                                        let obj2 = { size: "lg", onPress: null, text: tmp49 };
-                                        class T {
-                                          constructor() {
-                                            const obj = ActionSheetActionCreatorsDefault;
-                                            obj.hideActionSheet();
-                                            const obj2 = SharedSpacesWarningActionCreators;
-                                            const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                                            const obj3 = ChannelActionCreatorsDefault;
-                                            obj3.closePrivateChannel(channelId, true, true);
-                                            const obj4 = AnalyticsUtilsDefault;
-                                            const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                                            obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-                                          }
-                                        }
-                                        const tmp53 = closure_11(channelId(ignoredUserIds[29]).Button, obj2);
-                                        cResult[58] = tmp10;
-                                        cResult[59] = tmp53;
-                                        tmp51 = tmp53;
-                                      } else {
-                                        tmp51 = cResult[59];
+                                        tmp48 = cResult[56];
                                       }
                                       const _Symbol2 = Symbol;
-                                      if (cResult[60] === Symbol.for("react.memo_cache_sentinel")) {
-                                        const string3 = tmp(tmp2[11]).intl.string;
-                                        class T {
-                                          constructor() {
-                                            const obj = ActionSheetActionCreatorsDefault;
-                                            obj.hideActionSheet();
-                                            const obj2 = SharedSpacesWarningActionCreators;
-                                            const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                                            const obj3 = ChannelActionCreatorsDefault;
-                                            obj3.closePrivateChannel(channelId, true, true);
-                                            const obj4 = AnalyticsUtilsDefault;
-                                            const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                                            obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-                                          }
-                                        }
-                                        cResult[60] = tmp55;
-                                        tmp54 = tmp55;
+                                      const buttons = tmp4.buttons;
+                                      if (cResult[57] === Symbol.for("react.memo_cache_sentinel")) {
+                                        const intl2 = tmp(tmp2[11]).intl;
+                                        const stringResult = intl2.string(channelId(ignoredUserIds[11]).t.I4q1kA);
+                                        cResult[57] = stringResult;
+                                        tmp52 = stringResult;
                                       } else {
-                                        tmp54 = cResult[60];
+                                        tmp52 = cResult[57];
+                                      }
+                                      if (cResult[58] !== tmp10) {
+                                        let obj2 = { size: "lg", onPress: tmp10, text: tmp52 };
+                                        const tmp56 = closure_10(channelId(ignoredUserIds[30]).Button, obj2);
+                                        cResult[58] = tmp10;
+                                        cResult[59] = tmp56;
+                                        tmp54 = tmp56;
+                                      } else {
+                                        tmp54 = cResult[59];
+                                      }
+                                      const _Symbol3 = Symbol;
+                                      if (cResult[60] === Symbol.for("react.memo_cache_sentinel")) {
+                                        const intl3 = tmp(tmp2[11]).intl;
+                                        const stringResult1 = intl3.string(channelId(ignoredUserIds[11]).t.DRJhmT);
+                                        cResult[60] = stringResult1;
+                                        tmp57 = stringResult1;
+                                      } else {
+                                        tmp57 = cResult[60];
                                       }
                                       if (cResult[61] !== tmp9) {
-                                        let obj3 = { size: "lg", variant: "secondary", onPress: null, text: tmp54 };
-                                        class T {
-                                          constructor() {
-                                            const obj = ActionSheetActionCreatorsDefault;
-                                            obj.hideActionSheet();
-                                            const obj2 = SharedSpacesWarningActionCreators;
-                                            const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                                            const obj3 = ChannelActionCreatorsDefault;
-                                            obj3.closePrivateChannel(channelId, true, true);
-                                            const obj4 = AnalyticsUtilsDefault;
-                                            const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                                            obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-                                          }
-                                        }
-                                        const tmp58 = closure_11(channelId(ignoredUserIds[29]).Button, obj3);
+                                        let obj3 = { size: "lg", variant: "secondary", onPress: tmp9, text: tmp57 };
+                                        const tmp61 = closure_10(channelId(ignoredUserIds[30]).Button, obj3);
                                         cResult[61] = tmp9;
-                                        cResult[62] = tmp58;
-                                        tmp56 = tmp58;
+                                        cResult[62] = tmp61;
+                                        tmp59 = tmp61;
                                       } else {
-                                        tmp56 = cResult[62];
+                                        tmp59 = cResult[62];
                                       }
                                       if (cResult[63] === tmp4.buttons) {
-                                        if (cResult[64] === tmp51) {
-                                          let tmp59;
-                                          if (cResult[65] === tmp56) {
-                                            tmp59 = cResult[66];
+                                        if (cResult[64] === tmp54) {
+                                          let tmp62;
+                                          if (cResult[65] === tmp59) {
+                                            tmp62 = cResult[66];
                                           }
                                           if (cResult[67] === tmp13) {
                                             if (cResult[68] === tmp15) {
-                                              if (cResult[69] === tmp46) {
-                                                if (cResult[70] === tmp59) {
+                                              if (cResult[69] === tmp48) {
+                                                if (cResult[70] === tmp62) {
                                                   if (cResult[71] === tmp18) {
-                                                    let tmp63;
+                                                    let tmp66;
                                                     if (cResult[72] === tmp19) {
-                                                      tmp63 = cResult[73];
+                                                      tmp66 = cResult[73];
                                                     }
                                                     if (cResult[74] === tmp14) {
                                                       if (cResult[75] === flag) {
-                                                        let tmp65;
-                                                        if (cResult[76] === tmp63) {
-                                                          tmp65 = cResult[77];
+                                                        let tmp69;
+                                                        if (cResult[76] === tmp66) {
+                                                          tmp69 = cResult[77];
                                                         }
-                                                        return tmp65;
+                                                        return tmp69;
                                                       }
                                                     }
-                                                    class T {
-                                                      constructor() {
-                                                        const obj = ActionSheetActionCreatorsDefault;
-                                                        obj.hideActionSheet();
-                                                        const obj2 = SharedSpacesWarningActionCreators;
-                                                        const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                                                        const obj3 = ChannelActionCreatorsDefault;
-                                                        obj3.closePrivateChannel(channelId, true, true);
-                                                        const obj4 = AnalyticsUtilsDefault;
-                                                        const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                                                        obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-                                                      }
-                                                    }
-                                                    let obj4 = { startExpanded: flag, children: tmp63 };
-                                                    const tmp66 = closure_11(tmp14, obj4);
+                                                    let obj4 = { startExpanded: flag, children: tmp66 };
+                                                    const tmp71 = closure_10(tmp14, obj4);
                                                     cResult[74] = tmp14;
                                                     cResult[75] = flag;
-                                                    cResult[76] = tmp63;
-                                                    cResult[77] = tmp66;
-                                                    tmp65 = tmp66;
+                                                    cResult[76] = tmp66;
+                                                    cResult[77] = tmp71;
+                                                    tmp69 = tmp71;
                                                   }
                                                 }
                                               }
                                             }
                                           }
-                                          class T {
-                                            constructor() {
-                                              const obj = ActionSheetActionCreatorsDefault;
-                                              obj.hideActionSheet();
-                                              const obj2 = SharedSpacesWarningActionCreators;
-                                              const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                                              const obj3 = ChannelActionCreatorsDefault;
-                                              obj3.closePrivateChannel(channelId, true, true);
-                                              const obj4 = AnalyticsUtilsDefault;
-                                              const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                                              obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-                                            }
-                                          }
                                           let obj5 = { style: tmp18, children: items };
-                                          items = [tmp19, tmp15, tmp46, tmp59];
-                                          const tmp64 = closure_13(tmp13, obj5);
+                                          items = [tmp19, tmp15, tmp48, tmp62];
+                                          const tmp68 = closure_12(tmp13, obj5);
                                           cResult[67] = tmp13;
                                           cResult[68] = tmp15;
-                                          cResult[69] = tmp46;
-                                          cResult[70] = tmp59;
+                                          cResult[69] = tmp48;
+                                          cResult[70] = tmp62;
                                           cResult[71] = tmp18;
                                           cResult[72] = tmp19;
-                                          cResult[73] = tmp64;
-                                          tmp63 = tmp64;
+                                          cResult[73] = tmp68;
+                                          tmp66 = tmp68;
                                         }
                                       }
                                       const obj6 = { style: buttons, children: items1 };
-                                      items1 = [tmp51, tmp56];
-                                      const tmp62 = closure_13(closure_5, obj6);
+                                      items1 = [tmp54, tmp59];
+                                      const tmp65 = closure_12(View, obj6);
                                       cResult[63] = tmp4.buttons;
-                                      cResult[64] = tmp51;
-                                      cResult[65] = tmp56;
-                                      cResult[66] = tmp62;
-                                      tmp59 = tmp62;
+                                      cResult[64] = tmp54;
+                                      cResult[65] = tmp59;
+                                      cResult[66] = tmp65;
+                                      tmp62 = tmp65;
                                     }
                                   }
-                                  class T {
-                                    constructor() {
-                                      const obj = ActionSheetActionCreatorsDefault;
-                                      obj.hideActionSheet();
-                                      const obj2 = SharedSpacesWarningActionCreators;
-                                      const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                                      const obj3 = ChannelActionCreatorsDefault;
-                                      obj3.closePrivateChannel(channelId, true, true);
-                                      const obj4 = AnalyticsUtilsDefault;
-                                      const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                                      obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-                                    }
-                                  }
-                                  const obj7 = { style: tmp17, children: tmp44 };
-                                  const tmp47 = closure_11(tmp12, obj7);
+                                  const obj7 = { style: tmp17, children: tmp45 };
+                                  const tmp50 = closure_10(tmp12, obj7);
                                   cResult[53] = tmp12;
-                                  cResult[54] = tmp44;
+                                  cResult[54] = tmp45;
                                   cResult[55] = tmp17;
-                                  cResult[56] = tmp47;
-                                  tmp46 = tmp47;
-                                }
-                              }
-                              class T {
-                                constructor() {
-                                  const obj = ActionSheetActionCreatorsDefault;
-                                  obj.hideActionSheet();
-                                  const obj2 = SharedSpacesWarningActionCreators;
-                                  const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                                  const obj3 = ChannelActionCreatorsDefault;
-                                  obj3.closePrivateChannel(channelId, true, true);
-                                  const obj4 = AnalyticsUtilsDefault;
-                                  const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                                  obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                                  cResult[56] = tmp50;
+                                  tmp48 = tmp50;
                                 }
                               }
                               const obj8 = { hasIcons: flag2, children: tmp16 };
-                              const tmp45 = closure_11(tmp11, obj8);
+                              const tmp47 = closure_10(tmp11, obj8);
                               cResult[49] = tmp11;
                               cResult[50] = flag2;
                               cResult[51] = tmp16;
-                              cResult[52] = tmp45;
-                              tmp44 = tmp45;
+                              cResult[52] = tmp47;
+                              tmp45 = tmp47;
                             }
                           }
                         }
@@ -816,84 +689,33 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
                   }
                 }
               }
-              class T {
-                constructor() {
-                  const obj = ActionSheetActionCreatorsDefault;
-                  obj.hideActionSheet();
-                  const obj2 = SharedSpacesWarningActionCreators;
-                  const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                  const obj3 = ChannelActionCreatorsDefault;
-                  obj3.closePrivateChannel(channelId, true, true);
-                  const obj4 = AnalyticsUtilsDefault;
-                  const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                  obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-                }
-              }
               const obj9 = { channelId, blockedUserIds, ignoredUserIds };
               const arr4 = getBlockedUserInGDMTableRows(obj9);
               const ActionSheet = tmp(tmp2[25]).ActionSheet;
               const container = tmp4.container;
               if (cResult[33] !== tmp4.headerImage) {
-                class T {
-                  constructor() {
-                    const obj = ActionSheetActionCreatorsDefault;
-                    obj.hideActionSheet();
-                    const obj2 = SharedSpacesWarningActionCreators;
-                    const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                    const obj3 = ChannelActionCreatorsDefault;
-                    obj3.closePrivateChannel(channelId, true, true);
-                    const obj4 = AnalyticsUtilsDefault;
-                    const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                    obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-                  }
-                }
-                tmp24[0] = blockedUserIds(ignoredUserIds[26]);
-                tmp24[1] = tmp4.headerImage;
-                const tmp26 = closure_11(closure_4, tmp24);
+                const obj10 = { source: blockedUserIds(ignoredUserIds[27]), style: tmp4.headerImage };
+                const tmp25 = blockedUserIds(ignoredUserIds[26]);
+                const tmp26 = closure_10(tmp25, obj10);
                 cResult[33] = tmp4.headerImage;
                 cResult[34] = tmp26;
-                tmp21 = tmp26;
+                tmp22 = tmp26;
               } else {
-                tmp21 = cResult[34];
+                tmp22 = cResult[34];
               }
               const _Symbol = Symbol;
               const title = tmp4.title;
               if (cResult[35] === Symbol.for("react.memo_cache_sentinel")) {
-                const string = tmp(tmp2[11]).intl.string;
-                class T {
-                  constructor() {
-                    const obj = ActionSheetActionCreatorsDefault;
-                    obj.hideActionSheet();
-                    const obj2 = SharedSpacesWarningActionCreators;
-                    const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                    const obj3 = ChannelActionCreatorsDefault;
-                    obj3.closePrivateChannel(channelId, true, true);
-                    const obj4 = AnalyticsUtilsDefault;
-                    const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                    obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-                  }
-                }
-                cResult[35] = tmp29;
-                tmp28 = tmp29;
+                const intl = tmp(tmp2[11]).intl;
+                const stringResult2 = intl.string(channelId(ignoredUserIds[11]).t["mwJJ+f"]);
+                cResult[35] = stringResult2;
+                tmp28 = stringResult2;
               } else {
                 tmp28 = cResult[35];
               }
               if (cResult[36] !== tmp4.title) {
-                const obj10 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: null, children: tmp28 };
-                class T {
-                  constructor() {
-                    const obj = ActionSheetActionCreatorsDefault;
-                    obj.hideActionSheet();
-                    const obj2 = SharedSpacesWarningActionCreators;
-                    const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                    const obj3 = ChannelActionCreatorsDefault;
-                    obj3.closePrivateChannel(channelId, true, true);
-                    const obj4 = AnalyticsUtilsDefault;
-                    const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                    obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-                  }
-                }
-                const tmp32 = closure_11(channelId(ignoredUserIds[9]).Text, obj10);
+                const obj11 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: title, children: tmp28 };
+                const tmp32 = closure_10(channelId(ignoredUserIds[9]).Text, obj11);
                 cResult[36] = tmp4.title;
                 cResult[37] = tmp32;
                 tmp30 = tmp32;
@@ -911,54 +733,42 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
                     tmp37 = cResult[43];
                   }
                   if (cResult[44] === tmp30) {
-                    let tmp39;
-                    let tmp42;
+                    let tmp40;
+                    let tmp43;
                     if (cResult[45] === tmp37) {
-                      tmp39 = cResult[46];
+                      tmp40 = cResult[46];
                     }
                     const tableGroup = tmp4.tableGroup;
-                    class T {
-                      constructor() {
-                        const obj = ActionSheetActionCreatorsDefault;
-                        obj.hideActionSheet();
-                        const obj2 = SharedSpacesWarningActionCreators;
-                        const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                        const obj3 = ChannelActionCreatorsDefault;
-                        obj3.closePrivateChannel(channelId, true, true);
-                        const obj4 = AnalyticsUtilsDefault;
-                        const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                        obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-                      }
-                    }
+                    const TableRowGroup = tmp(tmp2[28]).TableRowGroup;
                     if (cResult[47] !== tmp4.icon) {
-                      const fn3 = function j(arg0, arg1) {
-                        let label;
-                        let obj2;
-                        ({ icon, label } = arg0);
-                        const obj = { icon: unpackModuleId(hasOwnProperty, obj2), label };
-                        obj2 = { style: icon.icon, children: icon };
-                        const TableRow = TableRow2.TableRow;
-                        return unpackModuleId(TableRow, obj, arg1);
-                      };
-                      class T {
-                        constructor() {
-                          const obj = ActionSheetActionCreatorsDefault;
-                          obj.hideActionSheet();
-                          const obj2 = SharedSpacesWarningActionCreators;
-                          const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                          const obj3 = ChannelActionCreatorsDefault;
-                          obj3.closePrivateChannel(channelId, true, true);
-                          const obj4 = AnalyticsUtilsDefault;
-                          const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                          obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+                      class J {
+                        constructor(arg0, arg1) {
+                          let label;
+                          let obj2;
+                          ({ icon, label } = arg0);
+                          const obj = { icon: authStore(View, obj2), label };
+                          obj2 = { style: icon.icon, children: icon };
+                          const TableRow = TableRow2.TableRow;
+                          return authStore(TableRow, obj, arg1);
                         }
                       }
-                      cResult[48] = fn3;
-                      tmp42 = fn3;
+                      cResult[47] = tmp4.icon;
+                      cResult[48] = J;
+                      tmp43 = J;
                     } else {
-                      tmp42 = cResult[48];
+                      class J {
+                        constructor(arg0, arg1) {
+                          let label;
+                          let obj2;
+                          ({ icon, label } = arg0);
+                          const obj = { icon: authStore(View, obj2), label };
+                          obj2 = { style: icon.icon, children: icon };
+                          const TableRow = TableRow2.TableRow;
+                          return authStore(TableRow, obj, arg1);
+                        }
+                      }
                     }
-                    const mapped = arr4.map(tmp42);
+                    const mapped = arr4.map(tmp43);
                     cResult[13] = blockedUserIds;
                     cResult[14] = channelId;
                     cResult[15] = ignoredUserIds;
@@ -968,116 +778,89 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
                     cResult[19] = tmp4.icon;
                     cResult[20] = tmp4.tableGroup;
                     cResult[21] = tmp4.title;
-                    cResult[22] = tmp41;
-                    cResult[23] = closure_5;
-                    cResult[24] = closure_5;
+                    cResult[22] = TableRowGroup;
+                    cResult[23] = View;
+                    cResult[24] = View;
                     cResult[25] = ActionSheet;
-                    cResult[26] = tmp39;
+                    cResult[26] = tmp40;
                     cResult[27] = true;
                     cResult[28] = true;
                     cResult[29] = mapped;
                     cResult[30] = tableGroup;
                     cResult[31] = container;
-                    cResult[32] = tmp21;
-                    tmp19 = tmp21;
+                    cResult[32] = tmp22;
+                    tmp19 = tmp22;
                     tmp18 = container;
                     tmp17 = tableGroup;
                     tmp16 = mapped;
                     flag2 = true;
                     flag = true;
-                    tmp15 = tmp39;
+                    tmp15 = tmp40;
                     tmp14 = ActionSheet;
-                    tmp12 = tmp20;
-                    tmp11 = tmp41;
+                    tmp13 = tmp21;
+                    tmp12 = tmp21;
+                    tmp11 = TableRowGroup;
                   }
-                  class T {
-                    constructor() {
-                      const obj = ActionSheetActionCreatorsDefault;
-                      obj.hideActionSheet();
-                      const obj2 = SharedSpacesWarningActionCreators;
-                      const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                      const obj3 = ChannelActionCreatorsDefault;
-                      obj3.closePrivateChannel(channelId, true, true);
-                      const obj4 = AnalyticsUtilsDefault;
-                      const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                      obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-                    }
-                  }
-                  const obj11 = { children: items2 };
+                  const obj12 = { children: items2 };
                   items2 = [tmp30, tmp37];
-                  const tmp40 = closure_13(closure_5, obj11);
+                  const tmp42 = closure_12(View, obj12);
                   cResult[44] = tmp30;
                   cResult[45] = tmp37;
-                  cResult[46] = tmp40;
-                  tmp39 = tmp40;
+                  cResult[46] = tmp42;
+                  tmp40 = tmp42;
                 }
-                class T {
-                  constructor() {
-                    const obj = ActionSheetActionCreatorsDefault;
-                    obj.hideActionSheet();
-                    const obj2 = SharedSpacesWarningActionCreators;
-                    const result = obj2.dismissGdmBlockedUserWarning(channelId);
-                    const obj3 = ChannelActionCreatorsDefault;
-                    obj3.closePrivateChannel(channelId, true, true);
-                    const obj4 = AnalyticsUtilsDefault;
-                    const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-                    obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-                  }
-                }
-                const obj12 = { variant: "text-md/medium", color: "text-default", style: tmp4.description, children: tmp33 };
-                const tmp38 = closure_11(channelId(ignoredUserIds[9]).Text, obj12);
+                const obj13 = { variant: "text-md/medium", color: "text-default", style: tmp4.description, children: tmp33 };
+                const tmp39 = closure_10(channelId(ignoredUserIds[9]).Text, obj13);
                 cResult[41] = tmp4.description;
                 cResult[42] = tmp33;
-                cResult[43] = tmp38;
-                tmp37 = tmp38;
+                cResult[43] = tmp39;
+                tmp37 = tmp39;
               }
-              const obj13 = { numOfBlockedUsers: blockedUserIds.length, numOfIgnoredUsers: ignoredUserIds.length };
-              const tmp36 = closure_11(closure_17, obj13);
+              const obj14 = { numOfBlockedUsers: blockedUserIds.length, numOfIgnoredUsers: ignoredUserIds.length };
+              const tmp36 = closure_10(closure_16, obj14);
               cResult[38] = blockedUserIds.length;
               cResult[39] = ignoredUserIds.length;
               cResult[40] = tmp36;
               tmp33 = tmp36;
             }
           }
-          class T {
-            constructor() {
-              const obj = ActionSheetActionCreatorsDefault;
-              obj.hideActionSheet();
-              const obj2 = SharedSpacesWarningActionCreators;
-              const result = obj2.dismissGdmBlockedUserWarning(channelId);
-              const obj3 = ChannelActionCreatorsDefault;
-              obj3.closePrivateChannel(channelId, true, true);
-              const obj4 = AnalyticsUtilsDefault;
-              const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-              obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-            }
+          function handleDismissAndLeave() {
+            const obj = ActionSheetActionCreatorsDefault;
+            obj.hideActionSheet();
+            const obj2 = SharedSpacesWarningActionCreators;
+            const result = obj2.dismissGdmBlockedUserWarning(channelId);
+            const obj3 = ChannelActionCreatorsDefault;
+            obj3.closePrivateChannel(channelId, true, true);
+            const obj4 = AnalyticsUtilsDefault;
+            const obj5 = { action: metroImportDefault.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+            obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
           }
           cResult[9] = blockedUserIds;
           cResult[10] = channelId;
           cResult[11] = ignoredUserIds;
-          cResult[12] = T;
-          tmp10 = T;
+          cResult[12] = handleDismissAndLeave;
+          tmp10 = handleDismissAndLeave;
         }
       }
-      const fn2 = function u() {
+      function handleDismissAndStay() {
         const obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
         const obj2 = SharedSpacesWarningActionCreators;
         const result = obj2.dismissGdmBlockedUserWarning(channelId);
         const obj3 = AnalyticsUtilsDefault;
-        const obj4 = { action: metroImportAll.CLICK_TO_STAY, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+        const obj4 = { action: metroImportDefault.CLICK_TO_STAY, channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
         obj3.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj4);
-      };
+      }
       cResult[5] = blockedUserIds;
       cResult[6] = channelId;
       cResult[7] = ignoredUserIds;
-      cResult[8] = fn2;
-      tmp9 = fn2;
+      cResult[8] = handleDismissAndStay;
+      tmp9 = handleDismissAndStay;
     }
   }
-  const fn = function o() {
+  const fn = function s() {
     const obj = AnalyticsUtilsDefault;
-    const obj2 = { channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+    const obj2 = { channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
     obj.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_VIEWED, obj2);
   };
   const items3 = [channelId, blockedUserIds, ignoredUserIds];
@@ -1088,7 +871,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[4] = items3;
   tmp6 = items3;
   tmp5 = fn;
-}) : ((channelId) => {
+}) : (function BlockedUserInGdmActionSheet(channelId) {
   let TableRowGroup;
   let icon;
   let intl;
@@ -1103,49 +886,50 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   channelId = channelId.channelId;
   const blockedUserIds = channelId.blockedUserIds;
   const ignoredUserIds = channelId.ignoredUserIds;
-  const tmp = closure_14();
+  const tmp = closure_13();
   react = tmp;
   const items = [channelId, blockedUserIds, ignoredUserIds];
   const effect = react.useEffect(() => {
     const obj = AnalyticsUtilsDefault;
-    const obj2 = { channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+    const obj2 = { channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
     obj.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_VIEWED, obj2);
   }, items);
-  let obj = { startExpanded: true, children: closure_13(closure_5, obj2) };
+  let obj = { startExpanded: true, children: closure_12(View, obj2) };
   obj2 = { style: tmp.container, children: items1 };
-  let obj3 = { source: blockedUserIds(ignoredUserIds[26]), style: tmp.headerImage };
   const arr4 = getBlockedUserInGDMTableRows({ channelId, blockedUserIds, ignoredUserIds });
   const ActionSheet = channelId(ignoredUserIds[25]).ActionSheet;
-  items1 = [closure_11(closure_4, obj3), , , ];
+  let obj3 = { source: blockedUserIds(ignoredUserIds[27]), style: tmp.headerImage };
+  const tmp3 = blockedUserIds(ignoredUserIds[26]);
+  items1 = [closure_10(tmp3, obj3), , , ];
   let obj4 = { children: items2 };
   let obj5 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, children: intl.string(channelId(ignoredUserIds[11]).t["mwJJ+f"]) };
   const Text = channelId(ignoredUserIds[9]).Text;
   intl = channelId(ignoredUserIds[11]).intl;
-  items2 = [closure_11(Text, obj5), ];
-  const obj6 = { variant: "text-md/medium", color: "text-default", style: tmp.description, children: closure_11(closure_17, obj7) };
+  items2 = [closure_10(Text, obj5), ];
+  const obj6 = { variant: "text-md/medium", color: "text-default", style: tmp.description, children: closure_10(closure_16, obj7) };
   obj7 = { numOfBlockedUsers: blockedUserIds.length, numOfIgnoredUsers: ignoredUserIds.length };
   const Text2 = channelId(ignoredUserIds[9]).Text;
-  items2[1] = closure_11(Text2, obj6);
-  items1[1] = closure_13(closure_5, obj4);
-  const obj8 = { style: tmp.tableGroup, children: closure_11(TableRowGroup, obj9) };
+  items2[1] = closure_10(Text2, obj6);
+  items1[1] = closure_12(View, obj4);
+  const obj8 = { style: tmp.tableGroup, children: closure_10(TableRowGroup, obj9) };
   obj9 = {
     hasIcons: true,
     children: arr4.map((item, index) => {
       let label;
       let obj2;
       ({ icon, label } = item);
-      const obj = { icon: unpackModuleId(hasOwnProperty, obj2), label };
+      const obj = { icon: authStore(View, obj2), label };
       obj2 = { style: icon.icon, children: icon };
       const TableRow = TableRow2.TableRow;
-      return unpackModuleId(TableRow, obj, index);
+      return authStore(TableRow, obj, index);
     })
   };
-  TableRowGroup = channelId(ignoredUserIds[27]).TableRowGroup;
-  items1[2] = closure_11(closure_5, obj8);
+  TableRowGroup = channelId(ignoredUserIds[28]).TableRowGroup;
+  items1[2] = closure_10(View, obj8);
   const obj10 = { style: tmp.buttons, children: items3 };
   const obj11 = {
     size: "lg",
-    onPress() {
+    onPress: function handleDismissAndLeave() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
       const obj2 = SharedSpacesWarningActionCreators;
@@ -1153,35 +937,35 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       const obj3 = ChannelActionCreatorsDefault;
       obj3.closePrivateChannel(channelId, true, true);
       const obj4 = AnalyticsUtilsDefault;
-      const obj5 = { action: metroImportAll.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+      const obj5 = { action: metroImportDefault.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
       obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
     },
     text: intl2.string(channelId(ignoredUserIds[11]).t.I4q1kA)
   };
-  const Button = channelId(ignoredUserIds[29]).Button;
+  const Button = channelId(ignoredUserIds[30]).Button;
   intl2 = channelId(ignoredUserIds[11]).intl;
-  items3 = [closure_11(Button, obj11), ];
+  items3 = [closure_10(Button, obj11), ];
   const obj12 = {
     size: "lg",
     variant: "secondary",
-    onPress() {
+    onPress: function handleDismissAndStay() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
       const obj2 = SharedSpacesWarningActionCreators;
       const result = obj2.dismissGdmBlockedUserWarning(channelId);
       const obj3 = AnalyticsUtilsDefault;
-      const obj4 = { action: metroImportAll.CLICK_TO_STAY, channel_id: channelId, warning_medium: constants.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+      const obj4 = { action: metroImportDefault.CLICK_TO_STAY, channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
       obj3.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj4);
     },
     text: intl3.string(channelId(ignoredUserIds[11]).t.DRJhmT)
   };
-  const Button2 = channelId(ignoredUserIds[29]).Button;
+  const Button2 = channelId(ignoredUserIds[30]).Button;
   intl3 = channelId(ignoredUserIds[11]).intl;
-  items3[1] = closure_11(Button2, obj12);
-  items1[3] = closure_13(closure_5, obj10);
-  return closure_11(ActionSheet, obj);
+  items3[1] = closure_10(Button2, obj12);
+  items1[3] = closure_12(View, obj10);
+  return closure_10(ActionSheet, obj);
 });
 let result = size.fileFinishedImporting("modules/shared_space_warnings/native/BlockedUserInGdmActionSheet.tsx");
 
-export default tmp6;
+export default tmp5;
 export { getUserCalloutRowText };

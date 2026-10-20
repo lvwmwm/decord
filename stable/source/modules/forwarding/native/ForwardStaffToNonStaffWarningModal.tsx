@@ -1,12 +1,12 @@
-// Module ID: 11313
-// Function ID: 11314
+// Module ID: 11565
+// Function ID: 11566
 // Name: ForwardStaffToNonStaffWarningModal
-// Dependencies: [21, 558, 576, 1126, 5713, 2]
+// Dependencies: [21, 558, 576, 1126, 5305, 2]
 
-// Module 11313 (ForwardStaffToNonStaffWarningModal)
+// Module 11565 (ForwardStaffToNonStaffWarningModal)
 import react from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import AlertModal2 from "AlertModal" /* 5713 */;
+import AlertModal2 from "AlertModal" /* 5305 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ let c2;
 let c3;
 let closure_4;
 ({ jsx: c2, Fragment: c3, jsxs: closure_4 } = Fragment);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardStaffToNonStaffWarningModal(arg0) {
   let items;
   let obj5;
   let onBack;
@@ -85,13 +85,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj4 = { title: tmp4, content: tmp5, actions: React3(_false, obj5) };
   obj5 = { children: items };
   items = [tmp10, tmp15];
-  const AlertModal = tmp(5713).AlertModal;
+  const AlertModal = tmp(5305).AlertModal;
   const tmp19 = React2(AlertModal, obj4);
   cResult[8] = tmp10;
   cResult[9] = tmp15;
   cResult[10] = tmp19;
   tmp18 = tmp19;
-}) : ((arg0) => {
+}) : (function ForwardStaffToNonStaffWarningModal(arg0) {
   let intl;
   let intl2;
   let intl3;

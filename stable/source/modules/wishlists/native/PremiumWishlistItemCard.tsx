@@ -1,12 +1,12 @@
-// Module ID: 10772
-// Function ID: 10773
+// Module ID: 12737
+// Function ID: 12738
 // Name: PremiumWishlistItemCard
-// Dependencies: [109, 19, 21, 558, 576, 8426, 8427, 2]
+// Dependencies: [109, 19, 21, 558, 576, 8971, 8972, 2]
 
-// Module 10772 (PremiumWishlistItemCard)
+// Module 12737 (PremiumWishlistItemCard)
 import Fragment from "Fragment" /* 21 */;
-import SKUPreview from "SKUPreview" /* 8426 */;
-import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 8427 */;
+import SKUPreview from "SKUPreview" /* 8971 */;
+import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 8972 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 
 let closure_3 = ["sku", "source", "size"];
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumWishlistItemCard(arg0) {
   let _require;
   let sku;
   let source;
@@ -76,7 +76,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[10] = tmp5.name;
   cResult[11] = tmp6;
   cResult[12] = <tmp11 accessibilityLabel={tmp5.name} renderPreview={tmp10} source={tmp6} size={tmp4} />;
-}) : ((size) => {
+}) : (function PremiumWishlistItemCard(size) {
   let sku;
   let source;
   size = size.size;

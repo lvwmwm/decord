@@ -1,12 +1,12 @@
-// Module ID: 9374
-// Function ID: 9375
+// Module ID: 8834
+// Function ID: 8835
 // Name: SecureFramesDeeplinkExperiment
-// Dependencies: [4775, 558, 576, 2]
+// Dependencies: [5015, 558, 576, 2]
 // Exports: getSecureFramesDeeplinkExperiment
 
-// Module 9374 (SecureFramesDeeplinkExperiment)
+// Module 8834 (SecureFramesDeeplinkExperiment)
 import react from "react" /* 576 */;
-import createExperimentDefault from "createExperiment" /* 4775 */;
+import createExperimentDefault from "createExperiment" /* 5015 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let items;
 let obj = { kind: "user", id: "2024-09_secure_frames_deeplink", label: "Secure Frames Deeplinks", defaultConfig: { enabled: false }, treatments: items };
 items = [{ id: 1, label: "Enabled.", config: { enabled: true } }];
 let closure_2 = createExperimentDefault(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFramesDeeplinkExperiment(location) {
   let tmp2;
   let tmp3;
   const obj = react;
@@ -36,7 +36,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp3 = cResult[2];
   }
   return closure_2.useExperiment(tmp2, tmp3);
-}) : ((location) => {
+}) : (function useSecureFramesDeeplinkExperiment(location) {
   const obj = { location: location.location };
   return closure_2.useExperiment(obj, { autoTrackExposure: true });
 });

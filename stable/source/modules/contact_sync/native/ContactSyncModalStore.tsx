@@ -1,14 +1,14 @@
-// Module ID: 12326
-// Function ID: 12327
+// Module ID: 12406
+// Function ID: 12407
 // Name: ContactSyncModalStore
-// Dependencies: [5440, 1377, 12327, 1085, 570, 1259, 558, 2]
+// Dependencies: [5761, 1390, 12407, 1085, 570, 1272, 558, 2]
 // Exports: getIsOnboarding, initialize, setAllowEmail, setAllowPhone, setAllowSync, setError, setName, setPermissionState, setPhone, setPhoneToken, setSuggestions
 
-// Module 12326 (ContactSyncModalStore)
+// Module 12406 (ContactSyncModalStore)
 import Constants from "Constants" /* 1085 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12327 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;
-import UserStore from "UserStore" /* 1377 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12407 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
+import UserStore from "UserStore" /* 1390 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,10 +24,10 @@ let obj2 = module_570.create(() => {
   obj = { mode: obj.NORMAL, permissionState: ContactPermissions.NOT_DETERMINED, error: "", phone: null, phoneToken: null, name: null, isNameFromContactBook: false, allowPhone: true, allowEmail: true, bulkAddToken: null, suggestions: [] };
   return obj;
 });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsOnboarding() {
   const mode = obj2().mode;
   return mode === obj.ONBOARDING || mode === obj.ONBOARDING_INVITE;
-}) : (() => {
+}) : (function useIsOnboarding() {
   const mode = obj2().mode;
   return mode === obj.ONBOARDING || mode === obj.ONBOARDING_INVITE;
 });

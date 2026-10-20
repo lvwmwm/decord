@@ -1,12 +1,12 @@
-// Module ID: 11397
-// Function ID: 11398
+// Module ID: 10802
+// Function ID: 10803
 // Name: GamesActionCreators
-// Dependencies: [5, 1085, 2011, 8704, 1105, 6816, 4565, 584, 1282, 8994, 8986, 9047, 2]
+// Dependencies: [5, 1085, 2024, 10803, 1105, 7013, 4806, 584, 1295, 10804, 10805, 10823, 2]
 
-// Module 11397 (GamesActionCreators)
-import Constants2 from "Constants" /* 2011 */;
-import LinkingDefault from "Linking" /* 4565 */;
-import FramesConstants from "FramesConstants" /* 8704 */;
+// Module 10802 (GamesActionCreators)
+import Constants2 from "Constants" /* 2024 */;
+import LinkingDefault from "Linking" /* 4806 */;
+import FramesConstants from "FramesConstants" /* 10803 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -43,7 +43,7 @@ function fetchJoinSecret(application, arg1) {
   const HTTP = require("HTTPUtils").HTTP;
   const request = { url: closure_4.USER_ACTIVITY_JOIN(userId, sessionId, id), retries: 3, query: tmp2, oldFormErrors: true, rejectWithError: true };
   const value = HTTP.get(request);
-  return value.then((result) => f154799(result), () => {
+  return value.then((result) => f157576(result), () => {
     const obj = deeplink_uri(application[7]);
     const obj2 = { type: "ACTIVITY_JOIN_FAILED", applicationId: id };
     obj.dispatch(obj2);
@@ -116,7 +116,7 @@ let obj = {
           }
           return resolved;
         }
-        const f154799 = (body) => {
+        const f157576 = (body) => {
           let flag;
           let flag2;
           let flag3;
@@ -127,7 +127,7 @@ let obj = {
             obj3.openURL(join_url, constants2.SAFARI);
             const obj2 = { type: "ACTIVITY_JOIN", applicationId: null, parentApplicationId: null, secret, intent: constants3.PLAY, embedded: flag3 };
             ({ id: obj4.applicationId, parent_id: obj4.parentApplicationId } = id);
-            flag3 = f154799.embedded;
+            flag3 = f157576.embedded;
             const dispatch = deeplink_uri(application[7]).dispatch;
             deeplink_uri(application[7]);
             if (flag3 == null) {
@@ -149,7 +149,7 @@ let obj = {
               obj5.openURL(combined, constants2.SAFARI);
               const obj10 = { type: "ACTIVITY_JOIN", applicationId: null, parentApplicationId: null, secret, intent: constants3.PLAY, embedded: flag };
               ({ id: obj6.applicationId, parent_id: obj6.parentApplicationId } = id);
-              flag = f154799.embedded;
+              flag = f157576.embedded;
               const dispatch2 = deeplink_uri(application[7]).dispatch;
               deeplink_uri(application[7]);
               if (flag == null) {
@@ -178,7 +178,7 @@ let obj = {
         const HTTP = tmp(tmp2[8]).HTTP;
         const request = { url: closure_4.USER_ACTIVITY_JOIN(userId, sessionId, id), retries: 3, query: tmp8, oldFormErrors: true, rejectWithError: true };
         const value = HTTP.get(request);
-        resolved = value.then((result) => f154799(result), () => {
+        resolved = value.then((result) => f157576(result), () => {
           const obj = deeplink_uri(application[7]);
           const obj2 = { type: "ACTIVITY_JOIN_FAILED", applicationId: id };
           obj.dispatch(obj2);

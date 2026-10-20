@@ -1,13 +1,13 @@
-// Module ID: 15863
-// Function ID: 15864
+// Module ID: 16372
+// Function ID: 16373
 // Name: createChatPanelNativeStackNavigator
-// Dependencies: [109, 19, 21, 558, 576, 1491, 4736, 14270, 7556, 2]
+// Dependencies: [109, 19, 21, 558, 576, 1504, 4976, 14292, 9340, 2]
 // Exports: default
 
-// Module 15863 (createChatPanelNativeStackNavigator)
+// Module 16372 (createChatPanelNativeStackNavigator)
 import Fragment from "Fragment" /* 21 */;
-import Link from "Link" /* 1491 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
+import Link from "Link" /* 1504 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -17,7 +17,7 @@ let navigation, str;
 
 let closure_2 = ["id", "initialRouteName", "UNSTABLE_routeNamesChangeBehavior", "children", "layout", "screenListeners", "screenOptions", "screenLayout", "UNSTABLE_router"];
 const jsx = Fragment.jsx;
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPanelNativeStackNavigator(arg0) {
   let UNSTABLE_routeNamesChangeBehavior;
   let UNSTABLE_router;
   let children;
@@ -146,7 +146,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                       addListener = tmp.addListener;
                                       if (addListener != null) {
                                         str = "tabPress";
-                                        addListenerResult = addListener("tabPress", () => { /* body not rendered: F145139 */ });
+                                        addListenerResult = addListener("tabPress", () => { /* body not rendered: F147962 */ });
                                       }
                                     }
                                     return addListenerResult;
@@ -167,7 +167,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                               addListener = tmp.addListener;
                               if (addListener != null) {
                                 str = "tabPress";
-                                addListenerResult = addListener("tabPress", () => { /* body not rendered: F145139 */ });
+                                addListenerResult = addListener("tabPress", () => { /* body not rendered: F147962 */ });
                               }
                             }
                             return addListenerResult;
@@ -193,7 +193,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           addListener = tmp.addListener;
                           if (addListener != null) {
                             str = "tabPress";
-                            addListenerResult = addListener("tabPress", () => { /* body not rendered: F145139 */ });
+                            addListenerResult = addListener("tabPress", () => { /* body not rendered: F147962 */ });
                           }
                         }
                         return addListenerResult;
@@ -246,7 +246,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           addListener = tmp.addListener;
                           if (addListener != null) {
                             str = "tabPress";
-                            addListenerResult = addListener("tabPress", () => { /* body not rendered: F145139 */ });
+                            addListenerResult = addListener("tabPress", () => { /* body not rendered: F147962 */ });
                           }
                         }
                         return addListenerResult;
@@ -290,7 +290,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[19] = tmp14;
   cResult[20] = obj8;
   tmp18 = obj8;
-}) : ((arg0) => {
+}) : (function ChatPanelNativeStackNavigator(arg0) {
   let NavigationContent;
   let UNSTABLE_routeNamesChangeBehavior;
   let UNSTABLE_router;

@@ -1,14 +1,14 @@
-// Module ID: 17191
-// Function ID: 17192
+// Module ID: 17786
+// Function ID: 17787
 // Name: ActivityPanelSystemUIManager
-// Dependencies: [19, 8705, 21, 558, 576, 17168, 1369, 9060, 9062, 2]
+// Dependencies: [19, 6067, 21, 558, 576, 17763, 1382, 10362, 10830, 2]
 
-// Module 17191 (ActivityPanelSystemUIManager)
+// Module 17786 (ActivityPanelSystemUIManager)
 import react2 from "react" /* 576 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
-import StatusBarDefault from "StatusBar" /* 9060 */;
-import HomeIndicatorDefault from "HomeIndicator" /* 9062 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17168 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
+import StatusBarDefault from "StatusBar" /* 10362 */;
+import HomeIndicatorDefault from "HomeIndicator" /* 10830 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17763 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -18,12 +18,12 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const PlatformUtils = tmp(1369);
+const PlatformUtils = tmp(1382);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityPanelSystemUIManager() {
   let mode;
   let wrapperDimensions;
   const obj = react2;
@@ -43,13 +43,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = wrapperDimensions.isWindowLandscape;
   cResult[2] = tmp4;
   tmp3 = tmp4;
-}) : (() => {
+}) : (function ActivityPanelSystemUIManager() {
   const context = react.useContext(ActivityPanelStateContextDefault);
   const obj = { mode: context.mode, isWindowLandscape: context.wrapperDimensions.isWindowLandscape };
   return hasOwnProperty(closure_8, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseActivityPanelSystemUIManager(arg0) {
   let isWindowLandscape;
   let items;
   let mode;
@@ -109,7 +109,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp6;
   cResult[2] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function BaseActivityPanelSystemUIManager(arg0) {
   let isWindowLandscape;
   let mode;
   ({ mode, isWindowLandscape } = arg0);

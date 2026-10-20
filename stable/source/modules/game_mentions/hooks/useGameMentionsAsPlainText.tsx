@@ -1,24 +1,24 @@
-// Module ID: 10613
-// Function ID: 10614
+// Module ID: 10240
+// Function ID: 10241
 // Name: useGameMentionsAsPlainText
-// Dependencies: [19, 2007, 1377, 5789, 558, 576, 6812, 2018, 5896, 1126, 504, 2]
+// Dependencies: [19, 2020, 1390, 5404, 558, 576, 7009, 2031, 8233, 1126, 504, 2]
 
-// Module 10613 (useGameMentionsAsPlainText)
-import StringUtils from "StringUtils" /* 2018 */;
+// Module 10240 (useGameMentionsAsPlainText)
+import StringUtils from "StringUtils" /* 2031 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2007 */;
-import UserStore from "UserStore" /* 1377 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5789 */;
+import GameStore from "GameStore" /* 2020 */;
+import UserStore from "UserStore" /* 1390 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5404 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, game, num;
+let _require, dependencyMap, game;
 
 let hasOwnProperty;
 let metroRequire;
 ({ extractGameMentionIds: hasOwnProperty, GAME_MENTION_RAW_RE_GLOBAL: metroRequire } = ChannelAutocompleteConstants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameMentionsAsPlainText(arg0) {
   let closure_0;
   let length;
   let tmp4;
@@ -59,36 +59,47 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmpResult2 = require("get initialized");
     return tmpResult2.useStateFromStores(tmp8, tmp11, tmp12);
   }
-  class G {
-    constructor() {
-      obj = closure_0(closure_1[7]);
-      str = closure_0;
-      if (!obj.isNullOrEmpty(closure_0)) {
-        tmp = closure_1;
-        num = 0;
-        if (0 !== closure_1.length) {
-          tmp2 = closure_4;
-          currentUser = closure_4.getCurrentUser();
-          tmp4 = null;
-          nsfwAllowed = undefined;
-          if (currentUser != null) {
-            nsfwAllowed = currentUser.nsfwAllowed;
-          }
-          tmp6 = closure_6;
-          return str.replace(closure_6, () => { /* body not rendered: F140587 */ });
+  const fn = function p() {
+    let obj = StringUtils;
+    if (!obj.isNullOrEmpty(closure_0)) {
+      if (0 !== length.length) {
+        const tmp2 = UserStore;
+        const currentUser = UserStore.getCurrentUser();
+        let nsfwAllowed;
+        if (currentUser != null) {
+          nsfwAllowed = currentUser.nsfwAllowed;
         }
+        return closure_0.replace(metroRequire, (arg0, gameId) => {
+          let stringResult;
+          game = game.getGame(gameId);
+          const obj = closure_2_0(length[8]);
+          if (obj.isGameProfileObscured(game, nsfwAllowed)) {
+            const intl2 = tmp2(tmp3[9]).intl;
+            stringResult = intl2.string(tmp2(tmp3[9]).t["11pdXZ"]);
+          } else {
+            stringResult = undefined;
+            if (game != null) {
+              stringResult = game.name;
+            }
+            if (stringResult == null) {
+              const intl = tmp2(tmp3[9]).intl;
+              stringResult = intl.string(tmp2(tmp3[9]).t["11pdXZ"]);
+            }
+          }
+          return stringResult;
+        });
       }
-      return str;
     }
-  }
+    return closure_0;
+  };
   const items1 = [arg0, tmp4];
   cResult[3] = tmp4;
   cResult[4] = arg0;
-  cResult[5] = G;
+  cResult[5] = fn;
   cResult[6] = items1;
   tmp12 = items1;
-  tmp11 = G;
-}) : ((arg0) => {
+  tmp11 = fn;
+}) : (function useGameMentionsAsPlainText(arg0) {
   let closure_0;
   _require = arg0;
   const items = [arg0];

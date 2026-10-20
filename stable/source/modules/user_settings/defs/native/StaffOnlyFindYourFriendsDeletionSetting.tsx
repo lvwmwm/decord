@@ -1,25 +1,25 @@
-// Module ID: 14649
-// Function ID: 14650
+// Module ID: 15125
+// Function ID: 15126
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 7634, 21, 1254, 1259, 558, 576, 4492, 12329, 1336, 4568, 11129, 14650, 2]
+// Dependencies: [5, 17, 7988, 21, 1267, 1272, 558, 576, 4733, 12409, 1349, 4809, 10664, 15126, 2]
 
-// Module 14649 (StaffOnlyFindYourFriendsDeletionSetting)
+// Module 15125 (StaffOnlyFindYourFriendsDeletionSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14650 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15126 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_1254 from "module_1254" /* 1254 */;
+import module_1267 from "module_1267" /* 1267 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c4, c5, closure_2;
 
 let tmp;
-const _slicedToArray = tmp(4492);
+const _slicedToArray = tmp(4733);
 function setFindYourFriendsDeletionIsLoading(isLoading) {
   let state;
   _require = isLoading;
@@ -51,7 +51,7 @@ let obj = function _onFindYourFriendsDeletionPress() {
       let c3;
       try {
         let closure_1;
-        let content;
+        let text;
         c5 = 2;
         if (0 === c4) {
           if (arg0 === 1) {
@@ -63,7 +63,7 @@ let obj = function _onFindYourFriendsDeletionPress() {
             return obj4;
           } else {
             closure_1 = tmp;
-            content = undefined;
+            text = undefined;
             if (!getFindYourFriendsDeletionIsLoading()) {
               setFindYourFriendsDeletionIsLoading(true);
               c3 = 2;
@@ -85,11 +85,11 @@ let obj = function _onFindYourFriendsDeletionPress() {
             const self = this;
             const self2 = this;
             const aPIError = new closure_129_0(closure_129_2[10]).APIError(closure_1);
-            content = aPIError.getAnyErrorMessage();
-            if (null != content) {
-              const obj7 = { key: "FIND_YOUR_FRIENDS_DELETION", content };
+            text = aPIError.getAnyErrorMessage();
+            if (null != text) {
+              const obj7 = { text };
               const obj3 = closure_129_1(closure_129_2[11]);
-              obj3.open(obj7);
+              obj3.open("FIND_YOUR_FRIENDS_DELETION", obj7);
             }
           } else if (arg0 === 1) {
             c5 = 3;
@@ -126,9 +126,9 @@ let obj = function _onFindYourFriendsDeletionPress() {
 const ActivityIndicator = react_native.ActivityIndicator;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-let closure_6 = module_1254.createWithEqualityFn(() => ({ isLoading: false }));
+let closure_6 = module_1267.createWithEqualityFn(() => ({ isLoading: false }));
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFindYourFriendsDeletionIsLoading() {
   let first;
   obj = react;
   const cResult = obj.c(1);
@@ -142,11 +142,13 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_6(first, _slicedToArray.shallow);
-}) : (() => closure_6((isLoading) => isLoading.isLoading, _slicedToArray.shallow));
+}) : (function useFindYourFriendsDeletionIsLoading() {
+  return closure_6((isLoading) => isLoading.isLoading, _slicedToArray.shallow);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFindYourFriendsDeletionTrailing() {
   let tmp3;
   obj = react;
   const cResult = obj.c(2);
@@ -163,20 +165,22 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function useIsFindYourFriendsDeletionTrailing() {
   let tmp = null;
   if (closure_8()) {
     tmp = <ActivityIndicator />;
   }
   return tmp;
 });
-let fn = () => closure_8();
+function useIsFindYourFriendsDeletionDisabled() {
+  return closure_8();
+}
 obj = {
   useTitle() {
     return "STAFF ONLY - Find your friends deletion";
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useIsDisabled: fn,
+  useIsDisabled: useIsFindYourFriendsDeletionDisabled,
   onPress: function onFindYourFriendsDeletionPress() {
     return obj(...arguments);
   },

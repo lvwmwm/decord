@@ -1,14 +1,14 @@
-// Module ID: 6538
-// Function ID: 6539
+// Module ID: 6730
+// Function ID: 6731
 // Name: useNavigationTheme
-// Dependencies: [19, 558, 576, 4580, 587, 4729, 1491, 2]
+// Dependencies: [19, 558, 576, 4818, 587, 4969, 1504, 2]
 
-// Module 6538 (useNavigationTheme)
+// Module 6730 (useNavigationTheme)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Link from "Link" /* 1491 */;
-import useToken from "useToken" /* 4580 */;
-import shared from "shared" /* 4729 */;
+import Link from "Link" /* 1504 */;
+import useToken from "useToken" /* 4818 */;
+import shared from "shared" /* 4969 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNavigationTheme(theme) {
   let tmp9;
   const obj = react2;
   const cResult = obj.c(11);
@@ -71,7 +71,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
   cResult[6] = token3;
   cResult[7] = obj8;
   tmp11 = obj8;
-}) : ((theme) => {
+}) : (function useNavigationTheme(theme) {
   let token;
   let token1;
   _require = theme;

@@ -1,21 +1,21 @@
-// Module ID: 11327
-// Function ID: 11328
+// Module ID: 11590
+// Function ID: 11591
 // Name: Checkpoint2025ForwardPreview
-// Dependencies: [11328, 21, 558, 576, 11329, 5124, 5974, 2]
+// Dependencies: [11591, 21, 558, 576, 11592, 5447, 6157, 2]
 
-// Module 11327 (Checkpoint2025ForwardPreview)
+// Module 11590 (Checkpoint2025ForwardPreview)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import CheckpointUtils from "CheckpointUtils" /* 5124 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import checkpoint_CheckpointConstants from "checkpoint/CheckpointConstants" /* 11328 */;
-import CheckpointColors from "CheckpointColors" /* 11329 */;
+import CheckpointUtils from "CheckpointUtils" /* 5447 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import checkpoint_CheckpointConstants from "checkpoint/CheckpointConstants" /* 11591 */;
+import CheckpointColors from "CheckpointColors" /* 11592 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointPersonas = checkpoint_CheckpointConstants.CheckpointPersonas;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkpointData) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint2025ForwardPreview(checkpointData) {
   let tmp6;
   let tmp7;
   let tmp9;
@@ -69,7 +69,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkpointData) =>
   cResult[7] = tmp9;
   cResult[8] = tmp11;
   tmp10 = tmp11;
-}) : ((checkpointData) => {
+}) : (function Checkpoint2025ForwardPreview(checkpointData) {
   let obj4;
   let num = checkpointData.checkpointData.cardId;
   if (num == null) {

@@ -1,29 +1,29 @@
-// Module ID: 17337
-// Function ID: 17338
+// Module ID: 17931
+// Function ID: 17932
 // Name: VoicePanelDisconnectCancelButton
-// Dependencies: [32, 19, 2050, 4912, 5098, 11902, 21, 4890, 587, 558, 576, 11901, 9016, 4612, 8991, 5091, 5032, 5568, 9576, 17338, 7525, 1126, 17328, 2]
+// Dependencies: [32, 19, 2064, 5897, 6074, 11974, 21, 5092, 587, 558, 576, 11973, 6038, 4850, 10813, 5106, 7439, 5889, 10994, 17932, 9319, 1126, 17922, 2]
 
-// Module 17337 (VoicePanelDisconnectCancelButton)
+// Module 17931 (VoicePanelDisconnectCancelButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import StreamActionCreators from "StreamActionCreators" /* 5032 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5568 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8991 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9016 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6038 */;
+import StreamActionCreators from "StreamActionCreators" /* 7439 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10813 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11974 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
-import VoicePanelStore from "VoicePanelStore" /* 5098 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
+import VoicePanelStore from "VoicePanelStore" /* 6074 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, props;
+let _require;
 
 let obj2;
 let obj3;
@@ -41,7 +41,7 @@ const __initData = { code: "function VoicePanelDisconnectCancelButtonTsx1(){cons
 const __initData2 = { code: "function VoicePanelDisconnectCancelButtonTsx2(focusId_0,lastFocusId){const{runOnJS,handleFocusChange}=this.__closure;if(focusId_0!==lastFocusId){runOnJS(handleFocusChange)(focusId_0);}}" };
 const __initData3 = { code: "function VoicePanelDisconnectCancelButtonTsx3(){const{mode,VoicePanelModes,focused}=this.__closure;var _focused$get$id,_focused$get;if(mode.get()!==VoicePanelModes.PANEL){return null;}return(_focused$get$id=(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)!==null&&_focused$get$id!==void 0?_focused$get$id:null;}" };
 const __initData4 = { code: "function VoicePanelDisconnectCancelButtonTsx4(focusId_0,lastFocusId){const{runOnJS,handleFocusChange}=this.__closure;if(focusId_0!==lastFocusId){runOnJS(handleFocusChange)(focusId_0);}}" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisconnectCancelButton(props) {
   let channelId;
   let closure_4;
   let first;
@@ -89,38 +89,38 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
     }
   }
   let obj2 = channelId(mode[13]);
-  class C {
-    constructor() {
-      let tmp = null;
-      if (mode.get() === VoicePanelModes.PANEL) {
-        const value = focused.get();
-        let id;
-        if (value != null) {
-          id = value.id;
-        }
-        if (id == null) {
-          id = null;
-        }
-        tmp = id;
+  const fn = function v() {
+    let tmp = null;
+    if (mode.get() === VoicePanelModes.PANEL) {
+      const value = focused.get();
+      let id;
+      if (value != null) {
+        id = value.id;
       }
-      return tmp;
+      if (id == null) {
+        id = null;
+      }
+      tmp = id;
+    }
+    return tmp;
+  };
+  let obj3 = { mode, VoicePanelModes, focused };
+  fn.__closure = obj3;
+  fn.__workletHash = 1109426015268;
+  fn.__initData = __initData;
+  class A {
+    constructor(arg0, arg1) {
+      if (arg0 !== arg1) {
+        const obj = ReanimatedRexport;
+        obj.runOnJS(handleFocusChange)(arg0);
+      }
     }
   }
-  let obj3 = { mode, VoicePanelModes, focused };
-  C.__closure = obj3;
-  C.__workletHash = 1109426015268;
-  C.__initData = __initData;
-  const fn = function v(arg0, arg1) {
-    if (arg0 !== arg1) {
-      const obj = ReanimatedRexport;
-      obj.runOnJS(handleFocusChange)(arg0);
-    }
-  };
-  fn.__closure = { runOnJS: channelId(mode[13]).runOnJS, handleFocusChange };
-  fn.__workletHash = 11963160980927;
-  fn.__initData = __initData2;
+  A.__closure = { runOnJS: channelId(mode[13]).runOnJS, handleFocusChange };
+  A.__workletHash = 11963160980927;
+  A.__initData = __initData2;
   ({ runOnJS: channelId(mode[13]).runOnJS, handleFocusChange });
-  const animatedReaction = obj2.useAnimatedReaction(C, fn);
+  const animatedReaction = obj2.useAnimatedReaction(fn, A);
   if (cResult[0] === channelId) {
     if (cResult[1] === first) {
       let tmp10;
@@ -214,13 +214,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
         const obj = ChannelRTCParticipants;
         const result = obj.activityParticipantIdToApplicationId(id);
         let _location;
-        const leaveActivity = EmbeddedActivitiesNativeManagerDefault.leaveActivity;
-        EmbeddedActivitiesNativeManagerDefault;
+        const leaveEmbeddedActivity = leaveEmbeddedActivity2.leaveEmbeddedActivity;
+        leaveEmbeddedActivity2;
         if (currentEmbeddedActivity != null) {
           _location = currentEmbeddedActivity.location;
         }
         const obj2 = { location: _location, applicationId: result };
-        leaveActivity(obj2);
+        const result1 = leaveEmbeddedActivity(obj2);
       }
     }
   }
@@ -229,7 +229,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
   cResult[2] = focused;
   cResult[3] = T;
   tmp10 = T;
-}) : ((props) => {
+}) : (function DisconnectCancelButton(props) {
   let icon;
   let items1;
   let stringResult;
@@ -276,39 +276,40 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
       closure_5(null);
     }
   }, []);
+  const tmp8 = _require;
   let obj2 = require("ReanimatedRexport");
-  class C {
-    constructor() {
-      let tmp = null;
-      if (mode.get() === VoicePanelModes.PANEL) {
-        const value = focused.get();
-        let id;
-        if (value != null) {
-          id = value.id;
-        }
-        if (id == null) {
-          id = null;
-        }
-        tmp = id;
+  const fn = function v() {
+    let tmp = null;
+    if (mode.get() === VoicePanelModes.PANEL) {
+      const value = focused.get();
+      let id;
+      if (value != null) {
+        id = value.id;
       }
-      return tmp;
+      if (id == null) {
+        id = null;
+      }
+      tmp = id;
+    }
+    return tmp;
+  };
+  let obj3 = { mode, VoicePanelModes, focused };
+  fn.__closure = obj3;
+  fn.__workletHash = 11003731851942;
+  fn.__initData = __initData3;
+  class C {
+    constructor(arg0, arg1) {
+      if (arg0 !== arg1) {
+        const obj = ReanimatedRexport;
+        obj.runOnJS(callback)(arg0);
+      }
     }
   }
-  let obj3 = { mode, VoicePanelModes, focused };
-  C.__closure = obj3;
-  C.__workletHash = 11003731851942;
-  C.__initData = __initData3;
-  const fn = function p(arg0, arg1) {
-    if (arg0 !== arg1) {
-      const obj = ReanimatedRexport;
-      obj.runOnJS(callback)(arg0);
-    }
-  };
-  fn.__closure = { runOnJS: require("ReanimatedRexport").runOnJS, handleFocusChange };
-  fn.__workletHash = 10967754441017;
-  fn.__initData = __initData4;
+  C.__closure = { runOnJS: require("ReanimatedRexport").runOnJS, handleFocusChange };
+  C.__workletHash = 10967754441017;
+  C.__initData = __initData4;
   ({ runOnJS: require("ReanimatedRexport").runOnJS, handleFocusChange });
-  const animatedReaction = obj2.useAnimatedReaction(C, fn);
+  const animatedReaction = obj2.useAnimatedReaction(fn, C);
   const items = [channelId, first, focused];
   const callback1 = first.useCallback(() => {
     let id;
@@ -335,13 +336,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
       const obj = ChannelRTCParticipants;
       const result = obj.activityParticipantIdToApplicationId(id);
       let _location;
-      const leaveActivity = EmbeddedActivitiesNativeManagerDefault.leaveActivity;
-      EmbeddedActivitiesNativeManagerDefault;
+      const leaveEmbeddedActivity = leaveEmbeddedActivity2.leaveEmbeddedActivity;
+      leaveEmbeddedActivity2;
       if (currentEmbeddedActivity != null) {
         _location = currentEmbeddedActivity.location;
       }
       const obj2 = { location: _location, applicationId: result };
-      leaveActivity(obj2);
+      const result1 = leaveEmbeddedActivity(obj2);
     }
   }, items);
   if (first === constants.ACTIVITY) {

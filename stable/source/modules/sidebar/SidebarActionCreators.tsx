@@ -1,23 +1,23 @@
-// Module ID: 7516
-// Function ID: 7517
+// Module ID: 9311
+// Function ID: 9312
 // Name: SidebarActionCreators
-// Dependencies: [2055, 2051, 1085, 2058, 584, 6785, 6965, 7517, 4787, 7521, 1112, 2]
+// Dependencies: [2069, 2065, 1085, 2072, 584, 6063, 7174, 9312, 5027, 9315, 1112, 2]
 
-// Module 7516 (SidebarActionCreators)
+// Module 9311 (SidebarActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6785 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6965 */;
-import MessageManagerDefault from "MessageManager" /* 7517 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 7521 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6063 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
+import MessageManagerDefault from "MessageManager" /* 9312 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 9315 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const flow_Client = tmp3(4787);
+const flow_Client = tmp3(5027);
 let closure_3 = ChannelRecord.isChannelThreadsForcedOpenedInFullView;
 const Routes = Constants.Routes;
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;

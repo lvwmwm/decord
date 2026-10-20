@@ -1,13 +1,13 @@
-// Module ID: 4717
-// Function ID: 4718
+// Module ID: 4957
+// Function ID: 4958
 // Name: RouteUtils
-// Dependencies: [1086, 2058, 2, 4718]
+// Dependencies: [1086, 2072, 2, 4958]
 // Exports: isPseudoGuildId, isValidChannelId, isValidGuildId
 
-// Module 4717 (RouteUtils)
+// Module 4957 (RouteUtils)
 import RouteConstants from "RouteConstants" /* 1086 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import RouteParam from "RouteParam" /* 4718 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import RouteParam from "RouteParam" /* 4958 */;
 import size from "module_2" /* 2 */;
 
 const PSEUDO_GUILD_IDS = RouteConstants.PSEUDO_GUILD_IDS;

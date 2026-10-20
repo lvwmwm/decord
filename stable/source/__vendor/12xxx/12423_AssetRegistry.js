@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/hub/native/images", width: 48, height: 48, scales: [2, 3], hash: "c0ad0e7adefed3e2ebad52c7f4beb394", name: "progress-setup", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/contact_sync/native/images", width: 215.5, height: 135, scales: [2, 3], hash: "fad7ba73a3f13e1d6de72f833c30efc1", name: "header-art-onboarding", type: "png" });

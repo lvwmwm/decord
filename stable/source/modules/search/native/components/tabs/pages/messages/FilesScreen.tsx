@@ -1,18 +1,18 @@
-// Module ID: 16886
-// Function ID: 16887
+// Module ID: 17475
+// Function ID: 17476
 // Name: FilesScreen
-// Dependencies: [19, 7513, 21, 558, 576, 16872, 16879, 16887, 16812, 16881, 16880, 11966, 16885, 16819, 2]
+// Dependencies: [19, 9308, 21, 558, 576, 17461, 17468, 17476, 17395, 17470, 17469, 12038, 17474, 17402, 2]
 
-// Module 16886 (FilesScreen)
+// Module 17475 (FilesScreen)
 import Fragment from "Fragment" /* 21 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 11966 */;
-import BaseMessagesScreen from "BaseMessagesScreen" /* 16881 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12038 */;
+import BaseMessagesScreen from "BaseMessagesScreen" /* 17470 */;
 import react from "react" /* 19 */;
-import SearchConstants from "SearchConstants" /* 7513 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_5, placeholderHeight, searchContext;
+let closure_5, placeholderHeight;
 
 let closure_4;
 let hasOwnProperty;
@@ -20,7 +20,7 @@ let metroImportDefault;
 let metroRequire;
 ({ SearchListItemTypes: closure_4, CARD_ESTIMATED_ITEM_SIZE: hasOwnProperty, FILES_OR_LINKS_NUM_COLUMNS: metroRequire, FILES_OR_LINKS_GAP_WIDTH: metroImportDefault } = SearchConstants);
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FilesScreen(searchContext) {
   let isFirstPageLoading;
   let isFocused;
   let isNextPageLoading;
@@ -189,7 +189,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[3] = searchContext;
   cResult[4] = fn;
   tmp8 = fn;
-}) : ((searchContext) => {
+}) : (function FilesScreen(searchContext) {
   let isFirstPageLoading;
   let isFocused;
   let isNextPageLoading;

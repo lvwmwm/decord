@@ -1,21 +1,21 @@
-// Module ID: 15777
-// Function ID: 15778
+// Module ID: 16284
+// Function ID: 16285
 // Name: SafetyGuildSettingGuildSelect
-// Dependencies: [19, 5616, 14501, 15778, 7634, 4854, 15779, 1987, 558, 576, 15780, 1126, 11129, 2]
+// Dependencies: [19, 5963, 14972, 16285, 7988, 5056, 16286, 2000, 558, 576, 16287, 1126, 10664, 2]
 
-// Module 15777 (SafetyGuildSettingGuildSelect)
+// Module 16284 (SafetyGuildSettingGuildSelect)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import useDMPermissionsOverrideCount from "useDMPermissionsOverrideCount" /* 15780 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import useDMPermissionsOverrideCount from "useDMPermissionsOverrideCount" /* 16287 */;
 import react from "react" /* 19 */;
-import SortedGuildStore from "SortedGuildStore" /* 5616 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14501 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15778 */;
+import SortedGuildStore from "SortedGuildStore" /* 5963 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14972 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16285 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -27,7 +27,7 @@ const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let items = [, ];
 ({ GUILD_SETTING_ACTIVITY_STATUS: arr[0], GUILD_SETTING_ACTIVITY_JOINING: arr[1] } = MobileUserSettings);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedGuildId() {
   let field;
   let tmp3;
   let tmp4;
@@ -54,7 +54,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = react.useEffect(tmp3, tmp4);
   return closure_9().selectedGuildId;
-}) : (() => {
+}) : (function useSelectedGuildId() {
   const field = UserSettingSearchStore.useField("selected");
   items = [field];
   const effect = react.useEffect(() => {
@@ -67,7 +67,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_9().selectedGuildId;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDescription() {
   const obj = react2;
   const cResult = obj.c(2);
   const selectedGuildId = React4().selectedGuildId;
@@ -89,7 +89,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return tmp5;
     }
   }
-}) : (() => {
+}) : (function useDescription() {
   const selectedGuildId = React4().selectedGuildId;
   const obj = useDMPermissionsOverrideCount;
   const dMPermissionsOverrideCount = obj.useDMPermissionsOverrideCount();
@@ -108,7 +108,7 @@ let obj = {
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   onPress: function onGuildSelectPress() {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(15779, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
+    obj.openLazy(asyncRequire(16286, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
   }
 };
 const guildSelector = SettingBuilders.createGuildSelector(obj);

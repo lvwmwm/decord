@@ -1,16 +1,15 @@
-// Module ID: 16733
-// Function ID: 16734
+// Module ID: 17182
+// Function ID: 17183
 // Name: conjurePendingPlan
-// Dependencies: [12905, 2]
+// Dependencies: [13004, 2]
 // Exports: pendingPlanRenderId, planCardExpanded, planVersions, togglePlanCard
 
-// Module 16733 (conjurePendingPlan)
-import ConjureChatStore from "ConjureChatStore" /* 12905 */;
+// Module 17182 (conjurePendingPlan)
+import conjureChatTurns from "conjureChatTurns" /* 13004 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
 
-const turnSettled = ConjureChatStore.turnSettled;
 let result = size.fileFinishedImporting("modules/conjure/plan/conjurePendingPlan.tsx");
 
 export const pendingPlanRenderId = function pendingPlanRenderId(memo) {
@@ -27,7 +26,8 @@ export const pendingPlanRenderId = function pendingPlanRenderId(memo) {
       while (true) {
         let tmp4 = memo[diff];
         if ("assistant" === tmp4.role) {
-          if (!turnSettled(tmp4)) {
+          let obj = conjureChatTurns;
+          if (!obj.turnSettled(tmp4)) {
             break;
           } else if ("plan_implemented" === tmp4.kind) {
             break;
@@ -72,8 +72,8 @@ export const planVersions = function planVersions(memo) {
   }
   return map;
 };
-export const planCardExpanded = function planCardExpanded(c19, render_id, arg2) {
-  let value = c19.get(render_id);
+export const planCardExpanded = function planCardExpanded(c18, render_id, arg2) {
+  let value = c18.get(render_id);
   if (value == null) {
     value = !arg2;
   }

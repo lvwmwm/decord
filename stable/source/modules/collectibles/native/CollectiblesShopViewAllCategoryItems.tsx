@@ -1,23 +1,23 @@
-// Module ID: 15754
-// Function ID: 15755
+// Module ID: 16259
+// Function ID: 16260
 // Name: CollectiblesShopViewAllCategoryItems
-// Dependencies: [19, 17, 1087, 1085, 21, 4890, 587, 558, 576, 10815, 6681, 6657, 1618, 14876, 4612, 5597, 1252, 7099, 15755, 15756, 1126, 15734, 10551, 8421, 2]
+// Dependencies: [19, 17, 1087, 1085, 21, 5092, 587, 558, 576, 12779, 6879, 6852, 1631, 15356, 4850, 5378, 1265, 7305, 16260, 16261, 1126, 16240, 10177, 8966, 2]
 
-// Module 15754 (CollectiblesShopViewAllCategoryItems)
+// Module 16259 (CollectiblesShopViewAllCategoryItems)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import spring from "spring" /* 5597 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7099 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import spring from "spring" /* 5378 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7305 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let category, set;
+let set;
 
 let c9;
 let closure_4;
@@ -26,9 +26,9 @@ let metroImportAll;
 let obj2;
 let obj3;
 let tmp;
-const AnalyticsLocationDefault = tmp(6681);
+const AnalyticsLocationDefault = tmp(6879);
 ({ View: closure_4, StyleSheet: hasOwnProperty } = react_native);
-let closure_6 = CollectiblesShopConstants.CollectiblesMobileShopScreen;
+const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 const AnalyticEvents = Constants.AnalyticEvents;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
@@ -40,7 +40,7 @@ let closure_10 = createStyles(obj);
 const __initData = { code: "function CollectiblesShopViewAllCategoryItemsTsx1(){const{borderOpacity}=this.__closure;return{opacity:borderOpacity.get()};}" };
 const __initData2 = { code: "function CollectiblesShopViewAllCategoryItemsTsx2(){const{borderOpacity}=this.__closure;return{opacity:borderOpacity.get()};}" };
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((category) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesShopViewAllCategoryItems(category) {
   let analyticsLocations;
   let first;
   let items2;
@@ -99,17 +99,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((categor
   } else {
     tmp10 = cResult[4];
   }
+  const fn2 = function w() {
+    const obj = { opacity: sharedValue.get() };
+    return obj;
+  };
+  fn2.__closure = { borderOpacity: sharedValue };
+  fn2.__workletHash = 2446209469388;
+  fn2.__initData = __initData;
   const tmpResult4 = tmp(tmp2[14]);
-  class T {
-    constructor() {
-      const obj = { opacity: sharedValue.get() };
-      return obj;
-    }
-  }
-  T.__closure = { borderOpacity: sharedValue };
-  T.__workletHash = 2446209469388;
-  T.__initData = __initData;
-  const animatedStyle = tmpResult4.useAnimatedStyle(T);
+  const animatedStyle = tmpResult4.useAnimatedStyle(fn2);
   let sessionId;
   const tmp12 = cResult[5];
   if (analyticsContext != null) {
@@ -312,32 +310,34 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((categor
   if (analyticsContext != null) {
     sessionId2 = analyticsContext.sessionId;
   }
-  const fn2 = function w() {
-    let sessionId;
-    const obj = { location_stack: analyticsLocations, page_session_id: sessionId, source: AnalyticsLocationDefault.COLLECTIBLES_SHOP, page_type: "index", category: category.name };
-    sessionId = undefined;
-    const track = AnalyticsUtilsDefault.track;
-    const COLLECTIBLES_SHOP_VIEWED = AnalyticEvents.COLLECTIBLES_SHOP_VIEWED;
-    AnalyticsUtilsDefault;
-    if (analyticsContext != null) {
-      sessionId = tmp4.sessionId;
+  class T {
+    constructor() {
+      let sessionId;
+      const obj = { location_stack: analyticsLocations, page_session_id: sessionId, source: AnalyticsLocationDefault.COLLECTIBLES_SHOP, page_type: "index", category: category.name };
+      sessionId = undefined;
+      const track = AnalyticsUtilsDefault.track;
+      const COLLECTIBLES_SHOP_VIEWED = AnalyticEvents.COLLECTIBLES_SHOP_VIEWED;
+      AnalyticsUtilsDefault;
+      if (analyticsContext != null) {
+        sessionId = tmp4.sessionId;
+      }
+      track(COLLECTIBLES_SHOP_VIEWED, obj);
+      let sessionId1;
+      const trackShopPerf = CollectiblesPerfLogging.trackShopPerf;
+      CollectiblesPerfLogging;
+      if (analyticsContext != null) {
+        sessionId1 = tmp4.sessionId;
+      }
+      const obj2 = { sessionId: sessionId1, checkpoint: CollectiblesPerfLogging.CollectiblesShopPerfCheckpoint.SHOP_MOUNTED, tab: constants.SHOP_ALL, unpublishedCategoriesShown: false, cacheDisabled: false };
+      trackShopPerf(obj2);
     }
-    track(COLLECTIBLES_SHOP_VIEWED, obj);
-    let sessionId1;
-    const trackShopPerf = CollectiblesPerfLogging.trackShopPerf;
-    CollectiblesPerfLogging;
-    if (analyticsContext != null) {
-      sessionId1 = tmp4.sessionId;
-    }
-    const obj2 = { sessionId: sessionId1, checkpoint: CollectiblesPerfLogging.CollectiblesShopPerfCheckpoint.SHOP_MOUNTED, tab: constants.SHOP_ALL, unpublishedCategoriesShown: false, cacheDisabled: false };
-    trackShopPerf(obj2);
-  };
+  }
   cResult[5] = sessionId2;
   cResult[6] = analyticsLocations;
   cResult[7] = category.name;
-  cResult[8] = fn2;
-  tmp14 = fn2;
-}) : ((category) => {
+  cResult[8] = T;
+  tmp14 = T;
+}) : (function CollectiblesShopViewAllCategoryItems(category) {
   let CollectiblesAnalyticsProvider;
   let NativePaymentContextProvider;
   let intl;

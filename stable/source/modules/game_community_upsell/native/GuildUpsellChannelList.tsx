@@ -1,31 +1,31 @@
-// Module ID: 16200
-// Function ID: 16201
+// Module ID: 16715
+// Function ID: 16716
 // Name: GuildUpsellChannelList
-// Dependencies: [19, 17, 13524, 6084, 16201, 1085, 21, 4890, 587, 1126, 12810, 16202, 16204, 558, 576, 13527, 504, 16206, 1252, 12357, 4886, 5995, 5594, 14901, 16207, 2]
+// Dependencies: [19, 17, 14011, 5932, 16716, 1085, 21, 5092, 587, 1126, 13113, 16717, 16721, 558, 576, 14014, 504, 16725, 1265, 12438, 5088, 6182, 5379, 15380, 16726, 2]
 
-// Module 16200 (GuildUpsellChannelList)
+// Module 16715 (GuildUpsellChannelList)
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import Card_Card from "Card/Card" /* 5995 */;
-import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 12810 */;
-import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 16201 */;
-import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 16202 */;
-import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 16204 */;
-import MobileGameCommunitiesActionCreatorsAll from "MobileGameCommunitiesActionCreators" /* 16206 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import Card_Card from "Card/Card" /* 6182 */;
+import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 13113 */;
+import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 16716 */;
+import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 16717 */;
+import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 16721 */;
+import MobileGameCommunitiesActionCreatorsAll from "MobileGameCommunitiesActionCreators" /* 16725 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 13524 */;
-import ConsentStore from "ConsentStore" /* 6084 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14011 */;
+import ConsentStore from "ConsentStore" /* 5932 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, lastScannedAt, style, tmp3;
+let _require, lastScannedAt, tmp3;
 
 let c10;
 let closure_12;
@@ -67,12 +67,11 @@ items[1] = { id: "gaming", title: intl7.t["F+MTAZ"], description: intl7.t.srNlJw
 ({ id: "gaming", title: intl7.t["F+MTAZ"], description: intl7.t.srNlJw, Icon: ChatControllersSpotIllustration.ChatControllersSpotIllustration });
 items[2] = { id: "hobbies", title: intl7.t["0Ka6B5"], description: intl7.t["5oGAp/"], Icon: MiniaturesSpotIllustration.MiniaturesSpotIllustration };
 ({ id: "hobbies", title: intl7.t["0Ka6B5"], description: intl7.t["5oGAp/"], Icon: MiniaturesSpotIllustration.MiniaturesSpotIllustration });
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildUpsellChannelList(arg0) {
   let arr2;
   let closure_0;
   let constants2;
   let first;
-  let onPress;
   let tmp16;
   let tmp6;
   let tmp7;
@@ -88,7 +87,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     first = cResult[0];
   }
-  const GameCommunityAddServerEntryExperiment = tmp(13527).GameCommunityAddServerEntryExperiment;
+  const GameCommunityAddServerEntryExperiment = tmp(14014).GameCommunityAddServerEntryExperiment;
   const cardAction = GameCommunityAddServerEntryExperiment.useConfig(first).cardAction;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     items = [ConsentStore, LocalAppDetectionStore];
@@ -184,27 +183,34 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const fn = function f(guild_id, game_id) {
       const obj = MobileGameCommunitiesActionCreatorsAll;
       obj.dismissGuild(guild_id);
-      const obj2 = onPress(dependencyMap[18]);
+      const obj2 = L(dependencyMap[18]);
       const obj3 = { game_id, guild_id };
       obj2.track(constants.GAME_COMMUNITY_MULTI_GUILD_UPSELL_CARD_DISMISSED, obj3);
     };
     cResult[7] = fn;
   }
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function w() {
-      const obj = onPress(dependencyMap[19]);
-      obj.openCreateGuildModal();
-    };
-    cResult[8] = fn2;
-    tmp16 = fn2;
+    class L {
+      constructor() {
+        const obj = L(dependencyMap[19]);
+        obj.openCreateGuildModal();
+      }
+    }
+    cResult[8] = L;
+    tmp16 = L;
   } else {
-    tmp16 = cResult[8];
+    class L {
+      constructor() {
+        const obj = L(dependencyMap[19]);
+        obj.openCreateGuildModal();
+      }
+    }
   }
-  importDefault = tmp16;
+  L = tmp16;
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
     class X {
       constructor() {
-        const obj = onPress(dependencyMap[19]);
+        const obj = L(dependencyMap[19]);
         const result = obj.openGuildJoinServerScreen();
       }
     }
@@ -212,7 +218,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     class X {
       constructor() {
-        const obj = onPress(dependencyMap[19]);
+        const obj = L(dependencyMap[19]);
         const result = obj.openGuildJoinServerScreen();
       }
     }
@@ -220,12 +226,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     class X {
       constructor() {
-        const obj = onPress(dependencyMap[19]);
+        const obj = L(dependencyMap[19]);
         const result = obj.openGuildJoinServerScreen();
       }
     }
     let obj3 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: null };
-    let Text = tmp(4886).Text;
+    let Text = tmp(5088).Text;
     const string = tmp(1126).intl.string;
     class I {
       constructor() {
@@ -252,7 +258,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     class X {
       constructor() {
-        const obj = onPress(dependencyMap[19]);
+        const obj = L(dependencyMap[19]);
         const result = obj.openGuildJoinServerScreen();
       }
     }
@@ -261,7 +267,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
     class X {
       constructor() {
-        const obj = onPress(dependencyMap[19]);
+        const obj = L(dependencyMap[19]);
         const result = obj.openGuildJoinServerScreen();
       }
     }
@@ -290,7 +296,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     class X {
       constructor() {
-        const obj = onPress(dependencyMap[19]);
+        const obj = L(dependencyMap[19]);
         const result = obj.openGuildJoinServerScreen();
       }
     }
@@ -298,7 +304,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[12] !== tmp4.createDescription) {
     class X {
       constructor() {
-        const obj = onPress(dependencyMap[19]);
+        const obj = L(dependencyMap[19]);
         const result = obj.openGuildJoinServerScreen();
       }
     }
@@ -329,7 +335,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     class X {
       constructor() {
-        const obj = onPress(dependencyMap[19]);
+        const obj = L(dependencyMap[19]);
         const result = obj.openGuildJoinServerScreen();
       }
     }
@@ -337,7 +343,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[14] === tmp4.templateCard) {
     class X {
       constructor() {
-        const obj = onPress(dependencyMap[19]);
+        const obj = L(dependencyMap[19]);
         const result = obj.openGuildJoinServerScreen();
       }
     }
@@ -346,19 +352,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let intl;
     let intl2;
     let items1;
-    const obj = { onPress, radius: 16, style: closure_0.templateCard, children: items };
-    const obj2 = { style: closure_0.templateIconWrapper, children: closure_12(Icon.Icon, { width: 114, height: 64 }) };
+    const obj = { onPress: L, radius: 16, style: closure_0.templateCard, children: items };
+    const obj2 = { style: closure_0.templateIconWrapper, children: authStore2(Icon.Icon, { width: 114, height: 64 }) };
     const Card = Card_Card.Card;
-    items = [closure_12(metroRequire, obj2), ];
+    items = [authStore2(metroRequire, obj2), ];
     const obj3 = { children: items1 };
     const obj4 = { variant: "text-md/bold", color: "mobile-text-heading-primary", style: closure_0.templateTitle, children: intl.string(Icon.title) };
     const Text = Text_Text.Text;
     intl = intl7.intl;
-    items1 = [closure_12(Text, obj4), ];
+    items1 = [authStore2(Text, obj4), ];
     const obj5 = { variant: "text-sm/medium", color: "text-subtle", children: intl2.string(Icon.description) };
     const Text2 = Text_Text.Text;
     intl2 = intl7.intl;
-    items1[1] = closure_12(Text2, obj5);
+    items1[1] = authStore2(Text2, obj5);
     items[1] = map1(metroRequire, obj3);
     return map1(Card, obj, Icon.id);
   });
@@ -366,7 +372,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[15] = tmp4.templateIconWrapper;
   cResult[16] = tmp4.templateTitle;
   cResult[17] = mapped;
-}) : ((style) => {
+}) : (function GuildUpsellChannelList(style) {
   let Text;
   let closure_0;
   let constants2;
@@ -440,11 +446,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let obj2 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: intl.string(intl7.t["abaDI+"]) };
     let Text = Text_Text.Text;
     intl = intl7.intl;
-    items = [closure_12(Text, obj2), , , , ];
+    items = [authStore2(Text, obj2), , , , ];
     let obj3 = { variant: "text-sm/medium", color: "text-subtle", style: closure_0.createDescription, children: intl2.string(intl7.t.raDC7V) };
     let Text2 = Text_Text.Text;
     intl2 = intl7.intl;
-    items[1] = closure_12(Text2, obj3);
+    items[1] = authStore2(Text2, obj3);
     let obj4 = {
       horizontal: true,
       showsHorizontalScrollIndicator: false,
@@ -471,28 +477,28 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return closure_2_13(Card, obj, Icon.id);
       })
     };
-    items[2] = closure_12(hasOwnProperty, obj4);
+    items[2] = authStore2(hasOwnProperty, obj4);
     let obj5 = { style: closure_0.buttonGroup, children: items1 };
     const obj6 = { variant: "primary", size: "md", text: intl3.string(intl7.t.B44MTm), onPress: callback1, grow: true };
     const Button = components_Button_Button.Button;
     intl3 = intl7.intl;
-    items1 = [closure_12(Button, obj6), ];
+    items1 = [authStore2(Button, obj6), ];
     const obj7 = { variant: "secondary", size: "md", text: intl4.string(intl7.t.wKy7MA), onPress: callback2, grow: true };
     const Button2 = components_Button_Button.Button;
     intl4 = intl7.intl;
-    items1[1] = closure_12(Button2, obj7);
+    items1[1] = authStore2(Button2, obj7);
     items[3] = map1(metroRequire, obj5);
     let tmpResult = memo.length > 0;
     if (tmpResult) {
       const obj8 = { style: closure_0.joinSection, children: items2 };
       const obj9 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: intl5.string(intl7.t.rJRote) };
-      const Text3 = tmp5(4886).Text;
+      const Text3 = tmp5(5088).Text;
       intl5 = tmp5(1126).intl;
-      items2 = [closure_12(Text3, obj9), ];
+      items2 = [authStore2(Text3, obj9), ];
       const obj10 = { variant: "text-sm/medium", color: "text-subtle", style: closure_0.descriptionSpacing, children: intl6.string(intl7.t.pJT2DK) };
-      const Text4 = tmp5(4886).Text;
+      const Text4 = tmp5(5088).Text;
       intl6 = tmp5(1126).intl;
-      items2[1] = closure_12(Text4, obj10);
+      items2[1] = authStore2(Text4, obj10);
       tmpResult = tmp(tmp2, obj8);
     }
     items[4] = tmpResult;

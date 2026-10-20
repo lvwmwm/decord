@@ -1,48 +1,48 @@
-// Module ID: 17389
-// Function ID: 17390
+// Module ID: 17985
+// Function ID: 17986
 // Name: LaunchPad
-// Dependencies: [32, 19, 17, 4561, 7036, 6831, 5691, 2055, 502, 2051, 7204, 7121, 2074, 13564, 4905, 5616, 5071, 4909, 1085, 21, 587, 4890, 558, 576, 5909, 4886, 504, 4612, 4745, 6547, 1126, 12834, 9266, 15405, 1369, 14406, 10702, 9505, 4736, 9506, 9496, 1484, 1618, 9497, 12557, 1252, 17390, 17397, 15625, 17410, 17411, 2]
+// Dependencies: [32, 19, 17, 4802, 7244, 6073, 6034, 2069, 502, 2065, 7404, 6078, 2087, 14048, 6035, 5963, 5966, 5113, 1085, 21, 587, 5092, 558, 576, 6185, 5088, 504, 4850, 4985, 6739, 1126, 13141, 8768, 15886, 1382, 14836, 12694, 8708, 4976, 8709, 8695, 1497, 1631, 8696, 11202, 1265, 17986, 17993, 16126, 18006, 18007, 2]
 
-// Module 17389 (LaunchPad)
+// Module 17985 (LaunchPad)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import ChatInputUtils from "ChatInputUtils" /* 4745 */;
-import _mod9496 from "module_9496" /* 9496 */;
-import AutocompleterDefault from "Autocompleter" /* 9497 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9505 */;
-import hideLaunchPadDefault from "hideLaunchPad" /* 10702 */;
-import RouteManagerDefault from "RouteManager" /* 12557 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import ChatInputUtils from "ChatInputUtils" /* 4985 */;
+import _mod8695 from "module_8695" /* 8695 */;
+import AutocompleterDefault from "Autocompleter" /* 8696 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 8708 */;
+import RouteManagerDefault from "RouteManager" /* 11202 */;
+import hideLaunchPadDefault from "hideLaunchPad" /* 12694 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ActionSheetStore_mod from "ActionSheetStore" /* 4561 */;
-import ChannelListStore_mod from "ChannelListStore" /* 7036 */;
-import NavigationHistoryStore_mod from "NavigationHistoryStore" /* 6831 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5691 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
+import ActionSheetStore_mod from "ActionSheetStore" /* 4802 */;
+import ChannelListStore_mod from "ChannelListStore" /* 7244 */;
+import NavigationHistoryStore_mod from "NavigationHistoryStore" /* 6073 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6034 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7204 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7121 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 13564 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
-import SortedGuildStore from "SortedGuildStore" /* 5616 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7404 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6078 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 14048 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
+import SortedGuildStore from "SortedGuildStore" /* 5963 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, basicChannel, dependencyMap, tab, text;
+let _require, basicChannel, dependencyMap;
 
 let c10;
 let c9;
@@ -58,9 +58,9 @@ let obj3;
 let obj4;
 let size;
 let tmp;
-const Text_Text = tmp(4886);
-const Pressables = tmp(5909);
-const DevToolsNavigator = tmp(14406);
+const Text_Text = tmp(5088);
+const Pressables = tmp(6185);
+const DevToolsNavigator = tmp(14836);
 function createAndAppendChannel(item10022, set, items) {
   if (!set.has(item10022)) {
     const tmp3 = createAutocompleterResultForChannelIdDefault(item10022);
@@ -414,7 +414,7 @@ size = { width: 32, height: 32, borderRadius: md - 5, alignItems: "center", just
 obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_29 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabButton(arg0) {
   let accessibilityLabel;
   let icon;
   let onPress;
@@ -486,7 +486,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tabSelected;
   cResult[3] = items;
   tmp6 = items;
-}) : ((selected) => {
+}) : (function TabButton(selected) {
   let accessibilityLabel;
   let colors;
   let icon;
@@ -508,7 +508,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp2(PressableHighlight, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
+let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabHeader(text) {
   const obj = react2;
   const cResult = obj.c(3);
   text = text.text;
@@ -526,7 +526,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
   cResult[1] = text;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((text) => {
+}) : (function TabHeader(text) {
   text = text.text;
   const obj = { style: closure_29().subheader, variant: "heading-md/extrabold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: text };
   return closure_27(Text_Text.Text, obj);
@@ -538,7 +538,7 @@ const __initData3 = { code: "function LaunchPadTsx3(){const{sharedState}=this.__
 const __initData4 = { code: "function LaunchPadTsx4(sharedState_0){const{keyboardShown,runOnJS,setFocused}=this.__closure;if(!keyboardShown.get()&&sharedState_0>0.75){runOnJS(setFocused)(true);}else if(keyboardShown.get()&&sharedState_0<=0){runOnJS(setFocused)(false);}}" };
 let memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
+let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function LaunchPadHeader(tab) {
   let closure_7;
   let isDeveloper;
   let ref;
@@ -576,7 +576,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
   const sharedValue = tmpResult4.useSharedValue(false);
   ActionSheetStore = react.useRef(tab);
   if (cResult[2] !== tab) {
-    const fn2 = function v() {
+    const fn2 = function y() {
       ref2.current = tab;
     };
     cResult[2] = tab;
@@ -598,15 +598,15 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       let tmp15 = ActionSheetStore;
       const items1 = [ActionSheetStore];
-      class A {
+      class I {
         constructor() {
           return ref2.isOpen();
         }
       }
       cResult[7] = items1;
-      cResult[8] = A;
-      tmp14 = A;
-      class H {
+      cResult[8] = I;
+      tmp14 = I;
+      class O {
         constructor() {
           closure_7(!stateFromStores1, stateFromStores1);
         }
@@ -636,7 +636,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
           }
           const effect2 = obj3.useEffect(tmp21, tmp20);
           const tmpResult6 = tmp(sharedState[27]);
-          class D {
+          class L {
             constructor() {
               const tmp = tab === constants.SEARCH && 1 === sharedState.get();
               if (tmp) {
@@ -647,13 +647,13 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
           let obj2 = { sharedState };
           tmp24.__closure = obj2;
           tmp24.__workletHash = 17067823098320;
-          class H {
+          class O {
             constructor() {
               closure_7(!stateFromStores1, stateFromStores1);
             }
           }
           tmp24.__initData = __initData;
-          class L {
+          class D {
             constructor(arg0) {
               const obj = sharedValue;
               if (!sharedValue.get()) {
@@ -670,18 +670,18 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
             }
           }
           const useAnimatedReaction = tmpResult6.useAnimatedReaction;
-          L.__closure = { keyboardShown: sharedValue, runOnJS: tmp(sharedState[27]).runOnJS, setFocused: tmp12 };
-          L.__workletHash = 15266113312724;
-          L.__initData = __initData2;
+          D.__closure = { keyboardShown: sharedValue, runOnJS: tmp(sharedState[27]).runOnJS, setFocused: tmp12 };
+          D.__workletHash = 15266113312724;
+          D.__initData = __initData2;
           const obj4 = { keyboardShown: sharedValue, runOnJS: tmp(sharedState[27]).runOnJS, setFocused: tmp12 };
-          const animatedReaction = useAnimatedReaction(tmp24, L);
+          const animatedReaction = useAnimatedReaction(tmp24, D);
           if (cResult[18] === searchRef) {
             if (cResult[19] === tab) {
               let tmp39;
               let tmp38;
               const _Symbol2 = Symbol;
               const tabs = tmp4.tabs;
-              class D {
+              class L {
                 constructor() {
                   const tmp = tab === constants.SEARCH && 1 === sharedState.get();
                   if (tmp) {
@@ -695,7 +695,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
                   return closure_1_27(tab(sharedState[31]).FlashIcon, obj);
                 };
                 const string = tmp(tmp2[30]).intl.string;
-                class D {
+                class L {
                   constructor() {
                     const tmp = tab === constants.SEARCH && 1 === sharedState.get();
                     if (tmp) {
@@ -704,7 +704,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
                   }
                 }
                 cResult[22] = fn4;
-                class X {
+                class W {
                   constructor() {
                     setTab(constants.SEARCH);
                     const current = searchRef.current;
@@ -715,7 +715,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
                 }
                 cResult[23] = tmp40;
                 tmp39 = tmp40;
-                class H {
+                class O {
                   constructor() {
                     closure_7(!stateFromStores1, stateFromStores1);
                   }
@@ -729,7 +729,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
                 if (cResult[25] === setTab) {
                   tmp41 = cResult[26];
                 }
-                class D {
+                class L {
                   constructor() {
                     const tmp = tab === constants.SEARCH && 1 === sharedState.get();
                     if (tmp) {
@@ -737,7 +737,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
                     }
                   }
                 }
-                class X {
+                class W {
                   constructor() {
                     setTab(constants.SEARCH);
                     const current = searchRef.current;
@@ -748,13 +748,13 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
                 }
                 tmp47[0] = tmp38;
                 tmp47[1] = tmp39;
-                class H {
+                class O {
                   constructor() {
                     closure_7(!stateFromStores1, stateFromStores1);
                   }
                 }
                 tmp47[3] = tab === constants3.SEARCH;
-                class L {
+                class D {
                   constructor(arg0) {
                     const obj = sharedValue;
                     if (!sharedValue.get()) {
@@ -774,7 +774,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
                 cResult[28] = tab === constants3.SEARCH;
                 cResult[29] = tmp48;
               }
-              class X {
+              class W {
                 constructor() {
                   setTab(constants.SEARCH);
                   const current = searchRef.current;
@@ -784,13 +784,13 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
                 }
               }
               cResult[24] = searchRef;
-              class H {
+              class O {
                 constructor() {
                   closure_7(!stateFromStores1, stateFromStores1);
                 }
               }
               cResult[25] = setTab;
-              class L {
+              class D {
                 constructor(arg0) {
                   const obj = sharedValue;
                   if (!sharedValue.get()) {
@@ -806,13 +806,13 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
                   }
                 }
               }
-              cResult[26] = X;
-              tmp41 = X;
+              cResult[26] = W;
+              tmp41 = W;
             }
           }
           if (tab === constants3.SEARCH) {
             const obj5 = { size: "md", returnKeyType: "done", ref: searchRef, onChange: null, autoComplete: "off", spellCheck: false, autoFocus: false };
-            class D {
+            class L {
               constructor() {
                 const tmp = tab === constants.SEARCH && 1 === sharedState.get();
                 if (tmp) {
@@ -823,7 +823,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
             tmp31 = closure_27(tmp(tmp2[29]).SearchField, obj5);
           } else if (tab === constants3.MEMBERS) {
             ({ text: obj11.string(tmp(sharedState[30]).t["9Oq93m"]) });
-            class D {
+            class L {
               constructor() {
                 const tmp = tab === constants.SEARCH && 1 === sharedState.get();
                 if (tmp) {
@@ -831,7 +831,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
                 }
               }
             }
-            class X {
+            class W {
               constructor() {
                 setTab(constants.SEARCH);
                 const current = searchRef.current;
@@ -842,7 +842,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
             }
           } else if (tab === constants3.NOTIFICATIONS) {
             ({ text: obj9.string(tmp(sharedState[30]).t.HcoRu0) });
-            class D {
+            class L {
               constructor() {
                 const tmp = tab === constants.SEARCH && 1 === sharedState.get();
                 if (tmp) {
@@ -850,7 +850,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
                 }
               }
             }
-            class X {
+            class W {
               constructor() {
                 setTab(constants.SEARCH);
                 const current = searchRef.current;
@@ -868,7 +868,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
           cResult[21] = tmp31;
         }
       }
-      class D {
+      class L {
         constructor() {
           const tmp = tab === constants.SEARCH && 1 === sharedState.get();
           if (tmp) {
@@ -877,18 +877,18 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
         }
       }
       const items2 = [tab, , tmp12];
-      class H {
+      class O {
         constructor() {
           closure_7(!stateFromStores1, stateFromStores1);
         }
       }
       cResult[15] = tab;
       cResult[16] = items2;
-      cResult[17] = D;
-      tmp21 = D;
+      cResult[17] = L;
+      tmp21 = L;
       tmp20 = items2;
     }
-    class H {
+    class O {
       constructor() {
         closure_7(!stateFromStores1, stateFromStores1);
       }
@@ -896,12 +896,12 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
     const items3 = [, tmp12];
     cResult[9] = stateFromStores1;
     cResult[10] = tmp12;
-    cResult[11] = H;
+    cResult[11] = O;
     cResult[12] = items3;
     tmp18 = items3;
-    tmp17 = H;
+    tmp17 = O;
   }
-  const fn3 = function y(arg0, arg1) {
+  const fn3 = function v(arg0, arg1) {
     const tmp = arg0;
     if (tmp) {
       if (ref2.current === constants.SEARCH) {
@@ -947,7 +947,7 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
   cResult[5] = searchRef;
   cResult[6] = fn3;
   tmp12 = fn3;
-}) : ((tab) => {
+}) : (function LaunchPadHeader(tab) {
   let intl;
   let intl2;
   let intl3;
@@ -1032,13 +1032,13 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
       callback(true);
     }
   }, items4);
-  const fn = function y() {
+  const fn = function v() {
     return sharedState.get();
   };
   fn.__closure = { sharedState };
   fn.__workletHash = 15536041461010;
   fn.__initData = __initData3;
-  const fn2 = function v(arg0) {
+  const fn2 = function y(arg0) {
     const obj = sharedValue;
     if (!sharedValue.get()) {
       if (arg0 > 0.75) {
@@ -1147,9 +1147,9 @@ let closure_37 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((tab) => {
   return closure_28(sharedValue, obj6);
 }));
 let closure_40 = [];
-let items = [_mod9496.AutocompleterResultTypes.GUILD, _mod9496.AutocompleterResultTypes.TEXT_CHANNEL, _mod9496.AutocompleterResultTypes.GROUP_DM, _mod9496.AutocompleterResultTypes.VOICE_CHANNEL, _mod9496.AutocompleterResultTypes.USER];
+let items = [_mod8695.AutocompleterResultTypes.GUILD, _mod8695.AutocompleterResultTypes.TEXT_CHANNEL, _mod8695.AutocompleterResultTypes.GROUP_DM, _mod8695.AutocompleterResultTypes.VOICE_CHANNEL, _mod8695.AutocompleterResultTypes.USER];
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWrapperStyles() {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(5);
@@ -1177,7 +1177,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp4;
   cResult[4] = items;
   tmp5 = items;
-}) : (() => {
+}) : (function useWrapperStyles() {
   const tmp = closure_29();
   let closure_0 = tmp;
   const height = useWindowDimensionsDefault().height;
@@ -1193,7 +1193,7 @@ let closure_42 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutocompleterResults(arg0) {
   let closure_0;
   let first;
   let first1;
@@ -1233,7 +1233,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   first1 = tmp2(obj2.useState(first), 1)[0];
   if (cResult[1] !== first1) {
-    const fn2 = function v() {
+    const fn2 = function y() {
       return () => first1.clean();
     };
     items = [first1];
@@ -1248,7 +1248,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const effect = obj2.useEffect(tmp9, tmp10);
   if (cResult[4] !== first1) {
-    class E {
+    class R {
       constructor() {
         let options;
         const obj = RouteManagerDefault;
@@ -1267,12 +1267,12 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const items1 = [first1];
     cResult[4] = first1;
-    cResult[5] = E;
+    cResult[5] = R;
     cResult[6] = items1;
     tmp13 = items1;
-    tmp12 = E;
+    tmp12 = R;
   } else {
-    class E {
+    class R {
       constructor() {
         let options;
         const obj = RouteManagerDefault;
@@ -1293,7 +1293,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const effect1 = obj2.useEffect(tmp12, tmp13);
   if (cResult[7] === first1) {
-    class E {
+    class R {
       constructor() {
         let options;
         const obj = RouteManagerDefault;
@@ -1312,16 +1312,16 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const effect2 = obj2.useEffect(T, items2);
     if (cResult[11] !== first1) {
-      class I {
+      class A {
         constructor(arg0) {
           importDefault(arg0);
           first1.search(arg0);
         }
       }
       cResult[11] = first1;
-      cResult[12] = I;
+      cResult[12] = A;
     } else {
-      class I {
+      class A {
         constructor(arg0) {
           importDefault(arg0);
           first1.search(arg0);
@@ -1329,7 +1329,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     if (cResult[13] === tmp4) {
-      class I {
+      class A {
         constructor(arg0) {
           importDefault(arg0);
           first1.search(arg0);
@@ -1356,7 +1356,7 @@ let closure_43 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = arg0;
   cResult[9] = T;
   cResult[10] = items2;
-}) : ((arg0) => {
+}) : (function useAutocompleterResults(arg0) {
   let first1;
   let id;
   let items3;
@@ -1420,7 +1420,7 @@ const __initData6 = { code: "function LaunchPadTsx6(hidden,prevHidden){const{run
 const __initData7 = { code: "function LaunchPadTsx7(){const{sharedState}=this.__closure;return sharedState.get()===0;}" };
 const __initData8 = { code: "function LaunchPadTsx8(hidden,prevHidden){const{runOnJS,clearQuery,cancelTimeout}=this.__closure;if(hidden===prevHidden)return;if(hidden&&hidden!==prevHidden){runOnJS(clearQuery)();}else if(!hidden&&hidden!==prevHidden){runOnJS(cancelTimeout)();}}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_48 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, sharedState) => {
+let closure_48 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeferredQueryClear(arg0, arg1, sharedState) {
   let clearQuery;
   let closure_0;
   let tmp4;
@@ -1488,7 +1488,7 @@ let closure_48 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, sh
   fn3.__initData = __initData6;
   ({ runOnJS: require("ReanimatedRexport").runOnJS, clearQuery, cancelTimeout });
   const animatedReaction = tmpResult.useAnimatedReaction(fn2, fn3);
-}) : ((arg0, arg1, sharedState) => {
+}) : (function useDeferredQueryClear(arg0, arg1, sharedState) {
   let clearQuery;
   let closure_0;
   _require = arg0;
@@ -1541,7 +1541,7 @@ let closure_48 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, sh
   const animatedReaction = obj.useAnimatedReaction(fn, fn2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function LaunchPad(arg0) {
   let arr;
   let channelHistory2;
   let closure_3;
@@ -1685,7 +1685,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                                           cResult[41] = tmp36;
                                           cResult[42] = tmp24;
                                           const tmp66 = closure_28(View, obj3);
-                                          class O {
+                                          class H {
                                             constructor() {
                                               const arr = str;
                                               if (str.length > 0) {
@@ -1743,7 +1743,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                             cResult[32] = queryResults;
                             cResult[33] = selectedUnreadGuild;
                             cResult[34] = first2;
-                            class O {
+                            class H {
                               constructor() {
                                 const arr = str;
                                 if (str.length > 0) {
@@ -1808,7 +1808,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
             cResult[23] = unreadGuilds;
             cResult[24] = unreadPrivateChannelIds;
             cResult[25] = visible;
-            class O {
+            class H {
               constructor() {
                 const arr = str;
                 if (str.length > 0) {
@@ -1831,7 +1831,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         const tmp35 = closure_27(closure_37, obj8);
         cResult[14] = sharedState;
         cResult[15] = first2;
-        class O {
+        class H {
           constructor() {
             const arr = str;
             if (str.length > 0) {
@@ -1856,7 +1856,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       cResult[11] = items1;
       tmp26 = items1;
     }
-    class O {
+    class H {
       constructor() {
         const arr = str;
         if (str.length > 0) {
@@ -1874,15 +1874,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
     cResult[6] = str.length;
     cResult[7] = first1;
-    cResult[8] = O;
-    tmp25 = O;
+    cResult[8] = H;
+    tmp25 = H;
   }
   const obj9 = { disabled: arr.length > 0, visible };
   cResult[3] = arr.length > 0;
   cResult[4] = visible;
   cResult[5] = obj9;
   tmp13 = obj9;
-}) : ((arg0) => {
+}) : (function LaunchPad(arg0) {
   let _undefined;
   let c0;
   let channelHistory;

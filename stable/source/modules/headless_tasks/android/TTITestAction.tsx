@@ -1,26 +1,26 @@
-// Module ID: 18123
-// Function ID: 18124
+// Module ID: 18756
+// Function ID: 18757
 // Name: TTITestAction
-// Dependencies: [5, 17415, 4776, 5948, 502, 2051, 4703, 2074, 1085, 3, 584, 4743, 12534, 15938, 1363, 1368, 1252, 4736, 6965, 16485, 7517, 4901, 6082, 8054, 4902, 12556, 15400, 1198, 2]
+// Dependencies: [5, 18011, 5016, 6133, 502, 2065, 4943, 2087, 1085, 3, 584, 4983, 12641, 16451, 1376, 1381, 1265, 4976, 7174, 11494, 9312, 5103, 5930, 8492, 5104, 11201, 15881, 1210, 2]
 
-// Module 18123 (TTITestAction)
+// Module 18756 (TTITestAction)
 import LoggerDefault from "Logger" /* 3 */;
-import AnalyticsUtils from "AnalyticsUtils" /* 1252 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1363 */;
-import react_native from "react-native" /* 1368 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
-import react_nativeDefault from "react-native" /* 4743 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5948 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6082 */;
-import ComponentProfiler from "ComponentProfiler" /* 12534 */;
-import react_nativeDefault2 from "react-native" /* 15938 */;
-import NativeAppStartup from "NativeAppStartup" /* 17415 */;
+import AnalyticsUtils from "AnalyticsUtils" /* 1265 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1376 */;
+import react_native from "react-native" /* 1381 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
+import react_nativeDefault from "react-native" /* 4983 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5930 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6133 */;
+import ComponentProfiler from "ComponentProfiler" /* 12641 */;
+import react_nativeDefault2 from "react-native" /* 16451 */;
+import NativeAppStartup from "NativeAppStartup" /* 18011 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ExperimentStore from "ExperimentStore" /* 4776 */;
+import ExperimentStore from "ExperimentStore" /* 5016 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4703 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4943 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Constants from "Constants" /* 1085 */;
 import Dispatcher from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
@@ -433,7 +433,7 @@ obj = function _setupTTITest() {
               error2 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Set", done: true };
             }
             break;
           }
@@ -1034,13 +1034,13 @@ obj = function _apiLogin() {
             closure_0 = iter;
             obj = password(closure_2_2[10]);
             closure_1 = iter;
-            const f155581 = () => {
+            const f158526 = () => {
               const error = new Error("Unable to login " + closure_0 + ". Login failed with action '" + obj + "'");
               closure_2_1(error);
             };
             function handler(arg0) {
               obj.unsubscribe(closure_1, handler);
-              return f155581(arg0);
+              return f158526(arg0);
             }
             const subscription = obj.subscribe(iter, handler);
           }
@@ -1072,7 +1072,7 @@ function subscribeOnce(subscribe, arg1, arg2) {
   let closure_2 = arg2;
   function handler(arg0) {
     obj.unsubscribe(closure_1, handler);
-    return f155581(arg0);
+    return f158526(arg0);
   }
   return subscribe.subscribe("LOGIN_SUCCESS", handler);
 }
@@ -1222,7 +1222,7 @@ obj = {
     const obj5 = react_nativeDefault;
     obj5.logToDevice(json);
   },
-  backchannel: function() {
+  backchannel() {
     return closure_16(...arguments);
   }
 };

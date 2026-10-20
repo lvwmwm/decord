@@ -1,18 +1,18 @@
-// Module ID: 14263
-// Function ID: 14264
+// Module ID: 14285
+// Function ID: 14286
 // Name: ToastEntity
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4886, 5974, 2019, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 6157, 2032, 2]
 
-// Module 14263 (ToastEntity)
+// Module 14285 (ToastEntity)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import utils_StringUtils from "utils/StringUtils" /* 2019 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import FastImageDefault from "FastImage" /* 5974 */;
+import utils_StringUtils from "utils/StringUtils" /* 2032 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import FastImageDefault from "FastImage" /* 6157 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ obj3 = { borderRadius: nativeDefault.radii.sm };
 obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 let closure_5 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ToastEntity(arg0) {
   let entity;
   let guild;
   let style;
@@ -88,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp2.entity;
   cResult[4] = items;
   tmp5 = items;
-}) : ((entity) => {
+}) : (function ToastEntity(entity) {
   let guild;
   entity = entity.entity;
   const style = entity.style;
@@ -108,7 +108,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <View style={items} accessibilityElementsHidden importantForAccessibility="no-hide-descendants"><closure_6 entity={entity} styles={tmp} /></View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ToastEntityContent(arg0) {
   let entity;
   let styles;
   const obj = react2;
@@ -189,7 +189,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (cResult[15] !== entity.name) {
         const tmpResult = utils_StringUtils;
         const acronym = tmpResult.getAcronym(entity.name);
-        const Text = tmp(4886).Text;
+        const Text = tmp(5088).Text;
         let str = "text-md/semibold";
         if (acronym.length > 2) {
           let str2 = "text-xs/semibold";
@@ -276,7 +276,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[34] = tmp8;
     tmp5 = tmp8;
   }
-}) : ((arg0) => {
+}) : (function ToastEntityContent(arg0) {
   let entity;
   let obj4;
   let styles;

@@ -1,18 +1,18 @@
-// Module ID: 16300
-// Function ID: 16301
+// Module ID: 16822
+// Function ID: 16823
 // Name: useGuildsBarSelectedGuildScroller
-// Dependencies: [19, 4699, 558, 576, 2]
+// Dependencies: [19, 4939, 558, 576, 2]
 
-// Module 16300 (useGuildsBarSelectedGuildScroller)
+// Module 16822 (useGuildsBarSelectedGuildScroller)
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsBarSelectedGuildScroller(arg0) {
   let closure_0;
   let tmp2;
   let tmp3;
@@ -53,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = cResult[2];
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : ((arg0) => {
+}) : (function useGuildsBarSelectedGuildScroller(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   const effect = react.useEffect(() => {

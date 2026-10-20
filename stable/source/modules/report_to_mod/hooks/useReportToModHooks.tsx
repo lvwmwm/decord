@@ -1,27 +1,27 @@
-// Module ID: 11289
-// Function ID: 11290
+// Module ID: 9684
+// Function ID: 9685
 // Name: useReportToModHooks
-// Dependencies: [19, 2074, 5110, 558, 576, 6769, 6793, 504, 6779, 6965, 7852, 2]
+// Dependencies: [19, 2087, 5432, 558, 576, 6969, 6988, 504, 6978, 7174, 8301, 2]
 // Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel
 
-// Module 11289 (useReportToModHooks)
+// Module 9684 (useReportToModHooks)
 import react from "react" /* 19 */;
-import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 6769 */;
-import ReportToModUtils from "ReportToModUtils" /* 6779 */;
-import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 6793 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6965 */;
-import UserActionCreators from "UserActionCreators" /* 7852 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import MessageStore from "MessageStore" /* 5110 */;
+import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 6969 */;
+import ReportToModUtils from "ReportToModUtils" /* 6978 */;
+import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 6988 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
+import UserActionCreators from "UserActionCreators" /* 8301 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import MessageStore from "MessageStore" /* 5432 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, messageReference;
+let _require;
 
 const useEffect = react.useEffect;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsReportToModEnabled(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function l() {
+    const fn = function s() {
       if (null == closure_0) {
         return false;
       } else {
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useIsReportToModEnabled(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore];
@@ -78,7 +78,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReportToModChannelId(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -94,7 +94,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function l() {
+    const fn = function s() {
       let guild = null;
       if (null != closure_0) {
         guild = GuildStore.getGuild(tmp);
@@ -117,7 +117,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useReportToModChannelId(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore];
@@ -139,7 +139,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((messageReference) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadReportedMessage(messageReference) {
   let first;
   let tmp6;
   let tmp = messageReference;
@@ -154,7 +154,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((messageReference) =>
     first = cResult[0];
   }
   if (cResult[1] !== messageReference) {
-    const fn = function s() {
+    const fn = function l() {
       let message = null;
       if (null != messageReference) {
         message = MessageStore.getMessage(tmp.channel_id, tmp.message_id);
@@ -178,7 +178,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((messageReference) =>
     }
     useEffect(tmp8, tmp9);
   }
-  const fn2 = function h() {
+  const fn2 = function p() {
     let obj3;
     const tmp = null == stateFromStores && null != messageReference;
     if (tmp) {
@@ -195,7 +195,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((messageReference) =>
   cResult[6] = items1;
   tmp9 = items1;
   tmp8 = fn2;
-}) : ((messageReference) => {
+}) : (function useLoadReportedMessage(messageReference) {
   messageReference = messageReference.messageReference;
   let obj = messageReference(504);
   const items = [MessageStore];

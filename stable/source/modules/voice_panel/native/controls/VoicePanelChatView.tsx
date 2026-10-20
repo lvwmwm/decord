@@ -1,30 +1,30 @@
-// Module ID: 11899
-// Function ID: 11900
+// Module ID: 11971
+// Function ID: 11972
 // Name: VoicePanelChatView
-// Dependencies: [19, 17, 11900, 1085, 21, 4890, 5091, 558, 576, 1121, 11897, 1126, 4796, 11901, 4612, 5911, 6570, 7507, 1484, 1618, 11909, 4903, 4732, 11910, 9760, 5767, 4589, 11145, 2]
+// Dependencies: [19, 17, 11972, 1085, 21, 5092, 5106, 558, 576, 1121, 11969, 1126, 10261, 11973, 4850, 10227, 6762, 9302, 1497, 1631, 11981, 7015, 4972, 11982, 10364, 5359, 4827, 10681, 2]
 
-// Module 11899 (VoicePanelChatView)
+// Module 11971 (VoicePanelChatView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import intl2 from "intl" /* 1126 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4796 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5911 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6570 */;
-import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 11897 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11900 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11901 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6762 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10227 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10261 */;
+import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 11969 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11972 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11973 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let blurResult, preloadResult, shown, updateChatOpenResult;
+let preloadResult;
 
 let closure_4;
 let hasOwnProperty;
@@ -40,7 +40,7 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 const __initData = { code: "function VoicePanelChatViewTsx1(){const{windowDimensions}=this.__closure;return{width:windowDimensions.get().width,height:windowDimensions.get().height};}" };
 const __initData2 = { code: "function VoicePanelChatViewTsx2(){const{windowDimensions}=this.__closure;return{width:windowDimensions.get().width,height:windowDimensions.get().height};}" };
 const memo = react.memo;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelDismissChatButton() {
   let first;
   let intl;
   let tmp5;
@@ -67,7 +67,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function VoicePanelDismissChatButton() {
   let intl;
   const callback = react.useCallback(() => {
     const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
@@ -79,7 +79,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   return metroRequire(tmp2, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GradientHack() {
   const obj = react2;
   const cResult = obj.c(6);
   const windowDimensions = react.useContext(VoicePanelStateContextDefault).windowDimensions;
@@ -124,7 +124,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = tmp4.gradientWrapper;
   cResult[2] = items;
   tmp6 = items;
-}) : (() => {
+}) : (function GradientHack() {
   let items;
   const windowDimensions = react.useContext(VoicePanelStateContextDefault).windowDimensions;
   const fn = function n() {
@@ -143,7 +143,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroRequire(tmp3, obj2);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((shown) => {
+const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelChatView(shown) {
   let channelId;
   let guildId;
   const tmp = shown;
@@ -171,7 +171,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
           tmp11 = cResult[7];
         }
         const effect = obj2.useEffect(tmp10, tmp11);
-        class V {
+        class D {
           constructor() {
             tmp = closure_1(closure_2[21]);
             tmp2 = guildId;
@@ -180,37 +180,37 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
               tmp2 = ME;
             }
             preloadResult = preload(tmp2, channelId);
-            return () => { /* body not rendered: F141959 */ };
+            return () => {
+              const obj = ref(guildId[6]);
+              obj.updateChatOpen(channelId, false);
+            };
           }
         }
-        class O {
-          constructor() {
-            obj = closure_1(closure_2[6]);
-            updateChatOpenResult = obj.updateChatOpen(channelId, shown);
-            current = closure_1.current;
-            if (shown) {
-              if (current != null) {
-                result = current.chatInputTrackerRegister();
-              }
-            } else {
-              if (current != null) {
-                result1 = current.chatInputTrackerUnregister();
-              }
-              current2 = tmp2.current;
-              if (current2 != null) {
-                blurResult = current2.blur();
-              }
+        const fn = function x() {
+          const obj = ChannelRTCActionCreatorsDefault;
+          obj.updateChatOpen(channelId, shown);
+          const current = ref.current;
+          if (shown) {
+            if (current != null) {
+              const result = current.chatInputTrackerRegister();
             }
-            return;
+          } else {
+            if (current != null) {
+              const result1 = current.chatInputTrackerUnregister();
+            }
+            const current2 = tmp2.current;
+            if (current2 != null) {
+              current2.blur();
+            }
           }
-        }
+        };
         const items = [channelId, shown];
         cResult[8] = channelId;
         cResult[9] = shown;
-        cResult[10] = O;
+        cResult[10] = fn;
         cResult[11] = items;
       }
-      class V {
+      class D {
         constructor() {
           tmp = closure_1(closure_2[21]);
           tmp2 = guildId;
@@ -219,17 +219,19 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
             tmp2 = ME;
           }
           preloadResult = preload(tmp2, channelId);
-          return () => { /* body not rendered: F141959 */ };
+          return () => {
+            const obj = ref(guildId[6]);
+            obj.updateChatOpen(channelId, false);
+          };
         }
       }
-      tmp12[0] = guildId;
-      tmp12[1] = channelId;
+      const items1 = [guildId, channelId];
       cResult[4] = channelId;
       cResult[5] = guildId;
-      cResult[6] = V;
-      cResult[7] = tmp12;
-      tmp11 = tmp12;
-      tmp10 = V;
+      cResult[6] = D;
+      cResult[7] = items1;
+      tmp11 = items1;
+      tmp10 = D;
     }
   }
   const tmpResult = tmp(tmp2[20]);
@@ -238,7 +240,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
   cResult[1] = rect.right;
   cResult[2] = width;
   cResult[3] = controlsDrawerOpenWidth;
-}) : ((shown) => {
+}) : (function VoicePanelChatView(shown) {
   let AccessibilityView;
   let ThemeContextProvider;
   let intl;

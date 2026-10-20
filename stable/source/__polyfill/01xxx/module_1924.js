@@ -4,18 +4,25 @@
 
 // Module 1924
 const obj = {
-  locale: "tr",
+  locale: "hu",
   pluralRuleFunction(arg0, arg1) {
-    let str = "other";
-    let str2 = "other";
-    if (!arg1) {
+    let str;
+    const tmp = arg1;
+    if (tmp) {
+      let str2;
+      if (1 == arg0) {
+        str2 = "one";
+      } else {
+        str2 = "other";
+      }
+      str = str2;
+    } else {
+      str = "other";
       if (1 == arg0) {
         str = "one";
       }
-      str2 = str;
     }
-    return str2;
+    return str;
   }
 };
 globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "tr-CY", parentLocale: "tr" });

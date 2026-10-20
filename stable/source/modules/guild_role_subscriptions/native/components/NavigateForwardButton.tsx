@@ -1,18 +1,18 @@
-// Module ID: 15039
-// Function ID: 15040
+// Module ID: 15519
+// Function ID: 15520
 // Name: NavigateForwardButton
-// Dependencies: [19, 21, 4890, 587, 558, 576, 4886, 1188, 15040, 5909, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 5088, 1200, 15520, 6185, 2]
 
-// Module 15039 (NavigateForwardButton)
+// Module 15519 (NavigateForwardButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Pressables from "Pressables" /* 5909 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15040 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Pressables from "Pressables" /* 6185 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15520 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let obj2;
 let obj = { container: obj2, text: { flexGrow: 1 } };
 obj2 = { alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, flexDirection: "row", padding: 16 };
 let closure_5 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavigateForwardButton(arg0) {
   let items;
   let onPress;
   let text;
@@ -40,7 +40,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { source: AssetRegistryDefault };
-      const Icon = tmp(1188).Icon;
+      const Icon = tmp(1200).Icon;
       const tmp11 = _false(Icon, obj2);
       cResult[3] = tmp11;
       tmp8 = tmp11;
@@ -71,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = text;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0) => {
+}) : (function NavigateForwardButton(arg0) {
   let items;
   let onPress;
   let text;

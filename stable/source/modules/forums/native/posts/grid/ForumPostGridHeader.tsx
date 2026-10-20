@@ -1,33 +1,33 @@
-// Module ID: 11616
-// Function ID: 11617
+// Module ID: 11680
+// Function ID: 11681
 // Name: ForumPostGridHeader
-// Dependencies: [19, 17, 6776, 2058, 21, 4890, 558, 576, 11617, 11619, 11628, 11629, 11630, 2]
+// Dependencies: [19, 17, 6975, 2072, 21, 5092, 558, 576, 11681, 11683, 11693, 11694, 11695, 2]
 
-// Module 11616 (ForumPostGridHeader)
+// Module 11680 (ForumPostGridHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import ForumConstants from "ForumConstants" /* 6776 */;
-import ForumPostPinIconDefault from "ForumPostPinIcon" /* 11617 */;
-import ForumPostTimestampDefault from "ForumPostTimestamp" /* 11628 */;
-import ForumPostNewTagDefault from "ForumPostNewTag" /* 11629 */;
-import ForumPostTitleDefault from "ForumPostTitle" /* 11630 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import ForumConstants from "ForumConstants" /* 6975 */;
+import ForumPostPinIconDefault from "ForumPostPinIcon" /* 11681 */;
+import ForumPostTimestampDefault from "ForumPostTimestamp" /* 11693 */;
+import ForumPostNewTagDefault from "ForumPostNewTag" /* 11694 */;
+import ForumPostTitleDefault from "ForumPostTitle" /* 11695 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ForumPostUsername = tmp(11619);
+const ForumPostUsername = tmp(11683);
 const View = react_native.View;
 const ForumTimestampFormats = ForumConstants.ForumTimestampFormats;
 const ChannelFlags = ChannelConstants.ChannelFlags;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ pinIcon: { marginEnd: 8 }, container: { display: "flex", flexDirection: "column", marginBottom: 4 }, details: { flexDirection: "row", alignItems: "center", marginBottom: 4 }, timestampText: { flex: 1 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostGridHeader(arg0) {
   let hasUnreads;
   let isNew;
   let items;
@@ -148,7 +148,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp4.pinIcon;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((arg0) => {
+}) : (function ForumPostGridHeader(arg0) {
   let hasUnreads;
   let isNew;
   let items;
@@ -167,7 +167,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj4 = { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO, textStyle: tmp.timestampText };
   items[2] = metroRequire(ForumPostTimestampDefault, obj4);
   if (isNew) {
-    isNew = tmp8(tmp10(11629), {});
+    isNew = tmp8(tmp10(11694), {});
   }
   items[3] = isNew;
   items1 = [metroImportDefault(View, obj2), ];

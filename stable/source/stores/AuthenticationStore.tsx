@@ -1,7 +1,7 @@
 // Module ID: 502
 // Function ID: 503
 // Name: AuthenticationStore
-// Dependencies: [503, 1084, 1085, 1110, 3, 1111, 510, 1112, 1252, 13954, 584, 13955, 6436, 5313, 1265, 13956, 1242, 12058, 504, 11141, 13957, 7152, 1985, 2]
+// Dependencies: [503, 1084, 1085, 1110, 3, 1111, 510, 1112, 1265, 14448, 584, 14449, 6630, 5636, 1278, 14450, 1255, 12131, 504, 10676, 2000, 14451, 7352, 1998, 2]
 
 // Module 502 (AuthenticationStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -10,25 +10,24 @@ import Storage6 from "Storage" /* 510 */;
 import Dispatcher2 from "Dispatcher" /* 584 */;
 import TokenManagerAll from "TokenManager" /* 1111 */;
 import router_utils from "router_utils" /* 1112 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import FingerprintUtils from "FingerprintUtils" /* 1265 */;
-import Server from "Server" /* 1985 */;
-import APIErrorDefault from "APIError" /* 5313 */;
-import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 6436 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 7152 */;
-import ApexActionCreators from "ApexActionCreators" /* 11141 */;
-import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 12058 */;
-import fetchExperiments2 from "fetchExperiments" /* 13954 */;
-import awaitExperiments from "awaitExperiments" /* 13955 */;
-import TrackingConsentUtilsDefault from "TrackingConsentUtils" /* 13956 */;
-import react_native from "react-native" /* 13957 */;
+import SentryUtilsDefault from "SentryUtils" /* 1255 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import FingerprintUtils from "FingerprintUtils" /* 1278 */;
+import Server from "Server" /* 1998 */;
+import APIErrorDefault from "APIError" /* 5636 */;
+import getAuthenticationErrorsFromAPIError from "getAuthenticationErrorsFromAPIError" /* 6630 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 7352 */;
+import isStaffFromRawUserDefault from "isStaffFromRawUser" /* 12131 */;
+import fetchExperiments2 from "fetchExperiments" /* 14448 */;
+import awaitExperiments from "awaitExperiments" /* 14449 */;
+import TrackingConsentUtilsDefault from "TrackingConsentUtils" /* 14450 */;
 import BrowserHandoffStore from "BrowserHandoffStore" /* 503 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1084 */;
 import Constants from "Constants" /* 1085 */;
 import AgeGateConstants from "AgeGateConstants" /* 1110 */;
 import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
 const Dispatcher = Dispatcher2;
 let _null, c33, c4, c5, challenge;
 
@@ -39,7 +38,7 @@ let c10;
 let closure_12;
 let metroImportAll;
 let unpackModuleId;
-const f81423 = (body) => {
+const f83075 = (body) => {
   let assignments;
   let guild_experiments;
   body = body.body;
@@ -65,12 +64,12 @@ const f81423 = (body) => {
   const obj6 = awaitExperiments;
   obj6.onExperimentsLoaded();
 };
-const f81424 = () => {
+const f83076 = () => {
   c33 = null;
   const obj = Dispatcher;
   obj.dispatch({ type: "EXPERIMENTS_FETCH_FAILURE" });
 };
-const f81425 = () => {
+const f83077 = () => {
   const obj = router_utils;
   obj.transitionTo(constants.REGISTER);
 };
@@ -133,7 +132,7 @@ function fetchFingerprint(arg0) {
           fetchExperiments2;
           tmpResult4 = router_utils;
           const experiments = fetchExperiments(obj3);
-          nextPromise = experiments.then(f81423, f81424);
+          nextPromise = experiments.then(f83075, f83076);
           closure_33 = nextPromise;
         }
         return nextPromise;
@@ -147,12 +146,12 @@ function handleLogout(isSwitchingAccount) {
   const obj = TokenManagerAll;
   const tmp2 = null != obj.getToken();
   const Storage = Storage6.Storage;
-  const obj2 = { tokenManagerHasToken: tmp2, storageHasToken: null != Storage.get(closure_12) };
+  const obj2 = { tokenManagerHasToken: tmp2, storageHasToken: null != Storage.get(authStore2) };
   closure_13.verbose("handleLogout called.", obj2);
   const obj3 = TokenManagerAll;
   const tmp5 = null != obj3.getToken();
   const Storage2 = Storage6.Storage;
-  const obj4 = { tokenManagerHasToken: tmp5, storageHasToken: null != Storage2.get(closure_12) };
+  const obj4 = { tokenManagerHasToken: tmp5, storageHasToken: null != Storage2.get(authStore2) };
   closure_13.verbose("removeAuthToken called.", obj4);
   const obj5 = TokenManagerAll;
   obj5.removeAnalyticsToken();
@@ -251,6 +250,7 @@ let items = [];
 let Store = get_initializedDefault.Store;
 class AuthenticationStore extends Store {
   initialize() {
+    let paths;
     const Storage = Storage6.Storage;
     id = Storage.get(user_id_cache);
     const Storage2 = Storage6.Storage;
@@ -274,17 +274,17 @@ class AuthenticationStore extends Store {
     let obj = TokenManagerAll;
     if (null == obj.getToken()) {
       const tmp7 = null == installation || 0 === installation.length;
-      const promise = fetchFingerprint();
+      let promise = fetchFingerprint();
       if (tmp7) {
         function fireApex() {
-          const obj = ApexActionCreators;
-          const installationExperiments = obj.fetchInstallationExperiments(null);
+          const promise = require("asyncRequire")(paths[19], paths.paths);
+          promise.then((fetchInstallationExperiments) => fetchInstallationExperiments.fetchInstallationExperiments(null));
         }
         promise.then(fireApex, fireApex);
       }
     }
     this.addChangeListener(() => {
-      const obj = react_native;
+      const obj = require("react-native");
       return obj.setClientState(id);
     });
   }
@@ -379,7 +379,7 @@ let obj = {
     const obj = TokenManagerAll;
     const tmp3 = null != obj.getToken();
     const Storage = Storage6.Storage;
-    const obj2 = { tokenManagerHasToken: tmp3, storageHasToken: null != Storage.get(closure_12) };
+    const obj2 = { tokenManagerHasToken: tmp3, storageHasToken: null != Storage.get(authStore2) };
     closure_13.verbose("handleConnectionOpen called", obj2);
     ({ id, username, email } = user);
     const setUser = SentryUtilsDefault.setUser;
@@ -431,7 +431,7 @@ let obj = {
     const obj = TokenManagerAll;
     const tmp6 = null != obj.getToken();
     const Storage = Storage6.Storage;
-    const obj2 = { tokenManagerHasToken: tmp6, storageHasToken: null != Storage.get(closure_12) };
+    const obj2 = { tokenManagerHasToken: tmp6, storageHasToken: null != Storage.get(authStore2) };
     closure_13.verbose("setAuthToken called.", obj2);
     const tmp9 = null != id2 && id2 === id;
     if (!tmp9) {
@@ -459,7 +459,7 @@ let obj = {
     let obj = TokenManagerAll;
     const tmp3 = null != obj.getToken();
     const Storage = Storage6.Storage;
-    const obj2 = { tokenManagerHasToken: tmp3, storageHasToken: null != Storage.get(closure_12) };
+    const obj2 = { tokenManagerHasToken: tmp3, storageHasToken: null != Storage.get(authStore2) };
     closure_13.verbose(combined, obj2);
     if (4004 === code) {
       const tmp6 = c26;
@@ -467,7 +467,7 @@ let obj = {
         c26 = true;
         handleLogout();
         const obj4 = Dispatcher;
-        obj4.wait(f81425);
+        obj4.wait(f83077);
       } else {
         const obj3 = { user_id: Storage2.get(user_id_cache) };
         const track = AnalyticsUtilsDefault.track;
@@ -498,7 +498,7 @@ let obj = {
     const obj = TokenManagerAll;
     const tmp = null != obj.getToken();
     const Storage = Storage6.Storage;
-    const obj2 = { tokenManagerHasToken: tmp, storageHasToken: null != Storage.get(closure_12) };
+    const obj2 = { tokenManagerHasToken: tmp, storageHasToken: null != Storage.get(authStore2) };
     closure_13.verbose("setAuthToken called.", obj2);
     const obj3 = TokenManagerAll;
     obj3.removeAnalyticsToken();
@@ -630,7 +630,7 @@ let obj = {
       const obj = TokenManagerAll;
       const tmp9 = null != obj.getToken();
       const Storage = Storage6.Storage;
-      const obj2 = { tokenManagerHasToken: tmp9, storageHasToken: null != Storage.get(closure_12) };
+      const obj2 = { tokenManagerHasToken: tmp9, storageHasToken: null != Storage.get(authStore2) };
       closure_13.verbose("removeAuthToken called.", obj2);
       const obj3 = TokenManagerAll;
       obj3.removeAnalyticsToken();
@@ -707,7 +707,7 @@ let obj = {
     const obj = TokenManagerAll;
     const tmp = null != obj.getToken();
     const Storage = Storage6.Storage;
-    const obj2 = { tokenManagerHasToken: tmp, storageHasToken: null != Storage.get(closure_12) };
+    const obj2 = { tokenManagerHasToken: tmp, storageHasToken: null != Storage.get(authStore2) };
     closure_13.verbose("setAuthToken called.", obj2);
     const obj3 = TokenManagerAll;
     obj3.removeAnalyticsToken();
@@ -730,12 +730,12 @@ let obj = {
     const obj = TokenManagerAll;
     const tmp3 = null != obj.getToken();
     const Storage = Storage6.Storage;
-    const obj2 = { tokenManagerHasToken: tmp3, storageHasToken: null != Storage.get(closure_12) };
+    const obj2 = { tokenManagerHasToken: tmp3, storageHasToken: null != Storage.get(authStore2) };
     closure_13.verbose("handleUpdateToken called", obj2);
     const obj3 = TokenManagerAll;
     const tmp6 = null != obj3.getToken();
     const Storage2 = Storage6.Storage;
-    const obj4 = { tokenManagerHasToken: tmp6, storageHasToken: null != Storage2.get(closure_12) };
+    const obj4 = { tokenManagerHasToken: tmp6, storageHasToken: null != Storage2.get(authStore2) };
     closure_13.verbose("setAuthToken called.", obj4);
     let tmp8 = null != userId;
     if (tmp8) {
@@ -775,7 +775,7 @@ let obj = {
     const fetchExperiments = tmp5.fetchExperiments;
     obj5 = router_utils;
     const experiments = fetchExperiments(obj3);
-    closure_33 = experiments.then(f81423, f81424);
+    closure_33 = experiments.then(f83075, f83076);
   },
   CURRENT_USER_UPDATE: function handleUserUpdate(user) {
     user = user.user;
@@ -790,7 +790,7 @@ let obj = {
     c26 = true;
     handleLogout();
     const obj = Dispatcher;
-    obj.wait(f81425);
+    obj.wait(f83077);
   },
   CLOSE_SUSPENDED_USER: function handleSuspendedUserClosed() {
     c34 = null;

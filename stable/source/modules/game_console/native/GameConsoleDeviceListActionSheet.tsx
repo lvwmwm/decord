@@ -1,34 +1,33 @@
-// Module ID: 9456
-// Function ID: 9457
+// Module ID: 11122
+// Function ID: 11123
 // Name: GameConsoleDeviceListActionSheet
-// Dependencies: [5, 32, 19, 17, 4907, 1085, 21, 4890, 587, 558, 576, 1126, 5594, 6619, 9457, 4886, 9458, 504, 9448, 38, 9455, 4854, 1121, 1188, 9459, 6644, 6112, 6645, 2]
+// Dependencies: [5, 32, 19, 17, 5111, 1085, 21, 5092, 587, 558, 576, 1126, 5379, 6814, 11123, 6157, 5088, 11124, 504, 11113, 38, 11115, 5056, 1121, 1200, 10511, 6839, 6307, 6840, 2]
 
-// Module 9456 (GameConsoleDeviceListActionSheet)
+// Module 11122 (GameConsoleDeviceListActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 9448 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9457 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9458 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11113 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11123 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11124 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameConsoleStore from "GameConsoleStore" /* 4907 */;
+import GameConsoleStore from "GameConsoleStore" /* 5111 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let BottomSheet, c1, c2;
 
-let c9;
 let closure_12;
-let closure_14;
 let map1;
 let metroImportAll;
 let metroImportDefault;
@@ -37,27 +36,28 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const Text_Text = tmp(4886);
+let unpackModuleId;
+const Text_Text = tmp(5088);
 let react = react_mod;
-({ Pressable: metroRequire, View: metroImportDefault, Image: metroImportAll, ActivityIndicator: c9 } = react_native);
+({ Pressable: metroRequire, View: metroImportDefault, ActivityIndicator: metroImportAll } = react_native);
 const ComponentActions = Constants.ComponentActions;
-({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = Fragment);
+({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: { padding: 16, justifyContent: "center", paddingBottom: 90 }, loading: { minHeight: 56 }, footerContainer: obj2, radioItem: obj3, deviceIcon: size, deviceOption: { flexDirection: "row", alignItems: "center", marginRight: 24 }, deviceText: { flexShrink: 1 }, emptyContainer: { alignItems: "center", justifyContent: "center" }, emptyArt: { marginBottom: 16 }, emptyHeader: { marginBottom: 8, textAlign: "center" }, emptyBody: { textAlign: "center" }, infoBox: { marginTop: 8 } };
 obj2 = { padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, paddingBottom: 16 };
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.xs, padding: 16 };
 size = { marginRight: 16, width: 32, height: 32, tintColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
-let closure_15 = createStyles(obj);
+let closure_14 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function TransferFooter(arg0) {
   let first;
   let onPress;
   let transferring;
   const obj = react2;
   const cResult = obj.c(8);
   ({ onPress, transferring } = arg0);
-  const tmp4 = closure_15();
+  const tmp4 = closure_14();
   let tmp5 = transferring;
   const footerContainer = tmp4.footerContainer;
   if (!transferring) {
@@ -85,27 +85,27 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp11;
       }
       const obj2 = { bottom: true, style: footerContainer, children: tmp9 };
-      const tmp13 = closure_12(common_SafeAreaView.SafeAreaPaddingView, obj2);
+      const tmp13 = unpackModuleId(common_SafeAreaView.SafeAreaPaddingView, obj2);
       cResult[5] = tmp4.footerContainer;
       cResult[6] = tmp9;
       cResult[7] = tmp13;
       tmp11 = tmp13;
     }
   }
-  const tmp10 = closure_12(components_Button_Button.Button, { loading: transferring, disabled: tmp5, onPress, text: first, grow: true });
+  const tmp10 = unpackModuleId(components_Button_Button.Button, { loading: transferring, disabled: tmp5, onPress, text: first, grow: true });
   cResult[1] = onPress;
   cResult[2] = tmp5;
   cResult[3] = transferring;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function TransferFooter(arg0) {
   let Button;
   let intl;
   let obj2;
   let onPress;
   let transferring;
   ({ onPress, transferring } = arg0);
-  const obj = { bottom: true, style: closure_15().footerContainer, children: closure_12(Button, obj2) };
+  const obj = { bottom: true, style: closure_14().footerContainer, children: unpackModuleId(Button, obj2) };
   const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
   obj2 = { loading: transferring, disabled: transferring, onPress, text: intl.string(intl4.t.FYi3ry), grow: true };
   Button = components_Button_Button.Button;
@@ -113,10 +113,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     transferring = null == onPress;
   }
   intl = tmp3(1126).intl;
-  return closure_12(SafeAreaPaddingView, obj);
+  return unpackModuleId(SafeAreaPaddingView, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeviceOption(arg0) {
   let deviceIcon;
   let deviceOption;
   let items;
@@ -126,7 +126,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = react2;
   const cResult = obj.c(12);
   ({ name, platform } = arg0);
-  const tmp4 = closure_15();
+  const tmp4 = closure_14();
   ({ deviceOption, deviceIcon } = tmp4);
   if (cResult[0] !== platform) {
     const tmp7 = AssetRegistryDefault;
@@ -157,7 +157,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const obj2 = { style: deviceOption, children: items };
       items = [tmp8, tmp10];
-      const tmp16 = map1(metroImportDefault, obj2);
+      const tmp16 = authStore2(metroImportDefault, obj2);
       cResult[8] = tmp4.deviceOption;
       cResult[9] = tmp8;
       cResult[10] = tmp10;
@@ -165,31 +165,31 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp13 = tmp16;
     }
     const obj3 = { style: tmp4.deviceText, color: "mobile-text-heading-primary", variant: "text-md/bold", children: name };
-    const tmp12 = closure_12(Text_Text.Text, obj3);
+    const tmp12 = unpackModuleId(Text_Text.Text, obj3);
     cResult[5] = name;
     cResult[6] = tmp4.deviceText;
     cResult[7] = tmp12;
     tmp10 = tmp12;
   }
-  const tmp9 = closure_12(metroImportAll, { style: deviceIcon, source: tmp5 });
+  const tmp9 = unpackModuleId(FastImageDefault, { style: deviceIcon, source: tmp5 });
   cResult[2] = tmp4.deviceIcon;
   cResult[3] = tmp5;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((name) => {
+}) : (function DeviceOption(name) {
   let items;
   name = name.name;
-  const tmp = closure_15();
+  const tmp = closure_14();
   const obj = { style: tmp.deviceOption, children: items };
-  items = [, ];
   const obj2 = { style: tmp.deviceIcon, source: AssetRegistryDefault };
-  items[0] = closure_12(metroImportAll, obj2);
+  const tmp2 = FastImageDefault;
+  items = [unpackModuleId(tmp2, obj2), ];
   const obj3 = { style: tmp.deviceText, color: "mobile-text-heading-primary", variant: "text-md/bold", children: name };
-  items[1] = closure_12(Text_Text.Text, obj3);
-  return map1(metroImportDefault, obj);
+  items[1] = unpackModuleId(Text_Text.Text, obj3);
+  return authStore2(metroImportDefault, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState() {
   let items;
   let tmp10;
   let tmp12;
@@ -198,11 +198,12 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(13);
-  const tmp4 = closure_15();
+  const tmp4 = closure_14();
   const emptyContainer = tmp4.emptyContainer;
   if (cResult[0] !== tmp4.emptyArt) {
     const obj2 = { source: AssetRegistryDefault2, style: tmp4.emptyArt };
-    const tmp9 = closure_12(metroImportAll, obj2);
+    const tmp8 = FastImageDefault;
+    const tmp9 = unpackModuleId(tmp8, obj2);
     cResult[0] = tmp4.emptyArt;
     cResult[1] = tmp9;
     tmp5 = tmp9;
@@ -220,7 +221,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[3] !== tmp4.emptyHeader) {
     const obj3 = { style: emptyHeader, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: tmp10 };
-    const tmp14 = closure_12(Text_Text.Text, obj3);
+    const tmp14 = unpackModuleId(Text_Text.Text, obj3);
     cResult[3] = tmp4.emptyHeader;
     cResult[4] = tmp14;
     tmp12 = tmp14;
@@ -238,7 +239,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[6] !== tmp4.emptyBody) {
     const obj4 = { style: emptyBody, variant: "text-md/normal", color: "text-default", children: tmp15 };
-    const tmp19 = closure_12(Text_Text.Text, obj4);
+    const tmp19 = unpackModuleId(Text_Text.Text, obj4);
     cResult[6] = tmp4.emptyBody;
     cResult[7] = tmp19;
     tmp17 = tmp19;
@@ -258,34 +259,34 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const obj5 = { style: emptyContainer, children: items };
   items = [tmp5, tmp12, tmp17];
-  const tmp21 = map1(metroImportDefault, obj5);
+  const tmp21 = authStore2(metroImportDefault, obj5);
   cResult[8] = tmp4.emptyContainer;
   cResult[9] = tmp5;
   cResult[10] = tmp12;
   cResult[11] = tmp17;
   cResult[12] = tmp21;
   tmp20 = tmp21;
-}) : (() => {
+}) : (function EmptyState() {
   let intl;
   let intl2;
   let items;
-  const tmp = closure_15();
+  const tmp = closure_14();
   const obj = { style: tmp.emptyContainer, children: items };
-  items = [, , ];
   const obj2 = { source: AssetRegistryDefault2, style: tmp.emptyArt };
-  items[0] = closure_12(metroImportAll, obj2);
+  const tmp2 = FastImageDefault;
+  items = [unpackModuleId(tmp2, obj2), , ];
   const obj3 = { style: tmp.emptyHeader, variant: "heading-md/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl4.t.OkJf1e) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
-  items[1] = closure_12(Text, obj3);
+  items[1] = unpackModuleId(Text, obj3);
   const obj4 = { style: tmp.emptyBody, variant: "text-md/normal", color: "text-default", children: intl2.string(intl4.t["of/l5Z"]) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
-  items[2] = closure_12(Text2, obj4);
-  return map1(metroImportDefault, obj);
+  items[2] = unpackModuleId(Text2, obj4);
+  return authStore2(metroImportDefault, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameConsoleListActionSheet(platform) {
   let closure_5;
   let closure_6;
   let closure_7;
@@ -305,7 +306,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
   const cResult = obj.c(50);
   platform = platform.platform;
   const channel = platform.channel;
-  closure_15();
+  closure_14();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GameConsoleStore];
     cResult[0] = items;
@@ -314,7 +315,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
     first = cResult[0];
   }
   if (cResult[1] !== platform) {
-    const fn = function h() {
+    const fn = function v() {
       return GameConsoleStore.getDevicesForPlatform(platform);
     };
     cResult[1] = platform;
@@ -323,7 +324,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
   } else {
     tmp7 = cResult[2];
   }
-  const tmpResult = tmp(tmp2[17]);
+  const tmpResult = tmp(tmp2[18]);
   stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [GameConsoleStore];
@@ -333,25 +334,25 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
     tmp9 = cResult[3];
   }
   if (cResult[4] !== platform) {
-    class P {
+    class F {
       constructor() {
         return GameConsoleStore.getFetchingDevices(platform);
       }
     }
     cResult[4] = platform;
-    cResult[5] = P;
-    tmp11 = P;
+    cResult[5] = F;
+    tmp11 = F;
   } else {
-    class P {
+    class F {
       constructor() {
         return GameConsoleStore.getFetchingDevices(platform);
       }
     }
   }
-  const tmpResult3 = tmp(tmp2[17]);
+  const tmpResult3 = tmp(tmp2[18]);
   const stateFromStores1 = tmpResult3.useStateFromStores(tmp9, tmp11);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
+    class F {
       constructor() {
         return GameConsoleStore.getFetchingDevices(platform);
       }
@@ -360,7 +361,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
     cResult[6] = items2;
     tmp13 = items2;
   } else {
-    class P {
+    class F {
       constructor() {
         return GameConsoleStore.getFetchingDevices(platform);
       }
@@ -382,7 +383,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
       }
     }
   }
-  const tmpResult4 = tmp(tmp2[17]);
+  const tmpResult4 = tmp(tmp2[18]);
   const stateFromStores2 = tmpResult4.useStateFromStores(tmp13, tmp14);
   let obj5 = react;
   const tmp16 = first1(react.useState(null), 2);
@@ -397,7 +398,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
         return GameConsoleStore.getLastSelectedDeviceByPlatform(platform);
       }
     }
-    const effect = obj5.useEffect(H, items3);
+    const effect = obj5.useEffect(G, items3);
     if (cResult[13] !== platform) {
       class R {
         constructor() {
@@ -448,13 +449,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              channel(stateFromStores[19])(null != first1, "selectedDeviceId cannot be null");
+              channel(stateFromStores[20])(null != first1, "selectedDeviceId cannot be null");
               closure_1_6(true);
               const tmp24 = c2[first1];
               c1 = 1;
               c2 = 1;
               const obj4 = { value: obj6.transferToPlaystationWithAlert(tmp3, tmp24, c1), done: false };
-              obj6 = tmp3(stateFromStores[20]);
+              obj6 = tmp3(stateFromStores[21]);
               return obj4;
             }
           } else if (arg0 === 1) {
@@ -465,9 +466,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
             const obj5 = { value, done: true };
             return obj5;
           } else {
-            const obj = channel(stateFromStores[21]);
+            const obj = channel(stateFromStores[22]);
             obj.hideActionSheet();
-            const ComponentDispatch = tmp3(stateFromStores[22]).ComponentDispatch;
+            const ComponentDispatch = tmp3(stateFromStores[23]).ComponentDispatch;
             ComponentDispatch.dispatch(constants.TOGGLE_CALL_CONTROL_DRAWER);
             c2 = 3;
             return { value: "IconComponent", done: null };
@@ -487,7 +488,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
     cResult[18] = first1;
     cResult[19] = handleTransferVoice;
   }
-  class H {
+  class G {
     constructor() {
       const values = Object.values(stateFromStores);
       if (1 === values.length) {
@@ -500,9 +501,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
   items3 = [stateFromStores, stateFromStores2];
   cResult[9] = stateFromStores;
   cResult[10] = stateFromStores2;
-  cResult[11] = H;
+  cResult[11] = G;
   cResult[12] = items3;
-}) : ((arg0) => {
+}) : (function GameConsoleListActionSheet(arg0) {
   let BottomSheetScrollView;
   let BottomSheetTitleHeader;
   let Text;
@@ -555,11 +556,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              c1(c2[19])(null != _slicedToArray, "selectedDeviceId cannot be null");
+              c1(c2[20])(null != _slicedToArray, "selectedDeviceId cannot be null");
               _undefined(true);
               const tmp24 = stateFromStores[_slicedToArray];
               c1 = 1;
-              const obj6 = tmp3(c2[20]);
+              const obj6 = tmp3(c2[21]);
               c2 = 1;
               const obj4 = { value: obj6.transferToPlaystationWithAlert(require, tmp24, importDefault), done: false };
               return obj4;
@@ -572,9 +573,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
             const obj5 = { value, done: true };
             return obj5;
           } else {
-            obj = c1(c2[21]);
+            obj = c1(c2[22]);
             obj.hideActionSheet();
-            const ComponentDispatch = tmp3(c2[22]).ComponentDispatch;
+            const ComponentDispatch = tmp3(c2[23]).ComponentDispatch;
             ComponentDispatch.dispatch(constants.TOGGLE_CALL_CONTROL_DRAWER);
             c2 = 3;
             return { value: "IconComponent", done: null };
@@ -587,7 +588,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
     });
     return obj(...arguments);
   };
-  const tmp = closure_15();
+  const tmp = closure_14();
   const tmp2 = require;
   const tmp3 = stateFromStores;
   obj = require("get initialized");
@@ -622,7 +623,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
     }
     const values2 = values(items);
     return values2.map((id) => {
-      obj = { value: id.id, name: closure_1_12(closure_1_17, obj2) };
+      obj = { value: id.id, name: closure_1_11(closure_1_16, obj2) };
       return obj;
     });
   }, items4);
@@ -642,21 +643,21 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
           const result = obj.persistSelectedDeviceId(require, value);
         }
     };
-    items5 = [closure_12(tmp2(tmp3[23]).RadioGroup, obj5), ];
+    items5 = [closure_11(tmp2(tmp3[24]).RadioGroup, obj5), ];
     let obj6 = { style: tmp.infoBox, children: intl.string(tmp2(tmp3[11]).t.dI4HFq) };
     const tmp19 = require("InfoBox");
     intl = tmp2(tmp3[11]).intl;
-    items5[1] = closure_12(tmp19, obj6);
-    tmp12Result = closure_13(closure_14, obj4);
-    tmp12 = closure_12;
+    items5[1] = closure_11(tmp19, obj6);
+    tmp12Result = closure_12(closure_13, obj4);
+    tmp12 = closure_11;
   } else {
-    tmp12 = closure_12;
-    tmp12Result = closure_12(closure_18, {});
+    tmp12 = closure_11;
+    tmp12Result = closure_11(closure_17, {});
   }
   const obj7 = { transferring: tmp10, onPress: handleTransferVoice };
   handleTransferVoice = undefined;
-  BottomSheet = tmp2(tmp3[27]).BottomSheet;
-  const tmp20 = closure_16;
+  BottomSheet = tmp2(tmp3[28]).BottomSheet;
+  const tmp20 = closure_15;
   if (null != value) {
     handleTransferVoice = function handleTransferVoice() {
       return obj(...arguments);
@@ -664,7 +665,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
   }
   const obj8 = { footer: tmp12(tmp20, obj7), header: tmp12(BottomSheetTitleHeader, obj9), scrollable: true, children: tmp12(BottomSheetScrollView, obj12) };
   obj9 = { title: intl2.string(tmp2(tmp3[11]).t.aUuz7W), trailing: tmp12(tmp21, obj10) };
-  BottomSheetTitleHeader = tmp2(tmp3[25]).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = tmp2(tmp3[26]).BottomSheetTitleHeader;
   intl2 = tmp2(tmp3[11]).intl;
   let tmp22 = stateFromStores1;
   tmp21 = c6;
@@ -680,13 +681,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((platform) => {
     children: tmp12(Text, obj11)
   };
   obj11 = { variant: "text-md/semibold", color: "text-brand", children: intl3.string(tmp2(tmp3[11]).t.hb12iG) };
-  Text = tmp2(tmp3[15]).Text;
+  Text = tmp2(tmp3[16]).Text;
   intl3 = tmp2(tmp3[11]).intl;
   obj12 = { contentContainerStyle: tmp.container, children: tmp12Result };
-  BottomSheetScrollView = tmp2(tmp3[26]).BottomSheetScrollView;
+  BottomSheetScrollView = tmp2(tmp3[27]).BottomSheetScrollView;
   if (stateFromStores1) {
     const obj13 = { style: tmp.loading };
-    tmp12Result = tmp12(closure_9, obj13);
+    tmp12Result = tmp12(closure_8, obj13);
   }
   return tmp12(BottomSheet, obj8);
 });

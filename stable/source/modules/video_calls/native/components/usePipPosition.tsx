@@ -1,12 +1,12 @@
-// Module ID: 9066
-// Function ID: 9067
+// Module ID: 10833
+// Function ID: 10834
 // Name: usePipPosition
-// Dependencies: [32, 19, 558, 576, 510, 9067, 2]
+// Dependencies: [32, 19, 558, 576, 510, 10834, 2]
 
-// Module 9066 (usePipPosition)
+// Module 10833 (usePipPosition)
 import Storage2 from "Storage" /* 510 */;
 import react2 from "react" /* 576 */;
-import PictureInPicture from "PictureInPicture" /* 9067 */;
+import PictureInPicture from "PictureInPicture" /* 10834 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 
 const CameraPreviewPosition = "CameraPreviewPosition";
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePipPosition() {
   let first;
   let tmp4;
   let tmp5;
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   [tmp4, require] = react.useState(first);
   _slicedToArray(react.useState(first), 2);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function l(arg0) {
+    const fn2 = function u(arg0) {
       const Storage = Storage2.Storage;
       const result = Storage.set(CameraPreviewPosition, arg0);
       require(arg0);
@@ -54,7 +54,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[3];
   }
   return tmp6;
-}) : (() => {
+}) : (function usePipPosition() {
   const tmp = _slicedToArray(react.useState(() => {
     const Storage = closure_0(dependencyMap[4]).Storage;
     return Storage.get(CameraPreviewPosition, closure_0(dependencyMap[5]).DEFAULT_PIP_POSITION);

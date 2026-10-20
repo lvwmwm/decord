@@ -1,12 +1,12 @@
-// Module ID: 13740
-// Function ID: 13741
+// Module ID: 14160
+// Function ID: 14161
 // Name: GuildBadgeCompass
-// Dependencies: [109, 19, 21, 558, 576, 13730, 8136, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14150, 7572, 2]
 
-// Module 13740 (GuildBadgeCompass)
+// Module 14160 (GuildBadgeCompass)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8136 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13730 */;
+import inlineStyles from "inlineStyles" /* 7572 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14150 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,7 +23,7 @@ const primaryTintLuminances = [0.1, 0.25, 1];
 let items = [{ base: 3, tint: 1 }, { base: 2, tint: 1 }, { base: 2, tint: 1 }];
 const secondaryTintLuminances = [0.1, 0.25, 1];
 const items1 = [{ base: 3, tint: 1 }, { base: 2, tint: 1 }, { base: 2, tint: 1 }];
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeCompass(arg0) {
   let height;
   let primaryColorsTransformed;
   let primaryTintColor;
@@ -287,7 +287,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj13 = { width: num7, height: num8, viewBox: "0 0 16 16", fill: "none", children: items };
-    const Svg = tmp(8136).Svg;
+    const Svg = tmp(7572).Svg;
     const merged = Object.assign(tmp5);
     items = [tmp14, tmp17, tmp21, tmp24, tmp27, tmp30, tmp33, tmp34, tmp38, tmp41, tmp44, tmp47, tmp50, tmp53, tmp54, tmp55, tmp56, tmp57, tmp58, tmp59, tmp60, tmp61, tmp62, tmp63];
     const tmp81 = hasOwnProperty(Svg, obj13);
@@ -315,7 +315,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp6;
   cResult[8] = transformedBadgeColors;
   tmp12 = transformedBadgeColors;
-}) : ((width) => {
+}) : (function GuildBadgeCompass(width) {
   let primaryColorsTransformed;
   let primaryTintColor;
   let secondaryColorsTransformed;

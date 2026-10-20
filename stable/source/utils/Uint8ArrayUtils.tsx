@@ -1,10 +1,10 @@
-// Module ID: 2035
-// Function ID: 2036
+// Module ID: 2048
+// Function ID: 2049
 // Name: Uint8ArrayUtils
 // Dependencies: [2]
 // Exports: addBit, hasBit, isSerializedUint8Array, isUint8Array, removeBit
 
-// Module 2035 (Uint8ArrayUtils)
+// Module 2048 (Uint8ArrayUtils)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("utils/Uint8ArrayUtils.tsx");
@@ -48,5 +48,5 @@ export const isUint8Array = function isUint8Array(arg0) {
   return arg0 instanceof Uint8Array;
 };
 export const isSerializedUint8Array = function isSerializedUint8Array(__tag__) {
-  return null != __tag__ && typeof __tag__ === "object" && "uint8array" === __tag__.__tag__;
+  return null != __tag__ && typeof __tag__ === "object" && "__tag__" in __tag__ && "uint8array" === __tag__.__tag__;
 };

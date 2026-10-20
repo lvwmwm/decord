@@ -1,32 +1,31 @@
-// Module ID: 15957
-// Function ID: 15958
+// Module ID: 16470
+// Function ID: 16471
 // Name: MessagesItemChannel
-// Dependencies: [32, 19, 2051, 21, 10723, 587, 15958, 558, 576, 504, 15967, 8371, 15968, 2]
+// Dependencies: [32, 19, 2065, 21, 10516, 587, 16471, 558, 576, 504, 16480, 8620, 16481, 2]
 // Exports: getMessagesItemChannelSizes
 
-// Module 15957 (MessagesItemChannel)
+// Module 16470 (MessagesItemChannel)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10723 */;
-import MessagesItemChannelBase from "MessagesItemChannelBase" /* 15958 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 15967 */;
-import LegendList from "LegendList" /* 15968 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10516 */;
+import MessagesItemChannelBase from "MessagesItemChannelBase" /* 16471 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 16480 */;
+import LegendList from "LegendList" /* 16481 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const MessagesItemChannelBaseDefault = MessagesItemChannelBase;
-let channelId;
 
 let tmp;
-const defaultMVCPConfig = tmp(8371);
+const defaultMVCPConfig = tmp(8620);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let closure_7 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemChannel(channelId) {
   let first;
   let isPressed;
   let placeholderHeight;
@@ -94,7 +93,7 @@ let closure_7 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((chan
     tmp8 = tmp11;
   }
   return tmp8;
-}) : ((arg0) => {
+}) : (function MessagesItemChannel(arg0) {
   let isPressed;
   let placeholderHeight;
   let row;
@@ -119,7 +118,7 @@ let closure_7 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((chan
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
 const memo2 = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemChannelFast(arg0) {
   let tmp3;
   let tmp4;
   const obj = react2;
@@ -139,7 +138,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[1] = arg0;
   cResult[2] = tmp7;
   tmp5 = tmp7;
-}) : ((arg0) => {
+}) : (function MessagesItemChannelFast(arg0) {
   let tmp2;
   let tmp3;
   [tmp2, tmp3] = react.useState(false);
@@ -149,7 +148,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
 const memo3 = react.memo;
-const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemChannelFlash(channelId) {
   let tmp4;
   let tmp6;
   let tmp7;
@@ -194,7 +193,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((chann
   cResult[6] = tmp8;
   cResult[7] = tmp11;
   tmp9 = tmp11;
-}) : ((channelId) => {
+}) : (function MessagesItemChannelFlash(channelId) {
   const items = [channelId.channelId];
   const obj = defaultMVCPConfig;
   const tmp = _slicedToArray(obj.useRecyclingState(false, items), 2);
@@ -206,7 +205,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((chann
   return <closure_7 isPressed={first} setIsPressed={callback} />;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemChannelLegend(arg0) {
   let tmp3;
   let tmp4;
   const obj = react2;
@@ -230,7 +229,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0)
   cResult[2] = tmp4;
   cResult[3] = tmp7;
   tmp5 = tmp7;
-}) : ((arg0) => {
+}) : (function MessagesItemChannelLegend(arg0) {
   let tmp2;
   let tmp3;
   const obj = LegendList;

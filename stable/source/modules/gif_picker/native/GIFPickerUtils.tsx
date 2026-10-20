@@ -1,15 +1,15 @@
-// Module ID: 10093
-// Function ID: 10094
+// Module ID: 9735
+// Function ID: 9736
 // Name: gif_picker/GIFPickerUtils
-// Dependencies: [19, 1085, 1371, 7518, 558, 576, 10094, 1126, 2]
+// Dependencies: [19, 1085, 1384, 9313, 558, 576, 9736, 1126, 2]
 
-// Module 10093 (gif_picker/GIFPickerUtils)
+// Module 9735 (gif_picker/GIFPickerUtils)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import URLUtilsDefault from "URLUtils" /* 1371 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 7518 */;
-import FavoriteGIFHooks from "FavoriteGIFHooks" /* 10094 */;
+import URLUtilsDefault from "URLUtils" /* 1384 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 9313 */;
+import FavoriteGIFHooks from "FavoriteGIFHooks" /* 9736 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -42,7 +42,7 @@ function transformFavoriteGifUrl(url, arg1) {
       const result1 = searchParams2.set("animated", "true");
       return str.toString();
     } else {
-      tmp14(7518);
+      tmp14(9313);
     }
   }
   if (re6.test(arg1)) {
@@ -68,7 +68,7 @@ const GIFPickerResultTypes = Constants.GIFPickerResultTypes;
 const re6 = /(https?:\/\/)(?!media(?:\d+)?\.)(?:[^.]+\.)*giphy\.com/;
 const re7 = /(tenor\.com)/;
 const re8 = /-(?:.(?!-))+$/;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoriteGIFsMobile() {
   let intl;
   const obj = react2;
   const cResult = obj.c(6);
@@ -102,9 +102,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = sortedFavoriteGIFs.length;
   cResult[2] = tmp5;
   tmp4 = tmp5;
-}) : (() => {
+}) : (function useFavoriteGIFsMobile() {
   let sortedFavoriteGIFs;
-  let obj = sortedFavoriteGIFs(10094);
+  let obj = sortedFavoriteGIFs(9736);
   sortedFavoriteGIFs = obj.useSortedFavoriteGIFs(transformFavoriteGifUrl);
   const items = [sortedFavoriteGIFs];
   const obj2 = {

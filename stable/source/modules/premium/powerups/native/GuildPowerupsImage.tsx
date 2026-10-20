@@ -1,23 +1,23 @@
-// Module ID: 12180
-// Function ID: 12181
+// Module ID: 12264
+// Function ID: 12265
 // Name: GuildPowerupsImage
-// Dependencies: [4879, 21, 4890, 558, 576, 504, 1370, 8465, 5974, 2]
+// Dependencies: [5081, 21, 5092, 558, 576, 504, 1383, 9008, 6157, 2]
 
-// Module 12180 (GuildPowerupsImage)
+// Module 12264 (GuildPowerupsImage)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 8465 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import createStyles from "createStyles" /* 4890 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 9008 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ image: { width: "75%", height: "100%", alignSelf: "center", resizeMode: "contain" } });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsImage(arg0) {
   let imageUrl;
   let isAnimated;
   let style;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp5 = closure_5();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
-    const fn = function l() {
+    const fn = function n() {
       return useReducedMotion.useReducedMotion;
     };
     cResult[0] = items;
@@ -74,7 +74,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const items2 = [tmp5.image, style];
   tmp13 = jsx(FastImageDefault, { style: items2, source: { uri: imageUrl } });
-}) : ((style) => {
+}) : (function GuildPowerupsImage(style) {
   let imageUrl;
   let isAnimated;
   let useReducedMotion;

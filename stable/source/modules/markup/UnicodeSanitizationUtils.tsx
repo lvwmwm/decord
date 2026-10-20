@@ -1,11 +1,11 @@
-// Module ID: 5791
-// Function ID: 5792
+// Module ID: 5406
+// Function ID: 5407
 // Name: UnicodeSanitizationUtils
-// Dependencies: [1371, 2]
+// Dependencies: [1384, 2]
 // Exports: safelyMakeUrlHumanReadable, sanitizeUnicodeConfusables, sanitizeWhitespace, sanitizeWhitespaceExcludingTabs
 
-// Module 5791 (UnicodeSanitizationUtils)
-import URLUtilsDefault from "URLUtils" /* 1371 */;
+// Module 5406 (UnicodeSanitizationUtils)
+import URLUtilsDefault from "URLUtils" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 let regExp2;

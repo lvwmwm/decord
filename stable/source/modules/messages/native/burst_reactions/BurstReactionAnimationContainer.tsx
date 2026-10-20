@@ -1,21 +1,21 @@
-// Module ID: 17093
-// Function ID: 17094
+// Module ID: 17681
+// Function ID: 17682
 // Name: BurstReactionAnimationContainer
-// Dependencies: [32, 19, 17, 2048, 21, 4890, 587, 7412, 558, 576, 4855, 4856, 584, 4612, 4891, 2036, 10354, 1188, 7454, 4886, 1126, 4589, 2]
+// Dependencies: [32, 19, 17, 2062, 21, 5092, 587, 7921, 558, 576, 5057, 5058, 584, 4850, 5093, 2049, 10009, 1200, 7963, 5088, 1126, 4827, 2]
 
-// Module 17093 (BurstReactionAnimationContainer)
+// Module 17681 (BurstReactionAnimationContainer)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7412 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7921 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const native = tmp(4589);
+const native = tmp(4827);
 let react = react_mod;
 ({ TouchableOpacity: hasOwnProperty, View: metroRequire, StyleSheet } = react_native);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -49,9 +49,9 @@ let closure_11 = createStyles(obj);
 const __initData = { code: "function BurstReactionAnimationContainerTsx1(){const{animationData,showAnimation,withTiming,runOnJS,handleComponentFinish}=this.__closure;if(animationData==null){return{opacity:0};}if(!showAnimation){return{opacity:withTiming(0,{duration:300},\"respect-motion-settings\",function(finished){if(finished){runOnJS(handleComponentFinish)();}})};}return{opacity:withTiming(1,{duration:300})};}" };
 let closure_13 = { code: "function BurstReactionAnimationContainerTsx2(finished){const{runOnJS,handleComponentFinish}=this.__closure;if(finished){runOnJS(handleComponentFinish)();}}" };
 const __initData2 = { code: "function BurstReactionAnimationContainerTsx3(){const{animationData,showAnimation,withTiming,runOnJS,handleComponentFinish}=this.__closure;if(animationData==null){return{opacity:0};}if(!showAnimation){return{opacity:withTiming(0,{duration:300},'respect-motion-settings',function(finished){if(finished)runOnJS(handleComponentFinish)();})};}return{opacity:withTiming(1,{duration:300})};}" };
-const __initData3 = { code: "function BurstReactionAnimationContainerTsx4(finished){const{runOnJS,handleComponentFinish}=this.__closure;if(finished)runOnJS(handleComponentFinish)();}" };
+let closure_15 = { code: "function BurstReactionAnimationContainerTsx4(finished){const{runOnJS,handleComponentFinish}=this.__closure;if(finished)runOnJS(handleComponentFinish)();}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReactionAnimationContainerInner() {
   let closure_0;
   let closure_2;
   let closure_4;
@@ -105,21 +105,21 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function v(fn) {
+    function handleAnimationFinish(fn) {
       closure_4(false);
       ref.current = false;
       if (fn != null) {
         fn();
       }
-    };
-    cResult[2] = fn2;
-    tmp12 = fn2;
+    }
+    cResult[2] = handleAnimationFinish;
+    tmp12 = handleAnimationFinish;
   } else {
     tmp12 = cResult[2];
   }
   let closure_7 = tmp12;
-  let tmpResult = tmp(4612);
-  const fn3 = function x() {
+  let tmpResult = tmp(4850);
+  const fn2 = function x() {
     let obj2;
     if (null == first) {
       obj2 = { opacity: 0 };
@@ -150,17 +150,17 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return obj2;
   };
-  let obj3 = { animationData, showAnimation: first1, withTiming: tmp(4891).withTiming, runOnJS: tmp(4612).runOnJS, handleComponentFinish };
-  fn3.__closure = obj3;
-  fn3.__workletHash = 3096942457868;
-  fn3.__initData = __initData;
-  const animatedStyle = tmpResult.useAnimatedStyle(fn3);
+  let obj3 = { animationData, showAnimation: first1, withTiming: tmp(5093).withTiming, runOnJS: tmp(4850).runOnJS, handleComponentFinish };
+  fn2.__closure = obj3;
+  fn2.__workletHash = 3096942457868;
+  fn2.__initData = __initData;
+  const animatedStyle = tmpResult.useAnimatedStyle(fn2);
   let tmp14 = null;
   if (null != animationData) {
     let tmp15;
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      let items1 = [tmp(2036).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
+      let items1 = [tmp(2049).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
       cResult[3] = items1;
       tmp15 = items1;
     } else {
@@ -252,7 +252,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return tmp(OverlayView, obj);
         }
     };
-    const tmp19 = animatedStyle(animationData(10354), obj4);
+    const tmp19 = animatedStyle(animationData(10009), obj4);
     cResult[4] = animatedStyle;
     cResult[5] = animationData;
     cResult[6] = first1;
@@ -264,7 +264,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp16 = tmp19;
   }
   return tmp14;
-}) : (() => {
+}) : (function BurstReactionAnimationContainerInner() {
   let closure_0;
   let closure_2;
   let closure_4;
@@ -302,44 +302,42 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp7 = dependencyMap;
   const tmp6 = _require;
   let obj = require("ReanimatedRexport");
-  class R {
-    constructor() {
-      let obj2;
-      if (null == first) {
-        obj2 = { opacity: 0 };
+  let fn = function b() {
+    let obj2;
+    if (null == first) {
+      obj2 = { opacity: 0 };
+    } else {
+      const obj3 = { opacity: null };
+      const tmp11 = timing;
+      const withTiming = tmp11.withTiming;
+      const obj4 = { duration: 300 };
+      if (first1) {
+        obj3.opacity = withTiming(1, obj4);
+        obj2 = obj3;
       } else {
-        const obj3 = { opacity: null };
-        const tmp11 = timing;
-        const withTiming = tmp11.withTiming;
-        const obj4 = { duration: 300 };
-        if (first1) {
-          obj3.opacity = withTiming(1, obj4);
-          obj2 = obj3;
-        } else {
-          const fn = function n(arg0) {
-            const tmp = arg0;
-            if (tmp) {
-              const obj = closure_0(closure_2[13]);
-              obj.runOnJS(handleComponentFinish)();
-            }
-          };
-          let obj = { runOnJS: ReanimatedRexport.runOnJS, handleComponentFinish };
-          let tmp = require;
-          fn.__closure = obj;
-          fn.__workletHash = 9630692253462;
-          fn.__initData = __initData;
-          obj3.opacity = withTiming(0, obj4, "respect-motion-settings", fn);
-          obj2 = obj3;
-        }
+        const fn = function n(arg0) {
+          const tmp = arg0;
+          if (tmp) {
+            const obj = closure_0(closure_2[13]);
+            obj.runOnJS(handleComponentFinish)();
+          }
+        };
+        let obj = { runOnJS: ReanimatedRexport.runOnJS, handleComponentFinish };
+        let tmp = require;
+        fn.__closure = obj;
+        fn.__workletHash = 9630692253462;
+        fn.__initData = __initData;
+        obj3.opacity = withTiming(0, obj4, "respect-motion-settings", fn);
+        obj2 = obj3;
       }
-      return obj2;
     }
-  }
+    return obj2;
+  };
   let obj2 = { animationData, showAnimation: first1, withTiming: require("timing").withTiming, runOnJS: require("ReanimatedRexport").runOnJS, handleComponentFinish };
-  R.__closure = obj2;
-  R.__workletHash = 4291853011336;
-  R.__initData = __initData2;
-  let closure_7 = obj.useAnimatedStyle(R);
+  fn.__closure = obj2;
+  fn.__workletHash = 4291853011336;
+  fn.__initData = __initData2;
+  let closure_7 = obj.useAnimatedStyle(fn);
   let tmp8 = null;
   if (null != animationData) {
     let obj3 = {
@@ -414,14 +412,14 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return tmp(OverlayView, obj);
         }
     };
-    let tmp11 = animationData(10354);
-    items = [tmp6(2036).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
+    let tmp11 = animationData(10009);
+    items = [tmp6(2049).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
     tmp8 = closure_8(tmp11, obj3);
   }
   return tmp8;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReactionAnimationContainer() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -435,7 +433,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => {
+}) : (function BurstReactionAnimationContainer() {
   const obj = { theme: nativeDefault.themes.DARK, children: metroImportAll(closure_16, {}) };
   const ThemeContextProvider = native.ThemeContextProvider;
   return metroImportAll(ThemeContextProvider, obj);

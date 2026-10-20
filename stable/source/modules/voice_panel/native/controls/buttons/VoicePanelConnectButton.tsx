@@ -1,22 +1,22 @@
-// Module ID: 17329
-// Function ID: 17330
+// Module ID: 17923
+// Function ID: 17924
 // Name: VoicePanelConnectButton
-// Dependencies: [19, 2051, 21, 4890, 587, 558, 576, 11901, 17265, 504, 1126, 5100, 6832, 8069, 5568, 5709, 17330, 17333, 17334, 12736, 4886, 17328, 2]
+// Dependencies: [19, 2065, 21, 5092, 587, 558, 576, 11973, 17860, 504, 1126, 5924, 5944, 7488, 5889, 5301, 17924, 17927, 17928, 13036, 5088, 17922, 2]
 
-// Module 17329 (VoicePanelConnectButton)
+// Module 17923 (VoicePanelConnectButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5568 */;
-import useAlertStore from "useAlertStore" /* 5709 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8069 */;
-import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 12736 */;
-import VoicePanelNoJoinPermissionsAlert from "VoicePanelNoJoinPermissionsAlert" /* 17330 */;
-import VoicePanelMaxCapacityAlert from "VoicePanelMaxCapacityAlert" /* 17333 */;
-import VoicePanelNsfwAlert from "VoicePanelNsfwAlert" /* 17334 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import useAlertStore from "useAlertStore" /* 5301 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7488 */;
+import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 13036 */;
+import VoicePanelNoJoinPermissionsAlert from "VoicePanelNoJoinPermissionsAlert" /* 17924 */;
+import VoicePanelMaxCapacityAlert from "VoicePanelMaxCapacityAlert" /* 17927 */;
+import VoicePanelNsfwAlert from "VoicePanelNsfwAlert" /* 17928 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import createStyles from "createStyles" /* 4890 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,14 +25,14 @@ const VoicePanelSpoilerAlertDefault = VoicePanelSpoilerAlert;
 const VoicePanelNoJoinPermissionsAlertDefault = VoicePanelNoJoinPermissionsAlert;
 const VoicePanelMaxCapacityAlertDefault = VoicePanelMaxCapacityAlert;
 const VoicePanelNsfwAlertDefault = VoicePanelNsfwAlert;
-let _require, closure_4, onConnect, props;
+let _require, closure_4, onConnect;
 
 let obj2;
 const jsx = Fragment.jsx;
 let obj = { connectButton: obj2, connectText: { textAlign: "center" } };
 obj2 = { backgroundColor: nativeDefault.unsafe_rawColors.GREEN_360, paddingLeft: nativeDefault.space.PX_8, paddingRight: nativeDefault.space.PX_8 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectButton(props) {
   let canConnect;
   let channelId;
   let first;
@@ -408,7 +408,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
   cResult[4] = isAtMaxCapacity;
   cResult[5] = isAtMaxCapacity;
   tmp11 = tmp12;
-}) : ((props) => {
+}) : (function ConnectButton(props) {
   let children;
   let connectText;
   let items3;

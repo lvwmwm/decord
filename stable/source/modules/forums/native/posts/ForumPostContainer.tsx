@@ -1,25 +1,25 @@
-// Module ID: 11634
-// Function ID: 11635
+// Module ID: 11699
+// Function ID: 11700
 // Name: ForumPostContainer
-// Dependencies: [19, 17, 21, 4890, 587, 6571, 558, 576, 4612, 10031, 5995, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 6763, 558, 576, 4850, 10455, 6182, 2]
 // Exports: useForumPostContainerPressedIn
 
-// Module 11634 (ForumPostContainer)
+// Module 11699 (ForumPostContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10031 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10455 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
-import ReanimatedHelperTypes from "ReanimatedHelperTypes" /* 6571 */;
+import createStyles from "createStyles" /* 5092 */;
+import ReanimatedHelperTypes from "ReanimatedHelperTypes" /* 6763 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const Card_Card = tmp(5995);
+const Card_Card = tmp(6182);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { childContainer: { position: "relative", minHeight: 110, padding: 12 }, card: { marginBottom: 12 }, disabledContainer: obj2 };
@@ -30,7 +30,7 @@ const redux = createContext(ReanimatedHelperTypes.createFakeSharedValue(false));
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostPressableContainer(arg0) {
   let children;
   let onLongTapPost;
   let onPressIn;
@@ -129,7 +129,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp4.childContainer;
   cResult[6] = items;
   tmp9 = items;
-}) : ((arg0) => {
+}) : (function ForumPostPressableContainer(arg0) {
   let children;
   let onLongTapPost;
   let onPressIn;
@@ -157,8 +157,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <redux.Provider value={sharedValue}><View style={tmp.card}>{null}</View></redux.Provider>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const fn = () => react.useContext(redux);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+function useForumPostContainerPressedIn() {
+  return react.useContext(redux);
+}
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostDisabledContainer(arg0) {
   let children;
   let style;
   const obj = react2;
@@ -188,7 +190,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp2.disabledContainer;
   cResult[2] = items;
   tmp3 = items;
-}) : ((arg0) => {
+}) : (function ForumPostDisabledContainer(arg0) {
   let children;
   let style;
   ({ children, style } = arg0);
@@ -197,6 +199,6 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 const result1 = size.fileFinishedImporting("modules/forums/native/posts/ForumPostContainer.tsx");
 
-export const useForumPostContainerPressedIn = fn;
+export { useForumPostContainerPressedIn };
 export const ForumPostPressableContainer = tmp4;
 export const ForumPostDisabledContainer = tmp5;

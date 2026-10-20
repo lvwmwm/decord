@@ -1,12 +1,12 @@
-// Module ID: 16986
-// Function ID: 16987
+// Module ID: 17573
+// Function ID: 17574
 // Name: RegionActionCreators
-// Dependencies: [1085, 1282, 584, 2]
+// Dependencies: [1085, 1295, 584, 2]
 
-// Module 16986 (RegionActionCreators)
+// Module 17573 (RegionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

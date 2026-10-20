@@ -1,15 +1,15 @@
-// Module ID: 17554
-// Function ID: 17555
+// Module ID: 18169
+// Function ID: 18170
 // Name: useGameOrganizationInviteFetch
-// Dependencies: [5, 11083, 11084, 1085, 504, 1102, 17555, 2]
+// Dependencies: [5, 10486, 10487, 1085, 504, 1102, 18170, 2]
 
-// Module 17554 (useGameOrganizationInviteFetch)
+// Module 18169 (useGameOrganizationInviteFetch)
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11084 */;
-import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 17555 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10487 */;
+import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 18170 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11083 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 10486 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj = {
     }
     return tmp3;
   },
-  load: function() {
+  load() {
     return closure_2(...arguments);
   }
 };

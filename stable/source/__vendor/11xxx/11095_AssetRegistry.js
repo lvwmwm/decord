@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/billing/native/images", width: 223, height: 128.5, scales: [2, 3], hash: "f5aa8d22ffc464d3c9704d96fbbd1afa", name: "blocked-purchases-dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 195, height: 92, scales: [1, 2, 3], hash: "a075205f01081abc73c7a94b31634a53", name: "krisp_logo_light", type: "png" });

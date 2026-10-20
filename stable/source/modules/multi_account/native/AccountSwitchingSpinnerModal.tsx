@@ -1,24 +1,24 @@
-// Module ID: 17563
-// Function ID: 17564
+// Module ID: 18179
+// Function ID: 18180
 // Name: AccountSwitchingSpinnerModal
-// Dependencies: [19, 17, 21, 4890, 558, 576, 1126, 5968, 1105, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 1126, 6154, 1105, 2]
 
-// Module 17563 (AccountSwitchingSpinnerModal)
+// Module 18179 (AccountSwitchingSpinnerModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl2 from "intl" /* 1126 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5968 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6154 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ switchingSpinnerContainer: { flex: 1, alignItems: "center", justifyContent: "center" } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountSwitchingSpinnerModal() {
   let tmp10;
   let tmp5;
   let tmp6;
@@ -46,7 +46,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[3];
   }
   return tmp10;
-}) : (() => {
+}) : (function AccountSwitchingSpinnerModal() {
   const intl = intl2.intl;
   return <View style={closure_4().switchingSpinnerContainer} accessible accessibilityLabel={intl.string(intl2.t.n8qMH0)}>{null}</View>;
 });

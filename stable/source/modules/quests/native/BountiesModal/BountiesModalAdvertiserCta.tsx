@@ -1,30 +1,30 @@
-// Module ID: 14854
-// Function ID: 14855
+// Module ID: 15332
+// Function ID: 15333
 // Name: BountiesModalAdvertiserCta
-// Dependencies: [109, 19, 17, 4879, 5623, 21, 4612, 4890, 587, 4891, 4894, 558, 576, 14837, 10000, 5601, 10916, 10918, 5630, 7212, 5628, 5974, 4886, 5594, 8576, 14817, 504, 14818, 9647, 2]
+// Dependencies: [109, 19, 17, 5081, 5972, 21, 4850, 5092, 587, 5093, 5096, 558, 576, 15314, 9180, 5385, 9197, 9199, 5979, 7411, 5977, 6157, 5088, 5379, 8546, 15294, 504, 15295, 9444, 2]
 
-// Module 14854 (BountiesModalAdvertiserCta)
+// Module 15332 (BountiesModalAdvertiserCta)
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import timingPresets from "timingPresets" /* 4894 */;
-import QuestConstants from "QuestConstants" /* 5623 */;
-import QuestContent from "QuestContent" /* 5628 */;
-import AdCreativeType from "AdCreativeType" /* 5630 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10918 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
+import timingPresets from "timingPresets" /* 5096 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
+import QuestContent from "QuestContent" /* 5977 */;
+import AdCreativeType from "AdCreativeType" /* 5979 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9199 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const ReanimatedRexport = ReanimatedRexport2;
-let _require, bounty, obj1;
+let _require, obj1;
 
 let Pressable;
 let c9;
@@ -74,7 +74,7 @@ fn2.__closure = obj2;
 fn2.__workletHash = 15850601331978;
 fn2.__initData = { code: "function BountiesModalAdvertiserCtaTsx2(visible,cleanUp){const{withTiming,timingFast}=this.__closure;return{opacity:withTiming(visible,timingFast,'respect-motion-settings',cleanUp)};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesModalAdvertiserCtaContent(bounty) {
   let getQuestImpressionId;
   let opacityStyle;
   let transformStyle;
@@ -169,7 +169,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
       }
     }
   }
-  class M {
+  class B {
     constructor(arg0) {
       tmp = closure_0(closure_2[17]);
       obj = { adContentId: bounty.id, adCreativeType: closure_0(closure_2[18]).AdCreativeType.BOUNTY, cta: bounty.cta };
@@ -183,9 +183,9 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
   cResult[7] = bounty.id;
   cResult[8] = getQuestImpressionId;
   cResult[9] = sourceQuestContent;
-  cResult[10] = M;
-  tmp19 = M;
-}) : ((bounty) => {
+  cResult[10] = B;
+  tmp19 = B;
+}) : (function BountiesModalAdvertiserCtaContent(bounty) {
   let BackgroundBlurView;
   let items3;
   let items4;
@@ -259,7 +259,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounty) => {
 const __initData = { code: "function BountiesModalAdvertiserCtaTsx3(){const{withTiming,interpolate,visibility,visible,timingStandard,timingFast}=this.__closure;return{transform:[{translateY:withTiming(interpolate(visibility,[0,1],[8,0]),visible?timingStandard:timingFast)}]};}" };
 const __initData2 = { code: "function BountiesModalAdvertiserCtaTsx4(){const{withTiming,interpolate,visibility,visible,timingStandard,timingFast}=this.__closure;return{transform:[{translateY:withTiming(interpolate(visibility,[0,1],[8,0]),visible?timingStandard:timingFast)}]};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesModalAdvertiserCta(visible) {
   let animatedStyle;
   let closure_0;
   let opacityStyle;
@@ -328,7 +328,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
     const fn3 = function p(arg0, opacityStyle) {
       const obj = { opacityStyle, transformStyle: animatedStyle };
       const merged = Object.assign(arg0);
-      return closure_12(closure_19, obj);
+      return authStore2(closure_19, obj);
     };
     cResult[5] = animatedStyle;
     cResult[6] = fn3;
@@ -393,7 +393,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
     cResult[17] = tmp19;
     tmp18 = tmp19;
   }
-}) : ((visible) => {
+}) : (function BountiesModalAdvertiserCta(visible) {
   let tmp18;
   let useReducedMotion;
   visible = visible.visible;
@@ -431,7 +431,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   const callback = react.useCallback((arg0, opacityStyle) => {
     const obj = { opacityStyle, transformStyle: animatedStyle };
     const merged = Object.assign(arg0);
-    return closure_12(closure_19, obj);
+    return authStore2(closure_19, obj);
   }, items1);
   const tmp2Result2 = visible(tmp3[27]);
   const obj4 = { visible, entranceTiming: visible(tmp3[10]).timingStandard, exitTiming: visible(tmp3[10]).timingFast };

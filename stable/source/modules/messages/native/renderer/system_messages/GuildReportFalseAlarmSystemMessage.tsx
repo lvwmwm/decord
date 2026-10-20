@@ -1,20 +1,20 @@
-// Module ID: 7711
-// Function ID: 7712
+// Module ID: 8065
+// Function ID: 8066
 // Name: GuildReportFalseAlarmSystemMessage
-// Dependencies: [2051, 7612, 7619, 7703, 7621, 7704, 7623, 1126, 1405, 1402, 2]
+// Dependencies: [2065, 7967, 7974, 8057, 7976, 8058, 7978, 1126, 1418, 1415, 2]
 // Exports: createGuildReportFalseAlarmSystemMessage
 
-// Module 7711 (GuildReportFalseAlarmSystemMessage)
+// Module 8065 (GuildReportFalseAlarmSystemMessage)
 import intl3 from "intl" /* 1126 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1405 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 7612 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7619 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7621 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7623 */;
-import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 7703 */;
-import getTagPropertiesDefault from "getTagProperties" /* 7704 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1418 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 7967 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7974 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7976 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7978 */;
+import GuildAlertModeSystemMessage from "GuildAlertModeSystemMessage" /* 8057 */;
+import getTagPropertiesDefault from "getTagProperties" /* 8058 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildReportFalseAlarmSystemMessage.tsx");

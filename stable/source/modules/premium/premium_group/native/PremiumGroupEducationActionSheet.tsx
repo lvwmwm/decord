@@ -1,24 +1,24 @@
-// Module ID: 13321
-// Function ID: 13322
+// Module ID: 13811
+// Function ID: 13812
 // Name: PremiumGroupEducationActionSheet
-// Dependencies: [17, 4542, 21, 4890, 587, 558, 576, 4800, 4886, 1126, 3205, 6645, 2]
+// Dependencies: [17, 4783, 21, 5092, 587, 558, 576, 6290, 5088, 1126, 3280, 6840, 2]
 
-// Module 13321 (PremiumGroupEducationActionSheet)
+// Module 13811 (PremiumGroupEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef3205 from "module_3205" /* 3205 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 4542 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 4800 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
+import _modDef3280 from "module_3280" /* 3280 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 4783 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6290 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, aboutText;
+let BottomSheet;
 
 let hasOwnProperty;
 let metroRequire;
@@ -29,7 +29,7 @@ const HELP_CENTER_LINK = PremiumGroupConstants.HELP_CENTER_LINK;
 let obj = { container: { marginTop: 32, marginHorizontal: 30 }, aboutContainer: obj2, warningIcon: { margin: 16 }, aboutTextContainer: { justifyContent: "center", flex: 1, marginRight: 30 }, helpdeskText: { textAlign: "center", marginBottom: 24 } };
 obj2 = { flexDirection: "row", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, justifyContent: "center", borderRadius: nativeDefault.radii.lg, marginBottom: 12 };
 let closure_7 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGroupEducationActionSheet(aboutText) {
   let items;
   let items1;
   let obj7;
@@ -76,7 +76,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
           const intl = tmp(1126).intl;
           const obj4 = { helpCenterLink: HELP_CENTER_LINK };
-          const formatResult = intl.format(_modDef3205.ah1Ecm, obj4);
+          const formatResult = intl.format(_modDef3280.ah1Ecm, obj4);
           cResult[11] = formatResult;
           tmp18 = formatResult;
         } else {
@@ -103,7 +103,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
         const obj6 = { children: metroRequire(View, obj7) };
         obj7 = { style: container, children: items };
         items = [tmp13, tmp22];
-        BottomSheet = tmp(6645).BottomSheet;
+        BottomSheet = tmp(6840).BottomSheet;
         const tmp29 = hasOwnProperty(BottomSheet, obj6);
         cResult[14] = tmp4.container;
         cResult[15] = tmp13;
@@ -127,7 +127,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
   cResult[5] = tmp8;
   cResult[6] = tmp12;
   tmp11 = tmp12;
-}) : ((aboutText) => {
+}) : (function PremiumGroupEducationActionSheet(aboutText) {
   let intl;
   let items;
   let items1;
@@ -145,7 +145,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
   const obj5 = { style: tmp.aboutTextContainer, children: hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", color: "text-overlay-light", children: aboutText }) };
   items[1] = hasOwnProperty(View, obj5);
   items1 = [metroRequire(View, obj3), ];
-  const obj6 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: intl.format(_modDef3205.ah1Ecm, obj7) };
+  const obj6 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: intl.format(_modDef3280.ah1Ecm, obj7) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   obj7 = { helpCenterLink: HELP_CENTER_LINK };

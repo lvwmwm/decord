@@ -1,13 +1,13 @@
-// Module ID: 12170
-// Function ID: 12171
+// Module ID: 12254
+// Function ID: 12255
 // Name: useHasAllocateBoostPermission
-// Dependencies: [2074, 4509, 1096, 558, 576, 504, 2]
+// Dependencies: [2087, 4750, 1096, 558, 576, 504, 2]
 // Exports: getHasAllocateBoostPermission
 
-// Module 12170 (useHasAllocateBoostPermission)
+// Module 12254 (useHasAllocateBoostPermission)
 import Constants from "Constants" /* 1096 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ function getHasAllocateBoostPermission(PermissionStore, guild) {
   }
   return canResult;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasAllocateBoostPermission(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -60,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+}) : (function useHasAllocateBoostPermission(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("get initialized");

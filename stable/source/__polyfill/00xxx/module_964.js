@@ -15,7 +15,7 @@ import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
 const require = globalThis.__r;
-let Drag, RN, _require, _self, c104, c79, closure_111, closure_12, constructResult, dependencyMap, ensureReadyResult, eventContext, map, responseBodySize, scope, segmentId, segment_id, selection, set2, set3, warn;
+let Drag, RN, _require, _self, c104, c79, closure_111, constructResult, dependencyMap, ensureReadyResult, eventContext, map, responseBodySize, scope, segmentId, segment_id, selection, set2, set3, warn;
 
 let items;
 let tmp18;
@@ -120,7 +120,7 @@ function makeReplayDebugLogger() {
   }
   return obj;
 }
-const f82379 = (item) => {
+const f84031 = (item) => {
   mirror = mirror.mirror;
   return mirror.getId(item);
 };
@@ -2889,7 +2889,7 @@ function initScrollObserver(doc) {
           }
         };
       }
-      const scroll_str = "scroll";
+      const scroll = "scroll";
       if (doc === undefined) {
         doc = document;
       }
@@ -3167,7 +3167,7 @@ function initInputObserver(sampling) {
       HermesBuiltin.arraySpread(items7, items1.map((item) => {
         let tmp;
         let tmp2;
-        const f82319 = () => {
+        const f83971 = () => {
           let ownPropertyDescriptor;
           const tmp3 = ownPropertyDescriptor || {};
           closure_0 = tmp;
@@ -3177,7 +3177,7 @@ function initInputObserver(sampling) {
           ownPropertyDescriptor = _Object.getOwnPropertyDescriptor(tmp, tmp2);
           const _Object2 = window.Object;
           _Object2.defineProperty(closure_0, closure_1, tmp3);
-          return f82319;
+          return f83971;
         };
         [tmp, tmp2] = item;
         obj = {
@@ -3238,7 +3238,7 @@ function initInputObserver(sampling) {
           }
         };
         _Object2.defineProperty(tmp, tmp2, obj2);
-        return f82319;
+        return f83971;
       }), 0);
       const tmp8 = mapped;
       HermesBuiltin.apply(push, items7, mapped);
@@ -3427,7 +3427,7 @@ function initObservers(doc) {
     ({ mousemoveCb: closure_0, sampling, doc, mirror: closure_1 } = doc);
     closure_2 = undefined;
     closure_3 = undefined;
-    let f82317;
+    let f83969;
     items = undefined;
     if (false === sampling.mousemove) {
       return () => {
@@ -3468,7 +3468,7 @@ function initObservers(doc) {
         closure_2 = {};
         let c3 = null;
         let c4 = 0;
-        f82317 = function() {
+        f83969 = function() {
           function clearTimeout$2() {
             items = [...arguments];
             const tmp = closure_1_71("clearTimeout");
@@ -4987,7 +4987,7 @@ function initObservers(doc) {
       }
     }
     let closure_11 = initSelectionObserver(doc);
-    closure_12 = initCustomElementObserver(doc);
+    let closure_12 = initCustomElementObserver(doc);
     let items = [];
     const plugins = doc.plugins;
     let tmp6 = plugins;
@@ -6173,11 +6173,11 @@ function getLargestContentfulPaint(arg0) {
   obj = _mod693;
   const result = ((obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin) + value) / 1000;
   const obj2 = { type: "web-vital", name: "largest-contentful-paint", start: result, end: result, data: obj3 };
-  obj3 = { value, size: value, rating, nodeIds: mapped, attributions: "formatToPlainString" };
+  obj3 = { value, size: value, rating, nodeIds: mapped, attributions: "gap" };
   mapped = undefined;
   obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin;
   if (tmp3) {
-    mapped = tmp3.map(f82379);
+    mapped = tmp3.map(f84031);
   }
   return obj2;
 }
@@ -6235,11 +6235,11 @@ function getInteractionToNextPaint(arg0) {
   obj = _mod693;
   const result = ((obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin) + value) / 1000;
   const obj2 = { type: "web-vital", name: "interaction-to-next-paint", start: result, end: result, data: obj3 };
-  obj3 = { value, size: value, rating, nodeIds: mapped, attributions: "formatToPlainString" };
+  obj3 = { value, size: value, rating, nodeIds: mapped, attributions: "gap" };
   mapped = undefined;
   obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin;
   if (tmp3) {
-    mapped = tmp3.map(f82379);
+    mapped = tmp3.map(f84031);
   }
   return obj2;
 }
@@ -6255,7 +6255,7 @@ function getWebVital(value, name, items1, items) {
   mapped = undefined;
   obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin;
   if (items1) {
-    mapped = items1.map(f82379);
+    mapped = items1.map(f84031);
   }
   return obj2;
 }
@@ -7233,7 +7233,7 @@ obj = function _getResponseInfo2() {
               closure_10 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Set", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -8157,7 +8157,7 @@ obj = function _prepareReplayEvent() {
             settings = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "Set", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -8360,7 +8360,7 @@ obj = function _sendReplayRequest() {
               closure_20 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Set", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -8553,7 +8553,7 @@ obj = function _sendReplay() {
             error = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "Set", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -9359,7 +9359,7 @@ let closure_82 = (() => {
                     } while (-2 === id1);
                     if (-1 !== id) {
                       if (-1 !== id1) {
-                        let obj3 = { doc: null, mirror: null, blockClass: null, blockSelector: null, maskAllText: null, unblockSelector: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: true, newlyAddedElement: true, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, recordCanvas: null, inlineImages: null, onSerialize() { /* body not rendered: F154110 */ }, onIframeLoad() { /* body not rendered: F154111 */ }, onStylesheetLoad() { /* body not rendered: F154112 */ }, onBlockedImageLoad() { /* body not rendered: F154113 */ }, ignoreCSSAttributes: self.ignoreCSSAttributes };
+                        let obj3 = { doc: null, mirror: null, blockClass: null, blockSelector: null, maskAllText: null, unblockSelector: null, maskTextClass: null, unmaskTextClass: null, maskTextSelector: null, unmaskTextSelector: null, skipChild: true, newlyAddedElement: true, inlineStylesheet: null, maskInputOptions: null, maskAttributeFn: null, maskTextFn: null, maskInputFn: null, slimDOMOptions: null, dataURLOptions: null, recordCanvas: null, inlineImages: null, onSerialize() { /* body not rendered: F157043 */ }, onIframeLoad() { /* body not rendered: F157044 */ }, onStylesheetLoad() { /* body not rendered: F157045 */ }, onBlockedImageLoad() { /* body not rendered: F157046 */ }, ignoreCSSAttributes: self.ignoreCSSAttributes };
                         ({ doc: obj2.doc, mirror: obj2.mirror, blockClass: obj2.blockClass, blockSelector: obj2.blockSelector, maskAllText: obj2.maskAllText, unblockSelector: obj2.unblockSelector, maskTextClass: obj2.maskTextClass, unmaskTextClass: obj2.unmaskTextClass, maskTextSelector: obj2.maskTextSelector, unmaskTextSelector: obj2.unmaskTextSelector, inlineStylesheet: obj2.inlineStylesheet, maskInputOptions: obj2.maskInputOptions, maskAttributeFn: obj2.maskAttributeFn, maskTextFn: obj2.maskTextFn, maskInputFn: obj2.maskInputFn, slimDOMOptions: obj2.slimDOMOptions, dataURLOptions: obj2.dataURLOptions, recordCanvas: obj2.recordCanvas, inlineImages: obj2.inlineImages } = self);
                         const tmp25 = closure_3_58(value, obj3);
                         if (tmp25) {
@@ -9719,7 +9719,7 @@ let closure_82 = (() => {
                 let addedSet2;
                 let id1;
                 let tmp28;
-                const f82323 = () => { /* body not rendered: F82323 */ };
+                const f83975 = () => { /* body not rendered: F83975 */ };
                 const mirror = self.mirror;
                 const id = mirror.getId(childNodes);
                 target = target.target;
@@ -9755,7 +9755,7 @@ let closure_82 = (() => {
                     addedSet2.delete(childNodes);
                     childNodes = childNodes.childNodes;
                     if (childNodes != null) {
-                      let item = childNodes.forEach(f82323);
+                      let item = childNodes.forEach(f83975);
                     }
                     const droppedSet = tmp.droppedSet;
                     droppedSet.add(childNodes);
@@ -9839,7 +9839,7 @@ let closure_82 = (() => {
                             movedSet2.delete(childNodes);
                             const childNodes1 = childNodes.childNodes;
                             if (childNodes1 != null) {
-                              const item1 = childNodes1.forEach(f82323);
+                              const item1 = childNodes1.forEach(f83975);
                             }
                           }
                         } else {
@@ -10997,14 +10997,14 @@ try {
           });
         }
         const arr = closure_111.push(fn);
-        const f82373 = () => {
+        const f84025 = () => {
 
         };
         this._teardown = () => {
-          if (typeof f82373 === "function") {
+          if (typeof f84025 === "function") {
             let num2 = -1;
             if (closure_1_111) {
-              num2 = arr.indexOf(f82373);
+              num2 = arr.indexOf(f84025);
             }
             if (num2 > -1) {
               closure_1_111.splice(num2, 1);
@@ -11313,7 +11313,7 @@ try {
         obj = _mod693;
         const result = ((obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin) + startTime) / 1000;
         obj.browserPerformanceTimeOrigin() || _mod693.GLOBAL_OBJ.performance.timeOrigin;
-        return { type: entryType, name, start: result, end: result + duration, data: "formatToPlainString" };
+        return { type: entryType, name, start: result, end: result + duration, data: "gap" };
       },
     navigation: function createNavigationEntry(arg0) {
         let domComplete;
@@ -12040,14 +12040,14 @@ try {
         const debounce = tmp4.debounce;
         let merged = Object.assign(obj2);
         this._debouncedFlush = debounce(() => self._flush(), flushMinDelay, obj3);
-        const f134512 = (timestamp, arg1) => {
+        const f137204 = (timestamp, arg1) => {
           let resolved;
           let flag = false;
-          if (f134512.eventBuffer) {
+          if (f137204.eventBuffer) {
             flag = false;
-            if (!f134512.isPaused()) {
+            if (!f137204.isPaused()) {
               flag = false;
-              if (f134512.isEnabled()) {
+              if (f137204.isEnabled()) {
                 timestamp = timestamp.timestamp;
                 let result = timestamp;
                 if (timestamp <= 9999999999) {
@@ -12484,6 +12484,7 @@ try {
       }
     };
     let closure_4 = _asyncToGenerator(async function() {
+      let closure_6;
       let log;
       const self = this;
       closure_1 = arg0;
@@ -12491,113 +12492,70 @@ try {
       let c8 = 0;
       let c5 = 0;
       const iter = (async (arg0, value) => {
-        if (c8 === 2) {
-          c8 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
+        let reason;
+        if (1 === c7) {
           if (arg0 === 1) {
+            c8 = 3;
             throw value;
           } else if (arg0 === 2) {
+            c8 = 3;
             return { value, done: true };
-          } else {
-            return { value: "IconComponent", done: null };
-          }
-        } else {
-          try {
-            let flag;
-            let reason;
-            c8 = 2;
-            if (0 === c7) {
-              if (arg0 === 1) {
-                c8 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c8 = 3;
-                return { value, done: true };
-              } else {
-                closure_4 = self;
-                closure_3 = tmp;
-                flag = undefined;
-                reason = undefined;
-                obj4 = closure_1;
-                if (closure_1 === undefined) {
-                  obj4 = {};
-                }
-                flag = obj4.forceFlush ?? false;
-                reason = obj4.reason;
-                c7 = 1;
-                c8 = 1;
-                return { value: "Reflect", done: null };
+          } else if (closure_4._isEnabled) {
+            closure_4._isEnabled = false;
+            closure_4.recordingMode = "buffer";
+            c5 = 1;
+            const tmp13 = closure_1_130;
+            if (tmp13) {
+              eventBuffer = log.log;
+              let str = "";
+              if (reason) {
+                const _HermesInternal = HermesInternal;
+                str = " triggered by " + reason;
               }
-            } else {
-              if (1 === c7) {
-                if (arg0 === 1) {
-                  c8 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c8 = 3;
-                  return { value, done: true };
-                } else if (closure_4._isEnabled) {
-                  closure_4._isEnabled = false;
-                  closure_4.recordingMode = "buffer";
-                  c5 = 1;
-                  const tmp13 = closure_1_130;
-                  if (tmp13) {
-                    eventBuffer = log.log;
-                    let str = "";
-                    if (reason) {
-                      const _HermesInternal = HermesInternal;
-                      str = " triggered by " + reason;
-                    }
-                    eventBuffer("Stopping Replay" + str);
-                  }
-                  closure_1_149();
-                  closure_4._removeListeners();
-                  closure_4.stopRecording();
-                  const _debouncedFlush = closure_4._debouncedFlush;
-                  eventBuffer = _debouncedFlush.cancel();
-                  const tmp27 = flag;
-                  if (tmp27) {
-                    eventBuffer = closure_4._flush({ force: true });
-                    c7 = 3;
-                    c8 = 1;
-                    return { value: eventBuffer, done: false };
-                  } else {
-                    eventBuffer = closure_4.eventBuffer;
-                    if (eventBuffer != null) {
-                      eventBuffer.destroy();
-                    }
-                    eventBuffer = closure_4;
-                    closure_4.eventBuffer = null;
-                    closure_1_140(closure_4);
-                    c5 = 0;
-                  }
-                }
-              } else if (2 === c7) {
-                c5 = 0;
-                closure_2 = closure_6;
-                closure_4.handleException(closure_2);
-              } else if (arg0 === 1) {
-                c8 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c5 = 0;
-                c8 = 3;
-                return { value, done: true };
-              }
-              c8 = 3;
-              return { value: "IconComponent", done: null };
+              eventBuffer("Stopping Replay" + str);
             }
-          } catch (tmp35) {
-            closure_6 = tmp35;
-            if (0 === c5) {
-              c8 = 3;
-              throw tmp35;
+            closure_1_149();
+            closure_4._removeListeners();
+            closure_4.stopRecording();
+            const _debouncedFlush = closure_4._debouncedFlush;
+            eventBuffer = _debouncedFlush.cancel();
+            const tmp27 = flag;
+            if (tmp27) {
+              eventBuffer = closure_4._flush({ force: true });
+              c7 = 3;
+              c8 = 1;
+              return { value: eventBuffer, done: false };
             } else {
-              c7 = 2;
+              eventBuffer = closure_4.eventBuffer;
+              if (eventBuffer != null) {
+                eventBuffer.destroy();
+              }
+              eventBuffer = closure_4;
+              closure_4.eventBuffer = null;
+              closure_1_140(closure_4);
+              c5 = 0;
             }
           }
+        } else if (2 === c7) {
+          c5 = 0;
+          closure_2 = closure_6;
+          closure_4.handleException(closure_2);
+        } else if (arg0 === 1) {
+          c8 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 0;
+          c8 = 3;
+          return { value, done: true };
         }
+        await "IconComponent";
+        closure_4 = self;
+        obj4 = closure_1;
+        if (closure_1 === undefined) {
+          obj4 = {};
+        }
+        reason = obj4.reason;
+        return "Set";
       })();
       iter.next();
       return iter;
@@ -12644,95 +12602,37 @@ try {
       closure_1 = arg0;
       let c5 = 0;
       let c6 = 0;
-      const iter = (async (arg0, value) => {
-        if (c6 === 2) {
-          c6 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            return { value, done: true };
-          } else {
-            return { value: "IconComponent", done: null };
-          }
-        } else {
-          try {
-            let flag2;
-            c6 = 2;
-            if (0 === c5) {
-              if (arg0 === 1) {
-                c6 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c6 = 3;
-                return { value, done: true };
-              } else {
-                closure_4 = self;
-                closure_3 = self;
-                closure_2 = tmp;
-                flag2 = undefined;
-                obj4 = closure_1;
-                if (closure_1 === undefined) {
-                  obj4 = {};
-                }
-                flag2 = obj4.continueRecording ?? true;
-                closure_1 = undefined;
-                closure_2 = undefined;
-                c5 = 1;
-                c6 = 1;
-                return { value: "Reflect", done: null };
-              }
-            } else if (1 === tmp4) {
-              if (arg0 === 1) {
-                c6 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c6 = 3;
-                return { value, done: true };
-              } else if ("session" === closure_4.recordingMode) {
-                c6 = 3;
-                obj6 = { value: closure_4.flushImmediate(), done: true };
-                return obj6;
-              } else {
-                const _Date = Date;
-                closure_1 = Date.now();
-                const tmp21 = closure_1_130;
-                if (tmp21) {
-                  logger.log("Converting buffer to session");
-                }
-                c5 = 2;
-                c6 = 1;
-                obj7 = { value: closure_4.flushImmediate(), done: false };
-                return obj7;
-              }
-            } else if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              closure_2 = closure_4.stopRecording();
-              const tmp6 = flag2 && closure_2 && "session" !== closure_4.recordingMode;
-              if (tmp6) {
-                closure_4.recordingMode = "session";
-                if (closure_4.session) {
-                  closure_4.session.dirty = false;
-                  closure_4._updateUserActivity(closure_1);
-                  const result = closure_4._updateSessionActivity(closure_1);
-                  closure_4._maybeSaveSession();
-                }
-                closure_4.startRecording();
-              }
-              c6 = 3;
-              return { value: "IconComponent", done: null };
-            }
-          } catch (tmp28) {
-            c6 = 3;
-            throw tmp28;
-          }
+      const iter = (async () => {
+        if ("session" === closure_4.recordingMode) {
+          return closure_4.flushImmediate();
         }
+        const _Date = Date;
+        closure_1 = Date.now();
+        const tmp21 = closure_1_130;
+        if (tmp21) {
+          logger.log("Converting buffer to session");
+        }
+        await closure_4.flushImmediate();
+        closure_2 = closure_4.stopRecording();
+        const tmp6 = flag2 && closure_2 && "session" !== closure_4.recordingMode;
+        if (tmp6) {
+          closure_4.recordingMode = "session";
+          if (closure_4.session) {
+            closure_4.session.dirty = false;
+            closure_4._updateUserActivity(closure_1);
+            const result = closure_4._updateSessionActivity(closure_1);
+            closure_4._maybeSaveSession();
+          }
+          closure_4.startRecording();
+        }
+        await "IconComponent";
+        closure_4 = self;
+        closure_3 = self;
+        closure_2 = tmp;
+        if (closure_1 === undefined) {
+          obj4 = {};
+        }
+        return "Set";
       })();
       iter.next();
       return iter;
@@ -13842,7 +13742,7 @@ try {
           }
         }
         function setupPerformanceObserver(self) {
-          const f82378 = (metric) => {
+          const f84030 = (metric) => {
             const prop = closure_1.replayPerformanceEntries;
             prop.push(closure_0(metric.metric));
           };
@@ -13869,14 +13769,14 @@ try {
           let push = items.push;
           obj = performanceEntries(addPerformanceEntry[9]);
           performanceEntries = closure_125;
-          const result = obj.addLcpInstrumentationHandler(f82378);
+          const result = obj.addLcpInstrumentationHandler(f84030);
           const obj2 = performanceEntries(addPerformanceEntry[9]);
           performanceEntries = closure_127;
-          const result1 = obj2.addClsInstrumentationHandler(f82378);
+          const result1 = obj2.addClsInstrumentationHandler(f84030);
           const obj3 = performanceEntries(addPerformanceEntry[9]);
           performanceEntries = closure_128;
           closure_1 = self;
-          push(result, result1, obj3.addInpInstrumentationHandler(f82378));
+          push(result, result1, obj3.addInpInstrumentationHandler(f84030));
           return () => {
             const item = items.forEach((fn) => fn());
           };
@@ -14281,6 +14181,7 @@ try {
       }
     };
     _require = _asyncToGenerator(async function() {
+      let closure_6;
       let logger;
       const self = this;
       closure_1 = arg0;
@@ -14288,163 +14189,112 @@ try {
       let c8 = 0;
       let c5 = 0;
       const iter = (async (arg0, value) => {
-        if (c8 === 2) {
-          c8 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
+        let _flushLock;
+        if (1 === c7) {
           if (arg0 === 1) {
+            c8 = 3;
             throw value;
           } else if (arg0 === 2) {
+            c8 = 3;
+            return { value, done: true };
+          } else if (closure_4._isEnabled) {
+            if (closure_4.checkAndHandleExpiredSession()) {
+              if (closure_4.session) {
+                const started = closure_4.session.started;
+                const _Date = Date;
+                closure_2 = Date.now() - started;
+                const _debouncedFlush = closure_4._debouncedFlush;
+                _debouncedFlush.cancel();
+                closure_3 = closure_2 < closure_4._options.minReplayDuration;
+                closure_4 = closure_2 > closure_4._options.maxReplayDuration + 5000;
+                const tmp42 = closure_3;
+                if (!tmp42) {
+                  const tmp44 = closure_4;
+                  if (!tmp44) {
+                    const eventBuffer = closure_4.eventBuffer;
+                    const tmp46 = eventBuffer && 0 === closure_4.session.segmentId && !eventBuffer.hasCheckout && closure_1_130;
+                    if (tmp46) {
+                      logger.log("Flushing initial segment without checkout.");
+                    }
+                    _flushLock = closure_4._flushLock;
+                    if (!_flushLock) {
+                      closure_4._flushLock = closure_4._runFlush();
+                    }
+                    c5 = 2;
+                    c7 = 4;
+                    c8 = 1;
+                    return { value: closure_4._flushLock, done: false };
+                  }
+                }
+                const tmp59 = closure_1_130;
+                if (tmp59) {
+                  const _Math = Math;
+                  const log = logger.log;
+                  const rounded = Math.floor(closure_2 / 1000);
+                  let str = "long";
+                  if (closure_3) {
+                    str = "short";
+                  }
+                  const _HermesInternal = HermesInternal;
+                  log("Session duration (" + rounded + "s) is too " + str + ", not sending replay.");
+                }
+                const tmp69 = closure_3;
+                if (tmp69) {
+                  closure_4._debouncedFlush();
+                }
+                c8 = 3;
+                return { value: undefined, done: true };
+              }
+            } else {
+              const tmp32 = closure_1_130;
+              if (tmp32) {
+                logger.error("Attempting to finish replay event after session expired.");
+              }
+            }
+          }
+        } else if (2 === c7) {
+          c5 = 0;
+          closure_4._flushLock = undefined;
+          const tmp23 = closure_6;
+          if (_flushLock) {
+            closure_4._debouncedFlush();
+          }
+          throw tmp23;
+        } else {
+          if (3 === c7) {
+            c5 = 1;
+            let closure_7 = closure_6;
+            closure_4.handleException(closure_7);
+          } else if (arg0 === 1) {
+            c8 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 0;
+            closure_4._flushLock = undefined;
+            const tmp7 = _flushLock;
+            if (tmp7) {
+              closure_4._debouncedFlush();
+            }
+            c8 = 3;
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            c5 = 1;
           }
-        } else {
-          try {
-            let started;
-            let eventBuffer;
-            let _flushLock;
-            c8 = 2;
-            if (0 === c7) {
-              if (arg0 === 1) {
-                c8 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c8 = 3;
-                return { value, done: true };
-              } else {
-                closure_4 = self;
-                closure_3 = tmp;
-                closure_2 = self;
-                let flag;
-                obj4 = closure_1;
-                if (closure_1 === undefined) {
-                  obj4 = {};
-                }
-                flag = obj4.force ?? false;
-                started = undefined;
-                closure_2 = undefined;
-                closure_3 = undefined;
-                closure_4 = undefined;
-                eventBuffer = undefined;
-                _flushLock = undefined;
-                c7 = 1;
-                c8 = 1;
-                return { value: "Reflect", done: null };
-              }
-            } else {
-              if (1 === c7) {
-                if (arg0 === 1) {
-                  c8 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c8 = 3;
-                  return { value, done: true };
-                } else if (closure_4._isEnabled) {
-                  if (closure_4.checkAndHandleExpiredSession()) {
-                    if (closure_4.session) {
-                      started = closure_4.session.started;
-                      const _Date = Date;
-                      closure_2 = Date.now() - started;
-                      const _debouncedFlush = closure_4._debouncedFlush;
-                      _debouncedFlush.cancel();
-                      closure_3 = closure_2 < closure_4._options.minReplayDuration;
-                      closure_4 = closure_2 > closure_4._options.maxReplayDuration + 5000;
-                      const tmp42 = closure_3;
-                      if (!tmp42) {
-                        const tmp44 = closure_4;
-                        if (!tmp44) {
-                          eventBuffer = closure_4.eventBuffer;
-                          const tmp46 = eventBuffer && 0 === closure_4.session.segmentId && !eventBuffer.hasCheckout && closure_1_130;
-                          if (tmp46) {
-                            logger.log("Flushing initial segment without checkout.");
-                          }
-                          _flushLock = closure_4._flushLock;
-                          if (!_flushLock) {
-                            closure_4._flushLock = closure_4._runFlush();
-                          }
-                          c5 = 2;
-                          c7 = 4;
-                          c8 = 1;
-                          return { value: closure_4._flushLock, done: false };
-                        }
-                      }
-                      const tmp59 = closure_1_130;
-                      if (tmp59) {
-                        const _Math = Math;
-                        const log = logger.log;
-                        const rounded = Math.floor(closure_2 / 1000);
-                        let str = "long";
-                        if (closure_3) {
-                          str = "short";
-                        }
-                        const _HermesInternal = HermesInternal;
-                        log("Session duration (" + rounded + "s) is too " + str + ", not sending replay.");
-                      }
-                      const tmp69 = closure_3;
-                      if (tmp69) {
-                        closure_4._debouncedFlush();
-                      }
-                      c8 = 3;
-                      return { value: undefined, done: true };
-                    }
-                  } else {
-                    const tmp32 = closure_1_130;
-                    if (tmp32) {
-                      logger.error("Attempting to finish replay event after session expired.");
-                    }
-                  }
-                }
-              } else if (2 === c7) {
-                c5 = 0;
-                closure_4._flushLock = undefined;
-                const tmp23 = closure_6;
-                if (_flushLock) {
-                  closure_4._debouncedFlush();
-                }
-                throw tmp23;
-              } else {
-                if (3 === c7) {
-                  c5 = 1;
-                  let closure_7 = closure_6;
-                  closure_4.handleException(closure_7);
-                } else if (arg0 === 1) {
-                  c8 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c5 = 0;
-                  closure_4._flushLock = undefined;
-                  const tmp7 = _flushLock;
-                  if (tmp7) {
-                    closure_4._debouncedFlush();
-                  }
-                  c8 = 3;
-                  return { value, done: true };
-                } else {
-                  c5 = 1;
-                }
-                c5 = 0;
-                closure_4._flushLock = undefined;
-                const tmp18 = _flushLock;
-                if (tmp18) {
-                  closure_4._debouncedFlush();
-                }
-              }
-              c8 = 3;
-              return { value: "IconComponent", done: null };
-            }
-          } catch (tmp73) {
-            closure_6 = tmp73;
-            if (0 === c5) {
-              c8 = 3;
-              throw tmp73;
-            } else if (1 === tmp75) {
-              c7 = 2;
-            } else {
-              c7 = 3;
-            }
+          c5 = 0;
+          closure_4._flushLock = undefined;
+          const tmp18 = _flushLock;
+          if (tmp18) {
+            closure_4._debouncedFlush();
           }
         }
+        await "IconComponent";
+        closure_4 = self;
+        closure_3 = tmp;
+        closure_2 = self;
+        if (closure_1 === undefined) {
+          obj4 = {};
+        }
+        return "Set";
       })();
       iter.next();
       return iter;
@@ -14545,7 +14395,7 @@ try {
         let maskFn;
         let onError;
         let workerUrl;
-        const f82408 = (item) => item.toLowerCase();
+        const f84060 = (item) => item.toLowerCase();
         obj = arg0;
         if (arg0 === undefined) {
           obj = {};
@@ -14713,8 +14563,8 @@ try {
         const merged = Object.assign(obj2);
         this._recordingOptions = obj3;
         obj4 = { flushMinDelay: num, flushMaxDelay: num2, minReplayDuration: Math.min(num3, 50000), maxReplayDuration: Math.min(num4, c15), stickySession: flag, useCompression: flag2, workerUrl, blockAllMedia: flag5, maskAllInputs: flag4, maskAllText: flag3, mutationBreadcrumbLimit: num5, mutationLimit: num6, slowClickTimeout: num7, slowClickIgnoreSelectors: prop, networkDetailAllowUrls: prop1, networkDetailDenyUrls: prop2, networkCaptureBodies: flag6, networkRequestHeaders: items5, networkResponseHeaders: items6, beforeAddRecordingEvent, beforeErrorSampling, onError, attachRawBodyFromRequest, _experiments };
-        items5 = [...closure_179, ...prop3.map(f82408)];
-        items6 = [...closure_179, ...prop4.map(f82408)];
+        items5 = [...closure_179, ...prop3.map(f84060)];
+        items6 = [...closure_179, ...prop4.map(f84060)];
         this._initialOptions = obj4;
         if (this._initialOptions.blockAllMedia) {
           let combined;

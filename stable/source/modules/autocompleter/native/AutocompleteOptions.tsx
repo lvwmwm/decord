@@ -1,26 +1,26 @@
-// Module ID: 10152
-// Function ID: 10153
+// Module ID: 9796
+// Function ID: 9797
 // Name: AutocompleteOptions
-// Dependencies: [7407, 7408, 5892, 5687, 2051, 2112, 2074, 1085, 5788, 5789, 10153, 1380, 12, 8934, 5621, 2028, 9502, 6837, 10154, 10112, 6840, 1402, 1126, 2]
+// Dependencies: [7916, 7917, 8231, 6030, 2065, 2125, 2087, 1085, 5403, 5404, 9797, 1393, 12, 9798, 5970, 2041, 8701, 8705, 9112, 7044, 9809, 9755, 7047, 1415, 1126, 2]
 // Exports: getAutocompleteOptions
 
-// Module 10152 (AutocompleteOptions)
+// Module 9796 (AutocompleteOptions)
 import intl2 from "intl" /* 1126 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5621 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5788 */;
-import executeCommandDefault from "executeCommand" /* 8934 */;
-import StickersActionCreators from "StickersActionCreators" /* 10112 */;
-import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 10153 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7407 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7408 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 5892 */;
-import StickersStore from "StickersStore" /* 5687 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5403 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5970 */;
+import StickersActionCreators from "StickersActionCreators" /* 9755 */;
+import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 9797 */;
+import executeCommandDefault from "executeCommand" /* 9798 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7916 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 7917 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8231 */;
+import StickersStore from "StickersStore" /* 6030 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Constants from "Constants" /* 1085 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5789 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5404 */;
+import EmojiConstants from "EmojiConstants" /* 1393 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -131,12 +131,11 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
     stores: items1,
     queryResults(query) {
       const IncludeGameMentionsInAutocomplete = channel(flag2[15]).IncludeGameMentionsInAutocomplete;
-      const tmp = channel;
-      const tmp2 = flag2;
       if (IncludeGameMentionsInAutocomplete.getSetting()) {
         if (0 !== query.length) {
-          const tmpResult = tmp(tmp2[16]);
-          let result = tmpResult.queryGamesAutocomplete(query);
+          const queryGamesAutocomplete = channel(flag2[16]).queryGamesAutocomplete;
+          channel(flag2[16]);
+          let result = queryGamesAutocomplete(query, tmp(tmp2[17]).GameSearchFilterGroup.DEFAULT, tmp(tmp2[18]).GameSearchSurface.CHAT_MENTION);
           if (result == null) {
             result = [];
           }
@@ -153,12 +152,12 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
   items1 = [GameAutocompleteStore];
   let obj3 = {
     queryResults(str) {
-      const TimestampAutocompleteMobileExperiment = channel(flag2[17]).TimestampAutocompleteMobileExperiment;
+      const TimestampAutocompleteMobileExperiment = channel(flag2[19]).TimestampAutocompleteMobileExperiment;
       const items = [];
       const tmp = channel;
       const tmp2 = flag2;
       if (TimestampAutocompleteMobileExperiment.getConfig({ location: "timestamps autocomplete" }).enabled) {
-        const tmpResult = tmp(tmp2[18]);
+        const tmpResult = tmp(tmp2[20]);
         const result = tmpResult.queryTimestampSuggestions(str.trim());
         const iter = result[Symbol.iterator]();
         const nextResult = iter.next();
@@ -209,7 +208,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
       channel.isPrivate();
       if (matchSentinelResult) {
         const obj = AutocompleteUtilsDefault;
-        matchSentinelResult = obj.matchSentinel(arg0, arg1, authStore2);
+        matchSentinelResult = obj.matchSentinel(arg0, arg1, syncedClientThemes);
       }
       return matchSentinelResult;
     }
@@ -246,7 +245,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
               const stickerPacks = obj4.fetchStickerPacks();
             }
             const items2 = [query];
-            const items3 = [tmp5, (arg0, arg1) => arg1 === channel(flag2[20]).StickerSendability.SENDABLE];
+            const items3 = [tmp5, (arg0, arg1) => arg1 === channel(flag2[22]).StickerSendability.SENDABLE];
             flag2 = true;
             const tmp3Result = AutocompleteUtilsDefault;
             items1 = tmp3Result.queryStickers(items2, true, items3);
@@ -264,7 +263,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
             if (null != name.id) {
               const obj4 = { id: null, animated: null, size };
               ({ id: obj3.id, animated: obj3.animated } = name);
-              const obj2 = flag(flag2[21]);
+              const obj2 = flag(flag2[23]);
               url = obj2.getEmojiURL(obj4);
             } else {
               url = name.url;
@@ -294,7 +293,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
       return [];
     },
     matches(arg0, arg1, arg2) {
-      let tmp = 0 === arg2 && arg0 === closure_15;
+      let tmp = 0 === arg2 && arg0 === authStore3;
       if (tmp) {
         tmp = !(flag && 0 === arg1.length);
         const tmp4 = flag && 0 === arg1.length;
@@ -307,7 +306,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
       return [];
     },
     matches(arg0, arg1, arg2) {
-      return flag && 0 === arg2 && arg0 === closure_15 && 0 === arg1.length;
+      return flag && 0 === arg2 && arg0 === authStore3 && 0 === arg1.length;
     }
   };
   let obj8 = {

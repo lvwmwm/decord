@@ -1,26 +1,26 @@
-// Module ID: 15315
-// Function ID: 15316
+// Module ID: 15795
+// Function ID: 15796
 // Name: IOSNativePhoneIntegrationSetting
-// Dependencies: [7634, 558, 15316, 1369, 1126, 2028, 11129, 14290, 15311, 2]
+// Dependencies: [7988, 558, 15796, 1382, 1126, 2041, 10664, 14710, 15791, 2]
 
-// Module 15315 (IOSNativePhoneIntegrationSetting)
+// Module 15795 (IOSNativePhoneIntegrationSetting)
 import intl2 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14290 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15311 */;
-import CallKitMetricCollectionExperimentDefault from "CallKitMetricCollectionExperiment" /* 15316 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14710 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15791 */;
+import CallKitMetricCollectionExperimentDefault from "CallKitMetricCollectionExperiment" /* 15796 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11129 */;
+import SettingBuilders_mod from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const f70248 = (arg0) => {
+function useHasIOSNativePhoneIntegrationSetting(arg0) {
 
-};
+}
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -33,7 +33,7 @@ let SettingBuilders = SettingBuilders_mod;
 let obj2 = {
   parent: MobileUserSettings.NOTIFICATIONS,
   usePredicate() {
-    if (typeof f70248 === "function") {
+    if (typeof useHasIOSNativePhoneIntegrationSetting === "function") {
       const obj = CallKitMetricCollectionExperimentDefault;
       let enabled = obj.useConfig({ location: "IOSNativePhoneIntegrationSetting" }).enabled;
       if (enabled) {
@@ -57,7 +57,7 @@ SettingBuilders = SettingBuilders_mod;
 let obj3 = {
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
-    if (typeof f70248 === "function") {
+    if (typeof useHasIOSNativePhoneIntegrationSetting === "function") {
       const obj = CallKitMetricCollectionExperimentDefault;
       let enabled = obj.useConfig({ location: "RedesignIOSNativePhoneIntegrationSetting" }).enabled;
       if (enabled) {

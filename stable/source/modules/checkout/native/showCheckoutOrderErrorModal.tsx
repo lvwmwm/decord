@@ -1,13 +1,13 @@
-// Module ID: 6936
-// Function ID: 6937
+// Module ID: 7150
+// Function ID: 7151
 // Name: showCheckoutOrderErrorModal
-// Dependencies: [5, 32, 19, 21, 5713, 1126, 5709, 2]
+// Dependencies: [5, 32, 19, 21, 5305, 1126, 5301, 2]
 // Exports: showCheckoutOrderErrorModal, showRetryConfirmModal
 
-// Module 6936 (showCheckoutOrderErrorModal)
+// Module 7150 (showCheckoutOrderErrorModal)
 import intl4 from "intl" /* 1126 */;
-import useAlertStore from "useAlertStore" /* 5709 */;
-import AlertModal2 from "AlertModal" /* 5713 */;
+import useAlertStore from "useAlertStore" /* 5301 */;
+import AlertModal2 from "AlertModal" /* 5305 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -146,7 +146,7 @@ export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(
       title: intl.string(closure_0(closure_1[5]).t.zrhHH3),
       content: intl2.string(closure_0(closure_1[5]).t.PjfUXe),
       confirmText: intl3.string(closure_0(closure_1[5]).t["7NqTJn"]),
-      onConfirm: function() {
+      onConfirm() {
         return closure_1(...arguments);
       },
       onCancel() {

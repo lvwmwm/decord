@@ -1,23 +1,23 @@
-// Module ID: 11488
-// Function ID: 11489
+// Module ID: 11465
+// Function ID: 11466
 // Name: ExplicitMediaLearnMoreActionSheet
-// Dependencies: [19, 17, 7110, 1085, 21, 4890, 587, 11489, 5102, 7109, 1126, 6885, 4854, 4565, 2115, 8084, 11301, 1987, 6645, 8097, 4886, 5594, 2]
+// Dependencies: [19, 17, 6993, 1085, 21, 5092, 587, 11466, 5909, 8238, 1126, 7094, 5056, 4806, 2128, 7493, 11467, 2000, 6840, 7512, 5088, 5379, 2]
 // Exports: default
 
-// Module 11488 (ExplicitMediaLearnMoreActionSheet)
+// Module 11465 (ExplicitMediaLearnMoreActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import openUserSettings from "openUserSettings" /* 6885 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7109 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7110 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 6993 */;
+import openUserSettings from "openUserSettings" /* 7094 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7493 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8238 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -169,7 +169,7 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
     variant: "secondary",
     size: "md",
     text: intl6.string(channelId(tmp2[10]).t.bmbHPA),
-    onPress() {
+    onPress: function handleDismissButtonPress() {
       callback(ExplicitMediaRedactionUtils.TrackMediaRedactionActionType.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS);
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();

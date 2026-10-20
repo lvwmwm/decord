@@ -1,16 +1,16 @@
-// Module ID: 4520
-// Function ID: 4521
+// Module ID: 4761
+// Function ID: 4762
 // Name: MessageRecord
-// Dependencies: [1392, 1085, 1390, 4521, 6805, 7259, 8708, 2]
+// Dependencies: [1405, 1085, 1403, 4762, 7002, 7896, 9230, 2]
 // Exports: ModeratorReport, isMessageComponentsV2
 
-// Module 4520 (MessageRecord)
-import FlagUtils from "FlagUtils" /* 1390 */;
-import ReactionUtils from "ReactionUtils" /* 4521 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6805 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7259 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8708 */;
-import Record from "Record" /* 1392 */;
+// Module 4761 (MessageRecord)
+import FlagUtils from "FlagUtils" /* 1403 */;
+import ReactionUtils from "ReactionUtils" /* 4762 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7002 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7896 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9230 */;
+import Record from "Record" /* 1405 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -100,8 +100,14 @@ class MinimalMessageRecord extends Record {
 const prototype = MinimalMessageRecord.prototype;
 class MessageRecord extends MinimalMessageRecord {
   constructor(message) {
+    let actor;
     const tmp2 = new MessageRecord(message, new.target, tmp, message, this);
-    ({ id: tmp2.id, channel_id: tmp2.channel_id, author: tmp2.author, customRenderedContent: tmp2.customRenderedContent } = message);
+    ({ id: tmp2.id, channel_id: tmp2.channel_id, author: tmp2.author, actor } = message);
+    if (actor == null) {
+      actor = null;
+    }
+    tmp2.actor = actor;
+    tmp2.customRenderedContent = message.customRenderedContent;
     tmp2.mentions = message.mentions || [];
     tmp2.mentionRoles = message.mentionRoles || [];
     tmp2.mentionChannels = message.mentionChannels || [];

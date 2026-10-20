@@ -1,27 +1,25 @@
-// Module ID: 16891
-// Function ID: 16892
+// Module ID: 17480
+// Function ID: 17481
 // Name: ThreadListTableRow
-// Dependencies: [19, 17, 2051, 21, 4890, 558, 576, 16892, 5993, 504, 2]
+// Dependencies: [19, 17, 2065, 21, 5092, 558, 576, 17481, 6180, 504, 2]
 
-// Module 16891 (ThreadListTableRow)
+// Module 17480 (ThreadListTableRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import TableRow2 from "TableRow" /* 5993 */;
-import ThreadBrowserRowSubtext from "ThreadBrowserRowSubtext" /* 16892 */;
+import TableRow2 from "TableRow" /* 6180 */;
+import ThreadBrowserRowSubtext from "ThreadBrowserRowSubtext" /* 17481 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import createStyles from "createStyles" /* 4890 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let thread, threadId;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ subLabel: { maxWidth: "100%", marginTop: 2 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadListTableRow(thread) {
   let end;
   let start;
   let tmp7;
@@ -79,7 +77,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
   cResult[6] = tmp7;
   cResult[7] = tmp11;
   tmp10 = tmp11;
-}) : ((thread) => {
+}) : (function ThreadListTableRow(thread) {
   let end;
   let start;
   thread = thread.thread;
@@ -96,7 +94,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((thread) => {
 });
 let memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedThreadListTableRow(threadId) {
   let end;
   let first;
   let onPress;
@@ -148,7 +146,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((threadI
     tmp9 = tmp12;
   }
   return tmp8;
-}) : ((threadId) => {
+}) : (function ConnectedThreadListTableRow(threadId) {
   let end;
   let onPress;
   let start;

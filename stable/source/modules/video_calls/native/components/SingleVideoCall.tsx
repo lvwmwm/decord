@@ -1,14 +1,14 @@
-// Module ID: 9710
-// Function ID: 9711
+// Module ID: 11145
+// Function ID: 11146
 // Name: SingleVideoCall
-// Dependencies: [19, 9050, 21, 558, 576, 1618, 6657, 5091, 7850, 9120, 1188, 9105, 2]
+// Dependencies: [19, 10355, 21, 558, 576, 1631, 6852, 5106, 8299, 10906, 1200, 10895, 2]
 
-// Module 9710 (SingleVideoCall)
+// Module 11145 (SingleVideoCall)
 import Fragment from "Fragment" /* 21 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
 import react from "react" /* 19 */;
-import ChannelCallStore from "ChannelCallStore" /* 9050 */;
+import ChannelCallStore from "ChannelCallStore" /* 10355 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let closure_4;
 let hasOwnProperty;
 ({ resetFocus: closure_4, toggleFocus: hasOwnProperty } = ChannelCallStore);
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SingleVideoCall(arg0) {
   let analyticsLocations;
   let bottom;
   let channel;
@@ -26,19 +26,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = channel(576);
   const cResult = obj.c(13);
   ({ participant, channel } = arg0);
-  ({ bottom, right } = analyticsLocations(1618)());
-  analyticsLocations(1618)();
+  ({ bottom, right } = analyticsLocations(1631)());
+  analyticsLocations(1631)();
   const tmp4 = analyticsLocations;
-  analyticsLocations = analyticsLocations(6657)().analyticsLocations;
+  analyticsLocations = analyticsLocations(6852)().analyticsLocations;
   if (cResult[0] !== channel.id) {
-    const fn = function n() {
+    function handleDoubleTap() {
       React3();
       const obj = ChannelRTCActionCreatorsDefault;
       const participant = obj.selectParticipant(channel.id, null);
-    };
+    }
     cResult[0] = channel.id;
-    cResult[1] = fn;
-    tmp6 = fn;
+    cResult[1] = handleDoubleTap;
+    tmp6 = handleDoubleTap;
   } else {
     tmp6 = cResult[1];
   }
@@ -63,8 +63,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
       }
-      tmp4(9120);
-      const tmp13 = <tmp4Result gestureEnabled participant={participant} avatarSize={channel(1188).AvatarSizes.PROFILE} resizeMode={channel(9105).ResizeMode.AUTO} statusStyle={tmp8} onSingleTap={onSingleTap} onDoubleTap={tmp6} onLongPress={tmp7} />;
+      tmp4(10906);
+      const tmp13 = <tmp4Result gestureEnabled participant={participant} avatarSize={channel(1200).AvatarSizes.PROFILE} resizeMode={channel(10895).ResizeMode.AUTO} statusStyle={tmp8} onSingleTap={onSingleTap} onDoubleTap={tmp6} onLongPress={tmp7} />;
       cResult[8] = tmp6;
       cResult[9] = tmp7;
       cResult[10] = participant;
@@ -78,15 +78,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = obj3;
     tmp8 = obj3;
   }
-  const fn2 = function b(user) {
+  function onLongPress(user) {
     const obj = { userId: user.user.id, channelId: channel.id, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations };
     showUserProfileActionSheetDefault(obj);
-  };
+  }
   cResult[2] = analyticsLocations;
   cResult[3] = channel.id;
-  cResult[4] = fn2;
-  tmp7 = fn2;
-}) : ((channel) => {
+  cResult[4] = onLongPress;
+  tmp7 = onLongPress;
+}) : (function SingleVideoCall(channel) {
   channel = channel.channel;
   let bottom;
   let right;
@@ -98,7 +98,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items = [right, bottom];
   const memo = analyticsLocations.useMemo(() => ({ marginRight: right, marginBottom: bottom }), items);
   bottom(right[9]);
-  return <tmp2 gestureEnabled participant={participant} avatarSize={channel(right[10]).AvatarSizes.PROFILE} resizeMode={channel(right[11]).ResizeMode.AUTO} statusStyle={memo} onSingleTap={onSingleTap} onDoubleTap={function onDoubleTap() {
+  return <tmp2 gestureEnabled participant={participant} avatarSize={channel(right[10]).AvatarSizes.PROFILE} resizeMode={channel(right[11]).ResizeMode.AUTO} statusStyle={memo} onSingleTap={onSingleTap} onDoubleTap={function handleDoubleTap() {
     React3();
     const obj = ChannelRTCActionCreatorsDefault;
     const participant = obj.selectParticipant(channel.id, null);

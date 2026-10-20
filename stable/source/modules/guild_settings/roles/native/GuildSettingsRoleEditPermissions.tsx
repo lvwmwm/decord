@@ -1,25 +1,25 @@
-// Module ID: 17803
-// Function ID: 17804
+// Module ID: 18434
+// Function ID: 18435
 // Name: GuildSettingsRoleEditPermissions
-// Dependencies: [32, 19, 17, 2070, 4509, 1377, 1085, 21, 4890, 587, 4514, 38, 4886, 1126, 4854, 17804, 1987, 17009, 17801, 6547, 1252, 1097, 17013, 6698, 6074, 1188, 9240, 2]
+// Dependencies: [32, 19, 17, 2083, 4750, 1390, 1085, 21, 5092, 587, 4755, 38, 5088, 1126, 5056, 18435, 2000, 17597, 18432, 6739, 1265, 1097, 17601, 6896, 6265, 1200, 8626, 2]
 // Exports: default
 
-// Module 17803 (GuildSettingsRoleEditPermissions)
+// Module 18434 (GuildSettingsRoleEditPermissions)
 import nativeDefault from "native" /* 587 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import GuildRecord from "GuildRecord" /* 2070 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import GuildRecord from "GuildRecord" /* 2083 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import UserStore_mod from "UserStore" /* 1377 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import UserStore_mod from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let permissions;
@@ -109,16 +109,16 @@ export default function GuildSettingsRoleEditPermission(guild) {
   }
   if (tmp19Result) {
     let obj3 = { variant: "text-sm/medium", color: "text-muted", children: intl.format(guild(1126).t.ZhSOBy, obj4) };
-    let Text = guild(4886).Text;
+    let Text = guild(5088).Text;
     intl = guild(1126).intl;
     obj4 = { onTemplateOpen: obj5 };
     obj5 = {
-      onClick() {
+      onClick: function handleTemplateOpen() {
           metroImportDefault.dismiss();
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
           const obj = { permissionsEdited, onPermissionsChanged: dependencyMap, guildId: guild.id };
-          const tmp3 = asyncRequire(17804, dependencyMap.paths);
+          const tmp3 = asyncRequire(18435, dependencyMap.paths);
           openLazy(tmp3, "role-permission-templates-" + guild.id + "-" + role.id, obj);
         },
       accessibilityRole: "button"
@@ -126,7 +126,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
     tmp19Result = tmp19(Text, obj3);
   }
   const tmp19Result3 = closure_14(closure_6, { children: tmp19Result });
-  const tmp15Result = role(17009);
+  const tmp15Result = role(17597);
   const guildPermissionSpec = tmp15Result.generateGuildPermissionSpec(guild);
   const mapped = guildPermissionSpec.map((permissions) => {
     const obj = {
@@ -146,11 +146,11 @@ export default function GuildSettingsRoleEditPermission(guild) {
   const mapped1 = found.map((title) => ({ title: title.title, data: title.permissions }));
   const children = [, , , ];
   const tmp25 = mapped1.length > 0;
-  children[0] = closure_14(role(17801), { role });
-  let obj6 = { children: tmp19(guild(6547).SearchField, obj7) };
+  children[0] = closure_14(role(18432), { role });
+  let obj6 = { children: tmp19(guild(6739).SearchField, obj7) };
   obj7 = {
     size: "md",
-    onChange(str) {
+    onChange: function handleSearchQuery(str) {
       closure_8(str);
       const current = "" === str.trimStart() || ref.current;
       if (!current) {
@@ -236,11 +236,11 @@ export default function GuildSettingsRoleEditPermission(guild) {
           const obj = { accessible: true, accessibilityRole: "header", accessibilityLabel: title, children: closure_1_14(guild(dependencyMap[24]).TableRowGroupTitle, { title }) };
           return closure_1_14(closure_6, obj);
         },
-      SectionSeparatorComponent(leadingItem) {
+      SectionSeparatorComponent: function renderSectionSeparator(leadingItem) {
           let tmp = null;
           if (null != leadingItem.leadingItem) {
             const obj = { style: closure_4.sectionSeparator };
-            tmp = authStore2(metroRequire, obj);
+            tmp = syncedClientThemes(metroRequire, obj);
           }
           return tmp;
         },
@@ -256,8 +256,8 @@ export default function GuildSettingsRoleEditPermission(guild) {
     };
     tmp19Result4 = tmp19(closure_8, obj8);
   } else {
-    const obj9 = { Illustration: guild(9240).NoResultsAlt, style: null, bodyStyle: null, body: intl2.format(guild(1126).t.Psh5OO, obj11) };
-    const EmptyState = tmp28(1188).EmptyState;
+    const obj9 = { Illustration: guild(8626).NoResultsAlt, style: null, bodyStyle: null, body: intl2.format(guild(1126).t.Psh5OO, obj11) };
+    const EmptyState = tmp28(1200).EmptyState;
     ({ emptyState: obj10.style, emptyStateText: obj10.bodyStyle } = tmp);
     intl2 = tmp28(1126).intl;
     obj11 = { query };

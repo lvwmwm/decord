@@ -1,13 +1,13 @@
-// Module ID: 7189
-// Function ID: 7190
+// Module ID: 7388
+// Function ID: 7389
 // Name: VideoQuestUIStore
-// Dependencies: [109, 1254, 4750, 7190, 1259, 7191, 2]
+// Dependencies: [109, 1267, 4990, 7389, 1272, 7390, 2]
 
-// Module 7189 (VideoQuestUIStore)
-import react_native from "react-native" /* 1259 */;
+// Module 7388 (VideoQuestUIStore)
+import react_native from "react-native" /* 1272 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import module_1254_mod from "module_1254" /* 1254 */;
-import combine_mod from "combine" /* 4750 */;
+import module_1267_mod from "module_1267" /* 1267 */;
+import combine_mod from "combine" /* 4990 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,8 +42,8 @@ function _toPropertyKey(obj) {
   return text;
 }
 const VideoProgressState = { UNKNOWN: "UNKNOWN", NOT_STARTED: "NOT_STARTED", IN_PROGRESS: "IN_PROGRESS", COMPLETED: "COMPLETED" };
-let module_1254 = module_1254_mod;
-module_1254 = module_1254.createWithEqualityFn();
+let module_1267 = module_1267_mod;
+module_1267 = module_1267.createWithEqualityFn();
 let combine = combine_mod;
 let obj2 = {
   name: "videoQuestUIState",
@@ -55,7 +55,7 @@ let obj2 = {
 };
 const persist = combine.persist;
 combine = combine_mod;
-const withEqualityFnResult = module_1254(persist((arg0, arg1) => {
+const withEqualityFnResult = module_1267(persist((arg0, arg1) => {
   _require = arg0;
   let closure_1 = arg1;
   let obj = {

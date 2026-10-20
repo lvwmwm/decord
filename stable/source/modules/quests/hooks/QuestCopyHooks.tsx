@@ -1,33 +1,33 @@
-// Module ID: 10955
-// Function ID: 10956
+// Module ID: 12985
+// Function ID: 12986
 // Name: QuestCopyHooks
-// Dependencies: [5, 32, 19, 2116, 1377, 5623, 1085, 1379, 1126, 558, 576, 10911, 7206, 7208, 10005, 2115, 10956, 1976, 504, 10957, 8319, 8320, 5626, 10010, 1888, 9044, 10941, 10918, 7212, 7211, 2]
+// Dependencies: [5, 32, 19, 2129, 1390, 5972, 1085, 1392, 1126, 558, 576, 9166, 7406, 7408, 9185, 2128, 12986, 1989, 504, 12987, 8874, 8875, 5975, 9188, 1901, 10922, 12972, 9199, 7411, 7410, 2]
 // Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions
 
-// Module 10955 (QuestCopyHooks)
+// Module 12985 (QuestCopyHooks)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import NumberUtils from "NumberUtils" /* 1888 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import QuestTypes from "QuestTypes" /* 5626 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7208 */;
-import QuestType from "QuestType" /* 7211 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8320 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 9044 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 10005 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 10010 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 10911 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 10941 */;
-import useInGameQuestConnectState from "useInGameQuestConnectState" /* 10957 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import NumberUtils from "NumberUtils" /* 1901 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import QuestTypes from "QuestTypes" /* 5975 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7408 */;
+import QuestType from "QuestType" /* 7410 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8875 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9166 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9185 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9188 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 10922 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 12972 */;
+import useInGameQuestConnectState from "useInGameQuestConnectState" /* 12987 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
-import UserStore from "UserStore" /* 1377 */;
-import QuestConstants from "QuestConstants" /* 5623 */;
+import LocaleStore from "LocaleStore" /* 2129 */;
+import UserStore from "UserStore" /* 1390 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,9 +40,9 @@ let metroImportAll;
 let tmp;
 let tmp2;
 const intl13 = tmp(1126);
-const utils_QuestUtils = tmp(7206);
-const GameProfileAnalyticUtils = tmp2(8319);
-const SponsoredQuestUtils = tmp(10956);
+const utils_QuestUtils = tmp(7406);
+const GameProfileAnalyticUtils = tmp2(8874);
+const SponsoredQuestUtils = tmp(12986);
 function _getQuestsInstructionsToWinReward(arg0) {
   let applications;
   let currentUser;
@@ -61,7 +61,7 @@ function _getQuestsInstructionsToWinReward(arg0) {
   let withoutMarkdown;
   ({ quest, taskDetails, thirdPartyTaskDetails, withoutMarkdown, currentUser, onGameTitleClick } = arg0);
   ({ sourceQuestContent, popoutTargetElementRef, onGameSheetOpened, onGameSheetClosed, needsToConnect } = arg0);
-  let obj = PremiumTypeUtils;
+  const obj = PremiumTypeUtils;
   const isPremiumResult = obj.isPremium(currentUser, PremiumTypes.TIER_2);
   const obj2 = QuestRewardUtils;
   const collectibleQuestRewardDuration = obj2.getCollectibleQuestRewardDuration(quest.config);
@@ -552,7 +552,7 @@ function getSimplifiedQuestTaskType(quest) {
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questContent, sourceQuestContent) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestInstructionTitle(quest, arg1, questContent, sourceQuestContent) {
   const obj = react2;
   const cResult = obj.c(30);
   const obj2 = hooks_QuestHooks;
@@ -761,7 +761,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questCo
   cResult[2] = sourceQuestContent;
   cResult[3] = obj14;
   tmp5 = obj14;
-}) : ((quest, arg1, questContent, sourceQuestContent) => {
+}) : (function useQuestInstructionTitle(quest, arg1, questContent, sourceQuestContent) {
   const obj = hooks_QuestHooks;
   const targetMinutes = obj.useQuestTaskDetails(quest).targetMinutes;
   const obj2 = hooks_QuestHooks;
@@ -855,7 +855,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questCo
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestsInstructionsToWinReward(arg0) {
   let currentUser;
   let gameProfileSource;
   let quest;
@@ -904,7 +904,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp11 = cResult[3];
   }
   if (gameProfileSource == null) {
-    gameProfileSource = tmp(8319).GameProfileSources.QuestHome;
+    gameProfileSource = tmp(8874).GameProfileSources.QuestHome;
   }
   if (cResult[4] === tmp11) {
     let tmp16;
@@ -944,7 +944,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = gameProfileSource;
   cResult[6] = obj3;
   tmp16 = obj3;
-}) : ((arg0) => {
+}) : (function useQuestsInstructionsToWinReward(arg0) {
   let currentUser;
   let gameProfileSource;
   let inGameApplicationId;
@@ -982,7 +982,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_14 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, sourceQuestContent, location, gameProfileSource, popoutTargetElementRef) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDescription(quest, sourceQuestContent, location, gameProfileSource, popoutTargetElementRef) {
   const obj = react2;
   const cResult = obj.c(9);
   const obj2 = hooks_QuestHooks;
@@ -1040,7 +1040,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, sourceQuestCo
   cResult[5] = questTaskDetails;
   cResult[6] = obj4;
   tmp5 = obj4;
-}) : ((quest, sourceQuestContent, location, gameProfileSource, popoutTargetElementRef) => {
+}) : (function useQuestDescription(quest, sourceQuestContent, location, gameProfileSource, popoutTargetElementRef) {
   const obj = hooks_QuestHooks;
   const obj2 = { quest, taskDetails: obj.useQuestTaskDetails(quest), location, sourceQuestContent, popoutTargetElementRef, gameProfileSource };
   let formatToPlainStringResult = closure_14(obj2);
@@ -1063,7 +1063,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, sourceQuestCo
   return formatToPlainStringResult;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestBarSubtitle(arg0) {
   let activeScreen;
   let currentUser;
   let hasAlreadyLinked;
@@ -1293,7 +1293,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = questTaskDetails;
   cResult[8] = { quest, location: metroImportAll.QUESTS_BAR, taskDetails: questTaskDetails, sourceQuestContent, popoutTargetElementRef, onGameSheetOpened, onGameSheetClosed, gameProfileSource: GameProfileAnalyticUtils.GameProfileSources.QuestBar };
   ({ quest, location: metroImportAll.QUESTS_BAR, taskDetails: questTaskDetails, sourceQuestContent, popoutTargetElementRef, onGameSheetOpened, onGameSheetClosed, gameProfileSource: GameProfileAnalyticUtils.GameProfileSources.QuestBar });
-}) : ((arg0) => {
+}) : (function useQuestBarSubtitle(arg0) {
   let activeScreen;
   let currentUser;
   let hasAlreadyLinked;
@@ -1411,7 +1411,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 const constants3 = { PLAY: 0, [0]: "PLAY", STREAM: 1, [1]: "STREAM", WATCH_VIDEO: 2, [2]: "WATCH_VIDEO", IN_GAME: 3, [3]: "IN_GAME" };
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus, arg1) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestBarTitle(userStatus, arg1) {
   let locale;
   let tmp4;
   let tmp5;
@@ -1548,7 +1548,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus, arg1) =>
     }
     return tmp15;
   }
-}) : ((userStatus, arg1) => {
+}) : (function useQuestBarTitle(userStatus, arg1) {
   let locale;
   const items = [LocaleStore];
   const obj = get_initialized;
@@ -1619,7 +1619,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus, arg1) =>
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSimplifiedQuestTaskType(quest) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(2);
@@ -1632,13 +1632,13 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function useSimplifiedQuestTaskType(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   return react.useMemo(() => getSimplifiedQuestTaskType(closure_0), items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrimaryCtaCopy(arg0) {
   let application;
   let quest;
   let shortText;
@@ -1780,7 +1780,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl = tmp(1126).intl;
     stringResult3 = intl.string(tmp(1126).t.l7E81v);
   }
-}) : ((arg0) => {
+}) : (function usePrimaryCtaCopy(arg0) {
   let application;
   let quest;
   let shortText;
@@ -1866,7 +1866,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumExtendableCopy(config) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(4);
@@ -1903,7 +1903,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
     tmp7 = tmp8;
   }
   return tmp7;
-}) : ((arg0) => {
+}) : (function usePremiumExtendableCopy(arg0) {
   let closure_0;
   _require = arg0;
   const items = [arg0];
@@ -1928,7 +1928,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
   return tmp3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalCtaConfig(quest) {
   let preCtaClick;
   const tmp2 = preCtaClick;
   let obj = quest(preCtaClick[10]);
@@ -2095,7 +2095,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   cResult[4] = sourceQuestContent;
   cResult[5] = defaultOnClickCta;
   tmp4 = defaultOnClickCta;
-}) : ((quest) => {
+}) : (function useModalCtaConfig(quest) {
   let memo;
   let obj2;
   quest = quest.quest;
@@ -2207,7 +2207,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
     }
     return subtitle;
   }, items);
-  obj2 = quest(10010);
+  obj2 = quest(9188);
   return obj;
 });
 let result = size.fileFinishedImporting("modules/quests/hooks/QuestCopyHooks.tsx");
@@ -2241,7 +2241,7 @@ export const getRewardCodeRedemptionInstructions = function getRewardCodeRedempt
     platform = rewardCode.platform;
   }
   if (platform == null) {
-    platform = tmp(5626).QuestRewardCodePlatforms.CROSS_PLATFORM;
+    platform = tmp(5975).QuestRewardCodePlatforms.CROSS_PLATFORM;
   }
   let rewardCodeQuestReward = null;
   if (result) {

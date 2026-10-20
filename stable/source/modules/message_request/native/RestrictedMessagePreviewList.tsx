@@ -1,22 +1,22 @@
-// Module ID: 17078
-// Function ID: 17079
+// Module ID: 17666
+// Function ID: 17667
 // Name: RestrictedMessagePreviewList
-// Dependencies: [19, 17, 5110, 21, 4890, 17079, 587, 558, 576, 5865, 4886, 1126, 4812, 4552, 6657, 504, 7850, 7591, 17080, 8303, 5909, 17081, 2]
+// Dependencies: [19, 17, 5432, 21, 5092, 17667, 587, 558, 576, 8204, 5088, 1126, 5046, 4793, 6852, 504, 8299, 7742, 17668, 9369, 6185, 17669, 2]
 
-// Module 17078 (RestrictedMessagePreviewList)
+// Module 17666 (RestrictedMessagePreviewList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import DateUtils from "DateUtils" /* 4552 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 5865 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
-import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 17079 */;
-import RestrictedBlockedMessageGroupDefault from "RestrictedBlockedMessageGroup" /* 17081 */;
+import DateUtils from "DateUtils" /* 4793 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 8204 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
+import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 17667 */;
+import RestrictedBlockedMessageGroupDefault from "RestrictedBlockedMessageGroup" /* 17669 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 5110 */;
+import MessageStore from "MessageStore" /* 5432 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -81,7 +81,7 @@ obj5 = { alignItems: "center", justifyContent: "center", gap: nativeDefault.spac
 obj6 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_4 };
 let closure_10 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function HiddenMedia(count) {
   let intl;
   let items;
   let items1;
@@ -111,7 +111,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2 = { variant: "text-sm/normal", color: "text-muted", children: intl.string(require("intl").t["VGf+K3"]) };
-      let Text = tmp(4886).Text;
+      let Text = tmp(5088).Text;
       intl = tmp(1126).intl;
       const tmp14 = closure_6(Text, obj2);
       cResult[6] = tmp14;
@@ -167,7 +167,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
   cResult[1] = tmp4.mediaPlaceholderCard;
   cResult[2] = arr;
   tmp5 = arr;
-}) : ((count) => {
+}) : (function HiddenMedia(count) {
   let intl;
   let items;
   let items1;
@@ -200,7 +200,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
   return closure_7(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channelId) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMessagePreviewList(channelId) {
   let analyticsLocations;
   let arr3;
   let closure_1;
@@ -255,7 +255,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channelId) {
       const self2 = this;
       let obj3 = new tmp5(tmp2[17])();
       obj3.setOptions(closure_9);
-      class M {
+      class P {
         constructor(arg0) {
           closure_0 = channelId;
           tmp = closure_1(analyticsLocations[18])(channelId);
@@ -329,7 +329,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channelId) {
                   }
                   let obj2 = { style: tmp18, children: tmp19 };
                   const tmp24 = arr3(tmp17, obj2);
-                  class M {
+                  class P {
                     constructor(arg0) {
                       closure_0 = channelId;
                       tmp = closure_1(analyticsLocations[18])(channelId);
@@ -377,7 +377,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channelId) {
             }
           }
           arr3 = groupMessages(stateFromStoresArray);
-          class M {
+          class P {
             constructor(arg0) {
               closure_0 = channelId;
               tmp = closure_1(analyticsLocations[18])(channelId);
@@ -484,7 +484,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channelId) {
         }
       }
     }
-    class M {
+    class P {
       constructor(arg0) {
         closure_0 = channelId;
         tmp = closure_1(analyticsLocations[18])(channelId);
@@ -526,8 +526,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channelId) {
     cResult[9] = tmp4.avatarHitbox;
     cResult[10] = tmp4.hiddenMedia;
     cResult[11] = tmp4.messageRow;
-    cResult[12] = M;
-    tmp16 = M;
+    cResult[12] = P;
+    tmp16 = P;
   }
   const fn2 = function _(userId) {
     const obj = { userId, channelId, sourceAnalyticsLocations: analyticsLocations };
@@ -537,7 +537,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channelId) {
   cResult[5] = channelId;
   cResult[6] = fn2;
   tmp11 = fn2;
-}) : ((channelId) => {
+}) : (function RestrictedMessagePreviewList(channelId) {
   let closure_1;
   channelId = channelId.channelId;
   let analyticsLocations;

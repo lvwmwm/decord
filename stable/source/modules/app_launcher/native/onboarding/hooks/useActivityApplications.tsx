@@ -1,17 +1,15 @@
-// Module ID: 11652
-// Function ID: 11653
+// Module ID: 11717
+// Function ID: 11718
 // Name: useActivityApplications
-// Dependencies: [19, 558, 576, 11653, 8993, 2]
+// Dependencies: [19, 558, 576, 11718, 10849, 2]
 
-// Module 11652 (useActivityApplications)
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8993 */;
+// Module 11717 (useActivityApplications)
+import fetchShelf from "fetchShelf" /* 10849 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let guildId;
-
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityApplications(guildId) {
   let tmp3;
   let tmp4;
   let tmp = dependencyMap;
@@ -27,12 +25,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   } else {
     tmp3 = cResult[1];
   }
-  const arr = fetchesShelf(11653)(tmp3);
+  const arr = fetchesShelf(11718)(tmp3);
   if (cResult[2] !== arr) {
     let tmp6;
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function s(application) {
+      const fn = function p(application) {
         return application.application;
       };
       cResult[4] = fn;
@@ -61,7 +59,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const tmp = fetchesShelf;
     if (tmp) {
       const obj2 = { guildId };
-      const obj = EmbeddedActivitiesActionCreators;
+      const obj = fetchShelf;
       const shelf = obj.fetchShelf(obj2);
     }
   };
@@ -72,17 +70,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[8] = items;
   tmp9 = items;
   tmp8 = fn2;
-}) : ((guildId) => {
+}) : (function useActivityApplications(guildId) {
   guildId = guildId.guildId;
   const fetchesShelf = guildId.fetchesShelf;
   const items = [fetchesShelf, guildId];
-  const arr = fetchesShelf(11653)({ guildId });
+  const arr = fetchesShelf(11718)({ guildId });
   const mapped = arr.map((application) => application.application);
   const effect = react.useEffect(() => {
     const tmp = fetchesShelf;
     if (tmp) {
       const obj2 = { guildId };
-      const obj = EmbeddedActivitiesActionCreators;
+      const obj = fetchShelf;
       const shelf = obj.fetchShelf(obj2);
     }
   }, items);

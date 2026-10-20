@@ -1,30 +1,30 @@
-// Module ID: 14841
-// Function ID: 14842
+// Module ID: 15319
+// Function ID: 15320
 // Name: AdVideoPlayer
-// Dependencies: [32, 19, 17, 1986, 1085, 21, 587, 7984, 4890, 683, 558, 576, 14823, 4612, 5597, 5598, 4891, 4894, 1121, 504, 1369, 1242, 1618, 1126, 5909, 14842, 14844, 14846, 14847, 11364, 7948, 7950, 14848, 14849, 2]
+// Dependencies: [32, 19, 17, 1999, 1085, 21, 587, 8422, 5092, 683, 558, 576, 15300, 4850, 5378, 5382, 5093, 5096, 1121, 504, 1382, 1255, 1631, 1126, 6185, 15320, 15322, 15324, 15325, 12627, 8396, 8398, 15326, 15327, 2]
 
-// Module 14841 (AdVideoPlayer)
+// Module 15319 (AdVideoPlayer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import timing from "timing" /* 4891 */;
-import timingPresets from "timingPresets" /* 4894 */;
-import spring from "spring" /* 5597 */;
-import TextTrackTypeDefault from "TextTrackType" /* 7984 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 14823 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import timing from "timing" /* 5093 */;
+import timingPresets from "timingPresets" /* 5096 */;
+import spring from "spring" /* 5378 */;
+import TextTrackTypeDefault from "TextTrackType" /* 8422 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15300 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AppStateStore from "AppStateStore" /* 1986 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import module_683 from "module_683" /* 683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let duration, initialProgress;
+let duration;
 
 let StyleSheet;
 let alphaResult;
@@ -47,7 +47,7 @@ let rect1;
 let rect2;
 let tmp2;
 let unpackModuleId;
-const springPresets = tmp2(5598);
+const springPresets = tmp2(5382);
 ({ View: hasOwnProperty, StyleSheet, Pressable: metroRequire, ActivityIndicator: metroImportDefault } = react_native);
 ({ AppStates: c9, ComponentActions: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
@@ -95,7 +95,7 @@ obj8 = { color: nativeDefault.colors.TEXT_DEFAULT };
 obj9 = { color: nativeDefault.colors.TEXT_SUBTLE };
 obj10 = { padding: nativeDefault.space.PX_8 };
 let closure_17 = createStyles(obj);
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onBuffer) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBufferingState(onBuffer) {
   let closure_129_2;
   let tmp3;
   let tmp4;
@@ -133,7 +133,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onBuffer) => {
   cResult[3] = tmp4;
   cResult[4] = obj2;
   tmp5 = obj2;
-}) : ((onBuffer) => {
+}) : (function useBufferingState(onBuffer) {
   let items;
   onBuffer = onBuffer.onBuffer;
   let closure_1 = react.useRef(false);
@@ -157,7 +157,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onBuffer) => {
 let closure_19 = { code: "function shouldShowControls_AdVideoPlayerTsx3(){const{hasLoaded,hideControls,showControls,playerState,PlayerState,isVideoEnded}=this.__closure;return hasLoaded&&!hideControls&&(showControls.get()||playerState===PlayerState.PAUSED||playerState===PlayerState.ENDED||playerState===PlayerState.ERRORED||isVideoEnded);}" };
 let __initData = { code: "function AdVideoPlayerTsx4(){const{shouldShowControls,withSpring,SUBTLE_SPRING}=this.__closure;const show=shouldShowControls();return{opacity:withSpring(show?1:0,SUBTLE_SPRING),pointerEvents:show?'auto':'none'};}" };
 let closure_21 = { code: "function AdVideoPlayerTsx5(){const{withTiming,progressSharedValue,timingFast}=this.__closure;return{width:withTiming(progressSharedValue.get()*100+\"%\",timingFast,'animate-always')};}" };
-const memoResult = react.memo((initialProgress) => {
+const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
   let ClosedCaptionsOutlineIcon;
   let PressableOpacity3;
   let _undefined;
@@ -178,12 +178,11 @@ const memoResult = react.memo((initialProgress) => {
   let isBuffering;
   let isFullscreen;
   let items24;
-  let items25;
+  let items27;
   let items28;
   let items29;
-  let items30;
+  let items32;
   let items33;
-  let items34;
   let maxBitRate;
   let num5;
   let obj15;
@@ -728,7 +727,7 @@ const memoResult = react.memo((initialProgress) => {
     } else {
       const tmp2 = require;
       if (first2 !== AdsVideoTypes.PlayerState.LOADING) {
-        tmp2(1369);
+        tmp2(1382);
       }
       toggleBuffering(true);
     }
@@ -756,8 +755,7 @@ const memoResult = react.memo((initialProgress) => {
   }
   const obj7 = { style: items24, accessible: false, children: null };
   items24 = [tmp.container, style];
-  const obj8 = { style: items25, onPress: callback10, accessible: !shouldShowControlsResult, accessibilityLabel: string(tmp55 ? t.R3aFPe : t.fTMEUi), children: null };
-  items25 = [tmp.videoContainer];
+  const obj8 = { style: tmp.videoContainer, onPress: callback10, accessible: !shouldShowControlsResult, accessibilityLabel: string(tmp55 ? t.R3aFPe : t.fTMEUi), children: null };
   const intl = tmp8(tmp9[23]).intl;
   string = intl.string;
   t = tmp8(tmp9[23]).t;
@@ -767,14 +765,14 @@ const memoResult = react.memo((initialProgress) => {
     const obj9 = { mixWithOthers: "inherit", httpEngine, automaticallyWaitsToMinimizeStalling, maxBitRate, bufferConfig, preferredForwardBufferDuration, ref: videoRef, accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityRole: "none", style: tmp.video, paused: tmp55, repeat, source, onBuffer: callback17, onPlaybackStalled: callback18, onPlaybackResume: callback19, onLoad: callback5, onSeek: callback11, onProgress: callback13, onLoadStart: callback15, onEnd: callback14, onError: callback16, onReadyForDisplay: callback3, onVideoTracks, onLayout: onVideoLayout, resizeMode: "contain" };
     tmp64Result = tmp64(flag8, obj9);
   }
-  const items26 = [tmp64Result, , , , , ];
+  const items25 = [tmp64Result, , , , , ];
   let renderCaptionsResult;
   if (renderCaptions != null) {
     renderCaptionsResult = renderCaptions(first1.timestampSec);
   }
-  items26[1] = renderCaptionsResult;
+  items25[1] = renderCaptionsResult;
   if (isBuffering) {
-    const items27 = [tmp.bufferingSpinner, ];
+    const items26 = [tmp.bufferingSpinner, ];
     if (!isFullscreen) {
       let rect1;
       let str = "center";
@@ -795,31 +793,31 @@ const memoResult = react.memo((initialProgress) => {
           num5 = 0;
         }
       }
-      items27[1] = rect1;
-      const obj10 = { animating: true, style: items27, color: flag(tmp9[6]).unsafe_rawColors.WHITE };
+      items26[1] = rect1;
+      const obj10 = { animating: true, style: items26, color: flag(tmp9[6]).unsafe_rawColors.WHITE };
       isBuffering = tmp64(tmp71, obj10);
     }
     rect1 = tmp.bufferingSpinnerCentered;
   }
-  items26[2] = isBuffering;
+  items25[2] = isBuffering;
   let tmp64Result4 = !tmp27;
   if (tmp64Result4) {
     const obj11 = { style: tmp.loadingContainer, children: onPlayerStateChange(onSeekStart, { animating: true }) };
     tmp64Result4 = tmp64(tmp65, obj11);
   }
-  items26[3] = tmp64Result4;
-  const obj12 = { style: items28, accessible: false, children: null };
-  items28 = [tmp.controls, animatedStyle];
+  items25[3] = tmp64Result4;
+  const obj12 = { style: items27, accessible: false, children: null };
+  items27 = [tmp.controls, animatedStyle];
   let tmp66Result = flag3;
   const View = tmp60(tmp9[13]).View;
   if (!flag3) {
     tmp66Result = flag4;
   }
   if (tmp66Result) {
-    const obj13 = { style: items29, children: items30 };
-    items29 = [, , ];
-    ({ controlsTopBottom: arr30[0], controlsTop: arr30[1] } = tmp);
-    items29[2] = tmp61;
+    const obj13 = { style: items28, children: items29 };
+    items28 = [, , ];
+    ({ controlsTopBottom: arr29[0], controlsTop: arr29[1] } = tmp);
+    items28[2] = tmp61;
     if (flag3) {
       let color;
       const obj14 = { accessibilityRole: "button", accessibilityLabel: intl2.string(tmp8(tmp9[23]).t.bDSZO1), onPress: onToggleCaptions, style: tmp.controlButton, children: onPlayerStateChange(ClosedCaptionsOutlineIcon, obj15) };
@@ -834,7 +832,7 @@ const memoResult = react.memo((initialProgress) => {
       obj15 = { color };
       flag3 = tmp64(PressableOpacity, obj14);
     }
-    items30 = [flag3, ];
+    items29 = [flag3, ];
     if (flag4) {
       const obj16 = { accessibilityRole: "button", accessibilityLabel: intl3.string(tmp8(tmp9[23]).t.KCzjTi), onPress: onOpenTranscript, style: tmp.controlButton, children: onPlayerStateChange(tmp8(tmp9[26]).TranscriptOutlineIcon, obj17) };
       const PressableOpacity2 = tmp8(tmp9[24]).PressableOpacity;
@@ -842,10 +840,10 @@ const memoResult = react.memo((initialProgress) => {
       obj17 = { color: tmp.iconDisabled.color };
       flag4 = tmp64(PressableOpacity2, obj16);
     }
-    items30[1] = flag4;
+    items29[1] = flag4;
     tmp66Result = tmp66(tmp65, obj13);
   }
-  const items31 = [tmp66Result, , ];
+  const items30 = [tmp66Result, , ];
   const obj18 = { style: tmp.controlsMiddle, children: null };
   let tmp64Result5 = flag7;
   if (tmp64Result5) {
@@ -855,7 +853,7 @@ const memoResult = react.memo((initialProgress) => {
     size = { color: tmp.icon.color, width: 16, height: 16 };
     tmp64Result5 = tmp64(VideoQuestPlayerControlButton, obj19);
   }
-  const items32 = [tmp64Result5, , ];
+  const items31 = [tmp64Result5, , ];
   const VideoQuestPlayerControlButton2 = tmp8(tmp9[27]).VideoQuestPlayerControlButton;
   const intl5 = tmp8(tmp9[23]).intl;
   if (!tmp15) {
@@ -877,7 +875,7 @@ const memoResult = react.memo((initialProgress) => {
         tmp64Result6 = tmp64(PauseIcon, { size: "lg" });
       }
       obj20.children = tmp64Result6;
-      items32[1] = onPlayerStateChange(VideoQuestPlayerControlButton2, obj20);
+      items31[1] = onPlayerStateChange(VideoQuestPlayerControlButton2, obj20);
       if (flag7) {
         const obj21 = { disabled: tmp39, accessibilityRole: "button", accessibilityLabel: intl6.string(tmp8(tmp9[23]).t.zWDcNP), onPress: callback1Result1, children: onPlayerStateChange(tmp8(tmp9[32]).SkipForwardIcon, size1) };
         const VideoQuestPlayerControlButton3 = tmp8(tmp9[27]).VideoQuestPlayerControlButton;
@@ -885,30 +883,30 @@ const memoResult = react.memo((initialProgress) => {
         size1 = { color: tmp.icon.color, width: 16, height: 16 };
         flag7 = tmp64(VideoQuestPlayerControlButton3, obj21);
       }
-      items32[2] = flag7;
-      obj18.children = items32;
-      items31[1] = onPausePlayback(onReadyForDisplay, obj18);
+      items31[2] = flag7;
+      obj18.children = items31;
+      items30[1] = onPausePlayback(onReadyForDisplay, obj18);
       if (flag5) {
-        const obj22 = { style: items33, children: onPlayerStateChange(PressableOpacity3, obj23) };
-        items33 = [, , ];
-        ({ controlsTopBottom: arr34[0], controlsBottom: arr34[1] } = tmp);
-        items33[2] = tmp61;
+        const obj22 = { style: items32, children: onPlayerStateChange(PressableOpacity3, obj23) };
+        items32 = [, , ];
+        ({ controlsTopBottom: arr33[0], controlsBottom: arr33[1] } = tmp);
+        items32[2] = tmp61;
         obj23 = { accessibilityRole: "button", accessibilityLabel: intl7.string(tmp8(tmp9[23]).t.vKZT5t), onPress: onToggleFullscreen, style: tmp.controlButton, children: onPlayerStateChange(tmp8(tmp9[33]).FullscreenEnterIcon, {}) };
         PressableOpacity3 = tmp8(tmp9[24]).PressableOpacity;
         intl7 = tmp8(tmp9[23]).intl;
         flag5 = tmp64(tmp65, obj22);
       }
-      items31[2] = flag5;
-      obj12.children = items31;
-      items26[4] = onPausePlayback(View, obj12);
+      items30[2] = flag5;
+      obj12.children = items30;
+      items25[4] = onPausePlayback(View, obj12);
       if (flag6) {
         const obj24 = { style: tmp.progressContainer, children: onPlayerStateChange(flag(tmp9[13]).View, obj25) };
-        obj25 = { style: items34 };
-        items34 = [tmp.progress, animatedStyle1];
+        obj25 = { style: items33 };
+        items33 = [tmp.progress, animatedStyle1];
         flag6 = tmp64(tmp65, obj24);
       }
-      items26[5] = flag6;
-      obj8.children = items26;
+      items25[5] = flag6;
+      obj8.children = items25;
       obj7.children = onPausePlayback(tmp67, obj8);
       return onPlayerStateChange(onReadyForDisplay, obj7);
     }

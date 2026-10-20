@@ -1,12 +1,12 @@
-// Module ID: 8268
-// Function ID: 8269
+// Module ID: 7706
+// Function ID: 7707
 // Name: GoogleWalletExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: isGoogleWalletEnabled
 
-// Module 8268 (GoogleWalletExperiment)
+// Module 7706 (GoogleWalletExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let obj = { kind: "user", name: "2026-03-age-verification-google-wallet", defaul
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGoogleWalletEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -28,7 +28,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useIsGoogleWalletEnabled(location) {
   const obj = { location };
   return closure_2.useConfig(obj).enabled;
 });

@@ -1,15 +1,15 @@
-// Module ID: 6927
-// Function ID: 6928
+// Module ID: 7141
+// Function ID: 7142
 // Name: PremiumPlanPurchasedStore
-// Dependencies: [4561, 1379, 570, 1259, 6928, 6681, 2]
+// Dependencies: [4802, 1392, 570, 1272, 7142, 6879, 2]
 // Exports: handleMobileWebCheckoutStatus, reset, setInitiatedPurchaseFromNewFlow, setMobileWebRedirectCheckoutStatus, setPaymentSuccess, showOldPaymentFlowSuccess
 
-// Module 6927 (PremiumPlanPurchasedStore)
-import react_native from "react-native" /* 1259 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 6928 */;
-import ActionSheetStore from "ActionSheetStore" /* 4561 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+// Module 7141 (PremiumPlanPurchasedStore)
+import react_native from "react-native" /* 1272 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7142 */;
+import ActionSheetStore from "ActionSheetStore" /* 4802 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ export const setInitiatedPurchaseFromNewFlow = function setInitiatedPurchaseFrom
   let onPaymentSuccess;
   productId = productId.productId;
   ({ onPaymentStart, onPaymentSuccess: importDefault, onPaymentDismiss: dependencyMap } = productId);
-  let obj = productId(1259);
+  let obj = productId(1272);
   obj.batchUpdates(() => {
     const obj = { productId, initiatedPurchaseFromNewFlow: true, onPaymentSuccess: importDefault, onPaymentDismiss: dependencyMap };
     obj.setState(obj);
@@ -114,6 +114,6 @@ export const reset = function reset() {
         str = "dismissed";
       }
     }
-    setState({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: str, onPaymentSuccess: "r", onPaymentDismiss: "code" });
+    setState({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: str, onPaymentSuccess: "apply", onPaymentDismiss: "diversity" });
   });
 };

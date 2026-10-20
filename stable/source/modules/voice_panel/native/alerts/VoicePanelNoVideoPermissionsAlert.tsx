@@ -1,19 +1,19 @@
-// Module ID: 17340
-// Function ID: 17341
+// Module ID: 17934
+// Function ID: 17935
 // Name: VoicePanelNoVideoPermissionsAlert
-// Dependencies: [19, 21, 558, 576, 5713, 1126, 5713, 2]
+// Dependencies: [19, 21, 558, 576, 5305, 1126, 5305, 2]
 
-// Module 17340 (VoicePanelNoVideoPermissionsAlert)
+// Module 17934 (VoicePanelNoVideoPermissionsAlert)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import AlertModal2 from "AlertModal" /* 5713 */;
+import AlertModal2 from "AlertModal" /* 5305 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelNoVideoPermissionsAlert() {
   let tmp11;
   let tmp5;
   let tmp6;
@@ -39,7 +39,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[2] = stringResult2;
   }
   if (cResult[3] !== dismissModalCallback) {
-    const AlertModal = tmp(5713).AlertModal;
+    const AlertModal = tmp(5305).AlertModal;
     const tmp13 = <AlertModal title={tmp5} content={tmp6} actions={null} />;
     cResult[3] = dismissModalCallback;
     cResult[4] = tmp13;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[4];
   }
   return tmp11;
-}) : (() => {
+}) : (function VoicePanelNoVideoPermissionsAlert() {
   let intl3;
   const obj = AlertModal2;
   const dismissModalCallback = obj.useDismissModalCallback();

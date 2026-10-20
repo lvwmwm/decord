@@ -1,21 +1,21 @@
-// Module ID: 15622
-// Function ID: 15623
+// Module ID: 16123
+// Function ID: 16124
 // Name: InternalBuildActiveSetting
-// Dependencies: [14158, 558, 14650, 11129, 15386, 2]
+// Dependencies: [14653, 558, 15126, 10664, 15866, 2]
 
-// Module 15622 (InternalBuildActiveSetting)
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14650 */;
-import MobilePhoneSettingsIcon from "MobilePhoneSettingsIcon" /* 15386 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 14158 */;
+// Module 16123 (InternalBuildActiveSetting)
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15126 */;
+import MobilePhoneSettingsIcon from "MobilePhoneSettingsIcon" /* 15866 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 14653 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasCheckNativeUpdateSetting() {
   const obj = useIsStaffOrDeveloperSettingPredicate;
   const tmp = MobileNativeUpdateStore.hasUpdatesConfigured && obj.useStaffOrDeveloperSettingPredicate();
   return tmp;
-}) : (() => {
+}) : (function useHasCheckNativeUpdateSetting() {
   const obj = useIsStaffOrDeveloperSettingPredicate;
   const tmp = MobileNativeUpdateStore.hasUpdatesConfigured && obj.useStaffOrDeveloperSettingPredicate();
   return tmp;

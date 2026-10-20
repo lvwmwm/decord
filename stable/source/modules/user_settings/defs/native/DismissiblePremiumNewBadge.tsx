@@ -1,23 +1,21 @@
-// Module ID: 14533
-// Function ID: 14534
+// Module ID: 15005
+// Function ID: 15006
 // Name: DismissiblePremiumNewBadge
-// Dependencies: [19, 6938, 21, 4890, 587, 558, 576, 1369, 1188, 5605, 1105, 10354, 2]
+// Dependencies: [19, 7152, 21, 5092, 587, 558, 576, 1382, 1200, 5391, 1105, 10009, 2]
 
-// Module 14533 (DismissiblePremiumNewBadge)
+// Module 15005 (DismissiblePremiumNewBadge)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import native from "native" /* 1188 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import LinearGradientDefault from "LinearGradient" /* 5605 */;
-import ColorConstants from "ColorConstants" /* 6938 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10354 */;
+import native from "native" /* 1200 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
+import ColorConstants from "ColorConstants" /* 7152 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10009 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let dismissibleContent;
 
 let obj2;
 const Gradients = ColorConstants.Gradients;
@@ -25,7 +23,7 @@ const jsx = Fragment.jsx;
 let obj = { newTag: { backgroundColor: "transparent" }, newTagContainer: obj2 };
 obj2 = { borderRadius: nativeDefault.radii.sm, marginLeft: nativeDefault.space.PX_4 };
 let closure_5 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((dismissibleContent) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DismissiblePremiumNewBadge(dismissibleContent) {
   let noGradient;
   let tmp4;
   let obj = dismissibleContent(noGradient[6]);
@@ -120,7 +118,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((dismissibleContent) 
   cResult[8] = variantOverride;
   cResult[9] = fn;
   tmp5 = fn;
-}) : ((dismissibleContent) => {
+}) : (function DismissiblePremiumNewBadge(dismissibleContent) {
   dismissibleContent = dismissibleContent.dismissibleContent;
   ({ containerStyle: importDefault, noGradient: dependencyMap, newPremiumStyle: Gradients, colors: jsx, variantOverride: closure_5 } = dismissibleContent);
   let closure_6 = closure_5();

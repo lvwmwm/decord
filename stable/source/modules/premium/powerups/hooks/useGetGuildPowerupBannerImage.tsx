@@ -1,12 +1,12 @@
-// Module ID: 12177
-// Function ID: 12178
+// Module ID: 12261
+// Function ID: 12262
 // Name: useGetGuildPowerupBannerImage
-// Dependencies: [4879, 558, 576, 504, 2]
+// Dependencies: [5081, 558, 576, 504, 2]
 // Exports: getGuildPowerupBannerImage
 
-// Module 12177 (useGetGuildPowerupBannerImage)
+// Module 12261 (useGetGuildPowerupBannerImage)
 import react from "react" /* 576 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ function getGuildPowerupBannerImage(arr, stateFromStores1, arg2, arg3) {
     staticImageUrl = arr.staticImageUrl;
   }
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((animatedImageUrl, arg1, arg2) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetGuildPowerupBannerImage(animatedImageUrl, arg1, arg2) {
   let tmp4;
   let tmp5;
   let useReducedMotion;
@@ -84,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((animatedImageUrl, 
   cResult[5] = stateFromStores;
   cResult[6] = tmp9;
   tmp8 = tmp9;
-}) : ((animatedImageUrl, arg1, arg2) => {
+}) : (function useGetGuildPowerupBannerImage(animatedImageUrl, arg1, arg2) {
   let useReducedMotion;
   const items = [AccessibilityStore];
   let tmp;

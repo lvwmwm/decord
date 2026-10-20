@@ -1,25 +1,23 @@
-// Module ID: 17324
-// Function ID: 17325
+// Module ID: 17918
+// Function ID: 17919
 // Name: VoicePanelVisualEffectView
-// Dependencies: [19, 17, 1193, 21, 4890, 587, 558, 576, 4580, 4729, 504, 1369, 8567, 2]
+// Dependencies: [19, 17, 1205, 21, 5092, 587, 558, 576, 4818, 4969, 504, 1382, 8537, 2]
 
-// Module 17324 (VoicePanelVisualEffectView)
+// Module 17918 (VoicePanelVisualEffectView)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import useToken2 from "useToken" /* 4580 */;
-import shared from "shared" /* 4729 */;
-import native from "native" /* 8567 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import useToken2 from "useToken" /* 4818 */;
+import shared from "shared" /* 4969 */;
+import native from "native" /* 8537 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let matchAppTheme;
 
 let StyleSheet;
 let closure_4;
@@ -38,7 +36,7 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3 = { borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.modules.mobile.VOICE_PANEL_CONTROLS_BORDER_RADIUS };
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 let closure_9 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((matchAppTheme) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelVisualEffectViewInner(matchAppTheme) {
   let items1;
   let items2;
   let theme;
@@ -147,7 +145,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((m
   cResult[4] = undefined !== matchAppTheme && matchAppTheme;
   cResult[5] = tmp16;
   tmp15 = tmp16;
-}) : ((matchAppTheme) => {
+}) : (function VoicePanelVisualEffectViewInner(matchAppTheme) {
   let items2;
   let items3;
   let theme;

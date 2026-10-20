@@ -1,20 +1,20 @@
-// Module ID: 13055
-// Function ID: 13056
+// Module ID: 13526
+// Function ID: 13527
 // Name: useEmbeddedActivityParticipantAvatarUris
-// Dependencies: [19, 2050, 1377, 1375, 558, 576, 573, 2]
+// Dependencies: [19, 2064, 1390, 1388, 558, 576, 573, 2]
 // Exports: getEmbeddedActivityParticipantAvatarUris
 
-// Module 13055 (useEmbeddedActivityParticipantAvatarUris)
-import GlobalUtils from "GlobalUtils" /* 1375 */;
+// Module 13526 (useEmbeddedActivityParticipantAvatarUris)
+import GlobalUtils from "GlobalUtils" /* 1388 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import UserStore from "UserStore" /* 1377 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedActivityParticipantAvatarUris(arg0) {
   let activity;
   let closure_1;
   let guildId;
@@ -93,13 +93,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     tmp15 = cResult[10];
   }
-  const found = stateFromStoresArray.filter(tmp(1375).isNotNullish);
+  const found = stateFromStoresArray.filter(tmp(1388).isNotNullish);
   const mapped = found.map(tmp15);
   cResult[6] = guildId;
   cResult[7] = stateFromStoresArray;
   cResult[8] = mapped;
   tmp14 = mapped;
-}) : ((activity) => {
+}) : (function useEmbeddedActivityParticipantAvatarUris(activity) {
   activity = activity.activity;
   const guildId = activity.guildId;
   let memo;

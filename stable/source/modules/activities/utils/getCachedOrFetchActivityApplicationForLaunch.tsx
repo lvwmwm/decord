@@ -1,15 +1,15 @@
-// Module ID: 9004
-// Function ID: 9005
+// Module ID: 10869
+// Function ID: 10870
 // Name: getCachedOrFetchActivityApplicationForLaunch
-// Dependencies: [5, 5118, 2009, 2051, 8993, 8983, 9005, 2]
+// Dependencies: [5, 5440, 2022, 2065, 10849, 10870, 10871, 2]
 // Exports: default
 
-// Module 9004 (getCachedOrFetchActivityApplicationForLaunch)
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8993 */;
+// Module 10869 (getCachedOrFetchActivityApplicationForLaunch)
+import fetchShelf from "fetchShelf" /* 10849 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
-import ApplicationRecord from "ApplicationRecord" /* 2009 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import size from "module_2" /* 2 */;
 
 let application, channel, closure_2, closure_3;
@@ -70,7 +70,7 @@ let obj = function _getCachedOrFetchActivityApplicationForLaunch() {
                 c5 = 1;
                 const obj6 = { guildId: guild_id };
                 const obj8 = { value: obj7.fetchShelf(obj6), done: false };
-                obj7 = EmbeddedActivitiesActionCreators;
+                obj7 = fetchShelf;
                 return obj8;
               }
             }

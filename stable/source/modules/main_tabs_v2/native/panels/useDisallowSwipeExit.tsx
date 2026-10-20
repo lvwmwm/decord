@@ -1,18 +1,18 @@
-// Module ID: 16592
-// Function ID: 16593
+// Module ID: 17132
+// Function ID: 17133
 // Name: useDisallowSwipeExit
-// Dependencies: [19, 558, 576, 16324, 2]
+// Dependencies: [19, 558, 576, 12149, 2]
 
-// Module 16592 (useDisallowSwipeExit)
+// Module 17132 (useDisallowSwipeExit)
 import react2 from "react" /* 576 */;
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16324 */;
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 12149 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const MainTabsNavigatorPanelContextDefault = MainTabsNavigatorPanelContext;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisallowSwipeExit(arg0) {
   let closure_0 = arg0;
   let obj = react2;
   const cResult = obj.c(5);
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = items;
   tmp5 = items;
   tmp4 = fn;
-}) : ((arg0) => {
+}) : (function useDisallowSwipeExit(arg0) {
   let closure_0 = arg0;
   let obj = react;
   const disallowGesture = react.useContext(MainTabsNavigatorPanelContextDefault).disallowGesture;

@@ -1,22 +1,20 @@
-// Module ID: 16758
-// Function ID: 16759
+// Module ID: 17343
+// Function ID: 17344
 // Name: ConjureHistoryState
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 3723, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 3849, 5088, 2]
 
-// Module 16758 (ConjureHistoryState)
+// Module 17343 (ConjureHistoryState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import _modDef3723 from "module_3723" /* 3723 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import Text_Text from "Text/Text" /* 5088 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let state;
 
 let closure_4;
 let hasOwnProperty;
@@ -27,7 +25,7 @@ let obj = { placeholder: obj2 };
 obj2 = { alignItems: "center", gap: nativeDefault.space.PX_4, padding: nativeDefault.space.PX_24 };
 let closure_6 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHistoryPlaceholder(state) {
   let emptyBody;
   let emptyTitle;
   let items;
@@ -90,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
     let stringResult = emptyBody;
     if ("failed" === state.status) {
       const intl2 = tmp(1126).intl;
-      stringResult = intl2.string(_modDef3723["8SErdg"]);
+      stringResult = intl2.string(_modDef3849["8SErdg"]);
     }
     cResult[5] = emptyBody;
     cResult[6] = "failed" === state.status;
@@ -100,13 +98,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   let stringResult1 = emptyTitle;
   if ("failed" === state.status) {
     const intl = tmp(1126).intl;
-    stringResult1 = intl.string(_modDef3723.h1SE6R);
+    stringResult1 = intl.string(_modDef3849.h1SE6R);
   }
   cResult[0] = emptyTitle;
   cResult[1] = "failed" === state.status;
   cResult[2] = stringResult1;
   tmp6 = stringResult1;
-}) : ((state) => {
+}) : (function ConjureHistoryPlaceholder(state) {
   let emptyBody;
   let emptyTitle;
   let items;
@@ -122,19 +120,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   const Text = Text_Text.Text;
   if ("failed" === state.state.status) {
     const intl = tmp5(1126).intl;
-    emptyTitle = intl.string(_modDef3723.h1SE6R);
+    emptyTitle = intl.string(_modDef3849.h1SE6R);
   }
   items = [React3(Text, { variant: "text-sm/medium", color: "text-default", children: emptyTitle }), ];
-  const Text2 = tmp5(4886).Text;
+  const Text2 = tmp5(5088).Text;
   if ("failed" === state.state.status) {
     const intl2 = tmp5(1126).intl;
-    emptyBody = intl2.string(_modDef3723["8SErdg"]);
+    emptyBody = intl2.string(_modDef3849["8SErdg"]);
   }
   items[1] = React3(Text2, { variant: "text-xs/normal", color: "text-muted", children: emptyBody });
   return tmp2(tmp3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHistoryNotice(state) {
   let intl;
   let intl2;
   const obj = react2;
@@ -147,8 +145,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
       let first;
       const _Symbol2 = Symbol;
       if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj2 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3723.h1SE6R) };
-        const Text2 = tmp(4886).Text;
+        const obj2 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3849.h1SE6R) };
+        const Text2 = tmp(5088).Text;
         intl2 = tmp(1126).intl;
         const tmp15 = React3(Text2, obj2);
         cResult[0] = tmp15;
@@ -163,8 +161,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
         let tmp6;
         const _Symbol = Symbol;
         if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj3 = { variant: "text-xs/normal", color: "text-muted", children: intl.string(_modDef3723.V7Ri8H) };
-          const Text = tmp(4886).Text;
+          const obj3 = { variant: "text-xs/normal", color: "text-muted", children: intl.string(_modDef3849.V7Ri8H) };
+          const Text = tmp(5088).Text;
           intl = tmp(1126).intl;
           const tmp9 = React3(Text, obj3);
           cResult[1] = tmp9;
@@ -178,7 +176,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
     tmp4 = tmp10;
   }
   return tmp4;
-}) : ((state) => {
+}) : (function ConjureHistoryNotice(state) {
   let intl;
   let intl2;
   state = state.state;
@@ -186,14 +184,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   if (state.hasRows) {
     let tmp2;
     if ("failed" === state.status) {
-      const obj2 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3723.h1SE6R) };
+      const obj2 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3849.h1SE6R) };
       const Text2 = Text_Text.Text;
       intl2 = intl3.intl;
       tmp2 = React3(Text2, obj2);
     } else {
       tmp2 = null;
       if (state.truncated) {
-        const obj = { variant: "text-xs/normal", color: "text-muted", children: intl.string(_modDef3723.V7Ri8H) };
+        const obj = { variant: "text-xs/normal", color: "text-muted", children: intl.string(_modDef3849.V7Ri8H) };
         const Text = Text_Text.Text;
         intl = intl3.intl;
         tmp2 = React3(Text, obj);

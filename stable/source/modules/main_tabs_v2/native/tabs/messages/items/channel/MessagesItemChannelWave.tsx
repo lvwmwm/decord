@@ -1,20 +1,20 @@
-// Module ID: 15966
-// Function ID: 15967
+// Module ID: 16479
+// Function ID: 16480
 // Name: MessagesItemChannelWave
-// Dependencies: [19, 21, 558, 576, 1126, 4886, 5594, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 5088, 5379, 2]
 
-// Module 15966 (MessagesItemChannelWave)
+// Module 16479 (MessagesItemChannelWave)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemChannelWave(arg0) {
   let first;
   let hasNameplate;
   let tmp7;
@@ -54,7 +54,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[3] = wavePressed;
   cResult[4] = tmp11;
   tmp10 = tmp11;
-}) : ((hasNameplate) => {
+}) : (function MessagesItemChannelWave(hasNameplate) {
   let intl;
   let str;
   let flag = hasNameplate.hasNameplate;

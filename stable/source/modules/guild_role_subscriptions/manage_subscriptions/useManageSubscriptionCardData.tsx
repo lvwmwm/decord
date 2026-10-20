@@ -1,22 +1,22 @@
-// Module ID: 15041
-// Function ID: 15042
+// Module ID: 15521
+// Function ID: 15522
 // Name: useManageSubscriptionCardData
-// Dependencies: [32, 19, 2074, 4502, 1085, 4461, 6736, 1126, 558, 576, 15032, 504, 15030, 2]
+// Dependencies: [32, 19, 2087, 4743, 1085, 4702, 6940, 1126, 558, 576, 15512, 504, 15510, 2]
 
-// Module 15041 (useManageSubscriptionCardData)
+// Module 15521 (useManageSubscriptionCardData)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef4461 from "module_4461" /* 4461 */;
-import PriceUtils from "PriceUtils" /* 6736 */;
+import _modDef4702 from "module_4702" /* 4702 */;
+import PriceUtils from "PriceUtils" /* 6940 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore_mod from "GuildStore" /* 2074 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4502 */;
+import GuildStore_mod from "GuildStore" /* 2087 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4743 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, tmp3, tmp5, tmp9;
 
 function computeSubscriptionInfo(subscription) {
   let PAST_DUE;
@@ -25,13 +25,13 @@ function computeSubscriptionInfo(subscription) {
   let stringResult;
   subscription = subscription.subscription;
   let str = "";
-  const obj = _modDef4461(subscription.currentPeriodEnd);
+  const obj = _modDef4702(subscription.currentPeriodEnd);
   const formatResult = obj.format("M/D/YY");
   if (null != subscription.price) {
     const obj2 = PriceUtils;
     str = obj2.formatPrice(subscription.price, subscription.currency);
   }
-  const obj3 = _modDef4461(subscription.createdAt);
+  const obj3 = _modDef4702(subscription.createdAt);
   const obj4 = { memberSince: obj3.format("M/D/YY"), nextRenewalDate: formatResult, nextRenewalLabel: stringResult, subscriptionPrice: str, isCancelled: subscription.status === SubscriptionStatusTypes.CANCELED, isPastDue: status === PAST_DUE, isTrial: hasActiveTrial };
   status = subscription.status;
   PAST_DUE = SubscriptionStatusTypes.PAST_DUE;
@@ -48,16 +48,16 @@ function computeSubscriptionInfo(subscription) {
 }
 let GuildStore = GuildStore_mod;
 const SubscriptionStatusTypes = Constants.SubscriptionStatusTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((items) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useManageSubscriptionCardData(items) {
   let closure_0;
   let closure_5;
   let fetchSubscriptionsSettings;
   let first;
   let stateFromStores1;
   let tmp10;
-  let tmp12;
+  let tmp11;
   let tmp14;
-  let tmp18;
+  let tmp16;
   let tmp4;
   let tmp6;
   let tmp8;
@@ -82,114 +82,182 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((items) => {
     tmp6 = cResult[2];
   }
   if (cResult[3] !== tmp4) {
-    const fn = function p() {
-      return GuildRoleSubscriptionsStore.getSubscriptionListingForPlan(closure_0);
-    };
+    class S {
+      constructor() {
+        return closure_6.getSubscriptionListingForPlan(closure_0);
+      }
+    }
     cResult[3] = tmp4;
-    cResult[4] = fn;
-    tmp8 = fn;
+    cResult[4] = S;
+    tmp8 = S;
   } else {
-    tmp8 = cResult[4];
+    class S {
+      constructor() {
+        return closure_6.getSubscriptionListingForPlan(closure_0);
+      }
+    }
   }
   const tmpResult5 = tmp(stateFromStores1[11]);
   const stateFromStores = tmpResult5.useStateFromStores(tmp6, tmp8);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return closure_6.getSubscriptionListingForPlan(closure_0);
+      }
+    }
     const items1 = [fetchSubscriptionsSettings];
     cResult[5] = items1;
     tmp10 = items1;
   } else {
-    tmp10 = cResult[5];
+    class S {
+      constructor() {
+        return closure_6.getSubscriptionListingForPlan(closure_0);
+      }
+    }
   }
   if (cResult[6] !== stateFromStores) {
-    const fn2 = function _() {
-      let subscriptionGroupListingForSubscriptionListing = null;
-      if (null != stateFromStores) {
-        subscriptionGroupListingForSubscriptionListing = GuildRoleSubscriptionsStore.getSubscriptionGroupListingForSubscriptionListing(tmp.id);
+    class S {
+      constructor() {
+        return closure_6.getSubscriptionListingForPlan(closure_0);
       }
-      return subscriptionGroupListingForSubscriptionListing;
-    };
+    }
     cResult[6] = stateFromStores;
-    cResult[7] = fn2;
-    tmp12 = fn2;
+    cResult[7] = tmp12;
+    tmp11 = tmp12;
   } else {
-    tmp12 = cResult[7];
+    class S {
+      constructor() {
+        return closure_6.getSubscriptionListingForPlan(closure_0);
+      }
+    }
   }
   const tmpResult6 = tmp(stateFromStores1[11]);
-  stateFromStores1 = tmpResult6.useStateFromStores(tmp10, tmp12);
+  stateFromStores1 = tmpResult6.useStateFromStores(tmp10, tmp11);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class S {
+      constructor() {
+        return closure_6.getSubscriptionListingForPlan(closure_0);
+      }
+    }
     const items2 = [GuildStore];
     cResult[8] = items2;
     tmp14 = items2;
   } else {
-    tmp14 = cResult[8];
-  }
-  let guild_id;
-  const tmp16 = cResult[9];
-  if (stateFromStores1 != null) {
-    guild_id = stateFromStores1.guild_id;
-  }
-  if (tmp16 !== guild_id) {
-    let guild_id1;
-    if (stateFromStores1 != null) {
-      guild_id1 = stateFromStores1.guild_id;
-    }
-    const fn3 = function h() {
-      let guild_id;
-      const getGuild = GuildStore.getGuild;
-      if (stateFromStores1 != null) {
-        guild_id = stateFromStores1.guild_id;
+    class S {
+      constructor() {
+        return closure_6.getSubscriptionListingForPlan(closure_0);
       }
-      return getGuild(guild_id);
-    };
-    cResult[9] = guild_id1;
-    cResult[10] = fn3;
-    tmp18 = fn3;
+    }
+  }
+  const tmp15 = cResult[9];
+  if (stateFromStores1 != null) {
+    class S {
+      constructor() {
+        return closure_6.getSubscriptionListingForPlan(closure_0);
+      }
+    }
+  }
+  if (tmp15 !== undefined) {
+    class S {
+      constructor() {
+        return closure_6.getSubscriptionListingForPlan(closure_0);
+      }
+    }
+    if (stateFromStores1 != null) {
+      class S {
+        constructor() {
+          return closure_6.getSubscriptionListingForPlan(closure_0);
+        }
+      }
+    }
+    class F {
+      constructor() {
+        guild_id = undefined;
+        tmp = closure_5;
+        getGuild = closure_5.getGuild;
+        if (closure_2 != null) {
+          guild_id = closure_2.guild_id;
+        }
+        return getGuild(guild_id);
+      }
+    }
+    cResult[9] = tmp17;
+    cResult[10] = F;
+    tmp16 = F;
   } else {
-    tmp18 = cResult[10];
+    class S {
+      constructor() {
+        return closure_6.getSubscriptionListingForPlan(closure_0);
+      }
+    }
   }
   const tmpResult7 = tmp(stateFromStores1[11]);
-  const stateFromStores2 = tmpResult7.useStateFromStores(tmp14, tmp18);
-  const tmp21 = stateFromStores2(first.useState(false), 2);
-  first = tmp21[0];
-  GuildStore = tmp21[1];
+  const stateFromStores2 = tmpResult7.useStateFromStores(tmp14, tmp16);
+  const tmp19 = stateFromStores2(first.useState(false), 2);
+  first = tmp19[0];
+  GuildStore = tmp19[1];
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
+    class S {
       constructor() {
-        return closure_5((arg0) => !arg0);
+        return closure_6.getSubscriptionListingForPlan(closure_0);
       }
     }
-    cResult[11] = P;
-  } else {
-    class P {
+    class F {
       constructor() {
-        return closure_5((arg0) => !arg0);
+        guild_id = undefined;
+        tmp = closure_5;
+        getGuild = closure_5.getGuild;
+        if (closure_2 != null) {
+          guild_id = closure_2.guild_id;
+        }
+        return getGuild(guild_id);
+      }
+    }
+  } else {
+    class S {
+      constructor() {
+        return closure_6.getSubscriptionListingForPlan(closure_0);
       }
     }
   }
   const tmpResult8 = tmp(stateFromStores1[12]);
   fetchSubscriptionsSettings = tmpResult8.useFetchSubscriptionsSettings().fetchSubscriptionsSettings;
   if (cResult[12] === first) {
-    class P {
+    class S {
       constructor() {
-        return closure_5((arg0) => !arg0);
+        return closure_6.getSubscriptionListingForPlan(closure_0);
       }
     }
   }
-  class C {
+  class T {
     constructor() {
-      const tmp = first && null != stateFromStores2 && null == GuildRoleSubscriptionsStore.getSubscriptionSettings(stateFromStores2.id);
+      tmp = closure_4;
       if (tmp) {
-        fetchSubscriptionsSettings(stateFromStores2.id);
+        tmp2 = closure_3;
+        tmp3 = null;
+        tmp = null != closure_3;
       }
+      if (tmp) {
+        tmp4 = closure_6;
+        tmp5 = closure_3;
+        tmp6 = null;
+        tmp = null == closure_6.getSubscriptionSettings(closure_3.id);
+      }
+      if (tmp) {
+        tmp7 = closure_6;
+        tmp8 = closure_3;
+        tmp9 = closure_6(closure_3.id);
+      }
+      return;
     }
   }
   const items3 = [first, stateFromStores2, fetchSubscriptionsSettings];
   cResult[12] = first;
   cResult[13] = fetchSubscriptionsSettings;
   cResult[14] = stateFromStores2;
-  cResult[15] = C;
+  cResult[15] = T;
   cResult[16] = items3;
-}) : ((subscription) => {
+}) : (function useManageSubscriptionCardData(subscription) {
   let closure_0;
   let expanded;
   let fetchSubscriptionsSettings;

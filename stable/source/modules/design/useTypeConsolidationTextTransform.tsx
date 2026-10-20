@@ -1,12 +1,12 @@
-// Module ID: 6469
-// Function ID: 6470
+// Module ID: 6663
+// Function ID: 6664
 // Name: useTypeConsolidationTextTransform
-// Dependencies: [558, 6470, 576, 2]
+// Dependencies: [558, 6664, 576, 2]
 // Exports: useTypeConsolidationTextTransform
 
-// Module 6469 (useTypeConsolidationTextTransform)
+// Module 6663 (useTypeConsolidationTextTransform)
 import react from "react" /* 576 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6470 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6664 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const style = { textTransform: "none" };
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, variant) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTypeConsolidationEyebrow(arg0, variant) {
   let obj4;
   const obj = react;
   const cResult = obj.c(3);
@@ -31,32 +31,32 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, variant) => {
     obj4 = { variant: "experimental/body-sm/medium", style };
     const obj3 = { variant: "experimental/body-sm/medium", style };
   } else {
-    obj4 = { variant, style: "Array" };
+    obj4 = { variant, style: "r" };
   }
   cResult[0] = variant;
   cResult[1] = manaTypeConsolidationExperiment;
   cResult[2] = obj4;
   tmp3 = obj4;
-}) : ((arg0, variant) => {
+}) : (function useTypeConsolidationEyebrow(arg0, variant) {
   let obj3;
   const obj = ManaTypeConsolidationExperiment;
   if (obj.useManaTypeConsolidationExperiment(arg0)) {
     obj3 = { variant: "experimental/body-sm/medium", style };
     const obj2 = { variant: "experimental/body-sm/medium", style };
   } else {
-    obj3 = { variant, style: "Array" };
+    obj3 = { variant, style: "r" };
   }
   return obj3;
 });
-const fn = (arg0) => {
+function useTypeConsolidationTextTransform(AcceptGuildTemplate) {
   let tmp;
   const obj = ManaTypeConsolidationExperiment;
-  if (obj.useManaTypeConsolidationExperiment(arg0)) {
+  if (obj.useManaTypeConsolidationExperiment(AcceptGuildTemplate)) {
     tmp = style;
   }
   return tmp;
-};
+}
 const result1 = size.fileFinishedImporting("modules/design/useTypeConsolidationTextTransform.tsx");
 
-export const useTypeConsolidationTextTransform = fn;
+export { useTypeConsolidationTextTransform };
 export const useTypeConsolidationEyebrow = tmp3;

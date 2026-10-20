@@ -1,15 +1,15 @@
-// Module ID: 16818
-// Function ID: 16819
+// Module ID: 17401
+// Function ID: 17402
 // Name: GridItemPlaceholder
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 2]
 
-// Module 16818 (GridItemPlaceholder)
+// Module 17401 (GridItemPlaceholder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let obj = { imageContainer: obj2 };
 obj2 = { flex: 1, borderRadius: nativeDefault.radii.xs, overflow: "hidden", backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_4 = createStyles.createStyles(obj);
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GridItemPlaceholder(arg0) {
   let height;
   let style;
   let width;
@@ -55,7 +55,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[1] = width;
   cResult[2] = size;
   tmp3 = size;
-}) : ((arg0) => {
+}) : (function GridItemPlaceholder(arg0) {
   let height;
   let style;
   let width;

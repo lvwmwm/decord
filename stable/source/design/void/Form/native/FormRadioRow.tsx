@@ -1,25 +1,25 @@
-// Module ID: 8908
-// Function ID: 8909
+// Module ID: 8588
+// Function ID: 8589
 // Name: FormRadioRow
-// Dependencies: [109, 19, 21, 558, 576, 6073, 4594, 6071, 6639, 6633, 2]
+// Dependencies: [109, 19, 21, 558, 576, 6264, 4832, 6262, 6834, 6828, 2]
 
-// Module 8908 (FormRadioRow)
+// Module 8588 (FormRadioRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import react_native from "react-native" /* 4594 */;
-import RedesignCompat from "RedesignCompat" /* 6073 */;
-import FormRowDefault from "FormRow" /* 6633 */;
-import Form_FormRadioDefault from "Form/FormRadio" /* 6639 */;
+import react_native from "react-native" /* 4832 */;
+import RedesignCompat from "RedesignCompat" /* 6264 */;
+import FormRowDefault from "FormRow" /* 6828 */;
+import Form_FormRadioDefault from "Form/FormRadio" /* 6834 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const TableRadioRow2 = tmp2(6071);
+const TableRadioRow2 = tmp2(6262);
 let closure_3 = ["selected", "align", "leading", "value", "onPress", "style"];
 const jsx = Fragment.jsx;
-tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormRadioRow(arg0) {
   let accessibilityRole;
   let accessibilityState;
   let align;
@@ -69,7 +69,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (undefined !== tmp9) {
     str = tmp9;
   }
-  const context = react.useContext(tmp(6073).RedesignCompatContext);
+  const context = react.useContext(tmp(6264).RedesignCompatContext);
   if (cResult[8] !== tmp7) {
     const obj2 = { selected: tmp7 };
     cResult[8] = tmp7;
@@ -95,7 +95,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const TableRadioRow = tmp(6071).TableRadioRow;
+    const TableRadioRow = tmp(6262).TableRadioRow;
     const merged = Object.assign(tmp6);
     const tmp38 = <TableRadioRow icon={tmp4} value={tmp10} legacyCompat_selected={tmp7} legacyCompat_onPress={tmp5} />;
     cResult[10] = tmp5;
@@ -167,7 +167,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[18] = tmp18;
     tmp17 = tmp18;
   }
-}) : ((arg0) => {
+}) : (function FormRadioRow(arg0) {
   let align;
   let leading;
   let onPress;
@@ -199,12 +199,12 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8Result3 = null;
     if ("right" === align) {
       const obj4 = { selected };
-      tmp8Result3 = tmp8(tmp9(6639), obj4);
+      tmp8Result3 = tmp8(tmp9(6834), obj4);
     }
     tmp8Result4 = leading;
     if ("left" === align) {
       const obj5 = { selected };
-      tmp8Result4 = tmp8(tmp9(6639), obj5);
+      tmp8Result4 = tmp8(tmp9(6834), obj5);
     }
     tmp8Result = tmp8(tmp10, obj3);
   }

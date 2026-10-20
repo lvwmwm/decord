@@ -1,29 +1,29 @@
-// Module ID: 15236
-// Function ID: 15237
+// Module ID: 15716
+// Function ID: 15717
 // Name: SyncProfileColorsSetting
-// Dependencies: [4879, 7634, 558, 576, 504, 11129, 1126, 14277, 2]
+// Dependencies: [5081, 7988, 558, 576, 504, 10664, 1126, 14698, 2]
 
-// Module 15236 (SyncProfileColorsSetting)
+// Module 15716 (SyncProfileColorsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14277 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14698 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileColorsSettingValue() {
   let tmp4;
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
-    const fn = function n() {
+    const fn = function o() {
       return AccessibilityStore.syncProfileThemeWithUserTheme;
     };
     cResult[0] = items;
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useProfileColorsSettingValue() {
   const items = [AccessibilityStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => AccessibilityStore.syncProfileThemeWithUserTheme);

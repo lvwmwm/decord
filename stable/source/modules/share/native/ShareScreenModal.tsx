@@ -1,18 +1,18 @@
-// Module ID: 13711
-// Function ID: 13712
+// Module ID: 14131
+// Function ID: 14132
 // Name: ShareScreenModal
-// Dependencies: [5, 32, 19, 2051, 13664, 21, 3, 5093, 558, 576, 8039, 504, 4903, 1106, 13712, 2]
+// Dependencies: [5, 32, 19, 2065, 14078, 21, 3, 5934, 558, 576, 8478, 504, 7015, 1106, 14132, 2]
 
-// Module 13711 (ShareScreenModal)
+// Module 14131 (ShareScreenModal)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import ChannelTypes from "ChannelTypes" /* 1106 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import ShareScreenConstants from "ShareScreenConstants" /* 13664 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 14078 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const SHARE_SCREEN_MODAL_KEY = ShareScreenConstants.SHARE_SCREEN_MODAL_KEY;
 const jsx = Fragment.jsx;
 const tmp2 = new LoggerDefault("ShareScreenModal");
 let closure_9 = tmp2;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((shareId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScreenModal(shareId) {
   let attachmentManifest;
   let channelId;
   let closure_5;
@@ -411,7 +411,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((shareId) => {
   cResult[3] = items3;
   tmp8 = items3;
   tmp7 = fn;
-}) : ((text) => {
+}) : (function ShareScreenModal(text) {
   let closure_5;
   text = text.text;
   require = text;

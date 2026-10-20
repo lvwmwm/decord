@@ -1,17 +1,17 @@
-// Module ID: 7762
-// Function ID: 7763
+// Module ID: 8116
+// Function ID: 8117
 // Name: NativeMarkdownExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 
-// Module 7762 (NativeMarkdownExperiment)
+// Module 8116 (NativeMarkdownExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2025-04-native-markdown", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeMarkdown(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -25,7 +25,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return apexExperiment.useConfig(tmp2);
-}) : ((location) => {
+}) : (function useNativeMarkdown(location) {
   const obj = { location: location.location };
   return apexExperiment.useConfig(obj);
 });

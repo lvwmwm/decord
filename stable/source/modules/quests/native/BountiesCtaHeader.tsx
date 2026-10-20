@@ -1,34 +1,34 @@
-// Module ID: 14880
-// Function ID: 14881
+// Module ID: 15360
+// Function ID: 15361
 // Name: BountiesCtaHeader
-// Dependencies: [19, 17, 4879, 14881, 5623, 21, 587, 5600, 4890, 558, 576, 504, 14860, 7983, 1126, 5594, 4886, 14869, 14882, 5630, 7202, 5626, 7212, 14811, 14813, 1188, 14883, 14884, 14885, 10954, 4589, 14863, 10958, 2]
+// Dependencies: [19, 17, 5081, 9156, 5972, 21, 587, 5384, 5092, 558, 576, 504, 15338, 8421, 1126, 5379, 5088, 15347, 15361, 5979, 7402, 5975, 7411, 15288, 15290, 1200, 15362, 15363, 15364, 12984, 4827, 15341, 12988, 2]
 
-// Module 14880 (BountiesCtaHeader)
+// Module 15360 (BountiesCtaHeader)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import ButtonConstants from "ButtonConstants" /* 5600 */;
-import QuestTypes from "QuestTypes" /* 5626 */;
-import AdCreativeType from "AdCreativeType" /* 5630 */;
-import AnalyticsActions from "AnalyticsActions" /* 7202 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
-import common_Video from "common/Video" /* 7983 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 14811 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 14813 */;
-import _modDef14860 from "module_14860" /* 14860 */;
-import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 14869 */;
-import BountiesBannerBackgroundDefault from "BountiesBannerBackground" /* 14883 */;
-import _modDef14884 from "module_14884" /* 14884 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import ButtonConstants from "ButtonConstants" /* 5384 */;
+import QuestTypes from "QuestTypes" /* 5975 */;
+import AdCreativeType from "AdCreativeType" /* 5979 */;
+import AnalyticsActions from "AnalyticsActions" /* 7402 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
+import common_Video from "common/Video" /* 8421 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15288 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 15290 */;
+import _modDef15338 from "module_15338" /* 15338 */;
+import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 15347 */;
+import BountiesBannerBackgroundDefault from "BountiesBannerBackground" /* 15362 */;
+import _modDef15363 from "module_15363" /* 15363 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import AdContentSeenStore from "AdContentSeenStore" /* 14881 */;
-import QuestConstants from "QuestConstants" /* 5623 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AdContentSeenStore from "AdContentSeenStore" /* 9156 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ let closure_16 = createStyles.createStyles(() => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function StarfieldBackground() {
   let tmp10;
   let tmp4;
   let tmp5;
@@ -95,7 +95,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef14860 };
+    const obj2 = { uri: _modDef15338 };
     cResult[2] = obj2;
     tmp8 = obj2;
   } else {
@@ -111,19 +111,19 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[4];
   }
   return tmp10;
-}) : (() => {
+}) : (function StarfieldBackground() {
   let obj3;
   let useReducedMotion;
   const items = [AccessibilityStore];
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const obj2 = { source: obj3, style: React3.absoluteFillObject, resizeMode: "cover", muted: true, disableFocus: true, paused: stateFromStores, importantForAccessibility: "no-hide-descendants" };
-  obj3 = { uri: _modDef14860 };
+  obj3 = { uri: _modDef15338 };
   const VideoComponent = common_Video.VideoComponent;
   return authStore(VideoComponent, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEarningOrbsButton(arg0) {
   let first;
   let onPress;
   let variant;
@@ -150,7 +150,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = variant;
   cResult[3] = tmp7;
   tmp6 = tmp7;
-}) : ((arg0) => {
+}) : (function StartEarningOrbsButton(arg0) {
   let intl;
   let onPress;
   let variant;
@@ -161,7 +161,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return authStore(Button, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesCtaDescription(arg0) {
   let inlineLearnMore;
   let isEmptyOrCompleted;
   let items;
@@ -250,7 +250,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp7;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function BountiesCtaDescription(arg0) {
   let AZGGo1;
   let inlineLearnMore;
   let intl;
@@ -276,7 +276,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     str = "text-default";
   }
   const obj = { variant: "text-sm/medium", color: str, children: intl.string(AZGGo1) };
-  const Text = tmp5(4886).Text;
+  const Text = tmp5(5088).Text;
   intl = tmp5(1126).intl;
   const tmp7 = authStore(Text, obj);
   const intl2 = tmp5(1126).intl;
@@ -291,17 +291,17 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj3 = { style: tmp.description, children: items };
       items = [tmp7, ];
       const obj4 = { variant: "text-sm/medium", children: formatResult };
-      items[1] = tmp6(tmp5(4886).Text, obj4);
+      items[1] = tmp6(tmp5(5088).Text, obj4);
       tmp11 = unpackModuleId(hasOwnProperty, obj3);
     }
     return tmp11;
   }
   const obj5 = { variant: "text-sm/medium", children: items1 };
   items1 = [tmp7, " ", formatResult];
-  tmp11 = unpackModuleId(tmp5(4886).Text, obj5);
+  tmp11 = unpackModuleId(tmp5(5088).Text, obj5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesCtaHeaderInner(bounties) {
   let containerRef;
   let footer;
   let isEmptyOrCompleted;
@@ -328,7 +328,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
   }
   const tmp5 = closure_16();
   if (cResult[0] !== str) {
-    const tmpResult = bounties(14882);
+    const tmpResult = bounties(15361);
     const bountiesEntryPointButtonVariant = tmpResult.getBountiesEntryPointButtonVariant(str);
     cResult[0] = str;
     cResult[1] = bountiesEntryPointButtonVariant;
@@ -346,7 +346,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
   if (cResult[3] !== bounties) {
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F144260 */ });
+        return bounties.some(() => { /* body not rendered: F147020 */ });
       }
     }
     const items1 = [bounties];
@@ -358,7 +358,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
   } else {
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F144260 */ });
+        return bounties.some(() => { /* body not rendered: F147020 */ });
       }
     }
     tmp13 = cResult[5];
@@ -368,7 +368,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
   if (cResult[6] !== bounties[0]) {
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F144260 */ });
+        return bounties.some(() => { /* body not rendered: F147020 */ });
       }
     }
     cResult[6] = bounties[0];
@@ -376,14 +376,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
   } else {
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F144260 */ });
+        return bounties.some(() => { /* body not rendered: F147020 */ });
       }
     }
   }
   if (null == footer) {
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F144260 */ });
+        return bounties.some(() => { /* body not rendered: F147020 */ });
       }
     }
   }
@@ -391,27 +391,27 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
     let tmp39Result;
     class I {
       constructor() {
-        return bounties.some(() => { /* body not rendered: F144260 */ });
+        return bounties.some(() => { /* body not rendered: F147020 */ });
       }
     }
     if (cResult[11] === tmp8) {
       class I {
         constructor() {
-          return bounties.some(() => { /* body not rendered: F144260 */ });
+          return bounties.some(() => { /* body not rendered: F147020 */ });
         }
       }
     }
     if (null != replaceHeaderMediaWith) {
       class I {
         constructor() {
-          return bounties.some(() => { /* body not rendered: F144260 */ });
+          return bounties.some(() => { /* body not rendered: F147020 */ });
         }
       }
       const items2 = [tmp5.headerReplaceMedia, ];
       if (null == footer) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F144260 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
       }
@@ -424,11 +424,11 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
       if (tmp31Result) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F144260 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
         ({ newPillInline: tmp34[1], newPillText: tmp34[2] } = tmp5);
-        tmp31Result = tmp31(tmp(1188).NewTag, tmp34);
+        tmp31Result = tmp31(tmp(1200).NewTag, tmp34);
       }
       items4 = [tmp31Result, ];
       const obj6 = { style: tmp5.headerHeadingContent, children: closure_10(closure_19, obj7) };
@@ -440,14 +440,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
       if (!(undefined !== isEmptyOrCompleted && isEmptyOrCompleted)) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F144260 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
       }
       if (tmp31Result2) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F144260 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
         tmp37[0] = tmp5.headerReplaceMediaCta;
@@ -460,16 +460,16 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
     } else {
       class I {
         constructor() {
-          return bounties.some(() => { /* body not rendered: F144260 */ });
+          return bounties.some(() => { /* body not rendered: F147020 */ });
         }
       }
-      const obj9 = { uri: _modDef14884, style: items5, children: items6 };
+      const obj9 = { uri: _modDef15363, style: items5, children: items6 };
       items5 = [tmp5.header, null != footer && tmp5.headerWithFooter, ];
       const tmp41 = BountiesBannerBackgroundDefault;
       if (null == footer) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F144260 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
       }
@@ -478,12 +478,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
       if (tmp21) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F144260 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
         const obj10 = { variant: "text-xs/bold", containerStyle: null, textStyle: null };
         ({ newPill: obj4.containerStyle, newPillText: obj4.textStyle } = tmp5);
-        tmp21 = closure_10(tmp(1188).NewTag, obj10);
+        tmp21 = closure_10(tmp(1200).NewTag, obj10);
       }
       items6 = [tmp21, ];
       const items7 = [tmp5.headerTextBox, ];
@@ -491,7 +491,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
       if (null != footer) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F144260 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
       }
@@ -504,14 +504,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
       if (!(undefined !== isEmptyOrCompleted && isEmptyOrCompleted)) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F144260 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
       }
       if (tmp24Result) {
         class I {
           constructor() {
-            return bounties.some(() => { /* body not rendered: F144260 */ });
+            return bounties.some(() => { /* body not rendered: F147020 */ });
           }
         }
         const obj13 = { variant: tmp8, onPress: tmp15 };
@@ -547,7 +547,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
   cResult[8] = tmp5.bannerClip;
   cResult[9] = null == footer;
   cResult[10] = items9;
-}) : ((bounties) => {
+}) : (function BountiesCtaHeaderInner(bounties) {
   let containerRef;
   let footer;
   let items10;
@@ -576,7 +576,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
   const tmp = closure_16();
   let tmp9Result2 = null != footer;
   let tmp11Result6 = !flag;
-  let obj = bounties(14882);
+  let obj = bounties(15361);
   const bountiesEntryPointButtonVariant = obj.getBountiesEntryPointButtonVariant(shopCarouselButtonVariant);
   let obj2 = bounties(504);
   const items = [AdContentSeenStore];
@@ -614,7 +614,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
     if (stateFromStores) {
       const obj9 = { variant: "text-xs/bold", containerStyle: null, textStyle: null };
       ({ newPillInline: obj12.containerStyle, newPillText: obj12.textStyle } = tmp);
-      stateFromStores = tmp11(tmp4(1188).NewTag, obj9);
+      stateFromStores = tmp11(tmp4(1200).NewTag, obj9);
     }
     items6 = [stateFromStores, ];
     const obj10 = { style: tmp.headerHeadingContent, children: closure_10(closure_19, obj11) };
@@ -634,7 +634,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
     items5[3] = tmp11Result;
     tmp9Result = tmp9(tmp10, obj6);
   } else {
-    const obj15 = { uri: _modDef14884, style: items7, children: items8 };
+    const obj15 = { uri: _modDef15363, style: items7, children: items8 };
     items7 = [tmp.header, tmp9Result2 && tmp.headerWithFooter, ];
     let headerRoundedBottom2 = tmp12;
     const tmp26 = BountiesBannerBackgroundDefault;
@@ -646,7 +646,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
     if (tmp11Result4) {
       const obj16 = { variant: "text-xs/bold", containerStyle: null, textStyle: null };
       ({ newPill: obj5.containerStyle, newPillText: obj5.textStyle } = tmp);
-      tmp11Result4 = tmp11(tmp4(1188).NewTag, obj16);
+      tmp11Result4 = tmp11(tmp4(1200).NewTag, obj16);
     }
     items8 = [tmp11Result4, ];
     const items9 = [tmp.headerTextBox, ];
@@ -683,13 +683,13 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((bounties) => {
   return closure_11(closure_5, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isEmptyOrCompleted) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesCtaHeader(isEmptyOrCompleted) {
   let containerRef;
   let tmp11Result;
   _require = isEmptyOrCompleted;
   let obj = require("react");
   const cResult = obj.c(5);
-  const tmp4 = containerRef(14885)();
+  const tmp4 = containerRef(15364)();
   containerRef = tmp4.containerRef;
   const isInView = tmp4.isInView;
   isEmptyOrCompleted = isEmptyOrCompleted.isEmptyOrCompleted;
@@ -722,7 +722,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
     }
   }
   const obj2 = { theme: require("shared/ThemeTypes").ThemeTypes.DARK, children: tmp11Result };
-  const ThemeContextProvider = tmp(4589).ThemeContextProvider;
+  const ThemeContextProvider = tmp(4827).ThemeContextProvider;
   if (tmp5) {
     const obj3 = { containerRef };
     let merged = Object.assign(isEmptyOrCompleted);
@@ -741,7 +741,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
           return authStore(closure_20, obj);
         }
     };
-    const QuestContentImpressionTrackerNative = tmp(10958).QuestContentImpressionTrackerNative;
+    const QuestContentImpressionTrackerNative = tmp(12988).QuestContentImpressionTrackerNative;
     tmp11Result = tmp11(QuestContentImpressionTrackerNative, obj4);
   }
   const tmp11Result2 = closure_10(ThemeContextProvider, obj2);
@@ -751,11 +751,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
   cResult[3] = isEmptyOrCompleted;
   cResult[4] = tmp11Result2;
   tmp10 = tmp11Result2;
-}) : ((isEmptyOrCompleted) => {
+}) : (function BountiesCtaHeader(isEmptyOrCompleted) {
   let containerRef;
   let tmp9Result;
   _require = isEmptyOrCompleted;
-  const tmp2 = containerRef(14885)();
+  const tmp2 = containerRef(15364)();
   containerRef = tmp2.containerRef;
   isEmptyOrCompleted = isEmptyOrCompleted.isEmptyOrCompleted;
   let tmp3 = undefined !== isEmptyOrCompleted;
@@ -796,7 +796,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
           return authStore(closure_20, obj);
         }
     };
-    const QuestContentImpressionTrackerNative = tmp7(10958).QuestContentImpressionTrackerNative;
+    const QuestContentImpressionTrackerNative = tmp7(12988).QuestContentImpressionTrackerNative;
     tmp9Result = tmp9(QuestContentImpressionTrackerNative, obj4);
   }
   return closure_10(ThemeContextProvider, obj2);

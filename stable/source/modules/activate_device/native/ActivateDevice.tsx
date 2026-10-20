@@ -1,25 +1,27 @@
-// Module ID: 13687
-// Function ID: 13688
+// Module ID: 14107
+// Function ID: 14108
 // Name: ActivateDevice
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 13688, 13690, 8709, 8751, 13691, 8720, 13692, 1886, 13693, 13697, 13698, 1402, 13699, 6619, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 14108, 14110, 10863, 12345, 14111, 9222, 14112, 1899, 14113, 14117, 14118, 1415, 14119, 6157, 6814, 2]
 
-// Module 13687 (ActivateDevice)
-import Fragment from "Fragment" /* 21 */;
+// Module 14107 (ActivateDevice)
 import nativeDefault from "native" /* 587 */;
-import react_nativeDefault from "react-native" /* 1886 */;
-import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 8751 */;
-import _modDef13691 from "module_13691" /* 13691 */;
-import _modDef13692 from "module_13692" /* 13692 */;
+import react_nativeDefault from "react-native" /* 1899 */;
+import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 12345 */;
+import _modDef14111 from "module_14111" /* 14111 */;
+import _modDef14112 from "module_14112" /* 14112 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import Fragment from "Fragment" /* 21 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let importDefault, obj1, onClose, openOAuth2ModalResult, tmp2, tmp3, tmp5, tmp6, tmp7, tmp8;
+let importDefault, obj1, onClose, openOAuth2ModalResult;
 
+let StyleSheet;
+let c9;
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
@@ -27,15 +29,16 @@ let metroRequire;
 let obj2;
 let obj3;
 let _slicedToArray = _slicedToArray_mod;
-({ View: hasOwnProperty, ImageBackground: metroRequire, ActivityIndicator: metroImportDefault, ScrollView: metroImportAll } = react_native);
-const jsx = Fragment.jsx;
+({ View: hasOwnProperty, ActivityIndicator: metroRequire, ScrollView: metroImportDefault, StyleSheet } = react_native);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { background: { flex: 1 }, imageStyle: obj2, safeArea: { flex: 1, justifyContent: "center", alignItems: "center" }, content: obj3, scroller: { alignSelf: "stretch", flexGrow: 0 }, scrollerContent: { flexDirection: "column", gap: 16 } };
-obj2 = { marginVertical: 0, resizeMode: "cover", backgroundColor: nativeDefault.colors.TEXT_BRAND };
+obj2 = { width: undefined, height: undefined, marginVertical: 0, resizeMode: "cover", backgroundColor: nativeDefault.colors.TEXT_BRAND };
 createStyles = createStyles.createStyles;
+const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3 = { maxWidth: 480, backgroundColor: nativeDefault.colors.PANEL_BG, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.lg, padding: 24, marginHorizontal: 24, marginVertical: 36, shadowColor: nativeDefault.colors.BLACK, shadowOpacity: 0.2, shadowOffset: { width: 0, height: 4 }, shadowRadius: 4 };
 let closure_10 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   let closure_1;
   let closure_3;
   let deviceCodeAuthorizeCallback;
@@ -47,9 +50,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   let tmp13;
   let tmp16;
   let tmp17;
-  let tmp19;
   let tmp20;
-  let tmp22;
+  let tmp21;
+  let tmp23;
+  let tmp36;
   const tmp = first1;
   let obj = first1(first2[7]);
   const cResult = obj.c(39);
@@ -68,7 +72,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   const tmpResult = tmp(first2[8]);
   const activateDeviceStepTracking = tmpResult.useActivateDeviceStepTracking(first1);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function v() {
+    const fn = function b() {
       closure_1({ type: "user-code-input" });
     };
     cResult[1] = fn;
@@ -153,66 +157,52 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     }
   }
   if (cResult[6] !== first1) {
-    class B {
-      constructor() {
-        if ("userCodeData" in closure_0) {
-          userCodeData = closure_0.userCodeData;
-          tmp = closure_0;
-          tmp2 = closure_2;
-          items = [, ];
-          items[0] = closure_0(closure_2[11]).ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID;
-          items[1] = closure_0(closure_2[11]).ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID;
-          if (items.includes(userCodeData.clientId)) {
-            tmp6 = closure_3;
-            tmp7 = closure_1;
-            tmp8 = closure_3(closure_1(tmp2[12]));
-          } else {
-            scopes = userCodeData.scopes;
-            if (scopes.some((item) => {
-              const obj = first1(first2[13]);
-              return obj.isSocialLayerUmbrellaScope(item);
-            })) {
-              tmp3 = closure_3;
-              tmp4 = closure_1;
-              tmp5 = closure_3(closure_1(tmp2[14]));
-            }
-          }
-        }
+    class U {
+      constructor(arg0) {
+        closure_0 = onClose;
+        obj = { type: "authorization", userCodeData: onClose };
+        tmp = closure_1(obj);
+        obj2 = closure_0(closure_2[10]);
+        obj1 = {
+          clientId: onClose.clientId,
+          scopes: onClose.scopes,
+          responseType: "code",
+          isTrustedName: true,
+          isEmbeddedFlow: true,
+          withBackPressHandler: false,
+          callbackWithoutPost(arg0) {
+                  return deviceCodeAuthorizeCallback(userCodeData, arg0);
+                }
+        };
+        openOAuth2ModalResult = obj2.openOAuth2Modal(obj1);
         return;
       }
     }
     let items = [first1];
     cResult[6] = first1;
-    cResult[7] = B;
+    cResult[7] = tmp18;
     cResult[8] = items;
     tmp17 = items;
-    tmp16 = B;
+    tmp16 = tmp18;
   } else {
-    class B {
-      constructor() {
-        if ("userCodeData" in closure_0) {
-          userCodeData = closure_0.userCodeData;
-          tmp = closure_0;
-          tmp2 = closure_2;
-          items = [, ];
-          items[0] = closure_0(closure_2[11]).ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID;
-          items[1] = closure_0(closure_2[11]).ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID;
-          if (items.includes(userCodeData.clientId)) {
-            tmp6 = closure_3;
-            tmp7 = closure_1;
-            tmp8 = closure_3(closure_1(tmp2[12]));
-          } else {
-            scopes = userCodeData.scopes;
-            if (scopes.some((item) => {
-              const obj = first1(first2[13]);
-              return obj.isSocialLayerUmbrellaScope(item);
-            })) {
-              tmp3 = closure_3;
-              tmp4 = closure_1;
-              tmp5 = closure_3(closure_1(tmp2[14]));
-            }
-          }
-        }
+    class U {
+      constructor(arg0) {
+        closure_0 = onClose;
+        obj = { type: "authorization", userCodeData: onClose };
+        tmp = closure_1(obj);
+        obj2 = closure_0(closure_2[10]);
+        obj1 = {
+          clientId: onClose.clientId,
+          scopes: onClose.scopes,
+          responseType: "code",
+          isTrustedName: true,
+          isEmbeddedFlow: true,
+          withBackPressHandler: false,
+          callbackWithoutPost(arg0) {
+                  return deviceCodeAuthorizeCallback(userCodeData, arg0);
+                }
+        };
+        openOAuth2ModalResult = obj2.openOAuth2Modal(obj1);
         return;
       }
     }
@@ -233,8 +223,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     cResult[9] = first2;
     cResult[10] = R;
     cResult[11] = items1;
-    tmp20 = items1;
-    tmp19 = R;
+    tmp21 = items1;
+    tmp20 = R;
   } else {
     class R {
       constructor() {
@@ -245,9 +235,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         }
       }
     }
-    tmp20 = cResult[11];
+    tmp21 = cResult[11];
   }
-  const effect1 = obj3.useEffect(tmp19, tmp20);
+  const effect1 = obj3.useEffect(tmp20, tmp21);
   const type = first1.type;
   if ("user-code-input" === type) {
     class R {
@@ -281,11 +271,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         }
       }
     }
+    const obj4 = { prefilledUserCode: tmp32, onUserCodeAccepted: tmp15, onClose };
     cResult[12] = onClose;
-    cResult[13] = tmp31;
+    cResult[13] = tmp32;
     cResult[14] = tmp15;
-    cResult[15] = jsx(tmp(first2[16]).UserCodeInput, { prefilledUserCode: tmp31, onUserCodeAccepted: tmp15, onClose });
-    const tmp34 = jsx(tmp(first2[16]).UserCodeInput, { prefilledUserCode: tmp31, onUserCodeAccepted: tmp15, onClose });
+    cResult[15] = closure_8(tmp(first2[16]).UserCodeInput, obj4);
+    const tmp35 = closure_8(tmp(first2[16]).UserCodeInput, obj4);
   } else {
     class R {
       constructor() {
@@ -297,7 +288,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
       }
     }
     if ("authorization" === type) {
-      let tmp28;
+      let tmp29;
       class R {
         constructor() {
           if (null != first2) {
@@ -317,9 +308,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
             }
           }
         }
-        const tmp30 = <closure_7 animating />;
-        cResult[16] = tmp30;
-        tmp28 = tmp30;
+        const tmp31 = closure_8(closure_6, { animating: true });
+        cResult[16] = tmp31;
+        tmp29 = tmp31;
       } else {
         class R {
           constructor() {
@@ -331,7 +322,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
           }
         }
       }
-      tmp22 = tmp28;
+      tmp23 = tmp29;
     } else {
       class R {
         constructor() {
@@ -352,11 +343,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
             }
           }
         }
+        const obj5 = { onComplete: onClose, data: first1.userCodeData, successImage: first2 };
         cResult[17] = onClose;
         cResult[18] = first1.userCodeData;
         cResult[19] = first2;
-        cResult[20] = jsx(tmp(first2[17]).ActivateDeviceSuccess, { onComplete: onClose, data: first1.userCodeData, successImage: first2 });
-        const tmp27 = jsx(tmp(first2[17]).ActivateDeviceSuccess, { onComplete: onClose, data: first1.userCodeData, successImage: first2 });
+        cResult[20] = closure_8(tmp(first2[17]).ActivateDeviceSuccess, obj5);
+        const tmp28 = closure_8(tmp(first2[17]).ActivateDeviceSuccess, obj5);
       } else {
         class R {
           constructor() {
@@ -367,9 +359,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
             }
           }
         }
-        tmp22 = null;
+        tmp23 = null;
         if ("error" === type) {
-          let tmp23;
+          let tmp24;
           class R {
             constructor() {
               if (null != first2) {
@@ -389,9 +381,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
                 }
               }
             }
-            const tmp24 = jsx(tmp(first2[18]).ActivateDeviceError, { onRetry: tmp11 });
-            cResult[21] = tmp24;
-            tmp23 = tmp24;
+            const obj6 = { onRetry: tmp11 };
+            const tmp25 = closure_8(tmp(first2[18]).ActivateDeviceError, obj6);
+            cResult[21] = tmp25;
+            tmp24 = tmp25;
           } else {
             class R {
               constructor() {
@@ -403,7 +396,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
               }
             }
           }
-          tmp22 = tmp23;
+          tmp23 = tmp24;
         }
       }
     }
@@ -418,8 +411,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         }
       }
     }
-    const source = obj9.makeSource(require("module_13699"));
+    const source = obj9.makeSource(require("module_14119"));
     cResult[22] = source;
+    tmp36 = source;
   } else {
     class R {
       constructor() {
@@ -431,7 +425,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
       }
     }
   }
-  if (cResult[23] !== tmp4.background) {
+  if (cResult[23] !== tmp4.imageStyle) {
     class R {
       constructor() {
         if (null != first2) {
@@ -441,9 +435,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         }
       }
     }
-    tmp39[0] = tmp4.background;
-    cResult[23] = tmp4.background;
-    cResult[24] = tmp39;
+    const obj7 = { source: tmp36, style: tmp4.imageStyle };
+    cResult[23] = tmp4.imageStyle;
+    cResult[24] = closure_8(require("FastImage"), obj7);
+    const tmp41 = closure_8(require("FastImage"), obj7);
   } else {
     class R {
       constructor() {
@@ -455,7 +450,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
       }
     }
   }
-  if (cResult[25] === tmp22) {
+  if (cResult[25] === tmp23) {
     class R {
       constructor() {
         if (null != first2) {
@@ -466,16 +461,23 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
       }
     }
   }
-  cResult[25] = tmp22;
+  const obj8 = { bounces: false, style: tmp4.scroller, contentContainerStyle: tmp4.scrollerContent, children: tmp23 };
+  cResult[25] = tmp23;
   cResult[26] = tmp4.scroller;
   cResult[27] = tmp4.scrollerContent;
-  cResult[28] = <closure_8 bounces={false} style={tmp4.scroller} contentContainerStyle={tmp4.scrollerContent}>{tmp22}</closure_8>;
+  cResult[28] = closure_8(closure_7, obj8);
+  closure_8(closure_7, obj8);
 }) : ((onClose) => {
   let closure_1;
   let closure_3;
   let first;
   let first1;
+  let items6;
+  let obj8;
+  let obj9;
+  let tmp21Result;
   let tmp4;
+  let tmp7Result;
   onClose = onClose.onClose;
   first = undefined;
   first1 = undefined;
@@ -529,14 +531,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
       const userCodeData = first.userCodeData;
       const items = [ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID, ConsoleOAuthApplications.ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID];
       if (items.includes(userCodeData.clientId)) {
-        closure_3(_modDef13691);
+        closure_3(_modDef14111);
       } else {
         const scopes = userCodeData.scopes;
         if (scopes.some((item) => {
           const obj = first(first1[13]);
           return obj.isSocialLayerUmbrellaScope(item);
         })) {
-          closure_3(_modDef13692);
+          closure_3(_modDef14112);
         }
       }
     }
@@ -553,28 +555,36 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   if ("user-code-input" === type) {
     let tmp22;
     const UserCodeInput = tmp7(tmp8[16]).UserCodeInput;
-    const tmp21 = jsx;
+    const tmp21 = closure_8;
     if (first.usePrefilledCode) {
       tmp22 = prefilledUserCode;
     }
     let obj3 = { prefilledUserCode: tmp22, onUserCodeAccepted: callback3, onClose };
-    let tmp21Result = tmp21(UserCodeInput, obj3);
+    tmp21Result = tmp21(UserCodeInput, obj3);
   } else if ("authorization" === type) {
-    tmp21Result = <closure_7 animating />;
+    tmp21Result = closure_8(closure_6, { animating: true });
   } else if ("success" === type) {
-    tmp21Result = jsx(tmp7(tmp8[17]).ActivateDeviceSuccess, { onComplete: onClose, data: first.userCodeData, successImage: first1 });
+    const obj4 = { onComplete: onClose, data: first.userCodeData, successImage: first1 };
+    tmp21Result = closure_8(tmp7(tmp8[17]).ActivateDeviceSuccess, obj4);
   } else {
     tmp21Result = null;
     if ("error" === type) {
-      tmp21Result = jsx(tmp7(tmp8[18]).ActivateDeviceError, { onRetry: callback });
+      const obj5 = { onRetry: callback };
+      tmp21Result = closure_8(tmp7(tmp8[18]).ActivateDeviceError, obj5);
     }
   }
-  const items6 = [tmp.background];
-  const rect = { bottom: true, top: true, style: tmp.safeArea, children: null };
-  const tmp7Result = first(first1[19]);
-  const SafeAreaPaddingView = tmp7(tmp8[21]).SafeAreaPaddingView;
-  return <closure_6 source={tmp7Result.makeSource(require("module_13699"))} imageStyle={tmp.imageStyle} style={items6}>{null}</closure_6>;
+  const obj6 = { style: tmp.background, children: items6 };
+  const obj7 = { source: tmp7Result.makeSource(require("module_14119")), style: tmp.imageStyle };
+  const tmp23 = require("FastImage");
+  tmp7Result = first(first1[19]);
+  items6 = [closure_8(tmp23, obj7), ];
+  const rect = { bottom: true, top: true, style: tmp.safeArea, children: closure_8(closure_5, obj8) };
+  obj8 = { style: tmp.content, children: closure_8(closure_7, obj9) };
+  obj9 = { bounces: false, style: tmp.scroller, contentContainerStyle: tmp.scrollerContent, children: tmp21Result };
+  const SafeAreaPaddingView = tmp7(tmp8[22]).SafeAreaPaddingView;
+  items6[1] = closure_8(SafeAreaPaddingView, rect);
+  return closure_9(closure_5, obj6);
 });
 const result = size.fileFinishedImporting("modules/activate_device/native/ActivateDevice.tsx");
 
-export const ActivateDevice = tmp4;
+export const ActivateDevice = tmp6;

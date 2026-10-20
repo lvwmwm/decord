@@ -1,28 +1,28 @@
-// Module ID: 14785
-// Function ID: 14786
+// Module ID: 15264
+// Function ID: 15265
 // Name: FriendRequestsEveryoneSetting
-// Dependencies: [19, 7634, 1085, 558, 576, 2028, 6491, 14625, 11129, 1126, 2]
+// Dependencies: [19, 7988, 1085, 558, 576, 2041, 6684, 15101, 10664, 1126, 2]
 
-// Module 14785 (FriendRequestsEveryoneSetting)
+// Module 15264 (FriendRequestsEveryoneSetting)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14625 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15101 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let tmp;
-const UserSettingsUtils = tmp(6491);
+const UserSettingsUtils = tmp(6684);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 ({ AllFriendSourceFlags: c3, FriendSourceFlags: closure_4 } = Constants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendRequestsEveryoneSettingValue() {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(2);
@@ -38,9 +38,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5.all;
-}) : (() => {
+}) : (function useFriendRequestsEveryoneSettingValue() {
   let setting;
-  const FriendSourceFlagsSetting = setting(2028).FriendSourceFlagsSetting;
+  const FriendSourceFlagsSetting = setting(2041).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
   return react.useMemo(() => {
@@ -68,7 +68,7 @@ let obj = {
     }
     updateSetting(tmp3);
   },
-  useIsDisabled: () => {
+  useIsDisabled() {
     const obj = useParentalControlSettings;
     return obj.useIsParentallyControlled();
   }

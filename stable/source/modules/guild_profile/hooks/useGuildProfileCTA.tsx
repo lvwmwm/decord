@@ -1,33 +1,33 @@
-// Module ID: 9414
-// Function ID: 9415
+// Module ID: 11346
+// Function ID: 11347
 // Name: useGuildProfileCTA
-// Dependencies: [19, 502, 2112, 2074, 4871, 1377, 1085, 558, 576, 504, 1390, 8068, 9415, 7836, 5940, 2]
+// Dependencies: [19, 502, 2125, 2087, 5073, 1390, 1085, 558, 576, 504, 1403, 8506, 11347, 8285, 6126, 2]
 // Exports: getGuildProfileCTAType
 
-// Module 9414 (useGuildProfileCTA)
-import FlagUtils from "FlagUtils" /* 1390 */;
-import GuildTagUtils from "GuildTagUtils" /* 7836 */;
-import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 9415 */;
+// Module 11346 (useGuildProfileCTA)
+import FlagUtils from "FlagUtils" /* 1403 */;
+import GuildTagUtils from "GuildTagUtils" /* 8285 */;
+import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 11347 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import InviteStore from "InviteStore" /* 4871 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import InviteStore from "InviteStore" /* 5073 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const usePendingFolderGuildIdsDefault = usePendingFolderGuildIds;
-let _require, closure_12, dependencyMap, importDefault, tmp2;
+let _require, dependencyMap, importDefault, tmp2;
 
 let c10;
 let c9;
 ({ InviteStates: c9, GuildFeatures: c10 } = Constants);
 const CTATypes = { IS_MEMBER: 0, [0]: "IS_MEMBER", ADOPT_TAG: 1, [1]: "ADOPT_TAG", HAS_APPLICATION: 2, [2]: "HAS_APPLICATION", APPLY_TO_JOIN: 3, [3]: "APPLY_TO_JOIN", LURK_DISCOVERABLE: 4, [4]: "LURK_DISCOVERABLE", JOIN_VIA_INVITE: 5, [5]: "JOIN_VIA_INVITE", ACCEPT_ROLES: 6, [6]: "ACCEPT_ROLES" };
 let obj2 = { INVITE: "INVITE" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProfileCTA(id, arg1, arg2) {
   let closure_0;
   let stateFromStores;
   let tmp10;
@@ -421,7 +421,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) =>
     tmp21 = D;
     tmp22 = items6;
   }
-  class F {
+  class G {
     constructor() {
       member = null;
       if (null != id) {
@@ -439,9 +439,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) =>
   const items7 = [id, stateFromStores];
   cResult[10] = stateFromStores;
   cResult[11] = id;
-  cResult[12] = F;
+  cResult[12] = G;
   cResult[13] = items7;
-}) : ((id, arg1, arg2) => {
+}) : (function useGuildProfileCTA(id, arg1, arg2) {
   let closure_1;
   let closure_2;
   let stateFromStores1;
@@ -494,7 +494,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) =>
       if (invite.state !== validInviteKey.BANNED) {
         let obj;
         if (invite.state !== tmp9.EXPIRED) {
-          obj = { validInviteKey: inviteKeyForGuildId, isBypassInvite: hasFlag(num, tmp6(8068).GuildInviteFlags.IS_APPLICATION_BYPASS), inviteRoles: invite.roles };
+          obj = { validInviteKey: inviteKeyForGuildId, isBypassInvite: hasFlag(num, tmp6(8506).GuildInviteFlags.IS_APPLICATION_BYPASS), inviteRoles: invite.roles };
           num = invite.flags;
           hasFlag = FlagUtils.hasFlag;
           FlagUtils;
@@ -512,7 +512,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1, arg2) =>
   const isBypassInvite = stateFromStoresObject.isBypassInvite;
   const inviteRoles = stateFromStoresObject.inviteRoles;
   let tmp6 = usePendingFolderGuildIdsDefault();
-  closure_12 = tmp6;
+  let closure_12 = tmp6;
   const items8 = [stateFromStores3, tmp6, id, features, validInviteKey, , , , , , , ];
   ({ visibility: arr9[5], tag: arr9[6] } = id);
   items8[7] = isBypassInvite;
@@ -670,7 +670,7 @@ export const getGuildProfileCTAType = function getGuildProfileCTAType(guildProfi
         if (num == null) {
           num = 0;
         }
-        flag = hasFlag(num, tmp13(8068).GuildInviteFlags.IS_APPLICATION_BYPASS);
+        flag = hasFlag(num, tmp13(8506).GuildInviteFlags.IS_APPLICATION_BYPASS);
         tmp11 = inviteKeyForGuildId;
       }
     }

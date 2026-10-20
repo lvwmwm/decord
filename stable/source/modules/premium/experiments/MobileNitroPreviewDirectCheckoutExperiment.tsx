@@ -1,16 +1,16 @@
-// Module ID: 14477
-// Function ID: 14478
+// Module ID: 14948
+// Function ID: 14949
 // Name: MobileNitroPreviewDirectCheckoutExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 
-// Module 14477 (MobileNitroPreviewDirectCheckoutExperiment)
+// Module 14948 (MobileNitroPreviewDirectCheckoutExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-09-mobile-nitro-preview-direct-checkout", kind: "user", defaultConfig: false, variations: { 0: false, 1: true } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobileNitroPreviewDirectCheckoutEnabled() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -22,7 +22,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return apexExperiment.useConfig(first);
-}) : (() => apexExperiment.useConfig({ location: "native.GetNitroCard" }));
+}) : (function useMobileNitroPreviewDirectCheckoutEnabled() {
+  return apexExperiment.useConfig({ location: "native.GetNitroCard" });
+});
 const result = size.fileFinishedImporting("modules/premium/experiments/MobileNitroPreviewDirectCheckoutExperiment.tsx");
 
 export const MobileNitroPreviewDirectCheckoutExperiment = apexExperiment;

@@ -1,24 +1,24 @@
-// Module ID: 16877
-// Function ID: 16878
+// Module ID: 17466
+// Function ID: 17467
 // Name: ChannelsScreen
-// Dependencies: [19, 4914, 11990, 11967, 7513, 7512, 21, 558, 576, 11968, 504, 16166, 16812, 1126, 4590, 16816, 11982, 16870, 16808, 16820, 2]
+// Dependencies: [19, 5116, 12065, 12052, 9308, 9307, 21, 558, 576, 12045, 504, 16681, 17395, 1126, 4828, 17399, 12059, 17459, 17391, 17403, 2]
 
-// Module 16877 (ChannelsScreen)
+// Module 17466 (ChannelsScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1126 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4590 */;
-import TrackingConstants from "TrackingConstants" /* 7512 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11982 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
+import TrackingConstants from "TrackingConstants" /* 9307 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12059 */;
 import react from "react" /* 19 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4914 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 11990 */;
-import SearchQueryStore from "SearchQueryStore" /* 11967 */;
-import SearchConstants from "SearchConstants" /* 7513 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5116 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12065 */;
+import SearchQueryStore from "SearchQueryStore" /* 12052 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let channel, importDefault, searchContext;
+let importDefault;
 
 let c9;
 let metroImportAll;
@@ -26,7 +26,7 @@ let metroImportDefault;
 ({ EMPTY_VOICE_STATES: metroImportDefault, SearchListItemTypes: metroImportAll, CHANNELS_ESTIMATED_ITEM_SIZE: c9 } = SearchConstants);
 let closure_10 = TrackingConstants.SearchResultContentEntityTypes;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelsScreen(searchContext) {
   let closure_1;
   let stateFromStores;
   let stateFromStores2;
@@ -219,7 +219,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[24] = stateFromStores.length;
   cResult[25] = stateFromStores1.length;
   cResult[26] = Y;
-}) : ((searchContext) => {
+}) : (function ChannelsScreen(searchContext) {
   let tmp18;
   searchContext = searchContext.searchContext;
   let stateFromStores;
@@ -325,7 +325,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
       push3(element1);
       let closure_0 = stateFromStores2;
       closure_1 = closure_5;
-      const sorted = obj.sort((channel, channel2) => {
+      const sorted = obj.sort(function sort(channel, channel2) {
         channel = channel.channel;
         let tmp = closure_0;
         let tmp3 = closure_0;

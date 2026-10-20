@@ -1,26 +1,26 @@
-// Module ID: 12750
-// Function ID: 12751
+// Module ID: 13050
+// Function ID: 13051
 // Name: BlockedDomainActionSheet
-// Dependencies: [19, 21, 4890, 587, 558, 576, 6078, 1126, 4886, 5593, 12751, 5594, 4854, 6645, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 6269, 1126, 5088, 5377, 13051, 5379, 5056, 6840, 2]
 
-// Module 12750 (BlockedDomainActionSheet)
+// Module 13050 (BlockedDomainActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Stack_Stack from "Stack/Stack" /* 5593 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 6078 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
-import URLCallout from "URLCallout" /* 12751 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Stack_Stack from "Stack/Stack" /* 5377 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 6269 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
+import URLCallout from "URLCallout" /* 13051 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, url;
+let BottomSheet;
 
 let c3;
 let closure_4;
@@ -29,7 +29,7 @@ let obj2;
 let obj = { container: obj2, title: { textAlign: "center" }, warningMessage: { textAlign: "center" } };
 obj2 = { padding: nativeDefault.space.PX_16 };
 let closure_5 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedDomainActionSheet(url) {
   let first;
   let intl3;
   let items;
@@ -113,7 +113,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
               return obj.hideActionSheet();
             }
       };
-      const Button = tmp(5594).Button;
+      const Button = tmp(5379).Button;
       intl3 = tmp(1126).intl;
       const tmp25 = _false(Button, obj5);
       cResult[12] = tmp25;
@@ -131,7 +131,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
       }
     }
     const obj6 = { startExpanded: true, children: React3(Stack_Stack.Stack, obj7) };
-    BottomSheet = tmp(6645).BottomSheet;
+    BottomSheet = tmp(6840).BottomSheet;
     obj7 = { spacing: 16, justify: "center", align: "center", style: container, children: items };
     items = [tmp18, tmp20, tmp23];
     const tmp29 = _false(BottomSheet, obj6);
@@ -148,7 +148,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
   cResult[8] = tmp15;
   cResult[9] = tmp19;
   tmp18 = tmp19;
-}) : ((url) => {
+}) : (function BlockedDomainActionSheet(url) {
   let Stack;
   let intl;
   let intl2;

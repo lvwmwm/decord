@@ -1,18 +1,18 @@
-// Module ID: 15787
-// Function ID: 15788
+// Module ID: 16294
+// Function ID: 16295
 // Name: useAllowFriendsFromMutualGuildsOnly
-// Dependencies: [19, 558, 576, 2028, 6491, 2]
+// Dependencies: [19, 558, 576, 2041, 6684, 2]
 
-// Module 15787 (useAllowFriendsFromMutualGuildsOnly)
+// Module 16294 (useAllowFriendsFromMutualGuildsOnly)
 import react2 from "react" /* 576 */;
-import UserSettings from "UserSettings" /* 2028 */;
+import UserSettings from "UserSettings" /* 2041 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const UserSettingsUtils = tmp(6491);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const UserSettingsUtils = tmp(6684);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAllowFriendsFromMutualGuildsOnly() {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(2);
@@ -28,9 +28,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5.mutualGuilds && !tmp5.all;
-}) : (() => {
+}) : (function useAllowFriendsFromMutualGuildsOnly() {
   let setting;
-  const FriendSourceFlagsSetting = setting(2028).FriendSourceFlagsSetting;
+  const FriendSourceFlagsSetting = setting(2041).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
   const memo = react.useMemo(() => {

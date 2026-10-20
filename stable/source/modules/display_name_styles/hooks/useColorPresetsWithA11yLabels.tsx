@@ -1,20 +1,20 @@
-// Module ID: 15166
-// Function ID: 15167
+// Module ID: 15646
+// Function ID: 15647
 // Name: useColorPresetsWithA11yLabels
-// Dependencies: [19, 1395, 558, 576, 1126, 2883, 1103, 2]
+// Dependencies: [19, 1408, 558, 576, 1126, 2958, 1103, 2]
 
-// Module 15166 (useColorPresetsWithA11yLabels)
+// Module 15646 (useColorPresetsWithA11yLabels)
 import react2 from "react" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
 import intl2 from "intl" /* 1126 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;
-import _modDef2883 from "module_2883" /* 2883 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1408 */;
+import _modDef2958 from "module_2958" /* 2958 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const getColorPresetsForEffect = DisplayNameStylesConstants.getColorPresetsForEffect;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedEffectId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useColorPresetsWithA11yLabels(selectedEffectId) {
   let tmp2;
   let obj = react2;
   const cResult = obj.c(3);
@@ -22,7 +22,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedEffectId) =>
     let tmp4;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function s(colors, arg1) {
+      const fn = function n(colors, arg1) {
         let FHfTsV;
         let formatToPlainString;
         let mapped;
@@ -31,7 +31,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedEffectId) =>
         const intl = intl2.intl;
         formatToPlainString = intl.formatToPlainString;
         obj2 = { number: arg1 + 1, hexList: mapped.join(", ") };
-        FHfTsV = _modDef2883.FHfTsV;
+        FHfTsV = _modDef2958.FHfTsV;
         mapped = colors.map(utils_ColorUtils.int2hex);
         return obj;
       };
@@ -49,7 +49,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedEffectId) =>
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function useColorPresetsWithA11yLabels(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   return react.useMemo(() => {

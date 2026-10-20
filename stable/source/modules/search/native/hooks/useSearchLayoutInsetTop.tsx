@@ -1,11 +1,11 @@
-// Module ID: 17046
-// Function ID: 17047
+// Module ID: 17634
+// Function ID: 17635
 // Name: useSearchLayoutInsetTop
-// Dependencies: [558, 1618, 2]
+// Dependencies: [558, 1631, 2]
 // Exports: default
 
-// Module 17046 (useSearchLayoutInsetTop)
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+// Module 17634 (useSearchLayoutInsetTop)
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,4 +13,6 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("modules/search/native/hooks/useSearchLayoutInsetTop.tsx");
 
-export default () => useSafeAreaInsetsDefault().top + 8;
+export default function useSearchLayoutInsetTop() {
+  return useSafeAreaInsetsDefault().top + 8;
+};

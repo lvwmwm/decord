@@ -1,17 +1,17 @@
-// Module ID: 16830
-// Function ID: 16831
+// Module ID: 17413
+// Function ID: 17414
 // Name: guild_channels/ChannelTitle
-// Dependencies: [19, 5072, 21, 4890, 587, 558, 576, 11698, 4886, 2]
+// Dependencies: [19, 5967, 21, 5092, 587, 558, 576, 11763, 5088, 2]
 
-// Module 16830 (guild_channels/ChannelTitle)
+// Module 17413 (guild_channels/ChannelTitle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ReadStateConstants from "ReadStateConstants" /* 5072 */;
-import ChannelListLayout from "ChannelListLayout" /* 11698 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ReadStateConstants from "ReadStateConstants" /* 5967 */;
+import ChannelListLayout from "ChannelListLayout" /* 11763 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const UnreadSetting = ReadStateConstants.UnreadSetting;
 const jsx = Fragment.jsx;
 let obj = { muted: nativeDefault.colors.TEXT_MUTED, normal: nativeDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: nativeDefault.colors.REDESIGN_CHANNEL_NAME_TEXT };
 let closure_5 = createStyles.createStyleProperties(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelTitle(arg0) {
   let connected;
   let layout;
   let muted;
@@ -81,7 +81,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[6] = title;
   cResult[7] = tmp10;
   tmp9 = tmp10;
-}) : ((unread) => {
+}) : (function ChannelTitle(unread) {
   let muted;
   let title;
   ({ title, muted } = unread);

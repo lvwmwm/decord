@@ -1,34 +1,34 @@
-// Module ID: 7939
-// Function ID: 7940
+// Module ID: 8388
+// Function ID: 8389
 // Name: MediaSourceUtil
-// Dependencies: [19, 2051, 1085, 5040, 1390, 6795, 6800, 1483, 7940, 6832, 7531, 5426, 7605, 5114, 1985, 7793, 7809, 1375, 558, 576, 7941, 1105, 4567, 7935, 5708, 1126, 1432, 7942, 2]
+// Dependencies: [19, 2065, 1085, 5419, 1403, 6990, 6996, 1496, 8389, 5944, 8134, 5747, 7886, 5436, 1998, 8243, 8259, 1388, 558, 576, 8390, 1105, 4808, 8384, 5300, 1126, 1445, 8391, 2]
 // Exports: downloadMediaAsset, downloadMediaAssetWithContentType, extractMediaFromMessageComponents, extractMediaSourcesFromComponent, extractMediaSourcesFromEmbed, extractMediaSourcesFromMessage, flattenSource, getAttachmentUrl, getEmbedMedia, getEmbedUrl, getSelectedMediaSource, getVideoSourceType, getYoutubeClipVideoIdFromURI, getYoutubeVideoIdFromURI, isAnimatedAvifSource, isAnimatedImageSource, isAnimatedWebpSource, isGIFSource, isThumbnailAttachment, isValidImageEmbed, isValidVideoAttachment, isValidVideoEmbed, setMediaSourcePortal, supportOverlayVideoControls
 
-// Module 7939 (MediaSourceUtil)
+// Module 8388 (MediaSourceUtil)
 import react2 from "react" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl3 from "intl" /* 1126 */;
-import FlagUtils from "FlagUtils" /* 1390 */;
-import react_nativeDefault from "react-native" /* 1432 */;
-import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1483 */;
-import Server from "Server" /* 1985 */;
-import ToastUtils from "ToastUtils" /* 4567 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5040 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 5114 */;
-import EmbedUtils from "EmbedUtils" /* 5426 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6795 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6800 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6832 */;
-import renderMessageMarkupDefault from "renderMessageMarkup" /* 7531 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7605 */;
-import transformMessageComponents from "transformMessageComponents" /* 7793 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 7809 */;
-import getDisplayFilenameDefault from "getDisplayFilename" /* 7940 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 7941 */;
-import NativePortalView from "NativePortalView" /* 7942 */;
+import FlagUtils from "FlagUtils" /* 1403 */;
+import react_nativeDefault from "react-native" /* 1445 */;
+import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1496 */;
+import Server from "Server" /* 1998 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5419 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 5436 */;
+import EmbedUtils from "EmbedUtils" /* 5747 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 5944 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6990 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6996 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7886 */;
+import renderMessageMarkupDefault from "renderMessageMarkup" /* 8134 */;
+import transformMessageComponents from "transformMessageComponents" /* 8243 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8259 */;
+import getDisplayFilenameDefault from "getDisplayFilename" /* 8389 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8390 */;
+import MediaModalPortal from "MediaModalPortal" /* 8391 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ let _require, closure_2, dependencyMap, importDefault;
 
 let hasOwnProperty;
 let metroRequire;
-const f95980 = () => {
+const f98438 = () => {
   if (ConstantsIOS.MediaType.IMAGE === VIDEO) {
     const tmp2Result = ToastUtils;
     tmp2Result.presentImageSaved();
@@ -49,7 +49,7 @@ const f95980 = () => {
     const tmp2Result4 = ToastUtils;
     tmp2Result4.presentVideoSaved();
   }
-  const MediaViewerAnalytics = tmp2(7935).MediaViewerAnalytics;
+  const MediaViewerAnalytics = tmp2(8384).MediaViewerAnalytics;
   const result = MediaViewerAnalytics.trackMediaViewerDownloadButtonTapped();
 };
 function isValidImageAttachment(filename) {
@@ -77,7 +77,7 @@ function isValidImageAttachment(filename) {
       if (tmp2) {
         let hasFlagResult = null != filename.flags;
         if (hasFlagResult) {
-          const tmp5Result = tmp5(1390);
+          const tmp5Result = tmp5(1403);
           hasFlagResult = tmp5Result.hasFlag(filename.flags, hasOwnProperty.IS_THUMBNAIL);
         }
         tmp2 = hasFlagResult;
@@ -437,7 +437,7 @@ function extractMediaFromEmbed(image, id, contentMessage, mediaIndex, guildIdFro
       const size3 = { uri: tmp14Result.getMobileOptimizedSrc(str64, image.thumbnail.width, image.thumbnail.height), guildId: guildIdFromSearchContext, spoiler: hasSpoilerEmbeds, flags: image.flags, obscure: result, contentScanVersion: content_scan_version, contentType: contentType2, messageId: id.id, noCarousel: !isEmbedInlineResult, mediaIndex, accessoryType: "embed", channelId: id.channel_id, sourceURI: image.thumbnail.url, width: image.thumbnail.width, height: image.thumbnail.height, shareURI: image.thumbnail.url };
       const thumbnail2 = image.thumbnail;
       const push = items1.push;
-      tmp14Result = tmp14(1483);
+      tmp14Result = tmp14(1496);
       if ("contentType" in thumbnail2) {
         contentType2 = thumbnail2.contentType;
       } else if ("content_type" in thumbnail2) {
@@ -521,7 +521,7 @@ function toMediaSourceFromUnfurledMedia(id, guildId, media, description, spoiler
   if (unfurledMediaItemType === RowGeneratorTypes.MediaGalleryItemType.VISUAL_PLACEHOLDER) {
     return null;
   } else {
-    const VIDEO = tmp(7809).MediaGalleryItemType.VIDEO;
+    const VIDEO = tmp(8259).MediaGalleryItemType.VIDEO;
     ({ proxyUrl: proxyUrl2, width } = media);
     const getMobileOptimizedSrc = utils_ImageUtilsDefault.getMobileOptimizedSrc;
     if (width == null) {
@@ -588,7 +588,7 @@ function handleDownloadError() {
 ({ MessageAttachmentFlags: hasOwnProperty, WEBP_RE_IOS: metroRequire } = Constants);
 const re7 = /\.avif$/i;
 const VideoSourceType = { PORTAL: 0, [0]: "PORTAL", TIKTOK_IFRAME: 1, [1]: "TIKTOK_IFRAME", WEB_FILE_IFRAME: 2, [2]: "WEB_FILE_IFRAME", DEFAULT: 3, [3]: "DEFAULT" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedMediaSource(index) {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp2 = useStateFromSharedValueDefault(index.index);
@@ -620,7 +620,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   cResult[1] = tmp3;
   cResult[2] = items;
   tmp7 = items;
-}) : ((index) => {
+}) : (function useSelectedMediaSource(index) {
   let closure_0 = index;
   const tmp = useStateFromSharedValueDefault(index.index);
   let closure_1 = tmp;
@@ -756,7 +756,7 @@ function downloadMediaAssetWithContentType(mediaUrl, VIDEO, contentType) {
     const obj = react_nativeDefault;
     result = obj.downloadMediaAsset(mediaUrl, VIDEO);
   }
-  return result.then(f95980, handleDownloadError);
+  return result.then(f98438, handleDownloadError);
 }
 function isAnimatedWebpSource(sourceURI) {
   let result = null != sourceURI.sourceURI && null != sourceURI.uri;
@@ -834,7 +834,7 @@ export const extractMediaFromMessageComponents = function extractMediaFromMessag
           }
           continue;
         }
-      } else if (tmp7(1985).ComponentType.THUMBNAIL === type) {
+      } else if (tmp7(1998).ComponentType.THUMBNAIL === type) {
         let tmp36 = toMediaSourceFromUnfurledMedia(getContentMessage, getContentMessage, tmp5.media, tmp5.description, tmp5.spoiler);
         if (null != tmp36) {
           let obj3 = { sources: tmp37, unfurledMediaItem: tmp5.media };
@@ -927,7 +927,7 @@ export const extractMediaSourcesFromComponent = function extractMediaSourcesFrom
     return null;
   } else {
     const type = value.type;
-    if (tmp(1985).ComponentType.MEDIA_GALLERY === type) {
+    if (tmp(1998).ComponentType.MEDIA_GALLERY === type) {
       let num2 = 0;
       if (null != componentMediaIndex) {
         num2 = 0;
@@ -948,9 +948,9 @@ export const extractMediaSourcesFromComponent = function extractMediaSourcesFrom
         }
         return tmp;
       });
-      const obj2 = { initialIndex: dependencyMap, sources: mapped.filter(tmp(1375).isNotNullish) };
+      const obj2 = { initialIndex: dependencyMap, sources: mapped.filter(tmp(1388).isNotNullish) };
       return obj2;
-    } else if (tmp(1985).ComponentType.THUMBNAIL === type) {
+    } else if (tmp(1998).ComponentType.THUMBNAIL === type) {
       const tmp7 = toMediaSourceFromUnfurledMedia(message2, guild_id, value.media, value.description, value.spoiler);
       let tmp8 = null;
       if (null != tmp7) {
@@ -1061,7 +1061,7 @@ export const downloadMediaAsset = function downloadMediaAsset(mediaUrl, VIDEO) {
   let closure_0 = VIDEO;
   const obj = react_nativeDefault;
   const downloadMediaAssetResult = obj.downloadMediaAsset(mediaUrl, VIDEO);
-  return downloadMediaAssetResult.then(f95980, handleDownloadError);
+  return downloadMediaAssetResult.then(f98438, handleDownloadError);
 };
 export { downloadMediaAssetWithContentType };
 export const getYoutubeClipVideoIdFromURI = function getYoutubeClipVideoIdFromURI(uri) {
@@ -1119,7 +1119,7 @@ export const getVideoSourceType = function getVideoSourceType(source) {
     return PORTAL;
   }
   if (null != source.portal) {
-    const obj2 = NativePortalView;
+    const obj2 = MediaModalPortal;
     if (!obj2.isPortalExpired(source.portal)) {
       PORTAL = obj.PORTAL;
     }

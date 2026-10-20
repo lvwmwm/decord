@@ -1,24 +1,24 @@
-// Module ID: 7454
-// Function ID: 7455
+// Module ID: 7963
+// Function ID: 7964
 // Name: BurstReactionAnimation
-// Dependencies: [109, 19, 4879, 21, 4890, 558, 576, 7412, 504, 7455, 5920, 2]
+// Dependencies: [109, 19, 5081, 21, 5092, 558, 576, 7921, 504, 7964, 6106, 2]
 
-// Module 7454 (BurstReactionAnimation)
+// Module 7963 (BurstReactionAnimation)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7412 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7921 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import createStyles from "createStyles" /* 4890 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = ["channelId", "messageId", "emoji", "isFullscreen", "onComplete", "withFadeOut"];
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ content: { width: "100%" } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReactionAnimation(arg0) {
   let channelId;
   let emoji;
   let isFullscreen;
@@ -75,59 +75,55 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const _Symbol = Symbol;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
           const items = [AccessibilityStore];
-          const fn = function y() {
-            return useReducedMotion.useReducedMotion;
-          };
+          class C {
+            constructor() {
+              return closure_1_5.useReducedMotion;
+            }
+          }
           cResult[13] = items;
-          cResult[14] = fn;
+          cResult[14] = C;
         }
         get_initialized;
         if (null == burstReactionAnimationSource) {
           return null;
         } else {
           let obj4;
-          const tmp25 = importDefault(undefined === tmp10 || tmp10 ? 7455 : 5920);
+          const tmp25 = importDefault(undefined === tmp10 || tmp10 ? 7964 : 6106);
           if (cResult[15] === tmp8) {
             let tmp26;
             if (cResult[16] === (undefined === tmp10 || tmp10)) {
               tmp26 = cResult[17];
             }
-            let num14 = 1.2;
+            let num13 = 1.2;
             if (tmp23) {
-              num14 = 0.5;
+              num13 = 0.5;
             }
-            if (cResult[18] === tmp25) {
-              if (cResult[19] === burstReactionAnimationSource) {
-                if (cResult[20] === tmp26) {
-                  if (cResult[21] === tmp9) {
-                    if (cResult[22] === tmp15.content) {
-                      let tmp27;
-                      if (cResult[23] === num14) {
-                        tmp27 = cResult[24];
-                      }
-                      return tmp27;
-                    }
-                  }
-                }
+            class C {
+              constructor() {
+                return closure_1_5.useReducedMotion;
               }
             }
             const merged = Object.assign(tmp9);
             const merged1 = Object.assign(tmp26);
-            const tmp35 = <tmp25 style={tmp15.content} loop={false} speed={num14} source={burstReactionAnimationSource} />;
+            const tmp35 = <tmp25 style={tmp15.content} loop={false} speed={num13} source={burstReactionAnimationSource} />;
             cResult[18] = tmp25;
             cResult[19] = burstReactionAnimationSource;
             cResult[20] = tmp26;
             cResult[21] = tmp9;
             cResult[22] = tmp15.content;
-            cResult[23] = num14;
+            cResult[23] = num13;
             cResult[24] = tmp35;
-            tmp27 = tmp35;
           }
           if (undefined === tmp10 || tmp10) {
             obj4 = { onComplete: tmp8 };
             const obj3 = { onComplete: tmp8 };
           } else {
             obj4 = { onAnimationFinish: tmp8 };
+          }
+          class C {
+            constructor() {
+              return closure_1_5.useReducedMotion;
+            }
           }
           cResult[15] = tmp8;
           cResult[16] = undefined === tmp10 || tmp10;
@@ -144,7 +140,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[11] = tmp7;
   cResult[12] = obj5;
   tmp16 = obj5;
-}) : ((arg0) => {
+}) : (function BurstReactionAnimation(arg0) {
   let channelId;
   let emoji;
   let isFullscreen;
@@ -168,7 +164,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return null;
   } else {
     let obj3;
-    const tmp7 = importDefault(withFadeOut ? 7455 : 5920);
+    const tmp7 = importDefault(withFadeOut ? 7964 : 6106);
     if (withFadeOut) {
       obj3 = { onComplete };
       const obj2 = { onComplete };

@@ -1,29 +1,29 @@
-// Module ID: 11612
-// Function ID: 11613
+// Module ID: 11676
+// Function ID: 11677
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 2051, 7031, 2074, 5110, 1085, 21, 4890, 587, 7467, 7270, 7295, 4854, 8815, 8812, 11, 7243, 8814, 7261, 1282, 11613, 6965, 7109, 5708, 1126, 558, 576, 504, 6657, 7263, 7274, 11614, 4886, 5595, 6645, 2]
+// Dependencies: [32, 5, 19, 17, 2065, 7239, 2087, 5432, 1085, 21, 5092, 587, 9696, 7760, 7775, 5056, 9261, 9258, 11, 7755, 9260, 7897, 1295, 11677, 7174, 8238, 5300, 1126, 558, 576, 504, 6852, 7899, 7764, 11678, 5088, 5380, 6840, 2]
 
-// Module 11612 (AddMediaToOriginalForumPostActionSheet)
+// Module 11676 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import DraftStore from "DraftStore" /* 7031 */;
-import tracking_Tracking from "tracking/Tracking" /* 7263 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7274 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import DraftStore from "DraftStore" /* 7239 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7764 */;
+import Tracking from "Tracking" /* 7899 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import MessageStore from "MessageStore" /* 5110 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import MessageStore from "MessageStore" /* 5432 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, c9, closure_6, setIsUploading, threadId;
+let BottomSheet, c9, closure_6, setIsUploading;
 
 let closure_12;
 let closure_14;
@@ -95,7 +95,7 @@ let obj = function _upload2() {
               anyErrorMessage = undefined;
               c8 = 1;
               c9 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Set", done: true };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {
@@ -207,7 +207,7 @@ let obj = function _upload2() {
           } else {
             if (5 === c8) {
               c7 = 0;
-              closure_12 = closure_6;
+              let closure_12 = closure_6;
               c2(false);
               let obj4 = closure_133_1(closure_133_2[15]);
               obj4.hideActionSheet();
@@ -294,7 +294,7 @@ obj2 = { borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, border
 createStyles = createStyles.createStyles;
 obj3 = { borderRadius: nativeDefault.radii.sm };
 let closure_15 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddMediaToOriginalForumPostActionSheet(threadId) {
   let _slicedToArray;
   let analyticsLocations;
   let first;
@@ -451,7 +451,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
       if (null != stateFromStores) {
         if (null != stateFromStores2) {
           if (null != stateFromStores1) {
-            const obj2 = tracking_Tracking;
+            const obj2 = Tracking;
             const result = obj2.trackForumAddMediaToOriginalPostClicked({ added: true });
             const obj3 = { threadId, attachments, setIsUploading: _slicedToArray, guild: tmp2, analyticsLocations };
             _upload(obj3);
@@ -469,7 +469,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
   cResult[16] = stateFromStores;
   cResult[17] = threadId;
   cResult[18] = D;
-}) : ((threadId) => {
+}) : (function AddMediaToOriginalForumPostActionSheet(threadId) {
   let BaseTextButton;
   let BaseTextButton2;
   let c3;
@@ -527,7 +527,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
     if (null != stateFromStores) {
       if (null != stateFromStores2) {
         if (null != stateFromStores1) {
-          const obj2 = tracking_Tracking;
+          const obj2 = Tracking;
           const result = obj2.trackForumAddMediaToOriginalPostClicked({ added: true });
           const obj3 = { threadId, attachments, setIsUploading, guild: tmp2, analyticsLocations };
           _upload(obj3);
@@ -538,7 +538,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
     obj.hideActionSheet();
   }, items6);
   const callback1 = stateFromStores1.useCallback(() => {
-    obj = tracking_Tracking;
+    obj = Tracking;
     const result = obj.trackForumAddMediaToOriginalPostClicked({ added: false });
     const obj2 = ActionSheetActionCreatorsDefault;
     obj2.hideActionSheet();

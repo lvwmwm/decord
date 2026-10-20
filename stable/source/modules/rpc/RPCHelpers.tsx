@@ -1,41 +1,42 @@
-// Module ID: 9031
-// Function ID: 9032
+// Module ID: 10946
+// Function ID: 10947
 // Name: RPCHelpers
-// Dependencies: [5, 5118, 2009, 2055, 1391, 2051, 2074, 1999, 5110, 4930, 1377, 4909, 5316, 1085, 1371, 4874, 1102, 12, 6965, 4877, 5304, 9032, 5042, 1373, 8015, 1282, 9026, 8706, 9033, 2]
+// Dependencies: [5, 5440, 2022, 2069, 1404, 2065, 2087, 2012, 5432, 5108, 1390, 5113, 5639, 1085, 1384, 5076, 1102, 12, 7174, 5079, 5627, 10947, 5409, 1386, 8453, 1295, 10937, 10809, 10948, 2]
 // Exports: containsSameValues, getDeprecatedVoiceSettingsWithShortcut, getRemoteIconURL, getVoiceConnectionState, getVoiceSettingsWithShortcut, hasMessageReadPermission, isMatchingOrigin, processSocketThrottlers, transformApplicationRelationship, transformBaseRelationship, transformChannel, transformVoiceState, validateActivityInvite, validateApplication, validateOriginAndUpdateSocket, validatePostMessageTransport, validateSocketApplication
 
-// Module 9031 (RPCHelpers)
+// Module 10946 (RPCHelpers)
 import _modDef12 from "module_12" /* 12 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import urlParseDefault from "urlParse" /* 1373 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4877 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
-import useMessageAuthor from "useMessageAuthor" /* 5304 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6965 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8015 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 8706 */;
-import RPCErrorDefault from "RPCError" /* 9026 */;
-import LeakyBucketDefault from "LeakyBucket" /* 9033 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import urlParseDefault from "urlParse" /* 1386 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5079 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
+import useMessageAuthor from "useMessageAuthor" /* 5627 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7174 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8453 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 10809 */;
+import RPCErrorDefault from "RPCError" /* 10937 */;
+import LeakyBucketDefault from "LeakyBucket" /* 10948 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
-import ApplicationRecord from "ApplicationRecord" /* 2009 */;
-import UserRecord from "UserRecord" /* 1391 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import MessageStore from "MessageStore" /* 5110 */;
-import PresenceStore from "PresenceStore" /* 4930 */;
-import UserStore from "UserStore" /* 1377 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
-import Constants_mod from "Constants" /* 5316 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
+import UserRecord from "UserRecord" /* 1404 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import MessageStore from "MessageStore" /* 5432 */;
+import PresenceStore from "PresenceStore" /* 5108 */;
+import UserStore from "UserStore" /* 1390 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
+import Constants_mod from "Constants" /* 5639 */;
 import Constants_mod2 from "Constants" /* 1085 */;
-import URLUtils from "URLUtils" /* 1371 */;
-import RegexUtils_mod from "RegexUtils" /* 4874 */;
+import URLUtils from "URLUtils" /* 1384 */;
+import RegexUtils_mod from "RegexUtils" /* 5076 */;
 import size from "module_2" /* 2 */;
 
-let c4, c7, c8;
+const require = globalThis.__r;
+let c4, createFromServer, rpc_origins, set;
 
 let closure_15;
 let closure_16;
@@ -47,7 +48,7 @@ let closure_21;
 let closure_22;
 let closure_23;
 let tmp;
-const transformUserDefault = tmp(9032);
+const transformUserDefault = tmp(10947);
 function recurseReplaceContentTree(type) {
   if ("customEmoji" === type.type) {
     type.type = "emoji";
@@ -136,132 +137,135 @@ function fetchApplicationRPC(arg0) {
 }
 let obj = function _validateSocketApplication() {
   let application;
-  obj = _asyncToGenerator(async function(arg0, value, arg2) {
-    let createFromServer;
-    let closure_0 = arg0;
-    let closure_1 = value;
+  obj = _asyncToGenerator(async (arg0, arg1, arg2) => {
+    const transport = arg0;
+    let closure_1 = arg1;
     let closure_2 = arg2;
-    if (c8 === 2) {
-      c8 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (c8 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        let rpc_origins;
-        let user;
-        let id;
-        let name;
-        let icon;
-        let coverImage;
-        let flags;
-        let parentId;
-        let embeddedSurfaces;
-        let application2;
-        c8 = 2;
-        if (0 === c7) {
-          if (arg0 === 1) {
-            c8 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c8 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_6 = tmp;
-            rpc_origins = undefined;
-            user = undefined;
-            id = undefined;
-            name = undefined;
-            icon = undefined;
-            coverImage = undefined;
-            flags = undefined;
-            parentId = undefined;
-            embeddedSurfaces = undefined;
-            application2 = application.getApplication(closure_1);
-            const tmp62 = closure_0;
-            if (typeof closure_2 === "string") {
-              if (tmp62.transport === constants.POST_MESSAGE) {
-                const tmp18 = getURLForApplicationDefault(closure_1);
-                if (null != tmp18) {
-                  const items = [tmp18];
-                }
-                const obj4 = { closeCode: constants2.INVALID_ORIGIN };
-                const self3 = this;
-                const self4 = this;
-                const tmp49 = new RPCErrorDefault(obj4, "Invalid Origin");
-                throw tmp49;
-              } else {
-                c7 = 1;
-                c8 = 1;
-                const obj5 = { value: fetchApplicationRPC(closure_1), done: false };
-                return obj5;
-              }
-            }
-          }
+    let c7 = 0;
+    let c8 = 0;
+    return (async function(arg0, value, arg2) {
+      if (c8 === 2) {
+        c8 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (c8 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
         } else {
-          if (1 === tmp4) {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          let id;
+          let name;
+          let icon;
+          let coverImage;
+          let flags;
+          let parentId;
+          let bot;
+          let embeddedSurfaces;
+          let application2;
+          c8 = 2;
+          if (0 === c7) {
             if (arg0 === 1) {
               c8 = 3;
               throw value;
             } else if (arg0 === 2) {
               c8 = 3;
-              const obj6 = { value, done: true };
-              return obj6;
+              return { value, done: true };
             } else {
-              rpc_origins = value;
-              application2 = closure_133_5.createFromServer(rpc_origins);
-              if (!closure_133_28(closure_2, rpc_origins.rpc_origins)) {
-                const obj7 = { closeCode: closure_133_21.INVALID_ORIGIN };
-                const self = this;
-                const self2 = this;
-                const tmp13 = new closure_133_1(closure_133_2[26])(obj7, "Invalid Origin");
-                throw tmp13;
+              rpc_origins = undefined;
+              closure_5 = undefined;
+              user = undefined;
+              id = undefined;
+              name = undefined;
+              icon = undefined;
+              coverImage = undefined;
+              flags = undefined;
+              parentId = undefined;
+              bot = undefined;
+              embeddedSurfaces = undefined;
+              application2 = application.getApplication(closure_1);
+              const tmp75 = transport;
+              if (typeof closure_2 === "string") {
+                if (tmp75.transport === constants.POST_MESSAGE) {
+                  const tmp18 = getURLForApplicationDefault(closure_1);
+                  if (null != tmp18) {
+                    const items = [tmp18];
+                  }
+                  const self3 = this;
+                  const self4 = this;
+                  const obj4 = { closeCode: constants2.INVALID_ORIGIN };
+                  const tmp62 = new RPCErrorDefault(obj4, "Invalid Origin");
+                  throw tmp62;
+                } else {
+                  c7 = 1;
+                  c8 = 1;
+                  const obj5 = { value: fetchApplicationRPC(closure_1), done: false };
+                  return obj5;
+                }
               }
             }
-          } else if (arg0 === 1) {
-            c8 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c8 = 3;
-            obj = { value, done: true };
-            return obj;
           } else {
-            application2 = createFromServer(value);
+            if (1 === tmp4) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                return { value, done: true };
+              } else {
+                rpc_origins = value;
+                application2 = closure_133_5.createFromServer(rpc_origins);
+                if (!closure_133_28(closure_2, rpc_origins.rpc_origins)) {
+                  const self = this;
+                  const self2 = this;
+                  const obj7 = { closeCode: closure_133_21.INVALID_ORIGIN };
+                  const tmp13 = new closure_133_1(closure_133_2[26])(obj7, "Invalid Origin");
+                  throw tmp13;
+                }
+              }
+            } else if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              return { value, done: true };
+            } else {
+              application2 = createFromServer(value);
+            }
+            user = application2;
+            id = user.id;
+            name = user.name;
+            icon = user.icon;
+            coverImage = user.coverImage;
+            flags = user.flags;
+            parentId = user.parentId;
+            bot = user.bot;
+            embeddedSurfaces = user.embeddedSurfaces;
+            const obj8 = { id, parentId, name, icon, coverImage, flags, bot, embeddedSurfaces };
+            transport.application = obj8;
+            c8 = 3;
+            return { value: "IconComponent", done: null };
           }
-          user = application2;
-          id = user.id;
-          name = user.name;
-          icon = user.icon;
-          coverImage = user.coverImage;
-          flags = user.flags;
-          parentId = user.parentId;
-          embeddedSurfaces = user.embeddedSurfaces;
-          const obj8 = { id, parentId, name, icon, coverImage, flags, embeddedSurfaces };
-          closure_0.application = obj8;
+          closure_5 = transport.transport === closure_133_16.POST_MESSAGE && !closure_133_4.isHydrated(closure_1);
+          const tmp24 = transport.transport === closure_133_16.POST_MESSAGE && !closure_133_4.isHydrated(closure_1);
+          const tmp32 = null == application2 || closure_5;
+          if (tmp32) {
+            rpc_origins = closure_133_5;
+            createFromServer = closure_133_5.createFromServer;
+            c7 = 2;
+            c8 = 1;
+            const obj9 = { value: closure_133_30(closure_1), done: false };
+            return obj9;
+          }
+        } catch (tmp64) {
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          throw tmp64;
         }
-        if (null == application2) {
-          rpc_origins = closure_133_5;
-          createFromServer = closure_133_5.createFromServer;
-          c7 = 2;
-          c8 = 1;
-          const obj9 = { value: closure_133_30(closure_1), done: false };
-          return obj9;
-        }
-      } catch (tmp51) {
-        c8 = 3;
-        throw tmp51;
       }
-    }
+    })();
   });
   return obj(...arguments);
 };
@@ -430,8 +434,8 @@ export const containsSameValues = function containsSameValues(arg0, arg1) {
   return isEqual(arg0, obj.pick(arg1, Object.keys(arg0)));
 };
 export { validateOrigin };
-export const transformChannel = function transformChannel(channel, arg1) {
-  let closure_1 = arg1;
+export const transformChannel = function transformChannel(channel, result) {
+  let closure_1 = result;
   const items = [];
   const guild_id = channel.getGuildId();
   const items1 = [constants3.GUILD_CATEGORY, ...GUILD_VOCAL_CHANNEL_TYPES];
@@ -453,7 +457,7 @@ export const transformChannel = function transformChannel(channel, arg1) {
   return allPromises.then(() => {
     let tmp = channel;
     if (!channel.isNSFW()) {
-      const tmp6 = closure_1;
+      const tmp6 = importDefault;
       if (tmp6) {
         const messages = MessageStore.getMessages(tmp.id);
         const toArrayResult = messages.toArray();
@@ -491,8 +495,8 @@ export const transformChannel = function transformChannel(channel, arg1) {
               const error = new Error("Invalid user id: " + userId);
               throw error;
             } else {
-              obj = { nick: obj2.getName(tmp, id, user), mute: MediaEngineStore.isLocalMute(user.id), volume: MediaEngineStore.getLocalVolume(user.id), pan: MediaEngineStore.getLocalPan(user.id), voice_state: obj3, user: closure_1(closure_2[21])(user) };
-              obj2 = closure_1(closure_2[22]);
+              obj = { nick: obj2.getName(tmp, id, user), mute: MediaEngineStore.isLocalMute(user.id), volume: MediaEngineStore.getLocalVolume(user.id), pan: MediaEngineStore.getLocalPan(user.id), voice_state: obj3, user: require("transformUser")(user) };
+              obj2 = require("NicknameUtils");
               return obj;
             }
           })
@@ -573,8 +577,8 @@ export const hasMessageReadPermission = function hasMessageReadPermission(channe
   } else {
     application_id = channel.getApplicationId();
   }
-  const tmp2 = application_id === id || scopes.indexOf(OAuth2Scopes.OAuth2Scopes.MESSAGES_READ) > -1;
-  return tmp2;
+  const hasItem = application_id === id || scopes.has(OAuth2Scopes.OAuth2Scopes.MESSAGES_READ);
+  return hasItem;
 };
 export const getVoiceConnectionState = function getVoiceConnectionState(state) {
   if (constants5.RTC_CONNECTED !== state) {
@@ -602,8 +606,13 @@ export const processSocketThrottlers = function processSocketThrottlers() {
 };
 export const validateOriginAndUpdateSocket = function validateOriginAndUpdateSocket(authorization, arg1) {
   if (null == arg1) {
-    const items = [closure_15];
-    authorization.authorization.scopes = items;
+    const _Set = Set;
+    const items = [authStore3];
+    const self = this;
+    const self2 = this;
+    authorization = authorization.authorization;
+    authorization.scopes = new Set(items);
+    set = new Set(items);
   }
 };
 export const getDeprecatedVoiceSettingsWithShortcut = function getDeprecatedVoiceSettingsWithShortcut(fn) {
@@ -612,18 +621,18 @@ export const getDeprecatedVoiceSettingsWithShortcut = function getDeprecatedVoic
   let sorted;
   let sorted1;
   let tmp2;
-  const f139440 = (index, index2) => index.index - index2.index;
-  const f139441 = (id) => ({ id: id.id, name: id.name });
+  const f143449 = (index, index2) => index.index - index2.index;
+  const f143450 = (id) => ({ id: id.id, name: id.name });
   const settings = MediaEngineStore.getSettings();
   obj = { input: obj3, output: obj5, mode: { type: settings.mode, auto_threshold: settings.modeOptions.autoThreshold, threshold: settings.modeOptions.threshold, shortcut: tmp2, delay: settings.modeOptions.delay }, automatic_gain_control: null, echo_cancellation: null, noise_suppression: null, qos: null, silence_warning: null, deaf: null, mute: null };
-  obj3 = { available_devices: sorted.map(f139441), device_id: null, volume: null };
+  obj3 = { available_devices: sorted.map(f143450), device_id: null, volume: null };
   tmp2 = fn(settings);
   const values = Object.values(MediaEngineStore.getInputDevices());
-  sorted = values.sort(f139440);
+  sorted = values.sort(f143449);
   ({ inputDeviceId: obj2.device_id, inputVolume: obj2.volume } = settings);
-  obj5 = { available_devices: sorted1.map(f139441), device_id: null, volume: null };
+  obj5 = { available_devices: sorted1.map(f143450), device_id: null, volume: null };
   const values2 = Object.values(MediaEngineStore.getOutputDevices());
-  sorted1 = values2.sort(f139440);
+  sorted1 = values2.sort(f143449);
   ({ outputDeviceId: obj4.device_id, outputVolume: obj4.volume } = settings);
   ({ automaticGainControl: obj.automatic_gain_control, echoCancellation: obj.echo_cancellation, noiseSuppression: obj.noise_suppression, qos: obj.qos, silenceWarning: obj.silence_warning, deaf: obj.deaf, mute: obj.mute } = settings);
   return obj;

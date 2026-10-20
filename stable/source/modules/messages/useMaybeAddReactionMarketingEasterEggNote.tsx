@@ -1,20 +1,20 @@
-// Module ID: 9937
-// Function ID: 9938
+// Module ID: 9541
+// Function ID: 9542
 // Name: useMaybeAddReactionMarketingEasterEggNote
-// Dependencies: [558, 9938, 2]
+// Dependencies: [558, 9542, 2]
 
-// Module 9937 (useMaybeAddReactionMarketingEasterEggNote)
-import useMaybeAddPollsMarketingEasterEggNoteDefault from "useMaybeAddPollsMarketingEasterEggNote" /* 9938 */;
+// Module 9541 (useMaybeAddReactionMarketingEasterEggNote)
+import useMaybeAddPollsMarketingEasterEggNoteDefault from "useMaybeAddPollsMarketingEasterEggNote" /* 9542 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeAddReactionMarketingEasterEggNote(arg0) {
   let tmp = arg0;
   if (":pizza:" === arg0) {
     tmp = useMaybeAddPollsMarketingEasterEggNoteDefault(arg0);
   }
   return tmp;
-}) : ((arg0) => {
+}) : (function useMaybeAddReactionMarketingEasterEggNote(arg0) {
   let tmp = arg0;
   if (":pizza:" === arg0) {
     tmp = useMaybeAddPollsMarketingEasterEggNoteDefault(arg0);

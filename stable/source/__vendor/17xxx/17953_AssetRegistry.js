@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 20, height: 20, scales: [2, 3], hash: "66f5395e0dcbde2df92fe7a6979a5fca", name: "ic_emoji_picker_20px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 24, height: 24, scales: [2, 3], hash: "28a4fc424c84aa1427fe3a27faf0383e", name: "settings", type: "png" });

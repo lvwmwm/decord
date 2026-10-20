@@ -1,27 +1,25 @@
-// Module ID: 6631
-// Function ID: 6632
+// Module ID: 6826
+// Function ID: 6827
 // Name: FormCheckboxRow
-// Dependencies: [109, 19, 21, 4890, 558, 576, 4594, 6632, 6633, 2]
+// Dependencies: [109, 19, 21, 5092, 558, 576, 4832, 6827, 6828, 2]
 
-// Module 6631 (FormCheckboxRow)
+// Module 6826 (FormCheckboxRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Form_FormCheckboxDefault from "Form/FormCheckbox" /* 6632 */;
-import FormRowDefault from "FormRow" /* 6633 */;
+import Form_FormCheckboxDefault from "Form/FormCheckbox" /* 6827 */;
+import FormRowDefault from "FormRow" /* 6828 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let selected;
-
 let tmp;
-const react_native = tmp(4594);
+const react_native = tmp(4832);
 let closure_3 = ["selected"];
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ checkboxWrapperStyle: { flexShrink: 0 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormCheckboxRow(selected) {
   let accessibilityRole;
   let accessibilityState;
   let tmp10;
@@ -85,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
   cResult[11] = tmp12;
   cResult[12] = tmp19;
   tmp16 = tmp19;
-}) : ((selected) => {
+}) : (function FormCheckboxRow(selected) {
   let accessibilityRole;
   let accessibilityState;
   selected = selected.selected;

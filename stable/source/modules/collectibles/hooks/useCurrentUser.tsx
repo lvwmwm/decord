@@ -1,19 +1,19 @@
-// Module ID: 7849
-// Function ID: 7850
+// Module ID: 8298
+// Function ID: 8299
 // Name: useCurrentUser
-// Dependencies: [1377, 558, 576, 504, 38, 2]
+// Dependencies: [1390, 558, 576, 504, 38, 2]
 
-// Module 7849 (useCurrentUser)
+// Module 8298 (useCurrentUser)
 import _modDef38 from "module_38" /* 38 */;
 import react from "react" /* 576 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentUser() {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   _modDef38(null != stateFromStores, "user has to be signed in before accessing shop");
   return stateFromStores;
-}) : (() => {
+}) : (function useCurrentUser() {
   let currentUser;
   const items = [UserStore];
   const obj = get_initialized;
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return stateFromStores;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentUserIfAvailable() {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -64,7 +64,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useCurrentUserIfAvailable() {
   let currentUser;
   const items = [UserStore];
   const obj = get_initialized;

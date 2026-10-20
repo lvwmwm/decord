@@ -1,26 +1,26 @@
-// Module ID: 4697
-// Function ID: 4698
+// Module ID: 4937
+// Function ID: 4938
 // Name: ClientThemesBackgroundStore
-// Dependencies: [1194, 1193, 1195, 1231, 2055, 2051, 1377, 1240, 1196, 4698, 2036, 4722, 4528, 2028, 4725, 4726, 504, 1239, 584, 2]
+// Dependencies: [1206, 1205, 1207, 1244, 2069, 2065, 1390, 1253, 1208, 4938, 2049, 4962, 4769, 2041, 4965, 4966, 504, 1252, 584, 2]
 
-// Module 4697 (ClientThemesBackgroundStore)
+// Module 4937 (ClientThemesBackgroundStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ThemeConstants from "ThemeConstants" /* 1196 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4528 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4698 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4726 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1377 */;
+import ThemeConstants from "ThemeConstants" /* 1208 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1252 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1253 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4966 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -103,7 +103,7 @@ function handleUserSettingsProtoStoreUpdate() {
   }
 }
 const isGuildTextChannelType = ChannelRecord.isGuildTextChannelType;
-let closure_12 = ClientThemesConstants.BACKGROUND_GRADIENT_PRESETS_MAP;
+const authStore2 = ClientThemesConstants.BACKGROUND_GRADIENT_PRESETS_MAP;
 const SystemThemeState = ThemeConstants.SystemThemeState;
 let closure_14 = true;
 let c15 = false;
@@ -247,7 +247,7 @@ let obj = {
         const obj2 = DismissibleContentUnsafeUtils;
         const tmp6 = require;
         if (!obj2.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.CLIENT_THEMES_COACHMARK)) {
-          const tmp6Result = tmp6(4722);
+          const tmp6Result = tmp6(4962);
           if (tmp6Result.ageEligibleForPremiumUpsell(tmp)) {
             const channel = ChannelStore.getChannel(channelId);
             const tmp4 = null != channel && isGuildTextChannelType(channel.type);

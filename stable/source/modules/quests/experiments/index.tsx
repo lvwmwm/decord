@@ -1,14 +1,14 @@
-// Module ID: 10914
-// Function ID: 10915
+// Module ID: 9157
+// Function ID: 9158
 // Name: apexExperiment
-// Dependencies: [1440, 558, 576, 10007, 10008, 10915, 2]
+// Dependencies: [1453, 558, 576, 9158, 9159, 9160, 2]
 
-// Module 10914 (apexExperiment)
+// Module 9157 (apexExperiment)
 import react from "react" /* 576 */;
-import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 10007 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10008 */;
-import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 10915 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1440 */;
+import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 9158 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9159 */;
+import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 9160 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,6 +17,8 @@ let obj14;
 let obj2;
 let obj21;
 let obj23;
+let obj26;
+let obj28;
 let obj4;
 let obj6;
 let obj8;
@@ -48,7 +50,7 @@ const apexExperiment4 = ApexExperiment.createApexExperiment(obj10);
 ApexExperiment = ApexExperiment_mod;
 const obj12 = { name: "2026-04-quests-premium-orb-multiplier-marketing", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 let closure_2 = ApexExperiment.createApexExperiment(obj12);
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestOrbsMultiplierMarketing(location) {
   let tmp4;
   let tmp7;
   const obj = react;
@@ -74,7 +76,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp7 = cResult[3];
   }
   return tmp7;
-}) : ((location) => {
+}) : (function useQuestOrbsMultiplierMarketing(location) {
   const obj = { location };
   const enabled = closure_2.useConfig(obj).enabled;
   const obj2 = QuestOrbMultiplierHooks;
@@ -109,10 +111,17 @@ ApexExperiment = ApexExperiment_mod;
 const obj22 = { name: "2026-09-quest-mobile-bar-secondary-cta", kind: "user", defaultConfig: { enabled: false }, variations: obj23 };
 obj23 = { 1: null };
 obj23[1] = { enabled: true };
+const obj24 = { DEFAULT: 0, [0]: "DEFAULT", ALL_TIERS: 1, [1]: "ALL_TIERS", TIER_1_VISUALS: 2, [2]: "TIER_1_VISUALS", TIER_2_VISUALS: 3, [3]: "TIER_2_VISUALS", TIER_3_VISUALS: 4, [4]: "TIER_3_VISUALS" };
 const apexExperiment11 = ApexExperiment.createApexExperiment(obj22);
 ApexExperiment = ApexExperiment_mod;
-const obj24 = { name: "2026-09-new-orb-reward-visuals", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
-const apexExperiment12 = ApexExperiment.createApexExperiment(obj24);
+const obj25 = { name: "2026-09-new-orb-reward-visuals", kind: "user", defaultConfig: { variant: obj24.DEFAULT }, variations: obj26 };
+obj26 = { 0: { variant: obj24.DEFAULT }, 1: { variant: obj24.ALL_TIERS }, 2: { variant: obj24.TIER_2_VISUALS }, 3: { variant: obj24.TIER_3_VISUALS }, 4: { variant: obj24.TIER_1_VISUALS } };
+const apexExperiment12 = ApexExperiment.createApexExperiment(obj25);
+ApexExperiment = ApexExperiment_mod;
+const obj27 = { name: "2026-09-mobile-quest-reward-button-to-secondary-button", kind: "user", defaultConfig: { enabled: false }, variations: obj28 };
+obj28 = { 1: null };
+obj28[1] = { enabled: true };
+const apexExperiment13 = ApexExperiment.createApexExperiment(obj27);
 const result = size.fileFinishedImporting("modules/quests/experiments/index.tsx");
 
 export const VideoEndCardV2Experiment = apexExperiment;
@@ -130,4 +139,6 @@ export const MobileQuestHomeSortPriorityExperiment = apexExperiment9;
 export const QuestHomeLayoutVisualTweakVariant = obj19;
 export const QuestHomeLayoutVisualTweaksExperiment = apexExperiment10;
 export const QuestMobileBarSecondaryCtaExperiment = apexExperiment11;
+export const QuestOrbTierVariant = obj24;
 export const QuestOrbTierExperiment = apexExperiment12;
+export const MobileQuestRewardButtonToSecondaryButtonExperiment = apexExperiment13;

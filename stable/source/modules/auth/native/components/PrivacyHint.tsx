@@ -1,25 +1,23 @@
-// Module ID: 15904
-// Function ID: 15905
+// Module ID: 16414
+// Function ID: 16415
 // Name: PrivacyHint
-// Dependencies: [19, 17, 6083, 15867, 1085, 21, 4890, 558, 576, 1126, 4886, 4594, 5991, 8895, 15905, 2]
+// Dependencies: [19, 17, 5931, 16376, 1085, 21, 5092, 558, 576, 1126, 5088, 4832, 6178, 8575, 16415, 2]
 
-// Module 15904 (PrivacyHint)
+// Module 16414 (PrivacyHint)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import react_native from "react-native" /* 4594 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6083 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15867 */;
-import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 15905 */;
+import react_native from "react-native" /* 4832 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import PromoEmailConsentStore from "PromoEmailConsentStore" /* 5931 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16376 */;
+import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 16415 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let style;
 
 let c3;
 let c9;
@@ -32,7 +30,7 @@ const MarketingURLs = Constants.MarketingURLs;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ multiItem: { flexDirection: "column", gap: 16 }, checkbox: { flexDirection: "row", alignItems: "flex-start", gap: 8 }, radio: { flexDirection: "row", alignItems: "center", gap: 8 }, checkboxLabel: { flex: 1 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function PrivacyPolicyDescription(style) {
   let first;
   let tmp7;
   const obj = react2;
@@ -58,7 +56,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     tmp7 = cResult[2];
   }
   return tmp7;
-}) : ((style) => {
+}) : (function PrivacyPolicyDescription(style) {
   let intl;
   let obj2;
   const obj = { style: style.style, variant: "text-xs/medium", color: "text-muted", children: intl.format(intl3.t["KI+BSb"], obj2) };
@@ -68,7 +66,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   return metroImportAll(Text, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PrivacyPolicyCheckbox(arg0) {
   let accessibilityRole;
   let accessibilityState;
   let asCheckbox;
@@ -167,16 +165,16 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (undefined !== asCheckbox && asCheckbox) {
     const obj6 = { checked: consent };
-    tmp13Result = tmp13(tmp(5991).FormCheckbox, obj6);
+    tmp13Result = tmp13(tmp(6178).FormCheckbox, obj6);
   } else {
     const obj8 = { selected: consent };
-    tmp13Result = tmp13(tmp(8895).FormRow.Radio, obj8);
+    tmp13Result = tmp13(tmp(8575).FormRow.Radio, obj8);
   }
   cResult[4] = undefined !== asCheckbox && asCheckbox;
   cResult[5] = consent;
   cResult[6] = tmp13Result;
   tmp12 = tmp13Result;
-}) : ((onToggleConsent) => {
+}) : (function PrivacyPolicyCheckbox(onToggleConsent) {
   let asCheckbox;
   let consent;
   let intl;
@@ -199,23 +197,23 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp6 = React3;
   if (asCheckbox) {
     const obj3 = { checked: consent };
-    tmp7Result = tmp7(tmp2(5991).FormCheckbox, obj3);
+    tmp7Result = tmp7(tmp2(6178).FormCheckbox, obj3);
     tmp9 = tmp7;
   } else {
     const obj4 = { selected: consent };
-    tmp7Result = tmp7(tmp2(8895).FormRow.Radio, obj4);
+    tmp7Result = tmp7(tmp2(8575).FormRow.Radio, obj4);
     tmp9 = tmp7;
   }
   items = [tmp7Result, ];
   const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.checkboxLabel, children: intl2.format(intl3.t.qMDAP0, obj6) };
-  const Text = tmp2(4886).Text;
+  const Text = tmp2(5088).Text;
   intl2 = tmp2(1126).intl;
   obj6 = { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY };
   items[1] = tmp9(Text, obj5);
   return tmp5(tmp6, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PrivacyHint(arg0) {
   let consent;
   let consentRequired;
   let first;
@@ -228,7 +226,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ consent, consentRequired, onToggleConsent } = arg0);
   closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n(required) {
+    const fn = function c(required) {
       return required.required;
     };
     cResult[0] = fn;
@@ -303,7 +301,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-}) : ((arg0) => {
+}) : (function PrivacyHint(arg0) {
   let consent;
   let consentRequired;
   let items;

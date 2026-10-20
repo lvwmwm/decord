@@ -1,18 +1,18 @@
-// Module ID: 15947
-// Function ID: 15948
+// Module ID: 16460
+// Function ID: 16461
 // Name: useChannelListWidth
-// Dependencies: [558, 11144, 4739, 4580, 587, 1105, 2]
+// Dependencies: [558, 10680, 4979, 4818, 587, 1105, 2]
 
-// Module 15947 (useChannelListWidth)
+// Module 16460 (useChannelListWidth)
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import useToken from "useToken" /* 4580 */;
-import useChatLayoutDefault from "useChatLayout" /* 4739 */;
-import useDrawerWidth from "useDrawerWidth" /* 11144 */;
+import useToken from "useToken" /* 4818 */;
+import useChatLayoutDefault from "useChatLayout" /* 4979 */;
+import useDrawerWidth from "useDrawerWidth" /* 10680 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelListWidth() {
   const obj = useDrawerWidth;
   const drawerWidth = obj.useDrawerWidth();
   const isChatBesideChannelList = useChatLayoutDefault().isChatBesideChannelList;
@@ -24,7 +24,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     num = token;
   }
   return diff - num;
-}) : (() => {
+}) : (function useChannelListWidth() {
   const obj = useDrawerWidth;
   const drawerWidth = obj.useDrawerWidth();
   const isChatBesideChannelList = useChatLayoutDefault().isChatBesideChannelList;

@@ -1,23 +1,22 @@
-// Module ID: 12952
-// Function ID: 12953
+// Module ID: 13421
+// Function ID: 13422
 // Name: FriendRequestNote
-// Dependencies: [32, 19, 17, 4519, 1085, 21, 4890, 587, 558, 576, 12953, 504, 12954, 4886, 5594, 6458, 1126, 2]
+// Dependencies: [32, 19, 17, 4760, 1085, 21, 5092, 587, 558, 576, 13422, 504, 13423, 5088, 5379, 6652, 1126, 2]
 
-// Module 12952 (FriendRequestNote)
+// Module 13421 (FriendRequestNote)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import PeopleListTracking from "PeopleListTracking" /* 12954 */;
+import PeopleListTracking from "PeopleListTracking" /* 13423 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let userId;
 
 let c9;
 let closure_4;
@@ -35,7 +34,7 @@ obj2 = { width: "100%", position: "relative", padding: nativeDefault.space.PX_12
 createStyles = createStyles.createStyles;
 rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.md };
 let closure_10 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendRequestNote(userId) {
   let Button;
   let analyticsLocation;
   let backgroundColor;
@@ -198,25 +197,27 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   if (note != null) {
     length1 = note.length;
   }
-  const fn2 = function x() {
-    let num;
-    react(true);
-    const obj = { analyticsLocation, noteLength: num };
-    num = undefined;
-    const trackViewFriendRequestNote = PeopleListTracking.trackViewFriendRequestNote;
-    PeopleListTracking;
-    if (note != null) {
-      num = note.length;
+  class P {
+    constructor() {
+      let num;
+      react(true);
+      const obj = { analyticsLocation, noteLength: num };
+      num = undefined;
+      const trackViewFriendRequestNote = PeopleListTracking.trackViewFriendRequestNote;
+      PeopleListTracking;
+      if (note != null) {
+        num = note.length;
+      }
+      if (num == null) {
+        num = 0;
+      }
+      const result = trackViewFriendRequestNote(obj);
     }
-    if (num == null) {
-      num = 0;
-    }
-    const result = trackViewFriendRequestNote(obj);
-  };
+  }
   cResult[4] = length1;
-  cResult[5] = fn2;
-  tmp15 = fn2;
-}) : ((styles) => {
+  cResult[5] = P;
+  tmp15 = P;
+}) : (function FriendRequestNote(styles) {
   let Button;
   let Text;
   let _undefined;
@@ -228,6 +229,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   let items3;
   let obj5;
   let obj8;
+  let require;
   let tmp7;
   ({ userId: require, backgroundColor, analyticsLocation } = styles);
   react = undefined;
@@ -239,7 +241,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   const items = [RelationshipStore];
   const obj2 = require("get initialized");
   const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => {
-    const obj = { note: RelationshipStore.getNote(require), type: RelationshipStore.getRelationshipType(require) };
+    const obj = { note: RelationshipStore.getNote(_require), type: RelationshipStore.getRelationshipType(_require) };
     return obj;
   });
   const note = stateFromStoresObject.note;

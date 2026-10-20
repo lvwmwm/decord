@@ -1,14 +1,14 @@
-// Module ID: 13383
-// Function ID: 13384
+// Module ID: 13874
+// Function ID: 13875
 // Name: useMarketablePowerupPerks
-// Dependencies: [19, 4767, 4768, 4771, 558, 576, 504, 12235, 4773, 2]
+// Dependencies: [19, 5007, 5008, 5011, 558, 576, 504, 12319, 5013, 2]
 
-// Module 13383 (useMarketablePowerupPerks)
-import Powerups from "Powerups" /* 4771 */;
-import useGameServerPerkDefault from "useGameServerPerk" /* 12235 */;
+// Module 13874 (useMarketablePowerupPerks)
+import Powerups from "Powerups" /* 5011 */;
+import useGameServerPerkDefault from "useGameServerPerk" /* 12319 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4767 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4768 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5007 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5008 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const GuildPowerupType = GuildPowerupsConstants.GuildPowerupType;
 const GUILD_TAG_BADGE_PACKS_WAVE_TWO_SKU_ID_SET = GuildPowerupsConstants.GUILD_TAG_BADGE_PACKS_WAVE_TWO_SKU_ID_SET;
 let items = [...Array.from(_module.GUILD_TAG_BADGE_PACKS_WAVE_ONE_SKU_ID_SET), ...Array.from(GUILD_TAG_BADGE_PACKS_WAVE_TWO_SKU_ID_SET), Powerups.VANITY_URL_POWERUP_SKU_ID];
 let set = new Set(items);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMarketablePowerupPerks(arg0) {
   let closure_0;
   let first;
   let tmp10;
@@ -37,7 +37,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function o() {
+    const fn = function _() {
       const stateForGuild = GuildPowerupsStore.getStateForGuild(closure_0);
       let tmp2;
       if (stateForGuild != null) {
@@ -111,7 +111,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   cResult[8] = tmp14;
   cResult[9] = items2;
   arr3 = items2;
-}) : ((arg0) => {
+}) : (function useMarketablePowerupPerks(arg0) {
   let closure_0;
   let closure_2;
   let memo;
@@ -129,7 +129,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     }
     return tmp2;
   });
-  let tmp2 = stateFromStores(12235)(arg0);
+  let tmp2 = stateFromStores(12319)(arg0);
   dependencyMap = tmp2;
   const obj2 = require("ServerThemeExperiment");
   const serverThemeRollbackEnabled = obj2.useServerThemeRollbackEnabled(arg0, "useMarketablePowerupPerks");

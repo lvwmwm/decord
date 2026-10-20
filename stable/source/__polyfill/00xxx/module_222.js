@@ -28,18 +28,18 @@ function _isNativeReflectConstruct() {
   }
 }
 class File {
-  constructor(items, filename, arg2) {
+  constructor(arg0, name, arg2) {
     let constructResult;
     const self = this;
     _classCallCheck(this, File);
-    let tmp4 = null != items;
+    let tmp4 = null != arg0;
     const tmp = File;
     const tmp3 = require("module_38");
     if (tmp4) {
-      tmp4 = null != filename;
+      tmp4 = null != name;
     }
     tmp3(tmp4, "Failed to construct `File`: Must pass both `parts` and `name` arguments.");
-    items = [items, arg2];
+    const items = [arg0, arg2];
     const obj = _getPrototypeOf(tmp);
     const tmp6 = _getPrototypeOf;
     const tmp7 = c3;
@@ -50,7 +50,7 @@ class File {
       constructResult = obj.apply(self, items);
     }
     const tmp7Result = tmp7(self, constructResult);
-    tmp7Result.data.name = filename;
+    tmp7Result.data.name = name;
     return tmp7Result;
   }
 }

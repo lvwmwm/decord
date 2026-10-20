@@ -1,34 +1,41 @@
-// Module ID: 17002
-// Function ID: 17003
+// Module ID: 17590
+// Function ID: 17591
 // Name: ViewModerators
-// Dependencies: [5, 19, 2112, 2106, 2074, 1085, 8077, 21, 1252, 4854, 17003, 1987, 558, 576, 1490, 504, 5572, 9215, 2060, 1985, 5708, 1126, 4903, 9216, 4567, 1188, 9231, 5593, 6074, 5993, 10983, 2]
+// Dependencies: [5, 19, 2125, 2119, 2087, 1085, 7485, 21, 1265, 5056, 17591, 2000, 558, 576, 1503, 504, 5893, 8598, 2073, 1998, 5300, 1126, 7015, 8599, 4808, 1200, 8616, 5377, 6265, 6180, 10611, 2]
 // Exports: openAddModeratorsActionSheet
 
-// Module 17002 (ViewModerators)
+// Module 17590 (ViewModerators)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8077 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9231 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7485 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8616 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c1, c2, navigation;
+let c1, c2, dependencyMap, navigation;
 
 let c10;
 let unpackModuleId;
 const AnalyticEvents = Constants.AnalyticEvents;
 const RowType = ChannelPermissionsConstants.RowType;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewModerators(channel) {
+  let TableRow;
   let guild;
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let items2;
+  let obj6;
   let onRemove;
   let sortedGuildRoles;
   let tmp10;
@@ -40,7 +47,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let obj = channel(576);
   const cResult = obj.c(21);
   channel = channel.channel;
-  let obj2 = channel(1490);
+  let obj2 = channel(1503);
   navigation = obj2.useNavigation();
   let obj3 = {
     headerRight() {
@@ -67,60 +74,257 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp7 = cResult[2];
   }
   if (cResult[3] !== tmp5) {
-    class S {
-      constructor() {
-        let sortedRoles;
-        const obj = { guild: GuildStore.getGuild(closure_1), sortedGuildRoles: sortedRoles };
-        sortedRoles = undefined;
-        const tmp = closure_1;
-        if (null != closure_1) {
-          sortedRoles = GuildRoleStore.getSortedRoles(tmp);
-        }
-        return obj;
+    const fn = function w() {
+      let sortedRoles;
+      const obj = { guild: GuildStore.getGuild(closure_1), sortedGuildRoles: sortedRoles };
+      sortedRoles = undefined;
+      const tmp = closure_1;
+      if (null != closure_1) {
+        sortedRoles = GuildRoleStore.getSortedRoles(tmp);
       }
-    }
+      return obj;
+    };
     const items1 = [tmp5];
     cResult[3] = tmp5;
-    cResult[4] = S;
+    cResult[4] = fn;
     cResult[5] = items1;
     tmp11 = items1;
-    tmp10 = S;
+    tmp10 = fn;
   } else {
-    class S {
-      constructor() {
-        let sortedRoles;
-        const obj = { guild: GuildStore.getGuild(closure_1), sortedGuildRoles: sortedRoles };
-        sortedRoles = undefined;
-        const tmp = closure_1;
-        if (null != closure_1) {
-          sortedRoles = GuildRoleStore.getSortedRoles(tmp);
-        }
-        return obj;
-      }
-    }
+    tmp10 = cResult[4];
     tmp11 = cResult[5];
   }
   const tmpResult = tmp(504);
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp7, tmp10, tmp11);
   ({ guild, sortedGuildRoles } = stateFromStoresObject);
-  const tmpResult2 = tmp(5572);
+  const tmpResult2 = tmp(5893);
   const canUpdateStageChannelModerators = tmpResult2.useCanUpdateStageChannelModerators(channel.id);
   if (null != guild) {
-    class S {
-      constructor() {
-        let sortedRoles;
-        const obj = { guild: GuildStore.getGuild(closure_1), sortedGuildRoles: sortedRoles };
-        sortedRoles = undefined;
-        const tmp = closure_1;
-        if (null != closure_1) {
-          sortedRoles = GuildRoleStore.getSortedRoles(tmp);
-        }
-        return obj;
+    if (null != sortedGuildRoles) {
+      let tmp14;
+      let tmp29;
+      let tmp16;
+      if (cResult[6] !== channel) {
+        const isGuildStageVoiceResult = channel.isGuildStageVoice();
+        cResult[6] = channel;
+        cResult[7] = isGuildStageVoiceResult;
+        tmp14 = isGuildStageVoiceResult;
+      } else {
+        tmp14 = cResult[7];
       }
+      if (cResult[8] === canUpdateStageChannelModerators) {
+        if (cResult[9] === channel) {
+          if (cResult[10] === guild) {
+            if (cResult[11] === tmp14) {
+              if (cResult[12] === sortedGuildRoles) {
+                tmp16 = cResult[13];
+              }
+              return tmp16;
+            }
+          }
+        }
+      }
+      let id;
+      const getMemberIds = GuildMemberStore.getMemberIds;
+      if (guild != null) {
+        id = guild.id;
+      }
+      const memberIds = getMemberIds(id);
+      let obj7 = canUpdateStageChannelModerators(8598);
+      const existingMembersRows = obj7.getExistingMembersRows(memberIds, channel, guild, tmp(2073).MODERATE_STAGE_CHANNEL_PERMISSIONS);
+      let obj8 = canUpdateStageChannelModerators(8598);
+      const existingRolesRowWithPermissionDisabled = obj8.getExistingRolesRowWithPermissionDisabled(guild, sortedGuildRoles, channel, tmp(2073).MODERATE_STAGE_CHANNEL_PERMISSIONS);
+      if (cResult[14] !== channel) {
+        function handleRemovePermission(id) {
+          let MEMBER;
+          let intl;
+          let intl2;
+          let intl3;
+          let intl4;
+          let obj2;
+          let closure_0 = id;
+          const tmp = channel;
+          const tmp3 = channel(onRemove[16]);
+          const removeModeratorOverwrite = tmp3.removeModeratorOverwrite;
+          id = id.id;
+          if (id.rowType === constants.ROLE) {
+            MEMBER = tmp(tmp2[19]).PermissionOverwriteType.ROLE;
+          } else {
+            MEMBER = tmp(tmp2[19]).PermissionOverwriteType.MEMBER;
+          }
+          id = removeModeratorOverwrite(id, MEMBER, closure_0);
+          const tmp4 = closure_1(tmp2[20]);
+          let obj = {
+            title: intl.string(tmp(tmp2[21]).t.GuPYQB),
+            body: intl2.format(tmp(tmp2[21]).t.xERCnZ, obj2),
+            cancelText: intl3.string(tmp(tmp2[21]).t["ETE/oC"]),
+            confirmText: intl4.string(tmp(tmp2[21]).t.fKxYb0),
+            onConfirm() {
+              return closure_1(...arguments);
+            },
+            hideActionSheet: false,
+            confirmColor: tmp(tmp2[25]).ButtonColors.RED
+          };
+          const show = tmp4.show;
+          intl = tmp(tmp2[21]).intl;
+          intl2 = tmp(tmp2[21]).intl;
+          obj2 = { name: id.name };
+          intl3 = tmp(tmp2[21]).intl;
+          intl4 = tmp(tmp2[21]).intl;
+          closure_1 = closure_4(function*(arg0, value) {
+            let closure_0;
+            let obj5;
+            let obj7;
+            if (c2 === 2) {
+              c2 = 3;
+              throw new TypeError("Generator functions may not be called on executing generators");
+            } else if (tmp3 === 3) {
+              if (arg0 === 1) {
+                throw value;
+              } else if (arg0 === 2) {
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                return { value: "IconComponent", done: null };
+              }
+            } else {
+              try {
+                c2 = 2;
+                if (0 === c1) {
+                  if (arg0 === 1) {
+                    c2 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c2 = 3;
+                    const obj6 = { value, done: true };
+                    return obj6;
+                  } else {
+                    const obj11 = tmp(onRemove[16]);
+                    if (obj11.isEmptyOverwrite(id)) {
+                      c1 = 2;
+                      c2 = 1;
+                      const obj8 = { value: obj7.clearPermissionOverwrite(tmp.id, id.id), done: false };
+                      obj7 = v1(onRemove[22]);
+                      return obj8;
+                    } else {
+                      const items = [id];
+                      c1 = 1;
+                      c2 = 1;
+                      const obj9 = { value: obj5.savePermissionUpdates(tmp.id, items), done: false };
+                      obj5 = tmp(onRemove[23]);
+                      return obj9;
+                    }
+                  }
+                } else {
+                  if (1 === tmp4) {
+                    if (arg0 === 1) {
+                      c2 = 3;
+                      throw value;
+                    } else if (arg0 === 2) {
+                      c2 = 3;
+                      const obj10 = { value, done: true };
+                      return obj10;
+                    }
+                  } else if (arg0 === 1) {
+                    c2 = 3;
+                    throw value;
+                  } else if (arg0 === 2) {
+                    c2 = 3;
+                    const obj = { value, done: true };
+                    return obj;
+                  }
+                  const obj2 = tmp(onRemove[24]);
+                  const result = obj2.memberOrRoleRemovedToast(closure_128_0.name);
+                  const obj3 = v1(onRemove[9]);
+                  obj3.hideActionSheet();
+                  c2 = 3;
+                  return { value: "IconComponent", done: null };
+                }
+              } catch (tmp19) {
+                c2 = 3;
+                throw tmp19;
+              }
+            }
+          });
+          show(obj);
+        }
+        cResult[14] = channel;
+        cResult[15] = handleRemovePermission;
+        tmp29 = handleRemovePermission;
+      } else {
+        tmp29 = cResult[15];
+      }
+      dependencyMap = tmp29;
+      if (cResult[16] === canUpdateStageChannelModerators) {
+        if (cResult[17] === channel.guild_id) {
+          if (cResult[18] === channel.id) {
+            let tmp30;
+            if (cResult[19] === tmp29) {
+              tmp30 = cResult[20];
+            }
+            let closure_4 = tmp30;
+            let tmp31 = tmp14;
+            if (tmp31) {
+              let obj4 = { style: { paddingHorizontal: 16 }, spacing: 16, children: items2 };
+              const Stack = tmp(5377).Stack;
+              let obj5 = { title: intl.string(tmp(1126).t.f7VbhF), hasIcons: true, children: closure_10(TableRow, obj6) };
+              const TableRowGroup = tmp(6265).TableRowGroup;
+              intl = tmp(1126).intl;
+              obj6 = {
+                icon: closure_10(tmp(10611).CirclePlusIcon, {}),
+                label: intl2.string(tmp(1126).t.n3bcy8),
+                onPress() {
+                              if (null != channel) {
+                                const obj = AnalyticsUtilsDefault;
+                                obj.track(AnalyticEvents.OPEN_POPOUT, { type: "Grant Channel Access" });
+                                const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+                                const _HermesInternal = HermesInternal;
+                                ActionSheetActionCreatorsDefault;
+                                const obj2 = { channel, canSkip: false };
+                                const tmp8 = asyncRequire(17591, dependencyMap.paths);
+                                openLazy(tmp8, "channel-add-moderators-" + channel.id, obj2);
+                              }
+                            },
+                disabled: !canUpdateStageChannelModerators,
+                arrow: true
+              };
+              TableRow = tmp(6180).TableRow;
+              intl2 = tmp(1126).intl;
+              items2 = [closure_10(TableRowGroup, obj5), , ];
+              let obj9 = { title: intl3.string(tmp(1126).t.ghdVJL), hasIcons: true, children: existingRolesRowWithPermissionDisabled.map((item) => closure_4(item)) };
+              const TableRowGroup2 = tmp(6265).TableRowGroup;
+              intl3 = tmp(1126).intl;
+              items2[1] = closure_10(TableRowGroup2, obj9);
+              let obj10 = { title: intl4.string(tmp(1126).t.ghdVJL), hasIcons: true, children: existingMembersRows.map((item) => closure_4(item)) };
+              const TableRowGroup3 = tmp(6265).TableRowGroup;
+              intl4 = tmp(1126).intl;
+              items2[2] = closure_10(TableRowGroup3, obj10);
+              tmp31 = closure_11(Stack, obj4);
+            }
+            cResult[8] = canUpdateStageChannelModerators;
+            cResult[9] = channel;
+            cResult[10] = guild;
+            cResult[11] = tmp14;
+            cResult[12] = sortedGuildRoles;
+            cResult[13] = tmp31;
+            tmp16 = tmp31;
+          }
+        }
+      }
+      function renderRowItem(item) {
+        const obj = { guildId: channel.guild_id, item, channelId: channel.id, showType: true, showRemove: canUpdateStageChannelModerators, onRemove };
+        return authStore(ChannelOverwritesItemDefault, obj, item.id);
+      }
+      cResult[16] = canUpdateStageChannelModerators;
+      cResult[17] = channel.guild_id;
+      cResult[18] = channel.id;
+      cResult[19] = tmp29;
+      cResult[20] = renderRowItem;
+      tmp30 = renderRowItem;
     }
   }
   return null;
-}) : ((channel) => {
+}) : (function ViewModerators(channel) {
   let TableRow;
   let guild;
   let intl;
@@ -155,7 +359,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       body: intl2.format(tmp(tmp2[21]).t.xERCnZ, obj2),
       cancelText: intl3.string(tmp(tmp2[21]).t["ETE/oC"]),
       confirmText: intl4.string(tmp(tmp2[21]).t.fKxYb0),
-      onConfirm: function() {
+      onConfirm() {
         return closure_1(...arguments);
       },
       hideActionSheet: false,
@@ -302,7 +506,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
                     const _HermesInternal = HermesInternal;
                     ActionSheetActionCreatorsDefault;
                     const obj2 = { channel, canSkip: false };
-                    const tmp8 = asyncRequire(17003, dependencyMap.paths);
+                    const tmp8 = asyncRequire(17591, dependencyMap.paths);
                     openLazy(tmp8, "channel-add-moderators-" + channel.id, obj2);
                   }
                 },
@@ -351,7 +555,7 @@ function openAddModeratorsActionSheet(channel) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj2 = { channel, canSkip: flag };
-  const tmp3 = asyncRequire(17003, dependencyMap.paths);
+  const tmp3 = asyncRequire(17591, dependencyMap.paths);
   openLazy(tmp3, "channel-add-moderators-" + channel.id, obj2);
 }
 let result = size.fileFinishedImporting("modules/stage_channels/native/channel_permissions/ViewModerators.tsx");

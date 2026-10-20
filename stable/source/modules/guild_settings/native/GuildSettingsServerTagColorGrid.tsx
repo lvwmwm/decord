@@ -1,19 +1,17 @@
-// Module ID: 17765
-// Function ID: 17766
+// Module ID: 18394
+// Function ID: 18395
 // Name: GuildSettingsServerTagColorGrid
-// Dependencies: [19, 17, 7603, 21, 587, 4890, 558, 576, 1126, 4886, 17763, 17766, 13728, 14778, 15172, 5593, 2]
+// Dependencies: [19, 17, 7883, 21, 587, 5092, 558, 576, 1126, 5088, 18392, 18395, 14148, 15257, 15652, 5377, 2]
 
-// Module 17765 (GuildSettingsServerTagColorGrid)
+// Module 18394 (GuildSettingsServerTagColorGrid)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import GuildTagConstants from "GuildTagConstants" /* 7603 */;
+import GuildTagConstants from "GuildTagConstants" /* 7883 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let badge;
 
 let closure_4;
 let hasOwnProperty;
@@ -28,7 +26,7 @@ const PX_8 = nativeDefault.space.PX_8;
 let obj = { grid: { flexDirection: "row", flexWrap: "wrap", gap: PX_8 }, defaultIcon: rect };
 rect = { position: "absolute", right: nativeDefault.space.PX_4, bottom: nativeDefault.space.PX_4 };
 let closure_9 = createStyles.createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsServerTagColorGrid(badge) {
   let cellSize;
   let intl2;
   let items;
@@ -288,7 +286,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((badge) => {
   cResult[2] = primaryColor;
   cResult[3] = secondaryColor;
   cResult[4] = everyResult;
-}) : ((badge) => {
+}) : (function GuildSettingsServerTagColorGrid(badge) {
   let EyeDropperIcon;
   let cellSize;
   let formatToPlainStringResult;

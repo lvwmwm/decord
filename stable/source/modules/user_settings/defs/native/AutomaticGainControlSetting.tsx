@@ -1,22 +1,22 @@
-// Module ID: 15077
-// Function ID: 15078
+// Module ID: 15557
+// Function ID: 15558
 // Name: AutomaticGainControlSetting
-// Dependencies: [1999, 7634, 558, 576, 504, 1126, 11129, 9673, 2]
+// Dependencies: [2012, 7988, 558, 576, 504, 1126, 10664, 11090, 2]
 
-// Module 15077 (AutomaticGainControlSetting)
+// Module 15557 (AutomaticGainControlSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 9673 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 11090 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutomaticGainControlSettingValue() {
   let automaticGainControl;
   let tmp4;
   let tmp5;
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useAutomaticGainControlSettingValue() {
   let automaticGainControl;
   const items = [MediaEngineStore];
   const obj = get_initialized;

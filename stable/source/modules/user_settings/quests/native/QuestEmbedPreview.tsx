@@ -1,27 +1,27 @@
-// Module ID: 14976
-// Function ID: 14977
+// Module ID: 15456
+// Function ID: 15457
 // Name: QuestEmbedPreview
-// Dependencies: [19, 4520, 1377, 1085, 21, 558, 576, 7591, 504, 4875, 10010, 1126, 14975, 8303, 2]
+// Dependencies: [19, 4761, 1390, 1085, 21, 558, 576, 7742, 504, 5077, 9188, 1126, 15455, 9369, 2]
 
-// Module 14976 (QuestEmbedPreview)
+// Module 15456 (QuestEmbedPreview)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import CodedLink from "CodedLink" /* 4875 */;
-import RowGeneratorDefault from "RowGenerator" /* 7591 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 10010 */;
-import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 14975 */;
+import CodedLink from "CodedLink" /* 5077 */;
+import RowGeneratorDefault from "RowGenerator" /* 7742 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9188 */;
+import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 15455 */;
 import react from "react" /* 19 */;
-import MessageRecord from "MessageRecord" /* 4520 */;
-import UserStore from "UserStore" /* 1377 */;
+import MessageRecord from "MessageRecord" /* 4761 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const MessageTypes = Constants.MessageTypes;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(questId) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestEmbedPreview(questId) {
   let currentUser;
   let date;
   let items1;
@@ -109,7 +109,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(questId) {
     tmp21 = tmp24;
   }
   return tmp21;
-}) : ((questId) => {
+}) : (function QuestEmbedPreview(questId) {
   let currentUser;
   questId = questId.questId;
   let tmp2 = questId;
@@ -148,7 +148,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(questId) {
   }, items1);
   let tmp6 = null;
   if (null != memo1) {
-    stateFromStores(14975);
+    stateFromStores(15455);
     const intl = tmp2(1126).intl;
     let obj3 = { rowGenerator: memo, message: memo1, horizontalOffset: 0, pointerEvents: "none" };
     tmp6 = <tmp9 title={intl.string(tmp2(1126).t["habP/M"])}>{null}</tmp9>;

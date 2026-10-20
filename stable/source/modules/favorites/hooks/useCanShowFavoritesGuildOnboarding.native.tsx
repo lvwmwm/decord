@@ -1,18 +1,18 @@
-// Module ID: 10049
-// Function ID: 10050
+// Module ID: 10329
+// Function ID: 10330
 // Name: useCanShowFavoritesGuildOnboarding
-// Dependencies: [4561, 2103, 558, 576, 504, 4736, 2]
+// Dependencies: [4802, 2116, 558, 576, 504, 4976, 2]
 
-// Module 10049 (useCanShowFavoritesGuildOnboarding)
+// Module 10329 (useCanShowFavoritesGuildOnboarding)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
-import ActionSheetStore from "ActionSheetStore" /* 4561 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
+import ActionSheetStore from "ActionSheetStore" /* 4802 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanShowFavoritesGuildOnboarding() {
   let open;
   let tmp4;
   let tmp5;
@@ -60,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp13 = !isModalOpen;
   }
   return tmp13;
-}) : (() => {
+}) : (function useCanShowFavoritesGuildOnboarding() {
   let open;
   let voiceChannelId;
   const items = [SelectedChannelStore];

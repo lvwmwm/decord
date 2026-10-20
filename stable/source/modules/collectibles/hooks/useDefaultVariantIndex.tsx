@@ -1,17 +1,17 @@
-// Module ID: 8419
-// Function ID: 8420
+// Module ID: 8964
+// Function ID: 8965
 // Name: useDefaultVariantIndex
-// Dependencies: [7068, 558, 576, 504, 7064, 2]
+// Dependencies: [7275, 558, 576, 504, 7270, 2]
 
-// Module 8419 (useDefaultVariantIndex)
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7068 */;
+// Module 8964 (useDefaultVariantIndex)
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7275 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, variants;
+let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((variants) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultVariantIndex(variants) {
   let purchases;
   let stateFromStores;
   let tmp4;
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((variants) => {
   const tmpResult = stateFromStores(504);
   stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (null != variants) {
-    const tmpResult2 = stateFromStores(7064);
+    const tmpResult2 = stateFromStores(7270);
     if (tmpResult2.getIsVariantProduct(variants)) {
       let tmp9;
       if (cResult[2] === variants.variants) {
@@ -63,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((variants) => {
     }
   }
   return 0;
-}) : ((variants) => {
+}) : (function useDefaultVariantIndex(variants) {
   let purchases;
   const items = [CollectiblesPurchaseStore];
   const obj = require("get initialized");
@@ -72,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((variants) => {
   let num = 0;
   if (null != variants) {
     num = 0;
-    const tmpResult = tmp(7064);
+    const tmpResult = tmp(7270);
     if (tmpResult.getIsVariantProduct(variants)) {
       const _Math = Math;
       variants = variants.variants;

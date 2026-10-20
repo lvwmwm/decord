@@ -1,16 +1,16 @@
-// Module ID: 14685
-// Function ID: 14686
+// Module ID: 15161
+// Function ID: 15162
 // Name: useRefreshLinkCodeOnExpiry
-// Dependencies: [19, 558, 576, 6452, 2]
+// Dependencies: [19, 558, 576, 6646, 2]
 
-// Module 14685 (useRefreshLinkCodeOnExpiry)
+// Module 15161 (useRefreshLinkCodeOnExpiry)
 import react2 from "react" /* 576 */;
-import useStableCallbackDefault from "useStableCallback" /* 6452 */;
+import useStableCallbackDefault from "useStableCallback" /* 6646 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefreshLinkCodeOnExpiry(arg0, arg1) {
   let closure_0 = arg0;
   const obj = react2;
   const cResult = obj.c(4);
@@ -46,7 +46,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[3] = items;
   tmp4 = items;
   tmp3 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useRefreshLinkCodeOnExpiry(arg0, arg1) {
   let closure_0 = arg0;
   const tmp = useStableCallbackDefault(arg1);
   let closure_1 = tmp;

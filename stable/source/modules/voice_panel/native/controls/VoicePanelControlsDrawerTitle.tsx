@@ -1,21 +1,21 @@
-// Module ID: 11910
-// Function ID: 11911
+// Module ID: 11982
+// Function ID: 11983
 // Name: VoicePanelControlsDrawerTitle
-// Dependencies: [19, 17, 11900, 21, 4890, 587, 558, 576, 4612, 11911, 4886, 6570, 5976, 2]
+// Dependencies: [19, 17, 11972, 21, 5092, 587, 558, 576, 4850, 11983, 5088, 6762, 6162, 2]
 
-// Module 11910 (VoicePanelControlsDrawerTitle)
+// Module 11982 (VoicePanelControlsDrawerTitle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import NativeViewDefault from "NativeView" /* 5976 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6570 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11900 */;
-import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 11911 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import NativeViewDefault from "NativeView" /* 6162 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6762 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11972 */;
+import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 11983 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_6 = createStyles(obj);
 const __initData = { code: "function VoicePanelControlsDrawerTitleTsx1(){const{shown,_shown,disablePill,backgroundColor}=this.__closure;const showBGColor=shown!=null?shown.get():_shown.get();return{backgroundColor:showBGColor&&!disablePill?backgroundColor:\"transparent\"};}" };
 const __initData2 = { code: "function VoicePanelControlsDrawerTitleTsx2(){const{shown,_shown,disablePill,backgroundColor}=this.__closure;const showBGColor=shown!=null?shown.get():_shown.get();return{backgroundColor:showBGColor&&!disablePill?backgroundColor:'transparent'};}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelControlsDrawerTitle(arg0) {
   let blurStyle;
   let disablePill;
   let items;
@@ -145,7 +145,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[1] = tmp5.titleWrapper;
   cResult[2] = items2;
   tmp8 = items2;
-}) : ((shown) => {
+}) : (function VoicePanelControlsDrawerTitle(shown) {
   let blurStyle;
   let items;
   let items1;
@@ -162,7 +162,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let obj = ReanimatedRexport;
   const sharedValue = obj.useSharedValue(true);
   let backgroundColor = tmp.titlePillBG.backgroundColor;
-  const fn = function p() {
+  const fn = function w() {
     let value;
     const obj = shown;
     if (null != shown) {

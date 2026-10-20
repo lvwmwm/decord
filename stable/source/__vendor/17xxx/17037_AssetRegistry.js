@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/forum_channels", width: 343, height: 236, scales: [1], hash: "6e9bbbae1088530d5ab3c52a383f127c", name: "channel_settings_list_view_example_post", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_onboarding_home/images", width: 223, height: 145.5, scales: [2, 3], hash: "fa8d8980f41bbcb7aeb9d5dc519482cb", name: "mobile-empty-state", type: "png" });

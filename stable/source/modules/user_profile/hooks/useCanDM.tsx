@@ -1,23 +1,23 @@
-// Module ID: 12796
-// Function ID: 12797
+// Module ID: 13099
+// Function ID: 13100
 // Name: useCanDM
-// Dependencies: [7142, 4510, 502, 2112, 4519, 2028, 558, 576, 504, 2]
+// Dependencies: [7342, 4751, 502, 2125, 4760, 2041, 558, 576, 504, 2]
 // Exports: canDm
 
-// Module 12796 (useCanDM)
-import UserSettings from "UserSettings" /* 2028 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7142 */;
-import LurkingStore from "LurkingStore" /* 4510 */;
+// Module 13099 (useCanDM)
+import UserSettings from "UserSettings" /* 2041 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7342 */;
+import LurkingStore from "LurkingStore" /* 4751 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, closure_3, closure_4, dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanDM(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -73,49 +73,44 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     }
   }
   if (cResult[4] !== arg1) {
-    class I {
+    class F {
       constructor() {
-        const isLurkingResult = null != closure_1 && LurkingStore.isLurking(tmp);
-        return isLurkingResult;
+        return AuthenticationStore.getId() === closure_0;
       }
     }
     cResult[4] = arg1;
-    cResult[5] = I;
-    tmp9 = I;
+    cResult[5] = tmp10;
+    tmp9 = tmp10;
   } else {
-    class I {
+    class F {
       constructor() {
-        const isLurkingResult = null != closure_1 && LurkingStore.isLurking(tmp);
-        return isLurkingResult;
+        return AuthenticationStore.getId() === closure_0;
       }
     }
   }
   const tmpResult2 = tmp(504);
   stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
-  const RestrictedGuildIds = tmp(2028).RestrictedGuildIds;
+  const RestrictedGuildIds = tmp(2041).RestrictedGuildIds;
   setting = RestrictedGuildIds.useSetting();
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
+    class F {
       constructor() {
-        const isLurkingResult = null != closure_1 && LurkingStore.isLurking(tmp);
-        return isLurkingResult;
+        return AuthenticationStore.getId() === closure_0;
       }
     }
     const items2 = [RelationshipStore, GuildMemberStore, stateFromStores];
     cResult[6] = items2;
   } else {
-    class I {
+    class F {
       constructor() {
-        const isLurkingResult = null != closure_1 && LurkingStore.isLurking(tmp);
-        return isLurkingResult;
+        return AuthenticationStore.getId() === closure_0;
       }
     }
   }
   if (cResult[7] === stateFromStores1) {
-    class I {
+    class F {
       constructor() {
-        const isLurkingResult = null != closure_1 && LurkingStore.isLurking(tmp);
-        return isLurkingResult;
+        return AuthenticationStore.getId() === closure_0;
       }
     }
   }
@@ -145,7 +140,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[9] = setting;
   cResult[10] = arg0;
   cResult[11] = fn;
-}) : ((arg0, arg1) => {
+}) : (function useCanDM(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;

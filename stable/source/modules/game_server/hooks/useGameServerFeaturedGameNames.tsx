@@ -1,19 +1,19 @@
-// Module ID: 12236
-// Function ID: 12237
+// Module ID: 12320
+// Function ID: 12321
 // Name: useGameServerFeaturedGameNames
-// Dependencies: [4769, 558, 576, 6812, 2]
+// Dependencies: [5009, 558, 576, 7009, 2]
 
-// Module 12236 (useGameServerFeaturedGameNames)
+// Module 12320 (useGameServerFeaturedGameNames)
 import react from "react" /* 576 */;
-import useGame from "useGame" /* 6812 */;
-import GameServerConstants from "GameServerConstants" /* 4769 */;
+import useGame from "useGame" /* 7009 */;
+import GameServerConstants from "GameServerConstants" /* 5009 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 let c3;
 ({ MINECRAFT_GAME_ID: c2, HYTALE_GAME_ID: c3 } = GameServerConstants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameServerFeaturedGameNames() {
   const obj = react;
   const cResult = obj.c(3);
   const obj2 = useGame;
@@ -46,7 +46,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = str2;
   cResult[2] = obj4;
   tmp2 = obj4;
-}) : (() => {
+}) : (function useGameServerFeaturedGameNames() {
   let str2;
   const obj = useGame;
   const data = obj.useGame(React2).data;

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "89f7dd41fa8b5bbc58e4a48619a1a1a9", name: "XLargeBoldIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/wumpus", width: 84, height: 66, scales: [1], hash: "18d0a2a6cf6cc6fa0358c3bbfd2bce6e", name: "wumpus-mario", type: "png" });

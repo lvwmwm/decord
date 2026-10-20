@@ -1,11 +1,11 @@
-// Module ID: 15007
-// Function ID: 15008
+// Module ID: 15487
+// Function ID: 15488
 // Name: BountiesAndroidQuestBarSmokeAnimationExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 
-// Module 15007 (BountiesAndroidQuestBarSmokeAnimationExperiment)
+// Module 15487 (BountiesAndroidQuestBarSmokeAnimationExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let obj = { name: "2026-09-bounties-android-quest-bar-smoke-animation", kind: "u
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsBountiesAndroidQuestBarSmokeAnimationEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -27,7 +27,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return apexExperiment.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useIsBountiesAndroidQuestBarSmokeAnimationEnabled(location) {
   const obj = { location };
   return apexExperiment.useConfig(obj).enabled;
 });

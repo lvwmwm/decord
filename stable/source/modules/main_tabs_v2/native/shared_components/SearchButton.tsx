@@ -1,23 +1,21 @@
-// Module ID: 12007
-// Function ID: 12008
+// Module ID: 12080
+// Function ID: 12081
 // Name: SearchButton
-// Dependencies: [109, 19, 17, 21, 4890, 587, 558, 576, 6548, 1126, 4886, 2]
+// Dependencies: [109, 19, 17, 21, 5092, 587, 558, 576, 6740, 1126, 5088, 2]
 
-// Module 12007 (SearchButton)
+// Module 12080 (SearchButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6548 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6740 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let panelVariant;
 
 let hasOwnProperty;
 let metroRequire;
@@ -32,7 +30,7 @@ obj2 = { backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, height:
 createStyles = createStyles.createStyles;
 obj3 = { borderRadius: nativeDefault.radii.round };
 let closure_7 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((panelVariant) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchButtonContent(panelVariant) {
   let items;
   let tmp4;
   let tmp5;
@@ -114,7 +112,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((panelVariant) => {
   cResult[5] = tmp10;
   cResult[6] = items1;
   tmp11 = items1;
-}) : ((panelVariant) => {
+}) : (function SearchButtonContent(panelVariant) {
   let intl;
   let items;
   let items1;

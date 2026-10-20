@@ -1,19 +1,19 @@
-// Module ID: 8531
-// Function ID: 8532
+// Module ID: 9079
+// Function ID: 9080
 // Name: useProductDisableState
-// Dependencies: [4534, 558, 576, 504, 1088, 1126, 2]
+// Dependencies: [4775, 558, 576, 504, 1088, 1126, 2]
 
-// Module 8531 (useProductDisableState)
+// Module 9079 (useProductDisableState)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1088 */;
-import SubscriptionStore from "SubscriptionStore" /* 4534 */;
+import SubscriptionStore from "SubscriptionStore" /* 4775 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let premiumSubscription;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProductDisableState(arg0) {
   let tmp4;
   let tmp5;
   let tmp8;
@@ -76,7 +76,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp8;
-}) : ((arg0) => {
+}) : (function useProductDisableState(arg0) {
   let obj3;
   let stringResult;
   const items = [SubscriptionStore];

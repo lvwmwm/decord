@@ -1,25 +1,25 @@
-// Module ID: 8484
-// Function ID: 8485
+// Module ID: 9027
+// Function ID: 9028
 // Name: CollectiblesShopVariantsUIStore
-// Dependencies: [1254, 4492, 558, 576, 8419, 7064, 2]
+// Dependencies: [1267, 4733, 558, 576, 8964, 7270, 2]
 // Exports: setSelectedVariantIndex
 
-// Module 8484 (CollectiblesShopVariantsUIStore)
-import _slicedToArray from "_slicedToArray" /* 4492 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7064 */;
-import module_1254 from "module_1254" /* 1254 */;
+// Module 9027 (CollectiblesShopVariantsUIStore)
+import _slicedToArray from "_slicedToArray" /* 4733 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7270 */;
+import module_1267 from "module_1267" /* 1267 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, map;
 
-const state = module_1254.createWithEqualityFn(() => {
+const state = module_1267.createWithEqualityFn(() => {
   const obj = { selectionStates: new Map() };
   new Map();
   return obj;
 }, _slicedToArray.shallow);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedVariantIndex(arg0) {
   let closure_0;
   let tmp3;
   _require = arg0;
@@ -57,7 +57,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     defaultVariantIndex = Math.max(0, tmp4);
   }
   return defaultVariantIndex;
-}) : ((arg0) => {
+}) : (function useSelectedVariantIndex(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("useDefaultVariantIndex");

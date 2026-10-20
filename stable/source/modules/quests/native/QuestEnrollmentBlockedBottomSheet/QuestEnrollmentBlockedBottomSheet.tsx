@@ -1,20 +1,20 @@
-// Module ID: 14970
-// Function ID: 14971
+// Module ID: 15450
+// Function ID: 15451
 // Name: QuestEnrollmentBlockedBottomSheet
-// Dependencies: [19, 17, 7187, 21, 4890, 587, 558, 576, 504, 10958, 5626, 6948, 4886, 1126, 6645, 2]
+// Dependencies: [19, 17, 7386, 21, 5092, 587, 558, 576, 504, 12988, 5975, 7162, 5088, 1126, 6840, 2]
 
-// Module 14970 (QuestEnrollmentBlockedBottomSheet)
+// Module 15450 (QuestEnrollmentBlockedBottomSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
-import useCountdownDefault from "useCountdown" /* 6948 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
+import useCountdownDefault from "useCountdown" /* 7162 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7187 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import QuestStore from "QuestStore" /* 7386 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ createStyles = createStyles.createStyles;
 obj3 = { display: "flex", justifyContent: "center", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_32 };
 let closure_6 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestEnrollmentBlockedBottomSheetConnected(questId) {
   let first;
   let questContentPosition;
   let sourceQuestContent;
@@ -68,7 +68,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
         if (cResult[5] === sourceQuestContent) {
           tmp8 = cResult[6];
         }
-        class C {
+        class B {
           constructor() {
             return <closure_7 questId={questId} questEnrollmentBlockedUntil={questEnrollmentBlockedUntil} sourceQuestContent={sourceQuestContent} />;
           }
@@ -82,7 +82,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
         cResult[11] = tmp11;
       }
     }
-    class C {
+    class B {
       constructor() {
         return <closure_7 questId={questId} questEnrollmentBlockedUntil={questEnrollmentBlockedUntil} sourceQuestContent={sourceQuestContent} />;
       }
@@ -90,11 +90,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
     cResult[3] = questEnrollmentBlockedUntil;
     cResult[4] = questId;
     cResult[5] = sourceQuestContent;
-    cResult[6] = C;
-    tmp8 = C;
+    cResult[6] = B;
+    tmp8 = B;
   }
   return null;
-}) : ((questContentPosition) => {
+}) : (function QuestEnrollmentBlockedBottomSheetConnected(questContentPosition) {
   let questEnrollmentBlockedUntil;
   let questId;
   let sourceQuestContent;
@@ -113,7 +113,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
   return tmp4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(questEnrollmentBlockedUntil) {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestEnrollmentBlockedBottomSheet(questEnrollmentBlockedUntil) {
   let minutes;
   let seconds;
   let tmp10;
@@ -177,7 +177,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(questEn
     let tmp26;
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const Text = tmp(4886).Text;
+      const Text = tmp(5088).Text;
       const intl = tmp(1126).intl;
       const tmp19 = <Text variant="heading-xl/bold">{intl.string(intl3.t["XEHDT/"])}</Text>;
       cResult[8] = tmp19;
@@ -236,7 +236,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function(questEn
     cResult[17] = tmp32;
     tmp29 = tmp32;
   }
-}) : (function(questEnrollmentBlockedUntil) {
+}) : (function QuestEnrollmentBlockedBottomSheet(questEnrollmentBlockedUntil) {
   let formatToPlainString;
   let intl;
   let minutes;

@@ -1,16 +1,16 @@
-// Module ID: 12135
-// Function ID: 12136
+// Module ID: 12219
+// Function ID: 12220
 // Name: ProgressItem
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 5070, 8895, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5107, 8575, 2]
 
-// Module 12135 (ProgressItem)
+// Module 12219 (ProgressItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ const jsx = Fragment.jsx;
 let obj = { formCTAContainer: { marginBottom: 8 }, formCTA: obj2, formCTAFullWidth: { width: "100%" } };
 obj2 = { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT };
 let closure_7 = createStyles.createStyles(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isCompleted) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressItem(isCompleted) {
   let analyticsSetupType;
   let description;
   let iconStyle;
@@ -121,7 +121,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isCompleted) => {
       }
     }
   }
-  const fn = function s() {
+  const fn = function c() {
     let tmp2 = null != analyticsAction;
     const tmp = analyticsAction;
     if (tmp2) {
@@ -140,7 +140,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isCompleted) => {
   cResult[3] = onPress;
   cResult[4] = fn;
   tmp5 = fn;
-}) : ((onPress) => {
+}) : (function ProgressItem(onPress) {
   let FormCTA;
   let description;
   let fullWidth;

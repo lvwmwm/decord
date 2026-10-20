@@ -1,23 +1,23 @@
-// Module ID: 12537
-// Function ID: 12538
+// Module ID: 12644
+// Function ID: 12645
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 4886, 12527, 4854, 6071, 6471, 12, 5702, 6546, 10601, 6644, 1126, 6547, 6552, 6645, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5088, 12634, 5056, 6262, 6665, 12, 6095, 6738, 10228, 6839, 1126, 6739, 6744, 6840, 2]
 
-// Module 12537 (BugReporterFeatureActionSheet)
+// Module 12644 (BugReporterFeatureActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5702 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6095 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, height, item;
+let BottomSheet, height;
 
 let metroImportDefault;
 let metroRequire;
@@ -25,7 +25,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const Text_Text = tmp(4886);
+const Text_Text = tmp(5088);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -37,7 +37,7 @@ obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, justifyConte
 let closure_8 = createStyles(obj);
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function BugReporterFeatureHeader(arg0) {
   let title;
   let tmp5;
   const obj = react2;
@@ -86,7 +86,7 @@ let closure_9 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp5;
   cResult[4] = items;
   tmp6 = items;
-}) : ((arg0) => {
+}) : (function BugReporterFeatureHeader(arg0) {
   let items;
   let title;
   ({ title, height } = arg0);
@@ -96,7 +96,7 @@ let closure_9 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 }));
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
+let closure_10 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function BugReporterFeature(item) {
   let end;
   let feature;
   let setFeature;
@@ -110,7 +110,7 @@ let closure_10 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((item) =>
   ({ feature, setFeature } = item);
   ({ start, end } = item);
   if (cResult[0] !== item) {
-    const tmpResult = item(12527);
+    const tmpResult = item(12634);
     const featureId = tmpResult.getFeatureId(item);
     cResult[0] = item;
     cResult[1] = featureId;
@@ -120,7 +120,7 @@ let closure_10 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((item) =>
   }
   const name = item.name;
   if (cResult[2] !== item) {
-    const tmpResult3 = item(12527);
+    const tmpResult3 = item(12634);
     const featureId1 = tmpResult3.getFeatureId(item);
     cResult[2] = item;
     cResult[3] = featureId1;
@@ -129,7 +129,7 @@ let closure_10 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((item) =>
     tmp6 = cResult[3];
   }
   if (cResult[4] !== feature) {
-    const tmpResult4 = item(12527);
+    const tmpResult4 = item(12634);
     const featureId2 = tmpResult4.getFeatureId(feature);
     cResult[4] = feature;
     cResult[5] = featureId2;
@@ -158,7 +158,7 @@ let closure_10 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((item) =>
       }
     }
     const obj2 = { start, end, value: tmp4, label: name, legacyCompat_selected: tmp6 === tmp8, legacyCompat_onPress: tmp10 };
-    const tmp14 = closure_6(item(6071).TableRadioRow, obj2);
+    const tmp14 = closure_6(item(6262).TableRadioRow, obj2);
     cResult[9] = end;
     cResult[10] = item.name;
     cResult[11] = start;
@@ -177,7 +177,7 @@ let closure_10 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((item) =>
   cResult[7] = setFeature;
   cResult[8] = fn;
   tmp10 = fn;
-}) : ((item) => {
+}) : (function BugReporterFeature(item) {
   let end;
   let feature;
   let featureId;
@@ -199,15 +199,15 @@ let closure_10 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((item) =>
       obj.hideActionSheet();
     }
   };
-  const TableRadioRow = item(6071).TableRadioRow;
-  obj2 = item(12527);
-  const obj3 = item(12527);
+  const TableRadioRow = item(6262).TableRadioRow;
+  obj2 = item(12634);
+  const obj3 = item(12634);
   featureId = obj3.getFeatureId(item);
-  obj4 = item(12527);
+  obj4 = item(12634);
   return closure_6(TableRadioRow, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((setFeature) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BugReporterFeatureActionSheet(setFeature) {
   let feature;
   let features;
   let first;
@@ -418,7 +418,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((setFeature) => {
     tmp18 = obj5;
   }
   if (cResult[3] !== first) {
-    class H {
+    class R {
       constructor(asana_inbox_id) {
         let tmp = null != asana_inbox_id.asana_inbox_id;
         if (tmp) {
@@ -459,10 +459,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((setFeature) => {
         return metroRequire(closure_9, obj);
       }
     }
-    cResult[4] = H;
-    tmp9 = H;
+    cResult[4] = R;
+    tmp9 = R;
   } else {
-    class H {
+    class R {
       constructor(asana_inbox_id) {
         let tmp = null != asana_inbox_id.asana_inbox_id;
         if (tmp) {
@@ -500,7 +500,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((setFeature) => {
   }
   const found = features.filter(tmp9);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class H {
+    class R {
       constructor(asana_inbox_id) {
         let tmp = null != asana_inbox_id.asana_inbox_id;
         if (tmp) {
@@ -543,7 +543,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((setFeature) => {
     }
     tmp11 = tmp12;
   } else {
-    class H {
+    class R {
       constructor(asana_inbox_id) {
         let tmp = null != asana_inbox_id.asana_inbox_id;
         if (tmp) {
@@ -585,7 +585,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((setFeature) => {
   cResult[1] = first;
   cResult[2] = entries1;
   arr = entries1;
-}) : ((features) => {
+}) : (function BugReporterFeatureActionSheet(features) {
   let BottomSheetTitleHeader;
   let intl;
   let items4;

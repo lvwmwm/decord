@@ -1,27 +1,29 @@
-// Module ID: 15880
-// Function ID: 15881
+// Module ID: 16389
+// Function ID: 16390
 // Name: trackAgeGateSubmitted
-// Dependencies: [1085, 1252, 4461, 2]
+// Dependencies: [1085, 1265, 4702, 16390, 2]
 // Exports: default
 
-// Module 15880 (trackAgeGateSubmitted)
+// Module 16389 (trackAgeGateSubmitted)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import _modDef4461 from "module_4461" /* 4461 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import _modDef4702 from "module_4702" /* 4702 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const formatDateForAPIDefault = tmp(16390);
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/auth/experiment/trackAgeGateSubmitted.tsx");
 
-export default function trackAgeGateSubmitted(format, section) {
+export default function trackAgeGateSubmitted(date, section) {
   const track = AnalyticsUtilsDefault.track;
   const AGE_GATE_SUBMITTED = AnalyticEvents.AGE_GATE_SUBMITTED;
   AnalyticsUtilsDefault;
-  let formatResult = null;
-  const obj = _modDef4461();
-  if (obj.diff(format, "years") < 18) {
-    formatResult = format.format("YYYY-MM-DD");
+  let tmp4 = null;
+  const obj = _modDef4702();
+  if (obj.diff(date, "years") < 18) {
+    tmp4 = formatDateForAPIDefault(date);
   }
-  const obj2 = { dob: formatResult, dob_day: format.date(), dob_month: format.month() + 1, dob_year: format.year(), source: { section } };
+  const obj2 = { dob: tmp4, dob_day: date.date(), dob_month: date.month() + 1, dob_year: date.year(), source: { section } };
   track(AGE_GATE_SUBMITTED, obj2);
 };

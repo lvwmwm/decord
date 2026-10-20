@@ -1,20 +1,20 @@
-// Module ID: 12771
-// Function ID: 12772
+// Module ID: 13070
+// Function ID: 13071
 // Name: MediaModalOverlayFooterAction
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1369, 5773, 12764, 5594, 6619, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1382, 5365, 13063, 5379, 6814, 2]
 
-// Module 12771 (MediaModalOverlayFooterAction)
+// Module 13070 (MediaModalOverlayFooterAction)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5773 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
-import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 12764 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5365 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
+import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 13063 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ obj2 = { paddingTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_8 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModalOverlayFooterAction(arg0) {
   let footerAction;
   let items;
   let sliderElement;
@@ -120,7 +120,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = syncer;
   cResult[4] = tmp9Result;
   tmp7 = tmp9Result;
-}) : ((arg0) => {
+}) : (function MediaModalOverlayFooterAction(arg0) {
   let footerAction;
   let items1;
   let obj5;

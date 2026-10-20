@@ -1,27 +1,27 @@
-// Module ID: 15815
-// Function ID: 15816
+// Module ID: 16322
+// Function ID: 16323
 // Name: ParentalControlsUseDataForQuests3PSetting
-// Dependencies: [7048, 7634, 558, 8297, 14626, 11129, 1126, 2]
+// Dependencies: [7254, 7988, 558, 7736, 15102, 10664, 1126, 2]
 
-// Module 15815 (ParentalControlsUseDataForQuests3PSetting)
+// Module 16322 (ParentalControlsUseDataForQuests3PSetting)
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import useSelectedTeen from "useSelectedTeen" /* 8297 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 14626 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
+import useSelectedTeen from "useSelectedTeen" /* 7736 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15102 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7254 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDataToSupportQuests3PSettingValue() {
   const obj = useSelectedTeen;
   const selectedTeenId = obj.useSelectedTeenId();
   const ParentalControlledQuests3PDataOptedOut = ParentalControlledUserSettings.ParentalControlledQuests3PDataOptedOut;
   const useControlledSetting = ParentalControlledQuests3PDataOptedOut.useControlledSetting;
   return !useControlledSetting(selectedTeenId);
-}) : (() => {
+}) : (function useDataToSupportQuests3PSettingValue() {
   const obj = useSelectedTeen;
   const selectedTeenId = obj.useSelectedTeenId();
   const ParentalControlledQuests3PDataOptedOut = ParentalControlledUserSettings.ParentalControlledQuests3PDataOptedOut;
@@ -29,13 +29,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return !useControlledSetting(selectedTeenId);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDataToSupportQuests3PSettingIsDisabled() {
   const obj = useSelectedTeen;
   const selectedTeenId = obj.useSelectedTeenId();
   const ParentalControlledDropsOptedOut = ParentalControlledUserSettings.ParentalControlledDropsOptedOut;
   const useControlledSetting = ParentalControlledDropsOptedOut.useControlledSetting;
   return useControlledSetting(selectedTeenId);
-}) : (() => {
+}) : (function useDataToSupportQuests3PSettingIsDisabled() {
   const obj = useSelectedTeen;
   const selectedTeenId = obj.useSelectedTeenId();
   const ParentalControlledDropsOptedOut = ParentalControlledUserSettings.ParentalControlledDropsOptedOut;

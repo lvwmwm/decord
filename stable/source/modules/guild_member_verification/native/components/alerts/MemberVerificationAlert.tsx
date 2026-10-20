@@ -1,18 +1,18 @@
-// Module ID: 5927
-// Function ID: 5928
+// Module ID: 6113
+// Function ID: 6114
 // Name: MemberVerificationAlert
-// Dependencies: [109, 19, 17, 21, 4890, 587, 558, 576, 4886, 5783, 2]
+// Dependencies: [109, 19, 17, 21, 5092, 587, 558, 576, 5088, 5398, 2]
 
-// Module 5927 (MemberVerificationAlert)
+// Module 6113 (MemberVerificationAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import AlertDefault from "Alert" /* 5783 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import AlertDefault from "Alert" /* 5398 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ const View = react_native.View;
 let obj = { headerImage: obj2, header: { marginTop: 8, marginBottom: 8, textAlign: "center" }, subtitle: { lineHeight: 18, marginBottom: 8, textAlign: "center" }, buttons: { marginTop: 16, marginBottom: 8, gap: 12 } };
 obj2 = { marginLeft: "auto", marginRight: "auto", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.round, padding: 12, marginTop: 8, marginBottom: 8 };
 let closure_8 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerificationAlert(arg0) {
   let buttons;
   let header;
   let icon;
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp21 = null;
       if (null != tmp8) {
         const obj4 = { style: tmp12.subtitle, variant: "text-sm/medium", color: "text-default", children: tmp8 };
-        tmp21 = metroRequire(tmp(4886).Text, obj4);
+        tmp21 = metroRequire(tmp(5088).Text, obj4);
       }
       cResult[12] = tmp12.subtitle;
       cResult[13] = tmp8;
@@ -139,7 +139,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp12.headerImage;
   cResult[8] = tmp14;
   tmp13 = tmp14;
-}) : ((arg0) => {
+}) : (function MemberVerificationAlert(arg0) {
   let buttons;
   let header;
   let icon;

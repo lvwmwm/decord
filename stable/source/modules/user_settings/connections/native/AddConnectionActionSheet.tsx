@@ -1,18 +1,18 @@
-// Module ID: 14765
-// Function ID: 14766
+// Module ID: 15244
+// Function ID: 15245
 // Name: AddConnectionActionSheet
-// Dependencies: [1085, 2013, 21, 4890, 1188, 558, 576, 4791, 1618, 7012, 6663, 6645, 6644, 1126, 6112, 5993, 4854, 8732, 1402, 4729, 6660, 6657, 6681, 2]
+// Dependencies: [1085, 2026, 21, 5092, 1200, 558, 576, 5031, 1631, 7220, 6858, 6840, 6839, 1126, 6307, 6180, 5056, 9200, 1415, 4969, 6855, 6852, 6879, 2]
 
-// Module 14765 (AddConnectionActionSheet)
+// Module 15244 (AddConnectionActionSheet)
 import Constants from "Constants" /* 1085 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2013 */;
-import shared from "shared" /* 4729 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import TableRow2 from "TableRow" /* 5993 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2026 */;
+import shared from "shared" /* 4969 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import TableRow2 from "TableRow" /* 6180 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import native_mod from "native" /* 1188 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import native_mod from "native" /* 1200 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ createStyles = createStyles.createStyles;
 native = native_mod;
 let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddConnectionActionSheet() {
   let closure_0;
   let first;
   let found;
@@ -41,6 +41,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let intl;
   let items;
   let tmp10;
+  let tmp11;
+  let tmp14;
   let tmp7;
   let tmp = _require;
   let tmp2 = found1;
@@ -75,58 +77,36 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
-      constructor(arg0) {
-        return null != arg0;
-      }
-    }
-    cResult[2] = A;
-    tmp10 = A;
+    const fn2 = function b(arg0) {
+      return null != arg0;
+    };
+    cResult[2] = fn2;
+    tmp10 = fn2;
   } else {
-    class A {
-      constructor(arg0) {
-        return null != arg0;
-      }
-    }
+    tmp10 = cResult[2];
   }
   const arr3 = tmp5(tmp2[10])(tmp7);
   found1 = arr3.filter(tmp10);
   BottomSheet = tmp(tmp2[11]).BottomSheet;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
-      constructor(arg0) {
-        return null != arg0;
-      }
-    }
     let obj2 = { title: intl.string(tmp(tmp2[13]).t.Zhcj9X) };
     const BottomSheetTitleHeader = tmp(tmp2[12]).BottomSheetTitleHeader;
     intl = tmp(tmp2[13]).intl;
-    cResult[3] = closure_5(BottomSheetTitleHeader, obj2);
-    const tmp12 = closure_5(BottomSheetTitleHeader, obj2);
+    const tmp13 = closure_5(BottomSheetTitleHeader, obj2);
+    cResult[3] = tmp13;
+    tmp11 = tmp13;
   } else {
-    class A {
-      constructor(arg0) {
-        return null != arg0;
-      }
-    }
+    tmp11 = cResult[3];
   }
   const BottomSheetScrollView = tmp(tmp2[14]).BottomSheetScrollView;
   const list = tmp4.list;
   if (cResult[4] !== bottom) {
-    class A {
-      constructor(arg0) {
-        return null != arg0;
-      }
-    }
-    tmp14[0] = bottom;
+    const obj3 = { paddingBottom: bottom };
     cResult[4] = bottom;
-    cResult[5] = tmp14;
+    cResult[5] = obj3;
+    tmp14 = obj3;
   } else {
-    class A {
-      constructor(arg0) {
-        return null != arg0;
-      }
-    }
+    tmp14 = cResult[5];
   }
   const mapped = found1.map((application, index) => {
     let tmp3;
@@ -161,32 +141,54 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         found(found1[17])(obj2);
       },
       icon: hasOwnProperty(Icon, obj2),
-      trailing: hasOwnProperty(tmp2(5993).TableRow.Arrow, {})
+      trailing: hasOwnProperty(tmp2(6180).TableRow.Arrow, {})
     };
-    Icon = tmp2(1188).Icon;
-    const makeSource = tmp2(1402).makeSource;
+    Icon = tmp2(1200).Icon;
+    const makeSource = tmp2(1415).makeSource;
     AvatarUtils;
     const tmp2Result2 = shared;
     obj2 = { source: makeSource(tmp2Result2.isThemeDark(closure_0) ? icon.darkPNG : icon.lightPNG), disableColor: true };
     return hasOwnProperty(TableRow, obj, type);
   });
   if (cResult[6] === BottomSheetScrollView) {
-    class A {
-      constructor(arg0) {
-        return null != arg0;
+    if (cResult[7] === tmp4.list) {
+      if (cResult[8] === mapped1) {
+        if (cResult[9] === tmp14) {
+          let tmp17;
+          if (cResult[10] === mapped) {
+            tmp17 = cResult[11];
+          }
+          if (cResult[12] === BottomSheet) {
+            if (cResult[13] === tmp17) {
+              let tmp19;
+              if (cResult[14] === tmp11) {
+                tmp19 = cResult[15];
+              }
+              return tmp19;
+            }
+          }
+          const obj4 = { scrollable: true, startExpanded: true, header: tmp11, children: tmp17 };
+          const tmp21 = closure_5(BottomSheet, obj4);
+          cResult[12] = BottomSheet;
+          cResult[13] = tmp17;
+          cResult[14] = tmp11;
+          cResult[15] = tmp21;
+          tmp19 = tmp21;
+        }
       }
     }
   }
-  const obj3 = { style: list, contentContainerStyle: tmp13, children: items };
+  const obj5 = { style: list, contentContainerStyle: tmp14, children: items };
   items = [mapped, mapped1];
+  const tmp18 = closure_6(BottomSheetScrollView, obj5);
   cResult[6] = BottomSheetScrollView;
   cResult[7] = tmp4.list;
   cResult[8] = mapped1;
-  cResult[9] = tmp13;
+  cResult[9] = tmp14;
   cResult[10] = mapped;
-  cResult[11] = closure_6(BottomSheetScrollView, obj3);
-  closure_6(BottomSheetScrollView, obj3);
-}) : (() => {
+  cResult[11] = tmp18;
+  tmp17 = tmp18;
+}) : (function AddConnectionActionSheet() {
   let BottomSheetScrollView;
   let BottomSheetTitleHeader;
   let closure_0;
@@ -253,10 +255,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           found(found1[17])(obj2);
         },
         icon: hasOwnProperty(Icon, obj2),
-        trailing: hasOwnProperty(tmp2(5993).TableRow.Arrow, {})
+        trailing: hasOwnProperty(tmp2(6180).TableRow.Arrow, {})
       };
-      Icon = tmp2(1188).Icon;
-      const makeSource = tmp2(1402).makeSource;
+      Icon = tmp2(1200).Icon;
+      const makeSource = tmp2(1415).makeSource;
       AvatarUtils;
       const tmp2Result2 = shared;
       obj2 = { source: makeSource(tmp2Result2.isThemeDark(closure_0) ? icon.darkPNG : icon.lightPNG), disableColor: true };
@@ -266,7 +268,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_5(BottomSheet, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddApplicationIdentityTableRow(arg0) {
   let analyticsLocations;
   let application;
   let end;
@@ -276,16 +278,16 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = startAuthorization(576);
   const cResult = obj.c(17);
   ({ application, start, end } = arg0);
-  const tmp4 = analyticsLocations(6660)(application);
+  const tmp4 = analyticsLocations(6855)(application);
   startAuthorization = tmp4.startAuthorization;
   const canStartAuthorization = tmp4.canStartAuthorization;
-  const tmp5 = analyticsLocations(6657);
-  analyticsLocations = tmp5(analyticsLocations(6681).ACTION_SHEET).analyticsLocations;
+  const tmp5 = analyticsLocations(6852);
+  analyticsLocations = tmp5(analyticsLocations(6879).ACTION_SHEET).analyticsLocations;
   const tmp6 = closure_7();
   if (cResult[0] !== application) {
     const getIconSource = application.getIconSource;
-    const tmpResult = startAuthorization(1188);
-    const iconSource = getIconSource(tmpResult.getIconSize(tmp(1188).IconSizes.LARGE));
+    const tmpResult = startAuthorization(1200);
+    const iconSource = getIconSource(tmpResult.getIconSize(tmp(1200).IconSizes.LARGE));
     cResult[0] = application;
     cResult[1] = iconSource;
     tmp7 = iconSource;
@@ -305,7 +307,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp16 = closure_5(startAuthorization(5993).TableRow.Arrow, {});
+        const tmp16 = closure_5(startAuthorization(6180).TableRow.Arrow, {});
         cResult[8] = tmp16;
         tmp14 = tmp16;
       } else {
@@ -329,7 +331,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       let obj2 = { start, end, label: application.name, onPress: tmp9, icon: tmp10, trailing: tmp14, disabled: !canStartAuthorization };
-      const tmp20 = closure_5(startAuthorization(5993).TableRow, obj2, application.id);
+      const tmp20 = closure_5(startAuthorization(6180).TableRow, obj2, application.id);
       cResult[9] = application.id;
       cResult[10] = application.name;
       cResult[11] = end;
@@ -343,7 +345,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp11 = null;
     if (null != tmp7) {
       const obj3 = { source: tmp7, style: tmp6.icon, disableColor: true };
-      tmp11 = closure_5(tmp(1188).Icon, obj3);
+      tmp11 = closure_5(tmp(1200).Icon, obj3);
     }
     cResult[5] = tmp7;
     cResult[6] = tmp6;
@@ -360,7 +362,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = startAuthorization;
   cResult[4] = fn;
   tmp9 = fn;
-}) : ((application) => {
+}) : (function AddApplicationIdentityTableRow(application) {
   let _undefined;
   let c0;
   let canStartAuthorization;
@@ -371,10 +373,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   _require = undefined;
   let analyticsLocations;
   ({ start, end } = application);
-  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(6660)(application));
-  const tmp2 = analyticsLocations(6660)(application);
-  const tmp3 = analyticsLocations(6657);
-  analyticsLocations = tmp3(analyticsLocations(6681).ACTION_SHEET).analyticsLocations;
+  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(6855)(application));
+  const tmp2 = analyticsLocations(6855)(application);
+  const tmp3 = analyticsLocations(6852);
+  analyticsLocations = tmp3(analyticsLocations(6879).ACTION_SHEET).analyticsLocations;
   const getIconSource = application.getIconSource;
   const tmp4 = closure_7();
   let obj = require("native");
@@ -397,7 +399,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const TableRow = require("TableRow").TableRow;
   if (null != iconSource) {
     const obj3 = { source: iconSource, style: tmp4.icon, disableColor: true };
-    tmp7Result = tmp7(tmp5(1188).Icon, obj3);
+    tmp7Result = tmp7(tmp5(1200).Icon, obj3);
   }
   return closure_5(TableRow, obj2, application.id);
 });

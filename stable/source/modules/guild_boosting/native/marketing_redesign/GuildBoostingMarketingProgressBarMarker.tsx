@@ -1,19 +1,19 @@
-// Module ID: 13389
-// Function ID: 13390
+// Module ID: 13880
+// Function ID: 13881
 // Name: GuildBoostingMarketingProgressBarMarker
-// Dependencies: [19, 17, 1085, 21, 13390, 13391, 13392, 4890, 587, 558, 576, 4791, 4612, 4727, 4729, 5597, 12243, 11181, 7666, 4886, 2]
+// Dependencies: [19, 17, 1085, 21, 13881, 13882, 13883, 5092, 587, 558, 576, 5031, 4850, 4967, 4969, 5378, 12327, 6157, 10714, 8020, 5088, 2]
 
-// Module 13389 (GuildBoostingMarketingProgressBarMarker)
+// Module 13880 (GuildBoostingMarketingProgressBarMarker)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import spring from "spring" /* 5597 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13390 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13391 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13392 */;
+import spring from "spring" /* 5378 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13881 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13882 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13883 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -22,47 +22,46 @@ let dependencyMap, set;
 let TIER_1;
 let TIER_2;
 let TIER_3;
-let closure_4;
-let hasOwnProperty;
 let items;
 let items1;
-let metroImportAll;
 let metroImportDefault;
+let metroRequire;
 let obj5;
 let obj6;
 let size;
 let size1;
 let size2;
-({ View: closure_4, Image: hasOwnProperty } = react_native);
+const View = react_native.View;
 const BoostedGuildTiers = Constants.BoostedGuildTiers;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const TierMarkerPositions = { [BoostedGuildTiers.NONE]: 0, [BoostedGuildTiers.TIER_1]: 0.3333333333333333, [BoostedGuildTiers.TIER_2]: 0.6666666666666666, [BoostedGuildTiers.TIER_3]: 1 };
 let obj2 = { [TIER_1]: AssetRegistryDefault, [TIER_2]: AssetRegistryDefault2, [TIER_3]: AssetRegistryDefault3 };
 ({ TIER_1, TIER_2, TIER_3 } = BoostedGuildTiers);
 let createStyles = createStyles_mod;
 let obj3 = { progressBarMarkerInnerCircle: { width: 17.5, height: 17.5, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }, progressBarMarkerInnerCircleBackground: { width: "100%", height: "100%", borderRadius: 17.5, position: "absolute" }, progressBarMarkerInnerCircleIcon: { width: 16, height: 16 }, progressBarMarkerInnerCircleIconUnlocked: size };
 size = { width: "95%", height: "95%", tintColor: nativeDefault.colors.WHITE };
-let closure_11 = createStyles.createStyles(obj3);
-let closure_12 = { stiffness: 50, damping: 5 };
+let closure_10 = createStyles.createStyles(obj3);
+let closure_11 = { stiffness: 50, damping: 5 };
 const __initData = { code: "function GuildBoostingMarketingProgressBarMarkerTsx1(){const{backgroundColor,useReducedMotion,shouldAnimate,scale}=this.__closure;return{backgroundColor:backgroundColor,transform:[{scale:useReducedMotion||!shouldAnimate?1:scale.get()}]};}" };
 const __initData2 = { code: "function GuildBoostingMarketingProgressBarMarkerTsx2(){const{backgroundColor,useReducedMotion,shouldAnimate,scale}=this.__closure;return{backgroundColor:backgroundColor,transform:[{scale:useReducedMotion||!shouldAnimate?1:scale.get()}]};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarMarkerInnerContent(isDisabled) {
   let PREMIUM_PERK_PINK;
   let isCurrentTier;
   let isTierAnimated;
   let isTierUnlocked;
+  let items1;
   let items2;
   let sharedValue;
   let tier;
   let useReducedMotion;
   let tmp = useReducedMotion;
   let obj = useReducedMotion(isTierUnlocked[10]);
-  const cResult = obj.c(18);
+  const cResult = obj.c(16);
   ({ tier, isTierUnlocked, useReducedMotion } = isDisabled);
   isDisabled = isDisabled.isDisabled;
   ({ isTierAnimated, isCurrentTier } = isDisabled);
-  const tmp4 = closure_11();
+  const tmp4 = closure_10();
   const tmp6 = sharedValue(isTierUnlocked[11])();
   obj2 = useReducedMotion(isTierUnlocked[12]);
   sharedValue = obj2.useSharedValue(1);
@@ -91,7 +90,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) =>
     }
     const effect = PREMIUM_PERK_PINK.useEffect(tmp9, tmp10);
     const tmpResult4 = tmp(isTierUnlocked[12]);
-    class A {
+    class N {
       constructor() {
         let items;
         let num = 1;
@@ -107,10 +106,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) =>
       }
     }
     const obj3 = { backgroundColor: PREMIUM_PERK_PINK, useReducedMotion, shouldAnimate: isTierUnlocked, scale: sharedValue };
-    A.__closure = obj3;
-    A.__workletHash = 15398057099178;
-    A.__initData = __initData;
-    const animatedStyle = tmpResult4.useAnimatedStyle(A);
+    N.__closure = obj3;
+    N.__workletHash = 15398057099178;
+    N.__initData = __initData;
+    const animatedStyle = tmpResult4.useAnimatedStyle(N);
     if (cResult[4] === isDisabled) {
       if (cResult[5] === tmp4) {
         if (cResult[6] === isTierUnlocked) {
@@ -120,11 +119,21 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) =>
             tmp15 = cResult[8];
           }
           if (!isCurrentTier) {
-            let tmp22;
-            if (cResult[9] !== tmp4.progressBarMarkerInnerCircle) {
-              let items = [tmp4.progressBarMarkerInnerCircle];
-              cResult[9] = tmp4.progressBarMarkerInnerCircle;
-              class A {
+            if (cResult[9] === animatedStyle) {
+              let tmp22;
+              if (cResult[10] === tmp4.progressBarMarkerInnerCircleBackground) {
+                tmp22 = cResult[11];
+              }
+              if (cResult[12] === tmp15) {
+                if (cResult[13] === tmp4.progressBarMarkerInnerCircle) {
+                  let tmp25;
+                  if (cResult[14] === tmp22) {
+                    tmp25 = cResult[15];
+                  }
+                  tmp21 = tmp25;
+                }
+              }
+              class N {
                 constructor() {
                   let items;
                   let num = 1;
@@ -139,52 +148,19 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) =>
                   return obj;
                 }
               }
-              cResult[10] = items;
-              tmp22 = items;
-            } else {
-              tmp22 = cResult[10];
+              tmp28[0] = tmp4.progressBarMarkerInnerCircle;
+              let items = [tmp22, tmp15];
+              tmp28[1] = items;
+              const tmp29 = closure_7(View, tmp28);
+              cResult[12] = tmp15;
+              cResult[13] = tmp4.progressBarMarkerInnerCircle;
+              cResult[14] = tmp22;
+              cResult[15] = tmp29;
+              tmp25 = tmp29;
             }
-            if (cResult[11] === animatedStyle) {
-              let tmp23;
-              if (cResult[12] === tmp4.progressBarMarkerInnerCircleBackground) {
-                tmp23 = cResult[13];
-              }
-              if (cResult[14] === tmp15) {
-                if (cResult[15] === tmp22) {
-                  let tmp27;
-                  if (cResult[16] === tmp23) {
-                    tmp27 = cResult[17];
-                  }
-                  tmp21 = tmp27;
-                }
-              }
-              class A {
-                constructor() {
-                  let items;
-                  let num = 1;
-                  const obj = { backgroundColor: PREMIUM_PERK_PINK, transform: items };
-                  if (!useReducedMotion) {
-                    num = 1;
-                    if (isTierUnlocked) {
-                      num = sharedValue.get();
-                    }
-                  }
-                  items = [{ scale: num }];
-                  return obj;
-                }
-              }
-              tmp30[0] = tmp22;
-              const items1 = [tmp23, tmp15];
-              tmp30[1] = items1;
-              const tmp31 = closure_8(closure_4, tmp30);
-              cResult[14] = tmp15;
-              cResult[15] = tmp22;
-              cResult[16] = tmp23;
-              cResult[17] = tmp31;
-              tmp27 = tmp31;
-            }
-            const obj4 = { style: tmp25 };
-            class A {
+            const obj4 = { style: items1 };
+            items1 = [, ];
+            class N {
               constructor() {
                 let items;
                 let num = 1;
@@ -199,13 +175,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) =>
                 return obj;
               }
             }
-            tmp25[0] = tmp4.progressBarMarkerInnerCircleBackground;
-            tmp25[1] = animatedStyle;
-            const tmp26 = closure_7(sharedValue(isTierUnlocked[12]).View, obj4);
-            cResult[11] = animatedStyle;
-            cResult[12] = tmp4.progressBarMarkerInnerCircleBackground;
-            cResult[13] = tmp26;
-            tmp23 = tmp26;
+            items1[1] = animatedStyle;
+            const tmp24 = closure_6(sharedValue(isTierUnlocked[12]).View, obj4);
+            cResult[9] = animatedStyle;
+            cResult[10] = tmp4.progressBarMarkerInnerCircleBackground;
+            cResult[11] = tmp24;
+            tmp22 = tmp24;
           } else {
             tmp21 = tmp15;
           }
@@ -215,13 +190,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) =>
     }
     let tmp17 = null;
     if (tier !== BoostedGuildTiers.NONE) {
-      let tmp32Result;
+      let tmp30Result;
       if (isDisabled) {
-        tmp32Result = tmp32(tmp(tmp2[16]).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
+        tmp30Result = tmp30(tmp(tmp2[16]).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
       } else {
         const obj5 = { source: obj2[tier], style: items2 };
         items2 = [, ];
-        class A {
+        class N {
           constructor() {
             let items;
             let num = 1;
@@ -236,12 +211,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) =>
             return obj;
           }
         }
+        const tmp5Result = sharedValue(isTierUnlocked[17]);
         const unsafe_rawColors = tmp5(tmp2[8]).unsafe_rawColors;
         const obj6 = { tintColor: isTierUnlocked ? unsafe_rawColors.WHITE : unsafe_rawColors.PREMIUM_PERK_PINK };
         items2[1] = obj6;
-        tmp32Result = tmp32(closure_5, obj5);
+        tmp30Result = tmp30(tmp5Result, obj5);
       }
-      tmp17 = tmp32Result;
+      tmp17 = tmp30Result;
     }
     cResult[4] = isDisabled;
     cResult[5] = tmp4;
@@ -250,13 +226,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) =>
     cResult[8] = tmp17;
     tmp15 = tmp17;
   }
-  const fn = function c() {
+  const fn = function u() {
     const tmp = isTierUnlocked;
     if (tmp) {
       const result = sharedValue.set(0);
       set = sharedValue.set;
       const obj = spring;
-      const result1 = set(obj.withSpring(1, closure_12));
+      const result1 = set(obj.withSpring(1, closure_11));
     }
   };
   const items3 = [isTierUnlocked, sharedValue];
@@ -266,7 +242,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) =>
   cResult[3] = items3;
   tmp10 = items3;
   tmp9 = fn;
-}) : ((arg0) => {
+}) : (function ProgressBarMarkerInnerContent(arg0) {
   let isCurrentTier;
   let isDisabled;
   let isTierAnimated;
@@ -274,7 +250,6 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) =>
   let items1;
   let items2;
   let items3;
-  let items4;
   let tier;
   let tmp14;
   let useReducedMotion;
@@ -283,7 +258,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) =>
   isTierUnlocked = undefined;
   let PREMIUM_PERK_PINK;
   ({ isTierAnimated, isCurrentTier, isDisabled } = arg0);
-  let tmp = closure_11();
+  let tmp = closure_10();
   const tmp4 = sharedValue(isTierUnlocked[11])();
   let obj = useReducedMotion(isTierUnlocked[12]);
   let num = 1;
@@ -310,10 +285,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) =>
       const result = sharedValue.set(0);
       set = sharedValue.set;
       const obj = spring;
-      const result1 = set(obj.withSpring(1, closure_12));
+      const result1 = set(obj.withSpring(1, closure_11));
     }
   }, items);
-  const fn = function y() {
+  const fn = function w() {
     let items;
     let num = 1;
     const obj = { backgroundColor: PREMIUM_PERK_PINK, transform: items };
@@ -339,20 +314,20 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) =>
     } else {
       obj2 = { source: obj2[tier], style: items1 };
       items1 = [isTierUnlocked ? tmp.progressBarMarkerInnerCircleIconUnlocked : tmp.progressBarMarkerInnerCircleIcon, ];
+      const tmp2Result = sharedValue(isTierUnlocked[17]);
       const unsafe_rawColors = tmp2(tmp3[8]).unsafe_rawColors;
       const obj3 = { tintColor: isTierUnlocked ? unsafe_rawColors.WHITE : unsafe_rawColors.PREMIUM_PERK_PINK };
       items1[1] = obj3;
-      tmp18Result = tmp18(closure_5, obj2);
+      tmp18Result = tmp18(tmp2Result, obj2);
     }
     tmp10 = tmp18Result;
   }
   if (!isCurrentTier) {
-    const obj4 = { style: items2, children: items4 };
-    items2 = [tmp.progressBarMarkerInnerCircle];
-    const obj5 = { style: items3 };
-    items3 = [tmp.progressBarMarkerInnerCircleBackground, animatedStyle];
-    items4 = [closure_7(tmp2(isTierUnlocked[12]).View, obj5), tmp10];
-    tmp14 = closure_8(closure_4, obj4);
+    const obj5 = { style: items2 };
+    items2 = [tmp.progressBarMarkerInnerCircleBackground, animatedStyle];
+    const obj4 = { style: tmp.progressBarMarkerInnerCircle, children: items3 };
+    items3 = [closure_6(tmp2(isTierUnlocked[12]).View, obj5), tmp10];
+    tmp14 = closure_7(View, obj4);
   } else {
     tmp14 = tmp10;
   }
@@ -367,16 +342,18 @@ createStyles = createStyles.createStyles;
 obj6 = { transform: items1 };
 items1 = [{ translateX: -7 }];
 size2 = { height: 12, width: 12, marginRight: 2, tintColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
-let closure_16 = createStyles(obj4);
+let closure_15 = createStyles(obj4);
 const __initData3 = { code: "function GuildBoostingMarketingProgressBarMarkerTsx3(){const{backgroundColor,useReducedMotion,scale}=this.__closure;return{backgroundColor:backgroundColor,transform:[{scale:useReducedMotion?1:scale.get()}]};}" };
 const __initData4 = { code: "function GuildBoostingMarketingProgressBarMarkerTsx4(){const{backgroundColor,useReducedMotion,scale}=this.__closure;return{backgroundColor:backgroundColor,transform:[{scale:useReducedMotion?1:scale.get()}]};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressBarMarker(isDisabled) {
   let PREMIUM_PERK_PINK;
   let closure_2;
   let closure_3;
   let guild;
+  let items;
   let items1;
+  let items3;
   let sharedValue;
   let tier;
   let useReducedMotion;
@@ -386,9 +363,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) => {
   ({ guild, tier, useReducedMotion } = isDisabled);
   isDisabled = isDisabled.isDisabled;
   const revealedTier = isDisabled.revealedTier;
-  const tmp4 = closure_16();
-  const tmp6 = sharedValue(4791)();
-  obj2 = useReducedMotion(4612);
+  const tmp4 = closure_15();
+  const tmp6 = sharedValue(5031)();
+  obj2 = useReducedMotion(4850);
   sharedValue = obj2.useSharedValue(1);
   dependencyMap = tmp8;
   backgroundColor = tmp11;
@@ -400,312 +377,200 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) => {
       if (cResult[1] === sharedValue) {
         let tmp14;
         let tmp15;
-        let tmp23;
+        let tmp22;
         if (cResult[2] === (guild.premiumTier >= tier && revealedTier >= tier)) {
           tmp14 = cResult[3];
           tmp15 = cResult[4];
         }
         const effect = backgroundColor.useEffect(tmp14, tmp15);
-        const tmpResult = tmp(4612);
-        class L {
-          constructor() {
-            let items;
-            let num = 1;
-            const obj = { backgroundColor: PREMIUM_PERK_PINK, transform: items };
-            if (!useReducedMotion) {
-              num = sharedValue.get();
-            }
-            items = [{ scale: num }];
-            return obj;
+        const fn2 = function v() {
+          let items;
+          let num = 1;
+          const obj = { backgroundColor: PREMIUM_PERK_PINK, transform: items };
+          if (!useReducedMotion) {
+            num = sharedValue.get();
           }
-        }
+          items = [{ scale: num }];
+          return obj;
+        };
         const obj3 = { backgroundColor: PREMIUM_PERK_PINK, useReducedMotion, scale: sharedValue };
-        L.__closure = obj3;
-        L.__workletHash = 6048829722949;
-        L.__initData = __initData3;
-        const animatedStyle = tmpResult.useAnimatedStyle(L);
+        fn2.__closure = obj3;
+        fn2.__workletHash = 6048829722949;
+        fn2.__initData = __initData3;
+        const tmpResult = tmp(4850);
+        const animatedStyle = tmpResult.useAnimatedStyle(fn2);
         const text = `${100 * obj[tier]}%`;
         if (cResult[5] !== `${100 * obj[tier]}%`) {
           const obj4 = { left: text };
           cResult[5] = text;
-          class L {
-            constructor() {
-              let items;
-              let num = 1;
-              const obj = { backgroundColor: PREMIUM_PERK_PINK, transform: items };
-              if (!useReducedMotion) {
-                num = sharedValue.get();
-              }
-              items = [{ scale: num }];
-              return obj;
-            }
-          }
           cResult[6] = obj4;
-          tmp23 = obj4;
+          tmp22 = obj4;
         } else {
-          tmp23 = cResult[6];
+          tmp22 = cResult[6];
         }
         if (cResult[7] === tmp4.progressBarMarker) {
-          let tmp24;
-          if (cResult[8] === tmp23) {
-            tmp24 = cResult[9];
+          let tmp23;
+          if (cResult[8] === tmp22) {
+            tmp23 = cResult[9];
           }
           if (cResult[10] === tmp4.progressBarMarkerBackground) {
-            let tmp25;
+            let tmp24;
             if (cResult[11] === animatedStyle) {
-              tmp25 = cResult[12];
+              tmp24 = cResult[12];
             }
             if (cResult[13] === tier === guild.premiumTier) {
               if (cResult[14] === isDisabled) {
                 if (cResult[15] === revealedTier >= tier) {
                   if (cResult[16] === guild.premiumTier >= tier) {
                     if (cResult[17] === tier) {
-                      let tmp29;
+                      let tmp27;
                       if (cResult[18] === useReducedMotion) {
-                        tmp29 = cResult[19];
+                        tmp27 = cResult[19];
                       }
-                      const tmp34 = !(guild.premiumTier >= tier && revealedTier >= tier) && tmp4.progressBarMarkerLabelLocked;
-                      class L {
-                        constructor() {
-                          let items;
-                          let num = 1;
-                          const obj = { backgroundColor: PREMIUM_PERK_PINK, transform: items };
-                          if (!useReducedMotion) {
-                            num = sharedValue.get();
-                          }
-                          items = [{ scale: num }];
-                          return obj;
-                        }
-                      }
+                      const tmp31 = !(guild.premiumTier >= tier && revealedTier >= tier) && tmp4.progressBarMarkerLabelLocked;
+                      const progressBarMarkerLabelWithIcon = tmp11 && tier !== BoostedGuildTiers.NONE && tmp4.progressBarMarkerLabelWithIcon;
                       if (cResult[20] === tmp4.progressBarMarkerLabel) {
-                        if (cResult[21] === tmp34) {
-                          let tmp37;
-                          if (cResult[22] === (tmp11 && tier !== BoostedGuildTiers.NONE)) {
-                            tmp37 = cResult[23];
+                        if (cResult[21] === tmp31) {
+                          let tmp33;
+                          if (cResult[22] === progressBarMarkerLabelWithIcon) {
+                            tmp33 = cResult[23];
                           }
                           if (cResult[24] === tmp4.progressBarMarkerUnlockedIcon) {
                             if (cResult[25] === (guild.premiumTier >= tier && revealedTier >= tier)) {
-                              let tmp38;
+                              let tmp34;
+                              let tmp39;
                               let tmp41;
-                              let tmp43;
                               if (cResult[26] === tier) {
-                                tmp38 = cResult[27];
+                                tmp34 = cResult[27];
                               }
                               if (cResult[28] !== tier) {
-                                const tmpResult4 = tmp(7666);
+                                const tmpResult4 = tmp(8020);
                                 const tierName = tmpResult4.getTierName(tier, { useLevels: false });
                                 cResult[28] = tier;
-                                class L {
-                                  constructor() {
-                                    let items;
-                                    let num = 1;
-                                    const obj = { backgroundColor: PREMIUM_PERK_PINK, transform: items };
-                                    if (!useReducedMotion) {
-                                      num = sharedValue.get();
-                                    }
-                                    items = [{ scale: num }];
-                                    return obj;
-                                  }
-                                }
                                 cResult[29] = tierName;
-                                tmp41 = tierName;
+                                tmp39 = tierName;
                               } else {
-                                tmp41 = cResult[29];
+                                tmp39 = cResult[29];
                               }
-                              if (cResult[30] !== tmp41) {
-                                const obj5 = { variant: "text-xs/medium", children: tmp41 };
-                                const tmp45 = closure_7(tmp(4886).Text, obj5);
-                                class L {
-                                  constructor() {
-                                    let items;
-                                    let num = 1;
-                                    const obj = { backgroundColor: PREMIUM_PERK_PINK, transform: items };
-                                    if (!useReducedMotion) {
-                                      num = sharedValue.get();
-                                    }
-                                    items = [{ scale: num }];
-                                    return obj;
-                                  }
-                                }
-                                cResult[30] = tmp41;
-                                cResult[31] = tmp45;
-                                tmp43 = tmp45;
+                              if (cResult[30] !== tmp39) {
+                                const obj5 = { variant: "text-xs/medium", children: tmp39 };
+                                const tmp43 = closure_6(tmp(5088).Text, obj5);
+                                cResult[30] = tmp39;
+                                cResult[31] = tmp43;
+                                tmp41 = tmp43;
                               } else {
-                                tmp43 = cResult[31];
+                                tmp41 = cResult[31];
                               }
-                              if (cResult[32] === tmp37) {
-                                if (cResult[33] === tmp38) {
-                                  let tmp46;
-                                  if (cResult[34] === tmp43) {
-                                    tmp46 = cResult[35];
+                              if (cResult[32] === tmp33) {
+                                if (cResult[33] === tmp34) {
+                                  let tmp44;
+                                  if (cResult[34] === tmp41) {
+                                    tmp44 = cResult[35];
                                   }
-                                  if (cResult[36] === tmp46) {
-                                    if (cResult[37] === tmp24) {
-                                      if (cResult[38] === tmp25) {
-                                        let tmp49;
-                                        if (cResult[39] === tmp29) {
-                                          tmp49 = cResult[40];
+                                  if (cResult[36] === tmp44) {
+                                    if (cResult[37] === tmp23) {
+                                      if (cResult[38] === tmp24) {
+                                        let tmp48;
+                                        if (cResult[39] === tmp27) {
+                                          tmp48 = cResult[40];
                                         }
-                                        return tmp49;
+                                        return tmp48;
                                       }
                                     }
                                   }
-                                  class L {
-                                    constructor() {
-                                      let items;
-                                      let num = 1;
-                                      const obj = { backgroundColor: PREMIUM_PERK_PINK, transform: items };
-                                      if (!useReducedMotion) {
-                                        num = sharedValue.get();
-                                      }
-                                      items = [{ scale: num }];
-                                      return obj;
-                                    }
-                                  }
-                                  tmp52[0] = tmp24;
-                                  let items = [tmp25, tmp29, tmp46];
-                                  tmp52[1] = items;
-                                  const tmp53 = closure_8(PREMIUM_PERK_PINK, tmp52);
-                                  cResult[36] = tmp46;
-                                  cResult[37] = tmp24;
-                                  cResult[38] = tmp25;
-                                  cResult[39] = tmp29;
-                                  cResult[40] = tmp53;
-                                  tmp49 = tmp53;
+                                  const obj6 = { style: tmp23, children: items };
+                                  items = [tmp24, tmp27, tmp44];
+                                  const tmp51 = closure_7(PREMIUM_PERK_PINK, obj6);
+                                  cResult[36] = tmp44;
+                                  cResult[37] = tmp23;
+                                  cResult[38] = tmp24;
+                                  cResult[39] = tmp27;
+                                  cResult[40] = tmp51;
+                                  tmp48 = tmp51;
                                 }
                               }
-                              class L {
-                                constructor() {
-                                  let items;
-                                  let num = 1;
-                                  const obj = { backgroundColor: PREMIUM_PERK_PINK, transform: items };
-                                  if (!useReducedMotion) {
-                                    num = sharedValue.get();
-                                  }
-                                  items = [{ scale: num }];
-                                  return obj;
-                                }
-                              }
-                              const obj6 = { style: tmp37, children: items1 };
-                              items1 = [tmp38, tmp43];
-                              const tmp48 = closure_8(PREMIUM_PERK_PINK, obj6);
-                              cResult[32] = tmp37;
-                              cResult[33] = tmp38;
-                              cResult[34] = tmp43;
-                              cResult[35] = tmp48;
-                              tmp46 = tmp48;
+                              const obj7 = { style: tmp33, children: items1 };
+                              items1 = [tmp34, tmp41];
+                              const tmp47 = closure_7(PREMIUM_PERK_PINK, obj7);
+                              cResult[32] = tmp33;
+                              cResult[33] = tmp34;
+                              cResult[34] = tmp41;
+                              cResult[35] = tmp47;
+                              tmp44 = tmp47;
                             }
                           }
-                          class L {
-                            constructor() {
-                              let items;
-                              let num = 1;
-                              const obj = { backgroundColor: PREMIUM_PERK_PINK, transform: items };
-                              if (!useReducedMotion) {
-                                num = sharedValue.get();
-                              }
-                              items = [{ scale: num }];
-                              return obj;
-                            }
+                          let tmp35 = tmp11 && tier !== BoostedGuildTiers.NONE;
+                          if (tmp35) {
+                            const obj8 = { source: sharedValue(10714), style: tmp4.progressBarMarkerUnlockedIcon };
+                            const tmp5Result = sharedValue(6157);
+                            tmp35 = closure_6(tmp5Result, obj8);
                           }
                           cResult[24] = tmp4.progressBarMarkerUnlockedIcon;
                           cResult[25] = guild.premiumTier >= tier && revealedTier >= tier;
                           cResult[26] = tier;
-                          cResult[27] = tmp11 && tier !== BoostedGuildTiers.NONE;
-                          tmp38 = tmp39;
+                          cResult[27] = tmp35;
+                          tmp34 = tmp35;
                         }
                       }
-                      const items2 = [tmp4.progressBarMarkerLabel, tmp34, tmp35];
+                      const items2 = [tmp4.progressBarMarkerLabel, tmp31, progressBarMarkerLabelWithIcon];
                       cResult[20] = tmp4.progressBarMarkerLabel;
-                      cResult[21] = tmp34;
-                      cResult[22] = tmp11 && tier !== BoostedGuildTiers.NONE;
+                      cResult[21] = tmp31;
+                      cResult[22] = progressBarMarkerLabelWithIcon;
                       cResult[23] = items2;
-                      tmp37 = items2;
+                      tmp33 = items2;
                     }
                   }
                 }
               }
             }
-            class L {
-              constructor() {
-                let items;
-                let num = 1;
-                const obj = { backgroundColor: PREMIUM_PERK_PINK, transform: items };
-                if (!useReducedMotion) {
-                  num = sharedValue.get();
-                }
-                items = [{ scale: num }];
-                return obj;
-              }
-            }
-            tmp32[0] = tier;
-            tmp32[1] = isDisabled;
-            tmp32[2] = guild.premiumTier >= tier;
-            tmp32[3] = revealedTier >= tier;
-            tmp32[4] = tier === guild.premiumTier;
-            tmp32[5] = useReducedMotion;
-            const tmp33 = closure_7(closure_15, tmp32);
+            const obj9 = { tier, isDisabled, isTierUnlocked: guild.premiumTier >= tier, isTierAnimated: revealedTier >= tier, isCurrentTier: tier === guild.premiumTier, useReducedMotion };
+            const tmp30 = closure_6(closure_14, obj9);
             cResult[13] = tier === guild.premiumTier;
             cResult[14] = isDisabled;
             cResult[15] = revealedTier >= tier;
             cResult[16] = guild.premiumTier >= tier;
             cResult[17] = tier;
             cResult[18] = useReducedMotion;
-            cResult[19] = tmp33;
-            tmp29 = tmp33;
+            cResult[19] = tmp30;
+            tmp27 = tmp30;
           }
-          const obj7 = { style: tmp27 };
-          class L {
-            constructor() {
-              let items;
-              let num = 1;
-              const obj = { backgroundColor: PREMIUM_PERK_PINK, transform: items };
-              if (!useReducedMotion) {
-                num = sharedValue.get();
-              }
-              items = [{ scale: num }];
-              return obj;
-            }
-          }
-          tmp27[0] = tmp4.progressBarMarkerBackground;
-          tmp27[1] = animatedStyle;
-          const tmp28 = closure_7(sharedValue(4612).View, obj7);
+          const obj10 = { style: items3 };
+          items3 = [tmp4.progressBarMarkerBackground, animatedStyle];
+          const tmp26 = closure_6(sharedValue(4850).View, obj10);
           cResult[10] = tmp4.progressBarMarkerBackground;
           cResult[11] = animatedStyle;
-          cResult[12] = tmp28;
-          tmp25 = tmp28;
+          cResult[12] = tmp26;
+          tmp24 = tmp26;
         }
-        const items3 = [tmp4.progressBarMarker, tmp23];
+        const items4 = [tmp4.progressBarMarker, tmp22];
         cResult[7] = tmp4.progressBarMarker;
-        cResult[8] = tmp23;
-        cResult[9] = items3;
-        tmp24 = items3;
+        cResult[8] = tmp22;
+        cResult[9] = items4;
+        tmp23 = items4;
       }
     }
-    const fn = function c() {
+    const fn = function u() {
       const tmp = closure_3 && closure_2;
       if (tmp) {
         const result = sharedValue.set(0);
         set = sharedValue.set;
         const obj = spring;
-        const result1 = set(obj.withSpring(1, closure_12));
+        const result1 = set(obj.withSpring(1, closure_11));
       }
     };
-    tmp16[0] = guild.premiumTier >= tier && revealedTier >= tier;
-    tmp16[1] = sharedValue;
-    tmp16[2] = tier === guild.premiumTier;
+    const items5 = [guild.premiumTier >= tier && revealedTier >= tier, sharedValue, tier === guild.premiumTier];
     cResult[0] = tier === guild.premiumTier;
     cResult[1] = sharedValue;
     cResult[2] = guild.premiumTier >= tier && revealedTier >= tier;
     cResult[3] = fn;
-    cResult[4] = tmp16;
-    tmp15 = tmp16;
+    cResult[4] = items5;
+    tmp15 = items5;
     tmp14 = fn;
   }
-  const tmpResult5 = tmp(4729);
+  const tmpResult5 = tmp(4969);
   const isThemeDarkResult = tmpResult5.isThemeDark(tmp6);
-  const hexWithOpacity = tmp(4727).hexWithOpacity;
-  tmp(4727);
+  const hexWithOpacity = tmp(4967).hexWithOpacity;
+  tmp(4967);
   const unsafe_rawColors = tmp5(587).unsafe_rawColors;
   if (isThemeDarkResult) {
     PREMIUM_PERK_PINK = hexWithOpacity(unsafe_rawColors.WHITE, 0.4);
@@ -713,7 +578,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) => {
     let num = 0.4;
     PREMIUM_PERK_PINK = hexWithOpacity(unsafe_rawColors.PRIMARY_200, 0.4);
   }
-}) : ((arg0) => {
+}) : (function ProgressBarMarker(arg0) {
   let closure_2;
   let closure_3;
   let guild;
@@ -730,9 +595,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) => {
   let sharedValue;
   let PREMIUM_PERK_PINK;
   ({ revealedTier, isDisabled } = arg0);
-  let tmp = closure_16();
-  const tmp4 = sharedValue(4791)();
-  let obj = useReducedMotion(4612);
+  let tmp = closure_15();
+  const tmp4 = sharedValue(5031)();
+  let obj = useReducedMotion(4850);
   sharedValue = obj.useSharedValue(1);
   dependencyMap = tmp7;
   let tmp20Result = tmp9 && tmp8;
@@ -748,11 +613,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) => {
         const result = sharedValue.set(0);
         set = sharedValue.set;
         const obj = spring;
-        const result1 = set(obj.withSpring(1, closure_12));
+        const result1 = set(obj.withSpring(1, closure_11));
       }
     }, items);
-    const tmp5Result = useReducedMotion(4612);
-    class N {
+    const tmp5Result = useReducedMotion(4850);
+    class P {
       constructor() {
         let items;
         let num = 1;
@@ -765,19 +630,19 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) => {
       }
     }
     obj2 = { backgroundColor: PREMIUM_PERK_PINK, useReducedMotion, scale: sharedValue };
-    N.__closure = obj2;
-    N.__workletHash = 25784602338;
-    N.__initData = __initData4;
+    P.__closure = obj2;
+    P.__workletHash = 25784602338;
+    P.__initData = __initData4;
     const obj3 = { style: items1, children: items3 };
     items1 = [tmp.progressBarMarker, ];
     const obj4 = { left: `${100 * obj[tier]}%` };
     items1[1] = obj4;
-    const animatedStyle = tmp5Result.useAnimatedStyle(N);
+    const animatedStyle = tmp5Result.useAnimatedStyle(P);
     const obj5 = { style: items2 };
     items2 = [tmp.progressBarMarkerBackground, animatedStyle];
-    items3 = [closure_7(tmp2(4612).View, obj5), , ];
+    items3 = [closure_6(tmp2(4850).View, obj5), , ];
     const obj6 = { tier, isDisabled, isTierUnlocked: guild.premiumTier >= tier, isTierAnimated: revealedTier >= tier, isCurrentTier: tier === guild.premiumTier, useReducedMotion };
-    items3[1] = closure_7(closure_15, obj6);
+    items3[1] = closure_6(closure_14, obj6);
     const items4 = [tmp.progressBarMarkerLabel, !tmp20Result && tmp.progressBarMarkerLabelLocked, ];
     const progressBarMarkerLabelWithIcon = tmp20Result && tier !== BoostedGuildTiers.NONE && tmp.progressBarMarkerLabelWithIcon;
     const obj7 = { style: items4, children: items5 };
@@ -786,21 +651,22 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) => {
       tmp20Result = tier !== BoostedGuildTiers.NONE;
     }
     if (tmp20Result) {
-      const obj8 = { source: sharedValue(11181), style: tmp.progressBarMarkerUnlockedIcon };
-      tmp20Result = tmp20(closure_5, obj8);
+      const obj8 = { source: sharedValue(10714), style: tmp.progressBarMarkerUnlockedIcon };
+      const tmp2Result = sharedValue(6157);
+      tmp20Result = tmp20(tmp2Result, obj8);
     }
     items5 = [tmp20Result, ];
     const obj9 = { variant: "text-xs/medium", children: tmp5Result4.getTierName(tier, { useLevels: false }) };
-    const Text = tmp5(4886).Text;
-    tmp5Result4 = useReducedMotion(7666);
-    items5[1] = closure_7(Text, obj9);
-    items3[2] = closure_8(PREMIUM_PERK_PINK, obj7);
-    return closure_8(PREMIUM_PERK_PINK, obj3);
+    const Text = tmp5(5088).Text;
+    tmp5Result4 = useReducedMotion(8020);
+    items5[1] = closure_6(Text, obj9);
+    items3[2] = closure_7(PREMIUM_PERK_PINK, obj7);
+    return closure_7(PREMIUM_PERK_PINK, obj3);
   }
-  const tmp5Result5 = useReducedMotion(4729);
+  const tmp5Result5 = useReducedMotion(4969);
   const isThemeDarkResult = tmp5Result5.isThemeDark(tmp4);
-  const hexWithOpacity = tmp5(4727).hexWithOpacity;
-  useReducedMotion(4727);
+  const hexWithOpacity = tmp5(4967).hexWithOpacity;
+  useReducedMotion(4967);
   const unsafe_rawColors = tmp2(587).unsafe_rawColors;
   if (isThemeDarkResult) {
     PREMIUM_PERK_PINK = hexWithOpacity(unsafe_rawColors.WHITE, 0.4);
@@ -812,6 +678,6 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isDisabled) => {
 size = size_mod;
 let result = size.fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingProgressBarMarker.tsx");
 
-export default tmp5;
+export default tmp4;
 export const MARKER_DIMENSIONS = 28;
 export { TierMarkerPositions };

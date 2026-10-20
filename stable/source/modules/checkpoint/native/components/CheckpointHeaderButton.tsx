@@ -1,15 +1,15 @@
-// Module ID: 15554
-// Function ID: 15555
+// Module ID: 16042
+// Function ID: 16043
 // Name: CheckpointHeaderButton
-// Dependencies: [17, 5115, 21, 4890, 558, 576, 587, 2]
+// Dependencies: [17, 5437, 21, 5092, 558, 576, 587, 2]
 
-// Module 15554 (CheckpointHeaderButton)
+// Module 16042 (CheckpointHeaderButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import CheckpointConstants from "CheckpointConstants" /* 5115 */;
-import createStyles from "createStyles" /* 4890 */;
+import CheckpointConstants from "CheckpointConstants" /* 5437 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
 const jsx = Fragment.jsx;
 let obj = { button: { width: 32, height: 32, alignItems: "center", justifyContent: "center", borderWidth: 1, borderColor: CHECKPOINT_PRIMARY } };
 let closure_5 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointHeaderButton(arg0) {
   let accessibilityLabel;
   let children;
   let onPress;
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp3.button;
   cResult[4] = tmp5;
   tmp4 = tmp5;
-}) : ((arg0) => {
+}) : (function CheckpointHeaderButton(arg0) {
   let accessibilityLabel;
   let children;
   let onPress;

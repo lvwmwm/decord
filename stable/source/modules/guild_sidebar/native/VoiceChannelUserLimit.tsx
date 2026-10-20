@@ -1,18 +1,18 @@
-// Module ID: 16043
-// Function ID: 16044
+// Module ID: 16559
+// Function ID: 16560
 // Name: VoiceChannelUserLimit
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1188, 13602, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1200, 13612, 5088, 2]
 
-// Module 16043 (VoiceChannelUserLimit)
+// Module 16559 (VoiceChannelUserLimit)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13602 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13612 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ obj2 = { height: 20, flexDirection: "row", paddingLeft: 6, alignItems: "center",
 obj3 = { borderTopWidth: 20, borderBottomWidth: 0, borderTopColor: "transparent", borderBottomColor: "transparent", borderRightWidth: 6, borderRightColor: nativeDefault.colors.VOICE_CHANNEL_USER_LIMIT_ACCENT_BACKGROUND, paddingRight: 2 };
 obj4 = { height: 20, flexDirection: "row", paddingRight: 6, paddingLeft: 2, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.VOICE_CHANNEL_USER_LIMIT_ACCENT_BACKGROUND };
 let closure_6 = createStyles(rect);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChannelUserLimit(arg0) {
   let items;
   let items1;
   let total;
@@ -152,14 +152,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let tmp7 = null;
   if (videoLimit) {
     const obj8 = { source: AssetRegistryDefault, size: native.Icon.Sizes.REFRESH_SMALL_16, style: rect.videoIcon };
-    const Icon = tmp(1188).Icon;
+    const Icon = tmp(1200).Icon;
     tmp7 = React3(Icon, obj8);
   }
   cResult[0] = rect.videoIcon;
   cResult[1] = videoLimit;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((videoLimit) => {
+}) : (function VoiceChannelUserLimit(videoLimit) {
   let Text2;
   let items;
   let items1;

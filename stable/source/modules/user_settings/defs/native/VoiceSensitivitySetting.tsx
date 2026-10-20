@@ -1,26 +1,26 @@
-// Module ID: 15068
-// Function ID: 15069
+// Module ID: 15548
+// Function ID: 15549
 // Name: VoiceSensitivitySetting
-// Dependencies: [17, 1999, 7634, 21, 4890, 558, 576, 504, 9306, 9664, 11129, 1126, 2]
+// Dependencies: [17, 2012, 7988, 21, 5092, 558, 576, 504, 5243, 11081, 10664, 1126, 2]
 
-// Module 15068 (VoiceSensitivitySetting)
+// Module 15548 (VoiceSensitivitySetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9306 */;
-import VoiceSensitivityDefault from "VoiceSensitivity" /* 9664 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import createStyles from "createStyles" /* 4890 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5243 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import VoiceSensitivityDefault from "VoiceSensitivity" /* 11081 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ slider: { marginTop: 8 } });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceSensitivitySettingDescription() {
   let inputMode;
   let tmp5;
   let tmp6;
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp = inputMode;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [MediaEngineStore];
-    const fn = function n() {
+    const fn = function l() {
       const obj = { inputMode: MediaEngineStore.getMode(), vadThreshold: MediaEngineStore.getModeOptions().threshold, vadAutoThreshold: MediaEngineStore.getModeOptions().autoThreshold };
       return obj;
     };
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = vadThreshold;
   cResult[7] = tmp11;
   tmp10 = tmp11;
-}) : (() => {
+}) : (function useVoiceSensitivitySettingDescription() {
   let inputMode;
   let vadAutoThreshold;
   let vadThreshold;

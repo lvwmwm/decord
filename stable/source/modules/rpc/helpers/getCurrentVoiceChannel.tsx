@@ -1,13 +1,13 @@
-// Module ID: 6876
-// Function ID: 6877
+// Module ID: 7085
+// Function ID: 7086
 // Name: getCurrentVoiceChannel
-// Dependencies: [502, 2051, 4909, 2]
+// Dependencies: [502, 2065, 5113, 2]
 // Exports: default
 
-// Module 6876 (getCurrentVoiceChannel)
+// Module 7085 (getCurrentVoiceChannel)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rpc/helpers/getCurrentVoiceChannel.tsx");

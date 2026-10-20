@@ -1,24 +1,24 @@
-// Module ID: 9705
-// Function ID: 9706
+// Module ID: 11140
+// Function ID: 11141
 // Name: GestureContainer
-// Dependencies: [19, 17, 9050, 9057, 21, 4890, 587, 558, 576, 1484, 4612, 6140, 5093, 4891, 1188, 2]
+// Dependencies: [19, 17, 10355, 10827, 21, 5092, 587, 558, 576, 1497, 4850, 6335, 5934, 5093, 1200, 2]
 
-// Module 9705 (GestureContainer)
+// Module 11140 (GestureContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import ChannelCallStore from "ChannelCallStore" /* 9050 */;
+import native from "native" /* 1200 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import ChannelCallStore from "ChannelCallStore" /* 10355 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 9057 */;
-import createStyles from "createStyles" /* 4890 */;
+import Constants from "Constants" /* 10827 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let children, set;
+let set;
 
 let hasOwnProperty;
 let metroRequire;
@@ -38,7 +38,7 @@ const __initData3 = { code: "function GestureContainerTsx3(){const{interpolate,p
 const __initData4 = { code: "function GestureContainerTsx4({velocityY:velocityY}){const{position,THRESHOLD_VELOCITY,runOnJS,ModalActionCreators,withTiming,DECELERATED_EASING}=this.__closure;if(position.get()===1||velocityY>THRESHOLD_VELOCITY){runOnJS(ModalActionCreators.pop)();}else{position.set(withTiming(0,{duration:300,easing:DECELERATED_EASING}));}}" };
 const __initData5 = { code: "function GestureContainerTsx5({translationY:translationY}){const{THRESHOLD_TRANSLATE,position}=this.__closure;const boundedGestureY=Math.max(Math.min(translationY,THRESHOLD_TRANSLATE),0)/THRESHOLD_TRANSLATE;const easeOutCubic=1-Math.pow(1-boundedGestureY,3);position.set(easeOutCubic);}" };
 const __initData6 = { code: "function GestureContainerTsx6(){const{interpolate,position,height}=this.__closure;return{flex:1,transform:[{translateY:interpolate(position.get(),[0,1],[0,height*0.06])},{scale:interpolate(position.get(),[0,1],[1,0.9])}]};}" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GestureContainer(children) {
   let height;
   let sharedValue;
   let tmp16;
@@ -64,11 +64,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     }
   }
   const tmp6 = useChannelCallStore(tmp5);
-  height = sharedValue(1484)().height;
+  height = sharedValue(1497)().height;
   const tmp7 = sharedValue;
-  const tmpResult = tmp(4612);
+  const tmpResult = tmp(4850);
   sharedValue = tmpResult.useSharedValue(0);
-  const Gesture = tmp(6140).Gesture;
+  const Gesture = tmp(6335).Gesture;
   const PanResult = Gesture.Pan();
   const enabledResult = PanResult.enabled(tmp6);
   class L {
@@ -81,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   L.__workletHash = 819146970851;
   L.__initData = __initData2;
   const onUpdateResult = enabledResult.onUpdate(L);
-  class C {
+  class O {
     constructor(velocityY) {
       velocityY = velocityY.velocityY;
       const tmp = sharedValue;
@@ -98,13 +98,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
       obj2.runOnJS(ModalActionCreatorsDefault.pop)();
     }
   }
-  let obj3 = { position: sharedValue, THRESHOLD_VELOCITY, runOnJS: tmp(4612).runOnJS, ModalActionCreators: sharedValue(5093), withTiming: tmp(4891).withTiming, DECELERATED_EASING: tmp(1188).DECELERATED_EASING };
-  C.__closure = obj3;
-  C.__workletHash = 4811943867759;
-  C.__initData = __initData;
+  let obj3 = { position: sharedValue, THRESHOLD_VELOCITY, runOnJS: tmp(4850).runOnJS, ModalActionCreators: sharedValue(5934), withTiming: tmp(5093).withTiming, DECELERATED_EASING: tmp(1200).DECELERATED_EASING };
+  O.__closure = obj3;
+  O.__workletHash = 4811943867759;
+  O.__initData = __initData;
   let items = [-closure_5, closure_5];
   let items1 = [-closure_6, closure_6];
-  const onEndResult = onUpdateResult.onEnd(C);
+  const onEndResult = onUpdateResult.onEnd(O);
   const activeOffsetYResult = onEndResult.activeOffsetY(items);
   const failOffsetXResult = activeOffsetYResult.failOffsetX(items1);
   const fn = function f() {
@@ -122,8 +122,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     obj5 = ReanimatedRexport;
     return obj;
   };
-  const tmpResult2 = tmp(4612);
-  let obj4 = { interpolate: tmp(4612).interpolate, position: sharedValue, height };
+  const tmpResult2 = tmp(4850);
+  let obj4 = { interpolate: tmp(4850).interpolate, position: sharedValue, height };
   fn.__closure = obj4;
   fn.__workletHash = 16049033434372;
   fn.__initData = __initData3;
@@ -156,22 +156,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     }
     cResult[4] = failOffsetXResult;
     cResult[5] = tmp11;
-    cResult[6] = jsx(tmp(6140).GestureDetector, { gesture: failOffsetXResult, children: tmp11 });
-    const tmp15 = jsx(tmp(6140).GestureDetector, { gesture: failOffsetXResult, children: tmp11 });
+    cResult[6] = jsx(tmp(6335).GestureDetector, { gesture: failOffsetXResult, children: tmp11 });
+    const tmp15 = jsx(tmp(6335).GestureDetector, { gesture: failOffsetXResult, children: tmp11 });
   }
   cResult[1] = animatedStyle;
   cResult[2] = children;
-  cResult[3] = jsx(tmp7(4612).View, { style: animatedStyle, children });
-  const tmp12 = jsx(tmp7(4612).View, { style: animatedStyle, children });
-}) : ((children) => {
+  cResult[3] = jsx(tmp7(4850).View, { style: animatedStyle, children });
+  const tmp12 = jsx(tmp7(4850).View, { style: animatedStyle, children });
+}) : (function GestureContainer(children) {
   let sharedValue;
   children = children.children;
   let tmp = closure_8();
   const tmp2 = useChannelCallStore((isGestureEnabled) => isGestureEnabled.isGestureEnabled);
-  const height = sharedValue(1484)().height;
-  let obj = height(4612);
+  const height = sharedValue(1497)().height;
+  let obj = height(4850);
   sharedValue = obj.useSharedValue(0);
-  const Gesture = height(6140).Gesture;
+  const Gesture = height(6335).Gesture;
   const fn = function h(translationY) {
     const result = sharedValue.set(1 - Math.pow(1 - Math.max(Math.min(translationY.translationY, c9), 0) / c9, 3));
   };
@@ -199,7 +199,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
       obj2.runOnJS(ModalActionCreatorsDefault.pop)();
     }
   }
-  let obj3 = { position: sharedValue, THRESHOLD_VELOCITY, runOnJS: height(4612).runOnJS, ModalActionCreators: sharedValue(5093), withTiming: height(4891).withTiming, DECELERATED_EASING: height(1188).DECELERATED_EASING };
+  let obj3 = { position: sharedValue, THRESHOLD_VELOCITY, runOnJS: height(4850).runOnJS, ModalActionCreators: sharedValue(5934), withTiming: height(5093).withTiming, DECELERATED_EASING: height(1200).DECELERATED_EASING };
   T.__closure = obj3;
   T.__workletHash = 6850090802761;
   T.__initData = __initData4;
@@ -223,13 +223,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     return obj;
   };
   const failOffsetXResult = activeOffsetYResult.failOffsetX(items1);
-  const obj9 = height(4612);
-  let obj4 = { interpolate: height(4612).interpolate, position: sharedValue, height };
+  const obj9 = height(4850);
+  let obj4 = { interpolate: height(4850).interpolate, position: sharedValue, height };
   fn2.__closure = obj4;
   fn2.__workletHash = 15988962645633;
   fn2.__initData = __initData6;
   const animatedStyle = obj9.useAnimatedStyle(fn2);
-  const GestureDetector = height(6140).GestureDetector;
+  const GestureDetector = height(6335).GestureDetector;
   return <View style={tmp.background}>{null}</View>;
 });
 let result = size.fileFinishedImporting("modules/video_calls/native/components/GestureContainer.tsx");

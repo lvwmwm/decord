@@ -1,12 +1,12 @@
-// Module ID: 12031
-// Function ID: 12032
+// Module ID: 12104
+// Function ID: 12105
 // Name: useGameMentionSearchBarHeight
-// Dependencies: [17, 558, 10723, 2]
+// Dependencies: [17, 558, 10516, 2]
 // Exports: default
 
-// Module 12031 (useGameMentionSearchBarHeight)
+// Module 12104 (useGameMentionSearchBarHeight)
 import react_native from "react-native" /* 17 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10723 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10516 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("modules/game_mentions/hooks/native/useGameMentionSearchBarHeight.tsx");
 
-export default () => {
+export default function useGameMentionSearchBarHeight() {
   const obj = useScaledTextLineHeight;
   const sum = 24 + obj.useScaledTextLineHeight(c3);
   const obj2 = useScaledTextLineHeight;

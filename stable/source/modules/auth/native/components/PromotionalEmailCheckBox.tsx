@@ -1,19 +1,19 @@
-// Module ID: 15905
-// Function ID: 15906
+// Module ID: 16415
+// Function ID: 16416
 // Name: PromotionalEmailCheckBox
-// Dependencies: [19, 17, 6083, 21, 4890, 558, 576, 4594, 15906, 1126, 5991, 4886, 2]
+// Dependencies: [19, 17, 5931, 21, 5092, 558, 576, 4832, 16416, 1126, 6178, 5088, 2]
 
-// Module 15905 (PromotionalEmailCheckBox)
+// Module 16415 (PromotionalEmailCheckBox)
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6083 */;
+import PromoEmailConsentStore from "PromoEmailConsentStore" /* 5931 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, style;
+let _require;
 
 let c2;
 let c3;
@@ -25,7 +25,7 @@ let metroRequire;
 ({ usePromoEmailConsentStore: closure_4, setPromoEmailConsentChecked: hasOwnProperty } = PromoEmailConsentStore);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ checkboxRow: { flexDirection: "row", alignItems: "flex-start", gap: 8 }, checkboxLabel: { flex: 1 } });
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromotionalEmailCheckBox(arg0) {
   let accessibilityRole;
   let accessibilityState;
   let closure_0;
@@ -141,7 +141,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp19 = closure_6(require("Text/Text").Text, obj4);
   }
   return null;
-}) : ((style) => {
+}) : (function PromotionalEmailCheckBox(style) {
   let accessibilityRole;
   let accessibilityState;
   let closure_0;

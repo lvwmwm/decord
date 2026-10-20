@@ -1,14 +1,14 @@
-// Module ID: 16341
-// Function ID: 16342
+// Module ID: 16864
+// Function ID: 16865
 // Name: ConnectionFineIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16342, 4579, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16865, 4817, 2]
 
-// Module 16341 (ConnectionFineIcon)
+// Module 16864 (ConnectionFineIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4579 */;
-import AssetRegistry from "AssetRegistry" /* 16342 */;
+import BaseIconImage2 from "BaseIconImage" /* 4817 */;
+import AssetRegistry from "AssetRegistry" /* 16865 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 
 let closure_3 = ["style", "color"];
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectionFineIcon(arg0) {
   let ICON_FEEDBACK_POSITIVE;
   let color;
   let style;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4579).BaseIconImage;
+  const BaseIconImage = tmp(4817).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={ICON_FEEDBACK_POSITIVE} style={tmp5} />;
   cResult[5] = ICON_FEEDBACK_POSITIVE;
@@ -67,7 +67,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp5;
   cResult[8] = tmp14;
   tmp12 = tmp14;
-}) : ((color) => {
+}) : (function ConnectionFineIcon(color) {
   let ICON_FEEDBACK_POSITIVE = color.color;
   const style = color.style;
   if (ICON_FEEDBACK_POSITIVE === undefined) {

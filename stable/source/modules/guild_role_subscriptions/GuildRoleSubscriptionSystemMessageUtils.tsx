@@ -1,17 +1,17 @@
-// Module ID: 7651
-// Function ID: 7652
+// Module ID: 8005
+// Function ID: 8006
 // Name: GuildRoleSubscriptionSystemMessageUtils
-// Dependencies: [2074, 1377, 7652, 1085, 11, 1126, 6754, 5070, 2]
+// Dependencies: [2087, 1390, 8006, 1085, 11, 1126, 6954, 5107, 2]
 // Exports: getRoleSubscriptionPurchaseStickerCTA, getRoleSubscriptionPurchaseSystemMessageAstFormattedContent, getRoleSubscriptionPurchaseSystemMessageContentMobile, getRoleSubscriptionPurchaseSystemMessageEventProperties, getRoleSubscriptionPurchaseSystemMessageFormattedContent, isEligibleForRoleSubscriptionPurchaseSystemMessageSettings, pickRoleSubscriptionPurchaseSticker, trackRoleSubscriptionPurchaseMessageTierClick
 
-// Module 7651 (GuildRoleSubscriptionSystemMessageUtils)
+// Module 8005 (GuildRoleSubscriptionSystemMessageUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl2 from "intl" /* 1126 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
-import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 6754 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
-import GuildRoleSubscriptionSystemMessageConstants from "GuildRoleSubscriptionSystemMessageConstants" /* 7652 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
+import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 6954 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import UserStore from "UserStore" /* 1390 */;
+import GuildRoleSubscriptionSystemMessageConstants from "GuildRoleSubscriptionSystemMessageConstants" /* 8006 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

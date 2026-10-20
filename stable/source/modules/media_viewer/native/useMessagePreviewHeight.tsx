@@ -1,10 +1,10 @@
-// Module ID: 11153
-// Function ID: 11154
+// Module ID: 10690
+// Function ID: 10691
 // Name: useMessagePreviewHeight
-// Dependencies: [570, 558, 1259, 2]
+// Dependencies: [570, 558, 1272, 2]
 // Exports: setMesssagePreviewCollapsedHeight, setMesssagePreviewExpandedHeight, setMesssagePreviewHeight, useMessagePreviewCollapsedheight, useMessagePreviewExpandedHeight
 
-// Module 11153 (useMessagePreviewHeight)
+// Module 10690 (useMessagePreviewHeight)
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -20,8 +20,12 @@ ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result2 = size.fileFinishedImporting("modules/media_viewer/native/useMessagePreviewHeight.tsx");
 
 export { useMessagePreviewHeightStore };
-export const useMessagePreviewCollapsedheight = () => obj().collapsedHeight;
-export const useMessagePreviewExpandedHeight = () => obj().expandedHeight;
+export const useMessagePreviewCollapsedheight = function useMessagePreviewCollapsedheight() {
+  return obj().collapsedHeight;
+};
+export const useMessagePreviewExpandedHeight = function useMessagePreviewExpandedHeight() {
+  return obj().expandedHeight;
+};
 export const setMesssagePreviewHeight = function setMesssagePreviewHeight(arg0) {
   let closure_0;
   _require = arg0;

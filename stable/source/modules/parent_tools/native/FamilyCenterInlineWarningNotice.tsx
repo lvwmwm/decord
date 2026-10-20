@@ -1,17 +1,17 @@
-// Module ID: 14682
-// Function ID: 14683
+// Module ID: 15158
+// Function ID: 15159
 // Name: FamilyCenterInlineWarningNotice
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4803, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 7567, 5088, 2]
 
-// Module 14682 (FamilyCenterInlineWarningNotice)
+// Module 15158 (FamilyCenterInlineWarningNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import WarningIcon2 from "WarningIcon" /* 4803 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import WarningIcon2 from "WarningIcon" /* 7567 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ obj2 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.spac
 createStyles = createStyles.createStyles;
 obj3 = { flex: 1, paddingRight: nativeDefault.space.PX_8 };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterInlineWarningNotice(arg0) {
   let items;
   let style;
   let text;
@@ -44,7 +44,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
-      const WarningIcon = tmp(4803).WarningIcon;
+      const WarningIcon = tmp(7567).WarningIcon;
       const tmp10 = React3(WarningIcon, obj2);
       cResult[3] = tmp10;
       tmp7 = tmp10;
@@ -83,7 +83,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.container;
   cResult[2] = items1;
   tmp5 = items1;
-}) : ((arg0) => {
+}) : (function FamilyCenterInlineWarningNotice(arg0) {
   let items;
   let items1;
   let style;

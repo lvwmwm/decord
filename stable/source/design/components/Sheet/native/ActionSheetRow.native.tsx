@@ -1,9 +1,9 @@
-// Module ID: 6697
-// Function ID: 6698
+// Module ID: 6895
+// Function ID: 6896
 // Name: ActionSheetRow
-// Dependencies: [109, 19, 17, 21, 558, 576, 5993, 5999, 6074, 6698, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 6180, 6188, 6265, 6896, 2]
 
-// Module 6697 (ActionSheetRow)
+// Module 6895 (ActionSheetRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -13,16 +13,16 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const TableRow2 = tmp(5993);
-const TableRowIcon2 = tmp(5999);
-const TableRowGroup = tmp(6074);
-const TableSwitchRow2 = tmp(6698);
+const TableRow2 = tmp(6180);
+const TableRowIcon2 = tmp(6188);
+const TableRowGroup = tmp(6265);
+const TableSwitchRow2 = tmp(6896);
 let closure_2 = ["label", "variant", "arrow", "icon"];
 const View = react_native.View;
 const jsx = Fragment.jsx;
 const redux = react.createContext("default");
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionSheetRow(arg0) {
   let arrow;
   let icon;
   let label;
@@ -93,7 +93,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[10] = str;
   cResult[11] = tmp14;
   tmp12 = tmp14;
-}) : ((variant) => {
+}) : (function ActionSheetRow(variant) {
   let arrow;
   let icon;
   let str = variant.variant;
@@ -109,7 +109,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <Provider value={str}>{null}</Provider>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-tmp2.Icon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+tmp2.Icon = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionSheetRowIcon(arg0) {
   let IconComponent;
   let source;
   const obj = react2;
@@ -131,7 +131,7 @@ tmp2.Icon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = context;
   cResult[3] = tmp6;
   tmp5 = tmp6;
-}) : ((IconComponent) => {
+}) : (function ActionSheetRowIcon(IconComponent) {
   IconComponent = IconComponent.IconComponent;
   const source = IconComponent.source;
   const context = react.useContext(redux);
@@ -140,7 +140,7 @@ tmp2.Icon = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return jsx(TableRowIcon, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-tmp2.Group = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+tmp2.Group = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionSheetRowGroup(arg0) {
   let children;
   let hasIcons;
   let title;
@@ -162,7 +162,7 @@ tmp2.Group = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = title;
   cResult[3] = tmp5;
   tmp4 = tmp5;
-}) : ((arg0) => {
+}) : (function ActionSheetRowGroup(arg0) {
   let children;
   let hasIcons;
   let title;
@@ -170,7 +170,7 @@ tmp2.Group = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <View>{jsx(TableRowGroup.TableRowGroup, { hasIcons, title, children })}</View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionSheetSwitchRow(arg0) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -185,7 +185,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((arg0) => {
+}) : (function ActionSheetSwitchRow(arg0) {
   const TableSwitchRow = TableSwitchRow2.TableSwitchRow;
   const merged = Object.assign(arg0);
   return <TableSwitchRow />;

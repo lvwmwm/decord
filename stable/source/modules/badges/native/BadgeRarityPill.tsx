@@ -1,24 +1,24 @@
-// Module ID: 10898
-// Function ID: 10899
+// Module ID: 10589
+// Function ID: 10590
 // Name: BadgeRarityPill
-// Dependencies: [19, 17, 21, 587, 1381, 10899, 1126, 10901, 4727, 10903, 10905, 4890, 558, 576, 4729, 4791, 4886, 2]
+// Dependencies: [19, 17, 21, 587, 1394, 10590, 1126, 10592, 4967, 10594, 10596, 5092, 558, 576, 4969, 5031, 5088, 2]
 
-// Module 10898 (BadgeRarityPill)
+// Module 10589 (BadgeRarityPill)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import BadgeRarity from "BadgeRarity" /* 1381 */;
-import ColorUtils from "ColorUtils" /* 4727 */;
-import shared from "shared" /* 4729 */;
-import useThemeDefault from "useTheme" /* 4791 */;
-import ExperimentalCommonIcon from "ExperimentalCommonIcon" /* 10899 */;
-import ExperimentalRareIcon from "ExperimentalRareIcon" /* 10901 */;
-import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 10903 */;
-import ExperimentalMythicIcon from "ExperimentalMythicIcon" /* 10905 */;
+import BadgeRarity from "BadgeRarity" /* 1394 */;
+import ColorUtils from "ColorUtils" /* 4967 */;
+import shared from "shared" /* 4969 */;
+import useThemeDefault from "useTheme" /* 5031 */;
+import ExperimentalCommonIcon from "ExperimentalCommonIcon" /* 10590 */;
+import ExperimentalRareIcon from "ExperimentalRareIcon" /* 10592 */;
+import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 10594 */;
+import ExperimentalMythicIcon from "ExperimentalMythicIcon" /* 10596 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const Text_Text = tmp(4886);
+const Text_Text = tmp(5088);
 function getRarityStyle(rarity, arg1) {
   let intl;
   let intl2;
@@ -66,7 +66,7 @@ let c6 = 0.24;
 let obj = { pill: obj2, label: { textTransform: "uppercase" } };
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_6, minHeight: 20, borderRadius: nativeDefault.radii.round, borderWidth: 1 };
 let closure_8 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rarity) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeRarityPill(rarity) {
   let Icon;
   let background;
   let border;
@@ -167,7 +167,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rarity) => {
     cResult[2] = obj7;
     tmp6 = obj7;
   }
-}) : ((rarity) => {
+}) : (function BadgeRarityPill(rarity) {
   let items;
   let items1;
   let items2;

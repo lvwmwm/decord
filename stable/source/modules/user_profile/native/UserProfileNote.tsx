@@ -1,20 +1,18 @@
-// Module ID: 12872
-// Function ID: 12873
+// Module ID: 13181
+// Function ID: 13182
 // Name: UserProfileNote
-// Dependencies: [19, 21, 558, 576, 7861, 12873, 4854, 12875, 4886, 1126, 5993, 12879, 2]
+// Dependencies: [19, 21, 558, 576, 8310, 13182, 5056, 13184, 5088, 1126, 6180, 13188, 2]
 
-// Module 12872 (UserProfileNote)
+// Module 13181 (UserProfileNote)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import openEditNoteModalDefault from "openEditNoteModal" /* 12875 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import openEditNoteModalDefault from "openEditNoteModal" /* 13184 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let userId;
-
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileNote(userId) {
   let trackUserProfileAction;
   let obj = userId(trackUserProfileAction[3]);
   const cResult = obj.c(15);
@@ -97,7 +95,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       tmp16 = tmp18;
     }
   }
-  const fn = function o() {
+  function handlePress() {
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet();
     const obj2 = {
@@ -108,13 +106,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       }
     };
     openEditNoteModalDefault(obj2);
-  };
+  }
   cResult[0] = onBack;
   cResult[1] = trackUserProfileAction;
   cResult[2] = userId;
-  cResult[3] = fn;
-  tmp5 = fn;
-}) : ((userId) => {
+  cResult[3] = handlePress;
+  tmp5 = handlePress;
+}) : (function UserProfileNote(userId) {
   let intl;
   let stringResult;
   userId = userId.userId;
@@ -145,7 +143,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     const Icon = tmp(tmp2[10]).TableRow.Icon;
     tmp4Result = tmp4(Icon, obj4);
   }
-  return <TableRow label={null} subLabel={tmp5} accessibilityHint={stringResult} onPress={function onPress() {
+  return <TableRow label={null} subLabel={tmp5} accessibilityHint={stringResult} onPress={function handlePress() {
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet();
     const obj2 = {

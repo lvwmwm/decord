@@ -1,22 +1,22 @@
-// Module ID: 9316
-// Function ID: 9317
+// Module ID: 5258
+// Function ID: 5259
 // Name: LastUsedVideoBackgroundOption
-// Dependencies: [19, 1195, 1231, 1377, 9317, 4528, 558, 576, 504, 2]
+// Dependencies: [19, 1207, 1244, 1390, 5259, 4769, 558, 576, 504, 2]
 // Exports: getLastUsedVideoBackgroundOption
 
-// Module 9316 (LastUsedVideoBackgroundOption)
+// Module 5258 (LastUsedVideoBackgroundOption)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4528 */;
-import VideoBackgroundUtils from "VideoBackgroundUtils" /* 9317 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
+import VideoBackgroundUtils from "VideoBackgroundUtils" /* 5259 */;
 import react from "react" /* 19 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import UserStore from "UserStore" /* 1377 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLastUsedVideoBackgroundOption() {
   let currentUser;
   let settings;
   let tmp12;
@@ -59,12 +59,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores1 = tmpResult5.useStateFromStores(tmp8, tmp9);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [UserStore];
-    const fn3 = function k() {
-      return currentUser.getCurrentUser();
-    };
+    class S {
+      constructor() {
+        return currentUser.getCurrentUser();
+      }
+    }
     cResult[4] = items2;
-    cResult[5] = fn3;
-    tmp13 = fn3;
+    cResult[5] = S;
+    tmp13 = S;
     tmp12 = items2;
   } else {
     tmp12 = cResult[4];
@@ -74,7 +76,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores2 = tmpResult6.useStateFromStores(tmp12, tmp13);
   let tmp16 = null;
   if (null != stateFromStores2) {
-    let tmp19;
+    let tmp20;
     if (cResult[6] === stateFromStores) {
       let tmp17;
       if (cResult[7] === stateFromStores2) {
@@ -84,25 +86,35 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const tmpResult7 = VideoBackgroundUtils;
     if (!tmpResult7.isCustomBackgroundOption(stateFromStores)) {
-      let tmp20;
+      let tmp21;
       if (typeof stateFromStores !== "number") {
-        tmp20 = stateFromStores;
+        tmp21 = stateFromStores;
       } else {
-        tmp20 = null;
+        tmp21 = null;
         VideoBackgroundUtils;
       }
-      tmp19 = tmp20;
+      tmp20 = tmp21;
     } else {
-      tmp19 = null;
       PremiumUtilsDefault;
+      tmp20 = null;
+      class S {
+        constructor() {
+          return currentUser.getCurrentUser();
+        }
+      }
+    }
+    class S {
+      constructor() {
+        return currentUser.getCurrentUser();
+      }
     }
     cResult[6] = stateFromStores;
     cResult[7] = stateFromStores2;
-    cResult[8] = tmp19;
-    tmp17 = tmp19;
+    cResult[8] = tmp20;
+    tmp17 = tmp20;
   }
   return tmp16;
-}) : (() => {
+}) : (function useLastUsedVideoBackgroundOption() {
   let currentUser;
   let settings;
   let stateFromStores;
@@ -134,7 +146,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           tmp8 = tmp3;
         } else {
           tmp8 = null;
-          tmp4(9317);
+          tmp4(5259);
         }
         tmp7 = tmp8;
       } else {

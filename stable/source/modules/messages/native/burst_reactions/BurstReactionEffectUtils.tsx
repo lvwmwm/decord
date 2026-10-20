@@ -1,19 +1,19 @@
-// Module ID: 7412
-// Function ID: 7413
+// Module ID: 7921
+// Function ID: 7922
 // Name: burst_reactions/BurstReactionEffectUtils
-// Dependencies: [5, 32, 19, 17, 558, 576, 4527, 7413, 1886, 1369, 7450, 2]
+// Dependencies: [5, 32, 19, 17, 558, 576, 4768, 7922, 1899, 1382, 7959, 2]
 
-// Module 7412 (burst_reactions/BurstReactionEffectUtils)
+// Module 7921 (burst_reactions/BurstReactionEffectUtils)
 import react_native from "react-native" /* 17 */;
-import EmojiUtils from "EmojiUtils" /* 4527 */;
-import getBurstAnimation from "getBurstAnimation" /* 7413 */;
+import EmojiUtils from "EmojiUtils" /* 4768 */;
+import getBurstAnimation from "getBurstAnimation" /* 7922 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c2, c3, channelId, stringify;
+let c2, c3, stringify;
 
 function generateAnimationSource(arg0, arg1, arg2, arg3) {
   return obj(...arguments);
@@ -266,7 +266,7 @@ obj = function _generateAnimationSourceFromLocalImage() {
               b = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Set", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -357,7 +357,7 @@ obj = function _generateAnimationSourceFromLocalImage() {
 let _slicedToArray = _slicedToArray_mod;
 const Image = react_native.Image;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstReactionAnimationSource(channelId) {
   let closure_4;
   let emoji;
   obj = channelId(emoji[5]);
@@ -450,7 +450,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[5] = items;
   tmp5 = items;
   tmp4 = fn;
-}) : ((channelId) => {
+}) : (function useBurstReactionAnimationSource(channelId) {
   let closure_4;
   let first;
   channelId = channelId.channelId;

@@ -1,12 +1,12 @@
-// Module ID: 7180
-// Function ID: 7181
+// Module ID: 7379
+// Function ID: 7380
 // Name: useIntersectionObserver
-// Dependencies: [19, 558, 576, 7181, 7182, 2]
+// Dependencies: [19, 558, 576, 7380, 7381, 2]
 
-// Module 7180 (useIntersectionObserver)
+// Module 7379 (useIntersectionObserver)
 import react2 from "react" /* 576 */;
-import reactDefault from "react" /* 7181 */;
-import InteractionObserverUtils from "InteractionObserverUtils" /* 7182 */;
+import reactDefault from "react" /* 7380 */;
+import InteractionObserverUtils from "InteractionObserverUtils" /* 7381 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ let metroRequire;
 ({ useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty, useLayoutEffect: metroRequire } = react);
 let closure_7 = {};
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIntersectionObserver(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let ref;
@@ -112,7 +112,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   cResult[4] = items1;
   tmp10 = items1;
   tmp9 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useIntersectionObserver(arg0, arg1) {
   let ref;
   let closure_0 = arg0;
   let flag = arg2;
@@ -125,7 +125,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   const tmp2 = closure_5(null);
   dependencyMap = tmp2;
   let tmp4 = arg1;
-  const tmp3 = flag(7181);
+  const tmp3 = flag(7380);
   if (arg1 == null) {
     tmp4 = closure_7;
   }
@@ -172,7 +172,7 @@ let items = [1, { threshold: 1 }];
 let items1 = [items];
 const map = new Map(items1);
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVisible(arg0, arg1, arg2) {
   let tmp4;
   let tmp6;
   let closure_0 = arg0;
@@ -184,7 +184,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   }
   const tmp3 = undefined === arg2 || arg2;
   if (cResult[0] !== arg0) {
-    const fn = function l(isIntersecting) {
+    const fn = function s(isIntersecting) {
       closure_0(isIntersecting.isIntersecting);
     };
     cResult[0] = arg0;
@@ -209,7 +209,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
     tmp6 = cResult[3];
   }
   return closure_8(tmp5.current, tmp6, tmp3);
-}) : ((arg0) => {
+}) : (function useIsVisible(arg0) {
   let closure_0 = arg0;
   let num = arg1;
   if (arg1 === undefined) {
@@ -220,7 +220,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
     flag = true;
   }
   const items = [num];
-  const tmp = num(7181)((isIntersecting) => {
+  const tmp = num(7380)((isIntersecting) => {
     closure_0(isIntersecting.isIntersecting);
   });
   return closure_8(tmp.current, closure_4(() => {

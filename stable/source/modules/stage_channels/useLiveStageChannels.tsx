@@ -1,16 +1,16 @@
-// Module ID: 16111
-// Function ID: 16112
+// Module ID: 16627
+// Function ID: 16628
 // Name: useLiveStageChannels
-// Dependencies: [2051, 4509, 2056, 2060, 558, 576, 1375, 504, 11, 2]
+// Dependencies: [2065, 4750, 2070, 2073, 558, 576, 1388, 504, 11, 2]
 // Exports: getAllLiveStageChannels
 
-// Module 16111 (useLiveStageChannels)
+// Module 16627 (useLiveStageChannels)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 576 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import StageInstanceStore from "StageInstanceStore" /* 2056 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import StageInstanceStore from "StageInstanceStore" /* 2070 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let _require;
 let tmp;
 const get_initialized = tmp(504);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAllVisibleChannels(arg0) {
   let closure_0;
   let first;
   let tmp11;
@@ -64,7 +64,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = cResult[4];
   }
   if (cResult[5] !== stateFromStoresArray) {
-    const fn2 = function _() {
+    const fn2 = function h() {
       return stateFromStoresArray.filter((item) => closure_1_4.can(closure_1_0(closure_1_2[3]).JOIN_VOCAL_CHANNEL_PERMISSIONS, item));
     };
     const items3 = [stateFromStoresArray];
@@ -79,7 +79,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult2 = require("get initialized");
   return tmpResult2.useStateFromStoresArray(tmp9, tmp11, tmp12);
-}) : ((arg0) => {
+}) : (function useAllVisibleChannels(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelStore];
@@ -96,7 +96,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj2.useStateFromStoresArray(items2, () => stateFromStoresArray.filter((item) => closure_1_4.can(closure_1_0(closure_1_2[3]).JOIN_VOCAL_CHANNEL_PERMISSIONS, item)), items3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAllLiveStageChannels() {
   let tmp4;
   let tmp5;
   let tmp6;
@@ -120,7 +120,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return closure_6(tmpResult.useStateFromStores(tmp4, tmp5, tmp6));
-}) : (() => {
+}) : (function useAllLiveStageChannels() {
   const items = [StageInstanceStore];
   const obj = get_initialized;
   return closure_6(obj.useStateFromStores(items, () => {
@@ -129,7 +129,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, []));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLiveStageChannels(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -162,7 +162,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return closure_6(tmpResult.useStateFromStoresArray(first, tmp6, tmp7));
-}) : ((arg0) => {
+}) : (function useLiveStageChannels(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

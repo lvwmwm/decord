@@ -1,15 +1,15 @@
-// Module ID: 16902
-// Function ID: 16903
+// Module ID: 17491
+// Function ID: 17492
 // Name: useAutoSearchMembersTab
-// Dependencies: [19, 11967, 11977, 1085, 558, 576, 12, 11968, 11985, 11966, 2]
+// Dependencies: [19, 12052, 12054, 1085, 558, 576, 12, 12045, 12063, 12038, 2]
 
-// Module 16902 (useAutoSearchMembersTab)
+// Module 17491 (useAutoSearchMembersTab)
 import _mod12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1085 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11966 */;
-import SearchPlatformConstants from "SearchPlatformConstants" /* 11977 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12038 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 12054 */;
 import react from "react" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 11967 */;
+import SearchQueryStore from "SearchQueryStore" /* 12052 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let _require;
 
 let closure_5 = SearchPlatformConstants.SEARCH_TEXT_INPUT_DEBOUNCE_TIME;
 const SearchTypes = Constants.SearchTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutoSearchMembersTab(arg0, arg1) {
   let autocompleteVisible;
   let closure_0;
   _require = arg0;
@@ -55,7 +55,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     }
     const effect1 = obj2.useEffect(tmp5, tmp6);
   }
-  const fn = function o() {
+  const fn = function b() {
     if (!closure_1) {
       const tmp = require;
       let obj = _mod12;
@@ -99,7 +99,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[3] = items1;
   tmp3 = items1;
   tmp2 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useAutoSearchMembersTab(arg0, arg1) {
   let autocompleteVisible;
   let closure_0 = arg0;
   let closure_1 = arg1;

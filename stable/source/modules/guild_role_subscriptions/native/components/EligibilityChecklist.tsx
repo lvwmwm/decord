@@ -1,21 +1,19 @@
-// Module ID: 17888
-// Function ID: 17889
+// Module ID: 18519
+// Function ID: 18520
 // Name: EligibilityChecklist
-// Dependencies: [19, 17, 21, 4890, 558, 576, 17889, 17890, 5974, 4886, 5594, 1188, 15035, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 18520, 18521, 6157, 5088, 5379, 1200, 15515, 2]
 
-// Module 17888 (EligibilityChecklist)
+// Module 18519 (EligibilityChecklist)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import FastImageDefault from "FastImage" /* 5974 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import FastImageDefault from "FastImage" /* 6157 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let style;
 
 let closure_4;
 let hasOwnProperty;
@@ -24,7 +22,7 @@ const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ row: { paddingHorizontal: 24, paddingTop: 16, flex: 0, flexDirection: "row" }, eligibleRow: { opacity: 0.8 }, rowStatusIcon: { height: 20, width: 20, marginRight: 16 }, rowTextColumn: { flex: 1, flexDirection: "column" }, rowLabel: { marginBottom: 4 }, actionButtonWrapper: { marginTop: 12 }, divider: { marginHorizontal: 24 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function EligibilityChecklistRow(arg0) {
   let isLast;
   let item;
   let items;
@@ -43,10 +41,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp6 = cResult[2];
     }
     if (item.checked) {
-      tmp7Result = tmp7(17889);
+      tmp7Result = tmp7(18520);
       tmp9 = tmp7;
     } else {
-      tmp7Result = tmp7(17890);
+      tmp7Result = tmp7(18521);
       tmp9 = tmp7;
     }
     if (cResult[3] === tmp4.rowStatusIcon) {
@@ -111,10 +109,10 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         tmp36 = tmp39;
                       }
                       if (isLast) {
-                        tmp34Result = tmp34(tmp(1188).Spacer, { size: 16 });
+                        tmp34Result = tmp34(tmp(1200).Spacer, { size: 16 });
                       } else {
                         const obj4 = { style: tmp4.divider };
-                        tmp34Result = tmp34(tmp9(15035), obj4);
+                        tmp34Result = tmp34(tmp9(15515), obj4);
                       }
                       cResult[24] = isLast;
                       cResult[25] = tmp4.divider;
@@ -165,7 +163,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp14 = tmp16;
     }
     const obj19 = { style: tmp4.rowStatusIcon, source: tmp7Result };
-    const tmp12 = React3(tmp9(5974), obj19);
+    const tmp12 = React3(tmp9(6157), obj19);
     cResult[3] = tmp4.rowStatusIcon;
     cResult[4] = tmp7Result;
     cResult[5] = tmp12;
@@ -176,7 +174,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = item.checked && tmp4.eligibleRow;
   cResult[2] = items3;
   tmp6 = items3;
-}) : ((item) => {
+}) : (function EligibilityChecklistRow(item) {
   let items1;
   let items2;
   let obj8;
@@ -196,9 +194,9 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj2 = { style: tmp.rowStatusIcon, source: tmp6Result };
   const tmp8 = FastImageDefault;
   if (item.checked) {
-    tmp6Result = tmp6(17889);
+    tmp6Result = tmp6(18520);
   } else {
-    tmp6Result = tmp6(17890);
+    tmp6Result = tmp6(18521);
   }
   items1 = [React3(tmp8, obj2), ];
   const obj3 = { style: tmp.rowTextColumn, children: items2 };
@@ -218,16 +216,16 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items1[1] = hasOwnProperty(View, obj3);
   const children = [hasOwnProperty(View, obj), ];
   if (isLast) {
-    tmp5Result2 = tmp5(tmp10(1188).Spacer, { size: 16 });
+    tmp5Result2 = tmp5(tmp10(1200).Spacer, { size: 16 });
   } else {
     const obj15 = { style: tmp.divider };
-    tmp5Result2 = tmp5(tmp6(15035), obj15);
+    tmp5Result2 = tmp5(tmp6(15515), obj15);
   }
   children[1] = tmp5Result2;
   return hasOwnProperty(tmp3, { children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EligibilityChecklist(style) {
   let items;
   let obj = items(576);
   const cResult = obj.c(7);
@@ -271,7 +269,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     cResult[6] = tmp8;
     tmp5 = tmp8;
   }
-}) : ((items) => {
+}) : (function EligibilityChecklist(items) {
   items = items.items;
   if (0 === items.length) {
     return null;

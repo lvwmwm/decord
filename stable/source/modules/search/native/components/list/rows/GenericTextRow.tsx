@@ -1,26 +1,26 @@
-// Module ID: 16854
-// Function ID: 16855
+// Module ID: 17437
+// Function ID: 17438
 // Name: GenericTextRow
-// Dependencies: [5, 19, 17, 21, 4890, 558, 576, 4886, 16807, 2]
+// Dependencies: [5, 19, 17, 21, 5092, 558, 576, 5088, 17390, 2]
 
-// Module 16854 (GenericTextRow)
+// Module 17437 (GenericTextRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import SearchListRow2 from "SearchListRow" /* 16807 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import SearchListRow2 from "SearchListRow" /* 17390 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c0, c1, text;
+let c0, c1;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ title: { flexDirection: "row" }, container: { padding: 10 } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GenericTextRow(text) {
   let accessibilityActions;
   let icon;
   let onAccessibilityAction;
@@ -142,14 +142,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((t
       }
     }
   });
-  const fn = function() {
+  function t1() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = onPress;
   cResult[1] = text;
-  cResult[2] = fn;
-  tmp5 = fn;
-}) : ((text) => {
+  cResult[2] = t1;
+  tmp5 = t1;
+}) : (function GenericTextRow(text) {
   let accessibilityActions;
   let icon;
   let onAccessibilityAction;

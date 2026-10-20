@@ -1,11 +1,11 @@
-// Module ID: 8294
-// Function ID: 8295
+// Module ID: 7733
+// Function ID: 7734
 // Name: useUserIsTeen
-// Dependencies: [1377, 558, 576, 504, 2]
+// Dependencies: [1390, 558, 576, 504, 2]
 
-// Module 8294 (useUserIsTeen)
+// Module 7733 (useUserIsTeen)
 import react from "react" /* 576 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ let currentUser;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserIsTeen() {
   let tmp4;
   let tmp5;
   const obj = react;
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return false === tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useUserIsTeen() {
   const items = [UserStore];
   const obj = get_initialized;
   return false === obj.useStateFromStores(items, () => {

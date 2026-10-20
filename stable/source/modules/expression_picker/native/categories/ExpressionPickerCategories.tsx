@@ -1,22 +1,22 @@
-// Module ID: 9968
-// Function ID: 9969
+// Module ID: 9574
+// Function ID: 9575
 // Name: ExpressionPickerCategories
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4752, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4992, 2]
 
-// Module 9968 (ExpressionPickerCategories)
+// Module 9574 (ExpressionPickerCategories)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let tmp;
-const Portal2 = tmp(4752);
+const Portal2 = tmp(4992);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -25,7 +25,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, paddingH
 createStyles = createStyles.createStyles;
 obj3 = { borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_4 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExpressionPickerCategories(arg0) {
   let children;
   let portalHostName;
   let style;
@@ -72,7 +72,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp4.containerRefresh;
   cResult[3] = items;
   tmp5 = items;
-}) : ((arg0) => {
+}) : (function ExpressionPickerCategories(arg0) {
   let children;
   let portalHostName;
   let style;

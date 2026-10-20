@@ -1,23 +1,23 @@
-// Module ID: 17304
-// Function ID: 17305
+// Module ID: 17898
+// Function ID: 17899
 // Name: useVoiceChannelGames
-// Dependencies: [19, 502, 4930, 5438, 1377, 558, 576, 9393, 504, 9394, 5896, 2]
+// Dependencies: [19, 502, 5108, 5759, 1390, 558, 576, 8852, 504, 8853, 8233, 2]
 
-// Module 17304 (useVoiceChannelGames)
-import useGameProfileObscured from "useGameProfileObscured" /* 5896 */;
-import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9393 */;
+// Module 17898 (useVoiceChannelGames)
+import useGameProfileObscured from "useGameProfileObscured" /* 8233 */;
+import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 8852 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 4930 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5438 */;
-import UserStore from "UserStore" /* 1377 */;
+import PresenceStore from "PresenceStore" /* 5108 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, currentUser, dependencyMap, set;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, arg2) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceChannelGames(arg0, arg1, arg2) {
   let closure_0;
   let closure_2;
   let first;
@@ -164,7 +164,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
   cResult[5] = items3;
   tmp11 = items3;
   tmp10 = fn;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useVoiceChannelGames(arg0, arg1, arg2) {
   let closure_0;
   let closure_2;
   let stateFromStores;

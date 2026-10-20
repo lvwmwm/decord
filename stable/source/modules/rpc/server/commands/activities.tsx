@@ -1,14 +1,14 @@
-// Module ID: 14352
-// Function ID: 14353
+// Module ID: 14778
+// Function ID: 14779
 // Name: activities
-// Dependencies: [5, 1085, 14317, 14304, 9031, 2016, 9026, 14312, 8993, 2]
+// Dependencies: [5, 1085, 14741, 14727, 10946, 2029, 10937, 14724, 10811, 10810, 10814, 2]
 
-// Module 14352 (activities)
-import RPCHelpers from "RPCHelpers" /* 9031 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14304 */;
+// Module 14778 (activities)
+import RPCHelpers from "RPCHelpers" /* 10946 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14727 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 14317 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 14741 */;
 import size from "module_2" /* 2 */;
 
 let c5, closure_2, constants;
@@ -38,6 +38,8 @@ let obj3 = {
     socket = socket.socket;
     return (async function(arg0, value) {
       let closure_1;
+      let tmp36Result;
+      let tmp36Result2;
       if (c5 === 2) {
         c5 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -63,62 +65,87 @@ let obj3 = {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              const obj8 = value(closure_2[4]);
-              const result = obj8.validatePostMessageTransport(socket.transport);
-              const obj9 = value(closure_2[4]);
-              const validateApplicationResult = obj9.validateApplication(socket.application);
-              const obj10 = value(closure_2[5]);
-              const tmp30 = value;
-              const tmp32 = socket;
-              if (obj10.isEmbeddedApplication(socket.application)) {
-                const tmp19 = tmp(closure_2[7])(tmp32);
+              const obj12 = value(closure_2[4]);
+              const result = obj12.validatePostMessageTransport(socket.transport);
+              const obj13 = value(closure_2[4]);
+              const validateApplicationResult = obj13.validateApplication(socket.application);
+              const obj14 = value(closure_2[5]);
+              if (obj14.isEmbeddedApplication(socket.application)) {
+                let context;
+                if (tmp(closure_2[7])(socket)) {
+                  context = tmp38.context;
+                }
+                let surface;
+                const tmp22 = tmp(closure_2[8]);
+                if (context != null) {
+                  surface = context.surface;
+                }
+                const tmp22Result = tmp22(surface);
                 c3 = 1;
                 value = {};
-                let id;
-                const createProxyTicket = tmp30(closure_2[8]).createProxyTicket;
-                const tmp30Result = tmp30(closure_2[8]);
-                if (tmp19 != null) {
-                  id = tmp19.id;
+                let type;
+                if (context != null) {
+                  type = context.source.type;
                 }
-                constants = 2;
-                c5 = 1;
-                const obj4 = { value: createProxyTicket(validateApplicationResult, id), done: false };
-                return obj4;
+                if (type === value(closure_2[9]).EmbeddedContextSourceType.FRAME) {
+                  constants = 3;
+                  c5 = 1;
+                  const obj4 = { value: tmp36Result.createProxyTicket(validateApplicationResult, tmp22Result, context.surface.type), done: false };
+                  tmp36Result = value(closure_2[10]);
+                  return obj4;
+                } else {
+                  constants = 2;
+                  c5 = 1;
+                  const obj5 = { value: tmp36Result2.createProxyTicket(validateApplicationResult, tmp22Result), done: false };
+                  tmp36Result2 = value(closure_2[10]);
+                  return obj5;
+                }
               } else {
-                const obj5 = { errorCode: constants.UNAUTHORIZED_FOR_APPLICATION };
+                const obj6 = { errorCode: constants.UNAUTHORIZED_FOR_APPLICATION };
                 const self3 = this;
                 const self4 = this;
-                const tmp17 = new tmp(closure_2[6])(obj5, "This application cannot access this API");
+                const tmp17 = new tmp(closure_2[6])(obj6, "This application cannot access this API");
                 throw tmp17;
               }
             }
-          } else if (1 === tmp4) {
+          } else if (1 === constants) {
             c3 = 0;
-            const obj6 = { errorCode: constants.UNKNOWN_ERROR };
+            const obj7 = { errorCode: constants.UNKNOWN_ERROR };
             const self = this;
             const self2 = this;
-            const tmp13 = new tmp(closure_2[6])(obj6, "Failed to create proxy ticket");
+            const tmp13 = new tmp(closure_2[6])(obj7, "Failed to create proxy ticket");
             throw tmp13;
-          } else if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 0;
-            c5 = 3;
-            const obj7 = { value, done: true };
-            return obj7;
           } else {
+            if (2 === constants) {
+              if (arg0 === 1) {
+                c5 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c3 = 0;
+                c5 = 3;
+                const obj8 = { value, done: true };
+                return obj8;
+              }
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c5 = 3;
+              const obj = { value, done: true };
+              return obj;
+            }
             value.ticket = value;
             c3 = 0;
             c5 = 3;
-            const obj = { value, done: true };
-            return obj;
+            const obj9 = { value, done: true };
+            return obj9;
           }
-        } catch (tmp23) {
-          closure_2 = tmp23;
+        } catch (tmp29) {
+          closure_2 = tmp29;
           if (0 === c3) {
             c5 = 3;
-            throw tmp23;
+            throw tmp29;
           } else {
             constants = 1;
           }

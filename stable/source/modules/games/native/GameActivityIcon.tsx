@@ -1,33 +1,31 @@
-// Module ID: 9443
-// Function ID: 9444
+// Module ID: 13030
+// Function ID: 13031
 // Name: GameActivityIcon
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4589, 4729, 8248, 5974, 1402, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4827, 4969, 7684, 6157, 1415, 2]
 
-// Module 9443 (GameActivityIcon)
+// Module 13030 (GameActivityIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 4589 */;
-import FastImageDefault from "FastImage" /* 5974 */;
+import native from "native" /* 4827 */;
+import FastImageDefault from "FastImage" /* 6157 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let style;
-
 let obj2;
 let tmp;
-const AvatarUtils = tmp(1402);
-const shared = tmp(4729);
-const UnknownGameIcon2 = tmp(8248);
+const AvatarUtils = tmp(1415);
+const shared = tmp(4969);
+const UnknownGameIcon2 = tmp(7684);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { icon: obj2 };
 obj2 = { borderRadius: nativeDefault.radii.xs };
 let closure_6 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GameActivityIcon(style) {
   let game;
   let onShown;
   let tmp12;
@@ -121,7 +119,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[12] = style;
   cResult[13] = tmp21;
   tmp20 = tmp21;
-}) : ((style) => {
+}) : (function GameActivityIcon(style) {
   let colors;
   let game;
   let isThemeDarkResult;
@@ -151,7 +149,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
     } else {
       const obj2 = { size: "custom", style: items1, color: isThemeDarkResult ? colors.WHITE : colors.BLACK };
       items1 = [tmp.icon, size1];
-      const UnknownGameIcon = tmp2(8248).UnknownGameIcon;
+      const UnknownGameIcon = tmp2(7684).UnknownGameIcon;
       const tmp2Result = shared;
       isThemeDarkResult = tmp2Result.isThemeDark(theme);
       colors = nativeDefault.colors;

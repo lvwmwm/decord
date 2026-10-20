@@ -1,48 +1,65 @@
-// Module ID: 8704
-// Function ID: 8705
+// Module ID: 10803
+// Function ID: 10804
 // Name: FramesConstants
-// Dependencies: [1085, 8514, 2]
-// Exports: asLaunched, getChannelIdForSurface, getFrameIntentForSurface, getFrameSurfaceForChannel, getPipOrientationLockStateForFrame, isLaunched, makeFrameId
+// Dependencies: [1085, 8606, 38, 2]
+// Exports: asLaunched, getFrameHostWindowKey, getFrameIntentForSurface, getFrameSurfaceForChannel, getPipOrientationLockStateForFrame, isLaunched, makeFrameId
 
-// Module 8704 (FramesConstants)
+// Module 10803 (FramesConstants)
+import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1085 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8514 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8606 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;
 let obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN };
-const obj2 = { MAIN: 0, [0]: "MAIN", INLINE: 1, [1]: "INLINE" };
+const obj2 = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.OVERLAY };
+let obj3 = { MAIN: 0, [0]: "MAIN", INLINE: 1, [1]: "INLINE" };
 const result = size.fileFinishedImporting("modules/frames/FramesConstants.tsx");
 
 export const FrameLayoutModes = { FOCUSED: 0, [0]: "FOCUSED", PIP: 1, [1]: "PIP" };
 export const MAIN_SURFACE = obj;
-export const FrameIntent = obj2;
+export const OVERLAY_SURFACE = obj2;
+export const FrameIntent = obj3;
 export const getFrameIntentForSurface = function getFrameIntentForSurface(type) {
   type = type.type;
   if (EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN === type) {
-    return obj2.MAIN;
+    return obj3.MAIN;
   } else {
-    return obj2.INLINE;
+    if (EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL !== type) {
+      if (EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL !== type) {
+        if (EmbeddedSurfaceType.EmbeddedSurfaceType.OVERLAY !== type) {
+          if (EmbeddedSurfaceType.EmbeddedSurfaceType.INTERACTION_MODAL === type) {
+            _modDef38(false, "A Frame cannot be launched at an INTERACTION_MODAL surface");
+          }
+        }
+      }
+    }
+    return obj3.INLINE;
   }
 };
 export const makeFrameId = function makeFrameId(arg0, type) {
   type = type.type;
   if (EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN === type) {
-    const _HermesInternal3 = HermesInternal;
+    const _HermesInternal4 = HermesInternal;
     return "main:" + arg0;
   } else if (EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL === type) {
-    const _HermesInternal2 = HermesInternal;
+    const _HermesInternal3 = HermesInternal;
     return "app-channel:" + arg0 + ":" + type.channelId;
   } else if (EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL === type) {
-    const _HermesInternal = HermesInternal;
+    const _HermesInternal2 = HermesInternal;
     return "voice-channel:" + arg0 + ":" + type.channelId;
+  } else if (EmbeddedSurfaceType.EmbeddedSurfaceType.OVERLAY === type) {
+    const _HermesInternal = HermesInternal;
+    return "overlay:" + arg0;
+  } else if (EmbeddedSurfaceType.EmbeddedSurfaceType.INTERACTION_MODAL === type) {
+    _modDef38(false, "A Frame cannot be launched at an INTERACTION_MODAL surface");
   }
 };
 export const getFrameSurfaceForChannel = function getFrameSurfaceForChannel(type) {
   type = type.type;
   if (ChannelTypes.GUILD_APP === type) {
     ({ id: obj2.channelId, guild_id: obj2.guildId } = type);
-    const obj3 = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: null, guildId: null };
+    obj3 = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: null, guildId: null };
     return obj3;
   } else if (tmp.GUILD_VOICE === type) {
     const obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL, channelId: null, guildId: null };
@@ -52,29 +69,34 @@ export const getFrameSurfaceForChannel = function getFrameSurfaceForChannel(type
     return null;
   }
 };
-export const getChannelIdForSurface = function getChannelIdForSurface(type) {
-  if (null != type) {
-    type = type.type;
-    if (EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN !== type) {
-      return type.channelId;
-    }
+export const isLaunched = function isLaunched(conjureBuilderPreviewFrame) {
+  let state;
+  if (conjureBuilderPreviewFrame != null) {
+    state = conjureBuilderPreviewFrame.state;
   }
+  return "launched" === state;
 };
-export const isLaunched = function isLaunched(mainFrame) {
+export const getFrameHostWindowKey = function getFrameHostWindowKey(state) {
+  let hostWindowKey;
+  state = undefined;
+  if (state != null) {
+    state = state.state;
+  }
+  if ("launched" === state) {
+    hostWindowKey = state.data.hostWindowKey;
+  } else {
+    hostWindowKey = state.hostWindowKey;
+  }
+  return hostWindowKey;
+};
+export const asLaunched = function asLaunched(mainFrame) {
   let state;
   if (mainFrame != null) {
     state = mainFrame.state;
   }
-  return "launched" === state;
-};
-export const asLaunched = function asLaunched(frameByIframeId) {
-  let state;
-  if (frameByIframeId != null) {
-    state = frameByIframeId.state;
-  }
   let tmp2 = null;
   if ("launched" === state) {
-    tmp2 = frameByIframeId;
+    tmp2 = mainFrame;
   }
   return tmp2;
 };

@@ -1,25 +1,25 @@
-// Module ID: 5603
-// Function ID: 5604
+// Module ID: 5389
+// Function ID: 5390
 // Name: ButtonPill
-// Dependencies: [32, 19, 17, 21, 5600, 4890, 587, 558, 576, 5601, 4589, 4580, 5604, 5605, 4612, 4729, 5609, 4596, 5597, 5598, 2]
+// Dependencies: [32, 19, 17, 21, 5384, 5092, 587, 558, 576, 5385, 4827, 4818, 5390, 5391, 4850, 4969, 5395, 4834, 5378, 5382, 2]
 
-// Module 5603 (ButtonPill)
+// Module 5389 (ButtonPill)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4580 */;
-import native from "native" /* 4589 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import shared from "shared" /* 4729 */;
-import spring from "spring" /* 5597 */;
-import springPresets from "springPresets" /* 5598 */;
-import ButtonHooks from "ButtonHooks" /* 5601 */;
-import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import useToken from "useToken" /* 4818 */;
+import native from "native" /* 4827 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import shared from "shared" /* 4969 */;
+import spring from "spring" /* 5378 */;
+import springPresets from "springPresets" /* 5382 */;
+import ButtonHooks from "ButtonHooks" /* 5385 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ButtonConstants_mod from "ButtonConstants" /* 5600 */;
-import createStyles from "createStyles" /* 4890 */;
+import ButtonConstants_mod from "ButtonConstants" /* 5384 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ButtonEllipsis = tmp(5609);
+const ButtonEllipsis = tmp(5395);
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
 let c10 = 300;
@@ -71,7 +71,7 @@ let closure_14 = createStyles.createStyles((arg0, arg1) => {
   return obj6;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function PillWrapper(arg0) {
   let ExpressiveButtonRive;
   let children;
   let expressivePressState;
@@ -191,7 +191,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               const obj4 = { style: items4, children: metroImportDefault(ExpressiveButtonRive, obj5) };
               items4 = [metroRequire.absoluteFill, tmp7.expressivePill];
               obj5 = { withReducedMotion: "short-loop", ref: expressiveRiveRef, fit: "layout", artboard: str4, dataBinding: obj6 };
-              ExpressiveButtonRive = tmp(4589).ExpressiveButtonRive;
+              ExpressiveButtonRive = tmp(4827).ExpressiveButtonRive;
               str4 = "Mobile Expressive Button Dark Mode";
               const tmp21 = hasOwnProperty;
               const tmpResult12 = shared;
@@ -294,7 +294,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp16 = null;
       if (tmp4) {
         const obj10 = { variant };
-        tmp16 = metroImportDefault(tmp(5604).ButtonShine, obj10);
+        tmp16 = metroImportDefault(tmp(5390).ButtonShine, obj10);
       }
       cResult[5] = tmp4;
       cResult[6] = variant;
@@ -308,7 +308,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = token2;
   cResult[3] = items9;
   tmp12 = items9;
-}) : ((pressed) => {
+}) : (function PillWrapper(pressed) {
   let ExpressiveButtonRive;
   let children;
   let expressiveRiveRef;
@@ -351,7 +351,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp7 = null;
   if (shiny) {
     const obj7 = { variant };
-    tmp7 = metroImportDefault(tmp(5604).ButtonShine, obj7);
+    tmp7 = metroImportDefault(tmp(5390).ButtonShine, obj7);
   }
   if ("experimental_premium-primary" !== variant) {
     let obj11;
@@ -361,7 +361,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj8 = { style: items2, children: metroImportDefault(ExpressiveButtonRive, obj9) };
         items2 = [metroRequire.absoluteFill, tmp5.expressivePill];
         obj9 = { withReducedMotion: "short-loop", ref: expressiveRiveRef, fit: "layout", artboard: str, dataBinding: obj10 };
-        ExpressiveButtonRive = tmp(4589).ExpressiveButtonRive;
+        ExpressiveButtonRive = tmp(4827).ExpressiveButtonRive;
         str = "Mobile Expressive Button Dark Mode";
         const tmp12 = hasOwnProperty;
         const tmpResult = shared;
@@ -397,7 +397,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj11 = obj14;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((loading) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ButtonPill(loading) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(4);
@@ -425,7 +425,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((loading) => {
     tmp2 = cResult[3];
   }
   return tmp2;
-}) : ((loading) => {
+}) : (function ButtonPill(loading) {
   let tmp6;
   if (null == loading.loading) {
     const obj2 = {};
@@ -439,7 +439,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((loading) => {
   return tmp6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function BasicButtonPill(arg0) {
   let children;
   let expressivePressState;
   let expressiveRiveRef;
@@ -512,7 +512,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp5.pill;
   cResult[2] = items;
   tmp6 = items;
-}) : ((variant) => {
+}) : (function BasicButtonPill(variant) {
   let children;
   let expressivePressState;
   let expressiveRiveRef;
@@ -542,7 +542,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_16 = tmp8;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function LoadingButtonPill(arg0) {
   let children;
   let closure_129_2;
   let expressivePressState;
@@ -721,7 +721,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp5.pill;
   cResult[5] = items4;
   tmp15 = items4;
-}) : ((variant) => {
+}) : (function LoadingButtonPill(variant) {
   let c2;
   let children;
   let expressivePressState;
@@ -801,7 +801,7 @@ const __initData2 = { code: "function ButtonPillNativeTsx2(){const{withSpring,lo
 const __initData3 = { code: "function ButtonPillNativeTsx3(){const{withSpring,loading,SUBTLE_SPRING,useReducedMotion,withDelay,FADE_DELAY,offsetY}=this.__closure;const opacityTransition=withSpring(loading?0:1,SUBTLE_SPRING,'animate-always');if(useReducedMotion){return{opacity:loading?opacityTransition:withDelay(FADE_DELAY,opacityTransition),transform:[{translateY:0}]};}return{opacity:opacityTransition,transform:[{translateY:withSpring(loading?-1*offsetY:0,SUBTLE_SPRING)}]};}" };
 const __initData4 = { code: "function ButtonPillNativeTsx4(){const{withSpring,loading,SUBTLE_SPRING,useReducedMotion,withDelay,FADE_DELAY,offsetY}=this.__closure;const opacityTransition_0=withSpring(loading?1:0,SUBTLE_SPRING,'animate-always');if(useReducedMotion){return{opacity:loading?withDelay(FADE_DELAY,opacityTransition_0):opacityTransition_0,transform:[{translateY:0}]};}return{opacity:opacityTransition_0,transform:[{translateY:withSpring(loading?0:offsetY,SUBTLE_SPRING)}]};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((loading, arg1) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadingStyles(loading, arg1) {
   let num;
   _require = loading;
   let obj = require("react");
@@ -905,7 +905,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((loading, arg1) => {
   cResult[1] = animatedStyle1;
   cResult[2] = items;
   tmp6 = items;
-}) : ((loading, arg1) => {
+}) : (function useLoadingStyles(loading, arg1) {
   let num;
   _require = loading;
   const enabled = react.useContext(require("react").AccessibilityPreferencesContext).reducedMotion.enabled;

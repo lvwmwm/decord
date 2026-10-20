@@ -1,24 +1,23 @@
-// Module ID: 15994
-// Function ID: 15995
+// Module ID: 16510
+// Function ID: 16511
 // Name: HappeningNowCardPlaceholder
-// Dependencies: [19, 17, 15114, 21, 4890, 587, 558, 576, 4612, 4891, 15115, 2]
+// Dependencies: [19, 17, 15594, 21, 5092, 587, 558, 576, 4850, 5093, 15595, 2]
 
-// Module 15994 (HappeningNowCardPlaceholder)
+// Module 16510 (HappeningNowCardPlaceholder)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15114 */;
-import HappeningNowCardDefault from "HappeningNowCard" /* 15115 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15594 */;
+import HappeningNowCardDefault from "HappeningNowCard" /* 15595 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
-let panelVariant;
 
 let hasOwnProperty;
 let metroRequire;
@@ -38,7 +37,7 @@ const __initData = { code: "function HappeningNowCardPlaceholderTsx2(){const{opa
 let closure_10 = { code: "function HappeningNowCardPlaceholderTsx3(){const{opacity,withRepeat,withTiming,endOpacity,duration,Easing}=this.__closure;opacity.set(withRepeat(withTiming(endOpacity,{duration:duration,easing:Easing.ease}),-1,true));}" };
 const __initData2 = { code: "function HappeningNowCardPlaceholderTsx4(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((duration) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBlinkStyle(duration) {
   let sharedValue;
   let tmp = duration;
   let obj = duration(sharedValue[7]);
@@ -93,7 +92,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((duration) => {
   cResult[4] = items;
   tmp6 = items;
   tmp5 = fn;
-}) : ((duration) => {
+}) : (function useBlinkStyle(duration) {
   duration = duration.duration;
   const endOpacity = duration.endOpacity;
   let sharedValue;
@@ -127,7 +126,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((duration) => {
   return obj2.useAnimatedStyle(fn);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((panelVariant) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNowCardPlaceholder(panelVariant) {
   let first;
   let items;
   let items1;
@@ -251,7 +250,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((panelVariant) => {
   cResult[2] = tmp4.placeholderContainer;
   cResult[3] = items4;
   tmp7 = items4;
-}) : ((panelVariant) => {
+}) : (function HappeningNowCardPlaceholder(panelVariant) {
   let items;
   let items1;
   let items2;

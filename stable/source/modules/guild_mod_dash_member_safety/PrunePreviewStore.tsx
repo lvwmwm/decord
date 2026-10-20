@@ -1,10 +1,10 @@
-// Module ID: 16532
-// Function ID: 16533
+// Module ID: 17047
+// Function ID: 17048
 // Name: PrunePreviewStore
 // Dependencies: [32, 570, 558, 576, 2]
 // Exports: clearAllPrunePreviews, getPrunePreview, getPrunePreviewKey, setPrunePreview
 
-// Module 16532 (PrunePreviewStore)
+// Module 17047 (PrunePreviewStore)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -60,7 +60,7 @@ const usePrunePreviewStore = module_570.create((arg0) => {
   };
   return obj;
 });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrunePreview(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -136,7 +136,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
   cResult[2] = arg2;
   cResult[3] = P;
   tmp2 = P;
-}) : ((arg0, arg1, arg2) => {
+}) : (function usePrunePreview(arg0, arg1, arg2) {
   let isFinished;
   let obj;
   let closure_0 = arg0;

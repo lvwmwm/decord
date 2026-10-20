@@ -1,17 +1,17 @@
-// Module ID: 15894
-// Function ID: 15895
+// Module ID: 16404
+// Function ID: 16405
 // Name: VerifyPhone
-// Dependencies: [5, 32, 19, 15867, 15868, 1085, 21, 558, 576, 15864, 15883, 5590, 6542, 1126, 6576, 15895, 6577, 2]
+// Dependencies: [5, 32, 19, 16376, 16377, 1085, 21, 558, 576, 16373, 16393, 5396, 6734, 1126, 6768, 16405, 6769, 2]
 
-// Module 15894 (VerifyPhone)
+// Module 16404 (VerifyPhone)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15867 */;
-import RegistrationBailoutButtonDefault from "RegistrationBailoutButton" /* 15895 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16376 */;
+import RegistrationBailoutButtonDefault from "RegistrationBailoutButton" /* 16405 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RegistrationConstants from "RegistrationConstants" /* 15868 */;
+import RegistrationConstants from "RegistrationConstants" /* 16377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let closure_6 = RegistrationUIStore.doesRegistrationHaveIdentityType;
 ({ authStateToRegisterTransitionStep: metroImportDefault, RegisterTransitionSteps: metroImportAll, RegistrationTransitionActionTypes: c9 } = RegistrationConstants);
 const Links = Constants.Links;
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPhoneTokenReceived) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifyPhone(onPhoneTokenReceived) {
   let description;
   let onBail;
   let onClose;
@@ -218,14 +218,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPhoneTokenReceived
       }
     }
   });
-  const fn2 = function() {
+  function t5() {
     return closure_0(...arguments);
-  };
+  }
   cResult[7] = onPhoneTokenReceived;
   cResult[8] = phone;
   cResult[9] = context;
-  cResult[10] = fn2;
-}) : ((phone) => {
+  cResult[10] = t5;
+}) : (function VerifyPhone(phone) {
   let _undefined;
   let c5;
   let c6;
@@ -250,8 +250,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPhoneTokenReceived
   [tmp6, c6] = _slicedToArray(react.useState(false), 2);
   const tmp5 = _slicedToArray(react.useState(false), 2);
   let closure_7 = react.useRef(false);
-  const context = react.useContext(phone(15864).TrackRegistrationContext);
-  const tmp8 = onPhoneTokenReceived(15883);
+  const context = react.useContext(phone(16373).TrackRegistrationContext);
+  const tmp8 = onPhoneTokenReceived(16393);
   tmp8(closure_7(sourceState));
   const items = [context];
   const effect = react.useEffect(() => {
@@ -260,7 +260,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPhoneTokenReceived
       context(obj);
     }
   }, items);
-  const tmp11 = onPhoneTokenReceived(5590)(() => {
+  const tmp11 = onPhoneTokenReceived(5396)(() => {
     let ref;
     return () => {
       let tmpResult;
@@ -426,7 +426,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPhoneTokenReceived
   const callback2 = useCallback2(function() {
     return closure_0(...arguments);
   }, items2);
-  onPhoneTokenReceived(6576)(callback2);
+  onPhoneTokenReceived(6768)(callback2);
   const items3 = [onBail];
   const memo = react.useMemo(() => {
     let tmp2 = null;
@@ -435,8 +435,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPhoneTokenReceived
     }
     return tmp2;
   }, items3);
-  onPhoneTokenReceived(6577);
-  return <tmp16 title={title} description={description} error={tmp4} onCodeEntered={onCodeEntered} codeType={phone(6577).CodeType.NUMERIC} footer={memo} disabled={tmp6} loading={first} disableKeyboardAvoidingView />;
+  onPhoneTokenReceived(6769);
+  return <tmp16 title={title} description={description} error={tmp4} onCodeEntered={onCodeEntered} codeType={phone(6769).CodeType.NUMERIC} footer={memo} disabled={tmp6} loading={first} disableKeyboardAvoidingView />;
 });
 const result = size.fileFinishedImporting("modules/auth/native/components/VerifyPhone.tsx");
 

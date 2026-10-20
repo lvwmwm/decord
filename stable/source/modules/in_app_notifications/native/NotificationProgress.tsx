@@ -1,23 +1,23 @@
-// Module ID: 12519
-// Function ID: 12520
+// Module ID: 12624
+// Function ID: 12625
 // Name: NotificationProgress
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 4612, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 4850, 2]
 
-// Module 12519 (NotificationProgress)
+// Module 12624 (NotificationProgress)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const ReanimatedRexport = tmp(4612);
+const ReanimatedRexport = tmp(4850);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { progress: obj2, progressContainerBottom: { width: "100%", position: "absolute", bottom: -1 } };
@@ -26,7 +26,7 @@ let closure_7 = createStyles.createStyles(obj);
 const __initData = { code: "function NotificationProgressTsx1(){const{percent,width}=this.__closure;const percentRemaining=(typeof percent===\"number\"?percent:percent.get())/100;return{transform:[{translateX:-width+width*percentRemaining}]};}" };
 const __initData2 = { code: "function NotificationProgressTsx2(){const{percent,width}=this.__closure;const percentRemaining=(typeof percent==='number'?percent:percent.get())/100;return{transform:[{translateX:-width+width*percentRemaining}]};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((percent) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProgressAnimation(percent) {
   let closure_2;
   let first;
   let first1;
@@ -71,7 +71,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((percent) => {
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : ((percent) => {
+}) : (function useProgressAnimation(percent) {
   let callback;
   let closure_2;
   let first;
@@ -101,7 +101,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((percent) => {
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((percent) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationProgress(percent) {
   let animatedStyles;
   let handleLayout;
   const obj = react2;
@@ -137,7 +137,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((percent) => {
   cResult[1] = tmp3.progress;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((percent) => {
+}) : (function NotificationProgress(percent) {
   percent = percent.percent;
   const tmp = closure_7();
   const tmp2 = closure_10(percent);

@@ -1,12 +1,12 @@
-// Module ID: 7466
-// Function ID: 7467
+// Module ID: 7882
+// Function ID: 7883
 // Name: UploadStore
-// Dependencies: [5110, 504, 584, 2]
+// Dependencies: [5432, 504, 584, 2]
 
-// Module 7466 (UploadStore)
+// Module 7882 (UploadStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MessageStore from "MessageStore" /* 5110 */;
+import MessageStore from "MessageStore" /* 5432 */;
 import size_mod from "module_2" /* 2 */;
 
 let cancel, closure_8, item;

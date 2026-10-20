@@ -1,17 +1,17 @@
-// Module ID: 17587
-// Function ID: 17588
+// Module ID: 18205
+// Function ID: 18206
 // Name: NewUserModal
-// Dependencies: [19, 17, 21, 7556, 4890, 587, 17588, 1987, 5709, 558, 576, 6496, 17586, 5093, 17585, 6016, 1369, 15921, 17589, 12345, 12334, 17590, 17592, 2]
+// Dependencies: [19, 17, 21, 9340, 5092, 587, 18206, 2000, 5301, 558, 576, 6688, 18204, 5934, 18203, 6207, 1382, 16431, 18207, 12426, 12414, 18208, 18214, 2]
 
-// Module 17587 (NewUserModal)
+// Module 18205 (NewUserModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import NewUserUtils from "NewUserUtils" /* 17586 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import NewUserUtils from "NewUserUtils" /* 18204 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 7556 */;
-import createStyles from "createStyles" /* 4890 */;
+import NativeStackView from "NativeStackView" /* 9340 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,15 +21,15 @@ let _require, closure_0, dependencyMap;
 let hasOwnProperty;
 let metroRequire;
 let obj2;
-const f131161 = () => closure_1_0(paths[7])(paths[6], paths.paths);
+const f133832 = () => closure_1_0(paths[7])(paths[6], paths.paths);
 let react = react_mod;
-let NativeModules = react_native.NativeModules;
+const NativeModules = react_native.NativeModules;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = NativeStackView.createNativeStackNavigator();
 let obj = { header: obj2 };
 obj2 = { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" };
 let closure_8 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewUserModal(arg0) {
   let accessibilityNativeStackOptions;
   let closure_2;
   let initialOnboardingStepIndex;
@@ -40,7 +40,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj4;
   let obj6;
   let obj8;
-  let tmp26;
   let tmp5;
   let tmp7;
   let tmp8;
@@ -60,7 +59,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const ref = accessibilityNativeStackOptions.useRef(tmp5);
   dependencyMap = accessibilityNativeStackOptions.useRef(null);
-  const tmpResult = tmp(6496);
+  const tmpResult = tmp(6688);
   accessibilityNativeStackOptions = tmpResult.useAccessibilityNativeStackOptions();
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function f(flag) {
@@ -91,59 +90,35 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     tmp7 = cResult[2];
   }
-  NativeModules = tmp7;
+  let MinimizeApp = tmp7;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class N {
-      constructor() {
-        MinimizeApp = MinimizeApp.MinimizeApp;
-        MinimizeApp.minimizeApp();
-        return true;
-      }
-    }
-    cResult[3] = N;
-    tmp8 = N;
+    const fn2 = function x() {
+      MinimizeApp = MinimizeApp.MinimizeApp;
+      MinimizeApp.minimizeApp();
+      return true;
+    };
+    cResult[3] = fn2;
+    tmp8 = fn2;
   } else {
-    class N {
-      constructor() {
-        MinimizeApp = MinimizeApp.MinimizeApp;
-        MinimizeApp.minimizeApp();
-        return true;
-      }
-    }
+    tmp8 = cResult[3];
   }
-  const tmpResult2 = tmp(6016);
+  const tmpResult2 = tmp(6207);
   tmpResult2.useNavigatorBackPressHandler(tmp8);
   if (cResult[4] === accessibilityNativeStackOptions) {
+    let tmp10;
     let tmp11;
-    let tmp14;
-    let tmp17;
-    let tmp20;
+    let tmp15;
+    let tmp19;
     let tmp23;
-    class N {
-      constructor() {
-        MinimizeApp = MinimizeApp.MinimizeApp;
-        MinimizeApp.minimizeApp();
-        return true;
-      }
+    let tmp27;
+    if (cResult[5] === tmp4.header) {
+      tmp10 = cResult[6];
     }
     if (initialRouteName == null) {
-      class N {
-        constructor() {
-          MinimizeApp = MinimizeApp.MinimizeApp;
-          MinimizeApp.minimizeApp();
-          return true;
-        }
-      }
+      initialRouteName = "choose-avatar";
     }
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      class N {
-        constructor() {
-          MinimizeApp = MinimizeApp.MinimizeApp;
-          MinimizeApp.minimizeApp();
-          return true;
-        }
-      }
       const obj3 = {
         name: "enable-notification",
         getComponent() {
@@ -152,27 +127,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         initialParams: obj4
       };
       obj4 = { onComplete: tmp7 };
-      const tmp13 = closure_5(closure_7.Screen, obj3);
-      cResult[7] = tmp13;
-      tmp11 = tmp13;
+      const tmp14 = closure_5(closure_7.Screen, obj3);
+      cResult[7] = tmp14;
+      tmp11 = tmp14;
     } else {
-      class N {
-        constructor() {
-          MinimizeApp = MinimizeApp.MinimizeApp;
-          MinimizeApp.minimizeApp();
-          return true;
-        }
-      }
+      tmp11 = cResult[7];
     }
     const _Symbol2 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class N {
-        constructor() {
-          MinimizeApp = MinimizeApp.MinimizeApp;
-          MinimizeApp.minimizeApp();
-          return true;
-        }
-      }
       const obj5 = {
         name: "choose-avatar",
         getComponent() {
@@ -184,7 +146,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   let obj = {
                     onPress() {
                       closure_0 = closure_1_4;
-                      const lazyResult = React.lazy(f131161);
+                      const lazyResult = React.lazy(f133832);
                       const obj = closure_2_0(closure_2_2[8]);
                       const obj2 = {
                         onConfirm() {
@@ -204,27 +166,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         initialParams: obj6
       };
       obj6 = { onComplete: tmp7 };
-      const tmp16 = closure_5(closure_7.Screen, obj5);
-      cResult[8] = tmp16;
-      tmp14 = tmp16;
+      const tmp18 = closure_5(closure_7.Screen, obj5);
+      cResult[8] = tmp18;
+      tmp15 = tmp18;
     } else {
-      class N {
-        constructor() {
-          MinimizeApp = MinimizeApp.MinimizeApp;
-          MinimizeApp.minimizeApp();
-          return true;
-        }
-      }
+      tmp15 = cResult[8];
     }
     const _Symbol3 = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      class N {
-        constructor() {
-          MinimizeApp = MinimizeApp.MinimizeApp;
-          MinimizeApp.minimizeApp();
-          return true;
-        }
-      }
       const obj7 = {
         name: "contact-sync",
         options: { headerShown: false },
@@ -234,27 +183,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         initialParams: obj8
       };
       obj8 = { onComplete: tmp7 };
-      const tmp19 = closure_5(closure_7.Screen, obj7);
-      cResult[9] = tmp19;
-      tmp17 = tmp19;
+      const tmp22 = closure_5(closure_7.Screen, obj7);
+      cResult[9] = tmp22;
+      tmp19 = tmp22;
     } else {
-      class N {
-        constructor() {
-          MinimizeApp = MinimizeApp.MinimizeApp;
-          MinimizeApp.minimizeApp();
-          return true;
-        }
-      }
+      tmp19 = cResult[9];
     }
     const _Symbol4 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      class N {
-        constructor() {
-          MinimizeApp = MinimizeApp.MinimizeApp;
-          MinimizeApp.minimizeApp();
-          return true;
-        }
-      }
       const obj9 = {
         name: "discoverability",
         options: { headerShown: false },
@@ -264,27 +200,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         initialParams: obj10
       };
       obj10 = { onComplete: tmp7 };
-      const tmp22 = closure_5(closure_7.Screen, obj9);
-      cResult[10] = tmp22;
-      tmp20 = tmp22;
+      const tmp26 = closure_5(closure_7.Screen, obj9);
+      cResult[10] = tmp26;
+      tmp23 = tmp26;
     } else {
-      class N {
-        constructor() {
-          MinimizeApp = MinimizeApp.MinimizeApp;
-          MinimizeApp.minimizeApp();
-          return true;
-        }
-      }
+      tmp23 = cResult[10];
     }
     const _Symbol5 = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      class N {
-        constructor() {
-          MinimizeApp = MinimizeApp.MinimizeApp;
-          MinimizeApp.minimizeApp();
-          return true;
-        }
-      }
       const obj11 = {
         name: "connect-guardian",
         getComponent() {
@@ -293,37 +216,28 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         initialParams: obj12
       };
       obj12 = { onComplete: tmp7 };
-      const tmp25 = closure_5(closure_7.Screen, obj11);
-      cResult[11] = tmp25;
-      tmp23 = tmp25;
+      const tmp30 = closure_5(closure_7.Screen, obj11);
+      cResult[11] = tmp30;
+      tmp27 = tmp30;
     } else {
-      class N {
-        constructor() {
-          MinimizeApp = MinimizeApp.MinimizeApp;
-          MinimizeApp.minimizeApp();
-          return true;
-        }
-      }
+      tmp27 = cResult[11];
     }
     if (cResult[12] === tmp10) {
-      class N {
-        constructor() {
-          MinimizeApp = MinimizeApp.MinimizeApp;
-          MinimizeApp.minimizeApp();
-          return true;
-        }
+      let tmp31;
+      if (cResult[13] === initialRouteName) {
+        tmp31 = cResult[14];
       }
-      return tmp26;
+      return tmp31;
     }
     const obj13 = { screenOptions: tmp10, initialRouteName, children: items };
-    items = [tmp11, tmp14, tmp17, tmp20, tmp23];
-    const tmp29 = closure_6(closure_7.Navigator, obj13);
+    items = [tmp11, tmp15, tmp19, tmp23, tmp27];
+    const tmp34 = closure_6(closure_7.Navigator, obj13);
     cResult[12] = tmp10;
     cResult[13] = initialRouteName;
-    cResult[14] = tmp29;
-    tmp26 = tmp29;
+    cResult[14] = tmp34;
+    tmp31 = tmp34;
   }
-  const fn2 = function y(navigation) {
+  const fn3 = function y(navigation) {
     let str;
     closure_2.current = navigation.navigation;
     const obj = {
@@ -351,8 +265,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   };
   cResult[4] = accessibilityNativeStackOptions;
   cResult[5] = tmp4.header;
-  cResult[6] = fn2;
-}) : ((arg0) => {
+  cResult[6] = fn3;
+  tmp10 = fn3;
+}) : (function NewUserModal(arg0) {
   let closure_2;
   let closure_3;
   let initialOnboardingStepIndex;
@@ -450,7 +365,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             onPress() {
               let paths;
               closure_0 = closure_1_4;
-              const lazyResult = React.lazy(f131161);
+              const lazyResult = React.lazy(f133832);
               const obj = closure_2_0(closure_2_2[8]);
               const obj2 = {
                 onConfirm() {

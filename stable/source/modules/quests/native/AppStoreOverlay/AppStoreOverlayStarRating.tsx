@@ -1,20 +1,18 @@
-// Module ID: 10927
-// Function ID: 10928
+// Module ID: 12957
+// Function ID: 12958
 // Name: AppStoreOverlayStarRating
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 9945, 9943, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 9547, 9549, 2]
 
-// Module 10927 (AppStoreOverlayStarRating)
+// Module 12957 (AppStoreOverlayStarRating)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import StarOutlineIcon2 from "StarOutlineIcon" /* 9945 */;
+import StarOutlineIcon2 from "StarOutlineIcon" /* 9547 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let fillAmounts;
 
 let closure_4;
 let hasOwnProperty;
@@ -22,7 +20,7 @@ let rect;
 let size;
 let size1;
 let tmp5;
-const StarIcon2 = tmp5(9943);
+const StarIcon2 = tmp5(9549);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -33,7 +31,7 @@ size1 = { width: nativeDefault.space.PX_10, height: nativeDefault.space.PX_10, p
 rect = { position: "absolute", left: 0, top: 0, height: nativeDefault.space.PX_10, overflow: "hidden" };
 let closure_6 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((fillAmount) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalStar(fillAmount) {
   let StarIcon;
   let items;
   let items1;
@@ -45,7 +43,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((fillAmount) => 
   const tmp4 = closure_6();
   if (cResult[0] !== tmp4.starIcon) {
     const obj2 = { size: "custom", color: nativeDefault.colors.TEXT_MUTED, style: tmp4.starIcon };
-    const StarOutlineIcon = tmp(9945).StarOutlineIcon;
+    const StarOutlineIcon = tmp(9547).StarOutlineIcon;
     const tmp8 = React3(StarOutlineIcon, obj2);
     cResult[0] = tmp4.starIcon;
     cResult[1] = tmp8;
@@ -85,7 +83,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((fillAmount) => 
     items1[1] = { width: nativeDefault.space.PX_10 * fillAmount };
     const obj5 = { width: nativeDefault.space.PX_10 * fillAmount };
     obj6 = { size: "custom", color: nativeDefault.colors.TEXT_MUTED, style: tmp4.starIcon };
-    StarIcon = tmp(9943).StarIcon;
+    StarIcon = tmp(9549).StarIcon;
     tmp10 = React3(View, obj4);
   }
   cResult[2] = fillAmount;
@@ -93,7 +91,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((fillAmount) => 
   cResult[4] = tmp4.starIcon;
   cResult[5] = tmp10;
   tmp9 = tmp10;
-}) : ((fillAmount) => {
+}) : (function FractionalStar(fillAmount) {
   let StarIcon;
   let items;
   let items1;
@@ -119,7 +117,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((fillAmount) => 
   return tmp2(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((fillAmounts) => {
+tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOverlayStarRating(fillAmounts) {
   let tmp3;
   let obj = react2;
   const cResult = obj.c(6);
@@ -130,7 +128,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((fillAmounts) => {
     let tmp5;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function u(fillAmount, arg1) {
+      const fn = function p(fillAmount, arg1) {
         const obj = { fillAmount };
         return closure_1_4(closure_1_7, obj, arg1);
       };
@@ -158,7 +156,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((fillAmounts) => {
   cResult[4] = tmp3;
   cResult[5] = tmp8;
   tmp7 = tmp8;
-}) : ((fillAmounts) => {
+}) : (function AppStoreOverlayStarRating(fillAmounts) {
   fillAmounts = fillAmounts.fillAmounts;
   let obj = {
     style: closure_6().row,

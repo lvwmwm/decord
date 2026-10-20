@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "5ad61954329ae43fee881a48ae602d3b", name: "ic_paperclip_24px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 51, height: 33, scales: [2, 3], hash: "68d0a7491ea9de9245e6ac89adfb6384", name: "img_tier_0_error_mobile", type: "png" });

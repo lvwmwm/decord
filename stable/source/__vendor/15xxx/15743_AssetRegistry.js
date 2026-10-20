@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/collectibles/native/images", width: 375, height: 162, scales: [1], hash: "8c6551e987e65957d7c90c18eddac8f1", name: "featured_page_footer_dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "ab02db863b7edeaa46bf4cd49b6646a9", name: "ko", type: "png" });

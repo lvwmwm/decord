@@ -1,33 +1,31 @@
-// Module ID: 5997
-// Function ID: 5998
+// Module ID: 6184
+// Function ID: 6185
 // Name: AnimatedPressableHighlight
-// Dependencies: [109, 19, 17, 21, 4612, 5909, 558, 576, 5998, 4580, 587, 1369, 2]
+// Dependencies: [109, 19, 17, 21, 4850, 6185, 558, 576, 6187, 4818, 587, 1382, 2]
 
-// Module 5997 (AnimatedPressableHighlight)
+// Module 6184 (AnimatedPressableHighlight)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Pressables from "Pressables" /* 5909 */;
+import Pressables from "Pressables" /* 6185 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import size from "module_2" /* 2 */;
 
-let children;
-
 let tmp;
-const useToken = tmp(4580);
-const useIOSPressEffects = tmp(5998);
+const useToken = tmp(4818);
+const useIOSPressEffects = tmp(6187);
 let closure_3 = ["children"];
 let closure_4 = ["children"];
 const Pressable = react_native.Pressable;
 const jsx = Fragment.jsx;
 let closure_9 = ReanimatedRexport.createAnimatedComponent(Pressables.PressableHighlight);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedPressableHighlightiOS(children) {
   let onPressIn;
   let onPressOut;
   let pressableStyles;
@@ -83,7 +81,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[4] = tmp5.style;
   cResult[5] = items;
   tmp10 = items;
-}) : ((children) => {
+}) : (function AnimatedPressableHighlightiOS(children) {
   children = children.children;
   const merged = Object.assign(children, Object.assign({ children: 0 }));
   const obj = useIOSPressEffects;
@@ -94,7 +92,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   return <closure_9 accessibilityRole="button" onPressIn={iOSPressEffects.onPressIn} onPressOut={iOSPressEffects.onPressOut} style={items}>{children}</closure_9>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedPressableHighlightAndroid(children) {
   let androidRippleConfig;
   let androidRippleConfig2;
   let tmp4;
@@ -150,7 +148,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[4] = num4;
   cResult[5] = obj3;
   tmp10 = obj3;
-}) : ((children) => {
+}) : (function AnimatedPressableHighlightAndroid(children) {
   children = children.children;
   const merged = Object.assign(children, Object.assign({ children: 0 }));
   let obj = useToken;

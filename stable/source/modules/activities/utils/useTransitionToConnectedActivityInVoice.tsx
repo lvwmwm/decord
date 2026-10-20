@@ -1,29 +1,29 @@
-// Module ID: 17364
-// Function ID: 17365
+// Module ID: 17960
+// Function ID: 17961
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 2051, 2103, 1085, 558, 576, 4498, 9014, 9015, 9049, 1121, 2]
+// Dependencies: [5, 19, 2065, 2116, 1085, 558, 576, 4739, 10482, 10879, 10825, 1121, 2]
 
-// Module 17364 (useTransitionToConnectedActivityInVoice)
+// Module 17960 (useTransitionToConnectedActivityInVoice)
 import Constants from "Constants" /* 1085 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId, onTransition;
+let channelId;
 
 const ComponentActions = Constants.ComponentActions;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTransition) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTransitionToConnectedActivityInVoice(onTransition) {
   let tmp2;
   let tmp3;
   let obj = onTransition(576);
   const cResult = obj.c(3);
   onTransition = onTransition.onTransition;
   if (cResult[0] !== onTransition) {
-    const fn = function s() {
+    const fn = function l() {
       let closure_0 = _asyncToGenerator(async (arg0, value) => {
         closure_0 = arg0;
         if (c4 === 2) {
@@ -119,7 +119,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTransition) => {
     tmp3 = cResult[2];
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : ((onTransition) => {
+}) : (function useTransitionToConnectedActivityInVoice(onTransition) {
   onTransition = onTransition.onTransition;
   const items = [onTransition];
   const effect = react.useEffect(() => {
@@ -162,7 +162,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTransition) => {
                   guild_id = undefined;
                   c3 = 1;
                   c4 = 1;
-                  return { value: "Reflect", done: null };
+                  return { value: "Set", done: true };
                 }
               } else {
                 if (1 === c3) {

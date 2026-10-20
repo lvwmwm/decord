@@ -1,251 +1,313 @@
 // Module ID: 1682
 // Function ID: 1683
-// Dependencies: [1683, 1686, 1694, 1647]
-// Exports: withStyleAnimation
+// Dependencies: [41, 42, 90, 91, 1672, 1683, 1678, 1667, 1659, 1684]
+// Exports: createNativeReanimatedModule
 
 // Module 1682
-const require = globalThis.__r;
-let _require;
+import _mod1659 from "module_1659" /* 1659 */;
+import WorkletsModule from "WorkletsModule" /* 1672 */;
+import react_native from "react-native" /* 1678 */;
+import jsVersion from "jsVersion" /* 1683 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _classPrivateFieldBase from "_classPrivateFieldBase" /* 90 */;
+import _classPrivateFieldKey from "_classPrivateFieldKey" /* 91 */;
 
-function resolvePath(arg0, arg1) {
-  let arr = arg1;
-  if (!Array.isArray(arg1)) {
-    const items = [arg1];
-    arr = items;
-  }
-  return arr.reduce((acc, item) => {
-    if (!Array.isArray(acc)) {
-      let tmp2;
-      return tmp2;
+let tmp;
+const findHostInstance = tmp(1684);
+let closure_5 = _classPrivateFieldKey("workletsModule");
+let closure_6 = _classPrivateFieldKey("reanimatedModuleProxy");
+class NativeReanimatedModule {
+  constructor() {
+    const self = this;
+    _classCallCheck(this, NativeReanimatedModule);
+    Object.defineProperty(this, closure_5, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_6, { writable: true, value: "Array" });
+    const tmp6 = _classPrivateFieldBase(this, closure_5);
+    tmp6[closure_5] = WorkletsModule.WorkletsModule;
+    global._REANIMATED_VERSION_JS = jsVersion.jsVersion;
+    if (undefined === global.__reanimatedModuleProxy) {
+      if (react_native.ReanimatedTurboModule) {
+        const ReanimatedTurboModule = tmp7(1678).ReanimatedTurboModule;
+        if (!ReanimatedTurboModule.installTurboModule()) {
+          const self2 = this;
+          const self3 = this;
+          const tmp5Result = _classPrivateFieldBase(self, closure_6);
+          tmp5Result[closure_6] = new closure_8();
+          const tmp12 = new closure_8();
+        }
+      }
     }
-    tmp2 = acc[item];
-  }, arg0);
-}
-resolvePath.__closure = {};
-resolvePath.__workletHash = 6511886988303;
-resolvePath.__initData = { code: "function resolvePath_Pnpm_styleAnimationTs1(obj,path){const keys=Array.isArray(path)?path:[path];return keys.reduce(function(acc,current){if(Array.isArray(acc)&&typeof current==='number'){return acc[current];}else if(acc!==null&&typeof acc==='object'&&current in acc){return acc[current];}return undefined;},obj);}" };
-function setPath(arg0, arg1, arg2) {
-  let arr = arg1;
-  if (!Array.isArray(arg1)) {
-    const items = [arg1];
-    arr = items;
+    if (undefined === global.__reanimatedModuleProxy) {
+      const self4 = this;
+      const self5 = this;
+      const reanimatedError = new tmp7(1667).ReanimatedError("Native part of Reanimated doesn't seem to be initialized.\nSee https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#native-part-of-reanimated-doesnt-seem-to-be-initialized for more details.");
+      throw reanimatedError;
+    } else {
+      _classPrivateFieldBase(self, closure_6)[closure_6] = global.__reanimatedModuleProxy;
+    }
   }
-  let tmp = arg0;
-  let tmp2 = arg0;
-  let num = 0;
-  if (0 < arr.length - 1) {
-    do {
-      if (!(arr[num] in tmp)) {
-        if (typeof arr[num + 1] === "number") {
-          tmp[arr[num]] = [];
-        } else {
-          tmp[arr[num]] = {};
-        }
-      }
-      tmp = tmp[arr[num]];
-      num = num + 1;
-      tmp2 = tmp;
-    } while (num < arr.length - 1);
+}
+const entry = {
+  key: "scheduleOnUI",
+  value: function scheduleOnUI(arg0) {
+    const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+    return obj.scheduleOnUI(arg0);
   }
-  tmp2[arr[arr.length - 1]] = arg2;
-}
-setPath.__closure = {};
-setPath.__workletHash = 1936400546748;
-setPath.__initData = { code: "function setPath_Pnpm_styleAnimationTs2(obj,path,value){const keys=Array.isArray(path)?path:[path];let currObj=obj;for(let i=0;i<keys.length-1;i++){currObj=currObj;if(!(keys[i]in currObj)){if(typeof keys[i+1]==='number'){currObj[keys[i]]=[];}else{currObj[keys[i]]={};}}currObj=currObj[keys[i]];}currObj[keys[keys.length-1]]=value;}" };
-const __initData = { code: "function pnpm_styleAnimationTs4(){const{ColorProperties,setPath,processColor,styleAnimations,resolvePath,__DEV__,logger,isValidLayoutAnimationProp,withTiming}=this.__closure;const onFrame=function(animation,now){let stillGoing=false;const entriesToCheck=[{value:animation.styleAnimations,path:[]}];while(entriesToCheck.length>0){const currentEntry=entriesToCheck.pop();if(Array.isArray(currentEntry.value)){for(let index=0;index<currentEntry.value.length;index++){entriesToCheck.push({value:currentEntry.value[index],path:currentEntry.path.concat(index)});}}else if(typeof currentEntry.value==='object'&&currentEntry.value.onFrame===undefined){for(const key of Object.keys(currentEntry.value)){entriesToCheck.push({value:currentEntry.value[key],path:currentEntry.path.concat(key)});}}else{const currentStyleAnimation=currentEntry.value;if(currentStyleAnimation.finished){continue;}const finished=currentStyleAnimation.onFrame(currentStyleAnimation,now);if(finished){currentStyleAnimation.finished=true;if(currentStyleAnimation.callback){currentStyleAnimation.callback(true);}}else{stillGoing=true;}const isAnimatingColorProp=ColorProperties.includes(currentEntry.path[0]);setPath(animation.current,currentEntry.path,isAnimatingColorProp?processColor(currentStyleAnimation.current):currentStyleAnimation.current);}}return!stillGoing;};const onStart=function(animation,value,now,previousAnimation){const entriesToCheck=[{value:styleAnimations,path:[]}];while(entriesToCheck.length>0){const currentEntry=entriesToCheck.pop();if(Array.isArray(currentEntry.value)){for(let index=0;index<currentEntry.value.length;index++){entriesToCheck.push({value:currentEntry.value[index],path:currentEntry.path.concat(index)});}}else if(typeof currentEntry.value==='object'&&currentEntry.value.onStart===undefined){for(const key of Object.keys(currentEntry.value)){entriesToCheck.push({value:currentEntry.value[key],path:currentEntry.path.concat(key)});}}else{const prevAnimation=resolvePath(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.styleAnimations,currentEntry.path);let prevVal=resolvePath(value,currentEntry.path);if(prevAnimation&&!prevVal){prevVal=prevAnimation.current;}if(__DEV__){if(prevVal===undefined){logger.warn(\"Initial values for animation are missing for property \"+currentEntry.path.join('.'));}const propName=currentEntry.path[0];if(typeof propName==='string'&&!isValidLayoutAnimationProp(propName.trim())){logger.warn(\"'\"+propName+\"' property is not officially supported for layout animations. It may not work as expected.\");}}setPath(animation.current,currentEntry.path,prevVal);let currentAnimation;if(typeof currentEntry.value!=='object'||!currentEntry.value.onStart){currentAnimation=withTiming(currentEntry.value,{duration:0});setPath(animation.styleAnimations,currentEntry.path,currentAnimation);}else{currentAnimation=currentEntry.value;}currentAnimation.onStart(currentAnimation,prevVal,now,prevAnimation);}}};const callback=function(finished){if(!finished){const animationsToCheck=[styleAnimations];while(animationsToCheck.length>0){const currentAnimation=animationsToCheck.pop();if(Array.isArray(currentAnimation)){for(const element of currentAnimation){animationsToCheck.push(element);}}else if(typeof currentAnimation==='object'&&currentAnimation.onStart===undefined){for(const value of Object.values(currentAnimation)){animationsToCheck.push(value);}}else{const currentStyleAnimation=currentAnimation;if(!currentStyleAnimation.finished&&currentStyleAnimation.callback){currentStyleAnimation.callback(false);}}}}};return{isHigherOrder:true,onFrame:onFrame,onStart:onStart,current:{},styleAnimations:styleAnimations,callback:callback};}" };
-function withStyleAnimation(animations) {
-  _require = animations;
-  let obj = require("module_1683");
-  const fn = function i() {
-    let obj = {
-      isHigherOrder: true,
-      onFrame(styleAnimations, arg1) {
-        let length;
-        let path3;
-        const items = [];
-        const obj = { value: styleAnimations.styleAnimations, path: [] };
-        items[0] = obj;
-        let flag = false;
-        let flag2 = false;
-        while (items.length > 0) {
-          let tmp2;
-          let iter = items.pop();
-          let _Array = Array;
-          let value2 = iter.value;
-          if (Array.isArray(iter.value)) {
-            let num = 0;
-            tmp2 = flag;
-            if (0 < value2.length) {
-              do {
-                let obj2 = { value: iter.value[num], path: path3.concat(num) };
-                path3 = iter.path;
-                let push2 = items.push;
-                let push2Result = push2(obj2);
-                num = num + 1;
-                tmp2 = flag;
-                length = iter.value.length;
-              } while (num < length);
-            }
-          } else {
-            if (typeof value2 === "object") {
-              if (undefined === iter.value.onFrame) {
-                let _Object = Object;
-                let keys = Object.keys(iter.value);
-                tmp2 = flag;
-                for (const item10057 of keys) {
-                  let obj3 = { value: iter.value[item10057], path: path2.concat(item10057) };
-                  let path2 = iter.path;
-                  let push = items.push;
-                  let arr = push(obj3);
-                  continue;
-                }
-              }
-            }
-            value = iter.value;
-            tmp2 = flag;
-            if (!value.finished) {
-              let current2;
-              let flag3 = true;
-              if (value.onFrame(value, arg1)) {
-                value.finished = true;
-                flag3 = flag;
-                if (value.callback) {
-                  let callbackResult = value.callback(true);
-                  flag3 = flag;
-                }
-              }
-              let tmp4 = value;
-              let tmp5 = closure_1_1;
-              let ColorProperties = value(closure_1_1[1]).ColorProperties;
-              let tmp6 = closure_1_3;
-              let current = styleAnimations.current;
-              let path = iter.path;
-              if (ColorProperties.includes(iter.path[0])) {
-                let tmp4Result = tmp4(tmp5[1]);
-                current2 = tmp4Result.processColor(value.current);
-              } else {
-                current2 = value.current;
-              }
-              let tmp6Result = tmp6(current, path, current2);
-              tmp2 = flag3;
-            }
-          }
-          flag = tmp2;
-          flag2 = tmp2;
-        }
-        return !flag2;
-      },
-      onStart(current, arg1, arg2, styleAnimations) {
-        let length;
-        let path2;
-        const items = [];
-        const obj = { value, path: [] };
-        items[0] = obj;
-        if (items.length > 0) {
-          do {
-            let iter = items.pop();
-            let _Array = Array;
-            let value2 = iter.value;
-            if (Array.isArray(iter.value)) {
-              let num = 0;
-              if (0 < value2.length) {
-                do {
-                  let obj3 = { value: iter.value[num], path: path2.concat(num) };
-                  path2 = iter.path;
-                  let push2 = items.push;
-                  let push2Result = push2(obj3);
-                  num = num + 1;
-                  length = iter.value.length;
-                } while (num < length);
-              }
-            } else {
-              if (typeof value2 === "object") {
-                if (undefined === iter.value.onStart) {
-                  let _Object = Object;
-                  let keys = Object.keys(iter.value);
-                  for (const item10061 of keys) {
-                    let obj4 = { value: iter.value[item10061], path: path.concat(item10061) };
-                    let path = iter.path;
-                    let push = items.push;
-                    let arr = push(obj4);
-                    continue;
-                  }
-                }
-              }
-              let tmp = resolvePath;
-              styleAnimations = undefined;
-              if (styleAnimations != null) {
-                styleAnimations = styleAnimations.styleAnimations;
-              }
-              let tmpResult = tmp(styleAnimations, iter.path);
-              current = tmp(arg1, iter.path);
-              let tmp4 = tmpResult && !current;
-              if (tmp4) {
-                current = tmpResult.current;
-              }
-              let tmp5 = setPath;
-              let tmp6 = setPath(current.current, iter.path, current);
-              if (typeof iter.value === "object") {
-                if (iter.value.onStart) {
-                  value = iter.value;
-                  let onStartResult = value.onStart(value, tmp7, arg2, tmpResult);
-                }
-              }
-              let obj2 = value(dependencyMap[2]);
-              let withTimingResult = obj2.withTiming(iter.value, { duration: 0 });
-              let tmp5Result = tmp5(current.styleAnimations, iter.path, withTimingResult);
-              value = withTimingResult;
-            }
-          } while (items.length > 0);
-        }
-      },
-      current: {},
-      styleAnimations,
-      callback(arg0) {
-        const tmp = arg0;
-        if (!tmp) {
-          const items = [styleAnimations];
-          if (items.length > 0) {
-            do {
-              let arr = items.pop();
-              let _Array = Array;
-              if (Array.isArray(arr)) {
-                for (const item10031 of arr) {
-                  let arr4 = items.push(item10031);
-                  continue;
-                }
-              } else {
-                if (typeof arr === "object") {
-                  if (undefined === arr.onStart) {
-                    let _Object = Object;
-                    let values = Object.values(arr);
-                    for (const item10023 of values) {
-                      let arr5 = items.push(item10023);
-                      continue;
-                    }
-                  }
-                }
-                let tmp4 = !arr.finished && arr.callback;
-                if (tmp4) {
-                  let callbackResult = arr.callback(false);
-                }
-              }
-            } while (items.length > 0);
-          }
-        }
+};
+const items = [
+  entry,
+  {
+    key: "executeOnUIRuntimeSync",
+    value: function executeOnUIRuntimeSync(arg0) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.executeOnUIRuntimeSync(arg0);
+    }
+  },
+  {
+    key: "createWorkletRuntime",
+    value: function createWorkletRuntime(arg0, arg1) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.createWorkletRuntime(arg0, arg1);
+    }
+  },
+  {
+    key: "scheduleOnRuntime",
+    value: function scheduleOnRuntime(arg0, arg1) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.scheduleOnRuntime(arg0, arg1);
+    }
+  },
+  {
+    key: "registerSensor",
+    value: function registerSensor(arg0, arg1, arg2, arg3) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.registerSensor(arg0, arg1, arg2, arg3);
+    }
+  },
+  {
+    key: "unregisterSensor",
+    value: function unregisterSensor(arg0) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.unregisterSensor(arg0);
+    }
+  },
+  {
+    key: "registerEventHandler",
+    value: function registerEventHandler(arg0, arg1, arg2) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.registerEventHandler(arg0, arg1, arg2);
+    }
+  },
+  {
+    key: "unregisterEventHandler",
+    value: function unregisterEventHandler(arg0) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.unregisterEventHandler(arg0);
+    }
+  },
+  {
+    key: "getViewProp",
+    value: function getViewProp(arg0, arg1, self, arg3) {
+      let viewProp;
+      self = this;
+      const obj = _mod1659;
+      if (obj.isFabric()) {
+        const tmpResult = findHostInstance;
+        const shadowNodeWrapperFromRef = tmpResult.getShadowNodeWrapperFromRef(self);
+        const obj4 = _classPrivateFieldBase(self, closure_6)[closure_6];
+        viewProp = obj4.getViewProp(shadowNodeWrapperFromRef, arg1, arg3);
+      } else {
+        const obj2 = _classPrivateFieldBase(self, closure_6)[closure_6];
+        viewProp = obj2.getViewProp(arg0, arg1, arg3);
       }
-    };
-    return obj;
-  };
-  let obj2 = { ColorProperties: require("clampRGBA").ColorProperties, setPath, processColor: require("clampRGBA").processColor, styleAnimations: animations, resolvePath, __DEV__: false, logger: require("react-native").logger, isValidLayoutAnimationProp: require("module_1683").isValidLayoutAnimationProp, withTiming: require("module_1694").withTiming };
-  fn.__closure = obj2;
-  fn.__workletHash = 1293354823532;
-  fn.__initData = __initData;
-  return obj.defineAnimation({}, fn);
+      return viewProp;
+    }
+  },
+  {
+    key: "configureLayoutAnimationBatch",
+    value: function configureLayoutAnimationBatch(arg0) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      const result = obj.configureLayoutAnimationBatch(arg0);
+    }
+  },
+  {
+    key: "setShouldAnimateExitingForTag",
+    value: function setShouldAnimateExitingForTag(arg0, arg1) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      const result = obj.setShouldAnimateExitingForTag(arg0, arg1);
+    }
+  },
+  {
+    key: "enableLayoutAnimations",
+    value: function enableLayoutAnimations(arg0) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      const result = obj.enableLayoutAnimations(arg0);
+    }
+  },
+  {
+    key: "configureProps",
+    value: function configureProps(arg0, arg1) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      obj.configureProps(arg0, arg1);
+    }
+  },
+  {
+    key: "subscribeForKeyboardEvents",
+    value: function subscribeForKeyboardEvents(arg0, arg1, arg2) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.subscribeForKeyboardEvents(arg0, arg1, arg2);
+    }
+  },
+  {
+    key: "unsubscribeFromKeyboardEvents",
+    value: function unsubscribeFromKeyboardEvents(arg0) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      const result = obj.unsubscribeFromKeyboardEvents(arg0);
+    }
+  },
+  {
+    key: "markNodeAsRemovable",
+    value: function markNodeAsRemovable(arg0) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      obj.markNodeAsRemovable(arg0);
+    }
+  },
+  {
+    key: "unmarkNodeAsRemovable",
+    value: function unmarkNodeAsRemovable(arg0) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      const result = obj.unmarkNodeAsRemovable(arg0);
+    }
+  },
+  {
+    key: "getSettledUpdates",
+    value: function getSettledUpdates() {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.getSettledUpdates();
+    }
+  }
+];
+let closure_7 = _createClass(NativeReanimatedModule, items);
+class DummyReanimatedModuleProxy {
+  constructor() {
+    _classCallCheck(this, DummyReanimatedModuleProxy);
+  }
 }
-let obj = { defineAnimation: require("module_1683").defineAnimation, ColorProperties: require("clampRGBA").ColorProperties, setPath, processColor: require("clampRGBA").processColor, resolvePath, __DEV__: false, logger: require("react-native").logger, isValidLayoutAnimationProp: require("module_1683").isValidLayoutAnimationProp, withTiming: require("module_1694").withTiming };
-withStyleAnimation.__closure = obj;
-withStyleAnimation.__workletHash = 3046356752495;
-withStyleAnimation.__initData = { code: "function withStyleAnimation_Pnpm_styleAnimationTs3(styleAnimations){const{defineAnimation,ColorProperties,setPath,processColor,resolvePath,__DEV__,logger,isValidLayoutAnimationProp,withTiming}=this.__closure;return defineAnimation({},function(){'worklet';const onFrame=function(animation,now){let stillGoing=false;const entriesToCheck=[{value:animation.styleAnimations,path:[]}];while(entriesToCheck.length>0){const currentEntry=entriesToCheck.pop();if(Array.isArray(currentEntry.value)){for(let index=0;index<currentEntry.value.length;index++){entriesToCheck.push({value:currentEntry.value[index],path:currentEntry.path.concat(index)});}}else if(typeof currentEntry.value==='object'&&currentEntry.value.onFrame===undefined){for(const key of Object.keys(currentEntry.value)){entriesToCheck.push({value:currentEntry.value[key],path:currentEntry.path.concat(key)});}}else{const currentStyleAnimation=currentEntry.value;if(currentStyleAnimation.finished){continue;}const finished=currentStyleAnimation.onFrame(currentStyleAnimation,now);if(finished){currentStyleAnimation.finished=true;if(currentStyleAnimation.callback){currentStyleAnimation.callback(true);}}else{stillGoing=true;}const isAnimatingColorProp=ColorProperties.includes(currentEntry.path[0]);setPath(animation.current,currentEntry.path,isAnimatingColorProp?processColor(currentStyleAnimation.current):currentStyleAnimation.current);}}return!stillGoing;};const onStart=function(animation,value,now,previousAnimation){const entriesToCheck=[{value:styleAnimations,path:[]}];while(entriesToCheck.length>0){const currentEntry=entriesToCheck.pop();if(Array.isArray(currentEntry.value)){for(let index=0;index<currentEntry.value.length;index++){entriesToCheck.push({value:currentEntry.value[index],path:currentEntry.path.concat(index)});}}else if(typeof currentEntry.value==='object'&&currentEntry.value.onStart===undefined){for(const key of Object.keys(currentEntry.value)){entriesToCheck.push({value:currentEntry.value[key],path:currentEntry.path.concat(key)});}}else{const prevAnimation=resolvePath(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.styleAnimations,currentEntry.path);let prevVal=resolvePath(value,currentEntry.path);if(prevAnimation&&!prevVal){prevVal=prevAnimation.current;}if(__DEV__){if(prevVal===undefined){logger.warn(\"Initial values for animation are missing for property \"+currentEntry.path.join('.'));}const propName=currentEntry.path[0];if(typeof propName==='string'&&!isValidLayoutAnimationProp(propName.trim())){logger.warn(\"'\"+propName+\"' property is not officially supported for layout animations. It may not work as expected.\");}}setPath(animation.current,currentEntry.path,prevVal);let currentAnimation;if(typeof currentEntry.value!=='object'||!currentEntry.value.onStart){currentAnimation=withTiming(currentEntry.value,{duration:0});setPath(animation.styleAnimations,currentEntry.path,currentAnimation);}else{currentAnimation=currentEntry.value;}currentAnimation.onStart(currentAnimation,prevVal,now,prevAnimation);}}};const callback=function(finished){if(!finished){const animationsToCheck=[styleAnimations];while(animationsToCheck.length>0){const currentAnimation=animationsToCheck.pop();if(Array.isArray(currentAnimation)){for(const element of currentAnimation){animationsToCheck.push(element);}}else if(typeof currentAnimation==='object'&&currentAnimation.onStart===undefined){for(const value of Object.values(currentAnimation)){animationsToCheck.push(value);}}else{const currentStyleAnimation=currentAnimation;if(!currentStyleAnimation.finished&&currentStyleAnimation.callback){currentStyleAnimation.callback(false);}}}}};return{isHigherOrder:true,onFrame:onFrame,onStart:onStart,current:{},styleAnimations:styleAnimations,callback:callback};});}" };
+const entry1 = {
+  key: "scheduleOnUI",
+  value: function scheduleOnUI() {
 
-export { withStyleAnimation };
+  }
+};
+const items1 = [
+  entry1,
+  {
+    key: "executeOnUIRuntimeSync",
+    value: function executeOnUIRuntimeSync() {
+      return null;
+    }
+  },
+  {
+    key: "createWorkletRuntime",
+    value: function createWorkletRuntime() {
+      return null;
+    }
+  },
+  {
+    key: "scheduleOnRuntime",
+    value: function scheduleOnRuntime() {
+
+    }
+  },
+  {
+    key: "configureLayoutAnimationBatch",
+    value: function configureLayoutAnimationBatch() {
+
+    }
+  },
+  {
+    key: "setShouldAnimateExitingForTag",
+    value: function setShouldAnimateExitingForTag() {
+
+    }
+  },
+  {
+    key: "enableLayoutAnimations",
+    value: function enableLayoutAnimations() {
+
+    }
+  },
+  {
+    key: "configureProps",
+    value: function configureProps() {
+
+    }
+  },
+  {
+    key: "subscribeForKeyboardEvents",
+    value: function subscribeForKeyboardEvents() {
+      return -1;
+    }
+  },
+  {
+    key: "unsubscribeFromKeyboardEvents",
+    value: function unsubscribeFromKeyboardEvents() {
+
+    }
+  },
+  {
+    key: "markNodeAsRemovable",
+    value: function markNodeAsRemovable() {
+
+    }
+  },
+  {
+    key: "unmarkNodeAsRemovable",
+    value: function unmarkNodeAsRemovable() {
+
+    }
+  },
+  {
+    key: "registerSensor",
+    value: function registerSensor() {
+      return -1;
+    }
+  },
+  {
+    key: "unregisterSensor",
+    value: function unregisterSensor() {
+
+    }
+  },
+  {
+    key: "registerEventHandler",
+    value: function registerEventHandler() {
+      return -1;
+    }
+  },
+  {
+    key: "unregisterEventHandler",
+    value: function unregisterEventHandler() {
+
+    }
+  },
+  {
+    key: "getViewProp",
+    value: function getViewProp() {
+      return null;
+    }
+  },
+  {
+    key: "getSettledUpdates",
+    value: function getSettledUpdates() {
+      return [];
+    }
+  }
+];
+let closure_8 = _createClass(DummyReanimatedModuleProxy, items1);
+
+export const createNativeReanimatedModule = function createNativeReanimatedModule() {
+  const tmp = new closure_7();
+  return tmp;
+};

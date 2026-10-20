@@ -1,16 +1,16 @@
-// Module ID: 17203
-// Function ID: 17204
+// Module ID: 17798
+// Function ID: 17799
 // Name: useControlsLock
-// Dependencies: [19, 558, 576, 11901, 2]
+// Dependencies: [19, 558, 576, 11973, 2]
 
-// Module 17203 (useControlsLock)
+// Module 17798 (useControlsLock)
 import react2 from "react" /* 576 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11901 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11973 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useControlsLock(arg0) {
   let closure_0 = arg0;
   const obj = react2;
   const cResult = obj.c(6);
@@ -24,7 +24,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const first = obj2.useState(tmp2)[0];
     if (cResult[3] !== first) {
-      const fn2 = function s() {
+      const fn2 = function c() {
         return () => first.unlock();
       };
       const items = [first];
@@ -40,14 +40,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const layoutEffect = obj2.useLayoutEffect(tmp4, tmp5);
     return first;
   }
-  const fn = function o() {
+  const fn = function n() {
     return generateStateLocker(closure_0);
   };
   cResult[0] = generateStateLocker;
   cResult[1] = arg0;
   cResult[2] = fn;
   tmp2 = fn;
-}) : ((arg0) => {
+}) : (function useControlsLock(arg0) {
   let closure_0 = arg0;
   const generateStateLocker = react.useContext(VoicePanelStateContextDefault).generateStateLocker;
   const first = react.useState(() => generateStateLocker(closure_0))[0];

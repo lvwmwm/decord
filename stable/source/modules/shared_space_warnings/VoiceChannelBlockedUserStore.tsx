@@ -1,14 +1,14 @@
-// Module ID: 13543
-// Function ID: 13544
+// Module ID: 14029
+// Function ID: 14030
 // Name: VoiceChannelBlockedUserStore
-// Dependencies: [4519, 4909, 13544, 504, 584, 2]
+// Dependencies: [4760, 5113, 14030, 504, 584, 2]
 
-// Module 13543 (VoiceChannelBlockedUserStore)
+// Module 14029 (VoiceChannelBlockedUserStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import SharedSpacesWarningManagerDefault from "SharedSpacesWarningManager" /* 13544 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import handleBlockedOrIgnoredUserVoiceChannelJoinDefault from "handleBlockedOrIgnoredUserVoiceChannelJoin" /* 14030 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, closure_5;
@@ -57,8 +57,7 @@ function processUserInChannel(channelId, userId) {
             delete closure_5[channelId];
           }
           if (flag3) {
-            const obj4 = SharedSpacesWarningManagerDefault;
-            const result = obj4.handleBlockedOrIgnoredUserVoiceChannelJoin(channelId, userId);
+            handleBlockedOrIgnoredUserVoiceChannelJoinDefault(channelId, userId);
           }
           return flag4;
         }
@@ -161,6 +160,6 @@ const obj = {
   RELATIONSHIP_UPDATE: handleRelationshipChange
 };
 const voiceChannelBlockedUserStore = new VoiceChannelBlockedUserStore(DispatcherDefault, obj);
-let result = size.fileFinishedImporting("modules/shared_space_warnings/VoiceChannelBlockedUserStore.tsx");
+const result = size.fileFinishedImporting("modules/shared_space_warnings/VoiceChannelBlockedUserStore.tsx");
 
 export default voiceChannelBlockedUserStore;

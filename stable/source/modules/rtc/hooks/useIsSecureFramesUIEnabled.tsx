@@ -1,16 +1,14 @@
-// Module ID: 9384
-// Function ID: 9385
+// Module ID: 8843
+// Function ID: 8844
 // Name: useIsSecureFramesUIEnabled
-// Dependencies: [2051, 4913, 9366, 558, 576, 504, 2]
+// Dependencies: [2065, 5110, 8825, 558, 576, 504, 2]
 
-// Module 9384 (useIsSecureFramesUIEnabled)
-import SecureFramesConstants from "SecureFramesConstants" /* 9366 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+// Module 8843 (useIsSecureFramesUIEnabled)
+import SecureFramesConstants from "SecureFramesConstants" /* 8825 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channelId;
 
 function isSecureFramesUIEnabled(isCallRTCConnectionEmpty, items) {
   let obj;
@@ -36,7 +34,7 @@ function isSecureFramesUIEnabled(isCallRTCConnectionEmpty, items) {
   }
 }
 let closure_4 = SecureFramesConstants.END_TO_END_ENCRYPTION_DISABLED;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSecureFramesUIEnabled(channelId) {
   let first;
   let tmp7;
   let tmp8;
@@ -68,7 +66,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((channelId) => {
+}) : (function useIsSecureFramesUIEnabled(channelId) {
   channelId = channelId.channelId;
   let items = [RTCConnectionStore, ChannelStore];
   const items1 = [channelId];

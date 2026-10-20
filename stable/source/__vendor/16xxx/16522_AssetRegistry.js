@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_onboarding_home/images", width: 223, height: 145.5, scales: [2, 3], hash: "fa8d8980f41bbcb7aeb9d5dc519482cb", name: "mobile-empty-state", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "1b172806bdf2366bf9d2dd1881f3c7ff", name: "SpotifyNeutralIcon", type: "png" });

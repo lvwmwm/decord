@@ -1,17 +1,17 @@
-// Module ID: 14788
-// Function ID: 14789
+// Module ID: 15267
+// Function ID: 15268
 // Name: ScanQrCodeSetting
-// Dependencies: [5, 5099, 12, 1615, 7275, 5093, 13680, 1987, 11129, 1126, 14690, 2]
+// Dependencies: [5, 7478, 12, 1628, 7495, 5934, 14100, 2000, 10664, 1126, 15166, 2]
 
-// Module 14788 (ScanQrCodeSetting)
+// Module 15267 (ScanQrCodeSetting)
 import intl2 from "intl" /* 1126 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1615 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5099 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7275 */;
-import QrCodeIcon from "QrCodeIcon" /* 14690 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7478 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7495 */;
+import QrCodeIcon from "QrCodeIcon" /* 15166 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_12 from "module_12" /* 12 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let c1, c3;

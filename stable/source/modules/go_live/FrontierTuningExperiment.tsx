@@ -1,11 +1,11 @@
-// Module ID: 5029
-// Function ID: 5030
+// Module ID: 5238
+// Function ID: 5239
 // Name: FrontierTuningExperiment
-// Dependencies: [4937, 1441, 2]
+// Dependencies: [5212, 1454, 2]
 
-// Module 5029 (FrontierTuningExperiment)
-import StreamSettingsConstants from "StreamSettingsConstants" /* 4937 */;
-import ApexExperiment from "apex/ApexExperiment" /* 1441 */;
+// Module 5238 (FrontierTuningExperiment)
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5212 */;
+import ApexExperiment from "apex/ApexExperiment" /* 1454 */;
 import size from "module_2" /* 2 */;
 
 let ApplicationStreamFPS;

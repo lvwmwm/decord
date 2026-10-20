@@ -1,23 +1,23 @@
-// Module ID: 15231
-// Function ID: 15232
+// Module ID: 15711
+// Function ID: 15712
 // Name: ShowLinkDecorationsSetting
-// Dependencies: [4879, 7634, 558, 576, 504, 14277, 11129, 1126, 2]
+// Dependencies: [5081, 7988, 558, 576, 504, 14698, 10664, 1126, 2]
 // Exports: onShowLinkDecorationsValueChange
 
-// Module 15231 (ShowLinkDecorationsSetting)
+// Module 15711 (ShowLinkDecorationsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14277 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14698 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowLinkDecorationsSettingValue() {
   let tmp4;
   let tmp5;
   const obj = react;
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useShowLinkDecorationsSettingValue() {
   const items = [AccessibilityStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => AccessibilityStore.alwaysShowLinkDecorations);

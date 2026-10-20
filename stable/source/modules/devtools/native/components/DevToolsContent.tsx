@@ -1,27 +1,27 @@
-// Module ID: 15625
-// Function ID: 15626
+// Module ID: 16126
+// Function ID: 16127
 // Name: DevToolsContent
-// Dependencies: [32, 19, 17, 11082, 4776, 1246, 21, 4890, 587, 558, 576, 11399, 504, 15626, 4886, 4855, 15627, 5909, 15629, 1490, 1618, 5993, 4568, 14406, 6074, 2]
+// Dependencies: [32, 19, 17, 10485, 5016, 1259, 21, 5092, 587, 558, 576, 11343, 504, 16127, 5088, 5057, 16128, 6185, 16130, 1503, 1631, 6180, 4809, 14836, 6265, 2]
 
-// Module 15625 (DevToolsContent)
+// Module 16126 (DevToolsContent)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import HapticUtils from "HapticUtils" /* 4855 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Pressables from "Pressables" /* 5909 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14406 */;
-import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 15626 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 15627 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 15629 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import HapticUtils from "HapticUtils" /* 5057 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Pressables from "Pressables" /* 6185 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14836 */;
+import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 16127 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 16128 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 16130 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11082 */;
-import ExperimentStore from "ExperimentStore" /* 4776 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10485 */;
+import ExperimentStore from "ExperimentStore" /* 5016 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1259 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
 size = { backgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, width: nativeDefault.space.PX_32, height: nativeDefault.space.PX_32, borderRadius: nativeDefault.radii.round, justifyContent: "center", alignItems: "center" };
 let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDevToolsContentSublabels() {
   let allExperimentOverrideDescriptors;
   let clientOverrides;
   let currentBuildOverride;
@@ -64,7 +64,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(13);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [BuildOverrideStore];
-    const fn = function o() {
+    const fn = function n() {
       const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
       let id;
       if (overrides != null) {
@@ -101,14 +101,12 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const stateFromStores1 = tmpResult3.useStateFromStores(tmp8, tmp9);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [ApexExperimentStore];
-    class S {
-      constructor() {
-        return Object.keys(clientOverrides.getClientOverrides()).length;
-      }
-    }
+    const fn3 = function h() {
+      return Object.keys(clientOverrides.getClientOverrides()).length;
+    };
     cResult[4] = items2;
-    cResult[5] = S;
-    tmp13 = S;
+    cResult[5] = fn3;
+    tmp13 = fn3;
     tmp12 = items2;
   } else {
     tmp12 = cResult[4];
@@ -132,42 +130,36 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp17 = cResult[12];
     }
     const mapped = arr4.map(tmp17);
-    class S {
-      constructor() {
-        return Object.keys(clientOverrides.getClientOverrides()).length;
-      }
-    }
+    cResult[6] = stateFromStores;
     cResult[7] = arr4;
     cResult[8] = sum;
     cResult[9] = mapped;
     tmp16 = mapped;
   }
-  class C {
-    constructor(arg0) {
-      const first = _slicedToArray(arg0, 1)[0];
-      if ("buildOverride" === first) {
-        let tmp7;
-        if (null != stateFromStores) {
-          const obj2 = { label: "Build override: ", value: tmp5 };
-          tmp7 = authStore(memoResult, obj2, first);
-        }
-        return tmp7;
-      } else if ("experiments" === first) {
-        let tmp2;
-        const str2 = importDefault;
-        if (importDefault > 0) {
-          const obj = { label: "Experiments overridden: ", value: str2.toString() };
-          tmp2 = authStore(memoResult, obj, first);
-        }
-        return tmp2;
+  const fn4 = function _(arg0) {
+    const first = _slicedToArray(arg0, 1)[0];
+    if ("buildOverride" === first) {
+      let tmp7;
+      if (null != stateFromStores) {
+        const obj2 = { label: "Build override: ", value: tmp5 };
+        tmp7 = authStore(memoResult, obj2, first);
       }
+      return tmp7;
+    } else if ("experiments" === first) {
+      let tmp2;
+      const str2 = importDefault;
+      if (importDefault > 0) {
+        const obj = { label: "Experiments overridden: ", value: str2.toString() };
+        tmp2 = authStore(memoResult, obj, first);
+      }
+      return tmp2;
     }
-  }
+  };
   cResult[10] = stateFromStores;
   cResult[11] = sum;
-  cResult[12] = C;
-  tmp17 = C;
-}) : (() => {
+  cResult[12] = fn4;
+  tmp17 = fn4;
+}) : (function useDevToolsContentSublabels() {
   let allExperimentOverrideDescriptors;
   let clientOverrides;
   let closure_0;
@@ -216,7 +208,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsContentSubLabel(arg0) {
   let items;
   let label;
   let tmp4;
@@ -247,7 +239,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[3] = tmp4;
   cResult[4] = tmp8;
   tmp7 = tmp8;
-}) : ((arg0) => {
+}) : (function DevToolsContentSubLabel(arg0) {
   let items;
   let label;
   let value;
@@ -259,7 +251,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   return unpackModuleId(Text, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenKey) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsContentSortButtons(screenKey) {
   let end;
   let start;
   let tmp5;
@@ -269,7 +261,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenKey) => 
   ({ start, end } = screenKey);
   const tmp4 = closure_12();
   if (cResult[0] !== screenKey) {
-    const fn = function n() {
+    const fn = function o() {
       const obj = HapticUtils;
       const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
       const obj2 = useSortedDevToolsScreens;
@@ -289,7 +281,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenKey) => 
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp11 = closure_10(screenKey(15627).ArrowSmallUpIcon, {});
+      const tmp11 = closure_10(screenKey(16128).ArrowSmallUpIcon, {});
       cResult[5] = tmp11;
       tmp9 = tmp11;
     } else {
@@ -298,7 +290,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenKey) => 
     if (cResult[6] === start) {
       if (cResult[7] === tmp5) {
         if (cResult[10] !== screenKey) {
-          class T {
+          class C {
             constructor() {
               const obj = HapticUtils;
               const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
@@ -307,9 +299,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenKey) => 
             }
           }
           cResult[10] = screenKey;
-          cResult[11] = T;
+          cResult[11] = C;
         } else {
-          class T {
+          class C {
             constructor() {
               const obj = HapticUtils;
               const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
@@ -320,7 +312,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenKey) => 
         }
         if (cResult[12] === tmp4.button) {
           let tmp18;
-          class T {
+          class C {
             constructor() {
               const obj = HapticUtils;
               const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
@@ -330,7 +322,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenKey) => 
           }
           const _Symbol2 = Symbol;
           if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-            class T {
+            class C {
               constructor() {
                 const obj = HapticUtils;
                 const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
@@ -338,11 +330,11 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenKey) => 
                 obj2.updateSortOrder(screenKey, "down");
               }
             }
-            const tmp19 = closure_10(screenKey(15629).ArrowSmallDownIcon, {});
+            const tmp19 = closure_10(screenKey(16130).ArrowSmallDownIcon, {});
             cResult[15] = tmp19;
             tmp18 = tmp19;
           } else {
-            class T {
+            class C {
               constructor() {
                 const obj = HapticUtils;
                 const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
@@ -352,7 +344,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenKey) => 
             }
           }
           if (cResult[16] === end) {
-            class T {
+            class C {
               constructor() {
                 const obj = HapticUtils;
                 const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
@@ -365,8 +357,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenKey) => 
           cResult[16] = end;
           cResult[17] = tmp15;
           cResult[18] = tmp17;
-          cResult[19] = closure_10(screenKey(5909).PressableOpacity, obj2);
-          const tmp22 = closure_10(screenKey(5909).PressableOpacity, obj2);
+          cResult[19] = closure_10(screenKey(6185).PressableOpacity, obj2);
+          const tmp22 = closure_10(screenKey(6185).PressableOpacity, obj2);
         }
         const items = [tmp4.button, end && tmp4.disabledButton];
         cResult[12] = tmp4.button;
@@ -378,15 +370,15 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenKey) => 
     cResult[6] = start;
     cResult[7] = tmp5;
     cResult[8] = tmp7;
-    cResult[9] = closure_10(screenKey(5909).PressableOpacity, obj3);
-    const tmp14 = closure_10(screenKey(5909).PressableOpacity, obj3);
+    cResult[9] = closure_10(screenKey(6185).PressableOpacity, obj3);
+    const tmp14 = closure_10(screenKey(6185).PressableOpacity, obj3);
   }
   const items1 = [tmp4.button, start && tmp4.disabledButton];
   cResult[2] = tmp4.button;
   cResult[3] = start && tmp4.disabledButton;
   cResult[4] = items1;
   tmp7 = items1;
-}) : ((arg0) => {
+}) : (function DevToolsContentSortButtons(arg0) {
   let end;
   let items;
   let items1;
@@ -432,7 +424,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenKey) => 
     children: closure_10(ArrowSmallDownIcon.ArrowSmallDownIcon, {})
   };
   items2 = [tmp.button, ];
-  const PressableOpacity2 = tmp5(5909).PressableOpacity;
+  const PressableOpacity2 = tmp5(6185).PressableOpacity;
   if (end) {
     end = tmp.disabledButton;
   }
@@ -441,7 +433,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenKey) => 
   return tmp2(tmp3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsContent(arg0) {
   let arr;
   let closure_1;
   let closure_3;
@@ -539,21 +531,19 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
       arrow: !screenKey,
       trailing: tmp3Result,
       onLongPress() {
-        let str2;
         let str = "sorting-enabled";
         const open = closure_1(first[22]).open;
         closure_1(first[22]);
         if (closure_1_2) {
           str = "sorting-disabled";
         }
-        const obj = { key: str, content: str2 };
-        str2 = "Sorting enabled";
+        let str2 = "Sorting enabled";
         if (closure_1_2) {
           str2 = "Sorting disabled";
         }
-        open(obj);
-        const obj2 = navigation(first[15]);
-        const result = obj2.triggerHapticFeedback(navigation(tmp[15]).HapticFeedbackTypes.IMPACT_MEDIUM);
+        open(str, { text: str2 });
+        const obj = navigation(first[15]);
+        const result = obj.triggerHapticFeedback(navigation(tmp[15]).HapticFeedbackTypes.IMPACT_MEDIUM);
         closure_1_3((arg0) => !arg0);
       },
       onPress() {
@@ -584,7 +574,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
   cResult[8] = tmp8;
   cResult[9] = fn;
   tmp12 = fn;
-}) : ((arg0) => {
+}) : (function DevToolsContent(arg0) {
   let _undefined;
   let c2;
   let c3;
@@ -624,21 +614,19 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
         arrow: !c2,
         trailing: tmp4Result,
         onLongPress() {
-          let str2;
           let str = "sorting-enabled";
           const open = closure_1(c2[22]).open;
           closure_1(c2[22]);
           if (_undefined) {
             str = "sorting-disabled";
           }
-          const obj = { key: str, content: str2 };
-          str2 = "Sorting enabled";
+          let str2 = "Sorting enabled";
           if (_undefined) {
             str2 = "Sorting disabled";
           }
-          open(obj);
-          const obj2 = screenKey(c2[15]);
-          const result = obj2.triggerHapticFeedback(screenKey(tmp[15]).HapticFeedbackTypes.IMPACT_MEDIUM);
+          open(str, { text: str2 });
+          const obj = screenKey(c2[15]);
+          const result = obj.triggerHapticFeedback(screenKey(tmp[15]).HapticFeedbackTypes.IMPACT_MEDIUM);
           closure_1_3((arg0) => !arg0);
         },
         onPress() {

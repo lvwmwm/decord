@@ -1,21 +1,21 @@
-// Module ID: 12293
-// Function ID: 12294
+// Module ID: 12375
+// Function ID: 12376
 // Name: ProvisionalAccountExplainer
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 12294, 12295, 4886, 1126, 4800, 5995, 6706, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 12376, 12377, 5088, 1126, 6290, 6182, 6904, 2]
 
-// Module 12293 (ProvisionalAccountExplainer)
+// Module 12375 (ProvisionalAccountExplainer)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 4800 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Card_Card from "Card/Card" /* 5995 */;
-import UserProfileCardDefault from "UserProfileCard" /* 6706 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12294 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Card_Card from "Card/Card" /* 6182 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6290 */;
+import UserProfileCardDefault from "UserProfileCard" /* 6904 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12376 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let closure_7 = createStyles.createStyles(() => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((textVariant) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeProvisionalAccountExplainerText(textVariant) {
   let iconSize;
   let userId;
   let obj = iconSize(576);
@@ -48,7 +48,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((textVariant) =>
       if (cResult[4] === userId) {
         tmp5 = cResult[5];
       }
-      const tmpResult = tmp(12295);
+      const tmpResult = tmp(12377);
       return tmpResult.useProvisionalAccountExplanationText(tmp5);
     }
     const obj2 = { userId, renderApplicationName: tmp4 };
@@ -65,7 +65,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((textVariant) =>
   cResult[1] = textVariant;
   cResult[2] = fn;
   tmp4 = fn;
-}) : ((iconSize) => {
+}) : (function useNativeProvisionalAccountExplainerText(iconSize) {
   iconSize = iconSize.iconSize;
   const textVariant = iconSize.textVariant;
   const items = [iconSize, textVariant];
@@ -74,11 +74,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((textVariant) =>
     const obj = { application, textVariant, iconSize };
     return hasOwnProperty(ApplicationIconAndNameDefault, obj, application.id);
   }, items);
-  let obj = iconSize(12295);
+  let obj = iconSize(12377);
   return obj.useProvisionalAccountExplanationText({ userId, renderApplicationName });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatProvisionalAccountExplainerCard(arg0) {
   let iconSize;
   let intl;
   let items;
@@ -107,7 +107,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const obj2 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(intl2.t.Iyka0U) };
-        const Text = tmp(4886).Text;
+        const Text = tmp(5088).Text;
         intl = tmp(1126).intl;
         const tmp13 = hasOwnProperty(Text, obj2);
         const tmp14 = hasOwnProperty(CircleErrorIcon.CircleErrorIcon, { size: "xs", color: "text-default" });
@@ -167,7 +167,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = userId;
   cResult[2] = obj6;
   tmp5 = obj6;
-}) : ((arg0) => {
+}) : (function ChatProvisionalAccountExplainerCard(arg0) {
   let iconSize;
   let intl;
   let items;
@@ -190,7 +190,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(Card, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileProvisionalAccountExplainerCard(arg0) {
   let iconSize;
   let style;
   let userId;
@@ -247,7 +247,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = userId;
   cResult[2] = obj4;
   tmp4 = obj4;
-}) : ((userId) => {
+}) : (function UserProfileProvisionalAccountExplainerCard(userId) {
   let intl;
   let tmp;
   const style = userId.style;

@@ -1,28 +1,26 @@
-// Module ID: 16388
-// Function ID: 16389
+// Module ID: 16910
+// Function ID: 16911
 // Name: ForYouEmptyState
-// Dependencies: [19, 17, 21, 4890, 558, 576, 16389, 1126, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 16911, 1126, 5088, 2]
 
-// Module 16388 (ForYouEmptyState)
+// Module 16910 (ForYouEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import MailboxSpotIllustration from "MailboxSpotIllustration" /* 16389 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import MailboxSpotIllustration from "MailboxSpotIllustration" /* 16911 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let height;
 
 let c3;
 let closure_4;
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles({ image: { marginBottom: 16 }, container: { paddingHorizontal: 48, alignItems: "center", justifyContent: "center" }, headerText: { fontSize: 18, marginTop: 16, marginBottom: 8 }, text: { textAlign: "center" } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((height) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouEmptyState(height) {
   let items;
   let tmp5;
   const obj = react2;
@@ -140,7 +138,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((height) => {
   cResult[3] = tmp5;
   cResult[4] = items2;
   tmp6 = items2;
-}) : ((height) => {
+}) : (function ForYouEmptyState(height) {
   let intl;
   let intl2;
   let items;

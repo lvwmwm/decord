@@ -1,34 +1,34 @@
-// Module ID: 14585
-// Function ID: 14586
+// Module ID: 15057
+// Function ID: 15058
 // Name: AccountSmsBackupSetting
-// Dependencies: [1377, 7634, 1085, 6540, 558, 576, 504, 14580, 1126, 14575, 14582, 5708, 5093, 6539, 1987, 6542, 12, 11129, 14494, 2]
+// Dependencies: [1390, 7988, 1085, 6732, 558, 576, 504, 15052, 1126, 15047, 15054, 5300, 5934, 6731, 2000, 6734, 12, 10664, 14965, 2]
 
-// Module 14585 (AccountSmsBackupSetting)
+// Module 15057 (AccountSmsBackupSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
-import PhoneConstants from "PhoneConstants" /* 6540 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 6542 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 14494 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 14575 */;
-import account_MFAUtils from "account/MFAUtils" /* 14580 */;
-import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 14582 */;
-import UserStore from "UserStore" /* 1377 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import PhoneConstants from "PhoneConstants" /* 6732 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 6734 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 14965 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 15047 */;
+import account_MFAUtils from "account/MFAUtils" /* 15052 */;
+import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 15054 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import module_12 from "module_12" /* 12 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserFlags = Constants.UserFlags;
 let closure_5 = PhoneConstants.PHONE_VERIFICATION_MODAL_KEY;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountSMSBackupSettingDescription() {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -63,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = tmp9;
   }
   return tmp8;
-}) : (() => {
+}) : (function useAccountSMSBackupSettingDescription() {
   let currentUser;
   const items = [UserStore];
   const obj = get_initialized;
@@ -79,7 +79,7 @@ let closure_6 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountSMSBackupSettingToggleValue() {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -88,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function l() {
+    const fn = function u() {
       return currentUser.getCurrentUser();
     };
     cResult[0] = items;
@@ -115,7 +115,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[3];
   }
   return tmp7;
-}) : (() => {
+}) : (function useAccountSMSBackupSettingToggleValue() {
   let currentUser;
   const items = [UserStore];
   const obj = get_initialized;
@@ -129,7 +129,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   return flag;
 });
-let fn = () => null != closure_6();
+function useAccountSMSBackupSettingIsDisabled() {
+  return null != closure_6();
+}
 let closure_7 = module_12.debounce(function toggleSMS(user) {
   let formatted1;
   user = user.user;
@@ -164,7 +166,7 @@ let closure_7 = module_12.debounce(function toggleSMS(user) {
     const pushLazy = ModalActionCreatorsDefault.pushLazy;
     let obj = { reason: PhoneActionCreators.ChangePhoneReason.USER_SETTINGS_UPDATE };
     ModalActionCreatorsDefault;
-    const tmp6 = asyncRequire(6539, dependencyMap.paths);
+    const tmp6 = asyncRequire(6731, dependencyMap.paths);
     pushLazy(tmp6, obj, closure_5);
   }
 }, 200);
@@ -174,7 +176,7 @@ let obj = {
     return intl.string(intl4.t.uHAJ5v);
   },
   parent: MobileUserSettings.ACCOUNT,
-  useIsDisabled: fn,
+  useIsDisabled: useAccountSMSBackupSettingIsDisabled,
   useValue: tmp4,
   onValueChange: function onAccountSMSBackupSettingTogglePress(arg0) {
     const currentUser = UserStore.getCurrentUser();

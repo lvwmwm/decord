@@ -1,25 +1,25 @@
-// Module ID: 17357
-// Function ID: 17358
+// Module ID: 17952
+// Function ID: 17953
 // Name: ChannelCallUtils
-// Dependencies: [19, 4929, 1085, 21, 1126, 17358, 6885, 4854, 5091, 5708, 17355, 1987, 17359, 4942, 17360, 9481, 11212, 9685, 12728, 7, 4568, 8038, 2]
+// Dependencies: [19, 7424, 1085, 21, 1126, 17953, 7094, 5056, 5106, 5300, 17950, 2000, 17954, 5900, 17955, 8678, 10749, 11102, 13585, 7, 4809, 8477, 2]
 // Exports: invite, openHideSelfStreamAndVideoConfirmDialog, reportStreamIssue, rtcDebugPanel, selfVideoHidden, shareActivityLogs, videoParticipantsHidden, voiceSettings
 
-// Module 17357 (ChannelCallUtils)
+// Module 17952 (ChannelCallUtils)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4942 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9481 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9685 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11212 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12728 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 17358 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 17359 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 10749 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11102 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13585 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 17953 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 17954 */;
 import react from "react" /* 19 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4929 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7424 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const asyncRequire = tmp(1987);
+const asyncRequire = tmp(2000);
 ({ UserSettingsSections: closure_4, AnalyticsPages: hasOwnProperty, InstantInviteSources: metroRequire, RPC_APPLICATION_LOGGING_CATEGORY: metroImportDefault } = Constants);
 const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/video_calls/native/ChannelCallUtils.tsx");
@@ -77,7 +77,7 @@ export const openHideSelfStreamAndVideoConfirmDialog = function openHideSelfStre
     importer() {
       let onConfirm;
       let type;
-      const promise = asyncRequire(17355, dependencyMap.paths);
+      const promise = asyncRequire(17950, dependencyMap.paths);
       return promise.then((result) => {
         closure_0 = result.default;
         return (arg0) => {
@@ -121,7 +121,7 @@ export const reportStreamIssue = function reportStreamIssue(stream) {
       const merged = Object.assign(videoStats);
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
-      const tmp7 = asyncRequire(17360, tmp2.paths);
+      const tmp7 = asyncRequire(17955, tmp2.paths);
       openLazy(tmp7, "StreamReportProblem" + stream.ownerId, { stream, analyticsData: obj3 });
     }
   };
@@ -190,11 +190,11 @@ export const shareActivityLogs = function shareActivityLogs() {
       const obj = require("LogAggregator");
       const json = obj.stringify(items);
       if ("" === json) {
-        const obj2 = { key: "EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE", content: intl.string(require("intl").t["i+9VWy"]) };
+        const obj2 = { text: intl.string(require("intl").t["i+9VWy"]) };
         const open = ToastActionCreatorsDefault.open;
         ToastActionCreatorsDefault;
         intl = tmp(tmp2[4]).intl;
-        open(obj2);
+        open("EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE", obj2);
       } else {
         const obj3 = { message: json };
         const tmpResult = require("showShareActionSheet");

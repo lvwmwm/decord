@@ -1,21 +1,21 @@
-// Module ID: 17200
-// Function ID: 17201
+// Module ID: 17795
+// Function ID: 17796
 // Name: FramePanelSystemUIManager
-// Dependencies: [19, 21, 558, 576, 17194, 17191, 2]
+// Dependencies: [19, 21, 558, 576, 17789, 17786, 2]
 
-// Module 17200 (FramePanelSystemUIManager)
+// Module 17795 (FramePanelSystemUIManager)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 17194 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 17789 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ActivityPanelSystemUIManager = tmp(17191);
+const ActivityPanelSystemUIManager = tmp(17786);
 const jsx = Fragment.jsx;
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FramePanelSystemUIManager() {
   let mode;
   let wrapperDimensions;
   const obj = react2;
@@ -34,7 +34,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = wrapperDimensions.isWindowLandscape;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : (() => {
+}) : (function FramePanelSystemUIManager() {
   let mode;
   let wrapperDimensions;
   const context = react.useContext(FramePanelStateContextDefault);

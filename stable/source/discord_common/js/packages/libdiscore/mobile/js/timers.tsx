@@ -14,9 +14,9 @@ function setTimeout(arg0, arg1) {
   if (arg1 == null) {
     num = 0;
   }
-  const registerTimeoutResult = closure_3.registerTimeout(max(num, 4));
+  const registerTimeoutResult = closure_5.registerTimeout(max(num, 4));
   const result = map.set(registerTimeoutResult, arg0);
-  return registerTimeoutResult;
+  return registerTimeoutResult + c2;
 }
 function setInterval(arg0, arg1) {
   let num = arg1;
@@ -24,14 +24,23 @@ function setInterval(arg0, arg1) {
   if (arg1 == null) {
     num = 0;
   }
-  const registerIntervalResult = closure_3.registerInterval(max(num, 4));
+  const registerIntervalResult = closure_5.registerInterval(max(num, 4));
   const result = map.set(registerIntervalResult, arg0);
-  return registerIntervalResult;
+  return registerIntervalResult + c2;
 }
 function clearTimeout(arg0) {
-  const deleteResult = null != arg0 && map.delete(arg0);
-  if (deleteResult) {
-    closure_3.clear(arg0);
+  if (null != arg0) {
+    let diff = null;
+    if (arg0 >= c2) {
+      diff = arg0 - c2;
+    }
+    if (null != diff) {
+      if (map.delete(diff)) {
+        closure_5.clear(diff);
+      }
+    } else if (clearTimeout != null) {
+      tmp2(arg0);
+    }
   }
 }
 const LIBDISCORE_JSI = global_types.typedGlobal.LIBDISCORE_JSI;
@@ -41,12 +50,14 @@ let obj = {
   delayedExecutionThresholdMillis: 5000,
   onSlowTimer(arg0, arg1, arg2, arg3) {
     if (c1 != null) {
-      tmp(arg0, arg1, arg2, arg3);
+      tmp(arg0 + c2, arg1, arg2, arg3);
     }
   }
 };
+let c2 = 4294967296;
 const map = new Map();
-let closure_3 = LIBDISCORE_JSI.makeTimerManager(function expirationCallback(arg0, arg1) {
+clearTimeout = null;
+let closure_5 = LIBDISCORE_JSI.makeTimerManager(function expirationCallback(arg0, arg1) {
   const value = map.get(arg0);
   const obj = map;
   if (value) {
@@ -62,11 +73,16 @@ let result = size.fileFinishedImporting("../discord_common/js/packages/libdiscor
 export function setTimersMonitorCallback(onTimersDelayCallback) {
   c1 = onTimersDelayCallback;
 }
+export const TIMER_ID_OFFSET = 4294967296;
 export { setTimeout };
 export { setInterval };
 export { clearTimeout };
 export const clearInterval = clearTimeout;
 export const registerTimerPolyfills = function registerTimerPolyfills() {
+  if (null == clearTimeout) {
+    const _globalThis = globalThis;
+    clearTimeout = clearTimeout;
+  }
   window.setTimeout = setTimeout;
   window.setInterval = setInterval;
   window.clearTimeout = clearTimeout;

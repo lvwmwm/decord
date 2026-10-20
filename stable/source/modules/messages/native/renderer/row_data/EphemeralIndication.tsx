@@ -1,14 +1,14 @@
-// Module ID: 7754
-// Function ID: 7755
+// Module ID: 8108
+// Function ID: 8109
 // Name: EphemeralIndication
-// Dependencies: [7597, 1085, 7755, 1126, 2115, 2]
+// Dependencies: [7748, 1085, 8109, 1126, 2128, 2]
 // Exports: createEphemeralIndication
 
-// Module 7754 (EphemeralIndication)
+// Module 8108 (EphemeralIndication)
 import intl6 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import ApplicationCommandUserAppUtils from "ApplicationCommandUserAppUtils" /* 7755 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7597 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import ApplicationCommandUserAppUtils from "ApplicationCommandUserAppUtils" /* 8109 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7748 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
       const tmp12 = importDefault;
       const tmp13 = constants;
       if (null != GuildAutomodMessageStore.getMessage(message.id)) {
-        const tmp12Result = tmp12(2115);
+        const tmp12Result = tmp12(2128);
         obj4.helpArticleLink = tmp12Result.getArticleURL(tmp13.GUILD_AUTOMOD_BLOCKED_MESSAGE);
         const intl = tmp10(1126).intl;
         obj4.helpButtonAccessibilityLabel = intl.string(intl6.t.OiCBhP);

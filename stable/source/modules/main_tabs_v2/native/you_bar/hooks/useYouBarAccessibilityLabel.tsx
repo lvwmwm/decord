@@ -1,32 +1,32 @@
-// Module ID: 16309
-// Function ID: 16310
+// Module ID: 16833
+// Function ID: 16834
 // Name: useYouBarAccessibilityLabel
-// Dependencies: [4912, 2051, 4509, 4930, 4519, 5438, 4909, 1085, 558, 576, 4722, 2028, 10613, 7836, 10611, 10612, 10619, 1126, 10622, 504, 2]
+// Dependencies: [5897, 2065, 4750, 5108, 4760, 5759, 5113, 1085, 558, 576, 4962, 2041, 10240, 8285, 10238, 10239, 10246, 1126, 10251, 504, 2]
 
-// Module 16309 (useYouBarAccessibilityLabel)
-import UserUtils from "UserUtils" /* 4722 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10611 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10612 */;
-import isGameActivityDefault from "isGameActivity" /* 10619 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10622 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import PresenceStore from "PresenceStore" /* 4930 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5438 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+// Module 16833 (useYouBarAccessibilityLabel)
+import UserUtils from "UserUtils" /* 4962 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10238 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10239 */;
+import isGameActivityDefault from "isGameActivity" /* 10246 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10251 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import PresenceStore from "PresenceStore" /* 5108 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, flag, id, obj1, obj8, obj9, str, str2, tmp10, tmp11, tmp12, tmp17, tmp19, tmp2, tmp22, tmp4, tmp5, tmp8, type;
+let _require, dependencyMap, flag, obj1, obj8, obj9, str, str2, tmp10, tmp11, tmp12, tmp17, tmp19, tmp2, tmp22, tmp4, tmp5, tmp8, type;
 
 let c10;
 let unpackModuleId;
 ({ ActivityTypes: c10, StatusTypes: unpackModuleId } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarAccessibilityLabel(id) {
   let first;
   let gameMentionsAsPlainText;
   let name;
@@ -146,7 +146,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
               } else {
                 found1 = undefined;
                 if (activities != null) {
-                  found1 = activities.find(() => { /* body not rendered: F145801 */ });
+                  found1 = activities.find(() => { /* body not rendered: F148626 */ });
                 }
                 if (null != found1) {
                   tmp17 = closure_1;
@@ -189,7 +189,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
         tmp22 = tag;
         items1[1] = tag;
         items1[2] = text;
-        found2 = items1.filter(() => { /* body not rendered: F145802 */ });
+        found2 = items1.filter(() => { /* body not rendered: F148627 */ });
         str2 = ", ";
         return found2.join(", ");
       } else {
@@ -203,11 +203,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   cResult[4] = id;
   cResult[5] = A;
   tmp23 = A;
-}) : ((id) => {
+}) : (function useYouBarAccessibilityLabel(id) {
   let closure_0;
   let closure_2;
   const tmp = dependencyMap;
-  let obj = id(4722);
+  let obj = id(4962);
   _require = obj.useName(id);
   id = undefined;
   if (id != null) {

@@ -1,29 +1,29 @@
-// Module ID: 16855
-// Function ID: 16856
+// Module ID: 17438
+// Function ID: 17439
 // Name: SearchListSection
-// Dependencies: [19, 17, 7513, 21, 4890, 558, 576, 4886, 2]
+// Dependencies: [19, 17, 9308, 21, 5092, 558, 576, 5088, 2]
 
-// Module 16855 (SearchListSection)
+// Module 17438 (SearchListSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import SearchConstants from "SearchConstants" /* 7513 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let tmp;
-const Text_Text = tmp(4886);
+const Text_Text = tmp(5088);
 const View = react_native.View;
 const SEARCH_LIST_SECTION_TOP_PADDING = SearchConstants.SEARCH_LIST_SECTION_TOP_PADDING;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let obj = { section: { flex: 1, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", textTransform: "none", paddingTop: SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: 16, paddingBottom: 8 } };
 let closure_5 = createStyles.createStyles(obj);
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SearchListSection(arg0) {
   let items;
   let title;
   let tmp5;
@@ -58,7 +58,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[4] = trailing;
   cResult[5] = tmp9;
   tmp8 = tmp9;
-}) : ((arg0) => {
+}) : (function SearchListSection(arg0) {
   let items;
   let title;
   let trailing;

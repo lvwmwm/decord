@@ -1,20 +1,20 @@
-// Module ID: 8509
-// Function ID: 8510
+// Module ID: 9057
+// Function ID: 9058
 // Name: useFetchVirtualCurrencyBalance
-// Dependencies: [19, 8510, 558, 576, 504, 8511, 2]
+// Dependencies: [19, 9058, 558, 576, 504, 9059, 2]
 
-// Module 8509 (useFetchVirtualCurrencyBalance)
+// Module 9057 (useFetchVirtualCurrencyBalance)
 import react from "react" /* 19 */;
-import VirtualCurrencyActionCreators from "VirtualCurrencyActionCreators" /* 8511 */;
-import VirtualCurrencyStore from "VirtualCurrencyStore" /* 8510 */;
+import VirtualCurrencyActionCreators from "VirtualCurrencyActionCreators" /* 9059 */;
+import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9058 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, disableFetch;
+let _require;
 
 const useEffect = react.useEffect;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disableFetch) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchVirtualCurrencyBalance(disableFetch) {
   let balance;
   let error;
   let isFetching;
@@ -116,7 +116,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disableFetch) => {
   cResult[4] = disableFetch2;
   cResult[5] = fn2;
   tmp11 = fn2;
-}) : ((disableFetch) => {
+}) : (function useFetchVirtualCurrencyBalance(disableFetch) {
   let balance;
   _require = disableFetch;
   let obj = require("get initialized");

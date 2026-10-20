@@ -1,9 +1,9 @@
-// Module ID: 10430
-// Function ID: 10431
+// Module ID: 10051
+// Function ID: 10052
 // Name: NativeGiftContext
-// Dependencies: [5, 32, 19, 7863, 10396, 10431, 1377, 1085, 6740, 1379, 1096, 21, 3, 6934, 558, 576, 10432, 6935, 4543, 10433, 1126, 10434, 4528, 6742, 10435, 504, 10464, 10471, 7868, 7855, 5708, 1252, 6681, 10472, 584, 1369, 10394, 2]
+// Dependencies: [5, 32, 19, 8312, 9117, 10052, 1390, 1085, 7133, 1392, 1096, 21, 3, 7148, 558, 576, 10053, 7149, 4784, 10054, 1126, 10055, 4769, 7127, 10056, 504, 10090, 10097, 8317, 8304, 5300, 1265, 6879, 10098, 584, 1382, 10049, 2]
 
-// Module 10430 (NativeGiftContext)
+// Module 10051 (NativeGiftContext)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -11,28 +11,28 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
 import intl3 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import BillingUtils from "BillingUtils" /* 4543 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
-import Constants3 from "Constants" /* 6740 */;
-import ContextUtilsDefault from "ContextUtils" /* 6934 */;
-import BadgeId from "BadgeId" /* 7855 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7868 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10394 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10472 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import BillingUtils from "BillingUtils" /* 4784 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import Constants3 from "Constants" /* 7133 */;
+import ContextUtilsDefault from "ContextUtils" /* 7148 */;
+import BadgeId from "BadgeId" /* 8304 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8317 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10049 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10098 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7863 */;
-import PromotionsStore_mod from "PromotionsStore" /* 10396 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10431 */;
-import UserStore from "UserStore" /* 1377 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8312 */;
+import PromotionsStore_mod from "PromotionsStore" /* 9117 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10052 */;
+import UserStore from "UserStore" /* 1390 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let constants;
+let TIER_2, constants;
 
 let closure_12;
 let closure_14;
@@ -52,7 +52,7 @@ let closure_17 = tmp4;
 [closure_18, tmp6, tmp7] = ContextUtilsDefault();
 _slicedToArray(ContextUtilsDefault(), 3);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGiftInfoOptions(arg0) {
   let customGiftMessage;
   let emojiConfetti;
   let giftStyle;
@@ -110,7 +110,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (null != selectedGiftingPromotionReward) {
     let items1;
-    if (premiumType === closure_12.TIER_2) {
+    if (premiumType === authStore2.TIER_2) {
       const items = [selectedGiftingPromotionReward];
       items1 = items;
     }
@@ -120,8 +120,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = items1;
   }
   items1 = [];
-}) : ((giftStyle) => {
-  let TIER_2;
+}) : (function useGiftInfoOptions(giftStyle) {
   giftStyle = giftStyle.giftStyle;
   const recipientUserId = giftStyle.recipientUserId;
   const customGiftMessage = giftStyle.customGiftMessage;
@@ -167,7 +166,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       soundId = soundEffect.soundId;
     }
     if (null != selectedGiftingPromotionReward) {
-      if (premiumType === TIER_2.TIER_2) {
+      if (premiumType === authStore2.TIER_2) {
         const items = [tmp5];
       }
       obj.reward_sku_ids = [];
@@ -176,7 +175,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncOrder(order) {
   let closure_16;
   let setRevision;
   let tmp7;
@@ -265,7 +264,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
                                                                       }
                                                                       if (cResult[42] !== tmp14) {
                                                                         let obj2 = { awaitSyncOrder: tmp14 };
-                                                                        class A {
+                                                                        class O {
                                                                           constructor() {
                                                                             flush(giftInfoOptions);
                                                                             const tmp2 = waitForSync();
@@ -281,7 +280,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
                                                                       return tmp15;
                                                                     }
                                                                   }
-                                                                  class A {
+                                                                  class O {
                                                                     constructor() {
                                                                       flush(giftInfoOptions);
                                                                       const tmp2 = waitForSync();
@@ -292,8 +291,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
                                                                   cResult[38] = flush;
                                                                   cResult[39] = giftInfoOptions;
                                                                   cResult[40] = waitForSync;
-                                                                  cResult[41] = A;
-                                                                  tmp14 = A;
+                                                                  cResult[41] = O;
+                                                                  tmp14 = O;
                                                                 }
                                                               }
                                                             }
@@ -631,12 +630,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
     cResult[19] = fn;
     tmp11 = fn;
   }
-  let obj4 = { orderId: "a", planId: 3915865743036409000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, planSelection: { premiumType, planInterval }, giftInfo: true };
+  let obj4 = { orderId: "a", planId: "icon", planSelection: { premiumType, planInterval }, giftInfo: "toCharArray$esjava$1" };
   cResult[0] = planInterval;
   cResult[1] = premiumType;
   cResult[2] = obj4;
   tmp3 = obj4;
-}) : ((order) => {
+}) : (function useSyncOrder(order) {
   let items1;
   order = order.order;
   let revision = order.revision;
@@ -651,7 +650,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
   const setPremiumType = order.setPremiumType;
   const setPlanInterval = order.setPlanInterval;
   const setError = order.setError;
-  let obj = { orderId: "a", planId: 3915865743036409000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, planSelection: { premiumType, planInterval }, giftInfo: true };
+  let obj = { orderId: "a", planId: "icon", planSelection: { premiumType, planInterval }, giftInfo: "toCharArray$esjava$1" };
   let closure_13 = externalGatewayFacet.useRef(obj);
   const ref = externalGatewayFacet.useRef(false);
   const ref2 = externalGatewayFacet.useRef(null);
@@ -945,7 +944,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((order) => {
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(basePurchaseAnalytics) {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeGiftContextProvider(basePurchaseAnalytics) {
+  let closure_12;
   let closure_15;
   let first1;
   let first2;
@@ -971,7 +971,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(basePurchase
   const initialOrder = basePurchaseAnalytics.initialOrder;
   const useState = react.useState;
   if (premiumType == null) {
-    premiumType = closure_12.TIER_2;
+    premiumType = TIER_2.TIER_2;
   }
   let tmp6 = first2(useState(premiumType), 2);
   [tmp7, r10026] = tmp6;
@@ -1017,7 +1017,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(basePurchase
       planIdForPremiumType = cResult[3];
       tmp29 = cResult[4];
     }
-    closure_12 = tmp29;
+    TIER_2 = tmp29;
     if (null == handlePremiumPurchase[tmp28]) {
       const _Error = Error;
       const _HermesInternal = HermesInternal;
@@ -1248,7 +1248,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(basePurchase
   cResult[3] = planIdForPremiumType;
   cResult[4] = productIdForGift;
   tmp29 = productIdForGift;
-}) : (function(basePurchaseAnalytics) {
+}) : (function NativeGiftContextProvider(basePurchaseAnalytics) {
   let children;
   let initialOrder;
   let onClose;
@@ -1665,7 +1665,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function(basePurchase
                 analyticsLocations: null,
                 allowPlanChange: false,
                 giftInfoOptions,
-                onPurchaseComplete: function() {
+                onPurchaseComplete() {
                           return closure_1_1(...arguments);
                         },
                 onPurchaseError() {

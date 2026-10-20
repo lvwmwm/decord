@@ -1,20 +1,18 @@
-// Module ID: 13941
-// Function ID: 13942
+// Module ID: 14436
+// Function ID: 14437
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4729, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4969, 5088, 2]
 
-// Module 13941 (EmptyState)
+// Module 14436 (EmptyState)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import shared from "shared" /* 4729 */;
+import shared from "shared" /* 4969 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let Illustration;
 
 let c2;
 let c3;
@@ -28,7 +26,7 @@ let closure_7 = { accessible: false, accessibilityRole: "none", accessibilityEle
 let obj = { container: obj2, emptyImage: { flex: 1, maxWidth: 300, maxHeight: 200 }, textGroup: { alignSelf: "stretch", alignItems: "center" }, emptyTitle: { marginTop: 20, textTransform: "uppercase" }, emptyBody: { textAlign: "center", marginTop: 8 } };
 obj2 = { flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 36, paddingBottom: 80, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 let closure_8 = createStyles.createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((Illustration) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState(Illustration) {
   let body;
   let bodyStyle;
   let children;
@@ -170,14 +168,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((Illustration) => {
       if (null != title) {
         const obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, style: items3, children: title };
         items3 = [tmp4.emptyTitle, titleStyle, tmp7];
-        tmp33 = React3(tmp(4886).Text, obj7);
+        tmp33 = React3(tmp(5088).Text, obj7);
       }
       items4 = [tmp33, ];
       let tmp35 = null;
       if (null != body) {
         const obj8 = { variant: "text-md/medium", color: "text-muted", maxFontSizeMultiplier: 2, style: items5, children: body };
         items5 = [tmp4.emptyBody, bodyStyle];
-        tmp35 = React3(tmp(4886).Text, obj8);
+        tmp35 = React3(tmp(5088).Text, obj8);
       }
       items4[1] = tmp35;
       tmp31Result = tmp31(tmp32, obj6);
@@ -199,7 +197,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((Illustration) => {
   cResult[13] = tmp4.container;
   cResult[14] = items6;
   tmp28 = items6;
-}) : ((Illustration) => {
+}) : (function EmptyState(Illustration) {
   let body;
   let items;
   let items1;
@@ -255,14 +253,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((Illustration) => {
     if (null != title) {
       const obj6 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, style: items4, children: title };
       items4 = [tmp.emptyTitle, tmp21, tmp6];
-      tmp25 = React3(tmp2(4886).Text, obj6);
+      tmp25 = React3(tmp2(5088).Text, obj6);
     }
     items5 = [tmp25, ];
     let tmp27 = null;
     if (null != body) {
       const obj7 = { variant: "text-md/medium", color: "text-muted", maxFontSizeMultiplier: 2, style: items6, children: body };
       items6 = [tmp.emptyBody, tmp20];
-      tmp27 = React3(tmp2(4886).Text, obj7);
+      tmp27 = React3(tmp2(5088).Text, obj7);
     }
     items5[1] = tmp27;
     tmp22Result = tmp22(tmp23, obj5);

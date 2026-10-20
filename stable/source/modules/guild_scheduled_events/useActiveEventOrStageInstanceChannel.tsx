@@ -1,17 +1,17 @@
-// Module ID: 16112
-// Function ID: 16113
+// Module ID: 16628
+// Function ID: 16629
 // Name: useActiveEventOrStageInstanceChannel
-// Dependencies: [2051, 558, 576, 9160, 16111, 2]
+// Dependencies: [2065, 558, 576, 8650, 16627, 2]
 
-// Module 16112 (useActiveEventOrStageInstanceChannel)
+// Module 16628 (useActiveEventOrStageInstanceChannel)
 import react from "react" /* 576 */;
-import useGuildScheduledEvents from "useGuildScheduledEvents" /* 9160 */;
-import useLiveStageChannelsDefault from "useLiveStageChannels" /* 16111 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import useGuildScheduledEvents from "useGuildScheduledEvents" /* 8650 */;
+import useLiveStageChannelsDefault from "useLiveStageChannels" /* 16627 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActiveEventOrStageInstanceChannel(arg0) {
   let tmp7;
   const obj = react;
   const cResult = obj.c(2);
@@ -47,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     firstActiveEventChannel = tmp7;
   }
   return firstActiveEventChannel;
-}) : ((arg0) => {
+}) : (function useActiveEventOrStageInstanceChannel(arg0) {
   let id;
   const obj = useGuildScheduledEvents;
   let firstActiveEventChannel = obj.useFirstActiveEventChannel(arg0);

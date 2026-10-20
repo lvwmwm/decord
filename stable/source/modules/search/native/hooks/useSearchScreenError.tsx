@@ -1,26 +1,25 @@
-// Module ID: 16870
-// Function ID: 16871
+// Module ID: 17459
+// Function ID: 17460
 // Name: useSearchScreenError
-// Dependencies: [19, 6784, 11967, 7513, 558, 576, 11968, 504, 1126, 4568, 4808, 2]
+// Dependencies: [19, 6062, 12052, 9308, 558, 576, 12045, 504, 1126, 4809, 2]
 
-// Module 16870 (useSearchScreenError)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4808 */;
-import SearchConstants from "SearchConstants" /* 7513 */;
-import SearchUtils from "SearchUtils" /* 11968 */;
+// Module 17459 (useSearchScreenError)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import SearchConstants from "SearchConstants" /* 9308 */;
+import SearchUtils from "SearchUtils" /* 12045 */;
 import react from "react" /* 19 */;
-import SearchMessageStore_mod from "SearchMessageStore" /* 6784 */;
-import SearchQueryStore from "SearchQueryStore" /* 11967 */;
+import SearchMessageStore_mod from "SearchMessageStore" /* 6062 */;
+import SearchQueryStore from "SearchQueryStore" /* 12052 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let content, searchContext;
+let text;
 
 let SearchMessageStore = SearchMessageStore_mod;
 let closure_6 = SearchConstants.SEARCH_MESSAGE_TAB_SENTINEL;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageSearchErrorScreen(searchContext) {
   let first;
   let ref;
   let stateFromStores;
@@ -32,8 +31,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
   const tab = searchContext.tab;
   const hasListItems = searchContext.hasListItems;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SearchQueryStore, ];
-    items[1] = SearchMessageStore;
+    const items = [SearchQueryStore, SearchMessageStore];
     cResult[0] = items;
     first = items;
   } else {
@@ -62,8 +60,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
     } else {
       tmp8 = cResult[5];
     }
-    content = tmp8;
-    SearchMessageStore = content.useRef(null);
+    text = tmp8;
+    SearchMessageStore = text.useRef(null);
     if (cResult[6] === stateFromStores) {
       let tmp13;
       if (cResult[7] === tmp8) {
@@ -82,14 +80,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
           }
         }
       }
-      const obj2 = { hasError: null != stateFromStores, errorText: tmp8, isErrorFullscreen: null != stateFromStores && !hasListItems, isErrorToast: null != stateFromStores && hasListItems, showErrorToast: null };
-      class R {
+      let obj2 = { hasError: null != stateFromStores, errorText: tmp8, isErrorFullscreen: null != stateFromStores && !hasListItems, isErrorToast: null != stateFromStores && hasListItems, showErrorToast: null };
+      class C {
         constructor() {
           if (stateFromStores !== ref.current) {
-            const obj = { key: "SEARCH_ERROR_TOAST", icon: AssetRegistryDefault, content };
-            const open = ToastActionCreatorsDefault.open;
-            ToastActionCreatorsDefault;
-            open(obj);
+            const obj2 = { text, variant: "critical" };
+            const obj = ToastActionCreatorsDefault;
+            obj.open("SEARCH_ERROR_TOAST", obj2);
             tmp2.current = tmp;
           }
         }
@@ -102,21 +99,20 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
       cResult[14] = obj2;
       tmp17 = obj2;
     }
-    class R {
+    class C {
       constructor() {
         if (stateFromStores !== ref.current) {
-          const obj = { key: "SEARCH_ERROR_TOAST", icon: AssetRegistryDefault, content };
-          const open = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          open(obj);
+          const obj2 = { text, variant: "critical" };
+          const obj = ToastActionCreatorsDefault;
+          obj.open("SEARCH_ERROR_TOAST", obj2);
           tmp2.current = tmp;
         }
       }
     }
     cResult[6] = stateFromStores;
     cResult[7] = tmp8;
-    cResult[8] = R;
-    tmp13 = R;
+    cResult[8] = C;
+    tmp13 = C;
   }
   const fn = function l() {
     const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(searchContext);
@@ -127,7 +123,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
   cResult[2] = tab;
   cResult[3] = fn;
   tmp7 = fn;
-}) : ((arg0) => {
+}) : (function useMessageSearchErrorScreen(arg0) {
   let callback;
   let hasListItems;
   let tmp5;
@@ -153,14 +149,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
   }
   ref = anyErrorMessage.useRef(null);
   const items1 = [stateFromStores, anyErrorMessage];
-  const obj2 = { hasError: null != stateFromStores, errorText: anyErrorMessage, isErrorFullscreen: tmp5, isErrorToast: null != stateFromStores && hasListItems, showErrorToast: callback };
+  let obj2 = { hasError: null != stateFromStores, errorText: anyErrorMessage, isErrorFullscreen: tmp5, isErrorToast: null != stateFromStores && hasListItems, showErrorToast: callback };
   tmp5 = null != stateFromStores;
   callback = anyErrorMessage.useCallback(() => {
     if (stateFromStores !== ref.current) {
-      const obj = { key: "SEARCH_ERROR_TOAST", icon: AssetRegistryDefault, content: anyErrorMessage };
-      const open = ToastActionCreatorsDefault.open;
-      ToastActionCreatorsDefault;
-      open(obj);
+      const obj2 = { text: anyErrorMessage, variant: "critical" };
+      const obj = ToastActionCreatorsDefault;
+      obj.open("SEARCH_ERROR_TOAST", obj2);
       tmp2.current = tmp;
     }
   }, items1);
@@ -170,7 +165,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageTabCountsErrorText(searchContext) {
   let first;
   let tmp7;
   const tmp2 = dependencyMap;
@@ -219,7 +214,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => 
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((searchContext) => {
+}) : (function useMessageTabCountsErrorText(searchContext) {
   searchContext = searchContext.searchContext;
   let obj = searchContext(504);
   const items = [SearchQueryStore, SearchMessageStore];

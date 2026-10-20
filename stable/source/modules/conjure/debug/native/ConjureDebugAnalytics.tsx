@@ -1,28 +1,28 @@
-// Module ID: 16770
-// Function ID: 16771
+// Module ID: 17346
+// Function ID: 17347
 // Name: ConjureDebugAnalytics
-// Dependencies: [19, 21, 558, 576, 1126, 3723, 16757, 16759, 16756, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 3849, 17342, 17344, 17341, 2]
 
-// Module 16770 (ConjureDebugAnalytics)
+// Module 17346 (ConjureDebugAnalytics)
 import react2 from "react" /* 576 */;
 import intl7 from "intl" /* 1126 */;
-import _modDef3723 from "module_3723" /* 3723 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 16756 */;
-import ConjureDebugLabels from "ConjureDebugLabels" /* 16757 */;
-import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 16759 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 17341 */;
+import ConjureDebugLabels from "ConjureDebugLabels" /* 17342 */;
+import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 17344 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let analytics;
+const require = globalThis.__r;
 
 let c3;
 let closure_4;
 let hasOwnProperty;
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebugAgentAnalyticsRows(analytics) {
   let intl2;
   let intl4;
   let items;
@@ -37,9 +37,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
     const _Symbol5 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const intl5 = tmp(1126).intl;
-      const stringResult = intl5.string(_modDef3723.SXP7pD);
+      const stringResult = intl5.string(_modDef3849.SXP7pD);
       const intl6 = tmp(1126).intl;
-      const stringResult1 = intl6.string(_modDef3723.E5hKVi);
+      const stringResult1 = intl6.string(_modDef3849.E5hKVi);
       cResult[0] = stringResult;
       cResult[1] = stringResult1;
       tmp41 = stringResult;
@@ -86,10 +86,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
         const _Symbol3 = Symbol;
         const tmpResult3 = ConjureDebugLabels;
         tmpResult3.analyticsMemoryValue(found);
-        const DebugStatRow2 = tmp(16759).DebugStatRow;
+        const DebugStatRow2 = tmp(17344).DebugStatRow;
         if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
           const intl3 = tmp(1126).intl;
-          const stringResult2 = intl3.string(_modDef3723["H/X+FI"]);
+          const stringResult2 = intl3.string(_modDef3849["H/X+FI"]);
           cResult[14] = stringResult2;
         }
         const tmpResult4 = ConjureDebugFormat;
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
         const _Symbol6 = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
           const intl = tmp(1126).intl;
-          const stringResult3 = intl.string(_modDef3723.SXP7pD);
+          const stringResult3 = intl.string(_modDef3849.SXP7pD);
           cResult[12] = stringResult3;
           tmp13 = stringResult3;
         } else {
@@ -108,8 +108,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
         }
         const _Symbol2 = Symbol;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj3 = { label: tmp13, value: "\u2014", hint: intl2.string(_modDef3723.AGvoMJ) };
-          const DebugStatRow = tmp(16759).DebugStatRow;
+          const obj3 = { label: tmp13, value: "\u2014", hint: intl2.string(_modDef3849.AGvoMJ) };
+          const DebugStatRow = tmp(17344).DebugStatRow;
           intl2 = tmp(1126).intl;
           const tmp19 = _false(DebugStatRow, obj3);
           cResult[13] = tmp19;
@@ -148,8 +148,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
           if (cResult[19] !== tmp5) {
             let tmp33 = null;
             if (null != tmp5) {
-              const obj4 = { label: intl4.string(_modDef3723.lmFmMO), value: tmp5 };
-              const DebugStatRow3 = tmp(16759).DebugStatRow;
+              const obj4 = { label: intl4.string(_modDef3849.lmFmMO), value: tmp5 };
+              const DebugStatRow3 = tmp(17344).DebugStatRow;
               intl4 = tmp(1126).intl;
               tmp33 = _false(DebugStatRow3, obj4);
             }
@@ -185,7 +185,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
     }
     return tmp8;
   }
-}) : ((analytics) => {
+}) : (function ConjureDebugAgentAnalyticsRows(analytics) {
   let intl;
   let intl2;
   let intl3;
@@ -196,7 +196,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
   let obj8;
   analytics = analytics.analytics;
   if ("ok" !== analytics.status) {
-    const obj2 = { label: intl4.string(_modDef3723.SXP7pD), value: intl5.string(_modDef3723.E5hKVi), hint: obj5.analyticsUnavailableReason(analytics) };
+    const obj2 = { label: intl4.string(_modDef3849.SXP7pD), value: intl5.string(_modDef3849.E5hKVi), hint: obj5.analyticsUnavailableReason(analytics) };
     const DebugStatRow3 = ConjureDebugPrimitives.DebugStatRow;
     intl4 = intl7.intl;
     intl5 = intl7.intl;
@@ -209,7 +209,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
       found = objects.find((role) => "agent" === role.role);
     }
     if (null == found) {
-      const obj3 = { label: intl2.string(_modDef3723.SXP7pD), value: "\u2014", hint: intl3.string(_modDef3723.AGvoMJ) };
+      const obj3 = { label: intl2.string(_modDef3849.SXP7pD), value: "\u2014", hint: intl3.string(_modDef3849.AGvoMJ) };
       const DebugStatRow2 = ConjureDebugPrimitives.DebugStatRow;
       intl2 = intl7.intl;
       intl3 = intl7.intl;
@@ -217,7 +217,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
     } else {
       const obj6 = ConjureDebugLabels;
       const analyticsMemoryValueResult = obj6.analyticsMemoryValue(found);
-      const obj4 = { label: intl6.string(_modDef3723["H/X+FI"]), value: obj8.formatMs(found.cpu_ms) };
+      const obj4 = { label: intl6.string(_modDef3849["H/X+FI"]), value: obj8.formatMs(found.cpu_ms) };
       const DebugStatRow4 = ConjureDebugPrimitives.DebugStatRow;
       intl6 = intl7.intl;
       obj8 = ConjureDebugFormat;
@@ -228,8 +228,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
       const tmp17 = _false;
       const tmp18 = importDefault;
       if (null != analyticsMemoryValueResult) {
-        const obj = { label: intl.string(tmp18(3723).lmFmMO), value: analyticsMemoryValueResult };
-        const DebugStatRow = tmp12(16759).DebugStatRow;
+        const obj = { label: intl.string(tmp18(3849).lmFmMO), value: analyticsMemoryValueResult };
+        const DebugStatRow = tmp12(17344).DebugStatRow;
         intl = tmp12(1126).intl;
         tmp17Result = tmp17(DebugStatRow, obj);
       }
@@ -240,7 +240,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebugWorkerAnalyticsSection(analytics) {
   let first;
   let intl2;
   let obj3;
@@ -249,7 +249,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
   analytics = analytics.analytics;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let intl = intl7.intl;
-    const stringResult = intl.string(_modDef3723.LoZwWn);
+    const stringResult = intl.string(_modDef3849.LoZwWn);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -282,96 +282,127 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
   } else {
     let tmp9;
     let tmp8;
-    let tmp7;
     if (cResult[5] !== analytics.objects) {
       let tmp10;
       let tmp11;
-      let mapped1;
+      let tmp14;
       const _Symbol = Symbol;
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn = function h(object) {
-          let obj2;
-          const obj = { object, label: obj2.analyticsRoleLabel(object.role) };
-          obj2 = ConjureDebugLabels;
-          return obj;
-        };
-        cResult[9] = fn;
-        tmp10 = fn;
+        class D {
+          constructor(arg0) {
+            obj = { object: analytics, label: null };
+            obj2 = closure_1_0(closure_1_2[6]);
+            obj.label = obj2.analyticsRoleLabel(analytics.role);
+            return obj;
+          }
+        }
+        cResult[9] = D;
+        tmp10 = D;
       } else {
-        tmp10 = cResult[9];
+        class D {
+          constructor(arg0) {
+            obj = { object: analytics, label: null };
+            obj2 = closure_1_0(closure_1_2[6]);
+            obj.label = obj2.analyticsRoleLabel(analytics.role);
+            return obj;
+          }
+        }
       }
       const _Symbol2 = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn2 = function _(label) {
-          return null != label.label;
-        };
-        cResult[10] = fn2;
-        tmp11 = fn2;
+        class D {
+          constructor(arg0) {
+            obj = { object: analytics, label: null };
+            obj2 = closure_1_0(closure_1_2[6]);
+            obj.label = obj2.analyticsRoleLabel(analytics.role);
+            return obj;
+          }
+        }
+        cResult[10] = tmp12;
+        tmp11 = tmp12;
       } else {
-        tmp11 = cResult[10];
+        class D {
+          constructor(arg0) {
+            obj = { object: analytics, label: null };
+            obj2 = closure_1_0(closure_1_2[6]);
+            obj.label = obj2.analyticsRoleLabel(analytics.role);
+            return obj;
+          }
+        }
       }
-      let items = analytics.objects;
-      if (items == null) {
-        items = [];
+      const objects = analytics.objects;
+      if (objects == null) {
+        class D {
+          constructor(arg0) {
+            obj = { object: analytics, label: null };
+            obj2 = closure_1_0(closure_1_2[6]);
+            obj.label = obj2.analyticsRoleLabel(analytics.role);
+            return obj;
+          }
+        }
       }
-      const mapped = items.map(tmp10);
+      const mapped = objects.map(tmp10);
       const found = mapped.filter(tmp11);
       const DebugSection = ConjureDebugPrimitives.DebugSection;
       if (0 === found.length) {
-        let obj4 = { children: intl2.string(_modDef3723.AGvoMJ) };
+        class D {
+          constructor(arg0) {
+            obj = { object: analytics, label: null };
+            obj2 = closure_1_0(closure_1_2[6]);
+            obj.label = obj2.analyticsRoleLabel(analytics.role);
+            return obj;
+          }
+        }
+        let obj4 = { children: intl2.string(_modDef3849.AGvoMJ) };
         const DebugNote = ConjureDebugPrimitives.DebugNote;
         intl2 = intl7.intl;
-        mapped1 = _false(DebugNote, obj4);
+        tmp14 = _false(DebugNote, obj4);
       } else {
-        mapped1 = found.map((label) => {
-          let analyticsMemoryValueResult;
-          let formatToPlainString;
-          let obj2;
-          let obj3;
-          let prop;
-          const object = label.object;
-          const obj = { label: label.label, value: formatToPlainString(prop, obj2), hint: analyticsMemoryValueResult };
-          const DebugStatRow = ConjureDebugPrimitives.DebugStatRow;
-          const intl = intl7.intl;
-          formatToPlainString = intl.formatToPlainString;
-          obj2 = { cpu: obj3.formatMs(object.cpu_ms) };
-          prop = _modDef3723["w/2voO"];
-          obj3 = ConjureDebugFormat;
-          const obj4 = ConjureDebugLabels;
-          analyticsMemoryValueResult = obj4.analyticsMemoryValue(object);
-          return closure_1_3(DebugStatRow, obj, object.role);
-        });
+        class D {
+          constructor(arg0) {
+            obj = { object: analytics, label: null };
+            obj2 = closure_1_0(closure_1_2[6]);
+            obj.label = obj2.analyticsRoleLabel(analytics.role);
+            return obj;
+          }
+        }
       }
       cResult[5] = analytics.objects;
       cResult[6] = DebugSection;
       cResult[7] = first;
-      cResult[8] = mapped1;
-      tmp9 = mapped1;
+      cResult[8] = tmp14;
+      tmp9 = tmp14;
       tmp8 = first;
-      tmp7 = DebugSection;
     } else {
-      tmp7 = cResult[6];
+      class D {
+        constructor(arg0) {
+          obj = { object: analytics, label: null };
+          obj2 = closure_1_0(closure_1_2[6]);
+          obj.label = obj2.analyticsRoleLabel(analytics.role);
+          return obj;
+        }
+      }
       tmp8 = cResult[7];
       tmp9 = cResult[8];
     }
     if (cResult[11] === tmp7) {
-      if (cResult[12] === tmp8) {
-        let tmp16;
-        if (cResult[13] === tmp9) {
-          tmp16 = cResult[14];
+      class D {
+        constructor(arg0) {
+          obj = { object: analytics, label: null };
+          obj2 = closure_1_0(closure_1_2[6]);
+          obj.label = obj2.analyticsRoleLabel(analytics.role);
+          return obj;
         }
-        return tmp16;
       }
     }
     const obj5 = { title: tmp8, children: tmp9 };
-    const tmp18 = _false(tmp7, obj5);
     cResult[11] = tmp7;
     cResult[12] = tmp8;
     cResult[13] = tmp9;
-    cResult[14] = tmp18;
-    tmp16 = tmp18;
+    cResult[14] = _false(tmp7, obj5);
+    const tmp18 = _false(tmp7, obj5);
   }
-}) : ((analytics) => {
+}) : (function ConjureDebugWorkerAnalyticsSection(analytics) {
   let DebugNote2;
   let intl2;
   let mapped1;
@@ -379,7 +410,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
   let tmpResult;
   analytics = analytics.analytics;
   let intl = intl7.intl;
-  const stringResult = intl.string(_modDef3723.LoZwWn);
+  const stringResult = intl.string(_modDef3849.LoZwWn);
   if ("ok" !== analytics.status) {
     let obj2 = { title: stringResult, children: _false(DebugNote2, obj3) };
     const DebugSection2 = ConjureDebugPrimitives.DebugSection;
@@ -395,14 +426,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
     const mapped = items.map((object) => {
       let obj2;
       const obj = { object, label: obj2.analyticsRoleLabel(object.role) };
-      obj2 = ConjureDebugLabels;
+      obj2 = require("ConjureDebugLabels");
       return obj;
     });
     const found = mapped.filter((label) => null != label.label);
     let obj = { title: stringResult, children: mapped1 };
     const DebugSection = ConjureDebugPrimitives.DebugSection;
     if (0 === found.length) {
-      let obj4 = { children: intl2.string(_modDef3723.AGvoMJ) };
+      let obj4 = { children: intl2.string(_modDef3849.AGvoMJ) };
       const DebugNote = ConjureDebugPrimitives.DebugNote;
       intl2 = intl7.intl;
       mapped1 = tmp5(DebugNote, obj4);
@@ -415,13 +446,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((analytics) => {
         let prop;
         const object = label.object;
         const obj = { label: label.label, value: formatToPlainString(prop, obj2), hint: analyticsMemoryValueResult };
-        const DebugStatRow = ConjureDebugPrimitives.DebugStatRow;
-        const intl = intl7.intl;
+        const DebugStatRow = require("ConjureDebugPrimitives").DebugStatRow;
+        const intl = require("intl").intl;
         formatToPlainString = intl.formatToPlainString;
         obj2 = { cpu: obj3.formatMs(object.cpu_ms) };
-        prop = _modDef3723["w/2voO"];
-        obj3 = ConjureDebugFormat;
-        const obj4 = ConjureDebugLabels;
+        prop = _modDef3849["w/2voO"];
+        obj3 = require("ConjureDebugFormat");
+        const obj4 = require("ConjureDebugLabels");
         analyticsMemoryValueResult = obj4.analyticsMemoryValue(object);
         return closure_1_3(DebugStatRow, obj, object.role);
       });

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/gifting", scales: [1], hash: "9ecc6a7c078e9a754077d5562ee83e47", name: "GiftingBadge.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wYXJlbnRfdG9vbHM=", scales: [1], hash: "90e0e2cc953a8434ab8226e6083d3ab4", name: "ro.messages.90e0e2cc953a8434ab8226e6083d3ab4.compiled.messages", type: "jsona" });

@@ -1,13 +1,13 @@
-// Module ID: 6664
-// Function ID: 6665
+// Module ID: 6859
+// Function ID: 6860
 // Name: useAuthorizedAppsToken
-// Dependencies: [19, 6602, 558, 576, 1375, 504, 6665, 2]
+// Dependencies: [19, 6797, 558, 576, 1388, 504, 6860, 2]
 
-// Module 6664 (useAuthorizedAppsToken)
+// Module 6859 (useAuthorizedAppsToken)
 import react2 from "react" /* 576 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6602 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6665 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6797 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6860 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ let _require, importDefault;
 
 const FetchState = AuthorizedAppsStore2.FetchState;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthorizedAppsTokens(arg0, arg1) {
   let closure_0;
   let closure_1;
   let stateFromStoresArray1;
@@ -57,7 +57,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     tmp7 = cResult[2];
   }
   if (cResult[3] !== arg0) {
-    const fn = function f() {
+    const fn = function h() {
       let newestTokenForApplication;
       let found;
       const arr = closure_0;
@@ -90,7 +90,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     tmp12 = cResult[6];
   }
   if (cResult[7] !== arg0) {
-    const fn2 = function v() {
+    const fn2 = function k() {
       let fetchStateForApplication;
       let flag;
       const obj = closure_0;
@@ -183,7 +183,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[17] = items6;
   tmp23 = items6;
   tmp22 = N;
-}) : ((arg0, arg1) => {
+}) : (function useAuthorizedAppsTokens(arg0, arg1) {
   let closure_0;
   let stateFromStoresArray1;
   _require = arg0;
@@ -252,7 +252,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
 });
 let closure_6 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthorizedAppsToken(arg0, arg1) {
   let fetched;
   let tmp2;
   let tokens;
@@ -288,7 +288,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[3] = first;
   cResult[4] = obj2;
   tmp6 = obj2;
-}) : ((arg0, arg1) => {
+}) : (function useAuthorizedAppsToken(arg0, arg1) {
   let closure_0 = arg0;
   let items = [arg0];
   const tmp = closure_6(react.useMemo(() => {

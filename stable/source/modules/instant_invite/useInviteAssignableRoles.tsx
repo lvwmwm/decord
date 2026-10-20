@@ -1,16 +1,16 @@
-// Module ID: 17993
-// Function ID: 17994
+// Module ID: 18624
+// Function ID: 18625
 // Name: useInviteAssignableRoles
-// Dependencies: [19, 2107, 2106, 4509, 1377, 1085, 558, 576, 504, 4514, 2]
+// Dependencies: [19, 2120, 2119, 4750, 1390, 1085, 558, 576, 504, 4755, 2]
 
-// Module 17993 (useInviteAssignableRoles)
+// Module 18624 (useInviteAssignableRoles)
 import Constants from "Constants" /* 1085 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2107 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2120 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let _require, tmp4, tmp5;
 
 const isEveryoneRole = GuildRoleRecord.isEveryoneRole;
 const Permissions = Constants.Permissions;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInviteAssignableRoles(arg0) {
   let closure_0;
   let currentUser;
   let first;
@@ -158,7 +158,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-}) : ((arg0) => {
+}) : (function useInviteAssignableRoles(arg0) {
   let closure_0;
   let currentUser;
   _require = arg0;

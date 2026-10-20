@@ -1,37 +1,37 @@
-// Module ID: 11893
-// Function ID: 11894
+// Module ID: 11965
+// Function ID: 11966
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 32, 19, 17, 5687, 5110, 1377, 21, 4890, 587, 4696, 558, 576, 4580, 4727, 4568, 4810, 11894, 6965, 1126, 1101, 504, 4722, 11895, 10112, 4612, 4891, 1188, 10111, 5605, 5909, 10127, 4886, 5594, 2]
+// Dependencies: [5, 32, 19, 17, 6030, 5432, 1390, 21, 5092, 587, 4936, 558, 576, 4818, 4967, 4809, 11966, 7174, 1126, 1101, 504, 4962, 11967, 9755, 4850, 5093, 1200, 9754, 5391, 6185, 9770, 5088, 5379, 2]
 
-// Module 11893 (DMMessageStickerGreeting)
+// Module 11965 (DMMessageStickerGreeting)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import useToken2 from "useToken" /* 4580 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4696 */;
-import timing from "timing" /* 4891 */;
-import StickersActionCreators from "StickersActionCreators" /* 10112 */;
+import native from "native" /* 1200 */;
+import useToken2 from "useToken" /* 4818 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4936 */;
+import timing from "timing" /* 5093 */;
+import StickersActionCreators from "StickersActionCreators" /* 9755 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 5687 */;
-import MessageStore from "MessageStore" /* 5110 */;
-import UserStore from "UserStore" /* 1377 */;
+import StickersStore from "StickersStore" /* 6030 */;
+import MessageStore from "MessageStore" /* 5432 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c4, c5, channel, dependencyMap, id;
+let _require, c4, c5, dependencyMap;
 
 let c10;
 let closure_12;
 let tmp;
 let unpackModuleId;
-const ColorUtils = tmp(4727);
+const ColorUtils = tmp(4967);
 let View = react_native.View;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
 let closure_13 = createStyles.createStyles((arg0) => {
@@ -48,7 +48,7 @@ let c15 = "749054660769218631";
 let c16 = 180;
 const END = client_themes_ClientThemesUtils.GradientPercentage.END;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsRendered() {
   let closure_129_0;
   let first;
   let tmp3;
@@ -75,7 +75,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[2];
   }
   return tmp5;
-}) : (() => {
+}) : (function useIsRendered() {
   let items;
   const tmp = _slicedToArray(react.useState(false), 2);
   let closure_0 = tmp2;
@@ -89,7 +89,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGradientOverlayColors() {
   let tmp7;
   const obj = react2;
   const cResult = obj.c(5);
@@ -122,7 +122,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp7;
   cResult[4] = items;
   tmp9 = items;
-}) : (() => {
+}) : (function useGradientOverlayColors() {
   const obj = client_themes_ClientThemesUtils;
   let BACKGROUND_BASE_LOWER = obj.useGradientValue(END);
   const useToken = useToken2.useToken;
@@ -138,7 +138,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return items;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleWavePress(id) {
   let closure_4;
   let first;
   let first1;
@@ -213,13 +213,13 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
             const tmp35 = c3;
             if (!tmp35) {
               c4(true);
-              showErrorToast = function showErrorToast(content) {
-                if (closure_1_1 !== content) {
-                  closure_1_2(content);
+              showErrorToast = function showErrorToast(text) {
+                if (closure_1_1 !== text) {
+                  closure_1_2(text);
                 }
                 const obj = closure_1(closure_2[15]);
-                const obj2 = { key: "HANDLE_WAVE_PRESS_TOAST", content, icon: closure_1(closure_2[16]) };
-                obj.open(obj2);
+                const obj2 = { text, variant: "critical" };
+                obj.open("HANDLE_WAVE_PRESS_TOAST", obj2);
               };
               if (null !== tmp) {
                 c4(false);
@@ -229,12 +229,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
               } else {
                 c3 = 1;
                 const obj4 = { channelId: closure_0.id, source: "In-channel greet" };
-                const obj5 = closure_0(closure_2_2[17]);
+                const obj5 = closure_0(closure_2_2[16]);
                 obj5.trackWaveCtaClicked(obj4);
                 c4 = 2;
                 c5 = 1;
                 const obj6 = { value: obj7.sendGreetMessage(closure_0.id, closure_2_15), done: false };
-                obj7 = first(closure_2_2[18]);
+                obj7 = first(closure_2_2[17]);
                 return obj6;
               }
             }
@@ -245,8 +245,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
             tmp = closure_2;
             const ok = tmp.ok || 429 !== tmp.status;
             if (!ok) {
-              const intl = closure_0(closure_2_2[19]).intl;
-              showErrorToast(intl.string(closure_0(closure_2_2[19]).t.Whhv4w));
+              const intl = closure_0(closure_2_2[18]).intl;
+              showErrorToast(intl.string(closure_0(closure_2_2[18]).t.Whhv4w));
             }
           } else if (arg0 === 1) {
             c5 = 3;
@@ -274,15 +274,15 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       }
     }
   });
-  const fn2 = function() {
+  function t2() {
     return closure_0(...arguments);
-  };
+  }
   cResult[3] = id.id;
   cResult[4] = first;
   cResult[5] = first1;
-  cResult[6] = fn2;
-  tmp9 = fn2;
-}) : ((id) => {
+  cResult[6] = t2;
+  tmp9 = t2;
+}) : (function useHandleWavePress(id) {
   let closure_2;
   let closure_4;
   let first;
@@ -326,13 +326,13 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
             return obj3;
           } else {
             id = tmp4;
-            showErrorToast = function showErrorToast(content) {
-              if (closure_1_1 !== content) {
-                closure_1_2(content);
+            showErrorToast = function showErrorToast(text) {
+              if (closure_1_1 !== text) {
+                closure_1_2(text);
               }
               const obj = first(closure_2[15]);
-              const obj2 = { key: "HANDLE_WAVE_PRESS_TOAST", content, icon: first(closure_2[16]) };
-              obj.open(obj2);
+              const obj2 = { text, variant: "critical" };
+              obj.open("HANDLE_WAVE_PRESS_TOAST", obj2);
             };
             const tmp35 = first1;
             if (!tmp35) {
@@ -345,12 +345,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
               } else {
                 c3 = 1;
                 const obj4 = { channelId: id.id, source: "In-channel greet" };
-                const obj5 = id(closure_2[17]);
+                const obj5 = id(closure_2[16]);
                 obj5.trackWaveCtaClicked(obj4);
                 c4 = 2;
                 c5 = 1;
                 const obj6 = { value: obj7.sendGreetMessage(id.id, closure_1_15), done: false };
-                obj7 = tmp(closure_2[18]);
+                obj7 = tmp(closure_2[17]);
                 return obj6;
               }
             }
@@ -361,8 +361,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
             tmp = closure_2;
             const ok = tmp.ok || 429 !== tmp.status;
             if (!ok) {
-              const intl = id(closure_2[19]).intl;
-              showErrorToast(intl.string(id(closure_2[19]).t.Whhv4w));
+              const intl = id(closure_2[18]).intl;
+              showErrorToast(intl.string(id(closure_2[18]).t.Whhv4w));
             }
           } else if (arg0 === 1) {
             c5 = 3;
@@ -394,7 +394,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
 const __initData = { code: "function DMMessageStickerGreetingTsx1(){const{styles,isRendered,hasInputText,hasMessages,HEIGHT_COMPACT,HEIGHT_FULL,withDelay,withTiming,STANDARD_EASING}=this.__closure;const gradientOverlayOffset=styles.gradient.height;const hasHeight=isRendered&&!hasInputText;const heightExpanded=(hasMessages?HEIGHT_COMPACT:HEIGHT_FULL)-1;const targetHeight=hasHeight?heightExpanded+gradientOverlayOffset:0;const targetMargin=hasHeight?-gradientOverlayOffset:0;const generateAnimationConfig=function generateAnimationConfig(value){return withDelay(300,withTiming(value,{easing:STANDARD_EASING,duration:250}));};return{justifyContent:\"flex-end\",overflow:\"hidden\",marginTop:generateAnimationConfig(targetMargin),height:generateAnimationConfig(targetHeight)};}" };
 const __initData2 = { code: "function DMMessageStickerGreetingTsx2(){const{styles,isRendered,hasInputText,hasMessages,HEIGHT_COMPACT,HEIGHT_FULL,withDelay,withTiming,STANDARD_EASING}=this.__closure;const gradientOverlayOffset=styles.gradient.height;const hasHeight=isRendered&&!hasInputText;const heightExpanded=(hasMessages?HEIGHT_COMPACT:HEIGHT_FULL)-1;const targetHeight=hasHeight?heightExpanded+gradientOverlayOffset:0;const targetMargin=hasHeight?-gradientOverlayOffset:0;function generateAnimationConfig(value){return withDelay(300,withTiming(value,{easing:STANDARD_EASING,duration:250}));}return{justifyContent:'flex-end',overflow:'hidden',marginTop:generateAnimationConfig(targetMargin),height:generateAnimationConfig(targetHeight)};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageStickerGreeting(channel) {
   let first;
   let gradient;
   let isRendered;
@@ -411,7 +411,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const cResult = obj.c(33);
   channel = channel.channel;
   const hasInputText = channel.hasInputText;
-  let obj2 = channel(4696);
+  let obj2 = channel(4936);
   const tmp4 = closure_13(obj2.useGradientValue(END));
   dependencyMap = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -425,7 +425,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (cResult[1] !== channel.id) {
     const fn = function h() {
       const messages = MessageStore.getMessages(channel.id);
-      return messages.filter((type) => type.type !== channel(gradient[20]).MessageTypes.FRIEND_REQUEST_ACCEPTED).length > 0;
+      return messages.filter((type) => type.type !== channel(gradient[19]).MessageTypes.FRIEND_REQUEST_ACCEPTED).length > 0;
     };
     let num2 = 1;
     cResult[1] = channel.id;
@@ -456,7 +456,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   const tmpResult6 = tmp(504);
   const stateFromStores1 = tmpResult6.useStateFromStores(tmp9, tmp11);
-  let obj5 = hasInputText(4722);
+  let obj5 = hasInputText(4962);
   let name = obj5.useName(stateFromStores1);
   const tmp13 = hasInputText;
   if (name == null) {
@@ -465,7 +465,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   const intl2 = tmp(1126).intl;
   intl2.formatToPlainString(tmp(1126).t.m0zYbV, { username: name });
-  const tmpResult7 = tmp(11895);
+  const tmpResult7 = tmp(11967);
   const showConvoStarterInDM = tmpResult7.useShowConvoStarterInDM(channel);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [StickersStore];
@@ -505,7 +505,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmpResult8 = tmp(504);
   const stateFromStores2 = tmpResult8.useStateFromStores(tmp17, tmp19, tmp20);
   if (cResult[10] !== showConvoStarterInDM) {
-    class W {
+    class U {
       constructor() {
         const tmp = showConvoStarterInDM;
         if (tmp) {
@@ -516,12 +516,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     const items4 = [showConvoStarterInDM];
     cResult[10] = showConvoStarterInDM;
-    cResult[11] = W;
+    cResult[11] = U;
     cResult[12] = items4;
     tmp23 = items4;
-    tmp22 = W;
+    tmp22 = U;
   } else {
-    class W {
+    class U {
       constructor() {
         const tmp = showConvoStarterInDM;
         if (tmp) {
@@ -567,17 +567,17 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     obj5 = { easing: native.STANDARD_EASING, duration: 250 };
     return obj;
   };
-  const tmpResult9 = tmp(4612);
-  let obj3 = { styles: tmp4, isRendered, hasInputText, hasMessages: stateFromStores, HEIGHT_COMPACT: 72, HEIGHT_FULL, withDelay: tmp(4612).withDelay, withTiming: tmp(4891).withTiming, STANDARD_EASING: tmp(1188).STANDARD_EASING };
+  const tmpResult9 = tmp(4850);
+  let obj3 = { styles: tmp4, isRendered, hasInputText, hasMessages: stateFromStores, HEIGHT_COMPACT: 72, HEIGHT_FULL, withDelay: tmp(4850).withDelay, withTiming: tmp(5093).withTiming, STANDARD_EASING: tmp(1200).STANDARD_EASING };
   fn3.__closure = obj3;
   fn3.__workletHash = 16992012801942;
   fn3.__initData = __initData;
   const animatedStyle = tmpResult9.useAnimatedStyle(fn3);
   const tmp28 = closure_19();
-  const tmpResult10 = tmp(10111);
+  const tmpResult10 = tmp(9754);
   const shouldAnimateSticker = tmpResult10.useShouldAnimateSticker(false);
   if (showConvoStarterInDM) {
-    class W {
+    class U {
       constructor() {
         const tmp = showConvoStarterInDM;
         if (tmp) {
@@ -589,11 +589,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     let obj4 = { style: tmp4.gradient, colors: tmp28 };
     cResult[13] = tmp28;
     cResult[14] = tmp4.gradient;
-    cResult[15] = closure_10(tmp13(5605), obj4);
-    const tmp32 = closure_10(tmp13(5605), obj4);
+    cResult[15] = closure_10(tmp13(5391), obj4);
+    const tmp32 = closure_10(tmp13(5391), obj4);
   }
   return null;
-}) : ((channel) => {
+}) : (function DMMessageStickerGreeting(channel) {
   let gradient;
   let intl3;
   let items5;
@@ -606,19 +606,19 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let showConvoStarterInDM;
   let isRendered;
   let tmp = channel;
-  let obj = channel(4696);
+  let obj = channel(4936);
   const tmp3 = closure_13(obj.useGradientValue(END));
   dependencyMap = tmp3;
   let obj2 = channel(504);
   const items = [MessageStore];
   const stateFromStores = obj2.useStateFromStores(items, () => {
     const messages = MessageStore.getMessages(channel.id);
-    return messages.filter((type) => type.type !== channel(gradient[20]).MessageTypes.FRIEND_REQUEST_ACCEPTED).length > 0;
+    return messages.filter((type) => type.type !== channel(gradient[19]).MessageTypes.FRIEND_REQUEST_ACCEPTED).length > 0;
   });
   let obj3 = channel(504);
   const items1 = [UserStore];
   const stateFromStores1 = obj3.useStateFromStores(items1, () => UserStore.getUser(channel.getRecipientId()));
-  let obj4 = hasInputText(4722);
+  let obj4 = hasInputText(4962);
   let name = obj4.useName(stateFromStores1);
   if (name == null) {
     const intl = tmp(1126).intl;
@@ -626,7 +626,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   const intl2 = tmp(1126).intl;
   const formatToPlainStringResult = intl2.formatToPlainString(tmp(1126).t.m0zYbV, { username: name });
-  const tmpResult = tmp(11895);
+  const tmpResult = tmp(11967);
   showConvoStarterInDM = tmpResult.useShowConvoStarterInDM(channel);
   const items2 = [StickersStore];
   const items3 = [showConvoStarterInDM];
@@ -650,78 +650,80 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmp13 = closure_18();
   isRendered = tmp13.isRendered;
   const setIsRendered = tmp13.setIsRendered;
-  const fn = function b() {
-    let obj2;
-    let obj3;
-    let obj4;
-    let obj5;
-    let withDelay;
-    let withDelay2;
-    const height = gradient.gradient.height;
-    let num = 0;
-    if (isRendered && !hasInputText) {
-      let num2 = 72;
-      if (!stateFromStores) {
-        num2 = c16;
+  const tmpResult5 = tmp(4850);
+  class M {
+    constructor() {
+      let obj2;
+      let obj3;
+      let obj4;
+      let obj5;
+      let withDelay;
+      let withDelay2;
+      const height = gradient.gradient.height;
+      let num = 0;
+      if (isRendered && !hasInputText) {
+        let num2 = 72;
+        if (!stateFromStores) {
+          num2 = c16;
+        }
+        num = num2 - 1 + height;
       }
-      num = num2 - 1 + height;
+      let num4 = 0;
+      if (isRendered && !hasInputText) {
+        num4 = -height;
+      }
+      const obj = { justifyContent: "flex-end", overflow: "hidden", marginTop: withDelay(300, obj2.withTiming(num4, obj3)), height: withDelay2(300, obj4.withTiming(num, obj5)) };
+      withDelay = ReanimatedRexport.withDelay;
+      ReanimatedRexport;
+      obj2 = timing;
+      obj3 = { easing: native.STANDARD_EASING, duration: 250 };
+      withDelay2 = ReanimatedRexport.withDelay;
+      ReanimatedRexport;
+      obj4 = timing;
+      obj5 = { easing: native.STANDARD_EASING, duration: 250 };
+      return obj;
     }
-    let num4 = 0;
-    if (isRendered && !hasInputText) {
-      num4 = -height;
-    }
-    const obj = { justifyContent: "flex-end", overflow: "hidden", marginTop: withDelay(300, obj2.withTiming(num4, obj3)), height: withDelay2(300, obj4.withTiming(num, obj5)) };
-    withDelay = ReanimatedRexport.withDelay;
-    ReanimatedRexport;
-    obj2 = timing;
-    obj3 = { easing: native.STANDARD_EASING, duration: 250 };
-    withDelay2 = ReanimatedRexport.withDelay;
-    ReanimatedRexport;
-    obj4 = timing;
-    obj5 = { easing: native.STANDARD_EASING, duration: 250 };
-    return obj;
-  };
-  const tmpResult5 = tmp(4612);
-  let obj5 = { styles: tmp3, isRendered, hasInputText, hasMessages: stateFromStores, HEIGHT_COMPACT: 72, HEIGHT_FULL, withDelay: tmp(4612).withDelay, withTiming: tmp(4891).withTiming, STANDARD_EASING: tmp(1188).STANDARD_EASING };
-  fn.__closure = obj5;
-  fn.__workletHash = 12021273723425;
-  fn.__initData = __initData2;
-  const animatedStyle = tmpResult5.useAnimatedStyle(fn);
+  }
+  let obj5 = { styles: tmp3, isRendered, hasInputText, hasMessages: stateFromStores, HEIGHT_COMPACT: 72, HEIGHT_FULL, withDelay: tmp(4850).withDelay, withTiming: tmp(5093).withTiming, STANDARD_EASING: tmp(1200).STANDARD_EASING };
+  M.__closure = obj5;
+  M.__workletHash = 12021273723425;
+  M.__initData = __initData2;
+  const animatedStyle = tmpResult5.useAnimatedStyle(M);
   const tmp15 = closure_19();
-  const tmpResult6 = tmp(10111);
+  const tmpResult6 = tmp(9754);
   const shouldAnimateSticker = tmpResult6.useShouldAnimateSticker(false);
   let tmp18Result2 = null;
   if (showConvoStarterInDM) {
     const obj6 = { style: animatedStyle, onLayout: setIsRendered, children: items5 };
-    View = tmp6(4612).View;
+    View = tmp6(4850).View;
     const obj7 = { style: tmp3.gradient, colors: tmp15 };
-    items5 = [closure_10(hasInputText(5605), obj7), ];
+    items5 = [closure_10(hasInputText(5391), obj7), ];
     const obj8 = { style: tmp3.container, children: tmp18Result };
     if (stateFromStores) {
       const obj9 = { style: tmp3.toastContainer, accessibilityRole: "button", accessibilityLabel: intl3.string(tmp(1126).t.pJObYI), onPress: tmp12, children: items6 };
-      const PressableOpacity = tmp(5909).PressableOpacity;
+      const PressableOpacity = tmp(6185).PressableOpacity;
       intl3 = tmp(1126).intl;
       let tmp19Result = null;
       if (null != stateFromStores2) {
         const obj10 = { sticker: stateFromStores2, size: 24, animated: shouldAnimateSticker };
-        tmp19Result = tmp19(tmp6(10127), obj10);
+        tmp19Result = tmp19(tmp6(9770), obj10);
       }
       items6 = [tmp19Result, ];
       const obj11 = { style: tmp3.toastContent, variant: "text-md/bold", children: formatToPlainStringResult };
-      items6[1] = closure_10(tmp(4886).Text, obj11);
+      items6[1] = closure_10(tmp(5088).Text, obj11);
       tmp18Result = tmp18(PressableOpacity, obj9);
     } else {
       let tmp19Result2 = null;
       const tmp21 = closure_12;
       if (null != stateFromStores2) {
-        const obj12 = { style: tmp3.stickerContainer, children: closure_10(hasInputText(10127), obj13) };
+        const obj12 = { style: tmp3.stickerContainer, children: closure_10(hasInputText(9770), obj13) };
         obj13 = { sticker: stateFromStores2, size: 100, animated: shouldAnimateSticker };
         tmp19Result2 = tmp19(tmp20, obj12);
       }
       const obj14 = { children: items7 };
       items7 = [tmp19Result2, ];
       const obj15 = { text: formatToPlainStringResult, onPress: tmp12, shrink: true };
-      items7[1] = closure_10(tmp(5594).Button, obj15);
+      items7[1] = closure_10(tmp(5379).Button, obj15);
       tmp18Result = tmp18(tmp21, obj14);
     }
     items5[1] = closure_10(View, obj8);

@@ -1,13 +1,13 @@
-// Module ID: 7913
-// Function ID: 7914
+// Module ID: 8363
+// Function ID: 8364
 // Name: UserProfileSharedStyles
-// Dependencies: [6707, 4890, 587, 558, 2]
+// Dependencies: [6905, 5092, 587, 558, 2]
 // Exports: default, useUserProfileCardRadius
 
-// Module 7913 (UserProfileSharedStyles)
+// Module 8363 (UserProfileSharedStyles)
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 6707 */;
-import createStyles from "createStyles" /* 4890 */;
+import Constants from "Constants" /* 6905 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,9 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("modules/user_profile/native/UserProfileSharedStyles.tsx");
 
-export default () => closure_9();
+export default function useSharedStyles() {
+  return closure_9();
+};
 export const useUserProfileCardRadius = function useUserProfileCardRadius() {
   return nativeDefault.radii.md;
 };

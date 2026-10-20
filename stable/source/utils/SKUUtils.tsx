@@ -1,15 +1,15 @@
-// Module ID: 8361
-// Function ID: 8362
+// Module ID: 8918
+// Function ID: 8919
 // Name: SKUUtils
-// Dependencies: [32, 1085, 4704, 1126, 5322, 1369, 4461, 2]
+// Dependencies: [32, 1085, 4944, 1126, 5644, 1382, 4702, 2]
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU
 
-// Module 8361 (SKUUtils)
+// Module 8918 (SKUUtils)
 import intl71 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import _modDef4461 from "module_4461" /* 4461 */;
-import matchPathCompat from "matchPathCompat" /* 4704 */;
-import StoreUtils from "StoreUtils" /* 5322 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import _modDef4702 from "module_4702" /* 4702 */;
+import matchPathCompat from "matchPathCompat" /* 4944 */;
+import StoreUtils from "StoreUtils" /* 5644 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -19,18 +19,19 @@ let metroImportDefault;
 let metroRequire;
 const GameGenres = Constants.GameGenres;
 ({ SKUTypes: hasOwnProperty, Routes: metroRequire, SKUProductLines: metroImportDefault } = Constants);
-let closure_8 = {};
-let closure_9 = {};
 let obj = { ALL: -1 };
 const merged = Object.assign(GameGenres);
-const freezeResult = freeze(obj);
-let c10 = freezeResult;
-const keys = Object.keys(freezeResult);
-const item = keys.forEach((item) => {
-  const str = item.toLowerCase();
-  const replaced = str.replace(/_/g, "-");
-  closure_8[replaced] = freezeResult[item];
-  closure_9[freezeResult[item]] = replaced;
+let closure_8 = {};
+let closure_9 = {};
+const entries = Object.entries(freeze(obj));
+const item = entries.forEach((item) => {
+  let str;
+  let tmp;
+  [str, tmp] = item;
+  const str2 = str.toLowerCase();
+  const replaced = str2.replace(/_/g, "-");
+  closure_8[replaced] = tmp;
+  closure_9[tmp] = replaced;
 });
 const items = [["YYYY-MM-DD", "MMMM DD, Y"], ["YYYY-MM", "MMMM Y"], ["MM-DD", "MMMM DD"], ["MM", "MMMM"], ["YYYY", "Y"]];
 let result = size.fileFinishedImporting("utils/SKUUtils.tsx");
@@ -292,7 +293,7 @@ export const getReadablePreorderReleaseDate = function getReadablePreorderReleas
     if (0 < items.length) {
       [tmp3, tmp4] = items[num];
       _slicedToArray(items[num], 2);
-      const obj = _modDef4461(preorderApproximateReleaseDate, tmp3, true);
+      const obj = _modDef4702(preorderApproximateReleaseDate, tmp3, true);
       while (!obj.isValid()) {
         num = num + 1;
       }

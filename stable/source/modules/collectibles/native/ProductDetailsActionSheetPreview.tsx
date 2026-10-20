@@ -1,17 +1,17 @@
-// Module ID: 12968
-// Function ID: 12969
+// Module ID: 13436
+// Function ID: 13437
 // Name: ProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 1980, 12969, 12971, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 1993, 13437, 13439, 2]
 
-// Module 12968 (ProductDetailsActionSheetPreview)
+// Module 13436 (ProductDetailsActionSheetPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BundleProductDetailsActionSheetPreviewDefault from "BundleProductDetailsActionSheetPreview" /* 12969 */;
+import BundleProductDetailsActionSheetPreviewDefault from "BundleProductDetailsActionSheetPreview" /* 13437 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,14 +19,14 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const CollectiblesItemType = tmp(1980);
+const CollectiblesItemType = tmp(1993);
 ({ useCallback: closure_4, useState: hasOwnProperty } = react);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { previewContainer: { flex: 1 }, previewDivider: obj2 };
 obj2 = { borderBottomColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderBottomWidth: 1, paddingBottom: nativeDefault.space.PX_16, flex: 1 };
 let closure_8 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetailsActionSheetPreview(arg0) {
   let closure_129_0;
   let first;
   let handlePreviewPress;
@@ -95,7 +95,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp6;
   cResult[8] = tmp10Result;
   tmp9 = tmp10Result;
-}) : ((onBundleActiveItemChange) => {
+}) : (function ProductDetailsActionSheetPreview(onBundleActiveItemChange) {
   let c0;
   let handlePreviewPress;
   let onTrackPress;

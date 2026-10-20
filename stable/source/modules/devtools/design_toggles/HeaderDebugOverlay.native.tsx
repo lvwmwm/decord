@@ -1,16 +1,16 @@
-// Module ID: 6011
-// Function ID: 6012
+// Module ID: 6202
+// Function ID: 6203
 // Name: HeaderDebugOverlay
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6012, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6203, 5088, 2]
 
-// Module 6011 (HeaderDebugOverlay)
+// Module 6202 (HeaderDebugOverlay)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useDesignToggleDefault from "useDesignToggle" /* 6012 */;
+import useDesignToggleDefault from "useDesignToggle" /* 6203 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp;
-const Text_Text = tmp(4886);
+const Text_Text = tmp(5088);
 const View = react_native.View;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = { "os-drawn": "OS-Drawn", "custom-drawn": "Custom-Drawn", "js-stack": "JS Stack", sheet: "Sheet", bespoke: "Bespoke" };
@@ -37,7 +37,7 @@ obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj6 = { backgroundColor: nativeDefault.colors.STATUS_POSITIVE };
 ({ backgroundColor: nativeDefault.colors.STATUS_WARNING });
 let closure_8 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHeaderDebugOverlay(arg0, arg1) {
   let items;
   let items2;
   const obj = react2;
@@ -126,7 +126,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   } else {
     return null;
   }
-}) : ((arg0, arg1) => {
+}) : (function useHeaderDebugOverlay(arg0, arg1) {
   let items;
   let items1;
   let items2;

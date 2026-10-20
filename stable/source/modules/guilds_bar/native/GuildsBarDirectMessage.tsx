@@ -1,28 +1,26 @@
-// Module ID: 16283
-// Function ID: 16284
+// Module ID: 16805
+// Function ID: 16806
 // Name: GuildsBarDirectMessage
-// Dependencies: [19, 502, 5437, 2051, 7121, 4519, 1377, 1085, 21, 4890, 587, 558, 576, 16234, 504, 9260, 1126, 16237, 4901, 10651, 16284, 10648, 1188, 5974, 2]
+// Dependencies: [19, 502, 5758, 2065, 6078, 4760, 1390, 1085, 21, 5092, 587, 558, 576, 16756, 504, 8646, 1126, 16759, 5103, 10284, 16806, 10281, 1200, 6157, 2]
 
-// Module 16283 (GuildsBarDirectMessage)
+// Module 16805 (GuildsBarDirectMessage)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import transitionToChannel from "transitionToChannel" /* 4901 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9260 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10651 */;
+import transitionToChannel from "transitionToChannel" /* 5103 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8646 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10284 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5437 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7121 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserStore from "UserStore" /* 1377 */;
-import createStyles from "createStyles" /* 4890 */;
+import CallStore from "CallStore" /* 5758 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6078 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserStore from "UserStore" /* 1390 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let channelId;
 
 let size;
 const ChannelTypes = Constants.ChannelTypes;
@@ -30,13 +28,12 @@ const jsx = Fragment.jsx;
 let obj = { dm: size };
 size = { width: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE, height: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE };
 let closure_12 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsBarDirectMessage(channelId) {
   let badge;
   let channel;
   let cutouts;
   let dmRecipient;
   let first;
-  let fn;
   let label;
   let tmp11;
   let tmp7;
@@ -108,7 +105,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       }
     }
     const tmpResult4 = tmp(channel[14]);
-    const stateFromStoresObject = tmpResult4.useStateFromStoresObject(tmp11, fn);
+    const stateFromStoresObject = tmpResult4.useStateFromStoresObject(tmp11, R);
     channel = stateFromStoresObject.channel;
     ({ dmRecipient, label } = stateFromStoresObject);
     if (cResult[8] !== stateFromStores) {
@@ -278,40 +275,42 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     cResult[11] = dmRecipient;
     cResult[12] = tmp24;
   }
-  fn = function y() {
-    let stringResult;
-    channel = ChannelStore.getChannel(channelId);
-    let type;
-    if (channel != null) {
-      type = channel.type;
+  class R {
+    constructor() {
+      let stringResult;
+      channel = ChannelStore.getChannel(channelId);
+      let type;
+      if (channel != null) {
+        type = channel.type;
+      }
+      let user;
+      if (type === ChannelTypes.DM) {
+        user = UserStore.getUser(channel.getRecipientId());
+      }
+      const call = CallStore.getCall(tmp);
+      const id = AuthenticationStore.getId();
+      let hasItem = null != call && null != id;
+      const obj2 = CallStore;
+      if (hasItem) {
+        const ringing = call.ringing;
+        hasItem = ringing.includes(id);
+      }
+      const obj = { channel, dmRecipient: user, label: stringResult };
+      const tmp8 = obj2.isCallActive(channelId) && !hasItem;
+      if (null != channel) {
+        const obj3 = { channel, unread: stateFromStores > 0, mentionCount: stateFromStores, isIncomingCall: hasItem, isOngoingCall: tmp8 };
+        stringResult = getChannelA11yLabelDefault(obj3);
+      } else {
+        const intl = intl2.intl;
+        stringResult = intl.string(intl2.t.zLZPmk);
+      }
+      return obj;
     }
-    let user;
-    if (type === ChannelTypes.DM) {
-      user = UserStore.getUser(channel.getRecipientId());
-    }
-    const call = CallStore.getCall(tmp);
-    const id = AuthenticationStore.getId();
-    let hasItem = null != call && null != id;
-    const obj2 = CallStore;
-    if (hasItem) {
-      const ringing = call.ringing;
-      hasItem = ringing.includes(id);
-    }
-    const obj = { channel, dmRecipient: user, label: stringResult };
-    const tmp8 = obj2.isCallActive(channelId) && !hasItem;
-    if (null != channel) {
-      const obj3 = { channel, unread: stateFromStores > 0, mentionCount: stateFromStores, isIncomingCall: hasItem, isOngoingCall: tmp8 };
-      stringResult = getChannelA11yLabelDefault(obj3);
-    } else {
-      const intl = intl2.intl;
-      stringResult = intl.string(intl2.t.zLZPmk);
-    }
-    return obj;
-  };
+  }
   cResult[5] = channelId;
   cResult[6] = stateFromStores;
-  cResult[7] = fn;
-}) : ((channelId) => {
+  cResult[7] = R;
+}) : (function GuildsBarDirectMessage(channelId) {
   let badge;
   let cutouts;
   let tmp11Result2;

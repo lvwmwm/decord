@@ -1,28 +1,28 @@
-// Module ID: 10363
-// Function ID: 10364
+// Module ID: 10018
+// Function ID: 10019
 // Name: UploadPreviewActionSheet
-// Dependencies: [32, 19, 17, 7031, 1085, 6646, 21, 4890, 587, 558, 576, 38, 7247, 1484, 1618, 5590, 4854, 8812, 7285, 10364, 1252, 4568, 4800, 7274, 11032, 11033, 4886, 1369, 7983, 10382, 6074, 5993, 11034, 11036, 1126, 5990, 11038, 5871, 11040, 5594, 4847, 5593, 6112, 6645, 2]
+// Dependencies: [32, 19, 17, 7239, 1085, 6841, 21, 5092, 587, 558, 576, 38, 7754, 1497, 1631, 5396, 5056, 9258, 7765, 10019, 1265, 4809, 7764, 12814, 12815, 5088, 1382, 8421, 10037, 6265, 6180, 11884, 12816, 1126, 6177, 12818, 8210, 12820, 5379, 5049, 5377, 6307, 6840, 2]
 
-// Module 10363 (UploadPreviewActionSheet)
+// Module 10018 (UploadPreviewActionSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6646 */;
-import DraftStore from "DraftStore" /* 7031 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7274 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8812 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10364 */;
-import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 11036 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
+import DraftStore from "DraftStore" /* 7239 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7764 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9258 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10019 */;
+import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 12816 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, cropRect, onAdd;
+let BottomSheet, cropRect;
 
 let c10;
 let hasOwnProperty;
@@ -41,7 +41,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding:
 createStyles = createStyles.createStyles;
 obj3 = { overflow: "hidden", alignSelf: "center", borderRadius: nativeDefault.radii.md - nativeDefault.space.PX_4 };
 let closure_12 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UploadPreviewActionSheet(onAdd) {
   let disableAddDescription;
   let height;
   let isImage;
@@ -120,18 +120,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
         }
       }
     }
-    const fn = function q() {
+    function markSpoiler() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
       const obj2 = UploadAttachmentActionCreatorsDefault;
       const obj3 = { spoiler: !spoiler };
       obj2.update(channelId, id, DraftType.ChannelMessage, obj3);
-    };
+    }
     cResult[8] = channelId;
     cResult[9] = spoiler;
     cResult[10] = id;
-    cResult[11] = fn;
-    const tmp14 = fn;
+    cResult[11] = markSpoiler;
+    const tmp14 = markSpoiler;
   }
   if (cResult[6] !== diff) {
     class O {
@@ -158,7 +158,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
       }
     }
   }
-}) : ((onAdd) => {
+}) : (function UploadPreviewActionSheet(onAdd) {
   let _undefined;
   let c11;
   let disableAddDescription;
@@ -289,10 +289,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
     });
     nextPromise.catch((error) => {
       if ("E_PICKER_CANCELLED" !== error.code) {
-        const obj = { key: "CROP_ERROR", IconComponent: width(onRemove[22]).CircleErrorIcon, content: error.message };
-        const open = height(onRemove[21]).open;
-        height(onRemove[21]);
-        open(obj);
+        const obj2 = { text: error.message, variant: "critical" };
+        const obj = height(onRemove[21]);
+        obj.open("CROP_ERROR", obj2);
       }
     });
   }, items3);
@@ -303,8 +302,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
     return getCaptionLabel(obj.getType(item.uri), isVideo, item);
   }, items4);
   const tmp14 = !tmp2 && !disableSpoiler;
-  let tmp22Result11 = tmp3(tmp4[24])(channelId, upload);
-  const tmp16 = tmp3(tmp4[25])(channelId, upload);
+  let tmp22Result11 = tmp3(tmp4[23])(channelId, upload);
+  const tmp16 = tmp3(tmp4[24])(channelId, upload);
   [tmp18, c11] = channelId(obj.useState(undefined), 2);
   let sum2;
   channelId(obj.useState(undefined), 2);
@@ -317,10 +316,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
     isImage = null != onEdit;
   }
   let obj2 = { scrollable: true, startHeight: sum2, children: null };
-  BottomSheet = tmp6(tmp4[43]).BottomSheet;
+  BottomSheet = tmp6(tmp4[42]).BottomSheet;
   let obj3 = { contentContainerStyle: obj4, children: null };
   obj4 = { padding: tmp3(tmp4[8]).space.PX_16, paddingBottom: bottom };
-  const BottomSheetScrollView = tmp6(tmp4[42]).BottomSheetScrollView;
+  const BottomSheetScrollView = tmp6(tmp4[41]).BottomSheetScrollView;
   const obj5 = {
     spacing: 16,
     onLayout(nativeEvent) {
@@ -328,14 +327,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
     },
     children: null
   };
-  const Stack = tmp6(tmp4[41]).Stack;
+  const Stack = tmp6(tmp4[40]).Stack;
   const items5 = [, , , ];
   const obj6 = { variant: "text-md/semibold", children: item.filename };
-  items5[0] = width(onAdd(tmp4[26]).Text, obj6);
+  items5[0] = width(onAdd(tmp4[25]).Text, obj6);
   const obj7 = { style: tmp.imageWrap, children: null };
   const obj8 = { style: items6, children: null };
   items6 = [tmp.imageContainer, { width: size.width, height: size.height }];
-  const tmp6Result = onAdd(tmp4[27]);
+  const tmp6Result = onAdd(tmp4[26]);
   if (tmp6Result.isIOS()) {
     if (isVideo) {
       let tmp22Result;
@@ -345,13 +344,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
         size1 = { width: null, height: null };
         ({ width: obj12.width, height: obj12.height } = size);
         obj10 = { uri: item.uri };
-        tmp22Result = tmp22(tmp6(tmp4[28]).VideoComponent, obj9);
+        tmp22Result = tmp22(tmp6(tmp4[27]).VideoComponent, obj9);
       }
       const items7 = [tmp22Result, ];
       let tmp22Result7 = null != memo && "" !== memo;
       if (tmp22Result7) {
         const obj11 = { label: memo };
-        tmp22Result7 = tmp22(tmp6(tmp4[29]).Caption, obj11);
+        tmp22Result7 = tmp22(tmp6(tmp4[28]).Caption, obj11);
       }
       items7[1] = tmp22Result7;
       obj8.children = items7;
@@ -366,16 +365,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
           }
           items5[2] = tmp23Result;
           if (null != onRemove) {
-            const obj13 = { icon: width(onAdd(tmp4[40]).TrashIcon, { size: "sm", color: "control-primary-text-default" }), text: intl6.string(onAdd(tmp4[34]).t["40jBO/"]), onPress: callback, variant: "destructive" };
-            const Button2 = tmp6(tmp4[39]).Button;
-            intl6 = tmp6(tmp4[34]).intl;
+            const obj13 = { icon: width(onAdd(tmp4[39]).TrashIcon, { size: "sm", color: "control-primary-text-default" }), text: intl6.string(onAdd(tmp4[33]).t["40jBO/"]), onPress: callback, variant: "destructive" };
+            const Button2 = tmp6(tmp4[38]).Button;
+            intl6 = tmp6(tmp4[33]).intl;
             tmp22Result8 = tmp22(Button2, obj13);
           } else {
             tmp22Result8 = null;
             if (null != onAdd) {
-              const obj14 = { icon: width(onAdd(tmp4[32]).ImageFileIcon, { size: "sm", color: "control-primary-text-default" }), text: intl5.string(onAdd(tmp4[34]).t.s7oPyG), onPress: callback1 };
-              const Button = tmp6(tmp4[39]).Button;
-              intl5 = tmp6(tmp4[34]).intl;
+              const obj14 = { icon: width(onAdd(tmp4[31]).ImageFileIcon, { size: "sm", color: "control-primary-text-default" }), text: intl5.string(onAdd(tmp4[33]).t.s7oPyG), onPress: callback1 };
+              const Button = tmp6(tmp4[38]).Button;
+              intl5 = tmp6(tmp4[33]).intl;
               tmp22Result8 = tmp22(Button, obj14);
             }
           }
@@ -387,54 +386,54 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
         }
       }
       let tmp22Result9 = null;
-      const TableRowGroup = tmp6(tmp4[30]).TableRowGroup;
+      const TableRowGroup = tmp6(tmp4[29]).TableRowGroup;
       if (isImage && !disableAddDescription) {
         const obj15 = {
-          icon: width(onAdd(tmp4[32]).ImageFileIcon, {}),
+          icon: width(onAdd(tmp4[31]).ImageFileIcon, {}),
           onPress() {
                   const obj = AddImageDescriptionModalActionCreatorsDefault;
                   const obj2 = { source: item, channelId, id };
                   return obj.open(obj2);
                 },
-          label: intl.string(onAdd(tmp4[34]).t["5S2AK+"]),
+          label: intl.string(onAdd(tmp4[33]).t["5S2AK+"]),
           arrow: true
         };
-        const TableRow = tmp6(tmp4[31]).TableRow;
-        intl = tmp6(tmp4[34]).intl;
+        const TableRow = tmp6(tmp4[30]).TableRow;
+        intl = tmp6(tmp4[33]).intl;
         tmp22Result9 = tmp22(TableRow, obj15);
       }
       const items8 = [tmp22Result9, , , ];
       let tmp22Result10 = null;
       if (tmp14) {
         const obj16 = {
-          icon: width(onAdd(tmp4[36]).SpoilerIcon, {}),
-          onPress() {
+          icon: width(onAdd(tmp4[35]).SpoilerIcon, {}),
+          onPress: function markSpoiler() {
                   const obj = ActionSheetActionCreatorsDefault;
                   obj.hideActionSheet();
                   const obj2 = UploadAttachmentActionCreatorsDefault;
                   const obj3 = { spoiler: !spoiler };
                   obj2.update(channelId, id, DraftType.ChannelMessage, obj3);
                 },
-          label: intl2.string(onAdd(tmp4[34]).t["gsI+xC"]),
+          label: intl2.string(onAdd(tmp4[33]).t["gsI+xC"]),
           checked: spoiler
         };
-        const TableCheckboxRow = tmp6(tmp4[35]).TableCheckboxRow;
-        intl2 = tmp6(tmp4[34]).intl;
+        const TableCheckboxRow = tmp6(tmp4[34]).TableCheckboxRow;
+        intl2 = tmp6(tmp4[33]).intl;
         tmp22Result10 = tmp22(TableCheckboxRow, obj16);
       }
       items8[1] = tmp22Result10;
       if (tmp22Result11) {
-        const obj17 = { icon: width(onAdd(tmp4[37]).ImageIcon, {}), label: intl3.string(onAdd(tmp4[34]).t.ews2pj), onPress: tmp16, checked: tmp2 };
-        const TableCheckboxRow2 = tmp6(tmp4[35]).TableCheckboxRow;
-        intl3 = tmp6(tmp4[34]).intl;
+        const obj17 = { icon: width(onAdd(tmp4[36]).ImageIcon, {}), label: intl3.string(onAdd(tmp4[33]).t.ews2pj), onPress: tmp16, checked: tmp2 };
+        const TableCheckboxRow2 = tmp6(tmp4[34]).TableCheckboxRow;
+        intl3 = tmp6(tmp4[33]).intl;
         tmp22Result11 = tmp22(TableCheckboxRow2, obj17);
       }
       items8[2] = tmp22Result11;
       let tmp22Result12 = null;
       if (isImage) {
-        const obj18 = { icon: width(onAdd(tmp4[38]).PencilSparkleIcon, {}), onPress: callback2, label: intl4.string(onAdd(tmp4[34]).t.b0y3DL), arrow: true };
-        const TableRow2 = tmp6(tmp4[31]).TableRow;
-        intl4 = tmp6(tmp4[34]).intl;
+        const obj18 = { icon: width(onAdd(tmp4[37]).PencilSparkleIcon, {}), onPress: callback2, label: intl4.string(onAdd(tmp4[33]).t.b0y3DL), arrow: true };
+        const TableRow2 = tmp6(tmp4[30]).TableRow;
+        intl4 = tmp6(tmp4[33]).intl;
         tmp22Result12 = tmp22(TableRow2, obj18);
       }
       const obj19 = { hasIcons: true, children: items8 };
@@ -442,7 +441,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onAdd) => {
       tmp23Result = tmp23(TableRowGroup, obj19);
     }
   }
-  const obj20 = { style: { width: size.width, height: size.height }, source: item };
+  const obj20 = { style: { width: size.width, height: size.height }, source: { uri: item.uri } };
   tmp22Result = tmp22(closure_5, obj20);
 });
 let size = size_mod;

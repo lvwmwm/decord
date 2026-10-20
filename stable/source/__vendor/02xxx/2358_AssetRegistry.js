@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/go_live", scales: [1], hash: "f6e3c365e8a3adf05325d11d5ed6a02b", name: "MobileGoLiveActionSheet.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==", scales: [1], hash: "1881bf3a48f968eb42551b27107c896f", name: "ko.messages.1881bf3a48f968eb42551b27107c896f.compiled.messages", type: "jsona" });

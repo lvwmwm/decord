@@ -1,23 +1,21 @@
-// Module ID: 11719
-// Function ID: 11720
+// Module ID: 11785
+// Function ID: 11786
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 4565, 2115, 1126, 4886, 5909, 11720, 8932, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 4806, 2128, 1126, 5088, 6185, 11786, 10624, 2]
 
-// Module 11719 (LearnMoreAboutAppsSection)
+// Module 11785 (LearnMoreAboutAppsSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import LinkingDefault from "Linking" /* 4565 */;
-import TrackSectionHeaderDefault from "TrackSectionHeader" /* 11720 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import LinkingDefault from "Linking" /* 4806 */;
+import TrackSectionHeaderDefault from "TrackSectionHeader" /* 11786 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let visible;
 
 let metroImportDefault;
 let metroRequire;
@@ -26,9 +24,9 @@ let obj3;
 let obj4;
 let tmp;
 const intl5 = tmp(1126);
-const Text_Text = tmp(4886);
-const Pressables = tmp(5909);
-const AppLauncherTypes = tmp(8932);
+const Text_Text = tmp(5088);
+const Pressables = tmp(6185);
+const AppLauncherTypes = tmp(10624);
 const View = react_native.View;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -40,7 +38,7 @@ obj3 = { height: nativeDefault.space.PX_16 };
 obj4 = { borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, paddingVertical: 12, paddingHorizontal: 16, minHeight: 48, justifyContent: "center", alignItems: "center" };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 let closure_8 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LearnMoreAboutAppsSection(visible) {
   let first;
   let intl4;
   let items;
@@ -191,7 +189,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   cResult[21] = tmp32;
   cResult[22] = tmp37;
   tmp36 = tmp37;
-}) : ((visible) => {
+}) : (function LearnMoreAboutAppsSection(visible) {
   let Text;
   let intl4;
   let items;

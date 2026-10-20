@@ -1,20 +1,20 @@
-// Module ID: 9246
-// Function ID: 9247
+// Module ID: 8632
+// Function ID: 8633
 // Name: StageChannelAgeVerificationNoticeForEvent
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 5102, 1126, 4886, 4559, 2115, 8084, 8086, 4812, 4803, 1188, 5579, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5909, 1126, 5088, 4800, 2128, 7493, 5918, 5046, 7567, 1200, 5949, 2]
 
-// Module 9246 (StageChannelAgeVerificationNoticeForEvent)
+// Module 8632 (StageChannelAgeVerificationNoticeForEvent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5102 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5579 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5909 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5949 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ obj4 = { borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SU
 obj5 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.sm };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirmPress) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
   let formatResult;
   let tmp = onConfirmPress;
   let obj = onConfirmPress(576);
@@ -45,7 +45,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirmPress)
   onConfirmPress = onConfirmPress.onConfirmPress;
   const tmp4 = closure_8();
   let closure_1 = tmp4;
-  let obj2 = onConfirmPress(5102);
+  let obj2 = onConfirmPress(5909);
   const isVerifiedTeen = obj2.useIsVerifiedTeen();
   if (cResult[0] === isVerifiedTeen) {
     if (cResult[1] === onConfirmPress) {
@@ -107,11 +107,11 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirmPress)
   cResult[2] = tmp4;
   cResult[3] = formatResult;
   tmp6 = formatResult;
-}) : ((onConfirmPress) => {
+}) : (function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
   let formatResult;
   onConfirmPress = onConfirmPress.onConfirmPress;
   let closure_1 = closure_8();
-  let obj = onConfirmPress(5102);
+  let obj = onConfirmPress(5909);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
   const intl = onConfirmPress(1126).intl;
   const format = intl.format;
@@ -162,7 +162,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirmPress)
   return formatResult;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirmPress) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
   let items;
   const obj = react2;
   const cResult = obj.c(17);
@@ -220,9 +220,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirmPress
     }
     const tmp15 = hasOwnProperty;
     if (isVerifiedTeen) {
-      WarningIcon = tmp(4812).CircleInformationIcon;
+      WarningIcon = tmp(5046).CircleInformationIcon;
     } else {
-      WarningIcon = tmp(4803).WarningIcon;
+      WarningIcon = tmp(7567).WarningIcon;
     }
     obj6 = { size: "refresh_sm", color: nativeDefault.colors.TEXT_DEFAULT, style: tmp4.icon };
     const tmp15Result = tmp15(WarningIcon, obj6);
@@ -232,7 +232,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirmPress
     tmp14 = tmp15Result;
   } else {
     let tmp7;
-    const HelpMessageTypes = tmp(1188).HelpMessageTypes;
+    const HelpMessageTypes = tmp(1200).HelpMessageTypes;
     const tmp6 = isVerifiedTeen ? HelpMessageTypes.INFO : HelpMessageTypes.WARNING;
     if (cResult[12] !== onConfirmPress) {
       const obj7 = { onConfirmPress };
@@ -257,7 +257,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirmPress
     cResult[16] = tmp13;
     tmp11 = tmp13;
   }
-}) : ((onConfirmPress) => {
+}) : (function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
   let items;
   let obj5;
   let obj7;
@@ -273,20 +273,20 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirmPress
     const tmp8 = metroRequire;
     const tmp9 = View;
     if (isVerifiedTeen) {
-      WarningIcon = tmp2(4812).CircleInformationIcon;
+      WarningIcon = tmp2(5046).CircleInformationIcon;
     } else {
-      WarningIcon = tmp2(4803).WarningIcon;
+      WarningIcon = tmp2(7567).WarningIcon;
     }
     const obj3 = { size: "refresh_sm", color: nativeDefault.colors.TEXT_DEFAULT, style: tmp.icon };
     items = [hasOwnProperty(WarningIcon, obj3), ];
     const obj4 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.contentText, children: hasOwnProperty(closure_9, obj5) };
     obj5 = { onConfirmPress };
-    const Text = tmp2(4886).Text;
+    const Text = tmp2(5088).Text;
     items[1] = hasOwnProperty(Text, obj4);
     tmp5Result = tmp8(tmp9, obj2);
   } else {
-    const HelpMessage = tmp2(1188).HelpMessage;
-    const HelpMessageTypes = tmp2(1188).HelpMessageTypes;
+    const HelpMessage = tmp2(1200).HelpMessage;
+    const HelpMessageTypes = tmp2(1200).HelpMessageTypes;
     obj6 = { messageType: isVerifiedTeen ? HelpMessageTypes.INFO : HelpMessageTypes.WARNING, children: hasOwnProperty(closure_9, obj7) };
     obj7 = { onConfirmPress };
     tmp5Result = tmp5(HelpMessage, obj6);
@@ -295,7 +295,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirmPress
 });
 let obj6 = { TOP: 0, [0]: "TOP", BOTTOM: 1, [1]: "BOTTOM" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannelAgeVerificationNoticeForEvent(arg0) {
   let divider;
   let items2;
   let noBackground;
@@ -413,7 +413,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     return null;
   }
-}) : ((divider) => {
+}) : (function StageChannelAgeVerificationNoticeForEvent(divider) {
   let items3;
   let noBackground;
   let obj4;

@@ -1,10 +1,10 @@
-// Module ID: 15964
-// Function ID: 15965
+// Module ID: 16477
+// Function ID: 16478
 // Name: usePrivateChannelWave
-// Dependencies: [5, 32, 19, 1085, 4883, 558, 576, 11894, 1112, 6965, 4568, 1126, 4810, 15965, 2]
+// Dependencies: [5, 32, 19, 1085, 5085, 558, 576, 11966, 1112, 7174, 4809, 1126, 16478, 2]
 
-// Module 15964 (usePrivateChannelWave)
-import MessageConstants from "MessageConstants" /* 4883 */;
+// Module 16477 (usePrivateChannelWave)
+import MessageConstants from "MessageConstants" /* 5085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -13,14 +13,14 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c4, c5, id;
+let _require, c4, c5;
 
 let metroImportDefault;
 let metroRequire;
 ({ ME: metroRequire, Routes: metroImportDefault } = Constants);
 const MessageSendLocation = MessageConstants.MessageSendLocation;
 let c9 = "749054660769218631";
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateChannelWave(id, arg1) {
   let closure_2;
   let first;
   _require = id;
@@ -33,7 +33,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
     if (cResult[1] === first) {
       tmp6 = cResult[2];
     }
-    const tmpResult = tmp(15965);
+    const tmpResult = tmp(16478);
     const privateChannelWaveEligible = tmpResult.usePrivateChannelWaveEligible(id, arg1);
     if (cResult[3] === tmp6) {
       let tmp9;
@@ -77,9 +77,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
           } else {
             let closure_1 = tmp;
             closure_0 = undefined;
-            const tmp49 = closure_1;
-            if (!tmp49) {
-              tmp43(true);
+            const tmp47 = closure_1;
+            if (!tmp47) {
+              tmp41(true);
               const obj7 = { channelId: closure_0.id, source: "Messages Tab" };
               const obj3 = closure_0(closure_2_2[7]);
               obj3.trackWaveCtaClicked(obj7);
@@ -98,14 +98,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
         } else {
           if (1 === c4) {
             c3 = 0;
-            closure_0 = tmp43;
+            closure_0 = tmp41;
             const ok = closure_0.ok || 429 !== closure_0.status;
             if (!ok) {
-              const obj10 = { key: "HANDLE_WAVE_PRESS_TOAST", content: intl.string(closure_0(closure_2_2[11]).t.Whhv4w), icon: first(closure_2_2[12]) };
+              const obj10 = { text: intl.string(closure_0(closure_2_2[11]).t.Whhv4w), variant: "critical" };
               const open = first(closure_2_2[10]).open;
               const tmp14 = first(closure_2_2[10]);
               intl = closure_0(closure_2_2[11]).intl;
-              open(obj10);
+              open("HANDLE_WAVE_PRESS_TOAST", obj10);
             }
           } else if (arg0 === 1) {
             c5 = 3;
@@ -118,28 +118,28 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
           } else {
             c3 = 0;
           }
-          tmp43(false);
+          tmp41(false);
         }
         c5 = 3;
         return { value: "IconComponent", done: null };
-      } catch (tmp43) {
+      } catch (tmp41) {
         if (0 === c3) {
           c5 = 3;
-          throw tmp43;
+          throw tmp41;
         } else {
           c4 = 1;
         }
       }
     }
   });
-  const fn = function() {
+  function t0() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = id.id;
   cResult[1] = first;
-  cResult[2] = fn;
-  tmp6 = fn;
-}) : ((id, arg1) => {
+  cResult[2] = t0;
+  tmp6 = t0;
+}) : (function usePrivateChannelWave(id, arg1) {
   let callback;
   let first;
   let obj2;
@@ -177,8 +177,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
             return obj4;
           } else {
             id = tmp4;
-            const tmp49 = first;
-            if (!tmp49) {
+            const tmp47 = first;
+            if (!tmp47) {
               closure_2(true);
               const obj7 = { channelId: id.id, source: "Messages Tab" };
               const obj3 = id(closure_2[7]);
@@ -201,11 +201,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
             id = closure_2;
             const ok = id.ok || 429 !== id.status;
             if (!ok) {
-              const obj10 = { key: "HANDLE_WAVE_PRESS_TOAST", content: intl.string(id(closure_2[11]).t.Whhv4w), icon: tmp(closure_2[12]) };
+              const obj10 = { text: intl.string(id(closure_2[11]).t.Whhv4w), variant: "critical" };
               const open = tmp(closure_2[10]).open;
               const tmp14 = tmp(closure_2[10]);
               intl = id(closure_2[11]).intl;
-              open(obj10);
+              open("HANDLE_WAVE_PRESS_TOAST", obj10);
             }
           } else if (arg0 === 1) {
             c5 = 3;
@@ -222,11 +222,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
         }
         c5 = 3;
         return { value: "IconComponent", done: null };
-      } catch (tmp43) {
-        closure_2 = tmp43;
+      } catch (tmp41) {
+        closure_2 = tmp41;
         if (0 === c3) {
           c5 = 3;
-          throw tmp43;
+          throw tmp41;
         } else {
           c4 = 1;
         }

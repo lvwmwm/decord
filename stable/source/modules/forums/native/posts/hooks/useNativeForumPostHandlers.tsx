@@ -1,45 +1,45 @@
-// Module ID: 10031
-// Function ID: 10032
+// Module ID: 10455
+// Function ID: 10456
 // Name: useNativeForumPostHandlers
-// Dependencies: [19, 4561, 2051, 4519, 1377, 6780, 6811, 1085, 1125, 558, 576, 7259, 38, 5043, 5812, 1371, 7540, 7518, 7933, 1369, 4855, 4856, 7263, 4901, 4745, 10032, 9855, 9854, 2]
+// Dependencies: [19, 4802, 2065, 4760, 1390, 6979, 7008, 1085, 1125, 558, 576, 7896, 38, 5421, 8154, 1384, 8474, 9313, 8382, 1382, 5057, 5058, 7899, 5103, 4985, 10456, 9380, 9378, 2]
 
-// Module 10031 (useNativeForumPostHandlers)
+// Module 10455 (useNativeForumPostHandlers)
 import _modDef38 from "module_38" /* 38 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ChatInputUtils from "ChatInputUtils" /* 4745 */;
-import HapticUtils from "HapticUtils" /* 4855 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4856 */;
-import transitionToChannel from "transitionToChannel" /* 4901 */;
-import useChannelName from "useChannelName" /* 5043 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5812 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7259 */;
-import tracking_Tracking from "tracking/Tracking" /* 7263 */;
-import openMediaModal from "openMediaModal" /* 7933 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9854 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9855 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import ChatInputUtils from "ChatInputUtils" /* 4985 */;
+import HapticUtils from "HapticUtils" /* 5057 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5058 */;
+import transitionToChannel from "transitionToChannel" /* 5103 */;
+import useChannelName from "useChannelName" /* 5421 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7896 */;
+import Tracking from "Tracking" /* 7899 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8154 */;
+import openMediaModal from "openMediaModal" /* 8382 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9378 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9380 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4561 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserStore from "UserStore" /* 1377 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6780 */;
-import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 6811 */;
+import ActionSheetStore from "ActionSheetStore" /* 4802 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserStore from "UserStore" /* 1390 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6979 */;
+import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7008 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let src, threadId;
+let src;
 
 let closure_12;
 let closure_14;
 let map1;
 let tmp2;
 let unpackModuleId;
-const showLongPressForumPostActionSheetDefault = tmp2(10032);
+const showLongPressForumPostActionSheetDefault = tmp2(10456);
 ({ AnalyticsObjectTypes: unpackModuleId, AnalyticsPages: closure_12, AnalyticsSections: map1, EMPTY_STRING_SNOWFLAKE_ID: closure_14 } = Constants);
 const constants4 = ThreadConstants.OpenThreadAnalyticsLocations;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeForumPostHandlers(threadId) {
   let tmp12;
   let tmp4;
   let tmp6;
@@ -50,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
   threadId = threadId.threadId;
   let NORMAL = threadId.reactionType;
   if (undefined === NORMAL) {
-    NORMAL = tmp(7259).ReactionTypes.NORMAL;
+    NORMAL = tmp(7896).ReactionTypes.NORMAL;
   }
   if (cResult[0] !== threadId) {
     const fn = function h(containerRef) {
@@ -168,7 +168,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
         _modDef38(null != channel1, "[Forum Post Handlers] Parent channel cannot be null.");
         const obj2 = { guildId: channel1.guild_id, channelId: channel1.id, postId: threadId, location: obj3 };
         obj3 = { page: constants.GUILD_CHANNEL, section: map1.FORUM_CHANNEL_POST };
-        const tmpResult3 = tracking_Tracking;
+        const tmpResult3 = Tracking;
         const result1 = tmpResult3.trackForumPostClicked(obj2);
         const obj4 = { source: constants.FORUM, navigationReplace: false };
         const tmpResult4 = transitionToChannel;
@@ -192,7 +192,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
         _modDef38(null != channel1, "[Forum Post Handlers] Parent channel cannot be null.");
         const obj2 = { guildId: channel1.guild_id, channelId: channel1.id, postId: threadId, location: obj3 };
         obj3 = { page: constants.GUILD_CHANNEL, section: map1.FORUM_CHANNEL_POST };
-        const tmpResult3 = tracking_Tracking;
+        const tmpResult3 = Tracking;
         const result1 = tmpResult3.trackForumPostClicked(obj2);
         const obj4 = { source: constants.FORUM, navigationReplace: false };
         const tmpResult4 = transitionToChannel;
@@ -217,7 +217,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
         _modDef38(null != channel1, "[Forum Post Handlers] Parent channel cannot be null.");
         const obj2 = { guildId: channel1.guild_id, channelId: channel1.id, postId: threadId, location: obj3 };
         obj3 = { page: constants.GUILD_CHANNEL, section: map1.FORUM_CHANNEL_POST };
-        const tmpResult3 = tracking_Tracking;
+        const tmpResult3 = Tracking;
         const result1 = tmpResult3.trackForumPostClicked(obj2);
         const obj4 = { source: constants.FORUM, navigationReplace: false };
         const tmpResult4 = transitionToChannel;
@@ -381,7 +381,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
       let obj2 = { onTapMedia: tmp4, onTapPost: tmp5, onLongTapPost: tmp7, onTapReaction: tmp8, onLongTapReaction: tmp10, onTapReactionCount: tmp11, onTapAddReaction: tmp12, onTapMostRecentMessage: tmp6 };
       cResult[18] = tmp7;
       cResult[19] = tmp10;
-      class H {
+      class A {
         constructor() {
           let obj5;
           const channel = ChannelStore.getChannel(threadId);
@@ -396,7 +396,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
               const obj3 = { guildId: null, channelId: null, postId: tmp, location: obj5 };
               ({ guild_id: obj2.guildId, id: obj2.channelId } = channel1);
               obj5 = { page: constants.GUILD_CHANNEL, section: map1.FORUM_CHANNEL_POST };
-              const obj = tracking_Tracking;
+              const obj = Tracking;
               const result = obj.trackForumPostClicked(obj3);
               const obj8 = { source: constants.FORUM, navigationReplace: false };
               const obj4 = transitionToChannel;
@@ -426,7 +426,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
     cResult[17] = fn2;
     tmp12 = fn2;
   }
-  class H {
+  class A {
     constructor() {
       let obj5;
       const channel = ChannelStore.getChannel(threadId);
@@ -441,7 +441,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
           const obj3 = { guildId: null, channelId: null, postId: tmp, location: obj5 };
           ({ guild_id: obj2.guildId, id: obj2.channelId } = channel1);
           obj5 = { page: constants.GUILD_CHANNEL, section: map1.FORUM_CHANNEL_POST };
-          const obj = tracking_Tracking;
+          const obj = Tracking;
           const result = obj.trackForumPostClicked(obj3);
           const obj8 = { source: constants.FORUM, navigationReplace: false };
           const obj4 = transitionToChannel;
@@ -453,15 +453,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
   }
   cResult[4] = tmp5;
   cResult[5] = threadId;
-  cResult[6] = H;
-  tmp6 = H;
-}) : ((threadId) => {
+  cResult[6] = A;
+  tmp6 = A;
+}) : (function useNativeForumPostHandlers(threadId) {
   threadId = threadId.threadId;
   let NORMAL = threadId.reactionType;
   if (NORMAL === undefined) {
     let tmp = threadId;
     let tmp2 = dependencyMap;
-    NORMAL = threadId(7259).ReactionTypes.NORMAL;
+    NORMAL = threadId(7896).ReactionTypes.NORMAL;
   }
   const items = [threadId];
   const items1 = [threadId];
@@ -570,7 +570,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
     _modDef38(null != channel1, "[Forum Post Handlers] Parent channel cannot be null.");
     const obj2 = { guildId: channel1.guild_id, channelId: channel1.id, postId: threadId, location: obj3 };
     obj3 = { page: constants.GUILD_CHANNEL, section: map1.FORUM_CHANNEL_POST };
-    const tmpResult3 = tracking_Tracking;
+    const tmpResult3 = Tracking;
     const result1 = tmpResult3.trackForumPostClicked(obj2);
     const obj4 = { source: constants.FORUM, navigationReplace: false };
     const tmpResult4 = transitionToChannel;
@@ -592,7 +592,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((threadId) => {
         const obj3 = { guildId: null, channelId: null, postId: tmp, location: obj5 };
         ({ guild_id: obj2.guildId, id: obj2.channelId } = channel1);
         obj5 = { page: constants.GUILD_CHANNEL, section: map1.FORUM_CHANNEL_POST };
-        const obj = tracking_Tracking;
+        const obj = Tracking;
         const result = obj.trackForumPostClicked(obj3);
         const obj8 = { source: constants.FORUM, navigationReplace: false };
         const obj4 = transitionToChannel;

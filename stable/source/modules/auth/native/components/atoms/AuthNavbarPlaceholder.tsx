@@ -1,25 +1,25 @@
-// Module ID: 6466
-// Function ID: 6467
+// Module ID: 6660
+// Function ID: 6661
 // Name: AuthNavbarPlaceholder
-// Dependencies: [19, 21, 4890, 587, 558, 576, 6010, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 6201, 2]
 
-// Module 6466 (AuthNavbarPlaceholder)
+// Module 6660 (AuthNavbarPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const NavigatorHeader = tmp(6010);
+const NavigatorHeader = tmp(6201);
 const jsx = Fragment.jsx;
 let obj = { navBar: obj2 };
 obj2 = { backgroundColor: nativeDefault.unsafe_rawColors.TRANSPARENT, borderBottomWidth: 0 };
 let closure_3 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuthNavbarPlaceholder() {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(2);
@@ -33,7 +33,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => jsx(NavigatorHeader.FauxHeader, { style: closure_3().navBar, children: null }));
+}) : (function AuthNavbarPlaceholder() {
+  return jsx(NavigatorHeader.FauxHeader, { style: closure_3().navBar, children: null });
+});
 const result = size.fileFinishedImporting("modules/auth/native/components/atoms/AuthNavbarPlaceholder.tsx");
 
 export default tmp3;

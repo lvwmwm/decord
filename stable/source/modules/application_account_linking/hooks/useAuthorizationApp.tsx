@@ -1,15 +1,15 @@
-// Module ID: 6662
-// Function ID: 6663
+// Module ID: 6857
+// Function ID: 6858
 // Name: useAuthorizationApp
-// Dependencies: [19, 5118, 2009, 1360, 1985, 558, 576, 6663, 2]
+// Dependencies: [19, 5440, 2022, 1373, 1998, 558, 576, 6858, 2]
 // Exports: getAuthorizationApp
 
-// Module 6662 (useAuthorizationApp)
+// Module 6857 (useAuthorizationApp)
 import react2 from "react" /* 576 */;
-import ApplicationConstants from "ApplicationConstants" /* 1360 */;
+import ApplicationConstants from "ApplicationConstants" /* 1373 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
-import ApplicationRecord from "ApplicationRecord" /* 2009 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,9 +17,9 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const useGetOrFetchApplications = tmp(6663);
+const useGetOrFetchApplications = tmp(6858);
 const ApplicationTypes = ApplicationConstants.ApplicationTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((getOfficialApplicationId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAuthorizationApp(getOfficialApplicationId) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(4);
@@ -85,7 +85,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((getOfficialApplicati
     }
   }
   return tmp9;
-}) : ((getOfficialApplicationId) => {
+}) : (function useAuthorizationApp(getOfficialApplicationId) {
   let getOrFetchApplication;
   _require = getOfficialApplicationId;
   let officialApplicationId;

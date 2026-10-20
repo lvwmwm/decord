@@ -1,16 +1,16 @@
-// Module ID: 14523
-// Function ID: 14524
+// Module ID: 14995
+// Function ID: 14996
 // Name: AccountEmailSetting
-// Dependencies: [1377, 7634, 558, 576, 504, 6007, 11129, 1126, 2]
+// Dependencies: [1390, 7988, 558, 576, 504, 6198, 10664, 1126, 2]
 
-// Module 14523 (AccountEmailSetting)
+// Module 14995 (AccountEmailSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6007 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import UserStore from "UserStore" /* 1377 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6198 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;
@@ -18,7 +18,7 @@ let currentUser;
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountEmailSettingTrailing() {
   let tmp4;
   let tmp5;
   const obj = react;
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useAccountEmailSettingTrailing() {
   const items = [UserStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => {

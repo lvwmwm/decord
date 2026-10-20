@@ -1,19 +1,19 @@
-// Module ID: 13907
-// Function ID: 13908
+// Module ID: 7564
+// Function ID: 7565
 // Name: HelpMessage
-// Dependencies: [19, 17, 21, 4890, 587, 1103, 4800, 4812, 4797, 4792, 558, 576, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 1103, 6290, 5046, 6296, 6868, 558, 576, 5088, 2]
 
-// Module 13907 (HelpMessage)
+// Module 7564 (HelpMessage)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import CircleCheckIcon2 from "CircleCheckIcon" /* 4792 */;
-import CircleXIcon2 from "CircleXIcon" /* 4797 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 4800 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 4812 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5046 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 6290 */;
+import CircleXIcon2 from "CircleXIcon" /* 6296 */;
+import CircleCheckIcon2 from "CircleCheckIcon" /* 6868 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ColorUtils_mod from "utils/ColorUtils" /* 1103 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let obj5;
 let obj6;
 let obj7;
 let tmp;
-const Text_Text = tmp(4886);
+const Text_Text = tmp(5088);
 function getIcon(arg0) {
   if (obj8.WARNING === arg0) {
     const obj2 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
@@ -77,7 +77,7 @@ int2rgba4 = ColorUtils.int2rgba;
 ColorUtils = ColorUtils_mod;
 let closure_6 = createStyles(obj);
 const obj8 = { WARNING: 0, [0]: "WARNING", INFO: 1, [1]: "INFO", ERROR: 2, [2]: "ERROR", SUCCESS: 3, [3]: "SUCCESS" };
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function HelpMessage(arg0) {
   let borderRadius;
   let button;
   let children;
@@ -196,7 +196,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp7;
   cResult[5] = items2;
   tmp8 = items2;
-}) : ((children) => {
+}) : (function HelpMessage(children) {
   let items1;
   let items2;
   let messageType;

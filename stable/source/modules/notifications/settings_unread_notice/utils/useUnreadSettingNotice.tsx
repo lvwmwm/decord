@@ -1,11 +1,11 @@
-// Module ID: 9848
-// Function ID: 9849
+// Module ID: 10445
+// Function ID: 10446
 // Name: useUnreadSettingNotice
-// Dependencies: [32, 19, 2055, 558, 576, 9849, 9850, 504, 2]
+// Dependencies: [32, 19, 2069, 558, 576, 10446, 10447, 504, 2]
 
-// Module 9848 (useUnreadSettingNotice)
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import UnreadSettingNoticeStore2Default from "UnreadSettingNoticeStore2" /* 9850 */;
+// Module 10445 (useUnreadSettingNotice)
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import UnreadSettingNoticeStore2Default from "UnreadSettingNoticeStore2" /* 10447 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 
 const set = ChannelRecord.CHANNEL_ELIGIBLE_FOR_UNREAD_SETTING;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUnreadSettingNotice(id) {
   let closure_3;
   let first;
   let first1;
@@ -115,7 +115,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       }
     }
   }
-  class U {
+  class E {
     constructor() {
       let hasItem = set.has(id.type) && first !== tmp.id && shouldUseNewNotificationSystem;
       if (hasItem) {
@@ -131,9 +131,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   cResult[7] = id.type;
   cResult[8] = shouldUseNewNotificationSystem;
   cResult[9] = first;
-  cResult[10] = U;
-  tmp14 = U;
-}) : ((id) => {
+  cResult[10] = E;
+  tmp14 = E;
+}) : (function useUnreadSettingNotice(id) {
   let closure_3;
   let first;
   const _require = id;

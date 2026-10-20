@@ -1,13 +1,13 @@
-// Module ID: 8406
-// Function ID: 8407
+// Module ID: 8951
+// Function ID: 8952
 // Name: AnnouncementMessageUtils
-// Dependencies: [4520, 1985, 5121, 5040, 8407, 5112, 8408, 1126, 1371, 2]
+// Dependencies: [4761, 1998, 5444, 5419, 8952, 5434, 8953, 1126, 1384, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 8406 (AnnouncementMessageUtils)
-import URLUtilsDefault from "URLUtils" /* 1371 */;
-import MessageRecord from "MessageRecord" /* 4520 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 8408 */;
+// Module 8951 (AnnouncementMessageUtils)
+import URLUtilsDefault from "URLUtils" /* 1384 */;
+import MessageRecord from "MessageRecord" /* 4761 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 8953 */;
 import size from "module_2" /* 2 */;
 
 let reactions;
@@ -260,20 +260,20 @@ export const getPollExpiryLabel = function getPollExpiryLabel(poll) {
   }
   return result;
 };
-export const getPosterUrl = function getPosterUrl(proxyUrl, c12, c11) {
+export const getPosterUrl = function getPosterUrl(proxyUrl, c11, c10) {
   const obj = URLUtilsDefault;
   const str = obj.toURLSafe(proxyUrl);
   let str1 = null;
   if (null != str) {
     const searchParams = str.searchParams;
     searchParams.append("format", "webp");
-    if (null != c12) {
-      const searchParams2 = str.searchParams;
-      searchParams2.append("width", c12.toString());
-    }
     if (null != c11) {
+      const searchParams2 = str.searchParams;
+      searchParams2.append("width", c11.toString());
+    }
+    if (null != c10) {
       const searchParams3 = str.searchParams;
-      searchParams3.append("height", c11.toString());
+      searchParams3.append("height", c10.toString());
     }
     str1 = str.toString();
   }

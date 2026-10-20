@@ -1,25 +1,25 @@
-// Module ID: 16925
-// Function ID: 16926
+// Module ID: 17515
+// Function ID: 17516
 // Name: FriendsScreen
-// Dependencies: [19, 17, 7142, 4519, 21, 4890, 587, 558, 576, 1490, 6657, 6681, 1618, 16926, 504, 1881, 7850, 16927, 16930, 1126, 16384, 4841, 5993, 5594, 10726, 14917, 10593, 11507, 2]
+// Dependencies: [19, 17, 7342, 4760, 21, 5092, 587, 558, 576, 1503, 6852, 6879, 1631, 17516, 504, 1894, 8299, 17517, 17520, 1126, 16906, 5040, 6180, 5379, 11580, 15396, 10219, 11496, 2]
 
-// Module 16925 (FriendsScreen)
+// Module 17515 (FriendsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
-import SendMessageIcon from "SendMessageIcon" /* 4841 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import TableRow2 from "TableRow" /* 5993 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
-import NoResultsDefault from "NoResults" /* 10726 */;
-import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 14917 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16384 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
+import SendMessageIcon from "SendMessageIcon" /* 5040 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import TableRow2 from "TableRow" /* 6180 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8299 */;
+import NoResultsDefault from "NoResults" /* 11580 */;
+import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 15396 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16906 */;
 import react from "react" /* 19 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7142 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7342 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ createStyles = createStyles.createStyles;
 obj3 = { marginHorizontal: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
 obj4 = { flexDirection: "row", marginBottom: nativeDefault.space.PX_16, width: "100%" };
 let closure_9 = createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendsScreen() {
   let analyticsLocations;
   let incoming;
   let pendingIgnored;
@@ -107,7 +107,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   if (cResult[4] !== navigation) {
-    class F {
+    class T {
       constructor(defaultSelectedUserId) {
         let obj2;
         const obj = { screen: "new-message", params: obj2 };
@@ -116,9 +116,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     cResult[4] = navigation;
-    cResult[5] = F;
+    cResult[5] = T;
   } else {
-    class F {
+    class T {
       constructor(defaultSelectedUserId) {
         let obj2;
         const obj = { screen: "new-message", params: obj2 };
@@ -128,7 +128,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class F {
+    class T {
       constructor(defaultSelectedUserId) {
         let obj2;
         const obj = { screen: "new-message", params: obj2 };
@@ -142,7 +142,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp16 = items1;
     tmp15 = tmp17;
   } else {
-    class F {
+    class T {
       constructor(defaultSelectedUserId) {
         let obj2;
         const obj = { screen: "new-message", params: obj2 };
@@ -154,7 +154,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = outgoing.useEffect(tmp15, tmp16);
   if (cResult[8] === incoming) {
-    class F {
+    class T {
       constructor(defaultSelectedUserId) {
         let obj2;
         const obj = { screen: "new-message", params: obj2 };
@@ -167,7 +167,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const sum = incoming + spam + pendingIgnored;
   if (sum > 0) {
     let tmp20;
-    class F {
+    class T {
       constructor(defaultSelectedUserId) {
         let obj2;
         const obj = { screen: "new-message", params: obj2 };
@@ -176,7 +176,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      class F {
+      class T {
         constructor(defaultSelectedUserId) {
           let obj2;
           const obj = { screen: "new-message", params: obj2 };
@@ -188,7 +188,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       cResult[14] = stringResult;
       tmp20 = stringResult;
     } else {
-      class F {
+      class T {
         constructor(defaultSelectedUserId) {
           let obj2;
           const obj = { screen: "new-message", params: obj2 };
@@ -198,7 +198,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     if (cResult[15] === outgoing) {
-      class F {
+      class T {
         constructor(defaultSelectedUserId) {
           let obj2;
           const obj = { screen: "new-message", params: obj2 };
@@ -207,7 +207,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       if (cResult[18] !== navigation) {
-        class F {
+        class T {
           constructor(defaultSelectedUserId) {
             let obj2;
             const obj = { screen: "new-message", params: obj2 };
@@ -218,7 +218,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         cResult[18] = navigation;
         cResult[19] = tmp25;
       } else {
-        class F {
+        class T {
           constructor(defaultSelectedUserId) {
             let obj2;
             const obj = { screen: "new-message", params: obj2 };
@@ -228,7 +228,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       if (cResult[20] === tmp22) {
-        class F {
+        class T {
           constructor(defaultSelectedUserId) {
             let obj2;
             const obj = { screen: "new-message", params: obj2 };
@@ -251,7 +251,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[17] = intl.formatToPlainString(navigation(incoming[19]).t["1IEawz"], obj5);
     const formatToPlainStringResult = intl.formatToPlainString(navigation(incoming[19]).t["1IEawz"], obj5);
   } else {
-    class F {
+    class T {
       constructor(defaultSelectedUserId) {
         let obj2;
         const obj = { screen: "new-message", params: obj2 };
@@ -266,7 +266,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[11] = pendingIgnored;
   cResult[12] = spam;
   cResult[13] = items2;
-}) : (() => {
+}) : (function FriendsScreen() {
   let analyticsLocations;
   let closure_1;
   let items5;

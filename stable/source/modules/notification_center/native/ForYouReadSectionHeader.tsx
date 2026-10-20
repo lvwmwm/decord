@@ -1,17 +1,17 @@
-// Module ID: 16375
-// Function ID: 16376
+// Module ID: 16897
+// Function ID: 16898
 // Name: ForYouReadSectionHeader
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 5088, 2]
 
-// Module 16375 (ForYouReadSectionHeader)
+// Module 16897 (ForYouReadSectionHeader)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import Text_Text from "Text/Text" /* 5088 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ obj2 = { borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: nativeDefault
 createStyles = createStyles.createStyles;
 ({ color: nativeDefault.colors.TEXT_SUBTLE, marginTop: 20 });
 let closure_4 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouReadSectionHeader() {
   let container;
   let first;
   let textHeader;
@@ -63,7 +63,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = tmp7;
   cResult[5] = tmp11;
   tmp10 = tmp11;
-}) : (() => {
+}) : (function ForYouReadSectionHeader() {
   let intl;
   const tmp = closure_4();
   ({ style: tmp.textHeader, variant: "text-sm/semibold", children: intl.string(intl2.t.hftC1K) });

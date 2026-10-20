@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images", width: 375, height: 460, scales: [1], hash: "c8d53ba30e41e7296c825f2501df590c", name: "premium_gift_plan_selection_header", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/badge", width: 24, height: 24, scales: [2, 3], hash: "bfaa24ee9d14df63fd4c31531ca2dc70", name: "ic_badge_staff", type: "png" });

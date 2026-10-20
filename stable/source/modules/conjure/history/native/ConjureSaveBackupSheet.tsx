@@ -1,32 +1,32 @@
-// Module ID: 16628
-// Function ID: 16629
+// Module ID: 17166
+// Function ID: 17167
 // Name: ConjureSaveBackupSheet
-// Dependencies: [32, 19, 17, 12904, 21, 4890, 587, 558, 576, 16623, 4568, 1126, 3723, 4854, 6644, 16621, 4886, 6098, 5594, 5593, 6701, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 17161, 17158, 4809, 1126, 3849, 5056, 6839, 17119, 5088, 6286, 5379, 5377, 6899, 2]
 
-// Module 16628 (ConjureSaveBackupSheet)
+// Module 17166 (ConjureSaveBackupSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12904 */;
-import conjureDatabaseLock from "conjureDatabaseLock" /* 16623 */;
+import conjureDatabaseLock from "conjureDatabaseLock" /* 17161 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let metroImportAll;
+let nextPromise1;
+
 let metroImportDefault;
+let metroRequire;
 let obj2;
 let react = react_mod;
 const View = react_native.View;
-let closure_6 = ConjureConnectionStore.createDatabaseRestorePoint;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-const ConjureSaveBackupSheet = "ConjureSaveBackupSheet";
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+const ConjureSaveBackupSheet_str = "ConjureSaveBackupSheet";
 let obj = { content: obj2 };
 obj2 = { paddingBottom: nativeDefault.space.PX_16 };
-let closure_10 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+let closure_9 = createStyles.createStyles(obj);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSaveBackupSheet(projectId) {
   let intl;
   let items;
   let obj6;
@@ -37,12 +37,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   let value;
   let tmp = projectId;
   const tmp2 = onSaved;
-  let obj = projectId(onSaved[8]);
+  let obj = projectId(onSaved[7]);
   const cResult = obj.c(28);
   projectId = projectId.projectId;
   const environment = projectId.environment;
   onSaved = projectId.onSaved;
-  const tmp4 = closure_10();
+  const tmp4 = closure_9();
   const tmp5 = value(react.useState(""), 2);
   value = tmp5[0];
   const tmp7 = tmp5[1];
@@ -67,7 +67,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           let obj2 = { title: intl.string(environment(tmp2[12]).qywOto) };
           const BottomSheetTitleHeader = tmp(tmp2[14]).BottomSheetTitleHeader;
           intl = tmp(tmp2[11]).intl;
-          const tmp17 = closure_7(BottomSheetTitleHeader, obj2);
+          const tmp17 = closure_6(BottomSheetTitleHeader, obj2);
           cResult[5] = tmp17;
           tmp14 = tmp17;
         } else {
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
         }
         if (cResult[8] !== tmp18) {
           const obj4 = { variant: "text-sm/normal", color: "text-muted", children: tmp18 };
-          const tmp23 = closure_7(tmp(tmp2[16]).Text, obj4);
+          const tmp23 = closure_6(tmp(tmp2[16]).Text, obj4);
           cResult[8] = tmp18;
           cResult[9] = tmp23;
           tmp21 = tmp23;
@@ -151,10 +151,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
                     }
                     return tmp42;
                   }
-                  const obj5 = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: tmp14, children: closure_7(View, obj6) };
+                  const obj5 = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: tmp14, children: closure_6(View, obj6) };
                   obj6 = { style: content, children: tmp39 };
                   const ActionSheet = tmp(tmp2[20]).ActionSheet;
-                  const tmp45 = closure_7(ActionSheet, obj5);
+                  const tmp45 = closure_6(ActionSheet, obj5);
                   cResult[25] = tmp4.content;
                   cResult[26] = tmp39;
                   cResult[27] = tmp45;
@@ -163,7 +163,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
               }
               const obj7 = { spacing: 16, children: items };
               items = [tmp21, tmp30, tmp36];
-              const tmp41 = closure_8(tmp(tmp2[19]).Stack, obj7);
+              const tmp41 = closure_7(tmp(tmp2[19]).Stack, obj7);
               cResult[21] = tmp36;
               cResult[22] = tmp21;
               cResult[23] = tmp30;
@@ -171,7 +171,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
               tmp39 = tmp41;
             }
             const obj8 = { variant: "primary", text: tmp33, loading: tmp9, onPress: tmp12 };
-            const tmp38 = closure_7(tmp(tmp2[18]).Button, obj8);
+            const tmp38 = closure_6(tmp(tmp2[18]).Button, obj8);
             cResult[18] = tmp12;
             cResult[19] = tmp9;
             cResult[20] = tmp38;
@@ -179,7 +179,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
           }
         }
         const obj9 = { label: tmp24, value, onChange: tmp7, maxLength: 200, disabled: tmp9, errorMessage: tmp27 };
-        const tmp32 = closure_7(tmp(tmp2[17]).TextInput, obj9);
+        const tmp32 = closure_6(tmp(tmp2[17]).TextInput, obj9);
         cResult[13] = value;
         cResult[14] = tmp9;
         cResult[15] = tmp27;
@@ -188,42 +188,24 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
       }
     }
   }
-  const fn = function v() {
-    const tmp = react(true);
-    View(false);
-    let obj = conjureDatabaseLock;
-    const result = obj.withConjureDatabaseLock(projectId, () => closure_2_6(projectId, environment, closure_1_3));
-    const nextPromise = result.then(function(result) {
-      if (null == result) {
-        const _Error = Error;
-        const self = this;
-        const self2 = this;
-        const error = new Error("database busy");
-        throw error;
-      }
-    });
-    nextPromise.then(() => {
-      let intl;
-      const obj = { key: "VIBEGRATIONS_HISTORY_BACKUP_SAVED", content: intl.string(environment(onSaved[12]).OoHJfv) };
-      const open = environment(onSaved[10]).open;
-      environment(onSaved[10]);
-      intl = projectId(onSaved[11]).intl;
-      open(obj);
-      closure_1_2();
-      const obj2 = environment(onSaved[13]);
-      obj2.hideActionSheet(ConjureSaveBackupSheet);
-    }, () => {
-      closure_1_4(false);
-      closure_1_5(true);
-    });
-  };
+  class S {
+    constructor() {
+      tmp = closure_4(true);
+      tmp2 = closure_5(false);
+      obj = closure_0(closure_2[8]);
+      result = obj.withConjureDatabaseLock(projectId, () => { /* body not rendered: F149223 */ });
+      nextPromise = result.then(() => { /* body not rendered: F149224 */ });
+      nextPromise1 = nextPromise.then(() => { /* body not rendered: F149225 */ }, () => { /* body not rendered: F149226 */ });
+      return;
+    }
+  }
   cResult[0] = environment;
   cResult[1] = value;
   cResult[2] = onSaved;
   cResult[3] = projectId;
-  cResult[4] = fn;
-  tmp12 = fn;
-}) : ((projectId) => {
+  cResult[4] = S;
+  tmp12 = S;
+}) : (function ConjureSaveBackupSheet(projectId) {
   let BottomSheetTitleHeader;
   let Stack;
   let _undefined;
@@ -247,7 +229,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   const onSaved = projectId.onSaved;
   let value;
   react = undefined;
-  let tmp = closure_10();
+  let tmp = closure_9();
   const tmp2 = value(react.useState(""), 2);
   value = tmp2[0];
   const tmp4 = tmp2[1];
@@ -261,7 +243,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     const tmp = _undefined(true);
     closure_5(false);
     let obj = conjureDatabaseLock;
-    const result = obj.withConjureDatabaseLock(projectId, () => closure_2_6(projectId, environment, closure_1_3));
+    const result = obj.withConjureDatabaseLock(projectId, () => {
+      const obj = projectId(onSaved[9]);
+      return obj.createDatabaseRestorePoint(closure_1_0, environment, closure_1_3);
+    });
     const nextPromise = result.then(function(result) {
       if (null == result) {
         const _Error = Error;
@@ -273,20 +258,20 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     });
     nextPromise.then(() => {
       let intl;
-      const obj = { key: "VIBEGRATIONS_HISTORY_BACKUP_SAVED", content: intl.string(environment(onSaved[12]).OoHJfv) };
+      const obj = { text: intl.string(environment(onSaved[12]).OoHJfv) };
       const open = environment(onSaved[10]).open;
       environment(onSaved[10]);
       intl = projectId(onSaved[11]).intl;
-      open(obj);
+      open("VIBEGRATIONS_HISTORY_BACKUP_SAVED", obj);
       closure_1_2();
       const obj2 = environment(onSaved[13]);
-      obj2.hideActionSheet(ConjureSaveBackupSheet);
+      obj2.hideActionSheet(ConjureSaveBackupSheet_str);
     }, () => {
       _undefined(false);
       closure_1_5(true);
     });
   }, items);
-  let obj = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: closure_7(BottomSheetTitleHeader, obj2), children: closure_7(tmp14, obj3) };
+  let obj = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: closure_6(BottomSheetTitleHeader, obj2), children: closure_6(tmp14, obj3) };
   const ActionSheet = projectId(onSaved[20]).ActionSheet;
   obj2 = { title: intl.string(environment(onSaved[12]).qywOto) };
   BottomSheetTitleHeader = projectId(onSaved[14]).BottomSheetTitleHeader;
@@ -300,24 +285,24 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   obj5 = { environment: obj6.historyEnvironmentLabel(environment) };
   sXGNm5 = environment(onSaved[12]).sXGNm5;
   obj6 = projectId(onSaved[15]);
-  const items1 = [closure_7(Text, obj4), , ];
+  const items1 = [closure_6(Text, obj4), , ];
   const obj7 = { label: intl3.string(environment(onSaved[12]).WKmhsD), value, onChange: tmp4, maxLength: 200, disabled: tmp6, errorMessage: stringResult };
   const TextInput = projectId(onSaved[17]).TextInput;
   intl3 = projectId(onSaved[11]).intl;
   stringResult = undefined;
   tmp14 = closure_5;
-  tmp15 = closure_8;
+  tmp15 = closure_7;
   if (first1) {
     const intl4 = tmp11(tmp12[11]).intl;
     stringResult = intl4.string(tmp13(tmp12[12]).TOxYEF);
   }
   obj8 = { spacing: 16, children: items1 };
-  items1[1] = closure_7(TextInput, obj7);
+  items1[1] = closure_6(TextInput, obj7);
   const obj9 = { variant: "primary", text: intl5.string(environment(onSaved[12])["5/xCdF"]), loading: tmp6, onPress: callback };
   const Button = tmp11(tmp12[18]).Button;
   intl5 = tmp11(tmp12[11]).intl;
-  items1[2] = closure_7(Button, obj9);
-  return closure_7(ActionSheet, obj);
+  items1[2] = closure_6(Button, obj9);
+  return closure_6(ActionSheet, obj);
 });
 let result = size.fileFinishedImporting("modules/conjure/history/native/ConjureSaveBackupSheet.tsx");
 

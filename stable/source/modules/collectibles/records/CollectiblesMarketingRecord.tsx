@@ -1,14 +1,15 @@
-// Module ID: 7074
-// Function ID: 7075
+// Module ID: 7281
+// Function ID: 7282
 // Name: CollectiblesMarketingRecord
-// Dependencies: [7075, 7077, 7078, 7079, 7076, 2]
+// Dependencies: [7282, 7284, 7285, 7286, 7283, 2]
+// Exports: rehydratePersistedMarketings
 
-// Module 7074 (CollectiblesMarketingRecord)
-import CollectiblesMarketingBadgeRecord from "CollectiblesMarketingBadgeRecord" /* 7075 */;
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7076 */;
-import CollectiblesMarketingBannerRecord from "CollectiblesMarketingBannerRecord" /* 7077 */;
-import CollectiblesMarketingCoachmarkRecord from "CollectiblesMarketingCoachmarkRecord" /* 7078 */;
-import CollectiblesMarketingTabTooltipRecord from "CollectiblesMarketingTabTooltipRecord" /* 7079 */;
+// Module 7281 (CollectiblesMarketingRecord)
+import CollectiblesMarketingBadgeRecord from "CollectiblesMarketingBadgeRecord" /* 7282 */;
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7283 */;
+import CollectiblesMarketingBannerRecord from "CollectiblesMarketingBannerRecord" /* 7284 */;
+import CollectiblesMarketingCoachmarkRecord from "CollectiblesMarketingCoachmarkRecord" /* 7285 */;
+import CollectiblesMarketingTabTooltipRecord from "CollectiblesMarketingTabTooltipRecord" /* 7286 */;
 import size from "module_2" /* 2 */;
 
 let marketings;
@@ -45,3 +46,14 @@ class CollectiblesMarketingsRecord {
 const result = size.fileFinishedImporting("modules/collectibles/records/CollectiblesMarketingRecord.tsx");
 
 export { CollectiblesMarketingsRecord };
+export const rehydratePersistedMarketings = function rehydratePersistedMarketings(arg0) {
+  const tmp = CollectiblesMarketingsRecord;
+  const entries = Object.entries(arg0);
+  if (typeof CollectiblesMarketingsRecord === "function") {
+    const obj = Object.create(tmp.prototype);
+    obj.marketingsBySurfaces = tmp3;
+    return obj;
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
+};

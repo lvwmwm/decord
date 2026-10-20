@@ -1,16 +1,16 @@
-// Module ID: 8588
-// Function ID: 8589
+// Module ID: 13265
+// Function ID: 13266
 // Name: WidgetStore
-// Dependencies: [32, 1377, 7111, 504, 1375, 12, 584, 2]
+// Dependencies: [32, 1390, 7316, 504, 1388, 12, 584, 2]
 
-// Module 8588 (WidgetStore)
+// Module 13265 (WidgetStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1377 */;
-import UserProfileStore from "UserProfileStore" /* 7111 */;
+import UserStore from "UserStore" /* 1390 */;
+import UserProfileStore from "UserProfileStore" /* 7316 */;
 import size from "module_2" /* 2 */;
 
 let map, map1, uniqueKey;

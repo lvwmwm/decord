@@ -1,17 +1,17 @@
-// Module ID: 14554
-// Function ID: 14555
+// Module ID: 15026
+// Function ID: 15027
 // Name: useSafetyHubLoading
-// Dependencies: [8106, 558, 576, 504, 2]
+// Dependencies: [7532, 558, 576, 504, 2]
 
-// Module 14554 (useSafetyHubLoading)
+// Module 15026 (useSafetyHubLoading)
 import react from "react" /* 576 */;
-import SafetyHubStore from "SafetyHubStore" /* 8106 */;
+import SafetyHubStore from "SafetyHubStore" /* 7532 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSafetyHubLoading() {
   let fetching;
   let tmp4;
   let tmp5;
@@ -19,7 +19,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SafetyHubStore];
-    const fn = function n() {
+    const fn = function o() {
       return fetching.isFetching();
     };
     cResult[0] = items;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useIsSafetyHubLoading() {
   let fetching;
   const items = [SafetyHubStore];
   const obj = get_initialized;

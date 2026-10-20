@@ -1,23 +1,23 @@
-// Module ID: 16078
-// Function ID: 16079
+// Module ID: 16594
+// Function ID: 16595
 // Name: FavoritesGuildAddCategoryActionSheet
-// Dependencies: [32, 19, 2065, 21, 4890, 587, 558, 576, 2077, 10035, 4854, 6644, 1126, 6098, 5594, 6645, 2]
+// Dependencies: [32, 19, 2078, 21, 5092, 587, 558, 576, 2090, 10313, 5056, 6839, 1126, 6286, 5379, 6840, 2]
 // Exports: openFavoritesGuildAddCategoryActionSheet
 
-// Module 16078 (FavoritesGuildAddCategoryActionSheet)
+// Module 16594 (FavoritesGuildAddCategoryActionSheet)
 import nativeDefault from "native" /* 587 */;
-import FavoritesConstants from "FavoritesConstants" /* 2065 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4854 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10035 */;
+import FavoritesConstants from "FavoritesConstants" /* 2078 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10313 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
-let BottomSheet, addFavoriteCategoryResult, hideActionSheetResult, importDefault, tmp2, tmp3, tmp6;
+let BottomSheet, importDefault;
 
 let metroImportDefault;
 let metroRequire;
@@ -25,16 +25,15 @@ let obj2;
 let obj3;
 const maxLength = FavoritesConstants.MAX_FAVORITE_CATEGORY_NAME_LENGTH;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-const FavoritesGuildAddCategoryActionSheet = "FavoritesGuildAddCategoryActionSheet";
+const FavoritesGuildAddCategoryActionSheet_str = "FavoritesGuildAddCategoryActionSheet";
 let createStyles = createStyles_mod;
 let obj = { content: obj2, body: obj3 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { gap: nativeDefault.space.PX_16 };
 let closure_9 = createStyles(obj);
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildAddCategoryActionSheet() {
   let body;
-  let closure_1;
   let content;
   let intl;
   let items;
@@ -47,7 +46,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_9();
   [value, tmp7] = react.useState("");
   if (cResult[0] !== value) {
-    const tmpResult = tmp(2077);
+    const tmpResult = tmp(2090);
     const result = tmpResult.isFavoritesGuildCategoryNameValid(value);
     cResult[0] = value;
     cResult[1] = result;
@@ -55,7 +54,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     tmp8 = cResult[1];
   }
-  importDefault = tmp8;
+  let closure_1 = tmp8;
   if (cResult[2] === tmp8) {
     let tmp10;
     let tmp12;
@@ -68,7 +67,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     ({ content, body } = tmp4);
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2 = { title: intl.string(tmp(1126).t["ISN+NM"]) };
-      const BottomSheetTitleHeader = tmp(6644).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
       intl = tmp(1126).intl;
       const tmp14 = closure_6(BottomSheetTitleHeader, obj2);
       cResult[5] = tmp14;
@@ -123,83 +122,42 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
         const obj3 = { contentStyles: content, bodyStyles: body, keyboardShouldPersistTaps: "always", header: tmp12, children: items };
         items = [tmp19, tmp26];
-        const tmp31 = closure_7(tmp(6645).BottomSheet, obj3);
+        const tmp31 = closure_7(tmp(6840).BottomSheet, obj3);
         cResult[15] = tmp4.body;
         cResult[16] = tmp4.content;
         cResult[17] = tmp26;
-        class C {
-          constructor() {
-            tmp = closure_1;
-            if (tmp) {
-              tmp2 = closure_0;
-              tmp3 = closure_2;
-              obj = closure_0(closure_2[9]);
-              tmp4 = closure_0;
-              addFavoriteCategoryResult = obj.addFavoriteCategory(closure_0);
-              tmp6 = closure_1;
-              obj2 = closure_1(closure_2[10]);
-              tmp7 = FavoritesGuildAddCategoryActionSheet;
-              hideActionSheetResult = obj2.hideActionSheet(FavoritesGuildAddCategoryActionSheet);
-            }
-            return;
-          }
-        }
+        cResult[18] = tmp19;
         cResult[19] = tmp31;
         tmp29 = tmp31;
       }
       const obj4 = { text: tmp23, onPress: tmp10, disabled: !tmp8 };
-      const tmp28 = closure_6(tmp(5594).Button, obj4);
+      const tmp28 = closure_6(tmp(5379).Button, obj4);
       cResult[12] = tmp10;
       cResult[13] = !tmp8;
       cResult[14] = tmp28;
       tmp26 = tmp28;
     }
-    const obj5 = { label: tmp15, placeholder: tmp16, value, onChange: tmp7, maxLength: null, autoFocus: true, clearable: true, returnKeyType: "done", onSubmitEditing: tmp10 };
-    class C {
-      constructor() {
-        tmp = closure_1;
-        if (tmp) {
-          tmp2 = closure_0;
-          tmp3 = closure_2;
-          obj = closure_0(closure_2[9]);
-          tmp4 = closure_0;
-          addFavoriteCategoryResult = obj.addFavoriteCategory(closure_0);
-          tmp6 = closure_1;
-          obj2 = closure_1(closure_2[10]);
-          tmp7 = FavoritesGuildAddCategoryActionSheet;
-          hideActionSheetResult = obj2.hideActionSheet(FavoritesGuildAddCategoryActionSheet);
-        }
-        return;
-      }
-    }
-    const tmp22 = closure_6(tmp(6098).TextInput, obj5);
+    const obj5 = { label: tmp15, placeholder: tmp16, value, onChange: tmp7, maxLength, autoFocus: true, clearable: true, returnKeyType: "done", onSubmitEditing: tmp10 };
+    const tmp22 = closure_6(tmp(6286).TextInput, obj5);
     cResult[8] = tmp10;
     cResult[9] = value;
     cResult[10] = tmp22;
     tmp19 = tmp22;
   }
-  class C {
-    constructor() {
-      tmp = closure_1;
-      if (tmp) {
-        tmp2 = closure_0;
-        tmp3 = closure_2;
-        obj = closure_0(closure_2[9]);
-        tmp4 = closure_0;
-        addFavoriteCategoryResult = obj.addFavoriteCategory(closure_0);
-        tmp6 = closure_1;
-        obj2 = closure_1(closure_2[10]);
-        tmp7 = FavoritesGuildAddCategoryActionSheet;
-        hideActionSheetResult = obj2.hideActionSheet(FavoritesGuildAddCategoryActionSheet);
-      }
-      return;
+  const fn = function p() {
+    const tmp = closure_1;
+    if (tmp) {
+      const obj = FavoritesActionCreators;
+      obj.addFavoriteCategory(first);
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.hideActionSheet(FavoritesGuildAddCategoryActionSheet_str);
     }
-  }
+  };
   cResult[2] = tmp8;
   cResult[3] = value;
-  cResult[4] = C;
-  tmp10 = C;
-}) : (() => {
+  cResult[4] = fn;
+  tmp10 = fn;
+}) : (function FavoritesGuildAddCategoryActionSheet() {
   let BottomSheetTitleHeader;
   let intl;
   let intl2;
@@ -211,7 +169,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let value;
   let tmp = closure_9();
   [value, tmp4] = react.useState("");
-  let obj = value(2077);
+  let obj = value(2090);
   const result = obj.isFavoritesGuildCategoryNameValid(value);
   importDefault = result;
   const items = [result, value];
@@ -221,21 +179,21 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj = FavoritesActionCreators;
       obj.addFavoriteCategory(first);
       const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.hideActionSheet(FavoritesGuildAddCategoryActionSheet);
+      obj2.hideActionSheet(FavoritesGuildAddCategoryActionSheet_str);
     }
   }, items);
   let obj2 = { contentStyles: tmp.content, bodyStyles: tmp.body, keyboardShouldPersistTaps: "always", header: closure_6(BottomSheetTitleHeader, obj3), children: items1 };
-  BottomSheet = value(6645).BottomSheet;
+  BottomSheet = value(6840).BottomSheet;
   obj3 = { title: intl.string(value(1126).t["ISN+NM"]) };
-  BottomSheetTitleHeader = value(6644).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = value(6839).BottomSheetTitleHeader;
   intl = value(1126).intl;
   const obj4 = { label: intl2.string(value(1126).t.OCAkGP), placeholder: intl3.string(value(1126).t.eTVbtx), value, onChange: tmp4, maxLength, autoFocus: true, clearable: true, returnKeyType: "done", onSubmitEditing: callback };
-  const TextInput = value(6098).TextInput;
+  const TextInput = value(6286).TextInput;
   intl2 = value(1126).intl;
   intl3 = value(1126).intl;
   items1 = [closure_6(TextInput, obj4), ];
   const obj5 = { text: intl4.string(value(1126).t.CumH4u), onPress: callback, disabled: !result };
-  const Button = value(5594).Button;
+  const Button = value(5379).Button;
   intl4 = value(1126).intl;
   items1[1] = closure_6(Button, obj5);
   return closure_7(BottomSheet, obj2);
@@ -244,6 +202,6 @@ let result = size.fileFinishedImporting("modules/favorites/native/FavoritesGuild
 
 export const openFavoritesGuildAddCategoryActionSheet = function openFavoritesGuildAddCategoryActionSheet() {
   const obj = ActionSheetActionCreators;
-  const obj2 = { content: metroRequire(closure_10, {}), key: FavoritesGuildAddCategoryActionSheet };
+  const obj2 = { content: metroRequire(closure_10, {}), key: FavoritesGuildAddCategoryActionSheet_str };
   obj.showActionSheet(obj2);
 };

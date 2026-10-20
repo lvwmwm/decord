@@ -1,9 +1,9 @@
-// Module ID: 1194
-// Function ID: 1195
+// Module ID: 1206
+// Function ID: 1207
 // Name: SelectivelySyncedUserSettingsStore
 // Dependencies: [1085, 504, 510, 12, 584, 2]
 
-// Module 1194 (SelectivelySyncedUserSettingsStore)
+// Module 1206 (SelectivelySyncedUserSettingsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;

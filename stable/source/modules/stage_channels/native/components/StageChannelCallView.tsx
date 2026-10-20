@@ -1,36 +1,34 @@
-// Module ID: 9725
-// Function ID: 9726
+// Module ID: 11156
+// Function ID: 11157
 // Name: StageChannelCallView
-// Dependencies: [19, 21, 9605, 4890, 558, 576, 1618, 9726, 9727, 4612, 9060, 9728, 2]
+// Dependencies: [19, 21, 11023, 5092, 558, 576, 1631, 11157, 11158, 4850, 10362, 11159, 2]
 
-// Module 9725 (StageChannelCallView)
+// Module 11156 (StageChannelCallView)
 import react2 from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
-import StatusBarDefault from "StatusBar" /* 9060 */;
-import StageChannelAnimationUtils from "StageChannelAnimationUtils" /* 9726 */;
-import StageChannelBackgroundDefault from "StageChannelBackground" /* 9727 */;
-import StageChannelCallListDefault from "StageChannelCallList" /* 9728 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
+import StatusBarDefault from "StatusBar" /* 10362 */;
+import StageChannelAnimationUtils from "StageChannelAnimationUtils" /* 11157 */;
+import StageChannelBackgroundDefault from "StageChannelBackground" /* 11158 */;
+import StageChannelCallListDefault from "StageChannelCallList" /* 11159 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channel;
 
 let c3;
 let closure_4;
 let hasOwnProperty;
 let tmp4;
-const FocusedControls = tmp4(9605);
+const FocusedControls = tmp4(11023);
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = Fragment);
 function CONTROL_PADDING_PX(arg0) {
 
 }
 let closure_7 = createStyles.createStyles({ container: { flex: 1, paddingHorizontal: 12 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannelCallBackground(children) {
   let obj3;
   let tmp6;
   const obj = react2;
@@ -41,7 +39,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const top = useSafeAreaInsetsDefault().top;
   if (cResult[0] !== top) {
     if (typeof CONTROL_PADDING_PX === "function") {
-      const sum = tmp(9605).FOCUSED_CONTROLS_HEADER_HEIGHT + top;
+      const sum = tmp(11023).FOCUSED_CONTROLS_HEADER_HEIGHT + top;
       cResult[0] = top;
       cResult[1] = sum;
       tmp6 = sum;
@@ -79,7 +77,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[3] = tmp4.container;
   cResult[4] = items;
   tmp10 = items;
-}) : ((arg0) => {
+}) : (function StageChannelCallBackground(arg0) {
   let channelId;
   let children;
   let items;
@@ -100,7 +98,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannelCallView(channel) {
   let first;
   let items;
   let tmp7;
@@ -139,7 +137,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[4] = tmp7;
   cResult[5] = tmp12;
   tmp11 = tmp12;
-}) : ((channel) => {
+}) : (function StageChannelCallView(channel) {
   let items;
   channel = channel.channel;
   const obj = { children: items };

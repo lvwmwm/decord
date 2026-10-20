@@ -1,18 +1,18 @@
-// Module ID: 10972
-// Function ID: 10973
+// Module ID: 10600
+// Function ID: 10601
 // Name: BadgeProgressSection
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 10897, 4886, 1126, 10882, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 10588, 5088, 1126, 10572, 2]
 
-// Module 10972 (BadgeProgressSection)
+// Module 10600 (BadgeProgressSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 10882 */;
-import BadgeDetailsUtils from "BadgeDetailsUtils" /* 10897 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 10572 */;
+import BadgeDetailsUtils from "BadgeDetailsUtils" /* 10588 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ obj4 = { flex: 1, gap: nativeDefault.space.PX_8 };
 obj5 = { height: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, overflow: "hidden" };
 obj6 = { height: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeProgressSection(arg0) {
   let badge;
   let currentArtUrl;
   let helperText;
@@ -196,7 +196,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   const section = tmp4.section;
   if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
     const obj6 = { variant: "text-sm/medium", color: "text-default", children: intl.string(intl3.t["2m/g2c"]) };
-    const Text = tmp(4886).Text;
+    const Text = tmp(5088).Text;
     intl = tmp(1126).intl;
     const tmp22 = React3(Text, obj6);
     cResult[18] = tmp22;
@@ -214,7 +214,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   let tmp26 = null != helperText;
   if (tmp26) {
     const obj8 = { variant: "text-sm/medium", "aria-hidden": null != threshold, children: helperText };
-    tmp26 = React3(tmp(4886).Text, obj8);
+    tmp26 = React3(tmp(5088).Text, obj8);
   }
   let tmp29Result = null != threshold;
   if (tmp29Result) {
@@ -263,7 +263,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   tmp7 = tmp19;
   tmp6 = tmp19;
   tmp5 = tmp19;
-}) : (function(arg0) {
+}) : (function BadgeProgressSection(arg0) {
   let badge;
   let currentArtUrl;
   let helperText;
@@ -311,7 +311,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   }
   const obj2 = { style: tmp.section, children: items };
   const obj3 = { variant: "text-sm/medium", color: "text-default", children: intl.string(intl3.t["2m/g2c"]) };
-  const Text = tmp2(4886).Text;
+  const Text = tmp2(5088).Text;
   intl = tmp2(1126).intl;
   items = [React3(Text, obj3), ];
   let tmp9Result = null != currentArtUrl;
@@ -325,7 +325,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   const obj6 = { style: tmp.content, children: items2 };
   if (tmp9Result4) {
     const obj7 = { variant: "text-sm/medium", "aria-hidden": null != threshold, children: helperText };
-    tmp9Result4 = tmp9(tmp2(4886).Text, obj7);
+    tmp9Result4 = tmp9(tmp2(5088).Text, obj7);
   }
   items2 = [tmp9Result4, ];
   let tmp9Result5 = null != threshold;

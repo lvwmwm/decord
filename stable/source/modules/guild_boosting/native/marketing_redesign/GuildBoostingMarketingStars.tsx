@@ -1,11 +1,11 @@
-// Module ID: 13385
-// Function ID: 13386
+// Module ID: 13876
+// Function ID: 13877
 // Name: GuildBoostingMarketingStars
-// Dependencies: [19, 21, 558, 576, 8136, 2]
+// Dependencies: [19, 21, 558, 576, 7572, 2]
 
-// Module 13385 (GuildBoostingMarketingStars)
+// Module 13876 (GuildBoostingMarketingStars)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8136 */;
+import inlineStyles from "inlineStyles" /* 7572 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ const inlineStylesDefault = inlineStyles;
 let c3;
 let closure_4;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StarsBackgroundSvg(arg0) {
   let items;
   let tmp10;
   let tmp11;
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp23 = cResult[10];
   }
   return tmp23;
-}) : ((arg0) => {
+}) : (function StarsBackgroundSvg(arg0) {
   let items;
   const obj = { viewBox: "0 0 336 129", fill: "none", preserveAspectRatio: "xMidYMid", children: items };
   const tmp = inlineStylesDefault;

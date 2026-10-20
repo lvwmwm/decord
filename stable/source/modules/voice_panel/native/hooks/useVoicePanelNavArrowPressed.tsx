@@ -1,16 +1,16 @@
-// Module ID: 17218
-// Function ID: 17219
+// Module ID: 17813
+// Function ID: 17814
 // Name: useVoicePanelNavArrowPressed
-// Dependencies: [19, 11900, 558, 576, 11901, 2]
+// Dependencies: [19, 11972, 558, 576, 11973, 2]
 
-// Module 17218 (useVoicePanelNavArrowPressed)
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11900 */;
+// Module 17813 (useVoicePanelNavArrowPressed)
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11972 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelNavArrowPressed() {
   let controlsSpecs;
   let dismissPanel;
   let focused;
@@ -55,7 +55,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = setFocused;
   cResult[4] = fn;
   tmp3 = fn;
-}) : (() => {
+}) : (function useVoicePanelNavArrowPressed() {
   let controlsSpecs;
   let dismissPanel;
   let setFocused;

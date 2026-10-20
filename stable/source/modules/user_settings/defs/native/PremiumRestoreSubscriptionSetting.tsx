@@ -1,26 +1,26 @@
-// Module ID: 15061
-// Function ID: 15062
+// Module ID: 15541
+// Function ID: 15542
 // Name: PremiumRestoreSubscriptionSetting
-// Dependencies: [1377, 21, 6925, 5708, 1126, 15062, 1987, 558, 576, 504, 1369, 11129, 8313, 2]
+// Dependencies: [1390, 21, 7139, 5300, 1126, 15542, 2000, 558, 576, 504, 1382, 10664, 9031, 2]
 
-// Module 15061 (PremiumRestoreSubscriptionSetting)
+// Module 15541 (PremiumRestoreSubscriptionSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
-import BillingActionCreatorsDefault from "BillingActionCreators" /* 6925 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8313 */;
-import UserStore from "UserStore" /* 1377 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
+import BillingActionCreatorsDefault from "BillingActionCreators" /* 7139 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9031 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasPremiumRestoreSubscriptionSetting() {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function s() {
+    const fn = function n() {
       return currentUser.getCurrentUser();
     };
     cResult[0] = items;
@@ -54,7 +54,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[3];
   }
   return tmp8;
-}) : (() => {
+}) : (function useHasPremiumRestoreSubscriptionSetting() {
   let currentUser;
   const items = [UserStore];
   const obj = get_initialized;

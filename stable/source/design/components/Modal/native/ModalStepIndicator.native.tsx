@@ -1,22 +1,22 @@
-// Module ID: 14273
-// Function ID: 14274
+// Module ID: 14295
+// Function ID: 14296
 // Name: ModalStepIndicator
-// Dependencies: [19, 17, 21, 4890, 558, 576, 587, 4612, 4580, 5597, 1126, 2129, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 587, 4850, 4818, 5378, 1126, 2142, 2]
 
-// Module 14273 (ModalStepIndicator)
+// Module 14295 (ModalStepIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef2129 from "module_2129" /* 2129 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import spring from "spring" /* 5597 */;
+import _modDef2142 from "module_2142" /* 2142 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import spring from "spring" /* 5378 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let isActive, set;
+let set;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
@@ -25,7 +25,7 @@ let closure_7 = createStyles.createStyles({ container: { flexDirection: "row", g
 const __initData = { code: "function ModalStepIndicatorNativeTsx1(){const{interpolate,sharedValue,WIDTH_INACTIVE,WIDTH_ACTIVE,interpolateColor,inactiveColor,activeColor,inactiveOpacity}=this.__closure;return{width:interpolate(sharedValue.get(),[0,1],[WIDTH_INACTIVE,WIDTH_ACTIVE]),backgroundColor:interpolateColor(sharedValue.get(),[0,1],[inactiveColor,activeColor]),opacity:interpolate(sharedValue.get(),[0,1],[inactiveOpacity,1])};}" };
 const __initData2 = { code: "function ModalStepIndicatorNativeTsx2(){const{interpolate,sharedValue,WIDTH_INACTIVE,WIDTH_ACTIVE,interpolateColor,inactiveColor,activeColor,inactiveOpacity}=this.__closure;return{width:interpolate(sharedValue.get(),[0,1],[WIDTH_INACTIVE,WIDTH_ACTIVE]),backgroundColor:interpolateColor(sharedValue.get(),[0,1],[inactiveColor,activeColor]),opacity:interpolate(sharedValue.get(),[0,1],[inactiveOpacity,1])};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((isActive) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StepPill(isActive) {
   let activeColor;
   let inactiveColor;
   let inactiveOpacity;
@@ -66,7 +66,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((isActive) => {
     }
     const effect = token.useEffect(tmp11, tmp12);
     const tmpResult6 = isActive(sharedValue[7]);
-    class D {
+    class S {
       constructor() {
         let items;
         let items1;
@@ -84,10 +84,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((isActive) => {
     }
     let obj2 = { interpolate: isActive(sharedValue[7]).interpolate, sharedValue, WIDTH_INACTIVE: 12, WIDTH_ACTIVE: 36, interpolateColor: isActive(sharedValue[7]).interpolateColor, inactiveColor: token1, activeColor: token, inactiveOpacity: num };
     const useAnimatedStyle = tmpResult6.useAnimatedStyle;
-    D.__closure = obj2;
-    D.__workletHash = 12485955218699;
-    D.__initData = __initData;
-    const animatedStyle = useAnimatedStyle(D);
+    S.__closure = obj2;
+    S.__workletHash = 12485955218699;
+    S.__initData = __initData;
+    const animatedStyle = useAnimatedStyle(S);
     if (cResult[4] === animatedStyle) {
       let tmp18;
       if (cResult[5] === tmp6.stepPill) {
@@ -118,7 +118,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((isActive) => {
   cResult[3] = items1;
   tmp12 = items1;
   tmp11 = fn;
-}) : ((isActive) => {
+}) : (function StepPill(isActive) {
   let num;
   let sharedValue;
   isActive = isActive.isActive;
@@ -160,7 +160,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((isActive) => {
     const result = set(obj.withSpring(num, closure_6));
   }, items);
   const tmp6Result4 = isActive(sharedValue[7]);
-  class T {
+  class I {
     constructor() {
       let items;
       let items1;
@@ -177,15 +177,15 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((isActive) => {
     }
   }
   let obj = { interpolate: tmp6(tmp7[7]).interpolate, sharedValue, WIDTH_INACTIVE: 12, WIDTH_ACTIVE: 36, interpolateColor: tmp6(tmp7[7]).interpolateColor, inactiveColor: token1, activeColor: token, inactiveOpacity: num };
-  T.__closure = obj;
-  T.__workletHash = 7601722423560;
-  T.__initData = __initData2;
-  const animatedStyle = tmp6Result4.useAnimatedStyle(T);
+  I.__closure = obj;
+  I.__workletHash = 7601722423560;
+  I.__initData = __initData2;
+  const animatedStyle = tmp6Result4.useAnimatedStyle(I);
   let items1 = [animatedStyle, tmp5.stepPill];
   return jsx(num(sharedValue[7]).View, { style: items1 });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModalStepIndicator(arg0) {
   let activeColor;
   let currentStep;
   let inactiveColor;
@@ -235,7 +235,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               const _Symbol = Symbol;
               if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
                 const intl = intl2.intl;
-                const stringResult = intl.string(_modDef2129.KUwsC0);
+                const stringResult = intl.string(_modDef2142.KUwsC0);
                 cResult[11] = stringResult;
                 tmp7 = stringResult;
               } else {
@@ -284,7 +284,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = items;
     tmp3 = items;
   }
-}) : ((arg0) => {
+}) : (function ModalStepIndicator(arg0) {
   let activeColor;
   let currentStep;
   let inactiveColor;
@@ -306,7 +306,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       const intl = intl2.intl;
       const range = { min: 1, max: totalSteps, now: currentStep + 1 };
-      return <View accessible accessibilityRole="progressbar" accessibilityLabel={intl.string(_modDef2129.KUwsC0)} accessibilityValue={range} importantForAccessibility="yes" style={tmp.container}>{items}</View>;
+      return <View accessible accessibilityRole="progressbar" accessibilityLabel={intl.string(_modDef2142.KUwsC0)} accessibilityValue={range} importantForAccessibility="yes" style={tmp.container}>{items}</View>;
     }
   }
 });

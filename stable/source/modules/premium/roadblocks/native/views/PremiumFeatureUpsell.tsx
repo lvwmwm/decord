@@ -1,33 +1,33 @@
-// Module ID: 9643
-// Function ID: 9644
+// Module ID: 9531
+// Function ID: 9532
 // Name: PremiumFeatureUpsell
-// Dependencies: [109, 19, 17, 4913, 1379, 1085, 6938, 21, 7483, 4528, 1126, 4890, 587, 558, 576, 9644, 8818, 7487, 8826, 1252, 7480, 9645, 1188, 9646, 9642, 4886, 8313, 5605, 1105, 5597, 5598, 6657, 9101, 7941, 4612, 9647, 2]
+// Dependencies: [109, 19, 17, 5110, 1392, 1085, 7152, 21, 9276, 4769, 1126, 5092, 587, 558, 576, 9457, 9265, 9277, 9532, 1265, 9273, 9515, 1200, 9533, 9534, 5088, 9031, 5391, 1105, 5378, 5382, 6852, 9535, 8390, 4850, 9444, 2]
 
-// Module 9643 (PremiumFeatureUpsell)
+// Module 9531 (PremiumFeatureUpsell)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl7 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumUtils from "PremiumUtils" /* 4528 */;
-import spring from "spring" /* 5597 */;
-import springPresets from "springPresets" /* 5598 */;
-import LinearGradientDefault from "LinearGradient" /* 5605 */;
-import ColorConstants from "ColorConstants" /* 6938 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 7480 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7483 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PremiumUtils from "PremiumUtils" /* 4769 */;
+import spring from "spring" /* 5378 */;
+import springPresets from "springPresets" /* 5382 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
+import ColorConstants from "ColorConstants" /* 7152 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9273 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9276 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, flag, obj1, shouldShow, trackResult;
+let _require, flag, obj1, trackResult;
 
 let c10;
 let c9;
@@ -93,7 +93,7 @@ let closure_17 = createStyles.createStyles((arg0) => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((featureName) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatureUpsellPill(featureName) {
   let items;
   let items1;
   let showShadow;
@@ -243,7 +243,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((featureName) =
                                             constructor() {
                                               const obj = { style: closure_3.gradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? Gradients.PREMIUM_TIER_0 : Gradients.PREMIUM_TIER_2_TRI_COLOR };
                                               const tmp2 = LinearGradientDefault;
-                                              return authStore2(tmp2, obj);
+                                              return syncedClientThemes(tmp2, obj);
                                             }
                                           }
                                           let obj2 = { style: tmp19, children: items };
@@ -263,7 +263,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((featureName) =
                                   constructor() {
                                     const obj = { style: closure_3.gradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? Gradients.PREMIUM_TIER_0 : Gradients.PREMIUM_TIER_2_TRI_COLOR };
                                     const tmp2 = LinearGradientDefault;
-                                    return authStore2(tmp2, obj);
+                                    return syncedClientThemes(tmp2, obj);
                                   }
                                 }
                                 const obj3 = { disabled: loading, shrink: true, style: tmp7.button, size: tmp(tmp2[22]).ButtonSizes.XSMALL, onPress, text: tmp29, color: tmp(tmp2[22]).ButtonColors.GREEN, renderIcon: tmp31, renderLinearGradient: tmp32 };
@@ -282,7 +282,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((featureName) =
                                 constructor() {
                                   const obj = { style: closure_3.gradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? Gradients.PREMIUM_TIER_0 : Gradients.PREMIUM_TIER_2_TRI_COLOR };
                                   const tmp2 = LinearGradientDefault;
-                                  return authStore2(tmp2, obj);
+                                  return syncedClientThemes(tmp2, obj);
                                 }
                               }
                               cResult[36] = tmp7.gradient;
@@ -298,13 +298,13 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((featureName) =
                         let tmpResult;
                         if (closure_4) {
                           const obj2 = { size: "xxs", color: nativeDefault.colors.WHITE, style: items };
-                          const NitroWheelIcon = tmp2(8313).NitroWheelIcon;
+                          const NitroWheelIcon = tmp2(9031).NitroWheelIcon;
                           items = [closure_3.nitroWheelIcon, loading && closure_3.nitroWheelDisabled];
                           tmpResult = tmp(NitroWheelIcon, obj2);
                         } else {
                           const items1 = [closure_3.nitroWheelButton, ];
                           let nitroWheelDisabled = loading;
-                          const NitroWheel = tmp2(1188).NitroWheel;
+                          const NitroWheel = tmp2(1200).NitroWheel;
                           if (loading) {
                             nitroWheelDisabled = closure_3.nitroWheelDisabled;
                           }
@@ -347,7 +347,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((featureName) =
                 constructor() {
                   const obj = { style: closure_3.gradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? Gradients.PREMIUM_TIER_0 : Gradients.PREMIUM_TIER_2_TRI_COLOR };
                   const tmp2 = LinearGradientDefault;
-                  return authStore2(tmp2, obj);
+                  return syncedClientThemes(tmp2, obj);
                 }
               }
               tmp22Result = tmp22(tmp23, obj6);
@@ -391,7 +391,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((featureName) =
   cResult[5] = featureName;
   cResult[6] = fn;
   tmp12 = fn;
-}) : ((featureName) => {
+}) : (function PremiumFeatureUpsellPill(featureName) {
   let _location;
   let items1;
   let items2;
@@ -471,13 +471,13 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((featureName) =
       let tmpResult;
       if (mobileEmojiPickerUpsellRestyleEnabledForFeature) {
         const obj2 = { size: "xxs", color: nativeDefault.colors.WHITE, style: items };
-        const NitroWheelIcon = tmp2(8313).NitroWheelIcon;
+        const NitroWheelIcon = tmp2(9031).NitroWheelIcon;
         items = [closure_3.nitroWheelIcon, loading && closure_3.nitroWheelDisabled];
         tmpResult = tmp(NitroWheelIcon, obj2);
       } else {
         const items1 = [closure_3.nitroWheelButton, ];
         let nitroWheelDisabled = loading;
-        const NitroWheel = tmp2(1188).NitroWheel;
+        const NitroWheel = tmp2(1200).NitroWheel;
         if (loading) {
           nitroWheelDisabled = closure_3.nitroWheelDisabled;
         }
@@ -490,7 +490,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((featureName) =
     renderLinearGradient() {
       const obj = { style: closure_3.gradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? Gradients.PREMIUM_TIER_0 : Gradients.PREMIUM_TIER_2_TRI_COLOR };
       const tmp2 = LinearGradientDefault;
-      return authStore2(tmp2, obj);
+      return syncedClientThemes(tmp2, obj);
     }
   };
   const ShinyButton = tmp(tmp2[22]).ShinyButton;
@@ -528,7 +528,7 @@ animationEnterExit.__closure = obj;
 animationEnterExit.__workletHash = 15470414797897;
 animationEnterExit.__initData = { code: "function animationEnterExit_PremiumFeatureUpsellTsx1(visible,cleanUp){const{withSpring,springStandard}=this.__closure;return{opacity:withSpring(visible,springStandard,'respect-motion-settings',function(finished){cleanUp===null||cleanUp===void 0||cleanUp(finished);})};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((shouldShow) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatureUpsell(shouldShow) {
   let _location;
   let analyticsLocations;
   let closure_4;
@@ -658,7 +658,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((shouldShow) => {
   cResult[7] = tmp10;
   cResult[8] = N;
   cResult[9] = items;
-}) : ((shouldShow) => {
+}) : (function PremiumFeatureUpsell(shouldShow) {
   shouldShow = shouldShow.shouldShow;
   let merged = Object.assign(shouldShow, Object.assign({ shouldShow: 0 }));
   let analyticsLocations;

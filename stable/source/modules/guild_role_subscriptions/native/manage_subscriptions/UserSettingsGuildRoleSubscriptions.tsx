@@ -1,20 +1,20 @@
-// Module ID: 15027
-// Function ID: 15028
+// Module ID: 15507
+// Function ID: 15508
 // Name: UserSettingsGuildRoleSubscriptions
-// Dependencies: [19, 17, 21, 4890, 558, 576, 4886, 1126, 1188, 15028, 15029, 15030, 15033, 15034, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 5088, 1126, 1200, 15508, 15509, 15510, 15513, 15514, 2]
 
-// Module 15027 (UserSettingsGuildRoleSubscriptions)
+// Module 15507 (UserSettingsGuildRoleSubscriptions)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useRestorePurchasesDefault from "useRestorePurchases" /* 15028 */;
-import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 15029 */;
-import LoadingIndicatorDefault from "LoadingIndicator" /* 15033 */;
-import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 15034 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import useRestorePurchasesDefault from "useRestorePurchases" /* 15508 */;
+import useActiveGuildSubscriptionsDefault from "useActiveGuildSubscriptions" /* 15509 */;
+import LoadingIndicatorDefault from "LoadingIndicator" /* 15513 */;
+import ManageSubscriptionCardDefault from "ManageSubscriptionCard" /* 15514 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,8 +23,8 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const native = tmp(1188);
-const GuildRoleSubscriptionsHooks = tmp(15030);
+const native = tmp(1200);
+const GuildRoleSubscriptionsHooks = tmp(15510);
 function renderSectionHeader(section) {
   let tmp = null;
   if (section.section.key === c7) {
@@ -37,7 +37,7 @@ function renderSectionHeader(section) {
 let c7 = "role-subscriptions";
 let closure_8 = createStyles.createStyles({ container: { flex: 1 }, list: { flex: 1 }, listContentContainer: { paddingHorizontal: 16 }, sectionHeader: { paddingVertical: 24 }, sectionSubtitle: { marginTop: 4 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionsSectionHeader() {
   let first;
   let intl;
   let items;
@@ -49,7 +49,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const sectionHeader = tmp4.sectionHeader;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "eyebrow", color: "text-default", children: intl.string(intl3.t["KzCF/6"]) };
-    const Text = tmp(4886).Text;
+    const Text = tmp(5088).Text;
     intl = tmp(1126).intl;
     const tmp7 = hasOwnProperty(Text, obj2);
     cResult[0] = tmp7;
@@ -89,7 +89,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = tmp10;
   cResult[6] = tmp14;
   tmp13 = tmp14;
-}) : (() => {
+}) : (function GuildRoleSubscriptionsSectionHeader() {
   let intl;
   let intl2;
   let items;
@@ -106,7 +106,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroRequire(_false, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const ItemSeparatorComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const ItemSeparatorComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function ItemSeparator() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -118,9 +118,11 @@ const ItemSeparatorComponent = ReactCompilerGating.isReactCompilerEnabled() ? ((
     first = cResult[0];
   }
   return first;
-}) : (() => hasOwnProperty(native.Spacer, { size: 8 }));
+}) : (function ItemSeparator() {
+  return hasOwnProperty(native.Spacer, { size: 8 });
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsGuildRoleSubscriptions() {
   let first;
   let tmp8;
   const obj = react2;
@@ -208,7 +210,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[10] = hasOwnProperty(React3, obj5);
     const tmp19 = hasOwnProperty(React3, obj5);
   }
-}) : (() => {
+}) : (function UserSettingsGuildRoleSubscriptions() {
   let items;
   let obj4;
   let tmp6Result;

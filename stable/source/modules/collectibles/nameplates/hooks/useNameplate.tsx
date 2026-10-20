@@ -1,18 +1,16 @@
-// Module ID: 7888
-// Function ID: 7889
+// Module ID: 8338
+// Function ID: 8339
 // Name: useNameplate
-// Dependencies: [19, 2112, 558, 576, 504, 1977, 2]
+// Dependencies: [19, 2125, 558, 576, 504, 1990, 2]
 
-// Module 7888 (useNameplate)
-import utils from "utils" /* 1977 */;
+// Module 8338 (useNameplate)
+import utils from "utils" /* 1990 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let user;
-
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNameplate(user) {
   let first;
   let guildId;
   const tmp = user;
@@ -92,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[2] = user;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((user) => {
+}) : (function useNameplate(user) {
   user = user.user;
   const guildId = user.guildId;
   const items = [GuildMemberStore];

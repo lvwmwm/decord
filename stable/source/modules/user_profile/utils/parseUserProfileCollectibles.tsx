@@ -1,11 +1,11 @@
-// Module ID: 7120
-// Function ID: 7121
+// Module ID: 7326
+// Function ID: 7327
 // Name: parseUserProfileCollectibles
-// Dependencies: [1980, 2]
+// Dependencies: [1993, 2]
 // Exports: default
 
-// Module 7120 (parseUserProfileCollectibles)
-import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
+// Module 7326 (parseUserProfileCollectibles)
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/utils/parseUserProfileCollectibles.tsx");
@@ -21,7 +21,7 @@ export default function parseUserProfileCollectibles(collectibles) {
     collectibles1 = collectibles.collectibles;
   }
   if (null == collectibles1) {
-    return { collectibles: "Array", profileEffect: "apply", profileFrame: "bm" };
+    return { collectibles: "Array", profileEffect: "code", profileFrame: "Array" };
   } else {
     const items = [];
     collectibles = collectibles.collectibles;
@@ -53,8 +53,8 @@ export default function parseUserProfileCollectibles(collectibles) {
           floorResult = floor(date1.getTime() / 1000);
         }
         tmp = obj2;
-      } else if (tmp7.type === tmp12(1980).CollectiblesItemType.PROFILE_FRAME) {
-        let obj3 = { skuId: tmp7.sku_id, type: tmp12(1980).CollectiblesItemType.PROFILE_FRAME, expiresAt: date2 };
+      } else if (tmp7.type === tmp12(1993).CollectiblesItemType.PROFILE_FRAME) {
+        let obj3 = { skuId: tmp7.sku_id, type: tmp12(1993).CollectiblesItemType.PROFILE_FRAME, expiresAt: date2 };
         date2 = undefined;
         if (null != tmp7.expires_at) {
           let _Date2 = Date;

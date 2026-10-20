@@ -1,12 +1,12 @@
-// Module ID: 15642
-// Function ID: 15643
+// Module ID: 16143
+// Function ID: 16144
 // Name: DesignSystemsLegacyButtonSetting
-// Dependencies: [7634, 1085, 11129, 15643, 2]
+// Dependencies: [7988, 1085, 10664, 16144, 2]
 
-// Module 15642 (DesignSystemsLegacyButtonSetting)
+// Module 16143 (DesignSystemsLegacyButtonSetting)
 import Constants from "Constants" /* 1085 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

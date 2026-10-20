@@ -1,25 +1,25 @@
-// Module ID: 16022
-// Function ID: 16023
+// Module ID: 16538
+// Function ID: 16539
 // Name: MessagesItemAddFriendsWidget
-// Dependencies: [5, 19, 17, 1085, 21, 13097, 587, 4890, 8054, 4567, 1126, 9481, 7255, 558, 576, 4737, 4886, 5909, 13667, 16023, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 12851, 587, 5092, 8492, 4808, 1126, 8678, 8689, 558, 576, 4977, 5088, 6185, 14081, 16539, 2]
 
-// Module 16022 (MessagesItemAddFriendsWidget)
+// Module 16538 (MessagesItemAddFriendsWidget)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import RootNavigationRef from "RootNavigationRef" /* 4737 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Pressables from "Pressables" /* 5909 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8054 */;
-import IconActionButton from "IconActionButton" /* 13097 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13667 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16023 */;
+import RootNavigationRef from "RootNavigationRef" /* 4977 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Pressables from "Pressables" /* 6185 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8492 */;
+import IconActionButton from "IconActionButton" /* 12851 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14081 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16539 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -246,7 +246,7 @@ obj3 = { flexDirection: "row", alignItems: "center", borderRadius: nativeDefault
 obj4 = { paddingHorizontal: nativeDefault.space.PX_8, flexDirection: "row", justifyContent: "flex-end" };
 obj5 = { marginEnd: 0, marginStart: nativeDefault.space.PX_8 };
 let closure_9 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemAddFriendsWidget() {
   let actionIcon;
   let actions;
   let first;
@@ -291,7 +291,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, maxFontSizeMultiplier: 2, children: intl2.string(intl5.t.afcl67) };
-    const Text = tmp(4886).Text;
+    const Text = tmp(5088).Text;
     intl2 = tmp(1126).intl;
     const tmp10 = metroImportDefault(Text, obj2);
     cResult[2] = tmp10;
@@ -379,7 +379,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   cResult[13] = tmp16;
   cResult[14] = tmp31;
   tmp30 = tmp31;
-}) : (() => {
+}) : (function MessagesItemAddFriendsWidget() {
   let Text;
   let intl;
   let intl2;

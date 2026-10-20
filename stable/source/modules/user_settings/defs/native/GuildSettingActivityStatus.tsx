@@ -1,24 +1,24 @@
-// Module ID: 15791
-// Function ID: 15792
+// Module ID: 16298
+// Function ID: 16299
 // Name: GuildSettingActivityStatus
-// Dependencies: [15778, 7634, 558, 576, 2028, 6491, 11129, 1126, 2]
+// Dependencies: [16285, 7988, 558, 576, 2041, 6684, 10664, 1126, 2]
 
-// Module 15791 (GuildSettingActivityStatus)
+// Module 16298 (GuildSettingActivityStatus)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6491 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15778 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6684 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16285 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 let c3;
 ({ getSelectedGuildId: c2, useUserSafetySettingsSelectedGuildStore: c3 } = UserSettingsSafetySelectedGuildStore);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useValue() {
   const obj = react;
   const cResult = obj.c(3);
   const selectedGuildId = _false().selectedGuildId;
@@ -36,7 +36,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = setting;
   cResult[2] = hasItem;
   tmp2 = hasItem;
-}) : (() => {
+}) : (function useValue() {
   const selectedGuildId = _false().selectedGuildId;
   const ActivityRestrictedGuilds = UserSettings.ActivityRestrictedGuilds;
   const setting = ActivityRestrictedGuilds.useSetting();

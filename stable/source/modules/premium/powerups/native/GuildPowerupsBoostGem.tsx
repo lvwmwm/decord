@@ -1,15 +1,15 @@
-// Module ID: 12178
-// Function ID: 12179
+// Module ID: 12262
+// Function ID: 12263
 // Name: GuildPowerupsBoostGem
-// Dependencies: [17, 21, 4890, 587, 558, 576, 12179, 2]
+// Dependencies: [17, 21, 5092, 587, 558, 576, 12263, 2]
 
-// Module 12178 (GuildPowerupsBoostGem)
+// Module 12262 (GuildPowerupsBoostGem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BoostGemDefault from "BoostGem" /* 12179 */;
-import createStyles from "createStyles" /* 4890 */;
+import BoostGemDefault from "BoostGem" /* 12263 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const jsx = Fragment.jsx;
 let obj = { boostGemContainer: size };
 size = { width: 100, height: 100, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_SECONDARY_ALT, alignItems: "center", justifyContent: "center", alignSelf: "center" };
 let closure_5 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsBoostGem(arg0) {
   let gemHeight;
   let gemWidth;
   let style;
@@ -61,7 +61,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp3.boostGemContainer;
   cResult[2] = items;
   tmp4 = items;
-}) : ((arg0) => {
+}) : (function GuildPowerupsBoostGem(arg0) {
   let gemHeight;
   let gemWidth;
   let style;

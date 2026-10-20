@@ -1,20 +1,20 @@
-// Module ID: 12323
-// Function ID: 12324
+// Module ID: 12403
+// Function ID: 12404
 // Name: HubProgressHeader
-// Dependencies: [19, 17, 9492, 11938, 21, 4890, 587, 12320, 1197, 1126, 8895, 4854, 12324, 1987, 12423, 2]
+// Dependencies: [19, 17, 8691, 12010, 21, 5092, 587, 12400, 1209, 1126, 8575, 5056, 12404, 2000, 12527, 2]
 // Exports: default
 
-// Module 12323 (HubProgressHeader)
+// Module 12403 (HubProgressHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 11938 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 12010 */;
 import react from "react" /* 19 */;
-import HubProgressBarConstants from "HubProgressBarConstants" /* 9492 */;
-import createStyles from "createStyles" /* 4890 */;
+import HubProgressBarConstants from "HubProgressBarConstants" /* 8691 */;
+import createStyles from "createStyles" /* 5092 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -71,12 +71,12 @@ export default function HubProgressHeader(guild) {
     obj5 = {
       style: null,
       iconStyle: null,
-      onPress() {
+      onPress: function handlePress() {
           const tmp = flag && nextHubProgressStep === preloaded_user_settings.HubProgressStep.JOIN_GUILD;
           if (!tmp) {
             const obj2 = { guild, analyticsSource: "Directory Channel Header" };
             const obj = ActionSheetActionCreatorsDefault;
-            obj.openLazy(asyncRequire(12324, dependencyMap.paths), React3, obj2);
+            obj.openLazy(asyncRequire(12404, dependencyMap.paths), React3, obj2);
           }
         },
       iconSource: flag(nextHubProgressStep[14]),

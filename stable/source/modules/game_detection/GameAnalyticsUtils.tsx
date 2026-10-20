@@ -1,13 +1,13 @@
-// Module ID: 5019
-// Function ID: 5020
+// Module ID: 7430
+// Function ID: 7431
 // Name: GameAnalyticsUtils
-// Dependencies: [2024, 5020, 1369, 2]
+// Dependencies: [2037, 7431, 1382, 2]
 // Exports: getGameAnalyticsMetadata, getRunningGameAnalytics, isVerifiedGameExecutable, removeExecutablePathPrefix
 
-// Module 5019 (GameAnalyticsUtils)
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 5020 */;
-import DetectableGameStore from "DetectableGameStore" /* 2024 */;
+// Module 7430 (GameAnalyticsUtils)
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7431 */;
+import DetectableGameStore from "DetectableGameStore" /* 2037 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_detection/GameAnalyticsUtils.tsx");
@@ -32,7 +32,7 @@ export const getRunningGameAnalytics = function getRunningGameAnalytics(streamAp
   let str3;
   let subgameMetadata;
   if (null == streamApplication) {
-    return { gameName: "create", gameId: "delete", exe: "Text", distributor: "isReactCompilerEnabled", sku: "__initData", gameMetadata: "items", rawExePath: "__initData" };
+    return { gameName: "code", gameId: "Text", exe: "sk", distributor: "apply", sku: "p", gameMetadata: "Array", rawExePath: "r" };
   } else {
     const str = "exePath" in streamApplication ? streamApplication.exePath : streamApplication.exe;
     const id = streamApplication.id;

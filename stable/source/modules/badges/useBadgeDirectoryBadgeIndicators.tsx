@@ -1,22 +1,22 @@
-// Module ID: 10890
-// Function ID: 10891
+// Module ID: 10581
+// Function ID: 10582
 // Name: useBadgeDirectoryBadgeIndicators
-// Dependencies: [19, 10891, 10889, 7868, 558, 576, 504, 2]
+// Dependencies: [19, 10582, 10580, 8317, 558, 576, 504, 2]
 // Exports: dismissBadgeDirectoryBadgeIndicator, isNewIndicatorBadgeId
 
-// Module 10890 (useBadgeDirectoryBadgeIndicators)
-import BadgeUtils from "BadgeUtils" /* 10889 */;
+// Module 10581 (useBadgeDirectoryBadgeIndicators)
+import BadgeUtils from "BadgeUtils" /* 10580 */;
 import react from "react" /* 19 */;
-import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 10891 */;
+import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 10582 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 let tmp;
-const BadgeDirectoryActionCreators = tmp(7868);
+const BadgeDirectoryActionCreators = tmp(8317);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(badges) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadgeDirectoryBadgeIndicators(badges) {
   let seenBadgeIndicators;
   let stateFromStores;
   let tmp16;
@@ -53,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(badges) {
       tmp8 = tmp11;
     }
     if (cResult[6] !== stateFromStores) {
-      const fn2 = function _(badge_id) {
+      const fn2 = function b(badge_id) {
         badge_id = badge_id.badge_id;
         const BETA_BADGE_IDS = BadgeUtils.BETA_BADGE_IDS;
         const hasItem = BETA_BADGE_IDS.has(badge_id) && !stateFromStores.has(badge_id);
@@ -67,7 +67,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(badges) {
     }
     const _Symbol2 = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn3 = function f(badge_id) {
+      const fn3 = function _(badge_id) {
         return badge_id.badge_id;
       };
       cResult[8] = fn3;
@@ -106,7 +106,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(badges) {
     tmp16 = cResult[10];
   }
   return tmp16;
-}) : ((badges) => {
+}) : (function useBadgeDirectoryBadgeIndicators(badges) {
   let items1;
   let seenBadgeIndicators;
   badges = badges.badges;
@@ -140,7 +140,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(badges) {
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((badgeId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDismissBadgeDirectoryBadgeIndicator(badgeId) {
   let enabled;
   const obj = badgeId(enabled[5]);
   const cResult = obj.c(4);
@@ -155,13 +155,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((badgeId) => {
     }
     const effect = react.useEffect(tmp2, tmp3);
   }
-  const fn = function s() {
+  const fn = function n() {
     const tmp2 = null != badgeId && enabled;
     if (tmp2) {
       const BETA_BADGE_IDS = BadgeUtils.BETA_BADGE_IDS;
       const tmp3 = require;
       if (BETA_BADGE_IDS.has(badgeId)) {
-        const tmp3Result = tmp3(7868);
+        const tmp3Result = tmp3(8317);
         const result = tmp3Result.markBadgeDirectoryBadgeIndicatorSeen(tmp);
       }
     }
@@ -173,7 +173,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((badgeId) => {
   cResult[3] = items;
   tmp3 = items;
   tmp2 = fn;
-}) : ((badgeId) => {
+}) : (function useDismissBadgeDirectoryBadgeIndicator(badgeId) {
   badgeId = badgeId.badgeId;
   const enabled = badgeId.enabled;
   const items = [badgeId, enabled];
@@ -183,7 +183,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((badgeId) => {
       const BETA_BADGE_IDS = BadgeUtils.BETA_BADGE_IDS;
       const tmp3 = require;
       if (BETA_BADGE_IDS.has(badgeId)) {
-        const tmp3Result = tmp3(7868);
+        const tmp3Result = tmp3(8317);
         const result = tmp3Result.markBadgeDirectoryBadgeIndicatorSeen(tmp);
       }
     }

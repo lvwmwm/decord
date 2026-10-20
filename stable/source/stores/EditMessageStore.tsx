@@ -1,15 +1,15 @@
-// Module ID: 7165
-// Function ID: 7166
+// Module ID: 7364
+// Function ID: 7365
 // Name: EditMessageStore
-// Dependencies: [5110, 2028, 7166, 7170, 504, 584, 2]
+// Dependencies: [5432, 2041, 7365, 7369, 504, 584, 2]
 
-// Module 7165 (EditMessageStore)
+// Module 7364 (EditMessageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import MessageParserDefault from "MessageParser" /* 7166 */;
-import SlateUtils from "SlateUtils" /* 7170 */;
-import MessageStore from "MessageStore" /* 5110 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import MessageParserDefault from "MessageParser" /* 7365 */;
+import SlateUtils from "SlateUtils" /* 7369 */;
+import MessageStore from "MessageStore" /* 5432 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, closure_5;

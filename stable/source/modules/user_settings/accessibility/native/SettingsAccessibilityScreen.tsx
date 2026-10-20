@@ -1,24 +1,24 @@
-// Module ID: 15149
-// Function ID: 15150
+// Module ID: 15629
+// Function ID: 15630
 // Name: SettingsAccessibilityScreen
-// Dependencies: [19, 4879, 2029, 7634, 1085, 21, 1126, 2115, 2883, 6885, 6534, 15150, 558, 576, 1490, 573, 11129, 14499, 2]
+// Dependencies: [19, 5081, 2042, 7988, 1085, 21, 1126, 2128, 2958, 7094, 6726, 15630, 558, 576, 1503, 573, 10664, 14970, 2]
 
-// Module 15149 (SettingsAccessibilityScreen)
+// Module 15629 (SettingsAccessibilityScreen)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import intl15 from "intl" /* 1126 */;
-import useNavigation from "useNavigation" /* 1490 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import _modDef2883 from "module_2883" /* 2883 */;
-import openUserSettings from "openUserSettings" /* 6885 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
-import SettingLayoutDefault from "SettingLayout" /* 14499 */;
-import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 15150 */;
+import useNavigation from "useNavigation" /* 1503 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import _modDef2958 from "module_2958" /* 2958 */;
+import openUserSettings from "openUserSettings" /* 7094 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
+import SettingLayoutDefault from "SettingLayout" /* 14970 */;
+import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 15630 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2029 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2042 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -80,7 +80,7 @@ function getAccessibilitySettingScreen(youBarAnimationsOverridden) {
   items2 = [MobileUserSettings.OFFICIAL_MESSAGE_STYLE];
   intl2 = intl15.intl;
   items1[1] = obj4;
-  const obj5 = { settings: items3, subLabel: intl3.format(_modDef2883.L8U56h, obj6) };
+  const obj5 = { settings: items3, subLabel: intl3.format(_modDef2958.L8U56h, obj6) };
   items3 = [MobileUserSettings.DISPLAY_NAME_STYLES_ACCESSIBILITY];
   intl3 = intl15.intl;
   obj6 = {
@@ -163,7 +163,7 @@ function getAccessibilitySettingScreen(youBarAnimationsOverridden) {
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 ({ HelpdeskArticles: metroImportDefault, UserSettingsSections: metroImportAll } = Constants);
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAccessibilityScreen() {
   let animateEmojiOverrideReason;
   let animateStickersOverrideReason;
   let gifAutoPlayOverrideReason;
@@ -193,12 +193,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   ({ gifAutoPlayOverrideReason, animateEmojiOverrideReason, animateStickersOverrideReason } = stateFromStoresObject);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [AccessibilityStore];
-    const fn2 = function c() {
-      return ("respect-motion-settings" === AccessibilityStore.youBarNameplateAnimation || "respect-motion-settings" === AccessibilityStore.youBarAvatarDecoAnimation) && AccessibilityStore.useReducedMotion;
-    };
+    class O {
+      constructor() {
+        return ("respect-motion-settings" === AccessibilityStore.youBarNameplateAnimation || "respect-motion-settings" === AccessibilityStore.youBarAvatarDecoAnimation) && AccessibilityStore.useReducedMotion;
+      }
+    }
     cResult[2] = items1;
-    cResult[3] = fn2;
-    tmp10 = fn2;
+    cResult[3] = O;
+    tmp10 = O;
     tmp9 = items1;
   } else {
     tmp9 = cResult[2];
@@ -216,7 +218,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             tmp13 = cResult[9];
           }
           if (cResult[10] !== tmp13) {
-            const tmp19 = jsx(SettingLayoutDefault, { node: tmp13 });
+            class O {
+              constructor() {
+                return ("respect-motion-settings" === AccessibilityStore.youBarNameplateAnimation || "respect-motion-settings" === AccessibilityStore.youBarAvatarDecoAnimation) && AccessibilityStore.useReducedMotion;
+              }
+            }
+            const tmp19 = jsx(SettingLayoutDefault, { node: null });
             cResult[10] = tmp13;
             cResult[11] = tmp19;
             tmp16 = tmp19;
@@ -239,7 +246,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[8] = stateFromStores;
   cResult[9] = list;
   tmp13 = list;
-}) : (() => {
+}) : (function SettingsAccessibilityScreen() {
   let animateEmojiOverrideReason;
   let stackNavigation;
   let stateFromStores;

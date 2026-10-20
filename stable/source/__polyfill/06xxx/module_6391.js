@@ -1,155 +1,148 @@
 // Module ID: 6391
 // Function ID: 6392
-// Dependencies: [17, 19, 21, 6359, 6392, 6393, 6394]
-// Exports: useSecondaryProps
+// Dependencies: [32, 19, 6392, 6403, 6394, 6407, 6378]
+// Exports: useJSResponderHandler
 
 // Module 6391
-import react2 from "react" /* 19 */;
-import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 6392 */;
-import react3 from "react" /* 6393 */;
-import react_native2 from "react-native" /* 6394 */;
-import react_native3 from "react-native" /* 17 */;
+import SHARED_VALUE_OFFSET from "SHARED_VALUE_OFFSET" /* 6392 */;
+import ComposedGestureName from "ComposedGestureName" /* 6394 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6403 */;
+import _mod6407 from "module_6407" /* 6407 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
-const react = react2;
+const require = globalThis.__r;
+let _require, closure_3, dependencyMap;
 
-let c2;
 let c3;
-({ Animated: c2, RefreshControl: c3 } = react_native3);
-const useMemo = react2.useMemo;
-const jsx = Fragment.jsx;
-
-export const useSecondaryProps = function useSecondaryProps(ListHeaderComponent) {
-  let items5;
-  let tmp;
-  let tmp5Result;
-  ListHeaderComponent = ListHeaderComponent.ListHeaderComponent;
-  const ListHeaderComponentStyle = ListHeaderComponent.ListHeaderComponentStyle;
-  const ListFooterComponent = ListHeaderComponent.ListFooterComponent;
-  const ListFooterComponentStyle = ListHeaderComponent.ListFooterComponentStyle;
-  const ListEmptyComponent = ListHeaderComponent.ListEmptyComponent;
-  const ListEmptyComponentStyle = ListHeaderComponent.ListEmptyComponentStyle;
-  const renderScrollComponent = ListHeaderComponent.renderScrollComponent;
-  const refreshing = ListHeaderComponent.refreshing;
-  const progressViewOffset = ListHeaderComponent.progressViewOffset;
-  const onRefresh = ListHeaderComponent.onRefresh;
-  const data = ListHeaderComponent.data;
-  const refreshControl = ListHeaderComponent.refreshControl;
-  const stickyHeaderConfig = ListHeaderComponent.stickyHeaderConfig;
-  let invertedTransformStyle;
-  if (ListHeaderComponent.inverted) {
-    let tmp3 = ListHeaderComponent;
-    let tmp4 = ListHeaderComponentStyle;
-    let obj = ListHeaderComponent(ListHeaderComponentStyle[3]);
-    invertedTransformStyle = obj.getInvertedTransformStyle(tmp);
-  }
-  const tmp5 = ListEmptyComponentStyle;
-  let items = [onRefresh, refreshing, progressViewOffset, refreshControl];
-  const items1 = [ListHeaderComponent, ListHeaderComponentStyle, invertedTransformStyle];
-  const items2 = [ListFooterComponent, ListFooterComponentStyle, invertedTransformStyle];
-  const tmp6 = ListEmptyComponentStyle(() => {
-    let tmp = refreshControl;
-    if (!tmp) {
-      let tmp3;
-      if (onRefresh) {
-        const _Boolean = Boolean;
-        tmp3 = <_false refreshing={Boolean(refreshing)} progressViewOffset={progressViewOffset} onRefresh={tmp2} />;
-      }
-      tmp = tmp3;
-    }
-    return tmp;
-  }, items);
-  let tmp7 = ListEmptyComponentStyle(() => {
-    let tmp2 = null;
-    if (ListHeaderComponent) {
-      const items = [ListHeaderComponentStyle, invertedTransformStyle];
-      const CompatView = react_native.CompatView;
-      tmp2 = <CompatView style={items}>{react3.getValidComponent(tmp)}</CompatView>;
-    }
-    return tmp2;
-  }, items1);
-  const items3 = [ListEmptyComponent, data, invertedTransformStyle, ListEmptyComponentStyle];
-  const tmp8 = ListEmptyComponentStyle(() => {
-    let tmp2 = null;
-    if (ListFooterComponent) {
-      const items = [ListFooterComponentStyle, invertedTransformStyle];
-      const CompatView = react_native.CompatView;
-      tmp2 = <CompatView style={items}>{react3.getValidComponent(tmp)}</CompatView>;
-    }
-    return tmp2;
-  }, items2);
-  let backdropComponent;
-  const tmp9 = ListEmptyComponentStyle(() => {
-    if (ListEmptyComponent) {
-      let tmp7;
-      const obj = react3;
-      const validComponent = obj.getValidComponent(tmp);
-      const tmp2 = require;
-      if (invertedTransformStyle) {
-        const items = [ListEmptyComponentStyle, tmp5];
-        tmp7 = jsx(tmp2(6392).CompatView, { style: items, children: validComponent });
-      } else {
-        tmp7 = validComponent;
-      }
-      return tmp7;
-    }
-    return null;
-  }, items3);
-  if (stickyHeaderConfig != null) {
-    backdropComponent = stickyHeaderConfig.backdropComponent;
-  }
-  const items4 = [backdropComponent, invertedTransformStyle];
-  let obj2 = {
-    refreshControl: tmp6,
-    renderHeader: tmp7,
-    renderFooter: tmp8,
-    renderEmpty: tmp9,
-    CompatScrollView: tmp5(() => {
-      let forwardRefResult;
-      const CompatAnimatedScroller = react_native2.CompatAnimatedScroller;
-      if (typeof renderScrollComponent === "function") {
-        const tmpResult = react3;
-        if (!tmpResult.isComponentClass(renderScrollComponent)) {
-          forwardRefResult = react.forwardRef((arg0, ref) => {
-            const obj = { ref };
-            const merged = Object.assign(arg0);
-            return renderScrollComponent(obj);
-          });
-          forwardRefResult.displayName = "CustomScrollView";
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+function isSupportedGesture(gestures) {
+  const obj = maybeExtractNativeEvent;
+  if (obj.isComposedGesture(gestures)) {
+    gestures = gestures.gestures;
+    return gestures.some(isSupportedGesture);
+  } else {
+    const type = gestures.type;
+    if (ComposedGestureName.SingleGestureName.Tap !== type) {
+      if (ComposedGestureName.SingleGestureName.LongPress !== type) {
+        if (ComposedGestureName.SingleGestureName.Fling !== type) {
+          if (ComposedGestureName.SingleGestureName.Native !== type) {
+            if (ComposedGestureName.SingleGestureName.Hover !== type) {
+              return false;
+            }
+          }
         }
-        return React2.createAnimatedComponent(forwardRefResult);
       }
-      forwardRefResult = CompatAnimatedScroller;
-      if (renderScrollComponent) {
-        forwardRefResult = tmp3;
-      }
-    }, items5),
-    renderStickyHeaderBackdrop: tmp5Result
-  };
-  items5 = [renderScrollComponent];
-  tmp5Result = tmp5(() => {
-    let backdropComponent1;
-    let getValidComponent;
-    let items;
-    let backdropComponent;
-    if (stickyHeaderConfig != null) {
-      backdropComponent = tmp.backdropComponent;
     }
-    let tmp4Result = null;
-    if (backdropComponent) {
-      const obj = { style: items, children: getValidComponent(backdropComponent1) };
-      items = [{ position: "absolute", inset: 0, pointerEvents: "none" }, invertedTransformStyle];
-      const CompatView = react_native.CompatView;
-      backdropComponent1 = undefined;
-      getValidComponent = react3.getValidComponent;
-      react3;
-      const tmp4 = jsx;
-      if (stickyHeaderConfig != null) {
-        backdropComponent1 = tmp.backdropComponent;
+    return true;
+  }
+}
+({ use: c3, useCallback: closure_4, useEffect: hasOwnProperty, useRef: metroRequire, useState: metroImportDefault } = react);
+let closure_8 = SHARED_VALUE_OFFSET.SHARED_VALUE_OFFSET + 0.5;
+let closure_10 = { code: "function pnpm_useJSResponderHandlerTs1(sharedValues,id,notify){const{runOnJS}=this.__closure;const listener=runOnJS(notify);for(const sharedValue of sharedValues){sharedValue.addListener(id,listener);}}" };
+let closure_11 = { code: "function pnpm_useJSResponderHandlerTs2(sharedValues,id){for(const sharedValue of sharedValues){sharedValue.removeListener(id);}}" };
+
+export const useJSResponderHandler = function useJSResponderHandler(gesture) {
+  let closure_1;
+  let closure_2;
+  let first;
+  _require = gesture;
+  let tmp = closure_3(require("module_6407").JSResponderContext);
+  dependencyMap = tmp;
+  [first, _slicedToArray] = closure_7(0);
+  const tmp4 = closure_6(null);
+  closure_3 = tmp4;
+  if (null === tmp4.current) {
+    closure_8 = tmp6 + 1;
+    tmp4.current = +closure_8;
+  }
+  const items = [gesture];
+  closure_5(() => {
+    let runOnJS;
+    const Reanimated = gesture(closure_1[6]).Reanimated;
+    const obj = gesture(closure_1[2]);
+    const enabledSharedValues = obj.getEnabledSharedValues(Reanimated);
+    if (undefined !== Reanimated) {
+      if (0 !== enabledSharedValues.length) {
+        let tmp = runOnJS;
+        const current = runOnJS.current;
+        if (null !== current) {
+          runOnJS = Reanimated.runOnJS;
+          const fn = function o(arg0, arg1, arg2) {
+            const tmp = runOnJS(arg2);
+            const iter = arg0[Symbol.iterator]();
+            const nextResult = iter.next();
+            while (iter !== undefined) {
+              let addListenerResult = nextResult.addListener(arg1, tmp);
+              continue;
+            }
+          };
+          const obj2 = { runOnJS };
+          fn.__closure = obj2;
+          fn.__workletHash = 3030529712101;
+          fn.__initData = __initData;
+          const fn2 = function l(arg0, arg1) {
+            const iter = arg0[Symbol.iterator]();
+            const nextResult = iter.next();
+            while (iter !== undefined) {
+              let removeListenerResult = nextResult.removeListener(arg1);
+              continue;
+            }
+          };
+          fn2.__closure = {};
+          fn2.__workletHash = 3663767498079;
+          fn2.__initData = __initData2;
+          Reanimated.runOnUI(fn)(enabledSharedValues, current, () => {
+            current((arg0) => arg0 + 1);
+          });
+          return () => {
+            Reanimated.runOnUI(fn2)(enabledSharedValues, current);
+          };
+        }
       }
-      tmp4Result = tmp4(CompatView, obj);
     }
-    return tmp4Result;
-  }, items4);
-  return obj2;
+  }, items);
+  const items1 = [first, gesture];
+  const tmp8 = closure_4(() => {
+    const obj = maybeExtractNativeEvent;
+    let isGestureEnabledResult = obj.isGestureEnabled(gesture);
+    if (isGestureEnabledResult) {
+      let flag;
+      const tmpResult = maybeExtractNativeEvent;
+      if (tmpResult.isComposedGesture(gesture)) {
+        const gestures = tmp3.gestures;
+        flag = gestures.some(isSupportedGesture);
+      } else {
+        const type = tmp3.type;
+        if (ComposedGestureName.SingleGestureName.Tap !== type) {
+          if (ComposedGestureName.SingleGestureName.LongPress !== type) {
+            if (ComposedGestureName.SingleGestureName.Fling !== type) {
+              if (ComposedGestureName.SingleGestureName.Native !== type) {
+                flag = false;
+              }
+            }
+          }
+        }
+        flag = true;
+      }
+      isGestureEnabledResult = flag;
+    }
+    return isGestureEnabledResult;
+  }, items1);
+  closure_4 = tmp8;
+  const items2 = [tmp, tmp8];
+  let handleStartShouldSetResponder = closure_4(() => {
+    if (closure_4()) {
+      const obj = _mod6407;
+      const result = obj.updateResponderEventValue(closure_1, true);
+    }
+    return false;
+  }, items2);
+  if (null == tmp) {
+    handleStartShouldSetResponder = () => false;
+  }
+  return { handleStartShouldSetResponder };
 };

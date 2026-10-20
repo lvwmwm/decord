@@ -1,21 +1,21 @@
-// Module ID: 17491
-// Function ID: 17492
+// Module ID: 18088
+// Function ID: 18089
 // Name: EntityVersionsManager
-// Dependencies: [5638, 5687, 2051, 2106, 2074, 5436, 3, 6613, 584, 504, 7135, 1251, 11, 2]
+// Dependencies: [5987, 6030, 2065, 2119, 2087, 5757, 3, 6808, 584, 504, 7335, 1264, 11, 2]
 
-// Module 17491 (EntityVersionsManager)
+// Module 18088 (EntityVersionsManager)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildsRequiringDeletedIdsSyncDefault from "GuildsRequiringDeletedIdsSync" /* 7135 */;
-import EmojiStore from "EmojiStore" /* 5638 */;
-import StickersStore from "StickersStore" /* 5687 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import GuildsRequiringDeletedIdsSyncDefault from "GuildsRequiringDeletedIdsSync" /* 7335 */;
+import EmojiStore from "EmojiStore" /* 5987 */;
+import StickersStore from "StickersStore" /* 6030 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, set, set2, set3, socket, sortedRoles;
@@ -44,7 +44,7 @@ function handleDeletedEntityIds(guild_id) {
         let obj3;
         if (!set.has(id)) {
           const obj2 = { type: "CHANNEL_DELETE", channel: obj3 };
-          obj3 = { guild_id: guild_id2, id, parent_id: "Array" };
+          obj3 = { guild_id: guild_id2, id, parent_id: "r" };
           const obj = guild_id(closure_2_1[8]);
           obj.dispatch(obj2);
         }
@@ -52,7 +52,6 @@ function handleDeletedEntityIds(guild_id) {
     }
     if (null != guild_id.roles) {
       guild_id = tmp.guild_id;
-      let tmp2 = globalThis;
       const _Set = Set;
       const self = this;
       const self2 = this;
@@ -205,7 +204,7 @@ function handleGuildCreate(guild) {
     }, Math.ceil(2000 * Math.random()));
   }
 }
-let tmp2 = new LoggerDefault("EntityVersionsManager");
+const tmp2 = new LoggerDefault("EntityVersionsManager");
 let closure_8 = tmp2;
 class EntityVersionsManager extends AutomaticLifecycleManager {
   constructor() {

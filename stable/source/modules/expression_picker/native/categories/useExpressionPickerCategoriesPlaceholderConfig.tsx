@@ -1,25 +1,25 @@
-// Module ID: 9967
-// Function ID: 9968
+// Module ID: 9573
+// Function ID: 9574
 // Name: useExpressionPickerCategoriesPlaceholderConfig
-// Dependencies: [19, 1085, 4890, 587, 558, 576, 6559, 2]
+// Dependencies: [19, 1085, 5092, 587, 558, 576, 6751, 2]
 
-// Module 9967 (useExpressionPickerCategoriesPlaceholderConfig)
+// Module 9573 (useExpressionPickerCategoriesPlaceholderConfig)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const FastestListPropsPlaceholder = tmp(6559);
+const FastestListPropsPlaceholder = tmp(6751);
 const CATEGORY_ICON_SIZE = Constants.CATEGORY_ICON_SIZE;
 let obj = { placeholder: obj2 };
 obj2 = { color: nativeDefault.colors.BACKGROUND_MOD_STRONG, opacity: 0.5 };
 let closure_4 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExpressionPickerCategoriesPlaceholderConfig() {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp4 = closure_4();
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = tmp4.placeholder.opacity;
   cResult[2] = obj2;
   tmp5 = obj2;
-}) : (() => {
+}) : (function useExpressionPickerCategoriesPlaceholderConfig() {
   const tmp = closure_4();
   let closure_0 = tmp;
   const items = [tmp];

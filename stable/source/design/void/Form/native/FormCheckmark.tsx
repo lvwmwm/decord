@@ -1,9 +1,9 @@
-// Module ID: 6642
-// Function ID: 6643
+// Module ID: 6837
+// Function ID: 6838
 // Name: FormCheckmark
-// Dependencies: [19, 21, 558, 576, 6628, 587, 2]
+// Dependencies: [19, 21, 558, 576, 6823, 587, 2]
 
-// Module 6642 (FormCheckmark)
+// Module 6837 (FormCheckmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,12 +11,10 @@ import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let selected;
-
 let tmp;
-const CheckmarkSmallIcon2 = tmp(6628);
+const CheckmarkSmallIcon2 = tmp(6823);
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RowCheckmark(selected) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -34,7 +32,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((selected) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((selected) => {
+}) : (function RowCheckmark(selected) {
   let tmp = null;
   if (selected.selected) {
     const CheckmarkSmallIcon = CheckmarkSmallIcon2.CheckmarkSmallIcon;

@@ -1,21 +1,21 @@
-// Module ID: 14870
-// Function ID: 14871
+// Module ID: 15348
+// Function ID: 15349
 // Name: BountiesNuxPromoSheet
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4854, 14869, 1126, 14871, 5594, 10045, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5056, 15347, 1126, 15349, 5379, 10325, 2]
 
-// Module 14870 (BountiesNuxPromoSheet)
+// Module 15348 (BountiesNuxPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import PromoSheet2 from "PromoSheet" /* 10045 */;
-import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 14869 */;
-import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 14871 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import PromoSheet2 from "PromoSheet" /* 10325 */;
+import openBountiesNuxPromoSheet from "openBountiesNuxPromoSheet" /* 15347 */;
+import BountiesPosterSpotIllustration from "BountiesPosterSpotIllustration" /* 15349 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ const jsx = Fragment.jsx;
 let obj = { illustrationContainer: obj2 };
 obj2 = { paddingTop: nativeDefault.space.PX_12 };
 let closure_6 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesNuxPromoSheet() {
   let first;
   let tmp10;
   let tmp13;
@@ -75,7 +75,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp13 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const Button = tmp(5594).Button;
+    const Button = tmp(5379).Button;
     const intl3 = tmp(1126).intl;
     const tmp19 = <Button grow size="lg" variant="primary" text={intl3.string(intl4.t.cpT0Cq)} onPress={first} />;
     cResult[6] = tmp19;
@@ -92,7 +92,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp20 = cResult[8];
   }
   return tmp20;
-}) : (() => {
+}) : (function BountiesNuxPromoSheet() {
   let intl3;
   const tmp = closure_6();
   const callback = react.useCallback(() => {

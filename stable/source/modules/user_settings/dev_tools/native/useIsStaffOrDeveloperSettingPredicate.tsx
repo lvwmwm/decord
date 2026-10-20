@@ -1,17 +1,17 @@
-// Module ID: 14650
-// Function ID: 14651
+// Module ID: 15126
+// Function ID: 15127
 // Name: useIsStaffOrDeveloperSettingPredicate
-// Dependencies: [7204, 558, 576, 504, 2]
+// Dependencies: [7404, 558, 576, 504, 2]
 
-// Module 14650 (useIsStaffOrDeveloperSettingPredicate)
+// Module 15126 (useIsStaffOrDeveloperSettingPredicate)
 import react from "react" /* 576 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7204 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7404 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStaffOrDeveloperSettingPredicate() {
   let isDeveloper;
   let tmp4;
   let tmp5;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useStaffOrDeveloperSettingPredicate() {
   let isDeveloper;
   const items = [DeveloperExperimentStore];
   const obj = get_initialized;

@@ -1,14 +1,14 @@
-// Module ID: 17916
-// Function ID: 17917
+// Module ID: 18547
+// Function ID: 18548
 // Name: GuildSettingsRoleSubscriptionsGroupEdit
-// Dependencies: [5, 32, 19, 17, 1360, 21, 558, 576, 1490, 15030, 17917, 17876, 6471, 17918, 12, 6010, 6880, 1126, 4567, 587, 17920, 17925, 17929, 2]
+// Dependencies: [5, 32, 19, 17, 1373, 21, 558, 576, 1503, 15510, 18548, 18507, 6665, 18549, 12, 6201, 7089, 1126, 4808, 587, 18551, 18556, 18560, 2]
 
-// Module 17916 (GuildSettingsRoleSubscriptionsGroupEdit)
+// Module 18547 (GuildSettingsRoleSubscriptionsGroupEdit)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ApplicationConstants from "ApplicationConstants" /* 1360 */;
-import ToastUtils from "ToastUtils" /* 4567 */;
-import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 17929 */;
+import ApplicationConstants from "ApplicationConstants" /* 1373 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 18560 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -16,7 +16,7 @@ import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let _require, c1, c2, closure_12, guildId, navigation;
+let _require, c1, c2, navigation;
 
 let c10;
 let c9;
@@ -25,7 +25,7 @@ const ScrollView = react_native.ScrollView;
 const ApplicationTypes = ApplicationConstants.ApplicationTypes;
 ({ jsx: c9, jsxs: c10 } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
   let closure_5;
   let first;
   let first1;
@@ -112,7 +112,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                   if (cResult[11] === updateSubscriptionsSettings) {
                     tmp28 = cResult[12];
                   }
-                  closure_12 = tmp28;
+                  let closure_12 = tmp28;
                   if (cResult[13] === tmp28) {
                     if (cResult[14] === tmp19) {
                       if (cResult[15] === loading) {
@@ -341,7 +341,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                       }
                     }
                   }
-                  const fn2 = function k() {
+                  let fn = function k() {
                     let fn;
                     let onPress;
                     const setOptions = navigation.setOptions;
@@ -368,10 +368,10 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
                   cResult[14] = tmp19;
                   cResult[15] = loading;
                   cResult[16] = navigation;
-                  cResult[17] = fn2;
+                  cResult[17] = fn;
                   cResult[18] = items2;
                   tmp32 = items2;
-                  tmp31 = fn2;
+                  tmp31 = fn;
                 }
               }
             }
@@ -473,13 +473,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
         }
       }
-      let fn = function() {
+      function t3() {
         return closure_0(...arguments);
-      };
+      }
       cResult[10] = undefined;
       cResult[11] = updateSubscriptionsSettings;
-      cResult[12] = fn;
-      tmp28 = fn;
+      cResult[12] = t3;
+      tmp28 = t3;
     }
   }
   let tmp23 = first;
@@ -561,7 +561,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[3] = subscriptionsSettings;
   cResult[4] = tmp23;
   tmp22 = tmp23;
-}) : ((guildId) => {
+}) : (function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
   let closure_5;
   let items3;
   guildId = guildId.guildId;
@@ -774,7 +774,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   return tmp27(tmp28, obj6);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleSubscriptionsGroupEdit(guildId) {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(5);
@@ -800,7 +800,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[3] = tmp3;
   cResult[4] = tmp8;
   tmp7 = tmp8;
-}) : ((guildId) => {
+}) : (function GuildSettingsRoleSubscriptionsGroupEdit(guildId) {
   guildId = guildId.guildId;
   const obj = { guildId, children: React4(closure_11, { guildId }) };
   const tmp = GuildSettingsRoleSubscriptionContainerDefault;

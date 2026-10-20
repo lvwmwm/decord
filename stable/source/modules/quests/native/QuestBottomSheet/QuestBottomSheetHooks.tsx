@@ -1,35 +1,35 @@
-// Module ID: 14927
-// Function ID: 14928
+// Module ID: 15407
+// Function ID: 15408
 // Name: QuestBottomSheetHooks
-// Dependencies: [5, 19, 5623, 558, 576, 14900, 14923, 4854, 10916, 14928, 7224, 7213, 7223, 5630, 7212, 5626, 7202, 2]
+// Dependencies: [5, 19, 5972, 558, 576, 15379, 15403, 5056, 9197, 15408, 9169, 9170, 9173, 5979, 7411, 5975, 7402, 2]
 
-// Module 14927 (QuestBottomSheetHooks)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import QuestConstants from "QuestConstants" /* 5623 */;
-import QuestTypes from "QuestTypes" /* 5626 */;
-import AdCreativeType from "AdCreativeType" /* 5630 */;
-import AnalyticsActions from "AnalyticsActions" /* 7202 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 7213 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7223 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7224 */;
-import openVideoQuestModalDefault from "openVideoQuestModal" /* 14928 */;
+// Module 15407 (QuestBottomSheetHooks)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
+import QuestTypes from "QuestTypes" /* 5975 */;
+import AdCreativeType from "AdCreativeType" /* 5979 */;
+import AnalyticsActions from "AnalyticsActions" /* 7402 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7411 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9169 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9170 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9173 */;
+import openVideoQuestModalDefault from "openVideoQuestModal" /* 15408 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c1, dependencyMap, questId;
+let c1, dependencyMap;
 
 let _asyncToGenerator = _asyncToGenerator_mod;
 const QuestDockMode = QuestConstants.QuestDockMode;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDismissSheetOrCollapseDock() {
   let setRestingQuestDockMode;
   let obj = setRestingQuestDockMode(576);
   const cResult = obj.c(3);
-  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(14900).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(14923).QuestBottomSheetContext).isInQuestBottomSheet;
+  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(15379).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(15403).QuestBottomSheetContext).isInQuestBottomSheet;
   if (cResult[0] === isInQuestBottomSheet) {
     let tmp2;
     if (cResult[1] === setRestingQuestDockMode) {
@@ -50,10 +50,10 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = setRestingQuestDockMode;
   cResult[2] = fn;
   tmp2 = fn;
-}) : (() => {
+}) : (function useDismissSheetOrCollapseDock() {
   let setRestingQuestDockMode;
-  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(14900).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(14923).QuestBottomSheetContext).isInQuestBottomSheet;
+  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(15379).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(15403).QuestBottomSheetContext).isInQuestBottomSheet;
   const items = [isInQuestBottomSheet, setRestingQuestDockMode];
   return react.useCallback(() => {
     const tmp = isInQuestBottomSheet;
@@ -66,7 +66,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWatchTaskPressHandler(questId) {
   let closure_2;
   let obj = questId(576);
   const cResult = obj.c(5);
@@ -74,7 +74,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
   const sourceQuestContent = questId.sourceQuestContent;
   const tmp2 = closure_6();
   dependencyMap = tmp2;
-  const obj2 = questId(10916);
+  const obj2 = questId(9197);
   const questImpression = obj2.useQuestImpression();
   if (cResult[0] === tmp2) {
     if (cResult[1] === questImpression) {
@@ -136,13 +136,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
   cResult[3] = sourceQuestContent;
   cResult[4] = fn;
   tmp4 = fn;
-}) : ((questId) => {
+}) : (function useWatchTaskPressHandler(questId) {
   let closure_2;
   questId = questId.questId;
   const sourceQuestContent = questId.sourceQuestContent;
   const tmp = closure_6();
   dependencyMap = tmp;
-  let obj = questId(10916);
+  let obj = questId(9197);
   const questImpression = obj.useQuestImpression();
   const items = [questId, tmp, questImpression, sourceQuestContent];
   return react.useCallback(() => {
@@ -190,7 +190,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobileActivityPressHandler(questId) {
   let closure_3;
   let launchMobileActivity;
   let obj = questId(launchMobileActivity[4]);
@@ -300,17 +300,17 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
       }
     }
   });
-  const fn = function() {
+  function t0() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = tmp2;
   cResult[1] = questImpression;
   cResult[2] = launchMobileActivity;
   cResult[3] = questId;
   cResult[4] = sourceQuestContent;
-  cResult[5] = fn;
-  tmp4 = fn;
-}) : ((questId) => {
+  cResult[5] = t0;
+  tmp4 = t0;
+}) : (function useMobileActivityPressHandler(questId) {
   let closure_3;
   questId = questId.questId;
   const sourceQuestContent = questId.sourceQuestContent;

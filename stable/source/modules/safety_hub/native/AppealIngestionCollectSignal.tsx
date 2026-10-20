@@ -1,22 +1,22 @@
-// Module ID: 11513
-// Function ID: 11514
+// Module ID: 11502
+// Function ID: 11503
 // Name: AppealIngestionCollectSignal
-// Dependencies: [19, 17, 8093, 21, 4890, 587, 558, 576, 4594, 8092, 8895, 11492, 584, 4854, 11514, 1987, 1126, 11498, 4886, 2]
+// Dependencies: [19, 17, 7508, 21, 5092, 587, 558, 576, 4832, 7507, 8575, 11475, 584, 5056, 11503, 2000, 1126, 11481, 5088, 2]
 // Exports: default
 
-// Module 11513 (AppealIngestionCollectSignal)
+// Module 11502 (AppealIngestionCollectSignal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import react_native2 from "react-native" /* 4594 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8092 */;
-import Form2 from "Form" /* 8895 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import react_native2 from "react-native" /* 4832 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7507 */;
+import Form2 from "Form" /* 8575 */;
 import react from "react" /* 19 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8093 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7508 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const ActionSheetActionCreatorsDefault = tmp(4854);
+const ActionSheetActionCreatorsDefault = tmp(5056);
 const View = react_native.View;
 ({ AppealIngestionSignal: closure_4, AppealIngestionSignalOrder: hasOwnProperty } = SafetyHubConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -39,7 +39,7 @@ obj2 = { marginBottom: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE
 createStyles = createStyles.createStyles;
 obj3 = { paddingVertical: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 let closure_8 = createStyles(obj);
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((signal) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealSignalRadioRow(signal) {
   let accessibilityRole;
   let accessibilityState;
   let onSelect;
@@ -117,19 +117,25 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((signal) => {
     cResult[12] = accessibilityState;
     cResult[13] = rowStyle;
     cResult[14] = tmp8;
-    cResult[15] = tmp11;
+    class R {
+      constructor() {
+        return onSelect(signal);
+      }
+    }
     cResult[16] = tmp12;
     cResult[17] = tmp17;
     tmp15 = tmp17;
   }
-  const fn = function u() {
-    return onSelect(signal);
-  };
+  class R {
+    constructor() {
+      return onSelect(signal);
+    }
+  }
   cResult[6] = onSelect;
   cResult[7] = signal;
-  cResult[8] = fn;
-  tmp11 = fn;
-}) : ((signal) => {
+  cResult[8] = R;
+  tmp11 = R;
+}) : (function AppealSignalRadioRow(signal) {
   let Label;
   let accessibilityRole;
   let accessibilityState;
@@ -195,23 +201,23 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
           }
       };
       const tmpResult = ActionSheetActionCreatorsDefault;
-      tmpResult.openLazy(asyncRequire(11514, tmp2.paths), "AppealIngestionFreeTextAppealReasonActionSheet", obj3);
+      tmpResult.openLazy(asyncRequire(11503, tmp2.paths), "AppealIngestionFreeTextAppealReasonActionSheet", obj3);
     }
   }
   let tmp = closure_8();
   const formRow = tmp;
-  let obj = isDsaEligible(11492);
+  let obj = isDsaEligible(11475);
   dependencyMap = obj.useSafetyHubAppealSignal();
   const intl = isDsaEligible(1126).intl;
   const stringResult = intl.string(isDsaEligible(1126).t["C5q+pW"]);
   const intl2 = isDsaEligible(1126).intl;
   let obj2 = { children: items };
   const stringResult1 = intl2.string(isDsaEligible(1126).t.VEcRhw);
-  const AppealIngestionModalScreen = isDsaEligible(11498).AppealIngestionModalScreen;
-  items = [closure_6(isDsaEligible(11498).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
+  const AppealIngestionModalScreen = isDsaEligible(11481).AppealIngestionModalScreen;
+  items = [closure_6(isDsaEligible(11481).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), ];
   let obj3 = { style: tmp.container, children: closure_7(Form, obj4) };
   obj4 = { style: tmp.form, children: items1 };
-  Form = isDsaEligible(8895).Form;
+  Form = isDsaEligible(8575).Form;
   const obj5 = {
     sectionBodyStyle: tmp.formSection,
     accessibilityRole: "radiogroup",
@@ -220,11 +226,11 @@ export default function AppealIngestionCollectSignal(isDsaEligible) {
       return metroRequire(closure_9, obj, "formrow-" + index);
     })
   };
-  const FormSection = isDsaEligible(8895).FormSection;
+  const FormSection = isDsaEligible(8575).FormSection;
   items1 = [closure_6(FormSection, obj5), ];
   const obj6 = { style: tmp.disclaimer, children: closure_6(Text, obj7) };
   obj7 = { variant: "text-sm/normal", children: intl3.format(isDsaEligible(1126).t["8k9GCW"], {}) };
-  Text = isDsaEligible(4886).Text;
+  Text = isDsaEligible(5088).Text;
   intl3 = isDsaEligible(1126).intl;
   items1[1] = closure_6(handleAppealSignalSelect, obj6);
   items[1] = closure_6(handleAppealSignalSelect, obj3);

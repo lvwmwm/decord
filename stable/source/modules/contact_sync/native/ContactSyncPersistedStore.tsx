@@ -1,24 +1,19 @@
-// Module ID: 12328
-// Function ID: 12329
+// Module ID: 12408
+// Function ID: 12409
 // Name: ContactSyncPersistedStore
-// Dependencies: [510, 1259, 584, 570, 2]
+// Dependencies: [510, 1272, 584, 570, 2]
 // Exports: clearDismissState, deleteStoredContacts, dismissDMListCTA, dismissUpsellCTA, setDMListCTAFirstSeenDate, setStoredContacts
 
-// Module 12328 (ContactSyncPersistedStore)
+// Module 12408 (ContactSyncPersistedStore)
 import Storage4 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import react_native from "react-native" /* 1259 */;
+import react_native from "react-native" /* 1272 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f111402 = () => {
-  const obj = DispatcherDefault;
-  const obj2 = { type: "CONTACT_SYNC_STORED_CONTACTS", empty: "" === closure_0 };
-  return obj.dispatch(obj2);
-};
 const V2_DCD_CONTACTS_STORAGE_KEY = "V2_DCD_CONTACTS_STORAGE_KEY";
 const ContactSyncUpsellCTADismissed = "ContactSyncUpsellCTADismissed";
 const ContactSyncDMListCTADismissed = "ContactSyncDMListCTADismissed";
@@ -39,8 +34,9 @@ Storage.asyncGet("V2_DCD_CONTACTS_STORAGE_KEY", async (arg0) => {
       return obj;
     });
   });
-  let obj2 = DispatcherDefault;
-  obj2.wait(f111402);
+  const obj2 = DispatcherDefault;
+  const obj3 = { type: "CONTACT_SYNC_STORED_CONTACTS", empty: "" === arg0 };
+  obj2.dispatch(obj3);
 });
 const useContactSyncStore = module_570.create(() => ({ loadedPolicyNotice: false, storedContacts: "", upsellCTADismissed: false, policyUpdateNoticeDismissed: false, dmListCTADismissed: false }));
 let Storage2 = Storage4.Storage;
@@ -57,7 +53,7 @@ Storage2.asyncGet("ContactSyncDMListCTADismissed", async (arg0) => {
   if (Date.now() - timestamp > 5184000000) {
     _require = true;
   }
-  const tmpResult = tmp(1259);
+  const tmpResult = tmp(1272);
   tmpResult.batchUpdates(() => {
     const obj = { dmListCTADismissed };
     return obj.setState(obj);
@@ -90,7 +86,8 @@ export const setStoredContacts = function setStoredContacts(arg0) {
     });
   });
   const obj2 = DispatcherDefault;
-  obj2.wait(f111402);
+  const obj3 = { type: "CONTACT_SYNC_STORED_CONTACTS", empty: "" === arg0 };
+  obj2.dispatch(obj3);
 };
 export const deleteStoredContacts = function deleteStoredContacts() {
   let state;

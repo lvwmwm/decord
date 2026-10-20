@@ -1,22 +1,22 @@
-// Module ID: 9483
-// Function ID: 9484
+// Module ID: 8680
+// Function ID: 8681
 // Name: InstantInviteUtils
-// Dependencies: [2050, 2051, 2112, 4905, 4519, 1377, 6719, 1085, 7226, 5621, 9484, 1126, 2]
+// Dependencies: [2064, 2065, 2125, 6035, 4760, 1390, 6923, 1085, 7419, 5970, 8681, 1126, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 9483 (InstantInviteUtils)
+// Module 8680 (InstantInviteUtils)
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5621 */;
-import Constants2 from "Constants" /* 7226 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9484 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserStore from "UserStore" /* 1377 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6719 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5970 */;
+import Constants2 from "Constants" /* 7419 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 8681 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserStore from "UserStore" /* 1390 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6923 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -113,8 +113,11 @@ let obj2 = {
   getMaxAgeOptionByValue(maxAge) {
     let closure_0 = maxAge;
     items = [...items];
-    const tmp = items.find((value) => value.value === closure_0) || null;
-    return tmp;
+    let found = items.find((value) => value.value === closure_0);
+    if (found == null) {
+      found = null;
+    }
+    return found;
   },
   getMaxAgeOptions(arg0) {
     let closure_0;
@@ -367,7 +370,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
       if (obj10.inviteTargetType === tmp40.EMBEDDED_APPLICATION) {
         let tmp3 = dependencyMap;
         let obj2 = AutocompleteUtilsDefault;
-        const obj12 = { query: tmp44, limit: 3, guildId: "__initData" };
+        const obj12 = { query: tmp44, limit: 3, guildId: "apply" };
         const queryChannelsResult = obj2.queryChannels(obj12);
         let item = queryChannelsResult.forEach((record) => {
           obj = { type: obj.CHANNEL, item: record.record, isSuggested: false, score: record.score };
@@ -540,17 +543,16 @@ export const getUsersAlreadyJoined = function getUsersAlreadyJoined(channel) {
   return set1;
 };
 export const maxAgeString = function maxAgeString(maxAge, maxUses) {
-  const parsed = parseInt(maxUses, 10);
   const value = closure_19[maxAge].value;
   const type = closure_19[maxAge].type;
   if (minutes === type) {
     let stringResult;
     const intl4 = intl6.intl;
-    if (0 === parsed) {
-      stringResult = intl4.string(tmp13(1126).t["/WbTXD"]);
+    if (0 === maxUses) {
+      stringResult = intl4.string(tmp12(1126).t["/WbTXD"]);
     } else {
-      const obj2 = { numUses: parsed };
-      stringResult = intl4.formatToPlainString(tmp13(1126).t.eDRWJK, obj2);
+      const obj2 = { numUses: maxUses };
+      stringResult = intl4.formatToPlainString(tmp12(1126).t.eDRWJK, obj2);
     }
     return stringResult;
   } else if (hours === type) {
@@ -558,11 +560,11 @@ export const maxAgeString = function maxAgeString(maxAge, maxUses) {
     const intl3 = intl6.intl;
     const formatToPlainString2 = intl3.formatToPlainString;
     const t2 = intl6.t;
-    if (0 === parsed) {
+    if (0 === maxUses) {
       const obj3 = { numHours: value };
       formatToPlainString2Result = formatToPlainString2(t2.ZVdJMy, obj3);
     } else {
-      const obj4 = { numHours: value, numUses: parsed };
+      const obj4 = { numHours: value, numUses: maxUses };
       formatToPlainString2Result = formatToPlainString2(t2.NgZgAB, obj4);
     }
     return formatToPlainString2Result;
@@ -571,22 +573,22 @@ export const maxAgeString = function maxAgeString(maxAge, maxUses) {
     const intl2 = intl6.intl;
     const formatToPlainString = intl2.formatToPlainString;
     const t = intl6.t;
-    if (0 === parsed) {
+    if (0 === maxUses) {
       const obj5 = { numDays: value };
       formatToPlainStringResult = formatToPlainString(t.T96qss, obj5);
     } else {
-      const obj6 = { numDays: value, numUses: parsed };
+      const obj6 = { numDays: value, numUses: maxUses };
       formatToPlainStringResult = formatToPlainString(t.TfuB9B, obj6);
     }
     return formatToPlainStringResult;
   } else if (never === type) {
     let stringResult1;
     const intl = intl6.intl;
-    if (0 === parsed) {
-      stringResult1 = intl.string(tmp4(1126).t.QrHBnC);
+    if (0 === maxUses) {
+      stringResult1 = intl.string(tmp3(1126).t.QrHBnC);
     } else {
-      obj = { numUses: parsed };
-      stringResult1 = intl.formatToPlainString(tmp4(1126).t.yJnTxI, obj);
+      obj = { numUses: maxUses };
+      stringResult1 = intl.formatToPlainString(tmp3(1126).t.yJnTxI, obj);
     }
     return stringResult1;
   } else {

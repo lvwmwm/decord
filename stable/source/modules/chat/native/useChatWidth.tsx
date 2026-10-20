@@ -1,14 +1,14 @@
-// Module ID: 11143
-// Function ID: 11144
+// Module ID: 10679
+// Function ID: 10680
 // Name: useChatWidth
-// Dependencies: [19, 4739, 4741, 11144, 558, 11145, 2]
+// Dependencies: [19, 4979, 4981, 10680, 558, 10681, 2]
 // Exports: getChatWidth
 
-// Module 11143 (useChatWidth)
-import useChatLayout from "useChatLayout" /* 4739 */;
-import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4741 */;
-import useDrawerWidth from "useDrawerWidth" /* 11144 */;
-import reactDefault from "react" /* 11145 */;
+// Module 10679 (useChatWidth)
+import useChatLayout from "useChatLayout" /* 4979 */;
+import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4981 */;
+import useDrawerWidth from "useDrawerWidth" /* 10680 */;
+import reactDefault from "react" /* 10681 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 const useChatLayoutDefault = useChatLayout;
 const useBaseAppContainerDimensionsDefault = useBaseAppContainerDimensions;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChatWidth(arg0) {
   let context = react.useContext(reactDefault);
   const isChatLockedOpen = useChatLayoutDefault().isChatLockedOpen;
   const width = useBaseAppContainerDimensionsDefault().width;
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     context = tmp5;
   }
   return context;
-}) : ((arg0) => {
+}) : (function useChatWidth(arg0) {
   let context = react.useContext(reactDefault);
   const isChatLockedOpen = useChatLayoutDefault().isChatLockedOpen;
   const width = useBaseAppContainerDimensionsDefault().width;

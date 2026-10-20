@@ -1,12 +1,12 @@
-// Module ID: 5998
-// Function ID: 5999
+// Module ID: 6187
+// Function ID: 6188
 // Name: useIOSPressEffects
-// Dependencies: [19, 558, 576, 1484, 4612, 1369, 5597, 2]
+// Dependencies: [19, 558, 576, 1497, 4850, 1382, 5378, 2]
 
-// Module 5998 (useIOSPressEffects)
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import spring from "spring" /* 5597 */;
+// Module 6187 (useIOSPressEffects)
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import spring from "spring" /* 5378 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ let _require, importDefault;
 const SPRING_CONFIG = { overshootClamping: true, damping: 35, stiffness: 450, mass: 0.5, restDisplacementThreshold: 0.001 };
 const __initData = { code: "function useIOSPressEffectsTsx1(){const{withSpring,interpolate,sharedPressState,sharedWidthScale,SPRING_CONFIG,withOpacity}=this.__closure;const scale=withSpring(interpolate(sharedPressState.get(),[0,1],[1,sharedWidthScale.get()]),SPRING_CONFIG);if(withOpacity){return{transform:[{scale:scale}],opacity:withSpring(interpolate(sharedPressState.get(),[0,1],[1,0.5]),SPRING_CONFIG)};}else{return{transform:[{scale:scale}]};}}" };
 const __initData2 = { code: "function useIOSPressEffectsTsx2(){const{withSpring,interpolate,sharedPressState,sharedWidthScale,SPRING_CONFIG,withOpacity}=this.__closure;const scale=withSpring(interpolate(sharedPressState.get(),[0,1],[1,sharedWidthScale.get()]),SPRING_CONFIG);if(withOpacity){return{transform:[{scale:scale}],opacity:withSpring(interpolate(sharedPressState.get(),[0,1],[1,0.5]),SPRING_CONFIG)};}else{return{transform:[{scale:scale}]};}}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIOSPressEffects(arg0, arg1) {
   let closure_0;
   let closure_1;
   let width;
@@ -138,7 +138,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items;
   tmp7 = items;
   tmp6 = fn;
-}) : ((arg0) => {
+}) : (function useIOSPressEffects(arg0) {
   let closure_0;
   _require = arg0;
   let flag = arg1;

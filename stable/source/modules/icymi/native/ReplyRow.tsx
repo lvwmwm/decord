@@ -1,18 +1,18 @@
-// Module ID: 16451
-// Function ID: 16452
+// Module ID: 16973
+// Function ID: 16974
 // Name: ReplyRow
-// Dependencies: [19, 17, 21, 16394, 587, 558, 576, 4886, 8411, 5909, 2]
+// Dependencies: [19, 17, 21, 16918, 587, 558, 576, 5088, 8956, 6185, 2]
 
-// Module 16451 (ReplyRow)
+// Module 16973 (ReplyRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Pressables from "Pressables" /* 5909 */;
-import ReactionIcon from "ReactionIcon" /* 8411 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Pressables from "Pressables" /* 6185 */;
+import ReactionIcon from "ReactionIcon" /* 8956 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16394 */;
+import createICYMIStyles from "createICYMIStyles" /* 16918 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let closure_6 = createICYMIStyles.createICYMIStyles((marginLeft) => {
   ({ marginLeft: marginLeft.margin, marginRight: 10, paddingVertical: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 });
   return obj;
 });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentInventoryReplyRow(arg0) {
   let items;
   let onReply;
   let reactText;
@@ -109,7 +109,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.contentInventoryText;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((reactText) => {
+}) : (function ContentInventoryReplyRow(reactText) {
   let PressableOpacity;
   let items;
   let obj2;

@@ -1,22 +1,20 @@
-// Module ID: 13015
-// Function ID: 13016
+// Module ID: 13485
+// Function ID: 13486
 // Name: AvatarGrid
-// Dependencies: [19, 17, 4879, 4930, 21, 4890, 587, 558, 576, 504, 7919, 1188, 2]
+// Dependencies: [19, 17, 5081, 5108, 21, 5092, 587, 558, 576, 504, 8369, 1200, 2]
 
-// Module 13015 (AvatarGrid)
+// Module 13485 (AvatarGrid)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
+import native from "native" /* 1200 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import PresenceStore from "PresenceStore" /* 4930 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import PresenceStore from "PresenceStore" /* 5108 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let user;
 
 let hasOwnProperty;
 let metroRequire;
@@ -27,7 +25,7 @@ let obj = { avatarRow: { flexDirection: "row", alignItems: "center", justifyCont
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_7 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GridAvatar(user) {
   let first;
   let guildId;
   let pendingAvatarDecoration;
@@ -50,7 +48,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     first = cResult[0];
   }
   if (cResult[1] !== user.id) {
-    const fn = function v() {
+    const fn = function u() {
       return PresenceStore.getStatus(user.id);
     };
     cResult[1] = user.id;
@@ -114,7 +112,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
                   }
                 }
                 tmp29[0] = tmp21;
-                const Avatar2 = tmp(1188).Avatar;
+                const Avatar2 = tmp(1200).Avatar;
                 const merged = Object.assign(tmp14);
                 const tmp33 = closure_5(Avatar2, tmp29);
                 cResult[15] = tmp14;
@@ -124,7 +122,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
               }
             }
           }
-          const tmpResult4 = user(7919);
+          const tmpResult4 = user(8369);
           class E {
             constructor() {
               return useReducedMotion.useReducedMotion;
@@ -151,7 +149,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
               return useReducedMotion.useReducedMotion;
             }
           }
-          const Avatar = tmp(1188).Avatar;
+          const Avatar = tmp(1200).Avatar;
           const merged1 = Object.assign(tmp14);
           const tmp20 = closure_5(Avatar, obj2);
           cResult[18] = guildId;
@@ -171,7 +169,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[8] = tmp13;
   cResult[9] = obj3;
   tmp14 = obj3;
-}) : ((user) => {
+}) : (function GridAvatar(user) {
   let guildId;
   let obj5;
   let pendingAvatarDecoration;
@@ -198,11 +196,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   if (showStatus) {
     tmp6 = stateFromStores;
   }
-  const Avatar = tmp2(1188).Avatar;
+  const Avatar = tmp2(1200).Avatar;
   const tmp7 = closure_5;
   if (undefined !== pendingAvatarSrc) {
     const obj4 = { source: tmp2Result.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores1) };
-    tmp2Result = user(7919);
+    tmp2Result = user(8369);
     const merged = Object.assign(obj3);
     obj5 = obj4;
   } else {
@@ -212,7 +210,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   return tmp7(Avatar, obj5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarGrid(arg0) {
   let items;
   let items1;
   let items2;
@@ -304,7 +302,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp6;
   cResult[6] = tmp18;
   tmp17 = tmp18;
-}) : ((arg0) => {
+}) : (function AvatarGrid(arg0) {
   let items;
   let items1;
   let items2;

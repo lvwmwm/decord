@@ -1,41 +1,41 @@
-// Module ID: 15564
-// Function ID: 15565
+// Module ID: 16061
+// Function ID: 16062
 // Name: DevToolsRevenuePlaygroundScreen
-// Dependencies: [5, 32, 19, 17, 7748, 7143, 1231, 2051, 2103, 1377, 4889, 1379, 21, 584, 573, 1282, 4568, 5993, 6000, 6074, 6694, 6965, 1188, 587, 10472, 4890, 6956, 4854, 15565, 1987, 558, 576, 6698, 15570, 10783, 11401, 5093, 15571, 15574, 15578, 15580, 15583, 2]
+// Dependencies: [5, 32, 19, 17, 8102, 7343, 1244, 2065, 2116, 1390, 5091, 1392, 21, 584, 573, 1295, 4809, 6180, 6189, 6265, 6892, 7174, 1200, 587, 10098, 5092, 7165, 5056, 16062, 2000, 558, 576, 6896, 16069, 12747, 11345, 5934, 16070, 16073, 16077, 16079, 16082, 2]
 
-// Module 15564 (DevToolsRevenuePlaygroundScreen)
+// Module 16061 (DevToolsRevenuePlaygroundScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import DevSettingsStore2 from "DevSettingsStore" /* 4889 */;
-import TableRow6 from "TableRow" /* 5993 */;
-import TableRowArrow from "TableRowArrow" /* 6000 */;
-import TableRowGroup4 from "TableRowGroup" /* 6074 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6694 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 6698 */;
-import IAPUtils from "IAPUtils" /* 10783 */;
-import BundleUpdaterDefault from "BundleUpdater" /* 11401 */;
-import DevSettingsActions from "DevSettingsActions" /* 15570 */;
+import native from "native" /* 1200 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import DevSettingsStore2 from "DevSettingsStore" /* 5091 */;
+import TableRow6 from "TableRow" /* 6180 */;
+import TableRowArrow from "TableRowArrow" /* 6189 */;
+import TableRowGroup4 from "TableRowGroup" /* 6265 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6892 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 6896 */;
+import BundleUpdaterDefault from "BundleUpdater" /* 11345 */;
+import IAPUtils from "IAPUtils" /* 12747 */;
+import DevSettingsActions from "DevSettingsActions" /* 16069 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 7748 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7143 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import UserStore from "UserStore" /* 1377 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8102 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7343 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import UserStore from "UserStore" /* 1390 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const DevSettingsStore = DevSettingsStore2;
-let closure_2, closure_3, closure_4, content, map, map1, set, set2, userAffinity;
+let closure_2, closure_3, closure_4, map, map1, set, set2, userAffinity;
 
 let closure_15;
 let closure_16;
@@ -288,10 +288,10 @@ function FriendAnniversary() {
             if (tmp25) {
               closure_130_4([]);
             } else {
-              const obj5 = { key: "dev-tools-gift-intent-server", content: describeServerError(status) };
+              const obj5 = { text: describeServerError(status) };
               const open = stateFromStores1(status[16]).open;
               const tmp30 = stateFromStores1(status[16]);
-              open(obj5);
+              open("dev-tools-gift-intent-server", obj5);
             }
           } else if (arg0 === 1) {
             c6 = 3;
@@ -337,7 +337,7 @@ function FriendAnniversary() {
     callback();
   }, items4);
   const useCallback = recipientUserId.useCallback;
-  let closure_0 = stateFromStores3((content, arg1) => {
+  let closure_0 = stateFromStores3((text, arg1) => {
     let closure_1 = arg1;
     let c6 = 0;
     let c7 = 0;
@@ -368,12 +368,12 @@ function FriendAnniversary() {
             } else {
               closure_3 = tmp;
               closure_2 = tmp12;
-              content = closure_1;
+              text = closure_1;
               closure_1_8(true);
               c5 = 2;
               c6 = 3;
               c7 = 1;
-              const obj5 = { value: content(), done: false };
+              const obj5 = { value: text(), done: false };
               return obj5;
             }
           } else if (1 === c6) {
@@ -386,8 +386,8 @@ function FriendAnniversary() {
               closure_1 = closure_4;
               tmp12 = stateFromStores1(stateFromStores2[16]);
               const open = tmp12.open;
-              const obj6 = { key: "dev-tools-gift-intent-server", content: closure_2_23(closure_1) };
-              open(obj6);
+              const obj6 = { text: closure_2_23(closure_1) };
+              open("dev-tools-gift-intent-server", obj6);
             } else if (3 === c6) {
               if (arg0 === 1) {
                 c7 = 3;
@@ -398,9 +398,9 @@ function FriendAnniversary() {
                 c7 = 3;
                 return { value, done: true };
               } else {
-                const obj8 = { key: "dev-tools-gift-intent-server", content };
+                const obj8 = { text };
                 const obj2 = stateFromStores1(stateFromStores2[16]);
-                obj2.open(obj8);
+                obj2.open("dev-tools-gift-intent-server", obj8);
                 c6 = 4;
                 c7 = 1;
                 const obj9 = { value: closure_1_9(), done: false };
@@ -478,7 +478,7 @@ function FriendAnniversary() {
     label: "Number of anniversaries",
     subLabel: "Current: " + str,
     trailing: closure_17(tmp(tmp2[18]).TableRowArrow, {}),
-    onPress() {
+    onPress: function openCountPicker() {
       let obj = Sheet_showSimpleActionSheet;
       let obj2 = {
         key: "dev-tools-friend-anniversary-count",
@@ -512,7 +512,7 @@ function FriendAnniversary() {
   const obj7 = {
     label: "Trigger Mobile FA message in current DM",
     subLabel: "Sends an ephemeral GIFTING_PROMPT into the selected channel",
-    onPress() {
+    onPress: function triggerCardInCurrentDM() {
       const channelId = first1.getChannelId();
       if (null != channelId) {
         channel = channel.getChannel(channelId);
@@ -528,14 +528,14 @@ function FriendAnniversary() {
           const obj3 = stateFromStores1(stateFromStores2[21]);
           const result = obj3.sendGiftingPromptSystemMessage(channelId, obj4);
           const obj5 = stateFromStores1(stateFromStores2[16]);
-          obj5.open({ key: "dev-tools-gift-intent-triggered", content: "Friendship anniversary card sent." });
+          obj5.open("dev-tools-gift-intent-triggered", { text: "Friendship anniversary card sent." });
         } else {
           const obj2 = stateFromStores1(stateFromStores2[16]);
-          obj2.open({ key: "dev-tools-gift-intent-no-recipient", content: "Selected channel has no other recipient." });
+          obj2.open("dev-tools-gift-intent-no-recipient", { text: "Selected channel has no other recipient." });
         }
       } else {
         const obj = stateFromStores1(stateFromStores2[16]);
-        obj.open({ key: "dev-tools-gift-intent-no-channel", content: "Open a DM first." });
+        obj.open("dev-tools-gift-intent-no-channel", { text: "Open a DM first." });
       }
     }
   };
@@ -593,7 +593,7 @@ function FriendAnniversary() {
     label: "Reconcile now",
     subLabel: "Fetch + merge server dismissals into the local store",
     disabled: tmp11,
-    onPress() {
+    onPress: function handleReconcileNow() {
       const tmp = channel(() => {
         let num = stateFromStores3;
         const fetchAndReconcileGiftIntentDismissals = require("PremiumGiftingIntentActionCreators").fetchAndReconcileGiftIntentDismissals;
@@ -612,7 +612,7 @@ function FriendAnniversary() {
     subLabel: "POST a server dismissal for a generated friend",
     trailing: closure_17(tmp(tmp2[18]).TableRowArrow, {}),
     disabled: tmp11 || recipientUserId || 0 === fromResult.length,
-    onPress() {
+    onPress: function openSeedPicker() {
       let intent_type;
       let obj = Sheet_showSimpleActionSheet;
       const obj2 = {
@@ -658,7 +658,7 @@ function FriendAnniversary() {
     label: "Clear all server dismissals (staff)",
     subLabel: "DELETE every server dismissal for this user",
     disabled: tmp11,
-    onPress() {
+    onPress: function handleClearAllServerDismissals() {
       channel(() => {
         const HTTP = closure_1_0(stateFromStores2[15]).HTTP;
         const obj = { url: "" + closure_1_21 + "/" + closure_1_22, rejectWithError: true };
@@ -671,11 +671,11 @@ function FriendAnniversary() {
     variant: "danger",
     label: "Reset local message cooldown",
     subLabel: "Clears messageGiftIntentLastShownMap on this device",
-    onPress() {
+    onPress: function handleResetLocalCooldown() {
       const obj = stateFromStores1(stateFromStores2[13]);
       obj.dispatch({ type: "DEV_TOOLS_GIFT_MESSAGE_COOLDOWN_RESET" });
       const obj2 = stateFromStores1(stateFromStores2[16]);
-      obj2.open({ key: "dev-tools-gift-intent-local", content: "Cleared local message cooldown." });
+      obj2.open("dev-tools-gift-intent-local", { text: "Cleared local message cooldown." });
     }
   };
   items11[6] = closure_17(tmp(tmp2[17]).TableRow, obj19);
@@ -689,10 +689,10 @@ function TrialOfferSheetExample() {
   }
   const tmp = premiumTrialOffer;
   const tmp2 = dependencyMap;
-  let obj = premiumTrialOffer(6956);
+  let obj = premiumTrialOffer(7165);
   premiumTrialOffer = obj.usePremiumTrialOffer();
-  const TableRowGroup = premiumTrialOffer(6074).TableRowGroup;
-  const TableRow = premiumTrialOffer(5993).TableRow;
+  const TableRowGroup = premiumTrialOffer(6265).TableRowGroup;
+  const TableRow = premiumTrialOffer(6180).TableRow;
   let obj2 = {
     label: "Trial Offer Nitro Basic",
     subLabel: str2,
@@ -701,12 +701,12 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(15565, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(16062, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
   items = [closure_17(TableRow, obj2), ];
-  const TableRow2 = tmp(5993).TableRow;
+  const TableRow2 = tmp(6180).TableRow;
   const obj3 = { title: "Trial Offers", hasIcons: false, children: items };
   const obj4 = {
     label: "Trial Offer Nitro",
@@ -716,7 +716,7 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(15565, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(16062, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
@@ -823,7 +823,7 @@ createStyles = createStyles.createStyles;
 obj3 = { padding: nativeDefault.space.PX_16 };
 let closure_25 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumToggles() {
   let tmp11;
   let tmp4;
   let tmp5;
@@ -890,7 +890,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[7];
   }
   return tmp11;
-}) : (() => {
+}) : (function PremiumToggles() {
   let obj = useStateFromStores;
   items = [DevSettingsStore];
   const stateFromStores = obj.useStateFromStores(items, () => {
@@ -924,7 +924,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_17(TableRowGroup, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForceMockIAP() {
   let obj3;
   let tmp11;
   let tmp12;
@@ -969,9 +969,9 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[3];
   }
   if (cResult[4] !== (tmp8 || stateFromStores)) {
-    const TableRowGroup = tmp(6074).TableRowGroup;
+    const TableRowGroup = tmp(6265).TableRowGroup;
     let str = "Replaces StoreKit with hardcoded fixture data. App will restart when toggled.";
-    const TableSwitchRow = tmp(6698).TableSwitchRow;
+    const TableSwitchRow = tmp(6896).TableSwitchRow;
     if (tmp8) {
       str = "Forced on - the current device can't fetch real StoreKit products.";
     }
@@ -985,7 +985,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp12 = cResult[5];
   }
   return tmp12;
-}) : (() => {
+}) : (function ForceMockIAP() {
   let tmp4;
   let obj = useStateFromStores;
   items = [DevSettingsStore];
@@ -1016,7 +1016,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_17(TableRowGroup, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsRevenuePlaygroundScreen() {
   let tmp10;
   let tmp11;
   let tmp12;
@@ -1040,35 +1040,35 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp24 = closure_17(TrialOfferSheetExample, {});
     const obj2 = { size: nativeDefault.space.PX_16 };
-    const Spacer = tmp(1188).Spacer;
+    const Spacer = tmp(1200).Spacer;
     const tmp26 = closure_17(Spacer, obj2);
     const tmp28 = closure_17(closure_27, {});
     const obj3 = { size: nativeDefault.space.PX_16 };
-    const Spacer2 = tmp(1188).Spacer;
+    const Spacer2 = tmp(1200).Spacer;
     const tmp29 = closure_17(Spacer2, obj3);
     const tmp31 = closure_17(closure_28, {});
     const obj4 = { size: nativeDefault.space.PX_16 };
-    const Spacer3 = tmp(1188).Spacer;
+    const Spacer3 = tmp(1200).Spacer;
     const tmp32 = closure_17(Spacer3, obj4);
     const tmp34 = closure_17(PaymentFlowTest, {});
     const obj5 = { size: nativeDefault.space.PX_16 };
-    const Spacer4 = tmp(1188).Spacer;
+    const Spacer4 = tmp(1200).Spacer;
     const tmp35 = closure_17(Spacer4, obj5);
     const tmp37 = closure_17(Orbs, {});
     const obj6 = { size: nativeDefault.space.PX_16 };
-    const Spacer5 = tmp(1188).Spacer;
+    const Spacer5 = tmp(1200).Spacer;
     const tmp38 = closure_17(Spacer5, obj6);
     const tmp40 = closure_17(RevenueSmokeTests, {});
     const obj7 = { size: nativeDefault.space.PX_16 };
-    const Spacer6 = tmp(1188).Spacer;
+    const Spacer6 = tmp(1200).Spacer;
     const tmp41 = closure_17(Spacer6, obj7);
     const tmp43 = closure_17(GuildPowerups, {});
     const obj8 = { size: nativeDefault.space.PX_16 };
-    const Spacer7 = tmp(1188).Spacer;
+    const Spacer7 = tmp(1200).Spacer;
     const tmp44 = closure_17(Spacer7, obj8);
     const tmp46 = closure_17(GuildTagBadges, {});
     const obj9 = { size: nativeDefault.space.PX_16 };
-    const Spacer8 = tmp(1188).Spacer;
+    const Spacer8 = tmp(1200).Spacer;
     const tmp47 = closure_17(Spacer8, obj9);
     const tmp49 = closure_17(FriendAnniversary, {});
     cResult[0] = tmp24;
@@ -1117,12 +1117,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const obj10 = { style: tmp4.container, contentContainerStyle: tmp4.scrollContainer, children: items };
   items = [tmp5, tmp6, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13];
-  const tmp51 = authStore4(ScrollView, obj10);
+  const tmp51 = authStore5(ScrollView, obj10);
   cResult[17] = tmp4.container;
   cResult[18] = tmp4.scrollContainer;
   cResult[19] = tmp51;
   tmp50 = tmp51;
-}) : (() => {
+}) : (function DevToolsRevenuePlaygroundScreen() {
   const tmp = closure_25();
   const obj = { style: tmp.container, contentContainerStyle: tmp.scrollContainer, children: items };
   items = [closure_17(TrialOfferSheetExample, {}), , , , , , , , , , , , , , , , ];
@@ -1158,7 +1158,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const Spacer8 = native.Spacer;
   items[15] = closure_17(Spacer8, obj9);
   items[16] = closure_17(FriendAnniversary, {});
-  return authStore4(ScrollView, obj);
+  return authStore5(ScrollView, obj);
 });
 let result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsRevenuePlaygroundScreen.tsx");
 

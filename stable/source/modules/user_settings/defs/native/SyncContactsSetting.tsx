@@ -1,24 +1,24 @@
-// Module ID: 14651
-// Function ID: 14652
+// Module ID: 15127
+// Function ID: 15128
 // Name: SyncContactsSetting
-// Dependencies: [5440, 1377, 7634, 1085, 558, 576, 12329, 14652, 11129, 1126, 2]
+// Dependencies: [5761, 1390, 7988, 1085, 558, 576, 12409, 15128, 10664, 1126, 2]
 
-// Module 14651 (SyncContactsSetting)
+// Module 15127 (SyncContactsSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12329 */;
-import ContactSyncSettings from "ContactSyncSettings" /* 14652 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;
-import UserStore from "UserStore" /* 1377 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12409 */;
+import ContactSyncSettings from "ContactSyncSettings" /* 15128 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const PlatformTypes = Constants.PlatformTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useContactSyncSettingValue() {
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
@@ -34,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function useContactSyncSettingValue() {
   const obj = ContactSyncUtils;
   const contactSyncAccount = obj.useContactSyncAccount();
   const obj2 = ContactSyncUtils;

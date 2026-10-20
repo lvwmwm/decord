@@ -1,18 +1,18 @@
-// Module ID: 7527
-// Function ID: 7528
+// Module ID: 9321
+// Function ID: 9322
 // Name: useIsNsfwGated
-// Dependencies: [5101, 1377, 558, 576, 504, 2]
+// Dependencies: [5925, 1390, 558, 576, 504, 2]
 
-// Module 7527 (useIsNsfwGated)
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 5101 */;
-import UserStore from "UserStore" /* 1377 */;
+// Module 9321 (useIsNsfwGated)
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 5925 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, currentUser, nsfw;
+let _require, currentUser;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((nsfw) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNsfwGated(nsfw) {
   let tmp10;
   let tmp4;
   let tmp5;
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((nsfw) => {
   nsfw = nsfw.nsfw;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function u() {
+    const fn = function n() {
       currentUser = currentUser.getCurrentUser();
       let nsfwAllowed;
       if (currentUser != null) {
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((nsfw) => {
     nsfw = tmp12;
   }
   return nsfw;
-}) : ((nsfw) => {
+}) : (function useIsNsfwGated(nsfw) {
   _require = nsfw;
   nsfw = nsfw.nsfw;
   const items = [UserStore];

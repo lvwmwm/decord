@@ -1,28 +1,28 @@
-// Module ID: 14807
-// Function ID: 14808
+// Module ID: 15284
+// Function ID: 15285
 // Name: QuestHomeSortingFilteringBottomSheet
-// Dependencies: [32, 19, 17, 5623, 21, 4890, 587, 558, 576, 1126, 5594, 6619, 5592, 5770, 4729, 4854, 10911, 6644, 6071, 6072, 6074, 5990, 10010, 5593, 6112, 6645, 2]
+// Dependencies: [32, 19, 17, 5972, 21, 5092, 587, 558, 576, 1126, 5379, 6814, 5958, 5362, 4969, 5056, 9166, 6839, 6262, 6263, 6265, 6177, 9188, 5377, 6307, 6840, 2]
 
-// Module 14807 (QuestHomeSortingFilteringBottomSheet)
+// Module 15284 (QuestHomeSortingFilteringBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import shared from "shared" /* 4729 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import ButtonGroup2 from "ButtonGroup" /* 5592 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import QuestConstants from "QuestConstants" /* 5623 */;
-import TableRowGroup2 from "TableRowGroup" /* 6074 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
+import shared from "shared" /* 4969 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import ButtonGroup2 from "ButtonGroup" /* 5958 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
+import TableRowGroup2 from "TableRowGroup" /* 6265 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, onSortMethodChange, ref;
+let BottomSheet, ref;
 
 let metroImportAll;
 let metroImportDefault;
@@ -42,7 +42,7 @@ obj4 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let closure_9 = createStyles(obj);
 let closure_10 = [];
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function FilterFooter(arg0) {
   let footerInline;
   let inline;
   let items;
@@ -127,7 +127,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj5 = { bottom: true, children: metroImportAll(ButtonGroup2.ButtonGroup, obj6) };
-        const SafeAreaPaddingView = tmp(6619).SafeAreaPaddingView;
+        const SafeAreaPaddingView = tmp(6814).SafeAreaPaddingView;
         obj6 = { direction: "vertical", style: footerButtonGroup, children: items };
         items = [tmp10, tmp15];
         const tmp21 = metroImportDefault(SafeAreaPaddingView, obj5);
@@ -151,7 +151,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp5.footerInline;
   cResult[4] = footerInline;
   tmp6 = footerInline;
-}) : ((inline) => {
+}) : (function FilterFooter(inline) {
   let ButtonGroup;
   let SafeAreaPaddingView;
   let footerInline;
@@ -192,7 +192,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportDefault(tmp3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSortMethodChange) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeSortingFilteringBottomSheet(onSortMethodChange) {
   let closure_3;
   let closure_5;
   let first;
@@ -223,7 +223,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSortMethodChange
     first2 = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
+    class Q {
       constructor(arg0, arg1) {
         closure_0 = onSortMethodChange;
         closure_1 = arg1;
@@ -235,17 +235,17 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSortMethodChange
             items[HermesBuiltin.arraySpread(items, arr, 0)] = group;
             found = items;
           } else {
-            found = arr.filter(() => { /* body not rendered: F153026 */ });
+            found = arr.filter(() => { /* body not rendered: F155924 */ });
           }
           return found;
         });
         return;
       }
     }
-    cResult[1] = A;
-    tmp11 = A;
+    cResult[1] = Q;
+    tmp11 = Q;
   } else {
-    class A {
+    class Q {
       constructor(arg0, arg1) {
         closure_0 = onSortMethodChange;
         closure_1 = arg1;
@@ -257,7 +257,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSortMethodChange
             items[HermesBuiltin.arraySpread(items, arr, 0)] = group;
             found = items;
           } else {
-            found = arr.filter(() => { /* body not rendered: F153026 */ });
+            found = arr.filter(() => { /* body not rendered: F155924 */ });
           }
           return found;
         });
@@ -265,7 +265,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSortMethodChange
       }
     }
   }
-  A = tmp11;
+  Q = tmp11;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     class M {
       constructor() {
@@ -330,7 +330,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSortMethodChange
   cResult[5] = first1;
   cResult[6] = first;
   cResult[7] = L;
-}) : ((onSortMethodChange) => {
+}) : (function QuestHomeSortingFilteringBottomSheet(onSortMethodChange) {
   let BottomSheetScrollView;
   let BottomSheetTitleHeader;
   let closure_3;

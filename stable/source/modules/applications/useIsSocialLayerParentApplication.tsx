@@ -1,13 +1,13 @@
-// Module ID: 8725
-// Function ID: 8726
+// Module ID: 9227
+// Function ID: 9228
 // Name: useIsSocialLayerParentApplication
-// Dependencies: [19, 1085, 8726, 558, 576, 2]
+// Dependencies: [19, 1085, 9228, 558, 576, 2]
 // Exports: getIsSocialLayerParentApplication
 
-// Module 8725 (useIsSocialLayerParentApplication)
+// Module 9227 (useIsSocialLayerParentApplication)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8726 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9228 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ function getIsSocialLayerParentApplication(application) {
   const obj = ApplicationFlagUtils;
   return obj.hasApplicationFlag(application, ApplicationFlags.PARENT);
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSocialLayerParentApplication(application) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((arg0) => {
+}) : (function useIsSocialLayerParentApplication(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   return react.useMemo(() => {

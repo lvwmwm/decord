@@ -1,12 +1,12 @@
-// Module ID: 14899
-// Function ID: 14900
+// Module ID: 15378
+// Function ID: 15379
 // Name: YouBarConstants
-// Dependencies: [17, 587, 1188, 2]
+// Dependencies: [17, 587, 1200, 2]
 
-// Module 14899 (YouBarConstants)
+// Module 15378 (YouBarConstants)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
+import native from "native" /* 1200 */;
 import size from "module_2" /* 2 */;
 
 const PixelRatio = react_native.PixelRatio;

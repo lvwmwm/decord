@@ -1,22 +1,22 @@
-// Module ID: 9465
-// Function ID: 9466
+// Module ID: 11072
+// Function ID: 11073
 // Name: useIsVideoMode
-// Dependencies: [4912, 2051, 1999, 2103, 4909, 558, 576, 504, 2]
+// Dependencies: [5897, 2065, 2012, 2116, 5113, 558, 576, 504, 2]
 // Exports: isVideoMode
 
-// Module 9465 (useIsVideoMode)
+// Module 11072 (useIsVideoMode)
 import react from "react" /* 576 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVideoMode() {
   let tmp4;
   let tmp5;
   let voiceChannelId;
@@ -43,7 +43,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useIsVideoMode() {
   let voiceChannelId;
   const obj = get_initialized;
   const items = [ChannelStore, SelectedChannelStore, MediaEngineStore, VoiceStateStore, ApplicationStreamingStore];

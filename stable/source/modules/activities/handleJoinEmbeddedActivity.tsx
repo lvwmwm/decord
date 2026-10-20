@@ -1,21 +1,21 @@
-// Module ID: 9047
-// Function ID: 9048
+// Module ID: 10823
+// Function ID: 10824
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 5118, 2051, 2103, 1377, 2050, 2011, 9048, 8990, 4498, 9049, 9004, 9003, 9014, 9015, 9000, 12696, 8993, 2]
+// Dependencies: [5, 5440, 2065, 2116, 1390, 2064, 2024, 10824, 4739, 10825, 10869, 10868, 10482, 10879, 8508, 11341, 10854, 2]
 // Exports: default
 
-// Module 9047 (handleJoinEmbeddedActivity)
-import Constants from "Constants" /* 2011 */;
+// Module 10823 (handleJoinEmbeddedActivity)
+import Constants from "Constants" /* 2024 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import UserStore from "UserStore" /* 1377 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import UserStore from "UserStore" /* 1390 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, analyticsLocations, application, applicationId, channel, channelId, componentId, currentEmbeddedApplication, customId, embeddedActivitiesManager, inviterUserId, locationObject, referrerId, sectionName, source, user;
+let _require, analyticsLocations, application, applicationId, channel, channelId, componentId, currentEmbeddedApplication, customId, inviterUserId, locationObject, referrerId, sectionName, source, user;
 
 let obj = function _handleJoinEmbeddedActivityInternal() {
   obj = _asyncToGenerator(async (applicationId) => {
@@ -32,7 +32,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
       let c7;
       let c8;
       let c9;
-      let obj21;
+      let obj12;
       let obj6;
       if (componentId === 2) {
         componentId = 3;
@@ -49,7 +49,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
         try {
           let guildId;
           let currentEmbeddedActivity;
-          let closure_17;
+          let closure_16;
           componentId = 2;
           if (0 === analyticsLocations) {
             if (arg0 === 1) {
@@ -70,18 +70,17 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
               customId = undefined;
               referrerId = undefined;
               ({ applicationId: c0, activityChannelId: c1, locationObject: c2, analyticsLocations: c3, componentId: c4, sectionName: c5, source: c6, inviterUserId: c7, customId: c8, referrerId: c9 } = closure_0);
-              embeddedActivitiesManager = undefined;
               channel = undefined;
               guildId = undefined;
               user = undefined;
               currentEmbeddedActivity = undefined;
               currentEmbeddedApplication = undefined;
               application = undefined;
-              closure_17 = undefined;
-              let closure_18;
+              closure_16 = undefined;
+              let closure_17;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Set", done: true };
             }
           } else if (1 === analyticsLocations) {
             if (arg0 === 1) {
@@ -91,7 +90,6 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
               componentId = 3;
               return { value, done: true };
             } else {
-              embeddedActivitiesManager = closure_130_1(closure_130_2[8])();
               channel = closure_130_5.getChannel(channelId);
               guildId = undefined;
               const obj23 = channel;
@@ -122,10 +120,10 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
                     if (closure_130_6.getVoiceChannelId() === channelId) {
                       if (null != currentEmbeddedActivity) {
                         if (currentEmbeddedActivity.applicationId === applicationId) {
-                          const obj14 = closure_130_0(closure_130_2[9]);
-                          const embeddedActivityLocationChannelId = obj14.getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
+                          const obj16 = closure_130_0(closure_130_2[8]);
+                          const embeddedActivityLocationChannelId = obj16.getEmbeddedActivityLocationChannelId(currentEmbeddedActivity.location);
                           if (embeddedActivityLocationChannelId === closure_130_6.getVoiceChannelId()) {
-                            closure_130_1(closure_130_2[10])(guildId, currentEmbeddedActivity.location);
+                            closure_130_1(closure_130_2[9])(guildId, currentEmbeddedActivity.location);
                             componentId = 3;
                             const obj8 = { value: Promise.resolve(true), done: true };
                             return obj8;
@@ -135,7 +133,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
                     }
                     analyticsLocations = 2;
                     componentId = 1;
-                    const obj9 = { value: closure_130_1(closure_130_2[11])(applicationId, channelId), done: false };
+                    const obj9 = { value: closure_130_1(closure_130_2[10])(applicationId, channelId), done: false };
                     return obj9;
                   }
                 }
@@ -155,10 +153,10 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
               application = value;
               analyticsLocations = 3;
               componentId = 1;
-              const obj12 = { applicationId, application, channel, currentEmbeddedApplication, embeddedActivitiesManager, user };
-              const obj13 = { value: obj21.confirmActivityLaunchChecks(obj12), done: false };
-              obj21 = closure_130_0(closure_130_2[12]);
-              return obj13;
+              const obj13 = { applicationId, application, channel, currentEmbeddedApplication, user };
+              const obj14 = { value: obj12.confirmActivityLaunchChecks(obj13), done: false };
+              obj12 = closure_130_0(closure_130_2[11]);
+              return obj14;
             }
           } else {
             if (3 === analyticsLocations) {
@@ -170,16 +168,16 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
                 return { value, done: true };
               } else if (value) {
                 if (null != channel) {
-                  closure_17 = closure_130_1(closure_130_2[13])(channel.id);
-                  closure_18 = closure_130_9.includes(channel.type);
-                  if (closure_17) {
+                  closure_16 = closure_130_1(closure_130_2[12])(channel.id);
+                  closure_17 = closure_130_9.includes(channel.type);
+                  if (closure_16) {
                     analyticsLocations = 4;
                     componentId = 1;
-                    const obj16 = { channelId: channel.id, bypassChangeModal: null != currentEmbeddedApplication };
-                    const obj17 = { value: closure_130_1(closure_130_2[14])(obj16), done: false };
-                    return obj17;
+                    const obj17 = { channelId: channel.id, bypassChangeModal: null != currentEmbeddedApplication };
+                    const obj18 = { value: closure_130_1(closure_130_2[13])(obj17), done: false };
+                    return obj18;
                   } else {
-                    const obj4 = closure_130_0(closure_130_2[15]);
+                    const obj4 = closure_130_0(closure_130_2[14]);
                     componentId = 3;
                     return { value: false, done: true };
                   }
@@ -213,22 +211,22 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
               return { value, done: true };
             }
             if (null != channelId) {
-              closure_130_1(closure_130_2[16])(channelId);
+              closure_130_1(closure_130_2[15])(channelId);
             }
             if (null != currentEmbeddedActivity) {
-              const obj5 = closure_130_0(closure_130_2[17]);
+              const obj5 = closure_130_0(closure_130_2[16]);
               const result = obj5.maybeDisconnectFromCurrentActivity(currentEmbeddedActivity.location);
             }
-            const obj20 = { channelId, applicationId, isStart: false, embeddedActivitiesManager, analyticsLocations, locationObject, componentId, sectionName, source, inviterUserId, customId, referrerId };
+            const obj21 = { channelId, applicationId, isStart: false, analyticsLocations, locationObject, componentId, sectionName, source, inviterUserId, customId, referrerId };
             analyticsLocations = 5;
             componentId = 1;
-            const obj22 = { value: obj6.runPrimaryAppCommandOrJoinEmbeddedActivity(obj20), done: false };
-            obj6 = closure_130_0(closure_130_2[17]);
+            const obj22 = { value: obj6.runPrimaryAppCommandOrJoinEmbeddedActivity(obj21), done: false };
+            obj6 = closure_130_0(closure_130_2[16]);
             return obj22;
           }
-        } catch (tmp109) {
+        } catch (tmp117) {
           componentId = 3;
-          throw tmp109;
+          throw tmp117;
         }
       }
     })();

@@ -1,21 +1,21 @@
-// Module ID: 5569
-// Function ID: 5570
+// Module ID: 5890
+// Function ID: 5891
 // Name: SelectedChannelActionCreatorsAdditional
-// Dependencies: [2051, 2074, 5570, 4509, 2103, 4699, 1377, 4909, 5571, 5035, 5572, 4567, 5573, 5574, 4854, 5587, 1987, 9312, 13437, 1266, 584, 2]
+// Dependencies: [2065, 2087, 5891, 4750, 2116, 4939, 1390, 5113, 5892, 5414, 5893, 4808, 5894, 5895, 5056, 5955, 2000, 5253, 13931, 1279, 584, 2]
 // Exports: getChannelSelectionOrigin, selectVoiceChannelAdditional
 
-// Module 5569 (SelectedChannelActionCreatorsAdditional)
+// Module 5890 (SelectedChannelActionCreatorsAdditional)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import v1 from "v1" /* 1266 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 5571 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5570 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
-import UserStore from "UserStore" /* 1377 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import v1 from "v1" /* 1279 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5892 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5891 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
+import UserStore from "UserStore" /* 1390 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -90,7 +90,7 @@ export const selectVoiceChannelAdditional = function selectVoiceChannelAdditiona
       const obj6 = require("applyBackgroundOption");
       const result = obj6.applyInitialVideoBackgroundOption();
     }
-    require("collectCallFeedback")(() => {
+    require("collectCallFeedback")(function dispatchAction() {
       const obj = v1;
       const v4Result = obj.v4();
       const obj2 = DispatcherDefault;

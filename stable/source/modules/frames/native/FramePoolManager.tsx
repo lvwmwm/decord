@@ -1,11 +1,11 @@
-// Module ID: 16596
-// Function ID: 16597
+// Module ID: 17136
+// Function ID: 17137
 // Name: FramePoolManager
-// Dependencies: [16597, 9040, 2]
+// Dependencies: [17137, 10822, 2]
 
-// Module 16596 (FramePoolManager)
-import getFramesManagerDefault from "getFramesManager" /* 9040 */;
-import AbstractFramePoolManager from "AbstractFramePoolManager" /* 16597 */;
+// Module 17136 (FramePoolManager)
+import leaveFrame from "leaveFrame" /* 10822 */;
+import AbstractFramePoolManager from "AbstractFramePoolManager" /* 17137 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
@@ -31,12 +31,12 @@ class FramePoolManager extends AbstractFramePoolManager {
   unplace() {
 
   }
-  destroyFrame(arg0) {
-    const obj = getFramesManagerDefault();
-    obj.leaveFrame(arg0);
+  destroyFrame(id) {
+    const obj = leaveFrame;
+    obj.leaveFrame(id);
   }
 }
-const tmp5 = new "destroyFrame"({ maxBackgrounded: 1, timeoutMs: 90000 }, tmp2, tmp, Object, FramePoolManager.prototype, FramePoolManager);
+const tmp5 = new "destroyFrame"({ maxBackgrounded: 1, timeoutMs: 90000 }, tmp2, tmp, FramePoolManager.prototype, FramePoolManager, "destroyFrame", this);
 tmp5.poolNodeTag = 0;
 const result = size.fileFinishedImporting("modules/frames/native/FramePoolManager.tsx");
 

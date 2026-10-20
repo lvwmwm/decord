@@ -1,11 +1,11 @@
-// Module ID: 16181
-// Function ID: 16182
+// Module ID: 16696
+// Function ID: 16697
 // Name: useIsEligibleForTierTemplateUpsell
-// Dependencies: [2074, 1085, 558, 576, 504, 13705, 6763, 2]
+// Dependencies: [2087, 1085, 558, 576, 504, 14125, 6963, 2]
 
-// Module 16181 (useIsEligibleForTierTemplateUpsell)
+// Module 16696 (useIsEligibleForTierTemplateUpsell)
 import Constants from "Constants" /* 1085 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require;
 
 const GuildFeatures = Constants.GuildFeatures;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligibleForTierTemplateUpsell(arg0) {
   let closure_0;
   let first;
   let tmp11;
@@ -89,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp11 = guildEligibleForTierTemplates;
   }
   return tmp11;
-}) : ((arg0) => {
+}) : (function useIsEligibleForTierTemplateUpsell(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore];
@@ -112,7 +112,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     result = false === hasItem1;
   }
-  const tmpResult = tmp(6763);
+  const tmpResult = tmp(6963);
   if (result) {
     result = tmpResult.canManageGuildRoleSubscriptions(stateFromStores);
   }

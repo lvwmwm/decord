@@ -1,16 +1,16 @@
-// Module ID: 16874
-// Function ID: 16875
+// Module ID: 17463
+// Function ID: 17464
 // Name: ThreadMemberListHooks
-// Dependencies: [19, 2106, 9498, 1096, 558, 576, 6815, 6789, 5590, 504, 1126, 2]
+// Dependencies: [19, 2119, 8697, 1096, 558, 576, 7012, 6984, 5396, 504, 1126, 2]
 
-// Module 16874 (ThreadMemberListHooks)
+// Module 17463 (ThreadMemberListHooks)
 import Constants from "Constants" /* 1096 */;
 import intl3 from "intl" /* 1126 */;
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 6789 */;
-import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 6815 */;
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 6984 */;
+import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 7012 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 9498 */;
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 8697 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let _require, closure_4, importDefault;
 
 const StatusTypes = Constants.StatusTypes;
 let closure_7 = [];
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useThreadMemberListSections(arg0, arg1) {
   let closure_0;
   let intl;
   let intl2;
@@ -155,15 +155,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       }
       const _Symbol3 = Symbol;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        class E {
+        class M {
           constructor(hoist) {
             return hoist.hoist;
           }
         }
-        cResult[12] = E;
-        tmp18 = E;
+        cResult[12] = M;
+        tmp18 = M;
       } else {
-        class E {
+        class M {
           constructor(hoist) {
             return hoist.hoist;
           }
@@ -171,15 +171,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       }
       const _Symbol4 = Symbol;
       if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-        class M {
+        class E {
           constructor(id) {
             return { id: id.id, label: id.name };
           }
         }
-        cResult[13] = M;
-        tmp19 = M;
+        cResult[13] = E;
+        tmp19 = E;
       } else {
-        class M {
+        class E {
           constructor(id) {
             return { id: id.id, label: id.name };
           }
@@ -291,7 +291,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[1] = arg0;
   cResult[2] = fn;
   tmp4 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useThreadMemberListSections(arg0, arg1) {
   let closure_0;
   let stateFromStores;
   _require = arg0;

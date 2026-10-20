@@ -1,15 +1,15 @@
-// Module ID: 11552
-// Function ID: 11553
+// Module ID: 11611
+// Function ID: 11612
 // Name: ContentClassificationVisibility
-// Dependencies: [1377, 5898, 5900, 558, 576, 504, 2]
+// Dependencies: [1390, 6043, 6045, 558, 576, 504, 2]
 // Exports: getContentClassificationVisibility
 
-// Module 11552 (ContentClassificationVisibility)
+// Module 11611 (ContentClassificationVisibility)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import ContentClassificationToAgeRestriction from "ContentClassificationToAgeRestriction" /* 5898 */;
-import AgeRestrictionStatus from "AgeRestrictionStatus" /* 5900 */;
-import UserStore from "UserStore" /* 1377 */;
+import ContentClassificationToAgeRestriction from "ContentClassificationToAgeRestriction" /* 6043 */;
+import AgeRestrictionStatus from "AgeRestrictionStatus" /* 6045 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ function getContentClassificationVisibility(contentClassification, channel, nsfw
   }
   DISPLAY = obj.DISPLAY;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((data, isPrivate) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useContentClassificationVisibility(data, isPrivate) {
   let tmp4;
   let tmp5;
   let tmp8;
@@ -98,7 +98,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((data, isPrivate) =
     tmp8 = DISPLAY;
   }
   DISPLAY = obj.DISPLAY;
-}) : ((data, isPrivate) => {
+}) : (function useContentClassificationVisibility(data, isPrivate) {
   let obj;
   get_initialized;
   [][0] = UserStore;

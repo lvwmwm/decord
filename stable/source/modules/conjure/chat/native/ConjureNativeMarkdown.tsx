@@ -1,18 +1,18 @@
-// Module ID: 16667
-// Function ID: 16668
+// Module ID: 17216
+// Function ID: 17217
 // Name: ConjureNativeMarkdown
-// Dependencies: [19, 17, 21, 587, 4890, 558, 576, 16668, 4886, 4877, 16669, 2]
+// Dependencies: [19, 17, 21, 587, 5092, 558, 576, 17217, 5088, 5079, 17218, 2]
 
-// Module 16667 (ConjureNativeMarkdown)
+// Module 17216 (ConjureNativeMarkdown)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4877 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ConjureMarkdownBlocks from "ConjureMarkdownBlocks" /* 16668 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5079 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ConjureMarkdownBlocks from "ConjureMarkdownBlocks" /* 17217 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp;
-const useConjureRevealedText = tmp(16669);
+const useConjureRevealedText = tmp(17218);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const CONJURE_MARKUP_OPTIONS = { allowList: true, allowHeading: true, allowLinks: true };
@@ -40,7 +40,7 @@ obj5 = { gap: nativeDefault.space.PX_4 };
 obj6 = { minWidth: nativeDefault.space.PX_20, marginRight: nativeDefault.space.PX_4 };
 let closure_10 = createStyles(obj3);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativeMarkdown(source) {
   let arr;
   let list;
   let obj = require("react");
@@ -50,7 +50,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
   const tmp = _require;
   _require = tmp4;
   if (cResult[0] !== source) {
-    const tmpResult = tmp(16668);
+    const tmpResult = tmp(17217);
     const splitMarkdownBlocksResult = tmpResult.splitMarkdownBlocks(source);
     cResult[0] = source;
     cResult[1] = splitMarkdownBlocksResult;
@@ -95,7 +95,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
                 tmp3 = closure_0;
                 obj.style = closure_0.list;
                 items = source.items;
-                obj.children = items.map(() => { /* body not rendered: F146407 */ });
+                obj.children = items.map(() => { /* body not rendered: F149294 */ });
                 tmp4 = jsx(View, obj, arg1);
               }
               return tmp4;
@@ -140,7 +140,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
               tmp3 = closure_0;
               obj.style = closure_0.list;
               items = source.items;
-              obj.children = items.map(() => { /* body not rendered: F146407 */ });
+              obj.children = items.map(() => { /* body not rendered: F149294 */ });
               tmp4 = jsx(View, obj, arg1);
             }
             return tmp4;
@@ -170,7 +170,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
         tmp3 = closure_0;
         obj.style = closure_0.list;
         items = source.items;
-        obj.children = items.map(() => { /* body not rendered: F146407 */ });
+        obj.children = items.map(() => { /* body not rendered: F149294 */ });
         tmp4 = jsx(View, obj, arg1);
       }
       return tmp4;
@@ -182,7 +182,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
   cResult[11] = tmp4.marker;
   cResult[12] = T;
   tmp8 = T;
-}) : ((source) => {
+}) : (function ConjureNativeMarkdown(source) {
   source = source.source;
   const tmp = closure_10();
   const list = tmp;
@@ -239,7 +239,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
 });
 let closure_11 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRevealedMarkdown(arg0) {
   let source;
   let streaming;
   let tmp4;
@@ -267,7 +267,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp5 = cResult[3];
   }
   return tmp5;
-}) : ((arg0) => {
+}) : (function ConjureRevealedMarkdown(arg0) {
   let source;
   let streaming;
   ({ source, streaming } = arg0);

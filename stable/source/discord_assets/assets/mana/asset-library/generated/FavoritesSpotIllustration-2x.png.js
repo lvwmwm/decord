@@ -1,8 +1,8 @@
-// Module ID: 10043
-// Function ID: 10044
+// Module ID: 10322
+// Function ID: 10323
 // Dependencies: [2]
 
-// Module 10043
+// Module 10322
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FavoritesSpotIllustration-2x.png.js");

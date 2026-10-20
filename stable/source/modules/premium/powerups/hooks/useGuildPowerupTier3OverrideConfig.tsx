@@ -1,12 +1,12 @@
-// Module ID: 12215
-// Function ID: 12216
+// Module ID: 12299
+// Function ID: 12300
 // Name: useGuildPowerupTier3OverrideConfig
-// Dependencies: [2074, 1085, 558, 576, 504, 1126, 2525, 2]
+// Dependencies: [2087, 1085, 558, 576, 504, 1126, 2600, 2]
 
-// Module 12215 (useGuildPowerupTier3OverrideConfig)
+// Module 12299 (useGuildPowerupTier3OverrideConfig)
 import Constants from "Constants" /* 1085 */;
-import _modDef2525 from "module_2525" /* 2525 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import _modDef2600 from "module_2600" /* 2600 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 const GuildFeatures = Constants.GuildFeatures;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowerupTier3OverrideConfig(arg0) {
   let closure_0;
   let first;
   let intl;
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp8;
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { shouldShow: true, text: intl.string(_modDef2525.l9n4QZ) };
+      const obj2 = { shouldShow: true, text: intl.string(_modDef2600.l9n4QZ) };
       intl = tmp(1126).intl;
       cResult[4] = obj2;
       tmp8 = obj2;
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp7;
-}) : ((arg0) => {
+}) : (function useGuildPowerupTier3OverrideConfig(arg0) {
   let closure_0;
   let intl;
   let obj3;
@@ -87,7 +87,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return true === hasItem;
   })) {
-    const obj2 = { shouldShow: true, text: intl.string(_modDef2525.l9n4QZ) };
+    const obj2 = { shouldShow: true, text: intl.string(_modDef2600.l9n4QZ) };
     intl = tmp(1126).intl;
     obj3 = obj2;
   } else {

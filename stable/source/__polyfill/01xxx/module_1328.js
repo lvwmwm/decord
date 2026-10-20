@@ -3,3 +3,5 @@
 // Dependencies: []
 
 // Module 1328
+
+export default URIError;

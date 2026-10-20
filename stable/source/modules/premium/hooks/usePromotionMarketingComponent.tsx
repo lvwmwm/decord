@@ -1,14 +1,14 @@
-// Module ID: 13225
-// Function ID: 13226
+// Module ID: 13716
+// Function ID: 13717
 // Name: usePromotionMarketingComponent
-// Dependencies: [32, 19, 6959, 10396, 558, 576, 13226, 10428, 504, 2]
+// Dependencies: [32, 19, 7168, 9117, 558, 576, 9153, 9150, 504, 2]
 
-// Module 13225 (usePromotionMarketingComponent)
-import promotions_constants from "promotions/constants" /* 10428 */;
+// Module 13716 (usePromotionMarketingComponent)
+import promotions_constants from "promotions/constants" /* 9150 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserOfferStore_mod from "UserOfferStore" /* 6959 */;
-import PromotionsStore from "PromotionsStore" /* 10396 */;
+import UserOfferStore_mod from "UserOfferStore" /* 7168 */;
+import PromotionsStore from "PromotionsStore" /* 9117 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let _require, clearTimeoutResult, clearTimeoutResult1, flag, flag2, flag3, num, 
 
 let UserOfferStore = UserOfferStore_mod;
 let c6 = 86400000;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePromotionMarketingComponent(arg0) {
   let closure_0;
   let ref;
   let stateFromStores;
@@ -292,7 +292,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return null;
-}) : ((arg0) => {
+}) : (function usePromotionMarketingComponent(arg0) {
   let closure_0;
   let ref;
   let stateFromStores;

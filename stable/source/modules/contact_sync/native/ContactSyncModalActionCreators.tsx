@@ -1,26 +1,26 @@
-// Module ID: 12325
-// Function ID: 12326
+// Module ID: 12405
+// Function ID: 12406
 // Name: ContactSyncModalActionCreators
-// Dependencies: [5, 5440, 1377, 12326, 12328, 12327, 1085, 5099, 12329, 12331, 1252, 12333, 1126, 5708, 4568, 4805, 6542, 5312, 5093, 12334, 1987, 9481, 1105, 12353, 2]
+// Dependencies: [5, 5761, 1390, 12406, 12408, 12407, 1085, 7478, 12409, 12411, 1265, 12413, 1126, 5300, 4809, 6734, 5635, 5934, 12414, 2000, 8678, 1105, 12434, 2]
 // Exports: bulkAddFriendSuggestions, goBackToLanding, handlePhoneVerificationComplete, openContactSyncModal, openContactSyncModalDeeplink, openContactSyncModalOnboarding, refreshContactSyncPermissionStatus, startContactSync, submitPhone, upsellDismissed, verifyPhone, verifyPhoneWithPassword
 
-// Module 12325 (ContactSyncModalActionCreators)
+// Module 12405 (ContactSyncModalActionCreators)
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 6542 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9481 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12329 */;
-import ContactSyncAnalyticsUtils from "ContactSyncAnalyticsUtils" /* 12331 */;
-import NUFActionCreators from "NUFActionCreators" /* 12353 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 6734 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8678 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12409 */;
+import ContactSyncAnalyticsUtils from "ContactSyncAnalyticsUtils" /* 12411 */;
+import NUFActionCreators from "NUFActionCreators" /* 12434 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;
-import UserStore from "UserStore" /* 1377 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12326 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12328 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12327 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5761 */;
+import UserStore from "UserStore" /* 1390 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 12406 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12408 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12407 */;
 import Constants from "Constants" /* 1085 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5099 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7478 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -45,7 +45,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f111389 = (result) => {
+const f112347 = (result) => {
   closure_1_7(result);
 };
 function handleNameInputScreenOrSuggestions() {
@@ -83,6 +83,7 @@ let obj = function _handleNameInputScreenOrSuggestions() {
           let length;
           let SUGGESTIONS;
           let SUGGESTIONS_RESULTS;
+          let closure_12;
           let localAccount2;
           c8 = 2;
           if (0 === c7) {
@@ -386,14 +387,14 @@ obj = function _bulkAddFriendSuggestions() {
     return (async (arg0, value) => {
       let formatToPlainString;
       let intl;
-      let intl3;
+      let intl2;
       let intl4;
       let intl5;
       let intl6;
       let intl7;
-      let obj7;
-      let obj9;
-      let tmp56;
+      let obj10;
+      let obj8;
+      let tmp65;
       let v045SiE;
       if (c6 === 2) {
         c6 = 3;
@@ -419,31 +420,31 @@ obj = function _bulkAddFriendSuggestions() {
               c6 = 3;
               return { value, done: true };
             } else {
-              closure_2 = tmp56;
+              closure_2 = tmp65;
               tmp = undefined;
               state = state.getState();
               suggestions = state.suggestions;
               const bulkAddToken = state.bulkAddToken;
-              const tmp73 = closure_0;
-              const tmp74 = onComplete;
+              const tmp71 = closure_0;
+              const tmp72 = onComplete;
               if (null != bulkAddToken) {
                 c4 = 1;
                 c5 = 2;
                 c6 = 1;
-                const obj4 = { value: obj7.bulkAddFriends(tmp73, bulkAddToken), done: false };
-                obj7 = ContactSyncUtils;
+                const obj4 = { value: obj8.bulkAddFriends(tmp71, bulkAddToken), done: false };
+                obj8 = ContactSyncUtils;
                 return obj4;
               } else {
-                const obj5 = { skip: false, friendsFound: suggestions.length, friendsAdded: 0, back: false, onComplete: tmp74 };
+                const obj5 = { skip: false, friendsFound: suggestions.length, friendsAdded: 0, back: false, onComplete: tmp72 };
                 closeContactSyncModal(obj5);
               }
             }
           } else if (1 === tmp4) {
             c4 = 0;
             const obj6 = {
-              title: intl4.string(closure_131_0(closure_131_2[12]).t["6moJ8s"]),
-              body: intl5.string(closure_131_0(closure_131_2[12]).t.Gt2L32),
-              confirmText: intl6.string(closure_131_0(closure_131_2[12]).t.BddRzS),
+              title: intl5.string(closure_131_0(closure_131_2[12]).t["6moJ8s"]),
+              body: intl6.string(closure_131_0(closure_131_2[12]).t.Gt2L32),
+              confirmText: intl7.string(closure_131_0(closure_131_2[12]).t.BddRzS),
               onConfirm() {
                       obj = { skip: false, friendsFound: closure_1_2.length, friendsAdded: closure_1_0.length, back: false, onComplete };
                       closure_2_31(obj);
@@ -452,9 +453,9 @@ obj = function _bulkAddFriendSuggestions() {
             };
             const show2 = closure_131_1(closure_131_2[13]).show;
             closure_131_1(closure_131_2[13]);
-            intl4 = closure_131_0(closure_131_2[12]).intl;
             intl5 = closure_131_0(closure_131_2[12]).intl;
             intl6 = closure_131_0(closure_131_2[12]).intl;
+            intl7 = closure_131_0(closure_131_2[12]).intl;
             show2(obj6);
           } else if (arg0 === 1) {
             c6 = 3;
@@ -471,10 +472,10 @@ obj = function _bulkAddFriendSuggestions() {
               });
               const _Boolean = Boolean;
               tmp = mapped.filter(Boolean);
-              obj = {
-                title: intl.string(closure_131_0(closure_131_2[12]).t["6moJ8s"]),
-                body: formatToPlainString(v045SiE, obj9),
-                confirmText: intl3.string(closure_131_0(closure_131_2[12]).t.BddRzS),
+              const obj9 = {
+                title: intl2.string(closure_131_0(closure_131_2[12]).t["6moJ8s"]),
+                body: formatToPlainString(v045SiE, obj10),
+                confirmText: intl4.string(closure_131_0(closure_131_2[12]).t.BddRzS),
                 onConfirm() {
                           obj = { skip: false, friendsFound: closure_1_2.length, friendsAdded: closure_1_0.length, back: false, onComplete };
                           closure_2_31(obj);
@@ -483,19 +484,19 @@ obj = function _bulkAddFriendSuggestions() {
               };
               const show = closure_131_1(closure_131_2[13]).show;
               closure_131_1(closure_131_2[13]);
-              intl = closure_131_0(closure_131_2[12]).intl;
-              const intl2 = closure_131_0(closure_131_2[12]).intl;
-              formatToPlainString = intl2.formatToPlainString;
-              obj9 = { name: tmp.join(", ") };
+              intl2 = closure_131_0(closure_131_2[12]).intl;
+              const intl3 = closure_131_0(closure_131_2[12]).intl;
+              formatToPlainString = intl3.formatToPlainString;
+              obj10 = { name: tmp.join(", ") };
               v045SiE = closure_131_0(closure_131_2[12]).t["045SiE"];
-              intl3 = closure_131_0(closure_131_2[12]).intl;
-              show(obj);
+              intl4 = closure_131_0(closure_131_2[12]).intl;
+              show(obj9);
             } else {
-              const obj10 = { key: "TOAST_ADD_FRIENDS", content: intl7.string(closure_131_0(closure_131_2[12]).t["+hjBfW"]), icon: closure_131_1(closure_131_2[15]) };
+              obj = { text: intl.string(closure_131_0(closure_131_2[12]).t["+hjBfW"]), variant: "success" };
               const open = closure_131_1(closure_131_2[14]).open;
               closure_131_1(closure_131_2[14]);
-              intl7 = closure_131_0(closure_131_2[12]).intl;
-              open(obj10);
+              intl = closure_131_0(closure_131_2[12]).intl;
+              open("TOAST_ADD_FRIENDS", obj);
             }
             const obj11 = { skip: false, friendsFound: suggestions.length, friendsAdded: closure_0.length, back: false, onComplete };
             closure_131_31(obj11);
@@ -503,11 +504,11 @@ obj = function _bulkAddFriendSuggestions() {
           }
           c6 = 3;
           return { value: "IconComponent", done: null };
-        } catch (tmp55) {
-          tmp56 = c4;
+        } catch (tmp64) {
+          tmp65 = c4;
           if (0 === c4) {
             c6 = 3;
-            throw tmp55;
+            throw tmp64;
           } else {
             c5 = 1;
           }
@@ -563,7 +564,7 @@ obj = function _verifyPhone() {
             if (404 !== closure_0.status) {
               const self = this;
               const self2 = this;
-              const aPIError = new closure_131_0(closure_131_2[17]).APIError(closure_0);
+              const aPIError = new closure_131_0(closure_131_2[16]).APIError(closure_0);
               const anyErrorMessage = aPIError.getAnyErrorMessage();
               let error = anyErrorMessage;
               if (anyErrorMessage == null) {
@@ -625,14 +626,14 @@ function closeContactSyncModal(skip) {
     }
     let obj2 = { num_contacts_found: friendsFound, num_contacts_added: friendsAdded };
     const tmp16 = closure_15();
-    const obj3 = flag2(12331);
+    const obj3 = flag2(12411);
     obj3.trackFlowEnd(flag, obj2);
     if (tmp16) {
       onComplete(flag);
     } else {
       const _setTimeout2 = setTimeout;
       const timerId = setTimeout(() => {
-        obj = back(closure_2[18]);
+        obj = back(closure_2[17]);
         obj.popWithKey(closure_1_20);
       }, 0);
     }
@@ -648,13 +649,13 @@ function closeContactSyncModal(skip) {
     const tmp2 = closure_15();
     dependencyMap = tmp2;
     if (!back) {
-      obj = flag2(12331);
+      obj = flag2(12411);
       const obj4 = { num_contacts_found: friendsFound, num_contacts_added: friendsAdded };
       obj.trackFlowEnd(flag2, obj4);
     }
     if (tmp2) {
-      let updateAnimation = back(5093).updateAnimation;
-      const tmp8 = back(5093);
+      let updateAnimation = back(5934).updateAnimation;
+      const tmp8 = back(5934);
       let ModalAnimation = flag2(1105).ModalAnimation;
       if (back) {
         updateAnimation(tmp9, ModalAnimation.SLIDE_IN_OUT_REVERSE);
@@ -668,7 +669,7 @@ function closeContactSyncModal(skip) {
       obj.popWithKey(closure_20);
       const tmp5 = closure_2;
       if (tmp5) {
-        const updateAnimation = tmp(5093).updateAnimation;
+        const updateAnimation = tmp(5934).updateAnimation;
         ModalActionCreatorsDefault;
         const ModalAnimation = ConstantsIOS.ModalAnimation;
         if (back) {
@@ -728,10 +729,10 @@ export const upsellDismissed = function upsellDismissed() {
 export const openContactSyncModal = function openContactSyncModal(initialRoutes, HUB_PROGRESS, arg2) {
   obj = ContactSyncUtils;
   const result = obj.checkContactPermissions();
-  result.then(f111389);
+  result.then(f112347);
   const tmp2 = dependencyMap;
   if (null == initialRoutes.initialRoutes) {
-    authStore2(map1.NORMAL);
+    syncedClientThemes(map1.NORMAL);
   }
   const tmp7 = HUB_PROGRESS;
   if (tmp7) {
@@ -741,7 +742,7 @@ export const openContactSyncModal = function openContactSyncModal(initialRoutes,
   }
   const obj3 = { initialRoutes: initialRoutes.initialRoutes, openSettingsSheet: initialRoutes.openSettings, customLandingPage: initialRoutes.customLandingPage };
   const obj4 = ModalActionCreatorsDefault;
-  const pushLazyResult = obj4.pushLazy(asyncRequire(12334, tmp2.paths), obj3, closure_20);
+  const pushLazyResult = obj4.pushLazy(asyncRequire(12414, tmp2.paths), obj3, closure_20);
   pushLazyResult.then(arg2);
 };
 export const openContactSyncModalOnboarding = function openContactSyncModalOnboarding() {
@@ -752,7 +753,7 @@ export const openContactSyncModalOnboarding = function openContactSyncModalOnboa
     flag = false;
   }
   if (flag) {
-    const tmp = authStore2;
+    const tmp = syncedClientThemes;
     obj = instant_invite_InstantInviteUtils;
     const tmp4 = map1;
     tmp(obj.hasDeferredInvite() ? tmp4.ONBOARDING_INVITE : tmp4.ONBOARDING);
@@ -766,9 +767,9 @@ export const openContactSyncModalOnboarding = function openContactSyncModalOnboa
     let c2;
     let c3;
     let closure_1;
-    await require("asyncRequire")(paths[19], paths.paths);
+    await require("asyncRequire")(paths[18], paths.paths);
     const value = arg1.default;
-    obj = { animation: closure_129_0(closure_129_2[22]).ModalAnimation.SLIDE_IN_OUT };
+    obj = { animation: closure_129_0(closure_129_2[21]).ModalAnimation.SLIDE_IN_OUT };
     value.modalConfig = obj;
     return value;
   }), {}, closure_20);
@@ -777,21 +778,21 @@ export const openContactSyncModalDeeplink = function openContactSyncModalDeeplin
   obj = {};
   const obj2 = ContactSyncUtils;
   const result = obj2.checkContactPermissions();
-  result.then(f111389);
+  result.then(f112347);
   const tmp2 = dependencyMap;
   if (null == obj.initialRoutes) {
-    authStore2(map1.NORMAL);
+    syncedClientThemes(map1.NORMAL);
   }
   const tmpResult = ContactSyncAnalyticsUtils;
   tmpResult.trackFlowStart({ location: { page: "Deep Link" } });
   const obj3 = { initialRoutes: obj.initialRoutes, openSettingsSheet: obj.openSettings, customLandingPage: obj.customLandingPage };
   const obj4 = ModalActionCreatorsDefault;
-  const pushLazyResult = obj4.pushLazy(asyncRequire(12334, tmp2.paths), obj3, closure_20);
+  const pushLazyResult = obj4.pushLazy(asyncRequire(12414, tmp2.paths), obj3, closure_20);
   pushLazyResult.then(undefined);
 };
 export const refreshContactSyncPermissionStatus = function refreshContactSyncPermissionStatus() {
   obj = ContactSyncUtils;
   const result = obj.checkContactPermissions();
-  result.then(f111389);
+  result.then(f112347);
 };
 export { closeContactSyncModal };

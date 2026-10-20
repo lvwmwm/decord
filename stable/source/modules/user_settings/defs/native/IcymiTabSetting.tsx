@@ -1,25 +1,25 @@
-// Module ID: 15359
-// Function ID: 15360
+// Module ID: 15839
+// Function ID: 15840
 // Name: IcymiTabSetting
-// Dependencies: [7634, 558, 8033, 8030, 8029, 15360, 576, 11129, 1126, 2]
+// Dependencies: [7988, 558, 8471, 8468, 8467, 15840, 576, 10664, 1126, 2]
 
-// Module 15359 (IcymiTabSetting)
+// Module 15839 (IcymiTabSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8029 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 8030 */;
-import useLabFeatureDefault from "useLabFeature" /* 8033 */;
-import LabFeatureActions from "LabFeatureActions" /* 15360 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8467 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 8468 */;
+import useLabFeatureDefault from "useLabFeature" /* 8471 */;
+import LabFeatureActions from "LabFeatureActions" /* 15840 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIPredicate() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -32,21 +32,21 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const ICYMIStaffOnlyExperiment = ICYMIExperiment.ICYMIStaffOnlyExperiment;
   return ICYMIStaffOnlyExperiment.useConfig(first).enabled;
-}) : (() => {
+}) : (function useICYMIPredicate() {
   const ICYMIStaffOnlyExperiment = ICYMIExperiment.ICYMIStaffOnlyExperiment;
   return ICYMIStaffOnlyExperiment.useConfig({ location: "settings" }).enabled;
 });
-const fn = () => {
+function useICYMISettingValue() {
   const tmp = useLabFeatureDefault;
   return tmp(ICYMIExperiment.ICYMI_LAB_FEATURE);
-};
+}
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.D4clKq);
   },
   parent: MobileUserSettings.ADVANCED,
-  useValue: fn,
+  useValue: useICYMISettingValue,
   onValueChange: function onICYMISettingValueChange(enabled) {
     let str = "show";
     const itemInteracted = ICYMIActionCreatorsDefault.itemInteracted;

@@ -1,76 +1,77 @@
 // Module ID: 1876
 // Function ID: 1877
-// Dependencies: [19, 1643, 1873]
-// Exports: useEndVisible
+// Dependencies: [19, 17, 21, 1850]
+// Exports: default
 
 // Module 1876
-import react from "react" /* 19 */;
-import _mod1643 from "module_1643" /* 1643 */;
-import _mod1873 from "module_1873" /* 1873 */;
+import react2 from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
 
-const useMemo = react.useMemo;
-let closure_3 = { code: "function pnpm_useEndVisibleTs1(){const{layout,size,isScrollAtEnd,scroll,inverted}=this.__closure;if(layout.value.height===0||size.value.height===0){return null;}return isScrollAtEnd(scroll.value,layout.value.height,size.value.height,inverted);}" };
-let closure_4 = { code: "function pnpm_useEndVisibleTs2(){const{isAtEnd}=this.__closure;return isAtEnd.value;}" };
-let __initData = { code: "function pnpm_useEndVisibleTs3(current,previous){const{onEndVisible,isWorklet,runOnJS}=this.__closure;if(current===null||current===previous||!onEndVisible){return;}if(isWorklet){onEndVisible(current);}else{runOnJS(onEndVisible)(current);}}" };
+let RN;
 
-export const useEndVisible = (scroll) => {
-  let closure_5;
-  scroll = scroll.scroll;
-  const layout = scroll.layout;
-  size = scroll.size;
-  const inverted = scroll.inverted;
-  const onEndVisible = scroll.onEndVisible;
-  const items = [onEndVisible];
-  let tmp = size(() => {
-    let __workletHash = typeof onEndVisible === "function";
-    if (typeof onEndVisible === "function") {
-      __workletHash = onEndVisible.__workletHash;
-    }
-    return __workletHash;
-  }, items);
-  __initData = tmp;
-  let obj = scroll(layout[1]);
-  const fn = function v() {
-    let isScrollAtEndResult = null;
-    if (0 !== layout.value.height) {
-      isScrollAtEndResult = null;
-      if (0 !== size.value.height) {
-        const obj = _mod1873;
-        isScrollAtEndResult = obj.isScrollAtEnd(scroll.value, iter.value.height, iter2.value.height, inverted);
-      }
-    }
-    return isScrollAtEndResult;
-  };
-  fn.__closure = { layout, size, isScrollAtEnd: scroll(layout[2]).isScrollAtEnd, scroll, inverted };
-  fn.__workletHash = 9190864194226;
-  fn.__initData = inverted;
-  ({ layout, size, isScrollAtEnd: scroll(layout[2]).isScrollAtEnd, scroll, inverted });
-  const derivedValue = obj.useDerivedValue(fn);
-  const fn2 = function f() {
-    return derivedValue.value;
-  };
-  fn2.__closure = { isAtEnd: derivedValue };
-  fn2.__workletHash = 3323533137377;
-  fn2.__initData = onEndVisible;
-  const obj3 = scroll(layout[1]);
-  class E {
-    constructor(arg0, arg1) {
-      const tmp = null !== arg0 && arg0 !== arg1 && onEndVisible;
-      if (tmp) {
-        const tmp3 = closure_5;
-        if (tmp3) {
-          onEndVisible(arg0);
-        } else {
-          const obj = _mod1643;
-          obj.runOnJS(onEndVisible)(arg0);
-        }
-      }
-    }
+let StyleSheet;
+let c3;
+let closure_4;
+let hasOwnProperty;
+let items;
+let items1;
+let items2;
+let metroRequire;
+let obj2;
+let obj3;
+let obj4;
+const useMemo = react2.useMemo;
+({ Animated: c3, StyleSheet, View: closure_4 } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+const size = { width: 13, height: 2, borderRadius: 1 };
+const size1 = { marginHorizontal: 5, width: 30, height: 30, justifyContent: "center", alignItems: "center" };
+let obj = { arrowUpContainer: size1, arrowDownContainer: obj2, arrow: { width: 20, height: 20, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, arrowLeftLine: obj3, arrowRightLine: obj4 };
+obj2 = { transform: items };
+const create = StyleSheet.create;
+const merged = Object.assign(size1);
+items = [{ rotate: "180deg" }];
+obj3 = { transform: items1, left: -0.5 };
+const merged1 = Object.assign(size);
+items1 = [{ rotate: "-45deg" }];
+obj4 = { transform: items2, left: -5.5 };
+const merged2 = Object.assign(size);
+items2 = [{ rotate: "45deg" }];
+let closure_7 = create(obj);
+
+export default function _default(disabled) {
+  let arrowUpContainer;
+  let closure_3;
+  let items3;
+  let obj3;
+  let tmp7;
+  disabled = disabled.disabled;
+  const theme = disabled.theme;
+  const type = disabled.type;
+  const obj = disabled(theme[3]);
+  const keyboardState = obj.useKeyboardState((appearance) => appearance.appearance);
+  let items = [disabled, theme, keyboardState];
+  const tmp2 = keyboardState(() => ({ backgroundColor: disabled ? theme[keyboardState].disabled : theme[keyboardState].primary }), items);
+  RN = tmp2;
+  const items1 = [tmp2];
+  const items2 = [tmp2];
+  const tmp3 = keyboardState(() => {
+    const items = [closure_7.arrowLeftLine, closure_3];
+    return items;
+  }, items1);
+  const tmp4 = keyboardState(() => {
+    const items = [closure_7.arrowRightLine, closure_3];
+    return items;
+  }, items2);
+  if ("next" === type) {
+    arrowUpContainer = closure_7.arrowDownContainer;
+    tmp7 = closure_7;
+  } else {
+    tmp7 = closure_7;
+    arrowUpContainer = closure_7.arrowUpContainer;
   }
-  E.__closure = { onEndVisible, isWorklet: tmp, runOnJS: scroll(layout[1]).runOnJS };
-  E.__workletHash = 2507987378306;
-  E.__initData = __initData;
-  const items1 = [onEndVisible, tmp, inverted];
-  ({ onEndVisible, isWorklet: tmp, runOnJS: scroll(layout[1]).runOnJS });
-  const animatedReaction = obj3.useAnimatedReaction(fn2, E, items1);
+  const obj2 = { style: arrowUpContainer, children: closure_6(closure_4, obj3) };
+  obj3 = { style: tmp7.arrow, children: items3 };
+  items3 = [closure_5(RN.View, { style: tmp3 }), closure_5(RN.View, { style: tmp4 })];
+  return closure_5(closure_4, obj2);
 };

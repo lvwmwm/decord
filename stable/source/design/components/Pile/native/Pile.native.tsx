@@ -1,17 +1,17 @@
-// Module ID: 10739
-// Function ID: 10740
+// Module ID: 11600
+// Function ID: 11601
 // Name: Pile
-// Dependencies: [19, 17, 21, 4890, 558, 576, 1375, 12, 8469, 10740, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 1388, 12, 9012, 11601, 2]
 
-// Module 10739 (Pile)
+// Module 11600 (Pile)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ClipView from "ClipView" /* 8469 */;
-import PileOverflow from "PileOverflow" /* 10740 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import ClipView from "ClipView" /* 9012 */;
+import PileOverflow from "PileOverflow" /* 11601 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const ClipViewDefault = ClipView;
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ pile: { flexDirection: "row" } });
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(size) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pile(size) {
   let arr2;
   let gap;
   let shape;
@@ -217,7 +217,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(size) {
   cResult[15] = size;
   cResult[16] = fn;
   tmp10 = fn;
-}) : (function(aria_label) {
+}) : (function Pile(aria_label) {
   let Children1;
   let children;
   ({ shape: require, size } = aria_label);

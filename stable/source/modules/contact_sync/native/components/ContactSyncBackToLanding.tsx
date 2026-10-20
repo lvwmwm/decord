@@ -1,17 +1,17 @@
-// Module ID: 12351
-// Function ID: 12352
+// Module ID: 12432
+// Function ID: 12433
 // Name: ContactSyncBackToLanding
-// Dependencies: [558, 576, 1490, 6010, 12325, 2]
+// Dependencies: [558, 576, 1503, 6201, 12405, 2]
 
-// Module 12351 (ContactSyncBackToLanding)
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12325 */;
+// Module 12432 (ContactSyncBackToLanding)
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12405 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap, navigation;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncBackToLanding(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("react");
@@ -41,7 +41,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = arg0;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0) => {
+}) : (function ContactSyncBackToLanding(arg0) {
   let closure_0;
   let closure_1;
   _require = arg0;

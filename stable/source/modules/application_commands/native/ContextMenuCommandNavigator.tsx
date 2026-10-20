@@ -1,18 +1,18 @@
-// Module ID: 17047
-// Function ID: 17048
+// Module ID: 17635
+// Function ID: 17636
 // Name: ContextMenuCommandNavigator
-// Dependencies: [109, 19, 17, 21, 7556, 4890, 587, 558, 576, 6984, 6496, 1618, 7498, 1126, 17048, 17050, 2]
+// Dependencies: [109, 19, 17, 21, 9340, 5092, 587, 558, 576, 7192, 6688, 1631, 9293, 1126, 17636, 17638, 2]
 
-// Module 17047 (ContextMenuCommandNavigator)
+// Module 17635 (ContextMenuCommandNavigator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import HeaderShared from "HeaderShared" /* 7498 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import HeaderShared from "HeaderShared" /* 9293 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 7556 */;
-import createStyles from "createStyles" /* 4890 */;
+import NativeStackView from "NativeStackView" /* 9340 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let closure_9 = NativeStackView.createNativeStackNavigator();
 let obj = { container: { flex: 1 }, content: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let closure_10 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuCommandNavigator() {
   let closure_0;
   let intl;
   let items1;
@@ -57,10 +57,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [tmp5, tmp6] = cResult;
   }
   const layoutEffect = react.useLayoutEffect(tmp5, tmp6);
-  const tmpResult = tmp(6496);
+  const tmpResult = tmp(6688);
   const accessibilityNativeStackOptions = tmpResult.useAccessibilityNativeStackOptions();
-  ({ left, right } = accessibilityNativeStackOptions(1618)());
-  accessibilityNativeStackOptions(1618)();
+  ({ left, right } = accessibilityNativeStackOptions(1631)());
+  accessibilityNativeStackOptions(1631)();
   if (cResult[2] === left) {
     let tmp10;
     if (cResult[3] === right) {
@@ -143,7 +143,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         cResult[17] = tmp28;
         tmp25 = tmp28;
       }
-      const fn2 = function _(navigation) {
+      const fn2 = function k(navigation) {
         let renderModalCloseImage;
         navigation = navigation.navigation;
         let obj = {
@@ -187,7 +187,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = right;
   cResult[4] = obj7;
   tmp10 = obj7;
-}) : (() => {
+}) : (function ContextMenuCommandNavigator() {
   let Navigator;
   let Screen;
   let closure_0;

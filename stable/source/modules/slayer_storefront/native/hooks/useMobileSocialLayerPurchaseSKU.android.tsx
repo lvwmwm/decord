@@ -1,23 +1,23 @@
-// Module ID: 10543
-// Function ID: 10544
+// Module ID: 10169
+// Function ID: 10170
 // Name: useMobileSocialLayerPurchaseSKU
-// Dependencies: [109, 19, 1085, 558, 576, 8872, 10544, 2]
+// Dependencies: [109, 19, 1085, 558, 576, 9395, 10170, 2]
 
-// Module 10543 (useMobileSocialLayerPurchaseSKU)
+// Module 10169 (useMobileSocialLayerPurchaseSKU)
 import Constants from "Constants" /* 1085 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 8872 */;
-import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10544 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 9395 */;
+import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10170 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, sku;
+let _require;
 
 let closure_3 = ["sku"];
 const constants = Constants.PriceSetAssignmentPurchaseTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobileSocialLayerPurchaseSKU(sku) {
   let c0;
   let tmp19;
   let tmp3;
@@ -139,7 +139,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((sku) => {
     tmp19 = obj2;
   }
   DEFAULT = constants.DEFAULT;
-}) : ((sku) => {
+}) : (function useMobileSocialLayerPurchaseSKU(sku) {
   sku = sku.sku;
   const merged = Object.assign(sku, Object.assign({ sku: 0 }));
   let c0;

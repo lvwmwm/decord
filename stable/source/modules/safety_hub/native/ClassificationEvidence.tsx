@@ -1,23 +1,21 @@
-// Module ID: 11502
-// Function ID: 11503
+// Module ID: 11485
+// Function ID: 11486
 // Name: ClassificationEvidence
-// Dependencies: [19, 17, 21, 4890, 1188, 587, 558, 576, 4886, 1126, 11503, 2]
+// Dependencies: [19, 17, 21, 5092, 1200, 587, 558, 576, 5088, 1126, 11486, 2]
 
-// Module 11502 (ClassificationEvidence)
+// Module 11485 (ClassificationEvidence)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ClassificationMessageEvidenceDefault from "ClassificationMessageEvidence" /* 11503 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ClassificationMessageEvidenceDefault from "ClassificationMessageEvidence" /* 11486 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import native_mod from "native" /* 1188 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import native_mod from "native" /* 1200 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let flaggedContent;
 
 let closure_4;
 let hasOwnProperty;
@@ -33,7 +31,7 @@ native = native_mod;
 obj2 = { borderWidth: 1, borderRadius: nativeDefault.radii.sm, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, backgroundColor: nativeDefault.colors.CHANNELTEXTAREA_BACKGROUND, padding: 20 };
 obj3 = { display: "flex", gap: nativeDefault.space.PX_8 };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((flaggedContent) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClassificationEvidence(flaggedContent) {
   let intl;
   let items;
   const obj = react2;
@@ -46,7 +44,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((flaggedContent) => {
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "eyebrow", color: "text-default", children: intl.string(intl2.t.s64CMg) };
-      const Text = tmp(4886).Text;
+      const Text = tmp(5088).Text;
       intl = tmp(1126).intl;
       const tmp8 = React3(Text, obj2);
       cResult[0] = tmp8;
@@ -104,7 +102,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((flaggedContent) => {
     tmp9 = items1;
   }
   return tmp5;
-}) : ((flaggedContent) => {
+}) : (function ClassificationEvidence(flaggedContent) {
   let intl;
   let items;
   let items1;

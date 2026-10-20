@@ -1,19 +1,19 @@
-// Module ID: 8388
-// Function ID: 8389
+// Module ID: 8944
+// Function ID: 8945
 // Name: GameProfileSection
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 8386, 4886, 5594, 1126, 6708, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8942, 5088, 5379, 1126, 6906, 2]
 
-// Module 8388 (GameProfileSection)
+// Module 8944 (GameProfileSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 6708 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 8386 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 6906 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 8942 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-betw
 obj4 = { minWidth: 0, maxWidth: "100%", flexShrink: 1, height: nativeDefault.space.PX_20, borderRadius: nativeDefault.radii.xs };
 let closure_6 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileSectionSkeleton(arg0) {
   let animationDelayMs;
   let children;
   let headerStyle;
@@ -74,7 +74,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp8 = cResult[10];
         }
         if (cResult[11] !== showViewAllSkeleton) {
-          const tmp13 = showViewAllSkeleton && React3(tmp(8386).GameProfileSkeletonButton, { size: "sm" });
+          const tmp13 = showViewAllSkeleton && React3(tmp(8942).GameProfileSkeletonButton, { size: "sm" });
           cResult[11] = showViewAllSkeleton;
           cResult[12] = tmp13;
           tmp12 = tmp13;
@@ -137,7 +137,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.container;
   cResult[2] = items4;
   tmp5 = items4;
-}) : ((showViewAllSkeleton) => {
+}) : (function GameProfileSectionSkeleton(showViewAllSkeleton) {
   let animationDelayMs;
   let children;
   let headerStyle;
@@ -169,7 +169,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return hasOwnProperty(tmp3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileSection(arg0) {
   let children;
   let headerStyle;
   let intl;
@@ -207,7 +207,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp12 = null != onPressViewAll;
         if (tmp12) {
           const obj3 = { text: intl.string(intl2.t.budhsM), variant: "tertiary", size: "sm", icon: React3(ChevronSmallRightIcon.ChevronSmallRightIcon, { size: "sm" }), iconPosition: "end", onPress: onPressViewAll };
-          const Button = tmp(5594).Button;
+          const Button = tmp(5379).Button;
           intl = tmp(1126).intl;
           tmp12 = React3(Button, obj3);
         }
@@ -262,7 +262,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.container;
   cResult[2] = items3;
   tmp5 = items3;
-}) : ((onPressViewAll) => {
+}) : (function GameProfileSection(onPressViewAll) {
   let children;
   let headerStyle;
   let intl;
@@ -283,7 +283,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp4Result = null != onPressViewAll;
   if (tmp4Result) {
     const obj3 = { text: intl.string(intl2.t.budhsM), variant: "tertiary", size: "sm", icon: React3(ChevronSmallRightIcon.ChevronSmallRightIcon, { size: "sm" }), iconPosition: "end", onPress: onPressViewAll };
-    const Button = tmp5(5594).Button;
+    const Button = tmp5(5379).Button;
     intl = tmp5(1126).intl;
     tmp4Result = tmp4(Button, obj3);
   }

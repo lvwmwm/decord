@@ -1,23 +1,24 @@
-// Module ID: 16956
-// Function ID: 16957
+// Module ID: 9155
+// Function ID: 9156
 // Name: useHasNewAdContent
-// Dependencies: [32, 14881, 7187, 5623, 1102, 558, 576, 10914, 7183, 504, 5630, 6891, 2036, 2]
+// Dependencies: [32, 9156, 7386, 5972, 1102, 558, 576, 9157, 7392, 504, 5979, 7100, 2049, 2]
 
-// Module 16956 (useHasNewAdContent)
+// Module 9155 (useHasNewAdContent)
 import DurationsDefault from "Durations" /* 1102 */;
-import QuestConstants from "QuestConstants" /* 5623 */;
-import AdCreativeType from "AdCreativeType" /* 5630 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
+import AdCreativeType from "AdCreativeType" /* 5979 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AdContentSeenStore from "AdContentSeenStore" /* 14881 */;
-import QuestStore from "QuestStore" /* 7187 */;
+import AdContentSeenStore from "AdContentSeenStore" /* 9156 */;
+import QuestStore from "QuestStore" /* 7386 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
 const DAY = DurationsDefault.Millis.DAY;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasNewAdContent() {
   let enabled;
   let first;
+  let obj3;
   let stateFromStoresArray;
   let tmp11;
   let tmp13;
@@ -84,60 +85,136 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[5];
   }
   if (cResult[6] !== stateFromStoresArray) {
-    const fn2 = function b() {
-      for (const item10005 of stateFromStoresArray) {
-        if (AdContentSeenStore.hasSeen(AdCreativeType.AdCreativeType.QUEST, item10005)) {
-          continue;
-        } else {
-          obj.return();
-          let flag = true;
-          return true;
+    class A {
+      constructor() {
+        for (const item10005 of stateFromStoresArray) {
+          if (AdContentSeenStore.hasSeen(AdCreativeType.AdCreativeType.QUEST, item10005)) {
+            continue;
+          } else {
+            obj.return();
+            let flag = true;
+            return true;
+          }
         }
+        return false;
       }
-      return false;
-    };
+    }
     const items3 = [stateFromStoresArray];
     cResult[6] = stateFromStoresArray;
-    cResult[7] = fn2;
+    cResult[7] = A;
     cResult[8] = items3;
     tmp14 = items3;
-    tmp13 = fn2;
+    tmp13 = A;
   } else {
-    tmp13 = cResult[7];
+    class A {
+      constructor() {
+        for (const item10005 of stateFromStoresArray) {
+          if (AdContentSeenStore.hasSeen(AdCreativeType.AdCreativeType.QUEST, item10005)) {
+            continue;
+          } else {
+            obj.return();
+            let flag = true;
+            return true;
+          }
+        }
+        return false;
+      }
+    }
     tmp14 = cResult[8];
   }
   const tmpResult3 = tmp(tmp2[9]);
   const stateFromStores = tmpResult3.useStateFromStores(tmp11, tmp13, tmp14);
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { cooldownDurationMs: DAY };
-    cResult[9] = obj3;
-    tmp16 = obj3;
+    class A {
+      constructor() {
+        for (const item10005 of stateFromStoresArray) {
+          if (AdContentSeenStore.hasSeen(AdCreativeType.AdCreativeType.QUEST, item10005)) {
+            continue;
+          } else {
+            obj.return();
+            let flag = true;
+            return true;
+          }
+        }
+        return false;
+      }
+    }
+    tmp17[0] = DAY;
+    cResult[9] = tmp17;
+    tmp16 = tmp17;
   } else {
-    tmp16 = cResult[9];
+    class A {
+      constructor() {
+        for (const item10005 of stateFromStoresArray) {
+          if (AdContentSeenStore.hasSeen(AdCreativeType.AdCreativeType.QUEST, item10005)) {
+            continue;
+          } else {
+            obj.return();
+            let flag = true;
+            return true;
+          }
+        }
+        return false;
+      }
+    }
   }
-  let prop = null;
   const useSelectedTimeRecurringDismissibleContent = tmp(tmp2[11]).useSelectedTimeRecurringDismissibleContent;
   tmp(tmp2[11]);
   if (stateFromStores) {
-    prop = null;
+    class A {
+      constructor() {
+        for (const item10005 of stateFromStoresArray) {
+          if (AdContentSeenStore.hasSeen(AdCreativeType.AdCreativeType.QUEST, item10005)) {
+            continue;
+          } else {
+            obj.return();
+            let flag = true;
+            return true;
+          }
+        }
+        return false;
+      }
+    }
     if (enabled) {
-      prop = tmp(tmp2[12]).DismissibleContent.QUEST_HOME_NEW_QUEST_BADGE;
+      class A {
+        constructor() {
+          for (const item10005 of stateFromStoresArray) {
+            if (AdContentSeenStore.hasSeen(AdCreativeType.AdCreativeType.QUEST, item10005)) {
+              continue;
+            } else {
+              obj.return();
+              let flag = true;
+              return true;
+            }
+          }
+          return false;
+        }
+      }
     }
   }
-  const tmp20 = _slicedToArray(useSelectedTimeRecurringDismissibleContent(prop, tmp16, undefined, true), 2);
-  if (cResult[10] === tmp20[1]) {
-    let tmp23;
-    if (cResult[11] === null != tmp20[0]) {
-      tmp23 = cResult[12];
+  const tmp21 = _slicedToArray(useSelectedTimeRecurringDismissibleContent(null, tmp16, undefined, true), 2);
+  if (cResult[10] === tmp21[1]) {
+    class A {
+      constructor() {
+        for (const item10005 of stateFromStoresArray) {
+          if (AdContentSeenStore.hasSeen(AdCreativeType.AdCreativeType.QUEST, item10005)) {
+            continue;
+          } else {
+            obj.return();
+            let flag = true;
+            return true;
+          }
+        }
+        return false;
+      }
     }
-    return tmp23;
+    return obj3;
   }
-  const obj4 = { showBadge: null != tmp20[0], dismissBadge: tmp20[1] };
-  cResult[10] = tmp20[1];
-  cResult[11] = null != tmp20[0];
-  cResult[12] = obj4;
-  tmp23 = obj4;
-}) : (() => {
+  obj3 = { showBadge: null != tmp21[0], dismissBadge: tmp21[1] };
+  cResult[10] = tmp21[1];
+  cResult[11] = null != tmp21[0];
+  cResult[12] = obj3;
+}) : (function useHasNewAdContent() {
   let enabled;
   let stateFromStoresArray;
   let tmp = enabled;

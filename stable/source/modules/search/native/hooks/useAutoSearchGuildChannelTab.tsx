@@ -1,14 +1,14 @@
-// Module ID: 16901
-// Function ID: 16902
+// Module ID: 17490
+// Function ID: 17491
 // Name: useAutoSearchGuildChannelTab
-// Dependencies: [19, 11977, 558, 576, 11968, 11985, 12, 11966, 2]
+// Dependencies: [19, 12054, 558, 576, 12045, 12063, 12, 12038, 2]
 
-// Module 16901 (useAutoSearchGuildChannelTab)
+// Module 17490 (useAutoSearchGuildChannelTab)
 import _mod12 from "module_12" /* 12 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11966 */;
-import SearchUtils from "SearchUtils" /* 11968 */;
-import SearchPlatformConstants from "SearchPlatformConstants" /* 11977 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11985 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12038 */;
+import SearchUtils from "SearchUtils" /* 12045 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 12054 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12063 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let closure_4 = SearchPlatformConstants.SEARCH_TEXT_INPUT_DEBOUNCE_TIME;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutoSearchGuildChannelTab(arg0, arg1) {
   let closure_0;
   let closure_2;
   let tmp2;
@@ -92,7 +92,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
         const effect2 = obj2.useEffect(tmp9, tmp10);
       }
     }
-    const fn3 = function h() {
+    const fn3 = function f() {
       if (!closure_1) {
         const obj = _mod12;
         const debounceResult = obj.debounce(closure_2, closure_4);
@@ -109,7 +109,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     tmp7 = items1;
     tmp6 = fn3;
   }
-  const fn2 = function o() {
+  const fn2 = function h() {
     const tmp = closure_1;
     if (!tmp) {
       closure_2("");
@@ -122,7 +122,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[5] = items2;
   tmp4 = items2;
   tmp3 = fn2;
-}) : ((arg0, arg1) => {
+}) : (function useAutoSearchGuildChannelTab(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const items = [arg0];

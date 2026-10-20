@@ -1,21 +1,21 @@
-// Module ID: 8902
-// Function ID: 8903
+// Module ID: 8582
+// Function ID: 8583
 // Name: FormSection
-// Dependencies: [19, 17, 1192, 21, 4890, 587, 558, 576, 6073, 6633, 8899, 6074, 8903, 1369, 2]
+// Dependencies: [19, 17, 1204, 21, 5092, 587, 558, 576, 6264, 6828, 8579, 6265, 8583, 1382, 2]
 
-// Module 8902 (FormSection)
+// Module 8582 (FormSection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FormConstants from "FormConstants" /* 1192 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import RedesignCompat from "RedesignCompat" /* 6073 */;
-import FormRowDefault from "FormRow" /* 6633 */;
-import FormDividerDefault from "FormDivider" /* 8899 */;
-import FormTitleDefault from "FormTitle" /* 8903 */;
+import FormConstants from "FormConstants" /* 1204 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import RedesignCompat from "RedesignCompat" /* 6264 */;
+import FormRowDefault from "FormRow" /* 6828 */;
+import FormDividerDefault from "FormDivider" /* 8579 */;
+import FormTitleDefault from "FormTitle" /* 8583 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ const TitleStyleType = FormConstants.TitleStyleType;
 let obj = { titledSectionHeader: obj2, titledSectionNoBorder: { marginTop: 24 }, titledSectionNoBorderOrMargin: {}, emptySectionHeader: { marginTop: 24 }, sectionBody: {}, sectionBodyIOSBorder: {} };
 obj2 = { borderTopWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: 16 };
 let closure_8 = createStyles.createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormSection(arg0) {
   let accessibilityLabel;
   let accessibilityRole;
   let children;
@@ -279,7 +279,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const TableRowGroup = tmp(6074).TableRowGroup;
+    const TableRowGroup = tmp(6265).TableRowGroup;
     if (hasIcons == null) {
       class X {
         constructor(arg0) {
@@ -525,7 +525,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[43] = wrapperStyle;
     cResult[44] = items2;
   }
-}) : ((arg0) => {
+}) : (function FormSection(arg0) {
   let TableRowGroup;
   let accessibilityLabel;
   let accessibilityRole;
@@ -579,7 +579,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj2 = { style: { marginBottom: 24 }, children: items };
     const obj3 = { style: { paddingHorizontal: 12 }, children: metroRequire(TableRowGroup, obj4) };
     obj4 = { title, hasIcons, hasTrailingText: flag, children: found };
-    TableRowGroup = tmp3(6074).TableRowGroup;
+    TableRowGroup = tmp3(6265).TableRowGroup;
     const tmp18 = metroImportDefault;
     if (hasIcons == null) {
       hasIcons = tmp17;

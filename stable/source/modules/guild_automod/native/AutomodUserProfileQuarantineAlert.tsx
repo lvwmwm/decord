@@ -1,31 +1,31 @@
-// Module ID: 11481
-// Function ID: 11482
+// Module ID: 11459
+// Function ID: 11460
 // Name: AutomodUserProfileQuarantineAlert
-// Dependencies: [32, 109, 19, 17, 502, 2112, 2074, 11474, 1085, 4495, 21, 4890, 587, 558, 576, 1126, 1188, 11482, 4886, 5783, 11483, 6885, 573, 4515, 1252, 5590, 2]
+// Dependencies: [32, 109, 19, 17, 502, 2125, 2087, 11452, 1085, 4736, 21, 5092, 587, 558, 576, 1126, 1200, 11460, 5088, 5398, 11461, 7094, 573, 4756, 1265, 5396, 2]
 
-// Module 11481 (AutomodUserProfileQuarantineAlert)
+// Module 11459 (AutomodUserProfileQuarantineAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4495 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4515 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import AlertDefault from "Alert" /* 5783 */;
-import Constants2 from "Constants" /* 11474 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11482 */;
-import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 11483 */;
+import native from "native" /* 1200 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4736 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4756 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import AlertDefault from "Alert" /* 5398 */;
+import Constants2 from "Constants" /* 11452 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11460 */;
+import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 11461 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let obj = { wrapper: { padding: 16 }, body: { flexDirection: "column", alignItem
 size = { width: 48, height: 48, tintColor: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL, marginBottom: 16 };
 let closure_21 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBlockedAlert(arg0) {
   let buttonCta;
   let description;
   let items;
@@ -103,7 +103,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[7] !== tmp12.mainIcon) {
     const obj2 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp12.mainIcon };
-    const Icon = tmp(1188).Icon;
+    const Icon = tmp(1200).Icon;
     const tmp18 = closure_19(Icon, obj2);
     cResult[7] = tmp12.mainIcon;
     cResult[8] = tmp18;
@@ -181,7 +181,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[10] = tmp8;
   cResult[11] = tmp20;
   tmp19 = tmp20;
-}) : ((arg0) => {
+}) : (function ChatBlockedAlert(arg0) {
   let buttonCta;
   let description;
   let intl;
@@ -203,7 +203,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   obj2 = { style: tmp2.body, children: items };
   const obj3 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp2.mainIcon };
-  const Icon = tmp8(1188).Icon;
+  const Icon = tmp8(1200).Icon;
   items = [closure_19(Icon, obj3), , ];
   const obj4 = { style: tmp2.title, accessibilityRole: "header", variant: "heading-md/medium", color: "mobile-text-heading-primary", children: title };
   items[1] = closure_19(Text_Text.Text, obj4);
@@ -212,21 +212,27 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_19(tmp6, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerServerProfileAlert(arg0) {
   let automodReason;
+  let first;
   let guildId;
   let guildName;
   let tmp11;
   let tmp14;
+  let tmp17;
   let tmp21;
+  let tmp23;
+  let tmp24;
   let tmp4;
   let tmp5;
   let tmp6;
   let tmp7;
-  const obj = react2;
+  const tmp2 = dependencyMap;
+  let obj = react2;
   const cResult = obj.c(22);
   if (cResult[0] !== arg0) {
     ({ guildId, guildName, automodReason } = arg0);
+    const tmp8 = _objectWithoutProperties;
     const tmp10 = _objectWithoutProperties(arg0, closure_5);
     cResult[0] = arg0;
     cResult[1] = tmp10;
@@ -249,7 +255,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const intl2 = tmp(1126).intl;
       stringResult = intl2.string(tmp(1126).t.SpDXI7);
     } else {
-      const intl = tmp(1126).intl;
+      let intl = tmp(1126).intl;
       stringResult = intl.string(tmp(1126).t.TBeZmG);
     }
     cResult[5] = tmp5;
@@ -259,7 +265,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp11 = cResult[6];
   }
   if (cResult[7] !== tmp6) {
-    const obj2 = { guildId: tmp6 };
+    let obj2 = { guildId: tmp6 };
     cResult[7] = tmp6;
     cResult[8] = obj2;
     tmp14 = obj2;
@@ -267,9 +273,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp14 = cResult[8];
   }
   const tmpResult = AutomodQuarantineUtils;
-  const tmp15 = _slicedToArray(tmpResult.useOpenFixQuarantinedProfileModal(tmp14), 2);
-  const first = tmp15[0];
-  if (!tmp15[1]) {
+  [first, tmp17] = tmpResult.useOpenFixQuarantinedProfileModal(tmp14);
+  if (!tmp17) {
     let tmp19;
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
@@ -282,76 +287,66 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     tmp11 = tmp19;
   }
-  if (cResult[10] !== tmp15[1]) {
+  if (cResult[10] !== tmp17) {
     let stringResult2;
     const intl4 = tmp(1126).intl;
     const string = intl4.string;
     const t = tmp(1126).t;
-    if (tmp15[1]) {
+    if (tmp17) {
       stringResult2 = string(t["/PGQf0"]);
     } else {
       stringResult2 = string(t.WikgZ1);
     }
-    cResult[10] = tmp15[1];
+    cResult[10] = tmp17;
     cResult[11] = stringResult2;
     tmp21 = stringResult2;
   } else {
     tmp21 = cResult[11];
   }
   if (cResult[12] !== first) {
-    class U {
-      constructor() {
-        tmp = closure_0();
-        return;
-      }
+    function handleConfirm() {
+      first();
     }
     cResult[12] = first;
-    cResult[13] = U;
+    cResult[13] = handleConfirm;
+    tmp23 = handleConfirm;
   } else {
-    class U {
-      constructor() {
-        tmp = closure_0();
-        return;
-      }
-    }
+    tmp23 = cResult[13];
   }
   if (cResult[14] !== tmp7) {
-    class U {
-      constructor() {
-        tmp = closure_0();
-        return;
-      }
-    }
-    const obj3 = { guildName: tmp7 };
+    const intl5 = tmp(1126).intl;
+    let obj3 = { guildName: tmp7 };
+    const formatResult = intl5.format(intl6.t.kcYdTq, obj3);
     cResult[14] = tmp7;
-    cResult[15] = obj4.format(intl6.t.kcYdTq, obj3);
-    const formatResult = obj4.format(intl6.t.kcYdTq, obj3);
+    cResult[15] = formatResult;
+    tmp24 = formatResult;
   } else {
-    class U {
-      constructor() {
-        tmp = closure_0();
-        return;
-      }
-    }
+    tmp24 = cResult[15];
   }
   if (cResult[16] === tmp4) {
-    class U {
-      constructor() {
-        tmp = closure_0();
-        return;
+    if (cResult[17] === tmp21) {
+      if (cResult[18] === tmp11) {
+        if (cResult[19] === tmp23) {
+          let tmp26;
+          if (cResult[20] === tmp24) {
+            tmp26 = cResult[21];
+          }
+          return tmp26;
+        }
       }
     }
   }
-  const obj5 = { title: tmp24, description: tmp11, buttonCta: tmp21, onConfirm: tmp23 };
+  let obj4 = { title: tmp24, description: tmp11, buttonCta: tmp21, onConfirm: tmp23 };
   const merged = Object.assign(tmp4);
+  const tmp28 = closure_19(closure_22, obj4);
   cResult[16] = tmp4;
   cResult[17] = tmp21;
   cResult[18] = tmp11;
   cResult[19] = tmp23;
   cResult[20] = tmp24;
-  cResult[21] = closure_19(closure_22, obj5);
-  closure_19(closure_22, obj5);
-}) : ((arg0) => {
+  cResult[21] = tmp28;
+  tmp26 = tmp28;
+}) : (function PerServerProfileAlert(arg0) {
   let automodReason;
   let closure_129_0;
   let guildId;
@@ -372,7 +367,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const intl = intl6.intl;
     stringResult = intl.string(intl6.t.TBeZmG);
   }
-  const tmp2Result = tmp2(11483);
+  const tmp2Result = tmp2(11461);
   [closure_129_0, tmp8] = tmp2Result.useOpenFixQuarantinedProfileModal({ guildId });
   _slicedToArray(tmp2Result.useOpenFixQuarantinedProfileModal({ guildId }), 2);
   if (!tmp8) {
@@ -391,7 +386,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     title: intl5.format(tmp2(1126).t.kcYdTq, { guildName }),
     description: stringResult,
     buttonCta: stringResult1,
-    onConfirm() {
+    onConfirm: function handleConfirm() {
       closure_1_0();
     }
   };
@@ -400,7 +395,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_19(closure_22, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildName) => {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerTagAlert(guildName) {
   let tmp10;
   let tmp12;
   let tmp13;
@@ -422,13 +417,13 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildName) => 
     tmp5 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function l() {
+    function handleConfirm() {
       const obj = require("openUserSettings");
       const obj2 = { screen: constants.PROFILE_CUSTOMIZATION };
       obj.openUserSettings(obj2);
-    };
-    cResult[3] = fn;
-    tmp9 = fn;
+    }
+    cResult[3] = handleConfirm;
+    tmp9 = handleConfirm;
   } else {
     tmp9 = cResult[3];
   }
@@ -469,7 +464,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildName) => 
   cResult[9] = tmp10;
   cResult[10] = tmp18;
   tmp16 = tmp18;
-}) : ((guildName) => {
+}) : (function ServerTagAlert(guildName) {
   let intl;
   let intl2;
   let intl3;
@@ -478,7 +473,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildName) => 
     title: intl.format(intl6.t.c8TwbL, { guildName }),
     description: intl2.string(intl6.t.EJJLHp),
     buttonCta: intl3.string(intl6.t.Viksoo),
-    onConfirm() {
+    onConfirm: function handleConfirm() {
       const obj = require("openUserSettings");
       const obj2 = { screen: constants.PROFILE_CUSTOMIZATION };
       obj.openUserSettings(obj2);
@@ -491,7 +486,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildName) => 
   return closure_19(closure_22, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomodUserProfileQuarantineAlert(guildId) {
   let id;
   let tmp10;
   let tmp11;
@@ -569,7 +564,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       if (cResult[12] === stateFromStores) {
         tmp18 = cResult[13];
       }
-      stateFromStores(5590)(tmp18);
+      stateFromStores(5396)(tmp18);
       if (stateFromStores2 !== GuildMemberFlags.AUTOMOD_QUARANTINED_BIO) {
         if (stateFromStores2 !== GuildMemberFlags.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) {
           if (stateFromStores2 === GuildMemberFlags.AUTOMOD_QUARANTINED_SERVER_TAG) {
@@ -625,7 +620,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       cResult[17] = tmp42;
       tmp36 = tmp42;
     }
-    const fn3 = function y() {
+    const fn3 = function v() {
       const obj = AnalyticsUtilsDefault;
       const obj2 = { type: QUARANTINE_USER_ALERT_KEY, guild_id: guildId, other_user_id: stateFromStores };
       obj.track(constants.OPEN_MODAL, obj2);
@@ -635,7 +630,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     cResult[13] = fn3;
     tmp18 = fn3;
   }
-  class R {
+  class S {
     constructor() {
       if (null == guildId) {
         return null;
@@ -650,11 +645,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const items4 = [guildId, stateFromStores];
   cResult[7] = guildId;
   cResult[8] = stateFromStores;
-  cResult[9] = R;
+  cResult[9] = S;
   cResult[10] = items4;
   tmp16 = items4;
-  tmp15 = R;
-}) : ((guildId) => {
+  tmp15 = S;
+}) : (function AutomodUserProfileQuarantineAlert(guildId) {
   let id;
   guildId = guildId.guildId;
   const tmp = guildId;
@@ -685,7 +680,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       return obj2.getAutomodReason(automodQuarantinedGuildMemberFlags);
     }
   }, items4);
-  stateFromStores(5590)(() => {
+  stateFromStores(5396)(() => {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { type: QUARANTINE_USER_ALERT_KEY, guild_id: guildId, other_user_id: stateFromStores };
     obj.track(constants.OPEN_MODAL, obj2);

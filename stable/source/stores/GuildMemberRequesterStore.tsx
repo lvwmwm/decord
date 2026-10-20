@@ -1,17 +1,17 @@
-// Module ID: 5583
-// Function ID: 5584
+// Module ID: 5951
+// Function ID: 5952
 // Name: GuildMemberRequesterStore
-// Dependencies: [2051, 2112, 5584, 584, 504, 2]
+// Dependencies: [2065, 2125, 5952, 584, 504, 2]
 
-// Module 5583 (GuildMemberRequesterStore)
+// Module 5951 (GuildMemberRequesterStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildMemberRequesterDefault from "GuildMemberRequester" /* 5584 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildMemberRequesterDefault from "GuildMemberRequester" /* 5952 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import size from "module_2" /* 2 */;
 
-const f35430 = (arg0, userIds) => {
+const f36707 = (arg0, userIds) => {
   let items;
   const obj2 = { type: "GUILD_MEMBERS_REQUEST", guildIds: items, userIds };
   items = [arg0];
@@ -79,8 +79,8 @@ function handleLoadSearchResults(arg0) {
     return false;
   }
 }
-const React3 = new GuildMemberRequesterDefault(GuildMemberStore.isMember, f35430);
-new GuildMemberRequesterDefault(GuildMemberStore.isMember, f35430);
+const React3 = new GuildMemberRequesterDefault(GuildMemberStore.isMember, f36707);
+new GuildMemberRequesterDefault(GuildMemberStore.isMember, f36707);
 const Store = get_initializedDefault.Store;
 class GuildMemberRequesterStore extends Store {
   initialize() {
@@ -121,9 +121,9 @@ let obj = {
     return false;
   },
   SEARCH_MESSAGES_SUCCESS: handleLoadSearchResults,
-  SMART_SEARCH_FETCH_SUCCESS: function handleSmartSearchFetchSuccess(arg0) {
-    let messages;
-    ({ messages, guildId: importDefault } = arg0);
+  SMART_SEARCH_FETCH_SUCCESS: function handleSmartSearchFetchSuccess(messages) {
+    messages = messages.messages;
+    const guildId = messages.smartSearchQuery.guildId;
     const item = messages.forEach((item) => {
       let author;
       let mentions;

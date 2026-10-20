@@ -1,19 +1,19 @@
-// Module ID: 12172
-// Function ID: 12173
+// Module ID: 12256
+// Function ID: 12257
 // Name: GuildPowerupRollbackSheet
-// Dependencies: [21, 558, 576, 5594, 10045, 2]
+// Dependencies: [21, 558, 576, 5379, 10325, 2]
 
-// Module 12172 (GuildPowerupRollbackSheet)
+// Module 12256 (GuildPowerupRollbackSheet)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import PromoSheet2 from "PromoSheet" /* 10045 */;
+import PromoSheet2 from "PromoSheet" /* 10325 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const components_Button_Button = tmp2(5594);
+const components_Button_Button = tmp2(5379);
 const jsx = Fragment.jsx;
-tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupRollbackSheet(arg0) {
   let body;
   let ctaText;
   let header;
@@ -48,13 +48,13 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let tmp5;
   if (null != ctaText) {
-    tmp5 = jsx(tmp(5594).Button, { variant: "primary", text: ctaText, onPress: onCtaPress });
+    tmp5 = jsx(tmp(5379).Button, { variant: "primary", text: ctaText, onPress: onCtaPress });
   }
   cResult[0] = ctaText;
   cResult[1] = onCtaPress;
   cResult[2] = tmp5;
   tmp4 = tmp5;
-}) : ((ctaText) => {
+}) : (function GuildPowerupRollbackSheet(ctaText) {
   let body;
   let header;
   let onCtaPress;

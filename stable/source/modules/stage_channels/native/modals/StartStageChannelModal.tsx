@@ -1,38 +1,39 @@
-// Module ID: 9474
-// Function ID: 9475
+// Module ID: 8665
+// Function ID: 8666
 // Name: StartStageChannelModal
-// Dependencies: [5, 32, 19, 17, 2056, 5571, 1085, 2057, 21, 4890, 587, 5093, 558, 576, 1126, 5909, 1188, 6584, 9292, 5971, 6712, 504, 8895, 4886, 9442, 9475, 9476, 5590, 1252, 1881, 8074, 6716, 5312, 9477, 9478, 8083, 5594, 6619, 6537, 2]
+// Dependencies: [5, 32, 19, 17, 2070, 5892, 1085, 2071, 21, 5092, 587, 5934, 558, 576, 1126, 6185, 1200, 6778, 8666, 6159, 6909, 504, 8575, 5088, 8669, 8670, 8671, 5396, 1265, 1894, 7483, 6913, 5635, 8672, 8673, 7492, 5379, 6814, 6729, 2]
+// Exports: default
 
-// Module 9474 (StartStageChannelModal)
+// Module 8665 (StartStageChannelModal)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl9 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1881 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import Pressables from "Pressables" /* 5909 */;
-import GuildIconDefault from "GuildIcon" /* 5971 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6584 */;
-import HotspotStore2 from "HotspotStore" /* 6712 */;
-import Form from "Form" /* 8895 */;
-import StageSparkleDefault from "StageSparkle" /* 9292 */;
+import native from "native" /* 1200 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1894 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import GuildIconDefault from "GuildIcon" /* 6159 */;
+import Pressables from "Pressables" /* 6185 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6778 */;
+import HotspotStore2 from "HotspotStore" /* 6909 */;
+import Form from "Form" /* 8575 */;
+import StageSparkleDefault from "StageSparkle" /* 8666 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StageInstanceStore from "StageInstanceStore" /* 2056 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 5571 */;
+import StageInstanceStore from "StageInstanceStore" /* 2070 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5892 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c3, c4, c5, channel, closure_12;
+let c3, c4, c5;
 
 let c10;
 let closure_14;
@@ -47,7 +48,7 @@ let obj6;
 let obj7;
 let tmp;
 let unpackModuleId;
-const GuildIcon = tmp(5971);
+const GuildIcon = tmp(6159);
 function closeModal() {
   const obj = ModalActionCreatorsDefault;
   obj.popWithKey(unpackModuleId);
@@ -69,7 +70,7 @@ obj6 = { marginTop: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE
 obj7 = { marginBottom: nativeDefault.space.PX_16 };
 let closure_16 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function NavigationBar(guild) {
   let Icon;
   let obj3;
   const obj = react2;
@@ -97,11 +98,11 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       }
       const _Symbol2 = Symbol;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj2 = { accessibilityRole: "button", accessibilityLabel: tmp8, onPress: closeModal, children: authStore2(Icon, obj3) };
-        const PressableOpacity = tmp(5909).PressableOpacity;
+        const obj2 = { accessibilityRole: "button", accessibilityLabel: tmp8, onPress: closeModal, children: syncedClientThemes(Icon, obj3) };
+        const PressableOpacity = tmp(6185).PressableOpacity;
         obj3 = { source: AssetRegistryDefault };
-        Icon = tmp(1188).Icon;
-        const tmp14 = authStore2(PressableOpacity, obj2);
+        Icon = tmp(1200).Icon;
+        const tmp14 = syncedClientThemes(PressableOpacity, obj2);
         cResult[4] = tmp14;
         tmp10 = tmp14;
       } else {
@@ -109,7 +110,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       }
       if (cResult[5] !== tmp6) {
         const obj4 = { style: tmp6, children: tmp10 };
-        const tmp18 = authStore2(metroImportDefault, obj4);
+        const tmp18 = syncedClientThemes(metroImportDefault, obj4);
         cResult[5] = tmp6;
         cResult[6] = tmp18;
         tmp15 = tmp18;
@@ -126,7 +127,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     tmp6 = items;
   }
   return tmp5;
-}) : ((guild) => {
+}) : (function NavigationBar(guild) {
   let Icon;
   let PressableOpacity;
   let intl;
@@ -137,20 +138,20 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let tmp2 = null;
   const tmp = closure_16();
   if (null == guild) {
-    const obj = { style: items, children: authStore2(PressableOpacity, obj2) };
+    const obj = { style: items, children: syncedClientThemes(PressableOpacity, obj2) };
     items = [, ];
     ({ contentContainer: arr[0], contentTopSpacing: arr[1] } = tmp);
-    obj2 = { accessibilityRole: "button", accessibilityLabel: intl.string(intl9.t.cpT0Cq), onPress: closeModal, children: authStore2(Icon, obj3) };
+    obj2 = { accessibilityRole: "button", accessibilityLabel: intl.string(intl9.t.cpT0Cq), onPress: closeModal, children: syncedClientThemes(Icon, obj3) };
     PressableOpacity = Pressables.PressableOpacity;
     intl = intl9.intl;
     obj3 = { source: AssetRegistryDefault };
     Icon = native.Icon;
-    tmp2 = authStore2(metroImportDefault, obj);
+    tmp2 = syncedClientThemes(metroImportDefault, obj);
   }
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderIcon(guild) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(4);
@@ -160,7 +161,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     let first;
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp14 = authStore2(StageSparkleDefault, {});
+      const tmp14 = syncedClientThemes(StageSparkleDefault, {});
       cResult[0] = tmp14;
       first = tmp14;
     } else {
@@ -175,27 +176,27 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
     const obj2 = { style: tmp4.guildIcon, size: GuildIcon.GuildIconSizes.LARGE, guild };
     const tmp8 = GuildIconDefault;
-    const tmp9 = authStore2(tmp8, obj2);
+    const tmp9 = syncedClientThemes(tmp8, obj2);
     cResult[1] = guild;
     cResult[2] = tmp4.guildIcon;
     cResult[3] = tmp9;
     tmp5 = tmp9;
   }
   return tmp5;
-}) : ((guild) => {
+}) : (function HeaderIcon(guild) {
   let tmp7;
   guild = guild.guild;
   if (null == guild) {
-    tmp7 = authStore2(StageSparkleDefault, {});
+    tmp7 = syncedClientThemes(StageSparkleDefault, {});
   } else {
     const obj = { style: tmp.guildIcon, size: GuildIcon.GuildIconSizes.LARGE, guild };
     const tmp5 = GuildIconDefault;
-    tmp7 = authStore2(tmp5, obj);
+    tmp7 = syncedClientThemes(tmp5, obj);
   }
   return tmp7;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationToggle(arg0) {
   let Text;
   let intl;
   let intl2;
@@ -227,9 +228,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { text: intl.string(intl9.t.BYJgew) };
-    const FormLabel = tmp(8895).FormLabel;
+    const FormLabel = tmp(8575).FormLabel;
     intl = tmp(1126).intl;
-    const tmp10 = authStore2(FormLabel, obj2);
+    const tmp10 = syncedClientThemes(FormLabel, obj2);
     cResult[2] = tmp10;
     tmp8 = tmp10;
   } else {
@@ -249,7 +250,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[10] !== sendStartNotification) {
           const obj3 = { selected: sendStartNotification };
-          const tmp21 = authStore2(native.Checkbox, obj3);
+          const tmp21 = syncedClientThemes(native.Checkbox, obj3);
           cResult[10] = sendStartNotification;
           cResult[11] = tmp21;
           tmp19 = tmp21;
@@ -268,7 +269,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         const obj4 = { DEPRECATED_style: tmp4.notificationToggle, label: tmp15, onPress: onToggle, trailing: tmp19 };
-        const tmp24 = authStore2(Form.FormRow, obj4);
+        const tmp24 = syncedClientThemes(Form.FormRow, obj4);
         cResult[12] = onToggle;
         cResult[13] = tmp4.notificationToggle;
         cResult[14] = tmp15;
@@ -278,7 +279,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const obj5 = { style: tmp4.label, children: items1 };
       items1 = [tmp8, tmp11];
-      const tmp18 = closure_15(metroImportDefault, obj5);
+      const tmp18 = authStore3(metroImportDefault, obj5);
       cResult[7] = tmp4.label;
       cResult[8] = tmp11;
       cResult[9] = tmp18;
@@ -287,18 +288,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let tmp12 = null;
   if (stateFromStores) {
-    const obj6 = { style: tmp4.pill, children: authStore2(Text, obj7) };
+    const obj6 = { style: tmp4.pill, children: syncedClientThemes(Text, obj7) };
     obj7 = { style: tmp4.pillLabel, variant: "text-xxs/bold", color: "text-overlay-light", children: intl2.string(intl9.t.y2b7CA) };
-    Text = tmp(4886).Text;
+    Text = tmp(5088).Text;
     intl2 = tmp(1126).intl;
-    tmp12 = authStore2(metroImportDefault, obj6);
+    tmp12 = syncedClientThemes(metroImportDefault, obj6);
   }
   cResult[3] = stateFromStores;
   cResult[4] = tmp4.pill;
   cResult[5] = tmp4.pillLabel;
   cResult[6] = tmp12;
   tmp11 = tmp12;
-}) : ((arg0) => {
+}) : (function NotificationToggle(arg0) {
   let Text;
   let intl;
   let intl2;
@@ -318,33 +319,36 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const HotspotStore = HotspotStore2.HotspotStore;
     return HotspotStore.hasHotspot(HotspotStore2.HotspotLocations.LIVE_STAGE_NOTIFICATION_BADGE);
   });
-  const obj = { DEPRECATED_style: tmp.notificationToggle, label: tmp7(metroImportDefault, obj2), onPress: onToggle, trailing: authStore2(native.Checkbox, { selected: sendStartNotification }) };
+  const obj = { DEPRECATED_style: tmp.notificationToggle, label: tmp7(metroImportDefault, obj2), onPress: onToggle, trailing: syncedClientThemes(native.Checkbox, { selected: sendStartNotification }) };
   obj2 = { style: tmp.label, children: items1 };
   const FormRow = Form.FormRow;
   const obj3 = { text: intl.string(intl9.t.BYJgew) };
   const FormLabel = Form.FormLabel;
   intl = intl9.intl;
-  items1 = [authStore2(FormLabel, obj3), ];
+  items1 = [syncedClientThemes(FormLabel, obj3), ];
   let tmp6Result = null;
-  tmp7 = closure_15;
+  tmp7 = authStore3;
   if (stateFromStores) {
-    const obj4 = { style: tmp.pill, children: authStore2(Text, obj5) };
+    const obj4 = { style: tmp.pill, children: syncedClientThemes(Text, obj5) };
     obj5 = { style: tmp.pillLabel, variant: "text-xxs/bold", color: "text-overlay-light", children: intl2.string(intl9.t.y2b7CA) };
-    Text = tmp2(4886).Text;
+    Text = tmp2(5088).Text;
     intl2 = tmp2(1126).intl;
     tmp6Result = tmp6(tmp8, obj4);
   }
   items1[1] = tmp6Result;
-  return authStore2(FormRow, obj);
+  return syncedClientThemes(FormRow, obj);
 });
 let closure_20 = tmp6;
-const forwardRefResult = react.forwardRef((channel, ref) => {
+let result = size.fileFinishedImporting("modules/stage_channels/native/modals/StartStageChannelModal.tsx");
+
+export default function StartStageChannelModal(arg0) {
   let Button;
   let _undefined;
   let _undefined2;
   let c16;
   let c8;
   let c9;
+  let channel;
   let closure_13;
   let closure_5;
   let guild;
@@ -358,13 +362,14 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
   let obj18;
   let obj19;
   let obj2;
+  let ref;
   let stringResult;
   let stringResult1;
   let stringResult2;
   let tmp15;
   let tmp28Result2;
   let tmp6;
-  ({ guild, onStageStarted: require, onClose: importDefault } = channel);
+  ({ guild, onStageStarted: require, onClose: importDefault } = arg0);
   channel = undefined;
   let first1;
   _slicedToArray = undefined;
@@ -374,7 +379,7 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
   c9 = undefined;
   let canSendStageStartNotification;
   let first3;
-  closure_12 = undefined;
+  let closure_12;
   constants = undefined;
   let obj5;
   ref = undefined;
@@ -496,7 +501,7 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
     });
     return obj(...arguments);
   };
-  channel = channel.channel;
+  ({ channel, ref } = arg0);
   let tmp = c16();
   onConfirmPress = first2;
   const imperativeHandle = first2.useImperativeHandle(ref, () => {
@@ -710,8 +715,5 @@ const forwardRefResult = react.forwardRef((channel, ref) => {
     tmp33Result8 = tmp33(SafeAreaPaddingView, rect);
   }
   return tmp33Result8;
-});
-let result = size.fileFinishedImporting("modules/stage_channels/native/modals/StartStageChannelModal.tsx");
-
-export default forwardRefResult;
+};
 export const NotificationToggle = tmp6;

@@ -1,31 +1,31 @@
-// Module ID: 17784
-// Function ID: 17785
+// Module ID: 18413
+// Function ID: 18414
 // Name: GuildSettingsRoleTemplate
-// Dependencies: [32, 19, 17, 4879, 2074, 17780, 1085, 21, 4890, 587, 558, 576, 6433, 1484, 5770, 4612, 1252, 5070, 4886, 1188, 11181, 5594, 1126, 7952, 5909, 10491, 2]
+// Dependencies: [32, 19, 17, 5081, 2087, 18409, 1085, 21, 5092, 587, 558, 576, 6627, 1497, 5362, 4850, 1265, 5107, 5088, 1200, 10714, 5379, 1126, 8400, 6185, 10117, 2]
 
-// Module 17784 (GuildSettingsRoleTemplate)
+// Module 18413 (GuildSettingsRoleTemplate)
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5770 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6433 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11181 */;
+import native from "native" /* 1200 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5362 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6627 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10714 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 17780 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 18409 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let onSelect, title;
+let title;
 
 let Dimensions;
 let c10;
@@ -41,9 +41,9 @@ let obj3;
 let tmp11;
 let tmp2;
 let unpackModuleId;
-const ReanimatedRexport = tmp11(4612);
-const _modDef7952 = tmp2(7952);
-const PaginationDefault = tmp2(10491);
+const ReanimatedRexport = tmp11(4850);
+const _modDef8400 = tmp2(8400);
+const PaginationDefault = tmp2(10117);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, Dimensions, ScrollView: metroRequire } = react_native);
 ({ PermissionTemplateTypes: c9, PermissionTemplates: c10, DEFAULT_TEMPLATE_TYPE: unpackModuleId } = GuildSettingsRoleConstants);
@@ -59,7 +59,7 @@ obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderColor:
 let closure_18 = createStyles(obj);
 const __initData = { code: "function GuildSettingsRoleTemplateTsx1(value){const{interpolate,sheetWidth,parallaxScrollingOffset,Extrapolation,inactiveOpacity}=this.__closure;const translate=interpolate(value,[-1,0,1],[-sheetWidth+parallaxScrollingOffset,0,sheetWidth-parallaxScrollingOffset]);const zIndex=Math.round(interpolate(value,[-1,0,1],[0,sheetWidth,0],Extrapolation.CLAMP));return{transform:[{translateX:translate}],opacity:interpolate(value,[-1,0,1],[inactiveOpacity,1,inactiveOpacity],Extrapolation.CLAMP),zIndex:zIndex};}" };
 const __initData2 = { code: "function GuildSettingsRoleTemplateTsx2(value){const{interpolate,sheetWidth,parallaxScrollingOffset,Extrapolation,inactiveOpacity}=this.__closure;const translate=interpolate(value,[-1,0,1],[-sheetWidth+parallaxScrollingOffset,0,sheetWidth-parallaxScrollingOffset]);const zIndex=Math.round(interpolate(value,[-1,0,1],[0,sheetWidth,0],Extrapolation.CLAMP));return{transform:[{translateX:translate}],opacity:interpolate(value,[-1,0,1],[inactiveOpacity,1,inactiveOpacity],Extrapolation.CLAMP),zIndex:zIndex};}" };
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleTemplate(onSelect) {
   let bound;
   let closure_3;
   let closure_6;
@@ -240,7 +240,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
   cResult[3] = height;
   cResult[4] = width;
   cResult[5] = items;
-}) : ((arg0) => {
+}) : (function GuildSettingsRoleTemplate(arg0) {
   let closure_3;
   let closure_7;
   let closure_9;
@@ -337,7 +337,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
   const values = Object.values(num);
   let obj4 = { ref, style: tmp.container, children: items3 };
   let obj5 = { style: tmp.sliderContainer, children: items2 };
-  let obj6 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_14(_modDef7952, obj7) };
+  let obj6 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_14(_modDef8400, obj7) };
   obj7 = { maximumValue: values.length - 1, minimumTrackTintColor: values[value].color, minimumValue: closure_9.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[value].color, value, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" };
   items2 = [closure_14(ref1, obj6), ];
   let obj8 = {
@@ -379,7 +379,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
   obj10 = {
     ref: ref1,
     data: values,
-    renderItem(item) {
+    renderItem: function renderCarouselItem(item) {
       let Button;
       let contentsResult;
       let intl;
@@ -424,10 +424,10 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
           const obj = { style: closure_3.templateContent, children: items };
           const obj2 = { source: AssetRegistryDefault, size: native.IconSizes.MEDIUM, color: nativeDefault.unsafe_rawColors.GREEN_360 };
           const Icon = native.Icon;
-          items = [authStore2(Icon, obj2), ];
+          items = [syncedClientThemes(Icon, obj2), ];
           const obj3 = { style: closure_3.templateContentText, variant: "text-sm/medium", children };
-          items[1] = authStore2(Text_Text.Text, obj3);
-          return closure_15(hasOwnProperty, obj, "" + item.key + "_content_" + index);
+          items[1] = syncedClientThemes(Text_Text.Text, obj3);
+          return authStore3(hasOwnProperty, obj, "" + item.key + "_content_" + index);
         })
       };
       contentsResult = item.contents();
@@ -471,8 +471,8 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
     enabled: !isScreenReaderEnabled,
     scrollAnimationDuration: 200,
     customAnimation: callback,
-    onSnapToItem(result) {
-      closure_7(result);
+    onSnapToItem: function handleCarouselSnap(arg0) {
+      closure_7(arg0);
     },
     onConfigurePanGesture(activeOffsetX) {
       activeOffsetX.activeOffsetX([-10, 10]);

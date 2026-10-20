@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b4bc35e77125dd7a659435efd876e4cc", name: "ChannelListIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 414.5, height: 200, scales: [2, 3], hash: "ad997b689c0c3a8b01184b1daa84d93c", name: "pending_light", type: "png" });

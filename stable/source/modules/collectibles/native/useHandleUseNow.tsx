@@ -1,22 +1,20 @@
-// Module ID: 10819
-// Function ID: 10820
+// Module ID: 10637
+// Function ID: 10638
 // Name: useHandleUseNow
-// Dependencies: [19, 10820, 558, 576, 4854, 5093, 4737, 4568, 1126, 10821, 9416, 2]
+// Dependencies: [19, 10638, 558, 576, 5056, 5934, 4977, 4809, 1126, 10639, 10642, 2]
 
-// Module 10819 (useHandleUseNow)
-import RootNavigationRef from "RootNavigationRef" /* 4737 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import MainTabsConstants from "MainTabsConstants" /* 10820 */;
+// Module 10637 (useHandleUseNow)
+import RootNavigationRef from "RootNavigationRef" /* 4977 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import MainTabsConstants from "MainTabsConstants" /* 10638 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let product;
-
 let react = react_mod;
 const RootNavigatorScreen = MainTabsConstants.RootNavigatorScreen;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleUseNow(product) {
   let analyticsLocations;
   let canUseNow;
   let closure_3;
@@ -41,11 +39,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const fn2 = function h() {
         let intl;
-        const obj = { key: "collectible shop apply error", content: intl.string(require("intl").t.CKsXk3) };
+        const obj = { text: intl.string(require("intl").t.CKsXk3) };
         const open = onSuccess(stageCollectibleChangeForEditProfile[7]).open;
         onSuccess(stageCollectibleChangeForEditProfile[7]);
         intl = require("intl").intl;
-        open(obj);
+        open("collectible shop apply error", obj);
       };
       cResult[3] = fn2;
       tmp6 = fn2;
@@ -73,7 +71,19 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
               let obj2 = { analyticsLocations };
               cResult[12] = analyticsLocations;
               cResult[13] = obj2;
-              tmp11 = obj2;
+              class R {
+                constructor() {
+                  closure_5();
+                  if (null == onSuccess) {
+                    const obj = ActionSheetActionCreatorsDefault;
+                    obj.hideAllActionSheets();
+                    const obj2 = ModalActionCreatorsDefault;
+                    obj2.popAll();
+                  } else {
+                    tmp2();
+                  }
+                }
+              }
             } else {
               tmp11 = cResult[13];
             }
@@ -95,7 +105,20 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
                   }
                 }
               }
-              let obj3 = { handleUseNow: tmp10, isApplying, canUseNow, handleEditProfile: tmp14 };
+              let obj3 = { handleUseNow: tmp10, isApplying, canUseNow, handleEditProfile: null };
+              class R {
+                constructor() {
+                  closure_5();
+                  if (null == onSuccess) {
+                    const obj = ActionSheetActionCreatorsDefault;
+                    obj.hideAllActionSheets();
+                    const obj2 = ModalActionCreatorsDefault;
+                    obj2.popAll();
+                  } else {
+                    tmp2();
+                  }
+                }
+              }
               class A {
                 constructor() {
                   if (null != stageCollectibleChangeForEditProfile) {
@@ -112,17 +135,19 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
               cResult[21] = obj3;
               tmp15 = obj3;
             }
-            const fn3 = function k() {
-              closure_5();
-              if (null == onSuccess) {
-                const obj = ActionSheetActionCreatorsDefault;
-                obj.hideAllActionSheets();
-                const obj2 = ModalActionCreatorsDefault;
-                obj2.popAll();
-              } else {
-                tmp2();
+            class R {
+              constructor() {
+                closure_5();
+                if (null == onSuccess) {
+                  const obj = ActionSheetActionCreatorsDefault;
+                  obj.hideAllActionSheets();
+                  const obj2 = ModalActionCreatorsDefault;
+                  obj2.popAll();
+                } else {
+                  tmp2();
+                }
               }
-            };
+            }
             class A {
               constructor() {
                 if (null != stageCollectibleChangeForEditProfile) {
@@ -134,8 +159,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
               }
             }
             cResult[15] = tmp13;
-            cResult[16] = fn3;
-            tmp14 = fn3;
+            cResult[16] = R;
+            tmp14 = R;
           }
         }
       }
@@ -186,7 +211,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   cResult[1] = stageCollectibleChangeForEditProfile;
   cResult[2] = fn;
   tmp4 = fn;
-}) : ((product) => {
+}) : (function useHandleUseNow(product) {
   let canUseNow;
   let isApplying;
   let items2;
@@ -216,11 +241,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   }, items);
   const callback1 = onSuccess.useCallback(() => {
     let intl;
-    const obj = { key: "collectible shop apply error", content: intl.string(require("intl").t.CKsXk3) };
+    const obj = { text: intl.string(require("intl").t.CKsXk3) };
     const open = onSuccess(stageCollectibleChangeForEditProfile[7]).open;
     onSuccess(stageCollectibleChangeForEditProfile[7]);
     intl = require("intl").intl;
-    open(obj);
+    open("collectible shop apply error", obj);
   }, []);
   let obj = require("hooks/useHandleUseNow");
   const handleUseNow1 = obj.useHandleUseNow({ product, onSuccess, onError: callback1 });

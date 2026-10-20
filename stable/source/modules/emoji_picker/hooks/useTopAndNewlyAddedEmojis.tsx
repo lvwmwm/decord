@@ -1,12 +1,12 @@
-// Module ID: 9874
-// Function ID: 9875
+// Module ID: 9430
+// Function ID: 9431
 // Name: useTopAndNewlyAddedEmojis
-// Dependencies: [5638, 1380, 558, 576, 573, 2]
+// Dependencies: [5987, 1393, 558, 576, 573, 2]
 // Exports: getTopAndNewlyAddedEmojis
 
-// Module 9874 (useTopAndNewlyAddedEmojis)
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import EmojiStore from "EmojiStore" /* 5638 */;
+// Module 9430 (useTopAndNewlyAddedEmojis)
+import EmojiConstants from "EmojiConstants" /* 1393 */;
+import EmojiStore from "EmojiStore" /* 5987 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let _require, dependencyMap;
 
 const EmojiIntention = EmojiConstants.EmojiIntention;
 let closure_4 = [];
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTopAndNewlyAddedEmojis(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmpResult = tmp(573);
     return tmpResult.useStateFromStoresObject(first, tmp6, tmp7);
   }
-  const fn = function c() {
+  const fn = function l() {
     let newlyAddedEmoji;
     if (EmojiStore !== undefined) {
       let topEmoji;
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useTopAndNewlyAddedEmojis(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;

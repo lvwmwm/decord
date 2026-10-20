@@ -1,23 +1,22 @@
-// Module ID: 12847
-// Function ID: 12848
+// Module ID: 13154
+// Function ID: 13155
 // Name: UserProfileActivityVoiceChannel
-// Dependencies: [17, 2070, 4509, 1096, 21, 4890, 1369, 6657, 7861, 5770, 12848, 5043, 504, 5881, 5885, 1126, 5971, 5909, 4574, 4568, 6708, 4886, 9260, 5097, 4854, 12849, 1987, 7850, 12850, 1188, 2]
+// Dependencies: [17, 2083, 4750, 1096, 21, 5092, 1382, 6852, 8310, 5362, 13155, 5421, 504, 8220, 8224, 1126, 6159, 6185, 4809, 6906, 5088, 8646, 7477, 5056, 13156, 2000, 8299, 13157, 1200, 2]
 // Exports: default
 
-// Module 12847 (UserProfileActivityVoiceChannel)
+// Module 13154 (UserProfileActivityVoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1096 */;
-import native from "native" /* 1188 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import GuildRecord from "GuildRecord" /* 2070 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4574 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5097 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+import native from "native" /* 1200 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import GuildRecord from "GuildRecord" /* 2083 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7477 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -71,7 +70,7 @@ export default function UserProfileActivityVoiceChannel(guild) {
   const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   const users = channel(onAction[10])(channel);
   const tmp6 = channel(onAction[11])(channel);
-  let obj3 = guild(onAction[12]);
+  const obj3 = guild(onAction[12]);
   const items = [users];
   const stateFromStores = obj3.useStateFromStores(items, () => {
     let isPrivateResult = channel.isPrivate();
@@ -86,10 +85,10 @@ export default function UserProfileActivityVoiceChannel(guild) {
   } else {
     VoiceNormalIcon = tmp4(tmp3[14]).VoiceNormalIcon;
   }
-  let obj4 = { style: items1, children: items2 };
+  const obj4 = { style: items1, children: items2 };
   items1 = [tmp.container, style];
   if (isScreenReaderEnabled) {
-    let obj5 = { accessible: true, accessibilityLabel: intl.formatToPlainString(tmp4(tmp3[15]).t.xm6W9D, obj6), children: closure_7(tmp2Result, obj7) };
+    const obj5 = { accessible: true, accessibilityLabel: intl.formatToPlainString(guild(onAction[15]).t.xm6W9D, obj6), children: closure_7(tmp2Result, obj7) };
     intl = tmp4(tmp3[15]).intl;
     obj6 = { guildName: guild.name };
     obj7 = { size: guild(onAction[16]).GuildIconSizes.XXSMALL, guild };
@@ -100,29 +99,12 @@ export default function UserProfileActivityVoiceChannel(guild) {
     const obj8 = {
       accessibilityRole: "button",
       accessibilityLabel: guild.name,
-      onPress() {
-          let obj4;
-          let tmp = onAction({ action: "PRESS_VOICE_CHANNEL_ICON" });
-          let obj = DesignSystemsNotificationComponentsExperiment;
-          const designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("UserProfileActivityVoiceChannel");
-          const obj2 = ToastActionCreatorsDefault;
-          if (designSystemsNotificationComponents) {
-            const obj3 = { text: guild.name, icon: obj4 };
-            const openMana = obj2.openMana;
-            obj4 = { type: "guild", src: getGuildIconURL(guild, 48), name: guild.name };
-            openMana("GUILD_NAME_TOAST", obj3);
-          } else {
-            const obj5 = {
-              key: "GUILD_NAME_TOAST",
-              content: guild.name,
-              icon() {
-                  const obj = { size: guild(onAction[16]).GuildIconSizes.XSMALL, guild };
-                  const tmp = channel(onAction[16]);
-                  return closure_2_7(tmp, obj);
-                }
-            };
-            obj2.open(obj5);
-          }
+      onPress: function handlePress() {
+          onAction({ action: "PRESS_VOICE_CHANNEL_ICON" });
+          const obj2 = { text: guild.name, icon: { type: "guild", src: getGuildIconURL(guild, 48), name: guild.name } };
+          const obj = ToastActionCreatorsDefault;
+          ({ type: "guild", src: getGuildIconURL(guild, 48), name: guild.name });
+          obj.open("GUILD_NAME_TOAST", obj2);
         },
       children: closure_7(tmp2Result2, obj9)
     };
@@ -132,14 +114,14 @@ export default function UserProfileActivityVoiceChannel(guild) {
     tmp10Result = tmp10(PressableOpacity, obj8);
     tmp13 = tmp10;
   }
-  items2 = [tmp10Result, tmp13(tmp4(tmp3[20]).ChevronSmallRightIcon, { size: "xxs", color: "text-default" }), , ];
+  items2 = [tmp10Result, tmp13(tmp4(tmp3[19]).ChevronSmallRightIcon, { size: "xxs", color: "text-default" }), , ];
   if (stateFromStores) {
     const obj10 = {
       style: tmp.channelButton,
       accessibilityRole: "button",
-      accessibilityLabel: channel(onAction[22])(obj11),
+      accessibilityLabel: channel(onAction[21])(obj11),
       accessibilityHint: intl2.string(guild(onAction[15]).t["9C444m"]),
-      onPress() {
+      onPress: function handlePress_0() {
           onAction({ action: "OPEN_VOICE_CHANNEL" });
           const obj = PrivateChannelCallUtils;
           obj.openGuildVoiceModal(channel, newestAnalyticsLocation);
@@ -153,20 +135,20 @@ export default function UserProfileActivityVoiceChannel(guild) {
     intl2 = tmp4(tmp3[15]).intl;
     items3 = [tmp13(VoiceNormalIcon, { size: "xxs", color: "text-default" }), ];
     const obj12 = { style: tmp.channelName, variant: "text-xs/normal", lineClamp: 1, children: tmp6 };
-    items3[1] = tmp13(guild(onAction[21]).Text, obj12);
+    items3[1] = tmp13(guild(onAction[20]).Text, obj12);
     tmp8Result = tmp8(PressableOpacity2, obj10);
   } else {
     const obj13 = { style: tmp.channelButton, children: items4 };
     items4 = [tmp13(VoiceNormalIcon, { size: "xxs", color: "text-default" }), ];
     const obj14 = { style: tmp.channelName, variant: "text-xs/normal", lineClamp: 1, children: tmp6 };
-    items4[1] = tmp13(guild(onAction[21]).Text, obj14);
+    items4[1] = tmp13(guild(onAction[20]).Text, obj14);
     tmp8Result = tmp8(tmp9, obj13);
   }
   items2[2] = tmp8Result;
   const obj15 = {
     accessibilityRole: "button",
     accessibilityLabel: intl3.formatToPlainString(guild(onAction[15]).t.e95u3C, obj16),
-    onPress() {
+    onPress: function handlePressAvatars() {
       let tmp = onAction({ action: "PRESS_VOICE_CHANNEL_AVATARS" });
       let obj = ActionSheetActionCreatorsDefault;
       const obj2 = {
@@ -174,12 +156,12 @@ export default function UserProfileActivityVoiceChannel(guild) {
         channel,
         onPressUser(userId) {
           const obj = { userId };
-          const tmp = channel(onAction[27]);
+          const tmp = channel(onAction[26]);
           const merged = Object.assign(context);
           return tmp(obj);
         }
       };
-      obj.openLazy(asyncRequire(12849, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
+      obj.openLazy(asyncRequire(13156, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
     },
     children: tmp13(AvatarPile, obj17)
   };
@@ -187,7 +169,7 @@ export default function UserProfileActivityVoiceChannel(guild) {
   intl3 = tmp4(tmp3[15]).intl;
   obj16 = { count: users.length };
   obj17 = {
-    size: guild(onAction[29]).AvatarSizes.SIZE_16,
+    size: guild(onAction[28]).AvatarSizes.SIZE_16,
     totalCount: users.length,
     names: users.map((username) => username.username),
     children: substr.map((user) => {
@@ -196,7 +178,7 @@ export default function UserProfileActivityVoiceChannel(guild) {
       return metroImportDefault(Avatar, obj, user.id);
     })
   };
-  AvatarPile = tmp4(tmp3[28]).AvatarPile;
+  AvatarPile = tmp4(tmp3[27]).AvatarPile;
   substr = users;
   if (users.length > 3) {
     substr = users.slice(0, 3);

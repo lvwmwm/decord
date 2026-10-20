@@ -1,25 +1,25 @@
-// Module ID: 8457
-// Function ID: 8458
+// Module ID: 9000
+// Function ID: 9001
 // Name: ProfileEffect
-// Dependencies: [32, 19, 17, 4879, 1986, 21, 4890, 558, 576, 1484, 8458, 8459, 8460, 8462, 504, 1105, 8463, 8461, 5974, 7898, 2]
+// Dependencies: [32, 19, 17, 5081, 1999, 21, 5092, 558, 576, 1497, 9001, 9002, 9003, 9005, 504, 1105, 9006, 9004, 6157, 8348, 2]
 
-// Module 8457 (ProfileEffect)
+// Module 9000 (ProfileEffect)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import useProfileEffectDefault from "useProfileEffect" /* 7898 */;
-import utils from "utils" /* 8458 */;
-import profile_effects_constants from "profile_effects/constants" /* 8459 */;
-import ProfileEffectUtils from "ProfileEffectUtils" /* 8460 */;
-import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 8463 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8348 */;
+import utils from "utils" /* 9001 */;
+import profile_effects_constants from "profile_effects/constants" /* 9002 */;
+import ProfileEffectUtils from "ProfileEffectUtils" /* 9003 */;
+import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9006 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import AppStateStore from "AppStateStore" /* 1986 */;
-import createStyles from "createStyles" /* 4890 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let _slicedToArray = _slicedToArray_mod;
 let jsx = Fragment.jsx;
 let closure_10 = createStyles.createStyles({ profileEffects: { position: "absolute", width: "100%", top: 0, bottom: 0, left: 0, right: 0, flex: 1, justifyContent: "flex-start" }, effect: { position: "absolute" } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreloadProfileEffect(arr) {
   let tmp11;
   let tmp12;
   let tmp2;
@@ -105,7 +105,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr) {
     tmp12 = cResult[7];
   }
   return tmp12;
-}) : ((arg0) => {
+}) : (function usePreloadProfileEffect(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   const memo = react.useMemo(() => {
@@ -135,7 +135,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arr) {
 });
 let closure_11 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileDimensions() {
   let closure_129_0;
   let first;
   let tmp3;
@@ -165,7 +165,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[2] = tmp3;
   cResult[3] = size;
   tmp5 = size;
-}) : (() => {
+}) : (function useProfileDimensions() {
   const tmp = _slicedToArray(react.useState(0), 2);
   let closure_0 = tmp[1];
   size = {
@@ -297,7 +297,7 @@ function ProfileEffect(profileEffect) {
   })}</accessibilityLabel>;
 }
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((thumbnailUrlOverride) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function StaticEffect(thumbnailUrlOverride) {
   let bannerAdjustment;
   let profileEffect;
   let tmp6;
@@ -444,7 +444,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((thumbnailUrlOv
   cResult[5] = items1;
   tmp8 = items1;
   tmp7 = fn;
-}) : ((useThumbnail) => {
+}) : (function StaticEffect(useThumbnail) {
   let accessibilityLabel;
   let bannerAdjustment;
   let c3;
@@ -501,7 +501,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((thumbnailUrlOv
   return <tmp7 {...obj3} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WrappedProfileEffect(skuId) {
   let tmp5;
   let tmp6;
   let useReducedMotion;
@@ -564,7 +564,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     tmp18 = tmp21;
   }
   return tmp10;
-}) : ((skuId) => {
+}) : (function WrappedProfileEffect(skuId) {
   let useReducedMotion;
   const items = [AccessibilityStore];
   const tmp = useProfileEffectDefault(skuId.skuId);

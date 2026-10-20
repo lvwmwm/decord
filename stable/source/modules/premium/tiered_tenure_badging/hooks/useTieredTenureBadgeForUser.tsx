@@ -1,19 +1,19 @@
-// Module ID: 10876
-// Function ID: 10877
+// Module ID: 10566
+// Function ID: 10567
 // Name: useTieredTenureBadgeForUser
-// Dependencies: [7111, 1377, 558, 576, 7119, 504, 2]
+// Dependencies: [7316, 1390, 558, 576, 7325, 504, 2]
 
-// Module 10876 (useTieredTenureBadgeForUser)
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7119 */;
-import UserProfileStore from "UserProfileStore" /* 7111 */;
-import UserStore from "UserStore" /* 1377 */;
+// Module 10566 (useTieredTenureBadgeForUser)
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7325 */;
+import UserProfileStore from "UserProfileStore" /* 7316 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTieredTenureBadgeForUser(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -85,7 +85,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+}) : (function useTieredTenureBadgeForUser(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

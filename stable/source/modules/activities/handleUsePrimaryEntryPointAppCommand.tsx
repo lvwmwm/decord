@@ -1,17 +1,17 @@
-// Module ID: 10946
-// Function ID: 10947
+// Module ID: 11617
+// Function ID: 11618
 // Name: handleUsePrimaryEntryPointAppCommand
-// Dependencies: [5, 2051, 1377, 9004, 9048, 8990, 10947, 8993, 2]
+// Dependencies: [5, 2065, 1390, 10869, 10824, 11618, 10854, 2]
 // Exports: default
 
-// Module 10946 (handleUsePrimaryEntryPointAppCommand)
-import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 9004 */;
+// Module 11617 (handleUsePrimaryEntryPointAppCommand)
+import getCachedOrFetchActivityApplicationForLaunchDefault from "getCachedOrFetchActivityApplicationForLaunch" /* 10869 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
-let analyticsLocations, channelId, commandOrigin, componentId, customId, embeddedActivitiesManager, inviterUserId, locationObject, onConfirmActivityLaunchChecksAlertOpen, referrerId, sectionName, source;
+let analyticsLocations, channelId, commandOrigin, componentId, customId, inviterUserId, locationObject, onConfirmActivityLaunchChecksAlertOpen, referrerId, sectionName, source;
 
 let obj = function _handleUsePrimaryEntryPointAppCommand() {
   obj = _asyncToGenerator(async (arg0) => {
@@ -159,11 +159,10 @@ obj = function _handleUsePrimaryEntryPointAppCommandInternal() {
               inviterUserId = undefined;
               onConfirmActivityLaunchChecksAlertOpen = undefined;
               ({ targetApplication: c0, locationObject: c1, channelId: c2, analyticsLocations: c3, componentId: c4, commandOrigin: c5, sectionName: c6, source: c7, onExecutedCallback: c8, referrerId: c9, customId: c10, inviterUserId: c11, onConfirmActivityLaunchChecksAlertOpen: c12 } = closure_0);
-              embeddedActivitiesManager = undefined;
               currentUser = undefined;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Set", done: true };
             }
           } else {
             let tmp5;
@@ -175,7 +174,6 @@ obj = function _handleUsePrimaryEntryPointAppCommandInternal() {
                 componentId = 3;
                 return { value, done: true };
               } else {
-                embeddedActivitiesManager = closure_130_1(closure_130_3[5])();
                 currentUser = closure_130_6.getCurrentUser();
                 let tmp16 = null != channelId;
                 if (tmp16) {
@@ -184,13 +182,13 @@ obj = function _handleUsePrimaryEntryPointAppCommandInternal() {
                     tmp5 = null != currentUser && null != user;
                     const tmp13 = null != currentUser && null != user;
                     if (tmp5) {
-                      const obj3 = closure_130_2(closure_130_3[6]);
+                      const obj3 = closure_130_2(closure_130_3[5]);
                       obj3.markActivityUsed(user.id);
-                      const obj7 = { channelId, applicationId: user.id, isStart: true, embeddedActivitiesManager, componentId, commandOrigin, sectionName, locationObject, analyticsLocations, source, onExecutedCallback, referrerId, customId, inviterUserId, onConfirmActivityLaunchChecksAlertOpen };
+                      const obj7 = { channelId, applicationId: user.id, isStart: true, componentId, commandOrigin, sectionName, locationObject, analyticsLocations, source, onExecutedCallback, referrerId, customId, inviterUserId, onConfirmActivityLaunchChecksAlertOpen };
                       analyticsLocations = 2;
                       componentId = 1;
                       const obj8 = { value: obj4.runPrimaryAppCommandOrJoinEmbeddedActivity(obj7), done: false };
-                      obj4 = closure_130_0(closure_130_3[7]);
+                      obj4 = closure_130_0(closure_130_3[6]);
                       return obj8;
                     }
                   }
@@ -211,9 +209,9 @@ obj = function _handleUsePrimaryEntryPointAppCommandInternal() {
             }
             tmp10 = tmp5;
           }
-        } catch (tmp39) {
+        } catch (tmp37) {
           componentId = 3;
-          throw tmp39;
+          throw tmp37;
         }
       }
     })();

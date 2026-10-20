@@ -1,31 +1,30 @@
-// Module ID: 17220
-// Function ID: 17221
+// Module ID: 17815
+// Function ID: 17816
 // Name: VoicePanelHeaderUserState
-// Dependencies: [19, 4906, 21, 4612, 8567, 4890, 587, 558, 576, 17221, 17219, 9335, 5976, 11901, 504, 4891, 2]
+// Dependencies: [19, 6036, 21, 4850, 8537, 5092, 587, 558, 576, 17816, 17814, 8793, 6162, 11973, 504, 5093, 2]
 
-// Module 17220 (VoicePanelHeaderUserState)
+// Module 17815 (VoicePanelHeaderUserState)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import timing from "timing" /* 4891 */;
-import NativeViewDefault from "NativeView" /* 5976 */;
-import native from "native" /* 8567 */;
-import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 17221 */;
+import timing from "timing" /* 5093 */;
+import NativeViewDefault from "NativeView" /* 6162 */;
+import native from "native" /* 8537 */;
+import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 17816 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const useVoicePanelCardUserStateIconsDefault = useVoicePanelCardUserStateIcons;
-let type;
 
 let rect;
 let size;
 let size1;
 let tmp2;
-const useStableParticipant = tmp2(17219);
+const useStableParticipant = tmp2(17814);
 const jsx = Fragment.jsx;
 let closure_6 = ReanimatedRexport.createAnimatedComponent(native.BackgroundBlurView);
 const OPACITY_TIMING = { duration: 100 };
@@ -37,7 +36,7 @@ size = { width: 20, height: 20, borderRadius: nativeDefault.radii.round, alignIt
 size1 = { width: 12, height: 12, tintColor: nativeDefault.colors.WHITE };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((type, arg1, arg2) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelHeaderUserStateIcons(type, arg1, arg2) {
   let obj6;
   const obj = react2;
   const cResult = obj.c(9);
@@ -92,21 +91,21 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((type, arg1, arg2) 
     let tmp14 = require;
     if (nextResult.type === useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.USER_VIDEO_ICON) {
       let push = items1.push;
-      let BackgroundBlurView = tmp14(8567).BackgroundBlurView;
+      let BackgroundBlurView = tmp14(8537).BackgroundBlurView;
       let obj4 = { style: tmp6.floatingIcon, state: tmp12.videoIconState };
       let arr2 = push(<BackgroundBlurView key="video" blurTheme="dark" style={tmp6.floatingIconWrapper}>{null}</BackgroundBlurView>);
     }
-    if (tmp12.type === tmp14(17221).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+    if (tmp12.type === tmp14(17816).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
       let tmp41 = jsx;
       let push2 = items1.push;
       let tmp42 = jsx;
       let items2 = [tmp6.floatingIconWrapper, ];
       let leftMargin;
-      let BackgroundBlurView2 = tmp14(8567).BackgroundBlurView;
+      let BackgroundBlurView2 = tmp14(8537).BackgroundBlurView;
       if (tmp12.withLeftMargin) {
         leftMargin = tmp6.leftMargin;
       }
-      let obj5 = { blurTheme: "dark", style: items2, children: tmp42(tmp14(9335).MuteDeafenIcon, obj6) };
+      let obj5 = { blurTheme: "dark", style: items2, children: tmp42(tmp14(8793).MuteDeafenIcon, obj6) };
       items2[1] = leftMargin;
       obj6 = { style: tmp6.floatingIcon, state: tmp12.muteDeafenIconState };
       let push2Result = push2(tmp41(BackgroundBlurView2, obj5, "mute-deafen"));
@@ -117,7 +116,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((type, arg1, arg2) 
   cResult[1] = tmp6;
   cResult[2] = items1;
   arr = items1;
-}) : ((type, arg1, arg2) => {
+}) : (function useVoicePanelHeaderUserStateIcons(type, arg1, arg2) {
   let obj5;
   const tmp = closure_8();
   type = undefined;
@@ -139,21 +138,21 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((type, arg1, arg2) 
     let tmp11 = require;
     if (nextResult.type === useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.USER_VIDEO_ICON) {
       let push = items.push;
-      let BackgroundBlurView = tmp11(8567).BackgroundBlurView;
+      let BackgroundBlurView = tmp11(8537).BackgroundBlurView;
       let obj3 = { style: tmp.floatingIcon, state: tmp9.videoIconState };
       let arr = push(<BackgroundBlurView key="video" blurTheme="dark" style={tmp.floatingIconWrapper}>{null}</BackgroundBlurView>);
     }
-    if (tmp9.type === tmp11(17221).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+    if (tmp9.type === tmp11(17816).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
       let tmp35 = jsx;
       let push2 = items.push;
       let tmp36 = jsx;
       let items1 = [tmp.floatingIconWrapper, ];
       let leftMargin;
-      let BackgroundBlurView2 = tmp11(8567).BackgroundBlurView;
+      let BackgroundBlurView2 = tmp11(8537).BackgroundBlurView;
       if (tmp9.withLeftMargin) {
         leftMargin = tmp.leftMargin;
       }
-      let obj4 = { blurTheme: "dark", style: items1, children: tmp36(tmp11(9335).MuteDeafenIcon, obj5) };
+      let obj4 = { blurTheme: "dark", style: items1, children: tmp36(tmp11(8793).MuteDeafenIcon, obj5) };
       items1[1] = leftMargin;
       obj5 = { style: tmp.floatingIcon, state: tmp9.muteDeafenIconState };
       let push2Result = push2(tmp35(BackgroundBlurView2, obj4, "mute-deafen"));
@@ -169,7 +168,7 @@ let closure_9 = tmp3;
 const __initData = { code: "function VoicePanelHeaderUserStateTsx1(){const{withTiming,isHeaderHidden,OPACITY_TIMING}=this.__closure;return{opacity:withTiming(isHeaderHidden.get()?1:0,OPACITY_TIMING)};}" };
 const __initData2 = { code: "function VoicePanelHeaderUserStateTsx2(){const{withTiming,isHeaderHidden,OPACITY_TIMING}=this.__closure;return{opacity:withTiming(isHeaderHidden.get()?1:0,OPACITY_TIMING)};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isHeaderHidden) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelHeaderUserState(isHeaderHidden) {
   let channelId;
   let first;
   let tmp9;
@@ -177,7 +176,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
   let obj = isHeaderHidden(576);
   const cResult = obj.c(9);
   isHeaderHidden = isHeaderHidden.isHeaderHidden;
-  const context = react.useContext(channelId(11901));
+  const context = react.useContext(channelId(11973));
   const tmp4 = channelId;
   channelId = context.channelId;
   const guildId = context.guildId;
@@ -207,23 +206,25 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp9);
-  const tmp11 = closure_9(tmp4(17219)(stateFromStores, channelId, guildId), guildId);
-  const fn2 = function w() {
-    const withTiming = timing.withTiming;
-    let num = 0;
-    timing;
-    if (isHeaderHidden.get()) {
-      num = 1;
+  const tmp11 = closure_9(tmp4(17814)(stateFromStores, channelId, guildId), guildId);
+  const tmpResult2 = tmp(4850);
+  class P {
+    constructor() {
+      const withTiming = timing.withTiming;
+      let num = 0;
+      timing;
+      if (isHeaderHidden.get()) {
+        num = 1;
+      }
+      const obj = { opacity: withTiming(num, OPACITY_TIMING) };
+      return obj;
     }
-    const obj = { opacity: withTiming(num, OPACITY_TIMING) };
-    return obj;
-  };
-  const tmpResult2 = tmp(4612);
-  fn2.__closure = { withTiming: tmp(4891).withTiming, isHeaderHidden, OPACITY_TIMING };
-  fn2.__workletHash = 7032221979181;
-  fn2.__initData = __initData;
-  ({ withTiming: tmp(4891).withTiming, isHeaderHidden, OPACITY_TIMING });
-  const animatedStyle = tmpResult2.useAnimatedStyle(fn2);
+  }
+  P.__closure = { withTiming: tmp(5093).withTiming, isHeaderHidden, OPACITY_TIMING };
+  P.__workletHash = 7032221979181;
+  P.__initData = __initData;
+  ({ withTiming: tmp(5093).withTiming, isHeaderHidden, OPACITY_TIMING });
+  const animatedStyle = tmpResult2.useAnimatedStyle(P);
   let tmp13 = null;
   if (null != tmp11) {
     if (cResult[3] === animatedStyle) {
@@ -251,10 +252,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
     tmp14 = items1;
   }
   return tmp13;
-}) : ((isHeaderHidden) => {
+}) : (function VoicePanelHeaderUserState(isHeaderHidden) {
   isHeaderHidden = isHeaderHidden.isHeaderHidden;
   let channelId;
-  const context = react.useContext(channelId(11901));
+  const context = react.useContext(channelId(11973));
   channelId = context.channelId;
   const guildId = context.guildId;
   const tmp2 = closure_8();
@@ -268,8 +269,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
     }
     return id;
   });
-  const tmp4 = closure_9(channelId(17219)(stateFromStores, channelId, guildId), guildId);
-  isHeaderHidden(4612);
+  const tmp4 = closure_9(channelId(17814)(stateFromStores, channelId, guildId), guildId);
+  isHeaderHidden(4850);
   const fn = function f() {
     const withTiming = timing.withTiming;
     let num = 0;
@@ -280,11 +281,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
     const obj = { opacity: withTiming(num, OPACITY_TIMING) };
     return obj;
   };
-  fn.__closure = { withTiming: isHeaderHidden(4891).withTiming, isHeaderHidden, OPACITY_TIMING };
+  fn.__closure = { withTiming: isHeaderHidden(5093).withTiming, isHeaderHidden, OPACITY_TIMING };
   fn.__workletHash = 1281074829646;
   fn.__initData = __initData2;
   let tmp7 = null;
-  ({ withTiming: isHeaderHidden(4891).withTiming, isHeaderHidden, OPACITY_TIMING });
+  ({ withTiming: isHeaderHidden(5093).withTiming, isHeaderHidden, OPACITY_TIMING });
   if (null != tmp4) {
     const items1 = [tmp2.container, tmp6];
     tmp7 = <closure_6 blurTheme="dark" style={items1} pointerEvents="none">{tmp4}</closure_6>;

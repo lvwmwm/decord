@@ -1,25 +1,25 @@
-// Module ID: 8785
-// Function ID: 8786
+// Module ID: 12944
+// Function ID: 12945
 // Name: CrunchyrollLinkError
-// Dependencies: [19, 8777, 21, 558, 576, 1490, 8760, 1126, 8761, 2]
+// Dependencies: [19, 12936, 21, 558, 576, 1503, 12919, 1126, 12920, 2]
 
-// Module 8785 (CrunchyrollLinkError)
+// Module 12944 (CrunchyrollLinkError)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import useNavigation from "useNavigation" /* 1490 */;
-import useConnectRetry from "useConnectRetry" /* 8760 */;
-import TwoWayLinkError2 from "TwoWayLinkError" /* 8761 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 8777 */;
+import useNavigation from "useNavigation" /* 1503 */;
+import useConnectRetry from "useConnectRetry" /* 12919 */;
+import TwoWayLinkError2 from "TwoWayLinkError" /* 12920 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 12936 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation, onClose;
+let navigation;
 
 const constants = CrunchyrollLinkConstants.CrunchyrollLinkModalScenes;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CrunchyrollLinkDiscordError(onClose) {
   let tmp6;
   let tmp7;
   const obj = react2;
@@ -53,7 +53,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   cResult[3] = connectRetry;
   cResult[4] = tmp11;
   tmp10 = tmp11;
-}) : ((onClose) => {
+}) : (function CrunchyrollLinkDiscordError(onClose) {
   onClose = onClose.onClose;
   const obj = useNavigation;
   navigation = obj.useNavigation();

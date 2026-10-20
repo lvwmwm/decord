@@ -1,16 +1,16 @@
-// Module ID: 14669
-// Function ID: 14670
+// Module ID: 15145
+// Function ID: 15146
 // Name: RequestDataScreen
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 14670, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 15146, 2]
 
-// Module 14669 (RequestDataScreen)
+// Module 15145 (RequestDataScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import RequestDataContentDefault from "RequestDataContent" /* 14670 */;
+import RequestDataContentDefault from "RequestDataContent" /* 15146 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_5 = createStyles(obj);
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function RequestDataScreen() {
   let first;
   let tmp8;
   const obj = react2;
@@ -48,7 +48,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : (() => <_false style={closure_5().container}>{jsx(RequestDataContentDefault, {})}</_false>));
+}) : (function RequestDataScreen() {
+  return <_false style={closure_5().container}>{jsx(RequestDataContentDefault, {})}</_false>;
+}));
 const result = size.fileFinishedImporting("modules/user_settings/privacy_and_safety/native/RequestDataScreen.tsx");
 
 export default memoResult;

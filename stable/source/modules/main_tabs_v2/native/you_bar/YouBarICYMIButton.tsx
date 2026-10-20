@@ -1,33 +1,31 @@
-// Module ID: 16332
-// Function ID: 16333
+// Module ID: 16855
+// Function ID: 16856
 // Name: YouBarICYMIButton
-// Dependencies: [19, 14899, 21, 4890, 587, 558, 576, 16333, 12834, 4737, 1126, 16334, 2]
+// Dependencies: [19, 15378, 21, 5092, 587, 558, 576, 16856, 13141, 4977, 1126, 16857, 2]
 
-// Module 16332 (YouBarICYMIButton)
+// Module 16855 (YouBarICYMIButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import RootNavigationRef from "RootNavigationRef" /* 4737 */;
-import FlashIcon2 from "FlashIcon" /* 12834 */;
-import YouBarConstants from "YouBarConstants" /* 14899 */;
-import useICYMITabBadgeDefault from "useICYMITabBadge" /* 16333 */;
+import RootNavigationRef from "RootNavigationRef" /* 4977 */;
+import FlashIcon2 from "FlashIcon" /* 13141 */;
+import YouBarConstants from "YouBarConstants" /* 15378 */;
+import useICYMITabBadgeDefault from "useICYMITabBadge" /* 16856 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let hasNameplate;
-
 let obj2;
 let tmp5;
-const YouBarButtonDefault = tmp5(16334);
+const YouBarButtonDefault = tmp5(16857);
 const YOU_BAR_BUTTON_ICON_SIZE = YouBarConstants.YOU_BAR_BUTTON_ICON_SIZE;
 const jsx = Fragment.jsx;
 let obj = { icon: { width: YOU_BAR_BUTTON_ICON_SIZE, height: YOU_BAR_BUTTON_ICON_SIZE }, badge: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 let closure_4 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((hasNameplate) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function YouBarICYMIButton(hasNameplate) {
   let obj = react2;
   const cResult = obj.c(10);
   hasNameplate = hasNameplate.hasNameplate;
@@ -89,7 +87,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((h
   cResult[1] = str;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((hasNameplate) => {
+}) : (function YouBarICYMIButton(hasNameplate) {
   let str;
   hasNameplate = hasNameplate.hasNameplate;
   const tmp = closure_4();

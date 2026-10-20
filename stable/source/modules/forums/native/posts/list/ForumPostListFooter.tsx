@@ -1,21 +1,21 @@
-// Module ID: 11639
-// Function ID: 11640
+// Module ID: 11704
+// Function ID: 11705
 // Name: ForumPostListFooter
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 11580, 6775, 11632, 11640, 11633, 10027, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 11642, 6974, 11697, 11705, 11698, 10451, 2]
 
-// Module 11639 (ForumPostListFooter)
+// Module 11704 (ForumPostListFooter)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 6775 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 11580 */;
-import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 11632 */;
-import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 11633 */;
-import GameInviteVoiceCountDefault from "GameInviteVoiceCount" /* 11640 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 6974 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 11642 */;
+import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 11697 */;
+import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 11698 */;
+import GameInviteVoiceCountDefault from "GameInviteVoiceCount" /* 11705 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,14 +24,14 @@ let metroImportDefault;
 let metroRequire;
 let size;
 let tmp;
-const ForumPostReactions = tmp(10027);
+const ForumPostReactions = tmp(10451);
 const View = react_native.View;
 const AnalyticsObjects = Constants.AnalyticsObjects;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { footer: { display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "flex-start" }, dot: size };
 size = { height: 4, width: 4, borderRadius: 2, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginHorizontal: 8 };
 let closure_8 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostListFooter(arg0) {
   let firstMessage;
   let hasUnreads;
   let items;
@@ -141,7 +141,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = thread;
   cResult[2] = tmp8;
   tmp7 = tmp8;
-}) : ((parentChannel) => {
+}) : (function ForumPostListFooter(parentChannel) {
   let firstMessage;
   let hasUnreads;
   let items;
@@ -159,7 +159,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items = [hasOwnProperty(ForumPostMessageCountDefault, { thread, hasUnreads }), , , ];
   if (isGameInvitesPost) {
     const obj4 = { channel: thread };
-    isGameInvitesPost = tmp8(tmp9(11640), obj4);
+    isGameInvitesPost = tmp8(tmp9(11705), obj4);
   }
   items[1] = isGameInvitesPost;
   if (tmp6Result) {

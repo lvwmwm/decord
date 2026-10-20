@@ -1,20 +1,20 @@
-// Module ID: 9426
-// Function ID: 9427
+// Module ID: 9620
+// Function ID: 9621
 // Name: NsfwServerInviteWarningVariant
-// Dependencies: [1085, 9427, 1126, 9428, 558, 5102, 9429, 2]
+// Dependencies: [1085, 5926, 1126, 9621, 558, 5909, 9622, 2]
 // Exports: getNsfwServerInviteWarningAgeGroupForError, getNsfwServerInviteWarningVariant
 
-// Module 9426 (NsfwServerInviteWarningVariant)
+// Module 9620 (NsfwServerInviteWarningVariant)
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5102 */;
-import getTinyBroncoWarningDescriptions from "getTinyBroncoWarningDescriptions" /* 9427 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 9428 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5909 */;
+import getTinyBroncoWarningDescriptions from "getTinyBroncoWarningDescriptions" /* 5926 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 9621 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGatedAgeGroup() {
   let TEEN;
   const obj = AgeVerificationUtils;
   const isVerifiedTeen = obj.useIsVerifiedTeen();
@@ -27,7 +27,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     TEEN = isVerifiedAdult ? AgeGroupState.ADULT : AgeGroupState.UNVERIFIED;
   }
   return TEEN;
-}) : (() => {
+}) : (function useGatedAgeGroup() {
   let TEEN;
   const obj = AgeVerificationUtils;
   const isVerifiedTeen = obj.useIsVerifiedTeen();
@@ -76,7 +76,7 @@ export const getNsfwServerInviteWarningAgeGroupForError = function getNsfwServer
     return null;
   }
   let tmp7 = null;
-  const tmp3Result = tmp3(9429);
+  const tmp3Result = tmp3(9622);
   if (tmp3Result.getIsInviteAcceptAgeGroupErrorsEnabled("invite_accept_error")) {
     tmp7 = UNVERIFIED;
   }

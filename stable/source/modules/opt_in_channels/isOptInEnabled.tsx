@@ -1,14 +1,14 @@
-// Module ID: 7046
-// Function ID: 7047
+// Module ID: 6077
+// Function ID: 6078
 // Name: isOptInEnabled
-// Dependencies: [2074, 4509, 5071, 1377, 1085, 558, 576, 504, 2]
+// Dependencies: [2087, 4750, 5966, 1390, 1085, 558, 576, 504, 2]
 // Exports: isOptInEnabledForGuild
 
-// Module 7046 (isOptInEnabled)
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
-import UserStore from "UserStore" /* 1377 */;
+// Module 6077 (isOptInEnabled)
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ let metroImportDefault;
 let metroRequire;
 ({ GuildFeatures: metroRequire, Permissions: metroImportDefault } = Constants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOptInEnabledForGuild(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -36,42 +36,74 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function c() {
-      let isOptInEnabledResult = UserGuildSettingsStore.isOptInEnabled(closure_0);
-      const guild = GuildStore.getGuild(closure_0);
-      let flag;
-      if (guild != null) {
-        const features = guild.features;
-        flag = features.has(metroRequire.COMMUNITY);
-      }
-      if (flag == null) {
-        flag = false;
-      }
-      const currentUser = UserStore.getCurrentUser();
-      let flag2;
-      if (currentUser != null) {
-        flag2 = currentUser.isStaff();
-      }
-      if (flag2 == null) {
-        flag2 = false;
-      }
-      if (isOptInEnabledResult) {
-        if (!flag) {
-          flag = flag2;
+    class E {
+      constructor() {
+        isOptInEnabledResult = closure_4.isOptInEnabled(closure_0);
+        guild = closure_2.getGuild(closure_0);
+        flag = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          flag = features.has(GuildFeatures.COMMUNITY);
         }
-        isOptInEnabledResult = flag;
+        if (flag == null) {
+          flag = false;
+        }
+        currentUser = closure_5.getCurrentUser();
+        flag2 = undefined;
+        if (currentUser != null) {
+          flag2 = currentUser.isStaff();
+        }
+        if (flag2 == null) {
+          flag2 = false;
+        }
+        if (isOptInEnabledResult) {
+          if (!flag) {
+            flag = flag2;
+          }
+          isOptInEnabledResult = flag;
+        }
+        return isOptInEnabledResult;
       }
-      return isOptInEnabledResult;
-    };
+    }
     cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp8 = fn;
+    cResult[2] = E;
+    tmp8 = E;
   } else {
-    tmp8 = cResult[2];
+    class E {
+      constructor() {
+        isOptInEnabledResult = closure_4.isOptInEnabled(closure_0);
+        guild = closure_2.getGuild(closure_0);
+        flag = undefined;
+        if (guild != null) {
+          features = guild.features;
+          tmp3 = GuildFeatures;
+          flag = features.has(GuildFeatures.COMMUNITY);
+        }
+        if (flag == null) {
+          flag = false;
+        }
+        currentUser = closure_5.getCurrentUser();
+        flag2 = undefined;
+        if (currentUser != null) {
+          flag2 = currentUser.isStaff();
+        }
+        if (flag2 == null) {
+          flag2 = false;
+        }
+        if (isOptInEnabledResult) {
+          if (!flag) {
+            flag = flag2;
+          }
+          isOptInEnabledResult = flag;
+        }
+        return isOptInEnabledResult;
+      }
+    }
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp8);
-}) : ((arg0) => {
+}) : (function useOptInEnabledForGuild(arg0) {
   let closure_0;
   _require = arg0;
   const items = [UserGuildSettingsStore, GuildStore, UserStore];
@@ -105,7 +137,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowOnboardingAdminUpsellForGuild(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -121,7 +153,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function l() {
+    const fn = function s() {
       const guild = GuildStore.getGuild(closure_0);
       let flag;
       const canResult = PermissionStore.can(metroImportDefault.MANAGE_GUILD, guild);
@@ -143,7 +175,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+}) : (function useShouldShowOnboardingAdminUpsellForGuild(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore, PermissionStore];

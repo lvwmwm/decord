@@ -1,22 +1,22 @@
-// Module ID: 10113
-// Function ID: 10114
+// Module ID: 9756
+// Function ID: 9757
 // Name: stickers/StickersUtils
-// Dependencies: [19, 17, 2074, 1377, 10114, 1085, 1229, 558, 576, 10111, 504, 8826, 5429, 10115, 10116, 10117, 1616, 2]
+// Dependencies: [19, 17, 2087, 1390, 9757, 1085, 1241, 558, 576, 9754, 504, 9532, 5750, 9758, 9759, 9760, 1629, 2]
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker
 
-// Module 10113 (stickers/StickersUtils)
+// Module 9756 (stickers/StickersUtils)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1229 */;
-import KeyboardTypes from "KeyboardTypes" /* 1616 */;
-import StickersTypes from "StickersTypes" /* 5429 */;
-import StickerPickerStore from "StickerPickerStore" /* 10114 */;
-import StickerCategoryUtils from "StickerCategoryUtils" /* 10115 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10116 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10117 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
+import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+import StickersTypes from "StickersTypes" /* 5750 */;
+import StickerPickerStore from "StickerPickerStore" /* 9757 */;
+import StickerCategoryUtils from "StickerCategoryUtils" /* 9758 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9759 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9760 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const NativeModules = react_native.NativeModules;
 const useStickerPickerStore = StickerPickerStore.useStickerPickerStore;
 const GuildNSFWContentLevel = Constants.GuildNSFWContentLevel;
 const ExpressionPickerViewType = ExpressionPickerConstants.ExpressionPickerViewType;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerCategories(arg0) {
   let closure_0;
   let closure_2;
   let currentUser;
@@ -63,7 +63,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = cResult[2];
   }
   dependencyMap = tmp9;
-  const tmpResult2 = tmp(8826);
+  const tmpResult2 = tmp(9532);
   const mobileStickerPickerUpsellRestyleEnabled = tmpResult2.useMobileStickerPickerUpsellRestyleEnabled("native.StickerPicker");
   if (cResult[3] === arg0) {
     if (cResult[4] === stickerPackCategories) {
@@ -112,25 +112,27 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const fn2 = function f(type) {
-      let tmp2 = type.type !== StickersTypes.StickerCategoryTypes.GUILD;
-      if (!tmp2) {
-        let nsfwAllowed;
-        if (stateFromStores != null) {
-          nsfwAllowed = stateFromStores.nsfwAllowed;
+    class C {
+      constructor(type) {
+        let tmp2 = type.type !== StickersTypes.StickerCategoryTypes.GUILD;
+        if (!tmp2) {
+          let nsfwAllowed;
+          if (stateFromStores != null) {
+            nsfwAllowed = stateFromStores.nsfwAllowed;
+          }
+          tmp2 = nsfwAllowed;
         }
-        tmp2 = nsfwAllowed;
+        if (!tmp2) {
+          tmp2 = null == tmp;
+        }
+        if (!tmp2) {
+          tmp2 = closure_2[type.id].nsfwLevel !== GuildNSFWContentLevel.AGE_RESTRICTED && closure_2[type.id].nsfwLevel !== tmp6.EXPLICIT;
+        }
+        return tmp2;
       }
-      if (!tmp2) {
-        tmp2 = null == tmp;
-      }
-      if (!tmp2) {
-        tmp2 = closure_2[type.id].nsfwLevel !== GuildNSFWContentLevel.AGE_RESTRICTED && closure_2[type.id].nsfwLevel !== tmp6.EXPLICIT;
-      }
-      return tmp2;
-    };
+    }
     cResult[9] = tmp17;
-    cResult[10] = fn2;
+    cResult[10] = C;
   } else {
     class T {
       constructor(stickers) {
@@ -145,47 +147,45 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  class C {
-    constructor(type) {
-      let tmp14;
-      let tmp18;
-      let result = mobileStickerPickerUpsellRestyleEnabled;
-      if (result) {
-        const obj = StickerCategoryUtils;
-        result = obj.isStickerCategoryNitroLocked(type, stateFromStores, closure_0);
-      }
-      if (type.type !== StickersTypes.StickerCategoryTypes.FAVORITE) {
-        if (type.type !== StickersTypes.StickerCategoryTypes.RECENT) {
-          let tmp8 = type;
-          if (result) {
-            const obj2 = { isNitroLocked: result };
-            const merged = Object.assign(type);
-            tmp8 = obj2;
-          }
-          return tmp8;
-        }
-      }
-      if (type.type === StickersTypes.StickerCategoryTypes.FAVORITE) {
-        tmp14 = AssetRegistryDefault;
-      } else {
-        tmp14 = AssetRegistryDefault2;
-      }
-      const obj3 = { icon: tmp14 };
-      const merged1 = Object.assign(type);
-      if (result) {
-        obj3.isNitroLocked = result;
-        tmp18 = obj3;
-      } else {
-        tmp18 = obj3;
-      }
-      return tmp18;
+  const fn2 = function f(type) {
+    let tmp14;
+    let tmp18;
+    let result = mobileStickerPickerUpsellRestyleEnabled;
+    if (result) {
+      const obj = StickerCategoryUtils;
+      result = obj.isStickerCategoryNitroLocked(type, stateFromStores, closure_0);
     }
-  }
+    if (type.type !== StickersTypes.StickerCategoryTypes.FAVORITE) {
+      if (type.type !== StickersTypes.StickerCategoryTypes.RECENT) {
+        let tmp8 = type;
+        if (result) {
+          const obj2 = { isNitroLocked: result };
+          const merged = Object.assign(type);
+          tmp8 = obj2;
+        }
+        return tmp8;
+      }
+    }
+    if (type.type === StickersTypes.StickerCategoryTypes.FAVORITE) {
+      tmp14 = AssetRegistryDefault;
+    } else {
+      tmp14 = AssetRegistryDefault2;
+    }
+    const obj3 = { icon: tmp14 };
+    const merged1 = Object.assign(type);
+    if (result) {
+      obj3.isNitroLocked = result;
+      tmp18 = obj3;
+    } else {
+      tmp18 = obj3;
+    }
+    return tmp18;
+  };
   cResult[11] = arg0;
   cResult[12] = mobileStickerPickerUpsellRestyleEnabled;
   cResult[13] = stateFromStores;
-  cResult[14] = C;
-}) : ((arg0) => {
+  cResult[14] = fn2;
+}) : (function useStickerCategories(arg0) {
   let closure_0;
   let currentUser;
   let stateFromStores;

@@ -1,11 +1,11 @@
-// Module ID: 2071
-// Function ID: 2072
+// Module ID: 2084
+// Function ID: 2085
 // Name: ServerNSFWLevelExperiment
-// Dependencies: [1440, 2]
+// Dependencies: [1453, 2]
 // Exports: isServerNSFWLevelEnabled
 
-// Module 2071 (ServerNSFWLevelExperiment)
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+// Module 2084 (ServerNSFWLevelExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

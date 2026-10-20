@@ -1,25 +1,25 @@
-// Module ID: 10713
-// Function ID: 10714
+// Module ID: 11570
+// Function ID: 11571
 // Name: SearchableDestinationListHeader
-// Dependencies: [19, 21, 4890, 587, 558, 576, 1618, 7498, 6010, 1369, 6433, 6019, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 1631, 9293, 6201, 1382, 6627, 6210, 2]
 
-// Module 10713 (SearchableDestinationListHeader)
+// Module 11570 (SearchableDestinationListHeader)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import NavigatorHeader from "NavigatorHeader" /* 6010 */;
-import _mod6019 from "module_6019" /* 6019 */;
-import HeaderShared from "HeaderShared" /* 7498 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import NavigatorHeader from "NavigatorHeader" /* 6201 */;
+import _mod6210 from "module_6210" /* 6210 */;
+import HeaderShared from "HeaderShared" /* 9293 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let tmp5;
-const useIsWindowLarge = tmp5(6433);
+const useIsWindowLarge = tmp5(6627);
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
 let obj = { headerLeftContainer: obj2, headerRightContainer: obj3, header: { borderBottomWidth: 0, shadowColor: "transparent", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND } };
@@ -28,7 +28,7 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingRight: nativeDefault.space.PX_16 };
 ({ borderBottomWidth: 0, shadowColor: "transparent", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND });
 let closure_4 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((subtitleColor) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDestinationListHeader(subtitleColor) {
   let headerRight;
   let onClose;
   let subtitle;
@@ -39,7 +39,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((subtitleColor) => {
   subtitleColor = subtitleColor.subtitleColor;
   ({ headerRight, onClose } = subtitleColor);
   const tmp4 = closure_4();
-  const top = subtitleColor(1618)().top;
+  const top = subtitleColor(1631)().top;
   const tmp5 = subtitleColor;
   if (cResult[0] === subtitle) {
     let tmp7;
@@ -49,7 +49,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((subtitleColor) => {
       tmp7 = cResult[2];
     }
     if (cResult[3] !== onClose) {
-      const tmpResult = subtitle(6010);
+      const tmpResult = subtitle(6201);
       const headerCloseButton = tmpResult.getHeaderCloseButton(onClose);
       cResult[3] = onClose;
       cResult[4] = headerCloseButton;
@@ -59,12 +59,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((subtitleColor) => {
     }
     if (cResult[5] !== top) {
       let num3;
-      const tmpResult3 = subtitle(1369);
+      const tmpResult3 = subtitle(1382);
       if (!tmpResult3.isIOS()) {
         num3 = top;
       } else {
         num3 = 0;
-        subtitle(6433);
+        subtitle(6627);
       }
       cResult[5] = top;
       cResult[6] = num3;
@@ -93,7 +93,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((subtitleColor) => {
       }
     }
     ({ headerLeftContainer: obj5.headerLeftContainerStyle, headerRightContainer: obj5.headerRightContainerStyle } = tmp4);
-    const tmp14 = jsx(subtitle(6019).Header, { headerStyle: tmp6, title, headerTitle: tmp7, headerTitleAlign: "center", headerLeft: tmp8, headerRight, headerLeftContainerStyle: null, headerRightContainerStyle: null, headerStatusBarHeight: sum });
+    const tmp14 = jsx(subtitle(6210).Header, { headerStyle: tmp6, title, headerTitle: tmp7, headerTitleAlign: "center", headerLeft: tmp8, headerRight, headerLeftContainerStyle: null, headerRightContainerStyle: null, headerStatusBarHeight: sum });
     cResult[7] = headerRight;
     cResult[8] = tmp4.header;
     cResult[9] = tmp4.headerLeftContainer;
@@ -112,7 +112,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((subtitleColor) => {
   cResult[1] = subtitleColor;
   cResult[2] = fn;
   tmp7 = fn;
-}) : ((arg0) => {
+}) : (function SearchableDestinationListHeader(arg0) {
   let headerRight;
   let num;
   let obj2;
@@ -137,7 +137,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((subtitleColor) => {
     headerRightContainerStyle: null,
     headerStatusBarHeight: num + nativeDefault.space.PX_8
   };
-  const Header = _mod6019.Header;
+  const Header = _mod6210.Header;
   ({ headerLeftContainer: obj.headerLeftContainerStyle, headerRightContainer: obj.headerRightContainerStyle } = tmp);
   obj2 = NavigatorHeader;
   const obj3 = PlatformUtils;

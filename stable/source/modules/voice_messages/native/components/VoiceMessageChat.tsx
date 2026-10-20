@@ -1,29 +1,29 @@
-// Module ID: 12313
-// Function ID: 12314
+// Module ID: 12395
+// Function ID: 12396
 // Name: VoiceMessageChat
-// Dependencies: [32, 19, 17, 4879, 11574, 11575, 21, 4612, 4890, 587, 1369, 558, 576, 5597, 4891, 4580, 7302, 4886, 2]
+// Dependencies: [32, 19, 17, 5081, 11636, 11637, 21, 4850, 5092, 587, 1382, 558, 576, 5378, 5093, 4818, 7782, 5088, 2]
 
-// Module 12313 (VoiceMessageChat)
+// Module 12395 (VoiceMessageChat)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import spring from "spring" /* 5597 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 7302 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11574 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
+import spring from "spring" /* 5378 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 7782 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11636 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 11575 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 11637 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
-let c1, flag, flag2, importDefault, set, set2, value;
+let c1, flag, flag2, importDefault, set, set2;
 
 let ActivityIndicator;
 let c10;
@@ -66,7 +66,7 @@ let closure_16 = createStyles(obj);
 const __initData = { code: "function VoiceMessageChatTsx1(){const{animatedHeight,animatedWidth,animatedMargin}=this.__closure;return{height:animatedHeight.get(),width:animatedWidth.get(),marginRight:animatedMargin.get()};}" };
 const __initData2 = { code: "function VoiceMessageChatTsx2(){const{animatedHeight,animatedWidth,animatedMargin}=this.__closure;return{height:animatedHeight.get(),width:animatedWidth.get(),marginRight:animatedMargin.get()};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((value) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function WaveformBar(value) {
   let items;
   let require;
   let sharedValue1;
@@ -142,7 +142,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((value) => {
     tmp11 = fn3;
   }
   const fn2 = function s() {
-    const result = 20 * Math.min(1, require / closure_12 * 1.25);
+    const result = 20 * Math.min(1, require / authStore2 * 1.25);
     set = sharedValue.set;
     const obj = spring;
     const result1 = set(obj.withSpring(Math.max(2, result)));
@@ -154,7 +154,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((value) => {
   cResult[3] = items2;
   tmp9 = items2;
   tmp8 = fn2;
-}) : ((value) => {
+}) : (function WaveformBar(value) {
   let items2;
   value = value.value;
   const require = value;
@@ -177,7 +177,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((value) => {
   const items = [sharedValue, value];
   const animatedStyle = obj4.useAnimatedStyle(fn);
   const effect = react.useEffect(() => {
-    const result = 20 * Math.min(1, require / closure_12 * 1.25);
+    const result = 20 * Math.min(1, require / authStore2 * 1.25);
     set = sharedValue.set;
     const obj = spring;
     const result1 = set(obj.withSpring(Math.max(2, result)));
@@ -198,9 +198,10 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((value) => {
   return closure_13(sharedValue(sharedValue1[7]).View, obj5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Waveform() {
   let first;
   let require;
+  let tmp14;
   let tmp16;
   let tmp6;
   let tmp8;
@@ -265,18 +266,13 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const substr = tmp4Result.slice(-tmp8);
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    class D {
-      constructor(nativeEvent) {
-        _require(Math.round(nativeEvent.nativeEvent.layout.width / 6) + 2);
-      }
-    }
-    cResult[10] = D;
+    const fn3 = function w(nativeEvent) {
+      _require(Math.round(nativeEvent.nativeEvent.layout.width / 6) + 2);
+    };
+    cResult[10] = fn3;
+    tmp14 = fn3;
   } else {
-    class D {
-      constructor(nativeEvent) {
-        _require(Math.round(nativeEvent.nativeEvent.layout.width / 6) + 2);
-      }
-    }
+    tmp14 = cResult[10];
   }
   const waveformContainer = tmp2.waveformContainer;
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
@@ -311,7 +307,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp11 = tmp14;
   tmp10 = waveformContainer;
   tmp9 = tmp15;
-}) : (() => {
+}) : (function Waveform() {
   const tmp = closure_16();
   const tmp2 = useVoiceMessagesUIStore((waveformVersion) => waveformVersion.waveformVersion);
   const arr = useVoiceMessagesUIStore((waveform) => waveform.waveform);
@@ -336,7 +332,7 @@ const constants = { WARN: 0, [0]: "WARN", REALLY_WARN: 1, [1]: "REALLY_WARN", EN
 const __initData3 = { code: "function VoiceMessageChatTsx3(){const{animationValue}=this.__closure;return{opacity:animationValue.get()};}" };
 const __initData4 = { code: "function VoiceMessageChatTsx4(){const{animationValue}=this.__closure;return{opacity:animationValue.get()};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue) => {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Duration(animationValue) {
   let closure_1;
   let closure_4;
   let first;
@@ -398,15 +394,15 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
   first1 = tmp12[0];
   react = tmp12[1];
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class O {
+    class D {
       constructor(savedVoiceMessageUploadData) {
         return null != savedVoiceMessageUploadData.savedVoiceMessageUploadData;
       }
     }
-    cResult[3] = O;
-    tmp14 = O;
+    cResult[3] = D;
+    tmp14 = D;
   } else {
-    class O {
+    class D {
       constructor(savedVoiceMessageUploadData) {
         return null != savedVoiceMessageUploadData.savedVoiceMessageUploadData;
       }
@@ -414,12 +410,12 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
   }
   const tmp6Result = tmp6(tmp14);
   let closure_5 = tmp6Result;
-  const tmpResult = tmp(4580);
+  const tmpResult = tmp(4818);
   const token = tmpResult.useToken(nativeDefault.modules.mobile.VOICE_MESSAGE_DURATION_TEXT_STYLE);
   if (cResult[4] === tmp6Result) {
     let tmp24;
     let tmp23;
-    class O {
+    class D {
       constructor(savedVoiceMessageUploadData) {
         return null != savedVoiceMessageUploadData.savedVoiceMessageUploadData;
       }
@@ -427,7 +423,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
     const effect = obj2.useEffect(G, items3);
     const result = tmp11 / 1000;
     if (cResult[8] !== result) {
-      class O {
+      class D {
         constructor(savedVoiceMessageUploadData) {
           return null != savedVoiceMessageUploadData.savedVoiceMessageUploadData;
         }
@@ -436,7 +432,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
       cResult[8] = result;
       cResult[9] = timeFormat;
     } else {
-      class O {
+      class D {
         constructor(savedVoiceMessageUploadData) {
           return null != savedVoiceMessageUploadData.savedVoiceMessageUploadData;
         }
@@ -461,7 +457,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
               }
               c1 = num;
               flash = function flash() {
-                AccessibilityStore(f152614);
+                AccessibilityStore(f155463);
                 const timeout = setTimeout(flash, num);
               };
               tmp8 = closure_6;
@@ -508,7 +504,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
               }
               c1 = num;
               flash = function flash() {
-                AccessibilityStore(f152614);
+                AccessibilityStore(f155463);
                 const timeout = setTimeout(flash, num);
               };
               tmp8 = closure_6;
@@ -535,7 +531,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
       tmp24 = cResult[12];
     }
     const effect1 = obj2.useEffect(tmp23, tmp24);
-    const tmpResult2 = tmp(4612);
+    const tmpResult2 = tmp(4850);
     class Z {
       constructor() {
         const obj = { opacity: animationValue.get() };
@@ -564,7 +560,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
               }
               c1 = num;
               flash = function flash() {
-                AccessibilityStore(f152614);
+                AccessibilityStore(f155463);
                 const timeout = setTimeout(flash, num);
               };
               tmp8 = closure_6;
@@ -605,7 +601,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
                 }
                 c1 = num;
                 flash = function flash() {
-                  AccessibilityStore(f152614);
+                  AccessibilityStore(f155463);
                   const timeout = setTimeout(flash, num);
                 };
                 tmp8 = closure_6;
@@ -646,7 +642,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
                   }
                   c1 = num;
                   flash = function flash() {
-                    AccessibilityStore(f152614);
+                    AccessibilityStore(f155463);
                     const timeout = setTimeout(flash, num);
                   };
                   tmp8 = closure_6;
@@ -688,7 +684,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
                   }
                   c1 = num;
                   flash = function flash() {
-                    AccessibilityStore(f152614);
+                    AccessibilityStore(f155463);
                     const timeout = setTimeout(flash, num);
                   };
                   tmp8 = closure_6;
@@ -714,7 +710,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
           }
         }
         const obj5 = { style: tmp4.duration, variant: token, color: "text-default", tabularNumbers: true, children: tmp19 };
-        const tmp38 = closure_13(tmp(4886).Text, obj5);
+        const tmp38 = closure_13(tmp(5088).Text, obj5);
         class Z {
           constructor() {
             const obj = { opacity: animationValue.get() };
@@ -783,7 +779,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
   cResult[5] = tmp7;
   cResult[6] = G;
   cResult[7] = items3;
-}) : ((animationValue) => {
+}) : (function Duration(animationValue) {
   let closure_1;
   let closure_7;
   let items3;
@@ -852,7 +848,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
   const first2 = tmp13[0];
   const effect1 = first1.useEffect(() => {
     let closure_0;
-    const f152615 = (arg0) => !arg0;
+    const f155464 = (arg0) => !arg0;
     if (null != first1) {
       if (first1 !== constants.ENDED) {
         let num = 1000;
@@ -864,10 +860,10 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
           num = num2;
         }
         function flash() {
-          closure_7(f152615);
+          closure_7(f155464);
           const timeout = setTimeout(flash, num);
         }
-        closure_7(f152615);
+        closure_7(f155464);
         const _setTimeout = setTimeout;
         let timeout = setTimeout(flash, num);
         return () => {
@@ -922,7 +918,7 @@ const __initData11 = { code: "function VoiceMessageChatTsx11(){const{backgroundC
 const __initData12 = { code: "function VoiceMessageChatTsx12(){const{loadingOpacity}=this.__closure;return{opacity:loadingOpacity.get()};}" };
 let memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isRecording) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMessageChat(isRecording) {
   let backgroundColor;
   let items;
   let items1;
@@ -982,25 +978,27 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isRecor
     C.__initData = __initData6;
     const obj5 = { animationValue: sharedValue1, withTiming: tmp(backgroundColor[14]).withTiming, Easing: tmp(backgroundColor[7]).Easing, loadingOpacity: sharedValue };
     const animatedReaction = useAnimatedReaction(S, C);
-    const fn2 = function w() {
-      let obj3;
-      const obj = backgroundColor;
-      if (null != backgroundColor) {
-        obj3 = { backgroundColor: obj.get() };
-        const obj2 = { backgroundColor: obj.get() };
-      } else {
-        obj3 = {};
-      }
-      const obj4 = { width: "100%" };
-      const merged = Object.assign(obj3);
-      return obj4;
-    };
-    const obj6 = { backgroundColor };
-    fn2.__closure = obj6;
-    fn2.__workletHash = 722511507624;
-    fn2.__initData = __initData7;
     const tmpResult5 = tmp(backgroundColor[7]);
-    const animatedStyle = tmpResult5.useAnimatedStyle(fn2);
+    class O {
+      constructor() {
+        let obj3;
+        const obj = backgroundColor;
+        if (null != backgroundColor) {
+          obj3 = { backgroundColor: obj.get() };
+          const obj2 = { backgroundColor: obj.get() };
+        } else {
+          obj3 = {};
+        }
+        const obj4 = { width: "100%" };
+        const merged = Object.assign(obj3);
+        return obj4;
+      }
+    }
+    const obj6 = { backgroundColor };
+    O.__closure = obj6;
+    O.__workletHash = 722511507624;
+    O.__initData = __initData7;
+    const animatedStyle = tmpResult5.useAnimatedStyle(O);
     const tmpResult6 = tmp(backgroundColor[7]);
     class M {
       constructor() {
@@ -1076,8 +1074,22 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isRecor
             cResult[17] = tmp21;
             cResult[18] = tmp22;
             cResult[19] = tmp26;
-            cResult[20] = closure_14(tmp5(backgroundColor[7]).View, obj9);
-            const tmp37 = closure_14(tmp5(backgroundColor[7]).View, obj9);
+            closure_14(tmp5(backgroundColor[7]).View, obj9);
+            class O {
+              constructor() {
+                let obj3;
+                const obj = backgroundColor;
+                if (null != backgroundColor) {
+                  obj3 = { backgroundColor: obj.get() };
+                  const obj2 = { backgroundColor: obj.get() };
+                } else {
+                  obj3 = {};
+                }
+                const obj4 = { width: "100%" };
+                const merged = Object.assign(obj3);
+                return obj4;
+              }
+            }
           }
         }
       }
@@ -1127,13 +1139,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isRecor
     }
   };
   const items3 = [sharedValue, isRecording];
-  cResult[0] = isRecording;
   cResult[1] = sharedValue;
   cResult[2] = fn;
   cResult[3] = items3;
   tmp9 = items3;
   tmp8 = fn;
-}) : ((isRecording) => {
+}) : (function VoiceMessageChat(isRecording) {
   let items1;
   let items2;
   let items3;

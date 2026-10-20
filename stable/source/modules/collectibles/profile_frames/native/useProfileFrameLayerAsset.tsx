@@ -1,12 +1,12 @@
-// Module ID: 7894
-// Function ID: 7895
+// Module ID: 8344
+// Function ID: 8345
 // Name: useProfileFrameLayerAsset
-// Dependencies: [5, 32, 19, 17, 6707, 1974, 558, 576, 1886, 7895, 7896, 2]
+// Dependencies: [5, 32, 19, 17, 6905, 1987, 558, 576, 1899, 8345, 8346, 2]
 // Exports: isProfileFrameLayerShown
 
-// Module 7894 (useProfileFrameLayerAsset)
-import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1974 */;
-import Constants from "Constants" /* 6707 */;
+// Module 8344 (useProfileFrameLayerAsset)
+import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1987 */;
+import Constants from "Constants" /* 6905 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -14,11 +14,11 @@ import react_native from "react-native" /* 17 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let _Promise, c4, c5, frame, importDefault, nextPromise, num2;
+let _Promise, c4, c5, importDefault, nextPromise, num2;
 
 let metroImportDefault;
 let metroRequire;
-const f95861 = (arg0) => {
+const f98319 = (arg0) => {
   closure_0 = arg0;
   size = size.getSize(closure_0, (arg0, arg1) => {
     if (arg0 > 0) {
@@ -45,7 +45,7 @@ function measureProfileFrameLayer(arg0) {
     if (null == value2) {
       const self = this;
       const self2 = this;
-      const promise = new Promise(f95861);
+      const promise = new Promise(f98319);
       const cleanupPromise = promise.finally(() => set.delete(closure_0));
       const result = obj.set(arg0, cleanupPromise);
       value2 = cleanupPromise;
@@ -148,7 +148,7 @@ const map1 = new Map();
 const set = new Set();
 const set1 = new Set();
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFrameLayerAsset(arg0) {
   let closure_1;
   let collectiblesItemAssetUrl;
   let layer;
@@ -238,7 +238,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp9 = items;
     }
   }
-  const fn = function s() {
+  const fn = function n() {
     let tmp = c0;
     if (null != c0) {
       if ("" !== tmp) {
@@ -255,7 +255,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             if (null == resolved) {
               const self = this;
               const self2 = this;
-              const promise = new Promise(f95861);
+              const promise = new Promise(f98319);
               const cleanupPromise = promise.finally(() => set.delete(closure_0));
               const result = obj.set(tmp, cleanupPromise);
               resolved = cleanupPromise;
@@ -280,7 +280,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp5;
   cResult[3] = fn;
   tmp8 = fn;
-}) : ((width) => {
+}) : (function useProfileFrameLayerAsset(width) {
   let c1;
   let layer;
   let skuId;
@@ -325,7 +325,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             if (null == resolved) {
               const self = this;
               const self2 = this;
-              const promise = new Promise(f95861);
+              const promise = new Promise(f98319);
               const cleanupPromise = promise.finally(() => set.delete(closure_0));
               let result = obj.set(tmp, cleanupPromise);
               resolved = cleanupPromise;
@@ -363,7 +363,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return { assetUrl, imageHeight };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreloadLayerImages(frame) {
   let closure_5;
   let containerWidth;
   let filterLayer;
@@ -661,7 +661,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((frame) => {
   cResult[13] = frame;
   cResult[14] = num13;
   tmp11 = num13;
-}) : ((frame) => {
+}) : (function usePreloadLayerImages(frame) {
   let containerWidth;
   let profileThemeType;
   frame = frame.frame;

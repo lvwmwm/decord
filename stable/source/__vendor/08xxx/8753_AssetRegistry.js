@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/user_settings/connections/native/two_way_link/images", width: 59, height: 85.5, scales: [2, 3], hash: "07edfc27bc58db41fd8c1993a9ed69f0", name: "xbox_app_phone", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/instant_invite/native/images", width: 60, height: 60, scales: [2, 3], hash: "bc9640d059e4504fae6e197e103e15f0", name: "whatsapp", type: "png" });

@@ -1,18 +1,18 @@
-// Module ID: 12514
-// Function ID: 12515
+// Module ID: 12619
+// Function ID: 12620
 // Name: NotificationSettingsMessageUnreadChannelActionSheet
-// Dependencies: [19, 5071, 1085, 5072, 1095, 21, 558, 576, 9851, 1126, 6614, 9852, 6609, 12513, 2]
+// Dependencies: [19, 5966, 1085, 5967, 1095, 21, 558, 576, 10448, 1126, 6809, 10449, 6804, 12618, 2]
 
-// Module 12514 (NotificationSettingsMessageUnreadChannelActionSheet)
+// Module 12619 (NotificationSettingsMessageUnreadChannelActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import ReadStateConstants from "ReadStateConstants" /* 5072 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6614 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9852 */;
-import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 12513 */;
+import ReadStateConstants from "ReadStateConstants" /* 5967 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10449 */;
+import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 12618 */;
 import react from "react" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,12 +20,12 @@ const require = globalThis.__r;
 let _require;
 
 let tmp4;
-const NotificationSettingsUtils = tmp4(6609);
+const NotificationSettingsUtils = tmp4(6804);
 const UserNotificationSettings = Constants.UserNotificationSettings;
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 let closure_6 = UserSettingsConstants.ChannelNotificationSettingsFlags;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationSettingsMessageUnreadChannelActionSheet(channel) {
   let notification;
   let tmp5;
   let unread;
@@ -91,7 +91,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[3] = channel.channel.id;
   cResult[4] = fn;
   tmp8 = fn;
-}) : ((channel) => {
+}) : (function NotificationSettingsMessageUnreadChannelActionSheet(channel) {
   let notification;
   let stringResult;
   let unread;

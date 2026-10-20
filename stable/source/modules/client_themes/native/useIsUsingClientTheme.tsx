@@ -1,11 +1,11 @@
-// Module ID: 7508
-// Function ID: 7509
+// Module ID: 9303
+// Function ID: 9304
 // Name: useIsUsingClientTheme
-// Dependencies: [558, 7509, 2]
+// Dependencies: [558, 9304, 2]
 // Exports: default
 
-// Module 7508 (useIsUsingClientTheme)
-import useActiveTheme from "useActiveTheme" /* 7509 */;
+// Module 9303 (useIsUsingClientTheme)
+import useActiveTheme from "useActiveTheme" /* 9304 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("modules/client_themes/native/useIsUsingClientTheme.tsx");
 
-export default () => {
+export default function useIsUsingClientTheme() {
   const obj = useActiveTheme;
   return obj.useIsClientThemeOrCustomThemeActive();
 };

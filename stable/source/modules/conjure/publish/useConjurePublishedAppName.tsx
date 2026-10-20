@@ -1,18 +1,18 @@
-// Module ID: 16702
-// Function ID: 16703
+// Module ID: 17213
+// Function ID: 17214
 // Name: useConjurePublishedAppName
-// Dependencies: [5118, 8699, 558, 576, 504, 2]
+// Dependencies: [5440, 10653, 558, 576, 504, 2]
 
-// Module 16702 (useConjurePublishedAppName)
-import ApplicationStore from "ApplicationStore" /* 5118 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 8699 */;
+// Module 17213 (useConjurePublishedAppName)
+import ApplicationStore from "ApplicationStore" /* 5440 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10653 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePublishedAppName(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -52,7 +52,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+}) : (function useConjurePublishedAppName(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ConjureProjectStore, ApplicationStore];

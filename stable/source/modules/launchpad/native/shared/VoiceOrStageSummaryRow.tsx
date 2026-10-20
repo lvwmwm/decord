@@ -1,17 +1,17 @@
-// Module ID: 17408
-// Function ID: 17409
+// Module ID: 18004
+// Function ID: 18005
 // Name: VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 16832, 4886, 1188, 16827, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 17415, 5088, 1200, 17410, 2]
 
-// Module 17408 (VoiceOrStageSummaryRow)
+// Module 18004 (VoiceOrStageSummaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16832 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17415 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let dependencyMap, num2, num3, obj1, obj10, obj11, obj12, obj8, obj9, str, str2,
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const AssetRegistryDefault = tmp(16827);
+const AssetRegistryDefault = tmp(17410);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles((height) => {
@@ -31,7 +31,7 @@ let closure_6 = createStyles.createStyles((height) => {
   ({ backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER });
   return obj;
 });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((audienceCount) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceOrStageSummaryRow(audienceCount) {
   let first;
   let guildId;
   let items1;
@@ -243,7 +243,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[15] = tmp8.wrapper;
   cResult[16] = C;
   tmp12 = C;
-}) : ((arg0) => {
+}) : (function VoiceOrStageSummaryRow(arg0) {
   let audienceCount;
   let closure_2;
   let guildId;
@@ -324,11 +324,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     obj4 = { style: items3, children: items4 };
     items3 = [, ];
     ({ badge: arr4[0], audienceBadge: arr4[1] } = tmp4);
-    let obj5 = { size: max(1188).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: AssetRegistryDefault };
-    const Icon = max(1188).Icon;
+    let obj5 = { size: max(1200).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: AssetRegistryDefault };
+    const Icon = max(1200).Icon;
     items4 = [tmp8(Icon, obj5), ];
     let obj6 = { variant: "text-sm/bold", style: { marginLeft: 4 }, children: audienceCount };
-    items4[1] = closure_4(max(4886).Text, obj6);
+    items4[1] = closure_4(max(5088).Text, obj6);
     tmp8Result = tmp8(tmp6, obj3);
   }
   items1[1] = tmp8Result;

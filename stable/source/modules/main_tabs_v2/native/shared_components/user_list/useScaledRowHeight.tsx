@@ -1,19 +1,19 @@
-// Module ID: 6546
-// Function ID: 6547
+// Module ID: 6738
+// Function ID: 6739
 // Name: useScaledRowHeight
-// Dependencies: [558, 576, 5602, 4580, 587, 2]
+// Dependencies: [558, 576, 5386, 4818, 587, 2]
 // Exports: default
 
-// Module 6546 (useScaledRowHeight)
+// Module 6738 (useScaledRowHeight)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4580 */;
-import useFontScale from "useFontScale" /* 5602 */;
+import useToken from "useToken" /* 4818 */;
+import useFontScale from "useFontScale" /* 5386 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScaledRowHeightData() {
   const obj = react;
   const cResult = obj.c(3);
   const obj2 = useFontScale;
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = sum;
   cResult[2] = obj5;
   tmp7 = obj5;
-}) : (() => {
+}) : (function useScaledRowHeightData() {
   const obj = useFontScale;
   const fontScale = obj.useFontScale();
   const obj2 = useToken;
@@ -52,5 +52,7 @@ ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useScaledRowHeight.tsx");
 
-export default () => closure_3().rowHeight;
+export default function useScaledRowHeight() {
+  return closure_3().rowHeight;
+};
 export const useScaledRowHeightData = tmp2;

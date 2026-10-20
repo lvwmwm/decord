@@ -1,20 +1,20 @@
-// Module ID: 9702
-// Function ID: 9703
+// Module ID: 11137
+// Function ID: 11138
 // Name: useDeafStates
-// Dependencies: [502, 1999, 4909, 558, 576, 504, 2]
+// Dependencies: [502, 2012, 5113, 558, 576, 504, 2]
 // Exports: getDeafStates
 
-// Module 9702 (useDeafStates)
+// Module 11137 (useDeafStates)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeafStates(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function o() {
+    const fn = function l() {
       let flag;
       const tmp = VoiceStateStore;
       if (VoiceStateStore !== undefined) {
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp8, tmp9);
-}) : ((arg0) => {
+}) : (function useDeafStates(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("get initialized");

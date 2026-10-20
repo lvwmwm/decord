@@ -1,12 +1,12 @@
-// Module ID: 8297
-// Function ID: 8298
+// Module ID: 7736
+// Function ID: 7737
 // Name: useSelectedTeen
-// Dependencies: [1377, 7048, 558, 576, 573, 2]
+// Dependencies: [1390, 7254, 558, 576, 573, 2]
 
-// Module 8297 (useSelectedTeen)
+// Module 7736 (useSelectedTeen)
 import react from "react" /* 576 */;
-import UserStore from "UserStore" /* 1377 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
+import UserStore from "UserStore" /* 1390 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7254 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let _require;
 let tmp;
 const useStateFromStores = tmp(573);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedTeen() {
   let selectedTeenId;
   let stateFromStores;
   let tmp10;
@@ -63,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult2 = tmp(573);
   return tmpResult2.useStateFromStores(tmp8, tmp10);
-}) : (() => {
+}) : (function useSelectedTeen() {
   let closure_0;
   let selectedTeenId;
   const items = [FamilyCenterStore];
@@ -80,7 +80,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedTeenId() {
   let selectedTeenId;
   let tmp4;
   let tmp5;
@@ -88,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [FamilyCenterStore];
-    const fn = function n() {
+    const fn = function o() {
       return selectedTeenId.getSelectedTeenId();
     };
     cResult[0] = items;
@@ -100,7 +100,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = useStateFromStores;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useSelectedTeenId() {
   let selectedTeenId;
   const items = [FamilyCenterStore];
   const obj = useStateFromStores;

@@ -1,30 +1,28 @@
-// Module ID: 16155
-// Function ID: 16156
+// Module ID: 16669
+// Function ID: 16670
 // Name: TextChannel
-// Dependencies: [19, 17, 2050, 2104, 2051, 4509, 4905, 5071, 11697, 21, 4890, 587, 16055, 5859, 5812, 12016, 558, 576, 5797, 504, 4903, 4901, 1124, 10651, 16054, 9000, 5043, 4886, 12017, 9260, 16156, 16157, 8567, 16162, 5976, 2]
+// Dependencies: [19, 17, 2064, 2117, 2065, 4750, 6035, 5966, 11762, 21, 5092, 587, 16571, 8198, 8154, 12089, 558, 576, 5413, 504, 7015, 5103, 1124, 10284, 16570, 8508, 5421, 5088, 12090, 8646, 16670, 16671, 8537, 16676, 6162, 2]
 
-// Module 16155 (TextChannel)
+// Module 16669 (TextChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import RoutingSourcesDefault from "RoutingSources" /* 1124 */;
-import transitionToChannel2 from "transitionToChannel" /* 4901 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5797 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10651 */;
+import transitionToChannel2 from "transitionToChannel" /* 5103 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5413 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10284 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import GatedChannelStore from "GatedChannelStore" /* 2104 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11697 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import GatedChannelStore from "GatedChannelStore" /* 2117 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11762 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channel;
 
 let closure_12;
 let closure_14;
@@ -52,7 +50,7 @@ let closure_15 = createStyles.createStyles((arg0, arg1) => {
   return obj;
 });
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function TextChannel(channel) {
   let first;
   let hasUnread;
   let id;
@@ -268,7 +266,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   cResult[4] = items1;
   tmp14 = items1;
   tmp13 = S;
-}) : ((channel) => {
+}) : (function TextChannel(channel) {
   let BookCheckIcon;
   let channelIcon;
   let hasUnread;

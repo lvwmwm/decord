@@ -1,11 +1,11 @@
-// Module ID: 9779
-// Function ID: 9780
+// Module ID: 9691
+// Function ID: 9692
 // Name: useGetThreadDraftSettings
-// Dependencies: [7031, 558, 576, 11, 504, 2]
+// Dependencies: [7239, 558, 576, 11, 504, 2]
 
-// Module 9779 (useGetThreadDraftSettings)
+// Module 9691 (useGetThreadDraftSettings)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DraftStore from "DraftStore" /* 7031 */;
+import DraftStore from "DraftStore" /* 7239 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetThreadDraftSettings(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -52,7 +52,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useGetThreadDraftSettings(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -73,7 +73,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasThreadDraft(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -112,7 +112,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useHasThreadDraft(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

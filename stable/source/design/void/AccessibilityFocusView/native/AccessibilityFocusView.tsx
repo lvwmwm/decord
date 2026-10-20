@@ -1,12 +1,12 @@
-// Module ID: 13931
-// Function ID: 13932
+// Module ID: 14430
+// Function ID: 14431
 // Name: AccessibilityFocusView
-// Dependencies: [109, 19, 21, 558, 576, 13932, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14431, 2]
 
-// Module 13931 (AccessibilityFocusView)
+// Module 14430 (AccessibilityFocusView)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AccessibilityFocusNativeComponentDefault from "AccessibilityFocusNativeComponent" /* 13932 */;
+import AccessibilityFocusNativeComponentDefault from "AccessibilityFocusNativeComponent" /* 14431 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 
 let closure_3 = ["onAccessibilityFocus", "onAccessibilityBlur"];
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccessibilityFocusView(arg0) {
   let onAccessibilityBlur;
   let onAccessibilityFocus;
   let tmp3;
@@ -54,7 +54,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp5;
   cResult[7] = tmp12;
   tmp9 = tmp12;
-}) : ((arg0) => {
+}) : (function AccessibilityFocusView(arg0) {
   let onAccessibilityBlur;
   let onAccessibilityFocus;
   ({ onAccessibilityFocus, onAccessibilityBlur } = arg0);

@@ -1,24 +1,22 @@
-// Module ID: 6102
-// Function ID: 6103
+// Module ID: 6295
+// Function ID: 6296
 // Name: useInputClearButton
-// Dependencies: [19, 17, 21, 558, 576, 4797, 1126, 2]
+// Dependencies: [19, 17, 21, 558, 576, 6296, 1126, 2]
 
-// Module 6102 (useInputClearButton)
+// Module 6295 (useInputClearButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import CircleXIcon from "CircleXIcon" /* 4797 */;
+import CircleXIcon from "CircleXIcon" /* 6296 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let clearable;
-
 const Pressable = react_native.Pressable;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInputClearButton(arg0, arg1) {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp2 = closure_4(arg0, arg1);
@@ -39,7 +37,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     tmp4 = tmp9;
   }
   return tmp3;
-}) : ((arg0, arg1) => {
+}) : (function useInputClearButton(arg0, arg1) {
   const tmp = closure_4(arg0, arg1);
   let tmp2 = null;
   if (null != tmp) {
@@ -49,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((clearable, hasValue) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInputClearButtonConfig(clearable, hasValue) {
   const obj = react2;
   const cResult = obj.c(6);
   clearable = clearable.clearable;
@@ -98,7 +96,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((clearable, hasValue)
       }
     }
   }
-}) : ((clearable, hasValue) => {
+}) : (function useInputClearButtonConfig(clearable, hasValue) {
   let intl;
   let obj2;
   clearable = clearable.clearable;

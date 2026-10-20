@@ -1,18 +1,16 @@
-// Module ID: 7923
-// Function ID: 7924
+// Module ID: 8373
+// Function ID: 8374
 // Name: useProfileTileGradient
-// Dependencies: [32, 19, 558, 576, 7857, 7924, 7858, 7925, 2]
+// Dependencies: [32, 19, 558, 576, 8306, 8374, 8307, 8375, 2]
 
-// Module 7923 (useProfileTileGradient)
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7858 */;
+// Module 8373 (useProfileTileGradient)
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp3, userId;
-
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileTileGradient(userId) {
   let isVideoBackgroundProfileFetchEnabled;
   let tmp10;
   let tmp11;
@@ -66,33 +64,26 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       return useVideoTileGradientColors(tmp10, tmp11);
     }
   }
-  class I {
-    constructor() {
-      tmp2 = null != userId;
-      tmp = userId;
-      if (tmp2) {
-        tmp2 = closure_2;
-      }
-      if (tmp2) {
-        tmp3 = closure_1;
-        tmp4 = closure_2;
-        obj = { guildId: null, dispatchWait: true };
-        tmp5 = guildId;
-        obj.guildId = guildId;
-        tmp6 = closure_1(closure_2[6])(tmp, undefined, obj);
-      }
-      return;
+  const fn = function v() {
+    let tmp2 = null != userId;
+    const tmp = userId;
+    if (tmp2) {
+      tmp2 = isVideoBackgroundProfileFetchEnabled;
     }
-  }
+    if (tmp2) {
+      const obj = { guildId };
+      maybeFetchUserProfileDefault(tmp, undefined, obj);
+    }
+  };
   const items = [isVideoBackgroundProfileFetchEnabled, userId, guildId];
   cResult[2] = guildId;
   cResult[3] = isVideoBackgroundProfileFetchEnabled;
   cResult[4] = userId;
-  cResult[5] = I;
+  cResult[5] = fn;
   cResult[6] = items;
   tmp14 = items;
-  tmp13 = I;
-}) : ((userId) => {
+  tmp13 = fn;
+}) : (function useProfileTileGradient(userId) {
   let tmp5;
   let tmp6;
   userId = userId.userId;
@@ -120,7 +111,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       tmp2 = isVideoBackgroundProfileFetchEnabled;
     }
     if (tmp2) {
-      const obj = { guildId, dispatchWait: true };
+      const obj = { guildId };
       maybeFetchUserProfileDefault(tmp, undefined, obj);
     }
   }, items);

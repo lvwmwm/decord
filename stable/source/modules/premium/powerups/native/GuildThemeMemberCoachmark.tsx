@@ -1,26 +1,26 @@
-// Module ID: 16093
-// Function ID: 16094
+// Module ID: 16609
+// Function ID: 16610
 // Name: GuildThemeMemberCoachmark
-// Dependencies: [19, 4879, 4767, 4768, 2048, 21, 4890, 587, 558, 576, 4771, 504, 12177, 16094, 7671, 5612, 1126, 2525, 12180, 9882, 2]
+// Dependencies: [19, 5081, 5007, 5008, 2062, 21, 5092, 587, 558, 576, 5011, 504, 12261, 16610, 8025, 5959, 1126, 2600, 12264, 9438, 2]
 
-// Module 16093 (GuildThemeMemberCoachmark)
+// Module 16609 (GuildThemeMemberCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import _modDef2525 from "module_2525" /* 2525 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4768 */;
-import Powerups from "Powerups" /* 4771 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 5612 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 12180 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import _modDef2600 from "module_2600" /* 2600 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5008 */;
+import Powerups from "Powerups" /* 5011 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 5959 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 12264 */;
 import react from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 4879 */;
-import GuildPowerupsStore_mod from "GuildPowerupsStore" /* 4767 */;
-import createStyles from "createStyles" /* 4890 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5081 */;
+import GuildPowerupsStore_mod from "GuildPowerupsStore" /* 5007 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap, guildId;
+let dependencyMap;
 
 let size;
 let AccessibilityStore = AccessibilityStore_mod;
@@ -31,7 +31,7 @@ const jsx = Fragment.jsx;
 let obj = { coachmarkImage: size };
 size = { height: 120, width: 260 - 2 * nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.md };
 let closure_9 = createStyles.createStyles(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeMemberCoachmark(guildId) {
   let coachmarkImage;
   let first;
   let guildPowerupBannerImage;
@@ -132,31 +132,31 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
     AccessibilityStore = guildPowerupBannerImage;
-    const diff = closure_6 - markAsDismissed(7671)(guildId).available;
+    const diff = closure_6 - markAsDismissed(8025)(guildId).available;
     GuildPowerupsStore = diff;
     if (cResult[9] !== markAsDismissed) {
-      class R {
+      class D {
         constructor() {
           markAsDismissed(ContentDismissActionType.USER_DISMISS);
         }
       }
       cResult[9] = markAsDismissed;
-      cResult[10] = R;
+      cResult[10] = D;
     } else {
-      class R {
+      class D {
         constructor() {
           markAsDismissed(ContentDismissActionType.USER_DISMISS);
         }
       }
     }
     if (cResult[11] === diff) {
-      class R {
+      class D {
         constructor() {
           markAsDismissed(ContentDismissActionType.USER_DISMISS);
         }
       }
     }
-    class G {
+    class U {
       constructor() {
         markAsDismissed(ContentDismissActionType.TAKE_ACTION);
         if (GuildPowerupsStore > 0) {
@@ -168,22 +168,22 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     cResult[11] = diff;
     cResult[12] = guildId;
     cResult[13] = markAsDismissed;
-    cResult[14] = G;
+    cResult[14] = U;
   }
-  const tmpResult4 = guildId(12177);
+  const tmpResult4 = guildId(12261);
   guildPowerupBannerImage = tmpResult4.getGuildPowerupBannerImage(stateFromStores, stateFromStores1, true);
   if (guildPowerupBannerImage == null) {
-    class R {
+    class D {
       constructor() {
         markAsDismissed(ContentDismissActionType.USER_DISMISS);
       }
     }
-    guildPowerupBannerImage = markAsDismissed(16094);
+    guildPowerupBannerImage = markAsDismissed(16610);
   }
   cResult[6] = stateFromStores;
   cResult[7] = stateFromStores1;
   cResult[8] = guildPowerupBannerImage;
-}) : ((guildId) => {
+}) : (function GuildThemeMemberCoachmark(guildId) {
   let closure_2;
   guildId = guildId.guildId;
   const markAsDismissed = guildId.markAsDismissed;
@@ -209,12 +209,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const items2 = [guildPowerupBannerImage];
   const obj2 = guildId(504);
   const stateFromStores1 = obj2.useStateFromStores(items2, () => guildPowerupBannerImage.useReducedMotion);
-  const obj3 = guildId(12177);
+  const obj3 = guildId(12261);
   guildPowerupBannerImage = obj3.getGuildPowerupBannerImage(stateFromStores, stateFromStores1, true);
   if (guildPowerupBannerImage == null) {
-    guildPowerupBannerImage = markAsDismissed(16094);
+    guildPowerupBannerImage = markAsDismissed(16610);
   }
-  const diff = onDismiss - markAsDismissed(7671)(guildId).available;
+  const diff = onDismiss - markAsDismissed(8025)(guildId).available;
   c5 = diff;
   const items3 = [markAsDismissed];
   onDismiss = stateFromStores1.useCallback(() => {
@@ -236,8 +236,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     let intl2;
     let intl3;
     const obj = {
-      title: intl.string(_modDef2525.RK6NbY),
-      description: intl2.string(_modDef2525.xlAqGk),
+      title: intl.string(_modDef2600.RK6NbY),
+      description: intl2.string(_modDef2600.xlAqGk),
       visible: true,
       position: "bottom",
       offsetY: 8,
@@ -254,7 +254,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     intl3 = intl4.intl;
     return obj;
   }, items5);
-  const tmp2Result = tmp2(9882);
+  const tmp2Result = tmp2(9438);
   const coachmark = tmp2Result.useCoachmark(targetRef, memo);
   return null;
 });

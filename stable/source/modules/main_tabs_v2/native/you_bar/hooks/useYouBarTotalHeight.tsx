@@ -1,17 +1,17 @@
-// Module ID: 14901
-// Function ID: 14902
+// Module ID: 15380
+// Function ID: 15381
 // Name: useYouBarTotalHeight
-// Dependencies: [14899, 558, 14898, 14902, 2]
+// Dependencies: [15378, 558, 15377, 15381, 2]
 
-// Module 14901 (useYouBarTotalHeight)
-import useYouBarMargins from "useYouBarMargins" /* 14898 */;
-import YouBarConstants from "YouBarConstants" /* 14899 */;
-import useConnectionBannerHeight from "useConnectionBannerHeight" /* 14902 */;
+// Module 15380 (useYouBarTotalHeight)
+import useYouBarMargins from "useYouBarMargins" /* 15377 */;
+import YouBarConstants from "YouBarConstants" /* 15378 */;
+import useConnectionBannerHeight from "useConnectionBannerHeight" /* 15381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const YOU_BAR_HEIGHT = YouBarConstants.YOU_BAR_HEIGHT;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarTotalHeight(arg0) {
   let num = 0;
   if (undefined !== arg0) {
     num = arg0;
@@ -20,7 +20,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const youBarBottomMargin = obj.useYouBarBottomMargin();
   const obj2 = useConnectionBannerHeight;
   return youBarBottomMargin + YOU_BAR_HEIGHT + obj2.useConnectionBannerHeight() + num;
-}) : (() => {
+}) : (function useYouBarTotalHeight() {
   let num = arg0;
   if (arg0 === undefined) {
     num = 0;

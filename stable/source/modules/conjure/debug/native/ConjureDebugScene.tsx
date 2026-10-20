@@ -1,528 +1,322 @@
-// Module ID: 16751
-// Function ID: 16752
+// Module ID: 17328
+// Function ID: 17329
 // Name: ConjureDebugScene
-// Dependencies: [32, 19, 17, 7204, 12904, 16752, 21, 4890, 587, 1126, 3723, 558, 576, 1490, 1618, 504, 9282, 6688, 16753, 4568, 4843, 16551, 9283, 16754, 16760, 16769, 16771, 2]
+// Dependencies: [32, 19, 17, 13223, 13224, 21, 5092, 587, 1126, 3849, 558, 576, 1503, 1631, 17167, 8525, 504, 13239, 17125, 17329, 6886, 17338, 4809, 5042, 17104, 8774, 17339, 17345, 17347, 2]
 
-// Module 16751 (ConjureDebugScene)
+// Module 17328 (ConjureDebugScene)
 import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1126 */;
-import _modDef3723 from "module_3723" /* 3723 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import CopyIcon from "CopyIcon" /* 4843 */;
-import ClipboardUtils from "ClipboardUtils" /* 6688 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12904 */;
-import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 16753 */;
+import intl4 from "intl" /* 1126 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import CopyIcon from "CopyIcon" /* 5042 */;
+import ClipboardUtils from "ClipboardUtils" /* 6886 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13223 */;
+import conjureDebugConnection from "conjureDebugConnection" /* 13239 */;
+import conjureTraceRequests2 from "conjureTraceRequests" /* 17125 */;
+import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 17338 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7204 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 16752 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 13224 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation, projectId, setOptionsResult;
+let navigation;
 
 let c10;
+let c9;
 let hasOwnProperty;
 let metroRequire;
 let obj2;
 let obj3;
 let obj4;
-let unpackModuleId;
 let react = react_mod;
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
-const requestDebugStatus = ConjureConnectionStore.requestDebugStatus;
-({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+const subscribeDebugBacklog = ConjureConnectionStore.subscribeDebugBacklog;
+({ jsx: c9, jsxs: c10 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { scene: obj2, tabs: obj3, content: { flex: 1 }, report: obj4 };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_12 };
 obj4 = { paddingHorizontal: nativeDefault.space.PX_16 };
-let closure_12 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
-  let arr2;
-  let isDeveloper;
-  let items6;
-  let items7;
+let closure_11 = createStyles(obj);
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebugScene(projectId) {
+  let arr;
+  let conjureTraceTabEnabled;
+  let tmp11;
   let tmp13;
   let tmp14;
   let tmp16;
+  let tmp17;
   let tmp18;
-  let tmp19;
   let tmp21;
   let tmp22;
-  let tmp23;
+  let tmp24;
   let tmp25;
-  let tmp26;
-  let tmp39Result;
-  let tmp7;
-  let tmp8;
+  let tmp9;
   let tmp = projectId;
-  let obj = projectId(arr2[12]);
-  const cResult = obj.c(46);
+  let tmp2 = conjureTraceTabEnabled;
+  let obj = projectId(conjureTraceTabEnabled[11]);
+  const cResult = obj.c(55);
   projectId = projectId.projectId;
-  const tmp4 = closure_12();
-  let obj2 = projectId(arr2[13]);
+  let tmp4 = closure_11();
+  let obj2 = projectId(conjureTraceTabEnabled[12]);
   navigation = obj2.useNavigation();
-  const bottom = navigation(arr2[14])().bottom;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [DeveloperExperimentStore];
-    const fn = function y() {
-      return isDeveloper.isDeveloper;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp7 = items;
-    tmp8 = fn;
+  const bottom = navigation(conjureTraceTabEnabled[13])().bottom;
+  const obj3 = projectId(conjureTraceTabEnabled[14]);
+  conjureTraceTabEnabled = obj3.useConjureTraceTabEnabled();
+  if (cResult[0] !== conjureTraceTabEnabled) {
+    const tmp7 = conjureTraceTabEnabled ? ["logs", "worker", "agent", "trace"] : ["logs", "worker", "agent"];
+    cResult[0] = conjureTraceTabEnabled;
+    cResult[1] = tmp7;
+    arr = tmp7;
   } else {
-    [tmp7, tmp8] = cResult;
+    arr = cResult[1];
   }
-  const tmpResult = tmp(arr2[15]);
-  const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
-  if (cResult[2] !== stateFromStores) {
-    const tmp11 = stateFromStores ? ["logs", "worker", "agent", "trace"] : ["logs", "worker", "agent"];
-    cResult[2] = stateFromStores;
-    cResult[3] = tmp11;
-    arr2 = tmp11;
-  } else {
-    arr2 = cResult[3];
-  }
-  const tmp12 = _slicedToArray(W.useState("logs"), 2);
-  [tmp13, _slicedToArray] = tmp12;
-  if (cResult[4] !== arr2) {
-    const obj3 = {
+  const tmp8 = arr(react.useState("logs"), 2);
+  [r10037, react] = tmp8;
+  if (cResult[2] !== arr) {
+    const obj5 = {
       pageWidth: 0,
-      items: arr2.map((id) => {
-          let stringResult;
-          const obj = { id, label: stringResult, page: null };
+      items: arr.map((id) => {
+          let str;
+          const obj = { id, label: str, page: null };
           if ("worker" === id) {
-            const intl4 = projectId(arr2[9]).intl;
-            stringResult = intl4.string(navigation(arr2[10])["50D0FZ"]);
+            const intl2 = projectId(conjureTraceTabEnabled[8]).intl;
+            str = intl2.string(navigation(conjureTraceTabEnabled[9])["50D0FZ"]);
           } else if ("agent" === id) {
-            const intl3 = projectId(arr2[9]).intl;
-            stringResult = intl3.string(navigation(arr2[10]).UkbTK1);
-          } else if ("trace" === id) {
-            const intl2 = projectId(arr2[9]).intl;
-            stringResult = intl2.string(navigation(arr2[10]).O6nNjP);
+            const intl = projectId(conjureTraceTabEnabled[8]).intl;
+            str = intl.string(navigation(conjureTraceTabEnabled[9]).UkbTK1);
           } else {
-            const intl = projectId(arr2[9]).intl;
-            stringResult = intl.string(navigation(arr2[10])["+VRYCm"]);
+            str = "Trace";
+            if ("trace" !== id) {
+              const intl3 = projectId(conjureTraceTabEnabled[8]).intl;
+              str = intl3.string(navigation(conjureTraceTabEnabled[9])["+VRYCm"]);
+            }
           }
           return obj;
         }),
       onSetActiveIndex(arg0) {
-          let str = arr2[arg0];
-          const tmp = _slicedToArray;
+          let str = arr[arg0];
+          const tmp = react;
           if (str == null) {
             str = "logs";
           }
           return tmp(str);
         }
     };
-    cResult[4] = arr2;
-    cResult[5] = obj3;
-    tmp14 = obj3;
+    cResult[2] = arr;
+    cResult[3] = obj5;
+    tmp9 = obj5;
   } else {
-    tmp14 = cResult[5];
+    tmp9 = cResult[3];
   }
-  const tmpResult4 = tmp(arr2[16]);
-  const segmentedControlState = tmpResult4.useSegmentedControlState(tmp14);
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [ConjureDebugStore];
-    cResult[6] = items1;
-    tmp16 = items1;
+  const tmpResult = tmp(tmp2[15]);
+  const segmentedControlState = tmpResult.useSegmentedControlState(tmp9);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [ConjureDebugStore];
+    cResult[4] = items;
+    tmp11 = items;
   } else {
-    tmp16 = cResult[6];
+    tmp11 = cResult[4];
   }
-  if (cResult[7] !== projectId) {
-    class B {
+  if (cResult[5] !== projectId) {
+    class P {
       constructor() {
         return ConjureDebugStore.getStatus(projectId);
       }
     }
-    const items2 = [projectId];
-    cResult[7] = projectId;
-    cResult[8] = B;
-    cResult[9] = items2;
-    tmp19 = items2;
-    tmp18 = B;
+    const items1 = [projectId];
+    cResult[5] = projectId;
+    cResult[6] = P;
+    cResult[7] = items1;
+    tmp14 = items1;
+    tmp13 = P;
   } else {
-    class B {
+    class P {
       constructor() {
         return ConjureDebugStore.getStatus(projectId);
       }
     }
-    tmp19 = cResult[9];
+    tmp14 = cResult[7];
   }
-  const tmpResult5 = tmp(arr2[15]);
-  const stateFromStores1 = tmpResult5.useStateFromStores(tmp16, tmp18, tmp19);
-  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
+  const tmpResult3 = tmp(tmp2[16]);
+  const stateFromStores = tmpResult3.useStateFromStores(tmp11, tmp13, tmp14);
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    class P {
       constructor() {
         return ConjureDebugStore.getStatus(projectId);
       }
     }
-    const items3 = [ConjureDebugStore];
-    cResult[10] = items3;
-    tmp21 = items3;
+    const items2 = [ConjureDebugStore];
+    cResult[8] = items2;
+    tmp16 = items2;
   } else {
-    class B {
+    class P {
       constructor() {
         return ConjureDebugStore.getStatus(projectId);
       }
     }
   }
-  if (cResult[11] !== projectId) {
-    class V {
+  if (cResult[9] !== projectId) {
+    class B {
       constructor() {
         return ConjureDebugStore.getFetchState(projectId);
       }
     }
-    const items4 = [projectId];
-    cResult[11] = projectId;
-    cResult[12] = items4;
-    cResult[13] = V;
-    tmp23 = V;
+    const items3 = [projectId];
+    cResult[9] = projectId;
+    cResult[10] = B;
+    cResult[11] = items3;
+    tmp18 = items3;
+    tmp17 = B;
+  } else {
+    class B {
+      constructor() {
+        return ConjureDebugStore.getFetchState(projectId);
+      }
+    }
+    tmp18 = cResult[11];
+  }
+  const tmpResult4 = tmp(tmp2[16]);
+  const stateFromStores1 = tmpResult4.useStateFromStores(tmp16, tmp17, tmp18);
+  if (cResult[12] !== projectId) {
+    class L {
+      constructor() {
+        const obj = conjureDebugConnection;
+        const debugStatus = obj.requestDebugStatus(projectId);
+        const obj2 = conjureDebugConnection;
+        const conjureDebugGitInfo = obj2.requestConjureDebugGitInfo(projectId);
+      }
+    }
+    cResult[12] = projectId;
+    cResult[13] = L;
+  } else {
+    class L {
+      constructor() {
+        const obj = conjureDebugConnection;
+        const debugStatus = obj.requestDebugStatus(projectId);
+        const obj2 = conjureDebugConnection;
+        const conjureDebugGitInfo = obj2.requestConjureDebugGitInfo(projectId);
+      }
+    }
+  }
+  L = tmp20;
+  if (cResult[14] !== tmp20) {
+    class X {
+      constructor() {
+        return L();
+      }
+    }
+    const items4 = [tmp20];
+    cResult[14] = tmp20;
+    cResult[15] = X;
+    cResult[16] = items4;
     tmp22 = items4;
+    tmp21 = X;
   } else {
-    class V {
+    class X {
       constructor() {
-        return ConjureDebugStore.getFetchState(projectId);
+        return L();
       }
     }
-    tmp23 = cResult[13];
+    tmp22 = cResult[16];
   }
-  const tmpResult6 = tmp(arr2[15]);
-  const stateFromStores2 = tmpResult6.useStateFromStores(tmp21, tmp23, tmp22);
-  if (cResult[14] !== projectId) {
-    class H {
+  const effect = obj4.useEffect(tmp21, tmp22);
+  if (cResult[17] !== projectId) {
+    class N {
       constructor() {
-        requestDebugStatus(projectId);
+        return subscribeDebugBacklog(projectId);
       }
     }
     const items5 = [projectId];
-    cResult[14] = projectId;
-    cResult[15] = H;
-    cResult[16] = items5;
-    tmp26 = items5;
-    tmp25 = H;
-  } else {
-    class H {
-      constructor() {
-        requestDebugStatus(projectId);
-      }
-    }
-    tmp26 = cResult[16];
-  }
-  const effect = obj4.useEffect(tmp25, tmp26);
-  if (cResult[17] !== projectId) {
-    class H {
-      constructor() {
-        requestDebugStatus(projectId);
-      }
-    }
     cResult[17] = projectId;
-    cResult[18] = tmp29;
+    cResult[18] = N;
+    cResult[19] = items5;
+    tmp25 = items5;
+    tmp24 = N;
   } else {
-    class H {
+    class N {
       constructor() {
-        requestDebugStatus(projectId);
+        return subscribeDebugBacklog(projectId);
+      }
+    }
+    tmp25 = cResult[19];
+  }
+  const effect1 = obj4.useEffect(tmp24, tmp25);
+  const setActiveIndex = segmentedControlState.setActiveIndex;
+  if (cResult[20] === projectId) {
+    class N {
+      constructor() {
+        return subscribeDebugBacklog(projectId);
       }
     }
   }
-  if (cResult[19] !== projectId) {
-    class W {
-      constructor() {
-        let intl;
-        const copy = ClipboardUtils.copy;
-        ClipboardUtils;
-        const obj = ConjureDebugSnapshot;
-        copy(obj.conjureDebugSnapshot(projectId));
-        const obj2 = { key: "CONJURE_DEBUG_COPIED", content: intl.string(_modDef3723.wI6fhl), IconComponent: CopyIcon.CopyIcon };
-        const open = ToastActionCreatorsDefault.open;
-        ToastActionCreatorsDefault;
-        intl = intl5.intl;
-        open(obj2);
-      }
-    }
-    cResult[19] = projectId;
-    cResult[20] = W;
-  } else {
-    class W {
-      constructor() {
-        let intl;
-        const copy = ClipboardUtils.copy;
-        ClipboardUtils;
-        const obj = ConjureDebugSnapshot;
-        copy(obj.conjureDebugSnapshot(projectId));
-        const obj2 = { key: "CONJURE_DEBUG_COPIED", content: intl.string(_modDef3723.wI6fhl), IconComponent: CopyIcon.CopyIcon };
-        const open = ToastActionCreatorsDefault.open;
-        ToastActionCreatorsDefault;
-        intl = intl5.intl;
-        open(obj2);
-      }
-    }
-  }
-  W = tmp30;
-  if (cResult[21] === tmp30) {
-    class W {
-      constructor() {
-        let intl;
-        const copy = ClipboardUtils.copy;
-        ClipboardUtils;
-        const obj = ConjureDebugSnapshot;
-        copy(obj.conjureDebugSnapshot(projectId));
-        const obj2 = { key: "CONJURE_DEBUG_COPIED", content: intl.string(_modDef3723.wI6fhl), IconComponent: CopyIcon.CopyIcon };
-        const open = ToastActionCreatorsDefault.open;
-        ToastActionCreatorsDefault;
-        intl = intl5.intl;
-        open(obj2);
-      }
-    }
-    const effect1 = obj4.useEffect(J, items7);
-    if (cResult[25] !== segmentedControlState) {
-      class W {
-        constructor() {
-          let intl;
-          const copy = ClipboardUtils.copy;
-          ClipboardUtils;
-          const obj = ConjureDebugSnapshot;
-          copy(obj.conjureDebugSnapshot(projectId));
-          const obj2 = { key: "CONJURE_DEBUG_COPIED", content: intl.string(_modDef3723.wI6fhl), IconComponent: CopyIcon.CopyIcon };
-          const open = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          intl = intl5.intl;
-          open(obj2);
-        }
-      }
-      const obj5 = { state: segmentedControlState };
-      cResult[25] = segmentedControlState;
-      cResult[26] = closure_10(tmp(arr2[22]).SegmentedControl, obj5);
-      const tmp33 = closure_10(tmp(arr2[22]).SegmentedControl, obj5);
-    } else {
-      class W {
-        constructor() {
-          let intl;
-          const copy = ClipboardUtils.copy;
-          ClipboardUtils;
-          const obj = ConjureDebugSnapshot;
-          copy(obj.conjureDebugSnapshot(projectId));
-          const obj2 = { key: "CONJURE_DEBUG_COPIED", content: intl.string(_modDef3723.wI6fhl), IconComponent: CopyIcon.CopyIcon };
-          const open = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          intl = intl5.intl;
-          open(obj2);
-        }
-      }
-    }
-    if (cResult[27] === tmp4.tabs) {
-      let tmp39Result2;
-      class W {
-        constructor() {
-          let intl;
-          const copy = ClipboardUtils.copy;
-          ClipboardUtils;
-          const obj = ConjureDebugSnapshot;
-          copy(obj.conjureDebugSnapshot(projectId));
-          const obj2 = { key: "CONJURE_DEBUG_COPIED", content: intl.string(_modDef3723.wI6fhl), IconComponent: CopyIcon.CopyIcon };
-          const open = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          intl = intl5.intl;
-          open(obj2);
-        }
-      }
-      if (cResult[30] === stateFromStores2) {
-        class W {
-          constructor() {
-            let intl;
-            const copy = ClipboardUtils.copy;
-            ClipboardUtils;
-            const obj = ConjureDebugSnapshot;
-            copy(obj.conjureDebugSnapshot(projectId));
-            const obj2 = { key: "CONJURE_DEBUG_COPIED", content: intl.string(_modDef3723.wI6fhl), IconComponent: CopyIcon.CopyIcon };
-            const open = ToastActionCreatorsDefault.open;
-            ToastActionCreatorsDefault;
-            intl = intl5.intl;
-            open(obj2);
-          }
-        }
-      }
-      if ("logs" === tmp13) {
-        class W {
-          constructor() {
-            let intl;
-            const copy = ClipboardUtils.copy;
-            ClipboardUtils;
-            const obj = ConjureDebugSnapshot;
-            copy(obj.conjureDebugSnapshot(projectId));
-            const obj2 = { key: "CONJURE_DEBUG_COPIED", content: intl.string(_modDef3723.wI6fhl), IconComponent: CopyIcon.CopyIcon };
-            const open = ToastActionCreatorsDefault.open;
-            ToastActionCreatorsDefault;
-            intl = intl5.intl;
-            open(obj2);
-          }
-        }
-        const obj6 = { projectId };
-        tmp39Result2 = closure_10(tmp6(tmp2[23]), obj6);
-      } else {
-        class W {
-          constructor() {
-            let intl;
-            const copy = ClipboardUtils.copy;
-            ClipboardUtils;
-            const obj = ConjureDebugSnapshot;
-            copy(obj.conjureDebugSnapshot(projectId));
-            const obj2 = { key: "CONJURE_DEBUG_COPIED", content: intl.string(_modDef3723.wI6fhl), IconComponent: CopyIcon.CopyIcon };
-            const open = ToastActionCreatorsDefault.open;
-            ToastActionCreatorsDefault;
-            intl = intl5.intl;
-            open(obj2);
-          }
-        }
-        if ("trace" === tmp13) {
-          class W {
-            constructor() {
-              let intl;
-              const copy = ClipboardUtils.copy;
-              ClipboardUtils;
-              const obj = ConjureDebugSnapshot;
-              copy(obj.conjureDebugSnapshot(projectId));
-              const obj2 = { key: "CONJURE_DEBUG_COPIED", content: intl.string(_modDef3723.wI6fhl), IconComponent: CopyIcon.CopyIcon };
-              const open = ToastActionCreatorsDefault.open;
-              ToastActionCreatorsDefault;
-              intl = intl5.intl;
-              open(obj2);
-            }
-          }
-        }
-        const obj7 = { contentContainerStyle: items6, children: tmp39Result };
-        items6 = [tmp4.report, ];
-        items6[1] = { paddingBottom: navigation(arr2[8]).space.PX_16 + bottom };
-        let str = "worker";
-        const obj8 = { paddingBottom: navigation(arr2[8]).space.PX_16 + bottom };
-        const tmp40 = closure_5;
-        if ("worker" === tmp13) {
-          class W {
-            constructor() {
-              let intl;
-              const copy = ClipboardUtils.copy;
-              ClipboardUtils;
-              const obj = ConjureDebugSnapshot;
-              copy(obj.conjureDebugSnapshot(projectId));
-              const obj2 = { key: "CONJURE_DEBUG_COPIED", content: intl.string(_modDef3723.wI6fhl), IconComponent: CopyIcon.CopyIcon };
-              const open = ToastActionCreatorsDefault.open;
-              ToastActionCreatorsDefault;
-              intl = intl5.intl;
-              open(obj2);
-            }
-          }
-          tmp43[0] = stateFromStores1;
-          tmp43[1] = stateFromStores2;
-          tmp43[2] = tmp28;
-          tmp39Result = tmp39(tmp6(tmp2[25]), tmp43);
-        } else {
-          class W {
-            constructor() {
-              let intl;
-              const copy = ClipboardUtils.copy;
-              ClipboardUtils;
-              const obj = ConjureDebugSnapshot;
-              copy(obj.conjureDebugSnapshot(projectId));
-              const obj2 = { key: "CONJURE_DEBUG_COPIED", content: intl.string(_modDef3723.wI6fhl), IconComponent: CopyIcon.CopyIcon };
-              const open = ToastActionCreatorsDefault.open;
-              ToastActionCreatorsDefault;
-              intl = intl5.intl;
-              open(obj2);
-            }
-          }
-          tmp41[0] = projectId;
-          tmp41[1] = stateFromStores1;
-          tmp41[2] = stateFromStores2;
-          tmp41[3] = tmp28;
-          tmp41[4] = stateFromStores;
-          tmp39Result = tmp39(tmp6(tmp2[26]), tmp41);
-        }
-        tmp39Result2 = tmp39(tmp40, obj7, tmp13);
-      }
-      cResult[30] = stateFromStores2;
-      cResult[31] = tmp28;
-      cResult[32] = projectId;
-      cResult[33] = bottom;
-      cResult[34] = stateFromStores;
-      cResult[35] = stateFromStores1;
-      cResult[36] = tmp4.report;
-      cResult[37] = tmp13;
-      cResult[38] = tmp39Result2;
-    }
-    const obj9 = { style: tmp4.tabs, children: tmp32 };
-    cResult[27] = tmp4.tabs;
-    cResult[28] = tmp32;
-    cResult[29] = closure_10(closure_6, obj9);
-    const tmp37 = closure_10(closure_6, obj9);
-  }
-  class J {
+  class W {
     constructor() {
-      obj = {
-        headerRight() {
-              let intl;
-              const obj = { IconComponent: projectId(arr2[20]).CopyIcon, onPress, accessibilityLabel: intl.string(navigation(arr2[10]).TkHqy2) };
-              const tmp = navigation(arr2[21]);
-              intl = projectId(arr2[9]).intl;
-              return closure_2_10(tmp, obj);
-            }
-      };
-      setOptionsResult = closure_1.setOptions(obj);
-      return;
+      const tmp = conjureTraceTabEnabled;
+      if (tmp) {
+        const obj = conjureTraceRequests2;
+        const result = obj.takeConjureTraceRequest(projectId);
+        const tmp2 = require;
+        const tmp4 = projectId;
+        if (null != result) {
+          setActiveIndex(arr.indexOf("trace"), false);
+          const tmp2Result = tmp2(17329);
+          tmp2Result.openPerfTrace(tmp4, result);
+        }
+      }
     }
   }
-  items7 = [tmp30, navigation];
-  cResult[21] = tmp30;
-  cResult[22] = navigation;
-  cResult[23] = J;
-  cResult[24] = items7;
-}) : ((projectId) => {
+  cResult[20] = projectId;
+  cResult[21] = setActiveIndex;
+  cResult[22] = conjureTraceTabEnabled;
+  cResult[23] = arr;
+  cResult[24] = W;
+}) : (function ConjureDebugScene(projectId) {
   let c4;
-  let isDeveloper;
-  let items10;
-  let items11;
-  let tmp17Result;
-  let tmp17Result2;
+  let items12;
+  let items13;
+  let tmp21Result;
+  let tmp21Result2;
   let tmp7;
   projectId = projectId.projectId;
-  let stateFromStores;
+  let conjureTraceTabEnabled;
   react = undefined;
-  let tmp = closure_12();
-  let obj = projectId(stateFromStores[13]);
+  let callback2;
+  let tmp = closure_11();
+  let tmp2 = conjureTraceTabEnabled;
+  let obj = projectId(conjureTraceTabEnabled[12]);
   navigation = obj.useNavigation();
-  const bottom = navigation(stateFromStores[14])().bottom;
-  let obj2 = projectId(stateFromStores[15]);
-  const items = [DeveloperExperimentStore];
-  stateFromStores = obj2.useStateFromStores(items, () => isDeveloper.isDeveloper);
-  const items1 = [stateFromStores];
-  const memo = react.useMemo(() => stateFromStores ? ["logs", "worker", "agent", "trace"] : ["logs", "worker", "agent"], items1);
+  let tmp4 = navigation;
+  const bottom = navigation(conjureTraceTabEnabled[13])().bottom;
+  let obj2 = projectId(conjureTraceTabEnabled[14]);
+  conjureTraceTabEnabled = obj2.useConjureTraceTabEnabled();
+  const items = [conjureTraceTabEnabled];
+  const memo = react.useMemo(() => conjureTraceTabEnabled ? ["logs", "worker", "agent", "trace"] : ["logs", "worker", "agent"], items);
   [tmp7, c4] = memo(react.useState("logs"), 2);
   const tmp6 = memo(react.useState("logs"), 2);
-  const obj3 = projectId(stateFromStores[16]);
+  const obj3 = projectId(conjureTraceTabEnabled[15]);
   const obj4 = {
     pageWidth: 0,
     items: memo.map((id) => {
-      let stringResult;
-      const obj = { id, label: stringResult, page: null };
+      let str;
+      const obj = { id, label: str, page: null };
       if ("worker" === id) {
-        const intl4 = projectId(stateFromStores[9]).intl;
-        stringResult = intl4.string(navigation(stateFromStores[10])["50D0FZ"]);
+        const intl2 = projectId(conjureTraceTabEnabled[8]).intl;
+        str = intl2.string(navigation(conjureTraceTabEnabled[9])["50D0FZ"]);
       } else if ("agent" === id) {
-        const intl3 = projectId(stateFromStores[9]).intl;
-        stringResult = intl3.string(navigation(stateFromStores[10]).UkbTK1);
-      } else if ("trace" === id) {
-        const intl2 = projectId(stateFromStores[9]).intl;
-        stringResult = intl2.string(navigation(stateFromStores[10]).O6nNjP);
+        const intl = projectId(conjureTraceTabEnabled[8]).intl;
+        str = intl.string(navigation(conjureTraceTabEnabled[9]).UkbTK1);
       } else {
-        const intl = projectId(stateFromStores[9]).intl;
-        stringResult = intl.string(navigation(stateFromStores[10])["+VRYCm"]);
+        str = "Trace";
+        if ("trace" !== id) {
+          const intl3 = projectId(conjureTraceTabEnabled[8]).intl;
+          str = intl3.string(navigation(conjureTraceTabEnabled[9])["+VRYCm"]);
+        }
       }
       return obj;
     }),
@@ -536,81 +330,106 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     }
   };
   const segmentedControlState = obj3.useSegmentedControlState(obj4);
-  const items2 = [ConjureDebugStore];
-  const items3 = [projectId];
-  const obj5 = projectId(stateFromStores[15]);
-  const stateFromStores1 = obj5.useStateFromStores(items2, () => ConjureDebugStore.getStatus(projectId), items3);
-  const items4 = [ConjureDebugStore];
+  const items1 = [callback2];
+  const items2 = [projectId];
+  const obj5 = projectId(conjureTraceTabEnabled[16]);
+  const stateFromStores = obj5.useStateFromStores(items1, () => ConjureDebugStore.getStatus(projectId), items2);
+  const items3 = [callback2];
+  const items4 = [projectId];
+  const obj6 = projectId(conjureTraceTabEnabled[16]);
+  const stateFromStores1 = obj6.useStateFromStores(items3, () => ConjureDebugStore.getFetchState(projectId), items4);
   const items5 = [projectId];
-  const obj6 = projectId(stateFromStores[15]);
-  const stateFromStores2 = obj6.useStateFromStores(items4, () => ConjureDebugStore.getFetchState(projectId), items5);
-  const items6 = [projectId];
-  const effect = react.useEffect(() => {
-    requestDebugStatus(projectId);
-  }, items6);
+  const onRefresh = react.useCallback(() => {
+    const obj = conjureDebugConnection;
+    const debugStatus = obj.requestDebugStatus(projectId);
+    const obj2 = conjureDebugConnection;
+    const conjureDebugGitInfo = obj2.requestConjureDebugGitInfo(projectId);
+  }, items5);
+  const items6 = [onRefresh];
+  const effect = react.useEffect(() => callback(), items6);
   const items7 = [projectId];
-  const callback = react.useCallback(() => requestDebugStatus(projectId), items7);
-  const items8 = [projectId];
+  const effect1 = react.useEffect(() => subscribeDebugBacklog(projectId), items7);
+  const setActiveIndex = segmentedControlState.setActiveIndex;
+  const items8 = [projectId, setActiveIndex, conjureTraceTabEnabled, memo];
   const callback1 = react.useCallback(() => {
+    const tmp = conjureTraceTabEnabled;
+    if (tmp) {
+      const obj = conjureTraceRequests2;
+      const result = obj.takeConjureTraceRequest(projectId);
+      const tmp2 = require;
+      const tmp4 = projectId;
+      if (null != result) {
+        setActiveIndex(memo.indexOf("trace"), false);
+        const tmp2Result = tmp2(17329);
+        tmp2Result.openPerfTrace(tmp4, result);
+      }
+    }
+  }, items8);
+  const items9 = [callback1];
+  const effect2 = react.useEffect(() => callback1(), items9);
+  const obj7 = projectId(conjureTraceTabEnabled[18]);
+  const conjureTraceRequests = obj7.useConjureTraceRequests(projectId, callback1);
+  const items10 = [projectId];
+  callback2 = react.useCallback(() => {
     let intl;
     const copy = ClipboardUtils.copy;
     ClipboardUtils;
     const obj = ConjureDebugSnapshot;
     copy(obj.conjureDebugSnapshot(projectId));
-    const obj2 = { key: "CONJURE_DEBUG_COPIED", content: intl.string(_modDef3723.wI6fhl), IconComponent: CopyIcon.CopyIcon };
+    const obj2 = { text: intl.string(_modDef3849.wI6fhl), icon: CopyIcon.CopyIcon };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
-    intl = intl5.intl;
-    open(obj2);
-  }, items8);
-  const items9 = [callback1, navigation];
-  const effect1 = react.useEffect(() => {
+    intl = intl4.intl;
+    open("CONJURE_DEBUG_COPIED", obj2);
+  }, items10);
+  const items11 = [callback2, navigation];
+  const effect3 = react.useEffect(() => {
     let onPress;
     let obj = {
       headerRight() {
         let intl;
-        const obj = { IconComponent: projectId(stateFromStores[20]).CopyIcon, onPress, accessibilityLabel: intl.string(navigation(stateFromStores[10]).TkHqy2) };
-        const tmp = navigation(stateFromStores[21]);
-        intl = projectId(stateFromStores[9]).intl;
-        return closure_2_10(tmp, obj);
+        const obj = { IconComponent: projectId(conjureTraceTabEnabled[23]).CopyIcon, onPress, accessibilityLabel: intl.string(navigation(conjureTraceTabEnabled[9]).TkHqy2) };
+        const tmp = navigation(conjureTraceTabEnabled[24]);
+        intl = projectId(conjureTraceTabEnabled[8]).intl;
+        return closure_2_9(tmp, obj);
       }
     };
     navigation.setOptions(obj);
-  }, items9);
-  const obj7 = { style: tmp.scene, children: items10 };
-  items10 = [, ];
-  const obj8 = { style: tmp.tabs, children: closure_10(projectId(stateFromStores[22]).SegmentedControl, { state: segmentedControlState }) };
-  items10[0] = closure_10(closure_6, obj8);
-  const obj9 = { style: tmp.content, children: tmp17Result };
-  const tmp15 = closure_11;
+  }, items11);
+  const obj8 = { style: tmp.scene, children: items12 };
+  items12 = [, ];
+  const obj9 = { style: tmp.tabs, children: closure_9(projectId(conjureTraceTabEnabled[25]).SegmentedControl, { state: segmentedControlState }) };
+  items12[0] = closure_9(setActiveIndex, obj9);
+  const obj10 = { style: tmp.content, children: tmp21Result };
+  const tmp19 = closure_10;
   if ("logs" === tmp7) {
-    const obj10 = { projectId };
-    tmp17Result = tmp17(tmp4(tmp2[23]), obj10);
+    const obj11 = { projectId };
+    tmp21Result = tmp21(tmp4(tmp2[26]), obj11);
   } else {
     if ("trace" === tmp7) {
-      if (stateFromStores) {
-        const obj11 = { projectId };
-        tmp17Result = tmp17(tmp4(tmp2[24]), obj11);
+      if (conjureTraceTabEnabled) {
+        const obj12 = { projectId };
+        tmp21Result = tmp21(tmp4(tmp2[19]), obj12);
       }
     }
-    const obj12 = { contentContainerStyle: items11, children: tmp17Result2 };
-    items11 = [tmp.report, ];
-    items11[1] = { paddingBottom: navigation(stateFromStores[8]).space.PX_16 + bottom };
+    const obj13 = { contentContainerStyle: items13, children: tmp21Result2 };
+    items13 = [tmp.report, ];
+    items13[1] = { paddingBottom: tmp4(tmp2[7]).space.PX_16 + bottom };
     let str = "worker";
-    const obj13 = { paddingBottom: navigation(stateFromStores[8]).space.PX_16 + bottom };
-    const tmp18 = callback1;
+    const obj14 = { paddingBottom: tmp4(tmp2[7]).space.PX_16 + bottom };
+    const tmp22 = onRefresh;
     if ("worker" === tmp7) {
-      const obj14 = { status: stateFromStores1, fetchState: stateFromStores2, onRefresh: callback };
-      tmp17Result2 = tmp17(tmp4(tmp2[25]), obj14);
+      const obj15 = { status: stateFromStores, fetchState: stateFromStores1, onRefresh };
+      tmp21Result2 = tmp21(tmp4(tmp2[27]), obj15);
     } else {
-      const obj15 = { projectId, status: stateFromStores1, fetchState: stateFromStores2, onRefresh: callback, traceVisible: stateFromStores };
-      tmp17Result2 = tmp17(tmp4(tmp2[26]), obj15);
+      const obj16 = { projectId, status: stateFromStores, fetchState: stateFromStores1, onRefresh };
+      tmp21Result2 = tmp21(tmp4(tmp2[28]), obj16);
     }
-    tmp17Result = tmp17(tmp18, obj12, tmp7);
+    tmp21Result = tmp21(tmp22, obj13, tmp7);
   }
-  items10[1] = closure_10(closure_6, obj9);
-  return tmp15(closure_6, obj7);
+  items12[1] = closure_9(setActiveIndex, obj10);
+  return tmp19(setActiveIndex, obj8);
 });
-const result = size.fileFinishedImporting("modules/conjure/debug/native/ConjureDebugScene.tsx");
+let result = size.fileFinishedImporting("modules/conjure/debug/native/ConjureDebugScene.tsx");
 
 export default tmp5;

@@ -1,13 +1,13 @@
-// Module ID: 14386
-// Function ID: 14387
+// Module ID: 14818
+// Function ID: 14819
 // Name: ICYMIManager
-// Dependencies: [8029, 1102, 1989, 584, 8030, 2]
+// Dependencies: [8467, 1102, 2002, 584, 8468, 2]
 
-// Module 14386 (ICYMIManager)
+// Module 14818 (ICYMIManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8029 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 8030 */;
-import LifecycleManager from "LifecycleManager" /* 1989 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8467 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 8468 */;
+import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = null;
@@ -22,7 +22,7 @@ class ICYMIManager extends LifecycleManager {
   }
   handlePostConnectionOpen() {
     let timeout;
-    const f116541 = () => {
+    const f118688 = () => {
       let timeout;
       const obj = ICYMIActionCreatorsDefault;
       const dehydrated = obj.fetchDehydrated({ isInitialLoad: false });
@@ -32,7 +32,7 @@ class ICYMIManager extends LifecycleManager {
         const _clearTimeout = clearTimeout;
         clearTimeout(timeout);
       }
-      timeout = setTimeout(f116541, 15 * tmp(tmp2[1]).Millis.MINUTE);
+      timeout = setTimeout(f118688, 15 * tmp(tmp2[1]).Millis.MINUTE);
     };
     let tmp = dependencyMap;
     let obj = ICYMIExperiment;
@@ -46,10 +46,10 @@ class ICYMIManager extends LifecycleManager {
         clearTimeout(timeout);
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f116541, 15 * tmp2(1102).Millis.MINUTE);
-      const tmp2Result = tmp2(8029);
+      timeout = setTimeout(f118688, 15 * tmp2(1102).Millis.MINUTE);
+      const tmp2Result = tmp2(8467);
       const guildChannelScores = tmp2Result.getGuildChannelScores();
-      const tmp2Result2 = tmp2(8029);
+      const tmp2Result2 = tmp2(8467);
       const recommendedGuilds = tmp2Result2.getRecommendedGuilds();
     }
   }

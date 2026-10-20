@@ -1,10 +1,10 @@
-// Module ID: 9019
-// Function ID: 9020
+// Module ID: 6040
+// Function ID: 6041
 // Name: ContentClassificationEmbeddedActivityFilterExperiment
-// Dependencies: [1440, 2]
+// Dependencies: [1453, 2]
 
-// Module 9019 (ContentClassificationEmbeddedActivityFilterExperiment)
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+// Module 6040 (ContentClassificationEmbeddedActivityFilterExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-06-content-classification-embedded-activity-filter", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

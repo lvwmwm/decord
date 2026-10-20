@@ -1,20 +1,22 @@
-// Module ID: 6987
-// Function ID: 6988
+// Module ID: 7195
+// Function ID: 7196
 // Name: SaveableChannelsStore
-// Dependencies: [2051, 4780, 1084, 2103, 6988, 6989, 6990, 6992, 6993, 6994, 6995, 2]
+// Dependencies: [2065, 5020, 1084, 2116, 7196, 7197, 7198, 7200, 7201, 7202, 7203, 2]
 
-// Module 6987 (SaveableChannelsStore)
-import ExtendedMemoryLru from "ExtendedMemoryLru" /* 6989 */;
-import Lru from "Lru" /* 6990 */;
-import isPrivateChannel from "isPrivateChannel" /* 6992 */;
-import isReadableChannel from "isReadableChannel" /* 6993 */;
-import withFallbacks from "withFallbacks" /* 6995 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4780 */;
+// Module 7195 (SaveableChannelsStore)
+import ExtendedMemoryLru from "ExtendedMemoryLru" /* 7197 */;
+import Lru from "Lru" /* 7198 */;
+import isPrivateChannel from "isPrivateChannel" /* 7200 */;
+import isReadableChannel from "isReadableChannel" /* 7201 */;
+import withFallbacks from "withFallbacks" /* 7203 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5020 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1084 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import FileSystemStore from "FileSystemStore" /* 6988 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import FileSystemStore from "FileSystemStore" /* 7196 */;
 import size from "module_2" /* 2 */;
+
+let set;
 
 let tmp;
 function handleSelectedChannelStoreChanged() {
@@ -183,21 +185,33 @@ class SaveableChannelsStore extends MobileCacheSnapshotStore {
       lastChannel = snapshot.lastChannel;
     }
     const items = [snapshot.channels, obj.values()];
-    for (const item10036 of items) {
-      for (const item10041 of item10036) {
-        let tmp5 = item10041;
-        if (!item10041.fallback) {
+    for (const item10038 of items) {
+      for (const item10043 of item10038) {
+        let tmp5 = item10043;
+        if (!item10043.fallback) {
           let putResult = extendedMemoryLru.put(tmp5.channelId, tmp5);
         }
         continue;
       }
       continue;
     }
+    set = new Set();
     const items1 = [snapshot.penalized, obj2.keys()];
-    for (const item10059 of items1) {
-      for (const item10064 of item10059) {
-        let putResult1 = lru.put(item10064, null);
+    const tmp9 = set;
+    for (const item10067 of items1) {
+      for (const item10072 of item10067) {
+        let putResult1 = lru.put(item10072, null);
+        if (null != putResult1) {
+          let addResult = set.add(tmp14[0]);
+        }
         continue;
+      }
+      continue;
+    }
+    for (const item10087 of tmp9) {
+      let tmp17 = item10087;
+      if (!lru.has(item10087)) {
+        let deleteResult = extendedMemoryLru.delete(tmp17);
       }
       continue;
     }
@@ -206,7 +220,7 @@ class SaveableChannelsStore extends MobileCacheSnapshotStore {
     const basicChannel = ChannelStore.getBasicChannel(id);
     if (null != basicChannel) {
       const obj3 = isReadableChannel;
-      const tmp8 = require;
+      const tmp9 = require;
       if (obj3.isReadableChannel(basicChannel)) {
         let guild_id = basicChannel.guild_id;
         if (guild_id == null) {
@@ -215,10 +229,11 @@ class SaveableChannelsStore extends MobileCacheSnapshotStore {
         const obj = { guildId: guild_id, channelId: id, channelType: basicChannel.type };
         lastChannel = obj;
         extendedMemoryLru.put(id, obj);
-        const tmp8Result = tmp8(6994);
-        if (tmp8Result.isLimitedChannel(basicChannel)) {
-          if (null != lru.put(id, null)) {
-            extendedMemoryLru.delete(id);
+        const tmp9Result = tmp9(7202);
+        if (tmp9Result.isLimitedChannel(basicChannel)) {
+          const putResult1 = lru.put(id, null);
+          if (null != putResult1) {
+            extendedMemoryLru.delete(putResult1[0]);
           }
         }
       }
@@ -228,37 +243,37 @@ class SaveableChannelsStore extends MobileCacheSnapshotStore {
     extendedMemoryLru.delete(arg0);
   }
   static deleteGuild(arg0) {
-    const allValuesResult = extendedMemoryLru.allValues();
-    for (const item10009 of allValuesResult) {
-      if (item10009.guildId === arg0) {
-        let deleteResult = extendedMemoryLru.delete(tmp2.channelId);
+    const items = [...extendedMemoryLru.allValues()];
+    for (const item10013 of items) {
+      if (item10013.guildId === arg0) {
+        let deleteResult = extendedMemoryLru.delete(tmp.channelId);
       }
       continue;
     }
   }
   static dropUnreachableChannels() {
-    const keys = extendedMemoryLru.keys();
-    for (const item10008 of keys) {
-      let tmp2 = item10008;
-      let basicChannel = ChannelStore.getBasicChannel(item10008);
+    const items = [...extendedMemoryLru.allKeys()];
+    for (const item10012 of items) {
+      let tmp = item10012;
+      let basicChannel = ChannelStore.getBasicChannel(item10012);
       let obj = isReadableChannel;
       if (!obj.isReadableChannel(basicChannel)) {
-        let deleteChannelResult = SaveableChannelsStore.deleteChannel(tmp2);
+        let deleteChannelResult = SaveableChannelsStore.deleteChannel(tmp);
       }
       continue;
     }
   }
   static deleteUnreadableGuildChannels(arg0) {
-    const values = extendedMemoryLru.values();
-    for (const item10009 of values) {
-      let tmp2 = item10009;
-      let isReadableChannelIdResult = arg0 !== item10009.guildId;
+    const items = [...extendedMemoryLru.allValues()];
+    for (const item10013 of items) {
+      let tmp = item10013;
+      let isReadableChannelIdResult = arg0 !== item10013.guildId;
       if (!isReadableChannelIdResult) {
         let obj = isReadableChannel;
-        isReadableChannelIdResult = obj.isReadableChannelId(tmp2.channelId);
+        isReadableChannelIdResult = obj.isReadableChannelId(tmp.channelId);
       }
       if (!isReadableChannelIdResult) {
-        let deleteChannelResult = SaveableChannelsStore.deleteChannel(tmp2.channelId);
+        let deleteChannelResult = SaveableChannelsStore.deleteChannel(tmp.channelId);
       }
       continue;
     }

@@ -1,16 +1,14 @@
 // Module ID: 4204
 // Function ID: 4205
-// Dependencies: [2118]
+// Dependencies: []
+// Exports: getDefaultOptions, setDefaultOptions
 
 // Module 4204
-import code from "module_2118" /* 2118 */;
+let closure_0 = {};
 
-let tmp3;
-if (!code) {
-  tmp3 = { default: code };
-  const obj = { default: code };
-} else {
-  tmp3 = code;
+export function getDefaultOptions() {
+  return closure_0;
 }
-
-export default tmp3.default;
+export function setDefaultOptions(arg0) {
+  closure_0 = arg0;
+}

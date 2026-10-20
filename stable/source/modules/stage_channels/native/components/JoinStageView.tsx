@@ -1,25 +1,23 @@
-// Module ID: 9623
-// Function ID: 9624
+// Module ID: 11046
+// Function ID: 11047
 // Name: JoinStageView
-// Dependencies: [19, 21, 558, 576, 5588, 5582, 9603, 1126, 8076, 9558, 2]
+// Dependencies: [19, 21, 558, 576, 5956, 5950, 11021, 1126, 7484, 10978, 2]
 
-// Module 9623 (JoinStageView)
+// Module 11046 (JoinStageView)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5582 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5588 */;
-import StageChannelUtils from "StageChannelUtils" /* 8076 */;
-import StageActionBarButtons from "StageActionBarButtons" /* 9558 */;
-import StageViewWithPromptsDefault from "StageViewWithPrompts" /* 9603 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 5950 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5956 */;
+import StageChannelUtils from "StageChannelUtils" /* 7484 */;
+import StageActionBarButtons from "StageActionBarButtons" /* 10978 */;
+import StageViewWithPromptsDefault from "StageViewWithPrompts" /* 11021 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channel;
-
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinStageView(channel) {
   let tmp10;
   let tmp7;
   const obj = react2;
@@ -93,7 +91,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   tmp5 = tmp10;
   tmp6 = participantNamesText;
   tmp4 = tmp9;
-}) : ((channel) => {
+}) : (function JoinStageView(channel) {
   channel = channel.channel;
   const obj = StageChannelParticipantStoreHooks;
   const stageParticipants = obj.useStageParticipants(channel.id, StageChannelParticipants.StageChannelParticipantNamedIndex.SPEAKER);

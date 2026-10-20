@@ -1,19 +1,21 @@
-// Module ID: 6606
-// Function ID: 6607
+// Module ID: 6801
+// Function ID: 6802
 // Name: GuildCategoryStore
-// Dependencies: [2054, 502, 2051, 4507, 2074, 1085, 6607, 504, 584, 2]
+// Dependencies: [2068, 502, 2065, 4748, 2087, 1085, 6802, 504, 584, 2]
 
-// Module 6606 (GuildCategoryStore)
+// Module 6801 (GuildCategoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6607 */;
-import FavoriteStore from "FavoriteStore" /* 2054 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 6802 */;
+import FavoriteStore from "FavoriteStore" /* 2068 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4507 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4748 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
+
+let closure_12;
 
 let c10;
 let c9;
@@ -273,7 +275,7 @@ let GuildChannelStore = GuildChannelStore_mod;
 GuildChannelStore = GuildChannelStore_mod;
 ({ ChannelTypes: c9, FAVORITES: c10 } = Constants);
 let c11 = null;
-let closure_12 = {};
+const authStore2 = {};
 let c13 = null;
 let closure_14 = { _categories: [], null: [] };
 const Store = get_initializedDefault.Store;

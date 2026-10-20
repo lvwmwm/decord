@@ -1,13 +1,13 @@
-// Module ID: 9059
-// Function ID: 9060
+// Module ID: 10829
+// Function ID: 10830
 // Name: useIsActivityFocused
-// Dependencies: [4906, 2050, 9016, 558, 576, 504, 2]
+// Dependencies: [6036, 2064, 6038, 558, 576, 504, 2]
 // Exports: isActivityFocused
 
-// Module 9059 (useIsActivityFocused)
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9016 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
+// Module 10829 (useIsActivityFocused)
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6038 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ function isActivityFocused(channelId) {
   }
   return tmp3;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsActivityFocused(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -50,7 +50,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function o() {
       let compositeInstanceId;
       const selectedParticipant = ChannelRTCStore.getSelectedParticipant(closure_0);
       const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
@@ -76,7 +76,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+}) : (function useIsActivityFocused(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

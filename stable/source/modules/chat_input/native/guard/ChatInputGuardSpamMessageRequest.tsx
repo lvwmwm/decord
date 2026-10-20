@@ -1,12 +1,12 @@
-// Module ID: 12091
-// Function ID: 12092
+// Module ID: 12174
+// Function ID: 12175
 // Name: ChatInputGuardSpamMessageRequest
-// Dependencies: [19, 1377, 21, 558, 576, 1490, 504, 12092, 4568, 1126, 4807, 12084, 4901, 12090, 2]
+// Dependencies: [19, 1390, 21, 558, 576, 1503, 504, 12175, 4809, 1126, 12167, 5103, 12173, 2]
 
-// Module 12091 (ChatInputGuardSpamMessageRequest)
+// Module 12174 (ChatInputGuardSpamMessageRequest)
 import Fragment from "Fragment" /* 21 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let dependencyMap, navigation;
 
 let react = react_mod;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputGuardSpamMessageRequest(channel) {
   let first;
   let isOptimisticRejected;
   let isRejectLoading;
@@ -62,29 +62,18 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   const tmpResult3 = tmp(longestChannelMessageBeforeReply[7]);
   longestChannelMessageBeforeReply = tmpResult3.useLongestChannelMessageBeforeReply(id, tmp9);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
-      constructor() {
-        let intl;
-        const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(channel(longestChannelMessageBeforeReply[9]).t["EDYbS+"]), icon: navigation(longestChannelMessageBeforeReply[10]) };
-        const open = navigation(longestChannelMessageBeforeReply[8]).open;
-        navigation(longestChannelMessageBeforeReply[8]);
-        intl = channel(longestChannelMessageBeforeReply[9]).intl;
-        open(obj);
-      }
+    function handleRequestError() {
+      let intl;
+      const obj = { text: intl.string(channel(longestChannelMessageBeforeReply[9]).t["EDYbS+"]), variant: "critical" };
+      const open = navigation(longestChannelMessageBeforeReply[8]).open;
+      navigation(longestChannelMessageBeforeReply[8]);
+      intl = channel(longestChannelMessageBeforeReply[9]).intl;
+      open("MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", obj);
     }
-    cResult[5] = R;
-    tmp12 = R;
+    cResult[5] = handleRequestError;
+    tmp12 = handleRequestError;
   } else {
-    class R {
-      constructor() {
-        let intl;
-        const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(channel(longestChannelMessageBeforeReply[9]).t["EDYbS+"]), icon: navigation(longestChannelMessageBeforeReply[10]) };
-        const open = navigation(longestChannelMessageBeforeReply[8]).open;
-        navigation(longestChannelMessageBeforeReply[8]);
-        intl = channel(longestChannelMessageBeforeReply[9]).intl;
-        open(obj);
-      }
-    }
+    tmp12 = cResult[5];
   }
   if (cResult[6] !== navigation) {
     class E {
@@ -107,7 +96,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         navigation.pop();
       }
     }
-    const tmpResult4 = tmp(longestChannelMessageBeforeReply[11]);
+    const tmpResult4 = tmp(longestChannelMessageBeforeReply[10]);
     const messageRequestActions = tmpResult4.useMessageRequestActions(obj3);
     const rejectMessageRequest = messageRequestActions.rejectMessageRequest;
     ({ isRejectLoading, isUserProfileLoading, isOptimisticRejected, markAsNotSpam } = messageRequestActions);
@@ -118,24 +107,24 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         }
       }
     }
-    const fn2 = function v(stopPropagation) {
+    function handleAcceptClick(stopPropagation) {
       let id;
       stopPropagation.stopPropagation();
       markAsNotSpam(channel, longestChannelMessageBeforeReply, () => {
-        const obj = channel(longestChannelMessageBeforeReply[12]);
+        const obj = channel(longestChannelMessageBeforeReply[11]);
         return obj.transitionToChannel(id.id, { navigationReplace: true });
       });
-    };
+    }
     cResult[11] = channel;
     cResult[12] = markAsNotSpam;
     cResult[13] = longestChannelMessageBeforeReply;
-    cResult[14] = fn2;
+    cResult[14] = handleAcceptClick;
   }
   obj3 = { user: stateFromStores, onError: tmp12, onRejectSuccess: tmp13 };
   cResult[8] = tmp13;
   cResult[9] = stateFromStores;
   cResult[10] = obj3;
-}) : ((channel) => {
+}) : (function ChatInputGuardSpamMessageRequest(channel) {
   let _undefined;
   let _undefined2;
   let c3;
@@ -152,27 +141,27 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   react = undefined;
   c4 = undefined;
   const tmp = channel;
-  let obj = channel(1490);
+  let obj = channel(1503);
   navigation = obj.useNavigation();
   const items = [c4];
   const obj2 = channel(504);
   const stateFromStores = obj2.useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
-  const obj3 = channel(12092);
+  const obj3 = channel(12175);
   dependencyMap = obj3.useLongestChannelMessageBeforeReply(channel.id, channel.getRecipientId());
   const items1 = [navigation];
   const callback = react.useCallback(() => {
     navigation.pop();
   }, items1);
-  const obj4 = channel(12084);
+  const obj4 = channel(12167);
   const obj5 = {
     user: stateFromStores,
-    onError() {
+    onError: function handleRequestError() {
       let intl;
-      const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(channel(closure_2[9]).t["EDYbS+"]), icon: navigation(closure_2[10]) };
+      const obj = { text: intl.string(channel(closure_2[9]).t["EDYbS+"]), variant: "critical" };
       const open = navigation(closure_2[8]).open;
       navigation(closure_2[8]);
       intl = channel(closure_2[9]).intl;
-      open(obj);
+      open("MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", obj);
     },
     onRejectSuccess: callback
   };
@@ -183,7 +172,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     message: intl.string(tmp(1126).t.fS08qB),
     subtext: intl2.string(tmp(1126).t["8U5OXE"]),
     buttonPrimaryText: intl3.string(tmp(1126).t.cpT0Cq),
-    buttonPrimaryOnPress(stopPropagation) {
+    buttonPrimaryOnPress: function handleRejectClick(stopPropagation) {
       stopPropagation.stopPropagation();
       _undefined(channel.id);
     },
@@ -191,18 +180,18 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     buttonPrimaryLoading: isRejectLoading,
     buttonPrimaryVariant: "destructive",
     buttonSecondaryText: intl4.string(tmp(1126).t.olZgw5),
-    buttonSecondaryOnPress(stopPropagation) {
+    buttonSecondaryOnPress: function handleAcceptClick(stopPropagation) {
       let id;
       stopPropagation.stopPropagation();
       _undefined2(channel, closure_2, () => {
-        const obj = channel(closure_2[12]);
+        const obj = channel(closure_2[11]);
         return obj.transitionToChannel(id.id, { navigationReplace: true });
       });
     },
     buttonSecondaryDisabled: isRejectLoading || isUserProfileLoading || isOptimisticRejected,
     buttonSecondaryLoading: isUserProfileLoading
   };
-  const tmp9 = navigation(12090);
+  const tmp9 = navigation(12173);
   intl = tmp(1126).intl;
   intl2 = tmp(1126).intl;
   intl3 = tmp(1126).intl;

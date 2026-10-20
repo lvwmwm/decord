@@ -1,24 +1,24 @@
-// Module ID: 11471
-// Function ID: 11472
+// Module ID: 11449
+// Function ID: 11450
 // Name: MemberRolesList
-// Dependencies: [19, 17, 2106, 21, 4890, 558, 576, 504, 10685, 2]
+// Dependencies: [19, 17, 2119, 21, 5092, 558, 576, 504, 10306, 2]
 
-// Module 11471 (MemberRolesList)
+// Module 11449 (MemberRolesList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import RolePillDefault from "RolePill" /* 10685 */;
+import RolePillDefault from "RolePill" /* 10306 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import createStyles from "createStyles" /* 4890 */;
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tags, userRoles;
+let tags;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ wrapper: { flexDirection: "row", flexWrap: "wrap", justifyContent: "center" } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userRoles) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberRolesList(userRoles) {
   let first;
   let tmp7;
   let tmp8;
@@ -71,28 +71,28 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userRoles) => {
             tmp13 = cResult[7];
           }
           if (cResult[13] === style) {
-            let tmp20;
+            let tmp19;
             if (cResult[14] === tmp4.wrapper) {
-              tmp20 = cResult[15];
+              tmp19 = cResult[15];
             }
             if (cResult[16] === tmp13) {
-              let tmp21;
-              if (cResult[17] === tmp20) {
-                tmp21 = cResult[18];
+              let tmp20;
+              if (cResult[17] === tmp19) {
+                tmp20 = cResult[18];
               }
-              tmp12 = tmp21;
+              tmp12 = tmp20;
             }
-            const tmp24 = <View style={tmp20}>{tmp13}</View>;
+            const tmp23 = <View style={tmp19}>{tmp13}</View>;
             cResult[16] = tmp13;
-            cResult[17] = tmp20;
-            cResult[18] = tmp24;
-            tmp21 = tmp24;
+            cResult[17] = tmp19;
+            cResult[18] = tmp23;
+            tmp20 = tmp23;
           }
           const items1 = [tmp4.wrapper, style];
           cResult[13] = style;
           cResult[14] = tmp4.wrapper;
           cResult[15] = items1;
-          tmp20 = items1;
+          tmp19 = items1;
         }
       }
       if (cResult[8] !== userRoles) {
@@ -128,18 +128,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userRoles) => {
         }
       }
       if (cResult[11] !== guild.id) {
-        class R {
-          constructor(id) {
-            return userRoles.includes(id.id);
+        class M {
+          constructor(role) {
+            return jsx(RolePillDefault, { role, guildId: guild.id }, role.id);
           }
         }
         cResult[11] = guild.id;
-        cResult[12] = tmp18;
-        tmp17 = tmp18;
+        cResult[12] = M;
+        tmp17 = M;
       } else {
-        class R {
-          constructor(id) {
-            return userRoles.includes(id.id);
+        class M {
+          constructor(role) {
+            return jsx(RolePillDefault, { role, guildId: guild.id }, role.id);
           }
         }
       }
@@ -154,7 +154,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((userRoles) => {
     }
   }
   return tmp12;
-}) : ((userRoles) => {
+}) : (function MemberRolesList(userRoles) {
   let items1;
   userRoles = userRoles.userRoles;
   const guild = userRoles.guild;

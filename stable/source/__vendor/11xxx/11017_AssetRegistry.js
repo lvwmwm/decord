@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "367021fc812df044b1b4d5405a1e12c2", name: "CircleQuestionIcon-primary", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 25, height: 24, scales: [1, 2, 3], hash: "b252f7dc065300671ba9347414eb0bad", name: "ic_raised_hand", type: "png" });

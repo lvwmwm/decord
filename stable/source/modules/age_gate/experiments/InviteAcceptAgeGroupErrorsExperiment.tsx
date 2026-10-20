@@ -1,11 +1,11 @@
-// Module ID: 9429
-// Function ID: 9430
+// Module ID: 9622
+// Function ID: 9623
 // Name: InviteAcceptAgeGroupErrorsExperiment
-// Dependencies: [1440, 2]
+// Dependencies: [1453, 2]
 // Exports: getIsInviteAcceptAgeGroupErrorsEnabled
 
-// Module 9429 (InviteAcceptAgeGroupErrorsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+// Module 9622 (InviteAcceptAgeGroupErrorsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-09-invite-accept-age-group-errors", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

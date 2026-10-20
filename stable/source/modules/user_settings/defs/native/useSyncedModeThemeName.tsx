@@ -1,13 +1,13 @@
-// Module ID: 15124
-// Function ID: 15125
+// Module ID: 15604
+// Function ID: 15605
 // Name: useSyncedModeThemeName
-// Dependencies: [1193, 1240, 558, 576, 1239, 1126, 2723, 504, 2]
+// Dependencies: [1205, 1253, 558, 576, 1252, 1126, 2798, 504, 2]
 
-// Module 15124 (useSyncedModeThemeName)
-import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
-import _modDef2723 from "module_2723" /* 2723 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+// Module 15604 (useSyncedModeThemeName)
+import ClientThemesUtils from "ClientThemesUtils" /* 1252 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1253 */;
+import _modDef2798 from "module_2798" /* 2798 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let _require;
 let tmp2;
 const intl2 = tmp2(1126);
 let closure_4 = ClientThemesConstants.BACKGROUND_GRADIENT_PRESETS_MAP;
-tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncedModeThemeName(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -45,7 +45,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (null != prop) {
         const intl = intl2.intl;
-        stringResult = intl.string(_modDef2723.yl1iMm);
+        stringResult = intl.string(_modDef2798.yl1iMm);
       } else {
         let prop1;
         if (syncedClientTheme != null) {
@@ -76,7 +76,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useSyncedModeThemeName(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -92,7 +92,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (null != prop) {
       const intl = intl2.intl;
-      stringResult = intl.string(_modDef2723.yl1iMm);
+      stringResult = intl.string(_modDef2798.yl1iMm);
     } else {
       let prop1;
       if (syncedClientTheme != null) {

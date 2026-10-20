@@ -1,19 +1,19 @@
-// Module ID: 14524
-// Function ID: 14525
+// Module ID: 14996
+// Function ID: 14997
 // Name: AccountPhoneSetting
-// Dependencies: [1377, 7634, 6540, 558, 576, 504, 5093, 6539, 1987, 6542, 11129, 1126, 2]
+// Dependencies: [1390, 7988, 6732, 558, 576, 504, 5934, 6731, 2000, 6734, 10664, 1126, 2]
 
-// Module 14524 (AccountPhoneSetting)
+// Module 14996 (AccountPhoneSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import PhoneConstants from "PhoneConstants" /* 6540 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 6542 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import UserStore from "UserStore" /* 1377 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import PhoneConstants from "PhoneConstants" /* 6732 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 6734 */;
+import SettingsConstants from "SettingsConstants" /* 7988 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;
@@ -22,14 +22,14 @@ let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let closure_4 = PhoneConstants.PHONE_VERIFICATION_MODAL_KEY;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountPhoneSettingTrailing() {
   let tmp4;
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function s() {
+    const fn = function o() {
       currentUser = currentUser.getCurrentUser();
       let phone;
       if (currentUser != null) {
@@ -46,7 +46,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useAccountPhoneSettingTrailing() {
   const items = [UserStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => {
@@ -69,7 +69,7 @@ let obj = {
     const pushLazy = ModalActionCreatorsDefault.pushLazy;
     const obj = { allowDeletePhone: true, reason: PhoneActionCreators.ChangePhoneReason.USER_SETTINGS_UPDATE };
     ModalActionCreatorsDefault;
-    const tmp2 = asyncRequire(6539, dependencyMap.paths);
+    const tmp2 = asyncRequire(6731, dependencyMap.paths);
     pushLazy(tmp2, obj, closure_4);
   },
   withArrow: true

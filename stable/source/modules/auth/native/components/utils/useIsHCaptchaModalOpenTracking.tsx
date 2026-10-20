@@ -1,13 +1,13 @@
-// Module ID: 15917
-// Function ID: 15918
+// Module ID: 16427
+// Function ID: 16428
 // Name: useIsHCaptchaModalOpenTracking
-// Dependencies: [19, 15867, 15868, 558, 576, 15864, 4737, 4736, 2]
+// Dependencies: [19, 16376, 16377, 558, 576, 16373, 4977, 4976, 2]
 
-// Module 15917 (useIsHCaptchaModalOpenTracking)
-import RootNavigationRef from "RootNavigationRef" /* 4737 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15867 */;
+// Module 16427 (useIsHCaptchaModalOpenTracking)
+import RootNavigationRef from "RootNavigationRef" /* 4977 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16376 */;
 import react from "react" /* 19 */;
-import RegistrationConstants from "RegistrationConstants" /* 15868 */;
+import RegistrationConstants from "RegistrationConstants" /* 16377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let closure_4;
 let hasOwnProperty;
 let closure_3 = RegistrationUIStore.doesRegistrationHaveIdentityType;
 ({ RegisterTransitionSteps: closure_4, RegistrationTransitionActionTypes: hasOwnProperty } = RegistrationConstants);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsHCaptchaModalOpenTracking() {
   let constants2;
   let context;
   let tmp3;
@@ -23,9 +23,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = context(576);
   const cResult = obj.c(3);
   let obj2 = react;
-  context = react.useContext(context(15864).TrackRegistrationContext);
+  context = react.useContext(context(16373).TrackRegistrationContext);
   if (cResult[0] !== context) {
-    const fn = function o() {
+    const fn = function s() {
       let obj = RootNavigationRef;
       const rootNavigationRef = obj.getRootNavigationRef();
       let current;
@@ -54,10 +54,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[2];
   }
   const layoutEffect = obj2.useLayoutEffect(tmp3, tmp4);
-}) : (() => {
+}) : (function useIsHCaptchaModalOpenTracking() {
   let constants2;
   let context;
-  context = react.useContext(context(15864).TrackRegistrationContext);
+  context = react.useContext(context(16373).TrackRegistrationContext);
   const items = [context];
   const layoutEffect = react.useLayoutEffect(() => {
     let obj = RootNavigationRef;

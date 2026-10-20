@@ -1,21 +1,21 @@
-// Module ID: 14990
-// Function ID: 14991
+// Module ID: 15470
+// Function ID: 15471
 // Name: QuestDockGestureDetector
-// Dependencies: [19, 5623, 14896, 21, 558, 576, 14925, 14893, 14897, 9773, 14900, 14984, 4612, 14901, 14898, 6140, 14895, 4855, 2]
+// Dependencies: [19, 5972, 15375, 21, 558, 576, 15405, 15372, 15376, 10372, 15379, 15464, 4850, 15380, 15377, 6335, 15374, 5057, 2]
 
-// Module 14990 (QuestDockGestureDetector)
+// Module 15470 (QuestDockGestureDetector)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import HapticUtils from "HapticUtils" /* 4855 */;
-import QuestConstants from "QuestConstants" /* 5623 */;
-import QuestDockUtils from "QuestDockUtils" /* 14895 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import HapticUtils from "HapticUtils" /* 5057 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
+import QuestDockUtils from "QuestDockUtils" /* 15374 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 14896 */;
+import QuestDockConstants from "QuestDockConstants" /* 15375 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let flag, flag2, num4, num5, num6, obj1, set, set2, set2Result, set3, set3Result, set4, set4Result, set5, set5Result, set6Result, tmp12, tmp14, tmp20, tmp22, tmp23, tmp24Result, tmp26, tmp28, tmp30, tmp33, tmp34, tmp35, tmp36, tmp37, tmp38, tmp39, tmp41, tmp42, tmp44, tmp45, tmp46, tmp47, tmp48, tmp49, tmp50, tmp53, tmp55, tmp58, tmp59, tmp61, tmp62, tmp63, tmp64, tmp65, tmp66, tmp68, tmp69, tmp71, tmp72, tmp73, tmp74, tmp76, tmp77, tmp78, tmp81, tmp82;
+let flag, flag2, num4, num5, num6, obj1, set, set2, set2Result, set3, set3Result, set4, set4Result, set5Result, set6Result, tmp12, tmp14, tmp20, tmp22, tmp23, tmp24Result, tmp26, tmp28, tmp30, tmp33, tmp34, tmp35, tmp36, tmp37, tmp38, tmp39, tmp41, tmp42, tmp44, tmp45, tmp46, tmp47, tmp48, tmp49, tmp50, tmp53, tmp55, tmp58, tmp59, tmp61, tmp62, tmp63, tmp64, tmp65, tmp66, tmp68, tmp69, tmp71, tmp72, tmp73, tmp74, tmp76, tmp77, tmp78, tmp81, tmp82;
 
 let c10;
 let c9;
@@ -30,7 +30,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const LegacyBaseButton = tmp(6140);
+const LegacyBaseButton = tmp(6335);
 const QuestDockMode = QuestConstants.QuestDockMode;
 ({ QUEST_DOCK_COLLAPSED_HEIGHT: hasOwnProperty, QUEST_DOCK_CLOSED_HEIGHT: metroRequire, QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED: metroImportDefault, QUEST_DOCK_GESTURE_VERTICAL_DELTA_MINIMUM: metroImportAll, QUEST_DOCK_GESTURE_CLOSED_VERTICAL_DELTA_MINIMUM: c9, QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT: c10, QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT: unpackModuleId, QUEST_DOCK_GESTURE_MODE_TRANSITION_VELOCITY: closure_12, QUEST_DOCK_GESTURE_TOUCH_MOVE_COUNT_THRESHOLD: map1, QUEST_DOCK_GESTURE_COLLAPSED_Y_OFFSET_FACTOR: closure_14, QUEST_DOCK_GESTURE_CLOSED_Y_OFFSET_FACTOR: closure_15, QUEST_DOCK_GESTURE_EXPANDED_EXCESS_HEIGHT_FACTOR: closure_16 } = QuestDockConstants);
 const jsx = Fragment.jsx;
@@ -47,7 +47,7 @@ let closure_27 = { code: "function QuestDockGestureDetectorTsx10(event){const{to
 const __initData7 = { code: "function QuestDockGestureDetectorTsx11(){const{activeQuestDockMode,isVisibleSharedValue}=this.__closure;return{mode:activeQuestDockMode.get(),isVisible:isVisibleSharedValue.get()};}" };
 const __initData8 = { code: "function QuestDockGestureDetectorTsx12(current,previous){const{QuestDockMode,runOnJS,triggerHapticFeedback,HapticFeedbackTypes}=this.__closure;if(current.mode===(previous===null||previous===void 0?void 0:previous.mode)||current.mode===QuestDockMode.CLOSED||(previous===null||previous===void 0?void 0:previous.mode)===QuestDockMode.CLOSED||!current.isVisible){return;}runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_MEDIUM);}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDockSwipeGesture() {
   let activeQuestDockMode;
   let closure_5;
   let questDockExpandHandler;
@@ -854,7 +854,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = items;
   tmp16 = items;
   tmp15 = fn;
-}) : (() => {
+}) : (function useQuestDockSwipeGesture() {
   let activeQuestDockMode;
   let questDockExpandHandler;
   let windowDimensions;
@@ -897,7 +897,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const manualActivationResult = PanResult.manualActivation(false);
     const maxPointersResult = manualActivationResult.maxPointers(1);
     let result = maxPointersResult.shouldCancelWhenOutside(false);
-    class G {
+    class R {
       constructor(absoluteX) {
         const result = sharedValue1.set(0);
         const point = { absoluteX: absoluteX.changedTouches[0].absoluteX, absoluteY: absoluteX.changedTouches[0].absoluteY, x: questDockWrapperSpecs.get().x, y: questDockWrapperSpecs.get().y, height: questDockWrapperSpecs.get().height, isDrawer: restingQuestDockMode.get() === minExpandedContentHeight.EXPANDED, active: false };
@@ -905,9 +905,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const obj = { touchMoveCount: sharedValue1, initialGestureOffset: sharedValue, questDockWrapperSpecs, restingQuestDockMode, QuestDockMode };
-    G.__closure = obj;
-    G.__workletHash = 16021508659358;
-    G.__initData = __initData4;
+    R.__closure = obj;
+    R.__workletHash = 16021508659358;
+    R.__initData = __initData4;
     const fn = function k(state) {
       if (state.state === questDockExpandHandler(activeQuestDockMode[15]).State.BEGAN) {
         if (!sharedValue.get().active) {
@@ -950,7 +950,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     };
-    const onTouchesDownResult = result.onTouchesDown(G);
+    const onTouchesDownResult = result.onTouchesDown(R);
     let obj2 = { State: LegacyBaseButton.State, initialGestureOffset: sharedValue, touchMoveCount: sharedValue1, QUEST_DOCK_GESTURE_TOUCH_MOVE_COUNT_THRESHOLD: map1, restingQuestDockMode, QuestDockMode, QUEST_DOCK_GESTURE_VERTICAL_DELTA_MINIMUM: metroImportAll, QUEST_DOCK_GESTURE_CLOSED_VERTICAL_DELTA_MINIMUM: React4, questDockWrapperSpecs };
     fn.__closure = obj2;
     fn.__workletHash = 1210406087328;
@@ -1030,7 +1030,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       } else {
         const result3 = -1 * (sum - height) * (1 - sum / sharedValue / youBarHorizontalMargin);
         let num = 0;
-        set5 = set.set;
+        const set5 = set.set;
         if (youBarTotalHeight > 0) {
           const _Math2 = Math;
           num = -Math.min(result3, 0);
@@ -1074,7 +1074,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     };
     const onTouchesMoveResult = onTouchesDownResult.onTouchesMove(fn);
-    let obj3 = { initialGestureOffset: sharedValue, minExpandedContentHeight, activeQuestDockMode, QuestDockMode, QUEST_DOCK_GESTURE_EXPANDED_EXCESS_HEIGHT_FACTOR: authStore3, QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT: authStore, questDockWrapperSpecs, youBarHeight: youBarTotalHeight, getQuestDockExpandedWidth: QuestDockUtils.getQuestDockExpandedWidth, windowDimensions, safeArea, QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT: unpackModuleId, QUEST_DOCK_CLOSED_HEIGHT: metroRequire, QUEST_DOCK_GESTURE_CLOSED_Y_OFFSET_FACTOR: closure_15, getQuestDockClosedWidth: QuestDockUtils.getQuestDockClosedWidth, QUEST_DOCK_COLLAPSED_HEIGHT: hasOwnProperty, QUEST_DOCK_GESTURE_COLLAPSED_Y_OFFSET_FACTOR: authStore2, questDockOffset, runOnJS: ReanimatedRexport.runOnJS, triggerHapticFeedback: HapticUtils.triggerHapticFeedback, HapticFeedbackTypes: HapticUtils.HapticFeedbackTypes, QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED: metroImportDefault, getQuestDockCollapsedWidth: QuestDockUtils.getQuestDockCollapsedWidth, youBarHorizontalMargin };
+    let obj3 = { initialGestureOffset: sharedValue, minExpandedContentHeight, activeQuestDockMode, QuestDockMode, QUEST_DOCK_GESTURE_EXPANDED_EXCESS_HEIGHT_FACTOR: authStore4, QUEST_DOCK_GESTURE_MODE_TRANSITION_HEIGHT: authStore, questDockWrapperSpecs, youBarHeight: youBarTotalHeight, getQuestDockExpandedWidth: QuestDockUtils.getQuestDockExpandedWidth, windowDimensions, safeArea, QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT: unpackModuleId, QUEST_DOCK_CLOSED_HEIGHT: metroRequire, QUEST_DOCK_GESTURE_CLOSED_Y_OFFSET_FACTOR: authStore3, getQuestDockClosedWidth: QuestDockUtils.getQuestDockClosedWidth, QUEST_DOCK_COLLAPSED_HEIGHT: hasOwnProperty, QUEST_DOCK_GESTURE_COLLAPSED_Y_OFFSET_FACTOR: syncedClientThemes, questDockOffset, runOnJS: ReanimatedRexport.runOnJS, triggerHapticFeedback: HapticUtils.triggerHapticFeedback, HapticFeedbackTypes: HapticUtils.HapticFeedbackTypes, QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED: metroImportDefault, getQuestDockCollapsedWidth: QuestDockUtils.getQuestDockCollapsedWidth, youBarHorizontalMargin };
     fn2.__closure = obj3;
     fn2.__workletHash = 11177136508521;
     fn2.__initData = __initData2;
@@ -1120,7 +1120,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj2 = restingQuestDockMode;
     };
     const onChangeResult = onTouchesMoveResult.onChange(fn2);
-    let obj4 = { QUEST_DOCK_GESTURE_MODE_TRANSITION_VELOCITY: sharedValue2, restingQuestDockMode, QuestDockMode, initialGestureOffset: sharedValue, QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT: unpackModuleId, runOnJS: ReanimatedRexport.runOnJS, onExpand: questDockExpandHandler, setRestingQuestDockMode };
+    let obj4 = { QUEST_DOCK_GESTURE_MODE_TRANSITION_VELOCITY: authStore2, restingQuestDockMode, QuestDockMode, initialGestureOffset: sharedValue, QUEST_DOCK_GESTURE_MODE_CLOSED_TRANSITION_HEIGHT: unpackModuleId, runOnJS: ReanimatedRexport.runOnJS, onExpand: questDockExpandHandler, setRestingQuestDockMode };
     fn3.__closure = obj4;
     fn3.__workletHash = 11055732902011;
     fn3.__initData = __initData;
@@ -1170,7 +1170,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_30 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockGestureDetector(children) {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp4 = closure_30();
@@ -1186,7 +1186,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[1] = children.children;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((children) => jsx(LegacyBaseButton.GestureDetector, { gesture: closure_30(), children: children.children })));
+}) : (function QuestDockGestureDetector(children) {
+  return jsx(LegacyBaseButton.GestureDetector, { gesture: closure_30(), children: children.children });
+}));
 let result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockGestureDetector.tsx");
 
 export default memoResult;

@@ -1,18 +1,18 @@
-// Module ID: 13322
-// Function ID: 13323
+// Module ID: 13812
+// Function ID: 13813
 // Name: BoostingCountDownPill
-// Dependencies: [17, 21, 4890, 587, 4854, 13323, 1987, 1126, 558, 576, 4886, 2]
+// Dependencies: [17, 21, 5092, 587, 5056, 13813, 2000, 1126, 558, 576, 5088, 2]
 
-// Module 13322 (BoostingCountDownPill)
+// Module 13812 (BoostingCountDownPill)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: intl.string(intl2.t["07lzz7"]) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(13323, dependencyMap.paths);
+  const tmp2 = asyncRequire(13813, dependencyMap.paths);
   intl = intl2.intl;
   openLazy(tmp2, "NitroCreditEducationActionSheet", obj);
 }
@@ -39,7 +39,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, flexDire
 createStyles = createStyles.createStyles;
 obj3 = { flex: 1, paddingVertical: 12, paddingHorizontal: 27, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: nativeDefault.radii.xxl, justifyContent: "center" };
 let closure_7 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostingCountDownPill(arg0) {
   let Text;
   let fpDurationText;
   let isInReverseTrial;
@@ -135,7 +135,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (tmp8) {
       const obj6 = { style: tmp4.fpDurationPill, children: hasOwnProperty(Text, obj7) };
       obj7 = { variant: "text-sm/bold", style: tmp4.fpDurationText, children: fpDurationText.toUpperCase() };
-      Text = tmp(4886).Text;
+      Text = tmp(5088).Text;
       tmp8 = hasOwnProperty(React3, obj6);
     }
     cResult[3] = fpDurationText;
@@ -150,7 +150,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.fractionalPremiumBanner;
   cResult[2] = items1;
   tmp6 = items1;
-}) : ((style) => {
+}) : (function BoostingCountDownPill(style) {
   let Text;
   let Text2;
   let fpDurationText;

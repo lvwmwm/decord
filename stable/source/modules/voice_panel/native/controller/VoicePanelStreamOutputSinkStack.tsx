@@ -1,9 +1,9 @@
-// Module ID: 17273
-// Function ID: 17274
+// Module ID: 17868
+// Function ID: 17869
 // Name: VoicePanelStreamOutputSinkStack
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 17273 (VoicePanelStreamOutputSinkStack)
+// Module 17868 (VoicePanelStreamOutputSinkStack)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 
 let set;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSetHasActiveVideoOutputSink(arg0) {
   let closure_0 = arg0;
   const obj = react2;
   const cResult = obj.c(10);
@@ -60,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = arg0;
   cResult[2] = fn;
   tmp3 = fn;
-}) : ((arg0) => {
+}) : (function useSetHasActiveVideoOutputSink(arg0) {
   let closure_0 = arg0;
   const id = react.useId();
   const items = [id, arg0];

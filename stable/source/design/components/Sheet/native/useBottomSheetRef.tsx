@@ -1,15 +1,15 @@
-// Module ID: 7841
-// Function ID: 7842
+// Module ID: 8290
+// Function ID: 8291
 // Name: useBottomSheetRef
 // Dependencies: [19, 558, 576, 2]
 
-// Module 7841 (useBottomSheetRef)
+// Module 8290 (useBottomSheetRef)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBottomSheetRef() {
   let first;
   let tmp4;
   const obj = react2;
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : (() => {
+}) : (function useBottomSheetRef() {
   const ref = react.useRef(null);
   const items = [ref];
   const obj = {

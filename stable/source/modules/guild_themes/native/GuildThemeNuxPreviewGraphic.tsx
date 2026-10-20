@@ -1,16 +1,16 @@
-// Module ID: 16087
-// Function ID: 16088
+// Module ID: 16603
+// Function ID: 16604
 // Name: GuildThemeNuxPreviewGraphic
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 16088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 16604, 2]
 
-// Module 16087 (GuildThemeNuxPreviewGraphic)
+// Module 16603 (GuildThemeNuxPreviewGraphic)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GuildThemePreviewArtDefault from "GuildThemePreviewArt" /* 16088 */;
+import GuildThemePreviewArtDefault from "GuildThemePreviewArt" /* 16604 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { width: "100%", aspectRatio: 1.7777777777777777, alignItems: "center", justifyContent: "center", marginBottom: nativeDefault.space.PX_24 };
 let closure_5 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemeNuxPreviewGraphic(arg0) {
   let isPersonal;
   let themeSettings;
   let tmp5;
@@ -52,7 +52,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp5;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function GuildThemeNuxPreviewGraphic(arg0) {
   let isPersonal;
   let themeSettings;
   ({ themeSettings, isPersonal } = arg0);

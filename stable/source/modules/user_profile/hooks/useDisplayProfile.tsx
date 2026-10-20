@@ -1,24 +1,24 @@
-// Module ID: 7857
-// Function ID: 7858
+// Module ID: 8306
+// Function ID: 8307
 // Name: useDisplayProfile
-// Dependencies: [19, 1377, 7111, 558, 576, 504, 7858, 2026, 7860, 2]
+// Dependencies: [19, 1390, 7316, 558, 576, 504, 8307, 2039, 8309, 2]
 // Exports: getDisplayProfile
 
-// Module 7857 (useDisplayProfile)
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7858 */;
-import DisplayProfileDefault from "DisplayProfile" /* 7860 */;
+// Module 8306 (useDisplayProfile)
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
+import DisplayProfileDefault from "DisplayProfile" /* 8309 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import UserProfileStore from "UserProfileStore" /* 7111 */;
+import UserStore from "UserStore" /* 1390 */;
+import UserProfileStore from "UserProfileStore" /* 7316 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import FunctionUtils from "FunctionUtils" /* 2026 */;
+import FunctionUtils from "FunctionUtils" /* 2039 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplayProfile(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -72,7 +72,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = arg0;
   cResult[3] = fn;
   tmp7 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useDisplayProfile(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -105,7 +105,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
 });
 let closure_6 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, guildId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDisplayProfileWithFetchEffect(arg0, guildId) {
   let closure_0;
   _require = arg0;
   const obj = require("react");
@@ -120,7 +120,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, guildId) => {
     const effect = react.useEffect(tmp2, tmp3);
     return closure_6(arg0, guildId);
   }
-  const fn = function o() {
+  const fn = function n() {
     const tmp = maybeFetchUserProfileDefault;
     tmp(closure_0, undefined, { guildId });
   };
@@ -131,7 +131,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, guildId) => {
   cResult[3] = items;
   tmp3 = items;
   tmp2 = fn;
-}) : ((arg0, guildId) => {
+}) : (function useDisplayProfileWithFetchEffect(arg0, guildId) {
   let closure_0 = arg0;
   const items = [guildId, arg0];
   const effect = react.useEffect(() => {

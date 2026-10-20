@@ -1,13 +1,13 @@
-// Module ID: 9387
-// Function ID: 9388
+// Module ID: 8848
+// Function ID: 8849
 // Name: useIsEmptyRTCConnection
-// Dependencies: [502, 4913, 4929, 558, 576, 504, 2]
+// Dependencies: [502, 5110, 7424, 558, 576, 504, 2]
 
-// Module 9387 (useIsEmptyRTCConnection)
+// Module 8848 (useIsEmptyRTCConnection)
 import react from "react" /* 576 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4929 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7424 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let _require;
 let tmp;
 const get_initialized = tmp(504);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsStreamRTCConnectionEmpty(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -61,7 +61,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+}) : (function useIsStreamRTCConnectionEmpty(arg0) {
   let closure_0;
   _require = arg0;
   const items = [StreamRTCConnectionStore, AuthenticationStore];
@@ -85,7 +85,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsCallRTCConnectionEmpty() {
   let tmp4;
   let tmp5;
   let tmp = require;
@@ -115,7 +115,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useIsCallRTCConnectionEmpty() {
   const items = [RTCConnectionStore, AuthenticationStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => {

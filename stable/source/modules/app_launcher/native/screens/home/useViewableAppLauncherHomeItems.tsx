@@ -1,16 +1,16 @@
-// Module ID: 11711
-// Function ID: 11712
+// Module ID: 11776
+// Function ID: 11777
 // Name: useViewableAppLauncherHomeItems
-// Dependencies: [19, 8931, 558, 576, 4612, 11712, 8422, 1260, 2]
+// Dependencies: [19, 11777, 558, 576, 4850, 11778, 8967, 1273, 2]
 
-// Module 11711 (useViewableAppLauncherHomeItems)
+// Module 11776 (useViewableAppLauncherHomeItems)
 import react_mod from "react" /* 19 */;
-import AppLauncherStore from "AppLauncherStore" /* 8931 */;
+import AppLauncherStore from "AppLauncherStore" /* 11777 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let react = react_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useViewableAppLauncherHomeItems() {
   let closure_2;
   let first;
   let sharedValue;
@@ -80,7 +80,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[2] = sharedValue1;
   cResult[3] = fn;
   tmp5 = fn;
-}) : (() => {
+}) : (function useViewableAppLauncherHomeItems() {
   let items;
   let ref;
   let sharedValue;

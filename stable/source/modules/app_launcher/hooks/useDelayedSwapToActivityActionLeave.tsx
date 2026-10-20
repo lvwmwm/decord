@@ -1,9 +1,9 @@
-// Module ID: 11766
-// Function ID: 11767
+// Module ID: 11832
+// Function ID: 11833
 // Name: useDelayedSwapToActivityActionLeave
-// Dependencies: [32, 19, 558, 576, 11671, 2]
+// Dependencies: [32, 19, 558, 576, 11737, 2]
 
-// Module 11766 (useDelayedSwapToActivityActionLeave)
+// Module 11832 (useDelayedSwapToActivityActionLeave)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDelayedSwapToActivityActionLeave(arg0) {
   let closure_0;
   let tmp3;
   let tmp4;
@@ -47,7 +47,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const layoutEffect = obj2.useLayoutEffect(tmp4, tmp5);
   return tmp3;
-}) : ((arg0) => {
+}) : (function useDelayedSwapToActivityActionLeave(arg0) {
   let closure_1;
   let first;
   let closure_0 = arg0;

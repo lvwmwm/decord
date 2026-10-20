@@ -1,11 +1,11 @@
-// Module ID: 15005
-// Function ID: 15006
+// Module ID: 15485
+// Function ID: 15486
 // Name: useIsQuestDockModeActiveOrExiting
-// Dependencies: [19, 14896, 558, 14897, 4612, 5597, 7941, 2]
+// Dependencies: [19, 15375, 558, 15376, 4850, 5378, 8390, 2]
 
-// Module 15005 (useIsQuestDockModeActiveOrExiting)
-import spring from "spring" /* 5597 */;
-import QuestDockConstants from "QuestDockConstants" /* 14896 */;
+// Module 15485 (useIsQuestDockModeActiveOrExiting)
+import spring from "spring" /* 5378 */;
+import QuestDockConstants from "QuestDockConstants" /* 15375 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ let closure_7 = { code: "function useIsQuestDockModeActiveOrExitingTsx3(finished
 const __initData3 = { code: "function useIsQuestDockModeActiveOrExitingTsx4(){const{activeQuestDockMode,mode}=this.__closure;return activeQuestDockMode.get()===mode;}" };
 const __initData4 = { code: "function useIsQuestDockModeActiveOrExitingTsx5(isActive,wasActive){const{isActiveOrExiting,transitionProgress,withSpring,QUEST_DOCK_MODE_CHANGE_PHYSICS,activeQuestDockMode,mode}=this.__closure;if(isActive===wasActive)return;if(wasActive==null&&isActiveOrExiting.get()===isActive)return;if(isActive){isActiveOrExiting.set(true);return;}transitionProgress.set(0);transitionProgress.set(withSpring(1,QUEST_DOCK_MODE_CHANGE_PHYSICS,'respect-motion-settings',function(finished){'worklet';if(finished===true&&activeQuestDockMode.get()!==mode){isActiveOrExiting.set(false);}}));}" };
 let closure_10 = { code: "function useIsQuestDockModeActiveOrExitingTsx6(finished){const{activeQuestDockMode,mode,isActiveOrExiting}=this.__closure;if(finished===true&&activeQuestDockMode.get()!==mode){isActiveOrExiting.set(false);}}" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((mode) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsQuestDockModeActiveOrExiting(mode) {
   let sharedValue;
   let sharedValue1;
   _require = mode;
@@ -71,7 +71,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((mode) => {
   ({ isActiveOrExiting: sharedValue, transitionProgress: sharedValue1, withSpring: require("spring").withSpring, QUEST_DOCK_MODE_CHANGE_PHYSICS, activeQuestDockMode, mode });
   const animatedReaction = obj3.useAnimatedReaction(fn, fn2);
   return activeQuestDockMode(sharedValue[6])(sharedValue);
-}) : ((mode) => {
+}) : (function useIsQuestDockModeActiveOrExiting(mode) {
   let sharedValue;
   let sharedValue1;
   _require = mode;

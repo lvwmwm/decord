@@ -1,11 +1,11 @@
-// Module ID: 8249
-// Function ID: 8250
+// Module ID: 7686
+// Function ID: 7687
 // Name: GoogleWalletVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 558, 576, 1490, 5102, 8116, 8092, 5409, 5414, 1126, 3045, 8095, 8096, 5593, 4886, 5592, 5594, 8086, 2]
+// Dependencies: [5, 32, 19, 17, 21, 558, 576, 1503, 5909, 7542, 7507, 5729, 5734, 1126, 3120, 7510, 7511, 5377, 5088, 5958, 5379, 5918, 2]
 
-// Module 8249 (GoogleWalletVerificationScreen)
+// Module 7686 (GoogleWalletVerificationScreen)
 import react_native from "react-native" /* 17 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -13,7 +13,7 @@ import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c5, navigation, onClose;
+let c5, navigation;
 
 let metroImportAll;
 let metroImportDefault;
@@ -44,7 +44,7 @@ let react = react_mod;
 const ActivityIndicator = react_native.ActivityIndicator;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = { NOT_AVAILABLE: "not_available", FAILED: "credential_error" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GoogleWalletVerificationScreen(onClose) {
   let ModalContent;
   let closure_5;
   let first;
@@ -522,13 +522,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         }
       }
     });
-    const fn2 = function() {
+    function t4() {
       return closure_0(...arguments);
-    };
+    }
     cResult[6] = tmp10;
     cResult[7] = tmp8;
-    cResult[8] = fn2;
-    tmp11 = fn2;
+    cResult[8] = t4;
+    tmp11 = t4;
   }
   class A {
     constructor() {
@@ -542,7 +542,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   cResult[2] = onComplete;
   cResult[3] = A;
   tmp8 = A;
-}) : ((onClose) => {
+}) : (function GoogleWalletVerificationScreen(onClose) {
   let Button;
   let ModalContent;
   let ModalContent2;

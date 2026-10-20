@@ -1,34 +1,32 @@
-// Module ID: 9285
-// Function ID: 9286
+// Module ID: 8776
+// Function ID: 8777
 // Name: EventDetailInfoSheet
-// Dependencies: [19, 17, 4879, 2112, 2074, 4913, 1377, 2057, 9175, 1096, 21, 4890, 587, 5915, 4854, 558, 576, 504, 9179, 9271, 9270, 9261, 9266, 1126, 4886, 1188, 4722, 8083, 5592, 9286, 2]
+// Dependencies: [19, 17, 5081, 2125, 2087, 5110, 1390, 2071, 8510, 1096, 21, 5092, 587, 5906, 5056, 558, 576, 504, 8515, 8513, 8512, 8526, 8768, 1126, 5088, 1200, 4962, 7492, 5958, 8656, 2]
 // Exports: closeGuildEventInfoActionSheet
 
-// Module 9285 (EventDetailInfoSheet)
+// Module 8776 (EventDetailInfoSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
-import native from "native" /* 1188 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
-import UserUtilsDefault from "UserUtils" /* 4722 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import StageChannelAgeVerificationNoticeDefault from "StageChannelAgeVerificationNotice" /* 8083 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 9175 */;
-import useGuildScheduledEventUserCountDefault from "useGuildScheduledEventUserCount" /* 9270 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9271 */;
+import native from "native" /* 1200 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import StageChannelAgeVerificationNoticeDefault from "StageChannelAgeVerificationNotice" /* 7492 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8510 */;
+import useGuildScheduledEventUserCountDefault from "useGuildScheduledEventUserCount" /* 8512 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8513 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import UserStore from "UserStore" /* 1377 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import TextStyles_mod from "TextStyles" /* 5915 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import TextStyles_mod from "TextStyles" /* 5906 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let guildEvent;
 
 let closure_12;
 let closure_14;
@@ -63,7 +61,7 @@ const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.col
 obj8 = { paddingTop: nativeDefault.space.PX_8, flexDirection: "row" };
 obj9 = { marginRight: nativeDefault.space.PX_8 };
 let closure_15 = createStyles(obj);
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function EventDetailInfoSheet(guildEvent) {
   let creatorMember;
   let items6;
   let obj4;
@@ -234,9 +232,14 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
       }
     }
     if (cResult[13] !== guildEvent.guild_id) {
-      class U {
+      class M {
         constructor() {
-          return null != GuildStore.getGuild(guildEvent.guild_id);
+          let isConnectedResult = RTCConnectionStore.isConnected();
+          const obj = RTCConnectionStore;
+          if (isConnectedResult) {
+            isConnectedResult = obj.getChannelId() === guildEvent.channel_id;
+          }
+          return isConnectedResult;
         }
       }
       cResult[13] = guildEvent.guild_id;
@@ -245,21 +248,31 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
           return creatorMember.roleStyle;
         }
       }
-      cResult[14] = U;
-      tmp20 = U;
+      cResult[14] = tmp21;
+      tmp20 = tmp21;
     } else {
-      class U {
+      class M {
         constructor() {
-          return null != GuildStore.getGuild(guildEvent.guild_id);
+          let isConnectedResult = RTCConnectionStore.isConnected();
+          const obj = RTCConnectionStore;
+          if (isConnectedResult) {
+            isConnectedResult = obj.getChannelId() === guildEvent.channel_id;
+          }
+          return isConnectedResult;
         }
       }
     }
     const tmpResult5 = tmp(tmp2[17]);
     const stateFromStores2 = tmpResult5.useStateFromStores(tmp19, tmp20);
     if (cResult[15] !== onCloseActionSheet) {
-      class U {
+      class M {
         constructor() {
-          return null != GuildStore.getGuild(guildEvent.guild_id);
+          let isConnectedResult = RTCConnectionStore.isConnected();
+          const obj = RTCConnectionStore;
+          if (isConnectedResult) {
+            isConnectedResult = obj.getChannelId() === guildEvent.channel_id;
+          }
+          return isConnectedResult;
         }
       }
       cResult[15] = onCloseActionSheet;
@@ -268,40 +281,60 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
           return creatorMember.roleStyle;
         }
       }
-      cResult[16] = tmp23;
+      cResult[16] = tmp24;
     } else {
-      class U {
+      class M {
         constructor() {
-          return null != GuildStore.getGuild(guildEvent.guild_id);
+          let isConnectedResult = RTCConnectionStore.isConnected();
+          const obj = RTCConnectionStore;
+          if (isConnectedResult) {
+            isConnectedResult = obj.getChannelId() === guildEvent.channel_id;
+          }
+          return isConnectedResult;
         }
       }
     }
     const sum = safeBottomPadding + 16;
     if (cResult[17] !== sum) {
-      class U {
+      class M {
         constructor() {
-          return null != GuildStore.getGuild(guildEvent.guild_id);
+          let isConnectedResult = RTCConnectionStore.isConnected();
+          const obj = RTCConnectionStore;
+          if (isConnectedResult) {
+            isConnectedResult = obj.getChannelId() === guildEvent.channel_id;
+          }
+          return isConnectedResult;
         }
       }
-      tmp26[0] = sum;
+      tmp27[0] = sum;
       class C {
         constructor() {
           return creatorMember.roleStyle;
         }
       }
-      cResult[18] = tmp26;
+      cResult[18] = tmp27;
     } else {
-      class U {
+      class M {
         constructor() {
-          return null != GuildStore.getGuild(guildEvent.guild_id);
+          let isConnectedResult = RTCConnectionStore.isConnected();
+          const obj = RTCConnectionStore;
+          if (isConnectedResult) {
+            isConnectedResult = obj.getChannelId() === guildEvent.channel_id;
+          }
+          return isConnectedResult;
         }
       }
     }
     const _Symbol2 = Symbol;
     if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-      class U {
+      class M {
         constructor() {
-          return null != GuildStore.getGuild(guildEvent.guild_id);
+          let isConnectedResult = RTCConnectionStore.isConnected();
+          const obj = RTCConnectionStore;
+          if (isConnectedResult) {
+            isConnectedResult = obj.getChannelId() === guildEvent.channel_id;
+          }
+          return isConnectedResult;
         }
       }
       const items4 = [UserStore, ];
@@ -313,35 +346,55 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
       items4[1] = GuildMemberStore;
       cResult[19] = items4;
     } else {
-      class U {
+      class M {
         constructor() {
-          return null != GuildStore.getGuild(guildEvent.guild_id);
+          let isConnectedResult = RTCConnectionStore.isConnected();
+          const obj = RTCConnectionStore;
+          if (isConnectedResult) {
+            isConnectedResult = obj.getChannelId() === guildEvent.channel_id;
+          }
+          return isConnectedResult;
         }
       }
     }
     if (cResult[20] === guildEvent.creator_id) {
-      class U {
+      class M {
         constructor() {
-          return null != GuildStore.getGuild(guildEvent.guild_id);
+          let isConnectedResult = RTCConnectionStore.isConnected();
+          const obj = RTCConnectionStore;
+          if (isConnectedResult) {
+            isConnectedResult = obj.getChannelId() === guildEvent.channel_id;
+          }
+          return isConnectedResult;
         }
       }
       if (cResult[23] !== guildEvent) {
-        class U {
+        class M {
           constructor() {
-            return null != GuildStore.getGuild(guildEvent.guild_id);
+            let isConnectedResult = RTCConnectionStore.isConnected();
+            const obj = RTCConnectionStore;
+            if (isConnectedResult) {
+              isConnectedResult = obj.getChannelId() === guildEvent.channel_id;
+            }
+            return isConnectedResult;
           }
         }
-        tmp30[0] = guildEvent;
+        tmp31[0] = guildEvent;
         class C {
           constructor() {
             return creatorMember.roleStyle;
           }
         }
-        cResult[24] = tmp30;
+        cResult[24] = tmp31;
       } else {
-        class U {
+        class M {
           constructor() {
-            return null != GuildStore.getGuild(guildEvent.guild_id);
+            let isConnectedResult = RTCConnectionStore.isConnected();
+            const obj = RTCConnectionStore;
+            if (isConnectedResult) {
+              isConnectedResult = obj.getChannelId() === guildEvent.channel_id;
+            }
+            return isConnectedResult;
           }
         }
       }
@@ -351,18 +404,28 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
           return creatorMember.roleStyle;
         }
       }
-      const creator = tmp32.creator;
-      creatorMember = tmp32.creatorMember;
-      if (cResult[25] === tmp25) {
-        class U {
+      const creator = tmp33.creator;
+      creatorMember = tmp33.creatorMember;
+      if (cResult[25] === tmp26) {
+        class M {
           constructor() {
-            return null != GuildStore.getGuild(guildEvent.guild_id);
+            let isConnectedResult = RTCConnectionStore.isConnected();
+            const obj = RTCConnectionStore;
+            if (isConnectedResult) {
+              isConnectedResult = obj.getChannelId() === guildEvent.channel_id;
+            }
+            return isConnectedResult;
           }
         }
         if (cResult[28] === guildEvent) {
-          class U {
+          class M {
             constructor() {
-              return null != GuildStore.getGuild(guildEvent.guild_id);
+              let isConnectedResult = RTCConnectionStore.isConnected();
+              const obj = RTCConnectionStore;
+              if (isConnectedResult) {
+                isConnectedResult = obj.getChannelId() === guildEvent.channel_id;
+              }
+              return isConnectedResult;
             }
           }
         }
@@ -371,17 +434,17 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
             return creatorMember.roleStyle;
           }
         }
-        tmp38[0] = guildEvent;
-        tmp38[1] = tmp4.eventHeader;
-        tmp38[5] = recurrenceId;
+        tmp39[0] = guildEvent;
+        tmp39[1] = tmp4.eventHeader;
+        tmp39[5] = recurrenceId;
         cResult[28] = guildEvent;
         cResult[29] = recurrenceId;
         cResult[30] = tmp4.eventHeader;
-        cResult[31] = closure_12(tmp(tmp2[21]).GuildEventCardHeader, tmp38);
-        const tmp39 = closure_12(tmp(tmp2[21]).GuildEventCardHeader, tmp38);
+        cResult[31] = closure_12(tmp(tmp2[21]).GuildEventCardHeader, tmp39);
+        const tmp40 = closure_12(tmp(tmp2[21]).GuildEventCardHeader, tmp39);
       }
-      const items5 = [tmp4.eventContainer, tmp25];
-      cResult[25] = tmp25;
+      const items5 = [tmp4.eventContainer, tmp26];
+      cResult[25] = tmp26;
       cResult[26] = tmp4.eventContainer;
       cResult[27] = items5;
     }
@@ -413,7 +476,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
   cResult[9] = guildEvent.id;
   cResult[10] = O;
   cResult[11] = items6;
-}) : ((guildEvent) => {
+}) : (function EventDetailInfoSheet(guildEvent) {
   let closure_3;
   let intl;
   let intl2;
@@ -448,7 +511,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
     }
     return isConnectedResult;
   }, items2);
-  let obj3 = guildEvent(9179);
+  let obj3 = guildEvent(8515);
   const result = obj3.recurrenceRuleFromServer(guildEvent.recurrence_rule);
   const items3 = [, ];
   ({ guild_id: arr4[0], id: arr4[1] } = guildEvent);
@@ -485,36 +548,36 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
   const tmp13 = closure_12;
   items8 = [, , , , , , , , , ];
   const obj8 = { event: guildEvent, style: tmp.eventHeader, showUserCount: false, showEndDate: true, showCreator: false, recurrenceId };
-  items8[0] = closure_12(guildEvent(9261).GuildEventCardHeader, obj8);
+  items8[0] = closure_12(guildEvent(8526).GuildEventCardHeader, obj8);
   const obj9 = { event: guildEvent, textStyle: tmp.eventTitle, style: tmp.eventTitleContainer };
-  items8[1] = closure_12(guildEvent(9261).GuildEventCardTitle, obj9);
+  items8[1] = closure_12(guildEvent(8526).GuildEventCardTitle, obj9);
   const obj10 = { event: guildEvent, textStyle: tmp.guildTextStyle };
-  items8[2] = closure_12(guildEvent(9261).GuildEventCardSimpleGuildInfo, obj10);
-  items8[3] = closure_12(guildEvent(9261).GuildEventSimpleLocation, { event: guildEvent });
+  items8[2] = closure_12(guildEvent(8526).GuildEventCardSimpleGuildInfo, obj10);
+  items8[3] = closure_12(guildEvent(8526).GuildEventSimpleLocation, { event: guildEvent });
   const obj11 = { style: tmp.interestedContainer, children: items9 };
   items9 = [, ];
   const obj12 = { size: "sm", style: tmp.interestedIcon };
-  items9[0] = closure_12(guildEvent(9266).BellIcon, obj12);
+  items9[0] = closure_12(guildEvent(8768).BellIcon, obj12);
   const obj13 = { variant: "text-sm/medium", color: "text-default", children: intl.format(guildEvent(1126).t["+DLsD8"], { count: tmp8 }) };
-  const Text = guildEvent(4886).Text;
+  const Text = guildEvent(5088).Text;
   intl = guildEvent(1126).intl;
   items9[1] = closure_12(Text, obj13);
   items8[4] = closure_13(creator, obj11);
   let tmp11Result = null != creator && stateFromStores1;
   if (tmp11Result) {
     const obj14 = { style: tmp.interestedContainer, children: items10 };
-    const obj15 = { user: creator, guildId: guildEvent.guild_id, size: tmp2(1188).AvatarSizes.XSMALL_20, style: tmp.interestedIcon };
-    const Avatar = tmp2(1188).Avatar;
+    const obj15 = { user: creator, guildId: guildEvent.guild_id, size: tmp2(1200).AvatarSizes.XSMALL_20, style: tmp.interestedIcon };
+    const Avatar = tmp2(1200).Avatar;
     items10 = [tmp13(Avatar, obj15), ];
     const obj16 = { variant: "text-sm/medium", color: "text-default", children: intl2.format(tmp2(1126).t["66DLFs"], obj17) };
-    const Text2 = tmp2(4886).Text;
+    const Text2 = tmp2(5088).Text;
     intl2 = tmp2(1126).intl;
     obj17 = {
-      usernameHook() {
+      usernameHook: function renderUsername() {
           let nick;
           let tmp4 = "dot" === closure_3;
           const tmp = map1;
-          const tmp2 = authStore2;
+          const tmp2 = syncedClientThemes;
           const tmp3 = closure_3;
           if (tmp4) {
             let colorString;
@@ -526,12 +589,12 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
           if (tmp4) {
             const obj = { size: "small", color: null, colors: null };
             ({ colorString: obj.color, colorStrings: obj.colors } = creatorMember);
-            tmp4 = closure_12(native.RoleDot, obj);
+            tmp4 = authStore2(native.RoleDot, obj);
           }
           const items = [tmp4, ];
           let tmp14;
           const LegacyText = native.LegacyText;
-          const tmp11 = closure_12;
+          const tmp11 = authStore2;
           if (null != creatorMember) {
             if ("username" === tmp3) {
               if (null != creatorMember.colorString) {
@@ -559,7 +622,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
   }
   items8[5] = tmp11Result;
   const obj18 = { event: guildEvent, style: tmp.eventDescriptionContainer };
-  items8[6] = tmp13(tmp2(9261).GuildEventCardDescription, obj18);
+  items8[6] = tmp13(tmp2(8526).GuildEventCardDescription, obj18);
   let hasItem = set.has(guildEvent.entity_type);
   if (hasItem) {
     const obj19 = {
@@ -574,17 +637,17 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
     };
     items11 = [, ];
     const tmp7Result = StageChannelAgeVerificationNoticeDefault;
-    items11[0] = tmp2(8083).DividerPosition.TOP;
-    items11[1] = tmp2(8083).DividerPosition.BOTTOM;
+    items11[0] = tmp2(7492).DividerPosition.TOP;
+    items11[1] = tmp2(7492).DividerPosition.BOTTOM;
     hasItem = tmp13(tmp7Result, obj19);
   }
   items8[7] = hasItem;
   const obj20 = { direction: "horizontal", style: tmp.controlsContainer, children: items12 };
-  const ButtonGroup = tmp2(5592).ButtonGroup;
+  const ButtonGroup = tmp2(5958).ButtonGroup;
   items12 = [, , ];
   const obj21 = {
     event: guildEvent,
-    onCloseAction() {
+    onCloseAction: function handleCloseAction() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet(closure_11);
       if (importDefault != null) {
@@ -594,14 +657,14 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
     isConnected: stateFromStores,
     recurrenceId
   };
-  items12[0] = tmp13(tmp2(9261).GuildEventCardPrimaryAction, obj21);
+  items12[0] = tmp13(tmp2(8526).GuildEventCardPrimaryAction, obj21);
   let tmp13Result = null;
   if (stateFromStores1) {
     const obj22 = { event: guildEvent };
-    tmp13Result = tmp13(tmp2(9261).GuildEventShareAction, obj22);
+    tmp13Result = tmp13(tmp2(8526).GuildEventShareAction, obj22);
   }
   items12[1] = tmp13Result;
-  items12[2] = tmp13(tmp2(9261).GuildEventModeratorAction, { event: guildEvent, recurrenceId });
+  items12[2] = tmp13(tmp2(8526).GuildEventModeratorAction, { event: guildEvent, recurrenceId });
   items8[8] = tmp11(ButtonGroup, obj20);
   let tmp13Result2 = null != result;
   if (tmp13Result2) {
@@ -614,7 +677,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildEvent) => {
         },
       activeRecurrenceId: recurrenceId
     };
-    tmp13Result2 = tmp13(tmp7(9286), obj23);
+    tmp13Result2 = tmp13(tmp7(8656), obj23);
   }
   items8[9] = tmp13Result2;
   return tmp11(creator, obj6);

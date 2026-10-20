@@ -1,22 +1,22 @@
-// Module ID: 15138
-// Function ID: 15139
+// Module ID: 15618
+// Function ID: 15619
 // Name: useLatestChannelMessage
-// Dependencies: [32, 19, 13529, 558, 576, 504, 15139, 2]
+// Dependencies: [32, 19, 14016, 558, 576, 504, 15619, 2]
 
-// Module 15138 (useLatestChannelMessage)
+// Module 15618 (useLatestChannelMessage)
 import react from "react" /* 19 */;
-import MessagePreviewManagerDefault from "MessagePreviewManager" /* 15139 */;
+import MessagePreviewManagerDefault from "MessagePreviewManager" /* 15619 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 13529 */;
+import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 14016 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, guild_id;
+let _require;
 
 let _slicedToArray = _slicedToArray_mod;
 const useEffect = react.useEffect;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLatestChannelMessage(guild_id, arg1) {
   let closure_0;
   let closure_3;
   let first;
@@ -54,24 +54,26 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1) => {
         useEffect(tmp12, tmp13);
         return tmp10;
       }
-      const fn2 = function p() {
-        let tmp2 = null == id;
-        const tmp = id;
-        if (!tmp2) {
-          tmp2 = closure_3;
+      class L {
+        constructor() {
+          let tmp2 = null == id;
+          const tmp = id;
+          if (!tmp2) {
+            tmp2 = closure_3;
+          }
+          if (!tmp2) {
+            const obj = MessagePreviewManagerDefault;
+            obj.addWant(tmp);
+          }
         }
-        if (!tmp2) {
-          const obj = MessagePreviewManagerDefault;
-          obj.addWant(tmp);
-        }
-      };
+      }
       let items1 = [id, tmp11];
       cResult[5] = id;
       cResult[6] = tmp11;
-      cResult[7] = fn2;
+      cResult[7] = L;
       cResult[8] = items1;
       tmp13 = items1;
-      tmp12 = fn2;
+      tmp12 = L;
     }
   }
   const fn = function c() {
@@ -90,7 +92,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1) => {
   cResult[3] = guild_id;
   cResult[4] = fn;
   tmp7 = fn;
-}) : ((arg0) => {
+}) : (function useLatestChannelMessage(arg0) {
   let c1;
   let closure_3;
   let first;

@@ -1,33 +1,19 @@
 // Module ID: 1596
 // Function ID: 1597
 // Name: react
-// Dependencies: [19, 17]
-// Exports: useBackButton
+// Dependencies: [19, 1529]
+// Exports: useNavigationContainerRef
 
 // Module 1596 (react)
-import react_native from "react-native" /* 17 */;
-import react_mod from "react" /* 19 */;
+import NOT_INITIALIZED_ERROR from "NOT_INITIALIZED_ERROR" /* 1529 */;
+import react from "react" /* 19 */;
 
-let react = react_mod;
-const BackHandler = react_native.BackHandler;
 
-export const useBackButton = function useBackButton(ref) {
-  react = ref;
-  const items = [ref];
-  const effect = react.useEffect(() => {
-    ref = BackHandler.addEventListener("hardwareBackPress", () => {
-      const current = ref.current;
-      let tmp = null != current;
-      if (tmp) {
-        let flag = current.canGoBack();
-        if (flag) {
-          current.goBack();
-          flag = true;
-        }
-        tmp = flag;
-      }
-      return tmp;
-    });
-    return () => ref.remove();
-  }, items);
+export const useNavigationContainerRef = function useNavigationContainerRef() {
+  const ref = react.useRef(null);
+  if (null == ref.current) {
+    const obj = NOT_INITIALIZED_ERROR;
+    ref.current = obj.createNavigationContainerRef();
+  }
+  return ref.current;
 };

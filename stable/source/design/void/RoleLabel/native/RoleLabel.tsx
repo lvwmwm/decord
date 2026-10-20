@@ -1,17 +1,17 @@
-// Module ID: 10079
-// Function ID: 10080
+// Module ID: 9721
+// Function ID: 9722
 // Name: RoleLabel
-// Dependencies: [19, 17, 4879, 21, 4890, 558, 576, 504, 1188, 8895, 2]
+// Dependencies: [19, 17, 5081, 21, 5092, 558, 576, 504, 1200, 8575, 2]
 
-// Module 10079 (RoleLabel)
+// Module 9721 (RoleLabel)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import Form from "Form" /* 8895 */;
+import Form from "Form" /* 8575 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let hasOwnProperty;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ container: { display: "flex", flexDirection: "row" }, roleDot: { marginRight: 4 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleLabel(arg0) {
   let color;
   let colors;
   let items1;
@@ -109,7 +109,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp14 = "dot" === stateFromStores && null != color;
   if (tmp14) {
     const obj6 = { color, colors, containerStyles: tmp4.roleDot };
-    tmp14 = React3(tmp(1188).RoleDot, obj6);
+    tmp14 = React3(tmp(1200).RoleDot, obj6);
   }
   cResult[5] = color;
   cResult[6] = colors;
@@ -117,7 +117,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = tmp4.roleDot;
   cResult[9] = tmp14;
   tmp13 = tmp14;
-}) : ((color) => {
+}) : (function RoleLabel(color) {
   let colors;
   let items1;
   let name;
@@ -138,7 +138,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (tmp10) {
     const obj4 = { color, colors, containerStyles: tmp.roleDot };
-    tmp10 = React3(tmp2(1188).RoleDot, obj4);
+    tmp10 = React3(tmp2(1200).RoleDot, obj4);
   }
   items1 = [tmp10, React3(Form.FormLabel, { style: {}, text: name })];
   return tmp8(tmp9, obj3);

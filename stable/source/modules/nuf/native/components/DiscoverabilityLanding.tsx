@@ -1,21 +1,21 @@
-// Module ID: 12417
-// Function ID: 12418
+// Module ID: 12521
+// Function ID: 12522
 // Name: DiscoverabilityLanding
-// Dependencies: [19, 17, 12326, 1085, 21, 4890, 587, 5915, 1618, 4854, 12418, 1987, 6068, 5974, 12419, 4886, 1126, 8895, 12353, 5594, 2]
+// Dependencies: [19, 17, 12406, 1085, 21, 5092, 587, 5906, 1631, 5056, 12522, 2000, 6259, 6157, 12523, 5088, 1126, 8575, 12434, 5379, 2]
 // Exports: default
 
-// Module 12417 (DiscoverabilityLanding)
+// Module 12521 (DiscoverabilityLanding)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12326 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 12406 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import TextStyles from "TextStyles" /* 5915 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import TextStyles from "TextStyles" /* 5906 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -66,7 +66,7 @@ export default function DiscoverabilityLanding(onNext) {
   react = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { allowPhone, allowEmail };
-    obj.openLazy(asyncRequire(12418, dependencyMap.paths), "Discoverability Landing", obj2);
+    obj.openLazy(asyncRequire(12522, dependencyMap.paths), "Discoverability Landing", obj2);
   }, items);
   let obj = { style: tmp.container, contentContainerStyle: obj2, children: items2 };
   obj2 = { paddingTop: onNext(allowPhone[12]).NAV_BAR_HEIGHT + 32, paddingBottom: bottom + 16 };
@@ -101,7 +101,7 @@ export default function DiscoverabilityLanding(onNext) {
   items4 = [intl4.string(onNext(allowPhone[16]).t["DGZg+k"]), " ", ];
   const intl5 = tmp6(tmp3[16]).intl;
   const obj12 = {
-    learnMoreHook(children, arg1) {
+    learnMoreHook: function LearnMore(children, arg1) {
       const obj = { onPress, variant: "text-sm/medium", color: "text-link", children };
       return metroImportDefault(Text_Text.Text, obj, arg1);
     }

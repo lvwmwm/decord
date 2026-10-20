@@ -1,30 +1,29 @@
-// Module ID: 8991
-// Function ID: 8992
+// Module ID: 14804
+// Function ID: 14805
 // Name: EmbeddedActivitiesNativeManager
-// Dependencies: [17, 2051, 4913, 2050, 1085, 1369, 8979, 8981, 8984, 4498, 1252, 584, 8992, 8993, 5708, 1126, 4568, 4805, 1375, 1266, 9021, 2]
+// Dependencies: [17, 2065, 5110, 2064, 1085, 1382, 14805, 14806, 5296, 4739, 1265, 584, 14726, 10854, 5300, 1126, 4809, 1388, 10929, 2]
 
-// Module 8991 (EmbeddedActivitiesNativeManager)
+// Module 14804 (EmbeddedActivitiesNativeManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import intl3 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4805 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
-import react_nativeDefault from "react-native" /* 8979 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 8984 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8993 */;
-import createWebViewControllerDefault from "createWebViewController" /* 9021 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 8981 */;
+import intl2 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 5296 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10854 */;
+import activityWebViewController from "activityWebViewController" /* 10929 */;
+import react_nativeDefault from "react-native" /* 14805 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 14806 */;
 import size from "module_2" /* 2 */;
 
-let basicChannel, connectedActivityLocation, currentEmbeddedActivity, rawThermalState;
+let basicChannel, currentEmbeddedActivity, rawThermalState;
 
 const NativeEventEmitter = react_native.NativeEventEmitter;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -125,27 +124,19 @@ class EmbeddedActivitiesNativeManager extends EmbeddedActivitiesManager {
     let intl;
     let message;
     ({ code, message } = reason);
-    const obj = { title: intl.formatToPlainString(intl3.t.hbiAO6, { code }), body: message };
+    const obj = { title: intl.formatToPlainString(intl2.t.hbiAO6, { code }), body: message };
     const show = actions_AlertActionCreatorsDefault.show;
     actions_AlertActionCreatorsDefault;
-    intl = intl3.intl;
-    show(obj);
-  }
-  showLaunchErrorModal(message) {
-    let intl;
-    const obj = { title: intl.string(intl3.t.PtobXW), body: message };
-    const show = actions_AlertActionCreatorsDefault.show;
-    actions_AlertActionCreatorsDefault;
-    intl = intl3.intl;
+    intl = intl2.intl;
     show(obj);
   }
   showDevShelfOverrideEnabled() {
     let intl;
-    const obj = { key: "EMBEDDED_ACTIVITIES_DEV_SHELF_URL_OVERRIDE_ENABLED", content: intl.string(intl3.t.JfA7IK), icon: AssetRegistryDefault, iconColor: "status-positive" };
+    const obj = { text: intl.string(intl2.t.JfA7IK), variant: "success" };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
-    intl = intl3.intl;
-    open(obj);
+    intl = intl2.intl;
+    open("EMBEDDED_ACTIVITIES_DEV_SHELF_URL_OVERRIDE_ENABLED", obj);
   }
   leaveActivity(arg0) {
     let _location;
@@ -181,76 +172,9 @@ class EmbeddedActivitiesNativeManager extends EmbeddedActivitiesManager {
     const obj4 = { type: "EMBEDDED_ACTIVITY_SET_ORIENTATION_LOCK_STATE", applicationId, lockState: null, pictureInPictureLockState: null, gridLockState: null };
     obj3.dispatch(obj4);
   }
-  getOrCreateWebViewController() {
-    const self = this;
-    if (null != this.controller) {
-      return self.controller.iframeId;
-    } else {
-      let tmp2 = dependencyMap;
-      let obj = self(1266);
-      const v4Result = obj.v4();
-      let obj2 = {
-        getOrigin() {
-            const obj = connectedActivityLocation;
-            connectedActivityLocation = connectedActivityLocation.getConnectedActivityLocation();
-            let tmp2;
-            if (null != connectedActivityLocation) {
-              const selfEmbeddedActivityForLocation = obj.getSelfEmbeddedActivityForLocation(connectedActivityLocation);
-              let url;
-              if (selfEmbeddedActivityForLocation != null) {
-                url = selfEmbeddedActivityForLocation.url;
-              }
-              tmp2 = url;
-            }
-            return tmp2;
-          },
-        onDisallowedNavigation() {
-            let intl;
-            let intl2;
-            connectedActivityLocation = EmbeddedActivitiesStore.getConnectedActivityLocation();
-            let tmp2;
-            const obj = EmbeddedActivitiesStore;
-            if (null != connectedActivityLocation) {
-              const selfEmbeddedActivityForLocation = obj.getSelfEmbeddedActivityForLocation(connectedActivityLocation);
-              let applicationId;
-              if (selfEmbeddedActivityForLocation != null) {
-                applicationId = selfEmbeddedActivityForLocation.applicationId;
-              }
-              tmp2 = applicationId;
-            }
-            const tmp5 = null != connectedActivityLocation && null != tmp2;
-            if (tmp5) {
-              const obj2 = { location: connectedActivityLocation, applicationId: tmp2, showFeedback: false };
-              self.leaveActivity(obj2);
-              const obj3 = { body: intl.string(intl3.t.tYBBWz), confirmText: intl2.string(intl3.t.BddRzS) };
-              const show = actions_AlertActionCreatorsDefault.show;
-              actions_AlertActionCreatorsDefault;
-              intl = intl3.intl;
-              intl2 = intl3.intl;
-              show(obj3);
-            }
-          }
-      };
-      self.controller = createWebViewControllerDefault(v4Result, obj2);
-      return v4Result;
-    }
-  }
-  hasWebView() {
-    return null != this.controller;
-  }
   releaseWebView() {
-    const self = this;
-    const controller = this.controller;
-    let iframeId;
-    if (controller != null) {
-      iframeId = controller.iframeId;
-    }
-    const controller2 = self.controller;
-    if (controller2 != null) {
-      controller2.release();
-    }
-    self.controller = undefined;
-    return iframeId;
+    const obj = activityWebViewController;
+    return obj.releaseActivityWebView();
   }
 }
 let closure_8 = EmbeddedActivitiesNativeManager.prototype;

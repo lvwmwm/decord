@@ -1,33 +1,33 @@
-// Module ID: 9092
-// Function ID: 9093
+// Module ID: 10885
+// Function ID: 10886
 // Name: StreamTile
-// Dependencies: [19, 17, 4912, 502, 1085, 4915, 21, 4890, 587, 4727, 558, 576, 4886, 1188, 504, 9093, 9096, 1126, 5042, 9100, 9104, 9105, 9090, 6140, 9118, 5909, 2]
+// Dependencies: [19, 17, 5897, 502, 1085, 5117, 21, 5092, 587, 4967, 558, 576, 5088, 1200, 504, 10886, 10888, 1126, 5409, 10892, 10894, 10895, 10883, 6335, 10904, 6185, 2]
 
-// Module 9092 (StreamTile)
+// Module 10885 (StreamTile)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Constants2 from "Constants" /* 4915 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
-import Pressables from "Pressables" /* 5909 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 9090 */;
-import useVideoStreamErrorDefault from "useVideoStreamError" /* 9093 */;
-import VideoEmptyStateDefault from "VideoEmptyState" /* 9096 */;
-import StreamQualityLiveIndicatorDefault from "StreamQualityLiveIndicator" /* 9100 */;
-import VideoRendererDefault from "VideoRenderer" /* 9105 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9118 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Constants2 from "Constants" /* 5117 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
+import Pressables from "Pressables" /* 6185 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 10883 */;
+import useVideoStreamErrorDefault from "useVideoStreamError" /* 10886 */;
+import VideoEmptyStateDefault from "VideoEmptyState" /* 10888 */;
+import StreamQualityLiveIndicatorDefault from "StreamQualityLiveIndicator" /* 10892 */;
+import VideoRendererDefault from "VideoRenderer" /* 10895 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10904 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import ColorUtils_mod from "ColorUtils" /* 4727 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import ColorUtils_mod from "ColorUtils" /* 4967 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let importDefault, participant;
+let importDefault;
 
 let ColorUtils;
 let StyleSheet;
@@ -41,9 +41,9 @@ let size;
 let tmp;
 let tmp5;
 let unpackModuleId;
-const native = tmp5(1188);
-const LegacyBaseButton = tmp(6140);
-const VideoRenderer = tmp(9105);
+const native = tmp5(1200);
+const LegacyBaseButton = tmp(6335);
+const VideoRenderer = tmp(10895);
 ({ View: closure_4, StyleSheet } = react_native);
 const ApplicationStreamStates = Constants.ApplicationStreamStates;
 const MediaEngineContextTypes = Constants2.MediaEngineContextTypes;
@@ -60,7 +60,7 @@ size = { position: "absolute", bottom: 8, right: 8, backgroundColor: ColorUtils.
 ColorUtils = ColorUtils_mod;
 let closure_13 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamTextOverlay(arg0) {
   let items;
   let subtext;
   let title;
@@ -99,7 +99,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp8 = null;
     if (null != subtext) {
       const obj3 = { style: tmp4.screenMessageSubtext, children: subtext };
-      tmp8 = authStore(tmp(1188).LegacyText, obj3);
+      tmp8 = authStore(tmp(1200).LegacyText, obj3);
     }
     cResult[3] = tmp4.screenMessageSubtext;
     cResult[4] = subtext;
@@ -112,7 +112,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = title;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((subtext) => {
+}) : (function StreamTextOverlay(subtext) {
   let items;
   subtext = subtext.subtext;
   const title = subtext.title;
@@ -135,7 +135,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 let closure_14 = tmp7;
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
+let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function StreamContent(participant) {
   let first;
   let gestureEnabled;
   let intl3;
@@ -185,7 +185,7 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
           return tmp40;
         }
       }
-      const obj2 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(9096).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill };
+      const obj2 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10888).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill };
       const tmp9Result = VideoEmptyStateDefault;
       const tmp44 = closure_10(tmp9Result, obj2);
       cResult[3] = stateFromStores;
@@ -203,7 +203,7 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
           return tmp35;
         }
       }
-      const obj3 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(9096).VideoEmptyTypes.STREAM_ENDED, style: StyleSheet.absoluteFill };
+      const obj3 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10888).VideoEmptyTypes.STREAM_ENDED, style: StyleSheet.absoluteFill };
       const tmp9Result4 = VideoEmptyStateDefault;
       const tmp39 = closure_10(tmp9Result4, obj3);
       cResult[7] = stateFromStores;
@@ -269,7 +269,7 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
             }
           }
         }
-        const obj7 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(9096).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill, avError: tmp10 };
+        const obj7 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10888).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill, avError: tmp10 };
         const tmp9Result6 = VideoEmptyStateDefault;
         const tmp34 = closure_10(tmp9Result6, obj7);
         cResult[19] = stateFromStores;
@@ -287,9 +287,9 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
             tmp25 = cResult[26];
           }
           if (ownerId === tmp46) {
-            REMOTE_STREAM = tmp(9104).VideoSpinnerContext.SELF_STREAM;
+            REMOTE_STREAM = tmp(10894).VideoSpinnerContext.SELF_STREAM;
           } else {
-            REMOTE_STREAM = tmp(9104).VideoSpinnerContext.REMOTE_STREAM;
+            REMOTE_STREAM = tmp(10894).VideoSpinnerContext.REMOTE_STREAM;
           }
           class P {
             constructor() {
@@ -323,7 +323,7 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
   } else {
     return null;
   }
-}) : ((participant) => {
+}) : (function StreamContent(participant) {
   let REMOTE_STREAM;
   let formatToPlainString;
   let gestureEnabled;
@@ -350,11 +350,11 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
   if (null != stateFromStores) {
     const state = stateFromStores.state;
     if (ApplicationStreamStates.FAILED === state) {
-      const obj2 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(9096).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill };
+      const obj2 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10888).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill };
       const tmp4Result = VideoEmptyStateDefault;
       return closure_10(tmp4Result, obj2);
     } else if (ApplicationStreamStates.ENDED === state) {
-      const obj3 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(9096).VideoEmptyTypes.STREAM_ENDED, style: StyleSheet.absoluteFill };
+      const obj3 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10888).VideoEmptyTypes.STREAM_ENDED, style: StyleSheet.absoluteFill };
       const tmp4Result5 = VideoEmptyStateDefault;
       return closure_10(tmp4Result5, obj3);
     } else {
@@ -377,7 +377,7 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
         }
       }
       if (null != tmp5) {
-        const obj7 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(9096).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill, avError: tmp5 };
+        const obj7 = { stream: stateFromStores, removeCloseButton: removeEmptyStateButton, removeSplashImage: removeEmptyStateImage, type: participant(10888).VideoEmptyTypes.STREAM_FAILED, style: StyleSheet.absoluteFill, avError: tmp5 };
         const tmp4Result7 = VideoEmptyStateDefault;
         return closure_10(tmp4Result7, obj7);
       } else {
@@ -400,9 +400,9 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
         const tmp25 = closure_10;
         const tmp4Result8 = VideoRendererDefault;
         if (ownerId === id) {
-          REMOTE_STREAM = tmp(9104).VideoSpinnerContext.SELF_STREAM;
+          REMOTE_STREAM = tmp(10894).VideoSpinnerContext.SELF_STREAM;
         } else {
-          REMOTE_STREAM = tmp(9104).VideoSpinnerContext.REMOTE_STREAM;
+          REMOTE_STREAM = tmp(10894).VideoSpinnerContext.REMOTE_STREAM;
         }
         const obj9 = { children: items1 };
         items1 = [tmp25(tmp4Result8, obj8), tmp9];
@@ -414,7 +414,7 @@ let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((participa
   }
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamTile(participant) {
   let fullscreenIconStyle;
   let gestureEnabled;
   let items;
@@ -626,7 +626,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
   cResult[1] = participant;
   cResult[2] = fn;
   tmp5 = fn;
-}) : ((participant) => {
+}) : (function StreamTile(participant) {
   let fullscreenIconStyle;
   let gestureEnabled;
   let items2;
@@ -684,7 +684,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
 });
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function Fullscreen(arg0) {
   let onFullScreen;
   let style;
   const obj = react2;
@@ -702,7 +702,7 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const rect = { top: 4, left: 4, right: 4, bottom: 4 };
       const obj2 = { source: AssetRegistryDefault, size: native.Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.WHITE };
-      const Icon = tmp(1188).Icon;
+      const Icon = tmp(1200).Icon;
       const tmp11 = authStore(Icon, obj2);
       cResult[3] = rect;
       cResult[4] = tmp11;
@@ -731,7 +731,7 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
   cResult[1] = tmp4.statusWrapper;
   cResult[2] = items;
   tmp5 = items;
-}) : ((arg0) => {
+}) : (function Fullscreen(arg0) {
   let Icon;
   let items;
   let obj2;

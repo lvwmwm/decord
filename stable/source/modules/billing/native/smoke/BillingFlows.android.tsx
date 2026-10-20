@@ -1,9 +1,9 @@
-// Module ID: 15579
-// Function ID: 15580
+// Module ID: 16078
+// Function ID: 16079
 // Name: BillingFlows
 // Dependencies: [17, 21, 558, 576, 2]
 
-// Module 15579 (BillingFlows)
+// Module 16078 (BillingFlows)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = {
-  RunAllFlows: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  RunAllFlows: ReactCompilerGating.isReactCompilerEnabled() ? (function RunAllFlows() {
     let first;
     const obj = react;
     const cResult = obj.c(1);
@@ -25,7 +25,9 @@ let obj = {
       first = cResult[0];
     }
     return first;
-  }) : (() => <View />)
+  }) : (function RunAllFlows() {
+    return <View />;
+  })
 };
 const result = size.fileFinishedImporting("modules/billing/native/smoke/BillingFlows.android.tsx");
 

@@ -1,11 +1,11 @@
-// Module ID: 7742
-// Function ID: 7743
+// Module ID: 8096
+// Function ID: 8097
 // Name: maybeSortByProbability
-// Dependencies: [7743, 2]
+// Dependencies: [8097, 2]
 // Exports: maybeSortByProbability
 
-// Module 7742 (maybeSortByProbability)
-import VoiceUserAffinityExperiment from "VoiceUserAffinityExperiment" /* 7743 */;
+// Module 8096 (maybeSortByProbability)
+import VoiceUserAffinityExperiment from "VoiceUserAffinityExperiment" /* 8097 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_affinities/maybeSortByProbability.tsx");

@@ -1,24 +1,24 @@
-// Module ID: 15506
-// Function ID: 15507
+// Module ID: 15987
+// Function ID: 15988
 // Name: BackButton
-// Dependencies: [21, 558, 576, 1490, 1126, 15503, 15500, 2]
+// Dependencies: [21, 558, 576, 1503, 1126, 15984, 15981, 2]
 
-// Module 15506 (BackButton)
+// Module 15987 (BackButton)
 import Fragment from "Fragment" /* 21 */;
-import MfaStepsTypes from "MfaStepsTypes" /* 15500 */;
-import buttonDefault from "button" /* 15503 */;
+import MfaStepsTypes from "MfaStepsTypes" /* 15981 */;
+import buttonDefault from "button" /* 15984 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let importDefault, navigation, props;
+let importDefault, navigation;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackButton(props) {
   let first;
   const obj = props(576);
   const cResult = obj.c(4);
   props = props.props;
-  const obj2 = props(1490);
+  const obj2 = props(1503);
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
     }
     return tmp7;
   }
-  const tmp8 = jsx(navigation(15503), {
+  const tmp8 = jsx(navigation(15984), {
     variant: "secondary",
     text: first,
     onPress() {
@@ -46,10 +46,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
   cResult[2] = props;
   cResult[3] = tmp8;
   tmp7 = tmp8;
-}) : ((props) => {
+}) : (function BackButton(props) {
   let closure_1;
   props = props.props;
-  const obj = props(1490);
+  const obj = props(1503);
   importDefault = obj.useNavigation();
   buttonDefault;
   const intl = props(1126).intl;

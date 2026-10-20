@@ -1,25 +1,25 @@
-// Module ID: 9102
-// Function ID: 9103
+// Module ID: 5270
+// Function ID: 5271
 // Name: StreamQualityUtils
-// Dependencies: [19, 4936, 502, 2074, 4913, 1377, 1085, 4937, 1379, 4915, 1126, 558, 576, 504, 5026, 1252, 2]
+// Dependencies: [19, 5271, 502, 2087, 5110, 1390, 1085, 5212, 1392, 5117, 1126, 558, 576, 504, 5272, 1265, 2]
 // Exports: getFPSText, getMaxQuality, getPremiumRequirement, getResolutionText, isPremiumFPS, isPremiumRequirement, isPremiumResolution, trackStreamSettingsUpdate
 
-// Module 9102 (StreamQualityUtils)
+// Module 5270 (StreamQualityUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import Constants2 from "Constants" /* 4915 */;
-import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 5026 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import Constants2 from "Constants" /* 5117 */;
+import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 5272 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4936 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5271 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import UserStore from "UserStore" /* 1377 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 4937 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import UserStore from "UserStore" /* 1390 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5212 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ const AnalyticEvents = Constants.AnalyticEvents;
 ({ ApplicationStreamFPS: c10, ApplicationStreamResolutions: unpackModuleId, ApplicationStreamSettingRequirements: closure_12, getApplicationFramerate: map1, getApplicationResolution: closure_14 } = StreamSettingsConstants);
 let closure_15 = PremiumConstants.StreamQualitiesToPremiumType;
 const ResolutionTypes = Constants2.ResolutionTypes;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaxQuality(user) {
   let guildId;
   let id;
   let state;
@@ -50,7 +50,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   const cResult = obj.c(16);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ApplicationStreamingSettingsStore];
-    const fn = function o() {
+    const fn = function s() {
       return state.getState();
     };
     cResult[0] = items;
@@ -147,7 +147,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     tmp16 = cResult[15];
   }
   return tmp16;
-}) : ((arg0) => {
+}) : (function useMaxQuality(arg0) {
   let guildId;
   let id;
   let state;
@@ -201,7 +201,7 @@ function getPremiumRequirement(arg0, arg1, arg2) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let closure_2 = arg2;
-  return closure_12.find((preset) => (null == preset.preset || preset.preset === closure_0) && preset.resolution === closure_1 && preset.fps === closure_2);
+  return authStore2.find((preset) => (null == preset.preset || preset.preset === closure_0) && preset.resolution === closure_1 && preset.fps === closure_2);
 }
 function getMaxQuality(participant) {
   let tmp = null;
@@ -242,7 +242,7 @@ export const isPremiumFPS = function isPremiumFPS(maxQuality) {
   if (null != maxQuality) {
     let tmp = map1;
     let closure_0 = map1(maxQuality.maxFrameRate);
-    return null == closure_12.find((fps) => {
+    return null == authStore2.find((fps) => {
       let tmp = fps.fps === closure_0;
       if (tmp) {
         tmp = !(null != fps.quality || null != fps.guildPremiumTier);
@@ -279,7 +279,7 @@ export const trackStreamSettingsUpdate = function trackStreamSettingsUpdate(pres
   let closure_0 = preset;
   let closure_1 = resolution;
   let closure_2 = frameRate;
-  const found = closure_12.find((preset) => (null == preset.preset || preset.preset === closure_0) && preset.resolution === closure_1 && preset.fps === closure_2);
+  const found = authStore2.find((preset) => (null == preset.preset || preset.preset === closure_0) && preset.resolution === closure_1 && preset.fps === closure_2);
   const currentUser = UserStore.getCurrentUser();
   const guildId = RTCConnectionStore.getGuildId();
   let guild = null;

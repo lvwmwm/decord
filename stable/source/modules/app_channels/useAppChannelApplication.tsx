@@ -1,18 +1,16 @@
-// Module ID: 6749
-// Function ID: 6750
+// Module ID: 6949
+// Function ID: 6950
 // Name: useAppChannelApplication
-// Dependencies: [1085, 558, 6658, 2]
+// Dependencies: [1085, 558, 6853, 2]
 
-// Module 6749 (useAppChannelApplication)
+// Module 6949 (useAppChannelApplication)
 import Constants from "Constants" /* 1085 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6658 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6853 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let type;
-
 const ChannelTypes = Constants.ChannelTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChannelApplication(type) {
   type = undefined;
   if (type != null) {
     type = type.type;
@@ -23,7 +21,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
   }
   const obj = ApplicationActionCreators;
   return obj.useApplication(application_id).data;
-}) : ((type) => {
+}) : (function useAppChannelApplication(type) {
   type = undefined;
   if (type != null) {
     type = type.type;

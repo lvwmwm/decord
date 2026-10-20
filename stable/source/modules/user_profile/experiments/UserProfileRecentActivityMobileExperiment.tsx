@@ -1,11 +1,11 @@
-// Module ID: 12925
-// Function ID: 12926
+// Module ID: 13394
+// Function ID: 13395
 // Name: UserProfileRecentActivityMobileExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 
-// Module 12925 (UserProfileRecentActivityMobileExperiment)
+// Module 13394 (UserProfileRecentActivityMobileExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let obj = { name: "2026-09-recent-activity-mobile", kind: "user", defaultConfig:
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsRecentActivityMobileEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -27,7 +27,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useIsRecentActivityMobileEnabled(location) {
   const obj = { location };
   return closure_2.useConfig(obj).enabled;
 });

@@ -1,12 +1,12 @@
-// Module ID: 4772
-// Function ID: 4773
+// Module ID: 5012
+// Function ID: 5013
 // Name: ServerThemeUserExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getServerThemeUserEnabled
 
-// Module 4772 (ServerThemeUserExperiment)
+// Module 5012 (ServerThemeUserExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let obj = { kind: "user", name: "2026-05-server-theme-user", defaultConfig: { en
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useServerThemeUserEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -28,7 +28,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return apexExperiment.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useServerThemeUserEnabled(location) {
   const obj = { location };
   return apexExperiment.useConfig(obj).enabled;
 });

@@ -1,24 +1,24 @@
-// Module ID: 11875
-// Function ID: 11876
+// Module ID: 11946
+// Function ID: 11947
 // Name: ChatInputActionButtonGiftOrThread
-// Dependencies: [19, 17, 11576, 21, 4890, 11876, 11868, 1126, 11866, 11878, 558, 576, 4580, 587, 4589, 2]
+// Dependencies: [19, 17, 11638, 21, 5092, 11947, 11939, 1126, 11937, 11949, 558, 576, 4818, 587, 4827, 2]
 
-// Module 11875 (ChatInputActionButtonGiftOrThread)
+// Module 11946 (ChatInputActionButtonGiftOrThread)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4580 */;
-import ChatInputConstants from "ChatInputConstants" /* 11576 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 11868 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 11876 */;
+import useToken from "useToken" /* 4818 */;
+import ChatInputConstants from "ChatInputConstants" /* 11638 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 11939 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 11947 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
-const native = tmp(4589);
+const native = tmp(4827);
 function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, cleanup) {
   let accessible;
   let canStartThreads;
@@ -37,7 +37,7 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
       accessible,
       accessibilityLabel: intl.string(onPress(1126).t["4WNcpu"]),
       disabled: !canStartThreads,
-      IconComponent: onPress(11866).ThreadPlusIcon,
+      IconComponent: onPress(11937).ThreadPlusIcon,
       onPress(arg0) {
           return onPress(arg0, ChatInputActionType.THREAD);
         },
@@ -48,7 +48,7 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
     tmpResult = tmp(tmp2Result, obj2);
   } else {
     const obj3 = { accessible, channel, onPress, style: styleButtonWrapper, styleButton };
-    tmpResult = tmp(tmp2(11878), obj3);
+    tmpResult = tmp(tmp2(11949), obj3);
   }
   return <tmp4 key={arg0} cleanup={arg3} state={arg2}>{tmpResult}</tmp4>;
 }
@@ -67,7 +67,7 @@ let closure_7 = createStyles.createStyles((height, arg1) => {
   size = { width: height + 2 * arg1, height };
   return obj;
 });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputActionButtonGiftOrThread(arg0) {
   let tmp6;
   let tmp7;
   const obj = react2;
@@ -104,7 +104,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[5] = tmp7;
   cResult[6] = tmp13;
   tmp12 = tmp13;
-}) : ((arg0) => {
+}) : (function ChatInputActionButtonGiftOrThread(arg0) {
   let closure_0 = arg0;
   const obj = useToken;
   const token = obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);

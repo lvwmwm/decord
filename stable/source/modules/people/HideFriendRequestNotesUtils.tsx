@@ -1,12 +1,12 @@
-// Module ID: 12953
-// Function ID: 12954
+// Module ID: 13422
+// Function ID: 13423
 // Name: HideFriendRequestNotesUtils
-// Dependencies: [4519, 558, 2028, 8294, 576, 504, 2]
+// Dependencies: [4760, 558, 2041, 7733, 576, 504, 2]
 
-// Module 12953 (HideFriendRequestNotesUtils)
-import UserSettings from "UserSettings" /* 2028 */;
-import useUserIsTeen from "useUserIsTeen" /* 8294 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+// Module 13422 (HideFriendRequestNotesUtils)
+import UserSettings from "UserSettings" /* 2041 */;
+import useUserIsTeen from "useUserIsTeen" /* 7733 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHideFriendRequestNotes() {
   const HideFriendRequestNotes = UserSettings.HideFriendRequestNotes;
   const setting = HideFriendRequestNotes.useSetting();
   const obj = useUserIsTeen;
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     userIsTeen = setting;
   }
   return userIsTeen;
-}) : (() => {
+}) : (function useHideFriendRequestNotes() {
   const HideFriendRequestNotes = UserSettings.HideFriendRequestNotes;
   const setting = HideFriendRequestNotes.useSetting();
   const obj = useUserIsTeen;
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_3 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendRequestNote(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -74,7 +74,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return tmp9;
-}) : ((arg0) => {
+}) : (function useFriendRequestNote(arg0) {
   let closure_0;
   _require = arg0;
   const items = [RelationshipStore];

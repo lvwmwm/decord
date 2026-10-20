@@ -1,19 +1,19 @@
-// Module ID: 12212
-// Function ID: 12213
+// Module ID: 12296
+// Function ID: 12297
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 4768, 21, 4890, 587, 558, 576, 6470, 12213, 4826, 4886, 2]
+// Dependencies: [17, 5008, 21, 5092, 587, 558, 576, 6664, 12297, 9405, 5088, 2]
 
-// Module 12212 (GuildPowerupsBoostInfo)
+// Module 12296 (GuildPowerupsBoostInfo)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4768 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 4826 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6470 */;
-import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 12213 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5008 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6664 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9405 */;
+import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 12297 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const BoostInfoType = GuildPowerupsConstants.BoostInfoType;
 let obj = { container: obj2, headerContainer: { flexDirection: "row", alignItems: "center", justifyContent: "center", display: "flex" } };
 obj2 = { flex: 1, alignItems: "center", justifyContent: "center", paddingVertical: nativeDefault.space.PX_12 };
 let closure_7 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsBoostInfo(arg0) {
   let count;
   let items;
   let items1;
@@ -143,7 +143,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = type;
   cResult[2] = guildPowerupsBoostInfoText;
   tmp6 = guildPowerupsBoostInfoText;
-}) : ((arg0) => {
+}) : (function GuildPowerupsBoostInfo(arg0) {
   let TEXT_MUTED;
   let count;
   let items;
@@ -167,7 +167,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   items = [hasOwnProperty(BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
   let str = "text-lg/medium";
-  const Text = tmp2(4886).Text;
+  const Text = tmp2(5088).Text;
   if (manaTypeConsolidationExperiment) {
     str = "experimental/body-lg/semibold";
   }
@@ -179,7 +179,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[1] = hasOwnProperty(Text, obj5);
   items1 = [metroRequire(View, obj4), ];
   let str3 = "text-md/normal";
-  const Text2 = tmp2(4886).Text;
+  const Text2 = tmp2(5088).Text;
   if (manaTypeConsolidationExperiment) {
     str3 = "text-sm/normal";
   }

@@ -1,20 +1,20 @@
-// Module ID: 15839
-// Function ID: 15840
+// Module ID: 16348
+// Function ID: 16349
 // Name: useIsNotifSettingDisabled
-// Dependencies: [15830, 558, 576, 15832, 15831, 504, 1126, 2819, 2]
+// Dependencies: [16339, 558, 576, 16341, 16340, 504, 1126, 2894, 2]
 
-// Module 15839 (useIsNotifSettingDisabled)
-import _modDef2819 from "module_2819" /* 2819 */;
-import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 15831 */;
-import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 15832 */;
-import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 15830 */;
+// Module 16348 (useIsNotifSettingDisabled)
+import _modDef2894 from "module_2894" /* 2894 */;
+import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 16340 */;
+import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 16341 */;
+import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 16339 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNotifSettingDisabled(arg0) {
   let closure_0;
   let tmp4;
   let tmp5;
@@ -24,7 +24,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = require("react");
   const cResult = obj.c(8);
   if (cResult[0] !== arg0) {
-    const fn = function s() {
+    function handleOpenSystem() {
       const obj = DeclarativeSystemNotifPermissionAnalytics;
       const result = obj.trackSystemNotifSettingsOpened(closure_0);
       const openSystemNotifSettings = DeclarativeSystemNotifPermissionHelpersDefault.openSystemNotifSettings;
@@ -33,10 +33,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (openSystemNotifSettings != null) {
         const result1 = openSystemNotifSettings(tmp);
       }
-    };
+    }
     cResult[0] = arg0;
-    cResult[1] = fn;
-    tmp4 = fn;
+    cResult[1] = handleOpenSystem;
+    tmp4 = handleOpenSystem;
   } else {
     tmp4 = cResult[1];
   }
@@ -89,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return DeclarativeSystemNotifPermissionStore.isDisabled(closure_0);
         }
       }
-      const stringResult = obj3.string(_modDef2819.TVZ0Fm);
+      const stringResult = obj3.string(_modDef2894.TVZ0Fm);
       cResult[5] = stringResult;
       tmp12 = stringResult;
     } else {
@@ -120,7 +120,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp11 = tmp15;
   }
   return tmp11;
-}) : ((arg0) => {
+}) : (function useIsNotifSettingDisabled(arg0) {
   let closure_0;
   let intl;
   _require = arg0;
@@ -135,7 +135,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp7 = !tmp4;
   if (tmp7) {
     const obj2 = {
-      label: intl.string(_modDef2819.TVZ0Fm),
+      label: intl.string(_modDef2894.TVZ0Fm),
       onPress: function handleOpenSystem() {
           const obj = DeclarativeSystemNotifPermissionAnalytics;
           const result = obj.trackSystemNotifSettingsOpened(closure_0);

@@ -1,20 +1,20 @@
-// Module ID: 9881
-// Function ID: 9882
+// Module ID: 9437
+// Function ID: 9438
 // Name: useBurstToggleCoachmark
-// Dependencies: [32, 19, 17, 1377, 2048, 21, 2036, 4890, 587, 558, 576, 8880, 504, 4528, 6891, 1126, 9882, 2]
+// Dependencies: [32, 19, 17, 1390, 2062, 21, 2049, 5092, 587, 558, 576, 9403, 504, 4769, 7100, 1126, 9438, 2]
 
-// Module 9881 (useBurstToggleCoachmark)
+// Module 9437 (useBurstToggleCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import createStyles from "createStyles" /* 4890 */;
+import UserStore from "UserStore" /* 1390 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let _require;
 
 let size;
 let tmp;
-const SuperReactionIcon2 = tmp(8880);
+const SuperReactionIcon2 = tmp(9403);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
@@ -32,7 +32,7 @@ let obj = { upsellImageContainer: size };
 size = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.round, height: 40, width: 40, display: "flex", alignItems: "center", justifyContent: "center" };
 let closure_10 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function EducationCoachmarkImg() {
   let first;
   let tmp9;
   const obj = react2;
@@ -55,13 +55,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[2];
   }
   return tmp9;
-}) : (() => {
+}) : (function EducationCoachmarkImg() {
   ({ color: nativeDefault.colors.WHITE, size: "md" });
   const SuperReactionIcon = SuperReactionIcon2.SuperReactionIcon;
   return <View style={closure_10().upsellImageContainer}>{null}</View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstToggleCoachmark(arg0) {
   let closure_0;
   let currentUser;
   let tmp13;
@@ -186,21 +186,21 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[9] = tmp15;
   cResult[10] = first === closure_9;
   cResult[11] = obj2;
-}) : ((arg0) => {
+}) : (function useBurstToggleCoachmark(arg0) {
   let currentUser;
   let first;
   let items2;
   let obj = first(504);
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj2 = first(4528);
+  const obj2 = first(4769);
   if (obj2.isPremium(stateFromStores)) {
     const items1 = [closure_9];
     items2 = items1;
   } else {
     items2 = [];
   }
-  const tmpResult = first(6891);
+  const tmpResult = first(7100);
   const tmp5 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items2), 2);
   first = tmp5[0];
   let closure_1 = tmp7;
@@ -224,7 +224,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     intl2 = intl3.intl;
     return obj;
   }, items3);
-  const tmpResult2 = first(9882);
+  const tmpResult2 = first(9438);
   const coachmark = tmpResult2.useCoachmark(arg0, memo);
   return tmp5[1];
 });

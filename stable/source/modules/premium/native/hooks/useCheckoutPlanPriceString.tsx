@@ -1,13 +1,13 @@
-// Module ID: 13143
-// Function ID: 13144
+// Module ID: 13633
+// Function ID: 13634
 // Name: useCheckoutPlanPriceString
-// Dependencies: [19, 6930, 558, 576, 1369, 6915, 2]
+// Dependencies: [19, 7144, 558, 576, 1382, 7126, 2]
 
-// Module 13143 (useCheckoutPlanPriceString)
+// Module 13633 (useCheckoutPlanPriceString)
 import react2 from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 6915 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 6930 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7126 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7144 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -18,14 +18,14 @@ let _require, dependencyMap;
 let react = react_mod;
 const useNativeCheckoutStore = NativeCheckoutStore.useNativeCheckoutStore;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((productId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckoutPlan(productId) {
   let first;
   let tmp7;
   let tmp9;
   const obj = react2;
   const cResult = obj.c(10);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function u(orderRequired) {
+    const fn = function t(orderRequired) {
       return orderRequired.orderRequired;
     };
     cResult[0] = fn;
@@ -89,7 +89,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((productId) => {
   cResult[8] = tmp9;
   cResult[9] = obj2;
   tmp15 = obj2;
-}) : ((arg0) => {
+}) : (function useCheckoutPlan(arg0) {
   let closure_0;
   let closure_1;
   let closure_2;
@@ -125,7 +125,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((productId) => {
 });
 let closure_4 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckoutPlanDiscountPrices(arg0, arg1) {
   let discountedPriceString;
   let regularPriceString;
   let tmp3;
@@ -192,7 +192,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     }
   }
   return tmp3;
-}) : ((arg0, discountedPriceString) => {
+}) : (function useCheckoutPlanDiscountPrices(arg0, discountedPriceString) {
   let tmp = closure_4(arg0);
   const plan = tmp.plan;
   const useOrderPricing = tmp.useOrderPricing;
@@ -227,7 +227,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, priceString) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckoutPlanPriceString(arg0, priceString) {
   const obj = react2;
   const cResult = obj.c(2);
   priceString = undefined;
@@ -258,7 +258,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, priceString) =
     priceString = tmp4;
   }
   return priceString;
-}) : ((arg0, priceString) => {
+}) : (function useCheckoutPlanPriceString(arg0, priceString) {
   priceString = undefined;
   if (priceString != null) {
     priceString = priceString.priceString;

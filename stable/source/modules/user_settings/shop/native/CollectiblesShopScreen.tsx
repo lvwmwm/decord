@@ -1,25 +1,25 @@
-// Module ID: 15702
-// Function ID: 15703
+// Module ID: 16202
+// Function ID: 16203
 // Name: CollectiblesShopScreen
-// Dependencies: [19, 1087, 21, 558, 576, 6490, 15703, 6888, 6681, 15704, 2]
+// Dependencies: [19, 1087, 21, 558, 576, 6683, 16203, 7097, 6879, 16204, 2]
 
-// Module 15702 (CollectiblesShopScreen)
+// Module 16202 (CollectiblesShopScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6490 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
-import useGiftCardMobileConsumptionHalfsheet from "useGiftCardMobileConsumptionHalfsheet" /* 6888 */;
-import useShopOrientationLock from "useShopOrientationLock" /* 15703 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 6683 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import useGiftCardMobileConsumptionHalfsheet from "useGiftCardMobileConsumptionHalfsheet" /* 7097 */;
+import useShopOrientationLock from "useShopOrientationLock" /* 16203 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const CollectiblesShopV22 = tmp(15704);
+const CollectiblesShopV22 = tmp(16204);
 const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesShopScreen() {
   const obj = react2;
   const cResult = obj.c(4);
   const obj2 = useSettingNavigationRoute;
@@ -64,7 +64,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[2] = screen;
   cResult[3] = tmp13;
   tmp12 = tmp13;
-}) : (() => {
+}) : (function CollectiblesShopScreen() {
   let onNavigateAway;
   const obj = useSettingNavigationRoute;
   const settingNavigationRoute = obj.useSettingNavigationRoute();

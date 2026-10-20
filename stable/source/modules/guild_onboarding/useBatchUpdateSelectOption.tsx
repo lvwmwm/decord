@@ -1,18 +1,18 @@
-// Module ID: 11171
-// Function ID: 11172
+// Module ID: 10704
+// Function ID: 10705
 // Name: useBatchUpdateSelectOption
-// Dependencies: [19, 5071, 6595, 1095, 584, 12, 1375, 11172, 558, 576, 504, 6600, 1390, 2]
+// Dependencies: [19, 5966, 6789, 1095, 584, 12, 1388, 10705, 558, 576, 504, 6794, 1403, 2]
 
-// Module 11171 (useBatchUpdateSelectOption)
+// Module 10704 (useBatchUpdateSelectOption)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6600 */;
-import OptInOnboardingUtils from "OptInOnboardingUtils" /* 11172 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 6794 */;
+import OptInOnboardingUtils from "OptInOnboardingUtils" /* 10705 */;
 import react from "react" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6595 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 6789 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -159,7 +159,7 @@ function getChannels(arg0) {
 }
 let closure_6 = UserSettingsConstants.ChannelNotificationSettingsFlags;
 let closure_9 = {};
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBatchUpdateSelectOption(guildId) {
   let first;
   let tmp10;
   let tmp6;
@@ -178,7 +178,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     first = cResult[0];
   }
   if (cResult[1] !== guildId) {
-    const fn = function u() {
+    const fn = function f() {
       let pendingResponseOptions = GuildOnboardingPromptsStore.getPendingResponseOptions(guildId);
       if (pendingResponseOptions == null) {
         pendingResponseOptions = closure_9;
@@ -231,7 +231,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     const effect1 = obj3.useEffect(tmp12, tmp13);
     if (cResult[11] !== guildId) {
-      const fn3 = function v(prompt, option, selected) {
+      const fn4 = function v(prompt, option, selected) {
         let addedChannelIds;
         let addedRoleIds;
         let removedChannelIds;
@@ -270,8 +270,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         obj6.updateRolesLocal(guildId, addedRoleIds, removedRoleIds);
       };
       cResult[11] = guildId;
-      cResult[12] = fn3;
-      tmp15 = fn3;
+      cResult[12] = fn4;
+      tmp15 = fn4;
     } else {
       tmp15 = cResult[12];
     }
@@ -285,27 +285,25 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     return tmp16;
   }
-  class N {
-    constructor() {
-      let tmp2 = null != stateFromStores;
-      if (tmp2) {
-        const _Object = Object;
-        tmp2 = 0 !== Object.keys(tmp).length;
-      }
-      if (tmp2) {
-        const obj = GuildOnboardingActionCreatorsDefault;
-        const result = obj.updateOnboardingResponses(guildId);
-      }
+  const fn3 = function _() {
+    let tmp2 = null != stateFromStores;
+    if (tmp2) {
+      const _Object = Object;
+      tmp2 = 0 !== Object.keys(tmp).length;
     }
-  }
+    if (tmp2) {
+      const obj = GuildOnboardingActionCreatorsDefault;
+      const result = obj.updateOnboardingResponses(guildId);
+    }
+  };
   const items3 = [guildId, stateFromStores];
   cResult[7] = guildId;
   cResult[8] = stateFromStores;
-  cResult[9] = N;
+  cResult[9] = fn3;
   cResult[10] = items3;
   tmp13 = items3;
-  tmp12 = N;
-}) : ((guildId) => {
+  tmp12 = fn3;
+}) : (function useBatchUpdateSelectOption(guildId) {
   let items4;
   _require = guildId;
   let obj = require("get initialized");

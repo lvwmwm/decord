@@ -1,14 +1,14 @@
-// Module ID: 13672
-// Function ID: 13673
+// Module ID: 14086
+// Function ID: 14087
 // Name: MidjourneyOnboardingUtils
-// Dependencies: [2074, 4699, 13673, 558, 576, 504, 2]
+// Dependencies: [2087, 4939, 14087, 558, 576, 504, 2]
 // Exports: hasRedirectedToGuild, isEligibleForMidjourneyRedirect, isMidjourneyOnboardingFlow
 
-// Module 13672 (MidjourneyOnboardingUtils)
+// Module 14086 (MidjourneyOnboardingUtils)
 import react from "react" /* 576 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
-import MidjourneyOnboardingConstants from "MidjourneyOnboardingConstants" /* 13673 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
+import MidjourneyOnboardingConstants from "MidjourneyOnboardingConstants" /* 14087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let hasOwnProperty;
 let tmp;
 const get_initialized = tmp(504);
 ({ MIDJOURNEY_BOT_ID: closure_4, MIDJOURNEY_GUILD_ID: hasOwnProperty } = MidjourneyOnboardingConstants);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMidjourneyOnboardingFlow() {
   let tmp4;
   let tmp5;
   let tmp6;
@@ -55,7 +55,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5, tmp6);
-}) : (() => {
+}) : (function useIsMidjourneyOnboardingFlow() {
   let obj = get_initialized;
   const items = [GuildStore];
   return obj.useStateFromStores(items, () => {

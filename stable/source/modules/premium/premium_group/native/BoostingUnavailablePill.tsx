@@ -1,24 +1,22 @@
-// Module ID: 13320
-// Function ID: 13321
+// Module ID: 13810
+// Function ID: 13811
 // Name: BoostingUnavailablePill
-// Dependencies: [17, 4542, 21, 4890, 587, 4854, 13321, 1987, 1126, 3205, 558, 576, 4886, 2]
+// Dependencies: [17, 4783, 21, 5092, 587, 5056, 13811, 2000, 1126, 3280, 558, 576, 5088, 2]
 
-// Module 13320 (BoostingUnavailablePill)
+// Module 13810 (BoostingUnavailablePill)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import _modDef3205 from "module_3205" /* 3205 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 4542 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import _modDef3280 from "module_3280" /* 3280 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 4783 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let style;
 
 let c3;
 let closure_4;
@@ -30,11 +28,11 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: formatToPlainString(prop, obj2) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(13321, dependencyMap.paths);
+  const tmp2 = asyncRequire(13811, dependencyMap.paths);
   const intl = intl2.intl;
   formatToPlainString = intl.formatToPlainString;
   obj2 = { premiumGroupProductName: closure_5() };
-  prop = _modDef3205["5xN/C1"];
+  prop = _modDef3280["5xN/C1"];
   openLazy(tmp2, "PremiumGroupEducationActionSheet", obj);
 }
 ({ TouchableOpacity: c3, View: closure_4 } = react_native);
@@ -43,7 +41,7 @@ const jsx = Fragment.jsx;
 let obj = { premiumGroupBanner: obj2, pgUnavailable: { flex: 1, justifyContent: "center" }, pgUnavailableText: { textAlign: "center" } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, flexDirection: "row", gap: 12, padding: 12, justifyContent: "center", borderColor: nativeDefault.colors.STATUS_WARNING, borderWidth: 1, borderRadius: nativeDefault.radii.lg, marginBottom: 12 };
 let closure_7 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostingUnavailablePill(style) {
   let pgUnavailable;
   let pgUnavailableText;
   const obj = react;
@@ -104,7 +102,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   cResult[1] = tmp4.premiumGroupBanner;
   cResult[2] = items;
   tmp5 = items;
-}) : ((style) => {
+}) : (function BoostingUnavailablePill(style) {
   let intl;
   style = style.style;
   const tmp = closure_7();

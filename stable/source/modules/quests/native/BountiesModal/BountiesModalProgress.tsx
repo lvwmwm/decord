@@ -1,16 +1,16 @@
-// Module ID: 14840
-// Function ID: 14841
+// Module ID: 15317
+// Function ID: 15318
 // Name: BountiesModalProgress
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 4612, 4891, 4894, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 4850, 5093, 5096, 2]
 
-// Module 14840 (BountiesModalProgress)
+// Module 15317 (BountiesModalProgress)
 import nativeDefault from "native" /* 587 */;
-import timing from "timing" /* 4891 */;
+import timing from "timing" /* 5093 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const timingPresets = tmp(4894);
+const timingPresets = tmp(5096);
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles(() => {
@@ -37,7 +37,7 @@ const __initData = { code: "function BountiesModalProgressTsx1(){const{withTimin
 const __initData2 = { code: "function BountiesModalProgressTsx2(){const{withTiming,progress,shouldSkipAnimation,timingNone,timingFast}=this.__closure;return{width:withTiming(progress*100+\"%\",shouldSkipAnimation?timingNone:timingFast,\"animate-always\")};}" };
 const __initData3 = { code: "function BountiesModalProgressTsx3(){const{withTiming,visible,timingFast}=this.__closure;return{opacity:withTiming(visible?1:0,timingFast)};}" };
 const __initData4 = { code: "function BountiesModalProgressTsx4(){const{withTiming,progress,shouldSkipAnimation,timingNone,timingFast}=this.__closure;return{width:withTiming(progress*100+\"%\",shouldSkipAnimation?timingNone:timingFast,'animate-always')};}" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((progress) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesModalProgress(progress) {
   let items;
   let items1;
   let items2;
@@ -165,7 +165,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((progress) => {
   cResult[2] = animatedStyle;
   cResult[3] = items3;
   tmp14 = items3;
-}) : ((progress) => {
+}) : (function BountiesModalProgress(progress) {
   let items;
   let items1;
   let items2;

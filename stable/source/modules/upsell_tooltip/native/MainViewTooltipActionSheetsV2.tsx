@@ -1,23 +1,23 @@
-// Module ID: 17105
-// Function ID: 17106
+// Module ID: 17696
+// Function ID: 17697
 // Name: MainViewTooltipActionSheetsV2
-// Dependencies: [32, 109, 19, 4561, 1231, 1085, 2048, 21, 17106, 1987, 17108, 17109, 17110, 17112, 17113, 15565, 17115, 17119, 17121, 17125, 17130, 17133, 11583, 2036, 2037, 1252, 2041, 558, 576, 10355, 4698, 2038, 17134, 504, 10354, 2]
+// Dependencies: [32, 109, 19, 4802, 1244, 1085, 2062, 21, 17697, 2000, 17699, 17700, 17701, 17703, 17704, 16062, 17706, 17712, 17714, 17718, 17725, 17730, 11648, 2049, 2056, 1265, 2053, 558, 576, 10010, 4938, 2050, 17731, 504, 10009, 2]
 // Exports: default
 
-// Module 17105 (MainViewTooltipActionSheetsV2)
+// Module 17696 (MainViewTooltipActionSheetsV2)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 2037 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 2056 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import "react";
 import react_mod from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4561 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import ActionSheetStore from "ActionSheetStore" /* 4802 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,42 +29,42 @@ let metroImportAll;
 let metroImportDefault;
 let tmp3;
 function GiftingBadgesCoachmarkImporter() {
-  return asyncRequire(17119, dependencyMap.paths);
+  return asyncRequire(17712, dependencyMap.paths);
 }
 function AppIconsCoachMarkImporter() {
-  return asyncRequire(17106, dependencyMap.paths);
+  return asyncRequire(17697, dependencyMap.paths);
 }
 function RobloxConnectionCoachmarkImporter() {
-  return asyncRequire(17109, dependencyMap.paths);
+  return asyncRequire(17700, dependencyMap.paths);
 }
 function DisplayNameStylesFlywheelMobileActionSheetImporter() {
-  return asyncRequire(17115, dependencyMap.paths);
+  return asyncRequire(17706, dependencyMap.paths);
 }
 function CollectiblesMobileAnnouncementActionSheetImporter() {
-  return asyncRequire(17125, dependencyMap.paths);
+  return asyncRequire(17718, dependencyMap.paths);
 }
 function NitroFileUploadAnnouncementPromoSheetImporter() {
-  return asyncRequire(17130, dependencyMap.paths);
+  return asyncRequire(17725, dependencyMap.paths);
 }
 function NitroFileUploadUpsellPromoSheetImporter() {
-  return asyncRequire(17133, dependencyMap.paths);
+  return asyncRequire(17730, dependencyMap.paths);
 }
 function CustomTypingIndicatorAnnounceActionSheetImporter() {
-  return asyncRequire(11583, dependencyMap.paths);
+  return asyncRequire(11648, dependencyMap.paths);
 }
 class GiftingPromotionCoachmarkImporter {
   constructor() {
-    return asyncRequire(17108, dependencyMap.paths);
+    return asyncRequire(17699, dependencyMap.paths);
   }
 }
 class PremiumMarketingMomentActionSheetImporter {
   constructor() {
-    return asyncRequire(17112, dependencyMap.paths);
+    return asyncRequire(17703, dependencyMap.paths);
   }
 }
 class ConnectionDeprecationActionSheetImporter {
   constructor() {
-    return asyncRequire(17121, dependencyMap.paths);
+    return asyncRequire(17714, dependencyMap.paths);
   }
 }
 function trackActionSheetImpression(actionSheetConfig) {
@@ -91,7 +91,7 @@ function trackActionSheetImpression(actionSheetConfig) {
     }
     str = str2;
   }
-  CONTENT_TYPES_WITH_BYPASS_FATIGUE = tmp4(2041).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+  CONTENT_TYPES_WITH_BYPASS_FATIGUE = tmp4(2053).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
   track(MAIN_VIEW_ACTION_SHEET_SELECTED, obj);
 }
 let closure_3 = ["actionSheetConfig", "hasTrackedRef"];
@@ -105,21 +105,21 @@ const MainViewTooltipActionSheets = "MainViewTooltipActionSheets";
 let obj = {
   id: dismissible_content.DismissibleContent.GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET,
   importer: function GooglePlayPriceChangeActionSheetImporter() {
-    return asyncRequire(17110, dependencyMap.paths);
+    return asyncRequire(17701, dependencyMap.paths);
   }
 };
 let items = [obj, , ];
 let obj2 = {
   id: dismissible_content.DismissibleContent.DISCOUNT_OFFER_ACTION_SHEET,
   importer: function PremiumDiscountOfferActionSheetImporter() {
-    return asyncRequire(17113, dependencyMap.paths);
+    return asyncRequire(17704, dependencyMap.paths);
   }
 };
 items[1] = obj2;
 let obj3 = {
   id: dismissible_content.DismissibleContent.MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET,
   importer: function PremiumTrialOfferActionSheetImporter() {
-    return asyncRequire(15565, dependencyMap.paths);
+    return asyncRequire(16062, dependencyMap.paths);
   }
 };
 items[2] = obj3;
@@ -164,7 +164,7 @@ items1[sum11] = { id: dismissible_content.DismissibleContent.NITRO_FILE_UPLOAD_1
 ({ id: dismissible_content.DismissibleContent.NITRO_FILE_UPLOAD_1GB_UPSELL, importer: NitroFileUploadUpsellPromoSheetImporter });
 items1[sum11 + 1] = { id: dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_COACHMARK, importer: CustomTypingIndicatorAnnounceActionSheetImporter };
 ({ id: dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_COACHMARK, importer: CustomTypingIndicatorAnnounceActionSheetImporter });
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((actionSheetConfig) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function TrackedDismissibleActionSheet(actionSheetConfig) {
   let closure_0;
   let tmp6;
   const tmp = _require;
@@ -196,7 +196,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((actionSheetCon
     }
     closure_7(tmp10, tmp11);
     if (cResult[8] !== tmp6) {
-      const DismissibleActionSheet = tmp(10355).DismissibleActionSheet;
+      const DismissibleActionSheet = tmp(10010).DismissibleActionSheet;
       const merged = Object.assign(tmp6);
       const tmp19 = <DismissibleActionSheet />;
       cResult[8] = tmp6;
@@ -220,7 +220,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((actionSheetCon
   cResult[7] = items;
   tmp11 = items;
   tmp10 = fn;
-}) : ((actionSheetConfig) => {
+}) : (function TrackedDismissibleActionSheet(actionSheetConfig) {
   actionSheetConfig = actionSheetConfig.actionSheetConfig;
   const hasTrackedRef = actionSheetConfig.hasTrackedRef;
   const merged = Object.assign(actionSheetConfig, Object.assign({ actionSheetConfig: 0, hasTrackedRef: 0 }));
@@ -231,7 +231,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((actionSheetCon
       trackActionSheetImpression(actionSheetConfig);
     }
   }, items);
-  const DismissibleActionSheet = actionSheetConfig(10355).DismissibleActionSheet;
+  const DismissibleActionSheet = actionSheetConfig(10010).DismissibleActionSheet;
   const merged1 = Object.assign(merged);
   return <DismissibleActionSheet />;
 });
@@ -247,7 +247,7 @@ export default function MainViewTooltipActionSheetsV2() {
   let obj5;
   let str6;
   const tmp = mainViewTooltipActionSheetMap;
-  let obj = mainViewTooltipActionSheetMap(17134);
+  let obj = mainViewTooltipActionSheetMap(17731);
   mainViewTooltipActionSheetMap = obj.useMainViewTooltipActionSheetMap();
   [first, dependencyMap] = react.useState(null);
   let ref = closure_9(false);
@@ -372,13 +372,13 @@ export default function MainViewTooltipActionSheetsV2() {
     }
     let id = first.id;
     let str2 = "snowflake_bound";
-    const tmpResult = tmp(2037);
+    const tmpResult = tmp(2056);
     if (!tmpResult.isSnowflakeBoundDismissibleContent(id)) {
       let str3 = "versioned";
-      const tmpResult3 = tmp(2037);
+      const tmpResult3 = tmp(2056);
       if (!tmpResult3.isVersionedDismissibleContent(id)) {
         let str4 = "single_use";
-        const tmpResult4 = tmp(2037);
+        const tmpResult4 = tmp(2056);
         if (tmpResult4.isTimeRecurringDismissibleContent(id)) {
           str4 = "time_recurring";
         }
@@ -401,7 +401,7 @@ export default function MainViewTooltipActionSheetsV2() {
             }
       };
       str6 = obj5.newSnowflakeId;
-      const SelectedSnowflakeBoundDismissibleContent = tmp(10354).SelectedSnowflakeBoundDismissibleContent;
+      const SelectedSnowflakeBoundDismissibleContent = tmp(10009).SelectedSnowflakeBoundDismissibleContent;
       const tmp18 = jsx;
       if (str6 == null) {
         str6 = "";
@@ -409,7 +409,7 @@ export default function MainViewTooltipActionSheetsV2() {
       return tmp18(SelectedSnowflakeBoundDismissibleContent, obj6);
     } else if ("versioned" === str2) {
       let num = obj5.latestVersion;
-      const SelectedVersionedDismissibleContent = tmp(10354).SelectedVersionedDismissibleContent;
+      const SelectedVersionedDismissibleContent = tmp(10009).SelectedVersionedDismissibleContent;
       const tmp16 = jsx;
       if (num == null) {
         num = 0;
@@ -429,7 +429,7 @@ export default function MainViewTooltipActionSheetsV2() {
       };
       return tmp16(SelectedVersionedDismissibleContent, obj7);
     } else if ("time_recurring" === str2) {
-      return jsx(tmp(10354).SelectedTimeRecurringDismissibleContent, {
+      return jsx(tmp(10009).SelectedTimeRecurringDismissibleContent, {
         contentType: first.id,
         timeRecurringConfig: obj5.cooldownConfig,
         groupName: constants.MAIN_VIEW_TOOLTIPS,
@@ -445,7 +445,7 @@ export default function MainViewTooltipActionSheetsV2() {
       });
     } else if ("single_use" === str2) {
       const items6 = [first.id];
-      return jsx(first(10354), {
+      return jsx(first(10009), {
         contentTypes: items6,
         groupName: constants.MAIN_VIEW_TOOLTIPS,
         children(visibleContent) {

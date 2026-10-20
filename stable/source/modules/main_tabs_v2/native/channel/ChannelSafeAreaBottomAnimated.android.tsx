@@ -1,30 +1,28 @@
-// Module ID: 12310
-// Function ID: 12311
+// Module ID: 12392
+// Function ID: 12393
 // Name: ChannelSafeAreaBottomAnimated
-// Dependencies: [19, 17, 21, 558, 576, 9772, 9777, 4612, 2]
+// Dependencies: [19, 17, 21, 558, 576, 10371, 10377, 4850, 2]
 
-// Module 12310 (ChannelSafeAreaBottomAnimated)
+// Module 12392 (ChannelSafeAreaBottomAnimated)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 9772 */;
-import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 9777 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import useChannelSafeAreaHeightSharedValueDefault from "useChannelSafeAreaHeightSharedValue" /* 10371 */;
+import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 10377 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId;
-
 let c3;
 let closure_4;
 let tmp3;
-const ReanimatedRexportDefault = tmp3(4612);
+const ReanimatedRexportDefault = tmp3(4850);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 const jsx = Fragment.jsx;
 const __initData = { code: "function ChannelSafeAreaBottomAnimatedAndroidTsx1(){const{heightSharedValue}=this.__closure;return{height:heightSharedValue.get()};}" };
 const __initData2 = { code: "function ChannelSafeAreaBottomAnimatedAndroidTsx2(){const{heightSharedValue}=this.__closure;return{height:heightSharedValue.get()};}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSafeAreaBottom(channelId) {
   let tmp7;
   let obj = react2;
   const cResult = obj.c(5);
@@ -62,7 +60,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[3] = tmp7;
   cResult[4] = tmp13;
   tmp12 = tmp13;
-}) : ((channelId) => {
+}) : (function ChannelSafeAreaBottom(channelId) {
   channelId = channelId.channelId;
   const tmp = useChannelSafeAreaHeightSharedValueDefault();
   let closure_0 = tmp;

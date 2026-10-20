@@ -1,24 +1,26 @@
-// Module ID: 2104
-// Function ID: 2105
+// Module ID: 2117
+// Function ID: 2118
 // Name: GatedChannelStore
-// Dependencies: [2105, 2055, 2107, 2051, 2112, 2106, 2074, 1377, 1085, 4499, 4500, 4501, 504, 584, 2]
+// Dependencies: [2118, 2069, 2120, 2065, 2125, 2119, 2087, 1390, 1085, 4740, 4741, 4742, 504, 584, 2]
 
-// Module 2104 (GatedChannelStore)
+// Module 2117 (GatedChannelStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2107 */;
-import PremiumRoleUtils from "PremiumRoleUtils" /* 4499 */;
-import RolePermissionUtils from "RolePermissionUtils" /* 4500 */;
-import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4501 */;
-import ImpersonateStore from "ImpersonateStore" /* 2105 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2120 */;
+import PremiumRoleUtils from "PremiumRoleUtils" /* 4740 */;
+import RolePermissionUtils from "RolePermissionUtils" /* 4741 */;
+import CreatorMonetizationRestrictionsUtils from "CreatorMonetizationRestrictionsUtils" /* 4742 */;
+import ImpersonateStore from "ImpersonateStore" /* 2118 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
+
+let closure_12;
 
 let c10;
 let unpackModuleId;
@@ -32,7 +34,7 @@ function isSubscriptionGated(role) {
   if (isSubscriptionRoleResult) {
     let tmp4 = isPreviewingRoles;
     if (!tmp4) {
-      const isSubscriptionRoleAvailableForPurchase = tmp(4499).isSubscriptionRoleAvailableForPurchase;
+      const isSubscriptionRoleAvailableForPurchase = tmp(4740).isSubscriptionRoleAvailableForPurchase;
       PremiumRoleUtils;
       let result = isSubscriptionRoleAvailableForPurchase(role);
       if (!result) {
@@ -183,7 +185,7 @@ function handleChannelUpdate(channel) {
 const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;
 const hasPermission = GuildRoleRecord.hasPermission;
 ({ Permissions: c10, GuildFeatures: unpackModuleId } = Constants);
-let closure_12 = {};
+const authStore2 = {};
 let set = new Set();
 const Store = get_initializedDefault.Store;
 class GatedChannelStore extends Store {

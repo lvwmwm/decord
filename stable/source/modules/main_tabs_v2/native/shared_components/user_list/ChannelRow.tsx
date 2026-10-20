@@ -1,33 +1,33 @@
-// Module ID: 10650
-// Function ID: 10651
+// Module ID: 10283
+// Function ID: 10284
 // Name: ChannelRow
-// Dependencies: [109, 19, 17, 2051, 2074, 4905, 4519, 1377, 10592, 5072, 21, 4890, 587, 558, 576, 504, 5043, 10651, 10738, 5872, 5864, 4886, 4552, 4461, 5990, 5993, 2]
+// Dependencies: [109, 19, 17, 2065, 2087, 6035, 4760, 1390, 10218, 5967, 21, 5092, 587, 558, 576, 504, 5421, 10284, 11599, 8211, 8203, 5088, 4793, 4702, 6177, 6180, 2]
 
-// Module 10650 (ChannelRow)
+// Module 10283 (ChannelRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import DateUtils from "DateUtils" /* 4552 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useChannelName from "useChannelName" /* 5043 */;
-import ReadStateConstants from "ReadStateConstants" /* 5072 */;
-import UserRowConstants from "UserRowConstants" /* 10592 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10651 */;
-import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 10738 */;
+import DateUtils from "DateUtils" /* 4793 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import useChannelName from "useChannelName" /* 5421 */;
+import ReadStateConstants from "ReadStateConstants" /* 5967 */;
+import UserRowConstants from "UserRowConstants" /* 10218 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10284 */;
+import GuildIconWithChannelType2 from "GuildIconWithChannelType" /* 11599 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const useChannelNameDefault = useChannelName;
-let _require, channel, dependencyMap, importDefault, tmp4;
+let _require, dependencyMap, importDefault, tmp4;
 
 let closure_14;
 let closure_15;
@@ -42,7 +42,7 @@ const ReadStateTypes = ReadStateConstants.ReadStateTypes;
 let obj = { guildIcon: { flexShrink: 0, flexGrow: 0 }, subLabel: { display: "flex", flexDirection: "row", alignItems: "center" }, subLabelIcon: { width: 12, height: 12, marginRight: 2 }, subLabelSeparator: obj2, threadName: { flexShrink: 1 } };
 obj2 = { marginHorizontal: nativeDefault.space.PX_4 };
 let closure_17 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelRow(channel) {
   let NONE;
   let closure_1;
   let closure_2;
@@ -251,7 +251,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
             return closure_9.lastMessageTimestamp(closure_0.id, ReadStateTypes.CHANNEL);
           }
         }
-        let obj2 = { "aria-label": "", style: null, guild: stateFromStores, channel: tmp4, size: tmp(10738).GuildIconWithChannelTypeSizes.SMALL_32 };
+        let obj2 = { "aria-label": "", style: null, guild: stateFromStores, channel: tmp4, size: tmp(11599).GuildIconWithChannelTypeSizes.SMALL_32 };
         class J {
           constructor() {
             if (null == closure_1) {
@@ -267,7 +267,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
             return;
           }
         }
-        const GuildIconWithChannelType = tmp(10738).GuildIconWithChannelType;
+        const GuildIconWithChannelType = tmp(11599).GuildIconWithChannelType;
         tmp34 = closure_14(GuildIconWithChannelType, obj2);
       }
       cResult[26] = tmp4;
@@ -306,7 +306,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[20] = tmp4;
   cResult[21] = tmp7;
   cResult[22] = V;
-}) : ((channel) => {
+}) : (function ChannelRow(channel) {
   let tmp17Result;
   let tmp18;
   channel = channel.channel;
@@ -377,7 +377,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     if (null != stateFromStores) {
       const obj = { "aria-label": "", style: closure_7.guildIcon, guild: tmp, channel, size: GuildIconWithChannelType2.GuildIconWithChannelTypeSizes.SMALL_32 };
       const GuildIconWithChannelType = GuildIconWithChannelType2.GuildIconWithChannelType;
-      tmp2 = authStore2(GuildIconWithChannelType, obj);
+      tmp2 = syncedClientThemes(GuildIconWithChannelType, obj);
     }
     return tmp2;
   }, items5);
@@ -418,15 +418,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         }
       }
       if (channel.isForumPost()) {
-        TextIcon = tmp3(5872).ForumIcon;
+        TextIcon = tmp3(8211).ForumIcon;
       } else {
-        TextIcon = tmp3(5864).TextIcon;
+        TextIcon = tmp3(8203).TextIcon;
       }
       const obj = { style: closure_7.subLabel, children: items };
       const obj2 = { color: nativeDefault.colors.TEXT_SUBTLE, style: closure_7.subLabelIcon };
-      items = [authStore2(TextIcon, obj2), , ];
+      items = [syncedClientThemes(TextIcon, obj2), , ];
       const obj3 = { style: closure_7.threadName, variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, ellipsizeMode: "tail", children: stateFromStores1 };
-      items[1] = authStore2(Text_Text.Text, obj3);
+      items[1] = syncedClientThemes(Text_Text.Text, obj3);
       let tmp5Result = null;
       const tmp6 = View;
       const tmp7 = closure_7;
@@ -434,15 +434,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       if (null != stateFromStores2) {
         const obj4 = { children: items1 };
         const obj5 = { style: tmp7.subLabelSeparator, variant: "text-xs/medium", color: "text-subtle", children: "\u2022" };
-        items1 = [authStore2(Text_Text.Text, obj5), ];
-        const obj6 = { variant: "text-xs/medium", color: "text-subtle", children: obj7.calendarFormatCompact(tmp9(4461)(tmp14)) };
+        items1 = [syncedClientThemes(Text_Text.Text, obj5), ];
+        const obj6 = { variant: "text-xs/medium", color: "text-subtle", children: obj7.calendarFormatCompact(tmp9(4702)(tmp14)) };
         const Text = Text_Text.Text;
         obj7 = DateUtils;
-        items1[1] = authStore2(Text, obj6);
-        tmp5Result = tmp5(closure_15, obj4);
+        items1[1] = syncedClientThemes(Text, obj6);
+        tmp5Result = tmp5(authStore3, obj4);
       }
       items[2] = tmp5Result;
-      return authStore3(tmp6, obj);
+      return authStore4(tmp6, obj);
     }
   }, items7);
   const memo3 = obj4.useMemo(() => {

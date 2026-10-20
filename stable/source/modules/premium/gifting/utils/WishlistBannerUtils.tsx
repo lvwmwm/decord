@@ -1,10 +1,10 @@
-// Module ID: 10530
-// Function ID: 10531
+// Module ID: 10156
+// Function ID: 10157
 // Name: WishlistBannerUtils
-// Dependencies: [19, 1126, 8430, 6727, 558, 576, 2]
+// Dependencies: [19, 1126, 8975, 6931, 558, 576, 2]
 // Exports: getBannerMode
 
-// Module 10530 (WishlistBannerUtils)
+// Module 10156 (WishlistBannerUtils)
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
@@ -62,7 +62,7 @@ obj6 = {
   showIcons: false
 };
 intl4 = intl5.intl;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((wishlistInDmLength) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWishlistBannerConfig(wishlistInDmLength) {
   let SHOP_ONLY;
   let displayItems;
   let intl;
@@ -157,7 +157,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((wishlistInDmLength) 
     }
   }
   return tmp9;
-}) : ((totalUnownedWishlistItemCount) => {
+}) : (function useWishlistBannerConfig(totalUnownedWishlistItemCount) {
   totalUnownedWishlistItemCount = totalUnownedWishlistItemCount.totalUnownedWishlistItemCount;
   const wishlistInDmLength = totalUnownedWishlistItemCount.wishlistInDmLength;
   const displayItems = totalUnownedWishlistItemCount.displayItems;

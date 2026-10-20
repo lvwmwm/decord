@@ -1,23 +1,21 @@
-// Module ID: 16516
-// Function ID: 16517
+// Module ID: 17031
+// Function ID: 17032
 // Name: HomeWelcomeMessage
-// Dependencies: [19, 17, 2074, 1377, 5077, 21, 4890, 587, 558, 576, 573, 7857, 7899, 6814, 7858, 4722, 1103, 7929, 1188, 5042, 4886, 9233, 10842, 4589, 2]
+// Dependencies: [19, 17, 2087, 1390, 6926, 21, 5092, 587, 558, 576, 573, 8306, 8349, 7011, 8307, 4962, 1103, 8378, 1200, 5409, 5088, 8618, 10532, 4827, 2]
 
-// Module 16516 (HomeWelcomeMessage)
+// Module 17031 (HomeWelcomeMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7858 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8307 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5077 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import UserStore from "UserStore" /* 1390 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6926 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let guildId;
 
 let c9;
 let metroImportAll;
@@ -62,7 +60,7 @@ size1 = { position: "absolute", top: -2, zIndex: -1, left: 26, width: 44, height
 obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, paddingLeft: 8 };
 obj5 = { color: nativeDefault.colors.TEXT_DEFAULT };
 let closure_10 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeWelcomeMessage(guildId) {
   let currentUser;
   let stateFromStores2;
   let tmp11;
@@ -240,7 +238,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       tmp27 = cResult[12];
     }
     if (cResult[13] !== guildId) {
-      class M {
+      class E {
         constructor() {
           return GuildStore.getGuild(guildId);
         }
@@ -260,10 +258,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           return currentUser.getCurrentUser();
         }
       }
-      cResult[14] = M;
-      tmp29 = M;
+      cResult[14] = E;
+      tmp29 = E;
     } else {
-      class M {
+      class E {
         constructor() {
           return GuildStore.getGuild(guildId);
         }
@@ -273,20 +271,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const stateFromStores3 = tmpResult7.useStateFromStores(tmp27, tmp29);
     const tmp31 = cResult[15];
     if (stateFromStores1 != null) {
-      class M {
+      class E {
         constructor() {
           return GuildStore.getGuild(guildId);
         }
       }
     }
     if (tmp31 !== undefined) {
-      class M {
+      class E {
         constructor() {
           return GuildStore.getGuild(guildId);
         }
       }
       if (stateFromStores1 != null) {
-        class M {
+        class E {
           constructor() {
             return GuildStore.getGuild(guildId);
           }
@@ -308,7 +306,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         }
       }
       if (stateFromStores1 != null) {
-        class M {
+        class E {
           constructor() {
             return GuildStore.getGuild(guildId);
           }
@@ -317,14 +315,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       cResult[15] = tmp35;
       cResult[16] = tmp34;
     } else {
-      class M {
+      class E {
         constructor() {
           return GuildStore.getGuild(guildId);
         }
       }
     }
     if (cResult[17] === guildId) {
-      class M {
+      class E {
         constructor() {
           return GuildStore.getGuild(guildId);
         }
@@ -346,7 +344,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         }
       }
       if (cResult[20] === stateFromStores2) {
-        class M {
+        class E {
           constructor() {
             return GuildStore.getGuild(guildId);
           }
@@ -367,7 +365,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
         }
         if (cResult[23] === stateFromStores2) {
-          class M {
+          class E {
             constructor() {
               return GuildStore.getGuild(guildId);
             }
@@ -389,7 +387,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
           const name = obj8.useName(stateFromStores);
           if (null != stateFromStores1) {
-            class M {
+            class E {
               constructor() {
                 return GuildStore.getGuild(guildId);
               }
@@ -398,7 +396,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           return null;
         }
         const items5 = [stateFromStores2, stateFromStores3];
-        class W {
+        class H {
           constructor() {
             let getAvatarURL;
             let id;
@@ -415,7 +413,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               if (stateFromStores3 != null) {
                 id2 = tmp5.id;
               }
-              const obj2 = { dispatchWait: true, guildId: id2 };
+              const obj2 = { guildId: id2 };
               tmp4(id, avatarURL, obj2);
             }
           }
@@ -425,13 +423,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
       cResult[20] = stateFromStores2;
       if (stateFromStores3 != null) {
-        class M {
+        class E {
           constructor() {
             return GuildStore.getGuild(guildId);
           }
         }
       }
-      class W {
+      class H {
         constructor() {
           let getAvatarURL;
           let id;
@@ -448,13 +446,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             if (stateFromStores3 != null) {
               id2 = tmp5.id;
             }
-            const obj2 = { dispatchWait: true, guildId: id2 };
+            const obj2 = { guildId: id2 };
             tmp4(id, avatarURL, obj2);
           }
         }
       }
       cResult[21] = undefined;
-      cResult[22] = W;
+      cResult[22] = H;
     }
     let obj2 = {};
     obj2[guildId] = tmp33;
@@ -467,7 +465,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[9] = tmp21Result;
   cResult[10] = obj3;
   tmp24 = obj3;
-}) : ((guildId) => {
+}) : (function HomeWelcomeMessage(guildId) {
   let currentUser;
   let items7;
   let items8;
@@ -538,7 +536,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       if (stateFromStores3 != null) {
         id2 = tmp5.id;
       }
-      const obj2 = { dispatchWait: true, guildId: id2 };
+      const obj2 = { guildId: id2 };
       tmp4(id, avatarURL, obj2);
     }
   }, items4);

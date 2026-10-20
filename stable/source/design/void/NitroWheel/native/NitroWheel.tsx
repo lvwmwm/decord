@@ -1,21 +1,19 @@
-// Module ID: 13940
-// Function ID: 13941
+// Module ID: 14435
+// Function ID: 14436
 // Name: NitroWheel
-// Dependencies: [19, 21, 558, 576, 5974, 8865, 2]
+// Dependencies: [19, 21, 558, 576, 6157, 9500, 2]
 
-// Module 13940 (NitroWheel)
+// Module 14435 (NitroWheel)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8865 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9500 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let style;
-
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroWheel(style) {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -30,7 +28,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : ((style) => {
+}) : (function NitroWheel(style) {
   style = style.style;
   FastImageDefault;
   return <tmp source={AssetRegistryDefault} style={style} resizeMode="contain" />;

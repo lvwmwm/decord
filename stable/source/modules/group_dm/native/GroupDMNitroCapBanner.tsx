@@ -1,18 +1,18 @@
-// Module ID: 16876
-// Function ID: 16877
+// Module ID: 17465
+// Function ID: 17466
 // Name: GroupDMNitroCapBanner
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4580, 13224, 5605, 8313, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4818, 13715, 5391, 9031, 2]
 
-// Module 16876 (GroupDMNitroCapBanner)
+// Module 17465 (GroupDMNitroCapBanner)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4580 */;
-import LinearGradientDefault from "LinearGradient" /* 5605 */;
-import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 13224 */;
+import useToken from "useToken" /* 4818 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
+import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 13715 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp2;
-const NitroWheelIcon2 = tmp2(8313);
+const NitroWheelIcon2 = tmp2(9031);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const locations = [0.0065, 0.5046, 0.9196];
@@ -40,7 +40,7 @@ obj4 = { width: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, alignItems: "c
 obj5 = { flexDirection: "row", alignItems: "center", marginStart: nativeDefault.space.PX_8 };
 obj6 = { borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_9 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitroCapBanner(arg0) {
   let NitroWheelIcon;
   let children;
   let items1;
@@ -207,7 +207,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (tmp28) {
             const obj11 = { style: tmp5.iconContainer, children: hasOwnProperty(NitroWheelIcon, obj12) };
             obj12 = { size: "md", color: nativeDefault.colors.WHITE };
-            NitroWheelIcon = tmp(8313).NitroWheelIcon;
+            NitroWheelIcon = tmp(9031).NitroWheelIcon;
             tmp28 = hasOwnProperty(React3, obj11);
           }
           cResult[19] = undefined === showLeadingIcon || showLeadingIcon;
@@ -239,7 +239,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = wrapperStyle;
   cResult[2] = items5;
   tmp9 = items5;
-}) : ((showLeadingIcon) => {
+}) : (function GroupDMNitroCapBanner(showLeadingIcon) {
   let NitroWheelIcon;
   let children;
   let items;

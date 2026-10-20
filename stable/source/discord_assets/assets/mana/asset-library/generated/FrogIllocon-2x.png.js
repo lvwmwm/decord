@@ -1,8 +1,8 @@
-// Module ID: 16681
-// Function ID: 16682
+// Module ID: 17242
+// Function ID: 17243
 // Dependencies: [2]
 
-// Module 16681
+// Module 17242
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FrogIllocon-2x.png.js");

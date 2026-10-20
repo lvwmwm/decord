@@ -1,20 +1,20 @@
-// Module ID: 16480
-// Function ID: 16481
+// Module ID: 17000
+// Function ID: 17001
 // Name: useComponentRenderSpan
-// Dependencies: [19, 3, 558, 576, 16481, 16482, 16483, 16486, 2]
+// Dependencies: [19, 3, 558, 576, 11491, 11495, 11492, 17001, 2]
 // Exports: useNavigationTTIRegionMeasurement
 
-// Module 16480 (useComponentRenderSpan)
+// Module 17000 (useComponentRenderSpan)
 import LoggerDefault from "Logger" /* 3 */;
-import NavigationSpanTypes from "NavigationSpanTypes" /* 16482 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 16483 */;
-import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 16486 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 11492 */;
+import NavigationSpanTypes from "NavigationSpanTypes" /* 11495 */;
+import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 17001 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_12, current, ref, ref2, ref3;
+let _require, current, ref, ref2, ref3;
 
 let tmp2 = new LoggerDefault("NavTTISurface");
 let closure_4 = tmp2;
@@ -65,7 +65,7 @@ export const useNavigationTTIRegionMeasurement = function useNavigationTTIRegion
       if (cResult[1] === exclude) {
         tmp20 = cResult[2];
       }
-      closure_12 = tmp20;
+      let closure_12 = tmp20;
       if (cResult[3] === activeTraceId) {
         if (cResult[4] === flag2) {
           let tmp21;

@@ -1,10 +1,10 @@
-// Module ID: 16623
-// Function ID: 16624
+// Module ID: 17161
+// Function ID: 17162
 // Name: conjureDatabaseLock
 // Dependencies: [5, 19, 558, 576, 2]
 // Exports: withConjureDatabaseLock
 
-// Module 16623 (conjureDatabaseLock)
+// Module 17161 (conjureDatabaseLock)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -110,7 +110,7 @@ let obj = function _withConjureDatabaseLock() {
 };
 const set = new Set();
 const set1 = new Set();
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureDatabaseBusy(arg0) {
   let closure_0;
   let tmp2;
   _require = arg0;
@@ -127,7 +127,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return react.useSyncExternalStore(subscribe, tmp2);
-}) : ((arg0) => {
+}) : (function useConjureDatabaseBusy(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   return react.useSyncExternalStore(subscribe, react.useCallback(() => set.has(closure_0), items));

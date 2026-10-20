@@ -1,25 +1,23 @@
-// Module ID: 17039
-// Function ID: 17040
+// Module ID: 17627
+// Function ID: 17628
 // Name: SearchNavigatorPreviewHeader
-// Dependencies: [19, 17, 21, 4890, 558, 576, 13104, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 12859, 2]
 
-// Module 17039 (SearchNavigatorPreviewHeader)
+// Module 17627 (SearchNavigatorPreviewHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 13104 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 12859 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channelId;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ container: { flexShrink: 1, paddingRight: 12, flexDirection: "row", alignItems: "center" } });
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SearchNavigatorPreviewHeader(channelId) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(5);
@@ -45,7 +43,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   cResult[3] = tmp4;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((channelId) => {
+}) : (function SearchNavigatorPreviewHeader(channelId) {
   channelId = channelId.channelId;
   return <View style={closure_5().container}>{jsx(ChannelHeaderDefault, { channelId, screenIndex: "none", pressable: false, isGuildMemberCountVisible: false, isNavigationScreen: true })}</View>;
 }));

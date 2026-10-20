@@ -1,19 +1,19 @@
-// Module ID: 14709
-// Function ID: 14710
+// Module ID: 15185
+// Function ID: 15186
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 7844, 14710, 6736, 14711, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8293, 15186, 6940, 15187, 5088, 2]
 
-// Module 14709 (FamilyCenterActivityPurchaseRow)
+// Module 15185 (FamilyCenterActivityPurchaseRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import PriceUtils from "PriceUtils" /* 6736 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 7844 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 14710 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import PriceUtils from "PriceUtils" /* 6940 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8293 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 15186 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,13 +21,13 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp5;
-const FamilyCenterActivityItemPreviewDefault = tmp5(14711);
+const FamilyCenterActivityItemPreviewDefault = tmp5(15187);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: obj2, textContainer: { display: "flex", flexDirection: "column", flexShrink: 1 } };
 obj2 = { display: "flex", flexDirection: "row", alignItems: "center", borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1, paddingVertical: 12 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterActivityPurchaseRow(arg0) {
   let currency;
   let displayName;
   let isSubscription;
@@ -161,7 +161,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp7;
   cResult[2] = purchaseDisplayInfo;
   tmp8 = purchaseDisplayInfo;
-}) : ((arg0) => {
+}) : (function FamilyCenterActivityPurchaseRow(arg0) {
   let currency;
   let displayName;
   let isSubscription;

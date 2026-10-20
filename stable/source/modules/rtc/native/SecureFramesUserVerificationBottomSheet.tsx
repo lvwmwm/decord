@@ -1,32 +1,31 @@
-// Module ID: 9383
-// Function ID: 9384
+// Module ID: 8842
+// Function ID: 8843
 // Name: SecureFramesUserVerificationBottomSheet
-// Dependencies: [32, 19, 17, 4913, 1377, 9366, 1085, 21, 4890, 587, 558, 576, 9370, 9384, 9345, 9373, 504, 9376, 7852, 5042, 9364, 9375, 8451, 9385, 4854, 4568, 4792, 1126, 6644, 6696, 4886, 9377, 5594, 5593, 6645, 2]
+// Dependencies: [32, 19, 17, 5110, 1390, 8825, 1085, 21, 5092, 587, 558, 576, 8830, 8843, 8805, 8833, 504, 8835, 8301, 5409, 8824, 8827, 8844, 8846, 5056, 4809, 1126, 6839, 6894, 5088, 8836, 5379, 5377, 6840, 2]
 
-// Module 9383 (SecureFramesUserVerificationBottomSheet)
+// Module 8842 (SecureFramesUserVerificationBottomSheet)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4792 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import UserActionCreators from "UserActionCreators" /* 7852 */;
-import CheckmarkLargeBoldIcon2 from "CheckmarkLargeBoldIcon" /* 8451 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9364 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9375 */;
-import XLargeBoldIcon2 from "XLargeBoldIcon" /* 9385 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import UserActionCreators from "UserActionCreators" /* 8301 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 8824 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 8827 */;
+import CheckmarkLargeBoldIcon2 from "CheckmarkLargeBoldIcon" /* 8844 */;
+import XLargeBoldIcon2 from "XLargeBoldIcon" /* 8846 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import UserStore from "UserStore" /* 1377 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9366 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import UserStore from "UserStore" /* 1390 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 8825 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let BottomSheet, userId;
+let BottomSheet;
 
 let c10;
 let c9;
@@ -44,7 +43,7 @@ const AnalyticsLocations = Constants.AnalyticsLocations;
 let obj = { iconContainer: size, icon: { height: 48, width: 48 }, content: { padding: 16, justifyContent: "center", alignItems: "center" }, subtitle: { textAlign: "center", marginTop: 8, marginBottom: 40 }, buttons: { marginTop: 40 }, helpMessage: { marginTop: 16 } };
 size = { height: 80, width: 80, borderRadius: 40, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, marginBottom: 16 };
 let closure_15 = createStyles.createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFramesUserVerificationBottomSheet(userId) {
   let connected;
   let fingerprint;
   let fingerprint2;
@@ -302,7 +301,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[5] = fingerprintUserKey;
   cResult[6] = userId;
   cResult[7] = obj5;
-}) : ((userId) => {
+}) : (function SecureFramesUserVerificationBottomSheet(userId) {
   let BottomSheetTitleHeader;
   let closure_3;
   let intl;
@@ -311,7 +310,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   let obj11;
   let tmp17;
   let tmp18;
-  const f100415 = () => {
+  const f99827 = () => {
     const obj = SecureFramesUtils;
     return obj.getUserVerifyStateText(memo, name);
   };
@@ -395,8 +394,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   const name = obj9.useName(guildId, channelId, stateFromStores2);
   const items5 = [memo, name];
   const items6 = [channelId, memo, userId];
-  [tmp17, tmp18] = _slicedToArray(fingerprintUserKey.useMemo(f100415, items5), 2);
-  const tmp16 = _slicedToArray(fingerprintUserKey.useMemo(f100415, items5), 2);
+  [tmp17, tmp18] = _slicedToArray(fingerprintUserKey.useMemo(f99827, items5), 2);
+  const tmp16 = _slicedToArray(fingerprintUserKey.useMemo(f99827, items5), 2);
   const effect1 = fingerprintUserKey.useEffect(() => {
     if (stateFromStores.OTHER_USER_ALREADY_VERIFIED !== memo) {
       if (stateFromStores.MATCH !== memo) {
@@ -433,18 +432,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       obj.addVerification(userId, fingerprintUserKey, isOtherUserKeyPersistent, channelId, AnalyticsLocations.DEEP_LINK);
       const obj2 = ActionSheetActionCreatorsDefault;
       obj2.hideActionSheet();
-      const obj3 = { key: unpackModuleId, iconColor: "text-feedback-positive", IconComponent: CircleCheckIcon.CircleCheckIcon, content: intl.formatToPlainString(intl3.t.Gwu134, obj4) };
+      const obj3 = { text: intl.formatToPlainString(intl3.t.Gwu134, obj4), variant: "success" };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = intl3.intl;
       obj4 = { username: name };
-      open(obj3);
+      open(unpackModuleId, obj3);
     }
   }, items8);
   const obj10 = { startExpanded: true, header: name(BottomSheetTitleHeader, obj11), children: null };
-  BottomSheet = userId(fingerprint[34]).BottomSheet;
-  obj11 = { title: null, leading: name(userId(fingerprint[29]).ActionSheetCloseButton, { onPress: callback }) };
-  BottomSheetTitleHeader = userId(fingerprint[28]).BottomSheetTitleHeader;
+  BottomSheet = userId(fingerprint[33]).BottomSheet;
+  obj11 = { title: null, leading: name(userId(fingerprint[28]).ActionSheetCloseButton, { onPress: callback }) };
+  BottomSheetTitleHeader = userId(fingerprint[27]).BottomSheetTitleHeader;
   const obj12 = { style: tmp.content, children: null };
   const obj13 = { style: tmp.iconContainer, children: null };
   const tmp14 = channelId;
@@ -452,23 +451,23 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     obj13.children = memo1;
     const items9 = [name(isSecureFramesUIEnabled, obj13), , , , ];
     const obj14 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: tmp17 };
-    items9[1] = name(tmp2(fingerprint[30]).Text, obj14);
+    items9[1] = name(tmp2(fingerprint[29]).Text, obj14);
     const obj15 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: tmp18 };
-    items9[2] = name(tmp2(fingerprint[30]).Text, obj15);
+    items9[2] = name(tmp2(fingerprint[29]).Text, obj15);
     const obj16 = { style: tmp.helpMessage, userId, userKey: fingerprintUserKey };
-    items9[3] = name(tmp14(fingerprint[31]), obj16);
+    items9[3] = name(tmp14(fingerprint[30]), obj16);
     const obj17 = { spacing: 12, style: tmp.buttons, children: items10 };
-    const Stack = tmp2(tmp3[33]).Stack;
-    const obj18 = { variant: "primary", onPress: callback1, text: intl.string(tmp2(fingerprint[27]).t["0tvNAn"]), disabled: loading2 };
-    const Button = tmp2(tmp3[32]).Button;
-    intl = tmp2(tmp3[27]).intl;
+    const Stack = tmp2(tmp3[32]).Stack;
+    const obj18 = { variant: "primary", onPress: callback1, text: intl.string(tmp2(fingerprint[26]).t["0tvNAn"]), disabled: loading2 };
+    const Button = tmp2(tmp3[31]).Button;
+    intl = tmp2(tmp3[26]).intl;
     if (!loading2) {
       loading2 = memo !== stateFromStores.MATCH;
     }
     items10 = [name(Button, obj18), ];
-    const obj19 = { variant: "secondary", onPress: callback, text: intl2.string(tmp2(fingerprint[27]).t["ETE/oC"]) };
-    const Button2 = tmp2(tmp3[32]).Button;
-    intl2 = tmp2(tmp3[27]).intl;
+    const obj19 = { variant: "secondary", onPress: callback, text: intl2.string(tmp2(fingerprint[26]).t["ETE/oC"]) };
+    const Button2 = tmp2(tmp3[31]).Button;
+    intl2 = tmp2(tmp3[26]).intl;
     items10[1] = name(Button2, obj19);
     items9[4] = closure_14(Stack, obj17);
     obj12.children = items9;

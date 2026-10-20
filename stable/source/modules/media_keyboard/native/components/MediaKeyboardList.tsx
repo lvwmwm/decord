@@ -1,38 +1,38 @@
-// Module ID: 10374
-// Function ID: 10375
+// Module ID: 10029
+// Function ID: 10030
 // Name: MediaKeyboardList
-// Dependencies: [32, 19, 17, 1485, 1614, 6646, 5099, 21, 4890, 587, 558, 4612, 576, 10375, 10378, 7282, 1487, 1618, 1484, 6068, 6112, 9074, 7286, 12, 10379, 10386, 10388, 9925, 10389, 7283, 1126, 6569, 2]
+// Dependencies: [32, 19, 17, 1498, 1627, 6841, 7478, 21, 5092, 587, 558, 4850, 576, 10030, 10033, 7501, 1500, 1631, 1497, 6259, 6307, 9576, 7766, 12, 10034, 10041, 10043, 9524, 10044, 7502, 1126, 6761, 2]
 
-// Module 10374 (MediaKeyboardList)
+// Module 10029 (MediaKeyboardList)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1614 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5099 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6646 */;
-import react_nativeDefault from "react-native" /* 7282 */;
-import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9074 */;
-import DeviceMediaDefault from "DeviceMedia" /* 10375 */;
-import MediaKeyboardItem from "MediaKeyboardItem" /* 10379 */;
-import MediaKeyboardFooterDefault from "MediaKeyboardFooter" /* 10386 */;
-import MediaKeyboardLimitedPickerNoticeDefault from "MediaKeyboardLimitedPickerNotice" /* 10388 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7478 */;
+import react_nativeDefault from "react-native" /* 7501 */;
+import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9576 */;
+import DeviceMediaDefault from "DeviceMedia" /* 10030 */;
+import MediaKeyboardItem from "MediaKeyboardItem" /* 10034 */;
+import MediaKeyboardFooterDefault from "MediaKeyboardFooter" /* 10041 */;
+import MediaKeyboardLimitedPickerNoticeDefault from "MediaKeyboardLimitedPickerNotice" /* 10043 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DimensionsStore from "DimensionsStore" /* 1485 */;
-import createStyles from "createStyles" /* 4890 */;
+import DimensionsStore from "DimensionsStore" /* 1498 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const MediaKeyboardItemDefault = MediaKeyboardItem;
-let _require, channel, closure_0, nextPromise, obj1, refreshAssetsResult;
+let _require;
 
 let NativeEventEmitter;
 let NativeModules;
 let obj2;
 let tmp2;
-const ReanimatedRexport = tmp2(4612);
+const ReanimatedRexport = tmp2(4850);
 ({ NativeEventEmitter, NativeModules } = react_native);
 let closure_6 = MediaKeyboardConstants.InAppCameraUsedCameraPreviewTypes;
 let closure_7 = ActionSheetConstants.ACTION_SHEET_START_HEIGHT_RATIO;
@@ -48,7 +48,7 @@ const __initData2 = { code: "function MediaKeyboardListTsx2(currentIndex){const{
 const __initData3 = { code: "function MediaKeyboardListTsx3(){const{animatedIndex}=this.__closure;return animatedIndex.get();}" };
 const __initData4 = { code: "function MediaKeyboardListTsx4(currentIndex){const{latch,runOnJS,setIsExpanded}=this.__closure;if(currentIndex>0.1&&!latch.get()){latch.set(true);runOnJS(setIsExpanded)(true);}}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((animatedIndex) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasMediaKeyboardBottomSheetExpanded(animatedIndex) {
   let first;
   let sharedValue;
   let tmp3;
@@ -78,7 +78,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((animatedIndex)
   ({ latch: sharedValue, runOnJS: require("ReanimatedRexport").runOnJS, setIsExpanded: tmp3 });
   const animatedReaction = obj2.useAnimatedReaction(fn, fn2);
   return first;
-}) : ((animatedIndex) => {
+}) : (function useHasMediaKeyboardBottomSheetExpanded(animatedIndex) {
   let first;
   let sharedValue;
   let tmp3;
@@ -114,7 +114,7 @@ let closure_19 = { code: "function MediaKeyboardListTsx6(snapPoints,previous){co
 let closure_20 = { code: "function MediaKeyboardListTsx7(){const{animatedSnapPoints}=this.__closure;return animatedSnapPoints.get();}" };
 let __initData5 = { code: "function MediaKeyboardListTsx8(snapPoints,previous){const{cheapWorkletArrayShallowEqual,runOnJS,setBottomSheetState,windowHeight,computedStartHeight,maxDynamicContentSize}=this.__closure;var _snapPoints$,_snapPoints;if(cheapWorkletArrayShallowEqual(snapPoints,previous!==null&&previous!==void 0?previous:undefined))return;runOnJS(setBottomSheetState)({minimum:windowHeight-((_snapPoints$=snapPoints[0])!==null&&_snapPoints$!==void 0?_snapPoints$:computedStartHeight),maximum:windowHeight-((_snapPoints=snapPoints[snapPoints.length-1])!==null&&_snapPoints!==void 0?_snapPoints:maxDynamicContentSize)});}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaKeyboardList(channel) {
   let allowCamera;
   let handleCameraPress;
   let onHeightChange;
@@ -164,12 +164,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     class B {
       constructor() {
-        obj = closure_1(closure_2[15]);
-        photoAuthorization = obj.requestPhotoAuthorization();
-        nextPromise = photoAuthorization.then((result) => {
+        const obj = react_nativeDefault;
+        const photoAuthorization = obj.requestPhotoAuthorization();
+        photoAuthorization.then((result) => {
           closure_1_15(result);
         });
-        return;
       }
     }
     const items = [];
@@ -180,12 +179,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   } else {
     class B {
       constructor() {
-        obj = closure_1(closure_2[15]);
-        photoAuthorization = obj.requestPhotoAuthorization();
-        nextPromise = photoAuthorization.then((result) => {
+        const obj = react_nativeDefault;
+        const photoAuthorization = obj.requestPhotoAuthorization();
+        photoAuthorization.then((result) => {
           closure_1_15(result);
         });
-        return;
       }
     }
     tmp10 = cResult[2];
@@ -194,53 +192,46 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   if (cResult[3] === extensions) {
     class B {
       constructor() {
-        obj = closure_1(closure_2[15]);
-        photoAuthorization = obj.requestPhotoAuthorization();
-        nextPromise = photoAuthorization.then((result) => {
+        const obj = react_nativeDefault;
+        const photoAuthorization = obj.requestPhotoAuthorization();
+        photoAuthorization.then((result) => {
           closure_1_15(result);
         });
-        return;
       }
     }
   }
-  class J {
-    constructor() {
-      if (closure_14 !== includedUploadIds.AUTHORIZED) {
-        if (tmp !== includedUploadIds.LIMITED) {
-          return;
+  const fn2 = function z() {
+    let ref;
+    let ref2;
+    let obj = draftType(onPressCamera[13]);
+    let obj2 = { batchSize: itemsPageSizeRef.current, extensions };
+    obj.refreshAssets(obj2);
+    let addListenerResult;
+    const obj3 = uploadLimit;
+    if (uploadLimit != null) {
+      addListenerResult = obj3.addListener(disableWhenReachedLimit, () => {
+        if (ref.current) {
+          const obj2 = { batchSize: ref2.current, extensions };
+          const obj = draftType(onPressCamera[13]);
+          obj.refreshAssets(obj2);
         }
-      }
-      obj = draftType(onPressCamera[13]);
-      obj1 = { batchSize: itemsPageSizeRef.current, extensions };
-      refreshAssetsResult = obj.refreshAssets(obj1);
-      obj3 = uploadLimit;
-      addListenerResult = undefined;
-      if (uploadLimit != null) {
-        tmp4 = disableWhenReachedLimit;
-        addListenerResult = obj3.addListener(disableWhenReachedLimit, () => {
-          if (ref.current) {
-            const obj2 = { batchSize: ref2.current, extensions };
-            const obj = draftType(onPressCamera[13]);
-            obj.refreshAssets(obj2);
-          }
-        });
-      }
-      closure_0 = addListenerResult;
-      return () => {
-        const obj = channel;
-        if (channel != null) {
-          obj.remove();
-        }
-      };
+      });
     }
-  }
+    channel = addListenerResult;
+    return () => {
+      const obj = channel;
+      if (channel != null) {
+        obj.remove();
+      }
+    };
+  };
   const items1 = [first1, itemsPageSizeRef, extensions];
   cResult[3] = extensions;
   cResult[4] = itemsPageSizeRef;
   cResult[5] = first1;
-  cResult[6] = J;
+  cResult[6] = fn2;
   cResult[7] = items1;
-}) : ((channel) => {
+}) : (function MediaKeyboardList(channel) {
   let c21;
   let intl;
   let items10;

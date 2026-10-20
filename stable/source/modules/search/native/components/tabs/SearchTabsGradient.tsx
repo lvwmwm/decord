@@ -1,25 +1,23 @@
-// Module ID: 16900
-// Function ID: 16901
+// Module ID: 17489
+// Function ID: 17490
 // Name: SearchTabsGradient
-// Dependencies: [19, 21, 558, 576, 4580, 587, 4727, 12425, 2]
+// Dependencies: [19, 21, 558, 576, 4818, 587, 4967, 12529, 2]
 
-// Module 16900 (SearchTabsGradient)
+// Module 17489 (SearchTabsGradient)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4580 */;
-import TabsGradientDefault from "TabsGradient" /* 12425 */;
+import useToken from "useToken" /* 4818 */;
+import TabsGradientDefault from "TabsGradient" /* 12529 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let state;
-
 let tmp;
-const ColorUtils = tmp(4727);
+const ColorUtils = tmp(4967);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGradientColors() {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(5);
@@ -46,9 +44,9 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp5;
   cResult[4] = items;
   tmp7 = items;
-}) : (() => {
+}) : (function useGradientColors() {
   let token;
-  let obj = token(4580);
+  let obj = token(4818);
   token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   let items = [token];
   return react.useMemo(() => {
@@ -59,7 +57,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchTabsGradient(state) {
   const obj = react2;
   const cResult = obj.c(3);
   state = state.state;
@@ -76,7 +74,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   cResult[1] = state;
   cResult[2] = tmp5;
   tmp4 = tmp5;
-}) : ((state) => {
+}) : (function SearchTabsGradient(state) {
   state = state.state;
   const colors = closure_5();
   return jsx(TabsGradientDefault, { state, colors });

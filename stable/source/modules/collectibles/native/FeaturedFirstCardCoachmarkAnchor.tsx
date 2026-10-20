@@ -1,24 +1,22 @@
-// Module ID: 15728
-// Function ID: 15729
+// Module ID: 16234
+// Function ID: 16235
 // Name: FeaturedFirstCardCoachmarkAnchor
-// Dependencies: [19, 17, 21, 558, 576, 15729, 2]
+// Dependencies: [19, 17, 21, 558, 576, 16235, 2]
 
-// Module 15728 (FeaturedFirstCardCoachmarkAnchor)
+// Module 16234 (FeaturedFirstCardCoachmarkAnchor)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import WishlistButtonCoachmarkDefault from "WishlistButtonCoachmark" /* 15729 */;
+import WishlistButtonCoachmarkDefault from "WishlistButtonCoachmark" /* 16235 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let children;
-
 let hasOwnProperty;
 let metroRequire;
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FeaturedFirstCardCoachmarkAnchor(children) {
   let first;
   let items;
   let tmp12;
@@ -54,7 +52,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     tmp12 = cResult[3];
   }
   return tmp12;
-}) : ((children) => {
+}) : (function FeaturedFirstCardCoachmarkAnchor(children) {
   let items;
   children = children.children;
   const ref = react.useRef(null);

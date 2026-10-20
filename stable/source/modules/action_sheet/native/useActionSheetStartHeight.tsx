@@ -1,12 +1,12 @@
-// Module ID: 10077
-// Function ID: 10078
+// Module ID: 9718
+// Function ID: 9719
 // Name: useActionSheetStartHeight
-// Dependencies: [6646, 558, 1484, 2]
+// Dependencies: [6841, 558, 1497, 2]
 // Exports: default
 
-// Module 10077 (useActionSheetStartHeight)
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6646 */;
+// Module 9718 (useActionSheetStartHeight)
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,4 +15,6 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("modules/action_sheet/native/useActionSheetStartHeight.tsx");
 
-export default () => useWindowDimensionsDefault().height * closure_2;
+export default function useActionSheetHeight() {
+  return useWindowDimensionsDefault().height * closure_2;
+};

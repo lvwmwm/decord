@@ -1,11 +1,11 @@
-// Module ID: 11285
-// Function ID: 11286
+// Module ID: 9680
+// Function ID: 9681
 // Name: useShouldHideMediaOptions
-// Dependencies: [2051, 2058, 558, 576, 573, 2]
+// Dependencies: [2065, 2072, 558, 576, 573, 2]
 
-// Module 11285 (useShouldHideMediaOptions)
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+// Module 9680 (useShouldHideMediaOptions)
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require;
 
 const ChannelFlags = ChannelConstants.ChannelFlags;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldHideMediaOptions(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -71,7 +71,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp7 = cResult[4];
   }
   return true === tmp7;
-}) : ((arg0) => {
+}) : (function useShouldHideMediaOptions(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelStore];

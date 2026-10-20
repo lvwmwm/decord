@@ -1,19 +1,19 @@
-// Module ID: 4739
-// Function ID: 4740
+// Module ID: 4979
+// Function ID: 4980
 // Name: useChatLayout
-// Dependencies: [19, 4740, 558, 576, 2]
+// Dependencies: [19, 4980, 558, 576, 2]
 // Exports: getChatLayout
 
-// Module 4739 (useChatLayout)
+// Module 4979 (useChatLayout)
 import react2 from "react" /* 576 */;
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4740 */;
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4980 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useWindowSizeClassifierDefault = useWindowSizeClassifier;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChatLayout() {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp2 = useWindowSizeClassifierDefault();
@@ -31,7 +31,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = tmp4;
   cResult[2] = obj2;
   tmp5 = obj2;
-}) : (() => {
+}) : (function useChatLayout() {
   const tmp = useWindowSizeClassifierDefault();
   let closure_0 = tmp;
   const items = [tmp];

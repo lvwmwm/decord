@@ -1,14 +1,14 @@
-// Module ID: 8101
-// Function ID: 8102
+// Module ID: 7527
+// Function ID: 7528
 // Name: AgeVerificationAuthSession
-// Dependencies: [5, 3, 570, 4853, 1369, 558, 576, 2]
+// Dependencies: [5, 3, 570, 5055, 1382, 558, 576, 2]
 // Exports: closeAgeVerificationAuthSession, getIsAgeVerificationAuthSessionAwaitingResult, getIsAgeVerificationAuthSessionOpen, openAgeVerificationAuthSession
 
-// Module 8101 (AgeVerificationAuthSession)
+// Module 7527 (AgeVerificationAuthSession)
 import LoggerDefault from "Logger" /* 3 */;
 import react from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import react_nativeDefault from "react-native" /* 4853 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import react_nativeDefault from "react-native" /* 5055 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -137,7 +137,7 @@ const tmp2 = new LoggerDefault("AgeVerificationAuthSession");
 let closure_5 = module_570.create(() => ({ isOpen: false }));
 let c6 = false;
 let c7 = null;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAgeVerificationAuthSessionOpen() {
   let first;
   obj = react;
   const cResult = obj.c(1);
@@ -151,7 +151,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return closure_5(first);
-}) : (() => closure_5((isOpen) => isOpen.isOpen));
+}) : (function useIsAgeVerificationAuthSessionOpen() {
+  return closure_5((isOpen) => isOpen.isOpen);
+});
 function getIsAgeVerificationAuthSessionOpen() {
   return closure_5.getState().isOpen;
 }

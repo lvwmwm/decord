@@ -1,19 +1,19 @@
-// Module ID: 9430
-// Function ID: 9431
+// Module ID: 13027
+// Function ID: 13028
 // Name: useGetJoinRequestGuild
-// Dependencies: [19, 4700, 558, 576, 504, 5931, 2]
+// Dependencies: [19, 4940, 558, 576, 504, 6117, 2]
 
-// Module 9430 (useGetJoinRequestGuild)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 5931 */;
+// Module 13027 (useGetJoinRequestGuild)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6117 */;
 import react from "react" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4700 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4940 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetGuildJoinRequest(arg0) {
   let closure_0;
   let first;
   let tmp12;
@@ -64,7 +64,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult2 = tmp(504);
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
   if (cResult[5] !== stateFromStores1) {
-    class S {
+    class G {
       constructor() {
         const tmp = stateFromStores1;
         if (!tmp) {
@@ -75,12 +75,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const items2 = [stateFromStores1];
     cResult[5] = stateFromStores1;
-    cResult[6] = S;
+    cResult[6] = G;
     cResult[7] = items2;
     tmp13 = items2;
-    tmp12 = S;
+    tmp12 = G;
   } else {
-    class S {
+    class G {
       constructor() {
         const tmp = stateFromStores1;
         if (!tmp) {
@@ -93,7 +93,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const effect = react.useEffect(tmp12, tmp13);
   return stateFromStores;
-}) : ((arg0) => {
+}) : (function useGetGuildJoinRequest(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

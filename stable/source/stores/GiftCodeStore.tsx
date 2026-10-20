@@ -1,15 +1,15 @@
-// Module ID: 11088
-// Function ID: 11089
+// Module ID: 10492
+// Function ID: 10493
 // Name: GiftCodeStore
-// Dependencies: [10431, 1085, 2046, 4461, 5310, 584, 11089, 504, 2]
+// Dependencies: [10052, 1085, 2060, 4702, 5633, 10493, 504, 584, 2]
 
-// Module 11088 (GiftCodeStore)
+// Module 10492 (GiftCodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import _modDef4461 from "module_4461" /* 4461 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5310 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11089 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10431 */;
+import _modDef4702 from "module_4702" /* 4702 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5633 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 10493 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10052 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 function updateGiftCode(giftCode) {
-  const f106356 = () => {
+  const f105325 = () => {
     let closure_0 = code;
     const value = map.get(code);
     const obj = map;
@@ -27,7 +27,7 @@ function updateGiftCode(giftCode) {
       if (null != value.expiresAt) {
         const expiresAt = value.expiresAt;
         const valueOfResult = expiresAt.valueOf();
-        const obj3 = _modDef4461();
+        const obj3 = _modDef4702();
         const diff = valueOfResult - obj3.valueOf();
         if (diff <= 0) {
           obj.delete(code);
@@ -35,7 +35,7 @@ function updateGiftCode(giftCode) {
           giftCodeStore.emitChange();
         } else if (null != closure_7[code]) {
           const _Math = Math;
-          closure_7[code].start(Math.min(hasOwnProperty, diff), f106356);
+          closure_7[code].start(Math.min(hasOwnProperty, diff), f105325);
         }
       }
     }
@@ -51,14 +51,14 @@ function updateGiftCode(giftCode) {
     if (null != fromServer.expiresAt) {
       const self = this;
       const self2 = this;
-      const timeout = new code(2046).Timeout();
+      const timeout = new code(2060).Timeout();
       closure_7[code] = timeout;
       const value2 = obj.get(code);
       if (null != value2) {
         if (null != value2.expiresAt) {
           let expiresAt = value2.expiresAt;
           let valueOfResult = expiresAt.valueOf();
-          const obj4 = _modDef4461();
+          const obj4 = _modDef4702();
           let diff = valueOfResult - obj4.valueOf();
           if (diff <= 0) {
             obj.delete(code);
@@ -66,7 +66,7 @@ function updateGiftCode(giftCode) {
             giftCodeStore.emitChange();
           } else if (null != tmp14[code]) {
             let _Math = Math;
-            tmp14[code].start(Math.min(closure_5, diff), f106356);
+            tmp14[code].start(Math.min(closure_5, diff), f105325);
           }
         }
       }
@@ -106,19 +106,15 @@ function resolveMessageGiftCodes(message, arg1) {
   }
   if (0 !== findGiftCodesResult.length) {
     const item = findGiftCodesResult.forEach((item) => {
-      let closure_0 = item;
-      const hasItem = items.includes(item) || closure_11.includes(item);
+      const hasItem = items.includes(item) || closure_1_11.includes(item);
       if (!hasItem) {
         if (!items.includes(item)) {
           items = [];
           items[HermesBuiltin.arraySpread(items, items, 0)] = item;
         }
-        let obj = closure_1(closure_2[5]);
-        obj.wait(() => {
-          const obj = GiftCodeActionCreatorsDefault;
-          const giftCode = obj.resolveGiftCode(item, false, true);
-          return giftCode.catch(closure_2_6);
-        });
+        const obj = GiftCodeActionCreatorsDefault;
+        const giftCode = obj.resolveGiftCode(item, false, true);
+        giftCode.catch(closure_1_6);
       }
     });
   }
@@ -154,7 +150,7 @@ const React4 = [];
 const authStore = [];
 let items = [];
 const set = new Set();
-const authStore2 = {};
+const syncedClientThemes = {};
 const set1 = new Set();
 const Store = get_initializedDefault.Store;
 class GiftCodeStore extends Store {

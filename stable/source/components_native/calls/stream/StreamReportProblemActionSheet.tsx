@@ -1,27 +1,27 @@
-// Module ID: 17360
-// Function ID: 17361
+// Module ID: 17955
+// Function ID: 17956
 // Name: StreamReportProblemActionSheet
-// Dependencies: [19, 4930, 1085, 21, 4890, 587, 558, 576, 7228, 1252, 5590, 16640, 4854, 4567, 17361, 6697, 6644, 1126, 6701, 6112, 2]
+// Dependencies: [19, 5108, 1085, 21, 5092, 587, 558, 576, 7421, 1265, 5396, 17956, 5056, 4808, 17957, 6895, 6839, 1126, 6899, 6307, 2]
 
-// Module 17360 (StreamReportProblemActionSheet)
+// Module 17955 (StreamReportProblemActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ToastUtils from "ToastUtils" /* 4567 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import useMountEffectDefault from "useMountEffect" /* 5590 */;
-import BottomSheetModal from "BottomSheetModal" /* 6112 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
-import ActionSheetRow from "ActionSheetRow" /* 6697 */;
-import ActionSheet2 from "ActionSheet" /* 6701 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7228 */;
-import trackStreamProblemDefault from "trackStreamProblem" /* 16640 */;
-import getStreamIssueReportOptionsDefault from "getStreamIssueReportOptions" /* 17361 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import useMountEffectDefault from "useMountEffect" /* 5396 */;
+import BottomSheetModal from "BottomSheetModal" /* 6307 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
+import ActionSheetRow from "ActionSheetRow" /* 6895 */;
+import ActionSheet2 from "ActionSheet" /* 6899 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7421 */;
+import trackStreamProblemDefault from "trackStreamProblem" /* 17956 */;
+import getStreamIssueReportOptionsDefault from "getStreamIssueReportOptions" /* 17957 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4930 */;
-import createStyles from "createStyles" /* 4890 */;
+import PresenceStore from "PresenceStore" /* 5108 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_6 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((stream) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReportProblem(stream) {
   let tmp5;
   let tmp = stream;
   let obj = stream(576);
@@ -70,7 +70,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((stream) => {
   } else {
     tmp5 = cResult[1];
   }
-  analyticsData(5590)(tmp5);
+  analyticsData(5396)(tmp5);
   const tmp6 = analyticsData;
   if (cResult[2] === analyticsData) {
     let tmp8;
@@ -81,7 +81,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((stream) => {
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const BottomSheetTitleHeader = tmp(6644).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
       const intl = tmp(1126).intl;
       const tmp13 = <BottomSheetTitleHeader title={intl.string(tmp(1126).t.XuqqwI)} />;
       cResult[5] = tmp13;
@@ -90,7 +90,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((stream) => {
       tmp11 = cResult[5];
     }
     if (cResult[6] !== tmp8) {
-      const tmp16 = jsx(tmp(6697).ActionSheetRow.Group, { hasIcons: false, children: tmp8 });
+      const tmp16 = jsx(tmp(6895).ActionSheetRow.Group, { hasIcons: false, children: tmp8 });
       cResult[6] = tmp8;
       cResult[7] = tmp16;
       tmp14 = tmp16;
@@ -104,14 +104,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((stream) => {
       }
       return tmp17;
     }
-    const ActionSheet = tmp(6701).ActionSheet;
+    const ActionSheet = tmp(6899).ActionSheet;
     const tmp19 = <ActionSheet scrollable header={tmp11}>{null}</ActionSheet>;
     cResult[8] = tmp4.container;
     cResult[9] = tmp14;
     cResult[10] = tmp19;
     tmp17 = tmp19;
   }
-  const arr = tmp6(17361)({ isStreamer: false, isEndStream: false });
+  const arr = tmp6(17957)({ isStreamer: false, isEndStream: false });
   const mapped = arr.map((label, index) => {
     let value;
     stream = label.value;
@@ -135,7 +135,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((stream) => {
   cResult[3] = stream;
   cResult[4] = mapped;
   tmp8 = mapped;
-}) : ((arg0) => {
+}) : (function ReportProblem(arg0) {
   let analyticsData;
   let intl;
   let stream;

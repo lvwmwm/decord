@@ -1,20 +1,20 @@
-// Module ID: 9688
-// Function ID: 9689
+// Module ID: 11105
+// Function ID: 11106
 // Name: VoicePanelRiveMicButton
-// Dependencies: [19, 17, 21, 558, 576, 4820, 9689, 4680, 2]
+// Dependencies: [19, 17, 21, 558, 576, 8801, 11106, 4920, 2]
 
-// Module 9688 (VoicePanelRiveMicButton)
+// Module 11105 (VoicePanelRiveMicButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import MicrophoneRive2 from "MicrophoneRive" /* 4680 */;
+import MicrophoneRive2 from "MicrophoneRive" /* 4920 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelRiveMicButton(arg0) {
   let color;
   let first;
   let muted;
@@ -61,9 +61,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const tmp8 = jsx;
     if (muted) {
-      MicrophoneIcon = tmp(4820).MicrophoneSlashIcon;
+      MicrophoneIcon = tmp(8801).MicrophoneSlashIcon;
     } else {
-      MicrophoneIcon = tmp(9689).MicrophoneIcon;
+      MicrophoneIcon = tmp(11106).MicrophoneIcon;
     }
     const obj4 = { color };
     const tmp8Result = tmp8(MicrophoneIcon, obj4);
@@ -77,7 +77,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = !muted;
   cResult[3] = obj5;
   tmp6 = obj5;
-}) : ((arg0) => {
+}) : (function VoicePanelRiveMicButton(arg0) {
   let color;
   let muted;
   ({ color, muted } = arg0);
@@ -87,9 +87,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     str = "Off";
   }
   if (muted) {
-    let MicrophoneIcon = tmp3(4820).MicrophoneSlashIcon;
+    let MicrophoneIcon = tmp3(8801).MicrophoneSlashIcon;
   } else {
-    MicrophoneIcon = tmp3(9689).MicrophoneIcon;
+    MicrophoneIcon = tmp3(11106).MicrophoneIcon;
   }
   return <tmp2 style={{ width: 24, height: 24, pointerEvents: "none" }}>{null}</tmp2>;
 });

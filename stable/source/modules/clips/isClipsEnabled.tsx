@@ -1,19 +1,19 @@
-// Module ID: 13485
-// Function ID: 13486
+// Module ID: 13622
+// Function ID: 13623
 // Name: isClipsEnabled
-// Dependencies: [2005, 13486, 558, 576, 504, 2]
+// Dependencies: [2018, 13623, 558, 576, 504, 2]
 // Exports: isClipsEnabled
 
-// Module 13485 (isClipsEnabled)
+// Module 13622 (isClipsEnabled)
 import react from "react" /* 576 */;
-import ClipsExperiment from "ClipsExperiment" /* 13486 */;
-import ClipsStore from "ClipsStore" /* 2005 */;
+import ClipsExperiment from "ClipsExperiment" /* 13623 */;
+import ClipsStore from "ClipsStore" /* 2018 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsClipsEnabled() {
   let state;
   let tmp5;
   let tmp6;
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let isClipsAvailable = obj2.useIsClipsAvailable();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ClipsStore];
-    const fn = function l() {
+    const fn = function t() {
       return state.getState().clipsSettings.clipsEnabled;
     };
     cResult[0] = items;
@@ -38,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     isClipsAvailable = tmpResult.useStateFromStores(tmp5, tmp6);
   }
   return isClipsAvailable;
-}) : (() => {
+}) : (function useIsClipsEnabled() {
   let state;
   const obj = ClipsExperiment;
   let isClipsAvailable = obj.useIsClipsAvailable();

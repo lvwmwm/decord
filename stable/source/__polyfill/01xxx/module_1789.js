@@ -1,178 +1,85 @@
 // Module ID: 1789
 // Function ID: 1790
-// Dependencies: [1668, 1654]
-// Exports: areDependenciesEqual, buildDependencies, buildWorkletsHash, shallowEqual, validateAnimatedStyles
+// Dependencies: [32, 41, 42, 93, 95, 98, 1726]
 
 // Module 1789
-import ReanimatedError from "ReanimatedError" /* 1654 */;
-import LayoutAnimationType from "LayoutAnimationType" /* 1668 */;
+import BaseAnimationBuilder from "BaseAnimationBuilder" /* 1726 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c2 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const f85030 = (acc, __workletHash) => {
-  const str = __workletHash.__workletHash;
-  return acc + str.toString();
-};
-function isAnimated(onFrame) {
-  let someResult;
-  if (Array.isArray(onFrame)) {
-    someResult = onFrame.some(isAnimated);
-  } else {
-    someResult = typeof onFrame === "object";
-    if (typeof onFrame === "object") {
-      someResult = null !== onFrame;
-    }
-    if (someResult) {
-      let someResult1 = undefined !== onFrame.onFrame;
-      if (!someResult1) {
-        const _Object = Object;
-        const values = Object.values(onFrame);
-        someResult1 = values.some(isAnimated);
-      }
-      someResult = someResult1;
-    }
-  }
-  return someResult;
-}
-isAnimated.__closure = {};
-isAnimated.__workletHash = 4296700641760;
-isAnimated.__initData = { code: "function isAnimated_Pnpm_utilsTs1(prop){const isAnimated_Pnpm_utilsTs1=this._recur;if(Array.isArray(prop)){return prop.some(isAnimated_Pnpm_utilsTs1);}else if(typeof prop==='object'&&prop!==null){if(prop.onFrame!==undefined){return true;}else{return Object.values(prop).some(isAnimated_Pnpm_utilsTs1);}}return false;}" };
-function shallowEqual(arg0, arg1) {
-  const keys = Object.keys(arg0);
-  if (keys.length !== Object.keys(arg1).length) {
-    return false;
-  } else {
-    let num = 0;
-    if (0 < keys.length) {
-      while (arg0[keys[num]] === arg1[keys[num]]) {
-        num = num + 1;
-      }
-      return false;
-    }
-    return true;
-  }
-}
-shallowEqual.__closure = {};
-shallowEqual.__workletHash = 6945711106539;
-shallowEqual.__initData = { code: "function shallowEqual_Pnpm_utilsTs2(a,b){const aKeys=Object.keys(a);const bKeys=Object.keys(b);if(aKeys.length!==bKeys.length){return false;}for(let i=0;i<aKeys.length;i++){if(a[aKeys[i]]!==b[aKeys[i]]){return false;}}return true;}" };
-function validateAnimatedStyles(obj) {
-  if (typeof obj !== "object") {
-    const _HermesInternal = HermesInternal;
-    const self3 = this;
-    const self4 = this;
-    const reanimatedError = new ReanimatedError.ReanimatedError("`useAnimatedStyle` has to return an object, found " + typeof obj + " instead.");
-    throw reanimatedError;
-  } else {
-    const _Array = Array;
-    if (Array.isArray(obj)) {
-      const self = this;
-      const self2 = this;
-      const reanimatedError1 = new ReanimatedError.ReanimatedError("`useAnimatedStyle` has to return an object and cannot return static styles combined with dynamic ones. Please do merging where a component receives props.");
-      throw reanimatedError1;
-    }
-  }
-}
-validateAnimatedStyles.__closure = {};
-validateAnimatedStyles.__workletHash = 9250446401049;
-validateAnimatedStyles.__initData = { code: "function validateAnimatedStyles_Pnpm_utilsTs3(styles){if(typeof styles!=='object'){throw new ReanimatedError(\"`useAnimatedStyle` has to return an object, found \"+typeof styles+\" instead.\");}else if(Array.isArray(styles)){throw new ReanimatedError('`useAnimatedStyle` has to return an object and cannot return static styles combined with dynamic ones. Please do merging where a component receives props.');}}" };
+let size;
 
-export const buildWorkletsHash = function buildWorkletsHash(items1) {
-  const values = Object.values(items1);
-  return values.reduce(f85030, "");
-};
-export const buildDependencies = function buildDependencies(items10, memoizedGestureCallbacks) {
-  const values = Object.values(memoizedGestureCallbacks);
-  const found = values.filter((item) => undefined !== item);
-  let tmp2 = found;
-  if (items10) {
-    const _Object = Object;
-    const push = items10.push;
-    const values2 = Object.values(found);
-    let str = "";
-    push(values2.reduce(f85030, ""));
-    tmp2 = items10;
-  }
-  return tmp2;
-};
-export const areDependenciesEqual = function areDependenciesEqual(dependencies, savedDependencies) {
-  let is;
-  if (typeof Object.is === "function") {
-    const _Object = Object;
-    is = Object.is;
-  } else {
-    is = function is(dependencies, savedDependencies) {
-      let tmp = dependencies === savedDependencies;
-      if (tmp) {
-        tmp = 0 !== dependencies || 1 / dependencies === 1 / savedDependencies;
-        const tmp2 = 0 !== dependencies || 1 / dependencies === 1 / savedDependencies;
-      }
-      if (!tmp) {
-        const _Number = Number;
-        let isNaNResult = Number.isNaN(dependencies);
-        if (isNaNResult) {
-          const _Number2 = Number;
-          isNaNResult = Number.isNaN(savedDependencies);
-        }
-        tmp = isNaNResult;
-      }
-      return tmp;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
     };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  let flag = false;
-  if (dependencies) {
-    let tmp = savedDependencies;
-    flag = false;
-    if (savedDependencies) {
-      flag = false;
-      if (savedDependencies.length === dependencies.length) {
-        let num = 0;
-        flag = true;
-        if (0 < savedDependencies.length) {
-          while (true) {
-            let tmp2 = dependencies[num];
-            let tmp3 = savedDependencies[num];
-            if (is(tmp2, tmp3)) {
-              let sum = num + 1;
-              num = sum;
-              flag = true;
-              if (sum >= savedDependencies.length) {
-                break;
-              }
-            } else {
-              let tmp5 = require;
-              let obj = LayoutAnimationType;
-              flag = false;
-              if (!obj.isWorkletFunction(tmp2)) {
-                break;
-              } else {
-                let tmp5Result = tmp5(1668);
-                flag = false;
-                if (!tmp5Result.isWorkletFunction(tmp3)) {
-                  break;
-                } else {
-                  let closure_0 = tmp2;
-                  let closure_1 = tmp3;
-                  let flag2 = false;
-                  if (tmp2.__workletHash === tmp3.__workletHash) {
-                    let _Object2 = Object;
-                    let keys = Object.keys(tmp2.__closure);
-                    let _Object3 = Object;
-                    let tmp7 = keys.length === Object.keys(tmp3.__closure).length && keys.every((item) => item in __closure2.__closure && __closure.__closure[item] === tmp.__closure[item]);
-                    flag2 = tmp7;
-                  }
-                  flag = false;
-                  if (!flag2) {
-                    break;
-                  }
-                }
-              }
-            }
-            break;
-          }
-        }
-      }
+}
+let closure_5 = { code: "function pnpm_LinearTransitionTs1(values){const{delayFunction,delay,animation,config,callback}=this.__closure;return{initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight},animations:{originX:delayFunction(delay,animation(values.targetOriginX,config)),originY:delayFunction(delay,animation(values.targetOriginY,config)),width:delayFunction(delay,animation(values.targetWidth,config)),height:delayFunction(delay,animation(values.targetHeight,config))},callback:callback};}" };
+class LinearTransition {
+  constructor() {
+    let constructResult;
+    const self = this;
+    const items = [...arguments];
+    let closure_0;
+    _classCallCheck(this, LinearTransition);
+    const items1 = [...items];
+    let tmp2 = _getPrototypeOf;
+    let obj = _getPrototypeOf(LinearTransition);
+    const tmp3 = c2;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items1);
     }
+    const tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.build = () => {
+      const delayFunction = closure_0.getDelayFunction();
+      const tmp2 = LinearTransition(closure_0.getAnimationAndConfig(), 2);
+      const first = tmp2[0];
+      let closure_2 = tmp4;
+      const callbackV = closure_0.callbackV;
+      const delay = closure_0.getDelay();
+      const fn = function t(originX) {
+        const obj = { initialValues: { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight }, animations: size, callback: callbackV };
+        size = { originX: delayFunction(delay, first(originX.targetOriginX, closure_2)), originY: delayFunction(delay, first(originX.targetOriginY, closure_2)), width: delayFunction(delay, first(originX.targetWidth, closure_2)), height: delayFunction(delay, first(originX.targetHeight, closure_2)) };
+        return obj;
+      };
+      fn.__closure = { delayFunction, delay, animation: first, config: tmp2[1], callback: callbackV };
+      fn.__workletHash = 16224579837767;
+      fn.__initData = __initData;
+      return fn;
+    };
+    return tmp3Result;
   }
-  return flag;
+}
+_inherits(LinearTransition, BaseAnimationBuilder.ComplexAnimationBuilder);
+const entry = {
+  key: "createInstance",
+  value: function createInstance() {
+    const tmp = LinearTransition();
+    return tmp;
+  }
 };
-export { isAnimated };
-export { shallowEqual };
-export { validateAnimatedStyles };
+let items = [entry];
+const importDefaultResultResult = _createClass(LinearTransition, null, items);
+importDefaultResultResult.presetName = "LinearTransition";
+const LinearTransition_export = importDefaultResultResult;
+
+export { LinearTransition_export as LinearTransition };
+export const Layout = importDefaultResultResult;

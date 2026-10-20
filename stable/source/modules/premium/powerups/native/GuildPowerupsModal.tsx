@@ -1,23 +1,23 @@
-// Module ID: 12139
-// Function ID: 12140
+// Module ID: 12223
+// Function ID: 12224
 // Name: GuildPowerupsModal
-// Dependencies: [19, 17, 4768, 21, 4890, 587, 558, 576, 4786, 12140, 12150, 12168, 1618, 6657, 12173, 12174, 12205, 5093, 7671, 1126, 2525, 7498, 6010, 6019, 12212, 12214, 12222, 12228, 12238, 12246, 2]
+// Dependencies: [19, 17, 5008, 21, 5092, 587, 558, 576, 5026, 12224, 12234, 12252, 1631, 6852, 12257, 12258, 12289, 5934, 8025, 1126, 2600, 9293, 6201, 6210, 12296, 12298, 12306, 12312, 12322, 12330, 2]
 
-// Module 12139 (GuildPowerupsModal)
+// Module 12223 (GuildPowerupsModal)
 import nativeDefault from "native" /* 587 */;
-import openGuildPowerupsBottomSheetDefault from "openGuildPowerupsBottomSheet" /* 12174 */;
-import openGuildPowerupsMultiPerkBottomSheetDefault from "openGuildPowerupsMultiPerkBottomSheet" /* 12205 */;
-import GuildPowerupsLevelsSectionDefault from "GuildPowerupsLevelsSection" /* 12222 */;
-import GuildPowerupsPerksSectionDefault from "GuildPowerupsPerksSection" /* 12228 */;
+import openGuildPowerupsBottomSheetDefault from "openGuildPowerupsBottomSheet" /* 12258 */;
+import openGuildPowerupsMultiPerkBottomSheetDefault from "openGuildPowerupsMultiPerkBottomSheet" /* 12289 */;
+import GuildPowerupsLevelsSectionDefault from "GuildPowerupsLevelsSection" /* 12306 */;
+import GuildPowerupsPerksSectionDefault from "GuildPowerupsPerksSection" /* 12312 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4768 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5008 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let guildId, type;
+let type;
 
 let c9;
 let closure_4;
@@ -46,7 +46,7 @@ size = { width: 1, height: "100%", backgroundColor: nativeDefault.colors.BORDER_
 obj6 = { paddingBottom: nativeDefault.space.PX_96 };
 rect = { paddingHorizontal: nativeDefault.space.PX_16, position: "absolute", bottom: 0, left: 0, right: 0 };
 let closure_10 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsModal(guildId) {
   let analyticsLocation;
   let autoOpenPerkId;
   let autoOpenRequestId;
@@ -247,7 +247,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[7] = items2;
   tmp15 = items2;
   tmp14 = fn;
-}) : ((guildId) => {
+}) : (function GuildPowerupsModal(guildId) {
   let analyticsLocation;
   let autoOpenPerkId;
   let available;

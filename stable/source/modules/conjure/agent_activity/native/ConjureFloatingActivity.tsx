@@ -1,20 +1,20 @@
-// Module ID: 16745
-// Function ID: 16746
+// Module ID: 17321
+// Function ID: 17322
 // Name: ConjureFloatingActivity
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 4612, 4891, 16714, 1126, 3723, 12500, 4886, 5909, 14251, 5929, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 4850, 5093, 17283, 1126, 3849, 12605, 5088, 6185, 14273, 6115, 2]
 
-// Module 16745 (ConjureFloatingActivity)
+// Module 17321 (ConjureFloatingActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3723 from "module_3723" /* 3723 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5929 */;
-import ConjureTodoListDefault from "ConjureTodoList" /* 16714 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6115 */;
+import ConjureTodoListDefault from "ConjureTodoList" /* 17283 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ const merged1 = Object.assign(nativeDefault.shadows.SHADOW_MEDIUM);
 let closure_8 = createStyles(obj);
 const __initData = { code: "function ConjureFloatingActivityTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
 const __initData2 = { code: "function ConjureFloatingActivityTsx2(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureFloatingActivity(arg0) {
   let agents;
   let bottom;
   let line;
@@ -56,10 +56,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(41);
   ({ line, onJumpToActivity, bottom, todos, todosLive, agents } = arg0);
   const tmp4 = closure_8();
-  const tmpResult = sharedValue(4612);
+  const tmpResult = sharedValue(4850);
   sharedValue = tmpResult.useSharedValue(0);
   if (cResult[0] !== sharedValue) {
-    const fn = function _() {
+    const fn = function y() {
       set = sharedValue.set;
       let obj = timing;
       const result = set(obj.withTiming(1, { duration: 150 }));
@@ -79,35 +79,35 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp7 = cResult[2];
   }
   const effect = react.useEffect(tmp6, tmp7);
-  const tmpResult2 = sharedValue(4612);
-  class D {
+  const tmpResult2 = sharedValue(4850);
+  class B {
     constructor() {
       const obj = { opacity: sharedValue.get() };
       return obj;
     }
   }
-  D.__closure = { opacity: sharedValue };
-  D.__workletHash = 451170179306;
-  D.__initData = __initData;
-  const animatedStyle = tmpResult2.useAnimatedStyle(D);
+  B.__closure = { opacity: sharedValue };
+  B.__workletHash = 451170179306;
+  B.__initData = __initData;
+  const animatedStyle = tmpResult2.useAnimatedStyle(B);
   [r10047, importDefault] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
+    class D {
       constructor() {
         return importDefault((arg0) => !arg0);
       }
     }
-    cResult[3] = R;
+    cResult[3] = D;
   } else {
-    class R {
+    class D {
       constructor() {
         return importDefault((arg0) => !arg0);
       }
     }
   }
   if (cResult[4] !== bottom) {
-    class R {
+    class D {
       constructor() {
         return importDefault((arg0) => !arg0);
       }
@@ -116,14 +116,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[4] = bottom;
     cResult[5] = tmp13;
   } else {
-    class R {
+    class D {
       constructor() {
         return importDefault((arg0) => !arg0);
       }
     }
   }
   if (cResult[6] === animatedStyle) {
-    class R {
+    class D {
       constructor() {
         return importDefault((arg0) => !arg0);
       }
@@ -134,7 +134,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp4.root;
   cResult[8] = tmp12;
   cResult[9] = items1;
-}) : ((agents) => {
+}) : (function ConjureFloatingActivity(agents) {
   let ToggleIconButton;
   let _undefined;
   let bottom;
@@ -161,7 +161,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   importDefault = undefined;
   agents = agents.agents;
   const tmp = closure_8();
-  let obj = sharedValue(4612);
+  let obj = sharedValue(4850);
   sharedValue = obj.useSharedValue(0);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -173,7 +173,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return obj.cancelAnimation(closure_1_0);
     };
   }, items);
-  const obj2 = sharedValue(4612);
+  const obj2 = sharedValue(4850);
   class T {
     constructor() {
       const obj = { opacity: sharedValue.get() };
@@ -201,20 +201,20 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   items2 = [tmp12, ];
   const obj6 = { style: tmp.pill, children: items4 };
-  const obj7 = { style: tmp.pillMain, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(_modDef3723.xuQfOT, { activity: line }), hitSlop: 8, onPress: onJumpToActivity, children: items3 };
-  const PressableOpacity = tmp2(5909).PressableOpacity;
+  const obj7 = { style: tmp.pillMain, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(_modDef3849.xuQfOT, { activity: line }), hitSlop: 8, onPress: onJumpToActivity, children: items3 };
+  const PressableOpacity = tmp2(6185).PressableOpacity;
   intl = tmp2(1126).intl;
   const obj8 = { size: "xs", color: nativeDefault.colors.TEXT_BRAND };
-  const MagicWandIcon = tmp2(12500).MagicWandIcon;
+  const MagicWandIcon = tmp2(12605).MagicWandIcon;
   items3 = [closure_6(MagicWandIcon, obj8), ];
-  const obj9 = { style: tmp.label, children: closure_6(sharedValue(4886).Text, { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: line }) };
+  const obj9 = { style: tmp.label, children: closure_6(sharedValue(5088).Text, { variant: "text-sm/medium", color: "text-default", lineClamp: 1, children: line }) };
   items3[1] = closure_6(View, obj9);
   items4 = [closure_7(PressableOpacity, obj7), ];
   let tmp16Result = null;
   if (null != todos) {
     const obj10 = { style: tmp.checklistButton, children: closure_6(ToggleIconButton, obj11) };
-    obj11 = { variant: "default", size: "sm", icon: AssetRegistryDefault, pressed: tmp8, accessibilityLabel: intl2.string(_modDef3723.Qp2isI), onPress: callback };
-    ToggleIconButton = tmp2(14251).ToggleIconButton;
+    obj11 = { variant: "default", size: "sm", icon: AssetRegistryDefault, pressed: tmp8, accessibilityLabel: intl2.string(_modDef3849.Qp2isI), onPress: callback };
+    ToggleIconButton = tmp2(14273).ToggleIconButton;
     intl2 = tmp2(1126).intl;
     tmp16Result = tmp16(tmp15, obj10);
   }

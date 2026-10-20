@@ -1,12 +1,12 @@
-// Module ID: 10700
-// Function ID: 10701
+// Module ID: 10352
+// Function ID: 10353
 // Name: ChannelCollapseActionCreators
-// Dependencies: [5071, 584, 6611, 2]
+// Dependencies: [5966, 584, 6806, 2]
 
-// Module 10700 (ChannelCollapseActionCreators)
+// Module 10352 (ChannelCollapseActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 6611 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 6806 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

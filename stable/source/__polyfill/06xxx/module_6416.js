@@ -1,52 +1,25 @@
 // Module ID: 6416
 // Function ID: 6417
-// Dependencies: [19, 21, 6117, 6140]
+// Dependencies: [6417, 6423, 6424, 6425, 6426, 6427, 6428, 6429, 6430]
 
 // Module 6416
-import Fragment from "Fragment" /* 21 */;
-import _mod6117 from "module_6117" /* 6117 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
-import react_mod from "react" /* 19 */;
+import _mod6417 from "module_6417" /* 6417 */;
+import _mod6423 from "module_6423" /* 6423 */;
+import _mod6424 from "module_6424" /* 6424 */;
+import _mod6425 from "module_6425" /* 6425 */;
+import _mod6426 from "module_6426" /* 6426 */;
+import _mod6427 from "module_6427" /* 6427 */;
+import _mod6428 from "module_6428" /* 6428 */;
+import _mod6429 from "module_6429" /* 6429 */;
+import _mod6430 from "module_6430" /* 6430 */;
 
-let onFocus;
 
-let c2;
-let c3;
-let forwardRef;
-let memo;
-let react = react_mod;
-({ useCallback: c2, useEffect: c3 } = react);
-({ memo, forwardRef } = react);
-react = react_mod;
-const jsx = Fragment.jsx;
-const memoResult = memo(forwardRef((onFocus, ref) => {
-  onFocus = onFocus.onFocus;
-  const onBlur = onFocus.onBlur;
-  const merged = Object.assign(onFocus, Object.assign({ onFocus: 0, onBlur: 0 }));
-  const obj = _mod6117;
-  const shouldHandleKeyboardEvents = obj.useBottomSheetInternal().shouldHandleKeyboardEvents;
-  const items = [onFocus, shouldHandleKeyboardEvents];
-  const items1 = [onBlur, shouldHandleKeyboardEvents];
-  const items2 = [shouldHandleKeyboardEvents];
-  const tmp2 = React2((arg0) => {
-    shouldHandleKeyboardEvents.value = true;
-    if (onFocus) {
-      tmp(arg0);
-    }
-  }, items);
-  const tmp3 = React2((arg0) => {
-    shouldHandleKeyboardEvents.value = false;
-    if (onBlur) {
-      tmp(arg0);
-    }
-  }, items1);
-  _false(() => () => {
-    shouldHandleKeyboardEvents.value = false;
-  }, items2);
-  const TextInput = LegacyBaseButton.TextInput;
-  const merged1 = Object.assign(merged);
-  return <TextInput ref={arg1} onFocus={tmp2} onBlur={tmp3} />;
-}));
-memoResult.displayName = "BottomSheetTextInput";
-
-export default memoResult;
+export const useTapGesture = _mod6417.useTapGesture;
+export const useFlingGesture = _mod6423.useFlingGesture;
+export const useLongPressGesture = _mod6424.useLongPressGesture;
+export const usePinchGesture = _mod6425.usePinchGesture;
+export const useRotationGesture = _mod6426.useRotationGesture;
+export const useHoverGesture = _mod6427.useHoverGesture;
+export const useManualGesture = _mod6428.useManualGesture;
+export const useNativeGesture = _mod6429.useNativeGesture;
+export const usePanGesture = _mod6430.usePanGesture;

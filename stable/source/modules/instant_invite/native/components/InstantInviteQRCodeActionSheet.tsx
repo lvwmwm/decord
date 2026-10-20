@@ -1,32 +1,32 @@
-// Module ID: 9524
-// Function ID: 9525
+// Module ID: 8728
+// Function ID: 8729
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [19, 17, 2074, 1377, 1085, 21, 4890, 587, 5971, 558, 576, 504, 1126, 584, 4567, 6644, 9525, 4886, 6701, 2]
+// Dependencies: [19, 17, 2087, 1390, 1085, 21, 5092, 587, 6159, 558, 576, 504, 1126, 584, 4808, 6839, 8729, 5088, 6899, 2]
 
-// Module 9524 (InstantInviteQRCodeActionSheet)
+// Module 8728 (InstantInviteQRCodeActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import ToastUtils from "ToastUtils" /* 4567 */;
-import GuildIcon from "GuildIcon" /* 5971 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6644 */;
-import ActionSheet2 from "ActionSheet" /* 6701 */;
-import components_native_QRCodeDefault from "components_native/QRCode" /* 9525 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import GuildIcon from "GuildIcon" /* 6159 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6839 */;
+import ActionSheet2 from "ActionSheet" /* 6899 */;
+import components_native_QRCodeDefault from "components_native/QRCode" /* 8729 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const GuildIconDefault = GuildIcon;
-let _require, link;
+let _require;
 
 let c10;
 let c9;
@@ -44,7 +44,7 @@ createStyles = createStyles.createStyles;
 obj3 = { padding: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.lg + nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.WHITE };
 let closure_11 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDescription(channel) {
   let currentUser;
   let intl3;
   let intl4;
@@ -58,7 +58,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const _location = channel.location;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function c() {
+    const fn = function s() {
       return currentUser.getCurrentUser();
     };
     cResult[0] = items;
@@ -136,7 +136,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
   }
   return tmp12;
-}) : ((channel) => {
+}) : (function useDescription(channel) {
   let currentUser;
   let intl;
   let intl2;
@@ -175,7 +175,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   return tmp6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnFriendAdded(arg0) {
   let closure_0;
   let tmp2;
   let tmp3;
@@ -208,7 +208,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = cResult[2];
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : ((arg0) => {
+}) : (function useOnFriendAdded(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   const effect = react.useEffect(() => {
@@ -227,7 +227,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((link) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInviteQRCodeActionSheet(link) {
   let items;
   let items1;
   let obj10;
@@ -308,7 +308,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((link) => {
               let tmp31 = null != tmp8;
               if (tmp31) {
                 const obj5 = { variant: "text-md/normal", children: tmp8.visible };
-                tmp31 = React4(tmp(4886).Text, obj5);
+                tmp31 = React4(tmp(5088).Text, obj5);
               }
               cResult[17] = tmp8;
               cResult[18] = tmp31;
@@ -375,7 +375,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((link) => {
   cResult[8] = plainText;
   cResult[9] = tmp21;
   tmp20 = tmp21;
-}) : ((link) => {
+}) : (function InstantInviteQRCodeActionSheet(link) {
   let items1;
   let obj4;
   let obj7;
@@ -400,14 +400,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((link) => {
     tmp9 = null;
     const obj = GuildStore;
     if (null != GuildStore.getGuild(channel.guild_id)) {
-      const obj2 = { guild: obj.getGuild(channel.guild_id), size: tmp5(5971).GuildIconSizes.LARGE };
+      const obj2 = { guild: obj.getGuild(channel.guild_id), size: tmp5(6159).GuildIconSizes.LARGE };
       const tmp12 = GuildIconDefault;
       tmp9 = React4(tmp12, obj2);
     }
   }
-  closure_13(tmp5(4567).presentFriendRequestAcceptedToast);
-  const obj3 = { header: React4(tmp5(6644).BottomSheetTitleHeader, { title: stringResult }), children: authStore(View, obj4) };
-  const ActionSheet = tmp5(6701).ActionSheet;
+  closure_13(tmp5(4808).presentFriendRequestAcceptedToast);
+  const obj3 = { header: React4(tmp5(6839).BottomSheetTitleHeader, { title: stringResult }), children: authStore(View, obj4) };
+  const ActionSheet = tmp5(6899).ActionSheet;
   const obj5 = { text: link, size: 240, style: tmp.code, accessibilityLabel: plainText };
   plainText = undefined;
   obj4 = { style: tmp.container, children: items1 };
@@ -427,7 +427,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((link) => {
   let tmp14Result2 = null != tmp8;
   if (tmp14Result2) {
     const obj8 = { variant: "text-md/normal", children: tmp8.visible };
-    tmp14Result2 = tmp14(tmp5(4886).Text, obj8);
+    tmp14Result2 = tmp14(tmp5(5088).Text, obj8);
   }
   items1[1] = tmp14Result2;
   return React4(ActionSheet, obj3);

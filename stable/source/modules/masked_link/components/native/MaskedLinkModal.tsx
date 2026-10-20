@@ -1,20 +1,20 @@
-// Module ID: 12755
-// Function ID: 12756
+// Module ID: 13055
+// Function ID: 13056
 // Name: MaskedLinkModal
-// Dependencies: [17, 21, 4890, 587, 558, 576, 12752, 1126, 5713, 5713, 4886, 8895, 5593, 2]
+// Dependencies: [17, 21, 5092, 587, 558, 576, 13052, 1126, 5305, 5305, 5088, 8575, 5377, 2]
 
-// Module 12755 (MaskedLinkModal)
+// Module 13055 (MaskedLinkModal)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Stack_Stack from "Stack/Stack" /* 5593 */;
-import AlertModal2 from "AlertModal" /* 5713 */;
-import Form from "Form" /* 8895 */;
-import SharedStateUtils from "SharedStateUtils" /* 12752 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import AlertModal2 from "AlertModal" /* 5305 */;
+import Stack_Stack from "Stack/Stack" /* 5377 */;
+import Form from "Form" /* 8575 */;
+import SharedStateUtils from "SharedStateUtils" /* 13052 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj2;
 let obj = { linkCalloutContainer: { maxHeight: 250 }, emphasis: obj2 };
 obj2 = { borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MaskedLinkModal(arg0) {
   let authorityPrefix;
   let handleCancel;
   let handleConfirm;
@@ -291,7 +291,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           }
                           const obj11 = { start: true, end: true, label: React3(_false, obj12) };
                           obj12 = { style: tmp4.linkCalloutContainer, children: tmp34 };
-                          const FormRow = tmp(8895).FormRow;
+                          const FormRow = tmp(8575).FormRow;
                           const tmp40 = React3(FormRow, obj11);
                           cResult[34] = tmp4.linkCalloutContainer;
                           cResult[35] = tmp34;
@@ -353,7 +353,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = url;
   cResult[4] = obj18;
   tmp5 = obj18;
-}) : ((isProtocol) => {
+}) : (function MaskedLinkModal(isProtocol) {
   let AlertActions;
   let FormRow;
   let Stack;
@@ -401,9 +401,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     formatResult = intl2.string(tmp2(1126).t.soRxRe);
   }
-  AlertActions = tmp2(5713).AlertActions;
+  AlertActions = tmp2(5305).AlertActions;
   const obj3 = { variant: "primary", onPress: handleConfirm, text: stringResult };
-  const AlertActionButton = tmp2(5713).AlertActionButton;
+  const AlertActionButton = tmp2(5305).AlertActionButton;
   const intl3 = tmp2(1126).intl;
   const string = intl3.string;
   const t = tmp2(1126).t;
@@ -415,16 +415,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   obj4 = { children: items };
   items = [React3(AlertActionButton, obj3, "confirm"), ];
   const obj5 = { onPress: handleCancel, variant: "secondary", text: intl4.string(intl6.t["/g10LC"]) };
-  const AlertActionButton2 = tmp2(5713).AlertActionButton;
+  const AlertActionButton2 = tmp2(5305).AlertActionButton;
   intl4 = tmp2(1126).intl;
   items[1] = React3(AlertActionButton2, obj5, "cancel");
   const obj6 = { style: tmp.emphasis, children: React3(FormRow, obj10) };
-  Stack = tmp2(5593).Stack;
+  Stack = tmp2(5377).Stack;
   const obj7 = { style: tmp.linkCalloutContainer, children: hasOwnProperty(Text, obj11) };
-  FormRow = tmp2(8895).FormRow;
-  Text = tmp2(4886).Text;
+  FormRow = tmp2(8575).FormRow;
+  Text = tmp2(5088).Text;
   let str = "text-md/normal";
-  const Text2 = tmp2(4886).Text;
+  const Text2 = tmp2(5088).Text;
   const tmp10 = _false;
   const tmp9 = React2;
   if (isProtocol) {
@@ -438,7 +438,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items1 = [protocol, authorityPrefix];
   const items2 = [hasOwnProperty(Text2, obj8), , ];
   let str3 = "text-md/semibold";
-  const Text3 = tmp2(4886).Text;
+  const Text3 = tmp2(5088).Text;
   if (isProtocol) {
     str3 = "text-md/normal";
   }
@@ -461,8 +461,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     },
     label: React3(Text4, { variant: "text-md/medium", children: formatResult1 })
   };
-  const FormCheckboxRow = tmp2(8895).FormCheckboxRow;
-  Text4 = tmp2(4886).Text;
+  const FormCheckboxRow = tmp2(8575).FormCheckboxRow;
+  Text4 = tmp2(5088).Text;
   const intl5 = tmp2(1126).intl;
   const format = intl5.format;
   const t2 = tmp2(1126).t;
