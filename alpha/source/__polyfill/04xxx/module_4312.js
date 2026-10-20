@@ -1,42 +1,69 @@
 // Module ID: 4312
 // Function ID: 4313
-// Dependencies: [2140]
+// Dependencies: [2079, 2080]
 
 // Module 4312
-import buildLocalizeFn from "buildLocalizeFn" /* 2140 */;
+import buildMatchFn from "buildMatchFn" /* 2079 */;
+import buildMatchPatternFn from "buildMatchPatternFn" /* 2080 */;
 
+let items;
+let items1;
+let items2;
+let items3;
 let obj;
+let obj10;
+let obj11;
+let obj12;
+let obj13;
+let obj14;
+let obj15;
 let obj3;
-let obj4;
 let obj5;
 let obj6;
 let obj7;
-if (!buildLocalizeFn) {
-  obj = { default: buildLocalizeFn };
-  const obj2 = { default: buildLocalizeFn };
+let obj8;
+let obj9;
+if (!buildMatchFn) {
+  obj = { default: buildMatchFn };
+  const obj2 = { default: buildMatchFn };
 } else {
-  obj = buildLocalizeFn;
+  obj = buildMatchFn;
 }
-const date = {
-  ordinalNumber(arg0, arg1) {
-    return Number(arg0) + ".";
-  },
-  era: obj.default(obj3),
-  quarter: obj.default(obj4),
-  month: obj.default(obj5),
-  day: obj.default(obj6),
-  dayPeriod: obj.default(obj7)
-};
-obj3 = { values: { narrow: ["fvt", "vt"], abbreviated: ["f.v.t.", "v.t."], wide: ["f\u00F8r vesterlandsk tidsregning", "vesterlandsk tidsregning"] }, defaultWidth: "wide" };
-obj4 = {
-  values: { narrow: ["1", "2", "3", "4"], abbreviated: ["1. kvt.", "2. kvt.", "3. kvt.", "4. kvt."], wide: ["1. kvartal", "2. kvartal", "3. kvartal", "4. kvartal"] },
-  defaultWidth: "wide",
-  argumentCallback(arg0) {
-    return arg0 - 1;
+if (!buildMatchPatternFn) {
+  obj3 = { default: buildMatchPatternFn };
+  const obj4 = { default: buildMatchPatternFn };
+} else {
+  obj3 = buildMatchPatternFn;
+}
+const date = { ordinalNumber: obj3.default(obj5), era: obj.default(obj6), quarter: obj.default(obj8), month: obj.default(obj10), day: obj.default(obj12), dayPeriod: obj.default(obj14) };
+obj6 = { matchPatterns: { narrow: /^(b\.?\s?c\.?|b\.?\s?c\.?\s?e\.?|a\.?\s?d\.?|c\.?\s?e\.?)/i, abbreviated: /^(b\.?\s?c\.?|b\.?\s?c\.?\s?e\.?|a\.?\s?d\.?|c\.?\s?e\.?)/i, wide: /^(기원전|서기)/i }, defaultMatchWidth: "wide", parsePatterns: obj7, defaultParseWidth: "any" };
+obj7 = { any: items };
+items = [/^(bc|기원전)/i, /^(ad|서기)/i];
+obj8 = {
+  matchPatterns: { narrow: /^[1234]/i, abbreviated: /^q[1234]/i, wide: /^[1234]사?분기/i },
+  defaultMatchWidth: "wide",
+  parsePatterns: obj9,
+  defaultParseWidth: "any",
+  valueCallback(arg0) {
+    return arg0 + 1;
   }
 };
-obj5 = { values: { narrow: ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], abbreviated: ["jan.", "feb.", "mar.", "apr.", "maj", "jun.", "jul.", "aug.", "sep.", "okt.", "nov.", "dec."], wide: ["januar", "februar", "marts", "april", "maj", "juni", "juli", "august", "september", "oktober", "november", "december"] }, defaultWidth: "wide" };
-obj6 = { values: { narrow: ["S", "M", "T", "O", "T", "F", "L"], short: ["s\u00F8", "ma", "ti", "on", "to", "fr", "l\u00F8"], abbreviated: ["s\u00F8n.", "man.", "tir.", "ons.", "tor.", "fre.", "l\u00F8r."], wide: ["s\u00F8ndag", "mandag", "tirsdag", "onsdag", "torsdag", "fredag", "l\u00F8rdag"] }, defaultWidth: "wide" };
-obj7 = { values: { narrow: { am: "a", pm: "p", midnight: "midnat", noon: "middag", morning: "morgen", afternoon: "eftermiddag", evening: "aften", night: "nat" }, abbreviated: { am: "AM", pm: "PM", midnight: "midnat", noon: "middag", morning: "morgen", afternoon: "eftermiddag", evening: "aften", night: "nat" }, wide: { am: "a.m.", pm: "p.m.", midnight: "midnat", noon: "middag", morning: "morgen", afternoon: "eftermiddag", evening: "aften", night: "nat" } }, defaultWidth: "wide", formattingValues: { narrow: { am: "a", pm: "p", midnight: "midnat", noon: "middag", morning: "om morgenen", afternoon: "om eftermiddagen", evening: "om aftenen", night: "om natten" }, abbreviated: { am: "AM", pm: "PM", midnight: "midnat", noon: "middag", morning: "om morgenen", afternoon: "om eftermiddagen", evening: "om aftenen", night: "om natten" }, wide: { am: "a.m.", pm: "p.m.", midnight: "midnat", noon: "middag", morning: "om morgenen", afternoon: "om eftermiddagen", evening: "om aftenen", night: "om natten" } }, defaultFormattingWidth: "wide" };
+obj9 = { any: items1 };
+items1 = [/1/i, /2/i, /3/i, /4/i];
+obj10 = { matchPatterns: { narrow: /^(1[012]|[123456789])/, abbreviated: /^(1[012]|[123456789])월/i, wide: /^(1[012]|[123456789])월/i }, defaultMatchWidth: "wide", parsePatterns: obj11, defaultParseWidth: "any" };
+obj11 = { any: items2 };
+items2 = [/^1월?$/, /^2/, /^3/, /^4/, /^5/, /^6/, /^7/, /^8/, /^9/, /^10/, /^11/, /^12/];
+obj12 = { matchPatterns: { narrow: /^[일월화수목금토]/, short: /^[일월화수목금토]/, abbreviated: /^[일월화수목금토]/, wide: /^[일월화수목금토]요일/ }, defaultMatchWidth: "wide", parsePatterns: obj13, defaultParseWidth: "any" };
+obj13 = { any: items3 };
+items3 = [/^일/, /^월/, /^화/, /^수/, /^목/, /^금/, /^토/];
+obj14 = { matchPatterns: { any: /^(am|pm|오전|오후|자정|정오|아침|저녁|밤)/i }, defaultMatchWidth: "any", parsePatterns: obj15, defaultParseWidth: "any" };
+obj15 = { any: { am: /^(am|오전)/i, pm: /^(pm|오후)/i, midnight: /^자정/i, noon: /^정오/i, morning: /^아침/i, afternoon: /^오후/i, evening: /^저녁/i, night: /^밤/i } };
+obj5 = {
+  matchPattern: /^(\d+)(일|번째)?/i,
+  parsePattern: /\d+/i,
+  valueCallback(match) {
+    return parseInt(match, 10);
+  }
+};
 
 export default date;

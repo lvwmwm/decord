@@ -1,37 +1,58 @@
 // Module ID: 15338
 // Function ID: 15339
-// Dependencies: [15339, 15342, 15324, 15346, 15347, 15343]
+// Dependencies: [15255, 15339]
+// Exports: getSupportedCurrencies
 
 // Module 15338
-import _mod15324 from "module_15324" /* 15324 */;
-import _mod15339 from "module_15339" /* 15339 */;
-import _mod15343 from "module_15343" /* 15343 */;
-import _mod15346 from "module_15346" /* 15346 */;
-import _mod15347 from "module_15347" /* 15347 */;
-import prop from "module_15342" /* 15342 */;
+import _mod15255 from "module_15255" /* 15255 */;
+import currencies2 from "currencies" /* 15339 */;
 
-let tmp2;
-let closure_2 = _mod15339("wks");
-const _Symbol = _mod15324.Symbol;
-if (prop) {
-  tmp2 = _Symbol.for || _mod15324.Symbol;
-  const tmp3 = _Symbol.for || _mod15324.Symbol;
-} else {
-  tmp2 = _Symbol && _mod15324.Symbol.withoutSetter || _mod15346;
-}
-let closure_3 = tmp2;
-
-export default (arg0) => {
-  if (!_mod15347(closure_2, arg0)) {
-    if (_mod15343) {
-      let tmp6;
-      const tmpResult = _mod15347;
-      if (tmpResult(_mod15324.Symbol, arg0)) {
-        tmp6 = tmp(15324).Symbol[arg0];
-      }
-      closure_2[arg0] = tmp6;
-    }
-    tmp6 = closure_3(`Symbol.${arg0}`);
+function isSupportedCurrency(arr3, locale) {
+  let str = locale;
+  if (undefined === locale) {
+    str = "en";
   }
-  return closure_2[arg0];
+  try {
+    const obj = { style: "currency", currencyDisplay: "name", currency: arr3 };
+    const memoizedNumberFormat = _mod15255.createMemoizedNumberFormat(str, obj);
+    const str2 = memoizedNumberFormat.format(123);
+    if (str2.substring(0, 3) !== arr3) {
+      if (str2.substring(str2.length - 3) !== arr3) {
+        return true;
+      }
+    }
+    return false;
+  } catch (err) {
+  }
+}
+
+export const getSupportedCurrencies = function getSupportedCurrencies(locale) {
+  let num;
+  const items = [];
+  const currencies = currencies2.currencies;
+  for (let num = 0; num < currencies.length; num = num + 1) {
+    let arr3 = currencies[num];
+    if (3 === arr3.length) {
+      if (isSupportedCurrency(arr3, locale)) {
+        let arr = items.push(arr3);
+      }
+    } else if (5 === arr3.length) {
+      if ("~" === arr3[3]) {
+        let indexOf = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf;
+        let index = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf(arr3[2]);
+        let indexOf2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf;
+        let index1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf(arr3[4]);
+        if (index <= index1) {
+          do {
+            let sum = arr3.substring(0, 2) + "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[index];
+            if (isSupportedCurrency(sum, locale)) {
+              let arr2 = items.push(sum);
+            }
+            index = index + 1;
+          } while (index <= index1);
+        }
+      }
+    }
+  }
+  return items;
 };

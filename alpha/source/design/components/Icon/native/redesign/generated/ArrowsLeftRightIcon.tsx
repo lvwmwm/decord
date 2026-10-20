@@ -1,14 +1,14 @@
-// Module ID: 18573
-// Function ID: 18574
+// Module ID: 18608
+// Function ID: 18609
 // Name: ArrowsLeftRightIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 18574, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 18609, 5630, 2]
 
-// Module 18573 (ArrowsLeftRightIcon)
+// Module 18608 (ArrowsLeftRightIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 18574 */;
+import BaseIconImage2 from "BaseIconImage" /* 5630 */;
+import AssetRegistry from "AssetRegistry" /* 18609 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ArrowsLeft
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4912).BaseIconImage;
+  const BaseIconImage = tmp(5630).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

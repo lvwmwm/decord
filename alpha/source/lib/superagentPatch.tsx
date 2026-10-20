@@ -1,21 +1,21 @@
-// Module ID: 18407
-// Function ID: 18408
+// Module ID: 18436
+// Function ID: 18437
 // Name: superagentPatch
-// Dependencies: [5, 5112, 1087, 1298, 18408, 1386, 1455, 584, 1297, 502, 1372, 2132, 1392, 1267, 1384, 18409, 1129, 18410, 18411, 7, 1257, 18414, 2002, 5983, 16734, 7297, 6379, 18424, 6159, 18425, 1483, 2]
+// Dependencies: [5, 5151, 1087, 1298, 18437, 1386, 1455, 584, 1297, 502, 1372, 2069, 1392, 1267, 1384, 18438, 1129, 18439, 18440, 7, 1257, 18443, 2002, 6420, 16763, 7364, 6780, 18453, 6596, 18454, 1483, 2]
 
-// Module 18407 (superagentPatch)
+// Module 18436 (superagentPatch)
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import Constants from "Constants" /* 1087 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import RequestDefault from "Request" /* 1298 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 7297 */;
-import IdGenerator from "IdGenerator" /* 18408 */;
-import getTimeZoneDefault from "getTimeZone" /* 18410 */;
-import trackHttpRequestDefault from "trackHttpRequest" /* 18411 */;
-import GuildLimitedAccessUtils from "GuildLimitedAccessUtils" /* 18424 */;
+import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 7364 */;
+import IdGenerator from "IdGenerator" /* 18437 */;
+import getTimeZoneDefault from "getTimeZone" /* 18439 */;
+import trackHttpRequestDefault from "trackHttpRequest" /* 18440 */;
+import GuildLimitedAccessUtils from "GuildLimitedAccessUtils" /* 18453 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ExperimentStore from "ExperimentStore" /* 5112 */;
+import ExperimentStore from "ExperimentStore" /* 5151 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import Dispatcher from "Dispatcher" /* 584 */;
 import HTTPUtils_mod from "HTTPUtils" /* 1297 */;
@@ -296,7 +296,7 @@ let obj3 = {
         captcha_key = body.captcha_key;
       }
       if (captcha_key) {
-        const items = [asyncRequire(18414, dependencyMap.paths), asyncRequire(5983, dependencyMap.paths)];
+        const items = [asyncRequire(18443, dependencyMap.paths), asyncRequire(6420, dependencyMap.paths)];
         const allResult = all(items);
         const nextPromise = allResult.then((result) => {
           const iter = result[Symbol.iterator]();
@@ -351,7 +351,7 @@ let obj3 = {
           mfa = body3.mfa;
         }
         if (mfa) {
-          const promise4 = asyncRequire(16734, dependencyMap.paths);
+          const promise4 = asyncRequire(16763, dependencyMap.paths);
           const nextPromise2 = promise4.then((openMFAModal) => {
             openMFAModal.openMFAModal(closure_0.body.mfa, closure_1, closure_2);
           });
@@ -369,7 +369,7 @@ let obj3 = {
       code1 = body4.code;
     }
     if (isLimitedAccessErrorCode(statusCode, code1)) {
-      const promise3 = asyncRequire(6379, dependencyMap.paths);
+      const promise3 = asyncRequire(6780, dependencyMap.paths);
       promise3.then((result) => {
         result.default();
       });
@@ -377,14 +377,14 @@ let obj3 = {
     } else {
       const body5 = statusCode.body;
       let code2;
-      const isLimitedAccessErrorCode2 = tmp7(18424).isLimitedAccessErrorCode;
+      const isLimitedAccessErrorCode2 = tmp7(18453).isLimitedAccessErrorCode;
       const statusCode2 = statusCode.statusCode;
       GuildLimitedAccessUtils;
       if (body5 != null) {
         code2 = body5.code;
       }
       if (isLimitedAccessErrorCode2(statusCode2, code2)) {
-        const promise2 = asyncRequire(6159, dependencyMap.paths);
+        const promise2 = asyncRequire(6596, dependencyMap.paths);
         promise2.then((result) => {
           const body = closure_0.body;
           let guild_id;
@@ -406,7 +406,7 @@ let obj3 = {
           flag = code3 === AbortCodes.RESTRICTED_HOURS_ACTIVE;
         }
         if (flag) {
-          const promise = asyncRequire(18425, dependencyMap.paths);
+          const promise = asyncRequire(18454, dependencyMap.paths);
           promise.then((openRestrictedHoursModal) => {
             const result = openRestrictedHoursModal.openRestrictedHoursModal();
           });

@@ -1,18 +1,18 @@
-// Module ID: 9495
-// Function ID: 9496
+// Module ID: 9509
+// Function ID: 9510
 // Name: QuestCopyUtils
-// Dependencies: [6228, 1128, 6235, 9476, 9477, 9480, 7672, 7162, 2]
+// Dependencies: [6658, 1128, 6665, 9488, 9489, 9492, 7735, 7231, 2]
 // Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getQuestUrl, getSortMethodText
 
-// Module 9495 (QuestCopyUtils)
+// Module 9509 (QuestCopyUtils)
 import intl7 from "intl" /* 1128 */;
-import AdCreativeType from "AdCreativeType" /* 6235 */;
-import ClipboardUtils from "ClipboardUtils" /* 7162 */;
-import AnalyticsActions from "AnalyticsActions" /* 7672 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9476 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9477 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9480 */;
-import QuestConstants from "QuestConstants" /* 6228 */;
+import AdCreativeType from "AdCreativeType" /* 6665 */;
+import ClipboardUtils from "ClipboardUtils" /* 7231 */;
+import AnalyticsActions from "AnalyticsActions" /* 7735 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9488 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9489 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9492 */;
+import QuestConstants from "QuestConstants" /* 6658 */;
 import size from "module_2" /* 2 */;
 
 let c2;

@@ -1,20 +1,20 @@
-// Module ID: 10816
-// Function ID: 10817
+// Module ID: 10828
+// Function ID: 10829
 // Name: GiftCodeActionCreators
-// Dependencies: [5, 5540, 7530, 7538, 1087, 1394, 584, 5889, 6357, 7529, 5891, 4887, 1257, 1297, 10817, 10818, 2]
+// Dependencies: [5, 2046, 7596, 7604, 1087, 1394, 584, 6326, 6757, 7595, 6328, 4772, 1257, 1297, 10829, 10830, 2]
 // Exports: deliverGiftCodes, reportUnexpectedGiftCodeError, resolveGiftCode
 
-// Module 10816 (GiftCodeActionCreators)
+// Module 10828 (GiftCodeActionCreators)
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4887 */;
-import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7538 */;
-import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 10817 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 10818 */;
+import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4772 */;
+import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7604 */;
+import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 10829 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 10830 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;
+import ApplicationStore from "ApplicationStore" /* 2046 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7596 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -78,7 +78,7 @@ let obj = function _resolveGiftCode() {
               product = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

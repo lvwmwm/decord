@@ -1,13 +1,13 @@
-// Module ID: 9380
-// Function ID: 9381
+// Module ID: 9396
+// Function ID: 9397
 // Name: CollectiblesShopManager
-// Dependencies: [9379, 8618, 8617, 9381, 584, 2]
+// Dependencies: [9395, 8634, 8633, 9397, 584, 2]
 
-// Module 9380 (CollectiblesShopManager)
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8617 */;
-import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 9381 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9379 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 8618 */;
+// Module 9396 (CollectiblesShopManager)
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8633 */;
+import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 9397 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9395 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 8634 */;
 import Dispatcher from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

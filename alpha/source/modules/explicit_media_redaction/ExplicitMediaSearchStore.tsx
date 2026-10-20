@@ -1,13 +1,13 @@
-// Module ID: 14774
-// Function ID: 14775
+// Module ID: 14807
+// Function ID: 14808
 // Name: ExplicitMediaSearchStore
-// Dependencies: [5534, 7585, 504, 584, 2]
+// Dependencies: [5967, 7648, 504, 584, 2]
 
-// Module 14774 (ExplicitMediaSearchStore)
+// Module 14807 (ExplicitMediaSearchStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5534 */;
-import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7585 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5967 */;
+import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7648 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, messages;

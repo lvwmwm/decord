@@ -1,103 +1,115 @@
 // Module ID: 10275
 // Function ID: 10276
-// Dependencies: [41, 42, 93, 95, 98, 10273, 10126]
+// Dependencies: [10129, 10136, 10138, 10162, 10276, 10278, 10279, 10280, 10281, 10282, 10283, 10284, 10169]
+// Exports: createCasualConfiguration, parse, parseDate
 
 // Module 10275
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10126 */;
-import _mod10273 from "module_10273" /* 10273 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod10162 from "module_10162" /* 10162 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10169 */;
+import _mod10276 from "module_10276" /* 10276 */;
+import _mod10278 from "module_10278" /* 10278 */;
+import _mod10279 from "module_10279" /* 10279 */;
+import _mod10280 from "module_10280" /* 10280 */;
+import _mod10281 from "module_10281" /* 10281 */;
+import _mod10282 from "module_10282" /* 10282 */;
+import _mod10283 from "module_10283" /* 10283 */;
+import _mod10284 from "module_10284" /* 10284 */;
+import { Chrono } from "module_10129" /* 10129 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+const require = globalThis.__r;
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+function createConfiguration(flag, arg1) {
+  let items;
+  let items1;
+  if (flag === undefined) {
+    flag = true;
   }
+  let flag2 = arg1;
+  if (arg1 === undefined) {
+    flag2 = true;
+  }
+  const obj = { parsers: items, refiners: items1 };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_10162.default(flag2), , , , ];
+  new module_10162.default(flag2);
+  items[1] = new module_10276.default();
+  new module_10276.default();
+  items[2] = new module_10278.default();
+  new module_10278.default();
+  items[3] = new module_10281.default();
+  new module_10281.default();
+  items[4] = new module_10284.default();
+  new module_10284.default();
+  items1 = [new module_10279.default(), ];
+  new module_10279.default();
+  items1[1] = new module_10280.default();
+  new module_10280.default();
+  return includeCommonConfiguration(obj, flag);
 }
-class AbstractParserWithLeftBoundaryChecking {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, AbstractParserWithLeftBoundaryChecking);
-    const obj = _getPrototypeOf(AbstractParserWithLeftBoundaryChecking);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
   }
+  return tmp2;
+});
+function createCasualConfiguration() {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = true;
+  }
+  const tmp = createConfiguration(false, flag);
+  const parsers = tmp.parsers;
+  const push = parsers.push;
+  const _default = new module_10282.default();
+  push(_default);
+  const parsers1 = tmp.parsers;
+  const push2 = parsers1.push;
+  const _default1 = new module_10283.default();
+  push2(_default1);
+  return tmp;
 }
-_inherits(AbstractParserWithLeftBoundaryChecking, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
-const entry = {
-  key: "patternLeftBoundary",
-  value: function patternLeftBoundary() {
-    return _mod10273.REGEX_PARTS.leftBoundary;
-  }
+const module_10162 = fn(_mod10162);
+const module_10276 = fn(_mod10276);
+const module_10278 = fn(_mod10278);
+const module_10279 = fn(_mod10279);
+const module_10280 = fn(_mod10280);
+const module_10281 = fn(_mod10281);
+const module_10282 = fn(_mod10282);
+const module_10283 = fn(_mod10283);
+const module_10284 = fn(_mod10284);
+const configuration = createConfiguration(false, true);
+let parsers = configuration.parsers;
+let push = parsers.push;
+let _default = new module_10282.default();
+push(_default);
+let parsers1 = configuration.parsers;
+let push2 = parsers1.push;
+let _default1 = new module_10283.default();
+push2(_default1);
+const chrono = new Chrono(configuration);
+const chrono1 = new require("module_10129").Chrono(createConfiguration(true));
+const Chrono_export = require("module_10129").Chrono;
+
+export const parse = function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
 };
-const items = [
-  entry,
-  {
-    key: "innerPattern",
-    value: function innerPattern(arg0) {
-      const innerPatternStringResult = this.innerPatternString(arg0);
-      const regExp = new RegExp(innerPatternStringResult, _mod10273.REGEX_PARTS.flags);
-      return regExp;
-    }
-  },
-  {
-    key: "innerPatternHasChange",
-    value: function innerPatternHasChange(arg0, arg1) {
-      return false;
-    }
-  }
-];
-const _moduleResult = _createClass(AbstractParserWithLeftBoundaryChecking, items);
-class AbstractParserWithLeftRightBoundaryChecking {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, AbstractParserWithLeftRightBoundaryChecking);
-    const obj = _getPrototypeOf(AbstractParserWithLeftRightBoundaryChecking);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(AbstractParserWithLeftRightBoundaryChecking, _moduleResult);
-const entry1 = {
-  key: "innerPattern",
-  value: function innerPattern(arg0) {
-    const innerPatternStringResult = this.innerPatternString(arg0);
-    const combined = "" + innerPatternStringResult + _mod10273.REGEX_PARTS.rightBoundary;
-    const regExp = new RegExp(combined, _mod10273.REGEX_PARTS.flags);
-    return regExp;
-  }
+export const parseDate = function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
 };
-const items1 = [entry1];
-const AbstractParserWithLeftBoundaryChecking_export = _moduleResult;
-const AbstractParserWithLeftRightBoundaryChecking_export = _createClass(AbstractParserWithLeftRightBoundaryChecking, items1);
-
-export { AbstractParserWithLeftBoundaryChecking_export as AbstractParserWithLeftBoundaryChecking };
-export { AbstractParserWithLeftRightBoundaryChecking_export as AbstractParserWithLeftRightBoundaryChecking };
+export { createCasualConfiguration };
+export { createConfiguration };
+export { Chrono_export as Chrono };
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const casual = chrono;
+export const strict = chrono1;

@@ -1,9 +1,9 @@
-// Module ID: 17423
-// Function ID: 17424
+// Module ID: 17452
+// Function ID: 17453
 // Name: ChannelAffinitiesV2Constants
 // Dependencies: [1104, 2]
 
-// Module 17423 (ChannelAffinitiesV2Constants)
+// Module 17452 (ChannelAffinitiesV2Constants)
 import DurationsDefault from "Durations" /* 1104 */;
 import size from "module_2" /* 2 */;
 

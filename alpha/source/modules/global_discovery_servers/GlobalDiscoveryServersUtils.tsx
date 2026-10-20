@@ -1,17 +1,17 @@
-// Module ID: 19049
-// Function ID: 19050
+// Module ID: 19088
+// Function ID: 19089
 // Name: GlobalDiscoveryServersUtils
-// Dependencies: [5, 2132, 8912, 1087, 1128, 1388, 7328, 1267, 1281, 2]
+// Dependencies: [5, 2069, 8928, 1087, 1128, 1388, 7394, 1267, 1281, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 19049 (GlobalDiscoveryServersUtils)
+// Module 19088 (GlobalDiscoveryServersUtils)
 import Constants from "Constants" /* 1087 */;
 import intl8 from "intl" /* 1128 */;
 import v1 from "v1" /* 1281 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2132 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8912 */;
+import LocaleStore from "LocaleStore" /* 2069 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8928 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -70,7 +70,7 @@ let obj = function _navigateToGuild() {
             obj6 = undefined;
             category_id = 1;
             _location = 1;
-            return { value: "Reflect", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === category_id) {
           if (arg0 === 1) {

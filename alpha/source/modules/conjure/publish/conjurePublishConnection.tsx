@@ -1,15 +1,14 @@
-// Module ID: 11065
-// Function ID: 11066
+// Module ID: 11079
+// Function ID: 11080
 // Name: conjurePublishConnection
-// Dependencies: [6293, 10993, 584, 11057, 10998, 2]
+// Dependencies: [11005, 584, 11071, 11010, 2]
 // Exports: draftPatchNotes, preparePublish, publishProject, recordPatchNotesSent, rejectPendingPublish
 
-// Module 11065 (conjurePublishConnection)
+// Module 11079 (conjurePublishConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10998 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11057 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10993 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 11010 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11071 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11005 */;
 import size from "module_2" /* 2 */;
 
 function rejectPendingPatchNotesDraft(projectId, arg1) {
@@ -286,19 +285,13 @@ export const draftPatchNotes = function draftPatchNotes(c0) {
           reject(error);
         }
       }, 45000);
-      const obj3 = { resolve, reject, timeout: timerId, nonce: combined };
-      const result = map1.set(tmp, obj3);
-      const obj2 = map1;
+      const obj2 = { resolve, reject, timeout: timerId, nonce: combined };
+      const result = map1.set(tmp, obj2);
+      const obj3 = map1;
       try {
-        const sendDraftPatchNotes = conjureSocket.sendDraftPatchNotes;
-        const project = ConjureProjectStore.getProject(tmp);
-        let name;
-        if (project != null) {
-          name = project.name;
-        }
-        sendDraftPatchNotes(combined, name);
+        conjureSocket.sendDraftPatchNotes(combined);
       } catch (error) {
-        obj2.delete(tmp);
+        obj3.delete(tmp);
         let _clearTimeout = clearTimeout;
         clearTimeout(timerId);
         const _Error2 = Error;

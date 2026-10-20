@@ -1,14 +1,14 @@
-// Module ID: 16604
-// Function ID: 16605
+// Module ID: 16633
+// Function ID: 16634
 // Name: ChangeLogSetting
-// Dependencies: [1087, 11084, 1128, 5145, 16605, 2]
+// Dependencies: [1087, 11099, 1128, 5648, 16634, 2]
 
-// Module 16604 (ChangeLogSetting)
+// Module 16633 (ChangeLogSetting)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5145 */;
-import ChangeLogModal from "ChangeLogModal" /* 16605 */;
-import SettingBuilders from "SettingBuilders" /* 11084 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5648 */;
+import ChangeLogModal from "ChangeLogModal" /* 16634 */;
+import SettingBuilders from "SettingBuilders" /* 11099 */;
 import size from "module_2" /* 2 */;
 
 const UserSettingsSections = Constants.UserSettingsSections;

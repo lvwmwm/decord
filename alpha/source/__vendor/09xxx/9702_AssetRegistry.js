@@ -1,0 +1,10 @@
+// Module ID: 9702
+// Function ID: 9703
+// Name: AssetRegistry
+// Dependencies: [1134]
+
+// Module 9702 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1134 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/wumpus", width: 84, height: 66, scales: [1], hash: "6186005757c9a6da5db2aeedc6cf425e", name: "wumpus-wizard", type: "png" });

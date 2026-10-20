@@ -1,17 +1,17 @@
-// Module ID: 10798
-// Function ID: 10799
+// Module ID: 10811
+// Function ID: 10812
 // Name: UnreadSettingNotice
-// Dependencies: [19, 17, 1097, 21, 5191, 587, 558, 576, 10799, 5187, 1128, 10800, 6462, 2]
+// Dependencies: [19, 17, 1097, 21, 4945, 587, 558, 576, 10812, 5195, 1128, 10813, 6856, 2]
 
-// Module 10798 (UnreadSettingNotice)
+// Module 10811 (UnreadSettingNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
-import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 10799 */;
-import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 10800 */;
+import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 10812 */;
+import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 10813 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadSett
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-md/semibold", children: intl.string(require("intl").t.i4xQ5o) };
-    const Text = tmp(5187).Text;
+    const Text = tmp(5195).Text;
     intl = tmp(1128).intl;
     const tmp11 = closure_5(Text, obj3);
     cResult[2] = tmp11;
@@ -84,7 +84,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadSett
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { variant: "text-xs/medium", color: "text-link", children: intl2.string(require("intl").t.KyUKhT) };
-    const Text2 = tmp(5187).Text;
+    const Text2 = tmp(5195).Text;
     intl2 = tmp(1128).intl;
     const tmp19 = closure_5(Text2, obj5);
     cResult[7] = tmp19;

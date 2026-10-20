@@ -1,16 +1,16 @@
-// Module ID: 14263
-// Function ID: 14264
+// Module ID: 14296
+// Function ID: 14297
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 5191, 14258, 558, 576, 5187, 12, 7091, 2]
+// Dependencies: [32, 19, 17, 21, 4945, 14291, 558, 576, 5195, 12, 7168, 2]
 
-// Module 14263 (EditCollectiblesPickerList)
+// Module 14296 (EditCollectiblesPickerList)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 14258 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 14291 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,12 +18,12 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const Text_Text = tmp(5187);
+const Text_Text = tmp(5195);
 let react = react_mod;
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = react_native);
 const jsx = Fragment.jsx;
-let obj = { list: { flex: 1, marginTop: 12 }, listContent: { paddingBottom: 88 }, loadingContainer: { paddingVertical: 80, alignItems: "center" }, header: obj2 };
-obj2 = { paddingHorizontal: useCollectibleListLayout.GUTTER_SIZE, paddingTop: 10, paddingBottom: 5 };
+let obj = { list: { flex: 1 }, listContent: { paddingBottom: 88 }, loadingContainer: { paddingVertical: 80, alignItems: "center" }, header: obj2 };
+obj2 = { paddingHorizontal: useCollectibleListLayout.GUTTER_SIZE, paddingBottom: 5 };
 let closure_7 = createStyles.createStyles(obj);
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -60,9 +60,7 @@ let closure_8 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function De
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCollectiblesPickerList(renderRow) {
   let closure_3;
-  let contentContainerStyle;
   let first;
-  let isFetching;
   let sections;
   let selectedSkuId;
   let tmp10;
@@ -71,7 +69,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCollecti
   const cResult = obj.c(21);
   ({ sections, selectedSkuId } = renderRow);
   renderRow = renderRow.renderRow;
-  ({ isFetching, contentContainerStyle } = renderRow);
+  const isFetching = renderRow.isFetching;
   let tmp4 = undefined !== isFetching && isFetching;
   const tmp5 = closure_7();
   const tmp6 = _slicedToArray(react.useState(0), 2);
@@ -125,132 +123,116 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCollecti
       let tmp13;
       let tmp14;
       let tmp15;
+      let tmp19;
       if (cResult[6] === selectedSkuId) {
         tmp13 = cResult[7];
       }
       const _Symbol2 = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        class F {
-          constructor(type) {
-            return type.type;
-          }
-        }
-        cResult[8] = F;
-        tmp14 = F;
+        const fn2 = function z(type) {
+          return type.type;
+        };
+        cResult[8] = fn2;
+        tmp14 = fn2;
       } else {
-        class F {
-          constructor(type) {
-            return type.type;
-          }
-        }
+        tmp14 = cResult[8];
       }
       const _Symbol3 = Symbol;
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        class O {
+        class H {
           constructor(key) {
             return key.key;
           }
         }
-        cResult[9] = O;
-        tmp15 = O;
+        cResult[9] = H;
+        tmp15 = H;
       } else {
-        class O {
+        class H {
           constructor(key) {
             return key.key;
           }
         }
       }
       if (tmp4) {
-        let tmp19;
-        let tmp22;
-        class O {
+        let tmp20;
+        let tmp23;
+        class H {
           constructor(key) {
             return key.key;
           }
         }
         if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-          class O {
+          class H {
             constructor(key) {
               return key.key;
             }
           }
-          const tmp21 = <num animating size="large" />;
-          cResult[10] = tmp21;
-          tmp19 = tmp21;
+          const tmp22 = <num animating size="large" />;
+          cResult[10] = tmp22;
+          tmp20 = tmp22;
         } else {
-          class O {
+          class H {
             constructor(key) {
               return key.key;
             }
           }
         }
         if (cResult[11] !== tmp5.loadingContainer) {
-          class O {
+          class H {
             constructor(key) {
               return key.key;
             }
           }
-          const tmp24 = <closure_5 style={tmp5.loadingContainer}>{tmp19}</closure_5>;
+          const tmp25 = <closure_5 style={tmp5.loadingContainer}>{tmp20}</closure_5>;
           cResult[11] = tmp5.loadingContainer;
-          cResult[12] = tmp24;
-          tmp22 = tmp24;
+          cResult[12] = tmp25;
+          tmp23 = tmp25;
         } else {
-          class O {
+          class H {
             constructor(key) {
               return key.key;
             }
           }
         }
-        return tmp22;
+        tmp19 = tmp23;
       } else {
-        class O {
+        class H {
           constructor(key) {
             return key.key;
-          }
-        }
-        if (contentContainerStyle == null) {
-          class O {
-            constructor(key) {
-              return key.key;
-            }
-          }
-        }
-        if (cResult[13] === tmp10) {
-          class O {
-            constructor(key) {
-              return key.key;
-            }
           }
         }
         cResult[13] = tmp10;
         cResult[14] = tmp13;
         cResult[15] = selectedSkuId;
-        cResult[16] = contentContainerStyle;
-        cResult[17] = jsx(selectedSkuId(renderRow[10]).BottomSheetFlashList, { data: tmp10, renderItem: tmp13, getItemType: tmp14, keyExtractor: tmp15, extraData: selectedSkuId, contentContainerStyle, onLayout: first, keyboardShouldPersistTaps: "always" });
-        const tmp18 = jsx(selectedSkuId(renderRow[10]).BottomSheetFlashList, { data: tmp10, renderItem: tmp13, getItemType: tmp14, keyExtractor: tmp15, extraData: selectedSkuId, contentContainerStyle, onLayout: first, keyboardShouldPersistTaps: "always" });
+        cResult[16] = tmp5.listContent;
+        cResult[17] = jsx(selectedSkuId(renderRow[10]).BottomSheetFlashList, { data: tmp10, renderItem: tmp13, getItemType: tmp14, keyExtractor: tmp15, extraData: selectedSkuId, contentContainerStyle: tmp5.listContent, onLayout: first, keyboardShouldPersistTaps: "always" });
+        const tmp18 = jsx(selectedSkuId(renderRow[10]).BottomSheetFlashList, { data: tmp10, renderItem: tmp13, getItemType: tmp14, keyExtractor: tmp15, extraData: selectedSkuId, contentContainerStyle: tmp5.listContent, onLayout: first, keyboardShouldPersistTaps: "always" });
       }
+      return tmp19;
     }
   }
-  const fn2 = function $(item) {
-    let tmp4;
-    item = item.item;
-    if ("header" === item.type) {
-      tmp4 = <closure_8 header={item.header} />;
-    } else {
-      const obj = { items: item.items, size: num, selectedSkuId };
-      tmp4 = renderRow(obj);
+  class Z {
+    constructor(item) {
+      let tmp4;
+      item = item.item;
+      if ("header" === item.type) {
+        tmp4 = <closure_8 header={item.header} />;
+      } else {
+        const obj = { items: item.items, size: num, selectedSkuId };
+        tmp4 = renderRow(obj);
+      }
+      return tmp4;
     }
-    return tmp4;
-  };
+  }
   cResult[4] = num;
   cResult[5] = renderRow;
   cResult[6] = selectedSkuId;
-  cResult[7] = fn2;
-  tmp13 = fn2;
+  cResult[7] = Z;
+  tmp13 = Z;
 }) : (function EditCollectiblesPickerList(sections) {
   let _undefined;
   let c4;
-  let tmp17;
+  let tmp16;
   let tmp3;
   sections = sections.sections;
   const selectedSkuId = sections.selectedSkuId;
@@ -259,7 +241,6 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCollecti
   if (flag === undefined) {
     flag = false;
   }
-  let listContent = sections.contentContainerStyle;
   c4 = undefined;
   const tmp = closure_7();
   let obj = flag;
@@ -310,17 +291,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCollecti
   if (flag) {
     obj2.style = tmp.loadingContainer;
     obj2.children = <c4 animating size="large" />;
-    tmp17 = obj2;
+    tmp16 = obj2;
   } else {
     obj2.style = tmp.list;
-    const BottomSheetFlashList = sections(selectedSkuId[10]).BottomSheetFlashList;
-    if (listContent == null) {
-      listContent = tmp.listContent;
-    }
-    obj2.children = <BottomSheetFlashList data={memo} renderItem={callback1} getItemType={callback2} keyExtractor={tmp11} extraData={selectedSkuId} contentContainerStyle={listContent} onLayout={callback} keyboardShouldPersistTaps="always" />;
-    tmp17 = obj2;
+    obj2.children = jsx(sections(selectedSkuId[10]).BottomSheetFlashList, { data: memo, renderItem: callback1, getItemType: callback2, keyExtractor: tmp11, extraData: selectedSkuId, contentContainerStyle: tmp.listContent, onLayout: callback, keyboardShouldPersistTaps: "always" });
+    tmp16 = obj2;
   }
-  return <tmp13 {...tmp17} />;
+  return <tmp13 {...tmp16} />;
 });
 const result = size.fileFinishedImporting("modules/collectibles/native/EditCollectiblesPickerList.tsx");
 

@@ -1,22 +1,22 @@
-// Module ID: 13541
-// Function ID: 13542
+// Module ID: 13575
+// Function ID: 13576
 // Name: InAppNotificationSettingsModal
-// Dependencies: [19, 2072, 2068, 4855, 6222, 1392, 1087, 21, 7086, 7081, 5521, 8855, 1128, 13542, 7370, 558, 576, 504, 6478, 6965, 2]
+// Dependencies: [19, 4804, 4800, 4890, 6652, 1392, 1087, 21, 7163, 7158, 5565, 8871, 1128, 13576, 7436, 558, 576, 504, 6872, 7043, 2]
 
-// Module 13541 (InAppNotificationSettingsModal)
+// Module 13575 (InAppNotificationSettingsModal)
 import intl4 from "intl" /* 1128 */;
-import ChannelRecord from "ChannelRecord" /* 2072 */;
-import useChannelName from "useChannelName" /* 5521 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6478 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7081 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7086 */;
-import openUserSettings from "openUserSettings" /* 7370 */;
-import Form2 from "Form" /* 8855 */;
-import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 13542 */;
+import ChannelRecord from "ChannelRecord" /* 4804 */;
+import useChannelName from "useChannelName" /* 5565 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6872 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7158 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7163 */;
+import openUserSettings from "openUserSettings" /* 7436 */;
+import Form2 from "Form" /* 8871 */;
+import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 13576 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import RelationshipStore from "RelationshipStore" /* 4890 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6652 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
@@ -290,7 +290,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     obj3 = NavigatorHeader2;
     return obj;
   }, items);
-  return closure_11(channelId(6965).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
+  return closure_11(channelId(7043).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
 }));
 let result = size.fileFinishedImporting("components_native/InAppNotificationSettingsModal.tsx");
 

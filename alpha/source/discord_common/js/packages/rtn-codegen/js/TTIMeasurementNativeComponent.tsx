@@ -1,9 +1,9 @@
-// Module ID: 12644
-// Function ID: 12645
+// Module ID: 12664
+// Function ID: 12665
 // Name: TTIMeasurementNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 12644 (TTIMeasurementNativeComponent)
+// Module 12664 (TTIMeasurementNativeComponent)
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

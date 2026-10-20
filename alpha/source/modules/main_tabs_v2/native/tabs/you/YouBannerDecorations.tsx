@@ -1,28 +1,28 @@
-// Module ID: 9419
-// Function ID: 9420
+// Module ID: 9435
+// Function ID: 9436
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 2133, 1392, 2065, 1394, 21, 1385, 587, 5191, 558, 9420, 7438, 5033, 2052, 1128, 504, 8584, 8627, 8638, 5065, 683, 4864, 9462, 9468, 6356, 9469, 9470, 6231, 5155, 13930, 2002, 13931, 12163, 3883, 13934, 13936, 9327, 7368, 13933, 5491, 2]
+// Dependencies: [19, 17, 2070, 1392, 4797, 1394, 21, 1385, 587, 4945, 558, 9436, 7505, 4970, 4784, 1128, 504, 8600, 8643, 8654, 4952, 683, 2054, 9478, 9480, 6756, 9481, 9482, 6661, 5171, 13964, 2002, 13965, 12183, 3820, 13968, 13970, 9343, 7434, 13967, 5219, 2]
 // Exports: getFloatingNavBottomMargin
 
-// Module 9419 (YouBannerDecorations)
+// Module 9435 (YouBannerDecorations)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import dismissible_content from "dismissible_content" /* 2052 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2133 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
-import QuestTypes from "QuestTypes" /* 6231 */;
-import useTrialOffer from "useTrialOffer" /* 7438 */;
-import PromotionsHooks from "PromotionsHooks" /* 9420 */;
-import tracking_Tracking from "tracking/Tracking" /* 9469 */;
-import QuestUtils from "QuestUtils" /* 9470 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2070 */;
+import dismissible_content from "dismissible_content" /* 4784 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4970 */;
+import QuestTypes from "QuestTypes" /* 6661 */;
+import useTrialOffer from "useTrialOffer" /* 7505 */;
+import PromotionsHooks from "PromotionsHooks" /* 9436 */;
+import tracking_Tracking from "tracking/Tracking" /* 9481 */;
+import QuestUtils from "QuestUtils" /* 9482 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -206,11 +206,11 @@ const memoResult = react.memo(function YouBannerDecorations(navigateToSettings) 
     let tmp5 = currentUser;
     if (tmp5) {
       const tmpResult = DismissibleContentUnsafeUtils;
-      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(2052).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(4784).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
     }
     if (tmp5) {
       const tmpResult2 = DismissibleContentUnsafeUtils;
-      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(2052).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(4784).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
     }
   }, items2);
   const items4 = [showBadge, dismissBadge];
@@ -254,7 +254,7 @@ const memoResult = react.memo(function YouBannerDecorations(navigateToSettings) 
     tmp29Result = tmp29(tmp5Result6, obj5, "nitro");
   }
   items5[3] = tmp29Result;
-  const obj6 = { ref: settingsButtonRef, IconComponent: navigateToSettings(gradientSecondaryBackground[38]).SettingsIcon, accessibilityLabel: intl5.string(navigateToSettings(gradientSecondaryBackground[15]).t["3D5yo/"]), onPress: callback, showRedDot: tmp14 };
+  const obj6 = { ref: settingsButtonRef, IconComponent: navigateToSettings(gradientSecondaryBackground[38]).SettingsIcon, accessibilityLabel: intl5.string(navigateToSettings(gradientSecondaryBackground[15]).t["3D5yo/"]), onPress: callback, showRedDot: tmp14, testID: "you_tab_settings_button" };
   const tmp5Result7 = tmp5(gradientSecondaryBackground[32]);
   intl5 = tmp2(tmp3[15]).intl;
   items5[4] = closure_10(tmp5Result7, obj6, "settings");

@@ -1,14 +1,14 @@
-// Module ID: 13205
-// Function ID: 13206
+// Module ID: 13237
+// Function ID: 13238
 // Name: powerupListing
-// Dependencies: [32, 19, 5103, 5104, 5107, 558, 576, 504, 2]
+// Dependencies: [32, 19, 5142, 5143, 5146, 558, 576, 504, 2]
 
-// Module 13205 (powerupListing)
-import Powerups from "Powerups" /* 5107 */;
+// Module 13237 (powerupListing)
+import Powerups from "Powerups" /* 5146 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5103 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5104 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5142 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5143 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,27 +1,27 @@
-// Module ID: 18348
-// Function ID: 18349
+// Module ID: 18377
+// Function ID: 18378
 // Name: StreamReportProblemActionSheet
-// Dependencies: [19, 5207, 1087, 21, 5191, 587, 558, 576, 7691, 1267, 5496, 18349, 5155, 4903, 18350, 7171, 7117, 1128, 7175, 6584, 2]
+// Dependencies: [19, 5674, 1087, 21, 4945, 587, 558, 576, 7754, 1267, 5224, 18378, 5171, 5624, 18379, 7240, 7194, 1128, 7244, 5230, 2]
 
-// Module 18348 (StreamReportProblemActionSheet)
+// Module 18377 (StreamReportProblemActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ToastUtils from "ToastUtils" /* 4903 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import useMountEffectDefault from "useMountEffect" /* 5496 */;
-import BottomSheetModal from "BottomSheetModal" /* 6584 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7117 */;
-import ActionSheetRow from "ActionSheetRow" /* 7171 */;
-import ActionSheet2 from "ActionSheet" /* 7175 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7691 */;
-import trackStreamProblemDefault from "trackStreamProblem" /* 18349 */;
-import getStreamIssueReportOptionsDefault from "getStreamIssueReportOptions" /* 18350 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
+import useMountEffectDefault from "useMountEffect" /* 5224 */;
+import BottomSheetModal from "BottomSheetModal" /* 5230 */;
+import ToastUtils from "ToastUtils" /* 5624 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7194 */;
+import ActionSheetRow from "ActionSheetRow" /* 7240 */;
+import ActionSheet2 from "ActionSheet" /* 7244 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7754 */;
+import trackStreamProblemDefault from "trackStreamProblem" /* 18378 */;
+import getStreamIssueReportOptionsDefault from "getStreamIssueReportOptions" /* 18379 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5207 */;
-import createStyles from "createStyles" /* 5191 */;
+import PresenceStore from "PresenceStore" /* 5674 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReportProb
   } else {
     tmp5 = cResult[1];
   }
-  analyticsData(5496)(tmp5);
+  analyticsData(5224)(tmp5);
   const tmp6 = analyticsData;
   if (cResult[2] === analyticsData) {
     let tmp8;
@@ -81,7 +81,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReportProb
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const BottomSheetTitleHeader = tmp(7117).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(7194).BottomSheetTitleHeader;
       const intl = tmp(1128).intl;
       const tmp13 = <BottomSheetTitleHeader title={intl.string(tmp(1128).t.XuqqwI)} />;
       cResult[5] = tmp13;
@@ -90,7 +90,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReportProb
       tmp11 = cResult[5];
     }
     if (cResult[6] !== tmp8) {
-      const tmp16 = jsx(tmp(7171).ActionSheetRow.Group, { hasIcons: false, children: tmp8 });
+      const tmp16 = jsx(tmp(7240).ActionSheetRow.Group, { hasIcons: false, children: tmp8 });
       cResult[6] = tmp8;
       cResult[7] = tmp16;
       tmp14 = tmp16;
@@ -104,14 +104,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReportProb
       }
       return tmp17;
     }
-    const ActionSheet = tmp(7175).ActionSheet;
+    const ActionSheet = tmp(7244).ActionSheet;
     const tmp19 = <ActionSheet scrollable header={tmp11}>{null}</ActionSheet>;
     cResult[8] = tmp4.container;
     cResult[9] = tmp14;
     cResult[10] = tmp19;
     tmp17 = tmp19;
   }
-  const arr = tmp6(18350)({ isStreamer: false, isEndStream: false });
+  const arr = tmp6(18379)({ isStreamer: false, isEndStream: false });
   const mapped = arr.map((label, index) => {
     let value;
     stream = label.value;

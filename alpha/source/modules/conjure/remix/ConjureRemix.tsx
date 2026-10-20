@@ -1,16 +1,16 @@
-// Module ID: 11628
-// Function ID: 11629
+// Module ID: 11649
+// Function ID: 11650
 // Name: ConjureRemix
-// Dependencies: [5, 10978, 1128, 3883, 11004, 10999, 11068, 2]
+// Dependencies: [5, 10990, 1128, 3820, 11016, 11011, 11082, 2]
 // Exports: remixConjureProjectInto
 
-// Module 11628 (ConjureRemix)
+// Module 11649 (ConjureRemix)
 import intl3 from "intl" /* 1128 */;
-import _modDef3883 from "module_3883" /* 3883 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10999 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11004 */;
+import _modDef3820 from "module_3820" /* 3820 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11011 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11016 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10978 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10990 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3, projectId;
@@ -55,7 +55,7 @@ let obj = function _remixConjureProjectInto() {
               closure_2 = tmp4;
               projectId = undefined;
               closure_3 = undefined;
-              obj5 = { ok: false, message: intl2.string(_modDef3883.Cn8H0Y) };
+              obj5 = { ok: false, message: intl2.string(_modDef3820.Cn8H0Y) };
               intl2 = intl3.intl;
               const obj15 = ConjureWorkerTickets;
               const mintRemixTicketResult = obj15.mintRemixTicket(projectId.id);

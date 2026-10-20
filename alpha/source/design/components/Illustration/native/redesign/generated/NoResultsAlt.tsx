@@ -1,15 +1,15 @@
-// Module ID: 8903
-// Function ID: 8904
+// Module ID: 8919
+// Function ID: 8920
 // Name: NoResultsAlt
-// Dependencies: [19, 21, 8633, 8904, 8905, 7020, 558, 576, 5065, 5128, 2]
+// Dependencies: [19, 21, 8649, 8920, 8921, 7097, 558, 576, 4952, 5631, 2]
 // Exports: getNoResultsAltSource
 
-// Module 8903 (NoResultsAlt)
+// Module 8919 (NoResultsAlt)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 5065 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import _mod8633 from "module_8633" /* 8633 */;
+import shared from "shared" /* 4952 */;
+import FastImageDefault from "FastImage" /* 5631 */;
+import _mod8649 from "module_8649" /* 8649 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNoResults
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod8633;
+    const tmpResult = _mod8649;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNoResults
 }) : (function useNoResultsAltSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8633;
+  const obj2 = _mod8649;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoResultsAlt
   return <tmp2 source={tmp} />;
 });
 function getNoResultsAltSource(theme) {
-  const obj = _mod8633;
+  const obj = _mod8649;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

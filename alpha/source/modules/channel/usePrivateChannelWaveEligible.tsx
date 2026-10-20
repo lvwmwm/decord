@@ -1,15 +1,15 @@
-// Module ID: 17168
-// Function ID: 17169
+// Module ID: 17197
+// Function ID: 17198
 // Name: usePrivateChannelWaveEligible
-// Dependencies: [5532, 4855, 2075, 1087, 558, 576, 504, 11, 4888, 4797, 10707, 2]
+// Dependencies: [5965, 4890, 4807, 1087, 558, 576, 504, 11, 4773, 2050, 10720, 2]
 
-// Module 17168 (usePrivateChannelWaveEligible)
+// Module 17197 (usePrivateChannelWaveEligible)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1087 */;
-import ChannelConstants from "ChannelConstants" /* 2075 */;
-import _modDef4797 from "module_4797" /* 4797 */;
-import MessageStore from "MessageStore" /* 5532 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import _modDef2050 from "module_2050" /* 2050 */;
+import ChannelConstants from "ChannelConstants" /* 4807 */;
+import MessageStore from "MessageStore" /* 5965 */;
+import RelationshipStore from "RelationshipStore" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -221,12 +221,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
       }
       const obj6 = SnowflakeUtilsDefault;
       const extractTimestampResult = obj6.extractTimestamp(isDM.id);
-      const isWithinInterval = tmp(4888).isWithinInterval;
-      tmp(4888);
-      const tmp29 = _modDef4797();
+      const isWithinInterval = tmp(4773).isWithinInterval;
+      tmp(4773);
+      const tmp29 = _modDef2050();
       cResult[19] = isDM.id;
-      cResult[20] = isWithinInterval(tmp29, _modDef4797(extractTimestampResult), c7);
-      const isWithinIntervalResult = isWithinInterval(tmp29, _modDef4797(extractTimestampResult), c7);
+      cResult[20] = isWithinInterval(tmp29, _modDef2050(extractTimestampResult), c7);
+      const isWithinIntervalResult = isWithinInterval(tmp29, _modDef2050(extractTimestampResult), c7);
     } else {
       class T {
         constructor() {
@@ -234,7 +234,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
         }
       }
     }
-    const tmpResult10 = tmp(10707);
+    const tmpResult10 = tmp(10720);
     const strangerDangerWarning = tmpResult10.useStrangerDangerWarning(isDM.id);
     if (tmp4) {
       class T {
@@ -346,8 +346,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
   const extractTimestampResult = obj5.extractTimestamp(isDM.id);
   const isWithinInterval = require("DateUtils").isWithinInterval;
   require("DateUtils");
-  const tmp10 = recipientId(4797)();
-  const isWithinIntervalResult = isWithinInterval(tmp10, recipientId(4797)(extractTimestampResult), c7);
+  const tmp10 = recipientId(2050)();
+  const isWithinIntervalResult = isWithinInterval(tmp10, recipientId(2050)(extractTimestampResult), c7);
   const obj6 = require("useStrangerDangerWarning");
   const strangerDangerWarning = obj6.useStrangerDangerWarning(isDM.id);
   if (tmp) {

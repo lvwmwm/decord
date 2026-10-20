@@ -1,15 +1,15 @@
-// Module ID: 7777
-// Function ID: 7778
+// Module ID: 7840
+// Function ID: 7841
 // Name: AgeVerificationURLActionCreators
-// Dependencies: [5, 502, 6173, 1087, 7778, 1297, 584, 2]
+// Dependencies: [5, 502, 6604, 1087, 7841, 1297, 584, 2]
 // Exports: getAgeVerificationMethods, registerIncodeInterview, requestAgeVerificationV2, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 7777 (AgeVerificationURLActionCreators)
+// Module 7840 (AgeVerificationURLActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6173 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7778 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6604 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7841 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -57,7 +57,7 @@ let obj = function _requestAgeVerification() {
               ({ method: c0, classificationId: c1, vendor: c2 } = closure_0);
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -314,7 +314,7 @@ obj = function _initiateSuspendedUserAgeVerification() {
               token = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -445,7 +445,7 @@ obj = function _requestIncodeSessionBootstrap() {
             }
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {

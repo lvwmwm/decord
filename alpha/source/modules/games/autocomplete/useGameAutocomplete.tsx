@@ -1,17 +1,17 @@
-// Module ID: 8978
-// Function ID: 8979
+// Module ID: 8994
+// Function ID: 8995
 // Name: useGameAutocomplete
-// Dependencies: [32, 19, 8508, 1087, 504, 8509, 8979, 558, 576, 8980, 2]
+// Dependencies: [32, 19, 8524, 1087, 504, 8525, 8995, 558, 576, 8996, 2]
 
-// Module 8978 (useGameAutocomplete)
+// Module 8994 (useGameAutocomplete)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8509 */;
-import GameAutocompleteActionCreators from "GameAutocompleteActionCreators" /* 8979 */;
-import GameSearchSession from "GameSearchSession" /* 8980 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8525 */;
+import GameAutocompleteActionCreators from "GameAutocompleteActionCreators" /* 8995 */;
+import GameSearchSession from "GameSearchSession" /* 8996 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8508 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8524 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

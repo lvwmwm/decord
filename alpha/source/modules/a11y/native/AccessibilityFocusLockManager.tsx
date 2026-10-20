@@ -1,12 +1,12 @@
-// Module ID: 5461
-// Function ID: 5462
+// Module ID: 5925
+// Function ID: 5926
 // Name: AccessibilityFocusLockManager
-// Dependencies: [3, 2004, 5462, 5403, 2]
+// Dependencies: [3, 2004, 5228, 5867, 2]
 
-// Module 5461 (AccessibilityFocusLockManager)
+// Module 5925 (AccessibilityFocusLockManager)
 import LoggerDefault from "Logger" /* 3 */;
-import react_nativeDefault from "react-native" /* 5403 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5462 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5228 */;
+import react_nativeDefault from "react-native" /* 5867 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ class AccessibilityFocusLockManager extends LifecycleManager {
       }
     }
     if (self._focusLockEnabled) {
-      let obj = item10014(5403);
+      let obj = item10014(5867);
       obj.disableFocusLock();
       self._focusLockEnabled = false;
     }

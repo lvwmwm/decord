@@ -1,156 +1,158 @@
 // Module ID: 12449
 // Function ID: 12450
-// Dependencies: [12450, 12430, 12451, 12410, 12414, 12386, 12443]
-// Exports: createTransport
+// Dependencies: [12405, 12406, 12450, 12453, 12442, 12411]
+// Exports: createEventEnvelope, createSessionEnvelope, createSpanEnvelope
 
 // Module 12449
-import _mod12410 from "module_12410" /* 12410 */;
-import _mod12414 from "module_12414" /* 12414 */;
-import _mod12430 from "module_12430" /* 12430 */;
-import _mod12443 from "module_12443" /* 12443 */;
-import _slicedToArray from "_slicedToArray" /* 12451 */;
+import _mod12411 from "module_12411" /* 12411 */;
+import _mod12450 from "module_12450" /* 12450 */;
+import _mod12453 from "module_12453" /* 12453 */;
+import DEBUG_BUILD from "module_12405" /* 12405 */;
+import CONSOLE_LEVELS from "module_12406" /* 12406 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap;
+let _require, integrations;
 
 
-export const DEFAULT_TRANSPORT_BUFFER_SIZE = 64;
-export const createTransport = function createTransport(bufferSize, arg1) {
-  _require = bufferSize;
-  dependencyMap = arg1;
-  let promiseBuffer = arg2;
-  if (arg2 === undefined) {
-    let tmp2 = _require;
-    let tmp4 = require("module_12450");
-    let num = bufferSize.bufferSize;
-    const makePromiseBuffer = tmp4.makePromiseBuffer;
-    if (!num) {
-      num = 64;
+export const createEventEnvelope = function createEventEnvelope(type, arg1, sdk, arg3) {
+  const obj = _mod12450;
+  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(sdk);
+  let str = "event";
+  const tmp2 = type;
+  if (type.type) {
+    str = "event";
+    if ("replay_event" !== type.type) {
+      str = type.type;
     }
-    promiseBuffer = makePromiseBuffer(num);
   }
-  let closure_3 = {};
-  let obj = {
-    send(arg0) {
-      const items = [];
-      let tmp = bufferSize;
-      const tmp2 = closure_1;
-      let obj = bufferSize(closure_1[1]);
-      obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
-        const obj = _mod12430;
-        const result = obj.envelopeItemTypeToDataCategory(arg1);
-        const obj2 = _slicedToArray;
-        if (obj2.isRateLimited(closure_3, result)) {
-          let tmp4;
-          if ("event" === arg1) {
-            const _Array = Array;
-            let tmp6;
-            if (Array.isArray(arg0)) {
-              tmp6 = arg0[1];
-            }
-            tmp4 = tmp6;
-          }
-          items.recordDroppedEvent("ratelimit_backoff", result, tmp4);
-        } else {
-          items.push(arg0);
-        }
-      });
-      if (0 === items.length) {
-        let tmpResult = tmp(tmp2[3]);
-        return tmpResult.resolvedSyncPromise({});
-      } else {
-        let tmpResult2 = tmp(tmp2[1]);
-        closure_1 = tmpResult2.createEnvelope(arg0[0], items);
-        function recordEnvelopeLoss(arg0) {
-
-        }
-        let tmp4 = recordEnvelopeLoss;
-        const addResult = recordEnvelopeLoss.add(() => {
-          let obj2;
-          let obj = { body: obj2.serializeEnvelope(closure_1) };
-          obj2 = _mod12430;
-          const promise = closure_1(obj);
-          return promise.then((statusCode) => {
-            let DEBUG_BUILD = undefined !== statusCode.statusCode;
-            if (DEBUG_BUILD) {
-              DEBUG_BUILD = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
-              const tmp = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
-            }
-            if (DEBUG_BUILD) {
-              DEBUG_BUILD = items(closure_1[4]).DEBUG_BUILD;
-            }
-            if (DEBUG_BUILD) {
-              const logger = items(closure_1[5]).logger;
-              const _HermesInternal = HermesInternal;
-              logger.warn("Sentry responded with status code " + statusCode.statusCode + " to sent event.");
-            }
-            const obj = items(closure_1[2]);
-            closure_3 = obj.updateRateLimits(closure_3, statusCode);
-            return statusCode;
-          }, (arg0) => {
-            let recordDroppedEvent;
-            if (typeof recordEnvelopeLoss === "function") {
-              let tmp = arg0;
-              const network_error = "network_error";
-              let obj = recordDroppedEvent(closure_1[1]);
-              let tmp4 = closure_1_1;
-              obj.forEachEnvelopeItem(closure_1_1, (arg0, arg1) => {
-                let tmp;
-                if ("event" === arg1) {
-                  const _Array = Array;
-                  let tmp4;
-                  if (Array.isArray(arg0)) {
-                    tmp4 = arg0[1];
-                  }
-                  tmp = tmp4;
-                }
-                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
-                const obj = items(closure_3_1[1]);
-                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
-              });
-              throw arg0;
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          });
-        });
-        return addResult.then((result) => result, (arg0) => {
-          if (arg0 instanceof _mod12443.SentryError) {
-            if (_mod12414.DEBUG_BUILD) {
-              const logger = tmp(12386).logger;
-              logger.error("Skipped sending event because buffer is full.");
-            }
-            if (typeof recordEnvelopeLoss === "function") {
-              const queue_overflow = "queue_overflow";
-              const tmpResult = _mod12430;
-              tmpResult.forEachEnvelopeItem(closure_1, (arg0, arg1) => {
-                let tmp;
-                if ("event" === arg1) {
-                  const _Array = Array;
-                  let tmp4;
-                  if (Array.isArray(arg0)) {
-                    tmp4 = arg0[1];
-                  }
-                  tmp = tmp4;
-                }
-                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
-                const obj = items(closure_3_1[1]);
-                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
-              });
-              const tmpResult2 = _mod12410;
-              return tmpResult2.resolvedSyncPromise({});
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          } else {
-            throw arg0;
-          }
-        });
-      }
-    },
-    flush(arg0) {
-      return promiseBuffer.drain(arg0);
+  if (sdk && sdk.sdk) {
+    type.sdk = type.sdk || {};
+    let name = type.sdk.name;
+    sdk = type.sdk;
+    if (!name) {
+      name = tmp6.name;
     }
-  };
-  return obj;
+    sdk.name = name;
+    let version = type.sdk.version;
+    const sdk2 = type.sdk;
+    if (!version) {
+      version = tmp6.version;
+    }
+    sdk2.version = version;
+    integrations = type.sdk.integrations;
+    const sdk3 = type.sdk;
+    if (!integrations) {
+      integrations = [];
+    }
+    const items = [];
+    const arraySpreadResult = HermesBuiltin.arraySpread(items, integrations, 0);
+    const tmp10 = (sdk && sdk.sdk).integrations || [];
+    HermesBuiltin.arraySpread(items, tmp10, arraySpreadResult);
+    sdk3.integrations = items;
+    let packages = type.sdk.packages;
+    const sdk4 = type.sdk;
+    if (!packages) {
+      packages = [];
+    }
+    const items1 = [];
+    const arraySpreadResult5 = HermesBuiltin.arraySpread(items1, packages, 0);
+    const tmp18 = (sdk && sdk.sdk).packages || [];
+    HermesBuiltin.arraySpread(items1, tmp18, arraySpreadResult5);
+    sdk4.packages = items1;
+  }
+  const tmp3Result = _mod12450;
+  const eventEnvelopeHeaders = tmp3Result.createEventEnvelopeHeaders(type, sdkMetadataForEnvelopeHeader, arg3, arg1);
+  delete tmp2["sdkProcessingMetadata"];
+  const items2 = [{ type: str }, type];
+  const items3 = [items2];
+  const tmp3Result2 = _mod12450;
+  return tmp3Result2.createEnvelope(eventEnvelopeHeaders, items3);
+};
+export const createSessionEnvelope = function createSessionEnvelope(toJSON, arg1, arg2, arg3) {
+  let date;
+  let items1;
+  let tmpResult;
+  const obj = _mod12450;
+  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(arg2);
+  const obj2 = { sent_at: date.toISOString() };
+  let tmp4 = sdkMetadataForEnvelopeHeader;
+  date = new Date();
+  if (tmp4) {
+    tmp4 = { sdk: sdkMetadataForEnvelopeHeader };
+    const obj3 = { sdk: sdkMetadataForEnvelopeHeader };
+  }
+  const merged = Object.assign(tmp4);
+  let tmp6 = arg3 && arg1;
+  if (tmp6) {
+    const obj4 = { dsn: tmpResult.dsnToString(arg1) };
+    tmp6 = obj4;
+    tmpResult = _mod12453;
+  }
+  const merged1 = Object.assign(tmp6);
+  if ("aggregates" in toJSON) {
+    const items = [{ type: "sessions" }, toJSON];
+    items1 = items;
+  } else {
+    items1 = [{ type: "session" }, toJSON.toJSON()];
+  }
+  const items2 = [items1];
+  const tmpResult2 = _mod12450;
+  return tmpResult2.createEnvelope(obj2, items2);
+};
+export const createSpanEnvelope = function createSpanEnvelope(arg0, getDsn) {
+  let closure_0;
+  let date;
+  let tmp2Result;
+  function dscHasRequiredProps(dynamicSamplingContextFromSpan) {
+    return dynamicSamplingContextFromSpan.trace_id && dynamicSamplingContextFromSpan.public_key;
+  }
+  let tmp = _require;
+  let tmp3 = dependencyMap;
+  let obj = require("module_12442");
+  const dynamicSamplingContextFromSpan = obj.getDynamicSamplingContextFromSpan(arg0[0]);
+  const tmp6 = getDsn && getDsn.getDsn();
+  const obj2 = { sent_at: date.toISOString() };
+  const tmp7 = getDsn && getDsn.getOptions().tunnel;
+  date = new Date();
+  let tmp8 = dscHasRequiredProps(dynamicSamplingContextFromSpan);
+  const tmp2 = _require;
+  if (tmp8) {
+    tmp8 = { trace: dynamicSamplingContextFromSpan };
+    const obj3 = { trace: dynamicSamplingContextFromSpan };
+  }
+  const merged = Object.assign(tmp8);
+  let tmp10 = tmp7 && tmp6;
+  if (tmp10) {
+    const obj4 = { dsn: tmp2Result.dsnToString(tmp6) };
+    tmp10 = obj4;
+    tmp2Result = tmp2(12453);
+  }
+  const merged1 = Object.assign(tmp10);
+  const tmp14 = getDsn && getDsn.getOptions().beforeSendSpan;
+  _require = tmp14;
+  const items = [];
+  const tmp15 = tmp14 ? ((arg0) => {
+    const obj = _mod12411;
+    const tmp3 = closure_0(obj.spanToJSON(arg0));
+    if (!tmp3) {
+      const tmpResult = _mod12411;
+      tmpResult.showSpanDropWarning();
+    }
+    return tmp3;
+  }) : ((arg0) => {
+    const obj = closure_0(dependencyMap[5]);
+    return obj.spanToJSON(arg0);
+  });
+  const iter = arg0[Symbol.iterator]();
+  while (iter !== undefined) {
+    let tmp15Result = tmp15(iter.next());
+    if (tmp15Result) {
+      let push = items.push;
+      let obj7 = require("module_12450");
+      let arr = push(obj7.createSpanEnvelopeItem(tmp17));
+    }
+    continue;
+  }
+  const obj8 = require("module_12450");
+  return obj8.createEnvelope(obj2, items);
 };

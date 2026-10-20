@@ -1,22 +1,22 @@
-// Module ID: 17206
-// Function ID: 17207
+// Module ID: 17235
+// Function ID: 17236
 // Name: HappeningNowCustomStatus
-// Dependencies: [5, 32, 19, 17, 5207, 16354, 1098, 21, 5191, 587, 558, 576, 573, 5884, 9126, 17207, 17208, 10542, 8923, 1384, 5128, 10559, 1202, 16355, 5187, 2]
+// Dependencies: [5, 32, 19, 17, 5674, 16383, 1098, 21, 4945, 587, 558, 576, 573, 6321, 9142, 17236, 17237, 10556, 8939, 1384, 5631, 10573, 1202, 16384, 5195, 2]
 
-// Module 17206 (HappeningNowCustomStatus)
+// Module 17235 (HappeningNowCustomStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import ActivityEmojiDefault from "ActivityEmoji" /* 10559 */;
+import FastImageDefault from "FastImage" /* 5631 */;
+import ActivityEmojiDefault from "ActivityEmoji" /* 10573 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5207 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16354 */;
+import PresenceStore from "PresenceStore" /* 5674 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16383 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -132,7 +132,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
     if (cResult[4] === user.id) {
       tmp12 = cResult[5];
     }
-    const tmp14 = activity(5884)(tmp12);
+    const tmp14 = activity(6321)(tmp12);
     if (cResult[6] !== tmp14) {
       let obj3 = { displayNameStyles: tmp14 };
       cResult[6] = tmp14;
@@ -141,7 +141,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
     } else {
       tmp15 = cResult[7];
     }
-    const tmpResult3 = tmp(9126);
+    const tmpResult3 = tmp(9142);
     const displayNameStylesFont = tmpResult3.useDisplayNameStylesFont(tmp15);
     if (cResult[8] !== activity.emoji) {
       class J {
@@ -432,7 +432,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
         }
       }
     }
-    const tmpResult4 = tmp(10542);
+    const tmpResult4 = tmp(10556);
     const gameMentionsAsPlainText = tmpResult4.useGameMentionsAsPlainText(activity.state);
     if (cResult[11] !== status) {
       class J {
@@ -782,8 +782,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
   });
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
   let obj2 = { userId: user.id, guildId };
-  let tmp10 = activity(5884)(obj2);
-  let obj3 = user(9126);
+  let tmp10 = activity(6321)(obj2);
+  let obj3 = user(9142);
   const displayNameStylesFont = obj3.useDisplayNameStylesFont({ displayNameStyles: tmp10 });
   items1 = [activity.emoji];
   const effect = react.useEffect(() => {
@@ -882,16 +882,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
   if (null != activity.emoji) {
     num = 1;
   }
-  const tmp6Result = user(10542);
+  const tmp6Result = user(10556);
   const gameMentionsAsPlainText = tmp6Result.useGameMentionsAsPlainText(activity.state);
   const items2 = [userTitle, , ];
-  const tmp6Result3 = user(8923);
+  const tmp6Result3 = user(8939);
   items2[1] = tmp6Result3.getStatusLabel(status);
   items2[2] = gameMentionsAsPlainText;
   const joined = items2.join(", ");
   let obj4 = { onPress, width: str, style: tmp.cardContainer, accessibilityLabel: joined, panelVariant, children: tmp15(tmp17, obj5) };
   str = "stretchy";
-  const tmp9Result = activity(16355);
+  const tmp9Result = activity(16384);
   if (fullwidth) {
     str = "full";
   }
@@ -908,12 +908,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
       let tmp15Result = null != source;
       if (tmp15Result) {
         let obj8 = { source, style: tmp.largeEmoji };
-        tmp15Result = tmp15(tmp9(5128), obj8);
+        tmp15Result = tmp15(tmp9(5631), obj8);
       }
       tmp15Result3 = tmp15Result;
     } else {
       let obj9 = { emoji: activity.emoji, size: v32, style: tmp.largeEmoji, animate: false };
-      tmp15Result3 = tmp15(tmp9(10559), obj9);
+      tmp15Result3 = tmp15(tmp9(10573), obj9);
     }
     items4 = [tmp15Result3, ];
     items4[1] = items1.map((item, index) => {
@@ -941,7 +941,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
     const Avatar = tmp6(1202).Avatar;
     items6 = [tmp15(Avatar, obj11), , ];
     const obj12 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items6[1] = closure_11(user(16355).HappeningNowCardHeader, obj12);
+    items6[1] = closure_11(user(16384).HappeningNowCardHeader, obj12);
     const state = activity.state;
     let num2;
     if (state != null) {
@@ -953,7 +953,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
     let tmp15Result4 = num2 > 0;
     if (tmp15Result4) {
       const obj13 = { ellipsizeMode: "tail", variant: "text-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
-      tmp15Result4 = tmp15(tmp6(5187).Text, obj13);
+      tmp15Result4 = tmp15(tmp6(5195).Text, obj13);
     }
     const obj14 = { children: items5 };
     items6[2] = tmp15Result4;
@@ -967,9 +967,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
     items7 = [tmp15(Avatar2, obj16), ];
     const obj17 = { style: tmp.customStatusContextContainer, children: items8 };
     const obj18 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items8 = [tmp15(tmp6(16355).HappeningNowCardHeader, obj18), ];
+    items8 = [tmp15(tmp6(16384).HappeningNowCardHeader, obj18), ];
     const obj19 = { ellipsizeMode: "tail", variant: "text-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
-    items8[1] = closure_11(user(5187).Text, obj19);
+    items8[1] = closure_11(user(5195).Text, obj19);
     items7[1] = closure_12(View, obj17);
     tmp18Result = closure_12(closure_13, obj15);
   }

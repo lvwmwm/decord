@@ -1,11 +1,11 @@
 // Module ID: 11798
 // Function ID: 11799
 // Name: default_1
-// Dependencies: [11751]
+// Dependencies: [11772]
 // Exports: default
 
 // Module 11798 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 11751 */;
+import captureStackTrace2 from "captureStackTrace" /* 11772 */;
 
 let hasOwnProperty;
 
@@ -109,10 +109,10 @@ export default function default_1() {
               const obj = /^[A-Z]/;
               if (obj.test(code.expected)) {
                 const _HermesInternal17 = HermesInternal;
-                combined = "Ge\u00E7ersiz de\u011Fer: beklenen instanceof " + code.expected + ", al\u0131nan " + tmp48;
+                combined = "Rangt gildi: \u00DE\u00FA sl\u00F3st inn " + tmp48 + " \u00FEar sem \u00E1 a\u00F0 vera instanceof " + code.expected;
               } else {
                 const _HermesInternal16 = HermesInternal;
-                combined = "Ge\u00E7ersiz de\u011Fer: beklenen " + expected + ", al\u0131nan " + tmp48;
+                combined = "Rangt gildi: \u00DE\u00FA sl\u00F3st inn " + tmp48 + " \u00FEar sem \u00E1 a\u00F0 vera " + expected;
               }
               return combined;
             }
@@ -121,38 +121,38 @@ export default function default_1() {
               let combined1;
               if (1 === code.values.length) {
                 const _HermesInternal15 = HermesInternal;
-                combined1 = "Ge\u00E7ersiz de\u011Fer: beklenen " + captureStackTrace.stringifyPrimitive(code.values[0]);
+                combined1 = "Rangt gildi: gert r\u00E1\u00F0 fyrir " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
                 const _HermesInternal14 = HermesInternal;
-                combined1 = "Ge\u00E7ersiz se\u00E7enek: a\u015Fa\u011F\u0131dakilerden biri olmal\u0131: " + captureStackTrace.joinValues(code.values, "|");
+                combined1 = "\u00D3gilt val: m\u00E1 vera eitt af eftirfarandi " + captureStackTrace.joinValues(code.values, "|");
               }
               return combined1;
             }
             case "too_big":
             {
               let combined2;
-              let str29 = "<";
+              let str24 = "<";
               if (code.inclusive) {
-                str29 = "<=";
+                str24 = "<=";
               }
-              let str30 = code.origin;
+              let str25 = code.origin;
               if (obj2[code.origin] ?? null) {
-                if (str30 == null) {
-                  str30 = "de\u011Fer";
+                if (str25 == null) {
+                  str25 = "gildi";
                 }
-                const str35 = code.maximum;
+                const str30 = code.maximum;
                 const _HermesInternal13 = HermesInternal;
-                const str1 = str35.toString();
-                const str36 = (obj2[code.origin] ?? null).unit ?? "\u00F6\u011Fe";
-                combined2 = "\u00C7ok b\u00FCy\u00FCk: beklenen " + str30 + " " + str29 + str1 + " " + str36;
+                const str1 = str30.toString();
+                const str31 = (obj2[code.origin] ?? null).unit ?? "hluti";
+                combined2 = "Of st\u00F3rt: gert er r\u00E1\u00F0 fyrir a\u00F0 " + str25 + " hafi " + str24 + str1 + " " + str31;
               } else {
-                let str31 = str30;
-                if (str30 == null) {
-                  str31 = "de\u011Fer";
+                let str26 = str25;
+                if (str25 == null) {
+                  str26 = "gildi";
                 }
                 const _HermesInternal12 = HermesInternal;
-                const str32 = code.maximum;
-                combined2 = "\u00C7ok b\u00FCy\u00FCk: beklenen " + str31 + " " + str29 + str32.toString();
+                const str27 = code.maximum;
+                combined2 = "Of st\u00F3rt: gert er r\u00E1\u00F0 fyrir a\u00F0 " + str26 + " s\u00E9 " + str24 + str27.toString();
               }
               return combined2;
             }
@@ -161,18 +161,18 @@ export default function default_1() {
               let combined3;
               let minimum;
               let origin;
-              let str22 = ">";
+              let str18 = ">";
               if (code.inclusive) {
-                str22 = ">=";
+                str18 = ">=";
               }
               ({ origin, minimum } = code);
-              const str51 = minimum.toString();
+              const str45 = minimum.toString();
               if (obj2[code.origin] ?? null) {
                 const _HermesInternal11 = HermesInternal;
-                combined3 = "\u00C7ok k\u00FC\u00E7\u00FCk: beklenen " + origin + " " + str22 + str51 + " " + tmp15.unit;
+                combined3 = "Of l\u00EDti\u00F0: gert er r\u00E1\u00F0 fyrir a\u00F0 " + origin + " hafi " + str18 + str45 + " " + tmp15.unit;
               } else {
                 const _HermesInternal10 = HermesInternal;
-                combined3 = "\u00C7ok k\u00FC\u00E7\u00FCk: beklenen " + origin + " " + str22 + str51;
+                combined3 = "Of l\u00EDti\u00F0: gert er r\u00E1\u00F0 fyrir a\u00F0 " + origin + " s\u00E9 " + str18 + str45;
               }
               return combined3;
             }
@@ -181,61 +181,61 @@ export default function default_1() {
               let combined4;
               if ("starts_with" === code.format) {
                 const _HermesInternal9 = HermesInternal;
-                combined4 = "Ge\u00E7ersiz metin: \"" + code.prefix + "\" ile ba\u015Flamal\u0131";
+                combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 byrja \u00E1 \"" + code.prefix + "\"";
               } else if ("ends_with" === code.format) {
                 const _HermesInternal8 = HermesInternal;
-                combined4 = "Ge\u00E7ersiz metin: \"" + code.suffix + "\" ile bitmeli";
+                combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 enda \u00E1 \"" + code.suffix + "\"";
               } else if ("includes" === code.format) {
                 const _HermesInternal7 = HermesInternal;
-                combined4 = "Ge\u00E7ersiz metin: \"" + code.includes + "\" i\u00E7ermeli";
+                combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 innihalda \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
                 const _HermesInternal6 = HermesInternal;
-                combined4 = "Ge\u00E7ersiz metin: " + code.pattern + " desenine uymal\u0131";
+                combined4 = "\u00D3gildur strengur: ver\u00F0ur a\u00F0 fylgja mynstri " + code.pattern;
               } else {
                 const format = closure_1[code.format] ?? code.format;
                 const _HermesInternal5 = HermesInternal;
-                combined4 = "Ge\u00E7ersiz " + format;
+                combined4 = "Rangt " + format;
               }
               return combined4;
             }
             case "not_multiple_of":
             {
               const _HermesInternal4 = HermesInternal;
-              return "Ge\u00E7ersiz say\u0131: " + code.divisor + " ile tam b\u00F6l\u00FCnebilmeli";
+              return "R\u00F6ng tala: ver\u00F0ur a\u00F0 vera margfeldi af " + code.divisor;
             }
             case "unrecognized_keys":
             {
-              let str5 = "";
+              let str3 = "ur lykill";
               if (code.keys.length > 1) {
-                str5 = "lar";
+                str3 = "ir lyklar";
               }
               const _HermesInternal3 = HermesInternal;
-              return "Tan\u0131nmayan anahtar" + str5 + ": " + captureStackTrace.joinValues(code.keys, ", ");
+              return "\u00D3\u00FEekkt " + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
               const _HermesInternal2 = HermesInternal;
-              return "" + code.origin + " i\u00E7inde ge\u00E7ersiz anahtar";
+              return "Rangur lykill \u00ED " + code.origin;
             }
             case "invalid_union":
             {
-              return "Ge\u00E7ersiz de\u011Fer";
+              return "Rangt gildi";
             }
             case "invalid_element":
             {
               const _HermesInternal = HermesInternal;
-              return "" + code.origin + " i\u00E7inde ge\u00E7ersiz de\u011Fer";
+              return "Rangt gildi \u00ED " + code.origin;
             }
             default:
             {
-              return "Ge\u00E7ersiz de\u011Fer";
+              return "Rangt gildi";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "karakter", verb: "olmal\u0131" }, file: { unit: "bayt", verb: "olmal\u0131" }, array: { unit: "\u00F6\u011Fe", verb: "olmal\u0131" }, set: { unit: "\u00F6\u011Fe", verb: "olmal\u0131" } };
-    closure_1 = { regex: "girdi", email: "e-posta adresi", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO tarih ve saat", date: "ISO tarih", time: "ISO saat", duration: "ISO s\u00FCre", ipv4: "IPv4 adresi", ipv6: "IPv6 adresi", cidrv4: "IPv4 aral\u0131\u011F\u0131", cidrv6: "IPv6 aral\u0131\u011F\u0131", base64: "base64 ile \u015Fifrelenmi\u015F metin", base64url: "base64url ile \u015Fifrelenmi\u015F metin", json_string: "JSON dizesi", e164: "E.164 say\u0131s\u0131", jwt: "JWT", template_literal: "\u015Eablon dizesi" };
-    let closure_2 = { nan: "NaN" };
+    const obj2 = { string: { unit: "stafi", verb: "a\u00F0 hafa" }, file: { unit: "b\u00E6ti", verb: "a\u00F0 hafa" }, array: { unit: "hluti", verb: "a\u00F0 hafa" }, set: { unit: "hluti", verb: "a\u00F0 hafa" } };
+    closure_1 = { regex: "gildi", email: "netfang", url: "vefsl\u00F3\u00F0", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO dagsetning og t\u00EDmi", date: "ISO dagsetning", time: "ISO t\u00EDmi", duration: "ISO t\u00EDmalengd", ipv4: "IPv4 address", ipv6: "IPv6 address", cidrv4: "IPv4 range", cidrv6: "IPv6 range", base64: "base64-encoded strengur", base64url: "base64url-encoded strengur", json_string: "JSON strengur", e164: "E.164 t\u00F6lugildi", jwt: "JWT", template_literal: "gildi" };
+    let closure_2 = { nan: "NaN", number: "n\u00FAmer", array: "fylki" };
     return obj;
   } else {
     throw new TypeError("Trying to call a non-function");

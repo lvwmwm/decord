@@ -1,11 +1,11 @@
-// Module ID: 12096
-// Function ID: 12097
+// Module ID: 12116
+// Function ID: 12117
 // Name: conjureExternalConnectionRequests
-// Dependencies: [5, 11063, 12097, 2]
+// Dependencies: [5, 11077, 12117, 2]
 // Exports: fetchProjectMcpConnection, formatMcpConnectionExpiry, requestExternalAuthorizeUrl
 
-// Module 12096 (conjureExternalConnectionRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 11063 */;
+// Module 12116 (conjureExternalConnectionRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 11077 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ let obj = function _fetchProjectMcpConnection() {
             closure_3 = undefined;
             expiresAtMs = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === expiresAtMs) {
           if (arg0 === 1) {

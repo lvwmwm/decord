@@ -1,10 +1,10 @@
-// Module ID: 17207
-// Function ID: 17208
+// Module ID: 17236
+// Function ID: 17237
 // Name: EmojiSourceUtils
-// Dependencies: [5, 4863, 1417, 1901, 2]
+// Dependencies: [5, 4898, 1417, 1901, 2]
 // Exports: getEmojiSource
 
-// Module 17207 (EmojiSourceUtils)
+// Module 17236 (EmojiSourceUtils)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let obj = function _getEmojiSource() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {

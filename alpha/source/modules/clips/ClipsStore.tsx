@@ -1,21 +1,21 @@
 // Module ID: 2020
 // Function ID: 2021
 // Name: ClipsStore
-// Dependencies: [5, 2021, 502, 8029, 1087, 5311, 4826, 15076, 1405, 15077, 15079, 504, 584, 2]
+// Dependencies: [5, 2021, 502, 8092, 1087, 5775, 4762, 15104, 1405, 15105, 15107, 504, 584, 2]
 
 // Module 2020 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import DiscordNativeDefault from "DiscordNative" /* 4826 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 15077 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15079 */;
+import DiscordNativeDefault from "DiscordNative" /* 4762 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 15105 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15107 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2021 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 8029 */;
+import ClipsConstants from "ClipsConstants" /* 8092 */;
 import Constants from "Constants" /* 1087 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5311 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5775 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_18, closure_2;
@@ -304,7 +304,7 @@ const map = new Map();
 map1 = new Map();
 const map2 = new Map();
 let closure_33 = [];
-obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_30, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "Reflect", showPovClipsInGallery: true };
+obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_30, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "test", showPovClipsInGallery: true };
 obj = { clipsSettings: obj, hardwareClassification: null, hardwareClassificationForDecoupled: null, hardwareClassificationVersion: 0, newClipIds: [], hasClips: false, hasTakenDecoupledClip: false, clipsEducationState: { dismissedAt: null, numberOfGamesLaunchedSinceDismissal: 0, numberOfTimesDismissed: 0 } };
 const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
 class ClipsStoreClass extends DeviceSettingsStore {

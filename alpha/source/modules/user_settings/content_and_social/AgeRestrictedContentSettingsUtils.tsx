@@ -1,16 +1,16 @@
-// Module ID: 7193
-// Function ID: 7194
+// Module ID: 7262
+// Function ID: 7263
 // Name: AgeRestrictedContentSettingsUtils
-// Dependencies: [1392, 558, 576, 2044, 6165, 7194, 6177, 6176, 2]
+// Dependencies: [1392, 558, 576, 4776, 6602, 7263, 5605, 6607, 2]
 // Exports: getViewNsfwCommandsOrDefault, getViewNsfwGuildsOrDefault, resolveNsfwTogglesWithDefaults
 
-// Module 7193 (AgeRestrictedContentSettingsUtils)
+// Module 7262 (AgeRestrictedContentSettingsUtils)
 import react from "react" /* 576 */;
-import UserSettings from "UserSettings" /* 2044 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6165 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6176 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 6177 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 7194 */;
+import UserSettings from "UserSettings" /* 4776 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5605 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6602 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6607 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 7263 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

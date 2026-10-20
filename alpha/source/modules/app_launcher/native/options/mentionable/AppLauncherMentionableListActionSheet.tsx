@@ -1,13 +1,13 @@
-// Module ID: 12029
-// Function ID: 12030
+// Module ID: 12049
+// Function ID: 12050
 // Name: AppLauncherMentionableListActionSheet
-// Dependencies: [32, 19, 1087, 21, 558, 576, 7509, 6226, 5155, 10531, 5187, 5057, 12030, 6373, 12031, 10598, 6457, 11996, 11998, 2]
+// Dependencies: [32, 19, 1087, 21, 558, 576, 7576, 6656, 5171, 10545, 5195, 4994, 12050, 6774, 12051, 10612, 6851, 12016, 12018, 2]
 
-// Module 12029 (AppLauncherMentionableListActionSheet)
+// Module 12049 (AppLauncherMentionableListActionSheet)
 import Constants from "Constants" /* 1087 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6226 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7509 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6656 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,23 +1,23 @@
-// Module ID: 15878
-// Function ID: 15879
+// Module ID: 15907
+// Function ID: 15908
 // Name: GoreMediaFiltersNonFriendsDMsSetting
-// Dependencies: [8260, 558, 576, 15871, 8515, 7276, 15872, 1128, 11084, 15874, 2]
+// Dependencies: [8276, 558, 576, 15900, 8531, 7344, 15901, 1128, 11099, 15903, 2]
 // Exports: onGoreContentNonFriendsDmOnPress
 
-// Module 15878 (GoreMediaFiltersNonFriendsDMsSetting)
+// Module 15907 (GoreMediaFiltersNonFriendsDMsSetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1128 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7276 */;
-import SettingsConstants from "SettingsConstants" /* 8260 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15871 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15872 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 15874 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7344 */;
+import SettingsConstants from "SettingsConstants" /* 8276 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15900 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15901 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 15903 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SettingBuilders from "SettingBuilders" /* 11099 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(8515);
+const ExplicitMediaRedactionUtils = tmp(8531);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGoreContentNonFriendsDmSettingValue() {
   let tmp4;

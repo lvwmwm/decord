@@ -1,16 +1,16 @@
-// Module ID: 10000
-// Function ID: 10001
+// Module ID: 10014
+// Function ID: 10015
 // Name: UploaderBase
-// Dependencies: [5, 1087, 5185, 3, 580, 12, 8057, 8033, 8034, 2]
+// Dependencies: [5, 1087, 4950, 3, 580, 12, 8120, 8096, 8097, 2]
 
-// Module 10000 (UploaderBase)
+// Module 10014 (UploaderBase)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import _mod580 from "module_580" /* 580 */;
 import Constants from "Constants" /* 1087 */;
-import MessageConstants from "MessageConstants" /* 5185 */;
-import uploader_UploadUtils from "uploader/UploadUtils" /* 8033 */;
-import UploadTargets from "UploadTargets" /* 8057 */;
+import MessageConstants from "MessageConstants" /* 4950 */;
+import uploader_UploadUtils from "uploader/UploadUtils" /* 8096 */;
+import UploadTargets from "UploadTargets" /* 8120 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ class UploaderBase extends EventEmitter {
     };
     let obj = _modDef12;
     tmp3.id = obj.uniqueId("Uploader");
-    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "ix" };
+    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "unicodeVersion" };
     return tmp3;
   }
   _fileSize() {

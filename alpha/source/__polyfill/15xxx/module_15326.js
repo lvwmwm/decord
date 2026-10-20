@@ -1,34 +1,74 @@
 // Module ID: 15326
 // Function ID: 15327
-// Dependencies: [15327, 15329, 15336, 15359, 15347, 15361, 15357, 15362]
+// Dependencies: [15327, 15328, 1174, 15329, 15330]
+// Exports: getCalendarPreferenceDataForRegion, getHourCyclesPreferenceDataForLocaleOrRegion, getTimeZonePreferenceForRegion, getWeekDataForRegion
 
 // Module 15326
-import _mod15327 from "module_15327" /* 15327 */;
-import _mod15329 from "module_15329" /* 15329 */;
-import _mod15336 from "module_15336" /* 15336 */;
-import _mod15347 from "module_15347" /* 15347 */;
-import _mod15357 from "module_15357" /* 15357 */;
-import _mod15359 from "module_15359" /* 15359 */;
-import _mod15361 from "module_15361" /* 15361 */;
-import propertyIsEnumerable from "propertyIsEnumerable" /* 15362 */;
+import _mod1174 from "module_1174" /* 1174 */;
+import calendars2 from "calendars" /* 15327 */;
+import hourCycles from "hourCycles" /* 15328 */;
+import timezones from "timezones" /* 15329 */;
+import weekData2 from "weekData" /* 15330 */;
 
-if (!_mod15327) {
-  getOwnPropertyDescriptor = function getOwnPropertyDescriptor(arg0, arg1) {
-    const tmp3 = _mod15329(arg0);
-    const tmp4 = _mod15336(arg1);
-    if (!_mod15359) {
-      if (_mod15347(tmp3, tmp4)) {
-        const tmpResult = _mod15361;
-        const tmpResult2 = _mod15357;
-        return tmpResult(!tmpResult2(propertyIsEnumerable.f, tmp3, tmp4), tmp3[tmp4]);
+
+export const getCalendarPreferenceDataForRegion = function getCalendarPreferenceDataForRegion(region) {
+  let str = null;
+  if (region) {
+    str = region.toUpperCase();
+  }
+  const calendars = calendars2.calendars;
+  if (!str) {
+    str = "";
+  }
+  const arr = calendars[str] || calendars2.calendars["001"];
+  return arr.map((item) => {
+    let str = "gregory";
+    if ("gregorian" !== item) {
+      let str2 = "islamicc";
+      if ("islamic-civil" !== item) {
+        str2 = item;
       }
-    } else {
-      try {
-        return getOwnPropertyDescriptor(tmp3, tmp4);
-      } catch (err) {
-      }
+      str = str2;
     }
-  };
-}
-
-export const f = getOwnPropertyDescriptor;
+    return str;
+  });
+};
+export const getHourCyclesPreferenceDataForLocaleOrRegion = function getHourCyclesPreferenceDataForLocaleOrRegion(locale, region) {
+  const formatted = locale.toLowerCase();
+  let str = "";
+  if (region) {
+    str = region.toUpperCase();
+  }
+  let v001 = hourCycles.hourCycles[formatted] || tmp2(15328).hourCycles[str];
+  if (!v001) {
+    const concat = "".concat;
+    v001 = tmp2(15328).hourCycles["".concat("", formatted, "-001")];
+  }
+  if (!v001) {
+    v001 = tmp2(15328).hourCycles["001"];
+  }
+  const tmp2Result = _mod1174;
+  return tmp2Result.__spreadArray([], v001, true);
+};
+export const getTimeZonePreferenceForRegion = function getTimeZonePreferenceForRegion(region) {
+  const formatted = region.toLowerCase();
+  const items = [];
+  if (timezones.timezones[formatted]) {
+    const tmp2Result = _mod1174;
+    return tmp2Result.__spreadArray(items, timezones.timezones[formatted], true);
+  } else {
+    return items;
+  }
+};
+export const getWeekDataForRegion = function getWeekDataForRegion(region) {
+  let str = "";
+  if (region) {
+    str = region.toUpperCase();
+  }
+  const weekData = weekData2.weekData;
+  if (!str) {
+    str = "001";
+  }
+  const tmp3 = weekData[str] || weekData2.weekData["001"];
+  return tmp3;
+};

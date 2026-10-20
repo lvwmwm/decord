@@ -1,21 +1,21 @@
-// Module ID: 8056
-// Function ID: 8057
+// Module ID: 8119
+// Function ID: 8120
 // Name: CloudUploaderUtils
-// Dependencies: [2132, 502, 1372, 8026, 12, 1267, 2]
+// Dependencies: [2069, 502, 1372, 8089, 12, 1267, 2]
 // Exports: getUploadPayload, prepareMessagePayload
 
-// Module 8056 (CloudUploaderUtils)
+// Module 8119 (CloudUploaderUtils)
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import UploadUtils from "UploadUtils" /* 8026 */;
-import LocaleStore from "LocaleStore" /* 2132 */;
+import UploadUtils from "UploadUtils" /* 8089 */;
+import LocaleStore from "LocaleStore" /* 2069 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1372 */;
 import size from "module_2" /* 2 */;
 
 function getUploadPayload(self) {
   let obj2;
-  const obj = { filename: self.filename, file_size: self.currentSize, id: obj2.uniqueId(), original_content_type: "a" };
+  const obj = { filename: self.filename, file_size: self.currentSize, id: obj2.uniqueId(), original_content_type: "Array" };
   obj2 = _modDef12;
   return obj;
 }

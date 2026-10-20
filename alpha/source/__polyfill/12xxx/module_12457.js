@@ -1,82 +1,65 @@
 // Module ID: 12457
 // Function ID: 12458
-// Dependencies: [12382, 12385, 12414, 12400, 12413, 12434, 12404, 12405, 12391, 12422, 12399, 12398, 12386]
-// Exports: getTraceData
+// Dependencies: [12430, 12434, 12406, 12413]
+// Exports: notifyEventProcessors
 
 // Module 12457
-import _mod12391 from "module_12391" /* 12391 */;
-import _mod12398 from "module_12398" /* 12398 */;
-import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 12399 */;
-import _mod12404 from "module_12404" /* 12404 */;
-import _mod12405 from "module_12405" /* 12405 */;
-import _mod12413 from "module_12413" /* 12413 */;
-import _mod12422 from "module_12422" /* 12422 */;
-import _mod12434 from "module_12434" /* 12434 */;
-import registerSpanErrorInstrumentation from "module_12382" /* 12382 */;
-import "module_12385";
-import DEBUG_BUILD from "module_12414" /* 12414 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12400 */;
+const require = globalThis.__r;
+let _require, closure_3, dependencyMap;
 
 
-export const getTraceData = function getTraceData() {
-  let sampled;
-  let spanId;
-  let traceId;
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  const obj2 = _mod12413;
-  const client = obj2.getClient();
-  const obj3 = _mod12434;
-  if (obj3.isEnabled()) {
-    if (client) {
-      const tmpResult = _mod12404;
-      const mainCarrier = tmpResult.getMainCarrier();
-      const tmpResult8 = _mod12405;
-      const asyncContextStrategy = tmpResult8.getAsyncContextStrategy(mainCarrier);
-      if (asyncContextStrategy.getTraceData) {
-        return asyncContextStrategy.getTraceData(obj);
-      } else {
-        let spanToTraceHeaderResult;
-        let dynamicSamplingContextFromSpan;
-        let obj5;
-        const tmpResult9 = _mod12413;
-        const currentScope = tmpResult9.getCurrentScope();
-        let span = obj.span;
-        if (!span) {
-          const tmpResult10 = _mod12391;
-          span = tmpResult10.getActiveSpan();
+export const notifyEventProcessors = function notifyEventProcessors(arg0, arg1, arg2) {
+  let closure_0;
+  let closure_1;
+  let num;
+  const f113655 = function(fn, arg1) {
+    closure_0 = fn;
+    let tmp3 = closure_0[closure_3];
+    let tmp4 = closure_1;
+    if (null !== closure_1) {
+      if (typeof tmp3 === "function") {
+        let obj = {};
+        let tmp13 = obj;
+        let tmp14 = tmp4;
+        let merged = Object.assign(tmp4);
+        let tmp16 = closure_2;
+        let tmp3Result = tmp3(obj, closure_2);
+        let tmp17 = closure_0;
+        let tmp18 = closure_1;
+        let tmp5 = closure_0(closure_1[1]).DEBUG_BUILD && tmp3.id && null === tmp3Result;
+        if (tmp5) {
+          let logger = tmp17(tmp18[2]).logger;
+          let tmp6 = globalThis;
+          let _HermesInternal = HermesInternal;
+          let str = "\" dropped event";
+          let str2 = "Event processor \"";
+          let logResult = logger.log("Event processor \"" + tmp3.id + "\" dropped event");
         }
-        if (span) {
-          const tmpResult11 = _mod12391;
-          spanToTraceHeaderResult = tmpResult11.spanToTraceHeader(span);
+        let tmp8 = arg1;
+        let tmp17Result = tmp17(tmp18[3]);
+        if (tmp17Result.isThenable(tmp3Result)) {
+          let nextPromise = tmp3Result.then(f147078);
+          let nextPromise1 = nextPromise.then(null, arg1);
         } else {
-          const propagationContext = currentScope.getPropagationContext();
-          ({ traceId, sampled, spanId } = propagationContext);
-          const tmpResult12 = _mod12398;
-          spanToTraceHeaderResult = tmpResult12.generateSentryTraceHeader(traceId, spanId, sampled);
+          let num = 1;
+          closure_0 = tmp;
+          closure_1 = tmp3Result;
+          closure_2 = tmp16;
+          closure_3 = tmp2 + 1;
+          let self = this;
+          let self2 = this;
+          let syncPromise = new tmp17(tmp18[0]).SyncPromise(f113655);
+          let tmp9 = syncPromise;
+          let nextPromise2 = syncPromise.then(fn);
+          let nextPromise3 = nextPromise2.then(null, arg1);
         }
-        const tmpResult13 = _mod12422;
-        if (span) {
-          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromSpan(span);
-        } else {
-          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromScope(client, currentScope);
-        }
-        const tmpResult14 = BAGGAGE_HEADER_NAME;
-        const result = tmpResult14.dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
-        const TRACEPARENT_REGEXP = tmp(12398).TRACEPARENT_REGEXP;
-        if (TRACEPARENT_REGEXP.test(spanToTraceHeaderResult)) {
-          obj5 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
-          const obj4 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
-        } else {
-          const logger = tmp(12386).logger;
-          logger.warn("Invalid sentry-trace data. Cannot generate trace data");
-          obj5 = {};
-        }
-        return obj5;
       }
     }
-  }
-  return {};
+    let tmp12 = fn(tmp4);
+  };
+  _require = arg0;
+  dependencyMap = arg1;
+  let closure_2 = arg2;
+  const syncPromise = new require("module_12430").SyncPromise(f113655);
+  return syncPromise;
 };

@@ -1,22 +1,91 @@
 // Module ID: 7915
 // Function ID: 7916
-// Dependencies: [26, 81, 106, 65]
+// Dependencies: []
+// Exports: appendTransform, reset, toArray
 
 // Module 7915
-import _mod26 from "module_26" /* 26 */;
-import resolveAssetSource_mod from "resolveAssetSource" /* 81 */;
-import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
-import module_65 from "module_65" /* 65 */;
-
-let resolveAssetSource;
-let size;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGImage", directEventTypes: { topLoad: { registrationName: "onLoad" }, topSvgLayout: { registrationName: "onSvgLayout" } }, validAttributes: size };
-size = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, x: true, y: true, width: true, height: true, src: { process: resolveAssetSource }, align: true, meetOrSlice: true };
-resolveAssetSource = resolveAssetSource_mod;
-if ("default" in resolveAssetSource) {
-  resolveAssetSource = resolveAssetSource.default;
+function append(arg0, arg1, arg2, arg3, arg4, arg5) {
+  if (1 !== arg0 || 0 !== arg1 || 0 !== arg2 || 1 !== arg3) {
+    const tmp3 = c8;
+    if (tmp3) {
+      c8 = false;
+      c2 = arg0;
+      c3 = arg1;
+      c4 = arg2;
+      c5 = arg3;
+      closure_6 = arg4;
+      closure_7 = arg5;
+    } else {
+      if (1 !== arg0 || 0 !== arg1 || 0 !== arg2 || 1 !== arg3) {
+        c2 = tmp4 * arg0 + tmp6 * arg1;
+        c3 = tmp5 * arg0 + tmp7 * arg1;
+        c4 = tmp4 * arg2 + tmp6 * arg3;
+        c5 = tmp5 * arg2 + tmp7 * arg3;
+      }
+      if (0 !== arg4 || 0 !== arg5) {
+        closure_6 = tmp4 * arg4 + tmp6 * arg5 + closure_6;
+        closure_7 = tmp5 * arg4 + tmp7 * arg5 + closure_7;
+      }
+    }
+  }
 }
-const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onLoad: true, onSvgLayout: true }));
+let closure_0 = Math.PI / 180;
+let items = [1, 0, 0, 1, 0, 0];
+let c2 = 1;
+let c3 = 0;
+let c4 = 0;
+let c5 = 1;
+let closure_6 = 0;
+let closure_7 = 0;
+let c8 = true;
 
-export default module_65.get("RNSVGImage", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export const identity = items;
+export function reset() {
+  const tmp = c8;
+  if (!tmp) {
+    c5 = 1;
+    c2 = 1;
+    closure_7 = 0;
+    closure_6 = 0;
+    c4 = 0;
+    c3 = 0;
+    c8 = true;
+  }
+}
+export function toArray() {
+  const tmp = c8;
+  if (!tmp) {
+    items = [c2, c3, c4, c5, closure_6, closure_7];
+  }
+  return items;
+}
+export { append };
+export const appendTransform = function appendTransform(arg0, arg1, scaleX, scaleY, rotation, skewX, skewY, originX, originY) {
+  let num2 = 1;
+  let num3 = 0;
+  if (rotation % 360) {
+    const result = rotation * closure_0;
+    const _Math = Math;
+    num2 = Math.cos(result);
+    const _Math2 = Math;
+    num3 = Math.sin(result);
+  }
+  const result1 = num2 * scaleX;
+  const result2 = num3 * scaleX;
+  const result3 = -num3 * scaleY;
+  const result4 = num2 * scaleY;
+  if (!skewX) {
+    if (!skewY) {
+      append(result1, result2, result3, result4, arg0, arg1);
+    }
+    const tmp19 = originX || originY;
+    if (tmp19) {
+      closure_6 = closure_6 - (originX * c2 + originY * c4);
+      closure_7 = closure_7 - (originX * c3 + originY * c5);
+      c8 = false;
+    }
+  }
+  const tanResult = Math.tan(skewY * closure_0);
+  const tanResult1 = Math.tan(skewX * closure_0);
+  append(result1 + tanResult1 * result2, tanResult * result1 + result2, result3 + tanResult1 * result4, tanResult * result3 + result4, arg0, arg1);
+};

@@ -1,16 +1,16 @@
-// Module ID: 18658
-// Function ID: 18659
+// Module ID: 18693
+// Function ID: 18694
 // Name: UrgentSystemDMManagerBase
-// Dependencies: [2068, 2119, 1392, 18659, 1087, 8579, 7085, 2]
+// Dependencies: [4800, 4851, 1392, 18694, 1087, 8595, 7162, 2]
 
-// Module 18658 (UrgentSystemDMManagerBase)
+// Module 18693 (UrgentSystemDMManagerBase)
 import Constants from "Constants" /* 1087 */;
-import UserActionCreatorsAll from "UserActionCreators" /* 8579 */;
-import Constants2 from "Constants" /* 18659 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import UserActionCreatorsAll from "UserActionCreators" /* 8595 */;
+import Constants2 from "Constants" /* 18694 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
 import UserStore from "UserStore" /* 1392 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7162 */;
 import size from "module_2" /* 2 */;
 
 function maybeShowUrgentMessageModal(handleShowUrgentMessageAlert) {

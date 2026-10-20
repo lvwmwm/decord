@@ -1,16 +1,16 @@
-// Module ID: 12770
-// Function ID: 12771
+// Module ID: 12786
+// Function ID: 12787
 // Name: NumberAnimation
-// Dependencies: [32, 19, 17, 5181, 5537, 21, 5191, 558, 576, 504, 12764, 5009, 2]
+// Dependencies: [32, 19, 17, 4946, 5970, 21, 4945, 558, 576, 504, 12780, 5078, 2]
 
-// Module 12770 (NumberAnimation)
+// Module 12786 (NumberAnimation)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import CheckpointConstants from "CheckpointConstants" /* 5537 */;
+import CheckpointConstants from "CheckpointConstants" /* 5970 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
-import createStyles from "createStyles" /* 5191 */;
+import AccessibilityStore from "AccessibilityStore" /* 4946 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -155,8 +155,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NumberAnim
         closure_0 = Date.now();
         _setInterval = setInterval;
         num = 32;
-        closure_1 = setInterval(() => { /* body not rendered: F146892 */ }, 32);
-        return () => { /* body not rendered: F146893 */ };
+        closure_1 = setInterval(() => { /* body not rendered: F147390 */ }, 32);
+        return () => { /* body not rendered: F147391 */ };
       }
     }
   }

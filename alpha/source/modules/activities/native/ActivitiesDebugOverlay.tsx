@@ -1,18 +1,18 @@
-// Module ID: 18270
-// Function ID: 18271
+// Module ID: 18299
+// Function ID: 18300
 // Name: ActivitiesDebugOverlay
-// Dependencies: [19, 17, 21, 5191, 5063, 587, 558, 576, 15492, 1633, 5187, 2]
+// Dependencies: [19, 17, 21, 4945, 4942, 587, 558, 576, 15520, 1633, 5195, 2]
 
-// Module 18270 (ActivitiesDebugOverlay)
+// Module 18299 (ActivitiesDebugOverlay)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import useThermalState from "useThermalState" /* 15492 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import useThermalState from "useThermalState" /* 15520 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
-import ColorUtils_mod from "ColorUtils" /* 5063 */;
+import createStyles_mod from "createStyles" /* 4945 */;
+import ColorUtils_mod from "ColorUtils" /* 4942 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

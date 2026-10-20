@@ -1,24 +1,109 @@
-// Module ID: 11047
-// Function ID: 11048
+// Module ID: 11021
+// Function ID: 11022
 // Name: createProxyTicket
-// Dependencies: [5, 1087, 1297, 6299, 2]
-// Exports: createProxyTicket
+// Dependencies: [5, 502, 1087, 1297, 5584, 2]
+// Exports: createProxyTicket, prefetchProxyTicket
 
-// Module 11047 (createProxyTicket)
+// Module 11021 (createProxyTicket)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
-let surface;
+let c5, c6, set, surface;
 
 let obj = function _createProxyTicket() {
+  obj = _asyncToGenerator(async (arg0, value, arg2) => {
+    let closure_0 = arg0;
+    let closure_1 = value;
+    let closure_2 = arg2;
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c6 = 2;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_4 = tmp;
+            const tmp25 = prefetchKey(closure_0, closure_1, closure_2);
+            value = map.get(tmp25);
+            map.delete(tmp25);
+            if (null != value) {
+              const _Date = Date;
+              if (value.expiresAt > Date.now()) {
+                const ticket = value.ticket;
+                c5 = 1;
+                c6 = 1;
+                const obj4 = { value: ticket.catch(() => null), done: false };
+                return obj4;
+              }
+            }
+          }
+        } else if (arg0 === 1) {
+          c6 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c6 = 3;
+          const obj5 = { value, done: true };
+          return obj5;
+        } else if (null != value) {
+          c6 = 3;
+          obj = { value, done: true };
+          return obj;
+        }
+        c6 = 3;
+        const obj6 = { value: closure_132_9(closure_0, closure_1, closure_2), done: true };
+        return obj6;
+      } catch (tmp16) {
+        c6 = 3;
+        throw tmp16;
+      }
+    }
+  });
+  return obj(...arguments);
+};
+function prefetchKey(arg0, arg1, arg2) {
+  let str = arg1;
+  const items = [AuthenticationStore.getId(), arg0, , ];
+  if (arg1 == null) {
+    str = "";
+  }
+  let str2 = arg2;
+  items[2] = str;
+  if (arg2 == null) {
+    str2 = "";
+  }
+  items[3] = str2;
+  return items.join(":");
+}
+function mintProxyTicket() {
+  return obj(...arguments);
+}
+obj = function _mintProxyTicket() {
   obj = _asyncToGenerator(async (arg0, arg1, arg2) => {
     let c3;
     let c4;
     let closure_2;
     function prewarmApplication(arg0) {
-      const tmp = closure_1_1(closure_1_2[3])(arg0);
+      const tmp = closure_1_1(closure_1_2[4])(arg0);
       if (null != tmp) {
         try {
           const _fetch = fetch;
@@ -56,8 +141,32 @@ let obj = function _createProxyTicket() {
   return obj(...arguments);
 };
 const Endpoints = Constants.Endpoints;
-const result = size.fileFinishedImporting("modules/activities/createProxyTicket.tsx");
+const map = new Map();
+let result = size.fileFinishedImporting("modules/activities/createProxyTicket.tsx");
 
 export const createProxyTicket = function createProxyTicket() {
   return obj(...arguments);
+};
+export const prefetchProxyTicket = function prefetchProxyTicket(prop, arg1, type) {
+  let str = arg1;
+  let str2 = type;
+  const promise = mintProxyTicket(prop, arg1, type);
+  promise.catch(() => {
+
+  });
+  const items = [, , , ];
+  set = map.set;
+  items[0] = AuthenticationStore.getId();
+  items[1] = prop;
+  if (arg1 == null) {
+    str = "";
+  }
+  items[2] = str;
+  if (str2 == null) {
+    str2 = "";
+  }
+  items[3] = str2;
+  obj = { ticket: promise, expiresAt: Date.now() + 60000 };
+  const joined = items.join(":");
+  const result = set(joined, obj);
 };

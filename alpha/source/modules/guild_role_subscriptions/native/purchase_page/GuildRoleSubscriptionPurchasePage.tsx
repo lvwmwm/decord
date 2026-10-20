@@ -1,26 +1,26 @@
-// Module ID: 17686
-// Function ID: 17687
+// Module ID: 17715
+// Function ID: 17716
 // Name: GuildRoleSubscriptionPurchasePage
-// Dependencies: [19, 17, 1207, 2068, 2090, 1087, 21, 5191, 587, 558, 576, 5187, 1128, 1202, 11410, 6940, 16268, 16270, 16271, 573, 17687, 5521, 17689, 17690, 17691, 8431, 5128, 6436, 17692, 9859, 17694, 17695, 4901, 17696, 2]
+// Dependencies: [19, 17, 1207, 4800, 4822, 1087, 21, 4945, 587, 558, 576, 5195, 1128, 1202, 11431, 7022, 16297, 16299, 16300, 573, 17716, 5565, 17718, 17719, 17720, 8447, 5631, 6831, 17721, 9873, 17723, 17724, 5622, 17725, 2]
 
-// Module 17686 (GuildRoleSubscriptionPurchasePage)
+// Module 17715 (GuildRoleSubscriptionPurchasePage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import LinkingDefault from "Linking" /* 4901 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8431 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11410 */;
-import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 17696 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import LinkingDefault from "Linking" /* 5622 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8447 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11431 */;
+import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 17725 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import GuildStore from "GuildStore" /* 4822 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function LegalD
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(intl6.t.FSPTDI, obj5) };
-    const Text = tmp(5187).Text;
+    const Text = tmp(5195).Text;
     intl = tmp(1128).intl;
     obj5 = { termsURL: null, paidURL: null };
     ({ TERMS: obj3.termsURL, PAID_TERMS: obj3.paidURL } = map1);

@@ -1,16 +1,16 @@
-// Module ID: 18355
-// Function ID: 18356
+// Module ID: 18384
+// Function ID: 18385
 // Name: usePIPAvoidanceSpecs
-// Dependencies: [10680, 10678, 10681, 558, 4945, 11699, 18145, 4913, 587, 9878, 18061, 18146, 10686, 10684, 2]
+// Dependencies: [10693, 10691, 10694, 558, 5014, 11720, 18176, 5213, 587, 9892, 18090, 18177, 10699, 10697, 2]
 
-// Module 18355 (usePIPAvoidanceSpecs)
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9878 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10678 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10680 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10681 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10684 */;
-import getPIPBottomOffsetForPIPModeDefault from "getPIPBottomOffsetForPIPMode" /* 18061 */;
-import getAdjustedBottomOffsetsDefault from "getAdjustedBottomOffsets" /* 18146 */;
+// Module 18384 (usePIPAvoidanceSpecs)
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9892 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10691 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10693 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 10694 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10697 */;
+import getPIPBottomOffsetForPIPModeDefault from "getPIPBottomOffsetForPIPMode" /* 18090 */;
+import getAdjustedBottomOffsetsDefault from "getAdjustedBottomOffsets" /* 18177 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,7 +69,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePIPAvoida
       if (tmp11) {
         sum = bottomOffset + (controlsSpecs.height + PIP_WINDOW_OFFSET);
       }
-      const height = tmp10(10686)(safeArea, token).height;
+      const height = tmp10(10699)(safeArea, token).height;
       let num4 = 0;
       const tmp10Result = updateSharedValueIfChangedDefault;
       const tmp17 = sharedValue;
@@ -140,7 +140,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePIPAvoida
         if (tmp11) {
           sum = bottomOffset + (controlsSpecs.height + PIP_WINDOW_OFFSET);
         }
-        const height = tmp10(10686)(safeArea, token).height;
+        const height = tmp10(10699)(safeArea, token).height;
         let num4 = 0;
         const tmp10Result = updateSharedValueIfChangedDefault;
         const tmp17 = sharedValue;

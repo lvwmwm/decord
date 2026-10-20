@@ -1,15 +1,15 @@
-// Module ID: 6581
-// Function ID: 6582
+// Module ID: 6974
+// Function ID: 6975
 // Name: NativeTextInput
-// Dependencies: [19, 17, 1501, 1087, 21, 558, 576, 6582, 5496, 5462, 6583, 4922, 4915, 2]
+// Dependencies: [19, 17, 1501, 1087, 21, 558, 576, 6975, 5224, 5228, 6976, 4999, 5100, 2]
 // Exports: NativeTextInput
 
-// Module 6581 (NativeTextInput)
+// Module 6974 (NativeTextInput)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import native from "native" /* 4915 */;
-import native2 from "native" /* 4922 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6583 */;
+import native from "native" /* 4999 */;
+import native2 from "native" /* 5100 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6976 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1501 */;
@@ -27,7 +27,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const useMountEffect = tmp(5496);
+const useMountEffect = tmp(5224);
 let react = react_mod;
 ({ Pressable: closure_4, TextInput: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const KeyboardThemes = Constants.KeyboardThemes;
@@ -114,7 +114,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
         const mountLayoutEffect = tmpResult.useMountLayoutEffect(tmp8);
         const _Symbol = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj2 = { value: "Array", defaultValue: "Reflect" };
+          const obj2 = { value: "Array", defaultValue: "test" };
           cResult[8] = obj2;
           tmp11 = obj2;
         } else {
@@ -180,7 +180,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
       current.setNativeProps(obj);
     }
   });
-  return { value: "Array", defaultValue: "Reflect" };
+  return { value: "Array", defaultValue: "test" };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePanGestureWrapper(arg0) {
@@ -324,15 +324,15 @@ export const NativeTextInput = function TextInput(ref) {
   const tmp5 = useBottomSheetKeyboardHandlingDefault(merged);
   const tmp6 = closure_13(merged, ref1);
   const panGestureWrapper = closure_14(ref1).panGestureWrapper;
-  native2;
+  native;
   if (null == merged.keyboardAppearance) {
-    const tmp7Result = native;
+    const tmp7Result = native2;
     merged.keyboardAppearance = tmp7Result.isThemeDark(tmp9) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
   }
   const obj = { ref: tmp7Result4.mergeRefs(ref1, ref) };
-  const tmp7Result3 = native;
+  const tmp7Result3 = native2;
   const merged1 = Object.assign(tmp7Result3.mergeProps(merged, tmp5, tmp6));
-  tmp7Result4 = native;
+  tmp7Result4 = native2;
   const tmp12 = authStore(hasOwnProperty, obj);
   let panGestureWrapperResult = tmp12;
   if (!merged.multiline) {

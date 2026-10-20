@@ -1,11 +1,11 @@
-// Module ID: 9374
-// Function ID: 9375
+// Module ID: 9390
+// Function ID: 9391
 // Name: OneDayFractionalNitroExperiment
-// Dependencies: [1455, 558, 576, 9375, 2]
+// Dependencies: [1455, 558, 576, 9391, 2]
 
-// Module 9374 (OneDayFractionalNitroExperiment)
+// Module 9390 (OneDayFractionalNitroExperiment)
 import react from "react" /* 576 */;
-import PremiumGroupExperimentDefault from "PremiumGroupExperiment" /* 9375 */;
+import PremiumGroupExperimentDefault from "PremiumGroupExperiment" /* 9391 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

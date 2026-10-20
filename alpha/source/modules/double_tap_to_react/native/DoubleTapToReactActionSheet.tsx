@@ -1,27 +1,27 @@
-// Module ID: 13042
-// Function ID: 13043
+// Module ID: 13074
+// Function ID: 13075
 // Name: DoubleTapToReactActionSheet
-// Dependencies: [5, 32, 19, 17, 5181, 6243, 1087, 1395, 21, 5191, 1384, 587, 4945, 5192, 558, 576, 5496, 504, 5478, 2044, 4859, 8254, 1417, 7098, 1267, 7155, 9739, 5155, 5187, 1128, 12941, 13043, 5479, 7175, 2]
+// Dependencies: [5, 32, 19, 17, 4946, 6673, 1087, 1395, 21, 4945, 1384, 587, 5014, 5167, 558, 576, 5224, 504, 5208, 4776, 4894, 8270, 1417, 7175, 1267, 7224, 9753, 5171, 5195, 1128, 12973, 13075, 5205, 7244, 2]
 
-// Module 13042 (DoubleTapToReactActionSheet)
+// Module 13074 (DoubleTapToReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import UserSettings from "UserSettings" /* 2044 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4859 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import timing from "timing" /* 5192 */;
-import spring from "spring" /* 5478 */;
+import UserSettings from "UserSettings" /* 4776 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4894 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
+import timing from "timing" /* 5167 */;
+import spring from "spring" /* 5208 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
-import EmojiStore from "EmojiStore" /* 6243 */;
+import AccessibilityStore from "AccessibilityStore" /* 4946 */;
+import EmojiStore from "EmojiStore" /* 6673 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -41,7 +41,7 @@ let obj7;
 let obj8;
 let tmp;
 let unpackModuleId;
-const DoubleTapToReactUtils = tmp(8254);
+const DoubleTapToReactUtils = tmp(8270);
 function randomizeAnimationValues(leading) {
   let Easing;
   let opacityValue;
@@ -227,20 +227,20 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiC
   ({ bottom, left } = top);
   ({ right, leading: dependencyMap } = top);
   const children = top.emojiComponent;
-  let obj = top(4945);
+  let obj = top(5014);
   const sharedValue = obj.useSharedValue(0);
-  const obj2 = top(4945);
+  const obj2 = top(5014);
   const sharedValue1 = obj2.useSharedValue(0);
-  const obj3 = top(4945);
+  const obj3 = top(5014);
   const sharedValue2 = obj3.useSharedValue(0.2);
-  let obj4 = top(4945);
+  let obj4 = top(5014);
   const sharedValue3 = obj4.useSharedValue(0);
-  const obj5 = top(5496);
+  const obj5 = top(5224);
   const mountLayoutEffect = obj5.useMountLayoutEffect(() => {
     const obj = { positionValue: sharedValue, rotationValue: sharedValue1, sizeValue: sharedValue2, opacityValue: sharedValue3, leading: dependencyMap };
     randomizeAnimationValues(obj);
   });
-  const obj6 = top(4945);
+  const obj6 = top(5014);
   class S {
     constructor() {
       let obj4;
@@ -275,7 +275,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiC
   S.__workletHash = 17194622427708;
   S.__initData = __initData2;
   const style = obj6.useAnimatedStyle(S);
-  return closure_11(left(4945).View, { style, children });
+  return closure_11(left(5014).View, { style, children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiBurstAnimation(emojiComponent) {

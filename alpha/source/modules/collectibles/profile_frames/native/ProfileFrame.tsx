@@ -1,21 +1,21 @@
-// Module ID: 8620
-// Function ID: 8621
+// Module ID: 8636
+// Function ID: 8637
 // Name: ProfileFrame
-// Dependencies: [19, 17, 8603, 8621, 21, 4945, 5191, 558, 576, 8622, 5128, 5192, 8624, 8625, 2]
+// Dependencies: [19, 17, 8619, 8637, 21, 5014, 4945, 558, 576, 8638, 5631, 5167, 8640, 8641, 2]
 
-// Module 8620 (ProfileFrame)
+// Module 8636 (ProfileFrame)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import timing from "timing" /* 5192 */;
-import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8603 */;
-import useProfileFrameLayerAsset from "useProfileFrameLayerAsset" /* 8622 */;
-import FramePreviewOverrideFrameDefault from "FramePreviewOverrideFrame" /* 8625 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
+import timing from "timing" /* 5167 */;
+import FastImageDefault from "FastImage" /* 5631 */;
+import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8619 */;
+import useProfileFrameLayerAsset from "useProfileFrameLayerAsset" /* 8638 */;
+import FramePreviewOverrideFrameDefault from "FramePreviewOverrideFrame" /* 8641 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 8621 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 8637 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -835,7 +835,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function LivePr
   c9 = undefined;
   c10 = undefined;
   const tmp = c10();
-  let obj = frame(8622);
+  let obj = frame(8638);
   const settled = obj.usePreloadLayerImages({ frame, containerWidth, profileThemeType, filterLayer }).settled;
   const items = [frame.layers, frameOrder, profileThemeType, filterLayer];
   const memo = profileThemeType.useMemo(() => {
@@ -850,9 +850,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function LivePr
     });
   }, items);
   let num = 0;
-  const useSharedValue = frame(4945).useSharedValue;
+  const useSharedValue = frame(5014).useSharedValue;
   const obj2 = profileThemeType;
-  const tmp3 = frame(4945);
+  const tmp3 = frame(5014);
   if (settled) {
     num = 1;
   }
@@ -870,12 +870,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function LivePr
   if (0 !== memo.length) {
     if (0 !== containerWidth) {
       if (settled) {
-        ({ overflowTop: c8, overflowBottom: c9, overflowHorizontal: c10 } = containerWidth(8624)(frame, containerWidth));
+        ({ overflowTop: c8, overflowBottom: c9, overflowHorizontal: c10 } = containerWidth(8640)(frame, containerWidth));
         const items2 = [tmp.container, ];
         const obj4 = { opacity: sharedValue };
         items2[1] = obj4;
-        containerWidth(8624)(frame, containerWidth);
-        const View = containerWidth(4945).View;
+        containerWidth(8640)(frame, containerWidth);
+        const View = containerWidth(5014).View;
         return <View style={items2}>{memo.map((layer) => <closure_11 key={arg0.id} skuId={frame.skuId} layer={arg0} overflowTop={c8} overflowBottom={c9} overflowHorizontal={c10} containerWidth={containerWidth} containerHeight={dependencyMap} />)}</View>;
       }
     }

@@ -1,16 +1,16 @@
-// Module ID: 11221
-// Function ID: 11222
+// Module ID: 11236
+// Function ID: 11237
 // Name: joinFrameActivity
-// Dependencies: [5, 2068, 4845, 1087, 2026, 584, 11222, 11088, 11048, 5892, 11054, 1128, 9160, 11205, 10999, 2]
+// Dependencies: [5, 4800, 4880, 1087, 2026, 584, 11237, 11103, 11062, 6329, 11068, 1128, 9176, 11220, 11011, 2]
 // Exports: default
 
-// Module 11221 (joinFrameActivity)
+// Module 11236 (joinFrameActivity)
 import Constants2 from "Constants" /* 2026 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10999 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 11205 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11011 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 11220 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -98,7 +98,7 @@ let obj = function _joinFrameActivity() {
               };
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "test", done: true };
             }
           } else {
             let tmp47;

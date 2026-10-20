@@ -1,12 +1,12 @@
-// Module ID: 10021
-// Function ID: 10022
+// Module ID: 10035
+// Function ID: 10036
 // Name: useActionSheetStartHeight
-// Dependencies: [7119, 558, 1499, 2]
+// Dependencies: [5227, 558, 1499, 2]
 // Exports: default
 
-// Module 10021 (useActionSheetStartHeight)
+// Module 10035 (useActionSheetStartHeight)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 7119 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5227 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

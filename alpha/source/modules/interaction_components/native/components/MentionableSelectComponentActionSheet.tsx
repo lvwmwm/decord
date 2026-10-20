@@ -1,14 +1,14 @@
-// Module ID: 12556
-// Function ID: 12557
+// Module ID: 12576
+// Function ID: 12577
 // Name: MentionableSelectComponentActionSheet
-// Dependencies: [19, 2090, 21, 558, 576, 7095, 8530, 12557, 11670, 11673, 2]
+// Dependencies: [19, 4822, 21, 558, 576, 7172, 8546, 12577, 11691, 11694, 2]
 
-// Module 12556 (MentionableSelectComponentActionSheet)
+// Module 12576 (MentionableSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 8530 */;
-import MentionableSelectOptionParts from "MentionableSelectOptionParts" /* 11670 */;
+import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 8546 */;
+import MentionableSelectOptionParts from "MentionableSelectOptionParts" /* 11691 */;
 import react from "react" /* 19 */;
-import GuildStore_mod from "GuildStore" /* 2090 */;
+import GuildStore_mod from "GuildStore" /* 4822 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

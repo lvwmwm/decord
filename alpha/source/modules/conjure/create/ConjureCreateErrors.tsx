@@ -1,13 +1,13 @@
-// Module ID: 11003
-// Function ID: 11004
+// Module ID: 11015
+// Function ID: 11016
 // Name: ConjureCreateErrors
-// Dependencies: [1087, 1128, 3883, 2]
+// Dependencies: [1087, 1128, 3820, 2]
 // Exports: classifyCreateFailure, createFailureStatus, getConjureCreateErrorMessage
 
-// Module 11003 (ConjureCreateErrors)
+// Module 11015 (ConjureCreateErrors)
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
-import _modDef3883 from "module_3883" /* 3883 */;
+import _modDef3820 from "module_3820" /* 3820 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
@@ -69,12 +69,12 @@ export const getConjureCreateErrorMessage = function getConjureCreateErrorMessag
   }
   if ("project_limit" === str) {
     const intl3 = intl4.intl;
-    return intl3.string(_modDef3883["lh+h/p"]);
+    return intl3.string(_modDef3820["lh+h/p"]);
   } else if ("rate_limited" === str) {
     const intl2 = intl4.intl;
-    return intl2.string(_modDef3883.zBENJU);
+    return intl2.string(_modDef3820.zBENJU);
   } else {
     const intl = intl4.intl;
-    return intl.string(_modDef3883["9m86fn"]);
+    return intl.string(_modDef3820["9m86fn"]);
   }
 };

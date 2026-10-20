@@ -1,15 +1,12 @@
 // Module ID: 10253
 // Function ID: 10254
-// Dependencies: [41, 42, 93, 95, 98, 10248, 10121, 10122, 10250]
+// Dependencies: [41, 42, 93, 95, 98, 10151]
 
 // Module 10253
-import EmptyDuration from "EmptyDuration" /* 10121 */;
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10122 */;
-import REGEX_PARTS from "REGEX_PARTS" /* 10248 */;
-import AbstractParserWithLeftBoundaryChecking from "AbstractParserWithLeftBoundaryChecking" /* 10250 */;
+import _mod10151 from "module_10151" /* 10151 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -28,14 +25,31 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class RUTimeUnitAgoFormatParser {
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class ZHHantMergeDateRangeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, RUTimeUnitAgoFormatParser);
-    const obj = _getPrototypeOf(RUTimeUnitAgoFormatParser);
+    _classCallCheck(this, ZHHantMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(ZHHantMergeDateRangeRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -45,24 +59,13 @@ class RUTimeUnitAgoFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(RUTimeUnitAgoFormatParser, AbstractParserWithLeftBoundaryChecking.AbstractParserWithLeftBoundaryChecking);
+_inherits(ZHHantMergeDateRangeRefiner, fn(_mod10151).default);
 const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(" + REGEX_PARTS.TIME_UNITS_PATTERN + ")\\s{0,5}\u043D\u0430\u0437\u0430\u0434(?=(?:\\W|$))";
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*(至|到|\-|\~|～|－|ー)\s*$/i;
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = REGEX_PARTS.parseDuration(arg1[1]);
-      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(RUTimeUnitAgoFormatParser, items);
+export default _createClass(ZHHantMergeDateRangeRefiner, items);

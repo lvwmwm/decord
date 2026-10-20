@@ -1,12 +1,12 @@
-// Module ID: 11690
-// Function ID: 11691
+// Module ID: 11711
+// Function ID: 11712
 // Name: conjurePublishBlockedReason
-// Dependencies: [1128, 3883, 2]
+// Dependencies: [1128, 3820, 2]
 // Exports: getConjurePublishBlockedCopy
 
-// Module 11690 (conjurePublishBlockedReason)
+// Module 11711 (conjurePublishBlockedReason)
 import intl9 from "intl" /* 1128 */;
-import _modDef3883 from "module_3883" /* 3883 */;
+import _modDef3820 from "module_3820" /* 3820 */;
 import size from "module_2" /* 2 */;
 
 const ConjurePublishBlockedReason = { NO_PREVIEW: "no-preview", MISSING_MANAGE_SERVER: "missing-manage-server", MISSING_MANAGE_CHANNELS: "missing-manage-channels" };
@@ -26,7 +26,7 @@ export const getConjurePublishBlockedCopy = function getConjurePublishBlockedCop
   let str;
   let tmp4;
   if (obj.NO_PREVIEW === reason) {
-    const obj2 = { title: intl6.string(_modDef3883.ZNGLFE), body: intl7.string(_modDef3883.ffxKGK), action: intl8.string(_modDef3883["/omTNx"]) };
+    const obj2 = { title: intl6.string(_modDef3820.ZNGLFE), body: intl7.string(_modDef3820.ffxKGK), action: intl8.string(_modDef3820["/omTNx"]) };
     intl6 = intl9.intl;
     intl7 = intl9.intl;
     intl8 = intl9.intl;
@@ -34,7 +34,7 @@ export const getConjurePublishBlockedCopy = function getConjurePublishBlockedCop
   } else {
     let str2 = message;
     if (obj.MISSING_MANAGE_SERVER === reason) {
-      const obj3 = { title: intl4.string(_modDef3883.qpffbI), body: str2, action: intl5.string(intl9.t.BddRzS) };
+      const obj3 = { title: intl4.string(_modDef3820.qpffbI), body: str2, action: intl5.string(intl9.t.BddRzS) };
       intl4 = intl9.intl;
       if (str2 == null) {
         str2 = "";
@@ -42,7 +42,7 @@ export const getConjurePublishBlockedCopy = function getConjurePublishBlockedCop
       intl5 = tmp6(1128).intl;
       return obj3;
     } else if (obj.MISSING_MANAGE_CHANNELS === reason) {
-      obj = { title: intl.string(_modDef3883.qpffbI), body: str, action: intl2.string(tmp4(3883).dVtQRH), cancel: intl3.string(intl9.t["ETE/oC"]) };
+      obj = { title: intl.string(_modDef3820.qpffbI), body: str, action: intl2.string(tmp4(3820).dVtQRH), cancel: intl3.string(intl9.t["ETE/oC"]) };
       intl = intl9.intl;
       str = str2;
       tmp4 = importDefault;

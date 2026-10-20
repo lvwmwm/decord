@@ -1,14 +1,14 @@
-// Module ID: 8660
-// Function ID: 8661
+// Module ID: 8676
+// Function ID: 8677
 // Name: openMediaModal
-// Dependencies: [32, 5, 4897, 1087, 1499, 8661, 2002, 8662, 8663, 38, 5155, 8688, 6190, 8689, 2]
+// Dependencies: [32, 5, 5172, 1087, 1499, 8677, 2002, 8678, 8679, 38, 5171, 8704, 6620, 8705, 2]
 // Exports: openMediaModal
 
-// Module 8660 (openMediaModal)
+// Module 8676 (openMediaModal)
 import Constants from "Constants" /* 1087 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 4897 */;
+import ActionSheetStore from "ActionSheetStore" /* 5172 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj = function _openMediaModal() {
@@ -97,7 +97,7 @@ let obj = function _openMediaModal() {
     }
     let obj4 = {};
     let closure_7 = Object.assign(tmp24, Object.assign({ originViewOrOriginLayout: 0, initialIndex: 0, initialSources: 0, analyticsSource: 0, channelId: 0, onClose: 0, openAs: 0 }));
-    return "Reflect";
+    return "test";
   });
   return obj(...arguments);
 };

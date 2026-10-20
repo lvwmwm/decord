@@ -1,18 +1,18 @@
-// Module ID: 9764
-// Function ID: 9765
+// Module ID: 9778
+// Function ID: 9779
 // Name: ShinyButton
-// Dependencies: [109, 19, 21, 5191, 587, 558, 576, 1202, 9765, 5480, 2]
+// Dependencies: [109, 19, 21, 4945, 587, 558, 576, 1202, 9779, 5206, 2]
 
-// Module 9764 (ShinyButton)
+// Module 9778 (ShinyButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import BaseTextButton2 from "BaseTextButton" /* 5480 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9765 */;
+import BaseTextButton2 from "BaseTextButton" /* 5206 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9779 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShinyButton(
               }
             }
           }
-          const BaseTextButton = tmp(5480).BaseTextButton;
+          const BaseTextButton = tmp(5206).BaseTextButton;
           const merged = Object.assign(tmp6);
           const tmp24 = <BaseTextButton onPress={tmp12} pillStyle={tmp14} loading={tmp5} disabled={tmp4} icon={tmp15} />;
           cResult[16] = tmp4;

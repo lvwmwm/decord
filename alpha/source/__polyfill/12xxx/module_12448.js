@@ -1,39 +1,56 @@
 // Module ID: 12448
 // Function ID: 12449
-// Dependencies: [12414, 12386, 12413]
-// Exports: initAndBind, setCurrentClient
+// Dependencies: [12411, 12434, 12406, 12421]
+// Exports: setMeasurement, timedEventsToMeasurements
 
 // Module 12448
-import _mod12386 from "module_12386" /* 12386 */;
-import _mod12413 from "module_12413" /* 12413 */;
-import _mod12414 from "module_12414" /* 12414 */;
+import _mod12411 from "module_12411" /* 12411 */;
+import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 12421 */;
+import _mod12434 from "module_12434" /* 12434 */;
 
 
-export const initAndBind = function initAndBind(arg0, debug) {
-  if (true === debug.debug) {
-    const DEBUG_BUILD = _mod12414.DEBUG_BUILD;
-    const obj = _mod12386;
-    if (DEBUG_BUILD) {
-      const logger = obj.logger;
-      logger.enable();
-    } else {
-      obj.consoleSandbox(() => {
-        console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle.");
+export const setMeasurement = function setMeasurement(arg0, arg1, arg2) {
+  let activeSpan = arg3;
+  if (arg3 === undefined) {
+    const obj = _mod12411;
+    activeSpan = obj.getActiveSpan();
+  }
+  let rootSpan = activeSpan;
+  if (rootSpan) {
+    const obj3 = _mod12411;
+    rootSpan = obj3.getRootSpan(activeSpan);
+  }
+  if (rootSpan) {
+    if (_mod12434.DEBUG_BUILD) {
+      const logger = tmp9(12406).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("[Measurement] Setting measurement on root span: " + arg0 + " = " + arg1 + " " + arg2);
+    }
+    const obj2 = {};
+    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE] = arg1;
+    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = arg2;
+    rootSpan.addEvent(arg0, obj2);
+  }
+};
+export const timedEventsToMeasurements = function timedEventsToMeasurements(arr) {
+  let tmp = arr;
+  if (tmp) {
+    if (0 !== arr.length) {
+      let obj = {};
+      const item = arr.forEach((attributes) => {
+        const tmp = attributes.attributes || {};
+        const tmp2 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT];
+        const tmp3 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE];
+        let tmp4 = typeof tmp2 === "string";
+        if (typeof tmp2 === "string") {
+          tmp4 = typeof tmp3 === "number";
+        }
+        if (tmp4) {
+          obj = { value: tmp3, unit: tmp2 };
+          obj[attributes.name] = obj;
+        }
       });
+      return obj;
     }
   }
-  const obj2 = _mod12413;
-  const currentScope = obj2.getCurrentScope();
-  currentScope.update(debug.initialScope);
-  const obj4 = new arg0(debug);
-  const obj5 = _mod12413;
-  const currentScope1 = obj5.getCurrentScope();
-  currentScope1.setClient(obj4);
-  obj4.init();
-  return obj4;
-};
-export const setCurrentClient = function setCurrentClient(arg0) {
-  const obj = _mod12413;
-  const currentScope = obj.getCurrentScope();
-  currentScope.setClient(arg0);
 };

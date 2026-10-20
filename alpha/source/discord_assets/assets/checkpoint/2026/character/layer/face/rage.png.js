@@ -1,8 +1,8 @@
-// Module ID: 5781
-// Function ID: 5782
+// Module ID: 6213
+// Function ID: 6214
 // Dependencies: [2]
 
-// Module 5781
+// Module 6213
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/face/rage.png.js");

@@ -1,18 +1,18 @@
-// Module ID: 16597
-// Function ID: 16598
+// Module ID: 16626
+// Function ID: 16627
 // Name: IcymiTabSetting
-// Dependencies: [8260, 558, 8749, 8746, 8745, 16598, 576, 11084, 1128, 2]
+// Dependencies: [8276, 558, 8765, 8762, 8761, 16627, 576, 11099, 1128, 2]
 
-// Module 16597 (IcymiTabSetting)
+// Module 16626 (IcymiTabSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8260 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8745 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 8746 */;
-import useLabFeatureDefault from "useLabFeature" /* 8749 */;
-import LabFeatureActions from "LabFeatureActions" /* 16598 */;
+import SettingsConstants from "SettingsConstants" /* 8276 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8761 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 8762 */;
+import useLabFeatureDefault from "useLabFeature" /* 8765 */;
+import LabFeatureActions from "LabFeatureActions" /* 16627 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SettingBuilders from "SettingBuilders" /* 11099 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

@@ -1,30 +1,30 @@
-// Module ID: 17258
-// Function ID: 17259
+// Module ID: 17287
+// Function ID: 17288
 // Name: ChannelItem
-// Dependencies: [109, 19, 17, 5207, 4855, 1392, 1087, 2075, 6223, 21, 5191, 587, 6225, 13039, 558, 576, 1417, 5128, 17259, 8475, 8431, 504, 1202, 5513, 1114, 17260, 5521, 2]
+// Dependencies: [109, 19, 17, 5674, 4890, 1392, 1087, 4807, 6653, 21, 4945, 587, 6655, 13071, 558, 576, 1417, 5631, 17288, 8491, 8447, 504, 1202, 5948, 1114, 17289, 5565, 2]
 
-// Module 17258 (ChannelItem)
+// Module 17287 (ChannelItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import router_utils from "router_utils" /* 1114 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import ChannelConstants from "ChannelConstants" /* 2075 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import ReadStateConstants from "ReadStateConstants" /* 6223 */;
-import LegacyTokens from "LegacyTokens" /* 6225 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8431 */;
-import BookCheckIcon2 from "BookCheckIcon" /* 8475 */;
-import BaseChannelItem from "BaseChannelItem" /* 13039 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17259 */;
+import ChannelConstants from "ChannelConstants" /* 4807 */;
+import FastImageDefault from "FastImage" /* 5631 */;
+import ReadStateConstants from "ReadStateConstants" /* 6653 */;
+import LegacyTokens from "LegacyTokens" /* 6655 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8447 */;
+import BookCheckIcon2 from "BookCheckIcon" /* 8491 */;
+import BaseChannelItem from "BaseChannelItem" /* 13071 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17288 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5207 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import PresenceStore from "PresenceStore" /* 5674 */;
+import RelationshipStore from "RelationshipStore" /* 4890 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -159,7 +159,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     }
     if (tmp5) {
       tmp12 = AssetRegistryDefault;
-      BookCheckIcon = tmp(8475).BookCheckIcon;
+      BookCheckIcon = tmp(8491).BookCheckIcon;
     } else {
       if (cResult[10] === channel) {
         if (cResult[11] === locked) {
@@ -218,7 +218,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       }
     }
     const obj10 = { mode, source: tmp12, isChannelLive, style: channelIconLive };
-    const BaseChannelIcon = tmp(13039).BaseChannelIcon;
+    const BaseChannelIcon = tmp(13071).BaseChannelIcon;
     const merged = Object.assign(tmp17);
     const tmp24 = syncedClientThemes(BaseChannelIcon, obj10);
     cResult[18] = tmp12;
@@ -259,7 +259,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       const tmp5 = importDefault;
       if (null != channelIconSource) {
         const obj5 = { style: tmp.groupDmAvatar, source: channelIconSource };
-        return syncedClientThemes(tmp5(5128), obj5);
+        return syncedClientThemes(tmp5(5631), obj5);
       }
     }
     if (tmp2) {
@@ -278,7 +278,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     }
     const obj8 = { mode: tmp3, source: tmp13, isChannelLive, style: channelIconLive };
     channelIconLive = undefined;
-    const BaseChannelIcon = tmp10(13039).BaseChannelIcon;
+    const BaseChannelIcon = tmp10(13071).BaseChannelIcon;
     const tmp17 = syncedClientThemes;
     if (isChannelLive) {
       channelIconLive = tmp.channelIconLive;

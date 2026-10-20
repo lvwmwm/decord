@@ -1,14 +1,14 @@
-// Module ID: 16297
-// Function ID: 16298
+// Module ID: 16326
+// Function ID: 16327
 // Name: GuildRoleSubscriptionEmojiGallery
-// Dependencies: [19, 17, 21, 558, 576, 9857, 9859, 16298, 2]
+// Dependencies: [19, 17, 21, 558, 576, 9871, 9873, 16327, 2]
 
-// Module 16297 (GuildRoleSubscriptionEmojiGallery)
+// Module 16326 (GuildRoleSubscriptionEmojiGallery)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import chunkDefault from "chunk" /* 9857 */;
-import LayoutUtils from "LayoutUtils" /* 9859 */;
-import EmojiIconDefault from "EmojiIcon" /* 16298 */;
+import chunkDefault from "chunk" /* 9871 */;
+import LayoutUtils from "LayoutUtils" /* 9873 */;
+import EmojiIconDefault from "EmojiIcon" /* 16327 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -71,14 +71,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGalle
     }
   }
   const arr = chunkDefault(emojiIds, num);
-  let GappedList = tmp(9859).GappedList;
+  let GappedList = tmp(9873).GappedList;
   if (cResult[7] !== guildId) {
     class I {
       constructor(arg0, arg1) {
         obj = { style: { flexDirection: "row" }, children: null };
         obj1 = { gap: 16, children: null };
         GappedList = closure_0(closure_2[6]).GappedList;
-        obj1.children = maxPerRow.map(() => { /* body not rendered: F149846 */ });
+        obj1.children = maxPerRow.map(() => { /* body not rendered: F150350 */ });
         obj.children = jsx(GappedList, obj1);
         return jsx(View, obj, arg1);
       }
@@ -92,7 +92,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGalle
         obj = { style: { flexDirection: "row" }, children: null };
         obj1 = { gap: 16, children: null };
         GappedList = closure_0(closure_2[6]).GappedList;
-        obj1.children = maxPerRow.map(() => { /* body not rendered: F149846 */ });
+        obj1.children = maxPerRow.map(() => { /* body not rendered: F150350 */ });
         obj.children = jsx(GappedList, obj1);
         return jsx(View, obj, arg1);
       }

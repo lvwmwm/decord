@@ -1,9 +1,9 @@
-// Module ID: 8576
-// Function ID: 8577
+// Module ID: 8592
+// Function ID: 8593
 // Name: useCurrentUser
 // Dependencies: [1392, 558, 576, 504, 38, 2]
 
-// Module 8576 (useCurrentUser)
+// Module 8592 (useCurrentUser)
 import _modDef38 from "module_38" /* 38 */;
 import react from "react" /* 576 */;
 import UserStore from "UserStore" /* 1392 */;

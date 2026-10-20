@@ -1,21 +1,21 @@
-// Module ID: 15651
-// Function ID: 15652
+// Module ID: 15680
+// Function ID: 15681
 // Name: UserProfileAvatarDecorationEditButton
-// Dependencies: [19, 17, 2128, 7181, 1098, 21, 5191, 587, 558, 576, 504, 8564, 8657, 10831, 8555, 9307, 1202, 14260, 1128, 15640, 2]
+// Dependencies: [19, 17, 4860, 7250, 1098, 21, 4945, 587, 558, 576, 504, 8580, 8673, 10843, 8571, 9323, 1202, 14293, 1128, 15669, 2]
 
-// Module 15651 (UserProfileAvatarDecorationEditButton)
+// Module 15680 (UserProfileAvatarDecorationEditButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1098 */;
 import native from "native" /* 1202 */;
-import Constants2 from "Constants" /* 7181 */;
-import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8555 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9307 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14260 */;
+import Constants2 from "Constants" /* 7250 */;
+import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8571 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9323 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14293 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore_mod from "GuildMemberStore" /* 2128 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import GuildMemberStore_mod from "GuildMemberStore" /* 4860 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

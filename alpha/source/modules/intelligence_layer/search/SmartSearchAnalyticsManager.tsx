@@ -1,14 +1,14 @@
-// Module ID: 13012
-// Function ID: 13013
+// Module ID: 13044
+// Function ID: 13045
 // Name: SmartSearchAnalyticsManager
-// Dependencies: [12989, 1087, 568, 12995, 5206, 2]
+// Dependencies: [13021, 1087, 568, 13027, 5673, 2]
 
-// Module 13012 (SmartSearchAnalyticsManager)
+// Module 13044 (SmartSearchAnalyticsManager)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import Constants from "Constants" /* 1087 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5206 */;
-import SearchUtils from "SearchUtils" /* 12995 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 12989 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5673 */;
+import SearchUtils from "SearchUtils" /* 13027 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 13021 */;
 import size from "module_2" /* 2 */;
 
 let set;

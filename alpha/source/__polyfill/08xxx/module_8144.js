@@ -1,56 +1,69 @@
 // Module ID: 8144
 // Function ID: 8145
-// Dependencies: [8112]
+// Dependencies: [8145, 8147]
 
 // Module 8144
-import _modDef8112 from "module_8112" /* 8112 */;
+import _mod8145 from "module_8145" /* 8145 */;
+import _mod8147 from "module_8147" /* 8147 */;
 
-let obj = {
-  read(getUint8, sum) {
-    let obj4;
-    let obj5;
-    let str2;
-    let sum5;
-    const obj = _modDef8112;
-    const byteAt = obj.getByteAt(getUint8, sum);
-    let num = 0;
-    if (16 & byteAt) {
-      num = 1;
+let hasOwnProperty;
+
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
     }
-    let str = "No";
-    const obj2 = { value: num, description: str2 };
-    str2 = "No";
-    if (16 & byteAt) {
-      str2 = "Yes";
+    closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
     }
-    let num2 = 0;
-    const obj3 = { Alpha: obj2, Animation: obj4, ImageWidth: obj5, ImageHeight: { value: sum5, description: `${tmp13}px` } };
-    if (2 & byteAt) {
-      num2 = 1;
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
     }
-    obj4 = { value: num2, description: str };
-    if (2 & byteAt) {
-      str = "Yes";
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
     }
-    sum = sum + c2;
-    const tmpResult = _modDef8112;
-    const byteAt1 = tmpResult.getByteAt(getUint8, sum);
-    const tmpResult6 = _modDef8112;
-    const sum1 = byteAt1 + 256 * tmpResult6.getByteAt(getUint8, sum + 1);
-    const tmpResult7 = _modDef8112;
-    const sum2 = sum1 + 65536 * tmpResult7.getByteAt(getUint8, sum + 2) + 1;
-    const sum3 = sum + c3;
-    obj5 = { value: sum2, description: `${tmp9}px` };
-    const tmpResult8 = _modDef8112;
-    const byteAt2 = tmpResult8.getByteAt(getUint8, sum3);
-    const tmpResult9 = _modDef8112;
-    const sum4 = byteAt2 + 256 * tmpResult9.getByteAt(getUint8, sum3 + 1);
-    const tmpResult10 = _modDef8112;
-    sum5 = sum4 + 65536 * tmpResult10.getByteAt(getUint8, sum3 + 2) + 1;
-    return obj3;
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_0 = tmp;
+let tmp3 = self && self.__exportStar || ((obj, arg1) => {
+  for (const key10007 in obj) {
+    let callResult = "default" === key10007;
+    if (!callResult) {
+      let _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      callResult = hasOwnProperty.call(arg1, key10007);
+    }
+    if (callResult) {
+      continue;
+    } else {
+      let tmp3 = closure_0(arg1, obj, key10007);
+      continue;
+    }
+    continue;
   }
-};
-let c2 = 4;
-let c3 = 7;
-
-export default obj;
+});
+tmp3(_mod8145, exports);
+tmp3(_mod8147, exports);

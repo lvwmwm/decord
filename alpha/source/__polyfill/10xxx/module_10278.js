@@ -1,15 +1,12 @@
 // Module ID: 10278
 // Function ID: 10279
-// Dependencies: [41, 42, 93, 95, 98, 10273, 10121, 10122, 10275]
+// Dependencies: [41, 42, 93, 95, 98, 10147]
 
 // Module 10278
-import EmptyDuration from "EmptyDuration" /* 10121 */;
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10122 */;
-import _mod10273 from "module_10273" /* 10273 */;
-import _mod10275 from "module_10275" /* 10275 */;
+import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10147 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -28,14 +25,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class UKTimeUnitAgoFormatParser {
+class ESTimeExpressionParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UKTimeUnitAgoFormatParser);
-    const obj = _getPrototypeOf(UKTimeUnitAgoFormatParser);
+    _classCallCheck(this, ESTimeExpressionParser);
+    const obj = _getPrototypeOf(ESTimeExpressionParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -45,24 +42,21 @@ class UKTimeUnitAgoFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UKTimeUnitAgoFormatParser, _mod10275.AbstractParserWithLeftBoundaryChecking);
+_inherits(ESTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
 const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(" + _mod10273.TIME_UNITS_PATTERN + ")\\s{0,5}\u0442\u043E\u043C\u0443(?=(?:\\W|$))";
+  key: "primaryPrefix",
+  value: function primaryPrefix() {
+    return "(?:(?:aslas|deslas|las?|al?|de|del)\\s*)?";
   }
 };
 const items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod10273.parseDuration(arg1[1]);
-      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+    key: "followingPhase",
+    value: function followingPhase() {
+      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|a(?:l)?|\\?)\\s*";
     }
   }
 ];
 
-export default _createClass(UKTimeUnitAgoFormatParser, items);
+export default _createClass(ESTimeExpressionParser, items);

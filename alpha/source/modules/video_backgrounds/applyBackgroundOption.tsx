@@ -1,22 +1,22 @@
-// Module ID: 5353
-// Function ID: 5354
+// Module ID: 5817
+// Function ID: 5818
 // Name: applyBackgroundOption
-// Dependencies: [5, 1392, 5354, 5355, 1087, 5356, 5236, 5361, 1417, 5366, 5359, 5358, 5367, 2]
+// Dependencies: [5, 1392, 5818, 5819, 1087, 5820, 5700, 5825, 1417, 5830, 5823, 5822, 5831, 2]
 // Exports: applyBackgroundOptionPreview, applyInitialVideoBackgroundOption
 
-// Module 5353 (applyBackgroundOption)
+// Module 5817 (applyBackgroundOption)
 import Constants from "Constants" /* 1087 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5236 */;
-import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5356 */;
-import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5358 */;
-import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5361 */;
-import getFilterImageDefault from "getFilterImage" /* 5366 */;
-import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 5367 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5700 */;
+import VideoBackgroundActionCreators from "VideoBackgroundActionCreators" /* 5820 */;
+import LastUsedVideoBackgroundOption from "LastUsedVideoBackgroundOption" /* 5822 */;
+import getDefaultBackgroundDataDefault from "getDefaultBackgroundData" /* 5825 */;
+import getFilterImageDefault from "getFilterImage" /* 5830 */;
+import isVideoBackgroundEnabledDefault from "isVideoBackgroundEnabled" /* 5831 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;
-import VideoBackgroundStore from "VideoBackgroundStore" /* 5354 */;
-import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5355 */;
+import VideoBackgroundStore from "VideoBackgroundStore" /* 5818 */;
+import VideoBackgroundConstants from "VideoBackgroundConstants" /* 5819 */;
 import size from "module_2" /* 2 */;
 
 let c8, c9;
@@ -227,7 +227,7 @@ obj = function _applyBackgroundOptionLive() {
         flag = true;
       }
       location = tmp14.location;
-      return "Reflect";
+      return "test";
     })();
     iter.next();
     return iter;
@@ -262,7 +262,7 @@ obj = function _applyBackgroundOptionPreview() {
         flag = true;
       }
       location = tmp15.location;
-      return "Reflect";
+      return "test";
     })();
     iter.next();
     return iter;

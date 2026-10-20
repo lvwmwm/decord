@@ -1,18 +1,18 @@
-// Module ID: 5981
-// Function ID: 5982
+// Module ID: 6418
+// Function ID: 6419
 // Name: BillingSharedActionCreators
-// Dependencies: [5, 4868, 5982, 1087, 1297, 4886, 584, 1128, 1267, 5891, 4879, 5983, 2]
+// Dependencies: [5, 2057, 6419, 1087, 1297, 4771, 584, 1128, 1267, 6328, 4764, 6420, 2]
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 5981 (BillingSharedActionCreators)
+// Module 6418 (BillingSharedActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 5891 */;
-import Constants2 from "Constants" /* 5982 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6328 */;
+import Constants2 from "Constants" /* 6419 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PaymentSourceRecord from "PaymentSourceRecord" /* 4868 */;
+import PaymentSourceRecord from "PaymentSourceRecord" /* 2057 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -189,7 +189,7 @@ obj = function _createPaymentSource() {
               billingError = undefined;
               c9 = 1;
               c10 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c9) {
             if (arg0 === 1) {
@@ -341,7 +341,7 @@ export const dispatchConfirmationError = function dispatchConfirmationError(erro
     let billingError1 = message;
     if (!(message instanceof V6OrEarlierAPIError.BillingError)) {
       let tmp6 = message;
-      const BillingError = tmp3(5891).BillingError;
+      const BillingError = tmp3(6328).BillingError;
       if (typeof message === "string") {
         tmp6 = defaultErrorMessage;
       }
@@ -375,7 +375,7 @@ export const dispatchConfirmationError = function dispatchConfirmationError(erro
     obj9 = {};
     const merged2 = Object.assign(tmp8);
     const merged3 = Object.assign(prop.extra);
-    const tmp11Result = tmp11(4879);
+    const tmp11Result = tmp11(4764);
     const result = tmp11Result.captureBillingException(_Error21, obj8);
   }
   return _Error21;

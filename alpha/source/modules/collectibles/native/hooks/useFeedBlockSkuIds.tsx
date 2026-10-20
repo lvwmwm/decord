@@ -1,15 +1,15 @@
-// Module ID: 16900
-// Function ID: 16901
+// Module ID: 16929
+// Function ID: 16930
 // Name: useFeedBlockSkuIds
-// Dependencies: [19, 6188, 1087, 558, 576, 504, 16901, 2]
+// Dependencies: [19, 6618, 1087, 558, 576, 504, 16930, 2]
 
-// Module 16900 (useFeedBlockSkuIds)
+// Module 16929 (useFeedBlockSkuIds)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import ShopHomeSortType from "ShopHomeSortType" /* 16901 */;
+import ShopHomeSortType from "ShopHomeSortType" /* 16930 */;
 import react from "react" /* 19 */;
-import ConsentStore from "ConsentStore" /* 6188 */;
+import ConsentStore from "ConsentStore" /* 6618 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFeedBlo
     if (sortedSkuIds != null) {
       sortedSkuIds = sortedSkuIds.sortedSkuIds;
       if (sortedSkuIds != null) {
-        items1 = sortedSkuIds[tmp(undefined, 16901).ShopHomeSortType.RECOMMENDED];
+        items1 = sortedSkuIds[tmp(undefined, 16930).ShopHomeSortType.RECOMMENDED];
       }
     }
     if (items1 == null) {
@@ -83,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFeedBlo
     if (sortedSkuIds != null) {
       const sortedSkuIds3 = sortedSkuIds.sortedSkuIds;
       if (sortedSkuIds3 != null) {
-        items2 = sortedSkuIds3[tmp(undefined, 16901).ShopHomeSortType.POPULAR];
+        items2 = sortedSkuIds3[tmp(undefined, 16930).ShopHomeSortType.POPULAR];
       }
     }
     if (items2 == null) {

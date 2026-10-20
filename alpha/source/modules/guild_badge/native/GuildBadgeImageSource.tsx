@@ -1,21 +1,21 @@
-// Module ID: 9142
-// Function ID: 9143
+// Module ID: 9158
+// Function ID: 9159
 // Name: GuildBadgeImageSource
-// Dependencies: [9140, 6441, 6442, 9143, 9144, 9145, 9146, 9147, 9148, 5065, 9139, 2]
+// Dependencies: [9156, 6836, 6837, 9159, 9160, 9161, 9162, 9163, 9164, 4952, 9155, 2]
 // Exports: getGuildBadgeImageSource, resolveImageSource
 
-// Module 9142 (GuildBadgeImageSource)
-import shared from "shared" /* 5065 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6441 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 6442 */;
-import GuildTraits from "GuildTraits" /* 9139 */;
-import BadgeCategory from "BadgeCategory" /* 9140 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9143 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9144 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9145 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 9146 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 9147 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 9148 */;
+// Module 9158 (GuildBadgeImageSource)
+import shared from "shared" /* 4952 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6836 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6837 */;
+import GuildTraits from "GuildTraits" /* 9155 */;
+import BadgeCategory from "BadgeCategory" /* 9156 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9159 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9160 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9161 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 9162 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 9163 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 9164 */;
 import size from "module_2" /* 2 */;
 
 const badgeVariants = {};

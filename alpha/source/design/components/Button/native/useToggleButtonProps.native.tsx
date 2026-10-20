@@ -1,10 +1,10 @@
-// Module ID: 12314
-// Function ID: 12315
+// Module ID: 12334
+// Function ID: 12335
 // Name: useToggleButtonProps
 // Dependencies: [2]
 // Exports: useToggleButtonProps, useToggleIconButtonProps
 
-// Module 12314 (useToggleButtonProps)
+// Module 12334 (useToggleButtonProps)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/Button/native/useToggleButtonProps.native.tsx");

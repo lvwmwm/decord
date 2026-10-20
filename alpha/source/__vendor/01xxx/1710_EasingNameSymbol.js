@@ -59,8 +59,8 @@ const __initData8 = { code: "function exp_Pnpm_EasingTs9(t){return Math.pow(2,10
 const tmp7 = (() => {
   function poly(n) {
     let closure_0 = n;
-    const fn = function n(sum) {
-      return Math.pow(sum, closure_0);
+    const fn = function n(arg0) {
+      return Math.pow(arg0, closure_0);
     };
     fn.__closure = { n };
     fn.__workletHash = 14203338349806;

@@ -1,13 +1,13 @@
-// Module ID: 11550
-// Function ID: 11551
+// Module ID: 11571
+// Function ID: 11572
 // Name: useIsGuestOrLurker
-// Dependencies: [2128, 2090, 1087, 558, 576, 504, 2]
+// Dependencies: [4860, 4822, 1087, 558, 576, 504, 2]
 // Exports: isGuestOrLurkerInGuild
 
-// Module 11550 (useIsGuestOrLurker)
+// Module 11571 (useIsGuestOrLurker)
 import Constants from "Constants" /* 1087 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import GuildMemberStore from "GuildMemberStore" /* 4860 */;
+import GuildStore from "GuildStore" /* 4822 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

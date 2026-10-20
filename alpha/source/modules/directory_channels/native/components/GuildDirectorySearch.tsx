@@ -1,26 +1,26 @@
-// Module ID: 12952
-// Function ID: 12953
+// Module ID: 12984
+// Function ID: 12985
 // Name: GuildDirectorySearch
-// Dependencies: [32, 19, 17, 2090, 12953, 1087, 21, 5191, 587, 558, 576, 6940, 5128, 12956, 1128, 1202, 5187, 504, 12957, 12958, 12966, 1267, 1633, 12985, 12986, 7091, 12950, 7364, 6478, 2]
+// Dependencies: [32, 19, 17, 4822, 12985, 1087, 21, 4945, 587, 558, 576, 7022, 5631, 12988, 1128, 1202, 5195, 504, 12989, 12990, 12998, 1267, 1633, 13017, 13018, 7168, 12982, 7430, 6872, 2]
 
-// Module 12952 (GuildDirectorySearch)
+// Module 12984 (GuildDirectorySearch)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 12950 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12956 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12958 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12966 */;
+import FastImageDefault from "FastImage" /* 5631 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 12982 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12988 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12990 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12998 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 12953 */;
+import GuildStore from "GuildStore" /* 4822 */;
+import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 12985 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,8 +55,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Defaul
   const typeConsolidationTextTransform = obj2.useTypeConsolidationTextTransform("GuildDirectorySearch");
   const emptyWrapper = tmp4.emptyWrapper;
   if (cResult[0] !== tmp4.emptyStateImage) {
-    const obj3 = { style: tmp4.emptyStateImage, source: typeConsolidationTextTransform(12956) };
-    const tmp9 = typeConsolidationTextTransform(5128);
+    const obj3 = { style: tmp4.emptyStateImage, source: typeConsolidationTextTransform(12988) };
+    const tmp9 = typeConsolidationTextTransform(5631);
     const tmp10 = closure_10(tmp9, obj3);
     cResult[0] = tmp4.emptyStateImage;
     cResult[1] = tmp10;
@@ -170,7 +170,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
   }
   const tmpResult = channel(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult2 = channel(12957);
+  const tmpResult2 = channel(12989);
   const canCreateOrAddGuildInDirectory = tmpResult2.useCanCreateOrAddGuildInDirectory(channel);
   if (cResult[3] === canCreateOrAddGuildInDirectory) {
     if (cResult[4] === channel.id) {
@@ -183,8 +183,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
       }
       const emptyWrapper = tmp4.emptyWrapper;
       if (cResult[7] !== tmp4.emptyStateImage) {
-        let obj2 = { style: tmp4.emptyStateImage, source: stateFromStores(12956) };
-        const tmp15 = stateFromStores(5128);
+        let obj2 = { style: tmp4.emptyStateImage, source: stateFromStores(12988) };
+        const tmp15 = stateFromStores(5631);
         const tmp16 = closure_10(tmp15, obj2);
         cResult[7] = tmp4.emptyStateImage;
         cResult[8] = tmp16;
@@ -204,7 +204,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
       }
       if (cResult[10] !== tmp4.emptyStateTitle) {
         const obj3 = { style: emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: tmp17 };
-        const tmp21 = closure_10(channel(5187).Text, obj3);
+        const tmp21 = closure_10(channel(5195).Text, obj3);
         cResult[10] = tmp4.emptyStateTitle;
         cResult[11] = tmp21;
         tmp19 = tmp21;
@@ -238,7 +238,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
         tmp25 = tmp28;
       }
       const obj5 = { style: tmp4.emptyStateText, variant: "text-sm/medium", color: "text-default", children: tmp10 };
-      const tmp24 = closure_10(channel(5187).Text, obj5);
+      const tmp24 = closure_10(channel(5195).Text, obj5);
       cResult[12] = tmp4.emptyStateText;
       cResult[13] = tmp10;
       cResult[14] = tmp24;
@@ -273,7 +273,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
   let obj = channel(504);
   const items = [GuildStore];
   importDefault = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.getGuildId()));
-  let obj2 = channel(12957);
+  let obj2 = channel(12989);
   const canCreateOrAddGuildInDirectory = obj2.useCanCreateOrAddGuildInDirectory(channel);
   const intl = channel(1128).intl;
   if (canCreateOrAddGuildInDirectory) {
@@ -293,11 +293,11 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyS
   const tmp6 = FastImageDefault;
   items1 = [closure_10(tmp6, obj5), , ];
   const obj6 = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl2.string(channel(1128).t["6HXiuE"]) };
-  const Text = tmp2(5187).Text;
+  const Text = tmp2(5195).Text;
   intl2 = tmp2(1128).intl;
   items1[1] = closure_10(Text, obj6);
   const obj7 = { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default", children: formatResult };
-  items1[2] = closure_10(channel(5187).Text, obj7);
+  items1[2] = closure_10(channel(5195).Text, obj7);
   return closure_11(View, obj4);
 });
 const ArrayResult = Array(20);
@@ -507,8 +507,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
       cResult[20] = tmp4.scrollContainer;
       cResult[21] = tmp35;
       cResult[22] = tmp32;
-      cResult[23] = closure_10(tmp(7091).FlashList, obj3);
-      const tmp39 = closure_10(tmp(7091).FlashList, obj3);
+      cResult[23] = closure_10(tmp(7168).FlashList, obj3);
+      const tmp39 = closure_10(tmp(7168).FlashList, obj3);
     }
     const _Symbol6 = Symbol;
     ({ flex, fauxHeader } = tmp4);
@@ -580,14 +580,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
       const obj6 = { style: fauxHeader, children: tmp44 };
       cResult[30] = tmp4.fauxHeader;
       cResult[31] = tmp44;
-      cResult[32] = closure_10(tmp(6478).FauxHeader, obj6);
-      const tmp49 = closure_10(tmp(6478).FauxHeader, obj6);
+      cResult[32] = closure_10(tmp(6872).FauxHeader, obj6);
+      const tmp49 = closure_10(tmp(6872).FauxHeader, obj6);
     }
     const obj7 = { placeholder: tmp40, onChange: tmp9, onClose: tmp42, onSubmitEditing: tmp18 };
     cResult[27] = tmp18;
     cResult[28] = tmp42;
-    cResult[29] = closure_10(tmp19(7364), obj7);
-    const tmp46 = closure_10(tmp19(7364), obj7);
+    cResult[29] = closure_10(tmp19(7430), obj7);
+    const tmp46 = closure_10(tmp19(7430), obj7);
   }
   function handleSearch() {
     const tmp = first1;

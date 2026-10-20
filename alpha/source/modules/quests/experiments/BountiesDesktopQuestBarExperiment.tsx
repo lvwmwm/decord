@@ -1,9 +1,9 @@
-// Module ID: 13910
-// Function ID: 13911
+// Module ID: 13944
+// Function ID: 13945
 // Name: BountiesDesktopQuestBarExperiment
 // Dependencies: [1455, 2]
 
-// Module 13910 (BountiesDesktopQuestBarExperiment)
+// Module 13944 (BountiesDesktopQuestBarExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

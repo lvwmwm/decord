@@ -1,16 +1,16 @@
-// Module ID: 10757
-// Function ID: 10758
+// Module ID: 10770
+// Function ID: 10771
 // Name: SafetyToolsActionSheetHeader
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 10748, 6478, 5187, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 10761, 6872, 5195, 2]
 
-// Module 10757 (SafetyToolsActionSheetHeader)
+// Module 10770 (SafetyToolsActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import NavigatorHeader from "NavigatorHeader" /* 6478 */;
-import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 10748 */;
+import NavigatorHeader from "NavigatorHeader" /* 6872 */;
+import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 10761 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

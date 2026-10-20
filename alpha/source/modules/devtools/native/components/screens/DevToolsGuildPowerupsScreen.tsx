@@ -1,29 +1,29 @@
-// Module ID: 16779
-// Function ID: 16780
+// Module ID: 16808
+// Function ID: 16809
 // Name: DevToolsGuildPowerupsScreen
-// Dependencies: [5, 19, 17, 1246, 13253, 2090, 5034, 16780, 1087, 21, 5191, 587, 1297, 4797, 8296, 13179, 558, 576, 16683, 7172, 13185, 2049, 2052, 1633, 504, 5187, 6457, 6542, 2]
+// Dependencies: [5, 19, 17, 1246, 13285, 4822, 4971, 16809, 1087, 21, 4945, 587, 1297, 2050, 8312, 13211, 558, 576, 16712, 7241, 13217, 4781, 4784, 1633, 504, 5195, 6851, 6935, 2]
 
-// Module 16779 (DevToolsGuildPowerupsScreen)
+// Module 16808 (DevToolsGuildPowerupsScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2049 */;
-import dismissible_content from "dismissible_content" /* 2052 */;
-import _modDef4797 from "module_4797" /* 4797 */;
-import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 13185 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 16683 */;
+import _modDef2050 from "module_2050" /* 2050 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4781 */;
+import dismissible_content from "dismissible_content" /* 4784 */;
+import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 13217 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 16712 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13253 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 16780 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 13285 */;
+import GuildStore from "GuildStore" /* 4822 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4971 */;
+import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 16809 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let obj3;
 let obj4;
 let tmp;
 let unpackModuleId;
-const TableSwitchRow2 = tmp(7172);
+const TableSwitchRow2 = tmp(7241);
 function setWarningBoosts() {
   return obj(...arguments);
 }
@@ -85,7 +85,7 @@ let obj = function _setWarningBoosts() {
             const patch = HTTP.patch;
             addResult = null;
             if (!closure_2) {
-              const obj4 = _modDef4797();
+              const obj4 = _modDef2050();
               addResult = obj4.add(1, "day");
             }
             c5 = 1;
@@ -267,7 +267,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
       }
     }
     let obj2 = { label: tmp5, value: isDismissed, onValueChange: tmp4 };
-    const tmp10 = closure_17(tmp(7172).TableSwitchRow, obj2);
+    const tmp10 = closure_17(tmp(7241).TableSwitchRow, obj2);
     cResult[5] = tmp4;
     cResult[6] = isDismissed;
     cResult[7] = tmp5;
@@ -308,7 +308,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
     }
   }, items);
   obj = { label: closure_14(dc), value: isDismissed, onValueChange: callback };
-  const TableSwitchRow = dc(7172).TableSwitchRow;
+  const TableSwitchRow = dc(7241).TableSwitchRow;
   return closure_17(TableSwitchRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1107,7 +1107,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsGuil
     return items;
   });
   if (null == stateFromStores) {
-    const obj5 = { style: items4, children: closure_17(stateFromStores(5187).Text, { variant: "heading-md/semibold", color: "text-muted", children: "No guild selected" }) };
+    const obj5 = { style: items4, children: closure_17(stateFromStores(5195).Text, { variant: "heading-md/semibold", color: "text-muted", children: "No guild selected" }) };
     items4 = [, ];
     ({ container: arr7[0], noGuildContainer: arr7[1] } = tmp);
     tmp15Result = closure_17(closure_6, obj5);
@@ -1117,13 +1117,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsGuil
     items5[1] = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
     let str = stateFromStores1;
     const obj7 = { paddingBottom: tmp4.bottom + nativeDefault.space.PX_16 };
-    const TableRowGroup6 = tmp5(6542).TableRowGroup;
+    const TableRowGroup6 = tmp5(6935).TableRowGroup;
     const tmp16 = closure_5;
     if (stateFromStores1 == null) {
       str = "Unknown";
     }
     const _HermesInternal = HermesInternal;
-    const obj8 = { title: "Current Guild: " + str, hasIcons: false, children: closure_17(stateFromStores(6457).TableRow, obj9) };
+    const obj8 = { title: "Current Guild: " + str, hasIcons: false, children: closure_17(stateFromStores(6851).TableRow, obj9) };
     obj9 = {
       label: "Reset Notification Indicators",
       onPress() {
@@ -1133,21 +1133,21 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsGuil
     };
     items6 = [closure_17(TableRowGroup6, obj8), , , , , ];
     const obj10 = { title: "Warning State", hasIcons: false, children: items7 };
-    const TableRowGroup = tmp5(6542).TableRowGroup;
+    const TableRowGroup = tmp5(6935).TableRowGroup;
     const obj11 = {
       label: "Set Half Boosts expiring in 1 day",
       onPress() {
           return setWarningBoosts(stateFromStores, closure_2.slice(Math.floor(closure_2.length / 2)), false);
         }
     };
-    items7 = [closure_17(tmp5(6457).TableRow, obj11), ];
+    items7 = [closure_17(tmp5(6851).TableRow, obj11), ];
     const obj12 = {
       label: "Reset End Date",
       onPress() {
           return setWarningBoosts(stateFromStores, closure_2, true);
         }
     };
-    items7[1] = closure_17(stateFromStores(6457).TableRow, obj12);
+    items7[1] = closure_17(stateFromStores(6851).TableRow, obj12);
     items6[1] = closure_18(TableRowGroup, obj10);
     const obj13 = {
       title: "User Level DCs",
@@ -1157,7 +1157,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsGuil
           return closure_1_17(closure_1_24, obj, dc);
         })
     };
-    const TableRowGroup2 = tmp5(6542).TableRowGroup;
+    const TableRowGroup2 = tmp5(6935).TableRowGroup;
     items6[2] = closure_17(TableRowGroup2, obj13);
     const obj14 = {
       title: "Guild Level DCs",
@@ -1167,7 +1167,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsGuil
           return closure_17(closure_25, obj, dc);
         })
     };
-    const TableRowGroup3 = tmp5(6542).TableRowGroup;
+    const TableRowGroup3 = tmp5(6935).TableRowGroup;
     items6[3] = closure_17(TableRowGroup3, obj14);
     const obj15 = {
       title: "Server Tag Guild Level DCs",
@@ -1177,10 +1177,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsGuil
           return closure_17(closure_25, obj, dc);
         })
     };
-    const TableRowGroup4 = tmp5(6542).TableRowGroup;
+    const TableRowGroup4 = tmp5(6935).TableRowGroup;
     items6[4] = closure_17(TableRowGroup4, obj15);
-    const obj16 = { title: "System Messages", hasIcons: false, children: closure_17(stateFromStores(6457).TableRow, obj17) };
-    const TableRowGroup5 = tmp5(6542).TableRowGroup;
+    const obj16 = { title: "System Messages", hasIcons: false, children: closure_17(stateFromStores(6851).TableRow, obj17) };
+    const TableRowGroup5 = tmp5(6935).TableRowGroup;
     obj17 = {
       label: "Send Powerups System Message",
       onPress() {

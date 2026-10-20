@@ -1,9 +1,9 @@
-// Module ID: 2052
-// Function ID: 2053
+// Module ID: 4784
+// Function ID: 4785
 // Name: dismissible_content
 // Dependencies: [2]
 
-// Module 2052 (dismissible_content)
+// Module 4784 (dismissible_content)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/discord_users/v1/dismissible_content.tsx");

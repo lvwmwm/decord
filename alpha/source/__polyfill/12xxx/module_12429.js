@@ -1,158 +1,150 @@
 // Module ID: 12429
 // Function ID: 12430
-// Dependencies: [12385, 12386, 12430, 12433, 12422, 12391]
-// Exports: createEventEnvelope, createSessionEnvelope, createSpanEnvelope
+// Dependencies: [12405, 12406, 12430, 12420, 12417, 12412]
+// Exports: closeSession, makeSession
 
 // Module 12429
-import _mod12391 from "module_12391" /* 12391 */;
+import _mod12412 from "module_12412" /* 12412 */;
+import _mod12417 from "module_12417" /* 12417 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12420 */;
 import _mod12430 from "module_12430" /* 12430 */;
-import _mod12433 from "module_12433" /* 12433 */;
-import DEBUG_BUILD from "module_12385" /* 12385 */;
-import CONSOLE_LEVELS from "module_12386" /* 12386 */;
+import DEBUG_BUILD from "module_12405" /* 12405 */;
+import CONSOLE_LEVELS from "module_12406" /* 12406 */;
 
-const require = globalThis.__r;
-let _require, integrations;
-
-
-export const createEventEnvelope = function createEventEnvelope(type, arg1, sdk, arg3) {
-  const obj = _mod12430;
-  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(sdk);
-  let str = "event";
-  const tmp2 = type;
-  if (type.type) {
-    str = "event";
-    if ("replay_event" !== type.type) {
-      str = type.type;
+function updateSession(ipAddress) {
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
+  }
+  if (obj.user) {
+    const tmp = !ipAddress.ipAddress && obj.user.ip_address;
+    if (tmp) {
+      ipAddress.ipAddress = obj.user.ip_address;
+    }
+    const tmp2 = ipAddress.did || obj.did;
+    if (!tmp2) {
+      ipAddress.did = obj.user.id || obj.user.email || obj.user.username;
     }
   }
-  if (sdk && sdk.sdk) {
-    type.sdk = type.sdk || {};
-    let name = type.sdk.name;
-    sdk = type.sdk;
-    if (!name) {
-      name = tmp6.name;
-    }
-    sdk.name = name;
-    let version = type.sdk.version;
-    const sdk2 = type.sdk;
-    if (!version) {
-      version = tmp6.version;
-    }
-    sdk2.version = version;
-    integrations = type.sdk.integrations;
-    const sdk3 = type.sdk;
-    if (!integrations) {
-      integrations = [];
-    }
-    const items = [];
-    const arraySpreadResult = HermesBuiltin.arraySpread(items, integrations, 0);
-    const tmp10 = (sdk && sdk.sdk).integrations || [];
-    HermesBuiltin.arraySpread(items, tmp10, arraySpreadResult);
-    sdk3.integrations = items;
-    let packages = type.sdk.packages;
-    const sdk4 = type.sdk;
-    if (!packages) {
-      packages = [];
-    }
-    const items1 = [];
-    const arraySpreadResult5 = HermesBuiltin.arraySpread(items1, packages, 0);
-    const tmp18 = (sdk && sdk.sdk).packages || [];
-    HermesBuiltin.arraySpread(items1, tmp18, arraySpreadResult5);
-    sdk4.packages = items1;
+  let timestamp = obj.timestamp;
+  if (!timestamp) {
+    const obj2 = _browserPerformanceTimeOriginMode;
+    timestamp = obj2.timestampInSeconds();
   }
-  const tmp3Result = _mod12430;
-  const eventEnvelopeHeaders = tmp3Result.createEventEnvelopeHeaders(type, sdkMetadataForEnvelopeHeader, arg3, arg1);
-  delete tmp2["sdkProcessingMetadata"];
-  const items2 = [{ type: str }, type];
-  const items3 = [items2];
-  const tmp3Result2 = _mod12430;
-  return tmp3Result2.createEnvelope(eventEnvelopeHeaders, items3);
-};
-export const createSessionEnvelope = function createSessionEnvelope(toJSON, arg1, arg2, arg3) {
-  let date;
-  let items1;
-  let tmpResult;
-  const obj = _mod12430;
-  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(arg2);
-  const obj2 = { sent_at: date.toISOString() };
-  let tmp4 = sdkMetadataForEnvelopeHeader;
-  date = new Date();
-  if (tmp4) {
-    tmp4 = { sdk: sdkMetadataForEnvelopeHeader };
-    const obj3 = { sdk: sdkMetadataForEnvelopeHeader };
+  ipAddress.timestamp = timestamp;
+  if (obj.abnormal_mechanism) {
+    ipAddress.abnormal_mechanism = obj.abnormal_mechanism;
   }
-  const merged = Object.assign(tmp4);
-  let tmp6 = arg3 && arg1;
-  if (tmp6) {
-    const obj4 = { dsn: tmpResult.dsnToString(arg1) };
-    tmp6 = obj4;
-    tmpResult = _mod12433;
+  if (obj.ignoreDuration) {
+    ipAddress.ignoreDuration = obj.ignoreDuration;
   }
-  const merged1 = Object.assign(tmp6);
-  if ("aggregates" in toJSON) {
-    const items = [{ type: "sessions" }, toJSON];
-    items1 = items;
+  if (obj.sid) {
+    let sid;
+    if (32 === obj.sid.length) {
+      sid = obj.sid;
+    } else {
+      const obj3 = _mod12417;
+      sid = obj3.uuid4();
+    }
+    ipAddress.sid = sid;
+  }
+  if (undefined !== obj.init) {
+    ipAddress.init = obj.init;
+  }
+  const tmp7 = !ipAddress.did && obj.did;
+  if (tmp7) {
+    const _HermesInternal = HermesInternal;
+    ipAddress.did = "" + obj.did;
+  }
+  if (typeof obj.started === "number") {
+    ipAddress.started = obj.started;
+  }
+  if (ipAddress.ignoreDuration) {
+    ipAddress.duration = undefined;
+  } else if (typeof obj.duration === "number") {
+    ipAddress.duration = obj.duration;
   } else {
-    items1 = [{ type: "session" }, toJSON.toJSON()];
+    const diff = ipAddress.timestamp - ipAddress.started;
+    let num2 = 0;
+    if (diff >= 0) {
+      num2 = diff;
+    }
+    ipAddress.duration = num2;
   }
-  const items2 = [items1];
-  const tmpResult2 = _mod12430;
-  return tmpResult2.createEnvelope(obj2, items2);
-};
-export const createSpanEnvelope = function createSpanEnvelope(arg0, getDsn) {
-  let closure_0;
-  let date;
-  let tmp2Result;
-  function dscHasRequiredProps(dynamicSamplingContextFromSpan) {
-    return dynamicSamplingContextFromSpan.trace_id && dynamicSamplingContextFromSpan.public_key;
+  if (obj.release) {
+    ipAddress.release = obj.release;
   }
-  let tmp = _require;
-  let tmp3 = dependencyMap;
-  let obj = require("module_12422");
-  const dynamicSamplingContextFromSpan = obj.getDynamicSamplingContextFromSpan(arg0[0]);
-  const tmp6 = getDsn && getDsn.getDsn();
-  const obj2 = { sent_at: date.toISOString() };
-  const tmp7 = getDsn && getDsn.getOptions().tunnel;
-  date = new Date();
-  let tmp8 = dscHasRequiredProps(dynamicSamplingContextFromSpan);
-  const tmp2 = _require;
-  if (tmp8) {
-    tmp8 = { trace: dynamicSamplingContextFromSpan };
-    const obj3 = { trace: dynamicSamplingContextFromSpan };
+  if (obj.environment) {
+    ipAddress.environment = obj.environment;
   }
-  const merged = Object.assign(tmp8);
-  let tmp10 = tmp7 && tmp6;
+  const tmp9 = !ipAddress.ipAddress && obj.ipAddress;
+  if (tmp9) {
+    ipAddress.ipAddress = obj.ipAddress;
+  }
+  const tmp10 = !ipAddress.userAgent && obj.userAgent;
   if (tmp10) {
-    const obj4 = { dsn: tmp2Result.dsnToString(tmp6) };
-    tmp10 = obj4;
-    tmp2Result = tmp2(12433);
+    ipAddress.userAgent = obj.userAgent;
   }
-  const merged1 = Object.assign(tmp10);
-  const tmp14 = getDsn && getDsn.getOptions().beforeSendSpan;
-  _require = tmp14;
-  const items = [];
-  const tmp15 = tmp14 ? ((arg0) => {
-    const obj = _mod12391;
-    const tmp3 = closure_0(obj.spanToJSON(arg0));
-    if (!tmp3) {
-      const tmpResult = _mod12391;
-      tmpResult.showSpanDropWarning();
-    }
-    return tmp3;
-  }) : ((arg0) => {
-    const obj = closure_0(dependencyMap[5]);
-    return obj.spanToJSON(arg0);
-  });
-  const iter = arg0[Symbol.iterator]();
-  while (iter !== undefined) {
-    let tmp15Result = tmp15(iter.next());
-    if (tmp15Result) {
-      let push = items.push;
-      let obj7 = require("module_12430");
-      let arr = push(obj7.createSpanEnvelopeItem(tmp17));
-    }
-    continue;
+  if (typeof obj.errors === "number") {
+    ipAddress.errors = obj.errors;
   }
-  const obj8 = require("module_12430");
-  return obj8.createEnvelope(obj2, items);
+  if (obj.status) {
+    ipAddress.status = obj.status;
+  }
+}
+_mod12430;
+
+export const closeSession = function closeSession(status, status2) {
+  let obj;
+  const tmp = status2;
+  if (tmp) {
+    obj = { status: status2 };
+    const obj2 = { status: status2 };
+  } else {
+    obj = {};
+    if ("ok" === status.status) {
+      obj = { status: "exited" };
+    }
+  }
+  updateSession(status, obj);
 };
+export const makeSession = function makeSession(arg0) {
+  let obj2;
+  let obj3;
+  let obj = obj2(12420);
+  const timestampInSecondsResult = obj.timestampInSeconds();
+  obj2 = {
+    sid: obj3.uuid4(),
+    init: true,
+    timestamp: timestampInSecondsResult,
+    started: timestampInSecondsResult,
+    duration: 0,
+    status: "ok",
+    errors: 0,
+    ignoreDuration: false,
+    toJSON() {
+      let combined;
+      let date;
+      let date1;
+      const tmp2 = _mod12412;
+      const obj = { sid: "" + obj2.sid, init: obj2.init, started: date.toISOString(), timestamp: date1.toISOString(), status: null, errors: null, did: combined, duration: null, abnormal_mechanism: null, attrs: { release: obj2.release, environment: obj2.environment, ip_address: obj2.ipAddress, user_agent: obj2.userAgent } };
+      const dropUndefinedKeys = tmp2.dropUndefinedKeys;
+      date = new Date(1000 * obj2.started);
+      ({ status: obj.status, errors: obj.errors } = obj2);
+      date1 = new Date(1000 * obj2.timestamp);
+      if (typeof obj2.did === "number") {
+        const _HermesInternal = HermesInternal;
+        combined = "" + tmp.did;
+      }
+      ({ duration: obj.duration, abnormal_mechanism: obj.abnormal_mechanism } = obj2);
+      return dropUndefinedKeys(obj);
+    }
+  };
+  obj3 = obj2(12417);
+  if (arg0) {
+    let tmp2 = updateSession;
+    updateSession(obj2, arg0);
+  }
+  return obj2;
+};
+export { updateSession };

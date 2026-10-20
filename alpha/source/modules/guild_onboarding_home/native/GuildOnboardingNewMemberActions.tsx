@@ -1,26 +1,26 @@
-// Module ID: 17712
-// Function ID: 17713
+// Module ID: 17741
+// Function ID: 17742
 // Name: GuildOnboardingNewMemberActions
-// Dependencies: [19, 17, 6243, 2068, 2128, 2090, 4845, 7202, 8183, 1087, 1395, 4831, 21, 5191, 587, 558, 576, 504, 5521, 1417, 12934, 5128, 4859, 5187, 1202, 12537, 1128, 12939, 17713, 6462, 1405, 17714, 2]
+// Dependencies: [19, 17, 6673, 4800, 4860, 4822, 4880, 7271, 8245, 1087, 1395, 4866, 21, 4945, 587, 558, 576, 504, 5565, 1417, 12966, 5631, 4894, 5195, 1202, 12557, 1128, 12971, 17742, 6856, 1405, 17743, 2]
 
-// Module 17712 (GuildOnboardingNewMemberActions)
+// Module 17741 (GuildOnboardingNewMemberActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12934 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4866 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12966 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6243 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7202 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8183 */;
+import EmojiStore from "EmojiStore" /* 6673 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import GuildMemberStore from "GuildMemberStore" /* 4860 */;
+import GuildStore from "GuildStore" /* 4822 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7271 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8245 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

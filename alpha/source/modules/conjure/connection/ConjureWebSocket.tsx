@@ -1,9 +1,9 @@
-// Module ID: 11073
-// Function ID: 11074
+// Module ID: 11088
+// Function ID: 11089
 // Name: ConjureWebSocket
 // Dependencies: [2]
 
-// Module 11073 (ConjureWebSocket)
+// Module 11088 (ConjureWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/ConjureWebSocket.tsx");
@@ -74,14 +74,14 @@ class ConjureWebSocket {
     const error = new Error("WebSocket not open");
     throw error;
   }
-  sendUserMessage(content, nonce, attachment_ids, project_name) {
+  sendUserMessage(content, nonce, attachment_ids) {
     const self = this;
     if (null != this.socket) {
       const _WebSocket = WebSocket;
       if (self.socket.readyState === WebSocket.OPEN) {
         const socket = self.socket;
         const _JSON = JSON;
-        const obj2 = { type: "user_message", content, nonce, attachment_ids, project_name, template_id: tmp, remix: tmp2, clarification_answers: tmp3 };
+        const obj2 = { type: "user_message", content, nonce, attachment_ids, template_id: tmp, remix: tmp2, clarification_answers: tmp3 };
         socket.send(JSON.stringify(obj2));
       }
     }
@@ -170,24 +170,15 @@ class ConjureWebSocket {
       socket.send(JSON.stringify({ type: "prepare_publish" }));
     }
   }
-  sendDraftPatchNotes(combined, name) {
+  sendDraftPatchNotes(combined) {
     const self = this;
     if (null != this.socket) {
       const _WebSocket = WebSocket;
       if (self.socket.readyState === WebSocket.OPEN) {
-        let obj3;
         const socket = self.socket;
-        const send = socket.send;
         const _JSON = JSON;
         const obj = { type: "draft_patch_notes", nonce: combined };
-        if (null != name) {
-          obj3 = { project_name: name };
-          const obj2 = { project_name: name };
-        } else {
-          obj3 = {};
-        }
-        const merged = Object.assign(obj3);
-        send(stringify(obj));
+        socket.send(JSON.stringify(obj));
       }
     }
     const error = new Error("WebSocket not open");
@@ -459,21 +450,6 @@ class ConjureWebSocket {
           const socket = self.socket;
           const _JSON = JSON;
           const obj = { type: "control_ack", id, status: failed, response, message };
-          socket.send(JSON.stringify(obj));
-        } catch (err) {
-        }
-      }
-    }
-  }
-  sendAppIconAck(attachment_id, applied) {
-    const self = this;
-    if (null != this.socket) {
-      const _WebSocket = WebSocket;
-      if (self.socket.readyState === WebSocket.OPEN) {
-        try {
-          const socket = self.socket;
-          const _JSON = JSON;
-          const obj = { type: "app_icon_ack", id: attachment_id, status: applied };
           socket.send(JSON.stringify(obj));
         } catch (err) {
         }

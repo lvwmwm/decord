@@ -1,10 +1,10 @@
-// Module ID: 12354
-// Function ID: 12355
+// Module ID: 12374
+// Function ID: 12375
 // Name: useConjurePerfTraceTree
-// Dependencies: [32, 19, 558, 576, 11009, 2]
+// Dependencies: [32, 19, 558, 576, 11025, 2]
 
-// Module 12354 (useConjurePerfTraceTree)
-import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 11009 */;
+// Module 12374 (useConjurePerfTraceTree)
+import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 11025 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -35,7 +35,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePe
   if (cResult[0] !== spans) {
     let perfTraceTreeResult = null;
     if (null != spans) {
-      const tmpResult = tmp(11009);
+      const tmpResult = tmp(11025);
       perfTraceTreeResult = tmpResult.perfTraceTree(spans);
     }
     cResult[0] = spans;
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePe
       const self2 = this;
       set = new Set();
     } else {
-      const tmpResult2 = tmp(11009);
+      const tmpResult2 = tmp(11025);
       set = tmpResult2.perfTraceKeys(tmp4);
     }
     cResult[4] = tmp4;

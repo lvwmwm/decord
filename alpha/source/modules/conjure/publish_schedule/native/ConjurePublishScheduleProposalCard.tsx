@@ -1,16 +1,16 @@
-// Module ID: 12309
-// Function ID: 12310
+// Module ID: 12329
+// Function ID: 12330
 // Name: ConjurePublishScheduleProposalCard
-// Dependencies: [19, 21, 558, 576, 12310, 5187, 1128, 3883, 5477, 5479, 11662, 2]
+// Dependencies: [19, 21, 558, 576, 12330, 5195, 1128, 3820, 5932, 5205, 11683, 2]
 
-// Module 12309 (ConjurePublishScheduleProposalCard)
+// Module 12329 (ConjurePublishScheduleProposalCard)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1128 */;
-import _modDef3883 from "module_3883" /* 3883 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import Stack_Stack from "Stack/Stack" /* 5477 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 11662 */;
-import useConjurePublishScheduleProposalDefault from "useConjurePublishScheduleProposal" /* 12310 */;
+import _modDef3820 from "module_3820" /* 3820 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import Stack_Stack from "Stack/Stack" /* 5932 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 11683 */;
+import useConjurePublishScheduleProposalDefault from "useConjurePublishScheduleProposal" /* 12330 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -40,8 +40,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePub
   ({ projectId, proposal, current } = arg0);
   const tmp5 = useConjurePublishScheduleProposalDefault(projectId, proposal, current);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3883.ZtfX9V) };
-    const Text = tmp(5187).Text;
+    const obj2 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3820.ZtfX9V) };
+    const Text = tmp(5195).Text;
     intl = tmp(1128).intl;
     const tmp8 = _false(Text, obj2);
     cResult[0] = tmp8;
@@ -62,7 +62,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePub
     let tmp13 = null;
     if (null != tmp5.firstPublish) {
       const obj4 = { variant: "text-sm/normal", color: "text-muted", children: tmp5.firstPublish };
-      tmp13 = _false(tmp(5187).Text, obj4);
+      tmp13 = _false(tmp(5195).Text, obj4);
     }
     cResult[3] = tmp5.firstPublish;
     cResult[4] = tmp13;
@@ -71,8 +71,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePub
     tmp12 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj5 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(_modDef3883.cxNHma) };
-    const Text2 = tmp(5187).Text;
+    const obj5 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(_modDef3820.cxNHma) };
+    const Text2 = tmp(5195).Text;
     intl2 = tmp(1128).intl;
     const tmp17 = _false(Text2, obj5);
     cResult[5] = tmp17;
@@ -83,8 +83,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePub
   if (cResult[6] !== tmp5.status) {
     let tmp19 = null;
     if ("on" === tmp5.status) {
-      const obj6 = { variant: "text-sm/normal", color: "text-default", accessibilityRole: "alert", children: intl3.string(_modDef3883.k4IRsm) };
-      const Text3 = tmp(5187).Text;
+      const obj6 = { variant: "text-sm/normal", color: "text-default", accessibilityRole: "alert", children: intl3.string(_modDef3820.k4IRsm) };
+      const Text3 = tmp(5195).Text;
       intl3 = tmp(1128).intl;
       tmp19 = _false(Text3, obj6);
     }
@@ -130,8 +130,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePub
           }
           let tmp28 = null;
           if (null != tmp5.onTurnOn) {
-            const obj9 = { text: intl4.string(_modDef3883.EuhBSG), variant: "secondary", loading: "sending" === tmp5.status, disabled: "sending" === tmp5.status, onPress: tmp5.onTurnOn };
-            const Button = tmp(5479).Button;
+            const obj9 = { text: intl4.string(_modDef3820.EuhBSG), variant: "secondary", loading: "sending" === tmp5.status, disabled: "sending" === tmp5.status, onPress: tmp5.onTurnOn };
+            const Button = tmp(5205).Button;
             intl4 = tmp(1128).intl;
             tmp28 = _false(Button, obj9);
           }
@@ -155,7 +155,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePub
   let tmp22 = null;
   if ("error" === tmp5.status) {
     const obj11 = { variant: "text-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", children: tmp5.error };
-    tmp22 = _false(tmp(5187).Text, obj11);
+    tmp22 = _false(tmp(5195).Text, obj11);
   }
   cResult[8] = tmp5.error;
   cResult[9] = tmp5.status;
@@ -173,7 +173,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePub
   const tmp3 = useConjurePublishScheduleProposalDefault(projectId, proposal, current);
   const tmp5 = ConjureNativeCardSurfaceDefault;
   const Stack = Stack_Stack.Stack;
-  const obj = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3883.ZtfX9V) };
+  const obj = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3820.ZtfX9V) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
   const items = [_false(Text, obj), , ];
@@ -184,17 +184,17 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePub
   let tmp4Result = null;
   if (null != tmp3.firstPublish) {
     const obj3 = { variant: "text-sm/normal", color: "text-muted", children: tmp3.firstPublish };
-    tmp4Result = tmp4(tmp7(5187).Text, obj3);
+    tmp4Result = tmp4(tmp7(5195).Text, obj3);
   }
   items1[1] = tmp4Result;
-  const obj4 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(_modDef3883.cxNHma) };
-  const Text2 = tmp7(5187).Text;
+  const obj4 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(_modDef3820.cxNHma) };
+  const Text2 = tmp7(5195).Text;
   intl2 = tmp7(1128).intl;
   items1[2] = _false(Text2, obj4);
   let tmp4Result4 = null;
   if ("on" === tmp3.status) {
-    const obj5 = { variant: "text-sm/normal", color: "text-default", accessibilityRole: "alert", children: intl3.string(_modDef3883.k4IRsm) };
-    const Text3 = tmp7(5187).Text;
+    const obj5 = { variant: "text-sm/normal", color: "text-default", accessibilityRole: "alert", children: intl3.string(_modDef3820.k4IRsm) };
+    const Text3 = tmp7(5195).Text;
     intl3 = tmp7(1128).intl;
     tmp4Result4 = tmp4(Text3, obj5);
   }
@@ -202,14 +202,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePub
   let tmp4Result5 = null;
   if ("error" === tmp3.status) {
     const obj6 = { variant: "text-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", children: tmp3.error };
-    tmp4Result5 = tmp4(tmp7(5187).Text, obj6);
+    tmp4Result5 = tmp4(tmp7(5195).Text, obj6);
   }
   items1[4] = tmp4Result5;
   items[1] = React3(Stack2, { direction: "vertical", spacing: 4, children: items1 });
   let tmp4Result6 = null;
   if (null != tmp3.onTurnOn) {
-    const obj7 = { text: intl4.string(_modDef3883.EuhBSG), variant: "secondary", loading: "sending" === tmp3.status, disabled: "sending" === tmp3.status, onPress: tmp3.onTurnOn };
-    const Button = tmp7(5479).Button;
+    const obj7 = { text: intl4.string(_modDef3820.EuhBSG), variant: "secondary", loading: "sending" === tmp3.status, disabled: "sending" === tmp3.status, onPress: tmp3.onTurnOn };
+    const Button = tmp7(5205).Button;
     intl4 = tmp7(1128).intl;
     tmp4Result6 = tmp4(Button, obj7);
   }

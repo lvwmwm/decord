@@ -1,19 +1,19 @@
-// Module ID: 16264
-// Function ID: 16265
+// Module ID: 16293
+// Function ID: 16294
 // Name: useUserRoleSubscriptionRelationship
-// Dependencies: [6244, 16263, 558, 576, 504, 2]
+// Dependencies: [4900, 16292, 558, 576, 504, 2]
 // Exports: getUserRoleSubscriptionRelationship
 
-// Module 16264 (useUserRoleSubscriptionRelationship)
+// Module 16293 (useUserRoleSubscriptionRelationship)
 import react from "react" /* 576 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16263 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 6244 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16292 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 4900 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const f125133 = (item) => {
+const f125603 = (item) => {
   if (userSubscriptionRoles.getUserSubscriptionRoles(item).size > 0) {
     c1 = true;
   }
@@ -34,7 +34,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserRoleS
       [obj] = items;
       const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
       let c1 = false;
-      const item = guildIdsWithPurchasableRoles.forEach(f125133);
+      const item = guildIdsWithPurchasableRoles.forEach(f125603);
       const tmp2 = c1;
       if (tmp2) {
         IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;
@@ -64,7 +64,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserRoleS
     [obj] = items;
     const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
     let c1 = false;
-    const item = guildIdsWithPurchasableRoles.forEach(f125133);
+    const item = guildIdsWithPurchasableRoles.forEach(f125603);
     const tmp2 = c1;
     if (tmp2) {
       IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;
@@ -87,7 +87,7 @@ function getUserRoleSubscriptionRelationship() {
   [obj] = tmp;
   const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
   let c1 = false;
-  const item = guildIdsWithPurchasableRoles.forEach(f125133);
+  const item = guildIdsWithPurchasableRoles.forEach(f125603);
   const tmp4 = c1;
   if (tmp4) {
     IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;

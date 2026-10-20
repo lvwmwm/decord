@@ -1,9 +1,9 @@
-// Module ID: 17587
-// Function ID: 17588
+// Module ID: 17616
+// Function ID: 17617
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 1087, 13370, 21, 5191, 11901, 587, 1384, 558, 576, 1505, 1267, 1202, 5486, 15064, 1128, 5187, 7111, 17583, 6462, 17582, 2]
+// Dependencies: [19, 17, 1087, 13404, 21, 4945, 11921, 587, 1384, 558, 576, 1505, 1267, 1202, 5214, 15096, 1128, 5195, 7188, 17612, 6856, 17611, 2]
 
-// Module 17587 (ForYouShowAllRow)
+// Module 17616 (ForYouShowAllRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,18 +12,18 @@ import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import useFontScale from "useFontScale" /* 5486 */;
-import Pressables from "Pressables" /* 6462 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7111 */;
-import ChannelListLayout from "ChannelListLayout" /* 11901 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 13370 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 15064 */;
-import ChannelPressableWrapper from "ChannelPressableWrapper" /* 17582 */;
-import ChannelWrapper from "ChannelWrapper" /* 17583 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import useFontScale from "useFontScale" /* 5214 */;
+import Pressables from "Pressables" /* 6856 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7188 */;
+import ChannelListLayout from "ChannelListLayout" /* 11921 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 13404 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 15096 */;
+import ChannelPressableWrapper from "ChannelPressableWrapper" /* 17611 */;
+import ChannelWrapper from "ChannelWrapper" /* 17612 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -410,7 +410,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYou
   items1 = [metroImportDefault(View, obj5), , ];
   const obj9 = { style: tmp4.textContainer, children: metroImportDefault(Text, obj10) };
   obj10 = { lineClamp: 1, variant: layoutStyles.channelName.text.variant, color: "text-brand", style: tmp4.nameText, children: intl.format(intl2.t.NrzztX, { count }) };
-  Text = tmp(5187).Text;
+  Text = tmp(5195).Text;
   intl = tmp(1128).intl;
   items1[1] = metroImportDefault(View, obj9);
   const obj11 = { style: tmp4.icon, color: tmp4.iconColor.color, source: AssetRegistryDefault, size: native.IconSizes.CUSTOM };

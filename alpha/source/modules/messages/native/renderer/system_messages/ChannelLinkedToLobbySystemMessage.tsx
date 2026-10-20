@@ -1,17 +1,17 @@
-// Module ID: 8342
-// Function ID: 8343
+// Module ID: 8358
+// Function ID: 8359
 // Name: ChannelLinkedToLobbySystemMessage
-// Dependencies: [5540, 1087, 8239, 8246, 8248, 2131, 1128, 8250, 2]
+// Dependencies: [2046, 1087, 8255, 8262, 8264, 2068, 1128, 8266, 2]
 // Exports: createChannelLinkedToLobbySystemMessage
 
-// Module 8342 (ChannelLinkedToLobbySystemMessage)
+// Module 8358 (ChannelLinkedToLobbySystemMessage)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8239 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8246 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8248 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2068 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8255 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8262 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8264 */;
+import ApplicationStore from "ApplicationStore" /* 2046 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
@@ -46,7 +46,7 @@ export const createChannelLinkedToLobbySystemMessage = function createChannelLin
     tmpResult = HelpdeskUtilsDefault;
     const obj6 = { content: intl.formatToParts(intl2.t.gZfhOw, obj2) };
     intl = intl2.intl;
-    const merged = Object.assign(tmp(8250)(message));
+    const merged = Object.assign(tmp(8266)(message));
     return obj6;
   }
 };

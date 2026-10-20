@@ -1,12 +1,12 @@
-// Module ID: 13515
-// Function ID: 13516
+// Module ID: 13549
+// Function ID: 13550
 // Name: MessageUtils
-// Dependencies: [2068, 1392, 6180, 2]
+// Dependencies: [4800, 1392, 6610, 2]
 // Exports: canViewPotentiallyNSFWChannel, getGuildIdFromMessage
 
-// Module 13515 (MessageUtils)
-import AgeGateUtils from "AgeGateUtils" /* 6180 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+// Module 13549 (MessageUtils)
+import AgeGateUtils from "AgeGateUtils" /* 6610 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
 import UserStore from "UserStore" /* 1392 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 18009
-// Function ID: 18010
+// Module ID: 18038
+// Function ID: 18039
 // Name: SearchNavigatorPreviewHeader
-// Dependencies: [19, 17, 21, 5191, 558, 576, 13790, 2]
+// Dependencies: [19, 17, 21, 4945, 558, 576, 13824, 2]
 
-// Module 18009 (SearchNavigatorPreviewHeader)
+// Module 18038 (SearchNavigatorPreviewHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 13790 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 13824 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

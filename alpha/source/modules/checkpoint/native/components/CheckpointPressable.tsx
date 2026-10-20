@@ -1,16 +1,16 @@
-// Module ID: 12789
-// Function ID: 12790
+// Module ID: 12809
+// Function ID: 12810
 // Name: CheckpointPressable
-// Dependencies: [109, 17, 5537, 21, 587, 5191, 558, 576, 2]
+// Dependencies: [109, 17, 5970, 21, 587, 4945, 558, 576, 2]
 
-// Module 12789 (CheckpointPressable)
+// Module 12809 (CheckpointPressable)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 5537 */;
+import CheckpointConstants from "CheckpointConstants" /* 5970 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -204,15 +204,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointPr
   if (shadowColor === undefined) {
     shadowColor = metroRequire;
   }
-  const merged = Object.assign(arg0, Object.assign({ style: 0, containerStyle: 0, children: 0, disabled: 0, onPress: 0, size: 0, shadowColor: 0 }));
+  let merged = Object.assign(arg0, Object.assign({ style: 0, containerStyle: 0, children: 0, disabled: 0, onPress: 0, size: 0, shadowColor: 0 }));
   const tmp2 = closure_9();
   let closure_3 = tmp2;
-  const obj = { style: items, children: items2 };
+  const tmp4 = hasOwnProperty;
+  let obj = { style: items, children: items2 };
   items = [tmp2.container, containerStyle];
   let tmp5 = !disabled;
   const tmp3 = metroImportAll;
   if (!disabled) {
-    const obj2 = { style: items1 };
+    let obj2 = { style: items1 };
     items1 = [tmp2.shadow, ];
     const obj3 = { backgroundColor: shadowColor };
     items1[1] = obj3;
@@ -238,9 +239,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointPr
   };
   const merged1 = Object.assign(merged);
   items2[1] = metroImportDefault(React3, obj4);
-  return tmp3(hasOwnProperty, obj);
+  return tmp3(tmp4, obj);
 });
-const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointPressable.tsx");
+let result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointPressable.tsx");
 
 export default tmp5;
 export const SHADOW_OFFSET = PX_4;

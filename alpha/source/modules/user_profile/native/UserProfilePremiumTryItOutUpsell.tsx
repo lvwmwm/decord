@@ -1,22 +1,22 @@
-// Module ID: 15710
-// Function ID: 15711
+// Module ID: 15739
+// Function ID: 15740
 // Name: UserProfilePremiumTryItOutUpsell
-// Dependencies: [19, 7181, 21, 5191, 15700, 558, 576, 1633, 4945, 5478, 1128, 2]
+// Dependencies: [19, 7250, 21, 4945, 15729, 558, 576, 1633, 5014, 5208, 1128, 2]
 
-// Module 15710 (UserProfilePremiumTryItOutUpsell)
+// Module 15739 (UserProfilePremiumTryItOutUpsell)
 import Fragment from "Fragment" /* 21 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import spring from "spring" /* 5478 */;
-import Constants from "Constants" /* 7181 */;
-import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 15700 */;
+import spring from "spring" /* 5208 */;
+import Constants from "Constants" /* 7250 */;
+import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 15729 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const ReanimatedRexportDefault = tmp4(4945);
-const UserProfileUpsellCardV2Default = tmp4(15700);
+const ReanimatedRexportDefault = tmp4(5014);
+const UserProfileUpsellCardV2Default = tmp4(15729);
 const PROFILE_SIDE_PADDING = Constants.PROFILE_SIDE_PADDING;
 const jsx = Fragment.jsx;
 let c5 = 0.9;
@@ -38,7 +38,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   isVisible = isVisible.isVisible;
   const onPreviewPremium = isVisible.onPreviewPremium;
   const tmp5 = closure_7(useSafeAreaInsetsDefault().bottom);
-  const obj2 = isVisible(4945);
+  const obj2 = isVisible(5014);
   const fn = function c() {
     let items;
     const value = isVisible.get();
@@ -67,7 +67,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     ({ scale: withSpring3(num3, FLOATING_UPSELL_SPRING) });
     return obj;
   };
-  const obj3 = { isVisible, withSpring: isVisible(5478).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
+  const obj3 = { isVisible, withSpring: isVisible(5208).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
   fn.__closure = obj3;
   fn.__workletHash = 7434922701119;
   fn.__initData = __initData;
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   fn2.__closure = { isVisible };
   fn2.__workletHash = 5163998995941;
   fn2.__initData = __initData2;
-  const obj4 = isVisible(4945);
+  const obj4 = isVisible(5014);
   const animatedProps = obj4.useAnimatedProps(fn2);
   if (cResult[0] === animatedStyle) {
     let tmp8;
@@ -155,7 +155,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   isVisible = isVisible.isVisible;
   const onPreviewPremium = isVisible.onPreviewPremium;
   const tmp = closure_7(useSafeAreaInsetsDefault().bottom);
-  let obj = isVisible(4945);
+  let obj = isVisible(5014);
   const fn = function _() {
     let items;
     const value = isVisible.get();
@@ -184,12 +184,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     ({ scale: withSpring3(num3, FLOATING_UPSELL_SPRING) });
     return obj;
   };
-  const obj2 = { isVisible, withSpring: isVisible(5478).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
+  const obj2 = { isVisible, withSpring: isVisible(5208).withSpring, FLOATING_UPSELL_SPRING, DISMISSED_TRANSLATE_Y: 60, DISMISSED_SCALE };
   fn.__closure = obj2;
   fn.__workletHash = 14790282051517;
   fn.__initData = __initData3;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj3 = isVisible(4945);
+  const obj3 = isVisible(5014);
   class I {
     constructor() {
       let str2;

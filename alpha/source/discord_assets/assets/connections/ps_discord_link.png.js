@@ -1,8 +1,8 @@
-// Module ID: 13860
-// Function ID: 13861
+// Module ID: 13894
+// Function ID: 13895
 // Dependencies: [2]
 
-// Module 13860
+// Module 13894
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/connections/ps_discord_link.png.js");

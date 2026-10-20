@@ -1,24 +1,24 @@
-// Module ID: 13776
-// Function ID: 13777
+// Module ID: 13810
+// Function ID: 13811
 // Name: ChannelOverflowMenu
-// Dependencies: [109, 19, 1087, 21, 558, 576, 13777, 9543, 1128, 9662, 13778, 2]
+// Dependencies: [109, 19, 1087, 21, 558, 576, 13811, 9558, 1128, 9676, 13812, 2]
 // Exports: hasChannelOverflowMenu
 
-// Module 13776 (ChannelOverflowMenu)
+// Module 13810 (ChannelOverflowMenu)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9543 */;
-import IconActionButtonDefault from "IconActionButton" /* 13777 */;
-import useAppChannelOverflowMenuItemsDefault from "useAppChannelOverflowMenuItems" /* 13778 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9558 */;
+import IconActionButtonDefault from "IconActionButton" /* 13811 */;
+import useAppChannelOverflowMenuItemsDefault from "useAppChannelOverflowMenuItems" /* 13812 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ContextMenu = tmp(9662);
+const ContextMenu = tmp(9676);
 let closure_3 = ["onPress"];
 const ChannelTypes = Constants.ChannelTypes;
 const jsx = Fragment.jsx;

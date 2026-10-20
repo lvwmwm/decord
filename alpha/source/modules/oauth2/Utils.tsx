@@ -1,13 +1,13 @@
-// Module ID: 9533
-// Function ID: 9534
+// Module ID: 9549
+// Function ID: 9550
 // Name: Utils
-// Dependencies: [1087, 9534, 1128, 6319, 2]
+// Dependencies: [1087, 9550, 1128, 5573, 2]
 // Exports: getApplicationDetailsText, isContentClassificationRestricted
 
-// Module 9533 (Utils)
+// Module 9549 (Utils)
 import Constants from "Constants" /* 1087 */;
-import utils from "utils" /* 6319 */;
-import useIsSocialLayerParentApplication from "useIsSocialLayerParentApplication" /* 9534 */;
+import utils from "utils" /* 5573 */;
+import useIsSocialLayerParentApplication from "useIsSocialLayerParentApplication" /* 9550 */;
 import size from "module_2" /* 2 */;
 
 const MarketingURLs = Constants.MarketingURLs;

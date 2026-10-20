@@ -1,26 +1,26 @@
-// Module ID: 12282
-// Function ID: 12283
+// Module ID: 12302
+// Function ID: 12303
 // Name: ConjurePlanExperiences
-// Dependencies: [19, 17, 21, 9514, 12283, 10598, 11643, 10733, 5191, 587, 558, 576, 5187, 8506, 12272, 1128, 3883, 12285, 12281, 12265, 2]
+// Dependencies: [19, 17, 21, 9530, 12303, 10612, 11664, 10746, 4945, 587, 558, 576, 5195, 8522, 12292, 1128, 3820, 12305, 12301, 12285, 2]
 
-// Module 12282 (ConjurePlanExperiences)
+// Module 12302 (ConjurePlanExperiences)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import _modDef3883 from "module_3883" /* 3883 */;
-import AppsIcon2 from "AppsIcon" /* 8506 */;
-import GameControllerIcon from "GameControllerIcon" /* 9514 */;
-import UserCircleIcon from "UserCircleIcon" /* 10598 */;
-import ShieldIcon from "ShieldIcon" /* 10733 */;
-import RobotIcon from "RobotIcon" /* 11643 */;
-import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 12272 */;
-import ConjurePlanCommandText from "ConjurePlanCommandText" /* 12281 */;
-import WindowTopIcon from "WindowTopIcon" /* 12283 */;
-import conjurePlanExperienceSections from "conjurePlanExperienceSections" /* 12285 */;
+import _modDef3820 from "module_3820" /* 3820 */;
+import AppsIcon2 from "AppsIcon" /* 8522 */;
+import GameControllerIcon from "GameControllerIcon" /* 9530 */;
+import UserCircleIcon from "UserCircleIcon" /* 10612 */;
+import ShieldIcon from "ShieldIcon" /* 10746 */;
+import RobotIcon from "RobotIcon" /* 11664 */;
+import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 12292 */;
+import ConjurePlanCommandText from "ConjurePlanCommandText" /* 12301 */;
+import WindowTopIcon from "WindowTopIcon" /* 12303 */;
+import conjurePlanExperienceSections from "conjurePlanExperienceSections" /* 12305 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,8 +40,8 @@ let obj8;
 let obj9;
 let size;
 let tmp;
-const Text_Text = tmp(5187);
-const f112530 = (caption) => {
+const Text_Text = tmp(5195);
+const f112967 = (caption) => {
   let obj2;
   obj = { caption: caption.caption, children: closure_1_5(closure_1_10, obj2) };
   const key = caption.key;
@@ -63,7 +63,7 @@ function frameBlocks(proposal, experience, infoRows) {
     const items = [];
     if (result.channels.length > 0) {
       const push2 = items.push;
-      const obj2 = { channels: true, caption: intl2.formatToPlainString(_modDef3883.w8F5sy, obj3), children: hasOwnProperty(View, obj4) };
+      const obj2 = { channels: true, caption: intl2.formatToPlainString(_modDef3820.w8F5sy, obj3), children: hasOwnProperty(View, obj4) };
       intl2 = tmp(1128).intl;
       obj3 = { count: result.channels.length };
       obj4 = {
@@ -81,7 +81,7 @@ function frameBlocks(proposal, experience, infoRows) {
     const result1 = tmpResult.conjurePlanFrameFeatures(result);
     if (result1.length > 0) {
       const push = items.push;
-      const obj5 = { caption: intl.string(_modDef3883.MY6UGJ), children: hasOwnProperty(closure_10, obj6) };
+      const obj5 = { caption: intl.string(_modDef3820.MY6UGJ), children: hasOwnProperty(closure_10, obj6) };
       intl = tmp(1128).intl;
       obj6 = { labels: result1 };
       push(hasOwnProperty(closure_9, obj5, "features"));
@@ -262,7 +262,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const combined = "" + name + ", " + description;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.ICON_STRONG };
-    const AppsIcon = tmp(8506).AppsIcon;
+    const AppsIcon = tmp(8522).AppsIcon;
     const tmp9 = hasOwnProperty(AppsIcon, obj2);
     cResult[0] = tmp9;
     first = tmp9;
@@ -494,7 +494,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Experi
         const arraySpreadResult = HermesBuiltin.arraySpread(items3, items2, 0);
         const tmp2Result = conjurePlanExperienceSections;
         const result = tmp2Result.conjurePlanRequirementGroups(proposal);
-        HermesBuiltin.arraySpread(items3, result.map(f112530), arraySpreadResult);
+        HermesBuiltin.arraySpread(items3, result.map(f112967), arraySpreadResult);
         cResult[5] = proposal;
         cResult[6] = items3;
         tmp7 = items3;
@@ -548,7 +548,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Experi
       const arraySpreadResult = HermesBuiltin.arraySpread(items3, items2, 0);
       const obj3 = conjurePlanExperienceSections;
       const result = obj3.conjurePlanRequirementGroups(proposal);
-      HermesBuiltin.arraySpread(items3, result.map(f112530), arraySpreadResult);
+      HermesBuiltin.arraySpread(items3, result.map(f112967), arraySpreadResult);
       items = items3;
     }
   }
@@ -668,7 +668,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Compon
     tmp5 = cResult[1];
   }
   if (tmp5) {
-    AppsIcon = tmp(8506).AppsIcon;
+    AppsIcon = tmp(8522).AppsIcon;
   } else {
     AppsIcon = obj[experience.kind];
   }
@@ -761,7 +761,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Compon
             if ("automod" === experience.kind) {
               if (1 === bullets.length) {
                 const obj6 = { variant: "text-md/normal", color: "text-default", children: hasOwnProperty(ConjurePlanCommandText.ConjurePlanCommandText, obj7) };
-                const Text = tmp(5187).Text;
+                const Text = tmp(5195).Text;
                 obj7 = { text: bullets[0], commandNames, size: "text-md" };
                 tmp29 = hasOwnProperty(Text, obj6);
               }
@@ -800,9 +800,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Compon
     const intl = tmp(1128).intl;
     const string = intl.string;
     if (tmp5) {
-      BM4Ymz = _modDef3883.BM4Ymz;
+      BM4Ymz = _modDef3820.BM4Ymz;
     } else {
-      BM4Ymz = tmp(12285).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
+      BM4Ymz = tmp(12305).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
     }
     const stringResult = string(BM4Ymz);
     cResult[7] = experience.kind;
@@ -833,7 +833,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Compon
   obj = conjurePlanExperienceSections;
   const result = obj.conjurePlanExperienceIsApp(experience);
   if (result) {
-    AppsIcon = tmp2(8506).AppsIcon;
+    AppsIcon = tmp2(8522).AppsIcon;
   } else {
     AppsIcon = obj[experience.kind];
   }
@@ -842,13 +842,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Compon
   const obj4 = { style: tmp.iconBox, children: hasOwnProperty(AppsIcon, obj5) };
   obj5 = { size: "xs", color: nativeDefault.colors.ICON_STRONG };
   items = [hasOwnProperty(View, obj4), ];
-  const Text = tmp2(5187).Text;
+  const Text = tmp2(5195).Text;
   const intl = tmp2(1128).intl;
   const string = intl.string;
   if (result) {
-    BM4Ymz = _modDef3883.BM4Ymz;
+    BM4Ymz = _modDef3820.BM4Ymz;
   } else {
-    BM4Ymz = tmp2(12285).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
+    BM4Ymz = tmp2(12305).CONJURE_PLAN_EXPERIENCE_KIND_LABELS[experience.kind];
   }
   const obj6 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "header", children: string(BM4Ymz) };
   items[1] = hasOwnProperty(Text, obj6);
@@ -862,7 +862,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Compon
   if ("automod" === experience.kind) {
     if (1 === bullets.length) {
       const obj8 = { variant: "text-md/normal", color: "text-default", children: hasOwnProperty(ConjurePlanCommandText.ConjurePlanCommandText, obj9) };
-      const Text2 = tmp2(5187).Text;
+      const Text2 = tmp2(5195).Text;
       obj9 = { text: bullets[0], commandNames, size: "text-md" };
       tmp8Result2 = tmp8(Text2, obj8);
     }

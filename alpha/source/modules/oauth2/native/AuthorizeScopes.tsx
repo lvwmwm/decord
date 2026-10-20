@@ -1,17 +1,17 @@
-// Module ID: 13835
-// Function ID: 13836
+// Module ID: 13869
+// Function ID: 13870
 // Name: AuthorizeScopes
-// Dependencies: [19, 17, 21, 5191, 558, 576, 1128, 6573, 587, 7144, 5187, 9529, 6447, 9536, 8731, 2]
+// Dependencies: [19, 17, 21, 4945, 558, 576, 1128, 6966, 587, 7213, 5195, 9545, 5560, 5564, 8747, 2]
 
-// Module 13835 (AuthorizeScopes)
+// Module 13869 (AuthorizeScopes)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5187 */;
+import Text_Text from "Text/Text" /* 5195 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Scope(a
           let tmp22 = null;
           if (null != error) {
             const obj2 = { variant: "text-xs/normal", children: error };
-            tmp22 = React3(tmp(5187).Text, obj2);
+            tmp22 = React3(tmp(5195).Text, obj2);
           }
           cResult[11] = error;
           cResult[12] = tmp22;
@@ -140,11 +140,11 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Scope(a
   }
   if (isFake) {
     const obj7 = { style: tmp4.fakeScopeIcon, color: nativeDefault.colors.TEXT_MUTED, size: "refresh_sm" };
-    const CircleXIcon = tmp(6573).CircleXIcon;
+    const CircleXIcon = tmp(6966).CircleXIcon;
     tmp10Result = tmp10(CircleXIcon, obj7);
   } else {
     const obj8 = { color: nativeDefault.colors.TEXT_MUTED, size: "refresh_sm" };
-    const CircleCheckIcon = tmp(7144).CircleCheckIcon;
+    const CircleCheckIcon = tmp(7213).CircleCheckIcon;
     tmp10Result = tmp10(CircleCheckIcon, obj8);
   }
   cResult[2] = isFake;
@@ -182,17 +182,17 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Scope(a
   const obj2 = { style: tmp.iconWrapper, accessible: false, importantForAccessibility: "no-hide-descendants", children: tmp10Result };
   if (isFake) {
     const obj3 = { style: tmp.fakeScopeIcon, color: nativeDefault.colors.TEXT_MUTED, size: "refresh_sm" };
-    const CircleXIcon = tmp6(6573).CircleXIcon;
+    const CircleXIcon = tmp6(6966).CircleXIcon;
     tmp10Result = tmp10(CircleXIcon, obj3);
   } else {
     const obj4 = { color: nativeDefault.colors.TEXT_MUTED, size: "refresh_sm" };
-    const CircleCheckIcon = tmp6(7144).CircleCheckIcon;
+    const CircleCheckIcon = tmp6(7213).CircleCheckIcon;
     tmp10Result = tmp10(CircleCheckIcon, obj4);
   }
   items = [React3(View, obj2), ];
   let str3;
   const obj5 = { style: tmp.scope, children: items1 };
-  const Text = tmp6(5187).Text;
+  const Text = tmp6(5195).Text;
   if (isFake) {
     str3 = "text-muted";
   }
@@ -200,7 +200,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Scope(a
   let tmp10Result2 = null;
   if (null != error) {
     const obj6 = { variant: "text-xs/normal", children: error };
-    tmp10Result2 = tmp10(tmp6(5187).Text, obj6);
+    tmp10Result2 = tmp10(tmp6(5195).Text, obj6);
   }
   items1[1] = tmp10Result2;
   items[1] = hasOwnProperty(View, obj5);
@@ -237,7 +237,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuthorizeSco
   } else {
     first = cResult[0];
   }
-  const tmp7 = errors(6447)(first);
+  const tmp7 = errors(5560)(first);
   if (0 === accountScopes.length) {
     return null;
   } else {
@@ -265,7 +265,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuthorizeSco
         }
         if (cResult[9] !== tmp14) {
           const obj2 = { variant: "heading-sm/normal", color: "text-default", children: tmp14 };
-          const tmp18 = closure_4(tmp(5187).Text, obj2);
+          const tmp18 = closure_4(tmp(5195).Text, obj2);
           cResult[9] = tmp14;
           cResult[10] = tmp18;
           tmp16 = tmp18;
@@ -374,7 +374,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuthorizeSco
       cResult[8] = formatResult;
       tmp14 = formatResult;
     }
-    const hasItem = integrationType === tmp(9536).ApplicationIntegrationType.USER_INSTALL && requestedScopes.includes(tmp(8731).OAuth2Scopes.APPLICATIONS_COMMANDS);
+    const hasItem = integrationType === tmp(5564).ApplicationIntegrationType.USER_INSTALL && requestedScopes.includes(tmp(8747).OAuth2Scopes.APPLICATIONS_COMMANDS);
     cResult[3] = integrationType;
     cResult[4] = requestedScopes;
     cResult[5] = hasItem;
@@ -413,14 +413,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AuthorizeSco
       PZpY9c = t["1Hz+Sl"];
       tmp5 = tmp15;
     }
-    let hasItem = integrationType === tmp5(9536).ApplicationIntegrationType.USER_INSTALL;
+    let hasItem = integrationType === tmp5(5564).ApplicationIntegrationType.USER_INSTALL;
     if (hasItem) {
-      hasItem = requestedScopes.includes(tmp5(8731).OAuth2Scopes.APPLICATIONS_COMMANDS);
+      hasItem = requestedScopes.includes(tmp5(8747).OAuth2Scopes.APPLICATIONS_COMMANDS);
     }
     const tmp8 = closure_5;
     let obj = { style: tmp.scopesContainer, children: items };
     const obj2 = { variant: "heading-sm/normal", color: "text-default", children: intl.format(PZpY9c, obj3) };
-    const Text = tmp5(5187).Text;
+    const Text = tmp5(5195).Text;
     intl = tmp5(1128).intl;
     obj3 = { application: application.name };
     items = [closure_4(Text, obj2), ];

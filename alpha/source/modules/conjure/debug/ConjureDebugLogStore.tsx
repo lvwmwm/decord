@@ -1,12 +1,12 @@
-// Module ID: 10988
-// Function ID: 10989
+// Module ID: 11000
+// Function ID: 11001
 // Name: ConjureDebugLogStore
-// Dependencies: [504, 10989, 584, 2]
+// Dependencies: [504, 11001, 584, 2]
 
-// Module 10988 (ConjureDebugLogStore)
+// Module 11000 (ConjureDebugLogStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureSequencedBuffer from "ConjureSequencedBuffer" /* 10989 */;
+import ConjureSequencedBuffer from "ConjureSequencedBuffer" /* 11001 */;
 import size from "module_2" /* 2 */;
 
 function logSeq(log) {
@@ -42,8 +42,8 @@ function handleHistoryLoadSettle(status) {
   ({ projectId, scope } = status);
   if ("failed" !== status.status) {
     const obj2 = { status: "loaded", truncated: tmp2, count: tmp };
-    let value = map2.get(projectId);
-    const obj4 = map2;
+    let value = map1.get(projectId);
+    const obj4 = map1;
     if (null == value) {
       const _Map2 = Map;
       const self3 = this;
@@ -54,7 +54,7 @@ function handleHistoryLoadSettle(status) {
     }
     const result1 = value.set(scope, obj2);
   } else {
-    const value4 = map2.get(projectId);
+    const value4 = map1.get(projectId);
     let value5;
     if (value4 != null) {
       value5 = value4.get(scope);
@@ -89,9 +89,8 @@ function handleHistoryLoadSettle(status) {
 let closure_2 = [];
 let map = new Map();
 let sum = 0;
+let closure_5 = { status: "idle", truncated: false, count: 0 };
 let map1 = new Map();
-let closure_6 = { status: "idle", truncated: false, count: 0 };
-const map2 = new Map();
 const Store = get_initializedDefault.Store;
 class ConjureDebugLogStore extends Store {
   getLogs(projectId) {
@@ -105,44 +104,14 @@ class ConjureDebugLogStore extends Store {
     }
     return snapshotResult;
   }
-  getUnreadLogErrorCount(arg0) {
-    const value = map.get(arg0);
-    if (null == value) {
-      return 0;
-    } else {
-      let num = map1.get(arg0);
-      if (num == null) {
-        num = 0;
-      }
-      let num2 = 0;
-      const values = value.values();
-      const iter = values[Symbol.iterator]();
-      const nextResult = iter.next();
-      while (iter !== undefined) {
-        let tmp6 = nextResult;
-        let tmp7 = nextResult.key > num;
-        if (tmp7) {
-          tmp7 = "error" === tmp6.log.level;
-        }
-        if (tmp7) {
-          tmp7 = true !== tmp6.log.historical;
-        }
-        if (tmp7) {
-          num2 = num2 + 1;
-        }
-        continue;
-      }
-      return num2;
-    }
-  }
   getHistoryState(arg0, arg1) {
-    const value = map2.get(arg0);
+    const value = map1.get(arg0);
     let value2;
     if (value != null) {
       value2 = value.get(arg1);
     }
     if (value2 == null) {
-      value2 = closure_6;
+      value2 = closure_5;
     }
     return value2;
   }
@@ -153,14 +122,11 @@ let obj = {
     const obj = map;
     if (0 === map.size) {
       if (0 === map1.size) {
-        if (0 === map2.size) {
-          return false;
-        }
+        return false;
       }
     }
     obj.clear();
     map1.clear();
-    map2.clear();
   },
   CONJURE_HISTORY_LOAD_SETTLE: handleHistoryLoadSettle,
   CONJURE_DEBUG_BACKLOG: function handleDebugBacklog(arg0) {
@@ -183,39 +149,10 @@ let obj = {
     }
   },
   CONJURE_LOG_APPEND: handleLogAppend,
-  CONJURE_LOGS_SEEN: function handleLogsSeen(projectId) {
-    projectId = projectId.projectId;
-    let num = 0;
-    const value = map.get(projectId);
-    let values;
-    if (value != null) {
-      values = value.values();
-    }
-    if (values == null) {
-      values = closure_2;
-    }
-    const tmp2 = values[Symbol.iterator]();
-    while (tmp2 !== undefined) {
-      let _Math = Math;
-      num = Math.max(num, tmp3.key);
-      continue;
-    }
-    let num2 = map1.get(projectId);
-    const obj2 = map1;
-    if (num2 == null) {
-      num2 = 0;
-    }
-    if (num2 >= num) {
-      return false;
-    } else {
-      const result = obj2.set(projectId, num);
-    }
-  },
   CONJURE_PROJECT_DELETE_SUCCESS: function handleProjectDeleteSuccess(projectId) {
     projectId = projectId.projectId;
     map.delete(projectId);
     map1.delete(projectId);
-    map2.delete(projectId);
   }
 };
 const conjureDebugLogStore = new ConjureDebugLogStore(DispatcherDefault, obj);

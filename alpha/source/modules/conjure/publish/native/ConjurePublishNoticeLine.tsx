@@ -1,18 +1,18 @@
-// Module ID: 12195
-// Function ID: 12196
+// Module ID: 12215
+// Function ID: 12216
 // Name: ConjurePublishNoticeLine
-// Dependencies: [19, 21, 558, 576, 12194, 12196, 1128, 12128, 5187, 12197, 3883, 5155, 12198, 2]
+// Dependencies: [19, 21, 558, 576, 12214, 12216, 1128, 12148, 5195, 12217, 3820, 5171, 12218, 2]
 
-// Module 12195 (ConjurePublishNoticeLine)
+// Module 12215 (ConjurePublishNoticeLine)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5155 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import conjurePublishCard from "conjurePublishCard" /* 12128 */;
-import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 12194 */;
-import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 12196 */;
-import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 12197 */;
-import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 12198 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5171 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import conjurePublishCard from "conjurePublishCard" /* 12148 */;
+import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 12214 */;
+import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 12216 */;
+import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 12217 */;
+import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 12218 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -168,7 +168,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PatchNo
               return _false(Text_Text.Text, obj, arg1);
             }
       };
-      formatResult = intl2.format(tmp4(3883)["35VEu5"], obj3);
+      formatResult = intl2.format(tmp4(3820)["35VEu5"], obj3);
     } else {
       const intl = tmp(1128).intl;
       const obj4 = {
@@ -188,7 +188,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PatchNo
               }
             }
       };
-      formatResult = intl.format(tmp4(3883)["6/zJpD"], obj4);
+      formatResult = intl.format(tmp4(3820)["6/zJpD"], obj4);
     }
     cResult[0] = tmp5;
     cResult[1] = projectId;
@@ -225,7 +225,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PatchNo
               return _false(Text_Text.Text, obj, arg1);
             }
       };
-      formatResult = intl2.format(tmp(3883)["35VEu5"], obj2);
+      formatResult = intl2.format(tmp(3820)["35VEu5"], obj2);
     } else {
       let tmp7 = projectId;
       const intl = projectId(1128).intl;
@@ -246,7 +246,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PatchNo
               }
             }
       };
-      formatResult = intl.format(tmp(3883)["6/zJpD"], obj);
+      formatResult = intl.format(tmp(3820)["6/zJpD"], obj);
     }
     let obj3 = { children: items };
     items = [" ", formatResult];

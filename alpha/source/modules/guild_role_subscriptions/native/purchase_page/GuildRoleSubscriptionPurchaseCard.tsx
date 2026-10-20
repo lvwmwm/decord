@@ -1,26 +1,26 @@
-// Module ID: 17697
-// Function ID: 17698
+// Module ID: 17726
+// Function ID: 17727
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [32, 19, 17, 21, 5191, 587, 558, 576, 6940, 1633, 16285, 17692, 5187, 1202, 17698, 1128, 16295, 6584, 7118, 2]
+// Dependencies: [32, 19, 17, 21, 4945, 587, 558, 576, 7022, 1633, 16314, 17721, 5195, 1202, 17727, 1128, 16324, 5230, 5226, 2]
 
-// Module 17697 (GuildRoleSubscriptionPurchaseCard)
+// Module 17726 (GuildRoleSubscriptionPurchaseCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import BottomSheetModal from "BottomSheetModal" /* 6584 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6940 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7118 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16285 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 16295 */;
-import Elements from "Elements" /* 17692 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5226 */;
+import BottomSheetModal from "BottomSheetModal" /* 5230 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7022 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16314 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 16324 */;
+import Elements from "Elements" /* 17721 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj3;
 let obj4;
 let size;
 let tmp6;
-const SubscribeButtonDefault = tmp6(17698);
+const SubscribeButtonDefault = tmp6(17727);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -242,7 +242,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                       const obj15 = { scrollable: true, startExpanded: true, children: metroImportDefault(View, obj16) };
                       obj16 = { style: container, children: items1 };
                       items1 = [tmp35, tmp39, tmp58];
-                      BottomSheet = tmp(7118).BottomSheet;
+                      BottomSheet = tmp(5226).BottomSheet;
                       const tmp65 = metroRequire(BottomSheet, obj15);
                       cResult[41] = tmp5.container;
                       cResult[42] = tmp35;

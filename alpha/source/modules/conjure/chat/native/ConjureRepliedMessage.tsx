@@ -1,24 +1,24 @@
-// Module ID: 12172
-// Function ID: 12173
+// Module ID: 12192
+// Function ID: 12193
 // Name: chat/ConjureRepliedMessage
-// Dependencies: [19, 17, 21, 12162, 5191, 587, 558, 576, 12173, 5057, 11688, 12174, 1128, 3883, 12176, 1202, 5187, 12181, 2]
+// Dependencies: [19, 17, 21, 12182, 4945, 587, 558, 576, 12193, 4994, 11709, 12194, 1128, 3820, 12196, 1202, 5195, 12201, 2]
 
-// Module 12172 (chat/ConjureRepliedMessage)
+// Module 12192 (chat/ConjureRepliedMessage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import _modDef3883 from "module_3883" /* 3883 */;
-import UserUtils from "UserUtils" /* 5057 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11688 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12162 */;
-import conjureMessageAuthors from "conjureMessageAuthors" /* 12173 */;
-import conjureMentions from "conjureMentions" /* 12174 */;
-import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 12181 */;
+import _modDef3820 from "module_3820" /* 3820 */;
+import UserUtils from "UserUtils" /* 4994 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11709 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12182 */;
+import conjureMessageAuthors from "conjureMessageAuthors" /* 12193 */;
+import conjureMentions from "conjureMentions" /* 12194 */;
+import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 12201 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -195,7 +195,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRep
     if (null != messageAuthorUser) {
       const obj9 = { style: tmp4.avatar, children: metroRequire(ConjureUserAvatar, obj10) };
       obj10 = { userId: replied.userId, size: native.AvatarSizes.SIZE_16 };
-      ConjureUserAvatar = tmp(12176).ConjureUserAvatar;
+      ConjureUserAvatar = tmp(12196).ConjureUserAvatar;
       tmp21 = metroRequire(hasOwnProperty, obj9);
     }
     cResult[9] = replied.userId;
@@ -205,7 +205,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRep
     tmp20 = tmp21;
   }
   const intl = tmp(1128).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(_modDef3883.K0046m, { name: str, content: conjureMentionNames });
+  const formatToPlainStringResult = intl.formatToPlainString(_modDef3820.K0046m, { name: str, content: conjureMentionNames });
   cResult[4] = conjureMentionNames;
   cResult[5] = str;
   cResult[6] = formatToPlainStringResult;
@@ -219,9 +219,9 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRep
   replied = replied.replied;
   const onJump = replied.onJump;
   const tmp = closure_8();
-  let obj = replied(12173);
+  let obj = replied(12193);
   const messageAuthorUser = obj.useMessageAuthorUser(replied.userId);
-  const obj2 = replied(5057);
+  const obj2 = replied(4994);
   let str = obj2.useName(messageAuthorUser);
   if (str == null) {
     str = "";
@@ -232,8 +232,8 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRep
     return obj.parseConjureDesignRemark(replied.content);
   }, items);
   let body;
-  const useConjureMentionNames = replied(12174).useConjureMentionNames;
-  replied(12174);
+  const useConjureMentionNames = replied(12194).useConjureMentionNames;
+  replied(12194);
   if (memo != null) {
     body = memo.body;
   }
@@ -242,7 +242,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRep
   }
   const str2 = body.replace(/\s+/g, " ");
   const conjureMentionNames = useConjureMentionNames(str2.trim());
-  const obj3 = { style: tmp.root, onPress: onJump, disabled: null == onJump, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(_modDef3883.K0046m, { name: str, content: conjureMentionNames }), children: items1 };
+  const obj3 = { style: tmp.root, onPress: onJump, disabled: null == onJump, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(_modDef3820.K0046m, { name: str, content: conjureMentionNames }), children: items1 };
   intl = tmp2(1128).intl;
   items1 = [, , , ];
   const obj4 = { style: tmp.spine };
@@ -253,15 +253,15 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRep
   if (null != messageAuthorUser) {
     const obj5 = { style: tmp.avatar, children: closure_6(ConjureUserAvatar, obj6) };
     obj6 = { userId: replied.userId, size: replied(1202).AvatarSizes.SIZE_16 };
-    ConjureUserAvatar = tmp2(12176).ConjureUserAvatar;
+    ConjureUserAvatar = tmp2(12196).ConjureUserAvatar;
     tmp12Result = tmp12(tmp13, obj5);
   }
   items1[1] = tmp12Result;
   const obj7 = { variant: "text-xs/semibold", color: "text-default", style: tmp.name, lineClamp: 1, children: str };
-  items1[2] = closure_6(replied(5187).Text, obj7);
+  items1[2] = closure_6(replied(5195).Text, obj7);
   let tmp12Result2 = null;
   const obj8 = { variant: "text-xs/medium", color: "interactive-text-default", style: tmp.content, lineClamp: 1, children: items2 };
-  const Text = tmp2(5187).Text;
+  const Text = tmp2(5195).Text;
   if (null != memo) {
     const obj9 = { label: memo.label, variant: "text-xs/medium" };
     tmp12Result2 = tmp12(ConjureSelectedMentionDefault, obj9);

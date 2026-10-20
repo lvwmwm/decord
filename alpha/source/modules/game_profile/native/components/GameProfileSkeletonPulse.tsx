@@ -1,12 +1,12 @@
-// Module ID: 9238
-// Function ID: 9239
+// Module ID: 9254
+// Function ID: 9255
 // Name: GameProfileSkeletonPulse
-// Dependencies: [19, 5181, 4945, 5192, 558, 576, 504, 2]
+// Dependencies: [19, 4946, 5014, 5167, 558, 576, 504, 2]
 
-// Module 9238 (GameProfileSkeletonPulse)
+// Module 9254 (GameProfileSkeletonPulse)
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 4945 */;
+import AccessibilityStore from "AccessibilityStore" /* 4946 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 5014 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -280,7 +280,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSkeletonP
   const effect1 = obj3.useEffect(tmp11, tmp12);
   let result = -arg0 % c5 / c5;
   dependencyMap = result;
-  const tmpResult2 = tmp(4945);
+  const tmpResult2 = tmp(5014);
   class T {
     constructor() {
       let tmp7;
@@ -383,7 +383,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSkeletonP
   }, items1);
   let result = -arg0 % c5 / c5;
   dependencyMap = result;
-  let obj2 = stateFromStores(4945);
+  let obj2 = stateFromStores(5014);
   const fn = function _() {
     let tmp7;
     const obj = { opacity: null };

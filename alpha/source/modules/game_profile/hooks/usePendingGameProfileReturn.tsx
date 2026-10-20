@@ -1,16 +1,16 @@
-// Module ID: 13110
-// Function ID: 13111
+// Module ID: 13142
+// Function ID: 13143
 // Name: usePendingGameProfileReturn
-// Dependencies: [32, 19, 2022, 9158, 1087, 558, 576, 504, 9156, 9150, 2]
+// Dependencies: [32, 19, 2022, 9174, 1087, 558, 576, 504, 9172, 9166, 2]
 
-// Module 13110 (usePendingGameProfileReturn)
+// Module 13142 (usePendingGameProfileReturn)
 import Constants from "Constants" /* 1087 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9150 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9156 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9166 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9172 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2022 */;
-import GameProfileStore from "GameProfileStore" /* 9158 */;
+import GameProfileStore from "GameProfileStore" /* 9174 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

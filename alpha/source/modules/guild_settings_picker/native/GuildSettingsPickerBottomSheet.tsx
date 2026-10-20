@@ -1,17 +1,17 @@
-// Module ID: 14903
-// Function ID: 14904
+// Module ID: 14935
+// Function ID: 14936
 // Name: GuildSettingsPickerBottomSheet
-// Dependencies: [19, 17, 21, 5191, 558, 576, 14904, 5155, 38, 8910, 7117, 5187, 1202, 14908, 5479, 7118, 2]
+// Dependencies: [19, 17, 21, 4945, 558, 576, 14936, 5171, 38, 8926, 7194, 5195, 1202, 14940, 5205, 5226, 2]
 
-// Module 14903 (GuildSettingsPickerBottomSheet)
+// Module 14935 (GuildSettingsPickerBottomSheet)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8910 */;
-import GuildPickerDefault from "GuildPicker" /* 14908 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8926 */;
+import GuildPickerDefault from "GuildPicker" /* 14940 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -208,13 +208,13 @@ if (ReactCompilerGating.isReactCompilerEnabled()) {
       feature = feature.feature;
       ({ section: importDefault, subsection: dependencyMap, guildId } = feature);
       const tmp = closure_6();
-      let obj = feature(14904);
+      let obj = feature(14936);
       const guildSettingsPickerFeature = obj.useGuildSettingsPickerFeature(feature);
       ({ selectGuildCta, title, description, isGuildSupported } = guildSettingsPickerFeature);
       let obj2 = { startExpanded: true, children: items };
-      BottomSheet = feature(7118).BottomSheet;
-      items = [closure_4(feature(7117).BottomSheetTitleHeader, { title }), , , , , ];
-      const obj3 = { style: tmp.content, children: closure_4(feature(5187).Text, { variant: "text-md/medium", children: description }) };
+      BottomSheet = feature(5226).BottomSheet;
+      items = [closure_4(feature(7194).BottomSheetTitleHeader, { title }), , , , , ];
+      const obj3 = { style: tmp.content, children: closure_4(feature(5195).Text, { variant: "text-md/medium", children: description }) };
       items[1] = closure_4(guildId, obj3);
       items[2] = closure_4(feature(1202).Spacer, { size: 16 });
       const obj4 = {
@@ -228,7 +228,7 @@ if (ReactCompilerGating.isReactCompilerEnabled()) {
       };
       items[3] = closure_4(GuildPickerDefault, obj4);
       items[4] = closure_4(feature(1202).Spacer, { size: 16 });
-      const obj5 = { style: tmp.content, children: closure_4(feature(5479).Button, obj6) };
+      const obj5 = { style: tmp.content, children: closure_4(feature(5205).Button, obj6) };
       obj6 = {
         grow: true,
         text: selectGuildCta,

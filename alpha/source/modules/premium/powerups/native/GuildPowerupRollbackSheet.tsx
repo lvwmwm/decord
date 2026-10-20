@@ -1,17 +1,17 @@
-// Module ID: 13204
-// Function ID: 13205
+// Module ID: 13236
+// Function ID: 13237
 // Name: GuildPowerupRollbackSheet
-// Dependencies: [21, 558, 576, 5479, 10635, 2]
+// Dependencies: [21, 558, 576, 5205, 10649, 2]
 
-// Module 13204 (GuildPowerupRollbackSheet)
+// Module 13236 (GuildPowerupRollbackSheet)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import PromoSheet2 from "PromoSheet" /* 10635 */;
+import PromoSheet2 from "PromoSheet" /* 10649 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const components_Button_Button = tmp2(5479);
+const components_Button_Button = tmp2(5205);
 const jsx = Fragment.jsx;
 tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupRollbackSheet(arg0) {
   let body;
@@ -48,7 +48,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupRoll
   }
   let tmp5;
   if (null != ctaText) {
-    tmp5 = jsx(tmp(5479).Button, { variant: "primary", text: ctaText, onPress: onCtaPress });
+    tmp5 = jsx(tmp(5205).Button, { variant: "primary", text: ctaText, onPress: onCtaPress });
   }
   cResult[0] = ctaText;
   cResult[1] = onCtaPress;

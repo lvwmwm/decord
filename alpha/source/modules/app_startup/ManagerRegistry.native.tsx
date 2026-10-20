@@ -1,10 +1,10 @@
-// Module ID: 18431
-// Function ID: 18432
+// Module ID: 18460
+// Function ID: 18461
 // Name: ManagerRegistry
-// Dependencies: [18432, 18435, 18442, 18443, 18444, 18445, 13880, 18448, 18449, 18452, 18453, 18455, 13581, 18456, 18457, 18458, 18462, 18463, 18464, 18466, 13151, 18471, 13351, 18472, 18473, 18474, 18475, 18480, 18481, 18482, 18485, 18487, 18505, 10022, 8178, 15570, 18506, 18507, 18509, 18511, 18512, 18513, 8791, 18514, 18515, 18516, 18517, 18525, 18526, 18542, 16634, 18544, 18545, 18549, 18551, 18553, 18554, 9618, 18568, 16379, 18569, 18570, 18575, 18577, 18591, 18608, 18611, 14370, 18612, 18614, 18623, 18624, 18626, 18627, 18629, 18630, 18633, 18635, 18636, 18638, 18639, 18640, 18641, 18642, 18643, 18647, 18648, 11371, 18650, 18653, 18654, 18656, 18657, 18661, 7083, 8975, 18662, 18663, 8650, 18664, 18450, 18665, 18666, 19023, 19024, 19025, 19027, 19028, 19029, 19031, 19032, 19034, 19036, 19037, 19038, 19042, 19043, 19044, 19045, 16753, 19047, 19048, 19051, 19052, 19074, 19078, 19079, 19082, 19083, 19110, 19111, 19112, 19113, 19114, 19115, 19116, 2]
+// Dependencies: [18461, 18464, 18471, 18472, 18473, 18474, 13914, 18477, 18478, 18481, 18482, 18484, 13615, 18485, 18486, 18487, 18491, 18492, 18493, 18495, 13183, 18500, 13385, 18501, 18502, 18503, 18504, 18509, 18510, 18516, 18517, 18520, 18522, 18540, 10036, 8240, 15599, 18541, 18542, 18544, 18546, 18547, 18548, 8807, 18549, 18550, 18551, 18552, 18560, 18561, 18577, 16663, 18579, 18580, 18584, 18586, 18588, 18589, 9632, 18603, 16408, 18604, 18605, 18610, 18612, 18626, 18643, 18646, 14403, 18647, 18649, 18658, 18659, 18661, 18662, 18664, 18665, 18668, 18670, 18671, 18673, 18674, 18675, 18676, 18677, 18678, 18682, 18683, 11392, 18685, 18688, 18689, 18691, 18692, 18696, 7160, 8991, 18697, 18698, 8666, 18699, 18479, 18700, 18701, 19058, 19059, 19060, 19062, 19063, 19064, 19066, 19067, 19069, 19073, 19075, 19076, 19077, 19081, 19082, 19083, 19084, 16782, 19086, 19087, 19090, 19091, 19113, 19117, 19118, 19121, 19122, 19149, 19150, 19151, 19152, 19153, 19154, 19155, 2]
 
-// Module 18431 (ManagerRegistry)
-import ManagerRegistryShared from "ManagerRegistryShared" /* 19116 */;
+// Module 18460 (ManagerRegistry)
+import ManagerRegistryShared from "ManagerRegistryShared" /* 19155 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -186,6 +186,13 @@ const obj = {
     inlineRequire() {
       return require("TopEmojisDataManager").default;
     }
+  },
+  EmbeddedAppShimManager: {
+    actions: ["EMBEDDED_APP_SHIM_PIPE_OPEN"],
+    inlineRequire() {
+      return require("EmbeddedAppShimManager").default;
+    },
+    hasStoreChangeListeners: true
   },
   EntityVersionsManager: {
     actions: ["GUILD_CREATE", "DELETED_ENTITY_IDS"],
@@ -730,6 +737,14 @@ const obj = {
     inlineRequire() {
       return require("ContentInventoryManager").default;
     },
+    neverLoadBeforeConnectionOpen: true
+  },
+  OrbsArcadeFetchManager: {
+    actions: ["POST_CONNECTION_OPEN", "USER_SETTINGS_PROTO_UPDATE", "ORBS_ARCADE_GAME_STATE_UPDATE", "LOGOUT"],
+    inlineRequire() {
+      return require("OrbsArcadeFetchManager").default;
+    },
+    hasStoreChangeListeners: true,
     neverLoadBeforeConnectionOpen: true
   },
   QuestFetchManager: {

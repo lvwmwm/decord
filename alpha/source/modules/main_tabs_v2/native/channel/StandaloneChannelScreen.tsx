@@ -1,22 +1,22 @@
-// Module ID: 17678
-// Function ID: 17679
+// Module ID: 17707
+// Function ID: 17708
 // Name: StandaloneChannelScreen
-// Dependencies: [109, 19, 17, 2068, 9600, 1087, 2075, 21, 5191, 587, 558, 576, 1506, 1633, 9608, 2093, 504, 1128, 9545, 5072, 9662, 9601, 13790, 9611, 7124, 17679, 11082, 5513, 7201, 5127, 5075, 13802, 6355, 9617, 1202, 10529, 17684, 17701, 17719, 11591, 17737, 17747, 10671, 17751, 17752, 12819, 2]
+// Dependencies: [109, 19, 17, 4800, 9615, 1087, 4807, 21, 4945, 587, 558, 576, 1506, 1633, 9623, 4825, 504, 1128, 9560, 5111, 9676, 9616, 13824, 9626, 5558, 17708, 11097, 5948, 7270, 5166, 5114, 13836, 6755, 9631, 1202, 10543, 17713, 17730, 17748, 11612, 17766, 17770, 10684, 17780, 17781, 12851, 2]
 
-// Module 17678 (StandaloneChannelScreen)
+// Module 17707 (StandaloneChannelScreen)
 import nativeDefault from "native" /* 587 */;
-import ChannelConstants from "ChannelConstants" /* 2075 */;
-import FavoritesUtils from "FavoritesUtils" /* 2093 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
-import PressableNavigatorBackIcon2 from "PressableNavigatorBackIcon" /* 9601 */;
+import ChannelConstants from "ChannelConstants" /* 4807 */;
+import FavoritesUtils from "FavoritesUtils" /* 4825 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5111 */;
+import PressableNavigatorBackIcon2 from "PressableNavigatorBackIcon" /* 9616 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native_mod from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import react_native_mod2 from "react-native" /* 9600 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import react_native_mod2 from "react-native" /* 9615 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -735,176 +735,156 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                               tmp77 = cResult[52];
                             }
                             return tmp77;
+                          } else if (showCreateThread) {
+                            let tmp68;
+                            if (cResult[53] !== tmp34) {
+                              const tmp34Result5 = tmp34();
+                              cResult[53] = tmp34;
+                              cResult[54] = tmp34Result5;
+                              tmp68 = tmp34Result5;
+                            } else {
+                              tmp68 = cResult[54];
+                            }
+                            if (cResult[55] === channelId) {
+                              let tmp70;
+                              if (cResult[56] === screenIndex) {
+                                tmp70 = cResult[57];
+                              }
+                              if (cResult[58] === tmp18) {
+                                if (cResult[59] === tmp70) {
+                                  let tmp73;
+                                  if (cResult[60] === tmp68) {
+                                    tmp73 = cResult[61];
+                                  }
+                                  return tmp73;
+                                }
+                              }
+                              const obj9 = { style: tmp18, children: items3 };
+                              items3 = [tmp68, tmp70];
+                              const tmp76 = closure_15(isBackEnabled, obj9);
+                              cResult[58] = tmp18;
+                              cResult[59] = tmp70;
+                              cResult[60] = tmp68;
+                              cResult[61] = tmp76;
+                              tmp73 = tmp76;
+                            }
+                            const obj10 = { channelId, screenIndex };
+                            const tmp72 = closure_14(tmp(tmp2[40]).CreateThreadView, obj10);
+                            cResult[55] = channelId;
+                            cResult[56] = screenIndex;
+                            cResult[57] = tmp72;
+                            tmp70 = tmp72;
                           } else {
+                            let tmp36;
                             if (null != stateFromStores) {
                               if (type === constants.GUILD_APP || null != dMAppChannelApplicationId) {
-                                let tmp64;
-                                let tmp66;
-                                if (cResult[53] !== tmp34) {
-                                  const tmp34Result5 = tmp34();
-                                  cResult[53] = tmp34;
-                                  cResult[54] = tmp34Result5;
-                                  tmp64 = tmp34Result5;
-                                } else {
-                                  tmp64 = cResult[54];
-                                }
-                                if (cResult[55] !== stateFromStores) {
-                                  const obj9 = { channel: stateFromStores };
-                                  const tmp68 = closure_14(isNavigationScreen(tmp2[40]), obj9);
-                                  cResult[55] = stateFromStores;
-                                  cResult[56] = tmp68;
-                                  tmp66 = tmp68;
-                                } else {
-                                  tmp66 = cResult[56];
-                                }
-                                if (cResult[57] === tmp18) {
-                                  let tmp69;
-                                  if (cResult[58] === tmp66) {
-                                    tmp69 = cResult[59];
-                                  }
-                                  if (cResult[60] === tmp16) {
-                                    if (cResult[61] === tmp69) {
-                                      let tmp73;
-                                      if (cResult[62] === tmp64) {
-                                        tmp73 = cResult[63];
-                                      }
-                                      return tmp73;
-                                    }
-                                  }
-                                  const obj10 = { style: tmp16, children: items3 };
-                                  items3 = [tmp64, tmp69];
-                                  const tmp76 = closure_15(isBackEnabled, obj10);
-                                  cResult[60] = tmp16;
-                                  cResult[61] = tmp69;
-                                  cResult[62] = tmp64;
-                                  cResult[63] = tmp76;
-                                  tmp73 = tmp76;
-                                }
-                                const obj11 = { style: tmp18, children: tmp66 };
-                                const tmp72 = closure_14(isBackEnabled, obj11);
-                                cResult[57] = tmp18;
-                                cResult[58] = tmp66;
-                                cResult[59] = tmp72;
-                                tmp69 = tmp72;
-                              }
-                            }
-                            if (showCreateThread) {
-                              let tmp55;
-                              if (cResult[64] !== tmp34) {
-                                const tmp34Result6 = tmp34();
-                                cResult[64] = tmp34;
-                                cResult[65] = tmp34Result6;
-                                tmp55 = tmp34Result6;
-                              } else {
-                                tmp55 = cResult[65];
-                              }
-                              if (cResult[66] === channelId) {
+                                let tmp55;
                                 let tmp57;
-                                if (cResult[67] === screenIndex) {
-                                  tmp57 = cResult[68];
+                                if (cResult[62] !== tmp34) {
+                                  const tmp34Result6 = tmp34();
+                                  cResult[62] = tmp34;
+                                  cResult[63] = tmp34Result6;
+                                  tmp55 = tmp34Result6;
+                                } else {
+                                  tmp55 = cResult[63];
                                 }
-                                if (cResult[69] === tmp18) {
-                                  if (cResult[70] === tmp57) {
-                                    let tmp60;
-                                    if (cResult[71] === tmp55) {
-                                      tmp60 = cResult[72];
-                                    }
-                                    return tmp60;
+                                if (cResult[64] !== stateFromStores) {
+                                  const obj11 = { channel: stateFromStores };
+                                  const tmp59 = closure_14(isNavigationScreen(tmp2[41]), obj11);
+                                  cResult[64] = stateFromStores;
+                                  cResult[65] = tmp59;
+                                  tmp57 = tmp59;
+                                } else {
+                                  tmp57 = cResult[65];
+                                }
+                                if (cResult[66] === tmp18) {
+                                  let tmp60;
+                                  if (cResult[67] === tmp57) {
+                                    tmp60 = cResult[68];
                                   }
+                                  if (cResult[69] === tmp16) {
+                                    if (cResult[70] === tmp60) {
+                                      let tmp64;
+                                      if (cResult[71] === tmp55) {
+                                        tmp64 = cResult[72];
+                                      }
+                                      return tmp64;
+                                    }
+                                  }
+                                  const obj12 = { style: tmp16, children: items4 };
+                                  items4 = [tmp55, tmp60];
+                                  const tmp67 = closure_15(isBackEnabled, obj12);
+                                  cResult[69] = tmp16;
+                                  cResult[70] = tmp60;
+                                  cResult[71] = tmp55;
+                                  cResult[72] = tmp67;
+                                  tmp64 = tmp67;
                                 }
-                                const obj12 = { style: tmp18, children: items4 };
-                                items4 = [tmp55, tmp57];
-                                const tmp63 = closure_15(isBackEnabled, obj12);
-                                cResult[69] = tmp18;
-                                cResult[70] = tmp57;
-                                cResult[71] = tmp55;
-                                cResult[72] = tmp63;
+                                const obj13 = { style: tmp18, children: tmp57 };
+                                const tmp63 = closure_14(isBackEnabled, obj13);
+                                cResult[66] = tmp18;
+                                cResult[67] = tmp57;
+                                cResult[68] = tmp63;
                                 tmp60 = tmp63;
                               }
-                              const obj13 = { channelId, screenIndex };
-                              const tmp59 = closure_14(tmp(tmp2[41]).CreateThreadView, obj13);
-                              cResult[66] = channelId;
-                              cResult[67] = screenIndex;
-                              cResult[68] = tmp59;
-                              tmp57 = tmp59;
+                            }
+                            if (cResult[73] !== tmp34) {
+                              const tmp34Result7 = tmp34(true);
+                              cResult[73] = tmp34;
+                              cResult[74] = tmp34Result7;
+                              tmp36 = tmp34Result7;
                             } else {
-                              let tmp36;
-                              if (cResult[73] !== tmp34) {
-                                const tmp34Result7 = tmp34(true);
-                                cResult[73] = tmp34;
-                                cResult[74] = tmp34Result7;
-                                tmp36 = tmp34Result7;
-                              } else {
-                                tmp36 = cResult[74];
-                              }
-                              if (cResult[75] === channelId) {
-                                if (cResult[76] === guildId) {
-                                  if (cResult[77] === isActive) {
-                                    let tmp38;
-                                    if (cResult[78] === screenIndex) {
-                                      tmp38 = cResult[79];
+                              tmp36 = cResult[74];
+                            }
+                            if (cResult[75] === channelId) {
+                              if (cResult[76] === guildId) {
+                                if (cResult[77] === isActive) {
+                                  let tmp38;
+                                  if (cResult[78] === screenIndex) {
+                                    tmp38 = cResult[79];
+                                  }
+                                  if (cResult[80] === tmp18) {
+                                    let tmp41;
+                                    if (cResult[81] === tmp38) {
+                                      tmp41 = cResult[82];
                                     }
-                                    if (cResult[80] === tmp18) {
-                                      let tmp41;
-                                      if (cResult[81] === tmp38) {
-                                        tmp41 = cResult[82];
+                                    if (cResult[83] === tmp41) {
+                                      let tmp44;
+                                      let tmp49;
+                                      if (cResult[84] === tmp36) {
+                                        tmp44 = cResult[85];
                                       }
-                                      if (cResult[83] === tmp41) {
-                                        let tmp44;
-                                        let tmp49;
-                                        if (cResult[84] === tmp36) {
-                                          tmp44 = cResult[85];
-                                        }
-                                        if (isSwipeToMemberListEnabled) {
-                                          if (cResult[86] === channelId) {
-                                            if (cResult[87] === tmp16) {
-                                              if (cResult[88] === tmp20) {
-                                                if (cResult[89] === isNavigationTTIVisible) {
-                                                  if (cResult[90] === tmp44) {
-                                                    let tmp52;
-                                                    if (cResult[91] === screenIndex) {
-                                                      tmp52 = cResult[92];
-                                                    }
-                                                    tmp49 = tmp52;
+                                      if (isSwipeToMemberListEnabled) {
+                                        if (cResult[86] === channelId) {
+                                          if (cResult[87] === tmp16) {
+                                            if (cResult[88] === tmp20) {
+                                              if (cResult[89] === isNavigationTTIVisible) {
+                                                if (cResult[90] === tmp44) {
+                                                  let tmp52;
+                                                  if (cResult[91] === screenIndex) {
+                                                    tmp52 = cResult[92];
                                                   }
+                                                  tmp49 = tmp52;
                                                 }
                                               }
                                             }
                                           }
-                                          const obj14 = { style: tmp16, channelId, isNavigationTTIVisible, screenIndex, isBackEnabled: tmp20, children: tmp44 };
-                                          const tmp54 = closure_14(isNavigationScreen(tmp2[43]), obj14);
-                                          cResult[86] = channelId;
-                                          cResult[87] = tmp16;
-                                          cResult[88] = tmp20;
-                                          cResult[89] = isNavigationTTIVisible;
-                                          cResult[90] = tmp44;
-                                          cResult[91] = screenIndex;
-                                          cResult[92] = tmp54;
-                                          tmp52 = tmp54;
-                                        } else {
-                                          if (cResult[93] === tmp20) {
-                                            let tmp48;
-                                            if (cResult[94] === navigation) {
-                                              tmp48 = cResult[95];
-                                            }
-                                            class Be {
-                                              constructor() {
-                                                const tmp = isBackEnabled;
-                                                if (tmp) {
-                                                  navigation.goBack();
-                                                }
-                                              }
-                                            }
-                                            const obj15 = { name: "channel_screen", navigationKey: channelId, definition: tmp(tmp2[45]).CHANNEL_NAVIGATION_TTI, visibilityMode: "prerendered", isVisible: isNavigationTTIVisible, descendantTracking: "included", accessible: false, onAccessibilityEscape: tmp48, style: tmp16, children: tmp44 };
-                                            const NavTTISurfaceProvider = tmp(tmp2[44]).NavTTISurfaceProvider;
-                                            const tmp51 = closure_14(NavTTISurfaceProvider, obj15);
-                                            cResult[96] = channelId;
-                                            cResult[97] = tmp16;
-                                            cResult[98] = isNavigationTTIVisible;
-                                            cResult[99] = tmp44;
-                                            cResult[100] = tmp48;
-                                            cResult[101] = tmp51;
-                                            tmp49 = tmp51;
+                                        }
+                                        const obj14 = { style: tmp16, channelId, isNavigationTTIVisible, screenIndex, isBackEnabled: tmp20, children: tmp44 };
+                                        const tmp54 = closure_14(isNavigationScreen(tmp2[43]), obj14);
+                                        cResult[86] = channelId;
+                                        cResult[87] = tmp16;
+                                        cResult[88] = tmp20;
+                                        cResult[89] = isNavigationTTIVisible;
+                                        cResult[90] = tmp44;
+                                        cResult[91] = screenIndex;
+                                        cResult[92] = tmp54;
+                                        tmp52 = tmp54;
+                                      } else {
+                                        if (cResult[93] === tmp20) {
+                                          let tmp48;
+                                          if (cResult[94] === navigation) {
+                                            tmp48 = cResult[95];
                                           }
                                           class Be {
                                             constructor() {
@@ -914,39 +894,57 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                               }
                                             }
                                           }
-                                          cResult[93] = tmp20;
-                                          cResult[94] = navigation;
-                                          cResult[95] = Be;
-                                          tmp48 = Be;
+                                          const obj15 = { name: "channel_screen", navigationKey: channelId, definition: tmp(tmp2[45]).CHANNEL_NAVIGATION_TTI, visibilityMode: "prerendered", isVisible: isNavigationTTIVisible, descendantTracking: "included", accessible: false, onAccessibilityEscape: tmp48, style: tmp16, children: tmp44 };
+                                          const NavTTISurfaceProvider = tmp(tmp2[44]).NavTTISurfaceProvider;
+                                          const tmp51 = closure_14(NavTTISurfaceProvider, obj15);
+                                          cResult[96] = channelId;
+                                          cResult[97] = tmp16;
+                                          cResult[98] = isNavigationTTIVisible;
+                                          cResult[99] = tmp44;
+                                          cResult[100] = tmp48;
+                                          cResult[101] = tmp51;
+                                          tmp49 = tmp51;
                                         }
-                                        return tmp49;
+                                        class Be {
+                                          constructor() {
+                                            const tmp = isBackEnabled;
+                                            if (tmp) {
+                                              navigation.goBack();
+                                            }
+                                          }
+                                        }
+                                        cResult[93] = tmp20;
+                                        cResult[94] = navigation;
+                                        cResult[95] = Be;
+                                        tmp48 = Be;
                                       }
-                                      const obj16 = { children: items5 };
-                                      items5 = [tmp36, tmp41];
-                                      const tmp47 = closure_15(closure_16, obj16);
-                                      cResult[83] = tmp41;
-                                      cResult[84] = tmp36;
-                                      cResult[85] = tmp47;
-                                      tmp44 = tmp47;
+                                      return tmp49;
                                     }
-                                    const obj17 = { name: "chat_container", tracking: "include", style: tmp18, children: tmp38 };
-                                    const tmp43 = closure_14(tmp(tmp2[25]).NavTTIView, obj17);
-                                    cResult[80] = tmp18;
-                                    cResult[81] = tmp38;
-                                    cResult[82] = tmp43;
-                                    tmp41 = tmp43;
+                                    const obj16 = { children: items5 };
+                                    items5 = [tmp36, tmp41];
+                                    const tmp47 = closure_15(closure_16, obj16);
+                                    cResult[83] = tmp41;
+                                    cResult[84] = tmp36;
+                                    cResult[85] = tmp47;
+                                    tmp44 = tmp47;
                                   }
+                                  const obj17 = { name: "chat_container", tracking: "include", style: tmp18, children: tmp38 };
+                                  const tmp43 = closure_14(tmp(tmp2[25]).NavTTIView, obj17);
+                                  cResult[80] = tmp18;
+                                  cResult[81] = tmp38;
+                                  cResult[82] = tmp43;
+                                  tmp41 = tmp43;
                                 }
                               }
-                              const obj18 = { guildId, channelId, isActive, chatInputRef: ref, screenIndex };
-                              const tmp40 = closure_14(isNavigationScreen(tmp2[42]), obj18);
-                              cResult[75] = channelId;
-                              cResult[76] = guildId;
-                              cResult[77] = isActive;
-                              cResult[78] = screenIndex;
-                              cResult[79] = tmp40;
-                              tmp38 = tmp40;
                             }
+                            const obj18 = { guildId, channelId, isActive, chatInputRef: ref, screenIndex };
+                            const tmp40 = closure_14(isNavigationScreen(tmp2[42]), obj18);
+                            cResult[75] = channelId;
+                            cResult[76] = guildId;
+                            cResult[77] = isActive;
+                            cResult[78] = screenIndex;
+                            cResult[79] = tmp40;
+                            tmp38 = tmp40;
                           }
                         }
                       }
@@ -1124,13 +1122,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let items7;
   let items8;
   let items9;
-  let obj12;
+  let obj15;
   let obj19;
   let obj27;
   let screenIndex;
   let showCreateThread;
-  let tmp40Result;
-  let tmp48;
+  let tmp41Result;
+  let tmp49;
   ({ guildId, channelId } = isActive);
   ({ isNavigationTTIVisible, isNavigationScreen, frame } = isActive);
   ({ showCreateThread, screenIndex } = isActive);
@@ -1142,20 +1140,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   dependencyMap = tmp;
   const obj = channelId(1506);
   navigation = obj.useNavigation();
-  const obj2 = channelId(11082);
+  const obj2 = channelId(11097);
   const isSwipeToMemberListEnabled = obj2.useIsSwipeToMemberListEnabled();
-  const needSubscriptionToAccess = frame(5513)(channelId).needSubscriptionToAccess;
+  const needSubscriptionToAccess = frame(5948)(channelId).needSubscriptionToAccess;
   let tmp7 = guildId;
-  const useCanSeeOnboardingHome = channelId(7201).useCanSeeOnboardingHome;
-  channelId(7201);
+  const useCanSeeOnboardingHome = channelId(7270).useCanSeeOnboardingHome;
+  channelId(7270);
   if (guildId == null) {
     tmp7 = closure_10;
   }
   const canSeeOnboardingHome = useCanSeeOnboardingHome(tmp7);
   const ref = isChatBesideChannelList.useRef(null);
-  const tmp10 = frame(5127)() === constants2.ONYX;
+  const tmp10 = frame(5166)() === constants2.ONYX;
   closure_4 = tmp10;
-  const tmp11 = frame(5075)();
+  const tmp11 = frame(5114)();
   isChatBesideChannelList = tmp11.isChatBesideChannelList;
   const isChatLockedOpen = tmp11.isChatLockedOpen;
   let items = [frame, tmp10, isChatBesideChannelList, , ];
@@ -1185,7 +1183,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return items;
   }, items1);
   let tmp15 = !isChatLockedOpen;
-  const tmp2Result = channelId(13802);
+  const tmp2Result = channelId(13836);
   const isForumChannelSearchActive = tmp2Result.useIsForumChannelSearchActive(channelId);
   if (isChatLockedOpen) {
     tmp15 = isNavigationScreen;
@@ -1205,14 +1203,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return channel;
   }, items3);
   let type;
-  const tmp2Result5 = channelId(6355);
+  const tmp2Result5 = channelId(6755);
   const dMAppChannelApplicationId = tmp2Result5.useDMAppChannelApplicationId(stateFromStores);
   if (stateFromStores != null) {
     type = stateFromStores.type;
   }
   let tmp21 = null;
-  const useDismissChannelSecondaryViewChatOnFrameDeepLink = tmp2(9617).useDismissChannelSecondaryViewChatOnFrameDeepLink;
-  channelId(9617);
+  const useDismissChannelSecondaryViewChatOnFrameDeepLink = tmp2(9631).useDismissChannelSecondaryViewChatOnFrameDeepLink;
+  channelId(9631);
   if (type === constants.GUILD_APP || null != dMAppChannelApplicationId) {
     tmp21 = channelId;
   }
@@ -1225,76 +1223,74 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             const obj3 = { style: memo, children: items4 };
             const obj4 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp15, measureNavigationTTI: false };
             items4 = [closure_14(closure_18, obj4), ];
-            const obj5 = { style: memo1, children: tmp40Result };
-            tmp40Result = null;
-            const tmp38 = closure_15;
+            const obj5 = { style: memo1, children: tmp41Result };
+            tmp41Result = null;
+            const tmp39 = closure_15;
             if (canSeeOnboardingHome) {
               const obj6 = { guildId };
-              tmp40Result = tmp40(tmp5(17701), obj6);
+              tmp41Result = tmp41(tmp5(17730), obj6);
             }
             items4[1] = closure_14(closure_6, obj5);
-            return tmp38(closure_6, obj3);
+            return tmp39(closure_6, obj3);
           } else if (channelId === StaticChannelRoute.MEMBER_SAFETY) {
             const obj7 = { guildId };
-            return closure_14(frame(17719), obj7);
+            return closure_14(frame(17748), obj7);
           } else if (channelId === StaticChannelRoute.CONJURE) {
             const obj8 = { guildId, inline: true };
-            return closure_14(frame(11591), obj8);
+            return closure_14(frame(11612), obj8);
+          } else if (showCreateThread) {
+            const obj10 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp15, measureNavigationTTI: false };
+            const obj9 = { style: memo1, children: items5 };
+            items5 = [closure_14(closure_18, obj10), ];
+            const obj11 = { channelId, screenIndex };
+            items5[1] = closure_14(channelId(17766).CreateThreadView, obj11);
+            return closure_15(closure_6, obj9);
           } else {
+            let tmp25Result;
             if (null != stateFromStores) {
               if (type === constants.GUILD_APP || null != dMAppChannelApplicationId) {
-                const obj10 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp15, measureNavigationTTI: false };
-                const obj9 = { style: memo, children: items5 };
-                items5 = [closure_14(closure_18, obj10), ];
-                const obj11 = { style: memo1, children: closure_14(frame(17737), obj12) };
-                obj12 = { channel: stateFromStores };
-                items5[1] = closure_14(closure_6, obj11);
-                return closure_15(closure_6, obj9);
+                const obj12 = { style: memo, children: items6 };
+                const obj13 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp15, measureNavigationTTI: false };
+                items6 = [closure_14(closure_18, obj13), ];
+                const obj14 = { style: memo1, children: closure_14(frame(17770), obj15) };
+                obj15 = { channel: stateFromStores };
+                items6[1] = closure_14(closure_6, obj14);
+                return closure_15(closure_6, obj12);
               }
             }
-            if (showCreateThread) {
-              const obj13 = { style: memo1, children: items6 };
-              const obj14 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp15, measureNavigationTTI: false };
-              items6 = [closure_14(closure_18, obj14), ];
-              const obj15 = { channelId, screenIndex };
-              items6[1] = closure_14(channelId(17747).CreateThreadView, obj15);
-              return closure_15(closure_6, obj13);
+            const obj16 = { children: items7 };
+            const obj17 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp15, measureNavigationTTI: true };
+            items7 = [closure_14(closure_18, obj17), ];
+            const obj18 = { name: "chat_container", tracking: "include", style: memo1, children: closure_14(frame(10684), obj19) };
+            const NavTTIView = tmp2(17708).NavTTIView;
+            obj19 = { guildId, channelId, isActive, chatInputRef: ref, screenIndex };
+            items7[1] = closure_14(NavTTIView, obj18);
+            const tmp27 = closure_15(closure_16, obj16);
+            if (isSwipeToMemberListEnabled) {
+              const obj20 = { style: memo, channelId, isNavigationTTIVisible, screenIndex, isBackEnabled: tmp15, children: tmp27 };
+              tmp25Result = tmp25(tmp5(17780), obj20);
             } else {
-              let tmp25Result;
-              const obj16 = { children: items7 };
-              const obj17 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp15, measureNavigationTTI: true };
-              items7 = [closure_14(closure_18, obj17), ];
-              const obj18 = { name: "chat_container", tracking: "include", style: memo1, children: closure_14(frame(10671), obj19) };
-              const NavTTIView = tmp2(17679).NavTTIView;
-              obj19 = { guildId, channelId, isActive, chatInputRef: ref, screenIndex };
-              items7[1] = closure_14(NavTTIView, obj18);
-              const tmp23Result = closure_15(closure_16, obj16);
-              if (isSwipeToMemberListEnabled) {
-                const obj20 = { style: memo, channelId, isNavigationTTIVisible, screenIndex, isBackEnabled: tmp15, children: tmp23Result };
-                tmp25Result = tmp25(tmp5(17751), obj20);
-              } else {
-                const obj21 = {
-                  name: "channel_screen",
-                  navigationKey: channelId,
-                  definition: channelId(12819).CHANNEL_NAVIGATION_TTI,
-                  visibilityMode: "prerendered",
-                  isVisible: isNavigationTTIVisible,
-                  descendantTracking: "included",
-                  accessible: false,
-                  onAccessibilityEscape() {
-                                  const tmp = closure_6;
-                                  if (tmp) {
-                                    navigation.goBack();
-                                  }
-                                },
-                  style: memo,
-                  children: tmp23Result
-                };
-                const NavTTISurfaceProvider = tmp2(17752).NavTTISurfaceProvider;
-                tmp25Result = tmp25(NavTTISurfaceProvider, obj21);
-              }
-              return tmp25Result;
+              const obj21 = {
+                name: "channel_screen",
+                navigationKey: channelId,
+                definition: channelId(12851).CHANNEL_NAVIGATION_TTI,
+                visibilityMode: "prerendered",
+                isVisible: isNavigationTTIVisible,
+                descendantTracking: "included",
+                accessible: false,
+                onAccessibilityEscape() {
+                              const tmp = closure_6;
+                              if (tmp) {
+                                navigation.goBack();
+                              }
+                            },
+                style: memo,
+                children: tmp27
+              };
+              const NavTTISurfaceProvider = tmp2(17781).NavTTISurfaceProvider;
+              tmp25Result = tmp25(NavTTISurfaceProvider, obj21);
             }
+            return tmp25Result;
           }
         }
       }
@@ -1302,15 +1298,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const obj23 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp15, measureNavigationTTI: false };
       items8 = [closure_14(closure_18, obj23), ];
       const obj24 = { style: memo1, children: items9 };
-      items9 = [closure_14(frame(10529), { absolute: true }), ];
-      const obj25 = { guildId, gatedChannelId: tmp48 };
-      tmp48 = undefined;
-      const tmp45 = closure_14;
-      const tmp5Result = frame(17684);
+      items9 = [closure_14(frame(10543), { absolute: true }), ];
+      const obj25 = { guildId, gatedChannelId: tmp49 };
+      tmp49 = undefined;
+      const tmp46 = closure_14;
+      const tmp5Result = frame(17713);
       if (needSubscriptionToAccess) {
-        tmp48 = channelId;
+        tmp49 = channelId;
       }
-      items9[1] = tmp45(tmp5Result, obj25);
+      items9[1] = tmp46(tmp5Result, obj25);
       items8[1] = closure_15(closure_6, obj24);
       return closure_15(closure_6, obj22);
     }

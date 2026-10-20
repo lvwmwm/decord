@@ -1,23 +1,23 @@
-// Module ID: 13831
-// Function ID: 13832
+// Module ID: 13865
+// Function ID: 13866
 // Name: ApplicationEducation
-// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 9534, 8731, 1128, 4910, 13832, 9514, 7368, 5187, 13834, 2]
+// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 9550, 8747, 1128, 5628, 13866, 9530, 7434, 5195, 13868, 2]
 
-// Module 13831 (ApplicationEducation)
+// Module 13865 (ApplicationEducation)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import FriendsIcon from "FriendsIcon" /* 4910 */;
-import SettingsIcon from "SettingsIcon" /* 7368 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8731 */;
-import GameControllerIcon from "GameControllerIcon" /* 9514 */;
-import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 9534 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 13832 */;
-import AuthorizeFormSeparator from "AuthorizeFormSeparator" /* 13834 */;
+import FriendsIcon from "FriendsIcon" /* 5628 */;
+import SettingsIcon from "SettingsIcon" /* 7434 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8747 */;
+import GameControllerIcon from "GameControllerIcon" /* 9530 */;
+import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 9550 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 13866 */;
+import AuthorizeFormSeparator from "AuthorizeFormSeparator" /* 13868 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let metroImportDefault;
 let metroRequire;
 let size;
 let tmp;
-const Text_Text = tmp(5187);
+const Text_Text = tmp(5195);
 const View = react_native.View;
 const MAX_FRIENDS = Constants.MAX_FRIENDS;
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
@@ -286,7 +286,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
         tmp44 = null;
         if (arr2.length > 0) {
           const obj15 = { variant: "text-sm/normal", color: "text-default", children: arr2 };
-          tmp44 = hasOwnProperty(tmp(5187).Text, obj15);
+          tmp44 = hasOwnProperty(tmp(5195).Text, obj15);
         }
       }
       cResult[34] = arr2;
@@ -456,7 +456,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationE
       tmp26 = null;
       if (arr2.length > 0) {
         const obj15 = { variant: "text-sm/normal", color: "text-default", children: arr2 };
-        tmp26 = hasOwnProperty(tmp4(5187).Text, obj15);
+        tmp26 = hasOwnProperty(tmp4(5195).Text, obj15);
       }
     }
     const obj16 = { children: items2 };

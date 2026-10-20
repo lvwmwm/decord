@@ -1,14 +1,14 @@
-// Module ID: 9377
-// Function ID: 9378
+// Module ID: 9393
+// Function ID: 9394
 // Name: useGameProfileShopCollection
-// Dependencies: [19, 9158, 558, 576, 504, 9255, 9378, 2]
+// Dependencies: [19, 9174, 558, 576, 504, 9271, 9394, 2]
 // Exports: useGameProfileShopCollection
 
-// Module 9377 (useGameProfileShopCollection)
+// Module 9393 (useGameProfileShopCollection)
 import react2 from "react" /* 576 */;
-import GameProfileHttpUtils from "GameProfileHttpUtils" /* 9255 */;
+import GameProfileHttpUtils from "GameProfileHttpUtils" /* 9271 */;
 import react from "react" /* 19 */;
-import GameProfileStore from "GameProfileStore" /* 9158 */;
+import GameProfileStore from "GameProfileStore" /* 9174 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let _require, state;
 let c2;
 let c3;
 let tmp;
-const useCollectiblesShopProducts = tmp(9378);
+const useCollectiblesShopProducts = tmp(9394);
 ({ useEffect: c2, useMemo: c3 } = react);
 let closure_5 = [];
 let ReactCompilerGating = ReactCompilerGating_mod;

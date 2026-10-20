@@ -1,13 +1,13 @@
-// Module ID: 7309
-// Function ID: 7310
+// Module ID: 7375
+// Function ID: 7376
 // Name: MobileWebHandoffLinking
-// Dependencies: [5, 502, 1087, 6190, 7310, 7312, 1267, 1280, 7313, 1386, 4901, 2]
+// Dependencies: [5, 502, 1087, 6620, 7376, 7378, 1267, 1280, 7379, 1386, 5622, 2]
 
-// Module 7309 (MobileWebHandoffLinking)
+// Module 7375 (MobileWebHandoffLinking)
 import FingerprintUtils from "FingerprintUtils" /* 1280 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
-import SimpleLoadingModal from "SimpleLoadingModal" /* 7310 */;
-import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 7312 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
+import SimpleLoadingModal from "SimpleLoadingModal" /* 7376 */;
+import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 7378 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1087 */;
@@ -122,7 +122,7 @@ let obj = function _redirectWithHandoffToken() {
     }
     flag2 = obj7.forceExternalBrowser ?? false;
     nonce = Object.assign(obj7, Object.assign({ forceExternalBrowser: 0 }));
-    return "Reflect";
+    return "test";
   });
   return obj(...arguments);
 };

@@ -1,14 +1,14 @@
-// Module ID: 5342
-// Function ID: 5343
+// Module ID: 5806
+// Function ID: 5807
 // Name: NativeMuteManager
-// Dependencies: [5231, 2014, 3, 2063, 584, 5343, 2016, 2]
+// Dependencies: [5695, 2014, 3, 4795, 584, 5807, 2016, 2]
 
-// Module 5342 (NativeMuteManager)
+// Module 5806 (NativeMuteManager)
 import LoggerDefault from "Logger" /* 3 */;
 import inject from "inject" /* 2016 */;
-import Timers from "Timers" /* 2063 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5343 */;
-import AudioRouteStore from "AudioRouteStore" /* 5231 */;
+import Timers from "Timers" /* 4795 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5807 */;
+import AudioRouteStore from "AudioRouteStore" /* 5695 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
 import Dispatcher from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 13217
-// Function ID: 13218
+// Module ID: 13249
+// Function ID: 13250
 // Name: SoundboardIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 13218, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 13250, 5630, 2]
 
-// Module 13217 (SoundboardIcon)
+// Module 13249 (SoundboardIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 13218 */;
+import BaseIconImage2 from "BaseIconImage" /* 5630 */;
+import AssetRegistry from "AssetRegistry" /* 13250 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Soundboard
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4912).BaseIconImage;
+  const BaseIconImage = tmp(5630).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

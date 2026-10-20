@@ -1,19 +1,19 @@
-// Module ID: 14380
-// Function ID: 14381
+// Module ID: 14413
+// Function ID: 14414
 // Name: GuildEventVoiceBanner
-// Dependencies: [19, 17, 2119, 6332, 21, 5191, 587, 558, 576, 8927, 504, 8848, 8794, 5155, 8810, 7748, 8787, 8806, 5479, 1128, 6462, 2]
+// Dependencies: [19, 17, 4851, 6732, 21, 4945, 587, 558, 576, 8943, 504, 8864, 8810, 5171, 8826, 7811, 8803, 8822, 5205, 1128, 6856, 2]
 
-// Module 14380 (GuildEventVoiceBanner)
+// Module 14413 (GuildEventVoiceBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6332 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8787 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8810 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6732 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8803 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8826 */;
 import react from "react" /* 19 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

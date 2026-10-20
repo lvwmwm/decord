@@ -1,10 +1,10 @@
-// Module ID: 14725
-// Function ID: 14726
+// Module ID: 14758
+// Function ID: 14759
 // Name: GatewaySocketAnalytics
 // Dependencies: [109, 1392, 1087, 10, 9, 1267, 2]
 // Exports: createResumeAnalytics, getConnectionPath, getReadyPayloadByteSizeAnalytics, logGatewayConnected, logReadyPayloadReceived, logResumeAnalytics, reportDevtoolsEvent
 
-// Module 14725 (GatewaySocketAnalytics)
+// Module 14758 (GatewaySocketAnalytics)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;

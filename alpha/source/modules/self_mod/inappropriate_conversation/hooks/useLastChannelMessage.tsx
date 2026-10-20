@@ -1,10 +1,10 @@
-// Module ID: 10747
-// Function ID: 10748
+// Module ID: 10760
+// Function ID: 10761
 // Name: useLastChannelMessage
-// Dependencies: [5532, 558, 576, 504, 2]
+// Dependencies: [5965, 558, 576, 504, 2]
 
-// Module 10747 (useLastChannelMessage)
-import MessageStore from "MessageStore" /* 5532 */;
+// Module 10760 (useLastChannelMessage)
+import MessageStore from "MessageStore" /* 5965 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

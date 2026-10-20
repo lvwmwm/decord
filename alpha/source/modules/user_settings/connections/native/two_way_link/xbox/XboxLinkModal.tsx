@@ -1,26 +1,26 @@
-// Module ID: 9509
-// Function ID: 9510
+// Module ID: 9525
+// Function ID: 9526
 // Name: XboxLinkModal
-// Dependencies: [19, 9510, 1087, 21, 558, 576, 9508, 7365, 7995, 1128, 9511, 9518, 9519, 9523, 13844, 13847, 13849, 9517, 13853, 6965, 2]
+// Dependencies: [19, 9526, 1087, 21, 558, 576, 9524, 7431, 8058, 1128, 9527, 9534, 9535, 9539, 13878, 13881, 13883, 9533, 13887, 7043, 2]
 
-// Module 9509 (XboxLinkModal)
+// Module 9525 (XboxLinkModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import Navigator2 from "Navigator" /* 6965 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7365 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7995 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9508 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 9510 */;
-import XboxLinkLandingDefault from "XboxLinkLanding" /* 9511 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9517 */;
-import XboxLinkPreConnectDefault from "XboxLinkPreConnect" /* 9519 */;
-import XboxLinkDiscordConsentDefault from "XboxLinkDiscordConsent" /* 9523 */;
-import XboxLinkSuccessDefault from "XboxLinkSuccess" /* 13844 */;
-import XboxLinkEducationDefault from "XboxLinkEducation" /* 13847 */;
-import XboxLinkErrorDefault from "XboxLinkError" /* 13849 */;
-import useAccountLinkStepTracking from "useAccountLinkStepTracking" /* 13853 */;
+import Navigator2 from "Navigator" /* 7043 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7431 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8058 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9524 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 9526 */;
+import XboxLinkLandingDefault from "XboxLinkLanding" /* 9527 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9533 */;
+import XboxLinkPreConnectDefault from "XboxLinkPreConnect" /* 9535 */;
+import XboxLinkDiscordConsentDefault from "XboxLinkDiscordConsent" /* 9539 */;
+import XboxLinkSuccessDefault from "XboxLinkSuccess" /* 13878 */;
+import XboxLinkEducationDefault from "XboxLinkEducation" /* 13881 */;
+import XboxLinkErrorDefault from "XboxLinkError" /* 13883 */;
+import useAccountLinkStepTracking from "useAccountLinkStepTracking" /* 13887 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -118,7 +118,7 @@ const headerRight = ReactCompilerGating.isReactCompilerEnabled() ? (function Clo
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const HeaderActionButton = tmp(7365).HeaderActionButton;
+    const HeaderActionButton = tmp(7431).HeaderActionButton;
     const intl = tmp(1128).intl;
     const tmp8 = <HeaderActionButton source={AssetRegistryDefault} onPress={first} accessibilityLabel={intl.string(intl2.t.cpT0Cq)} />;
     cResult[1] = tmp8;
@@ -177,13 +177,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkMo
 }) : (function XboxLinkModal(locationStack) {
   let twoWayLinkStyles;
   locationStack = locationStack.locationStack;
-  const obj = twoWayLinkStyles(9517);
+  const obj = twoWayLinkStyles(9533);
   twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [twoWayLinkStyles];
   const memo = react.useMemo(() => getScreens(twoWayLinkStyles), items);
-  const obj2 = twoWayLinkStyles(13853);
+  const obj2 = twoWayLinkStyles(13887);
   const accountLinkStepTracking = obj2.useAccountLinkStepTracking(PlatformTypes.XBOX, locationStack);
-  const Navigator = twoWayLinkStyles(6965).Navigator;
+  const Navigator = twoWayLinkStyles(7043).Navigator;
   const intl = twoWayLinkStyles(1128).intl;
   return <Navigator onStateChange={accountLinkStepTracking} screens={memo} initialRouteName={XboxLinkModalScenes.LANDING} headerBackTitle={intl.string(twoWayLinkStyles(1128).t["13/7kX"])} />;
 });

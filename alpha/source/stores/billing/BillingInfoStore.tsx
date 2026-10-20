@@ -1,9 +1,9 @@
-// Module ID: 4866
-// Function ID: 4867
+// Module ID: 2055
+// Function ID: 2056
 // Name: BillingInfoStore
 // Dependencies: [1087, 504, 584, 2]
 
-// Module 4866 (BillingInfoStore)
+// Module 2055 (BillingInfoStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;

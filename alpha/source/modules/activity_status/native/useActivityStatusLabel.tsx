@@ -1,21 +1,21 @@
-// Module ID: 13794
-// Function ID: 13795
+// Module ID: 13828
+// Function ID: 13829
 // Name: useActivityStatusLabel
-// Dependencies: [6153, 2068, 4845, 5207, 4855, 5212, 1087, 558, 576, 504, 10542, 10540, 10541, 10548, 1128, 10552, 10557, 2]
+// Dependencies: [6590, 4800, 4880, 5674, 4890, 5591, 1087, 558, 576, 504, 10556, 10554, 10555, 10562, 1128, 10566, 10571, 2]
 
-// Module 13794 (useActivityStatusLabel)
+// Module 13828 (useActivityStatusLabel)
 import Constants from "Constants" /* 1087 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10540 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10541 */;
-import isGameActivityDefault from "isGameActivity" /* 10548 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10552 */;
-import VoiceActivityStatus from "VoiceActivityStatus" /* 10557 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import PresenceStore from "PresenceStore" /* 5207 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
-import VoiceStateStore from "VoiceStateStore" /* 5212 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10554 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10555 */;
+import isGameActivityDefault from "isGameActivity" /* 10562 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10566 */;
+import VoiceActivityStatus from "VoiceActivityStatus" /* 10571 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6590 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
+import PresenceStore from "PresenceStore" /* 5674 */;
+import RelationshipStore from "RelationshipStore" /* 4890 */;
+import VoiceStateStore from "VoiceStateStore" /* 5591 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

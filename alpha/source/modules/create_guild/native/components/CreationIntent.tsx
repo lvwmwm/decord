@@ -1,26 +1,26 @@
-// Module ID: 13410
-// Function ID: 13411
+// Module ID: 13444
+// Function ID: 13445
 // Name: CreationIntent
-// Dependencies: [19, 17, 6939, 1087, 21, 5191, 6536, 587, 558, 576, 1505, 5462, 5471, 13353, 1267, 1128, 5187, 6542, 12982, 13411, 13415, 7092, 2]
+// Dependencies: [19, 17, 7021, 1087, 21, 4945, 5229, 587, 558, 576, 1505, 5228, 5926, 13387, 1267, 1128, 5195, 6935, 13014, 13445, 13449, 7169, 2]
 
-// Module 13410 (CreationIntent)
+// Module 13444 (CreationIntent)
 import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import useNavigation from "useNavigation" /* 1505 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5462 */;
-import react_native from "react-native" /* 5471 */;
-import NavigatorConstants from "NavigatorConstants" /* 6536 */;
-import TableRowGroup2 from "TableRowGroup" /* 6542 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7092 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13353 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5228 */;
+import NavigatorConstants from "NavigatorConstants" /* 5229 */;
+import react_native from "react-native" /* 5926 */;
+import TableRowGroup2 from "TableRowGroup" /* 6935 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7169 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13387 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 6939 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7021 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,8 +39,8 @@ let obj3;
 let obj4;
 let tmp2;
 let unpackModuleId;
-const ChairIllocon = tmp2(13411);
-const WorldIllocon = tmp2(13415);
+const ChairIllocon = tmp2(13445);
+const WorldIllocon = tmp2(13449);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native2);
 ({ CreateGuildModalStates: metroRequire, GuildTemplateTriggers: metroImportDefault, NUXGuildTemplatesAnalytics: metroImportAll } = CreateGuildConstants);
 ({ AnalyticEvents: c9, AnalyticsLocations: c10 } = Constants);
@@ -465,7 +465,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreationIn
   const obj8 = { hasIcons: true, children: null };
   const obj7 = { style: tmp.sections, children: tmp9(TableRowGroup, tmp15) };
   TableRowGroup = TableRowGroup2.TableRowGroup;
-  const tmp13 = trigger(12982);
+  const tmp13 = trigger(13014);
   const obj9 = { Icon: null, message: null, onPress: null };
   tmp10 = onPress;
   const tmp11 = ref;
@@ -484,7 +484,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreationIn
           onPress(true);
         }
     };
-    const tmp12Result = trigger(12982);
+    const tmp12Result = trigger(13014);
     intl6 = intl8.intl;
     items4[1] = tmp8(tmp12Result, obj10);
     obj8.children = items4;
@@ -504,7 +504,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreationIn
           onPress(false);
         }
     };
-    const tmp12Result2 = trigger(12982);
+    const tmp12Result2 = trigger(13014);
     intl4 = intl8.intl;
     items5[1] = tmp8(tmp12Result2, obj11);
     obj8.children = items5;

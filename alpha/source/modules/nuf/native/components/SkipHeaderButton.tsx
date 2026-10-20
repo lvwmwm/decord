@@ -1,16 +1,16 @@
-// Module ID: 13367
-// Function ID: 13368
+// Module ID: 13401
+// Function ID: 13402
 // Name: SkipHeaderButton
-// Dependencies: [19, 21, 5191, 587, 558, 576, 1128, 9599, 2]
+// Dependencies: [19, 21, 4945, 587, 558, 576, 1128, 9614, 2]
 
-// Module 13367 (SkipHeaderButton)
+// Module 13401 (SkipHeaderButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import HeaderShared from "HeaderShared" /* 9599 */;
+import HeaderShared from "HeaderShared" /* 9614 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SkipHeader
         return tmp9;
       }
     }
-    const HeaderTextButton = tmp(9599).HeaderTextButton;
+    const HeaderTextButton = tmp(9614).HeaderTextButton;
     const merged = Object.assign(label);
     const tmp14 = <HeaderTextButton labelStyle={tmp8} label={tmp5} accessibilityLabel={tmp5} />;
     cResult[5] = tmp5;

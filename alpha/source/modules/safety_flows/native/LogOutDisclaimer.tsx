@@ -1,16 +1,16 @@
-// Module ID: 19092
-// Function ID: 19093
+// Module ID: 19131
+// Function ID: 19132
 // Name: LogOutDisclaimer
-// Dependencies: [21, 558, 576, 15063, 5187, 1128, 2885, 6186, 2]
+// Dependencies: [21, 558, 576, 15095, 5195, 1128, 2822, 6616, 2]
 
-// Module 19092 (LogOutDisclaimer)
+// Module 19131 (LogOutDisclaimer)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import _modDef2885 from "module_2885" /* 2885 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6186 */;
-import ModalDisclaimer2 from "ModalDisclaimer" /* 15063 */;
+import _modDef2822 from "module_2822" /* 2822 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6616 */;
+import ModalDisclaimer2 from "ModalDisclaimer" /* 15095 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,9 +22,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LogOutDisc
   let obj = react;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const ModalDisclaimer = tmp(15063).ModalDisclaimer;
-    ({ variant: "text-xs/medium", children: intl.format(_modDef2885["0DHxym"], obj4) });
-    const Text = tmp(5187).Text;
+    const ModalDisclaimer = tmp(15095).ModalDisclaimer;
+    ({ variant: "text-xs/medium", children: intl.format(_modDef2822["0DHxym"], obj4) });
+    const Text = tmp(5195).Text;
     intl = tmp(1128).intl;
     const tmp7 = <ModalDisclaimer>{null}</ModalDisclaimer>;
     obj4 = {
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LogOutDisc
 }) : (function LogOutDisclaimer() {
   let intl;
   const ModalDisclaimer = ModalDisclaimer2.ModalDisclaimer;
-  ({ variant: "text-xs/medium", children: intl.format(_modDef2885["0DHxym"], obj3) });
+  ({ variant: "text-xs/medium", children: intl.format(_modDef2822["0DHxym"], obj3) });
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return <ModalDisclaimer>{null}</ModalDisclaimer>;

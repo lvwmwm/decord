@@ -1,10 +1,10 @@
-// Module ID: 16190
-// Function ID: 16191
+// Module ID: 16219
+// Function ID: 16220
 // Name: VttParser
 // Dependencies: [2]
 // Exports: parseVtt
 
-// Module 16190 (VttParser)
+// Module 16219 (VttParser)
 import size from "module_2" /* 2 */;
 
 let closure_0;

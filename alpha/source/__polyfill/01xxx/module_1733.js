@@ -94,9 +94,9 @@ let fn = function n(userConfig, callback) {
       callback,
       velocity: num,
       initialVelocity: 0,
-      current: "enabled",
+      current: "emoji",
       lastTimestamp: null,
-      startTimestamp: "premiumTabPopover",
+      startTimestamp: "star2",
       reduceMotion: tmp4Result.getReduceMotionForAnimation(obj.reduceMotion)
     };
     num = obj.velocity;

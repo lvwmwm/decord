@@ -1,15 +1,15 @@
-// Module ID: 2129
-// Function ID: 2130
+// Module ID: 4861
+// Function ID: 4862
 // Name: useCommunicationDisabledNoticeStore
-// Dependencies: [32, 2130, 510, 571, 1274, 558, 576, 1269, 4828, 2]
+// Dependencies: [32, 4862, 510, 571, 1274, 558, 576, 1269, 4863, 2]
 // Exports: clearCommunicationDisabledNotice
 
-// Module 2129 (useCommunicationDisabledNoticeStore)
+// Module 4861 (useCommunicationDisabledNoticeStore)
 import Storage2 from "Storage" /* 510 */;
 import react from "react" /* 576 */;
 import _mod1269 from "module_1269" /* 1269 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2130 */;
-import _slicedToArray2 from "_slicedToArray" /* 4828 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4862 */;
+import _slicedToArray2 from "_slicedToArray" /* 4863 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import module_571 from "module_571" /* 571 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

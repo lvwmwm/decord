@@ -1,13 +1,13 @@
-// Module ID: 15019
-// Function ID: 15020
+// Module ID: 15051
+// Function ID: 15052
 // Name: YouTabLottie
-// Dependencies: [109, 19, 21, 558, 576, 15020, 11438, 2]
+// Dependencies: [109, 19, 21, 558, 576, 15052, 11459, 2]
 
-// Module 15019 (YouTabLottie)
+// Module 15051 (YouTabLottie)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import LottieIcon2 from "LottieIcon" /* 11438 */;
-import AssetRegistry from "AssetRegistry" /* 15020 */;
+import LottieIcon2 from "LottieIcon" /* 11459 */;
+import AssetRegistry from "AssetRegistry" /* 15052 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouTabLott
     }
     return tmp11;
   }
-  const LottieIcon = tmp(11438).LottieIcon;
+  const LottieIcon = tmp(11459).LottieIcon;
   const merged = Object.assign(tmp4);
   const tmp13 = <LottieIcon dotLottie={tmp9} animation="all" ref={tmp5} layers={layers} markers={items} />;
   cResult[4] = tmp4;

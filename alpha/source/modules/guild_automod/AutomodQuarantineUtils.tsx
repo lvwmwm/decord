@@ -1,22 +1,22 @@
-// Module ID: 12607
-// Function ID: 12608
+// Module ID: 12627
+// Function ID: 12628
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 10904, 502, 2128, 2090, 4845, 5034, 1087, 4831, 1097, 558, 576, 4851, 573, 1128, 10968, 10969, 7370, 2]
+// Dependencies: [19, 10916, 502, 4860, 4822, 4880, 4971, 1087, 4866, 1097, 558, 576, 4886, 573, 1128, 10980, 10981, 7436, 2]
 
-// Module 12607 (AutomodQuarantineUtils)
+// Module 12627 (AutomodQuarantineUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import intl4 from "intl" /* 1128 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4851 */;
-import openUserSettings2 from "openUserSettings" /* 7370 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10969 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4866 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4886 */;
+import openUserSettings2 from "openUserSettings" /* 7436 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10981 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10904 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10916 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
+import GuildMemberStore from "GuildMemberStore" /* 4860 */;
+import GuildStore from "GuildStore" /* 4822 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4971 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -113,7 +113,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAu
       if (closure_0 == null) {
         guildId = SelectedGuildStore.getGuildId();
       }
-      const obj = { nick: "Array", bio: "Reflect" };
+      const obj = { nick: "Array", bio: "test" };
       const guild = GuildStore.getGuild(guildId);
       if (null != guild) {
         if (null != guildId) {
@@ -181,7 +181,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAu
     if (closure_0 == null) {
       guildId = SelectedGuildStore.getGuildId();
     }
-    const obj = { nick: "Array", bio: "Reflect" };
+    const obj = { nick: "Array", bio: "test" };
     const guild = GuildStore.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {

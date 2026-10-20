@@ -1,13 +1,13 @@
-// Module ID: 8985
-// Function ID: 8986
+// Module ID: 9001
+// Function ID: 9002
 // Name: ReadStateUtils
-// Dependencies: [6291, 6222, 6223, 558, 576, 504, 2]
+// Dependencies: [6719, 6652, 6653, 558, 576, 504, 2]
 // Exports: getHasImportantUnread
 
-// Module 8985 (ReadStateUtils)
-import ReadStateConstants from "ReadStateConstants" /* 6223 */;
-import ReadStateStore from "ReadStateStore" /* 6291 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
+// Module 9001 (ReadStateUtils)
+import ReadStateConstants from "ReadStateConstants" /* 6653 */;
+import ReadStateStore from "ReadStateStore" /* 6719 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6652 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

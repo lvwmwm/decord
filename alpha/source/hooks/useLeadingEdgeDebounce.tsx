@@ -1,9 +1,9 @@
-// Module ID: 11355
-// Function ID: 11356
+// Module ID: 11376
+// Function ID: 11377
 // Name: useLeadingEdgeDebounce
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 11355 (useLeadingEdgeDebounce)
+// Module 11376 (useLeadingEdgeDebounce)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

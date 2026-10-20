@@ -1,10 +1,10 @@
-// Module ID: 5462
-// Function ID: 5463
+// Module ID: 5228
+// Function ID: 5229
 // Name: useIsScreenReaderEnabled
 // Dependencies: [17, 510, 570, 1274, 558, 2]
 // Exports: addScreenReaderEnabledListener, getIsScreenReaderEnabled, useIsScreenReaderEnabled
 
-// Module 5462 (useIsScreenReaderEnabled)
+// Module 5228 (useIsScreenReaderEnabled)
 import react_native from "react-native" /* 17 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

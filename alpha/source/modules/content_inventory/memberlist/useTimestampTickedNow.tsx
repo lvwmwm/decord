@@ -1,14 +1,14 @@
-// Module ID: 14061
-// Function ID: 14062
+// Module ID: 14094
+// Function ID: 14095
 // Name: useTimestampTickedNow
-// Dependencies: [32, 19, 5181, 1104, 558, 576, 504, 2063, 2]
+// Dependencies: [32, 19, 4946, 1104, 558, 576, 504, 4795, 2]
 
-// Module 14061 (useTimestampTickedNow)
+// Module 14094 (useTimestampTickedNow)
 import react2 from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import AccessibilityStore from "AccessibilityStore" /* 4946 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

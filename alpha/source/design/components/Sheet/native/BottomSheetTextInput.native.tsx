@@ -1,20 +1,20 @@
-// Module ID: 8899
-// Function ID: 8900
+// Module ID: 8915
+// Function ID: 8916
 // Name: Sheet/BottomSheetTextInput
-// Dependencies: [109, 19, 21, 558, 576, 6583, 6581, 8900, 2]
+// Dependencies: [109, 19, 21, 558, 576, 6976, 6974, 8916, 2]
 
-// Module 8899 (Sheet/BottomSheetTextInput)
+// Module 8915 (Sheet/BottomSheetTextInput)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6583 */;
-import void_TextInput_TextInputDefault from "void/TextInput/TextInput" /* 8900 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6976 */;
+import void_TextInput_TextInputDefault from "void/TextInput/TextInput" /* 8916 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const NativeTextInput = tmp(6581);
+const NativeTextInput = tmp(6974);
 let closure_3 = ["onFocus", "onBlur", "ref"];
 const jsx = Fragment.jsx;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheetTextInput(arg0) {
@@ -84,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomShee
         }
       }
     }
-    tmp13(8900);
+    tmp13(8916);
     const merged = Object.assign(tmp6);
     const tmp23 = <tmp13Result ref={tmp16} onFocus={onFocus2} onBlur={onBlur2} />;
     cResult[10] = onBlur2;

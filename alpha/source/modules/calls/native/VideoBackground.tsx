@@ -1,21 +1,21 @@
-// Module ID: 8648
-// Function ID: 8649
+// Module ID: 8664
+// Function ID: 8665
 // Name: VideoBackground
-// Dependencies: [109, 32, 19, 17, 1087, 21, 5191, 12, 8649, 8650, 5063, 587, 1901, 558, 576, 8651, 1202, 5491, 2]
+// Dependencies: [109, 32, 19, 17, 1087, 21, 4945, 12, 8665, 8666, 4942, 587, 1901, 558, 576, 8667, 1202, 5219, 2]
 
-// Module 8648 (VideoBackground)
+// Module 8664 (VideoBackground)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
 import react_nativeDefault from "react-native" /* 1901 */;
-import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 8650 */;
-import useProfileTileGradientDefault from "useProfileTileGradient" /* 8651 */;
+import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 8666 */;
+import useProfileTileGradientDefault from "useProfileTileGradient" /* 8667 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import module_12 from "module_12" /* 12 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp5;
 let unpackModuleId;
-const LinearGradientDefault = tmp5(5491);
+const LinearGradientDefault = tmp5(5219);
 function useDominantRGBFromImage(arg0, arg1) {
   let closure_0;
   let closure_2;
@@ -41,13 +41,13 @@ function useDominantRGBFromImage(arg0, arg1) {
     tmp = first;
   }
   let tmp3 = first;
-  const tmp5 = first(8649)();
+  const tmp5 = first(8665)();
   dependencyMap = tmp5;
   let obj = react;
   let hexToRgbResult;
   const useState = react.useState;
   if (null != arg0) {
-    hexToRgbResult = tmp3(8650).cachedDominantColors[arg0];
+    hexToRgbResult = tmp3(8666).cachedDominantColors[arg0];
   }
   if (hexToRgbResult == null) {
     const obj2 = require("ColorUtils");
@@ -271,7 +271,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoBackgro
                             }
                             const obj2 = { colors: tmp24, start: tmp46, end: tmp47, style: tmp31, children: items };
                             items = [tmp35, tmp26];
-                            const tmp50 = unpackModuleId(tmp23(5491), obj2);
+                            const tmp50 = unpackModuleId(tmp23(5219), obj2);
                             cResult[38] = tmp35;
                             cResult[39] = tmp31;
                             cResult[40] = tmp24;

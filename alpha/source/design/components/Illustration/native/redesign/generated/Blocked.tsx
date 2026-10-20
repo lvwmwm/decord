@@ -1,15 +1,15 @@
-// Module ID: 15845
-// Function ID: 15846
+// Module ID: 15874
+// Function ID: 15875
 // Name: Blocked
-// Dependencies: [19, 21, 8633, 15846, 15847, 15848, 558, 576, 5065, 5128, 2]
+// Dependencies: [19, 21, 8649, 15875, 15876, 15877, 558, 576, 4952, 5631, 2]
 // Exports: getBlockedSource
 
-// Module 15845 (Blocked)
+// Module 15874 (Blocked)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 5065 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import _mod8633 from "module_8633" /* 8633 */;
+import shared from "shared" /* 4952 */;
+import FastImageDefault from "FastImage" /* 5631 */;
+import _mod8649 from "module_8649" /* 8649 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBlockedSo
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod8633;
+    const tmpResult = _mod8649;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBlockedSo
 }) : (function useBlockedSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8633;
+  const obj2 = _mod8649;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocked(arg0
   return <tmp2 source={tmp} />;
 });
 function getBlockedSource(theme) {
-  const obj = _mod8633;
+  const obj = _mod8649;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

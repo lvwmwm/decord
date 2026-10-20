@@ -1,12 +1,12 @@
-// Module ID: 10950
-// Function ID: 10951
+// Module ID: 10962
+// Function ID: 10963
 // Name: useDefaultAppLauncherWidth
-// Dependencies: [7119, 558, 1499, 10949, 2]
+// Dependencies: [5227, 558, 1499, 10961, 2]
 
-// Module 10950 (useDefaultAppLauncherWidth)
+// Module 10962 (useDefaultAppLauncherWidth)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 7119 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10949 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5227 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10961 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

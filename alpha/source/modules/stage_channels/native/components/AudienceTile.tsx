@@ -1,19 +1,19 @@
-// Module ID: 11571
-// Function ID: 11572
+// Module ID: 11592
+// Function ID: 11593
 // Name: AudienceTile
-// Dependencies: [19, 17, 2128, 21, 5191, 587, 558, 576, 5516, 1202, 11407, 1499, 504, 6206, 7759, 5509, 6612, 1128, 11551, 5065, 11572, 2]
+// Dependencies: [19, 17, 4860, 21, 4945, 587, 558, 576, 5951, 1202, 11428, 1499, 504, 6636, 7822, 5944, 5258, 1128, 11572, 4952, 11593, 2]
 // Exports: getTileWidthStyle
 
-// Module 11571 (AudienceTile)
+// Module 11592 (AudienceTile)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5516 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7759 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5951 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7822 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildMemberStore from "GuildMemberStore" /* 4860 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function RaisedH
       cResult[8] = tmp14;
       tmp11 = tmp14;
     }
-    const obj3 = { style: tmp4.raisedHand, source: tmp6(11407), color: PRIMARY_800 };
+    const obj3 = { style: tmp4.raisedHand, source: tmp6(11428), color: PRIMARY_800 };
     const Icon = native.Icon;
     const tmp10 = hasOwnProperty(Icon, obj3);
     cResult[3] = PRIMARY_800;
@@ -115,7 +115,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function RaisedH
   }
   items[1] = activeBackground;
   const obj = { style: items, children: hasOwnProperty(Icon, obj2) };
-  obj2 = { style: tmp.raisedHand, source: tmp5(11407), color: PRIMARY_800 };
+  obj2 = { style: tmp.raisedHand, source: tmp5(11428), color: PRIMARY_800 };
   Icon = native.Icon;
   return hasOwnProperty(tmp7, obj);
 });
@@ -173,7 +173,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const tmpResult = tmp(504);
     const stateFromStores = tmpResult.useStateFromStores(tmp9, tmp11, tmp12);
     if (cResult[7] !== rtsState) {
-      const tmpResult3 = tmp(6206);
+      const tmpResult3 = tmp(6636);
       const result = tmpResult3.isRequestedToSpeakAll(rtsState);
       cResult[7] = rtsState;
       cResult[8] = result;
@@ -234,7 +234,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                               tmp37 = cResult[37];
                             }
                             if (cResult[38] !== blocked) {
-                              const tmp42 = blocked && closure_5(tmp(11551).BlockedStatus, {});
+                              const tmp42 = blocked && closure_5(tmp(11572).BlockedStatus, {});
                               cResult[38] = blocked;
                               cResult[39] = tmp42;
                               tmp41 = tmp42;
@@ -242,7 +242,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                               tmp41 = cResult[39];
                             }
                             if (cResult[40] !== ignored) {
-                              const tmp45 = ignored && closure_5(tmp(11551).IgnoredStatus, {});
+                              const tmp45 = ignored && closure_5(tmp(11572).IgnoredStatus, {});
                               cResult[40] = ignored;
                               cResult[41] = tmp45;
                               tmp44 = tmp45;
@@ -259,7 +259,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                 if (cResult[46] !== theme) {
                                   let tmp50 = null != theme;
                                   if (tmp50) {
-                                    const tmpResult4 = tmp(5065);
+                                    const tmpResult4 = tmp(4952);
                                     const isThemeDarkResult = tmpResult4.isThemeDark(theme);
                                     const unsafe_rawColors = tmp5(587).unsafe_rawColors;
                                     tmp50 = { color: isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_860 };
@@ -286,7 +286,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                       if (cResult[55] !== stateFromStores) {
                                         let tmp57 = stateFromStores;
                                         if (tmp57) {
-                                          const obj4 = { source: user(11572), size: tmp(1202).Icon.Sizes.SMALL, color: user(587).unsafe_rawColors.GUILD_BOOSTING_PINK };
+                                          const obj4 = { source: user(11593), size: tmp(1202).Icon.Sizes.SMALL, color: user(587).unsafe_rawColors.GUILD_BOOSTING_PINK };
                                           const Icon = tmp(1202).Icon;
                                           tmp57 = closure_5(Icon, obj4);
                                         }
@@ -422,10 +422,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           }
         }
       }
-      const tmp5Result = user(5509);
+      const tmp5Result = user(5944);
       const name = tmp5Result.getName(tmp7, channel.id, user);
       const tmp22 = blocked || ignored;
-      const LegacyPressable = tmp(6612).LegacyPressable;
+      const LegacyPressable = tmp(5258).LegacyPressable;
       const intl = tmp(1128).intl;
       const obj12 = { name };
       const formatToPlainStringResult = intl.formatToPlainString(tmp(1128).t.QLMGhv, obj12);

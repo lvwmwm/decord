@@ -1,16 +1,16 @@
-// Module ID: 13085
-// Function ID: 13086
+// Module ID: 13117
+// Function ID: 13118
 // Name: RegionalTeenUtils
-// Dependencies: [19, 6166, 6169, 558, 576, 504, 10647, 8004, 2]
+// Dependencies: [19, 5606, 5609, 558, 576, 504, 10660, 8067, 2]
 // Exports: useIsTeenInStrictCountry
 
-// Module 13085 (RegionalTeenUtils)
+// Module 13117 (RegionalTeenUtils)
 import react2 from "react" /* 576 */;
-import CountryCodes from "CountryCodes" /* 6169 */;
-import useUserIsTeen from "useUserIsTeen" /* 8004 */;
-import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10647 */;
+import CountryCodes from "CountryCodes" /* 5609 */;
+import useUserIsTeen from "useUserIsTeen" /* 8067 */;
+import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10660 */;
 import react from "react" /* 19 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 6166 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5606 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,98 +1,31 @@
 // Module ID: 12424
 // Function ID: 12425
-// Dependencies: [12414, 12391, 12386]
-// Exports: logSpanEnd, logSpanStart
+// Dependencies: [12407, 12408]
+// Exports: getMainCarrier, getSentryCarrier
 
 // Module 12424
-import _mod12391 from "module_12391" /* 12391 */;
-import _mod12414 from "module_12414" /* 12414 */;
+import _mod12407 from "module_12407" /* 12407 */;
+import _mod12408 from "module_12408" /* 12408 */;
 
 
-export const logSpanEnd = function logSpanEnd(spanContext) {
-  if (_mod12414.DEBUG_BUILD) {
-    const tmpResult = _mod12391;
-    const spanToJSONResult = tmpResult.spanToJSON(spanContext);
-    const description = spanToJSONResult.description;
-    let str = "< unknown name >";
-    if (undefined !== description) {
-      str = description;
-    }
-    const op = spanToJSONResult.op;
-    let str2 = "< unknown op >";
-    if (undefined !== op) {
-      str2 = op;
-    }
-    const spanId = spanContext.spanContext().spanId;
-    let str3 = "";
-    const tmpResult2 = _mod12391;
-    if (tmpResult2.getRootSpan(spanContext) === spanContext) {
-      str3 = "root ";
-    }
-    const _HermesInternal = HermesInternal;
-    const combined = "[Tracing] Finishing \"" + str2 + "\" " + str3 + "span \"" + str + "\" with ID " + spanId;
-    const logger = tmp(12386).logger;
-    logger.log(combined);
-  }
+export const getMainCarrier = function getMainCarrier() {
+  const GLOBAL_OBJ = _mod12407.GLOBAL_OBJ;
+  const tmp3 = GLOBAL_OBJ.__SENTRY__ || {};
+  GLOBAL_OBJ.__SENTRY__ = tmp3;
+  tmp3.version = tmp3.version || _mod12408.SDK_VERSION;
+  tmp3.version || _mod12408.SDK_VERSION;
+  const SDK_VERSION = tmp(12408).SDK_VERSION;
+  tmp3[SDK_VERSION] = tmp3[_mod12408.SDK_VERSION] || {};
+  tmp3[_mod12408.SDK_VERSION] || {};
+  return _mod12407.GLOBAL_OBJ;
 };
-export const logSpanStart = function logSpanStart(spanContext) {
-  let description2;
-  let op2;
-  if (_mod12414.DEBUG_BUILD) {
-    const tmpResult = _mod12391;
-    const spanToJSONResult = tmpResult.spanToJSON(spanContext);
-    const description = spanToJSONResult.description;
-    let str = "< unknown name >";
-    if (undefined !== description) {
-      str = description;
-    }
-    const op = spanToJSONResult.op;
-    let str2 = "< unknown op >";
-    if (undefined !== op) {
-      str2 = op;
-    }
-    const parent_span_id = spanToJSONResult.parent_span_id;
-    const spanId = spanContext.spanContext().spanId;
-    const tmpResult4 = _mod12391;
-    const spanIsSampledResult = tmpResult4.spanIsSampled(spanContext);
-    const tmpResult5 = _mod12391;
-    const rootSpan = tmpResult5.getRootSpan(spanContext);
-    let str3 = "unsampled";
-    if (spanIsSampledResult) {
-      str3 = "sampled";
-    }
-    let str5 = "";
-    if (rootSpan === spanContext) {
-      str5 = "root ";
-    }
-    const _HermesInternal = HermesInternal;
-    const _HermesInternal2 = HermesInternal;
-    const combined = "[Tracing] Starting " + str3 + " " + str5 + "span";
-    const items = ["op: " + str2, , ];
-    const _HermesInternal3 = HermesInternal;
-    items[1] = "name: " + str;
-    const _HermesInternal4 = HermesInternal;
-    items[2] = "ID: " + spanId;
-    if (parent_span_id) {
-      const _HermesInternal5 = HermesInternal;
-      items.push("parent ID: " + parent_span_id);
-    }
-    if (rootSpan !== spanContext) {
-      const tmpResult6 = _mod12391;
-      ({ op: op2, description: description2 } = tmpResult6.spanToJSON(rootSpan));
-      const _HermesInternal6 = HermesInternal;
-      tmpResult6.spanToJSON(rootSpan);
-      items.push("root ID: " + rootSpan.spanContext().spanId);
-      if (op2) {
-        const _HermesInternal7 = HermesInternal;
-        items.push("root op: " + op2);
-      }
-      if (description2) {
-        const _HermesInternal8 = HermesInternal;
-        items.push("root description: " + description2);
-      }
-    }
-    const logger = tmp(12386).logger;
-    const _HermesInternal9 = HermesInternal;
-    logger.log("" + combined + "\n  " + items.join("\n  "));
-  }
+export const getSentryCarrier = function getSentryCarrier(__SENTRY__) {
+  const tmp = __SENTRY__.__SENTRY__ || {};
+  __SENTRY__.__SENTRY__ = tmp;
+  const SDK_VERSION = tmp.version || _mod12408.SDK_VERSION;
+  tmp.version = SDK_VERSION;
+  const SDK_VERSION2 = _mod12408.SDK_VERSION;
+  const tmp4 = tmp[_mod12408.SDK_VERSION] || {};
+  tmp[SDK_VERSION2] = tmp4;
+  return tmp4;
 };

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_mode", scales: [1], hash: "b8c3a60d7df8c1a9ccb3d12fd5bdc629", name: "GameMode.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/intelligence_layer/search", scales: [1], hash: "60af52011985d9b9d318df776245f864", name: "SmartSearch.compiled.messages", type: "jsona" });

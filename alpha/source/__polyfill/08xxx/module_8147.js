@@ -1,42 +1,73 @@
 // Module ID: 8147
 // Function ID: 8148
-// Dependencies: [8095]
+// Dependencies: [8148, 8149, 8150, 8151]
 
 // Module 8147
-const require = globalThis.__r;
+import _mod8148 from "module_8148" /* 8148 */;
+import _mod8149 from "module_8149" /* 8149 */;
+import _mod8150 from "module_8150" /* 8150 */;
+import _mod8151 from "module_8151" /* 8151 */;
 
-let closure_2 = [6, 7, 99];
+let hasOwnProperty;
 
-export default {
-  get(buffer, Compression, arg2) {
-    let prop = Compression;
-    if (prop) {
-      const hasItem = undefined === Compression.Compression || closure_2.includes(Compression.Compression.value);
-      prop = hasItem;
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormat;
+    closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormat.value;
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormatLength;
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormatLength.value;
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
     }
-    if (prop) {
-      Compression.type = "image/jpeg";
-      const sum = arg2 + Compression.JPEGInterchangeFormat.value;
-      buffer = buffer.buffer;
-      Compression.image = buffer.slice(sum, sum + Compression.JPEGInterchangeFormatLength.value);
-      let obj = require("module_8095");
-      obj.deferInit(Compression, "base64", function() {
-        const obj = require("module_8095");
-        return obj.getBase64Image(this.image);
-      });
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_0 = tmp;
+let tmp3 = self && self.__exportStar || ((obj, arg1) => {
+  for (const key10007 in obj) {
+    let callResult = "default" === key10007;
+    if (!callResult) {
+      let _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      callResult = hasOwnProperty.call(arg1, key10007);
     }
-    return Compression;
+    if (callResult) {
+      continue;
+    } else {
+      let tmp3 = closure_0(arg1, obj, key10007);
+      continue;
+    }
+    continue;
   }
-};
+});
+tmp3(_mod8148, exports);
+tmp3(_mod8149, exports);
+tmp3(_mod8150, exports);
+tmp3(_mod8151, exports);

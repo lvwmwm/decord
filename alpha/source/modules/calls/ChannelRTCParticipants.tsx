@@ -1,33 +1,33 @@
-// Module ID: 6315
-// Function ID: 6316
+// Module ID: 6728
+// Function ID: 6729
 // Name: ChannelRTCParticipants
-// Dependencies: [2067, 6295, 6204, 6153, 502, 6014, 2068, 2014, 6203, 1392, 6314, 5212, 5214, 1087, 6296, 5216, 6209, 4840, 6316, 12, 6317, 6318, 5509, 6330, 6156, 2]
+// Dependencies: [4799, 6723, 6634, 6590, 502, 6451, 4800, 2014, 6633, 1392, 6727, 5591, 5593, 1087, 6724, 5680, 6639, 4875, 6729, 12, 5571, 5572, 5944, 6730, 6593, 2]
 // Exports: activityParticipantIdToApplicationId, areParticipantsEqual, getEmbeddedActivityParticipantId, getFrameParticipantId
 
-// Module 6315 (ChannelRTCParticipants)
+// Module 6728 (ChannelRTCParticipants)
 import _mod12 from "module_12" /* 12 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5509 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6156 */;
-import getParticipantUserKeyDefault from "getParticipantUserKey" /* 6209 */;
-import useIsSpeaking from "useIsSpeaking" /* 6316 */;
-import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 6317 */;
-import ContentClassificationReference from "ContentClassificationReference" /* 6318 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
-import FramesStore from "FramesStore" /* 6295 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6204 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
+import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 5571 */;
+import ContentClassificationReference from "ContentClassificationReference" /* 5572 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5944 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6593 */;
+import getParticipantUserKeyDefault from "getParticipantUserKey" /* 6639 */;
+import useIsSpeaking from "useIsSpeaking" /* 6729 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
+import FramesStore from "FramesStore" /* 6723 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6634 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6590 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 6014 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import CallStore from "CallStore" /* 6451 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import SpeakingStore from "SpeakingStore" /* 6203 */;
+import SpeakingStore from "SpeakingStore" /* 6633 */;
 import UserStore from "UserStore" /* 1392 */;
-import VideoStreamStore from "VideoStreamStore" /* 6314 */;
-import VoiceStateStore from "VoiceStateStore" /* 5212 */;
-import CallConstants from "CallConstants" /* 5214 */;
+import VideoStreamStore from "VideoStreamStore" /* 6727 */;
+import VoiceStateStore from "VoiceStateStore" /* 5591 */;
+import CallConstants from "CallConstants" /* 5593 */;
 import Constants_mod from "Constants" /* 1087 */;
-import FramesConstants from "FramesConstants" /* 6296 */;
-import Constants_mod2 from "Constants" /* 5216 */;
+import FramesConstants from "FramesConstants" /* 6724 */;
+import Constants_mod2 from "Constants" /* 5680 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -97,7 +97,7 @@ class ChannelRTCParticipants {
     new Set();
     obj.stageSpeakerIds = new Set();
     new Set();
-    const secondaryIndexMap = new obj(4840).SecondaryIndexMap((type) => {
+    const secondaryIndexMap = new obj(4875).SecondaryIndexMap((type) => {
       const items = [];
       const tmp2 = type.type === constants.USER && type.speaking;
       if (tmp2) {
@@ -440,7 +440,7 @@ class ChannelRTCParticipants {
         }
         obj4 = NicknameUtilsDefault;
         poppedOutParticipants = self.poppedOutParticipants;
-        tmp8Result = tmp8(6330);
+        tmp8Result = tmp8(6730);
         items.push(obj);
       }
       let streamForUser = ApplicationStreamingStore.getStreamForUser(userId, guildId);

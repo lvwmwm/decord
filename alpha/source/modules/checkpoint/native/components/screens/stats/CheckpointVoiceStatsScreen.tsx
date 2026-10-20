@@ -1,20 +1,20 @@
-// Module ID: 12767
-// Function ID: 12768
+// Module ID: 12783
+// Function ID: 12784
 // Name: CheckpointVoiceStatsScreen
-// Dependencies: [17, 12742, 5537, 21, 5191, 587, 558, 576, 504, 1128, 3109, 3141, 12766, 12768, 12769, 11492, 12764, 12770, 12771, 2]
+// Dependencies: [17, 12762, 5970, 21, 4945, 587, 558, 576, 504, 1128, 3046, 3078, 12782, 12784, 12785, 11513, 12780, 12786, 12787, 2]
 
-// Module 12767 (CheckpointVoiceStatsScreen)
+// Module 12783 (CheckpointVoiceStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3109 from "module_3109" /* 3109 */;
-import CheckpointConstants from "CheckpointConstants" /* 5537 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 11492 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12771 */;
-import CheckpointStore from "CheckpointStore" /* 12742 */;
+import _modDef3046 from "module_3046" /* 3046 */;
+import CheckpointConstants from "CheckpointConstants" /* 5970 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 11513 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12787 */;
+import CheckpointStore from "CheckpointStore" /* 12762 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -216,11 +216,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointVo
   }
   const intl = tmp(1128).intl;
   if (roundResult <= 0) {
-    stringResult = intl.string(_modDef3109["OBeYX/"]);
+    stringResult = intl.string(_modDef3046["OBeYX/"]);
     tmp30 = importDefault;
   } else {
     const obj6 = { numMinutes: roundResult };
-    stringResult = intl.formatToPlainString(_modDef3109.UZbUtl, obj6);
+    stringResult = intl.formatToPlainString(_modDef3046.UZbUtl, obj6);
     tmp30 = importDefault;
   }
   if (roundResult > 0) {
@@ -233,14 +233,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointVo
               return arg0;
             }
       };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp30(3141).RqXsIs, obj7);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp30(3078).RqXsIs, obj7);
     }
   }
-  const tmp30Result = tmp30(12766);
+  const tmp30Result = tmp30(12782);
   const container = tmp4.container;
   if (cResult[23] !== tmp4.image) {
-    const obj8 = { uri: tmp30(12769), style: tmp4.image };
-    const tmp30Result4 = tmp30(12768);
+    const obj8 = { uri: tmp30(12785), style: tmp4.image };
+    const tmp30Result4 = tmp30(12784);
     const tmp38 = metroRequire(tmp30Result4, obj8);
     cResult[23] = tmp4.image;
     cResult[24] = tmp38;
@@ -268,20 +268,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointVo
     const obj10 = { style: tmp4.title, children: items3 };
     items3 = [tmp41, ];
     const obj11 = { variant: "heading-md/extrabold", style: tmp4.titleText, children: stringResult.toLocaleUpperCase() };
-    const tmp30Result5 = tmp30(12764);
+    const tmp30Result5 = tmp30(12780);
     items3[1] = metroRequire(tmp30Result5, obj11);
     const tmp48 = metroImportDefault(View, obj10);
     let tmp46Result = !tmp26;
     if (tmp46Result) {
       const _HermesInternal = HermesInternal;
-      const obj12 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp4.number, children: metroRequire(tmp30(12770), obj13) };
+      const obj12 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp4.number, children: metroRequire(tmp30(12786), obj13) };
       obj13 = { end: roundResult };
       tmp46Result = tmp46(tmp34, obj12);
     }
-    const tmp30Result6 = tmp30(12764);
+    const tmp30Result6 = tmp30(12780);
     if (roundResult <= 0) {
       const intl5 = tmp(1128).intl;
-      stringResult1 = intl5.string(tmp30(3109).MyO0sh);
+      stringResult1 = intl5.string(tmp30(3046).MyO0sh);
     } else if (null != bound) {
       const intl4 = tmp(1128).intl;
       const obj14 = {
@@ -292,11 +292,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointVo
               return closure_1_6(CheckpointEmphasisDefault, obj, arg1);
             }
       };
-      stringResult1 = intl4.format(tmp30(3141).RqXsIs, obj14);
+      stringResult1 = intl4.format(tmp30(3078).RqXsIs, obj14);
     } else {
       const intl3 = tmp(1128).intl;
       const obj15 = { numMinutes: roundResult };
-      stringResult1 = intl3.format(tmp30(3141).Y3poDW, obj15);
+      stringResult1 = intl3.format(tmp30(3078).Y3poDW, obj15);
     }
     cResult[2] = tmp4.container;
     cResult[3] = tmp4.copy;
@@ -391,11 +391,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointVo
   }
   const intl = tmp2(1128).intl;
   if (roundResult <= 0) {
-    stringResult = intl.string(_modDef3109["OBeYX/"]);
+    stringResult = intl.string(_modDef3046["OBeYX/"]);
     tmp10 = importDefault;
   } else {
     const obj2 = { numMinutes: roundResult };
-    stringResult = intl.formatToPlainString(_modDef3109.UZbUtl, obj2);
+    stringResult = intl.formatToPlainString(_modDef3046.UZbUtl, obj2);
     tmp10 = importDefault;
   }
   let formatToPlainStringResult;
@@ -409,14 +409,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointVo
               return arg0;
             }
       };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp10(3141).RqXsIs, obj3);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp10(3078).RqXsIs, obj3);
     }
   }
   const obj4 = { style: tmp.container, children: items1 };
   const obj5 = { style: tmp.imageContainer, children: metroRequire(tmp10Result4, obj6) };
-  obj6 = { uri: tmp10(12769), style: tmp.image };
-  const tmp10Result = tmp10(12766);
-  tmp10Result4 = tmp10(12768);
+  obj6 = { uri: tmp10(12785), style: tmp.image };
+  const tmp10Result = tmp10(12782);
+  tmp10Result4 = tmp10(12784);
   items1 = [metroRequire(View, obj5), ];
   const obj8 = { style: tmp.title, children: items2 };
   items2 = [, ];
@@ -424,22 +424,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointVo
   const obj9 = { size: "xs", color: CHECKPOINT_PRIMARY };
   items2[0] = metroRequire(MicrophoneIcon.MicrophoneIcon, obj9);
   const obj10 = { variant: "heading-md/extrabold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
-  const tmp10Result5 = tmp10(12764);
+  const tmp10Result5 = tmp10(12780);
   items2[1] = metroRequire(tmp10Result5, obj10);
   items3 = [metroImportDefault(View, obj8), , ];
   let tmp13Result = !tmp6;
   if (tmp13Result) {
     const _HermesInternal = HermesInternal;
-    const obj11 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp.number, children: metroRequire(tmp10(12770), obj12) };
+    const obj11 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp.number, children: metroRequire(tmp10(12786), obj12) };
     obj12 = { end: roundResult };
     tmp13Result = tmp13(tmp16, obj11);
   }
   items3[1] = tmp13Result;
   const obj13 = { variant: "heading-lg/medium", accessibilityLabel: formatToPlainStringResult, children: stringResult1 };
-  const tmp10Result6 = tmp10(12764);
+  const tmp10Result6 = tmp10(12780);
   if (roundResult <= 0) {
     const intl5 = tmp2(1128).intl;
-    stringResult1 = intl5.string(tmp10(3109).MyO0sh);
+    stringResult1 = intl5.string(tmp10(3046).MyO0sh);
   } else if (null != bound) {
     const intl4 = tmp2(1128).intl;
     const obj14 = {
@@ -450,11 +450,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointVo
           return closure_1_6(CheckpointEmphasisDefault, obj, arg1);
         }
     };
-    stringResult1 = intl4.format(tmp10(3141).RqXsIs, obj14);
+    stringResult1 = intl4.format(tmp10(3078).RqXsIs, obj14);
   } else {
     const intl3 = tmp2(1128).intl;
     const obj15 = { numMinutes: roundResult };
-    stringResult1 = intl3.format(tmp10(3141).Y3poDW, obj15);
+    stringResult1 = intl3.format(tmp10(3078).Y3poDW, obj15);
   }
   const obj16 = { children: metroImportDefault(View, obj4) };
   items3[2] = metroRequire(tmp10Result6, obj13);

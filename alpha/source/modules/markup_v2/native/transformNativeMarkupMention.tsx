@@ -1,15 +1,15 @@
-// Module ID: 8429
-// Function ID: 8430
+// Module ID: 8445
+// Function ID: 8446
 // Name: transformNativeMarkupMention
-// Dependencies: [8430, 5502, 5500, 5512, 8511, 2]
+// Dependencies: [8446, 5937, 5935, 5947, 8527, 2]
 // Exports: applyChannelMentionIcons, transformNativeMention
 
-// Module 8429 (transformNativeMarkupMention)
-import MarkupTypes from "MarkupTypes" /* 5500 */;
-import MarkupRules from "MarkupRules" /* 5502 */;
-import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5512 */;
-import PlatformMarkupRules from "PlatformMarkupRules" /* 8430 */;
-import StaticMentionRoutes from "StaticMentionRoutes" /* 8511 */;
+// Module 8445 (transformNativeMarkupMention)
+import MarkupTypes from "MarkupTypes" /* 5935 */;
+import MarkupRules from "MarkupRules" /* 5937 */;
+import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 5947 */;
+import PlatformMarkupRules from "PlatformMarkupRules" /* 8446 */;
+import StaticMentionRoutes from "StaticMentionRoutes" /* 8527 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupMention.tsx");
@@ -37,10 +37,10 @@ export const transformNativeMention = function transformNativeMention(value, all
     return hydrateUserMention(obj5, allowGameMentions);
   } else if ("everyone" === type) {
     const obj15 = MarkupRules;
-    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "application", everyoneOrHere: "r" }, allowGameMentions);
+    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "applicationId", everyoneOrHere: -146735102 }, allowGameMentions);
   } else if ("here" === type) {
     const obj14 = MarkupRules;
-    return obj14.hydrateUserMention({ fullMatch: "@here", id: "application", everyoneOrHere: "r" }, allowGameMentions);
+    return obj14.hydrateUserMention({ fullMatch: "@here", id: "applicationId", everyoneOrHere: -868155390 }, allowGameMentions);
   } else if ("role" === type) {
     const obj13 = MarkupRules;
     const str8 = value.value;

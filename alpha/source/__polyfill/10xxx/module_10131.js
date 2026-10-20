@@ -1,12 +1,13 @@
 // Module ID: 10131
 // Function ID: 10132
-// Dependencies: [41, 42, 93, 95, 98, 10126]
+// Dependencies: [41, 42, 93, 95, 98, 10132, 10136, 10140]
 
 // Module 10131
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10126 */;
+import _mod10132 from "module_10132" /* 10132 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10140 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,44 +26,61 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("([0-9]|0[1-9]|1[012])/([0-9]{4})", "i");
-class ENSlashMonthFormatParser {
-  constructor() {
+const regExp = new RegExp("(?:(?:within|in|for)\\s*)?(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(" + _mod10132.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+const regExp1 = new RegExp("(?:within|in|for)\\s*(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(" + _mod10132.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+const regExp2 = new RegExp("(?:within|in|for)\\s*(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(" + _mod10132.TIME_UNITS_NO_ABBR_PATTERN + ")(?=\\W|$)", "i");
+class ENTimeUnitWithinFormatParser {
+  constructor(strictMode) {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENSlashMonthFormatParser);
-    const obj = _getPrototypeOf(ENSlashMonthFormatParser);
+    _classCallCheck(this, ENTimeUnitWithinFormatParser);
+    const obj = _getPrototypeOf(ENTimeUnitWithinFormatParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, undefined);
     }
-    return tmp3(self, constructResult);
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = strictMode;
+    return tmp3Result;
   }
 }
-_inherits(ENSlashMonthFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  value: function innerPattern(option) {
+    let tmp2;
+    if (this.strictMode) {
+      tmp2 = regExp2;
+    } else {
+      tmp2 = option.option.forwardDate ? regExp : regExp1;
+    }
+    return tmp2;
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingComponents, arg1) {
-      const parsed = parseInt(arg1[2]);
-      const parsed1 = parseInt(arg1[1]);
-      const parsingComponents = createParsingComponents.createParsingComponents();
-      const implyResult = parsingComponents.imply("day", 1);
-      const obj = implyResult.assign("month", parsed1);
-      return obj.assign("year", parsed);
+    value: function innerExtract(reference, arg1) {
+      const str = arg1[0];
+      if (str.match(/^for\s*the\s*\w+/)) {
+        return null;
+      } else {
+        const parseDurationResult = _mod10132.parseDuration(arg1[1]);
+        let relativeFromReference = null;
+        const tmp = require;
+        if (parseDurationResult) {
+          const ParsingComponents = tmp(10136).ParsingComponents;
+          relativeFromReference = ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+        }
+        return relativeFromReference;
+      }
     }
   }
 ];
 
-export default _createClass(ENSlashMonthFormatParser, items);
+export default _createClass(ENTimeUnitWithinFormatParser, items);

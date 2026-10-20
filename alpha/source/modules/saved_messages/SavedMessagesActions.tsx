@@ -1,14 +1,14 @@
-// Module ID: 13592
-// Function ID: 13593
+// Module ID: 13626
+// Function ID: 13627
 // Name: SavedMessagesActions
-// Dependencies: [5, 9980, 1087, 1297, 9981, 584, 2]
+// Dependencies: [5, 9994, 1087, 1297, 9995, 584, 2]
 // Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, fetchBookmarks, upsertSavedMessage
 
-// Module 13592 (SavedMessagesActions)
+// Module 13626 (SavedMessagesActions)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 9980 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 9994 */;
 import size from "module_2" /* 2 */;
 
 let bookmarksFetchState, c3, c4, c8, results;
@@ -304,7 +304,7 @@ obj = function _fetchBookmarks() {
       obj6 = {};
     }
     flag = obj6.loadMore ?? false;
-    return "Reflect";
+    return "test";
   });
   return obj(...arguments);
 };

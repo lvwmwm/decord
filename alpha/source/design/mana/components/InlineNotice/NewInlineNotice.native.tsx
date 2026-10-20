@@ -1,21 +1,21 @@
-// Module ID: 7837
-// Function ID: 7838
+// Module ID: 7900
+// Function ID: 7901
 // Name: NewInlineNotice
-// Dependencies: [19, 17, 21, 6567, 587, 2145, 7838, 5145, 7144, 5188, 5191, 558, 576, 5486, 1128, 4917, 1385, 4923, 5187, 5479, 7840, 6485, 2]
+// Dependencies: [19, 17, 21, 6960, 587, 2082, 7901, 5648, 7213, 5196, 4945, 558, 576, 5214, 1128, 5003, 1385, 4954, 5195, 5205, 7903, 6879, 2]
 
-// Module 7837 (NewInlineNotice)
+// Module 7900 (NewInlineNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
-import _modDef2145 from "module_2145" /* 2145 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5145 */;
-import TextVariants from "TextVariants" /* 5188 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6567 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7144 */;
-import WarningIcon from "WarningIcon" /* 7838 */;
+import _modDef2082 from "module_2082" /* 2082 */;
+import TextVariants from "TextVariants" /* 5196 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5648 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6960 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7213 */;
+import WarningIcon from "WarningIcon" /* 7901 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,14 +26,14 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const AccessibilityAnnouncer2 = tmp(4923);
+const AccessibilityAnnouncer2 = tmp(4954);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { critical: obj2, warning: obj3, info: obj4, positive: obj5 };
-obj2 = { Icon: CircleErrorIcon.CircleErrorIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, background: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, border: nativeDefault.colors.INLINENOTICE_BORDER_CRITICAL, typeLabel: _modDef2145.uKMqrF };
-obj3 = { Icon: WarningIcon.WarningIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, background: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, border: nativeDefault.colors.INLINENOTICE_BORDER_WARNING, typeLabel: _modDef2145["7vL/d/"] };
-obj4 = { Icon: CircleInformationIcon.CircleInformationIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_INFO, background: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, border: nativeDefault.colors.INLINENOTICE_BORDER_INFO, typeLabel: _modDef2145.BReS7U };
-obj5 = { Icon: CircleCheckIcon.CircleCheckIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE, background: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE, border: nativeDefault.colors.INLINENOTICE_BORDER_POSITIVE, typeLabel: _modDef2145["1MXXPf"] };
+obj2 = { Icon: CircleErrorIcon.CircleErrorIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, background: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, border: nativeDefault.colors.INLINENOTICE_BORDER_CRITICAL, typeLabel: _modDef2082.uKMqrF };
+obj3 = { Icon: WarningIcon.WarningIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, background: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, border: nativeDefault.colors.INLINENOTICE_BORDER_WARNING, typeLabel: _modDef2082["7vL/d/"] };
+obj4 = { Icon: CircleInformationIcon.CircleInformationIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_INFO, background: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, border: nativeDefault.colors.INLINENOTICE_BORDER_INFO, typeLabel: _modDef2082.BReS7U };
+obj5 = { Icon: CircleCheckIcon.CircleCheckIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE, background: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE, border: nativeDefault.colors.INLINENOTICE_BORDER_POSITIVE, typeLabel: _modDef2082["1MXXPf"] };
 const TextVariantsFlat = TextVariants.TextVariantsFlat;
 let found = TextVariantsFlat.find((name) => "experimental/body-sm/normal" === name.name);
 let lineHeight;

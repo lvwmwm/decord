@@ -1,9 +1,9 @@
-// Module ID: 18210
-// Function ID: 18211
+// Module ID: 18239
+// Function ID: 18240
 // Name: SoundboardStyleConstants
 // Dependencies: [2]
 
-// Module 18210 (SoundboardStyleConstants)
+// Module 18239 (SoundboardStyleConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/soundboard/native/SoundboardStyleConstants.tsx");

@@ -1,21 +1,21 @@
-// Module ID: 17242
-// Function ID: 17243
+// Module ID: 17271
+// Function ID: 17272
 // Name: FavoritesGuildCategorySettingsModal
-// Dependencies: [32, 19, 17, 2071, 2081, 21, 5191, 587, 558, 576, 1505, 504, 2093, 10624, 9599, 1128, 5399, 1202, 6563, 5148, 6542, 6457, 5477, 9932, 9933, 2]
+// Dependencies: [32, 19, 17, 4803, 4813, 21, 4945, 587, 558, 576, 1505, 504, 4825, 10638, 9614, 1128, 5863, 1202, 6956, 5651, 6935, 6851, 5932, 9946, 9947, 2]
 
-// Module 17242 (FavoritesGuildCategorySettingsModal)
+// Module 17271 (FavoritesGuildCategorySettingsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import FavoritesConstants from "FavoritesConstants" /* 2081 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10624 */;
+import FavoritesConstants from "FavoritesConstants" /* 4813 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5863 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10638 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FavoriteStore_mod from "FavoriteStore" /* 2071 */;
+import FavoriteStore_mod from "FavoriteStore" /* 4803 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -333,7 +333,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
   const cResult = obj.c(4);
   categoryId = categoryId.categoryId;
   const tmp4 = onGoBack;
-  onGoBack = onGoBack(9932)().onGoBack;
+  onGoBack = onGoBack(9946)().onGoBack;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
     const stringResult = intl.string(categoryId(1128).t["/uELTj"]);
@@ -357,7 +357,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
       return metroImportAll(closure_11, obj);
     }
   };
-  const tmp8 = closure_8(tmp4(9933), obj2);
+  const tmp8 = closure_8(tmp4(9947), obj2);
   cResult[1] = categoryId;
   cResult[2] = onGoBack;
   cResult[3] = tmp8;
@@ -366,7 +366,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
   let intl;
   categoryId = categoryId.categoryId;
   let onGoBack;
-  onGoBack = onGoBack(9932)().onGoBack;
+  onGoBack = onGoBack(9946)().onGoBack;
   let obj = {
     screenKey: "favoritesGuildCategorySettings",
     title: intl.string(categoryId(1128).t["/uELTj"]),
@@ -375,7 +375,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
       return metroImportAll(closure_11, obj);
     }
   };
-  const tmp = onGoBack(9933);
+  const tmp = onGoBack(9947);
   intl = categoryId(1128).intl;
   return closure_8(tmp, obj);
 });

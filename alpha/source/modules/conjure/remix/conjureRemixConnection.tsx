@@ -1,13 +1,13 @@
-// Module ID: 11068
-// Function ID: 11069
+// Module ID: 11082
+// Function ID: 11083
 // Name: conjureRemixConnection
-// Dependencies: [32, 5, 584, 11004, 10998, 2]
+// Dependencies: [32, 5, 584, 11016, 11010, 2]
 // Exports: acceptRemix, sendRetryRemix
 
-// Module 11068 (conjureRemixConnection)
+// Module 11082 (conjureRemixConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10998 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11004 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 11010 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11016 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

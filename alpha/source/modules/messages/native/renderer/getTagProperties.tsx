@@ -1,15 +1,15 @@
-// Module ID: 8332
-// Function ID: 8333
+// Module ID: 8348
+// Function ID: 8349
 // Name: getTagProperties
-// Dependencies: [17, 5185, 8333, 1128, 8335, 8337, 2]
+// Dependencies: [17, 4950, 8349, 1128, 8351, 8353, 2]
 // Exports: default
 
-// Module 8332 (getTagProperties)
+// Module 8348 (getTagProperties)
 import react_native from "react-native" /* 17 */;
 import intl7 from "intl" /* 1128 */;
-import MessageConstants from "MessageConstants" /* 5185 */;
-import PublicGuildsUtils from "PublicGuildsUtils" /* 8333 */;
-import isCrosspostDefault from "isCrosspost" /* 8335 */;
+import MessageConstants from "MessageConstants" /* 4950 */;
+import PublicGuildsUtils from "PublicGuildsUtils" /* 8349 */;
+import isCrosspostDefault from "isCrosspost" /* 8351 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -49,7 +49,7 @@ export default function getTagProperties(arg0) {
           let uri;
           const stringResult1 = intl.string(intl7.t["9RNkeF"]);
           if (isVerifiedBotResult) {
-            uri = Image.resolveAssetSource(tmp4(8337)).uri;
+            uri = Image.resolveAssetSource(tmp4(8353)).uri;
           }
           flag = isVerifiedBotResult;
           stringResult = stringResult1;
@@ -97,7 +97,7 @@ export default function getTagProperties(arg0) {
       const intl6 = tmp2(1128).intl;
       stringResult3 = intl6.string(tmp2(1128).t.fyE8sH);
     }
-    const obj2 = { tagText: stringResult, tagAccessibilityLabel: tmp12, tagVerified: flag, tagTextColor: "Boolean", tagBackgroundColor: "backgroundColor", tagType: SYSTEM_DM_TAG_SYSTEM_TYPE, tagIconUrl: tmp5, opTagText: stringResult3, opTagTextColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000467202498948176, opTagBackgroundColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000481595432796328 };
+    const obj2 = { tagText: stringResult, tagAccessibilityLabel: tmp12, tagVerified: flag, tagTextColor: "Boolean", tagBackgroundColor: "enabled", tagType: SYSTEM_DM_TAG_SYSTEM_TYPE, tagIconUrl: tmp5, opTagText: stringResult3, opTagTextColor: false, opTagBackgroundColor: false };
     ({ opTagTextColor: obj3.opTagTextColor, opTagBackgroundColor: obj3.opTagBackgroundColor } = colors);
     return obj2;
   }

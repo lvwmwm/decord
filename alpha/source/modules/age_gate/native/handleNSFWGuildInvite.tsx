@@ -1,19 +1,19 @@
-// Module ID: 9918
-// Function ID: 9919
+// Module ID: 9932
+// Function ID: 9933
 // Name: handleNSFWGuildInvite
-// Dependencies: [2086, 2090, 1087, 6183, 1384, 9919, 6177, 6184, 9920, 2]
+// Dependencies: [4818, 4822, 1087, 6613, 1384, 9933, 5605, 6614, 9934, 2]
 // Exports: handleNSFWGuildInvite, isNSFWInvite
 
-// Module 9918 (handleNSFWGuildInvite)
+// Module 9932 (handleNSFWGuildInvite)
 import Constants from "Constants" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import GuildRecord from "GuildRecord" /* 2086 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 6177 */;
-import TinyBroncoConstants from "TinyBroncoConstants" /* 6183 */;
-import TinyBroncoExperiment from "TinyBroncoExperiment" /* 6184 */;
-import NsfwGateGuildAlert from "NsfwGateGuildAlert" /* 9919 */;
-import NsfwServerInviteWarningAlert from "NsfwServerInviteWarningAlert" /* 9920 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import GuildRecord from "GuildRecord" /* 4818 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5605 */;
+import TinyBroncoConstants from "TinyBroncoConstants" /* 6613 */;
+import TinyBroncoExperiment from "TinyBroncoExperiment" /* 6614 */;
+import NsfwGateGuildAlert from "NsfwGateGuildAlert" /* 9933 */;
+import NsfwServerInviteWarningAlert from "NsfwServerInviteWarningAlert" /* 9934 */;
+import GuildStore from "GuildStore" /* 4822 */;
 import size from "module_2" /* 2 */;
 
 const isGuildLurker = GuildRecord.isGuildLurker;

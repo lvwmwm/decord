@@ -1,45 +1,93 @@
 // Module ID: 8128
 // Function ID: 8129
-// Dependencies: [8129]
+// Dependencies: [8129, 8133]
 
 // Module 8128
-import _modDef8129 from "module_8129" /* 8129 */;
+import detectFile2 from "detectFile" /* 8129 */;
+import validateFileType2 from "validateFileType" /* 8133 */;
 
+let hasOwnProperty;
 
-export default {
-  decode(arg0, buffer) {
-    function decodeAsciiValue(arg0) {
-      try {
-        const _decodeURIComponent = decodeURIComponent;
-        const _escape = escape;
-        return decodeURIComponent(escape(arg0));
-      } catch (err) {
-        return arg0;
-      }
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
     }
-    const obj = _modDef8129;
-    const value = obj.get();
-    if (undefined !== value) {
-      if (undefined !== arg0) {
-        try {
-          const self = this;
-          const self2 = this;
-          const value1 = new value(arg0);
-          const _DataView = DataView;
-          const decode = value1.decode;
-          if (buffer instanceof DataView) {
-            buffer = buffer.buffer;
-          } else {
-            const _Uint8Array = Uint8Array;
-            buffer = Uint8Array.from(buffer);
-          }
-          return decode(buffer);
-        } catch (err) {
-        }
-      }
+    closure_0 = __esModule;
+    closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
     }
-    const mapped = buffer.map((item) => String.fromCharCode(item));
-    return decodeAsciiValue(mapped.join(""));
-  },
-  TAG_HEADER_SIZE: 5
-};
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_0 = tmp;
+let tmp3 = self && self.__setModuleDefault;
+if (!tmp3) {
+  let tmp4 = globalThis;
+  const _Object2 = Object;
+  tmp3 = Object.create ? ((arg0, value) => {
+    const obj = { enumerable: true, value };
+    Object.defineProperty(arg0, "default", obj);
+  }) : ((arg0, arg1) => {
+    arg0.default = arg1;
+  });
+}
+let closure_1 = tmp3;
+let tmp5 = self && self.__importStar || ((__esModule) => {
+  const tmp = __esModule;
+  if (tmp) {
+    if (__esModule.__esModule) {
+      return __esModule;
+    }
+  }
+  const obj = {};
+  if (null != __esModule) {
+    for (const key10009 in __esModule) {
+      let callResult = "default" !== key10009;
+      if (callResult) {
+        let _Object = Object;
+        hasOwnProperty = Object.prototype.hasOwnProperty;
+        callResult = hasOwnProperty.call(__esModule, key10009);
+      }
+      if (!callResult) {
+        continue;
+      } else {
+        let tmp6 = closure_0(obj, __esModule, key10009);
+        continue;
+      }
+      continue;
+    }
+  }
+  closure_1(obj, __esModule);
+  return obj;
+});
+const detectFile = tmp5(detectFile2);
+const validateFileType = tmp5(validateFileType2);
+
+export default Object.assign(Object.assign({}, detectFile), validateFileType);

@@ -1,10 +1,10 @@
-// Module ID: 13901
-// Function ID: 13902
+// Module ID: 13935
+// Function ID: 13936
 // Name: IosAttributionSignRequest
 // Dependencies: [5, 1087, 1297, 1257, 2]
 // Exports: fetchIosAttributionSignedPayloads
 
-// Module 13901 (IosAttributionSignRequest)
+// Module 13935 (IosAttributionSignRequest)
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -54,7 +54,7 @@ let obj = function _fetchIosAttributionSignedPayloads() {
               ({ metadataSealed: c0, impressionId: c1, specs: c2, signal: c3 } = closure_0);
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {

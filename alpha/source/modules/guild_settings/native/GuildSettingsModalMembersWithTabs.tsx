@@ -1,26 +1,26 @@
-// Module ID: 17720
-// Function ID: 17721
+// Module ID: 17749
+// Function ID: 17750
 // Name: GuildSettingsModalMembersWithTabs
-// Dependencies: [109, 32, 19, 17, 2090, 4845, 1392, 21, 5191, 587, 558, 576, 17343, 504, 7242, 1128, 17721, 17722, 17729, 5037, 1505, 9662, 17724, 7365, 8937, 8805, 11678, 10927, 2]
+// Dependencies: [109, 32, 19, 17, 4822, 4880, 1392, 21, 4945, 587, 558, 576, 17372, 504, 7311, 1128, 17750, 17751, 17758, 4974, 1505, 9676, 17753, 7431, 8953, 8821, 11699, 10939, 2]
 
-// Module 17720 (GuildSettingsModalMembersWithTabs)
+// Module 17749 (GuildSettingsModalMembersWithTabs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5037 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7242 */;
-import ContextMenu2 from "ContextMenu" /* 9662 */;
-import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 17721 */;
-import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 17722 */;
-import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 17729 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4974 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7311 */;
+import ContextMenu2 from "ContextMenu" /* 9676 */;
+import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 17750 */;
+import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 17751 */;
+import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 17758 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import GuildStore from "GuildStore" /* 4822 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let closure_12;
 let obj2;
 let tmp2;
 let unpackModuleId;
-const showMembersManagementActionSheet = tmp2(17724);
+const showMembersManagementActionSheet = tmp2(17753);
 let closure_3 = ["ref"];
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;

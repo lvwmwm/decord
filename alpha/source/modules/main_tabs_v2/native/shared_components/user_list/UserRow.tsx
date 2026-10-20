@@ -1,44 +1,44 @@
-// Module ID: 10531
-// Function ID: 10532
+// Module ID: 10545
+// Function ID: 10546
 // Name: UserRow
-// Dependencies: [19, 17, 5181, 5540, 7616, 2068, 5207, 4855, 10520, 1087, 21, 1385, 5191, 587, 7290, 38, 10532, 10533, 4903, 10534, 7293, 7617, 558, 576, 504, 1202, 5187, 5057, 10538, 7130, 6330, 1128, 10560, 10561, 6473, 5479, 2035, 9621, 8471, 8577, 2002, 8616, 10563, 9709, 5508, 8247, 5884, 9126, 10565, 9039, 10573, 9130, 10574, 6454, 10590, 6457, 2]
+// Dependencies: [19, 17, 4946, 2046, 7679, 4800, 5674, 4890, 10534, 1087, 21, 1385, 4945, 587, 7357, 38, 10546, 10547, 5624, 10548, 7360, 7680, 558, 576, 504, 1202, 5195, 4994, 10552, 7199, 6730, 1128, 10574, 10575, 6867, 5205, 2035, 9635, 8487, 8593, 2002, 8632, 10577, 9723, 5943, 8263, 6321, 9142, 10579, 9055, 10587, 9146, 10588, 6848, 10604, 6851, 2]
 
-// Module 10531 (UserRow)
+// Module 10545 (UserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import intl14 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
 import utils_StringUtils from "utils/StringUtils" /* 2035 */;
-import ToastUtils from "ToastUtils" /* 4903 */;
-import UserUtils from "UserUtils" /* 5057 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import components_Button_Button from "components/Button/Button" /* 5479 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6473 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7293 */;
-import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7617 */;
-import ChatIcon from "ChatIcon" /* 8471 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 9621 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9709 */;
-import UserRowConstants from "UserRowConstants" /* 10520 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10533 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10534 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10538 */;
-import ActionButtonDefault from "ActionButton" /* 10560 */;
-import XLargeIcon from "XLargeIcon" /* 10561 */;
-import CrownIcon2 from "CrownIcon" /* 10563 */;
+import UserUtils from "UserUtils" /* 4994 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import components_Button_Button from "components/Button/Button" /* 5205 */;
+import ToastUtils from "ToastUtils" /* 5624 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6867 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7357 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7360 */;
+import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7680 */;
+import ChatIcon from "ChatIcon" /* 8487 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 9635 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9723 */;
+import UserRowConstants from "UserRowConstants" /* 10534 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10547 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10548 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10552 */;
+import ActionButtonDefault from "ActionButton" /* 10574 */;
+import XLargeIcon from "XLargeIcon" /* 10575 */;
+import CrownIcon2 from "CrownIcon" /* 10577 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7616 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import PresenceStore from "PresenceStore" /* 5207 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import AccessibilityStore from "AccessibilityStore" /* 4946 */;
+import ApplicationStore from "ApplicationStore" /* 2046 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7679 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import PresenceStore from "PresenceStore" /* 5674 */;
+import RelationshipStore from "RelationshipStore" /* 4890 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1385 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -176,7 +176,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRo
           }
           if (cResult[13] !== stateFromStores.name) {
             const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-subtle", children: stateFromStores.name };
-            const tmp26 = closure_14(applicationId(5187).Text, obj5);
+            const tmp26 = closure_14(applicationId(5195).Text, obj5);
             cResult[13] = stateFromStores.name;
             cResult[14] = tmp26;
             tmp24 = tmp26;
@@ -212,7 +212,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRo
   } else {
     let tmp13;
     if (cResult[19] !== user) {
-      const tmpResult2 = applicationId(5057);
+      const tmpResult2 = applicationId(4994);
       const userTag = tmpResult2.getUserTag(user);
       cResult[19] = user;
       cResult[20] = userTag;
@@ -222,7 +222,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRo
     }
     if (cResult[21] !== tmp13) {
       const obj8 = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: tmp13 };
-      const tmp17 = closure_14(applicationId(5187).Text, obj8);
+      const tmp17 = closure_14(applicationId(5195).Text, obj8);
       cResult[21] = tmp13;
       cResult[22] = tmp17;
       tmp15 = tmp17;
@@ -281,7 +281,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRo
     tmp9 = tmp14Result;
   } else {
     const obj8 = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: tmp2Result.getUserTag(user) };
-    const Text = tmp2(5187).Text;
+    const Text = tmp2(5195).Text;
     tmp2Result = UserUtils;
     tmp9 = closure_14(Text, obj8);
   }
@@ -768,7 +768,7 @@ const memoResult = react.memo(function UserRow(type) {
     let localUser;
     let sourceAnalyticsLocations;
     if (null == onLongPress) {
-      const promise = asyncRequire(8577, dependencyMap.paths);
+      const promise = asyncRequire(8593, dependencyMap.paths);
       promise.then((result) => {
         obj = { userId: localUser.id, localUser, sourceAnalyticsLocations };
         return result.default(obj);

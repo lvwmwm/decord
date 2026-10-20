@@ -1,42 +1,42 @@
-// Module ID: 11713
-// Function ID: 11714
+// Module ID: 11734
+// Function ID: 11735
 // Name: ConjureNativePreview
-// Dependencies: [32, 19, 17, 6295, 502, 2068, 6291, 2001, 11687, 6293, 1087, 6296, 21, 5191, 587, 558, 576, 5187, 6459, 11032, 11041, 11714, 11037, 504, 11716, 11017, 11042, 6942, 11717, 11718, 11719, 11724, 11725, 11727, 1128, 3883, 5479, 7591, 11735, 6357, 7290, 7077, 10671, 1384, 11847, 2]
+// Dependencies: [32, 19, 17, 6723, 502, 4800, 6719, 2001, 11708, 6721, 1087, 6724, 21, 4945, 587, 558, 576, 5195, 6853, 11019, 11056, 11735, 11052, 504, 11737, 11033, 11057, 5554, 11738, 11739, 11740, 11744, 11746, 11748, 1128, 3820, 5205, 7654, 11756, 6757, 7357, 7154, 10684, 1384, 11868, 2]
 // Exports: leaveConjurePreviewFrame
 
-// Module 11713 (ConjureNativePreview)
+// Module 11734 (ConjureNativePreview)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1128 */;
-import _modDef3883 from "module_3883" /* 3883 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import components_Button_Button from "components/Button/Button" /* 5479 */;
-import FramesConstants from "FramesConstants" /* 6296 */;
-import Card_Card from "Card/Card" /* 6459 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7077 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7591 */;
-import ConjurePlatformUtils from "ConjurePlatformUtils" /* 11017 */;
-import conjurePreviewSurface2 from "conjurePreviewSurface" /* 11032 */;
-import leaveFrame from "leaveFrame" /* 11041 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 11042 */;
-import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 11714 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11717 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 11735 */;
+import _modDef3820 from "module_3820" /* 3820 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import components_Button_Button from "components/Button/Button" /* 5205 */;
+import FramesConstants from "FramesConstants" /* 6724 */;
+import Card_Card from "Card/Card" /* 6853 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7154 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7357 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7654 */;
+import conjurePreviewSurface2 from "conjurePreviewSurface" /* 11019 */;
+import ConjurePlatformUtils from "ConjurePlatformUtils" /* 11033 */;
+import leaveFrame from "leaveFrame" /* 11056 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 11057 */;
+import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 11735 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11738 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 11756 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FramesStore_mod from "FramesStore" /* 6295 */;
+import FramesStore_mod from "FramesStore" /* 6723 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import ReadStateStore from "ReadStateStore" /* 6291 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import ReadStateStore from "ReadStateStore" /* 6719 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11687 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11708 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6721 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -156,7 +156,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Status
     let tmp8 = null;
     if (null != body) {
       const obj6 = { variant: "text-sm/normal", color: "text-muted", style: tmp4.cardText, children: body };
-      tmp8 = authStore6(tmp(5187).Text, obj6);
+      tmp8 = authStore6(tmp(5195).Text, obj6);
     }
     cResult[3] = body;
     cResult[4] = tmp4.cardText;
@@ -651,7 +651,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     const self = this;
     const self2 = this;
     const obj2 = { applicationId };
-    const applicationWidget = new tmp(7591).ApplicationWidget(obj2);
+    const applicationWidget = new tmp(7654).ApplicationWidget(obj2);
     cResult[2] = applicationId;
     cResult[3] = applicationWidget;
     tmp9 = applicationWidget;
@@ -662,7 +662,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     let tmp21;
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { title: intl.string(_modDef3883["08U+YO"]), body: intl2.string(_modDef3883.pKBfrc) };
+      const obj3 = { title: intl.string(_modDef3820["08U+YO"]), body: intl2.string(_modDef3820.pKBfrc) };
       intl = tmp(1128).intl;
       intl2 = tmp(1128).intl;
       const tmp25 = authStore6(closure_25, obj3);
@@ -712,7 +712,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   [][0] = applicationId;
   const stateFromStores = obj.useStateFromStores(items, () => id.getId());
   if (revoked) {
-    const obj2 = { title: intl.string(_modDef3883["08U+YO"]), body: intl2.string(_modDef3883.pKBfrc) };
+    const obj2 = { title: intl.string(_modDef3820["08U+YO"]), body: intl2.string(_modDef3820.pKBfrc) };
     intl = tmp2(1128).intl;
     intl2 = tmp2(1128).intl;
     tmp6Result = tmp6(closure_25, obj2);
@@ -739,7 +739,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   const cResult = obj.c(43);
   previewApplicationId = previewApplicationId.previewApplicationId;
   const tmp4 = closure_24();
-  let obj2 = id(6357);
+  let obj2 = id(6757);
   const application = obj2.useApplication(previewApplicationId);
   const data = application.data;
   id = undefined;
@@ -1032,7 +1032,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   let tmp = closure_24();
   let tmp2 = id;
   let tmp3 = dependencyMap;
-  let obj = id(6357);
+  let obj = id(6757);
   const application = obj.useApplication(previewApplicationId);
   const data = application.data;
   id = undefined;
@@ -1141,14 +1141,14 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     if (null != id) {
       return tmp19Result2;
     }
-    let obj2 = { title: intl.string(stateFromStores(3883)["VP/O8s"]), body: intl2.string(stateFromStores(3883).Sl9ITD), children: tmp19Result };
+    let obj2 = { title: intl.string(stateFromStores(3820)["VP/O8s"]), body: intl2.string(stateFromStores(3820).Sl9ITD), children: tmp19Result };
     intl = tmp2(1128).intl;
     intl2 = tmp2(1128).intl;
     tmp19Result = null;
     const tmp20 = closure_25;
     if (null != id && tmp8[0] === id) {
       const obj4 = { variant: "secondary", size: "sm", text: intl3.string(tmp2(1128).t["5911Lb"]), onPress: callback };
-      const Button = tmp2(5479).Button;
+      const Button = tmp2(5205).Button;
       intl3 = tmp2(1128).intl;
       tmp19Result = tmp19(Button, obj4);
     }
@@ -1160,14 +1160,14 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   } else {
     const obj6 = { style: tmp.dm, children: items8 };
     const obj7 = { guildId, channelId: stateFromStores.id, chatInputRef: ref, screenIndex: "conjure-preview", alwaysRespectKeyboard: true, disableGradient: true };
-    items8 = [closure_22(stateFromStores(10671), obj7, stateFromStores.id), ];
+    items8 = [closure_22(stateFromStores(10684), obj7, stateFromStores.id), ];
     let tmp31Result = null;
     const tmp29 = closure_23;
     const tmp2Result6 = tmp2(1384);
     const tmp30 = stateFromStores2;
     const tmp31 = closure_22;
     if (tmp2Result6.isAndroid()) {
-      tmp31Result = tmp31(tmp2(11847).PortalKeyboardRenderer, { portal: true });
+      tmp31Result = tmp31(tmp2(11868).PortalKeyboardRenderer, { portal: true });
     }
     items8[1] = tmp31Result;
     tmp29Result = tmp29(tmp30, obj6);
@@ -1204,7 +1204,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
     const centered = tmp4.centered;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const intl8 = tmp(1128).intl;
-      const stringResult = intl8.string(_modDef3883.FH2Udn);
+      const stringResult = intl8.string(_modDef3820.FH2Udn);
       cResult[0] = stringResult;
       first = stringResult;
     } else {
@@ -1243,9 +1243,9 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
     const _Symbol2 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const intl5 = tmp(1128).intl;
-      const stringResult1 = intl5.string(_modDef3883.xu1I8B);
+      const stringResult1 = intl5.string(_modDef3820.xu1I8B);
       const intl6 = tmp(1128).intl;
-      const stringResult2 = intl6.string(_modDef3883["8qJtGr"]);
+      const stringResult2 = intl6.string(_modDef3820["8qJtGr"]);
       cResult[7] = stringResult1;
       cResult[8] = stringResult2;
       tmp28 = stringResult2;
@@ -1257,7 +1257,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
     const _Symbol3 = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
       const intl7 = tmp(1128).intl;
-      const stringResult3 = intl7.string(_modDef3883["Nub/J6"]);
+      const stringResult3 = intl7.string(_modDef3820["Nub/J6"]);
       cResult[9] = stringResult3;
       tmp32 = stringResult3;
     } else {
@@ -1297,7 +1297,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
       const obj6 = { applicationId: previewApplicationId, projectId, frameSurface, launch: frameLaunchParams, visible: true };
       tmp21Result = tmp21(closure_28, obj6);
     } else {
-      const obj7 = { title: intl3.string(_modDef3883["7k4GyN"]), body: intl4.string(_modDef3883.zdIy3R) };
+      const obj7 = { title: intl3.string(_modDef3820["7k4GyN"]), body: intl4.string(_modDef3820.zdIy3R) };
       intl3 = tmp(1128).intl;
       intl4 = tmp(1128).intl;
       tmp21Result = tmp21(closure_25, obj7);
@@ -1344,7 +1344,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
     let tmp7;
     const _Symbol = Symbol;
     if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj20 = { title: intl.string(_modDef3883["7k4GyN"]), body: intl2.string(_modDef3883.zdIy3R) };
+      const obj20 = { title: intl.string(_modDef3820["7k4GyN"]), body: intl2.string(_modDef3820.zdIy3R) };
       intl = tmp(1128).intl;
       intl2 = tmp(1128).intl;
       const tmp11 = authStore6(closure_25, obj20);
@@ -1386,16 +1386,16 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
   }
   if (true === previewBotMissing) {
     const obj2 = { style: tmp.centered, children: authStore6(Button2, obj3) };
-    obj3 = { variant: "primary", size: "sm", text: intl8.string(_modDef3883.FH2Udn), onPress: null, loading: null };
+    obj3 = { variant: "primary", size: "sm", text: intl8.string(_modDef3820.FH2Udn), onPress: null, loading: null };
     Button2 = components_Button_Button.Button;
     intl8 = intl9.intl;
     ({ onReviewPermissions: obj9.onPress, loading: obj9.loading } = permissionsGate);
     return authStore6(metroImportDefault, obj2);
   } else if (null != permissionsGate) {
-    const obj4 = { title: intl5.string(_modDef3883.xu1I8B), body: intl6.string(_modDef3883["8qJtGr"]), children: authStore6(Button, obj5) };
+    const obj4 = { title: intl5.string(_modDef3820.xu1I8B), body: intl6.string(_modDef3820["8qJtGr"]), children: authStore6(Button, obj5) };
     intl5 = intl9.intl;
     intl6 = intl9.intl;
-    obj5 = { variant: "primary", size: "sm", text: intl7.string(_modDef3883["Nub/J6"]), onPress: null, loading: null };
+    obj5 = { variant: "primary", size: "sm", text: intl7.string(_modDef3820["Nub/J6"]), onPress: null, loading: null };
     Button = components_Button_Button.Button;
     intl7 = intl9.intl;
     ({ onReviewPermissions: obj7.onPress, loading: obj7.loading } = permissionsGate);
@@ -1406,7 +1406,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
       const obj6 = { applicationId: previewApplicationId, projectId, frameSurface, launch: frameLaunchParams, visible: true };
       tmp13Result = tmp13(closure_28, obj6);
     } else {
-      const obj8 = { title: intl3.string(_modDef3883["7k4GyN"]), body: intl4.string(_modDef3883.zdIy3R) };
+      const obj8 = { title: intl3.string(_modDef3820["7k4GyN"]), body: intl4.string(_modDef3820.zdIy3R) };
       intl3 = intl9.intl;
       intl4 = intl9.intl;
       tmp13Result = tmp13(closure_25, obj8);
@@ -1425,7 +1425,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNati
   } else if ("overlay" === mode) {
     return null;
   } else if (null === mode) {
-    const obj = { title: intl.string(_modDef3883["7k4GyN"]), body: intl2.string(_modDef3883.zdIy3R) };
+    const obj = { title: intl.string(_modDef3820["7k4GyN"]), body: intl2.string(_modDef3820.zdIy3R) };
     intl = intl9.intl;
     intl2 = intl9.intl;
     return authStore6(closure_25, obj);

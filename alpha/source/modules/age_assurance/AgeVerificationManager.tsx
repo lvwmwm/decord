@@ -1,24 +1,24 @@
-// Module ID: 18442
-// Function ID: 18443
+// Module ID: 18471
+// Function ID: 18472
 // Name: AgeVerificationManager
-// Dependencies: [2068, 5532, 2119, 1392, 1087, 7295, 3, 1109, 12660, 7983, 7445, 7280, 7085, 2000, 6177, 6176, 6008, 2]
+// Dependencies: [4800, 5965, 4851, 1392, 1087, 7362, 3, 1109, 12680, 8046, 7512, 7347, 7162, 2000, 5605, 6607, 6445, 2]
 
-// Module 18442 (AgeVerificationManager)
+// Module 18471 (AgeVerificationManager)
 import LoggerDefault from "Logger" /* 3 */;
 import MessageEmbedTypes from "MessageEmbedTypes" /* 1109 */;
 import UserStore2 from "UserStore" /* 1392 */;
 import Server from "Server" /* 2000 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 6008 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6176 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 6177 */;
-import Constants2 from "Constants" /* 7295 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 7983 */;
-import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 12660 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import MessageStore from "MessageStore" /* 5532 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5605 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 6445 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6607 */;
+import Constants2 from "Constants" /* 7362 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8046 */;
+import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 12680 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import MessageStore from "MessageStore" /* 5965 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
 import Constants from "Constants" /* 1087 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7162 */;
 import size from "module_2" /* 2 */;
 
 const UserStore = UserStore2;

@@ -1,25 +1,25 @@
-// Module ID: 8901
-// Function ID: 8902
+// Module ID: 8917
+// Function ID: 8918
 // Name: TagListInputTag
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1128, 8902, 5187, 6462, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 1128, 8918, 5195, 6856, 2]
 
-// Module 8901 (TagListInputTag)
+// Module 8917 (TagListInputTag)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Pressables from "Pressables" /* 6462 */;
-import useAccessibilityPressDefault from "useAccessibilityPress" /* 8902 */;
+import Pressables from "Pressables" /* 6856 */;
+import useAccessibilityPressDefault from "useAccessibilityPress" /* 8918 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp2;
-const Text_Text = tmp2(5187);
+const Text_Text = tmp2(5195);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles(() => {
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagListInput
   let start;
   let str;
   let tag;
-  const f100454 = () => closure_1_0("remove");
+  const f100889 = () => closure_1_0("remove");
   ({ tag, selected, onPress: closure_129_0, start } = end);
   if (start === undefined) {
     start = false;
@@ -129,10 +129,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TagListInput
   const intl = intl2.intl;
   const obj = { text: tag.text };
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t["0Vb9FQ"], obj);
-  ({ onAccessibilityAction, accessibilityActions } = useAccessibilityPressDefault(f100454, formatToPlainStringResult));
+  ({ onAccessibilityAction, accessibilityActions } = useAccessibilityPressDefault(f100889, formatToPlainStringResult));
   const items = [tmp.tagWrapper, , , ];
   let prop;
-  useAccessibilityPressDefault(f100454, formatToPlainStringResult);
+  useAccessibilityPressDefault(f100889, formatToPlainStringResult);
   const PressableOpacity = Pressables.PressableOpacity;
   const tmp6 = hasOwnProperty;
   if (selected) {

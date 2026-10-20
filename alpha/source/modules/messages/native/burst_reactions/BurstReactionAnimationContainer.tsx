@@ -1,21 +1,21 @@
-// Module ID: 18063
-// Function ID: 18064
+// Module ID: 18092
+// Function ID: 18093
 // Name: BurstReactionAnimationContainer
-// Dependencies: [32, 19, 17, 2065, 21, 5191, 587, 8193, 558, 576, 5156, 5157, 584, 4945, 5192, 2052, 10312, 1202, 8235, 5187, 1128, 4922, 2]
+// Dependencies: [32, 19, 17, 4797, 21, 4945, 587, 4903, 558, 576, 5173, 5174, 584, 5014, 5167, 4784, 10326, 1202, 5187, 5195, 1128, 4999, 2]
 
-// Module 18063 (BurstReactionAnimationContainer)
+// Module 18092 (BurstReactionAnimationContainer)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import timing from "timing" /* 5192 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 8193 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 4903 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
+import timing from "timing" /* 5167 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const native = tmp(4922);
+const native = tmp(4999);
 let react = react_mod;
 ({ TouchableOpacity: hasOwnProperty, View: metroRequire, StyleSheet } = react_native);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -118,7 +118,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstR
     tmp12 = cResult[2];
   }
   let closure_7 = tmp12;
-  let tmpResult = tmp(4945);
+  let tmpResult = tmp(5014);
   const fn2 = function x() {
     let obj2;
     if (null == first) {
@@ -150,7 +150,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstR
     }
     return obj2;
   };
-  let obj3 = { animationData, showAnimation: first1, withTiming: tmp(5192).withTiming, runOnJS: tmp(4945).runOnJS, handleComponentFinish };
+  let obj3 = { animationData, showAnimation: first1, withTiming: tmp(5167).withTiming, runOnJS: tmp(5014).runOnJS, handleComponentFinish };
   fn2.__closure = obj3;
   fn2.__workletHash = 3096942457868;
   fn2.__initData = __initData;
@@ -160,7 +160,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstR
     let tmp15;
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      let items1 = [tmp(2052).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
+      let items1 = [tmp(4784).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
       cResult[3] = items1;
       tmp15 = items1;
     } else {
@@ -252,7 +252,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstR
           return tmp(OverlayView, obj);
         }
     };
-    const tmp19 = animatedStyle(animationData(10312), obj4);
+    const tmp19 = animatedStyle(animationData(10326), obj4);
     cResult[4] = animatedStyle;
     cResult[5] = animationData;
     cResult[6] = first1;
@@ -412,8 +412,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstR
           return tmp(OverlayView, obj);
         }
     };
-    let tmp11 = animationData(10312);
-    items = [tmp6(2052).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
+    let tmp11 = animationData(10326);
+    items = [tmp6(4784).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS];
     tmp8 = closure_8(tmp11, obj3);
   }
   return tmp8;

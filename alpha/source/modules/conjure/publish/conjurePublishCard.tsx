@@ -1,11 +1,11 @@
-// Module ID: 12128
-// Function ID: 12129
+// Module ID: 12148
+// Function ID: 12149
 // Name: conjurePublishCard
-// Dependencies: [3883, 2]
-// Exports: isConjurePublishCtaVisible, isPublishCardLive, livePublishCardMessageId, publishCardServerName, publishNoticeMessage, showsOutdatedNotice, withLivePublishCard
+// Dependencies: [3820, 2]
+// Exports: isConjurePublishCtaVisible, isPublishCardLive, livePublishCardMessageId, publishCardServerName, publishNoticeMessage, withLivePublishCard
 
-// Module 12128 (conjurePublishCard)
-import _modDef3883 from "module_3883" /* 3883 */;
+// Module 12148 (conjurePublishCard)
+import _modDef3820 from "module_3820" /* 3820 */;
 import size from "module_2" /* 2 */;
 
 const weakMap = new WeakMap();
@@ -78,19 +78,16 @@ export const livePublishCardMessageId = function livePublishCardMessageId(arg0, 
   }
   return null;
 };
-export const showsOutdatedNotice = function showsOutdatedNotice(isUpdate) {
-  return null != isUpdate && isUpdate.isUpdate && null == isUpdate.disabledReason && true !== isUpdate.publishing;
-};
 export const publishNoticeMessage = function publishNoticeMessage(notice, arg1) {
   let ev23Cw;
   if (true === notice.channel_skipped) {
-    ev23Cw = _modDef3883.ev23Cw;
+    ev23Cw = _modDef3820.ev23Cw;
   } else if (notice.update) {
-    ev23Cw = _modDef3883.gQzuLC;
+    ev23Cw = _modDef3820.gQzuLC;
   } else if (null == arg1) {
-    ev23Cw = _modDef3883.MOrR29;
+    ev23Cw = _modDef3820.MOrR29;
   } else {
-    ev23Cw = _modDef3883["/npn7F"];
+    ev23Cw = _modDef3820["/npn7F"];
   }
   return ev23Cw;
 };

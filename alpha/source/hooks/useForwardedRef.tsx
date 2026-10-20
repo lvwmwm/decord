@@ -1,10 +1,10 @@
-// Module ID: 17388
-// Function ID: 17389
+// Module ID: 17417
+// Function ID: 17418
 // Name: react
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 17388 (react)
+// Module 17417 (react)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,8 +1,8 @@
-// Module ID: 5760
-// Function ID: 5761
+// Module ID: 6192
+// Function ID: 6193
 // Dependencies: [2]
 
-// Module 5760
+// Module 6192
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/magical_frost.png.js");

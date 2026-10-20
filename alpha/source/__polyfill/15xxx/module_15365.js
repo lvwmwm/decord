@@ -1,25 +1,44 @@
 // Module ID: 15365
 // Function ID: 15366
-// Dependencies: [15331, 15352, 15366, 15376, 15377]
+// Dependencies: [15366, 15377, 15379, 15382, 15385, 15386]
 
 // Module 15365
-import _mod15331 from "module_15331" /* 15331 */;
-import _mod15352 from "module_15352" /* 15352 */;
-import f2 from "f" /* 15366 */;
-import _mod15376 from "module_15376" /* 15376 */;
+import _mod15366 from "module_15366" /* 15366 */;
 import _mod15377 from "module_15377" /* 15377 */;
+import _mod15379 from "module_15379" /* 15379 */;
+import _mod15382 from "module_15382" /* 15382 */;
+import _mod15385 from "module_15385" /* 15385 */;
+import _mod15386 from "module_15386" /* 15386 */;
 
-function ownKeys(arg0) {
-  const obj = f2;
-  const fResult = obj.f(_mod15376(arg0));
-  const f = _mod15377.f;
-  let tmp2 = fResult;
-  if (f) {
-    tmp2 = closure_2(fResult, f(arg0));
+let closure_3 = _mod15366("toPrimitive");
+
+export default function(arg0, arg1) {
+  if (_mod15377(arg0)) {
+    if (!_mod15379(arg0)) {
+      let str = arg1;
+      const tmp4 = _mod15382(arg0, closure_3);
+      if (tmp4) {
+        if (undefined === str) {
+          str = "default";
+        }
+        const tmp5 = _mod15385(tmp4, arg0, str);
+        if (_mod15377(tmp5)) {
+          if (!_mod15379(tmp5)) {
+            const self = this;
+            const self2 = this;
+            const tmp7 = new TypeError("Can't convert object to primitive value");
+            throw tmp7;
+          }
+        }
+        return tmp5;
+      } else {
+        let str2 = str;
+        if (undefined === str) {
+          str2 = "number";
+        }
+        return _mod15386(arg0, str2);
+      }
+    }
   }
-  return tmp2;
-}
-let closure_2 = _mod15331([].concat);
-_mod15352("Reflect", "ownKeys") || ownKeys;
-
-export default _mod15352("Reflect", "ownKeys") || ownKeys;
+  return arg0;
+};

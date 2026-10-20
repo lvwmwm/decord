@@ -1,12 +1,12 @@
-// Module ID: 12126
-// Function ID: 12127
+// Module ID: 12146
+// Function ID: 12147
 // Name: useConjureIncompleteAppNotice
-// Dependencies: [32, 19, 2090, 558, 576, 11692, 504, 1128, 3883, 2]
+// Dependencies: [32, 19, 4822, 558, 576, 11713, 504, 1128, 3820, 2]
 
-// Module 12126 (useConjureIncompleteAppNotice)
+// Module 12146 (useConjureIncompleteAppNotice)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import GuildStore from "GuildStore" /* 4822 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureIn
   let tmp2 = dependencyMap;
   const obj = require("react");
   const cResult = obj.c(11);
-  const tmp4 = guildId(11692)(arg0);
+  const tmp4 = guildId(11713)(arg0);
   guildId = undefined;
   if (tmp4 != null) {
     guildId = tmp4.guildId;
@@ -152,7 +152,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureIn
   _require = arg0;
   const tmp = guildId;
   let tmp2 = dependencyMap;
-  const tmp3 = guildId(11692)(arg0);
+  const tmp3 = guildId(11713)(arg0);
   guildId = undefined;
   if (tmp3 != null) {
     guildId = tmp3.guildId;
@@ -194,9 +194,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureIn
       const intl = tmp5(1128).intl;
       const format = intl.format;
       if ("channel" === missingSurface) {
-        Lm7IRC = tmp(3883)["1cm4fj"];
+        Lm7IRC = tmp(3820)["1cm4fj"];
       } else {
-        Lm7IRC = tmp(3883).Lm7IRC;
+        Lm7IRC = tmp(3820).Lm7IRC;
       }
       let str2 = stateFromStores;
       if (stateFromStores == null) {

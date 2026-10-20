@@ -1,9 +1,9 @@
-// Module ID: 17954
-// Function ID: 17955
+// Module ID: 17983
+// Function ID: 17984
 // Name: ChannelSettingsConstants
 // Dependencies: [2]
 
-// Module 17954 (ChannelSettingsConstants)
+// Module 17983 (ChannelSettingsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("components_native/channel_settings/ChannelSettingsConstants.tsx");

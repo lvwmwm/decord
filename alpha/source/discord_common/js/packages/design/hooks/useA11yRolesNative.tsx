@@ -1,10 +1,10 @@
-// Module ID: 4927
-// Function ID: 4928
+// Module ID: 5001
+// Function ID: 5002
 // Name: react-native
 // Dependencies: [17, 2]
 // Exports: useCheckboxA11yNative, useRadioA11yNative
 
-// Module 4927 (react-native)
+// Module 5001 (react-native)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

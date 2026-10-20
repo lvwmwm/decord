@@ -1,19 +1,19 @@
-// Module ID: 6948
-// Function ID: 6949
+// Module ID: 7026
+// Function ID: 7027
 // Name: UserSettingsAccountActionCreators
-// Dependencies: [5, 1087, 6189, 584, 1297, 6186, 1114, 1413, 510, 6949, 6953, 6955, 6957, 2]
+// Dependencies: [5, 1087, 6619, 584, 1297, 6616, 1114, 1413, 510, 7027, 7031, 7033, 7035, 2]
 // Exports: accountDetailsClose, accountDetailsInit, clearErrors, disableAccount, getHarvestStatus, requestHarvest, resetAccount, resetAllPending, resetAllTryItOut, resetAndCloseUserProfileForm, resetPendingAccountChanges, resetPendingLegacyUsernameDisabled, resetPendingPrimaryGuildChanges, saveAccountChanges, saveProfileAndAccountChanges, updateAccount
 
-// Module 6948 (UserSettingsAccountActionCreators)
+// Module 7026 (UserSettingsAccountActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1114 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6186 */;
-import trackUserAvatarUpdated from "trackUserAvatarUpdated" /* 6955 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6957 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6616 */;
+import trackUserAvatarUpdated from "trackUserAvatarUpdated" /* 7033 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7035 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1087 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6189 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6619 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;
@@ -69,7 +69,7 @@ let body = function _saveProfileAndAccountRequest() {
               token = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c4) {
             if (arg0 === 1) {
@@ -252,8 +252,8 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
     user.push_voip_provider = tmp15;
     user.push_voip_token = value2;
   }
-  const obj4 = { headers: tmpResult.buildHeadersForMd5({ [avatar(6953).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
-  tmpResult = tmp(6949);
+  const obj4 = { headers: tmpResult.buildHeadersForMd5({ [avatar(7031).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
+  tmpResult = tmp(7027);
   const promise = saveProfileAndAccountRequest(user, obj4);
   return promise.then((result) => {
     const obj = DispatcherDefault;

@@ -1,10 +1,10 @@
-// Module ID: 16398
-// Function ID: 16399
+// Module ID: 16427
+// Function ID: 16428
 // Name: DisplayNameStylesEffectOrder
-// Dependencies: [19, 1410, 558, 15636, 2]
+// Dependencies: [19, 1410, 558, 15665, 2]
 
-// Module 16398 (DisplayNameStylesEffectOrder)
-import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 15636 */;
+// Module 16427 (DisplayNameStylesEffectOrder)
+import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 15665 */;
 import react from "react" /* 19 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1410 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisible
   return obj.useIsDisplayNameStylesFlywheelSettersEnabled("effect-order") ? items : EFFECT_ORDER;
 }) : (function useVisibleEffectOrder() {
   let isDisplayNameStylesFlywheelSettersEnabled;
-  const obj = isDisplayNameStylesFlywheelSettersEnabled(15636);
+  const obj = isDisplayNameStylesFlywheelSettersEnabled(15665);
   isDisplayNameStylesFlywheelSettersEnabled = obj.useIsDisplayNameStylesFlywheelSettersEnabled("effect-order");
   items = [isDisplayNameStylesFlywheelSettersEnabled];
   return react.useMemo(() => isDisplayNameStylesFlywheelSettersEnabled ? items : EFFECT_ORDER, items);

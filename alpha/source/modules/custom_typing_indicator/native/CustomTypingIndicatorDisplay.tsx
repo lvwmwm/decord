@@ -1,26 +1,26 @@
-// Module ID: 12845
-// Function ID: 12846
+// Module ID: 12877
+// Function ID: 12878
 // Name: CustomTypingIndicatorDisplay
-// Dependencies: [19, 21, 5191, 558, 576, 1128, 12833, 12846, 5187, 5477, 6462, 587, 2]
+// Dependencies: [19, 21, 4945, 558, 576, 1128, 12865, 12878, 5195, 5932, 6856, 587, 2]
 
-// Module 12845 (CustomTypingIndicatorDisplay)
+// Module 12877 (CustomTypingIndicatorDisplay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import Stack_Stack from "Stack/Stack" /* 5477 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 12833 */;
-import CustomTypingIndicatorGlyphDefault from "CustomTypingIndicatorGlyph" /* 12846 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import Stack_Stack from "Stack/Stack" /* 5932 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 12865 */;
+import CustomTypingIndicatorGlyphDefault from "CustomTypingIndicatorGlyph" /* 12878 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let tmp3;
-const Pressables = tmp3(6462);
+const Pressables = tmp3(6856);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles(() => ({ text: { flexShrink: 1 }, pressable: { flex: 1 } }));
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypingIndicatorDisplay(arg0) {
@@ -80,7 +80,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
                     }
                   }
                   const obj2 = { style: tmp7.pressable, hitSlop: nativeDefault.space.PX_8, onPress, accessibilityRole: "button", children: tmp18 };
-                  const PressableOpacity = tmp(6462).PressableOpacity;
+                  const PressableOpacity = tmp(6856).PressableOpacity;
                   const tmp26 = _false(PressableOpacity, obj2);
                   cResult[15] = tmp18;
                   cResult[16] = onPress;

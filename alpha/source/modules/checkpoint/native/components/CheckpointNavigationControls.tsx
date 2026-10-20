@@ -1,17 +1,17 @@
-// Module ID: 12797
-// Function ID: 12798
+// Module ID: 12829
+// Function ID: 12830
 // Name: CheckpointNavigationControls
-// Dependencies: [17, 5537, 1087, 21, 5191, 587, 558, 576, 12790, 1633, 4913, 1128, 12747, 12798, 8674, 3141, 12764, 4901, 2131, 11025, 10604, 2]
+// Dependencies: [17, 5970, 1087, 21, 4945, 587, 558, 576, 12822, 1633, 5213, 1128, 6317, 12830, 8690, 3078, 12780, 5622, 2068, 11041, 10618, 2]
 
-// Module 12797 (CheckpointNavigationControls)
+// Module 12829 (CheckpointNavigationControls)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import CheckpointTextDefault from "CheckpointText" /* 12764 */;
-import showNitroLockedToastDefault from "showNitroLockedToast" /* 12790 */;
+import CheckpointTextDefault from "CheckpointText" /* 12780 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 12822 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 5537 */;
+import CheckpointConstants from "CheckpointConstants" /* 5970 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   if (cResult[0] !== nextBlockedTrait) {
     let nitroLockedMessage;
     if (null != nextBlockedTrait) {
-      const tmpResult = tmp(12790);
+      const tmpResult = tmp(12822);
       nitroLockedMessage = tmpResult.getNitroLockedMessage(nextBlockedTrait);
     }
     cResult[0] = nextBlockedTrait;
@@ -92,13 +92,13 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
               if (cResult[12] === tmp13) {
                 tmp14 = cResult[13];
               }
-              const tmpResult3 = tmp(4913);
+              const tmpResult3 = tmp(5213);
               const token = tmpResult3.useToken("text-subtle");
               if (cResult[14] !== activeRoute) {
                 let PDTjLN;
                 const intl = tmp(1128).intl;
                 const string = intl.string;
-                if (activeRoute === tmp(12747).CheckpointRoute.PROFILE_WIDGET) {
+                if (activeRoute === tmp(6317).CheckpointRoute.PROFILE_WIDGET) {
                   PDTjLN = tmp(1128).t.i4jeWR;
                 } else {
                   PDTjLN = tmp(1128).t.PDTjLN;
@@ -112,11 +112,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
               }
               if (cResult[16] !== activeRoute) {
                 let stringResult1;
-                if (activeRoute === tmp(12747).CheckpointRoute.FINALIZE_CHARACTER) {
+                if (activeRoute === tmp(6317).CheckpointRoute.FINALIZE_CHARACTER) {
                   const intl3 = tmp(1128).intl;
                   stringResult1 = intl3.string(tmp(1128).t["R3BPH+"]);
                 } else {
-                  const tmpResult4 = tmp(12747);
+                  const tmpResult4 = tmp(6317);
                   if (tmpResult4.isCheckpointCustomizationRoute(activeRoute)) {
                     const intl2 = tmp(1128).intl;
                     stringResult1 = intl2.string(tmp(1128).t.PDTjLN);
@@ -128,7 +128,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
               } else {
                 tmp18 = cResult[17];
               }
-              if (activeRoute === tmp(12747).CheckpointRoute.HOME) {
+              if (activeRoute === tmp(6317).CheckpointRoute.HOME) {
                 if (cResult[18] === tmp14) {
                   let tmp46;
                   let tmp48;
@@ -180,7 +180,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                                                   return metroImportDefault(CheckpointTextDefault, obj, arg1);
                                                 }
                         };
-                        const formatResult = intl6.format(nextBlockedTrait(3141).hcNhyq, obj4);
+                        const formatResult = intl6.format(nextBlockedTrait(3078).hcNhyq, obj4);
                         cResult[28] = tmp7.link;
                         cResult[29] = formatResult;
                         tmp55 = formatResult;
@@ -189,7 +189,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                       }
                       if (cResult[30] !== tmp55) {
                         const obj5 = { variant: "text-sm/medium", children: tmp55 };
-                        const tmp59 = closure_7(nextBlockedTrait(12764), obj5);
+                        const tmp59 = closure_7(nextBlockedTrait(12780), obj5);
                         cResult[30] = tmp55;
                         cResult[31] = tmp59;
                         tmp57 = tmp59;
@@ -215,8 +215,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                       tmp60 = tmp63;
                     }
                   }
-                  const obj7 = { Icon: tmp(8674).PlayIcon, label: tmp48, onPress: tmp11, disabled: undefined !== nextLoading && nextLoading, accessibilityState: tmp50 };
-                  const tmp12Result = nextBlockedTrait(12798);
+                  const obj7 = { Icon: tmp(8690).PlayIcon, label: tmp48, onPress: tmp11, disabled: undefined !== nextLoading && nextLoading, accessibilityState: tmp50 };
+                  const tmp12Result = nextBlockedTrait(12830);
                   const tmp54 = closure_7(tmp12Result, obj7);
                   cResult[24] = tmp11;
                   cResult[25] = undefined !== nextLoading && nextLoading;
@@ -262,7 +262,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                   }
                   if (cResult[42] !== tmp25) {
                     const obj9 = { color: tmp25 };
-                    const tmp28 = closure_7(tmp(11025).ArrowSmallLeftIcon, obj9);
+                    const tmp28 = closure_7(tmp(11041).ArrowSmallLeftIcon, obj9);
                     cResult[42] = tmp25;
                     cResult[43] = tmp28;
                     tmp26 = tmp28;
@@ -330,8 +330,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
                               }
                             }
                           }
-                          const obj12 = { Icon: tmp(10604).ArrowSmallRightIcon, iconPosition: "end", iconSize: "md", label: tmp18, onPress: tmp11, disabled: tmp5 || undefined !== nextLoading && nextLoading, accessibilityHint: tmp34, accessibilityLabel: tmp36, accessibilityState: tmp37 };
-                          const tmp12Result2 = nextBlockedTrait(12798);
+                          const obj12 = { Icon: tmp(10618).ArrowSmallRightIcon, iconPosition: "end", iconSize: "md", label: tmp18, onPress: tmp11, disabled: tmp5 || undefined !== nextLoading && nextLoading, accessibilityHint: tmp34, accessibilityLabel: tmp36, accessibilityState: tmp37 };
+                          const tmp12Result2 = nextBlockedTrait(12830);
                           const tmp41 = closure_7(tmp12Result2, obj12);
                           cResult[52] = tmp11;
                           cResult[53] = tmp18;

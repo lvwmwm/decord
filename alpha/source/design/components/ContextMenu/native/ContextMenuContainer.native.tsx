@@ -1,15 +1,15 @@
-// Module ID: 15047
-// Function ID: 15048
+// Module ID: 15079
+// Function ID: 15080
 // Name: ContextMenuContainer
-// Dependencies: [19, 17, 21, 5191, 15048, 558, 576, 9663, 1647, 5406, 5458, 4922, 2]
+// Dependencies: [19, 17, 21, 4945, 15080, 558, 576, 9677, 1647, 5870, 5922, 4999, 2]
 
-// Module 15047 (ContextMenuContainer)
+// Module 15079 (ContextMenuContainer)
 import Fragment from "Fragment" /* 21 */;
-import OverlayViewDefault from "OverlayView" /* 5406 */;
-import ContextMenuPopout from "ContextMenuPopout" /* 15048 */;
+import OverlayViewDefault from "OverlayView" /* 5870 */;
+import ContextMenuPopout from "ContextMenuPopout" /* 15080 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -127,7 +127,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuC
         }
         return tmp15;
       }
-      const tmp19 = jsx(tmp(4922).TransitionGroup, { wrapChildren: tmp14, items: tmp6, renderItem, getItemKey });
+      const tmp19 = jsx(tmp(4999).TransitionGroup, { wrapChildren: tmp14, items: tmp6, renderItem, getItemKey });
       cResult[10] = tmp6;
       cResult[11] = tmp14;
       cResult[12] = tmp19;

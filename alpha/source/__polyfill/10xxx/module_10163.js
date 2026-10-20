@@ -1,14 +1,14 @@
 // Module ID: 10163
 // Function ID: 10164
-// Dependencies: [41, 42, 93, 95, 96, 98, 10133]
+// Dependencies: [41, 42, 93, 95, 98, 10132, 10135, 10136, 10140]
 
 // Module 10163
-import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10133 */;
+import _mod10132 from "module_10132" /* 10132 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10140 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _get from "_get" /* 96 */;
 import _inherits from "_inherits" /* 98 */;
 
 function _isNativeReflectConstruct() {
@@ -26,55 +26,61 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class DETimeExpressionParser {
+const regExp = new RegExp("(this|last|past|next|after|\\+|-)\\s*(" + _mod10132.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+const regExp1 = new RegExp("(this|last|past|next|after|\\+|-)\\s*(" + _mod10132.TIME_UNITS_NO_ABBR_PATTERN + ")(?=\\W|$)", "i");
+class ENTimeUnitCasualRelativeFormatParser {
   constructor() {
     let constructResult;
+    let flag = arg0;
+    if (arg0 === undefined) {
+      flag = true;
+    }
     const self = this;
-    _classCallCheck(this, DETimeExpressionParser);
-    const obj = _getPrototypeOf(DETimeExpressionParser);
+    _classCallCheck(this, ENTimeUnitCasualRelativeFormatParser);
+    const obj = _getPrototypeOf(ENTimeUnitCasualRelativeFormatParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, undefined);
     }
-    return tmp3(self, constructResult);
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.allowAbbreviations = flag;
+    return tmp3Result;
   }
 }
-_inherits(DETimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
+_inherits(ENTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "primaryPrefix",
-  value: function primaryPrefix() {
-    return "(?:(?:um|von)\\s*)?";
+  key: "innerPattern",
+  value: function innerPattern() {
+    return this.allowAbbreviations ? regExp : regExp1;
   }
 };
-let items = [
+const items = [
   entry,
   {
-    key: "followingPhase",
-    value: function followingPhase() {
-      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|bis)\\s*";
-    }
-  },
-  {
-    key: "extractPrimaryTimeComponents",
-    value: function extractPrimaryTimeComponents(arg0, arg1) {
-      let fnResult = null;
-      const str = arg1[0];
-      if (!str.match(/^\s*\d{4}\s*$/)) {
-        const self = this;
-        let fn = _get(_getPrototypeOf(DETimeExpressionParser.prototype), "extractPrimaryTimeComponents", this);
-        if (typeof fn === "function") {
-          fn = (items) => fn.apply(self, items);
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const parseDurationResult = _mod10132.parseDuration(arg1[2]);
+      if (parseDurationResult) {
+        if ("last" !== formatted) {
+          let reverseDurationResult;
+          if ("past" !== formatted) {
+            reverseDurationResult = parseDurationResult;
+          }
+          const ParsingComponents = tmp2(10136).ParsingComponents;
+          return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
         }
-        const items = [arg0, arg1];
-        fnResult = fn(items);
+        reverseDurationResult = tmp2(10135).reverseDuration(parseDurationResult);
+      } else {
+        return null;
       }
-      return fnResult;
     }
   }
 ];
 
-export default _createClass(DETimeExpressionParser, items);
+export default _createClass(ENTimeUnitCasualRelativeFormatParser, items);

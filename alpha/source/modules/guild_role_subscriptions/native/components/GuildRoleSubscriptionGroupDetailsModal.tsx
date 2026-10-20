@@ -1,27 +1,27 @@
-// Module ID: 18952
-// Function ID: 18953
+// Module ID: 18987
+// Function ID: 18988
 // Name: GuildRoleSubscriptionGroupDetailsModal
-// Dependencies: [32, 19, 17, 18953, 16263, 1087, 21, 5191, 558, 576, 14912, 18948, 1128, 8949, 18954, 5187, 16275, 8855, 18955, 2]
+// Dependencies: [32, 19, 17, 18988, 16292, 1087, 21, 4945, 558, 576, 14944, 18983, 1128, 8965, 18989, 5195, 16304, 8871, 18990, 2]
 
-// Module 18952 (GuildRoleSubscriptionGroupDetailsModal)
+// Module 18987 (GuildRoleSubscriptionGroupDetailsModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import Form from "Form" /* 8855 */;
-import FormHeaderDefault from "FormHeader" /* 8949 */;
-import FormStylesDefault from "FormStyles" /* 14912 */;
-import FormSeparatorDefault from "FormSeparator" /* 16275 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18948 */;
-import FormImagePicker from "FormImagePicker" /* 18954 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18955 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import Form from "Form" /* 8871 */;
+import FormHeaderDefault from "FormHeader" /* 8965 */;
+import FormStylesDefault from "FormStyles" /* 14944 */;
+import FormSeparatorDefault from "FormSeparator" /* 16304 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18983 */;
+import FormImagePicker from "FormImagePicker" /* 18989 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18990 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18953 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16263 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18988 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16292 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -201,7 +201,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Content(arg0
     }
   }
   const obj10 = { style: tmp4.coverPhoto, image: cover, imageUploadSize: UPLOAD_BANNER_SIZE.width, previewShape: FormImagePicker.PreviewShape.SQUIRCLE, setImage: setCover, disabled: roleSubscriptionSettingsDisabled, standalone: true, size: 114 };
-  const ImagePickerIcon = tmp(18954).ImagePickerIcon;
+  const ImagePickerIcon = tmp(18989).ImagePickerIcon;
   const tmp15 = React4(ImagePickerIcon, obj10);
   cResult[3] = cover;
   cResult[4] = roleSubscriptionSettingsDisabled;

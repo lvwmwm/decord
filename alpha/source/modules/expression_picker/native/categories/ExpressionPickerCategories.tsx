@@ -1,22 +1,22 @@
-// Module ID: 9876
-// Function ID: 9877
+// Module ID: 9890
+// Function ID: 9891
 // Name: ExpressionPickerCategories
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5088, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5127, 2]
 
-// Module 9876 (ExpressionPickerCategories)
+// Module 9890 (ExpressionPickerCategories)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let tmp;
-const Portal2 = tmp(5088);
+const Portal2 = tmp(5127);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;

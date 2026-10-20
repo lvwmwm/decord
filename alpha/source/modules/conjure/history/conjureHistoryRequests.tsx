@@ -1,19 +1,16 @@
-// Module ID: 12100
-// Function ID: 12101
+// Module ID: 12120
+// Function ID: 12121
 // Name: conjureHistoryRequests
-// Dependencies: [5, 11063, 11057, 12101, 11015, 2]
-// Exports: createDatabaseRestorePoint, fetchDatabaseRestorePoints, fetchDatabaseRestoreWindow, fetchSourceHistory, restoreDatabaseToPoint, restoreDatabaseToTimestamp, restoreSourceHistoryEntry
+// Dependencies: [5, 11077, 11071, 12121, 11031, 2]
+// Exports: createDatabaseRestorePoint, fetchDatabaseRestorePoints, fetchDatabaseRestoreWindow, fetchVersionHistory, restoreDatabaseToPoint, restoreDatabaseToTimestamp, restoreSourceHistoryEntry
 
-// Module 12100 (conjureHistoryRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 11063 */;
+// Module 12120 (conjureHistoryRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 11077 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let c7, label;
+let c2, c7, label;
 
-function fetchVersionHistory() {
-  return obj(...arguments);
-}
 let obj = function _fetchVersionHistory() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let closure_1;
@@ -112,16 +109,6 @@ let obj = function _fetchVersionHistory() {
         throw tmp21;
       }
     }
-  });
-  return obj(...arguments);
-};
-obj = function _fetchSourceHistory() {
-  obj = _asyncToGenerator(async (arg0) => {
-    let c1;
-    let c2;
-    let closure_0 = arg0;
-    await fetchVersionHistory(closure_0);
-    return arg1.entries;
   });
   return obj(...arguments);
 };
@@ -730,8 +717,7 @@ obj = function _restoreDatabaseToTimestamp() {
 };
 let result = size.fileFinishedImporting("modules/conjure/history/conjureHistoryRequests.tsx");
 
-export { fetchVersionHistory };
-export const fetchSourceHistory = function fetchSourceHistory() {
+export const fetchVersionHistory = function fetchVersionHistory() {
   return obj(...arguments);
 };
 export const restoreSourceHistoryEntry = function restoreSourceHistoryEntry() {

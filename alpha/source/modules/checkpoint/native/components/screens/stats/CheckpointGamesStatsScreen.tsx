@@ -1,26 +1,26 @@
-// Module ID: 12778
-// Function ID: 12779
+// Module ID: 12810
+// Function ID: 12811
 // Name: CheckpointGamesStatsScreen
-// Dependencies: [17, 2022, 12742, 5537, 21, 5191, 587, 558, 576, 504, 1128, 3141, 12766, 9514, 12764, 12770, 1417, 5128, 7955, 12775, 5187, 2]
+// Dependencies: [17, 2022, 12762, 5970, 21, 4945, 587, 558, 576, 504, 1128, 3078, 12782, 9530, 12780, 12786, 1417, 5631, 8018, 12791, 5195, 2]
 
-// Module 12778 (CheckpointGamesStatsScreen)
+// Module 12810 (CheckpointGamesStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import _modDef3141 from "module_3141" /* 3141 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import GameControllerIcon from "GameControllerIcon" /* 9514 */;
-import CheckpointTextDefault from "CheckpointText" /* 12764 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12766 */;
-import NumberAnimationDefault from "NumberAnimation" /* 12770 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 12775 */;
+import _modDef3078 from "module_3078" /* 3078 */;
+import FastImageDefault from "FastImage" /* 5631 */;
+import GameControllerIcon from "GameControllerIcon" /* 9530 */;
+import CheckpointTextDefault from "CheckpointText" /* 12780 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12782 */;
+import NumberAnimationDefault from "NumberAnimation" /* 12786 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 12791 */;
 import GameStore from "GameStore" /* 2022 */;
-import CheckpointStore from "CheckpointStore" /* 12742 */;
-import CheckpointConstants from "CheckpointConstants" /* 5537 */;
+import CheckpointStore from "CheckpointStore" /* 12762 */;
+import CheckpointConstants from "CheckpointConstants" /* 5970 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -176,7 +176,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGa
                 if (cResult[28] !== tmp11) {
                   const intl2 = tmp(1128).intl;
                   const obj3 = { numGames: tmp11 };
-                  const formatResult = intl2.format(_modDef3141.aJMJ6b, obj3);
+                  const formatResult = intl2.format(_modDef3078.aJMJ6b, obj3);
                   cResult[28] = tmp11;
                   cResult[29] = formatResult;
                   tmp42 = formatResult;
@@ -294,7 +294,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGa
     }
   }
   const intl = tmp(1128).intl;
-  const stringResult = intl.string(_modDef3141.HM2fjf);
+  const stringResult = intl.string(_modDef3078.HM2fjf);
   const container = tmp4.container;
   const tmp26 = CheckpointScreenDefault;
   if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
@@ -380,7 +380,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGa
     games = [];
   }
   const intl = tmp2(1128).intl;
-  const stringResult = intl.string(_modDef3141.HM2fjf);
+  const stringResult = intl.string(_modDef3078.HM2fjf);
   const obj2 = { children: metroImportAll(View, obj3) };
   const obj5 = { style: tmp.title, children: items1 };
   items1 = [, ];
@@ -395,7 +395,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointGa
   items2 = [metroImportAll(View, obj5), , ];
   const obj8 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult.toLocaleLowerCase(), style: tmp.number, children: metroImportDefault(NumberAnimationDefault, { end: roundResult }) };
   items2[1] = metroImportDefault(View, obj8);
-  const obj9 = { variant: "heading-lg/medium", children: intl2.format(_modDef3141.aJMJ6b, { numGames: roundResult }) };
+  const obj9 = { variant: "heading-lg/medium", children: intl2.format(_modDef3078.aJMJ6b, { numGames: roundResult }) };
   const tmp8 = CheckpointTextDefault;
   intl2 = tmp2(1128).intl;
   items2[2] = metroImportDefault(tmp8, obj9);
@@ -551,7 +551,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCa
                         tmp40 = tmp43;
                       }
                       const obj5 = { variant: "text-md/semibold", style: tmp4.gameName, lineClamp: 2, children: name };
-                      const tmp39 = closure_7(id(5187).Text, obj5);
+                      const tmp39 = closure_7(id(5195).Text, obj5);
                       cResult[26] = name;
                       cResult[27] = tmp4.gameName;
                       cResult[28] = tmp39;
@@ -581,7 +581,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCa
               obj7 = AvatarUtilsDefault;
               tmp25 = closure_7(tmp28, obj9);
             } else {
-              const obj10 = { style: items4, children: closure_7(id(7955).UnknownGameIcon, { size: "lg" }) };
+              const obj10 = { style: items4, children: closure_7(id(8018).UnknownGameIcon, { size: "lg" }) };
               items4 = [, ];
               ({ coverImage: arr2[0], unknownCover: arr2[1] } = tmp4);
               tmp25 = closure_7(View, obj10);
@@ -597,7 +597,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCa
         const rounded = Math.round(numSessions);
         const intl = tmp(1128).intl;
         const obj11 = { gameName: name, rank, numSessions: rounded };
-        const formatToPlainStringResult = intl.formatToPlainString(_modDef3141.mqdLhl, obj11);
+        const formatToPlainStringResult = intl.formatToPlainString(_modDef3078.mqdLhl, obj11);
         cResult[8] = name;
         cResult[9] = numSessions;
         cResult[10] = rank;
@@ -660,7 +660,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCa
     stateFromStores = getApplicationIconURL(obj2);
   }
   const rounded = Math.round(numSessions);
-  const obj3 = { accessible: true, accessibilityLabel: intl.formatToPlainString(_modDef3141.mqdLhl, { gameName: name, rank, numSessions: rounded }), style: tmp.game, children: items3 };
+  const obj3 = { accessible: true, accessibilityLabel: intl.formatToPlainString(_modDef3078.mqdLhl, { gameName: name, rank, numSessions: rounded }), style: tmp.game, children: items3 };
   intl = tmp2(1128).intl;
   const obj4 = { style: tmp.cover, children: items2 };
   if (null != stateFromStores) {
@@ -671,7 +671,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCa
     tmp11 = closure_7;
   } else {
     tmp11 = closure_7;
-    const obj6 = { style: items1, children: closure_7(id(7955).UnknownGameIcon, { size: "lg" }) };
+    const obj6 = { style: items1, children: closure_7(id(8018).UnknownGameIcon, { size: "lg" }) };
     items1 = [, ];
     ({ coverImage: arr2[0], unknownCover: arr2[1] } = tmp);
     tmp12 = closure_7(tmp9, obj6);
@@ -683,7 +683,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameCa
   const obj8 = { style: tmp.gameText, children: items4 };
   items4 = [, ];
   const obj9 = { variant: "text-md/semibold", style: tmp.gameName, lineClamp: 2, children: name };
-  items4[0] = tmp11(id(5187).Text, obj9);
+  items4[0] = tmp11(id(5195).Text, obj9);
   const obj10 = { variant: "experimental/mono-md/bold", style: tmp.gameSessions, children: rounded };
   items4[1] = tmp11(CheckpointTextDefault, obj10);
   items3[1] = closure_8(View, obj8);

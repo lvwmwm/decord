@@ -1,20 +1,16 @@
 // Module ID: 15355
 // Function ID: 15356
-// Dependencies: [15350, 15356]
+// Dependencies: [15356]
 
 // Module 15355
-import _mod15350 from "module_15350" /* 15350 */;
+import _mod15356 from "module_15356" /* 15356 */;
 
-let tmp;
-const _mod15356 = tmp(15356);
 
-export default function(arg0) {
-  if (_mod15350(arg0)) {
-    return arg0;
-  } else {
-    const self = this;
-    const self2 = this;
-    const tmp4 = new TypeError(_mod15356(arg0) + " is not a function");
-    throw tmp4;
-  }
-};
+export default !_mod15356(() => {
+  const obj = {
+    get() {
+      return 7;
+    }
+  };
+  return 7 !== Object.defineProperty({}, 1, obj)[1];
+});

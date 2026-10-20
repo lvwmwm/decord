@@ -1,15 +1,15 @@
-// Module ID: 5509
-// Function ID: 5510
+// Module ID: 5944
+// Function ID: 5945
 // Name: NicknameUtils
-// Dependencies: [2068, 2128, 4855, 1128, 5057, 558, 576, 504, 2]
+// Dependencies: [4800, 4860, 4890, 1128, 4994, 558, 576, 504, 2]
 // Exports: getNickname
 
-// Module 5509 (NicknameUtils)
+// Module 5944 (NicknameUtils)
 import intl2 from "intl" /* 1128 */;
-import UserUtilsDefault from "UserUtils" /* 5057 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserUtilsDefault from "UserUtils" /* 4994 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import GuildMemberStore from "GuildMemberStore" /* 4860 */;
+import RelationshipStore from "RelationshipStore" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

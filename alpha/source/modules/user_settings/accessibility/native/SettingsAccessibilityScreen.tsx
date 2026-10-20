@@ -1,24 +1,24 @@
-// Module ID: 16389
-// Function ID: 16390
+// Module ID: 16418
+// Function ID: 16419
 // Name: SettingsAccessibilityScreen
-// Dependencies: [19, 5181, 2045, 8260, 1087, 21, 1128, 2131, 2981, 7370, 7003, 16390, 558, 576, 1505, 573, 11084, 15732, 2]
+// Dependencies: [19, 4946, 4777, 8276, 1087, 21, 1128, 2068, 2918, 7436, 7081, 16419, 558, 576, 1505, 573, 11099, 15761, 2]
 
-// Module 16389 (SettingsAccessibilityScreen)
+// Module 16418 (SettingsAccessibilityScreen)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import intl15 from "intl" /* 1128 */;
 import useNavigation from "useNavigation" /* 1505 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
-import _modDef2981 from "module_2981" /* 2981 */;
-import openUserSettings from "openUserSettings" /* 7370 */;
-import SettingsConstants from "SettingsConstants" /* 8260 */;
-import SettingBuilders from "SettingBuilders" /* 11084 */;
-import SettingLayoutDefault from "SettingLayout" /* 15732 */;
-import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 16390 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2068 */;
+import _modDef2918 from "module_2918" /* 2918 */;
+import openUserSettings from "openUserSettings" /* 7436 */;
+import SettingsConstants from "SettingsConstants" /* 8276 */;
+import SettingBuilders from "SettingBuilders" /* 11099 */;
+import SettingLayoutDefault from "SettingLayout" /* 15761 */;
+import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 16419 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2045 */;
+import AccessibilityStore from "AccessibilityStore" /* 4946 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4777 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -80,7 +80,7 @@ function getAccessibilitySettingScreen(youBarAnimationsOverridden) {
   items2 = [MobileUserSettings.OFFICIAL_MESSAGE_STYLE];
   intl2 = intl15.intl;
   items1[1] = obj4;
-  const obj5 = { settings: items3, subLabel: intl3.format(_modDef2981.L8U56h, obj6) };
+  const obj5 = { settings: items3, subLabel: intl3.format(_modDef2918.L8U56h, obj6) };
   items3 = [MobileUserSettings.DISPLAY_NAME_STYLES_ACCESSIBILITY];
   intl3 = intl15.intl;
   obj6 = {

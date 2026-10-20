@@ -1,10 +1,10 @@
-// Module ID: 8158
-// Function ID: 8159
+// Module ID: 8221
+// Function ID: 8222
 // Name: renderer/EmbedUtils
 // Dependencies: [17, 2]
 // Exports: getAssetUriForEmbed, shouldPlayVideoInline
 
-// Module 8158 (renderer/EmbedUtils)
+// Module 8221 (renderer/EmbedUtils)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

@@ -1,63 +1,63 @@
-// Module ID: 14049
-// Function ID: 14050
+// Module ID: 14082
+// Function ID: 14083
 // Name: UserProfileActivity
-// Dependencies: [32, 109, 19, 17, 5540, 6153, 2068, 2090, 4845, 5207, 6015, 5212, 7586, 7181, 1087, 21, 5191, 587, 1384, 558, 576, 5187, 8764, 14050, 4922, 10555, 1128, 11201, 5128, 1417, 8736, 7955, 5065, 10548, 7692, 14059, 14069, 7130, 7155, 14075, 9150, 9151, 14076, 504, 14062, 14077, 14079, 14087, 14090, 8658, 5208, 14057, 14058, 6462, 7180, 1202, 14092, 11522, 5236, 6163, 6145, 7710, 5155, 11463, 14093, 11469, 14080, 5521, 10558, 8923, 6190, 7748, 7329, 11043, 14094, 14095, 14097, 14098, 2]
+// Dependencies: [32, 109, 19, 17, 2046, 6590, 4800, 4822, 4880, 5674, 6452, 5591, 7649, 7250, 1087, 21, 4945, 587, 1384, 558, 576, 5195, 8780, 14083, 4999, 10569, 1128, 11216, 5631, 1417, 8752, 8018, 4952, 10562, 7755, 14092, 14102, 7199, 7224, 14108, 9166, 9167, 14109, 504, 14095, 14110, 14112, 14120, 14123, 8674, 5675, 14090, 14091, 6856, 7249, 1202, 14125, 11543, 5700, 6600, 6582, 7773, 5171, 11484, 14126, 11490, 14113, 5565, 10572, 8939, 6620, 7811, 7395, 11058, 14127, 14128, 14130, 14131, 2]
 
-// Module 14049 (UserProfileActivity)
+// Module 14082 (UserProfileActivity)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
-import shared from "shared" /* 5065 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import hasRichActivityDefault from "hasRichActivity" /* 5208 */;
-import useChannelNameDefault from "useChannelName" /* 5521 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6145 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
-import Pressables from "Pressables" /* 6462 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7130 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
-import UserProfileCardDefault from "UserProfileCard" /* 7180 */;
-import Constants2 from "Constants" /* 7181 */;
-import transitionToGuild from "transitionToGuild" /* 7329 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7692 */;
-import StreamActionCreators from "StreamActionCreators" /* 7710 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7748 */;
-import UnknownGameIcon2 from "UnknownGameIcon" /* 7955 */;
-import isStreamingDefault from "isStreaming" /* 8658 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8736 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 8764 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8923 */;
-import isGameActivityDefault from "isGameActivity" /* 10548 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10555 */;
-import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 10558 */;
-import closeVoicePanelsDefault from "closeVoicePanels" /* 11043 */;
-import UserActivitySpotify from "UserActivitySpotify" /* 11201 */;
-import isOnXboxDefault from "isOnXbox" /* 14057 */;
-import isOnPlayStationDefault from "isOnPlayStation" /* 14058 */;
-import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 14062 */;
-import UserProfileActivityVoiceChannelDefault from "UserProfileActivityVoiceChannel" /* 14079 */;
-import usePersonalizedVoiceChannelUsersDefault from "usePersonalizedVoiceChannelUsers" /* 14080 */;
-import UserProfileActivityButtons from "UserProfileActivityButtons" /* 14087 */;
-import isActivityJoinableOnCurrentPlatform from "isActivityJoinableOnCurrentPlatform" /* 14090 */;
-import UserProfileVoiceSettingsDefault from "UserProfileVoiceSettings" /* 14098 */;
+import shared from "shared" /* 4952 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
+import useChannelNameDefault from "useChannelName" /* 5565 */;
+import FastImageDefault from "FastImage" /* 5631 */;
+import hasRichActivityDefault from "hasRichActivity" /* 5675 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6582 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6620 */;
+import Pressables from "Pressables" /* 6856 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7199 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7224 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7249 */;
+import Constants2 from "Constants" /* 7250 */;
+import transitionToGuild from "transitionToGuild" /* 7395 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7755 */;
+import StreamActionCreators from "StreamActionCreators" /* 7773 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7811 */;
+import UnknownGameIcon2 from "UnknownGameIcon" /* 8018 */;
+import isStreamingDefault from "isStreaming" /* 8674 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8752 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 8780 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8939 */;
+import isGameActivityDefault from "isGameActivity" /* 10562 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10569 */;
+import UserProfileVoiceActivityIconDefault from "UserProfileVoiceActivityIcon" /* 10572 */;
+import closeVoicePanelsDefault from "closeVoicePanels" /* 11058 */;
+import UserActivitySpotify from "UserActivitySpotify" /* 11216 */;
+import isOnXboxDefault from "isOnXbox" /* 14090 */;
+import isOnPlayStationDefault from "isOnPlayStation" /* 14091 */;
+import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 14095 */;
+import UserProfileActivityVoiceChannelDefault from "UserProfileActivityVoiceChannel" /* 14112 */;
+import usePersonalizedVoiceChannelUsersDefault from "usePersonalizedVoiceChannelUsers" /* 14113 */;
+import UserProfileActivityButtons from "UserProfileActivityButtons" /* 14120 */;
+import isActivityJoinableOnCurrentPlatform from "isActivityJoinableOnCurrentPlatform" /* 14123 */;
+import UserProfileVoiceSettingsDefault from "UserProfileVoiceSettings" /* 14131 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import PresenceStore from "PresenceStore" /* 5207 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6015 */;
-import VoiceStateStore from "VoiceStateStore" /* 5212 */;
-import UserProfileStore from "UserProfileStore" /* 7586 */;
+import ApplicationStore from "ApplicationStore" /* 2046 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6590 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import GuildStore from "GuildStore" /* 4822 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
+import PresenceStore from "PresenceStore" /* 5674 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6452 */;
+import VoiceStateStore from "VoiceStateStore" /* 5591 */;
+import UserProfileStore from "UserProfileStore" /* 7649 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -82,8 +82,8 @@ let obj5;
 let rect;
 let size;
 let tmp;
-const Text_Text = tmp(5187);
-const UserProfileActivityTimebarDefault = tmp(14077);
+const Text_Text = tmp(5195);
+const UserProfileActivityTimebarDefault = tmp(14110);
 let user = ["children"];
 let _slicedToArray = _slicedToArray_mod;
 ({ TouchableOpacity: metroImportDefault, TouchableWithoutFeedback: metroImportAll, View: c9 } = react_native);
@@ -1183,19 +1183,19 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
   let closure_3;
   const style = user.style;
   const tmp = closure_26();
-  const tmp4 = activity(14069)(activity);
-  const tmp5 = activity(7130);
-  const analyticsLocations = tmp5(activity(7155).USER_PROFILE_LIVE_ACTIVITY_CARD).analyticsLocations;
+  const tmp4 = activity(14102)(activity);
+  const tmp5 = activity(7199);
+  const analyticsLocations = tmp5(activity(7224).USER_PROFILE_LIVE_ACTIVITY_CARD).analyticsLocations;
   let id;
-  const tmp6 = activity(14075);
+  const tmp6 = activity(14108);
   if (voiceChannel != null) {
     id = voiceChannel.id;
   }
   const tmp6Result = tmp6({ display: "live", voiceChannelId: id, user, activity, analyticsLocations });
   dependencyMap = tmp6Result;
   const application_id = activity.application_id;
-  const tmp2Result = activity(9151);
-  let obj = { location: "User Profile Activity Card", applicationId: application_id, source: user(9150).GameProfileSources.UserProfile, trackEntryPointImpression: true, sourceUserId: user.id };
+  const tmp2Result = activity(9167);
+  let obj = { location: "User Profile Activity Card", applicationId: application_id, source: user(9166).GameProfileSources.UserProfile, trackEntryPointImpression: true, sourceUserId: user.id };
   const tmp2ResultResult = tmp2Result(obj);
   closure_3 = tmp2ResultResult;
   const items = [tmp2ResultResult];
@@ -1205,7 +1205,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
     }
   }, items);
   const obj2 = { userId: user.id, onAction: tmp6Result };
-  activity(14076)(obj2);
+  activity(14109)(obj2);
   const items1 = [GuildStore, VoiceStateStore, ChannelStore];
   const obj3 = user(504);
   const stateFromStores = obj3.useStateFromStores(items1, () => {
@@ -1251,15 +1251,15 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
     tmp33Result8 = null;
     if (activity.type !== tmp16.HANG_STATUS) {
       const obj5 = { value: analyticsLocations, children: closure_23(PressableOpacity, obj6) };
-      const AnalyticsLocationProvider = tmp10(7130).AnalyticsLocationProvider;
+      const AnalyticsLocationProvider = tmp10(7199).AnalyticsLocationProvider;
       obj6 = { onPress: callback, disabled: null == tmp2ResultResult, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(user(1128).t["9sZWVp"], obj7), children: tmp34(tmp2Result2, obj8) };
-      PressableOpacity = tmp10(6462).PressableOpacity;
+      PressableOpacity = tmp10(6856).PressableOpacity;
       intl = tmp10(1128).intl;
       obj8 = { style: items3, title: tmp4.text, titleStyle: tmp.cardTitle, titleIcon: tmp33Result, children: items4 };
       items3 = [tmp.card, style];
       tmp33Result = null != tmp4.platformIcon;
       obj7 = { gameName: activity.name };
-      tmp2Result2 = activity(7180);
+      tmp2Result2 = activity(7249);
       tmp34 = closure_24;
       if (tmp33Result) {
         const obj9 = { style: tmp.cardTitleIcon, source: makeSource(whitePNG), size: user(1202).IconSizes.SMALL_14, disableColor: true };
@@ -1276,10 +1276,10 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
       const obj10 = { user, activity, application: stateFromStores1, onAction: tmp6Result };
       items4 = [closure_23(closure_29, obj10), , , ];
       let tmp33Result5 = null;
-      if (activity(14062)(activity)) {
+      if (activity(14095)(activity)) {
         ({ start, end } = activity.timestamps);
         const obj11 = { start, end };
-        tmp33Result5 = tmp33(tmp2(14077), obj11);
+        tmp33Result5 = tmp33(tmp2(14110), obj11);
       }
       items4[1] = tmp33Result5;
       let tmp33Result6 = null;
@@ -1287,22 +1287,22 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
         tmp33Result6 = null;
         if (null != stateFromStores) {
           const obj12 = { guild: stateFromStores, channel: voiceChannel, onAction: tmp6Result, style: tmp.voiceChannelDivider };
-          tmp33Result6 = tmp33(tmp2(14079), obj12);
+          tmp33Result6 = tmp33(tmp2(14112), obj12);
         }
       }
       items4[2] = tmp33Result6;
       let tmp33Result7 = null;
       if (user.id !== currentUser.id) {
-        if (activity(10555)(activity)) {
+        if (activity(10569)(activity)) {
           const obj13 = { activity, onAction: tmp6Result };
-          tmp33Result7 = tmp33(tmp10(14087).PlayOnSpotifyButton, obj13);
-        } else if (activity(7692)(activity)) {
+          tmp33Result7 = tmp33(tmp10(14120).PlayOnSpotifyButton, obj13);
+        } else if (activity(7755)(activity)) {
           const obj14 = { user, currentUser, activity, application: stateFromStores1, onAction: tmp6Result };
-          tmp33Result7 = tmp33(tmp10(14087).JoinActivityButton, obj14);
+          tmp33Result7 = tmp33(tmp10(14120).JoinActivityButton, obj14);
         } else {
-          if (activity(10548)(activity)) {
+          if (activity(10562)(activity)) {
             let supported_platforms = activity.supported_platforms;
-            const tmp10Result2 = user(14090);
+            const tmp10Result2 = user(14123);
             const currentActivityGamePlatform = tmp10Result2.getCurrentActivityGamePlatform();
             const _Set = Set;
             if (supported_platforms == null) {
@@ -1321,16 +1321,16 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
                   if (null != activity.session_id) {
                     if (null != stateFromStores1) {
                       const obj15 = { user, currentUser, activity, application: stateFromStores1, onAction: tmp6Result };
-                      tmp33Result7 = tmp33(tmp10(14087).JoinGameActivityButton, obj15);
+                      tmp33Result7 = tmp33(tmp10(14120).JoinGameActivityButton, obj15);
                     }
                   }
                 }
               }
             }
           }
-          if (activity(8658)(activity)) {
+          if (activity(8674)(activity)) {
             const obj16 = { activity, onAction: tmp6Result };
-            tmp33Result7 = tmp33(tmp10(14087).WatchActivityButton, obj16);
+            tmp33Result7 = tmp33(tmp10(14120).WatchActivityButton, obj16);
           } else {
             if (null != activity.buttons) {
               if (activity.buttons.length > 0) {
@@ -1346,15 +1346,15 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
               }
             }
             tmp33Result7 = null;
-            if (!activity(5208)(activity)) {
-              if (activity(14057)(activity)) {
+            if (!activity(5675)(activity)) {
+              if (activity(14090)(activity)) {
                 const obj18 = { type: constants3.XBOX, onAction: tmp6Result };
-                tmp33Result7 = tmp33(tmp10(14087).ConnectPlatformButton, obj18);
+                tmp33Result7 = tmp33(tmp10(14120).ConnectPlatformButton, obj18);
               } else {
                 tmp33Result7 = null;
-                if (activity(14058)(activity)) {
+                if (activity(14091)(activity)) {
                   const obj19 = { type: constants3.PLAYSTATION, onAction: tmp6Result };
-                  tmp33Result7 = tmp33(tmp10(14087).ConnectPlatformButton, obj19);
+                  tmp33Result7 = tmp33(tmp10(14120).ConnectPlatformButton, obj19);
                 }
               }
             }
@@ -1995,8 +1995,8 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceC
   dependencyMap = undefined;
   ({ isInChannel, style } = arg0);
   let tmp = closure_26();
-  const tmp4 = stateFromStores(14080)(channel);
-  const tmp5 = stateFromStores(5521)(channel);
+  const tmp4 = stateFromStores(14113)(channel);
+  const tmp5 = stateFromStores(5565)(channel);
   let obj = channel(504);
   const items = [GuildStore];
   stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.guild_id));
@@ -2010,17 +2010,17 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceC
     }
     return isPrivateResult;
   });
-  const tmp9 = stateFromStores(7130);
-  ({ newestAnalyticsLocation: c2, analyticsLocations } = tmp9(stateFromStores(7155).USER_PROFILE_VOICE_ACTIVITY_CARD));
+  const tmp9 = stateFromStores(7199);
+  ({ newestAnalyticsLocation: c2, analyticsLocations } = tmp9(stateFromStores(7224).USER_PROFILE_VOICE_ACTIVITY_CARD));
   let obj3 = { display: "voice", activity: { type: "VOICE" }, voiceChannelId: channel.id, user, analyticsLocations };
-  tmp9(stateFromStores(7155).USER_PROFILE_VOICE_ACTIVITY_CARD);
-  const tmp11 = stateFromStores(14075)(obj3);
+  tmp9(stateFromStores(7224).USER_PROFILE_VOICE_ACTIVITY_CARD);
+  const tmp11 = stateFromStores(14108)(obj3);
   let closure_3 = tmp11;
   const obj4 = { userId: user.id, onAction: tmp11 };
-  stateFromStores(14076)(obj4);
+  stateFromStores(14109)(obj4);
   const obj5 = { style: items2, title: null, titleStyle: null, children: null };
   items2 = [tmp.card, style];
-  const tmp14 = stateFromStores(7180);
+  const tmp14 = stateFromStores(7249);
   if (!channel.isDM()) {
     let stringResult;
     let tmp13Result;
@@ -2040,7 +2040,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceC
     const obj7 = { users: tmp4, guildId: id };
     id = undefined;
     const obj6 = { style: tmp.body, children: items3 };
-    const tmp2Result = stateFromStores(14094);
+    const tmp2Result = stateFromStores(14127);
     if (stateFromStores != null) {
       id = stateFromStores.id;
     }
@@ -2049,7 +2049,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceC
     if (stateFromStores1) {
       const obj9 = {
         accessibilityRole: "button",
-        accessibilityLabel: stateFromStores(8923)(obj10),
+        accessibilityLabel: stateFromStores(8939)(obj10),
         accessibilityHint: intl3.string(channel(1128).t["9C444m"]),
         onPress() {
               closure_3({ action: "OPEN_VOICE_CHANNEL" });
@@ -2062,19 +2062,19 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceC
             },
         children: closure_24(Text2, obj11)
       };
-      const PressableOpacity = tmp6(6462).PressableOpacity;
+      const PressableOpacity = tmp6(6856).PressableOpacity;
       obj10 = { channel };
       intl3 = tmp6(1128).intl;
       obj11 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: items4 };
-      const obj12 = { style: tmp.voiceCallNameIconWrapper, children: closure_23(stateFromStores(10558), obj13) };
-      Text2 = tmp6(5187).Text;
+      const obj12 = { style: tmp.voiceCallNameIconWrapper, children: closure_23(stateFromStores(10572), obj13) };
+      Text2 = tmp6(5195).Text;
       obj13 = { channel, size: "sm", color: "mobile-text-heading-primary" };
       items4 = [closure_23(closure_9, obj12), tmp5];
       tmp13Result = tmp18(PressableOpacity, obj9);
     } else {
       const obj14 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: items5 };
-      const obj15 = { style: tmp.voiceCallNameIconWrapper, children: closure_23(stateFromStores(10558), obj16) };
-      const Text = tmp6(5187).Text;
+      const obj15 = { style: tmp.voiceCallNameIconWrapper, children: closure_23(stateFromStores(10572), obj16) };
+      const Text = tmp6(5195).Text;
       obj16 = { channel, size: "sm", color: "mobile-text-heading-primary" };
       items5 = [closure_23(closure_9, obj15), tmp5];
       tmp13Result = tmp13(Text, obj14);
@@ -2096,12 +2096,12 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceC
             },
         children: closure_23(Text3, obj19)
       };
-      const PressableOpacity2 = tmp6(6462).PressableOpacity;
+      const PressableOpacity2 = tmp6(6856).PressableOpacity;
       intl4 = tmp6(1128).intl;
       intl5 = tmp6(1128).intl;
       obj18 = { guildName: stateFromStores.name };
       obj19 = { variant: "text-xs/medium", children: intl6.format(channel(1128).t["hq/Qze"], obj20) };
-      Text3 = tmp6(5187).Text;
+      Text3 = tmp6(5195).Text;
       intl6 = tmp6(1128).intl;
       obj20 = { guildName: stateFromStores.name };
       tmp18Result2 = tmp18(PressableOpacity2, obj17);
@@ -2110,7 +2110,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceC
     items3[1] = closure_24(closure_9, obj8);
     const items7 = [closure_24(closure_9, obj6), ];
     const obj21 = { channel, isInChannel, onAction: tmp11 };
-    items7[1] = closure_23(channel(14087).VoiceChannelButtons, obj21);
+    items7[1] = closure_23(channel(14120).VoiceChannelButtons, obj21);
     obj5.children = items7;
     return closure_24(tmp14, obj5);
   }

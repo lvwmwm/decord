@@ -1,8 +1,8 @@
-// Module ID: 18423
-// Function ID: 18424
+// Module ID: 18452
+// Function ID: 18453
 // Dependencies: [2]
 
-// Module 18423
+// Module 18452
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DisguiseSpotIllustration-3x.png.js");

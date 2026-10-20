@@ -1,9 +1,9 @@
-// Module ID: 6962
-// Function ID: 6963
+// Module ID: 7040
+// Function ID: 7041
 // Name: SettingSearchSessionAnalyticsManager
 // Dependencies: [1087, 1281, 1267, 2]
 
-// Module 6962 (SettingSearchSessionAnalyticsManager)
+// Module 7040 (SettingSearchSessionAnalyticsManager)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import v1 from "v1" /* 1281 */;

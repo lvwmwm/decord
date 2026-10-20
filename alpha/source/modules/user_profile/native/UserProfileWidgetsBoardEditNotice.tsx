@@ -1,19 +1,19 @@
-// Module ID: 14144
-// Function ID: 14145
+// Module ID: 14177
+// Function ID: 14178
 // Name: UserProfileWidgetsBoardEditNotice
-// Dependencies: [19, 17, 2065, 21, 5191, 587, 558, 576, 8641, 2052, 10312, 5145, 5187, 1128, 6462, 6485, 2]
+// Dependencies: [19, 17, 4797, 21, 4945, 587, 558, 576, 8657, 4784, 10326, 5648, 5195, 1128, 6856, 6879, 2]
 
-// Module 14144 (UserProfileWidgetsBoardEditNotice)
+// Module 14177 (UserProfileWidgetsBoardEditNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
-import dismissible_content from "dismissible_content" /* 2052 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
-import XSmallIcon from "XSmallIcon" /* 6485 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8641 */;
+import dismissible_content from "dismissible_content" /* 4784 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
+import XSmallIcon from "XSmallIcon" /* 6879 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8657 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp5;
-const SelectedDismissibleContentDefault = tmp5(10312);
+const SelectedDismissibleContentDefault = tmp5(10326);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -43,7 +43,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
   const tmp6 = UserProfileSharedStylesDefault();
   importDefault = tmp6;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [tmp(2052).DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE];
+    let items = [tmp(4784).DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE];
     cResult[0] = items;
     first = items;
   } else {
@@ -73,10 +73,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
         items = [card.card, closure_0.container];
         const obj2 = { style: closure_0.icon, children: hasOwnProperty(CircleInformationIcon, obj3) };
         obj3 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-        CircleInformationIcon = tmp(5145).CircleInformationIcon;
+        CircleInformationIcon = tmp(5648).CircleInformationIcon;
         items1 = [hasOwnProperty(View, obj2), , ];
         const obj4 = { style: closure_0.text, variant: "text-sm/medium", color: "text-strong", children: intl.string(intl3.t.kv8ULD) };
-        const Text = tmp(5187).Text;
+        const Text = tmp(5195).Text;
         intl = tmp(1128).intl;
         items1[1] = hasOwnProperty(Text, obj4);
         const obj5 = {
@@ -88,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
           style: closure_0.closeButton,
           children: hasOwnProperty(XSmallIcon.XSmallIcon, { size: "sm" })
         };
-        const PressableOpacity = tmp(6462).PressableOpacity;
+        const PressableOpacity = tmp(6856).PressableOpacity;
         intl2 = tmp(1128).intl;
         items1[2] = hasOwnProperty(PressableOpacity, obj5);
         tmp3 = metroRequire(View, obj);
@@ -124,10 +124,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
         items = [card.card, closure_0.container];
         const obj2 = { style: closure_0.icon, children: hasOwnProperty(CircleInformationIcon, obj3) };
         obj3 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-        CircleInformationIcon = tmp(5145).CircleInformationIcon;
+        CircleInformationIcon = tmp(5648).CircleInformationIcon;
         items1 = [hasOwnProperty(View, obj2), , ];
         const obj4 = { style: closure_0.text, variant: "text-sm/medium", color: "text-strong", children: intl.string(intl3.t.kv8ULD) };
-        const Text = tmp(5187).Text;
+        const Text = tmp(5195).Text;
         intl = tmp(1128).intl;
         items1[1] = hasOwnProperty(Text, obj4);
         const obj5 = {
@@ -139,7 +139,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
           style: closure_0.closeButton,
           children: hasOwnProperty(XSmallIcon.XSmallIcon, { size: "sm" })
         };
-        const PressableOpacity = tmp(6462).PressableOpacity;
+        const PressableOpacity = tmp(6856).PressableOpacity;
         intl2 = tmp(1128).intl;
         items1[2] = hasOwnProperty(PressableOpacity, obj5);
         tmp3 = metroRequire(View, obj);

@@ -1,15 +1,15 @@
-// Module ID: 19063
-// Function ID: 19064
+// Module ID: 19102
+// Function ID: 19103
 // Name: AVErrorStreamSoundshareFailed
-// Dependencies: [6153, 7697, 1087, 5389, 19055, 6156, 2]
+// Dependencies: [6590, 7760, 1087, 5853, 19094, 6593, 2]
 
-// Module 19063 (AVErrorStreamSoundshareFailed)
+// Module 19102 (AVErrorStreamSoundshareFailed)
 import Constants from "Constants" /* 1087 */;
-import AVError from "AVError" /* 5389 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6156 */;
-import AVErrorContext from "AVErrorContext" /* 19055 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
-import HookErrorStore from "HookErrorStore" /* 7697 */;
+import AVError from "AVError" /* 5853 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6593 */;
+import AVErrorContext from "AVErrorContext" /* 19094 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6590 */;
+import HookErrorStore from "HookErrorStore" /* 7760 */;
 import size from "module_2" /* 2 */;
 
 const MediaEngineHookTypes = Constants.MediaEngineHookTypes;

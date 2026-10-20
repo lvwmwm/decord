@@ -1,16 +1,16 @@
-// Module ID: 17744
-// Function ID: 17745
+// Module ID: 17777
+// Function ID: 17778
 // Name: FrameSurfaceState
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 5187, 6433, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5195, 6828, 2]
 
-// Module 17744 (FrameSurfaceState)
+// Module 17777 (FrameSurfaceState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5187 */;
+import Text_Text from "Text/Text" /* 5195 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let closure_4;
 let obj2;
 let obj3;
 let tmp;
-const ActivityIndicator_ActivityIndicator = tmp(6433);
+const ActivityIndicator_ActivityIndicator = tmp(6828);
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let createStyles = createStyles_mod;
@@ -47,7 +47,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameSurface
     let tmp6 = null;
     if (null != heading) {
       const obj2 = { variant: "heading-md/semibold", color: "text-default", children: heading };
-      tmp6 = _false(tmp(5187).Heading, obj2);
+      tmp6 = _false(tmp(5195).Heading, obj2);
     }
     cResult[0] = heading;
     cResult[1] = tmp6;
@@ -59,7 +59,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameSurface
     let tmp9 = null;
     if (null != description) {
       const obj3 = { variant: "text-sm/normal", color: "text-muted", children: description };
-      tmp9 = _false(tmp(5187).Text, obj3);
+      tmp9 = _false(tmp(5195).Text, obj3);
     }
     cResult[2] = description;
     cResult[3] = tmp9;
@@ -71,7 +71,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameSurface
     let tmp12 = null;
     if (null != error) {
       const obj4 = { variant: "text-sm/normal", color: "text-feedback-critical", children: error };
-      tmp12 = _false(tmp(5187).Text, obj4);
+      tmp12 = _false(tmp(5195).Text, obj4);
     }
     cResult[4] = error;
     cResult[5] = tmp12;

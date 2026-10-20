@@ -1,9 +1,9 @@
-// Module ID: 13156
-// Function ID: 13157
+// Module ID: 13188
+// Function ID: 13189
 // Name: ChatBeginningRow
-// Dependencies: [32, 5, 19, 17, 5181, 2067, 7261, 8911, 7074, 7586, 2072, 2086, 2068, 4843, 2128, 2090, 4845, 4855, 6222, 1392, 1087, 2075, 11168, 13157, 13118, 10739, 21, 5191, 587, 558, 576, 8471, 1128, 8473, 8505, 8506, 8478, 8480, 5462, 5187, 4901, 4913, 6462, 11183, 1202, 13158, 9996, 10023, 504, 5057, 8247, 5521, 8877, 7259, 7256, 10314, 5127, 5179, 13159, 13160, 38, 11, 13162, 4903, 8910, 8035, 13168, 13167, 8955, 13166, 2131, 13281, 13285, 7988, 7290, 5479, 13290, 5401, 13291, 7136, 11046, 1267, 3883, 13294, 10655, 8161, 7086, 7081, 4904, 9045, 5155, 13296, 2002, 7130, 13287, 13297, 8585, 8577, 7162, 13298, 8589, 7329, 6190, 13311, 6436, 7293, 10533, 13312, 10740, 13319, 8857, 11165, 8770, 5033, 2052, 11177, 11169, 11166, 11167, 11173, 9327, 10639, 7200, 10592, 5137, 13323, 13327, 2]
+// Dependencies: [32, 5, 19, 17, 4946, 4799, 7330, 8927, 7151, 7649, 4804, 4818, 4800, 4878, 4860, 4822, 4880, 4890, 6652, 1392, 1087, 4807, 11183, 13189, 13150, 10752, 21, 4945, 587, 558, 576, 8487, 1128, 8489, 8521, 8522, 8494, 8496, 5228, 5195, 5622, 5213, 6856, 11198, 1202, 13190, 10010, 10037, 504, 4994, 8263, 5565, 8893, 7328, 7325, 10328, 5166, 5667, 13191, 13192, 38, 11, 13194, 5624, 8926, 8098, 13200, 13199, 8971, 13198, 2068, 13313, 13317, 8051, 7357, 5205, 13322, 5865, 13323, 7205, 11061, 1267, 3820, 13326, 10668, 8224, 7163, 7158, 5625, 9061, 5171, 13328, 2002, 7199, 13319, 13329, 13330, 8601, 8593, 7231, 13331, 8605, 7395, 6620, 13344, 6831, 7360, 10547, 13345, 10753, 13352, 13356, 8873, 11180, 8786, 4970, 4784, 11192, 11184, 11181, 11182, 11188, 9343, 10652, 7269, 10606, 5640, 13357, 13361, 2]
 
-// Module 13156 (ChatBeginningRow)
+// Module 13188 (ChatBeginningRow)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,75 +11,75 @@ import intl10 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import dismissible_content from "dismissible_content" /* 2052 */;
-import ChannelRecord from "ChannelRecord" /* 2072 */;
-import ChannelConstants from "ChannelConstants" /* 2075 */;
-import GuildRecord from "GuildRecord" /* 2086 */;
-import _modDef3883 from "module_3883" /* 3883 */;
-import LinkingDefault from "Linking" /* 4901 */;
-import ToastUtils from "ToastUtils" /* 4903 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4904 */;
-import useToken from "useToken" /* 4913 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
-import UserUtilsDefault from "UserUtils" /* 5057 */;
-import useThemeDefault from "useTheme" /* 5127 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5179 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import useAlertStore from "useAlertStore" /* 5401 */;
-import components_Button_Button from "components/Button/Button" /* 5479 */;
-import useChannelNameDefault from "useChannelName" /* 5521 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7074 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7081 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7086 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7136 */;
-import ClipboardUtils from "ClipboardUtils" /* 7162 */;
-import ReportModals from "ReportModals" /* 7988 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8247 */;
-import ChatIcon from "ChatIcon" /* 8471 */;
-import ThreadIcon from "ThreadIcon" /* 8473 */;
-import TextLockIcon from "TextLockIcon" /* 8478 */;
-import TextIcon from "TextIcon" /* 8480 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8585 */;
-import RowButton2 from "RowButton" /* 8857 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8955 */;
-import BellIcon from "BellIcon" /* 9045 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9327 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9996 */;
-import PencilIcon from "PencilIcon" /* 10023 */;
-import GroupPlusIcon from "GroupPlusIcon" /* 10639 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10739 */;
-import openGroupDMAddMembers from "openGroupDMAddMembers" /* 11165 */;
-import GroupDMConstants from "GroupDMConstants" /* 11168 */;
-import showChatGDMUpsellActionSheetDefault from "showChatGDMUpsellActionSheet" /* 11177 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11183 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 13118 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13290 */;
-import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 13291 */;
-import openConjureProjectInBuilderDefault from "openConjureProjectInBuilder" /* 13294 */;
-import PortalAccessibilityWorkaroundViewDefault from "PortalAccessibilityWorkaroundView" /* 13327 */;
+import _modDef3820 from "module_3820" /* 3820 */;
+import dismissible_content from "dismissible_content" /* 4784 */;
+import ChannelRecord from "ChannelRecord" /* 4804 */;
+import ChannelConstants from "ChannelConstants" /* 4807 */;
+import GuildRecord from "GuildRecord" /* 4818 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4970 */;
+import UserUtilsDefault from "UserUtils" /* 4994 */;
+import useThemeDefault from "useTheme" /* 5166 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import components_Button_Button from "components/Button/Button" /* 5205 */;
+import useToken from "useToken" /* 5213 */;
+import useChannelNameDefault from "useChannelName" /* 5565 */;
+import LinkingDefault from "Linking" /* 5622 */;
+import ToastUtils from "ToastUtils" /* 5624 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5625 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5667 */;
+import useAlertStore from "useAlertStore" /* 5865 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7151 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7158 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7163 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7205 */;
+import ClipboardUtils from "ClipboardUtils" /* 7231 */;
+import ReportModals from "ReportModals" /* 8051 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8263 */;
+import ChatIcon from "ChatIcon" /* 8487 */;
+import ThreadIcon from "ThreadIcon" /* 8489 */;
+import TextLockIcon from "TextLockIcon" /* 8494 */;
+import TextIcon from "TextIcon" /* 8496 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8593 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8601 */;
+import RowButton2 from "RowButton" /* 8873 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8971 */;
+import BellIcon from "BellIcon" /* 9061 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9343 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10010 */;
+import PencilIcon from "PencilIcon" /* 10037 */;
+import GroupPlusIcon from "GroupPlusIcon" /* 10652 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10752 */;
+import openGroupDMAddMembers from "openGroupDMAddMembers" /* 11180 */;
+import GroupDMConstants from "GroupDMConstants" /* 11183 */;
+import showChatGDMUpsellActionSheetDefault from "showChatGDMUpsellActionSheet" /* 11192 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11198 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 13150 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13322 */;
+import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 13323 */;
+import openConjureProjectInBuilderDefault from "openConjureProjectInBuilder" /* 13326 */;
+import PortalAccessibilityWorkaroundViewDefault from "PortalAccessibilityWorkaroundView" /* 13361 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7261 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8911 */;
-import UserProfileStore from "UserProfileStore" /* 7586 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildChannelStore from "GuildChannelStore" /* 4843 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
+import AccessibilityStore from "AccessibilityStore" /* 4946 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7330 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8927 */;
+import UserProfileStore from "UserProfileStore" /* 7649 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import GuildChannelStore from "GuildChannelStore" /* 4878 */;
+import GuildMemberStore from "GuildMemberStore" /* 4860 */;
+import GuildStore from "GuildStore" /* 4822 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
+import RelationshipStore from "RelationshipStore" /* 4890 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6652 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
-import GuildProgressConstants from "GuildProgressConstants" /* 13157 */;
+import GuildProgressConstants from "GuildProgressConstants" /* 13189 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -110,11 +110,12 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
+let obj4;
 let size;
 let tmp;
 let tmp5;
-const AssetRegistryDefault = tmp5(13158);
-const ChannelAccessInfoDefault = tmp(13159);
+const AssetRegistryDefault = tmp5(13190);
+const ChannelAccessInfoDefault = tmp(13191);
 function MuteAppButton(channel) {
   let Icon;
   let WHITE;
@@ -129,7 +130,7 @@ function MuteAppButton(channel) {
   let tmp6Result = null;
   if (user.bot) {
     let str = "destructive";
-    const Button = tmp2(5479).Button;
+    const Button = tmp2(5205).Button;
     if (stateFromStores) {
       str = "secondary";
     }
@@ -153,7 +154,7 @@ function MuteAppButton(channel) {
           } else {
             const obj3 = { channel };
             const tmpResult2 = ActionSheetActionCreatorsDefault;
-            tmpResult2.openLazy(asyncRequire(13296, dependencyMap.paths), "MessageNotificationChannelActionSheet", obj3);
+            tmpResult2.openLazy(asyncRequire(13328, dependencyMap.paths), "MessageNotificationChannelActionSheet", obj3);
           }
         }
     };
@@ -165,7 +166,7 @@ function MuteAppButton(channel) {
     } else {
       stringResult = string(t.w4m945);
     }
-    obj3 = { size: tmp2(1202).Icon.Sizes.SMALL, source: stateFromStores(stateFromStores ? 10655 : 8161), color: WHITE, style: tmp.appDMButtonIcon };
+    obj3 = { size: tmp2(1202).Icon.Sizes.SMALL, source: stateFromStores(stateFromStores ? 10668 : 8224), color: WHITE, style: tmp.appDMButtonIcon };
     Icon = tmp2(1202).Icon;
     WHITE = undefined;
     if (!stateFromStores) {
@@ -184,14 +185,16 @@ function ChatBeginningRowDM(channel) {
   let intl3;
   let intl4;
   let intl5;
+  let isOwned;
   let items6;
   let items8;
   let obj10;
   let obj16;
   let obj6;
   let obj8;
+  let project;
   let relationshipType;
-  let tmp27;
+  let tmp28;
   channel = channel.channel;
   const user = channel.user;
   authorizedAppsFetchState = undefined;
@@ -199,9 +202,9 @@ function ChatBeginningRowDM(channel) {
   const showingSpamBanner = channel.showingSpamBanner;
   let tmp = closure_47();
   dependencyMap = tmp;
-  const analyticsLocations = user(7130)().analyticsLocations;
+  const analyticsLocations = user(7199)().analyticsLocations;
   let id;
-  const tmp4 = user(13287);
+  const tmp4 = user(13319);
   if (user != null) {
     id = user.id;
   }
@@ -235,14 +238,15 @@ function ChatBeginningRowDM(channel) {
   }, items2);
   let id1;
   const isSystemDMResult = channel.isSystemDM();
-  const tmp2Result = user(13297);
+  const tmp2Result = user(13329);
   if (tmp4Result != null) {
     id1 = tmp4Result.id;
   }
-  const tmp2ResultResult = tmp2Result(id1, user.bot);
-  const project = tmp2ResultResult.project;
+  ({ project, isOwned } = tmp2Result(id1, user.bot));
+  tmp2Result(id1, user.bot);
   let items3 = [user, channel];
-  const isOwned = tmp2ResultResult.isOwned;
+  const tmp7Result = channel(13330);
+  const isEmptyMessageRequestChat = tmp7Result.useIsEmptyMessageRequestChat(channel.id);
   const effect = authorizedAppsFetchState.useEffect(() => {
     let getAvatarURL;
     let guild_id;
@@ -275,9 +279,9 @@ function ChatBeginningRowDM(channel) {
   if (null == user) {
     return null;
   } else {
-    const tmp2Result3 = user(5057);
+    const tmp2Result3 = user(4994);
     userTag = tmp2Result3.getUserTag(user, { decoration: "never", identifiable: "always" });
-    const tmp2Result4 = user(5057);
+    const tmp2Result4 = user(4994);
     const name = tmp2Result4.getName(user);
     let intl6 = tmp7(1128).intl;
     let stringResult = intl6.string(tmp7(1128).t.Rzvnig);
@@ -292,9 +296,8 @@ function ChatBeginningRowDM(channel) {
       const obj2 = ToastUtils;
       const result = obj2.presentUsernameCopied();
     }
-    let tmp18 = closure_44;
     let obj4 = { channel, user, showingSpamBanner };
-    const tmp20 = closure_44(closure_56, obj4);
+    const tmp21 = closure_44(closure_56, obj4);
     let obj5 = {
       accessibilityRole: "button",
       onPress: function handleOpenProfile() {
@@ -304,34 +307,34 @@ function ChatBeginningRowDM(channel) {
       accessibilityLabel: intl2.string(channel(1128).t.iXAna6),
       children: closure_44(Avatar, obj6)
     };
-    const PressableOpacity = tmp7(6462).PressableOpacity;
+    const PressableOpacity = tmp7(6856).PressableOpacity;
     intl2 = tmp7(1128).intl;
     obj6 = { style: tmp.avatar, user, guildId: channel.guild_id, size: channel(1202).AvatarSizes.XXLARGE, avatarDecoration: user.avatarDecoration };
     Avatar = tmp7(1202).Avatar;
-    const items5 = [closure_44(PressableOpacity, obj5), , , , , , ];
-    let obj7 = { accessibilityRole: "button", onPress: handleCopyUserTag, accessibilityHint: intl3.string(channel(1128).t.y5MwJy), children: closure_44(channel(5187).Text, obj8) };
-    const PressableOpacity2 = tmp7(6462).PressableOpacity;
+    const items5 = [closure_44(PressableOpacity, obj5), , , , , , , ];
+    let obj7 = { accessibilityRole: "button", onPress: handleCopyUserTag, accessibilityHint: intl3.string(channel(1128).t.y5MwJy), children: closure_44(channel(5195).Text, obj8) };
+    const PressableOpacity2 = tmp7(6856).PressableOpacity;
     intl3 = tmp7(1128).intl;
     obj8 = { variant: "heading-xxl/extrabold", color: "mobile-text-heading-primary", children: name };
     items5[1] = closure_44(PressableOpacity2, obj7);
-    let tmp18Result = null;
+    let tmp19Result = null;
     if (!user.isProvisional) {
-      let obj9 = { accessibilityRole: "button", onPress: handleCopyUserTag, accessibilityHint: intl4.string(channel(1128).t.y5MwJy), children: tmp18(channel(5187).Text, obj10) };
-      const PressableOpacity3 = tmp7(6462).PressableOpacity;
+      let obj9 = { accessibilityRole: "button", onPress: handleCopyUserTag, accessibilityHint: intl4.string(channel(1128).t.y5MwJy), children: closure_44(channel(5195).Text, obj10) };
+      const PressableOpacity3 = tmp7(6856).PressableOpacity;
       intl4 = tmp7(1128).intl;
       obj10 = { variant: "heading-lg/medium", color: "text-default", children: userTag };
-      tmp18Result = tmp18(PressableOpacity3, obj9);
+      tmp19Result = tmp19(PressableOpacity3, obj9);
     }
-    items5[2] = tmp18Result;
+    items5[2] = tmp19Result;
     let obj11 = { style: tmp.dmBeginningMessage, variant: "text-md/medium", color: "text-default", children: stringResult };
-    items5[3] = tmp18(channel(5187).Text, obj11);
-    let tmp18Result3 = null;
+    items5[3] = closure_44(channel(5195).Text, obj11);
+    let tmp19Result4 = null;
     if (user.isProvisional) {
       let obj12 = { style: tmp.provisionalAccountExplainer, userId: user.id, iconSize: 14 };
-      tmp18Result3 = tmp18(tmp7(13319).ChatProvisionalAccountExplainerCard, obj12);
+      tmp19Result4 = tmp19(tmp7(13352).ChatProvisionalAccountExplainerCard, obj12);
     }
-    items5[4] = tmp18Result3;
-    let tmp21Result;
+    items5[4] = tmp19Result4;
+    let tmp22Result;
     if (null != stateFromStores) {
       if (stateFromStores.length >= 1) {
         let num2 = 5;
@@ -345,82 +348,82 @@ function ChatBeginningRowDM(channel) {
             let obj2 = {
               user: tmp,
               onPressMutualGuild(arg0) {
-                  const obj = channel(closure_1_2[100]);
+                  const obj = channel(closure_1_2[101]);
                   const result = obj.trackUserProfileAction({ action: "PRESS_MUTUAL_GUILD" });
-                  const obj2 = channel(closure_1_2[101]);
+                  const obj2 = channel(closure_1_2[102]);
                   obj2.transitionToGuild(arg0);
                   const obj3 = user(closure_1_2[90]);
                   obj3.hideActionSheet();
-                  const obj4 = user(closure_1_2[102]);
+                  const obj4 = user(closure_1_2[103]);
                   obj4.popWithKey(closure_1_42);
                 }
             };
-            obj.openLazy(asyncRequire(13298, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
+            obj.openLazy(asyncRequire(13331, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
           }
         }
         const substr = slice(0, num2);
         let obj13 = { accessibilityRole: "button", onPress: handleOpenMutualGuilds, style: tmp.mutualGuildsContainer, children: items6 };
-        const PressableOpacity4 = tmp7(6462).PressableOpacity;
+        const PressableOpacity4 = tmp7(6856).PressableOpacity;
         let obj14 = {
-          size: channel(6436).GuildIconSizes.SMALL,
+          size: channel(6831).GuildIconSizes.SMALL,
           names: substr.map((guild) => guild.guild.name),
           totalCount: stateFromStores.length,
           children: substr.map((guild) => {
                   guild = guild.guild;
-                  const obj = { guild, size: channel(closure_2[104]).GuildIconSizes.SMALL };
-                  const tmp = user(closure_2[104]);
+                  const obj = { guild, size: channel(closure_2[105]).GuildIconSizes.SMALL };
+                  const tmp = user(closure_2[105]);
                   return closure_1_44(tmp, obj, guild.id);
                 })
         };
-        const GuildIconPile = tmp7(13311).GuildIconPile;
-        items6 = [tmp18(GuildIconPile, obj14), ];
+        const GuildIconPile = tmp7(13344).GuildIconPile;
+        items6 = [closure_44(GuildIconPile, obj14), ];
         let obj15 = { style: tmp.mutualGuildsLabel, variant: "text-sm/medium", color: "text-default", children: intl5.format(channel(1128).t.eE3oep, obj16) };
-        let Text = tmp7(5187).Text;
+        let Text = tmp7(5195).Text;
         intl5 = tmp7(1128).intl;
         obj16 = { count: stateFromStores.length };
-        items6[1] = tmp18(Text, obj15);
-        tmp21Result = tmp21(PressableOpacity4, obj13);
+        items6[1] = closure_44(Text, obj15);
+        tmp22Result = tmp22(PressableOpacity4, obj13);
       }
     }
-    items5[5] = tmp21Result;
-    const obj17 = { style: tmp.dmButtonRow, children: tmp27 };
-    tmp27 = null;
-    const tmp26 = closure_7;
+    items5[5] = tmp22Result;
+    const obj17 = { style: tmp.dmButtonRow, children: tmp28 };
+    tmp28 = null;
+    const tmp27 = closure_7;
     if (!user.isNonUserBot()) {
-      let tmp21Result4;
+      let tmp22Result4;
       if (user.bot) {
-        let tmp21Result3 = null;
+        let tmp22Result3 = null;
         if (null != tmp4Result) {
           if (null != authorizedAppToken) {
-            let tmp18Result4;
+            let tmp19Result5;
             const obj18 = { channel, user };
-            const items7 = [tmp18(MuteAppButton, obj18), ];
+            const items7 = [closure_44(MuteAppButton, obj18), ];
             if (null != project) {
               const obj19 = { project };
-              tmp18Result4 = tmp18(closure_58, obj19);
+              tmp19Result5 = tmp19(closure_58, obj19);
             } else {
-              tmp18Result4 = null;
+              tmp19Result5 = null;
               if (null != authorizedAppToken) {
-                tmp18Result4 = null;
+                tmp19Result5 = null;
                 if (false === isOwned) {
                   const obj20 = { user, application: tmp4Result, channel, oauth2Token: authorizedAppToken };
-                  tmp18Result4 = tmp18(closure_57, obj20);
+                  tmp19Result5 = tmp19(closure_57, obj20);
                 }
               }
             }
             const obj21 = { children: items7 };
-            items7[1] = tmp18Result4;
-            tmp21Result3 = tmp21(tmp22, obj21);
+            items7[1] = tmp19Result5;
+            tmp22Result3 = tmp22(tmp23, obj21);
           } else {
-            tmp21Result3 = null;
+            tmp22Result3 = null;
           }
         }
         const obj22 = { children: items8 };
-        items8 = [tmp21Result3, tmp20];
-        tmp21Result4 = tmp21(tmp22, obj22);
+        items8 = [tmp22Result3, tmp21];
+        tmp22Result4 = tmp22(tmp23, obj22);
       } else {
-        const obj23 = { reportButton: tmp20 };
-        tmp21Result4 = tmp18(function RelationshipButtons(reportButton) {
+        const obj23 = { reportButton: tmp21 };
+        tmp22Result4 = tmp19(function RelationshipButtons(reportButton) {
           let format;
           let intl;
           let intl2;
@@ -439,7 +442,7 @@ function ChatBeginningRowDM(channel) {
           function handleBlock() {
             const obj = user(paths[90]);
             const obj2 = { userId: user.id, channelId: id.id };
-            obj.openLazy(channel(paths[92])(paths[108], paths.paths), closure_2_43, obj2);
+            obj.openLazy(channel(paths[92])(paths[109], paths.paths), closure_2_43, obj2);
           }
           let obj = get_initialized;
           const items = [RelationshipStore];
@@ -463,7 +466,7 @@ function ChatBeginningRowDM(channel) {
               size: "sm",
               variant: "active",
               onPress: function handleAcceptFriend() {
-                  const obj = user(paths[106]);
+                  const obj = user(paths[107]);
                   const obj2 = { userId: user.id, location: constants.DM_CHANNEL };
                   const result = obj.maybeConfirmFriendRequestAccept(obj2);
                 }
@@ -476,7 +479,7 @@ function ChatBeginningRowDM(channel) {
               size: "sm",
               variant: "secondary",
               onPress: function handleIgnoreFriendRequest() {
-                  const obj = user(paths[105]);
+                  const obj = user(paths[106]);
                   const obj2 = { location: constants.DM_CHANNEL };
                   obj.cancelFriendRequest(user.id, obj2);
                 }
@@ -506,7 +509,7 @@ function ChatBeginningRowDM(channel) {
                   let obj3;
                   const obj2 = { userId: user.id, context: obj3 };
                   obj3 = { location: constants.DM_CHANNEL };
-                  const obj = user(paths[105]);
+                  const obj = user(paths[106]);
                   obj.addRelationship(obj2);
                 }
                 const obj11 = { text: intl4.string(intl10.t["PMsq/b"]), size: "sm", variant: "active", onPress: handleAddFriend };
@@ -521,13 +524,13 @@ function ChatBeginningRowDM(channel) {
                 let obj = {
                   userDisplayName: obj2.getName(closure_1_1),
                   onConfirm() {
-                    const obj = user(paths[105]);
+                    const obj = user(paths[106]);
                     const obj2 = { location: constants.DM_CHANNEL };
                     obj.removeFriend(id.id, obj2);
                   }
                 };
-                const confirmRemoveFriend = channel(paths[107]).confirmRemoveFriend;
-                channel(paths[107]);
+                const confirmRemoveFriend = channel(paths[108]).confirmRemoveFriend;
+                channel(paths[108]);
                 obj2 = user(paths[49]);
                 confirmRemoveFriend(obj);
               }
@@ -537,7 +540,7 @@ function ChatBeginningRowDM(channel) {
               tmp4Result2 = tmp4(Button3, obj12);
             } else if (constants.BLOCKED === stateFromStores) {
               function handleUnblock() {
-                const obj = user(paths[105]);
+                const obj = user(paths[106]);
                 const obj2 = { location: constants.DM_CHANNEL };
                 obj.unblockUser(user.id, obj2);
               }
@@ -548,7 +551,7 @@ function ChatBeginningRowDM(channel) {
             } else {
               tmp4Result2 = null;
               if (constants.PENDING_OUTGOING === stateFromStores) {
-                const obj14 = { text: intl9.string(intl10.t.xMH6vD), size: "sm", variant: "active", disabled: true, onPress: "Boolean" };
+                const obj14 = { text: intl9.string(intl10.t.xMH6vD), size: "sm", variant: "active", disabled: true, onPress: "a" };
                 const Button8 = components_Button_Button.Button;
                 intl9 = intl10.intl;
                 tmp4Result2 = tmp4(Button8, obj14);
@@ -566,11 +569,17 @@ function ChatBeginningRowDM(channel) {
           }
         }, obj23);
       }
-      tmp27 = tmp21Result4;
+      tmp28 = tmp22Result4;
     }
-    const obj24 = { children: items5 };
-    items5[6] = tmp18(tmp26, obj17);
-    return closure_46(closure_45, obj24);
+    items5[6] = closure_44(tmp27, obj17);
+    let tmp19Result6 = null;
+    if (isEmptyMessageRequestChat) {
+      const obj24 = { style: tmp.dmEmptyChat };
+      tmp19Result6 = tmp19(tmp2(13356), obj24);
+    }
+    const obj25 = { children: items5 };
+    items5[7] = tmp19Result6;
+    return closure_46(closure_45, obj25);
   }
 }
 ({ ActivityIndicator: metroRequire, View: metroImportDefault } = react_native);
@@ -586,10 +595,11 @@ let closure_43 = RestrictionConfirmationConstants.BLOCK_CONFIRMATION_ACTION_SHEE
 let Fragment = Fragment_mod;
 ({ jsx: closure_44, Fragment: closure_45, jsxs: closure_46 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: { position: "absolute", width: "100%" }, contentWrapper: { paddingVertical: 8, paddingHorizontal: 12 }, title: { marginTop: 16 }, subtitle: { marginBottom: 16, lineHeight: 20 }, gdmInviteFriends: obj2, gdmShareInviteLink: obj3, gdmShareInviteLinkNoRelationships: { marginTop: 16 }, ctaLabel: { marginLeft: 8 }, ctaContainer: { flexDirection: "row", flexWrap: "wrap" }, ctaButton: { flexDirection: "row", alignItems: "center" }, ctaAddRoles: { paddingRight: 24 }, avatar: { marginBottom: 16 }, avatarRedesign: { marginBottom: 16 }, centerHeader: { paddingHorizontal: 8, alignItems: "center" }, gdmText: { textAlign: "center" }, dmTitle: { marginBottom: 8, textAlign: "center" }, dmBeginningMessage: { marginTop: 8 }, provisionalAccountExplainer: { marginTop: 12 }, mutualGuildsLabel: { marginTop: 8, marginLeft: 8, height: 26 }, mutualGuildsContainer: { flexDirection: "row", alignItems: "center", marginTop: 6 }, iconContainer: size, threadDetails: { lineHeight: 20 }, threadCreatorRoleDot: { paddingRight: 4, paddingTop: 2 }, tagContainer: { marginTop: 8, display: "flex", flexDirection: "row", flexWrap: "wrap", rowGap: 4 }, dmButtonRow: { marginTop: 16, flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: 8 }, pendingIncoming: { flexDirection: "column", gap: 8 }, pendingIncomingButtons: { flexDirection: "row", flexWrap: "wrap", gap: 8 }, appDMButtonIcon: { marginRight: 2 }, formCtaIcon: { width: 32, height: 32 } };
+let obj = { container: { position: "absolute", width: "100%" }, contentWrapper: { paddingVertical: 8, paddingHorizontal: 12 }, title: { marginTop: 16 }, subtitle: { marginBottom: 16, lineHeight: 20 }, gdmInviteFriends: obj2, gdmShareInviteLink: obj3, gdmShareInviteLinkNoRelationships: { marginTop: 16 }, ctaLabel: { marginLeft: 8 }, ctaContainer: { flexDirection: "row", flexWrap: "wrap" }, ctaButton: { flexDirection: "row", alignItems: "center" }, ctaAddRoles: { paddingRight: 24 }, avatar: { marginBottom: 16 }, avatarRedesign: { marginBottom: 16 }, centerHeader: { paddingHorizontal: 8, alignItems: "center" }, gdmText: { textAlign: "center" }, dmTitle: { marginBottom: 8, textAlign: "center" }, dmBeginningMessage: { marginTop: 8 }, dmEmptyChat: obj4, provisionalAccountExplainer: { marginTop: 12 }, mutualGuildsLabel: { marginTop: 8, marginLeft: 8, height: 26 }, mutualGuildsContainer: { flexDirection: "row", alignItems: "center", marginTop: 6 }, iconContainer: size, threadDetails: { lineHeight: 20 }, threadCreatorRoleDot: { paddingRight: 4, paddingTop: 2 }, tagContainer: { marginTop: 8, display: "flex", flexDirection: "row", flexWrap: "wrap", rowGap: 4 }, dmButtonRow: { marginTop: 16, flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: 8 }, pendingIncoming: { flexDirection: "column", gap: 8 }, pendingIncomingButtons: { flexDirection: "row", flexWrap: "wrap", gap: 8 }, appDMButtonIcon: { marginRight: 2 }, formCtaIcon: { width: 32, height: 32 } };
 obj2 = { borderRadius: nativeDefault.radii.lg, marginTop: 16, width: "100%" };
 createStyles = createStyles.createStyles;
 obj3 = { borderRadius: nativeDefault.radii.lg, marginTop: 8, width: "100%" };
+obj4 = { marginTop: nativeDefault.space.PX_24 };
 size = { width: 64, height: 64, borderRadius: nativeDefault.radii.xxl, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, justifyContent: "center", alignItems: "center" };
 let closure_47 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -699,9 +709,9 @@ let closure_48 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
       } else if (channelType === constants.GUILD_APP) {
         let AppsIcon;
         if (isPrivate) {
-          AppsIcon = tmp11(8505).AppsLockIcon;
+          AppsIcon = tmp11(8521).AppsLockIcon;
         } else {
-          AppsIcon = tmp11(8506).AppsIcon;
+          AppsIcon = tmp11(8522).AppsIcon;
         }
         tmp7 = { IconComponent: AppsIcon, label: intl10.t.ZkcrC2 };
         const obj = { IconComponent: AppsIcon, label: intl10.t.ZkcrC2 };
@@ -753,10 +763,10 @@ let closure_48 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
     let AppsIcon;
     let tmp9;
     if (isPrivate) {
-      AppsIcon = tmp6(8505).AppsLockIcon;
+      AppsIcon = tmp6(8521).AppsLockIcon;
       tmp9 = tmp6;
     } else {
-      AppsIcon = tmp6(8506).AppsIcon;
+      AppsIcon = tmp6(8522).AppsIcon;
       tmp9 = tmp6;
     }
     tmp4 = tmp9;
@@ -799,7 +809,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
   ({ title, subtitle, isPrivate, isThread, isNSFW, isForumPost, isGameInvitesPost, subtitleLink } = channelType);
   channelType = channelType.channelType;
   const tmp4 = closure_47();
-  const obj2 = subtitleLink(5462);
+  const obj2 = subtitleLink(5228);
   const tmp5 = null != subtitleLink && obj2.useIsScreenReaderEnabled();
   if (cResult[0] === channelType) {
     if (cResult[1] === isForumPost) {
@@ -839,7 +849,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
                 let tmp14Result = null != subtitle;
                 if (tmp14Result) {
                   let str;
-                  const Text2 = tmp(5187).Text;
+                  const Text2 = tmp(5195).Text;
                   const tmp14 = closure_44;
                   if (tmp5) {
                     str = "link";
@@ -873,7 +883,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
     const items1 = [closure_44(closure_48, obj5), ];
     const items2 = [tmp4.title, ];
     let num = 8;
-    const Text = tmp(5187).Text;
+    const Text = tmp(5195).Text;
     const tmp10 = closure_44;
     const tmp8 = closure_46;
     const tmp9 = closure_45;
@@ -911,7 +921,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
   ({ subtitle, isForumPost, isGameInvitesPost, subtitleLink } = arg0);
   ({ title, isPrivate, isThread, isNSFW, channelType } = arg0);
   const tmp = closure_47();
-  let obj = subtitleLink(5462);
+  let obj = subtitleLink(5228);
   const tmp4 = null != subtitleLink && obj.useIsScreenReaderEnabled();
   let tmp5Result = !isGameInvitesPost;
   if (tmp5Result) {
@@ -919,7 +929,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
     const items = [closure_44(closure_48, obj2), ];
     const items1 = [tmp.title, ];
     let num = 8;
-    const Text = tmp2(5187).Text;
+    const Text = tmp2(5195).Text;
     const tmp8 = closure_44;
     if (isForumPost) {
       num = 0;
@@ -935,7 +945,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
   let tmp11Result = null != subtitle;
   if (tmp11Result) {
     let str;
-    const Text2 = tmp2(5187).Text;
+    const Text2 = tmp2(5195).Text;
     const tmp11 = closure_44;
     if (tmp4) {
       str = "link";
@@ -972,7 +982,7 @@ let closure_50 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkMa
   ({ canManageRoles, canEdit, isPrivate, channel } = theme);
   theme = theme.theme;
   const tmp4 = closure_47();
-  let obj2 = channel(4913);
+  let obj2 = channel(5213);
   const token = obj2.useToken(nativeDefault.colors.TEXT_LINK, theme);
   if (cResult[0] === canManageRoles) {
     if (cResult[1] === channel) {
@@ -1031,11 +1041,11 @@ let closure_50 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkMa
                   };
                   items1 = [, ];
                   ({ ctaButton: arr4[0], subtitle: arr4[1] } = tmp4);
-                  const PressableOpacity2 = tmp(6462).PressableOpacity;
+                  const PressableOpacity2 = tmp(6856).PressableOpacity;
                   const obj5 = { size: "xs", color: token };
-                  items2 = [closure_44(channel(10023).PencilIcon, obj5), ];
+                  items2 = [closure_44(channel(10037).PencilIcon, obj5), ];
                   const obj6 = { style: tmp4.ctaLabel, variant: "text-sm/medium", color: "text-link", children: intl2.string(channel(1128).t.GE1Tlo) };
-                  const Text2 = tmp(5187).Text;
+                  const Text2 = tmp(5195).Text;
                   intl2 = tmp(1128).intl;
                   items2[1] = closure_44(Text2, obj6);
                   tmp12 = closure_46(PressableOpacity2, obj4);
@@ -1068,14 +1078,14 @@ let closure_50 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkMa
     };
     items3 = [, ];
     ({ ctaButton: arr[0], subtitle: arr[1] } = tmp4);
-    const PressableOpacity = tmp(6462).PressableOpacity;
+    const PressableOpacity = tmp(6856).PressableOpacity;
     const obj8 = { source: AssetRegistryDefault, size: channel(1202).IconSizes.REFRESH_SMALL_16, color: token };
     const Icon = tmp(1202).Icon;
     items4 = [closure_44(Icon, obj8), ];
     const obj9 = { style: items5, variant: "text-sm/medium", color: "text-link", children: intl.string(channel(1128).t.dMJ3Y6) };
     items5 = [, ];
     ({ ctaLabel: arr3[0], ctaAddRoles: arr3[1] } = tmp4);
-    const Text = tmp(5187).Text;
+    const Text = tmp(5195).Text;
     intl = tmp(1128).intl;
     items4[1] = closure_44(Text, obj9);
     tmp8 = closure_46(PressableOpacity, obj7);
@@ -1127,14 +1137,14 @@ let closure_50 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkMa
     };
     items = [, ];
     ({ ctaButton: arr[0], subtitle: arr[1] } = tmp);
-    const PressableOpacity = tmp2(6462).PressableOpacity;
+    const PressableOpacity = tmp2(6856).PressableOpacity;
     const obj4 = { source: AssetRegistryDefault, size: native.IconSizes.REFRESH_SMALL_16, color: token };
     const Icon = tmp2(1202).Icon;
     items1 = [closure_44(Icon, obj4), ];
     const obj5 = { style: items2, variant: "text-sm/medium", color: "text-link", children: intl.string(intl10.t.dMJ3Y6) };
     items2 = [, ];
     ({ ctaLabel: arr3[0], ctaAddRoles: arr3[1] } = tmp);
-    const Text = tmp2(5187).Text;
+    const Text = tmp2(5195).Text;
     intl = tmp2(1128).intl;
     items1[1] = closure_44(Text, obj5);
     isPrivate = tmp6(PressableOpacity, obj3);
@@ -1154,11 +1164,11 @@ let closure_50 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkMa
     };
     items4 = [, ];
     ({ ctaButton: arr5[0], subtitle: arr5[1] } = tmp);
-    const PressableOpacity2 = tmp2(6462).PressableOpacity;
+    const PressableOpacity2 = tmp2(6856).PressableOpacity;
     const obj7 = { size: "xs", color: token };
     items5 = [closure_44(PencilIcon.PencilIcon, obj7), ];
     const obj8 = { style: tmp.ctaLabel, variant: "text-sm/medium", color: "text-link", children: intl2.string(intl10.t.GE1Tlo) };
-    const Text2 = tmp2(5187).Text;
+    const Text2 = tmp2(5195).Text;
     intl2 = tmp2(1128).intl;
     items5[1] = closure_44(Text2, obj8);
     canEdit = tmp6(PressableOpacity2, obj6);
@@ -1217,7 +1227,7 @@ let closure_51 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const items2 = [AccessibilityStore];
-      const fn3 = function b() {
+      const fn3 = function y() {
         return roleStyle.roleStyle;
       };
       cResult[7] = items2;
@@ -1254,11 +1264,11 @@ let closure_51 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
       if (colorStrings == null) {
         colorStrings = null;
       }
-      const tmpResult7 = tmp(8247);
+      const tmpResult7 = tmp(8263);
       const processColorStringsArray = tmpResult7.useProcessColorStringsArray(colorStrings);
       let id;
-      const useIsRoleStyleAndRoleColorsEligibleForERC = tmp(8247).useIsRoleStyleAndRoleColorsEligibleForERC;
-      const tmpResult8 = tmp(8247);
+      const useIsRoleStyleAndRoleColorsEligibleForERC = tmp(8263).useIsRoleStyleAndRoleColorsEligibleForERC;
+      const tmpResult8 = tmp(8263);
       if (stateFromStores != null) {
         id = stateFromStores.id;
       }
@@ -1290,7 +1300,7 @@ let closure_51 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
           }
         }
         const obj3 = { gradientColors: tmp47, style: tmp45, variant: "text-md/semibold", color: "text-default", children: tmp20 };
-        const tmp50 = closure_44(tmp(5187).Text, obj3);
+        const tmp50 = closure_44(tmp(5195).Text, obj3);
         cResult[14] = tmp45;
         cResult[15] = tmp20;
         cResult[16] = tmp47;
@@ -1307,7 +1317,7 @@ let closure_51 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
               }
               if (cResult[23] !== tmp20) {
                 const obj4 = { variant: "text-md/semibold", color: "text-default", children: tmp20 };
-                const tmp40 = closure_44(tmp(5187).Text, obj4);
+                const tmp40 = closure_44(tmp(5195).Text, obj4);
                 cResult[23] = tmp20;
                 cResult[24] = tmp40;
                 tmp38 = tmp40;
@@ -1349,7 +1359,7 @@ let closure_51 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
       str = stateFromStores1.nick;
     }
     if (str == null) {
-      const obj5 = guildId(5057);
+      const obj5 = guildId(4994);
       str = obj5.getName(stateFromStores);
     }
     if (str == null) {
@@ -1402,7 +1412,7 @@ let closure_51 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
     str = stateFromStores1.nick;
   }
   if (str == null) {
-    const obj4 = guildId(5057);
+    const obj4 = guildId(4994);
     str = obj4.getName(stateFromStores);
   }
   if (str == null) {
@@ -1435,7 +1445,7 @@ let closure_51 = ReactCompilerGating.isReactCompilerEnabled() ? (function Thread
       const obj5 = { color: colorString };
     }
     let tmp18;
-    const Text = tmp2(5187).Text;
+    const Text = tmp2(5195).Text;
     const tmp17 = closure_44;
     if (tmp12) {
       tmp18 = processColorStringsArray;
@@ -1475,7 +1485,7 @@ let closure_52 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
   const tmp4 = closure_47();
   const tmp5 = useChannelNameDefault(channel);
   if (cResult[0] !== channel) {
-    const tmpResult = channel(8877);
+    const tmpResult = channel(8893);
     const result = tmpResult.isPrivateGuildChannel(channel);
     cResult[0] = channel;
     cResult[1] = result;
@@ -1483,9 +1493,9 @@ let closure_52 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
   } else {
     tmp6 = cResult[1];
   }
-  const tmpResult4 = channel(7259);
+  const tmpResult4 = channel(7328);
   const appliedTags = tmpResult4.useAppliedTags(channel);
-  const tmpResult5 = channel(7256);
+  const tmpResult5 = channel(7325);
   const isGameInvitesPost = tmpResult5.useIsGameInvitesPost(channel);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ForumPostMessagesStore];
@@ -1578,7 +1588,7 @@ let closure_52 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
                     tmp30 = null;
                     if (null == firstMessage) {
                       const obj3 = { style: tmp4.threadDetails, variant: "text-md/medium", color: "text-default", children: intl2.string(channel(1128).t.mE3KJN) };
-                      const Text2 = tmp(5187).Text;
+                      const Text2 = tmp(5195).Text;
                       intl2 = tmp(1128).intl;
                       tmp30 = closure_44(Text2, obj3);
                     }
@@ -1593,7 +1603,7 @@ let closure_52 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
                 channel.isForumPost();
                 if (tmp27) {
                   const obj4 = { style: tmp4.threadDetails, variant: "text-md/medium", color: "text-default", children: intl.format(channel(1128).t.imPXd5, obj5) };
-                  const Text = tmp(5187).Text;
+                  const Text = tmp(5195).Text;
                   intl = tmp(1128).intl;
                   obj5 = {
                     usernameHook(arg0, arg1) {
@@ -1650,11 +1660,11 @@ let closure_52 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
   channel = channel.channel;
   const tmp = closure_47();
   const tmp3 = useChannelNameDefault(channel);
-  let obj = channel(8877);
+  let obj = channel(8893);
   const result = obj.isPrivateGuildChannel(channel);
-  const obj2 = channel(7259);
+  const obj2 = channel(7328);
   const appliedTags = obj2.useAppliedTags(channel);
-  const obj3 = channel(7256);
+  const obj3 = channel(7325);
   const isGameInvitesPost = obj3.useIsGameInvitesPost(channel);
   channel(504);
   [][0] = ForumPostMessagesStore;
@@ -1683,7 +1693,7 @@ let closure_52 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
     channel.isForumPost();
     if (tmp12Result3) {
       const obj6 = { style: tmp.threadDetails, variant: "text-md/medium", color: "text-default", children: intl.format(channel(1128).t.imPXd5, obj7) };
-      const Text = tmp4(5187).Text;
+      const Text = tmp4(5195).Text;
       intl = tmp4(1128).intl;
       obj7 = {
         usernameHook(arg0, arg1) {
@@ -1699,7 +1709,7 @@ let closure_52 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
       tmp12Result4 = null;
       if (null == tmp8) {
         const obj8 = { style: tmp.threadDetails, variant: "text-md/medium", color: "text-default", children: intl2.string(channel(1128).t.mE3KJN) };
-        const Text2 = tmp4(5187).Text;
+        const Text2 = tmp4(5195).Text;
         intl2 = tmp4(1128).intl;
         tmp12Result4 = tmp12(Text2, obj8);
       }
@@ -1751,7 +1761,7 @@ let closure_53 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
     tmp15 = cResult[5];
   }
   if (cResult[6] !== channel) {
-    const tmpResult = channel(8877);
+    const tmpResult = channel(8893);
     const result = tmpResult.isPrivateGuildChannel(channel);
     cResult[6] = channel;
     cResult[7] = result;
@@ -1826,7 +1836,7 @@ let closure_53 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
                             tmp35 = null;
                             if (tmp7) {
                               const obj4 = { channel, guild };
-                              tmp35 = closure_44(tmp4(13159), obj4);
+                              tmp35 = closure_44(tmp4(13191), obj4);
                             }
                           }
                           cResult[28] = tmp7;
@@ -1899,7 +1909,7 @@ let closure_53 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
   const canResult = PermissionStore.can(constants7.MANAGE_CHANNELS, channel);
   const canResult1 = PermissionStore.can(constants7.MANAGE_ROLES, channel);
   const canResult2 = PermissionStore.can(constants7.READ_MESSAGE_HISTORY, channel);
-  let obj = channel(8877);
+  let obj = channel(8893);
   const result = obj.isPrivateGuildChannel(channel);
   const tmp10 = useThemeDefault();
   const intl = channel(1128).intl;
@@ -2643,7 +2653,7 @@ let closure_56 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMSpam
   const cResult = obj.c(7);
   channel = channel.channel;
   ({ user, showingSpamBanner } = channel);
-  const obj2 = channel(13285);
+  const obj2 = channel(13317);
   const dMMessageToReport = obj2.useDMMessageToReport(channel, user.id, true === user.bot);
   const message = dMMessageToReport.message;
   if (!showingSpamBanner) {
@@ -2671,7 +2681,7 @@ let closure_56 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMSpam
           return tmp12;
         }
         const obj3 = { size: "sm", variant: "destructive", text: tmp9, disabled: null == message, onPress: tmp7 };
-        const tmp14 = closure_44(tmp(5479).Button, obj3);
+        const tmp14 = closure_44(tmp(5205).Button, obj3);
         cResult[4] = tmp7;
         cResult[5] = null == message;
         cResult[6] = tmp14;
@@ -2700,7 +2710,7 @@ let closure_56 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMSpam
   const user = channel.user;
   const tmp = channel;
   const showingSpamBanner = channel.showingSpamBanner;
-  let obj = channel(13285);
+  let obj = channel(13317);
   const dMMessageToReport = obj.useDMMessageToReport(channel, user.id, true === user.bot);
   const message = dMMessageToReport.message;
   if (!showingSpamBanner) {
@@ -2721,7 +2731,7 @@ let closure_56 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMSpam
               }
             }
       };
-      const Button = tmp(5479).Button;
+      const Button = tmp(5205).Button;
       intl = tmp(1128).intl;
       return closure_44(Button, obj2);
     }
@@ -2808,7 +2818,7 @@ let closure_57 = ReactCompilerGating.isReactCompilerEnabled() ? (function Deauth
           }
         }
       }
-      const fn2 = function b() {
+      const fn2 = function y() {
         let id;
         let id2;
         let obj = useAlertStore;
@@ -2897,7 +2907,7 @@ let closure_57 = ReactCompilerGating.isReactCompilerEnabled() ? (function Deauth
               obj3.track(constants.APP_MANAGE_CTA_CLICKED, obj4);
             }
       };
-      const Button = tmp2(5479).Button;
+      const Button = tmp2(5205).Button;
       intl = tmp2(1128).intl;
       obj3 = { size: tmp2(1202).Icon.Sizes.SMALL, source: AssetRegistryDefault2, style: tmp.appDMButtonIcon };
       Icon = tmp2(1202).Icon;
@@ -2917,7 +2927,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCo
   const tmp4 = closure_47();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
-    const stringResult = intl.string(_modDef3883.jMMrDM);
+    const stringResult = intl.string(_modDef3820.jMMrDM);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -2925,7 +2935,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCo
   }
   if (cResult[1] !== tmp4.appDMButtonIcon) {
     const obj2 = { size: "xs", style: tmp4.appDMButtonIcon };
-    const tmp10 = closure_44(project(10023).PencilIcon, obj2);
+    const tmp10 = closure_44(project(10037).PencilIcon, obj2);
     cResult[1] = tmp4.appDMButtonIcon;
     cResult[2] = tmp10;
     tmp8 = tmp10;
@@ -2949,7 +2959,7 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCo
     }
     return tmp12;
   }
-  const tmp13 = closure_44(project(5479).Button, { size: "sm", variant: "secondary", text: first, icon: tmp8, onPress: tmp11 });
+  const tmp13 = closure_44(project(5205).Button, { size: "sm", variant: "secondary", text: first, icon: tmp8, onPress: tmp11 });
   cResult[5] = tmp8;
   cResult[6] = tmp11;
   cResult[7] = tmp13;
@@ -2961,14 +2971,14 @@ let closure_58 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditCo
   const obj = {
     size: "sm",
     variant: "secondary",
-    text: intl.string(_modDef3883.jMMrDM),
-    icon: closure_44(project(10023).PencilIcon, obj2),
+    text: intl.string(_modDef3820.jMMrDM),
+    icon: closure_44(project(10037).PencilIcon, obj2),
     onPress() {
       return openConjureProjectInBuilderDefault(project);
     }
   };
   const tmp = closure_47();
-  const Button = project(5479).Button;
+  const Button = project(5205).Button;
   intl = project(1128).intl;
   obj2 = { size: "xs", style: tmp.appDMButtonIcon };
   return closure_44(Button, obj);
@@ -3277,9 +3287,9 @@ let closure_64 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
           }
         }
       }
-      const tmp5Result = tmp5(first[116]);
+      const tmp5Result = tmp5(first[118]);
       const enabled = tmp5Result.useConfig(tmp17).enabled;
-      let tmpResult2 = tmp(tmp2[117]);
+      let tmpResult2 = tmp(tmp2[119]);
       const groupDMNitroAudience = tmpResult2.useGroupDMNitroAudience();
       if (channel.recipients != null) {
         class N {
@@ -3474,7 +3484,7 @@ let closure_64 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
               c2 = 1;
               c3 = 1;
               const obj5 = { value: obj3.mobileCreateInvite(tmp, constants.GROUP_DM), done: false };
-              obj3 = closure_2_1(first[112]);
+              obj3 = closure_2_1(first[114]);
               return obj5;
             }
           }
@@ -3528,7 +3538,7 @@ let closure_64 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
   let callback1;
   const tmp = closure_47();
   let tmp3 = dependencyMap;
-  const arr = first(5521)(channel);
+  const arr = first(5565)(channel);
   let tmp4 = onClick(react.useState(false), 2);
   first = tmp4[0];
   dependencyMap = tmp6;
@@ -3572,7 +3582,7 @@ let closure_64 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
             const tmp30 = first;
             if (!tmp30) {
               closure_2(true);
-              const obj3 = tmp(c2[112]);
+              const obj3 = tmp(c2[114]);
               c2 = 1;
               c3 = 1;
               const obj5 = { value: obj3.mobileCreateInvite(channel, constants.GROUP_DM), done: false };
@@ -3630,10 +3640,10 @@ let closure_64 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
       showChatGDMUpsellActionSheetDefault(obj2);
     }
   }, items4);
-  let obj2 = first(11169);
+  let obj2 = first(11184);
   let obj3 = { location: GroupDMChatBeginning };
   const enabled = obj2.useConfig(obj3).enabled;
-  let obj4 = channel(11166);
+  let obj4 = channel(11181);
   const groupDMNitroAudience = obj4.useGroupDMNitroAudience();
   const recipients = channel.recipients;
   let num;
@@ -3646,9 +3656,9 @@ let closure_64 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
   }
   const sum = num + 1;
   let result = stateFromStores;
-  const tmp16 = first(11167)({ useNitroCapExperiment: true });
+  const tmp16 = first(11182)({ useNitroCapExperiment: true });
   if (stateFromStores) {
-    const tmp7Result = channel(11166);
+    const tmp7Result = channel(11181);
     result = tmp7Result.isGroupDMNitroUpsellAudience(groupDMNitroAudience);
   }
   if (result) {
@@ -3657,18 +3667,18 @@ let closure_64 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
   if (result) {
     result = sum >= tmp16;
   }
-  let obj5 = { audience: groupDMNitroAudience, location: tmp13, acquisitionStrategy: tmp7(11166).GroupDMNitroAcquisitionStrategy.MARKETING };
+  let obj5 = { audience: groupDMNitroAudience, location: tmp13, acquisitionStrategy: tmp7(11181).GroupDMNitroAcquisitionStrategy.MARKETING };
   const id = channel.id;
   let obj6 = { style: tmp.centerHeader, children: items5 };
-  const tmp2Result = first(11173);
+  const tmp2Result = first(11188);
   const tmp2ResultResult = tmp2Result(obj5);
-  const FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = tmp7(7200).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+  const FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = tmp7(7269).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
   const obj7 = { style: tmp.avatarRedesign, channel, size: channel(1202).AvatarSizes.XXLARGE, accessible: false };
-  const tmp2Result2 = first(10592);
+  const tmp2Result2 = first(10606);
   items5 = [closure_44(tmp2Result2, obj7), , , ];
   const obj8 = { style: tmp.dmTitle, variant: str, color: "mobile-text-heading-primary", children: arr };
   str = "heading-xxl/extrabold";
-  const Text = tmp7(5187).Text;
+  const Text = tmp7(5195).Text;
   const tmp21 = closure_7;
   if (null != arr) {
     str = "heading-xxl/extrabold";
@@ -3678,7 +3688,7 @@ let closure_64 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
   }
   items5[1] = closure_44(Text, obj8);
   const obj9 = { style: tmp.gdmText, variant: "text-md/medium", color: "text-default", children: formatResult };
-  const Text2 = tmp7(5187).Text;
+  const Text2 = tmp7(5195).Text;
   const intl = tmp7(1128).intl;
   if (id === FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
     const obj10 = { name: arr };
@@ -3693,7 +3703,7 @@ let closure_64 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
     const tmp27 = closure_45;
     if (result) {
       let tmp30 = closure_62;
-      const obj11 = { style: tmp.gdmInviteFriends, onPress: tmp2ResultResult, IconComponent: channel(9327).NitroWheelIcon, iconVariant: "default", title: intl3.string(channel(1128).t["LR+Ptf"]), subtitle: intl4.formatToPlainString(channel(1128).t["8o8Zk5"], obj12) };
+      const obj11 = { style: tmp.gdmInviteFriends, onPress: tmp2ResultResult, IconComponent: channel(9343).NitroWheelIcon, iconVariant: "default", title: intl3.string(channel(1128).t["LR+Ptf"]), subtitle: intl4.formatToPlainString(channel(1128).t["8o8Zk5"], obj12) };
       intl3 = tmp7(1128).intl;
       intl4 = tmp7(1128).intl;
       obj12 = { number };
@@ -3701,7 +3711,7 @@ let closure_64 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
     } else {
       tmp22Result = null;
       if (stateFromStores) {
-        const obj13 = { style: tmp.gdmInviteFriends, onPress: callback2, IconComponent: channel(10639).GroupPlusIcon, iconVariant: "default", title: intl2.string(channel(1128).t["LR+Ptf"]) };
+        const obj13 = { style: tmp.gdmInviteFriends, onPress: callback2, IconComponent: channel(10652).GroupPlusIcon, iconVariant: "default", title: intl2.string(channel(1128).t["LR+Ptf"]) };
         intl2 = tmp7(1128).intl;
         tmp22Result = tmp22(closure_62, obj13);
       }
@@ -3714,7 +3724,7 @@ let closure_64 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
       prop = tmp.gdmShareInviteLinkNoRelationships;
     }
     items7[1] = prop;
-    const obj14 = { style: items7, onPress: callback3, IconComponent: channel(5137).LinkIcon, title: intl5.string(channel(1128).t["3XVNyt"]), subtitle: intl6.string(channel(1128).t.qa9CQu), trailing: tmp22Result3 };
+    const obj14 = { style: items7, onPress: callback3, IconComponent: channel(5640).LinkIcon, title: intl5.string(channel(1128).t["3XVNyt"]), subtitle: intl6.string(channel(1128).t.qa9CQu), trailing: tmp22Result3 };
     intl5 = tmp7(1128).intl;
     intl6 = tmp7(1128).intl;
     tmp22Result3 = null;
@@ -3725,7 +3735,7 @@ let closure_64 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
     let tmp22Result4 = null;
     if (channel.hasFlag(ChannelFlags.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) {
       const obj15 = { channelId: channel.id };
-      tmp22Result4 = tmp22(tmp2(13323), obj15);
+      tmp22Result4 = tmp22(tmp2(13357), obj15);
     }
     const obj16 = { children: items6 };
     items6[2] = tmp22Result4;

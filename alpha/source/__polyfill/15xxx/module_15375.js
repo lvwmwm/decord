@@ -1,18 +1,14 @@
 // Module ID: 15375
 // Function ID: 15376
-// Dependencies: [15373]
+// Dependencies: [15359, 15376]
 
 // Module 15375
-import _mod15373 from "module_15373" /* 15373 */;
+import _mod15359 from "module_15359" /* 15359 */;
+import _mod15376 from "module_15376" /* 15376 */;
 
+let closure_2 = _mod15359({}.hasOwnProperty);
+const tmp = Object.hasOwn || (function hasOwn(arg0, arg1) {
+  return closure_2(_mod15376(arg0), arg1);
+});
 
-export default (arg0, arg1) => {
-  let tmp3;
-  const tmp = _mod15373(arg0);
-  if (tmp < 0) {
-    tmp3 = max(tmp + arg1, 0);
-  } else {
-    tmp3 = min(tmp, arg1);
-  }
-  return tmp3;
-};
+export default tmp;

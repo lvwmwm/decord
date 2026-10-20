@@ -1,18 +1,18 @@
-// Module ID: 8965
-// Function ID: 8966
+// Module ID: 8981
+// Function ID: 8982
 // Name: UserPlaceholderRow
-// Dependencies: [19, 17, 5181, 21, 5191, 587, 558, 576, 4945, 504, 5192, 5195, 2]
+// Dependencies: [19, 17, 4946, 21, 4945, 587, 558, 576, 5014, 504, 5167, 5170, 2]
 
-// Module 8965 (UserPlaceholderRow)
+// Module 8981 (UserPlaceholderRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import timing from "timing" /* 5192 */;
-import timingPresets from "timingPresets" /* 5195 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
+import timing from "timing" /* 5167 */;
+import timingPresets from "timingPresets" /* 5170 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import AccessibilityStore from "AccessibilityStore" /* 4946 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     height = nativeDefault.space.PX_48;
   }
   const tmp6 = closure_8(height);
-  const tmpResult = sharedValue(4945);
+  const tmpResult = sharedValue(5014);
   sharedValue = tmpResult.useSharedValue(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
@@ -80,7 +80,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       tmp12 = cResult[5];
     }
     const effect = react.useEffect(tmp11, tmp12);
-    const tmpResult4 = sharedValue(4945);
+    const tmpResult4 = sharedValue(5014);
     class I {
       constructor() {
         const obj = { opacity: sharedValue.get() };
@@ -283,7 +283,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let sharedValue;
   flag = undefined;
   const tmp3 = closure_8(height);
-  let obj = sharedValue(4945);
+  let obj = sharedValue(5014);
   const tmp4 = sharedValue;
   sharedValue = obj.useSharedValue(1);
   let obj2 = sharedValue(504);
@@ -310,7 +310,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const result1 = set(1);
     }
   }, items1);
-  const tmp4Result = tmp4(4945);
+  const tmp4Result = tmp4(5014);
   class R {
     constructor() {
       const obj = { opacity: sharedValue.get() };
@@ -324,7 +324,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj3 = { style: items2, collapsable: false, children: items3 };
   items2 = [tmp3.row, animatedStyle];
   const obj4 = { style: tmp3.placeholderAvatar };
-  View = flag(4945).View;
+  View = flag(5014).View;
   items3 = [closure_6(View, obj4), ];
   const obj5 = { style: tmp3.rowInner, children: closure_6(View, obj6) };
   obj6 = { style: tmp3.rowHeaderWrapper, children: closure_6(View, obj7) };

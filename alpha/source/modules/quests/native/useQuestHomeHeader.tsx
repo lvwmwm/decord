@@ -1,9 +1,9 @@
-// Module ID: 16045
-// Function ID: 16046
+// Module ID: 16074
+// Function ID: 16075
 // Name: useQuestHomeHeader
-// Dependencies: [19, 17, 6228, 1087, 1089, 21, 5191, 587, 558, 576, 13934, 1128, 5187, 9353, 5155, 13736, 2002, 1267, 7155, 7529, 13725, 16046, 7841, 12336, 1505, 13976, 2]
+// Dependencies: [19, 17, 6658, 1087, 1089, 21, 4945, 587, 558, 576, 13968, 1128, 5195, 9369, 5171, 13770, 2002, 1267, 7224, 7595, 13759, 16075, 7904, 12356, 1505, 14009, 2]
 
-// Module 16045 (useQuestHomeHeader)
+// Module 16074 (useQuestHomeHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,14 +12,14 @@ import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import intl3 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import QuestConstants from "QuestConstants" /* 6228 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
-import QuestsIcon from "QuestsIcon" /* 13934 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import QuestConstants from "QuestConstants" /* 6658 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7224 */;
+import QuestsIcon from "QuestsIcon" /* 13968 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   let balance;
   const tmp3 = balance;
   const tmp2 = closure_10();
-  let obj = balance(9353);
+  let obj = balance(9369);
   balance = obj.useFetchVirtualCurrencyBalance().balance;
   [][0] = balance;
   let obj2 = { style: tmp2.headerRightContainer, children: items };
@@ -45,7 +45,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   const tmp7 = View;
   if (isVirtualCurrencyEnabled) {
     let obj3 = { balance, onPress: tmp5 };
-    isVirtualCurrencyEnabled = closure_8(tmp3(13725).BalanceWidgetPillButton, obj3);
+    isVirtualCurrencyEnabled = closure_8(tmp3(13759).BalanceWidgetPillButton, obj3);
   }
   items = [isVirtualCurrencyEnabled, ];
   let obj4 = {};
@@ -77,7 +77,7 @@ function FiltersButton(setSelectedSortMethod) {
   const callback = selectedSortMethod.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { onSortMethodChange: setSelectedSortMethod, onFiltersChange: setSelectedFilters, initialSortMethod: selectedSortMethod, initialFilters: selectedFilters };
-    obj.openLazy(asyncRequire(16046, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", obj2);
+    obj.openLazy(asyncRequire(16075, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", obj2);
   }, items);
   let obj = { icon: closure_8(setSelectedSortMethod(tmp3[23]).FiltersHorizontalIcon, { size: "sm", color: INTERACTIVE_TEXT_DEFAULT }), size: "sm", variant: str, onPress: callback, accessibilityLabel: intl.string(setSelectedSortMethod(tmp3[11]).t.UdhTtk), scaleAmountInPx: 4 };
   const BaseIconButton = setSelectedSortMethod(tmp3[22]).BaseIconButton;

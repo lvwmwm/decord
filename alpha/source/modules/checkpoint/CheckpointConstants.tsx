@@ -1,22 +1,22 @@
-// Module ID: 5537
-// Function ID: 5538
+// Module ID: 5970
+// Function ID: 5971
 // Name: CheckpointConstants
-// Dependencies: [5538, 3141, 2]
+// Dependencies: [5971, 3078, 2]
 
-// Module 5537 (CheckpointConstants)
-import _modDef3141 from "module_3141" /* 3141 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5538 */;
+// Module 5970 (CheckpointConstants)
+import _modDef3078 from "module_3078" /* 3078 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5971 */;
 import size from "module_2" /* 2 */;
 
 const obj = { [CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT]: "#FFE047", [CheckpointTraitRarity.CheckpointTraitRarity.COMMON]: "#35ED7E", [CheckpointTraitRarity.CheckpointTraitRarity.RARE]: "#EF3054", [CheckpointTraitRarity.CheckpointTraitRarity.EPIC]: "#7D53DE", [CheckpointTraitRarity.CheckpointTraitRarity.ULTRA]: "#FC7A1E" };
 obj[CheckpointTraitRarity.CheckpointTraitRarity.NITRO] = "url(#" + "checkpointRarityBadgeNitroGradient" + ")";
 const obj2 = {};
-obj2[CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT] = _modDef3141.bP4GV1;
-obj2[CheckpointTraitRarity.CheckpointTraitRarity.COMMON] = _modDef3141.QwkKWr;
-obj2[CheckpointTraitRarity.CheckpointTraitRarity.RARE] = _modDef3141.KLmNgL;
-obj2[CheckpointTraitRarity.CheckpointTraitRarity.EPIC] = _modDef3141.hAmdLZ;
-obj2[CheckpointTraitRarity.CheckpointTraitRarity.ULTRA] = _modDef3141.Tv4xyf;
-obj2[CheckpointTraitRarity.CheckpointTraitRarity.NITRO] = _modDef3141["0ModIv"];
+obj2[CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT] = _modDef3078.bP4GV1;
+obj2[CheckpointTraitRarity.CheckpointTraitRarity.COMMON] = _modDef3078.QwkKWr;
+obj2[CheckpointTraitRarity.CheckpointTraitRarity.RARE] = _modDef3078.KLmNgL;
+obj2[CheckpointTraitRarity.CheckpointTraitRarity.EPIC] = _modDef3078.hAmdLZ;
+obj2[CheckpointTraitRarity.CheckpointTraitRarity.ULTRA] = _modDef3078.Tv4xyf;
+obj2[CheckpointTraitRarity.CheckpointTraitRarity.NITRO] = _modDef3078["0ModIv"];
 const items = [CheckpointTraitRarity.CheckpointTraitRarity.ULTRA, CheckpointTraitRarity.CheckpointTraitRarity.EPIC, CheckpointTraitRarity.CheckpointTraitRarity.RARE, CheckpointTraitRarity.CheckpointTraitRarity.COMMON, CheckpointTraitRarity.CheckpointTraitRarity.DEFAULT, CheckpointTraitRarity.CheckpointTraitRarity.NITRO];
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointConstants.tsx");
 

@@ -1,19 +1,19 @@
-// Module ID: 5068
-// Function ID: 5069
+// Module ID: 5107
+// Function ID: 5108
 // Name: useColorThemeBackground
-// Dependencies: [19, 1207, 5032, 1128, 1256, 5069, 558, 576, 5071, 573, 5124, 2]
+// Dependencies: [19, 1207, 4969, 1128, 1256, 5108, 558, 576, 5110, 573, 5163, 2]
 
-// Module 5068 (useColorThemeBackground)
+// Module 5107 (useColorThemeBackground)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1256 */;
-import GuildThemePresets from "GuildThemePresets" /* 5069 */;
-import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 5071 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5124 */;
+import GuildThemePresets from "GuildThemePresets" /* 5108 */;
+import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 5110 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5163 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5032 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4969 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ function getGuildThemeBackground(type, stateFromStores) {
     }
     GUILD_THEME_DEFAULT_BASE_MIX = customUserThemeSettings.baseMix;
     if (GUILD_THEME_DEFAULT_BASE_MIX == null) {
-      GUILD_THEME_DEFAULT_BASE_MIX = tmp3(5069).GUILD_THEME_DEFAULT_BASE_MIX;
+      GUILD_THEME_DEFAULT_BASE_MIX = tmp3(5108).GUILD_THEME_DEFAULT_BASE_MIX;
     }
     return obj;
   } else {
@@ -125,7 +125,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useColorTh
   let gradientPreset;
   let stateFromStores;
   let theme;
-  const tmp = stateFromStores(5071)();
+  const tmp = stateFromStores(5110)();
   _require = tmp;
   const items = [ThemeStore];
   const obj = require("useStateFromStores");

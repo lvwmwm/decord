@@ -1,17 +1,17 @@
-// Module ID: 11898
-// Function ID: 11899
+// Module ID: 11918
+// Function ID: 11919
 // Name: MessagePreviewMarkup
-// Dependencies: [5501, 5502, 11899, 1951, 5179, 9615, 1459, 2]
+// Dependencies: [5936, 5937, 11919, 1951, 5667, 5604, 1459, 2]
 // Exports: getMessagePreviewASTParser, renderASTToReact, renderMessagePreviewMarkup
 
-// Module 11898 (MessagePreviewMarkup)
+// Module 11918 (MessagePreviewMarkup)
 import LRUCacheDefault from "LRUCache" /* 1459 */;
 import _modDef1951 from "module_1951" /* 1951 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5179 */;
-import combineMarkupRulesDefault from "combineMarkupRules" /* 5501 */;
-import MarkupRulesDefault from "MarkupRules" /* 5502 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9615 */;
-import MarkupMessagePreviewReactRulesDefault from "MarkupMessagePreviewReactRules" /* 11899 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5604 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5667 */;
+import combineMarkupRulesDefault from "combineMarkupRules" /* 5936 */;
+import MarkupRulesDefault from "MarkupRules" /* 5937 */;
+import MarkupMessagePreviewReactRulesDefault from "MarkupMessagePreviewReactRules" /* 11919 */;
 import size from "module_2" /* 2 */;
 
 function getOrParseMessagePreviewMarkupAST(arg0) {

@@ -1,13 +1,13 @@
-// Module ID: 7027
-// Function ID: 7028
+// Module ID: 7104
+// Function ID: 7105
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 7028, 5063, 558, 576, 2]
+// Dependencies: [19, 17, 7105, 4942, 558, 576, 2]
 
-// Module 7027 (useFastestListPropsPlaceholder)
+// Module 7104 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ColorUtils from "ColorUtils" /* 5063 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7028 */;
+import ColorUtils from "ColorUtils" /* 4942 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7105 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "defineProperty", borderTopRightRadius: "application", borderBottomLeftRadius: "ks", borderBottomRightRadius: "mode", divider: "Array", dividerColor: "toCharArray$esjava$1", dividerPaddingLeft: "ix", dividerPaddingRight: "user", placeholderShape: "toCharArray$esjava$1", placeholderShapeColor: "r", placeholderShapeCount: "__initData", placeholderShapeGap: "applicationId", placeholderShapePaddingHorizontal: "cursor", placeholderShapePaddingVertical: "tag", placeholderFeedBackgroundColor: "right", placeholderFeedColor: "test", placeholderFeedLabelPadding: "flexDirection", placeholderFeedLabelPaddingInnerRatio: "Symbol", placeholderFeedLabelSize: "ao", placeholderFeedLabelSecondarySize: "Array", placeholderFeedPadding: "ix", placeholderFeedShape: "title", placeholderFeedShapeSize: "value", placeholderType: NONE, width: null, height: 8, verticalAlignment: "button", horizontalAlignment: null };
+  size = { borderRadius: "Array", borderTopLeftRadius: "default", borderTopRightRadius: "unicodeVersion", borderBottomLeftRadius: "add", borderBottomRightRadius: "marginBottom", divider: "unicodeVersion", dividerColor: "type", dividerPaddingLeft: "formatToPlainString", dividerPaddingRight: "PX_8", placeholderShape: "unicodeVersion", placeholderShapeColor: "T", placeholderShapeCount: "hasDiversityParent", placeholderShapeGap: "Array", placeholderShapePaddingHorizontal: "unicodeVersion", placeholderShapePaddingVertical: "done", placeholderFeedBackgroundColor: "values", placeholderFeedColor: "IconComponent", placeholderFeedLabelPadding: "emoji", placeholderFeedLabelPaddingInnerRatio: "o", placeholderFeedLabelSize: "toCharArray$esjava$1", placeholderFeedLabelSecondarySize: "toCharArray$esjava$1", placeholderFeedPadding: "toCharArray$esjava$1", placeholderFeedShape: "fileFinishedImporting", placeholderFeedShapeSize: "toCharArray$esjava$1", placeholderType: NONE, width: "\u{1F4E1}", height: 6, verticalAlignment: 838, horizontalAlignment: "_getKeyForIndex" };
   if (null == listFooter) {
     return size;
   } else {

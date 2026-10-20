@@ -1,22 +1,22 @@
-// Module ID: 9668
-// Function ID: 9669
+// Module ID: 9682
+// Function ID: 9683
 // Name: ConversationListItem
-// Dependencies: [19, 17, 7580, 5169, 1087, 21, 5191, 587, 558, 576, 1505, 504, 9637, 9655, 9640, 5187, 1128, 5491, 9669, 9670, 9672, 6520, 6459, 2]
+// Dependencies: [19, 17, 7643, 5568, 1087, 21, 4945, 587, 558, 576, 1505, 504, 9651, 9669, 9654, 5195, 1128, 5219, 9683, 9684, 9686, 6914, 6853, 2]
 
-// Module 9668 (ConversationListItem)
+// Module 9682 (ConversationListItem)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import ConversationConstants from "ConversationConstants" /* 5169 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9637 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9640 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9655 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 9670 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 9672 */;
+import ConversationConstants from "ConversationConstants" /* 5568 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 9651 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9654 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9669 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 9684 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 9686 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7580 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7643 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -165,7 +165,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
                           const result1 = ConversationsAnalytics.trackTopicsUnitClicked(obj3);
                         }
                       }
-                      const tmp33 = closure_8(navigation(5491), obj4);
+                      const tmp33 = closure_8(navigation(5219), obj4);
                       cResult[25] = tmp4.maskOpaque;
                       cResult[26] = tmp33;
                       tmp29 = tmp33;
@@ -186,7 +186,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
                         }
                       }
                       ({ START: obj8.start, END: obj8.end } = VerticalGradient);
-                      const tmp38 = closure_8(navigation(5491), obj5);
+                      const tmp38 = closure_8(navigation(5219), obj5);
                       cResult[27] = tmp4.maskFade;
                       cResult[28] = tmp38;
                       tmp34 = tmp38;
@@ -243,7 +243,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
                                     }
                                   }
                                   items1 = [tmp25, tmp51];
-                                  const tmp57 = closure_9(conversation(6459).Card, obj6);
+                                  const tmp57 = closure_9(conversation(6853).Card, obj6);
                                   cResult[44] = conversation.title;
                                   cResult[45] = tmp13;
                                   cResult[46] = tmp4.card;
@@ -265,7 +265,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
                                   const result1 = ConversationsAnalytics.trackTopicsUnitClicked(obj3);
                                 }
                               }
-                              const tmp54 = closure_8(navigation(6520), obj7);
+                              const tmp54 = closure_8(navigation(6914), obj7);
                               cResult[40] = tmp4.previewsMask;
                               cResult[41] = tmp39;
                               cResult[42] = tmp47;
@@ -292,7 +292,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
                           }
                         }
                         if (null == arr4) {
-                          mapped = closure_8(navigation(9669), {});
+                          mapped = closure_8(navigation(9683), {});
                         } else {
                           mapped = arr4.map((blocked) => {
                             if (!blocked.blocked) {
@@ -384,7 +384,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
               }
               tmp23[3] = timestamp;
               tmp23[4] = tmp19;
-              const tmp24 = closure_8(conversation(5187).Text, tmp23);
+              const tmp24 = closure_8(conversation(5195).Text, tmp23);
               cResult[18] = tmp4.timestamp;
               cResult[19] = tmp19;
               cResult[20] = tmp24;
@@ -402,7 +402,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
                 const result1 = ConversationsAnalytics.trackTopicsUnitClicked(obj3);
               }
             }
-            const tmp18 = closure_8(conversation(5187).Text, obj12);
+            const tmp18 = closure_8(conversation(5195).Text, obj12);
             cResult[13] = conversation.title;
             cResult[14] = tmp4.title;
             cResult[15] = tmp18;

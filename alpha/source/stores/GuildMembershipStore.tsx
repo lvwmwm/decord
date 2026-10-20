@@ -1,9 +1,9 @@
-// Module ID: 2070
-// Function ID: 2071
+// Module ID: 4802
+// Function ID: 4803
 // Name: GuildMembershipStore
 // Dependencies: [504, 584, 2]
 
-// Module 2070 (GuildMembershipStore)
+// Module 4802 (GuildMembershipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Dispatcher2 from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
@@ -53,10 +53,10 @@ class GuildMembershipStore extends Store {
     new Set(items);
   }
   handleCacheLoaded(guilds) {
-    const f88603 = (id) => id.id;
+    const f92347 = (id) => id.id;
     guilds = guilds.guilds;
-    this.guildIds = new Set(guilds.map(f88603));
-    new Set(guilds.map(f88603));
+    this.guildIds = new Set(guilds.map(f92347));
+    new Set(guilds.map(f92347));
   }
   handleCacheLoadedLazy(guilds) {
     guilds = guilds.guilds;

@@ -1,16 +1,16 @@
-// Module ID: 17141
-// Function ID: 17142
+// Module ID: 17170
+// Function ID: 17171
 // Name: getJankSurfaceName
-// Dependencies: [19, 4897, 17137, 17136, 5075, 17140, 1384, 2]
+// Dependencies: [19, 5172, 17166, 17165, 5114, 17169, 2]
 // Exports: attachJankActionSheetReporter, getJankSurfaceName, recordJankChannelDetailsOpen, setJankChannelDetailsOpen, setJankPanelOpen, setJankVoicePanelFocus, setJankVoicePanelTab
 
-// Module 17141 (getJankSurfaceName)
-import useChatLayout from "useChatLayout" /* 5075 */;
-import getJankScreenName from "getJankScreenName" /* 17136 */;
-import react_nativeDefault from "react-native" /* 17140 */;
+// Module 17170 (getJankSurfaceName)
+import useChatLayout from "useChatLayout" /* 5114 */;
+import getJankScreenName from "getJankScreenName" /* 17165 */;
+import react_nativeDefault from "react-native" /* 17169 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4897 */;
-import JankScreenConstants from "JankScreenConstants" /* 17137 */;
+import ActionSheetStore from "ActionSheetStore" /* 5172 */;
+import JankScreenConstants from "JankScreenConstants" /* 17166 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -192,25 +192,21 @@ export const setJankVoicePanelFocus = function setJankVoicePanelFocus(arg0) {
   }
 };
 export const attachJankActionSheetReporter = function attachJankActionSheetReporter() {
-  let length;
   let tmp = c15;
   if (!tmp) {
-    let tmp2 = length;
-    let obj = length(1384);
-    if (obj.isAndroid()) {
-      c15 = true;
+    c15 = true;
+    let tmp2 = ActionSheetStore;
+    let length = ActionSheetStore.getStack().length;
+    ActionSheetStore.addChangeListener(() => {
       length = ActionSheetStore.getStack().length;
-      ActionSheetStore.addChangeListener(() => {
-        length = ActionSheetStore.getStack().length;
-        const tmp = length < length;
-        const tmp2 = composeJankSurfaceName(getJankScreenName.getBaseScreenName);
-        const obj = react_nativeDefault;
-        if (tmp) {
-          obj.surfaceClosed(tmp2);
-        } else {
-          obj.setScreenContext(tmp2, metroRequire);
-        }
-      });
-    }
+      const tmp = length < length;
+      const tmp2 = composeJankSurfaceName(getJankScreenName.getBaseScreenName);
+      const obj = react_nativeDefault;
+      if (tmp) {
+        obj.surfaceClosed(tmp2);
+      } else {
+        obj.setScreenContext(tmp2, metroRequire);
+      }
+    });
   }
 };

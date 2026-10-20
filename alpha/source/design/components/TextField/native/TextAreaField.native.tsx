@@ -1,22 +1,22 @@
-// Module ID: 7052
-// Function ID: 7053
+// Module ID: 7129
+// Function ID: 7130
 // Name: TextAreaField
-// Dependencies: [109, 19, 17, 21, 5191, 587, 558, 576, 6578, 6571, 4915, 1128, 7053, 6895, 6581, 5187, 2]
+// Dependencies: [109, 19, 17, 21, 4945, 587, 558, 576, 6971, 6964, 5100, 1128, 7130, 6977, 6974, 5195, 2]
 
-// Module 7052 (TextAreaField)
+// Module 7129 (TextAreaField)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
-import native from "native" /* 4915 */;
-import useTextField from "useTextField" /* 6571 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 6578 */;
-import _objectWithoutProperties2 from "_objectWithoutProperties" /* 6895 */;
-import useCharacterLimitAnnouncement2 from "useCharacterLimitAnnouncement" /* 7053 */;
+import native from "native" /* 5100 */;
+import useTextField from "useTextField" /* 6964 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 6971 */;
+import _objectWithoutProperties2 from "_objectWithoutProperties" /* 6977 */;
+import useCharacterLimitAnnouncement2 from "useCharacterLimitAnnouncement" /* 7130 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -96,7 +96,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextAreaFiel
     }
     const tmpResult10 = useCharacterLimitAnnouncement2;
     const characterLimitAnnouncement = tmpResult10.useCharacterLimitAnnouncement(tmp18);
-    const InputFieldContainer = tmp(6578).InputFieldContainer;
+    const InputFieldContainer = tmp(6971).InputFieldContainer;
     if (cResult[9] === focusProps) {
       let tmp20;
       if (cResult[10] === inputProps) {
@@ -120,7 +120,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextAreaFiel
                   let str3 = "text-muted";
                   let str = "text-muted";
                   const obj3 = { style: tmp11.maxLengthIndicator, children: hasOwnProperty(Text, obj4) };
-                  Text = tmp(5187).Text;
+                  Text = tmp(5195).Text;
                   const tmp39 = View;
                   if (null != maxLength) {
                     str = str3;
@@ -175,7 +175,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextAreaFiel
             }
           }
           const obj8 = { ref: innerRef, style: tmp23, placeholderTextColor: inputStyles.placeholderText.color, multiline: true };
-          const NativeTextInput = tmp(6581).NativeTextInput;
+          const NativeTextInput = tmp(6974).NativeTextInput;
           const merged1 = Object.assign(tmp20);
           const tmp29 = hasOwnProperty(NativeTextInput, obj8);
           cResult[16] = innerRef;
@@ -246,10 +246,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextAreaFiel
   intl = tmp2(1128).intl;
   const characterLimitAnnouncement = useCharacterLimitAnnouncement(obj5);
   const obj6 = { isFocused, children: items1 };
-  const InputFieldContainer = tmp2(6578).InputFieldContainer;
+  const InputFieldContainer = tmp2(6971).InputFieldContainer;
   const merged1 = Object.assign(merged);
   const obj7 = { ref: innerRef, style: items, placeholderTextColor: inputStyles.placeholderText.color, multiline: true };
-  const NativeTextInput = tmp2(6581).NativeTextInput;
+  const NativeTextInput = tmp2(6974).NativeTextInput;
   const propsForNativeTextInput = _objectWithoutProperties2.propsForNativeTextInput;
   _objectWithoutProperties2;
   const tmp2Result6 = native;
@@ -264,7 +264,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextAreaFiel
     let str3 = "text-muted";
     let str = "text-muted";
     const obj8 = { style: tmp5.maxLengthIndicator, children: hasOwnProperty(Text, obj9) };
-    Text = tmp2(5187).Text;
+    Text = tmp2(5195).Text;
     const tmp19 = View;
     if (null != maxLength) {
       str = str3;

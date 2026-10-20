@@ -1,44 +1,83 @@
-// Module ID: 13098
-// Function ID: 13099
+// Module ID: 13130
+// Function ID: 13131
 // Name: Badge/Badge
-// Dependencies: [17, 21, 1128, 587, 5191, 558, 576, 13099, 4925, 5187, 2]
+// Dependencies: [17, 21, 1128, 587, 4945, 558, 576, 13131, 5000, 5195, 2]
 
-// Module 13098 (Badge/Badge)
+// Module 13130 (Badge/Badge)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useBadgeTextVariant from "useBadgeTextVariant" /* 4925 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import BadgeShared from "BadgeShared" /* 13099 */;
+import useBadgeTextVariant from "useBadgeTextVariant" /* 5000 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import BadgeShared from "BadgeShared" /* 13131 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 function getBadgeColors(variant) {
-  if ("secondary" === variant) {
-    const obj2 = { background: nativeDefault.colors.BADGE_SECONDARY_BACKGROUND, text: nativeDefault.colors.BADGE_SECONDARY_TEXT };
-    return obj2;
-  } else if ("primary" === variant) {
-    const obj3 = { background: nativeDefault.colors.BADGE_PRIMARY_BACKGROUND, text: nativeDefault.colors.BADGE_PRIMARY_TEXT };
-    return obj3;
-  } else if ("expressive" === variant) {
-    const obj4 = { background: nativeDefault.colors.BADGE_EXPRESSIVE_BACKGROUND, text: nativeDefault.colors.BADGE_EXPRESSIVE_TEXT };
-    return obj4;
-  } else if ("rarity-common" === variant) {
-    const obj5 = { background: nativeDefault.colors.BADGE_COMMON_BACKGROUND, border: nativeDefault.colors.BADGE_COMMON_BORDER, text: nativeDefault.colors.BADGE_COMMON_TEXT };
-    return obj5;
-  } else if ("rarity-rare" === variant) {
-    const obj6 = { background: nativeDefault.colors.BADGE_RARE_BACKGROUND, border: nativeDefault.colors.BADGE_RARE_BORDER_GRADIENT_START, text: nativeDefault.colors.BADGE_RARE_TEXT };
-    return obj6;
-  } else if ("rarity-epic" === variant) {
-    const obj7 = { background: nativeDefault.colors.BADGE_EPIC_BACKGROUND, border: nativeDefault.colors.BADGE_EPIC_BORDER_GRADIENT_START, text: nativeDefault.colors.BADGE_EPIC_TEXT };
-    return obj7;
-  } else if ("rarity-mythic" === variant) {
-    const obj = { background: nativeDefault.colors.BADGE_MYTHIC_BACKGROUND, border: nativeDefault.colors.BADGE_MYTHIC_TEXT, text: nativeDefault.colors.BADGE_MYTHIC_TEXT };
-    return obj;
+  switch (variant) {
+    case "secondary":
+    {
+      const obj2 = { background: nativeDefault.colors.BADGE_SECONDARY_BACKGROUND, border: nativeDefault.colors.BADGE_SECONDARY_BORDER, text: nativeDefault.colors.BADGE_SECONDARY_TEXT };
+      return obj2;
+    }
+    case "primary":
+    {
+      const obj3 = { background: nativeDefault.colors.BADGE_PRIMARY_BACKGROUND, border: nativeDefault.colors.BADGE_PRIMARY_BORDER, text: nativeDefault.colors.BADGE_PRIMARY_TEXT };
+      return obj3;
+    }
+    case "expressive":
+    {
+      const obj4 = { background: nativeDefault.colors.BADGE_EXPRESSIVE_BACKGROUND, border: nativeDefault.colors.BADGE_EXPRESSIVE_BORDER, text: nativeDefault.colors.BADGE_EXPRESSIVE_TEXT };
+      return obj4;
+    }
+    case "warning":
+    {
+      const obj5 = { background: nativeDefault.colors.BADGE_WARNING_BACKGROUND, border: nativeDefault.colors.BADGE_WARNING_BORDER, text: nativeDefault.colors.BADGE_WARNING_TEXT };
+      return obj5;
+    }
+    case "critical":
+    {
+      const obj6 = { background: nativeDefault.colors.BADGE_CRITICAL_BACKGROUND, border: nativeDefault.colors.BADGE_CRITICAL_BORDER, text: nativeDefault.colors.BADGE_CRITICAL_TEXT };
+      return obj6;
+    }
+    case "success":
+    {
+      const obj7 = { background: nativeDefault.colors.BADGE_SUCCESS_BACKGROUND, border: nativeDefault.colors.BADGE_SUCCESS_BORDER, text: nativeDefault.colors.BADGE_SUCCESS_TEXT };
+      return obj7;
+    }
+    case "notification":
+    {
+      const obj8 = { background: nativeDefault.colors.BADGE_NOTIFICATION_BACKGROUND, border: nativeDefault.colors.BADGE_NOTIFICATION_BORDER, text: nativeDefault.colors.BADGE_NOTIFICATION_TEXT };
+      return obj8;
+    }
+    case "rarity-common":
+    {
+      const obj9 = { background: nativeDefault.colors.BADGE_COMMON_BACKGROUND, border: nativeDefault.colors.BADGE_COMMON_BORDER, text: nativeDefault.colors.BADGE_COMMON_TEXT };
+      return obj9;
+    }
+    case "rarity-rare":
+    {
+      const obj10 = { background: nativeDefault.colors.BADGE_RARE_BACKGROUND, border: nativeDefault.colors.BADGE_RARE_BORDER_GRADIENT_START, text: nativeDefault.colors.BADGE_RARE_TEXT };
+      return obj10;
+    }
+    case "rarity-epic":
+    {
+      const obj11 = { background: nativeDefault.colors.BADGE_EPIC_BACKGROUND, border: nativeDefault.colors.BADGE_EPIC_BORDER_GRADIENT_START, text: nativeDefault.colors.BADGE_EPIC_TEXT };
+      return obj11;
+    }
+    case "rarity-mythic":
+    {
+      const obj = { background: nativeDefault.colors.BADGE_MYTHIC_BACKGROUND, border: nativeDefault.colors.BADGE_MYTHIC_TEXT, text: nativeDefault.colors.BADGE_MYTHIC_TEXT };
+      return obj;
+    }
+    default:
+    {
+      break;
+    }
   }
 }
 const View = react_native.View;
@@ -68,7 +107,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Badge(arg0) 
   const cResult = obj.c(13);
   ({ type, variant, icon } = arg0);
   if (undefined === variant) {
-    variant = tmp(13099).DEFAULT_BADGE_VARIANT;
+    variant = tmp(13131).DEFAULT_BADGE_VARIANT;
   }
   const tmp4 = closure_7(variant);
   const tmpResult = useBadgeTextVariant;

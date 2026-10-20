@@ -1,178 +1,82 @@
 // Module ID: 12477
 // Function ID: 12478
-// Dependencies: [12442, 12387, 12478]
-// Exports: generateIteratee
+// Dependencies: [12402, 12405, 12434, 12420, 12433, 12454, 12424, 12425, 12411, 12442, 12419, 12418, 12406]
+// Exports: getTraceData
 
 // Module 12477
-import _mod12478 from "module_12478" /* 12478 */;
-import module_12442 from "module_12442" /* 12442 */;
+import _mod12411 from "module_12411" /* 12411 */;
+import _mod12418 from "module_12418" /* 12418 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 12419 */;
+import _mod12424 from "module_12424" /* 12424 */;
+import _mod12425 from "module_12425" /* 12425 */;
+import _mod12433 from "module_12433" /* 12433 */;
+import _mod12442 from "module_12442" /* 12442 */;
+import _mod12454 from "module_12454" /* 12454 */;
+import registerSpanErrorInstrumentation from "module_12402" /* 12402 */;
+import "module_12405";
+import DEBUG_BUILD from "module_12434" /* 12434 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12420 */;
 
-const require = globalThis.__r;
-let _require, stacktrace;
 
-
-export const generateIteratee = function generateIteratee(arg0) {
-  let closure_2;
-  let require;
-  ({ isBrowser: require, root: dependencyMap, prefix: closure_2 } = arg0);
-  return (filename) => {
-    if (filename.filename) {
-      const obj = /^[a-zA-Z]:\\/;
-      let isMatch = obj.test(filename.filename);
-      if (!isMatch) {
-        filename = filename.filename;
-        let hasItem = filename.includes("\\");
-        if (hasItem) {
-          const filename2 = filename.filename;
-          hasItem = !filename2.includes("/");
-        }
-        isMatch = hasItem;
-      }
-      const tmp5 = closure_0;
-      if (tmp5) {
-        if (root) {
-          const filename1 = filename.filename;
-          if (0 === filename1.indexOf(root)) {
-            filename.filename = filename1.replace(root, prefix);
-          }
-        }
-      } else if (isMatch) {
-        let replaced;
-        let relativeResult;
-        if (isMatch) {
-          const str5 = filename.filename.replace(/^[a-zA-Z]:/, "");
-          replaced = str5.replace(/\\/g, "/");
-        } else {
-          replaced = str3;
-        }
-        const obj2 = _mod12478;
-        if (root) {
-          relativeResult = obj2.relative(tmp7, replaced);
-        } else {
-          relativeResult = obj2.basename(replaced);
-        }
-        const _HermesInternal = HermesInternal;
-        filename.filename = "" + prefix + relativeResult;
-      }
-      return filename;
-    } else {
-      return filename;
-    }
-  };
-};
-export const rewriteFramesIntegration = module_12442.defineIntegration(() => {
-  let closure_0;
-  let prefix;
-  let root;
+export const getTraceData = function getTraceData() {
+  let sampled;
+  let spanId;
+  let traceId;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
-  let fn;
-  ({ prefix, root } = obj);
-  if (!prefix) {
-    prefix = "app:///";
-  }
-  const tmp = _require;
-  let tmp2 = root;
-  fn = obj.iteratee;
-  const tmp3 = "window" in require("module_12387").GLOBAL_OBJ && undefined !== tmp(tmp2[1]).GLOBAL_OBJ.window;
-  if (!fn) {
-    _require = tmp3;
-    fn = (filename) => {
-      if (filename.filename) {
-        const obj = /^[a-zA-Z]:\\/;
-        let isMatch = obj.test(filename.filename);
-        if (!isMatch) {
-          filename = filename.filename;
-          let hasItem = filename.includes("\\");
-          if (hasItem) {
-            const filename2 = filename.filename;
-            hasItem = !filename2.includes("/");
-          }
-          isMatch = hasItem;
-        }
-        const tmp5 = closure_0;
-        if (tmp5) {
-          if (root) {
-            const filename1 = filename.filename;
-            if (0 === filename1.indexOf(root)) {
-              filename.filename = filename1.replace(root, prefix);
-            }
-          }
-        } else if (isMatch) {
-          let replaced;
-          let relativeResult;
-          if (isMatch) {
-            const str5 = filename.filename.replace(/^[a-zA-Z]:/, "");
-            replaced = str5.replace(/\\/g, "/");
-          } else {
-            replaced = str3;
-          }
-          const obj2 = _mod12478;
-          if (root) {
-            relativeResult = obj2.relative(tmp7, replaced);
-          } else {
-            relativeResult = obj2.basename(replaced);
-          }
-          const _HermesInternal = HermesInternal;
-          filename.filename = "" + prefix + relativeResult;
-        }
-        return filename;
+  const obj2 = _mod12433;
+  const client = obj2.getClient();
+  const obj3 = _mod12454;
+  if (obj3.isEnabled()) {
+    if (client) {
+      const tmpResult = _mod12424;
+      const mainCarrier = tmpResult.getMainCarrier();
+      const tmpResult8 = _mod12425;
+      const asyncContextStrategy = tmpResult8.getAsyncContextStrategy(mainCarrier);
+      if (asyncContextStrategy.getTraceData) {
+        return asyncContextStrategy.getTraceData(obj);
       } else {
-        return filename;
-      }
-    };
-  }
-  let obj2 = {
-    name: "RewriteFrames",
-    processEvent(exception) {
-      function _processExceptionsEvent(exception) {
-        let obj2;
-        let values;
-        try {
-          let obj = { exception: obj2 };
-          let merged = Object.assign(exception);
-          obj2 = {
-            values: values.map((stacktrace) => {
-                let mapped;
-                const obj = {};
-                const merged = Object.assign(stacktrace);
-                stacktrace = stacktrace.stacktrace;
-                if (stacktrace) {
-                  const stacktrace2 = stacktrace.stacktrace;
-                  const obj2 = { frames: mapped };
-                  const merged1 = Object.assign(stacktrace2);
-                  mapped = stacktrace2 && stacktrace2.frames;
-                  if (mapped) {
-                    const frames = stacktrace2.frames;
-                    mapped = frames.map((item) => closure_1_0(item));
-                  }
-                  stacktrace = { stacktrace: obj2 };
-                  const obj3 = { stacktrace: obj2 };
-                }
-                const merged2 = Object.assign(stacktrace);
-                return obj;
-              })
-          };
-          let merged1 = Object.assign(exception.exception);
-          values = exception.exception.values;
-          return obj;
-        } catch (err) {
-          return exception;
+        let spanToTraceHeaderResult;
+        let dynamicSamplingContextFromSpan;
+        let obj5;
+        const tmpResult9 = _mod12433;
+        const currentScope = tmpResult9.getCurrentScope();
+        let span = obj.span;
+        if (!span) {
+          const tmpResult10 = _mod12411;
+          span = tmpResult10.getActiveSpan();
         }
+        if (span) {
+          const tmpResult11 = _mod12411;
+          spanToTraceHeaderResult = tmpResult11.spanToTraceHeader(span);
+        } else {
+          const propagationContext = currentScope.getPropagationContext();
+          ({ traceId, sampled, spanId } = propagationContext);
+          const tmpResult12 = _mod12418;
+          spanToTraceHeaderResult = tmpResult12.generateSentryTraceHeader(traceId, spanId, sampled);
+        }
+        const tmpResult13 = _mod12442;
+        if (span) {
+          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromSpan(span);
+        } else {
+          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromScope(client, currentScope);
+        }
+        const tmpResult14 = BAGGAGE_HEADER_NAME;
+        const result = tmpResult14.dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
+        const TRACEPARENT_REGEXP = tmp(12418).TRACEPARENT_REGEXP;
+        if (TRACEPARENT_REGEXP.test(spanToTraceHeaderResult)) {
+          obj5 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
+          const obj4 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
+        } else {
+          const logger = tmp(12406).logger;
+          logger.warn("Invalid sentry-trace data. Cannot generate trace data");
+          obj5 = {};
+        }
+        return obj5;
       }
-      exception = exception.exception;
-      if (exception) {
-        const _Array = Array;
-        exception = Array.isArray(exception.exception.values);
-      }
-      let tmp2 = exception;
-      if (exception) {
-        tmp2 = _processExceptionsEvent(exception);
-      }
-      return tmp2;
     }
-  };
-  return obj2;
-});
+  }
+  return {};
+};

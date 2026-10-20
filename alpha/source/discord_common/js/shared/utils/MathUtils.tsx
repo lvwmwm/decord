@@ -1,23 +1,23 @@
-// Module ID: 10928
-// Function ID: 10929
+// Module ID: 10940
+// Function ID: 10941
 // Name: MathUtils
 // Dependencies: [2]
 // Exports: roundIfClose
 
-// Module 10928 (MathUtils)
+// Module 10940 (MathUtils)
 import size from "module_2" /* 2 */;
 
-function roundIfClose(endImportTime, arg1) {
+function roundIfClose(arg0, arg1) {
   let rounded;
-  const diff = endImportTime - Math.floor(endImportTime);
+  const diff = arg0 - Math.floor(arg0);
   if (diff >= 1 - arg1) {
     const _Math2 = Math;
-    rounded = Math.ceil(endImportTime);
+    rounded = Math.ceil(arg0);
   } else {
-    rounded = endImportTime;
+    rounded = arg0;
     if (diff <= arg1) {
       const _Math = Math;
-      rounded = Math.floor(endImportTime);
+      rounded = Math.floor(arg0);
     }
   }
   return rounded;

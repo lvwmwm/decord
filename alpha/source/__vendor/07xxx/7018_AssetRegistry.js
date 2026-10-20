@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "45c8ad8f30ca8563a8afaab90a692e66", name: "MagnifyingGlassIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/auth/native/images", width: 375, height: 413, scales: [2, 3], hash: "9dd921dedb90562e62ae59d45a63666c", name: "register-background-light", type: "png" });

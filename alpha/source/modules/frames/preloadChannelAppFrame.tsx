@@ -1,16 +1,16 @@
-// Module ID: 13632
-// Function ID: 13633
+// Module ID: 13666
+// Function ID: 13667
 // Name: preloadChannelAppFrame
-// Dependencies: [2068, 4845, 6295, 6296, 1087, 2063, 11041, 6180, 6200, 6299, 11044, 2]
+// Dependencies: [4800, 4880, 6723, 6724, 1087, 4795, 11056, 6610, 6630, 5584, 11059, 2]
 // Exports: cancelChannelAppFramePreload, claimPreloadedFrame, preloadChannelAppFrame
 
-// Module 13632 (preloadChannelAppFrame)
-import getURLForApplicationDefault from "getURLForApplication" /* 6299 */;
-import leaveFrame from "leaveFrame" /* 11041 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import FramesStore from "FramesStore" /* 6295 */;
-import FramesConstants from "FramesConstants" /* 6296 */;
+// Module 13666 (preloadChannelAppFrame)
+import getURLForApplicationDefault from "getURLForApplication" /* 5584 */;
+import leaveFrame from "leaveFrame" /* 11056 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
+import FramesStore from "FramesStore" /* 6723 */;
+import FramesConstants from "FramesConstants" /* 6724 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
   let frameId;
   let timeout;
   let timeout1;
-  const f117546 = () => {
+  const f118013 = () => {
     const value = map.get(frameId);
     const obj = map;
     if (null != value) {
@@ -84,19 +84,19 @@ export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
         const self3 = this;
         const self4 = this;
         const obj4 = { stopTimer: timeout, launchRequestId: "r" };
-        timeout = new frameId(2063).Timeout();
+        timeout = new frameId(4795).Timeout();
         value = obj4;
       }
       const result = obj9.set(frameId, value);
       const stopTimer2 = value.stopTimer;
-      stopTimer2.start(5000, f117546);
+      stopTimer2.start(5000, f118013);
     } else {
       let obj2 = FramesStore;
       if (null == FramesStore.getFrame(frameId)) {
         if (PermissionStore.can(constants2.VIEW_CHANNEL, channel)) {
-          const obj3 = frameId(6180);
+          const obj3 = frameId(6610);
           if (!obj3.isChannelContentGated(channel)) {
-            const tmp7Result = frameId(6200);
+            const tmp7Result = frameId(6630);
             if (!tmp7Result.isChannelSpoilerGated(channel)) {
               if (null != getURLForApplicationDefault(applicationId)) {
                 let value3 = obj9.get(frameId);
@@ -104,14 +104,14 @@ export const preloadChannelAppFrame = function preloadChannelAppFrame(id) {
                   const self = this;
                   const self2 = this;
                   const obj5 = { stopTimer: timeout1, launchRequestId: "r" };
-                  timeout1 = new tmp7(2063).Timeout();
+                  timeout1 = new tmp7(4795).Timeout();
                   value3 = obj5;
                 }
                 const result1 = obj9.set(frameId, value3);
                 let stopTimer = value3.stopTimer;
-                stopTimer.start(5000, f117546);
+                stopTimer.start(5000, f118013);
                 const obj6 = { applicationId, surface, showErrorModal: false };
-                const tmp7Result2 = frameId(11044);
+                const tmp7Result2 = frameId(11059);
                 const launchFrameResult = tmp7Result2.launchFrame(obj6);
                 launchFrameResult.catch(() => {
                   const value = map.get(frameId);

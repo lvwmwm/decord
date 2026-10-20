@@ -1,17 +1,17 @@
-// Module ID: 7490
-// Function ID: 7491
+// Module ID: 7557
+// Function ID: 7558
 // Name: MemberSafetySupplementalUtils
-// Dependencies: [5, 1087, 1128, 558, 576, 6019, 7491, 5127, 5065, 1297, 2]
+// Dependencies: [5, 1087, 1128, 558, 576, 6456, 7558, 5166, 4952, 1297, 2]
 // Exports: fetchMemberSupplemental, getIntegrationLabel, getJoinSourceTypeLabel, registerFetchedSupplementals
 
-// Module 7490 (MemberSafetySupplementalUtils)
+// Module 7557 (MemberSafetySupplementalUtils)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl11 from "intl" /* 1128 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import useThemeDefault from "useTheme" /* 5127 */;
-import PlatformsDefault from "Platforms" /* 6019 */;
-import ConnectionsHooks from "ConnectionsHooks" /* 7491 */;
+import useThemeDefault from "useTheme" /* 5166 */;
+import PlatformsDefault from "Platforms" /* 6456 */;
+import ConnectionsHooks from "ConnectionsHooks" /* 7558 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 let c6, c7;
 
 let tmp;
-const shared = tmp(5065);
+const shared = tmp(4952);
 function createFetchKeys(arg0, arr) {
   let closure_0 = arg0;
   return arr.map((item) => closure_0 + item);

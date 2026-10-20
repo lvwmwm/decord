@@ -1,16 +1,16 @@
-// Module ID: 6434
-// Function ID: 6435
+// Module ID: 6829
+// Function ID: 6830
 // Name: MemberVerificationGuildHeader
-// Dependencies: [19, 17, 6429, 21, 5191, 587, 1417, 6435, 558, 576, 1633, 4945, 5128, 5491, 6436, 6440, 1128, 5187, 2]
+// Dependencies: [19, 17, 6824, 21, 4945, 587, 1417, 6830, 558, 576, 1633, 5014, 5631, 5219, 6831, 6835, 1128, 5195, 2]
 
-// Module 6434 (MemberVerificationGuildHeader)
+// Module 6829 (MemberVerificationGuildHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
 import react from "react" /* 19 */;
-import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 6429 */;
+import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 6824 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

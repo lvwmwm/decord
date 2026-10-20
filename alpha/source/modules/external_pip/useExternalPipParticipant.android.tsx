@@ -1,51 +1,25 @@
-// Module ID: 18139
-// Function ID: 18140
+// Module ID: 18168
+// Function ID: 18169
 // Name: useExternalPipParticipant
-// Dependencies: [32, 19, 6292, 502, 2014, 5209, 5214, 558, 576, 504, 2]
+// Dependencies: [19, 6720, 14851, 6590, 502, 2014, 5676, 5593, 10693, 558, 576, 504, 18169, 10698, 2]
 
-// Module 18139 (useExternalPipParticipant)
-import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
+// Module 18168 (useExternalPipParticipant)
+import CallConstants from "CallConstants" /* 5593 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10693 */;
+import participantHasVideo from "participantHasVideo" /* 10698 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18169 */;
+import react from "react" /* 19 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6720 */;
+import PIPSpeakerStore from "PIPSpeakerStore" /* 14851 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6590 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
-import CallConstants from "CallConstants" /* 5214 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5676 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let num;
-
-let c9;
-let metroImportAll;
-function hasOnlySelfParticipant(participants, meId) {
-  if (3 < participants.length) {
-    return false;
-  } else {
-    const iter = participants[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      if (nextResult.type !== constants.ACTIVITY) {
-        let user = tmp6.user;
-        let id;
-        if (user != null) {
-          id = user.id;
-        }
-        if (id !== meId) {
-          iter.return();
-          let flag = false;
-          return false;
-        }
-      }
-      continue;
-    }
-    return true;
-  }
-}
-let react = react_mod;
-({ isStreamParticipant: metroImportAll, ParticipantTypes: c9 } = CallConstants);
+const ParticipantTypes = CallConstants.ParticipantTypes;
+const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSetHasActiveVideoOutputSink(selectedParticipantStreamId) {
   let tmp2;
@@ -93,714 +67,256 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSet
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedParticipant(channelId) {
-  let first;
-  let focusedParticipantStreamId;
-  let stateFromStoresObject;
-  let tmp5;
-  const tmp = channelId;
-  let obj = channelId(focusedParticipantStreamId[8]);
-  const cResult = obj.c(13);
-  channelId = channelId.channelId;
-  const tmp2 = focusedParticipantStreamId;
-  focusedParticipantStreamId = channelId.focusedParticipantStreamId;
-  const meId = channelId.meId;
-  const obj2 = react;
-  const tmp4 = meId(react.useState(0), 2);
-  [tmp5, react] = tmp4;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp7 = stateFromStoresObject;
-    const items = [stateFromStoresObject];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === channelId) {
-    if (cResult[2] === focusedParticipantStreamId) {
-      let tmp8;
-      if (cResult[3] === meId) {
-        tmp8 = cResult[4];
-      }
-      if (cResult[5] === channelId) {
-        if (cResult[6] === focusedParticipantStreamId) {
-          if (cResult[7] === meId) {
-            let tmp9;
-            let tmp12;
-            let tmp11;
-            if (cResult[8] === tmp5) {
-              tmp9 = cResult[9];
-            }
-            const tmpResult = tmp(tmp2[9]);
-            stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp8, tmp9);
-            if (cResult[10] !== stateFromStoresObject.selectedParticipantSpeaking) {
-              class E {
-                constructor() {
-                  if (closure_4.selectedParticipantSpeaking) {
-                    tmp = globalThis;
-                    _setTimeout = setTimeout;
-                    num = 3000;
-                    closure_0 = setTimeout(() => {
-                      closure_1_3(() => { /* body not rendered: F158450 */ });
-                    }, 3000);
-                    return () => {
-                      clearTimeout(closure_0);
-                    };
-                  } else {
-                    return;
-                  }
-                }
-              }
-              const items1 = [stateFromStoresObject.selectedParticipantSpeaking];
-              cResult[10] = stateFromStoresObject.selectedParticipantSpeaking;
-              cResult[11] = E;
-              cResult[12] = items1;
-              tmp12 = items1;
-              tmp11 = E;
-            } else {
-              class E {
-                constructor() {
-                  if (closure_4.selectedParticipantSpeaking) {
-                    tmp = globalThis;
-                    _setTimeout = setTimeout;
-                    num = 3000;
-                    closure_0 = setTimeout(() => {
-                      closure_1_3(() => { /* body not rendered: F158450 */ });
-                    }, 3000);
-                    return () => {
-                      clearTimeout(closure_0);
-                    };
-                  } else {
-                    return;
-                  }
-                }
-              }
-              tmp12 = cResult[12];
-            }
-            const effect = obj2.useEffect(tmp11, tmp12);
-            return stateFromStoresObject;
-          }
-        }
-      }
-      const items2 = [channelId, focusedParticipantStreamId, meId, tmp5];
-      cResult[5] = channelId;
-      cResult[6] = focusedParticipantStreamId;
-      cResult[7] = meId;
-      cResult[8] = tmp5;
-      cResult[9] = items2;
-      tmp9 = items2;
-    }
-  }
-  const fn = function l() {
-    let id1;
-    let streamId1;
-    let tmp20;
-    let tmp30;
-    let tmp35;
-    if (null != channelId) {
-      if (null == focusedParticipantStreamId) {
-        const _Date = Date;
-        let tmp24;
-        const timestamp = Date.now();
-        const participants = ChannelRTCStore.getParticipants(tmp);
-        const tmp54 = hasOnlySelfParticipant(participants, meId);
-        const iter = participants[Symbol.iterator]();
-        const nextResult = iter.next();
-        while (iter !== undefined) {
-          let tmp5 = nextResult;
-          if (!tmp54) {
-            if (tmp5.type === constants.USER) {
-              let user = tmp5.user;
-              let id;
-              if (user != null) {
-                id = user.id;
-              }
-            }
-            continue;
-          }
-          let type = tmp5.type;
-          if (constants.USER === type) {
-            let speaking = tmp5.speaking;
-            if (!speaking) {
-              speaking = timestamp - tmp5.lastSpoke < 1000;
-            }
-            if (speaking) {
-              speaking = null == tmp24;
-            }
-            if (speaking) {
-              tmp24 = nextResult;
-            }
-            let voiceState = tmp5.voiceState;
-            let flag;
-            if (voiceState != null) {
-              flag = voiceState.selfVideo;
-            }
-            if (flag == null) {
-              flag = false;
-            }
-            if (flag) {
-              let tmp27 = null == tmp30;
-              if (!tmp27) {
-                tmp27 = tmp30.lastSpoke < tmp5.lastSpoke;
-              }
-              flag = tmp27;
-            }
-            if (flag) {
-              tmp30 = nextResult;
-            }
-            let tmp32 = null == tmp35;
-            if (!tmp32) {
-              tmp32 = tmp35.lastSpoke < tmp5.lastSpoke;
-            }
-            if (tmp32) {
-              tmp35 = nextResult;
-            }
-          } else if (tmp12.STREAM === type) {
-            let tmp14 = null != tmp20;
-            if (!tmp14) {
-              tmp14 = null == tmp5.streamId;
-            }
-            if (!tmp14) {
-              let tmp17 = metroImportAll(tmp5);
-              if (tmp17) {
-                tmp17 = tmp5.user.id === meId;
-              }
-              tmp14 = tmp17;
-            }
-            if (!tmp14) {
-              tmp20 = nextResult;
-            }
-          }
-        }
-        const obj = { selectedParticipantSpeaking: null != tmp24, selectedParticipantUserId: id1, selectedStreamId: streamId1 };
-        id1 = undefined;
-        if (tmp24 != null) {
-          const user2 = tmp24.user;
-          if (user2 != null) {
-            id1 = user2.id;
-          }
-        }
-        if (id1 == null) {
-          let id2;
-          if (tmp30 != null) {
-            const user3 = tmp30.user;
-            if (user3 != null) {
-              id2 = user3.id;
-            }
-          }
-          id1 = id2;
-        }
-        if (id1 == null) {
-          let id3;
-          if (tmp35 != null) {
-            const user4 = tmp35.user;
-            if (user4 != null) {
-              id3 = user4.id;
-            }
-          }
-          id1 = id3;
-        }
-        if (null != tmp24) {
-          const streamId = tmp24.streamId;
-          streamId1 = streamId;
-        } else {
-          streamId1 = undefined;
-          if (tmp20 != null) {
-            streamId1 = tmp20.streamId;
-          }
-          if (streamId1 == null) {
-            let streamId2;
-            if (tmp30 != null) {
-              streamId2 = tmp30.streamId;
-            }
-            streamId1 = streamId2;
-          }
-        }
-        return obj;
-      }
-    }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "end" };
-  };
-  cResult[1] = channelId;
-  cResult[2] = focusedParticipantStreamId;
-  cResult[3] = meId;
-  cResult[4] = fn;
-  tmp8 = fn;
-}) : (function useSelectedParticipant(channelId) {
-  let closure_3;
-  channelId = channelId.channelId;
-  const focusedParticipantStreamId = channelId.focusedParticipantStreamId;
-  const meId = channelId.meId;
-  react = undefined;
-  let stateFromStoresObject;
-  const tmp = meId(react.useState(0), 2);
-  react = tmp[1];
-  const first = tmp[0];
-  let obj = channelId(focusedParticipantStreamId[9]);
-  const items = [stateFromStoresObject];
-  const items1 = [channelId, focusedParticipantStreamId, meId, first];
-  stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    let id1;
-    let streamId1;
-    let tmp20;
-    let tmp30;
-    let tmp35;
-    if (null != channelId) {
-      if (null == focusedParticipantStreamId) {
-        const _Date = Date;
-        let tmp24;
-        const timestamp = Date.now();
-        const participants = ChannelRTCStore.getParticipants(tmp);
-        const tmp54 = hasOnlySelfParticipant(participants, meId);
-        const iter = participants[Symbol.iterator]();
-        const nextResult = iter.next();
-        while (iter !== undefined) {
-          let tmp5 = nextResult;
-          if (!tmp54) {
-            if (tmp5.type === constants.USER) {
-              let user = tmp5.user;
-              let id;
-              if (user != null) {
-                id = user.id;
-              }
-            }
-            continue;
-          }
-          let type = tmp5.type;
-          if (constants.USER === type) {
-            let speaking = tmp5.speaking;
-            if (!speaking) {
-              speaking = timestamp - tmp5.lastSpoke < 1000;
-            }
-            if (speaking) {
-              speaking = null == tmp24;
-            }
-            if (speaking) {
-              tmp24 = nextResult;
-            }
-            let voiceState = tmp5.voiceState;
-            let flag;
-            if (voiceState != null) {
-              flag = voiceState.selfVideo;
-            }
-            if (flag == null) {
-              flag = false;
-            }
-            if (flag) {
-              let tmp27 = null == tmp30;
-              if (!tmp27) {
-                tmp27 = tmp30.lastSpoke < tmp5.lastSpoke;
-              }
-              flag = tmp27;
-            }
-            if (flag) {
-              tmp30 = nextResult;
-            }
-            let tmp32 = null == tmp35;
-            if (!tmp32) {
-              tmp32 = tmp35.lastSpoke < tmp5.lastSpoke;
-            }
-            if (tmp32) {
-              tmp35 = nextResult;
-            }
-          } else if (tmp12.STREAM === type) {
-            let tmp14 = null != tmp20;
-            if (!tmp14) {
-              tmp14 = null == tmp5.streamId;
-            }
-            if (!tmp14) {
-              let tmp17 = metroImportAll(tmp5);
-              if (tmp17) {
-                tmp17 = tmp5.user.id === meId;
-              }
-              tmp14 = tmp17;
-            }
-            if (!tmp14) {
-              tmp20 = nextResult;
-            }
-          }
-        }
-        const obj = { selectedParticipantSpeaking: null != tmp24, selectedParticipantUserId: id1, selectedStreamId: streamId1 };
-        id1 = undefined;
-        if (tmp24 != null) {
-          const user2 = tmp24.user;
-          if (user2 != null) {
-            id1 = user2.id;
-          }
-        }
-        if (id1 == null) {
-          let id2;
-          if (tmp30 != null) {
-            const user3 = tmp30.user;
-            if (user3 != null) {
-              id2 = user3.id;
-            }
-          }
-          id1 = id2;
-        }
-        if (id1 == null) {
-          let id3;
-          if (tmp35 != null) {
-            const user4 = tmp35.user;
-            if (user4 != null) {
-              id3 = user4.id;
-            }
-          }
-          id1 = id3;
-        }
-        if (null != tmp24) {
-          const streamId = tmp24.streamId;
-          streamId1 = streamId;
-        } else {
-          streamId1 = undefined;
-          if (tmp20 != null) {
-            streamId1 = tmp20.streamId;
-          }
-          if (streamId1 == null) {
-            let streamId2;
-            if (tmp30 != null) {
-              streamId2 = tmp30.streamId;
-            }
-            streamId1 = streamId2;
-          }
-        }
-        return obj;
-      }
-    }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "end" };
-  }, items1);
-  const items2 = [stateFromStoresObject.selectedParticipantSpeaking];
-  const effect = react.useEffect(() => {
-    let closure_0;
-    if (stateFromStoresObject.selectedParticipantSpeaking) {
-      const _setTimeout = setTimeout;
-      const timeout = setTimeout(() => {
-        closure_1_3((arg0) => arg0 + 1);
-      }, 3000);
-      return () => {
-        clearTimeout(closure_0);
-      };
-    }
-  }, items2);
-  return stateFromStoresObject;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFocusedParticipant(channelId) {
-  let first;
-  let meId;
-  let ref2;
-  const tmp = channelId;
-  let obj = channelId(meId[8]);
-  const cResult = obj.c(4);
-  channelId = channelId.channelId;
-  const tmp2 = meId;
-  meId = channelId.meId;
-  const ref = react.useRef(undefined);
-  react = react.useRef(undefined);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelRTCStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === channelId) {
-    let tmp6;
-    if (cResult[2] === meId) {
-      tmp6 = cResult[3];
-    }
-    const tmpResult = tmp(tmp2[9]);
-    return tmpResult.useStateFromStoresObject(first, tmp6);
-  }
-  const fn = function u() {
-    let obj;
-    let tmp17;
-    let tmp6;
-    let type3;
-    let selectedParticipant = null;
-    if (null != channelId) {
-      selectedParticipant = ChannelRTCStore.getSelectedParticipant(tmp);
-    }
-    if (!metroImportAll(selectedParticipant)) {
-      tmp6 = selectedParticipant;
-    } else {
-      const user = selectedParticipant.user;
-      let id;
-      if (user != null) {
-        id = user.id;
-      }
-      tmp6 = null;
-    }
-    if (undefined === ref.current) {
-      let id1;
-      if (tmp6 != null) {
-        id1 = tmp6.id;
-      }
-      ref.current = id1;
-      let type;
-      const tmp9 = ref2;
-      if (tmp6 != null) {
-        type = tmp6.type;
-      }
-      tmp9.current = type;
-    }
-    let id2;
-    const current = tmp7.current;
-    if (tmp6 != null) {
-      id2 = tmp6.id;
-    }
-    if (current !== id2) {
-      obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Reflect", focusedParticipantType: ref2.current };
-      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Reflect", focusedParticipantType: ref2.current };
-    } else {
-      let type1;
-      if (tmp6 != null) {
-        type1 = tmp6.type;
-      }
-      let tmp14;
-      const tmp13 = constants;
-      if (type1 !== constants.ACTIVITY) {
-        let streamId;
-        if (tmp6 != null) {
-          streamId = tmp6.streamId;
-        }
-        tmp14 = streamId;
-      }
-      obj = { focusedParticipantStreamId: tmp14, focusedParticipantUserId: tmp17, focusedParticipantType: type3 };
-      let type2;
-      if (tmp6 != null) {
-        type2 = tmp6.type;
-      }
-      tmp17 = undefined;
-      if (type2 !== tmp13.ACTIVITY) {
-        let id3;
-        if (tmp6 != null) {
-          const user2 = tmp6.user;
-          if (user2 != null) {
-            id3 = user2.id;
-          }
-        }
-        tmp17 = id3;
-      }
-      type3 = undefined;
-      if (tmp6 != null) {
-        type3 = tmp6.type;
-      }
-    }
-    return obj;
-  };
-  cResult[1] = channelId;
-  cResult[2] = meId;
-  cResult[3] = fn;
-  tmp6 = fn;
-}) : (function useFocusedParticipant(arg0) {
-  let ref2;
-  ({ channelId: require, meId: dependencyMap } = arg0);
-  react = undefined;
-  const ref = react.useRef(undefined);
-  react = react.useRef(undefined);
-  let obj = get_initialized;
-  const items = [ChannelRTCStore];
-  return obj.useStateFromStoresObject(items, () => {
-    let obj;
-    let tmp17;
-    let tmp6;
-    let type3;
-    let selectedParticipant = null;
-    if (null != require) {
-      selectedParticipant = ChannelRTCStore.getSelectedParticipant(tmp);
-    }
-    if (!metroImportAll(selectedParticipant)) {
-      tmp6 = selectedParticipant;
-    } else {
-      const user = selectedParticipant.user;
-      let id;
-      if (user != null) {
-        id = user.id;
-      }
-      tmp6 = null;
-    }
-    if (undefined === ref.current) {
-      let id1;
-      if (tmp6 != null) {
-        id1 = tmp6.id;
-      }
-      ref.current = id1;
-      let type;
-      const tmp9 = ref2;
-      if (tmp6 != null) {
-        type = tmp6.type;
-      }
-      tmp9.current = type;
-    }
-    let id2;
-    const current = tmp7.current;
-    if (tmp6 != null) {
-      id2 = tmp6.id;
-    }
-    if (current !== id2) {
-      obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Reflect", focusedParticipantType: ref2.current };
-      const obj2 = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Reflect", focusedParticipantType: ref2.current };
-    } else {
-      let type1;
-      if (tmp6 != null) {
-        type1 = tmp6.type;
-      }
-      let tmp14;
-      const tmp13 = constants;
-      if (type1 !== constants.ACTIVITY) {
-        let streamId;
-        if (tmp6 != null) {
-          streamId = tmp6.streamId;
-        }
-        tmp14 = streamId;
-      }
-      obj = { focusedParticipantStreamId: tmp14, focusedParticipantUserId: tmp17, focusedParticipantType: type3 };
-      let type2;
-      if (tmp6 != null) {
-        type2 = tmp6.type;
-      }
-      tmp17 = undefined;
-      if (type2 !== tmp13.ACTIVITY) {
-        let id3;
-        if (tmp6 != null) {
-          const user2 = tmp6.user;
-          if (user2 != null) {
-            id3 = user2.id;
-          }
-        }
-        tmp17 = id3;
-      }
-      type3 = undefined;
-      if (tmp6 != null) {
-        type3 = tmp6.type;
-      }
-    }
-    return obj;
-  });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExternalPipParticipant() {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExternalPipParticipant() {
   let channelId;
-  let focusedParticipantStreamId;
-  let focusedParticipantType;
-  let id;
+  let first;
+  let stateFromStores;
+  let stateFromStores1;
+  let tmp10;
+  let tmp7;
+  let tmp9;
+  const tmp = stateFromStores;
+  let tmp2 = stateFromStores1;
+  let obj = stateFromStores(stateFromStores1[10]);
+  const cResult = obj.c(20);
+  let obj2 = stateFromStores(stateFromStores1[11]);
+  const items = [RTCConnectionStore];
+  stateFromStores = obj2.useStateFromStores(items, () => channelId.getChannelId());
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items1 = [ChannelRTCStore];
+    cResult[0] = items1;
+    first = items1;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== stateFromStores) {
+    class I {
+      constructor() {
+        let tmp2;
+        if (null != stateFromStores) {
+          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
+          tmp2 = selectedParticipantId;
+        }
+        return tmp2;
+      }
+    }
+    cResult[1] = stateFromStores;
+    cResult[2] = I;
+    tmp7 = I;
+  } else {
+    class I {
+      constructor() {
+        let tmp2;
+        if (null != stateFromStores) {
+          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
+          tmp2 = selectedParticipantId;
+        }
+        return tmp2;
+      }
+    }
+  }
+  const tmpResult = tmp(tmp2[11]);
+  stateFromStores1 = tmpResult.useStateFromStores(first, tmp7);
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class I {
+      constructor() {
+        let tmp2;
+        if (null != stateFromStores) {
+          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
+          tmp2 = selectedParticipantId;
+        }
+        return tmp2;
+      }
+    }
+    const items2 = [PIPSpeakerStore];
+    cResult[3] = items2;
+    tmp9 = items2;
+  } else {
+    class I {
+      constructor() {
+        let tmp2;
+        if (null != stateFromStores) {
+          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
+          tmp2 = selectedParticipantId;
+        }
+        return tmp2;
+      }
+    }
+  }
+  if (cResult[4] !== stateFromStores) {
+    class I {
+      constructor() {
+        let tmp2;
+        if (null != stateFromStores) {
+          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
+          tmp2 = selectedParticipantId;
+        }
+        return tmp2;
+      }
+    }
+    cResult[4] = stateFromStores;
+    cResult[5] = tmp11;
+    tmp10 = tmp11;
+  } else {
+    class I {
+      constructor() {
+        let tmp2;
+        if (null != stateFromStores) {
+          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
+          tmp2 = selectedParticipantId;
+        }
+        return tmp2;
+      }
+    }
+  }
+  const tmpResult2 = tmp(tmp2[11]);
+  const stateFromStores2 = tmpResult2.useStateFromStores(tmp9, tmp10);
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    class I {
+      constructor() {
+        let tmp2;
+        if (null != stateFromStores) {
+          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
+          tmp2 = selectedParticipantId;
+        }
+        return tmp2;
+      }
+    }
+    const items3 = [ChannelRTCStore, , , ];
+    items3[1] = ApplicationStreamingStore;
+    let tmp15 = AuthenticationStore;
+    items3[2] = AuthenticationStore;
+    const tmp16 = MediaEngineStore;
+    items3[3] = MediaEngineStore;
+    cResult[6] = items3;
+  } else {
+    class I {
+      constructor() {
+        let tmp2;
+        if (null != stateFromStores) {
+          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
+          tmp2 = selectedParticipantId;
+        }
+        return tmp2;
+      }
+    }
+  }
+  if (cResult[7] === stateFromStores) {
+    class I {
+      constructor() {
+        let tmp2;
+        if (null != stateFromStores) {
+          const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
+          tmp2 = selectedParticipantId;
+        }
+        return tmp2;
+      }
+    }
+  }
+  class T {
+    constructor() {
+      let obj2;
+      let pIPParticipantToShow;
+      let tmp15;
+      if (null != stateFromStores) {
+        const obj = { channelId: stateFromStores, panelMode: VoicePanelModes.PIP, focusedParticipantId: stateFromStores1, lastParticipantId: stateFromStores1, speakingUserId: stateFromStores2, blockList: obj2.createPIPBlockList(VoicePanelModes.PIP, stateFromStores1), showSecondaryPIP: false, canShowActivities: false };
+        const computePIPParticipantToShow = VoicePanelPIPUtils.computePIPParticipantToShow;
+        VoicePanelPIPUtils;
+        obj2 = VoicePanelPIPUtils;
+        pIPParticipantToShow = computePIPParticipantToShow(obj);
+      }
+      let participant;
+      if (null != stateFromStores) {
+        if (null != pIPParticipantToShow) {
+          participant = ChannelRTCStore.getParticipant(tmp, pIPParticipantToShow.id);
+        }
+      }
+      if (null != participant) {
+        let obj3;
+        if (participant.type !== ParticipantTypes.ACTIVITY) {
+          obj3 = { participantType: participant.type, selectedParticipantSpeaking: participant.type === tmp16.USER && participant.speaking, selectedParticipantStreamId: tmp15, selectedParticipantUserId: participant.user.id };
+          tmp15 = undefined;
+          const obj4 = participantHasVideo;
+          if (obj4.canRenderParticipantVideo(participant)) {
+            const streamId = participant.streamId;
+            tmp15 = streamId;
+          }
+        }
+        return obj3;
+      }
+      obj3 = { participantType: "test", selectedParticipantSpeaking: "duration", selectedParticipantStreamId: "toCharArray$esjava$1", selectedParticipantUserId: null };
+    }
+  }
+  const items4 = [stateFromStores, stateFromStores1, stateFromStores2];
+  cResult[7] = stateFromStores;
+  cResult[8] = stateFromStores1;
+  cResult[9] = stateFromStores2;
+  cResult[10] = T;
+  cResult[11] = items4;
+}) : (function useExternalPipParticipant() {
+  let channelId;
+  let participantType;
   let selectedParticipantSpeaking;
   let selectedParticipantUserId;
-  let tmp5;
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(17);
+  let stateFromStores1;
+  const tmp = channelId;
+  let tmp2 = stateFromStores1;
+  let obj = channelId(stateFromStores1[11]);
   const items = [RTCConnectionStore];
-  const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, () => channelId.getChannelId());
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [AuthenticationStore];
-    const fn = function n() {
-      return id.getId();
-    };
-    cResult[0] = items1;
-    cResult[1] = fn;
-    tmp5 = items1;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores1 = tmpResult.useStateFromStores(tmp5, tmp6);
-  if (cResult[2] === stateFromStores) {
-    let tmp9;
-    if (cResult[3] === stateFromStores1) {
-      tmp9 = cResult[4];
+  channelId = obj.useStateFromStores(items, () => channelId.getChannelId());
+  const items1 = [ChannelRTCStore];
+  const tmpResult = tmp(tmp2[11]);
+  stateFromStores1 = tmpResult.useStateFromStores(items1, () => {
+    let tmp2;
+    if (null != channelId) {
+      const selectedParticipantId = ChannelRTCStore.getSelectedParticipantId(tmp);
+      tmp2 = selectedParticipantId;
     }
-    ({ focusedParticipantStreamId, focusedParticipantType } = closure_13(tmp9));
-    closure_13(tmp9);
-    if (cResult[5] === stateFromStores) {
-      if (cResult[6] === focusedParticipantStreamId) {
-        let tmp13;
-        let tmp16;
-        if (cResult[7] === stateFromStores1) {
-          tmp13 = cResult[8];
-        }
-        const tmp15 = closure_12(tmp13);
-        ({ selectedParticipantUserId, selectedParticipantSpeaking } = tmp15);
-        let selectedStreamId = focusedParticipantStreamId;
-        if (focusedParticipantStreamId == null) {
-          selectedStreamId = tmp15.selectedStreamId;
-        }
-        if (null != focusedParticipantStreamId) {
-          selectedParticipantUserId = tmp12;
-        }
-        if (cResult[9] !== selectedStreamId) {
-          const obj3 = { selectedParticipantStreamId: selectedStreamId };
-          cResult[9] = selectedStreamId;
-          cResult[10] = obj3;
-          tmp16 = obj3;
-        } else {
-          tmp16 = cResult[10];
-        }
-        closure_11(tmp16);
-        if (cResult[11] === stateFromStores) {
-          if (cResult[12] === focusedParticipantType) {
-            if (cResult[13] === selectedParticipantUserId) {
-              if (cResult[14] === selectedParticipantSpeaking) {
-                let tmp19;
-                if (cResult[15] === selectedStreamId) {
-                  tmp19 = cResult[16];
-                }
-                return tmp19;
-              }
-            }
-          }
-        }
-        const obj4 = { channelId: stateFromStores, selectedParticipantStreamId: selectedStreamId, selectedParticipantUserId, selectedParticipantSpeaking, focusedParticipantType };
-        cResult[11] = stateFromStores;
-        cResult[12] = focusedParticipantType;
-        cResult[13] = selectedParticipantUserId;
-        cResult[14] = selectedParticipantSpeaking;
-        cResult[15] = selectedStreamId;
-        cResult[16] = obj4;
-        tmp19 = obj4;
+    return tmp2;
+  });
+  const items2 = [PIPSpeakerStore];
+  const tmpResult3 = tmp(tmp2[11]);
+  const stateFromStores2 = tmpResult3.useStateFromStores(items2, () => PIPSpeakerStore.getSpeakerId(channelId));
+  const items3 = [ChannelRTCStore, ApplicationStreamingStore, AuthenticationStore, MediaEngineStore];
+  const items4 = [channelId, stateFromStores1, stateFromStores2];
+  const tmpResult4 = tmp(tmp2[11]);
+  const stateFromStoresObject = tmpResult4.useStateFromStoresObject(items3, () => {
+    let obj2;
+    let pIPParticipantToShow;
+    let tmp15;
+    if (null != channelId) {
+      const obj = { channelId, panelMode: VoicePanelModes.PIP, focusedParticipantId: stateFromStores1, lastParticipantId: stateFromStores1, speakingUserId: stateFromStores2, blockList: obj2.createPIPBlockList(VoicePanelModes.PIP, stateFromStores1), showSecondaryPIP: false, canShowActivities: false };
+      const computePIPParticipantToShow = VoicePanelPIPUtils.computePIPParticipantToShow;
+      VoicePanelPIPUtils;
+      obj2 = VoicePanelPIPUtils;
+      pIPParticipantToShow = computePIPParticipantToShow(obj);
+    }
+    let participant;
+    if (null != channelId) {
+      if (null != pIPParticipantToShow) {
+        participant = ChannelRTCStore.getParticipant(tmp, pIPParticipantToShow.id);
       }
     }
-    const obj5 = { channelId: stateFromStores, focusedParticipantStreamId, meId: stateFromStores1 };
-    cResult[5] = stateFromStores;
-    cResult[6] = focusedParticipantStreamId;
-    cResult[7] = stateFromStores1;
-    cResult[8] = obj5;
-    tmp13 = obj5;
-  }
-  const obj6 = { channelId: stateFromStores, meId: stateFromStores1 };
-  cResult[2] = stateFromStores;
-  cResult[3] = stateFromStores1;
-  cResult[4] = obj6;
-  tmp9 = obj6;
-}) : (function useExternalPipParticipant() {
-  let focusedParticipantType;
-  let focusedParticipantUserId;
-  let id;
-  const items = [RTCConnectionStore];
-  const obj = get_initialized;
-  const channelId = obj.useStateFromStores(items, () => channelId.getChannelId());
-  const items1 = [AuthenticationStore];
-  const tmpResult = get_initialized;
-  const stateFromStores1 = tmpResult.useStateFromStores(items1, () => id.getId());
-  const tmp5 = closure_13({ channelId, meId: stateFromStores1 });
-  const focusedParticipantStreamId = tmp5.focusedParticipantStreamId;
-  ({ focusedParticipantUserId, focusedParticipantType } = tmp5);
-  const tmp6 = closure_12({ channelId, focusedParticipantStreamId, meId: stateFromStores1 });
-  let selectedParticipantUserId = tmp6.selectedParticipantUserId;
-  let selectedParticipantStreamId = focusedParticipantStreamId;
-  const selectedParticipantSpeaking = tmp6.selectedParticipantSpeaking;
-  if (focusedParticipantStreamId == null) {
-    selectedParticipantStreamId = tmp6.selectedStreamId;
-  }
-  if (null != focusedParticipantStreamId) {
-    selectedParticipantUserId = focusedParticipantUserId;
-  }
+    if (null != participant) {
+      let obj3;
+      if (participant.type !== ParticipantTypes.ACTIVITY) {
+        obj3 = { participantType: participant.type, selectedParticipantSpeaking: participant.type === tmp16.USER && participant.speaking, selectedParticipantStreamId: tmp15, selectedParticipantUserId: participant.user.id };
+        tmp15 = undefined;
+        const obj4 = participantHasVideo;
+        if (obj4.canRenderParticipantVideo(participant)) {
+          const streamId = participant.streamId;
+          tmp15 = streamId;
+        }
+      }
+      return obj3;
+    }
+    obj3 = { participantType: "test", selectedParticipantSpeaking: "duration", selectedParticipantStreamId: "toCharArray$esjava$1", selectedParticipantUserId: null };
+  }, items4);
+  const selectedParticipantStreamId = stateFromStoresObject.selectedParticipantStreamId;
+  ({ participantType, selectedParticipantSpeaking, selectedParticipantUserId } = stateFromStoresObject);
   closure_11({ selectedParticipantStreamId });
-  return { channelId, selectedParticipantStreamId, selectedParticipantUserId, selectedParticipantSpeaking, focusedParticipantType };
+  return { channelId, participantType, selectedParticipantSpeaking, selectedParticipantStreamId, selectedParticipantUserId };
 });
 const result = size.fileFinishedImporting("modules/external_pip/useExternalPipParticipant.android.tsx");
 
-export default tmp3;
+export default tmp2;

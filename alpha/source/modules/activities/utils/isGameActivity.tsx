@@ -1,10 +1,10 @@
-// Module ID: 10548
-// Function ID: 10549
+// Module ID: 10562
+// Function ID: 10563
 // Name: isGameActivity
 // Dependencies: [1087, 2]
 // Exports: default
 
-// Module 10548 (isGameActivity)
+// Module 10562 (isGameActivity)
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

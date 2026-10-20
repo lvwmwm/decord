@@ -1,29 +1,30 @@
-// Module ID: 19026
-// Function ID: 19027
+// Module ID: 19061
+// Function ID: 19062
 // Name: clips/ClipsManager
-// Dependencies: [5, 7696, 502, 2068, 2014, 5209, 7694, 2020, 8029, 1087, 6154, 7085, 14403, 5236, 6156, 1267, 2044, 584, 4826, 1384, 14402, 2]
+// Dependencies: [5, 7759, 502, 4800, 2014, 5676, 7757, 2020, 8092, 1087, 6591, 5680, 7162, 14436, 5700, 6593, 1267, 4776, 584, 4762, 1384, 14435, 2]
 
-// Module 19026 (clips/ClipsManager)
+// Module 19061 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import UserSettings from "UserSettings" /* 2044 */;
-import DiscordNativeDefault from "DiscordNative" /* 4826 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5236 */;
-import Constants2 from "Constants" /* 6154 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6156 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 7696 */;
-import ClipsExperiment from "ClipsExperiment" /* 14403 */;
+import DiscordNativeDefault from "DiscordNative" /* 4762 */;
+import UserSettings from "UserSettings" /* 4776 */;
+import Constants2 from "Constants" /* 5680 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5700 */;
+import Constants3 from "Constants" /* 6591 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6593 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 7759 */;
+import ClipsExperiment from "ClipsExperiment" /* 14436 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7694 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5676 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7757 */;
 import ClipsStore from "ClipsStore" /* 2020 */;
-import ClipsConstants from "ClipsConstants" /* 8029 */;
+import ClipsConstants from "ClipsConstants" /* 8092 */;
 import Constants from "Constants" /* 1087 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7162 */;
 import size from "module_2" /* 2 */;
 
 const StreamKeyUtilsAll = StreamKeyUtils;
@@ -37,56 +38,67 @@ let closure_17;
 let closure_18;
 let map1;
 let tmp;
-const isClipsEnabled = tmp(14402);
+const isClipsEnabled = tmp(14435);
 const getSystemAnalyticsInfo = SystemAnalyticsStore.getSystemAnalyticsInfo;
 ({ WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX: closure_12, WINDOWS_HARDWARE_MINIMUM_GPU_REGEX: map1, CLIPS_HARDWARE_CLASSIFICATION_VERSION: closure_14, ClipsHardwareClassification: closure_15, CLIP_RUNTIME: closure_16 } = ClipsConstants);
 ({ AnalyticEvents: closure_17, RTCConnectionStates: closure_18 } = Constants);
-const StreamTypes = Constants2.StreamTypes;
+const StreamTypes = Constants3.StreamTypes;
+const Features = Constants2.Features;
 class ClipsManager extends AutomaticLifecycleManager {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
     applyArgumentsResult.actions = {
       POST_CONNECTION_OPEN() {
-        return applyArgumentsResult.handlePostConnectionOpen();
+        return require.handlePostConnectionOpen();
       },
       RTC_CONNECTION_FLAGS(arg0) {
-        return applyArgumentsResult.handleRTCConnectionFlags(arg0);
+        return require.handleRTCConnectionFlags(arg0);
       },
       RTC_CONNECTION_USERS_MERGED(userIds) {
-        return applyArgumentsResult.handleRTCUsersUpdate(userIds);
+        return require.handleRTCUsersUpdate(userIds);
       },
       CLIPS_INIT_FAILURE(arg0) {
-        return applyArgumentsResult.handleClipsInitFailure(arg0);
+        return require.handleClipsInitFailure(arg0);
       },
       CLIPS_SETTINGS_UPDATE(arg0) {
-        return applyArgumentsResult.applyNativeClipsSettings(arg0);
+        return require.applyNativeClipsSettings(arg0);
       },
       CLIPS_ALLOW_VOICE_RECORDING_UPDATE() {
-        return applyArgumentsResult.handleClipsAllowVoiceRecordingUpdate();
+        return require.handleClipsAllowVoiceRecordingUpdate();
       },
       STREAM_START() {
-        return applyArgumentsResult.applyNativeClipsSettings();
+        const mediaEngine = MediaEngineStore.getMediaEngine();
+        if (!mediaEngine.supports(Features.UNIFIED_CAPTURE_BROKER)) {
+          const result = require.applyNativeClipsSettings();
+        }
       },
       STREAM_DELETE(arg0) {
-        return applyArgumentsResult.handleStreamEnded(arg0);
+        const mediaEngine = MediaEngineStore.getMediaEngine();
+        if (!mediaEngine.supports(Features.UNIFIED_CAPTURE_BROKER)) {
+          require.handleStreamEnded(arg0);
+        }
       },
       STREAM_CLOSE(arg0) {
-        return applyArgumentsResult.handleStreamEnded(arg0);
+        const mediaEngine = MediaEngineStore.getMediaEngine();
+        if (!mediaEngine.supports(Features.UNIFIED_CAPTURE_BROKER)) {
+          require.handleStreamEnded(arg0);
+        }
       },
       RUNNING_GAME_TOGGLE_DETECTION(arg0) {
-        return applyArgumentsResult.handleClipsInitOnToggleDetection(arg0);
+        return require.handleClipsInitOnToggleDetection(arg0);
       },
       RUNNING_GAMES_CHANGE(arg0) {
-        return applyArgumentsResult.handleClipsInitOnGamesChange(arg0);
+        return require.handleClipsInitOnGamesChange(arg0);
       },
       CLIPS_RESTART() {
-        return applyArgumentsResult.fireClipsInitEvent(true);
+        return require.fireClipsInitEvent(true);
       },
       RTC_CONNECTION_VIDEO(arg0) {
-        return applyArgumentsResult.handleRTCConnectionVideo(arg0);
+        return require.handleRTCConnectionVideo(arg0);
       },
       RTC_CONNECTION_STATE(arg0) {
-        return applyArgumentsResult.handleRTCConnectionState(arg0);
+        return require.handleRTCConnectionState(arg0);
       }
     };
     return applyArgumentsResult;
@@ -295,7 +307,7 @@ class ClipsManager extends AutomaticLifecycleManager {
                             const obj6 = { gpuModels, classification: tmp.classifyHardware(gpuModels) };
                             return obj6;
                           }
-                          const processUtils = closure_2_1(closure_2_3[18]).processUtils;
+                          const processUtils = closure_2_1(closure_2_3[19]).processUtils;
                           yield processUtils.getSystemInfo();
                           const gpus2 = arg1.gpus;
                           const gpuModels2 = gpus2.map((model) => model.model);
@@ -323,7 +335,7 @@ class ClipsManager extends AutomaticLifecycleManager {
             _self = value;
             gpuModels = _self.gpuModels;
             classification = _self.classification;
-            const obj7 = tmp(c3[15]);
+            const obj7 = tmp(c3[16]);
             const obj8 = { classification, version, gpu_models: gpuModels, clip_runtime };
             obj7.track(constants2.CLIPS_HARDWARE_CLASSIFICATION, obj8);
             c3 = 0;

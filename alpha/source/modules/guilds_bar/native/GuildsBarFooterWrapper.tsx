@@ -1,22 +1,22 @@
-// Module ID: 17492
-// Function ID: 17493
+// Module ID: 17521
+// Function ID: 17522
 // Name: GuildsBarFooterWrapper
-// Dependencies: [17429, 21, 5191, 587, 558, 576, 4913, 17152, 6439, 2]
+// Dependencies: [17458, 21, 4945, 587, 558, 576, 5213, 17181, 6834, 2]
 
-// Module 17492 (GuildsBarFooterWrapper)
+// Module 17521 (GuildsBarFooterWrapper)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4913 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17152 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17429 */;
-import createStyles from "createStyles" /* 5191 */;
+import useToken from "useToken" /* 5213 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17181 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17458 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp3;
-const NativeViewDefault = tmp3(6439);
+const NativeViewDefault = tmp3(6834);
 const GUILD_ITEM_HIT_SLOP = GuildsBarConstants.GUILD_ITEM_HIT_SLOP;
 const jsx = Fragment.jsx;
 let obj = { footerWrapper: obj2 };

@@ -1,18 +1,18 @@
-// Module ID: 8019
-// Function ID: 8020
+// Module ID: 8082
+// Function ID: 8083
 // Name: GuildAutomodMessageStore
-// Dependencies: [2068, 5532, 1087, 8020, 8149, 5534, 7496, 11, 504, 584, 2]
+// Dependencies: [4800, 5965, 1087, 8083, 8212, 5967, 7563, 11, 504, 584, 2]
 
-// Module 8019 (GuildAutomodMessageStore)
+// Module 8082 (GuildAutomodMessageStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5534 */;
-import AutomodMessageUtils from "AutomodMessageUtils" /* 7496 */;
-import MessageQueue from "MessageQueue" /* 8020 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 8149 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import MessageStore from "MessageStore" /* 5532 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5967 */;
+import AutomodMessageUtils from "AutomodMessageUtils" /* 7563 */;
+import MessageQueue from "MessageQueue" /* 8083 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 8212 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import MessageStore from "MessageStore" /* 5965 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -150,7 +150,7 @@ let obj = {
       let result = obj2.isAutomodMessageRecord(messageRecord);
       const tmp = require;
       if (result) {
-        const tmpResult = tmp(7496);
+        const tmpResult = tmp(7563);
         let flag = tmpResult.isAutomodNotification(messageRecord);
         if (flag) {
           lastIncidentAlertMessage[guildId] = messageRecord.id;
@@ -167,7 +167,7 @@ let obj = {
     message = message.message;
     let flag = null != message;
     if (flag) {
-      const obj = { id: message.id, messageData: "Reflect", isBlockedEdit: null, errorMessage: tmp };
+      const obj = { id: message.id, messageData: "test", isBlockedEdit: null, errorMessage: tmp };
       automodFailedMessages[message.id] = obj;
       closure_9 = closure_9 + 1;
       flag = true;

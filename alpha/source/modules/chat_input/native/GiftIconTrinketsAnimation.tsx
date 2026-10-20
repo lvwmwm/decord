@@ -1,9 +1,9 @@
-// Module ID: 12910
-// Function ID: 12911
+// Module ID: 12942
+// Function ID: 12943
 // Name: GiftIconTrinketsAnimation
-// Dependencies: [19, 17, 5181, 21, 5191, 558, 576, 4913, 587, 504, 2034, 1384, 9303, 5128, 2]
+// Dependencies: [19, 17, 4946, 21, 4945, 558, 576, 5213, 587, 504, 2034, 1384, 9319, 5631, 2]
 
-// Module 12910 (GiftIconTrinketsAnimation)
+// Module 12942 (GiftIconTrinketsAnimation)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -11,15 +11,15 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import StringUtils from "StringUtils" /* 2034 */;
-import useToken from "useToken" /* 4913 */;
+import useToken from "useToken" /* 5213 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
-import createStyles from "createStyles" /* 5191 */;
+import AccessibilityStore from "AccessibilityStore" /* 4946 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const FastImageDefault = tmp4(5128);
+const FastImageDefault = tmp4(5631);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles((width) => ({ containerRefresh: { position: "absolute", top: 0, left: 0, width, height: width, overflow: "visible", marginLeft: 0, zIndex: 0 }, trinketsRefresh: { zIndex: 4, position: "absolute", pointerEvents: "none", width: "175%", height: "175%", top: "-37.5%", left: "-37.5%" } }));
@@ -76,7 +76,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const tmpResult4 = PlatformUtils;
     if (tmpResult4.isAndroid()) {
       const obj4 = { url: trinketsAnimationUrl, autoplay: !stateFromStores, style: trinketsRefresh };
-      tmp12Result = tmp12(tmp(9303).APNGPlayer, obj4);
+      tmp12Result = tmp12(tmp(9319).APNGPlayer, obj4);
     } else {
       const obj5 = { source: obj6, style: trinketsRefresh, resizeMode: "contain", enableAnimation: !stateFromStores };
       obj6 = { uri: trinketsAnimationUrl };
@@ -108,7 +108,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const tmpResult = PlatformUtils;
     if (tmpResult.isAndroid()) {
       const obj5 = { url: trinketsAnimationUrl, autoplay: !stateFromStores, style: trinketsRefresh };
-      tmp7Result = tmp7(tmp(9303).APNGPlayer, obj5);
+      tmp7Result = tmp7(tmp(9319).APNGPlayer, obj5);
     } else {
       const obj6 = { source: obj7, style: trinketsRefresh, resizeMode: "contain", enableAnimation: !stateFromStores };
       obj7 = { uri: trinketsAnimationUrl };

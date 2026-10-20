@@ -1,36 +1,36 @@
-// Module ID: 17722
-// Function ID: 17723
+// Module ID: 17751
+// Function ID: 17752
 // Name: GuildSettingsModalMembers
-// Dependencies: [109, 32, 19, 17, 502, 5116, 2128, 2122, 2090, 4845, 1392, 8911, 1087, 21, 8972, 5191, 587, 558, 576, 1505, 10617, 5509, 5057, 1128, 10612, 1633, 504, 7242, 17723, 8877, 9662, 17724, 7365, 8937, 6377, 8910, 11, 4923, 7016, 7091, 1202, 8632, 7005, 2]
+// Dependencies: [109, 32, 19, 17, 502, 5155, 4860, 4854, 4822, 4880, 1392, 8927, 1087, 21, 8988, 4945, 587, 558, 576, 1505, 10631, 5944, 4994, 1128, 10626, 1633, 504, 7311, 17752, 8893, 9676, 17753, 7431, 8953, 6778, 8926, 11, 4954, 7093, 7168, 1202, 8648, 5553, 2]
 
-// Module 17722 (GuildSettingsModalMembers)
+// Module 17751 (GuildSettingsModalMembers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4923 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6377 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7242 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8877 */;
-import _mod8972 from "module_8972" /* 8972 */;
-import RolePillDefault from "RolePill" /* 10617 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4954 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6778 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7311 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 8893 */;
+import _mod8988 from "module_8988" /* 8988 */;
+import RolePillDefault from "RolePill" /* 10631 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5116 */;
-import GuildMemberStore_mod from "GuildMemberStore" /* 2128 */;
-import GuildRoleStore from "GuildRoleStore" /* 2122 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5155 */;
+import GuildMemberStore_mod from "GuildMemberStore" /* 4860 */;
+import GuildRoleStore from "GuildRoleStore" /* 4854 */;
+import GuildStore from "GuildStore" /* 4822 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
 import UserStore from "UserStore" /* 1392 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 8911 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8927 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const _modDef8972 = _mod8972;
+const _modDef8988 = _mod8988;
 let closure_11, dependencyMap, navigation;
 
 let closure_17;
@@ -43,7 +43,7 @@ const View = react_native.View;
 let GuildMemberStore = GuildMemberStore_mod;
 const GuildSettingsSections = Constants.GuildSettingsSections;
 ({ jsx: closure_17, jsxs: closure_18, Fragment: closure_19 } = Fragment);
-let items = [_mod8972.AutocompleterResultTypes.USER];
+let items = [_mod8988.AutocompleterResultTypes.USER];
 let createStyles = createStyles_mod;
 let obj = { containerInner: obj2, searchFieldContainer: obj3, roleList: { flexDirection: "row", flexWrap: "wrap", overflow: "hidden", paddingTop: 4 } };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_12, flex: 1 };
@@ -302,11 +302,11 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
     let formatToPlainStringResult;
     if (found.length > 0) {
       const user = UserStore.getUser(guildMember.userId);
-      const obj2 = guildMember(5509);
+      const obj2 = guildMember(5944);
       let str = obj2.getNickname(guild.id, undefined, user);
       const tmp9 = guildMember;
       if (str == null) {
-        const tmp9Result = tmp9(5057);
+        const tmp9Result = tmp9(4994);
         str = tmp9Result.getGlobalName(user);
       }
       if (str == null) {
@@ -340,7 +340,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
       end
     };
     tmp12Result = null;
-    const tmp14 = guildMember(10612);
+    const tmp14 = guildMember(10626);
     if (mapped.length > 0) {
       const obj5 = { style: tmp.roleList, pointerEvents: "none", children: mapped };
       tmp12Result = tmp12(View, obj5);
@@ -766,8 +766,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj10;
   let obj12;
   let tmp33Result;
-  const f130693 = () => {
-    const tmp = new _modDef8972((arg0) => {
+  const f131163 = () => {
+    const tmp = new _modDef8988((arg0) => {
       closure_1_10(arg0);
       closure_1_14(false);
     }, items, 100);
@@ -837,9 +837,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp16 = stateFromStores(stateFromStores1.useState(false), 2);
   first2 = tmp16[0];
   closure_14 = tmp16[1];
-  first3 = stateFromStores(stateFromStores1.useState(f130693), 2)[0];
+  first3 = stateFromStores(stateFromStores1.useState(f131163), 2)[0];
   const items8 = [guildId, stateFromStoresArray, first, stateFromStores1, first1];
-  const tmp18 = stateFromStores(stateFromStores1.useState(f130693), 2);
+  const tmp18 = stateFromStores(stateFromStores1.useState(f131163), 2);
   const memo = stateFromStores1.useMemo(() => {
     function guildRoleIsFiltered(roles) {
       let tmp2 = null != stateFromStores1;
@@ -860,7 +860,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const nextResult = iter2.next();
       while (iter2 !== undefined) {
         let tmp21 = nextResult;
-        if (nextResult.type === _mod8972.AutocompleterResultTypes.USER) {
+        if (nextResult.type === _mod8988.AutocompleterResultTypes.USER) {
           let member = GuildMemberStore.getMember(guildId, tmp21.record.id);
           let tmp28 = member;
           let guildRoleIsFilteredResult = null == member;

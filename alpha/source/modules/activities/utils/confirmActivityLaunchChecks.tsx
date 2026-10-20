@@ -1,14 +1,14 @@
-// Module ID: 11263
-// Function ID: 11264
+// Module ID: 11277
+// Function ID: 11278
 // Name: confirmActivityLaunchChecks
-// Dependencies: [5, 2068, 2067, 1087, 11264, 11258, 584, 5891, 4834, 11267, 11046, 11268, 6359, 11270, 2]
+// Dependencies: [5, 4800, 4799, 1087, 11278, 11272, 584, 6328, 4869, 11281, 11061, 11282, 6759, 11284, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 11263 (confirmActivityLaunchChecks)
+// Module 11277 (confirmActivityLaunchChecks)
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
 import size from "module_2" /* 2 */;
 
 let c5, channelId, closure_5, selfEmbeddedActivities;
@@ -58,7 +58,7 @@ let obj = function _getOrFetchApplicationForLaunch() {
               PRIVATE_CHANNEL = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -163,7 +163,7 @@ obj = function _confirmActivityChange() {
             ({ currentEmbeddedApplication: c0, shouldClosePopoutOnLeaveCurrentEmbeddedApplication: c1, onConfirmActivityLaunchChecksAlertOpen: c2 } = closure_0);
             c2 = 1;
             c3 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "test", done: true };
           }
         } else {
           if (1 === tmp4) {
@@ -281,7 +281,7 @@ obj = function _confirmActivityAgeGate() {
             application = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "test", done: true };
           }
         } else {
           let closure_1;
@@ -439,7 +439,7 @@ obj = function _confirmExternalAppLaunch() {
             isVerified = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "test", done: true };
           }
         } else {
           let closure_1;

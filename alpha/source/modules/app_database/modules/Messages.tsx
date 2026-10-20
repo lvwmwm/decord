@@ -1,21 +1,21 @@
-// Module ID: 7465
-// Function ID: 7466
+// Module ID: 7532
+// Function ID: 7533
 // Name: modules/Messages
-// Dependencies: [5, 32, 6013, 2068, 7466, 3, 6012, 2094, 7472, 7475, 2095, 11, 2]
+// Dependencies: [5, 32, 6450, 4800, 7533, 3, 6449, 4826, 7539, 7542, 4827, 11, 2]
 // Exports: isLikelyNotDelta
 
-// Module 7465 (modules/Messages)
+// Module 7532 (modules/Messages)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2094 */;
-import _mod2095 from "module_2095" /* 2095 */;
-import requireSortedDescending from "requireSortedDescending" /* 6012 */;
-import isReadableChannel from "isReadableChannel" /* 7472 */;
-import KvMessage2 from "KvMessage" /* 7475 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4826 */;
+import _mod4827 from "module_4827" /* 4827 */;
+import requireSortedDescending from "requireSortedDescending" /* 6449 */;
+import isReadableChannel from "isReadableChannel" /* 7539 */;
+import KvMessage2 from "KvMessage" /* 7542 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import SaveableChannelsStore from "SaveableChannelsStore" /* 7466 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6450 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import SaveableChannelsStore from "SaveableChannelsStore" /* 7533 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, dependencyMap, importDefault;
@@ -351,7 +351,7 @@ class Messages {
     const put = messagesTransactionResult.put;
     const KvMessage = KvMessage2.KvMessage;
     const fromMessageResult = KvMessage.fromMessage(guildId, channel_id, item10009, result);
-    put(guildId, channel_id, fromMessageResult, _mod2095.ConflictOptions.Skip);
+    put(guildId, channel_id, fromMessageResult, _mod4827.ConflictOptions.Skip);
   }
   upsertOne(guildId, channelId, message, database) {
     const obj = DatabaseDaosDefault;
@@ -360,7 +360,7 @@ class Messages {
     const put = messagesTransactionResult.put;
     const KvMessage = KvMessage2.KvMessage;
     const fromMessageResult = KvMessage.fromMessage(guildId, channelId, message, result);
-    put(guildId, channelId, fromMessageResult, _mod2095.ConflictOptions.Replace);
+    put(guildId, channelId, fromMessageResult, _mod4827.ConflictOptions.Replace);
     messagesTransactionResult.trimChannel(guildId, channelId, SaveableChannelsStore.saveLimit(channelId));
   }
   upsertMany(guild_id, channelId, messages, database) {

@@ -1,9 +1,9 @@
-// Module ID: 5531
-// Function ID: 5532
+// Module ID: 5964
+// Function ID: 5965
 // Name: SoundboardFavoritesExperiment
 // Dependencies: [1455, 2]
 
-// Module 5531 (SoundboardFavoritesExperiment)
+// Module 5964 (SoundboardFavoritesExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

@@ -1,23 +1,23 @@
-// Module ID: 15943
-// Function ID: 15944
+// Module ID: 15972
+// Function ID: 15973
 // Name: FamilyCenterTopUsersBottomSheet
-// Dependencies: [19, 1392, 21, 5191, 558, 576, 8008, 6457, 5057, 1202, 1128, 2589, 5187, 6542, 7175, 2]
+// Dependencies: [19, 1392, 21, 4945, 558, 576, 8071, 6851, 4994, 1202, 1128, 2526, 5195, 6935, 7244, 2]
 
-// Module 15943 (FamilyCenterTopUsersBottomSheet)
+// Module 15972 (FamilyCenterTopUsersBottomSheet)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import _modDef2589 from "module_2589" /* 2589 */;
-import UserUtilsDefault from "UserUtils" /* 5057 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import TableRow2 from "TableRow" /* 6457 */;
-import TableRowGroup2 from "TableRowGroup" /* 6542 */;
-import ActionSheet2 from "ActionSheet" /* 7175 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8008 */;
+import _modDef2526 from "module_2526" /* 2526 */;
+import UserUtilsDefault from "UserUtils" /* 4994 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import TableRow2 from "TableRow" /* 6851 */;
+import TableRowGroup2 from "TableRowGroup" /* 6935 */;
+import ActionSheet2 from "ActionSheet" /* 7244 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8071 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRow
       if (cResult[9] === userActivity.dms_sent) {
         tmp15 = cResult[10];
       }
-      TableRow = tmp(6457).TableRow;
+      TableRow = tmp(6851).TableRow;
       const obj3 = UserUtilsDefault;
       name = obj3.getName(user);
       tmp13 = tmp15;
@@ -151,7 +151,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const header = tmp4.header;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
-    const stringResult = intl.string(_modDef2589.BxbvS7);
+    const stringResult = intl.string(_modDef2526.BxbvS7);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -216,7 +216,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   let obj = { children: items };
   const tmp = closure_6();
   const ActionSheet = ActionSheet2.ActionSheet;
-  const obj2 = { variant: "text-md/bold", style: tmp.header, children: intl.string(_modDef2589.BxbvS7) };
+  const obj2 = { variant: "text-md/bold", style: tmp.header, children: intl.string(_modDef2526.BxbvS7) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [React3(Text, obj2), ];

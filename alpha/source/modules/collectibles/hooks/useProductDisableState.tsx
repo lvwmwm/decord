@@ -1,13 +1,13 @@
-// Module ID: 9373
-// Function ID: 9374
+// Module ID: 9389
+// Function ID: 9390
 // Name: useProductDisableState
-// Dependencies: [4870, 558, 576, 504, 1090, 1128, 2]
+// Dependencies: [2059, 558, 576, 504, 1090, 1128, 2]
 
-// Module 9373 (useProductDisableState)
+// Module 9389 (useProductDisableState)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1090 */;
-import SubscriptionStore from "SubscriptionStore" /* 4870 */;
+import SubscriptionStore from "SubscriptionStore" /* 2059 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

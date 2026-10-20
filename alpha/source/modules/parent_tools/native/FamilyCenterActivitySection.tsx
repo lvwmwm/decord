@@ -1,21 +1,21 @@
-// Module ID: 15945
-// Function ID: 15946
+// Module ID: 15974
+// Function ID: 15975
 // Name: FamilyCenterActivitySection
-// Dependencies: [32, 19, 17, 7526, 21, 5191, 587, 558, 576, 8006, 8008, 15940, 5187, 12667, 1128, 2589, 15946, 6462, 2]
+// Dependencies: [32, 19, 17, 7592, 21, 4945, 587, 558, 576, 8069, 8071, 15969, 5195, 12687, 1128, 2526, 15975, 6856, 2]
 
-// Module 15945 (FamilyCenterActivitySection)
+// Module 15974 (FamilyCenterActivitySection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8006 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8008 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 15940 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8069 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8071 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 15969 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7526 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7592 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -104,7 +104,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
       let tmp17 = null;
       if (null !== tmp11) {
         const obj4 = { variant: "text-sm/medium", color: "text-muted", style: tmp4.description, children: tmp11 };
-        tmp17 = React4(tmp(5187).Text, obj4);
+        tmp17 = React4(tmp(5195).Text, obj4);
       }
       cResult[3] = tmp11;
       cResult[4] = tmp4.description;
@@ -160,7 +160,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
     const tmp14 = React4;
     if (null !== tmp10) {
       const obj3 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description, children: tmp10 };
-      tmp14Result = tmp14(tmp3(5187).Text, obj3);
+      tmp14Result = tmp14(tmp3(5195).Text, obj3);
     }
     const obj6 = { children: items };
     items[1] = tmp14Result;
@@ -192,9 +192,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   const cResult = obj.c(36);
   displayType = displayType.displayType;
   const tmp4 = closure_13();
-  const obj2 = displayType(15940);
+  const obj2 = displayType(15969);
   const actionsForDisplayType = obj2.useActionsForDisplayType(displayType);
-  const obj3 = displayType(15940);
+  const obj3 = displayType(15969);
   const actionTotalsForDisplayType = obj3.useActionTotalsForDisplayType(displayType);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = {};
@@ -203,7 +203,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   } else {
     first = cResult[0];
   }
-  const tmpResult = displayType(12667);
+  const tmpResult = displayType(12687);
   const familyCenterActions = tmpResult.useFamilyCenterActions(first);
   const loadMore = familyCenterActions.loadMore;
   const isMoreLoading = familyCenterActions.isMoreLoading;
@@ -276,8 +276,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
                   obj8 = { style: tmp4.loadMoreButton, animating: true, color: "#fff", size: "small" };
                   tmp33Result = tmp33(tmp34, obj7);
                 } else {
-                  const obj9 = { style: tmp4.loadMore, accessibilityLabel: tmp13, accessibilityRole: "button", onPress: tmp12, children: closure_9(displayType(5187).Text, obj10) };
-                  const PressableOpacity = tmp(6462).PressableOpacity;
+                  const obj9 = { style: tmp4.loadMore, accessibilityLabel: tmp13, accessibilityRole: "button", onPress: tmp12, children: closure_9(displayType(5195).Text, obj10) };
+                  const PressableOpacity = tmp(6856).PressableOpacity;
                   obj10 = { style: tmp4.loadMoreButton, variant: "text-xs/semibold", color: "text-overlay-light", children: tmp13 };
                   tmp33Result = tmp33(PressableOpacity, obj9);
                 }
@@ -320,7 +320,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
       const formatToPlainString = intl.formatToPlainString;
       const _Math = Math;
       const obj11 = { pageSize: Math.min(actionTotalsForDisplayType - substr.length, tmp8) };
-      const v7dMmJY = loadMore(2589)["7dMmJY"];
+      const v7dMmJY = loadMore(2526)["7dMmJY"];
       const container = tmp4.container;
       const formatToPlainStringResult = formatToPlainString(v7dMmJY, obj11);
       const tmp43 = closure_6;
@@ -397,11 +397,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
   let tmp19Result;
   displayType = displayType.displayType;
   const tmp = closure_13();
-  let obj = displayType(15940);
+  let obj = displayType(15969);
   const actionsForDisplayType = obj.useActionsForDisplayType(displayType);
-  const obj2 = displayType(15940);
+  const obj2 = displayType(15969);
   const actionTotalsForDisplayType = obj2.useActionTotalsForDisplayType(displayType);
-  const obj3 = displayType(12667);
+  const obj3 = displayType(12687);
   const familyCenterActions = obj3.useFamilyCenterActions({});
   const loadMore = familyCenterActions.loadMore;
   const isMoreLoading = familyCenterActions.isMoreLoading;
@@ -417,7 +417,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
     const formatToPlainString = intl.formatToPlainString;
     const _Math = Math;
     const obj4 = { pageSize: Math.min(actionTotalsForDisplayType - substr.length, tmp6) };
-    const v7dMmJY = loadMore(2589)["7dMmJY"];
+    const v7dMmJY = loadMore(2526)["7dMmJY"];
     const formatToPlainStringResult = formatToPlainString(v7dMmJY, obj4);
     const obj5 = { style: tmp.container, children: items1 };
     const obj6 = { displayType };
@@ -438,8 +438,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
         obj9 = { style: tmp.loadMoreButton, animating: true, color: "#fff", size: "small" };
         tmp19Result = tmp19(tmp18, obj8);
       } else {
-        const obj10 = { style: tmp.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp8, children: closure_9(displayType(5187).Text, obj11) };
-        const PressableOpacity = tmp2(6462).PressableOpacity;
+        const obj10 = { style: tmp.loadMore, accessibilityLabel: formatToPlainStringResult, accessibilityRole: "button", onPress: tmp8, children: closure_9(displayType(5195).Text, obj11) };
+        const PressableOpacity = tmp2(6856).PressableOpacity;
         obj11 = { style: tmp.loadMoreButton, variant: "text-xs/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
         tmp19Result = tmp19(PressableOpacity, obj10);
       }

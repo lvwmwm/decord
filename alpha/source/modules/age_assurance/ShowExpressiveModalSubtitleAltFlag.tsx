@@ -1,13 +1,13 @@
-// Module ID: 7826
-// Function ID: 7827
+// Module ID: 7889
+// Function ID: 7890
 // Name: ShowExpressiveModalSubtitleAltFlag
-// Dependencies: [7803, 1455, 558, 576, 7778, 504, 2]
+// Dependencies: [7866, 1455, 558, 576, 7841, 504, 2]
 // Exports: shouldShowExpressiveModalSubtitleAlt
 
-// Module 7826 (ShowExpressiveModalSubtitleAltFlag)
+// Module 7889 (ShowExpressiveModalSubtitleAltFlag)
 import react from "react" /* 576 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7778 */;
-import SafetyHubStore from "SafetyHubStore" /* 7803 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7841 */;
+import SafetyHubStore from "SafetyHubStore" /* 7866 */;
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

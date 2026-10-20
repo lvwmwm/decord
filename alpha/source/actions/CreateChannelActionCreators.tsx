@@ -1,18 +1,18 @@
-// Module ID: 8876
-// Function ID: 8877
+// Module ID: 8892
+// Function ID: 8893
 // Name: CreateChannelActionCreators
-// Dependencies: [6222, 1087, 1097, 584, 6194, 1275, 2080, 1297, 7086, 7081, 7303, 2]
+// Dependencies: [6652, 1087, 1097, 584, 6624, 1275, 4812, 1297, 7163, 7158, 7370, 2]
 
-// Module 8876 (CreateChannelActionCreators)
+// Module 8892 (CreateChannelActionCreators)
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import TypeUtils from "TypeUtils" /* 2080 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6194 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7081 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7086 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7303 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
+import TypeUtils from "TypeUtils" /* 4812 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6624 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7158 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7163 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7370 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6652 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -95,7 +95,7 @@ let obj = {
         obj2.application_id = applicationId;
       }
     }
-    const tmpResult = tmp(6194);
+    const tmpResult = tmp(6624);
     const request = { url: closure_6.GUILD_CHANNELS(guildId), body: obj2, oldFormErrors: true, trackedActionData: obj3, rejectWithError: obj5.rejectWithMigratedError() };
     const post = tmpResult.post;
     obj3 = {

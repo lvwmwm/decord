@@ -1,23 +1,23 @@
-// Module ID: 11866
-// Function ID: 11867
+// Module ID: 11886
+// Function ID: 11887
 // Name: AppLauncherNativeUtils
-// Dependencies: [19, 2068, 1392, 1504, 1087, 5503, 5206, 7513, 11867, 7509, 2000, 8187, 1990, 9548, 1417, 558, 576, 10948, 9837, 11872, 7134, 5156, 2]
+// Dependencies: [19, 4800, 1392, 1504, 1087, 5938, 5673, 5595, 11887, 7576, 2000, 8249, 1990, 9563, 1417, 558, 576, 10960, 9851, 11892, 7203, 5173, 2]
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected
 
-// Module 11866 (AppLauncherNativeUtils)
+// Module 11886 (AppLauncherNativeUtils)
 import Constants from "Constants" /* 1087 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import AssetRegistryDefault from "AssetRegistry" /* 1990 */;
 import Server from "Server" /* 2000 */;
-import HapticUtils from "HapticUtils" /* 5156 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5503 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7509 */;
-import ApplicationCommandActionCreatorsAll from "ApplicationCommandActionCreators" /* 8187 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9548 */;
-import FrecencySection from "FrecencySection" /* 11867 */;
+import HapticUtils from "HapticUtils" /* 5173 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5673 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5938 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7576 */;
+import ApplicationCommandActionCreatorsAll from "ApplicationCommandActionCreators" /* 8249 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9563 */;
+import FrecencySection from "FrecencySection" /* 11887 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
 import UserStore from "UserStore" /* 1392 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -302,9 +302,9 @@ export const handleApplicationSelected = function handleApplicationSelected(entr
   const APPLICATION_COMMAND_SECTION_SELECTED = AnalyticEvents.APPLICATION_COMMAND_SECTION_SELECTED;
   AppAnalyticsUtils;
   if (application.id === BuiltInSectionId.BUILT_IN) {
-    APP = tmp(7513).ApplicationCommandTriggerSections.BUILT_IN;
+    APP = tmp(5595).ApplicationCommandTriggerSections.BUILT_IN;
   } else {
-    APP = tmp(7513).ApplicationCommandTriggerSections.APP;
+    APP = tmp(5595).ApplicationCommandTriggerSections.APP;
   }
   id = application.id;
   if (id == null) {

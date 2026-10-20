@@ -1,10 +1,10 @@
-// Module ID: 5486
-// Function ID: 5487
+// Module ID: 5214
+// Function ID: 5215
 // Name: useFontScale
 // Dependencies: [19, 1500, 558, 576, 1502, 2]
 // Exports: getFontScale
 
-// Module 5486 (useFontScale)
+// Module 5214 (useFontScale)
 import react2 from "react" /* 576 */;
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1502 */;
 import react from "react" /* 19 */;

@@ -1,18 +1,11 @@
 // Module ID: 15350
 // Function ID: 15351
-// Dependencies: []
+// Dependencies: [15351, 15416]
 
 // Module 15350
-let all = typeof document === "object";
-if (typeof document === "object") {
-  const _document = document;
-  all = document.all;
-}
-if (undefined === all) {
-  let fn;
-  if (undefined !== all) {
-    fn = (fn) => typeof fn === "function" || fn === all;
-  }
-  module.exports = fn;
-}
-fn = (fn) => typeof fn === "function";
+import _mod15416 from "module_15416" /* 15416 */;
+import module_15351 from "module_15351" /* 15351 */;
+
+const obj = { target: "Object", stat: true, arity: 2, forced: Object.assign !== _mod15416 };
+const obj2 = { assign: _mod15416 };
+module_15351(obj, obj2);

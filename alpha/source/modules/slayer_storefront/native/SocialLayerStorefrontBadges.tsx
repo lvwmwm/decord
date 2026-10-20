@@ -1,18 +1,18 @@
-// Module ID: 10474
-// Function ID: 10475
+// Module ID: 10488
+// Function ID: 10489
 // Name: SocialLayerStorefrontBadges
-// Dependencies: [19, 17, 21, 5191, 587, 1384, 558, 576, 10475, 1128, 5187, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 1384, 558, 576, 10489, 1128, 5195, 2]
 
-// Module 10474 (SocialLayerStorefrontBadges)
+// Module 10488 (SocialLayerStorefrontBadges)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import ClydeIcon2 from "ClydeIcon" /* 10475 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import ClydeIcon2 from "ClydeIcon" /* 10489 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExclusiveB
   const exclusiveBadge = tmp4.exclusiveBadge;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.WHITE };
-    const ClydeIcon = tmp(10475).ClydeIcon;
+    const ClydeIcon = tmp(10489).ClydeIcon;
     const tmp8 = React3(ClydeIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;

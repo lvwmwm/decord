@@ -1,142 +1,123 @@
 // Module ID: 12442
 // Function ID: 12443
-// Dependencies: [32, 12414, 12386, 12413]
-// Exports: addIntegration, afterSetupIntegrations, defineIntegration, getIntegrationsToSetup, setupIntegrations
+// Dependencies: [12412, 12443, 12433, 12411, 12419, 12421, 12438]
+// Exports: freezeDscOnSpan, getDynamicSamplingContextFromClient, getDynamicSamplingContextFromScope, spanToBaggageHeader
 
 // Module 12442
-import _mod12413 from "module_12413" /* 12413 */;
-import _mod12414 from "module_12414" /* 12414 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod12411 from "module_12411" /* 12411 */;
+import _mod12412 from "module_12412" /* 12412 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 12419 */;
+import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 12421 */;
+import _mod12433 from "module_12433" /* 12433 */;
+import _mod12438 from "module_12438" /* 12438 */;
 
-let integrations;
-
-function setupIntegration(on, name, arg2) {
-  let closure_0 = on;
-  if (arg2[name.name]) {
-    const tmp10 = require;
-    if (_mod12414.DEBUG_BUILD) {
-      const logger2 = tmp10(12386).logger;
-      const _HermesInternal2 = HermesInternal;
-      logger2.log("Integration skipped because it was already installed: " + name.name);
-    }
-  } else {
-    arg2[name.name] = name;
-    const arr = items;
-    const tmp = -1 === items.indexOf(name.name) && typeof name.setupOnce === "function";
-    if (tmp) {
-      name.setupOnce();
-      arr.push(name.name);
-    }
-    const tmp4 = name.setup && typeof name.setup === "function";
-    if (tmp4) {
-      name.setup(on);
-    }
-    if (typeof name.preprocessEvent === "function") {
-      const preprocessEvent = name.preprocessEvent;
-      let closure_1 = preprocessEvent.bind(name);
-      on.on("preprocessEvent", (arg0, arg1) => closure_1(arg0, arg1, closure_0));
-    }
-    if (typeof name.processEvent === "function") {
-      const processEvent = name.processEvent;
-      let closure_2 = processEvent.bind(name);
-      const _Object = Object;
-      const obj = { id: name.name };
-      on.addEventProcessor(Object.assign((arg0, arg1) => closure_2(arg0, arg1, closure_0), obj));
-    }
-    const tmp6 = require;
-    if (_mod12414.DEBUG_BUILD) {
-      const logger = tmp6(12386).logger;
-      const _HermesInternal = HermesInternal;
-      logger.log("Integration installed: " + name.name);
-    }
-  }
-}
-let items = [];
-
-export const addIntegration = function addIntegration(name) {
-  const obj = _mod12413;
+let tmp3;
+const _mod12443 = tmp3(12443);
+function getDynamicSamplingContextFromSpan(spanContext) {
+  const obj = _mod12433;
   const client = obj.getClient();
   if (client) {
-    client.addIntegration(name);
-  } else if (_mod12414.DEBUG_BUILD) {
-    const logger = tmp(12386).logger;
-    const _HermesInternal = HermesInternal;
-    logger.warn("Cannot add integration \"" + name.name + "\" because no SDK Client is available.");
-  }
-};
-export const afterSetupIntegrations = function afterSetupIntegrations(arg0, arg1) {
-  const iter = arg1[Symbol.iterator]();
-  let afterAllSetup = iter.next();
-  while (iter !== undefined) {
-    let obj = afterAllSetup;
-    if (obj) {
-      afterAllSetup = obj.afterAllSetup;
-    }
-    if (afterAllSetup) {
-      let afterAllSetupResult = obj.afterAllSetup(arg0);
-    }
-    continue;
-  }
-};
-export function defineIntegration(arg0) {
-  return arg0;
-}
-export const getIntegrationsToSetup = function getIntegrationsToSetup(defaultIntegrations) {
-  let arr2;
-  const arr = defaultIntegrations.defaultIntegrations || [];
-  integrations = defaultIntegrations.integrations;
-  const item = arr.forEach((item) => {
-    item.isDefaultInstance = true;
-  });
-  if (Array.isArray(integrations)) {
-    items = [];
-    HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, arr, 0));
-    arr2 = items;
-  } else {
-    arr2 = arr;
-    if (typeof integrations === "function") {
-      const integrationsResult = integrations(arr);
-      const _Array = Array;
-      let tmp3 = integrationsResult;
-      if (!Array.isArray(integrationsResult)) {
-        const items1 = [integrationsResult];
-        tmp3 = items1;
+    const tmpResult = _mod12411;
+    const rootSpan = tmpResult.getRootSpan(spanContext);
+    if (rootSpan[_frozenDsc]) {
+      return rootSpan[_frozenDsc];
+    } else {
+      const traceState = rootSpan.spanContext().traceState;
+      const value = traceState && traceState.get("sentry.dsc");
+      let result = value;
+      if (result) {
+        const tmpResult6 = BAGGAGE_HEADER_NAME;
+        result = tmpResult6.baggageHeaderToDynamicSamplingContext(value);
       }
-      arr2 = tmp3;
+      if (result) {
+        return result;
+      } else {
+        const traceId = spanContext.spanContext().traceId;
+        const options = client.getOptions();
+        const publicKey = (client.getDsn() || {}).publicKey;
+        client.getDsn() || {};
+        let DEFAULT_ENVIRONMENT = options.environment;
+        const dropUndefinedKeys = _mod12412.dropUndefinedKeys;
+        _mod12412;
+        if (!DEFAULT_ENVIRONMENT) {
+          DEFAULT_ENVIRONMENT = tmp(12443).DEFAULT_ENVIRONMENT;
+        }
+        const obj2 = { environment: DEFAULT_ENVIRONMENT, release: options.release, public_key: publicKey, trace_id: traceId };
+        const dropUndefinedKeysResult = dropUndefinedKeys(obj2);
+        client.emit("createDsc", dropUndefinedKeysResult);
+        const tmpResult8 = _mod12411;
+        const spanToJSONResult = tmpResult8.spanToJSON(rootSpan);
+        const tmp14 = spanToJSONResult.data || {};
+        const tmp15 = tmp14[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE];
+        if (null != tmp15) {
+          const _HermesInternal = HermesInternal;
+          dropUndefinedKeysResult.sample_rate = "" + tmp15;
+        }
+        const description = spanToJSONResult.description;
+        const tmp18 = "url" !== tmp14[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] && description;
+        if (tmp18) {
+          dropUndefinedKeysResult.transaction = description;
+        }
+        const tmpResult9 = _mod12438;
+        if (tmpResult9.hasTracingEnabled()) {
+          const _String = String;
+          const tmpResult10 = _mod12411;
+          dropUndefinedKeysResult.sampled = String(tmpResult10.spanIsSampled(rootSpan));
+        }
+        client.emit("createDsc", dropUndefinedKeysResult, rootSpan);
+        return dropUndefinedKeysResult;
+      }
     }
+  } else {
+    return {};
   }
-  const obj = {};
-  const item1 = arr2.forEach((name) => {
-    name = name.name;
-    let isDefaultInstance = tmp2;
-    const tmp = obj;
-    if (obj[name]) {
-      isDefaultInstance = !tmp2.isDefaultInstance;
-    }
-    if (isDefaultInstance) {
-      isDefaultInstance = name.isDefaultInstance;
-    }
-    if (!isDefaultInstance) {
-      tmp[name] = name;
-    }
-  });
-  const values = Object.values(obj);
-  const findIndexResult = values.findIndex((name) => "Debug" === name.name);
-  if (findIndexResult > -1) {
-    values.push(_slicedToArray(values.splice(findIndexResult, 1), 1)[0]);
-  }
-  return values;
+}
+const _frozenDsc = "_frozenDsc";
+
+export const freezeDscOnSpan = function freezeDscOnSpan(arg0, arg1) {
+  const obj = _mod12412;
+  const result = obj.addNonEnumerableProperty(arg0, _frozenDsc, arg1);
 };
-export const installedIntegrations = items;
-export { setupIntegration };
-export const setupIntegrations = function setupIntegrations(arg0, arr) {
-  let closure_0 = arg0;
-  const obj = {};
-  const item = arr.forEach((item) => {
-    const tmp = item;
-    if (tmp) {
-      setupIntegration(closure_0, item, obj);
+export const getDynamicSamplingContextFromClient = function getDynamicSamplingContextFromClient(trace_id, getOptions) {
+  const options = getOptions.getOptions();
+  const publicKey = (getOptions.getDsn() || {}).publicKey;
+  getOptions.getDsn() || {};
+  let DEFAULT_ENVIRONMENT = options.environment;
+  const dropUndefinedKeys = _mod12412.dropUndefinedKeys;
+  _mod12412;
+  if (!DEFAULT_ENVIRONMENT) {
+    DEFAULT_ENVIRONMENT = _mod12443.DEFAULT_ENVIRONMENT;
+  }
+  const obj = { environment: DEFAULT_ENVIRONMENT, release: options.release, public_key: publicKey, trace_id };
+  const dropUndefinedKeysResult = dropUndefinedKeys(obj);
+  getOptions.emit("createDsc", dropUndefinedKeysResult);
+  return dropUndefinedKeysResult;
+};
+export const getDynamicSamplingContextFromScope = function getDynamicSamplingContextFromScope(getOptions, getPropagationContext) {
+  const propagationContext = getPropagationContext.getPropagationContext();
+  let dsc = propagationContext.dsc;
+  if (!dsc) {
+    const traceId = propagationContext.traceId;
+    const options = getOptions.getOptions();
+    const publicKey = (getOptions.getDsn() || {}).publicKey;
+    getOptions.getDsn() || {};
+    let DEFAULT_ENVIRONMENT = options.environment;
+    const dropUndefinedKeys = _mod12412.dropUndefinedKeys;
+    _mod12412;
+    const tmp5 = require;
+    if (!DEFAULT_ENVIRONMENT) {
+      DEFAULT_ENVIRONMENT = tmp5(12443).DEFAULT_ENVIRONMENT;
     }
-  });
-  return obj;
+    const obj = { environment: DEFAULT_ENVIRONMENT, release: options.release, public_key: publicKey, trace_id: traceId };
+    const dropUndefinedKeysResult = dropUndefinedKeys(obj);
+    getOptions.emit("createDsc", dropUndefinedKeysResult);
+    dsc = dropUndefinedKeysResult;
+  }
+  return dsc;
+};
+export { getDynamicSamplingContextFromSpan };
+export const spanToBaggageHeader = function spanToBaggageHeader(arg0) {
+  const tmp = getDynamicSamplingContextFromSpan(arg0);
+  const obj = BAGGAGE_HEADER_NAME;
+  return obj.dynamicSamplingContextToSentryBaggageHeader(tmp);
 };

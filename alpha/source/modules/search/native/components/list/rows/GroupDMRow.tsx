@@ -1,21 +1,21 @@
-// Module ID: 17787
-// Function ID: 17788
+// Module ID: 17816
+// Function ID: 17817
 // Name: rows/GroupDMRow
-// Dependencies: [19, 21, 558, 576, 5521, 10592, 1202, 10593, 5187, 17772, 2]
+// Dependencies: [19, 21, 558, 576, 5565, 10606, 1202, 10607, 5195, 17801, 2]
 
-// Module 17787 (rows/GroupDMRow)
+// Module 17816 (rows/GroupDMRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1202 */;
-import useChannelNameDefault from "useChannelName" /* 5521 */;
-import useRecipientsLabel from "useRecipientsLabel" /* 10593 */;
-import SearchListRow2 from "SearchListRow" /* 17772 */;
+import useChannelNameDefault from "useChannelName" /* 5565 */;
+import useRecipientsLabel from "useRecipientsLabel" /* 10607 */;
+import SearchListRow2 from "SearchListRow" /* 17801 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const GroupDMAvatarDefault = tmp4(10592);
+const GroupDMAvatarDefault = tmp4(10606);
 const jsx = Fragment.jsx;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRow(channel) {
   let accessibilityActions;
@@ -49,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRow
     if (cResult[5] !== recipientsLabel) {
       let tmp14;
       if (null != recipientsLabel) {
-        tmp14 = jsx(tmp(5187).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel });
+        tmp14 = jsx(tmp(5195).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel });
       }
       cResult[5] = recipientsLabel;
       cResult[6] = tmp14;
@@ -122,10 +122,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRow
   let tmp3Result;
   if (null != recipientsLabel) {
     const obj3 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
-    tmp3Result = tmp3(tmp5(5187).Text, obj3);
+    tmp3Result = tmp3(tmp5(5195).Text, obj3);
   }
   let str2 = str;
-  const SearchListRow = tmp5(17772).SearchListRow;
+  const SearchListRow = tmp5(17801).SearchListRow;
   if (str == null) {
     str2 = "";
   }

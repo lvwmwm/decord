@@ -1,15 +1,15 @@
-// Module ID: 16221
-// Function ID: 16222
+// Module ID: 16250
+// Function ID: 16251
 // Name: SameAsDeviceThemeUtils
-// Dependencies: [5032, 1207, 1210, 5360, 1254, 5065, 5061, 2]
+// Dependencies: [4969, 1207, 1210, 5824, 1254, 4952, 4998, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 16221 (SameAsDeviceThemeUtils)
+// Module 16250 (SameAsDeviceThemeUtils)
 import ClientThemesUtils from "ClientThemesUtils" /* 1254 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 5061 */;
-import shared from "shared" /* 5065 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5360 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5032 */;
+import shared from "shared" /* 4952 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4998 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5824 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4969 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import ThemeConstants from "ThemeConstants" /* 1210 */;
 import size from "module_2" /* 2 */;

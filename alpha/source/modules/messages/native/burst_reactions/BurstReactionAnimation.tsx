@@ -1,17 +1,17 @@
-// Module ID: 8235
-// Function ID: 8236
+// Module ID: 5187
+// Function ID: 5188
 // Name: BurstReactionAnimation
-// Dependencies: [109, 19, 5181, 21, 5191, 558, 576, 8193, 504, 8236, 6385, 2]
+// Dependencies: [109, 19, 4946, 21, 4945, 558, 576, 4903, 504, 5188, 5189, 2]
 
-// Module 8235 (BurstReactionAnimation)
+// Module 5187 (BurstReactionAnimation)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 8193 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 4903 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
-import createStyles from "createStyles" /* 5191 */;
+import AccessibilityStore from "AccessibilityStore" /* 4946 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
           return null;
         } else {
           let obj4;
-          const tmp25 = importDefault(undefined === tmp10 || tmp10 ? 8236 : 6385);
+          const tmp25 = importDefault(undefined === tmp10 || tmp10 ? 5188 : 5189);
           if (cResult[15] === tmp8) {
             let tmp26;
             if (cResult[16] === (undefined === tmp10 || tmp10)) {
@@ -164,7 +164,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReact
     return null;
   } else {
     let obj3;
-    const tmp7 = importDefault(withFadeOut ? 8236 : 6385);
+    const tmp7 = importDefault(withFadeOut ? 5188 : 5189);
     if (withFadeOut) {
       obj3 = { onComplete };
       const obj2 = { onComplete };

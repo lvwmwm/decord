@@ -1,23 +1,23 @@
-// Module ID: 16331
-// Function ID: 16332
+// Module ID: 16360
+// Function ID: 16361
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [19, 17, 16332, 1087, 21, 4945, 1202, 5191, 587, 558, 576, 5462, 12, 5156, 1256, 1128, 16333, 5192, 5195, 9803, 5187, 1630, 10419, 16336, 2]
+// Dependencies: [19, 17, 16361, 1087, 21, 5014, 1202, 4945, 587, 558, 576, 5228, 12, 5173, 1256, 1128, 16362, 5167, 5170, 9817, 5195, 1630, 10433, 16365, 2]
 
-// Module 16331 (SettingsAppearanceThemeCarousel)
+// Module 16360 (SettingsAppearanceThemeCarousel)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1256 */;
-import HapticUtils from "HapticUtils" /* 5156 */;
-import timing from "timing" /* 5192 */;
+import timing from "timing" /* 5167 */;
+import HapticUtils from "HapticUtils" /* 5173 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16332 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16361 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj6;
 let obj7;
 let size;
 let tmp;
-const timingPresets = tmp(5195);
+const timingPresets = tmp(5170);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
 const ThemeTypes = Constants.ThemeTypes;
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);

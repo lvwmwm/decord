@@ -1,34 +1,34 @@
-// Module ID: 17759
-// Function ID: 17760
+// Module ID: 17788
+// Function ID: 17789
 // Name: SearchFilterSuggestions
-// Dependencies: [32, 109, 19, 17, 9613, 21, 5191, 587, 558, 576, 17760, 5187, 6457, 4945, 5478, 5482, 4922, 17754, 17763, 12988, 2]
+// Dependencies: [32, 109, 19, 17, 9628, 21, 4945, 587, 558, 576, 17789, 5195, 6851, 5014, 5208, 5209, 4999, 17783, 17792, 13020, 2]
 
-// Module 17759 (SearchFilterSuggestions)
+// Module 17788 (SearchFilterSuggestions)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 4922 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import spring from "spring" /* 5478 */;
-import springPresets from "springPresets" /* 5482 */;
-import TrackingConstants from "TrackingConstants" /* 9613 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12988 */;
-import SearchFilterUtils from "SearchFilterUtils" /* 17760 */;
+import native from "native" /* 4999 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import spring from "spring" /* 5208 */;
+import springPresets from "springPresets" /* 5209 */;
+import TrackingConstants from "TrackingConstants" /* 9628 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13020 */;
+import SearchFilterUtils from "SearchFilterUtils" /* 17789 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, obj1, set, style, tmp3, token;
 
 let obj2;
-const f130962 = (text) => text.text;
+const f131432 = (text) => text.text;
 function getSuggestionsKey(arr) {
-  const mapped = arr.map(f130962);
+  const mapped = arr.map(f131432);
   return mapped.join(" ");
 }
 let closure_3 = ["text", "searchTokenType", "onPress"];
@@ -128,7 +128,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
         }
       }
     }
-    const TableRow = tmp(6457).TableRow;
+    const TableRow = tmp(6851).TableRow;
     const merged = Object.assign(tmp6);
     const tmp27 = <TableRow icon={tmp13} onPress={tmp18} label={tmp19} subLabel={tmp16} />;
     cResult[16] = tmp18;
@@ -425,7 +425,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             class W {
               constructor(arg0, arg1, arg2, arg3) {
                 obj = { state: arg2, cleanUp: arg3, children: null };
-                obj1 = { ref: suggestionsRef, style: closure_7, collapsable: false, children: arg1.map(() => { /* body not rendered: F151388 */ }) };
+                obj1 = { ref: suggestionsRef, style: closure_7, collapsable: false, children: arg1.map(() => { /* body not rendered: F151892 */ }) };
                 obj.children = jsx(View, obj1);
                 return jsx(AnimatedEnterExitContainer, obj, searchContext);
               }
@@ -440,7 +440,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           class W {
             constructor(arg0, arg1, arg2, arg3) {
               obj = { state: arg2, cleanUp: arg3, children: null };
-              obj1 = { ref: suggestionsRef, style: closure_7, collapsable: false, children: arg1.map(() => { /* body not rendered: F151388 */ }) };
+              obj1 = { ref: suggestionsRef, style: closure_7, collapsable: false, children: arg1.map(() => { /* body not rendered: F151892 */ }) };
               obj.children = jsx(View, obj1);
               return jsx(AnimatedEnterExitContainer, obj, searchContext);
             }
@@ -525,7 +525,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   class D {
     constructor() {
       obj = closure_1(closure_2[19]);
-      return obj.subscribeSearchQueryState(searchContext, () => { /* body not rendered: F151386 */ }, () => { /* body not rendered: F151387 */ });
+      return obj.subscribeSearchQueryState(searchContext, () => { /* body not rendered: F151890 */ }, () => { /* body not rendered: F151891 */ });
     }
   }
   const items4 = [validFilterTokens, searchContext, tmp9];
@@ -541,12 +541,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const containerStyle = searchContext.containerStyle;
   let tmp = closure_10();
   dependencyMap = tmp;
-  let obj = searchContext(17754);
+  let obj = searchContext(17783);
   const searchSuggestionsContext = obj.useSearchSuggestionsContext();
   const suggestionsRef = searchSuggestionsContext.suggestionsRef;
   const suggestionsMounted = searchSuggestionsContext.suggestionsMounted;
   const dismissed = searchSuggestionsContext.dismissed;
-  let obj2 = searchContext(17763);
+  let obj2 = searchContext(17792);
   const validFilterTokens = obj2.useValidFilterTokens(searchContext);
   const tmp4 = suggestionsMounted(validFilterTokens.useState([]), 2);
   const first = tmp4[0];
@@ -580,10 +580,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
               }
             });
             constants((arr) => {
-              const mapped = arr.map(f130962);
+              const mapped = arr.map(f131432);
               let tmp2 = closure_1;
               const joined = mapped.join(" ");
-              const mapped1 = closure_1.map(f130962);
+              const mapped1 = closure_1.map(f131432);
               if (joined === mapped1.join(" ")) {
                 tmp2 = arr;
               }
@@ -610,11 +610,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       obj.runOnJS(closure_8)(EMPTY_SEARCH_FILTER_ROWS);
     }
   };
-  const obj3 = searchContext(4945);
-  fn2.__closure = { runOnJS: searchContext(4945).runOnJS, setSuggestions: tmp4[1], EMPTY_SEARCH_FILTER_ROWS };
+  const obj3 = searchContext(5014);
+  fn2.__closure = { runOnJS: searchContext(5014).runOnJS, setSuggestions: tmp4[1], EMPTY_SEARCH_FILTER_ROWS };
   fn2.__workletHash = 4958389658939;
   fn2.__initData = __initData6;
-  ({ runOnJS: searchContext(4945).runOnJS, setSuggestions: tmp4[1], EMPTY_SEARCH_FILTER_ROWS });
+  ({ runOnJS: searchContext(5014).runOnJS, setSuggestions: tmp4[1], EMPTY_SEARCH_FILTER_ROWS });
   const animatedReaction = obj3.useAnimatedReaction(fn, fn2);
   let items1 = [first, suggestionsMounted];
   const effect1 = validFilterTokens.useEffect(() => {
@@ -651,7 +651,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return <closure_17 key={arg0} state={arg2} cleanUp={arg3}>{null}</closure_17>;
   }, items4);
   const obj5 = { items: memo1, renderItem: callback, getItemKey: getSuggestionsKey };
-  return memo(searchContext(4922).TransitionGroup, obj5);
+  return memo(searchContext(4999).TransitionGroup, obj5);
 }));
 let result = size.fileFinishedImporting("modules/search/native/components/layout/autocomplete/SearchFilterSuggestions.tsx");
 

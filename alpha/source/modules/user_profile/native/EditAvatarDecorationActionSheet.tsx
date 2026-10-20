@@ -1,26 +1,25 @@
-// Module ID: 8556
-// Function ID: 8557
+// Module ID: 8572
+// Function ID: 8573
 // Name: EditAvatarDecorationActionSheet
-// Dependencies: [32, 19, 17, 7546, 7535, 2128, 1087, 21, 5191, 587, 558, 576, 8557, 8567, 8568, 7130, 7155, 1267, 8569, 1128, 5187, 8570, 7118, 4922, 10394, 504, 14252, 8564, 14257, 14262, 14263, 8571, 8656, 1202, 14264, 2]
+// Dependencies: [32, 19, 17, 7611, 7601, 4860, 1087, 21, 4945, 558, 576, 8573, 8583, 8584, 7199, 7224, 1267, 8585, 7194, 1128, 8586, 5226, 4999, 10408, 504, 14285, 8580, 14290, 14295, 14296, 8587, 8672, 1202, 14297, 2]
 
-// Module 8556 (EditAvatarDecorationActionSheet)
+// Module 8572 (EditAvatarDecorationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7535 */;
-import useShopProductItems from "useShopProductItems" /* 8569 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8571 */;
-import HeaderAvatarDefault from "HeaderAvatar" /* 8656 */;
-import EditAvatarDecorationSection from "EditAvatarDecorationSection" /* 14257 */;
-import AvatarGridDefault from "AvatarGrid" /* 14264 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7601 */;
+import useShopProductItems from "useShopProductItems" /* 8585 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8587 */;
+import HeaderAvatarDefault from "HeaderAvatar" /* 8672 */;
+import EditAvatarDecorationSection from "EditAvatarDecorationSection" /* 14290 */;
+import AvatarGridDefault from "AvatarGrid" /* 14297 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7546 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7611 */;
+import GuildMemberStore from "GuildMemberStore" /* 4860 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,24 +28,18 @@ let BottomSheet, _require, obj1, trackResult;
 
 let c10;
 let closure_12;
-let obj2;
-let obj3;
 let unpackModuleId;
 const View = react_native.View;
 const isAvatarDecorationRecord = AvatarDecorationRecord.isAvatarDecorationRecord;
 const AnalyticEvents = Constants.AnalyticEvents;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { container: obj2, bounceOffset: { position: "absolute", top: -250, height: 250, right: 0, left: 0 }, title: obj3, avatarDisplayContainer: { flexDirection: "row", width: "100%", justifyContent: "center", alignItems: "center", paddingVertical: 16 } };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
-createStyles = createStyles.createStyles;
-obj3 = { alignSelf: "center", color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, margin: 25 };
-let closure_13 = createStyles(obj);
+let closure_13 = createStyles.createStyles({ container: { flex: 1 }, avatarDisplayContainer: { flexDirection: "row", width: "100%", justifyContent: "center", alignItems: "center", paddingVertical: 16 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDecorationActionSheet(arg0) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDecorationActionSheet(arg0) {
   let analyticsLocations;
   let currentAvatarDecoration;
   let guildId;
+  let intl;
   let isTryItOut;
   let pendingAvatar;
   let selectedAvatarDecoration;
@@ -55,17 +48,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
   let user;
   let tmp = setPendingAvatarDecoration;
   let obj = setPendingAvatarDecoration(576);
-  const cResult = obj.c(43);
+  const cResult = obj.c(37);
   ({ user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations } = arg0);
-  const tmp4 = closure_13();
+  closure_13();
   if (cResult[0] === analyticsLocations) {
     if (cResult[1] === guildId) {
       let tmp5;
       if (cResult[2] === isTryItOut) {
         tmp5 = cResult[3];
       }
-      ({ pendingAvatar, setPendingAvatarDecoration } = selectedAvatarDecoration(8557)(tmp5));
-      selectedAvatarDecoration(8557)(tmp5);
+      ({ pendingAvatar, setPendingAvatarDecoration } = selectedAvatarDecoration(8573)(tmp5));
+      selectedAvatarDecoration(8573)(tmp5);
       if (cResult[4] === pendingAvatar) {
         let tmp8;
         let tmp15;
@@ -73,7 +66,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
           tmp8 = cResult[6];
         }
         [selectedAvatarDecoration, tmp14] = react.useState(currentAvatarDecoration);
-        const tmpResult = tmp(8568);
+        const tmpResult = tmp(8584);
         const bottomSheetRef = tmpResult.useBottomSheetRef().bottomSheetRef;
         if (cResult[7] !== analyticsLocations) {
           let items = analyticsLocations;
@@ -86,126 +79,81 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
         } else {
           tmp15 = cResult[8];
         }
-        const tmp6Result = selectedAvatarDecoration(7130);
-        const analyticsLocations2 = tmp6Result(tmp15, tmp6(7155).EDIT_AVATAR_DECORATION_SHEET).analyticsLocations;
+        const tmp6Result = selectedAvatarDecoration(7199);
+        const analyticsLocations2 = tmp6Result(tmp15, tmp6(7224).EDIT_AVATAR_DECORATION_SHEET).analyticsLocations;
         const _Symbol = Symbol;
         if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-          class L {
+          class F {
             constructor() {
-              obj = closure_1(closure_1_2[17]);
-              obj1 = { type: closure_1(closure_1_2[16]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
+              obj = closure_1(closure_1_2[16]);
+              obj1 = { type: closure_1(closure_1_2[15]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
               trackResult = obj.track(closure_1_9.OPEN_POPOUT, obj1);
               return;
             }
           }
-          cResult[9] = L;
+          cResult[9] = F;
         } else {
-          class L {
+          class F {
             constructor() {
-              obj = closure_1(closure_1_2[17]);
-              obj1 = { type: closure_1(closure_1_2[16]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
+              obj = closure_1(closure_1_2[16]);
+              obj1 = { type: closure_1(closure_1_2[15]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
               trackResult = obj.track(closure_1_9.OPEN_POPOUT, obj1);
               return;
             }
           }
         }
         if (cResult[10] === selectedAvatarDecoration) {
-          let tmp24;
-          class L {
+          class F {
             constructor() {
-              obj = closure_1(closure_1_2[17]);
-              obj1 = { type: closure_1(closure_1_2[16]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
+              obj = closure_1(closure_1_2[16]);
+              obj1 = { type: closure_1(closure_1_2[15]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
               trackResult = obj.track(closure_1_9.OPEN_POPOUT, obj1);
               return;
             }
           }
-          const container = tmp4.container;
-          if (cResult[13] !== tmp4.bounceOffset) {
-            class L {
-              constructor() {
-                obj = closure_1(closure_1_2[17]);
-                obj1 = { type: closure_1(closure_1_2[16]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
-                trackResult = obj.track(closure_1_9.OPEN_POPOUT, obj1);
-                return;
-              }
-            }
-            let obj2 = { style: tmp4.bounceOffset };
-            cResult[13] = tmp4.bounceOffset;
-            cResult[14] = closure_10(View, obj2);
-            const tmp23 = closure_10(View, obj2);
-          } else {
-            class L {
-              constructor() {
-                obj = closure_1(closure_1_2[17]);
-                obj1 = { type: closure_1(closure_1_2[16]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
-                trackResult = obj.track(closure_1_9.OPEN_POPOUT, obj1);
-                return;
-              }
-            }
-          }
           const _Symbol2 = Symbol;
-          const title = tmp4.title;
-          if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-            class L {
+          if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+            class F {
               constructor() {
-                obj = closure_1(closure_1_2[17]);
-                obj1 = { type: closure_1(closure_1_2[16]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
+                obj = closure_1(closure_1_2[16]);
+                obj1 = { type: closure_1(closure_1_2[15]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
                 trackResult = obj.track(closure_1_9.OPEN_POPOUT, obj1);
                 return;
               }
             }
-            const stringResult = obj7.string(tmp(1128).t.HykynS);
-            cResult[15] = stringResult;
-            tmp24 = stringResult;
+            let obj2 = { title: intl.string(tmp(1128).t.HykynS) };
+            const BottomSheetTitleHeader = tmp(7194).BottomSheetTitleHeader;
+            intl = tmp(1128).intl;
+            cResult[13] = closure_10(BottomSheetTitleHeader, obj2);
+            const tmp22 = closure_10(BottomSheetTitleHeader, obj2);
           } else {
-            class L {
+            class F {
               constructor() {
-                obj = closure_1(closure_1_2[17]);
-                obj1 = { type: closure_1(closure_1_2[16]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
+                obj = closure_1(closure_1_2[16]);
+                obj1 = { type: closure_1(closure_1_2[15]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
                 trackResult = obj.track(closure_1_9.OPEN_POPOUT, obj1);
                 return;
               }
             }
           }
-          if (cResult[16] !== tmp4.title) {
-            class L {
+          if (cResult[14] === guildId) {
+            class F {
               constructor() {
-                obj = closure_1(closure_1_2[17]);
-                obj1 = { type: closure_1(closure_1_2[16]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
-                trackResult = obj.track(closure_1_9.OPEN_POPOUT, obj1);
-                return;
-              }
-            }
-            const obj3 = { variant: "redesign/heading-18/bold", style: title, accessibilityRole: "header", children: tmp24 };
-            cResult[16] = tmp4.title;
-            cResult[17] = closure_10(tmp(5187).Text, obj3);
-            const tmp27 = closure_10(tmp(5187).Text, obj3);
-          } else {
-            class L {
-              constructor() {
-                obj = closure_1(closure_1_2[17]);
-                obj1 = { type: closure_1(closure_1_2[16]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
+                obj = closure_1(closure_1_2[16]);
+                obj1 = { type: closure_1(closure_1_2[15]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
                 trackResult = obj.track(closure_1_9.OPEN_POPOUT, obj1);
                 return;
               }
             }
           }
-          if (cResult[18] === guildId) {
-            class L {
-              constructor() {
-                obj = closure_1(closure_1_2[17]);
-                obj1 = { type: closure_1(closure_1_2[16]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
-                trackResult = obj.track(closure_1_9.OPEN_POPOUT, obj1);
-                return;
-              }
-            }
-          }
-          const obj4 = { user, guildId, pendingAvatarSrc: tmp8, selectedAvatarDecoration, setSelectedAvatarDecoration: tmp14, isTryItOut };
-          const tmp31 = closure_10(closure_14, obj4);
-          class N {
+          const obj3 = { user, guildId, pendingAvatarSrc: tmp8, selectedAvatarDecoration, setSelectedAvatarDecoration: tmp14, isTryItOut };
+          cResult[14] = guildId;
+          cResult[15] = isTryItOut;
+          const tmp26 = closure_10(closure_14, obj3);
+          class B {
             constructor(arg0) {
               tmp = closure_0;
-              obj = closure_0(closure_2[18]);
+              obj = closure_0(closure_2[17]);
               purchasedItem = obj.getPurchasedItem(arg0, "firstAvatarDecoration");
               if (purchasedItem == null) {
                 purchasedItem = closure_1;
@@ -217,17 +165,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
               return;
             }
           }
-          cResult[18] = guildId;
-          cResult[19] = isTryItOut;
-          cResult[20] = tmp8;
-          cResult[21] = selectedAvatarDecoration;
-          cResult[22] = user;
-          cResult[23] = tmp31;
+          cResult[16] = tmp8;
+          cResult[17] = selectedAvatarDecoration;
+          cResult[18] = user;
+          cResult[19] = tmp26;
         }
-        class N {
+        class B {
           constructor(arg0) {
             tmp = closure_0;
-            obj = closure_0(closure_2[18]);
+            obj = closure_0(closure_2[17]);
             purchasedItem = obj.getPurchasedItem(arg0, "firstAvatarDecoration");
             if (purchasedItem == null) {
               purchasedItem = closure_1;
@@ -241,32 +187,33 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
         }
         cResult[10] = selectedAvatarDecoration;
         cResult[11] = setPendingAvatarDecoration;
-        cResult[12] = N;
+        cResult[12] = B;
       }
-      const obj5 = { userId: user.id, image: pendingAvatar };
-      const tmpResult2 = tmp(8567);
-      const pendingAvatarSrc = tmpResult2.getPendingAvatarSrc(obj5);
+      const obj4 = { userId: user.id, image: pendingAvatar };
+      const tmpResult2 = tmp(8583);
+      const pendingAvatarSrc = tmpResult2.getPendingAvatarSrc(obj4);
       cResult[4] = pendingAvatar;
       cResult[5] = user.id;
       cResult[6] = pendingAvatarSrc;
       tmp8 = pendingAvatarSrc;
     }
   }
-  const obj6 = { analyticsLocations, isTryItOut, guildId };
+  const obj5 = { analyticsLocations, isTryItOut, guildId };
   cResult[0] = analyticsLocations;
   cResult[1] = guildId;
   cResult[2] = isTryItOut;
-  cResult[3] = obj6;
-  tmp5 = obj6;
+  cResult[3] = obj5;
+  tmp5 = obj5;
 }) : (function EditAvatarDecorationActionSheet(arg0) {
+  let BottomSheetTitleHeader;
   let analyticsLocations;
   let currentAvatarDecoration;
   let guildId;
   let intl;
   let isTryItOut;
   let items1;
-  let items2;
   let obj6;
+  let obj7;
   let selectedAvatarDecoration;
   let skuId;
   let skuId1;
@@ -276,24 +223,24 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
   ({ user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations } = arg0);
   selectedAvatarDecoration = undefined;
   let tmp = closure_13();
-  const tmp4 = selectedAvatarDecoration(8557)({ analyticsLocations, isTryItOut, guildId });
+  const tmp4 = selectedAvatarDecoration(8573)({ analyticsLocations, isTryItOut, guildId });
   const setPendingAvatarDecoration = tmp4.setPendingAvatarDecoration;
   const pendingAvatar = tmp4.pendingAvatar;
-  let obj = setPendingAvatarDecoration(8567);
+  let obj = setPendingAvatarDecoration(8583);
   let obj2 = { userId: user.id, image: pendingAvatar };
   const pendingAvatarSrc = obj.getPendingAvatarSrc(obj2);
   [selectedAvatarDecoration, tmp9] = react.useState(currentAvatarDecoration);
-  const obj4 = setPendingAvatarDecoration(8568);
+  const obj4 = setPendingAvatarDecoration(8584);
   const bottomSheetRef = obj4.useBottomSheetRef().bottomSheetRef;
-  const tmp10 = selectedAvatarDecoration(7130);
+  const tmp10 = selectedAvatarDecoration(7199);
   if (analyticsLocations == null) {
     analyticsLocations = [];
   }
-  const analyticsLocations2 = tmp10(analyticsLocations, tmp2(7155).EDIT_AVATAR_DECORATION_SHEET).analyticsLocations;
+  const analyticsLocations2 = tmp10(analyticsLocations, tmp2(7224).EDIT_AVATAR_DECORATION_SHEET).analyticsLocations;
   const items = [selectedAvatarDecoration, setPendingAvatarDecoration];
   const callback = obj3.useCallback(() => {
-    const obj = first(dependencyMap[17]);
-    const obj2 = { type: first(dependencyMap[16]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
+    const obj = first(dependencyMap[16]);
+    const obj2 = { type: first(dependencyMap[15]).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true };
     obj.track(constants.OPEN_POPOUT, obj2);
   }, []);
   const callback1 = obj3.useCallback((arg0) => {
@@ -308,24 +255,21 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
     }
     tmp(purchasedItem);
   }, items);
-  const ThemeContextProvider = tmp5(4922).ThemeContextProvider;
+  const ThemeContextProvider = tmp5(4999).ThemeContextProvider;
   const obj5 = { value: analyticsLocations2, children: tmp14(BottomSheet, obj6) };
-  const AnalyticsLocationProvider = tmp5(7130).AnalyticsLocationProvider;
-  obj6 = { scrollable: true, ref: bottomSheetRef, onExpand: callback, startExpanded: true, children: items2 };
-  const obj7 = { style: tmp.container, children: items1 };
-  const obj8 = { style: tmp.bounceOffset };
-  BottomSheet = tmp5(7118).BottomSheet;
-  items1 = [closure_10(View, obj8), , ];
-  const obj9 = { variant: "redesign/heading-18/bold", style: tmp.title, accessibilityRole: "header", children: intl.string(setPendingAvatarDecoration(1128).t.HykynS) };
-  const Text = tmp5(5187).Text;
+  const AnalyticsLocationProvider = tmp5(7199).AnalyticsLocationProvider;
+  obj6 = { scrollable: true, ref: bottomSheetRef, onExpand: callback, startExpanded: true, header: closure_10(BottomSheetTitleHeader, obj7), children: items1 };
+  BottomSheet = tmp5(5226).BottomSheet;
+  obj7 = { title: intl.string(setPendingAvatarDecoration(1128).t.HykynS) };
+  BottomSheetTitleHeader = tmp5(7194).BottomSheetTitleHeader;
   intl = tmp5(1128).intl;
-  items1[1] = closure_10(Text, obj9);
-  items1[2] = closure_10(closure_14, { user, guildId, pendingAvatarSrc, selectedAvatarDecoration, setSelectedAvatarDecoration: tmp9, isTryItOut });
-  items2 = [closure_11(View, obj7), ];
-  const obj10 = { user, currentSkuId: skuId, selectedSkuId: skuId1, isTryItOut, onApply: callback1, analyticsLocations: analyticsLocations2, analyticsSource: selectedAvatarDecoration(7155).EDIT_AVATAR_DECORATION_SHEET };
+  items1 = [, ];
+  const obj8 = { style: tmp.container, children: closure_10(closure_14, { user, guildId, pendingAvatarSrc, selectedAvatarDecoration, setSelectedAvatarDecoration: tmp9, isTryItOut }) };
+  items1[0] = closure_10(View, obj8);
+  const obj9 = { user, currentSkuId: skuId, selectedSkuId: skuId1, isTryItOut, onApply: callback1, analyticsLocations: analyticsLocations2, analyticsSource: selectedAvatarDecoration(7224).EDIT_AVATAR_DECORATION_SHEET };
   skuId = undefined;
   tmp14 = closure_11;
-  const tmp2Result = selectedAvatarDecoration(8570);
+  const tmp2Result = selectedAvatarDecoration(8586);
   if (currentAvatarDecoration != null) {
     skuId = currentAvatarDecoration.skuId;
   }
@@ -333,9 +277,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDe
   if (selectedAvatarDecoration != null) {
     skuId1 = selectedAvatarDecoration.skuId;
   }
-  const obj11 = { children: closure_10(AnalyticsLocationProvider, obj5) };
-  items2[1] = closure_10(tmp2Result, obj10);
-  return closure_10(ThemeContextProvider, obj11);
+  const obj10 = { children: closure_10(AnalyticsLocationProvider, obj5) };
+  items1[1] = closure_10(tmp2Result, obj9);
+  return closure_10(ThemeContextProvider, obj10);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAvatarDecorationInner(guildId) {
@@ -349,13 +293,13 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAv
   let tmp7;
   let user;
   const tmp = user;
-  let obj = user(guildId[11]);
+  let obj = user(guildId[10]);
   const cResult = obj.c(34);
   ({ pendingAvatarSrc, user } = guildId);
   ({ selectedAvatarDecoration, setSelectedAvatarDecoration } = guildId);
   guildId = guildId.guildId;
   const isTryItOut = tmp4;
-  const tmpResult = tmp(guildId[24]);
+  const tmpResult = tmp(guildId[23]);
   const getOrFetchCollectiblesCategoriesAndPurchases = tmpResult.useGetOrFetchCollectiblesCategoriesAndPurchases();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [CollectiblesPurchaseStore];
@@ -369,9 +313,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAv
   } else {
     [tmp6, tmp7] = cResult;
   }
-  const tmpResult4 = tmp(guildId[25]);
+  const tmpResult4 = tmp(guildId[24]);
   const stateFromStores = tmpResult4.useStateFromStores(tmp6, tmp7);
-  const tmp11 = setSelectedAvatarDecoration(guildId[26])();
+  const tmp11 = setSelectedAvatarDecoration(guildId[25])();
   const tmp10 = setSelectedAvatarDecoration;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [GuildMemberStore];
@@ -385,7 +329,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAv
     if (cResult[4] === user) {
       tmp14 = cResult[5];
     }
-    const tmpResult5 = tmp(guildId[25]);
+    const tmpResult5 = tmp(guildId[24]);
     const stateFromStores1 = tmpResult5.useStateFromStores(tmp12, tmp14);
     let avatarDecoration;
     if (user != null) {
@@ -504,7 +448,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAv
                         }
                       }
                       const obj3 = { sections: tmp11, selectedSkuId: undefined, renderRow: tmp21, isFetching: stateFromStores };
-                      const tmp38 = closure_10(tmp(guildId[30]).EditCollectiblesPickerList, obj3);
+                      const tmp38 = closure_10(tmp(guildId[29]).EditCollectiblesPickerList, obj3);
                       cResult[25] = stateFromStores;
                       cResult[26] = tmp21;
                       cResult[27] = tmp11;
@@ -513,7 +457,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAv
                       tmp36 = tmp38;
                     }
                     const obj4 = { user, previewSkuId: undefined, nitroJoinCTA: tmp28, nitroUpgradeCTA: tmp29 };
-                    const tmp34 = closure_10(tmp10(guildId[29]), obj4);
+                    const tmp34 = closure_10(tmp10(guildId[28]), obj4);
                     cResult[22] = undefined;
                     cResult[23] = user;
                     cResult[24] = tmp34;
@@ -549,7 +493,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAv
       }
     }
     const obj6 = { pendingValue: selectedAvatarDecoration, userValue: avatarDecoration, guildValue: avatarDecoration1, guildId };
-    const tmpResult6 = tmp(guildId[27]);
+    const tmpResult6 = tmp(guildId[26]);
     const profilePreviewValue = tmpResult6.getProfilePreviewValue(obj6);
     cResult[6] = guildId;
     cResult[7] = selectedAvatarDecoration;
@@ -557,17 +501,19 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAv
     cResult[9] = avatarDecoration1;
     cResult[10] = profilePreviewValue;
   }
-  const fn2 = function _() {
-    let member = null;
-    if (null != guildId) {
-      member = GuildMemberStore.getMember(tmp, user.id);
+  class O {
+    constructor() {
+      let member = null;
+      if (null != guildId) {
+        member = GuildMemberStore.getMember(tmp, user.id);
+      }
+      return member;
     }
-    return member;
-  };
+  }
   cResult[3] = guildId;
   cResult[4] = user;
-  cResult[5] = fn2;
-  tmp14 = fn2;
+  cResult[5] = O;
+  tmp14 = O;
 }) : (function EditAvatarDecorationInner(user) {
   let avatarDecoration;
   let avatarDecoration1;
@@ -587,14 +533,14 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAv
     flag = false;
   }
   const tmp = user;
-  let obj = user(guildId[24]);
+  let obj = user(guildId[23]);
   const getOrFetchCollectiblesCategoriesAndPurchases = obj.useGetOrFetchCollectiblesCategoriesAndPurchases();
   const items = [CollectiblesPurchaseStore];
-  const obj2 = user(guildId[25]);
+  const obj2 = user(guildId[24]);
   const stateFromStores = obj2.useStateFromStores(items, () => isFetching.isFetching);
   const items1 = [GuildMemberStore];
-  const tmp6 = setSelectedAvatarDecoration(guildId[26])();
-  const obj3 = user(guildId[25]);
+  const tmp6 = setSelectedAvatarDecoration(guildId[25])();
+  const obj3 = user(guildId[24]);
   const stateFromStores1 = obj3.useStateFromStores(items1, () => {
     let member = null;
     if (null != guildId) {
@@ -604,8 +550,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAv
   });
   const obj4 = { pendingValue: selectedAvatarDecoration, userValue: avatarDecoration, guildValue: avatarDecoration1, guildId };
   avatarDecoration = undefined;
-  const getProfilePreviewValue = user(guildId[27]).getProfilePreviewValue;
-  user(guildId[27]);
+  const getProfilePreviewValue = user(guildId[26]).getProfilePreviewValue;
+  user(guildId[26]);
   const tmp5 = setSelectedAvatarDecoration;
   if (user != null) {
     avatarDecoration = user.avatarDecoration;
@@ -633,7 +579,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAv
   const items3 = [closure_10(tmp16, { previewSkuId: skuId, user, guildId, pendingAvatarSrc }), , ];
   const obj5 = { user, previewSkuId: skuId1, nitroJoinCTA: intl.string(tmp(guildId[19]).t.FyBDiY), nitroUpgradeCTA: intl2.string(tmp(guildId[19]).t.e1UiOa) };
   skuId1 = undefined;
-  const tmp5Result = tmp5(guildId[29]);
+  const tmp5Result = tmp5(guildId[28]);
   if (profilePreviewValue != null) {
     skuId1 = profilePreviewValue.skuId;
   }
@@ -642,7 +588,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditAv
   items3[1] = closure_10(tmp5Result, obj5);
   const obj6 = { sections: tmp6, selectedSkuId: skuId2, renderRow: callback, isFetching: stateFromStores };
   skuId2 = undefined;
-  const EditCollectiblesPickerList = tmp(tmp2[30]).EditCollectiblesPickerList;
+  const EditCollectiblesPickerList = tmp(tmp2[29]).EditCollectiblesPickerList;
   if (selectedAvatarDecoration != null) {
     skuId2 = selectedAvatarDecoration.skuId;
   }
@@ -754,7 +700,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
   previewSkuId = previewSkuId.previewSkuId;
   let tmp3 = dependencyMap;
   const tmp = closure_13();
-  const tmp4 = purchase(8571)(previewSkuId);
+  const tmp4 = purchase(8587)(previewSkuId);
   const product = tmp4.product;
   _require = product;
   purchase = tmp4.purchase;
@@ -791,10 +737,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Avatar
     tmp10 = _require;
   }
   const obj3 = { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo, size: tmp10(1202).AvatarSizes.EDIT_AVATAR_DECORATION };
-  const tmp2Result = purchase(8656);
-  items1 = [closure_10(tmp2Result, obj3), closure_10(purchase(14264), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo })];
+  const tmp2Result = purchase(8672);
+  items1 = [closure_10(tmp2Result, obj3), closure_10(purchase(14297), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo })];
   return tmp6(tmp7, obj);
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/EditAvatarDecorationActionSheet.tsx");
 
-export default tmp4;
+export default tmp3;

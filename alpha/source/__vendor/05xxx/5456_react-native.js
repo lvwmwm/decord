@@ -1,14 +1,42 @@
 // Module ID: 5456
 // Function ID: 5457
 // Name: react-native
-// Dependencies: [17, 65]
+// Dependencies: [17]
+// Exports: isNewArch
 
 // Module 5456 (react-native)
 import react_native from "react-native" /* 17 */;
-import module_65 from "module_65" /* 65 */;
 
-const codegenNativeComponent = react_native.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSFullWindowOverlay", validAttributes: { accessibilityContainerViewIsModal: true } };
+let c1;
 
-export default module_65.get("RNSFullWindowOverlay", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+const Platform = react_native.Platform;
+
+export const isNewArch = function isNewArch() {
+  if (undefined !== c1) {
+    return c1;
+  } else {
+    try {
+      let __turboModuleProxy;
+      let prop;
+      const _Boolean = Boolean;
+      if (global != null) {
+        prop = tmp2.nativeFabricUIManager;
+      }
+      let flag = _Boolean(prop);
+      const _Boolean2 = Boolean;
+      if (global != null) {
+        __turboModuleProxy = tmp2.__turboModuleProxy;
+      }
+      if (!flag) {
+        flag = _Boolean2(__turboModuleProxy);
+      }
+      if (!flag) {
+        flag = false;
+      }
+      c1 = flag;
+    } catch (err) {
+      c1 = true;
+    }
+    return c1;
+  }
+};

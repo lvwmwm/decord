@@ -1,12 +1,12 @@
-// Module ID: 18130
-// Function ID: 18131
+// Module ID: 18159
+// Function ID: 18160
 // Name: getFrameSurfaceQueryParams
-// Dependencies: [6297, 38, 2]
+// Dependencies: [5587, 38, 2]
 // Exports: default
 
-// Module 18130 (getFrameSurfaceQueryParams)
+// Module 18159 (getFrameSurfaceQueryParams)
 import _modDef38 from "module_38" /* 38 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 6297 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5587 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/frames/utils/getFrameSurfaceQueryParams.tsx");

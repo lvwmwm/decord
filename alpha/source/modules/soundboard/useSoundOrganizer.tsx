@@ -1,14 +1,14 @@
-// Module ID: 18212
-// Function ID: 18213
+// Module ID: 18241
+// Function ID: 18242
 // Name: useSoundOrganizer
 // Dependencies: [11, 2]
 // Exports: sortSoundsOldestToNewestFavoriteDate, useSoundOrganizer
 
-// Module 18212 (useSoundOrganizer)
+// Module 18241 (useSoundOrganizer)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 
-const f133543 = (available, available2) => {
+const f134013 = (available, available2) => {
   let num;
   if (!available.available) {
     let num2 = 0;
@@ -38,7 +38,7 @@ function sortSoundsOldestToNewestCreationDate(arg0) {
   if (flag) {
     const items1 = [];
     HermesBuiltin.arraySpread(items1, sorted, 0);
-    sorted1 = items1.sort(f133543);
+    sorted1 = items1.sort(f134013);
   }
   return sorted1;
 }
@@ -55,7 +55,7 @@ export const sortSoundsOldestToNewestFavoriteDate = function sortSoundsOldestToN
     const items = [];
     let num = 0;
     HermesBuiltin.arraySpread(items, arg0, 0);
-    sorted = items.sort(f133543);
+    sorted = items.sort(f134013);
   }
   return sorted;
 };

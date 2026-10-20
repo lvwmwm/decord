@@ -1,12 +1,12 @@
-// Module ID: 7746
-// Function ID: 7747
+// Module ID: 7809
+// Function ID: 7810
 // Name: GuildRoomsExperiment
-// Dependencies: [2128, 5110, 558, 576, 504, 2]
+// Dependencies: [4860, 5149, 558, 576, 504, 2]
 // Exports: getGuildRoomsConfig
 
-// Module 7746 (GuildRoomsExperiment)
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import createExperiment from "module_5110" /* 5110 */;
+// Module 7809 (GuildRoomsExperiment)
+import GuildMemberStore from "GuildMemberStore" /* 4860 */;
+import createExperiment from "module_5149" /* 5149 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

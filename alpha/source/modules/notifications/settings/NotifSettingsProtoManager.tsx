@@ -1,11 +1,11 @@
-// Module ID: 18611
-// Function ID: 18612
+// Module ID: 18646
+// Function ID: 18647
 // Name: NotifSettingsProtoManager
-// Dependencies: [17038, 7085, 2]
+// Dependencies: [17067, 7162, 2]
 
-// Module 18611 (NotifSettingsProtoManager)
-import NotifSettingsActionCreators from "NotifSettingsActionCreators" /* 17038 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
+// Module 18646 (NotifSettingsProtoManager)
+import NotifSettingsActionCreators from "NotifSettingsActionCreators" /* 17067 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7162 */;
 import size from "module_2" /* 2 */;
 
 function handleConnectionRestored() {

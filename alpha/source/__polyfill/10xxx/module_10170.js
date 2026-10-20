@@ -1,120 +1,83 @@
 // Module ID: 10170
 // Function ID: 10171
-// Dependencies: [41, 42, 93, 95, 98, 10125, 10124, 10126]
+// Dependencies: [41, 42, 10137]
 
 // Module 10170
-import Meridiem from "Meridiem" /* 10124 */;
-import assignSimilarDate from "assignSimilarDate" /* 10125 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10126 */;
+import TIMEZONE_ABBR_MAP from "TIMEZONE_ABBR_MAP" /* 10137 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+const regExp = new RegExp("^\\s*,?\\s*\\(?([A-Z]{2,4})\\)?(?=\\W|$)", "i");
+class ExtractTimezoneAbbrRefiner {
+  constructor(timezoneOverrides) {
+    _classCallCheck(this, ExtractTimezoneAbbrRefiner);
+    this.timezoneOverrides = timezoneOverrides;
   }
 }
-class DECasualTimeParser {
-  constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, DECasualTimeParser);
-    const obj = _getPrototypeOf(DECasualTimeParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(DECasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern(arg0) {
-    return /(diesen)?\s*(morgen|vormittag|mittags?|nachmittag|abend|nacht|mitternacht)(?=\W|$)/i;
-  }
-};
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(refDate, arg1) {
-      refDate = refDate.refDate;
-      const str = arg1[2];
-      const formatted = str.toLowerCase();
-      const parsingComponents = refDate.createParsingComponents();
-      assignSimilarDate.implySimilarTime(parsingComponents, refDate);
-      return DECasualTimeParser.extractTimeComponents(parsingComponents, formatted);
+  key: "refine",
+  value: function refine(option, arr) {
+    let self = this;
+    let timezones = option.option.timezones;
+    if (null === timezones) {
+      timezones = {};
     }
-  }
-];
-const entry1 = {
-  key: "extractTimeComponents",
-  value: function extractTimeComponents(nowResult, formatted) {
-    if ("morgen" === formatted) {
-      nowResult.imply("hour", 6);
-      nowResult.imply("minute", 0);
-      nowResult.imply("second", 0);
-      nowResult.imply("meridiem", Meridiem.Meridiem.AM);
-    } else if ("vormittag" === formatted) {
-      nowResult.imply("hour", 9);
-      nowResult.imply("minute", 0);
-      nowResult.imply("second", 0);
-      nowResult.imply("meridiem", Meridiem.Meridiem.AM);
-    } else {
-      if ("mittag" !== formatted) {
-        if ("mittags" !== formatted) {
-          if ("nachmittag" === formatted) {
-            nowResult.imply("hour", 15);
-            nowResult.imply("minute", 0);
-            nowResult.imply("second", 0);
-            nowResult.imply("meridiem", Meridiem.Meridiem.PM);
-          } else if ("abend" === formatted) {
-            nowResult.imply("hour", 18);
-            nowResult.imply("minute", 0);
-            nowResult.imply("second", 0);
-            nowResult.imply("meridiem", Meridiem.Meridiem.PM);
-          } else if ("nacht" === formatted) {
-            nowResult.imply("hour", 22);
-            nowResult.imply("minute", 0);
-            nowResult.imply("second", 0);
-            nowResult.imply("meridiem", Meridiem.Meridiem.PM);
-          } else if ("mitternacht" === formatted) {
-            if (nowResult.get("hour") > 1) {
-              nowResult.addDurationAsImplied({ day: 1 });
+    const item = arr.forEach(function(item) {
+      let closure_0 = item;
+      const str = option.text;
+      const match = regExp.exec(str.substring(item.index + item.text.length));
+      const obj = option;
+      if (match) {
+        const str2 = match[1];
+        const formatted = str2.toUpperCase();
+        const start = item.start;
+        let refDate = start.date() ?? item.refDate;
+        if (null === refDate) {
+          const _Date = Date;
+          self = this;
+          const self2 = this;
+          refDate = new Date();
+        }
+        const _Object = Object;
+        const _Object2 = Object;
+        const merged = Object.assign(Object.assign({}, self.timezoneOverrides), timezones);
+        const toTimezoneOffsetResult = TIMEZONE_ABBR_MAP.toTimezoneOffset(formatted, refDate, merged);
+        if (null != toTimezoneOffsetResult) {
+          obj.debug(() => {
+            console.log("Extracting timezone: '" + formatted + "' into: " + toTimezoneOffsetResult + " for: " + start.start);
+          });
+          const start6 = item.start;
+          const value = start6.get("timezoneOffset");
+          if (null !== value) {
+            if (toTimezoneOffsetResult != value) {
+              const start2 = item.start;
             }
-            nowResult.imply("hour", 0);
-            nowResult.imply("minute", 0);
-            nowResult.imply("second", 0);
-            nowResult.imply("meridiem", Meridiem.Meridiem.AM);
+          }
+          const start3 = item.start;
+          const tmp12 = start3.isOnlyDate() && formatted != match[1];
+          if (!tmp12) {
+            item.text = item.text + match[0];
+            const start4 = item.start;
+            if (!start4.isCertain("timezoneOffset")) {
+              const start5 = item.start;
+              start5.assign("timezoneOffset", toTimezoneOffsetResult);
+            }
+            let isCertainResult = null == item.end;
+            if (!isCertainResult) {
+              const end = item.end;
+              isCertainResult = end.isCertain("timezoneOffset");
+            }
+            if (!isCertainResult) {
+              const end2 = item.end;
+              end2.assign("timezoneOffset", toTimezoneOffsetResult);
+            }
           }
         }
       }
-      nowResult.imply("hour", 12);
-      nowResult.imply("minute", 0);
-      nowResult.imply("second", 0);
-      nowResult.imply("meridiem", Meridiem.Meridiem.AM);
-    }
-    return nowResult;
+    });
+    return arr;
   }
 };
-const items1 = [entry1];
+const items = [entry];
 
-export default _createClass(DECasualTimeParser, items, items1);
+export default _createClass(ExtractTimezoneAbbrRefiner, items);

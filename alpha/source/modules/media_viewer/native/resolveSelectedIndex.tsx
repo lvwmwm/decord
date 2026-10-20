@@ -1,10 +1,10 @@
-// Module ID: 8695
-// Function ID: 8696
+// Module ID: 8711
+// Function ID: 8712
 // Name: resolveSelectedIndex
 // Dependencies: [2]
 // Exports: resolveSelectedIndex
 
-// Module 8695 (resolveSelectedIndex)
+// Module 8711 (resolveSelectedIndex)
 import size from "module_2" /* 2 */;
 
 function resolveSelectedIndex(arg0) {

@@ -1,15 +1,15 @@
-// Module ID: 11645
-// Function ID: 11646
+// Module ID: 11666
+// Function ID: 11667
 // Name: openConjureUnpublishUserAppAlert
-// Dependencies: [5, 32, 19, 5540, 21, 558, 576, 504, 11057, 1128, 3883, 4904, 5187, 5405, 5401, 2]
+// Dependencies: [5, 32, 19, 2046, 21, 558, 576, 504, 11071, 1128, 3820, 5625, 5195, 5869, 5865, 2]
 // Exports: default
 
-// Module 11645 (openConjureUnpublishUserAppAlert)
-import useAlertStore from "useAlertStore" /* 5401 */;
+// Module 11666 (openConjureUnpublishUserAppAlert)
+import useAlertStore from "useAlertStore" /* 5865 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
+import ApplicationStore from "ApplicationStore" /* 2046 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -64,7 +64,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
       if (cResult[8] !== stateFromStores) {
         let intl = tmp(tmp2[9]).intl;
         let obj2 = { app: stateFromStores };
-        const formatToPlainStringResult = intl.formatToPlainString(require("module_3883").m8KWic, obj2);
+        const formatToPlainStringResult = intl.formatToPlainString(require("module_3820").m8KWic, obj2);
         cResult[8] = stateFromStores;
         cResult[9] = formatToPlainStringResult;
         tmp13 = formatToPlainStringResult;
@@ -74,7 +74,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
       const _Symbol = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
         let intl2 = tmp(tmp2[9]).intl;
-        const stringResult = intl2.string(require("module_3883").wve4kB);
+        const stringResult = intl2.string(require("module_3820").wve4kB);
         cResult[10] = stringResult;
         tmp16 = stringResult;
       } else {
@@ -96,7 +96,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
       const _Symbol2 = Symbol;
       if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
         const intl3 = tmp(tmp2[9]).intl;
-        const stringResult1 = intl3.string(require("module_3883").GqcQyH);
+        const stringResult1 = intl3.string(require("module_3820").GqcQyH);
         cResult[13] = stringResult1;
         tmp22 = stringResult1;
       } else {
@@ -209,7 +209,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
             const obj6 = { value, done: true };
             return obj6;
           } else if (value) {
-            const obj = { text: intl2.formatToPlainString(require("module_3883").b8LN7N, obj7), variant: "success" };
+            const obj = { text: intl2.formatToPlainString(require("module_3820").b8LN7N, obj7), variant: "success" };
             const open = require("ToastActionCreators").open;
             const tmp21 = require("ToastActionCreators");
             intl2 = tmp4(stateFromStores[9]).intl;
@@ -219,7 +219,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
             return { value: "IconComponent", done: null };
           } else {
             const intl = tmp4(stateFromStores[9]).intl;
-            tmp4 = intl.string(require("module_3883")["rE/0SD"]);
+            tmp4 = intl.string(require("module_3820")["rE/0SD"]);
             tmp(tmp4);
             const _Error = Error;
             const self = this;
@@ -370,7 +370,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
     }
     return name;
   }, items1);
-  let obj2 = { title: intl.formatToPlainString(require("module_3883").m8KWic, { app: stateFromStores }), content: intl2.string(require("module_3883").wve4kB), extraContent: tmp6Result, actions: closure_9(closure_8, obj4) };
+  let obj2 = { title: intl.formatToPlainString(require("module_3820").m8KWic, { app: stateFromStores }), content: intl2.string(require("module_3820").wve4kB), extraContent: tmp6Result, actions: closure_9(closure_8, obj4) };
   const AlertModal = project(stateFromStores[13]).AlertModal;
   intl = project(stateFromStores[9]).intl;
   intl2 = project(stateFromStores[9]).intl;

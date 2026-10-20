@@ -1,31 +1,58 @@
 // Module ID: 12404
 // Function ID: 12405
-// Dependencies: [12387, 12388]
-// Exports: getMainCarrier, getSentryCarrier
+// Dependencies: [12405, 12406, 12409]
+// Exports: addHandler, maybeInstrument, resetInstrumentationHandlers, triggerHandlers
 
 // Module 12404
-import _mod12387 from "module_12387" /* 12387 */;
-import _mod12388 from "module_12388" /* 12388 */;
+import _mod12405 from "module_12405" /* 12405 */;
+import _mod12409 from "module_12409" /* 12409 */;
 
+let closure_2 = {};
+let closure_3 = {};
 
-export const getMainCarrier = function getMainCarrier() {
-  const GLOBAL_OBJ = _mod12387.GLOBAL_OBJ;
-  const tmp3 = GLOBAL_OBJ.__SENTRY__ || {};
-  GLOBAL_OBJ.__SENTRY__ = tmp3;
-  tmp3.version = tmp3.version || _mod12388.SDK_VERSION;
-  tmp3.version || _mod12388.SDK_VERSION;
-  const SDK_VERSION = tmp(12388).SDK_VERSION;
-  tmp3[SDK_VERSION] = tmp3[_mod12388.SDK_VERSION] || {};
-  tmp3[_mod12388.SDK_VERSION] || {};
-  return _mod12387.GLOBAL_OBJ;
+export const addHandler = function addHandler(arg0, arg1) {
+  const tmp2 = closure_2[arg0] || [];
+  closure_2[arg0] = tmp2;
+  const arr = closure_2[arg0];
+  arr.push(arg1);
 };
-export const getSentryCarrier = function getSentryCarrier(__SENTRY__) {
-  const tmp = __SENTRY__.__SENTRY__ || {};
-  __SENTRY__.__SENTRY__ = tmp;
-  const SDK_VERSION = tmp.version || _mod12388.SDK_VERSION;
-  tmp.version = SDK_VERSION;
-  const SDK_VERSION2 = _mod12388.SDK_VERSION;
-  const tmp4 = tmp[_mod12388.SDK_VERSION] || {};
-  tmp[SDK_VERSION2] = tmp4;
-  return tmp4;
+export const maybeInstrument = function maybeInstrument(arg0, fn) {
+  if (!closure_3[arg0]) {
+    tmp[arg0] = true;
+    try {
+      fn();
+    } catch (tmp4) {
+      const tmp5 = require;
+      if (_mod12405.DEBUG_BUILD) {
+        const logger = tmp5(12406).logger;
+        const _HermesInternal = HermesInternal;
+        logger.error("Error while instrumenting " + arg0, tmp4);
+      }
+    }
+  }
+};
+export const resetInstrumentationHandlers = function resetInstrumentationHandlers() {
+  const keys = Object.keys(closure_2);
+  const item = keys.forEach((item) => {
+    closure_1_2[item] = undefined;
+  });
+};
+export const triggerHandlers = function triggerHandlers(arg0, arg1) {
+  if (arg0 && closure_2[arg0]) {
+    const iter = (arg0 && closure_2[arg0])[Symbol.iterator]();
+    const nextResult = iter.next();
+    if (iter !== undefined) {
+      try {
+        nextResult(arg1);
+      } catch (tmp11) {
+        if (_mod12405.DEBUG_BUILD) {
+          const logger = tmp12(12406).logger;
+          const error = logger.error;
+          const _HermesInternal = HermesInternal;
+          const tmp12Result = _mod12409;
+          error("Error while triggering instrumentation handler.\nType: " + arg0 + "\nName: " + tmp12Result.getFunctionName(nextResult) + "\nError:", tmp11);
+        }
+      }
+    }
+  }
 };

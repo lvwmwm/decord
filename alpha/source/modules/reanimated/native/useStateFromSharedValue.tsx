@@ -1,11 +1,11 @@
-// Module ID: 8668
-// Function ID: 8669
+// Module ID: 8684
+// Function ID: 8685
 // Name: useStateFromSharedValue
-// Dependencies: [32, 19, 1274, 558, 576, 4945, 2]
+// Dependencies: [32, 19, 1274, 558, 576, 5014, 2]
 
-// Module 8668 (useStateFromSharedValue)
+// Module 8684 (useStateFromSharedValue)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -258,11 +258,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDerived
 }) : (function useDerivedStateFromSharedValue(arg0, cResult) {
   let closure_129_2;
   let tmp2;
-  const f99751 = () => current(closure_0.get(), undefined);
+  const f100186 = () => current(closure_0.get(), undefined);
   let closure_0 = arg0;
   let closure_1 = cResult;
-  [tmp2, closure_129_2] = react.useState(f99751);
-  _slicedToArray(react.useState(f99751), 2);
+  [tmp2, closure_129_2] = react.useState(f100186);
+  _slicedToArray(react.useState(f100186), 2);
   let closure_3 = react.useRef(cResult);
   const layoutEffect = react.useLayoutEffect(() => {
     closure_3.current = current;

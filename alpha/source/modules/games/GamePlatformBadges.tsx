@@ -1,13 +1,13 @@
-// Module ID: 13052
-// Function ID: 13053
+// Module ID: 13084
+// Function ID: 13085
 // Name: GamePlatformBadges
-// Dependencies: [13051, 1128, 2, 13053]
+// Dependencies: [13083, 1128, 2, 13085]
 // Exports: getGamePlatformAvailabilityLabel
 
-// Module 13052 (GamePlatformBadges)
+// Module 13084 (GamePlatformBadges)
 import intl5 from "intl" /* 1128 */;
-import GamePlatformAvailability from "GamePlatformAvailability" /* 13051 */;
-import GamePlatformAvailabilityUtils from "GamePlatformAvailabilityUtils" /* 13053 */;
+import GamePlatformAvailability from "GamePlatformAvailability" /* 13083 */;
+import GamePlatformAvailabilityUtils from "GamePlatformAvailabilityUtils" /* 13085 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/games/GamePlatformBadges.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 12135
-// Function ID: 12136
+// Module ID: 12155
+// Function ID: 12156
 // Name: ConjureChatGrouping
 // Dependencies: [2]
 // Exports: groupChatRows
 
-// Module 12135 (ConjureChatGrouping)
+// Module 12155 (ConjureChatGrouping)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/chat/ConjureChatGrouping.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 15584
-// Function ID: 15585
+// Module ID: 15613
+// Function ID: 15614
 // Name: CollectiblesMarketingCacheExperiment
 // Dependencies: [1455, 2]
 // Exports: getCollectiblesMarketingCacheTTL
 
-// Module 15584 (CollectiblesMarketingCacheExperiment)
+// Module 15613 (CollectiblesMarketingCacheExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

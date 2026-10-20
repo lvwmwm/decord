@@ -1,12 +1,12 @@
-// Module ID: 18489
-// Function ID: 18490
+// Module ID: 18524
+// Function ID: 18525
 // Name: FeedbackOverrideStore
-// Dependencies: [18490, 504, 584, 2]
+// Dependencies: [18525, 504, 584, 2]
 
-// Module 18489 (FeedbackOverrideStore)
+// Module 18524 (FeedbackOverrideStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import FeedbackConfig from "FeedbackConfig" /* 18490 */;
+import FeedbackConfig from "FeedbackConfig" /* 18525 */;
 import size from "module_2" /* 2 */;
 
 const React2 = {};

@@ -1,12 +1,12 @@
-// Module ID: 9748
-// Function ID: 9749
+// Module ID: 9762
+// Function ID: 9763
 // Name: AnimatedEnterExitItem
-// Dependencies: [19, 21, 558, 576, 4945, 4922, 2]
+// Dependencies: [19, 21, 558, 576, 5014, 4999, 2]
 
-// Module 9748 (AnimatedEnterExitItem)
+// Module 9762 (AnimatedEnterExitItem)
 import react2 from "react" /* 19 */;
 import react3 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ let flag, tmp10, tmp7Result;
 let c3;
 let closure_4;
 let tmp;
-const native = tmp(4922);
+const native = tmp(4999);
 function renderAnimatedItem(key, arg1, state, cleanUp) {
   const merged = Object.assign(arg1);
   return <closure_12 key={arg0} state={arg2} cleanUp={arg3} />;

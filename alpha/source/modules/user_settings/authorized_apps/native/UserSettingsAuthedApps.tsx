@@ -1,26 +1,26 @@
-// Module ID: 15986
-// Function ID: 15987
+// Module ID: 16015
+// Function ID: 16016
 // Name: UserSettingsAuthedApps
-// Dependencies: [19, 17, 7074, 1087, 21, 587, 5191, 558, 576, 9532, 9393, 13841, 5145, 1633, 504, 1505, 7136, 1506, 5187, 1128, 6542, 6457, 8885, 6957, 6961, 7091, 2]
+// Dependencies: [19, 17, 7151, 1087, 21, 587, 4945, 558, 576, 9548, 9409, 13875, 5648, 1633, 504, 1505, 7205, 1506, 5195, 1128, 6935, 6851, 8901, 7035, 7039, 7168, 2]
 
-// Module 15986 (UserSettingsAuthedApps)
+// Module 16015 (UserSettingsAuthedApps)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5145 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import TableRowGroup from "TableRowGroup" /* 6542 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6957 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6961 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7074 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 9393 */;
-import applications from "applications" /* 9532 */;
-import EmbedIcon from "EmbedIcon" /* 13841 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5648 */;
+import TableRowGroup from "TableRowGroup" /* 6935 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7035 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7039 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7151 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 9409 */;
+import applications from "applications" /* 9548 */;
+import EmbedIcon from "EmbedIcon" /* 13875 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

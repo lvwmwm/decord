@@ -1,23 +1,23 @@
-// Module ID: 17977
-// Function ID: 17978
+// Module ID: 18006
+// Function ID: 18007
 // Name: ChannelSettingsPermissionsList
-// Dependencies: [32, 19, 17, 2068, 2128, 2122, 1392, 1087, 21, 5191, 587, 558, 576, 504, 6374, 1505, 1633, 7015, 7290, 4850, 6457, 10024, 2000, 10612, 7016, 1128, 7021, 1202, 8632, 2]
+// Dependencies: [32, 19, 17, 4800, 4860, 4854, 1392, 1087, 21, 4945, 587, 558, 576, 504, 6775, 1505, 1633, 7092, 7357, 4885, 6851, 10038, 2000, 10626, 7093, 1128, 7098, 1202, 8648, 2]
 
-// Module 17977 (ChannelSettingsPermissionsList)
+// Module 18006 (ChannelSettingsPermissionsList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Server from "Server" /* 2000 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6374 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6775 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import GuildRoleStore from "GuildRoleStore" /* 2122 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import GuildMemberStore from "GuildMemberStore" /* 4860 */;
+import GuildRoleStore from "GuildRoleStore" /* 4854 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

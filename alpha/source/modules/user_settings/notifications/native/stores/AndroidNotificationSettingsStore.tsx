@@ -1,12 +1,12 @@
-// Module ID: 16543
-// Function ID: 16544
+// Module ID: 16572
+// Function ID: 16573
 // Name: AndroidNotificationSettingsStore
-// Dependencies: [5, 1269, 1384, 11028, 1274, 558, 576, 4828, 2]
+// Dependencies: [5, 1269, 1384, 11044, 1274, 558, 576, 4863, 2]
 // Exports: initializeAndroidNotificationSettingsStore, setAndroidMessageNotificationsEnabled, setAndroidNotificationLightsEnabled, setAndroidNotificationSoundsEnabled, setAndroidNotificationVibrationsEnabled
 
-// Module 16543 (AndroidNotificationSettingsStore)
+// Module 16572 (AndroidNotificationSettingsStore)
 import react from "react" /* 576 */;
-import PushNotificationDefault from "PushNotification" /* 11028 */;
+import PushNotificationDefault from "PushNotification" /* 11044 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1269 from "module_1269" /* 1269 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, c3, c4;
 
 let tmp;
-const _slicedToArray = tmp(4828);
+const _slicedToArray = tmp(4863);
 let obj = function _initializeAndroidNotificationSettingsStore() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let closure_0;
@@ -148,7 +148,7 @@ let obj = function _initializeAndroidNotificationSettingsStore() {
   });
   return obj(...arguments);
 };
-let closure_4 = module_1269.createWithEqualityFn(() => ({ isLightsEnabled: "ix", isVibrationsEnabled: "channelId", isSoundsEnabled: "shapes", isNotifyEveryTime: "Array" }));
+let closure_4 = module_1269.createWithEqualityFn(() => ({ isLightsEnabled: "toCharArray$esjava$1", isVibrationsEnabled: "Symbol", isSoundsEnabled: "unicodeVersion", isNotifyEveryTime: "np" }));
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAndroidNotificationLightsEnabled() {
   let first;

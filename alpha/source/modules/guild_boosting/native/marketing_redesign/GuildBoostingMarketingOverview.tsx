@@ -1,19 +1,19 @@
-// Module ID: 7372
-// Function ID: 7373
+// Module ID: 7438
+// Function ID: 7439
 // Name: GuildBoostingMarketingOverview
-// Dependencies: [32, 19, 17, 2090, 1392, 1087, 21, 5191, 558, 576, 7373, 504, 1505, 7130, 6447, 7385, 1400, 1267, 7234, 5980, 7388, 14652, 14659, 14664, 14674, 14679, 14683, 2]
+// Dependencies: [32, 19, 17, 4822, 1392, 1087, 21, 4945, 558, 576, 7439, 504, 1505, 7199, 5560, 7451, 1400, 1267, 7303, 6417, 7455, 14685, 14692, 14697, 14707, 14712, 14716, 2]
 
-// Module 7372 (GuildBoostingMarketingOverview)
+// Module 7438 (GuildBoostingMarketingOverview)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7388 */;
+import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7455 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore_mod from "GuildStore" /* 2090 */;
+import GuildStore_mod from "GuildStore" /* 4822 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,26 +1,26 @@
-// Module ID: 12772
-// Function ID: 12773
+// Module ID: 12788
+// Function ID: 12789
 // Name: CheckpointMessagesStatsScreen
-// Dependencies: [17, 12742, 5537, 21, 5191, 587, 558, 576, 504, 1128, 3109, 3141, 12766, 12768, 12773, 8471, 12764, 12770, 12771, 2]
+// Dependencies: [17, 12762, 5970, 21, 4945, 587, 558, 576, 504, 1128, 3046, 3078, 12782, 12784, 12789, 8487, 12780, 12786, 12787, 2]
 
-// Module 12772 (CheckpointMessagesStatsScreen)
+// Module 12788 (CheckpointMessagesStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3109 from "module_3109" /* 3109 */;
-import _modDef3141 from "module_3141" /* 3141 */;
-import CheckpointConstants from "CheckpointConstants" /* 5537 */;
-import ChatIcon from "ChatIcon" /* 8471 */;
-import CheckpointTextDefault from "CheckpointText" /* 12764 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 12766 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12768 */;
-import NumberAnimationDefault from "NumberAnimation" /* 12770 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12771 */;
-import _modDef12773 from "module_12773" /* 12773 */;
-import CheckpointStore from "CheckpointStore" /* 12742 */;
+import _modDef3046 from "module_3046" /* 3046 */;
+import _modDef3078 from "module_3078" /* 3078 */;
+import CheckpointConstants from "CheckpointConstants" /* 5970 */;
+import ChatIcon from "ChatIcon" /* 8487 */;
+import CheckpointTextDefault from "CheckpointText" /* 12780 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12782 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12784 */;
+import NumberAnimationDefault from "NumberAnimation" /* 12786 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12787 */;
+import _modDef12789 from "module_12789" /* 12789 */;
+import CheckpointStore from "CheckpointStore" /* 12762 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -241,11 +241,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMe
                                                                       return closure_1_6(CheckpointEmphasisDefault, obj, arg1);
                                                                     }
                                   };
-                                  formatResult = intl4.format(_modDef3141.TOMBAW, obj7);
+                                  formatResult = intl4.format(_modDef3078.TOMBAW, obj7);
                                 } else {
                                   const intl3 = tmp(1128).intl;
                                   const obj8 = { numMessages: tmp17 };
-                                  formatResult = intl3.format(_modDef3141.cYCqz8, obj8);
+                                  formatResult = intl3.format(_modDef3078.cYCqz8, obj8);
                                 }
                                 cResult[49] = tmp17;
                                 cResult[50] = tmp27;
@@ -313,7 +313,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMe
     }
   }
   const intl = tmp(1128).intl;
-  const stringResult = intl.string(_modDef3109.wWKySP);
+  const stringResult = intl.string(_modDef3046.wWKySP);
   if (null != bound) {
     const intl2 = tmp(1128).intl;
     const obj12 = {
@@ -323,12 +323,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMe
           return arg0;
         }
     };
-    formatToPlainStringResult = intl2.formatToPlainString(_modDef3141.TOMBAW, obj12);
+    formatToPlainStringResult = intl2.formatToPlainString(_modDef3078.TOMBAW, obj12);
   }
   const tmp31Result = CheckpointScreenDefault;
   const container = tmp4.container;
   if (cResult[27] !== tmp4.image) {
-    const obj13 = { uri: _modDef12773, style: tmp4.image };
+    const obj13 = { uri: _modDef12789, style: tmp4.image };
     const tmp31Result3 = CheckpointApngPlayerDefault;
     const tmp38 = metroRequire(tmp31Result3, obj13);
     cResult[27] = tmp4.image;
@@ -454,7 +454,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMe
     }
   }
   const intl = tmp2(1128).intl;
-  const stringResult = intl.string(_modDef3109.wWKySP);
+  const stringResult = intl.string(_modDef3046.wWKySP);
   let formatToPlainStringResult;
   if (null != bound) {
     const intl2 = tmp2(1128).intl;
@@ -465,11 +465,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMe
           return arg0;
         }
     };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp8(3141).TOMBAW, obj2);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp8(3078).TOMBAW, obj2);
   }
   const obj3 = { style: tmp.container, children: items1 };
   const obj4 = { style: tmp.imageContainer, children: metroRequire(tmp8Result4, obj5) };
-  obj5 = { uri: _modDef12773, style: tmp.image };
+  obj5 = { uri: _modDef12789, style: tmp.image };
   const tmp8Result = CheckpointScreenDefault;
   tmp8Result4 = CheckpointApngPlayerDefault;
   items1 = [metroRequire(View, obj4), ];
@@ -496,11 +496,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointMe
           return closure_1_6(CheckpointEmphasisDefault, obj, arg1);
         }
     };
-    formatResult = intl4.format(tmp8(3141).TOMBAW, obj12);
+    formatResult = intl4.format(tmp8(3078).TOMBAW, obj12);
   } else {
     const intl3 = tmp2(1128).intl;
     const obj13 = { numMessages: roundResult };
-    formatResult = intl3.format(tmp8(3141).cYCqz8, obj13);
+    formatResult = intl3.format(tmp8(3078).cYCqz8, obj13);
   }
   const obj14 = { children: metroImportDefault(View, obj3) };
   items3[2] = metroRequire(tmp8Result6, obj11);

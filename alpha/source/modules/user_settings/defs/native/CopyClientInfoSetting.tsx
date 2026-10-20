@@ -1,35 +1,35 @@
-// Module ID: 16620
-// Function ID: 16621
+// Module ID: 16649
+// Function ID: 16650
 // Name: CopyClientInfoSetting
-// Dependencies: [10808, 21, 1383, 5155, 12519, 7162, 4903, 558, 576, 1128, 11113, 7171, 7117, 1384, 7175, 5141, 5167, 11084, 6393, 2044, 2]
+// Dependencies: [10820, 21, 1383, 5171, 12539, 7231, 5624, 558, 576, 1128, 11128, 7240, 7194, 1384, 7244, 5644, 4902, 11099, 6788, 4776, 2]
 // Exports: getClientInfoString
 
-// Module 16620 (CopyClientInfoSetting)
+// Module 16649 (CopyClientInfoSetting)
 import react from "react" /* 576 */;
 import intl8 from "intl" /* 1128 */;
-import UserSettings from "UserSettings" /* 2044 */;
-import ToastUtils from "ToastUtils" /* 4903 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import DeviceUtils from "DeviceUtils" /* 5167 */;
-import ClipboardListIcon from "ClipboardListIcon" /* 6393 */;
-import ClipboardUtils from "ClipboardUtils" /* 7162 */;
-import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 11113 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12519 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 10808 */;
+import UserSettings from "UserSettings" /* 4776 */;
+import DeviceUtils from "DeviceUtils" /* 4902 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
+import ToastUtils from "ToastUtils" /* 5624 */;
+import ClipboardListIcon from "ClipboardListIcon" /* 6788 */;
+import ClipboardUtils from "ClipboardUtils" /* 7231 */;
+import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 11128 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12539 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10820 */;
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 1383 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SettingBuilders from "SettingBuilders" /* 11099 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp;
 const PlatformUtils = tmp(1384);
-const CopyIcon = tmp(5141);
-const BottomSheetTitleHeader2 = tmp(7117);
-const ActionSheetRow7 = tmp(7171);
-const ActionSheet2 = tmp(7175);
+const CopyIcon = tmp(5644);
+const BottomSheetTitleHeader2 = tmp(7194);
+const ActionSheetRow7 = tmp(7240);
+const ActionSheet2 = tmp(7244);
 function getClientInfo() {
   let str10;
   const overrides = BuildOverrideStore.getCurrentBuildOverride().overrides;
@@ -92,7 +92,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function IOSAnch
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
     const string = intl.string;
-    const tmpResult = subLabel(11113);
+    const tmpResult = subLabel(11128);
     let result = tmpResult.isIOSAnchoredChatScrollerEnabled();
     const t = tmp(1128).t;
     const stringResult = string(result ? t.LfEwvz : t["pe/6Ma"]);
@@ -120,7 +120,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function IOSAnch
           const result = obj2.presentCopiedToClipboard();
         }
     };
-    const tmp11 = closure_4(subLabel(7171).ActionSheetRow, obj2);
+    const tmp11 = closure_4(subLabel(7240).ActionSheetRow, obj2);
     cResult[2] = tmp11;
     tmp9 = tmp11;
   } else {
@@ -146,7 +146,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function IOSAnch
       const result = obj2.presentCopiedToClipboard();
     }
   };
-  const ActionSheetRow = tmp(7171).ActionSheetRow;
+  const ActionSheetRow = tmp(7240).ActionSheetRow;
   intl2 = tmp(1128).intl;
   return closure_4(ActionSheetRow, obj2);
 });
@@ -485,7 +485,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientC
   items[5] = tmp4Result;
   items1 = [tmp(Group, { hasIcons: false, children: items }), ];
   const obj9 = { hasIcons: true, children: React3(ActionSheetRow6, obj10) };
-  const Group2 = tmp2(7171).ActionSheetRow.Group;
+  const Group2 = tmp2(7240).ActionSheetRow.Group;
   obj10 = {
     icon: React3(CopyIcon.CopyIcon, {}),
     label: intl7.string(intl8.t["7dqZ6H"]),
@@ -508,7 +508,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientC
       const result = obj4.presentCopiedToClipboard();
     }
   };
-  ActionSheetRow6 = tmp2(7171).ActionSheetRow;
+  ActionSheetRow6 = tmp2(7240).ActionSheetRow;
   intl7 = tmp2(1128).intl;
   items1[1] = React3(Group2, obj9);
   return tmp(ActionSheet, obj);

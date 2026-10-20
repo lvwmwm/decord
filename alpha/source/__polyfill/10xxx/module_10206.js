@@ -1,97 +1,50 @@
 // Module ID: 10206
 // Function ID: 10207
-// Dependencies: [41, 42, 93, 95, 98, 10124, 10125, 10126]
+// Dependencies: [41, 42, 10203, 10160]
 
 // Module 10206
-import Meridiem from "Meridiem" /* 10124 */;
-import assignSimilarDate from "assignSimilarDate" /* 10125 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10126 */;
+import NUMBER from "NUMBER" /* 10203 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class PTCasualTimeParser {
+let tmp;
+const _mod10160 = tmp(10160);
+const keys = Object.keys(NUMBER.WEEKDAY_OFFSET);
+const regExp = new RegExp("((?<prefix>\u524D\u306E|\u6B21\u306E|\u4ECA\u9031))?(?<weekday>" + keys.join("|") + ")(?:\u66DC\u65E5|\u66DC)", "i");
+class JPWeekdayParser {
   constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, PTCasualTimeParser);
-    const obj = _getPrototypeOf(PTCasualTimeParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+    _classCallCheck(this, JPWeekdayParser);
   }
 }
-_inherits(PTCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return /(?:esta\s*)?(manha|manhã|tarde|meia-noite|meio-dia|noite)(?=\W|$)/i;
+  key: "pattern",
+  value: function pattern() {
+    return regExp;
   }
 };
 const items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(refDate, arg1) {
-      refDate = refDate.refDate;
-      const parsingComponents = refDate.createParsingComponents();
-      const str = arg1[1];
-      const formatted = str.toLowerCase();
-      if ("tarde" === formatted) {
-        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
-        parsingComponents.imply("hour", 15);
-      } else if ("noite" === formatted) {
-        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
-        parsingComponents.imply("hour", 22);
+    key: "extract",
+    value: function extract(reference, groups) {
+      const tmp3 = NUMBER.WEEKDAY_OFFSET[groups.groups.weekday];
+      if (undefined === tmp3) {
+        return null;
       } else {
-        if ("manha" !== formatted) {
-          if ("manh\u00E3" !== formatted) {
-            if ("meia-noite" === formatted) {
-              const _Date = Date;
-              const self = this;
-              const self2 = this;
-              const date = new Date(refDate.getTime());
-              date.setDate(date.getDate() + 1);
-              assignSimilarDate.assignSimilarDate(parsingComponents, date);
-              assignSimilarDate.implySimilarTime(parsingComponents, date);
-              parsingComponents.imply("hour", 0);
-              parsingComponents.imply("minute", 0);
-              parsingComponents.imply("second", 0);
-            } else if ("meio-dia" === formatted) {
-              parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
-              parsingComponents.imply("hour", 12);
+        let str2 = "last";
+        if (!(groups.groups.prefix || "").match(/前の/)) {
+          str2 = "next";
+          if (!(groups.groups.prefix || "").match(/次の/)) {
+            str2 = null;
+            if ((groups.groups.prefix || "").match(/今週/)) {
+              str2 = "this";
             }
           }
         }
-        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
-        parsingComponents.imply("hour", 6);
+        return _mod10160.createParsingComponentsAtWeekday(reference.reference, tmp3, str2);
       }
-      return parsingComponents;
     }
   }
 ];
 
-export default _createClass(PTCasualTimeParser, items);
+export default _createClass(JPWeekdayParser, items);

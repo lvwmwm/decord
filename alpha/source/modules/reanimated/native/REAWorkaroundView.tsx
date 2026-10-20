@@ -1,12 +1,12 @@
-// Module ID: 4946
-// Function ID: 4947
+// Module ID: 5015
+// Function ID: 5016
 // Name: REAWorkaroundView
-// Dependencies: [109, 21, 1658, 4947, 558, 576, 2]
+// Dependencies: [109, 21, 1658, 5016, 558, 576, 2]
 
-// Module 4946 (REAWorkaroundView)
+// Module 5015 (REAWorkaroundView)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import ReanimatedViewNativeComponentDefault from "ReanimatedViewNativeComponent" /* 4947 */;
+import ReanimatedViewNativeComponentDefault from "ReanimatedViewNativeComponent" /* 5016 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import cancelAnimation from "module_1658" /* 1658 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

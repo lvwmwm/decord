@@ -1,28 +1,28 @@
-// Module ID: 11670
-// Function ID: 11671
+// Module ID: 11691
+// Function ID: 11692
 // Name: MentionableSelectOptionParts
-// Dependencies: [19, 17, 2122, 5207, 1392, 1087, 21, 5191, 587, 5545, 1202, 7160, 7178, 8895, 558, 576, 9038, 5187, 11671, 1128, 2]
+// Dependencies: [19, 17, 4854, 5674, 1392, 1087, 21, 4945, 587, 5977, 1202, 7229, 7247, 8911, 558, 576, 9054, 5195, 11692, 1128, 2]
 // Exports: mentionableOptionAccessibilityLabel, renderMentionableOptionDescription, renderMentionableOptionIcon, renderMentionableOptionSuffix
 
-// Module 11670 (MentionableSelectOptionParts)
+// Module 11691 (MentionableSelectOptionParts)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 5545 */;
-import RoleIconUtils from "RoleIconUtils" /* 7160 */;
-import RoleIconDefault from "RoleIcon" /* 7178 */;
-import DiscordTagDefault from "DiscordTag" /* 9038 */;
-import UserIcon from "UserIcon" /* 11671 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5977 */;
+import RoleIconUtils from "RoleIconUtils" /* 7229 */;
+import RoleIconDefault from "RoleIcon" /* 7247 */;
+import DiscordTagDefault from "DiscordTag" /* 9054 */;
+import UserIcon from "UserIcon" /* 11692 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 2122 */;
-import PresenceStore from "PresenceStore" /* 5207 */;
+import GuildRoleStore from "GuildRoleStore" /* 4854 */;
+import PresenceStore from "PresenceStore" /* 5674 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -155,7 +155,7 @@ export const renderMentionableOptionIcon = function renderMentionableOptionIcon(
           }
         }
         let colorString;
-        const ShieldUserIcon = tmp(8895).ShieldUserIcon;
+        const ShieldUserIcon = tmp(8911).ShieldUserIcon;
         const tmp8 = metroImportAll;
         if (role != null) {
           colorString = role.colorString;

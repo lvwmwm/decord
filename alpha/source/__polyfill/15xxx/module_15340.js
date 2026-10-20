@@ -1,24 +1,37 @@
 // Module ID: 15340
 // Function ID: 15341
-// Dependencies: [15324, 15325, 15341]
+// Dependencies: [15255, 15341]
+// Exports: getSupportedNumberingSystems
 
 // Module 15340
-import _mod15324 from "module_15324" /* 15324 */;
-import _mod15325 from "module_15325" /* 15325 */;
-import _mod15341 from "module_15341" /* 15341 */;
+const require = globalThis.__r;
+let _require;
 
-const prop = _mod15324["__core-js_shared__"] || _mod15325("__core-js_shared__", {});
-let versions = prop.versions;
-if (!versions) {
-  const items = [];
-  prop.versions = items;
-  versions = items;
-}
-const push = versions.push;
-let str2 = "global";
-if (_mod15341) {
-  str2 = "pure";
-}
-push({ version: "3.41.0", mode: str2, copyright: "\u00A9 2014-2025 Denis Pushkarev (zloirock.ru)", license: "https://github.com/zloirock/core-js/blob/v3.41.0/LICENSE", source: "https://github.com/zloirock/core-js" });
 
-export default prop;
+export const getSupportedNumberingSystems = function getSupportedNumberingSystems(locale) {
+  _require = locale;
+  const numberingSystemNames = require("numberingSystemNames").numberingSystemNames;
+  return numberingSystemNames.filter((item) => {
+    function isSupportedNumberingSystem(item, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
+      }
+      try {
+        const concat = "".concat;
+        const createMemoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat;
+        const combined = "".concat(str, "-u-nu-");
+        const memoizedNumberFormat = createMemoizedNumberFormat(combined.concat(item));
+        const obj3 = memoizedNumberFormat;
+        if (memoizedNumberFormat.resolvedOptions().numberingSystem !== item) {
+          if ("123" === obj3.format(123)) {
+            return false;
+          }
+        }
+        return true;
+      } catch (err) {
+      }
+    }
+    return isSupportedNumberingSystem(item, locale);
+  });
+};

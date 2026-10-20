@@ -1,11 +1,11 @@
-// Module ID: 6289
-// Function ID: 6290
+// Module ID: 6717
+// Function ID: 6718
 // Name: GuildStickers
-// Dependencies: [5, 3, 2094, 2]
+// Dependencies: [5, 3, 4826, 2]
 
-// Module 6289 (GuildStickers)
+// Module 6717 (GuildStickers)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2094 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4826 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

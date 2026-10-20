@@ -1,10 +1,10 @@
-// Module ID: 12265
-// Function ID: 12266
+// Module ID: 12285
+// Function ID: 12286
 // Name: conjurePlanFormat
 // Dependencies: [2000, 2]
 // Exports: conjurePlanCommandPrefix, formatConjurePlanRequirementLabel
 
-// Module 12265 (conjurePlanFormat)
+// Module 12285 (conjurePlanFormat)
 import Server from "Server" /* 2000 */;
 import size from "module_2" /* 2 */;
 

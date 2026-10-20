@@ -1,19 +1,19 @@
-// Module ID: 5517
-// Function ID: 5518
+// Module ID: 5952
+// Function ID: 5953
 // Name: MediaPostEmbedUtils
-// Dependencies: [2090, 4855, 1392, 1087, 5518, 1128, 5509, 1417, 1405, 5521, 5172, 5522, 2]
+// Dependencies: [4822, 4890, 1392, 1087, 5953, 1128, 5944, 1417, 1405, 5565, 5661, 5567, 2]
 // Exports: canUseMediaPostEmbed, getMediaPostEmbedChannelId, getMediaPostEmbedChannelPath, getMediaPostEmbedCommonData
 
-// Module 5517 (MediaPostEmbedUtils)
+// Module 5952 (MediaPostEmbedUtils)
 import FlagUtils from "FlagUtils" /* 1405 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import findCodedLinks from "findCodedLinks" /* 5172 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5509 */;
-import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 5518 */;
-import useChannelName from "useChannelName" /* 5521 */;
-import LinkUtils from "LinkUtils" /* 5522 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import useChannelName from "useChannelName" /* 5565 */;
+import LinkUtils from "LinkUtils" /* 5567 */;
+import findCodedLinks from "findCodedLinks" /* 5661 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5944 */;
+import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 5953 */;
+import GuildStore from "GuildStore" /* 4822 */;
+import RelationshipStore from "RelationshipStore" /* 4890 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

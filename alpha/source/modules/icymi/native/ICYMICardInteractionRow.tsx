@@ -1,41 +1,41 @@
-// Module ID: 17643
-// Function ID: 17644
+// Module ID: 17672
+// Function ID: 17673
 // Name: ICYMICardInteractionRow
-// Dependencies: [32, 19, 17, 7282, 2068, 6147, 4845, 1087, 1395, 21, 4857, 8167, 5191, 587, 1384, 5063, 558, 576, 504, 7290, 7445, 9726, 1128, 9252, 5187, 6462, 9885, 1105, 1417, 9682, 5128, 10559, 10794, 12700, 12279, 17637, 8471, 8168, 8257, 9982, 8745, 12688, 9990, 4913, 5491, 683, 7182, 2]
+// Dependencies: [32, 19, 17, 7349, 4800, 6584, 4880, 1087, 1395, 21, 4892, 8230, 4945, 587, 1384, 4942, 558, 576, 504, 7357, 7512, 9740, 1128, 9268, 5195, 6856, 9899, 1105, 1417, 9696, 5631, 10573, 10807, 12720, 12299, 17666, 8487, 5186, 8273, 9996, 8761, 12708, 10004, 5213, 5219, 683, 7251, 2]
 // Exports: onAddReaction
 
-// Module 17643 (ICYMICardInteractionRow)
+// Module 17672 (ICYMICardInteractionRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import ReactionUtils from "ReactionUtils" /* 4857 */;
-import Pressables from "Pressables" /* 6462 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7445 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 8167 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 8168 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 8257 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8745 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9682 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9726 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 9990 */;
-import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12279 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 12688 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 12700 */;
-import ICYMIShared from "ICYMIShared" /* 17637 */;
+import ReactionUtils from "ReactionUtils" /* 4892 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5186 */;
+import Pressables from "Pressables" /* 6856 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7357 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7512 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 8230 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 8273 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8761 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9696 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9740 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10004 */;
+import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12299 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 12708 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 12720 */;
+import ICYMIShared from "ICYMIShared" /* 17666 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7282 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6147 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7349 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6584 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let map1;
 let metroRequire;
 let tmp4;
 let unpackModuleId;
-const ColorUtils = tmp4(5063);
+const ColorUtils = tmp4(4942);
 function EmojiReaction(messageId) {
   let backgroundColor1;
   let items5;

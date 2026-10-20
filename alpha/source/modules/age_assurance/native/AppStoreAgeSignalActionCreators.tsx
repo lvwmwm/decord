@@ -1,10 +1,10 @@
-// Module ID: 7960
-// Function ID: 7961
+// Module ID: 8023
+// Function ID: 8024
 // Name: AppStoreAgeSignalActionCreators
 // Dependencies: [5, 1087, 1297, 2]
 // Exports: registerAgeSignalAttestKey, requestAgeSignalChallenge, submitAgeSignal
 
-// Module 7960 (AppStoreAgeSignalActionCreators)
+// Module 8023 (AppStoreAgeSignalActionCreators)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -154,7 +154,7 @@ obj = function _submitAgeSignal() {
               }
               c8 = 1;
               c9 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {

@@ -1,17 +1,17 @@
-// Module ID: 11328
-// Function ID: 11329
+// Module ID: 11345
+// Function ID: 11346
 // Name: PostMessageTransport
-// Dependencies: [5, 32, 2067, 5895, 1087, 1104, 11329, 580, 1123, 1267, 4834, 9169, 9165, 2002, 11330, 11331, 11333, 2]
+// Dependencies: [5, 32, 4799, 6332, 1087, 1104, 11346, 580, 1123, 1267, 4869, 9185, 9181, 2002, 11347, 11348, 11350, 2]
 
-// Module 11328 (PostMessageTransport)
+// Module 11345 (PostMessageTransport)
 import _mod580 from "module_580" /* 580 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import Constants2 from "Constants" /* 5895 */;
-import RPCErrorDefault from "RPCError" /* 9169 */;
-import RPCOpcodesDefault from "RPCOpcodes" /* 11329 */;
+import Constants2 from "Constants" /* 6332 */;
+import RPCErrorDefault from "RPCError" /* 9185 */;
+import RPCOpcodesDefault from "RPCOpcodes" /* 11346 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

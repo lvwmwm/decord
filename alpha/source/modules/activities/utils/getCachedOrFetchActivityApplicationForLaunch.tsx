@@ -1,15 +1,15 @@
-// Module ID: 11264
-// Function ID: 11265
+// Module ID: 11278
+// Function ID: 11279
 // Name: getCachedOrFetchActivityApplicationForLaunch
-// Dependencies: [5, 5540, 2024, 2068, 11249, 11265, 11266, 2]
+// Dependencies: [5, 2046, 2024, 4800, 11263, 11279, 11280, 2]
 // Exports: default
 
-// Module 11264 (getCachedOrFetchActivityApplicationForLaunch)
-import fetchShelf from "fetchShelf" /* 11249 */;
+// Module 11278 (getCachedOrFetchActivityApplicationForLaunch)
+import fetchShelf from "fetchShelf" /* 11263 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
+import ApplicationStore from "ApplicationStore" /* 2046 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
 import size from "module_2" /* 2 */;
 
 let application, channel, closure_2, closure_3;

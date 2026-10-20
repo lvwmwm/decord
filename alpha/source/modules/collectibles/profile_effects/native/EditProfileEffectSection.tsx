@@ -1,23 +1,23 @@
-// Module ID: 15655
-// Function ID: 15656
+// Module ID: 15684
+// Function ID: 15685
 // Name: EditProfileEffectSection
-// Dependencies: [19, 17, 7536, 9293, 21, 5191, 14258, 558, 576, 15654, 14259, 7155, 8626, 9318, 5128, 9296, 2]
+// Dependencies: [19, 17, 7602, 9309, 21, 4945, 14291, 558, 576, 15683, 14292, 7224, 8642, 9334, 5631, 9312, 2]
 
-// Module 15655 (EditProfileEffectSection)
+// Module 15684 (EditProfileEffectSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7536 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8626 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9293 */;
-import ProfileEffectDefault from "ProfileEffect" /* 9296 */;
-import _modDef9318 from "module_9318" /* 9318 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 14258 */;
-import useProfileEffectSections from "useProfileEffectSections" /* 15654 */;
+import FastImageDefault from "FastImage" /* 5631 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7224 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7602 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8642 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9309 */;
+import ProfileEffectDefault from "ProfileEffect" /* 9312 */;
+import _modDef9334 from "module_9334" /* 9334 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 14291 */;
+import useProfileEffectSections from "useProfileEffectSections" /* 15683 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const CollectiblesEditUserProfileListItems = tmp(14259);
+const CollectiblesEditUserProfileListItems = tmp(14292);
 const View = react_native.View;
 const isProfileEffectRecord = ProfileEffectRecord.isProfileEffectRecord;
 const SAMPLE_PROFILE_ASPECT_RATIO = CollectiblesPreviewConstants.SAMPLE_PROFILE_ASPECT_RATIO;
@@ -133,7 +133,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((setSele
       return metroRequire(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
     } else if (item === useProfileEffectSections.SHOP_ITEM) {
       const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_PROFILE_EFFECT_SHEET };
-      const EditCollectiblesListItemShop = tmp(14259).EditCollectiblesListItemShop;
+      const EditCollectiblesListItemShop = tmp(14292).EditCollectiblesListItemShop;
       return metroRequire(EditCollectiblesListItemShop, obj3, "shop");
     } else if (isProfileEffectRecord(item)) {
       const obj4 = { item, isSelected: selectedSkuId === item.skuId, setSelectedProfileEffect, isTryItOut, size };
@@ -180,7 +180,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((setSele
         return metroRequire(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
       } else if (item === useProfileEffectSections.SHOP_ITEM) {
         const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_PROFILE_EFFECT_SHEET };
-        const EditCollectiblesListItemShop = tmp(14259).EditCollectiblesListItemShop;
+        const EditCollectiblesListItemShop = tmp(14292).EditCollectiblesListItemShop;
         return metroRequire(EditCollectiblesListItemShop, obj3, "shop");
       } else if (isProfileEffectRecord(item)) {
         const obj4 = { item, isSelected: require === item.skuId, setSelectedProfileEffect, isTryItOut, size };
@@ -256,7 +256,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((item)
     }
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { uri: _modDef9318 };
+      const obj3 = { uri: _modDef9334 };
       cResult[6] = obj3;
       tmp15 = obj3;
     } else {
@@ -389,7 +389,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((item)
   obj2 = { style: items2, accessible: false, importantForAccessibility: "no", children: items3 };
   items2 = [tmp.profileEffect, { borderRadius: 6 }];
   const obj3 = { source: obj4, style: tmp.sampleProfile, resizeMode: "cover" };
-  obj4 = { uri: _modDef9318 };
+  obj4 = { uri: _modDef9334 };
   const tmp2Result = FastImageDefault;
   items3 = [metroRequire(tmp2Result, obj3), ];
   const obj5 = { skuId: item.skuId, bannerAdjustment: 0, useThumbnail: true, thumbnailUrlOverride: memo };

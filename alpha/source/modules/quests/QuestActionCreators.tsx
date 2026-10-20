@@ -1,35 +1,35 @@
-// Module ID: 9474
-// Function ID: 9475
+// Module ID: 9486
+// Function ID: 9487
 // Name: QuestActionCreators
-// Dependencies: [5, 7653, 9475, 6220, 5382, 6219, 7656, 7658, 6228, 1087, 6231, 1297, 584, 5892, 1128, 7664, 1257, 6194, 1275, 9476, 9477, 9480, 6235, 7672, 9481, 7652, 7737, 7744, 9482, 7450, 7675, 9483, 5052, 9484, 9485, 9499, 1267, 7630, 9500, 9487, 1104, 9501, 2]
+// Dependencies: [5, 7716, 9487, 6650, 5846, 6649, 7719, 7721, 6658, 1087, 6661, 1297, 584, 6329, 1128, 7727, 1257, 6624, 1275, 9488, 9489, 9492, 6665, 7735, 9493, 7715, 7800, 7807, 9494, 7517, 7738, 9495, 4989, 9496, 9497, 9513, 1267, 7693, 9514, 9499, 1104, 9515, 2]
 // Exports: claimQuestReward, clearQuestAdDecision, completeQuestPreview, dismissProgressTrackingFailureNotice, dismissQuestActivityModal, dismissQuestContent, enrollInQuest, fetchClaimedQuests, fetchCurrentQuests, fetchEarnedQuestToDeliver, fetchQuest, fetchQuestHomeHero, fetchQuestHomeHeroPreview, fetchQuestPreview, fetchQuestRewardCode, fetchQuestToDeliver, fetchVideoTranscript, manualStopConsoleQuest, manuallyStartConsoleQuest, markAdContentSeen, markAdContentUnseen, markQuestDiscovered, overrideQuestForPlacement, questsVisibleMobileMessagesChanged, resetOptimisticProgress, resetQuestDismissibilityStatus, resetQuestPreviewStatus, resetRecentQuestCompletions, selectTaskPlatform, sendHeartbeat, setAutoEnroll, updateOptimisticProgress, updatePrevRestingQuestDockMode, updateQuestDockVisibilityEligibility, updateVideoProgress
 
-// Module 9474 (QuestActionCreators)
+// Module 9486 (QuestActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6194 */;
-import QuestConstants from "QuestConstants" /* 6228 */;
-import QuestTypes from "QuestTypes" /* 6231 */;
-import AdCreativeType from "AdCreativeType" /* 6235 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7450 */;
-import QuestDataUtils from "QuestDataUtils" /* 7652 */;
-import VideoQuestUIStore2 from "VideoQuestUIStore" /* 7658 */;
-import AnalyticsActions from "AnalyticsActions" /* 7672 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9475 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9476 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9477 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9480 */;
-import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9481 */;
-import QuestDecisionRoundtripTrackerDefault from "QuestDecisionRoundtripTracker" /* 9482 */;
-import EarnedDecisionRoundtripTrackerDefault from "EarnedDecisionRoundtripTracker" /* 9500 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6624 */;
+import QuestConstants from "QuestConstants" /* 6658 */;
+import QuestTypes from "QuestTypes" /* 6661 */;
+import AdCreativeType from "AdCreativeType" /* 6665 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7517 */;
+import QuestDataUtils from "QuestDataUtils" /* 7715 */;
+import VideoQuestUIStore2 from "VideoQuestUIStore" /* 7721 */;
+import AnalyticsActions from "AnalyticsActions" /* 7735 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9487 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9488 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9489 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9492 */;
+import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9493 */;
+import QuestDecisionRoundtripTrackerDefault from "QuestDecisionRoundtripTracker" /* 9494 */;
+import EarnedDecisionRoundtripTrackerDefault from "EarnedDecisionRoundtripTracker" /* 9514 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7653 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6220 */;
-import NetworkStore from "NetworkStore" /* 5382 */;
-import SortedGuildStore from "SortedGuildStore" /* 6219 */;
-import QuestStore from "QuestStore" /* 7656 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7716 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6650 */;
+import NetworkStore from "NetworkStore" /* 5846 */;
+import SortedGuildStore from "SortedGuildStore" /* 6649 */;
+import QuestStore from "QuestStore" /* 7719 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -86,7 +86,7 @@ let obj = function _manuallyStartConsoleQuest() {
             message = undefined;
             c7 = 1;
             c8 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {
@@ -505,7 +505,7 @@ obj = function _sendHeartbeat() {
       terminal = false;
     }
     ({ executablePath: c4, executableFingerprint: c5 } = tmp59);
-    return "Reflect";
+    return "test";
   });
   return obj(...arguments);
 };
@@ -1010,7 +1010,7 @@ obj = function _completeQuestPreview() {
       if (closure_1 === undefined) {
         num7 = 1;
       }
-      return "Reflect";
+      return "test";
     })();
     iter.next();
     return iter;
@@ -1914,7 +1914,7 @@ obj = function _fetchVideoTranscript() {
       if (closure_1 === undefined) {
         flag = false;
       }
-      return "Reflect";
+      return "test";
     })();
     iter.next();
     return iter;

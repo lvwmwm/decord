@@ -1,30 +1,30 @@
-// Module ID: 14395
-// Function ID: 14396
+// Module ID: 14428
+// Function ID: 14429
 // Name: VoiceChannelHeader
-// Dependencies: [19, 17, 2067, 2090, 4845, 1087, 21, 5191, 587, 558, 576, 14396, 14397, 5187, 14398, 504, 11408, 5521, 8955, 1128, 11165, 7073, 14400, 11515, 1202, 10640, 6462, 2]
+// Dependencies: [19, 17, 4799, 4822, 4880, 1087, 21, 4945, 587, 558, 576, 14429, 14430, 5195, 14431, 504, 11429, 5565, 8971, 1128, 11180, 7150, 14433, 11536, 1202, 10653, 6856, 2]
 
-// Module 14395 (VoiceChannelHeader)
+// Module 14428 (VoiceChannelHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import useChannelNameDefault from "useChannelName" /* 5521 */;
-import Pressables from "Pressables" /* 6462 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 7073 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8955 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10640 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11165 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11408 */;
-import CallStateHooks from "CallStateHooks" /* 14396 */;
-import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 14397 */;
+import useChannelNameDefault from "useChannelName" /* 5565 */;
+import Pressables from "Pressables" /* 6856 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 7150 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8971 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10653 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11180 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11429 */;
+import CallStateHooks from "CallStateHooks" /* 14429 */;
+import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 14430 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
+import GuildStore from "GuildStore" /* 4822 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj2;
 let obj3;
 let tmp2;
 let unpackModuleId;
-const OngoingCallTimerDefault = tmp2(14398);
+const OngoingCallTimerDefault = tmp2(14431);
 const View = react_native.View;
 ({ Permissions: metroImportDefault, AnalyticsPages: metroImportAll, InstantInviteSources: c9 } = Constants);
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
@@ -96,10 +96,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Privat
             tmp14 = tmp17;
           }
         }
-        let tmp12 = state === tmp(14396).CallStates.CONNECTED;
+        let tmp12 = state === tmp(14429).CallStates.CONNECTED;
         if (tmp12) {
           const obj3 = { channelId: channel.id, style: tmp4.subtitle };
-          tmp12 = authStore(tmp5(14398), obj3);
+          tmp12 = authStore(tmp5(14431), obj3);
         }
         cResult[7] = channel.id;
         cResult[8] = tmp4.subtitle;
@@ -107,10 +107,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Privat
         cResult[10] = tmp12;
         tmp11 = tmp12;
       }
-      let tmp9 = state === tmp(14396).CallStates.CONNECTED;
+      let tmp9 = state === tmp(14429).CallStates.CONNECTED;
       if (tmp9) {
         const obj4 = { style: tmp4.subtitle, variant: "text-xs/medium", color: "text-overlay-light", children: " - " };
-        tmp9 = authStore(tmp(5187).Text, obj4);
+        tmp9 = authStore(tmp(5195).Text, obj4);
       }
       cResult[4] = tmp4.subtitle;
       cResult[5] = state;
@@ -139,10 +139,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Privat
   const tmp5 = View;
   if (tmp6Result) {
     const obj3 = { style: tmp.subtitle, variant: "text-xs/medium", color: "text-overlay-light", children: " - " };
-    tmp6Result = tmp6(tmp7(5187).Text, obj3);
+    tmp6Result = tmp6(tmp7(5195).Text, obj3);
   }
   items[1] = tmp6Result;
-  let tmp6Result2 = state === tmp7(14396).CallStates.CONNECTED;
+  let tmp6Result2 = state === tmp7(14429).CallStates.CONNECTED;
   if (tmp6Result2) {
     const obj4 = { channelId: channel.id, style: tmp.subtitle };
     tmp6Result2 = tmp6(OngoingCallTimerDefault, obj4);
@@ -184,7 +184,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChannel
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmp10 = stateFromStores1(11408)(channel);
+  const tmp10 = stateFromStores1(11429)(channel);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [EmbeddedActivitiesStore];
     cResult[3] = items1;
@@ -227,7 +227,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChannel
   }
   const tmpResult2 = tmp(504);
   stateFromStores1 = tmpResult2.useStateFromStores(tmp11, tmp13, tmp14);
-  let tmp17 = tmp9(5521)(channel);
+  let tmp17 = tmp9(5565)(channel);
   if (stateFromStores != null) {
     class A {
       constructor() {
@@ -295,7 +295,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChannel
         }
         tmp17 = tmp23;
       }
-      if (stateFromStores1(7073)(channel)) {
+      if (stateFromStores1(7150)(channel)) {
         class O {
           constructor() {
             return openGroupDMAddMembersDefault(channel.id, metroImportAll.CHANNEL_CALL);
@@ -328,7 +328,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChannel
               }
             }
             const obj3 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-md/semibold", color: "text-overlay-light", children: tmp17 };
-            tmp33 = closure_10(tmp(5187).Text, obj3);
+            tmp33 = closure_10(tmp(5195).Text, obj3);
           }
           cResult[21] = tmp17;
           cResult[22] = tmp33;
@@ -353,7 +353,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChannel
               }
             }
             const obj4 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-xs/medium", color: "text-overlay-light", children: tmp18 };
-            tmp35 = closure_10(tmp(5187).Text, obj4);
+            tmp35 = closure_10(tmp(5195).Text, obj4);
           }
           cResult[23] = tmp18;
           cResult[24] = tmp35;
@@ -467,22 +467,22 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChannel
   const obj6 = { size: tmp2(1202).Icon.Sizes.MEDIUM, source: tmp5Result, disableColor: true, style: tmp.icons };
   const Icon = tmp2(1202).Icon;
   if (isRoleRequiredDefault(channel)) {
-    tmp5Result = tmp5(14400);
+    tmp5Result = tmp5(14433);
   } else {
-    tmp5Result = tmp5(11515);
+    tmp5Result = tmp5(11536);
   }
   items3 = [closure_10(Icon, obj6), , ];
   let tmp14Result = formatToPlainStringResult;
   const obj7 = { style: tmp.middle, children: items4 };
   if (typeof formatToPlainStringResult === "string") {
     const obj8 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-md/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
-    tmp14Result = tmp14(tmp2(5187).Text, obj8);
+    tmp14Result = tmp14(tmp2(5195).Text, obj8);
   }
   items4 = [tmp14Result, ];
   let tmp14Result3 = name;
   if (typeof name === "string") {
     const obj9 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-xs/medium", color: "text-overlay-light", children: name };
-    tmp14Result3 = tmp14(tmp2(5187).Text, obj9);
+    tmp14Result3 = tmp14(tmp2(5195).Text, obj9);
   }
   items4[1] = tmp14Result3;
   items3[1] = closure_11(View, obj7);

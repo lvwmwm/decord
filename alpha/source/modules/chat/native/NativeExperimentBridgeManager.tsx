@@ -1,24 +1,24 @@
-// Module ID: 19038
-// Function ID: 19039
+// Module ID: 19077
+// Function ID: 19078
 // Name: NativeExperimentBridgeManager
-// Dependencies: [17, 2132, 502, 1384, 19039, 6011, 11113, 19040, 1267, 19041, 1297, 7085, 2]
+// Dependencies: [17, 2069, 502, 1384, 19078, 6448, 11128, 19079, 1267, 19080, 1297, 7162, 2]
 
-// Module 19038 (NativeExperimentBridgeManager)
+// Module 19077 (NativeExperimentBridgeManager)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6011 */;
-import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 11113 */;
-import VideoStutterMitigationExperimentDefault from "VideoStutterMitigationExperiment" /* 19040 */;
-import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 19041 */;
-import LocaleStore from "LocaleStore" /* 2132 */;
+import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6448 */;
+import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 11128 */;
+import VideoStutterMitigationExperimentDefault from "VideoStutterMitigationExperiment" /* 19079 */;
+import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 19080 */;
+import LocaleStore from "LocaleStore" /* 2069 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7162 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const YYTextReplacementExperiment = tmp(19039);
+const YYTextReplacementExperiment = tmp(19078);
 function syncYYTextReplacementExperiment() {
   const obj = PlatformUtils;
   if (obj.isIOS()) {

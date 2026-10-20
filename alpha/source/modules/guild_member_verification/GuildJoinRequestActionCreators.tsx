@@ -1,17 +1,17 @@
-// Module ID: 6396
-// Function ID: 6397
+// Module ID: 6791
+// Function ID: 6792
 // Name: GuildJoinRequestActionCreators
-// Dependencies: [5, 2072, 6397, 5035, 1087, 5037, 584, 1297, 6398, 5399, 1128, 6145, 2]
+// Dependencies: [5, 4804, 6792, 4972, 1087, 4974, 584, 1297, 6793, 5863, 1128, 6582, 2]
 
-// Module 6396 (GuildJoinRequestActionCreators)
+// Module 6791 (GuildJoinRequestActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ChannelRecord from "ChannelRecord" /* 2072 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5035 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5037 */;
-import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6398 */;
+import ChannelRecord from "ChannelRecord" /* 4804 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4972 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4974 */;
+import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6793 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6397 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6792 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -80,7 +80,7 @@ let obj = function _fetchGuildJoinRequests() {
               requests = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -388,7 +388,7 @@ obj = function _updateGuildJoinRequest() {
               tmp = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -654,7 +654,7 @@ obj = function _createOrEnterJoinRequestInterview() {
             channel = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

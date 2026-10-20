@@ -1,27 +1,27 @@
-// Module ID: 12297
-// Function ID: 12298
+// Module ID: 12317
+// Function ID: 12318
 // Name: useConjureProjects
-// Dependencies: [32, 19, 5540, 7586, 4843, 2090, 4845, 5034, 10979, 6293, 1128, 3883, 558, 576, 6356, 11594, 11006, 1455, 504, 7222, 2]
+// Dependencies: [32, 19, 2046, 7649, 4878, 4822, 4880, 4971, 10991, 6721, 1128, 3820, 558, 576, 6756, 11615, 11022, 1455, 504, 7291, 2]
 // Exports: describeConjureProjectRow
 
-// Module 12297 (useConjureProjects)
+// Module 12317 (useConjureProjects)
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1128 */;
-import _modDef3883 from "module_3883" /* 3883 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6356 */;
-import ConjureUtils from "ConjureUtils" /* 7222 */;
-import conjureAppInServer from "conjureAppInServer" /* 11006 */;
-import ConjureActivity from "ConjureActivity" /* 11594 */;
+import _modDef3820 from "module_3820" /* 3820 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6756 */;
+import ConjureUtils from "ConjureUtils" /* 7291 */;
+import conjureAppInServer from "conjureAppInServer" /* 11022 */;
+import ConjureActivity from "ConjureActivity" /* 11615 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
-import UserProfileStore from "UserProfileStore" /* 7586 */;
-import GuildChannelStore from "GuildChannelStore" /* 4843 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import ConjureChatStore from "ConjureChatStore" /* 10979 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
+import ApplicationStore from "ApplicationStore" /* 2046 */;
+import UserProfileStore from "UserProfileStore" /* 7649 */;
+import GuildChannelStore from "GuildChannelStore" /* 4878 */;
+import GuildStore from "GuildStore" /* 4822 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4971 */;
+import ConjureChatStore from "ConjureChatStore" /* 10991 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6721 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ function collectEntries(_location) {
         const conjureActivityResult = tmpResult.conjureActivity(obj4);
         if ("done" === conjureActivityResult) {
           if (null != num) {
-            const sum = num + tmp(11594).CONJURE_DONE_WINDOW_MS;
+            const sum = num + tmp(11615).CONJURE_DONE_WINDOW_MS;
             bound = sum;
             if (null != bound) {
               const _Math = Math;
@@ -434,19 +434,19 @@ export const describeConjureProjectRow = function describeConjureProjectRow(entr
   let obj4;
   let obj6;
   if (entry.notInServer) {
-    const obj3 = { serverName: intl4.string(_modDef3883["08PzLy"]), label: intl5.formatToPlainString(_modDef3883.pyh2pa, obj4) };
+    const obj3 = { serverName: intl4.string(_modDef3820["08PzLy"]), label: intl5.formatToPlainString(_modDef3820.pyh2pa, obj4) };
     intl4 = intl6.intl;
     intl5 = intl6.intl;
     obj = obj3;
     obj4 = { name: entry.name };
   } else if (null == entry.guildName) {
-    const obj5 = { serverName: intl2.string(_modDef3883["3QFps8"]), label: intl3.formatToPlainString(_modDef3883["2sBOnp"], obj6) };
+    const obj5 = { serverName: intl2.string(_modDef3820["3QFps8"]), label: intl3.formatToPlainString(_modDef3820["2sBOnp"], obj6) };
     intl2 = intl6.intl;
     intl3 = intl6.intl;
     obj = obj5;
     obj6 = { name: entry.name };
   } else {
-    obj = { serverName: entry.guildName, label: intl.formatToPlainString(_modDef3883["hd+GF1"], obj11) };
+    obj = { serverName: entry.guildName, label: intl.formatToPlainString(_modDef3820["hd+GF1"], obj11) };
     intl = intl6.intl;
     obj11 = { name: null, server: null };
     ({ name: obj2.name, guildName: obj2.server } = entry);

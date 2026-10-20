@@ -1,13 +1,13 @@
-// Module ID: 16381
-// Function ID: 16382
+// Module ID: 16410
+// Function ID: 16411
 // Name: DmsHappeningNowCardsSetting
-// Dependencies: [8260, 11084, 1128, 2044, 2]
+// Dependencies: [8276, 11099, 1128, 4776, 2]
 
-// Module 16381 (DmsHappeningNowCardsSetting)
+// Module 16410 (DmsHappeningNowCardsSetting)
 import intl2 from "intl" /* 1128 */;
-import UserSettings from "UserSettings" /* 2044 */;
-import SettingsConstants from "SettingsConstants" /* 8260 */;
-import SettingBuilders from "SettingBuilders" /* 11084 */;
+import UserSettings from "UserSettings" /* 4776 */;
+import SettingsConstants from "SettingsConstants" /* 8276 */;
+import SettingBuilders from "SettingBuilders" /* 11099 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

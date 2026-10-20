@@ -1,23 +1,23 @@
-// Module ID: 18003
-// Function ID: 18004
+// Module ID: 18032
+// Function ID: 18033
 // Name: ChannelSettingsChangeRTCRegion
-// Dependencies: [729, 19, 2068, 17953, 21, 5191, 587, 4922, 1128, 9996, 6539, 6540, 8855, 558, 576, 504, 38, 2]
+// Dependencies: [729, 19, 4800, 17982, 21, 4945, 587, 4999, 1128, 10010, 6932, 6933, 8871, 558, 576, 504, 38, 2]
 
-// Module 18003 (ChannelSettingsChangeRTCRegion)
+// Module 18032 (ChannelSettingsChangeRTCRegion)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import native from "native" /* 4922 */;
-import TableRadioRow from "TableRadioRow" /* 6539 */;
-import TableRadioGroup from "TableRadioGroup" /* 6540 */;
-import Form2 from "Form" /* 8855 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9996 */;
+import native from "native" /* 4999 */;
+import TableRadioRow from "TableRadioRow" /* 6932 */;
+import TableRadioGroup from "TableRadioGroup" /* 6933 */;
+import Form2 from "Form" /* 8871 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10010 */;
 import _toArray from "_toArray" /* 729 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import RegionStore from "RegionStore" /* 17953 */;
-import createStyles from "createStyles" /* 5191 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import RegionStore from "RegionStore" /* 17982 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -73,7 +73,7 @@ class ChannelSettingsChangeRTCRegion extends PureComponent {
       c0 = null;
       tmp = null;
     }
-    let obj = self(9996);
+    let obj = self(10010);
     obj.updateChannel({ rtcRegion: tmp });
     self.setState({ submitting: true }, () => {
       const obj = ChannelSettingsActionCreatorsDefault;

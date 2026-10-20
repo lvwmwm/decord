@@ -1,16 +1,16 @@
-// Module ID: 7983
-// Function ID: 7984
+// Module ID: 8046
+// Function ID: 8047
 // Name: ManualReviewActionCreators
-// Dependencies: [5, 502, 1087, 7295, 1104, 1297, 584, 7778, 7764, 7301, 2]
+// Dependencies: [5, 502, 1087, 7362, 1104, 1297, 584, 7841, 7827, 7368, 2]
 // Exports: handleManualReviewCta, invalidateAgeVerificationCaches, invalidateManualReviewCache
 
-// Module 7983 (ManualReviewActionCreators)
+// Module 8046 (ManualReviewActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import Constants2 from "Constants" /* 7295 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7778 */;
+import Constants2 from "Constants" /* 7362 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7841 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;

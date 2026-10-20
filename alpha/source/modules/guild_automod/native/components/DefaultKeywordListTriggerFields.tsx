@@ -1,10 +1,10 @@
-// Module ID: 18721
-// Function ID: 18722
+// Module ID: 18756
+// Function ID: 18757
 // Name: DefaultKeywordListTriggerFields
-// Dependencies: [19, 12598, 21, 558, 576, 1128, 18722, 6454, 6542, 18723, 2]
+// Dependencies: [19, 12618, 21, 558, 576, 1128, 18757, 6848, 6935, 18758, 2]
 
-// Module 18721 (DefaultKeywordListTriggerFields)
-import Constants from "Constants" /* 12598 */;
+// Module 18756 (DefaultKeywordListTriggerFields)
+import Constants from "Constants" /* 12618 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -236,7 +236,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DefaultKeywo
           const tmp4 = arg0;
           if (tmp4) {
             const items = [];
-            items[HermesBuiltin.arraySpread(items, filter((arg0) => arg0 !== requiredAction), 0)] = tmp2;
+            items[HermesBuiltin.arraySpread(items, filter((arg0) => arg0 !== c0), 0)] = tmp2;
             found = items;
           } else {
             found = filter((arg0) => arg0 !== closure_0);

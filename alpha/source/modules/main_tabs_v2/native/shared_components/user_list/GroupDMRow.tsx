@@ -1,13 +1,13 @@
-// Module ID: 10591
-// Function ID: 10592
+// Module ID: 10605
+// Function ID: 10606
 // Name: GroupDMRow
-// Dependencies: [109, 19, 10520, 21, 558, 576, 5521, 10592, 1202, 10593, 5187, 6454, 6457, 2]
+// Dependencies: [109, 19, 10534, 21, 558, 576, 5565, 10606, 1202, 10607, 5195, 6848, 6851, 2]
 
-// Module 10591 (GroupDMRow)
+// Module 10605 (GroupDMRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useChannelNameDefault from "useChannelName" /* 5521 */;
-import UserRowConstants from "UserRowConstants" /* 10520 */;
+import useChannelNameDefault from "useChannelName" /* 5565 */;
+import UserRowConstants from "UserRowConstants" /* 10534 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -16,11 +16,11 @@ import size from "module_2" /* 2 */;
 let tmp;
 let tmp15;
 const native = tmp(1202);
-const Text_Text = tmp(5187);
-const TableCheckboxRow2 = tmp(6454);
-const TableRow2 = tmp(6457);
-const GroupDMAvatarDefault = tmp15(10592);
-const useRecipientsLabel = tmp(10593);
+const Text_Text = tmp(5195);
+const TableCheckboxRow2 = tmp(6848);
+const TableRow2 = tmp(6851);
+const GroupDMAvatarDefault = tmp15(10606);
+const useRecipientsLabel = tmp(10607);
 let closure_3 = ["channel", "mode", "selected", "disabled", "onPress"];
 const UserRowModes = UserRowConstants.UserRowModes;
 const jsx = Fragment.jsx;
@@ -194,19 +194,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRow
   tmp5Result = undefined;
   if (null != recipientsLabel) {
     const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
-    tmp5Result = tmp5(tmp7(5187).Text, obj4);
+    tmp5Result = tmp5(tmp7(5195).Text, obj4);
   }
   if (str == null) {
     str = "";
   }
   if (NONE === UserRowModes.TOGGLE) {
     const obj5 = { checked: flag };
-    const TableCheckboxRow = tmp7(6454).TableCheckboxRow;
+    const TableCheckboxRow = tmp7(6848).TableCheckboxRow;
     const merged2 = Object.assign(obj3);
     tmp5Result2 = tmp5(TableCheckboxRow, obj5);
   } else {
     const obj6 = {};
-    const TableRow = tmp7(6457).TableRow;
+    const TableRow = tmp7(6851).TableRow;
     const merged3 = Object.assign(obj3);
     tmp5Result2 = tmp5(TableRow, obj6);
   }

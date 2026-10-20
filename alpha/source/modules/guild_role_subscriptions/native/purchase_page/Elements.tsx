@@ -1,23 +1,23 @@
-// Module ID: 17692
-// Function ID: 17693
+// Module ID: 17721
+// Function ID: 17722
 // Name: Elements
-// Dependencies: [32, 109, 19, 17, 4869, 21, 5191, 587, 558, 576, 5187, 1128, 1202, 17693, 6462, 9698, 16285, 573, 9701, 7216, 2]
+// Dependencies: [32, 109, 19, 17, 2058, 21, 4945, 587, 558, 576, 5195, 1128, 1202, 17722, 6856, 9712, 16314, 573, 9715, 7285, 2]
 
-// Module 17692 (Elements)
+// Module 17721 (Elements)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import Pressables from "Pressables" /* 6462 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9698 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16285 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17693 */;
+import Pressables from "Pressables" /* 6856 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9712 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16314 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17722 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4869 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2058 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,8 +34,8 @@ let tmp;
 let tmp4;
 let unpackModuleId;
 const intl2 = tmp(1128);
-const Text_Text = tmp(5187);
-const useStoreFrontPriceDefault = tmp4(9701);
+const Text_Text = tmp(5195);
+const useStoreFrontPriceDefault = tmp4(9715);
 let closure_4 = ["lineClamp"];
 ({ TouchableOpacity: metroImportAll, View: c9 } = react_native);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
@@ -362,7 +362,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatted
       const _HermesInternal = HermesInternal;
       str = "" + tmp11 + "/mo.";
     }
-    const tmpResult2 = first(7216);
+    const tmpResult2 = first(7285);
     const formatPriceResult = tmpResult2.formatPrice(price.amount, price.currency);
     cResult[3] = price.amount;
     cResult[4] = price.currency;
@@ -384,7 +384,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatted
   const tmp3 = _require;
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    const tmp3Result = tmp3(7216);
+    const tmp3Result = tmp3(7285);
     str = "" + tmp3Result.formatPrice(price.amount, price.currency) + "/mo.";
   }
   return str;

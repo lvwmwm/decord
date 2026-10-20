@@ -1,15 +1,15 @@
-// Module ID: 12949
-// Function ID: 12950
+// Module ID: 12981
+// Function ID: 12982
 // Name: useSearchContext
-// Dependencies: [19, 2068, 1087, 558, 576, 38, 573, 2]
+// Dependencies: [19, 4800, 1087, 558, 576, 38, 573, 2]
 // Exports: getChannelDetailsSearchContext
 
-// Module 12949 (useSearchContext)
+// Module 12981 (useSearchContext)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

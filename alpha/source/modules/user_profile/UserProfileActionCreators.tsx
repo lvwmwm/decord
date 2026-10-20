@@ -1,20 +1,20 @@
-// Module ID: 8565
-// Function ID: 8566
+// Module ID: 8581
+// Function ID: 8582
 // Name: UserProfileActionCreators
-// Dependencies: [5, 1392, 1087, 1394, 1123, 5065, 1128, 1267, 8566, 7635, 584, 6953, 1297, 6949, 5891, 2]
+// Dependencies: [5, 1392, 1087, 1394, 1123, 4952, 1128, 1267, 8582, 7698, 584, 7031, 1297, 7027, 6328, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutCustomTypingIndicatorStyle, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 8565 (UserProfileActionCreators)
+// Module 8581 (UserProfileActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import intl3 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import shared from "shared" /* 5065 */;
-import InlineUploaderDefault from "InlineUploader" /* 6949 */;
-import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 6953 */;
-import MessageParserDefault from "MessageParser" /* 7635 */;
-import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 8566 */;
+import shared from "shared" /* 4952 */;
+import InlineUploaderDefault from "InlineUploader" /* 7027 */;
+import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 7031 */;
+import MessageParserDefault from "MessageParser" /* 7698 */;
+import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 8582 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;

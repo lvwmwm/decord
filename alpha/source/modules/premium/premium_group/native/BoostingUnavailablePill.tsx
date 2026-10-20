@@ -1,20 +1,20 @@
-// Module ID: 14590
-// Function ID: 14591
+// Module ID: 14623
+// Function ID: 14624
 // Name: BoostingUnavailablePill
-// Dependencies: [17, 4878, 21, 5191, 587, 5155, 14591, 2002, 1128, 3303, 558, 576, 5187, 2]
+// Dependencies: [17, 2067, 21, 4945, 587, 5171, 14624, 2002, 1128, 3240, 558, 576, 5195, 2]
 
-// Module 14590 (BoostingUnavailablePill)
+// Module 14623 (BoostingUnavailablePill)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import _modDef3303 from "module_3303" /* 3303 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 4878 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import Text_Text from "Text/Text" /* 5187 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 2067 */;
+import _modDef3240 from "module_3240" /* 3240 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
+import Text_Text from "Text/Text" /* 5195 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,11 +28,11 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: formatToPlainString(prop, obj2) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(14591, dependencyMap.paths);
+  const tmp2 = asyncRequire(14624, dependencyMap.paths);
   const intl = intl2.intl;
   formatToPlainString = intl.formatToPlainString;
   obj2 = { premiumGroupProductName: closure_5() };
-  prop = _modDef3303["5xN/C1"];
+  prop = _modDef3240["5xN/C1"];
   openLazy(tmp2, "PremiumGroupEducationActionSheet", obj);
 }
 ({ TouchableOpacity: c3, View: closure_4 } = react_native);

@@ -1,21 +1,21 @@
-// Module ID: 12761
-// Function ID: 12762
+// Module ID: 12777
+// Function ID: 12778
 // Name: CheckpointOverlay
-// Dependencies: [21, 558, 576, 12747, 12762, 12767, 12772, 12774, 12776, 12778, 12779, 12781, 12784, 2]
+// Dependencies: [21, 558, 576, 6317, 12778, 12783, 12788, 12790, 12792, 12810, 12811, 12813, 12817, 2]
 
-// Module 12761 (CheckpointOverlay)
+// Module 12777 (CheckpointOverlay)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 12747 */;
-import CheckpointWelcomeScreenDefault from "CheckpointWelcomeScreen" /* 12762 */;
-import CheckpointVoiceStatsScreenDefault from "CheckpointVoiceStatsScreen" /* 12767 */;
-import CheckpointMessagesStatsScreenDefault from "CheckpointMessagesStatsScreen" /* 12772 */;
-import CheckpointServersStatsScreenDefault from "CheckpointServersStatsScreen" /* 12774 */;
-import CheckpointEmojiStatsScreenDefault from "CheckpointEmojiStatsScreen" /* 12776 */;
-import CheckpointGamesStatsScreenDefault from "CheckpointGamesStatsScreen" /* 12778 */;
-import CheckpointGameTimeStatsScreenDefault from "CheckpointGameTimeStatsScreen" /* 12779 */;
-import CheckpointFriendsStatsScreenDefault from "CheckpointFriendsStatsScreen" /* 12781 */;
-import CheckpointSummaryStatsScreenDefault from "CheckpointSummaryStatsScreen" /* 12784 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 6317 */;
+import CheckpointWelcomeScreenDefault from "CheckpointWelcomeScreen" /* 12778 */;
+import CheckpointVoiceStatsScreenDefault from "CheckpointVoiceStatsScreen" /* 12783 */;
+import CheckpointMessagesStatsScreenDefault from "CheckpointMessagesStatsScreen" /* 12788 */;
+import CheckpointServersStatsScreenDefault from "CheckpointServersStatsScreen" /* 12790 */;
+import CheckpointEmojiStatsScreenDefault from "CheckpointEmojiStatsScreen" /* 12792 */;
+import CheckpointGamesStatsScreenDefault from "CheckpointGamesStatsScreen" /* 12810 */;
+import CheckpointGameTimeStatsScreenDefault from "CheckpointGameTimeStatsScreen" /* 12811 */;
+import CheckpointFriendsStatsScreenDefault from "CheckpointFriendsStatsScreen" /* 12813 */;
+import CheckpointSummaryStatsScreenDefault from "CheckpointSummaryStatsScreen" /* 12817 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,28 +1,28 @@
-// Module ID: 18066
-// Function ID: 18067
+// Module ID: 18095
+// Function ID: 18096
 // Name: Alerts
-// Dependencies: [19, 17, 5181, 14828, 15424, 7738, 9925, 21, 18067, 18068, 18072, 18073, 5191, 587, 558, 576, 504, 4945, 4922, 5192, 5478, 5482, 5400, 5472, 7006, 5458, 5406, 568, 2]
+// Dependencies: [19, 17, 4946, 14861, 15452, 7801, 9939, 21, 18096, 18097, 18101, 18102, 4945, 587, 558, 576, 504, 5014, 4999, 5167, 5208, 5209, 5864, 5927, 7083, 5922, 5870, 568, 2]
 
-// Module 18066 (Alerts)
+// Module 18095 (Alerts)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 4922 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import timing from "timing" /* 5192 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
-import OverlayViewDefault from "OverlayView" /* 5406 */;
-import spring from "spring" /* 5478 */;
-import springPresets from "springPresets" /* 5482 */;
-import ModalRegistryDefault from "ModalRegistry" /* 18067 */;
+import native from "native" /* 4999 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
+import timing from "timing" /* 5167 */;
+import spring from "spring" /* 5208 */;
+import springPresets from "springPresets" /* 5209 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5864 */;
+import OverlayViewDefault from "OverlayView" /* 5870 */;
+import ModalRegistryDefault from "ModalRegistry" /* 18096 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 14828 */;
-import PermissionVADStore from "PermissionVADStore" /* 15424 */;
-import SurveyStore from "SurveyStore" /* 7738 */;
-import AlertStore from "AlertStore" /* 9925 */;
+import AccessibilityStore from "AccessibilityStore" /* 4946 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 14861 */;
+import PermissionVADStore from "PermissionVADStore" /* 15452 */;
+import SurveyStore from "SurveyStore" /* 7801 */;
+import AlertStore from "AlertStore" /* 9939 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -710,7 +710,7 @@ function renderAlertItem(arg0, item, transitionState, cleanUp) {
   const obj = { item, transitionState, cleanUp };
   return authStore2(closure_22, obj, arg0);
 }
-let closure_26 = Object.freeze({ renderAlert: "Array", renderKey: "ix", props: "duration" });
+let closure_26 = Object.freeze({ renderAlert: "Array", renderKey: "unicodeVersion", props: "runOnJS" });
 ReactCompilerGating = ReactCompilerGating_mod;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Alerts() {
   let alertDismissable;
@@ -758,7 +758,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return <component />;
           };
         } else {
-          return { renderAlert: "Array", renderKey: "ix", props: "duration" };
+          return { renderAlert: "Array", renderKey: "unicodeVersion", props: "runOnJS" };
         }
       }
     };
@@ -876,7 +876,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           return <component />;
         };
       } else {
-        return { renderAlert: "Array", renderKey: "ix", props: "duration" };
+        return { renderAlert: "Array", renderKey: "unicodeVersion", props: "runOnJS" };
       }
     }
   });

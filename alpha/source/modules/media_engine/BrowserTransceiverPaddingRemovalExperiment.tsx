@@ -1,9 +1,9 @@
-// Module ID: 5328
-// Function ID: 5329
+// Module ID: 5792
+// Function ID: 5793
 // Name: BrowserTransceiverPaddingRemovalExperiment
 // Dependencies: [1455, 2]
 
-// Module 5328 (BrowserTransceiverPaddingRemovalExperiment)
+// Module 5792 (BrowserTransceiverPaddingRemovalExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

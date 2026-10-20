@@ -1,23 +1,23 @@
-// Module ID: 12584
-// Function ID: 12585
+// Module ID: 12604
+// Function ID: 12605
 // Name: conjureServerAppRemoval
-// Dependencies: [5, 19, 5540, 4843, 2128, 2090, 4845, 4855, 1392, 1087, 11006, 5521, 558, 576, 504, 12, 6377, 7222, 6357, 2]
+// Dependencies: [5, 19, 2046, 4878, 4860, 4822, 4880, 4890, 1392, 1087, 11022, 5565, 558, 576, 504, 12, 6778, 7291, 6757, 2]
 // Exports: conjureDeleteAppChannelItems, conjureKickAppItems, loadConjureServerApp
 
-// Module 12584 (conjureServerAppRemoval)
+// Module 12604 (conjureServerAppRemoval)
 import Constants from "Constants" /* 1087 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4843 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6357 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6377 */;
-import ConjureUtils from "ConjureUtils" /* 7222 */;
-import conjureAppInServer from "conjureAppInServer" /* 11006 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4878 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6757 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6778 */;
+import ConjureUtils from "ConjureUtils" /* 7291 */;
+import conjureAppInServer from "conjureAppInServer" /* 11022 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import ApplicationStore from "ApplicationStore" /* 2046 */;
+import GuildMemberStore from "GuildMemberStore" /* 4860 */;
+import GuildStore from "GuildStore" /* 4822 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
+import RelationshipStore from "RelationshipStore" /* 4890 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -26,11 +26,11 @@ const require = globalThis.__r;
 const GuildChannelStore = GuildChannelStore2;
 let _require, c1, c2, c4, set, user;
 
-const f113735 = (id) => {
+const f114172 = (id) => {
   obj = { key: "channel:" + id.id, kind: "channel", label: "#" + id.name };
   return obj;
 };
-const f113736 = () => {
+const f114173 = () => {
 
 };
 function conjureApplicationIdForBot(userId) {
@@ -71,15 +71,15 @@ function readConjureServerApp(arg0, arg1) {
         if (null == found) {
           items = [];
         } else {
-          obj = guild(11006);
+          obj = guild(11022);
           items = obj.findConjureAppChannels(guild.id, found.id);
         }
         let canRemoveConjureBotResult = null != found;
         if (canRemoveConjureBotResult) {
           let bot = application.bot;
           let id;
-          const canRemoveConjureBot = guild(11006).canRemoveConjureBot;
-          guild(11006);
+          const canRemoveConjureBot = guild(11022).canRemoveConjureBot;
+          guild(11022);
           if (bot != null) {
             id = bot.id;
           }
@@ -88,8 +88,8 @@ function readConjureServerApp(arg0, arg1) {
         if (canRemoveConjureBotResult) {
           const bot2 = found.bot;
           let id1;
-          const canRemoveConjureBot2 = guild(11006).canRemoveConjureBot;
-          guild(11006);
+          const canRemoveConjureBot2 = guild(11022).canRemoveConjureBot;
+          guild(11022);
           if (bot2 != null) {
             id1 = bot2.id;
           }
@@ -228,7 +228,7 @@ function fetchMissingApplication(item10010) {
   if (!tmp) {
     const obj2 = ApplicationActionCreators;
     const application = obj2.fetchApplication(item10010);
-    application.catch(f113736);
+    application.catch(f114173);
   }
 }
 function loadMissingApplication() {
@@ -354,7 +354,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
           if (!tmp2) {
             const obj2 = ApplicationActionCreators;
             const application = obj2.fetchApplication(tmp);
-            application.catch(f113736);
+            application.catch(f114173);
           }
         }
       }
@@ -373,7 +373,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
           if (!tmp2) {
             const obj2 = ApplicationActionCreators;
             const application = obj2.fetchApplication(tmp);
-            application.catch(f113736);
+            application.catch(f114173);
           }
         }
       }
@@ -390,7 +390,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
           if (!tmp2) {
             const obj2 = ApplicationActionCreators;
             const application = obj2.fetchApplication(tmp);
-            application.catch(f113736);
+            application.catch(f114173);
           }
         }
       }
@@ -406,7 +406,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
             if (!tmp2) {
               const obj2 = ApplicationActionCreators;
               const application = obj2.fetchApplication(tmp);
-              application.catch(f113736);
+              application.catch(f114173);
             }
           }
         }
@@ -421,7 +421,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
             if (!tmp2) {
               const obj2 = ApplicationActionCreators;
               const application = obj2.fetchApplication(tmp);
-              application.catch(f113736);
+              application.catch(f114173);
             }
           }
         }
@@ -435,7 +435,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
             if (!tmp2) {
               const obj2 = ApplicationActionCreators;
               const application = obj2.fetchApplication(tmp);
-              application.catch(f113736);
+              application.catch(f114173);
             }
           }
         }
@@ -498,7 +498,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
       if (!tmp2) {
         const obj2 = ApplicationActionCreators;
         const application = obj2.fetchApplication(tmp);
-        application.catch(f113736);
+        application.catch(f114173);
       }
     }
   }, items2);
@@ -863,7 +863,7 @@ export const loadConjureServerApp = function loadConjureServerApp() {
 };
 export const conjureKickAppItems = function conjureKickAppItems(rest) {
   const channels = rest.channels;
-  const items = [...channels.map(f113735)];
+  const items = [...channels.map(f114172)];
   if (rest.targetIsPreview) {
     obj = { key: "main-app", kind: "app", label: rest.appName };
     const obj2 = { key: "main-app", kind: "app", label: rest.appName };
@@ -877,7 +877,7 @@ export const conjureDeleteAppChannelItems = function conjureDeleteAppChannelItem
   let closure_0 = channelId;
   const channels = rest.channels;
   const found = channels.filter((id) => id.id !== channelId);
-  const items = [...found.map(f113735), obj, obj2];
+  const items = [...found.map(f114172), obj, obj2];
   obj = { key: "main-app", kind: "app", label: rest.appName };
   return items;
 };

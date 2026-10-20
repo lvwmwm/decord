@@ -1,12 +1,12 @@
-// Module ID: 8947
-// Function ID: 8948
+// Module ID: 8963
+// Function ID: 8964
 // Name: LiveStageNotificationsUtils
-// Dependencies: [5116, 4845, 1098, 558, 576, 504, 2]
+// Dependencies: [5155, 4880, 1098, 558, 576, 504, 2]
 
-// Module 8947 (LiveStageNotificationsUtils)
+// Module 8963 (LiveStageNotificationsUtils)
 import Constants from "Constants" /* 1098 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5116 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5155 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

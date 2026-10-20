@@ -1,13 +1,13 @@
-// Module ID: 16168
-// Function ID: 16169
+// Module ID: 16197
+// Function ID: 16198
 // Name: openVideoQuestModal
-// Dependencies: [7656, 16161, 1281, 6190, 16169, 2002, 13902, 2]
+// Dependencies: [7719, 16190, 1281, 6620, 16198, 2002, 13936, 2]
 // Exports: default
 
-// Module 16168 (openVideoQuestModal)
+// Module 16197 (openVideoQuestModal)
 import v1All from "v1" /* 1281 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 13902 */;
-import QuestStore from "QuestStore" /* 7656 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 13936 */;
+import QuestStore from "QuestStore" /* 7719 */;
 import size from "module_2" /* 2 */;
 
 let importAll;
@@ -31,13 +31,13 @@ export default function openVideoQuestModal(questId) {
       }
     }
     if (null == completedAt) {
-      sourceQuestContent(16161)();
+      sourceQuestContent(16190)();
     }
   }
   let obj2 = v1All;
   const v4Result = obj2.v4();
   importAll = v4Result;
-  const pushLazy = sourceQuestContent(6190).pushLazy;
+  const pushLazy = sourceQuestContent(6620).pushLazy;
   const obj3 = {
     questId,
     questContentPosition,
@@ -50,8 +50,8 @@ export default function openVideoQuestModal(questId) {
     },
     sourceQuestContent
   };
-  sourceQuestContent(6190);
-  const tmp9 = questId(2002)(16169, dependencyMap.paths);
-  const obj4 = questId(13902);
+  sourceQuestContent(6620);
+  const tmp9 = questId(2002)(16198, dependencyMap.paths);
+  const obj4 = questId(13936);
   return pushLazy(tmp9, obj3, obj4.getVideoQuestModalKey(questId));
 };

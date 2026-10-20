@@ -1,14 +1,14 @@
-// Module ID: 9617
-// Function ID: 9618
+// Module ID: 9631
+// Function ID: 9632
 // Name: openChannelSecondaryViewChat
-// Dependencies: [19, 1087, 5073, 5072, 9618, 1506, 558, 576, 584, 2]
+// Dependencies: [19, 1087, 5112, 5111, 9632, 1506, 558, 576, 584, 2]
 // Exports: default, getChannelSecondaryViewChatIndex, presentChannelSecondaryViewChat
 
-// Module 9617 (openChannelSecondaryViewChat)
+// Module 9631 (openChannelSecondaryViewChat)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import RootNavigationRef from "RootNavigationRef" /* 5073 */;
-import MessageManagerDefault from "MessageManager" /* 9618 */;
+import RootNavigationRef from "RootNavigationRef" /* 5112 */;
+import MessageManagerDefault from "MessageManager" /* 9632 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, importDefault;
 
-const f102659 = () => {
+const f103094 = () => {
   const obj = RootNavigationRef;
   const rootNavigationRef = obj.getRootNavigationRef();
   if (rootNavigationRef != null) {
@@ -172,7 +172,7 @@ function presentChannelSecondaryViewChat(guildId, channelId) {
   _require = guildId;
   let closure_1 = channelId;
   const obj = require("RootNavigationRef");
-  const result = obj.runWhenRootNavigationReady(f102659);
+  const result = obj.runWhenRootNavigationReady(f103094);
 }
 let result = size.fileFinishedImporting("modules/app_channels/native/openChannelSecondaryViewChat.tsx");
 
@@ -187,7 +187,7 @@ export default function openChannelSecondaryViewChat(guildId, channelId) {
   _require = guildId;
   importDefault = channelId;
   let obj2 = require("RootNavigationRef");
-  const result = obj2.runWhenRootNavigationReady(f102659);
+  const result = obj2.runWhenRootNavigationReady(f103094);
 };
 export { getChannelSecondaryViewChatIndex };
 export { presentChannelSecondaryViewChat };

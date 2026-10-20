@@ -1,12 +1,12 @@
-// Module ID: 18544
-// Function ID: 18545
+// Module ID: 18579
+// Function ID: 18580
 // Name: InstantInviteManager
-// Dependencies: [7085, 4904, 1128, 2]
+// Dependencies: [7162, 5625, 1128, 2]
 
-// Module 18544 (InstantInviteManager)
+// Module 18579 (InstantInviteManager)
 import intl2 from "intl" /* 1128 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4904 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5625 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7162 */;
 import size from "module_2" /* 2 */;
 
 class InstantInviteManager extends AutomaticLifecycleManager {

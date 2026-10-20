@@ -1,9 +1,9 @@
-// Module ID: 13369
-// Function ID: 13370
+// Module ID: 13403
+// Function ID: 13404
 // Name: ContactSyncSuggestions
-// Dependencies: [32, 19, 17, 1087, 13370, 21, 5191, 587, 6536, 558, 5486, 576, 5187, 5057, 1417, 1202, 1128, 6454, 4913, 5063, 11, 1267, 8855, 7091, 5491, 1107, 5479, 2]
+// Dependencies: [32, 19, 17, 1087, 13404, 21, 4945, 587, 5229, 558, 5214, 576, 5195, 4994, 1417, 1202, 1128, 6848, 5213, 4942, 11, 1267, 8871, 7168, 5219, 1107, 5205, 2]
 
-// Module 13369 (ContactSyncSuggestions)
+// Module 13403 (ContactSyncSuggestions)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -12,16 +12,16 @@ import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import UserUtils from "UserUtils" /* 5057 */;
-import useFontScale from "useFontScale" /* 5486 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 6454 */;
-import NavigatorConstants from "NavigatorConstants" /* 6536 */;
-import Form from "Form" /* 8855 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 13370 */;
+import UserUtils from "UserUtils" /* 4994 */;
+import useFontScale from "useFontScale" /* 5214 */;
+import NavigatorConstants from "NavigatorConstants" /* 5229 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 6848 */;
+import Form from "Form" /* 8871 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 13404 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj5;
 let obj6;
 let obj7;
 let tmp;
-const Text_Text = tmp(5187);
+const Text_Text = tmp(5195);
 let react = react_mod;
 const View = react_native.View;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -171,7 +171,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sugges
     let tmp19 = null != suggestion.mutual_friends_count;
     if (tmp19) {
       const obj5 = { variant: "text-xs/medium", color: "text-muted", children: intl.format(intl4.t.z7y34b, obj6) };
-      const Text = tmp(5187).Text;
+      const Text = tmp(5195).Text;
       intl = tmp(1128).intl;
       obj6 = { count: suggestion.mutual_friends_count };
       tmp19 = metroImportAll(Text, obj5);
@@ -284,7 +284,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sugges
       return onSelect(suggestion.suggested_user.id);
     }
   };
-  const TableCheckboxRow = tmp3(6454).TableCheckboxRow;
+  const TableCheckboxRow = tmp3(6848).TableCheckboxRow;
   obj4 = { source: userAvatarSource, size: native.AvatarSizes.REFRESH_MEDIUM_32 };
   Avatar = tmp3(1202).Avatar;
   items = [metroImportAll(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", children: userTag }), ];
@@ -293,7 +293,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sugges
   tmp9 = authStore;
   if (tmp8Result) {
     const obj5 = { variant: "text-xs/medium", color: "text-muted", children: intl.format(intl4.t.z7y34b, obj6) };
-    const Text = tmp3(5187).Text;
+    const Text = tmp3(5195).Text;
     intl = tmp3(1128).intl;
     obj6 = { count: suggestion.mutual_friends_count };
     tmp8Result = tmp8(Text, obj5);
@@ -336,10 +336,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncS
   } else {
     tmp5 = cResult[1];
   }
-  const tmpResult = friendSuggestions(4913);
+  const tmpResult = friendSuggestions(5213);
   const token = tmpResult.useToken(onSubmit(587).colors.BACKGROUND_BASE_LOW);
   if (cResult[3] !== token) {
-    const tmpResult3 = friendSuggestions(5063);
+    const tmpResult3 = friendSuggestions(4942);
     const hexOpacityToRgbaResult = tmpResult3.hexOpacityToRgba(token, 0);
     cResult[3] = token;
     cResult[4] = hexOpacityToRgbaResult;
@@ -348,7 +348,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncS
     tmp10 = cResult[4];
   }
   if (cResult[5] !== token) {
-    const tmpResult4 = friendSuggestions(5063);
+    const tmpResult4 = friendSuggestions(4942);
     const hexOpacityToRgbaResult1 = tmpResult4.hexOpacityToRgba(token, 100);
     cResult[5] = token;
     cResult[6] = hexOpacityToRgbaResult1;
@@ -536,11 +536,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncS
     acc[suggested_user.suggested_user.id] = true;
     return acc;
   }, {});
-  let obj = friendSuggestions(4913);
+  let obj = friendSuggestions(5213);
   const token = obj.useToken(onSubmit(587).colors.BACKGROUND_BASE_LOW);
-  let obj2 = friendSuggestions(5063);
+  let obj2 = friendSuggestions(4942);
   let items = [obj2.hexOpacityToRgba(token, 0), ];
-  let obj3 = friendSuggestions(5063);
+  let obj3 = friendSuggestions(4942);
   items[1] = obj3.hexOpacityToRgba(token, 100);
   const tmp4 = first(react.useState(reduced), 2);
   first = tmp4[0];
@@ -618,10 +618,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncS
   }, items3);
   let obj6 = { contentContainerStyle: obj7, data: memo, renderItem: callback1 };
   obj7 = { paddingHorizontal: onSubmit(587).space.PX_16, paddingBottom: tmp6 };
-  const FlashList = friendSuggestions(7091).FlashList;
+  const FlashList = friendSuggestions(7168).FlashList;
   items5 = [closure_8(FlashList, obj6), , ];
   let obj8 = { style: tmp.linearGradient, start: friendSuggestions(1107).VerticalGradient.START, end: friendSuggestions(1107).VerticalGradient.END, pointerEvents: "none", colors: items };
-  const tmp11 = onSubmit(5491);
+  const tmp11 = onSubmit(5219);
   items5[1] = closure_8(tmp11, obj8);
   const obj9 = { style: tmp.redesignButton, children: closure_8(Button, obj10) };
   obj10 = {
@@ -642,7 +642,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncS
     },
     disabled: !someResult
   };
-  Button = friendSuggestions(5479).Button;
+  Button = friendSuggestions(5205).Button;
   intl = friendSuggestions(1128).intl;
   items5[2] = closure_8(onSelect, obj9);
   return closure_10(onSelect, obj5);

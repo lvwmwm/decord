@@ -1,27 +1,27 @@
-// Module ID: 18987
-// Function ID: 18988
+// Module ID: 19022
+// Function ID: 19023
 // Name: GuildRoleSubscriptionListingPreview
-// Dependencies: [32, 109, 19, 17, 21, 5191, 587, 558, 576, 7216, 5187, 1128, 16289, 16285, 5128, 18988, 18961, 18982, 16296, 2]
+// Dependencies: [32, 109, 19, 17, 21, 4945, 587, 558, 576, 7285, 5195, 1128, 16318, 16314, 5631, 19023, 18996, 19017, 16325, 2]
 
-// Module 18987 (GuildRoleSubscriptionListingPreview)
+// Module 19022 (GuildRoleSubscriptionListingPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import PriceUtils from "PriceUtils" /* 7216 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16285 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 16289 */;
-import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 16296 */;
-import GuildRoleSubscriptionsActionCreatorExtras from "GuildRoleSubscriptionsActionCreatorExtras" /* 18961 */;
-import GuildRoleSubscriptionBenefitPreview2 from "GuildRoleSubscriptionBenefitPreview" /* 18982 */;
-import GuildPremiumRoleSubscribeButton from "GuildPremiumRoleSubscribeButton" /* 18988 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import FastImageDefault from "FastImage" /* 5631 */;
+import PriceUtils from "PriceUtils" /* 7285 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16314 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 16318 */;
+import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 16325 */;
+import GuildRoleSubscriptionsActionCreatorExtras from "GuildRoleSubscriptionsActionCreatorExtras" /* 18996 */;
+import GuildRoleSubscriptionBenefitPreview2 from "GuildRoleSubscriptionBenefitPreview" /* 19017 */;
+import GuildPremiumRoleSubscribeButton from "GuildPremiumRoleSubscribeButton" /* 19023 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function PriceT
     } else {
       tmp10 = cResult[4];
     }
-    const Text = tmp(5187).Text;
+    const Text = tmp(5195).Text;
     const priceInterval = tmp5.priceInterval;
     const intl = tmp(1128).intl;
     const format = intl.format;
@@ -523,7 +523,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BenefitsSect
       if (cResult[1] === label) {
         tmp6 = cResult[2];
       }
-      const tmp8 = listingId === guildId(18961).NEW_LISTING_EDIT_STATE_ID;
+      const tmp8 = listingId === guildId(18996).NEW_LISTING_EDIT_STATE_ID;
       let closure_2 = tmp8;
       if (cResult[3] === benefits) {
         if (cResult[4] === guildId) {

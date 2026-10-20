@@ -1,16 +1,16 @@
-// Module ID: 9481
-// Function ID: 9482
+// Module ID: 9493
+// Function ID: 9494
 // Name: VirtualCurrencyUtils
-// Dependencies: [1087, 1089, 2065, 1394, 5033, 2052, 2]
+// Dependencies: [1087, 1089, 4797, 1394, 4970, 4784, 2]
 // Exports: dismissOrbsOnboardingExperience, get1PShopApplicationIdForSKU
 
-// Module 9481 (VirtualCurrencyUtils)
+// Module 9493 (VirtualCurrencyUtils)
 import Constants from "Constants" /* 1087 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1089 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import dismissible_content from "dismissible_content" /* 2052 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
+import dismissible_content from "dismissible_content" /* 4784 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4970 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -29,12 +29,12 @@ export const dismissOrbsOnboardingExperience = function dismissOrbsOnboardingExp
   if (!obj.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL)) {
     const obj2 = { dismissAction: hasOwnProperty.INDIRECT_ACTION, groupName: constants.VIRTUAL_CURRENCY_ONBOARDING };
     const tmpResult = DismissibleContentUnsafeUtils;
-    const result = tmpResult.UNSAFE_markDismissibleContentAsDismissed(tmp(2052).DismissibleContent.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL, obj2);
+    const result = tmpResult.UNSAFE_markDismissibleContentAsDismissed(tmp(4784).DismissibleContent.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL, obj2);
     const obj3 = { dismissAction: hasOwnProperty.INDIRECT_ACTION, groupName: constants.VIRTUAL_CURRENCY_ONBOARDING };
     const tmpResult3 = DismissibleContentUnsafeUtils;
-    const result1 = tmpResult3.UNSAFE_markDismissibleContentAsDismissed(tmp(2052).DismissibleContent.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, obj3);
+    const result1 = tmpResult3.UNSAFE_markDismissibleContentAsDismissed(tmp(4784).DismissibleContent.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, obj3);
     const obj4 = { dismissAction: hasOwnProperty.INDIRECT_ACTION, groupName: constants.VIRTUAL_CURRENCY_ONBOARDING };
     const tmpResult4 = DismissibleContentUnsafeUtils;
-    const result2 = tmpResult4.UNSAFE_markDismissibleContentAsDismissed(tmp(2052).DismissibleContent.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, obj4);
+    const result2 = tmpResult4.UNSAFE_markDismissibleContentAsDismissed(tmp(4784).DismissibleContent.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, obj4);
   }
 };

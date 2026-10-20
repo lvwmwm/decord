@@ -1,11 +1,11 @@
-// Module ID: 9361
-// Function ID: 9362
+// Module ID: 9377
+// Function ID: 9378
 // Name: OrderSigningDeferral
-// Dependencies: [5, 9362, 2]
+// Dependencies: [5, 9378, 2]
 // Exports: getPaymentRedirectContext, performSigningDeferralAction
 
-// Module 9361 (OrderSigningDeferral)
-import Stripe3DSChallenge from "Stripe3DSChallenge" /* 9362 */;
+// Module 9377 (OrderSigningDeferral)
+import Stripe3DSChallenge from "Stripe3DSChallenge" /* 9378 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

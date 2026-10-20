@@ -1,19 +1,19 @@
-// Module ID: 17294
-// Function ID: 17295
+// Module ID: 17323
+// Function ID: 17324
 // Name: useIsCurrentUserEligibleForPowerupUpsells
-// Dependencies: [2128, 6219, 1392, 7390, 1394, 1991, 558, 576, 504, 2]
+// Dependencies: [4860, 6649, 1392, 7457, 1394, 1991, 558, 576, 504, 2]
 // Exports: getIsCurrentUserEligibleForPowerupUpsells
 
-// Module 17294 (useIsCurrentUserEligibleForPowerupUpsells)
+// Module 17323 (useIsCurrentUserEligibleForPowerupUpsells)
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import SortedGuildStore from "SortedGuildStore" /* 6219 */;
+import GuildMemberStore from "GuildMemberStore" /* 4860 */;
+import SortedGuildStore from "SortedGuildStore" /* 6649 */;
 import UserStore from "UserStore" /* 1392 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7390 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7457 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const f128552 = (premiumGuildSubscription) => null != premiumGuildSubscription.premiumGuildSubscription;
+const f129022 = (premiumGuildSubscription) => null != premiumGuildSubscription.premiumGuildSubscription;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsCurrentUserEligibleForPowerupUpsells() {
   let currentUser;
@@ -147,7 +147,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsCurre
       const tmpResult = tmp(1991);
       let isPremiumResult = tmpResult.isPremium(stateFromStores, PremiumTypes.TIER_2);
       if (!isPremiumResult) {
-        isPremiumResult = stateFromStoresArray.some(f128552) || stateFromStores1.some((item) => {
+        isPremiumResult = stateFromStoresArray.some(f129022) || stateFromStores1.some((item) => {
           const member = GuildMemberStore.getMember(item, currentUser.id);
           let premiumSince;
           if (member != null) {
@@ -155,7 +155,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsCurre
           }
           return null != premiumSince;
         });
-        stateFromStoresArray.some(f128552) || stateFromStores1.some((item) => {
+        stateFromStoresArray.some(f129022) || stateFromStores1.some((item) => {
           const member = GuildMemberStore.getMember(item, currentUser.id);
           let premiumSince;
           if (member != null) {
@@ -191,7 +191,7 @@ export const getIsCurrentUserEligibleForPowerupUpsells = function getIsCurrentUs
       const obj3 = currentUser(1991);
       let isPremiumResult = obj3.isPremium(currentUser, PremiumTypes.TIER_2);
       if (!isPremiumResult) {
-        isPremiumResult = items.some(f128552) || flattenedGuildIds.some((item) => {
+        isPremiumResult = items.some(f129022) || flattenedGuildIds.some((item) => {
           const member = GuildMemberStore.getMember(item, currentUser.id);
           let premiumSince;
           if (member != null) {
@@ -199,7 +199,7 @@ export const getIsCurrentUserEligibleForPowerupUpsells = function getIsCurrentUs
           }
           return null != premiumSince;
         });
-        items.some(f128552) || flattenedGuildIds.some((item) => {
+        items.some(f129022) || flattenedGuildIds.some((item) => {
           const member = GuildMemberStore.getMember(item, currentUser.id);
           let premiumSince;
           if (member != null) {

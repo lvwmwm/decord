@@ -1,12 +1,12 @@
-// Module ID: 14075
-// Function ID: 14076
+// Module ID: 14108
+// Function ID: 14109
 // Name: useTrackUserProfileActivityAction
-// Dependencies: [19, 9288, 558, 576, 8588, 7130, 504, 8589, 2]
+// Dependencies: [19, 9304, 558, 576, 8604, 7199, 504, 8605, 2]
 
-// Module 14075 (useTrackUserProfileActivityAction)
+// Module 14108 (useTrackUserProfileActivityAction)
 import react from "react" /* 19 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8589 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9288 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8605 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9304 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

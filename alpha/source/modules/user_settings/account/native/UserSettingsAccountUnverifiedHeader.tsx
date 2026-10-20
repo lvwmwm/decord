@@ -1,20 +1,20 @@
-// Module ID: 6963
-// Function ID: 6964
+// Module ID: 7041
+// Function ID: 7042
 // Name: UserSettingsAccountUnverifiedHeader
-// Dependencies: [19, 1392, 21, 5191, 587, 6475, 1128, 558, 576, 504, 5187, 6462, 2]
+// Dependencies: [19, 1392, 21, 4945, 587, 6869, 1128, 558, 576, 504, 5195, 6856, 2]
 
-// Module 6963 (UserSettingsAccountUnverifiedHeader)
+// Module 7041 (UserSettingsAccountUnverifiedHeader)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import Pressables from "Pressables" /* 6462 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6475 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import Pressables from "Pressables" /* 6856 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6869 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -145,7 +145,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   let tmp5 = null;
   if (null != tmp4) {
     const obj2 = { accessibilityRole: "button", style: tmp.accountWarning, onPress: handleOpenEmailVerification, children: items1 };
-    const PressableOpacity = tmp2(6462).PressableOpacity;
+    const PressableOpacity = tmp2(6856).PressableOpacity;
     const obj3 = { style: tmp.accountWarningText, variant: "text-xs/bold", color: "text-overlay-light", children: tmp4.title };
     items1 = [React3(Text_Text.Text, obj3), ];
     const obj4 = { style: tmp.accountWarningButton, variant: "text-xs/medium", color: "text-overlay-light", children: tmp4.button };

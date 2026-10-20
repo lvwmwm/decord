@@ -1,14 +1,14 @@
-// Module ID: 8482
-// Function ID: 8483
+// Module ID: 8498
+// Function ID: 8499
 // Name: ForumWarningIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8453, 4912, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8469, 5630, 2]
 
-// Module 8482 (ForumWarningIcon)
+// Module 8498 (ForumWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 8453 */;
+import BaseIconImage2 from "BaseIconImage" /* 5630 */;
+import AssetRegistry from "AssetRegistry" /* 8469 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumWarni
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4912).BaseIconImage;
+  const BaseIconImage = tmp(5630).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

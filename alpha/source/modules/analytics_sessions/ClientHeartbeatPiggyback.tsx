@@ -1,10 +1,10 @@
-// Module ID: 7457
-// Function ID: 7458
+// Module ID: 7524
+// Function ID: 7525
 // Name: ClientHeartbeatPiggyback
 // Dependencies: [2021, 2]
 // Exports: getClientHeartbeatPiggybackProperties
 
-// Module 7457 (ClientHeartbeatPiggyback)
+// Module 7524 (ClientHeartbeatPiggyback)
 import RunningGameStore from "RunningGameStore" /* 2021 */;
 import size from "module_2" /* 2 */;
 

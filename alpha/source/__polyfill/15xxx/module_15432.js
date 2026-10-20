@@ -1,369 +1,209 @@
 // Module ID: 15432
 // Function ID: 15433
-// Dependencies: [5, 17, 82, 15433, 15435, 15437, 15438, 15441, 15442, 15455, 15457, 15459, 15460, 15461, 15462, 15443]
+// Dependencies: [32, 1278, 15431]
 
 // Module 15432
-import ArgType2 from "ArgType" /* 15443 */;
-import _mod15462 from "module_15462" /* 15462 */;
-import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import react_native_mod from "react-native" /* 17 */;
-import get_mod from "module_82" /* 82 */;
-import getReactNativeVersion from "getReactNativeVersion" /* 15433 */;
-import getReactNativeDimensions from "getReactNativeDimensions" /* 15435 */;
-import _asyncToGenerator_mod2 from "_asyncToGenerator" /* 15437 */;
-import OverlayCreator from "OverlayCreator" /* 15438 */;
-import module_15441 from "module_15441" /* 15441 */;
-import module_15442 from "module_15442" /* 15442 */;
-import module_15455 from "module_15455" /* 15455 */;
-import module_15457 from "module_15457" /* 15457 */;
-import react_native_mod2 from "react-native" /* 15459 */;
-import ArgType from "module_15460" /* 15460 */;
-import getReactNativePlatformConstants from "getReactNativePlatformConstants" /* 15461 */;
+import Buffer from "Buffer" /* 1278 */;
+import _mod15431 from "module_15431" /* 15431 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-let c1, c3, c4;
-
-let forceTouch;
-let interfaceIdiom;
-let obj10;
-let obj12;
-let obj14;
-let obj16;
-let obj18;
-let obj20;
-let obj22;
-let obj24;
-let obj26;
-let obj28;
-let obj30;
-let obj32;
-let osRelease;
-let serial;
-let serverHost;
-let tmp13;
-let uiMode;
-let _asyncToGenerator = _asyncToGenerator_mod2;
-let react_native = react_native_mod2;
-let get = get_mod;
-if (!get) {
-  tmp13 = { default: get };
-  const obj9 = { default: get };
-} else {
-  tmp13 = get;
+function replaceByteInByteSequence(arr, arg1, arg2) {
+  let index = arr.indexOf(43);
+  if (index >= 0) {
+    do {
+      arr[index] = 32;
+      index = arr.indexOf(43, index + 1);
+    } while (index >= 0);
+  }
+  return arr;
 }
-get = tmp13;
-if (!getReactNativeVersion) {
-  obj10 = { default: getReactNativeVersion };
-  const obj11 = { default: getReactNativeVersion };
-} else {
-  obj10 = getReactNativeVersion;
+function percentEncode(arr) {
+  const str = arr.toString(16);
+  const formatted = str.toUpperCase();
+  let text = formatted;
+  if (1 === formatted.length) {
+    text = `0${arr}`;
+  }
+  return "%" + text;
 }
-if (!getReactNativeDimensions) {
-  obj12 = { default: getReactNativeDimensions };
-  const obj13 = { default: getReactNativeDimensions };
-} else {
-  obj12 = getReactNativeDimensions;
-}
-_asyncToGenerator = _asyncToGenerator_mod2;
-if (!_asyncToGenerator) {
-  obj14 = { default: _asyncToGenerator };
-  const obj15 = { default: _asyncToGenerator };
-} else {
-  obj14 = _asyncToGenerator;
-}
-if (!OverlayCreator) {
-  obj16 = { default: OverlayCreator };
-  const obj17 = { default: OverlayCreator };
-} else {
-  obj16 = OverlayCreator;
-}
-if (!module_15441) {
-  obj18 = { default: module_15441 };
-  const obj19 = { default: module_15441 };
-} else {
-  obj18 = module_15441;
-}
-if (!module_15442) {
-  obj20 = { default: module_15442 };
-  const obj21 = { default: module_15442 };
-} else {
-  obj20 = module_15442;
-}
-if (!module_15455) {
-  obj22 = { default: module_15455 };
-  const obj23 = { default: module_15455 };
-} else {
-  obj22 = module_15455;
-}
-if (!module_15457) {
-  obj24 = { default: module_15457 };
-  const obj25 = { default: module_15457 };
-} else {
-  obj24 = module_15457;
-}
-react_native = react_native_mod2;
-if (!react_native) {
-  obj26 = { default: react_native };
-  const obj27 = { default: react_native };
-} else {
-  obj26 = react_native;
-}
-if (!ArgType) {
-  obj28 = { default: ArgType };
-  const obj29 = { default: ArgType };
-} else {
-  obj28 = ArgType;
-}
-if (!getReactNativePlatformConstants) {
-  obj30 = { default: getReactNativePlatformConstants };
-  const obj31 = { default: getReactNativePlatformConstants };
-} else {
-  obj30 = getReactNativePlatformConstants;
-}
-let c15 = "@REACTOTRON/clientId";
-const defaultResult = obj30.default();
-const model = defaultResult.model;
-const systemName = defaultResult.systemName;
-const url = {
-  createSocket(url) {
-    const webSocket = new WebSocket(url);
-    return webSocket;
-  },
-  host: (function() {
-    try {
-      const _default = get.default;
-      const scriptURL = _default.getConstants().scriptURL;
-      if (typeof scriptURL !== "string") {
-        const _Error = Error;
-        const self = this;
-        const self2 = this;
-        const error = new Error("Invalid non-string URL");
-        throw error;
-      } else {
-        return _mod15462.getHostFromUrl(scriptURL);
-      }
-    } catch (tmp6) {
-      const _console = console;
-      const _HermesInternal = HermesInternal;
-      console.warn("getHost: \"" + tmp6.message + "\" for scriptURL - Falling back to " + "localhost");
-      return "localhost";
-    }
-  })("localhost"),
-  port: 9090,
-  name: "React Native App",
-  environment: "production",
-  client: obj32,
-  getClientId() {
-    return closure_14(...arguments);
-  },
-  setClientId(payload) {
-    return closure_13(...arguments);
-  },
-  proxyHack: true
-};
-({ osRelease, serverHost, forceTouch, interfaceIdiom, uiMode, serial } = defaultResult);
-obj32 = { reactotronLibraryName: "reactotron-react-native", reactotronLibraryVersion: "REACTOTRON_REACT_NATIVE_VERSION", platform: react_native.Platform.OS, platformVersion: react_native.Platform.Version, osRelease, model, serverHost, forceTouch, interfaceIdiom, systemName, uiMode, serial, reactNativeVersion: obj10.default() };
-const merged = Object.assign(obj12.default());
-let closure_14 = _asyncToGenerator(async (arg0, value) => {
-  let asyncStorageHandler;
-  let closure_1;
-  let closure_0 = arg0;
-  if (c4 === 2) {
-    c4 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp3 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj = { value, done: true };
-      return obj;
-    } else {
-      return { value: "IconComponent", done: null };
-    }
-  } else {
-    try {
-      let str2;
-      let tmp;
-      let screenWidth;
-      let screenHeight;
-      let screenScale;
-      let closure_5;
-      let closure_6;
-      c4 = 2;
-      if (0 === c3) {
-        if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          let closure_2 = tmp4;
-          str2 = closure_0;
-          if (closure_0 === undefined) {
-            str2 = "";
+function percentDecode(_Buffer) {
+  _Buffer = Buffer.Buffer;
+  const allocResult = _Buffer.alloc(_Buffer.byteLength);
+  let num = 0;
+  let num2 = 0;
+  let num3 = 0;
+  if (0 < _Buffer.length) {
+    while (true) {
+      if (37 === _Buffer[num]) {
+        let tmp3 = require;
+        let obj = _mod15431;
+        let sum = num + 1;
+        if (obj.isASCIIHex(_Buffer[sum])) {
+          let tmp3Result = tmp3(15431);
+          let sum1 = num + 2;
+          if (tmp3Result.isASCIIHex(_Buffer[sum1])) {
+            let sum2 = num2 + 1;
+            let _parseInt = parseInt;
+            let str = _Buffer.slice(sum, num + 3);
+            allocResult[num2] = parseInt(str.toString(), 16);
+            let tmp8 = sum1;
+            num = tmp8 + 1;
+            num2 = sum2;
+            num3 = sum2;
+            if (num >= _Buffer.length) {
+              break;
+            }
           }
-          tmp = undefined;
-          screenWidth = undefined;
-          screenHeight = undefined;
-          screenScale = undefined;
-          closure_5 = undefined;
-          closure_6 = undefined;
-          c3 = 1;
-          c4 = 1;
-          return { value: "Reflect", done: true };
         }
-      } else if (arg0 === 1) {
-        c4 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 3;
-        const obj3 = { value, done: true };
-        return obj3;
-      } else if (closure_130_18.asyncStorageHandler) {
-        c4 = 3;
-        const obj4 = { value: asyncStorageHandler.getItem(closure_130_15), done: true };
-        asyncStorageHandler = closure_130_18.asyncStorageHandler;
-        return obj4;
-      } else {
-        tmp = closure_130_4.default();
-        screenWidth = tmp.screenWidth;
-        screenHeight = tmp.screenHeight;
-        screenScale = tmp.screenScale;
-        const items = [screenWidth, screenHeight];
-        const sorted = items.sort();
-        closure_5 = sorted.join("-");
-        const Platform = closure_130_2.Platform;
-        const obj5 = { ios: closure_130_17, android: closure_130_16, default: "" };
-        closure_6 = Platform.select(obj5);
-        const items1 = [str2, closure_130_2.Platform.OS, closure_130_2.Platform.Version, closure_6, closure_5, screenScale];
-        const _Boolean = Boolean;
-        const found = items1.filter(Boolean);
-        c4 = 3;
-        const obj6 = { value: found.join("-"), done: true };
-        return obj6;
       }
-    } catch (tmp24) {
-      c4 = 3;
-      throw tmp24;
+      sum2 = num2 + 1;
+      allocResult[num2] = _Buffer[num];
+      tmp8 = num;
     }
   }
-});
-let closure_13 = _asyncToGenerator(async (arg0, value) => {
-  let asyncStorageHandler;
-  let closure_0;
-  if (c1 === 2) {
-    c1 = 3;
-    throw new TypeError("Generator functions may not be called on executing generators");
-  } else if (tmp2 === 3) {
-    if (arg0 === 1) {
-      throw value;
-    } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
-    } else {
-      return { value: "IconComponent", done: null };
-    }
-  } else {
-    try {
-      c1 = 2;
-      if (arg0 === 1) {
-        c1 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c1 = 3;
-        const obj3 = { value, done: true };
-        return obj3;
-      } else if (client.asyncStorageHandler) {
-        c1 = 3;
-        const obj = { value: asyncStorageHandler.setItem(c15, tmp3), done: true };
-        asyncStorageHandler = client.asyncStorageHandler;
-        return obj;
-      } else {
-        c1 = 3;
-        return { value: "IconComponent", done: null };
+  return allocResult.slice(0, num3);
+}
+function serializeUrlencodedByte(_Buffer) {
+  let str = "";
+  const iter = _Buffer[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    let str2 = "+";
+    if (32 !== nextResult) {
+      if (42 !== tmp2) {
+        if (45 !== tmp2) {
+          if (46 !== tmp2) {
+            if (tmp2 < 48) {
+              if (tmp2 < 65) {
+                let fromCodePointResult;
+                if (95 !== tmp2) {
+                  if (tmp2 < 97) {
+                    fromCodePointResult = percentEncode(tmp2);
+                  }
+                }
+                str2 = fromCodePointResult;
+              }
+            }
+          }
+        }
       }
-    } catch (tmp5) {
-      c1 = 3;
-      throw tmp5;
+      let _String = String;
+      fromCodePointResult = String.fromCodePoint(tmp2);
     }
+    str = str + str2;
+    continue;
   }
-});
-let items = [obj14.default(), obj20.default(), obj28.default(), obj18.default(), obj16.default(), obj22.default(), obj24.default(), obj26.default()];
-const client = ArgType2.createClient(url);
-client.useReactNative = () => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  if (false !== obj.errors) {
-    const errors = obj.errors;
-    let tmp3 = null;
-    const use = client.use;
-    const _default = obj20.default;
-    if (typeof errors === "object") {
-      tmp3 = errors;
+  return str;
+}
+let obj = {
+  percentEncode,
+  percentDecode,
+  parseUrlencoded(arg0) {
+    function parseUrlencoded(_Buffer) {
+      function strictlySplitByteSequence(arr, arg1) {
+        const items = [];
+        const index = arr.indexOf(38);
+        let index1 = index;
+        let num = 0;
+        let num2 = 0;
+        if (index >= 0) {
+          do {
+            arr = items.push(arr.slice(num, index1));
+            let sum = index1 + 1;
+            index1 = arr.indexOf(38, sum);
+            num = sum;
+            num2 = sum;
+          } while (index1 >= 0);
+        }
+        if (num2 !== arr.length) {
+          items.push(arr.slice(num2));
+        }
+        return items;
+      }
+      let items = [];
+      const tmp = strictlySplitByteSequence(_Buffer, 38);
+      const iter = tmp[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let arr3 = nextResult;
+        if (0 !== nextResult.length) {
+          let substr;
+          let substr1;
+          let index = arr3.indexOf(61);
+          let tmp23 = index;
+          if (index >= 0) {
+            substr = arr3.slice(0, tmp23);
+            substr1 = arr3.slice(tmp23 + 1);
+          } else {
+            substr = nextResult;
+            _Buffer = Buffer.Buffer;
+            substr1 = _Buffer.alloc(0);
+          }
+          let _Buffer2 = Buffer.Buffer;
+          let fromResult = _Buffer2.from(substr);
+          let tmp13 = replaceByteInByteSequence(fromResult, 43, 32);
+          let _Buffer3 = Buffer.Buffer;
+          let fromResult1 = _Buffer3.from(substr1);
+          let tmp17 = replaceByteInByteSequence(fromResult1, 43, 32);
+          let push = items.push;
+          let str = percentDecode(fromResult);
+          let items1 = [str.toString(), ];
+          let str2 = percentDecode(fromResult1);
+          items1[1] = str2.toString();
+          let arr = push(items1);
+        }
+        continue;
+      }
+      return items;
     }
-    use(_default(tmp3));
-  }
-  if (false !== obj.log) {
-    client.use(obj28.default());
-  }
-  if (false !== obj.editor) {
-    const editor = obj.editor;
-    let tmp10 = null;
-    const use2 = client.use;
-    const _default2 = obj18.default;
-    if (typeof editor === "object") {
-      tmp10 = editor;
+    let _Buffer = Buffer.Buffer;
+    return parseUrlencoded(_Buffer.from(arg0));
+  },
+  serializeUrlencoded(_list) {
+    let arr;
+    let tmp7;
+    let str = "utf-8";
+    if (undefined !== arg1) {
+      str = tmp;
     }
-    use2(_default2(tmp10));
-  }
-  if (false !== obj.overlay) {
-    client.use(obj16.default());
-  }
-  if (false !== obj.asyncStorage) {
-    const asyncStorage = obj.asyncStorage;
-    let tmp17 = null;
-    const use3 = client.use;
-    const _default3 = obj14.default;
-    if (typeof asyncStorage === "object") {
-      tmp17 = asyncStorage;
+    let str2 = "";
+    const entries = _list.entries();
+    const tmp3 = entries[Symbol.iterator]();
+    while (tmp3 !== undefined) {
+      let tmp6 = _slicedToArray(tmp4, 2);
+      [tmp7, arr] = tmp6;
+      let tmp8 = arr;
+      let tmp9 = serializeUrlencodedByte;
+      let tmp10 = require;
+      let _Buffer = Buffer.Buffer;
+      let tmp12 = serializeUrlencodedByte(_Buffer.from(arr[0]));
+      let name = arr[1];
+      let tmp13 = arr.length > 2;
+      if (tmp13) {
+        tmp13 = undefined !== tmp8[2];
+      }
+      if (tmp13) {
+        if ("hidden" === tmp8[2]) {
+          if ("_charset_" === tmp12) {
+            name = str;
+          }
+        }
+        if ("file" === tmp8[2]) {
+          name = name.name;
+        }
+      }
+      if (0 !== tmp7) {
+        str2 = `${str2}&`;
+      }
+      let _Buffer2 = tmp10(1278).Buffer;
+      let tmp9Result = tmp9(_Buffer2.from(name));
+      let _HermesInternal = HermesInternal;
+      str2 = str2 + "" + tmp12 + "=" + tmp9Result;
+      continue;
     }
-    use3(_default3(tmp17));
+    return str2;
   }
-  if (false !== obj.networking) {
-    const networking = obj.networking;
-    let tmp21 = null;
-    const use4 = client.use;
-    const _default4 = obj22.default;
-    if (typeof networking === "object") {
-      tmp21 = networking;
-    }
-    use4(_default4(tmp21));
-  }
-  if (false !== obj.storybook) {
-    client.use(obj24.default());
-  }
-  if (false !== obj.devTools) {
-    client.use(obj26.default());
-  }
-  return client;
 };
-client.setAsyncStorageHandler = (asyncStorageHandler) => {
-  client.asyncStorageHandler = asyncStorageHandler;
-  return client;
-};
-const asyncStorage_export = obj14.default;
-const networking_export = obj22.default;
 
-export { asyncStorage_export as asyncStorage };
-export const devTools = obj26.default;
-export { networking_export as networking };
-export const openInEditor = obj18.default;
-export const overlay = obj16.default;
-export const storybook = obj24.default;
-export const trackGlobalErrors = obj20.default;
-export const trackGlobalLogs = obj28.default;
-export const reactNativeCorePlugins = items;
-export default client;
+export default obj;

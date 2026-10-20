@@ -1,23 +1,23 @@
-// Module ID: 14060
-// Function ID: 14061
+// Module ID: 14093
+// Function ID: 14094
 // Name: UserProfileActivityBadges
-// Dependencies: [19, 17, 1087, 21, 5191, 11845, 7692, 10550, 8506, 10545, 10551, 9514, 558, 576, 14061, 14062, 587, 14063, 8544, 8489, 5187, 11194, 2]
+// Dependencies: [19, 17, 1087, 21, 4945, 11866, 7755, 10564, 8522, 10559, 10565, 9530, 558, 576, 14094, 14095, 587, 14096, 8560, 8505, 5195, 11209, 2]
 
-// Module 14060 (UserProfileActivityBadges)
+// Module 14093 (UserProfileActivityBadges)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7692 */;
-import AppsIcon2 from "AppsIcon" /* 8506 */;
-import utils from "utils" /* 8544 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 10550 */;
-import HourglassIcon from "HourglassIcon" /* 11845 */;
-import useTimestampTickedNow from "useTimestampTickedNow" /* 14061 */;
-import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 14062 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7755 */;
+import AppsIcon2 from "AppsIcon" /* 8522 */;
+import utils from "utils" /* 8560 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10564 */;
+import HourglassIcon from "HourglassIcon" /* 11866 */;
+import useTimestampTickedNow from "useTimestampTickedNow" /* 14094 */;
+import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 14095 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let metroRequire;
 let tmp;
 let tmp5;
 const nativeDefault = tmp5(587);
-const Badges = tmp(14063);
+const Badges = tmp(14096);
 function getTimestampBadgeIcon(activity, arg1) {
   let AppsIcon;
   let flag = arg1;
@@ -40,11 +40,11 @@ function getTimestampBadgeIcon(activity, arg1) {
       const obj = conjurePresenceActivity;
       if (!obj.isConjurePresenceActivity(activity)) {
         if (activity.type === ActivityTypes.WATCHING) {
-          AppsIcon = tmp4(10545).TvIcon;
+          AppsIcon = tmp4(10559).TvIcon;
         } else if (activity.type === tmp5.LISTENING) {
-          AppsIcon = tmp4(10551).MusicIcon;
+          AppsIcon = tmp4(10565).MusicIcon;
         } else {
-          AppsIcon = tmp4(9514).GameControllerIcon;
+          AppsIcon = tmp4(9530).GameControllerIcon;
         }
       }
     }
@@ -228,7 +228,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PartyBadge(activ
           const _Symbol = Symbol;
           if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
             const obj2 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-            const GroupIcon = tmp(8489).GroupIcon;
+            const GroupIcon = tmp(8505).GroupIcon;
             const tmp13 = hasOwnProperty(GroupIcon, obj2);
             cResult[3] = tmp13;
             tmp11 = tmp13;
@@ -282,7 +282,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PartyBadge(activ
       if (null != richGameStateBadgeText) {
         const obj = { style: tmp.container, children: items };
         const obj2 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-        const GroupIcon = tmp9(8489).GroupIcon;
+        const GroupIcon = tmp9(8505).GroupIcon;
         items = [hasOwnProperty(GroupIcon, obj2), ];
         const obj3 = { variant: "text-sm/medium", color: "text-muted", children: richGameStateBadgeText };
         items[1] = hasOwnProperty(Text_Text.Text, obj3);
@@ -322,7 +322,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EpisodeBadge
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-      const TopicsIcon = tmp(11194).TopicsIcon;
+      const TopicsIcon = tmp(11209).TopicsIcon;
       const tmp13 = hasOwnProperty(TopicsIcon, obj2);
       cResult[2] = tmp13;
       tmp10 = tmp13;
@@ -370,7 +370,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EpisodeBadge
   if (null != episodeBadgeText) {
     const obj = { style: tmp.container, children: items };
     const obj2 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-    const TopicsIcon = tmp2(11194).TopicsIcon;
+    const TopicsIcon = tmp2(11209).TopicsIcon;
     items = [hasOwnProperty(TopicsIcon, obj2), ];
     const obj3 = { variant: "text-sm/medium", color: "text-muted", children: episodeBadgeText };
     items[1] = hasOwnProperty(Text_Text.Text, obj3);

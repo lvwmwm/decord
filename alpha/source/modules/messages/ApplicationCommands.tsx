@@ -1,10 +1,10 @@
-// Module ID: 8308
-// Function ID: 8309
+// Module ID: 8324
+// Function ID: 8325
 // Name: _slicedToArray
 // Dependencies: [32, 2]
 // Exports: getApplicationCommand
 
-// Module 8308 (_slicedToArray)
+// Module 8324 (_slicedToArray)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

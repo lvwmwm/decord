@@ -1,16 +1,16 @@
-// Module ID: 9166
-// Function ID: 9167
+// Module ID: 9182
+// Function ID: 9183
 // Name: RPCServer
-// Dependencies: [5, 5895, 1087, 12, 9167, 9169, 9171, 1267, 38, 9172, 9174, 2063, 1104, 2]
+// Dependencies: [5, 6332, 1087, 12, 9183, 9185, 9187, 1267, 38, 9188, 9190, 4795, 1104, 2]
 
-// Module 9166 (RPCServer)
+// Module 9182 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import Constants2 from "Constants" /* 5895 */;
-import transformUserDefault from "transformUser" /* 9167 */;
-import RPCErrorDefault from "RPCError" /* 9169 */;
-import validateScopeDefault from "validateScope" /* 9171 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 9174 */;
+import Constants2 from "Constants" /* 6332 */;
+import transformUserDefault from "transformUser" /* 9183 */;
+import RPCErrorDefault from "RPCError" /* 9185 */;
+import validateScopeDefault from "validateScope" /* 9187 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 9190 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -82,7 +82,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f101260 = (result) => {
+    const f101695 = (result) => {
       let closure_0 = self(function*(arg0, value) {
         let closure_1;
         closure_0 = arg0;
@@ -202,8 +202,8 @@ class RPCServer {
       const tmp21 = new RPCErrorDefault(obj4, "Payload requires a nonce");
       throw tmp21;
     });
-    const then = promise.then(f101260).then;
-    promise.then(f101260);
+    const then = promise.then(f101695).then;
+    promise.then(f101695);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;

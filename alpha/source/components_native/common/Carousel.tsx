@@ -1,16 +1,19 @@
-// Module ID: 9804
-// Function ID: 9805
+// Module ID: 9818
+// Function ID: 9819
 // Name: Carousel
-// Dependencies: [19, 17, 21, 5191, 587, 4922, 1202, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 4999, 1202, 558, 576, 5258, 2]
 
-// Module 9804 (Carousel)
+// Module 9818 (Carousel)
+import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import native2 from "native" /* 4922 */;
+import native2 from "native" /* 4999 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5258 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -57,6 +60,52 @@ class PageIndicator extends Component {
 const prototype = PageIndicator.prototype;
 PageIndicator.contextType = native2.ThemeContext;
 PageIndicator.defaultProps = { indicatorSpace: 10, indicatorSize: 20 };
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function CarouselScrollView(arg0) {
+  let first;
+  let tmp6;
+  const obj = react2;
+  const cResult = obj.c(6);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj2 = { disallowInterruption: true };
+    cResult[0] = obj2;
+    first = obj2;
+  } else {
+    first = cResult[0];
+  }
+  const tmpResult = LegacyBaseButton;
+  const nativeGesture = tmpResult.useNativeGesture(first);
+  if (cResult[1] !== arg0) {
+    const obj3 = {};
+    const merged = Object.assign(arg0);
+    const tmp12 = React3(_false, obj3);
+    cResult[1] = arg0;
+    cResult[2] = tmp12;
+    tmp6 = tmp12;
+  } else {
+    tmp6 = cResult[2];
+  }
+  if (cResult[3] === nativeGesture) {
+    let tmp13;
+    if (cResult[4] === tmp6) {
+      tmp13 = cResult[5];
+    }
+    return tmp13;
+  }
+  const tmp14 = React3(LegacyBaseButton.GestureDetector, { gesture: nativeGesture, children: tmp6 });
+  cResult[3] = nativeGesture;
+  cResult[4] = tmp6;
+  cResult[5] = tmp14;
+  tmp13 = tmp14;
+}) : (function CarouselScrollView(arg0) {
+  let obj3;
+  const obj = LegacyBaseButton;
+  const nativeGesture = obj.useNativeGesture({ disallowInterruption: true });
+  const obj2 = { gesture: nativeGesture, children: React3(_false, obj3) };
+  obj3 = {};
+  const GestureDetector = LegacyBaseButton.GestureDetector;
+  const merged = Object.assign(arg0);
+  return React3(GestureDetector, obj2);
+});
 const Component2 = react.Component;
 class Carousel extends Component2 {
   constructor() {
@@ -104,7 +153,7 @@ class Carousel extends Component2 {
       },
       children: self.props.children
     };
-    items1 = [React3(_false, obj3), tmp3];
+    items1 = [React3(closure_8, obj3), tmp3];
     return hasOwnProperty(React2, obj2);
   }
 }

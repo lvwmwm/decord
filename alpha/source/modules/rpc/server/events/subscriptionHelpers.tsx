@@ -1,19 +1,19 @@
-// Module ID: 15536
-// Function ID: 15537
+// Module ID: 15564
+// Function ID: 15565
 // Name: subscriptionHelpers
-// Dependencies: [2067, 15489, 7656, 1087, 2026, 9162, 15492, 8600, 15493, 7678, 2]
+// Dependencies: [4799, 15517, 7719, 1087, 2026, 9178, 15520, 8616, 15521, 7741, 2]
 // Exports: getInitialSubscriptionPayload
 
-// Module 15536 (subscriptionHelpers)
+// Module 15564 (subscriptionHelpers)
 import Constants2 from "Constants" /* 1087 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7678 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8600 */;
-import getSocketFrameDefault from "getSocketFrame" /* 9162 */;
-import useThermalState from "useThermalState" /* 15492 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15493 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 15489 */;
-import QuestStore from "QuestStore" /* 7656 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7741 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8616 */;
+import getSocketFrameDefault from "getSocketFrame" /* 9178 */;
+import useThermalState from "useThermalState" /* 15520 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15521 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 15517 */;
+import QuestStore from "QuestStore" /* 7719 */;
 import Constants from "Constants" /* 2026 */;
 import size from "module_2" /* 2 */;
 

@@ -1,22 +1,22 @@
-// Module ID: 11318
-// Function ID: 11319
+// Module ID: 11332
+// Function ID: 11333
 // Name: handlePressJoinActivity
-// Dependencies: [5, 2024, 2068, 2090, 4845, 1392, 5212, 2067, 11315, 11273, 5399, 1128, 6357, 6180, 11247, 11223, 2]
+// Dependencies: [5, 2024, 4800, 4822, 4880, 1392, 5591, 4799, 11329, 11287, 5863, 1128, 6757, 6610, 11261, 11238, 2]
 // Exports: maybeJoinEmbeddedActivity
 
-// Module 11318 (handlePressJoinActivity)
+// Module 11332 (handlePressJoinActivity)
 import intl11 from "intl" /* 1128 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
-import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 11273 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11315 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5863 */;
+import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 11287 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11329 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import GuildStore from "GuildStore" /* 4822 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
 import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5212 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import VoiceStateStore from "VoiceStateStore" /* 5591 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
 import size from "module_2" /* 2 */;
 
 let application, currentUser;
@@ -220,7 +220,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
         });
         return obj(...arguments);
       };
-      return "Reflect";
+      return "test";
     })();
     iter.next();
     return iter;

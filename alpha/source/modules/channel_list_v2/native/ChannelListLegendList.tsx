@@ -1,11 +1,11 @@
-// Module ID: 17385
-// Function ID: 17386
+// Module ID: 17414
+// Function ID: 17415
 // Name: ChannelListLegendList
-// Dependencies: [19, 21, 17386, 4945, 7038, 13648, 2]
+// Dependencies: [19, 21, 17415, 5014, 7115, 13682, 2]
 
-// Module 17385 (ChannelListLegendList)
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import FastList from "FastList" /* 7038 */;
+// Module 17414 (ChannelListLegendList)
+import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
+import FastList from "FastList" /* 7115 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ let hasOwnProperty;
 let metroRequire;
 ({ Fragment: closure_4, jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = [];
-let closure_8 = { item: "emoji", positionPercentage: false };
+let closure_8 = { item: "duration", positionPercentage: false };
 let closure_9 = { zIndex: 5 };
 let closure_10 = { code: "function ChannelListLegendListTsx1(event){const{scrollPosValue,onScrollWorklet,onScroll,runOnJS}=this.__closure;scrollPosValue.set(event.contentOffset.y);onScrollWorklet(event.contentOffset.y,event.contentSize.height,event.layoutMeasurement.height);if(onScroll!=null){runOnJS(onScroll)();}}" };
 const memoResult = react.memo(function ChannelListLegendList(listViewportHeight) {

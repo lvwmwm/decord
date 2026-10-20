@@ -1,24 +1,24 @@
-// Module ID: 9292
-// Function ID: 9293
+// Module ID: 9308
+// Function ID: 9309
 // Name: BundleSampleV2
-// Dependencies: [19, 17, 9293, 21, 558, 576, 5128, 5191, 587, 38, 1995, 1992, 9294, 9305, 9312, 1202, 2]
+// Dependencies: [19, 17, 9309, 21, 558, 576, 5631, 4945, 587, 38, 1995, 1992, 9310, 9321, 9328, 1202, 2]
 
-// Module 9292 (BundleSampleV2)
+// Module 9308 (BundleSampleV2)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils from "utils" /* 1992 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9293 */;
-import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9294 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9305 */;
-import NameplateDummyUserPreview2 from "NameplateDummyUserPreview" /* 9312 */;
+import FastImageDefault from "FastImage" /* 5631 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9309 */;
+import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9310 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9321 */;
+import NameplateDummyUserPreview2 from "NameplateDummyUserPreview" /* 9328 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -363,7 +363,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Bundle
             if (null != tmp5) {
               const obj3 = { style: tmp4.nameplate, children: metroRequire(NameplateDummyUserPreview, obj4) };
               obj4 = { width: BUNDLE_PREVIEW_CONFIG[str].nameplatePreviewWidth, avatarSize: XSMALL_20, nameplate: tmp5 };
-              NameplateDummyUserPreview = tmp(9312).NameplateDummyUserPreview;
+              NameplateDummyUserPreview = tmp(9328).NameplateDummyUserPreview;
               const tmp26 = React3;
               if ("large" === str) {
                 XSMALL_20 = tmp(1202).AvatarSizes.NORMAL;

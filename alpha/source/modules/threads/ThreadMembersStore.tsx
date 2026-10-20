@@ -1,14 +1,14 @@
-// Module ID: 8174
-// Function ID: 8175
+// Module ID: 8236
+// Function ID: 8237
 // Name: ThreadMembersStore
-// Dependencies: [2072, 2068, 12, 504, 584, 2]
+// Dependencies: [4804, 4800, 12, 504, 584, 2]
 
-// Module 8174 (ThreadMembersStore)
+// Module 8236 (ThreadMembersStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelRecord from "ChannelRecord" /* 2072 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import ChannelRecord from "ChannelRecord" /* 4804 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
 import size from "module_2" /* 2 */;
 
 let thread;

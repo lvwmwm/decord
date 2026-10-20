@@ -1,18 +1,18 @@
-// Module ID: 15504
-// Function ID: 15505
+// Module ID: 15532
+// Function ID: 15533
 // Name: definitions
-// Dependencies: [1098, 2027, 11332, 1108, 6297, 8731, 15505, 15506, 10553, 15507, 2]
+// Dependencies: [1098, 2027, 11349, 1108, 5587, 8747, 15533, 15534, 10567, 15535, 2]
 
-// Module 15504 (definitions)
+// Module 15532 (definitions)
 import ChannelTypes from "ChannelTypes" /* 1108 */;
 import Constants2 from "Constants" /* 2027 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 6297 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8731 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 10553 */;
-import ActivityPlatform from "ActivityPlatform" /* 11332 */;
-import SKUTypes from "SKUTypes" /* 15505 */;
-import helpers from "helpers" /* 15506 */;
-import contextMenuIcons from "contextMenuIcons" /* 15507 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5587 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8747 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 10567 */;
+import ActivityPlatform from "ActivityPlatform" /* 11349 */;
+import SKUTypes from "SKUTypes" /* 15533 */;
+import helpers from "helpers" /* 15534 */;
+import contextMenuIcons from "contextMenuIcons" /* 15535 */;
 import Constants from "Constants" /* 1098 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -1901,7 +1901,7 @@ const obj35 = {
     minResult = stringResult1.min(0);
     return obj;
   },
-  response: "Reflect"
+  response: "test"
 };
 const obj36 = {
   embeddedAppSDK: true,
@@ -2019,6 +2019,21 @@ const obj42 = {
   }
 };
 const obj43 = {
+  request(string) {
+    let validResult;
+    const obj = { type: validResult.required() };
+    const stringResult = string.string();
+    validResult = stringResult.valid("auto", "playback", "transient", "transient-solo", "ambient", "play-and-record");
+    return obj;
+  },
+  response(boolean) {
+    let booleanResult;
+    const obj = { success: booleanResult.required() };
+    booleanResult = boolean.boolean();
+    return obj;
+  }
+};
+const obj44 = {
   embeddedAppSDK: true,
   request(string) {
     let maxResult;
@@ -2030,9 +2045,9 @@ const obj43 = {
     maxResult1 = stringResult1.max(1000);
     return obj;
   },
-  response: "Reflect"
+  response: "test"
 };
-const obj44 = {
+const obj45 = {
   embeddedAppSDK: true,
   request: "Array",
   response(boolean) {
@@ -2042,7 +2057,7 @@ const obj44 = {
     return obj;
   }
 };
-const obj45 = {
+const obj46 = {
   embeddedAppSDK: true,
   request: "Array",
   response(boolean) {
@@ -2052,7 +2067,7 @@ const obj45 = {
     return obj;
   }
 };
-const obj46 = {
+const obj47 = {
   embeddedAppSDK: true,
   request: "Array",
   response(string) {
@@ -2062,7 +2077,7 @@ const obj46 = {
     return obj;
   }
 };
-const obj47 = {
+const obj48 = {
   embeddedAppSDK: true,
   request(number) {
     let obj2;
@@ -2074,9 +2089,9 @@ const obj47 = {
     obj4 = joiEnum(number, "OrientationLockState", { nullable: true });
     return obj;
   },
-  response: "Reflect"
+  response: "test"
 };
-const obj48 = {
+const obj49 = {
   embeddedAppSDK: true,
   request(boolean) {
     let booleanResult;
@@ -2091,7 +2106,7 @@ const obj48 = {
     return obj;
   }
 };
-const obj49 = {
+const obj50 = {
   embeddedAppSDK: true,
   request(string) {
     let maxResult;
@@ -2110,7 +2125,7 @@ const obj49 = {
     return objectResult.default({ opened: null });
   }
 };
-const obj50 = {
+const obj51 = {
   embeddedAppSDK: true,
   request: "Array",
   response(string) {
@@ -2122,7 +2137,7 @@ const obj50 = {
     return obj;
   }
 };
-const obj51 = {
+const obj52 = {
   embeddedAppSDK: true,
   request: "Array",
   response(array) {
@@ -2133,7 +2148,7 @@ const obj51 = {
     return obj;
   }
 };
-const obj52 = {
+const obj53 = {
   embeddedAppSDK: true,
   request: "Array",
   response(array) {
@@ -2144,7 +2159,7 @@ const obj52 = {
     return obj;
   }
 };
-const obj53 = {
+const obj54 = {
   embeddedAppSDK: true,
   request(string) {
     let numberResult;
@@ -2161,7 +2176,7 @@ const obj53 = {
     return itemsResult.allow(null);
   }
 };
-const obj54 = {
+const obj55 = {
   embeddedAppSDK: true,
   request(string) {
     let requiredResult;
@@ -2174,7 +2189,7 @@ const obj54 = {
     return Channel(arg0);
   }
 };
-const obj55 = {
+const obj56 = {
   embeddedAppSDK: true,
   request(string) {
     let optionalResult;
@@ -2203,14 +2218,14 @@ const obj55 = {
     return obj;
   }
 };
-const obj56 = {
+const obj57 = {
   request: "Array",
   response(arg0) {
     const obj = Channel(arg0);
     return obj.allow(null);
   }
 };
-const obj57 = {
+const obj58 = {
   request(string) {
     let booleanResult;
     let booleanResult1;
@@ -2232,7 +2247,7 @@ const obj57 = {
     return obj.allow(null);
   }
 };
-const obj58 = {
+const obj59 = {
   request(string) {
     let maxResult;
     let optionalResult;
@@ -2250,7 +2265,7 @@ const obj58 = {
     return obj.allow(null);
   }
 };
-const obj59 = {
+const obj60 = {
   request(string) {
     let allowResult1;
     let booleanResult;
@@ -2318,7 +2333,7 @@ const obj59 = {
     return obj;
   }
 };
-const obj60 = {
+const obj61 = {
   embeddedAppSDK: true,
   request(string) {
     let maxResult;
@@ -2347,7 +2362,7 @@ const obj60 = {
     return obj;
   }
 };
-const obj61 = {
+const obj62 = {
   request: "Array",
   response(array) {
     let allowResult;
@@ -2368,7 +2383,7 @@ const obj61 = {
     return obj;
   }
 };
-const obj62 = {
+const obj63 = {
   embeddedAppSDK: true,
   request(string) {
     let _try2Result;
@@ -2420,7 +2435,7 @@ const obj62 = {
     return obj;
   }
 };
-const obj63 = {
+const obj64 = {
   embeddedAppSDK: true,
   request(number) {
     let NAME;
@@ -2584,5 +2599,5 @@ let size = size_mod;
 const result = size.fileFinishedImporting("../discord_common/js/packages/rpc-schema/definitions.tsx");
 
 export { RPCEnums };
-export const RPCCommandSchemas = { [helpers.RPCCommand.INITIATE_IMAGE_UPLOAD]: obj10, [helpers.RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj11, [helpers.RPCCommand.AUTHENTICATE]: obj12, [helpers.RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj13, [helpers.RPCCommand.RELAUNCH_FRAME]: obj14, [helpers.RPCCommand.GET_VOICE_CAPABILITIES]: obj15, [helpers.RPCCommand.GET_VOICE_SESSION_PARTICIPANTS]: obj16, [helpers.RPCCommand.START_VOICE_SESSION]: obj17, [helpers.RPCCommand.UPDATE_VOICE_SPATIAL]: obj18, [helpers.RPCCommand.SET_VOICE_SPATIAL_ACOUSTICS]: obj19, [helpers.RPCCommand.ENABLE_VOICE_SPATIAL]: obj7, [helpers.RPCCommand.DISABLE_VOICE_SPATIAL]: obj7, [helpers.RPCCommand.STOP_VOICE_SESSION]: obj7, [helpers.RPCCommand.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES]: obj20, [helpers.RPCCommand.START_APPLICATION_STREAMING_VIEW]: obj9, [helpers.RPCCommand.SUSPEND_APPLICATION_STREAMING_VIEW]: obj7, [helpers.RPCCommand.RESUME_APPLICATION_STREAMING_VIEW]: obj7, [helpers.RPCCommand.SET_APPLICATION_STREAMING_VIEW_FIT]: obj8, [helpers.RPCCommand.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD]: obj7, [helpers.RPCCommand.STOP_APPLICATION_STREAMING_VIEW]: obj7, [helpers.RPCCommand.GET_CAMERA_VIEW_CAPABILITIES]: obj21, [helpers.RPCCommand.START_CAMERA_VIEW]: obj9, [helpers.RPCCommand.SUSPEND_CAMERA_VIEW]: obj7, [helpers.RPCCommand.RESUME_CAMERA_VIEW]: obj7, [helpers.RPCCommand.SET_CAMERA_VIEW_FIT]: obj8, [helpers.RPCCommand.STOP_CAMERA_VIEW]: obj7, [helpers.RPCCommand.SHARE_INTERACTION]: obj22, [helpers.RPCCommand.SHARE_LINK]: obj23, [helpers.RPCCommand.SHARE_CONTENT]: obj24, [helpers.RPCCommand.OPEN_CONTEXT_MENU]: obj25, [helpers.RPCCommand.OPEN_USER_POPOUT]: obj26, [helpers.RPCCommand.OPEN_MEDIA_VIEWER]: obj27, [helpers.RPCCommand.OPEN_USER_PROFILE]: obj28, [helpers.RPCCommand.OPEN_GAME_PROFILE]: obj29, [helpers.RPCCommand.SHOW_TOOLTIP]: obj30, [helpers.RPCCommand.HIDE_TOOLTIP]: obj31, [helpers.RPCCommand.SHOW_TOAST]: obj32, [helpers.RPCCommand.SHOW_CONFIRM_MODAL]: obj33, [helpers.RPCCommand.GET_RELATIONSHIPS]: obj34, [helpers.RPCCommand.INVITE_USER_EMBEDDED]: obj35, [helpers.RPCCommand.GET_CONTEXT]: obj36, [helpers.RPCCommand.GET_USER]: obj37, [helpers.RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: obj38, [helpers.RPCCommand.QUEST_START_TIMER]: obj39, [helpers.RPCCommand.GET_QUEST]: obj40, [helpers.RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj41, [helpers.RPCCommand.SET_RUNS_IN_BACKGROUND]: obj42, [helpers.RPCCommand.CAPTURE_LOG]: obj43, [helpers.RPCCommand.ENCOURAGE_HW_ACCELERATION]: obj44, [helpers.RPCCommand.GET_PLATFORM_BEHAVIORS]: obj45, [helpers.RPCCommand.USER_SETTINGS_GET_LOCALE]: obj46, [helpers.RPCCommand.SET_ORIENTATION_LOCK_STATE]: obj47, [helpers.RPCCommand.SET_CONFIG]: obj48, [helpers.RPCCommand.OPEN_INVITE_DIALOG]: { embeddedAppSDK: true, request: "context", response: "add" }, [helpers.RPCCommand.OPEN_EXTERNAL_LINK]: obj49, [helpers.RPCCommand.GET_CHANNEL_PERMISSIONS]: obj50, [helpers.RPCCommand.GET_SKUS_EMBEDDED]: obj51, [helpers.RPCCommand.GET_ENTITLEMENTS_EMBEDDED]: obj52, [helpers.RPCCommand.START_PURCHASE]: obj53, [helpers.RPCCommand.GET_CHANNEL]: obj54, [helpers.RPCCommand.GET_CHANNELS]: obj55, [helpers.RPCCommand.GET_SELECTED_VOICE_CHANNEL]: obj56, [helpers.RPCCommand.SELECT_VOICE_CHANNEL]: obj57, [helpers.RPCCommand.SELECT_TEXT_CHANNEL]: obj58, [helpers.RPCCommand.CREATE_CHANNEL_INVITE]: obj59, [helpers.RPCCommand.GET_GUILD]: obj60, [helpers.RPCCommand.GET_GUILDS]: obj61, [helpers.RPCCommand.AUTHORIZE]: obj62, [helpers.RPCCommand.SET_ACTIVITY]: obj63 };
+export const RPCCommandSchemas = { [helpers.RPCCommand.INITIATE_IMAGE_UPLOAD]: obj10, [helpers.RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj11, [helpers.RPCCommand.AUTHENTICATE]: obj12, [helpers.RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj13, [helpers.RPCCommand.RELAUNCH_FRAME]: obj14, [helpers.RPCCommand.GET_VOICE_CAPABILITIES]: obj15, [helpers.RPCCommand.GET_VOICE_SESSION_PARTICIPANTS]: obj16, [helpers.RPCCommand.START_VOICE_SESSION]: obj17, [helpers.RPCCommand.UPDATE_VOICE_SPATIAL]: obj18, [helpers.RPCCommand.SET_VOICE_SPATIAL_ACOUSTICS]: obj19, [helpers.RPCCommand.ENABLE_VOICE_SPATIAL]: obj7, [helpers.RPCCommand.DISABLE_VOICE_SPATIAL]: obj7, [helpers.RPCCommand.STOP_VOICE_SESSION]: obj7, [helpers.RPCCommand.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES]: obj20, [helpers.RPCCommand.START_APPLICATION_STREAMING_VIEW]: obj9, [helpers.RPCCommand.SUSPEND_APPLICATION_STREAMING_VIEW]: obj7, [helpers.RPCCommand.RESUME_APPLICATION_STREAMING_VIEW]: obj7, [helpers.RPCCommand.SET_APPLICATION_STREAMING_VIEW_FIT]: obj8, [helpers.RPCCommand.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD]: obj7, [helpers.RPCCommand.STOP_APPLICATION_STREAMING_VIEW]: obj7, [helpers.RPCCommand.GET_CAMERA_VIEW_CAPABILITIES]: obj21, [helpers.RPCCommand.START_CAMERA_VIEW]: obj9, [helpers.RPCCommand.SUSPEND_CAMERA_VIEW]: obj7, [helpers.RPCCommand.RESUME_CAMERA_VIEW]: obj7, [helpers.RPCCommand.SET_CAMERA_VIEW_FIT]: obj8, [helpers.RPCCommand.STOP_CAMERA_VIEW]: obj7, [helpers.RPCCommand.SHARE_INTERACTION]: obj22, [helpers.RPCCommand.SHARE_LINK]: obj23, [helpers.RPCCommand.SHARE_CONTENT]: obj24, [helpers.RPCCommand.OPEN_CONTEXT_MENU]: obj25, [helpers.RPCCommand.OPEN_USER_POPOUT]: obj26, [helpers.RPCCommand.OPEN_MEDIA_VIEWER]: obj27, [helpers.RPCCommand.OPEN_USER_PROFILE]: obj28, [helpers.RPCCommand.OPEN_GAME_PROFILE]: obj29, [helpers.RPCCommand.SHOW_TOOLTIP]: obj30, [helpers.RPCCommand.HIDE_TOOLTIP]: obj31, [helpers.RPCCommand.SHOW_TOAST]: obj32, [helpers.RPCCommand.SHOW_CONFIRM_MODAL]: obj33, [helpers.RPCCommand.GET_RELATIONSHIPS]: obj34, [helpers.RPCCommand.INVITE_USER_EMBEDDED]: obj35, [helpers.RPCCommand.GET_CONTEXT]: obj36, [helpers.RPCCommand.GET_USER]: obj37, [helpers.RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: obj38, [helpers.RPCCommand.QUEST_START_TIMER]: obj39, [helpers.RPCCommand.GET_QUEST]: obj40, [helpers.RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj41, [helpers.RPCCommand.SET_RUNS_IN_BACKGROUND]: obj42, [helpers.RPCCommand.SET_AUDIO_SESSION_TYPE]: obj43, [helpers.RPCCommand.CAPTURE_LOG]: obj44, [helpers.RPCCommand.ENCOURAGE_HW_ACCELERATION]: obj45, [helpers.RPCCommand.GET_PLATFORM_BEHAVIORS]: obj46, [helpers.RPCCommand.USER_SETTINGS_GET_LOCALE]: obj47, [helpers.RPCCommand.SET_ORIENTATION_LOCK_STATE]: obj48, [helpers.RPCCommand.SET_CONFIG]: obj49, [helpers.RPCCommand.OPEN_INVITE_DIALOG]: { embeddedAppSDK: true, request: "color", response: "next" }, [helpers.RPCCommand.OPEN_EXTERNAL_LINK]: obj50, [helpers.RPCCommand.GET_CHANNEL_PERMISSIONS]: obj51, [helpers.RPCCommand.GET_SKUS_EMBEDDED]: obj52, [helpers.RPCCommand.GET_ENTITLEMENTS_EMBEDDED]: obj53, [helpers.RPCCommand.START_PURCHASE]: obj54, [helpers.RPCCommand.GET_CHANNEL]: obj55, [helpers.RPCCommand.GET_CHANNELS]: obj56, [helpers.RPCCommand.GET_SELECTED_VOICE_CHANNEL]: obj57, [helpers.RPCCommand.SELECT_VOICE_CHANNEL]: obj58, [helpers.RPCCommand.SELECT_TEXT_CHANNEL]: obj59, [helpers.RPCCommand.CREATE_CHANNEL_INVITE]: obj60, [helpers.RPCCommand.GET_GUILD]: obj61, [helpers.RPCCommand.GET_GUILDS]: obj62, [helpers.RPCCommand.AUTHORIZE]: obj63, [helpers.RPCCommand.SET_ACTIVITY]: obj64 };
 export const RPCNamedSchemas = items;

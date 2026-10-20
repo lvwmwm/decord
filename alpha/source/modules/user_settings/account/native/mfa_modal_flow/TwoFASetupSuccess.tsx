@@ -1,19 +1,19 @@
-// Module ID: 15811
-// Function ID: 15812
+// Module ID: 15840
+// Function ID: 15841
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 32, 19, 17, 21, 5191, 587, 558, 576, 6195, 1128, 15800, 6908, 5128, 15812, 5187, 1202, 5479, 15801, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4945, 587, 558, 576, 6625, 1128, 15829, 6990, 5631, 15841, 5195, 1202, 5205, 15830, 2]
 
-// Module 15811 (TwoFASetupSuccess)
+// Module 15840 (TwoFASetupSuccess)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 6908 */;
+import FastImageDefault from "FastImage" /* 5631 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 6990 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -28,10 +28,10 @@ let size;
 let tmp;
 const intl5 = tmp(1128);
 const native = tmp(1202);
-const Text_Text = tmp(5187);
-const components_Button_Button = tmp(5479);
-const TwoFASetupModal = tmp(15801);
-const AssetRegistry = tmp(15812);
+const Text_Text = tmp(5195);
+const components_Button_Button = tmp(5205);
+const TwoFASetupModal = tmp(15830);
+const AssetRegistry = tmp(15841);
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
@@ -391,7 +391,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoFASetupSu
         }
         await "IconComponent";
         ({ ticket: c0, credential: c1 } = closure_0);
-        return "Reflect";
+        return "test";
       });
       return obj(...arguments);
     };

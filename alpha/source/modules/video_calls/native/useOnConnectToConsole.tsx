@@ -1,14 +1,14 @@
-// Module ID: 13959
-// Function ID: 13960
+// Module ID: 13992
+// Function ID: 13993
 // Name: useOnConnectToConsole
-// Dependencies: [19, 1087, 5033, 2052, 9508, 13854, 11498, 558, 576, 2]
+// Dependencies: [19, 1087, 4970, 4784, 9524, 13888, 11519, 558, 576, 2]
 // Exports: onConnectToConsole
 
-// Module 13959 (useOnConnectToConsole)
-import dismissible_content from "dismissible_content" /* 2052 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9508 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 13854 */;
+// Module 13992 (useOnConnectToConsole)
+import dismissible_content from "dismissible_content" /* 4784 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4970 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9524 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 13888 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -20,7 +20,7 @@ let _require;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const beginConsoleTransfer = tmp(11498);
+const beginConsoleTransfer = tmp(11519);
 ({ AnalyticsLocations: closure_4, PlatformTypes: hasOwnProperty } = Constants);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnConnectToConsole(arg0, arg1) {
   let closure_0;

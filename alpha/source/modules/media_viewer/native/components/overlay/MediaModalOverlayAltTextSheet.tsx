@@ -1,19 +1,19 @@
-// Module ID: 11108
-// Function ID: 11109
+// Module ID: 11123
+// Function ID: 11124
 // Name: MediaModalOverlayAltTextSheet
-// Dependencies: [19, 21, 5191, 587, 558, 576, 11109, 8600, 7117, 1128, 5187, 7118, 2]
+// Dependencies: [19, 21, 4945, 587, 558, 576, 11124, 8616, 7194, 1128, 5195, 5226, 2]
 
-// Module 11108 (MediaModalOverlayAltTextSheet)
+// Module 11123 (MediaModalOverlayAltTextSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7118 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8600 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11109 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5226 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8616 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11124 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaViewe
     num = messagePreviewCollapsedheight + 20 + 50;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const BottomSheetTitleHeader = tmp(7117).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(7194).BottomSheetTitleHeader;
     const intl = tmp(1128).intl;
     const tmp8 = <BottomSheetTitleHeader title={intl.string(intl2.t.J3IOO1)} />;
     cResult[0] = tmp8;
@@ -98,9 +98,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaViewe
   if (!obj2.useIsScreenLandscape()) {
     num = messagePreviewCollapsedheight + 20 + 50;
   }
-  BottomSheet = tmp2(7118).BottomSheet;
+  BottomSheet = tmp2(5226).BottomSheet;
   ({ title: intl.string(intl2.t.J3IOO1) });
-  const BottomSheetTitleHeader = tmp2(7117).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = tmp2(7194).BottomSheetTitleHeader;
   intl = tmp2(1128).intl;
   const items = [tmp.container, { minHeight: num }];
   return <BottomSheet header={null} contentStyles={items}>{null}</BottomSheet>;

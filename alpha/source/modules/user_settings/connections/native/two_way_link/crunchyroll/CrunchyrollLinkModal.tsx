@@ -1,25 +1,25 @@
-// Module ID: 13866
-// Function ID: 13867
+// Module ID: 13900
+// Function ID: 13901
 // Name: CrunchyrollLinkModal
-// Dependencies: [19, 13867, 1087, 21, 558, 576, 13865, 7365, 7995, 1128, 13868, 9518, 13870, 13872, 13873, 13875, 9517, 13853, 6965, 2]
+// Dependencies: [19, 13901, 1087, 21, 558, 576, 13899, 7431, 8058, 1128, 13902, 9534, 13904, 13906, 13907, 13909, 9533, 13887, 7043, 2]
 
-// Module 13866 (CrunchyrollLinkModal)
+// Module 13900 (CrunchyrollLinkModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import Navigator2 from "Navigator" /* 6965 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7365 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7995 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9517 */;
-import useAccountLinkStepTracking from "useAccountLinkStepTracking" /* 13853 */;
-import CrunchyrollLinkModalActionCreatorsDefault from "CrunchyrollLinkModalActionCreators" /* 13865 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 13867 */;
-import CrunchyrollLinkLandingDefault from "CrunchyrollLinkLanding" /* 13868 */;
-import CrunchyrollLinkPreConnectDefault from "CrunchyrollLinkPreConnect" /* 13870 */;
-import CrunchyrollLinkDiscordConsentDefault from "CrunchyrollLinkDiscordConsent" /* 13872 */;
-import CrunchyrollLinkSuccessDefault from "CrunchyrollLinkSuccess" /* 13873 */;
-import CrunchyrollLinkErrorDefault from "CrunchyrollLinkError" /* 13875 */;
+import Navigator2 from "Navigator" /* 7043 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7431 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8058 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9533 */;
+import useAccountLinkStepTracking from "useAccountLinkStepTracking" /* 13887 */;
+import CrunchyrollLinkModalActionCreatorsDefault from "CrunchyrollLinkModalActionCreators" /* 13899 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 13901 */;
+import CrunchyrollLinkLandingDefault from "CrunchyrollLinkLanding" /* 13902 */;
+import CrunchyrollLinkPreConnectDefault from "CrunchyrollLinkPreConnect" /* 13904 */;
+import CrunchyrollLinkDiscordConsentDefault from "CrunchyrollLinkDiscordConsent" /* 13906 */;
+import CrunchyrollLinkSuccessDefault from "CrunchyrollLinkSuccess" /* 13907 */;
+import CrunchyrollLinkErrorDefault from "CrunchyrollLinkError" /* 13909 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -108,7 +108,7 @@ const headerRight = ReactCompilerGating.isReactCompilerEnabled() ? (function Clo
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const HeaderActionButton = tmp(7365).HeaderActionButton;
+    const HeaderActionButton = tmp(7431).HeaderActionButton;
     const intl = tmp(1128).intl;
     const tmp8 = <HeaderActionButton source={AssetRegistryDefault} onPress={first} accessibilityLabel={intl.string(intl2.t.cpT0Cq)} />;
     cResult[1] = tmp8;
@@ -167,13 +167,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
 }) : (function CrunchyrollLinkModal(locationStack) {
   let twoWayLinkStyles;
   locationStack = locationStack.locationStack;
-  const obj = twoWayLinkStyles(9517);
+  const obj = twoWayLinkStyles(9533);
   twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [twoWayLinkStyles];
   const memo = react.useMemo(() => getScreens(twoWayLinkStyles), items);
-  const obj2 = twoWayLinkStyles(13853);
+  const obj2 = twoWayLinkStyles(13887);
   const accountLinkStepTracking = obj2.useAccountLinkStepTracking(PlatformTypes.CRUNCHYROLL, locationStack);
-  const Navigator = twoWayLinkStyles(6965).Navigator;
+  const Navigator = twoWayLinkStyles(7043).Navigator;
   const intl = twoWayLinkStyles(1128).intl;
   return <Navigator onStateChange={accountLinkStepTracking} screens={memo} initialRouteName={constants.LANDING} headerBackTitle={intl.string(twoWayLinkStyles(1128).t["13/7kX"])} />;
 });

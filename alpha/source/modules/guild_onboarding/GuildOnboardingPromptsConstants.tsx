@@ -1,10 +1,10 @@
-// Module ID: 7067
-// Function ID: 7068
+// Module ID: 7144
+// Function ID: 7145
 // Name: GuildOnboardingPromptsConstants
 // Dependencies: [32, 109, 1087, 1357, 1128, 2034, 2]
 // Exports: clientPromptToServerPrompt, getConnectionIdentifier, getDefaultPrompt, getEmptyPrompt, isDefaultPrompt, isEmojiEmpty, parseConnectionIdentifier, serverApiResponseToClientState, validateOnboardingConnections
 
-// Module 7067 (GuildOnboardingPromptsConstants)
+// Module 7144 (GuildOnboardingPromptsConstants)
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import _modDef1357 from "module_1357" /* 1357 */;

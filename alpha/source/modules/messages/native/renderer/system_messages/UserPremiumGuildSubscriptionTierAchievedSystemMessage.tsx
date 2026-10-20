@@ -1,17 +1,17 @@
-// Module ID: 8293
-// Function ID: 8294
+// Module ID: 8309
+// Function ID: 8310
 // Name: UserPremiumGuildSubscriptionTierAchievedSystemMessage
-// Dependencies: [2068, 2090, 8291, 8292, 8246, 8248, 1128, 8294, 8250, 2]
+// Dependencies: [4800, 4822, 8307, 8308, 8262, 8264, 1128, 8310, 8266, 2]
 // Exports: createUserPremiumGuildSubscriptionTierAchievedSystemMessage
 
-// Module 8293 (UserPremiumGuildSubscriptionTierAchievedSystemMessage)
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8246 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8248 */;
-import UserPremiumGuildSubscriptionSystemMessage from "UserPremiumGuildSubscriptionSystemMessage" /* 8291 */;
-import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 8292 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8294 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildStore from "GuildStore" /* 2090 */;
+// Module 8309 (UserPremiumGuildSubscriptionTierAchievedSystemMessage)
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8262 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8264 */;
+import UserPremiumGuildSubscriptionSystemMessage from "UserPremiumGuildSubscriptionSystemMessage" /* 8307 */;
+import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 8308 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8310 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import GuildStore from "GuildStore" /* 4822 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/UserPremiumGuildSubscriptionTierAchievedSystemMessage.tsx");
@@ -54,7 +54,7 @@ export const createUserPremiumGuildSubscriptionTierAchievedSystemMessage = funct
         formatToParts2Result = formatToParts(oAYAP7, obj3);
       }
       const obj4 = { content: formatToParts2Result };
-      const merged = Object.assign(tmp11(8250)(message));
+      const merged = Object.assign(tmp11(8266)(message));
       return obj4;
     }
   }

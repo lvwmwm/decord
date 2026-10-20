@@ -1,23 +1,23 @@
-// Module ID: 16933
-// Function ID: 16934
+// Module ID: 16962
+// Function ID: 16963
 // Name: FeaturedBlock
-// Dependencies: [19, 17, 21, 587, 5191, 9262, 16934, 558, 576, 7130, 7155, 2]
+// Dependencies: [19, 17, 21, 587, 4945, 9278, 16963, 558, 576, 7199, 7224, 2]
 
-// Module 16933 (FeaturedBlock)
+// Module 16962 (FeaturedBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7130 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9262 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7199 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7224 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9278 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useAnalyticsLocations = tmp(7130);
+const useAnalyticsLocations = tmp(7199);
 function Subblocks(style) {
   style = style.style;
   const subblocks = style.featuredBlock.subblocks;

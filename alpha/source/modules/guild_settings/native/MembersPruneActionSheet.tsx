@@ -1,18 +1,18 @@
-// Module ID: 17726
-// Function ID: 17727
+// Module ID: 17755
+// Function ID: 17756
 // Name: MembersPruneActionSheet
-// Dependencies: [32, 19, 17727, 2090, 4845, 1392, 21, 558, 576, 584, 17728, 5155, 7117, 1128, 6539, 6540, 5187, 5479, 7175, 7242, 504, 2]
+// Dependencies: [32, 19, 17756, 4822, 4880, 1392, 21, 558, 576, 584, 17757, 5171, 7194, 1128, 6932, 6933, 5195, 5205, 7244, 7311, 504, 2]
 
-// Module 17726 (MembersPruneActionSheet)
+// Module 17755 (MembersPruneActionSheet)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7242 */;
-import PruneGuildModalActionCreatorsDefault from "PruneGuildModalActionCreators" /* 17728 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7311 */;
+import PruneGuildModalActionCreatorsDefault from "PruneGuildModalActionCreators" /* 17757 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PrunePreviewStore from "PrunePreviewStore" /* 17727 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import PrunePreviewStore from "PrunePreviewStore" /* 17756 */;
+import GuildStore from "GuildStore" /* 4822 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -54,10 +54,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
   if (cResult[1] !== guild.id) {
     class T {
       constructor() {
-        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F151300 */ };
+        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F151804 */ };
         obj = id(closure_2[9]);
         subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
-        return () => { /* body not rendered: F151301 */ };
+        return () => { /* body not rendered: F151805 */ };
       }
     }
     cResult[1] = guild.id;
@@ -66,30 +66,30 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
   } else {
     class T {
       constructor() {
-        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F151300 */ };
+        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F151804 */ };
         obj = id(closure_2[9]);
         subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
-        return () => { /* body not rendered: F151301 */ };
+        return () => { /* body not rendered: F151805 */ };
       }
     }
   }
   if (cResult[3] === first) {
     class T {
       constructor() {
-        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F151300 */ };
+        handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F151804 */ };
         obj = id(closure_2[9]);
         subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
-        return () => { /* body not rendered: F151301 */ };
+        return () => { /* body not rendered: F151805 */ };
       }
     }
     const effect = obj2.useEffect(tmp6, items2);
     if (cResult[6] === first) {
       class T {
         constructor() {
-          handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F151300 */ };
+          handlePruneUpdate = function handlePruneUpdate() { /* body not rendered: F151804 */ };
           obj = id(closure_2[9]);
           subscription = obj.subscribe("GUILD_PRUNE_UPDATE", handlePruneUpdate);
-          return () => { /* body not rendered: F151301 */ };
+          return () => { /* body not rendered: F151805 */ };
         }
       }
     }

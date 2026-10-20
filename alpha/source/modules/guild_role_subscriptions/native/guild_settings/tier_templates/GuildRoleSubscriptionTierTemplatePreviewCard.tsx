@@ -1,26 +1,26 @@
-// Module ID: 19005
-// Function ID: 19006
+// Module ID: 19040
+// Function ID: 19041
 // Name: GuildRoleSubscriptionTierTemplatePreviewCard
-// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 6940, 5187, 5155, 19006, 2002, 19010, 1202, 19009, 1128, 7126, 1505, 16285, 19011, 1267, 5206, 16291, 19007, 9859, 2]
+// Dependencies: [19, 17, 1087, 21, 4945, 587, 558, 576, 7022, 5195, 5171, 19041, 2002, 19045, 1202, 19044, 1128, 7195, 1505, 16314, 19046, 1267, 5673, 16320, 19042, 9873, 2]
 
-// Module 19005 (GuildRoleSubscriptionTierTemplatePreviewCard)
+// Module 19040 (GuildRoleSubscriptionTierTemplatePreviewCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6940 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7126 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 19009 */;
-import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 19011 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7022 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7195 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 19044 */;
+import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 19046 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let obj6;
 let rect;
 let size;
 let tmp;
-const AppAnalyticsUtils = tmp(5206);
+const AppAnalyticsUtils = tmp(5673);
 ({ TouchableOpacity: hasOwnProperty, View: metroRequire } = react_native);
 ({ AnalyticEvents: metroImportDefault, GuildSettingsSections: metroImportAll } = Constants);
 ({ jsx: c9, jsxs: c10 } = Fragment);
@@ -166,7 +166,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Benefi
     let tmp5 = title;
     if (typeof title === "string") {
       const obj2 = { variant: "text-md/semibold", color: "text-default", children: title };
-      tmp5 = React4(tmp(5187).Text, obj2);
+      tmp5 = React4(tmp(5195).Text, obj2);
     }
     cResult[0] = title;
     cResult[1] = tmp5;
@@ -332,7 +332,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewEn
   const tmp4 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-sm/semibold", color: "interactive-text-hover", style: { marginTop: -1 }, children: intl.string(intl3.t.kejaOD) };
-    const Text = tmp(5187).Text;
+    const Text = tmp(5195).Text;
     intl = tmp(1128).intl;
     const tmp8 = React4(Text, obj2);
     const tmp9 = React4(native.Spacer, { size: 3 });
@@ -594,7 +594,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                               function handleViewEntireTemplate() {
                                 const obj = ActionSheetActionCreatorsDefault;
                                 const obj2 = { template, guildId, handleSelectTemplateInPreview };
-                                obj.openLazy(asyncRequire(19006, dependencyMap.paths), "TierTemplateCard", obj2);
+                                obj.openLazy(asyncRequire(19041, dependencyMap.paths), "TierTemplateCard", obj2);
                               }
                               if (cResult[46] === handleViewEntireTemplate) {
                                 if (cResult[47] === tmp4.contentContainer) {
@@ -619,7 +619,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                                       if (closure_7) {
                                         const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                                         const obj = ActionSheetActionCreatorsDefault;
-                                        obj.openLazy(asyncRequire(19010, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                                        obj.openLazy(asyncRequire(19045, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                                       } else {
                                         handleCreateFromTemplate(selectedTemplate, arg1);
                                       }
@@ -638,7 +638,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                                   if (closure_7) {
                                     const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                                     const obj = ActionSheetActionCreatorsDefault;
-                                    obj.openLazy(asyncRequire(19010, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                                    obj.openLazy(asyncRequire(19045, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                                   } else {
                                     handleCreateFromTemplate(selectedTemplate, arg1);
                                   }
@@ -661,7 +661,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                                 if (closure_7) {
                                   const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                                   const obj = ActionSheetActionCreatorsDefault;
-                                  obj.openLazy(asyncRequire(19010, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                                  obj.openLazy(asyncRequire(19045, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                                 } else {
                                   handleCreateFromTemplate(selectedTemplate, arg1);
                                 }
@@ -678,7 +678,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                               if (closure_7) {
                                 const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                                 const obj = ActionSheetActionCreatorsDefault;
-                                obj.openLazy(asyncRequire(19010, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                                obj.openLazy(asyncRequire(19045, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                               } else {
                                 handleCreateFromTemplate(selectedTemplate, arg1);
                               }
@@ -698,7 +698,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                             if (closure_7) {
                               const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                               const obj = ActionSheetActionCreatorsDefault;
-                              obj.openLazy(asyncRequire(19010, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                              obj.openLazy(asyncRequire(19045, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                             } else {
                               handleCreateFromTemplate(selectedTemplate, arg1);
                             }
@@ -716,7 +716,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                           if (closure_7) {
                             const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                             const obj = ActionSheetActionCreatorsDefault;
-                            obj.openLazy(asyncRequire(19010, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                            obj.openLazy(asyncRequire(19045, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                           } else {
                             handleCreateFromTemplate(selectedTemplate, arg1);
                           }
@@ -731,7 +731,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                         if (closure_7) {
                           const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                           const obj = ActionSheetActionCreatorsDefault;
-                          obj.openLazy(asyncRequire(19010, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                          obj.openLazy(asyncRequire(19045, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                         } else {
                           handleCreateFromTemplate(selectedTemplate, arg1);
                         }
@@ -752,7 +752,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                       if (closure_7) {
                         const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                         const obj = ActionSheetActionCreatorsDefault;
-                        obj.openLazy(asyncRequire(19010, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                        obj.openLazy(asyncRequire(19045, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                       } else {
                         handleCreateFromTemplate(selectedTemplate, arg1);
                       }
@@ -771,7 +771,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                 if (closure_7) {
                   const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
                   const obj = ActionSheetActionCreatorsDefault;
-                  obj.openLazy(asyncRequire(19010, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+                  obj.openLazy(asyncRequire(19045, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
                 } else {
                   handleCreateFromTemplate(selectedTemplate, arg1);
                 }
@@ -791,7 +791,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
             if (closure_7) {
               const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
               const obj = ActionSheetActionCreatorsDefault;
-              obj.openLazy(asyncRequire(19010, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+              obj.openLazy(asyncRequire(19045, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
             } else {
               handleCreateFromTemplate(selectedTemplate, arg1);
             }
@@ -888,7 +888,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     if (closure_7) {
       const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
       const obj = ActionSheetActionCreatorsDefault;
-      obj.openLazy(asyncRequire(19010, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+      obj.openLazy(asyncRequire(19045, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
     } else {
       handleCreateFromTemplate(selectedTemplate, arg1);
     }
@@ -902,7 +902,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     onPress: function handleViewEntireTemplate() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { template, guildId, handleSelectTemplateInPreview: callback1 };
-      obj.openLazy(asyncRequire(19006, dependencyMap.paths), "TierTemplateCard", obj2);
+      obj.openLazy(asyncRequire(19041, dependencyMap.paths), "TierTemplateCard", obj2);
     },
     children: items6
   };

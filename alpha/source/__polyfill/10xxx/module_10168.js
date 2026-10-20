@@ -1,9 +1,9 @@
 // Module ID: 10168
 // Function ID: 10169
-// Dependencies: [41, 42, 93, 95, 98, 10140]
+// Dependencies: [41, 42, 93, 95, 98, 10152]
 
 // Module 10168
-import _mod10140 from "module_10140" /* 10140 */;
+import _mod10152 from "module_10152" /* 10152 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
@@ -25,48 +25,63 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    let tmp2;
-    const tmp = __esModule;
-    if (!tmp) {
-      tmp2 = { default: __esModule };
-      const obj = { default: __esModule };
-    } else {
-      tmp2 = __esModule;
-    }
-    return tmp2;
-  };
-}
-class DEMergeDateTimeRefiner {
+class ENUnlikelyFormatFilter {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, DEMergeDateTimeRefiner);
-    const obj = _getPrototypeOf(DEMergeDateTimeRefiner);
+    _classCallCheck(this, ENUnlikelyFormatFilter);
+    const obj = _getPrototypeOf(ENUnlikelyFormatFilter);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, undefined);
     }
     return tmp3(self, constructResult);
   }
 }
-_inherits(DEMergeDateTimeRefiner, fn(_mod10140).default);
+_inherits(ENUnlikelyFormatFilter, _mod10152.Filter);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    const regExp = new RegExp("^\\s*(T|um|am|,|-)?\\s*$");
-    return regExp;
+  key: "isValid",
+  value: function isValid(text, text2) {
+    let closure_0 = text2;
+    const str = text2.text;
+    const str2 = str.trim();
+    const str3 = text.text;
+    if (str2 === str3.trim()) {
+      return true;
+    } else {
+      if ("may" === str2.toLowerCase()) {
+        const str4 = text.text;
+        const str5 = str4.substring(0, text2.index);
+        const str6 = str5.trim();
+        if (!str6.match(/\b(in)$/i)) {
+          text.debug(() => {
+            console.log("Removing unlikely result: " + text2);
+          });
+          return false;
+        }
+      }
+      const formatted = str2.toLowerCase();
+      const endsWithResult = formatted.endsWith("the second");
+      let flag2 = !endsWithResult;
+      if (endsWithResult) {
+        flag2 = false;
+        const str8 = text.text;
+        const str9 = str8.substring(text2.index + text2.text.length);
+        if (str9.trim().length > 0) {
+          text.debug(() => {
+            console.log("Removing unlikely result: " + text2);
+          });
+          flag2 = false;
+        }
+      }
+      return flag2;
+    }
   }
 };
 const items = [entry];
 
-export default _createClass(DEMergeDateTimeRefiner, items);
+export default _createClass(ENUnlikelyFormatFilter, items);

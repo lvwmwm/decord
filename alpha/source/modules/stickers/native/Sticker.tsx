@@ -1,20 +1,20 @@
-// Module ID: 10073
-// Function ID: 10074
+// Module ID: 10087
+// Function ID: 10088
 // Name: Sticker
-// Dependencies: [19, 17, 1207, 21, 6006, 6005, 558, 576, 1128, 8287, 10074, 5128, 5065, 7099, 7100, 2]
+// Dependencies: [19, 17, 1207, 21, 6443, 6442, 558, 576, 1128, 8303, 10088, 5631, 4952, 7176, 7177, 2]
 // Exports: getStickerAssetUrl
 
-// Module 10073 (Sticker)
+// Module 10087 (Sticker)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import shared from "shared" /* 5065 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import StickersUtils from "StickersUtils" /* 6005 */;
-import StickersTypes from "StickersTypes" /* 6006 */;
-import NativeLottieViewDefault from "NativeLottieView" /* 8287 */;
-import NativeAPNGViewDefault from "NativeAPNGView" /* 10074 */;
+import shared from "shared" /* 4952 */;
+import FastImageDefault from "FastImage" /* 5631 */;
+import StickersUtils from "StickersUtils" /* 6442 */;
+import StickersTypes from "StickersTypes" /* 6443 */;
+import NativeLottieViewDefault from "NativeLottieView" /* 8303 */;
+import NativeAPNGViewDefault from "NativeAPNGView" /* 10088 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -79,7 +79,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
         if (str4 == null) {
           str4 = "";
         }
-        const NativeLottieRenderMode = tmp(8287).NativeLottieRenderMode;
+        const NativeLottieRenderMode = tmp(8303).NativeLottieRenderMode;
         const tmp33 = undefined === animated || animated ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
         if (cResult[6] === tmp8) {
           if (cResult[7] === num) {
@@ -186,9 +186,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
           const tmp26 = jsx;
           const tmpResult7 = shared;
           if (tmpResult7.isThemeDark(ThemeStore.theme)) {
-            tmp27Result = tmp27(7099);
+            tmp27Result = tmp27(7176);
           } else {
-            tmp27Result = tmp27(7100);
+            tmp27Result = tmp27(7177);
           }
           const tmp26Result = tmp26(tmp28, obj6);
           cResult[28] = tmp8;
@@ -278,7 +278,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
     if (str4 == null) {
       str4 = "";
     }
-    NativeLottieRenderMode = tmp(8287).NativeLottieRenderMode;
+    NativeLottieRenderMode = tmp(8303).NativeLottieRenderMode;
     return tmp18(tmp20, size1);
   } else {
     if (sticker.format_type === StickersTypes.StickerFormat.APNG) {
@@ -300,9 +300,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
     const tmp13 = jsx;
     const tmpResult10 = shared;
     if (tmpResult10.isThemeDark(ThemeStore.theme)) {
-      tmp14Result = tmp14(7099);
+      tmp14Result = tmp14(7176);
     } else {
-      tmp14Result = tmp14(7100);
+      tmp14Result = tmp14(7177);
     }
     obj7 = { uri: str };
     return tmp13(tmp15, obj6);

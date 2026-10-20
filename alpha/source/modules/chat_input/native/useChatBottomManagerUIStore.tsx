@@ -1,10 +1,10 @@
-// Module ID: 9683
-// Function ID: 9684
+// Module ID: 9697
+// Function ID: 9698
 // Name: useChatBottomManagerUIStore
-// Dependencies: [510, 570, 558, 576, 5081, 2]
+// Dependencies: [510, 570, 558, 576, 5120, 2]
 // Exports: updateChatInputContainerHeight, updateIsAtBottom, updateShouldShowJumpToPresentButton, updateShowingAutoComplete, updateSmallSuggestionBarHeight
 
-// Module 9683 (useChatBottomManagerUIStore)
+// Module 9697 (useChatBottomManagerUIStore)
 import Storage3 from "Storage" /* 510 */;
 import react from "react" /* 576 */;
 import module_570 from "module_570" /* 570 */;

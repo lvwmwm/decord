@@ -1,28 +1,28 @@
-// Module ID: 15502
-// Function ID: 15503
+// Module ID: 15530
+// Function ID: 15531
 // Name: channels
-// Dependencies: [2072, 2068, 2090, 4845, 2119, 5212, 5895, 1087, 15487, 6297, 9169, 15503, 8731, 9172, 11335, 12, 9163, 6313, 6145, 5514, 1114, 8770, 2]
+// Dependencies: [4804, 4800, 4822, 4880, 4851, 5591, 6332, 1087, 15515, 5587, 9185, 15531, 8747, 9188, 11352, 12, 9179, 6726, 6582, 5949, 1114, 8786, 2]
 
-// Module 15502 (channels)
+// Module 15530 (channels)
 import router_utils from "router_utils" /* 1114 */;
-import ChannelUtils from "ChannelUtils" /* 5514 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6145 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6313 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8731 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8770 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 9163 */;
-import RPCErrorDefault from "RPCError" /* 9169 */;
-import botScopedAccess from "botScopedAccess" /* 9172 */;
-import RPCHelpers from "RPCHelpers" /* 11335 */;
-import ChannelRecord from "ChannelRecord" /* 2072 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import VoiceStateStore from "VoiceStateStore" /* 5212 */;
-import Constants_mod from "Constants" /* 5895 */;
+import ChannelUtils from "ChannelUtils" /* 5949 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6582 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6726 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8747 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8786 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 9179 */;
+import RPCErrorDefault from "RPCError" /* 9185 */;
+import botScopedAccess from "botScopedAccess" /* 9188 */;
+import RPCHelpers from "RPCHelpers" /* 11352 */;
+import ChannelRecord from "ChannelRecord" /* 4804 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import GuildStore from "GuildStore" /* 4822 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4851 */;
+import VoiceStateStore from "VoiceStateStore" /* 5591 */;
+import Constants_mod from "Constants" /* 6332 */;
 import Constants_mod2 from "Constants" /* 1087 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15503 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15531 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;
@@ -73,7 +73,7 @@ let obj2 = {
         const scopes = socket.authorization.scopes;
         const tmp = require;
         if (!scopes.has(OAuth2Scopes.OAuth2Scopes.RPC)) {
-          if (!scopes.has(tmp(8731).OAuth2Scopes.DM_CHANNELS_READ)) {
+          if (!scopes.has(tmp(8747).OAuth2Scopes.DM_CHANNELS_READ)) {
             const self = this;
             const self2 = this;
             const obj2 = { errorCode: constants2.INVALID_PERMISSIONS };
@@ -141,7 +141,7 @@ let obj4 = {
           const self = this;
           const self2 = this;
           const obj2 = { errorCode: constants2.INVALID_GUILD };
-          const tmpResult = tmp(9169);
+          const tmpResult = tmp(9185);
           const tmpResult1 = new tmpResult(obj2, "Invalid guild id: " + guild_id);
           throw tmpResult1;
         } else {
@@ -199,7 +199,7 @@ const obj6 = {
     socket = socket.socket;
     let tmp3;
     if (isPostMessageSocketDefault(socket)) {
-      tmp3 = tmp(6313)(socket.context.surface);
+      tmp3 = tmp(6726)(socket.context.surface);
     }
     const channel = ChannelStore.getChannel(tmp3);
     if (null == channel) {

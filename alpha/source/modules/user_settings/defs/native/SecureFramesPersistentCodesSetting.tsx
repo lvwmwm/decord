@@ -1,16 +1,16 @@
-// Module ID: 16957
-// Function ID: 16958
+// Module ID: 16986
+// Function ID: 16987
 // Name: SecureFramesPersistentCodesSetting
-// Dependencies: [5230, 8260, 558, 576, 504, 16958, 11084, 1128, 2]
+// Dependencies: [5694, 8276, 558, 576, 504, 16987, 11099, 1128, 2]
 
-// Module 16957 (SecureFramesPersistentCodesSetting)
+// Module 16986 (SecureFramesPersistentCodesSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import SettingsConstants from "SettingsConstants" /* 8260 */;
-import updatePersistentCodesEnabled from "updatePersistentCodesEnabled" /* 16958 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5230 */;
+import SettingsConstants from "SettingsConstants" /* 8276 */;
+import updatePersistentCodesEnabled from "updatePersistentCodesEnabled" /* 16987 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5694 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SettingBuilders from "SettingBuilders" /* 11099 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

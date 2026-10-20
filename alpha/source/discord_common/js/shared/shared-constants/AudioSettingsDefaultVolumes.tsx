@@ -1,9 +1,9 @@
-// Module ID: 5350
-// Function ID: 5351
+// Module ID: 5814
+// Function ID: 5815
 // Name: AudioSettingsDefaultVolumes
 // Dependencies: [2]
 
-// Module 5350 (AudioSettingsDefaultVolumes)
+// Module 5814 (AudioSettingsDefaultVolumes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/AudioSettingsDefaultVolumes.tsx");

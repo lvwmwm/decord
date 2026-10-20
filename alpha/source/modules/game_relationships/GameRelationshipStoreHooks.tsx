@@ -1,13 +1,13 @@
-// Module ID: 14118
-// Function ID: 14119
+// Module ID: 14151
+// Function ID: 14152
 // Name: GameRelationshipStoreHooks
-// Dependencies: [32, 7612, 1087, 558, 576, 504, 6213, 2]
+// Dependencies: [32, 7675, 1087, 558, 576, 504, 6643, 2]
 // Exports: useGameFriendsForUser, useIncomingGameRelationshipsForUser
 
-// Module 14118 (GameRelationshipStoreHooks)
+// Module 14151 (GameRelationshipStoreHooks)
 import Constants from "Constants" /* 1087 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7612 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7675 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

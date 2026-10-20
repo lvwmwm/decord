@@ -1,23 +1,23 @@
-// Module ID: 16590
-// Function ID: 16591
+// Module ID: 16619
+// Function ID: 16620
 // Name: AppIconRows
-// Dependencies: [32, 12901, 19, 17, 1392, 21, 5191, 558, 576, 9768, 6542, 1128, 16591, 14532, 504, 1991, 2]
+// Dependencies: [32, 12933, 19, 17, 1392, 21, 4945, 558, 576, 9782, 6935, 1128, 16620, 14565, 504, 1991, 2]
 
-// Module 16590 (AppIconRows)
+// Module 16619 (AppIconRows)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react3 from "react" /* 576 */;
 import intl3 from "intl" /* 1128 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1991 */;
-import AppIconTypes from "AppIconTypes" /* 9768 */;
-import AppIconUtils from "AppIconUtils" /* 14532 */;
-import AppIconRowDefault from "AppIconRow" /* 16591 */;
+import AppIconTypes from "AppIconTypes" /* 9782 */;
+import AppIconUtils from "AppIconUtils" /* 14565 */;
+import AppIconRowDefault from "AppIconRow" /* 16620 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 12901 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 12933 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Backwa
     onLongPress = cResult[0];
   }
   const container = tmp6.container;
-  const TableRowGroup = tmp(6542).TableRowGroup;
+  const TableRowGroup = tmp(6935).TableRowGroup;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
     const stringResult = intl.string(tmp(1128).t.N4YDao);
@@ -146,7 +146,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Backwa
         })
     };
     onLongPress(react.useState(false), 2);
-    TableRowGroup = merged(6542).TableRowGroup;
+    TableRowGroup = merged(6935).TableRowGroup;
     intl = merged(1128).intl;
     return closure_9(View, obj);
   }

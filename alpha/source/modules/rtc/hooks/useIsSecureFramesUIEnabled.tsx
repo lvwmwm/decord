@@ -1,12 +1,12 @@
-// Module ID: 9120
-// Function ID: 9121
+// Module ID: 9136
+// Function ID: 9137
 // Name: useIsSecureFramesUIEnabled
-// Dependencies: [2068, 5209, 9102, 558, 576, 504, 2]
+// Dependencies: [4800, 5676, 9118, 558, 576, 504, 2]
 
-// Module 9120 (useIsSecureFramesUIEnabled)
-import SecureFramesConstants from "SecureFramesConstants" /* 9102 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
+// Module 9136 (useIsSecureFramesUIEnabled)
+import SecureFramesConstants from "SecureFramesConstants" /* 9118 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5676 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

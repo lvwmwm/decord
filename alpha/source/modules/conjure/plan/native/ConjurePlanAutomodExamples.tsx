@@ -1,19 +1,19 @@
-// Module ID: 12275
-// Function ID: 12276
+// Module ID: 12295
+// Function ID: 12296
 // Name: ConjurePlanAutomodExamples
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 12276, 1202, 1417, 5187, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 12296, 1202, 1417, 5195, 2]
 
-// Module 12275 (ConjurePlanAutomodExamples)
+// Module 12295 (ConjurePlanAutomodExamples)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 12276 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 12296 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -147,7 +147,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Example
             let tmp34 = null;
             if (null != tmp5) {
               const obj6 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 2, children: tmp5 };
-              tmp34 = _false(tmp(5187).Text, obj6);
+              tmp34 = _false(tmp(5195).Text, obj6);
             }
             cResult[21] = tmp5;
             cResult[22] = tmp34;
@@ -268,14 +268,14 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Example
   const obj4 = { style: tmp.rowBody, children: items3 };
   items3 = [_false(Text_Text.Text, { variant: "text-sm/semibold", color: "text-strong", children: username }), , ];
   const obj5 = { variant: "text-sm/normal", color: "text-default", children: tmp2Result6.renderPlanAutomodExampleContent(example.content) };
-  const Text = tmp2(5187).Text;
+  const Text = tmp2(5195).Text;
   tmp2Result6 = ConjurePlanAutomodOutcomes;
   items3[1] = _false(Text, obj5);
   let tmp11Result = null;
   const tmp11 = _false;
   if (null != result) {
     const obj6 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 2, children: result };
-    tmp11Result = tmp11(tmp2(5187).Text, obj6);
+    tmp11Result = tmp11(tmp2(5195).Text, obj6);
   }
   items3[2] = tmp11Result;
   items2[2] = React3(View, obj4);
@@ -296,13 +296,13 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Exampl
   const cResult = obj.c(31);
   ({ group, firstIndex } = arg0);
   const tmp4 = closure_8();
-  const obj2 = firstIndex(12276).CONJURE_PLAN_AUTOMOD_SECTIONS[group.section];
+  const obj2 = firstIndex(12296).CONJURE_PLAN_AUTOMOD_SECTIONS[group.section];
   if (cResult[0] !== group.examples) {
     const _Set = Set;
     const examples = group.examples;
     const self = this;
     const self2 = this;
-    set = new Set(examples.map(firstIndex(12276).planAutomodReasonText));
+    set = new Set(examples.map(firstIndex(12296).planAutomodReasonText));
     cResult[0] = group.examples;
     cResult[1] = set;
     tmp5 = set;
@@ -414,9 +414,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Exampl
       if (null != tmp9) {
         const obj6 = { children: items2 };
         const obj7 = { variant: "text-xs/semibold", color: "text-muted", style: tmp4.dot, accessible: false, children: "\u00B7" };
-        items2 = [closure_3(firstIndex(5187).Text, obj7), ];
+        items2 = [closure_3(firstIndex(5195).Text, obj7), ];
         const obj8 = { variant: "text-xs/semibold", color: "text-muted", children: tmp9 };
-        items2[1] = closure_3(firstIndex(5187).Text, obj8);
+        items2[1] = closure_3(firstIndex(5195).Text, obj8);
         tmp19 = closure_4(closure_5, obj6);
       }
       cResult[10] = tmp9;
@@ -425,7 +425,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Exampl
       tmp18 = tmp19;
     }
     const obj9 = { variant: "text-xs/semibold", color: closure_6[obj2.tone], children: tmp13 };
-    const tmp17 = closure_3(firstIndex(5187).Text, obj9);
+    const tmp17 = closure_3(firstIndex(5195).Text, obj9);
     cResult[7] = closure_6[obj2.tone];
     cResult[8] = tmp13;
     cResult[9] = tmp17;
@@ -433,7 +433,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Exampl
   }
   let result = null;
   if (1 === tmp5.size) {
-    const tmpResult = firstIndex(12276);
+    const tmpResult = firstIndex(12296);
     result = tmpResult.planAutomodReasonText(group.examples[0]);
   }
   cResult[2] = group.examples[0];
@@ -595,7 +595,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanA
   const obj2 = { style: tmp.card, children: items };
   const tmp5 = closure_4;
   if ("" !== trimmed) {
-    const obj3 = { style: tmp.rule, children: closure_3(tmp2(5187).Text, obj4) };
+    const obj3 = { style: tmp.rule, children: closure_3(tmp2(5195).Text, obj4) };
     obj4 = { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: trimmed };
     tmp7 = closure_3(tmp6, obj3);
   }

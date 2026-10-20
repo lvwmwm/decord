@@ -1,25 +1,25 @@
-// Module ID: 11319
-// Function ID: 11320
+// Module ID: 11333
+// Function ID: 11334
 // Name: EmbeddedActivityView
-// Dependencies: [109, 32, 19, 17, 2067, 2026, 1375, 21, 5191, 558, 576, 11317, 1499, 584, 11320, 11321, 11323, 11343, 11313, 504, 11349, 11046, 11350, 5205, 11352, 2]
+// Dependencies: [109, 32, 19, 17, 4799, 2026, 1375, 21, 4945, 558, 576, 11331, 1499, 584, 11334, 11335, 11337, 11362, 11327, 504, 11370, 11061, 11371, 5672, 11373, 2]
 
-// Module 11319 (EmbeddedActivityView)
+// Module 11333 (EmbeddedActivityView)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5205 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 11046 */;
-import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 11320 */;
-import DiscordEnvironment from "DiscordEnvironment" /* 11321 */;
-import activityWebViewController from "activityWebViewController" /* 11323 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5672 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 11061 */;
+import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 11334 */;
+import DiscordEnvironment from "DiscordEnvironment" /* 11335 */;
+import activityWebViewController from "activityWebViewController" /* 11337 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4799 */;
 import Constants from "Constants" /* 2026 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -418,11 +418,13 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Embedd
   let applicationId;
   let closure_0;
   let deepLinkQueryParams;
+  let iframeId;
+  let shellBridgeSecret;
   let tmp10;
   let tmp5;
   let tmp6;
   let obj = require("react");
-  const cResult = obj.c(11);
+  const cResult = obj.c(12);
   const tmp = _require;
   if (cResult[0] !== arg0) {
     ({ deepLinkQueryParams, applicationId } = arg0);
@@ -450,41 +452,43 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Embedd
   } else {
     tmp10 = cResult[5];
   }
-  const first = _slicedToArray(react.useState(tmp10), 1)[0];
+  ({ iframeId, shellBridgeSecret } = _slicedToArray(react.useState(tmp10), 1)[0]);
   if (cResult[6] === tmp4) {
     if (cResult[7] === tmp5) {
-      if (cResult[8] === first) {
-        let tmp12;
+      if (cResult[8] === iframeId) {
         if (cResult[9] === tmp6) {
-          tmp12 = cResult[10];
+          let tmp11;
+          if (cResult[10] === shellBridgeSecret) {
+            tmp11 = cResult[11];
+          }
+          return tmp11;
         }
-        return tmp12;
       }
     }
   }
-  const obj2 = { iframeId: first, deepLinkQueryParams: tmp5, applicationId: tmp4 };
-  const BaseEmbeddedAppWebView = tmp(11343).BaseEmbeddedAppWebView;
+  const obj2 = { iframeId, shellBridgeSecret, deepLinkQueryParams: tmp5, applicationId: tmp4 };
+  const BaseEmbeddedAppWebView = tmp(11362).BaseEmbeddedAppWebView;
   const merged = Object.assign(tmp6);
-  const tmp14 = closure_14(BaseEmbeddedAppWebView, obj2);
+  const tmp13 = closure_14(BaseEmbeddedAppWebView, obj2);
   cResult[6] = tmp4;
   cResult[7] = tmp5;
-  cResult[8] = first;
+  cResult[8] = iframeId;
   cResult[9] = tmp6;
-  cResult[10] = tmp14;
-  tmp12 = tmp14;
+  cResult[10] = shellBridgeSecret;
+  cResult[11] = tmp13;
+  tmp11 = tmp13;
 }) : (function EmbeddedActivityWebView(applicationId) {
+  let iframeId;
+  let shellBridgeSecret;
   applicationId = applicationId.applicationId;
   const deepLinkQueryParams = applicationId.deepLinkQueryParams;
   const merged = Object.assign(applicationId, Object.assign({ deepLinkQueryParams: 0, applicationId: 0 }));
-  let obj = {
-    iframeId: _slicedToArray(react.useState(() => {
-      const obj = activityWebViewController;
-      return obj.getOrCreateActivityWebViewController(applicationId);
-    }), 1)[0],
-    deepLinkQueryParams,
-    applicationId
-  };
-  const BaseEmbeddedAppWebView = applicationId(11343).BaseEmbeddedAppWebView;
+  ({ iframeId, shellBridgeSecret } = _slicedToArray(react.useState(() => {
+    const obj = activityWebViewController;
+    return obj.getOrCreateActivityWebViewController(applicationId);
+  }), 1)[0]);
+  let obj = { iframeId, shellBridgeSecret, deepLinkQueryParams, applicationId };
+  const BaseEmbeddedAppWebView = applicationId(11362).BaseEmbeddedAppWebView;
   const merged1 = Object.assign(merged);
   return closure_14(BaseEmbeddedAppWebView, obj);
 });
@@ -614,7 +618,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   tmp7(first[20])(tmp19);
   if (cResult[8] !== layoutMode) {
-    class M {
+    class Q {
       constructor() {
         if (null != closure_2) {
           tmp2 = closure_1;
@@ -631,12 +635,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     const items2 = [layoutMode, first];
     cResult[8] = layoutMode;
-    cResult[9] = M;
+    cResult[9] = Q;
     cResult[10] = items2;
     tmp23 = items2;
-    tmp22 = M;
+    tmp22 = Q;
   } else {
-    class M {
+    class Q {
       constructor() {
         if (null != closure_2) {
           tmp2 = closure_1;
@@ -656,7 +660,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const layoutEffect = obj3.useLayoutEffect(tmp22, tmp23);
   const tmp25 = cResult[11];
   if (tmp8 != null) {
-    class M {
+    class Q {
       constructor() {
         if (null != closure_2) {
           tmp2 = closure_1;
@@ -673,7 +677,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }
   if (tmp25 !== undefined) {
-    class M {
+    class Q {
       constructor() {
         if (null != closure_2) {
           tmp2 = closure_1;
@@ -689,7 +693,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
     if (tmp8 != null) {
-      class M {
+      class Q {
         constructor() {
           if (null != closure_2) {
             tmp2 = closure_1;
@@ -705,7 +709,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-    class W {
+    class U {
       constructor() {
         tmp = closure_0(closure_2[21]);
         _location = undefined;
@@ -724,9 +728,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
     cResult[11] = tmp27;
-    cResult[12] = W;
+    cResult[12] = U;
   } else {
-    class M {
+    class Q {
       constructor() {
         if (null != closure_2) {
           tmp2 = closure_1;
@@ -743,7 +747,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }
   if (tmp8 != null) {
-    class M {
+    class Q {
       constructor() {
         if (null != closure_2) {
           tmp2 = closure_1;
@@ -761,7 +765,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   let c4;
   if (null != first) {
-    class M {
+    class Q {
       constructor() {
         if (null != closure_2) {
           tmp2 = closure_1;
@@ -777,7 +781,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
     if (first != null) {
-      class M {
+      class Q {
         constructor() {
           if (null != closure_2) {
             tmp2 = closure_1;
@@ -793,7 +797,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-    class W {
+    class U {
       constructor() {
         tmp = closure_0(closure_2[21]);
         _location = undefined;
@@ -813,7 +817,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }
   if (null != first) {
-    class M {
+    class Q {
       constructor() {
         if (null != closure_2) {
           tmp2 = closure_1;
@@ -830,7 +834,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }
   if (null != first) {
-    class M {
+    class Q {
       constructor() {
         if (null != closure_2) {
           tmp2 = closure_1;
@@ -847,7 +851,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }
   if (null != first) {
-    class M {
+    class Q {
       constructor() {
         if (null != closure_2) {
           tmp2 = closure_1;
@@ -864,7 +868,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }
   if (cResult[13] === tmp8) {
-    class M {
+    class Q {
       constructor() {
         if (null != closure_2) {
           tmp2 = closure_1;

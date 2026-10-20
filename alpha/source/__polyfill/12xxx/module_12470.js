@@ -1,48 +1,83 @@
 // Module ID: 12470
 // Function ID: 12471
-// Dependencies: []
-// Exports: parseCookie
+// Dependencies: [12430, 12463]
+// Exports: makePromiseBuffer
 
 // Module 12470
+import _mod12430 from "module_12430" /* 12430 */;
 
-export const parseCookie = function parseCookie(arr) {
-  const obj = {};
-  let num = 0;
-  if (0 < arr.length) {
-    const index = arr.indexOf("=", num);
-    if (-1 !== index) {
-      let length = arr.indexOf(";", num);
-      if (-1 === length) {
-        length = arr.length;
+let diff;
+
+
+export function makePromiseBuffer(arg0) {
+  let closure_0 = arg0;
+  const items = [];
+  let obj = {
+    $: items,
+    add(fn) {
+      let promise;
+      const tmp2 = undefined === promise || items.length < tmp;
+      if (tmp2) {
+        promise = fn();
+        const arr = items;
+        if (-1 === items.indexOf(promise)) {
+          arr.push(promise);
+        }
+        const nextPromise = promise.then(() => {
+          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
+          return first;
+        });
+        nextPromise.then(null, () => {
+          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
+          return first.then(null, () => {
+
+          });
+        });
+        return promise;
       } else {
-        let sum;
-        if (length < index) {
-          sum = arr.lastIndexOf(";", index - 1) + 1;
-        }
-        num = sum;
+        const self = this;
+        const self2 = this;
+        const rejectedSyncPromise = closure_0(items[0]).rejectedSyncPromise;
+        const sentryError = new closure_0(items[1]).SentryError("Not adding Promise because buffer limit was reached.");
+        return rejectedSyncPromise(sentryError);
       }
-      const str = arr.slice(num, index);
-      const trimmed = str.trim();
-      if (undefined === obj[trimmed]) {
-        const str2 = arr.slice(index + 1, length);
-        const trimmed1 = str2.trim();
-        let substr = trimmed1;
-        if (34 === trimmed1.charCodeAt(0)) {
-          substr = trimmed1.slice(1, -1);
+    },
+    drain(arg0) {
+      let length;
+      closure_0 = arg0;
+      const syncPromise = new closure_0(items[0]).SyncPromise((fn, arg1) => {
+        let closure_3;
+        closure_0 = fn;
+        let closure_1 = arg1;
+        const arr = length;
+        if (length.length) {
+          const tmp = globalThis;
+          const _setTimeout = setTimeout;
+          let tmp2 = closure_0;
+          const timeout = setTimeout(() => {
+            const tmp2 = closure_0 && tmp > 0;
+            if (tmp2) {
+              closure_0(false);
+            }
+          }, closure_0);
+          const item = arr.forEach((item) => {
+            const obj = _mod12430;
+            const resolvedSyncPromiseResult = obj.resolvedSyncPromise(item);
+            resolvedSyncPromiseResult.then(() => {
+              diff = diff - 1;
+              if (!diff) {
+                const _clearTimeout = clearTimeout;
+                clearTimeout(closure_1_3);
+                fn(true);
+              }
+            }, closure_1);
+          });
+        } else {
+          return fn(true);
         }
-        try {
-          let decodeURIComponentResult = substr;
-          if (-1 !== substr.indexOf("%")) {
-            const _decodeURIComponent = decodeURIComponent;
-            decodeURIComponentResult = decodeURIComponent(substr);
-          }
-          obj[trimmed] = decodeURIComponentResult;
-        } catch (err) {
-          obj[trimmed] = substr;
-        }
-      }
-      sum = length + 1;
+      });
+      return syncPromise;
     }
-  }
+  };
   return obj;
-};
+}

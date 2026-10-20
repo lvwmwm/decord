@@ -1,10 +1,10 @@
-// Module ID: 16394
-// Function ID: 16395
+// Module ID: 16423
+// Function ID: 16424
 // Name: DisplayNameStylesEditScreen
-// Dependencies: [32, 19, 17, 5181, 1392, 1087, 1629, 21, 1411, 5191, 587, 1506, 504, 16395, 8564, 5884, 5127, 1412, 1409, 15636, 10568, 10569, 568, 16396, 16397, 16398, 16399, 1267, 5156, 8565, 8562, 5155, 16402, 2002, 16404, 16405, 16410, 16414, 1128, 15637, 4922, 5886, 16415, 2981, 5187, 1202, 7182, 1105, 15638, 5479, 9328, 9671, 558, 576, 1633, 4945, 5478, 2]
+// Dependencies: [32, 19, 17, 4946, 1392, 1087, 1629, 21, 1411, 4945, 587, 1506, 504, 16424, 8580, 6321, 5166, 1412, 1409, 15665, 10582, 10583, 568, 16425, 16426, 16427, 16428, 1267, 5173, 8581, 8578, 5171, 16431, 2002, 16433, 16434, 16439, 16443, 1128, 15666, 4999, 6323, 16444, 2918, 5195, 1202, 7251, 1105, 15667, 5205, 9344, 9685, 558, 576, 1633, 5014, 5208, 2]
 // Exports: default
 
-// Module 16394 (DisplayNameStylesEditScreen)
+// Module 16423 (DisplayNameStylesEditScreen)
 import shallowEqual from "shallowEqual" /* 568 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -13,18 +13,18 @@ import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1409 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1411 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1629 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import HapticUtils from "HapticUtils" /* 5156 */;
-import spring from "spring" /* 5478 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8562 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8565 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
+import HapticUtils from "HapticUtils" /* 5173 */;
+import spring from "spring" /* 5208 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8578 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8581 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import AccessibilityStore from "AccessibilityStore" /* 4946 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -564,7 +564,7 @@ export default function DisplayNameStylesEditScreen() {
       }
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { selectedFontId, onSelectFont, displayName: displayNameStylesPendingName };
-      obj.openLazy(asyncRequire(16402, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", obj2);
+      obj.openLazy(asyncRequire(16431, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", obj2);
     }, items6);
     const useCallback = displayNameStylesPendingName.useCallback;
     if (stateFromStores != null) {
@@ -582,7 +582,7 @@ export default function DisplayNameStylesEditScreen() {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       let id;
       ActionSheetActionCreatorsDefault;
-      const tmp5 = asyncRequire(16404, dependencyMap.paths);
+      const tmp5 = asyncRequire(16433, dependencyMap.paths);
       if (stateFromStores != null) {
         id = stateFromStores.id;
       }
@@ -598,7 +598,7 @@ export default function DisplayNameStylesEditScreen() {
             }
         };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(16405, dependencyMap.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
+        obj3.openLazy(asyncRequire(16434, dependencyMap.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
       } else {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
         ActionSheetActionCreatorsDefault;
@@ -611,10 +611,10 @@ export default function DisplayNameStylesEditScreen() {
                   return callback(first1, arg0);
                 }
           };
-          openLazy(tmp2Result(16410, dependencyMap.paths), "DisplayNameStylesGradientPickerSheet", obj4);
+          openLazy(tmp2Result(16439, dependencyMap.paths), "DisplayNameStylesGradientPickerSheet", obj4);
         } else {
           const obj = { selectedColor: first3, selectedEffectId: first1, onSelectColor };
-          openLazy(tmp2Result(16414, dependencyMap.paths), "DisplayNameStylesColorPickerSheet", obj);
+          openLazy(tmp2Result(16443, dependencyMap.paths), "DisplayNameStylesColorPickerSheet", obj);
         }
       }
     }, items8);

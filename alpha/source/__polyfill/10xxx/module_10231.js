@@ -1,13 +1,12 @@
 // Module ID: 10231
 // Function ID: 10232
-// Dependencies: [41, 42, 93, 95, 98, 10227, 10126]
+// Dependencies: [41, 42, 93, 95, 98, 10140]
 
 // Module 10231
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10126 */;
-import _mod10227 from "module_10227" /* 10227 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10140 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -26,16 +25,15 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const keys = Object.keys(_mod10227.WEEKDAY_OFFSET);
-const regExp = new RegExp("(?:\u661F\u671F|\u793C\u62DC|\u5468)(?<weekday>" + keys.join("|") + ")");
-class ZHHansWeekdayParser {
+const regExp = new RegExp("([0-9]|0[1-9]|1[012])/([0-9]{4})", "i");
+class NLSlashMonthFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ZHHansWeekdayParser);
-    const obj = _getPrototypeOf(ZHHansWeekdayParser);
+    _classCallCheck(this, NLSlashMonthFormatParser);
+    const obj = _getPrototypeOf(NLSlashMonthFormatParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -45,7 +43,7 @@ class ZHHansWeekdayParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ZHHansWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(NLSlashMonthFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
@@ -56,45 +54,15 @@ const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const tmp2 = _mod10227.WEEKDAY_OFFSET[index.groups.weekday];
-      if (undefined === tmp2) {
-        return null;
-      } else {
-        const _Date = Date;
-        const refDate = createParsingResult.refDate;
-        const self = this;
-        const self2 = this;
-        const date = new Date(refDate.getTime());
-        const diff = tmp2 - date.getDay();
-        const _Math3 = Math;
-        const _Math4 = Math;
-        const absolute = Math.abs(diff - 7);
-        let diff1 = diff;
-        if (absolute < Math.abs(diff)) {
-          diff1 = diff - 7;
-        }
-        const _Math = Math;
-        const _Math2 = Math;
-        const absolute1 = Math.abs(diff1 + 7);
-        let sum = diff1;
-        if (absolute1 < Math.abs(diff1)) {
-          sum = diff1 + 7;
-        }
-        date.setDate(date.getDate() + sum);
-        const start = parsingResult.start;
-        start.assign("weekday", tmp2);
-        const start2 = parsingResult.start;
-        start2.imply("day", date.getDate());
-        const start3 = parsingResult.start;
-        start3.imply("month", date.getMonth() + 1);
-        const start4 = parsingResult.start;
-        start4.imply("year", date.getFullYear());
-        return parsingResult;
-      }
+    value: function innerExtract(createParsingComponents, arg1) {
+      const parsed = parseInt(arg1[2]);
+      const parsed1 = parseInt(arg1[1]);
+      const parsingComponents = createParsingComponents.createParsingComponents();
+      const implyResult = parsingComponents.imply("day", 1);
+      const obj = implyResult.assign("month", parsed1);
+      return obj.assign("year", parsed);
     }
   }
 ];
 
-export default _createClass(ZHHansWeekdayParser, items);
+export default _createClass(NLSlashMonthFormatParser, items);

@@ -1,13 +1,13 @@
-// Module ID: 5371
-// Function ID: 5372
+// Module ID: 5835
+// Function ID: 5836
 // Name: ApplicationStreamingSettingsStore
-// Dependencies: [5311, 5216, 504, 584, 2]
+// Dependencies: [5775, 5680, 504, 584, 2]
 
-// Module 5371 (ApplicationStreamingSettingsStore)
+// Module 5835 (ApplicationStreamingSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 5216 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5311 */;
+import Constants from "Constants" /* 5680 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5775 */;
 import size from "module_2" /* 2 */;
 
 let ApplicationStreamFPS;

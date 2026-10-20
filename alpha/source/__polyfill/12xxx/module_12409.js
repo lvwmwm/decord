@@ -1,150 +1,148 @@
 // Module ID: 12409
 // Function ID: 12410
-// Dependencies: [12385, 12386, 12410, 12400, 12397, 12392]
-// Exports: closeSession, makeSession
+// Dependencies: []
+// Exports: getFramesFromEvent, getFunctionName, stackParserFromStackParserOptions
 
 // Module 12409
-import _mod12392 from "module_12392" /* 12392 */;
-import _mod12397 from "module_12397" /* 12397 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12400 */;
-import _mod12410 from "module_12410" /* 12410 */;
-import DEBUG_BUILD from "module_12385" /* 12385 */;
-import CONSOLE_LEVELS from "module_12386" /* 12386 */;
+let filename;
 
-function updateSession(ipAddress) {
-  let obj = arg1;
-  if (arg1 === undefined) {
-    obj = {};
-  }
-  if (obj.user) {
-    const tmp = !ipAddress.ipAddress && obj.user.ip_address;
-    if (tmp) {
-      ipAddress.ipAddress = obj.user.ip_address;
+function createStackParser() {
+  let items = [...arguments];
+  const sorted = items.sort((arg0, arg1) => arg0[0] - arg1[0]);
+  let closure_0 = sorted.map((item) => item[1]);
+  return (str) => {
+    let num = arg1;
+    if (arg1 === undefined) {
+      num = 0;
     }
-    const tmp2 = ipAddress.did || obj.did;
-    if (!tmp2) {
-      ipAddress.did = obj.user.id || obj.user.email || obj.user.username;
+    let num2 = arg2;
+    if (arg2 === undefined) {
+      num2 = 0;
     }
-  }
-  let timestamp = obj.timestamp;
-  if (!timestamp) {
-    const obj2 = _browserPerformanceTimeOriginMode;
-    timestamp = obj2.timestampInSeconds();
-  }
-  ipAddress.timestamp = timestamp;
-  if (obj.abnormal_mechanism) {
-    ipAddress.abnormal_mechanism = obj.abnormal_mechanism;
-  }
-  if (obj.ignoreDuration) {
-    ipAddress.ignoreDuration = obj.ignoreDuration;
-  }
-  if (obj.sid) {
-    let sid;
-    if (32 === obj.sid.length) {
-      sid = obj.sid;
-    } else {
-      const obj3 = _mod12397;
-      sid = obj3.uuid4();
+    const items = [];
+    const parts = str.split("\n");
+    if (num < parts.length) {
+      while (true) {
+        let arr3 = parts[num];
+        if (arr3.length <= 1024) {
+          let tmp10 = re0;
+          str = arr3;
+          if (re0.test(arr3)) {
+            str = arr3.replace(tmp10, "$1");
+          }
+          if (!str.match(/\S*Error: /)) {
+            for (const item10026 of closure_0) {
+              let item10026Result = item10026(str);
+              if (item10026Result) {
+                let arr = items.push(tmp6);
+                obj.return();
+                break;
+              }
+              continue;
+            }
+            if (items.length >= 50 + num2) {
+              break;
+            }
+          }
+          break;
+        }
+        num = num + 1;
+        if (num >= parts.length) {
+          break;
+        }
+      }
     }
-    ipAddress.sid = sid;
-  }
-  if (undefined !== obj.init) {
-    ipAddress.init = obj.init;
-  }
-  const tmp7 = !ipAddress.did && obj.did;
-  if (tmp7) {
-    const _HermesInternal = HermesInternal;
-    ipAddress.did = "" + obj.did;
-  }
-  if (typeof obj.started === "number") {
-    ipAddress.started = obj.started;
-  }
-  if (ipAddress.ignoreDuration) {
-    ipAddress.duration = undefined;
-  } else if (typeof obj.duration === "number") {
-    ipAddress.duration = obj.duration;
+    return stripSentryFramesAndReverse(items.slice(num2));
+  };
+}
+function stripSentryFramesAndReverse(arg0) {
+  if (arg0.length) {
+    const _Array = Array;
+    const arr = Array.from(arg0);
+    let obj = arr[arr.length - 1];
+    const test = /sentryWrapped/.test;
+    const tmp2 = /sentryWrapped/;
+    if (!obj) {
+      obj = {};
+    }
+    const tmp3 = obj.function || "";
+    if (test(tmp3)) {
+      arr.pop();
+    }
+    const reversed = arr.reverse();
+    let obj2 = arr[arr.length - 1];
+    const test2 = re1.test;
+    const tmp6 = re1;
+    if (!obj2) {
+      obj2 = {};
+    }
+    const tmp7 = obj2.function || "";
+    if (test2(tmp7)) {
+      arr.pop();
+      let obj3 = arr[arr.length - 1];
+      const test3 = tmp6.test;
+      if (!obj3) {
+        obj3 = {};
+      }
+      const tmp9 = obj3.function || "";
+      if (test3(tmp9)) {
+        arr.pop();
+      }
+    }
+    const substr = arr.slice(0, 50);
+    return substr.map((filename) => {
+      const obj = { filename, function: filename.function || "?" };
+      const merged = Object.assign(filename);
+      filename = filename.filename;
+      if (!filename) {
+        filename = (arr[arr.length - 1] || {}).filename;
+      }
+      return obj;
+    });
   } else {
-    const diff = ipAddress.timestamp - ipAddress.started;
-    let num2 = 0;
-    if (diff >= 0) {
-      num2 = diff;
-    }
-    ipAddress.duration = num2;
-  }
-  if (obj.release) {
-    ipAddress.release = obj.release;
-  }
-  if (obj.environment) {
-    ipAddress.environment = obj.environment;
-  }
-  const tmp9 = !ipAddress.ipAddress && obj.ipAddress;
-  if (tmp9) {
-    ipAddress.ipAddress = obj.ipAddress;
-  }
-  const tmp10 = !ipAddress.userAgent && obj.userAgent;
-  if (tmp10) {
-    ipAddress.userAgent = obj.userAgent;
-  }
-  if (typeof obj.errors === "number") {
-    ipAddress.errors = obj.errors;
-  }
-  if (obj.status) {
-    ipAddress.status = obj.status;
+    return [];
   }
 }
-_mod12410;
+const re0 = /\(error: (.*)\)/;
+const re1 = /captureMessage|captureException/;
+let c4 = "<anonymous>";
 
-export const closeSession = function closeSession(status, status2) {
-  let obj;
-  const tmp = status2;
-  if (tmp) {
-    obj = { status: status2 };
-    const obj2 = { status: status2 };
-  } else {
-    obj = {};
-    if ("ok" === status.status) {
-      obj = { status: "exited" };
+export const UNKNOWN_FUNCTION = "?";
+export { createStackParser };
+export const getFramesFromEvent = function getFramesFromEvent(exception) {
+  exception = exception.exception;
+  if (exception) {
+    let items = [];
+    try {
+      const values = exception.values;
+      const item = values.forEach((stacktrace) => {
+        if (stacktrace.stacktrace.frames) {
+          const push = items.push;
+          items = [];
+          HermesBuiltin.arraySpread(items, stacktrace.stacktrace.frames, 0);
+          HermesBuiltin.apply(push, items, items);
+        }
+      });
+      return items;
+    } catch (err) {
     }
   }
-  updateSession(status, obj);
 };
-export const makeSession = function makeSession(arg0) {
-  let obj2;
-  let obj3;
-  let obj = obj2(12400);
-  const timestampInSecondsResult = obj.timestampInSeconds();
-  obj2 = {
-    sid: obj3.uuid4(),
-    init: true,
-    timestamp: timestampInSecondsResult,
-    started: timestampInSecondsResult,
-    duration: 0,
-    status: "ok",
-    errors: 0,
-    ignoreDuration: false,
-    toJSON() {
-      let combined;
-      let date;
-      let date1;
-      const tmp2 = _mod12392;
-      const obj = { sid: "" + obj2.sid, init: obj2.init, started: date.toISOString(), timestamp: date1.toISOString(), status: null, errors: null, did: combined, duration: null, abnormal_mechanism: null, attrs: { release: obj2.release, environment: obj2.environment, ip_address: obj2.ipAddress, user_agent: obj2.userAgent } };
-      const dropUndefinedKeys = tmp2.dropUndefinedKeys;
-      date = new Date(1000 * obj2.started);
-      ({ status: obj.status, errors: obj.errors } = obj2);
-      date1 = new Date(1000 * obj2.timestamp);
-      if (typeof obj2.did === "number") {
-        const _HermesInternal = HermesInternal;
-        combined = "" + tmp.did;
-      }
-      ({ duration: obj.duration, abnormal_mechanism: obj.abnormal_mechanism } = obj2);
-      return dropUndefinedKeys(obj);
-    }
-  };
-  obj3 = obj2(12397);
-  if (arg0) {
-    let tmp2 = updateSession;
-    updateSession(obj2, arg0);
+export const getFunctionName = function getFunctionName(name) {
+  try {
+    name = name && typeof name === "function" && name.name || c4;
+    return name;
+  } catch (err) {
+    return c4;
   }
-  return obj2;
 };
-export { updateSession };
+export const stackParserFromStackParserOptions = function stackParserFromStackParserOptions(arg0) {
+  let applyResult = arg0;
+  if (Array.isArray(arg0)) {
+    const items = [];
+    HermesBuiltin.arraySpread(items, arg0, 0);
+    applyResult = HermesBuiltin.apply(createStackParser, items, undefined);
+  }
+  return applyResult;
+};
+export { stripSentryFramesAndReverse };

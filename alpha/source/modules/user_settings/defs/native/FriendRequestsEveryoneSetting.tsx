@@ -1,24 +1,24 @@
-// Module ID: 16024
-// Function ID: 16025
+// Module ID: 16053
+// Function ID: 16054
 // Name: FriendRequestsEveryoneSetting
-// Dependencies: [19, 8260, 1087, 558, 576, 2044, 6961, 15863, 11084, 1128, 2]
+// Dependencies: [19, 8276, 1087, 558, 576, 4776, 7039, 15892, 11099, 1128, 2]
 
-// Module 16024 (FriendRequestsEveryoneSetting)
+// Module 16053 (FriendRequestsEveryoneSetting)
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import UserSettings from "UserSettings" /* 2044 */;
-import SettingsConstants from "SettingsConstants" /* 8260 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15863 */;
+import UserSettings from "UserSettings" /* 4776 */;
+import SettingsConstants from "SettingsConstants" /* 8276 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15892 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SettingBuilders from "SettingBuilders" /* 11099 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let tmp;
-const UserSettingsUtils = tmp(6961);
+const UserSettingsUtils = tmp(7039);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 ({ AllFriendSourceFlags: c3, FriendSourceFlags: closure_4 } = Constants);
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -40,7 +40,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendReq
   return tmp5.all;
 }) : (function useFriendRequestsEveryoneSettingValue() {
   let setting;
-  const FriendSourceFlagsSetting = setting(2044).FriendSourceFlagsSetting;
+  const FriendSourceFlagsSetting = setting(4776).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
   return react.useMemo(() => {

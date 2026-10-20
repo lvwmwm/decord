@@ -1,12 +1,12 @@
-// Module ID: 12351
-// Function ID: 12352
+// Module ID: 12371
+// Function ID: 12372
 // Name: ConjurePerfTraceFormat
-// Dependencies: [32, 11009, 12352, 2]
+// Dependencies: [32, 11025, 12372, 2]
 // Exports: formatDuration, formatSpanCount, formatTokens, perfCategoryTotal, perfModelSummary, perfNodeSections, perfSmallerLabel, perfTickLabel, perfTraceDuration, perfTraceSummary
 
-// Module 12351 (ConjurePerfTraceFormat)
-import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 11009 */;
-import ConjureTimeFormat from "ConjureTimeFormat" /* 12352 */;
+// Module 12371 (ConjurePerfTraceFormat)
+import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 11025 */;
+import ConjureTimeFormat from "ConjureTimeFormat" /* 12372 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -404,16 +404,9 @@ export const perfTraceDuration = function perfTraceDuration(trace) {
     end = perfTraceRootResult.end;
   }
   if (null != end) {
-    let combined;
-    if (end < 1000) {
-      const _HermesInternal2 = HermesInternal;
-      combined = "" + end + "ms";
-    } else {
-      const result = end / 1000;
-      const _HermesInternal = HermesInternal;
-      combined = "" + result.toFixed(1) + "s";
-    }
-    str = combined;
+    const result = end / 1000;
+    const _HermesInternal = HermesInternal;
+    str = "" + result.toFixed(2) + "s";
   } else {
     str = "still running";
     const tmpResult = ConjurePerfTraceLayout;

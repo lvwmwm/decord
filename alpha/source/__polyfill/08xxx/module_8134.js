@@ -1,80 +1,54 @@
 // Module ID: 8134
 // Function ID: 8135
-// Dependencies: [32, 8095, 8112, 8135]
+// Dependencies: [8130, 8131]
+// Exports: isAAC, isAMR, isFLAC, isM4A, isMP3, isWAV
 
 // Module 8134
-import _mod8095 from "module_8095" /* 8095 */;
-import _modDef8112 from "module_8112" /* 8112 */;
-import PathRecordTypesDefault from "PathRecordTypes" /* 8135 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod8130 from "module_8130" /* 8130 */;
+import _mod8131 from "module_8131" /* 8131 */;
 
-let length;
-let metroImportDefault;
-function getTagName(dataView, sum1) {
-  let num;
-  let sum;
-  const obj = _mod8095;
-  const tmp = _slicedToArray(obj.getPascalStringFromDataView(dataView, sum1), 2);
-  const first = tmp[0];
-  const obj2 = { tagName: tmp[1], tagNameSize: sum + num };
-  num = 0;
-  sum = 1 + first;
-  if (first % 2 === 0) {
-    num = 1;
-  }
-  return obj2;
-}
-let obj = {
-  read(arg0, arg1) {
-    let tmp4Result2;
-    const getDataView = _mod8095.getDataView;
-    _mod8095;
-    const uint8Array = new Uint8Array(arg0);
-    const dataView = getDataView(uint8Array.buffer);
-    const obj = {};
-    let num = 0;
-    if (0 < arg0.length) {
-      const sum = num + metroImportDefault;
-      const obj2 = _mod8095;
-      const stringFromDataView = obj2.getStringFromDataView(dataView, num, metroImportDefault);
-      const obj3 = _modDef8112;
-      const shortAt = obj3.getShortAt(dataView, sum);
-      const sum1 = sum + c5;
-      const tmp14 = getTagName(dataView, sum1);
-      let name = tmp14.tagName;
-      const sum2 = sum1 + tmp14.tagNameSize;
-      const obj4 = _modDef8112;
-      const longAt = obj4.getLongAt(dataView, sum2);
-      const sum3 = sum2 + c6;
-      if (stringFromDataView === c4) {
-        const tmp4Result = _mod8095;
-        const dataView1 = tmp4Result.getDataView(dataView.buffer, sum3, longAt);
-        const obj6 = { id: shortAt, value: tmp4Result2.getStringFromDataView(dataView1, 0, longAt) };
-        tmp4Result2 = _mod8095;
-        if (PathRecordTypesDefault[shortAt]) {
-          try {
-            const obj5 = PathRecordTypesDefault[shortAt];
-            obj6.description = obj5.description(dataView1);
-          } catch (err) {
-            obj6.description = "<no description formatter>";
-          }
-          if (!name) {
-            name = tmp9(8135)[shortAt].name;
-          }
-          obj[name] = obj6;
-        } else if (arg1) {
-          const _HermesInternal = HermesInternal;
-          obj["undefined-" + shortAt] = obj6;
-        }
-      }
-      num = sum3 + (longAt + longAt % 2);
+
+export const isAAC = function isAAC(fileChunk, excludeSimilarTypes) {
+  fileChunk = _mod8130.getFileChunk(fileChunk);
+  const FileTypes = _mod8131.FileTypes;
+  let checkByFileTypeResult1 = FileTypes.checkByFileType(fileChunk, "aac");
+  if (!checkByFileTypeResult1) {
+    excludeSimilarTypes = undefined;
+    if (null != excludeSimilarTypes) {
+      excludeSimilarTypes = excludeSimilarTypes.excludeSimilarTypes;
     }
-    return obj;
+    let checkByFileTypeResult = !excludeSimilarTypes;
+    if (checkByFileTypeResult) {
+      const fileChunk1 = tmp(8130).getFileChunk(fileChunk);
+      const FileTypes2 = tmp(8131).FileTypes;
+      checkByFileTypeResult = FileTypes2.checkByFileType(fileChunk1, "m4a");
+    }
+    checkByFileTypeResult1 = checkByFileTypeResult;
   }
+  return checkByFileTypeResult1;
 };
-let c4 = "8BIM";
-let c5 = 2;
-let c6 = 4;
-({ length, length: metroImportDefault } = "8BIM");
-
-export default obj;
+export const isAMR = function isAMR(fileChunk) {
+  fileChunk = _mod8130.getFileChunk(fileChunk);
+  const FileTypes = _mod8131.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "amr");
+};
+export const isFLAC = function isFLAC(fileChunk) {
+  fileChunk = _mod8130.getFileChunk(fileChunk);
+  const FileTypes = _mod8131.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "flac");
+};
+export const isM4A = function isM4A(fileChunk) {
+  fileChunk = _mod8130.getFileChunk(fileChunk);
+  const FileTypes = _mod8131.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "m4a");
+};
+export const isMP3 = function isMP3(fileChunk) {
+  fileChunk = _mod8130.getFileChunk(fileChunk);
+  const FileTypes = _mod8131.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "mp3");
+};
+export const isWAV = function isWAV(fileChunk) {
+  fileChunk = _mod8130.getFileChunk(fileChunk);
+  const FileTypes = _mod8131.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "wav");
+};

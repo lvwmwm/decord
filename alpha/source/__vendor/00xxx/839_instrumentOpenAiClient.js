@@ -161,7 +161,7 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
                     stream = undefined;
                     c3 = 1;
                     c4 = 1;
-                    return { value: "Reflect", done: true };
+                    return { value: "test", done: true };
                   }
                 } else if (arg0 === 1) {
                   c4 = 3;

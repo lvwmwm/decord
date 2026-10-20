@@ -1,21 +1,21 @@
-// Module ID: 16589
-// Function ID: 16590
+// Module ID: 16618
+// Function ID: 16619
 // Name: UserSettingsAppIcons
-// Dependencies: [5, 19, 17, 1392, 1087, 9767, 21, 5191, 558, 576, 504, 14532, 1991, 7130, 9768, 9571, 8855, 16590, 10081, 9693, 9694, 1128, 2]
+// Dependencies: [5, 19, 17, 1392, 1087, 9781, 21, 4945, 558, 576, 504, 14565, 1991, 7199, 9782, 9586, 8871, 16619, 10095, 9707, 9708, 1128, 2]
 
-// Module 16589 (UserSettingsAppIcons)
+// Module 16618 (UserSettingsAppIcons)
 import react_native from "react-native" /* 17 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7130 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9693 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9694 */;
-import AppIconConstants from "AppIconConstants" /* 9767 */;
-import AppIconRowsDefault from "AppIconRows" /* 16590 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7199 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9707 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9708 */;
+import AppIconConstants from "AppIconConstants" /* 9781 */;
+import AppIconRowsDefault from "AppIconRows" /* 16619 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp6;
 let unpackModuleId;
-const NitroUpsellButtonDefault = tmp6(10081);
+const NitroUpsellButtonDefault = tmp6(10095);
 const View = react_native.View;
 ({ UpsellTypes: metroRequire, AnalyticsPages: metroImportDefault } = Constants);
 const getIconById = AppIconConstants.getIconById;
@@ -67,7 +67,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   const tmpResult = tmp(504);
   stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult3 = tmp(14532);
+  const tmpResult3 = tmp(14565);
   const currentAppIcon = tmpResult3.useCurrentAppIcon();
   if (cResult[2] !== stateFromStores) {
     const tmpResult4 = tmp(1991);
@@ -79,7 +79,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     tmp10 = cResult[3];
   }
   dependencyMap = tmp10;
-  const analyticsLocations = currentAppIcon(7130)().analyticsLocations;
+  const analyticsLocations = currentAppIcon(7199)().analyticsLocations;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { page: constants.APP_ICONS };
     cResult[4] = obj2;
@@ -104,8 +104,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       if (cResult[9] !== tmp18) {
         let obj3 = { children: closure_9(analyticsLocation, obj4) };
         let tmp22 = analyticsLocation;
-        obj4 = { accessibilityRole: "radiogroup", children: closure_9(tmp12(16590), obj5) };
-        const Form = tmp(8855).Form;
+        obj4 = { accessibilityRole: "radiogroup", children: closure_9(tmp12(16619), obj5) };
+        const Form = tmp(8871).Form;
         obj5 = { onSelect: tmp18 };
         const tmp23 = closure_9(Form, obj3);
         cResult[9] = tmp18;
@@ -149,7 +149,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                 },
           text: intl.string(tmp(1128).t.M0rDSO)
         };
-        tmp12Result = currentAppIcon(10081);
+        tmp12Result = currentAppIcon(10095);
         intl = tmp(1128).intl;
         tmp25 = closure_9(analyticsLocation, obj7);
       }
@@ -372,7 +372,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   obj = stateFromStores(504);
   const items = [obj];
   stateFromStores = obj.useStateFromStores(items, () => obj.getCurrentUser());
-  let obj2 = stateFromStores(14532);
+  let obj2 = stateFromStores(14565);
   importDefault = obj2.useCurrentAppIcon();
   let obj3 = stateFromStores(1991);
   const isPremiumResult = obj3.isPremium(stateFromStores);
@@ -383,7 +383,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp9 = closure_9;
   let obj5 = { children: closure_9(obj4, obj6) };
   obj6 = { accessibilityRole: "radiogroup", children: closure_9(AppIconRowsDefault, obj7) };
-  const Form = stateFromStores(8855).Form;
+  const Form = stateFromStores(8871).Form;
   obj7 = {
     onSelect(arg0) {
       return obj(...arguments);

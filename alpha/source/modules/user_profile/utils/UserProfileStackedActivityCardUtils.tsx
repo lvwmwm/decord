@@ -1,10 +1,10 @@
-// Module ID: 14096
-// Function ID: 14097
+// Module ID: 14129
+// Function ID: 14130
 // Name: UserProfileStackedActivityCardUtils
 // Dependencies: [1087, 12, 2]
 // Exports: getUserProfileLiveActivities, getUserProfileStackedActivityCards
 
-// Module 14096 (UserProfileStackedActivityCardUtils)
+// Module 14129 (UserProfileStackedActivityCardUtils)
 import _mod12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;

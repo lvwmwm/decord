@@ -1,21 +1,21 @@
-// Module ID: 9384
-// Function ID: 9385
+// Module ID: 9400
+// Function ID: 9401
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 8743, 21, 5191, 587, 558, 576, 4901, 9208, 1128, 2000, 4888, 9385, 9392, 5187, 2]
+// Dependencies: [19, 17, 8759, 21, 4945, 587, 558, 576, 5622, 9224, 1128, 2000, 4773, 9401, 9408, 5195, 2]
 
-// Module 9384 (GameProfileDetails)
+// Module 9400 (GameProfileDetails)
 import nativeDefault from "native" /* 587 */;
 import intl13 from "intl" /* 1128 */;
 import Server from "Server" /* 2000 */;
-import DateUtilsAll from "DateUtils" /* 4888 */;
-import LinkingDefault from "Linking" /* 4901 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 8743 */;
-import SKUUtils from "SKUUtils" /* 9208 */;
+import DateUtilsAll from "DateUtils" /* 4773 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import LinkingDefault from "Linking" /* 5622 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8759 */;
+import SKUUtils from "SKUUtils" /* 9224 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -156,7 +156,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       let joined;
       if (game != null) {
         const genres1 = game.genres;
-        const mapped = genres1.map(tmp(9208).getGenreText);
+        const mapped = genres1.map(tmp(9224).getGenreText);
         joined = mapped.join(", ");
       }
       let genres2;
@@ -385,8 +385,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
           const _Date = Date;
           const self = this;
           const self2 = this;
-          const dateFormat = arr(4888).dateFormat;
-          arr(4888);
+          const dateFormat = arr(4773).dateFormat;
+          arr(4773);
           const date = new Date(undefined);
           cResult[32] = undefined;
           cResult[33] = dateFormat(date, "LL");
@@ -771,8 +771,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfil
       }
       const obj10 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp76 };
       cResult[57] = tmp4.headerText;
-      cResult[58] = closure_8(tmp(5187).Text, obj10);
-      const tmp79 = closure_8(tmp(5187).Text, obj10);
+      cResult[58] = closure_8(tmp(5195).Text, obj10);
+      const tmp79 = closure_8(tmp(5195).Text, obj10);
     } else {
       class Z {
         constructor(icon) {

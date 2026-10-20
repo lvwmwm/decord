@@ -1,27 +1,27 @@
-// Module ID: 9599
-// Function ID: 9600
+// Module ID: 9614
+// Function ID: 9615
 // Name: HeaderShared
-// Dependencies: [109, 19, 17, 9600, 21, 5191, 587, 5187, 558, 576, 4913, 6479, 6487, 9601, 1384, 9606, 1633, 1506, 9608, 6944, 568, 9611, 13790, 1202, 6462, 2]
+// Dependencies: [109, 19, 17, 9615, 21, 4945, 587, 5195, 558, 576, 5213, 6873, 6881, 9616, 1384, 9621, 1633, 1506, 9623, 5556, 568, 9626, 13824, 1202, 6856, 2]
 // Exports: getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
-// Module 9599 (HeaderShared)
+// Module 9614 (HeaderShared)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1633 */;
-import useToken2 from "useToken" /* 4913 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import Pressables from "Pressables" /* 6462 */;
-import react_native from "react-native" /* 9600 */;
-import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9606 */;
-import ChannelActionsDefault from "ChannelActions" /* 9611 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 13790 */;
+import Text_Text from "Text/Text" /* 5195 */;
+import useToken2 from "useToken" /* 5213 */;
+import Pressables from "Pressables" /* 6856 */;
+import react_native from "react-native" /* 9615 */;
+import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9621 */;
+import ChannelActionsDefault from "ChannelActions" /* 9626 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 13824 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,8 +38,8 @@ let obj4;
 let obj5;
 let tmp;
 let tmp6;
-const HeaderDebugOverlayDefault = tmp6(6479);
-const _mod6487 = tmp(6487);
+const HeaderDebugOverlayDefault = tmp6(6873);
+const _mod6881 = tmp(6881);
 function renderGenericTitle(children) {
   const obj = { title: children.children };
   return React4(closure_12, obj);
@@ -278,7 +278,7 @@ tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GenericHeaderTit
   }
   const tmp6 = closure_11();
   closure_5 = tmp6;
-  const tmp7 = tmp5(6479)("os-drawn");
+  const tmp7 = tmp5(6873)("os-drawn");
   if (null == subtitle) {
     let renderTitleContainerResult;
     if (null == tmp7) {
@@ -343,7 +343,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderTextBu
     }
     const obj3 = { labelStyle: tmp10, displayMode: "default", backImage: tmp12, truncatedLabel: null, accessibilityLabel: null };
     ({ label: obj2.truncatedLabel, label: obj2.accessibilityLabel } = tmp5);
-    const HeaderBackButton = _mod6487.HeaderBackButton;
+    const HeaderBackButton = _mod6881.HeaderBackButton;
     const merged = Object.assign(tmp5);
     const tmp18 = React4(HeaderBackButton, obj3);
     cResult[7] = tmp5;
@@ -371,7 +371,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderTextBu
   };
   items = [closure_11().backButtonLabel, labelStyle];
   closure_11();
-  const HeaderBackButton = _mod6487.HeaderBackButton;
+  const HeaderBackButton = _mod6881.HeaderBackButton;
   const merged1 = Object.assign(merged);
   return React4(HeaderBackButton, obj);
 });
@@ -407,7 +407,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const tmpResult = navigation(1506);
   const text = tmpResult.useTheme().colors.text;
-  const tmpResult2 = navigation(9608);
+  const tmpResult2 = navigation(9623);
   const gradientTop = tmpResult2.useGradientTop();
   const sum = num + MIN_HEADER_HEIGHT;
   if (cResult[0] === num) {

@@ -1,14 +1,14 @@
-// Module ID: 14012
-// Function ID: 14013
+// Module ID: 14045
+// Function ID: 14046
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 1384, 558, 576, 4945, 14013, 14014, 8668, 7038, 6612, 7130, 7155, 8693, 14018, 5472, 5192, 8663, 8724, 10669, 4946, 11230, 2]
+// Dependencies: [32, 19, 17, 21, 1384, 558, 576, 5014, 14046, 14047, 8684, 7115, 5258, 7199, 7224, 8709, 14051, 5927, 5167, 8679, 8740, 10682, 5015, 11244, 2]
 
-// Module 14012 (MediaViewer)
+// Module 14045 (MediaViewer)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import timing from "timing" /* 5192 */;
-import useVideoControls from "useVideoControls" /* 8663 */;
-import MediaViewerItem2 from "MediaViewerItem" /* 14014 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
+import timing from "timing" /* 5167 */;
+import useVideoControls from "useVideoControls" /* 8679 */;
+import MediaViewerItem2 from "MediaViewerItem" /* 14047 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -25,7 +25,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const MediaViewerDimensionsContext = tmp(8693);
+const MediaViewerDimensionsContext = tmp(8709);
 function MediaViewer(arg0) {
   let closure_2;
   let height;
@@ -61,8 +61,8 @@ function MediaViewer(arg0) {
   ({ onLongPress, originLayout, renderMedia, renderOverlay, swipeVelocityThreshold } = arg0);
   ({ useViewerProps, zoomed } = syncer);
   let tmp = height;
-  let tmp3 = height(7130);
-  let items = [height(7155).MEDIA_VIEWER];
+  let tmp3 = height(7199);
+  let items = [height(7224).MEDIA_VIEWER];
   const analyticsLocations = tmp3(items).analyticsLocations;
   const tmp4 = sharedValue(sharedValue1.useState(true), 2);
   [tmp5, tmp6] = tmp4;
@@ -70,7 +70,7 @@ function MediaViewer(arg0) {
   let obj = require("MediaViewerDimensionsContext");
   const mediaViewerDimensions = obj.useMediaViewerDimensions();
   ({ width, height } = mediaViewerDimensions);
-  const tmp9 = height(14018)({ index, onClose, sources, windowHeight: height, windowWidth: width });
+  const tmp9 = height(14051)({ index, onClose, sources, windowHeight: height, windowWidth: width });
   dependencyMap = tmp9;
   let obj2 = require("ReanimatedRexport");
   sharedValue = obj2.useSharedValue(0);
@@ -89,7 +89,7 @@ function MediaViewer(arg0) {
   const isInteracting = mediaViewerPanGestureConfig.isInteracting;
   const overlayEnabled = mediaViewerPanGestureConfig.overlayEnabled;
   const items1 = [dismiss, isClosing];
-  const tmp16 = height(5472);
+  const tmp16 = height(5927);
   tmp16(sharedValue1.useCallback(() => {
     if (!isClosing.get()) {
       dismiss();
@@ -236,23 +236,23 @@ function MediaViewer(arg0) {
   items6 = [, , , , ];
   const obj17 = { barStyle: "light-content", hidden: !tmp5 };
   const tmp30 = dismiss(callback, { entranceAnimationDriver: sharedValue, onContentSizeChange, onScroll, onLongPress, originLayout, panGestureConfig: mediaViewerPanGestureConfig, ref, renderMedia, sources, useItemVisible, windowHeight: height, windowWidth: width, index, zoomed });
-  items6[0] = dismiss(height(10669), obj17);
-  items6[1] = dismiss(height(4945).View, { style: animatedStyle });
-  items6[2] = dismiss(height(4946), { ref: animatedRef, style: animatedStyle2, children: tmp30 });
+  items6[0] = dismiss(height(10682), obj17);
+  items6[1] = dismiss(height(5014).View, { style: animatedStyle });
+  items6[2] = dismiss(height(5015), { ref: animatedRef, style: animatedStyle2, children: tmp30 });
   const obj18 = { style: items7, pointerEvents: str, children: renderOverlay(dismiss, overlayEnabled) };
   items7 = [first, animatedStyle1];
   str = "none";
   const tmp31 = translatePos;
   const tmp32 = animatedRef;
-  const tmp33 = height(4946);
+  const tmp33 = height(5015);
   const tmp7 = _require;
   if (tmp5) {
     str = "box-none";
   }
   items6[3] = dismiss(tmp33, obj18);
-  items6[4] = dismiss(tmp(11230), {});
+  items6[4] = dismiss(tmp(11244), {});
   const children = tmp31(tmp32, obj16);
-  return dismiss(tmp7(7130).AnalyticsLocationProvider, { value: analyticsLocations, children });
+  return dismiss(tmp7(7199).AnalyticsLocationProvider, { value: analyticsLocations, children });
 }
 ({ View: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);

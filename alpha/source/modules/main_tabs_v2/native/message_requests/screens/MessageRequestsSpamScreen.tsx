@@ -1,12 +1,12 @@
-// Module ID: 18043
-// Function ID: 18044
+// Module ID: 18072
+// Function ID: 18073
 // Name: MessageRequestsSpamScreen
-// Dependencies: [19, 21, 558, 576, 18041, 2]
+// Dependencies: [19, 21, 558, 576, 18070, 2]
 
-// Module 18043 (MessageRequestsSpamScreen)
+// Module 18072 (MessageRequestsSpamScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SpamMessageListDefault from "SpamMessageList" /* 18041 */;
+import SpamMessageListDefault from "SpamMessageList" /* 18070 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

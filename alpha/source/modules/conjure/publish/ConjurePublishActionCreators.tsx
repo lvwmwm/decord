@@ -1,21 +1,21 @@
-// Module ID: 11057
-// Function ID: 11058
+// Module ID: 11071
+// Function ID: 11072
 // Name: ConjurePublishActionCreators
-// Dependencies: [5, 1392, 6293, 10993, 1087, 10997, 1297, 10999, 584, 8579, 6357, 11058, 11015, 11061, 2]
-// Exports: refreshPublishedProject, trackPublishFailed, unpublishUserApp
+// Dependencies: [5, 1392, 6721, 11005, 1087, 11009, 1297, 11011, 584, 8595, 11072, 11031, 11075, 2]
+// Exports: refreshPreviewApplication, refreshPublishedProject, trackPublishFailed, unpublishUserApp
 
-// Module 11057 (ConjurePublishActionCreators)
+// Module 11071 (ConjurePublishActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6357 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10997 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 11015 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11058 */;
-import conjureLiveRelaunch from "conjureLiveRelaunch" /* 11061 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 11009 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11011 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 11031 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11072 */;
+import conjureLiveRelaunch from "conjureLiveRelaunch" /* 11075 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6293 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10993 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6721 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11005 */;
 import size from "module_2" /* 2 */;
 
 let also_remove_preview_bot, closure_4, ok;
@@ -61,7 +61,7 @@ let obj = function _unpublishProject() {
               ({ guildId: c1, alsoRemovePreviewBot: c2 } = closure_1);
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -260,7 +260,7 @@ obj = function _refreshPublishedProject() {
             obj8 = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -408,8 +408,8 @@ obj = function _refreshPublishedApplication() {
               const obj5 = DispatcherDefault;
               obj5.dispatch(obj4);
               const items = [, ];
-              const obj7 = ApplicationActionCreators;
-              items[0] = obj7.fetchApplication(applicationId);
+              const obj7 = ConjureActionCreators;
+              items[0] = obj7.fetchConjureApplication(applicationId);
               const obj8 = ApplicationWidgetConfigActions;
               const widgetConfigs = obj8.fetchWidgetConfigs(applicationId, { force: true });
               items[1] = widgetConfigs.catch(() => {
@@ -479,4 +479,7 @@ export const unpublishUserApp = function unpublishUserApp() {
 };
 export const refreshPublishedProject = function refreshPublishedProject() {
   return obj(...arguments);
+};
+export const refreshPreviewApplication = function refreshPreviewApplication(arg0) {
+  return refreshPublishedApplication(arg0, true, null);
 };

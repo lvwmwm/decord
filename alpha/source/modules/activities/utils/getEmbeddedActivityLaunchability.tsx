@@ -1,19 +1,19 @@
-// Module ID: 11272
-// Function ID: 11273
+// Module ID: 11286
+// Function ID: 11287
 // Name: getEmbeddedActivityLaunchability
-// Dependencies: [2068, 2090, 4845, 5212, 2026, 1087, 11247, 6180, 558, 576, 504, 1128, 2]
+// Dependencies: [4800, 4822, 4880, 5591, 2026, 1087, 11261, 6610, 558, 576, 504, 1128, 2]
 // Exports: getEmbeddedActivityLaunchabilityForChannel, getEmbeddedActivityLaunchabilityLabel
 
-// Module 11272 (getEmbeddedActivityLaunchability)
+// Module 11286 (getEmbeddedActivityLaunchability)
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
 import Constants2 from "Constants" /* 2026 */;
-import AgeGateUtils from "AgeGateUtils" /* 6180 */;
-import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 11247 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import VoiceStateStore from "VoiceStateStore" /* 5212 */;
+import AgeGateUtils from "AgeGateUtils" /* 6610 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 11261 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
+import GuildStore from "GuildStore" /* 4822 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
+import VoiceStateStore from "VoiceStateStore" /* 5591 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

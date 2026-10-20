@@ -1,19 +1,19 @@
-// Module ID: 11044
-// Function ID: 11045
+// Module ID: 11059
+// Function ID: 11060
 // Name: launchFrame
-// Dependencies: [5, 6295, 6296, 6298, 11045, 584, 11047, 6313, 11048, 11054, 11041, 2]
+// Dependencies: [5, 6723, 6724, 5570, 11060, 584, 11021, 6726, 11062, 11068, 11056, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFrameRunsInBackground, updateFramePanelMode
 
-// Module 11044 (launchFrame)
+// Module 11059 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6298 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6313 */;
-import leaveFrame from "leaveFrame" /* 11041 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 11045 */;
-import createProxyTicket from "createProxyTicket" /* 11047 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5570 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6726 */;
+import createProxyTicket from "createProxyTicket" /* 11021 */;
+import leaveFrame from "leaveFrame" /* 11056 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 11060 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 6295 */;
-import FramesConstants from "FramesConstants" /* 6296 */;
+import FramesStore from "FramesStore" /* 6723 */;
+import FramesConstants from "FramesConstants" /* 6724 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, dispatchResult1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
@@ -79,7 +79,7 @@ let obj = function _launchFrame() {
               message = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -235,7 +235,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === hasOwnProperty.MAIN) {
-        const tmp4Result = tmp4(11041);
+        const tmp4Result = tmp4(11056);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);

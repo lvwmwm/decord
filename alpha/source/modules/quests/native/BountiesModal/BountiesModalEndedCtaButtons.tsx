@@ -1,24 +1,24 @@
-// Module ID: 16075
-// Function ID: 16076
+// Module ID: 16104
+// Function ID: 16105
 // Name: BountiesModalEndedCtaButtons
-// Dependencies: [21, 5191, 587, 558, 576, 9504, 4945, 5192, 5195, 16074, 5479, 9506, 6235, 6233, 7681, 1128, 2]
+// Dependencies: [21, 4945, 587, 558, 576, 9520, 5014, 5167, 5170, 16103, 5205, 9522, 6665, 6663, 7744, 1128, 2]
 
-// Module 16075 (BountiesModalEndedCtaButtons)
+// Module 16104 (BountiesModalEndedCtaButtons)
 import nativeDefault from "native" /* 587 */;
-import timing from "timing" /* 5192 */;
-import QuestContent from "QuestContent" /* 6233 */;
-import AdCreativeType from "AdCreativeType" /* 6235 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7681 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9506 */;
+import timing from "timing" /* 5167 */;
+import QuestContent from "QuestContent" /* 6663 */;
+import AdCreativeType from "AdCreativeType" /* 6665 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7744 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9522 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let tmp;
-const timingPresets = tmp(5195);
+const timingPresets = tmp(5170);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles(() => {
   const obj = { container: { gap: nativeDefault.space.PX_8 } };
@@ -155,9 +155,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesModa
     flag = false;
   }
   let tmp = closure_5();
-  let obj = bounty(9504);
+  let obj = bounty(9520);
   let closure_3 = obj.useGetQuestImpressionId();
-  let obj2 = bounty(4945);
+  let obj2 = bounty(5014);
   const fn = function y() {
     let num = 0;
     const withTiming = timing.withTiming;
@@ -168,16 +168,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesModa
     const obj = { opacity: withTiming(num, timingPresets.timingStandard) };
     return obj;
   };
-  fn.__closure = { withTiming: bounty(5192).withTiming, visible, timingStandard: bounty(5195).timingStandard };
+  fn.__closure = { withTiming: bounty(5167).withTiming, visible, timingStandard: bounty(5170).timingStandard };
   fn.__workletHash = 5587342121093;
   fn.__initData = __initData2;
-  ({ withTiming: bounty(5192).withTiming, visible, timingStandard: bounty(5195).timingStandard });
+  ({ withTiming: bounty(5167).withTiming, visible, timingStandard: bounty(5170).timingStandard });
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  bounty(16074);
+  bounty(16103);
   if (visible) {
     const obj4 = { style: items, children: items1 };
     items = [tmp.container, animatedStyle];
-    const View = visible(4945).View;
+    const View = visible(5014).View;
     const obj5 = {
       variant: "primary-overlay",
       text: tmp6.buttonLabel,
@@ -190,13 +190,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesModa
           const result = openAdGameLinkDirectly(obj, obj2);
         }
     };
-    items1 = [closure_3(tmp2(5479).Button, obj5), ];
+    items1 = [closure_3(tmp2(5205).Button, obj5), ];
     let tmp9Result = null;
     const tmp7 = closure_4;
     const tmp9 = closure_3;
     if (showCloseButton) {
       const obj6 = { variant: "secondary-overlay", text: intl.string(bounty(1128).t.cpT0Cq), size: "lg", disabled: flag, onPress: onClose };
-      const Button = tmp2(5479).Button;
+      const Button = tmp2(5205).Button;
       intl = tmp2(1128).intl;
       tmp9Result = tmp9(Button, obj6);
     }

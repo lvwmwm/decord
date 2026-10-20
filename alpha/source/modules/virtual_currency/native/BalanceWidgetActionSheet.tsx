@@ -1,25 +1,25 @@
-// Module ID: 13736
-// Function ID: 13737
+// Module ID: 13770
+// Function ID: 13771
 // Name: BalanceWidgetActionSheet
-// Dependencies: [19, 17, 1087, 2065, 21, 13737, 13738, 13739, 1128, 4895, 2131, 4929, 4913, 587, 1267, 5033, 2052, 4922, 7118, 5128, 8699, 7122, 13740, 9331, 5187, 5479, 5191, 1384, 2]
+// Dependencies: [19, 17, 1087, 4797, 21, 13771, 13772, 13773, 1128, 5617, 2068, 4959, 5213, 587, 1267, 4970, 4784, 4999, 5226, 5631, 8715, 5543, 13774, 9347, 5195, 5205, 4945, 1384, 2]
 // Exports: default
 
-// Module 13736 (BalanceWidgetActionSheet)
+// Module 13770 (BalanceWidgetActionSheet)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import dismissible_content from "dismissible_content" /* 2052 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
-import _mod13737 from "module_13737" /* 13737 */;
-import _mod13738 from "module_13738" /* 13738 */;
-import _mod13739 from "module_13739" /* 13739 */;
+import dismissible_content from "dismissible_content" /* 4784 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4797 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4970 */;
+import _mod13771 from "module_13771" /* 13771 */;
+import _mod13772 from "module_13772" /* 13772 */;
+import _mod13773 from "module_13773" /* 13773 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -103,7 +103,7 @@ export default function _default(balance) {
     let intl;
     let tmp = null;
     if (num > 4100) {
-      const obj = { backgroundVideo: _mod13737.default, backgroundImage: _mod13738.default, bannerImage: _mod13739.default, bannerText: intl.string(intl3.t.LaMEFL) };
+      const obj = { backgroundVideo: _mod13771.default, backgroundImage: _mod13772.default, bannerImage: _mod13773.default, bannerText: intl.string(intl3.t.LaMEFL) };
       intl = intl3.intl;
       tmp = obj;
     }
@@ -124,7 +124,7 @@ export default function _default(balance) {
     if (!obj3.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL)) {
       const obj4 = { dismissAction: ContentDismissActionType.AUTO_DISMISS };
       const tmp3Result = DismissibleContentUnsafeUtils;
-      const result = tmp3Result.UNSAFE_markDismissibleContentAsDismissed(tmp3(2052).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL, obj4);
+      const result = tmp3Result.UNSAFE_markDismissibleContentAsDismissed(tmp3(4784).DismissibleContent.VIRTUAL_CURRENCY_MOBILE_ONBOARDING_PILL, obj4);
     }
   }, []);
   let obj2 = { theme: themeOverride, children: closure_11(BottomSheet, obj3) };

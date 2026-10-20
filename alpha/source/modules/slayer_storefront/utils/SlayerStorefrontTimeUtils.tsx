@@ -1,15 +1,15 @@
-// Module ID: 10414
-// Function ID: 10415
+// Module ID: 10428
+// Function ID: 10429
 // Name: SlayerStorefrontTimeUtils
-// Dependencies: [32, 19, 4797, 1104, 558, 576, 7434, 1128, 3753, 2]
+// Dependencies: [32, 19, 2050, 1104, 558, 576, 7501, 1128, 3690, 2]
 
-// Module 10414 (SlayerStorefrontTimeUtils)
+// Module 10428 (SlayerStorefrontTimeUtils)
 import react2 from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import intl4 from "intl" /* 1128 */;
-import _modDef3753 from "module_3753" /* 3753 */;
-import _modDef4797 from "module_4797" /* 4797 */;
-import useIntervalDefault from "useInterval" /* 7434 */;
+import _modDef2050 from "module_2050" /* 2050 */;
+import _modDef3690 from "module_3690" /* 3690 */;
+import useIntervalDefault from "useInterval" /* 7501 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -26,8 +26,8 @@ function getLimitedOfferTimeLeft(arg0) {
   if (null == arg0) {
     return null;
   } else {
-    const obj2 = _modDef4797(arg0);
-    const diffResult = obj2.diff(_modDef4797(), "seconds");
+    const obj2 = _modDef2050(arg0);
+    const diffResult = obj2.diff(_modDef2050(), "seconds");
     let tmp4 = null;
     if (diffResult > 0) {
       const time = { days: Math.floor(diffResult / DurationsDefault.Seconds.DAY), hours: floor(result / DurationsDefault.Seconds.HOUR), minutes: floor2(result1 / DurationsDefault.Seconds.MINUTE), seconds: diffResult % DurationsDefault.Seconds.MINUTE };
@@ -59,13 +59,13 @@ function formatLimitedOfferTimeLeft(arg0) {
     } else if (hours > 0) {
       const intl2 = intl4.intl;
       const obj3 = { hours };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef3753.PPaJSw, obj3);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef3690.PPaJSw, obj3);
     } else {
       const intl = intl4.intl;
       const formatToPlainString = intl.formatToPlainString;
       const _Math = Math;
       const obj = { minutes: Math.max(tmp13, 1) };
-      const prop = _modDef3753["7Z+aIf"];
+      const prop = _modDef3690["7Z+aIf"];
       formatToPlainStringResult = formatToPlainString(prop, obj);
     }
     return formatToPlainStringResult;

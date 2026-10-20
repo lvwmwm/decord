@@ -1,13 +1,13 @@
-// Module ID: 18171
-// Function ID: 18172
+// Module ID: 18202
+// Function ID: 18203
 // Name: useIsConnectedToVoiceChannel
-// Dependencies: [502, 5209, 5212, 1087, 558, 576, 504, 2]
+// Dependencies: [502, 5676, 5591, 1087, 558, 576, 504, 2]
 
-// Module 18171 (useIsConnectedToVoiceChannel)
+// Module 18202 (useIsConnectedToVoiceChannel)
 import Constants from "Constants" /* 1087 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
-import VoiceStateStore from "VoiceStateStore" /* 5212 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5676 */;
+import VoiceStateStore from "VoiceStateStore" /* 5591 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

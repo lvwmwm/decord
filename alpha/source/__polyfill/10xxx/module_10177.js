@@ -1,9 +1,9 @@
 // Module ID: 10177
 // Function ID: 10178
-// Dependencies: [41, 42, 93, 95, 96, 98, 10133]
+// Dependencies: [41, 42, 93, 95, 96, 98, 10147]
 
 // Module 10177
-import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10133 */;
+import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10147 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
@@ -26,12 +26,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FRTimeExpressionParser {
+class DETimeExpressionParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, FRTimeExpressionParser);
-    const obj = _getPrototypeOf(FRTimeExpressionParser);
+    _classCallCheck(this, DETimeExpressionParser);
+    const obj = _getPrototypeOf(DETimeExpressionParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
@@ -43,11 +43,11 @@ class FRTimeExpressionParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FRTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
+_inherits(DETimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
 const entry = {
   key: "primaryPrefix",
   value: function primaryPrefix() {
-    return "(?:(?:[\u00E0a])\\s*)?";
+    return "(?:(?:um|von)\\s*)?";
   }
 };
 let items = [
@@ -55,7 +55,7 @@ let items = [
   {
     key: "followingPhase",
     value: function followingPhase() {
-      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|[\u00E0a]|\\?)\\s*";
+      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|bis)\\s*";
     }
   },
   {
@@ -65,7 +65,7 @@ let items = [
       const str = arg1[0];
       if (!str.match(/^\s*\d{4}\s*$/)) {
         const self = this;
-        let fn = _get(_getPrototypeOf(FRTimeExpressionParser.prototype), "extractPrimaryTimeComponents", this);
+        let fn = _get(_getPrototypeOf(DETimeExpressionParser.prototype), "extractPrimaryTimeComponents", this);
         if (typeof fn === "function") {
           fn = (items) => fn.apply(self, items);
         }
@@ -77,4 +77,4 @@ let items = [
   }
 ];
 
-export default _createClass(FRTimeExpressionParser, items);
+export default _createClass(DETimeExpressionParser, items);

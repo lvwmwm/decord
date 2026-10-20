@@ -1,22 +1,22 @@
-// Module ID: 6338
-// Function ID: 6339
+// Module ID: 6738
+// Function ID: 6739
 // Name: ActiveThreadsStore
-// Dependencies: [2072, 2068, 12, 504, 11, 584, 2]
+// Dependencies: [4804, 4800, 12, 504, 11, 584, 2]
 
-// Module 6338 (ActiveThreadsStore)
+// Module 6738 (ActiveThreadsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelRecord from "ChannelRecord" /* 2072 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import ChannelRecord from "ChannelRecord" /* 4804 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
 import size from "module_2" /* 2 */;
 
 let closure_5, importDefault;
 
 let c2;
 let c3;
-const f94192 = (type) => set.has(type.type);
+const f95468 = (type) => set.has(type.type);
 function handleThreadCreateOrUpdate(channel) {
   channel = channel.channel;
   if (set.has(channel.type)) {
@@ -140,7 +140,7 @@ let obj = {
       if (tmp) {
         closure_5[threads.id] = {};
         threads = threads.threads;
-        const found = threads.filter(f94192);
+        const found = threads.filter(f95468);
         const item = found.forEach((id) => {
           id = threads.id;
           const parent_id = id.parent_id;
@@ -183,7 +183,7 @@ let obj = {
     if (tmp) {
       closure_5[guild.id] = {};
       const threads = guild.threads;
-      const found = threads.filter(f94192);
+      const found = threads.filter(f95468);
       const item = found.forEach((id) => {
         id = threads.id;
         const parent_id = id.parent_id;

@@ -1,68 +1,57 @@
 // Module ID: 12504
 // Function ID: 12505
-// Dependencies: [12392, 12389, 12502]
-// Exports: callFrameToStackFrame, watchdogTimer
+// Dependencies: [12433, 12434, 12406]
 
 // Module 12504
-import _mod12389 from "module_12389" /* 12389 */;
-import _mod12392 from "module_12392" /* 12392 */;
-import _mod12502 from "module_12502" /* 12502 */;
-
-let navigation;
+import _mod12433 from "module_12433" /* 12433 */;
+import _mod12434 from "module_12434" /* 12434 */;
 
 
-export const callFrameToStackFrame = function callFrameToStackFrame(location, str, fn) {
-  let filenameIsInAppResult;
-  let replaced;
-  if (str) {
-    replaced = str.replace(/^file:\/\//, "");
-  }
-  let sum;
-  if (location.location.columnNumber) {
-    sum = location.location.columnNumber + 1;
-  }
-  let sum1;
-  if (location.location.lineNumber) {
-    sum1 = location.location.lineNumber + 1;
-  }
-  const tmp6 = _mod12392;
-  const dropUndefinedKeys = tmp6.dropUndefinedKeys;
-  const obj = { filename: replaced, module: fn(replaced), function: location.functionName || _mod12389.UNKNOWN_FUNCTION, colno: sum, lineno: sum1, in_app: filenameIsInAppResult };
-  filenameIsInAppResult = undefined;
-  location.functionName || _mod12389.UNKNOWN_FUNCTION;
-  if (replaced) {
-    const tmp4Result = _mod12502;
-    filenameIsInAppResult = tmp4Result.filenameIsInApp(replaced);
-  }
-  return dropUndefinedKeys(obj);
-};
-export const watchdogTimer = function watchdogTimer(fn, arg1, arg2, arg3) {
-  let closure_0 = arg1;
-  let closure_1 = arg2;
-  let closure_2 = arg3;
-  navigation = fn();
-  let c4 = false;
-  let c5 = true;
-  const timerId = setInterval(() => {
-    const timeMs = navigation.getTimeMs();
-    const tmp2 = false === c4 && timeMs > closure_0 + closure_1;
-    if (tmp2) {
-      c4 = true;
-      const tmp5 = c5;
-      if (tmp5) {
-        closure_2();
+export const profiler = {
+  startProfiler() {
+    const obj = _mod12433;
+    const client = obj.getClient();
+    if (client) {
+      const integrationByName = client.getIntegrationByName("ProfilingIntegration");
+      if (integrationByName) {
+        const tmp6 = integrationByName && undefined !== integrationByName._profiler && typeof integrationByName._profiler.start === "function" && typeof integrationByName._profiler.stop === "function";
+        if (tmp6) {
+          const _profiler = integrationByName._profiler;
+          _profiler.start();
+        } else if (_mod12434.DEBUG_BUILD) {
+          const logger3 = tmp(12406).logger;
+          logger3.warn("Profiler is not available on profiling integration.");
+        }
+      } else if (_mod12434.DEBUG_BUILD) {
+        const logger2 = tmp(12406).logger;
+        logger2.warn("ProfilingIntegration is not available");
       }
+    } else if (_mod12434.DEBUG_BUILD) {
+      const logger = tmp(12406).logger;
+      logger.warn("No Sentry client available, profiling is not started");
     }
-    if (timeMs < closure_0 + closure_1) {
-      c4 = false;
+  },
+  stopProfiler() {
+    const obj = _mod12433;
+    const client = obj.getClient();
+    if (client) {
+      const integrationByName = client.getIntegrationByName("ProfilingIntegration");
+      if (integrationByName) {
+        const tmp6 = integrationByName && undefined !== integrationByName._profiler && typeof integrationByName._profiler.start === "function" && typeof integrationByName._profiler.stop === "function";
+        if (tmp6) {
+          const _profiler = integrationByName._profiler;
+          _profiler.stop();
+        } else if (_mod12434.DEBUG_BUILD) {
+          const logger3 = tmp(12406).logger;
+          logger3.warn("Profiler is not available on profiling integration.");
+        }
+      } else if (_mod12434.DEBUG_BUILD) {
+        const logger2 = tmp(12406).logger;
+        logger2.warn("ProfilingIntegration is not available");
+      }
+    } else if (_mod12434.DEBUG_BUILD) {
+      const logger = tmp(12406).logger;
+      logger.warn("No Sentry client available, profiling is not started");
     }
-  }, 20);
-  return {
-    poll() {
-      navigation.reset();
-    },
-    enabled(arg0) {
-      c5 = arg0;
-    }
-  };
+  }
 };

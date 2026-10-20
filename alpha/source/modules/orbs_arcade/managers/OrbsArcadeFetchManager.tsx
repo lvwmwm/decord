@@ -1,0 +1,153 @@
+// Module ID: 19069
+// Function ID: 19070
+// Name: OrbsArcadeFetchManager
+// Dependencies: [19070, 1104, 7162, 19072, 2]
+
+// Module 19069 (OrbsArcadeFetchManager)
+import DurationsDefault from "Durations" /* 1104 */;
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 19072 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 19070 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7162 */;
+import size from "module_2" /* 2 */;
+
+let gameStateForGame, orbsArcadeGames;
+
+const MINUTE = DurationsDefault.Millis.MINUTE;
+let closure_4 = 5 * DurationsDefault.Millis.MINUTE;
+let closure_5 = 5 * DurationsDefault.Millis.MINUTE;
+const DAY = DurationsDefault.Millis.DAY;
+class OrbsArcadeFetchManager extends AutomaticLifecycleManager {
+  constructor() {
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    require = applyArgumentsResult;
+    applyArgumentsResult.reconnectRefetchTimerId = null;
+    applyArgumentsResult.boundaryRefetchTimerId = null;
+    applyArgumentsResult.scheduledBoundaryAt = null;
+    applyArgumentsResult.lastLocaleRefetchAt = 0;
+    applyArgumentsResult.handlePostConnectionOpen = function handlePostConnectionOpen() {
+      window.clearTimeout(require.reconnectRefetchTimerId);
+      const tmp = require;
+      if (require.hasFetched()) {
+        const _window = window;
+        const _Math = Math;
+        const _Math2 = Math;
+        tmp.reconnectRefetchTimerId = window.setTimeout(() => {
+          const obj = closure_1_0(closure_1_1[3]);
+          return obj.fetchOrbsArcadeGames();
+        }, Math.floor(Math.random() * MINUTE));
+      }
+    };
+    applyArgumentsResult.handleUserSettingsProtoUpdate = function handleUserSettingsProtoUpdate(settings) {
+      let tmp = !("localization" in settings.settings.proto);
+      const wasSaved = settings.wasSaved;
+      if (!tmp) {
+        tmp = !settings.partial;
+      }
+      if (!tmp) {
+        tmp = wasSaved;
+      }
+      if (!tmp) {
+        tmp = !require.hasFetched();
+      }
+      if (!tmp) {
+        const _Date = Date;
+        tmp = Date.now() - require.lastLocaleRefetchAt <= closure_4;
+      }
+      if (!tmp) {
+        const _Date2 = Date;
+        require.lastLocaleRefetchAt = Date.now();
+        const obj = OrbsArcadeActionCreators;
+        orbsArcadeGames = obj.fetchOrbsArcadeGames();
+      }
+    };
+    applyArgumentsResult.handleGameStateUpdate = function handleGameStateUpdate(game_id) {
+      game_id = game_id.game_id;
+      orbsArcadeGames = orbsArcadeGames.orbsArcadeGames;
+      const game_state = game_id.game_state;
+      const found = orbsArcadeGames.find((id) => id.id === game_id);
+      const tmp2 = null != found && found.versionId !== game_state.game_version_id;
+      if (tmp2) {
+        const obj = OrbsArcadeActionCreators;
+        const orbsArcadeGames1 = obj.fetchOrbsArcadeGames();
+      }
+    };
+    applyArgumentsResult.handleLogout = function handleLogout() {
+      require.clearTimers();
+      require.lastLocaleRefetchAt = 0;
+    };
+    applyArgumentsResult.handleStoreChange = function handleStoreChange() {
+      let tmp3 = null;
+      if (require.hasFetched()) {
+        const _Date = Date;
+        let closure_0 = Date.now();
+        orbsArcadeGames = OrbsArcadeStore.orbsArcadeGames;
+        let items = [];
+        HermesBuiltin.arraySpread(items, orbsArcadeGames.flatMap((id) => {
+          const items = [, , ];
+          ({ startsAt: arr[0], endsAt: arr[1] } = id);
+          gameStateForGame = gameStateForGame.getGameStateForGame(id.id);
+          let expiresAt;
+          if (gameStateForGame != null) {
+            expiresAt = gameStateForGame.expiresAt;
+          }
+          items[2] = expiresAt;
+          return items;
+        }), 0);
+        const found = items.filter((item) => null != item);
+        const mapped = found.map((item) => Date.parse(item));
+        const found1 = mapped.filter((item) => item > closure_0);
+        let applyResult = null;
+        if (found1.length > 0) {
+          const _Math = Math;
+          const items1 = [];
+          HermesBuiltin.arraySpread(items1, found1, 0);
+          const _Math2 = Math;
+          applyResult = HermesBuiltin.apply(min, items1, Math);
+        }
+        tmp3 = applyResult;
+      }
+      if (tmp3 !== require.scheduledBoundaryAt) {
+        const _window2 = window;
+        window.clearTimeout(require.boundaryRefetchTimerId);
+        require.boundaryRefetchTimerId = null;
+        require.scheduledBoundaryAt = tmp3;
+        if (null != tmp3) {
+          const _Math3 = Math;
+          const _Date2 = Date;
+          const min2 = Math.min;
+          const _Math4 = Math;
+          const _Math5 = Math;
+          const diff = tmp3 - Date.now();
+          const _window = window;
+          require.boundaryRefetchTimerId = window.setTimeout(() => {
+            closure_1_0.boundaryRefetchTimerId = null;
+            closure_1_0.scheduledBoundaryAt = null;
+            const obj = OrbsArcadeActionCreators;
+            orbsArcadeGames = obj.fetchOrbsArcadeGames();
+          }, min2(diff + Math.floor(Math.random() * closure_5), DAY));
+        }
+      }
+    };
+    applyArgumentsResult.actions = { POST_CONNECTION_OPEN: applyArgumentsResult.handlePostConnectionOpen, USER_SETTINGS_PROTO_UPDATE: applyArgumentsResult.handleUserSettingsProtoUpdate, ORBS_ARCADE_GAME_STATE_UPDATE: applyArgumentsResult.handleGameStateUpdate, LOGOUT: applyArgumentsResult.handleLogout };
+    let items = [OrbsArcadeStore, applyArgumentsResult.handleStoreChange];
+    let items1 = [items];
+    applyArgumentsResult.stores = new Map(items1);
+    new Map(items1);
+    return applyArgumentsResult;
+  }
+  hasFetched() {
+    return null != OrbsArcadeStore.lastFetchedOrbsArcadeGamesAt;
+  }
+  clearTimers() {
+    window.clearTimeout(this.reconnectRefetchTimerId);
+    window.clearTimeout(this.boundaryRefetchTimerId);
+    this.reconnectRefetchTimerId = null;
+    this.boundaryRefetchTimerId = null;
+    this.scheduledBoundaryAt = null;
+  }
+}
+const prototype = OrbsArcadeFetchManager.prototype;
+const orbsArcadeFetchManager = new OrbsArcadeFetchManager();
+const result = size.fileFinishedImporting("modules/orbs_arcade/managers/OrbsArcadeFetchManager.tsx");
+
+export default orbsArcadeFetchManager;

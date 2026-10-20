@@ -1,14 +1,14 @@
-// Module ID: 16951
-// Function ID: 16952
+// Module ID: 16980
+// Function ID: 16981
 // Name: CollectiblesProgressiveImage
-// Dependencies: [109, 19, 17, 21, 558, 576, 4945, 5192, 5128, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 5014, 5167, 5631, 2]
 
-// Module 16951 (CollectiblesProgressiveImage)
+// Module 16980 (CollectiblesProgressiveImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import timing from "timing" /* 5192 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
+import timing from "timing" /* 5167 */;
+import FastImageDefault from "FastImage" /* 5631 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -51,9 +51,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
     tmp4 = cResult[1];
     tmp5 = cResult[2];
   }
-  const tmpResult = tmp(4945);
+  const tmpResult = tmp(5014);
   sharedValue = tmpResult.useSharedValue(0);
-  const tmpResult2 = tmp(4945);
+  const tmpResult2 = tmp(5014);
   class I {
     constructor() {
       const obj = { opacity: sharedValue.get() };
@@ -136,7 +136,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
   ({ source, style } = arg0);
   let sharedValue;
   const merged = Object.assign(arg0, Object.assign({ source: 0, style: 0 }));
-  let obj = sharedValue(4945);
+  let obj = sharedValue(5014);
   sharedValue = obj.useSharedValue(0);
   const fn = function u() {
     const obj = { opacity: sharedValue.get() };
@@ -145,7 +145,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibl
   fn.__closure = { backgroundImageOpacity: sharedValue };
   fn.__workletHash = 13501599736881;
   fn.__initData = __initData2;
-  const obj2 = sharedValue(4945);
+  const obj2 = sharedValue(5014);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const items = [style, animatedStyle];
   const View = ReanimatedRexportDefault.View;

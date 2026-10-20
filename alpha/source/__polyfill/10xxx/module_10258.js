@@ -1,19 +1,15 @@
 // Module ID: 10258
 // Function ID: 10259
-// Dependencies: [41, 42, 93, 95, 98, 10119, 10248, 10146, 10250]
+// Dependencies: [41, 42, 93, 95, 98, 10151]
 
 // Module 10258
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10119 */;
-import REGEX_PARTS from "REGEX_PARTS" /* 10248 */;
-import AbstractParserWithLeftBoundaryChecking from "AbstractParserWithLeftBoundaryChecking" /* 10250 */;
+import _mod10151 from "module_10151" /* 10151 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-let tmp2;
-const _mod10146 = tmp2(10146);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,14 +25,31 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class RUWeekdayParser {
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class ZHHansMergeDateRangeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, RUWeekdayParser);
-    const obj = _getPrototypeOf(RUWeekdayParser);
+    _classCallCheck(this, ZHHansMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(ZHHansMergeDateRangeRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -46,58 +59,13 @@ class RUWeekdayParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(RUWeekdayParser, AbstractParserWithLeftBoundaryChecking.AbstractParserWithLeftRightBoundaryChecking);
+_inherits(ZHHansMergeDateRangeRefiner, fn(_mod10151).default);
 const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(?:(?:,|\\(|\uFF08)\\s*)?(?:\u0432\\s*?)?(?:(\u044D\u0442\u0443|\u044D\u0442\u043E\u0442|\u043F\u0440\u043E\u0448\u043B\u044B\u0439|\u043F\u0440\u043E\u0448\u043B\u0443\u044E|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0443\u044E|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0433\u043E)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(REGEX_PARTS.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:,|\\)|\uFF09))?(?:\\s*\u043D\u0430\\s*(\u044D\u0442\u043E\u0439|\u043F\u0440\u043E\u0448\u043B\u043E\u0439|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439)\\s*\u043D\u0435\u0434\u0435\u043B\u0435)?";
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*(至|到|-|~|～|－|ー)\s*$/i;
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const str = arg1[2];
-      const formatted = str.toLowerCase();
-      let str2 = arg1[1];
-      const tmp4 = REGEX_PARTS.WEEKDAY_DICTIONARY[formatted];
-      if (!str2) {
-        str2 = arg1[3];
-      }
-      if (!str2) {
-        str2 = "";
-      }
-      const formatted1 = str2.toLowerCase();
-      let str3 = "last";
-      if ("\u043F\u0440\u043E\u0448\u043B\u044B\u0439" != formatted1) {
-        str3 = "last";
-        if ("\u043F\u0440\u043E\u0448\u043B\u0443\u044E" != formatted1) {
-          str3 = "last";
-          if ("\u043F\u0440\u043E\u0448\u043B\u043E\u0439" != formatted1) {
-            str3 = "next";
-            if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439" != formatted1) {
-              str3 = "next";
-              if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0443\u044E" != formatted1) {
-                str3 = "next";
-                if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439" != formatted1) {
-                  str3 = "next";
-                  if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0433\u043E" != formatted1) {
-                    str3 = null;
-                    const tmp6 = "\u044D\u0442\u043E\u0442" != formatted1 && "\u044D\u0442\u0443" != formatted1 && "\u044D\u0442\u043E\u0439" != formatted1;
-                    if (!tmp6) {
-                      str3 = "this";
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      return _mod10146.createParsingComponentsAtWeekday(reference.reference, tmp4, str3);
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(RUWeekdayParser, items);
+export default _createClass(ZHHansMergeDateRangeRefiner, items);

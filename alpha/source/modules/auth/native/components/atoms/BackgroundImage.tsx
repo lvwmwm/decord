@@ -1,13 +1,13 @@
-// Module ID: 6934
-// Function ID: 6935
+// Module ID: 7016
+// Function ID: 7017
 // Name: BackgroundImage
-// Dependencies: [19, 17, 21, 558, 576, 5127, 5065, 6935, 6936, 5128, 2]
+// Dependencies: [19, 17, 21, 558, 576, 5166, 4952, 7017, 7018, 5631, 2]
 
-// Module 6934 (BackgroundImage)
+// Module 7016 (BackgroundImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useThemeDefault from "useTheme" /* 5127 */;
-import FastImageDefault from "FastImage" /* 5128 */;
+import useThemeDefault from "useTheme" /* 5166 */;
+import FastImageDefault from "FastImage" /* 5631 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ let dependencyMap;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const shared = tmp(5065);
+const shared = tmp(4952);
 ({ View: closure_4, StyleSheet: hasOwnProperty } = react_native);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackgroundImage(arg0) {
@@ -41,9 +41,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Background
     let tmp5Result;
     const tmpResult = shared;
     if (tmpResult.isThemeDark(tmp6)) {
-      tmp5Result = tmp5(6935);
+      tmp5Result = tmp5(7017);
     } else {
-      tmp5Result = tmp5(6936);
+      tmp5Result = tmp5(7018);
     }
     backgroundImageSource = tmp5Result;
   }
@@ -77,7 +77,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Background
   if (flag === undefined) {
     flag = false;
   }
-  let tmp = flag(5127)();
+  let tmp = flag(5166)();
   dependencyMap = tmp;
   let items = [backgroundImageSource, flag, tmp];
   const memo = react.useMemo(() => {
@@ -90,16 +90,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Background
       let tmp5Result;
       const obj2 = shared;
       if (obj2.isThemeDark(closure_2)) {
-        tmp5Result = tmp5(6935);
+        tmp5Result = tmp5(7017);
       } else {
-        tmp5Result = tmp5(6936);
+        tmp5Result = tmp5(7018);
       }
       tmp = tmp5Result;
     }
     return obj;
   }, items);
   let obj2 = {};
-  flag(5128);
+  flag(5631);
   const merged = Object.assign(memo);
   return <closure_4 style={closure_5.absoluteFill}>{null}</closure_4>;
 });

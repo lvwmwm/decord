@@ -1,15 +1,15 @@
-// Module ID: 6567
-// Function ID: 6568
+// Module ID: 6960
+// Function ID: 6961
 // Name: CircleErrorIcon
-// Dependencies: [109, 19, 17, 21, 558, 576, 587, 6568, 4912, 6569, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 587, 6961, 5630, 6962, 2]
 
-// Module 6567 (CircleErrorIcon)
+// Module 6960 (CircleErrorIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage3 from "BaseIconImage" /* 4912 */;
-import AssetRegistry from "AssetRegistry" /* 6568 */;
-import AssetRegistry2 from "AssetRegistry" /* 6569 */;
+import BaseIconImage3 from "BaseIconImage" /* 5630 */;
+import AssetRegistry from "AssetRegistry" /* 6961 */;
+import AssetRegistry2 from "AssetRegistry" /* 6962 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -123,7 +123,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CircleErro
         }
       }
       const obj4 = { source: tmp17, color: INTERACTIVE_ICON_DEFAULT, style: tmp19 };
-      const BaseIconImage2 = tmp2(4912).BaseIconImage;
+      const BaseIconImage2 = tmp2(5630).BaseIconImage;
       const merged = Object.assign(tmp5);
       const tmp27 = metroRequire(BaseIconImage2, obj4);
       cResult[14] = INTERACTIVE_ICON_DEFAULT;
@@ -134,7 +134,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CircleErro
     }
   }
   const obj5 = { source: tmp12, color: str, style: tmp6 };
-  const BaseIconImage = tmp2(4912).BaseIconImage;
+  const BaseIconImage = tmp2(5630).BaseIconImage;
   const merged1 = Object.assign(tmp5);
   const tmp16 = metroRequire(BaseIconImage, obj5);
   cResult[6] = tmp5;

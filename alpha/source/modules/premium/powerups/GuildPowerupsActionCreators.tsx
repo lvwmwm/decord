@@ -1,15 +1,15 @@
-// Module ID: 13179
-// Function ID: 13180
+// Module ID: 13211
+// Function ID: 13212
 // Name: GuildPowerupsActionCreators
-// Dependencies: [5104, 1087, 584, 13180, 5900, 1297, 13181, 1388, 2]
+// Dependencies: [5143, 1087, 584, 13212, 6337, 1297, 13213, 1388, 2]
 // Exports: disablePowerupForGuild, enablePowerupForGuild, fetchGuildBoostEntitlements, fetchPowerupCatalogForGuild, guildPowerupsAckNotification, guildPowerupsResetNotifications
 
-// Module 13179 (GuildPowerupsActionCreators)
+// Module 13211 (GuildPowerupsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5104 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

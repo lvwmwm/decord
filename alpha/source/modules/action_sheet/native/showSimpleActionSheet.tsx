@@ -1,10 +1,10 @@
-// Module ID: 7167
-// Function ID: 7168
+// Module ID: 7236
+// Function ID: 7237
 // Name: showSimpleActionSheet
-// Dependencies: [2, 7168]
+// Dependencies: [2, 7237]
 
-// Module 7167 (showSimpleActionSheet)
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7168 */;
+// Module 7236 (showSimpleActionSheet)
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7237 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/action_sheet/native/showSimpleActionSheet.tsx");

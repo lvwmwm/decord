@@ -1,10 +1,12 @@
 // Module ID: 10309
 // Function ID: 10310
-// Dependencies: [41, 42, 93, 95, 98, 10307, 10121, 10122, 10126]
+// Dependencies: [41, 42, 93, 95, 98, 10302, 10135, 10136, 10140]
 
 // Module 10309
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10126 */;
-import _mod10307 from "module_10307" /* 10307 */;
+import EmptyDuration from "EmptyDuration" /* 10135 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10136 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10140 */;
+import _mod10302 from "module_10302" /* 10302 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -26,18 +28,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(denna|den h\u00E4r|f\u00F6rra|passerade|n\u00E4sta|kommande|efter|\\+|-)\\s*(" + _mod10307.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-const regExp1 = new RegExp("(denna|den h\u00E4r|f\u00F6rra|passerade|n\u00E4sta|kommande|efter|\\+|-)\\s*(" + _mod10307.TIME_UNITS_NO_ABBR_PATTERN + ")(?=\\W|$)", "i");
-class SVTimeUnitCasualRelativeFormatParser {
-  constructor() {
+const regExp = new RegExp("(" + _mod10302.TIME_UNITS_PATTERN + ")\\s{0,5}(?:fa|prima|precedente)(?=(?:\\W|$))", "i");
+const regExp1 = new RegExp("(" + _mod10302.TIME_UNITS_PATTERN + ")\\s{0,5}fa(?=(?:\\W|$))", "i");
+class ENTimeUnitAgoFormatParser {
+  constructor(strictMode) {
     let constructResult;
-    let flag = arg0;
-    if (arg0 === undefined) {
-      flag = true;
-    }
     const self = this;
-    _classCallCheck(this, SVTimeUnitCasualRelativeFormatParser);
-    const obj = _getPrototypeOf(SVTimeUnitCasualRelativeFormatParser);
+    _classCallCheck(this, ENTimeUnitAgoFormatParser);
+    const obj = _getPrototypeOf(ENTimeUnitAgoFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -47,15 +45,15 @@ class SVTimeUnitCasualRelativeFormatParser {
       constructResult = obj.apply(self, undefined);
     }
     const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.allowAbbreviations = flag;
+    tmp3Result.strictMode = strictMode;
     return tmp3Result;
   }
 }
-_inherits(SVTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
-    return this.allowAbbreviations ? regExp : regExp1;
+    return this.strictMode ? regExp1 : regExp;
   }
 };
 const items = [
@@ -63,24 +61,12 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const str = arg1[1];
-      const formatted = str.toLowerCase();
-      const parseDurationResult = _mod10307.parseDuration(arg1[2]);
-      if (parseDurationResult) {
-        if ("f\u00F6rra" !== formatted) {
-          let reverseDurationResult;
-          if ("passerade" !== formatted) {
-            reverseDurationResult = parseDurationResult;
-          }
-          const ParsingComponents = tmp2(10122).ParsingComponents;
-          return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
-        }
-        reverseDurationResult = tmp2(10121).reverseDuration(parseDurationResult);
-      } else {
-        return null;
-      }
+      const parseDurationResult = _mod10302.parseDuration(arg1[1]);
+      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
     }
   }
 ];
 
-export default _createClass(SVTimeUnitCasualRelativeFormatParser, items);
+export default _createClass(ENTimeUnitAgoFormatParser, items);

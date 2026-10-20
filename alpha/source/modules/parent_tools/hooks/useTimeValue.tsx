@@ -1,11 +1,11 @@
-// Module ID: 15983
-// Function ID: 15984
+// Module ID: 16012
+// Function ID: 16013
 // Name: useTimeValue
-// Dependencies: [19, 558, 576, 2, 13514]
+// Dependencies: [19, 558, 576, 2, 13548]
 
-// Module 15983 (useTimeValue)
+// Module 16012 (useTimeValue)
 import react2 from "react" /* 576 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 13514 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 13548 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

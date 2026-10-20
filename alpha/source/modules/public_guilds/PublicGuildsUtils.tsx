@@ -1,15 +1,15 @@
-// Module ID: 8333
-// Function ID: 8334
+// Module ID: 8349
+// Function ID: 8350
 // Name: PublicGuildsUtils
-// Dependencies: [8334, 1087, 8335, 8336, 1267, 5206, 2]
+// Dependencies: [8350, 1087, 8351, 8352, 1267, 5673, 2]
 // Exports: getPublicSystemMessageAvatar, isPublicSystemMessage, trackEnableCommunityFlow
 
-// Module 8333 (PublicGuildsUtils)
+// Module 8349 (PublicGuildsUtils)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
-import isCrosspostDefault from "isCrosspost" /* 8335 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8334 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5673 */;
+import isCrosspostDefault from "isCrosspost" /* 8351 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8350 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

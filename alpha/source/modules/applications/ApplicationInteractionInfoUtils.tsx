@@ -1,11 +1,11 @@
-// Module ID: 9941
-// Function ID: 9942
+// Module ID: 9955
+// Function ID: 9956
 // Name: ApplicationInteractionInfoUtils
-// Dependencies: [5542, 2000, 2]
+// Dependencies: [5974, 2000, 2]
 // Exports: canViewInteractionInfo, isPrimaryEntryPointCommandMessage
 
-// Module 9941 (ApplicationInteractionInfoUtils)
-import InteractionTypes from "InteractionTypes" /* 5542 */;
+// Module 9955 (ApplicationInteractionInfoUtils)
+import InteractionTypes from "InteractionTypes" /* 5974 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;

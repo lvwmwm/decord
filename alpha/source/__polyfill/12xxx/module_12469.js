@@ -1,63 +1,156 @@
 // Module ID: 12469
 // Function ID: 12470
-// Dependencies: []
-// Exports: getClientIPAddress
+// Dependencies: [12470, 12450, 12471, 12430, 12434, 12406, 12463]
+// Exports: createTransport
 
 // Module 12469
-const items = ["X-Client-IP", "X-Forwarded-For", "Fly-Client-IP", "CF-Connecting-IP", "Fastly-Client-Ip", "True-Client-Ip", "X-Real-IP", "X-Cluster-Client-IP", "X-Forwarded", "Forwarded-For", "Forwarded", "X-Vercel-Forwarded-For"];
+import _mod12430 from "module_12430" /* 12430 */;
+import _mod12434 from "module_12434" /* 12434 */;
+import _mod12450 from "module_12450" /* 12450 */;
+import _mod12463 from "module_12463" /* 12463 */;
+import _slicedToArray from "_slicedToArray" /* 12471 */;
 
-export const getClientIPAddress = function getClientIPAddress(arg0) {
-  let closure_0 = arg0;
-  let mapped = items.map((item) => {
-    let mapped;
-    function parseForwardedHeader(str) {
-      if (str) {
-        const parts = str.split(";");
-        const iter = parts[Symbol.iterator]();
-        const nextResult = iter.next();
-        while (iter !== undefined) {
-          let arr = nextResult;
-          if (nextResult.startsWith("for=")) {
-            let substr = arr.slice(4);
-            iter.return();
-            return substr;
+const require = globalThis.__r;
+let _require, dependencyMap;
+
+
+export const DEFAULT_TRANSPORT_BUFFER_SIZE = 64;
+export const createTransport = function createTransport(bufferSize, arg1) {
+  _require = bufferSize;
+  dependencyMap = arg1;
+  let promiseBuffer = arg2;
+  if (arg2 === undefined) {
+    let tmp2 = _require;
+    let tmp4 = require("module_12470");
+    let num = bufferSize.bufferSize;
+    const makePromiseBuffer = tmp4.makePromiseBuffer;
+    if (!num) {
+      num = 64;
+    }
+    promiseBuffer = makePromiseBuffer(num);
+  }
+  let closure_3 = {};
+  let obj = {
+    send(arg0) {
+      const items = [];
+      let tmp = bufferSize;
+      const tmp2 = closure_1;
+      let obj = bufferSize(closure_1[1]);
+      obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
+        const obj = _mod12450;
+        const result = obj.envelopeItemTypeToDataCategory(arg1);
+        const obj2 = _slicedToArray;
+        if (obj2.isRateLimited(closure_3, result)) {
+          let tmp4;
+          if ("event" === arg1) {
+            const _Array = Array;
+            let tmp6;
+            if (Array.isArray(arg0)) {
+              tmp6 = arg0[1];
+            }
+            tmp4 = tmp6;
           }
+          items.recordDroppedEvent("ratelimit_backoff", result, tmp4);
+        } else {
+          items.push(arg0);
         }
-        return null;
+      });
+      if (0 === items.length) {
+        let tmpResult = tmp(tmp2[3]);
+        return tmpResult.resolvedSyncPromise({});
       } else {
-        return null;
+        let tmpResult2 = tmp(tmp2[1]);
+        closure_1 = tmpResult2.createEnvelope(arg0[0], items);
+        function recordEnvelopeLoss(arg0) {
+
+        }
+        let tmp4 = recordEnvelopeLoss;
+        const addResult = recordEnvelopeLoss.add(() => {
+          let obj2;
+          let obj = { body: obj2.serializeEnvelope(closure_1) };
+          obj2 = _mod12450;
+          const promise = closure_1(obj);
+          return promise.then((statusCode) => {
+            let DEBUG_BUILD = undefined !== statusCode.statusCode;
+            if (DEBUG_BUILD) {
+              DEBUG_BUILD = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
+              const tmp = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
+            }
+            if (DEBUG_BUILD) {
+              DEBUG_BUILD = items(closure_1[4]).DEBUG_BUILD;
+            }
+            if (DEBUG_BUILD) {
+              const logger = items(closure_1[5]).logger;
+              const _HermesInternal = HermesInternal;
+              logger.warn("Sentry responded with status code " + statusCode.statusCode + " to sent event.");
+            }
+            const obj = items(closure_1[2]);
+            closure_3 = obj.updateRateLimits(closure_3, statusCode);
+            return statusCode;
+          }, (arg0) => {
+            let recordDroppedEvent;
+            if (typeof recordEnvelopeLoss === "function") {
+              let tmp = arg0;
+              const network_error = "network_error";
+              let obj = recordDroppedEvent(closure_1[1]);
+              let tmp4 = closure_1_1;
+              obj.forEachEnvelopeItem(closure_1_1, (arg0, arg1) => {
+                let tmp;
+                if ("event" === arg1) {
+                  const _Array = Array;
+                  let tmp4;
+                  if (Array.isArray(arg0)) {
+                    tmp4 = arg0[1];
+                  }
+                  tmp = tmp4;
+                }
+                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
+                const obj = items(closure_3_1[1]);
+                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
+              });
+              throw arg0;
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          });
+        });
+        return addResult.then((result) => result, (arg0) => {
+          if (arg0 instanceof _mod12463.SentryError) {
+            if (_mod12434.DEBUG_BUILD) {
+              const logger = tmp(12406).logger;
+              logger.error("Skipped sending event because buffer is full.");
+            }
+            if (typeof recordEnvelopeLoss === "function") {
+              const queue_overflow = "queue_overflow";
+              const tmpResult = _mod12450;
+              tmpResult.forEachEnvelopeItem(closure_1, (arg0, arg1) => {
+                let tmp;
+                if ("event" === arg1) {
+                  const _Array = Array;
+                  let tmp4;
+                  if (Array.isArray(arg0)) {
+                    tmp4 = arg0[1];
+                  }
+                  tmp = tmp4;
+                }
+                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
+                const obj = items(closure_3_1[1]);
+                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
+              });
+              const tmpResult2 = _mod12430;
+              return tmpResult2.resolvedSyncPromise({});
+            } else {
+              throw new TypeError("Trying to call a non-function");
+            }
+          } else {
+            throw arg0;
+          }
+        });
       }
+    },
+    flush(arg0) {
+      return promiseBuffer.drain(arg0);
     }
-    let str = obj;
-    if (Array.isArray(closure_0[item])) {
-      str = obj.join(";");
-    }
-    if ("Forwarded" === item) {
-      mapped = parseForwardedHeader(str);
-    } else {
-      mapped = str;
-      if (mapped) {
-        let parts = str.split(",");
-        mapped = parts.map((item) => item.trim());
-      }
-    }
-    return mapped;
-  });
-  const reduced = mapped.reduce((arr, item) => {
-    let combined = arr;
-    if (item) {
-      combined = arr.concat(item);
-    }
-    return combined;
-  }, []);
-  const tmp = reduced.find((item) => {
-    let isMatch = null !== item;
-    if (isMatch) {
-      const obj = /(?:^(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}$)|(?:^(?:(?:[a-fA-F\d]{1,4}:){7}(?:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){6}(?:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){5}(?::(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,2}|:)|(?:[a-fA-F\d]{1,4}:){4}(?:(?::[a-fA-F\d]{1,4}){0,1}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,3}|:)|(?:[a-fA-F\d]{1,4}:){3}(?:(?::[a-fA-F\d]{1,4}){0,2}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,4}|:)|(?:[a-fA-F\d]{1,4}:){2}(?:(?::[a-fA-F\d]{1,4}){0,3}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,5}|:)|(?:[a-fA-F\d]{1,4}:){1}(?:(?::[a-fA-F\d]{1,4}){0,4}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,6}|:)|(?::(?:(?::[a-fA-F\d]{1,4}){0,5}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,7}|:)))(?:%[0-9a-zA-Z]{1,})?$)/;
-      isMatch = obj.test(item);
-    }
-    return isMatch;
-  }) || null;
-  return tmp;
+  };
+  return obj;
 };
-export const ipHeaderNames = items;

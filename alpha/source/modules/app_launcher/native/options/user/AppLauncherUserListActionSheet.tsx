@@ -1,15 +1,15 @@
-// Module ID: 12036
-// Function ID: 12037
+// Module ID: 12056
+// Function ID: 12057
 // Name: AppLauncherUserListActionSheet
-// Dependencies: [19, 1504, 21, 5191, 558, 576, 5155, 7509, 1202, 11997, 1128, 12037, 11163, 11998, 6457, 11996, 2]
+// Dependencies: [19, 1504, 21, 4945, 558, 576, 5171, 7576, 1202, 12017, 1128, 12057, 11178, 12018, 6851, 12016, 2]
 
-// Module 12036 (AppLauncherUserListActionSheet)
+// Module 12056 (AppLauncherUserListActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import TableRow from "TableRow" /* 6457 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5171 */;
+import TableRow from "TableRow" /* 6851 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -262,7 +262,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       }
       tmp14[0] = id;
       tmp14[5] = tmp4;
-      tmp10Result = tmp10(tmp11(12037), tmp14);
+      tmp10Result = tmp10(tmp11(12057), tmp14);
     } else {
       class U {
         constructor(arg0) {
@@ -300,7 +300,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       tmp12[1] = guild_id;
       tmp12[3] = tmp5;
       tmp12[6] = tmp4;
-      tmp10Result = tmp10(tmp11(11163), tmp12);
+      tmp10Result = tmp10(tmp11(11178), tmp12);
     }
     cResult[8] = channel;
     cResult[9] = id;
@@ -422,7 +422,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptySt
       return tmp7;
     }
   }
-  const tmp8 = jsx(tmp(11996).AppLauncherList, { contentContainerStyle: tmp4.emptyState, data: tmp5, renderItem: tmp6, keyboardShouldPersistTaps: "always", keyboardDismissMode: "on-drag" });
+  const tmp8 = jsx(tmp(12016).AppLauncherList, { contentContainerStyle: tmp4.emptyState, data: tmp5, renderItem: tmp6, keyboardShouldPersistTaps: "always", keyboardDismissMode: "on-drag" });
   cResult[4] = tmp4.emptyState;
   cResult[5] = tmp5;
   cResult[6] = tmp6;
@@ -433,7 +433,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptySt
   const query = onPressRow.query;
   const items = [query];
   closure_6();
-  return jsx(onPressRow(11996).AppLauncherList, {
+  return jsx(onPressRow(12016).AppLauncherList, {
     contentContainerStyle: closure_6().emptyState,
     data: items,
     renderItem(label) {

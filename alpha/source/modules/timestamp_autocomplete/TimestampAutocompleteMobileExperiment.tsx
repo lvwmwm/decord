@@ -1,9 +1,9 @@
-// Module ID: 7320
-// Function ID: 7321
+// Module ID: 7386
+// Function ID: 7387
 // Name: TimestampAutocompleteMobileExperiment
 // Dependencies: [1455, 2]
 
-// Module 7320 (TimestampAutocompleteMobileExperiment)
+// Module 7386 (TimestampAutocompleteMobileExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

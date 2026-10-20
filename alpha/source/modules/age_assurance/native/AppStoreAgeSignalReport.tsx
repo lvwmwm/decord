@@ -1,12 +1,12 @@
-// Module ID: 18613
-// Function ID: 18614
+// Module ID: 18648
+// Function ID: 18649
 // Name: AppStoreAgeSignalReport
-// Dependencies: [32, 5, 1392, 2001, 1087, 7963, 7812, 1257, 1384, 7959, 7960, 1267, 6177, 5220, 2]
+// Dependencies: [32, 5, 1392, 2001, 1087, 8026, 7875, 1257, 1384, 8022, 8023, 1267, 5605, 5684, 2]
 // Exports: beginAppStoreAgeSignalReport, resumeAppStoreAgeSignalReport, settleAppStoreAgeSignalReport
 
-// Module 18613 (AppStoreAgeSignalReport)
+// Module 18648 (AppStoreAgeSignalReport)
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7812 */;
+import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7875 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -330,7 +330,7 @@ export const beginAppStoreAgeSignalReport = function beginAppStoreAgeSignalRepor
     let result = obj.isAppStoreAgeSignalSupported();
     const tmp4 = _require;
     if (result) {
-      const tmp4Result = tmp4(6177);
+      const tmp4Result = tmp4(5605);
       result = tmp4Result.shouldCollectAppStoreSignal();
     }
     tmp3 = result;
@@ -475,7 +475,7 @@ export const resumeAppStoreAgeSignalReport = function resumeAppStoreAgeSignalRep
       let result = obj.isAppStoreAgeSignalSupported();
       const tmp2 = require;
       if (result) {
-        const tmp2Result = tmp2(6177);
+        const tmp2Result = tmp2(5605);
         result = tmp2Result.shouldCollectAppStoreSignal();
       }
       tmp5 = result;

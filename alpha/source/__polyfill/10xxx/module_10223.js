@@ -1,15 +1,12 @@
 // Module ID: 10223
 // Function ID: 10224
-// Dependencies: [41, 42, 93, 95, 98, 10213, 10121, 10122, 10126]
+// Dependencies: [41, 42, 93, 95, 98, 10154]
 
 // Module 10223
-import EmptyDuration from "EmptyDuration" /* 10121 */;
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10122 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10126 */;
-import _mod10213 from "module_10213" /* 10213 */;
+import _mod10154 from "module_10154" /* 10154 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -28,45 +25,48 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(" + _mod10213.TIME_UNITS_PATTERN + ")(?:geleden|voor|eerder)(?=(?:\\W|$))", "i");
-const regExp1 = new RegExp("(" + _mod10213.TIME_UNITS_PATTERN + ")geleden(?=(?:\\W|$))", "i");
-class NLTimeUnitAgoFormatParser {
-  constructor(strictMode) {
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class NLMergeDateTimeRefiner {
+  constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, NLTimeUnitAgoFormatParser);
-    const obj = _getPrototypeOf(NLTimeUnitAgoFormatParser);
+    _classCallCheck(this, NLMergeDateTimeRefiner);
+    const obj = _getPrototypeOf(NLMergeDateTimeRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      constructResult = obj(...arguments);
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = strictMode;
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(NLTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(NLMergeDateTimeRefiner, fn(_mod10154).default);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return this.strictMode ? regExp1 : regExp;
+  key: "patternBetween",
+  value: function patternBetween() {
+    const regExp = new RegExp("^\\s*(om|na|voor|in de|,|-)?\\s*$");
+    return regExp;
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod10213.parseDuration(arg1[1]);
-      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(NLTimeUnitAgoFormatParser, items);
+export default _createClass(NLMergeDateTimeRefiner, items);

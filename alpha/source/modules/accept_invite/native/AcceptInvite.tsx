@@ -1,9 +1,9 @@
-// Module ID: 13426
-// Function ID: 13427
+// Module ID: 13460
+// Function ID: 13461
 // Name: AcceptInvite
-// Dependencies: [109, 32, 19, 17, 1087, 21, 5191, 587, 1388, 558, 576, 4913, 6944, 13427, 13431, 1417, 1452, 13436, 1499, 5128, 6459, 2]
+// Dependencies: [109, 32, 19, 17, 1087, 21, 4945, 587, 1388, 558, 576, 5213, 5556, 13461, 13465, 1417, 1452, 13470, 1499, 5631, 6853, 2]
 
-// Module 13426 (AcceptInvite)
+// Module 13460 (AcceptInvite)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
@@ -11,16 +11,16 @@ import GlobalUtils from "GlobalUtils" /* 1388 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
-import useToken from "useToken" /* 4913 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import Card_Card from "Card/Card" /* 6459 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6944 */;
+import useToken from "useToken" /* 5213 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5556 */;
+import FastImageDefault from "FastImage" /* 5631 */;
+import Card_Card from "Card/Card" /* 6853 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -177,7 +177,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accept
         return tmp25;
       }
       const obj3 = { invite };
-      const tmp28 = first(13427);
+      const tmp28 = first(13461);
       const merged = Object.assign(invite);
       const tmp32 = closure_10(tmp28, obj3);
       cResult[7] = invite;
@@ -193,7 +193,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accept
         return tmp17;
       }
       const obj4 = { invite };
-      const tmp20 = first(13431);
+      const tmp20 = first(13465);
       const merged1 = Object.assign(invite);
       const tmp24 = closure_10(tmp20, obj4);
       cResult[10] = invite;
@@ -246,12 +246,12 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Accept
     return closure_10(closure_15, {});
   } else if (constants.DETAILS === first) {
     const obj2 = { invite };
-    const tmp16 = first(13427);
+    const tmp16 = first(13461);
     const merged = Object.assign(invite);
     return closure_10(tmp16, obj2);
   } else if (tmp22.ERROR === first) {
     let obj = { invite };
-    const tmp9 = first(13431);
+    const tmp9 = first(13465);
     const merged1 = Object.assign(invite);
     return closure_10(tmp9, obj);
   } else {
@@ -441,7 +441,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptInvi
     splash = guild.splash;
   }
   if (null == splash) {
-    guildSplashSource = tmp10(13436);
+    guildSplashSource = tmp10(13470);
   } else {
     ({ id: obj3.id, splash: obj3.splash } = guild);
     const obj10 = { id: null, splash: null, size: width * tmpResult.getDevicePixelRatio() };
@@ -480,7 +480,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AcceptInvi
     splash = guild.splash;
   }
   if (null == splash) {
-    guildSplashSource = tmp3(13436);
+    guildSplashSource = tmp3(13470);
   } else {
     ({ id: obj2.id, splash: obj2.splash } = guild);
     const obj4 = { id: null, splash: null, size: width * obj3.getDevicePixelRatio() };

@@ -1,24 +1,24 @@
-// Module ID: 12273
-// Function ID: 12274
+// Module ID: 12293
+// Function ID: 12294
 // Name: conjurePlanDesign
-// Dependencies: [6294, 3883, 12271, 2]
+// Dependencies: [6722, 3820, 12291, 2]
 // Exports: conjurePlanDesignAlt, conjurePlanDesignSurface
 
-// Module 12273 (conjurePlanDesign)
-import _modDef3883 from "module_3883" /* 3883 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6294 */;
-import conjurePlanTags from "conjurePlanTags" /* 12271 */;
+// Module 12293 (conjurePlanDesign)
+import _modDef3820 from "module_3820" /* 3820 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6722 */;
+import conjurePlanTags from "conjurePlanTags" /* 12291 */;
 import size from "module_2" /* 2 */;
 
-const f112509 = (item) => {
+const f112946 = (item) => {
   const obj = conjurePlanTags;
   return obj.planDeclaresSurface(proposal, item);
 };
 const CONJURE_PLAN_DESIGN_ALTS = {};
-CONJURE_PLAN_DESIGN_ALTS[ConjureProjectTypes.ConjureSupportedSurface.APP_CHANNEL] = _modDef3883["3/aHX6"];
-CONJURE_PLAN_DESIGN_ALTS[ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL] = _modDef3883["3/aHX6"];
-CONJURE_PLAN_DESIGN_ALTS[ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY] = _modDef3883["3/aHX6"];
-CONJURE_PLAN_DESIGN_ALTS[ConjureProjectTypes.ConjureSupportedSurface.OVERLAY] = _modDef3883["rPpf5/"];
+CONJURE_PLAN_DESIGN_ALTS[ConjureProjectTypes.ConjureSupportedSurface.APP_CHANNEL] = _modDef3820["3/aHX6"];
+CONJURE_PLAN_DESIGN_ALTS[ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL] = _modDef3820["3/aHX6"];
+CONJURE_PLAN_DESIGN_ALTS[ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY] = _modDef3820["3/aHX6"];
+CONJURE_PLAN_DESIGN_ALTS[ConjureProjectTypes.ConjureSupportedSurface.OVERLAY] = _modDef3820["rPpf5/"];
 CONJURE_PLAN_DESIGN_ALTS[ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET] = null;
 CONJURE_PLAN_DESIGN_ALTS[ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD] = null;
 CONJURE_PLAN_DESIGN_ALTS[ConjureProjectTypes.ConjureSupportedSurface.BOT] = null;
@@ -29,7 +29,7 @@ const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanDesig
 export { CONJURE_PLAN_DESIGN_ALTS };
 export const conjurePlanDesignSurface = function conjurePlanDesignSurface(proposal) {
   let closure_0 = proposal;
-  let found = items.find(f112509);
+  let found = items.find(f112946);
   if (found == null) {
     found = null;
   }
@@ -39,12 +39,12 @@ export const conjurePlanDesignAlt = function conjurePlanDesignAlt(proposal) {
   let obj;
   let prop;
   let closure_0 = proposal;
-  let found = items.find(f112509);
+  let found = items.find(f112946);
   if (found == null) {
     found = null;
   }
   if (null == found) {
-    prop = _modDef3883["3/aHX6"];
+    prop = _modDef3820["3/aHX6"];
   } else {
     prop = obj[found];
   }

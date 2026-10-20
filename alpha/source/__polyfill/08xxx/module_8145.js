@@ -1,75 +1,67 @@
 // Module ID: 8145
 // Function ID: 8146
-// Dependencies: [8095]
+// Dependencies: [8146]
 
 // Module 8145
-import _mod8095 from "module_8095" /* 8095 */;
+import _mod8146 from "module_8146" /* 8146 */;
 
+let hasOwnProperty;
 
-export default {
-  read(byteLength) {
-    let str5;
-    let str6;
-    let str9;
-    let tmp11;
-    let tmp13;
-    let tmp16;
-    let tmp5;
-    let tmp8;
-    let tmp;
-    if (6 <= byteLength.byteLength) {
-      const obj = _mod8095;
-      const stringFromDataView = obj.getStringFromDataView(byteLength, 3, 3);
-      tmp = { value: stringFromDataView, description: stringFromDataView };
-      const obj2 = { value: stringFromDataView, description: stringFromDataView };
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
     }
-    const obj3 = { "GIF Version": tmp, "Image Width": tmp5, "Image Height": tmp8, "Global Color Map": tmp11, "Bits Per Pixel": tmp13, "Color Resolution Depth": tmp16 };
-    tmp5 = undefined;
-    if (8 <= byteLength.byteLength) {
-      const uint16 = byteLength.getUint16(6, true);
-      const _HermesInternal = HermesInternal;
-      tmp5 = { value: uint16, description: "" + uint16 + "px" };
-      const obj4 = { value: uint16, description: "" + uint16 + "px" };
+    closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
     }
-    tmp8 = undefined;
-    if (10 <= byteLength.byteLength) {
-      const uint161 = byteLength.getUint16(8, true);
-      const _HermesInternal2 = HermesInternal;
-      tmp8 = { value: uint161, description: "" + uint161 + "px" };
-      const obj5 = { value: uint161, description: "" + uint161 + "px" };
-    }
-    tmp11 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const tmp12 = (128 & byteLength.getUint8(10)) >>> 7;
-      const obj6 = { value: tmp12, description: str5 };
-      str5 = "No";
-      if (1 === tmp12) {
-        str5 = "Yes";
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
       }
-      tmp11 = obj6;
+      tmp3 = !tmp4;
     }
-    tmp13 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const sum = 1 + (7 & byteLength.getUint8(10));
-      const obj7 = { value: sum, description: "" + sum + " " + str6 };
-      str6 = "bits";
-      if (1 === sum) {
-        str6 = "bit";
-      }
-      const _HermesInternal3 = HermesInternal;
-      tmp13 = obj7;
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
     }
-    tmp16 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const sum1 = 1 + ((112 & byteLength.getUint8(10)) >>> 4);
-      const obj8 = { value: sum1, description: "" + sum1 + " " + str9 };
-      str9 = "bits";
-      if (1 === sum1) {
-        str9 = "bit";
-      }
-      const _HermesInternal4 = HermesInternal;
-      tmp16 = obj8;
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
     }
-    return obj3;
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_0 = tmp;
+let tmp3 = self && self.__exportStar || ((obj, arg1) => {
+  for (const key10007 in obj) {
+    let callResult = "default" === key10007;
+    if (!callResult) {
+      let _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      callResult = hasOwnProperty.call(arg1, key10007);
+    }
+    if (callResult) {
+      continue;
+    } else {
+      let tmp3 = closure_0(arg1, obj, key10007);
+      continue;
+    }
+    continue;
   }
-};
+});
+tmp3(_mod8146, exports);

@@ -1,16 +1,16 @@
-// Module ID: 18510
-// Function ID: 18511
+// Module ID: 18545
+// Function ID: 18546
 // Name: NewMemberActionsCompletedModal
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 4945, 5192, 6190, 12935, 1128, 5187, 2]
+// Dependencies: [19, 17, 21, 4945, 587, 558, 576, 5014, 5167, 6620, 12967, 1128, 5195, 2]
 
-// Module 18510 (NewMemberActionsCompletedModal)
+// Module 18545 (NewMemberActionsCompletedModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import timing from "timing" /* 5192 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5014 */;
+import timing from "timing" /* 5167 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMemberAct
   numActions = numActions.numActions;
   const initialPercent = numActions.initialPercent;
   const tmp4 = closure_7();
-  let obj2 = sharedValue(4945);
+  let obj2 = sharedValue(5014);
   sharedValue = obj2.useSharedValue(initialPercent);
   if (cResult[0] !== sharedValue) {
     const fn = function h() {
@@ -64,7 +64,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMemberAct
   }
   const effect = react.useEffect(tmp6, tmp7);
   const obj3 = react;
-  const tmpResult = tmp(4945);
+  const tmpResult = tmp(5014);
   class T {
     constructor() {
       let obj2;
@@ -76,10 +76,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMemberAct
       return obj;
     }
   }
-  T.__closure = { withDelay: tmp(4945).withDelay, withTiming: tmp(5192).withTiming, barWidth: sharedValue };
+  T.__closure = { withDelay: tmp(5014).withDelay, withTiming: tmp(5167).withTiming, barWidth: sharedValue };
   T.__workletHash = 7643178959760;
   T.__initData = __initData;
-  ({ withDelay: tmp(4945).withDelay, withTiming: tmp(5192).withTiming, barWidth: sharedValue });
+  ({ withDelay: tmp(5014).withDelay, withTiming: tmp(5167).withTiming, barWidth: sharedValue });
   const animatedStyle = tmpResult.useAnimatedStyle(T);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class E {
@@ -209,8 +209,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMemberAct
   }
   cResult[7] = tmp4.text;
   cResult[8] = tmp13;
-  cResult[9] = closure_5(tmp(5187).Text, { style: text, variant: "heading-xl/semibold", color: "text-overlay-light", children: tmp13 });
-  const tmp16 = closure_5(tmp(5187).Text, { style: text, variant: "heading-xl/semibold", color: "text-overlay-light", children: tmp13 });
+  cResult[9] = closure_5(tmp(5195).Text, { style: text, variant: "heading-xl/semibold", color: "text-overlay-light", children: tmp13 });
+  const tmp16 = closure_5(tmp(5195).Text, { style: text, variant: "heading-xl/semibold", color: "text-overlay-light", children: tmp13 });
 }) : (function NewMemberActionsCompleted(arg0) {
   let initialPercent;
   let intl;
@@ -221,13 +221,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMemberAct
   let sharedValue;
   ({ initialPercent, numActions } = arg0);
   const tmp = closure_7();
-  let obj = sharedValue(4945);
+  let obj = sharedValue(5014);
   sharedValue = obj.useSharedValue(initialPercent);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
     const result = sharedValue.set(1);
   }, items);
-  let obj2 = sharedValue(4945);
+  let obj2 = sharedValue(5014);
   const fn = function y() {
     let obj2;
     let withDelay;
@@ -237,10 +237,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMemberAct
     obj2 = timing;
     return obj;
   };
-  fn.__closure = { withDelay: sharedValue(4945).withDelay, withTiming: sharedValue(5192).withTiming, barWidth: sharedValue };
+  fn.__closure = { withDelay: sharedValue(5014).withDelay, withTiming: sharedValue(5167).withTiming, barWidth: sharedValue };
   fn.__workletHash = 8771000018451;
   fn.__initData = __initData2;
-  ({ withDelay: sharedValue(4945).withDelay, withTiming: sharedValue(5192).withTiming, barWidth: sharedValue });
+  ({ withDelay: sharedValue(5014).withDelay, withTiming: sharedValue(5167).withTiming, barWidth: sharedValue });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const effect1 = react.useEffect(() => {
     const timerId = setTimeout(() => {
@@ -250,7 +250,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewMemberAct
   }, []);
   const obj4 = { style: tmp.screen, children: items1 };
   const obj5 = { style: tmp.text, variant: "heading-xl/semibold", color: "text-overlay-light", children: intl.format(sharedValue(1128).t.pGj5u2, { count: numActions }) };
-  const Text = sharedValue(5187).Text;
+  const Text = sharedValue(5195).Text;
   intl = sharedValue(1128).intl;
   items1 = [closure_5(Text, obj5), ];
   const obj6 = { style: tmp.progressBackground, children: closure_5(ReanimatedRexportDefault.View, obj7) };

@@ -1,8 +1,8 @@
-// Module ID: 5635
-// Function ID: 5636
+// Module ID: 6067
+// Function ID: 6068
 // Dependencies: [2]
 
-// Module 5635
+// Module 6067
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/cowpoke.png.js");

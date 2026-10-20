@@ -1,38 +1,10 @@
 // Module ID: 6388
 // Function ID: 6389
-// Dependencies: [106, 65, 114]
+// Dependencies: [1316]
 
 // Module 6388
-import renderElement from "renderElement" /* 114 */;
-import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
-import module_65 from "module_65" /* 65 */;
+import _mod1316 from "module_1316" /* 1316 */;
 
-let obj2;
-let obj3;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "LottieAnimationView", bubblingEventTypes: obj2, validAttributes: obj3 };
-obj2 = { topAnimationFinish: { phasedRegistrationNames: { captured: "onAnimationFinishCapture", bubbled: "onAnimationFinish" } }, topAnimationFailure: { phasedRegistrationNames: { captured: "onAnimationFailureCapture", bubbled: "onAnimationFailure" } }, topAnimationLoaded: { phasedRegistrationNames: { captured: "onAnimationLoadedCapture", bubbled: "onAnimationLoaded" } } };
-obj3 = { resizeMode: true, renderMode: true, sourceName: true, sourceJson: true, sourceURL: true, sourceDotLottieURI: true, imageAssetsFolder: true, progress: true, speed: true, loop: true, autoPlay: true, enableMergePathsAndroidForKitKatAndAbove: true, enableSafeModeAndroid: true, hardwareAccelerationAndroid: true, cacheComposition: true, colorFilters: true, dummy: true, textFiltersAndroid: true, textFiltersIOS: true };
-const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onAnimationFinish: true, onAnimationFailure: true, onAnimationLoaded: true }));
-const obj4 = {
-  play(arg0, arg1, arg2) {
-    const items = [arg1, arg2];
-    const obj = renderElement;
-    obj.dispatchCommand(arg0, "play", items);
-  },
-  reset(arg0) {
-    const obj = renderElement;
-    obj.dispatchCommand(arg0, "reset", []);
-  },
-  pause(arg0) {
-    const obj = renderElement;
-    obj.dispatchCommand(arg0, "pause", []);
-  },
-  resume(arg0) {
-    const obj = renderElement;
-    obj.dispatchCommand(arg0, "resume", []);
-  }
-};
+_mod1316.setPrototypeOf || null;
 
-export default module_65.get("LottieAnimationView", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
-export const Commands = obj4;
+export default _mod1316.setPrototypeOf || null;

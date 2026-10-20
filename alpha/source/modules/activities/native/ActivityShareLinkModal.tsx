@@ -1,30 +1,30 @@
-// Module ID: 15520
-// Function ID: 15521
+// Module ID: 15548
+// Function ID: 15549
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 2068, 1392, 2067, 10520, 5185, 21, 5191, 587, 558, 576, 504, 12693, 11963, 15519, 7134, 1388, 15521, 7445, 7635, 4904, 1128, 7162, 4903, 7365, 5137, 1499, 1384, 12703, 10529, 12704, 12725, 2]
+// Dependencies: [5, 32, 19, 17, 4800, 1392, 4799, 10534, 4950, 21, 4945, 587, 558, 576, 504, 12713, 11983, 15547, 7203, 1388, 15549, 7512, 7698, 5625, 1128, 7231, 5624, 7431, 5640, 1499, 1384, 12723, 10543, 12724, 12745, 2]
 
-// Module 15520 (ActivityShareLinkModal)
+// Module 15548 (ActivityShareLinkModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import ToastUtils from "ToastUtils" /* 4903 */;
-import LinkIcon from "LinkIcon" /* 5137 */;
-import MessageConstants from "MessageConstants" /* 5185 */;
-import ClipboardUtils from "ClipboardUtils" /* 7162 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7365 */;
-import UserRowConstants from "UserRowConstants" /* 10520 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 11963 */;
-import formatResults from "formatResults" /* 12693 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 15519 */;
+import MessageConstants from "MessageConstants" /* 4950 */;
+import ToastUtils from "ToastUtils" /* 5624 */;
+import LinkIcon from "LinkIcon" /* 5640 */;
+import ClipboardUtils from "ClipboardUtils" /* 7231 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7431 */;
+import UserRowConstants from "UserRowConstants" /* 10534 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 11983 */;
+import formatResults from "formatResults" /* 12713 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 15547 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 4800 */;
 import UserStore_mod from "UserStore" /* 1392 */;
-import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2067 */;
+import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 4799 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 4945 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 12054
-// Function ID: 12055
+// Module ID: 12074
+// Function ID: 12075
 // Name: useUploadDisabled
-// Dependencies: [7510, 4845, 8175, 1087, 558, 576, 7200, 504, 2]
+// Dependencies: [7577, 4880, 8237, 1087, 558, 576, 7269, 504, 2]
 
-// Module 12054 (useUploadDisabled)
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7200 */;
-import DraftStore from "DraftStore" /* 7510 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8175 */;
+// Module 12074 (useUploadDisabled)
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7269 */;
+import DraftStore from "DraftStore" /* 7577 */;
+import PermissionStore from "PermissionStore" /* 4880 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8237 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/virtual_currency/web/orb_wallet/messages", scales: [1], hash: "8b653ad07b8967a77e48f82288144586", name: "OrbWallet.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9naWZ0X2NhcmRzL21lc3NhZ2Vz", scales: [1], hash: "ca42cf9b8ff6ee78851fa60f6332ac97", name: "tr.messages.ca42cf9b8ff6ee78851fa60f6332ac97.compiled.messages", type: "jsona" });

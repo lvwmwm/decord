@@ -1,22 +1,22 @@
-// Module ID: 17455
-// Function ID: 17456
+// Module ID: 17484
+// Function ID: 17485
 // Name: GuildsBarMessages
-// Dependencies: [19, 5034, 1087, 21, 17456, 558, 576, 17441, 504, 17444, 587, 1128, 17457, 8471, 2]
+// Dependencies: [19, 4971, 1087, 21, 17485, 558, 576, 17470, 504, 17473, 587, 1128, 17486, 8487, 2]
 
-// Module 17455 (GuildsBarMessages)
+// Module 17484 (GuildsBarMessages)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
-import ChatIcon from "ChatIcon" /* 8471 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17441 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 17444 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17456 */;
-import HomeDrawerDirectMessagesRowDefault from "HomeDrawerDirectMessagesRow" /* 17457 */;
+import ChatIcon from "ChatIcon" /* 8487 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17470 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 17473 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17485 */;
+import HomeDrawerDirectMessagesRowDefault from "HomeDrawerDirectMessagesRow" /* 17486 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4971 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -129,7 +129,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const colors = nativeDefault.colors;
   GuildsBarAnimatedItemWrapperDefault;
   const intl = tmp(1128).intl;
-  return <tmp5Result selected={stateFromStores} circle={false} unread={false} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} config={config} overState="y" label={intl.string(intl2.t.YUU0RF)} externalChildren={badge} expandedChildren={null}>{null}</tmp5Result>;
+  return <tmp5Result selected={stateFromStores} circle={false} unread={false} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} config={config} overState="y" label={intl.string(intl2.t.YUU0RF)} externalChildren={badge} expandedChildren="URL">{"emoji"}</tmp5Result>;
 }));
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarMessages.tsx");
 

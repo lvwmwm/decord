@@ -1,10 +1,10 @@
-// Module ID: 18205
-// Function ID: 18206
+// Module ID: 18234
+// Function ID: 18235
 // Name: GuildScheduledEventsNoticesActionCreators
 // Dependencies: [584, 2]
 // Exports: dismissEventBanner, hideLiveChannelNotice, hideUpcomingEventNotice, markUpcomingEventNoticeAsSeen
 
-// Module 18205 (GuildScheduledEventsNoticesActionCreators)
+// Module 18234 (GuildScheduledEventsNoticesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
