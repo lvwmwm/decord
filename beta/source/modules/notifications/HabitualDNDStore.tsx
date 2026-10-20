@@ -12,7 +12,7 @@ import UserSettings from "UserSettings" /* 2044 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6015 */;
 import size from "module_2" /* 2 */;
 
-const f120877 = (item) => {
+const f120887 = (item) => {
   const timestamp = Date.now();
   return item < timestamp - 3 * DurationsDefault.Millis.DAY;
 };
@@ -60,7 +60,7 @@ let obj = {
           return item > timestamp - 5 * DurationsDefault.Millis.DAY;
         });
         sessionStartsWithDND = found;
-        const someResult = found.length >= 4 && sessionStartsWithDND.some(f120877);
+        const someResult = found.length >= 4 && sessionStartsWithDND.some(f120887);
         if (someResult) {
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => {
@@ -73,8 +73,8 @@ let obj = {
     sessionStartsWithDND = [];
   },
   HABITUAL_DND_CLEAR: function handleDNDClear() {
-    c6 = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f120877);
-    const someResult = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f120877);
+    c6 = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f120887);
+    const someResult = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f120887);
     sessionStartsWithDND = [];
   }
 };

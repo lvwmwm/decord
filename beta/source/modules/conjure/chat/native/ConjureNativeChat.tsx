@@ -810,11 +810,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   let tmp95Result;
   let tmp95Result6;
   let tmp98;
-  const f112090 = () => {
+  const f112098 = () => {
     map = new Map();
     return map;
   };
-  const f112093 = () => {
+  const f112101 = () => {
     map = new Map();
     return map;
   };
@@ -990,8 +990,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     const obj = ConjureSecretRequestState;
     return obj.secretRequestStatuses(memo, stateFromStores11);
   }, items27);
-  [c14, c15] = tmp19(obj3.useState(f112090), 2);
-  tmp19(obj3.useState(f112090), 2);
+  [c14, c15] = tmp19(obj3.useState(f112098), 2);
+  tmp19(obj3.useState(f112098), 2);
   onToggleChecklist = obj3.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;
@@ -1005,8 +1005,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     const obj = conjurePendingPlan;
     return obj.planVersions(memo);
   }, items28);
-  [c18, c19] = tmp19(obj3.useState(f112093), 2);
-  tmp19(obj3.useState(f112093), 2);
+  [c18, c19] = tmp19(obj3.useState(f112101), 2);
+  tmp19(obj3.useState(f112101), 2);
   onTogglePlan = obj3.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;

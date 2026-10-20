@@ -28,7 +28,7 @@ import size from "module_2" /* 2 */;
 
 let c0, c5, componentId;
 
-const f110870 = (str) => str.toUpperCase();
+const f110878 = (str) => str.toUpperCase();
 function useOnActivityItemSelected(arg0) {
   let application;
   let context;
@@ -482,7 +482,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
                           let replaced;
                           if (STAFF_RELEASE_PHASES.includes(str2)) {
                             const str5 = str2.replace("_", " ");
-                            replaced = str5.replace(/(^\w|\s\w)/g, f110870);
+                            replaced = str5.replace(/(^\w|\s\w)/g, f110878);
                           }
                         } else {
                           ApplicationFlagUtils;
@@ -622,7 +622,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
     let replaced;
     if (STAFF_RELEASE_PHASES.includes(str)) {
       const str4 = str.replace("_", " ");
-      replaced = str4.replace(/(^\w|\s\w)/g, f110870);
+      replaced = str4.replace(/(^\w|\s\w)/g, f110878);
     }
     tmp16 = replaced;
   } else {
@@ -753,7 +753,7 @@ function getStaffReleasePhase(application, client_platform_config) {
   let replaced;
   if (STAFF_RELEASE_PHASES.includes(str)) {
     const str4 = str.replace("_", " ");
-    replaced = str4.replace(/(^\w|\s\w)/g, f110870);
+    replaced = str4.replace(/(^\w|\s\w)/g, f110878);
   }
   return replaced;
 }

@@ -30,7 +30,7 @@ import size from "module_2" /* 2 */;
 const ReferencedMessageStore = ReferencedMessageStore2;
 let messageByReference, set;
 
-const f135209 = (channel_id) => {
+const f135219 = (channel_id) => {
   const tmp = obj;
   if (null == obj[channel_id.channel_id]) {
     tmp[channel_id.channel_id] = { numOfAttachments: 0, numOfAttachmentsPendingScan: 0, numOfEmbeds: 0, numOfEmbedsPendingScan: 0 };
@@ -216,7 +216,7 @@ function withoutScheduledTimeout(arg0) {
 }
 function handleUnscannedMessages(found2, isMessageUpdate) {
   let found1;
-  const f135203 = (id) => id.id;
+  const f135213 = (id) => id.id;
   let obj = isMessageUpdate;
   if (isMessageUpdate == null) {
     obj = {};
@@ -305,7 +305,7 @@ function handleUnscannedMessages(found2, isMessageUpdate) {
         if (tmp) {
           const result = obj.sendMultiChannelMessagesForScanning(found);
         } else {
-          const result1 = obj.sendMessagesForScanning(found[0].channel_id, found.map(f135203));
+          const result1 = obj.sendMessagesForScanning(found[0].channel_id, found.map(f135213));
         }
       }
     }, 800 * Math.random());
@@ -314,7 +314,7 @@ function handleUnscannedMessages(found2, isMessageUpdate) {
     if (tmp) {
       let result = obj2.sendMultiChannelMessagesForScanning(found1);
     } else {
-      let result1 = obj2.sendMessagesForScanning(found1[0].channel_id, found1.map(f135203));
+      let result1 = obj2.sendMessagesForScanning(found1[0].channel_id, found1.map(f135213));
     }
   }
 }
@@ -362,7 +362,7 @@ function processMessagesFromAction(firstMessages, isMessageUpdate) {
   });
   let obj = {};
   obj2 = {};
-  const item = arr4.forEach(f135209);
+  const item = arr4.forEach(f135219);
   const obj3 = obj2(11);
   const entries = obj3.entries(obj);
   const item1 = entries.forEach((item) => {
@@ -646,7 +646,7 @@ function maybeScanMessagesForChannelId(channelId) {
     });
     let obj = {};
     obj2 = {};
-    const item = arr5.forEach(f135209);
+    const item = arr5.forEach(f135219);
     const obj3 = obj2(11);
     const entries = obj3.entries(obj);
     const item1 = entries.forEach((item) => {

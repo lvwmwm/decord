@@ -10,7 +10,7 @@ import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9536 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9549 */;
 import size from "module_2" /* 2 */;
 
-const f108349 = (oauth2_install_params) => {
+const f108357 = (oauth2_install_params) => {
   let prop;
   if (oauth2_install_params != null) {
     prop = oauth2_install_params.oauth2_install_params;
@@ -36,7 +36,7 @@ export const canInstallApplication = function canInstallApplication(installAppPr
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f108349);
+      someResult = values.some(f108357);
     }
     tmp = someResult;
   }
@@ -50,7 +50,7 @@ export const isAppUserInstallable = function isAppUserInstallable(integrationTyp
     if (someResult) {
       const _Object = Object;
       const values = Object.values(integrationTypesConfig);
-      someResult = values.some(f108349);
+      someResult = values.some(f108357);
     }
     tmp = someResult;
   }

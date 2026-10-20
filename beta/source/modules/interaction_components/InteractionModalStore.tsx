@@ -59,7 +59,7 @@ const obj2 = {
     let data;
     let obj;
     let preflight;
-    const f148900 = () => {
+    const f148912 = () => {
       let tmp2 = nonce === closure_1_0;
       const tmp = closure_1_0;
       if (tmp2) {
@@ -96,13 +96,13 @@ const obj2 = {
       };
       if (null != preflight) {
         const _setTimeout2 = setTimeout;
-        let timerId = setTimeout(f148900, 2 * tmp3(1104).Millis.MINUTE);
+        let timerId = setTimeout(f148912, 2 * tmp3(1104).Millis.MINUTE);
         const nextPromise = preflight.then(() => {
           let tmp;
           if (typeof startTimeout === "function") {
             let tmp2 = globalThis;
             const _setTimeout = setTimeout;
-            const timerId = setTimeout(f148900, tmp);
+            const timerId = setTimeout(f148912, tmp);
           } else {
             throw new TypeError("Trying to call a non-function");
           }
@@ -113,7 +113,7 @@ const obj2 = {
         });
       } else {
         let _setTimeout = setTimeout;
-        const timerId1 = setTimeout(f148900, 10 * tmp3(1104).Millis.SECOND);
+        const timerId1 = setTimeout(f148912, 10 * tmp3(1104).Millis.SECOND);
       }
       return true;
     } else {

@@ -10,11 +10,11 @@ import ConjureProjectTypes from "ConjureProjectTypes" /* 6294 */;
 import conjurePlanTags from "conjurePlanTags" /* 12271 */;
 import size from "module_2" /* 2 */;
 
-const f112500 = (bot) => {
+const f112508 = (bot) => {
   const str = bot.bot;
   return "" !== str.trim();
 };
-const f112501 = (item) => {
+const f112509 = (item) => {
   let bot;
   let obj2;
   let user;
@@ -32,7 +32,7 @@ const f112501 = (item) => {
   }
   return obj2;
 };
-const f112502 = (kind) => {
+const f112510 = (kind) => {
   let tmp = "command" === kind.kind;
   if (!tmp) {
     tmp = "user_command" === kind.kind || "message_command" === kind.kind;
@@ -127,14 +127,14 @@ export const getConjurePlanBotInteraction = function getConjurePlanBotInteractio
   return tmp2;
 };
 export const getConjurePlanExperienceBotExchanges = function getConjurePlanExperienceBotExchanges(arr) {
-  const found = arr.filter(f112500);
+  const found = arr.filter(f112508);
   const substr = found.slice(0, 3);
-  return substr.map(f112501);
+  return substr.map(f112509);
 };
 export const mergeConjurePlanBotExchanges = function mergeConjurePlanBotExchanges(arr, arg1) {
   if (0 !== arg1.length) {
     let items;
-    if (!arr.some(f112502)) {
+    if (!arr.some(f112510)) {
       items = [];
       items[HermesBuiltin.arraySpread(items, arr.slice(0, 2), 0)] = arg1[0];
     }
@@ -151,15 +151,15 @@ export const getConjurePlanSectionBotExchanges = function getConjurePlanSectionB
       example_exchanges = [];
     }
     let arr2 = botExchanges;
-    const found = example_exchanges.filter(f112500);
+    const found = example_exchanges.filter(f112508);
     const substr = found.slice(0, 3);
-    const mapped = substr.map(f112501);
+    const mapped = substr.map(f112509);
     if (mapped.length > 0) {
       arr2 = mapped;
     }
     if (0 !== conjurePlanCommandExchanges.length) {
       let items;
-      if (!arr2.some(f112502)) {
+      if (!arr2.some(f112510)) {
         items = [];
         let tmp2 = items;
         items[HermesBuiltin.arraySpread(items, arr2.slice(0, 2), 0)] = conjurePlanCommandExchanges[0];

@@ -157,7 +157,7 @@ function parseChannel(channel, messageId, guildIdFromChannelId, url) {
           obj11 = obj4;
           obj20 = StringUtils;
         } else if (null != url) {
-          const obj9 = { type: "link", content: items4, target: url, title: "ix" };
+          const obj9 = { type: "link", content: items4, target: url, title: "application" };
           items4 = [{ type: "text", content: url }];
           obj11 = obj9;
           const obj10 = { type: "text", content: url };
@@ -343,7 +343,7 @@ obj3 = {
     [tmp, tmp2, tmp3, tmp4] = arg0;
     LinkUtils;
     if (null == tmp3) {
-      const obj = { type: "link", content: items, target: tmp, title: "ix" };
+      const obj = { type: "link", content: items, target: tmp, title: "application" };
       items = [{ type: "text", content: tmp }];
       return obj;
     } else {
@@ -427,7 +427,7 @@ obj4 = {
         }
       }
     }
-    const obj = { type: "link", content: items, target: tmp, title: "ix" };
+    const obj = { type: "link", content: items, target: tmp, title: "application" };
     items = [{ type: "text", content: tmp }];
     return obj;
   }

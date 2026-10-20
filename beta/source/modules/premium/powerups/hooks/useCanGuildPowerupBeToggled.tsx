@@ -133,7 +133,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanGuildP
     }
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = { disabled: true, reason: "a" };
+      const obj4 = { disabled: true, reason: "Array" };
       cResult[4] = obj4;
       tmp12 = obj4;
     } else {
@@ -143,7 +143,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanGuildP
   } else {
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj5 = { disabled: true, reason: "a" };
+      const obj5 = { disabled: true, reason: "Array" };
       cResult[3] = obj5;
       tmp10 = obj5;
     } else {
@@ -173,7 +173,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanGuildP
     let unlockedPowerups;
     const tmp = stateFromStores;
     if (null == stateFromStores) {
-      return { disabled: true, reason: "a" };
+      return { disabled: true, reason: "Array" };
     } else {
       if (closure_4.type !== constants.LEVEL_ACTIVATED) {
         if (closure_4.type !== tmp15.TIER_OVERRIDE_ACTIVATED) {
@@ -218,7 +218,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanGuildP
           return obj;
         }
       }
-      return { disabled: true, reason: "a" };
+      return { disabled: true, reason: "Array" };
     }
   }, items1);
 });

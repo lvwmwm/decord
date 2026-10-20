@@ -1,10 +1,10 @@
 // Module ID: 18248
 // Function ID: 18249
 // Name: useVoiceChannelAppSurface
-// Dependencies: [6295, 18249, 558, 17962, 576, 18250, 504, 17746, 2]
+// Dependencies: [6295, 18249, 558, 17962, 576, 18250, 504, 17750, 2]
 
 // Module 18248 (useVoiceChannelAppSurface)
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 17746 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 17750 */;
 import useVoiceChannelApp from "useVoiceChannelApp" /* 17962 */;
 import voiceChannelAppSession from "voiceChannelAppSession" /* 18250 */;
 import FramesStore from "FramesStore" /* 6295 */;

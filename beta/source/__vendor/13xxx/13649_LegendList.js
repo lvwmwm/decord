@@ -22,7 +22,7 @@ let frozen;
 let frozen1;
 let map1;
 let memo;
-const f117633 = (item) => {
+const f117641 = (item) => {
   function get() {
     return react_native[item];
   }
@@ -61,7 +61,7 @@ function get() {
   }
   return items;
 }
-const f117653 = () => {
+const f117661 = () => {
   const initialScrollSession = state4.initialScrollSession;
   let kind;
   const tmp = state4;
@@ -92,13 +92,13 @@ const f117653 = () => {
       if (bootstrap1) {
         if (undefined === bootstrap1.frameHandle) {
           const _requestAnimationFrame = requestAnimationFrame;
-          bootstrap1.frameHandle = requestAnimationFrame(f117653);
+          bootstrap1.frameHandle = requestAnimationFrame(f117661);
         }
       }
     }
   }
 };
-const f117654 = () => {
+const f117662 = () => {
   const preservedEndAnchorCorrection = state3.preservedEndAnchorCorrection;
   if (preservedEndAnchorCorrection === obj4) {
     const tmp10 = closure_2_83(closure_0);
@@ -125,7 +125,7 @@ const f117654 = () => {
         state = tmp9.state;
         state.preservedEndAnchorCorrection = obj4;
         const _requestAnimationFrame = requestAnimationFrame;
-        const animationFrame = requestAnimationFrame(f117654);
+        const animationFrame = requestAnimationFrame(f117662);
       }
     }
     state3.preservedEndAnchorCorrection = undefined;
@@ -236,7 +236,7 @@ function StateProvider(children) {
     if (typeof createAnimatedValue === "function") {
       const self = this;
       const self2 = this;
-      const obj = { animatedScrollY: value, columnWrapperStyle: "e", containerLayoutTriggers: map, contextNum: +closure_18, listeners: map1, mapViewabilityAmountCallbacks: map2, mapViewabilityAmountValues: map3, mapViewabilityCallbacks: map4, mapViewabilityConfigStates: map5, mapViewabilityValues: map6, pendingContainerIds: "CONVERSATION_SUMMARY_UPDATE", positionListeners: map7, scrollAxisGap: null, state: 75, values: map8, viewRefs: map9 };
+      const obj = { animatedScrollY: value, columnWrapperStyle: "e", containerLayoutTriggers: map, contextNum: +closure_18, listeners: map1, mapViewabilityAmountCallbacks: map2, mapViewabilityAmountValues: map3, mapViewabilityCallbacks: map4, mapViewabilityConfigStates: map5, mapViewabilityValues: map6, pendingContainerIds: "USER_DISCORD_ACHIEVEMENT_STATE_UPDATE", positionListeners: map7, scrollAxisGap: 75, state: "WALLET_BALANCE_UPDATE", values: map8, viewRefs: map9 };
       value = new Animated.Animated.Value(0);
       const _Map = Map;
       const self3 = this;
@@ -3923,7 +3923,7 @@ function rearmBootstrapInitialScroll(context, scroll) {
   if (bootstrap1) {
     if (undefined === bootstrap1.frameHandle) {
       const _requestAnimationFrame = requestAnimationFrame;
-      bootstrap1.frameHandle = requestAnimationFrame(f117653);
+      bootstrap1.frameHandle = requestAnimationFrame(f117661);
     }
   }
   state2 = context.state;
@@ -4372,7 +4372,7 @@ function retargetActiveInitialScrollAtEnd(context) {
       const state2 = context.state;
       state2.preservedEndAnchorCorrection = preservedEndAnchorCorrection;
       const _requestAnimationFrame = requestAnimationFrame;
-      const animationFrame = requestAnimationFrame(f117654);
+      const animationFrame = requestAnimationFrame(f117662);
       flag = true;
     }
     tmp4 = flag;
@@ -6933,7 +6933,7 @@ function flushItemSizeUpdates(state, needsRecalculate) {
                   num17 = bound;
                 } while (num15 < tmp14);
               }
-              let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: -1 };
+              let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: "p\u0314" };
               const length = data.length;
               let _Math4 = Math;
               const bound1 = Math.max(0, tmp141);
@@ -8564,7 +8564,7 @@ function flushItemSizeUpdates(state, needsRecalculate) {
                   num17 = bound;
                 } while (num15 < tmp14);
               }
-              let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: -1 };
+              let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: "p\u0314" };
               const length = data.length;
               let _Math4 = Math;
               const bound1 = Math.max(0, tmp141);
@@ -11077,7 +11077,7 @@ function doInitialAllocateContainers(context) {
                           num17 = bound;
                         } while (num15 < tmp14);
                       }
-                      let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: -1 };
+                      let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: "p\u0314" };
                       const length = data.length;
                       let _Math4 = Math;
                       const bound1 = Math.max(0, tmp141);
@@ -12700,7 +12700,7 @@ function doInitialAllocateContainers(context) {
                         num17 = bound;
                       } while (num15 < tmp14);
                     }
-                    let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: -1 };
+                    let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: "p\u0314" };
                     const length = data.length;
                     let _Math4 = Math;
                     const bound1 = Math.max(0, tmp141);
@@ -13271,7 +13271,7 @@ if (!react) {
   if (react) {
     let _Object2 = Object;
     let keys = Object.keys(react);
-    let item = keys.forEach(f117633);
+    let item = keys.forEach(f117641);
   }
   obj.default = react;
   const _Object3 = Object;
@@ -13288,7 +13288,7 @@ if (!react_native) {
   if (react_native) {
     const _Object5 = Object;
     const keys1 = Object.keys(react_native);
-    const item1 = keys1.forEach(f117633);
+    const item1 = keys1.forEach(f117641);
   }
   obj2.default = react_native;
   const _Object6 = Object;
@@ -13366,12 +13366,12 @@ frozen.memo(function DebugView2() {
   const tmp12 = undefined !== tmp6[6] && tmp6[6];
   const obj3 = getContentSize(context);
   let closure_0 = tmp5(react.useReducer((arg0) => arg0 + 1, 0), 2)[1];
-  const f117700 = () => {
-    f117700();
+  const f117708 = () => {
+    f117708();
   };
   const items2 = [100];
   const effect = react.useEffect(() => {
-    const interval = setInterval(f117700, 100);
+    const interval = setInterval(f117708, 100);
     return () => clearInterval(closure_0);
   }, items2);
   ({ createElement, createElement: createElement2 } = frozen);
@@ -14162,7 +14162,7 @@ let closure_121 = memo(function Container2(id) {
     current = ref1.current;
     let closure_0 = id;
     let closure_1 = context;
-    let f157619;
+    let f157631;
     const itemKey = current.itemKey;
     current.didLayout = true;
     size = arg0;
@@ -14181,7 +14181,7 @@ let closure_121 = memo(function Container2(id) {
     }
     const sizesKnown = state.sizesKnown;
     const value = sizesKnown.get(itemKey);
-    f157619 = () => {
+    f157631 = () => {
 
     };
     const tmp7 = closure_2_27;
@@ -14195,7 +14195,7 @@ let closure_121 = memo(function Container2(id) {
         if (null != measure) {
           measure.call(current2, (arg0, arg1, width, height) => {
             size = { height, width };
-            if (typeof f157619 === "function") {
+            if (typeof f157631 === "function") {
               current.lastSize = size;
               const items = [{ containerId, itemKey, size }];
               const obj = { containerId, itemKey, size };
@@ -16401,7 +16401,7 @@ let items = [
                     num17 = bound;
                   } while (num15 < tmp14);
                 }
-                let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: -1 };
+                let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: "p\u0314" };
                 const length = data.length;
                 let _Math4 = Math;
                 const bound1 = Math.max(0, tmp141);
@@ -17178,7 +17178,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
   let useWindowScroll;
   let viewOffset;
   let viewabilityConfig;
-  const f117673 = () => {
+  const f117681 = () => {
     fn = undefined && ((arg0, arg1, arg2) => {
       let tmp;
       if (undefined !== arg0) {
@@ -17727,7 +17727,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
         const _Map = Map;
         let self = this;
         let self2 = this;
-        const obj17 = { averageSizes: {}, columnSpans: [], columns: [], containerItemGenerations: [], containerItemKeys: map, containerItemMetadata: map1, contentInsetOverride: "emoji", dataChangeEpoch: false, dataChangeNeedsScrollUpdate: false, didColumnsChange: false, didDataChange: false, didLoad: true, enableScrollForNextCalculateItemsInView: -1, endBuffered: -1, endNoBuffer: "emoji", endReachedSnapshot: 285736959, firstFullyOnScreenIndex: 7430402, hasHadNonEmptyData: data.length > 0, idCache: [], idsInView: [], indexByKey: map2, initialScroll: tmp58, initialScrollSession: tmp98, isEndReached: 113, isFirst: 39911680, isStartReached: 115, lastBatchingAction: Date.now(), lastLayout: 0, lastScrollDelta: 7409920, loadStartTime: Date.now(), minIndexSizeChanged: -142, nativeContentInset: -1, nativeMarginTop: 1627546111, pendingDataComparison: 28929, pendingNativeMVCPAdjust: 1113653248, positions: [], props: {}, queuedCalculateItemsInView: 35217986, queuedFullDrawDistancePrewarm: 44785152, refScroller: { current: null }, scroll: 2142568449, scrollAdjustHandler: tmp101, scrollForNextCalculateItemsInView: -1056964153, scrollHistory: [], scrollLength: tmp88, scrollPending: 119594, scrollPrev: 51745602, scrollPrevTime: 29368576, scrollProcessingEnabled: 362037760, scrollTime: -1054343165, sizes: map3, sizesKnown: map4, startBuffered: 1107296559, startNoBuffer: 136106, startReachedSnapshot: 77684, stickyContainerPool: set1, stickyContainers: map5, timeoutAdaptiveRender: 1598964224, timeouts: set2, totalSize: 1178861571, viewabilityConfigCallbackPairs: 1191182615 };
+        const obj17 = { averageSizes: {}, columnSpans: [], columns: [], containerItemGenerations: [], containerItemKeys: map, containerItemMetadata: map1, contentInsetOverride: "emoji", dataChangeEpoch: false, dataChangeNeedsScrollUpdate: false, didColumnsChange: false, didDataChange: false, didLoad: true, enableScrollForNextCalculateItemsInView: -1, endBuffered: -1, endNoBuffer: "emoji", endReachedSnapshot: 285736959, firstFullyOnScreenIndex: 7430402, hasHadNonEmptyData: data.length > 0, idCache: [], idsInView: [], indexByKey: map2, initialScroll: tmp58, initialScrollSession: tmp98, isEndReached: 113, isFirst: 39911680, isStartReached: 115, lastBatchingAction: Date.now(), lastLayout: 0, lastScrollDelta: 7409920, loadStartTime: Date.now(), minIndexSizeChanged: -142, nativeContentInset: -1, nativeMarginTop: 1627546111, pendingDataComparison: 28929, pendingNativeMVCPAdjust: 845217792, positions: [], props: {}, queuedCalculateItemsInView: 1683627180, queuedFullDrawDistancePrewarm: 1078218555, refScroller: { current: null }, scroll: -1526725733, scrollAdjustHandler: tmp101, scrollForNextCalculateItemsInView: 1140851611, scrollHistory: [], scrollLength: tmp88, scrollPending: 249562, scrollPrev: 236445, scrollPrevTime: 60525635, scrollProcessingEnabled: 60532480, scrollTime: 51088384, sizes: map3, sizesKnown: map4, startBuffered: 193789955, startNoBuffer: -1606221821, startReachedSnapshot: -620756069, stickyContainerPool: set1, stickyContainers: map5, timeoutAdaptiveRender: 252081, timeouts: set2, totalSize: 236353, viewabilityConfigCallbackPairs: 236353 };
         map = new Map();
         const _Map2 = Map;
         let self3 = this;
@@ -18892,7 +18892,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
                       num17 = bound;
                     } while (num15 < tmp14);
                   }
-                  let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: -1 };
+                  let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: "p\u0314" };
                   const length = data.length;
                   let _Math4 = Math;
                   const bound1 = Math.max(0, tmp141);
@@ -19660,11 +19660,11 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
       dataVersion,
       drawDistance: num,
       estimatedItemSize: num2,
-      getFixedItemSize: snapToIndices.useMemo(f117673, items3),
-      getItemType: snapToIndices.useMemo(f117673, items4),
+      getFixedItemSize: snapToIndices.useMemo(f117681, items3),
+      getItemType: snapToIndices.useMemo(f117681, items4),
       horizontal,
       itemsAreEqual,
-      keyExtractor: snapToIndices.useMemo(f117673, items5),
+      keyExtractor: snapToIndices.useMemo(f117681, items5),
       maintainScrollAtEnd: tmp39,
       maintainScrollAtEndThreshold: num3,
       maintainVisibleContentPosition: obj8,
@@ -19701,7 +19701,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
       stylePaddingLeft: tmp37,
       stylePaddingRight: tmp38,
       stylePaddingTop: tmp35,
-      useWindowScroll: "flag_gf"
+      useWindowScroll: 6
     };
     items3 = [getFixedItemSize];
     items4 = [getItemType];
@@ -20020,7 +20020,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
               if (bootstrap2) {
                 if (undefined === bootstrap2.frameHandle) {
                   let _requestAnimationFrame = requestAnimationFrame;
-                  bootstrap2.frameHandle = requestAnimationFrame(f117653);
+                  bootstrap2.frameHandle = requestAnimationFrame(f117661);
                 }
               }
             }
@@ -21769,7 +21769,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
                           num17 = bound;
                         } while (num15 < tmp14);
                       }
-                      let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: -1 };
+                      let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: "p\u0314" };
                       const length = data.length;
                       let _Math4 = Math;
                       const bound1 = Math.max(0, tmp141);
@@ -22408,7 +22408,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
                             const state3 = tmp2.state;
                             state3.preservedEndAnchorCorrection = obj4;
                             let _requestAnimationFrame = requestAnimationFrame;
-                            let animationFrame = requestAnimationFrame(f117654);
+                            let animationFrame = requestAnimationFrame(f117662);
                           }
                         } else if (scrollingTo2) {
                           const value2 = closure_37.get(state2);
@@ -23683,7 +23683,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
                     num17 = bound;
                   } while (num15 < tmp14);
                 }
-                let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: -1 };
+                let obj2 = { endNoBuffer: null, firstFullyOnScreenIndex: "Array", startNoBuffer: "p\u0314" };
                 const length = data.length;
                 let _Math4 = Math;
                 const bound1 = Math.max(0, tmp141);
@@ -24333,13 +24333,13 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
         tmp10.scrollForNextCalculateItemsInView = undefined;
       }
     }, items22);
-    const f117746 = () => {
+    const f117754 = () => {
       const tmp = overrideItemLayout;
       if (!tmp) {
         doInitialAllocateContainers(context);
       }
     };
-    const state1 = obj22.useState(() => f117759());
+    const state1 = obj22.useState(() => f117767());
     const imperativeHandle = obj.useImperativeHandle(ref, () => {
       const t2 = function t() {
         return true;
@@ -24853,14 +24853,14 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
         scrollIndexIntoView(arg0) {
           closure_0 = arg0;
           if (typeof runScrollWithPromise === "function") {
-            const f147871 = () => {
+            const f147881 = () => {
               let num;
               if (typeof scrollIndexIntoView === "function") {
                 let flag = false;
                 if (state) {
                   const index = tmp.index;
                   const startNoBuffer = tmp2.startNoBuffer;
-                  const tmp5 = closure_1_3(f147871, closure_1_6);
+                  const tmp5 = closure_1_3(f147881, closure_1_6);
                   if (index < startNoBuffer) {
                     const obj = { index, viewPosition: num };
                     const merged = Object.assign(tmp5);
@@ -24894,7 +24894,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
                   pendingScrollResolve.call(pendingScrollResolve);
                 }
                 pendingScrollResolve.pendingScrollResolve = pendingScrollResolve;
-                runScrollRequest(sum, pendingScrollResolve, f147877, t);
+                runScrollRequest(sum, pendingScrollResolve, f147887, t);
               } else {
                 throw new TypeError("Trying to call a non-function");
               }
@@ -24909,10 +24909,10 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
           item = item.item;
           closure_1 = Object.assign(item, Object.assign({ item: 0 }));
           if (typeof runScrollWithPromise === "function") {
-            const f147872 = () => {
+            const f147882 = () => {
               let num;
               data = props.props.data;
-              const index1 = data.indexOf(f147872);
+              const index1 = data.indexOf(f147882);
               let flag = -1 !== index1;
               if (flag) {
                 const obj = { index: index1 };
@@ -24957,7 +24957,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
                   pendingScrollResolve.call(pendingScrollResolve);
                 }
                 pendingScrollResolve.pendingScrollResolve = pendingScrollResolve;
-                runScrollRequest(sum, pendingScrollResolve, f147877, t);
+                runScrollRequest(sum, pendingScrollResolve, f147887, t);
               } else {
                 throw new TypeError("Trying to call a non-function");
               }
@@ -25001,8 +25001,8 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
             fn = () => isScrollToIndexReady(index.index);
           }
           if (typeof tmp === "function") {
-            const f147874 = () => {
-              closure_3_73(index, f147874);
+            const f147884 = () => {
+              closure_3_73(index, f147884);
               return true;
             };
             if (fn === undefined) {
@@ -25019,7 +25019,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
                   pendingScrollResolve.call(pendingScrollResolve);
                 }
                 pendingScrollResolve.pendingScrollResolve = pendingScrollResolve;
-                runScrollRequest(sum, pendingScrollResolve, f147877, t);
+                runScrollRequest(sum, pendingScrollResolve, f147887, t);
               } else {
                 throw new TypeError("Trying to call a non-function");
               }
@@ -25034,9 +25034,9 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
           item = item.item;
           closure_1 = Object.assign(item, Object.assign({ item: 0 }));
           if (typeof runScrollWithPromise === "function") {
-            const f147876 = () => {
+            const f147886 = () => {
               data = props.props.data;
-              const index = data.indexOf(f147876);
+              const index = data.indexOf(f147886);
               let flag = -1 !== index;
               if (flag) {
                 const obj = { index };
@@ -25058,7 +25058,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
                   pendingScrollResolve.call(pendingScrollResolve);
                 }
                 pendingScrollResolve.pendingScrollResolve = pendingScrollResolve;
-                runScrollRequest(sum, pendingScrollResolve, f147877, t);
+                runScrollRequest(sum, pendingScrollResolve, f147887, t);
               } else {
                 throw new TypeError("Trying to call a non-function");
               }
@@ -25071,8 +25071,8 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
         scrollToOffset(arg0) {
           closure_0 = arg0;
           if (typeof runScrollWithPromise === "function") {
-            const f147877 = () => {
-              closure_3_72(closure_0, f147877);
+            const f147887 = () => {
+              closure_3_72(closure_0, f147887);
               return true;
             };
             const t = t2;
@@ -25087,7 +25087,7 @@ let closure_141 = forwardRef(function LegendListInner2(recycleItems, ref) {
                   pendingScrollResolve.call(pendingScrollResolve);
                 }
                 pendingScrollResolve.pendingScrollResolve = pendingScrollResolve;
-                runScrollRequest(sum, pendingScrollResolve, f147877, t);
+                runScrollRequest(sum, pendingScrollResolve, f147887, t);
               } else {
                 throw new TypeError("Trying to call a non-function");
               }
@@ -25886,7 +25886,7 @@ export const useViewability = function useViewability(arg0, arg1) {
   let closure_1 = arg1;
   const context = frozen.useContext(redux);
   const context1 = react.useContext(redux2);
-  const f117757 = () => {
+  const f117765 = () => {
     if (containerId) {
       let str = "";
       containerId = containerId.containerId;
@@ -25896,11 +25896,11 @@ export const useViewability = function useViewability(arg0, arg1) {
       mapViewabilityValues = mapViewabilityValues.mapViewabilityValues;
       const value = mapViewabilityValues.get(containerId + str);
       if (value) {
-        f117757(value);
+        f117765(value);
       }
     }
   };
-  const state = react.useState(() => f117759());
+  const state = react.useState(() => f117767());
   const items = [context, arg0, arg1, context1];
   const effect = react.useEffect(() => {
     if (context1) {
@@ -25924,16 +25924,16 @@ export const useViewabilityAmount = function useViewabilityAmount(arg0) {
   let closure_0 = arg0;
   const context = frozen.useContext(redux);
   const context1 = react.useContext(redux2);
-  const f117759 = () => {
+  const f117767 = () => {
     if (containerId) {
       const mapViewabilityAmountValues = closure_1_1.mapViewabilityAmountValues;
       const value = mapViewabilityAmountValues.get(containerId.containerId);
       if (value) {
-        f117759(value);
+        f117767(value);
       }
     }
   };
-  const state = react.useState(() => f117759());
+  const state = react.useState(() => f117767());
   const items = [context, arg0, context1];
   const effect = react.useEffect(() => {
     if (context1) {

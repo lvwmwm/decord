@@ -19,7 +19,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let obj4;
-const f112544 = (item) => "" !== item;
+const f112552 = (item) => "" !== item;
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -515,7 +515,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                                                                                                                                 str2 = "";
                                                                                                                               }
                                                                                                                               items[1] = str2;
-                                                                                                                              const found = items.filter(f112544);
+                                                                                                                              const found = items.filter(f112552);
                                                                                                                               joined = undefined;
                                                                                                                               if (found.length > 0) {
                                                                                                                                 joined = found.join(" \u00B7 ");
@@ -1205,7 +1205,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
             str2 = "";
           }
           items[1] = str2;
-          const found = items.filter(f112544);
+          const found = items.filter(f112552);
           joined = undefined;
           if (found.length > 0) {
             joined = found.join(" \u00B7 ");

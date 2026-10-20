@@ -884,12 +884,12 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   let tmp38;
   let tmp8;
   let tmp9;
-  const f133035 = () => {
+  const f133045 = () => {
     const items = [, ];
     ({ shouldShowGooglePlayPriceChange: arr[0], priceChangeRecord: arr[1] } = GooglePlayPriceChangeStore);
     return items;
   };
-  const f133037 = () => {
+  const f133047 = () => {
     const items = [ReferralTrialStore.getReferralsRemaining({ bypassFetch: true }), ReferralTrialStore.getRecurringReminderStateId()];
     return items;
   };
@@ -914,8 +914,8 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   }
   const items2 = [GooglePlayPriceChangeStore];
   const tmpResult21 = get_initialized;
-  [tmp8, tmp9] = tmpResult21.useStateFromStoresArray(items2, f133035);
-  _slicedToArray(tmpResult21.useStateFromStoresArray(items2, f133035), 2);
+  [tmp8, tmp9] = tmpResult21.useStateFromStoresArray(items2, f133045);
+  _slicedToArray(tmpResult21.useStateFromStoresArray(items2, f133045), 2);
   const tmpResult22 = usePremiumDiscountOffer;
   const premiumDiscountOffer = tmpResult22.usePremiumDiscountOffer();
   const items3 = [ApexExperimentStore];
@@ -929,8 +929,8 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMainViewToolt
   const isEligibleSenderForReferralProgram = tmpResult24.useIsEligibleSenderForReferralProgram(!stateFromStores2);
   const items4 = [ReferralTrialStore];
   const tmpResult25 = get_initialized;
-  [tmp14, tmp15] = tmpResult25.useStateFromStoresArray(items4, f133037);
-  _slicedToArray(tmpResult25.useStateFromStoresArray(items4, f133037), 2);
+  [tmp14, tmp15] = tmpResult25.useStateFromStoresArray(items4, f133047);
+  _slicedToArray(tmpResult25.useStateFromStoresArray(items4, f133047), 2);
   const tmpResult26 = usePremiumTrialOffer;
   const premiumTrialOffer = tmpResult26.usePremiumTrialOffer();
   const PremiumTrialOfferActionSheetKillSwitchExperiment = tmp(18117).PremiumTrialOfferActionSheetKillSwitchExperiment;

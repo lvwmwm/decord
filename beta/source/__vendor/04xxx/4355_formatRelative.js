@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 4355 (formatRelative)
-const f91020 = (arg0) => {
+const f91028 = (arg0) => {
   let str = "'m\u00FAlt' ";
   const concat = "".concat;
   const tmp = _true[arg0.getUTCDay(arg0)];
@@ -16,7 +16,7 @@ const f91020 = (arg0) => {
   return combined.concat(tmp, "' p'-kor'");
 };
 let closure_0 = ["vas\u00E1rnap", "h\u00E9tf\u0151n", "kedden", "szerd\u00E1n", "cs\u00FCt\u00F6rt\u00F6k\u00F6n", "p\u00E9nteken", "szombaton"];
-const obj = { lastWeek: f91020, yesterday: "'tegnap' p'-kor'", today: "'ma' p'-kor'", tomorrow: "'holnap' p'-kor'", nextWeek: f91020, other: "P" };
+const obj = { lastWeek: f91028, yesterday: "'tegnap' p'-kor'", today: "'ma' p'-kor'", tomorrow: "'holnap' p'-kor'", nextWeek: f91028, other: "P" };
 let c0 = true;
 
 export default function formatRelative(arg0, arg1) {

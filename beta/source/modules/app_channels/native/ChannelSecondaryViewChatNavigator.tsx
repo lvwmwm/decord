@@ -1,18 +1,20 @@
 // Module ID: 18013
 // Function ID: 18014
 // Name: ChannelSecondaryViewChatNavigator
-// Dependencies: [19, 21, 9644, 5191, 587, 9599, 1384, 558, 576, 10671, 13509, 5068, 6965, 13790, 9611, 4922, 2]
+// Dependencies: [19, 21, 9644, 5191, 587, 9599, 1384, 558, 576, 10671, 11847, 13509, 5068, 6965, 13790, 9611, 4922, 2]
 
 // Module 18013 (ChannelSecondaryViewChatNavigator)
-import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import HeaderShared from "HeaderShared" /* 9599 */;
 import ChannelActionsDefault from "ChannelActions" /* 9611 */;
 import ChatViewDefault from "ChatView" /* 10671 */;
+import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 11847 */;
+import ChannelContainer2 from "ChannelContainer" /* 13509 */;
 import ChannelHeaderDefault from "ChannelHeader" /* 13790 */;
 import react from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
 import NativeStackView from "NativeStackView" /* 9644 */;
 import createStyles from "createStyles" /* 5191 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -21,9 +23,9 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let dependencyMap, importDefault;
 
+let closure_4;
+let hasOwnProperty;
 let obj2;
-let tmp;
-const ChannelContainer2 = tmp(13509);
 function renderChannelSecondaryViewChatHeader(arg0) {
   let obj2;
   const obj = { shouldHandleSafeArea: obj2.isAndroid() };
@@ -33,41 +35,54 @@ function renderChannelSecondaryViewChatHeader(arg0) {
   obj2 = PlatformUtils;
   return renderHeader(obj);
 }
-const jsx = Fragment.jsx;
-let closure_5 = NativeStackView.createNativeStackNavigator();
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let closure_6 = NativeStackView.createNativeStackNavigator();
 let obj = { actions: obj2 };
 obj2 = { marginRight: nativeDefault.space.PX_16 };
-let closure_6 = createStyles.createStyles(obj);
+let closure_7 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSecondaryViewChatScreen(arg0) {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSecondaryViewChatScreen(arg0) {
   let channelId;
   let guildId;
+  let items;
   const obj = react2;
-  const cResult = obj.c(7);
+  const cResult = obj.c(8);
   ({ channelId, guildId } = arg0);
   const ref = react.useRef(null);
   if (cResult[0] === channelId) {
     let tmp5;
+    let tmp8;
     if (cResult[1] === guildId) {
       tmp5 = cResult[2];
     }
-    if (cResult[3] === channelId) {
-      if (cResult[4] === guildId) {
-        let tmp7;
-        if (cResult[5] === tmp5) {
-          tmp7 = cResult[6];
+    const _Symbol = Symbol;
+    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmpResult = PlatformUtils;
+      const isIOSResult = tmpResult.isIOS() && React3(tmp(11847).PortalKeyboardRenderer, { portal: false });
+      cResult[3] = isIOSResult;
+      tmp8 = isIOSResult;
+    } else {
+      tmp8 = cResult[3];
+    }
+    if (cResult[4] === channelId) {
+      if (cResult[5] === guildId) {
+        let tmp11;
+        if (cResult[6] === tmp5) {
+          tmp11 = cResult[7];
         }
-        return tmp7;
+        return tmp11;
       }
     }
-    const tmp9 = jsx(ChannelContainer2.ChannelContainer, { guildId, channelId, children: tmp5 });
-    cResult[3] = channelId;
-    cResult[4] = guildId;
-    cResult[5] = tmp5;
-    cResult[6] = tmp9;
-    tmp7 = tmp9;
+    const obj2 = { guildId, channelId, children: items };
+    items = [tmp5, tmp8];
+    const tmp13 = hasOwnProperty(ChannelContainer2.ChannelContainer, obj2);
+    cResult[4] = channelId;
+    cResult[5] = guildId;
+    cResult[6] = tmp5;
+    cResult[7] = tmp13;
+    tmp11 = tmp13;
   }
-  const tmp6 = jsx(ChatViewDefault, { guildId, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, screenIndex: "channel-secondary-view-chat" });
+  const tmp6 = React3(ChatViewDefault, { guildId, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, screenIndex: "channel-secondary-view-chat" });
   cResult[0] = channelId;
   cResult[1] = guildId;
   cResult[2] = tmp6;
@@ -75,30 +90,37 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channel
 }) : (function ChannelSecondaryViewChatScreen(arg0) {
   let channelId;
   let guildId;
+  let items;
   ({ channelId, guildId } = arg0);
-  react.useRef(null);
+  const obj = { guildId, channelId, children: items };
+  const ref = react.useRef(null);
   const ChannelContainer = ChannelContainer2.ChannelContainer;
-  return <ChannelContainer guildId={guildId} channelId={channelId}>{null}</ChannelContainer>;
+  items = [React3(ChatViewDefault, { guildId, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, screenIndex: "channel-secondary-view-chat" }), ];
+  const obj2 = PlatformUtils;
+  items[1] = obj2.isIOS() && React3(PortalKeyboardRenderer.PortalKeyboardRenderer, { portal: false });
+  obj2.isIOS() && React3(PortalKeyboardRenderer.PortalKeyboardRenderer, { portal: false });
+  return hasOwnProperty(ChannelContainer, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSecondaryViewChatNavigator(navigation) {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSecondaryViewChatNavigator(navigation) {
   let actions;
   let channelId;
   let params;
   let tmp7;
-  const obj = params(channelId[8]);
+  let obj = params(channelId[8]);
   const cResult = obj.c(21);
   navigation = navigation.navigation;
   params = navigation.route.params;
-  const tmp4 = closure_6();
+  const tmp4 = closure_7();
   importDefault = tmp4;
   const tmp5 = require("useColorThemeBackground")();
-  const obj2 = params(channelId[12]);
+  const obj2 = params(channelId[13]);
   const accessibilityNativeStackOptions = obj2.useAccessibilityNativeStackOptions();
   channelId = params.channelId;
   if (cResult[0] !== channelId) {
-    const fn = function o() {
-      return jsx(ChannelHeaderDefault, { channelId, screenIndex: "channel-secondary-view-chat", isNavigationScreen: true });
+    const fn = function c() {
+      const obj = { channelId, screenIndex: "channel-secondary-view-chat", isNavigationScreen: true };
+      return React3(ChannelHeaderDefault, obj);
     };
     cResult[0] = channelId;
     cResult[1] = fn;
@@ -145,21 +167,28 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSecon
                 }
                 return tmp24;
               }
-              const tmp26 = jsx(params(channelId[15]).ThemeContextProvider, { gradient: tmp5, children: tmp20 });
+              const obj3 = { gradient: tmp5, children: tmp20 };
+              const tmp26 = closure_4(params(channelId[16]).ThemeContextProvider, obj3);
               cResult[18] = tmp5;
               cResult[19] = tmp20;
               cResult[20] = tmp26;
               tmp24 = tmp26;
             }
-            const tmp23 = <closure_5.Navigator screenOptions={tmp11}>{tmp16}</closure_5.Navigator>;
+            const obj4 = { screenOptions: tmp11, children: tmp16 };
+            const tmp23 = closure_4(closure_6.Navigator, obj4);
             cResult[15] = tmp11;
             cResult[16] = tmp16;
             cResult[17] = tmp23;
             tmp20 = tmp23;
           }
-          const tmp19 = <closure_5.Screen name="chat">{function children() {
-            return <closure_8 channelId={params.channelId} guildId={params.guildId} />;
-          }}</closure_5.Screen>;
+          const obj5 = {
+            name: "chat",
+            children() {
+                      const obj = { channelId: params.channelId, guildId: params.guildId };
+                      return React3(closure_9, obj);
+                    }
+          };
+          const tmp19 = closure_4(closure_6.Screen, obj5);
           cResult[12] = params.channelId;
           cResult[13] = params.guildId;
           cResult[14] = tmp19;
@@ -176,8 +205,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSecon
     cResult[11] = obj6;
     tmp11 = obj6;
   }
-  const fn2 = function s() {
-    return jsx(ChannelActionsDefault, { containerStyle: actions.actions, channelId, screenIndex: "channel-secondary-view-chat" });
+  const fn2 = function l() {
+    const obj = { containerStyle: actions.actions, channelId, screenIndex: "channel-secondary-view-chat" };
+    return React3(ChannelActionsDefault, obj);
   };
   cResult[2] = channelId;
   cResult[3] = tmp4;
@@ -190,7 +220,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSecon
   let obj4;
   navigation = navigation.navigation;
   const params = navigation.route.params;
-  const tmp = closure_6();
+  const tmp = closure_7();
   dependencyMap = tmp;
   const tmp2 = params(5068)();
   let obj = navigation(6965);
@@ -204,11 +234,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSecon
       header: renderChannelSecondaryViewChatHeader,
       headerTitle() {
         const obj = { channelId, screenIndex: "channel-secondary-view-chat", isNavigationScreen: true };
-        return channelId(params(actions[13]), obj);
+        return channelId(params(actions[14]), obj);
       },
       headerRight() {
         const obj = { containerStyle: actions.actions, channelId, screenIndex: "channel-secondary-view-chat" };
-        return channelId(params(actions[14]), obj);
+        return channelId(params(actions[15]), obj);
       },
       headerLeft: obj2.getRenderBackImage(navigation)
     };
@@ -217,17 +247,18 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSecon
     return obj;
   }, items);
   let obj2 = { gradient: tmp2, children: channelId(Navigator, obj3) };
-  obj3 = { screenOptions: memo, children: channelId(closure_5.Screen, obj4) };
+  obj3 = { screenOptions: memo, children: channelId(closure_6.Screen, obj4) };
   obj4 = {
     name: "chat",
     children() {
-      return <closure_8 channelId={params.channelId} guildId={params.guildId} />;
+      const obj = { channelId: params.channelId, guildId: params.guildId };
+      return React3(closure_9, obj);
     }
   };
   const ThemeContextProvider = navigation(4922).ThemeContextProvider;
-  Navigator = closure_5.Navigator;
+  Navigator = closure_6.Navigator;
   return channelId(ThemeContextProvider, obj2);
 });
 const result = size.fileFinishedImporting("modules/app_channels/native/ChannelSecondaryViewChatNavigator.tsx");
 
-export default tmp2;
+export default tmp3;

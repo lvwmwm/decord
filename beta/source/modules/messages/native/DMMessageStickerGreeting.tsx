@@ -179,7 +179,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
   }
   _require = first1(function*(arg0, value) {
     let closure_1;
-    let obj4;
+    let obj7;
     let v1;
     if (c5 === 2) {
       c5 = 3;
@@ -188,8 +188,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
+        let obj2 = { value, done: true };
+        return obj2;
       } else {
         return { value: "IconComponent", done: null };
       }
@@ -204,14 +204,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
             closure_0 = tmp4;
             showErrorToast = undefined;
             tmp = undefined;
-            const tmp42 = c3;
-            if (!tmp42) {
+            const tmp35 = c3;
+            if (!tmp35) {
               c4(true);
               showErrorToast = function showErrorToast(text) {
                 if (closure_1_1 !== text) {
@@ -228,14 +228,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
                 return { value: "IconComponent", done: null };
               } else {
                 c3 = 1;
-                let obj2 = closure_0(closure_2_2[16]);
-                const obj6 = { channelId: closure_0.id, source: "In-channel greet" };
-                obj2.trackWaveCtaClicked(obj6);
+                const obj4 = { channelId: closure_0.id, source: "In-channel greet" };
+                const obj5 = closure_0(closure_2_2[16]);
+                obj5.trackWaveCtaClicked(obj4);
                 c4 = 2;
                 c5 = 1;
-                const obj7 = { value: obj4.sendGreetMessage(closure_0.id, closure_2_15), done: false };
-                obj4 = first(closure_2_2[17]);
-                return obj7;
+                const obj6 = { value: obj7.sendGreetMessage(closure_0.id, closure_2_15), done: false };
+                obj7 = first(closure_2_2[17]);
+                return obj6;
               }
             }
           }
@@ -263,11 +263,11 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
         }
         c5 = 3;
         return { value: "IconComponent", done: null };
-      } catch (tmp35) {
-        closure_2 = tmp35;
+      } catch (tmp28) {
+        closure_2 = tmp28;
         if (0 === c3) {
           c5 = 3;
-          throw tmp35;
+          throw tmp28;
         } else {
           c4 = 1;
         }
@@ -297,7 +297,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
   return react.useCallback(first1(function*(arg0, value) {
     let closure_0;
     let closure_1;
-    let obj4;
+    let obj7;
     let tmp;
     if (c5 === 2) {
       c5 = 3;
@@ -306,8 +306,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
+        let obj2 = { value, done: true };
+        return obj2;
       } else {
         return { value: "IconComponent", done: null };
       }
@@ -322,8 +322,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
             id = tmp4;
             showErrorToast = function showErrorToast(text) {
@@ -334,8 +334,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
               const obj2 = { text, variant: "critical" };
               obj.open("HANDLE_WAVE_PRESS_TOAST", obj2);
             };
-            const tmp42 = first1;
-            if (!tmp42) {
+            const tmp35 = first1;
+            if (!tmp35) {
               v1(true);
               if (null !== first) {
                 v1(false);
@@ -344,14 +344,14 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
                 return { value: "IconComponent", done: null };
               } else {
                 c3 = 1;
-                let obj2 = id(closure_2[16]);
-                const obj6 = { channelId: id.id, source: "In-channel greet" };
-                obj2.trackWaveCtaClicked(obj6);
+                const obj4 = { channelId: id.id, source: "In-channel greet" };
+                const obj5 = id(closure_2[16]);
+                obj5.trackWaveCtaClicked(obj4);
                 c4 = 2;
                 c5 = 1;
-                const obj7 = { value: obj4.sendGreetMessage(id.id, closure_1_15), done: false };
-                obj4 = tmp(closure_2[17]);
-                return obj7;
+                const obj6 = { value: obj7.sendGreetMessage(id.id, closure_1_15), done: false };
+                obj7 = tmp(closure_2[17]);
+                return obj6;
               }
             }
           }
@@ -379,11 +379,11 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
         }
         c5 = 3;
         return { value: "IconComponent", done: null };
-      } catch (tmp35) {
-        closure_2 = tmp35;
+      } catch (tmp28) {
+        closure_2 = tmp28;
         if (0 === c3) {
           c5 = 3;
-          throw tmp35;
+          throw tmp28;
         } else {
           c4 = 1;
         }

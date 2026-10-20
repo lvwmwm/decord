@@ -190,7 +190,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   class M {
     constructor() {
       activities = closure_7.getActivities(userId);
-      found = activities.filter(() => { /* body not rendered: F151073 */ });
+      found = activities.filter(() => { /* body not rendered: F151085 */ });
       obj = closure_0(closure_2[21]);
       items = [, ];
       items[0] = closure_4;

@@ -122,10 +122,10 @@ function Rt() {
   }
   return false;
 }
-const f1245842 = () => {
+const f1245942 = () => {
 
 };
-const f1245852 = () => {
+const f1245952 = () => {
 
 };
 const get = (arg0) => fn.call(fn, arg0);
@@ -407,8 +407,8 @@ c0 = () => {
 
 };
 let closure_1;
-const f124584 = f1245842;
-const f72887 = (arg0, arg1) => {
+const f124594 = f1245942;
+const f72894 = (arg0, arg1) => {
   arg1.exports = function Ca(arg0, fn) {
     let tmp = arg0;
     if (!("length" in arg0)) {
@@ -432,7 +432,7 @@ const f72887 = (arg0, arg1) => {
     }
   };
 };
-const f72888 = (arg0, arg1) => {
+const f72895 = (arg0, arg1) => {
   function ve(data, arg1) {
     let tmp2;
     const self = this;
@@ -484,7 +484,7 @@ const f72888 = (arg0, arg1) => {
     throw new TypeError("Trying to call a non-function");
   }
 };
-const f72889 = (arg0, arg1) => {
+const f72896 = (arg0, arg1) => {
   function ae(arg0, arg1) {
     let tmp2;
     const self = this;
@@ -543,7 +543,7 @@ const f72889 = (arg0, arg1) => {
     throw new TypeError("Trying to call a non-function");
   }
 };
-const f72890 = (arg0, arg1) => {
+const f72897 = (arg0, arg1) => {
   arg1.exports = function Ma(type) {
     let closure_0 = type;
     const self = this;
@@ -569,7 +569,7 @@ const f72890 = (arg0, arg1) => {
     }
   };
 };
-const f72891 = (arg0, arg1) => {
+const f72898 = (arg0, arg1) => {
   arg1.exports = function Ha(arg0, arg1) {
     const self = this;
     if (!this.listeners) {
@@ -585,7 +585,7 @@ const f72891 = (arg0, arg1) => {
     }
   };
 };
-const f72892 = (arg0, arg1) => {
+const f72899 = (arg0, arg1) => {
   arg1.exports = function Ba(arg0, arg1) {
     const self = this;
     if (this.listeners) {
@@ -598,10 +598,10 @@ const f72892 = (arg0, arg1) => {
     }
   };
 };
-const f72893 = (arg0, arg1) => {
+const f72900 = (arg0, arg1) => {
   let tmp;
   function br(nodeType) {
-    const f149614 = (item) => {
+    const f149626 = (item) => {
       let name;
       let value;
       ({ name, value } = item);
@@ -742,7 +742,7 @@ const f72893 = (arg0, arg1) => {
       let str18 = "";
       if (items1.length) {
         const items2 = [];
-        let item = items1.forEach(f149614);
+        let item = items1.forEach(f149626);
         let str19 = "";
         if (items2.length) {
           str19 = ` ${arr3.join(" ")}`;
@@ -759,7 +759,7 @@ const f72893 = (arg0, arg1) => {
       let str22 = "";
       if (items3.length) {
         const items4 = [];
-        const item1 = items3.forEach(f149614);
+        const item1 = items3.forEach(f149626);
         let str23 = "";
         if (items4.length) {
           str23 = ` ${arr5.join(" ")}`;
@@ -818,7 +818,7 @@ const f72893 = (arg0, arg1) => {
     throw new TypeError("Trying to call a non-function");
   }
 };
-const f72894 = (arg0, arg1) => {
+const f72901 = (arg0, arg1) => {
   let closure_1;
   let tmp2;
   class I {
@@ -1682,19 +1682,19 @@ const f72894 = (arg0, arg1) => {
                   closure_0 = arg0.split(" ");
                   items = [];
                   closure_1 = items;
-                  tmp = closure_0(this, () => { /* body not rendered: F149615 */ });
+                  tmp = closure_0(this, () => { /* body not rendered: F149627 */ });
                   return items;
                 }
                 getElementsByTagName(arg0) {
                   closure_0 = arg0.toLowerCase();
                   items = [];
                   closure_1 = items;
-                  tmp = closure_0(this.childNodes, () => { /* body not rendered: F149616 */ });
+                  tmp = closure_0(this.childNodes, () => { /* body not rendered: F149628 */ });
                   return items;
                 }
                 contains(arg0) {
                   closure_0 = arg0;
-                  tmp = closure_0(this, function() { /* body not rendered: F149617 */ }) || false;
+                  tmp = closure_0(this, function() { /* body not rendered: F149629 */ }) || false;
                   return tmp;
                 }
               }
@@ -1893,19 +1893,19 @@ const f72894 = (arg0, arg1) => {
                     closure_0 = arg0.split(" ");
                     items = [];
                     closure_1 = items;
-                    tmp = closure_0(this, () => { /* body not rendered: F149615 */ });
+                    tmp = closure_0(this, () => { /* body not rendered: F149627 */ });
                     return items;
                   }
                   getElementsByTagName(arg0) {
                     closure_0 = arg0.toLowerCase();
                     items = [];
                     closure_1 = items;
-                    tmp = closure_0(this.childNodes, () => { /* body not rendered: F149616 */ });
+                    tmp = closure_0(this.childNodes, () => { /* body not rendered: F149628 */ });
                     return items;
                   }
                   contains(arg0) {
                     closure_0 = arg0;
-                    tmp = closure_0(this, function() { /* body not rendered: F149617 */ }) || false;
+                    tmp = closure_0(this, function() { /* body not rendered: F149629 */ }) || false;
                     return tmp;
                   }
                 }
@@ -2119,19 +2119,19 @@ const f72894 = (arg0, arg1) => {
                   closure_0 = arg0.split(" ");
                   items = [];
                   closure_1 = items;
-                  tmp = closure_0(this, () => { /* body not rendered: F149615 */ });
+                  tmp = closure_0(this, () => { /* body not rendered: F149627 */ });
                   return items;
                 }
                 getElementsByTagName(arg0) {
                   closure_0 = arg0.toLowerCase();
                   items = [];
                   closure_1 = items;
-                  tmp = closure_0(this.childNodes, () => { /* body not rendered: F149616 */ });
+                  tmp = closure_0(this.childNodes, () => { /* body not rendered: F149628 */ });
                   return items;
                 }
                 contains(arg0) {
                   closure_0 = arg0;
-                  tmp = closure_0(this, function() { /* body not rendered: F149617 */ }) || false;
+                  tmp = closure_0(this, function() { /* body not rendered: F149629 */ }) || false;
                   return tmp;
                 }
               }
@@ -2332,19 +2332,19 @@ const f72894 = (arg0, arg1) => {
                 closure_0 = arg0.split(" ");
                 items = [];
                 closure_1 = items;
-                tmp = closure_0(this, () => { /* body not rendered: F149615 */ });
+                tmp = closure_0(this, () => { /* body not rendered: F149627 */ });
                 return items;
               }
               getElementsByTagName(arg0) {
                 closure_0 = arg0.toLowerCase();
                 items = [];
                 closure_1 = items;
-                tmp = closure_0(this.childNodes, () => { /* body not rendered: F149616 */ });
+                tmp = closure_0(this.childNodes, () => { /* body not rendered: F149628 */ });
                 return items;
               }
               contains(arg0) {
                 closure_0 = arg0;
-                tmp = closure_0(this, function() { /* body not rendered: F149617 */ }) || false;
+                tmp = closure_0(this, function() { /* body not rendered: F149629 */ }) || false;
                 return tmp;
               }
             }
@@ -2545,19 +2545,19 @@ const f72894 = (arg0, arg1) => {
               closure_0 = arg0.split(" ");
               items = [];
               closure_1 = items;
-              tmp = closure_0(this, () => { /* body not rendered: F149615 */ });
+              tmp = closure_0(this, () => { /* body not rendered: F149627 */ });
               return items;
             }
             getElementsByTagName(arg0) {
               closure_0 = arg0.toLowerCase();
               items = [];
               closure_1 = items;
-              tmp = closure_0(this.childNodes, () => { /* body not rendered: F149616 */ });
+              tmp = closure_0(this.childNodes, () => { /* body not rendered: F149628 */ });
               return items;
             }
             contains(arg0) {
               closure_0 = arg0;
-              tmp = closure_0(this, function() { /* body not rendered: F149617 */ }) || false;
+              tmp = closure_0(this, function() { /* body not rendered: F149629 */ }) || false;
               return tmp;
             }
           }
@@ -2758,19 +2758,19 @@ const f72894 = (arg0, arg1) => {
             closure_0 = arg0.split(" ");
             items = [];
             closure_1 = items;
-            tmp = closure_0(this, () => { /* body not rendered: F149615 */ });
+            tmp = closure_0(this, () => { /* body not rendered: F149627 */ });
             return items;
           }
           getElementsByTagName(arg0) {
             closure_0 = arg0.toLowerCase();
             items = [];
             closure_1 = items;
-            tmp = closure_0(this.childNodes, () => { /* body not rendered: F149616 */ });
+            tmp = closure_0(this.childNodes, () => { /* body not rendered: F149628 */ });
             return items;
           }
           contains(arg0) {
             closure_0 = arg0;
-            tmp = closure_0(this, function() { /* body not rendered: F149617 */ }) || false;
+            tmp = closure_0(this, function() { /* body not rendered: F149629 */ }) || false;
             return tmp;
           }
         }
@@ -2971,19 +2971,19 @@ const f72894 = (arg0, arg1) => {
           closure_0 = arg0.split(" ");
           items = [];
           closure_1 = items;
-          tmp = closure_0(this, () => { /* body not rendered: F149615 */ });
+          tmp = closure_0(this, () => { /* body not rendered: F149627 */ });
           return items;
         }
         getElementsByTagName(arg0) {
           closure_0 = arg0.toLowerCase();
           items = [];
           closure_1 = items;
-          tmp = closure_0(this.childNodes, () => { /* body not rendered: F149616 */ });
+          tmp = closure_0(this.childNodes, () => { /* body not rendered: F149628 */ });
           return items;
         }
         contains(arg0) {
           closure_0 = arg0;
-          tmp = closure_0(this, function() { /* body not rendered: F149617 */ }) || false;
+          tmp = closure_0(this, function() { /* body not rendered: F149629 */ }) || false;
           return tmp;
         }
       }
@@ -3184,26 +3184,26 @@ const f72894 = (arg0, arg1) => {
         closure_0 = arg0.split(" ");
         items = [];
         closure_1 = items;
-        tmp = closure_0(this, () => { /* body not rendered: F149615 */ });
+        tmp = closure_0(this, () => { /* body not rendered: F149627 */ });
         return items;
       }
       getElementsByTagName(arg0) {
         closure_0 = arg0.toLowerCase();
         items = [];
         closure_1 = items;
-        tmp = closure_0(this.childNodes, () => { /* body not rendered: F149616 */ });
+        tmp = closure_0(this.childNodes, () => { /* body not rendered: F149628 */ });
         return items;
       }
       contains(arg0) {
         closure_0 = arg0;
-        tmp = closure_0(this, function() { /* body not rendered: F149617 */ }) || false;
+        tmp = closure_0(this, function() { /* body not rendered: F149629 */ }) || false;
         return tmp;
       }
     }
     throw new TypeError("Trying to call a non-function");
   }
 };
-const f72895 = (arg0, arg1) => {
+const f72902 = (arg0, arg1) => {
   let tmp2;
   class K {
     constructor(arg0) {
@@ -3321,7 +3321,7 @@ const f72895 = (arg0, arg1) => {
         }
         toString() {
           childNodes = this.childNodes;
-          mapped = childNodes.map(() => { /* body not rendered: F149618 */ });
+          mapped = childNodes.map(() => { /* body not rendered: F149630 */ });
           return mapped.join("");
         }
       }
@@ -3364,7 +3364,7 @@ const f72895 = (arg0, arg1) => {
           }
           toString() {
             childNodes = this.childNodes;
-            mapped = childNodes.map(() => { /* body not rendered: F149618 */ });
+            mapped = childNodes.map(() => { /* body not rendered: F149630 */ });
             return mapped.join("");
           }
         }
@@ -3419,7 +3419,7 @@ const f72895 = (arg0, arg1) => {
         }
         toString() {
           childNodes = this.childNodes;
-          mapped = childNodes.map(() => { /* body not rendered: F149618 */ });
+          mapped = childNodes.map(() => { /* body not rendered: F149630 */ });
           return mapped.join("");
         }
       }
@@ -3464,14 +3464,14 @@ const f72895 = (arg0, arg1) => {
       }
       toString() {
         childNodes = this.childNodes;
-        mapped = childNodes.map(() => { /* body not rendered: F149618 */ });
+        mapped = childNodes.map(() => { /* body not rendered: F149630 */ });
         return mapped.join("");
       }
     }
     throw new TypeError("Trying to call a non-function");
   }
 };
-const f72896 = (arg0, arg1) => {
+const f72903 = (arg0, arg1) => {
   class it {
     constructor(arg0) {
       return;
@@ -3485,7 +3485,7 @@ const f72896 = (arg0, arg1) => {
   }
   arg1.exports = it;
 };
-const f72897 = (arg0, arg1) => {
+const f72904 = (arg0, arg1) => {
   let tmp2;
   class Ue {
     constructor() {
@@ -4703,7 +4703,7 @@ const f72897 = (arg0, arg1) => {
     throw new TypeError("Trying to call a non-function");
   }
 };
-const f72898 = function(arg0, arg1) {
+const f72905 = function(arg0, arg1) {
   let obj;
   if (typeof closure_1_21 === "function") {
     const tmp = obj;
@@ -4723,7 +4723,7 @@ const f72898 = function(arg0, arg1) {
   }
 };
 let c1;
-const f124585 = f1245852;
+const f124595 = f1245952;
 let obj = {};
 let obj2 = { default: () => ne };
 for (const key10058 in obj2) {
@@ -5264,7 +5264,7 @@ let fn2 = function r() {
     if (tmp2) {
       if ("_listeners" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_listeners", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_listeners", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._listeners = undefined;
       }
@@ -5362,7 +5362,7 @@ let items2 = [
   {
     key: "emit",
     value(arg0, arg1) {
-      const f157997 = (call) => {
+      const f158009 = (call) => {
         const obj = { type };
         call.call(self, obj, type);
       };
@@ -5375,14 +5375,14 @@ let items2 = [
         const arr3 = self._listeners[arg0] || [];
         const arr4 = self._listeners["after" + arg0] || [];
         const substr = arr.slice();
-        const item = substr.forEach(f157997);
+        const item = substr.forEach(f158009);
         const substr1 = arr2.slice();
-        const item1 = substr1.forEach(f157997);
+        const item1 = substr1.forEach(f158009);
         const substr2 = arr3.slice();
-        const item2 = substr2.forEach(f157997);
+        const item2 = substr2.forEach(f158009);
         closure_0 = tmp;
         const substr3 = arr4.slice();
-        const item3 = substr3.forEach(f157997);
+        const item3 = substr3.forEach(f158009);
       }
     }
   }
@@ -5402,19 +5402,19 @@ let fn3 = function r(pm) {
     if (tmp2) {
       if ("_playbackHeartbeatInterval" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_playbackHeartbeatInterval", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_playbackHeartbeatInterval", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._playbackHeartbeatInterval = undefined;
       }
       if ("_playheadShouldBeProgressing" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_playheadShouldBeProgressing", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_playheadShouldBeProgressing", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._playheadShouldBeProgressing = undefined;
       }
       if ("pm" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self.pm = undefined;
       }
@@ -5541,7 +5541,7 @@ let fn4 = function r(on) {
     if (tmp2) {
       if ("viewErrored" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "viewErrored", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "viewErrored", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self.viewErrored = undefined;
       }
@@ -5649,13 +5649,13 @@ let fn5 = function r(pm) {
     if (tmp2) {
       if ("_watchTimeTrackerLastCheckedTime" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_watchTimeTrackerLastCheckedTime", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_watchTimeTrackerLastCheckedTime", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._watchTimeTrackerLastCheckedTime = undefined;
       }
       if ("pm" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self.pm = undefined;
       }
@@ -5723,31 +5723,31 @@ let fn6 = function r(pm) {
     if (tmp2) {
       if ("_playbackTimeTrackerLastPlayheadPosition" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_playbackTimeTrackerLastPlayheadPosition", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_playbackTimeTrackerLastPlayheadPosition", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._playbackTimeTrackerLastPlayheadPosition = undefined;
       }
       if ("_lastTime" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastTime", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_lastTime", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._lastTime = undefined;
       }
       if ("_isAdPlaying" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_isAdPlaying", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_isAdPlaying", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._isAdPlaying = undefined;
       }
       if ("_callbackUpdatePlaybackTime" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_callbackUpdatePlaybackTime", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_callbackUpdatePlaybackTime", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._callbackUpdatePlaybackTime = undefined;
       }
       if ("pm" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self.pm = undefined;
       }
@@ -5892,7 +5892,7 @@ let fn7 = function r(pm) {
     if (tmp2) {
       if ("pm" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self.pm = undefined;
       }
@@ -6061,31 +6061,31 @@ const fn9 = function r(pm) {
     if (tmp2) {
       if ("_lastCheckedTime" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_lastCheckedTime", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_lastCheckedTime", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._lastCheckedTime = undefined;
       }
       if ("_lastPlayheadTime" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastPlayheadTime", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_lastPlayheadTime", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._lastPlayheadTime = undefined;
       }
       if ("_lastPlayheadTimeUpdatedTime" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_lastPlayheadTimeUpdatedTime", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_lastPlayheadTimeUpdatedTime", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._lastPlayheadTimeUpdatedTime = undefined;
       }
       if ("_rebuffering" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_rebuffering", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_rebuffering", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._rebuffering = undefined;
       }
       if ("pm" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self.pm = undefined;
       }
@@ -6226,7 +6226,7 @@ const fn10 = function r(pm) {
     if (tmp2) {
       if ("pm" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self.pm = undefined;
       }
@@ -6321,31 +6321,31 @@ const fn11 = function r(on) {
     if (tmp2) {
       if ("_lastPlayerHeight" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_lastPlayerHeight", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_lastPlayerHeight", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._lastPlayerHeight = undefined;
       }
       if ("_lastPlayerWidth" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastPlayerWidth", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_lastPlayerWidth", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._lastPlayerWidth = undefined;
       }
       if ("_lastPlayheadPosition" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_lastPlayheadPosition", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_lastPlayheadPosition", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._lastPlayheadPosition = undefined;
       }
       if ("_lastSourceHeight" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_lastSourceHeight", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_lastSourceHeight", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._lastSourceHeight = undefined;
       }
       if ("_lastSourceWidth" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "_lastSourceWidth", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_lastSourceWidth", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._lastSourceWidth = undefined;
       }
@@ -6456,7 +6456,7 @@ const fn12 = function r(on) {
     if (tmp2) {
       if ("isSeeking" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "isSeeking", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "isSeeking", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self.isSeeking = undefined;
       }
@@ -6568,7 +6568,7 @@ function Xt(arg0, arg1) {
 let closure_71 = ["adbreakstart", "adrequest", "adresponse", "adplay", "adplaying", "adpause", "adended", "adbreakend", "aderror", "adclicked", "adskipped"];
 const fn13 = function r(pm) {
   let tmp2;
-  const f124689 = (viewer_time, viewer_time2) => viewer_time.viewer_time - viewer_time2.viewer_time;
+  const f124699 = (viewer_time, viewer_time2) => viewer_time.viewer_time - viewer_time2.viewer_time;
   let closure_0 = pm;
   const self = this;
   const tmp = fn13;
@@ -6581,55 +6581,55 @@ const fn13 = function r(pm) {
     if (tmp2) {
       if ("_adHasPlayed" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_adHasPlayed", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_adHasPlayed", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._adHasPlayed = undefined;
       }
       if ("_adRequests" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_adRequests", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_adRequests", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._adRequests = undefined;
       }
       if ("_adResponses" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_adResponses", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_adResponses", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._adResponses = undefined;
       }
       if ("_currentAdRequestNumber" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_currentAdRequestNumber", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_currentAdRequestNumber", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._currentAdRequestNumber = undefined;
       }
       if ("_currentAdResponseNumber" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "_currentAdResponseNumber", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_currentAdResponseNumber", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._currentAdResponseNumber = undefined;
       }
       if ("_prerollPlayTime" in self) {
         const _Object6 = Object;
-        Object.defineProperty(self, "_prerollPlayTime", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_prerollPlayTime", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._prerollPlayTime = undefined;
       }
       if ("_wouldBeNewAdPlay" in self) {
         const _Object7 = Object;
-        Object.defineProperty(self, "_wouldBeNewAdPlay", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_wouldBeNewAdPlay", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._wouldBeNewAdPlay = undefined;
       }
       if ("isAdBreak" in self) {
         const _Object8 = Object;
-        Object.defineProperty(self, "isAdBreak", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "isAdBreak", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self.isAdBreak = undefined;
       }
       if ("pm" in self) {
         const _Object9 = Object;
-        Object.defineProperty(self, "pm", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "pm", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self.pm = undefined;
       }
@@ -6663,7 +6663,7 @@ const fn13 = function r(pm) {
         const _adRequests = self._adRequests;
         if (typeof closure_2_70 === "function") {
           _adRequests.push(tmp2);
-          const sorted = _adRequests.sort(f124689);
+          const sorted = _adRequests.sort(f124699);
           const data = closure_0.data;
           data.view_ad_request_count = data.view_ad_request_count || 0;
           data.view_ad_request_count = data.view_ad_request_count + 1;
@@ -6687,7 +6687,7 @@ const fn13 = function r(pm) {
         const obj2 = self;
         if (typeof closure_2_70 === "function") {
           _adResponses.push(merged);
-          const sorted = _adResponses.sort(f124689);
+          const sorted = _adResponses.sort(f124699);
           const findAdRequestResult = obj2.findAdRequest(merged.ad_request_id);
           if (findAdRequestResult) {
             const data = closure_0.data;
@@ -6934,7 +6934,7 @@ const fn14 = function r(one) {
     if (tmp2) {
       if ("lastWallClockTime" in self) {
         let _Object = Object;
-        Object.defineProperty(self, "lastWallClockTime", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "lastWallClockTime", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self.lastWallClockTime = undefined;
       }
@@ -7136,7 +7136,7 @@ function r() {
   }
   return obj;
 }
-const f124699 = () => {
+const f124709 = () => {
 
 };
 const fn16 = function i(arg0, arg1, arg2) {
@@ -7419,7 +7419,7 @@ const fn17 = (arg0, arg1) => {
     const _window = window;
     tmp = typeof window !== "undefined" ? window : {};
   }
-  if (typeof f124585 === "function") {
+  if (typeof f124595 === "function") {
     let _document1;
     const tmp3 = obj;
     if (!tmp3) {
@@ -7771,73 +7771,73 @@ const fn18 = function r(mux, envKey) {
         let str14;
         if ("mux" in self) {
           const _Object = Object;
-          Object.defineProperty(self, "mux", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+          Object.defineProperty(self, "mux", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
         } else {
           self.mux = undefined;
         }
         if ("envKey" in self) {
           const _Object2 = Object;
-          Object.defineProperty(self, "envKey", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+          Object.defineProperty(self, "envKey", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
         } else {
           self.envKey = undefined;
         }
         if ("options" in self) {
           const _Object3 = Object;
-          Object.defineProperty(self, "options", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+          Object.defineProperty(self, "options", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
         } else {
           self.options = undefined;
         }
         if ("eventQueue" in self) {
           const _Object4 = Object;
-          Object.defineProperty(self, "eventQueue", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+          Object.defineProperty(self, "eventQueue", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
         } else {
           self.eventQueue = undefined;
         }
         if ("sampleRate" in self) {
           const _Object5 = Object;
-          Object.defineProperty(self, "sampleRate", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+          Object.defineProperty(self, "sampleRate", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
         } else {
           self.sampleRate = undefined;
         }
         if ("disableCookies" in self) {
           const _Object6 = Object;
-          Object.defineProperty(self, "disableCookies", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+          Object.defineProperty(self, "disableCookies", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
         } else {
           self.disableCookies = undefined;
         }
         if ("respectDoNotTrack" in self) {
           const _Object7 = Object;
-          Object.defineProperty(self, "respectDoNotTrack", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+          Object.defineProperty(self, "respectDoNotTrack", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
         } else {
           self.respectDoNotTrack = undefined;
         }
         if ("previousBeaconData" in self) {
           const _Object8 = Object;
-          Object.defineProperty(self, "previousBeaconData", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+          Object.defineProperty(self, "previousBeaconData", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
         } else {
           self.previousBeaconData = undefined;
         }
         if ("lastEventTime" in self) {
           const _Object9 = Object;
-          Object.defineProperty(self, "lastEventTime", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+          Object.defineProperty(self, "lastEventTime", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
         } else {
           self.lastEventTime = undefined;
         }
         if ("rateLimited" in self) {
           const _Object10 = Object;
-          Object.defineProperty(self, "rateLimited", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+          Object.defineProperty(self, "rateLimited", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
         } else {
           self.rateLimited = undefined;
         }
         if ("pageLevelData" in self) {
           const _Object11 = Object;
-          Object.defineProperty(self, "pageLevelData", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+          Object.defineProperty(self, "pageLevelData", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
         } else {
           self.pageLevelData = undefined;
         }
         if ("viewerData" in self) {
           const _Object12 = Object;
-          Object.defineProperty(self, "viewerData", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+          Object.defineProperty(self, "viewerData", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
         } else {
           self.viewerData = undefined;
         }
@@ -8507,7 +8507,7 @@ const fn20 = function r(on) {
     if (tmp2) {
       if ("_lastEventTime" in self) {
         let _Object = Object;
-        Object.defineProperty(self, "_lastEventTime", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+        Object.defineProperty(self, "_lastEventTime", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
       } else {
         self._lastEventTime = undefined;
       }
@@ -8781,7 +8781,7 @@ const fn22 = function r(on) {
 };
 let closure_99 = ["viewstart", "ended", "loadstart", "pause", "play", "playing", "ratechange", "waiting", "adplay", "adpause", "adended", "aderror", "adplaying", "adrequest", "adresponse", "adbreakstart", "adbreakend", "adfirstquartile", "admidpoint", "adthirdquartile", "rebufferstart", "rebufferend", "seeked", "error", "hb", "requestcompleted", "requestfailed", "requestcanceled", "renditionchange", "cdnchange", "playbackmodechange"];
 const set = new Set(["requestcompleted", "requestfailed", "requestcanceled"]);
-let f124577;
+let f124587;
 class t {
   constructor(mux, id, beaconDomain) {
     let tmp2;
@@ -8805,7 +8805,7 @@ class t {
         } else {
           if ("pageLoadEndTime" in callResult) {
             const _Object = Object;
-            Object.defineProperty(callResult, "pageLoadEndTime", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+            Object.defineProperty(callResult, "pageLoadEndTime", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
           } else {
             callResult.pageLoadEndTime = undefined;
           }
@@ -8818,7 +8818,7 @@ class t {
           } else {
             if ("pageLoadInitTime" in callResult) {
               const _Object2 = Object;
-              Object.defineProperty(callResult, "pageLoadInitTime", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+              Object.defineProperty(callResult, "pageLoadInitTime", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
             } else {
               callResult.pageLoadInitTime = undefined;
             }
@@ -8831,7 +8831,7 @@ class t {
             } else {
               if ("_destroyed" in callResult) {
                 const _Object3 = Object;
-                Object.defineProperty(callResult, "_destroyed", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                Object.defineProperty(callResult, "_destroyed", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
               } else {
                 callResult._destroyed = undefined;
               }
@@ -8844,7 +8844,7 @@ class t {
               } else {
                 if ("_heartBeatTimeout" in callResult) {
                   const _Object4 = Object;
-                  Object.defineProperty(callResult, "_heartBeatTimeout", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                  Object.defineProperty(callResult, "_heartBeatTimeout", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                 } else {
                   callResult._heartBeatTimeout = undefined;
                 }
@@ -8857,7 +8857,7 @@ class t {
                 } else {
                   if ("adTracker" in callResult) {
                     const _Object5 = Object;
-                    Object.defineProperty(callResult, "adTracker", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                    Object.defineProperty(callResult, "adTracker", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                   } else {
                     callResult.adTracker = undefined;
                   }
@@ -8870,7 +8870,7 @@ class t {
                   } else {
                     if ("dashjs" in callResult) {
                       const _Object6 = Object;
-                      Object.defineProperty(callResult, "dashjs", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                      Object.defineProperty(callResult, "dashjs", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                     } else {
                       callResult.dashjs = undefined;
                     }
@@ -8883,7 +8883,7 @@ class t {
                     } else {
                       if ("data" in callResult) {
                         const _Object7 = Object;
-                        Object.defineProperty(callResult, "data", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                        Object.defineProperty(callResult, "data", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                       } else {
                         callResult.data = undefined;
                       }
@@ -8896,7 +8896,7 @@ class t {
                       } else {
                         if ("disablePlayheadRebufferTracking" in callResult) {
                           const _Object8 = Object;
-                          Object.defineProperty(callResult, "disablePlayheadRebufferTracking", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                          Object.defineProperty(callResult, "disablePlayheadRebufferTracking", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                         } else {
                           callResult.disablePlayheadRebufferTracking = undefined;
                         }
@@ -8909,7 +8909,7 @@ class t {
                         } else {
                           if ("disableRebufferTracking" in callResult) {
                             const _Object9 = Object;
-                            Object.defineProperty(callResult, "disableRebufferTracking", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                            Object.defineProperty(callResult, "disableRebufferTracking", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                           } else {
                             callResult.disableRebufferTracking = undefined;
                           }
@@ -8922,7 +8922,7 @@ class t {
                           } else {
                             if ("errorTracker" in callResult) {
                               const _Object10 = Object;
-                              Object.defineProperty(callResult, "errorTracker", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                              Object.defineProperty(callResult, "errorTracker", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                             } else {
                               callResult.errorTracker = undefined;
                             }
@@ -8935,7 +8935,7 @@ class t {
                             } else {
                               if ("errorTranslator" in callResult) {
                                 const _Object11 = Object;
-                                Object.defineProperty(callResult, "errorTranslator", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                Object.defineProperty(callResult, "errorTranslator", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                               } else {
                                 callResult.errorTranslator = undefined;
                               }
@@ -8948,7 +8948,7 @@ class t {
                               } else {
                                 if ("emitTranslator" in callResult) {
                                   const _Object12 = Object;
-                                  Object.defineProperty(callResult, "emitTranslator", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                  Object.defineProperty(callResult, "emitTranslator", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                 } else {
                                   callResult.emitTranslator = undefined;
                                 }
@@ -8961,7 +8961,7 @@ class t {
                                 } else {
                                   if ("getAdData" in callResult) {
                                     const _Object13 = Object;
-                                    Object.defineProperty(callResult, "getAdData", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                    Object.defineProperty(callResult, "getAdData", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                   } else {
                                     callResult.getAdData = undefined;
                                   }
@@ -8974,7 +8974,7 @@ class t {
                                   } else {
                                     if ("getPlayheadTime" in callResult) {
                                       const _Object14 = Object;
-                                      Object.defineProperty(callResult, "getPlayheadTime", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                      Object.defineProperty(callResult, "getPlayheadTime", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                     } else {
                                       callResult.getPlayheadTime = undefined;
                                     }
@@ -8987,7 +8987,7 @@ class t {
                                     } else {
                                       if ("getStateData" in callResult) {
                                         const _Object15 = Object;
-                                        Object.defineProperty(callResult, "getStateData", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                        Object.defineProperty(callResult, "getStateData", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                       } else {
                                         callResult.getStateData = undefined;
                                       }
@@ -9000,7 +9000,7 @@ class t {
                                       } else {
                                         if ("stateDataTranslator" in callResult) {
                                           const _Object16 = Object;
-                                          Object.defineProperty(callResult, "stateDataTranslator", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                          Object.defineProperty(callResult, "stateDataTranslator", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                         } else {
                                           callResult.stateDataTranslator = undefined;
                                         }
@@ -9013,7 +9013,7 @@ class t {
                                         } else {
                                           if ("hlsjs" in callResult) {
                                             const _Object17 = Object;
-                                            Object.defineProperty(callResult, "hlsjs", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                            Object.defineProperty(callResult, "hlsjs", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                           } else {
                                             callResult.hlsjs = undefined;
                                           }
@@ -9026,7 +9026,7 @@ class t {
                                           } else {
                                             if ("id" in callResult) {
                                               const _Object18 = Object;
-                                              Object.defineProperty(callResult, "id", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                              Object.defineProperty(callResult, "id", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                             } else {
                                               callResult.id = undefined;
                                             }
@@ -9039,7 +9039,7 @@ class t {
                                             } else {
                                               if ("longResumeTracker" in callResult) {
                                                 const _Object19 = Object;
-                                                Object.defineProperty(callResult, "longResumeTracker", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                                Object.defineProperty(callResult, "longResumeTracker", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                               } else {
                                                 callResult.longResumeTracker = undefined;
                                               }
@@ -9052,7 +9052,7 @@ class t {
                                               } else {
                                                 if ("minimumRebufferDuration" in callResult) {
                                                   const _Object20 = Object;
-                                                  Object.defineProperty(callResult, "minimumRebufferDuration", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                                  Object.defineProperty(callResult, "minimumRebufferDuration", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                                 } else {
                                                   callResult.minimumRebufferDuration = undefined;
                                                 }
@@ -9065,7 +9065,7 @@ class t {
                                                 } else {
                                                   if ("mux" in callResult) {
                                                     const _Object21 = Object;
-                                                    Object.defineProperty(callResult, "mux", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                                    Object.defineProperty(callResult, "mux", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                                   } else {
                                                     callResult.mux = undefined;
                                                   }
@@ -9078,7 +9078,7 @@ class t {
                                                   } else {
                                                     if ("playbackEventDispatcher" in callResult) {
                                                       const _Object22 = Object;
-                                                      Object.defineProperty(callResult, "playbackEventDispatcher", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                                      Object.defineProperty(callResult, "playbackEventDispatcher", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                                     } else {
                                                       callResult.playbackEventDispatcher = undefined;
                                                     }
@@ -9091,7 +9091,7 @@ class t {
                                                     } else {
                                                       if ("playbackHeartbeat" in callResult) {
                                                         const _Object23 = Object;
-                                                        Object.defineProperty(callResult, "playbackHeartbeat", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                                        Object.defineProperty(callResult, "playbackHeartbeat", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                                       } else {
                                                         callResult.playbackHeartbeat = undefined;
                                                       }
@@ -9104,7 +9104,7 @@ class t {
                                                       } else {
                                                         if ("playbackHeartbeatTime" in callResult) {
                                                           const _Object24 = Object;
-                                                          Object.defineProperty(callResult, "playbackHeartbeatTime", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                                          Object.defineProperty(callResult, "playbackHeartbeatTime", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                                         } else {
                                                           callResult.playbackHeartbeatTime = undefined;
                                                         }
@@ -9117,7 +9117,7 @@ class t {
                                                         } else {
                                                           if ("playheadTime" in callResult) {
                                                             const _Object25 = Object;
-                                                            Object.defineProperty(callResult, "playheadTime", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                                            Object.defineProperty(callResult, "playheadTime", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                                           } else {
                                                             callResult.playheadTime = undefined;
                                                           }
@@ -9130,7 +9130,7 @@ class t {
                                                           } else {
                                                             if ("seekingTracker" in callResult) {
                                                               const _Object26 = Object;
-                                                              Object.defineProperty(callResult, "seekingTracker", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                                              Object.defineProperty(callResult, "seekingTracker", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                                             } else {
                                                               callResult.seekingTracker = undefined;
                                                             }
@@ -9143,7 +9143,7 @@ class t {
                                                             } else {
                                                               if ("sustainedRebufferThreshold" in callResult) {
                                                                 const _Object27 = Object;
-                                                                Object.defineProperty(callResult, "sustainedRebufferThreshold", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                                                Object.defineProperty(callResult, "sustainedRebufferThreshold", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                                               } else {
                                                                 callResult.sustainedRebufferThreshold = undefined;
                                                               }
@@ -9156,7 +9156,7 @@ class t {
                                                               } else {
                                                                 if ("watchTimeTracker" in callResult) {
                                                                   const _Object28 = Object;
-                                                                  Object.defineProperty(callResult, "watchTimeTracker", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                                                  Object.defineProperty(callResult, "watchTimeTracker", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                                                 } else {
                                                                   callResult.watchTimeTracker = undefined;
                                                                 }
@@ -9169,7 +9169,7 @@ class t {
                                                                 } else {
                                                                   if ("currentFragmentPDT" in callResult) {
                                                                     const _Object29 = Object;
-                                                                    Object.defineProperty(callResult, "currentFragmentPDT", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                                                    Object.defineProperty(callResult, "currentFragmentPDT", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                                                   } else {
                                                                     callResult.currentFragmentPDT = undefined;
                                                                   }
@@ -9182,7 +9182,7 @@ class t {
                                                                   } else {
                                                                     if ("currentFragmentStart" in callResult) {
                                                                       const _Object30 = Object;
-                                                                      Object.defineProperty(callResult, "currentFragmentStart", { value: "p", enumerable: "RNSScreenStackHeaderConfig", configurable: null, writable: null });
+                                                                      Object.defineProperty(callResult, "currentFragmentStart", { value: "p", enumerable: true, configurable: "/assets/modules/main_tabs_v2/native/images", writable: 24 });
                                                                     } else {
                                                                       callResult.currentFragmentStart = undefined;
                                                                     }
@@ -9609,11 +9609,11 @@ let obj11 = { constructor: { value: t, writable: true, configurable: true } };
 t.prototype = Object.create(fn2.prototype, obj11);
 let tmp25 = fn(t, fn2);
 closure_1 = Rt();
-f124577 = function() {
+f124587 = function() {
   let constructResult;
   let tmp9;
   const self = this;
-  const obj = fn(f124577);
+  const obj = fn(f124587);
   const tmp = t;
   if (tmp) {
     const _Reflect = Reflect;
@@ -11012,7 +11012,7 @@ const items11 = [
                     }
                   });
                 }
-                let closure_10 = { video: "getCurrentUser", audio: "Array", totalBitrate: "ix" };
+                let closure_10 = { video: "Array", audio: "ix", totalBitrate: "method" };
                 fn4 = function x(newQuality, arg1, arg2) {
                   let closure_0 = newQuality;
                   if (typeof newQuality.newQuality === "number") {

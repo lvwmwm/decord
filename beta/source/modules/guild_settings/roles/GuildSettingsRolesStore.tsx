@@ -868,13 +868,13 @@ let obj2 = {
     let id;
     let role;
     let roles;
-    const f136498 = (item) => map1.get(item);
-    const f136499 = (item, index) => {
+    const f136508 = (item) => map1.get(item);
+    const f136509 = (item, index) => {
       if (!set1.has(index)) {
         found1.push(item);
       }
     };
-    const f136500 = (item, index) => {
+    const f136510 = (item, index) => {
       const obj = { position: length - 1 - index };
       const merged = Object.assign(item);
       return obj;
@@ -885,22 +885,22 @@ let obj2 = {
       return items;
     }));
     let result = map.set(role.id, role);
-    const mapped = roles.map(f136498);
+    const mapped = roles.map(f136508);
     const found = mapped.filter(id(1388).isNotNullish);
     set = new Set(roles);
-    const item = map.forEach(f136499);
-    items = found.map(f136500);
+    const item = map.forEach(f136509);
+    items = found.map(f136510);
     map1 = new Map(items2.map((id) => {
       items = [id.id, id];
       return items;
     }));
     const result1 = map1.set(role.id, role);
-    const mapped1 = roles.map(f136498);
+    const mapped1 = roles.map(f136508);
     const found1 = mapped1.filter(id(1388).isNotNullish);
     const set1 = new Set(roles);
-    const item1 = map1.forEach(f136499);
+    const item1 = map1.forEach(f136509);
     const length = found1.length;
-    items2 = found1.map(f136500);
+    items2 = found1.map(f136510);
     id = undefined;
     if (user != null) {
       id = user.id;

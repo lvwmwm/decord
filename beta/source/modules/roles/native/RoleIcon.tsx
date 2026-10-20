@@ -109,7 +109,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIcon(a
     cResult[7] = obj5;
     tmp7 = obj5;
   }
-  const obj6 = { fontFamily: "System", fontSize: result, lineHeight: "ix", textAlign: "<string:4294865153>", width: num, marginBottom: "<string:2957115853>" };
+  const obj6 = { fontFamily: "System", fontSize: result, lineHeight: "ix", textAlign: false, width: num, marginBottom: false };
   cResult[2] = num;
   cResult[3] = result;
   cResult[4] = obj6;
@@ -123,7 +123,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIcon(a
     size = 20;
   }
   const size1 = { height: size, width: size };
-  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "ix", textAlign: "<string:4294865153>", width: size, marginBottom: "<string:2957115853>" };
+  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "ix", textAlign: false, width: size, marginBottom: false };
   if (null != src) {
     const obj3 = { uri: src };
     tmp = jsx(FastImageDefault, { resizeMode: "contain", source: obj3, style: size1 });

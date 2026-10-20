@@ -1421,7 +1421,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
   let onActivityItemSelected;
   let tmp19;
   let width;
-  const f110968 = () => {
+  const f110976 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id1;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -1462,8 +1462,8 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activi
   let items = [EmbeddedActivitiesStore];
   const tmp2Result = context(flag[30]);
   let isLaunching = null != tmp14;
-  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f110968), 2)[0];
-  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f110968), 2);
+  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f110976), 2)[0];
+  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f110976), 2);
   if (isLaunching) {
     isLaunching = tmp14.isLaunching;
   }
@@ -8804,7 +8804,7 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHom
   }
   items8[1] = sections1;
   const memo5 = useMemo(() => {
-    const f157211 = (commands) => Object.keys(commands.commands).length > 0;
+    const f157223 = (commands) => Object.keys(commands.commands).length > 0;
     result = result.result;
     let sections;
     if (result != null) {
@@ -8822,11 +8822,11 @@ let closure_38 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHom
       sections1 = {};
     }
     const values = Object.values(sections);
-    let someResult = values.some(f157211);
+    let someResult = values.some(f157223);
     if (!someResult) {
       const _Object = Object;
       const values2 = Object.values(sections1);
-      someResult = values2.some(f157211);
+      someResult = values2.some(f157223);
     }
     return someResult;
   }, items8);

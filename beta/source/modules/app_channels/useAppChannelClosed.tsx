@@ -1,9 +1,9 @@
-// Module ID: 17745
-// Function ID: 17746
+// Module ID: 17749
+// Function ID: 17750
 // Name: useAppChannelClosed
 // Dependencies: [32, 19, 6296, 558, 576, 11716, 2]
 
-// Module 17745 (useAppChannelClosed)
+// Module 17749 (useAppChannelClosed)
 import react2 from "react" /* 576 */;
 import useFrameBySurfaceDefault from "useFrameBySurface" /* 11716 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -74,7 +74,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChanne
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F151323 */ });
+          return closure_0(() => { /* body not rendered: F151339 */ });
         }
       }
       cResult[6] = I;
@@ -82,21 +82,21 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChanne
     } else {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F151323 */ });
+          return closure_0(() => { /* body not rendered: F151339 */ });
         }
       }
     }
     if (tmp11 != null) {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F151323 */ });
+          return closure_0(() => { /* body not rendered: F151339 */ });
         }
       }
     }
     if (cResult[7] !== (undefined === tmp3 && tmp11.isClosed)) {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F151323 */ });
+          return closure_0(() => { /* body not rendered: F151339 */ });
         }
       }
       tmp29[0] = undefined === tmp3 && tmp11.isClosed;
@@ -107,7 +107,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChanne
     } else {
       class I {
         constructor() {
-          return closure_0(() => { /* body not rendered: F151323 */ });
+          return closure_0(() => { /* body not rendered: F151339 */ });
         }
       }
     }

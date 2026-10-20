@@ -155,8 +155,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NumberAnim
         closure_0 = Date.now();
         _setInterval = setInterval;
         num = 32;
-        closure_1 = setInterval(() => { /* body not rendered: F146892 */ }, 32);
-        return () => { /* body not rendered: F146893 */ };
+        closure_1 = setInterval(() => { /* body not rendered: F146902 */ }, 32);
+        return () => { /* body not rendered: F146903 */ };
       }
     }
   }

@@ -15,7 +15,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 const require = globalThis.__r;
 let ZodEncodeError, _exports, _require, hasOwnProperty, standard;
 
-const f110450 = (item) => {
+const f110458 = (item) => {
   const items = [item, item];
   return items;
 };
@@ -205,7 +205,7 @@ function _enum(arr, message) {
   let fromEntriesResult = arr;
   if (Array.isArray(arr)) {
     const _Object = Object;
-    fromEntriesResult = Object.fromEntries(arr.map(f110450));
+    fromEntriesResult = Object.fromEntries(arr.map(f110458));
   }
   const ZodEnum = exports.ZodEnum;
   const obj = { type: "enum", entries: fromEntriesResult };
@@ -631,7 +631,7 @@ export const keyof = function keyof(_zod) {
   let fromEntriesResult = keys;
   if (Array.isArray(keys)) {
     const _Object = Object;
-    fromEntriesResult = Object.fromEntries(keys.map(f110450));
+    fromEntriesResult = Object.fromEntries(keys.map(f110458));
   }
   const ZodEnum = exports.ZodEnum;
   const obj = { type: "enum", entries: fromEntriesResult };
@@ -1805,7 +1805,7 @@ export const ZodObject = util.$constructor("ZodObject", (_zod, arg1) => {
     let fromEntriesResult = keys;
     if (Array.isArray(keys)) {
       const _Object = Object;
-      fromEntriesResult = Object.fromEntries(keys.map(f110450));
+      fromEntriesResult = Object.fromEntries(keys.map(f110458));
     }
     const ZodEnum = exports.ZodEnum;
     const obj = { type: "enum", entries: fromEntriesResult };

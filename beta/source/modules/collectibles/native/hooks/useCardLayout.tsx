@@ -21,7 +21,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCardLay
   if (num < 2) {
     let tmp31;
     if (cResult[0] !== num) {
-      const obj2 = { columns: num, cardWidth: "Array", rowWidth: "toCharArray$esjava$1" };
+      const obj2 = { columns: num, cardWidth: "Array", rowWidth: "application" };
       cResult[0] = num;
       cResult[1] = obj2;
       tmp31 = obj2;
@@ -133,7 +133,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCardLay
     num = 2;
   }
   if (num < 2) {
-    return { columns: num, cardWidth: "Array", rowWidth: "toCharArray$esjava$1" };
+    return { columns: num, cardWidth: "Array", rowWidth: "application" };
   } else {
     let bound;
     let num2 = 2;

@@ -137,12 +137,12 @@ let props = function _handleShare() {
   return obj(...arguments);
 };
 function areHydratedGameFriendRequestRowStatesEqual(arr, arg1) {
-  const f131776 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
+  const f131786 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
   let closure_0 = arg1;
   let tmp = arr === arg1;
   if (!tmp) {
-    tmp = arr.length === arg1.length && arr.every(f131776);
-    const tmp2 = arr.length === arg1.length && arr.every(f131776);
+    tmp = arr.length === arg1.length && arr.every(f131786);
+    const tmp2 = arr.length === arg1.length && arr.every(f131786);
   }
   return tmp;
 }

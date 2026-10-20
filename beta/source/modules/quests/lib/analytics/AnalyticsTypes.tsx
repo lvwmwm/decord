@@ -8,13 +8,13 @@
 import QuestTypes from "QuestTypes" /* 6231 */;
 import size from "module_2" /* 2 */;
 
-const f97808 = (item) => QuestTypes.QuestContent[item] === questContent;
+const f97816 = (item) => QuestTypes.QuestContent[item] === questContent;
 let closure_2 = Object.keys(QuestTypes.QuestContent);
 const result = size.fileFinishedImporting("modules/quests/lib/analytics/AnalyticsTypes.tsx");
 
 export const getQuestContentName = function getQuestContentName(questContent) {
   let closure_0 = questContent;
-  let str = closure_2.find(f97808);
+  let str = closure_2.find(f97816);
   if (str == null) {
     str = "";
   }
@@ -54,7 +54,7 @@ export const getContentProperties = function getContentProperties(questContent, 
   let str;
   let closure_0 = questContent;
   const obj = { content_id: questContent, content_name: str, content_position: questContentPosition, row_index: questContentRowIndex };
-  str = closure_2.find(f97808);
+  str = closure_2.find(f97816);
   if (str == null) {
     str = "";
   }

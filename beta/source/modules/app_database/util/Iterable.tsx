@@ -24,7 +24,7 @@ class Chained {
       }
       return iter2;
     }
-    return { done: true, value: "a" };
+    return { done: true, value: "Array" };
   }
 }
 Chained.prototype[Symbol.iterator] = function() {

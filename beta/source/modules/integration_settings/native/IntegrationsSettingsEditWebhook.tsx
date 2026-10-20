@@ -240,7 +240,7 @@ class EditWebhook extends PureComponent {
                 const obj = { navigation, type: "back" };
                 return unpackModuleId(PressableNavigatorModalIconDefault, obj);
               },
-          headerBackVisible: null
+          headerBackVisible: 83740
         };
         navigation.setOptions(obj3);
       }

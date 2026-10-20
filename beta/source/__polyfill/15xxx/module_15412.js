@@ -214,7 +214,7 @@ function deconstructPattern(templatePair, arg1) {
             let push = items.push;
             arr = push(obj);
           }
-          let obj2 = { type: arr.substring(index + 1, index1), value: "a" };
+          let obj2 = { type: arr.substring(index + 1, index1), value: "e" };
           let push2 = items.push;
           let push2Result = push2(obj2);
           let sum = index1 + 1;

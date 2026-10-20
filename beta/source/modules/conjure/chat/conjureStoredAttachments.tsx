@@ -15,10 +15,10 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f112344 = () => {
+const f112352 = () => {
 
 };
-const f112345 = () => set.delete(projectId);
+const f112353 = () => set.delete(projectId);
 let closure_5 = [];
 const set = new Set();
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -88,8 +88,8 @@ function fetchConjureStoredAttachments(projectId) {
       attachmentId(closure_2_2[3]);
       dispatch(obj);
     });
-    const catchPromise = nextPromise.catch(f112344);
-    catchPromise.finally(f112345);
+    const catchPromise = nextPromise.catch(f112352);
+    catchPromise.finally(f112353);
   }
 }
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureStoredAttachment(arg0, attachmentId) {
@@ -157,8 +157,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
           attachmentId(closure_2_2[3]);
           dispatch(obj);
         });
-        const catchPromise = nextPromise.catch(f112344);
-        catchPromise.finally(f112345);
+        const catchPromise = nextPromise.catch(f112352);
+        catchPromise.finally(f112353);
       }
     }
   };
@@ -199,8 +199,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
           attachmentId(closure_2_2[3]);
           dispatch(obj);
         });
-        const catchPromise = nextPromise.catch(f112344);
-        catchPromise.finally(f112345);
+        const catchPromise = nextPromise.catch(f112352);
+        catchPromise.finally(f112353);
       }
     }
   }, items2);

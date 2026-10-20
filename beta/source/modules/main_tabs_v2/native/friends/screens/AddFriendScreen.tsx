@@ -600,11 +600,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddFriendScr
           const tmp40 = closure_11(closure_12, obj9);
           class P {
             constructor() {
-              obj = { headerRight() { /* body not rendered: F152407 */ } };
+              obj = { headerRight() { /* body not rendered: F152419 */ } };
               setOptionsResult = navigation.setOptions(obj);
               obj2 = closure_0(closure_2[11]);
               result = obj2.checkContactPermissions();
-              nextPromise = result.then(() => { /* body not rendered: F152408 */ });
+              nextPromise = result.then(() => { /* body not rendered: F152420 */ });
               return;
             }
           }
@@ -657,22 +657,22 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddFriendScr
     closure_10(contactSyncAccount(14864), obj13);
     class P {
       constructor() {
-        obj = { headerRight() { /* body not rendered: F152407 */ } };
+        obj = { headerRight() { /* body not rendered: F152419 */ } };
         setOptionsResult = navigation.setOptions(obj);
         obj2 = closure_0(closure_2[11]);
         result = obj2.checkContactPermissions();
-        nextPromise = result.then(() => { /* body not rendered: F152408 */ });
+        nextPromise = result.then(() => { /* body not rendered: F152420 */ });
         return;
       }
     }
   }
   class P {
     constructor() {
-      obj = { headerRight() { /* body not rendered: F152407 */ } };
+      obj = { headerRight() { /* body not rendered: F152419 */ } };
       setOptionsResult = navigation.setOptions(obj);
       obj2 = closure_0(closure_2[11]);
       result = obj2.checkContactPermissions();
-      nextPromise = result.then(() => { /* body not rendered: F152408 */ });
+      nextPromise = result.then(() => { /* body not rendered: F152420 */ });
       return;
     }
   }

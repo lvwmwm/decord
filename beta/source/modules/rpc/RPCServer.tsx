@@ -82,7 +82,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f101260 = (result) => {
+    const f101268 = (result) => {
       let closure_0 = self(function*(arg0, value) {
         let closure_1;
         closure_0 = arg0;
@@ -202,8 +202,8 @@ class RPCServer {
       const tmp21 = new RPCErrorDefault(obj4, "Payload requires a nonce");
       throw tmp21;
     });
-    const then = promise.then(f101260).then;
-    promise.then(f101260);
+    const then = promise.then(f101268).then;
+    promise.then(f101268);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;

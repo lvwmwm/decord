@@ -105,7 +105,7 @@ let tmp;
 let tmp6;
 const DesktopNativeUtilsDefault = tmp6(6419);
 const trackVideoToggleDefault = tmp(14847);
-const f88335 = (name) => {
+const f88343 = (name) => {
   const str = name.name;
   const formatted = str.toLowerCase();
   return formatted.includes("dualsense");
@@ -905,7 +905,7 @@ function setInputDevice(inputDeviceId) {
 }
 function hasHapticsOverAudioOutputDevices(arg0) {
   const values = Object.values(arg0);
-  return values.some(f88335);
+  return values.some(f88343);
 }
 function applyRemoteSettings(arg0) {
   let flag = arg0;
@@ -1666,7 +1666,7 @@ let closure_83 = performance.now();
 let c84 = null;
 let obj4 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.AUDIO_INPUT, index: 0, name: "No Input Devices", disabled: true, guid: "enabled", hardwareId: "Date", containerId: "toCharArray$esjava$1" };
 const inputDevices = { [DEFAULT_DEVICE_ID]: obj4 };
-let obj5 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.AUDIO_OUTPUT, index: 0, name: "No Output Devices", disabled: true, guid: "ix", hardwareId: "key", containerId: "round" };
+let obj5 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.AUDIO_OUTPUT, index: 0, name: "No Output Devices", disabled: true, guid: "ix", hardwareId: "hd", containerId: "round" };
 const outputDevices = { [DEFAULT_DEVICE_ID]: obj5 };
 let obj6 = { id: DEFAULT_DEVICE_ID, deviceType: DeviceTypes.VIDEO_INPUT, index: 0, name: "No Video Devices", disabled: true, guid: "ix", hardwareId: "height", containerId: "toCharArray$esjava$1" };
 let closure_87 = { [DEFAULT_DEVICE_ID]: obj6 };
@@ -4501,8 +4501,8 @@ let obj7 = {
     let valueResult;
     let valueResult3;
     let valueResult4;
-    const f88333 = (id) => {
-      const f88332 = (containerId) => {
+    const f88341 = (id) => {
+      const f88340 = (containerId) => {
         let tmp = null != containerId.containerId && containerId.containerId === closure_0.containerId;
         if (!tmp) {
           tmp = null != containerId.hardwareId && containerId.hardwareId === closure_0.hardwareId;
@@ -4519,7 +4519,7 @@ let obj7 = {
       if ("videoinput" === id.type !== true) {
         let WEBCAM;
         closure_0 = id;
-        if (null != videoDevices.find(f88332) !== true) {
+        if (null != videoDevices.find(f88340) !== true) {
           const items = ["builtin", "displayport", "hdmi"];
           let str = id.macosTransportType;
           const includes = items.includes;
@@ -4554,7 +4554,7 @@ let obj7 = {
                     let tmp3 = "audioinput" === id.type;
                     if (tmp3) {
                       closure_0 = id;
-                      tmp3 = null != outputDevices.find(f88332);
+                      tmp3 = null != outputDevices.find(f88340);
                     }
                     if (tmp3 === true) {
                       let tmp5 = constants2;
@@ -4563,7 +4563,7 @@ let obj7 = {
                       let tmp4 = "audiooutput" === id.type;
                       if (tmp4) {
                         closure_0 = id;
-                        tmp4 = null != inputDevices.find(f88332);
+                        tmp4 = null != inputDevices.find(f88340);
                       }
                     }
                   }
@@ -4588,13 +4588,13 @@ let obj7 = {
     _require = videoDevices;
     const arr = videoDevices[{ audioinput: "inputDevices", audiooutput: "outputDevices", videoinput: "videoDevices" }[AUDIO_INPUT]];
     if (0 === arr.length) {
-      obj = { id: DEFAULT_DEVICE_ID, deviceType: AUDIO_INPUT, index: 0, name: tmp5, disabled: true, guid: "ix", hardwareId: "useRef", containerId: "action" };
+      obj = { id: DEFAULT_DEVICE_ID, deviceType: AUDIO_INPUT, index: 0, name: tmp5, disabled: true, guid: "application", hardwareId: "accessibilityRole", containerId: "c" };
       obj2 = {};
       obj2[obj.id] = obj;
       valueResult = obj2;
     } else {
       const arr2 = AUDIO_INPUT(12)(arr);
-      const mapped = arr2.map(f88333);
+      const mapped = arr2.map(f88341);
       let str = "id";
       const iter = mapped.keyBy("id");
       valueResult = iter.value();
@@ -4623,13 +4623,13 @@ let obj7 = {
     _require = videoDevices;
     const arr3 = videoDevices[{ audioinput: "inputDevices", audiooutput: "outputDevices", videoinput: "videoDevices" }[AUDIO_OUTPUT]];
     if (0 === arr3.length) {
-      const obj3 = { id: DEFAULT_DEVICE_ID, deviceType: AUDIO_OUTPUT, index: 0, name: tmp21, disabled: true, guid: "ix", hardwareId: "useRef", containerId: "action" };
+      const obj3 = { id: DEFAULT_DEVICE_ID, deviceType: AUDIO_OUTPUT, index: 0, name: tmp21, disabled: true, guid: "application", hardwareId: "accessibilityRole", containerId: "c" };
       const obj6 = {};
       obj6[obj3.id] = obj3;
       valueResult3 = obj6;
     } else {
       const arr4 = AUDIO_INPUT(12)(arr3);
-      const mapped1 = arr4.map(f88333);
+      const mapped1 = arr4.map(f88341);
       let str2 = "id";
       const iter2 = mapped1.keyBy("id");
       valueResult3 = iter2.value();
@@ -4654,9 +4654,9 @@ let obj7 = {
       const _Object = Object;
       const values5 = Object.values(tmp20);
       const _Object2 = Object;
-      const someResult = values5.some(f88335);
+      const someResult = values5.some(f88343);
       const values6 = Object.values(valueResult3);
-      const someResult1 = values6.some(f88335);
+      const someResult1 = values6.some(f88343);
       const obj13 = closure_71;
       if (someResult !== someResult1) {
         obj13.eachConnection((context) => {
@@ -4672,13 +4672,13 @@ let obj7 = {
     _require = videoDevices;
     const arr5 = videoDevices[{ audioinput: "inputDevices", audiooutput: "outputDevices", videoinput: "videoDevices" }[VIDEO_INPUT]];
     if (0 === arr5.length) {
-      const obj7 = { id: DEFAULT_DEVICE_ID, deviceType: VIDEO_INPUT, index: 0, name: tmp38, disabled: true, guid: "ix", hardwareId: "useRef", containerId: "action" };
+      const obj7 = { id: DEFAULT_DEVICE_ID, deviceType: VIDEO_INPUT, index: 0, name: tmp38, disabled: true, guid: "application", hardwareId: "accessibilityRole", containerId: "c" };
       const obj8 = {};
       obj8[obj7.id] = obj7;
       valueResult4 = obj8;
     } else {
       const arr6 = AUDIO_INPUT(12)(arr5);
-      const mapped2 = arr6.map(f88333);
+      const mapped2 = arr6.map(f88341);
       let str3 = "id";
       const iter3 = mapped2.keyBy("id");
       valueResult4 = iter3.value();

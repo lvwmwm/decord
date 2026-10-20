@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f82530 = () => {
+const f82538 = () => {
   let closure_0 = GenerateInvite(f19210[12]).default;
   return (arg0) => closure_0(GenerateInvite, f19210, arg0);
 };
@@ -48,37 +48,37 @@ AppRegistry.registerRunnable("Share", () => {
 });
 const BackgroundSync = "BackgroundSync";
 const f19200 = () => BackgroundSync(f19200[13]);
-AppRegistry.registerHeadlessTask("BackgroundSync", f82530);
+AppRegistry.registerHeadlessTask("BackgroundSync", f82538);
 if (isTTITest.isTTITest) {
   const TTITestAction = "TTITestAction";
   const f19201 = () => TTITestAction(f19201[14]);
-  AppRegistry.registerHeadlessTask("TTITestAction", f82530);
+  AppRegistry.registerHeadlessTask("TTITestAction", f82538);
 }
 const Disconnect = "Disconnect";
 const f19202 = () => Disconnect(f19202[15]);
-AppRegistry.registerHeadlessTask("Disconnect", f82530);
+AppRegistry.registerHeadlessTask("Disconnect", f82538);
 const MarkAsRead = "MarkAsRead";
 const f19203 = () => MarkAsRead(f19203[16]);
-AppRegistry.registerHeadlessTask("MarkAsRead", f82530);
+AppRegistry.registerHeadlessTask("MarkAsRead", f82538);
 const MuteAction = "MuteAction";
 const f19204 = () => MuteAction(f19204[17]);
-AppRegistry.registerHeadlessTask("MuteAction", f82530);
+AppRegistry.registerHeadlessTask("MuteAction", f82538);
 const ToggleDeafen = "ToggleDeafen";
 const f19205 = () => ToggleDeafen(f19205[18]);
-AppRegistry.registerHeadlessTask("ToggleDeafen", f82530);
+AppRegistry.registerHeadlessTask("ToggleDeafen", f82538);
 const ToggleSelfMute = "ToggleSelfMute";
 const f19206 = () => ToggleSelfMute(f19206[19]);
-AppRegistry.registerHeadlessTask("ToggleSelfMute", f82530);
+AppRegistry.registerHeadlessTask("ToggleSelfMute", f82538);
 const DismissCallAction = "DismissCallAction";
 const f19207 = () => DismissCallAction(f19207[20]);
-AppRegistry.registerHeadlessTask("DismissCallAction", f82530);
+AppRegistry.registerHeadlessTask("DismissCallAction", f82538);
 const DirectReply = "DirectReply";
 const f19208 = () => DirectReply(f19208[21]);
-AppRegistry.registerHeadlessTask("DirectReply", f82530);
+AppRegistry.registerHeadlessTask("DirectReply", f82538);
 const SelectVoiceChannel = "SelectVoiceChannel";
 const f19209 = () => SelectVoiceChannel(f19209[22]);
-AppRegistry.registerHeadlessTask("SelectVoiceChannel", f82530);
+AppRegistry.registerHeadlessTask("SelectVoiceChannel", f82538);
 const GenerateInvite = "GenerateInvite";
 const f19210 = () => GenerateInvite(f19210[23]);
-AppRegistry.registerHeadlessTask("GenerateInvite", f82530);
+AppRegistry.registerHeadlessTask("GenerateInvite", f82538);
 const result = size.fileFinishedImporting("index.native.tsx");

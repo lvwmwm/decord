@@ -26,7 +26,7 @@ let tmp2 = 2 === RN$discordUiManagerOptimization;
 let closure_9 = tmp2;
 let c0 = false;
 let c1 = null;
-const f82739 = () => {
+const f82747 = () => {
 
 };
 let closure_11 = {};
@@ -189,7 +189,7 @@ const obj3 = {
     let items;
     const tmp = metroImportAll;
     if (tmp) {
-      if (typeof f82739 === "function") {
+      if (typeof f82747 === "function") {
         let closure_1;
         const tmp5 = c0;
         if (!tmp5) {

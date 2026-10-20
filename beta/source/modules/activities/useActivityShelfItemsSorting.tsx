@@ -11,7 +11,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f110797 = (item) => {
+const f110805 = (item) => {
   closure_0 = item;
   const findIndexResult = items.findIndex((application) => application.application.id === closure_0);
   if (-1 !== findIndexResult) {
@@ -24,11 +24,11 @@ const f110797 = (item) => {
     closure_1 = closure_1 + 1;
   }
 };
-const f110798 = (item, index) => {
+const f110806 = (item, index) => {
   const items = [item, index];
   return items;
 };
-const f110799 = (item) => {
+const f110807 = (item) => {
   let tmp;
   [tmp] = item;
   const embeddedActivityConfig = tmp.application.embeddedActivityConfig;
@@ -49,7 +49,7 @@ const f110799 = (item) => {
   }
   return tmp8;
 };
-const f110800 = (item) => {
+const f110808 = (item) => {
   let tmp2;
   let tmp3;
   [tmp2, tmp3] = item;
@@ -95,10 +95,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
     items2 = [];
     HermesBuiltin.arraySpread(items2, arr, 0);
     let c1 = 0;
-    const item1 = items1.forEach(f110797);
-    const mapped = items2.map(f110798);
-    const found = mapped.filter(f110799);
-    const item2 = found.forEach(f110800);
+    const item1 = items1.forEach(f110805);
+    const mapped = items2.map(f110806);
+    const found = mapped.filter(f110807);
+    const item2 = found.forEach(f110808);
     cResult[0] = arr;
     cResult[1] = items2;
     tmp4 = items2;
@@ -128,10 +128,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
     const items2 = [...closure_0];
     items = items2;
     let closure_1 = 0;
-    const item1 = items1.forEach(f110797);
-    const mapped = items.map(f110798);
-    const found = mapped.filter(f110799);
-    const item2 = found.forEach(f110800);
+    const item1 = items1.forEach(f110805);
+    const mapped = items.map(f110806);
+    const found = mapped.filter(f110807);
+    const item2 = found.forEach(f110808);
     return items;
   }, items);
 });

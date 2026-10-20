@@ -7,7 +7,7 @@
 // Module 7639 (SlateUtils)
 import size from "module_2" /* 2 */;
 
-const f97747 = (text) => {
+const f97755 = (text) => {
   let items;
   const element = { type: "line", children: items };
   items = [];
@@ -28,13 +28,13 @@ export function createEmptyState() {
 }
 export const createState = function createState(textValue) {
   let parts;
-  let obj = { textValue, richValue: parts.map(f97747) };
+  let obj = { textValue, richValue: parts.map(f97755) };
   parts = textValue.split("\n");
   return obj;
 };
 export const toRichValue = function toRichValue(content) {
   const parts = content.split("\n");
-  return parts.map(f97747);
+  return parts.map(f97755);
 };
 export const voidToOptionValue = function voidToOptionValue(type) {
   type = type.type;

@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap, map, set;
 
-const f111955 = (result) => {
+const f111963 = (result) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = result;
@@ -247,7 +247,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
       const obj2 = conjureHistoryRequests;
       items[1] = obj2.fetchDatabaseRestoreWindow(closure_0, "stable");
       const allResult = all(items);
-      return allResult.then(f111955);
+      return allResult.then(f111963);
     };
     cResult[6] = arg0;
     cResult[7] = fn2;
@@ -504,7 +504,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
     const obj2 = conjureHistoryRequests;
     items[1] = obj2.fetchDatabaseRestoreWindow(closure_0, "stable");
     const allResult = all(items);
-    return allResult.then(f111955);
+    return allResult.then(f111963);
   }, items2));
   react = tmp3;
   const items3 = [arg0, hasItem];

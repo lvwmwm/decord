@@ -80,11 +80,11 @@ let obj = {
     return false;
   },
   CREATE_FRIEND_GROUP: function handleCreateFriendGroup(groupId) {
-    const f120824 = (id) => id.id === groupId;
+    const f120834 = (id) => id.id === groupId;
     groupId = groupId.groupId;
     const name = groupId.name;
-    let flag = !found.some(f120824);
-    found.some(f120824);
+    let flag = !found.some(f120834);
+    found.some(f120834);
     if (flag) {
       const obj = { id: groupId, name, userIds: [] };
       found.push(obj);

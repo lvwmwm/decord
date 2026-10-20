@@ -1,9 +1,9 @@
-// Module ID: 17741
-// Function ID: 17742
+// Module ID: 17745
+// Function ID: 17746
 // Name: ConjureChannelChatToasts
-// Dependencies: [19, 17, 21, 5191, 587, 1128, 558, 576, 5057, 1202, 5187, 6459, 17742, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 1128, 558, 576, 5057, 1202, 5187, 6459, 17746, 2]
 
-// Module 17741 (ConjureChannelChatToasts)
+// Module 17745 (ConjureChannelChatToasts)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import native from "native" /* 1202 */;
 import UserUtils from "UserUtils" /* 5057 */;
 import Text_Text from "Text/Text" /* 5187 */;
 import Card_Card from "Card/Card" /* 6459 */;
-import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 17742 */;
+import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 17746 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
@@ -74,7 +74,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatToa
       tmp9 = cResult[4];
     }
     if (cResult[5] !== message.author) {
-      const obj3 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "r" };
+      const obj3 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "Array" };
       const Avatar = tmp(1202).Avatar;
       const tmp12 = hasOwnProperty(Avatar, obj3);
       cResult[5] = message.author;
@@ -186,7 +186,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatToa
   const callback = react.useCallback(() => onOpenChat(message), items);
   obj3 = { variant: "primary", shadow: "high", border: "subtle", style: tmp.card, onPress: callback, children: items1 };
   Card = tmp2(6459).Card;
-  const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "r" };
+  const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "Array" };
   const Avatar = tmp2(1202).Avatar;
   items1 = [hasOwnProperty(Avatar, obj4), ];
   const obj5 = { style: tmp.body, children: items2 };

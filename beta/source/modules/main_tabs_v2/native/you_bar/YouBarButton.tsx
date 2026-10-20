@@ -131,7 +131,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIco
     }
     return tmp6;
   }
-  const rect = { position: "absolute", left: sum, top: sum1, right: "colors", bottom: "ddd", padding: "ip", minWidth: "Array" };
+  const rect = { position: "absolute", left: sum, top: sum1, right: "colors", bottom: "fileFinishedImporting", padding: "ip", minWidth: "__closure" };
   cResult[0] = sum;
   cResult[1] = sum1;
   cResult[2] = rect;
@@ -149,7 +149,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIco
   }
   const items = [size, badgeSize, num2, num];
   return react.useMemo(() => {
-    const rect = { position: "absolute", left: size - badgeSize + num, top: size - badgeSize + num2, right: "colors", bottom: "ddd", padding: "ip", minWidth: "Array" };
+    const rect = { position: "absolute", left: size - badgeSize + num, top: size - badgeSize + num2, right: "colors", bottom: "fileFinishedImporting", padding: "ip", minWidth: "__closure" };
     return rect;
   }, items);
 });

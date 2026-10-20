@@ -32,7 +32,7 @@ let _require;
 
 let closure_14;
 let closure_15;
-const f153315 = function() {
+const f153327 = function() {
   return closure_0(...arguments);
 };
 function getStageChannelAccessibilityProps(arg0) {
@@ -198,7 +198,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoi
       }
     })();
   });
-  const callback = useCallback(f153315, []);
+  const callback = useCallback(f153327, []);
   if (cResult[0] === id) {
     let tmp3;
     let tmp4;
@@ -314,7 +314,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoi
       }
     })();
   });
-  const callback = useCallback(f153315, []);
+  const callback = useCallback(f153327, []);
   obj = {
     onPress: react.useCallback(() => {
       if (null != id.guild_id) {

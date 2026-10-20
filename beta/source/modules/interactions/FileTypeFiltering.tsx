@@ -19,16 +19,16 @@ let _require, importDefault, set;
 
 let tmp;
 const get_initialized = tmp(504);
-const f111371 = (item) => item.startsWith(".");
-const f111372 = (arr) => arr.slice(1);
-const f111375 = (item) => {
+const f111379 = (item) => item.startsWith(".");
+const f111380 = (arr) => arr.slice(1);
+const f111383 = (item) => {
   closure_0 = item;
   return closure_0.some((item) => {
     const formatted = closure_0.toLowerCase();
     return formatted.endsWith("." + item);
   });
 };
-const f111376 = (item) => {
+const f111384 = (item) => {
   const hasItem = closure_1_6.includes(item) || closure_1_7.includes(item);
   return hasItem;
 };
@@ -129,8 +129,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFileTypeF
     if (null != arr) {
       let items3;
       if (0 !== arr.length) {
-        const found = arr.filter(f111371);
-        const mapped = found.map(f111372);
+        const found = arr.filter(f111379);
+        const mapped = found.map(f111380);
         if (arr.includes("image")) {
           const push = mapped.push;
           const items = [];
@@ -188,7 +188,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFileTypeF
   if (cResult[2] !== allowedExtensions) {
     const fn = function s(arr) {
       let closure_0 = arr;
-      const everyResult = 0 === arr.length || arr.every(f111375);
+      const everyResult = 0 === arr.length || arr.every(f111383);
       return everyResult;
     };
     cResult[2] = allowedExtensions;
@@ -246,8 +246,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFileTypeF
       }
     }
     cResult[6] = allowedExtensions;
-    cResult[7] = 0 === allowedExtensions.length || allowedExtensions.some(f111376);
-    const tmp29 = 0 === allowedExtensions.length || allowedExtensions.some(f111376);
+    cResult[7] = 0 === allowedExtensions.length || allowedExtensions.some(f111384);
+    const tmp29 = 0 === allowedExtensions.length || allowedExtensions.some(f111384);
   } else {
     class F {
       constructor() {
@@ -293,8 +293,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFileTypeF
   const memo = react.useMemo(() => {
     if (null != closure_0) {
       if (0 !== closure_0.length) {
-        const found = arr.filter(f111371);
-        const mapped = found.map(f111372);
+        const found = arr.filter(f111379);
+        const mapped = found.map(f111380);
         if (closure_0.includes("image")) {
           const push = mapped.push;
           const items = [];
@@ -356,7 +356,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFileTypeF
   let items2 = [tmp2];
   const callback = react.useCallback((arr) => {
     closure_0 = memo;
-    const everyResult = 0 === memo.length || arr.every(f111375);
+    const everyResult = 0 === memo.length || arr.every(f111383);
     return everyResult;
   }, items1);
   const items3 = [memo];
@@ -378,7 +378,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFileTypeF
     validateFilenames: callback,
     showInvalidFileTypeAlert: callback1,
     mediaFilesAllowed: react.useMemo(() => {
-      const tmp = 0 === memo.length || memo.some(f111376);
+      const tmp = 0 === memo.length || memo.some(f111384);
       return tmp;
     }, items3)
   };
@@ -391,8 +391,8 @@ export const getFileTypeFiltering = function getFileTypeFiltering(fileTypes) {
   if (null != fileTypes) {
     let items3;
     if (0 !== fileTypes.length) {
-      const found = fileTypes.filter(f111371);
-      const mapped = found.map(f111372);
+      const found = fileTypes.filter(f111379);
+      const mapped = found.map(f111380);
       if (fileTypes.includes("image")) {
         const push = mapped.push;
         const items = [];
@@ -444,7 +444,7 @@ export const getFileTypeFiltering = function getFileTypeFiltering(fileTypes) {
       typesFormattedString: tmp25,
       validateFilenames(items) {
           let closure_0 = items3;
-          const everyResult = 0 === items3.length || items.every(f111375);
+          const everyResult = 0 === items3.length || items.every(f111383);
           return everyResult;
         },
       showInvalidFileTypeAlert() {
@@ -459,9 +459,9 @@ export const getFileTypeFiltering = function getFileTypeFiltering(fileTypes) {
           obj2 = { types };
           show(obj);
         },
-      mediaFilesAllowed: 0 === items3.length || items3.some(f111376)
+      mediaFilesAllowed: 0 === items3.length || items3.some(f111384)
     };
-    0 === items3.length || items3.some(f111376);
+    0 === items3.length || items3.some(f111384);
     return obj;
   }
   items3 = [];

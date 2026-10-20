@@ -76,14 +76,14 @@ export default function _regeneratorRuntime() {
       const obj = {
         value(arg0, arg1) {
           let nextPromise;
-          const f159842 = (arg0, arg1) => {
+          const f159854 = (arg0, arg1) => {
             invoke(closure_1_0, closure_1_1, arg0, arg1);
           };
           closure_0 = arg0;
           closure_1 = arg1;
           if (nextPromise) {
             function callInvokeWithMethodAndArg() {
-              const tmp = new _Promise(f159842);
+              const tmp = new _Promise(f159854);
               return tmp;
             }
             nextPromise = promise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg);
@@ -91,7 +91,7 @@ export default function _regeneratorRuntime() {
             let tmp = closure_1;
             const self = this;
             const self2 = this;
-            nextPromise = new closure_1(f159842);
+            nextPromise = new closure_1(f159854);
           }
           return nextPromise;
         }
@@ -436,14 +436,14 @@ export default function _regeneratorRuntime() {
       const obj6 = {
         value(arg0, arg1) {
           let nextPromise;
-          const f159842 = (arg0, arg1) => {
+          const f159854 = (arg0, arg1) => {
             invoke(closure_1_0, closure_1_1, arg0, arg1);
           };
           closure_0 = arg0;
           closure_1 = arg1;
           if (nextPromise) {
             function callInvokeWithMethodAndArg() {
-              const tmp = new _Promise(f159842);
+              const tmp = new _Promise(f159854);
               return tmp;
             }
             nextPromise = promise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg);
@@ -451,7 +451,7 @@ export default function _regeneratorRuntime() {
             let tmp = closure_1;
             const self = this;
             const self2 = this;
-            nextPromise = new closure_1(f159842);
+            nextPromise = new closure_1(f159854);
           }
           return nextPromise;
         }

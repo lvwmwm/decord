@@ -1,9 +1,9 @@
-// Module ID: 17737
-// Function ID: 17738
+// Module ID: 17741
+// Function ID: 17742
 // Name: AppChannel
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1899, 6942, 11717, 17738, 11714, 11718, 7222, 5202, 11719, 11724, 17741, 17744, 1128, 6357, 5128, 1417, 5479, 6297, 9617, 17745, 6355, 17746, 10672, 2]
+// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 1899, 6942, 11717, 17742, 11714, 11718, 7222, 5202, 11719, 11724, 17745, 17748, 1128, 6357, 5128, 1417, 5479, 6297, 9617, 17749, 6355, 17750, 10672, 2]
 
-// Module 17737 (AppChannel)
+// Module 17741 (AppChannel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -23,10 +23,10 @@ import useEdgeOnlySwipeExitDefault from "useEdgeOnlySwipeExit" /* 11714 */;
 import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11717 */;
 import useInlineFrameOAuthNavigationDefault from "useInlineFrameOAuthNavigation" /* 11718 */;
 import FrameRenderTargetDefault from "FrameRenderTarget" /* 11719 */;
-import useFrameLifecycleDefault from "useFrameLifecycle" /* 17738 */;
-import FrameSurfaceState from "FrameSurfaceState" /* 17744 */;
-import useAppChannelClosedDefault from "useAppChannelClosed" /* 17745 */;
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 17746 */;
+import useFrameLifecycleDefault from "useFrameLifecycle" /* 17742 */;
+import FrameSurfaceState from "FrameSurfaceState" /* 17748 */;
+import useAppChannelClosedDefault from "useAppChannelClosed" /* 17749 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 17750 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5191 */;
@@ -83,10 +83,10 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenApp
             ({ frame, state } = useFrameLifecycleDefault(tmp9));
             useFrameLifecycleDefault(tmp9);
             const tmp5Result = useEdgeOnlySwipeExitDefault;
-            tmp5Result(state === id(17738).FrameLifecycleState.Launched);
+            tmp5Result(state === id(17742).FrameLifecycleState.Launched);
             let tmp14 = null;
             const tmp5Result3 = useInlineFrameOAuthNavigationDefault;
-            if (state === id(17738).FrameLifecycleState.Launched) {
+            if (state === id(17742).FrameLifecycleState.Launched) {
               tmp14 = applicationId;
             }
             tmp5Result3(tmp14);
@@ -112,7 +112,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenApp
                 }
               }
             }
-            if (id(17738).FrameLifecycleState.Launched === state) {
+            if (id(17742).FrameLifecycleState.Launched === state) {
               class M {
                 constructor(arg0) {
                   obj = closure_0(closure_2[14]);
@@ -494,7 +494,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
-      const FrameSurfaceExplanation = tmp(17744).FrameSurfaceExplanation;
+      const FrameSurfaceExplanation = tmp(17748).FrameSurfaceExplanation;
       intl = tmp(1128).intl;
       intl2 = tmp(1128).intl;
       const tmp13 = hasOwnProperty(FrameSurfaceExplanation, obj3);
@@ -536,7 +536,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
     result = tmpResult2.renderChannelContentGate(channelContentGate);
   } else if (null == application_id) {
     const obj2 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
-    const FrameSurfaceExplanation = tmp(17744).FrameSurfaceExplanation;
+    const FrameSurfaceExplanation = tmp(17748).FrameSurfaceExplanation;
     intl = tmp(1128).intl;
     intl2 = tmp(1128).intl;
     result = hasOwnProperty(FrameSurfaceExplanation, obj2);

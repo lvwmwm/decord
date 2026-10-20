@@ -10,8 +10,8 @@ import _modDef38 from "module_38" /* 38 */;
 import GuildDirectoryConstants from "GuildDirectoryConstants" /* 12955 */;
 import size from "module_2" /* 2 */;
 
-const f115069 = (approximateMemberCount) => approximateMemberCount.approximateMemberCount;
-const f115070 = (createdAt) => createdAt.createdAt;
+const f115077 = (approximateMemberCount) => approximateMemberCount.approximateMemberCount;
+const f115078 = (createdAt) => createdAt.createdAt;
 const DirectoryEntryTypes = GuildDirectoryConstants.DirectoryEntryTypes;
 const result = size.fileFinishedImporting("modules/directory_channels/GuildDirectoryUtils.tsx");
 
@@ -73,24 +73,24 @@ export const guildDirectoryEntryFromServer = function guildDirectoryEntryFromSer
 };
 export const MAX_CATEGORY_SERVERS = 5;
 export const orderByTotalMemberCount = function orderByTotalMemberCount(found) {
-  const items = [f115069];
+  const items = [f115077];
   const obj = _modDef12;
   return obj.orderBy(found, items, ["desc"]);
 };
 export const orderByDateAdded = function orderByDateAdded(items) {
-  items = [f115070];
+  items = [f115078];
   const obj = _modDef12;
   return obj.orderBy(items, items, ["desc"]);
 };
 export const rankByDateAdded = function rankByDateAdded(arr) {
   const found = arr.filter((featurableInDirectory) => featurableInDirectory.featurableInDirectory);
-  const items = [f115070];
+  const items = [f115078];
   const obj = _modDef12;
   const orderByResult = obj.orderBy(found, items, ["desc"]);
   return orderByResult.slice(0, 5);
 };
 export const rankGuildEntries = function rankGuildEntries(arr) {
-  const items = [f115069];
+  const items = [f115077];
   const obj = _modDef12;
   return obj.orderBy(arr, items, ["desc"]);
 };

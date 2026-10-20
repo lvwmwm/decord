@@ -268,7 +268,7 @@ class FeedbackWidget {
                 let fileName1;
                 uri1 = undefined;
                 if (self._hasScreenshot()) {
-                  obj10.setState({ filename: "getCurrentUser", attachment: "Array", attachmentUri: "ix" });
+                  obj10.setState({ filename: "Array", attachment: "ix", attachmentUri: "method" });
                 } else {
                   imagePicker = obj10.props.imagePicker;
                   if (imagePicker) {

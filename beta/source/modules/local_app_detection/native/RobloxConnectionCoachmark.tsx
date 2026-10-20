@@ -635,7 +635,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserIc
     tmp9 = cResult[3];
   }
   if (cResult[4] !== stateFromStores) {
-    const obj3 = { size: native.AvatarSizes.NORMAL, user: stateFromStores, guildId: "r" };
+    const obj3 = { size: native.AvatarSizes.NORMAL, user: stateFromStores, guildId: "Array" };
     const Avatar = tmp(1202).Avatar;
     const tmp15 = map1(Avatar, obj3);
     cResult[4] = stateFromStores;
@@ -671,7 +671,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserIc
   const obj3 = { style: tmp.avatarInnerBorder };
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   items1 = [map1(View, obj3), ];
-  const obj4 = { size: native.AvatarSizes.NORMAL, user: stateFromStores, guildId: "r" };
+  const obj4 = { size: native.AvatarSizes.NORMAL, user: stateFromStores, guildId: "Array" };
   const Avatar = native.Avatar;
   items1[1] = map1(Avatar, obj4);
   return syncedClientThemes(View, obj2);

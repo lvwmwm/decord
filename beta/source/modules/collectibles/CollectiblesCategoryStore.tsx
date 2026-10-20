@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let closure_12, closure_13, closure_14, closure_9;
 
 function updateCategoriesAndProducts(map) {
-  const f97427 = (storeListingId) => {
+  const f97435 = (storeListingId) => {
     const items = [storeListingId.storeListingId, storeListingId];
     return items;
   };
@@ -42,8 +42,8 @@ function updateCategoriesAndProducts(map) {
   closure_9 = map1;
   const obj2 = CollectiblesUtils;
   const productsFromCategories1 = obj2.getProductsFromCategories(closure_14, false);
-  closure_11 = [...new Map(productsFromCategories1.map(f97427)).values()];
-  map2 = new Map(productsFromCategories1.map(f97427));
+  closure_11 = [...new Map(productsFromCategories1.map(f97435)).values()];
+  map2 = new Map(productsFromCategories1.map(f97435));
 }
 function reset() {
   closure_14 = map;
